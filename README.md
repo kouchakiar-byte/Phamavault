@@ -45,3 +45,17 @@ src/
 - **Edit copy** — `src/content/*.ts`; each string is `bi("English", "فارسی")`.
 - **Edit a database** — the JSON in `src/data/` (types in `src/data/index.ts`).
 - **Show a title in both languages** — use `<BiTitle text={…} locale={locale} />`.
+
+## Deployment (Liara)
+
+The site is hosted on [Liara](https://liara.ir) using the Next.js platform, deployed from GitHub.
+`liara.json` sets the port (3000), Node.js 22 and a Germany build location (fonts are fetched
+from Google Fonts at build time, which may be unreachable from Iran-based builders).
+
+1. Liara console → profile → **GitHub** → **اتصال به گیت‌هاب**, then grant access to this repository.
+2. Create a **Next.js** app → **استقرار جدید** → **گیت‌هاب** → choose this repository and the `main` branch →
+   **اتصال به برنامه**, then press **استقرار دستی** once.
+3. Every push or merge to `main` deploys automatically.
+4. Domains: add `pharmavault.ir` and `www.pharmavault.ir` in the app's domain settings, set the DNS records
+   Liara shows at the domain registrar, then enable SSL.
+
