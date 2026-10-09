@@ -1,0 +1,412 @@
+{
+ "functions": {
+  "api": {
+   "en": "Active pharmaceutical ingredient (API)",
+   "fa": "ماده مؤثره دارویی (API)"
+  },
+  "dil": {
+   "en": "Diluent (filler)",
+   "fa": "رقیق‌کننده (پرکننده)"
+  },
+  "bin": {
+   "en": "Binder",
+   "fa": "چسباننده (بایندر)"
+  },
+  "dis": {
+   "en": "Disintegrant",
+   "fa": "متلاشی‌کننده (دیس‌اینتگرانت)"
+  },
+  "gli": {
+   "en": "Glidant",
+   "fa": "بهبوددهنده جریان پودر (گلایدانت)"
+  },
+  "lub": {
+   "en": "Lubricant",
+   "fa": "لغزان‌کننده (لوبریکانت)"
+  },
+  "stf": {
+   "en": "Stiffening agent",
+   "fa": "عامل قوام‌دهنده"
+  },
+  "emo": {
+   "en": "Emollient",
+   "fa": "امولینت (نرم‌کننده پوست)"
+  },
+  "emu": {
+   "en": "Emulsifying agent",
+   "fa": "امولسی‌فایر"
+  },
+  "hum": {
+   "en": "Humectant",
+   "fa": "هیومکتانت (رطوبت‌گیر)"
+  },
+  "pre": {
+   "en": "Antimicrobial preservative",
+   "fa": "نگهدارنده ضدمیکروبی"
+  },
+  "veh": {
+   "en": "Vehicle",
+   "fa": "حامل (Vehicle)"
+  },
+  "bas": {
+   "en": "Ointment base",
+   "fa": "پایه پماد"
+  },
+  "gel": {
+   "en": "Gelling agent",
+   "fa": "عامل ژل‌ساز"
+  },
+  "neu": {
+   "en": "Neutralising agent (adjust to pH 6–7)",
+   "fa": "عامل خنثی‌کننده (تنظیم pH به 6 تا 7)"
+  },
+  "che": {
+   "en": "Chelating agent",
+   "fa": "عامل کی‌لیت‌کننده"
+  },
+  "swe": {
+   "en": "Sweetening agent",
+   "fa": "شیرین‌کننده"
+  },
+  "cos": {
+   "en": "Co-solvent",
+   "fa": "کمک‌حلال (Co-solvent)"
+  },
+  "aci": {
+   "en": "pH adjuster (acidulant)",
+   "fa": "تنظیم‌کننده pH (اسیدی‌کننده)"
+  },
+  "fla": {
+   "en": "Flavouring agent",
+   "fa": "طعم‌دهنده"
+  },
+  "sus": {
+   "en": "Suspending agent",
+   "fa": "عامل تعلیق‌دهنده"
+  },
+  "wet": {
+   "en": "Wetting agent",
+   "fa": "عامل ترکننده (Wetting agent)"
+  }
+ },
+ "api": {
+  "en": "Active pharmaceutical ingredient (API)",
+  "fa": "ماده مؤثره دارویی (API)"
+ },
+ "templates": [
+  {
+   "name": {
+    "en": "Tablet — direct compression",
+    "fa": "قرص — پرس مستقیم (Direct compression)"
+   },
+   "rows": [
+    {
+     "fn": "api",
+     "material": null,
+     "pct": 25
+    },
+    {
+     "fn": "dil",
+     "material": "Microcrystalline cellulose / lactose",
+     "pct": null
+    },
+    {
+     "fn": "dis",
+     "material": "Croscarmellose sodium",
+     "pct": 3
+    },
+    {
+     "fn": "gli",
+     "material": "Colloidal silicon dioxide",
+     "pct": 0.5
+    },
+    {
+     "fn": "lub",
+     "material": "Magnesium stearate",
+     "pct": 1
+    }
+   ]
+  },
+  {
+   "name": {
+    "en": "Tablet — wet granulation",
+    "fa": "قرص — گرانولاسیون مرطوب (Wet granulation)"
+   },
+   "rows": [
+    {
+     "fn": "api",
+     "material": null,
+     "pct": 40
+    },
+    {
+     "fn": "dil",
+     "material": "Lactose monohydrate / microcrystalline cellulose",
+     "pct": null
+    },
+    {
+     "fn": "bin",
+     "material": "Povidone K30",
+     "pct": 3
+    },
+    {
+     "fn": "dis",
+     "material": "Croscarmellose sodium",
+     "pct": 4
+    },
+    {
+     "fn": "lub",
+     "material": "Magnesium stearate",
+     "pct": 1
+    }
+   ]
+  },
+  {
+   "name": {
+    "en": "Hard gelatin capsule",
+    "fa": "کپسول سخت ژلاتینی"
+   },
+   "rows": [
+    {
+     "fn": "api",
+     "material": null,
+     "pct": 40
+    },
+    {
+     "fn": "dil",
+     "material": "Lactose monohydrate / pregelatinized starch",
+     "pct": null
+    },
+    {
+     "fn": "dis",
+     "material": "Croscarmellose sodium",
+     "pct": 2
+    },
+    {
+     "fn": "gli",
+     "material": "Colloidal silicon dioxide",
+     "pct": 0.5
+    },
+    {
+     "fn": "lub",
+     "material": "Magnesium stearate",
+     "pct": 0.5
+    }
+   ]
+  },
+  {
+   "name": {
+    "en": "Cream — oil-in-water (O/W) emulsion",
+    "fa": "کرم — امولسیون روغن در آب (O/W)"
+   },
+   "rows": [
+    {
+     "fn": "api",
+     "material": null,
+     "pct": 1
+    },
+    {
+     "fn": "stf",
+     "material": "Cetostearyl alcohol",
+     "pct": 7
+    },
+    {
+     "fn": "emo",
+     "material": "White soft paraffin",
+     "pct": 10
+    },
+    {
+     "fn": "emo",
+     "material": "Liquid paraffin",
+     "pct": 6
+    },
+    {
+     "fn": "emu",
+     "material": "Cetomacrogol 1000",
+     "pct": 2
+    },
+    {
+     "fn": "hum",
+     "material": "Propylene glycol",
+     "pct": 5
+    },
+    {
+     "fn": "pre",
+     "material": "Methylparaben",
+     "pct": 0.15
+    },
+    {
+     "fn": "pre",
+     "material": "Propylparaben",
+     "pct": 0.05
+    },
+    {
+     "fn": "veh",
+     "material": "Purified water",
+     "pct": null
+    }
+   ]
+  },
+  {
+   "name": {
+    "en": "Ointment (hydrocarbon base)",
+    "fa": "پماد (پایه هیدروکربنی)"
+   },
+   "rows": [
+    {
+     "fn": "api",
+     "material": null,
+     "pct": 1
+    },
+    {
+     "fn": "emo",
+     "material": "Liquid paraffin",
+     "pct": 10
+    },
+    {
+     "fn": "bas",
+     "material": "White soft paraffin",
+     "pct": null
+    }
+   ]
+  },
+  {
+   "name": {
+    "en": "Hydrogel (carbomer)",
+    "fa": "هیدروژل (کربومر)"
+   },
+   "rows": [
+    {
+     "fn": "api",
+     "material": null,
+     "pct": 1
+    },
+    {
+     "fn": "gel",
+     "material": "Carbomer",
+     "pct": 1
+    },
+    {
+     "fn": "neu",
+     "material": "Trolamine",
+     "pct": 1
+    },
+    {
+     "fn": "hum",
+     "material": "Propylene glycol",
+     "pct": 10
+    },
+    {
+     "fn": "pre",
+     "material": "Methylparaben",
+     "pct": 0.15
+    },
+    {
+     "fn": "che",
+     "material": "Disodium edetate",
+     "pct": 0.05
+    },
+    {
+     "fn": "veh",
+     "material": "Purified water",
+     "pct": null
+    }
+   ]
+  },
+  {
+   "name": {
+    "en": "Oral solution",
+    "fa": "محلول خوراکی"
+   },
+   "rows": [
+    {
+     "fn": "api",
+     "material": null,
+     "pct": 2
+    },
+    {
+     "fn": "swe",
+     "material": "Sucrose",
+     "pct": 40
+    },
+    {
+     "fn": "swe",
+     "material": "Sorbitol solution 70%",
+     "pct": 20
+    },
+    {
+     "fn": "cos",
+     "material": "Glycerin",
+     "pct": 10
+    },
+    {
+     "fn": "pre",
+     "material": "Sodium benzoate",
+     "pct": 0.2
+    },
+    {
+     "fn": "aci",
+     "material": "Citric acid",
+     "pct": 0.2
+    },
+    {
+     "fn": "fla",
+     "material": "Flavour",
+     "pct": 0.1
+    },
+    {
+     "fn": "veh",
+     "material": "Purified water",
+     "pct": null
+    }
+   ]
+  },
+  {
+   "name": {
+    "en": "Oral suspension",
+    "fa": "سوسپانسیون خوراکی"
+   },
+   "rows": [
+    {
+     "fn": "api",
+     "material": null,
+     "pct": 5
+    },
+    {
+     "fn": "sus",
+     "material": "Xanthan gum",
+     "pct": 0.3
+    },
+    {
+     "fn": "wet",
+     "material": "Polysorbate 80",
+     "pct": 0.1
+    },
+    {
+     "fn": "swe",
+     "material": "Sucrose",
+     "pct": 30
+    },
+    {
+     "fn": "cos",
+     "material": "Glycerin",
+     "pct": 10
+    },
+    {
+     "fn": "pre",
+     "material": "Sodium benzoate",
+     "pct": 0.2
+    },
+    {
+     "fn": "aci",
+     "material": "Citric acid",
+     "pct": 0.2
+    },
+    {
+     "fn": "veh",
+     "material": "Purified water",
+     "pct": null
+    }
+   ]
+  }
+ ]
+}

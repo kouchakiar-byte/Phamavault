@@ -1,0 +1,370 @@
+{
+ "groups": {
+  "api": {
+   "en": "Active pharmaceutical ingredient (API)",
+   "fa": "ماده مؤثره دارویی (API)"
+  },
+  "vit": {
+   "en": "Vitamin",
+   "fa": "ویتامین"
+  },
+  "min": {
+   "en": "Mineral salt",
+   "fa": "املاح معدنی"
+  }
+ },
+ "items": [
+  {
+   "name": "Paracetamol",
+   "cas": "103-90-2",
+   "group": "api",
+   "mw": "151.16",
+   "note": {
+    "en": "Sparingly soluble in water",
+    "fa": "کم‌محلول در آب"
+   },
+   "synonyms": "Acetaminophen, استامینوفن, پاراستامول"
+  },
+  {
+   "name": "Ibuprofen",
+   "cas": "15687-27-1",
+   "group": "api",
+   "mw": "206.28",
+   "note": {
+    "en": "Practically insoluble in water; low melting point",
+    "fa": "تقریباً نامحلول در آب؛ نقطه ذوب پایین"
+   },
+   "synonyms": "ایبوپروفن"
+  },
+  {
+   "name": "Metformin hydrochloride",
+   "cas": "1115-70-4",
+   "group": "api",
+   "mw": "165.62",
+   "note": {
+    "en": "Freely soluble in water",
+    "fa": "بسیار محلول در آب"
+   },
+   "synonyms": "متفورمین هیدروکلراید"
+  },
+  {
+   "name": "Atorvastatin calcium trihydrate",
+   "cas": "344423-98-9",
+   "group": "api",
+   "mw": "1209.4",
+   "note": {
+    "en": "Very slightly soluble in water",
+    "fa": "بسیار کم‌محلول در آب"
+   },
+   "synonyms": "آتورواستاتین کلسیم"
+  },
+  {
+   "name": "Omeprazole",
+   "cas": "73590-58-6",
+   "group": "api",
+   "mw": "345.42",
+   "note": {
+    "en": "Degrades in acid; needs enteric protection",
+    "fa": "در اسید تخریب می‌شود؛ به محافظت روده‌ای نیاز دارد"
+   },
+   "synonyms": "امپرازول, اومپرازول"
+  },
+  {
+   "name": "Amoxicillin trihydrate",
+   "cas": "61336-70-7",
+   "group": "api",
+   "mw": "419.45",
+   "note": {
+    "en": "Moisture-sensitive beta-lactam; dedicated facility",
+    "fa": "بتالاکتام حساس به رطوبت؛ نیازمند سایت اختصاصی"
+   },
+   "synonyms": "آموکسی‌سیلین تری‌هیدرات"
+  },
+  {
+   "name": "Diclofenac sodium",
+   "cas": "15307-79-6",
+   "group": "api",
+   "mw": "318.13",
+   "note": {
+    "en": "Sparingly soluble in water",
+    "fa": "کم‌محلول در آب"
+   },
+   "synonyms": "دیکلوفناک سدیم"
+  },
+  {
+   "name": "Clotrimazole",
+   "cas": "23593-75-1",
+   "group": "api",
+   "mw": "344.84",
+   "note": {
+    "en": "Practically insoluble in water",
+    "fa": "تقریباً نامحلول در آب"
+   },
+   "synonyms": "کلوتریمازول"
+  },
+  {
+   "name": "Hydrocortisone",
+   "cas": "50-23-7",
+   "group": "api",
+   "mw": "362.46",
+   "note": {
+    "en": "Practically insoluble in water",
+    "fa": "تقریباً نامحلول در آب"
+   },
+   "synonyms": "هیدروکورتیزون"
+  },
+  {
+   "name": "Cetirizine dihydrochloride",
+   "cas": "83881-52-1",
+   "group": "api",
+   "mw": "461.81",
+   "note": {
+    "en": "Freely soluble in water",
+    "fa": "بسیار محلول در آب"
+   },
+   "synonyms": "ستیریزین"
+  },
+  {
+   "name": "Losartan potassium",
+   "cas": "124750-99-8",
+   "group": "api",
+   "mw": "461.01",
+   "note": {
+    "en": "Freely soluble in water",
+    "fa": "بسیار محلول در آب"
+   },
+   "synonyms": "لوزارتان پتاسیم"
+  },
+  {
+   "name": "Azithromycin dihydrate",
+   "cas": "117772-70-0",
+   "group": "api",
+   "mw": "785.02",
+   "note": {
+    "en": "Practically insoluble in water",
+    "fa": "تقریباً نامحلول در آب"
+   },
+   "synonyms": "آزیترومایسین"
+  },
+  {
+   "name": "Ascorbic acid (C)",
+   "cas": "50-81-7",
+   "group": "vit",
+   "mw": "176.12",
+   "note": {
+    "en": "Oxidises in solution; keep from light and metal ions",
+    "fa": "در محلول اکسید می‌شود؛ دور از نور و یون‌های فلزی"
+   },
+   "synonyms": "Vitamin C, ویتامین ث, ویتامین سی, اسید اسکوربیک"
+  },
+  {
+   "name": "Thiamine hydrochloride (B1)",
+   "cas": "67-03-8",
+   "group": "vit",
+   "mw": "337.27",
+   "note": {
+    "en": "Unstable at alkaline pH",
+    "fa": "در pH قلیایی ناپایدار"
+   },
+   "synonyms": "Vitamin B1, تیامین, ویتامین ب1"
+  },
+  {
+   "name": "Riboflavin (B2)",
+   "cas": "83-88-5",
+   "group": "vit",
+   "mw": "376.36",
+   "note": {
+    "en": "Light-sensitive",
+    "fa": "حساس به نور"
+   },
+   "synonyms": "Vitamin B2, ریبوفلاوین, ویتامین ب2"
+  },
+  {
+   "name": "Nicotinamide (B3)",
+   "cas": "98-92-0",
+   "group": "vit",
+   "mw": "122.12",
+   "note": {
+    "en": "Freely soluble in water",
+    "fa": "بسیار محلول در آب"
+   },
+   "synonyms": "Niacinamide, Vitamin B3, نیاسینامید, نیکوتینامید, ویتامین ب3"
+  },
+  {
+   "name": "Calcium pantothenate (B5)",
+   "cas": "137-08-6",
+   "group": "vit",
+   "mw": "476.53",
+   "note": {
+    "en": "Hygroscopic",
+    "fa": "جاذب رطوبت"
+   },
+   "synonyms": "Vitamin B5, کلسیم پانتوتنات, ویتامین ب5"
+  },
+  {
+   "name": "Pyridoxine hydrochloride (B6)",
+   "cas": "58-56-0",
+   "group": "vit",
+   "mw": "205.64",
+   "note": {
+    "en": "Light-sensitive",
+    "fa": "حساس به نور"
+   },
+   "synonyms": "Vitamin B6, پیریدوکسین, ویتامین ب6"
+  },
+  {
+   "name": "Biotin",
+   "cas": "58-85-5",
+   "group": "vit",
+   "mw": "244.31",
+   "note": {
+    "en": "Very slightly soluble in water",
+    "fa": "بسیار کم‌محلول در آب"
+   },
+   "synonyms": "Vitamin B7, Vitamin H, بیوتین"
+  },
+  {
+   "name": "Folic acid",
+   "cas": "59-30-3",
+   "group": "vit",
+   "mw": "441.40",
+   "note": {
+    "en": "Light-sensitive; very slightly soluble in water",
+    "fa": "حساس به نور؛ بسیار کم‌محلول در آب"
+   },
+   "synonyms": "Vitamin B9, اسید فولیک, فولیک اسید"
+  },
+  {
+   "name": "Cyanocobalamin (B12)",
+   "cas": "68-19-9",
+   "group": "vit",
+   "mw": "1355.37",
+   "note": {
+    "en": "Light-sensitive; hygroscopic",
+    "fa": "حساس به نور؛ جاذب رطوبت"
+   },
+   "synonyms": "Vitamin B12, سیانوکوبالامین, ویتامین ب12"
+  },
+  {
+   "name": "Retinyl palmitate (A)",
+   "cas": "79-81-2",
+   "group": "vit",
+   "mw": "524.86",
+   "note": {
+    "en": "Sensitive to air, heat and light",
+    "fa": "حساس به هوا، گرما و نور"
+   },
+   "synonyms": "Vitamin A, رتینیل پالمیتات, ویتامین آ"
+  },
+  {
+   "name": "Cholecalciferol (D3)",
+   "cas": "67-97-0",
+   "group": "vit",
+   "mw": "384.64",
+   "note": {
+    "en": "Sensitive to air, heat and light",
+    "fa": "حساس به هوا، گرما و نور"
+   },
+   "synonyms": "Vitamin D3, کوله‌کلسیفرول, ویتامین د"
+  },
+  {
+   "name": "dl-α-Tocopheryl acetate (E)",
+   "cas": "7695-91-2",
+   "group": "vit",
+   "mw": "472.74",
+   "note": {
+    "en": "More stable than free tocopherol",
+    "fa": "پایدارتر از توکوفرول آزاد"
+   },
+   "synonyms": "Vitamin E, توکوفریل استات, ویتامین ای"
+  },
+  {
+   "name": "Calcium carbonate",
+   "cas": "471-34-1",
+   "group": "min",
+   "mw": "100.09",
+   "note": {
+    "en": "40.0% elemental calcium",
+    "fa": "40.0% کلسیم عنصری"
+   },
+   "synonyms": "کلسیم کربنات, کربنات کلسیم"
+  },
+  {
+   "name": "Magnesium oxide",
+   "cas": "1309-48-4",
+   "group": "min",
+   "mw": "40.30",
+   "note": {
+    "en": "60.3% elemental magnesium",
+    "fa": "60.3% منیزیم عنصری"
+   },
+   "synonyms": "منیزیم اکسید, اکسید منیزیم"
+  },
+  {
+   "name": "Ferrous sulfate heptahydrate",
+   "cas": "7782-63-0",
+   "group": "min",
+   "mw": "278.01",
+   "note": {
+    "en": "20.1% elemental iron",
+    "fa": "20.1% آهن عنصری"
+   },
+   "synonyms": "فروس سولفات, سولفات آهن"
+  },
+  {
+   "name": "Ferrous fumarate",
+   "cas": "141-01-5",
+   "group": "min",
+   "mw": "169.90",
+   "note": {
+    "en": "32.9% elemental iron",
+    "fa": "32.9% آهن عنصری"
+   },
+   "synonyms": "فروس فومارات, فومارات آهن"
+  },
+  {
+   "name": "Zinc sulfate monohydrate",
+   "cas": "7446-19-7",
+   "group": "min",
+   "mw": "179.47",
+   "note": {
+    "en": "36.4% elemental zinc",
+    "fa": "36.4% روی عنصری"
+   },
+   "synonyms": "زینک سولفات, سولفات روی"
+  },
+  {
+   "name": "Zinc gluconate",
+   "cas": "4468-02-4",
+   "group": "min",
+   "mw": "455.68",
+   "note": {
+    "en": "14.3% elemental zinc",
+    "fa": "14.3% روی عنصری"
+   },
+   "synonyms": "زینک گلوکونات, گلوکونات روی"
+  },
+  {
+   "name": "Potassium iodide",
+   "cas": "7681-11-0",
+   "group": "min",
+   "mw": "166.00",
+   "note": {
+    "en": "76.4% iodine",
+    "fa": "76.4% ید"
+   },
+   "synonyms": "پتاسیم یدید, یدید پتاسیم"
+  },
+  {
+   "name": "Sodium selenite",
+   "cas": "10102-18-8",
+   "group": "min",
+   "mw": "172.94",
+   "note": {
+    "en": "45.7% selenium",
+    "fa": "45.7% سلنیوم"
+   },
+   "synonyms": "سدیم سلنیت"
+  }
+ ]
+}

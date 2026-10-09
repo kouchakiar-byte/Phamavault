@@ -1,0 +1,3613 @@
+{
+ "functions": {
+  "dil": {
+   "en": "Diluent (filler)",
+   "fa": "رقیق‌کننده (پرکننده)"
+  },
+  "bin": {
+   "en": "Binder",
+   "fa": "چسباننده (بایندر)"
+  },
+  "dis": {
+   "en": "Disintegrant",
+   "fa": "متلاشی‌کننده (دیس‌اینتگرانت)"
+  },
+  "lub": {
+   "en": "Lubricant",
+   "fa": "لغزان‌کننده (لوبریکانت)"
+  },
+  "gli": {
+   "en": "Glidant",
+   "fa": "بهبوددهنده جریان پودر (گلایدانت)"
+  },
+  "sur": {
+   "en": "Surfactant, emulsifier",
+   "fa": "سورفکتانت، امولسی‌فایر"
+  },
+  "bas": {
+   "en": "Semi-solid base, emollient",
+   "fa": "پایه نیمه‌جامد، امولینت"
+  },
+  "gel": {
+   "en": "Gelling agent, viscosity modifier",
+   "fa": "عامل ژل‌ساز، اصلاح‌کننده ویسکوزیته"
+  },
+  "sol": {
+   "en": "Solvent, humectant",
+   "fa": "حلال، هیومکتانت (رطوبت‌گیر)"
+  },
+  "pre": {
+   "en": "Antimicrobial preservative",
+   "fa": "نگهدارنده ضدمیکروبی"
+  },
+  "aox": {
+   "en": "Antioxidant, chelating agent",
+   "fa": "آنتی‌اکسیدان، عامل کی‌لیت‌کننده"
+  },
+  "swe": {
+   "en": "Sweetening agent",
+   "fa": "شیرین‌کننده"
+  },
+  "ton": {
+   "en": "Tonicity-adjusting agent",
+   "fa": "عامل تنظیم تونیسیته"
+  },
+  "coa": {
+   "en": "Coating agent, film former",
+   "fa": "عامل پوشش‌دهنده، فیلم‌ساز"
+  },
+  "plz": {
+   "en": "Plasticiser",
+   "fa": "پلاستی‌سایزر (نرم‌کننده پلیمر)"
+  },
+  "pol": {
+   "en": "Release-modifying polymer",
+   "fa": "پلیمر تعدیل‌کننده رهش"
+  },
+  "slb": {
+   "en": "Solubilising agent",
+   "fa": "عامل افزایش حلالیت (سالوبیلایزر)"
+  },
+  "oil": {
+   "en": "Oleaginous vehicle",
+   "fa": "حامل روغنی"
+  },
+  "enh": {
+   "en": "Penetration enhancer",
+   "fa": "افزاینده نفوذ پوستی"
+  },
+  "buf": {
+   "en": "pH adjuster, buffering agent",
+   "fa": "تنظیم‌کننده pH، عامل بافری"
+  },
+  "stb": {
+   "en": "Stabiliser, lyoprotectant",
+   "fa": "پایدارکننده، لیوپروتکتانت"
+  },
+  "ads": {
+   "en": "Adsorbent",
+   "fa": "جاذب سطحی (ادسوربنت)"
+  },
+  "fla": {
+   "en": "Flavouring agent",
+   "fa": "طعم‌دهنده"
+  },
+  "col": {
+   "en": "Colouring agent",
+   "fa": "رنگ‌دهنده"
+  },
+  "gas": {
+   "en": "Propellant / inert gas",
+   "fa": "پیشران / گاز بی‌اثر"
+  }
+ },
+ "forms": {
+  "S": {
+   "en": "Solid",
+   "fa": "جامد"
+  },
+  "M": {
+   "en": "Semi-solid",
+   "fa": "نیمه‌جامد"
+  },
+  "L": {
+   "en": "Liquid",
+   "fa": "مایع"
+  },
+  "I": {
+   "en": "Sterile (parenteral/ophthalmic)",
+   "fa": "استریل (تزریقی/چشمی)"
+  }
+ },
+ "items": [
+  {
+   "name": "Acacia",
+   "cas": "9000-01-5",
+   "functions": [
+    "gel",
+    "sur",
+    "bin"
+   ],
+   "useLevel": "1–5% binder · 5–10% suspending",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "Gum arabic, صمغ عربی, آکاسیا"
+  },
+  {
+   "name": "Acesulfame potassium",
+   "cas": "55589-62-3",
+   "functions": [
+    "swe"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "آسه‌سولفام پتاسیم"
+  },
+  {
+   "name": "Acetic acid, glacial",
+   "cas": "64-19-7",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "اسید استیک"
+  },
+  {
+   "name": "Acetone",
+   "cas": "67-64-1",
+   "functions": [
+    "sol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "استون"
+  },
+  {
+   "name": "Acetyltributyl citrate",
+   "cas": "77-90-7",
+   "functions": [
+    "plz"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "ATBC"
+  },
+  {
+   "name": "Acetyltriethyl citrate",
+   "cas": "77-89-4",
+   "functions": [
+    "plz"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "ATEC"
+  },
+  {
+   "name": "Adipic acid",
+   "cas": "124-04-9",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "اسید آدیپیک"
+  },
+  {
+   "name": "Agar",
+   "cas": "9002-18-0",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "آگار"
+  },
+  {
+   "name": "Albumin",
+   "cas": "—",
+   "functions": [
+    "stb"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "Human serum albumin, آلبومین"
+  },
+  {
+   "name": "Alcohol (ethanol)",
+   "cas": "64-17-5",
+   "functions": [
+    "sol",
+    "pre"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "Ethanol, اتانول, الکل"
+  },
+  {
+   "name": "Alginic acid",
+   "cas": "9005-32-7",
+   "functions": [
+    "dis",
+    "bin",
+    "gel"
+   ],
+   "useLevel": "1–5%",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "اسید آلژینیک"
+  },
+  {
+   "name": "Aliphatic polyesters",
+   "cas": "—",
+   "functions": [
+    "pol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "PLA, PLGA, پلی لاکتیک گلیکولیک اسید"
+  },
+  {
+   "name": "Almond oil",
+   "cas": "8007-69-0",
+   "functions": [
+    "oil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "روغن بادام"
+  },
+  {
+   "name": "Alpha tocopherol",
+   "cas": "10191-41-0",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M",
+    "S"
+   ],
+   "synonyms": "Vitamin E, ویتامین ای, توکوفرول"
+  },
+  {
+   "name": "Aluminum monostearate",
+   "cas": "7047-84-9",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "آلومینیوم مونواستئارات"
+  },
+  {
+   "name": "Ammonia solution",
+   "cas": "7664-41-7",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "آمونیاک"
+  },
+  {
+   "name": "Ammonium chloride",
+   "cas": "12125-02-9",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "آمونیوم کلراید"
+  },
+  {
+   "name": "Arginine",
+   "cas": "74-79-3",
+   "functions": [
+    "buf",
+    "stb"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "آرژنین"
+  },
+  {
+   "name": "Ascorbic acid",
+   "cas": "50-81-7",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I",
+    "S"
+   ],
+   "synonyms": "Vitamin C, ویتامین ث, اسید اسکوربیک"
+  },
+  {
+   "name": "Ascorbyl palmitate",
+   "cas": "137-66-6",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M",
+    "S",
+    "L"
+   ],
+   "synonyms": "آسکوربیل پالمیتات"
+  },
+  {
+   "name": "Aspartame",
+   "cas": "22839-47-0",
+   "functions": [
+    "swe"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "آسپارتام"
+  },
+  {
+   "name": "Attapulgite",
+   "cas": "12174-11-7",
+   "functions": [
+    "ads"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "آتاپولژیت"
+  },
+  {
+   "name": "Bentonite",
+   "cas": "1302-78-9",
+   "functions": [
+    "gel",
+    "ads"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "بنتونیت"
+  },
+  {
+   "name": "Benzalkonium chloride",
+   "cas": "8001-54-5",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.01–0.02% ophthalmic",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "BAK, BKC, بنزالکونیوم کلراید"
+  },
+  {
+   "name": "Benzethonium chloride",
+   "cas": "121-54-0",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.01–0.02%",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "بنزتونیوم کلراید"
+  },
+  {
+   "name": "Benzoic acid",
+   "cas": "65-85-0",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "اسید بنزوئیک"
+  },
+  {
+   "name": "Benzyl alcohol",
+   "cas": "100-51-6",
+   "functions": [
+    "pre",
+    "sol"
+   ],
+   "useLevel": "up to 2% preservative",
+   "forms": [
+    "I",
+    "M",
+    "L"
+   ],
+   "synonyms": "بنزیل الکل"
+  },
+  {
+   "name": "Benzyl benzoate",
+   "cas": "120-51-4",
+   "functions": [
+    "sol",
+    "plz"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I",
+    "M"
+   ],
+   "synonyms": "بنزیل بنزوات"
+  },
+  {
+   "name": "Betadex (beta-cyclodextrin)",
+   "cas": "7585-39-9",
+   "functions": [
+    "slb"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "β-cyclodextrin, بتا سیکلودکسترین"
+  },
+  {
+   "name": "Boric acid",
+   "cas": "10043-35-3",
+   "functions": [
+    "pre",
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "اسید بوریک"
+  },
+  {
+   "name": "Bronopol",
+   "cas": "52-51-7",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.01–0.1%",
+   "forms": [
+    "M",
+    "L"
+   ],
+   "synonyms": "برونوپول"
+  },
+  {
+   "name": "Butylated hydroxyanisole",
+   "cas": "25013-16-5",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "0.005–0.02% topical",
+   "forms": [
+    "M",
+    "S",
+    "L"
+   ],
+   "synonyms": "BHA, بی‌اچ‌ای"
+  },
+  {
+   "name": "Butylated hydroxytoluene",
+   "cas": "128-37-0",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "0.0075–0.1% topical",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "BHT, بی‌اچ‌تی, بوتیل هیدروکسی تولوئن"
+  },
+  {
+   "name": "Butylene glycol",
+   "cas": "107-88-0",
+   "functions": [
+    "sol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "بوتیلن گلیکول"
+  },
+  {
+   "name": "Butylparaben",
+   "cas": "94-26-8",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "بوتیل پارابن"
+  },
+  {
+   "name": "Calcium alginate",
+   "cas": "9005-35-0",
+   "functions": [
+    "gel",
+    "dis"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "کلسیم آلژینات"
+  },
+  {
+   "name": "Calcium carbonate",
+   "cas": "471-34-1",
+   "functions": [
+    "dil",
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "کربنات کلسیم, کلسیم کربنات"
+  },
+  {
+   "name": "Calcium phosphate, dibasic anhydrous",
+   "cas": "7757-93-9",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "DCPA, A-Tab, دی‌کلسیم فسفات انیدر"
+  },
+  {
+   "name": "Calcium phosphate, tribasic",
+   "cas": "7758-87-4",
+   "functions": [
+    "dil",
+    "gli"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "TCP, تری‌کلسیم فسفات"
+  },
+  {
+   "name": "Calcium silicate",
+   "cas": "1344-95-2",
+   "functions": [
+    "gli",
+    "ads"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "کلسیم سیلیکات"
+  },
+  {
+   "name": "Calcium stearate",
+   "cas": "1592-23-0",
+   "functions": [
+    "lub"
+   ],
+   "useLevel": "up to 1%",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "کلسیم استئارات"
+  },
+  {
+   "name": "Calcium sulfate dihydrate",
+   "cas": "10101-41-4",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "کلسیم سولفات"
+  },
+  {
+   "name": "Canola oil",
+   "cas": "120962-03-0",
+   "functions": [
+    "oil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "روغن کانولا"
+  },
+  {
+   "name": "Caprylocaproyl polyoxylglycerides",
+   "cas": "—",
+   "functions": [
+    "slb",
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "Labrasol, لابرازول"
+  },
+  {
+   "name": "Carbomer",
+   "cas": "9003-01-4",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "0.5–2% gel · 0.5–1% suspending · 0.1–0.5% emulsifying",
+   "forms": [
+    "M",
+    "L"
+   ],
+   "synonyms": "Carbopol, کاربومر, کاربوپل"
+  },
+  {
+   "name": "Carbon dioxide",
+   "cas": "124-38-9",
+   "functions": [
+    "gas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "دی‌اکسید کربن"
+  },
+  {
+   "name": "Carboxymethylcellulose calcium",
+   "cas": "9050-04-8",
+   "functions": [
+    "dis"
+   ],
+   "useLevel": "1–15%",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "CMC calcium, کربوکسی متیل سلولز کلسیم"
+  },
+  {
+   "name": "Carboxymethylcellulose sodium",
+   "cas": "9004-32-4",
+   "functions": [
+    "gel",
+    "bin",
+    "dis"
+   ],
+   "useLevel": "1–6% binder · 3–6% gel",
+   "forms": [
+    "L",
+    "S",
+    "M"
+   ],
+   "synonyms": "CMC, Sodium CMC, کربوکسی متیل سلولز سدیم, سی‌ام‌سی"
+  },
+  {
+   "name": "Carrageenan",
+   "cas": "9000-07-1",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "کاراگینان"
+  },
+  {
+   "name": "Castor oil",
+   "cas": "8001-79-4",
+   "functions": [
+    "oil",
+    "plz"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M",
+    "L",
+    "I"
+   ],
+   "synonyms": "روغن کرچک"
+  },
+  {
+   "name": "Castor oil, hydrogenated",
+   "cas": "8001-78-3",
+   "functions": [
+    "lub",
+    "bas"
+   ],
+   "useLevel": "0.1–2% lubricant",
+   "forms": [
+    "S",
+    "M"
+   ],
+   "synonyms": "Cutina HR, روغن کرچک هیدروژنه"
+  },
+  {
+   "name": "Cellulose acetate",
+   "cas": "9004-35-7",
+   "functions": [
+    "coa",
+    "pol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "سلولز استات"
+  },
+  {
+   "name": "Cellulose acetate phthalate",
+   "cas": "9004-38-0",
+   "functions": [
+    "coa"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "CAP, سلولز استات فتالات"
+  },
+  {
+   "name": "Cellulose, powdered",
+   "cas": "9004-34-6",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "پودر سلولز"
+  },
+  {
+   "name": "Cellulose, silicified microcrystalline",
+   "cas": "—",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Prosolv SMCC, پروسالو"
+  },
+  {
+   "name": "Ceratonia",
+   "cas": "9000-40-2",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "Locust bean gum, صمغ خرنوب"
+  },
+  {
+   "name": "Cetostearyl alcohol",
+   "cas": "67762-27-0",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "q.s.",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Lanette O, ستواستئاریل الکل"
+  },
+  {
+   "name": "Cetrimide",
+   "cas": "8044-71-1",
+   "functions": [
+    "pre",
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M",
+    "I"
+   ],
+   "synonyms": "ستریمید"
+  },
+  {
+   "name": "Cetyl alcohol",
+   "cas": "36653-82-4",
+   "functions": [
+    "bas",
+    "sur"
+   ],
+   "useLevel": "2–5% emollient · 2–10% stiffening",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "ستیل الکل"
+  },
+  {
+   "name": "Cetyl palmitate",
+   "cas": "540-10-3",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "ستیل پالمیتات"
+  },
+  {
+   "name": "Cetylpyridinium chloride",
+   "cas": "123-03-5",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "ستیل پیریدینیوم کلراید"
+  },
+  {
+   "name": "Chitosan",
+   "cas": "9012-76-4",
+   "functions": [
+    "pol",
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "کیتوزان"
+  },
+  {
+   "name": "Chlorhexidine gluconate",
+   "cas": "18472-51-0",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "کلرهگزیدین"
+  },
+  {
+   "name": "Chlorobutanol",
+   "cas": "57-15-8",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "up to 0.5%",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "کلروبوتانول"
+  },
+  {
+   "name": "Chlorocresol",
+   "cas": "59-50-7",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.1–0.2%",
+   "forms": [
+    "M",
+    "I"
+   ],
+   "synonyms": "کلروکرزول"
+  },
+  {
+   "name": "Chloroxylenol",
+   "cas": "88-04-0",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "کلروزایلنول"
+  },
+  {
+   "name": "Cholesterol",
+   "cas": "57-88-5",
+   "functions": [
+    "sur",
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M",
+    "I"
+   ],
+   "synonyms": "کلسترول"
+  },
+  {
+   "name": "Citric acid",
+   "cas": "77-92-9",
+   "functions": [
+    "buf",
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "S",
+    "I"
+   ],
+   "synonyms": "اسید سیتریک, سیتریک اسید"
+  },
+  {
+   "name": "Coconut oil",
+   "cas": "8001-31-8",
+   "functions": [
+    "oil",
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "روغن نارگیل"
+  },
+  {
+   "name": "Colloidal silicon dioxide",
+   "cas": "7631-86-9",
+   "functions": [
+    "gli"
+   ],
+   "useLevel": "0.1–1%",
+   "forms": [
+    "S",
+    "M"
+   ],
+   "synonyms": "Aerosil, Cab-O-Sil, آئروزیل, سیلیکون دی‌اکسید کلوئیدی"
+  },
+  {
+   "name": "Coloring agents",
+   "cas": "—",
+   "functions": [
+    "col"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L",
+    "M"
+   ],
+   "synonyms": "FD&C dyes, lakes, رنگ خوراکی, رنگ‌های مجاز"
+  },
+  {
+   "name": "Copovidone",
+   "cas": "25086-89-9",
+   "functions": [
+    "bin",
+    "coa"
+   ],
+   "useLevel": "2–5% binder",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Kollidon VA 64, Plasdone S-630, کوپوویدون"
+  },
+  {
+   "name": "Corn oil",
+   "cas": "8001-30-7",
+   "functions": [
+    "oil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "روغن ذرت"
+  },
+  {
+   "name": "Cottonseed oil",
+   "cas": "8001-29-4",
+   "functions": [
+    "oil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "روغن پنبه‌دانه"
+  },
+  {
+   "name": "Cresol",
+   "cas": "1319-77-3",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.15–0.3%",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "کرزول"
+  },
+  {
+   "name": "Croscarmellose sodium",
+   "cas": "74811-65-7",
+   "functions": [
+    "dis"
+   ],
+   "useLevel": "0.5–5% tablets · 10–25% capsules",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Ac-Di-Sol, Primellose, کراس‌کارملوز سدیم"
+  },
+  {
+   "name": "Crospovidone",
+   "cas": "9003-39-8",
+   "functions": [
+    "dis"
+   ],
+   "useLevel": "2–5%",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Kollidon CL, Polyplasdone XL, کراس‌پوویدون"
+  },
+  {
+   "name": "Cyclomethicone",
+   "cas": "69430-24-6",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "سیکلومتیکون"
+  },
+  {
+   "name": "Dextrates",
+   "cas": "39404-33-6",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Emdex, دکستریت"
+  },
+  {
+   "name": "Dextrin",
+   "cas": "9004-53-9",
+   "functions": [
+    "bin",
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "دکسترین"
+  },
+  {
+   "name": "Dextrose",
+   "cas": "50-99-7",
+   "functions": [
+    "dil",
+    "ton",
+    "swe"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "I",
+    "L"
+   ],
+   "synonyms": "Glucose, گلوکز, دکستروز"
+  },
+  {
+   "name": "Dibasic calcium phosphate dihydrate",
+   "cas": "7789-77-7",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "q.s.",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "DCP, Emcompress, دی‌کلسیم فسفات"
+  },
+  {
+   "name": "Dibutyl phthalate",
+   "cas": "84-74-2",
+   "functions": [
+    "plz"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "DBP, دی‌بوتیل فتالات"
+  },
+  {
+   "name": "Dibutyl sebacate",
+   "cas": "109-43-3",
+   "functions": [
+    "plz"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "DBS, دی‌بوتیل سباکات"
+  },
+  {
+   "name": "Diethanolamine",
+   "cas": "111-42-2",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "دی‌اتانول آمین"
+  },
+  {
+   "name": "Diethyl phthalate",
+   "cas": "84-66-2",
+   "functions": [
+    "plz"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "DEP, دی‌اتیل فتالات"
+  },
+  {
+   "name": "Diethylene glycol monoethyl ether",
+   "cas": "111-90-0",
+   "functions": [
+    "sol",
+    "enh"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Transcutol, ترانسکوتول"
+  },
+  {
+   "name": "Dimethicone",
+   "cas": "9006-65-9",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M",
+    "L"
+   ],
+   "synonyms": "دایمتیکون, سیلیکون"
+  },
+  {
+   "name": "Dimethyl sulfoxide",
+   "cas": "67-68-5",
+   "functions": [
+    "sol",
+    "enh"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "DMSO, دی‌متیل سولفوکساید"
+  },
+  {
+   "name": "Dimethylacetamide",
+   "cas": "127-19-5",
+   "functions": [
+    "sol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "DMA"
+  },
+  {
+   "name": "Disodium edetate",
+   "cas": "139-33-3",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "0.005–0.1%",
+   "forms": [
+    "L",
+    "M",
+    "I"
+   ],
+   "synonyms": "EDTA, Edetate disodium, ادتا, دی‌سدیم ادتات, ای‌دی‌تی‌ای"
+  },
+  {
+   "name": "Docusate sodium",
+   "cas": "577-11-7",
+   "functions": [
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "دوکوزات سدیم"
+  },
+  {
+   "name": "Edetic acid",
+   "cas": "60-00-4",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M",
+    "I"
+   ],
+   "synonyms": "EDTA, ادتیک اسید"
+  },
+  {
+   "name": "Erythritol",
+   "cas": "149-32-6",
+   "functions": [
+    "swe",
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "اریتریتول"
+  },
+  {
+   "name": "Ethyl acetate",
+   "cas": "141-78-6",
+   "functions": [
+    "sol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "اتیل استات"
+  },
+  {
+   "name": "Ethyl oleate",
+   "cas": "111-62-6",
+   "functions": [
+    "oil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "اتیل اولئات"
+  },
+  {
+   "name": "Ethyl vanillin",
+   "cas": "121-32-4",
+   "functions": [
+    "fla"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "اتیل وانیلین"
+  },
+  {
+   "name": "Ethylcellulose",
+   "cas": "9004-57-3",
+   "functions": [
+    "coa",
+    "pol",
+    "bin"
+   ],
+   "useLevel": "1–3% binder",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Ethocel, Surelease, Aquacoat, اتیل سلولز"
+  },
+  {
+   "name": "Ethylparaben",
+   "cas": "120-47-8",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "اتیل پارابن"
+  },
+  {
+   "name": "Fructose",
+   "cas": "57-48-7",
+   "functions": [
+    "swe",
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "فروکتوز"
+  },
+  {
+   "name": "Fumaric acid",
+   "cas": "110-17-8",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "اسید فوماریک"
+  },
+  {
+   "name": "Gelatin",
+   "cas": "9000-70-8",
+   "functions": [
+    "bin",
+    "coa",
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "M"
+   ],
+   "synonyms": "ژلاتین"
+  },
+  {
+   "name": "Glucose, liquid",
+   "cas": "—",
+   "functions": [
+    "swe",
+    "bin"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "گلوکز مایع"
+  },
+  {
+   "name": "Glycerin",
+   "cas": "56-81-5",
+   "functions": [
+    "sol"
+   ],
+   "useLevel": "up to 30% as humectant",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "Glycerol, گلیسیرین, گلیسرول"
+  },
+  {
+   "name": "Glyceryl behenate",
+   "cas": "—",
+   "functions": [
+    "lub",
+    "pol"
+   ],
+   "useLevel": "1–3% lubricant",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Compritol 888 ATO, کامپریتول"
+  },
+  {
+   "name": "Glyceryl monooleate",
+   "cas": "25496-72-4",
+   "functions": [
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "گلیسریل مونواولئات"
+  },
+  {
+   "name": "Glyceryl monostearate",
+   "cas": "31566-31-1",
+   "functions": [
+    "sur",
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M",
+    "S"
+   ],
+   "synonyms": "GMS, گلیسریل مونواستئارات, جی‌ام‌اس"
+  },
+  {
+   "name": "Glyceryl palmitostearate",
+   "cas": "8067-32-1",
+   "functions": [
+    "lub"
+   ],
+   "useLevel": "1–3% lubricant",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Precirol ATO 5, پرسیرول"
+  },
+  {
+   "name": "Glycine",
+   "cas": "56-40-6",
+   "functions": [
+    "buf",
+    "stb"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "گلایسین"
+  },
+  {
+   "name": "Glycofurol",
+   "cas": "31692-85-0",
+   "functions": [
+    "sol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "گلیکوفورول"
+  },
+  {
+   "name": "Guar gum",
+   "cas": "9000-30-0",
+   "functions": [
+    "gel",
+    "bin"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "S"
+   ],
+   "synonyms": "صمغ گوار"
+  },
+  {
+   "name": "Hard fat",
+   "cas": "—",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Witepsol, Suppocire, ویتپسول, پایه شیاف"
+  },
+  {
+   "name": "Histidine",
+   "cas": "71-00-1",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "هیستیدین"
+  },
+  {
+   "name": "Hydrochloric acid",
+   "cas": "7647-01-0",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "اسید کلریدریک"
+  },
+  {
+   "name": "Hydroxyethyl cellulose",
+   "cas": "9004-62-0",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "HEC, Natrosol, هیدروکسی اتیل سلولز"
+  },
+  {
+   "name": "Hydroxypropyl betadex",
+   "cas": "128446-35-5",
+   "functions": [
+    "slb"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "HP-β-CD, هیدروکسی پروپیل بتا سیکلودکسترین"
+  },
+  {
+   "name": "Hydroxypropyl cellulose",
+   "cas": "9004-64-2",
+   "functions": [
+    "bin"
+   ],
+   "useLevel": "2–6%",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "HPC, Klucel, هیدروکسی پروپیل سلولز"
+  },
+  {
+   "name": "Hydroxypropyl cellulose, low-substituted",
+   "cas": "9004-64-2",
+   "functions": [
+    "dis",
+    "bin"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "L-HPC"
+  },
+  {
+   "name": "Hypromellose (HPMC)",
+   "cas": "9004-65-3",
+   "functions": [
+    "bin",
+    "coa",
+    "gel"
+   ],
+   "useLevel": "2–5% binder · 10–80% matrix · 2–20% film coat",
+   "forms": [
+    "S",
+    "L",
+    "M"
+   ],
+   "synonyms": "Methocel, Pharmacoat, هایپروملوز, هیدروکسی پروپیل متیل سلولز, اچ‌پی‌ام‌سی"
+  },
+  {
+   "name": "Hypromellose acetate succinate",
+   "cas": "71138-97-1",
+   "functions": [
+    "coa",
+    "pol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "HPMCAS, AQOAT"
+  },
+  {
+   "name": "Hypromellose phthalate",
+   "cas": "9050-31-1",
+   "functions": [
+    "coa"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "HPMCP, هایپروملوز فتالات"
+  },
+  {
+   "name": "Imidurea",
+   "cas": "39236-46-9",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.03–0.5%",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Germall 115, ایمیدوره"
+  },
+  {
+   "name": "Iron oxides",
+   "cas": "—",
+   "functions": [
+    "col"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Red, yellow and black iron oxide, اکسید آهن"
+  },
+  {
+   "name": "Isomalt",
+   "cas": "64519-82-0",
+   "functions": [
+    "dil",
+    "swe"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "ایزومالت"
+  },
+  {
+   "name": "Isopropyl alcohol",
+   "cas": "67-63-0",
+   "functions": [
+    "sol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "M"
+   ],
+   "synonyms": "IPA, ایزوپروپیل الکل, ایزوپروپانول"
+  },
+  {
+   "name": "Isopropyl myristate",
+   "cas": "110-27-0",
+   "functions": [
+    "bas",
+    "enh"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "IPM, ایزوپروپیل میریستات"
+  },
+  {
+   "name": "Isopropyl palmitate",
+   "cas": "142-91-6",
+   "functions": [
+    "bas",
+    "enh"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "IPP, ایزوپروپیل پالمیتات"
+  },
+  {
+   "name": "Kaolin",
+   "cas": "1332-58-7",
+   "functions": [
+    "ads",
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "کائولن"
+  },
+  {
+   "name": "Lactic acid",
+   "cas": "50-21-5",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M",
+    "I"
+   ],
+   "synonyms": "اسید لاکتیک"
+  },
+  {
+   "name": "Lactitol",
+   "cas": "585-86-4",
+   "functions": [
+    "swe",
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "لاکتیتول"
+  },
+  {
+   "name": "Lactose monohydrate",
+   "cas": "64044-51-5",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "q.s.",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Pharmatose, Tablettose, لاکتوز مونوهیدرات"
+  },
+  {
+   "name": "Lactose, anhydrous",
+   "cas": "63-42-3",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "لاکتوز انیدر"
+  },
+  {
+   "name": "Lactose, spray-dried",
+   "cas": "—",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "FlowLac, Fast-Flo, لاکتوز اسپری‌درای"
+  },
+  {
+   "name": "Lanolin",
+   "cas": "8006-54-0",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Wool fat, لانولین"
+  },
+  {
+   "name": "Lanolin alcohols",
+   "cas": "8027-33-6",
+   "functions": [
+    "bas",
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Wool alcohols, الکل‌های لانولین"
+  },
+  {
+   "name": "Lauroyl polyoxylglycerides",
+   "cas": "—",
+   "functions": [
+    "slb",
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "Gelucire 44/14, ژلوسایر"
+  },
+  {
+   "name": "Lecithin",
+   "cas": "8002-43-5",
+   "functions": [
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I",
+    "M"
+   ],
+   "synonyms": "لسیتین"
+  },
+  {
+   "name": "Leucine",
+   "cas": "61-90-5",
+   "functions": [
+    "lub"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "لوسین"
+  },
+  {
+   "name": "Liquid paraffin",
+   "cas": "8012-95-1",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "1–32% emulsions · up to 95% ointments",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Mineral oil, پارافین مایع, روغن معدنی"
+  },
+  {
+   "name": "Macrogol 15 hydroxystearate",
+   "cas": "70142-34-6",
+   "functions": [
+    "slb",
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "Solutol HS 15, Kolliphor HS 15"
+  },
+  {
+   "name": "Macrogol 400 (PEG 400)",
+   "cas": "25322-68-3",
+   "functions": [
+    "sol",
+    "bas"
+   ],
+   "useLevel": "q.s.",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "Polyethylene glycol 400, پلی‌اتیلن گلیکول, پگ 400, ماکروگل"
+  },
+  {
+   "name": "Macrogols, solid grades",
+   "cas": "25322-68-3",
+   "functions": [
+    "bas",
+    "lub",
+    "plz",
+    "bin"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "M"
+   ],
+   "synonyms": "PEG 3350, PEG 4000, PEG 6000, پلی‌اتیلن گلیکول, پگ"
+  },
+  {
+   "name": "Magnesium aluminum silicate",
+   "cas": "1327-43-1",
+   "functions": [
+    "gel",
+    "ads"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "Veegum, ویگوم"
+  },
+  {
+   "name": "Magnesium carbonate",
+   "cas": "546-93-0",
+   "functions": [
+    "dil",
+    "ads"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "کربنات منیزیم"
+  },
+  {
+   "name": "Magnesium oxide",
+   "cas": "1309-48-4",
+   "functions": [
+    "dil",
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "اکسید منیزیم"
+  },
+  {
+   "name": "Magnesium silicate",
+   "cas": "1343-88-0",
+   "functions": [
+    "gli"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "منیزیم سیلیکات"
+  },
+  {
+   "name": "Magnesium stearate",
+   "cas": "557-04-0",
+   "functions": [
+    "lub"
+   ],
+   "useLevel": "0.25–5%",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "منیزیم استئارات, استئارات منیزیم"
+  },
+  {
+   "name": "Magnesium trisilicate",
+   "cas": "14987-04-3",
+   "functions": [
+    "gli",
+    "ads"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "منیزیم تری‌سیلیکات"
+  },
+  {
+   "name": "Maleic acid",
+   "cas": "110-16-7",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "اسید مالئیک"
+  },
+  {
+   "name": "Malic acid",
+   "cas": "6915-15-7",
+   "functions": [
+    "buf",
+    "fla"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "S"
+   ],
+   "synonyms": "اسید مالیک"
+  },
+  {
+   "name": "Maltitol",
+   "cas": "585-88-6",
+   "functions": [
+    "swe",
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "مالتیتول"
+  },
+  {
+   "name": "Maltodextrin",
+   "cas": "9050-36-6",
+   "functions": [
+    "dil",
+    "bin"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "مالتودکسترین"
+  },
+  {
+   "name": "Maltose",
+   "cas": "69-79-4",
+   "functions": [
+    "swe"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "مالتوز"
+  },
+  {
+   "name": "Mannitol",
+   "cas": "69-65-8",
+   "functions": [
+    "dil",
+    "ton"
+   ],
+   "useLevel": "10–90% in tablets",
+   "forms": [
+    "S",
+    "I"
+   ],
+   "synonyms": "Pearlitol, مانیتول"
+  },
+  {
+   "name": "Medium-chain triglycerides",
+   "cas": "73398-61-5",
+   "functions": [
+    "oil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M",
+    "I"
+   ],
+   "synonyms": "MCT, Miglyol 812, میگلیول"
+  },
+  {
+   "name": "Meglumine",
+   "cas": "6284-40-8",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "مگلومین"
+  },
+  {
+   "name": "Menthol",
+   "cas": "89-78-1",
+   "functions": [
+    "fla"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M",
+    "S"
+   ],
+   "synonyms": "منتول"
+  },
+  {
+   "name": "Methionine",
+   "cas": "63-68-3",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "متیونین"
+  },
+  {
+   "name": "Methylcellulose",
+   "cas": "9004-67-5",
+   "functions": [
+    "gel",
+    "bin"
+   ],
+   "useLevel": "1–5% binder",
+   "forms": [
+    "L",
+    "S"
+   ],
+   "synonyms": "MC, متیل سلولز"
+  },
+  {
+   "name": "Methylparaben",
+   "cas": "99-76-3",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.015–0.2% oral · 0.02–0.3% topical",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "Nipagin, متیل پارابن, نیپاژین"
+  },
+  {
+   "name": "Microcrystalline cellulose",
+   "cas": "9004-34-6",
+   "functions": [
+    "dil",
+    "bin",
+    "dis"
+   ],
+   "useLevel": "20–90% diluent/binder · 5–15% disintegrant",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "MCC, Avicel, Vivapur, آویسل, میکروکریستالین سلولز"
+  },
+  {
+   "name": "Monoethanolamine",
+   "cas": "141-43-5",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "مونواتانول آمین"
+  },
+  {
+   "name": "Monothioglycerol",
+   "cas": "96-27-5",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "مونوتیوگلیسرول"
+  },
+  {
+   "name": "N-Methylpyrrolidone",
+   "cas": "872-50-4",
+   "functions": [
+    "sol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "NMP"
+  },
+  {
+   "name": "Nitrogen",
+   "cas": "7727-37-9",
+   "functions": [
+    "gas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "نیتروژن, ازت"
+  },
+  {
+   "name": "Octyldodecanol",
+   "cas": "5333-42-6",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "اکتیل دودکانول"
+  },
+  {
+   "name": "Oleic acid",
+   "cas": "112-80-1",
+   "functions": [
+    "enh",
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "اسید اولئیک"
+  },
+  {
+   "name": "Oleyl alcohol",
+   "cas": "143-28-2",
+   "functions": [
+    "enh",
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "اولئیل الکل"
+  },
+  {
+   "name": "Olive oil",
+   "cas": "8001-25-0",
+   "functions": [
+    "oil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "روغن زیتون"
+  },
+  {
+   "name": "Palmitic acid",
+   "cas": "57-10-3",
+   "functions": [
+    "lub"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "اسید پالمیتیک"
+  },
+  {
+   "name": "Paraffin",
+   "cas": "8002-74-2",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Hard paraffin, پارافین جامد"
+  },
+  {
+   "name": "Peanut oil",
+   "cas": "8002-03-7",
+   "functions": [
+    "oil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "Arachis oil, روغن بادام‌زمینی"
+  },
+  {
+   "name": "Pectin",
+   "cas": "9000-69-5",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "پکتین"
+  },
+  {
+   "name": "Phenol",
+   "cas": "108-95-2",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "≈0.5% injections",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "فنل"
+  },
+  {
+   "name": "Phenoxyethanol",
+   "cas": "122-99-6",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.5–1%",
+   "forms": [
+    "M",
+    "I"
+   ],
+   "synonyms": "فنوکسی اتانول"
+  },
+  {
+   "name": "Phenylethyl alcohol",
+   "cas": "60-12-8",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "فنیل اتیل الکل"
+  },
+  {
+   "name": "Phosphoric acid",
+   "cas": "7664-38-2",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "اسید فسفریک"
+  },
+  {
+   "name": "Polacrilin potassium",
+   "cas": "—",
+   "functions": [
+    "dis"
+   ],
+   "useLevel": "2–10%",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Amberlite IRP88, پولاکریلین پتاسیم"
+  },
+  {
+   "name": "Poloxamer",
+   "cas": "9003-11-6",
+   "functions": [
+    "sur",
+    "gel",
+    "slb"
+   ],
+   "useLevel": "15–50% gelling",
+   "forms": [
+    "L",
+    "M",
+    "I"
+   ],
+   "synonyms": "Pluronic, Kolliphor P 188, Kolliphor P 407, پلوکسامر"
+  },
+  {
+   "name": "Polycarbophil",
+   "cas": "9003-97-8",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "پلی‌کاربوفیل"
+  },
+  {
+   "name": "Polydextrose",
+   "cas": "68424-04-4",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "پلی‌دکستروز"
+  },
+  {
+   "name": "Polyethylene oxide",
+   "cas": "25322-68-3",
+   "functions": [
+    "pol",
+    "bin"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Polyox, PEO, پلی‌اتیلن اکساید"
+  },
+  {
+   "name": "Polymethacrylates",
+   "cas": "—",
+   "functions": [
+    "coa",
+    "pol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Eudragit L, Eudragit S, Eudragit E, Eudragit RL, Eudragit RS, اودراژیت"
+  },
+  {
+   "name": "Polyoxyethylene alkyl ethers",
+   "cas": "—",
+   "functions": [
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Cetomacrogol 1000, Brij, ستوماکروگل"
+  },
+  {
+   "name": "Polyoxyl 35 castor oil",
+   "cas": "61791-12-6",
+   "functions": [
+    "slb",
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I",
+    "L"
+   ],
+   "synonyms": "Cremophor EL, Kolliphor EL, کرموفور"
+  },
+  {
+   "name": "Polyoxyl 40 hydrogenated castor oil",
+   "cas": "61788-85-0",
+   "functions": [
+    "slb",
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "Cremophor RH 40, Kolliphor RH 40"
+  },
+  {
+   "name": "Polyoxyl 40 stearate",
+   "cas": "9004-99-3",
+   "functions": [
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Myrj 52"
+  },
+  {
+   "name": "Polysorbate 20",
+   "cas": "9005-64-5",
+   "functions": [
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M",
+    "I"
+   ],
+   "synonyms": "Tween 20, توئین 20"
+  },
+  {
+   "name": "Polysorbate 60",
+   "cas": "9005-67-8",
+   "functions": [
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Tween 60, توئین 60"
+  },
+  {
+   "name": "Polysorbate 80",
+   "cas": "9005-65-6",
+   "functions": [
+    "sur"
+   ],
+   "useLevel": "1–15% emulsifier · 1–10% solubiliser · 0.1–3% wetting",
+   "forms": [
+    "L",
+    "M",
+    "I"
+   ],
+   "synonyms": "Tween 80, توئین 80, پلی‌سوربات 80"
+  },
+  {
+   "name": "Polyvinyl acetate phthalate",
+   "cas": "34481-48-6",
+   "functions": [
+    "coa"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "PVAP"
+  },
+  {
+   "name": "Polyvinyl alcohol",
+   "cas": "9002-89-5",
+   "functions": [
+    "coa",
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "I"
+   ],
+   "synonyms": "PVA, پلی‌وینیل الکل"
+  },
+  {
+   "name": "Potassium chloride",
+   "cas": "7447-40-7",
+   "functions": [
+    "ton"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "پتاسیم کلراید"
+  },
+  {
+   "name": "Potassium hydroxide",
+   "cas": "1310-58-3",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "پتاسیم هیدروکسید, پتاس"
+  },
+  {
+   "name": "Potassium metabisulfite",
+   "cas": "16731-55-8",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "پتاسیم متابی‌سولفیت"
+  },
+  {
+   "name": "Potassium sorbate",
+   "cas": "24634-61-5",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.1–0.2%",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "سوربات پتاسیم, پتاسیم سوربات"
+  },
+  {
+   "name": "Povidone K30",
+   "cas": "9003-39-8",
+   "functions": [
+    "bin"
+   ],
+   "useLevel": "0.5–5%",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "PVP, Kollidon, Plasdone, پوویدون, پی‌وی‌پی"
+  },
+  {
+   "name": "Pregelatinized starch",
+   "cas": "9005-25-8",
+   "functions": [
+    "bin",
+    "dil",
+    "dis"
+   ],
+   "useLevel": "5–20% binder · 5–10% disintegrant",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Starch 1500, Lycatab, نشاسته پره‌ژلاتینه"
+  },
+  {
+   "name": "Propyl gallate",
+   "cas": "121-79-9",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "up to 0.1%",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "پروپیل گالات"
+  },
+  {
+   "name": "Propylene carbonate",
+   "cas": "108-32-7",
+   "functions": [
+    "sol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "پروپیلن کربنات"
+  },
+  {
+   "name": "Propylene glycol",
+   "cas": "57-55-6",
+   "functions": [
+    "sol",
+    "pre"
+   ],
+   "useLevel": "≈15% humectant · 10–25% oral cosolvent",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "پروپیلن گلیکول"
+  },
+  {
+   "name": "Propylene glycol alginate",
+   "cas": "9005-37-2",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "پروپیلن گلیکول آلژینات"
+  },
+  {
+   "name": "Propylparaben",
+   "cas": "94-13-3",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.01–0.02% oral · 0.01–0.6% topical",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "Nipasol, پروپیل پارابن, نیپازول"
+  },
+  {
+   "name": "Pullulan",
+   "cas": "9057-02-7",
+   "functions": [
+    "coa"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "پولولان"
+  },
+  {
+   "name": "Saccharin",
+   "cas": "81-07-2",
+   "functions": [
+    "swe"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "S"
+   ],
+   "synonyms": "ساخارین"
+  },
+  {
+   "name": "Saccharin sodium",
+   "cas": "128-44-9",
+   "functions": [
+    "swe"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "S"
+   ],
+   "synonyms": "ساخارین سدیم"
+  },
+  {
+   "name": "Sesame oil",
+   "cas": "8008-74-0",
+   "functions": [
+    "oil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "روغن کنجد"
+  },
+  {
+   "name": "Shellac",
+   "cas": "9000-59-3",
+   "functions": [
+    "coa"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "شلاک"
+  },
+  {
+   "name": "Simethicone",
+   "cas": "8050-81-5",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "S"
+   ],
+   "synonyms": "Antifoam, سایمتیکون"
+  },
+  {
+   "name": "Sodium acetate",
+   "cas": "127-09-3",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "سدیم استات"
+  },
+  {
+   "name": "Sodium alginate",
+   "cas": "9005-38-3",
+   "functions": [
+    "gel",
+    "bin",
+    "dis"
+   ],
+   "useLevel": "1–3% binder · 2.5–10% disintegrant",
+   "forms": [
+    "L",
+    "S",
+    "M"
+   ],
+   "synonyms": "سدیم آلژینات"
+  },
+  {
+   "name": "Sodium ascorbate",
+   "cas": "134-03-2",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "سدیم آسکوربات"
+  },
+  {
+   "name": "Sodium benzoate",
+   "cas": "532-32-1",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.02–0.5% oral",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "سدیم بنزوات, بنزوات سدیم"
+  },
+  {
+   "name": "Sodium bicarbonate",
+   "cas": "144-55-8",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "I"
+   ],
+   "synonyms": "بی‌کربنات سدیم, جوش شیرین"
+  },
+  {
+   "name": "Sodium bisulfite",
+   "cas": "7631-90-5",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "سدیم بی‌سولفیت"
+  },
+  {
+   "name": "Sodium carbonate",
+   "cas": "497-19-8",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "کربنات سدیم"
+  },
+  {
+   "name": "Sodium chloride",
+   "cas": "7647-14-5",
+   "functions": [
+    "ton"
+   ],
+   "useLevel": "up to 0.9%",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "سدیم کلراید, کلرید سدیم, نمک"
+  },
+  {
+   "name": "Sodium citrate dihydrate",
+   "cas": "6132-04-3",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "سیترات سدیم, سدیم سیترات"
+  },
+  {
+   "name": "Sodium cyclamate",
+   "cas": "139-05-9",
+   "functions": [
+    "swe"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "S"
+   ],
+   "synonyms": "سدیم سیکلامات"
+  },
+  {
+   "name": "Sodium hyaluronate",
+   "cas": "9067-32-7",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I",
+    "M"
+   ],
+   "synonyms": "هیالورونات سدیم"
+  },
+  {
+   "name": "Sodium hydroxide",
+   "cas": "1310-73-2",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M",
+    "I"
+   ],
+   "synonyms": "سود, سدیم هیدروکسید"
+  },
+  {
+   "name": "Sodium lauryl sulfate",
+   "cas": "151-21-3",
+   "functions": [
+    "sur",
+    "lub"
+   ],
+   "useLevel": "1–2% as tablet lubricant",
+   "forms": [
+    "S",
+    "M"
+   ],
+   "synonyms": "SLS, Sodium dodecyl sulfate, سدیم لوریل سولفات, اس‌ال‌اس"
+  },
+  {
+   "name": "Sodium metabisulfite",
+   "cas": "7681-57-4",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "0.01–1%",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "سدیم متابی‌سولفیت"
+  },
+  {
+   "name": "Sodium phosphate, dibasic",
+   "cas": "7558-79-4",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "دی‌سدیم فسفات"
+  },
+  {
+   "name": "Sodium phosphate, monobasic",
+   "cas": "7558-80-7",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "I"
+   ],
+   "synonyms": "مونوسدیم فسفات"
+  },
+  {
+   "name": "Sodium starch glycolate",
+   "cas": "9063-38-1",
+   "functions": [
+    "dis"
+   ],
+   "useLevel": "2–8%",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Primojel, Explotab, سدیم استارچ گلیکولات"
+  },
+  {
+   "name": "Sodium stearyl fumarate",
+   "cas": "4070-80-8",
+   "functions": [
+    "lub"
+   ],
+   "useLevel": "0.5–2%",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Pruv, سدیم استئاریل فومارات"
+  },
+  {
+   "name": "Sodium sulfite",
+   "cas": "7757-83-7",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "سدیم سولفیت"
+  },
+  {
+   "name": "Sodium thiosulfate",
+   "cas": "7772-98-7",
+   "functions": [
+    "aox"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "سدیم تیوسولفات"
+  },
+  {
+   "name": "Sorbic acid",
+   "cas": "110-44-1",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "0.05–0.2%",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "اسید سوربیک"
+  },
+  {
+   "name": "Sorbitan monolaurate (Span 20)",
+   "cas": "1338-39-2",
+   "functions": [
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "اسپن 20"
+  },
+  {
+   "name": "Sorbitan monooleate (Span 80)",
+   "cas": "1338-43-8",
+   "functions": [
+    "sur"
+   ],
+   "useLevel": "1–15%",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "اسپن 80, سوربیتان مونواولئات"
+  },
+  {
+   "name": "Sorbitan monostearate (Span 60)",
+   "cas": "1338-41-6",
+   "functions": [
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "اسپن 60"
+  },
+  {
+   "name": "Sorbitol",
+   "cas": "50-70-4",
+   "functions": [
+    "swe",
+    "sol"
+   ],
+   "useLevel": "20–35% oral solutions",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "سوربیتول"
+  },
+  {
+   "name": "Soybean oil",
+   "cas": "8001-22-7",
+   "functions": [
+    "oil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "روغن سویا"
+  },
+  {
+   "name": "Squalane",
+   "cas": "111-01-3",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "اسکوالان"
+  },
+  {
+   "name": "Starch, maize",
+   "cas": "9005-25-8",
+   "functions": [
+    "dil",
+    "dis",
+    "bin"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Corn starch, نشاسته ذرت"
+  },
+  {
+   "name": "Stearic acid",
+   "cas": "57-11-4",
+   "functions": [
+    "lub"
+   ],
+   "useLevel": "1–3%",
+   "forms": [
+    "S",
+    "M"
+   ],
+   "synonyms": "اسید استئاریک, استئاریک اسید"
+  },
+  {
+   "name": "Stearyl alcohol",
+   "cas": "112-92-5",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "استئاریل الکل"
+  },
+  {
+   "name": "Sucralose",
+   "cas": "56038-13-2",
+   "functions": [
+    "swe"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "S"
+   ],
+   "synonyms": "سوکرالوز"
+  },
+  {
+   "name": "Sucrose",
+   "cas": "57-50-1",
+   "functions": [
+    "swe"
+   ],
+   "useLevel": "up to 67% in syrups",
+   "forms": [
+    "L",
+    "S"
+   ],
+   "synonyms": "Sugar, ساکارز, سوکروز, شکر"
+  },
+  {
+   "name": "Sugar spheres",
+   "cas": "—",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Nonpareil, Suglets, پلت خنثی"
+  },
+  {
+   "name": "Sugar, compressible",
+   "cas": "—",
+   "functions": [
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Di-Pac, شکر قابل تراکم"
+  },
+  {
+   "name": "Sulfobutylether beta-cyclodextrin",
+   "cas": "182410-00-0",
+   "functions": [
+    "slb"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "SBECD, Captisol"
+  },
+  {
+   "name": "Sunflower oil",
+   "cas": "8001-21-6",
+   "functions": [
+    "oil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "روغن آفتابگردان"
+  },
+  {
+   "name": "Talc",
+   "cas": "14807-96-6",
+   "functions": [
+    "gli",
+    "lub"
+   ],
+   "useLevel": "1–10%",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "تالک"
+  },
+  {
+   "name": "Tartaric acid",
+   "cas": "87-69-4",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "اسید تارتاریک"
+  },
+  {
+   "name": "Thimerosal",
+   "cas": "54-64-8",
+   "functions": [
+    "pre"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "تیمروزال"
+  },
+  {
+   "name": "Thymol",
+   "cas": "89-83-8",
+   "functions": [
+    "pre",
+    "fla"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "تیمول"
+  },
+  {
+   "name": "Titanium dioxide",
+   "cas": "13463-67-7",
+   "functions": [
+    "coa"
+   ],
+   "useLevel": "q.s.",
+   "forms": [
+    "S",
+    "M"
+   ],
+   "synonyms": "تیتانیوم دی‌اکسید, دی‌اکسید تیتانیوم"
+  },
+  {
+   "name": "Tragacanth",
+   "cas": "9000-65-1",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "کتیرا, تراگاکانت"
+  },
+  {
+   "name": "Trehalose",
+   "cas": "99-20-7",
+   "functions": [
+    "stb"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "ترهالوز"
+  },
+  {
+   "name": "Triacetin",
+   "cas": "102-76-1",
+   "functions": [
+    "plz",
+    "sol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "تری‌استین"
+  },
+  {
+   "name": "Tributyl citrate",
+   "cas": "77-94-1",
+   "functions": [
+    "plz"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "TBC"
+  },
+  {
+   "name": "Triethyl citrate",
+   "cas": "77-93-0",
+   "functions": [
+    "plz"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "TEC, تری‌اتیل سیترات"
+  },
+  {
+   "name": "Trolamine",
+   "cas": "102-71-6",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Triethanolamine, TEA, تری‌اتانول آمین"
+  },
+  {
+   "name": "Tromethamine",
+   "cas": "77-86-1",
+   "functions": [
+    "buf"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "Tris, THAM, ترومتامین"
+  },
+  {
+   "name": "Vanillin",
+   "cas": "121-33-5",
+   "functions": [
+    "fla"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "وانیلین"
+  },
+  {
+   "name": "Vegetable oil, hydrogenated",
+   "cas": "—",
+   "functions": [
+    "lub"
+   ],
+   "useLevel": "1–6% lubricant",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "Lubritab, روغن نباتی هیدروژنه"
+  },
+  {
+   "name": "Vitamin E polyethylene glycol succinate",
+   "cas": "9002-96-4",
+   "functions": [
+    "slb",
+    "sur"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L"
+   ],
+   "synonyms": "TPGS, Vitamin E TPGS"
+  },
+  {
+   "name": "Water for injection",
+   "cas": "7732-18-5",
+   "functions": [
+    "sol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "I"
+   ],
+   "synonyms": "WFI, آب قابل تزریق"
+  },
+  {
+   "name": "Water, purified",
+   "cas": "7732-18-5",
+   "functions": [
+    "sol"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "آب خالص, آب دیونیزه"
+  },
+  {
+   "name": "Wax, anionic emulsifying",
+   "cas": "—",
+   "functions": [
+    "sur",
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Lanette SX, موم امولسیفایر آنیونی"
+  },
+  {
+   "name": "Wax, carnauba",
+   "cas": "8015-86-9",
+   "functions": [
+    "coa"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "موم کارنوبا"
+  },
+  {
+   "name": "Wax, microcrystalline",
+   "cas": "63231-60-7",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "موم میکروکریستالین"
+  },
+  {
+   "name": "Wax, nonionic emulsifying",
+   "cas": "—",
+   "functions": [
+    "sur",
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Polawax, موم امولسیفایر غیریونی"
+  },
+  {
+   "name": "Wax, white",
+   "cas": "8012-89-3",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "White beeswax, موم سفید, موم زنبور"
+  },
+  {
+   "name": "White soft paraffin",
+   "cas": "8009-03-8",
+   "functions": [
+    "bas"
+   ],
+   "useLevel": "10–30% creams · up to 100% ointments",
+   "forms": [
+    "M"
+   ],
+   "synonyms": "Petrolatum, Vaseline, وازلین, پترولاتوم, پارافین جامد سفید"
+  },
+  {
+   "name": "Xanthan gum",
+   "cas": "11138-66-2",
+   "functions": [
+    "gel"
+   ],
+   "useLevel": "q.s.",
+   "forms": [
+    "L",
+    "M"
+   ],
+   "synonyms": "صمغ زانتان, زانتان گام"
+  },
+  {
+   "name": "Xylitol",
+   "cas": "87-99-0",
+   "functions": [
+    "swe",
+    "dil"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S",
+    "L"
+   ],
+   "synonyms": "زایلیتول"
+  },
+  {
+   "name": "Zein",
+   "cas": "9010-66-6",
+   "functions": [
+    "coa"
+   ],
+   "useLevel": "—",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "زئین"
+  },
+  {
+   "name": "Zinc stearate",
+   "cas": "557-05-1",
+   "functions": [
+    "lub"
+   ],
+   "useLevel": "0.5–1.5%",
+   "forms": [
+    "S"
+   ],
+   "synonyms": "زینک استئارات, استئارات روی"
+  }
+ ]
+}
