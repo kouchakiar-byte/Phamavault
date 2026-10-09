@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Vazirmatn } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { copy, siteConfig } from "@/content/site";
 import { localeDirection, locales } from "@/i18n/config";
-import { getDictionary, getLocale } from "@/i18n/get-dictionary";
-import { siteConfig } from "@/lib/site";
+import { getLocale } from "@/i18n/locale";
 import "../globals.css";
 
 const vazirmatn = Vazirmatn({
@@ -29,19 +29,19 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const [locale, t] = await Promise.all([getLocale(), getDictionary()]);
+  const locale = await getLocale();
   return {
     metadataBase: new URL(siteConfig.url),
-    title: { default: t.meta.title, template: `%s | ${siteConfig.name}` },
-    description: t.meta.description,
+    title: { default: copy.meta.title[locale], template: `%s | ${siteConfig.name}` },
+    description: copy.meta.description[locale],
     alternates: {
       canonical: `/${locale}`,
       languages: Object.fromEntries(locales.map((l) => [l, `/${l}`])),
     },
     openGraph: {
       siteName: siteConfig.name,
-      title: t.meta.title,
-      description: t.meta.description,
+      title: copy.meta.title[locale],
+      description: copy.meta.description[locale],
       locale: locale === "fa" ? "fa_IR" : "en_US",
       type: "website",
     },
@@ -49,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
-  const [locale, t] = await Promise.all([getLocale(), getDictionary()]);
+  const locale = await getLocale();
 
   return (
     <html
@@ -62,7 +62,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2"
         >
-          {t.nav.skipToContent}
+          {copy.nav.skipToContent[locale]}
         </a>
         <SiteHeader />
         <main id="main" className="flex-1">

@@ -1,0 +1,246 @@
+{
+ "ctd": [
+  {
+   "title": {
+    "en": "Module 1: Regional administrative information",
+    "fa": "ماژول 1: اطلاعات اداری منطقه‌ای"
+   },
+   "items": [
+    {
+     "en": "Application forms, labelling and regional documents; not part of the common CTD",
+     "fa": "فرم‌های درخواست، برچسب‌گذاری و مدارک منطقه‌ای؛ بخشی از CTD مشترک نیست"
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Module 2: Summaries",
+    "fa": "ماژول 2: خلاصه‌ها"
+   },
+   "items": [
+    {
+     "en": "2.3 Quality overall summary",
+     "fa": "2.3 خلاصه کلی کیفیت"
+    },
+    {
+     "en": "2.4 Nonclinical overview",
+     "fa": "2.4 مرور غیربالینی"
+    },
+    {
+     "en": "2.5 Clinical overview",
+     "fa": "2.5 مرور بالینی"
+    },
+    {
+     "en": "2.6 Nonclinical summaries",
+     "fa": "2.6 خلاصه‌های غیربالینی"
+    },
+    {
+     "en": "2.7 Clinical summary",
+     "fa": "2.7 خلاصه بالینی"
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Module 3: Quality, drug substance (3.2.S)",
+    "fa": "ماژول 3: کیفیت، ماده مؤثره (3.2.S)"
+   },
+   "items": [
+    {
+     "en": "S.1 General information",
+     "fa": "S.1 اطلاعات عمومی"
+    },
+    {
+     "en": "S.2 Manufacture",
+     "fa": "S.2 ساخت"
+    },
+    {
+     "en": "S.3 Characterisation",
+     "fa": "S.3 شناسایی و تعیین ویژگی‌ها"
+    },
+    {
+     "en": "S.4 Control of drug substance",
+     "fa": "S.4 کنترل ماده مؤثره"
+    },
+    {
+     "en": "S.5 Reference standards",
+     "fa": "S.5 استانداردهای مرجع"
+    },
+    {
+     "en": "S.6 Container closure system",
+     "fa": "S.6 سیستم بسته‌بندی"
+    },
+    {
+     "en": "S.7 Stability",
+     "fa": "S.7 پایداری"
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Module 3: Quality, drug product (3.2.P)",
+    "fa": "ماژول 3: کیفیت، فرآورده دارویی (3.2.P)"
+   },
+   "items": [
+    {
+     "en": "P.1 Description and composition",
+     "fa": "P.1 شرح و ترکیب"
+    },
+    {
+     "en": "P.2 Pharmaceutical development",
+     "fa": "P.2 توسعه دارویی"
+    },
+    {
+     "en": "P.3 Manufacture",
+     "fa": "P.3 ساخت"
+    },
+    {
+     "en": "P.4 Control of excipients",
+     "fa": "P.4 کنترل اکسیپیان‌ها"
+    },
+    {
+     "en": "P.5 Control of drug product",
+     "fa": "P.5 کنترل فرآورده"
+    },
+    {
+     "en": "P.6 Reference standards",
+     "fa": "P.6 استانداردهای مرجع"
+    },
+    {
+     "en": "P.7 Container closure system",
+     "fa": "P.7 سیستم بسته‌بندی"
+    },
+    {
+     "en": "P.8 Stability",
+     "fa": "P.8 پایداری"
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Module 4: Nonclinical study reports",
+    "fa": "ماژول 4: گزارش‌های مطالعات غیربالینی"
+   },
+   "items": [
+    {
+     "en": "Pharmacology, pharmacokinetics and toxicology reports",
+     "fa": "گزارش‌های فارماکولوژی، فارماکوکینتیک و سم‌شناسی"
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Module 5: Clinical study reports",
+    "fa": "ماژول 5: گزارش‌های مطالعات بالینی"
+   },
+   "items": [
+    {
+     "en": "Biopharmaceutic, pharmacokinetic, efficacy and safety study reports",
+     "fa": "گزارش‌های مطالعات بیوفارماسی، فارماکوکینتیک، اثربخشی و ایمنی"
+    }
+   ]
+  }
+ ],
+ "ich": [
+  {
+   "code": "Q1A(R2)",
+   "en": "Stability testing of new drug substances and products",
+   "fa": "آزمون پایداری مواد مؤثره و فرآورده‌های جدید"
+  },
+  {
+   "code": "Q1B",
+   "en": "Photostability testing",
+   "fa": "آزمون پایداری نوری"
+  },
+  {
+   "code": "Q2(R2)",
+   "en": "Validation of analytical procedures",
+   "fa": "اعتبارسنجی روش‌های آنالیز"
+  },
+  {
+   "code": "Q3A(R2)",
+   "en": "Impurities in new drug substances",
+   "fa": "ناخالصی‌ها در مواد مؤثره جدید"
+  },
+  {
+   "code": "Q3B(R2)",
+   "en": "Impurities in new drug products",
+   "fa": "ناخالصی‌ها در فرآورده‌های جدید"
+  },
+  {
+   "code": "Q3C",
+   "en": "Residual solvents",
+   "fa": "حلال‌های باقی‌مانده"
+  },
+  {
+   "code": "Q3D",
+   "en": "Elemental impurities",
+   "fa": "ناخالصی‌های عنصری"
+  },
+  {
+   "code": "Q6A",
+   "en": "Specifications for chemical substances and products",
+   "fa": "مشخصات مواد و فرآورده‌های شیمیایی"
+  },
+  {
+   "code": "Q7",
+   "en": "Good manufacturing practice for active ingredients",
+   "fa": "اصول GMP برای مواد مؤثره"
+  },
+  {
+   "code": "Q8(R2)",
+   "en": "Pharmaceutical development",
+   "fa": "توسعه دارویی"
+  },
+  {
+   "code": "Q9(R1)",
+   "en": "Quality risk management",
+   "fa": "مدیریت ریسک کیفیت"
+  },
+  {
+   "code": "Q10",
+   "en": "Pharmaceutical quality system",
+   "fa": "سیستم کیفیت دارویی"
+  },
+  {
+   "code": "Q11",
+   "en": "Development and manufacture of drug substances",
+   "fa": "توسعه و ساخت مواد مؤثره"
+  },
+  {
+   "code": "Q12",
+   "en": "Product lifecycle management",
+   "fa": "مدیریت چرخه عمر فرآورده"
+  },
+  {
+   "code": "Q13",
+   "en": "Continuous manufacturing",
+   "fa": "تولید پیوسته"
+  },
+  {
+   "code": "Q14",
+   "en": "Analytical procedure development",
+   "fa": "توسعه روش آنالیز"
+  },
+  {
+   "code": "M4",
+   "en": "The Common Technical Document",
+   "fa": "سند فنی مشترک (CTD)"
+  },
+  {
+   "code": "M7",
+   "en": "Mutagenic impurities",
+   "fa": "ناخالصی‌های جهش‌زا"
+  },
+  {
+   "code": "M9",
+   "en": "Biopharmaceutics Classification System-based biowaivers",
+   "fa": "معافیت از مطالعه زیستی بر پایه BCS"
+  },
+  {
+   "code": "M10",
+   "en": "Bioanalytical method validation",
+   "fa": "اعتبارسنجی روش‌های بیوآنالیز"
+  }
+ ]
+}

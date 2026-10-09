@@ -11,8 +11,7 @@ excipients, APIs and regulatory affairs.
 
 - [Next.js 16](https://nextjs.org) (App Router, Cache Components, Turbopack) + TypeScript
 - Tailwind CSS v4 with brand tokens in `src/app/globals.css`
-- MDX for Knowledge Base articles (`@next/mdx` + `remark-gfm`)
-- Dictionary-based i18n: `fa` (default, RTL) and `en` (LTR)
+- Bilingual content: `fa` (default, RTL) and `en` (LTR); every string is held as `{ en, fa }` and titles show both
 
 ## Getting started
 
@@ -27,24 +26,22 @@ npm run lint
 
 ```
 src/
-  app/
-    [lang]/                  # root layout per locale (html lang/dir, fonts, header, footer)
-      page.tsx               # Home
-      [section]/page.tsx     # shared template for sitemap pages (formulation, apis, …)
-      knowledge-base/        # article index and [slug] article pages
-    sitemap.ts, robots.ts, icon.svg
-  components/                # header, footer, logo, UI primitives
-  content/articles/{fa,en}/  # MDX articles
-  i18n/                      # locale config + fa/en dictionaries
-  lib/site.ts                # sitemap definition (slugs, icons, groups)
-  lib/articles.ts            # article registry and loaders
+  app/[lang]/                # root layout per locale (html lang/dir, fonts, header, footer)
+    page.tsx                 # Home: hero, nine sections, plans, contact
+    handbooks/ suppliers/ excipients/ materials/ tools/ formulation/ regulatory/
+    qa/ and qa/[code]/       # SOP library and one page per SOP
+  app/sitemap.ts, robots.ts, icon.svg
+  components/                # header, footer, logo, BiTitle, tables, calculators, formula builder
+  content/site.ts            # site copy (home, plans, contact, common labels)
+  content/sections.ts        # the nine sections: titles, descriptions, illustrations
+  content/pages.ts           # section page headers and labels
+  data/*.json                # reference databases (excipients, materials, SOPs, …)
+  i18n/                      # locales, Bi type and helpers
   proxy.ts                   # locale detection / redirect
 ```
 
 ## Common tasks
 
-- **Edit page copy** — `src/i18n/dictionaries/fa.json` and `en.json` (keep both in sync).
-- **Add an article** — create `src/content/articles/<locale>/<slug>.mdx` exporting `metadata`
-  (`title`, `description`, `date`, `category`, `readingMinutes`), then add the slug in `src/lib/articles.ts`.
-- **Add a sitemap page** — add an entry to `sections` in `src/lib/site.ts` and its copy under `sections` in both dictionaries.
-- **Give a page a custom design** — create `src/app/[lang]/<slug>/page.tsx`.
+- **Edit copy** — `src/content/*.ts`; each string is `bi("English", "فارسی")`.
+- **Edit a database** — the JSON in `src/data/` (types in `src/data/index.ts`).
+- **Show a title in both languages** — use `<BiTitle text={…} locale={locale} />`.

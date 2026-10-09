@@ -43,7 +43,7 @@ export function Logo({ tagline, inverted = false }: LogoProps) {
         </span>
         {tagline && (
           <span
-            className={`mt-1 text-[0.6rem] font-medium uppercase tracking-[0.14em] ${inverted ? "text-vault-100/70" : "text-muted"}`}
+            className={`mt-1 text-[0.55rem] font-medium uppercase tracking-[0.14em] ${inverted ? "text-vault-100/70" : "text-muted"}`}
             style={{ fontFamily: "var(--font-plex-sans)" }}
           >
             {tagline}

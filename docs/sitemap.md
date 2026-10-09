@@ -1,30 +1,25 @@
-# PharmaVault — Sitemap & Content Plan
+# PharmaVault — Sitemap
 
-All pages exist in both locales: `/fa/...` (default, RTL) and `/en/...` (LTR).
-Visiting `/` redirects by saved preference (`NEXT_LOCALE` cookie), then browser language, then Persian.
+The structure follows the approved design (claude.ai artifact "Pharmavault").
+Every page exists in both locales: `/fa/...` (default, RTL) and `/en/...` (LTR); every title is shown in both languages.
 
-| # | Page | Path | Status | Planned content |
-| --- | --- | --- | --- | --- |
-| 1 | Home | `/` | ✅ Built | Hero, audiences, expertise, latest articles, resources, project areas, CTA |
-| 2 | Pharmaceutical Formulation | `/formulation` | 🟡 Outline | Pre-formulation, solid oral, liquids & semi-solids, MR systems, scale-up, stability |
-| 3 | Drug Development | `/drug-development` | 🟡 Outline | Generic development, reverse engineering, dissolution & f2, BE design, QbD, analytical methods |
-| 4 | Pharmaceutical Excipients | `/excipients` | 🟡 Outline | Functionality & grades, compatibility, functional classes, CR polymers, solubilizers, specs |
-| 5 | APIs | `/apis` | 🟡 Outline | Monographs, BCS, polymorphism, impurities, DMF/CEP, supplier qualification |
-| 6 | Regulatory & CTD | `/regulatory` | 🟡 Outline | CTD/eCTD modules, Module 3, IFDA requirements, ICH overview, variations, GMP |
-| 7 | Pharmaceutical Resources | `/resources` | 🟡 Outline | Guideline library, calculators, templates, pharmacopoeia refs, glossary, databases |
-| 8 | Articles / Knowledge Base | `/knowledge-base` | ✅ Built | Article index + article pages (MDX); 2 seed articles per language |
-| 9 | Projects | `/projects` | 🟡 Outline | Project areas now; real case studies when available |
-| 10 | About Us | `/about` | 🟡 Outline | Mission, team, scientific approach, partnerships |
-| 11 | Contact | `/contact` | 🟡 Outline | Enquiry topics + email; contact form planned |
+| Page | Path | Content | Data source |
+| --- | --- | --- | --- |
+| Home | `/` | Hero, nine sections, plans (`#plans`, `#enterprise`), separate orders, contact (`#contact`) | `src/content/site.ts`, `src/content/sections.ts` |
+| Handbooks · هندبوک‌ها | `/handbooks` | 8 planned handbooks with chapters (in preparation) | `src/data/handbooks.json` |
+| Supplier Database · بانک تأمین‌کنندگان | `/suppliers` | Placeholder — the existing supplier bank goes here | — |
+| Excipient Database · بانک اکسیپیان | `/excipients` | 272 excipients: search (EN/FA/trade name/CAS), filter by function and dosage form | `src/data/excipients.json` |
+| Raw Material Database · بانک مواد اولیه | `/materials` | 32 APIs, vitamins and minerals; search and group filter | `src/data/raw-materials.json` |
+| Pharmaceutical Calculators · ماشین‌حساب‌های دارویی | `/tools` | 8 live calculators: HLB, isotonicity, dilution, buffer, suppository, mg/mmol/mEq, vitamins, batch scale-up | `src/components/calculators.tsx` |
+| Formulation Tools · ابزار فرمولاسیون | `/formulation` | Starting-formula builder for 8 dosage forms | `src/data/formulation.json` |
+| Regulatory Resources · منابع رگولاتوری | `/regulatory` | CTD structure, 20 ICH guidelines (searchable), ICH Q1A stability conditions | `src/data/regulatory.json` |
+| Quality Assurance · تضمین کیفیت | `/qa` | 136 SOPs by department (search, filter), standard SOP template | `src/data/sops.json` |
+| SOP full text | `/qa/<code>` | Full Persian text of each SOP with copy button (e.g. `/fa/qa/qa-001`) | `src/data/sops.json` |
+| Enterprise Solutions · راهکار سازمانی | `/#enterprise` | Enterprise plan on the home page | `src/content/site.ts` |
 
-"Outline" pages are rendered by the shared `src/app/[lang]/[section]/page.tsx` from dictionary copy.
-To give a page its own design, create `src/app/[lang]/<slug>/page.tsx` — it takes precedence automatically.
+## Next steps
 
-## Suggested next steps
-
-1. Confirm remaining brand decisions (colours, logo concept). Contact email `info@pharmavault.ir` is confirmed.
-2. Write full content for each expertise page (Formulation → Excipients → Regulatory first).
-3. Grow the Knowledge Base: categories, tags, search, related articles.
-4. Resources: start with the guideline library and a glossary; then calculators.
-5. Contact form (with spam protection) and About page with real team bios.
-6. Deployment (e.g. Vercel or an Iranian host with Node.js) and analytics.
+1. Bring the existing supplier bank into `/suppliers`.
+2. Write the handbooks (currently titles and chapters only).
+3. Accounts and subscriptions (plans are shown, sign-up is by email for now).
+4. Deployment and analytics.

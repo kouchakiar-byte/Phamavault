@@ -3,30 +3,31 @@
 /*
  * PharmaVault design tokens — see docs/brand-guide.md.
  * Vault (navy) carries authority, Molecule (teal) carries science,
- * Capsule (gold) is a sparing premium accent.
+ * Capsule (gold) is a sparing premium accent. Tuned to a lighter theme.
  */
 @theme {
-  --color-vault-950: #06111f;
-  --color-vault-900: #0b1f3a;
-  --color-vault-800: #12305a;
-  --color-vault-700: #1c4373;
-  --color-vault-100: #e3eaf4;
-  --color-vault-50: #f3f6fa;
+  --color-vault-950: #18355c;
+  --color-vault-900: #1f426f;
+  --color-vault-800: #2a5288;
+  --color-vault-700: #3864a0;
+  --color-vault-100: #e4ebf5;
+  --color-vault-50: #f3f6fb;
 
-  --color-molecule-700: #0a7a76;
-  --color-molecule-600: #0b8f8a;
-  --color-molecule-500: #0e9f9a;
-  --color-molecule-400: #2cc4bc;
-  --color-molecule-100: #d5f3f1;
-  --color-molecule-50: #edfaf9;
+  --color-molecule-700: #0a7873;
+  --color-molecule-600: #0d8a84;
+  --color-molecule-500: #14a49d;
+  --color-molecule-400: #43cbc3;
+  --color-molecule-100: #d4f2ef;
+  --color-molecule-50: #eef9f8;
 
-  --color-capsule-500: #c9a54c;
-  --color-capsule-400: #dcbd6d;
+  --color-capsule-500: #c39b3d;
+  --color-capsule-400: #e0c27a;
 
-  --color-paper: #f6f8fb;
-  --color-ink: #0f1b2d;
-  --color-muted: #52627a;
-  --color-line: #dde4ee;
+  --color-paper: #f8fafc;
+  --color-ink: #16273d;
+  --color-muted: #566a80;
+  --color-line: #dfe6ef;
+  --color-warn: #a8500f;
 
   --radius-card: 1rem;
 }
@@ -36,16 +37,17 @@
   --font-mono: var(--font-plex-mono), ui-monospace, monospace;
 }
 
-/* Persian uses Vazirmatn; English uses IBM Plex Sans. */
+/* Persian uses Vazirmatn; English uses IBM Plex Sans. Each falls back to the other. */
 .locale-fa {
   --font-body: var(--font-vazirmatn), var(--font-plex-sans), system-ui, sans-serif;
 }
 .locale-en {
-  --font-body: var(--font-plex-sans), system-ui, sans-serif;
+  --font-body: var(--font-plex-sans), var(--font-vazirmatn), system-ui, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -53,7 +55,6 @@ body {
   color: var(--color-ink);
 }
 
-/* Persian body copy needs a slightly taller line height. */
 .locale-fa body {
   line-height: 1.85;
 }
@@ -63,84 +64,182 @@ body {
   outline-offset: 2px;
 }
 
-/* Long-form article typography (MDX). */
-.prose-pv {
-  max-width: 72ch;
-  font-size: 1.0625rem;
-  line-height: 1.85;
-  color: var(--color-ink);
-}
-.prose-pv h2 {
-  margin-top: 2.5rem;
-  margin-bottom: 0.75rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-vault-900);
-}
-.prose-pv h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--color-vault-800);
-}
-.prose-pv p {
-  margin-block: 1rem;
-}
-.prose-pv ul,
-.prose-pv ol {
-  margin-block: 1rem;
-  padding-inline-start: 1.5rem;
-}
-.prose-pv ul {
-  list-style: disc;
-}
-.prose-pv ol {
-  list-style: decimal;
-}
-.prose-pv li {
-  margin-block: 0.35rem;
-}
-.prose-pv li::marker {
-  color: var(--color-molecule-500);
-}
-.prose-pv a {
-  color: var(--color-molecule-700);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.prose-pv strong {
-  color: var(--color-vault-900);
-}
-.prose-pv code {
-  font-family: var(--font-mono);
-  font-size: 0.9em;
-  background: var(--color-vault-50);
-  padding: 0.1em 0.35em;
-  border-radius: 0.3rem;
-}
-.prose-pv blockquote {
-  margin-block: 1.5rem;
-  padding: 1rem 1.25rem;
-  border-inline-start: 4px solid var(--color-molecule-500);
-  background: var(--color-molecule-50);
-  border-radius: 0.5rem;
-}
-.prose-pv table {
+/* ---------- Section card illustrations (ported from the design) ---------- */
+.art {
+  display: block;
   width: 100%;
-  margin-block: 1.5rem;
-  border-collapse: collapse;
-  font-size: 0.95rem;
+  height: 150px;
+  background: var(--color-vault-50);
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease;
 }
-.prose-pv th,
-.prose-pv td {
-  border: 1px solid var(--color-line);
-  padding: 0.6rem 0.8rem;
+.art * {
+  fill: none;
+  stroke: var(--color-molecule-500);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.art .f {
+  fill: var(--color-molecule-500);
+  stroke: none;
+}
+.art .s {
+  stroke: var(--color-vault-700);
+  opacity: 0.45;
+}
+.art .liq {
+  opacity: 0.35;
+}
+.art > path:first-of-type:not(.flow),
+.art > rect,
+.art g rect,
+.art .spin circle {
+  fill: #fff;
+}
+.art > circle:not(.f):not(.blob) {
+  fill: var(--color-molecule-50);
+}
+.art .blob {
+  fill: var(--color-molecule-100);
+  stroke: none;
+  transform-origin: 60px 40px;
+  animation: pv-blob 5s ease-in-out infinite alternate;
+}
+.art .draw {
+  stroke-dasharray: 24;
+  animation: pv-draw 4s ease-in-out infinite;
+}
+.art .pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pv-pulse 2.4s ease-in-out infinite;
+}
+.art .rise {
+  animation: pv-rise 3s ease-in infinite;
+}
+.art .tilt {
+  transform-origin: 60px 24px;
+  animation: pv-tilt 3.2s ease-in-out infinite alternate;
+}
+.art .float {
+  animation: pv-float 3.5s ease-in-out infinite alternate;
+}
+.art .flow {
+  stroke-dasharray: 3 5;
+  animation: pv-flow 1.6s linear infinite;
+}
+.art .spin {
+  transform-origin: 60px 40px;
+  animation: pv-spin 9s linear infinite;
+}
+.group:hover .art {
+  transform: translateY(-4px) scale(1.03);
+}
+
+@keyframes pv-draw {
+  0% { stroke-dashoffset: 24; }
+  40%, 80% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 24; }
+}
+@keyframes pv-pulse {
+  0%, 100% { opacity: 0.35; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.25); }
+}
+@keyframes pv-rise {
+  0% { transform: translateY(0); opacity: 0; }
+  25% { opacity: 1; }
+  100% { transform: translateY(-24px); opacity: 0; }
+}
+@keyframes pv-tilt {
+  from { transform: rotate(-7deg); }
+  to { transform: rotate(7deg); }
+}
+@keyframes pv-float {
+  from { transform: translateY(-4px); }
+  to { transform: translateY(4px); }
+}
+@keyframes pv-flow {
+  to { stroke-dashoffset: -16; }
+}
+@keyframes pv-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes pv-blob {
+  from { transform: scale(0.85); }
+  to { transform: scale(1.12); }
+}
+@keyframes pv-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+.fade-in {
+  animation: pv-in 0.7s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .art *,
+  .fade-in {
+    animation: none !important;
+  }
+}
+
+/* ---------- Data tables ---------- */
+.db {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  background: #fff;
+}
+.db th {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-line);
+  background: var(--color-vault-50);
+  color: var(--color-vault-900);
+  font-weight: 600;
   text-align: start;
+  white-space: nowrap;
+}
+.db td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--color-line);
   vertical-align: top;
 }
-.prose-pv th {
+.db tbody tr:hover {
+  background: var(--color-molecule-50);
+}
+.db .num {
+  font-family: var(--font-mono);
+  direction: ltr;
+  text-align: start;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.locale-fa .db .num {
+  text-align: right;
+}
+
+/* Number inputs used by calculators and builders. */
+.field-input {
+  width: 100%;
+  border: 1px solid var(--color-line);
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  color: var(--color-ink);
+}
+.field-input[type="number"] {
+  font-family: var(--font-mono);
+  direction: ltr;
+}
+.field-input:read-only {
   background: var(--color-vault-50);
-  color: var(--color-vault-900);
-  font-weight: 700;
+  color: var(--color-muted);
+}
+.field-input:focus {
+  outline: none;
+  border-color: var(--color-molecule-500);
+  box-shadow: 0 0 0 3px var(--color-molecule-100);
 }

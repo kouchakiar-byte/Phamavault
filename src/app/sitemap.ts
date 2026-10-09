@@ -1,21 +1,20 @@
 import type { MetadataRoute } from "next";
+import { sections } from "@/content/sections";
+import { siteConfig } from "@/content/site";
+import { sops } from "@/data";
 import { locales } from "@/i18n/config";
-import { articleSlugs } from "@/lib/articles";
-import { sections, siteConfig } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ["", ...sections.map((s) => s.slug)];
-  return locales.flatMap((locale) => [
-    ...pages.map((path) => ({
-      url: `${siteConfig.url}/${locale}${path ? `/${path}` : ""}`,
-      alternates: {
-        languages: Object.fromEntries(
-          locales.map((l) => [l, `${siteConfig.url}/${l}${path ? `/${path}` : ""}`]),
-        ),
-      },
+  const paths = [
+    "",
+    ...sections.filter((s) => !s.href.startsWith("#")).map((s) => s.href),
+    ...sops.items.filter((s) => s.text).map((s) => `qa/${s.code.toLowerCase()}`),
+  ];
+  const url = (locale: string, path: string) => `${siteConfig.url}/${locale}${path ? `/${path}` : ""}`;
+  return locales.flatMap((locale) =>
+    paths.map((path) => ({
+      url: url(locale, path),
+      alternates: { languages: Object.fromEntries(locales.map((l) => [l, url(l, path)])) },
     })),
-    ...articleSlugs(locale).map((slug) => ({
-      url: `${siteConfig.url}/${locale}/knowledge-base/${slug}`,
-    })),
-  ]);
+  );
 }
