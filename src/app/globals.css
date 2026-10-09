@@ -184,6 +184,8 @@ body {
   }
 }
 
+/* Component classes live in a layer so Tailwind utilities can override them. */
+@layer components {
 /* ---------- Data tables ---------- */
 .db {
   width: 100%;
@@ -242,4 +244,5 @@ body {
   outline: none;
   border-color: var(--color-molecule-500);
   box-shadow: 0 0 0 3px var(--color-molecule-100);
+}
 }

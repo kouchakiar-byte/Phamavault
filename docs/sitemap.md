@@ -7,7 +7,7 @@ Every page exists in both locales: `/fa/...` (default, RTL) and `/en/...` (LTR);
 | --- | --- | --- | --- |
 | Home | `/` | Hero, nine sections, plans (`#plans`, `#enterprise`), separate orders, contact (`#contact`) | `src/content/site.ts`, `src/content/sections.ts` |
 | Handbooks · هندبوک‌ها | `/handbooks` | 8 planned handbooks with chapters (in preparation) | `src/data/handbooks.json` |
-| Supplier Database · بانک تأمین‌کنندگان | `/suppliers` | Placeholder — the existing supplier bank goes here | — |
+| Supplier Database · بانک تأمین‌کنندگان | `/suppliers` | 139 Iranian manufacturers and importers, 2,164 materials: synonym-aware search (B1 = thiamine = تیامین, B1 ≠ B12), filters, credibility sort, copyable phones | `src/data/suppliers.json`, `src/lib/supplier-search.ts` |
 | Excipient Database · بانک اکسیپیان | `/excipients` | 272 excipients: search (EN/FA/trade name/CAS), filter by function and dosage form | `src/data/excipients.json` |
 | Raw Material Database · بانک مواد اولیه | `/materials` | 32 APIs, vitamins and minerals; search and group filter | `src/data/raw-materials.json` |
 | Pharmaceutical Calculators · ماشین‌حساب‌های دارویی | `/tools` | 8 live calculators: HLB, isotonicity, dilution, buffer, suppository, mg/mmol/mEq, vitamins, batch scale-up | `src/components/calculators.tsx` |
@@ -19,7 +19,6 @@ Every page exists in both locales: `/fa/...` (default, RTL) and `/en/...` (LTR);
 
 ## Next steps
 
-1. Bring the existing supplier bank into `/suppliers`.
-2. Write the handbooks (currently titles and chapters only).
-3. Accounts and subscriptions (plans are shown, sign-up is by email for now).
-4. Deployment and analytics.
+1. Write the handbooks (currently titles and chapters only).
+2. Accounts and subscriptions (plans are shown, sign-up is by email for now).
+3. Deployment and analytics.

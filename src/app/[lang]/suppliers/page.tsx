@@ -1,4 +1,5 @@
 import { PageHeader } from "@/components/page-header";
+import { SupplierBank } from "@/components/supplier-bank";
 import { Container } from "@/components/ui";
 import { pages } from "@/content/pages";
 import { getLocale } from "@/i18n/locale";
@@ -13,10 +14,8 @@ export default async function SuppliersPage() {
   return (
     <>
       <PageHeader locale={locale} plate="SP" eyebrow={page.eyebrow} title={page.title} lead={page.lead} />
-      <Container className="py-14">
-        <p className="max-w-2xl rounded-card border-2 border-dashed border-molecule-400 bg-molecule-50 p-7 text-molecule-700">
-          {page.hold[locale]}
-        </p>
+      <Container className="max-w-5xl py-10">
+        <SupplierBank locale={locale} />
       </Container>
     </>
   );

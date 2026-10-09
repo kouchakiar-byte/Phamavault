@@ -1,0 +1,5627 @@
+{
+ "companies": [
+  {
+   "n": "صنایع شیمیایی و دارویی تبریز",
+   "e": "Tabriz Chemical & Pharmaceutical Industries",
+   "t": "m",
+   "c": [
+    "min",
+    "exc",
+    "vit"
+   ],
+   "prov": "آذربایجان شرقی",
+   "city": "تبریز",
+   "tel": [
+    "041-51203000"
+   ],
+   "mail": "TABRIZPHARMA@YAHOO.COM",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "تیامین هیدروکلراید (ویتامین B1)|Thiamine hydrochloride USP|API",
+    "زینک سولفات مونوهیدرات|Zinc sulfate monohydrate",
+    "زینک سولفات هپتاهیدرات|Zinc sulfate heptahydrate",
+    "زینک اکساید|Zinc oxide|API",
+    "زینک سیترات|Zinc citrate|API",
+    "زینک کربنات|Zinc carbonate",
+    "کلسیم کربنات سنگین|Calcium carbonate heavy USP",
+    "کلسیم کربنات سبک|Calcium carbonate light USP",
+    "کلسیم کربنات گرانوله|Calcium carbonate granular|API",
+    "کلسیم سیترات|Calcium citrate",
+    "کلسیم هیدروژن فسفات انهیدروس|Calcium hydrogen phosphate anhydrous",
+    "کلسیم هیدروژن فسفات دی‌هیدرات|Calcium hydrogen phosphate dihydrate",
+    "تری کلسیم فسفات|Tricalcium phosphate USP",
+    "کلسیم سولفات دی‌هیدرات|Calcium sulfate dihydrate USP",
+    "کلسیم استئارات|Calcium stearate",
+    "منیزیم استئارات|Magnesium stearate",
+    "منیزیم سیترات ۹ آبه|Magnesium citrate nonahydrate",
+    "منیزیم کلراید|Magnesium chloride",
+    "پتاسیم کلراید|Potassium chloride BP",
+    "پتاسیم سیترات مونوهیدرات|Potassium citrate monohydrate",
+    "پتاسیم بیکربنات|Potassium bicarbonate",
+    "دی پتاسیم فسفات|Dibasic potassium phosphate",
+    "تالک|Talc",
+    "تری سدیم سیترات دی‌هیدرات|Trisodium citrate dihydrate",
+    "تری سدیم سیترات انهیدروس|Trisodium citrate anhydrous",
+    "مونو سدیم فسفات|Monobasic sodium phosphate",
+    "دی سدیم فسفات|Dibasic sodium phosphate USP",
+    "تری سدیم فسفات|Tribasic sodium phosphate",
+    "سدیم بیکربنات|Sodium bicarbonate USP-BP",
+    "سدیم کربنات|Sodium carbonate",
+    "سدیم ساخارین|Sodium saccharin USP-BP",
+    "پیپرازین سیترات|Piperazine citrate USP|API",
+    "کالامین|Calamine BP/USP",
+    "اسید بوریک|Boric acid USP-BP|API",
+    "اوره|Urea"
+   ]
+  },
+  {
+   "n": "هستی آریا شیمی (هیتا فارما)",
+   "e": "Hasti Aria Shimi — HITA PHARMA",
+   "t": "m",
+   "c": [
+    "api",
+    "vit"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88218167"
+   ],
+   "mail": "Management.office@hastiaria.com",
+   "web": "https://www.hitapharma.com/per/",
+   "note": "نام تجاری: هیتا فارما (HITA PHARMA).",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "رپاگلیناید|Repaglinide",
+    "متادون هیدروکلراید|Methadone hydrochloride",
+    "دیکلوفناک سدیم|Diclofenac sodium",
+    "ویتامین B1 (تیامین هیدروکلراید)|Thiamine hydrochloride",
+    "مزالازین|Mesalamine",
+    "متادون هیدروکلراید|Methadone hydrochloride",
+    "رزوواستاتین کلسیم|Rosuvastatin calcium",
+    "آتورواستاتین کلسیم|Atorvastatin calcium",
+    "لوزارتان پتاسیم|Losartan potassium",
+    "آملودیپین بزیلات|Amlodipine besylate",
+    "لیناگلیپتین|Linagliptin",
+    "والزارتان|Valsartan",
+    "آزیترومایسین دی‌هیدرات|Azithromycin dihydrate",
+    "متفورمین هیدروکلراید|Metformin hydrochloride",
+    "آپیکسابان|Apixaban",
+    "فاموتیدین|Famotidine",
+    "سیتاگلیپتین فسفات|Sitagliptin phosphate",
+    "امپاگلیفلوزین|Empagliflozin",
+    "فنتانیل سیترات|Fentanyl citrate",
+    "داپاگلیفلوزین پروپان‌دی‌اول|Dapagliflozin propanediol",
+    "اندانسترون هیدروکلراید|Ondansetron hydrochloride"
+   ]
+  },
+  {
+   "n": "گروه صنایع شفا فارمد",
+   "e": "Shifa Pharmed Industrial Group",
+   "t": "m",
+   "c": [
+    "api",
+    "vit"
+   ],
+   "prov": "البرز",
+   "city": "کرج (البرز)",
+   "tel": [
+    "026-34067777"
+   ],
+   "mail": "pr@shifapharmed.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "ویتامین B1 (تیامین)|Vitamin B1 (Thiamine)",
+    "کلاریترومایسین|Clarithromycin",
+    "پنی‌سیلین جی پتاسیم|Penicillin G K",
+    "۶-آمینو پنی‌سیلانیک اسید|6-Aminopenicillanic acid (6-APA)",
+    "آموکسی‌سیلین|Amoxicillin",
+    "آزیترومایسین دی‌هیدرات|Azithromycin dihydrate",
+    "اداراوون|Edaravone",
+    "اریترومایسین اتیل سوکسینات|Erythromycin ethylsuccinate",
+    "اریترومایسین بیس|Erythromycin base"
+   ]
+  },
+  {
+   "n": "ثمین دارو ایرانیان",
+   "e": "Samin Darou Iranian",
+   "t": "m",
+   "c": [
+    "api",
+    "vit"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22773500",
+    "021-22773400"
+   ],
+   "mail": "commerce@samindarou.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "تیامین هیدروکلراید (ویتامین B1)|Thiamine hydrochloride",
+    "نیکوتین‌آمید (نیاسینامید، ویتامین B3)|Nicotinamide",
+    "نیاسین (نیکوتینیک اسید)|Niacin",
+    "آزیترومایسین دی‌هیدرات|Azithromycin dihydrate",
+    "آتورواستاتین کلسیم|Atorvastatin calcium",
+    "آسیکلوویر|Acyclovir",
+    "بی‌پریدین هیدروکلراید|Biperiden hydrochloride",
+    "پنتوپرازول سدیم|Pantoprazole sodium",
+    "سلکوکسیب|Celecoxib",
+    "کلاریترومایسین|Clarithromycin",
+    "گاباپنتین|Gabapentin",
+    "فکسوفنادین هیدروکلراید|Fexofenadine hydrochloride",
+    "فاموتیدین|Famotidine",
+    "لوزارتان پتاسیم|Losartan potassium",
+    "متفورمین هیدروکلراید|Metformin hydrochloride",
+    "متوکاربامول|Methocarbamol",
+    "هیدروکسی کلروکین سولفات|Hydroxychloroquine sulfate"
+   ]
+  },
+  {
+   "n": "دماوند دارو",
+   "e": "Damavand Darou",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران (کارخانه: سمنان)",
+   "tel": [
+    "021-88527794-7"
+   ],
+   "mail": "sales@damavandpharma.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "فلوکستین هیدروکلراید|Fluoxetine HCl",
+    "فلووکسامین مالئات|Fluvoxamine maleate",
+    "سوماتریپتان سوکسینات|Sumatriptan succinate",
+    "گاباپنتین|Gabapentin",
+    "کارودیلول|Carvedilol",
+    "ایبوپروفن|Ibuprofen",
+    "سدیم والپروات|Sodium valproate",
+    "سیپروهپتادین هیدروکلراید|Cyproheptadine HCl",
+    "کلرفنیرآمین مالئات|Chlorpheniramine maleate",
+    "فنیل‌افرین هیدروکلراید|Phenylephrine HCl",
+    "سیلدنافیل سیترات|Sildenafil citrate",
+    "لوزارتان پتاسیم|Losartan potassium",
+    "متوپرولول تارتارات|Metoprolol tartrate",
+    "آملودیپین بزیلات|Amlodipine besylate",
+    "سیتاگلیپتین فسفات مونوهیدرات|Sitagliptin phosphate monohydrate"
+   ]
+  },
+  {
+   "n": "تولید مواد اولیه دارویی تهران شیمی",
+   "e": "Tehran Chemie (API)",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-61074450"
+   ],
+   "src": "https://cppsynd.com/",
+   "p": [
+    "اریترومایسین اتیل سوکسینات|Erythromycin ethylsuccinate",
+    "اریترومایسین بیس|Erythromycin base",
+    "ترامادول هیدروکلراید|Tramadol hydrochloride",
+    "آتورواستاتین کلسیم|Atorvastatin calcium",
+    "آزیترومایسین دی‌هیدرات|Azithromycin dihydrate",
+    "سفیکسیم تری‌هیدرات|Cefixime trihydrate",
+    "متفورمین هیدروکلراید|Metformin hydrochloride",
+    "سلکوکسیب|Celecoxib",
+    "گلی‌بن‌کلامید|Glibenclamide",
+    "لوراتادین|Loratadine",
+    "کلاریترومایسین|Clarithromycin",
+    "پنتوپرازول سدیم|Pantoprazole sodium",
+    "سیتالوپرام هیدروبروماید|Citalopram hydrobromide",
+    "لوزارتان پتاسیم|Losartan potassium",
+    "سوماتریپتان سوکسینات|Sumatriptan succinate",
+    "گاباپنتین|Gabapentin",
+    "متوکاربامول|Methocarbamol",
+    "سیپروفلوکساسین|Ciprofloxacin",
+    "فکسوفنادین|Fexofenadine",
+    "کلاوولانات پتاسیم|Potassium clavulanate",
+    "فلووکسامین مالئات|Fluvoxamine maleate"
+   ]
+  },
+  {
+   "n": "فناوران دارویی پارسیان",
+   "e": "Parsian Pharmaceutical Co.",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "البرز",
+   "city": "دفتر: تهران — کارخانه: البرز",
+   "tel": [
+    "026-91004245"
+   ],
+   "addr": "دفتر مرکزی: تهران، بلوار اندرزگو، جنب مرکز خرید سانا، بن‌بست زمانی، پلاک ۶",
+   "site": "البرز، شهرک صنعتی بهارستان، گلستان ششم غربی، پلاک ۱۵۳",
+   "mail": "info@parsianpharma.com",
+   "web": "https://parsianpharma.com/",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "ابیراترون استات|Abiraterone acetate",
+    "آپیکسابان|Apixaban",
+    "کریزوتینیب|Crizotinib",
+    "داپاگلیفلوزین پروپان‌دیول مونوهیدرات|Dapagliflozin propanediol monohydrate",
+    "داساتینیب|Dasatinib",
+    "دی‌متیل فومارات|Dimethyl fumarate",
+    "امپاگلیفلوزین|Empagliflozin",
+    "ارلوتینیب هیدروکلراید|Erlotinib hydrochloride",
+    "فاویپیراویر|Favipiravir",
+    "فینگولیمود هیدروکلراید|Fingolimod hydrochloride",
+    "جفیتینیب|Gefitinib",
+    "ایبروتینیب|Ibrutinib",
+    "ایماتینیب مزیلات|Imatinib mesylate",
+    "لنالیدوماید|Lenalidomide",
+    "لنواتینیب مزیلات|Lenvatinib mesylate",
+    "لتروزول|Letrozole",
+    "لیناگلیپتین|Linagliptin",
+    "مولنوپیراویر|Molnupiravir",
+    "نیلوتینیب هیدروکلراید|Nilotinib hydrochloride",
+    "اوسیمرتینیب مزیلات|Osimertinib mesylate",
+    "پالبوسیکلیب|Palbociclib",
+    "پازوپانیب هیدروکلراید|Pazopanib hydrochloride",
+    "رگورافنیب|Regorafenib",
+    "ریلوزول|Riluzole",
+    "ریواروکسابان|Rivaroxaban",
+    "روکسادوستات|Roxadustat",
+    "سیپونیمود فومارات|Siponimod fumarate",
+    "سورافنیب توسیلات|Sorafenib tosylate",
+    "سانیتینیب مالات|Sunitinib malate",
+    "تریفلونوماید|Teriflunomide",
+    "توفاسیتینیب سیترات|Tofacitinib citrate",
+    "وندتانیب|Vandetanib"
+   ]
+  },
+  {
+   "n": "بهداشت کار",
+   "e": "Behdasht Kar",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22575050"
+   ],
+   "mail": "info@behdashtkar.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "استازولامید|Acetazolamide",
+    "آلوپورینول|Allopurinol",
+    "آمیودارون هیدروکلراید|Amiodarone hydrochloride",
+    "بتامتازون سدیم فسفات|Betamethasone sodium phosphate",
+    "بتامتازون والرات|Betamethasone valerate",
+    "کلوبتازول پروپیونات|Clobetasol propionate",
+    "دگزامتازون سدیم فسفات|Dexamethasone sodium phosphate",
+    "دکسترومتورفان هیدروبروماید|Dextromethorphan hydrobromide",
+    "فیناستراید|Finasteride",
+    "اسید استیک گلاسیال|Glacial acetic acid",
+    "هیدروکورتیزون استات|Hydrocortisone acetate",
+    "ایندومتاسین|Indomethacin",
+    "متوکلوپرامید هیدروکلراید|Metoclopramide hydrochloride",
+    "پزودوافدرین هیدروکلراید|Pseudoephedrine hydrochloride",
+    "فنیل‌افرین هیدروکلراید|Phenylephrine hydrochloride",
+    "سدیم استات تری‌هیدرات|Sodium acetate trihydrate",
+    "اسپیرونولاکتون|Spironolactone",
+    "تریامسینولون استوناید|Triamcinolone acetonide",
+    "تری‌متوپریم|Trimethoprim"
+   ]
+  },
+  {
+   "n": "ایماژن",
+   "e": "Imagen",
+   "t": "m",
+   "c": [
+    "api",
+    "cos"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88050222"
+   ],
+   "mail": "marketing@imagen-co.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "ماینوکسیدیل|Minoxidil API",
+    "ال-کارنیتین|L-Carnitine API",
+    "ال-کارنیتین ال-تارترات|L-Carnitine L-tartrate API",
+    "ایبوپروفن|Ibuprofen API"
+   ]
+  },
+  {
+   "n": "صنایع شیمیایی کیمیاگران امروز",
+   "e": "Kimyagaran Emrooz",
+   "t": "m",
+   "c": [
+    "exc",
+    "cos",
+    "api"
+   ],
+   "prov": "مرکزی",
+   "city": "دفتر: تهران — کارخانه: اراک",
+   "tel": [
+    "021-41769000",
+    "021-88746565",
+    "086-38232054-8"
+   ],
+   "addr": "دفتر مرکزی: تهران، خیابان سهروردی شمالی، خیابان هویزه غربی، پلاک ۱۳۳",
+   "site": "اراک، جاده ملایر، خروجی ازنا، ناحیه صنعتی شهید بابایی، خیابان یاس سوم",
+   "web": "https://kimyagaran.com/",
+   "src": "https://kimyagaran.com/",
+   "p": [
+    "پلی اتیلن گلیکول گرید دارویی (PEG)|Polyethylene glycol pharma grade",
+    "مونو پروپیلن گلایکول گرید دارویی|Propylene glycol pharma grade",
+    "پلی‌سوربات ۸۰|Polysorbate 80",
+    "مترونیدازول|Metronidazole|API",
+    "الکل‌های چرب اتوکسیله|Ethoxylated fatty alcohols",
+    "اسیدهای چرب اتوکسیله|Ethoxylated fatty acids",
+    "روغن کرچک هیدروژنه اتوکسیله|PEG hydrogenated castor oil",
+    "سوربیتان استرهای اتوکسیله|Ethoxylated sorbitan esters",
+    "لانولین اتوکسیله|Ethoxylated lanolin",
+    "گلیسرین اتوکسیله|Ethoxylated glycerin",
+    "نونیل فنول اتوکسیله|Nonylphenol ethoxylate",
+    "گلایکول اترها|Glycol ethers",
+    "دی پروپیلن گلایکول|Dipropylene glycol (DPG)"
+   ]
+  },
+  {
+   "n": "آریا شیمی رایکا",
+   "e": "Aria Shimi Rayka",
+   "t": "m",
+   "c": [
+    "exc",
+    "cos"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88100000"
+   ],
+   "mail": "info@asrc.ir",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "گلیسرول گرید دارویی (گلیسیرین)|Glycerol pharma grade",
+    "اسپان ۶۰ (سوربیتان مونواستئارات)|Span 60, Sorbitan monostearate",
+    "اسپان ۲۰ (سوربیتان مونولورات)|Span 20, Sorbitan monolaurate",
+    "اسپان ۸۰ (سوربیتان مونواولئات)|Span 80, Sorbitan monooleate",
+    "پلی‌سوربات ۲۰|Polysorbate 20",
+    "پلی‌سوربات ۸۰|Polysorbate 80",
+    "پلی‌سوربات ۶۰|Polysorbate 60"
+   ]
+  },
+  {
+   "n": "ایتوک فارمد",
+   "e": "Etooc Pharmed",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-77605636",
+    "021-77510414"
+   ],
+   "mail": "info@etoocpharmed.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "پروپیلن گلایکول|Propylene glycol",
+    "۲-پروپانول (ایزوپروپیل الکل)|2-Propanol BP/EP/USP",
+    "اتانول ۹۶٪|Ethanol 96% BP/USP",
+    "استون|Acetone BP/EP/USP",
+    "متانول|Methanol BP/USP",
+    "استونیتریل|Acetonitrile HPLC",
+    "بنزیل الکل|Benzyl alcohol",
+    "دی‌کلرومتان|Dichloromethane BP/USP",
+    "دی‌متیل سولفوکسید|DMSO",
+    "گلیسیرین|Glycerol",
+    "پارافین مایع|Liquid paraffin",
+    "پلی اتیلن گلیکول ۴۰۰|PEG 400",
+    "پلی اتیلن گلیکول ۶۰۰|PEG 600",
+    "پلی اتیلن گلیکول ۴۰۰۰|PEG 4000",
+    "پلی اتیلن گلیکول ۶۰۰۰|PEG 6000",
+    "اسید سیتریک خشک|Citric acid anhydrous BP/USP",
+    "اسید سیتریک مونوهیدرات|Citric acid monohydrate BP/USP",
+    "اسید فسفریک ۸۵٪|Phosphoric acid 85% BP/USP",
+    "اسید کلریدریک ۳۷٪|Hydrochloric acid 37% EP/USP",
+    "سدیم هیدروکساید|Sodium hydroxide BP/USP",
+    "سدیم بنزوات|Sodium benzoate",
+    "سدیم کلراید|Sodium chloride",
+    "سدیم متابی‌سولفیت|Sodium metabisulfite",
+    "سدیم لوریل سولفات (SDS)|Sodium dodecyl sulfate BP/USP",
+    "ادتات دی‌سدیم|Edetate disodium (EDTA)",
+    "دی سدیم هیدروژن فسفات دی‌هیدرات|Disodium hydrogen phosphate dihydrate BP/USP",
+    "پتاسیم دی‌هیدروژن فسفات|Potassium dihydrogen phosphate BP/USP",
+    "سدیم استات|Sodium acetate BP/USP",
+    "سالیسیلیک اسید|Salicylic acid",
+    "اوره|Urea",
+    "بوریک اسید|Boric acid",
+    "بنتونیت|Bentonite",
+    "موم زنبور سفید و زرد|Beeswax white/yellow",
+    "تری‌اتانول‌آمین|Triethanolamine",
+    "پتاسیم یدید|Potassium iodide",
+    "سولفات مس پنتاهیدرات|Copper(II) sulfate pentahydrate",
+    "آهن (II) سولفات هپتاهیدرات|Iron(II) sulfate heptahydrate",
+    "منیزیم سولفات هپتاهیدرات|Magnesium sulfate heptahydrate",
+    "منیزیم کلراید هگزاهیدرات|Magnesium chloride hexahydrate",
+    "کلسیم کلراید دی‌هیدرات|Calcium chloride dihydrate"
+   ]
+  },
+  {
+   "n": "مجتمع صنایع شیمیایی دکتر مجللی",
+   "e": "Dr. Mojallali Chemical Complex",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88177760",
+    "021-88177765",
+    "021-88177768"
+   ],
+   "mail": "hr@drm-chem.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "دی پتاسیم هیدروژن فسفات|Dipotassium hydrogen phosphate",
+    "دی سدیم هیدروژن فسفات|Disodium hydrogen phosphate",
+    "سدیم دی‌هیدروژن فسفات|Sodium dihydrogen phosphate",
+    "پتاسیم دی‌هیدروژن فسفات|Potassium dihydrogen phosphate",
+    "سدیم هیدروکساید|Sodium hydroxide",
+    "متانول|Methanol",
+    "ایزوپروپیل الکل|Isopropyl alcohol",
+    "استون|Acetone",
+    "استونیتریل|Acetonitrile",
+    "اسید استیک|Acetic acid",
+    "اسید سولفوریک|Sulfuric acid",
+    "اسید کلریدریک|Hydrochloric acid",
+    "اسید فسفریک|Phosphoric acid",
+    "اسید نیتریک|Nitric acid",
+    "اتیلن گلایکول|Ethylene glycol",
+    "اتانول ۹۶٪|Ethanol 96%",
+    "اسید سیتریک|Citric acid",
+    "سدیم لوریل سولفات|Sodium dodecyl sulfate",
+    "سدیم استات|Sodium acetate"
+   ]
+  },
+  {
+   "n": "فرهیختگان زرنام",
+   "e": "Farhikhtegan Zarnam",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "البرز",
+   "city": "البرز",
+   "tel": [
+    "026-43212000"
+   ],
+   "mail": "b.borhani@zarholding.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "مالتودکسترین|Maltodextrin",
+    "نشاسته ذرت|Corn starch",
+    "نشاسته اصلاح‌شده ذرت|Modified corn starch",
+    "شربت فروکتوز|Fructose syrup",
+    "شربت گلوکز|Glucose syrup"
+   ]
+  },
+  {
+   "n": "کشت و صنعت حکیم فارابی خوزستان",
+   "e": "Hakim Farabi Agro-Industry",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "خوزستان",
+   "city": "خوزستان",
+   "tel": [
+    "061-33135010",
+    "061-33135011"
+   ],
+   "mail": "info@hakimfarabi.co",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "شکر دارویی (ساکارز)|Pharma sugar (Sucrose)"
+   ]
+  },
+  {
+   "n": "تعاونی تولیدی باریوم سولفات ایران",
+   "e": "Iran Barium Sulfate Co-op",
+   "t": "m",
+   "c": [
+    "min",
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-77528987",
+    "021-77528824"
+   ],
+   "mail": "mks@bsiran.ir",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "باریم سولفات|Barium sulfate",
+    "کربنات کلسیم سبک|Light calcium carbonate",
+    "کربنات کلسیم سنگین|Heavy calcium carbonate"
+   ]
+  },
+  {
+   "n": "کاویان شیمی",
+   "e": "Kavian Shimi",
+   "t": "m",
+   "c": [
+    "min"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "src": "https://cppsynd.com/",
+   "p": [
+    "فروس سولفات خشک (آهن)|Dried ferrous sulphate|API",
+    "فروس سولفات ۷ آبه (آهن)|Crystalline ferrous sulphate|API"
+   ]
+  },
+  {
+   "n": "نوا فارمد کیمیا",
+   "e": "Nova Pharmed Kimia",
+   "t": "m",
+   "c": [
+    "min",
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22074001"
+   ],
+   "mail": "nasrin.emami@novapharmed.co",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "سدیم بیکربنات|Sodium bicarbonate"
+   ]
+  },
+  {
+   "n": "ژلاتین حلال",
+   "e": "Halal Gelatin",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44200244"
+   ],
+   "mail": "faravaridarooihalal@yahoo.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "پودر ژلاتین حلال گرید دارویی|Halal bovine gelatin powder, pharma grade"
+   ]
+  },
+  {
+   "n": "درسا دارو",
+   "e": "Dorsa Darou",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-54612000 داخلی 2"
+   ],
+   "mail": "INFO@dorsadarou.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "گرانول نیتروگلیسرین پیوسته‌رهش ۱٫۶٪|Nitroglycerin SR granules 1.6%",
+    "نیتروگلیسرین ۱۰٪ در لاکتوز انهیدروس|Diluted nitroglycerin 10% in lactose",
+    "نیتروگلیسرین ۵٪ در اتانول (تزریقی)|Diluted nitroglycerin 5% in ethanol",
+    "نیتروگلیسرین ۵٪ در پروپیلن گلایکول (تزریقی)|Diluted nitroglycerin 5% in propylene glycol",
+    "نیتروگلیسرین در میگلیول|Diluted nitroglycerin in Miglyol"
+   ]
+  },
+  {
+   "n": "نیکان اکسیر باختر",
+   "e": "Nikan Exir Bakhtar",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "کرمانشاه",
+   "city": "کرمانشاه",
+   "tel": [
+    "083-38232412"
+   ],
+   "addr": "کرمانشاه، میدان شهدا، خیابان سیلو، روبروی اداره برق، مرکز رشد و فناوری دانشگاه علوم پزشکی کرمانشاه",
+   "mail": "info@nikanpharmacy.com",
+   "web": "http://www.nikanpharmacy.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "پرامی‌پکسول دی‌هیدروکلراید|Pramipexole dihydrochloride",
+    "دونپزیل هیدروکلراید|Donepezil hydrochloride",
+    "دولوکستین هیدروکلراید|Duloxetine hydrochloride",
+    "تامسولوسین هیدروکلراید|Tamsulosin hydrochloride",
+    "الانزاپین|Olanzapine",
+    "ایمیکویمود|Imiquimod"
+   ]
+  },
+  {
+   "n": "هیوا فارمد",
+   "e": "Hiva Pharmed",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44661783"
+   ],
+   "mail": "info@hiva-pharmed.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "دی‌متیل فومارات|Dimethyl fumarate",
+    "زولدرونیک اسید|Zoledronic acid",
+    "بورتزومیب|Bortezomib",
+    "دالفامپریدین|Dalfampridine",
+    "امپاگلیفلوزین|Empagliflozin",
+    "توفاسیتینیب|Tofacitinib"
+   ]
+  },
+  {
+   "n": "کیمیا اثر سلامت",
+   "e": "Kimia Asar Salamat",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44545045-7"
+   ],
+   "mail": "kimia.asarsalamat@gmail.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "آزیترومایسین دی‌هیدرات|Azithromycin dihydrate",
+    "آتورواستاتین کلسیم|Atorvastatin calcium",
+    "لیدوکائین|Lidocaine"
+   ]
+  },
+  {
+   "n": "مهبان شیمی (گروه مهبان)",
+   "e": "Mahban Chemi / Mahban Group",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88678915-17",
+    "086-42345436 (کارخانه ساوه)"
+   ],
+   "addr": "تهران، خیابان ولی‌عصر، بلوار اسفندیار",
+   "site": "ساوه (کارخانه)",
+   "web": "https://mahbangroup.com/",
+   "note": "تلفن‌ها از سایت شرکت. فهرست محصول ناقص است (۱۱ قلم از ۲۲ قلم).",
+   "src": "https://www.pharmacompass.com/api-manufacturers/mahban-group",
+   "p": [
+    "آملودیپین بزیلات|Amlodipine besylate",
+    "آتورواستاتین|Atorvastatin",
+    "آزیترومایسین|Azithromycin",
+    "بوپرنورفین هیدروکلراید|Buprenorphine hydrochloride",
+    "سلکوکسیب|Celecoxib",
+    "سیتالوپرام هیدروبروماید|Citalopram hydrobromide",
+    "دیلتیازم هیدروکلراید|Diltiazem hydrochloride",
+    "امپاگلیفلوزین|Empagliflozin",
+    "اس‌سیتالوپرام اگزالات|Escitalopram oxalate",
+    "فاموتیدین|Famotidine",
+    "گاباپنتین|Gabapentin"
+   ]
+  },
+  {
+   "n": "تولید مواد اولیه داروپخش (تماد)",
+   "e": "Temad",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "البرز",
+   "city": "جاده مخصوص کرج",
+   "tel": [
+    "026-36100801-10"
+   ],
+   "site": "کیلومتر ۲۸ جاده مخصوص کرج، روبروی ایستگاه مترو اتمسفر",
+   "mail": "info@temad.com",
+   "web": "http://www.temad.com",
+   "note": "بزرگ‌ترین تولیدکننده مواد اولیه نارکوتیک و غیرنارکوتیک؛ فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "مواد اولیه نارکوتیک|Narcotic APIs",
+    "مواد اولیه غیرنارکوتیک|Non-narcotic APIs"
+   ]
+  },
+  {
+   "n": "البرز بالک",
+   "e": "Alborz Bulk",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "مرکزی",
+   "city": "دفتر: تهران — کارخانه: ساوه",
+   "tel": [
+    "021-88940140",
+    "021-88940230",
+    "021-88904591"
+   ],
+   "site": "ساوه، شهرک صنعتی کاوه",
+   "mail": "info@alborzbulk.com",
+   "web": "https://alborzbulk.com/",
+   "note": "فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "فناوران دارویی حکیم",
+   "e": "Fanavaran Darouei Hakim",
+   "t": "m",
+   "c": [
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-46032997-8"
+   ],
+   "mail": "sales.fdhpharma@gmail.com",
+   "note": "استاندارد ثانویه و ناخالصی (Related Compound) برای آزمایشگاه کنترل کیفیت؛ ماده اولیه تولید نیست.",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "استاندارد استامینوفن و ناخالصی‌ها|Acetaminophen RS & related compounds",
+    "استاندارد آملودیپین|Amlodipine RS",
+    "استاندارد آتورواستاتین|Atorvastatin RS",
+    "استاندارد کاربامازپین|Carbamazepine RS",
+    "استاندارد سیتالوپرام و اس‌سیتالوپرام|Citalopram / Escitalopram RS",
+    "استاندارد فلوکونازول|Fluconazole RS",
+    "استاندارد گاباپنتین|Gabapentin RS",
+    "استاندارد ایبوپروفن|Ibuprofen RS",
+    "استاندارد متفورمین|Metformin RS",
+    "استاندارد متوپرولول|Metoprolol RS",
+    "استاندارد اندانسترون|Ondansetron RS",
+    "استاندارد والزارتان|Valsartan RS",
+    "استاندارد کارودیلول|Carvedilol RS",
+    "استاندارد سلکوکسیب|Celecoxib RS",
+    "استاندارد کلوتریمازول|Clotrimazole RS",
+    "استاندارد دیکلوفناک|Diclofenac RS",
+    "استاندارد دیفن‌هیدرامین|Diphenhydramine RS",
+    "استاندارد دولوکستین|Duloxetine RS",
+    "استاندارد اس‌امپرازول و امپرازول|Esomeprazole / Omeprazole RS",
+    "استاندارد فاموتیدین|Famotidine RS",
+    "استاندارد فنوفیبرات|Fenofibrate RS",
+    "استاندارد لووکارنیتین|Levocarnitine RS",
+    "استاندارد لووفلوکساسین|Levofloxacin RS",
+    "استاندارد لیدوکائین و پریلوکائین|Lidocaine / Prilocaine RS",
+    "استاندارد ممانتین|Memantine RS",
+    "استاندارد ناپروکسن|Naproxen RS",
+    "استاندارد پنتوپرازول|Pantoprazole RS",
+    "استاندارد پره‌گابالین|Pregabalin RS",
+    "استاندارد سرترالین|Sertraline RS",
+    "استاندارد تینیدازول و تیزانیدین|Tinidazole / Tizanidine RS"
+   ]
+  },
+  {
+   "n": "صنعت سبز طبرستان",
+   "e": "Sanat Sabz Tabarestan",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "مازندران",
+   "city": "مازندران",
+   "tel": [
+    "011-44442103-4",
+    "011-44432091-2"
+   ],
+   "mail": "admin@sanat-sabz.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "دی‌متوکسی متان|Dimethoxymethane",
+    "ایزوآمیل الکل|Isoamyl alcohol",
+    "ایزوآمیل استات|Isoamyl acetate",
+    "۱،۳-دی‌اکسالان|1,3-Dioxolane",
+    "حلال پارافینیک|Paraffinic solvents",
+    "بازیابی حلال‌های دارویی|Pharmaceutical solvent recovery"
+   ]
+  },
+  {
+   "n": "جابر ازنق شیمی",
+   "e": "Jaber Aznagh Shimi",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "البرز",
+   "city": "البرز",
+   "tel": [
+    "026-37777845",
+    "026-37777846",
+    "026-37779504"
+   ],
+   "mail": "ch989810@gmail.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "محلول آمونیاک|Ammonia solution",
+    "متیلال|Dimethoxymethane (DMM)",
+    "اسید کلریدریک|Hydrochloric acid",
+    "متیل استات|Methyl acetate",
+    "اتیل استات|Ethyl acetate",
+    "نرمال بوتیل استات|n-Butyl acetate",
+    "متانول|Methanol",
+    "تولوئن|Toluene",
+    "زایلین|Xylene"
+   ]
+  },
+  {
+   "n": "پایا شیمی اسپادانا",
+   "e": "Paya Shimi Espadana",
+   "t": "m",
+   "c": [
+    "exc",
+    "cos"
+   ],
+   "prov": "اصفهان",
+   "city": "اصفهان",
+   "tel": [],
+   "mail": "payashimiespadana@gmail.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "سیلیس حجم‌دهنده و ساینده خمیردندان|Silica for toothpaste",
+    "سیلیکاژل کروماتوگرافی|Silica gel (column, TLC)",
+    "کاتالیست پالادیوم کربن ۵ و ۱۰٪|Palladium on carbon",
+    "سفادکس G10|Sephadex G10"
+   ]
+  },
+  {
+   "n": "آریوژن فارمد",
+   "e": "AryoGen Pharmed",
+   "t": "m",
+   "c": [
+    "bio"
+   ],
+   "prov": "البرز",
+   "city": "البرز",
+   "tel": [
+    "026-36106480-4"
+   ],
+   "mail": "contact@aryogen.com",
+   "note": "فرآورده بیولوژیک نهایی.",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "اپتاکوگ آلفا (فاکتور هفت)|Eptacog alfa",
+    "اتانرسپت|Etanercept",
+    "ریتوکسی‌مب|Rituximab",
+    "تراستوزومب|Trastuzumab",
+    "توسیلیزومب|Tocilizumab",
+    "بواسیزومب|Bevacizumab",
+    "دنوزومب|Denosumab",
+    "ودولیزومب|Vedolizumab"
+   ]
+  },
+  {
+   "n": "اکترو خاورمیانه",
+   "e": "Actero Middle East",
+   "t": "m",
+   "c": [
+    "bio"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22069795"
+   ],
+   "mail": "info@acteropharma.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "ریتوکسی‌مب (ماده مؤثره)|Rituximab",
+    "بواسیزومب|Bevacizumab"
+   ]
+  },
+  {
+   "n": "پرسیس ژن پار",
+   "e": "PersisGen Par",
+   "t": "m",
+   "c": [
+    "bio"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-46074879",
+    "021-46074851",
+    "021-46073601"
+   ],
+   "mail": "info@persisgen.com",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "آناکینرا|Anakinra (PerkinRA)",
+    "برکسورف (سورفکتانت ریوی)|Beraksurf"
+   ]
+  },
+  {
+   "n": "سیناژن",
+   "e": "CinnaGen",
+   "t": "m",
+   "c": [
+    "bio"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-42815",
+    "021-42915300"
+   ],
+   "addr": "تهران، شهرک غرب، خیابان سیمای ایران، کوچه هفتم، پلاک ۲",
+   "note": "فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "فاران شیمی",
+   "e": "Faran Shimi",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-57941000 داخلی 7"
+   ],
+   "addr": "تهران، بالاتر از میدان ونک، خیابان عطار، میدان عطار، خیابان نیروی انتظامی، بن‌بست کاوه، پلاک ۳",
+   "note": "فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "زیست تخمیر",
+   "e": "Zist Takhmir",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-77495007"
+   ],
+   "addr": "تهران، میدان رسالت، فرجام غربی، نرسیده به چهارراه حیدرخانی، پلاک ۵۹۷",
+   "note": "فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "ارسطو",
+   "e": "Arastoo",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88332890",
+    "021-88332272"
+   ],
+   "addr": "تهران، خیابان یوسف‌آباد، خیابان جهان‌آرا، خیابان بیست‌وسوم، شماره ۸",
+   "note": "فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "نگین دارو نوآور",
+   "e": "Negin Darou Noavar",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66945803-4"
+   ],
+   "addr": "تهران، بلوار کشاورز غربی، بن‌بست دوم، پلاک ۳، طبقه ۲",
+   "note": "فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "توسعه داروسازی دانش",
+   "e": "Danesh Pharmaceutical Development",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44906266",
+    "021-44908770"
+   ],
+   "addr": "کیلومتر ۱۳ جاده مخصوص کرج، روبروی کاشی ایرانا، خیابان امید، بن‌بست سوم شرقی، پلاک ۵",
+   "note": "فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "داروسازی دانا",
+   "e": "Dana Pharma",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "آذربایجان شرقی",
+   "city": "تبریز",
+   "tel": [
+    "041-36300592",
+    "021-88540626"
+   ],
+   "note": "فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "اکتوورکو",
+   "e": "Actoverco",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-41637000"
+   ],
+   "mail": "info@Actoverco.com",
+   "note": "فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "اکتو بایوکم",
+   "e": "Acto Biochem",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88825946",
+    "021-88309291",
+    "021-88311666"
+   ],
+   "note": "فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "البرز فارمد",
+   "e": "Alborz Pharmed",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22134339"
+   ],
+   "mail": "office@AlborzPharmed.ir",
+   "note": "فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "کلر پارس",
+   "e": "Chlor Pars",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "آذربایجان شرقی",
+   "city": "تبریز",
+   "tel": [
+    "041-36300281-2"
+   ],
+   "note": "مواد شیمیایی؛ فهرست محصول در منبع نیامده است.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "آمو فارمد آریا",
+   "e": "Amo Pharmed Aria",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22870611-12",
+    "021-22879040"
+   ],
+   "mail": "info@amopharmed.com",
+   "note": "طبق صفحه سندیکا فعلاً تولید ندارد.",
+   "src": "https://cppsynd.com/",
+   "p": []
+  },
+  {
+   "n": "شیمی پیک",
+   "e": "Chemi Peik — chemipeik.ir",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos",
+    "sup",
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22874498",
+    "0990-9242499"
+   ],
+   "web": "https://chemipeik.ir/",
+   "src": "https://chemipeik.ir/drugs/",
+   "p": [
+    "تیامین هیدروکلراید (ویتامین B1)|Thiamine hydrochloride",
+    "تیامین مونونیترات (ویتامین B1)|Thiamine mononitrate",
+    "ریبوفلاوین (ویتامین B2)|Riboflavin",
+    "نیاسینامید / نیکوتین‌آمید (ویتامین B3)|Niacinamide, Nicotinamide",
+    "پیریدوکسین هیدروکلراید (ویتامین B6)|Pyridoxine hydrochloride",
+    "سیانوکوبالامین (ویتامین B12)|Cyanocobalamin",
+    "فولیک اسید (ویتامین B9)|Folic acid",
+    "بیوتین (ویتامین B7 / H)|Biotin",
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "ویتامین D3 (کوله‌کلسیفرول)|Vitamin D3, Cholecalciferol",
+    "ویتامین E (توکوفرول / توکوفریل استات)|Vitamin E, Tocopherol acetate",
+    "ویتامین A پالمیتات / استات|Vitamin A palmitate, Retinyl acetate",
+    "دی‌پنتنول / دکسپانتنول (ویتامین B5)|D-Panthenol, Dexpanthenol",
+    "زینک گلوکونات|Zinc gluconate",
+    "کلسیم گلوکونات|Calcium gluconate",
+    "پتاسیم گلوکونات|Potassium gluconate",
+    "سدیم گلوکونات|Sodium gluconate",
+    "منیزیم سیترات|Magnesium citrate",
+    "کلسیم کربنات|Calcium carbonate",
+    "پتاسیم کلراید|Potassium chloride",
+    "لاکتوز|Lactose",
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC",
+    "پلی‌وینیل پیرولیدون (پوویدون PVP K30 / K90)|Povidone, PVP K30 K90",
+    "سدیم استارچ گلیکولات|Sodium starch glycolate",
+    "کراس‌کارملوز سدیم|Croscarmellose sodium",
+    "مانیتول|Mannitol",
+    "سوربیتول|Sorbitol",
+    "سیلیکون دی‌اکساید / آئروزیل|Colloidal silicon dioxide, Aerosil",
+    "تالک دارویی|Talc",
+    "تیتانیوم دی‌اکساید|Titanium dioxide",
+    "کربومر|Carbomer 940 934",
+    "دکستروز / مالتودکسترین|Dextrose, Maltodextrin",
+    "کلاژن هیدرولیز|Hydrolyzed collagen",
+    "گلوکزامین|Glucosamine",
+    "پروپیلن گلیکول|Propylene glycol",
+    "گلیسیرین|Glycerin, Glycerol",
+    "پلی اتیلن گلیکول (PEG 400 / 4000 / 6000)|Polyethylene glycol, PEG, Macrogol",
+    "پلی‌سوربات ۸۰ / ۲۰ (توئین)|Polysorbate 80 20, Tween",
+    "متیل پارابن|Methylparaben",
+    "پروپیل پارابن|Propylparaben",
+    "سدیم ساخارین|Sodium saccharin",
+    "آسپارتام|Aspartame",
+    "سوکرالوز|Sucralose",
+    "سالیسیلیک اسید|Salicylic acid",
+    "ستیل الکل|Cetyl alcohol",
+    "ستو استئاریل الکل|Cetostearyl alcohol",
+    "استئاریل الکل|Stearyl alcohol",
+    "اسید استئاریک|Stearic acid",
+    "تگزاپون (سدیم لوریل اتر سولفات SLES)|Texapon, Sodium laureth sulfate, SLES",
+    "سدیم لوریل سولفات (SLS)|Sodium lauryl sulfate",
+    "سیکلوپنتاسیلوکسان / دایمتیکون|Cyclopentasiloxane, Dimethicone",
+    "فنوکسی اتانول|Phenoxyethanol",
+    "لانولین|Lanolin",
+    "پاراستامول (استامینوفن)|Paracetamol, Acetaminophen",
+    "ایبوپروفن|Ibuprofen",
+    "کافئین انهیدروس|Caffeine anhydrous",
+    "ال‌کارنیتین|L-Carnitine",
+    "ال‌آرژنین|L-Arginine",
+    "آمینواسیدها|Amino acids",
+    "MSM (متیل سولفونیل متان)|Methylsulfonylmethane",
+    "کندرویتین سولفات|Chondroitin sulfate",
+    "منتول کریستال|Menthol crystals",
+    "اسید سیتریک|Citric acid",
+    "تری سدیم سیترات|Trisodium citrate",
+    "EDTA (ادتا دی‌سدیم / تتراسدیم)|EDTA, Edetate disodium",
+    "شی باتر|Shea butter",
+    "تری‌اتانول‌آمین|Triethanolamine",
+    "ایزوپروپیل الکل|Isopropyl alcohol, IPA, 2-Propanol",
+    "بنزیل الکل|Benzyl alcohol",
+    "کربوکسی متیل سلولز (CMC)|Carboxymethyl cellulose, CMC",
+    "زانتان گام|Xanthan gum",
+    "سدیم کلراید دارویی|Sodium chloride",
+    "آلفا لیپوئیک اسید|Alpha lipoic acid",
+    "گلوتاتیون|Glutathione",
+    "لسیتین|Lecithin",
+    "ان‌استیل سیستئین (NAC)|N-Acetylcysteine, NAC",
+    "ال‌سیستئین|L-Cysteine",
+    "ال‌متیونین|L-Methionine",
+    "وازلین|Vaseline, Petrolatum, White soft paraffin",
+    "گلیسیرین مونواستئارات (GMS)|Glyceryl monostearate, GMS",
+    "بهنتریمونیوم کلراید|Behentrimonium chloride",
+    "لورامید (کوکونات دی‌اتانول‌آمید)|Cocamide DEA, Coconut diethanolamide",
+    "کلیمبازول|Climbazole",
+    "دیکلوفناک سدیم|Diclofenac sodium",
+    "مفنامیک اسید|Mefenamic acid",
+    "ناپروکسن|Naproxen",
+    "کلوتریمازول|Clotrimazole",
+    "منیزیم کلراید|Magnesium chloride",
+    "بتاکاروتن|Beta carotene",
+    "کورکومین|Curcumin",
+    "اسپیرولینا|Spirulina",
+    "عصاره‌های گیاهی|Herbal extracts",
+    "تری‌اتیل سیترات|Triethyl citrate",
+    "اریترومایسین|Erythromycin",
+    "ویتامین K (K1 / K2)|Vitamin K1, Vitamin K2, Menaquinone",
+    "کاپریلیک/کاپریک تری‌گلیسرید|Caprylic capric triglyceride, MCT",
+    "روغن کرچک|Castor oil",
+    "ایزوپروپیل پالمیتات|Isopropyl palmitate, IPP",
+    "صمغ عربی|Gum arabic, Acacia",
+    "ال‌لوسین / ال‌ایزولوسین|L-Leucine, L-Isoleucine, BCAA",
+    "عصاره چای سبز|Green tea extract",
+    "ال‌تریپتوفان|L-Tryptophan",
+    "ال‌تیروزین|L-Tyrosine",
+    "کوکامیدوپروپیل بتائین|Cocamidopropyl betaine, CAPB",
+    "ایزوتیازولین (نگهدارنده)|Isothiazolinone, Methylchloroisothiazolinone, Kathon",
+    "سدیم آسکوربیل فسفات|Sodium ascorbyl phosphate",
+    "گوار گام|Guar gum",
+    "سیتریزین هیدروکلراید|Cetirizine hydrochloride",
+    "بتاگلوکان|Beta-glucan",
+    "روغن کرچک هیدروژنه PEG-40|PEG-40 Hydrogenated castor oil, Cremophor RH40",
+    "ال‌آرژنین هیدروکلراید|",
+    "ال‌لایزین هیدروکلراید|",
+    "دی‌ال‌متیونین|",
+    "گلایسین|",
+    "ترئونین|",
+    "ال‌سرین|",
+    "ان‌استیل ال‌سیستئین (NAC)|",
+    "ال‌والین|",
+    "ال‌پرولین|",
+    "ال‌لوسین|",
+    "ال‌ایزولوسین|",
+    "ال‌گلوتامین|",
+    "فنیل‌آلانین|",
+    "ال‌تایروزین|",
+    "ال‌سیترولین|",
+    "بتا آلانین|",
+    "گلوکورونولاکتون|",
+    "گلوکزامین سولفات|",
+    "ال‌کارنیتین تارتارات|",
+    "پلی اتیلن گلیکول ۲۰۰|",
+    "پلی اتیلن گلیکول ۳۰۰|",
+    "تویین ۶۰|",
+    "سدیم متابی‌سولفیت|",
+    "گلیسرول فرمال|",
+    "سوربیتول مایع|",
+    "سوربیتول پودری|",
+    "لاکتولوز|",
+    "بنزوئیک اسید|",
+    "دکستروز مونوهیدرات|",
+    "دکستروز انهیدروس|",
+    "آویسل ۱۱۲|",
+    "آویسل ۲۰۰|",
+    "آویسل ۵۹۱|",
+    "سوربیتان مونواستئارات (اسپن ۶۰)|",
+    "کستر اویل|",
+    "لوتئین|",
+    "لسیتین سویا|",
+    "آتوموکستین|",
+    "گاباپنتین|",
+    "هالوپریدول|",
+    "بوپیواکائین|",
+    "کوئتیاپین فومارات|",
+    "دروسپیرنون|",
+    "افاویرنز|",
+    "جنتامایسین سولفات|",
+    "پنی‌سیلین جی|",
+    "نیستاتین|",
+    "ایورمکتین|",
+    "مترونیدازول|",
+    "سولفادیازین نقره|",
+    "میکافونژین|",
+    "آتورواستاتین|",
+    "فلوواستاتین|",
+    "پراواستاتین|",
+    "رزوواستاتین|",
+    "سیمواستاتین|",
+    "لوزارتان پتاسیم|",
+    "داپاگلیفلوزین|",
+    "ساکوبیتریل والسارتان|",
+    "ایوابرادین|",
+    "تیزانیدین هیدروکلراید|",
+    "فنیل‌بوتازون|",
+    "ملوکسیکام|",
+    "دیکلوفناک دی‌اتیل‌آمین|",
+    "ویتامین K|",
+    "ویتامین B2 پنج‌فسفات (ریبوفلاوین ۵ فسفات)|",
+    "ویتامین B5 پودری (دی‌کلسیم پانتوتنات)|",
+    "ویتامین C کوتد|",
+    "پپتید کلاژن گاوی|",
+    "کره کاکائو|",
+    "موم امولسیفایر|",
+    "موم کاندلیلا|",
+    "گلیسیریل مونواستئارات (GMS)|",
+    "کوکونات دی‌اتانول‌آمید|",
+    "روغن آرگان|",
+    "ژل آلوئه‌ورا|",
+    "PEG-40 هیدروژنه کستر اویل|",
+    "متیل‌کلرو ایزوتیازولینون|",
+    "آمونیوم لوریل سولفات|",
+    "سدیم آلفا اولفین سولفونات|",
+    "ستیل پالمیتات|",
+    "فیتواسترول|"
+   ],
+   "addr": "تهران، خیابان شریعتی، بالاتر از پل سیدخندان، کوچه آریایی، پلاک ۴۵، طبقه ۴، واحد ۱۲",
+   "mail": "Info@chemipeik.ir"
+  },
+  {
+   "n": "آرکا شیمی گستر سپیدار",
+   "e": "Arka Chem — arkachem.ir",
+   "t": "t",
+   "c": [
+    "vit",
+    "cos",
+    "min",
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-82801442",
+    "0902-6715830"
+   ],
+   "web": "https://arkachem.ir/",
+   "src": "https://arkachem.ir/",
+   "p": [
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "ویتامین E (توکوفرول / توکوفریل استات)|Vitamin E, Tocopherol acetate",
+    "دی‌پنتنول / دکسپانتنول (ویتامین B5)|D-Panthenol, Dexpanthenol",
+    "کلرهگزیدین گلوکونات|Chlorhexidine gluconate",
+    "منیزیم استئارات|Magnesium stearate",
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC",
+    "سدیم استارچ گلیکولات|Sodium starch glycolate",
+    "کراس‌کارملوز سدیم|Croscarmellose sodium",
+    "مانیتول|Mannitol",
+    "سوربیتول|Sorbitol",
+    "تالک دارویی|Talc",
+    "کربومر|Carbomer 940 934",
+    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC",
+    "پروپیلن گلیکول|Propylene glycol",
+    "گلیسیرین|Glycerin, Glycerol",
+    "پلی اتیلن گلیکول (PEG 400 / 4000 / 6000)|Polyethylene glycol, PEG, Macrogol",
+    "پلی‌سوربات ۸۰ / ۲۰ (توئین)|Polysorbate 80 20, Tween",
+    "متیل پارابن|Methylparaben",
+    "پروپیل پارابن|Propylparaben",
+    "سدیم بنزوات|Sodium benzoate",
+    "سدیم ساخارین|Sodium saccharin",
+    "آلانتوئین|Allantoin",
+    "سالیسیلیک اسید|Salicylic acid",
+    "گلیکولیک اسید|Glycolic acid",
+    "ایزوپروپیل میریستات (IPM)|Isopropyl myristate",
+    "فنوکسی اتانول|Phenoxyethanol",
+    "منتول کریستال|Menthol crystals",
+    "متیل سالیسیلات|Methyl salicylate",
+    "اسید سیتریک|Citric acid",
+    "EDTA (ادتا دی‌سدیم / تتراسدیم)|EDTA, Edetate disodium",
+    "روغن جوجوبا|Jojoba oil",
+    "بنزیل الکل|Benzyl alcohol",
+    "BHT / BHA (آنتی‌اکسیدان)|Butylated hydroxytoluene, Butylated hydroxyanisole",
+    "زینک اکساید (اکسید روی)|Zinc oxide",
+    "کربوکسی متیل سلولز (CMC)|Carboxymethyl cellulose, CMC",
+    "زانتان گام|Xanthan gum",
+    "گلیسیرین مونواستئارات (GMS)|Glyceryl monostearate, GMS",
+    "ستریمونیوم کلراید|Cetrimonium chloride, CTAC",
+    "کافور|Camphor",
+    "بیزواکس (موم زنبور)|Beeswax",
+    "کارنوبا واکس|Carnauba wax",
+    "زینک پیریتیون|Zinc pyrithione",
+    "پیروکتون اولامین|Piroctone olamine, Octopirox",
+    "پلی‌وینیل الکل (PVA)|Polyvinyl alcohol, PVA",
+    "سدیم مونوفلوروفسفات (SMFP)|Sodium monofluorophosphate",
+    "کاپریلیک/کاپریک تری‌گلیسرید|Caprylic capric triglyceride, MCT",
+    "دسیل گلوکوزید|Decyl glucoside",
+    "کوکو گلوکوزید|Coco glucoside",
+    "روغن بادام شیرین|Sweet almond oil",
+    "روغن نارگیل|Coconut oil",
+    "روغن کرچک|Castor oil",
+    "اوژنول|Eugenol",
+    "تیمول|Thymol",
+    "پتاسیم هیدروکسید|Potassium hydroxide",
+    "کوکامیدوپروپیل بتائین|Cocamidopropyl betaine, CAPB",
+    "ایزوتیازولین (نگهدارنده)|Isothiazolinone, Methylchloroisothiazolinone, Kathon",
+    "کائولن|Kaolin",
+    "فنوکسی اتانول + اتیل هگزیل گلیسیرین|Phenoxyethanol Ethylhexylglycerin",
+    "سدیم لوریل سارکوزینات|Sodium lauroyl sarcosinate",
+    "ستئارث ۲۰ / ۲۵ (ستوماکروگل)|Ceteareth-20, Ceteareth-25, Cetomacrogol",
+    "روغن کرچک هیدروژنه PEG-40|PEG-40 Hydrogenated castor oil, Cremophor RH40",
+    "آلومینیوم کلروهیدرات|Aluminium chlorohydrate",
+    "پروپیلن کربنات|Propylene carbonate",
+    "سدیم PCA|Sodium PCA, Sodium pyroglutamate",
+    "روغن آرگان|Argan oil",
+    "روغن هسته انگور|Grape seed oil",
+    "روغن آووکادو|Avocado oil",
+    "روغن کالاندولا|Calendula oil",
+    "TBHQ|",
+    "سدیم مونوفلوروفسفات|",
+    "CMC کربوکسی متیل سلولز|",
+    "ادتا ۴ سدیم|",
+    "بیزواکس|",
+    "پلی‌سوربات ۶۰|",
+    "پلی‌وینیل الکل|",
+    "ستوماکروگل|",
+    "سدیم متیل پارابن|",
+    "سیلیکا ساینده Dentsil 100|",
+    "سیلیکا غلظت‌دهنده Dentsil 230|",
+    "گلیسیرین مونواستئارات|",
+    "اسید آسکوربیک|",
+    "ایزوتیازولین|",
+    "بنزیل بنزوات|",
+    "زینک اکساید|",
+    "اتانول|"
+   ],
+   "addr": "تهران، چیتگر، خیابان سروناز، خیابان گودرزی، کوچه ۱۸ غربی، پلاک ۴۰",
+   "mail": "info@arkachem.ir",
+   "note": "واردکننده؛ برندها: SK کره، KLK مالزی، Novos Impex هند، Interfat اسپانیا."
+  },
+  {
+   "n": "بیسموت",
+   "e": "Bismoot — bismoot.com",
+   "t": "t",
+   "c": [
+    "min",
+    "exc",
+    "cos",
+    "sup"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-28422797",
+    "0938-2272806",
+    "0994-1413630"
+   ],
+   "web": "https://bismoot.com/",
+   "src": "https://bismoot.com/contact/",
+   "p": [
+    "پتاسیم یدید|Potassium iodide",
+    "پتاسیم کلراید|Potassium chloride",
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC",
+    "پلی‌وینیل پیرولیدون (پوویدون PVP K30 / K90)|Povidone, PVP K30 K90",
+    "سیلیکون دی‌اکساید / آئروزیل|Colloidal silicon dioxide, Aerosil",
+    "تیتانیوم دی‌اکساید|Titanium dioxide",
+    "کربومر|Carbomer 940 934",
+    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC",
+    "پروپیلن گلیکول|Propylene glycol",
+    "پروپیل پارابن|Propylparaben",
+    "سدیم بنزوات|Sodium benzoate",
+    "آسپارتام|Aspartame",
+    "آلانتوئین|Allantoin",
+    "سالیسیلیک اسید|Salicylic acid",
+    "اسید استئاریک|Stearic acid",
+    "تگزاپون (سدیم لوریل اتر سولفات SLES)|Texapon, Sodium laureth sulfate, SLES",
+    "ایزوپروپیل میریستات (IPM)|Isopropyl myristate",
+    "فنوکسی اتانول|Phenoxyethanol",
+    "اسید سیتریک|Citric acid",
+    "پلی‌کواترنیوم ۱۰|Polyquaternium-10",
+    "ایزوپروپیل الکل|Isopropyl alcohol, IPA, 2-Propanol",
+    "BHT / BHA (آنتی‌اکسیدان)|Butylated hydroxytoluene, Butylated hydroxyanisole",
+    "زینک اکساید (اکسید روی)|Zinc oxide",
+    "بنزالکونیوم کلراید|Benzalkonium chloride",
+    "لسیتین|Lecithin",
+    "ال‌سیستئین|L-Cysteine",
+    "ال‌متیونین|L-Methionine",
+    "اسید لاکتیک|Lactic acid",
+    "بهنتریمونیوم کلراید|Behentrimonium chloride",
+    "بیزواکس (موم زنبور)|Beeswax",
+    "منیزیم کلراید|Magnesium chloride",
+    "هیدروکسی اتیل سلولز (HEC / تیلوز)|Hydroxyethyl cellulose, HEC, Tylose",
+    "آلژینات سدیم|Sodium alginate",
+    "دی‌پتاسیم فسفات|Dipotassium phosphate",
+    "پلی‌وینیل الکل (PVA)|Polyvinyl alcohol, PVA",
+    "منگنز سولفات|Manganese sulfate",
+    "مس سولفات|Copper sulfate",
+    "سدیم مونوفلوروفسفات (SMFP)|Sodium monofluorophosphate",
+    "دسیل گلوکوزید|Decyl glucoside",
+    "روغن کرچک|Castor oil",
+    "ایزوله پروتئین سویا|Soy protein isolate",
+    "سدیم هیدروکسید|Sodium hydroxide",
+    "پتاسیم هیدروکسید|Potassium hydroxide",
+    "پلی‌کواترنیوم ۷|Polyquaternium-7",
+    "هیدروکینون|Hydroquinone",
+    "کائولن|Kaolin",
+    "سدیم لاکتات|Sodium lactate",
+    "آلومینیوم کلروهیدرات|Aluminium chlorohydrate",
+    "آسه سولفام پتاسیم|Acesulfame potassium, Acesulfame K",
+    "سوربیتول|Sorbitol",
+    "استون|",
+    "اسید آدیپیک|",
+    "اسید فسفریک|",
+    "اکسید آلومینیوم|",
+    "بنزوئیک اسید|",
+    "آسه‌سولفام پتاسیم|",
+    "اسید استیک|",
+    "اسید تارتاریک|",
+    "اسید فوماریک|",
+    "اسید مالیک|",
+    "ایزوله سویا|",
+    "بوتیل هیدروکسی تولوئن (BHT)|",
+    "پتاسیم کربنات|",
+    "اسپن ۲۰ (سوربیتان مونولورات)|",
+    "اسید اولئیک|",
+    "اکسید آهن|",
+    "اکسید روی|",
+    "بیزواکس|",
+    "تالک|",
+    "پلی‌سوربات ۲۰|",
+    "پلی‌سوربات ۸۰|",
+    "ایزوتیازولین|",
+    "نایسین|"
+   ],
+   "site": "انبارهای عمومی شورآباد (شهرری، جاده قدیم تهران–قم)؛ فهرست انبارها: bismoot.com/store",
+   "mail": "info@bismoot.com"
+  },
+  {
+   "n": "اکسیر شیمی (الوند)",
+   "e": "Exir Chemi — exirchemi.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos",
+    "api",
+    "sup"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66931195",
+    "0991-1001528"
+   ],
+   "web": "https://exirchemi.com/",
+   "src": "https://exirchemi.com/contact-us/",
+   "p": [
+    "تیامین هیدروکلراید (ویتامین B1)|Thiamine hydrochloride",
+    "تیامین مونونیترات (ویتامین B1)|Thiamine mononitrate",
+    "ریبوفلاوین (ویتامین B2)|Riboflavin",
+    "نیاسینامید / نیکوتین‌آمید (ویتامین B3)|Niacinamide, Nicotinamide",
+    "ویتامین E (توکوفرول / توکوفریل استات)|Vitamin E, Tocopherol acetate",
+    "دی‌پنتنول / دکسپانتنول (ویتامین B5)|D-Panthenol, Dexpanthenol",
+    "منیزیم سولفات|Magnesium sulfate",
+    "فروس بیس‌گلیسینات|Ferrous bisglycinate",
+    "سدیم استارچ گلیکولات|Sodium starch glycolate",
+    "کراس‌کارملوز سدیم|Croscarmellose sodium",
+    "سوربیتول|Sorbitol",
+    "سیلیکون دی‌اکساید / آئروزیل|Colloidal silicon dioxide, Aerosil",
+    "تیتانیوم دی‌اکساید|Titanium dioxide",
+    "کربومر|Carbomer 940 934",
+    "دکستروز / مالتودکسترین|Dextrose, Maltodextrin",
+    "سوکرالوز|Sucralose",
+    "سالیسیلیک اسید|Salicylic acid",
+    "ستیل الکل|Cetyl alcohol",
+    "سدیم لوریل سولفات (SLS)|Sodium lauryl sulfate",
+    "فنوکسی اتانول|Phenoxyethanol",
+    "پاراستامول (استامینوفن)|Paracetamol, Acetaminophen",
+    "ماینوکسیدیل|Minoxidil",
+    "کتوکونازول|Ketoconazole",
+    "کافئین انهیدروس|Caffeine anhydrous",
+    "متیل سالیسیلات|Methyl salicylate",
+    "شی باتر|Shea butter",
+    "BHT / BHA (آنتی‌اکسیدان)|Butylated hydroxytoluene, Butylated hydroxyanisole",
+    "نشاسته ذرت دارویی|Corn starch, Maize starch",
+    "کاپریلیک/کاپریک تری‌گلیسرید|Caprylic capric triglyceride, MCT",
+    "آئروزیل ۲۰۰|",
+    "سیلیکا|",
+    "سدیم آسکوربات|",
+    "منیزیم سولفات انهیدروس|",
+    "پلاکریلین پتاسیم|",
+    "کربومر ۹۳۴|",
+    "بنزیل بنزوات|",
+    "بنزوئیک اسید|",
+    "BHA|",
+    "مالتودکسترین|",
+    "سوربیتول ۷۰٪|",
+    "دکستروز مونوهیدرات|",
+    "دکستروز انهیدروس|",
+    "کائولن سبک|",
+    "استون|",
+    "ویتامین B3|",
+    "ویتامین E پودری ۵۰٪|",
+    "کلیندامایسین|",
+    "PEG-35 کستر اویل|",
+    "PEG-40 کستر اویل|",
+    "استئارات ۲۰|",
+    "کاپریلیک تری‌گلیسرید|"
+   ],
+   "addr": "تهران، میدان انقلاب، خیابان جمالزاده شمالی، خیابان نصرت شرقی، کوچه جزایری، پلاک ۱"
+  },
+  {
+   "n": "آبتین شیمی",
+   "e": "Abtin Chem — abtinchem.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos",
+    "sup",
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021284261 (ناقص)"
+   ],
+   "web": "https://www.abtinchem.com/",
+   "src": "https://www.abtinchem.com/",
+   "p": [
+    "تیامین هیدروکلراید (ویتامین B1)|Thiamine hydrochloride",
+    "نیاسینامید / نیکوتین‌آمید (ویتامین B3)|Niacinamide, Nicotinamide",
+    "زینک سیترات|Zinc citrate",
+    "پتاسیم گلوکونات|Potassium gluconate",
+    "منیزیم استئارات|Magnesium stearate",
+    "فروس سولفات (سولفات آهن)|Ferrous sulfate",
+    "پتاسیم یدید|Potassium iodide",
+    "لاکتوز|Lactose",
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC",
+    "پلی‌وینیل پیرولیدون (پوویدون PVP K30 / K90)|Povidone, PVP K30 K90",
+    "سوربیتول|Sorbitol",
+    "سیلیکون دی‌اکساید / آئروزیل|Colloidal silicon dioxide, Aerosil",
+    "کربومر|Carbomer 940 934",
+    "کراتین مونوهیدرات|Creatine monohydrate",
+    "پلی‌سوربات ۸۰ / ۲۰ (توئین)|Polysorbate 80 20, Tween",
+    "متیل پارابن|Methylparaben",
+    "آلانتوئین|Allantoin",
+    "گلیکولیک اسید|Glycolic acid",
+    "اسید استئاریک|Stearic acid",
+    "ایزوپروپیل میریستات (IPM)|Isopropyl myristate",
+    "لیدوکائین|Lidocaine",
+    "منتول کریستال|Menthol crystals",
+    "شی باتر|Shea butter",
+    "ژلاتین|Gelatin",
+    "وازلین|Vaseline, Petrolatum, White soft paraffin",
+    "کافور|Camphor",
+    "منیزیم کلراید|Magnesium chloride",
+    "زایلیتول|Xylitol",
+    "پلی‌وینیل الکل (PVA)|Polyvinyl alcohol, PVA",
+    "مس سولفات|Copper sulfate",
+    "روغن بادام شیرین|Sweet almond oil",
+    "روغن کرچک|Castor oil",
+    "ایزوتیازولین (نگهدارنده)|Isothiazolinone, Methylchloroisothiazolinone, Kathon",
+    "کائولن|Kaolin",
+    "بنتونیت|Bentonite",
+    "کلسیم لاکتات|Calcium lactate",
+    "سدیم لاکتات|Sodium lactate",
+    "سدیم لوریل سارکوزینات|Sodium lauroyl sarcosinate",
+    "بیزابولول|Bisabolol",
+    "ستئارث ۲۰ / ۲۵ (ستوماکروگل)|Ceteareth-20, Ceteareth-25, Cetomacrogol",
+    "روغن کرچک هیدروژنه PEG-40|PEG-40 Hydrogenated castor oil, Cremophor RH40",
+    "آلومینیوم کلروهیدرات|Aluminium chlorohydrate",
+    "پروتئین وی (WPC)|Whey protein concentrate",
+    "بنزوئیل پراکسید|Benzoyl peroxide",
+    "کلسیم پانتوتنات (ویتامین B5)|Calcium pantothenate, Calcium D-pantothenate, Vitamin B5",
+    "روغن آرگان|Argan oil",
+    "روغن آووکادو|Avocado oil",
+    "فروکتوز|Fructose"
+   ],
+   "addr": "تهران، خیابان شریعتی، ساختمان پارسا، واحد ۲۰۲",
+   "note": "شماره تلفن در منبع ناقص آمده است؛ از سایت شرکت کامل کنید.",
+   "via": 1
+  },
+  {
+   "n": "آوات شیمی پژواک",
+   "e": "Avat Shimi Pezhvak — avatshimipezhvak.com",
+   "t": "t",
+   "c": [
+    "api",
+    "sup",
+    "cos",
+    "exc"
+   ],
+   "prov": "سمنان",
+   "city": "سمنان",
+   "tel": [
+    "0912-6144013",
+    "0919-8098041"
+   ],
+   "web": "https://avatshimipezhvak.com/",
+   "src": "https://avatshimipezhvak.com/product-category/cosmetics-raw-materials/",
+   "p": [
+    "کتوکونازول|Ketoconazole",
+    "کافئین انهیدروس|Caffeine anhydrous",
+    "پلی‌کواترنیوم ۱۰|Polyquaternium-10",
+    "پیروکتون اولامین|Piroctone olamine, Octopirox",
+    "کلیمبازول|Climbazole",
+    "دگزامتازون|Dexamethasone",
+    "هیدروکسی اتیل سلولز (HEC / تیلوز)|Hydroxyethyl cellulose, HEC, Tylose",
+    "اکالیپتول (سینئول) / اسانس اکالیپتوس|Eucalyptol, Cineole, Eucalyptus oil",
+    "اسانس‌های گیاهی|Essential oils",
+    "سدیم آسکوربیل فسفات|Sodium ascorbyl phosphate",
+    "فنوکسی اتانول + اتیل هگزیل گلیسیرین|Phenoxyethanol Ethylhexylglycerin",
+    "آسکوربیل پالمیتات|",
+    "سدیم آسکوربات|",
+    "اسید هیالورونیک|",
+    "سدیم هیالورونات|",
+    "زینک PCA|",
+    "زینک سیترات|",
+    "زینک گلوکونات|",
+    "سدیم PCA|",
+    "سارکوزینات|",
+    "سدیم پربورات|",
+    "فنوکسی اتانول|",
+    "اتیل‌هگزیل گلیسرین|",
+    "هیدروکسی پروپیل متیل سلولز (HPMC K100)|",
+    "هیدروکسی اتیل سلولز|",
+    "گوار هیدروکسی پروپیل تریمونیوم کلراید|",
+    "ستیل پیریدینیوم کلراید|",
+    "استانوس فلوراید|",
+    "اتیل اولئات|",
+    "پیروکتون اولامین (اکتوپیروکس)|",
+    "گلیکولیک اسید|",
+    "کربن اکتیو|",
+    "گلوکزامین|",
+    "سرامید|",
+    "کوکو گلیسرید|",
+    "پتاسیم نیترات|",
+    "سیپروهپتادین|",
+    "اسانس اکالیپتوس|",
+    "اسانس نعناع فلفلی|",
+    "اسانس توت‌فرنگی|",
+    "اسانس موز|",
+    "اسانس نارگیل|"
+   ],
+   "addr": "سمنان، مجتمع پزشکان بوعلی",
+   "mail": "avatshimipezhvak@gmail.com"
+  },
+  {
+   "n": "وازلینا",
+   "e": "Vaselina — vaselina.ir",
+   "t": "m",
+   "c": [
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [
+    "0912-3456279"
+   ],
+   "web": "https://vaselina.ir/",
+   "src": "https://vaselina.ir/",
+   "p": [
+    "وازلین|Vaseline, Petrolatum, White soft paraffin",
+    "پارافین مایع|Liquid paraffin, Mineral oil",
+    "وازلین دارویی و بهداشتی|Vaseline, Petrolatum, White soft paraffin"
+   ],
+   "mail": "info@vaselineshop.ir",
+   "note": "تولیدکننده ایرانی وازلین و پارافین."
+  },
+  {
+   "n": "پارسین شیمی",
+   "e": "Parsin Shimi — vaselineshop.com",
+   "t": "m",
+   "c": [
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [
+    "0912-4395694"
+   ],
+   "web": "https://vaselineshop.com/",
+   "src": "https://vaselineshop.com/best-cosmetic-vaseline-production-factory/",
+   "p": [
+    "وازلین|Vaseline, Petrolatum, White soft paraffin",
+    "پارافین مایع|Liquid paraffin, Mineral oil",
+    "وازلین دارویی و بهداشتی|Vaseline, Petrolatum, White soft paraffin"
+   ],
+   "mail": "Parsinshimi@Gmail.Com",
+   "note": "تولیدکننده وازلین دارویی، بهداشتی و صنعتی و پارافین. فکس: 025-32926889"
+  },
+  {
+   "n": "شیمی مهندسی شکوه پرواز پاژ (فروش آنلاین)",
+   "e": "Shokouh Parvaz",
+   "t": "t",
+   "c": [
+    "exc"
+   ],
+   "prov": "خراسان رضوی",
+   "city": "مشهد",
+   "tel": [
+    "051-91002326",
+    "0915-3743004"
+   ],
+   "web": "https://shokouhparvaz.com/",
+   "src": "https://shokouhparvaz.com/raw-material/pvp/",
+   "p": [
+    "سدیم هیدروکسید|Sodium hydroxide"
+   ]
+  },
+  {
+   "n": "پیشگامان شیمی",
+   "e": "Pishgaman Shimi — irchem.ir",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos",
+    "sup",
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "web": "https://irchem.ir/",
+   "src": "https://irchem.ir/",
+   "p": [
+    "تیامین هیدروکلراید (ویتامین B1)|Thiamine hydrochloride",
+    "ریبوفلاوین (ویتامین B2)|Riboflavin",
+    "نیاسینامید / نیکوتین‌آمید (ویتامین B3)|Niacinamide, Nicotinamide",
+    "پیریدوکسین هیدروکلراید (ویتامین B6)|Pyridoxine hydrochloride",
+    "سیانوکوبالامین (ویتامین B12)|Cyanocobalamin",
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "ویتامین D3 (کوله‌کلسیفرول)|Vitamin D3, Cholecalciferol",
+    "ویتامین E (توکوفرول / توکوفریل استات)|Vitamin E, Tocopherol acetate",
+    "ویتامین A پالمیتات / استات|Vitamin A palmitate, Retinyl acetate",
+    "دی‌پنتنول / دکسپانتنول (ویتامین B5)|D-Panthenol, Dexpanthenol",
+    "زینک گلوکونات|Zinc gluconate",
+    "زینک سیترات|Zinc citrate",
+    "پتاسیم گلوکونات|Potassium gluconate",
+    "زینک سولفات (سولفات روی)|Zinc sulfate",
+    "اکسید منیزیم|Magnesium oxide",
+    "منیزیم استئارات|Magnesium stearate",
+    "کلسیم کربنات|Calcium carbonate",
+    "دی کلسیم فسفات|Dicalcium phosphate",
+    "فروس سولفات (سولفات آهن)|Ferrous sulfate",
+    "فروس فومارات|Ferrous fumarate",
+    "فروس بیس‌گلیسینات|Ferrous bisglycinate",
+    "سدیم سلنیت|Sodium selenite",
+    "لاکتوز|Lactose",
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC",
+    "پلی‌وینیل پیرولیدون (پوویدون PVP K30 / K90)|Povidone, PVP K30 K90",
+    "سدیم استارچ گلیکولات|Sodium starch glycolate",
+    "کراس‌کارملوز سدیم|Croscarmellose sodium",
+    "کراس‌پوویدون|Crospovidone",
+    "مانیتول|Mannitol",
+    "سیلیکون دی‌اکساید / آئروزیل|Colloidal silicon dioxide, Aerosil",
+    "تالک دارویی|Talc",
+    "ژلاتین|Gelatin",
+    "کلاژن هیدرولیز|Hydrolyzed collagen",
+    "گلوکزامین|Glucosamine",
+    "پلی اتیلن گلیکول (PEG 400 / 4000 / 6000)|Polyethylene glycol, PEG, Macrogol",
+    "پلی‌سوربات ۸۰ / ۲۰ (توئین)|Polysorbate 80 20, Tween",
+    "متیل پارابن|Methylparaben",
+    "سدیم ساخارین|Sodium saccharin",
+    "آسپارتام|Aspartame",
+    "آلانتوئین|Allantoin",
+    "گلیکولیک اسید|Glycolic acid",
+    "ستو استئاریل الکل|Cetostearyl alcohol",
+    "تگزاپون (سدیم لوریل اتر سولفات SLES)|Texapon, Sodium laureth sulfate, SLES",
+    "ایزوپروپیل میریستات (IPM)|Isopropyl myristate",
+    "فنوکسی اتانول|Phenoxyethanol",
+    "لانولین|Lanolin",
+    "پاراستامول (استامینوفن)|Paracetamol, Acetaminophen",
+    "ایبوپروفن|Ibuprofen",
+    "ماینوکسیدیل|Minoxidil",
+    "تائورین|Taurine",
+    "اینوزیتول|Inositol",
+    "ال‌کارنیتین|L-Carnitine",
+    "ال‌آرژنین|L-Arginine",
+    "متیل سالیسیلات|Methyl salicylate",
+    "بنزوفنون-۳|Benzophenone-3, Oxybenzone",
+    "اکتیل متوکسی سینامات|Octyl methoxycinnamate, Octinoxate",
+    "شی باتر|Shea butter",
+    "آربوتین|Arbutin",
+    "اتانول ۹۶٪|Ethanol",
+    "بنزالکونیوم کلراید|Benzalkonium chloride",
+    "کوآنزیم Q10|Coenzyme Q10, Ubiquinone",
+    "وازلین|Vaseline, Petrolatum, White soft paraffin",
+    "پارافین مایع|Liquid paraffin, Mineral oil",
+    "گلیسیرین مونواستئارات (GMS)|Glyceryl monostearate, GMS",
+    "اسید لاکتیک|Lactic acid",
+    "ستریمونیوم کلراید|Cetrimonium chloride, CTAC",
+    "بهنتریمونیوم کلراید|Behentrimonium chloride",
+    "لورامید (کوکونات دی‌اتانول‌آمید)|Cocamide DEA, Coconut diethanolamide",
+    "بیزواکس (موم زنبور)|Beeswax",
+    "کارنوبا واکس|Carnauba wax",
+    "پیروکتون اولامین|Piroctone olamine, Octopirox",
+    "کلیمبازول|Climbazole",
+    "دیکلوفناک سدیم|Diclofenac sodium",
+    "مفنامیک اسید|Mefenamic acid",
+    "کلوتریمازول|Clotrimazole",
+    "تینیدازول|Tinidazole",
+    "آموکسی‌سیلین|Amoxicillin",
+    "سیلدنافیل|Sildenafil",
+    "تادالافیل|Tadalafil",
+    "بتاکاروتن|Beta carotene",
+    "زایلیتول|Xylitol",
+    "اریتریتول|Erythritol",
+    "هیدروکسی اتیل سلولز (HEC / تیلوز)|Hydroxyethyl cellulose, HEC, Tylose",
+    "آلژینات سدیم|Sodium alginate",
+    "عصاره جینسینگ|Ginseng extract",
+    "عصاره‌های گیاهی|Herbal extracts",
+    "کلسیم استئارات|Calcium stearate",
+    "تری‌اتیل سیترات|Triethyl citrate",
+    "کولین بی‌تارتارات|Choline bitartrate",
+    "کولین کلراید|Choline chloride",
+    "سدیم مونوفلوروفسفات (SMFP)|Sodium monofluorophosphate",
+    "تریکلوزان|Triclosan",
+    "کاپریلیک/کاپریک تری‌گلیسرید|Caprylic capric triglyceride, MCT",
+    "دسیل گلوکوزید|Decyl glucoside",
+    "کوکو گلوکوزید|Coco glucoside",
+    "لوریل گلوکوزید|Lauryl glucoside",
+    "آزلائیک اسید|Azelaic acid",
+    "ماندلیک اسید|Mandelic acid",
+    "ایزوپروپیل پالمیتات|Isopropyl palmitate, IPP",
+    "اوژنول|Eugenol",
+    "کاراگینان|Carrageenan",
+    "ایزوله پروتئین سویا|Soy protein isolate",
+    "عصاره چای سبز|Green tea extract",
+    "کوکامیدوپروپیل بتائین|Cocamidopropyl betaine, CAPB",
+    "پلی‌کواترنیوم ۷|Polyquaternium-7",
+    "پره‌گابالین|Pregabalin",
+    "سدیم آسکوربیل فسفات|Sodium ascorbyl phosphate",
+    "گوار گام|Guar gum",
+    "اوره|Urea, Carbamide",
+    "ایمیدازولیدینیل اوره|Imidazolidinyl urea",
+    "هیدروکینون|Hydroquinone",
+    "کائولن|Kaolin",
+    "اسکوالان|Squalane",
+    "سرامید|Ceramide",
+    "سدیم لاکتات|Sodium lactate",
+    "اینولین|Inulin",
+    "استویا|Stevia, Steviol glycosides",
+    "وانیلین / وانیل|Vanillin, Vanilla",
+    "آلوئه ورا (پودر، ژل، عصاره)|Aloe vera",
+    "پودر DHA / روغن ماهی (امگا ۳)|DHA, Fish oil, Omega-3",
+    "منیزیم کربنات|Magnesium carbonate",
+    "اسید تارتاریک|Tartaric acid",
+    "اسید مالیک|Malic acid",
+    "بتاگلوکان|Beta-glucan",
+    "رزورسینول|Resorcinol",
+    "سدیم لوریل سارکوزینات|Sodium lauroyl sarcosinate",
+    "بیزابولول|Bisabolol",
+    "اسپن ۶۰ / ۸۰ (سوربیتان استئارات / اولئات)|Span 60, Span 80, Sorbitan monostearate, Sorbitan oleate",
+    "روغن کرچک هیدروژنه PEG-40|PEG-40 Hydrogenated castor oil, Cremophor RH40",
+    "آلومینیوم کلروهیدرات|Aluminium chlorohydrate",
+    "آنزیم لاکتاز|Lactase",
+    "پروپیلن کربنات|Propylene carbonate",
+    "پنتیلن گلیکول|Pentylene glycol",
+    "پانکراتین|Pancreatin",
+    "گلیسریل اولئات|Glyceryl oleate",
+    "سیلیکون امولسیون|Silicone emulsion",
+    "دایمتیکون PEG-12 (محلول در آب)|PEG-12 Dimethicone",
+    "آسه سولفام پتاسیم|Acesulfame potassium, Acesulfame K",
+    "ایزومالت|Isomalt",
+    "بنزوئیل پراکسید|Benzoyl peroxide",
+    "روغن آرگان|Argan oil",
+    "روغن هسته انگور|Grape seed oil",
+    "آکریلات کوپلیمر|Acrylates copolymer",
+    "سلنیوم سولفاید|Selenium sulfide",
+    "عصاره کنگر فرنگی (آرتیشو)|Artichoke extract, Cynara",
+    "عصاره عشقه (پیچک)|Ivy leaf extract, Hedera helix",
+    "عصاره هیدروگلیکولی خیار|Cucumber hydroglycolic extract",
+    "اسانس اسطوخودوس|Lavender essential oil"
+   ],
+   "note": "واردکننده مواد اولیه دارویی، مکمل، غذایی و آرایشی؛ فروش در کیسه ۲۵ کیلویی.",
+   "via": 1
+  },
+  {
+   "n": "شیمی سنتر",
+   "e": "Chemi Center — chemicenter.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos",
+    "sup",
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "web": "https://chemicenter.com/",
+   "src": "https://chemicenter.com/",
+   "p": [
+    "سیانوکوبالامین (ویتامین B12)|Cyanocobalamin",
+    "فولیک اسید (ویتامین B9)|Folic acid",
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "ویتامین E (توکوفرول / توکوفریل استات)|Vitamin E, Tocopherol acetate",
+    "ویتامین A پالمیتات / استات|Vitamin A palmitate, Retinyl acetate",
+    "دی‌پنتنول / دکسپانتنول (ویتامین B5)|D-Panthenol, Dexpanthenol",
+    "کلسیم گلوکونات|Calcium gluconate",
+    "زینک سولفات (سولفات روی)|Zinc sulfate",
+    "منیزیم گلیسینات|Magnesium glycinate",
+    "کلسیم کربنات|Calcium carbonate",
+    "دی کلسیم فسفات|Dicalcium phosphate",
+    "فروس سولفات (سولفات آهن)|Ferrous sulfate",
+    "پتاسیم یدید|Potassium iodide",
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC",
+    "پلی‌وینیل پیرولیدون (پوویدون PVP K30 / K90)|Povidone, PVP K30 K90",
+    "سدیم استارچ گلیکولات|Sodium starch glycolate",
+    "مانیتول|Mannitol",
+    "سوربیتول|Sorbitol",
+    "سیلیکون دی‌اکساید / آئروزیل|Colloidal silicon dioxide, Aerosil",
+    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC",
+    "کراتین مونوهیدرات|Creatine monohydrate",
+    "پلی اتیلن گلیکول (PEG 400 / 4000 / 6000)|Polyethylene glycol, PEG, Macrogol",
+    "متیل پارابن|Methylparaben",
+    "پتاسیم سوربات|Potassium sorbate",
+    "آسپارتام|Aspartame",
+    "هیالورونیک اسید / سدیم هیالورونات|Hyaluronic acid, Sodium hyaluronate",
+    "آلانتوئین|Allantoin",
+    "سالیسیلیک اسید|Salicylic acid",
+    "تگزاپون (سدیم لوریل اتر سولفات SLES)|Texapon, Sodium laureth sulfate, SLES",
+    "ایزوپروپیل میریستات (IPM)|Isopropyl myristate",
+    "فنوکسی اتانول|Phenoxyethanol",
+    "ایبوپروفن|Ibuprofen",
+    "ماینوکسیدیل|Minoxidil",
+    "اینوزیتول|Inositol",
+    "آمینواسیدها|Amino acids",
+    "MSM (متیل سولفونیل متان)|Methylsulfonylmethane",
+    "کندرویتین سولفات|Chondroitin sulfate",
+    "اسید سیتریک|Citric acid",
+    "زینک اکساید (اکسید روی)|Zinc oxide",
+    "کربوکسی متیل سلولز (CMC)|Carboxymethyl cellulose, CMC",
+    "نشاسته ذرت دارویی|Corn starch, Maize starch",
+    "آلفا لیپوئیک اسید|Alpha lipoic acid",
+    "کوآنزیم Q10|Coenzyme Q10, Ubiquinone",
+    "گلوتاتیون|Glutathione",
+    "ملاتونین|Melatonin",
+    "لسیتین|Lecithin",
+    "ان‌استیل سیستئین (NAC)|N-Acetylcysteine, NAC",
+    "وازلین|Vaseline, Petrolatum, White soft paraffin",
+    "پارافین مایع|Liquid paraffin, Mineral oil",
+    "ستریمونیوم کلراید|Cetrimonium chloride, CTAC",
+    "بیزواکس (موم زنبور)|Beeswax",
+    "کارنوبا واکس|Carnauba wax",
+    "زینک پیریتیون|Zinc pyrithione",
+    "دیکلوفناک سدیم|Diclofenac sodium",
+    "زایلیتول|Xylitol",
+    "هیدروکسی اتیل سلولز (HEC / تیلوز)|Hydroxyethyl cellulose, HEC, Tylose",
+    "عصاره جینسینگ|Ginseng extract",
+    "ویتامین K (K1 / K2)|Vitamin K1, Vitamin K2, Menaquinone",
+    "اوژنول|Eugenol",
+    "کاراگینان|Carrageenan",
+    "آگار آگار|Agar",
+    "ایزوله پروتئین سویا|Soy protein isolate",
+    "ال‌لوسین / ال‌ایزولوسین|L-Leucine, L-Isoleucine, BCAA",
+    "ال‌تیانین|L-Theanine",
+    "ال‌تریپتوفان|L-Tryptophan",
+    "ال‌تیروزین|L-Tyrosine",
+    "گابا|GABA, Gamma-aminobutyric acid",
+    "متفورمین هیدروکلراید|Metformin hydrochloride",
+    "گوار گام|Guar gum",
+    "گلایسین|Glycine",
+    "کلسیم لاکتات|Calcium lactate",
+    "اینولین|Inulin",
+    "وانیلین / وانیل|Vanillin, Vanilla",
+    "پودر DHA / روغن ماهی (امگا ۳)|DHA, Fish oil, Omega-3",
+    "اسید تارتاریک|Tartaric acid",
+    "اسید مالیک|Malic acid",
+    "ال‌گلوتامین|L-Glutamine",
+    "ال‌لیزین|L-Lysine",
+    "رزورسینول|Resorcinol",
+    "سدیم لوریل سارکوزینات|Sodium lauroyl sarcosinate",
+    "تری کلسیم فسفات|Tricalcium phosphate, TCP",
+    "اسپن ۶۰ / ۸۰ (سوربیتان استئارات / اولئات)|Span 60, Span 80, Sorbitan monostearate, Sorbitan oleate",
+    "روغن کرچک هیدروژنه PEG-40|PEG-40 Hydrogenated castor oil, Cremophor RH40",
+    "آنزیم لاکتاز|Lactase",
+    "ال‌آلانین|L-Alanine",
+    "ال‌سیترولین|L-Citrulline",
+    "بنزوئیل پراکسید|Benzoyl peroxide",
+    "کلسیم پانتوتنات (ویتامین B5)|Calcium pantothenate, Calcium D-pantothenate, Vitamin B5",
+    "لوریک اسید|Lauric acid",
+    "فروکتوز|Fructose"
+   ],
+   "via": 1
+  },
+  {
+   "n": "بهبود کم",
+   "e": "Behbod Chem — behbodchem.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "sup",
+    "cos",
+    "api"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://behbodchem.com/",
+   "src": "https://behbodchem.com/",
+   "p": [
+    "تیامین هیدروکلراید (ویتامین B1)|Thiamine hydrochloride",
+    "تیامین مونونیترات (ویتامین B1)|Thiamine mononitrate",
+    "نیاسینامید / نیکوتین‌آمید (ویتامین B3)|Niacinamide, Nicotinamide",
+    "پیریدوکسین هیدروکلراید (ویتامین B6)|Pyridoxine hydrochloride",
+    "سیانوکوبالامین (ویتامین B12)|Cyanocobalamin",
+    "فولیک اسید (ویتامین B9)|Folic acid",
+    "بیوتین (ویتامین B7 / H)|Biotin",
+    "ویتامین E (توکوفرول / توکوفریل استات)|Vitamin E, Tocopherol acetate",
+    "ویتامین A پالمیتات / استات|Vitamin A palmitate, Retinyl acetate",
+    "دی‌پنتنول / دکسپانتنول (ویتامین B5)|D-Panthenol, Dexpanthenol",
+    "اکسید منیزیم|Magnesium oxide",
+    "منیزیم سیترات|Magnesium citrate",
+    "کلسیم کربنات|Calcium carbonate",
+    "دی کلسیم فسفات|Dicalcium phosphate",
+    "فروس سولفات (سولفات آهن)|Ferrous sulfate",
+    "فروس فومارات|Ferrous fumarate",
+    "پتاسیم کلراید|Potassium chloride",
+    "لاکتوز|Lactose",
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC",
+    "پلی‌وینیل پیرولیدون (پوویدون PVP K30 / K90)|Povidone, PVP K30 K90",
+    "سدیم استارچ گلیکولات|Sodium starch glycolate",
+    "کراس‌کارملوز سدیم|Croscarmellose sodium",
+    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC",
+    "کوآنزیم Q10|Coenzyme Q10",
+    "سدیم ساخارین|Sodium saccharin",
+    "هیالورونیک اسید / سدیم هیالورونات|Hyaluronic acid, Sodium hyaluronate",
+    "سالیسیلیک اسید|Salicylic acid",
+    "سیکلوپنتاسیلوکسان / دایمتیکون|Cyclopentasiloxane, Dimethicone",
+    "پاراستامول (استامینوفن)|Paracetamol, Acetaminophen",
+    "ایبوپروفن|Ibuprofen",
+    "کتوکونازول|Ketoconazole",
+    "لیدوکائین|Lidocaine",
+    "بنزوکائین|Benzocaine",
+    "تائورین|Taurine",
+    "ال‌کارنیتین|L-Carnitine",
+    "ال‌آرژنین|L-Arginine",
+    "منتول کریستال|Menthol crystals",
+    "متیل سالیسیلات|Methyl salicylate",
+    "شی باتر|Shea butter",
+    "ترانکسامیک اسید|Tranexamic acid",
+    "کربوکسی متیل سلولز (CMC)|Carboxymethyl cellulose, CMC",
+    "ژلاتین|Gelatin",
+    "بیزواکس (موم زنبور)|Beeswax",
+    "دیکلوفناک سدیم|Diclofenac sodium",
+    "مفنامیک اسید|Mefenamic acid",
+    "منیزیم کلراید|Magnesium chloride",
+    "کلسیم کلراید|Calcium chloride",
+    "پتاسیم سیترات|Potassium citrate",
+    "هیدروکسی اتیل سلولز (HEC / تیلوز)|Hydroxyethyl cellulose, HEC, Tylose",
+    "دی‌پتاسیم فسفات|Dipotassium phosphate",
+    "عصاره جینسینگ|Ginseng extract",
+    "زینک استئارات|Zinc stearate",
+    "پلی‌وینیل الکل (PVA)|Polyvinyl alcohol, PVA",
+    "ویتامین K (K1 / K2)|Vitamin K1, Vitamin K2, Menaquinone",
+    "کاپریلیک/کاپریک تری‌گلیسرید|Caprylic capric triglyceride, MCT",
+    "دسیل گلوکوزید|Decyl glucoside",
+    "روغن نارگیل|Coconut oil",
+    "اوژنول|Eugenol",
+    "اکالیپتول (سینئول) / اسانس اکالیپتوس|Eucalyptol, Cineole, Eucalyptus oil",
+    "پکتین|Pectin",
+    "صمغ عربی|Gum arabic, Acacia",
+    "سدیم هیدروکسید|Sodium hydroxide",
+    "پتاسیم هیدروکسید|Potassium hydroxide",
+    "متفورمین هیدروکلراید|Metformin hydrochloride",
+    "کائولن|Kaolin",
+    "گلایسین|Glycine",
+    "کلسیم لاکتات|Calcium lactate",
+    "اینولین|Inulin",
+    "وانیلین / وانیل|Vanillin, Vanilla",
+    "ال‌گلوتامین|L-Glutamine",
+    "ال‌لیزین|L-Lysine",
+    "سدیم لوریل سارکوزینات|Sodium lauroyl sarcosinate",
+    "اسپن ۶۰ / ۸۰ (سوربیتان استئارات / اولئات)|Span 60, Span 80, Sorbitan monostearate, Sorbitan oleate",
+    "روغن کرچک هیدروژنه PEG-40|PEG-40 Hydrogenated castor oil, Cremophor RH40",
+    "بروملین|Bromelain",
+    "بتائین هیدروکلراید|Betaine hydrochloride",
+    "سیلیکون امولسیون|Silicone emulsion",
+    "کلسیم پانتوتنات (ویتامین B5)|Calcium pantothenate, Calcium D-pantothenate, Vitamin B5",
+    "روغن آووکادو|Avocado oil"
+   ],
+   "note": "نام فارسی شرکت از روی دامنه نوشته شده و تأیید نشده است.",
+   "via": 1
+  },
+  {
+   "n": "آدونیس گل دارو",
+   "e": "Adonis Gol Darou — adonisdrug.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos",
+    "sup",
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "web": "https://adonisdrug.com/",
+   "src": "https://adonisdrug.com/",
+   "p": [
+    "نیاسینامید / نیکوتین‌آمید (ویتامین B3)|Niacinamide, Nicotinamide",
+    "پیریدوکسین هیدروکلراید (ویتامین B6)|Pyridoxine hydrochloride",
+    "ویتامین D3 (کوله‌کلسیفرول)|Vitamin D3, Cholecalciferol",
+    "ویتامین E (توکوفرول / توکوفریل استات)|Vitamin E, Tocopherol acetate",
+    "ویتامین A پالمیتات / استات|Vitamin A palmitate, Retinyl acetate",
+    "کلسیم گلوکونات|Calcium gluconate",
+    "لاکتوز|Lactose",
+    "پلی‌وینیل پیرولیدون (پوویدون PVP K30 / K90)|Povidone, PVP K30 K90",
+    "سدیم استارچ گلیکولات|Sodium starch glycolate",
+    "کراس‌کارملوز سدیم|Croscarmellose sodium",
+    "آلانتوئین|Allantoin",
+    "ایزوپروپیل میریستات (IPM)|Isopropyl myristate",
+    "منتول کریستال|Menthol crystals",
+    "بنزوفنون-۳|Benzophenone-3, Oxybenzone",
+    "آربوتین|Arbutin",
+    "ترانکسامیک اسید|Tranexamic acid",
+    "نشاسته ذرت دارویی|Corn starch, Maize starch",
+    "نشاسته پری‌ژلاتینه|Pregelatinized starch",
+    "سدیم بی‌کربنات|Sodium bicarbonate",
+    "ستریماید|Cetrimide",
+    "لسیتین|Lecithin",
+    "ان‌استیل سیستئین (NAC)|N-Acetylcysteine, NAC",
+    "گلیسیرین مونواستئارات (GMS)|Glyceryl monostearate, GMS",
+    "پیروکتون اولامین|Piroctone olamine, Octopirox",
+    "کلوتریمازول|Clotrimazole",
+    "زایلیتول|Xylitol",
+    "هیدروکسی اتیل سلولز (HEC / تیلوز)|Hydroxyethyl cellulose, HEC, Tylose",
+    "تری سدیم فسفات / دی سدیم فسفات|Trisodium phosphate, Disodium phosphate, Dibasic sodium phosphate",
+    "تریکلوزان|Triclosan",
+    "دسیل گلوکوزید|Decyl glucoside",
+    "ال‌تیانین|L-Theanine",
+    "آموکسی‌سیلین|Amoxicillin",
+    "ال‌تریپتوفان|L-Tryptophan",
+    "پلی‌کواترنیوم ۷|Polyquaternium-7",
+    "ایزوتیازولین (نگهدارنده)|Isothiazolinone, Methylchloroisothiazolinone, Kathon",
+    "پوویدون آیوداین (بتادین)|Povidone iodine, PVP-I, Betadine",
+    "فنوکسی اتانول + اتیل هگزیل گلیسیرین|Phenoxyethanol Ethylhexylglycerin",
+    "سدیم لوریل سارکوزینات|Sodium lauroyl sarcosinate",
+    "تری کلسیم فسفات|Tricalcium phosphate, TCP",
+    "آلومینیوم کلروهیدرات|Aluminium chlorohydrate",
+    "سدیم PCA|Sodium PCA, Sodium pyroglutamate",
+    "دایمتیکونول|Dimethiconol",
+    "آسه سولفام پتاسیم|Acesulfame potassium, Acesulfame K",
+    "بنزوئیل پراکسید|Benzoyl peroxide",
+    "پنتوپرازول|Pantoprazole"
+   ],
+   "note": "تولیدکننده، واردکننده و صادرکننده طبق دایرکتوری پارس‌سنتر.",
+   "via": 1
+  },
+  {
+   "n": "شیمی استور",
+   "e": "Shimi Store — shimistore.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos",
+    "api"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://shimistore.com/",
+   "src": "https://shimistore.com/",
+   "p": [
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "سدیم گلوکونات|Sodium gluconate",
+    "زینک سولفات (سولفات روی)|Zinc sulfate",
+    "اکسید منیزیم|Magnesium oxide",
+    "منیزیم استئارات|Magnesium stearate",
+    "منیزیم سولفات|Magnesium sulfate",
+    "کلسیم کربنات|Calcium carbonate",
+    "سوربیتول|Sorbitol",
+    "سیلیکون دی‌اکساید / آئروزیل|Colloidal silicon dioxide, Aerosil",
+    "تیتانیوم دی‌اکساید|Titanium dioxide",
+    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC",
+    "پروپیلن گلیکول|Propylene glycol",
+    "اسید استئاریک|Stearic acid",
+    "تگزاپون (سدیم لوریل اتر سولفات SLES)|Texapon, Sodium laureth sulfate, SLES",
+    "اسید سیتریک|Citric acid",
+    "تری سدیم سیترات|Trisodium citrate",
+    "تری‌اتانول‌آمین|Triethanolamine",
+    "زینک اکساید (اکسید روی)|Zinc oxide",
+    "سدیم بی‌کربنات|Sodium bicarbonate",
+    "بنزالکونیوم کلراید|Benzalkonium chloride",
+    "اسید لاکتیک|Lactic acid",
+    "اسید بوریک|Boric acid",
+    "پتاسیم سیترات|Potassium citrate",
+    "منیزیم هیدروکسید|Magnesium hydroxide",
+    "تری سدیم فسفات / دی سدیم فسفات|Trisodium phosphate, Disodium phosphate, Dibasic sodium phosphate",
+    "زینک استئارات|Zinc stearate",
+    "کلسیم استئارات|Calcium stearate",
+    "منگنز سولفات|Manganese sulfate",
+    "سدیم فلوراید|Sodium fluoride",
+    "مونو سدیم فسفات|Monosodium phosphate",
+    "سدیم هیدروکسید|Sodium hydroxide",
+    "ایزوتیازولین (نگهدارنده)|Isothiazolinone, Methylchloroisothiazolinone, Kathon",
+    "هیدروکینون|Hydroquinone",
+    "وانیلین / وانیل|Vanillin, Vanilla",
+    "اسید تارتاریک|Tartaric acid",
+    "اسپن ۶۰ / ۸۰ (سوربیتان استئارات / اولئات)|Span 60, Span 80, Sorbitan monostearate, Sorbitan oleate",
+    "پروپیلن کربنات|Propylene carbonate",
+    "بنزوئیل پراکسید|Benzoyl peroxide",
+    "سدیم استئارات|Sodium stearate"
+   ],
+   "via": 1
+  },
+  {
+   "n": "بازرگانی دانا فارمد",
+   "e": "Dana Pharmed — danapharmedco.ir",
+   "t": "t",
+   "c": [
+    "vit",
+    "exc",
+    "cos",
+    "api",
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://danapharmedco.ir/",
+   "src": "https://danapharmedco.ir/",
+   "p": [
+    "نیاسینامید / نیکوتین‌آمید (ویتامین B3)|Niacinamide, Nicotinamide",
+    "فولیک اسید (ویتامین B9)|Folic acid",
+    "دی‌پنتنول / دکسپانتنول (ویتامین B5)|D-Panthenol, Dexpanthenol",
+    "سدیم استارچ گلیکولات|Sodium starch glycolate",
+    "هیالورونیک اسید / سدیم هیالورونات|Hyaluronic acid, Sodium hyaluronate",
+    "آلانتوئین|Allantoin",
+    "گلیکولیک اسید|Glycolic acid",
+    "پاراستامول (استامینوفن)|Paracetamol, Acetaminophen",
+    "ایبوپروفن|Ibuprofen",
+    "MSM (متیل سولفونیل متان)|Methylsulfonylmethane",
+    "کندرویتین سولفات|Chondroitin sulfate",
+    "اکتوکرایلن|Octocrylene",
+    "بنزوفنون-۳|Benzophenone-3, Oxybenzone",
+    "کوجیک اسید|Kojic acid",
+    "رتینول|Retinol",
+    "ترانکسامیک اسید|Tranexamic acid",
+    "سدیم بی‌کربنات|Sodium bicarbonate",
+    "سدیم کلراید دارویی|Sodium chloride",
+    "آلفا لیپوئیک اسید|Alpha lipoic acid",
+    "کوآنزیم Q10|Coenzyme Q10, Ubiquinone",
+    "ال‌سیستئین|L-Cysteine",
+    "پیروکتون اولامین|Piroctone olamine, Octopirox",
+    "دگزامتازون|Dexamethasone",
+    "دیکلوفناک سدیم|Diclofenac sodium",
+    "ناپروکسن|Naproxen",
+    "سیلدنافیل|Sildenafil",
+    "کولین بی‌تارتارات|Choline bitartrate",
+    "الاستین|Elastin",
+    "تتراسایکلین|Tetracycline",
+    "آموکسی‌سیلین|Amoxicillin",
+    "ال‌تریپتوفان|L-Tryptophan",
+    "ال‌تیروزین|L-Tyrosine",
+    "ملاتونین|Melatonin",
+    "اسکوالان|Squalane",
+    "اینولین|Inulin",
+    "فرولیک اسید|Ferulic acid",
+    "ال‌سیترولین|L-Citrulline",
+    "بنزوئیل پراکسید|Benzoyl peroxide",
+    "آداپالن|Adapalene"
+   ],
+   "via": 1
+  },
+  {
+   "n": "گیاه کالا",
+   "e": "Giyah Kala — giyahkala.com",
+   "t": "t",
+   "c": [
+    "sup",
+    "cos",
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://giyahkala.com/",
+   "src": "https://giyahkala.com/",
+   "p": [
+    "کورکومین|Curcumin",
+    "اسپیرولینا|Spirulina",
+    "عصاره جینسینگ|Ginseng extract",
+    "سیلیمارین (عصاره خار مریم)|Silymarin, Milk thistle extract",
+    "عصاره‌های گیاهی|Herbal extracts",
+    "روغن بادام شیرین|Sweet almond oil",
+    "عصاره چای سبز|Green tea extract",
+    "عصاره آشواگاندا|Ashwagandha extract",
+    "استویا|Stevia, Steviol glycosides",
+    "وانیلین / وانیل|Vanillin, Vanilla",
+    "آلوئه ورا (پودر، ژل، عصاره)|Aloe vera",
+    "عصاره شیرین بیان (خشک و مایع)|Licorice extract, Glycyrrhiza glabra",
+    "عصاره سنبل‌الطیب|Valerian extract, Valeriana",
+    "عصاره گزنه|Nettle extract, Urtica dioica",
+    "عصاره زنجبیل|Ginger extract",
+    "عصاره جینکو بیلوبا|Ginkgo biloba extract",
+    "عصاره هسته انگور|Grape seed extract",
+    "عصاره رزماری (خشک و مایع)|Rosemary extract",
+    "عصاره دم اسب|Horsetail extract, Equisetum",
+    "عصاره شنبلیله|Fenugreek extract",
+    "عصاره خارخاسک|Tribulus terrestris extract",
+    "عصاره رازیانه|Fennel extract",
+    "عصاره گل راعی (هایپریکوم)|St John's wort extract, Hypericum perforatum",
+    "عصاره بادرنجبویه|Lemon balm extract, Melissa",
+    "عصاره همیشه بهار (کالاندولا)|Calendula extract",
+    "عصاره کنگر فرنگی (آرتیشو)|Artichoke extract, Cynara",
+    "عصاره برگ زیتون|Olive leaf extract",
+    "عصاره کاسنی|Chicory extract",
+    "عصاره مورد|Myrtle extract",
+    "عصاره گون|Astragalus extract",
+    "عصاره زعفران|Saffron extract",
+    "عصاره زبان گنجشک|Ash extract, Fraxinus",
+    "عصاره انگور|Grape extract",
+    "عصاره ارزن|Millet extract",
+    "عصاره آلوئه ورا|Aloe vera extract",
+    "اسانس آویشن|Thyme essential oil",
+    "اسانس نعناع فلفلی|Peppermint essential oil",
+    "اسانس‌های گیاهی|Essential oils"
+   ],
+   "note": "عصاره‌ها و مواد گیاهی فله با COA.",
+   "via": 1
+  },
+  {
+   "n": "موسسه مبتکران شیمی",
+   "e": "Mobtakeran Shimi — mbkchemical.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos",
+    "api"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://www.mbkchemical.com/",
+   "src": "https://www.mbkchemical.com/",
+   "p": [
+    "نیاسینامید / نیکوتین‌آمید (ویتامین B3)|Niacinamide, Nicotinamide",
+    "فولیک اسید (ویتامین B9)|Folic acid",
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "سدیم گلوکونات|Sodium gluconate",
+    "زینک سولفات (سولفات روی)|Zinc sulfate",
+    "اکسید منیزیم|Magnesium oxide",
+    "کلسیم کربنات|Calcium carbonate",
+    "پتاسیم یدید|Potassium iodide",
+    "سوربیتول|Sorbitol",
+    "پروپیلن گلیکول|Propylene glycol",
+    "گلیسیرین|Glycerin, Glycerol",
+    "پلی اتیلن گلیکول (PEG 400 / 4000 / 6000)|Polyethylene glycol, PEG, Macrogol",
+    "پلی‌سوربات ۸۰ / ۲۰ (توئین)|Polysorbate 80 20, Tween",
+    "متیل پارابن|Methylparaben",
+    "سوکرالوز|Sucralose",
+    "آلانتوئین|Allantoin",
+    "سالیسیلیک اسید|Salicylic acid",
+    "تگزاپون (سدیم لوریل اتر سولفات SLES)|Texapon, Sodium laureth sulfate, SLES",
+    "تری‌اتانول‌آمین|Triethanolamine",
+    "بنزیل الکل|Benzyl alcohol",
+    "کربوکسی متیل سلولز (CMC)|Carboxymethyl cellulose, CMC",
+    "سدیم بی‌کربنات|Sodium bicarbonate",
+    "آلومینیوم هیدروکسید|Aluminium hydroxide",
+    "تری سدیم فسفات / دی سدیم فسفات|Trisodium phosphate, Disodium phosphate, Dibasic sodium phosphate",
+    "اریترومایسین|Erythromycin",
+    "منگنز سولفات|Manganese sulfate",
+    "منیزیم سولفات|Magnesium sulfate",
+    "مونو سدیم فسفات|Monosodium phosphate",
+    "سدیم هیدروکسید|Sodium hydroxide",
+    "ایزوتیازولین (نگهدارنده)|Isothiazolinone, Methylchloroisothiazolinone, Kathon",
+    "اسید تارتاریک|Tartaric acid",
+    "پروپیلن کربنات|Propylene carbonate",
+    "آسه سولفام پتاسیم|Acesulfame potassium, Acesulfame K",
+    "بنزوئیل پراکسید|Benzoyl peroxide"
+   ],
+   "via": 1
+  },
+  {
+   "n": "پترو کیمیا",
+   "e": "Petro Kimia — trade-chemical.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "exc",
+    "cos",
+    "min",
+    "api"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://trade-chemical.com/",
+   "src": "https://trade-chemical.com/",
+   "p": [
+    "ریبوفلاوین (ویتامین B2)|Riboflavin",
+    "نیاسینامید / نیکوتین‌آمید (ویتامین B3)|Niacinamide, Nicotinamide",
+    "پیریدوکسین هیدروکلراید (ویتامین B6)|Pyridoxine hydrochloride",
+    "سیانوکوبالامین (ویتامین B12)|Cyanocobalamin",
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "ویتامین E (توکوفرول / توکوفریل استات)|Vitamin E, Tocopherol acetate",
+    "پروپیلن گلیکول|Propylene glycol",
+    "سالیسیلیک اسید|Salicylic acid",
+    "تگزاپون (سدیم لوریل اتر سولفات SLES)|Texapon, Sodium laureth sulfate, SLES",
+    "تری سدیم سیترات|Trisodium citrate",
+    "تری‌اتانول‌آمین|Triethanolamine",
+    "ایزوپروپیل الکل|Isopropyl alcohol, IPA, 2-Propanol",
+    "سدیم بی‌کربنات|Sodium bicarbonate",
+    "بنزالکونیوم کلراید|Benzalkonium chloride",
+    "گلیسیرین مونواستئارات (GMS)|Glyceryl monostearate, GMS",
+    "پتاسیم سیترات|Potassium citrate",
+    "تری سدیم فسفات / دی سدیم فسفات|Trisodium phosphate, Disodium phosphate, Dibasic sodium phosphate",
+    "کلسیم استئارات|Calcium stearate",
+    "منگنز سولفات|Manganese sulfate",
+    "منیزیم سولفات|Magnesium sulfate",
+    "سدیم فلوراید|Sodium fluoride",
+    "سدیم هیدروکسید|Sodium hydroxide",
+    "هیدروکینون|Hydroquinone",
+    "اسید تارتاریک|Tartaric acid",
+    "بنزوئیل پراکسید|Benzoyl peroxide"
+   ],
+   "via": 1
+  },
+  {
+   "n": "شیمیایی تهران",
+   "e": "Tehran Chem — tehran-chem.com",
+   "t": "t",
+   "c": [
+    "min",
+    "exc",
+    "cos",
+    "sup"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "web": "https://tehran-chem.com/",
+   "src": "https://tehran-chem.com/",
+   "p": [
+    "زینک سولفات (سولفات روی)|Zinc sulfate",
+    "لاکتوز|Lactose",
+    "سوربیتول|Sorbitol",
+    "پلی‌سوربات ۸۰ / ۲۰ (توئین)|Polysorbate 80 20, Tween",
+    "سوکرالوز|Sucralose",
+    "هیالورونیک اسید / سدیم هیالورونات|Hyaluronic acid, Sodium hyaluronate",
+    "ستو استئاریل الکل|Cetostearyl alcohol",
+    "منتول کریستال|Menthol crystals",
+    "پلی‌کواترنیوم ۱۰|Polyquaternium-10",
+    "ایزوپروپیل الکل|Isopropyl alcohol, IPA, 2-Propanol",
+    "بنزالکونیوم کلراید|Benzalkonium chloride",
+    "لسیتین|Lecithin",
+    "بیزواکس (موم زنبور)|Beeswax",
+    "اسید بوریک|Boric acid",
+    "بتاکاروتن|Beta carotene",
+    "زایلیتول|Xylitol",
+    "پلی‌وینیل الکل (PVA)|Polyvinyl alcohol, PVA",
+    "ایزوتیازولین (نگهدارنده)|Isothiazolinone, Methylchloroisothiazolinone, Kathon",
+    "اوره|Urea, Carbamide",
+    "آلوئه ورا (پودر، ژل، عصاره)|Aloe vera",
+    "اسید تارتاریک|Tartaric acid",
+    "ستئارث ۲۰ / ۲۵ (ستوماکروگل)|Ceteareth-20, Ceteareth-25, Cetomacrogol",
+    "روغن کرچک هیدروژنه PEG-40|PEG-40 Hydrogenated castor oil, Cremophor RH40",
+    "اولئیک اسید|Oleic acid"
+   ],
+   "via": 1
+  },
+  {
+   "n": "اوسینا شیمی",
+   "e": "Avecina Shimi — avecinashimi.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "sup",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://www.avecinashimi.com/",
+   "src": "https://www.avecinashimi.com/",
+   "p": [
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "پتاسیم یدید|Potassium iodide",
+    "پتاسیم کلراید|Potassium chloride",
+    "مانیتول|Mannitol",
+    "تائورین|Taurine",
+    "کافئین انهیدروس|Caffeine anhydrous",
+    "تری سدیم سیترات|Trisodium citrate",
+    "تری‌اتانول‌آمین|Triethanolamine",
+    "زینک اکساید (اکسید روی)|Zinc oxide",
+    "کربوکسی متیل سلولز (CMC)|Carboxymethyl cellulose, CMC",
+    "نشاسته ذرت دارویی|Corn starch, Maize starch",
+    "سدیم بی‌کربنات|Sodium bicarbonate",
+    "سدیم کلراید دارویی|Sodium chloride",
+    "لسیتین|Lecithin",
+    "پارافین مایع|Liquid paraffin, Mineral oil",
+    "اسید بوریک|Boric acid",
+    "پلی‌وینیل الکل (PVA)|Polyvinyl alcohol, PVA",
+    "اوره|Urea, Carbamide",
+    "وانیلین / وانیل|Vanillin, Vanilla",
+    "اسید تارتاریک|Tartaric acid",
+    "اسپن ۶۰ / ۸۰ (سوربیتان استئارات / اولئات)|Span 60, Span 80, Sorbitan monostearate, Sorbitan oleate",
+    "پتاسیم دی‌هیدروژن فسفات|Potassium dihydrogen phosphate, Monopotassium phosphate",
+    "آسه سولفام پتاسیم|Acesulfame potassium, Acesulfame K",
+    "روغن آرگان|Argan oil"
+   ],
+   "note": "مواد آزمایشگاهی (مرک) و صنعتی.",
+   "via": 1
+  },
+  {
+   "n": "گیلاردیان",
+   "e": "Gilardian — gilardian.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "exc",
+    "sup",
+    "cos",
+    "min"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://gilardian.com/",
+   "src": "https://gilardian.com/",
+   "p": [
+    "دی‌پنتنول / دکسپانتنول (ویتامین B5)|D-Panthenol, Dexpanthenol",
+    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC",
+    "کلاژن هیدرولیز|Hydrolyzed collagen",
+    "ستیل الکل|Cetyl alcohol",
+    "ستو استئاریل الکل|Cetostearyl alcohol",
+    "اسید استئاریک|Stearic acid",
+    "سیکلوپنتاسیلوکسان / دایمتیکون|Cyclopentasiloxane, Dimethicone",
+    "فنوکسی اتانول|Phenoxyethanol",
+    "تری‌اتانول‌آمین|Triethanolamine",
+    "گلیسیرین مونواستئارات (GMS)|Glyceryl monostearate, GMS",
+    "ستریمونیوم کلراید|Cetrimonium chloride, CTAC",
+    "زینک استئارات|Zinc stearate",
+    "کاپریلیک/کاپریک تری‌گلیسرید|Caprylic capric triglyceride, MCT",
+    "کوکامیدوپروپیل بتائین|Cocamidopropyl betaine, CAPB",
+    "پلی‌کواترنیوم ۷|Polyquaternium-7",
+    "ایزوتیازولین (نگهدارنده)|Isothiazolinone, Methylchloroisothiazolinone, Kathon",
+    "اوره|Urea, Carbamide",
+    "کائولن|Kaolin",
+    "فنوکسی اتانول + اتیل هگزیل گلیسیرین|Phenoxyethanol Ethylhexylglycerin",
+    "سدیم لوریل سارکوزینات|Sodium lauroyl sarcosinate",
+    "ستئارث ۲۰ / ۲۵ (ستوماکروگل)|Ceteareth-20, Ceteareth-25, Cetomacrogol",
+    "سدیم PCA|Sodium PCA, Sodium pyroglutamate",
+    "دایمتیکون PEG-12 (محلول در آب)|PEG-12 Dimethicone",
+    "دایمتیکونول|Dimethiconol"
+   ],
+   "note": "مواد اولیه آرایشی‌بهداشتی، سورفکتانت و امولسیفایر.",
+   "via": 1
+  },
+  {
+   "n": "بازار نانو",
+   "e": "Bazar Nano — bazarnano.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://www.bazarnano.com/",
+   "src": "https://www.bazarnano.com/",
+   "p": [
+    "تیامین هیدروکلراید (ویتامین B1)|Thiamine hydrochloride",
+    "ریبوفلاوین (ویتامین B2)|Riboflavin",
+    "سیانوکوبالامین (ویتامین B12)|Cyanocobalamin",
+    "بیوتین (ویتامین B7 / H)|Biotin",
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "کلسیم کربنات|Calcium carbonate",
+    "لاکتوز|Lactose",
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC",
+    "پلی‌وینیل پیرولیدون (پوویدون PVP K30 / K90)|Povidone, PVP K30 K90",
+    "سدیم استارچ گلیکولات|Sodium starch glycolate",
+    "تالک دارویی|Talc",
+    "پلی‌سوربات ۸۰ / ۲۰ (توئین)|Polysorbate 80 20, Tween",
+    "سوکرالوز|Sucralose",
+    "ال‌آرژنین|L-Arginine",
+    "آمینواسیدها|Amino acids",
+    "ژلاتین|Gelatin",
+    "سدیم کلراید دارویی|Sodium chloride",
+    "صمغ عربی|Gum arabic, Acacia",
+    "گوار گام|Guar gum",
+    "گلایسین|Glycine"
+   ],
+   "via": 1
+  },
+  {
+   "n": "نگین پیشرو سلامت",
+   "e": "Negin Pishro Salamat — amoonpnps.com",
+   "t": "t",
+   "c": [
+    "sup",
+    "min",
+    "exc",
+    "api",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://amoonpnps.com/",
+   "src": "https://amoonpnps.com/",
+   "p": [
+    "کروم پیکولینات|Chromium picolinate",
+    "منیزیم گلیسینات|Magnesium glycinate, Magnesium bisglycinate",
+    "فروس فومارات|Ferrous fumarate",
+    "ال‌کارنیتین|L-Carnitine",
+    "ال‌لوسین / ال‌ایزولوسین|L-Leucine, L-Isoleucine",
+    "ال‌آرژنین|L-Arginine",
+    "کافئین انهیدروس|Caffeine anhydrous",
+    "آسپارتام|Aspartame",
+    "ال‌تیانین|L-Theanine",
+    "ال‌لیزین|L-Lysine",
+    "ال‌اورنیتین هیدروکلراید|L-Ornithine hydrochloride",
+    "سیپروهپتادین|Cyproheptadine",
+    "ال‌آلانین|L-Alanine",
+    "ال‌هیستیدین|L-Histidine",
+    "دی‌ال ترئونین|DL-Threonine",
+    "ال‌فنیل آلانین|L-Phenylalanine",
+    "بتائین هیدروکلراید|Betaine hydrochloride",
+    "دکسترومتورفان|Dextromethorphan",
+    "بتا سیکلودکسترین|Beta-cyclodextrin"
+   ],
+   "note": "پودر مواد اولیه مکمل و اسیدهای آمینه. تلفن از منبع به دست نیامد.",
+   "via": 1
+  },
+  {
+   "n": "آوا شیمی صبا",
+   "e": "Ava Chemi Saba — avachemi.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos",
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "web": "https://avachemi.com/",
+   "src": "https://avachemi.com/",
+   "p": [
+    "تیامین هیدروکلراید (ویتامین B1)|Thiamine hydrochloride",
+    "تیامین مونونیترات (ویتامین B1)|Thiamine mononitrate",
+    "ریبوفلاوین (ویتامین B2)|Riboflavin",
+    "پیریدوکسین هیدروکلراید (ویتامین B6)|Pyridoxine hydrochloride",
+    "سیانوکوبالامین (ویتامین B12)|Cyanocobalamin",
+    "دی‌پنتنول / دکسپانتنول (ویتامین B5)|D-Panthenol, Dexpanthenol",
+    "اکسید منیزیم|Magnesium oxide",
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC",
+    "سدیم استارچ گلیکولات|Sodium starch glycolate",
+    "پلی‌سوربات ۸۰ / ۲۰ (توئین)|Polysorbate 80 20, Tween",
+    "فنوکسی اتانول|Phenoxyethanol",
+    "پاراستامول (استامینوفن)|Paracetamol, Acetaminophen",
+    "کتوکونازول|Ketoconazole",
+    "منتول کریستال|Menthol crystals",
+    "کاپریلیک/کاپریک تری‌گلیسرید|Caprylic capric triglyceride, MCT",
+    "پوویدون آیوداین (بتادین)|Povidone iodine, PVP-I, Betadine",
+    "روغن کرچک هیدروژنه PEG-40|PEG-40 Hydrogenated castor oil, Cremophor RH40",
+    "کلسیم پانتوتنات (ویتامین B5)|Calcium pantothenate, Calcium D-pantothenate, Vitamin B5"
+   ],
+   "note": "واردکننده مواد اولیه دارویی، آرایشی‌بهداشتی و غذایی با حدود ۲۰ سال سابقه.",
+   "via": 1
+  },
+  {
+   "n": "اوشیم",
+   "e": "Oshim — oshim.ir",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos",
+    "api",
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://oshim.ir/",
+   "src": "https://oshim.ir/",
+   "p": [
+    "ویتامین E (توکوفرول / توکوفریل استات)|Vitamin E, Tocopherol acetate",
+    "زینک سولفات (سولفات روی)|Zinc sulfate",
+    "کلسیم کربنات|Calcium carbonate",
+    "کلسیم سیترات|Calcium citrate",
+    "لاکتوز|Lactose",
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC",
+    "پلی‌وینیل پیرولیدون (پوویدون PVP K30 / K90)|Povidone, PVP K30 K90",
+    "گلیسیرین|Glycerin, Glycerol",
+    "پلی اتیلن گلیکول (PEG 400 / 4000 / 6000)|Polyethylene glycol, PEG, Macrogol",
+    "هیالورونیک اسید / سدیم هیالورونات|Hyaluronic acid, Sodium hyaluronate",
+    "ایبوپروفن|Ibuprofen",
+    "ال‌کارنیتین|L-Carnitine",
+    "پلی‌وینیل الکل (PVA)|Polyvinyl alcohol, PVA",
+    "کائولن|Kaolin",
+    "کلسیم لاکتات|Calcium lactate",
+    "منیزیم کربنات|Magnesium carbonate",
+    "سیلیکون امولسیون|Silicone emulsion",
+    "فروکتوز|Fructose"
+   ],
+   "via": 1
+  },
+  {
+   "n": "جهان شیمی (jahaneshimi.com)",
+   "e": "Jahane Shimi",
+   "t": "t",
+   "c": [
+    "exc",
+    "sup",
+    "min",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://www.jahaneshimi.com/",
+   "src": "https://www.jahaneshimi.com/",
+   "p": [
+    "سوربیتول|Sorbitol",
+    "تیتانیوم دی‌اکساید|Titanium dioxide",
+    "ایزوپروپیل الکل|Isopropyl alcohol, IPA, 2-Propanol",
+    "بتاکاروتن|Beta carotene",
+    "کورکومین|Curcumin",
+    "لیکوپن|Lycopene",
+    "تری سدیم فسفات / دی سدیم فسفات|Trisodium phosphate, Disodium phosphate, Dibasic sodium phosphate",
+    "ایزوله پروتئین سویا|Soy protein isolate",
+    "سدیم هیدروکسید|Sodium hydroxide",
+    "گلایسین|Glycine",
+    "استویا|Stevia, Steviol glycosides",
+    "منیزیم کربنات|Magnesium carbonate",
+    "تری کلسیم فسفات|Tricalcium phosphate, TCP",
+    "بتائین هیدروکلراید|Betaine hydrochloride",
+    "کازئین|Casein",
+    "آسه سولفام پتاسیم|Acesulfame potassium, Acesulfame K"
+   ],
+   "via": 1
+  },
+  {
+   "n": "سی‌سی ایران (مرکز شیمی ایران)",
+   "e": "CC Iran — cciran.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://www.cciran.com/",
+   "src": "https://www.cciran.com/",
+   "p": [
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "زینک سولفات (سولفات روی)|Zinc sulfate",
+    "منیزیم استئارات|Magnesium stearate",
+    "کلسیم کربنات|Calcium carbonate",
+    "فروس سولفات (سولفات آهن)|Ferrous sulfate",
+    "پلی اتیلن گلیکول (PEG 400 / 4000 / 6000)|Polyethylene glycol, PEG, Macrogol",
+    "پلی‌سوربات ۸۰ / ۲۰ (توئین)|Polysorbate 80 20, Tween",
+    "سدیم لوریل سولفات (SLS)|Sodium lauryl sulfate",
+    "ایزوپروپیل میریستات (IPM)|Isopropyl myristate",
+    "EDTA (ادتا دی‌سدیم / تتراسدیم)|EDTA, Edetate disodium",
+    "سدیم کلراید دارویی|Sodium chloride",
+    "پلی‌وینیل الکل (PVA)|Polyvinyl alcohol, PVA",
+    "سدیم فلوراید|Sodium fluoride",
+    "اوره|Urea, Carbamide",
+    "پتاسیم دی‌هیدروژن فسفات|Potassium dihydrogen phosphate, Monopotassium phosphate"
+   ],
+   "via": 1
+  },
+  {
+   "n": "شیمی بازار (بازارگاه چند فروشنده)",
+   "e": "Chemi Bazar — chemibazar.com",
+   "t": "t",
+   "c": [
+    "min",
+    "exc",
+    "sup",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://chemibazar.com/",
+   "src": "https://chemibazar.com/",
+   "p": [
+    "اکسید منیزیم|Magnesium oxide",
+    "منیزیم استئارات|Magnesium stearate",
+    "کلسیم کربنات|Calcium carbonate",
+    "پتاسیم یدید|Potassium iodide",
+    "پلی‌وینیل پیرولیدون (پوویدون PVP K30 / K90)|Povidone, PVP K30 K90",
+    "سوربیتول|Sorbitol",
+    "تیتانیوم دی‌اکساید|Titanium dioxide",
+    "ایزوپروپیل الکل|Isopropyl alcohol, IPA, 2-Propanol",
+    "منیزیم کلراید|Magnesium chloride",
+    "بتاکاروتن|Beta carotene",
+    "پلی‌وینیل الکل (PVA)|Polyvinyl alcohol, PVA",
+    "پتاسیم هیدروکسید|Potassium hydroxide",
+    "کوکامیدوپروپیل بتائین|Cocamidopropyl betaine, CAPB",
+    "بنتونیت|Bentonite",
+    "منیزیم کربنات|Magnesium carbonate"
+   ],
+   "note": "بازارگاه آنلاین؛ برای هر ماده چند فروشنده و استعلام قیمت دارد.",
+   "via": 1
+  },
+  {
+   "n": "تمادکالا",
+   "e": "Temad Kala — tamadkala.com",
+   "t": "t",
+   "c": [
+    "exc",
+    "cos",
+    "sup",
+    "min",
+    "api"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://tamadkala.com/",
+   "src": "https://tamadkala.com/",
+   "p": [
+    "پلی اتیلن گلیکول (PEG 400 / 4000 / 6000)|Polyethylene glycol, PEG, Macrogol",
+    "هیدروکینون|Hydroquinone",
+    "گلایسین|Glycine",
+    "کلسیم لاکتات|Calcium lactate",
+    "اسید تارتاریک|Tartaric acid",
+    "سدیم لوریل سارکوزینات|Sodium lauroyl sarcosinate",
+    "تری کلسیم فسفات|Tricalcium phosphate, TCP",
+    "دی‌متیل سولفوکسید (DMSO)|Dimethyl sulfoxide, DMSO",
+    "پروپیلن کربنات|Propylene carbonate",
+    "ال‌آلانین|L-Alanine",
+    "پانکراتین|Pancreatin",
+    "پپسین|Pepsin",
+    "پتاسیم دی‌هیدروژن فسفات|Potassium dihydrogen phosphate, Monopotassium phosphate",
+    "سدیم دی‌هیدروژن فسفات|Sodium dihydrogen phosphate",
+    "روغن آووکادو|Avocado oil"
+   ],
+   "note": "از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
+   "via": 1
+  },
+  {
+   "n": "بازرگانی آسمان تجارت",
+   "e": "Aseman Tejarat — asemantejarat.com",
+   "t": "t",
+   "c": [
+    "min",
+    "exc",
+    "cos",
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://asemantejarat.com/",
+   "src": "https://asemantejarat.com/",
+   "p": [
+    "سدیم گلوکونات|Sodium gluconate",
+    "گلیسیرین|Glycerin, Glycerol",
+    "سالیسیلیک اسید|Salicylic acid",
+    "تری سدیم سیترات|Trisodium citrate",
+    "ایزوپروپیل الکل|Isopropyl alcohol, IPA, 2-Propanol",
+    "کربوکسی متیل سلولز (CMC)|Carboxymethyl cellulose, CMC",
+    "بنزالکونیوم کلراید|Benzalkonium chloride",
+    "لسیتین|Lecithin",
+    "گلیسیرین مونواستئارات (GMS)|Glyceryl monostearate, GMS",
+    "اسید لاکتیک|Lactic acid",
+    "بتاکاروتن|Beta carotene",
+    "کاراگینان|Carrageenan",
+    "ال‌گلوتامین|L-Glutamine",
+    "سوربیتول|Sorbitol"
+   ],
+   "via": 1
+  },
+  {
+   "n": "آشا ارگانیک",
+   "e": "Asha Organic — ashaorganic.com",
+   "t": "t",
+   "c": [
+    "sup",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://ashaorganic.com/",
+   "src": "https://ashaorganic.com/",
+   "p": [
+    "عصاره شیرین بیان (خشک و مایع)|Licorice extract, Glycyrrhiza glabra",
+    "عصاره سنبل‌الطیب|Valerian extract, Valeriana",
+    "عصاره رزماری (خشک و مایع)|Rosemary extract",
+    "عصاره همیشه بهار (کالاندولا)|Calendula extract",
+    "عصاره ارزن|Millet extract",
+    "عصاره سیر|Garlic extract",
+    "عصاره رازک|Hops extract, Humulus",
+    "عصاره بارهنگ|Plantain extract, Plantago",
+    "عصاره لیمو|Lemon extract",
+    "عصاره سماق|Sumac extract",
+    "عصاره استویا|Stevia extract",
+    "اسانس‌های گیاهی|Essential oils",
+    "عصاره‌های گیاهی|Herbal extracts"
+   ],
+   "note": "فروش عصاره‌های گیاهی مایع و پودری به‌صورت فله. تلفن از منبع به دست نیامد.",
+   "via": 1
+  },
+  {
+   "n": "تهران اسید",
+   "e": "Tehran Acid — tehranacid.ir",
+   "t": "t",
+   "c": [
+    "min",
+    "cos",
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "web": "https://tehranacid.ir/",
+   "src": "https://tehranacid.ir/",
+   "p": [
+    "زینک سولفات (سولفات روی)|Zinc sulfate",
+    "تگزاپون (سدیم لوریل اتر سولفات SLES)|Texapon, Sodium laureth sulfate, SLES",
+    "تری سدیم سیترات|Trisodium citrate",
+    "ایزوپروپیل الکل|Isopropyl alcohol, IPA, 2-Propanol",
+    "زینک اکساید (اکسید روی)|Zinc oxide",
+    "اسید بوریک|Boric acid",
+    "منیزیم کلراید|Magnesium chloride",
+    "آلژینات سدیم|Sodium alginate",
+    "تری سدیم فسفات / دی سدیم فسفات|Trisodium phosphate, Disodium phosphate, Dibasic sodium phosphate",
+    "اوره|Urea, Carbamide"
+   ],
+   "via": 1
+  },
+  {
+   "n": "آرکا طب روهام",
+   "e": "Arka Teb Roham — atrmed.com",
+   "t": "t",
+   "c": [
+    "sup",
+    "api",
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://atrmed.com/",
+   "src": "https://atrmed.com/",
+   "p": [
+    "ان‌استیل سیستئین (NAC)|N-Acetylcysteine, NAC",
+    "ال‌متیونین|L-Methionine",
+    "کورکومین|Curcumin",
+    "تتراسایکلین|Tetracycline",
+    "ال‌تریپتوفان|L-Tryptophan",
+    "گلایسین|Glycine",
+    "دی‌متیل سولفوکسید (DMSO)|Dimethyl sulfoxide, DMSO",
+    "پانکراتین|Pancreatin",
+    "پپسین|Pepsin",
+    "پتاسیم دی‌هیدروژن فسفات|Potassium dihydrogen phosphate, Monopotassium phosphate"
+   ],
+   "note": "مواد گرید آزمایشگاهی و کشت سلول.",
+   "via": 1
+  },
+  {
+   "n": "آرتین شیمی",
+   "e": "Artin Shimi — artin-shimi.ir",
+   "t": "t",
+   "c": [
+    "vit",
+    "cos",
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://artin-shimi.ir/",
+   "src": "https://artin-shimi.ir/",
+   "p": [
+    "نیاسینامید / نیکوتین‌آمید (ویتامین B3)|Niacinamide, Nicotinamide",
+    "دی‌پنتنول / دکسپانتنول (ویتامین B5)|D-Panthenol, Dexpanthenol",
+    "فنوکسی اتانول|Phenoxyethanol",
+    "شی باتر|Shea butter",
+    "آزلائیک اسید|Azelaic acid",
+    "عصاره چای سبز|Green tea extract",
+    "ایزوتیازولین (نگهدارنده)|Isothiazolinone, Methylchloroisothiazolinone, Kathon",
+    "آلوئه ورا (پودر، ژل، عصاره)|Aloe vera",
+    "فنوکسی اتانول + اتیل هگزیل گلیسیرین|Phenoxyethanol Ethylhexylglycerin"
+   ],
+   "note": "فروش خرد در بسته‌های کوچک (گرمی).",
+   "via": 1
+  },
+  {
+   "n": "سورن شیمی",
+   "e": "Soren Chem — sorenchem.com",
+   "t": "t",
+   "c": [
+    "exc",
+    "cos",
+    "min"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://sorenchem.com/",
+   "src": "https://sorenchem.com/",
+   "p": [
+    "لاکتوز|Lactose",
+    "پلی اتیلن گلیکول (PEG 400 / 4000 / 6000)|Polyethylene glycol, PEG, Macrogol",
+    "بنزالکونیوم کلراید|Benzalkonium chloride",
+    "لورامید (کوکونات دی‌اتانول‌آمید)|Cocamide DEA, Coconut diethanolamide",
+    "زینک استئارات|Zinc stearate",
+    "کلسیم استئارات|Calcium stearate",
+    "اکالیپتول (سینئول) / اسانس اکالیپتوس|Eucalyptol, Cineole, Eucalyptus oil",
+    "اسانس‌های گیاهی|Essential oils",
+    "کوکامیدوپروپیل بتائین|Cocamidopropyl betaine, CAPB"
+   ],
+   "via": 1
+  },
+  {
+   "n": "نیکو شیمی",
+   "e": "Niko Shimi — nikoshimi.com",
+   "t": "t",
+   "c": [
+    "exc",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://nikoshimi.com/",
+   "src": "https://nikoshimi.com/",
+   "p": [
+    "پروپیلن گلیکول|Propylene glycol",
+    "گلیسیرین|Glycerin, Glycerol",
+    "تگزاپون (سدیم لوریل اتر سولفات SLES)|Texapon, Sodium laureth sulfate, SLES",
+    "وازلین|Vaseline, Petrolatum, White soft paraffin",
+    "پارافین مایع|Liquid paraffin, Mineral oil",
+    "روغن کرچک|Castor oil",
+    "اکالیپتول (سینئول) / اسانس اکالیپتوس|Eucalyptol, Cineole, Eucalyptus oil",
+    "اسانس‌های گیاهی|Essential oils",
+    "وانیلین / وانیل|Vanillin, Vanilla"
+   ],
+   "via": 1
+  },
+  {
+   "n": "shimibanavash.com",
+   "e": "Shimi Banavash",
+   "t": "t",
+   "c": [
+    "sup",
+    "exc",
+    "api",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://shimibanavash.com/",
+   "src": "https://shimibanavash.com/",
+   "p": [
+    "کوآنزیم Q10|Coenzyme Q10, Ubiquinone",
+    "ان‌استیل سیستئین (NAC)|N-Acetylcysteine, NAC",
+    "آلژینات سدیم|Sodium alginate",
+    "سفیکسیم|Cefixime",
+    "کولین کلراید|Choline chloride",
+    "تیمول|Thymol",
+    "دی‌متیل سولفوکسید (DMSO)|Dimethyl sulfoxide, DMSO",
+    "میریستیک اسید|Myristic acid"
+   ],
+   "note": "مواد شیمیایی آزمایشگاهی (سیگما).",
+   "via": 1
+  },
+  {
+   "n": "سلامت محور پایتخت",
+   "e": "Salamat Mehvar — salamatmehvarco.com",
+   "t": "t",
+   "c": [
+    "sup",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://salamatmehvarco.com/",
+   "src": "https://salamatmehvarco.com/",
+   "p": [
+    "عصاره رازیانه|Fennel extract",
+    "عصاره بادرنجبویه|Lemon balm extract, Melissa",
+    "عصاره مورد|Myrtle extract",
+    "عصاره استویا|Stevia extract",
+    "عصاره آلوئه ورا|Aloe vera extract",
+    "عصاره اسپند|Peganum harmala extract",
+    "اسانس‌های گیاهی|Essential oils",
+    "عصاره‌های گیاهی|Herbal extracts"
+   ],
+   "note": "عصاره مایع و پودری فله و اسانس گیاهی. تلفن از منبع به دست نیامد.",
+   "via": 1
+  },
+  {
+   "n": "پیشرو صنعت راتین",
+   "e": "PSR Chem — psrchem.com",
+   "t": "t",
+   "c": [
+    "exc",
+    "cos",
+    "min"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "web": "https://psrchem.com/",
+   "src": "https://psrchem.com/",
+   "p": [
+    "کراس‌کارملوز سدیم|Croscarmellose sodium",
+    "ستو استئاریل الکل|Cetostearyl alcohol",
+    "استئاریل الکل|Stearyl alcohol",
+    "ایزوپروپیل میریستات (IPM)|Isopropyl myristate",
+    "زینک اکساید (اکسید روی)|Zinc oxide",
+    "بیزواکس (موم زنبور)|Beeswax",
+    "سدیم مونوفلوروفسفات (SMFP)|Sodium monofluorophosphate"
+   ],
+   "via": 1
+  },
+  {
+   "n": "اسید بازار",
+   "e": "Acid Bazar — acidbazar.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc",
+    "cos",
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://acidbazar.com/",
+   "src": "https://acidbazar.com/",
+   "p": [
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "زینک اکساید (اکسید روی)|Zinc oxide",
+    "ژلاتین|Gelatin",
+    "وازلین|Vaseline, Petrolatum, White soft paraffin",
+    "کاراگینان|Carrageenan",
+    "ایزوله پروتئین سویا|Soy protein isolate"
+   ],
+   "via": 1
+  },
+  {
+   "n": "دکتر کمیکال",
+   "e": "Dr Chemical — drchemical.ir",
+   "t": "t",
+   "c": [
+    "exc",
+    "cos",
+    "min"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://drchemical.ir/",
+   "src": "https://drchemical.ir/",
+   "p": [
+    "پلی‌سوربات ۸۰ / ۲۰ (توئین)|Polysorbate 80 20, Tween",
+    "منتول کریستال|Menthol crystals",
+    "ایزوپروپیل الکل|Isopropyl alcohol, IPA, 2-Propanol",
+    "کربوکسی متیل سلولز (CMC)|Carboxymethyl cellulose, CMC",
+    "بنزالکونیوم کلراید|Benzalkonium chloride",
+    "کلسیم استئارات|Calcium stearate"
+   ],
+   "via": 1
+  },
+  {
+   "n": "اکسیر سبز",
+   "e": "Exir Sabz — exirsabz.ir",
+   "t": "t",
+   "c": [
+    "sup",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://exirsabz.ir/",
+   "src": "https://exirsabz.ir/",
+   "p": [
+    "سیلیمارین (عصاره خار مریم)|Silymarin, Milk thistle extract",
+    "عصاره‌های گیاهی|Herbal extracts",
+    "اسانس‌های گیاهی|Essential oils",
+    "عصاره چای سبز|Green tea extract"
+   ],
+   "via": 1
+  },
+  {
+   "n": "بازرگانی تراست",
+   "e": "Trust Commerce — trustcommerce.ir",
+   "t": "t",
+   "c": [
+    "sup",
+    "exc",
+    "min"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://trustcommerce.ir/",
+   "src": "https://trustcommerce.ir/",
+   "p": [
+    "اینولین|Inulin",
+    "کربوکسی متیل سلولز (CMC)|Carboxymethyl cellulose, CMC",
+    "عصاره‌های گیاهی|Herbal extracts",
+    "گوار گام|Guar gum",
+    "ناتامایسین|Natamycin",
+    "کلسیم پروپیونات|Calcium propionate"
+   ],
+   "note": "واردکننده مواد اولیه غذایی و شیمیایی.",
+   "via": 1
+  },
+  {
+   "n": "پاسارگاد شیمی پاد",
+   "e": "Pasargad Shimi Pad",
+   "t": "t",
+   "c": [
+    "vit",
+    "exc",
+    "api"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://chemibazar.com/",
+   "src": "https://chemibazar.com/",
+   "p": [
+    "پیریدوکسین هیدروکلراید (ویتامین B6)|Pyridoxine hydrochloride",
+    "ویتامین A پالمیتات / استات|Vitamin A palmitate, Retinyl acetate",
+    "دی‌پنتنول / دکسپانتنول (ویتامین B5)|D-Panthenol, Dexpanthenol",
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC",
+    "پوویدون آیوداین (بتادین)|Povidone iodine, PVP-I, Betadine"
+   ],
+   "note": "از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
+   "via": 1
+  },
+  {
+   "n": "N Chemical Group",
+   "e": "nchemicalgroup.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "min",
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://nchemicalgroup.com/",
+   "src": "https://nchemicalgroup.com/",
+   "p": [
+    "فولیک اسید (ویتامین B9)|Folic acid",
+    "اکسید منیزیم|Magnesium oxide",
+    "پلی‌وینیل الکل (PVA)|Polyvinyl alcohol, PVA"
+   ],
+   "via": 1
+  },
+  {
+   "n": "مبنا شیمی",
+   "e": "Mabna Shimi — mabna-shimi.com",
+   "t": "t",
+   "c": [
+    "exc",
+    "sup",
+    "min"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://mabna-shimi.com/",
+   "src": "https://mabna-shimi.com/",
+   "p": [
+    "کراس‌کارملوز سدیم|Croscarmellose sodium",
+    "لسیتین|Lecithin",
+    "منیزیم سولفات|Magnesium sulfate"
+   ],
+   "via": 1
+  },
+  {
+   "n": "شیمیگران",
+   "e": "Shimigaran — shimigaran.com",
+   "t": "t",
+   "c": [
+    "vit"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://shimigaran.com/",
+   "src": "https://shimigaran.com/",
+   "p": [
+    "پیریدوکسین هیدروکلراید (ویتامین B6)|Pyridoxine hydrochloride",
+    "ویتامین D3 (کوله‌کلسیفرول)|Vitamin D3, Cholecalciferol"
+   ],
+   "via": 1
+  },
+  {
+   "n": "پارس بالک",
+   "e": "Pars Bulk — parsbulk.com",
+   "t": "t",
+   "c": [
+    "vit",
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://parsbulk.com/",
+   "src": "https://parsbulk.com/",
+   "p": [
+    "ویتامین A پالمیتات / استات|Vitamin A palmitate, Retinyl acetate",
+    "ایزوله پروتئین سویا|Soy protein isolate"
+   ],
+   "via": 1
+  },
+  {
+   "n": "شیمی تاپ",
+   "e": "Shimi Top — shimitop.com",
+   "t": "t",
+   "c": [
+    "min",
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://shimitop.com/",
+   "src": "https://shimitop.com/",
+   "p": [
+    "فروس سولفات (سولفات آهن)|Ferrous sulfate",
+    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC"
+   ],
+   "via": 1
+  },
+  {
+   "n": "شیمی دام و صنعت ایرانیان (شیدامکو)",
+   "e": "Shidamco",
+   "t": "m",
+   "c": [
+    "min"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://chemibazar.com/",
+   "src": "https://chemibazar.com/",
+   "p": [
+    "زینک سولفات (سولفات روی)|Zinc sulfate"
+   ],
+   "note": "گروه تولیدی؛ از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
+   "via": 1
+  },
+  {
+   "n": "شهرکم",
+   "e": "Shahr Chem — shahrchem.com",
+   "t": "t",
+   "c": [
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://shahrchem.com/",
+   "src": "https://shahrchem.com/",
+   "p": [
+    "میکروکریستالین سلولز (آویسل ۱۰۱ / ۱۰۲)|Microcrystalline cellulose, Avicel PH101 PH102, MCC"
+   ],
+   "note": "آویسل برندهای Accent و Sigachi.",
+   "via": 1
+  },
+  {
+   "n": "فاخر تجارت سما",
+   "e": "Fakher Tejarat Sama",
+   "t": "t",
+   "c": [
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://chemibazar.com/",
+   "src": "https://chemibazar.com/",
+   "p": [
+    "کراس‌کارملوز سدیم|Croscarmellose sodium"
+   ],
+   "note": "از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
+   "via": 1
+  },
+  {
+   "n": "آروین کالا کیمیا البرز",
+   "e": "Arvin Kala Kimia Alborz",
+   "t": "t",
+   "c": [
+    "cos"
+   ],
+   "prov": "البرز",
+   "city": "البرز",
+   "tel": [],
+   "web": "https://chemibazar.com/",
+   "src": "https://chemibazar.com/",
+   "p": [
+    "سیلیکون دی‌اکساید / آئروزیل|Colloidal silicon dioxide, Aerosil"
+   ],
+   "note": "از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
+   "via": 1
+  },
+  {
+   "n": "شیمی دارویی نوترون",
+   "e": "Notron Pharma Chem",
+   "t": "t",
+   "c": [
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://chemibazar.com/",
+   "src": "https://chemibazar.com/",
+   "p": [
+    "پلی اتیلن گلیکول (PEG 400 / 4000 / 6000)|Polyethylene glycol, PEG, Macrogol"
+   ],
+   "note": "از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
+   "via": 1
+  },
+  {
+   "n": "اکسین شیمی",
+   "e": "Oxin Shimi — oxinshimi.com",
+   "t": "t",
+   "c": [
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://oxinshimi.com/",
+   "src": "https://oxinshimi.com/",
+   "p": [
+    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC"
+   ],
+   "via": 1
+  },
+  {
+   "n": "شیمی برتر",
+   "e": "Shimi Bartar — shimibartar.com",
+   "t": "t",
+   "c": [
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://shimibartar.com/",
+   "src": "https://shimibartar.com/",
+   "p": [
+    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC"
+   ],
+   "via": 1
+  },
+  {
+   "n": "آوا تجهیز آزما",
+   "e": "Ava Tajhiz Azma",
+   "t": "t",
+   "c": [
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://chemibazar.com/",
+   "src": "https://chemibazar.com/",
+   "p": [
+    "ان‌استیل سیستئین (NAC)|N-Acetylcysteine, NAC"
+   ],
+   "note": "از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
+   "via": 1
+  },
+  {
+   "n": "اکسیر طعم آریا",
+   "e": "Exir Taam Arya — exirtam.com",
+   "t": "t",
+   "c": [
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://exirtam.com/",
+   "src": "https://exirtam.com/en/",
+   "p": [
+    "اسانس، طعم‌دهنده و رنگ طبیعی|Flavors, Natural colors, Oleoresins"
+   ],
+   "note": "شرکت بازرگانی گروه صنعتی دمیرچی؛ واردات مواد اولیه غذایی."
+  },
+  {
+   "n": "دقیق تجهیز آریو",
+   "e": "Daghigh Tajhiz Ario",
+   "t": "t",
+   "c": [
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://chemibazar.com/",
+   "src": "https://chemibazar.com/",
+   "p": [
+    "کولین کلراید|Choline chloride"
+   ],
+   "note": "از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
+   "via": 1
+  },
+  {
+   "n": "پارس اکسین نامیار",
+   "e": "Pars Oxin Namyar",
+   "t": "t",
+   "c": [
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://chemibazar.com/",
+   "src": "https://chemibazar.com/",
+   "p": [
+    "سدیم مونوفلوروفسفات (SMFP)|Sodium monofluorophosphate"
+   ],
+   "note": "از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
+   "via": 1
+  },
+  {
+   "n": "آریو شیمی",
+   "e": "Ario Shimi",
+   "t": "t",
+   "c": [
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://chemibazar.com/",
+   "src": "https://chemibazar.com/",
+   "p": [
+    "کاپریلیک/کاپریک تری‌گلیسرید|Caprylic capric triglyceride, MCT"
+   ],
+   "note": "از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
+   "via": 1
+  },
+  {
+   "n": "بازرگانی جعفری",
+   "e": "Jafari Trading",
+   "t": "t",
+   "c": [
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://chemibazar.com/",
+   "src": "https://chemibazar.com/",
+   "p": [
+    "سدیم آسکوربیل فسفات|Sodium ascorbyl phosphate"
+   ],
+   "note": "از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
+   "via": 1
+  },
+  {
+   "n": "پارسین کیمیا ایرانیان",
+   "e": "Parsin Kimia Iranian — parsinchem.ir",
+   "t": "t",
+   "c": [
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://parsinchem.ir/",
+   "src": "https://parsinchem.ir/",
+   "p": [
+    "اکتوکرایلن|Octocrylene, Uvinul N 539 T"
+   ],
+   "note": "مواد اولیه داروسازی و آرایشی (از جمله فیلترهای UV سری Uvinul).",
+   "via": 1
+  },
+  {
+   "n": "طبیعت کالا",
+   "e": "Kala Tabiat — kalatabiat.com",
+   "t": "t",
+   "c": [
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://kalatabiat.com/",
+   "src": "https://kalatabiat.com/",
+   "p": [
+    "عصاره‌های گیاهی|Herbal extracts"
+   ],
+   "note": "فروشگاه محصولات و عصاره‌های گیاهی.",
+   "via": 1
+  },
+  {
+   "n": "بهچین شیمی فارمد",
+   "e": "Behchin Chemi — behchinchemi.ir",
+   "t": "t",
+   "c": [
+    "api",
+    "exc",
+    "cos",
+    "sup",
+    "vit"
+   ],
+   "prov": "البرز",
+   "city": "کرج (البرز)",
+   "tel": [
+    "026-32281890",
+    "0937-5202319"
+   ],
+   "web": "https://behchinchemi.ir/",
+   "src": "https://behchinchemi.ir/",
+   "note": "شماره‌ها در سایت با ترتیب ارقام به‌هم‌ریخته نمایش داده می‌شد؛ پیش از تماس از روی سایت تطبیق دهید.",
+   "p": [
+    "آملودیپین بزیلات|Amlodipine besylate",
+    "آموکسی‌سیلین تری‌هیدرات|Amoxicillin trihydrate",
+    "آزیترومایسین|Azithromycin",
+    "بوپروپیون|Bupropion HBr/HCl",
+    "کاپتوپریل|Captopril",
+    "کارودیلول|Carvedilol",
+    "سیتی‌کولین سدیم|Citicoline sodium",
+    "کلیندامایسین هیدروکلراید|Clindamycin hydrochloride",
+    "انالاپریل مالئات|Enalapril maleate",
+    "اپلرنون|Eplerenone",
+    "فلوکستین|Fluoxetine HCl",
+    "گلی‌کلازید|Gliclazide",
+    "هپارین سدیم|Heparin sodium",
+    "کتوتیفن فومارات|Ketotifen fumarate",
+    "مروپنم|Meropenem",
+    "متوپرولول سوکسینات|Metoprolol succinate",
+    "مترونیدازول|Metronidazole",
+    "افلوکساسین|Ofloxacin",
+    "پاراستامول (استامینوفن)|Paracetamol",
+    "پیراستام|Piracetam",
+    "ریواروکسابان|Rivaroxaban",
+    "ریزاتریپتان بنزوات|Rizatriptan benzoate",
+    "سیتاگلیپتین|Sitagliptin",
+    "تنوفوویر دیسوپروکسیل فومارات|Tenofovir disoproxil fumarate",
+    "کراس‌پوویدون|Crospovidone",
+    "دکستروز|Dextrose",
+    "HPMC (E5، E6، E15، E50، E4M، K4M، K15M، K100M)|Hypromellose HPMC",
+    "کوپوویدون VA64|Copovidone, Kollidon VA64",
+    "L-HPC|Low-substituted hydroxypropyl cellulose",
+    "مانیتول|Mannitol",
+    "پوویدون آیوداین|Povidone iodine",
+    "پوویدون PVP (K12، K17، K25، K30، K90)|Povidone PVP",
+    "لاکتوز|Lactose",
+    "زایلیتول|Xylitol",
+    "منتول کریستال|Menthol crystals",
+    "اسید سیتریک آبدار و خشک|Citric acid",
+    "آلانتوئین|Allantoin",
+    "آلومینیوم کلروهیدرات|Aluminium chlorohydrate",
+    "لانولین انهیدروس|Anhydrous lanolin",
+    "موم زنبور|Beeswax",
+    "بهنتریمونیوم کلراید|Behentrimonium chloride",
+    "بنزوفنون-۳ و ۴|Benzophenone-3, Benzophenone-4",
+    "آووبنزون|Butyl methoxydibenzoylmethane, Avobenzone",
+    "C12-15 آلکیل بنزوات|C12-15 Alkyl benzoate",
+    "کربومر|Carbomer",
+    "ستریمونیوم کلراید|Cetrimonium chloride",
+    "کلرهگزیدین دی‌گلوکونات|Chlorhexidine digluconate",
+    "کوکامید DEA / MEA|Cocamide DEA, Cocamide MEA",
+    "کوکامیدوپروپیل بتائین|Cocamidopropyl betaine",
+    "سیکلوپنتاسیلوکسان|Cyclopentasiloxane",
+    "دایمتیکون|Dimethicone",
+    "DMDM هیدانتوئین|DMDM Hydantoin",
+    "اتیل‌هگزیل متوکسی سینامات|Ethylhexyl methoxycinnamate",
+    "اتیل‌هگزیل تریازون|Ethylhexyl triazone",
+    "گلیکول دی‌استئارات|Glycol distearate",
+    "گوار هیدروکسی پروپیل تریمونیوم کلراید|Guar hydroxypropyltrimonium chloride",
+    "ایزوپروپیل میریستات|Isopropyl myristate",
+    "متیل پارابن|Methylparaben",
+    "پروپیل پارابن|Propylparaben",
+    "اکتوکرایلن|Octocrylene",
+    "پنتنول|Panthenol",
+    "PEG-40 هیدروژنه کستر اویل|PEG-40 Hydrogenated castor oil",
+    "فنوکسی اتانول|Phenoxyethanol",
+    "پلی‌کواترنیوم ۶ / ۷ / ۱۰|Polyquaternium-6, -7, -10",
+    "پلی‌سوربات ۲۰ / ۶۰ / ۸۵|Polysorbate 20, 60, 85",
+    "سدیم هیالورونات|Sodium hyaluronate",
+    "سدیم لوریل سولفات|Sodium lauryl sulfate",
+    "تریکلوزان|Triclosan",
+    "ال‌کارنیتین (بیس، تارتارات، فومارات)|L-Carnitine base, tartrate, fumarate",
+    "آمینواسیدها (آرژنین، لایزین، گلوتامین، لوسین، سیستئین و …)|Amino acids: L-Arginine, L-Lysine, L-Glutamine, L-Leucine, L-Cysteine",
+    "کراتین مونوهیدرات|Creatine monohydrate",
+    "گلوکزامین|Glucosamine HCl / sulfate",
+    "کندرویتین سولفات سدیم|Chondroitin sulfate sodium",
+    "تائورین|Taurine",
+    "اینوزیتول|Inositol",
+    "رزوراترول|Resveratrol",
+    "کیتوزان|Chitosan",
+    "ال‌کارنوزین|L-Carnosine",
+    "آسه‌سولفام پتاسیم|Acesulfame-K",
+    "آسپارتام|Aspartame",
+    "سوکرالوز|Sucralose",
+    "استویا|Stevia extract",
+    "زانتان گام|Xanthan gum",
+    "بیوتین (ویتامین B7)|Biotin",
+    "کلسیم دی‌پانتوتنات (ویتامین B5)|Calcium D-pantothenate",
+    "فولیک اسید (ویتامین B9)|Folic acid",
+    "نیکوتین‌آمید (ویتامین B3)|Nicotinamide",
+    "پیریدوکسال-۵-فسفات|Pyridoxal-5-phosphate",
+    "ویتامین A|Vitamin A",
+    "تیامین (ویتامین B1)|Vitamin B1, Thiamine",
+    "ریبوفلاوین (ویتامین B2)|Vitamin B2, Riboflavin",
+    "پیریدوکسین (ویتامین B6)|Vitamin B6, Pyridoxine",
+    "اسید اسکوربیک (ویتامین C)|Vitamin C, Ascorbic acid",
+    "ویتامین D3|Vitamin D3",
+    "ویتامین E|Vitamin E"
+   ]
+  },
+  {
+   "n": "بازرگانی ریحان",
+   "e": "Reyhan Trading",
+   "t": "t",
+   "c": [
+    "vit",
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران، میدان انقلاب",
+   "tel": [
+    "021-66938165"
+   ],
+   "note": "آگهی قدیمی (۱۴۰۱). خودش واردکننده نیست و از واردکنندگان اصلی تأمین می‌کند.",
+   "src": "https://www.istgah.com/fireview/kid_365/2043814.html",
+   "p": [
+    "اسید اسکوربیک (ویتامین C)|Ascorbic acid",
+    "تیامین هیدروکلراید (ویتامین B1)|Thiamine hydrochloride",
+    "ریبوفلاوین (ویتامین B2)|Riboflavin",
+    "آویسل ۱۰۱ و ۱۰۲ (MCC)|Avicel PH101 / PH102, Microcrystalline cellulose",
+    "آئروزیل|Aerosil, Colloidal silicon dioxide",
+    "HPMC 6 دارویی|HPMC E6, Hypromellose",
+    "ادتا ۲ و ۴ سدیم دارویی|EDTA disodium / tetrasodium"
+   ]
+  },
+  {
+   "n": "جهان شیمی (jahanshimi.com)",
+   "e": "Jahan Shimi",
+   "t": "t",
+   "c": [
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88848547"
+   ],
+   "web": "http://www.jahanshimi.com",
+   "note": "واردکننده مواد شیمیایی صنایع غذایی.",
+   "src": "https://www.istgah.com/fireview/kid_365/2043814.html",
+   "p": [
+    "افزودنی‌های صنایع غذایی|Food additives"
+   ]
+  },
+  {
+   "n": "آریو تکین سپنتا",
+   "e": "Ario Tekin Sepanta",
+   "t": "t",
+   "c": [
+    "vit",
+    "exc",
+    "cos"
+   ],
+   "prov": "تهران",
+   "city": "—",
+   "tel": [],
+   "note": "تأمین از برندهای Roquette، Meggle، DSM، BASF، Croda و Evonik.",
+   "src": "https://ixpo.ir/62709/",
+   "p": [
+    "ویتامین‌های گروه B|B vitamins",
+    "ویتامین A|Vitamin A",
+    "ویتامین C|Vitamin C",
+    "ویتامین D3|Vitamin D3",
+    "ویتامین E|Vitamin E",
+    "ویتامین K|Vitamin K",
+    "اتانول|Ethanol",
+    "ایزوپروپیل الکل|Isopropyl alcohol",
+    "پروپیلن گلیکول|Propylene glycol",
+    "اکسیپیان‌های Roquette و Meggle (لاکتوز، نشاسته، پلی‌ال)|Roquette / Meggle excipients, Lactose"
+   ]
+  },
+  {
+   "n": "آوینا تجارت اطلس",
+   "e": "Avina Tejarat Atlas",
+   "t": "t",
+   "c": [
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://avinatejaratatlas.com/",
+   "note": "واردکننده مواد اولیه شیمیایی و آرایشی‌بهداشتی از ۱۳۹۶.",
+   "src": "https://avinatejaratatlas.com/category/chemical-materials/cosmetics",
+   "p": [
+    "مواد اولیه آرایشی و بهداشتی|Cosmetic raw materials"
+   ]
+  },
+  {
+   "n": "خوش شیمی تجارت (خوش گروپ)",
+   "e": "Khosh Shimi Tejarat",
+   "t": "t",
+   "c": [
+    "api",
+    "vit"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://khoshgroup.ir/",
+   "note": "تولید و واردات مواد اولیه دارویی، مکمل و غذایی از ۱۳۹۳.",
+   "src": "https://www.namayeshgahha.ir/lists-of-10/the-best-manufacturers-of-drug-raw-materials/",
+   "p": [
+    "مواد اولیه دارویی و مکمل|Pharma & supplement raw materials"
+   ]
+  },
+  {
+   "n": "پارسین اکسیر",
+   "e": "Parsin Exir",
+   "t": "t",
+   "c": [
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "web": "https://www.parsinexir.com/",
+   "mail": "info@parsinexir.com",
+   "note": "واردات و فروش مواد شیمیایی صنایع غذایی و دارویی.",
+   "src": "https://parscenter.com/Suppliers/Nutritional-Supplements_19400",
+   "p": [
+    "مواد اولیه غذایی و دارویی|Food & pharma chemicals"
+   ]
+  },
+  {
+   "n": "بهان‌سار",
+   "e": "Behansar — behansar.com",
+   "t": "m",
+   "c": [
+    "min",
+    "exc",
+    "api",
+    "vit"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-77520437",
+    "021-77635748"
+   ],
+   "addr": "تهران، خیابان بهار جنوبی، کوچه حمید صدیق، پلاک ۳۱",
+   "mail": "info@behansar.com",
+   "web": "https://www.behansar.com/",
+   "note": "تولیدکننده داخلی نمک‌های معدنی دارویی، مواد نیمه‌ساخته (گرید DC، پلت، پرمیکس) و چند ماده مؤثره؛ عضو سندیکا.",
+   "src": "https://www.behansar.com/products/mineral-salts/all-mineral-salts",
+   "p": [
+    "پتاسیم کلراید|Potassium Chloride",
+    "آمونیوم کلراید|Ammonium Chloride",
+    "منیزیم سیترات آنهیدروس|Magnesium Citrate Anhydrous",
+    "کلسیم سیلیکات|Calcium Silicate",
+    "آمونیوم فسفات دی‌بازیک|Ammonium Phosphate Dibasic",
+    "زینک استات دی‌هیدرات|Zinc Acetate Dihydrate",
+    "سدیم فسفات تری‌بازیک|Sodium phosphate tribasic",
+    "کلسیم استات|Calcium acetate",
+    "کلسیم سیترات تتراهیدرات|Calcium Citrate Tetrahydrate",
+    "منگنز سولفات مونوهیدرات|Manganese Sulfate Monohydrate",
+    "پتاسیم فسفات دی‌بازیک آنهیدروس|Dibasic Potassium Phosphate Anhydrous",
+    "کالامین|Calamine",
+    "منیزیم هیدروکساید (پودر و ژل)|Magnesium Hydroxide",
+    "سدیم فسفات مونوبازیک (آنهیدروس، مونوهیدرات، دی‌هیدرات)|Monobasic Sodium Phosphate",
+    "آمونیوم استات|Ammonium acetate",
+    "کلسیم گلوکونات (آنهیدروس و مونوهیدرات)|Calcium Gluconate",
+    "آمونیوم سولفات|Ammonium sulfate",
+    "مس بیس‌گلایسینات|Copper Bisglycinate",
+    "سدیم استئاریل فومارات|Sodium Stearyl Fumarate",
+    "فروس گلایسین سولفات|Ferrous Glycine Sulfate",
+    "فروس فومارات|Ferrous Fumarate",
+    "فروس گلوکونات|Ferrous Gluconate",
+    "فروس بیس‌گلایسینات (آیرون بیس‌گلایسینات)|Ferrous Bisglycinate, Iron Bisglycinate",
+    "فروس لاکتات دی‌هیدرات|Ferrous Lactate Dihydrate",
+    "فریک پیروفسفات|Ferric Pyrophosphate",
+    "فریک آمونیوم سیترات|Ferric Ammonium Citrate",
+    "سیلیکون دی‌اکساید|Silicon Dioxide",
+    "کلسیم کربنات|Calcium Carbonate",
+    "منیزیم سیترات (نوناهیدرات)|Magnesium Citrate Nonahydrate",
+    "منیزیم کربنات سبک|Magnesium Carbonate Light",
+    "کلسیم کلراید دی‌هیدرات|Calcium Chloride dihydrate",
+    "پتاسیم یدید|Potassium Iodide",
+    "کلسیم دوبسیلات|Calcium Dobesilate",
+    "منگنز کلراید تتراهیدرات|Manganese Chloride tetrahydrate",
+    "پتاسیم استات|Potassium Acetate",
+    "بیسموت پتاسیم سیترات|Bismuth Potassium Citrate",
+    "بیسموت ساب‌نیترات|Bismuth Subnitrate",
+    "مس گلوکونات|Copper Gluconate",
+    "مس سولفات ۵ آبه|Copper Sulfate Pentahydrate",
+    "مس سیترات|Copper Citrate",
+    "مس کلراید دی‌هیدرات|Copper Chloride Dihydrate",
+    "منیزیم گلوکونات|Magnesium Gluconate Dihydrate",
+    "پتاسیم فسفات مونوبازیک آنهیدروس|Monobasic Potassium Phosphate Anhydrous",
+    "تری‌سدیم سیترات (آنهیدروس و دی‌هیدرات)|Trisodium Citrate",
+    "سدیم کربنات|Sodium Carbonate",
+    "کلسیم فسفات مونوبازیک مونوهیدرات|Monobasic Calcium Phosphate Monohydrate",
+    "سدیم بورات دکاهیدرات|Sodium Borate Decahydrate",
+    "سدیم استات تری‌هیدرات|Sodium acetate trihydrate",
+    "آلومینیوم ساب‌استات|Aluminium Subacetate",
+    "آلومینیوم هیدروکساید (پودر و ژل)|Aluminium hydroxide",
+    "زینک لاکتات|Zinc Lactate",
+    "سدیم دی‌استات|Sodium Diacetate",
+    "لیتیم کربنات|Lithium Carbonate",
+    "لیتیم اوروتات|Lithium Orotate",
+    "سدیم مولیبدات دی‌هیدرات|Sodium Molybdate dihydrate",
+    "سدیم سلنیت|Sodium Selenite",
+    "سدیم سلنات|Sodium Selenate",
+    "سلنیوم سولفاید|Selenium Sulfide",
+    "زینک گلوکونات|Zinc Gluconate",
+    "زینک سیترات|Zinc Citrate",
+    "زینک گلایسینات|Zinc Glycinate",
+    "زینک پیکولینات|Zinc Picolinate",
+    "زینک ال‌کارنوزین|Zinc L-Carnosine",
+    "زینک سولفات (هپتاهیدرات و مونوهیدرات)|Zinc Sulfate Heptahydrate, Monohydrate",
+    "زینک اکساید|Zinc Oxide",
+    "سدیم آسکوربات|Sodium Ascorbate",
+    "کلسیم آسکوربات|Calcium Ascorbate",
+    "کلسیم سیترات مالات|Calcium citrate malate",
+    "کلسیم مالات|Calcium Malate",
+    "کلسیم بیس‌گلایسینات|Calcium Bisglycinate",
+    "کلسیم لاکتات گلوکونات|Calcium Lactate Gluconate",
+    "کلسیم لاکتات انهیدروس|Calcium Lactate Anhydrous",
+    "سدیم گلوکونات|Sodium Gluconate",
+    "منیزیم مالات|Magnesium malate",
+    "منگنز گلوکونات|Manganese Gluconate",
+    "منگنز سیترات|Manganese Citrate",
+    "منگنز گلایسینات|Manganese Glycinate",
+    "منیزیم بیس‌گلایسینات (منیزیم گلایسینات)|Magnesium Bisglycinate, Magnesium Glycinate",
+    "منیزیم اروتات|Magnesium Orotate",
+    "منیزیم ال‌ترئونات|Magnesium L-Threonate",
+    "منیزیم تائورات|Magnesium Taurate",
+    "منیزیم سیلیکات|Magnesium Silicate",
+    "منیزیم لاکتات دی‌هیدرات|Magnesium Lactate Dihydrate",
+    "سدیم بی‌کربنات|Sodium Bicarbonate",
+    "پتاسیم نیترات|Potassium Nitrate",
+    "پتاسیم سولفات|Potassium Sulfate",
+    "سدیم فسفات دی‌بازیک (آنهیدروس، دی‌هیدرات، هپتاهیدرات، دودکاهیدرات)|Dibasic Sodium Phosphate",
+    "سدیم بنزوات|Sodium Benzoate",
+    "بوریک اسید|Boric Acid",
+    "منیزیم کلراید هگزاهیدرات|Magnesium Chloride Hexahydrate",
+    "کروم کلراید هگزاهیدرات|Chromium Chloride, Chromic Chloride Hexahydrate",
+    "منیزیم فسفات دی‌بازیک تری‌هیدرات|Magnesium phosphate dibasic trihydrate",
+    "کلسیم فسفات دی‌بازیک (آنهیدروس و دی‌هیدرات)|Dibasic Calcium Phosphate, Dicalcium phosphate",
+    "کلسیم فسفات تری‌بازیک (تری کلسیم فسفات)|Tribasic Calcium Phosphate, Tricalcium phosphate",
+    "منیزیم سولفات (هپتاهیدرات و مونوهیدرات)|Magnesium sulfate",
+    "پتاسیم سیترات مونوهیدرات|Potassium citrate monohydrate",
+    "منیزیم اکساید|Magnesium Oxide",
+    "تالک|Talc",
+    "منیزیم استئارات|Magnesium stearate",
+    "سدیم لاکتات محلول ۵۰٪ و ۶۰٪|Sodium Lactate Solution",
+    "سدیم دکوزات|Docusate Sodium",
+    "سدیم استئاروئیل لاکتیلات|Sodium Stearoyl Lactylate",
+    "گرید DC: کلسیم کربنات، کلسیم فسفات دی‌بازیک، منیزیم اکساید، فروس بیس‌گلایسینات|Direct compression grades: Calcium Carbonate DC, Magnesium Oxide DC",
+    "پلت اورلیستات ۵۰٪|Orlistat pellets 50%",
+    "پلت دولوکستین ۱۷٪ و ۲۰٪|Duloxetine pellets",
+    "پلت اپرپیتانت ۴۰٪|Aprepitant pellets 40%",
+    "پلت فروس سولفات / فولیک اسید|Ferrous sulfate / Folic acid pellets",
+    "پرمیکس سدیم سلنیت ۱٪|Sodium Selenite 1% premix",
+    "کتوتیفن فومارات|Ketotifen Fumarate",
+    "فولیک اسید|Folic acid",
+    "اوره|Urea",
+    "سیتریک اسید (مونوهیدرات و انهیدروس)|Citric Acid",
+    "کدئین فسفات|Codeine Phosphate",
+    "اکسی‌کدون هیدروکلراید|Oxycodone Hydrochloride",
+    "بوپرنورفین هیدروکلراید|Buprenorphine hydrochloride",
+    "آدیپیک اسید|Adipic Acid",
+    "مالئیک اسید|Maleic Acid",
+    "فوماریک اسید|Fumaric Acid",
+    "سوکسینیک اسید|Succinic acid",
+    "متیل سالیسیلات|Methyl Salicylate",
+    "سایمتیکون ۱۰۰٪ و ۳۰٪|Simethicone",
+    "سولامر هیدروکلراید / کربنات|Sevelamer hydrochloride / carbonate",
+    "سیلور سولفادیازین|Silver Sulfadiazine",
+    "مفنامیک اسید|Mefenamic Acid",
+    "نیکوراندیل|Nicorandil",
+    "مزالامین|Mesalamine",
+    "ویتامین B3 (نیاسین‌آمید)|Vitamin B3, Niacinamide",
+    "تری‌اتیل سیترات|Triethyl Citrate",
+    "تری‌استین|Triacetin",
+    "میکروکریستالین سلولز|Microcrystalline Cellulose"
+   ]
+  },
+  {
+   "n": "شیمی دارویی داروپخش",
+   "e": "Daroupakhsh Pharmaceutical Chemical Co. (DPPC)",
+   "t": "m",
+   "c": [
+    "api",
+    "vit",
+    "min"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44981191",
+    "083-37106711 (کارخانه کرمانشاه)"
+   ],
+   "addr": "تهران، کیلومتر ۱۸ اتوبان تهران–کرج، خیابان داروپخش، خیابان طالقانی",
+   "site": "کرمانشاه (کارخانه)",
+   "web": "https://dppcco.com/",
+   "note": "تلفن‌ها از سایت شرکت.",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "آتنولول|Atenolol",
+    "آزیترومایسین دی‌هیدرات|Azithromycin dihydrate",
+    "پتاسیم کلاوولانات (خالص، با MCC، با سیلوئید، با آموکسی‌سیلین)|Potassium clavulanate",
+    "پروپرانولول|Propranolol",
+    "پیروکسیکام|Piroxicam",
+    "فلوکونازول|Fluconazole",
+    "فروس فومارات|Ferrous fumarate",
+    "لیدوکائین بیس|Lidocaine base",
+    "لیدوکائین هیدروکلراید|Lidocaine HCl",
+    "لوزارتان پتاسیم|Losartan potassium",
+    "دیلتیازم هیدروکلراید|Diltiazem HCl",
+    "دی‌والپروئکس سدیم|Divalproex sodium",
+    "سدیم والپروات|Sodium valproate",
+    "مبندازول|Mebendazole",
+    "لاموتریژین|Lamotrigine",
+    "ستیریزین هیدروکلراید|Cetirizine HCl",
+    "متوکاربامول|Methocarbamol",
+    "نالیدیکسیک اسید|Nalidixic acid",
+    "ناپروکسن|Naproxen",
+    "سیلدنافیل سیترات|Sildenafil citrate",
+    "سوماتریپتان سوکسینات|Sumatriptan succinate",
+    "گاباپنتین|Gabapentin",
+    "لوراتادین|Loratadine",
+    "مونته‌لوکاست سدیم|Montelukast sodium",
+    "دیکلوفناک سدیم|Diclofenac sodium",
+    "ویتامین B1 هیدروکلراید (تیامین)|Thiamine hydrochloride, Vitamin B1",
+    "نیکلوزاماید پیپرازین (دامی)|Niclosamide piperazine",
+    "لوامیزول هیدروکلراید (دامی)|Levamisole HCl",
+    "پلت دیکلوفناک سدیم|Diclofenac sodium pellets",
+    "پلت اورلیستات|Orlistat pellets",
+    "پلت تئوفیلین|Theophylline pellets",
+    "پلت تامسولوسین هیدروکلراید|Tamsulosin HCl pellets",
+    "گرید DC: آتنولول، آزیترومایسین، لوزارتان، متوکاربامول، ناپروکسن|DC grades"
+   ]
+  },
+  {
+   "n": "شیمی مهندسی شکوه پرواز پاژ",
+   "e": "Shokouh Parvaz — shokouhparvaz.com",
+   "t": "t",
+   "c": [
+    "exc",
+    "cos"
+   ],
+   "prov": "خراسان رضوی",
+   "city": "مشهد",
+   "tel": [
+    "051-91002326",
+    "0915-3743004"
+   ],
+   "addr": "مشهد، خیابان احمدآباد، بین قائم و پاستور، مجتمع اداری نور",
+   "web": "https://shokouhparvaz.com/",
+   "note": "تأمین مواد اولیه به‌همراه خدمات فرمولاسیون و راه‌اندازی خط تولید. شماره دوم واحد مواد اولیه است.",
+   "src": "https://shokouhparvaz.com/raw-material/pvp/",
+   "p": [
+    "پلی‌وینیل پیرولیدون PVP (K14، K30، K60)|Povidone, PVP",
+    "گلیسرول مونواستئارات (GMS)|Glyceryl monostearate",
+    "اوره گرید آرایشی|Urea cosmetic grade",
+    "رتینول (ویتامین A)|Retinol, Vitamin A",
+    "اترهای سلولز|Cellulose ethers",
+    "مواد اولیه شوینده و آرایشی|Detergent & cosmetic raw materials"
+   ]
+  },
+  {
+   "n": "سروش مانا فارمد",
+   "e": "Soroush Mana Pharmed",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44787838",
+    "021-44787848",
+    "021-44787858"
+   ],
+   "mail": "Info@smpharmed.com",
+   "note": "عضو وابسته سندیکا.",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "استامینوفن (پاراستامول)|Acetaminophen, Paracetamol",
+    "آریپیپرازول|Aripiprazole",
+    "آتورواستاتین کلسیم تری‌هیدرات|Atorvastatin calcium trihydrate",
+    "سلکوکسیب|Celecoxib",
+    "دفراسیروکس|Deferasirox",
+    "دکسترومتورفان هیدروبروماید|Dextromethorphan hydrobromide",
+    "دولوکستین هیدروکلراید|Duloxetine hydrochloride",
+    "فلووکسامین مالئات|Fluvoxamine maleate",
+    "گلی‌کلازید|Gliclazide",
+    "نالترکسون (بیس و هیدروکلراید)|Naltrexone base, hydrochloride",
+    "پنتوپرازول سدیم|Pantoprazole sodium",
+    "پره‌گابالین|Pregabalin",
+    "رزوواستاتین کلسیم|Rosuvastatin calcium",
+    "تترابنازین|Tetrabenazine",
+    "ترامادول هیدروکلراید|Tramadol hydrochloride",
+    "متیل وینیل کتون|Methyl vinyl ketone"
+   ]
+  },
+  {
+   "n": "ژلاتین کپسول ایران",
+   "e": "Iran Gelatin Capsule",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "شهریار (تهران)",
+   "tel": [
+    "021-65278401-5"
+   ],
+   "addr": "شهریار، شهرک اداری، خیابان دولت، کد پستی ۳۳۵۱۷۷۳۴۹۵",
+   "note": "عضو سندیکا؛ فهرست محصول در منبع نیامده و از نام شرکت برداشت شده است.",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "پوسته کپسول ژلاتینی سخت|Hard gelatin capsules, Empty capsules"
+   ]
+  },
+  {
+   "n": "کارخانه مهندس میرشمسی",
+   "e": "Mirshamsi Factory — mirshamsifactory.com",
+   "t": "m",
+   "c": [
+    "exc",
+    "cos"
+   ],
+   "prov": "مرکزی",
+   "city": "ساوه",
+   "tel": [
+    "086-42346220",
+    "086-42346221"
+   ],
+   "site": "ساوه، شهر صنعتی کاوه، خیابان ۲۲، پلاک ۵۲",
+   "mail": "info@mirshamsifactory.com",
+   "web": "https://www.mirshamsifactory.com/",
+   "note": "تولیدکننده داخلی؛ گلیسیرین در سایت با گرید صنعتی آمده، گرید دارویی را بپرسید.",
+   "src": "https://www.mirshamsifactory.com/industrial-glycerine/",
+   "p": [
+    "اسید استئاریک|Stearic acid",
+    "اسید اولئیک|Oleic acid",
+    "گلیسیرین صنعتی|Industrial glycerine, Glycerin"
+   ]
+  },
+  {
+   "n": "شیرین دارو",
+   "e": "Shirin Darou — shirindarou.com",
+   "t": "m",
+   "c": [
+    "sup",
+    "exc"
+   ],
+   "prov": "فارس",
+   "city": "شیراز",
+   "tel": [
+    "071-37442301-5",
+    "071-37441151"
+   ],
+   "addr": "شیراز، کیلومتر ۳ بلوار نصر شرقی",
+   "mail": "marketing@shirindarou.com",
+   "web": "https://shirindarou.com/",
+   "note": "تولیدکننده فرآورده‌های شیرین‌بیان؛ شماره دوم واحد فروش است.",
+   "src": "https://shirindarou.com/en/",
+   "p": [
+    "عصاره مایع شیرین‌بیان|Licorice liquid extract",
+    "عصاره جامد شیرین‌بیان|Solid licorice extract",
+    "عصاره پودری شیرین‌بیان|Licorice powder extract",
+    "پودر ریشه شیرین‌بیان|Licorice root powder",
+    "گرانول شیرین‌بیان|Licorice granules"
+   ]
+  },
+  {
+   "n": "زر فروکتوز",
+   "e": "Zar Fructose — zarfructose.com",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "البرز",
+   "city": "هشتگرد",
+   "tel": [
+    "021-45676000",
+    "021-87700400",
+    "026-43212000 (کارخانه هشتگرد)"
+   ],
+   "web": "https://zarfructose.com/",
+   "src": "http://zarfructose.com/FA/Dextrose",
+   "p": [
+    "دکستروز|Dextrose",
+    "شربت فروکتوز|Fructose syrup",
+    "شربت گلوکز|Glucose syrup"
+   ],
+   "note": "تولیدکننده داخلی از گروه زر. تلفن‌ها از سایت شرکت.",
+   "site": "هشتگرد (کارخانه)"
+  },
+  {
+   "n": "چرب شیمی",
+   "e": "Charb Chimie — charbchimie.com",
+   "t": "m",
+   "c": [
+    "exc",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://www.charbchimie.com/",
+   "src": "https://www.charbchimie.com/",
+   "p": [
+    "گلیسیرین|Glycerin, Glycerol"
+   ],
+   "via": 1,
+   "note": "شرکت فرآورده‌های صنعتی چرب شیمی."
+  },
+  {
+   "n": "پاکسان (فروش فله)",
+   "e": "Paxan — paxanco.com",
+   "t": "m",
+   "c": [
+    "exc",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://www.paxanco.com/",
+   "src": "https://www.paxanco.com/",
+   "p": [
+    "گلیسیرین فله|Bulk glycerin, Glycerol"
+   ],
+   "via": 1,
+   "note": "تولیدکننده شوینده؛ گلیسیرین فله عرضه می‌کند."
+  },
+  {
+   "n": "پدیده شیمی",
+   "e": "Padideh Shimi — padidehshimi.com",
+   "t": "m",
+   "c": [
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://padidehshimi.com/",
+   "src": "https://padidehshimi.com/betaine/",
+   "p": [
+    "کوکامیدوپروپیل بتائین (اکتیو ۳۰٪ و ۳۷٪)|Cocamidopropyl betaine, CAPB",
+    "پلی‌کواترنیوم ۷|Polyquaternium-7"
+   ],
+   "via": 1,
+   "note": "تولیدکننده مواد اولیه شیمیایی و سورفکتانت."
+  },
+  {
+   "n": "صنایع شیمی و پتروشیمی ایران (شوپا)",
+   "e": "Shopa Chemicals — shopachemicals.com",
+   "t": "m",
+   "c": [
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "http://shopachemicals.com/",
+   "src": "http://shopachemicals.com/project/ccapb-30/",
+   "p": [
+    "کوکامیدوپروپیل بتائین ۳۰٪|Cocamidopropyl betaine 30%, CAPB"
+   ],
+   "via": 1,
+   "note": "تولیدکننده سورفکتانت."
+  },
+  {
+   "n": "هیرکان شیمی",
+   "e": "Hirkan Chem — hirkan-chem.com",
+   "t": "t",
+   "c": [
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://hirkan-chem.com/",
+   "src": "https://hirkan-chem.com/product/betaine/",
+   "p": [
+    "بتائین (کوکامیدوپروپیل بتائین)|Cocamidopropyl betaine"
+   ],
+   "via": 1
+  },
+  {
+   "n": "گروه RGR",
+   "e": "RGR Group — rgrgroupco.com",
+   "t": "t",
+   "c": [
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://www.rgrgroupco.com/",
+   "src": "https://www.rgrgroupco.com/product/sorbitol/",
+   "p": [
+    "دکستروز مونوهیدرات|Dextrose monohydrate",
+    "سوربیتول مایع و پودری|Sorbitol"
+   ],
+   "via": 1
+  },
+  {
+   "n": "ره‌آورد تأمین",
+   "e": "Rahavard Tamin — rtpvp.com",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44991335-7"
+   ],
+   "web": "https://www.rtpvp.com/",
+   "note": "تولیدکننده داخلی PVP و روکش قرص؛ عضو سندیکا. تلفن دفتر مرکزی از سایت شرکت.",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "پلی‌وینیل پیرولیدون (پوویدون PVP)|Povidone, PVP, Polyvinylpyrrolidone",
+    "روکش رنگی قرص RT-Film|Tablet film coating, RT-Film",
+    "پوویدون آیوداین (بتادین)|Povidone iodine, PVP-I, Betadine"
+   ]
+  },
+  {
+   "n": "مهر گستر",
+   "e": "Mehr Gostar — palayeshparaffin.com",
+   "t": "m",
+   "c": [
+    "exc",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://www.palayeshparaffin.com",
+   "src": "https://www.palayeshparaffin.com",
+   "via": 1,
+   "p": [
+    "پارافین|Paraffin",
+    "وازلین|Vaseline, Petrolatum"
+   ]
+  },
+  {
+   "n": "اکبریه (سهامی خاص)",
+   "e": "Akbarieh Co.",
+   "t": "t",
+   "c": [
+    "vit",
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "addr": "خیابان بزرگمهر، پلاک ۱۰۰ (از دایرکتوری کامپس؛ پیش از مراجعه تلفنی تأیید شود)",
+   "top": 1,
+   "gv": 1,
+   "note": "واردکننده قدیمی دارو و مواد اولیه؛ به معرفی کاربر برای ویتامین‌ها افزوده شد. فهرست دقیق مواد اولیه و تلفن از منابع در دسترس به دست نیامد.",
+   "src": "https://www.darooyab.ir/ImporterCompanies/166",
+   "p": [
+    "ویتامین‌ها (انواع؛ فهرست دقیق تأیید نشده)|Vitamins",
+    "مواد اولیه غذایی|Food ingredients",
+    "مواد اولیه دارویی|Pharmaceutical raw materials"
+   ]
+  },
+  {
+   "n": "داروسازی گیاه اسانس",
+   "e": "Giah Essence — giahessence.com",
+   "t": "m",
+   "c": [
+    "sup"
+   ],
+   "prov": "گلستان",
+   "city": "گرگان",
+   "tel": [],
+   "site": "گرگان، کیلومتر ۱۰ جاده گرگان–مشهد، کیلومتر ۸ جاده توسکستان (کارخانه)",
+   "web": "https://giahessence.com/",
+   "note": "تولیدکننده داروهای گیاهی و عصاره. فهرست کامل عصاره‌های فله و تلفن از منبع به دست نیامد.",
+   "src": "https://giahessence.com/",
+   "p": [
+    "عصاره گزنه|Nettle extract, Urtica dioica",
+    "عصاره‌های گیاهی|Herbal extracts"
+   ]
+  },
+  {
+   "n": "باریج اسانس",
+   "e": "Barij Essence",
+   "t": "m",
+   "c": [
+    "sup"
+   ],
+   "prov": "اصفهان",
+   "city": "کاشان",
+   "tel": [
+    "086-4002"
+   ],
+   "addr": "تهران، خیابان مرزداران، بین آریافر و سرسبز، پلاک ۷۸ (دفتر تهران)",
+   "site": "کاشان، مشهد اردهال (کارخانه)",
+   "web": "https://barijessence.com/",
+   "note": "تولیدکننده داروهای گیاهی و اسانس. فروش عصاره و اسانس به‌صورت ماده اولیه فله از منبع تأیید نشد؛ تلفنی بپرسید. شماره همان‌طور که در سایت آمده ثبت شده است.",
+   "src": "https://barijessence.com/en/",
+   "p": [
+    "اسانس‌های گیاهی|Essential oils",
+    "عصاره‌های گیاهی|Herbal extracts"
+   ]
+  },
+  {
+   "n": "شرکت دارویی زردبند",
+   "e": "Zardband Pharmaceuticals — zardband.com",
+   "t": "m",
+   "hi": 1,
+   "c": [
+    "sup",
+    "cos"
+   ],
+   "prov": "کهگیلویه و بویراحمد",
+   "city": "یاسوج",
+   "tel": [],
+   "web": "https://zardband.com/",
+   "note": "تولیدکننده عصاره، اسانس و روغن گیاهی به‌صورت ماده اولیه (بخش Raw Material سایت). فهرست از صفحه‌های محصول سایت است و کامل نیست؛ تلفن به دست نیامد و محل کارخانه تأیید شود.",
+   "src": "https://zardband.com/en/raw-materials/",
+   "p": [
+    "عصاره خشک آویشن باغی|Garden thyme dry extract",
+    "عصاره خشک گالگا (شیرآور)|Goat's rue dry extract, Galega",
+    "عصاره خشک خار مریم (ماریتیغال)|Milk thistle dry extract, Silymarin",
+    "عصاره خشک بره‌موم (پروپولیس)|Propolis dry extract",
+    "عصاره خشک رازیانه|Fennel dry extract",
+    "عصاره خشک شیرین بیان|Licorice dry extract",
+    "عصاره خشک کنگر فرنگی (آرتیشو)|Artichoke dry extract",
+    "عصاره خشک همیشه بهار (کالاندولا)|Pot marigold dry extract, Calendula",
+    "عصاره خشک زنجبیل|Ginger dry extract",
+    "عصاره خشک عشقه (پیچک)|Ivy dry extract, Hedera helix",
+    "عصاره خشک مازو|Oak gall dry extract",
+    "عصاره آبی زعفران|Saffron aqueous extract",
+    "عصاره آبی آقطی سیاه|Elderberry aqueous extract",
+    "عصاره آبی میوه انجیر|Fig fruit concentrated extract",
+    "عصاره هیدروگلیکولی اکالیپتوس|Eucalyptus hydroglycolic extract",
+    "عصاره هیدروگلیکولی سدر|Christ's thorn hydroglycolic extract, Ziziphus",
+    "عصاره هیدروگلیکولی چای سبز|Green tea hydroglycolic extract",
+    "عصاره هیدروگلیکولی دم اسب|Horsetail hydroglycolic extract",
+    "عصاره هیدروگلیکولی نسترن|Dog rose hydroglycolic extract, Rosa canina",
+    "عصاره هیدروگلیکولی رازیانه|Fennel hydroglycolic extract",
+    "عصاره هیدروگلیکولی بابونه|Chamomile hydroglycolic extract",
+    "عصاره هیدروگلیکولی بادرنجبویه|Lemon balm hydroglycolic extract",
+    "عصاره هیدروگلیکولی آویشن باغی|Garden thyme hydroglycolic extract",
+    "عصاره هیدرواتانولی بادرنجبویه|Lemon balm hydroethanolic extract",
+    "عصاره هیدرواتانولی بومادران|Yarrow hydroethanolic extract",
+    "عصاره هیدرواتانولی نسترن|Dog rose hydroethanolic extract",
+    "عصاره هیدرواتانولی انیسون|Anise hydroethanolic extract",
+    "عصاره هیدرواتانولی سیر|Garlic hydroethanolic extract",
+    "عصاره هیدرواتانولی آقطی|Elderberry hydroethanolic extract",
+    "عصاره هیدرواتانولی آویشن باغی|Garden thyme hydroethanolic extract",
+    "اسانس اکالیپتوس|Eucalyptus essential oil",
+    "اسانس نعناع فلفلی|Peppermint essential oil",
+    "اسانس علف لیمو|Lemongrass essential oil",
+    "اسانس بابونه|Chamomile essential oil",
+    "روغن دانه ماریتیغال (خار مریم)|Milk thistle fixed oil",
+    "روغن بذر کتان|Flaxseed oil",
+    "روغن گل مغربی|Evening primrose fixed oil",
+    "عصاره روغنی همیشه بهار|Marigold oily extract, Calendula",
+    "عصاره روغنی گل راعی|St John's wort oily extract",
+    "اولئورزین زنجبیل|Ginger oleoresin",
+    "اولئورزین فلفل قرمز|Red pepper oleoresin, Capsicum",
+    "اکسترافاین سیر (عصاره پروپیلن گلیکولی)|Garlic Extrafine",
+    "اکسترافاین رزماری (عصاره پروپیلن گلیکولی)|Rosemary Extrafine"
+   ]
+  },
+  {
+   "n": "پردیس عصاره ترشیز",
+   "e": "Pardis Extract — pardisextract.de",
+   "t": "m",
+   "c": [
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://pardisextract.de/",
+   "note": "فروش عصاره‌های گیاهی. تولیدکننده بودن و نشانی از منبع تأیید نشد؛ تلفن به دست نیامد.",
+   "src": "https://pardisextract.de/shop/",
+   "via": 1,
+   "p": [
+    "عصاره آویشن|Thyme extract",
+    "عصاره آویشن شیرازی|Zataria extract",
+    "عصاره عشقه (پیچک)|Ivy extract, Hedera helix",
+    "عصاره کنگر فرنگی (آرتیشو)|Artichoke extract",
+    "عصاره شیرین بیان|Licorice extract",
+    "عصاره اکالیپتوس|Eucalyptus extract",
+    "عصاره جینسینگ|Ginseng extract",
+    "عصاره گل ساعتی|Passion flower extract, Passiflora",
+    "عصاره سنا|Senna extract",
+    "عصاره هیدروالکلی پنیرک|Malva sylvestris hydroalcoholic extract",
+    "عصاره مرزه|Savory extract, Satureja",
+    "عصاره هیدروالکلی بابونه|Chamomile hydroalcoholic extract",
+    "عصاره هیدروالکلی گل ختمی|Marshmallow hydroalcoholic extract, Althaea",
+    "عصاره آووکادو و سویا|Avocado soybean extract, ASU",
+    "عصاره زردچوبه|Turmeric extract, Curcumin"
+   ]
+  },
+  {
+   "n": "داروسازی ابن ماسویه",
+   "e": "Ebnemasouyeh Pharmaceutical — ebnemasouyeh.com",
+   "t": "m",
+   "c": [
+    "sup"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "http://www.ebnemasouyeh.com/",
+   "note": "تولیدکننده داروهای گیاهی و عصاره. فقط دو عصاره از سایت به دست آمد؛ فهرست کامل و تلفن را باید از شرکت گرفت.",
+   "src": "http://www.ebnemasouyeh.com/",
+   "p": [
+    "عصاره برگ زیتون|Olive leaf extract",
+    "عصاره تخم کرفس|Celery seed extract",
+    "عصاره‌های گیاهی|Herbal extracts"
+   ]
+  },
+  {
+   "n": "اعضای دیگر سندیکا (فقط نام)",
+   "e": "Other syndicate members",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "partial": 1,
+   "note": "تلفن و محصول این شرکت‌ها هنوز برداشت نشده است؛ از طریق سندیکا (021-22547182) قابل پیگیری است.",
+   "src": "https://cppsynd.com/",
+   "p": [
+    "آنتی‌بیوتیک‌سازی ایران|Iran Antibiotic Sazi",
+    "شیمی دارویی تک‌ماد|Tekmad",
+    "صنایع مشارکتی طاها|Taha",
+    "فرآیند شیمی حکیم|Farayand Shimi Hakim",
+    "امرتات شیمی|Amertat Shimi",
+    "هوبر دارو گستر|Hoober Darou Gostar",
+    "جوین|Jovein",
+    "مهرسام دارو|Mehrsam Darou",
+    "شیمی فارمد پارس|Shimi Pharmed Pars",
+    "شیمی دارویی شاری|Shari",
+    "توفیق دارو|Tofigh Darou",
+    "تدبیر دارو سلامت|Tadbir Darou Salamat",
+    "باران|Baran",
+    "پارس نمک کاوه|Pars Namak Kaveh",
+    "عصر نانو|Asr Nano",
+    "افشان شیمی مهر|Afshan Shimi Mehr",
+    "پرند دارو|Parand Darou"
+   ]
+  }
+ ],
+ "provinceOrder": [
+  "تهران",
+  "البرز",
+  "مرکزی",
+  "سمنان",
+  "مازندران",
+  "اصفهان",
+  "آذربایجان شرقی",
+  "خراسان رضوی",
+  "فارس",
+  "کرمانشاه",
+  "خوزستان",
+  "گلستان",
+  "کهگیلویه و بویراحمد",
+  "نامشخص"
+ ],
+ "synonyms": [
+  [
+   "ویتامین ب1",
+   "ویتامین b1",
+   "vitamin b1",
+   "تیامین",
+   "thiamine",
+   "thiamin"
+  ],
+  [
+   "ویتامین ب2",
+   "ویتامین b2",
+   "vitamin b2",
+   "ریبوفلاوین",
+   "riboflavin"
+  ],
+  [
+   "ویتامین ب3",
+   "ویتامین b3",
+   "vitamin b3",
+   "نیاسین",
+   "niacin",
+   "نیکوتین امید",
+   "نیاسینامید",
+   "nicotinamide",
+   "niacinamide",
+   "nicotinic"
+  ],
+  [
+   "ویتامین ث",
+   "ویتامین سی",
+   "ویتامین c",
+   "vitamin c",
+   "اسید اسکوربیک",
+   "اسکوربیک",
+   "ascorbic",
+   "ascorbate",
+   "اسکوربات"
+  ],
+  [
+   "ویتامین د",
+   "ویتامین d",
+   "vitamin d",
+   "کوله کلسیفرول",
+   "cholecalciferol"
+  ],
+  [
+   "ویتامین ای",
+   "ویتامین e",
+   "vitamin e",
+   "توکوفرول",
+   "tocopherol"
+  ],
+  [
+   "روی",
+   "زینک",
+   "zinc"
+  ],
+  [
+   "اهن",
+   "فروس",
+   "ferrous",
+   "iron"
+  ],
+  [
+   "کلسیم",
+   "calcium"
+  ],
+  [
+   "منیزیم",
+   "magnesium"
+  ],
+  [
+   "پتاسیم",
+   "potassium"
+  ],
+  [
+   "سدیم",
+   "sodium"
+  ],
+  [
+   "پلی اتیلن گلیکول",
+   "peg",
+   "polyethylene glycol",
+   "ماکروگل",
+   "macrogol"
+  ],
+  [
+   "پلی سوربات",
+   "polysorbate",
+   "توئین",
+   "tween"
+  ],
+  [
+   "اسپان",
+   "span",
+   "sorbitan",
+   "سوربیتان"
+  ],
+  [
+   "گلیسیرین",
+   "گلیسرین",
+   "گلیسرول",
+   "glycerin",
+   "glycerol"
+  ],
+  [
+   "استامینوفن",
+   "پاراستامول",
+   "acetaminophen",
+   "paracetamol"
+  ],
+  [
+   "hpmc",
+   "هیدروکسی پروپیل متیل سلولز",
+   "hypromellose",
+   "هایپروملوز"
+  ],
+  [
+   "ساکارز",
+   "شکر",
+   "sucrose"
+  ],
+  [
+   "نشاسته",
+   "starch"
+  ],
+  [
+   "اتانول",
+   "الکل اتیلیک",
+   "ethanol"
+  ],
+  [
+   "ایزوپروپیل الکل",
+   "ایزوپروپانول",
+   "2-propanol",
+   "isopropyl",
+   "ipa"
+  ],
+  [
+   "اویسل",
+   "avicel",
+   "microcrystalline cellulose",
+   "mcc",
+   "میکروکریستالین سلولز"
+  ],
+  [
+   "ادتا",
+   "edta",
+   "edetate",
+   "ادتات"
+  ],
+  [
+   "هیالورونیک",
+   "hyaluron",
+   "هیالورونات"
+  ],
+  [
+   "ال کارنیتین",
+   "l-carnitine",
+   "کارنیتین",
+   "carnitine"
+  ],
+  [
+   "ژلاتین",
+   "gelatin"
+  ],
+  [
+   "تالک",
+   "talc"
+  ],
+  [
+   "پوویدون",
+   "pvp",
+   "povidone",
+   "polyvinylpyrrolidone",
+   "پلی وینیل پیرولیدون"
+  ],
+  [
+   "سدیم لوریل سولفات",
+   "sls",
+   "sds",
+   "sodium dodecyl sulfate",
+   "sodium lauryl"
+  ],
+  [
+   "لاکتوز",
+   "lactose"
+  ],
+  [
+   "مانیتول",
+   "mannitol"
+  ],
+  [
+   "سوربیتول",
+   "sorbitol"
+  ],
+  [
+   "منیزیم استئارات",
+   "استئارات منیزیم",
+   "magnesium stearate"
+  ],
+  [
+   "کراس کارملوز",
+   "croscarmellose"
+  ],
+  [
+   "سدیم استارچ گلیکولات",
+   "sodium starch glycolate",
+   "ssg"
+  ],
+  [
+   "کراس پوویدون",
+   "crospovidone"
+  ],
+  [
+   "تیتانیوم دی اکسید",
+   "تیتان",
+   "titanium dioxide"
+  ],
+  [
+   "کربومر",
+   "carbomer",
+   "carbopol",
+   "کاربوپل"
+  ],
+  [
+   "پروپیلن گلیکول",
+   "propylene glycol",
+   "mpg"
+  ],
+  [
+   "پارابن",
+   "paraben"
+  ],
+  [
+   "سدیم بنزوات",
+   "بنزوات سدیم",
+   "sodium benzoate"
+  ],
+  [
+   "سوکرالوز",
+   "sucralose"
+  ],
+  [
+   "اسپارتام",
+   "aspartame"
+  ],
+  [
+   "ساخارین",
+   "saccharin"
+  ],
+  [
+   "الانتویین",
+   "allantoin"
+  ],
+  [
+   "سالیسیلیک",
+   "salicylic"
+  ],
+  [
+   "گلیکولیک",
+   "glycolic"
+  ],
+  [
+   "ستیل الکل",
+   "cetyl alcohol"
+  ],
+  [
+   "ستو استیاریل",
+   "cetostearyl",
+   "cetearyl"
+  ],
+  [
+   "استیاریک",
+   "stearic"
+  ],
+  [
+   "تگزاپون",
+   "texapon",
+   "sles",
+   "laureth sulfate",
+   "لوریل اتر سولفات"
+  ],
+  [
+   "ایزوپروپیل میریستات",
+   "isopropyl myristate",
+   "ipm"
+  ],
+  [
+   "دایمتیکون",
+   "دیمتیکون",
+   "dimethicone"
+  ],
+  [
+   "سیکلوپنتاسیلوکسان",
+   "cyclopentasiloxane"
+  ],
+  [
+   "فنوکسی اتانول",
+   "phenoxyethanol"
+  ],
+  [
+   "لانولین",
+   "lanolin"
+  ],
+  [
+   "پاراستامول",
+   "استامینوفن",
+   "paracetamol",
+   "acetaminophen"
+  ],
+  [
+   "ایبوپروفن",
+   "ibuprofen"
+  ],
+  [
+   "ماینوکسیدیل",
+   "minoxidil"
+  ],
+  [
+   "کتوکونازول",
+   "ketoconazole"
+  ],
+  [
+   "لیدوکایین",
+   "lidocaine"
+  ],
+  [
+   "تایورین",
+   "taurine"
+  ],
+  [
+   "کافیین",
+   "caffeine"
+  ],
+  [
+   "اینوزیتول",
+   "inositol"
+  ],
+  [
+   "ارژنین",
+   "arginine"
+  ],
+  [
+   "گلوتامین",
+   "glutamine"
+  ],
+  [
+   "بتایین",
+   "betaine",
+   "capb"
+  ],
+  [
+   "شیرین بیان",
+   "licorice",
+   "liquorice"
+  ],
+  [
+   "کپسول",
+   "capsule"
+  ],
+  [
+   "اولییک",
+   "oleic"
+  ],
+  [
+   "اوژنول",
+   "eugenol"
+  ],
+  [
+   "کاراگینان",
+   "carrageenan"
+  ],
+  [
+   "پکتین",
+   "pectin"
+  ],
+  [
+   "تریپتوفان",
+   "tryptophan"
+  ],
+  [
+   "تیروزین",
+   "tyrosine"
+  ],
+  [
+   "تیانین",
+   "theanine"
+  ],
+  [
+   "لوسین",
+   "leucine"
+  ],
+  [
+   "تتراسایکلین",
+   "tetracycline"
+  ],
+  [
+   "ترامادول",
+   "tramadol"
+  ],
+  [
+   "پره گابالین",
+   "پرگابالین",
+   "pregabalin"
+  ],
+  [
+   "رزوواستاتین",
+   "rosuvastatin"
+  ],
+  [
+   "پنتوپرازول",
+   "پنتاپرازول",
+   "pantoprazole"
+  ],
+  [
+   "دولوکستین",
+   "duloxetine"
+  ],
+  [
+   "فروکتوز",
+   "fructose"
+  ],
+  [
+   "گلوکز",
+   "glucose"
+  ],
+  [
+   "گلیسینات",
+   "گلایسینات",
+   "glycinate",
+   "bisglycinate"
+  ],
+  [
+   "لاکتات",
+   "lactate"
+  ],
+  [
+   "مالات",
+   "malate"
+  ],
+  [
+   "پیکولینات",
+   "picolinate"
+  ],
+  [
+   "سیمتیکون",
+   "سایمتیکون",
+   "simethicone"
+  ],
+  [
+   "فسفات",
+   "phosphate"
+  ],
+  [
+   "استات",
+   "acetate"
+  ],
+  [
+   "هیدروکسید",
+   "hydroxide"
+  ],
+  [
+   "کلرید",
+   "chloride"
+  ],
+  [
+   "مس",
+   "copper"
+  ],
+  [
+   "منگنز",
+   "manganese"
+  ],
+  [
+   "لیتیم",
+   "lithium"
+  ],
+  [
+   "بیسموت",
+   "bismuth"
+  ],
+  [
+   "کروم",
+   "chromium"
+  ],
+  [
+   "وازلین",
+   "vaseline",
+   "petrolatum",
+   "پترولاتوم"
+  ],
+  [
+   "پارافین",
+   "paraffin",
+   "mineral oil"
+  ],
+  [
+   "لسیتین",
+   "lecithin"
+  ],
+  [
+   "گلوتاتیون",
+   "glutathione"
+  ],
+  [
+   "ملاتونین",
+   "melatonin"
+  ],
+  [
+   "لیپوییک",
+   "lipoic"
+  ],
+  [
+   "بیزواکس",
+   "بیزوکس",
+   "beeswax",
+   "موم زنبور"
+  ],
+  [
+   "کارنوبا",
+   "carnauba"
+  ],
+  [
+   "ژلاتین",
+   "gelatin"
+  ],
+  [
+   "بنزالکونیوم",
+   "benzalkonium"
+  ],
+  [
+   "دگزامتازون",
+   "dexamethasone"
+  ],
+  [
+   "سیلدنافیل",
+   "sildenafil"
+  ],
+  [
+   "تادالافیل",
+   "tadalafil"
+  ],
+  [
+   "بتاکاروتن",
+   "beta carotene",
+   "بتا کاروتن"
+  ],
+  [
+   "کورکومین",
+   "curcumin"
+  ],
+  [
+   "زایلیتول",
+   "xylitol"
+  ],
+  [
+   "الژینات",
+   "alginate"
+  ],
+  [
+   "عصاره",
+   "extract"
+  ],
+  [
+   "جینسینگ",
+   "ginseng"
+  ],
+  [
+   "سیلیمارین",
+   "silymarin"
+  ],
+  [
+   "cmc",
+   "کربوکسی متیل سلولز",
+   "carboxymethyl"
+  ],
+  [
+   "نشاسته",
+   "starch"
+  ],
+  [
+   "بی کربنات",
+   "بیکربنات",
+   "bicarbonate"
+  ],
+  [
+   "بوریک",
+   "boric"
+  ],
+  [
+   "لاکتیک",
+   "lactic"
+  ],
+  [
+   "کلیمبازول",
+   "climbazole"
+  ],
+  [
+   "پیروکتون",
+   "piroctone",
+   "اکتوپیروکس",
+   "octopirox"
+  ],
+  [
+   "nac",
+   "ان استیل",
+   "acetylcysteine",
+   "استیل سیستیین"
+  ],
+  [
+   "مفنامیک",
+   "mefenamic"
+  ],
+  [
+   "اموکسی سیلین",
+   "amoxicillin"
+  ],
+  [
+   "کراتین",
+   "creatine"
+  ],
+  [
+   "گلوکزامین",
+   "گلوکوزامین",
+   "glucosamine"
+  ],
+  [
+   "کندرویتین",
+   "chondroitin"
+  ],
+  [
+   "کلاژن",
+   "collagen"
+  ],
+  [
+   "منتول",
+   "menthol"
+  ],
+  [
+   "متیل سالیسیلات",
+   "methyl salicylate"
+  ],
+  [
+   "سیتریک",
+   "citric"
+  ],
+  [
+   "سیترات",
+   "citrate"
+  ],
+  [
+   "شی باتر",
+   "shea butter"
+  ],
+  [
+   "تری اتانول امین",
+   "triethanolamine",
+   "tea"
+  ],
+  [
+   "کواترنیوم",
+   "polyquaternium"
+  ],
+  [
+   "کوجیک",
+   "kojic"
+  ],
+  [
+   "اربوتین",
+   "arbutin"
+  ],
+  [
+   "رتینول",
+   "retinol"
+  ],
+  [
+   "ترانکسامیک",
+   "ترانگزامیک",
+   "tranexamic"
+  ],
+  [
+   "بنزیل الکل",
+   "benzyl alcohol"
+  ],
+  [
+   "پنتنول",
+   "پانتنول",
+   "دکسپانتنول",
+   "panthenol",
+   "dexpanthenol",
+   "ویتامین ب5",
+   "ویتامین b5",
+   "vitamin b5"
+  ],
+  [
+   "پیریدوکسین",
+   "pyridoxine",
+   "ویتامین ب6",
+   "ویتامین b6",
+   "vitamin b6"
+  ],
+  [
+   "سیانوکوبالامین",
+   "کوبالامین",
+   "cyanocobalamin",
+   "ویتامین ب12",
+   "ویتامین b12",
+   "vitamin b12"
+  ],
+  [
+   "فولیک",
+   "folic",
+   "ویتامین ب9",
+   "ویتامین b9"
+  ],
+  [
+   "بیوتین",
+   "biotin",
+   "ویتامین ب7",
+   "ویتامین b7"
+  ],
+  [
+   "ویتامین ا",
+   "ویتامین a",
+   "vitamin a",
+   "رتینیل",
+   "retinyl"
+  ],
+  [
+   "ویتامین کا",
+   "ویتامین k",
+   "vitamin k"
+  ],
+  [
+   "گلوکونات",
+   "gluconate"
+  ],
+  [
+   "سولفات",
+   "sulfate",
+   "sulphate"
+  ],
+  [
+   "اکسید",
+   "oxide"
+  ],
+  [
+   "کربنات",
+   "carbonate"
+  ],
+  [
+   "استیارات",
+   "stearate"
+  ],
+  [
+   "فومارات",
+   "fumarate"
+  ],
+  [
+   "هیدروکلرید",
+   "hydrochloride",
+   "hcl"
+  ],
+  [
+   "سلنیت",
+   "selenite",
+   "سلنیوم",
+   "selenium"
+  ],
+  [
+   "یدید",
+   "iodide"
+  ],
+  [
+   "ژلاتین",
+   "gelatin"
+  ],
+  [
+   "دکستروز",
+   "dextrose"
+  ],
+  [
+   "مالتودکسترین",
+   "maltodextrin"
+  ],
+  [
+   "زانتان",
+   "xanthan"
+  ],
+  [
+   "اوره",
+   "urea"
+  ],
+  [
+   "ایروزیل",
+   "اروزیل",
+   "aerosil",
+   "سیلیکون دی اکسید",
+   "silicon dioxide",
+   "colloidal"
+  ],
+  [
+   "مترونیدازول",
+   "metronidazole"
+  ],
+  [
+   "متفورمین",
+   "metformin"
+  ],
+  [
+   "اتورواستاتین",
+   "atorvastatin"
+  ],
+  [
+   "ازیترومایسین",
+   "azithromycin"
+  ],
+  [
+   "گاباپنتین",
+   "gabapentin"
+  ],
+  [
+   "لوزارتان",
+   "losartan"
+  ],
+  [
+   "ناپروکسن",
+   "naproxen"
+  ],
+  [
+   "دیکلوفناک",
+   "diclofenac"
+  ],
+  [
+   "کلوتریمازول",
+   "clotrimazole"
+  ],
+  [
+   "سلکوکسیب",
+   "celecoxib"
+  ],
+  [
+   "املودیپین",
+   "amlodipine"
+  ],
+  [
+   "کلیندامایسین",
+   "clindamycin"
+  ]
+ ]
+}
