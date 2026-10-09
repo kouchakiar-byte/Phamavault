@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, Check, Mail } from "lucide-react";
 import { LogoMark } from "@/components/logo";
+import { SupplierSpotlight } from "@/components/supplier-spotlight";
 import { BiTitle, ButtonLink, Container, MoleculePattern, SectionHead } from "@/components/ui";
 import { calculations } from "@/content/calculations";
 import { sections } from "@/content/sections";
@@ -55,9 +56,9 @@ export default async function HomePage() {
             <p className="mt-3 text-lg font-medium text-capsule-400">{copy.slogan[locale]}</p>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-vault-100/80 sm:text-lg">{hero.lead[locale]}</p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <ButtonLink href={href(locale, "#sections")}>{hero.browse[locale]}</ButtonLink>
-              <ButtonLink href={href(locale, "#plans")} variant="outline-light">
-                {hero.seePlans[locale]}
+              <ButtonLink href={href(locale, "suppliers")}>{hero.supplierSearch[locale]}</ButtonLink>
+              <ButtonLink href={href(locale, "#sections")} variant="outline-light">
+                {hero.browse[locale]}
               </ButtonLink>
             </div>
           </div>
@@ -107,15 +108,18 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Featured: the supplier bank */}
+      <SupplierSpotlight locale={locale} />
+
       {/* Audience */}
-      <section className="border-b border-line bg-white">
+      <section className="border-y border-line bg-paper">
         <Container className="flex flex-col items-center gap-6 py-10 lg:flex-row lg:justify-between">
           <h2 className="text-center text-base font-semibold text-vault-900 lg:max-w-xs lg:text-start">
             {audience.title[locale]}
           </h2>
           <ul className="flex flex-wrap justify-center gap-2.5">
             {audience.items.map((item) => (
-              <li key={item.en} className="rounded-full border border-line bg-paper px-4 py-1.5 text-sm font-medium text-vault-800">
+              <li key={item.en} className="rounded-full border border-line bg-white px-4 py-1.5 text-sm font-medium text-vault-800">
                 {item[locale]}
               </li>
             ))}

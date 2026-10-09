@@ -18,6 +18,21 @@ type Section = {
 /** The nine sections of the platform, in the order shown on the home page. */
 export const sections = [
   {
+    slug: "suppliers",
+    href: "suppliers",
+    plate: "SP",
+    icon: Factory,
+    group: "databases",
+    title: bi(
+      "Suppliers & Manufacturers of Pharmaceutical, Supplement and Cosmetic Raw Materials",
+      "بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی",
+    ),
+    description: bi(
+      "Iranian manufacturers and importers of APIs, excipients, vitamins, mineral salts, supplement and cosmetic raw materials, with contact details, searchable by material.",
+      "تولیدکنندگان و واردکنندگان ایرانی مواد مؤثره، مواد جانبی، ویتامین‌ها، املاح معدنی و مواد اولیه مکمل و آرایشی‌بهداشتی، همراه با اطلاعات تماس و قابل جستجو بر اساس ماده.",
+    ),
+  },
+  {
     slug: "handbooks",
     href: "handbooks",
     plate: "HB",
@@ -27,18 +42,6 @@ export const sections = [
     description: bi(
       "Dosage-form references for solid, semi-solid, liquid, sterile and biological products, from formulation design to scale-up.",
       "مرجع کاربردی اشکال دارویی جامد، نیمه‌جامد، مایع، استریل و بیولوژیک؛ از طراحی فرمولاسیون تا افزایش مقیاس.",
-    ),
-  },
-  {
-    slug: "suppliers",
-    href: "suppliers",
-    plate: "SP",
-    icon: Factory,
-    group: "databases",
-    title: bi("Raw Material Supplier Directory", "پایگاه داده تأمین‌کنندگان مواد اولیه"),
-    description: bi(
-      "Iranian manufacturers and importers of APIs, vitamins, mineral salts, excipients and cosmetic ingredients, searchable by material.",
-      "تولیدکنندگان و واردکنندگان ایرانی مواد مؤثره، ویتامین‌ها، املاح معدنی، مواد جانبی و مواد اولیه آرایشی، قابل جستجو بر اساس ماده.",
     ),
   },
   {
@@ -126,6 +129,9 @@ export const sections = [
     ),
   },
 ] as const satisfies readonly Section[];
+
+/** Short name of the supplier bank for menus and buttons. */
+export const supplierBankShort = bi("Supplier & Manufacturer Bank", "بانک تأمین‌کنندگان و تولیدکنندگان");
 
 export type SectionSlug = (typeof sections)[number]["slug"];
 

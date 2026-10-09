@@ -35,8 +35,21 @@ const host = (url: string) => url.replace(/^https?:\/\/(www\.)?/, "").split("/")
 /** Only http(s) links from the data become anchors. */
 const safeUrl = (url: string | undefined) => (url && /^https?:\/\//.test(url) ? url : undefined);
 
-export function SupplierBank({ locale }: { locale: Locale }) {
-  const [filters, setFilters] = useState<Filters>({ query: "", type: "all", cat: "all", sort: "cred", telOnly: false });
+const defaults: Filters = { query: "", type: "all", cat: "all", sort: "cred", telOnly: false };
+
+/** Reads `?q=`, `?cat=` and `?type=` so the home-page search lands on results. */
+export function filtersFromParams(params: URLSearchParams): Partial<Filters> {
+  const cat = params.get("cat") ?? "";
+  const type = params.get("type") ?? "";
+  return {
+    query: params.get("q") ?? "",
+    cat: cat in t.categories ? cat : "all",
+    type: type === "m" || type === "t" ? type : "all",
+  };
+}
+
+export function SupplierBank({ locale, initial }: { locale: Locale; initial?: Partial<Filters> }) {
+  const [filters, setFilters] = useState<Filters>({ ...defaults, ...initial });
   const set = (patch: Partial<Filters>) => setFilters((f) => ({ ...f, ...patch }));
 
   const results = useMemo(() => search(suppliers, filters, synonyms, data.provinceOrder), [filters]);

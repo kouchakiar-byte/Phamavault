@@ -10,10 +10,13 @@ export const pages = {
     ),
   },
   suppliers: {
-    title: bi("Raw material supplier directory", "پایگاه داده تأمین‌کنندگان مواد اولیه"),
+    title: bi(
+      "Suppliers & manufacturers of pharmaceutical, supplement and cosmetic raw materials",
+      "بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی",
+    ),
     lead: bi(
-      "Iranian manufacturers and importers of active pharmaceutical ingredients, vitamins, mineral salts, excipients and cosmetic raw materials. Search by Persian or English name, salt form or synonym.",
-      "تولیدکنندگان داخلی و واردکنندگان مواد مؤثره دارویی، ویتامین‌ها، املاح معدنی، مواد جانبی و مواد اولیه آرایشی‌بهداشتی در ایران. با نام فارسی یا انگلیسی، فرم نمکی یا مترادف جستجو کنید.",
+      "Domestic manufacturers and importers in Iran of pharmaceutical raw materials (APIs and excipients), vitamins and mineral salts, supplement ingredients and amino acids, and cosmetic raw materials. Search by Persian or English name, salt form or synonym.",
+      "تولیدکنندگان داخلی و واردکنندگان مواد اولیه دارویی (مواد مؤثره و مواد جانبی)، ویتامین‌ها و املاح معدنی، مواد اولیه مکمل و آمینواسیدها، و مواد اولیه آرایشی‌بهداشتی در ایران. با نام فارسی یا انگلیسی، فرم نمکی یا مترادف جستجو کنید.",
     ),
     placeholder: bi(
       "e.g. Vitamin B1, thiamine hydrochloride, Zinc sulfate, polysorbate 80",
@@ -42,14 +45,14 @@ export const pages = {
     category: bi("Category", "دسته"),
     categories: {
       all: bi("All", "همه"),
-      api: bi("Active ingredient (API)", "ماده مؤثره (API)"),
-      vit: bi("Vitamin", "ویتامین"),
-      min: bi("Minerals and mineral salts", "مینرال و نمک‌های معدنی"),
-      exc: bi("Excipients and solvents", "اکسیپیان و حلال"),
-      cos: bi("Cosmetics and personal care", "آرایشی و بهداشتی"),
-      sup: bi("Supplements and amino acids", "مکمل و آمینواسید"),
-      bio: bi("Biologics", "بیولوژیک"),
-      std: bi("Laboratory standards", "استاندارد آزمایشگاهی"),
+      api: bi("Active pharmaceutical ingredients (API)", "مواد مؤثره دارویی (API)"),
+      vit: bi("Vitamins", "ویتامین‌ها"),
+      min: bi("Minerals and mineral salts", "املاح معدنی و مینرال‌ها"),
+      exc: bi("Excipients and solvents", "مواد جانبی (اکسیپیان) و حلال‌ها"),
+      cos: bi("Cosmetic and personal-care raw materials", "مواد اولیه آرایشی‌بهداشتی"),
+      sup: bi("Supplement ingredients and amino acids", "مواد اولیه مکمل و آمینواسیدها"),
+      bio: bi("Biologics", "فرآورده‌های بیولوژیک"),
+      std: bi("Laboratory reference standards", "استانداردهای مرجع آزمایشگاهی"),
     } as Record<string, ReturnType<typeof bi>>,
     sort: bi("Sort", "مرتب‌سازی"),
     sorts: {

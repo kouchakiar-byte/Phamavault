@@ -1,5 +1,7 @@
+import { Suspense } from "react";
 import { PageHeader } from "@/components/page-header";
 import { SupplierBank } from "@/components/supplier-bank";
+import { SupplierBankFromUrl } from "@/components/supplier-bank-from-url";
 import { Container } from "@/components/ui";
 import { pages } from "@/content/pages";
 import { getLocale } from "@/i18n/locale";
@@ -15,7 +17,9 @@ export default async function SuppliersPage() {
     <>
       <PageHeader locale={locale} section="suppliers" title={page.title} lead={page.lead} />
       <Container className="max-w-5xl py-10">
-        <SupplierBank locale={locale} />
+        <Suspense fallback={<SupplierBank locale={locale} />}>
+          <SupplierBankFromUrl locale={locale} />
+        </Suspense>
       </Container>
     </>
   );

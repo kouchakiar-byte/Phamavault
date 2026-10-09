@@ -43,6 +43,7 @@ export const copy = {
       "پلتفرم دانش تخصصی برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری — از پیش‌فرمولاسیون و انتخاب مواد جانبی تا مستندسازی GMP و پرونده CTD.",
     ),
     browse: bi("Browse the sections", "مرور بخش‌ها"),
+    supplierSearch: bi("Search the supplier bank", "جستجو در بانک تأمین‌کنندگان"),
     seePlans: bi("See plans", "مشاهده اشتراک‌ها"),
     pillars: [
       {
@@ -80,6 +81,23 @@ export const copy = {
       "اطلاعات به هم پیوسته‌اند: از هر ماده جانبی به تأمین‌کنندگان آن، محاسبه مرتبط و الزام رگولاتوری مربوط می‌رسید.",
     ),
     open: bi("Open section", "ورود به بخش"),
+  },
+
+  supplierSpotlight: {
+    badge: bi("Featured", "ویژه"),
+    lead: bi(
+      "Find who manufactures or imports a raw material in Iran — APIs, excipients, vitamins, mineral salts, supplement and cosmetic ingredients — with phone, email, website and the source of every record.",
+      "پیدا کنید چه شرکتی یک ماده اولیه را در ایران تولید یا وارد می‌کند — مواد مؤثره، مواد جانبی، ویتامین‌ها، املاح معدنی و مواد اولیه مکمل و آرایشی‌بهداشتی — همراه با تلفن، ایمیل، وب‌سایت و منبع هر رکورد.",
+    ),
+    search: bi("Search", "جستجو"),
+    stats: {
+      companies: bi("companies", "شرکت"),
+      materials: bi("material entries", "قلم ماده"),
+      manufacturers: bi("domestic manufacturers", "تولیدکننده داخلی"),
+      importers: bi("importers and traders", "واردکننده و بازرگانی"),
+    },
+    byCategory: bi("Browse by category", "مرور بر اساس دسته"),
+    open: bi("Open the full bank", "ورود به بانک کامل"),
   },
 
   databases: {

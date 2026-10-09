@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { copy } from "@/content/site";
-import { sectionGroups, sections } from "@/content/sections";
+import { getSection, sectionGroups, sections, supplierBankShort } from "@/content/sections";
 import { getLocale } from "@/i18n/locale";
 import { href } from "@/lib/paths";
 import { LanguageSwitcher } from "./language-switcher";
@@ -12,10 +12,11 @@ import { Container } from "./ui";
 export async function SiteHeader() {
   const locale = await getLocale();
   const { nav } = copy;
+  const SupplierIcon = getSection("suppliers").icon;
   const links = [
-    { href: href(locale, "tools"), label: nav.tools[locale] },
-    { href: href(locale, "#plans"), label: nav.plans[locale] },
-    { href: href(locale, "#enterprise"), label: nav.enterprise[locale] },
+    { href: href(locale, "tools"), label: nav.tools[locale], wide: false },
+    { href: href(locale, "#plans"), label: nav.plans[locale], wide: true },
+    { href: href(locale, "#enterprise"), label: nav.enterprise[locale], wide: true },
   ];
 
   return (
@@ -26,11 +27,18 @@ export async function SiteHeader() {
         </Link>
 
         <nav aria-label={nav.menu[locale]} className="hidden items-center gap-1 lg:flex">
+          <Link
+            href={href(locale, "suppliers")}
+            className="me-1 inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-molecule-50 px-3.5 py-2 text-sm font-semibold text-molecule-700 ring-1 ring-molecule-400/40 transition hover:bg-molecule-100"
+          >
+            <SupplierIcon className="size-4" aria-hidden="true" />
+            {supplierBankShort[locale]}
+          </Link>
           <div className="group">
             <Link
               href={href(locale, "#sections")}
               aria-haspopup="true"
-              className="inline-flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700"
+              className="inline-flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700"
             >
               {nav.sections[locale]}
               <ChevronDown className="size-4 transition group-focus-within:rotate-180 group-hover:rotate-180" aria-hidden="true" />
@@ -59,7 +67,11 @@ export async function SiteHeader() {
             </div>
           </div>
           {links.map((item) => (
-            <Link key={item.href} href={item.href} className="rounded-lg px-3 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700">
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700 ${item.wide ? "hidden xl:block" : ""}`}
+            >
               {item.label}
             </Link>
           ))}
@@ -71,7 +83,7 @@ export async function SiteHeader() {
           </div>
           <Link
             href={href(locale, "#contact")}
-            className="hidden rounded-full bg-vault-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-vault-800 lg:inline-flex"
+            className="hidden whitespace-nowrap rounded-full bg-vault-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-vault-800 lg:inline-flex"
           >
             {nav.requestAccess[locale]}
           </Link>
