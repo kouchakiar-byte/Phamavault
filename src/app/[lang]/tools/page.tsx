@@ -13,7 +13,7 @@ export default async function ToolsPage() {
   const locale = await getLocale();
   return (
     <>
-      <PageHeader locale={locale} plate="CA" eyebrow={page.eyebrow} title={page.title} lead={page.lead} />
+      <PageHeader locale={locale} section="tools" title={page.title} lead={page.lead} />
       <Container className="py-12">
         <Calculators locale={locale} />
       </Container>

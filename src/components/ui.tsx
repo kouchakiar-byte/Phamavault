@@ -92,7 +92,7 @@ type ButtonLinkProps = {
 };
 
 const buttonStyles = {
-  primary: "bg-molecule-600 text-white hover:bg-molecule-700 shadow-sm shadow-molecule-700/20",
+  primary: "bg-molecule-500 text-white hover:bg-molecule-600 shadow-sm shadow-molecule-700/20",
   ghost: "border border-line bg-white text-vault-900 hover:border-molecule-500 hover:text-molecule-700",
   light: "bg-white text-vault-900 hover:bg-molecule-50",
   "outline-light": "border border-white/40 text-white hover:border-white hover:bg-white/10",
@@ -115,9 +115,10 @@ export function ButtonLink({ href, children, variant = "primary", arrow = true }
   );
 }
 
-export function BackLink({ href, children }: { href: string; children: ReactNode }) {
+export function BackLink({ href, children, tone = "dark" }: { href: string; children: ReactNode; tone?: "dark" | "light" }) {
+  const color = tone === "light" ? "text-vault-100/70 hover:text-molecule-400" : "text-molecule-700 hover:text-molecule-600";
   return (
-    <Link href={href} className="inline-flex items-center gap-1.5 text-sm font-medium text-molecule-700 hover:text-molecule-600">
+    <Link href={href} className={`inline-flex items-center gap-1.5 text-sm font-medium ${color}`}>
       <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden="true" />
       {children}
     </Link>

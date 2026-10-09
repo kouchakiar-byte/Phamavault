@@ -11,19 +11,21 @@ export const siteConfig = {
 export const copy = {
   meta: {
     title: bi(
-      "PharmaVault — Pharmaceutical Knowledge & Intelligence Platform",
-      "PharmaVault — پلتفرم دانش و اطلاعات هوشمند دارویی",
+      "PharmaVault — Pharmaceutical Knowledge & Formulation Intelligence",
+      "PharmaVault — دانش دارویی و هوشمندی فرمولاسیون",
     ),
     description: bi(
-      "Handbooks, supplier records, excipient and raw material data, calculators, formulation tools and regulatory references, all in one place.",
-      "هندبوک‌ها، بانک تأمین‌کنندگان، بانک اکسیپیان و مواد اولیه، ماشین‌حساب‌های دارویی، ابزار فرمولاسیون و منابع رگولاتوری، همه در یک جا.",
+      "A knowledge platform for pharmaceutical R&D, quality and regulatory teams: excipient and API databases, a raw material supplier directory, pharmaceutical calculations, GMP-aligned SOPs and CTD/ICH references.",
+      "پلتفرم دانش تخصصی برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری: پایگاه‌های داده مواد جانبی و مواد مؤثره، فهرست تأمین‌کنندگان مواد اولیه، محاسبات داروسازی، دستورالعمل‌های منطبق بر GMP و مرجع CTD و ICH.",
     ),
   },
-  platform: bi("Pharmaceutical Knowledge & Intelligence Platform", "پلتفرم دانش و اطلاعات هوشمند دارویی"),
+  platform: bi("Pharmaceutical Knowledge & Formulation Intelligence", "دانش دارویی و هوشمندی فرمولاسیون"),
+  slogan: bi("Your Gateway to Pharmaceutical Development", "دروازه شما به توسعه دارو"),
 
   nav: {
+    home: bi("Home", "خانه"),
     sections: bi("Sections", "بخش‌ها"),
-    tools: bi("Tools", "ابزارها"),
+    tools: bi("Calculations", "محاسبات"),
     plans: bi("Plans", "اشتراک"),
     enterprise: bi("Enterprise", "راهکار سازمانی"),
     requestAccess: bi("Request access", "درخواست دسترسی"),
@@ -35,40 +37,82 @@ export const copy = {
   },
 
   hero: {
-    eyebrow: bi("Pharmaceutical Knowledge & Intelligence Platform", "پلتفرم دانش و اطلاعات هوشمند دارویی"),
-    title: bi("Everything a pharmaceutical company looks for", "هر چیزی که یک شرکت داروسازی دنبالش می‌گردد"),
-    departments: [
-      bi("R&D", "تحقیق و توسعه"),
-      bi("Quality Control", "کنترل کیفیت"),
-      bi("Quality Assurance", "تضمین کیفیت"),
-      bi("Commercial", "بازرگانی"),
-      bi("Production", "تولید"),
-      bi("Regulatory Affairs", "رگولاتوری"),
-    ],
+    eyebrow: bi("Pharmaceutics · R&D · Formulation Science", "داروسازی · تحقیق و توسعه · علم فرمولاسیون"),
     lead: bi(
-      "Handbooks, supplier records, excipient and raw material data, calculators, formulation tools and regulatory references, all in one place.",
-      "هندبوک‌ها، بانک تأمین‌کنندگان، بانک اکسیپیان و مواد اولیه، ماشین‌حساب‌های دارویی، ابزار فرمولاسیون و منابع رگولاتوری، همه در یک جا.",
+      "A professional knowledge platform for pharmaceutical R&D, quality and regulatory teams — from pre-formulation and excipient selection to GMP documentation and the CTD dossier.",
+      "پلتفرم دانش تخصصی برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری — از پیش‌فرمولاسیون و انتخاب مواد جانبی تا مستندسازی GMP و پرونده CTD.",
     ),
-    seePlans: bi("See plans", "مشاهده اشتراک‌ها"),
     browse: bi("Browse the sections", "مرور بخش‌ها"),
-    sampleRecord: bi("Sample record", "رکورد نمونه"),
+    seePlans: bi("See plans", "مشاهده اشتراک‌ها"),
+    pillars: [
+      {
+        title: bi("Evidence-based", "مستند و علمی"),
+        text: bi("Grounded in pharmacopoeias (USP–NF, Ph. Eur.) and ICH guidelines", "مبتنی بر فارماکوپه‌ها (USP–NF، Ph. Eur.) و راهنماهای ICH"),
+      },
+      {
+        title: bi("Development-oriented", "توسعه‌محور"),
+        text: bi("From pre-formulation to scale-up and technology transfer", "از پیش‌فرمولاسیون تا افزایش مقیاس و انتقال فناوری"),
+      },
+      {
+        title: bi("GMP & regulatory-ready", "منطبق بر GMP و الزامات رگولاتوری"),
+        text: bi("Structured around CTD, the ICH Q series and PIC/S GMP", "ساختاریافته بر پایه CTD، راهنماهای سری Q ICH و PIC/S GMP"),
+      },
+    ],
+  },
+
+  audience: {
+    title: bi("Built for every function of a pharmaceutical company", "برای همه واحدهای یک شرکت داروسازی"),
+    items: [
+      bi("Research & Development (R&D)", "تحقیق و توسعه (R&D)"),
+      bi("Quality Control (QC)", "کنترل کیفیت (QC)"),
+      bi("Quality Assurance (QA)", "تضمین کیفیت (QA)"),
+      bi("Production", "تولید"),
+      bi("Regulatory Affairs", "امور رگولاتوری"),
+      bi("Supply chain & procurement", "تأمین و بازرگانی"),
+    ],
   },
 
   sectionsIntro: {
-    eyebrow: bi("Inside the vault", "بخش‌های سایت"),
-    title: bi("Nine sections, one login", "نه بخش، یک حساب کاربری"),
+    eyebrow: bi("Inside the vault", "بخش‌های پلتفرم"),
+    title: bi("Nine specialised sections, one integrated platform", "نُه بخش تخصصی در یک پلتفرم یکپارچه"),
     lead: bi(
-      "Records link to each other: from an excipient you reach its suppliers, the calculator that uses it and the regulatory requirement that covers it.",
-      "رکوردها به هم وصل‌اند: از یک اکسیپیان به تأمین‌کننده‌هایش، به ماشین‌حساب مرتبط و به الزام رگولاتوری آن می‌رسید.",
+      "Records are cross-linked: from an excipient you reach its suppliers, the relevant calculation and the regulatory requirement that applies.",
+      "اطلاعات به هم پیوسته‌اند: از هر ماده جانبی به تأمین‌کنندگان آن، محاسبه مرتبط و الزام رگولاتوری مربوط می‌رسید.",
     ),
+    open: bi("Open section", "ورود به بخش"),
+  },
+
+  databases: {
+    eyebrow: bi("Databases", "پایگاه‌های داده"),
+    title: bi("Curated reference data", "داده‌های مرجع گزینش‌شده"),
+    lead: bi(
+      "Searchable in Persian and English, by trade name or CAS number.",
+      "قابل جستجو به فارسی و انگلیسی، با نام تجاری یا شماره CAS.",
+    ),
+    units: {
+      excipients: bi("excipients", "ماده جانبی"),
+      suppliers: bi("suppliers · {p} materials", "تأمین‌کننده · {p} قلم ماده"),
+      materials: bi("APIs, vitamins and mineral salts", "ماده مؤثره، ویتامین و املاح معدنی"),
+      qa: bi("standard operating procedures", "دستورالعمل استاندارد"),
+    },
+  },
+
+  toolsShowcase: {
+    eyebrow: bi("Pharmaceutical calculations", "محاسبات داروسازی"),
+    title: bi("Eight calculators built on standard pharmaceutical equations", "هشت ماشین‌حساب بر پایه معادلات استاندارد داروسازی"),
+    lead: bi(
+      "Results update as you type, with the governing equation shown under each calculator.",
+      "نتیجه هم‌زمان با ورود داده محاسبه می‌شود و معادله مبنا زیر هر ماشین‌حساب آمده است.",
+    ),
+    open: bi("Open calculations", "ورود به محاسبات"),
   },
 
   plans: {
     eyebrow: bi("Plans", "اشتراک"),
-    title: bi("Subscribe monthly or yearly", "اشتراک ماهانه یا سالانه"),
+    title: bi("Subscription plans — monthly or annual", "طرح‌های اشتراک — ماهانه یا سالانه"),
     lead: bi(
-      "All three plans open the nine sections. They differ in the number of users and the level of data access.",
-      "هر سه پلن به نه بخش دسترسی دارند؛ تفاوت در تعداد کاربر و سطح دسترسی به داده است.",
+      "All three plans give access to the nine sections; they differ in the number of users and the level of data access.",
+      "هر سه طرح به نُه بخش دسترسی دارند؛ تفاوت آن‌ها در تعداد کاربران و سطح دسترسی به داده‌هاست.",
     ),
     items: [
       {
@@ -78,10 +122,10 @@ export const copy = {
         price: bi("Price set at launch", "قیمت: زمان راه‌اندازی اعلام می‌شود"),
         features: [
           bi("One user", "یک کاربر"),
-          bi("Handbook library", "کتابخانه هندبوک‌ها"),
-          bi("Calculators and formulation tools", "ماشین‌حساب‌ها و ابزار فرمولاسیون"),
-          bi("Search in the excipient and raw material databases", "جستجو در بانک اکسیپیان و مواد اولیه"),
-          bi("Regulatory resources", "منابع رگولاتوری"),
+          bi("Technical handbook library", "کتابخانه هندبوک‌های تخصصی"),
+          bi("Pharmaceutical calculations and formulation design tools", "محاسبات داروسازی و ابزارهای طراحی فرمولاسیون"),
+          bi("Excipient and API databases", "پایگاه‌های داده مواد جانبی و مواد مؤثره"),
+          bi("CTD and ICH regulatory references", "مرجع رگولاتوری CTD و ICH"),
         ],
         cta: bi("Request access", "درخواست دسترسی"),
         style: "ghost",
@@ -89,12 +133,12 @@ export const copy = {
       {
         id: "team",
         name: bi("Team", "تیمی"),
-        who: bi("For a company's R&D or QC unit", "برای واحد R&D یا QC یک شرکت"),
+        who: bi("For a company's R&D or QC department", "برای واحد تحقیق و توسعه یا کنترل کیفیت یک شرکت"),
         price: bi("Price set at launch", "قیمت: زمان راه‌اندازی اعلام می‌شود"),
         features: [
           bi("Several users on one subscription", "چند کاربر با یک اشتراک"),
           bi("Everything in Individual", "همه امکانات پلن فردی"),
-          bi("Supplier Database", "بانک تأمین‌کنندگان"),
+          bi("Raw material supplier directory", "پایگاه داده تأمین‌کنندگان مواد اولیه"),
           bi("Shared saved formulas and calculations", "فرمول‌ها و محاسبات ذخیره‌شده مشترک"),
           bi("User management by the unit head", "مدیریت کاربران توسط مدیر واحد"),
         ],
@@ -108,8 +152,8 @@ export const copy = {
         price: bi("Priced by contract", "قیمت: بر اساس قرارداد"),
         features: [
           bi("Organisation-wide multi-user access", "دسترسی سازمانی چندکاربره"),
-          bi("Access levels by role and department", "سطوح دسترسی بر اساس نقش و واحد"),
-          bi("Database delivered with restricted access", "دریافت دیتابیس با دسترسی محدود"),
+          bi("Role- and department-based access control", "کنترل دسترسی بر اساس نقش و واحد سازمانی"),
+          bi("Database delivery with restricted access", "تحویل پایگاه داده با دسترسی کنترل‌شده"),
           bi("Company-specific handbooks and software", "هندبوک و نرم‌افزار اختصاصی شرکت"),
           bi("Dedicated support", "پشتیبانی اختصاصی"),
         ],
@@ -134,10 +178,10 @@ export const copy = {
         ),
       },
       {
-        title: bi("Database licence", "لایسنس دیتابیس"),
+        title: bi("Database licence", "مجوز استفاده از پایگاه داده"),
         text: bi(
           "A copy of the databases with restricted access, for use inside the organisation.",
-          "نسخه‌ای از بانک‌های داده با دسترسی محدود، برای استفاده داخل سازمان.",
+          "نسخه‌ای از پایگاه‌های داده با دسترسی کنترل‌شده، برای استفاده درون سازمان.",
         ),
       },
     ],
@@ -145,12 +189,19 @@ export const copy = {
 
   contact: {
     eyebrow: bi("Contact", "تماس"),
-    title: bi("Request access or a quote", "درخواست دسترسی یا پیش‌فاکتور"),
+    title: bi("Have a formulation, quality or regulatory question?", "پرسشی در زمینه فرمولاسیون، کیفیت یا امور رگولاتوری دارید؟"),
     lead: bi(
-      "Send your request by email: the plan you need, the number of users and your company's name.",
-      "درخواست خود را ایمیل کنید: پلن موردنیاز، تعداد کاربران و نام شرکت.",
+      "To request access or a quote, email us the plan you need, the number of users and your company's name.",
+      "برای درخواست دسترسی یا پیش‌فاکتور، طرح موردنیاز، تعداد کاربران و نام شرکت را ایمیل کنید.",
     ),
-    email: bi("Email us", "ارسال ایمیل"),
+  },
+
+  footer: {
+    about: bi(
+      "A knowledge and R&D platform for pharmaceutical formulation, quality and regulatory affairs.",
+      "پلتفرم دانش و تحقیق و توسعه در حوزه فرمولاسیون دارویی، کیفیت و امور رگولاتوری.",
+    ),
+    plans: bi("Plans & enterprise", "اشتراک و راهکار سازمانی"),
   },
 
   common: {

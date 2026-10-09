@@ -23,7 +23,7 @@ export default async function QaPage() {
   const locale = await getLocale();
   return (
     <>
-      <PageHeader locale={locale} plate="QA" eyebrow={page.eyebrow} title={page.title} lead={page.lead} />
+      <PageHeader locale={locale} section="qa" title={page.title} lead={page.lead} />
       <Container className="py-12">
         <p className="mb-6 rounded-card border-2 border-dashed border-molecule-400 bg-molecule-50 px-5 py-3.5 text-sm text-molecule-700">
           {page.ready[locale]}

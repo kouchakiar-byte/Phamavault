@@ -2,7 +2,7 @@
  {
   "title": {
    "en": "Solid oral dosage forms",
-   "fa": "اشکال جامد خوراکی"
+   "fa": "اشکال دارویی جامد خوراکی"
   },
   "items": [
    {
@@ -30,7 +30,7 @@
  {
   "title": {
    "en": "Semi-solid dosage forms",
-   "fa": "اشکال نیمه‌جامد"
+   "fa": "اشکال دارویی نیمه‌جامد"
   },
   "items": [
    {
@@ -57,8 +57,8 @@
  },
  {
   "title": {
-   "en": "Oral liquids",
-   "fa": "مایعات خوراکی"
+   "en": "Oral liquid dosage forms",
+   "fa": "اشکال دارویی مایع خوراکی"
   },
   "items": [
    {
@@ -85,8 +85,8 @@
  },
  {
   "title": {
-   "en": "Sterile products",
-   "fa": "فرآورده‌های استریل"
+   "en": "Sterile products (parenteral and ophthalmic)",
+   "fa": "فرآورده‌های استریل (تزریقی و چشمی)"
   },
   "items": [
    {
@@ -137,8 +137,8 @@
  },
  {
   "title": {
-   "en": "Vitamins and supplements",
-   "fa": "ویتامین‌ها و مکمل‌ها"
+   "en": "Vitamins and dietary supplements",
+   "fa": "ویتامین‌ها و مکمل‌های غذایی"
   },
   "items": [
    {
@@ -162,7 +162,7 @@
  {
   "title": {
    "en": "Scale-up and technology transfer",
-   "fa": "افزایش مقیاس و انتقال فناوری"
+   "fa": "افزایش مقیاس (Scale-up) و انتقال فناوری"
   },
   "items": [
    {
@@ -185,8 +185,8 @@
  },
  {
   "title": {
-   "en": "Analytical methods and stability",
-   "fa": "روش‌های آنالیز و پایداری"
+   "en": "Analytical methods and stability studies",
+   "fa": "روش‌های آنالیز و مطالعات پایداری"
   },
   "items": [
    {

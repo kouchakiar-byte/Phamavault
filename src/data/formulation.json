@@ -1,52 +1,52 @@
 {
  "functions": {
   "api": {
-   "en": "Active ingredient",
-   "fa": "ماده مؤثره"
+   "en": "Active pharmaceutical ingredient (API)",
+   "fa": "ماده مؤثره دارویی (API)"
   },
   "dil": {
-   "en": "Diluent",
-   "fa": "پرکننده"
+   "en": "Diluent (filler)",
+   "fa": "رقیق‌کننده (پرکننده)"
   },
   "bin": {
    "en": "Binder",
-   "fa": "چسباننده"
+   "fa": "چسباننده (بایندر)"
   },
   "dis": {
    "en": "Disintegrant",
-   "fa": "بازکننده"
+   "fa": "متلاشی‌کننده (دیس‌اینتگرانت)"
   },
   "gli": {
    "en": "Glidant",
-   "fa": "گلایدانت"
+   "fa": "بهبوددهنده جریان پودر (گلایدانت)"
   },
   "lub": {
    "en": "Lubricant",
-   "fa": "روان‌کننده"
+   "fa": "لغزان‌کننده (لوبریکانت)"
   },
   "stf": {
    "en": "Stiffening agent",
-   "fa": "قوام‌دهنده"
+   "fa": "عامل قوام‌دهنده"
   },
   "emo": {
    "en": "Emollient",
-   "fa": "نرم‌کننده"
+   "fa": "امولینت (نرم‌کننده پوست)"
   },
   "emu": {
-   "en": "Emulsifier",
-   "fa": "امولسیفایر"
+   "en": "Emulsifying agent",
+   "fa": "امولسی‌فایر"
   },
   "hum": {
    "en": "Humectant",
-   "fa": "مرطوب‌کننده"
+   "fa": "هیومکتانت (رطوبت‌گیر)"
   },
   "pre": {
-   "en": "Preservative",
-   "fa": "نگهدارنده"
+   "en": "Antimicrobial preservative",
+   "fa": "نگهدارنده ضدمیکروبی"
   },
   "veh": {
    "en": "Vehicle",
-   "fa": "حامل"
+   "fa": "حامل (Vehicle)"
   },
   "bas": {
    "en": "Ointment base",
@@ -54,50 +54,50 @@
   },
   "gel": {
    "en": "Gelling agent",
-   "fa": "ژل‌ساز"
+   "fa": "عامل ژل‌ساز"
   },
   "neu": {
-   "en": "Neutraliser (adjust to pH 6–7)",
-   "fa": "خنثی‌کننده (تنظیم تا pH 6–7)"
+   "en": "Neutralising agent (adjust to pH 6–7)",
+   "fa": "عامل خنثی‌کننده (تنظیم pH به 6 تا 7)"
   },
   "che": {
    "en": "Chelating agent",
-   "fa": "شلاته‌کننده"
+   "fa": "عامل کی‌لیت‌کننده"
   },
   "swe": {
-   "en": "Sweetener",
+   "en": "Sweetening agent",
    "fa": "شیرین‌کننده"
   },
   "cos": {
-   "en": "Cosolvent",
-   "fa": "کمک‌حلال"
+   "en": "Co-solvent",
+   "fa": "کمک‌حلال (Co-solvent)"
   },
   "aci": {
-   "en": "pH adjuster",
-   "fa": "تنظیم‌کننده pH"
+   "en": "pH adjuster (acidulant)",
+   "fa": "تنظیم‌کننده pH (اسیدی‌کننده)"
   },
   "fla": {
-   "en": "Flavour",
+   "en": "Flavouring agent",
    "fa": "طعم‌دهنده"
   },
   "sus": {
    "en": "Suspending agent",
-   "fa": "معلق‌کننده"
+   "fa": "عامل تعلیق‌دهنده"
   },
   "wet": {
    "en": "Wetting agent",
-   "fa": "ترکننده"
+   "fa": "عامل ترکننده (Wetting agent)"
   }
  },
  "api": {
-  "en": "Active ingredient",
-  "fa": "ماده مؤثره"
+  "en": "Active pharmaceutical ingredient (API)",
+  "fa": "ماده مؤثره دارویی (API)"
  },
  "templates": [
   {
    "name": {
-    "en": "Tablet, direct compression",
-    "fa": "قرص، فشردن مستقیم"
+    "en": "Tablet — direct compression",
+    "fa": "قرص — پرس مستقیم (Direct compression)"
    },
    "rows": [
     {
@@ -129,8 +129,8 @@
   },
   {
    "name": {
-    "en": "Tablet, wet granulation",
-    "fa": "قرص، گرانولاسیون مرطوب"
+    "en": "Tablet — wet granulation",
+    "fa": "قرص — گرانولاسیون مرطوب (Wet granulation)"
    },
    "rows": [
     {
@@ -162,8 +162,8 @@
   },
   {
    "name": {
-    "en": "Hard capsule",
-    "fa": "کپسول سخت"
+    "en": "Hard gelatin capsule",
+    "fa": "کپسول سخت ژلاتینی"
    },
    "rows": [
     {
@@ -195,8 +195,8 @@
   },
   {
    "name": {
-    "en": "Cream, oil in water",
-    "fa": "کرم، روغن در آب"
+    "en": "Cream — oil-in-water (O/W) emulsion",
+    "fa": "کرم — امولسیون روغن در آب (O/W)"
    },
    "rows": [
     {
@@ -248,8 +248,8 @@
   },
   {
    "name": {
-    "en": "Ointment",
-    "fa": "پماد"
+    "en": "Ointment (hydrocarbon base)",
+    "fa": "پماد (پایه هیدروکربنی)"
    },
    "rows": [
     {
@@ -271,8 +271,8 @@
   },
   {
    "name": {
-    "en": "Hydrogel",
-    "fa": "ژل آبی"
+    "en": "Hydrogel (carbomer)",
+    "fa": "هیدروژل (کربومر)"
    },
    "rows": [
     {

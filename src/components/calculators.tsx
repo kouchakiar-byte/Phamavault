@@ -5,6 +5,7 @@ import { X } from "lucide-react";
 import { bi, type Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { copy } from "@/content/site";
+import { calculation } from "@/content/calculations";
 import { fixed, sig } from "./calc-format";
 import { BiTitle } from "./ui";
 
@@ -152,7 +153,7 @@ function Hlb({ ctx }: { ctx: Ctx }) {
   return (
     <Panel
       ctx={ctx}
-      title={bi("HLB emulsifier blend", "مخلوط امولسیفایر بر اساس HLB")}
+      title={calculation("hlb").title}
       form={
         <>
           <PresetSelect ctx={ctx} id="h-pair" label={bi("Emulsifier pair", "زوج امولسیفایر")} presets={hlbPairs} targets={["h-lo", "h-hi"]} />
@@ -195,7 +196,7 @@ function Iso({ ctx }: { ctx: Ctx }) {
   return (
     <Panel
       ctx={ctx}
-      title={bi("Isotonicity by sodium chloride equivalent", "ایزوتونیسیته به روش معادل سدیم کلراید")}
+      title={calculation("iso").title}
       form={
         <>
           <NumberInput ctx={ctx} id="i-c" label={bi("Drug concentration (% w/v)", "غلظت دارو (% وزنی/حجمی)")} />
@@ -233,7 +234,7 @@ function Dil({ ctx }: { ctx: Ctx }) {
   return (
     <Panel
       ctx={ctx}
-      title={bi("Dilution and alligation", "رقیق‌سازی و آلیگیشن")}
+      title={calculation("dil").title}
       form={
         <>
           <NumberInput ctx={ctx} id="d-hi" label={bi("Higher strength", "غلظت بالاتر")} />
@@ -284,7 +285,7 @@ function Buf({ ctx }: { ctx: Ctx }) {
   return (
     <Panel
       ctx={ctx}
-      title={bi("Buffer composition (Henderson–Hasselbalch)", "ترکیب بافر (هندرسون–هاسلباخ)")}
+      title={calculation("buf").title}
       form={
         <>
           <PresetSelect ctx={ctx} id="b-sys" label={bi("Buffer system", "سیستم بافری")} presets={bufferSystems} targets={["b-pka"]} />
@@ -324,7 +325,7 @@ function Sup({ ctx }: { ctx: Ctx }) {
   return (
     <Panel
       ctx={ctx}
-      title={bi("Suppository base by displacement value", "پایه شیاف با ضریب جابه‌جایی")}
+      title={calculation("sup").title}
       form={
         <>
           <NumberInput ctx={ctx} id="s-cap" label={bi("Mould capacity (g of base)", "ظرفیت قالب (گرم پایه)")} />
@@ -373,7 +374,7 @@ function Meq({ ctx }: { ctx: Ctx }) {
   return (
     <Panel
       ctx={ctx}
-      title={bi("mg, mmol and mEq conversion", "تبدیل mg، mmol و mEq")}
+      title={calculation("meq").title}
       form={
         <>
           <PresetSelect ctx={ctx} id="m-salt" label={bi("Substance", "ماده")} presets={salts} targets={["m-mw", "m-val"]} />
@@ -433,7 +434,7 @@ function Vit({ ctx }: { ctx: Ctx }) {
   return (
     <Panel
       ctx={ctx}
-      title={bi("Vitamin unit converter", "تبدیل واحد ویتامین")}
+      title={calculation("vit").title}
       form={
         <>
           <div className="flex flex-col gap-1.5">
@@ -502,7 +503,7 @@ function Batch({ ctx }: { ctx: Ctx }) {
   return (
     <Panel
       ctx={ctx}
-      title={bi("Batch scale-up", "افزایش مقیاس بچ")}
+      title={calculation("bat").title}
       form={
         <>
           <NumberInput ctx={ctx} id="x-units" label={bi("Batch size (units)", "اندازه بچ (تعداد واحد)")} />
@@ -583,15 +584,15 @@ function Batch({ ctx }: { ctx: Ctx }) {
 // ---------- bench ----------
 
 const tabs = [
-  { key: "hlb", label: bi("HLB blend", "مخلوط HLB"), Calc: Hlb },
-  { key: "iso", label: bi("Isotonicity", "ایزوتونیسیته"), Calc: Iso },
-  { key: "dil", label: bi("Dilution and alligation", "رقیق‌سازی و آلیگیشن"), Calc: Dil },
-  { key: "buf", label: bi("Buffer", "بافر"), Calc: Buf },
-  { key: "sup", label: bi("Suppository base", "پایه شیاف"), Calc: Sup },
-  { key: "meq", label: bi("mg, mmol, mEq", "mg، mmol، mEq"), Calc: Meq },
-  { key: "vit", label: bi("Vitamin converter", "تبدیل ویتامین"), Calc: Vit },
-  { key: "bat", label: bi("Batch scale-up", "افزایش مقیاس بچ"), Calc: Batch },
-];
+  { key: "hlb", Calc: Hlb },
+  { key: "iso", Calc: Iso },
+  { key: "dil", Calc: Dil },
+  { key: "buf", Calc: Buf },
+  { key: "sup", Calc: Sup },
+  { key: "meq", Calc: Meq },
+  { key: "vit", Calc: Vit },
+  { key: "bat", Calc: Batch },
+] as const;
 
 const defaults: Values = {
   "h-pair": "0", "h-lo": "4.3", "h-hi": "15.0", "h-req": "10.5", "h-mass": "5",
@@ -605,7 +606,7 @@ const defaults: Values = {
 };
 
 export function Calculators({ locale }: { locale: Locale }) {
-  const [active, setActive] = useState("hlb");
+  const [active, setActive] = useState<string>("hlb");
   const [values, setValues] = useState(defaults);
   const ctx: Ctx = { locale, v: values, set: (k, val) => setValues((prev) => ({ ...prev, [k]: val })) };
 
@@ -623,7 +624,7 @@ export function Calculators({ locale }: { locale: Locale }) {
             onClick={() => setActive(t.key)}
             className="rounded-xl border border-line bg-white px-4 py-2.5 text-start text-sm font-medium text-ink transition hover:border-molecule-500 aria-selected:border-molecule-600 aria-selected:bg-molecule-600 aria-selected:text-white"
           >
-            {t.label[locale]}
+            {calculation(t.key).label[locale]}
           </button>
         ))}
       </div>

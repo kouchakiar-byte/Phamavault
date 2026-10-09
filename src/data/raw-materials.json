@@ -1,16 +1,16 @@
 {
  "groups": {
   "api": {
-   "en": "Active ingredient",
-   "fa": "ماده مؤثره"
+   "en": "Active pharmaceutical ingredient (API)",
+   "fa": "ماده مؤثره دارویی (API)"
   },
   "vit": {
    "en": "Vitamin",
    "fa": "ویتامین"
   },
   "min": {
-   "en": "Mineral",
-   "fa": "ماده معدنی"
+   "en": "Mineral salt",
+   "fa": "املاح معدنی"
   }
  },
  "items": [

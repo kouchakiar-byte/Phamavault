@@ -1,104 +1,104 @@
 {
  "functions": {
   "dil": {
-   "en": "Diluent",
-   "fa": "پرکننده"
+   "en": "Diluent (filler)",
+   "fa": "رقیق‌کننده (پرکننده)"
   },
   "bin": {
    "en": "Binder",
-   "fa": "چسباننده"
+   "fa": "چسباننده (بایندر)"
   },
   "dis": {
    "en": "Disintegrant",
-   "fa": "بازکننده"
+   "fa": "متلاشی‌کننده (دیس‌اینتگرانت)"
   },
   "lub": {
    "en": "Lubricant",
-   "fa": "روان‌کننده"
+   "fa": "لغزان‌کننده (لوبریکانت)"
   },
   "gli": {
    "en": "Glidant",
-   "fa": "گلایدانت"
+   "fa": "بهبوددهنده جریان پودر (گلایدانت)"
   },
   "sur": {
    "en": "Surfactant, emulsifier",
-   "fa": "سورفکتانت، امولسیفایر"
+   "fa": "سورفکتانت، امولسی‌فایر"
   },
   "bas": {
    "en": "Semi-solid base, emollient",
-   "fa": "پایه نیمه‌جامد، نرم‌کننده"
+   "fa": "پایه نیمه‌جامد، امولینت"
   },
   "gel": {
-   "en": "Gelling, viscosity agent",
-   "fa": "ژل‌ساز، قوام‌دهنده"
+   "en": "Gelling agent, viscosity modifier",
+   "fa": "عامل ژل‌ساز، اصلاح‌کننده ویسکوزیته"
   },
   "sol": {
    "en": "Solvent, humectant",
-   "fa": "حلال، مرطوب‌کننده"
+   "fa": "حلال، هیومکتانت (رطوبت‌گیر)"
   },
   "pre": {
-   "en": "Preservative",
-   "fa": "نگهدارنده"
+   "en": "Antimicrobial preservative",
+   "fa": "نگهدارنده ضدمیکروبی"
   },
   "aox": {
-   "en": "Antioxidant, chelator",
-   "fa": "آنتی‌اکسیدان، شلاته‌کننده"
+   "en": "Antioxidant, chelating agent",
+   "fa": "آنتی‌اکسیدان، عامل کی‌لیت‌کننده"
   },
   "swe": {
-   "en": "Sweetener",
+   "en": "Sweetening agent",
    "fa": "شیرین‌کننده"
   },
   "ton": {
-   "en": "Tonicity agent",
-   "fa": "تنظیم‌کننده تونیسیته"
+   "en": "Tonicity-adjusting agent",
+   "fa": "عامل تنظیم تونیسیته"
   },
   "coa": {
-   "en": "Coating, film former",
-   "fa": "روکش، فیلم‌ساز"
+   "en": "Coating agent, film former",
+   "fa": "عامل پوشش‌دهنده، فیلم‌ساز"
   },
   "plz": {
    "en": "Plasticiser",
-   "fa": "پلاستی‌سایزر"
+   "fa": "پلاستی‌سایزر (نرم‌کننده پلیمر)"
   },
   "pol": {
-   "en": "Release-controlling polymer",
-   "fa": "پلیمر کنترل رهش"
+   "en": "Release-modifying polymer",
+   "fa": "پلیمر تعدیل‌کننده رهش"
   },
   "slb": {
-   "en": "Solubiliser",
-   "fa": "حل‌کننده"
+   "en": "Solubilising agent",
+   "fa": "عامل افزایش حلالیت (سالوبیلایزر)"
   },
   "oil": {
-   "en": "Oily vehicle",
+   "en": "Oleaginous vehicle",
    "fa": "حامل روغنی"
   },
   "enh": {
    "en": "Penetration enhancer",
-   "fa": "افزاینده نفوذ"
+   "fa": "افزاینده نفوذ پوستی"
   },
   "buf": {
-   "en": "pH adjuster, buffer",
-   "fa": "تنظیم‌کننده pH، بافر"
+   "en": "pH adjuster, buffering agent",
+   "fa": "تنظیم‌کننده pH، عامل بافری"
   },
   "stb": {
    "en": "Stabiliser, lyoprotectant",
-   "fa": "پایدارکننده"
+   "fa": "پایدارکننده، لیوپروتکتانت"
   },
   "ads": {
    "en": "Adsorbent",
-   "fa": "جاذب"
+   "fa": "جاذب سطحی (ادسوربنت)"
   },
   "fla": {
-   "en": "Flavour",
+   "en": "Flavouring agent",
    "fa": "طعم‌دهنده"
   },
   "col": {
-   "en": "Colourant",
-   "fa": "رنگ"
+   "en": "Colouring agent",
+   "fa": "رنگ‌دهنده"
   },
   "gas": {
-   "en": "Gas",
-   "fa": "گاز"
+   "en": "Propellant / inert gas",
+   "fa": "پیشران / گاز بی‌اثر"
   }
  },
  "forms": {
@@ -115,8 +115,8 @@
    "fa": "مایع"
   },
   "I": {
-   "en": "Sterile",
-   "fa": "استریل"
+   "en": "Sterile (parenteral/ophthalmic)",
+   "fa": "استریل (تزریقی/چشمی)"
   }
  },
  "items": [

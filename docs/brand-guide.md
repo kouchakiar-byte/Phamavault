@@ -5,8 +5,8 @@
 | | |
 | --- | --- |
 | **Name** | PharmaVault (always one word, capital P and V) |
-| **Tagline** | Pharmaceutical Knowledge & Intelligence Platform — *پلتفرم دانش و اطلاعات هوشمند دارویی* |
-| **Headline** | Everything a pharmaceutical company looks for — *هر چیزی که یک شرکت داروسازی دنبالش می‌گردد* |
+| **Tagline** | Pharmaceutical Knowledge & Formulation Intelligence — *دانش دارویی و هوشمندی فرمولاسیون* |
+| **Slogan** | Your Gateway to Pharmaceutical Development — *دروازه شما به توسعه دارو* |
 | **Domain** | pharmavault.ir |
 | **Positioning** | A professional knowledge and R&D platform for pharmaceutical development — not a shop, not a news site. |
 
@@ -28,7 +28,7 @@ regulatory practice — accessible to the people who develop medicines.
 
 ### Voice
 
-- **Scientific, not academic.** Precise terminology, short sentences, practical conclusions.
+- **Scientific terminology.** Use the established technical term (e.g. «متلاشی‌کننده (دیس‌اینتگرانت)», «ماده جانبی», «املاح معدنی», «ایزوتونیسیته به روش معادل NaCl») rather than colloquial wording; short sentences, practical conclusions.
 - **Referenced.** Cite ICH, pharmacopoeias and regulatory guidance where a claim depends on them.
 - **Bilingual by design.** Persian first for the domestic audience; English for international credibility.
   **Every title is shown in both languages side by side** (the reader's language first), on both `/fa` and `/en` — see `BiTitle` in `src/components/ui.tsx`.
@@ -49,20 +49,19 @@ chemistry + protected, curated knowledge.
 
 | Token | Hex | Use |
 | --- | --- | --- |
-| `vault-900` | `#1F426F` | Primary brand navy — headings, enterprise plan, hero gradient start |
-| `vault-950` | `#18355C` | Footer |
-| `vault-800` / `700` | `#2A5288` / `#3864A0` | Hero gradient, hover states |
-| `molecule-600` | `#0D8A84` | Primary buttons and active tabs (white text) |
-| `molecule-500` | `#14A49D` | Icons, illustrations, focus rings |
-| `molecule-400` | `#43CBC3` | Accents on dark backgrounds |
-| `molecule-50` | `#EEF9F8` | Page-header and info tints |
-| `capsule-500` / `400` | `#C39B3D` / `#E0C27A` | Premium accent — use sparingly (logo keyhole) |
-| `paper` | `#F8FAFC` | Page background |
-| `ink` | `#16273D` | Body text |
-| `muted` | `#566A80` | Secondary text |
-| `line` | `#DFE6EF` | Borders and dividers |
+| `vault-900` | `#0B1F3A` | Primary brand navy — hero, page headers, headings, dark surfaces |
+| `vault-950` | `#06111F` | Footer, calculations band |
+| `vault-800` / `700` | `#12305A` / `#1C4373` | Hover states |
+| `molecule-500` | `#0E9F9A` | Primary action colour (buttons, links, icons) |
+| `molecule-400` | `#2CC4BC` | Accents on dark backgrounds |
+| `molecule-50` | `#EDFAF9` | Tinted info surfaces |
+| `capsule-500` / `400` | `#C9A54C` / `#DCBD6D` | Premium accent — use sparingly (slogan, keyhole, prices) |
+| `paper` | `#F6F8FB` | Page background |
+| `ink` | `#0F1B2D` | Body text |
+| `muted` | `#52627A` | Secondary text |
+| `line` | `#DDE4EE` | Borders and dividers |
 
-The palette was lightened in October 2026 at the owner's request (same hues, lighter navy, white page headers).
+This is the original palette, restored in October 2026 at the owner's request after a lighter variant was tried.
 
 Tokens are defined once in `src/app/globals.css` (`@theme`) and used as Tailwind classes (`bg-vault-900`, `text-molecule-500`, …).
 
@@ -78,9 +77,9 @@ Fonts are self-hosted at build time through `next/font/google` (no runtime reque
 
 ## Visual language
 
-- **Scientific / premium, light**: white surfaces, a navy-to-teal gradient only in the home hero, thin borders, restrained shadows.
-- **Hexagonal lattice** pattern (`MoleculePattern`) at low opacity behind the hero, page headers and contact band.
-- **Section illustrations**: animated line drawings per section (`art` in `src/content/sections.ts`), motion disabled for reduced-motion users.
+- **Scientific / premium**: deep navy hero and page headers, white content surfaces, thin borders, restrained shadows.
+- **Hexagonal lattice** pattern (`MoleculePattern`) at 3–5% opacity behind dark sections — never on white.
+- **Section icons**: each section has a Lucide icon on a navy tile (`icon` in `src/content/sections.ts`).
 - **Icons**: Lucide line icons.
 - Rounded corners: 1rem cards, full-pill buttons.
 - RTL/LTR: layouts use logical properties (`ms-`, `ps-`, `start-`), directional icons flip with `rtl:`.

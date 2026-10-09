@@ -14,7 +14,7 @@ export default async function MaterialsPage() {
   const locale = await getLocale();
   return (
     <>
-      <PageHeader locale={locale} plate="RM" eyebrow={page.eyebrow} title={page.title} lead={page.lead} />
+      <PageHeader locale={locale} section="materials" title={page.title} lead={page.lead} />
       <Container className="py-12">
         <MaterialTable locale={locale} data={rawMaterials} />
       </Container>

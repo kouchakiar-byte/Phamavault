@@ -13,7 +13,7 @@ export default async function SuppliersPage() {
   const locale = await getLocale();
   return (
     <>
-      <PageHeader locale={locale} plate="SP" eyebrow={page.eyebrow} title={page.title} lead={page.lead} />
+      <PageHeader locale={locale} section="suppliers" title={page.title} lead={page.lead} />
       <Container className="max-w-5xl py-10">
         <SupplierBank locale={locale} />
       </Container>

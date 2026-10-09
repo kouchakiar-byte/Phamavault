@@ -14,7 +14,7 @@ export default async function FormulationPage() {
   const locale = await getLocale();
   return (
     <>
-      <PageHeader locale={locale} plate="FT" eyebrow={page.eyebrow} title={page.title} lead={page.lead} />
+      <PageHeader locale={locale} section="formulation" title={page.title} lead={page.lead} />
       <Container className="py-12">
         <FormulaBuilder locale={locale} data={formulation} />
       </Container>

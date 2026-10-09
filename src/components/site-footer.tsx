@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { copy, siteConfig } from "@/content/site";
-import { sections } from "@/content/sections";
+import { sectionGroups, sections } from "@/content/sections";
 import { getLocale } from "@/i18n/locale";
 import { href } from "@/lib/paths";
 import { Logo } from "./logo";
@@ -10,44 +10,49 @@ export async function SiteFooter() {
   const locale = await getLocale();
 
   return (
-    <footer className="bg-vault-950 text-vault-100/85">
-      <Container className="grid gap-12 py-14 lg:grid-cols-[1.2fr_2fr]">
-        <div>
+    <footer className="bg-vault-950 text-vault-100/80">
+      <Container className="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-5">
+        <div className="lg:col-span-2">
           <Logo inverted tagline={copy.platform.en} />
-          <p className="mt-5 max-w-sm text-sm leading-relaxed">{copy.platform[locale]}</p>
+          <p className="mt-5 max-w-sm text-sm leading-relaxed">{copy.footer.about[locale]}</p>
           <a
             href={`mailto:${siteConfig.email}`}
-            className="mt-4 inline-block text-sm font-medium text-molecule-400 hover:text-white"
+            className="mt-5 inline-block text-sm font-medium text-molecule-400 hover:text-molecule-100"
             dir="ltr"
           >
             {siteConfig.email}
           </a>
         </div>
-        <nav aria-label={copy.nav.sections[locale]}>
-          <ul className="grid gap-x-8 gap-y-3 text-sm sm:grid-cols-2 lg:grid-cols-3">
-            {sections.map((s) => (
-              <li key={s.slug}>
-                <Link href={href(locale, s.href)} className="hover:text-molecule-400">
-                  {s.title[locale]}
-                </Link>
-              </li>
-            ))}
-            <li>
-              <Link href={href(locale, "#plans")} className="hover:text-molecule-400">
-                {copy.nav.plans[locale]}
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        {sectionGroups.map((g) => (
+          <div key={g.key}>
+            <h2 className="text-sm font-semibold text-white">{g.title[locale]}</h2>
+            <ul className="mt-4 space-y-2.5 text-sm">
+              {sections
+                .filter((s) => s.group === g.key)
+                .map((s) => (
+                  <li key={s.slug}>
+                    <Link href={href(locale, s.href)} className="hover:text-molecule-400">
+                      {s.title[locale]}
+                    </Link>
+                  </li>
+                ))}
+              {g.key === "knowledge" && (
+                <li>
+                  <Link href={href(locale, "#plans")} className="hover:text-molecule-400">
+                    {copy.footer.plans[locale]}
+                  </Link>
+                </li>
+              )}
+            </ul>
+          </div>
+        ))}
       </Container>
       <div className="border-t border-white/10">
-        <Container className="flex flex-col gap-2 py-6 text-xs text-vault-100/70 sm:flex-row sm:justify-between">
+        <Container className="flex flex-col gap-2 py-6 text-xs text-vault-100/60 sm:flex-row sm:justify-between">
           <p>
-            <span dir="ltr">PharmaVault</span> · {copy.platform[locale]}
+            © <span dir="ltr">{siteConfig.name}</span> · {copy.platform[locale]}
           </p>
-          <p className="font-mono" dir="ltr">
-            {siteConfig.domain}
-          </p>
+          <p>{copy.slogan[locale]}</p>
         </Container>
       </div>
     </footer>

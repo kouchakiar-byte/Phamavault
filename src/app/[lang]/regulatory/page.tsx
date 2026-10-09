@@ -29,7 +29,7 @@ export default async function RegulatoryPage() {
   const locale = await getLocale();
   return (
     <>
-      <PageHeader locale={locale} plate="RG" eyebrow={page.eyebrow} title={page.title} lead={page.lead} />
+      <PageHeader locale={locale} section="regulatory" title={page.title} lead={page.lead} />
       <Container className="py-12">
         <SubTitle text={page.ctd} locale={locale} />
         <Accordion items={regulatory.ctd} locale={locale} />
