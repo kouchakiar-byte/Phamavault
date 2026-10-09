@@ -16,7 +16,6 @@ import type { Locale } from "@/i18n/config";
 export const siteConfig = {
   name: "PharmaVault",
   url: "https://pharmavault.ir",
-  // TODO: confirm the public contact address before launch.
   email: "info@pharmavault.ir",
 };
 

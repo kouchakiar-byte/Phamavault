@@ -22,7 +22,7 @@ To give a page its own design, create `src/app/[lang]/<slug>/page.tsx` — it ta
 
 ## Suggested next steps
 
-1. Confirm brand decisions (colours, logo concept, contact email `info@pharmavault.ir`).
+1. Confirm remaining brand decisions (colours, logo concept). Contact email `info@pharmavault.ir` is confirmed.
 2. Write full content for each expertise page (Formulation → Excipients → Regulatory first).
 3. Grow the Knowledge Base: categories, tags, search, related articles.
 4. Resources: start with the guideline library and a glossary; then calculators.
