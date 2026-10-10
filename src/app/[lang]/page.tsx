@@ -7,6 +7,9 @@ import {
   Factory,
   FileCheck,
   FlaskConical,
+  GraduationCap,
+  BookOpenText,
+  Pill,
   Mail,
   Minus,
   ShieldCheck,
@@ -43,6 +46,9 @@ const departmentIcons: Record<string, LucideIcon> = {
   prd: Factory,
   reg: FileCheck,
   sup: Truck,
+  uni: GraduationCap,
+  stu: BookOpenText,
+  pha: Pill,
 };
 
 /** One line of real figures under each section card. */

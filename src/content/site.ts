@@ -15,8 +15,8 @@ export const copy = {
       "PharmaVault — دانش دارویی و هوشمندی فرمولاسیون",
     ),
     description: bi(
-      "A knowledge platform for pharmaceutical R&D, quality and regulatory teams: excipient and API databases, a raw material supplier directory, pharmaceutical calculations, GMP-aligned SOPs and CTD/ICH references.",
-      "پلتفرم دانش تخصصی برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری: پایگاه‌های داده مواد جانبی و مواد مؤثره، فهرست تأمین‌کنندگان مواد اولیه، محاسبات داروسازی، دستورالعمل‌های منطبق بر GMP و مرجع CTD و ICH.",
+      "A knowledge platform for pharmaceutical R&D, quality and regulatory teams, academia and pharmacies: excipient and API databases, a raw material supplier directory, pharmaceutical calculations, GMP-aligned SOPs and CTD/ICH references.",
+      "پلتفرم دانش تخصصی برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری، دانشگاه و داروخانه: پایگاه‌های داده مواد جانبی و مواد مؤثره، فهرست تأمین‌کنندگان مواد اولیه، محاسبات داروسازی، دستورالعمل‌های منطبق بر GMP و مرجع CTD و ICH.",
     ),
   },
   platform: bi("Pharmaceutical Knowledge & Formulation Intelligence", "دانش دارویی و هوشمندی فرمولاسیون"),
@@ -39,8 +39,8 @@ export const copy = {
   hero: {
     eyebrow: bi("Pharmaceutics · R&D · Formulation Science", "داروسازی · تحقیق و توسعه · علم فرمولاسیون"),
     lead: bi(
-      "A curated, cross-referenced knowledge base for the pharmaceutical product lifecycle — excipient and API data, a source-referenced supplier directory, compendial calculations, GMP-aligned SOPs and CTD/ICH references for R&D, quality and regulatory teams.",
-      "پایگاه دانش تخصصی و به‌هم‌پیوسته برای چرخه عمر فرآورده دارویی — داده‌های مواد جانبی و مواد مؤثره، بانک تأمین‌کنندگان با منبع قابل‌راستی‌آزمایی، محاسبات داروسازی، دستورالعمل‌های منطبق بر GMP و مرجع CTD و ICH برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری.",
+      "A curated, cross-referenced knowledge base for the pharmaceutical product lifecycle — excipient and API data, a source-referenced supplier directory, compendial calculations, GMP-aligned SOPs and CTD/ICH references for R&D, quality and regulatory teams, university faculty, students and pharmacies.",
+      "پایگاه دانش تخصصی و به‌هم‌پیوسته برای چرخه عمر فرآورده دارویی — داده‌های مواد جانبی و مواد مؤثره، بانک تأمین‌کنندگان با منبع قابل‌راستی‌آزمایی، محاسبات داروسازی، دستورالعمل‌های منطبق بر GMP و مرجع CTD و ICH برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری، اساتید دانشگاه، دانشجویان و داروخانه‌ها.",
     ),
     browse: bi("Browse the sections", "مرور بخش‌ها"),
     supplierSearch: bi("Search the supplier bank", "جستجو در بانک تأمین‌کنندگان"),
@@ -73,11 +73,11 @@ export const copy = {
   },
 
   departments: {
-    eyebrow: bi("By department", "به تفکیک واحد"),
-    title: bi("Built for every function of a pharmaceutical company", "طراحی‌شده برای همه واحدهای یک شرکت داروسازی"),
+    eyebrow: bi("Who it is for", "برای چه کسانی"),
+    title: bi("Built for industry, academia and pharmacy", "طراحی‌شده برای صنعت دارو، دانشگاه و داروخانه"),
     lead: bi(
-      "Each team gets the references and tools it uses every day — in one subscription.",
-      "هر واحد، مراجع و ابزارهایی را که هر روز به آن‌ها نیاز دارد، در یک اشتراک در اختیار دارد.",
+      "Every department of a pharmaceutical company — and faculty, students and pharmacists — gets the references and tools they use every day, in one subscription.",
+      "هر واحد شرکت داروسازی، و همچنین اساتید، دانشجویان و داروسازان داروخانه، مراجع و ابزارهایی را که هر روز به آن‌ها نیاز دارند در یک اشتراک در اختیار دارند.",
     ),
     items: [
       {
@@ -120,8 +120,8 @@ export const copy = {
         key: "reg",
         title: bi("Regulatory Affairs", "امور رگولاتوری"),
         points: [
-          bi("CTD Modules 1–5 with the Module 3 structure (3.2.S and 3.2.P)", "ماژول‌های ۱ تا ۵ CTD همراه با ساختار ماژول ۳ (\u20663.2.S\u2069 و \u20663.2.P\u2069)"),
-          bi("Searchable ICH quality (Q1–Q14) and multidisciplinary (M4, M7, M9, M10) guidelines", "راهنماهای کیفیت ICH (\u2066Q1–Q14\u2069) و چندرشته‌ای (\u2066M4, M7, M9, M10\u2069) با امکان جستجو"),
+          bi("CTD Modules 1–5 with the Module 3 structure (3.2.S and 3.2.P)", "ماژول‌های ۱ تا ۵ CTD، شامل بخش‌های \u20663.2.S\u2069 و \u20663.2.P\u2069 در ماژول ۳"),
+          bi("Searchable ICH quality (Q1–Q14) and multidisciplinary (M4, M7, M9, M10) guidelines", "راهنماهای کیفیت ICH از \u2066Q1\u2069 تا \u2066Q14\u2069 و راهنماهای چندرشته‌ای \u2066M4\u2069، \u2066M7\u2069، \u2066M9\u2069 و \u2066M10\u2069، با امکان جستجو"),
           bi("Long-term, intermediate and accelerated stability conditions", "شرایط مطالعات پایداری بلندمدت، میانی و تسریع‌شده"),
         ],
       },
@@ -132,6 +132,33 @@ export const copy = {
           bi("Domestic manufacturers and importers of pharmaceutical, supplement and cosmetic raw materials", "تولیدکنندگان و واردکنندگان داخلی مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی"),
           bi("Synonym-aware search by Persian or English name, salt form or trade name", "جستجوی هوشمند با نام فارسی یا انگلیسی، فرم نمکی یا نام تجاری"),
           bi("Credibility-ranked results with the source of every record", "نتایج رتبه‌بندی‌شده بر اساس اعتبار، همراه با منبع هر رکورد"),
+        ],
+      },
+      {
+        key: "uni",
+        title: bi("University faculty", "اساتید دانشگاه"),
+        points: [
+          bi("Structured reference material for teaching pharmaceutics and industrial pharmacy", "مرجع ساختاریافته برای تدریس فارماسیوتیکس و داروسازی صنعتی"),
+          bi("Excipient data and starting formulations for eight dosage forms as worked course examples", "داده‌های مواد جانبی و فرمول پایه هشت شکل دارویی به‌عنوان مثال‌های درسی"),
+          bi("CTD structure and ICH guidelines for regulatory affairs and GMP courses", "ساختار CTD و راهنماهای ICH برای دروس امور دارویی، رگولاتوری و GMP"),
+        ],
+      },
+      {
+        key: "stu",
+        title: bi("Students", "دانشجویان"),
+        points: [
+          bi("Calculators that show each equation: HLB, isotonicity, buffer and displacement factor", "ماشین‌حساب‌هایی که معادله هر محاسبه را نشان می‌دهند: HLB، ایزوتونیسیته، بافر و ضریب جابه‌جایی"),
+          bi("Function and typical concentration of each excipient, in Persian and English", "عملکرد و غلظت متداول هر ماده جانبی، به فارسی و انگلیسی"),
+          bi("Full-text SOPs to understand a GMP plant before an internship or first job", "متن کامل SOPها برای آشنایی با کارخانه GMP پیش از کارآموزی یا ورود به صنعت"),
+        ],
+      },
+      {
+        key: "pha",
+        title: bi("Pharmacies", "داروخانه‌ها"),
+        points: [
+          bi("Extemporaneous compounding: isotonicity, dilution and suppository base calculations", "ساخت داروهای ترکیبی: محاسبات ایزوتونیسیته، رقیق‌سازی و پایه شیاف"),
+          bi("mg ⇄ mmol ⇄ mEq conversions and vitamin IU conversions", "تبدیل میلی‌گرم، میلی‌مول و میلی‌اکی‌والان و واحد بین‌المللی ویتامین‌ها"),
+          bi("Domestic suppliers of pharmaceutical, supplement and cosmetic raw materials", "یافتن تأمین‌کنندگان داخلی مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی"),
         ],
       },
     ],
@@ -221,14 +248,14 @@ export const copy = {
     eyebrow: bi("Plans", "اشتراک"),
     title: bi("Subscription plans — monthly or annual", "طرح‌های اشتراک — ماهانه یا سالانه"),
     lead: bi(
-      "Every plan includes the core knowledge sections. Team and Enterprise add the supplier & manufacturer bank, more users and organisation-level data access.",
-      "همه طرح‌ها بخش‌های اصلی دانش را در بر دارند. طرح‌های تیمی و سازمانی، بانک تأمین‌کنندگان و تولیدکنندگان، کاربران بیشتر و دسترسی سازمانی به داده‌ها را اضافه می‌کنند.",
+      "Every plan includes all knowledge sections and the supplier & manufacturer bank. Team and Enterprise add more users, shared work and organisation-level data access.",
+      "همه طرح‌ها همه بخش‌های دانش و بانک تأمین‌کنندگان و تولیدکنندگان را در بر دارند. طرح‌های تیمی و سازمانی، کاربران بیشتر، کار مشترک و دسترسی سازمانی به داده‌ها را اضافه می‌کنند.",
     ),
     items: [
       {
         id: "individual",
         name: bi("Individual", "فردی"),
-        who: bi("For one formulator or specialist", "برای یک فرمولاتور یا کارشناس"),
+        who: bi("For specialists and formulators, university faculty, students and pharmacies", "برای کارشناسان و فرمولاتورها، اساتید دانشگاه، دانشجویان و داروخانه‌ها"),
         price: bi("Price set at launch", "قیمت: زمان راه‌اندازی اعلام می‌شود"),
         features: [
           bi("One user", "یک کاربر"),
@@ -236,6 +263,7 @@ export const copy = {
           bi("Pharmaceutical calculations and formulation design tools", "محاسبات داروسازی و ابزارهای طراحی فرمولاسیون"),
           bi("Excipient and API databases", "پایگاه‌های داده مواد جانبی و مواد مؤثره"),
           bi("CTD and ICH regulatory references", "مرجع رگولاتوری CTD و ICH"),
+          bi("Supplier & manufacturer bank", "بانک تأمین‌کنندگان و تولیدکنندگان"),
         ],
         cta: bi("Request access", "درخواست دسترسی"),
         style: "ghost",
@@ -248,7 +276,6 @@ export const copy = {
         features: [
           bi("Several users on one subscription", "چند کاربر با یک اشتراک"),
           bi("Everything in Individual", "همه امکانات پلن فردی"),
-          bi("Raw material supplier directory", "پایگاه داده تأمین‌کنندگان مواد اولیه"),
           bi("Shared saved formulas and calculations", "فرمول‌ها و محاسبات ذخیره‌شده مشترک"),
           bi("User management by the unit head", "مدیریت کاربران توسط مدیر واحد"),
         ],
@@ -280,7 +307,7 @@ export const copy = {
       { label: bi("Excipient and API databases", "پایگاه‌های داده مواد جانبی و مواد مؤثره"), values: [true, true, true] },
       { label: bi("CTD and ICH regulatory references", "مرجع رگولاتوری CTD و ICH"), values: [true, true, true] },
       { label: bi("SOP library with full text", "کتابخانه SOP با متن کامل"), values: [true, true, true] },
-      { label: bi("Supplier & manufacturer bank", "بانک تأمین‌کنندگان و تولیدکنندگان"), values: [false, true, true] },
+      { label: bi("Supplier & manufacturer bank", "بانک تأمین‌کنندگان و تولیدکنندگان"), values: [true, true, true] },
       { label: bi("Shared saved formulas and calculations", "فرمول‌ها و محاسبات ذخیره‌شده مشترک"), values: [false, true, true] },
       { label: bi("User management", "مدیریت کاربران"), values: [false, bi("By the unit head", "توسط مدیر واحد"), bi("By role and department", "بر اساس نقش و واحد")] },
       { label: bi("Database delivery with controlled access", "تحویل پایگاه داده با دسترسی کنترل‌شده"), values: [false, false, true] },
@@ -377,8 +404,8 @@ export const copy = {
   requestEmail: {
     subject: bi("PharmaVault — {plan} plan request", "PharmaVault — درخواست طرح {plan}"),
     body: bi(
-      "Name:\nCompany:\nDepartment:\nNumber of users:\nPhone:\n",
-      "نام و نام خانوادگی:\nشرکت:\nواحد:\nتعداد کاربران:\nشماره تماس:\n",
+      "Name:\nCompany / university / pharmacy:\nDepartment or field of study:\nNumber of users:\nPhone:\n",
+      "نام و نام خانوادگی:\nشرکت / دانشگاه / داروخانه:\nواحد یا رشته تحصیلی:\nتعداد کاربران:\nشماره تماس:\n",
     ),
   },
 
