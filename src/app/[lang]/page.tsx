@@ -153,7 +153,8 @@ export default async function HomePage() {
                 secondaryClassName="mt-1 text-[0.6em] font-medium text-capsule-400/80"
               />
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-vault-100/80 sm:text-lg">{hero.lead[locale]}</p>
+            <p className="mt-6 max-w-xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
+            <p className="mt-3 max-w-xl text-base leading-relaxed text-vault-100/80">{hero.audience[locale]}</p>
             <div className="mt-10 flex flex-wrap gap-4">
               <ButtonLink href={href(locale, "suppliers")}>{hero.supplierSearch[locale]}</ButtonLink>
               <ButtonLink href={href(locale, "#plans")} variant="outline-light">
@@ -215,6 +216,16 @@ export default async function HomePage() {
             ))}
           </Container>
         </div>
+      </section>
+
+      {/* Statement */}
+      <section className="border-b border-line bg-paper py-14 lg:py-16">
+        <Container className="max-w-4xl text-center">
+          <LogoMark className="mx-auto size-11" />
+          <p className="mt-6 text-2xl font-bold leading-snug text-vault-900 sm:text-3xl">{copy.statement.title[locale]}</p>
+          <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-muted sm:text-xl">{copy.statement.text[locale]}</p>
+          <div className="mx-auto mt-8 h-1 w-16 rounded-full bg-capsule-500" aria-hidden="true" />
+        </Container>
       </section>
 
       {/* Featured: the supplier bank */}
