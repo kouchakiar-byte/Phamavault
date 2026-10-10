@@ -7,7 +7,6 @@ import {
   Factory,
   FileCheck,
   FlaskConical,
-  GraduationCap,
   BookOpenText,
   Pill,
   Mail,
@@ -46,7 +45,6 @@ const departmentIcons: Record<string, LucideIcon> = {
   prd: Factory,
   reg: FileCheck,
   sup: Truck,
-  uni: GraduationCap,
   stu: BookOpenText,
   pha: Pill,
 };
@@ -225,7 +223,7 @@ export default async function HomePage() {
       <section className="border-y border-line bg-paper py-20 lg:py-24">
         <Container>
           <SectionHead eyebrow={departments.eyebrow[locale]} title={departments.title} locale={locale} lead={departments.lead[locale]} />
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {departments.items.map((d) => {
               const Icon = departmentIcons[d.key];
               return (

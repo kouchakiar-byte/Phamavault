@@ -610,21 +610,21 @@ const potencyModes = [
 ];
 
 const potencyBases = [
-  { value: "dried", label: bi("Anhydrous / dried basis (correct for water or LOD)", "بر پایه ماده خشک یا بدون آب (اصلاح با رطوبت یا LOD)") },
+  { value: "dried", label: bi("Dried, anhydrous or solvent-free basis", "بر پایه ماده خشک، بدون آب یا بدون حلال") },
   { value: "asis", label: bi("As-is basis (no correction)", "بر پایه نمونه همان‌گونه که هست (بدون اصلاح)") },
 ];
 
 function Pot({ ctx }: { ctx: Ctx }) {
   const { v, locale } = ctx;
   const mode = v["p-mode"], dried = v["p-basis"] === "dried";
-  const lc = num(v["p-lc"]), pot = num(v["p-pot"]), w = num(v["p-w"]), units = num(v["p-units"]);
+  const lc = num(v["p-lc"]), pot = num(v["p-pot"]), w = num(v["p-w"]), rs = num(v["p-rs"]), units = num(v["p-units"]);
   const mws = num(v["p-mws"]), mwb = num(v["p-mwb"]);
   const unit = mode === "pct" ? "%" : mode === "ugmg" ? "µg/mg" : "IU/mg";
   let sf = DASH, asIs = DASH, perUnit = DASH, batch = DASH, comp = DASH, msg = "";
-  const ok = lc >= 0 && pot > 0 && units >= 0 && (!dried || (w >= 0 && w < 100)) && (mode !== "pct" || (mws > 0 && mwb > 0));
+  const ok = lc >= 0 && pot > 0 && units >= 0 && (!dried || (w >= 0 && rs >= 0 && w + rs < 100)) && (mode !== "pct" || (mws > 0 && mwb > 0));
   if (!ok) msg = bad(ctx);
   else {
-    const p = dried ? (pot * (100 - w)) / 100 : pot;
+    const p = dried ? (pot * (100 - w - rs)) / 100 : pot;
     const factor = mode === "pct" ? mws / mwb : 1;
     const mg = mode === "pct" ? (lc * factor * 100) / p : mode === "ugmg" ? (lc * 1000) / p : lc / p;
     sf = fixed(factor, 4);
@@ -651,7 +651,12 @@ function Pot({ ctx }: { ctx: Ctx }) {
           <NumberInput ctx={ctx} id="p-lc" label={lcLabel} />
           <NumberInput ctx={ctx} id="p-pot" label={bi(`Assay / potency on the CoA (${unit})`, `اسی یا پوتنسی در برگه آنالیز (${unit})`)} />
           <Choice ctx={ctx} id="p-basis" label={bi("Basis of the assay", "مبنای گزارش اسی")} options={potencyBases} />
-          {dried && <NumberInput ctx={ctx} id="p-w" label={bi("Water content or loss on drying (%)", "مقدار آب یا افت وزن در خشک کردن (%)")} />}
+          {dried && (
+            <>
+              <NumberInput ctx={ctx} id="p-w" label={bi("Water content (KF) or loss on drying (%)", "مقدار آب (کارل فیشر) یا افت وزن در خشک کردن (%)")} />
+              <NumberInput ctx={ctx} id="p-rs" label={bi("Residual solvents (%), if the assay is on the solvent-free basis", "حلال باقیمانده (%)، اگر اسی بر پایه بدون حلال گزارش شده باشد")} />
+            </>
+          )}
           {mode === "pct" && (
             <>
               <PresetSelect ctx={ctx} id="p-salt" label={bi("Salt / hydrate form", "فرم نمکی یا هیدرات")} presets={saltForms} targets={["p-mws", "p-mwb"]} />
@@ -671,8 +676,8 @@ function Pot({ ctx }: { ctx: Ctx }) {
       ]}
       message={msg}
       note={bi(
-        "% assay: m = LC × SF × 100 ÷ P; µg/mg: m = LC × 1000 ÷ P; IU/mg: m = LC ÷ P, where P is the as-is potency. On a dried or anhydrous basis, P = assay × (100 − W) ÷ 100, with W the water content or LOD (%). Take assay and water from the certificate of analysis of the lot in use, and lower the q.s. diluent by the compensation amount so the unit weight stays constant. Example: amoxicillin trihydrate is specified as 900–1050 µg of amoxicillin per mg on the anhydrous basis.",
-        "اسی درصدی: \u2066m = LC × SF × 100 ÷ P\u2069؛ میکروگرم بر میلی‌گرم: \u2066m = LC × 1000 ÷ P\u2069؛ واحد بر میلی‌گرم: \u2066m = LC ÷ P\u2069؛ که P پوتنسی نمونه همان‌گونه که هست (as is) است. اگر اسی بر پایه ماده خشک یا بدون آب گزارش شده باشد: \u2066P = Assay × (100 − W) ÷ 100\u2069 که W درصد آب یا LOD است. اسی و رطوبت را از برگه آنالیز همان سری ماده بردارید و مقدار پرکننده q.s. را به اندازه جبران کاهش دهید تا وزن واحد ثابت بماند. مثال: آموکسی‌سیلین تری‌هیدرات با پوتنسی 900 تا 1050 میکروگرم آموکسی‌سیلین در هر میلی‌گرم بر پایه بدون آب مشخص می‌شود.",
+        "% assay: m = LC × SF × 100 ÷ P; µg/mg: m = LC × 1000 ÷ P; IU/mg: m = LC ÷ P, where P is the as-is potency. On a dried, anhydrous or solvent-free basis, P = assay × (100 − W − RS) ÷ 100, with W the water content or LOD and RS the residual solvents (%); leave RS at 0 when LOD is used, since LOD already includes volatile solvents. Take assay and water from the certificate of analysis of the lot in use, and lower the q.s. diluent by the compensation amount so the unit weight stays constant. Example: amoxicillin trihydrate is specified as 900–1050 µg of amoxicillin per mg on the anhydrous basis.",
+        "اسی درصدی: \u2066m = LC × SF × 100 ÷ P\u2069؛ میکروگرم بر میلی‌گرم: \u2066m = LC × 1000 ÷ P\u2069؛ واحد بر میلی‌گرم: \u2066m = LC ÷ P\u2069؛ که P پوتنسی نمونه همان‌گونه که هست (as is) است. اگر اسی بر پایه ماده خشک، بدون آب یا بدون حلال گزارش شده باشد: \u2066P = Assay × (100 − W − RS) ÷ 100\u2069 که W درصد آب یا LOD و RS درصد حلال باقیمانده است؛ اگر از LOD استفاده می‌کنید RS را صفر بگذارید، چون LOD حلال‌های فرار را هم در بر دارد. اسی و رطوبت را از برگه آنالیز همان سری ماده بردارید و مقدار پرکننده q.s. را به اندازه جبران کاهش دهید تا وزن واحد ثابت بماند. مثال: آموکسی‌سیلین تری‌هیدرات با پوتنسی 900 تا 1050 میکروگرم آموکسی‌سیلین در هر میلی‌گرم بر پایه بدون آب مشخص می‌شود.",
       )}
     />
   );
@@ -786,6 +791,7 @@ function Batch({ ctx }: { ctx: Ctx }) {
 // ---------- bench ----------
 
 const tabs = [
+  { key: "pot", Calc: Pot },
   { key: "hlb", Calc: Hlb },
   { key: "iso", Calc: Iso },
   { key: "dil", Calc: Dil },
@@ -794,7 +800,6 @@ const tabs = [
   { key: "sup", Calc: Sup },
   { key: "meq", Calc: Meq },
   { key: "vit", Calc: Vit },
-  { key: "pot", Calc: Pot },
   { key: "bat", Calc: Batch },
 ] as const;
 
@@ -808,11 +813,11 @@ const defaults: Values = {
   "m-salt": "0", "m-mw": "58.44", "m-val": "1", "m-amt": "900", "m-unit": "mg",
   "v-form": String(flatForms.findIndex((f) => f.name === "Cholecalciferol (D3)")), "v-amt": "1000", "v-unit": "IU",
   "x-units": "100000", "x-ov": "0",
-  "p-mode": "pct", "p-lc": "10", "p-pot": "99.5", "p-basis": "dried", "p-w": "0.5", "p-salt": "1", "p-mws": "567.05", "p-mwb": "408.88", "p-units": "100000",
+  "p-mode": "pct", "p-lc": "10", "p-pot": "99.5", "p-basis": "dried", "p-w": "0.5", "p-rs": "0", "p-salt": "1", "p-mws": "567.05", "p-mwb": "408.88", "p-units": "100000",
 };
 
 export function Calculators({ locale }: { locale: Locale }) {
-  const [active, setActive] = useState<string>("hlb");
+  const [active, setActive] = useState<string>("pot");
   const [values, setValues] = useState(defaults);
   const ctx: Ctx = { locale, v: values, set: (k, val) => setValues((prev) => ({ ...prev, [k]: val })) };
 

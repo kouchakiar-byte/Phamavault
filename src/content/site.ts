@@ -15,8 +15,8 @@ export const copy = {
       "PharmaVault — دانش دارویی و هوشمندی فرمولاسیون",
     ),
     description: bi(
-      "A specialised pharmaceutical knowledge platform for R&D, production, quality control, quality assurance, regulatory affairs and supply chain, and for academia and pharmacies: excipient and API databases, a supplier bank, pharmaceutical calculations, GMP SOPs and CTD/ICH references.",
-      "پلتفرم دانش و اطلاعات تخصصی دارویی برای تحقیق و توسعه، تولید، کنترل کیفیت، تضمین کیفیت، امور رگولاتوری و زنجیره تأمین و نیز دانشگاه و داروخانه: پایگاه‌های داده مواد جانبی و مواد مؤثره، بانک تأمین‌کنندگان، محاسبات داروسازی، دستورالعمل‌های GMP و مرجع CTD و ICH.",
+      "A specialised pharmaceutical knowledge platform for R&D, production, quality control, quality assurance, regulatory affairs and supply chain, and for students and pharmacies: excipient and API databases, a supplier bank, pharmaceutical calculations, GMP SOPs and CTD/ICH references.",
+      "پلتفرم دانش و اطلاعات تخصصی دارویی برای تحقیق و توسعه، تولید، کنترل کیفیت، تضمین کیفیت، امور رگولاتوری و زنجیره تأمین و نیز دانشجویان و داروخانه‌ها: پایگاه‌های داده مواد جانبی و مواد مؤثره، بانک تأمین‌کنندگان، محاسبات داروسازی، دستورالعمل‌های GMP و مرجع CTD و ICH.",
     ),
   },
   platform: bi("Pharmaceutical Knowledge & Formulation Intelligence", "دانش دارویی و هوشمندی فرمولاسیون"),
@@ -39,8 +39,8 @@ export const copy = {
   hero: {
     eyebrow: bi("Pharmaceutics · R&D · Formulation Science", "داروسازی · تحقیق و توسعه · علم فرمولاسیون"),
     lead: bi(
-      "A curated, cross-referenced knowledge base for the pharmaceutical product lifecycle — excipient and API data, a source-referenced supplier directory, compendial calculations, GMP-aligned SOPs and CTD/ICH references for R&D, quality and regulatory teams, university faculty, students and pharmacies.",
-      "پایگاه دانش تخصصی و به‌هم‌پیوسته برای چرخه عمر فرآورده دارویی — داده‌های مواد جانبی و مواد مؤثره، بانک تأمین‌کنندگان با منبع قابل‌راستی‌آزمایی، محاسبات داروسازی، دستورالعمل‌های منطبق بر GMP و مرجع CTD و ICH برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری، اساتید دانشگاه، دانشجویان و داروخانه‌ها.",
+      "A curated, cross-referenced knowledge base for the pharmaceutical product lifecycle — excipient and API data, a source-referenced supplier directory, compendial calculations, GMP-aligned SOPs and CTD/ICH references for R&D, quality and regulatory teams, students and pharmacies.",
+      "پایگاه دانش تخصصی و به‌هم‌پیوسته برای چرخه عمر فرآورده دارویی — داده‌های مواد جانبی و مواد مؤثره، بانک تأمین‌کنندگان با منبع قابل‌راستی‌آزمایی، محاسبات داروسازی، دستورالعمل‌های منطبق بر GMP و مرجع CTD و ICH برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری، دانشجویان و داروخانه‌ها.",
     ),
     browse: bi("Browse the sections", "مرور بخش‌ها"),
     supplierSearch: bi("Search the supplier bank", "جستجو در بانک تأمین‌کنندگان"),
@@ -74,10 +74,10 @@ export const copy = {
 
   departments: {
     eyebrow: bi("Who it is for", "برای چه کسانی"),
-    title: bi("Built for industry, academia and pharmacy", "طراحی‌شده برای صنعت دارو، دانشگاه و داروخانه"),
+    title: bi("Built for industry, students and pharmacies", "طراحی‌شده برای صنعت دارو، دانشجویان و داروخانه‌ها"),
     lead: bi(
-      "Every department of a pharmaceutical company — and faculty, students and pharmacists — gets the references and tools they use every day, in one subscription.",
-      "هر واحد شرکت داروسازی، و همچنین اساتید، دانشجویان و داروسازان داروخانه، مراجع و ابزارهایی را که هر روز به آن‌ها نیاز دارند در یک اشتراک در اختیار دارند.",
+      "Every department of a pharmaceutical company — and students and pharmacists — gets the references and tools they use every day, in one subscription.",
+      "هر واحد شرکت داروسازی، و همچنین دانشجویان و داروسازان داروخانه، مراجع و ابزارهایی را که هر روز به آن‌ها نیاز دارند در یک اشتراک در اختیار دارند.",
     ),
     items: [
       {
@@ -132,15 +132,6 @@ export const copy = {
           bi("Domestic manufacturers and importers of pharmaceutical, supplement and cosmetic raw materials", "تولیدکنندگان و واردکنندگان داخلی مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی"),
           bi("Synonym-aware search by Persian or English name, salt form or trade name", "جستجوی هوشمند با نام فارسی یا انگلیسی، فرم نمکی یا نام تجاری"),
           bi("Credibility-ranked results with the source of every record", "نتایج رتبه‌بندی‌شده بر اساس اعتبار، همراه با منبع هر رکورد"),
-        ],
-      },
-      {
-        key: "uni",
-        title: bi("University faculty", "اساتید دانشگاه"),
-        points: [
-          bi("Structured reference material for teaching pharmaceutics and industrial pharmacy", "مرجع ساختاریافته برای تدریس فارماسیوتیکس و داروسازی صنعتی"),
-          bi("Excipient data and starting formulations for eight dosage forms as worked course examples", "داده‌های مواد جانبی و فرمول پایه هشت شکل دارویی به‌عنوان مثال‌های درسی"),
-          bi("CTD structure and ICH guidelines for regulatory affairs and GMP courses", "ساختار CTD و راهنماهای ICH برای دروس امور دارویی، رگولاتوری و GMP"),
         ],
       },
       {
@@ -255,7 +246,7 @@ export const copy = {
       {
         id: "individual",
         name: bi("Individual", "فردی"),
-        who: bi("For specialists and formulators, university faculty, students and pharmacies", "برای کارشناسان و فرمولاتورها، اساتید دانشگاه، دانشجویان و داروخانه‌ها"),
+        who: bi("For specialists and formulators, students and pharmacies", "برای کارشناسان و فرمولاتورها، دانشجویان و داروخانه‌ها"),
         price: bi("Price set at launch", "قیمت: زمان راه‌اندازی اعلام می‌شود"),
         features: [
           bi("One user", "یک کاربر"),

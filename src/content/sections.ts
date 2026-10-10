@@ -76,8 +76,8 @@ export const sections = [
     group: "tools",
     title: bi("Pharmaceutical Calculations", "محاسبات داروسازی"),
     description: bi(
-      "HLB blending, isotonicity (NaCl equivalent), alligation, buffer design and buffer capacity, API potency adjustment, suppository displacement, mEq conversion and batch scale-up.",
-      "محاسبه HLB، ایزوتونیسیته (روش معادل NaCl)، آلیگیشن، طراحی و ظرفیت بافر، محاسبه پوتنسی ماده مؤثره، ضریب جابه‌جایی شیاف، تبدیل mEq و افزایش مقیاس بچ.",
+      "Potency calculation, HLB blending, isotonicity (NaCl equivalent), alligation, buffer design and buffer capacity, suppository displacement, mEq conversion and batch scale-up.",
+      "محاسبه پوتنسی (Potency)، محاسبه HLB، ایزوتونیسیته (روش معادل NaCl)، آلیگیشن، طراحی و ظرفیت بافر، ضریب جابه‌جایی شیاف، تبدیل mEq و افزایش مقیاس بچ.",
     ),
   },
   {
