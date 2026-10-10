@@ -1,6 +1,6 @@
 import { bi } from "@/i18n/bi";
 
-/** The eight calculators: tab label, full title and governing equation. */
+/** The calculators: tab label, full title and governing equation. */
 export const calculations = [
   {
     key: "hlb",
@@ -23,8 +23,14 @@ export const calculations = [
   {
     key: "buf",
     label: bi("Buffer design", "طراحی بافر"),
-    title: bi("Buffer design (Henderson–Hasselbalch equation)", "طراحی بافر (معادله هندرسون–هاسلباخ)"),
+    title: bi("Buffer design and preparation (Henderson–Hasselbalch equation)", "طراحی و ساخت بافر (معادله هندرسون–هاسلباخ)"),
     equation: "pH = pKa + log([A⁻]/[HA])",
+  },
+  {
+    key: "bcap",
+    label: bi("Buffer capacity", "ظرفیت بافری"),
+    title: bi("Buffer capacity (Van Slyke) and pH shift on acid or base addition", "ظرفیت بافری (معادله ون اسلایک) و تغییر pH با افزودن اسید یا باز"),
+    equation: "β = 2.303·C·Ka·[H₃O⁺] / (Ka + [H₃O⁺])²",
   },
   {
     key: "sup",
@@ -43,6 +49,12 @@ export const calculations = [
     label: bi("Vitamin units (IU ⇄ mass)", "واحد ویتامین‌ها (IU ⇄ جرم)"),
     title: bi("Vitamin unit conversion (IU ⇄ mass)", "تبدیل واحد ویتامین‌ها (IU ⇄ جرم)"),
     equation: "IU = mass (mg) × IU/mg factor",
+  },
+  {
+    key: "pot",
+    label: bi("API potency adjustment", "محاسبه پوتنسی ماده مؤثره"),
+    title: bi("API quantity by potency (assay, water content and salt factor)", "مقدار ماده مؤثره بر اساس پوتنسی (اسی، رطوبت و ضریب نمک)"),
+    equation: "m = LC × SF × 100 / [Assay × (100 − W) / 100]",
   },
   {
     key: "bat",

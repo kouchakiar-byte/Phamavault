@@ -81,6 +81,11 @@ function sectionHighlight(slug: string, n: (x: number) => string): Bi | null {
         `${n(regulatory.ctd.length)} CTD sections · ${n(regulatory.ich.length)} ICH guidelines`,
         `${n(regulatory.ctd.length)} بخش CTD · ${n(regulatory.ich.length)} راهنمای ICH`,
       );
+    case "qc": {
+      const lab = sops.items.filter((s) => s.dep === "qc").length;
+      const mic = sops.items.filter((s) => s.dep === "mic").length;
+      return bi(`${n(lab)} laboratory SOPs · ${n(mic)} microbiology SOPs`, `${n(lab)} دستورالعمل آزمایشگاهی · ${n(mic)} دستورالعمل میکروبیولوژی`);
+    }
     case "qa":
       return bi(
         `${n(sops.items.length)} SOPs · ${n(Object.keys(sops.departments).length)} departments`,

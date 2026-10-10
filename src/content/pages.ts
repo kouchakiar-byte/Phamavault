@@ -134,8 +134,8 @@ export const pages = {
   tools: {
     title: bi("Pharmaceutical calculations", "محاسبات داروسازی"),
     lead: bi(
-      "Eight calculators based on standard pharmaceutical equations. Results update as you type, and the governing equation is shown under each one.",
-      "هشت ماشین‌حساب بر پایه معادلات استاندارد داروسازی. نتیجه هم‌زمان با ورود داده محاسبه می‌شود و معادله مبنا زیر هر کدام آمده است.",
+      "Ten calculators based on standard pharmaceutical equations. Results update as you type, and the governing equation is shown under each one.",
+      "ده ماشین‌حساب بر پایه معادلات استاندارد داروسازی. نتیجه هم‌زمان با ورود داده محاسبه می‌شود و معادله مبنا زیر هر کدام آمده است.",
     ),
   },
   formulation: {
@@ -176,14 +176,19 @@ export const pages = {
     ],
   },
   qa: {
-    title: bi("Standard operating procedure (SOP) library", "کتابخانه دستورالعمل‌های استاندارد (SOP)"),
+    title: bi("Quality assurance and SOP library", "تضمین کیفیت و کتابخانه دستورالعمل‌ها"),
     lead: bi(
-      "The master list of GMP procedures a pharmaceutical manufacturing site requires, by department. Each row gives the SOP title and its required scope.",
-      "فهرست جامع دستورالعمل‌های GMP موردنیاز یک واحد تولید دارو، به تفکیک واحد سازمانی. هر ردیف عنوان SOP و دامنه الزامی آن را نشان می‌دهد.",
+      "The pharmaceutical quality system (ICH Q10), quality risk management tools (ICH Q9(R1)), the key GMP references, and the master list of GMP procedures a manufacturing site requires, by department.",
+      "سیستم کیفیت دارویی (ICH Q10)، ابزارهای مدیریت ریسک کیفیت \u2066(ICH Q9(R1))\u2069، مراجع کلیدی GMP و فهرست جامع دستورالعمل‌های GMP موردنیاز یک واحد تولید دارو به تفکیک واحد سازمانی.",
+    ),
+    library: bi("Standard operating procedure (SOP) library", "کتابخانه دستورالعمل‌های استاندارد (SOP)"),
+    libraryLead: bi(
+      "Each row gives the SOP title and its required scope.",
+      "هر ردیف عنوان دستورالعمل و دامنه الزامی آن را نشان می‌دهد.",
     ),
     ready: bi(
-      "The full text of all 136 SOPs is ready (in Persian): press “Full text” on a row.",
-      "متن کامل هر 136 دستورالعمل آماده است: روی «متن کامل» در هر ردیف بزنید.",
+      "The full text of all {n} SOPs is ready (in Persian): press “Full text” on a row.",
+      "متن کامل هر {n} دستورالعمل آماده است: روی «متن کامل» در هر ردیف بزنید.",
     ),
     department: bi("Department", "واحد"),
     allDepartments: bi("All departments", "همه واحدها"),
