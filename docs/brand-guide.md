@@ -5,8 +5,8 @@
 | | |
 | --- | --- |
 | **Name** | PharmaVault (always one word, capital P and V) |
-| **Tagline** | Pharmaceutical Knowledge & Formulation Intelligence — *دانش دارویی و هوشمندی فرمولاسیون* |
-| **Slogan** | Your Gateway to Pharmaceutical Development — *دروازه شما به توسعه دارو* |
+| **Tagline** | Pharmaceutical Knowledge Hub — *مرکز دانش دارویی* |
+| **Slogan** | The Pharmaceutical Information Vault — *گنجینه اطلاعات داروسازی* (the Persian «گنجینه» renders “Vault” in the name) |
 | **Domain** | pharmavault.ir |
 | **Positioning** | A professional knowledge and R&D platform for pharmaceutical development — not a shop, not a news site. |
 

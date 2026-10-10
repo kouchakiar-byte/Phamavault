@@ -144,14 +144,17 @@ export default async function HomePage() {
                 Pharma<span className="text-molecule-400">Vault</span>
               </span>
               <BiTitle
-                text={copy.platform}
+                text={copy.slogan}
                 locale={locale}
                 stacked
-                className="mt-4 text-xl font-semibold text-vault-100 sm:text-2xl"
-                secondaryClassName="text-[0.7em] font-normal"
+                className="mt-4 text-2xl font-bold text-capsule-400 sm:text-3xl"
+                secondaryClassName="mt-1 text-[0.6em] font-medium text-capsule-400/80"
               />
             </h1>
-            <p className="mt-3 text-lg font-medium text-capsule-400">{copy.slogan[locale]}</p>
+            <p className="mt-4 flex flex-wrap items-baseline gap-x-2 text-lg font-semibold text-vault-100">
+              {copy.platform[locale]}
+              <span className="text-sm font-normal text-vault-100/60">{copy.platform[locale === "fa" ? "en" : "fa"]}</span>
+            </p>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-vault-100/80 sm:text-lg">{hero.lead[locale]}</p>
             <div className="mt-10 flex flex-wrap gap-4">
               <ButtonLink href={href(locale, "suppliers")}>{hero.supplierSearch[locale]}</ButtonLink>

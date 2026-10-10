@@ -11,16 +11,16 @@ export const siteConfig = {
 export const copy = {
   meta: {
     title: bi(
-      "PharmaVault — Pharmaceutical Knowledge & Formulation Intelligence",
-      "PharmaVault — دانش دارویی و هوشمندی فرمولاسیون",
+      "PharmaVault — The Pharmaceutical Information Vault",
+      "PharmaVault — گنجینه اطلاعات داروسازی",
     ),
     description: bi(
       "A specialised pharmaceutical knowledge platform for R&D, production, quality control, quality assurance, regulatory affairs and supply chain, and for students and pharmacies: excipient and API databases, a supplier bank, pharmaceutical calculations, GMP SOPs and CTD/ICH references.",
       "پلتفرم دانش و اطلاعات تخصصی دارویی برای تحقیق و توسعه، تولید، کنترل کیفیت، تضمین کیفیت، امور رگولاتوری و زنجیره تأمین و نیز دانشجویان و داروخانه‌ها: پایگاه‌های داده مواد جانبی و مواد مؤثره، بانک تأمین‌کنندگان، محاسبات داروسازی، دستورالعمل‌های GMP و مرجع CTD و ICH.",
     ),
   },
-  platform: bi("Pharmaceutical Knowledge & Formulation Intelligence", "دانش دارویی و هوشمندی فرمولاسیون"),
-  slogan: bi("Your Gateway to Pharmaceutical Development", "دروازه شما به توسعه دارو"),
+  platform: bi("Pharmaceutical Knowledge Hub", "مرکز دانش دارویی"),
+  slogan: bi("The Pharmaceutical Information Vault", "گنجینه اطلاعات داروسازی"),
 
   nav: {
     home: bi("Home", "خانه"),
