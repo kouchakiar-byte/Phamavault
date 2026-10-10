@@ -15,8 +15,8 @@ export const copy = {
       "PharmaVault — دانش دارویی و هوشمندی فرمولاسیون",
     ),
     description: bi(
-      "A knowledge platform for pharmaceutical R&D, quality and regulatory teams, academia and pharmacies: excipient and API databases, a raw material supplier directory, pharmaceutical calculations, GMP-aligned SOPs and CTD/ICH references.",
-      "پلتفرم دانش تخصصی برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری، دانشگاه و داروخانه: پایگاه‌های داده مواد جانبی و مواد مؤثره، فهرست تأمین‌کنندگان مواد اولیه، محاسبات داروسازی، دستورالعمل‌های منطبق بر GMP و مرجع CTD و ICH.",
+      "A specialised pharmaceutical knowledge platform for R&D, production, quality control, quality assurance, regulatory affairs and supply chain, and for academia and pharmacies: excipient and API databases, a supplier bank, pharmaceutical calculations, GMP SOPs and CTD/ICH references.",
+      "پلتفرم دانش و اطلاعات تخصصی دارویی برای تحقیق و توسعه، تولید، کنترل کیفیت، تضمین کیفیت، امور رگولاتوری و زنجیره تأمین و نیز دانشگاه و داروخانه: پایگاه‌های داده مواد جانبی و مواد مؤثره، بانک تأمین‌کنندگان، محاسبات داروسازی، دستورالعمل‌های GMP و مرجع CTD و ICH.",
     ),
   },
   platform: bi("Pharmaceutical Knowledge & Formulation Intelligence", "دانش دارویی و هوشمندی فرمولاسیون"),
@@ -95,7 +95,7 @@ export const copy = {
         points: [
           bi("QC laboratory and microbiology SOPs: sampling, calibration, water and environmental monitoring", "دستورالعمل‌های آزمایشگاه کنترل کیفیت و میکروبیولوژی: نمونه‌برداری، کالیبراسیون، آب و پایش محیطی"),
           bi("Stability study conditions per ICH Q1A(R2) and validation guidance per ICH Q2(R2)", "شرایط مطالعات پایداری طبق ICH Q1A(R2) و اعتبارسنجی روش طبق ICH Q2(R2)"),
-          bi("Conversions between mg, mmol, mEq and vitamin units (IU)", "تبدیل میلی‌گرم، میلی‌مول، میلی‌اکی‌والان و واحد بین‌المللی ویتامین‌ها"),
+          bi("Pharmacopoeial acceptance criteria: dissolution, uniformity of dosage units, friability and microbial limits", "معیارهای پذیرش فارماکوپه‌ای: انحلال، یکنواختی واحدهای دارویی، سایش و حدود میکروبی"),
         ],
       },
       {
@@ -104,7 +104,7 @@ export const copy = {
         points: [
           bi("Full-text SOPs for change control, deviation management, CAPA and quality risk management", "متن کامل دستورالعمل‌های کنترل تغییرات، مدیریت انحراف، CAPA و مدیریت ریسک کیفیت"),
           bi("Validation master plan, process and cleaning validation, self-inspection", "برنامه جامع اعتبارسنجی، اعتبارسنجی فرآیند و تمیزکاری، خودبازرسی"),
-          bi("A standard SOP template with revision control, referenced to PIC/S GMP", "قالب استاندارد SOP با کنترل بازنگری، با ارجاع به PIC/S GMP"),
+          bi("Nitrosamine, elemental impurity (ICH Q3D) and PDE-based cross-contamination risk assessments", "ارزیابی ریسک نیتروزآمین، ناخالصی‌های عنصری (ICH Q3D) و آلودگی متقاطع بر پایه PDE"),
         ],
       },
       {
@@ -208,7 +208,7 @@ export const copy = {
 
   toolsShowcase: {
     eyebrow: bi("Pharmaceutical calculations", "محاسبات داروسازی"),
-    title: bi("Eight calculators built on standard pharmaceutical equations", "هشت ماشین‌حساب بر پایه معادلات استاندارد داروسازی"),
+    title: bi("Ten calculators built on standard pharmaceutical equations", "ده ماشین‌حساب بر پایه معادلات استاندارد داروسازی"),
     lead: bi(
       "Each calculator states its governing equation and validates its inputs — for example, it warns when the target pH lies more than one unit from the pKa.",
       "هر ماشین‌حساب معادله مبنای خود را نشان می‌دهد و ورودی‌ها را کنترل می‌کند؛ برای نمونه اگر pH هدف بیش از یک واحد با pKa فاصله داشته باشد، هشدار می‌دهد.",
@@ -411,8 +411,8 @@ export const copy = {
 
   footer: {
     about: bi(
-      "A knowledge and R&D platform for pharmaceutical formulation, quality and regulatory affairs.",
-      "پلتفرم دانش و تحقیق و توسعه در حوزه فرمولاسیون دارویی، کیفیت و امور رگولاتوری.",
+      "A specialised pharmaceutical knowledge and information platform for research and development (R&D), production, quality control (QC), quality assurance (QA), regulatory affairs and supply chain.",
+      "پلتفرم دانش و اطلاعات تخصصی دارویی در حوزه‌های تحقیق و توسعه (R&D)، تولید (Production)، کنترل کیفیت (QC)، تضمین کیفیت (QA)، امور رگولاتوری (Regulatory Affairs) و بازرگانی و زنجیره تأمین (Supply Chain).",
     ),
     plans: bi("Plans & enterprise", "اشتراک و راهکار سازمانی"),
   },

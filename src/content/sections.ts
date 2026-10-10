@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Atom, BookOpen, Briefcase, Calculator, Factory, FileCheck, FlaskConical, Layers, ShieldCheck } from "lucide-react";
+import { Atom, BookOpen, Briefcase, Calculator, Factory, FileCheck, FlaskConical, Layers, ShieldCheck, TestTubes } from "lucide-react";
 import { bi, type Bi } from "@/i18n/bi";
 
 export type SectionGroup = "knowledge" | "databases" | "tools" | "company";
@@ -15,7 +15,7 @@ type Section = {
   description: Bi;
 };
 
-/** The nine sections of the platform, in the order shown on the home page. */
+/** The sections of the platform, in the order shown on the home page. */
 export const sections = [
   {
     slug: "suppliers",
@@ -76,8 +76,8 @@ export const sections = [
     group: "tools",
     title: bi("Pharmaceutical Calculations", "محاسبات داروسازی"),
     description: bi(
-      "HLB blending, isotonicity (NaCl equivalent), alligation, Henderson–Hasselbalch buffers, suppository displacement, mEq conversion and batch scale-up.",
-      "محاسبه HLB، ایزوتونیسیته (روش معادل NaCl)، آلیگیشن، بافر هندرسون–هاسلباخ، ضریب جابه‌جایی شیاف، تبدیل mEq و افزایش مقیاس بچ.",
+      "HLB blending, isotonicity (NaCl equivalent), alligation, buffer design and buffer capacity, API potency adjustment, suppository displacement, mEq conversion and batch scale-up.",
+      "محاسبه HLB، ایزوتونیسیته (روش معادل NaCl)، آلیگیشن، طراحی و ظرفیت بافر، محاسبه پوتنسی ماده مؤثره، ضریب جابه‌جایی شیاف، تبدیل mEq و افزایش مقیاس بچ.",
     ),
   },
   {
@@ -105,6 +105,18 @@ export const sections = [
     ),
   },
   {
+    slug: "qc",
+    href: "qc",
+    plate: "QC",
+    icon: TestTubes,
+    group: "knowledge",
+    title: bi("Quality Control (QC)", "کنترل کیفیت (QC)"),
+    description: bi(
+      "Pharmacopoeial tests and acceptance criteria, microbial limits for non-sterile products, pharmaceutical water, ICH Q2 method validation and OOS investigation.",
+      "آزمون‌ها و معیارهای پذیرش فارماکوپه‌ای، حدود میکروبی فرآورده‌های غیراستریل، آب دارویی، اعتبارسنجی روش طبق ICH Q2 و بررسی نتایج OOS.",
+    ),
+  },
+  {
     slug: "qa",
     href: "qa",
     plate: "QA",
@@ -112,8 +124,8 @@ export const sections = [
     group: "knowledge",
     title: bi("Quality Assurance & SOPs", "تضمین کیفیت و دستورالعمل‌های استاندارد (SOP)"),
     description: bi(
-      "A GMP-aligned master list of standard operating procedures for QA, QC, microbiology, production, warehouse, engineering and R&D, with full text.",
-      "فهرست جامع دستورالعمل‌های استاندارد منطبق بر GMP برای تضمین کیفیت، کنترل کیفیت، میکروبیولوژی، تولید، انبار، فنی و تحقیق و توسعه، همراه با متن کامل.",
+      "The pharmaceutical quality system (ICH Q10), quality risk management tools and a GMP-aligned SOP library for every department, with full text.",
+      "سیستم کیفیت دارویی (ICH Q10)، ابزارهای مدیریت ریسک کیفیت و کتابخانه دستورالعمل‌های منطبق بر GMP برای همه واحدها، همراه با متن کامل.",
     ),
   },
   {
