@@ -5,7 +5,7 @@ Every page exists in both locales: `/fa/...` (default, RTL) and `/en/...` (LTR);
 
 | Page | Path | Content | Data source |
 | --- | --- | --- | --- |
-| Home | `/` | Hero, nine sections, plans (`#plans`, `#enterprise`), separate orders, contact (`#contact`) | `src/content/site.ts`, `src/content/sections.ts` |
+| Home | `/` | Hero with referenced standards, supplier bank spotlight, by-department overview (R&D, QC, QA, production, regulatory, supply), nine sections with live counts, databases, calculations, three-step access, plans (`#plans`, `#enterprise`) with comparison table, separate orders, FAQ, contact (`#contact`); plan buttons open a pre-filled request email | `src/content/site.ts`, `src/content/sections.ts` |
 | Handbooks · هندبوک‌ها | `/handbooks` | 8 planned handbooks with chapters (in preparation) | `src/data/handbooks.json` |
 | **Supplier & Manufacturer Bank** · بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی (featured) | `/suppliers` (`?q=`, `?cat=`, `?type=`) | 139 Iranian manufacturers and importers, 2,164 materials: synonym-aware search (B1 = thiamine = تیامین, B1 ≠ B12), filters, credibility sort, copyable phones. Featured on the home page (search band, stats, category links), in the header and as the hero's main button | `src/data/suppliers.json`, `src/lib/supplier-search.ts` |
 | Excipient Database · بانک اکسیپیان | `/excipients` | 272 excipients: search (EN/FA/trade name/CAS), filter by function and dosage form | `src/data/excipients.json` |
