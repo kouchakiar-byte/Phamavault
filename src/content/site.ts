@@ -37,7 +37,6 @@ export const copy = {
   },
 
   hero: {
-    eyebrow: bi("Pharmaceutics · R&D · Formulation Science", "داروسازی · تحقیق و توسعه · علم فرمولاسیون"),
     lead: bi(
       "A curated, cross-referenced knowledge base for the pharmaceutical product lifecycle — excipient and API data, a source-referenced supplier directory, compendial calculations, GMP-aligned SOPs and CTD/ICH references for R&D, quality and regulatory teams, students and pharmacies.",
       "پایگاه دانش تخصصی و به‌هم‌پیوسته برای چرخه عمر فرآورده دارویی — داده‌های مواد جانبی و مواد مؤثره، بانک تأمین‌کنندگان با منبع قابل‌راستی‌آزمایی، محاسبات داروسازی، دستورالعمل‌های منطبق بر GMP و مرجع CTD و ICH برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری، دانشجویان و داروخانه‌ها.",

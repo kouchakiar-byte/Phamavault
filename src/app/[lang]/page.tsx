@@ -133,7 +133,9 @@ export default async function HomePage() {
         <Container className="grid items-center gap-14 py-20 lg:grid-cols-[1.15fr_1fr] lg:py-28">
           <div className="fade-in">
             <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-molecule-400">
-              {hero.eyebrow[locale]}
+              {copy.platform[locale]}
+              <span className="text-molecule-400/60" aria-hidden="true">·</span>
+              <span dir={locale === "fa" ? "ltr" : "rtl"}>{copy.platform[locale === "fa" ? "en" : "fa"]}</span>
             </p>
             <h1 className="mt-6">
               <span
@@ -151,10 +153,6 @@ export default async function HomePage() {
                 secondaryClassName="mt-1 text-[0.6em] font-medium text-capsule-400/80"
               />
             </h1>
-            <p className="mt-4 flex flex-wrap items-baseline gap-x-2 text-lg font-semibold text-vault-100">
-              {copy.platform[locale]}
-              <span className="text-sm font-normal text-vault-100/60">{copy.platform[locale === "fa" ? "en" : "fa"]}</span>
-            </p>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-vault-100/80 sm:text-lg">{hero.lead[locale]}</p>
             <div className="mt-10 flex flex-wrap gap-4">
               <ButtonLink href={href(locale, "suppliers")}>{hero.supplierSearch[locale]}</ButtonLink>
