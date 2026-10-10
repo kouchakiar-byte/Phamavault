@@ -154,7 +154,7 @@ export default async function HomePage() {
               />
             </h1>
             <p className="mt-6 max-w-xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
-            <p className="mt-3 max-w-xl text-base leading-relaxed text-vault-100/80">{hero.audience[locale]}</p>
+            <p className="mt-3 max-w-xl text-base font-medium leading-relaxed text-molecule-400">{hero.audience[locale]}</p>
             <div className="mt-10 flex flex-wrap gap-4">
               <ButtonLink href={href(locale, "suppliers")}>{hero.supplierSearch[locale]}</ButtonLink>
               <ButtonLink href={href(locale, "#plans")} variant="outline-light">

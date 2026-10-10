@@ -42,8 +42,8 @@ export const copy = {
       "دانش یکپارچه، تصمیم‌گیری دقیق‌تر، توسعه هوشمندانه‌تر دارو",
     ),
     audience: bi(
-      "For professionals in research and development (R&D), quality assurance (QA) and quality control (QC), regulatory affairs (RA), pharmacy and pharmaceutical sciences students, everyone working in the pharmaceutical sector, and pharmacies.",
-      "ویژه متخصصان تحقیق و توسعه (R&D)، تضمین کیفیت (QA) و کنترل کیفیت (QC)، امور رگولاتوری (RA)، دانشجویان داروسازی و علوم دارویی، فعالان حوزه دارو و داروخانه‌ها.",
+      "For professionals in research and development (R&D), procurement and supply chain, quality control (QC), quality assurance (QA) and regulatory affairs (RA); faculty and students of pharmacy and pharmaceutical sciences; everyone working in the pharmaceutical sector; and pharmacies.",
+      "ویژه متخصصان تحقیق و توسعه (R&D)، بازرگانی و زنجیره تأمین (Supply Chain)، کنترل کیفیت (QC)، تضمین کیفیت (QA) و امور رگولاتوری (RA)، اساتید و دانشجویان داروسازی و علوم دارویی، فعالان حوزه دارو و داروخانه‌ها.",
     ),
     browse: bi("Browse the sections", "مرور بخش‌ها"),
     supplierSearch: bi("Search the supplier bank", "جستجو در بانک تأمین‌کنندگان"),
