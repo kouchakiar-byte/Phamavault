@@ -48,11 +48,10 @@ export async function SiteFooter() {
         ))}
       </Container>
       <div className="border-t border-white/10">
-        <Container className="flex flex-col gap-2 py-6 text-xs text-vault-100/60 sm:flex-row sm:justify-between">
+        <Container className="py-6 text-xs text-vault-100/60">
           <p>
-            © <span dir="ltr">{siteConfig.name}</span> · {copy.platform[locale]}
+            © <span dir="ltr">{siteConfig.name}</span> · <span className="font-semibold text-capsule-400">{copy.slogan[locale]}</span>
           </p>
-          <p>{copy.slogan[locale]}</p>
         </Container>
       </div>
     </footer>
