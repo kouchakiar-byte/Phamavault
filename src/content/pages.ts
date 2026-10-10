@@ -93,14 +93,7 @@ export const pages = {
     ),
     aboutTitle: bi("About this data", "درباره این داده‌ها"),
     about: [
-      bi(
-        "Compiled on 16 Mehr 1405 (8 October 2026). The source of each row is shown under it; most manufacturers are taken from the member page of the Syndicate of Pharmaceutical, Chemical and Pharmaceutical Packaging Manufacturers (syndicate phone: 021-22547182).",
-        "گردآوری: ۱۶ مهر ۱۴۰۵. منبع هر ردیف زیر همان ردیف آمده است؛ بیشتر تولیدکنندگان از صفحه اعضای سندیکای تولیدکنندگان مواد دارویی، شیمیایی و بسته‌بندی دارویی (تلفن سندیکا: 021-22547182) برداشته شده‌اند.",
-      ),
-      bi(
-        "Company stock levels are not published anywhere. The “plant / warehouse location” sort is by province, not by stock.",
-        "موجودی انبار شرکت‌ها جایی منتشر نمی‌شود. مرتب‌سازی «محل کارخانه / انبار» بر اساس استان است، نه موجودی.",
-      ),
+      bi("Last updated: 17 Mehr 1405 (9 October 2026).", "آخرین به‌روزرسانی: ۱۷ مهر ۱۴۰۵"),
       bi(
         "Rows marked “no phone” were recorded from product-page titles in web search: the company has a sales page for that material on its site. Take the phone number from the company's own site; the “search on this company's site” link goes straight to that material.",
         "ردیف‌های «بدون تلفن» از روی عنوان صفحه محصول در جستجوی وب ثبت شده‌اند: یعنی آن شرکت در سایتش صفحه فروش آن ماده را دارد. تلفن را از سایت خود شرکت بردارید؛ لینک «جستجو در سایت این شرکت» مستقیم به همان ماده می‌رسد.",
