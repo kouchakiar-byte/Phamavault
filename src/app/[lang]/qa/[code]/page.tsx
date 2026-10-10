@@ -11,8 +11,11 @@ import { href } from "@/lib/paths";
 
 const page = pages.qa;
 
+// Only one SOP is prerendered to keep the build short on the host; the others
+// are rendered on first request and then served from the cache.
 export function generateStaticParams() {
-  return sops.items.filter((s) => s.text).map((s) => ({ code: s.code.toLowerCase() }));
+  const first = sops.items.find((s) => s.text);
+  return first ? [{ code: first.code.toLowerCase() }] : [];
 }
 
 async function load(params: PageProps<"/[lang]/qa/[code]">["params"]) {
