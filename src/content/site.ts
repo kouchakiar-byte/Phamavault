@@ -37,9 +37,13 @@ export const copy = {
   },
 
   hero: {
-    lead: bi(
-      "A curated, cross-referenced knowledge base for the pharmaceutical product lifecycle — excipient and API data, a source-referenced supplier directory, compendial calculations, GMP-aligned SOPs and CTD/ICH references for R&D, quality and regulatory teams, students and pharmacies.",
-      "پایگاه دانش تخصصی و به‌هم‌پیوسته برای چرخه عمر فرآورده دارویی — داده‌های مواد جانبی و مواد مؤثره، بانک تأمین‌کنندگان با منبع قابل‌راستی‌آزمایی، محاسبات داروسازی، دستورالعمل‌های منطبق بر GMP و مرجع CTD و ICH برای تیم‌های تحقیق و توسعه، کیفیت و امور رگولاتوری، دانشجویان و داروخانه‌ها.",
+    headline: bi(
+      "Integrated knowledge, sharper decisions, smarter drug development",
+      "دانش یکپارچه، تصمیم‌گیری دقیق‌تر، توسعه هوشمندانه‌تر دارو",
+    ),
+    audience: bi(
+      "For professionals in research and development (R&D), quality assurance (QA) and quality control (QC), regulatory affairs (RA), pharmacy and pharmaceutical sciences students, everyone working in the pharmaceutical sector, and pharmacies.",
+      "ویژه متخصصان تحقیق و توسعه (R&D)، تضمین کیفیت (QA) و کنترل کیفیت (QC)، امور رگولاتوری (RA)، دانشجویان داروسازی و علوم دارویی، فعالان حوزه دارو و داروخانه‌ها.",
     ),
     browse: bi("Browse the sections", "مرور بخش‌ها"),
     supplierSearch: bi("Search the supplier bank", "جستجو در بانک تأمین‌کنندگان"),
@@ -69,6 +73,17 @@ export const copy = {
         ),
       },
     ],
+  },
+
+  statement: {
+    title: bi(
+      "The specialist reference for pharmaceutical knowledge, information and tools",
+      "مرجع تخصصی دانش، اطلاعات و ابزارهای داروسازی",
+    ),
+    text: bi(
+      "From raw material sourcing and formulation development to technical calculations and quality and regulatory requirements — built on authoritative, citable scientific sources.",
+      "از تأمین مواد اولیه و توسعه فرمولاسیون تا محاسبات فنی، الزامات کیفی و رگولاتوری؛ مبتنی بر منابع علمی معتبر و قابل استناد.",
+    ),
   },
 
   departments: {
