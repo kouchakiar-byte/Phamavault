@@ -3,6 +3,12 @@ import { bi } from "@/i18n/bi";
 /** The calculators: tab label, full title and governing equation. */
 export const calculations = [
   {
+    key: "pot",
+    label: bi("Potency calculation", "محاسبه پوتنسی (Potency)"),
+    title: bi("Potency calculation: API quantity from assay, water, residual solvents and salt factor", "محاسبه پوتنسی: مقدار ماده مؤثره بر اساس اسی، رطوبت، حلال باقیمانده و ضریب نمک"),
+    equation: "m = LC × SF × 100 / [Assay × (100 − W − RS) / 100]",
+  },
+  {
     key: "hlb",
     label: bi("HLB blending", "محاسبه HLB"),
     title: bi("HLB blending of an emulsifier pair", "محاسبه HLB مخلوط دو امولسی‌فایر"),
@@ -49,12 +55,6 @@ export const calculations = [
     label: bi("Vitamin units (IU ⇄ mass)", "واحد ویتامین‌ها (IU ⇄ جرم)"),
     title: bi("Vitamin unit conversion (IU ⇄ mass)", "تبدیل واحد ویتامین‌ها (IU ⇄ جرم)"),
     equation: "IU = mass (mg) × IU/mg factor",
-  },
-  {
-    key: "pot",
-    label: bi("API potency adjustment", "محاسبه پوتنسی ماده مؤثره"),
-    title: bi("API quantity by potency (assay, water content and salt factor)", "مقدار ماده مؤثره بر اساس پوتنسی (اسی، رطوبت و ضریب نمک)"),
-    equation: "m = LC × SF × 100 / [Assay × (100 − W) / 100]",
   },
   {
     key: "bat",
