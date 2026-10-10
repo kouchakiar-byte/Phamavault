@@ -1,151 +1,21 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useState } from "react";
 import { X } from "lucide-react";
-import { bi, type Bi } from "@/i18n/bi";
+import { bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
-import { copy } from "@/content/site";
-import { calculation } from "@/content/calculations";
+import { calculation, calculationGroups, calculations, type CalculationKey } from "@/content/calculations";
 import { fixed, sig } from "./calc-format";
-import { BiTitle } from "./ui";
+import { Choice, DASH, NumberInput, Panel, PresetSelect, Select, bad, isLocked, num, type Ctx, type Preset, type Values } from "./calc/ui";
+import { Caps, Coat, Flow, Tab } from "./calc/formulation";
+import { Conc, Fpd, Kin, Osm } from "./calc/solutions";
+import { Diss, F2, Hplc, Imp, Kf, Lin, Sst, Tit, Udu, Uv } from "./calc/analysis";
+
 
 /*
  * The pharmaceutical calculators. Formulas and presets follow the approved
  * design; every result recomputes on each keystroke.
  */
-
-type Values = Record<string, string>;
-type Ctx = { locale: Locale; v: Values; set: (key: string, value: string) => void };
-
-const num = (s: string | undefined) => parseFloat(s ?? "");
-
-// ---------- shared building blocks ----------
-
-function NumberInput({ ctx, id, label, readOnly = false }: { ctx: Ctx; id: string; label: Bi; readOnly?: boolean }) {
-  return (
-    <div className="flex flex-col gap-1.5">
-      <label htmlFor={id} className="text-sm text-muted">
-        {label[ctx.locale]}
-      </label>
-      <input
-        id={id}
-        type="number"
-        step="any"
-        className="field-input"
-        value={ctx.v[id] ?? ""}
-        readOnly={readOnly}
-        onChange={(e) => ctx.set(id, e.target.value)}
-      />
-    </div>
-  );
-}
-
-type Preset = { label: Bi; values: string[] };
-
-/** A select whose options fill (and lock) a set of number inputs, plus "custom". */
-function PresetSelect({ ctx, id, label, presets, targets }: { ctx: Ctx; id: string; label: Bi; presets: Preset[]; targets: string[] }) {
-  const value = ctx.v[id] ?? "0";
-  return (
-    <div className="flex flex-col gap-1.5">
-      <label htmlFor={id} className="text-sm text-muted">
-        {label[ctx.locale]}
-      </label>
-      <select
-        id={id}
-        className="field-input"
-        value={value}
-        onChange={(e) => {
-          ctx.set(id, e.target.value);
-          const preset = presets[Number(e.target.value)];
-          if (preset) targets.forEach((t, i) => ctx.set(t, preset.values[i]));
-        }}
-      >
-        {presets.map((p, i) => (
-          <option key={i} value={i}>
-            {p.label[ctx.locale]}
-          </option>
-        ))}
-        <option value="custom">{copy.common.custom[ctx.locale]}</option>
-      </select>
-    </div>
-  );
-}
-
-const isLocked = (ctx: Ctx, id: string) => (ctx.v[id] ?? "0") !== "custom";
-
-function Select({ ctx, id, label, options }: { ctx: Ctx; id: string; label: Bi; options: string[] }) {
-  return (
-    <div className="flex flex-col gap-1.5">
-      <label htmlFor={id} className="text-sm text-muted">
-        {label[ctx.locale]}
-      </label>
-      <select id={id} className="field-input" value={ctx.v[id]} onChange={(e) => ctx.set(id, e.target.value)}>
-        {options.map((o) => (
-          <option key={o}>{o}</option>
-        ))}
-      </select>
-    </div>
-  );
-}
-
-/** A select with bilingual option labels. */
-function Choice({ ctx, id, label, options }: { ctx: Ctx; id: string; label: Bi; options: { value: string; label: Bi }[] }) {
-  return (
-    <div className="flex flex-col gap-1.5">
-      <label htmlFor={id} className="text-sm text-muted">
-        {label[ctx.locale]}
-      </label>
-      <select id={id} className="field-input" value={ctx.v[id]} onChange={(e) => ctx.set(id, e.target.value)}>
-        {options.map((o) => (
-          <option key={o.value} value={o.value}>
-            {o.label[ctx.locale]}
-          </option>
-        ))}
-      </select>
-    </div>
-  );
-}
-
-type Result = { label: Bi; value: string; hidden?: boolean };
-
-function Panel({ ctx, title, form, results, message, note, children }: {
-  ctx: Ctx;
-  title: Bi;
-  form: ReactNode;
-  results: Result[];
-  message?: string;
-  note: Bi;
-  children?: ReactNode;
-}) {
-  return (
-    <div className="flex flex-col gap-5 rounded-card border border-line bg-white p-6">
-      <BiTitle as="h2" text={title} locale={ctx.locale} className="text-xl font-bold text-vault-900" />
-      <div className="grid gap-6 md:grid-cols-2">
-        <div className="flex flex-col gap-3">{form}</div>
-        <div className="flex h-fit flex-col gap-3 rounded-xl bg-vault-50 p-5">
-          {results
-            .filter((r) => !r.hidden)
-            .map((r) => (
-              <div key={r.label.en} className="flex flex-wrap items-baseline justify-between gap-3 border-b border-line pb-2.5 text-sm text-muted">
-                <span>{r.label[ctx.locale]}</span>
-                <b className="font-mono text-base font-medium text-ink tabular-nums" dir="ltr">
-                  {r.value}
-                </b>
-              </div>
-            ))}
-          <p className="min-h-5 text-sm text-warn" aria-live="polite">
-            {message}
-          </p>
-        </div>
-      </div>
-      {children}
-      <p className="text-sm text-muted">{note[ctx.locale]}</p>
-    </div>
-  );
-}
-
-const DASH = "–";
-const bad = (ctx: Ctx) => copy.common.badInput[ctx.locale];
 
 // ---------- 1. HLB blend ----------
 
@@ -790,18 +660,11 @@ function Batch({ ctx }: { ctx: Ctx }) {
 
 // ---------- bench ----------
 
-const tabs = [
-  { key: "pot", Calc: Pot },
-  { key: "hlb", Calc: Hlb },
-  { key: "iso", Calc: Iso },
-  { key: "dil", Calc: Dil },
-  { key: "buf", Calc: Buf },
-  { key: "bcap", Calc: BufCap },
-  { key: "sup", Calc: Sup },
-  { key: "meq", Calc: Meq },
-  { key: "vit", Calc: Vit },
-  { key: "bat", Calc: Batch },
-] as const;
+const components: Record<CalculationKey, (props: { ctx: Ctx }) => React.JSX.Element> = {
+  pot: Pot, bat: Batch, hlb: Hlb, flow: Flow, caps: Caps, tab: Tab, coat: Coat, sup: Sup,
+  iso: Iso, fpd: Fpd, osm: Osm, buf: Buf, bcap: BufCap, dil: Dil, conc: Conc, meq: Meq, vit: Vit, kin: Kin,
+  hplc: Hplc, imp: Imp, uv: Uv, tit: Tit, kf: Kf, sst: Sst, lin: Lin, diss: Diss, f2: F2, udu: Udu,
+};
 
 const defaults: Values = {
   "h-pair": "0", "h-lo": "4.3", "h-hi": "15.0", "h-req": "10.5", "h-mass": "5",
@@ -814,6 +677,28 @@ const defaults: Values = {
   "v-form": String(flatForms.findIndex((f) => f.name === "Cholecalciferol (D3)")), "v-amt": "1000", "v-unit": "IU",
   "x-units": "100000", "x-ov": "0",
   "p-mode": "pct", "p-lc": "10", "p-pot": "99.5", "p-basis": "dried", "p-w": "0.5", "p-rs": "0", "p-salt": "1", "p-mws": "567.05", "p-mwb": "408.88", "p-units": "100000",
+  // formulation
+  "fl-m": "50", "fl-v0": "100", "fl-vf": "80", "fl-h": "2.5", "fl-r": "4.0",
+  "cp-fill": "400", "cp-rho": "0.65",
+  "tb-f": "100", "tb-d": "10", "tb-t": "4", "tb-w": "350", "tb-rho": "1.5",
+  "co-b": "100", "co-wg": "3", "co-sol": "15", "co-eff": "90", "co-rate": "300",
+  // solutions and stability
+  "fp-c": "1", "fp-d1": "0.13", "fp-v": "30", "fp-agent": "0", "fp-b": "0.576",
+  "os-s1": "1", "os-c1": "8.6", "os-s2": "2", "os-c2": "0.3", "os-s3": "3", "os-c3": "0.33", "os-s4": "0", "os-c4": "0",
+  "cn-x": "0.1", "cn-unit": "pct", "cn-mw": "183.20",
+  "kn-ord": "1", "kn-k": "0.005", "kn-t1": "40", "kn-ea": "83", "kn-t2": "25", "kn-c0": "100", "kn-lim": "90",
+  // analysis
+  "hp-au": "1520000", "hp-as": "1500000", "hp-ws": "25", "hp-vs": "50", "hp-p": "99.8", "hp-wu": "650", "hp-vu": "1000", "hp-avg": "650", "hp-lc": "500",
+  "im-ai": "2500", "im-as": "12000", "im-cs": "0.001", "im-cu": "0.5", "im-rrf": "1.0", "im-lim": "0.2",
+  "uv-a": "0.548", "uv-a1": "715", "uv-b": "1", "uv-v": "20000", "uv-exp": "150", "uv-mw": "151.16",
+  "ti-mode": "direct", "ti-w": "200", "ti-v": "22.6", "ti-vb": "0.05", "ti-m": "0.0502", "ti-mn": "0.05", "ti-e": "8.806", "ti-lod": "0",
+  "kf-sw": "50", "kf-sv": "10", "kf-w": "500", "kf-v": "0.6", "kf-w1": "2.000", "kf-w2": "1.988",
+  "ss-t1": "5.2", "ss-t2": "6.1", "ss-w1": "0.12", "ss-w2": "0.14", "ss-w05": "0.30", "ss-f": "0.13",
+  "ss-areas": "1502310 1498760 1505120 1499870 1501450 1503020",
+  "ln-x": "50 75 100 125 150", "ln-y": "250300 378100 501200 629900 752400",
+  "ds-lc": "500", "ds-v": "900", "ds-s": "10", "ds-rep": "yes", "ds-t": "10 15 20 30 45", "ds-c": "0.2510 0.3920 0.4810 0.5320 0.5480",
+  "f2-r": "35 58 79 90 96", "f2-t": "32 55 77 89 95",
+  "ud-x": "99.2 101.5 98.7 100.3 97.9 102.1 99.8 100.6 98.4 101.0",
 };
 
 export function Calculators({ locale }: { locale: Locale }) {
@@ -822,30 +707,62 @@ export function Calculators({ locale }: { locale: Locale }) {
   const ctx: Ctx = { locale, v: values, set: (k, val) => setValues((prev) => ({ ...prev, [k]: val })) };
 
   return (
-    <div className="grid items-start gap-6 lg:grid-cols-[240px_1fr]">
-      <div role="tablist" aria-orientation="vertical" className="flex flex-wrap gap-2 lg:flex-col">
-        {tabs.map((t) => (
-          <button
-            key={t.key}
-            type="button"
-            role="tab"
-            id={`tab-${t.key}`}
-            aria-selected={active === t.key}
-            aria-controls={`panel-${t.key}`}
-            onClick={() => setActive(t.key)}
-            className="rounded-xl border border-line bg-white px-4 py-2.5 text-start text-sm font-medium text-ink transition hover:border-molecule-500 aria-selected:border-molecule-600 aria-selected:bg-molecule-600 aria-selected:text-white"
-          >
-            {calculation(t.key).label[locale]}
-          </button>
-        ))}
+    <div className="grid grid-cols-[minmax(0,1fr)] items-start gap-6 lg:grid-cols-[260px_minmax(0,1fr)]">
+      {/* Phones and tablets: one grouped drop-down */}
+      <div className="flex flex-col gap-1.5 lg:hidden">
+        <label htmlFor="calc-picker" className="text-sm font-semibold text-vault-900">
+          {bi("Choose a calculation", "انتخاب محاسبه")[locale]}
+        </label>
+        <select id="calc-picker" className="field-input text-base" value={active} onChange={(e) => setActive(e.target.value)}>
+          {calculationGroups.map((g) => (
+            <optgroup key={g.key} label={g.title[locale]}>
+              {calculations
+                .filter((c) => c.group === g.key)
+                .map((c) => (
+                  <option key={c.key} value={c.key}>
+                    {c.label[locale]}
+                  </option>
+                ))}
+            </optgroup>
+          ))}
+        </select>
       </div>
-      <div>
-        {tabs.map(({ key, Calc }) => (
-          // Panels stay mounted so each keeps its inputs when switching tabs.
-          <div key={key} role="tabpanel" id={`panel-${key}`} aria-labelledby={`tab-${key}`} hidden={active !== key}>
-            <Calc ctx={ctx} />
+
+      {/* Desktop: grouped vertical tabs */}
+      <div role="tablist" aria-orientation="vertical" className="hidden flex-col gap-1.5 lg:flex">
+        {calculationGroups.map((g) => (
+          <div key={g.key} className="mb-3 flex flex-col gap-1.5">
+            <p className="px-1 pb-1 text-xs font-bold tracking-wide text-molecule-700">{g.title[locale]}</p>
+            {calculations
+              .filter((c) => c.group === g.key)
+              .map((c) => (
+                <button
+                  key={c.key}
+                  type="button"
+                  role="tab"
+                  id={`tab-${c.key}`}
+                  aria-selected={active === c.key}
+                  aria-controls={`panel-${c.key}`}
+                  onClick={() => setActive(c.key)}
+                  className="rounded-xl border border-line bg-white px-4 py-2 text-start text-sm font-medium text-ink transition hover:border-molecule-500 aria-selected:border-molecule-600 aria-selected:bg-molecule-600 aria-selected:text-white"
+                >
+                  {c.label[locale]}
+                </button>
+              ))}
           </div>
         ))}
+      </div>
+
+      <div className="min-w-0">
+        {calculations.map(({ key }) => {
+          const Calc = components[key];
+          return (
+            // Panels stay mounted so each keeps its inputs when switching calculations.
+            <div key={key} role="tabpanel" id={`panel-${key}`} aria-labelledby={`tab-${key}`} hidden={active !== key}>
+              <Calc ctx={ctx} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

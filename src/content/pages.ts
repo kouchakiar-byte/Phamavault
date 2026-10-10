@@ -134,8 +134,8 @@ export const pages = {
   tools: {
     title: bi("Pharmaceutical calculations", "محاسبات داروسازی"),
     lead: bi(
-      "Ten calculators based on standard pharmaceutical equations. Results update as you type, and the governing equation is shown under each one.",
-      "ده ماشین‌حساب بر پایه معادلات استاندارد داروسازی. نتیجه هم‌زمان با ورود داده محاسبه می‌شود و معادله مبنا زیر هر کدام آمده است.",
+      "{n} calculators in three groups: formulation and manufacturing; solutions, physical pharmacy and stability; analysis and quality control. Results update as you type, and the governing equation and reference are shown under each one.",
+      "{n} ماشین‌حساب در سه گروه: فرمولاسیون و تولید؛ محلول‌ها، داروسازی فیزیکی و پایداری؛ آنالیز و کنترل کیفیت. نتیجه هم‌زمان با ورود داده محاسبه می‌شود و معادله مبنا و مرجع زیر هر کدام آمده است.",
     ),
   },
   formulation: {
