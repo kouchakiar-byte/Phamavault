@@ -18,7 +18,7 @@ import {
 import { LogoMark } from "@/components/logo";
 import { SupplierSpotlight } from "@/components/supplier-spotlight";
 import { BiTitle, ButtonLink, Container, MoleculePattern, SectionHead } from "@/components/ui";
-import { calculations } from "@/content/calculations";
+import { calculation, calculations, featuredCalculations } from "@/content/calculations";
 import { sections } from "@/content/sections";
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
@@ -323,7 +323,10 @@ export default async function HomePage() {
               <p className="text-sm font-semibold tracking-wide text-molecule-400">{toolsShowcase.eyebrow[locale]}</p>
               <BiTitle
                 as="h2"
-                text={toolsShowcase.title}
+                text={bi(
+                  toolsShowcase.title.en.replace("{n}", String(calculations.length)),
+                  toolsShowcase.title.fa.replace("{n}", calculations.length.toLocaleString("fa-IR")),
+                )}
                 locale={locale}
                 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl"
                 secondaryClassName="text-vault-100"
@@ -335,7 +338,7 @@ export default async function HomePage() {
             </ButtonLink>
           </div>
           <div className="mt-12 grid gap-px overflow-hidden rounded-card border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
-            {calculations.map((c) => (
+            {featuredCalculations.map(calculation).map((c) => (
               <div key={c.key} className="bg-vault-950 p-6">
                 <h3 className="font-semibold">{c.title[locale]}</h3>
                 <p className="mt-3 font-mono text-xs leading-relaxed text-molecule-400" dir="ltr" style={{ textAlign: "start" }}>

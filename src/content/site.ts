@@ -199,10 +199,10 @@ export const copy = {
 
   toolsShowcase: {
     eyebrow: bi("Pharmaceutical calculations", "محاسبات داروسازی"),
-    title: bi("Ten calculators built on standard pharmaceutical equations", "ده ماشین‌حساب بر پایه معادلات استاندارد داروسازی"),
+    title: bi("{n} calculators for formulation, physical pharmacy and analysis", "{n} ماشین‌حساب برای فرمولاسیون، داروسازی فیزیکی و آنالیز"),
     lead: bi(
-      "Each calculator states its governing equation and validates its inputs — for example, it warns when the target pH lies more than one unit from the pKa.",
-      "هر ماشین‌حساب معادله مبنای خود را نشان می‌دهد و ورودی‌ها را کنترل می‌کند؛ برای نمونه اگر pH هدف بیش از یک واحد با pKa فاصله داشته باشد، هشدار می‌دهد.",
+      "From potency, powder flow and capsule fill to buffer capacity, stability kinetics, HPLC assay, system suitability, dissolution f2 and content uniformity. Each calculator states its governing equation and its pharmacopoeial or ICH reference.",
+      "از پوتنسی، جریان‌پذیری پودر و پرکردن کپسول تا ظرفیت بافری، سینتیک پایداری، تعیین مقدار HPLC، انطباق سیستم، فاکتور f2 انحلال و یکنواختی محتوا. هر ماشین‌حساب معادله مبنا و مرجع فارماکوپه‌ای یا ICH خود را نشان می‌دهد.",
     ),
     open: bi("Open calculations", "ورود به محاسبات"),
   },
