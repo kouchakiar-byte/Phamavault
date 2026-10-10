@@ -49,7 +49,7 @@ export const copy = {
     supplierSearch: bi("Search the supplier bank", "جستجو در بانک تأمین‌کنندگان"),
     seePlans: bi("See subscription plans", "مشاهده طرح‌های اشتراک"),
     referencesLabel: bi("Referenced standards", "مراجع مورد استناد"),
-    references: ["USP–NF", "Ph. Eur.", "JP", "ICH Q1–Q14", "ICH M4 (CTD)", "PIC/S GMP"],
+    references: ["USP–NF", "BP", "Ph. Eur.", "JP", "ICH Q1–Q14", "ICH M4 (CTD)", "PIC/S GMP"],
     pillars: [
       {
         title: bi("Evidence-based", "مستند و مبتنی بر مرجع"),
