@@ -39,6 +39,7 @@ export function PageHeader({ locale, section: slug, title, lead, back }: Props) 
               locale={locale}
               className="mt-3 text-3xl font-bold tracking-tight sm:text-5xl"
               secondaryClassName="text-vault-100"
+              accentClassName="text-capsule-400"
             />
             {lead && <p className="mt-5 text-lg leading-relaxed text-vault-100/80">{lead[locale]}</p>}
           </div>

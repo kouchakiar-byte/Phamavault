@@ -17,7 +17,23 @@ type BiTitleProps = {
   secondaryClassName?: string;
   /** Put the second language on its own line instead of beside the first. */
   stacked?: boolean;
+  /** Classes for Latin abbreviations in parentheses, e.g. "(QC)", in the main title. */
+  accentClassName?: string;
 };
+
+/** Splits out "(QC)"-style Latin parentheticals so they can be coloured. */
+function withAccent(text: string, className?: string): ReactNode {
+  if (!className) return text;
+  return text.split(/(\([^()]*[A-Za-z][^()]*\))/).map((part, i) =>
+    i % 2 ? (
+      <span key={i} className={className}>
+        {part}
+      </span>
+    ) : (
+      part
+    ),
+  );
+}
 
 /**
  * A title in the reader's language with the other language beside it —
@@ -30,12 +46,13 @@ export function BiTitle({
   className = "",
   secondaryClassName = "",
   stacked = false,
+  accentClassName,
 }: BiTitleProps) {
   const other = otherLocale(locale);
   const layout = stacked ? "flex flex-col gap-1" : "flex flex-wrap items-baseline gap-x-3 gap-y-1";
   return (
     <Tag className={`${layout} ${className}`}>
-      <span>{text[locale]}</span>
+      <span>{withAccent(text[locale], accentClassName)}</span>
       {text.en !== text.fa && (
         <span
           lang={other}

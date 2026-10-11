@@ -418,6 +418,12 @@ export const copy = {
     quote: bi("Request a team quotation", "درخواست پیش‌فاکتور تیمی / سازمانی"),
   },
 
+  lastUpdate: {
+    label: bi("Last updated", "آخرین به‌روزرسانی"),
+    at: bi("{date}, {time}", "{date}، ساعت {time}"),
+    daily: bi("Updated every day at 18:00 Tehran time", "به‌روزرسانی روزانه، هر روز ساعت ۱۸:۰۰ به وقت تهران"),
+  },
+
   /** Pre-filled email used by every request button. */
   requestEmail: {
     subject: bi("PharmaVault — {plan} plan request", "PharmaVault — درخواست طرح {plan}"),

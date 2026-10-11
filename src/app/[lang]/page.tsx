@@ -23,21 +23,23 @@ import { calculation, calculations, featuredCalculations } from "@/content/calcu
 import { sections } from "@/content/sections";
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
-import suppliers from "@/data/suppliers.json";
 import { bi, type Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
+import { getCatalog } from "@/lib/catalog";
 import { href } from "@/lib/paths";
 
-const supplierMaterials = suppliers.companies.reduce((n, c) => n + c.p.length, 0);
+/** Counts from the live catalog (suppliers and raw materials change with the daily update). */
+type Counts = { suppliers: number; supplierMaterials: number; materials: number };
 
 /** Live counts from the reference data — never hand-typed numbers. */
-const databaseStats = [
-  { slug: "excipients", count: excipients.items.length, unit: copy.databases.units.excipients },
-  { slug: "suppliers", count: suppliers.companies.length, unit: copy.databases.units.suppliers },
-  { slug: "materials", count: rawMaterials.items.length, unit: copy.databases.units.materials },
-  { slug: "qa", count: sops.items.length, unit: copy.databases.units.qa },
-] as const;
+const databaseStats = (c: Counts) =>
+  [
+    { slug: "excipients", count: excipients.items.length, unit: copy.databases.units.excipients },
+    { slug: "suppliers", count: c.suppliers, unit: copy.databases.units.suppliers },
+    { slug: "materials", count: c.materials, unit: copy.databases.units.materials },
+    { slug: "qa", count: sops.items.length, unit: copy.databases.units.qa },
+  ] as const;
 
 const departmentIcons: Record<string, LucideIcon> = {
   rnd: FlaskConical,
@@ -51,13 +53,13 @@ const departmentIcons: Record<string, LucideIcon> = {
 };
 
 /** One line of real figures under each section card. */
-function sectionHighlight(slug: string, n: (x: number) => string): Bi | null {
-  const chapters = handbooks.reduce((sum, h) => sum + h.items.length, 0);
+function sectionHighlight(slug: string, n: (x: number) => string, c: Counts): Bi | null {
+  const chapters = handbooks.reduce((sum, h) => sum + h.topics.length, 0);
   switch (slug) {
     case "suppliers":
       return bi(
-        `${n(suppliers.companies.length)} companies · ${n(supplierMaterials)} materials`,
-        `${n(suppliers.companies.length)} شرکت · ${n(supplierMaterials)} قلم ماده`,
+        `${n(c.suppliers)} companies · ${n(c.supplierMaterials)} materials`,
+        `${n(c.suppliers)} شرکت · ${n(c.supplierMaterials)} قلم ماده`,
       );
     case "handbooks":
       return bi(`${n(handbooks.length)} titles · ${n(chapters)} chapters`, `${n(handbooks.length)} عنوان · ${n(chapters)} فصل`);
@@ -68,8 +70,8 @@ function sectionHighlight(slug: string, n: (x: number) => string): Bi | null {
       );
     case "materials":
       return bi(
-        `${n(rawMaterials.items.length)} materials · ${n(Object.keys(rawMaterials.groups).length)} classes`,
-        `${n(rawMaterials.items.length)} ماده · ${n(Object.keys(rawMaterials.groups).length)} رده`,
+        `${n(c.materials)} materials · ${n(Object.keys(rawMaterials.groups).length)} classes`,
+        `${n(c.materials)} ماده · ${n(Object.keys(rawMaterials.groups).length)} رده`,
       );
     case "tools":
       return bi(`${n(calculations.length)} calculators`, `${n(calculations.length)} ماشین‌حساب`);
@@ -121,6 +123,12 @@ function RequestButton({ href: link, variant, children }: { href: string; varian
 
 export default async function HomePage() {
   const locale = await getLocale();
+  const catalog = await getCatalog();
+  const counts: Counts = {
+    suppliers: catalog.companies.length,
+    supplierMaterials: catalog.companies.reduce((n, c) => n + c.p.length, 0),
+    materials: catalog.materials.length,
+  };
   const { hero, departments, sectionsIntro, databases, toolsShowcase, howItWorks, plans, faq, contact } = copy;
   const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
   const enterprise = plans.items.find((p) => p.id === "enterprise")!;
@@ -280,7 +288,7 @@ export default async function HomePage() {
           <SectionHead eyebrow={sectionsIntro.eyebrow[locale]} title={sectionsIntro.title} locale={locale} lead={sectionsIntro.lead[locale]} />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {sections.map(({ slug, href: path, plate, icon: Icon, title, description }) => {
-              const highlight = sectionHighlight(slug, num);
+              const highlight = sectionHighlight(slug, num, counts);
               return (
                 <article
                   key={slug}
@@ -318,7 +326,7 @@ export default async function HomePage() {
         <Container>
           <SectionHead eyebrow={databases.eyebrow[locale]} title={databases.title} locale={locale} lead={databases.lead[locale]} />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {databaseStats.map(({ slug, count, unit }) => {
+            {databaseStats(counts).map(({ slug, count, unit }) => {
               const section = sections.find((s) => s.slug === slug)!;
               return (
                 <Link
@@ -328,7 +336,7 @@ export default async function HomePage() {
                 >
                   <section.icon className="size-6 text-molecule-500" aria-hidden="true" />
                   <p className="mt-5 font-mono text-4xl font-medium tracking-tight text-vault-900">{num(count)}</p>
-                  <p className="mt-1 text-sm text-muted">{unit[locale].replace("{p}", num(supplierMaterials))}</p>
+                  <p className="mt-1 text-sm text-muted">{unit[locale].replace("{p}", num(counts.supplierMaterials))}</p>
                   <p className="mt-auto pt-5 text-sm font-semibold text-vault-900 group-hover:text-molecule-700">
                     {section.title[locale]}
                   </p>

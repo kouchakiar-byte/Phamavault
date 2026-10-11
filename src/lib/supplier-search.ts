@@ -24,6 +24,7 @@ export type SupplierRecord = {
   hi?: number; // force tier B
   partial?: number; // incomplete entry
   gv?: number; // general vitamin supplier: matches any vitamin query
+  webDown?: boolean; // website failed several daily link checks in a row
 };
 
 export type Product = { fa: string; en: string; tag: string; key: string };

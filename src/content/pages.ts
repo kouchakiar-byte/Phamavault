@@ -3,16 +3,20 @@ import { bi } from "@/i18n/bi";
 /** Header copy and fixed labels for each section page, as in the design. */
 export const pages = {
   handbooks: {
-    title: bi("Technical handbook library", "کتابخانه هندبوک‌های تخصصی"),
+    title: bi("Technical handbook library", "کتابخانه هندبوک‌های تخصصی (Handbooks)"),
     lead: bi(
-      "Planned titles and their chapter outlines, organised by dosage form and development stage. Open a title to see its chapters; each can also be commissioned as a company-specific edition.",
-      "عنوان‌های برنامه‌ریزی‌شده و سرفصل فصل‌ها، به تفکیک شکل دارویی و مرحله توسعه. برای دیدن فصل‌ها روی عنوان بزنید؛ هر عنوان به‌صورت ویرایش اختصاصی برای یک شرکت نیز قابل سفارش است.",
+      "Dosage-form and development handbooks: for every topic, the science behind it, the critical parameters and typical limits, troubleshooting, and the compendial and ICH references. Each title can also be commissioned as a company-specific edition.",
+      "هندبوک‌های اشکال دارویی و توسعه: برای هر موضوع، علم پشت آن، پارامترهای بحرانی و حدود متداول، رفع اشکال و مراجع فارماکوپه و ICH. هر عنوان به‌صورت ویرایش اختصاصی برای شرکت نیز قابل سفارش است.",
     ),
+    keyPoints: bi("Key points", "نکات کلیدی"),
+    references: bi("References", "مراجع"),
+    topics: bi("{n} topics", "{n} موضوع"),
+    contents: bi("Contents", "فهرست"),
   },
   suppliers: {
     title: bi(
       "Suppliers & manufacturers of pharmaceutical, supplement and cosmetic raw materials",
-      "بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی",
+      "بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی (Suppliers)",
     ),
     lead: bi(
       "Domestic manufacturers and importers in Iran of pharmaceutical raw materials (APIs and excipients), vitamins and mineral salts, supplement ingredients and amino acids, and cosmetic raw materials. Search by Persian or English name, salt form or synonym.",
@@ -78,6 +82,7 @@ export const pages = {
     province: bi("province", "استان"),
     email: bi("Email", "ایمیل"),
     website: bi("Website", "وب‌سایت"),
+    webDown: bi("(not reachable in recent checks)", "(در بررسی‌های اخیر در دسترس نبود)"),
     notRecorded: bi("Not recorded", "ثبت نشده"),
     copy: bi("Copy", "کپی"),
     copied: bi("Copied", "کپی شد"),
@@ -105,7 +110,7 @@ export const pages = {
     ],
   },
   excipients: {
-    title: bi("Pharmaceutical excipients database", "پایگاه داده مواد جانبی دارویی (اکسیپیان‌ها)"),
+    title: bi("Pharmaceutical excipients database", "پایگاه داده مواد جانبی دارویی (Excipients)"),
     lead: bi(
       "Excipients with functional category, dosage-form applicability and, where an established range exists, typical concentration. Search by English, Persian or trade name or by CAS Registry Number, or filter by function and dosage form.",
       "مواد جانبی دارویی با طبقه‌بندی عملکردی، کاربرد در اشکال دارویی و محدوده غلظت متداول (در صورت وجود محدوده مرجع). با نام انگلیسی، فارسی یا تجاری یا شماره CAS جستجو کنید، یا بر اساس عملکرد و شکل دارویی فیلتر کنید.",
@@ -121,7 +126,7 @@ export const pages = {
     ),
   },
   materials: {
-    title: bi("API and raw material database", "پایگاه داده مواد مؤثره و مواد اولیه"),
+    title: bi("API and raw material database", "پایگاه داده مواد مؤثره و مواد اولیه (API)"),
     lead: bi(
       "Active pharmaceutical ingredients, vitamins and mineral salts with CAS Registry Number, molecular weight and a key solubility, stability or elemental-content note.",
       "مواد مؤثره دارویی، ویتامین‌ها و املاح معدنی با شماره CAS، وزن مولکولی و نکته کلیدی درباره حلالیت، پایداری یا درصد عنصر.",
@@ -132,14 +137,14 @@ export const pages = {
     keyPoint: bi("Key property", "ویژگی کلیدی"),
   },
   tools: {
-    title: bi("Pharmaceutical calculations", "محاسبات داروسازی"),
+    title: bi("Pharmaceutical calculations", "محاسبات داروسازی (Calculations)"),
     lead: bi(
       "{n} calculators in three groups: formulation and manufacturing; solutions, physical pharmacy and stability; analysis and quality control. Results update as you type, and the governing equation and reference are shown under each one.",
       "{n} ماشین‌حساب در سه گروه: فرمولاسیون و تولید؛ محلول‌ها، داروسازی فیزیکی و پایداری؛ آنالیز و کنترل کیفیت. نتیجه هم‌زمان با ورود داده محاسبه می‌شود و معادله مبنا و مرجع زیر هر کدام آمده است.",
     ),
   },
   formulation: {
-    title: bi("Starting formulation builder", "طراحی فرمول پایه"),
+    title: bi("Starting formulation builder", "طراحی فرمول پایه (Formulation)"),
     lead: bi(
       "Select a dosage form to load a typical starting composition (% w/w). Adjust the percentages; the q.s. component and batch quantities are recalculated automatically.",
       "یک شکل دارویی انتخاب کنید تا ترکیب پایه متداول آن (درصد وزنی/وزنی) بارگذاری شود. درصدها را تغییر دهید؛ جزء q.s. و مقادیر بچ به‌طور خودکار محاسبه می‌شوند.",
@@ -156,7 +161,7 @@ export const pages = {
     ),
   },
   regulatory: {
-    title: bi("Regulatory reference: CTD and ICH", "مرجع امور رگولاتوری: CTD و ICH"),
+    title: bi("Regulatory affairs (RA): CTD and ICH reference", "امور رگولاتوری (RA): مرجع CTD و ICH"),
     lead: bi(
       "The Common Technical Document (ICH M4) module structure, the ICH guidelines most used in quality work, and the ICH Q1A(R2) stability storage conditions.",
       "ساختار ماژول‌های سند فنی مشترک (ICH M4)، پرکاربردترین راهنماهای ICH در حوزه کیفیت، و شرایط نگهداری مطالعات پایداری ICH Q1A(R2).",
@@ -176,7 +181,7 @@ export const pages = {
     ],
   },
   qa: {
-    title: bi("Quality assurance and SOP library", "تضمین کیفیت و کتابخانه دستورالعمل‌ها"),
+    title: bi("Quality assurance (QA) and SOP library", "تضمین کیفیت (QA) و کتابخانه دستورالعمل‌ها (SOP)"),
     lead: bi(
       "The pharmaceutical quality system (ICH Q10), quality risk management tools (ICH Q9(R1)), the key GMP references, and the master list of GMP procedures a manufacturing site requires, by department.",
       "سیستم کیفیت دارویی (ICH Q10)، ابزارهای مدیریت ریسک کیفیت \u2066(ICH Q9(R1))\u2069، مراجع کلیدی GMP و فهرست جامع دستورالعمل‌های GMP موردنیاز یک واحد تولید دارو به تفکیک واحد سازمانی.",
