@@ -136,6 +136,7 @@ export const account = {
     ),
     monthly: bi("Monthly", "ماهانه"),
     total: bi("Total to pay", "مبلغ قابل پرداخت"),
+    off: bi("{n}% off", "{n}٪ تخفیف"),
     pay: bi("Go to payment", "پرداخت"),
     order: bi("Register order", "ثبت سفارش"),
     renewing: bi("Renewing subscription no. {id}", "تمدید اشتراک شماره {id}"),

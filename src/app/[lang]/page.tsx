@@ -422,17 +422,18 @@ export default async function HomePage() {
                   </div>
                   <div className="border-y border-line py-4">
                     <p className="text-sm text-muted">{plan.priceFor[locale]}</p>
-                    <p className="mt-1 flex flex-wrap items-baseline gap-x-2">
-                      <span className="text-3xl font-bold text-vault-900">{num(price)}</span>
+                    {/* Full price struck through, the discount, then the price actually paid */}
+                    <p className="mt-3 flex flex-wrap items-center gap-3">
+                      <span className="text-2xl font-semibold text-muted line-through decoration-red-500/80 decoration-2">{num(was)}</span>
+                      <span className="rounded-full bg-red-500 px-3 py-1 text-sm font-bold text-white shadow-sm">{plan.saving[locale]}</span>
+                    </p>
+                    <p className="mt-2 flex flex-wrap items-baseline gap-x-2">
+                      <span className="text-4xl font-bold text-molecule-700">{num(price)}</span>
                       <span className="text-sm text-muted">
                         {plans.currency[locale]} {plans.perMonth[locale]}
                       </span>
                     </p>
-                    <p className="mt-2 flex flex-wrap items-center gap-2 text-sm">
-                      <span className="text-muted line-through">{num(was)}</span>
-                      <span className="rounded-full bg-capsule-500/15 px-2.5 py-0.5 text-xs font-bold text-capsule-500">{plan.saving[locale]}</span>
-                      <span className="text-xs text-muted">{plan.savingNote[locale]}</span>
-                    </p>
+                    <p className="mt-1 text-xs text-muted">{plan.savingNote[locale]}</p>
                     <p className="mt-3 text-sm font-medium text-molecule-700">{priceText(plan.extra[locale])}</p>
                   </div>
                   <ul className="flex flex-1 flex-col gap-2.5">

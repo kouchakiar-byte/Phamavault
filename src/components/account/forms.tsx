@@ -7,7 +7,7 @@ import { sections } from "@/content/sections";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
 import { formatNumber } from "@/lib/format";
-import { monthlyPrice, monthOptions, paidSections, type PaidSection, type PlanId } from "@/lib/pricing";
+import { listPrice, monthlyPrice, monthOptions, paidSections, type PaidSection, type PlanId } from "@/lib/pricing";
 
 const { auth, errors, buy: t } = account;
 const p = copy.plans.pricing;
@@ -127,6 +127,10 @@ export function BuyForm({
   const monthly = renewal
     ? monthlyPrice(renewal)
     : monthlyPrice({ plan, sections: plan === "team" ? [...paidSections] : chosen, seats: seatCount });
+  const list = renewal
+    ? listPrice(renewal)
+    : listPrice({ plan, sections: plan === "team" ? [...paidSections] : chosen, seats: seatCount });
+  const off = list > monthly ? Math.round(((list - monthly) / list) * 100) : 0;
   const valid = renewal !== null || plan === "team" || chosen.length > 0;
   const all = chosen.length === paidSections.length;
   const toggle = (s: PaidSection) => setChosen((c) => (c.includes(s) ? c.filter((x) => x !== s) : [...c, s]));
@@ -244,6 +248,16 @@ export function BuyForm({
             {formatNumber(monthly, locale)} {copy.plans.currency[locale]}
           </span>
         </div>
+        {off > 0 && (
+          <div className="mt-3 flex flex-wrap items-center justify-end gap-3">
+            <span className="text-lg text-vault-100/60 line-through decoration-red-400 decoration-2">
+              {formatNumber(list * months, locale)}
+            </span>
+            <span className="rounded-full bg-red-500 px-2.5 py-0.5 text-xs font-bold text-white">
+              {t.off[locale].replace("{n}", formatNumber(off, locale))}
+            </span>
+          </div>
+        )}
         <div className="mt-2 flex items-baseline justify-between gap-4">
           <span className="font-semibold">{t.total[locale]}</span>
           <span className="text-2xl font-bold text-capsule-400">

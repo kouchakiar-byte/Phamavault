@@ -330,6 +330,7 @@ export const copy = {
       users: bi("Number of users (6 or more)", "تعداد کاربران (۶ یا بیشتر)"),
       perUser: bi("per user", "برای هر کاربر"),
       total: bi("Monthly total", "جمع ماهانه"),
+      off: bi("{n}% off", "{n}٪ تخفیف"),
     },
     ordersTitle: bi("Ordered separately from a subscription", "سفارش جدا از اشتراک"),
     orders: [

@@ -47,3 +47,12 @@ export function monthlyPrice({ plan, sections: chosen, seats }: Omit<Purchase, "
 }
 
 export const totalPrice = (purchase: Purchase): number => monthlyPrice(purchase) * purchase.months;
+
+/**
+ * Monthly price without the plan discount: every section bought separately,
+ * or six individual full-access licences plus the extra users.
+ */
+export function listPrice({ plan, sections: chosen, seats }: Omit<Purchase, "months">): number {
+  if (plan === "team") return p.teamUsers * p.full + Math.max(0, seats - p.teamUsers) * p.extraUser;
+  return chosen.length * p.section;
+}
