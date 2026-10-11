@@ -5,9 +5,13 @@ export const pages = {
   handbooks: {
     title: bi("Technical handbook library", "کتابخانه هندبوک‌های تخصصی"),
     lead: bi(
-      "Planned titles and their chapter outlines, organised by dosage form and development stage. Open a title to see its chapters; each can also be commissioned as a company-specific edition.",
-      "عنوان‌های برنامه‌ریزی‌شده و سرفصل فصل‌ها، به تفکیک شکل دارویی و مرحله توسعه. برای دیدن فصل‌ها روی عنوان بزنید؛ هر عنوان به‌صورت ویرایش اختصاصی برای یک شرکت نیز قابل سفارش است.",
+      "Dosage-form and development handbooks: for every topic, the science behind it, the critical parameters and typical limits, troubleshooting, and the compendial and ICH references. Each title can also be commissioned as a company-specific edition.",
+      "هندبوک‌های اشکال دارویی و توسعه: برای هر موضوع، علم پشت آن، پارامترهای بحرانی و حدود متداول، رفع اشکال و مراجع فارماکوپه و ICH. هر عنوان به‌صورت ویرایش اختصاصی برای شرکت نیز قابل سفارش است.",
     ),
+    keyPoints: bi("Key points", "نکات کلیدی"),
+    references: bi("References", "مراجع"),
+    topics: bi("{n} topics", "{n} موضوع"),
+    contents: bi("Contents", "فهرست"),
   },
   suppliers: {
     title: bi(
@@ -78,6 +82,7 @@ export const pages = {
     province: bi("province", "استان"),
     email: bi("Email", "ایمیل"),
     website: bi("Website", "وب‌سایت"),
+    webDown: bi("(not reachable in recent checks)", "(در بررسی‌های اخیر در دسترس نبود)"),
     notRecorded: bi("Not recorded", "ثبت نشده"),
     copy: bi("Copy", "کپی"),
     copied: bi("Copied", "کپی شد"),

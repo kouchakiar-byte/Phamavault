@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Suspense, type ReactNode } from "react";
 import { notFound, redirect } from "next/navigation";
 import { connection } from "next/server";
@@ -49,6 +50,9 @@ async function Admin({ locale }: { locale: Locale }) {
     <div className="space-y-8">
       <div className="flex flex-wrap items-baseline justify-between gap-4">
         <BiTitle as="h1" text={t.title} locale={locale} className="text-3xl font-bold text-vault-900" />
+        <Link href={href(locale, "admin/catalog")} className="rounded-full bg-molecule-600 px-4 py-2 text-sm font-semibold text-white hover:bg-molecule-700">
+          {t.catalog.link[locale]}
+        </Link>
         <p className="text-sm text-muted">
           {t.paywall[locale]}: <b className="text-vault-900">{paywallEnabled() ? t.on[locale] : t.off[locale]}</b> · {t.gateway[locale]}:{" "}
           <b className="text-vault-900">{gateway}</b>

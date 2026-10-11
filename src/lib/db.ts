@@ -1,7 +1,7 @@
 import { Pool, type PoolClient } from "pg";
 
 /**
- * Tables for accounts, sessions, orders and subscriptions. Created on first
+ * Tables for accounts, sessions, orders, subscriptions and catalog updates. Created on first
  * use, so a fresh PostgreSQL database needs no manual migration.
  * Amounts are in Toman; mobiles are stored as 09xxxxxxxxx.
  */
@@ -63,6 +63,37 @@ create table if not exists orders (
   paid_at timestamptz
 );
 create index if not exists orders_user_idx on orders(user_id);
+create table if not exists catalog_entries (
+  kind text not null,
+  key text not null,
+  data jsonb,
+  hidden boolean not null default false,
+  updated_at timestamptz not null default now(),
+  primary key (kind, key)
+);
+create table if not exists catalog_pending (
+  id bigserial primary key,
+  kind text not null,
+  key text not null,
+  data jsonb,
+  hide boolean not null default false,
+  created_by bigint references users(id),
+  created_at timestamptz not null default now(),
+  published_at timestamptz
+);
+create table if not exists catalog_runs (
+  day text primary key,
+  started_at timestamptz not null default now(),
+  finished_at timestamptz,
+  published int not null default 0,
+  checked int not null default 0,
+  unreachable int not null default 0
+);
+create table if not exists supplier_links (
+  url text primary key,
+  fails int not null default 0,
+  checked_at timestamptz not null default now()
+);
 `;
 
 const g = globalThis as unknown as { pvPool?: Pool; pvSchema?: Promise<unknown> };

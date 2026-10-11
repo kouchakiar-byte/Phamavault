@@ -13,6 +13,9 @@ import sopsJson from "./sops.json";
 
 export type Accordion = { title: Bi; items: Bi[] }[];
 
+export type HandbookTopic = { title: Bi; summary: Bi; points: Bi[]; refs: string[] };
+export type Handbook = { title: Bi; intro: Bi; topics: HandbookTopic[] };
+
 export type Excipient = {
   name: string;
   cas: string;
@@ -61,7 +64,7 @@ export const formulation = formulationJson as {
   templates: FormulaTemplate[];
 };
 
-export const handbooks = handbooksJson as Accordion;
+export const handbooks = handbooksJson as Handbook[];
 
 export const regulatory = regulatoryJson as {
   ctd: Accordion;

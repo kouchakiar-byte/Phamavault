@@ -2,7 +2,6 @@
 
 import { useMemo, useState, type ReactNode } from "react";
 import { Search, X } from "lucide-react";
-import data from "@/data/suppliers.json";
 import { pages } from "@/content/pages";
 import type { Locale } from "@/i18n/config";
 import {
@@ -18,9 +17,13 @@ import {
 import { BiTitle } from "./ui";
 
 const t = pages.suppliers;
-const suppliers = prepare(data.companies as SupplierRecord[]);
-const synonyms = data.synonyms.map((g) => g.map(norm));
-const totalProducts = suppliers.reduce((n, s) => n + s.products.length, 0);
+
+/** What the bank searches; passed from the server so it only reaches subscribers. */
+export type SupplierData = {
+  companies: SupplierRecord[];
+  synonyms: string[][];
+  provinceOrder: string[];
+};
 
 const fill = (template: string, vars: Record<string, string | number>) =>
   template.replace(/\{(\w+)\}/g, (_, k: string) => String(vars[k] ?? ""));
@@ -48,11 +51,22 @@ export function filtersFromParams(params: URLSearchParams): Partial<Filters> {
   };
 }
 
-export function SupplierBank({ locale, initial }: { locale: Locale; initial?: Partial<Filters> }) {
+export function SupplierBank({ locale, data, initial }: { locale: Locale; data: SupplierData; initial?: Partial<Filters> }) {
   const [filters, setFilters] = useState<Filters>({ ...defaults, ...initial });
   const set = (patch: Partial<Filters>) => setFilters((f) => ({ ...f, ...patch }));
 
-  const results = useMemo(() => search(suppliers, filters, synonyms, data.provinceOrder), [filters]);
+  const { suppliers, synonyms, totalProducts } = useMemo(() => {
+    const prepared = prepare(data.companies);
+    return {
+      suppliers: prepared,
+      synonyms: data.synonyms.map((g) => g.map(norm)),
+      totalProducts: prepared.reduce((n, s) => n + s.products.length, 0),
+    };
+  }, [data]);
+  const results = useMemo(
+    () => search(suppliers, filters, synonyms, data.provinceOrder),
+    [suppliers, synonyms, data.provinceOrder, filters],
+  );
   const q = norm(filters.query);
   const withTel = results.filter((r) => r.s.tel.length).length;
 
@@ -308,6 +322,7 @@ function SupplierCard({ s, hits, locale, query }: { s: Supplier; hits: Product[]
               <a href={web} target="_blank" rel="noopener noreferrer" dir="ltr" className="text-molecule-700 underline-offset-2 hover:underline">
                 {web.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
               </a>
+              {s.webDown && <span className="ms-2 text-xs text-warn">{t.webDown[locale]}</span>}
             </dd>
           </>
         )}

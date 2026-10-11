@@ -1,7 +1,6 @@
-import { Accordion } from "@/components/accordion";
+import { HandbookLibrary } from "@/components/handbook-library";
 import { PageHeader } from "@/components/page-header";
 import { Container } from "@/components/ui";
-import { copy } from "@/content/site";
 import { pages } from "@/content/pages";
 import { handbooks } from "@/data";
 import { getLocale } from "@/i18n/locale";
@@ -17,7 +16,7 @@ export default async function HandbooksPage() {
     <>
       <PageHeader locale={locale} section="handbooks" title={page.title} lead={page.lead} />
       <Container className="py-14">
-        <Accordion items={handbooks} locale={locale} badge={copy.common.inPreparation[locale]} />
+        <HandbookLibrary handbooks={handbooks} locale={locale} />
       </Container>
     </>
   );
