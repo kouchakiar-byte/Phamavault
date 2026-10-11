@@ -123,7 +123,6 @@ export default async function HomePage() {
   const locale = await getLocale();
   const { hero, departments, sectionsIntro, databases, toolsShowcase, howItWorks, plans, faq, contact } = copy;
   const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
-  const individualPlan = plans.items.find((p) => p.id === "individual")!;
   const enterprise = plans.items.find((p) => p.id === "enterprise")!;
   const { pricing } = plans;
   /** Fill {section}, {full}, {team} and {extraUser} with formatted prices. */
@@ -444,9 +443,12 @@ export default async function HomePage() {
                       </li>
                     ))}
                   </ul>
-                  <RequestButton href={requestMailto(locale, plan.name)} variant={featured ? "primary" : "ghost"}>
+                  <ButtonLink
+                    href={`${href(locale, "account/buy")}${plan.id === "enterprise" ? "?plan=team" : ""}`}
+                    variant={featured ? "primary" : "ghost"}
+                  >
                     {plan.cta[locale]}
-                  </RequestButton>
+                  </ButtonLink>
                 </div>
               );
             })}
@@ -536,9 +538,7 @@ export default async function HomePage() {
             />
             <p className="mx-auto mt-5 max-w-2xl text-lg text-vault-100/80">{contact.lead[locale]}</p>
             <div className="mt-9 flex flex-wrap justify-center gap-4">
-              <RequestButton href={requestMailto(locale, individualPlan.name)} variant="primary">
-                {contact.access[locale]}
-              </RequestButton>
+              <ButtonLink href={href(locale, "account/buy")}>{contact.access[locale]}</ButtonLink>
               <RequestButton href={requestMailto(locale, enterprise.name)} variant="light">
                 {contact.quote[locale]}
               </RequestButton>

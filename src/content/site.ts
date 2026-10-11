@@ -28,7 +28,6 @@ export const copy = {
     tools: bi("Calculations", "محاسبات"),
     plans: bi("Plans", "اشتراک"),
     enterprise: bi("Enterprise", "راهکار سازمانی"),
-    requestAccess: bi("Request access", "درخواست دسترسی"),
     menu: bi("Menu", "منو"),
     close: bi("Close menu", "بستن منو"),
     language: bi("Language", "زبان"),
@@ -233,17 +232,17 @@ export const copy = {
         ),
       },
       {
-        title: bi("Send your request", "ارسال درخواست"),
+        title: bi("Sign up and pay", "ثبت‌نام و پرداخت"),
         text: bi(
-          "Use the request button of the plan; the email opens pre-filled with the details we need.",
-          "دکمه درخواست همان طرح را بزنید؛ ایمیل با اطلاعات موردنیاز به‌صورت آماده باز می‌شود.",
+          "Create an account with your mobile number and pay online; companies can also ask for a pro-forma invoice.",
+          "با شماره موبایل ثبت‌نام کنید و آنلاین پرداخت کنید؛ برای شرکت‌ها صدور پیش‌فاکتور هم ممکن است.",
         ),
       },
       {
         title: bi("Start working", "شروع کار"),
         text: bi(
-          "After confirmation and payment, the sections included in your plan are opened for your users.",
-          "پس از تأیید و پرداخت، بخش‌های طرح شما برای کاربرانتان فعال می‌شود.",
+          "Your sections open as soon as the payment is confirmed; the end date and renewal are in your account.",
+          "بلافاصله پس از تأیید پرداخت، بخش‌های طرح شما باز می‌شود و تاریخ پایان و تمدید آن در حساب کاربری‌تان دیده می‌شود.",
         ),
       },
     ],
@@ -276,7 +275,7 @@ export const copy = {
           bi("Formulation, physical pharmacy and analytical calculators", "ماشین‌حساب‌های فرمولاسیون، داروسازی فیزیکی و آنالیز"),
           bi("SOP library and QA, QC and regulatory references", "کتابخانه SOP و مراجع QA، QC و رگولاتوری"),
         ],
-        cta: bi("Request access", "درخواست دسترسی"),
+        cta: bi("Subscribe", "خرید اشتراک"),
         style: "ghost",
       },
       {
@@ -294,7 +293,7 @@ export const copy = {
           bi("Official quotation for the company", "پیش‌فاکتور رسمی برای شرکت"),
           bi("Dedicated support", "پشتیبانی اختصاصی"),
         ],
-        cta: bi("Request a quote", "درخواست پیش‌فاکتور"),
+        cta: bi("Subscribe or request an invoice", "خرید یا صدور پیش‌فاکتور"),
         badge: bi("Recommended for companies", "پیشنهاد برای شرکت‌ها"),
         style: "primary",
       },
@@ -414,7 +413,7 @@ export const copy = {
       "Request access for yourself, or ask for a Team / Organisation quotation for your department or company.",
       "برای خودتان درخواست دسترسی دهید، یا برای واحد یا شرکتتان پیش‌فاکتور طرح تیمی / سازمانی بخواهید.",
     ),
-    access: bi("Request access", "درخواست دسترسی"),
+    access: bi("Subscribe now", "خرید اشتراک"),
     quote: bi("Request a team quotation", "درخواست پیش‌فاکتور تیمی / سازمانی"),
   },
 
