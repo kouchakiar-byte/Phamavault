@@ -16,6 +16,7 @@ import {
   Truck,
 } from "lucide-react";
 import { LogoMark } from "@/components/logo";
+import { PriceEstimator } from "@/components/price-estimator";
 import { SupplierSpotlight } from "@/components/supplier-spotlight";
 import { BiTitle, ButtonLink, Container, MoleculePattern, SectionHead } from "@/components/ui";
 import { calculation, calculations, featuredCalculations } from "@/content/calculations";
@@ -122,7 +123,20 @@ export default async function HomePage() {
   const locale = await getLocale();
   const { hero, departments, sectionsIntro, databases, toolsShowcase, howItWorks, plans, faq, contact } = copy;
   const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
+  const individualPlan = plans.items.find((p) => p.id === "individual")!;
   const enterprise = plans.items.find((p) => p.id === "enterprise")!;
+  const { pricing } = plans;
+  /** Fill {section}, {full}, {team} and {extraUser} with formatted prices. */
+  const priceText = (s: string) =>
+    s.replace(/\{(section|full|team|extraUser)\}/g, (_, k: "section" | "full" | "team" | "extraUser") => num(pricing[k]));
+  const both = (b: { en: string; fa: string }) => ({ en: priceText(b.en), fa: priceText(b.fa) });
+  const rows = plans.compareRows;
+  const priceRows: { label: { en: string; fa: string }; values: ({ en: string; fa: string } | boolean)[] }[] = [
+    { label: rows.users, values: rows.usersValues },
+    { label: rows.price, values: [both(rows.priceIndividual), both(rows.priceTeam)] },
+    { label: rows.single, values: [both(rows.singleValue), false] },
+    { label: rows.extraUsers, values: [false, both(rows.extraUsersValue)] },
+  ];
 
   return (
     <>
@@ -384,21 +398,18 @@ export default async function HomePage() {
       <section id="plans" className="scroll-mt-20 border-t border-line bg-white py-20 lg:py-28">
         <Container>
           <SectionHead eyebrow={plans.eyebrow[locale]} title={plans.title} locale={locale} lead={plans.lead[locale]} />
-          <div className="mt-14 grid items-stretch gap-6 lg:grid-cols-3">
+          <div className="mx-auto mt-14 grid max-w-5xl items-stretch gap-6 lg:grid-cols-2">
             {plans.items.map((plan) => {
-              const dark = plan.style === "dark";
               const featured = plan.style === "primary";
               const badge = "badge" in plan ? plan.badge : undefined;
+              const price = plan.id === "individual" ? pricing.full : pricing.team;
+              const was = plan.id === "individual" ? pricing.sections * pricing.section : pricing.teamUsers * pricing.full;
               return (
                 <div
                   key={plan.id}
                   id={plan.id}
                   className={`relative flex scroll-mt-24 flex-col gap-5 rounded-card border p-7 ${
-                    dark
-                      ? "border-vault-800 bg-vault-900 text-white"
-                      : featured
-                        ? "border-molecule-500 bg-white shadow-xl shadow-molecule-700/10 ring-2 ring-molecule-500 lg:-translate-y-3"
-                        : "border-line bg-paper"
+                    featured ? "border-molecule-500 bg-white shadow-xl shadow-molecule-700/10 ring-2 ring-molecule-500" : "border-line bg-paper"
                   }`}
                 >
                   {badge && (
@@ -407,27 +418,41 @@ export default async function HomePage() {
                     </span>
                   )}
                   <div>
-                    <BiTitle as="h3" text={plan.name} locale={locale} className={`text-2xl font-bold ${dark ? "text-white" : "text-vault-900"}`} />
-                    <p className={`mt-2 text-sm ${dark ? "text-vault-100/80" : "text-muted"}`}>{plan.who[locale]}</p>
+                    <BiTitle as="h3" text={plan.name} locale={locale} className="text-2xl font-bold text-vault-900" />
+                    <p className="mt-2 text-sm text-muted">{plan.who[locale]}</p>
                   </div>
-                  <p className={`border-y py-3 text-sm font-medium ${dark ? "border-white/15 text-capsule-400" : "border-line text-vault-900"}`}>
-                    {plan.price[locale]}
-                  </p>
+                  <div className="border-y border-line py-4">
+                    <p className="text-sm text-muted">{plan.priceFor[locale]}</p>
+                    <p className="mt-1 flex flex-wrap items-baseline gap-x-2">
+                      <span className="text-3xl font-bold text-vault-900">{num(price)}</span>
+                      <span className="text-sm text-muted">
+                        {plans.currency[locale]} {plans.perMonth[locale]}
+                      </span>
+                    </p>
+                    <p className="mt-2 flex flex-wrap items-center gap-2 text-sm">
+                      <span className="text-muted line-through">{num(was)}</span>
+                      <span className="rounded-full bg-capsule-500/15 px-2.5 py-0.5 text-xs font-bold text-capsule-500">{plan.saving[locale]}</span>
+                      <span className="text-xs text-muted">{plan.savingNote[locale]}</span>
+                    </p>
+                    <p className="mt-3 text-sm font-medium text-molecule-700">{priceText(plan.extra[locale])}</p>
+                  </div>
                   <ul className="flex flex-1 flex-col gap-2.5">
                     {plan.features.map((f) => (
-                      <li key={f.en} className={`flex gap-2.5 text-sm ${dark ? "text-vault-100/85" : "text-muted"}`}>
-                        <Check className={`mt-0.5 size-4 shrink-0 ${dark ? "text-molecule-400" : "text-molecule-600"}`} aria-hidden="true" />
+                      <li key={f.en} className="flex gap-2.5 text-sm text-muted">
+                        <Check className="mt-0.5 size-4 shrink-0 text-molecule-600" aria-hidden="true" />
                         {f[locale]}
                       </li>
                     ))}
                   </ul>
-                  <RequestButton href={requestMailto(locale, plan.name)} variant={dark ? "light" : featured ? "primary" : "ghost"}>
+                  <RequestButton href={requestMailto(locale, plan.name)} variant={featured ? "primary" : "ghost"}>
                     {plan.cta[locale]}
                   </RequestButton>
                 </div>
               );
             })}
           </div>
+
+          <PriceEstimator locale={locale} />
 
           {/* Comparison table */}
           <BiTitle as="h3" text={plans.compareTitle} locale={locale} className="mt-20 text-2xl font-bold text-vault-900" />
@@ -444,7 +469,7 @@ export default async function HomePage() {
                 </tr>
               </thead>
               <tbody>
-                {plans.compare.map((row) => (
+                {[...priceRows, ...plans.compare].map((row) => (
                   <tr key={row.label.en}>
                     <td className="px-2! text-xs font-medium text-vault-900 sm:px-3! sm:text-sm">{row.label[locale]}</td>
                     {row.values.map((v, i) => (
@@ -511,7 +536,7 @@ export default async function HomePage() {
             />
             <p className="mx-auto mt-5 max-w-2xl text-lg text-vault-100/80">{contact.lead[locale]}</p>
             <div className="mt-9 flex flex-wrap justify-center gap-4">
-              <RequestButton href={requestMailto(locale, plans.items[1].name)} variant="primary">
+              <RequestButton href={requestMailto(locale, individualPlan.name)} variant="primary">
                 {contact.access[locale]}
               </RequestButton>
               <RequestButton href={requestMailto(locale, enterprise.name)} variant="light">
