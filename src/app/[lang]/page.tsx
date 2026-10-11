@@ -15,7 +15,7 @@ import {
   TestTubes,
   Truck,
 } from "lucide-react";
-import { VaultWord, withBrand } from "@/components/brand";
+import { goldWord, VaultWord, withBrand } from "@/components/brand";
 import { LogoMark } from "@/components/logo";
 import { PriceEstimator } from "@/components/price-estimator";
 import { SupplierSpotlight } from "@/components/supplier-spotlight";
@@ -158,22 +158,29 @@ export default async function HomePage() {
               <span className="text-molecule-400/60" aria-hidden="true">·</span>
               <span dir={locale === "fa" ? "ltr" : "rtl"}>{copy.platform[locale === "fa" ? "en" : "fa"]}</span>
             </p>
-            <h1 className="mt-6">
+            {/* Brand plate: the header logo's colours (navy Pharma, gold Vault) on light, so they read on the dark hero */}
+            <h1 className="mt-6 inline-block max-w-full rounded-3xl bg-white px-6 py-5 shadow-2xl shadow-black/30 ring-1 ring-capsule-400/50 sm:px-8 sm:py-6">
               <span
-                className="block text-5xl font-bold tracking-tight sm:text-6xl"
+                className="block text-[2.6rem] font-bold leading-none tracking-tight text-vault-900 sm:text-6xl"
                 dir="ltr"
                 style={{ fontFamily: "var(--font-plex-sans)", textAlign: "start" }}
               >
                 Pharma
-                <VaultWord />
+                <VaultWord onLight />
               </span>
-              <BiTitle
-                text={copy.slogan}
-                locale={locale}
-                stacked
-                className="mt-4 text-2xl font-bold text-capsule-400 sm:text-3xl"
-                secondaryClassName="mt-1 text-[0.6em] font-medium text-capsule-400/80"
-              />
+              {(locale === "fa" ? (["fa", "en"] as const) : (["en", "fa"] as const)).map((lang, i) => (
+                <span
+                  key={lang}
+                  lang={lang}
+                  dir={lang === "fa" ? "rtl" : "ltr"}
+                  className={`block font-bold ${i === 0 ? "mt-4 text-2xl sm:text-3xl" : "mt-1.5 text-base sm:text-lg"} ${
+                    lang === "fa" ? "text-molecule-600" : "text-vault-900"
+                  }`}
+                  style={lang === "en" ? { fontFamily: "var(--font-plex-sans)" } : undefined}
+                >
+                  {lang === "fa" ? goldWord(copy.slogan.fa, "گنجینه", true) : goldWord(copy.slogan.en, "Vault", true)}
+                </span>
+              ))}
             </h1>
             <p className="mt-6 max-w-xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
             <p className="mt-3 max-w-xl text-base font-medium leading-relaxed text-molecule-400">{hero.audience[locale]}</p>
