@@ -257,7 +257,7 @@ export const copy = {
       "دو روش اشتراک: فردی برای یک کاربر روی یک IP، یا تیمی و سازمانی برای شش کاربر و بیشتر. قیمت‌ها به تومان و ماهانه است.",
     ),
     /** Prices in Toman per month. */
-    pricing: { section: 289_000, full: 2_210_000, sections: 9, team: 11_938_000, teamUsers: 6, extraUser: 1_000_000 },
+    pricing: { section: 289_000, full: 2_210_000, sections: 9, team: 11_934_000, teamUsers: 6, extraUser: 1_000_000 },
     currency: bi("Toman", "تومان"),
     perMonth: bi("per month", "در ماه"),
     items: [
