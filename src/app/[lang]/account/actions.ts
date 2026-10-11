@@ -73,8 +73,19 @@ async function siteOrigin(): Promise<string> {
 
 export async function buy(_: FormState, form: FormData): Promise<FormState> {
   const locale = localeOf(form);
+  if (!databaseConfigured()) return { error: "unavailable" };
   const user = await getUser();
-  if (!user) redirect(href(locale, "account/login"));
+  if (!user) {
+    // Sign up first, then come back to the last key with the same choices.
+    const choice = new URLSearchParams({
+      plan: text(form, "plan") || "individual",
+      s: form.getAll("sections").map(String).join(",") || "all",
+      seats: text(form, "seats"),
+      months: text(form, "months"),
+      ready: "1",
+    });
+    redirect(`${href(locale, "account/register")}?next=${encodeURIComponent(`${href(locale, "account/buy")}?${choice}`)}`);
+  }
 
   // A renewal repeats the plan of a subscription the buyer owns.
   const renewId = text(form, "renew");
