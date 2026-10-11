@@ -23,13 +23,13 @@ import { calculation, calculations, featuredCalculations } from "@/content/calcu
 import { sections } from "@/content/sections";
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
+import suppliers from "@/data/suppliers.json";
 import { bi, type Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
-import { getCatalog } from "@/lib/catalog";
 import { href } from "@/lib/paths";
 
-/** Counts from the live catalog (suppliers and raw materials change with the daily update). */
+/** Counts shown on the prerendered home page, from the base data. */
 type Counts = { suppliers: number; supplierMaterials: number; materials: number };
 
 /** Live counts from the reference data — never hand-typed numbers. */
@@ -123,11 +123,10 @@ function RequestButton({ href: link, variant, children }: { href: string; varian
 
 export default async function HomePage() {
   const locale = await getLocale();
-  const catalog = await getCatalog();
   const counts: Counts = {
-    suppliers: catalog.companies.length,
-    supplierMaterials: catalog.companies.reduce((n, c) => n + c.p.length, 0),
-    materials: catalog.materials.length,
+    suppliers: suppliers.companies.length,
+    supplierMaterials: suppliers.companies.reduce((n, c) => n + c.p.length, 0),
+    materials: rawMaterials.items.length,
   };
   const { hero, departments, sectionsIntro, databases, toolsShowcase, howItWorks, plans, faq, contact } = copy;
   const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");

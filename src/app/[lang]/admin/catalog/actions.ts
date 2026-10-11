@@ -1,10 +1,10 @@
 "use server";
 
-import { refresh, updateTag } from "next/cache";
+import { refresh } from "next/cache";
 import { siteConfig } from "@/content/site";
 import type { RawMaterial } from "@/data";
 import { getUser } from "@/lib/auth";
-import { CATALOG_TAG, loadCatalog, materialKey, supplierKey } from "@/lib/catalog";
+import { loadCatalog, materialKey, supplierKey } from "@/lib/catalog";
 import { cancelChange, queueChange, runDailyUpdate } from "@/lib/daily-update";
 import type { SupplierRecord } from "@/lib/supplier-search";
 
@@ -89,6 +89,5 @@ export async function cancelQueued(form: FormData): Promise<void> {
 export async function publishNow(): Promise<void> {
   await requireAdmin();
   await runDailyUpdate({ force: true });
-  updateTag(CATALOG_TAG);
   refresh();
 }

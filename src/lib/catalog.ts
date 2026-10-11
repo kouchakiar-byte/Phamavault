@@ -1,4 +1,3 @@
-import { cacheLife, cacheTag } from "next/cache";
 import { rawMaterials, type RawMaterial } from "@/data";
 import suppliersJson from "@/data/suppliers.json";
 import { databaseConfigured, db } from "./db";
@@ -23,8 +22,6 @@ export type Catalog = {
   /** ISO time of the last daily update (18:00 Tehran), or null before the first one. */
   updatedAt: string | null;
 };
-
-export const CATALOG_TAG = "catalog";
 
 /** A failing website is flagged only after this many daily checks in a row. */
 export const DEAD_LINK_FAILS = 3;
@@ -69,12 +66,27 @@ function applyOverrides<T>(base: T[], key: (item: T) => string, entries: Overrid
   return [...items.values()];
 }
 
-/** The live catalog. Cached, and refreshed when the daily update publishes. */
-export async function getCatalog(): Promise<Catalog> {
-  "use cache";
-  cacheTag(CATALOG_TAG);
-  cacheLife("hours");
-  return loadCatalog();
+const CACHE_MS = 10 * 60_000;
+const g = globalThis as unknown as { pvCatalog?: { at: number; data: Promise<Catalog> } };
+
+/**
+ * The live catalog, kept in memory for a few minutes and dropped as soon as
+ * the daily update publishes. (A plain in-process cache rather than
+ * "use cache": the Liara build does not apply next.config.ts.)
+ */
+export function getCatalog(): Promise<Catalog> {
+  const now = performance.now(); // a timer, not a date shown anywhere
+  if (!g.pvCatalog || now - g.pvCatalog.at > CACHE_MS) {
+    const data = loadCatalog();
+    g.pvCatalog = { at: now, data };
+    data.catch(() => (g.pvCatalog = undefined));
+  }
+  return g.pvCatalog.data;
+}
+
+/** Makes the next request read the catalog afresh. */
+export function invalidateCatalog(): void {
+  g.pvCatalog = undefined;
 }
 
 /** The catalog straight from the base data and the database, uncached. */
