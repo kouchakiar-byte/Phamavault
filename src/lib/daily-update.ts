@@ -1,30 +1,6 @@
 import { databaseConfigured, db, transaction } from "./db";
 import { loadCatalog, type CatalogKind } from "./catalog";
-
-/** Hour of the day (Tehran time) when the catalog is updated. */
-export const UPDATE_HOUR = 18;
-
-/** Today's date and the hour in Tehran. */
-export function tehranNow(now = new Date()): { day: string; hour: number } {
-  const parts = Object.fromEntries(
-    new Intl.DateTimeFormat("en-CA", {
-      timeZone: "Asia/Tehran",
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-      hour: "2-digit",
-      hourCycle: "h23",
-    })
-      .formatToParts(now)
-      .map((p) => [p.type, p.value]),
-  );
-  return { day: `${parts.year}-${parts.month}-${parts.day}`, hour: Number(parts.hour) };
-}
-
-export async function hasRun(day: string): Promise<boolean> {
-  const { rows } = await (await db()).query("select 1 from catalog_runs where day = $1 and finished_at is not null", [day]);
-  return rows.length > 0;
-}
+import { tehranNow } from "./scheduler";
 
 /** Adds an edit to the queue the next daily update publishes. `data: null` hides the record. */
 export async function queueChange(kind: CatalogKind, key: string, data: unknown | null, userId: string): Promise<void> {
