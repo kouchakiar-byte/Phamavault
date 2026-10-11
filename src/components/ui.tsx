@@ -3,6 +3,7 @@ import { useId, type ReactNode } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { localeDirection, type Locale } from "@/i18n/config";
 import { otherLocale, type Bi } from "@/i18n/bi";
+import { withBrand } from "./brand";
 
 export function Container({ children, className = "" }: { children: ReactNode; className?: string }) {
   return <div className={`mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 ${className}`}>{children}</div>;
@@ -35,14 +36,14 @@ export function BiTitle({
   const layout = stacked ? "flex flex-col gap-1" : "flex flex-wrap items-baseline gap-x-3 gap-y-1";
   return (
     <Tag className={`${layout} ${className}`}>
-      <span>{text[locale]}</span>
+      <span>{withBrand(text[locale])}</span>
       {text.en !== text.fa && (
         <span
           lang={other}
           dir={localeDirection[other]}
           className={`text-[0.6em] font-medium opacity-60 ${secondaryClassName}`}
         >
-          {text[other]}
+          {withBrand(text[other])}
         </span>
       )}
     </Tag>

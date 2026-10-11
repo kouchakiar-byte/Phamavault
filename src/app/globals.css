@@ -239,3 +239,42 @@ body {
   .pv-vault-open .pv-vault-light,
   .pv-vault-open .pv-vault-rays { opacity: 1; }
 }
+
+/* "Vault" in the brand name: polished gold with a slow light sweep. */
+.pv-gold-text {
+  background-image: linear-gradient(
+    110deg,
+    #a67c1f 0%,
+    #d9b456 22%,
+    #fff1b8 38%,
+    #e2c06a 50%,
+    #b98d2c 68%,
+    #f3dc8f 84%,
+    #a67c1f 100%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: pv-gold-sweep 5s ease-in-out infinite;
+}
+.pv-gold-deep {
+  background-image: linear-gradient(
+    110deg,
+    #8a6414 0%,
+    #b8892f 25%,
+    #e3c066 40%,
+    #c9a54c 52%,
+    #94701c 70%,
+    #c99d3a 86%,
+    #8a6414 100%
+  );
+}
+@keyframes pv-gold-sweep {
+  0%, 100% { background-position: 100% 0; }
+  50% { background-position: 0% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pv-gold-text { animation: none; }
+}

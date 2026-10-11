@@ -15,6 +15,7 @@ import {
   TestTubes,
   Truck,
 } from "lucide-react";
+import { VaultWord, withBrand } from "@/components/brand";
 import { LogoMark } from "@/components/logo";
 import { PriceEstimator } from "@/components/price-estimator";
 import { SupplierSpotlight } from "@/components/supplier-spotlight";
@@ -163,7 +164,8 @@ export default async function HomePage() {
                 dir="ltr"
                 style={{ fontFamily: "var(--font-plex-sans)", textAlign: "start" }}
               >
-                Pharma<span className="text-molecule-400">Vault</span>
+                Pharma
+                <VaultWord />
               </span>
               <BiTitle
                 text={copy.slogan}
@@ -522,7 +524,7 @@ export default async function HomePage() {
                   {item.q[locale]}
                   <ChevronDown className="size-5 shrink-0 text-muted transition group-open:rotate-180" aria-hidden="true" />
                 </summary>
-                <p className="px-6 pb-6 text-sm leading-loose text-muted">{item.a[locale]}</p>
+                <p className="px-6 pb-6 text-sm leading-loose text-muted">{withBrand(item.a[locale])}</p>
               </details>
             ))}
           </div>
