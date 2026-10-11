@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, UserRound } from "lucide-react";
+import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import { getSection, sectionGroups, sections, supplierBankShort } from "@/content/sections";
 import { getLocale } from "@/i18n/locale";
@@ -82,10 +83,11 @@ export async function SiteHeader() {
             <LanguageSwitcher current={locale} label={nav.language[locale]} />
           </div>
           <Link
-            href={href(locale, "#contact")}
-            className="hidden whitespace-nowrap rounded-full bg-vault-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-vault-800 lg:inline-flex"
+            href={href(locale, "account")}
+            className="hidden items-center gap-2 whitespace-nowrap rounded-full bg-vault-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-vault-800 lg:inline-flex"
           >
-            {nav.requestAccess[locale]}
+            <UserRound className="size-4" aria-hidden="true" />
+            {account.nav.account[locale]}
           </Link>
           <MobileNav
             menuLabel={nav.menu[locale]}
@@ -94,7 +96,7 @@ export async function SiteHeader() {
               { href: href(locale), label: nav.home[locale] },
               ...sections.map((s) => ({ href: href(locale, s.href), label: s.title[locale] })),
               { href: href(locale, "#plans"), label: nav.plans[locale] },
-              { href: href(locale, "#contact"), label: nav.requestAccess[locale] },
+              { href: href(locale, "account"), label: account.nav.account[locale] },
             ]}
             footer={<LanguageSwitcher current={locale} label={nav.language[locale]} />}
           />
