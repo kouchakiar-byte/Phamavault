@@ -3,6 +3,7 @@ import { copy, siteConfig } from "@/content/site";
 import { sectionGroups, sections } from "@/content/sections";
 import { getLocale } from "@/i18n/locale";
 import { href } from "@/lib/paths";
+import { BrandName } from "./brand";
 import { Logo } from "./logo";
 import { Container } from "./ui";
 
@@ -50,7 +51,7 @@ export async function SiteFooter() {
       <div className="border-t border-white/10">
         <Container className="py-6 text-xs text-vault-100/60">
           <p>
-            © <span dir="ltr">{siteConfig.name}</span> · <span className="font-semibold text-capsule-400">{copy.slogan[locale]}</span>
+            © <BrandName /> · <span className="font-semibold text-capsule-400">{copy.slogan[locale]}</span>
           </p>
         </Container>
       </div>

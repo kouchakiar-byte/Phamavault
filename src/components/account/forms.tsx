@@ -8,6 +8,7 @@ import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
 import { formatNumber } from "@/lib/format";
 import { listPrice, monthlyPrice, monthOptions, paidSections, type PaidSection, type PlanId } from "@/lib/pricing";
+import { withBrand } from "../brand";
 import { VaultLock } from "./vault-lock";
 
 const { auth, errors, buy: t } = account;
@@ -399,7 +400,7 @@ export function BuyForm({
             </button>
           )}
         </div>
-        {last && online && method === "online" && <p className="text-center text-xs text-muted">{t.secure[locale]}</p>}
+        {last && online && method === "online" && <p className="text-center text-xs text-muted">{withBrand(t.secure[locale])}</p>}
       </div>
     </form>
   );

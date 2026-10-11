@@ -1,3 +1,5 @@
+import { VaultWord } from "./brand";
+
 type LogoMarkProps = { className?: string };
 
 /**
@@ -39,7 +41,8 @@ export function Logo({ tagline, inverted = false }: LogoProps) {
           className={`text-lg font-bold tracking-tight ${inverted ? "text-white" : "text-vault-900"}`}
           style={{ fontFamily: "var(--font-plex-sans)" }}
         >
-          Pharma<span className="text-molecule-500">Vault</span>
+          Pharma
+          <VaultWord onLight={!inverted} />
         </span>
         {tagline && (
           <span
