@@ -18,6 +18,8 @@ type BiTitleProps = {
   secondaryClassName?: string;
   /** Put the second language on its own line instead of beside the first. */
   stacked?: boolean;
+  /** Set "PharmaVault" on a white plate (navy Pharma) — for dark backgrounds. */
+  brandPlate?: boolean;
 };
 
 /**
@@ -31,19 +33,20 @@ export function BiTitle({
   className = "",
   secondaryClassName = "",
   stacked = false,
+  brandPlate = false,
 }: BiTitleProps) {
   const other = otherLocale(locale);
   const layout = stacked ? "flex flex-col gap-1" : "flex flex-wrap items-baseline gap-x-3 gap-y-1";
   return (
     <Tag className={`${layout} ${className}`}>
-      <span>{withBrand(text[locale])}</span>
+      <span>{withBrand(text[locale], { plate: brandPlate })}</span>
       {text.en !== text.fa && (
         <span
           lang={other}
           dir={localeDirection[other]}
           className={`text-[0.6em] font-medium opacity-60 ${secondaryClassName}`}
         >
-          {withBrand(text[other])}
+          {withBrand(text[other], { plate: brandPlate })}
         </span>
       )}
     </Tag>
