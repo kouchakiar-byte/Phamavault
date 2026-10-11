@@ -111,22 +111,30 @@ export function BuyForm({
   locale,
   initialPlan,
   initialSections,
+  initialSeats,
+  initialMonths,
+  startAtLast,
+  signedIn,
   renewal,
   online,
 }: {
   locale: Locale;
   initialPlan: PlanId;
   initialSections: PaidSection[];
+  initialSeats: number;
+  initialMonths: number;
+  startAtLast: boolean;
+  signedIn: boolean;
   renewal: Renewal | null;
   online: boolean;
 }) {
   const [state, action, pending] = useActionState(buy, {});
   const [plan, setPlan] = useState<PlanId>(renewal?.plan ?? initialPlan);
   const [chosen, setChosen] = useState<PaidSection[]>(renewal?.sections ?? initialSections);
-  const [seats, setSeats] = useState(String(renewal?.seats ?? p.teamUsers));
-  const [months, setMonths] = useState<number>(1);
+  const [seats, setSeats] = useState(String(renewal?.seats ?? initialSeats));
+  const [months, setMonths] = useState<number>(initialMonths);
   const [method, setMethod] = useState<"online" | "invoice">(online ? "online" : "invoice");
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(startAtLast && !renewal ? 3 : 0);
   const [turns, setTurns] = useState(0);
   const [waiting, setWaiting] = useState(false);
 
@@ -386,7 +394,13 @@ export function BuyForm({
               disabled={opening || !valid}
               className="pv-shine flex-1 rounded-full bg-capsule-500 px-6 py-3 font-bold text-vault-950 shadow-lg shadow-capsule-500/30 transition hover:bg-capsule-400 disabled:opacity-70"
             >
-              {opening ? t.opening[locale] : online && method === "online" ? t.unlockPay[locale] : t.unlockOrder[locale]}
+              {opening
+                ? t.opening[locale]
+                : !signedIn
+                  ? t.unlockSignUp[locale]
+                  : online && method === "online"
+                    ? t.unlockPay[locale]
+                    : t.unlockOrder[locale]}
             </button>
           ) : (
             <button

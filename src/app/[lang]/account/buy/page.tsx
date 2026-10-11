@@ -1,16 +1,14 @@
 import { Suspense } from "react";
-import { redirect } from "next/navigation";
 import { BuyForm } from "@/components/account/forms";
 import { AccountShell, Loading, accountMetadata } from "@/components/account/shell";
 import { account } from "@/content/account";
+import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
 import { getUser } from "@/lib/auth";
-import { databaseConfigured } from "@/lib/db";
 import { formatNumber } from "@/lib/format";
 import { planName, sectionsLabel } from "@/lib/labels";
-import { href } from "@/lib/paths";
-import { isPaidSection, paidSections } from "@/lib/pricing";
+import { isPaidSection, monthOptions, paidSections } from "@/lib/pricing";
 import { getSubscription } from "@/lib/subscriptions";
 import { onlinePaymentEnabled } from "@/lib/zarinpal";
 
@@ -22,18 +20,12 @@ type Search = Record<string, string | string[] | undefined>;
 
 async function Checkout({ locale, searchParams }: { locale: Locale; searchParams: Promise<Search> }) {
   const search = await searchParams;
-  if (!databaseConfigured()) return <p className="rounded-lg bg-red-50 px-4 py-3 text-red-700">{account.errors.unavailable[locale]}</p>;
-
+  // Anyone can walk through the vault; signing up is asked for at the last key.
   const user = await getUser();
-  if (!user) {
-    const query = new URLSearchParams(Object.entries(search).map(([k, v]) => [k, String(v)])).toString();
-    const here = `${href(locale, "account/buy")}${query ? `?${query}` : ""}`;
-    redirect(`${href(locale, "account/register")}?next=${encodeURIComponent(here)}`);
-  }
 
-  const renewing = search.renew ? await getSubscription(String(search.renew)) : null;
+  const renewing = user && search.renew ? await getSubscription(String(search.renew)) : null;
   const renewal =
-    renewing && renewing.ownerId === user.id && !renewing.revoked
+    user && renewing && renewing.ownerId === user.id && !renewing.revoked
       ? {
           id: renewing.id,
           plan: renewing.plan,
@@ -47,13 +39,21 @@ async function Checkout({ locale, searchParams }: { locale: Locale; searchParams
         }
       : null;
 
-  // ?plan=team, ?s=qa (one section) or ?s=all preselect the form.
-  const section = String(search.s ?? "all");
+  // ?plan=team, ?s=qa,qc (sections) or ?s=all, ?seats=, ?months= preselect the form;
+  // ?ready=1 (back from sign-up) opens it at the last key.
+  const picked = String(search.s ?? "all").split(",").filter(isPaidSection);
+  const months = Number(search.months);
   return (
     <BuyForm
+      // A new set of choices (e.g. back from sign-up) starts a fresh form, not the remembered one.
+      key={new URLSearchParams(Object.entries(search).map(([k, v]) => [k, String(v)])).toString()}
       locale={locale}
       initialPlan={search.plan === "team" ? "team" : "individual"}
-      initialSections={isPaidSection(section) ? [section] : [...paidSections]}
+      initialSections={picked.length ? picked : [...paidSections]}
+      initialSeats={Math.max(copy.plans.pricing.teamUsers, Math.floor(Number(search.seats)) || 0)}
+      initialMonths={monthOptions.includes(months as (typeof monthOptions)[number]) ? months : 1}
+      startAtLast={search.ready === "1"}
+      signedIn={Boolean(user)}
       renewal={renewal}
       online={onlinePaymentEnabled()}
     />
