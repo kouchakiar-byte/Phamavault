@@ -5,6 +5,19 @@ export const siteConfig = {
   domain: "pharmavault.ir",
   url: "https://pharmavault.ir",
   email: "info@pharmavault.ir",
+  /**
+   * Owner details for the contact page (required by e-Namad). Each line
+   * appears on the site once it is filled in; they must match the e-Namad file.
+   */
+  contact: {
+    owner: null as string | null,
+    address: null as string | null,
+    postalCode: null as string | null,
+    phone: null as string | null,
+    hours: bi("Saturday to Wednesday, 9:00–17:00", "شنبه تا چهارشنبه، ساعت ۹ تا ۱۷"),
+  },
+  /** e-Namad trust seal: the id and code from the e-Namad panel; null hides the badge. */
+  enamad: null as { id: string; code: string } | null,
 };
 
 /** Site-wide copy. Every string is held in both languages. */

@@ -1,0 +1,199 @@
+import { bi, type Bi } from "@/i18n/bi";
+
+/*
+ * About, contact, terms and privacy pages — the pages e-Namad reviews before
+ * issuing a trust seal. Owner details (name, address, postal code, landline)
+ * live in siteConfig.contact and appear once filled in.
+ */
+
+export type LegalSection = { title: Bi; paragraphs?: Bi[]; items?: Bi[] };
+export type LegalPage = { title: Bi; lead: Bi; sections: LegalSection[] };
+
+export const legalNav = {
+  about: bi("About us", "درباره ما"),
+  contact: bi("Contact us", "تماس با ما"),
+  terms: bi("Terms and conditions", "قوانین و مقررات"),
+  privacy: bi("Privacy policy", "حریم خصوصی"),
+};
+
+export const contactLabels = {
+  owner: bi("Owner", "صاحب امتیاز"),
+  address: bi("Address", "نشانی"),
+  postalCode: bi("Postal code", "کد پستی"),
+  phone: bi("Phone", "تلفن"),
+  email: bi("Email", "ایمیل"),
+  hours: bi("Support hours", "ساعات پاسخگویی"),
+};
+
+export const about: LegalPage = {
+  title: bi("About PharmaVault", "درباره PharmaVault"),
+  lead: bi(
+    "PharmaVault is a specialist reference for pharmaceutical knowledge, information and tools, built for the people who develop, make, test and register medicines in Iran.",
+    "PharmaVault مرجع تخصصی دانش، اطلاعات و ابزارهای داروسازی است؛ برای کسانی که در ایران دارو را توسعه می‌دهند، تولید می‌کنند، آزمون می‌کنند و ثبت می‌کنند.",
+  ),
+  sections: [
+    {
+      title: bi("What we do", "چه می‌کنیم"),
+      paragraphs: [
+        bi(
+          "We bring together in one place what a pharmaceutical professional otherwise has to look up across many sources: suppliers and manufacturers of raw materials, excipient and API data, technical handbooks, pharmaceutical calculations, formulation tools, QA and QC procedures and regulatory references.",
+          "آنچه یک متخصص داروسازی معمولاً باید از منابع پراکنده جستجو کند را در یک جا گرد آورده‌ایم: تأمین‌کنندگان و تولیدکنندگان مواد اولیه، اطلاعات مواد جانبی و مواد مؤثره، هندبوک‌های تخصصی، محاسبات داروسازی، ابزارهای فرمولاسیون، دستورالعمل‌های QA و QC و مراجع رگولاتوری.",
+        ),
+        bi(
+          "Content is written from authoritative, citable sources — the pharmacopoeias (USP–NF, BP, Ph. Eur., JP), ICH guidelines and PIC/S GMP — and every reference is named so it can be checked against the current official edition.",
+          "مطالب بر پایه منابع معتبر و قابل استناد نوشته می‌شود — فارماکوپه‌ها (USP–NF، BP، Ph. Eur. و JP)، راهنماهای ICH و GMP سازمان PIC/S — و مرجع هر مطلب ذکر می‌شود تا با آخرین ویرایش رسمی قابل تطبیق باشد.",
+        ),
+      ],
+    },
+    {
+      title: bi("Who it is for", "برای چه کسانی"),
+      items: [
+        bi("R&D and formulation teams", "واحدهای تحقیق و توسعه و فرمولاسیون"),
+        bi("Quality control (QC) and quality assurance (QA)", "کنترل کیفیت (QC) و تضمین کیفیت (QA)"),
+        bi("Regulatory affairs (RA)", "امور رگولاتوری (RA)"),
+        bi("Purchasing and supply chain", "بازرگانی و زنجیره تأمین"),
+        bi("University teachers and pharmacy students", "اساتید و دانشجویان داروسازی و علوم دارویی"),
+        bi("Pharmacies and everyone working with medicines", "داروخانه‌ها و فعالان حوزه دارو"),
+      ],
+    },
+  ],
+};
+
+export const contact: LegalPage = {
+  title: bi("Contact us", "تماس با ما"),
+  lead: bi(
+    "Questions about subscriptions, invoices for companies, custom handbooks or the content of the site — we are glad to help.",
+    "برای پرسش درباره اشتراک، پیش‌فاکتور شرکت‌ها، سفارش هندبوک اختصاصی یا محتوای سایت، با ما در تماس باشید.",
+  ),
+  sections: [],
+};
+
+export const terms: LegalPage = {
+  title: bi("Terms and conditions", "قوانین و مقررات"),
+  lead: bi(
+    "By creating an account or buying a subscription you accept these terms. Please read them before you pay.",
+    "با ساخت حساب کاربری یا خرید اشتراک، این قوانین را می‌پذیرید. لطفاً پیش از پرداخت آن‌ها را مطالعه کنید.",
+  ),
+  sections: [
+    {
+      title: bi("1. Account", "۱. حساب کاربری"),
+      items: [
+        bi("An account is created with a mobile number and password and belongs to one person.", "حساب کاربری با شماره موبایل و رمز عبور ساخته می‌شود و متعلق به یک نفر است."),
+        bi(
+          "An individual licence is for one user on one device at a time; signing in on a new device signs out the previous one.",
+          "اشتراک فردی برای یک کاربر و در هر زمان روی یک دستگاه است؛ ورود از دستگاه جدید، دستگاه قبلی را از حساب خارج می‌کند.",
+        ),
+        bi("Keep your password private; you are responsible for activity on your account.", "رمز عبور را محرمانه نگه دارید؛ مسئولیت فعالیت‌های حساب با صاحب آن است."),
+      ],
+    },
+    {
+      title: bi("2. Subscriptions and payment", "۲. اشتراک و پرداخت"),
+      items: [
+        bi("Prices are in Toman and shown on the site before payment; the amount on the payment page is final.", "قیمت‌ها به تومان و پیش از پرداخت در سایت نمایش داده می‌شود؛ مبلغ صفحه پرداخت، مبلغ نهایی است."),
+        bi(
+          "Online payment is made through a Shaparak-licensed bank gateway; PharmaVault never receives or stores card details.",
+          "پرداخت آنلاین از طریق درگاه بانکی دارای مجوز شاپرک انجام می‌شود و اطلاعات کارت بانکی به PharmaVault نمی‌رسد و ذخیره نمی‌شود.",
+        ),
+        bi(
+          "Access opens as soon as the payment is confirmed, for the period bought (1, 3, 6 or 12 months). The start and end dates are shown in your account.",
+          "دسترسی بلافاصله پس از تأیید پرداخت و برای مدت خریداری‌شده (۱، ۳، ۶ یا ۱۲ ماه) باز می‌شود. تاریخ شروع و پایان در حساب کاربری نمایش داده می‌شود.",
+        ),
+        bi("Renewal adds the new period to the current end date.", "تمدید، مدت جدید را به تاریخ پایان فعلی اضافه می‌کند."),
+        bi(
+          "Team / Organisation subscriptions cover at least six users; the account owner assigns them by mobile number. Companies may pay against a pro-forma invoice.",
+          "اشتراک تیمی / سازمانی حداقل شش کاربر دارد که صاحب حساب با شماره موبایل آن‌ها را تعیین می‌کند. شرکت‌ها می‌توانند بر اساس پیش‌فاکتور پرداخت کنند.",
+        ),
+      ],
+    },
+    {
+      title: bi("3. Refunds", "۳. بازگشت وجه"),
+      items: [
+        bi(
+          "Within 3 days of purchase, if the subscribed sections have not been used, the full amount is refunded on request.",
+          "تا ۳ روز پس از خرید، در صورتی که از بخش‌های اشتراک استفاده نشده باشد، با درخواست شما کل مبلغ بازگردانده می‌شود.",
+        ),
+        bi(
+          "If a payment was taken but the subscription did not open, contact us with the payment reference; it is activated or refunded.",
+          "اگر مبلغ کسر شد ولی اشتراک فعال نشد، با کد پیگیری پرداخت با ما تماس بگیرید تا اشتراک فعال یا مبلغ بازگردانده شود.",
+        ),
+        bi(
+          "Failed bank payments are returned to the card by the bank, normally within 72 hours.",
+          "مبالغ پرداخت‌های ناموفق، معمولاً ظرف ۷۲ ساعت توسط بانک به کارت بازگردانده می‌شود.",
+        ),
+      ],
+    },
+    {
+      title: bi("4. Permitted use", "۴. استفاده مجاز"),
+      items: [
+        bi("Content is for the subscriber's own professional and educational use.", "محتوا برای استفاده حرفه‌ای و آموزشی خود مشترک است."),
+        bi(
+          "Copying, republishing, selling or automatically extracting the databases, or sharing an account, is not permitted and ends the subscription without refund.",
+          "کپی، بازنشر، فروش یا استخراج خودکار پایگاه‌های داده و نیز اشتراک‌گذاری حساب کاربری مجاز نیست و موجب قطع اشتراک بدون بازگشت وجه می‌شود.",
+        ),
+      ],
+    },
+    {
+      title: bi("5. Nature of the information", "۵. ماهیت اطلاعات"),
+      paragraphs: [
+        bi(
+          "PharmaVault is a working reference that shortens the search. Specifications, limits and registration requirements must always be confirmed against the current official pharmacopoeia, guideline or authority before use in production, release or a regulatory submission. Supplier details are published as found in the cited sources; PharmaVault is not a party to any purchase between users and suppliers.",
+          "PharmaVault مرجعی کاربردی برای کوتاه‌کردن مسیر جستجو است. مشخصات، حدود پذیرش و الزامات ثبت باید پیش از استفاده در تولید، آزادسازی بچ یا پرونده ثبت، با آخرین ویرایش رسمی فارماکوپه، راهنما یا مرجع قانونی تطبیق داده شود. اطلاعات تأمین‌کنندگان همان‌گونه که در منابع ذکرشده آمده منتشر می‌شود و PharmaVault طرف هیچ معامله‌ای میان کاربران و تأمین‌کنندگان نیست.",
+        ),
+      ],
+    },
+    {
+      title: bi("6. Changes", "۶. تغییرات"),
+      paragraphs: [
+        bi(
+          "These terms and the prices may change; changes apply to purchases made after they are published and do not affect a subscription already paid for.",
+          "این قوانین و قیمت‌ها ممکن است تغییر کند؛ تغییرات برای خریدهای پس از انتشار اعمال می‌شود و بر اشتراکی که پیش‌تر پرداخت شده اثری ندارد.",
+        ),
+      ],
+    },
+  ],
+};
+
+export const privacy: LegalPage = {
+  title: bi("Privacy policy", "حریم خصوصی"),
+  lead: bi(
+    "What we collect, why, and how we protect it.",
+    "چه اطلاعاتی جمع‌آوری می‌کنیم، برای چه، و چگونه از آن محافظت می‌کنیم.",
+  ),
+  sections: [
+    {
+      title: bi("What we collect", "اطلاعاتی که جمع‌آوری می‌کنیم"),
+      items: [
+        bi("Name and mobile number, to create and secure your account.", "نام و شماره موبایل، برای ساخت و حفاظت از حساب کاربری."),
+        bi(
+          "Orders and the bank's payment reference, to activate and support your subscription. Card details are entered only on the bank's page and never reach us.",
+          "سفارش‌ها و کد پیگیری بانکی، برای فعال‌سازی و پشتیبانی اشتراک. اطلاعات کارت فقط در صفحه بانک وارد می‌شود و به ما نمی‌رسد.",
+        ),
+        bi(
+          "The device and IP of the active sign-in, to apply the one-device-at-a-time rule.",
+          "دستگاه و IP ورود فعال، برای اجرای قاعده «یک کاربر روی یک دستگاه».",
+        ),
+        bi("Two cookies: the sign-in session and your language choice.", "دو کوکی: نشست ورود به حساب و زبان انتخابی شما."),
+      ],
+    },
+    {
+      title: bi("How we protect it", "چگونه محافظت می‌کنیم"),
+      items: [
+        bi("Passwords are stored only as a one-way hash, never as text.", "رمز عبور فقط به‌صورت درهم‌سازی یک‌طرفه ذخیره می‌شود، نه به‌صورت متن."),
+        bi("Pages are served over an encrypted connection (HTTPS).", "صفحات از طریق اتصال رمزنگاری‌شده (HTTPS) ارائه می‌شود."),
+        bi(
+          "Your information is not sold or shared with others, except where Iranian law requires it.",
+          "اطلاعات شما فروخته نمی‌شود و در اختیار دیگران قرار نمی‌گیرد، مگر به حکم قانون.",
+        ),
+      ],
+    },
+    {
+      title: bi("Your choices", "اختیارات شما"),
+      paragraphs: [
+        bi(
+          "You can ask us to correct your details or delete your account by email; deleting an account ends its subscriptions.",
+          "می‌توانید با ارسال ایمیل، اصلاح اطلاعات یا حذف حساب کاربری خود را درخواست کنید؛ حذف حساب، اشتراک‌های آن را نیز پایان می‌دهد.",
+        ),
+      ],
+    },
+  ],
+};

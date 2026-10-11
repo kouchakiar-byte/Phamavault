@@ -143,6 +143,8 @@ export const account = {
     next: bi("Turn the key — next", "چرخاندن کلید — مرحله بعد"),
     back: bi("Back", "قبلی"),
     unlockPay: bi("Open the vault and pay", "باز کردن گنجینه و پرداخت"),
+    acceptTerms: bi("By continuing you accept the", "ادامه خرید به معنای پذیرش"),
+    terms: bi("terms and conditions", "قوانین و مقررات PharmaVault است"),
     unlockSignUp: bi("Sign up and open the vault", "ثبت‌نام و باز کردن گنجینه"),
     unlockOrder: bi("Open the vault — register order", "باز کردن گنجینه — ثبت سفارش"),
     steps: {

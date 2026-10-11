@@ -415,6 +415,14 @@ export function BuyForm({
           )}
         </div>
         {last && online && method === "online" && <p className="text-center text-xs text-muted">{withBrand(t.secure[locale])}</p>}
+        {last && (
+          <p className="text-center text-xs text-muted">
+            {t.acceptTerms[locale]}{" "}
+            <a href={`/${locale}/terms`} target="_blank" className="font-semibold text-molecule-700 hover:underline">
+              {t.terms[locale]}
+            </a>
+          </p>
+        )}
       </div>
     </form>
   );
