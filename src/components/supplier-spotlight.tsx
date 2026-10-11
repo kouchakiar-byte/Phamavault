@@ -4,14 +4,13 @@ import { pages } from "@/content/pages";
 import { getSection } from "@/content/sections";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
-import { getCatalog } from "@/lib/catalog";
+import suppliers from "@/data/suppliers.json";
 import { href } from "@/lib/paths";
-import { LastUpdate } from "./last-update";
 import { BiTitle, ButtonLink, Container } from "./ui";
 
 /** The supplier bank, featured on the home page with a search box that works without JavaScript. */
-export async function SupplierSpotlight({ locale }: { locale: Locale }) {
-  const { companies, updatedAt } = await getCatalog();
+export function SupplierSpotlight({ locale }: { locale: Locale }) {
+  const companies = suppliers.companies;
   const stats = {
     companies: companies.length,
     materials: companies.reduce((n, c) => n + c.p.length, 0),
@@ -53,7 +52,6 @@ export async function SupplierSpotlight({ locale }: { locale: Locale }) {
                 secondaryClassName="mt-1 text-[0.6em] font-medium"
               />
               <p className="mt-4 max-w-2xl leading-relaxed text-muted">{t.lead[locale]}</p>
-              <LastUpdate at={updatedAt} locale={locale} className="mt-3 text-molecule-700" />
 
               <form action={bankHref} method="get" role="search" className="mt-7 flex gap-2">
                 <label className="relative min-w-0 flex-1">

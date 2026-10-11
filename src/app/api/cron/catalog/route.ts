@@ -1,6 +1,4 @@
 import { timingSafeEqual } from "node:crypto";
-import { revalidateTag } from "next/cache";
-import { CATALOG_TAG } from "@/lib/catalog";
 import { runDailyUpdate } from "@/lib/daily-update";
 import { internalCronToken } from "@/lib/scheduler";
 
@@ -17,6 +15,5 @@ export async function POST(request: Request) {
     return Response.json({ error: "unauthorized" }, { status: 401 });
   }
   const summary = await runDailyUpdate();
-  if (summary) revalidateTag(CATALOG_TAG, { expire: 0 });
   return Response.json({ ran: Boolean(summary), summary });
 }

@@ -1,5 +1,5 @@
 import { databaseConfigured, db, transaction } from "./db";
-import { loadCatalog, type CatalogKind } from "./catalog";
+import { invalidateCatalog, loadCatalog, type CatalogKind } from "./catalog";
 import { tehranNow } from "./scheduler";
 
 /** Adds an edit to the queue the next daily update publishes. `data: null` hides the record. */
@@ -109,6 +109,7 @@ export async function runDailyUpdate({ force = false } = {}): Promise<RunSummary
     return rows.length;
   });
 
+  invalidateCatalog();
   const catalog = await loadCatalog();
   const urls = catalog.companies.map((c) => c.web).filter((u): u is string => Boolean(u && /^https?:\/\//.test(u)));
   const unreachable = await checkLinks(urls);
@@ -118,5 +119,6 @@ export async function runDailyUpdate({ force = false } = {}): Promise<RunSummary
      where day = $1 returning finished_at`,
     [day, published, new Set(urls).size, unreachable],
   );
+  invalidateCatalog(); // the new run date is the "last updated" stamp
   return { day, finishedAt: rows[0]?.finished_at ?? null, published, checked: new Set(urls).size, unreachable };
 }
