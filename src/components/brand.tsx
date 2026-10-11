@@ -17,8 +17,20 @@ export function goldWord(text: string, word: string, onLight = false): ReactNode
   return [text.slice(0, at), <GoldWord key="gold" onLight={onLight}>{word}</GoldWord>, text.slice(at + word.length)];
 }
 
-/** The PharmaVault name with "Vault" in gold; always set left-to-right. */
-export function BrandName({ className = "" }: { className?: string }) {
+/**
+ * The PharmaVault name with "Vault" in gold; always set left-to-right.
+ * `plate` sets it like the header logo — navy "Pharma" on a small white
+ * plate — so the navy reads on dark backgrounds.
+ */
+export function BrandName({ className = "", plate = false }: { className?: string; plate?: boolean }) {
+  if (plate) {
+    return (
+      <span dir="ltr" className={`inline-block whitespace-nowrap rounded-lg bg-white px-[0.3em] leading-snug text-vault-900 ${className}`}>
+        Pharma
+        <VaultWord onLight />
+      </span>
+    );
+  }
   return (
     <span dir="ltr" className={`whitespace-nowrap ${className}`}>
       Pharma
@@ -28,7 +40,7 @@ export function BrandName({ className = "" }: { className?: string }) {
 }
 
 /** Renders a copy string with every "PharmaVault" in it as the gold brand name. */
-export function withBrand(text: string): ReactNode {
+export function withBrand(text: string, { plate = false } = {}): ReactNode {
   if (!text.includes("PharmaVault")) return text;
-  return text.split("PharmaVault").flatMap((part, i) => (i === 0 ? [part] : [<BrandName key={i} />, part]));
+  return text.split("PharmaVault").flatMap((part, i) => (i === 0 ? [part] : [<BrandName key={i} plate={plate} />, part]));
 }

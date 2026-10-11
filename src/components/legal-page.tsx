@@ -17,9 +17,10 @@ export function LegalPage({ page, locale, children }: { page: LegalPageData; loc
             text={page.title}
             locale={locale}
             className="text-3xl font-bold tracking-tight text-capsule-400 sm:text-4xl"
-            secondaryClassName="text-vault-100"
+            secondaryClassName="!opacity-100 text-vault-100/60"
+            brandPlate
           />
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-vault-100/80">{withBrand(page.lead[locale])}</p>
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-vault-100/80">{withBrand(page.lead[locale], { plate: true })}</p>
         </Container>
       </section>
       <Container className="max-w-3xl space-y-10 py-12">

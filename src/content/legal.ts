@@ -28,20 +28,45 @@ export const contactLabels = {
 export const about: LegalPage = {
   title: bi("About PharmaVault", "درباره PharmaVault"),
   lead: bi(
-    "PharmaVault is a specialist reference for pharmaceutical knowledge, information and tools, built for the people who develop, make, test and register medicines in Iran.",
-    "PharmaVault مرجع تخصصی دانش، اطلاعات و ابزارهای داروسازی است؛ برای کسانی که در ایران دارو را توسعه می‌دهند، تولید می‌کنند، آزمون می‌کنند و ثبت می‌کنند.",
+    "PharmaVault is a specialist reference for pharmaceutical knowledge, data and practical tools, built to support the whole life cycle of a medicine in Iran — from sourcing raw materials and designing the formulation to manufacturing, analysis, quality assurance and registration.",
+    "PharmaVault مرجع تخصصی دانش، داده و ابزارهای کاربردی داروسازی است؛ طراحی‌شده برای پشتیبانی از چرخه کامل توسعه دارو در ایران — از تأمین مواد اولیه و طراحی فرمولاسیون تا تولید، آنالیز، تضمین کیفیت و ثبت فرآورده.",
   ),
   sections: [
     {
-      title: bi("What we do", "چه می‌کنیم"),
-      paragraphs: [
+      title: bi("From knowledge to solutions — what we offer", "از دانش تا راهکار؛ آنچه ارائه می‌دهیم"),
+      items: [
         bi(
-          "We bring together in one place what a pharmaceutical professional otherwise has to look up across many sources: suppliers and manufacturers of raw materials, excipient and API data, technical handbooks, pharmaceutical calculations, formulation tools, QA and QC procedures and regulatory references.",
-          "آنچه یک متخصص داروسازی معمولاً باید از منابع پراکنده جستجو کند را در یک جا گرد آورده‌ایم: تأمین‌کنندگان و تولیدکنندگان مواد اولیه، اطلاعات مواد جانبی و مواد مؤثره، هندبوک‌های تخصصی، محاسبات داروسازی، ابزارهای فرمولاسیون، دستورالعمل‌های QA و QC و مراجع رگولاتوری.",
+          "A bank of suppliers and manufacturers of pharmaceutical, supplement and cosmetic raw materials, searchable by material and salt form",
+          "بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی، قابل جستجو بر اساس ماده و فرم نمکی",
         ),
         bi(
-          "Content is written from authoritative, citable sources — the pharmacopoeias (USP–NF, BP, Ph. Eur., JP), ICH guidelines and PIC/S GMP — and every reference is named so it can be checked against the current official edition.",
-          "مطالب بر پایه منابع معتبر و قابل استناد نوشته می‌شود — فارماکوپه‌ها (USP–NF، BP، Ph. Eur. و JP)، راهنماهای ICH و GMP سازمان PIC/S — و مرجع هر مطلب ذکر می‌شود تا با آخرین ویرایش رسمی قابل تطبیق باشد.",
+          "Databases of excipients and active pharmaceutical ingredients: function, use levels, CAS number and key physicochemical properties",
+          "پایگاه داده مواد جانبی و مواد مؤثره دارویی: عملکرد، محدوده مصرف، شماره CAS و ویژگی‌های کلیدی فیزیکوشیمیایی",
+        ),
+        bi(
+          "Technical handbooks for every dosage form, from formulation design and critical process parameters to scale-up and stability",
+          "هندبوک‌های تخصصی اشکال دارویی؛ از طراحی فرمولاسیون و پارامترهای بحرانی فرایند تا افزایش مقیاس و پایداری",
+        ),
+        bi(
+          "Formulation and analytical calculations, and a starting-formula builder",
+          "محاسبات فرمولاسیون و آنالیز، و ابزار طراحی فرمول پایه",
+        ),
+        bi(
+          "Standard operating procedures and references for quality control (QC) and quality assurance (QA)",
+          "دستورالعمل‌های استاندارد و مراجع کنترل کیفیت (QC) و تضمین کیفیت (QA)",
+        ),
+        bi(
+          "A regulatory reference for the CTD dossier and ICH guidelines",
+          "مرجع رگولاتوری پرونده CTD و راهنماهای ICH",
+        ),
+      ],
+    },
+    {
+      title: bi("Scientific basis", "مبنای علمی"),
+      paragraphs: [
+        bi(
+          "Content is drawn from authoritative, citable sources — the USP–NF, BP, Ph. Eur. and JP pharmacopoeias, ICH guidelines and PIC/S GMP — and each topic names its reference so it can be checked against the current official edition.",
+          "محتوا بر پایه منابع معتبر و قابل استناد تدوین می‌شود — فارماکوپه‌های \u2066USP–NF\u2069، \u2066BP\u2069، \u2066Ph. Eur.\u2069 و \u2066JP\u2069، راهنماهای ICH و GMP سازمان \u2066PIC/S\u2069 — و مرجع هر موضوع ذکر می‌شود تا با آخرین ویرایش رسمی قابل تطبیق باشد.",
         ),
       ],
     },
