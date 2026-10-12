@@ -53,7 +53,7 @@ export async function SiteFooter() {
         <Container className="flex flex-col gap-4 py-6 text-xs text-vault-100/60 sm:flex-row sm:items-center sm:justify-between">
           <div className="space-y-3">
             <nav aria-label={legalNav.terms[locale]} className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
-              {(["about", "contact", "terms", "privacy"] as const).map((key) => (
+              {(["about", "contact", "references", "terms", "privacy"] as const).map((key) => (
                 <Link key={key} href={href(locale, key)} className="hover:text-molecule-400">
                   {legalNav[key][locale]}
                 </Link>

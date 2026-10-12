@@ -14,6 +14,7 @@ export const legalNav = {
   contact: bi("Contact us", "تماس با ما"),
   terms: bi("Terms and conditions", "قوانین و مقررات"),
   privacy: bi("Privacy policy", "حریم خصوصی"),
+  references: bi("References and pharmacopoeias", "مراجع و فارماکوپه‌ها"),
 };
 
 export const contactLabels = {

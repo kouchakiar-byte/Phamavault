@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "contact",
     "terms",
     "privacy",
+    "references",
     ...sections.filter((s) => !s.href.startsWith("#")).map((s) => s.href),
     ...sops.items.filter((s) => s.text).map((s) => `qa/${s.code.toLowerCase()}`),
   ];
