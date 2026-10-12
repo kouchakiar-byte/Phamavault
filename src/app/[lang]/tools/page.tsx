@@ -1,7 +1,7 @@
 import { Calculators } from "@/components/calculators";
 import { PageHeader } from "@/components/page-header";
 import { Container } from "@/components/ui";
-import { calculations, referencesReviewed } from "@/content/calculations";
+import { calculations, referencesAccess, referencesReviewed } from "@/content/calculations";
 import { pages } from "@/content/pages";
 import { bi } from "@/i18n/bi";
 import { getLocale } from "@/i18n/locale";
@@ -21,7 +21,7 @@ export default async function ToolsPage() {
     <>
       <PageHeader locale={locale} section="tools" title={page.title} lead={lead} />
       <Container className="py-12">
-        <p className="mb-6 rounded-xl border border-line bg-vault-50 px-4 py-3 text-sm text-muted">{referencesReviewed[locale]}</p>
+        <p className="mb-6 rounded-xl border border-line bg-vault-50 px-4 py-3 text-sm text-muted">{referencesReviewed[locale]} {referencesAccess[locale]}</p>
         <Calculators locale={locale} />
       </Container>
     </>

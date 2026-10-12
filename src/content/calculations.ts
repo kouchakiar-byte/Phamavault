@@ -444,3 +444,32 @@ export const refsForTitle = (title: unknown): string[] => {
   const c = calculations.find((x) => x.title === title);
   return c ? calculationRefs[c.key] : [];
 };
+
+/** Official pages behind the references (USP–NF and Ph. Eur. need a subscription). */
+const refLinks: [prefix: string, url: string][] = [
+  [USP, "https://www.uspnf.com/"],
+  [EP, "https://go.edqm.eu/PhEurOnline"],
+  ["ICH ", "https://www.ich.org/page/quality-guidelines"],
+  ["FDA, Control of Nitrosamine", "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/control-nitrosamine-impurities-human-drugs"],
+  ["FDA, Estimating the Maximum Safe Starting Dose", "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/estimating-maximum-safe-starting-dose-initial-clinical-trials-therapeutics-adult-healthy-volunteers"],
+  ["FDA, Dissolution Testing", "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/dissolution-testing-immediate-release-solid-oral-dosage-forms"],
+  ["EMA, Guideline on the Investigation of Bioequivalence", "https://www.ema.europa.eu/en/investigation-bioequivalence"],
+  ["EMA, Guideline on setting health-based", "https://www.ema.europa.eu/en/setting-health-based-exposure-limits-use-risk-identification-manufacture-different-medicinal-products-shared-facilities-scientific-guideline"],
+  ["EMA, Q&A on nitrosamine", "https://www.ema.europa.eu/en/nitrosamine-impurities-guidance-marketing-authorisation-holders"],
+  ["ISO 11138-1", "https://www.iso.org/standard/66442.html"],
+  ["Mosteller", "https://doi.org/10.1056/NEJM198710223171717"],
+  ["DuBois", "https://doi.org/10.1001/archinte.1916.00080130010002"],
+  ["Haycock", "https://doi.org/10.1016/S0022-3476(78)80601-5"],
+  ["WHO BMI", "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight"],
+  ["Cockcroft & Gault", "https://doi.org/10.1159/000180580"],
+  ["Inker et al.", "https://doi.org/10.1056/NEJMoa2102953"],
+  ["KDIGO", "https://doi.org/10.1016/j.kint.2023.10.018"],
+];
+
+/** Link to the official page of a reference, when there is one (books have none). */
+export const refUrl = (ref: string): string | undefined => refLinks.find(([prefix]) => ref.startsWith(prefix))?.[1];
+
+export const referencesAccess = bi(
+  "Each reference links to its official page; USP–NF and Ph. Eur. texts need a subscription.",
+  "هر مرجع به صفحه رسمی‌اش لینک شده است؛ متن کامل USP–NF و فارماکوپه اروپا نیاز به اشتراک دارد.",
+);
