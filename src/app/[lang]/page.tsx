@@ -191,7 +191,9 @@ export default async function HomePage() {
               </ButtonLink>
             </div>
             <div className="mt-10">
-              <p className="text-xs font-medium text-vault-100/50">{hero.referencesLabel[locale]}</p>
+              <Link href={href(locale, "references")} className="text-xs font-medium text-vault-100/50 underline-offset-4 hover:text-molecule-400 hover:underline">
+                {hero.referencesLabel[locale]} {locale === "fa" ? "←" : "→"}
+              </Link>
               <ul className="mt-3 flex flex-wrap gap-2" dir="ltr" style={{ justifyContent: locale === "fa" ? "flex-end" : "flex-start" }}>
                 {hero.references.map((r) => (
                   <li key={r} className="rounded-md border border-white/15 bg-white/[0.04] px-2.5 py-1 font-mono text-xs text-vault-100/80">
