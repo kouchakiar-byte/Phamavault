@@ -281,6 +281,7 @@ export const account = {
       cas: bi("CAS number", "شماره CAS"),
       group: bi("Class", "رده"),
       mw: bi("Molecular weight", "وزن مولکولی"),
+      formula: bi("Molecular formula", "فرمول مولکولی"),
       noteEn: bi("Key note (English)", "نکته کلیدی (انگلیسی)"),
       noteFa: bi("Key note (Persian)", "نکته کلیدی (فارسی)"),
       synonyms: bi("Synonyms / Persian names", "مترادف‌ها / نام فارسی"),

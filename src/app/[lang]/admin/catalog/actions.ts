@@ -61,6 +61,7 @@ export async function saveMaterial(_: CatalogState, form: FormData): Promise<Cat
     name: text(form, "name"),
     cas: text(form, "cas"),
     group: text(form, "group"),
+    formula: text(form, "formula").replace(/\s+/g, "") || undefined,
     mw: text(form, "mw"),
     note: { en: text(form, "noteEn"), fa: text(form, "noteFa") },
     synonyms: text(form, "synonyms"),

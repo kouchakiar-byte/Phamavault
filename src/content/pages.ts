@@ -128,13 +128,14 @@ export const pages = {
   materials: {
     title: bi("API and raw material database", "پایگاه داده مواد مؤثره و مواد اولیه (API)"),
     lead: bi(
-      "Active pharmaceutical ingredients, vitamins and mineral salts with CAS Registry Number, molecular weight and a key solubility, stability or elemental-content note.",
-      "مواد مؤثره دارویی، ویتامین‌ها و املاح معدنی با شماره CAS، وزن مولکولی و نکته کلیدی درباره حلالیت، پایداری یا درصد عنصر.",
+      "Active pharmaceutical ingredients by therapeutic class, plus vitamins, mineral salts, amino acids and supplement ingredients — each in the salt or hydrate form traded as a raw material, with CAS Registry Number, molecular weight and a key note on pharmacology, solubility, stability, handling or elemental content.",
+      "مواد مؤثره دارویی به تفکیک رده درمانی، همراه با ویتامین‌ها، املاح معدنی، آمینواسیدها و مواد اولیه مکمل؛ هر ماده در همان فرم نمکی یا هیدراتی که به‌عنوان ماده اولیه عرضه می‌شود، با شماره CAS، وزن مولکولی و نکته کلیدی درباره رده دارویی، حلالیت، پایداری، ملاحظات تولید یا درصد عنصر.",
     ),
     group: bi("Class", "رده"),
     allGroups: bi("All classes", "همه رده‌ها"),
     mw: bi("Molecular weight (g/mol)", "وزن مولکولی (g/mol)"),
     keyPoint: bi("Key property", "ویژگی کلیدی"),
+    showMore: bi("Show {n} more", "نمایش {n} مورد دیگر"),
   },
   tools: {
     title: bi("Pharmaceutical calculations", "محاسبات داروسازی (Calculations)"),
