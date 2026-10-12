@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import { bi, type Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { copy } from "@/content/site";
-import { refsForTitle } from "@/content/calculations";
+import { refUrl, refsForTitle } from "@/content/calculations";
 import { BiTitle } from "../ui";
 
 /* Shared building blocks for every calculator panel. */
@@ -146,11 +146,26 @@ function References({ refs, locale }: { refs: string[]; locale: Locale }) {
   return (
     <p className="flex flex-wrap items-center gap-x-2 gap-y-1.5 border-t border-line pt-3 text-xs text-muted">
       <span className="font-semibold text-vault-900">{bi("References (current editions):", "مراجع (آخرین ویرایش):")[locale]}</span>
-      {refs.map((r) => (
-        <bdi key={r} dir="ltr" className="rounded-full border border-line bg-white px-2 py-0.5">
-          {r}
-        </bdi>
-      ))}
+      {refs.map((r) => {
+        const url = refUrl(r);
+        const pill = "rounded-lg border border-line bg-white px-2 py-0.5";
+        return url ? (
+          <a
+            key={r}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            dir="ltr"
+            className={`${pill} text-molecule-700 underline-offset-2 hover:border-molecule-500 hover:underline`}
+          >
+            {r} ↗
+          </a>
+        ) : (
+          <bdi key={r} dir="ltr" className={pill}>
+            {r}
+          </bdi>
+        );
+      })}
     </p>
   );
 }
