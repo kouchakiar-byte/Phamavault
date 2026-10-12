@@ -10,11 +10,26 @@ import { formatNumber } from "@/lib/format";
 import { Count, Field, FilterBar, TableWrap } from "./filters";
 import { Chip } from "./ui";
 
-/** C16H25N3O8S with subscript counts. */
+/** C16H25N3O8S or C10H13NO4·1.5H2O: atom counts as subscripts, hydrate coefficients inline. */
 function Formula({ value }: { value: string }) {
   return (
     <small className="block text-xs text-muted" dir="ltr">
-      {value.split(/(\d+)/).map((part, i) => (i % 2 ? <sub key={i}>{part}</sub> : part))}
+      {value.split(/(?<=[A-Za-z)])(\d+)/).map((part, i) => (i % 2 ? <sub key={i}>{part}</sub> : part))}
+    </small>
+  );
+}
+
+/** Each synonym isolated, so Latin names with brackets or signs keep their order in Persian text. */
+function Synonyms({ value, locale }: { value: string; locale: Locale }) {
+  const list = value.split(/,\s*/).filter(Boolean);
+  return (
+    <small className="block text-xs leading-relaxed text-muted">
+      {list.map((name, i) => (
+        <span key={i}>
+          <bdi>{name}</bdi>
+          {i < list.length - 1 && (locale === "fa" ? "، " : ", ")}
+        </span>
+      ))}
     </small>
   );
 }
@@ -85,7 +100,7 @@ export function MaterialTable({ locale, data }: Props) {
                   <span className="font-medium text-vault-900" dir="ltr">
                     {r.name}
                   </span>
-                  <small className="block text-xs leading-relaxed text-muted">{r.synonyms}</small>
+                  <Synonyms value={r.synonyms} locale={locale} />
                 </td>
                 <td className="num">{r.cas}</td>
                 <td>
