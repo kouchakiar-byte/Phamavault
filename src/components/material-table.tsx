@@ -6,14 +6,28 @@ import { copy } from "@/content/site";
 import { pages } from "@/content/pages";
 import type { Locale } from "@/i18n/config";
 import { normalize } from "@/i18n/bi";
+import { formatNumber } from "@/lib/format";
 import { Count, Field, FilterBar, TableWrap } from "./filters";
 import { Chip } from "./ui";
 
+/** C16H25N3O8S with subscript counts. */
+function Formula({ value }: { value: string }) {
+  return (
+    <small className="block text-xs text-muted" dir="ltr">
+      {value.split(/(\d+)/).map((part, i) => (i % 2 ? <sub key={i}>{part}</sub> : part))}
+    </small>
+  );
+}
+
 type Props = { locale: Locale; data: typeof RawMaterialData };
+
+/** Rows rendered at a time; the rest follow with "show more". */
+const PAGE = 50;
 
 export function MaterialTable({ locale, data }: Props) {
   const [query, setQuery] = useState("");
   const [group, setGroup] = useState("");
+  const [limit, setLimit] = useState(PAGE);
   const t = pages.materials;
   const c = copy.common;
 
@@ -28,10 +42,16 @@ export function MaterialTable({ locale, data }: Props) {
     <>
       <FilterBar>
         <Field label={c.search[locale]} htmlFor="r-q">
-          <input id="r-q" type="search" className="field-input" value={query} onChange={(e) => setQuery(e.target.value)} />
+          <input id="r-q" type="search" className="field-input" value={query} onChange={(e) => {
+              setQuery(e.target.value);
+              setLimit(PAGE);
+            }} />
         </Field>
         <Field label={t.group[locale]} htmlFor="r-grp">
-          <select id="r-grp" className="field-input" value={group} onChange={(e) => setGroup(e.target.value)}>
+          <select id="r-grp" className="field-input" value={group} onChange={(e) => {
+              setGroup(e.target.value);
+              setLimit(PAGE);
+            }}>
             <option value="">{t.allGroups[locale]}</option>
             {Object.entries(data.groups).map(([k, v]) => (
               <option key={k} value={k}>
@@ -59,7 +79,7 @@ export function MaterialTable({ locale, data }: Props) {
                 <td colSpan={5}>{c.noMatch[locale]}</td>
               </tr>
             )}
-            {rows.map((r) => (
+            {rows.slice(0, limit).map((r) => (
               <tr key={r.cas}>
                 <td>
                   <span className="font-medium text-vault-900" dir="ltr">
@@ -71,13 +91,21 @@ export function MaterialTable({ locale, data }: Props) {
                 <td>
                   <Chip>{data.groups[r.group]?.[locale] ?? r.group}</Chip>
                 </td>
-                <td className="num">{r.mw}</td>
+                <td className="num">
+                  {r.mw}
+                  {r.formula && <Formula value={r.formula} />}
+                </td>
                 <td>{r.note[locale]}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </TableWrap>
+      {rows.length > limit && (
+        <button type="button" className="mx-auto mt-4 flex rounded-lg border border-line px-5 py-2 text-sm font-medium text-vault-900 hover:border-molecule-500" onClick={() => setLimit((n) => n + PAGE)}>
+          {t.showMore[locale].replace("{n}", formatNumber(Math.min(PAGE, rows.length - limit), locale))}
+        </button>
+      )}
     </>
   );
 }

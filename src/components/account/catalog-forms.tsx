@@ -169,6 +169,7 @@ export function MaterialEditor({
             ))}
           </select>
         </div>
+        <Input name="formula" title={t.formula[locale]} value={m?.formula} dir="ltr" />
         <Input name="mw" title={t.mw[locale]} value={m?.mw} dir="ltr" />
         <Input name="noteEn" title={t.noteEn[locale]} value={m?.note.en} dir="ltr" />
         <Input name="noteFa" title={t.noteFa[locale]} value={m?.note.fa} />

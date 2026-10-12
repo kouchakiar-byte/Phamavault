@@ -29,6 +29,8 @@ export type RawMaterial = {
   name: string;
   cas: string;
   group: string;
+  /** Molecular formula of the traded salt/hydrate form, e.g. C16H25N3O8S. */
+  formula?: string;
   mw: string;
   note: Bi;
   synonyms: string;
