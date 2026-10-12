@@ -227,7 +227,7 @@ export const calculations = [
     key: "lin",
     group: "analysis",
     label: bi("Linearity, LOD and LOQ", "خطی بودن، LOD و LOQ"),
-    title: bi("Linearity by least squares, with LOD and LOQ (ICH Q2)", "خطی بودن با روش حداقل مربعات و محاسبه LOD و LOQ \u2066(ICH Q2)\u2069"),
+    title: bi("Linearity by least squares, with LOD and LOQ (ICH Q2(R2))", "خطی بودن با روش حداقل مربعات و محاسبه LOD و LOQ \u2066(ICH Q2(R2))\u2069"),
     equation: "LOD = 3.3σ/S ;  LOQ = 10σ/S",
   },
   {
@@ -371,3 +371,76 @@ export const calculation = (key: CalculationKey) => calculations.find((c) => c.k
 
 /** Calculators featured on the home page. */
 export const featuredCalculations: CalculationKey[] = ["pot", "hlb", "flow", "iso", "buf", "hplc", "f2", "udu"];
+
+/*
+ * Current editions of the references behind each calculator, reviewed October 2026
+ * (Mehr 1405): USP–NF 2026, Ph. Eur. 12th Edition (12.3, in force 1 July 2026) and
+ * the latest Step 4 versions of the ICH guidelines.
+ */
+const USP = "USP–NF 2026";
+const EP = "Ph. Eur. 12.3";
+const REMINGTON = "Remington, 23rd ed. (2020)";
+
+export const referencesReviewed = bi(
+  "References follow the current editions: USP–NF 2026, Ph. Eur. 12th Edition (12.3, in force since 1 July 2026) and the latest ICH Step 4 guidelines. Last reviewed October 2026.",
+  "مراجع بر پایه آخرین ویرایش‌ها هستند: ⁦USP–NF 2026⁩، فارماکوپه اروپا ویرایش ۱۲ ⁦(12.3)⁩ که از ۱۰ تیر ۱۴۰۵ لازم‌الاجراست، و آخرین نسخه نهایی (Step 4) راهنماهای ICH. آخرین بازبینی: مهر ۱۴۰۵.",
+);
+
+export const calculationRefs: Record<CalculationKey, string[]> = {
+  pot: [`${USP}, General Notices`, `${EP}, General Notices`],
+  bat: [REMINGTON],
+  hlb: [REMINGTON, "Handbook of Pharmaceutical Excipients, 9th ed. (2020)"],
+  flow: [`${USP} <1174>`, `${EP} 2.9.36`],
+  caps: [REMINGTON],
+  tab: [`${USP} <1217>`, `${EP} 2.9.8`],
+  coat: [REMINGTON],
+  sup: [REMINGTON],
+  iso: [REMINGTON],
+  fpd: [REMINGTON],
+  osm: [`${USP} <785>`, `${EP} 2.2.35`],
+  buf: [REMINGTON],
+  bcap: [REMINGTON],
+  dil: [`${USP} <1160>`],
+  conc: [`${USP} <1160>`],
+  meq: [`${USP} <1160>`],
+  vit: [`${USP}, vitamin monographs`],
+  kin: ["ICH Q1A(R2) (2003)", REMINGTON],
+  hplc: [`${USP} <621>`, `${EP} 2.2.46`],
+  imp: ["ICH Q3A(R2) (2006)", "ICH Q3B(R2) (2006)"],
+  uv: [`${USP} <857>`, `${EP} 2.2.25`],
+  tit: [`${USP} <541>`],
+  kf: [`${USP} <921>`, `${USP} <731>`, `${EP} 2.5.12`],
+  sst: [`${USP} <621>`, `${EP} 2.2.46`],
+  lin: ["ICH Q2(R2) (2023)"],
+  diss: [`${USP} <711>`, `${EP} 2.9.3`],
+  f2: ["FDA, Dissolution Testing of IR Solid Oral Dosage Forms (1997)", "EMA, Guideline on the Investigation of Bioequivalence, Rev. 1 (2010)"],
+  udu: [`${USP} <905>`, `${EP} 2.9.40`],
+  wv: [`${EP} 2.9.5`],
+  fri: [`${USP} <1216>`, `${EP} 2.9.7`],
+  moist: [`${USP} <731>`, `${EP} 2.2.32`],
+  maco: ["EMA, Guideline on setting health-based exposure limits (HBEL), EMA/CHMP/CVMP/SWP/169430/2012"],
+  mkt: [`${USP} <1079.2>`, `${USP} <659>`],
+  q1e: ["ICH Q1E (2003)"],
+  std: [`${USP} <541>`, `${EP} 4.2.2`],
+  rot: [`${USP} <781>`, `${EP} 2.2.7`],
+  q3c: ["ICH Q3C(R9) (2024)", `${USP} <467>`],
+  q3d: ["ICH Q3D(R2) (2022)", `${USP} <232>`],
+  nitro: ["FDA, Control of Nitrosamine Impurities in Human Drugs, Rev. 2 (2024)", "EMA, Q&A on nitrosamine impurities (EMA/409815/2020, current revision)"],
+  eli: [`${USP} <85>`, `${EP} 2.6.14`, `${EP} 5.1.10`],
+  lal: [`${USP} <85>`, `${EP} 2.6.14`],
+  gel: [`${USP} <85>`, `${EP} 2.6.14`],
+  f0: [`${EP} 5.1.1`, `${EP} 5.1.5`, `${USP} <1229>`],
+  sal: [`${EP} 5.1.1`, `${USP} <1229>`, "ISO 11138-1:2017"],
+  cfu: [`${USP} <61>`, `${USP} <1111>`, `${EP} 2.6.12`, `${EP} 5.1.4`],
+  bsa: ["Mosteller, NEJM 1987", "DuBois & DuBois, 1916", "Haycock, J Pediatr 1978", "WHO BMI classification"],
+  crcl: ["Cockcroft & Gault, Nephron 1976", "Inker et al., NEJM 2021 (CKD-EPI 2021)", "KDIGO CKD guideline (2024)"],
+  inf: [`${USP} <1160>`],
+  pk: ["Rowland & Tozer, Clinical Pharmacokinetics and Pharmacodynamics, 5th ed. (2019)"],
+  hed: ["FDA, Estimating the Maximum Safe Starting Dose in Initial Clinical Trials (2005)"],
+};
+
+/** The references of the calculator with this title (Panel only knows the title). */
+export const refsForTitle = (title: unknown): string[] => {
+  const c = calculations.find((x) => x.title === title);
+  return c ? calculationRefs[c.key] : [];
+};

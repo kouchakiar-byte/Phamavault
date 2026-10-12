@@ -314,8 +314,8 @@ export function Lin({ ctx }: { ctx: Ctx }) {
       ]}
       message={msg}
       note={bi(
-        "Least-squares line y = S·x + a. ICH Q2: LOD = 3.3σ ÷ S and LOQ = 10σ ÷ S, here with σ the residual standard deviation of the regression; confirm LOD and LOQ experimentally. " + listNote.en,
-        `خط حداقل مربعات ${ltr("y = S·x + a")}. طبق ICH Q2: ${ltr("LOD = 3.3σ ÷ S")} و ${ltr("LOQ = 10σ ÷ S")} که σ در اینجا انحراف معیار باقیمانده رگرسیون است؛ LOD و LOQ را به‌صورت تجربی هم تأیید کنید. ${listNote.fa}`,
+        "Least-squares line y = S·x + a. ICH Q2(R2): LOD = 3.3σ ÷ S and LOQ = 10σ ÷ S, here with σ the residual standard deviation of the regression; confirm LOD and LOQ experimentally. " + listNote.en,
+        `خط حداقل مربعات ${ltr("y = S·x + a")}. طبق ICH Q2(R2): ${ltr("LOD = 3.3σ ÷ S")} و ${ltr("LOQ = 10σ ÷ S")} که σ در اینجا انحراف معیار باقیمانده رگرسیون است؛ LOD و LOQ را به‌صورت تجربی هم تأیید کنید. ${listNote.fa}`,
       )}
     />
   );
