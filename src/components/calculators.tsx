@@ -10,6 +10,11 @@ import { Choice, DASH, NumberInput, Panel, PresetSelect, Select, bad, isLocked, 
 import { Caps, Coat, Flow, Tab } from "./calc/formulation";
 import { Conc, Fpd, Kin, Osm } from "./calc/solutions";
 import { Diss, F2, Hplc, Imp, Kf, Lin, Sst, Tit, Udu, Uv } from "./calc/analysis";
+import { Fri, Maco, Moist, Wv, manufacturingDefaults } from "./calc/manufacturing";
+import { Mkt, Q1e, stabilityDefaults } from "./calc/stability";
+import { Nitro, Q3c, Q3d, Rot, Std, qualityDefaults } from "./calc/quality";
+import { Cfu, Eli, F0, Gel, Lal, Sal, microDefaults } from "./calc/micro";
+import { Bsa, Crcl, Hed, Inf, Pk, clinicalDefaults } from "./calc/clinical";
 
 
 /*
@@ -664,6 +669,10 @@ const components: Record<CalculationKey, (props: { ctx: Ctx }) => React.JSX.Elem
   pot: Pot, bat: Batch, hlb: Hlb, flow: Flow, caps: Caps, tab: Tab, coat: Coat, sup: Sup,
   iso: Iso, fpd: Fpd, osm: Osm, buf: Buf, bcap: BufCap, dil: Dil, conc: Conc, meq: Meq, vit: Vit, kin: Kin,
   hplc: Hplc, imp: Imp, uv: Uv, tit: Tit, kf: Kf, sst: Sst, lin: Lin, diss: Diss, f2: F2, udu: Udu,
+  wv: Wv, fri: Fri, moist: Moist, maco: Maco, mkt: Mkt, q1e: Q1e,
+  std: Std, rot: Rot, q3c: Q3c, q3d: Q3d, nitro: Nitro,
+  eli: Eli, lal: Lal, gel: Gel, f0: F0, sal: Sal, cfu: Cfu,
+  bsa: Bsa, crcl: Crcl, inf: Inf, pk: Pk, hed: Hed,
 };
 
 const defaults: Values = {
@@ -699,6 +708,11 @@ const defaults: Values = {
   "ds-lc": "500", "ds-v": "900", "ds-s": "10", "ds-rep": "yes", "ds-t": "10 15 20 30 45", "ds-c": "0.2510 0.3920 0.4810 0.5320 0.5480",
   "f2-r": "35 58 79 90 96", "f2-t": "32 55 77 89 95",
   "ud-x": "99.2 101.5 98.7 100.3 97.9 102.1 99.8 100.6 98.4 101.0",
+  ...manufacturingDefaults,
+  ...stabilityDefaults,
+  ...qualityDefaults,
+  ...microDefaults,
+  ...clinicalDefaults,
 };
 
 export function Calculators({ locale }: { locale: Locale }) {

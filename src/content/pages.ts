@@ -140,8 +140,8 @@ export const pages = {
   tools: {
     title: bi("Pharmaceutical calculations", "محاسبات داروسازی (Calculations)"),
     lead: bi(
-      "{n} calculators in three groups: formulation and manufacturing; solutions, physical pharmacy and stability; analysis and quality control. Results update as you type, and the governing equation and reference are shown under each one.",
-      "{n} ماشین‌حساب در سه گروه: فرمولاسیون و تولید؛ محلول‌ها، داروسازی فیزیکی و پایداری؛ آنالیز و کنترل کیفیت. نتیجه هم‌زمان با ورود داده محاسبه می‌شود و معادله مبنا و مرجع زیر هر کدام آمده است.",
+      "{n} calculators in five groups: formulation and manufacturing; solutions, physical pharmacy and stability; analysis and quality control; microbiology, sterility and endotoxins; dosing and pharmacokinetics. Results update as you type, and the governing equation and reference are shown under each one.",
+      "{n} ماشین‌حساب در پنج گروه: فرمولاسیون و تولید؛ محلول‌ها، داروسازی فیزیکی و پایداری؛ آنالیز و کنترل کیفیت؛ میکروبیولوژی، استریلیتی و اندوتوکسین؛ دوزبندی و فارماکوکینتیک. نتیجه هم‌زمان با ورود داده محاسبه می‌شود و معادله مبنا و مرجع زیر هر کدام آمده است.",
     ),
   },
   formulation: {
