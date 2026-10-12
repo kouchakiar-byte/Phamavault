@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { bi, type Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { copy } from "@/content/site";
+import { refsForTitle } from "@/content/calculations";
 import { BiTitle } from "../ui";
 
 /* Shared building blocks for every calculator panel. */
@@ -134,7 +135,23 @@ export function Panel({ ctx, title, form, results, message, note, children }: {
       </div>
       {children}
       <p className="text-sm text-muted">{note[ctx.locale]}</p>
+      <References refs={refsForTitle(title)} locale={ctx.locale} />
     </div>
+  );
+}
+
+/** Current editions of the references, one isolated chip each so Latin text keeps its order. */
+function References({ refs, locale }: { refs: string[]; locale: Locale }) {
+  if (!refs.length) return null;
+  return (
+    <p className="flex flex-wrap items-center gap-x-2 gap-y-1.5 border-t border-line pt-3 text-xs text-muted">
+      <span className="font-semibold text-vault-900">{bi("References (current editions):", "مراجع (آخرین ویرایش):")[locale]}</span>
+      {refs.map((r) => (
+        <bdi key={r} dir="ltr" className="rounded-full border border-line bg-white px-2 py-0.5">
+          {r}
+        </bdi>
+      ))}
+    </p>
   );
 }
 

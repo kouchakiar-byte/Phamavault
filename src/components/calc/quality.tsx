@@ -131,7 +131,7 @@ export function Rot({ ctx }: { ctx: Ctx }) {
 
 // ---------- Residual solvents (ICH Q3C) ----------
 
-/** values: [PDE mg/day] — ICH Q3C(R8) Table 2 (class 2) and the class 3 default. */
+/** values: [PDE mg/day] — ICH Q3C(R9) Table 2 (class 2) and the class 3 default. */
 const solvents: Preset[] = [
   ["Methanol", "متانول", "30.0"], ["Acetonitrile", "استونیتریل", "4.1"], ["Dichloromethane", "دی‌کلرومتان", "6.0"],
   ["Toluene", "تولوئن", "8.9"], ["Hexane", "هگزان", "2.9"], ["Tetrahydrofuran", "تتراهیدروفوران", "7.2"],
@@ -177,9 +177,9 @@ export function Q3c({ ctx }: { ctx: Ctx }) {
       ]}
       message={ok ? "" : bad(ctx)}
       note={bi(
-        "ICH Q3C(R8): concentration limit (ppm) = 1000 × PDE (mg/day) ÷ daily dose (g/day). Option 1 assumes 10 g/day, so the limit is PDE × 100 and applies to every component without further calculation. Option 2 sums the solvent from all components of the daily dose and compares it with the PDE. Class 3 solvents: 50 mg/day (0.5%) without justification. " +
+        "ICH Q3C(R9): concentration limit (ppm) = 1000 × PDE (mg/day) ÷ daily dose (g/day). Option 1 assumes 10 g/day, so the limit is PDE × 100 and applies to every component without further calculation. Option 2 sums the solvent from all components of the daily dose and compares it with the PDE. Class 3 solvents: 50 mg/day (0.5%) without justification. " +
           listNote.en,
-        `${ltr("ICH Q3C(R8)")}: حد غلظت ${ltr("(ppm) = 1000 × PDE (mg/day) ÷ dose (g/day)")}. روش ۱ دوز روزانه را ۱۰ گرم فرض می‌کند، پس حد ${ltr("PDE × 100")} است و برای همه اجزا بدون محاسبه دیگر معتبر است. روش ۲ حلال همه اجزای دوز روزانه را جمع و با PDE مقایسه می‌کند. حلال‌های کلاس ۳: ۵۰ میلی‌گرم در روز (0.5٪) بدون نیاز به توجیه. ${listNote.fa}`,
+        `${ltr("ICH Q3C(R9)")}: حد غلظت ${ltr("(ppm) = 1000 × PDE (mg/day) ÷ dose (g/day)")}. روش ۱ دوز روزانه را ۱۰ گرم فرض می‌کند، پس حد ${ltr("PDE × 100")} است و برای همه اجزا بدون محاسبه دیگر معتبر است. روش ۲ حلال همه اجزای دوز روزانه را جمع و با PDE مقایسه می‌کند. حلال‌های کلاس ۳: ۵۰ میلی‌گرم در روز (0.5٪) بدون نیاز به توجیه. ${listNote.fa}`,
       )}
     />
   );
