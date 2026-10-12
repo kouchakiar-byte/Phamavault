@@ -1,12 +1,14 @@
 import { bi } from "@/i18n/bi";
 
-export type CalculationGroup = "formulation" | "solutions" | "analysis";
+export type CalculationGroup = "formulation" | "solutions" | "analysis" | "micro" | "clinical";
 
 /** Groups of calculators, in the order shown on the tools page. */
 export const calculationGroups: { key: CalculationGroup; title: ReturnType<typeof bi> }[] = [
   { key: "formulation", title: bi("Formulation and manufacturing", "فرمولاسیون و تولید") },
   { key: "solutions", title: bi("Solutions, physical pharmacy and stability", "محلول‌ها، داروسازی فیزیکی و پایداری") },
   { key: "analysis", title: bi("Analysis and quality control", "آنالیز و کنترل کیفیت") },
+  { key: "micro", title: bi("Microbiology, sterility and endotoxins", "میکروبیولوژی، استریلیتی و اندوتوکسین") },
+  { key: "clinical", title: bi("Dosing and pharmacokinetics", "دوزبندی و فارماکوکینتیک") },
 ];
 
 /** The calculators: group, tab label, full title and governing equation. */
@@ -66,6 +68,34 @@ export const calculations = [
     label: bi("Suppository displacement", "ضریب جابه‌جایی شیاف"),
     title: bi("Suppository base by displacement value", "محاسبه پایه شیاف با ضریب جابه‌جایی"),
     equation: "Base/unit = F − D/DV",
+  },
+  {
+    key: "wv",
+    group: "formulation",
+    label: bi("Uniformity of mass", "یکنواختی وزن"),
+    title: bi("Uniformity of mass of single-dose preparations (Ph. Eur. 2.9.5)", "یکنواختی وزن فرآورده‌های تک‌دوز \u2066(Ph. Eur. 2.9.5)\u2069"),
+    equation: "deviation % = (w_i − w̄) / w̄ × 100",
+  },
+  {
+    key: "fri",
+    group: "formulation",
+    label: bi("Tablet friability", "فرسایش‌پذیری قرص"),
+    title: bi("Friability of uncoated tablets (USP <1216>, Ph. Eur. 2.9.7)", "فرسایش‌پذیری قرص‌های بدون روکش \u2066(USP <1216>, Ph. Eur. 2.9.7)\u2069"),
+    equation: "loss % = (W₁ − W₂) / W₁ × 100",
+  },
+  {
+    key: "moist",
+    group: "formulation",
+    label: bi("Granulation water and drying", "آب گرانولاسیون و خشک کردن"),
+    title: bi("Moisture adjustment: water to add or remove to reach a target LOD", "تنظیم رطوبت: آب لازم برای افزودن یا حذف تا رسیدن به LOD هدف"),
+    equation: "Δm = M_dry × [x_t/(100 − x_t) − x_0/(100 − x_0)]",
+  },
+  {
+    key: "maco",
+    group: "formulation",
+    label: bi("Cleaning validation (MACO)", "اعتبارسنجی تمیزکاری (MACO)"),
+    title: bi("Cleaning validation: maximum allowable carryover and swab/rinse limits", "اعتبارسنجی تمیزکاری: حداکثر انتقال مجاز (MACO) و حد سواب و آبکشی"),
+    equation: "MACO = PDE × MBS / MDD ;  swab limit = MACO × A_swab / A_shared",
   },
   {
     key: "iso",
@@ -138,6 +168,20 @@ export const calculations = [
     equation: "t90 = 0.105 / k ;  k₂ = k₁·e^[−Ea/R·(1/T₂ − 1/T₁)]",
   },
   {
+    key: "mkt",
+    group: "solutions",
+    label: bi("Mean kinetic temperature", "دمای سینتیکی میانگین (MKT)"),
+    title: bi("Mean kinetic temperature of a storage period (USP <1079.2>)", "دمای سینتیکی میانگین دوره نگهداری \u2066(USP <1079.2>)\u2069"),
+    equation: "MKT = (ΔH/R) / −ln[(1/n)·Σ e^(−ΔH/RT_i)]",
+  },
+  {
+    key: "q1e",
+    group: "solutions",
+    label: bi("Shelf life by regression (ICH Q1E)", "تعیین تاریخ انقضا با رگرسیون \u2066(ICH Q1E)\u2069"),
+    title: bi("Shelf-life estimation from stability data: 95% one-sided confidence limit (ICH Q1E)", "برآورد عمر قفسه‌ای از داده‌های پایداری: حد اطمینان یک‌طرفه ۹۵٪ \u2066(ICH Q1E)\u2069"),
+    equation: "ŷ(t) − t₀.₉₅,ₙ₋₂ · s·√[1/n + (t − t̄)²/Sxx] = spec",
+  },
+  {
     key: "hplc",
     group: "analysis",
     label: bi("Assay (HPLC, external standard)", "تعیین مقدار (HPLC، استاندارد خارجی)"),
@@ -187,6 +231,41 @@ export const calculations = [
     equation: "LOD = 3.3σ/S ;  LOQ = 10σ/S",
   },
   {
+    key: "std",
+    group: "analysis",
+    label: bi("Volumetric solution standardisation", "استانداردسازی محلول حجمی"),
+    title: bi("Standardisation of a volumetric solution against a primary standard", "استانداردسازی محلول حجمی با استاندارد اولیه"),
+    equation: "M = m / (V × E) ;  factor f = M / M_nominal",
+  },
+  {
+    key: "rot",
+    group: "analysis",
+    label: bi("Specific optical rotation", "چرخش نوری ویژه"),
+    title: bi("Specific optical rotation (USP <781>, Ph. Eur. 2.2.7)", "چرخش نوری ویژه \u2066(USP <781>, Ph. Eur. 2.2.7)\u2069"),
+    equation: "[α] = 100·α / (l·c)",
+  },
+  {
+    key: "q3c",
+    group: "analysis",
+    label: bi("Residual solvents (ICH Q3C)", "حلال‌های باقیمانده \u2066(ICH Q3C)\u2069"),
+    title: bi("Residual solvents: concentration limit from PDE (ICH Q3C options 1 and 2)", "حلال‌های باقیمانده: حد غلظت از PDE \u2066(ICH Q3C, options 1 & 2)\u2069"),
+    equation: "limit (ppm) = 1000 × PDE (mg/day) / dose (g/day)",
+  },
+  {
+    key: "q3d",
+    group: "analysis",
+    label: bi("Elemental impurities (ICH Q3D)", "ناخالصی‌های عنصری \u2066(ICH Q3D)\u2069"),
+    title: bi("Elemental impurities: permitted concentration and control threshold (ICH Q3D)", "ناخالصی‌های عنصری: غلظت مجاز و آستانه کنترل \u2066(ICH Q3D)\u2069"),
+    equation: "C (µg/g) = PDE (µg/day) / daily dose (g/day)",
+  },
+  {
+    key: "nitro",
+    group: "analysis",
+    label: bi("Nitrosamine limit", "حد نیتروزآمین‌ها"),
+    title: bi("Nitrosamine impurities: limit from the acceptable intake (AI)", "ناخالصی‌های نیتروزآمین: حد مجاز بر اساس دریافت قابل قبول (AI)"),
+    equation: "limit (ppm) = AI (ng/day) / MDD (mg/day)",
+  },
+  {
     key: "diss",
     group: "analysis",
     label: bi("Dissolution % released", "درصد انحلال"),
@@ -206,6 +285,83 @@ export const calculations = [
     label: bi("Content uniformity (AV)", "یکنواختی محتوا (AV)"),
     title: bi("Uniformity of dosage units: acceptance value (USP <905>)", "یکنواختی واحدهای دارویی: مقدار پذیرش AV \u2066(USP <905>)\u2069"),
     equation: "AV = |M − X̄| + k·s",
+  },
+  {
+    key: "eli",
+    group: "micro",
+    label: bi("Endotoxin limit and MVD", "حد اندوتوکسین و MVD"),
+    title: bi("Bacterial endotoxins: endotoxin limit, maximum valid dilution and MVC (USP <85>, Ph. Eur. 2.6.14)", "اندوتوکسین باکتریایی: حد اندوتوکسین، حداکثر رقت معتبر (MVD) و MVC \u2066(USP <85>, Ph. Eur. 2.6.14)\u2069"),
+    equation: "EL = K / M ;  MVD = EL × C / λ",
+  },
+  {
+    key: "lal",
+    group: "micro",
+    label: bi("Endotoxin: kinetic LAL", "اندوتوکسین: روش کینتیک LAL"),
+    title: bi("Photometric (kinetic) LAL: standard curve, sample result and spike recovery", "روش فوتومتریک (کینتیک) LAL: منحنی استاندارد، نتیجه نمونه و بازیافت اسپایک"),
+    equation: "log T = a + b·log C ;  recovery = (C_spiked − C_sample) / C_spike × 100",
+  },
+  {
+    key: "gel",
+    group: "micro",
+    label: bi("Endotoxin: gel-clot", "اندوتوکسین: روش ژل‌کلات"),
+    title: bi("Gel-clot method: geometric mean end-point and confirmation of labelled sensitivity λ", "روش ژل‌کلات: میانگین هندسی نقطه پایانی و تأیید حساسیت برچسب λ"),
+    equation: "end-point = antilog[Σ log e_i / f]",
+  },
+  {
+    key: "f0",
+    group: "micro",
+    label: bi("Sterilisation F0 value", "مقدار F0 استریلیزاسیون"),
+    title: bi("Lethality of a moist-heat cycle: F0 from temperature readings", "کشندگی چرخه حرارت مرطوب: محاسبه F0 از دماهای ثبت‌شده"),
+    equation: "F₀ = Δt · Σ 10^((T − 121.1)/z)",
+  },
+  {
+    key: "sal",
+    group: "micro",
+    label: bi("D-value, log reduction and SAL", "مقدار D، کاهش لگاریتمی و SAL"),
+    title: bi("D-value, log reduction and sterility assurance level", "مقدار D، کاهش لگاریتمی و سطح اطمینان از استریلیتی (SAL)"),
+    equation: "D = t / (log N₀ − log N) ;  log N_F = log N₀ − F/D",
+  },
+  {
+    key: "cfu",
+    group: "micro",
+    label: bi("Microbial count (TAMC/TYMC)", "شمارش میکروبی \u2066(TAMC/TYMC)\u2069"),
+    title: bi("Microbial enumeration: cfu per g or mL and acceptance (USP <61>, <1111>)", "شمارش میکروبی: cfu در هر گرم یا میلی‌لیتر و پذیرش \u2066(USP <61>, <1111>)\u2069"),
+    equation: "cfu/g = mean colonies × dilution factor / volume plated",
+  },
+  {
+    key: "bsa",
+    group: "clinical",
+    label: bi("BSA, BMI and body weight", "سطح بدن، BMI و وزن بدن"),
+    title: bi("Body surface area, BMI, ideal and adjusted body weight", "سطح بدن (BSA)، شاخص توده بدنی، وزن ایده‌آل و وزن اصلاح‌شده"),
+    equation: "BSA = √(height × weight / 3600)",
+  },
+  {
+    key: "crcl",
+    group: "clinical",
+    label: bi("Renal function (CrCl, eGFR)", "عملکرد کلیه (CrCl و eGFR)"),
+    title: bi("Creatinine clearance (Cockcroft–Gault) and eGFR (CKD-EPI 2021)", "کلیرانس کراتینین (کاکرافت–گالت) و eGFR \u2066(CKD-EPI 2021)\u2069"),
+    equation: "CrCl = (140 − age) × weight / (72 × SCr) [× 0.85 F]",
+  },
+  {
+    key: "inf",
+    group: "clinical",
+    label: bi("IV infusion rate", "سرعت انفوزیون وریدی"),
+    title: bi("Intravenous infusion: dose rate, mL/h and drops per minute", "انفوزیون وریدی: سرعت دوز، میلی‌لیتر در ساعت و قطره در دقیقه"),
+    equation: "mL/h = dose rate (mg/h) / concentration (mg/mL)",
+  },
+  {
+    key: "pk",
+    group: "clinical",
+    label: bi("Half-life and dosing (1-compartment)", "نیمه‌عمر و دوزبندی (تک‌بخشی)"),
+    title: bi("One-compartment pharmacokinetics: k, half-life, clearance, accumulation and doses", "فارماکوکینتیک تک‌بخشی: ثابت حذف، نیمه‌عمر، کلیرانس، تجمع و دوزها"),
+    equation: "k = ln(C₁/C₂)/Δt ;  t½ = 0.693/k ;  C_ss,avg = F·D/(CL·τ)",
+  },
+  {
+    key: "hed",
+    group: "clinical",
+    label: bi("Human equivalent dose (HED)", "دوز معادل انسانی (HED)"),
+    title: bi("Human equivalent dose and maximum recommended starting dose (FDA 2005, body surface area)", "دوز معادل انسانی و حداکثر دوز شروع توصیه‌شده (FDA 2005، بر پایه سطح بدن)"),
+    equation: "HED (mg/kg) = animal dose × (Km animal / Km human)",
   },
 ] as const;
 
