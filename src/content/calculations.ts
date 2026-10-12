@@ -382,11 +382,19 @@ const EP = "Ph. Eur. 12.3";
 const REMINGTON = "Remington, 23rd ed. (2020)";
 
 export const referencesReviewed = bi(
-  "References follow the current editions: USP–NF 2026, Ph. Eur. 12th Edition (12.3, in force since 1 July 2026) and the latest ICH Step 4 guidelines. Last reviewed October 2026.",
-  "مراجع بر پایه آخرین ویرایش‌ها هستند: ⁦USP–NF 2026⁩، فارماکوپه اروپا ویرایش ۱۲ ⁦(12.3)⁩ که از ۱۰ تیر ۱۴۰۵ لازم‌الاجراست، و آخرین نسخه نهایی (Step 4) راهنماهای ICH. آخرین بازبینی: مهر ۱۴۰۵.",
+  "References follow the editions in force: USP–NF 2026, BP 2026, Ph. Eur. 12th Edition (12.3, in force since 1 July 2026) and the latest ICH Step 4 guidelines. Last reviewed October 2026.",
+  "مراجع بر پایه ویرایش‌های لازم‌الاجرا هستند: ⁦USP–NF 2026⁩، ⁦BP 2026⁩، فارماکوپه اروپا ویرایش ۱۲ ⁦(12.3)⁩ که از ۱۰ تیر ۱۴۰۵ لازم‌الاجراست، و آخرین نسخه نهایی (Step 4) راهنماهای ICH. آخرین بازبینی: مهر ۱۴۰۵.",
 );
 
-export const calculationRefs: Record<CalculationKey, string[]> = {
+const BP = "BP 2026";
+
+/** BP 2026 reproduces every Ph. Eur. text, so it is cited wherever Ph. Eur. is. */
+const withBp = (refs: Record<CalculationKey, string[]>): Record<CalculationKey, string[]> =>
+  Object.fromEntries(
+    Object.entries(refs).map(([k, r]) => [k, r.some((x) => x.startsWith(EP)) ? [...r, `${BP} (incl. Ph. Eur. texts)`] : r]),
+  ) as Record<CalculationKey, string[]>;
+
+export const calculationRefs: Record<CalculationKey, string[]> = withBp({
   pot: [`${USP}, General Notices`, `${EP}, General Notices`],
   bat: [REMINGTON],
   hlb: [REMINGTON, "Handbook of Pharmaceutical Excipients, 9th ed. (2020)"],
@@ -437,7 +445,7 @@ export const calculationRefs: Record<CalculationKey, string[]> = {
   inf: [`${USP} <1160>`],
   pk: ["Rowland & Tozer, Clinical Pharmacokinetics and Pharmacodynamics, 5th ed. (2019)"],
   hed: ["FDA, Estimating the Maximum Safe Starting Dose in Initial Clinical Trials (2005)"],
-};
+});
 
 /** The references of the calculator with this title (Panel only knows the title). */
 export const refsForTitle = (title: unknown): string[] => {
@@ -449,6 +457,7 @@ export const refsForTitle = (title: unknown): string[] => {
 const refLinks: [prefix: string, url: string][] = [
   [USP, "https://www.uspnf.com/"],
   [EP, "https://go.edqm.eu/PhEurOnline"],
+  [BP, "https://www.pharmacopoeia.com/"],
   ["ICH ", "https://www.ich.org/page/quality-guidelines"],
   ["FDA, Control of Nitrosamine", "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/control-nitrosamine-impurities-human-drugs"],
   ["FDA, Estimating the Maximum Safe Starting Dose", "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/estimating-maximum-safe-starting-dose-initial-clinical-trials-therapeutics-adult-healthy-volunteers"],
@@ -470,6 +479,6 @@ const refLinks: [prefix: string, url: string][] = [
 export const refUrl = (ref: string): string | undefined => refLinks.find(([prefix]) => ref.startsWith(prefix))?.[1];
 
 export const referencesAccess = bi(
-  "Each reference links to its official page; USP–NF and Ph. Eur. texts need a subscription.",
-  "هر مرجع به صفحه رسمی‌اش لینک شده است؛ متن کامل USP–NF و فارماکوپه اروپا نیاز به اشتراک دارد.",
+  "Each reference links to its official page; USP–NF, BP and Ph. Eur. texts need a subscription.",
+  "هر مرجع به صفحه رسمی‌اش لینک شده است؛ متن کامل USP–NF، BP و فارماکوپه اروپا نیاز به اشتراک دارد.",
 );

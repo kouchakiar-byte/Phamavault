@@ -86,7 +86,10 @@ export const referenceSections: RefSection[] = [
       "Published each August by the MHRA and legally effective from the following 1 January; it reproduces every Ph. Eur. monograph alongside about 4,000 monographs of its own.",
       "هر سال در ماه اوت از سوی MHRA منتشر و از اول ژانویه سال بعد لازم‌الاجرا می‌شود؛ همه مونوگراف‌های فارماکوپه اروپا را هم در کنار حدود ۴۰۰۰ مونوگراف خودش در بر دارد.",
     ),
-    links: [{ label: "British Pharmacopoeia", url: "https://www.pharmacopoeia.com/", note: bi("Official site (subscription)", "سایت رسمی (با اشتراک)") }],
+    links: [
+      { label: "BP 2026 online", url: "https://www.pharmacopoeia.com/", note: bi("Official texts — sign in with a subscription", "متن رسمی — ورود با اشتراک") },
+      { label: "BP 2026 (print, TSO)", url: "https://tsoshop.co.uk/product/9780113231072/BP-2026-Print", note: bi("Official publisher: print and online licences", "ناشر رسمی: نسخه چاپی و اشتراک آنلاین") },
+    ],
   },
   {
     key: "ep",
