@@ -227,6 +227,14 @@ export const referenceSections: RefSection[] = [
           "اطلاعات کامل تجویز داروهای آمریکا بر اساس نام تجاری یا ژنریک: موارد مصرف، دوز، عوارض و بخش توصیف (Description) شامل مواد جانبی (رایگان)",
         ),
       },
+      {
+        label: "Pharmaceutical Excipients (MedicinesComplete)",
+        url: "https://www.medicinescomplete.com/",
+        note: bi(
+          "The current, regularly updated online edition of the Handbook of Pharmaceutical Excipients (the print 9th edition, 2020, was the last): excipient monographs with functions, typical concentrations, properties and safety (subscription)",
+          "نسخه آنلاین، جاری و مرتب به‌روزشونده Handbook of Pharmaceutical Excipients (ویرایش چاپی ۹ در ۲۰۲۰ آخرین چاپ بود): مونوگراف مواد جانبی با نقش‌ها، غلظت متداول، ویژگی‌ها و ایمنی (با اشتراک)",
+        ),
+      },
       { label: "PubChem", url: "https://pubchem.ncbi.nlm.nih.gov/", note: bi("Structures, CAS, properties, safety", "ساختار، CAS، ویژگی‌ها و ایمنی") },
       { label: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/", note: bi("Scientific literature", "مقالات علمی") },
       { label: "DrugBank", url: "https://go.drugbank.com/", note: bi("Drug data: pharmacology, targets, interactions", "داده دارویی: فارماکولوژی، اهداف و تداخلات") },
