@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Atom, BookOpen, Briefcase, Calculator, Factory, FileCheck, FlaskConical, Layers, ShieldCheck, TestTubes } from "lucide-react";
+import { Atom, BookOpen, Briefcase, Calculator, Factory, FileCheck, FlaskConical, Layers, Pill, ShieldCheck, TestTubes } from "lucide-react";
 import { bi, type Bi } from "@/i18n/bi";
 
 export type SectionGroup = "knowledge" | "databases" | "tools" | "company";
@@ -126,6 +126,18 @@ export const sections = [
     description: bi(
       "The pharmaceutical quality system (ICH Q10), quality risk management tools and a GMP-aligned SOP library for every department, with full text.",
       "سیستم کیفیت دارویی (ICH Q10)، ابزارهای مدیریت ریسک کیفیت و کتابخانه دستورالعمل‌های منطبق بر GMP برای همه واحدها، همراه با متن کامل.",
+    ),
+  },
+  {
+    slug: "pharmacy",
+    href: "pharmacy",
+    plate: "PH",
+    icon: Pill,
+    group: "tools",
+    title: bi("Community Pharmacy", "داروخانه (Community Pharmacy)"),
+    description: bi(
+      "Therapeutic substitution during shortages with referenced equivalent-dose tables, and non-sterile compounding with the USP <795> beyond-use date calculator.",
+      "جایگزینی درمانی در زمان کمبود دارو با جدول‌های دوز معادل مستند، و ساخت فرآورده‌های غیراستریل در داروخانه با محاسبه تاریخ مصرف پس از ساخت طبق USP <795>.",
     ),
   },
   {

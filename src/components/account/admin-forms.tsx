@@ -6,7 +6,7 @@ import { account } from "@/content/account";
 import { sections } from "@/content/sections";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
-import { monthOptions } from "@/lib/pricing";
+import { isPaidSection, monthOptions } from "@/lib/pricing";
 
 const { admin: t, auth, buy } = account;
 
@@ -52,7 +52,7 @@ export function GrantForm({ locale }: { locale: Locale }) {
           <legend className={label}>{buy.sections[locale]}</legend>
           <div className="mt-1 flex flex-wrap gap-x-5 gap-y-2">
             {sections
-              .filter((s) => s.slug !== "enterprise")
+              .filter((s) => isPaidSection(s.slug))
               .map((s) => (
                 <label key={s.slug} className="flex items-center gap-2 text-sm">
                   <input type="checkbox" name="sections" value={s.slug} defaultChecked className="accent-molecule-600" />
