@@ -60,7 +60,7 @@ export const copy = {
     browse: bi("Browse the sections", "مرور بخش‌ها"),
     supplierSearch: bi("Search the supplier bank", "جستجو در بانک تأمین‌کنندگان"),
     seePlans: bi("See subscription plans", "مشاهده طرح‌های اشتراک"),
-    referencesLabel: bi("Referenced standards", "مراجع مورد استناد"),
+    referencesLabel: bi("Referenced standards", "رفرنس‌های مورد استناد"),
     references: ["USP–NF", "BP", "Ph. Eur.", "JP", "ICH Q1–Q14", "ICH M4 (CTD)", "PIC/S GMP"],
     pillars: [
       {
