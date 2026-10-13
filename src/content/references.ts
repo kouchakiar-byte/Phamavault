@@ -175,7 +175,7 @@ export const referenceSections: RefSection[] = [
     chip: "DailyMed",
     text: bi(
       "The US National Library of Medicine's library of current package inserts (SPL): composition, inactive ingredients, storage and the full prescribing information, searchable by name, NDC or company.",
-      "کتابخانه کتابخانه ملی پزشکی آمریکا از بروشورهای جاری دارو (SPL): ترکیب، مواد جانبی، شرایط نگهداری و اطلاعات کامل تجویز، با جستجو بر اساس نام، کد NDC یا شرکت.",
+      "پایگاه کتابخانه ملی پزشکی آمریکا (NLM) برای بروشورهای جاری دارو (SPL): ترکیب، مواد جانبی، شرایط نگهداری و اطلاعات کامل تجویز، با جستجو بر اساس نام، کد NDC یا شرکت.",
     ),
     links: [{ label: "DailyMed", url: "https://dailymed.nlm.nih.gov/dailymed/", note: bi("Current labels (free)", "بروشورهای جاری (رایگان)") }],
   },
