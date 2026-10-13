@@ -2,9 +2,9 @@ import { bi, type Bi } from "@/i18n/bi";
 
 /** Labels for the view-only excipient data sheet. */
 export const excipientSheet = {
-  docTitle: bi("Excipient data sheet", "برگه اطلاعات ماده جانبی"),
-  open: bi("View the data sheet", "مشاهده برگه اطلاعات (PDF)"),
-  openNote: bi("PharmaVault sheet with identifiers, use levels and physicochemical data, with the source of each item", "برگه PharmaVault با شناسه‌ها، غلظت‌های مصرف و داده‌های فیزیکوشیمیایی، همراه با منبع هر مورد"),
+  docTitle: bi("Excipient monograph", "مونوگراف ماده جانبی"),
+  open: bi("View the monograph sheet", "مشاهده مونوگراف (PDF)"),
+  openNote: bi("A Handbook-style review of the material — applications, properties, stability, incompatibilities, safety and regulatory status — with its references", "بررسی کامل ماده به سبک هندبوک — کاربرد، ویژگی‌ها، پایداری، ناسازگاری‌ها، ایمنی و وضعیت رگولاتوری — همراه با منابع"),
   back: bi("Back to the excipient database", "بازگشت به پایگاه داده مواد جانبی"),
   synonyms: bi("Synonyms", "مترادف‌ها"),
   identification: bi("Identification", "شناسایی"),
@@ -38,6 +38,29 @@ export const excipientSheet = {
     "برای مراجعه. پیش از استفاده در فرمولاسیون، هر مقدار را با مونوگراف جاری فارماکوپه و برگه آنالیز تأمین‌کننده تطبیق دهید.",
   ),
   printBlocked: bi("This data sheet can be viewed on pharmavault.ir only.", "این برگه فقط در سایت pharmavault.ir قابل مشاهده است."),
+  sections: {
+    names: bi("Nonproprietary names", "نام‌های رسمی (فارماکوپه‌ای)"),
+    synonyms: bi("Synonyms and trade names", "مترادف‌ها و نام‌های تجاری"),
+    chemical: bi("Chemical name and CAS Registry Number", "نام شیمیایی و شماره CAS"),
+    formula: bi("Empirical formula and molecular weight", "فرمول تجربی و وزن مولکولی"),
+    category: bi("Functional category", "طبقه عملکردی"),
+    applications: bi("Applications in pharmaceutical formulation", "کاربرد در فرمولاسیون دارویی"),
+    description: bi("Description", "توصیف"),
+    properties: bi("Typical properties", "ویژگی‌های معمول"),
+    stability: bi("Stability and storage conditions", "پایداری و شرایط نگهداری"),
+    incompatibilities: bi("Incompatibilities", "ناسازگاری‌ها"),
+    manufacture: bi("Method of manufacture", "روش تولید"),
+    safety: bi("Safety", "ایمنی"),
+    handling: bi("Handling precautions", "احتیاط‌های کار با ماده"),
+    regulatory: bi("Regulatory status", "وضعیت رگولاتوری"),
+    related: bi("Related substances", "مواد مرتبط"),
+    comments: bi("Comments", "توضیحات"),
+    identifiers: bi("Other identifiers", "سایر شناسه‌ها"),
+  },
+  pending: bi(
+    "The full monograph for this material is being prepared; the sections below come from the PharmaVault database.",
+    "مونوگراف کامل این ماده در حال تهیه است؛ بخش‌های زیر از پایگاه داده PharmaVault آمده است.",
+  ),
   headings: {
     "Physical Description": bi("Physical description", "توصیف فیزیکی"),
     "Color/Form": bi("Colour and form", "رنگ و شکل"),
