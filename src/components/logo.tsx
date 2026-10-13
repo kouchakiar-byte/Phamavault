@@ -1,14 +1,15 @@
 import { VaultWord } from "./brand";
 
-type LogoMarkProps = { className?: string };
+type LogoMarkProps = { className?: string; tight?: boolean };
 
 /**
  * The PharmaVault mark: a benzene-ring hexagon whose aromatic circle doubles
  * as a vault dial with a keyhole — chemistry and protected knowledge.
  */
-export function LogoMark({ className }: LogoMarkProps) {
+export function LogoMark({ className, tight = false }: LogoMarkProps) {
+  // `tight` crops the box to the hexagon itself, so its height matches the text beside it.
   return (
-    <svg viewBox="0 0 40 40" aria-hidden="true" className={className}>
+    <svg viewBox={tight ? "3.8 1.5 32.4 37" : "0 0 40 40"} aria-hidden="true" className={className}>
       <path
         d="M20 2.5 35.2 11.25v17.5L20 37.5 4.8 28.75v-17.5Z"
         fill="var(--color-vault-900)"

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronDown, UserRound } from "lucide-react";
+import { BookOpen, ChevronDown, UserRound } from "lucide-react";
 import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import { getSection, sectionGroups, sections, supplierBankShort } from "@/content/sections";
@@ -90,6 +90,14 @@ export async function SiteHeader() {
           >
             <UserRound className="size-4" aria-hidden="true" />
             {account.nav.account[locale]}
+          </Link>
+          {/* Phones and tablets: references always one tap away */}
+          <Link
+            href={href(locale, "references")}
+            className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-molecule-50 px-3 py-2 text-sm font-semibold text-molecule-700 ring-1 ring-molecule-400/40 transition hover:bg-molecule-100 lg:hidden"
+          >
+            <BookOpen className="size-4" aria-hidden="true" />
+            {referenceLabels.short[locale]}
           </Link>
           <MobileNav
             menuLabel={nav.menu[locale]}

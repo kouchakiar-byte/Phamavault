@@ -159,29 +159,31 @@ export default async function HomePage() {
               <span className="text-molecule-400/60" aria-hidden="true">·</span>
               <span dir={locale === "fa" ? "ltr" : "rtl"}>{copy.platform[locale === "fa" ? "en" : "fa"]}</span>
             </p>
-            {/* Brand plate: the header logo's colours (navy Pharma, gold Vault) on light, so they read on the dark hero */}
-            <h1 className="mt-6 inline-block max-w-full rounded-3xl bg-white px-6 py-5 shadow-2xl shadow-black/30 ring-1 ring-capsule-400/50 sm:px-8 sm:py-6">
-              <span
-                className="block text-[2.6rem] font-bold leading-none tracking-tight text-vault-900 sm:text-6xl"
-                dir="ltr"
-                style={{ fontFamily: "var(--font-plex-sans)", textAlign: "start" }}
-              >
-                Pharma
-                <VaultWord onLight />
-              </span>
-              {(locale === "fa" ? (["fa", "en"] as const) : (["en", "fa"] as const)).map((lang, i) => (
+            {/* Brand: the vault mark beside the name, as tall as the name and slogan together */}
+            <h1 className="mt-6 flex max-w-full items-center gap-3 sm:gap-5" dir="ltr">
+              <LogoMark tight className="h-[6.25rem] w-auto shrink-0 sm:h-[8.9rem]" />
+              <span className="flex min-w-0 flex-col justify-center">
                 <span
-                  key={lang}
-                  lang={lang}
-                  dir={lang === "fa" ? "rtl" : "ltr"}
-                  className={`block font-bold ${i === 0 ? "mt-4 text-2xl sm:text-3xl" : "mt-1.5 text-base sm:text-lg"} ${
-                    lang === "fa" ? "text-molecule-600" : "text-vault-900"
-                  }`}
-                  style={lang === "en" ? { fontFamily: "var(--font-plex-sans)" } : undefined}
+                  className="block text-[2.2rem] font-bold leading-none tracking-tight text-white sm:text-6xl"
+                  style={{ fontFamily: "var(--font-plex-sans)" }}
                 >
-                  {lang === "fa" ? goldWord(copy.slogan.fa, "گنجینه", true) : goldWord(copy.slogan.en, "Vault", true)}
+                  Pharma
+                  <VaultWord />
                 </span>
-              ))}
+                {(locale === "fa" ? (["fa", "en"] as const) : (["en", "fa"] as const)).map((lang, i) => (
+                  <span
+                    key={lang}
+                    lang={lang}
+                    dir={lang === "fa" ? "rtl" : "ltr"}
+                    className={`block font-bold ${i === 0 ? "mt-2.5 text-xl sm:mt-3 sm:text-3xl" : "mt-1.5 whitespace-nowrap text-[0.7rem] tracking-tight sm:text-lg sm:tracking-normal"} ${
+                      lang === "fa" ? "text-molecule-400" : "text-white"
+                    }`}
+                    style={{ textAlign: lang === "fa" && locale === "en" ? "left" : "start", ...(lang === "en" ? { fontFamily: "var(--font-plex-sans)" } : {}) }}
+                  >
+                    {lang === "fa" ? goldWord(copy.slogan.fa, "گنجینه") : goldWord(copy.slogan.en, "Vault")}
+                  </span>
+                ))}
+              </span>
             </h1>
             <p className="mt-6 max-w-xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
             <p className="mt-3 max-w-xl text-base font-medium leading-relaxed text-molecule-400">{hero.audience[locale]}</p>
@@ -192,7 +194,7 @@ export default async function HomePage() {
               </ButtonLink>
             </div>
             <div className="mt-10">
-              <Link href={href(locale, "references")} className="text-xs font-medium text-vault-100/50 underline-offset-4 hover:text-molecule-400 hover:underline">
+              <Link href={href(locale, "references")} className="inline-flex items-center gap-2 rounded-full border border-molecule-400/60 bg-molecule-500/10 px-4 py-2 text-sm font-semibold text-molecule-400 transition hover:bg-molecule-500/20">
                 {hero.referencesLabel[locale]} {locale === "fa" ? "←" : "→"}
               </Link>
               <ul className="mt-3 flex flex-wrap gap-2" dir="ltr" style={{ justifyContent: locale === "fa" ? "flex-end" : "flex-start" }}>
@@ -248,6 +250,36 @@ export default async function HomePage() {
             ))}
           </Container>
         </div>
+      </section>
+
+      {/* References and pharmacopoeias: a page of its own, not a section */}
+      <section className="border-b border-line bg-white py-20 lg:py-24">
+        <Container>
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold tracking-wide text-molecule-700">{referencesHome.eyebrow[locale]}</p>
+              <BiTitle as="h2" text={referencesPage.title} locale={locale} className="mt-3 text-3xl font-bold tracking-tight text-vault-900 sm:text-4xl" />
+              <p className="mt-4 text-lg leading-relaxed text-muted">{referencesPage.lead[locale]}</p>
+            </div>
+            <ButtonLink href={href(locale, "references")}>{referenceLabels.seeAll[locale]}</ButtonLink>
+          </div>
+          <ul className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            {referenceSections.map((s, i) => (
+              <li key={s.key}>
+                <Link
+                  href={`${href(locale, "references")}#${s.key}`}
+                  className="flex h-full flex-col gap-1 rounded-card border border-line bg-paper p-4 transition hover:border-molecule-500 hover:bg-molecule-50"
+                >
+                  <span className="font-mono text-xs text-muted">{num(i + 1)}</span>
+                  <span className="font-mono text-sm font-semibold text-vault-900" dir="ltr" style={{ textAlign: "start" }}>
+                    {s.chip}
+                  </span>
+                  {s.title[locale] !== s.chip && <span className="text-xs leading-relaxed text-muted">{s.title[locale]}</span>}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Container>
       </section>
 
       {/* Statement */}
@@ -391,36 +423,6 @@ export default async function HomePage() {
               </div>
             ))}
           </div>
-        </Container>
-      </section>
-
-      {/* References and pharmacopoeias: a page of its own, not a section */}
-      <section className="border-b border-line bg-white py-20 lg:py-24">
-        <Container>
-          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <div className="max-w-3xl">
-              <p className="text-sm font-semibold tracking-wide text-molecule-700">{referencesHome.eyebrow[locale]}</p>
-              <BiTitle as="h2" text={referencesPage.title} locale={locale} className="mt-3 text-3xl font-bold tracking-tight text-vault-900 sm:text-4xl" />
-              <p className="mt-4 text-lg leading-relaxed text-muted">{referencesPage.lead[locale]}</p>
-            </div>
-            <ButtonLink href={href(locale, "references")}>{referenceLabels.seeAll[locale]}</ButtonLink>
-          </div>
-          <ul className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-            {referenceSections.map((s, i) => (
-              <li key={s.key}>
-                <Link
-                  href={`${href(locale, "references")}#${s.key}`}
-                  className="flex h-full flex-col gap-1 rounded-card border border-line bg-paper p-4 transition hover:border-molecule-500 hover:bg-molecule-50"
-                >
-                  <span className="font-mono text-xs text-muted">{num(i + 1)}</span>
-                  <span className="font-mono text-sm font-semibold text-vault-900" dir="ltr" style={{ textAlign: "start" }}>
-                    {s.chip}
-                  </span>
-                  {s.title[locale] !== s.chip && <span className="text-xs leading-relaxed text-muted">{s.title[locale]}</span>}
-                </Link>
-              </li>
-            ))}
-          </ul>
         </Container>
       </section>
 
