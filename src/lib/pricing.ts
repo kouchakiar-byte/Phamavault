@@ -1,9 +1,14 @@
 import { copy } from "@/content/site";
 import { sections, type SectionSlug } from "@/content/sections";
 
-/** The nine sections a subscription can unlock (everything but the enterprise page). */
-export type PaidSection = Exclude<SectionSlug, "enterprise">;
-export const paidSections = sections.map((s) => s.slug).filter((s): s is PaidSection => s !== "enterprise");
+/**
+ * The nine sections a subscription can unlock: everything but the enterprise
+ * page and the pharmacy section, which is open while its own plan is planned.
+ */
+export type PaidSection = Exclude<SectionSlug, "enterprise" | "pharmacy">;
+export const paidSections = sections
+  .map((s) => s.slug)
+  .filter((s): s is PaidSection => s !== "enterprise" && s !== "pharmacy");
 
 export const isPaidSection = (value: string): value is PaidSection =>
   (paidSections as readonly string[]).includes(value);

@@ -7,7 +7,7 @@ import { sections } from "@/content/sections";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
 import { formatNumber } from "@/lib/format";
-import { listPrice, monthlyPrice, monthOptions, paidSections, type PaidSection, type PlanId } from "@/lib/pricing";
+import { isPaidSection, listPrice, monthlyPrice, monthOptions, paidSections, type PaidSection, type PlanId } from "@/lib/pricing";
 import { withBrand } from "../brand";
 import { VaultLock } from "./vault-lock";
 
@@ -258,7 +258,7 @@ export function BuyForm({
                   </label>
                   <div className="mt-3 grid gap-2 sm:grid-cols-2">
                     {sections
-                      .filter((s) => s.slug !== "enterprise")
+                      .filter((s) => isPaidSection(s.slug))
                       .map((s) => {
                         const slug = s.slug as PaidSection;
                         return (
