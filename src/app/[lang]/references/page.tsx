@@ -49,8 +49,8 @@ export default async function ReferencesPage() {
                   >
                     <ExternalLink className="mt-0.5 size-4 shrink-0 text-molecule-500" aria-hidden="true" />
                     <span className="min-w-0">
-                      <span className="block font-semibold text-vault-900" dir="ltr">
-                        {l.label}
+                      <span className="block font-semibold text-vault-900">
+                        <bdi>{l.label}</bdi>
                       </span>
                       <span className="block text-xs leading-relaxed text-muted">{l.note[locale]}</span>
                     </span>

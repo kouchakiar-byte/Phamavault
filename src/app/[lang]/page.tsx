@@ -21,6 +21,7 @@ import { PriceEstimator } from "@/components/price-estimator";
 import { SupplierSpotlight } from "@/components/supplier-spotlight";
 import { BiTitle, ButtonLink, Container, MoleculePattern, SectionHead } from "@/components/ui";
 import { calculation, calculations, featuredCalculations } from "@/content/calculations";
+import { referenceLabels, referenceSections, referencesHome, referencesPage } from "@/content/references";
 import { sections } from "@/content/sections";
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
@@ -390,6 +391,36 @@ export default async function HomePage() {
               </div>
             ))}
           </div>
+        </Container>
+      </section>
+
+      {/* References and pharmacopoeias: a page of its own, not a section */}
+      <section className="border-b border-line bg-white py-20 lg:py-24">
+        <Container>
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold tracking-wide text-molecule-700">{referencesHome.eyebrow[locale]}</p>
+              <BiTitle as="h2" text={referencesPage.title} locale={locale} className="mt-3 text-3xl font-bold tracking-tight text-vault-900 sm:text-4xl" />
+              <p className="mt-4 text-lg leading-relaxed text-muted">{referencesPage.lead[locale]}</p>
+            </div>
+            <ButtonLink href={href(locale, "references")}>{referenceLabels.seeAll[locale]}</ButtonLink>
+          </div>
+          <ul className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            {referenceSections.map((s, i) => (
+              <li key={s.key}>
+                <Link
+                  href={`${href(locale, "references")}#${s.key}`}
+                  className="flex h-full flex-col gap-1 rounded-card border border-line bg-paper p-4 transition hover:border-molecule-500 hover:bg-molecule-50"
+                >
+                  <span className="font-mono text-xs text-muted">{num(i + 1)}</span>
+                  <span className="font-mono text-sm font-semibold text-vault-900" dir="ltr" style={{ textAlign: "start" }}>
+                    {s.chip}
+                  </span>
+                  {s.title[locale] !== s.chip && <span className="text-xs leading-relaxed text-muted">{s.title[locale]}</span>}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </Container>
       </section>
 

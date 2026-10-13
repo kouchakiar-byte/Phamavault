@@ -3,6 +3,7 @@ import { ChevronDown, UserRound } from "lucide-react";
 import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import { getSection, sectionGroups, sections, supplierBankShort } from "@/content/sections";
+import { referenceLabels } from "@/content/references";
 import { getLocale } from "@/i18n/locale";
 import { href } from "@/lib/paths";
 import { LanguageSwitcher } from "./language-switcher";
@@ -16,6 +17,7 @@ export async function SiteHeader() {
   const SupplierIcon = getSection("suppliers").icon;
   const links = [
     { href: href(locale, "tools"), label: nav.tools[locale], wide: false },
+    { href: href(locale, "references"), label: referenceLabels.short[locale], wide: false },
     { href: href(locale, "#plans"), label: nav.plans[locale], wide: true },
     { href: href(locale, "#enterprise"), label: nav.enterprise[locale], wide: true },
   ];
@@ -94,6 +96,7 @@ export async function SiteHeader() {
             closeLabel={nav.close[locale]}
             items={[
               { href: href(locale), label: nav.home[locale] },
+              { href: href(locale, "references"), label: referenceLabels.nav[locale] },
               ...sections.map((s) => ({ href: href(locale, s.href), label: s.title[locale] })),
               { href: href(locale, "#plans"), label: nav.plans[locale] },
               { href: href(locale, "account"), label: account.nav.account[locale] },
