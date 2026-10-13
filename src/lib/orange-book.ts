@@ -46,10 +46,14 @@ export function searchOrangeBook(query: string, withDiscontinued: boolean): ObRe
   const q = norm(query);
   const base = { updated: orangeBook.updated, iranUpdated: iran.updated, groups: [], total: 0 };
   if (q.length < 3) return base;
+  // An ingredient matches by its own name or by any of its trade names, so a
+  // brand search (e.g. Lipitor) lists the brand together with its generics.
+  const matched = new Set<string>();
+  for (const r of rows) if (norm(r[0]).includes(q) || norm(r[1]).includes(q)) matched.add(r[0]);
   const byIngredient = new Map<string, ObProduct[]>();
   for (const r of rows) {
     if (!withDiscontinued && r[10] === "D") continue;
-    if (!norm(r[0]).includes(q) && !norm(r[1]).includes(q)) continue;
+    if (!matched.has(r[0])) continue;
     const list = byIngredient.get(r[0]) ?? [];
     list.push({
       trade: r[1],
