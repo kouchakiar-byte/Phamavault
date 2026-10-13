@@ -51,7 +51,7 @@ export const copy = {
   hero: {
     headline: bi(
       "Integrated knowledge, sharper decisions, smarter drug development",
-      "دانش یکپارچه، تصمیم‌گیری دقیق‌تر، توسعه هوشمندانه‌تر دارو",
+      "دانش یکپارچه، تصمیم‌گیری دقیق‌تر، توسعه هوشمندانه‌تر\u00a0دارو",
     ),
     audience: bi(
       "For professionals in research and development (R&D), procurement and supply chain, quality control (QC), quality assurance (QA) and regulatory affairs (RA); faculty and students of pharmacy and pharmaceutical sciences; everyone working in the pharmaceutical sector; and pharmacies.",
@@ -103,7 +103,7 @@ export const copy = {
     title: bi("Built for industry, students and pharmacies", "طراحی‌شده برای صنعت دارو، دانشجویان و داروخانه‌ها"),
     lead: bi(
       "Every department of a pharmaceutical company — and students and pharmacists — gets the references and tools they use every day, in one subscription.",
-      "هر واحد شرکت داروسازی، و همچنین دانشجویان و داروسازان داروخانه، مراجع و ابزارهایی را که هر روز به آن‌ها نیاز دارند در یک اشتراک در اختیار دارند.",
+      "هر واحد شرکت داروسازی، و همچنین دانشجویان و داروسازان داروخانه، مراجع و ابزارهایی را که هر روز به\u00a0آن‌ها\u00a0نیاز\u00a0دارند در یک اشتراک در\u00a0اختیار\u00a0دارند.",
     ),
     items: [
       {

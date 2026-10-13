@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronDown, UserRound } from "lucide-react";
+import { ChevronDown, House, UserRound } from "lucide-react";
 import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import { getSection, sectionGroups, sections, supplierBankShort } from "@/content/sections";
@@ -25,9 +25,19 @@ export async function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/80 bg-white/90 backdrop-blur">
       <Container className="relative flex h-18 items-center justify-between gap-6">
-        <Link href={href(locale)} aria-label="PharmaVault">
-          <Logo />
-        </Link>
+        <div className="flex items-center gap-2">
+          <Link href={href(locale)} aria-label="PharmaVault">
+            <Logo />
+          </Link>
+          <Link
+            href={href(locale)}
+            aria-label={nav.home[locale]}
+            title={nav.home[locale]}
+            className="grid size-9 place-items-center rounded-full text-vault-800 ring-1 ring-line transition hover:bg-molecule-50 hover:text-molecule-700 hover:ring-molecule-400/50"
+          >
+            <House className="size-[1.1rem]" aria-hidden="true" />
+          </Link>
+        </div>
 
         <nav aria-label={nav.menu[locale]} className="hidden items-center gap-1 lg:flex">
           <Link

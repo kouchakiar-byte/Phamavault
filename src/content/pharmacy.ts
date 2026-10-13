@@ -11,9 +11,9 @@ const ltr = (s: string) => `⁦${s}⁩`;
 export type Ref = { label: string; url?: string };
 
 export const pharmacyPage = {
-  title: bi("Community pharmacy", "داروخانه (Community Pharmacy)"),
+  title: bi("Pharmacy", "داروخانه (Pharmacy)"),
   lead: bi(
-    "Practical, referenced tools for the community pharmacist: generic and brand products from the FDA Orange Book with the Iranian manufacturers, and non-sterile compounding with USP <795> beyond-use dating.",
+    "Practical, referenced tools for the pharmacist: generic and brand products from the FDA Orange Book with the Iranian manufacturers, and non-sterile compounding with USP <795> beyond-use dating.",
     `ابزارهای کاربردی و مستند برای داروساز داروخانه: داروهای ژنریک و برند بر اساس Orange Book همراه با تولیدکنندگان داخلی، و ساخت فرآورده‌های غیراستریل در داروخانه با تعیین تاریخ مصرف پس از ساخت (BUD) طبق ${ltr("USP <795>")}.`,
   ),
   disclaimer: bi(

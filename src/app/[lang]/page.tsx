@@ -181,7 +181,7 @@ export default async function HomePage() {
                 ))}
               </span>
             </h1>
-            <p className="mt-6 max-w-xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
+            <p className="mt-6 max-w-2xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
             <p className="mt-3 max-w-xl text-base font-medium leading-relaxed text-molecule-400">{hero.audience[locale]}</p>
             <div className="mt-10 flex flex-wrap gap-4">
               <ButtonLink href={href(locale, "suppliers")}>{hero.supplierSearch[locale]}</ButtonLink>
@@ -205,7 +205,7 @@ export default async function HomePage() {
 
           {/* The "vault" panel: every section one click away */}
           <div className="fade-in [animation-delay:.1s]">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-molecule-400">
+            <p className="mx-auto mb-4 flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-molecule-400">
               {copy.platform[locale]}
               <span className="text-molecule-400/60" aria-hidden="true">·</span>
               <span dir={locale === "fa" ? "ltr" : "rtl"}>{copy.platform[locale === "fa" ? "en" : "fa"]}</span>
@@ -272,13 +272,12 @@ export default async function HomePage() {
             <ButtonLink href={href(locale, "references")}>{referenceLabels.seeAll[locale]}</ButtonLink>
           </div>
           <ul className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-            {referenceSections.map((s, i) => (
+            {referenceSections.map((s) => (
               <li key={s.key}>
                 <Link
                   href={`${href(locale, "references")}#${s.key}`}
                   className="flex h-full flex-col gap-1 rounded-card border border-line bg-paper p-4 transition hover:border-molecule-500 hover:bg-molecule-50"
                 >
-                  <span className="font-mono text-xs text-muted">{num(i + 1)}</span>
                   <span className="font-mono text-sm font-semibold text-vault-900" dir="ltr" style={{ textAlign: "start" }}>
                     {s.chip}
                   </span>

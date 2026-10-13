@@ -196,7 +196,7 @@ export const referenceSections: RefSection[] = [
   },
   {
     key: "search",
-    title: bi("Trusted databases for pharmaceutical searches", "پایگاه‌های معتبر جستجو در صنعت داروسازی"),
+    title: bi("Trusted databases for pharmaceutical searches", "پایگاه‌های معتبر جستجو در صنعت\u00a0داروسازی"),
     abbr: "emc · Drugs.com · RxList · PubChem · DrugBank",
     chip: "emc · Drugs.com · RxList",
     text: bi(
