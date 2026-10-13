@@ -1,0 +1,34 @@
+# Builds src/data/excipient-sheets.json (PubChem identifiers and HSDB
+# physicochemical data for each excipient) and commits it to the branch
+# that ran the job. Runs on demand, and when the build script changes on a
+# working branch.
+name: Excipient data sheets
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["claude/**"]
+    paths: ["scripts/excipient-sheets/**", ".github/workflows/excipient-sheets.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch PubChem and HSDB data
+        run: node scripts/excipient-sheets/fetch.mjs src/data/excipients.json src/data/excipient-sheets.json
+      - name: Commit when the data changed
+        run: |
+          git config user.name "pharmavault-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/data/excipient-sheets.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "Excipient data sheets update ($(date -u +%Y-%m-%d))"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
