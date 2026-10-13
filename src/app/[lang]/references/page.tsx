@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { BookMarked, ExternalLink } from "lucide-react";
 import { LegalPage } from "@/components/legal-page";
 import { referenceLabels, referenceSections, referencesPage, referencesPaid, referencesReviewedOn } from "@/content/references";
 import { getLocale } from "@/i18n/locale";
@@ -8,17 +8,18 @@ export const generateMetadata = () => pageMetadata(referencesPage.title, referen
 
 export default async function ReferencesPage() {
   const locale = await getLocale();
-  const n = (i: number) => (i + 1).toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
   return (
     <LegalPage page={referencesPage} locale={locale}>
       <p className="rounded-xl border border-line bg-vault-50 px-4 py-3 text-sm text-muted">
         {referencesReviewedOn[locale]} {referencesPaid[locale]}
       </p>
       <ol className="space-y-6">
-        {referenceSections.map((s, i) => (
+        {referenceSections.map((s) => (
           <li key={s.key} id={s.key} className="scroll-mt-24 rounded-card border border-line bg-white p-5 sm:p-6">
             <div className="flex items-start gap-3">
-              <span className="grid size-9 shrink-0 place-items-center rounded-full bg-vault-900 text-sm font-bold text-capsule-400">{n(i)}</span>
+              <span className="grid size-9 shrink-0 place-items-center rounded-full bg-vault-900 text-capsule-400">
+                <BookMarked className="size-4" aria-hidden="true" />
+              </span>
               <div className="min-w-0">
                 <h2 className="text-lg font-bold leading-snug text-vault-900">{s.title[locale]}</h2>
                 <p className="mt-0.5 font-mono text-sm text-molecule-700" dir="ltr">

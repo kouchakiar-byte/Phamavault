@@ -129,6 +129,11 @@ export const pages = {
         "The current, online edition of the Handbook of Pharmaceutical Excipients — search “{name}” (subscription)",
         "نسخه آنلاین و جاری Handbook of Pharmaceutical Excipients — «\u2066{name}\u2069» را جستجو کنید (با اشتراک)",
       ),
+      print: bi(
+        "Latest printed edition (Pharmaceutical Press, 2020; hardback and eBook) — look up “{name}” in the monograph index",
+        "آخرین ویرایش چاپی (Pharmaceutical Press، 2020؛ نسخه چاپی و الکترونیک) — «\u2066{name}\u2069» را در فهرست مونوگراف‌ها ببینید",
+      ),
+      library: bi("Find a library near you that holds the printed 9th edition (free)", "کتابخانه‌هایی که نسخه چاپی ویرایش نهم را دارند (رایگان)"),
       pubchem: bi("Structure, identifiers, properties and safety (free)", "ساختار، شناسه‌ها، ویژگی‌ها و ایمنی (رایگان)"),
       iid: bi("Maximum amounts in FDA-approved products, by route and dosage form — search “{name}” (free)", "حداکثر مقدار در فرآورده‌های تأییدشده FDA بر اساس راه مصرف و شکل دارویی — «\u2066{name}\u2069» را جستجو کنید (رایگان)"),
     },

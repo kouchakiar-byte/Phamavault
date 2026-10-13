@@ -23,6 +23,16 @@ function sources(r: Item) {
       note: t.monograph,
     },
     {
+      label: "Handbook of Pharmaceutical Excipients, 9th ed. (2020)",
+      url: "https://pharmaceuticalpress.com/?p=2003",
+      note: t.print,
+    },
+    {
+      label: "WorldCat · ISBN 978-0-85711-375-7",
+      url: "https://search.worldcat.org/search?q=bn%3A9780857113757",
+      note: t.library,
+    },
+    {
       label: "PubChem",
       url: `https://pubchem.ncbi.nlm.nih.gov/#query=${encodeURIComponent(/^\d{2,7}-\d{2}-\d$/.test(r.cas) ? r.cas : r.name)}`,
       note: t.pubchem,
