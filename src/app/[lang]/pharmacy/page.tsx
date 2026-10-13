@@ -2,8 +2,9 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { BudCalculator } from "@/components/pharmacy/bud-calculator";
+import { OrangeBookSearch } from "@/components/pharmacy/orange-book-search";
 import { Container } from "@/components/ui";
-import { compounding, doseTables, pharmacyPage, substitution, type Ref } from "@/content/pharmacy";
+import { compounding, orangeBook, pharmacyPage, type Ref } from "@/content/pharmacy";
 import type { Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
@@ -63,8 +64,6 @@ function LinkCards({ links, locale }: { links: { label: string; url: string; not
   );
 }
 
-const cell = (c: string | Bi, locale: Locale) => (typeof c === "string" ? c : c[locale]);
-
 export default async function PharmacyPage() {
   const locale = await getLocale();
   return (
@@ -76,7 +75,7 @@ export default async function PharmacyPage() {
             {pharmacyPage.disclaimer[locale]} {pharmacyPage.reviewed[locale]}
           </p>
           <nav aria-label={pharmacyPage.toc[locale]} className="flex flex-wrap gap-2 text-sm">
-            {[substitution, compounding].map((s) => (
+            {[orangeBook, compounding].map((s) => (
               <a key={s.key} href={`#${s.key}`} className="rounded-full border border-line bg-white px-4 py-1.5 font-medium text-vault-900 hover:border-molecule-500">
                 {s.title[locale]}
               </a>
@@ -84,54 +83,16 @@ export default async function PharmacyPage() {
           </nav>
         </div>
 
-        {/* 1. Therapeutic substitution */}
-        <section id={substitution.key} className="scroll-mt-24 space-y-6">
+        {/* 1. Generic and brand products */}
+        <section id={orangeBook.key} className="scroll-mt-24 space-y-6">
           <div>
-            <h2 className="text-2xl font-bold text-vault-900">{substitution.title[locale]}</h2>
-            <p className="mt-2 text-muted">{substitution.lead[locale]}</p>
+            <h2 className="text-2xl font-bold text-vault-900">{orangeBook.title[locale]}</h2>
+            <p className="mt-2 text-muted">{orangeBook.lead[locale]}</p>
           </div>
-          <ol className="space-y-2.5">
-            {substitution.steps.map((s, i) => (
-              <li key={s.en} className="flex gap-3 leading-relaxed text-ink">
-                <span className="grid size-7 shrink-0 place-items-center rounded-full bg-vault-900 text-xs font-bold text-capsule-400">
-                  {(i + 1).toLocaleString(locale === "fa" ? "fa-IR" : "en-US")}
-                </span>
-                <span>{s[locale]}</span>
-              </li>
-            ))}
-          </ol>
-          <LinkCards links={substitution.links} locale={locale} />
-
-          {doseTables.map((tbl) => (
-            <div key={tbl.key} id={tbl.key} className="scroll-mt-24 rounded-card border border-line bg-white p-5">
-              <h3 className="text-lg font-bold text-vault-900">{tbl.title[locale]}</h3>
-              <p className="mt-1 text-sm text-muted">{tbl.intro[locale]}</p>
-              <div className="mt-4 overflow-x-auto rounded-xl border border-line">
-                <table className="db">
-                  <thead>
-                    <tr>
-                      {tbl.columns.map((c) => (
-                        <th key={c.en}>{c[locale]}</th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {tbl.rows.map((row) => (
-                      <tr key={String(row[0])}>
-                        {row.map((c, i) => (
-                          <td key={i} className={i === 0 ? "font-medium text-vault-900" : typeof c === "string" ? "num" : ""}>
-                            {i === 0 ? <bdi>{cell(c, locale)}</bdi> : cell(c, locale)}
-                          </td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <p className="mt-3 text-sm leading-relaxed text-ink">{tbl.note[locale]}</p>
-              <Refs refs={tbl.refs} locale={locale} />
-            </div>
-          ))}
+          <OrangeBookSearch locale={locale} />
+          <p className="text-sm leading-relaxed text-ink">{orangeBook.note[locale]}</p>
+          <Refs refs={orangeBook.refs} locale={locale} />
+          <LinkCards links={orangeBook.links} locale={locale} />
         </section>
 
         {/* 2. Compounding */}
