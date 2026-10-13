@@ -123,7 +123,7 @@ export function Panel({ ctx, title, form, results, message, note, children }: {
             .map((r) => (
               <div key={r.label.en} className="flex flex-wrap items-baseline justify-between gap-3 border-b border-line pb-2.5 text-sm text-muted">
                 <span>{r.label[ctx.locale]}</span>
-                <b className="font-mono text-base font-medium text-ink tabular-nums" dir="ltr">
+                <b className="font-mono text-[1.05rem] font-bold text-vault-900 tabular-nums" dir="ltr">
                   {r.value}
                 </b>
               </div>

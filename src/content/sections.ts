@@ -29,7 +29,7 @@ export const sections = [
     ),
     description: bi(
       "Iranian manufacturers and importers of APIs, excipients, vitamins, mineral salts, supplement and cosmetic raw materials, with contact details, searchable by material.",
-      "تولیدکنندگان و واردکنندگان ایرانی مواد مؤثره، مواد جانبی، ویتامین‌ها، املاح معدنی و مواد اولیه مکمل و آرایشی‌بهداشتی، همراه با اطلاعات تماس و قابل جستجو بر اساس ماده.",
+      "تولیدکنندگان و واردکنندگان ایرانی مواد مؤثره، مواد جانبی، ویتامین‌ها، مینرال‌ها و مواد اولیه مکمل و آرایشی‌بهداشتی، همراه با اطلاعات تماس و قابل جستجو بر اساس ماده.",
     ),
   },
   {
@@ -65,7 +65,7 @@ export const sections = [
     title: bi("API & Raw Material Database", "پایگاه داده مواد مؤثره و مواد اولیه"),
     description: bi(
       "Active pharmaceutical ingredients, vitamins and mineral salts with CAS number, molecular weight and a key physicochemical or stability note.",
-      "مواد مؤثره دارویی، ویتامین‌ها و املاح معدنی با شماره CAS، وزن مولکولی و نکته کلیدی فیزیکوشیمیایی یا پایداری.",
+      "مواد مؤثره دارویی، ویتامین‌ها و مینرال‌ها با شماره CAS، وزن مولکولی و نکته کلیدی فیزیکوشیمیایی یا پایداری.",
     ),
   },
   {
@@ -77,7 +77,7 @@ export const sections = [
     title: bi("Pharmaceutical Calculations", "محاسبات داروسازی"),
     description: bi(
       "Formulation, physical pharmacy and analytical calculations: potency, HLB, powder flow, capsule fill, coating, isotonicity, osmolarity, buffers, stability kinetics, HPLC and UV assay, system suitability, linearity, dissolution and f2, content uniformity, Karl Fischer and titration.",
-      "محاسبات فرمولاسیون، داروسازی فیزیکی و آنالیز: پوتنسی، HLB، جریان‌پذیری پودر، پرکردن کپسول، روکش‌دهی، ایزوتونیسیته، اسمولاریته، بافر، سینتیک پایداری، تعیین مقدار HPLC و UV، انطباق سیستم، خطی بودن، انحلال و f2، یکنواختی محتوا، کارل فیشر و تیتراسیون.",
+      "محاسبات فرمولاسیون، فیزیکال فارماسی و آنالیز: پوتنسی، HLB، جریان‌پذیری پودر، پرکردن کپسول، روکش‌دهی، ایزوتونیسیته، اسمولاریته، بافر، سینتیک پایداری، تعیین مقدار HPLC و UV، انطباق سیستم، خطی بودن، انحلال و f2، یکنواختی محتوا، کارل فیشر و تیتراسیون.",
     ),
   },
   {

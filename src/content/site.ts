@@ -195,7 +195,7 @@ export const copy = {
     badge: bi("Featured", "ویژه"),
     lead: bi(
       "Find who manufactures or imports a raw material in Iran — APIs, excipients, vitamins, mineral salts, supplement and cosmetic ingredients — with phone, email, website and the source of every record.",
-      "پیدا کنید چه شرکتی یک ماده اولیه را در ایران تولید یا وارد می‌کند — مواد مؤثره، مواد جانبی، ویتامین‌ها، املاح معدنی و مواد اولیه مکمل و آرایشی‌بهداشتی — همراه با تلفن، ایمیل، وب‌سایت و منبع هر رکورد.",
+      "پیدا کنید چه شرکتی یک ماده اولیه را در ایران تولید یا وارد می‌کند — مواد مؤثره، مواد جانبی، ویتامین‌ها، مینرال‌ها و مواد اولیه مکمل و آرایشی‌بهداشتی — همراه با تلفن، ایمیل، وب‌سایت و منبع هر رکورد.",
     ),
     search: bi("Search", "جستجو"),
     stats: {
@@ -218,14 +218,14 @@ export const copy = {
     units: {
       excipients: bi("excipients", "ماده جانبی"),
       suppliers: bi("suppliers · {p} materials", "تأمین‌کننده · {p} قلم ماده"),
-      materials: bi("APIs, vitamins and mineral salts", "ماده مؤثره، ویتامین و املاح معدنی"),
+      materials: bi("APIs, vitamins and mineral salts", "ماده مؤثره، ویتامین و مینرال"),
       qa: bi("standard operating procedures", "دستورالعمل استاندارد"),
     },
   },
 
   toolsShowcase: {
     eyebrow: bi("Pharmaceutical calculations", "محاسبات داروسازی"),
-    title: bi("{n} calculators for formulation, physical pharmacy and analysis", "{n} ماشین‌حساب برای فرمولاسیون، داروسازی فیزیکی و آنالیز"),
+    title: bi("{n} calculators for formulation calculations, physical pharmacy and analysis", "{n} ماشین‌حساب برای محاسبات فرمولاسیون، فیزیکال فارماسی و آنالیز"),
     lead: bi(
       "From potency, powder flow and capsule fill to buffer capacity, stability kinetics, HPLC assay, system suitability, dissolution f2 and content uniformity. Each calculator states its governing equation and its pharmacopoeial or ICH reference.",
       "از پوتنسی، جریان‌پذیری پودر و پرکردن کپسول تا ظرفیت بافری، سینتیک پایداری، تعیین مقدار HPLC، انطباق سیستم، فاکتور f2 انحلال و یکنواختی محتوا. هر ماشین‌حساب معادله مبنا و مرجع فارماکوپه‌ای یا ICH خود را نشان می‌دهد.",
@@ -285,7 +285,7 @@ export const copy = {
           bi("One user on one IP", "یک کاربر روی یک IP"),
           bi("All 9 specialised sections, or only the sections you need", "هر ۹ بخش تخصصی، یا فقط بخش‌هایی که لازم دارید"),
           bi("Supplier & manufacturer bank", "بانک تأمین‌کنندگان و تولیدکنندگان"),
-          bi("Formulation, physical pharmacy and analytical calculators", "ماشین‌حساب‌های فرمولاسیون، داروسازی فیزیکی و آنالیز"),
+          bi("Formulation, physical pharmacy and analytical calculators", "ماشین‌حساب‌های فرمولاسیون، فیزیکال فارماسی و آنالیز"),
           bi("SOP library and QA, QC and regulatory references", "کتابخانه SOP و مراجع QA، QC و رگولاتوری"),
         ],
         cta: bi("Subscribe", "خرید اشتراک"),
