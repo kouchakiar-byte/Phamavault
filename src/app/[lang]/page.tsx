@@ -7,6 +7,7 @@ import {
   Factory,
   FileCheck,
   FlaskConical,
+  BookOpen,
   BookOpenText,
   Pill,
   Mail,
@@ -154,13 +155,8 @@ export default async function HomePage() {
         <div className="absolute -top-40 end-[-10%] -z-10 size-[36rem] rounded-full bg-molecule-500/20 blur-3xl" />
         <Container className="grid items-center gap-14 py-20 lg:grid-cols-[1.15fr_1fr] lg:py-28">
           <div className="fade-in">
-            <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-molecule-400">
-              {copy.platform[locale]}
-              <span className="text-molecule-400/60" aria-hidden="true">·</span>
-              <span dir={locale === "fa" ? "ltr" : "rtl"}>{copy.platform[locale === "fa" ? "en" : "fa"]}</span>
-            </p>
             {/* Brand: the vault mark beside the name, as tall as the name and slogan together */}
-            <h1 className="mt-6 flex max-w-full items-center gap-3 sm:gap-5" dir="ltr">
+            <h1 className="flex max-w-full items-center gap-3 sm:gap-5" dir="ltr">
               <LogoMark tight className="h-[6.25rem] w-auto shrink-0 sm:h-[8.9rem]" />
               <span className="flex min-w-0 flex-col justify-center">
                 <span
@@ -209,6 +205,11 @@ export default async function HomePage() {
 
           {/* The "vault" panel: every section one click away */}
           <div className="fade-in [animation-delay:.1s]">
+            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-molecule-400">
+              {copy.platform[locale]}
+              <span className="text-molecule-400/60" aria-hidden="true">·</span>
+              <span dir={locale === "fa" ? "ltr" : "rtl"}>{copy.platform[locale === "fa" ? "en" : "fa"]}</span>
+            </p>
             <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-5 shadow-2xl shadow-black/30 backdrop-blur sm:p-7">
               <div className="flex items-center gap-3 border-b border-white/10 pb-4">
                 <LogoMark className="size-10" />
@@ -257,7 +258,14 @@ export default async function HomePage() {
         <Container>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
-              <p className="text-sm font-semibold tracking-wide text-molecule-700">{referencesHome.eyebrow[locale]}</p>
+              <Link
+                href={href(locale, "references")}
+                className="inline-flex items-center gap-1.5 rounded-full bg-molecule-50 px-3.5 py-1.5 text-sm font-semibold text-molecule-700 ring-1 ring-molecule-400/40 transition hover:bg-molecule-100"
+              >
+                <BookOpen className="size-4" aria-hidden="true" />
+                {referencesHome.chip[locale]}
+              </Link>
+              <p className="mt-3 text-sm font-semibold tracking-wide text-molecule-700">{referencesHome.eyebrow[locale]}</p>
               <BiTitle as="h2" text={referencesPage.title} locale={locale} className="mt-3 text-3xl font-bold tracking-tight text-vault-900 sm:text-4xl" />
               <p className="mt-4 text-lg leading-relaxed text-muted">{referencesPage.lead[locale]}</p>
             </div>
