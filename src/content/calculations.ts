@@ -5,7 +5,7 @@ export type CalculationGroup = "formulation" | "solutions" | "analysis" | "micro
 /** Groups of calculators, in the order shown on the tools page. */
 export const calculationGroups: { key: CalculationGroup; title: ReturnType<typeof bi> }[] = [
   { key: "formulation", title: bi("Formulation and manufacturing", "فرمولاسیون و تولید") },
-  { key: "solutions", title: bi("Solutions, physical pharmacy and stability", "محلول‌ها، داروسازی فیزیکی و پایداری") },
+  { key: "solutions", title: bi("Solutions, physical pharmacy and stability", "محلول‌ها، فیزیکال فارماسی و پایداری") },
   { key: "analysis", title: bi("Analysis and quality control", "آنالیز و کنترل کیفیت") },
   { key: "micro", title: bi("Microbiology, sterility and endotoxins", "میکروبیولوژی، استریلیتی و اندوتوکسین") },
   { key: "clinical", title: bi("Dosing and pharmacokinetics", "دوزبندی و فارماکوکینتیک") },
@@ -19,6 +19,16 @@ export const calculations = [
     label: bi("Potency calculation", "محاسبه پوتنسی (Potency)"),
     title: bi("Potency calculation: API quantity from assay, water, residual solvents and salt factor", "محاسبه پوتنسی: مقدار ماده مؤثره بر اساس اسی، رطوبت، حلال باقیمانده و ضریب نمک"),
     equation: "m = LC × SF × 100 / [Assay × (100 − W − RS) / 100]",
+  },
+  {
+    key: "asy",
+    group: "formulation",
+    label: bi("Assay correction factor", "محاسبه Assay در فرمولاسیون"),
+    title: bi(
+      "Assay correction in formulation: salt factor × assay factor × water/LOD factor",
+      "محاسبه Assay در فرمولاسیون: ضریب نمک × ضریب اسی × ضریب رطوبت (LOD/Water)",
+    ),
+    equation: "F = (MW salt ÷ MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]",
   },
   {
     key: "bat",
@@ -396,6 +406,7 @@ const withBp = (refs: Record<CalculationKey, string[]>): Record<CalculationKey, 
 
 export const calculationRefs: Record<CalculationKey, string[]> = withBp({
   pot: [`${USP}, General Notices`, `${EP}, General Notices`],
+  asy: [`${USP}, General Notices`, `${EP}, General Notices`],
   bat: [REMINGTON],
   hlb: [REMINGTON, "Pharmaceutical Excipients (MedicinesComplete; online edition of the Handbook of Pharmaceutical Excipients)"],
   flow: [`${USP} <1174>`, `${EP} 2.9.36`],

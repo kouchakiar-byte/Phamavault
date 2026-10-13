@@ -34,7 +34,7 @@
 
 @theme inline {
   --font-sans: var(--font-body);
-  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  --font-mono: var(--font-num-mono), ui-monospace, monospace;
 }
 
 /* Persian uses Vazirmatn; English uses IBM Plex Sans. Each falls back to the other. */
@@ -105,8 +105,16 @@ body {
 .db tbody tr:hover {
   background: var(--color-molecule-50);
 }
+/* Numbers: a fuller weight so values stand out from the surrounding text. */
+@layer base {
+  .font-mono {
+    font-weight: 500;
+  }
+}
 .db .num {
   font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--color-vault-900);
   direction: ltr;
   text-align: start;
   font-variant-numeric: tabular-nums;
@@ -128,6 +136,7 @@ body {
 }
 .field-input[type="number"] {
   font-family: var(--font-mono);
+  font-weight: 600;
   direction: ltr;
 }
 .field-input:read-only {

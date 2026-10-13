@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, IBM_Plex_Sans, Vazirmatn } from "next/font/google";
+import { IBM_Plex_Sans, JetBrains_Mono, Vazirmatn } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { copy, siteConfig } from "@/content/site";
@@ -18,10 +18,11 @@ const plexSans = IBM_Plex_Sans({
   weight: ["400", "500", "600", "700"],
 });
 
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-plex-mono",
+// Numbers use JetBrains Mono: tall, sturdy digits that stay legible at small sizes.
+const numMono = JetBrains_Mono({
+  variable: "--font-num-mono",
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["500", "600", "700"],
 });
 
 export function generateStaticParams() {
@@ -55,7 +56,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
     <html
       lang={locale}
       dir={localeDirection[locale]}
-      className={`locale-${locale} ${vazirmatn.variable} ${plexSans.variable} ${plexMono.variable} h-full antialiased`}
+      className={`locale-${locale} ${vazirmatn.variable} ${plexSans.variable} ${numMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
         <a

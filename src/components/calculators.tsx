@@ -489,6 +489,49 @@ const potencyBases = [
   { value: "asis", label: bi("As-is basis (no correction)", "بر پایه نمونه همان‌گونه که هست (بدون اصلاح)") },
 ];
 
+// ---------- Assay correction factor ----------
+
+function Asy({ ctx }: { ctx: Ctx }) {
+  const { v } = ctx;
+  const dried = v["a-basis"] === "dried";
+  const lc = num(v["a-lc"]), mws = num(v["a-mws"]), mwb = num(v["a-mwb"]), assay = num(v["a-assay"]), lod = num(v["a-lod"]), units = num(v["a-units"]);
+  const ok = lc >= 0 && mws > 0 && mwb > 0 && assay > 0 && units >= 0 && (!dried || (lod >= 0 && lod < 100));
+  const fSalt = mws / mwb, fAssay = 100 / assay, fLod = dried ? 100 / (100 - lod) : 1;
+  const f = fSalt * fAssay * fLod;
+  return (
+    <Panel
+      ctx={ctx}
+      title={calculation("asy").title}
+      form={
+        <>
+          <NumberInput ctx={ctx} id="a-lc" label={bi("Label claim per unit (mg, as base / active moiety)", "ادعای برچسب در هر واحد (میلی‌گرم، بر حسب باز یا بخش فعال)")} />
+          <PresetSelect ctx={ctx} id="a-salt" label={bi("Salt / hydrate form", "فرم نمکی یا هیدرات")} presets={saltForms} targets={["a-mws", "a-mwb"]} />
+          <NumberInput ctx={ctx} id="a-mws" label={bi("MW of the salt weighed (g/mol)", "وزن مولکولی نمک توزین‌شده (g/mol)")} readOnly={isLocked(ctx, "a-salt")} />
+          <NumberInput ctx={ctx} id="a-mwb" label={bi("MW of the base in the label claim (g/mol)", "وزن مولکولی باز در ادعای برچسب (g/mol)")} readOnly={isLocked(ctx, "a-salt")} />
+          <NumberInput ctx={ctx} id="a-assay" label={bi("Assay on the CoA (%)", "اسی در برگه آنالیز (%)")} />
+          <Choice ctx={ctx} id="a-basis" label={bi("Basis of the assay", "مبنای گزارش اسی")} options={potencyBases} />
+          {dried && <NumberInput ctx={ctx} id="a-lod" label={bi("LOD or water content (KF) on the CoA (%)", "LOD یا مقدار آب (کارل فیشر) در برگه آنالیز (%)")} />}
+          <NumberInput ctx={ctx} id="a-units" label={bi("Batch size (units)", "اندازه بچ (تعداد واحد)")} />
+        </>
+      }
+      results={[
+        { label: bi("Salt factor (MW salt ÷ MW base)", "ضریب نمک (وزن مولکولی نمک ÷ باز)"), value: ok ? fixed(fSalt, 4) : DASH },
+        { label: bi("Assay factor (100 ÷ assay)", "ضریب اسی \u2066(100 ÷ Assay)\u2069"), value: ok ? fixed(fAssay, 4) : DASH },
+        { label: bi("Water/LOD factor [100 ÷ (100 − LOD)]", "ضریب رطوبت \u2066[100 ÷ (100 − LOD)]\u2069"), value: ok ? fixed(fLod, 4) : DASH },
+        { label: bi("Total correction factor F", "فاکتور اصلاح کل F"), value: ok ? fixed(f, 4) : DASH },
+        { label: bi("Quantity to weigh per unit", "مقدار توزین در هر واحد"), value: ok ? `${fixed(lc * f, 3)} mg` : DASH },
+        { label: bi("Quantity per batch", "مقدار در هر بچ"), value: ok ? `${fixed((lc * f * units) / 1e6, 4)} kg` : DASH },
+        { label: bi("Reduce the diluent per unit by", "کاهش پرکننده در هر واحد"), value: ok ? `${fixed(lc * f - lc, 3)} mg` : DASH },
+      ]}
+      message={ok ? "" : bad(ctx)}
+      note={bi(
+        "Quantity = label claim × (MW salt ÷ MW base) × (100 ÷ assay) × [100 ÷ (100 − LOD)]. Use the water/LOD factor only when the certificate reports the assay on the dried or anhydrous basis; when the assay is “as is” the factor is 1. Take assay and LOD (or KF water) from the certificate of analysis of the lot in use, and lower the q.s. diluent by the excess so the unit weight stays constant. Example: amlodipine 10 mg as besilate (567.05 / 408.88), assay 99.5% dried basis, LOD 0.5% → F = 1.4008, 14.008 mg per tablet.",
+        "مقدار توزین ⁦= LC × (MW salt ÷ MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]⁩. ضریب رطوبت فقط وقتی به کار می‌رود که اسی در برگه آنالیز بر پایه ماده خشک یا بدون آب گزارش شده باشد؛ اگر اسی «همان‌گونه که هست» (as is) باشد این ضریب ۱ است. اسی و LOD (یا آب کارل فیشر) را از برگه آنالیز همان سری ماده بردارید و مقدار پرکننده q.s. را به اندازه اضافه وزن کم کنید تا وزن واحد ثابت بماند. مثال: آملودیپین ۱۰ میلی‌گرم به صورت بزیلات ⁦(567.05 / 408.88)⁩، اسی 99.5% بر پایه خشک، LOD 0.5% ← ⁦F = 1.4008⁩ و 14.008 میلی‌گرم در هر قرص.",
+      )}
+    />
+  );
+}
+
 function Pot({ ctx }: { ctx: Ctx }) {
   const { v, locale } = ctx;
   const mode = v["p-mode"], dried = v["p-basis"] === "dried";
@@ -666,7 +709,7 @@ function Batch({ ctx }: { ctx: Ctx }) {
 // ---------- bench ----------
 
 const components: Record<CalculationKey, (props: { ctx: Ctx }) => React.JSX.Element> = {
-  pot: Pot, bat: Batch, hlb: Hlb, flow: Flow, caps: Caps, tab: Tab, coat: Coat, sup: Sup,
+  pot: Pot, asy: Asy, bat: Batch, hlb: Hlb, flow: Flow, caps: Caps, tab: Tab, coat: Coat, sup: Sup,
   iso: Iso, fpd: Fpd, osm: Osm, buf: Buf, bcap: BufCap, dil: Dil, conc: Conc, meq: Meq, vit: Vit, kin: Kin,
   hplc: Hplc, imp: Imp, uv: Uv, tit: Tit, kf: Kf, sst: Sst, lin: Lin, diss: Diss, f2: F2, udu: Udu,
   wv: Wv, fri: Fri, moist: Moist, maco: Maco, mkt: Mkt, q1e: Q1e,
@@ -685,6 +728,7 @@ const defaults: Values = {
   "m-salt": "0", "m-mw": "58.44", "m-val": "1", "m-amt": "900", "m-unit": "mg",
   "v-form": String(flatForms.findIndex((f) => f.name === "Cholecalciferol (D3)")), "v-amt": "1000", "v-unit": "IU",
   "x-units": "100000", "x-ov": "0",
+  "a-lc": "10", "a-salt": "1", "a-mws": "567.05", "a-mwb": "408.88", "a-assay": "99.5", "a-basis": "dried", "a-lod": "0.5", "a-units": "100000",
   "p-mode": "pct", "p-lc": "10", "p-pot": "99.5", "p-basis": "dried", "p-w": "0.5", "p-rs": "0", "p-salt": "1", "p-mws": "567.05", "p-mwb": "408.88", "p-units": "100000",
   // formulation
   "fl-m": "50", "fl-v0": "100", "fl-vf": "80", "fl-h": "2.5", "fl-r": "4.0",

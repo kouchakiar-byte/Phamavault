@@ -20,7 +20,7 @@ export const pages = {
     ),
     lead: bi(
       "Domestic manufacturers and importers in Iran of pharmaceutical raw materials (APIs and excipients), vitamins and mineral salts, supplement ingredients and amino acids, and cosmetic raw materials. Search by Persian or English name, salt form or synonym.",
-      "تولیدکنندگان داخلی و واردکنندگان مواد اولیه دارویی (مواد مؤثره و مواد جانبی)، ویتامین‌ها و املاح معدنی، مواد اولیه مکمل و آمینواسیدها، و مواد اولیه آرایشی‌بهداشتی در ایران. با نام فارسی یا انگلیسی، فرم نمکی یا مترادف جستجو کنید.",
+      "تولیدکنندگان داخلی و واردکنندگان مواد اولیه دارویی (مواد مؤثره و مواد جانبی)، ویتامین‌ها و مینرال‌ها، مواد اولیه مکمل و آمینواسیدها، و مواد اولیه آرایشی‌بهداشتی در ایران. با نام فارسی یا انگلیسی، فرم نمکی یا مترادف جستجو کنید.",
     ),
     placeholder: bi(
       "e.g. Vitamin B1, thiamine hydrochloride, Zinc sulfate, polysorbate 80",
@@ -51,7 +51,7 @@ export const pages = {
       all: bi("All", "همه"),
       api: bi("Active pharmaceutical ingredients (API)", "مواد مؤثره دارویی (API)"),
       vit: bi("Vitamins", "ویتامین‌ها"),
-      min: bi("Minerals and mineral salts", "املاح معدنی و مینرال‌ها"),
+      min: bi("Minerals and mineral salts", "مینرال‌ها"),
       exc: bi("Excipients and solvents", "مواد جانبی (اکسیپیان) و حلال‌ها"),
       cos: bi("Cosmetic and personal-care raw materials", "مواد اولیه آرایشی‌بهداشتی"),
       sup: bi("Supplement ingredients and amino acids", "مواد اولیه مکمل و آمینواسیدها"),
@@ -142,7 +142,7 @@ export const pages = {
     title: bi("API and raw material database", "پایگاه داده مواد مؤثره و مواد اولیه (API)"),
     lead: bi(
       "Active pharmaceutical ingredients by therapeutic class, plus vitamins, mineral salts, amino acids and supplement ingredients — each in the salt or hydrate form traded as a raw material, with CAS Registry Number, molecular weight and a key note on pharmacology, solubility, stability, handling or elemental content.",
-      "مواد مؤثره دارویی به تفکیک رده درمانی، همراه با ویتامین‌ها، املاح معدنی، آمینواسیدها و مواد اولیه مکمل؛ هر ماده در همان فرم نمکی یا هیدراتی که به‌عنوان ماده اولیه عرضه می‌شود، با شماره CAS، وزن مولکولی و نکته کلیدی درباره رده دارویی، حلالیت، پایداری، ملاحظات تولید یا درصد عنصر.",
+      "مواد مؤثره دارویی به تفکیک رده درمانی، همراه با ویتامین‌ها، مینرال‌ها، آمینواسیدها و مواد اولیه مکمل؛ هر ماده در همان فرم نمکی یا هیدراتی که به‌عنوان ماده اولیه عرضه می‌شود، با شماره CAS، وزن مولکولی و نکته کلیدی درباره رده دارویی، حلالیت، پایداری، ملاحظات تولید یا درصد عنصر.",
     ),
     group: bi("Class", "رده"),
     allGroups: bi("All classes", "همه رده‌ها"),
@@ -154,7 +154,7 @@ export const pages = {
     title: bi("Pharmaceutical calculations", "محاسبات داروسازی (Calculations)"),
     lead: bi(
       "{n} calculators in five groups: formulation and manufacturing; solutions, physical pharmacy and stability; analysis and quality control; microbiology, sterility and endotoxins; dosing and pharmacokinetics. Results update as you type, and the governing equation and reference are shown under each one.",
-      "{n} ماشین‌حساب در پنج گروه: فرمولاسیون و تولید؛ محلول‌ها، داروسازی فیزیکی و پایداری؛ آنالیز و کنترل کیفیت؛ میکروبیولوژی، استریلیتی و اندوتوکسین؛ دوزبندی و فارماکوکینتیک. نتیجه هم‌زمان با ورود داده محاسبه می‌شود و معادله مبنا و مرجع زیر هر کدام آمده است.",
+      "{n} ماشین‌حساب در پنج گروه: فرمولاسیون و تولید؛ محلول‌ها، فیزیکال فارماسی و پایداری؛ آنالیز و کنترل کیفیت؛ میکروبیولوژی، استریلیتی و اندوتوکسین؛ دوزبندی و فارماکوکینتیک. نتیجه هم‌زمان با ورود داده محاسبه می‌شود و معادله مبنا و مرجع زیر هر کدام آمده است.",
     ),
   },
   formulation: {
