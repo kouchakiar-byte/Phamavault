@@ -32,6 +32,7 @@ export const referencesPage: LegalPage = {
 };
 
 export const referencesHome = {
+  chip: bi("References (رفرنس‌ها)", "رفرنس‌ها (References)"),
   eyebrow: bi("Pharmacopoeias · regulators · drug information", "فارماکوپه‌ها · نهادهای رگولاتوری · اطلاعات دارویی"),
 };
 
