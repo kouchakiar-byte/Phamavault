@@ -137,7 +137,7 @@ export const pages = {
       pubchem: bi("Structure, identifiers, properties and safety (free)", "ساختار، شناسه‌ها، ویژگی‌ها و ایمنی (رایگان)"),
       iid: bi("Maximum amounts in FDA-approved products, by route and dosage form — search “{name}” (free)", "حداکثر مقدار در فرآورده‌های تأییدشده FDA بر اساس راه مصرف و شکل دارویی — «\u2066{name}\u2069» را جستجو کنید (رایگان)"),
     },
-    clickHint: bi("Click an excipient's name for its details and the full monograph.", "روی نام هر ماده جانبی بزنید تا جزئیات و لینک مونوگراف کامل آن باز شود."),
+    clickHint: bi("Click an excipient's name for its details, its PharmaVault data sheet and the full monograph.", "روی نام هر ماده جانبی بزنید تا جزئیات، برگه اطلاعات PharmaVault و لینک مونوگراف کامل آن باز شود."),
     note: bi(
       "Concentration ranges are starting guidance and must be confirmed for each formulation against the current Pharmaceutical Excipients monograph (the online edition of the Handbook of Pharmaceutical Excipients) and experimentally. q.s. (quantum satis) means the quantity required.",
       "محدوده‌های غلظت راهنمای شروع کار هستند و باید برای هر فرمولاسیون با مونوگراف جاری Pharmaceutical Excipients (نسخه آنلاین Handbook of Pharmaceutical Excipients) و به‌صورت تجربی تأیید شوند. q.s. (quantum satis) یعنی به مقدار لازم.",

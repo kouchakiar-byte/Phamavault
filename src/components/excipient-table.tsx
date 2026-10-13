@@ -1,10 +1,14 @@
 "use client";
 
 import { Fragment, useMemo, useState } from "react";
-import { ChevronDown, ExternalLink } from "lucide-react";
+import Link from "next/link";
+import { ChevronDown, ExternalLink, FileText } from "lucide-react";
 import type { excipients as ExcipientData } from "@/data";
 import { copy } from "@/content/site";
 import { pages } from "@/content/pages";
+import { excipientSheet } from "@/content/excipient-sheet";
+import { excipientSlug } from "@/lib/excipient-slug";
+import { href } from "@/lib/paths";
 import type { Locale } from "@/i18n/config";
 import { normalize } from "@/i18n/bi";
 import { Count, Field, FilterBar, TableWrap } from "./filters";
@@ -83,6 +87,16 @@ function Detail({
         ))}
       </dl>
       <div>
+        <Link
+          href={href(locale, `excipients/${excipientSlug(r.name)}`)}
+          className="mb-4 flex items-start gap-2.5 rounded-xl bg-vault-900 px-3.5 py-2.5 text-white transition hover:bg-vault-800"
+        >
+          <FileText className="mt-0.5 size-5 shrink-0 text-capsule-400" aria-hidden="true" />
+          <span className="min-w-0">
+            <span className="block text-sm font-bold">{excipientSheet.open[locale]}</span>
+            <span className="block text-xs leading-relaxed text-vault-100/75">{excipientSheet.openNote[locale]}</span>
+          </span>
+        </Link>
         <p className="text-sm font-semibold text-vault-900">{t.read[locale]}</p>
         <ul className="mt-2 space-y-2">
           {sources(r).map((s) => (
