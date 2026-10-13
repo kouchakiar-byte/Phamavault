@@ -136,8 +136,8 @@ export const sections = [
     group: "tools",
     title: bi("Community Pharmacy", "داروخانه (Community Pharmacy)"),
     description: bi(
-      "Therapeutic substitution during shortages with referenced equivalent-dose tables, and non-sterile compounding with the USP <795> beyond-use date calculator.",
-      "جایگزینی درمانی در زمان کمبود دارو با جدول‌های دوز معادل مستند، و ساخت فرآورده‌های غیراستریل در داروخانه با محاسبه تاریخ مصرف پس از ساخت طبق USP <795>.",
+      "Generic and brand products from the FDA Orange Book with the Iranian manufacturers, and non-sterile compounding with the USP <795> beyond-use date calculator.",
+      "داروهای ژنریک و برند بر اساس Orange Book همراه با تولیدکنندگان داخلی، و ساخت فرآورده‌های غیراستریل در داروخانه با محاسبه تاریخ مصرف پس از ساخت طبق USP <795>.",
     ),
   },
   {

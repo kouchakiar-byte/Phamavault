@@ -1,180 +1,97 @@
-import { bi, type Bi } from "@/i18n/bi";
+import { bi } from "@/i18n/bi";
 
 /*
- * Community-pharmacy section: therapeutic substitution during shortages and
+ * Community-pharmacy section: generic and brand products (FDA Orange Book) with
  * non-sterile compounding. Every table and rule names its source; reviewed
  * October 2026 (Mehr 1405).
  */
 
 const ltr = (s: string) => `⁦${s}⁩`;
 
-/** "20 mg once daily" / "40 mg twice daily" in both languages. */
-const od = (dose: string) => bi(`${dose} once daily`, `${ltr(dose)} یک بار در روز`);
-const bd = (dose: string) => bi(`${dose} twice daily`, `${ltr(dose)} دو بار در روز`);
-
 export type Ref = { label: string; url?: string };
-export type DoseTable = {
-  key: string;
-  title: Bi;
-  intro: Bi;
-  columns: Bi[];
-  /** First cell is the drug name (Latin); the rest are doses or labels. */
-  rows: (string | Bi)[][];
-  note: Bi;
-  refs: Ref[];
-};
 
 export const pharmacyPage = {
   title: bi("Community pharmacy", "داروخانه (Community Pharmacy)"),
   lead: bi(
-    "Practical, referenced tools for the community pharmacist: therapeutic substitution when a medicine is in short supply, and non-sterile compounding with USP <795> beyond-use dating.",
-    `ابزارهای کاربردی و مستند برای داروساز داروخانه: جایگزینی درمانی در زمان کمبود دارو، و ساخت فرآورده‌های غیراستریل در داروخانه با تعیین تاریخ مصرف پس از ساخت (BUD) طبق ${ltr("USP <795>")}.`,
+    "Practical, referenced tools for the community pharmacist: generic and brand products from the FDA Orange Book with the Iranian manufacturers, and non-sterile compounding with USP <795> beyond-use dating.",
+    `ابزارهای کاربردی و مستند برای داروساز داروخانه: داروهای ژنریک و برند بر اساس Orange Book همراه با تولیدکنندگان داخلی، و ساخت فرآورده‌های غیراستریل در داروخانه با تعیین تاریخ مصرف پس از ساخت (BUD) طبق ${ltr("USP <795>")}.`,
   ),
   disclaimer: bi(
-    "For professional use. Substituting one medicine for another needs the prescriber's agreement; the final decision on dose and therapy rests with the pharmacist and the prescriber. Always check the current product information (SmPC) of the product actually dispensed.",
-    "ویژه استفاده حرفه‌ای. جایگزینی یک دارو با داروی دیگر نیازمند موافقت پزشک تجویزکننده است و تصمیم نهایی درباره دوز و درمان با داروساز و پزشک است. همیشه اطلاعات فرآورده (SmPC یا بروشور) همان فرآورده‌ای را که تحویل می‌دهید بررسی کنید.",
+    "For professional use. Substituting one product for another follows the Iran FDA rules and the prescriber; always check the current product information (SmPC) of the product actually dispensed.",
+    "ویژه استفاده حرفه‌ای. جایگزینی یک فرآورده با فرآورده دیگر تابع ضوابط سازمان غذا و دارو و نظر پزشک است؛ همیشه اطلاعات فرآورده (SmPC یا بروشور) همان فرآورده‌ای را که تحویل می‌دهید بررسی کنید.",
   ),
   reviewed: bi("Content reviewed October 2026.", "آخرین بازبینی محتوا: مهر ۱۴۰۵."),
   refsLabel: bi("References", "رفرنس‌ها"),
   toc: bi("In this section", "در این بخش"),
 };
 
-// ---------- 1. Therapeutic substitution ----------
+// ---------- 1. Generic and brand products (Orange Book) ----------
 
-export const substitution = {
-  key: "substitution",
-  title: bi("Therapeutic substitution during shortages", "جایگزینی درمانی در زمان کمبود دارو"),
+export const orangeBook = {
+  key: "orange-book",
+  title: bi("Generic and brand products: Orange Book and Iranian manufacturers", "داروهای ژنریک و برند: Orange Book و تولیدکنندگان داخلی"),
   lead: bi(
-    "When a medicine is unavailable, work from the safest option to the least safe, and document every change.",
-    "وقتی دارویی در دسترس نیست، از امن‌ترین گزینه به سمت گزینه‌های بعدی بروید و هر تغییر را ثبت کنید.",
+    "Search by active ingredient or brand name to see every FDA-approved product of that ingredient — the brand (reference listed drug) and its generics, with strength, dosage form, applicant and therapeutic-equivalence code — and the Iranian manufacturers of the same medicine.",
+    "با جستجوی ماده مؤثره یا نام تجاری، همه فرآورده‌های تأییدشده FDA برای آن ماده را ببینید — برند (داروی مرجع، RLD) و ژنریک‌های آن با قدرت، شکل دارویی، شرکت صاحب مجوز و کد هم‌ارزی درمانی (TE) — و تولیدکنندگان داخلی همان دارو.",
   ),
-  steps: [
-    bi(
-      "Same active ingredient, same strength and dosage form from another manufacturer (generic substitution) — check the national drug list of the Iran FDA.",
-      "همان ماده مؤثره، با همان قدرت و شکل دارویی از تولیدکننده دیگر (جایگزینی ژنریک) — فهرست رسمی داروهای کشور در سازمان غذا و دارو را بررسی کنید.",
-    ),
-    bi(
-      "Same active ingredient in another salt or strength — convert by the amount of active moiety (salt factor) and adjust the number of units.",
-      "همان ماده مؤثره با نمک یا قدرت دیگر — بر اساس مقدار بخش فعال (ضریب نمک) تبدیل و تعداد واحدها را تنظیم کنید.",
-    ),
-    bi(
-      "Same active ingredient in another dosage form (e.g. tablet → oral liquid) — check bioequivalence, excipients (sugar, alcohol) and the dosing device; compound only when no licensed product exists.",
-      "همان ماده مؤثره در شکل دارویی دیگر (مثلاً قرص به مایع خوراکی) — هم‌ارزی زیستی، مواد جانبی (قند، الکل) و وسیله دوزدهی را بررسی کنید؛ ساخت در داروخانه فقط وقتی که فرآورده تجاری وجود ندارد.",
-    ),
-    bi(
-      "Another medicine of the same class (therapeutic substitution) — only with the prescriber's agreement, using the equivalence tables below as a starting point and considering indication, renal and hepatic function, interactions and comorbidities.",
-      "داروی دیگری از همان رده (جایگزینی درمانی) — فقط با موافقت پزشک، با استفاده از جدول‌های معادل زیر به‌عنوان نقطه شروع و با در نظر گرفتن اندیکاسیون، عملکرد کلیه و کبد، تداخلات و بیماری‌های همراه.",
-    ),
-    bi(
-      "Counsel the patient on the change (appearance, dose, timing) and monitor the response.",
-      "درباره تغییر (ظاهر دارو، دوز و زمان مصرف) به بیمار مشاوره دهید و پاسخ درمانی را پیگیری کنید.",
-    ),
-  ],
+  search: bi("Active ingredient or brand name (English)", "ماده مؤثره یا نام تجاری (انگلیسی)"),
+  placeholder: bi("e.g. atorvastatin, Lipitor, metformin", "مثلاً atorvastatin، Lipitor، metformin"),
+  discontinued: bi("Include discontinued products", "نمایش فرآورده‌های متوقف‌شده"),
+  minChars: bi("Type at least 3 letters.", "دست‌کم ۳ حرف وارد کنید."),
+  loading: bi("Searching…", "در حال جستجو…"),
+  none: bi("No product found. Try the generic (INN/USAN) name in English.", "فرآورده‌ای پیدا نشد. نام ژنریک انگلیسی (INN یا USAN) را امتحان کنید."),
+  noData: bi(
+    "The Orange Book data has not been loaded yet; it is downloaded from the FDA automatically every month.",
+    "داده Orange Book هنوز بارگذاری نشده است؛ این داده هر ماه به‌صورت خودکار از FDA دریافت می‌شود.",
+  ),
+  updated: bi("Orange Book data from", "داده Orange Book به‌روز شده در"),
+  more: bi("{n} more products — refine the search", "{n} فرآورده دیگر — جستجو را دقیق‌تر کنید"),
+  ingredients: bi("{n} ingredients found; showing the first {m}", "{n} ماده مؤثره پیدا شد؛ {m} مورد اول نمایش داده می‌شود"),
+  cols: {
+    trade: bi("Trade name", "نام تجاری"),
+    applicant: bi("Applicant", "شرکت صاحب مجوز"),
+    strength: bi("Strength", "قدرت"),
+    form: bi("Dosage form; route", "شکل دارویی؛ راه مصرف"),
+    appl: bi("Application", "نوع مجوز"),
+    te: bi("TE code", "کد TE"),
+    status: bi("Status", "وضعیت"),
+  },
+  badges: {
+    rld: bi("RLD", "RLD"),
+    rs: bi("RS", "RS"),
+    nda: bi("NDA (brand)", "NDA (برند)"),
+    anda: bi("ANDA (generic)", "ANDA (ژنریک)"),
+    rx: bi("Rx", "نسخه‌ای"),
+    otc: bi("OTC", "بدون نسخه"),
+    discn: bi("Discontinued", "متوقف‌شده"),
+  },
+  iranTitle: bi("Iranian manufacturers", "تولیدکنندگان داخلی"),
+  iranEmpty: bi(
+    "The list of Iranian manufacturers is being added from the Iran FDA's official records. Meanwhile, check the Iran FDA site.",
+    "فهرست تولیدکنندگان داخلی در حال تکمیل از روی داده‌های رسمی سازمان غذا و دارو است. تا آن زمان به سایت سازمان غذا و دارو مراجعه کنید.",
+  ),
+  iranCols: {
+    brand: bi("Brand", "نام تجاری"),
+    company: bi("Manufacturer", "تولیدکننده"),
+    form: bi("Dosage form", "شکل دارویی"),
+    strength: bi("Strength", "قدرت"),
+  },
+  note: bi(
+    "TE codes beginning with A are therapeutically equivalent to the reference product (e.g. AB: bioequivalence demonstrated); codes beginning with B are not considered equivalent; a blank code means no multisource comparison (single source or OTC monograph). RLD = reference listed drug, the product generics are compared with; RS = reference standard for bioequivalence studies. Orange Book equivalence is a US regulatory status: substitution in Iran follows the Iran FDA list and the prescriber.",
+    "کدهای TE که با A شروع می‌شوند از نظر درمانی با فرآورده مرجع هم‌ارزند (مثلاً AB: هم‌ارزی زیستی اثبات‌شده)؛ کدهای B هم‌ارز محسوب نمی‌شوند؛ کد خالی یعنی مقایسه چندمنبعی وجود ندارد (تک‌منبع یا OTC). RLD = داروی مرجع که ژنریک‌ها با آن مقایسه می‌شوند؛ RS = استاندارد مرجع برای مطالعه هم‌ارزی زیستی. هم‌ارزی Orange Book وضعیت قانونی آمریکاست: جایگزینی در ایران تابع فهرست سازمان غذا و دارو و نظر پزشک است.",
+  ),
+  refs: [
+    { label: "FDA – Orange Book (Approved Drug Products with Therapeutic Equivalence Evaluations)", url: "https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book" },
+    { label: "FDA – Orange Book data files", url: "https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files" },
+  ] as Ref[],
   links: [
     { label: "Iran FDA", url: "https://www.fda.gov.ir/", note: bi("National drug list and licences", "فهرست رسمی داروهای کشور و پروانه‌ها") },
-    { label: "BNF", url: "https://bnf.nice.org.uk/", note: bi("British National Formulary (free in the UK)", "فرمولاری ملی بریتانیا") },
+    { label: "Orange Book", url: "https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book", note: bi("FDA search, patents and exclusivity", "جستجوی FDA، پتنت‌ها و انحصارها") },
+    { label: "BNF", url: "https://bnf.nice.org.uk/", note: bi("British National Formulary", "فرمولاری ملی بریتانیا") },
     { label: "emc", url: "https://www.medicines.org.uk/emc", note: bi("SmPCs by brand or active ingredient", "SmPC بر اساس نام تجاری یا ماده مؤثره") },
     { label: "DailyMed", url: "https://dailymed.nlm.nih.gov/dailymed/", note: bi("US package inserts", "بروشورهای رسمی آمریکا") },
   ],
 };
-
-export const doseTables: DoseTable[] = [
-  {
-    key: "corticosteroids",
-    title: bi("Systemic corticosteroids: equivalent anti-inflammatory doses", "کورتیکواستروئیدهای سیستمیک: دوزهای معادل ضدالتهابی"),
-    intro: bi("Oral or intravenous doses with approximately the same glucocorticoid (anti-inflammatory) effect.", "دوزهای خوراکی یا وریدی با اثر گلوکوکورتیکوئیدی (ضدالتهابی) تقریباً برابر."),
-    columns: [bi("Medicine", "دارو"), bi("Equivalent dose", "دوز معادل"), bi("Duration of action", "طول اثر")],
-    rows: [
-      ["Hydrocortisone", "20 mg", bi("Short (8–12 h)", "کوتاه (۸ تا ۱۲ ساعت)")],
-      ["Cortisone acetate", "25 mg", bi("Short (8–12 h)", "کوتاه (۸ تا ۱۲ ساعت)")],
-      ["Prednisolone", "5 mg", bi("Intermediate (12–36 h)", "متوسط (۱۲ تا ۳۶ ساعت)")],
-      ["Prednisone", "5 mg", bi("Intermediate (12–36 h)", "متوسط (۱۲ تا ۳۶ ساعت)")],
-      ["Methylprednisolone", "4 mg", bi("Intermediate (12–36 h)", "متوسط (۱۲ تا ۳۶ ساعت)")],
-      ["Triamcinolone", "4 mg", bi("Intermediate (12–36 h)", "متوسط (۱۲ تا ۳۶ ساعت)")],
-      ["Deflazacort", "6 mg", bi("Intermediate", "متوسط")],
-      ["Dexamethasone", "0.75 mg", bi("Long (36–72 h)", "طولانی (۳۶ تا ۷۲ ساعت)")],
-      ["Betamethasone", "0.75 mg", bi("Long (36–72 h)", "طولانی (۳۶ تا ۷۲ ساعت)")],
-    ],
-    note: bi(
-      "The table ignores mineralocorticoid activity (marked for hydrocortisone and cortisone, negligible for dexamethasone and betamethasone) and differences in duration; it is not valid for replacement therapy in adrenal insufficiency or for topical and inhaled products.",
-      "این جدول اثر مینرالوکورتیکوئیدی (قابل توجه در هیدروکورتیزون و کورتیزون و ناچیز در دگزامتازون و بتامتازون) و تفاوت طول اثر را در نظر نمی‌گیرد؛ برای درمان جایگزینی در نارسایی آدرنال و برای فرآورده‌های موضعی و استنشاقی معتبر نیست.",
-    ),
-    refs: [
-      { label: "Liu D et al. Allergy Asthma Clin Immunol 2013;9:30", url: "https://doi.org/10.1186/1710-1492-9-30" },
-      { label: "BNF – Glucocorticoid therapy", url: "https://bnf.nice.org.uk/" },
-    ],
-  },
-  {
-    key: "statins",
-    title: bi("Statins: intensity of LDL-C lowering", "استاتین‌ها: شدت کاهش LDL-C"),
-    intro: bi(
-      "Daily doses grouped by the expected fall in LDL cholesterol: high ≥ 50%, moderate 30–49%, low < 30%.",
-      "دوزهای روزانه بر اساس میزان مورد انتظار کاهش کلسترول LDL: شدت بالا ۵۰٪ یا بیشتر، متوسط ۳۰ تا ۴۹٪، کم کمتر از ۳۰٪.",
-    ),
-    columns: [bi("Medicine", "دارو"), bi("High intensity", "شدت بالا"), bi("Moderate intensity", "شدت متوسط"), bi("Low intensity", "شدت کم")],
-    rows: [
-      ["Atorvastatin", "40–80 mg", "10–20 mg", "—"],
-      ["Rosuvastatin", "20–40 mg", "5–10 mg", "—"],
-      ["Simvastatin", "—", "20–40 mg", "10 mg"],
-      ["Pravastatin", "—", "40–80 mg", "10–20 mg"],
-      ["Lovastatin", "—", "40–80 mg", "20 mg"],
-      ["Fluvastatin", "—", bi("80 mg (XL) or 40 mg twice daily", `${ltr("80 mg")} (پیوسته‌رهش) یا ${ltr("40 mg")} دو بار در روز`), "20–40 mg"],
-      ["Pitavastatin", "—", "1–4 mg", "—"],
-    ],
-    note: bi(
-      "Switch within the same intensity band. Percentages are population averages; individual response varies. Simvastatin 80 mg is not recommended because of myopathy risk.",
-      "جایگزینی را در همان سطح شدت انجام دهید. درصدها میانگین جمعیتی‌اند و پاسخ فردی متفاوت است. سیمواستاتین ۸۰ میلی‌گرم به دلیل خطر میوپاتی توصیه نمی‌شود.",
-    ),
-    refs: [
-      { label: "Grundy SM et al. 2018 AHA/ACC Guideline on the Management of Blood Cholesterol. Circulation 2019;139:e1082–e1143", url: "https://doi.org/10.1161/CIR.0000000000000625" },
-    ],
-  },
-  {
-    key: "ppi",
-    title: bi("Proton-pump inhibitors: equivalent doses", "مهارکننده‌های پمپ پروتون: دوزهای معادل"),
-    intro: bi("Oral daily doses for gastro-oesophageal reflux disease and dyspepsia.", "دوزهای خوراکی روزانه در ریفلاکس معده به مری و سوءهاضمه."),
-    columns: [bi("Medicine", "دارو"), bi("Full dose", "دوز کامل"), bi("Low dose (on demand)", "دوز کم (در صورت نیاز)"), bi("Double dose", "دوز دوبرابر")],
-    rows: [
-      ["Omeprazole", od("20 mg"), od("10 mg"), od("40 mg")],
-      ["Esomeprazole", od("20 mg"), "—", od("40 mg")],
-      ["Lansoprazole", od("30 mg"), od("15 mg"), bd("30 mg")],
-      ["Pantoprazole", od("40 mg"), od("20 mg"), bd("40 mg")],
-      ["Rabeprazole", od("20 mg"), od("10 mg"), bd("20 mg")],
-    ],
-    note: bi(
-      "Esomeprazole 20 mg is classed as equivalent to omeprazole 20 mg. Doses for severe oesophagitis and for Helicobacter pylori eradication differ — see the NICE appendix. Some double doses are outside the licence for reflux.",
-      "اسومپرازول ۲۰ میلی‌گرم معادل امپرازول ۲۰ میلی‌گرم در نظر گرفته می‌شود. دوزهای ازوفاژیت شدید و ریشه‌کنی هلیکوباکتر پیلوری متفاوت‌اند — به پیوست NICE مراجعه کنید. برخی دوزهای دوبرابر خارج از اندیکاسیون ثبت‌شده برای ریفلاکس‌اند.",
-    ),
-    refs: [
-      { label: "NICE CG184, Appendix A: Dosage information on proton pump inhibitors", url: "https://www.nice.org.uk/guidance/cg184/chapter/Appendix-A-Dosage-information-on-proton-pump-inhibitors" },
-    ],
-  },
-  {
-    key: "arb",
-    title: bi("Angiotensin II receptor blockers: usual adult doses in hypertension", "مسدودکننده‌های گیرنده آنژیوتانسین II: دوز معمول بزرگسالان در پرفشاری خون"),
-    intro: bi(
-      "Usual starting dose and daily dose range. These are licensed dose ranges, not exact equivalents: start the new ARB at its usual starting dose and titrate to blood pressure.",
-      "دوز شروع معمول و محدوده دوز روزانه. این‌ها محدوده‌های دوز ثبت‌شده‌اند، نه معادل دقیق: داروی جدید را با دوز شروع معمولش آغاز و بر اساس فشار خون تنظیم کنید.",
-    ),
-    columns: [bi("Medicine", "دارو"), bi("Usual starting dose", "دوز شروع معمول"), bi("Daily dose range", "محدوده دوز روزانه")],
-    rows: [
-      ["Losartan potassium", "50 mg", "25–100 mg"],
-      ["Valsartan", "80 mg", "80–320 mg"],
-      ["Irbesartan", "150 mg", "150–300 mg"],
-      ["Candesartan cilexetil", "8 mg", "4–32 mg"],
-      ["Telmisartan", "40 mg", "20–80 mg"],
-      ["Olmesartan medoxomil", "10–20 mg", "10–40 mg"],
-    ],
-    note: bi(
-      "Lower starting doses apply in volume depletion, hepatic impairment and the elderly; check the SmPC of the product dispensed. Do not combine an ARB with an ACE inhibitor or aliskiren.",
-      "در کم‌آبی، نارسایی کبد و سالمندان دوز شروع کمتر است؛ SmPC فرآورده تحویلی را بررسی کنید. ARB را با مهارکننده ACE یا آلیسکیرن ترکیب نکنید.",
-    ),
-    refs: [
-      { label: "BNF – Angiotensin-II receptor antagonists", url: "https://bnf.nice.org.uk/" },
-      { label: "emc – Summaries of Product Characteristics", url: "https://www.medicines.org.uk/emc" },
-    ],
-  },
-];
 
 // ---------- 2. Compounding ----------
 
