@@ -16,6 +16,7 @@ export default async function ExcipientsPage() {
     <>
       <PageHeader locale={locale} section="excipients" title={page.title} lead={page.lead} />
       <Container className="py-12">
+        <p className="mb-4 text-sm font-medium text-molecule-700">{page.clickHint[locale]}</p>
         <ExcipientTable locale={locale} data={excipients} />
         <p className="mt-4 text-sm text-muted">{page.note[locale]}</p>
       </Container>

@@ -120,9 +120,22 @@ export const pages = {
     useLevel: bi("Typical concentration", "محدوده غلظت متداول"),
     allFunctions: bi("All functional categories", "همه طبقه‌های عملکردی"),
     allForms: bi("All dosage forms", "همه اشکال دارویی"),
+    detail: {
+      functions: bi("Functional categories", "طبقه‌های عملکردی"),
+      cas: bi("CAS Registry Number", "شماره CAS"),
+      synonyms: bi("Synonyms", "مترادف‌ها"),
+      read: bi("Full monograph and data", "مونوگراف کامل و داده‌ها"),
+      monograph: bi(
+        "The current, online edition of the Handbook of Pharmaceutical Excipients — search “{name}” (subscription)",
+        "نسخه آنلاین و جاری Handbook of Pharmaceutical Excipients — «\u2066{name}\u2069» را جستجو کنید (با اشتراک)",
+      ),
+      pubchem: bi("Structure, identifiers, properties and safety (free)", "ساختار، شناسه‌ها، ویژگی‌ها و ایمنی (رایگان)"),
+      iid: bi("Maximum amounts in FDA-approved products, by route and dosage form — search “{name}” (free)", "حداکثر مقدار در فرآورده‌های تأییدشده FDA بر اساس راه مصرف و شکل دارویی — «\u2066{name}\u2069» را جستجو کنید (رایگان)"),
+    },
+    clickHint: bi("Click an excipient's name for its details and the full monograph.", "روی نام هر ماده جانبی بزنید تا جزئیات و لینک مونوگراف کامل آن باز شود."),
     note: bi(
-      "Concentration ranges are starting guidance and must be confirmed for each formulation against a compendial reference (e.g. Handbook of Pharmaceutical Excipients) and experimentally. q.s. (quantum satis) means the quantity required.",
-      "محدوده‌های غلظت راهنمای شروع کار هستند و باید برای هر فرمولاسیون با مرجع معتبر (مانند Handbook of Pharmaceutical Excipients) و به‌صورت تجربی تأیید شوند. q.s. (quantum satis) یعنی به مقدار لازم.",
+      "Concentration ranges are starting guidance and must be confirmed for each formulation against the current Pharmaceutical Excipients monograph (the online edition of the Handbook of Pharmaceutical Excipients) and experimentally. q.s. (quantum satis) means the quantity required.",
+      "محدوده‌های غلظت راهنمای شروع کار هستند و باید برای هر فرمولاسیون با مونوگراف جاری Pharmaceutical Excipients (نسخه آنلاین Handbook of Pharmaceutical Excipients) و به‌صورت تجربی تأیید شوند. q.s. (quantum satis) یعنی به مقدار لازم.",
     ),
   },
   materials: {
