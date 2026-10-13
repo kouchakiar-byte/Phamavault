@@ -135,7 +135,7 @@ export const copy = {
       },
       {
         key: "prd",
-        title: bi("Production", "تولید"),
+        title: bi("Production", "تولید (Production)"),
         points: [
           bi("Production SOPs from dispensing and granulation to tablet coating and line clearance", "دستورالعمل‌های تولید از توزین و گرانولاسیون تا روکش‌دهی قرص و ترخیص خط"),
           bi("Batch scale-up from unit formula to batch formula with overage", "افزایش مقیاس از فرمول واحد به فرمول بچ با احتساب اضافه‌ساخت"),
@@ -144,7 +144,7 @@ export const copy = {
       },
       {
         key: "reg",
-        title: bi("Regulatory Affairs", "امور رگولاتوری"),
+        title: bi("Regulatory Affairs (RA)", "امور رگولاتوری (RA)"),
         points: [
           bi("CTD Modules 1–5 with the Module 3 structure (3.2.S and 3.2.P)", "ماژول‌های ۱ تا ۵ CTD، شامل بخش‌های \u20663.2.S\u2069 و \u20663.2.P\u2069 در ماژول ۳"),
           bi("Searchable ICH quality (Q1–Q14) and multidisciplinary (M4, M7, M9, M10) guidelines", "راهنماهای کیفیت ICH از \u2066Q1\u2069 تا \u2066Q14\u2069 و راهنماهای چندرشته‌ای \u2066M4\u2069، \u2066M7\u2069، \u2066M9\u2069 و \u2066M10\u2069، با امکان جستجو"),
@@ -153,7 +153,7 @@ export const copy = {
       },
       {
         key: "sup",
-        title: bi("Supply chain & procurement", "تأمین و بازرگانی"),
+        title: bi("Supply Chain & procurement", "تأمین و بازرگانی (Supply Chain)"),
         points: [
           bi("Domestic manufacturers and importers of pharmaceutical, supplement and cosmetic raw materials", "تولیدکنندگان و واردکنندگان داخلی مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی"),
           bi("Synonym-aware search by Persian or English name, salt form or trade name", "جستجوی هوشمند با نام فارسی یا انگلیسی، فرم نمکی یا نام تجاری"),
@@ -162,7 +162,7 @@ export const copy = {
       },
       {
         key: "stu",
-        title: bi("Students", "دانشجویان"),
+        title: bi("Students", "دانشجویان (Students)"),
         points: [
           bi("Calculators that show each equation: HLB, isotonicity, buffer and displacement factor", "ماشین‌حساب‌هایی که معادله هر محاسبه را نشان می‌دهند: HLB، ایزوتونیسیته، بافر و ضریب جابه‌جایی"),
           bi("Function and typical concentration of each excipient, in Persian and English", "عملکرد و غلظت متداول هر ماده جانبی، به فارسی و انگلیسی"),
@@ -171,7 +171,7 @@ export const copy = {
       },
       {
         key: "pha",
-        title: bi("Pharmacies", "داروخانه‌ها"),
+        title: bi("Pharmacies", "داروخانه‌ها (Pharmacy)"),
         points: [
           bi("Extemporaneous compounding: isotonicity, dilution and suppository base calculations", "ساخت داروهای ترکیبی: محاسبات ایزوتونیسیته، رقیق‌سازی و پایه شیاف"),
           bi("mg ⇄ mmol ⇄ mEq conversions and vitamin IU conversions", "تبدیل میلی‌گرم، میلی‌مول و میلی‌اکی‌والان و واحد بین‌المللی ویتامین‌ها"),
