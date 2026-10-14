@@ -6,6 +6,7 @@ export const excipientSheet = {
   open: bi("View the monograph sheet", "مشاهده مونوگراف (PDF)"),
   column: bi("Monograph in PharmaVault", "مونوگراف در PharmaVault"),
   cell: bi("Open monograph", "مشاهده مونوگراف"),
+  sourcesCell: bi("Sources", "مشاهده منابع"),
   openNote: bi("A Handbook-style review of the material — applications, properties, stability, incompatibilities, safety and regulatory status — with its references", "بررسی کامل ماده به سبک هندبوک — کاربرد، ویژگی‌ها، پایداری، ناسازگاری‌ها، ایمنی و وضعیت رگولاتوری — همراه با منابع"),
   back: bi("Back to the excipient database", "بازگشت به پایگاه داده مواد جانبی"),
   synonyms: bi("Synonyms", "مترادف‌ها"),
