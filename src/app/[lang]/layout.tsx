@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { copy, siteConfig } from "@/content/site";
 import { localeDirection, locales } from "@/i18n/config";
+import { languageAlternates } from "@/lib/metadata";
 import { getLocale } from "@/i18n/locale";
 import "../globals.css";
 
@@ -35,17 +36,16 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(siteConfig.url),
     title: { default: copy.meta.title[locale], template: `%s | ${siteConfig.name}` },
     description: copy.meta.description[locale],
-    alternates: {
-      canonical: `/${locale}`,
-      languages: Object.fromEntries(locales.map((l) => [l, `/${l}`])),
-    },
+    alternates: { canonical: `/${locale}`, languages: languageAlternates("") },
     openGraph: {
       siteName: siteConfig.name,
       title: copy.meta.title[locale],
       description: copy.meta.description[locale],
       locale: locale === "fa" ? "fa_IR" : "en_US",
       type: "website",
+      images: [{ url: "/og.png", width: 1200, height: 630, alt: copy.meta.title[locale] }],
     },
+    twitter: { card: "summary_large_image", title: copy.meta.title[locale], description: copy.meta.description[locale], images: ["/og.png"] },
   };
 }
 
@@ -65,6 +65,31 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
         >
           {copy.nav.skipToContent[locale]}
         </a>
+        <script
+          type="application/ld+json"
+          // Organization and WebSite structured data for search engines.
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "PharmaVault",
+                alternateName: ["گنجینه اطلاعات داروسازی", "The Pharmaceutical Information Vault"],
+                url: siteConfig.url,
+                logo: `${siteConfig.url}/og-logo.png`,
+                email: siteConfig.email,
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "PharmaVault",
+                alternateName: "گنجینه اطلاعات داروسازی",
+                url: siteConfig.url,
+                inLanguage: ["fa-IR", "en"],
+              },
+            ]),
+          }}
+        />
         <SiteHeader />
         <main id="main" className="flex-1">
           {children}
