@@ -62,6 +62,7 @@ export async function SiteFooter() {
             <p>
               © <BrandName /> · <span className="font-semibold text-capsule-400">{copy.slogan[locale]}</span>
             </p>
+            <p className="max-w-3xl leading-relaxed">{copy.rights[locale]}</p>
           </div>
           {siteConfig.enamad && (
             // The e-Namad seal, exactly as the e-Namad panel issues it.

@@ -34,6 +34,10 @@ export const copy = {
   },
   platform: bi("Pharmaceutical Knowledge Hub", "مرکز دانش دارویی"),
   slogan: bi("The Pharmaceutical Information Vault", "گنجینه اطلاعات داروسازی"),
+  rights: bi(
+    "All rights reserved. The content, databases and design of this site belong to the PharmaVault platform. Copying or republishing any of it without crediting PharmaVault (pharmavault.ir) as the source is prohibited and will be pursued under the law.",
+    "تمامی حقوق مادی و معنوی این سایت متعلق به پلتفرم PharmaVault (گنجینه اطلاعات داروسازی) است. هرگونه کپی‌برداری یا بازنشر محتوا، پایگاه‌های داده و طراحی سایت بدون ذکر منبع PharmaVault (pharmavault.ir) ممنوع است و پیگرد قانونی دارد.",
+  ),
 
   nav: {
     home: bi("Home", "صفحه اصلی"),

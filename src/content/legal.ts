@@ -159,7 +159,24 @@ export const terms: LegalPage = {
       ],
     },
     {
-      title: bi("5. Nature of the information", "۵. ماهیت اطلاعات"),
+      title: bi("5. Intellectual property", "۵. مالکیت معنوی"),
+      items: [
+        bi(
+          "All content on PharmaVault — the monographs, databases, calculators, SOPs, handbook chapters, translations, compilation and design — belongs to the PharmaVault platform (The Pharmaceutical Information Vault) and is protected by intellectual-property law.",
+          "تمامی محتوای PharmaVault — شامل مونوگراف‌ها، پایگاه‌های داده، ماشین‌حساب‌ها، دستورالعمل‌ها، فصل‌های هندبوک، ترجمه‌ها، گردآوری و طراحی سایت — متعلق به پلتفرم PharmaVault (گنجینه اطلاعات داروسازی) است و تحت حمایت قوانین مالکیت معنوی قرار دارد.",
+        ),
+        bi(
+          "Short quotations are allowed only with a clear credit to PharmaVault and a link to pharmavault.ir. Any other copying, republishing or commercial use without written permission is prohibited and will be pursued under the law.",
+          "نقل بخش‌های کوتاه فقط با ذکر صریح منبع PharmaVault و لینک به pharmavault.ir مجاز است. هرگونه کپی‌برداری، بازنشر یا استفاده تجاری دیگر بدون اجازه کتبی ممنوع است و پیگرد قانونی دارد.",
+        ),
+        bi(
+          "Pharmacopoeias, guidelines, trade names and trademarks of third parties that are cited or linked on the site belong to their respective owners.",
+          "فارماکوپه‌ها، راهنماها، نام‌های تجاری و نشان‌های اشخاص ثالث که در سایت به آن‌ها ارجاع یا لینک داده شده، متعلق به صاحبان آن‌هاست.",
+        ),
+      ],
+    },
+    {
+      title: bi("6. Nature of the information", "۶. ماهیت اطلاعات"),
       paragraphs: [
         bi(
           "PharmaVault is a working reference that shortens the search. Specifications, limits and registration requirements must always be confirmed against the current official pharmacopoeia, guideline or authority before use in production, release or a regulatory submission. Supplier details are published as found in the cited sources; PharmaVault is not a party to any purchase between users and suppliers.",
@@ -168,7 +185,7 @@ export const terms: LegalPage = {
       ],
     },
     {
-      title: bi("6. Changes", "۶. تغییرات"),
+      title: bi("7. Changes", "۷. تغییرات"),
       paragraphs: [
         bi(
           "These terms and the prices may change; changes apply to purchases made after they are published and do not affect a subscription already paid for.",

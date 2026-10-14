@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { BackLink, Container } from "@/components/ui";
 import { SheetHeader, SheetPage } from "@/components/excipient-sheet";
 import { excipientSheet as t } from "@/content/excipient-sheet";
+import { copy } from "@/content/site";
 import { excipients } from "@/data";
 import { monographs } from "@/data/monographs";
 import sheets from "@/data/excipient-sheets.json";
@@ -250,6 +251,7 @@ export default async function ExcipientSheetPage({ params }: PageProps<"/[lang]/
               ))}
             </ol>
             <p className="mt-3 text-muted">{t.disclaimer[locale]}</p>
+            <p className="mt-1.5 text-muted">© PharmaVault — {copy.rights[locale]}</p>
             <p className="mt-2 flex items-center justify-between gap-3 font-semibold text-vault-900" dir="ltr">
               <span>PharmaVault · The Pharmaceutical Information Vault · گنجینه اطلاعات داروسازی</span>
               <span className="font-mono text-molecule-700">pharmavault.ir</span>
