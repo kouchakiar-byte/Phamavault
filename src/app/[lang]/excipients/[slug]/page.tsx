@@ -56,6 +56,15 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/excipients
   );
 }
 
+function agrees(mono: { formula: string; mw: string } | undefined, pc: PubChem): boolean {
+  if (!mono) return true;
+  const bare = (f: string) => f.split("·")[0].replace(/\s|\(anhydrous\)/g, "");
+  if (pc.formula && bare(mono.formula) === bare(pc.formula)) return true;
+  const target = Number(pc.mw);
+  const values = (mono.mw.match(/\d[\d\s,]*\.?\d*/g) ?? []).map((v) => Number(v.replace(/[\s,]/g, "")));
+  return target > 0 && values.some((v) => Math.abs(v - target) / target < 0.01);
+}
+
 function Section({ n, title, children }: { n: number; title: string; children: ReactNode }) {
   return (
     <section className="mt-5 break-inside-avoid">
@@ -97,8 +106,9 @@ export default async function ExcipientSheetPage({ params }: PageProps<"/[lang]/
   const synonyms = item.synonyms.split(/,\s*/).filter(Boolean);
   const synFa = synonyms.filter((x) => fa.test(x));
   const synEn = synonyms.filter((x) => !fa.test(x));
-  // Only PubChem records that list the excipient's own CAS number are used.
-  const compound = pc?.cid && pc.match === "cas" ? pc : null;
+  // Only PubChem records that list the excipient's own CAS number, and whose formula or molecular
+  // weight agrees with the monograph, are used (polymers often map to a monomer or a wrong record).
+  const compound = pc?.cid && pc.match === "cas" && agrees(mono, pc) ? pc : null;
   const formula = mono ? mono.formula : compound?.formula || "";
   const mw = mono ? mono.mw : compound?.mw || "";
 
