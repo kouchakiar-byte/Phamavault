@@ -2,10 +2,11 @@ import { BookOpen, CheckCircle2, ChevronDown } from "lucide-react";
 import { pages } from "@/content/pages";
 import type { Handbook } from "@/data";
 import type { Locale } from "@/i18n/config";
+import { handbookAnchor } from "@/lib/handbook-anchor";
 import { BiTitle } from "./ui";
 
 const t = pages.handbooks;
-const anchor = (h: Handbook) => `hb-${h.title.en.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "")}`;
+const anchor = handbookAnchor;
 
 /** The handbooks: a contents list, then each title with its topics as expandable entries. */
 export function HandbookLibrary({ handbooks, locale }: { handbooks: Handbook[]; locale: Locale }) {

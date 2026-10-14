@@ -1,0 +1,40 @@
+import { bi } from "@/i18n/bi";
+
+/** Copy of the site-wide PharmaVault search: the header palette and the /search page. */
+export const searchCopy = {
+  title: bi("PharmaVault search", "جستجوی PharmaVault"),
+  lead: bi(
+    "One search across the whole vault: excipients and monographs, APIs and raw materials, suppliers, SOPs, calculators, ICH and CTD, handbooks and references. Search by name, CAS number, abbreviation, SOP code or function, in Persian or English.",
+    "یک جستجو در کل گنجینه: مواد جانبی و مونوگراف‌ها، مواد مؤثره و مواد اولیه، تأمین‌کنندگان، دستورالعمل‌ها، ماشین‌حساب‌ها، ICH و CTD، هندبوک‌ها و رفرنس‌ها. با نام، شماره CAS، مخفف، کد SOP یا عملکرد، به فارسی یا انگلیسی جستجو کنید.",
+  ),
+  button: bi("Search", "جستجو"),
+  placeholder: bi("Excipient, API, CAS, supplier, SOP code, calculator…", "ماده جانبی، ماده مؤثره، CAS، تأمین‌کننده، کد SOP، ماشین‌حساب…"),
+  label: bi("Search PharmaVault", "جستجو در PharmaVault"),
+  examples: bi("Try", "نمونه"),
+  exampleQueries: ["MCC", "9004-34-6", "چسباننده", "متفورمین", "QC-012", "HPLC", "Q1A", "USP"],
+  empty: bi("Type at least two letters.", "دست‌کم دو حرف بنویسید."),
+  none: bi("Nothing found for “{q}”. Check the spelling or try the English name or CAS number.", "برای «{q}» نتیجه‌ای پیدا نشد. املای واژه را بررسی کنید یا نام انگلیسی یا شماره CAS را امتحان کنید."),
+  fuzzy: bi("No exact match; closest results for “{q}”:", "نتیجه دقیقی نبود؛ نزدیک‌ترین نتایج برای «{q}»:"),
+  count: bi("{n} results", "{n} نتیجه"),
+  all: bi("See all results", "دیدن همه نتایج"),
+  allIn: bi("All results in this section", "همه نتایج در همین بخش"),
+  locked: bi("Subscribers", "ویژه مشترکین"),
+  loading: bi("Searching…", "در حال جستجو…"),
+  close: bi("Close", "بستن"),
+  hint: bi("↑ ↓ to move · Enter to open · Esc to close", "↑ ↓ برای حرکت · Enter برای باز کردن · Esc برای بستن"),
+  groups: {
+    sections: bi("Sections", "بخش‌ها"),
+    excipients: bi("Excipients and monographs", "مواد جانبی و مونوگراف‌ها"),
+    materials: bi("APIs and raw materials", "مواد مؤثره و مواد اولیه"),
+    suppliers: bi("Suppliers and manufacturers", "تأمین‌کنندگان و تولیدکنندگان"),
+    sops: bi("SOPs", "دستورالعمل‌ها (SOP)"),
+    calculators: bi("Calculators", "ماشین‌حساب‌ها"),
+    regulatory: bi("ICH guidelines and CTD", "راهنماهای ICH و CTD"),
+    handbooks: bi("Handbooks", "هندبوک‌ها"),
+    formulation: bi("Formulation templates", "الگوهای فرمولاسیون"),
+    references: bi("References and pharmacopoeias", "رفرنس‌ها و فارماکوپه‌ها"),
+    orangeBook: bi("Orange Book (FDA)", "Orange Book (FDA)"),
+  },
+  suppliersMatch: bi("{n} products match", "{n} قلم منطبق"),
+  orangeBookProducts: bi("{n} products in the Orange Book", "{n} فرآورده در Orange Book"),
+};

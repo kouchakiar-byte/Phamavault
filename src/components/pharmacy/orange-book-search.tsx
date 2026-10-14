@@ -5,12 +5,16 @@ import { orangeBook as t } from "@/content/pharmacy";
 import type { Locale } from "@/i18n/config";
 import type { ObResult } from "@/lib/orange-book";
 import { formatDate } from "@/lib/format";
+import { useUrlParam } from "@/lib/use-url-param";
 
 const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
 
 /** `iran` adds the Iranian manufacturers of each ingredient (pharmacy section only). */
 export function OrangeBookSearch({ locale, iran = true }: { locale: Locale; iran?: boolean }) {
-  const [query, setQuery] = useState("");
+  // ?ob= (from the site search) fills the box on the references page.
+  const urlQuery = useUrlParam("ob");
+  const [typed, setQuery] = useState<string | null>(null);
+  const query = typed ?? urlQuery;
   const [discn, setDiscn] = useState(false);
   const [result, setResult] = useState<ObResult | null>(null);
   const [loading, setLoading] = useState(false);

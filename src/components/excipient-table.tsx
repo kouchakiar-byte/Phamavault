@@ -9,6 +9,7 @@ import { pages } from "@/content/pages";
 import { excipientSheet } from "@/content/excipient-sheet";
 import { excipientSlug } from "@/lib/excipient-slug";
 import { href } from "@/lib/paths";
+import { useUrlParam } from "@/lib/use-url-param";
 import type { Locale } from "@/i18n/config";
 import { normalize } from "@/i18n/bi";
 import { Count, Field, FilterBar, TableWrap } from "./filters";
@@ -139,7 +140,9 @@ function Detail({
 const blank = (v: string) => (v === "—" ? "" : v);
 
 export function ExcipientTable({ locale, data }: Props) {
-  const [query, setQuery] = useState("");
+  const urlQuery = useUrlParam("q");
+  const [typed, setQuery] = useState<string | null>(null);
+  const query = typed ?? urlQuery;
   const [fn, setFn] = useState("");
   const [form, setForm] = useState("");
   const [open, setOpen] = useState<string | null>(null);

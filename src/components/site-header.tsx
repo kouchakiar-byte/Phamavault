@@ -9,6 +9,7 @@ import { href } from "@/lib/paths";
 import { LanguageSwitcher } from "./language-switcher";
 import { Logo } from "./logo";
 import { MobileNav } from "./mobile-nav";
+import { SiteSearch } from "./site-search";
 import { Container } from "./ui";
 
 export async function SiteHeader() {
@@ -24,7 +25,7 @@ export async function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-line/80 bg-white/90 backdrop-blur">
-      <Container className="relative flex h-18 items-center justify-between gap-6">
+      <Container className="relative flex h-18 items-center justify-between gap-3 xl:gap-6">
         <div className="flex items-center gap-2">
           <Link href={href(locale)} aria-label="PharmaVault">
             <Logo />
@@ -49,7 +50,7 @@ export async function SiteHeader() {
             <Link
               href={href(locale, "#sections")}
               aria-haspopup="true"
-              className="inline-flex items-center gap-1 whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700"
+              className="inline-flex items-center gap-1 whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700"
             >
               {nav.sections[locale]}
               <ChevronDown className="size-4 transition group-focus-within:rotate-180 group-hover:rotate-180" aria-hidden="true" />
@@ -81,23 +82,25 @@ export async function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className={`whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700 ${item.wide ? "hidden xl:block" : ""}`}
+              className={`whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700 ${item.wide ? "hidden xl:block" : ""}`}
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <SiteSearch locale={locale} />
           <div className="hidden sm:block">
             <LanguageSwitcher current={locale} label={nav.language[locale]} />
           </div>
           <Link
             href={href(locale, "account")}
-            className="hidden items-center gap-2 whitespace-nowrap rounded-full bg-vault-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-vault-800 lg:inline-flex"
+            aria-label={account.nav.account[locale]}
+            className="hidden items-center gap-2 whitespace-nowrap rounded-full bg-vault-900 px-3 py-2.5 text-sm font-semibold text-white transition hover:bg-vault-800 lg:inline-flex xl:px-5"
           >
             <UserRound className="size-4" aria-hidden="true" />
-            {account.nav.account[locale]}
+            <span className="hidden xl:inline">{account.nav.account[locale]}</span>
           </Link>
           <MobileNav
             menuLabel={nav.menu[locale]}

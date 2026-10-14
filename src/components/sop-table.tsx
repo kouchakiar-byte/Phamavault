@@ -8,6 +8,7 @@ import type { Locale } from "@/i18n/config";
 import { copy } from "@/content/site";
 import { pages } from "@/content/pages";
 import { href } from "@/lib/paths";
+import { useUrlParam } from "@/lib/use-url-param";
 import { Count, Field, FilterBar, TableWrap } from "./filters";
 
 export type SopRow = { code: string; dep: string; title: Bi; covers: Bi; hasText: boolean };
@@ -15,7 +16,9 @@ export type SopRow = { code: string; dep: string; title: Bi; covers: Bi; hasText
 type Props = { locale: Locale; rows: SopRow[]; departments: Record<string, Bi> };
 
 export function SopTable({ locale, rows, departments }: Props) {
-  const [query, setQuery] = useState("");
+  const urlQuery = useUrlParam("q");
+  const [typed, setQuery] = useState<string | null>(null);
+  const query = typed ?? urlQuery;
   const [dep, setDep] = useState("");
   const t = pages.qa;
   const c = copy.common;
