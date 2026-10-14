@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { Lock, X } from "lucide-react";
 import { CopyButton } from "./copy-button";
@@ -27,6 +27,44 @@ export function SopCopyLock({
   children: ReactNode;
 }) {
   const [notice, setNotice] = useState(false);
+  const box = useRef<HTMLDivElement>(null);
+
+  // Page-wide guard: a selection that reaches into the SOP (Ctrl+A, long-press on a phone,
+  // keyboard shortcuts) is cleared and the copy is cancelled.
+  useEffect(() => {
+    if (!locked) return;
+    const inside = () => {
+      const sel = window.getSelection();
+      const el = box.current;
+      if (!sel || !el || sel.rangeCount === 0) return false;
+      for (let i = 0; i < sel.rangeCount; i++) if (sel.getRangeAt(i).intersectsNode(el)) return true;
+      return false;
+    };
+    const onCopy = (e: ClipboardEvent) => {
+      if (!inside()) return;
+      e.preventDefault();
+      e.clipboardData?.setData("text/plain", "");
+      window.getSelection()?.removeAllRanges();
+      setNotice(true);
+    };
+    const onSelect = () => {
+      if (inside()) window.getSelection()?.removeAllRanges();
+    };
+    const onStart = (e: Event) => {
+      if (box.current && e.target instanceof Node && box.current.contains(e.target)) e.preventDefault();
+    };
+    document.addEventListener("copy", onCopy, true);
+    document.addEventListener("cut", onCopy, true);
+    document.addEventListener("selectionchange", onSelect);
+    document.addEventListener("selectstart", onStart, true);
+    return () => {
+      document.removeEventListener("copy", onCopy, true);
+      document.removeEventListener("cut", onCopy, true);
+      document.removeEventListener("selectionchange", onSelect);
+      document.removeEventListener("selectstart", onStart, true);
+    };
+  }, [locked]);
+
   if (!locked) {
     return (
       <>
@@ -43,7 +81,15 @@ export function SopCopyLock({
   };
   return (
     <>
-      <div className="select-none" onCopy={block} onCut={block} onContextMenu={block} onDragStart={block}>
+      <div
+        ref={box}
+        className="select-none"
+        style={{ WebkitUserSelect: "none", WebkitTouchCallout: "none" }}
+        onCopy={block}
+        onCut={block}
+        onContextMenu={block}
+        onDragStart={block}
+      >
         {children}
       </div>
       <div className="mt-6 space-y-3">
