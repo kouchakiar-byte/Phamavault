@@ -47,6 +47,7 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [{ url: "/og.png", width: 1200, height: 630, alt: copy.meta.title[locale] }],
     },
     twitter: { card: "summary_large_image", title: copy.meta.title[locale], description: copy.meta.description[locale], images: ["/og.png"] },
+    ...(siteConfig.enamadVerify ? { other: { enamad: siteConfig.enamadVerify } } : {}),
   };
 }
 

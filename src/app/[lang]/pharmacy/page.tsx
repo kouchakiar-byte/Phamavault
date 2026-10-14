@@ -2,9 +2,10 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { BudCalculator } from "@/components/pharmacy/bud-calculator";
+import { IranDrugSearch } from "@/components/pharmacy/iran-drug-search";
 import { OrangeBookSearch } from "@/components/pharmacy/orange-book-search";
 import { Container } from "@/components/ui";
-import { compounding, orangeBook, pharmacyPage, type Ref } from "@/content/pharmacy";
+import { compounding, iranDrugs, orangeBook, pharmacyPage, type Ref } from "@/content/pharmacy";
 import type { Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
@@ -75,7 +76,7 @@ export default async function PharmacyPage() {
             {pharmacyPage.disclaimer[locale]} {pharmacyPage.reviewed[locale]}
           </p>
           <nav aria-label={pharmacyPage.toc[locale]} className="flex flex-wrap gap-2 text-sm">
-            {[orangeBook, compounding].map((s) => (
+            {[iranDrugs, orangeBook, compounding].map((s) => (
               <a key={s.key} href={`#${s.key}`} className="rounded-full border border-line bg-white px-4 py-1.5 font-medium text-vault-900 hover:border-molecule-500">
                 {s.title[locale]}
               </a>
@@ -83,7 +84,16 @@ export default async function PharmacyPage() {
           </nav>
         </div>
 
-        {/* 1. Generic and brand products */}
+        {/* 1. Iranian medicines: live from the Iran FDA register */}
+        <section id={iranDrugs.key} className="scroll-mt-24 space-y-6">
+          <div>
+            <h2 className="text-2xl font-bold text-vault-900">{iranDrugs.title[locale]}</h2>
+            <p className="mt-2 text-muted">{iranDrugs.lead[locale]}</p>
+          </div>
+          <IranDrugSearch locale={locale} />
+        </section>
+
+        {/* 2. Generic and brand products */}
         <section id={orangeBook.key} className="scroll-mt-24 space-y-6">
           <div>
             <h2 className="text-2xl font-bold text-vault-900">{orangeBook.title[locale]}</h2>
@@ -95,7 +105,7 @@ export default async function PharmacyPage() {
           <LinkCards links={orangeBook.links} locale={locale} />
         </section>
 
-        {/* 2. Compounding */}
+        {/* 3. Compounding */}
         <section id={compounding.key} className="scroll-mt-24 space-y-6">
           <div>
             <h2 className="text-2xl font-bold text-vault-900">{compounding.title[locale]}</h2>
