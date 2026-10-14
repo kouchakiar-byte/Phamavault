@@ -1,13 +1,14 @@
 "use client";
 
 import { startTransition, useActionState, useState, type ReactNode } from "react";
+import { Check } from "lucide-react";
 import { addTeamMember, buy, login, register, type FormState } from "@/app/[lang]/account/actions";
 import { account } from "@/content/account";
 import { sections } from "@/content/sections";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
 import { formatNumber } from "@/lib/format";
-import { isPaidSection, listPrice, monthlyPrice, monthOptions, paidSections, type PaidSection, type PlanId } from "@/lib/pricing";
+import { isPaidSection, listPrice, monthlyPrice, monthOptions, type PaidSection, type PlanId } from "@/lib/pricing";
 import { withBrand } from "../brand";
 import { VaultLock } from "./vault-lock";
 
@@ -110,7 +111,6 @@ type StepId = "plan" | "scope" | "months" | "method";
 export function BuyForm({
   locale,
   initialPlan,
-  initialSections,
   initialSeats,
   initialMonths,
   startAtLast,
@@ -120,7 +120,6 @@ export function BuyForm({
 }: {
   locale: Locale;
   initialPlan: PlanId;
-  initialSections: PaidSection[];
   initialSeats: number;
   initialMonths: number;
   startAtLast: boolean;
@@ -130,7 +129,6 @@ export function BuyForm({
 }) {
   const [state, action, pending] = useActionState(buy, {});
   const [plan, setPlan] = useState<PlanId>(renewal?.plan ?? initialPlan);
-  const [chosen, setChosen] = useState<PaidSection[]>(renewal?.sections ?? initialSections);
   const [seats, setSeats] = useState(String(renewal?.seats ?? initialSeats));
   const [months, setMonths] = useState<number>(initialMonths);
   const [method, setMethod] = useState<"online" | "invoice">(online ? "online" : "invoice");
@@ -145,16 +143,10 @@ export function BuyForm({
   const turn = () => setTurns((n) => n + 1);
 
   const seatCount = Math.max(p.teamUsers, Math.floor(Number(seats)) || p.teamUsers);
-  const purchase = renewal ?? { plan, sections: plan === "team" ? [...paidSections] : chosen, seats: seatCount };
+  const purchase = renewal ?? { plan, seats: seatCount };
   const monthly = monthlyPrice(purchase);
   const list = listPrice(purchase);
   const off = list > monthly ? Math.round(((list - monthly) / list) * 100) : 0;
-  const valid = renewal !== null || plan === "team" || chosen.length > 0;
-  const all = chosen.length === paidSections.length;
-  const toggle = (s: PaidSection) => {
-    setChosen((c) => (c.includes(s) ? c.filter((x) => x !== s) : [...c, s]));
-    turn();
-  };
   const planName = (id: PlanId) => copy.plans.items.find((i) => i.id === (id === "team" ? "enterprise" : "individual"))!.name[locale];
   const go = (to: number) => {
     setStep(to);
@@ -242,41 +234,22 @@ export function BuyForm({
 
             <div hidden={current !== "scope"} className="pv-step-in">
               {plan === "individual" ? (
-                <fieldset>
-                  <legend className="sr-only">{t.sections[locale]}</legend>
-                  <label className={`${pill(all)} flex items-center gap-3`}>
-                    <input
-                      type="checkbox"
-                      checked={all}
-                      onChange={() => {
-                        setChosen(all ? [] : [...paidSections]);
-                        turn();
-                      }}
-                      className="size-4 accent-molecule-600"
-                    />
+                <div>
+                  <p className={`${pill(true)} flex items-center gap-3`}>
+                    <Check className="size-4 shrink-0 text-molecule-600" aria-hidden="true" />
                     {t.all[locale]}
-                  </label>
-                  <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                  </p>
+                  <ul className="mt-3 grid gap-2 sm:grid-cols-2">
                     {sections
                       .filter((s) => isPaidSection(s.slug))
-                      .map((s) => {
-                        const slug = s.slug as PaidSection;
-                        return (
-                          <label key={slug} className={`${pill(chosen.includes(slug))} flex items-start gap-3`}>
-                            <input
-                              type="checkbox"
-                              name="sections"
-                              value={slug}
-                              checked={chosen.includes(slug)}
-                              onChange={() => toggle(slug)}
-                              className="mt-0.5 size-4 shrink-0 accent-molecule-600"
-                            />
-                            <span>{s.title[locale]}</span>
-                          </label>
-                        );
-                      })}
-                  </div>
-                </fieldset>
+                      .map((s) => (
+                        <li key={s.slug} className="flex items-start gap-3 rounded-xl border border-line bg-white px-4 py-3 text-sm text-vault-800">
+                          <Check className="mt-0.5 size-4 shrink-0 text-molecule-600" aria-hidden="true" />
+                          <span>{s.title[locale]}</span>
+                        </li>
+                      ))}
+                  </ul>
+                </div>
               ) : (
                 <div className="max-w-xs">
                   <Field
@@ -391,7 +364,7 @@ export function BuyForm({
             <button
               key="submit"
               type="submit"
-              disabled={opening || !valid}
+              disabled={opening}
               className="pv-shine flex-1 rounded-full bg-capsule-500 px-6 py-3 font-bold text-vault-950 shadow-lg shadow-capsule-500/30 transition hover:bg-capsule-400 disabled:opacity-70"
             >
               {opening
@@ -406,7 +379,6 @@ export function BuyForm({
             <button
               key="next"
               type="button"
-              disabled={current === "scope" && !valid}
               onClick={() => go(step + 1)}
               className="flex-1 rounded-full bg-vault-900 px-6 py-3 font-semibold text-white transition hover:bg-vault-800 disabled:opacity-50"
             >

@@ -79,7 +79,6 @@ export async function buy(_: FormState, form: FormData): Promise<FormState> {
     // Sign up first, then come back to the last key with the same choices.
     const choice = new URLSearchParams({
       plan: text(form, "plan") || "individual",
-      s: form.getAll("sections").map(String).join(",") || "all",
       seats: text(form, "seats"),
       months: text(form, "months"),
       ready: "1",
@@ -94,10 +93,9 @@ export async function buy(_: FormState, form: FormData): Promise<FormState> {
 
   const purchase = normalizePurchase(
     renewing
-      ? { plan: renewing.plan, sections: renewing.sections, seats: renewing.seats, months: Number(form.get("months")) }
+      ? { plan: renewing.plan, seats: renewing.seats, months: Number(form.get("months")) }
       : {
           plan: text(form, "plan"),
-          sections: form.getAll("sections").map(String),
           seats: Number(form.get("seats")),
           months: Number(form.get("months")),
         },

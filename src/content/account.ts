@@ -65,7 +65,7 @@ export const account = {
     buy: bi("Buy a subscription", "خرید اشتراک"),
     buyMore: bi("Buy another subscription", "خرید اشتراک دیگر"),
     renew: bi("Renew", "تمدید"),
-    allSections: bi("All 9 sections", "هر ۹ بخش"),
+    allSections: bi("All 10 sections", "هر ۱۰ بخش"),
     until: bi("Until {date}", "تا {date}"),
     daysLeft: bi("{n} days left", "{n} روز مانده"),
     status: {
@@ -124,7 +124,7 @@ export const account = {
     lead: bi("Choose a plan and period; access opens as soon as the payment is confirmed.", "طرح و مدت را انتخاب کنید؛ دسترسی بلافاصله پس از تأیید پرداخت باز می‌شود."),
     plan: bi("Plan", "طرح"),
     sections: bi("Sections", "بخش‌ها"),
-    all: bi("All 9 sections (15% off)", "هر ۹ بخش (۱۵٪ تخفیف)"),
+    all: bi("All 10 sections (10% off)", "هر ۱۰ بخش (۱۰٪ تخفیف)"),
     seats: bi("Number of users (at least 6)", "تعداد کاربران (حداقل ۶)"),
     months: bi("Subscription period", "مدت اشتراک"),
     method: bi("Payment", "روش پرداخت"),
@@ -153,8 +153,8 @@ export const account = {
         hint: bi("Just for you, or for your whole team?", "فقط برای خودتان، یا برای کل تیم؟"),
       },
       scope: {
-        title: bi("Which vaults should open?", "کدام گنجینه‌ها برایتان باز شود؟"),
-        hint: bi("Pick sections one by one, or all nine with 15% off.", "بخش‌ها را یکی‌یکی انتخاب کنید، یا هر ۹ بخش را با ۱۵٪ تخفیف."),
+        title: bi("These vaults open for you", "این گنجینه‌ها برایتان باز می‌شود"),
+        hint: bi("The individual plan opens all 10 sections, pharmacy included.", "اشتراک فردی هر ۱۰ بخش، از جمله داروخانه، را باز می‌کند."),
       },
       seats: {
         title: bi("How many people get a key?", "چند نفر کلید گنجینه را می‌گیرند؟"),
@@ -180,12 +180,11 @@ export const account = {
   gate: {
     title: bi("This section is for subscribers", "این بخش ویژه مشترکین است"),
     text: bi(
-      "Subscribe to “{section}” alone, or get full access to all 9 sections.",
-      "برای دیدن «{section}» اشتراک همین بخش یا دسترسی کامل به هر ۹ بخش را تهیه کنید.",
+      "“{section}” is part of the subscription, which opens all 10 sections.",
+      "برای دیدن «{section}» اشتراک تهیه کنید؛ اشتراک، دسترسی کامل به هر ۱۰ بخش را باز می‌کند.",
     ),
     signIn: bi("Already subscribed? Sign in", "اشتراک دارید؟ وارد شوید"),
-    buySection: bi("This section — {price} Toman / month", "همین بخش — {price} تومان در ماه"),
-    buyAll: bi("All 9 sections — {price} Toman / month", "هر ۹ بخش — {price} تومان در ماه"),
+    buyAll: bi("All 10 sections — {price} Toman / month", "هر ۱۰ بخش — {price} تومان در ماه"),
     plans: bi("Compare plans", "مقایسه طرح‌ها"),
     loading: bi("Checking access…", "در حال بررسی دسترسی…"),
   },

@@ -8,7 +8,7 @@ import { getLocale } from "@/i18n/locale";
 import { getUser } from "@/lib/auth";
 import { formatNumber } from "@/lib/format";
 import { planName, sectionsLabel } from "@/lib/labels";
-import { isPaidSection, monthOptions, paidSections } from "@/lib/pricing";
+import { monthOptions } from "@/lib/pricing";
 import { getSubscription } from "@/lib/subscriptions";
 import { onlinePaymentEnabled } from "@/lib/zarinpal";
 
@@ -39,9 +39,7 @@ async function Checkout({ locale, searchParams }: { locale: Locale; searchParams
         }
       : null;
 
-  // ?plan=team, ?s=qa,qc (sections) or ?s=all, ?seats=, ?months= preselect the form;
-  // ?ready=1 (back from sign-up) opens it at the last key.
-  const picked = String(search.s ?? "all").split(",").filter(isPaidSection);
+  // ?plan=team, ?seats=, ?months= preselect the form; ?ready=1 (back from sign-up) opens it at the last key.
   const months = Number(search.months);
   return (
     <BuyForm
@@ -49,7 +47,6 @@ async function Checkout({ locale, searchParams }: { locale: Locale; searchParams
       key={new URLSearchParams(Object.entries(search).map(([k, v]) => [k, String(v)])).toString()}
       locale={locale}
       initialPlan={search.plan === "team" ? "team" : "individual"}
-      initialSections={picked.length ? picked : [...paidSections]}
       initialSeats={Math.max(copy.plans.pricing.teamUsers, Math.floor(Number(search.seats)) || 0)}
       initialMonths={monthOptions.includes(months as (typeof monthOptions)[number]) ? months : 1}
       startAtLast={search.ready === "1"}

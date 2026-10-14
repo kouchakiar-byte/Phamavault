@@ -137,13 +137,12 @@ export default async function HomePage() {
   const { pricing } = plans;
   /** Fill {section}, {full}, {team} and {extraUser} with formatted prices. */
   const priceText = (s: string) =>
-    s.replace(/\{(section|full|team|extraUser)\}/g, (_, k: "section" | "full" | "team" | "extraUser") => num(pricing[k]));
+    s.replace(/\{(full|team|extraUser)\}/g, (_, k: "full" | "team" | "extraUser") => num(pricing[k]));
   const both = (b: { en: string; fa: string }) => ({ en: priceText(b.en), fa: priceText(b.fa) });
   const rows = plans.compareRows;
   const priceRows: { label: { en: string; fa: string }; values: ({ en: string; fa: string } | boolean)[] }[] = [
     { label: rows.users, values: rows.usersValues },
     { label: rows.price, values: [both(rows.priceIndividual), both(rows.priceTeam)] },
-    { label: rows.single, values: [both(rows.singleValue), false] },
     { label: rows.extraUsers, values: [false, both(rows.extraUsersValue)] },
   ];
 
@@ -460,7 +459,7 @@ export default async function HomePage() {
               const featured = plan.style === "primary";
               const badge = "badge" in plan ? plan.badge : undefined;
               const price = plan.id === "individual" ? pricing.full : pricing.team;
-              const was = plan.id === "individual" ? pricing.sections * pricing.section : pricing.teamUsers * pricing.full;
+              const was = plan.id === "individual" ? pricing.fullList : pricing.teamList;
               return (
                 <div
                   key={plan.id}
