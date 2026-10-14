@@ -1,14 +1,9 @@
 import { copy } from "@/content/site";
 import { sections, type SectionSlug } from "@/content/sections";
 
-/**
- * The nine sections a subscription can unlock: everything but the enterprise
- * page and the pharmacy section, which is open while its own plan is planned.
- */
-export type PaidSection = Exclude<SectionSlug, "enterprise" | "pharmacy">;
-export const paidSections = sections
-  .map((s) => s.slug)
-  .filter((s): s is PaidSection => s !== "enterprise" && s !== "pharmacy");
+/** The ten sections a subscription unlocks: everything but the enterprise page. */
+export type PaidSection = Exclude<SectionSlug, "enterprise">;
+export const paidSections = sections.map((s) => s.slug).filter((s): s is PaidSection => s !== "enterprise");
 
 export const isPaidSection = (value: string): value is PaidSection =>
   (paidSections as readonly string[]).includes(value);
@@ -23,16 +18,11 @@ export type Purchase = { plan: PlanId; sections: PaidSection[]; seats: number; m
 const p = copy.plans.pricing;
 
 /**
- * Cleans a purchase coming from a form: the team plan always covers every
- * section, the individual plan always has one seat. Returns null when the
- * input can't be a valid purchase.
+ * Cleans a purchase coming from a form: both plans cover every section, the
+ * individual plan always has one seat. Returns null when the input can't be a
+ * valid purchase.
  */
-export function normalizePurchase(input: {
-  plan: string;
-  sections: string[];
-  seats: number;
-  months: number;
-}): Purchase | null {
+export function normalizePurchase(input: { plan: string; seats: number; months: number }): Purchase | null {
   if (!monthOptions.includes(input.months as (typeof monthOptions)[number])) return null;
   if (input.plan === "team") {
     const seats = Math.floor(input.seats);
@@ -40,24 +30,19 @@ export function normalizePurchase(input: {
     return { plan: "team", sections: [...paidSections], seats, months: input.months };
   }
   if (input.plan !== "individual") return null;
-  const chosen = paidSections.filter((s) => input.sections.includes(s));
-  if (chosen.length === 0) return null;
-  return { plan: "individual", sections: chosen, seats: 1, months: input.months };
+  return { plan: "individual", sections: [...paidSections], seats: 1, months: input.months };
 }
 
 /** Price per month in Toman, from the published prices in `copy.plans.pricing`. */
-export function monthlyPrice({ plan, sections: chosen, seats }: Omit<Purchase, "months">): number {
+export function monthlyPrice({ plan, seats }: Pick<Purchase, "plan" | "seats">): number {
   if (plan === "team") return p.team + Math.max(0, seats - p.teamUsers) * p.extraUser;
-  return chosen.length >= p.sections ? p.full : chosen.length * p.section;
+  return p.full;
 }
 
 export const totalPrice = (purchase: Purchase): number => monthlyPrice(purchase) * purchase.months;
 
-/**
- * Monthly price without the plan discount: every section bought separately,
- * or six individual full-access licences plus the extra users.
- */
-export function listPrice({ plan, sections: chosen, seats }: Omit<Purchase, "months">): number {
-  if (plan === "team") return p.teamUsers * p.full + Math.max(0, seats - p.teamUsers) * p.extraUser;
-  return chosen.length * p.section;
+/** Monthly price before the plan discount (10% individual, 15% team); extra users are not discounted. */
+export function listPrice({ plan, seats }: Pick<Purchase, "plan" | "seats">): number {
+  if (plan === "team") return p.teamList + Math.max(0, seats - p.teamUsers) * p.extraUser;
+  return p.fullList;
 }

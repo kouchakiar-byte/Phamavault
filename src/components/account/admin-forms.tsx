@@ -3,10 +3,9 @@
 import { useActionState, useState } from "react";
 import { grant, resetPassword, type AdminState } from "@/app/[lang]/admin/actions";
 import { account } from "@/content/account";
-import { sections } from "@/content/sections";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
-import { isPaidSection, monthOptions } from "@/lib/pricing";
+import { monthOptions } from "@/lib/pricing";
 
 const { admin: t, auth, buy } = account;
 
@@ -42,25 +41,11 @@ export function GrantForm({ locale }: { locale: Locale }) {
           ))}
         </select>
       </div>
-      {plan === "team" ? (
+      {plan === "team" && (
         <div>
           <label className={label} htmlFor="g-seats">{t.seats[locale]}</label>
           <input id="g-seats" name="seats" type="number" min={6} defaultValue={6} dir="ltr" className="field-input mt-1" />
         </div>
-      ) : (
-        <fieldset className="sm:col-span-2 lg:col-span-3">
-          <legend className={label}>{buy.sections[locale]}</legend>
-          <div className="mt-1 flex flex-wrap gap-x-5 gap-y-2">
-            {sections
-              .filter((s) => isPaidSection(s.slug))
-              .map((s) => (
-                <label key={s.slug} className="flex items-center gap-2 text-sm">
-                  <input type="checkbox" name="sections" value={s.slug} defaultChecked className="accent-molecule-600" />
-                  {s.title[locale]}
-                </label>
-              ))}
-          </div>
-        </fieldset>
       )}
       <div>
         <label className={label} htmlFor="g-amount">{t.amount[locale]}</label>

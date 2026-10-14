@@ -74,7 +74,6 @@ export async function grant(_: AdminState, form: FormData): Promise<AdminState> 
   if (!ownerId) return { error: "userNotFound" };
   const purchase = normalizePurchase({
     plan: text(form, "plan"),
-    sections: form.getAll("sections").map(String),
     seats: Number(form.get("seats")),
     months: Number(form.get("months")),
   });

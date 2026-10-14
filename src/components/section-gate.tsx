@@ -51,9 +51,9 @@ function Paywall({ section, locale, signedIn }: { section: PaidSection; locale: 
         <p className="mt-2 text-lg font-semibold text-molecule-700">{title}</p>
         <p className="mt-4 text-muted">{t.text[locale].replace("{section}", title)}</p>
         <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:justify-center">
-          <ButtonLink href={`${buy}?s=all`}>{t.buyAll[locale].replace("{price}", formatNumber(p.full, locale))}</ButtonLink>
-          <ButtonLink href={`${buy}?s=${section}`} variant="ghost" arrow={false}>
-            {t.buySection[locale].replace("{price}", formatNumber(p.section, locale))}
+          <ButtonLink href={buy}>{t.buyAll[locale].replace("{price}", formatNumber(p.full, locale))}</ButtonLink>
+          <ButtonLink href={`${buy}?plan=team`} variant="ghost" arrow={false}>
+            {copy.plans.items[1].name[locale]}
           </ButtonLink>
         </div>
         <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">

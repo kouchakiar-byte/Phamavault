@@ -187,7 +187,7 @@ export const copy = {
 
   sectionsIntro: {
     eyebrow: bi("Inside the vault", "بخش‌های پلتفرم"),
-    title: bi("Nine specialised sections, one integrated platform", "نُه بخش تخصصی در یک پلتفرم یکپارچه"),
+    title: bi("Ten specialised sections, one integrated platform", "ده بخش تخصصی در یک پلتفرم یکپارچه"),
     lead: bi(
       "The sections are designed to work together: from an excipient you move to its suppliers, to the calculation that uses it and to the regulatory requirement that governs it.",
       "بخش‌ها برای کار در کنار هم طراحی شده‌اند: از یک ماده جانبی به تأمین‌کنندگان آن، به محاسبه‌ای که در آن به کار می‌رود و به الزام رگولاتوری حاکم بر آن می‌رسید.",
@@ -273,7 +273,16 @@ export const copy = {
       "دو روش اشتراک: فردی برای یک کاربر روی یک IP، یا تیمی و سازمانی برای شش کاربر و بیشتر. قیمت‌ها به تومان و ماهانه است.",
     ),
     /** Prices in Toman per month. */
-    pricing: { section: 289_000, full: 2_210_000, sections: 9, team: 11_934_000, teamUsers: 6, extraUser: 1_000_000 },
+    pricing: {
+      /** Individual: every paid section for one user; `fullList` is the price before the 10% discount. */
+      full: 2_210_000,
+      fullList: 2_455_000,
+      /** Team: six users; `teamList` is the price before the 15% discount. */
+      team: 11_934_000,
+      teamList: 14_040_000,
+      teamUsers: 6,
+      extraUser: 1_000_000,
+    },
     currency: bi("Toman", "تومان"),
     perMonth: bi("per month", "در ماه"),
     items: [
@@ -281,13 +290,13 @@ export const copy = {
         id: "individual",
         name: bi("Individual", "فردی"),
         who: bi("For specialists and formulators, students and pharmacies", "برای کارشناسان و فرمولاتورها، دانشجویان و داروخانه‌ها"),
-        priceFor: bi("Full access to all 9 sections · 1 user on 1 IP", "دسترسی کامل به هر ۹ بخش · یک کاربر روی یک IP"),
-        saving: bi("15% off", "۱۵٪ تخفیف"),
-        savingNote: bi("against buying the 9 sections separately", "نسبت به خرید جداگانه ۹ بخش"),
-        extra: bi("Or a single section: {section} Toman per month", "یا هر بخش جداگانه: {section} تومان در ماه"),
+        priceFor: bi("Full access to all 10 sections · 1 user on 1 IP", "دسترسی کامل به هر ۱۰ بخش · یک کاربر روی یک IP"),
+        saving: bi("10% off", "۱۰٪ تخفیف"),
+        savingNote: bi("on the full monthly price", "نسبت به قیمت پایه ماهانه"),
+        extra: bi("Every section included, pharmacy too", "همه بخش‌ها، از جمله داروخانه، در یک اشتراک"),
         features: [
           bi("One user on one IP", "یک کاربر روی یک IP"),
-          bi("All 9 specialised sections, or only the sections you need", "هر ۹ بخش تخصصی، یا فقط بخش‌هایی که لازم دارید"),
+          bi("All 10 specialised sections, pharmacy included", "هر ۱۰ بخش تخصصی، همراه با بخش داروخانه"),
           bi("Supplier & manufacturer bank", "بانک تأمین‌کنندگان و تولیدکنندگان"),
           bi("Formulation, physical pharmacy and analytical calculators", "ماشین‌حساب‌های فرمولاسیون، فیزیکال فارماسی و آنالیز"),
           bi("SOP library and QA, QC and regulatory references", "کتابخانه SOP و مراجع QA، QC و رگولاتوری"),
@@ -300,12 +309,12 @@ export const copy = {
         name: bi("Team / Organisation", "تیمی / سازمانی"),
         who: bi("For R&D, QC, QA, regulatory and supply teams of pharmaceutical companies", "برای واحدهای R&D، QC، QA، رگولاتوری و تأمین شرکت‌های دارویی"),
         priceFor: bi("6 users on different IPs · full access", "۶ کاربر با IPهای مختلف · دسترسی کامل"),
-        saving: bi("10% off", "۱۰٪ تخفیف"),
-        savingNote: bi("against six individual subscriptions", "نسبت به شش اشتراک فردی"),
+        saving: bi("15% off", "۱۵٪ تخفیف"),
+        savingNote: bi("on the full monthly price for six users", "نسبت به قیمت پایه ماهانه شش کاربر"),
         extra: bi("Each additional user from the 7th: {extraUser} Toman per month", "هر کاربر اضافه از کاربر هفتم: {extraUser} تومان در ماه"),
         features: [
           bi("Six users on different IPs, expandable", "شش کاربر با IPهای مختلف، قابل افزایش"),
-          bi("Full access to all 9 sections for every user", "دسترسی کامل به هر ۹ بخش برای همه کاربران"),
+          bi("Full access to all 10 sections for every user", "دسترسی کامل به هر ۱۰ بخش برای همه کاربران"),
           bi("User management by the head of the unit", "مدیریت کاربران توسط مدیر واحد"),
           bi("Official quotation for the company", "پیش‌فاکتور رسمی برای شرکت"),
           bi("Dedicated support", "پشتیبانی اختصاصی"),
@@ -320,15 +329,14 @@ export const copy = {
       users: bi("Users", "تعداد کاربران"),
       usersValues: [bi("1 user on 1 IP", "یک کاربر روی یک IP"), bi("6 or more, on different IPs", "۶ کاربر و بیشتر، با IPهای مختلف")],
       price: bi("Monthly price", "هزینه ماهانه"),
-      priceIndividual: bi("{full} (all 9 sections)", "{full} (هر ۹ بخش)"),
+      priceIndividual: bi("{full} (all 10 sections)", "{full} (هر ۱۰ بخش)"),
       priceTeam: bi("{team} (6 users)", "{team} (۶ کاربر)"),
-      single: bi("Single-section subscription", "اشتراک تک‌بخشی"),
-      singleValue: bi("{section} per section", "{section} برای هر بخش"),
       extraUsers: bi("Additional users", "کاربر اضافه"),
       extraUsersValue: bi("{extraUser} per user", "{extraUser} برای هر کاربر"),
     },
     compare: [
-      { label: bi("All 9 specialised sections", "هر ۹ بخش تخصصی"), values: [true, true] },
+      { label: bi("All 10 specialised sections", "هر ۱۰ بخش تخصصی"), values: [true, true] },
+      { label: bi("Pharmacy section and its calculators", "بخش داروخانه و ماشین‌حساب‌های آن"), values: [true, true] },
       { label: bi("Supplier & manufacturer bank", "بانک تأمین‌کنندگان و تولیدکنندگان"), values: [true, true] },
       { label: bi("Pharmaceutical calculators and formulation tools", "ماشین‌حساب‌های داروسازی و ابزارهای فرمولاسیون"), values: [true, true] },
       { label: bi("SOP library, QA and QC references", "کتابخانه SOP و مراجع QA و QC"), values: [true, true] },
@@ -340,9 +348,7 @@ export const copy = {
     estimator: {
       title: bi("Estimate your monthly cost", "برآورد هزینه ماهانه"),
       individual: bi("Individual", "فردی"),
-      sections: bi("Number of sections", "تعداد بخش‌ها"),
-      all: bi("All 9 sections", "هر ۹ بخش"),
-      fullCheaper: bi("Full access to all 9 sections costs less than this.", "دسترسی کامل به هر ۹ بخش از این ارزان‌تر است."),
+      includes: bi("One user · all 10 sections", "یک کاربر · هر ۱۰ بخش"),
       team: bi("Team / Organisation", "تیمی / سازمانی"),
       users: bi("Number of users (6 or more)", "تعداد کاربران (۶ یا بیشتر)"),
       perUser: bi("per user", "برای هر کاربر"),
@@ -445,8 +451,8 @@ export const copy = {
   requestEmail: {
     subject: bi("PharmaVault — {plan} plan request", "PharmaVault — درخواست طرح {plan}"),
     body: bi(
-      "Name:\nCompany / university / pharmacy:\nDepartment or field of study:\nSections wanted (all 9, or which ones):\nNumber of users:\nPhone:\n",
-      "نام و نام خانوادگی:\nشرکت / دانشگاه / داروخانه:\nواحد یا رشته تحصیلی:\nبخش‌های موردنظر (هر ۹ بخش، یا کدام بخش‌ها):\nتعداد کاربران:\nشماره تماس:\n",
+      "Name:\nCompany / university / pharmacy:\nDepartment or field of study:\nPlan (individual or team):\nNumber of users:\nPhone:\n",
+      "نام و نام خانوادگی:\nشرکت / دانشگاه / داروخانه:\nواحد یا رشته تحصیلی:\nطرح موردنظر (فردی یا تیمی):\nتعداد کاربران:\nشماره تماس:\n",
     ),
   },
 

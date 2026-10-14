@@ -1,6 +1,6 @@
 import type { PoolClient } from "pg";
 import { db, transaction } from "./db";
-import { isPaidSection, type PaidSection, type PlanId } from "./pricing";
+import { isPaidSection, paidSections, type PaidSection, type PlanId } from "./pricing";
 
 /** The paywall is off until PAYWALL=on, so the site stays open while payments are being set up. */
 export const paywallEnabled = (): boolean => process.env.PAYWALL === "on";
@@ -54,15 +54,20 @@ const SELECT_SUBSCRIPTION = `
   select s.*, (select array_agg(m.mobile order by m.mobile) from subscription_members m where m.subscription_id = s.id) as members
   from subscriptions s`;
 
-/** Sections the mobile can open right now, through any active subscription it is a member of. */
+/**
+ * Sections the mobile can open right now. Every plan covers all sections, so
+ * any active subscription it is a member of opens all of them (including
+ * subscriptions bought before pharmacy joined the paid sections).
+ */
 export async function sectionsFor(mobile: string): Promise<Set<PaidSection>> {
-  const { rows } = await (await db()).query<{ section: string }>(
-    `select distinct unnest(s.sections) as section
+  const { rows } = await (await db()).query(
+    `select 1
      from subscriptions s join subscription_members m on m.subscription_id = s.id
-     where m.mobile = $1 and not s.revoked and s.starts_at <= now() and s.ends_at > now()`,
+     where m.mobile = $1 and not s.revoked and s.starts_at <= now() and s.ends_at > now()
+     limit 1`,
     [mobile],
   );
-  return new Set(rows.map((r) => r.section).filter(isPaidSection));
+  return new Set(rows.length ? paidSections : []);
 }
 
 /** Subscriptions the user owns or is a member of, newest first. */
