@@ -41,6 +41,8 @@ export const excipientSheet = {
     "برای مراجعه. پیش از استفاده در فرمولاسیون، هر مقدار را با مونوگراف جاری فارماکوپه و برگه آنالیز تأمین‌کننده تطبیق دهید.",
   ),
   printBlocked: bi("This data sheet can be viewed on pharmavault.ir only.", "این برگه فقط در سایت pharmavault.ir قابل مشاهده است."),
+  shield: bi("Content hidden to protect it. Tap or click the page to continue.", "برای حفاظت از محتوا، نمایش موقتاً پنهان شد. برای ادامه روی صفحه بزنید."),
+  viewer: bi("Viewer", "بیننده"),
   sections: {
     names: bi("Nonproprietary names", "نام‌های رسمی (فارماکوپه‌ای)"),
     synonyms: bi("Synonyms and trade names", "مترادف‌ها و نام‌های تجاری"),

@@ -303,6 +303,10 @@ body {
   user-select: none;
   -webkit-touch-callout: none;
 }
+/* Hidden at once while a screenshot may be taken (see SheetPage). */
+.pv-shielded .pv-sheet-content {
+  filter: blur(14px);
+}
 @media print {
   .pv-sheet {
     display: none !important;
