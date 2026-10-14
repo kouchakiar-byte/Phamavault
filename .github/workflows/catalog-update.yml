@@ -1,0 +1,31 @@
+# Backup trigger for the daily catalog update (18:00 Tehran = 14:30 UTC).
+# The app normally runs it from its own in-process clock; this job calls the
+# same endpoint from outside so the update still happens if that clock stops.
+# Needs the repository secret CRON_SECRET, set to the same value as the
+# CRON_SECRET environment variable of the app on Liara (16+ characters).
+name: Catalog daily update
+
+on:
+  schedule:
+    - cron: "35 14 * * *"
+  workflow_dispatch:
+  push:
+    branches: ["claude/**"]
+    paths: [".github/workflows/catalog-update.yml"]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Status before
+        run: curl -sS --max-time 60 https://pharmavault.ir/api/cron/catalog || true
+      - name: Run today's update
+        if: github.event_name != 'push'
+        env:
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          if [ -z "$CRON_SECRET" ]; then echo "::warning::CRON_SECRET is not set; only the in-app clock runs the update"; exit 0; fi
+          curl -sS --fail-with-body --max-time 900 -X POST -H "Authorization: Bearer $CRON_SECRET" https://pharmavault.ir/api/cron/catalog
+      - name: Status after
+        run: curl -sS --max-time 60 https://pharmavault.ir/api/cron/catalog || true

@@ -4,7 +4,8 @@ import type { ReactNode } from "react";
 import { BackLink, Container } from "@/components/ui";
 import { SheetHeader, SheetPage } from "@/components/excipient-sheet";
 import { excipientSheet as t } from "@/content/excipient-sheet";
-import { copy } from "@/content/site";
+import { pages } from "@/content/pages";
+import { copy, siteConfig } from "@/content/site";
 import { excipients } from "@/data";
 import { monographs } from "@/data/monographs";
 import sheets from "@/data/excipient-sheets.json";
@@ -48,13 +49,27 @@ async function load(params: PageProps<"/[lang]/excipients/[slug]">["params"]) {
   return { item, mono: monographs[item.name], pc: pubchem[item.name] };
 }
 
+/** "Name (Persian name)" for titles, from the first Persian synonym. */
+function names(item: { name: string; synonyms: string }) {
+  const fa = item.synonyms.split(/,\s*/).find((x) => /[\u0600-\u06FF]/.test(x));
+  return fa ? `${item.name} (${fa})` : item.name;
+}
+
+/** About 155 characters for the search-result snippet, cut at a word boundary. */
+function snippet(text: string) {
+  return text.length <= 158 ? text : `${text.slice(0, 155).replace(/\s+\S*$/, "")}…`;
+}
+
 export async function generateMetadata({ params }: PageProps<"/[lang]/excipients/[slug]">): Promise<Metadata> {
-  const { item } = await load(params);
-  return pageMetadata(
-    { en: `${item.name} — ${t.docTitle.en}`, fa: `${item.name} — ${t.docTitle.fa}` },
-    t.openNote,
+  const [locale, { item, mono }] = await Promise.all([getLocale(), load(params)]);
+  const title = { en: `${item.name} — ${t.docTitle.en}`, fa: `${names(item)} — ${t.docTitle.fa}` };
+  const meta = await pageMetadata(
+    title,
+    mono ? { en: snippet(mono.applications.en), fa: snippet(mono.applications.fa) } : t.openNote,
     `excipients/${excipientSlug(item.name)}`,
   );
+  // One language per title keeps it short enough for search results.
+  return { ...meta, title: title[locale], openGraph: { ...meta.openGraph, title: title[locale] } };
 }
 
 function agrees(mono: { formula: string; mw: string } | undefined, pc: PubChem): boolean {
@@ -130,6 +145,20 @@ export default async function ExcipientSheetPage({ params }: PageProps<"/[lang]/
 
   return (
     <Container className="py-8 sm:py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "PharmaVault", item: `${siteConfig.url}${href(locale)}` },
+              { "@type": "ListItem", position: 2, name: pages.excipients.title[locale], item: `${siteConfig.url}${href(locale, "excipients")}` },
+              { "@type": "ListItem", position: 3, name: item.name, item: `${siteConfig.url}${href(locale, `excipients/${excipientSlug(item.name)}`)}` },
+            ],
+          }),
+        }}
+      />
       <BackLink href={href(locale, "excipients")}>{t.back[locale]}</BackLink>
       <div className="mt-5">
         <SheetPage locale={locale} printBlocked={t.printBlocked[locale]}>
