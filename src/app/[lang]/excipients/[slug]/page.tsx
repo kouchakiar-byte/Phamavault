@@ -134,7 +134,7 @@ export default async function ExcipientSheetPage({ params }: PageProps<"/[lang]/
               <Section n={next()} title={s.names[locale]}>
                 <ul dir="ltr" className="grid gap-x-6 gap-y-0.5 sm:grid-cols-2" style={{ textAlign: "left" }}>
                   {mono.names.map((x) => (
-                    <li key={x.ph}>
+                    <li key={`${x.ph}-${x.name}`}>
                       <span className="inline-block w-16 font-semibold text-molecule-700">{PH_LABEL[x.ph] ?? x.ph}</span>
                       {x.name}
                     </li>
