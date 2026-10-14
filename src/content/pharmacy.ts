@@ -185,8 +185,6 @@ export const compounding = {
     { key: "dil", label: bi("Dilution and alligation", "رقیق‌سازی و آلیگیشن") },
     { key: "conc", label: bi("Concentration units", "تبدیل واحد غلظت") },
     { key: "pot", label: bi("Potency and salt factor", "پوتنسی و ضریب نمک") },
-    { key: "sup", label: bi("Suppository displacement", "ضریب جابه‌جایی شیاف") },
-    { key: "iso", label: bi("Isotonicity", "ایزوتونیسیته") },
     { key: "bsa", label: bi("BSA and body weight", "سطح بدن و وزن بدن") },
   ],
   refs: [
