@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans, JetBrains_Mono, Vazirmatn } from "next/font/google";
+import { InstallApp } from "@/components/install-app";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { copy, siteConfig } from "@/content/site";
@@ -100,6 +101,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
           {children}
         </main>
         <SiteFooter />
+        <InstallApp locale={locale} />
       </body>
     </html>
   );
