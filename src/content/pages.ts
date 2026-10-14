@@ -245,5 +245,15 @@ export const pages = {
     inPersian: bi("The full text of this SOP is written in Persian.", "متن کامل این دستورالعمل به فارسی است."),
     copy: bi("Copy text", "کپی متن"),
     copied: bi("Copied", "کپی شد"),
+    copyLock: {
+      title: bi("Copying is for subscribers", "کپی متن ویژه مشترکان است"),
+      text: bi(
+        "To copy the full text of the SOPs and use them in your own documents, get a subscription to the QA and QC section.",
+        "برای کپی متن کامل دستورالعمل‌ها و استفاده از آن‌ها در مستندات خودتان، اشتراک بخش تضمین و کنترل کیفیت را تهیه کنید.",
+      ),
+      buy: bi("Get a subscription", "تهیه اشتراک"),
+      plans: bi("See the plans", "مشاهده طرح‌های اشتراک"),
+      close: bi("Close", "بستن"),
+    },
   },
 };
