@@ -6,6 +6,8 @@
  * Server only.
  */
 
+import { ircGet } from "./irc-http";
+
 export const IRC_ORIGIN = "https://irc.fda.gov.ir";
 export const ircSearchUrl = (term: string, page = 1, size = 10) =>
   `${IRC_ORIGIN}/nfi/Search?Term=${encodeURIComponent(term)}&PageNumber=${page}&PageSize=${size}`;
@@ -156,13 +158,9 @@ export function groupByGeneric(drugs: IranDrug[]): IranGeneric[] {
 
 /** Fetches one register search page; throws when the register cannot be reached. */
 export async function fetchIrcPage(term: string): Promise<string> {
-  const res = await fetch(ircSearchUrl(term, 1, PAGE_SIZE), {
-    headers: { "User-Agent": "PharmaVault (+https://pharmavault.ir)", Accept: "text/html" },
-    signal: AbortSignal.timeout(12_000),
-    cache: "no-store",
-  });
-  if (!res.ok) throw new Error(`IRC ${res.status}`);
-  return res.text();
+  const res = await ircGet(ircSearchUrl(term, 1, PAGE_SIZE));
+  if (res.status < 200 || res.status >= 300) throw new Error(`IRC ${res.status}`);
+  return res.body;
 }
 
 export async function searchIranDrugs(raw: string): Promise<IranDrugResult> {
