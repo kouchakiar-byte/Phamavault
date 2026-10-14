@@ -216,12 +216,15 @@ const lockProps = (locale: Locale) => ({
   },
 });
 
-/** Copying the SOP text is for subscribers to the QA or QC section (and admins); everyone else can read only. */
+/**
+ * Copying the SOP text is for subscribers to the QA or QC section; everyone else, admins
+ * included, can read only (an admin who needs to copy can grant themselves a subscription).
+ */
 async function CopyAccess({ locale, children }: { locale: Locale; children: ReactNode }) {
   await cookies(); // request-time check
   const user = await getUser().catch(() => null);
-  let allowed = Boolean(user?.isAdmin);
-  if (user && !allowed) {
+  let allowed = false;
+  if (user) {
     const sections = await sectionsFor(user.mobile).catch(() => new Set<string>());
     allowed = sections.has("qa") || sections.has("qc");
   }
