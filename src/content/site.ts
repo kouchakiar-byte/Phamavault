@@ -283,8 +283,8 @@ export const copy = {
       teamUsers: 6,
       extraUser: 1_000_000,
       /** Pharmacy: all ten sections (the pharmacy section only opens with this plan) for one user, 15% off. */
-      pharmacy: 2_550_000,
-      pharmacyList: 3_000_000,
+      pharmacy: 8_700_000,
+      pharmacyList: 10_235_000,
     },
     currency: bi("Toman", "تومان"),
     perMonth: bi("per month", "در ماه"),
