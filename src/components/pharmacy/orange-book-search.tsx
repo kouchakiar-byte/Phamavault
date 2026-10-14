@@ -8,7 +8,8 @@ import { formatDate } from "@/lib/format";
 
 const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
 
-export function OrangeBookSearch({ locale }: { locale: Locale }) {
+/** `iran` adds the Iranian manufacturers of each ingredient (pharmacy section only). */
+export function OrangeBookSearch({ locale, iran = true }: { locale: Locale; iran?: boolean }) {
   const [query, setQuery] = useState("");
   const [discn, setDiscn] = useState(false);
   const [result, setResult] = useState<ObResult | null>(null);
@@ -105,7 +106,7 @@ export function OrangeBookSearch({ locale }: { locale: Locale }) {
                     <td className="text-xs">
                       {(p.applType === "N" ? b.nda : b.anda)[locale]} <bdi className="font-mono">{p.applNo}</bdi>
                     </td>
-                    <td className="num font-semibold">{p.te || "—"}</td>
+                    <td className="num font-semibold">{p.te}</td>
                     <td className="text-xs">{(p.type === "R" ? b.rx : p.type === "O" ? b.otc : b.discn)[locale]}</td>
                   </tr>
                 ))}
@@ -114,8 +115,8 @@ export function OrangeBookSearch({ locale }: { locale: Locale }) {
           </div>
           {g.more > 0 && <p className="mt-2 text-xs text-muted">{t.more[locale].replace("{n}", n(g.more, locale))}</p>}
 
-          <h4 className="mt-4 text-sm font-bold text-vault-900">{t.iranTitle[locale]}</h4>
-          {g.iran.length === 0 ? (
+          {iran && <h4 className="mt-4 text-sm font-bold text-vault-900">{t.iranTitle[locale]}</h4>}
+          {!iran ? null : g.iran.length === 0 ? (
             <p className="mt-1 text-sm text-muted">{t.iranEmpty[locale]}</p>
           ) : (
             <div className="mt-2 overflow-x-auto rounded-xl border border-line">

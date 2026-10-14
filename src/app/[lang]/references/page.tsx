@@ -1,6 +1,14 @@
-import { BookMarked, ExternalLink } from "lucide-react";
+import { BookMarked, ExternalLink, Search } from "lucide-react";
 import { LegalPage } from "@/components/legal-page";
-import { referenceLabels, referenceSections, referencesPage, referencesPaid, referencesReviewedOn } from "@/content/references";
+import { OrangeBookSearch } from "@/components/pharmacy/orange-book-search";
+import {
+  referenceLabels,
+  referenceSections,
+  referencesOrangeBook,
+  referencesPage,
+  referencesPaid,
+  referencesReviewedOn,
+} from "@/content/references";
 import { getLocale } from "@/i18n/locale";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -13,6 +21,22 @@ export default async function ReferencesPage() {
       <p className="rounded-xl border border-line bg-vault-50 px-4 py-3 text-sm text-muted">
         {referencesReviewedOn[locale]} {referencesPaid[locale]}
       </p>
+      {/* Our searchable Orange Book comes first, before the pharmacopoeias */}
+      <section id="orange-book-search" className="scroll-mt-24 rounded-card border-2 border-molecule-500/60 bg-white p-5 sm:p-6">
+        <div className="flex items-start gap-3">
+          <span className="grid size-9 shrink-0 place-items-center rounded-full bg-molecule-600 text-white">
+            <Search className="size-4" aria-hidden="true" />
+          </span>
+          <div className="min-w-0">
+            <h2 className="text-lg font-bold leading-snug text-vault-900">{referencesOrangeBook.title[locale]}</h2>
+            <p className="mt-2 leading-loose text-ink">{referencesOrangeBook.lead[locale]}</p>
+          </div>
+        </div>
+        <div className="mt-4">
+          <OrangeBookSearch locale={locale} iran={false} />
+        </div>
+        <p className="mt-4 text-sm leading-relaxed text-muted">{referencesOrangeBook.note[locale]}</p>
+      </section>
       <ol className="space-y-6">
         {referenceSections.map((s) => (
           <li key={s.key} id={s.key} className="scroll-mt-24 rounded-card border border-line bg-white p-5 sm:p-6">
