@@ -104,7 +104,6 @@ export async function SiteHeader() {
             closeLabel={nav.close[locale]}
             items={[
               { href: href(locale), label: nav.home[locale] },
-              { href: href(locale, "references"), label: referenceLabels.nav[locale] },
               ...sections.map((s) => ({ href: href(locale, s.href), label: s.title[locale] })),
               { href: href(locale, "#plans"), label: nav.plans[locale] },
               { href: href(locale, "account"), label: account.nav.account[locale] },

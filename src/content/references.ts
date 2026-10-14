@@ -31,11 +31,6 @@ export const referencesPage: LegalPage = {
   sections: [],
 };
 
-export const referencesHome = {
-  chip: bi("References (رفرنس‌ها)", "رفرنس‌ها (References)"),
-  eyebrow: bi("Pharmacopoeias · regulators · drug information", "فارماکوپه‌ها · نهادهای رگولاتوری · اطلاعات دارویی"),
-};
-
 export const referencesReviewedOn = bi("Editions last reviewed: October 2026.", "آخرین بازبینی ویرایش‌ها: مهر ۱۴۰۵.");
 export const referencesPaid = bi(
   "Links open the official site in a new tab. The full texts of USP–NF, BP, Ph. Eur. need a subscription; the others are free.",
@@ -48,7 +43,6 @@ export const referenceLabels = {
   links: bi("Official links", "لینک‌های رسمی"),
   nav: bi("References and pharmacopoeias", "رفرنس‌ها و فارماکوپه‌ها"),
   short: bi("References", "رفرنس‌ها"),
-  seeAll: bi("All references and pharmacopoeias", "همه رفرنس‌ها و فارماکوپه‌ها"),
 };
 
 /** The searchable Orange Book at the top of the references page. */

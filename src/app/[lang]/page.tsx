@@ -7,7 +7,6 @@ import {
   Factory,
   FileCheck,
   FlaskConical,
-  BookOpen,
   BookOpenText,
   Pill,
   Mail,
@@ -22,7 +21,7 @@ import { PriceEstimator } from "@/components/price-estimator";
 import { SupplierSpotlight } from "@/components/supplier-spotlight";
 import { BiTitle, ButtonLink, Container, MoleculePattern, SectionHead } from "@/components/ui";
 import { calculation, calculations, featuredCalculations } from "@/content/calculations";
-import { referenceLabels, referenceSections, referencesHome, referencesPage } from "@/content/references";
+import { referenceSections } from "@/content/references";
 import { sections } from "@/content/sections";
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
@@ -96,6 +95,8 @@ function sectionHighlight(slug: string, n: (x: number) => string, c: Counts): Bi
         `${n(sops.items.length)} SOPs · ${n(Object.keys(sops.departments).length)} departments`,
         `${n(sops.items.length)} دستورالعمل · ${n(Object.keys(sops.departments).length)} واحد`,
       );
+    case "references":
+      return bi(`${n(referenceSections.length)} references · Orange Book search`, `${n(referenceSections.length)} رفرنس · جستجوی Orange Book`);
     default:
       return null;
   }
@@ -189,18 +190,6 @@ export default async function HomePage() {
                 {hero.seePlans[locale]}
               </ButtonLink>
             </div>
-            <div className="mt-10">
-              <Link href={href(locale, "references")} className="inline-flex items-center gap-2 rounded-full border border-molecule-400/60 bg-molecule-500/10 px-4 py-2 text-sm font-semibold text-molecule-400 transition hover:bg-molecule-500/20">
-                {hero.referencesLabel[locale]} {locale === "fa" ? "←" : "→"}
-              </Link>
-              <ul className="mt-3 flex flex-wrap gap-2" dir="ltr" style={{ justifyContent: locale === "fa" ? "flex-end" : "flex-start" }}>
-                {hero.references.map((r) => (
-                  <li key={r} className="rounded-md border border-white/15 bg-white/[0.04] px-2.5 py-1 font-mono text-xs text-vault-100/80">
-                    {r}
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
 
           {/* The "vault" panel: every section one click away */}
@@ -251,42 +240,6 @@ export default async function HomePage() {
             ))}
           </Container>
         </div>
-      </section>
-
-      {/* References and pharmacopoeias: a page of its own, not a section */}
-      <section className="border-b border-line bg-white py-20 lg:py-24">
-        <Container>
-          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <div className="max-w-3xl">
-              <Link
-                href={href(locale, "references")}
-                className="inline-flex items-center gap-1.5 rounded-full bg-molecule-50 px-3.5 py-1.5 text-sm font-semibold text-molecule-700 ring-1 ring-molecule-400/40 transition hover:bg-molecule-100"
-              >
-                <BookOpen className="size-4" aria-hidden="true" />
-                {referencesHome.chip[locale]}
-              </Link>
-              <p className="mt-3 text-sm font-semibold tracking-wide text-molecule-700">{referencesHome.eyebrow[locale]}</p>
-              <BiTitle as="h2" text={referencesPage.title} locale={locale} className="mt-3 text-3xl font-bold tracking-tight text-vault-900 sm:text-4xl" />
-              <p className="mt-4 text-lg leading-relaxed text-muted">{referencesPage.lead[locale]}</p>
-            </div>
-            <ButtonLink href={href(locale, "references")}>{referenceLabels.seeAll[locale]}</ButtonLink>
-          </div>
-          <ul className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-            {referenceSections.map((s) => (
-              <li key={s.key}>
-                <Link
-                  href={`${href(locale, "references")}#${s.key}`}
-                  className="flex h-full flex-col gap-1 rounded-card border border-line bg-paper p-4 transition hover:border-molecule-500 hover:bg-molecule-50"
-                >
-                  <span className="font-mono text-sm font-semibold text-vault-900" dir="ltr" style={{ textAlign: "start" }}>
-                    {s.chip}
-                  </span>
-                  {s.title[locale] !== s.chip && <span className="text-xs leading-relaxed text-muted">{s.title[locale]}</span>}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </Container>
       </section>
 
       {/* Statement */}
