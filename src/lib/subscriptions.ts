@@ -62,7 +62,10 @@ export async function sectionsFor(mobile: string): Promise<Set<PaidSection>> {
      where m.mobile = $1 and not s.revoked and s.starts_at <= now() and s.ends_at > now()`,
     [mobile],
   );
-  return new Set(rows.map((r) => r.section).filter(isPaidSection));
+  const open = new Set(rows.map((r) => r.section).filter(isPaidSection));
+  // Every plan includes the references, also subscriptions bought before it became a section.
+  if (open.size) open.add("references");
+  return open;
 }
 
 /** Subscriptions the user owns or is a member of, newest first. */

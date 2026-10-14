@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Atom, BookOpen, Briefcase, Calculator, Factory, FileCheck, FlaskConical, Layers, Pill, ShieldCheck, TestTubes } from "lucide-react";
+import { Atom, BookMarked, BookOpen, Briefcase, Calculator, Factory, FileCheck, FlaskConical, Layers, Pill, ShieldCheck, TestTubes } from "lucide-react";
 import { bi, type Bi } from "@/i18n/bi";
 
 export type SectionGroup = "knowledge" | "databases" | "tools" | "company";
@@ -126,6 +126,18 @@ export const sections = [
     description: bi(
       "The pharmaceutical quality system (ICH Q10), quality risk management tools and a GMP-aligned SOP library for every department, with full text.",
       "سیستم کیفیت دارویی (ICH Q10)، ابزارهای مدیریت ریسک کیفیت و کتابخانه دستورالعمل‌های منطبق بر GMP برای همه واحدها، همراه با متن کامل.",
+    ),
+  },
+  {
+    slug: "references",
+    href: "references",
+    plate: "RF",
+    icon: BookMarked,
+    group: "knowledge",
+    title: bi("Pharmaceutical references and pharmacopoeias", "رفرنس‌ها و فارماکوپه‌ها در داروسازی"),
+    description: bi(
+      "USP–NF, BP, Ph. Eur., JP and the other pharmacopoeias, regulators and drug-information sources: the edition in force, the latest published and official links, with a searchable Orange Book.",
+      "فارماکوپه‌های آمریکا، بریتانیا، اروپا و ژاپن \u2066(USP–NF, BP, Ph. Eur., JP)\u2069 و دیگر مراجع رگولاتوری و اطلاعات دارویی: ویرایش لازم‌الاجرا، آخرین ویرایش منتشرشده و لینک رسمی هر رفرنس، همراه با جستجوی Orange Book.",
     ),
   },
   {
