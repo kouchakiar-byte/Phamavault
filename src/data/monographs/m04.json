@@ -1,0 +1,3407 @@
+{
+ "Glucose, liquid": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Liquid Glucose"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Glucose, Liquid"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Liquid Glucose"
+   }
+  ],
+  "tradeNames": "Corn syrup; glucose syrup; starch syrup; liquid dextrose",
+  "chemicalName": "Aqueous mixture of D-glucose, maltose and higher oligo- and polysaccharides (dextrins) obtained by partial hydrolysis of starch",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Liquid glucose serves as a sweetening and viscosity-building base in oral syrups and solutions, and as a binder in wet granulation. In tablet sugar coating it is added in small proportions to the sucrose syrup to slow sucrose crystallisation and give a smoother, less brittle coat. It is also widely used in confectionery and other foods.",
+   "fa": "گلوکز مایع به عنوان پایه شیرین‌کننده و افزایش‌دهنده ویسکوزیته در شربت‌ها و محلول‌های خوراکی و نیز به عنوان چسباننده در گرانولاسیون مرطوب به کار می‌رود. در روکش قندی قرص، مقدار کمی از آن به شربت ساکارز افزوده می‌شود تا کریستالیزه شدن ساکارز را کند کند و روکشی صاف‌تر و کم‌شکننده‌تر به دست آید. در شیرینی‌سازی و سایر مواد غذایی نیز به‌طور گسترده مصرف می‌شود."
+  },
+  "description": {
+   "en": "A clear, colourless to pale yellowish-brown, thick, syrupy liquid with a sweet taste and practically no odour. The proportion of glucose, maltose and higher saccharides depends on how far the starch has been hydrolysed, which is expressed as the dextrose equivalent (DE).",
+   "fa": "مایع شربتی غلیظ، شفاف، بی‌رنگ تا قهوه‌ای مایل به زرد کم‌رنگ، با طعم شیرین و تقریباً بی‌بو. نسبت گلوکز، مالتوز و قندهای بالاتر به میزان هیدرولیز نشاسته بستگی دارد که با شاخص معادل دکستروز (DE) بیان می‌شود."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Dextrose equivalent",
+     "fa": "معادل دکستروز (DE)"
+    },
+    "v": {
+     "en": "not less than 20 (Ph. Eur.); commercial grades commonly about 30–60",
+     "fa": "دست‌کم 20 (فارماکوپه اروپا)؛ گریدهای تجاری معمولاً حدود 30–60"
+    }
+   },
+   {
+    "k": {
+     "en": "Dry substance",
+     "fa": "ماده خشک"
+    },
+    "v": {
+     "en": "typically about 70–80% w/w",
+     "fa": "معمولاً حدود 70–80٪ وزنی"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 1.4 g/cm³, depending on dry-substance content",
+     "fa": "حدود 1.4 g/cm³ بسته به مقدار ماده خشک"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "miscible with water; only partly miscible with ethanol",
+     "fa": "قابل اختلاط با آب؛ با اتانول فقط به‌طور نسبی قابل اختلاط"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "high; rises with dry-substance content and falls steeply on warming",
+     "fa": "زیاد؛ با افزایش ماده خشک بالا می‌رود و با گرم کردن به‌شدت کاهش می‌یابد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable when kept in well-closed containers in a cool place. Prolonged heating, particularly in the presence of amines or alkali, darkens the material. Diluted solutions support microbial growth and need preservation.",
+   "fa": "در ظرف کاملاً بسته و جای خنک پایدار است. حرارت طولانی، به‌ویژه در حضور آمین‌ها یا قلیا، باعث تیره شدن آن می‌شود. محلول‌های رقیق آن محیط مناسبی برای رشد میکروب‌ها هستند و به نگهدارنده نیاز دارند."
+  },
+  "incompatibilities": {
+   "en": "Contains reducing sugars and can take part in Maillard browning with primary and secondary amines. Incompatible with strong oxidising agents.",
+   "fa": "حاوی قندهای احیاکننده است و می‌تواند با آمین‌های نوع اول و دوم واکنش قهوه‌ای شدن میلارد بدهد. با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Produced by incomplete hydrolysis of starch (usually maize, potato or wheat starch) with acids and/or enzymes. The hydrolysate is neutralised, decolourised, filtered and concentrated under vacuum to the required solids content.",
+   "fa": "از هیدرولیز ناقص نشاسته (معمولاً نشاسته ذرت، سیب‌زمینی یا گندم) با اسید و/یا آنزیم تهیه می‌شود. هیدرولیزات حاصل خنثی، رنگ‌بری و فیلتر می‌شود و سپس تحت خلأ تا مقدار ماده خشک مورد نظر تغلیظ می‌گردد."
+  },
+  "safety": {
+   "en": "Regarded as non-toxic and non-irritant; it is digested and absorbed as a carbohydrate source. Its sugar content should be taken into account in products for diabetic patients, and it is cariogenic.",
+   "fa": "غیرسمی و غیرمحرک شناخته می‌شود و به عنوان منبع کربوهیدرات هضم و جذب می‌شود. محتوای قندی آن در فرآورده‌های مخصوص بیماران دیابتی باید در نظر گرفته شود و پوسیدگی‌زا است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Spills are slippery and should be cleaned up with water.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. ریختگی آن سطوح را لغزنده می‌کند و باید با آب پاک شود."
+  },
+  "regulatory": {
+   "en": "Corn syrup is GRAS listed. Liquid glucose is included in the FDA Inactive Ingredient Database (oral preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "شربت ذرت (corn syrup) در فهرست GRAS قرار دارد. گلوکز مایع در FDA Inactive Ingredient Database (فرآورده‌های خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Dextrose; glucose, liquid, spray-dried (dried glucose syrup); maltodextrin; sucrose.",
+   "fa": "دکستروز؛ گلوکز مایع اسپری‌درای (شربت گلوکز خشک‌شده)؛ مالتودکسترین؛ ساکارز."
+  },
+  "comments": {
+   "en": "Grades with different dextrose equivalents behave differently: low-DE syrups are more viscous and less sweet, while high-DE syrups are sweeter, more hygroscopic and more prone to browning. Spray-dried liquid glucose is available as a powder and has a separate Ph. Eur. monograph.",
+   "fa": "گریدهایی با DE متفاوت رفتار متفاوتی دارند: شربت‌های با DE پایین ویسکوزتر و کم‌شیرین‌ترند، در حالی که شربت‌های با DE بالا شیرین‌تر، رطوبت‌گیرتر و مستعدتر به قهوه‌ای شدن هستند. گلوکز مایع اسپری‌درای به صورت پودر در دسترس است و تک‌نگاری جداگانه‌ای در فارماکوپه اروپا دارد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "gras"
+  ]
+ },
+ "Glycerin": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Glycerol"
+   },
+   {
+    "ph": "JP",
+    "name": "Glycerin"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Glycerol"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Glycerin"
+   }
+  ],
+  "tradeNames": "Croderol; glycerine; glycerol; glycerolum; 1,2,3-propanetriol; trihydroxypropane glycerol; E422",
+  "chemicalName": "Propane-1,2,3-triol",
+  "formula": "C3H8O3",
+  "mw": "92.09",
+  "applications": {
+   "en": "Used in a wide range of oral, ophthalmic, otic, topical and parenteral products as a solvent, co-solvent, humectant, plasticiser, sweetener and tonicity agent. Typical concentrations: antimicrobial preservative < 20%; emollient and humectant ≤ 30%; aqueous gel vehicle 5–15%; non-aqueous gel vehicle 50–80%; ophthalmic preparations 0.5–3%; solvent in parenteral products ≤ 50%; sweetener in alcoholic elixirs ≤ 20%. It is also used as a plasticiser in film coatings and soft gelatin capsule shells.",
+   "fa": "در طیف وسیعی از فرآورده‌های خوراکی، چشمی، گوشی، موضعی و تزریقی به عنوان حلال، حلال کمکی، مرطوب‌کننده (هیومکتانت)، نرم‌کننده پلاستیکی (پلاستی‌سایزر)، شیرین‌کننده و عامل تنظیم تونیسیته به کار می‌رود. غلظت‌های متداول: نگهدارنده ضدمیکروبی کمتر از 20٪؛ نرم‌کننده پوست و مرطوب‌کننده حداکثر 30٪؛ حامل ژل آبی 5–15٪؛ حامل ژل غیرآبی 50–80٪؛ فرآورده‌های چشمی 0.5–3٪؛ حلال در فرآورده‌های تزریقی حداکثر 50٪؛ شیرین‌کننده در الگزیرهای الکلی حداکثر 20٪. همچنین به عنوان پلاستی‌سایزر در پوشش فیلمی و پوسته کپسول ژلاتینی نرم مصرف می‌شود."
+  },
+  "description": {
+   "en": "A clear, colourless, odourless, viscous and hygroscopic liquid with a sweet taste, roughly 0.6 times as sweet as sucrose.",
+   "fa": "مایع شفاف، بی‌رنگ، بی‌بو، ویسکوز و رطوبت‌گیر با طعم شیرین که شیرینی آن حدود 0.6 برابر ساکارز است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Boiling point",
+     "fa": "نقطه جوش"
+    },
+    "v": {
+     "en": "about 290 °C, with decomposition",
+     "fa": "حدود 290 °C همراه با تجزیه"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "about 18 °C; may crystallise on prolonged cooling",
+     "fa": "حدود 18 °C؛ در سرمای طولانی ممکن است کریستالیزه شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "≈ 1.26 g/cm³ at 20 °C",
+     "fa": "حدود 1.26 g/cm³ در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "≈ 1.4 Pa·s at 20 °C; falls sharply with added water",
+     "fa": "حدود 1.4 Pa·s در 20 °C؛ با افزودن آب به‌شدت کاهش می‌یابد"
+    }
+   },
+   {
+    "k": {
+     "en": "Refractive index",
+     "fa": "ضریب شکست"
+    },
+    "v": {
+     "en": "≈ 1.474 at 20 °C",
+     "fa": "حدود 1.474 در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "miscible with water and ethanol; practically insoluble in fixed oils, chloroform and benzene",
+     "fa": "قابل اختلاط با آب و اتانول؛ عملاً نامحلول در روغن‌های ثابت، کلروفرم و بنزن"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Hygroscopic. Pure glycerin is not readily oxidised under ordinary storage, but it decomposes on heating with formation of toxic acrolein. Mixtures with water, ethanol and propylene glycol are chemically stable. Glycerin that has crystallised on cold storage should be warmed to about 20 °C to melt it before use. Store in an airtight container in a cool, dry place.",
+   "fa": "رطوبت‌گیر است. گلیسرین خالص در شرایط معمول نگهداری به‌سادگی اکسید نمی‌شود، اما در اثر حرارت تجزیه شده و آکرولئین سمی تولید می‌کند. مخلوط آن با آب، اتانول و پروپیلن گلیکول از نظر شیمیایی پایدار است. گلیسرینی که در سرما کریستالیزه شده، باید پیش از مصرف تا حدود 20 °C گرم شود تا ذوب گردد. در ظرف دربسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "May react explosively with strong oxidising agents such as chromium trioxide, potassium chlorate and potassium permanganate. Traces of iron cause darkening of mixtures containing phenols, salicylates or tannin. With boric acid it forms a complex (glyceroboric acid) that is a stronger acid than boric acid itself. Light-induced black discoloration occurs with bismuth subnitrate or zinc oxide.",
+   "fa": "با اکسیدکننده‌های قوی مانند کروم تری‌اکسید، پتاسیم کلرات و پتاسیم پرمنگنات ممکن است واکنش انفجاری بدهد. ناخالصی آهن باعث تیره شدن مخلوط‌های حاوی فنل‌ها، سالیسیلات‌ها یا تانن می‌شود. با بوریک اسید کمپلکسی (گلیسروبوریک اسید) تشکیل می‌دهد که اسیدی قوی‌تر از خود بوریک اسید است. با بیسموت ساب‌نیترات یا زینک اکساید در مجاورت نور، تغییر رنگ سیاه رخ می‌دهد."
+  },
+  "manufacture": {
+   "en": "Obtained mainly as a by-product of the hydrolysis, saponification or transesterification of vegetable and animal fats and oils (soap, fatty acid and biodiesel production), then purified by distillation. It can also be synthesised from propene.",
+   "fa": "عمدتاً به عنوان محصول جانبی هیدرولیز، صابونی‌کردن یا ترانس‌استریفیکاسیون چربی‌ها و روغن‌های گیاهی و حیوانی (تولید صابون، اسیدهای چرب و بیودیزل) به دست می‌آید و با تقطیر خالص می‌شود. از پروپن نیز قابل سنتز است."
+  },
+  "safety": {
+   "en": "Generally regarded as non-toxic and non-irritant at the levels used as an excipient. Large oral doses may cause headache, thirst, nausea and hyperglycaemia, and it has a laxative effect when given rectally. Parenteral administration of concentrated solutions can cause haemolysis, haemoglobinuria and renal damage. Undiluted glycerin is mildly irritant to skin and mucosa because it draws water from tissues.",
+   "fa": "در مقادیر مصرفی به عنوان ماده جانبی، عموماً غیرسمی و غیرمحرک شناخته می‌شود. دوزهای خوراکی زیاد ممکن است سردرد، تشنگی، تهوع و افزایش قند خون ایجاد کند و مصرف رکتال آن اثر ملین دارد. تزریق محلول‌های غلیظ ممکن است همولیز، هموگلوبینوری و آسیب کلیوی ایجاد کند. گلیسرین رقیق‌نشده به دلیل کشیدن آب از بافت‌ها، کمی برای پوست و مخاط محرک است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended. Glycerin is combustible and should be kept away from strong oxidising agents.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ استفاده از محافظ چشم و دستکش توصیه می‌شود. گلیسرین قابل احتراق است و باید دور از اکسیدکننده‌های قوی نگهداری شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E422). Included in the FDA Inactive Ingredient Database (dental, inhalation, injectable, nasal, ophthalmic, oral, otic, rectal, topical, transdermal and vaginal products) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E422). در FDA Inactive Ingredient Database (فرآورده‌های دندانی، استنشاقی، تزریقی، بینی، چشمی، خوراکی، گوشی، رکتال، موضعی، ترانس‌درمال و واژینال) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Propylene glycol; polyethylene glycol; sorbitol; glyceryl monostearate.",
+   "fa": "پروپیلن گلیکول؛ پلی‌اتیلن گلیکول؛ سوربیتول؛ گلیسریل مونواستئارات."
+  },
+  "comments": {
+   "en": "Glycerin contaminated with diethylene glycol (DEG) or ethylene glycol has caused fatal mass poisonings, mostly in children taking oral syrups. Current USP–NF and Ph. Eur. monographs include tests that limit these impurities, and every incoming lot should be tested accordingly. Pharmacopoeial grades of different strength exist (for example glycerol 85% in Ph. Eur.).",
+   "fa": "گلیسرین آلوده به دی‌اتیلن گلیکول (DEG) یا اتیلن گلیکول باعث مسمومیت‌های جمعی کشنده، عمدتاً در کودکان مصرف‌کننده شربت‌های خوراکی، شده است. تک‌نگاری‌های فعلی USP–NF و فارماکوپه اروپا آزمون‌هایی برای محدود کردن این ناخالصی‌ها دارند و هر سری ورودی باید بر همین اساس آزمایش شود. گریدهای فارماکوپه‌ای با غلظت‌های مختلف نیز وجود دارد (مثلاً گلیسرول 85٪ در فارماکوپه اروپا)."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Glyceryl behenate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Glycerol Dibehenate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Glycerol Dibehenate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Glyceryl Behenate"
+   }
+  ],
+  "tradeNames": "Compritol 888 ATO; glycerol behenate; glycerol dibehenate; glyceryl dibehenate; docosanoic acid, glycerol ester",
+  "chemicalName": "Mixture of mono-, di- and triglycerides of behenic (docosanoic) acid, with the diester predominating",
+  "formula": "C47H92O5 (glyceryl dibehenate)",
+  "mw": "737.2 (glyceryl dibehenate)",
+  "applications": {
+   "en": "Used in oral solid dosage forms as a tablet and capsule lubricant, typically at 1–3% w/w, where it is less sensitive to over-blending than magnesium stearate. At higher levels (often 10% w/w or more) it forms inert lipid matrices for sustained release, and it is also used for hot-melt coating, melt granulation, taste masking and the preparation of solid lipid nanoparticles and microparticles. In cosmetics it acts as a thickener for oily phases.",
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان لغزان‌کننده قرص و کپسول، معمولاً با غلظت 1–3٪ وزنی، به کار می‌رود و نسبت به منیزیم استئارات حساسیت کمتری به اختلاط بیش از حد دارد. در غلظت‌های بالاتر (اغلب 10٪ وزنی یا بیشتر) ماتریکس لیپیدی بی‌اثر برای رهش آهسته تشکیل می‌دهد و در پوشش‌دهی مذاب (hot-melt coating)، گرانولاسیون مذاب، پوشاندن طعم و تهیه نانوذرات و میکروذرات لیپیدی جامد نیز کاربرد دارد. در محصولات آرایشی به عنوان غلیظ‌کننده فاز روغنی مصرف می‌شود."
+  },
+  "description": {
+   "en": "A fine white powder or hard, waxy mass with a faint odour. Ph. Eur. specifies about 15–23% monoacylglycerols, 40–60% diacylglycerols and 21–35% triacylglycerols, with behenic acid as the main fatty acid.",
+   "fa": "پودر ریز سفید یا توده سخت و مومی با بوی ضعیف. فارماکوپه اروپا ترکیب آن را حدود 15–23٪ مونوآسیل‌گلیسرول، 40–60٪ دی‌آسیل‌گلیسرول و 21–35٪ تری‌آسیل‌گلیسرول تعیین کرده است و اسید چرب اصلی آن بهنیک اسید است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting range",
+     "fa": "محدوده ذوب"
+    },
+    "v": {
+     "en": "about 65–77 °C",
+     "fa": "حدود 65–77 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "≈ 2",
+     "fa": "حدود 2"
+    }
+   },
+   {
+    "k": {
+     "en": "Saponification value",
+     "fa": "عدد صابونی شدن"
+    },
+    "v": {
+     "en": "145–165",
+     "fa": "145–165"
+    }
+   },
+   {
+    "k": {
+     "en": "Iodine value",
+     "fa": "عدد یدی"
+    },
+    "v": {
+     "en": "≤ 3 (saturated)",
+     "fa": "حداکثر 3 (اشباع)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in chloroform and dichloromethane when heated; practically insoluble in water, ethanol, hexane and mineral oil",
+     "fa": "در کلروفرم و دی‌کلرومتان گرم محلول؛ عملاً نامحلول در آب، اتانول، هگزان و روغن معدنی"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically stable. Store in a tightly closed container below about 35 °C, protected from heat; partial melting and resolidification can change its crystalline form and its release behaviour.",
+   "fa": "از نظر شیمیایی پایدار است. در ظرف کاملاً بسته در دمای کمتر از حدود 35 °C و دور از حرارت نگهداری شود؛ ذوب جزئی و انجماد دوباره ممکن است فرم کریستالی و رفتار رهش آن را تغییر دهد."
+  },
+  "incompatibilities": {
+   "en": "No significant chemical incompatibilities have been reported. Like other hydrophobic lubricants it can slow tablet disintegration and drug dissolution if used in excess.",
+   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. مانند سایر لغزان‌کننده‌های آب‌گریز، مصرف بیش از حد آن ممکن است متلاشی شدن قرص و انحلال دارو را کند کند."
+  },
+  "manufacture": {
+   "en": "Made by esterifying glycerol with behenic acid, obtained from hydrogenated rapeseed or similar oils, without a catalyst; the product is then atomised (spray-cooled) to give a fine powder.",
+   "fa": "از استریفیکاسیون گلیسرول با بهنیک اسید (حاصل از روغن کلزای هیدروژنه یا روغن‌های مشابه) بدون کاتالیزور تهیه می‌شود و سپس با سرد کردن پاششی (spray-cooling) به پودر ریز تبدیل می‌گردد."
+  },
+  "safety": {
+   "en": "Used in oral pharmaceutical products and in cosmetics, and regarded as essentially non-toxic and non-irritant.",
+   "fa": "در فرآورده‌های دارویی خوراکی و محصولات آرایشی مصرف می‌شود و اساساً غیرسمی و غیرمحرک شناخته می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended, with a dust mask where dust is generated.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و دستکش، و در صورت ایجاد گردوغبار ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Glyceryl monostearate; glyceryl palmitostearate; hydrogenated vegetable oil; magnesium stearate.",
+   "fa": "گلیسریل مونواستئارات؛ گلیسریل پالمیتواستئارات؛ روغن گیاهی هیدروژنه؛ منیزیم استئارات."
+  },
+  "comments": {
+   "en": "As a lubricant it is a useful alternative where magnesium stearate causes incompatibility, softening of tablets or slow dissolution, although higher levels are usually needed. In matrix tablets the release rate can be adjusted by changing its proportion, adding hydrophilic fillers or channelling agents, and by thermal treatment.",
+   "fa": "به عنوان لغزان‌کننده، در مواردی که منیزیم استئارات باعث ناسازگاری، نرم شدن قرص یا کندی انحلال می‌شود، جایگزین مفیدی است، هرچند معمولاً به مقدار بیشتری نیاز دارد. در قرص‌های ماتریکسی، سرعت رهش را می‌توان با تغییر نسبت آن، افزودن پرکننده‌های آب‌دوست یا عوامل کانال‌ساز و نیز عملیات حرارتی تنظیم کرد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "gras"
+  ]
+ },
+ "Glyceryl monooleate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Glycerol Mono-oleate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Glycerol Mono-oleate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Glyceryl Monooleate"
+   }
+  ],
+  "tradeNames": "Capmul GMO; glycerol monooleate; glyceryl oleate; monoolein; Myverol 18-99; Peceol; E471",
+  "chemicalName": "9-Octadecenoic acid (Z)-, monoester with propane-1,2,3-triol (with di- and triglycerides of oleic acid)",
+  "formula": "C21H40O4",
+  "mw": "356.54",
+  "applications": {
+   "en": "A non-ionic, polar lipid used as an emulsifier, solubiliser and absorption enhancer in oral lipid-based formulations such as self-emulsifying systems and liquid or semi-solid capsule fills. With water it forms liquid crystalline phases (lamellar and cubic), which are exploited in bioadhesive and sustained-release depots, cubosome dispersions and periodontal or mucosal gels. It is also used as a water-in-oil emulsifier and penetration enhancer in topical products, and in foods.",
+   "fa": "یک لیپید قطبی غیریونی است که به عنوان امولسیفایر، حل‌کننده (سولوبیلایزر) و افزاینده جذب در فرمولاسیون‌های لیپیدی خوراکی، مانند سیستم‌های خودامولسیون‌شونده و پرکننده‌های مایع یا نیمه‌جامد کپسول، به کار می‌رود. در تماس با آب فازهای کریستال مایع (لایه‌ای و مکعبی) تشکیل می‌دهد که در دپوهای چسبنده به مخاط و آهسته‌رهش، دیسپرسیون‌های کیوبوزوم و ژل‌های پریودنتال یا مخاطی از آن استفاده می‌شود. همچنین به عنوان امولسیفایر آب در روغن و افزاینده نفوذ در فرآورده‌های موضعی و در مواد غذایی مصرف می‌شود."
+  },
+  "description": {
+   "en": "A pale yellow, oily liquid or soft, waxy solid (depending on monoester content and temperature) with a faint characteristic odour. Pharmacopoeial grades are classified by their monoglyceride content, for example about 40%, 60% and 90%.",
+   "fa": "مایع روغنی زرد کم‌رنگ یا جامد مومی نرم (بسته به مقدار مونواستر و دما) با بوی ضعیف و مشخص. گریدهای فارماکوپه‌ای بر اساس مقدار مونوگلیسرید، مثلاً حدود 40٪، 60٪ و 90٪، دسته‌بندی می‌شوند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "≈ 3–4",
+     "fa": "حدود 3–4"
+    }
+   },
+   {
+    "k": {
+     "en": "Physical state",
+     "fa": "حالت فیزیکی"
+    },
+    "v": {
+     "en": "liquid to soft solid at room temperature; high-monoester grades melt at about 35 °C",
+     "fa": "در دمای اتاق مایع تا جامد نرم؛ گریدهای با مونواستر بالا در حدود 35 °C ذوب می‌شوند"
+    }
+   },
+   {
+    "k": {
+     "en": "Phase behaviour",
+     "fa": "رفتار فازی"
+    },
+    "v": {
+     "en": "forms lamellar, cubic and hexagonal liquid crystalline phases with water depending on water content and temperature",
+     "fa": "بسته به مقدار آب و دما، با آب فازهای کریستال مایع لایه‌ای، مکعبی و هگزاگونال تشکیل می‌دهد"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in chloroform, ethanol, mineral oil and vegetable oils; practically insoluble in water, in which it swells",
+     "fa": "محلول در کلروفرم، اتانول، روغن معدنی و روغن‌های گیاهی؛ عملاً نامحلول در آب که در آن متورم می‌شود"
+    }
+   }
+  ],
+  "stability": {
+   "en": "The unsaturated oleate chain makes it susceptible to oxidation; commercial grades may contain an antioxidant. Store in an airtight container, protected from light, in a cool, dry place.",
+   "fa": "زنجیره غیراشباع اولئات آن را مستعد اکسیداسیون می‌کند؛ گریدهای تجاری ممکن است حاوی آنتی‌اکسیدان باشند. در ظرف دربسته، دور از نور و در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Produced by glycerolysis of vegetable oils rich in oleic acid (for example high-oleic sunflower oil), or by direct esterification of glycerol with oleic acid; high-monoester grades are obtained by molecular distillation.",
+   "fa": "از گلیسرولیز روغن‌های گیاهی غنی از اولئیک اسید (مانند روغن آفتابگردان پراولئیک) یا استریفیکاسیون مستقیم گلیسرول با اولئیک اسید تهیه می‌شود؛ گریدهای با مونواستر بالا با تقطیر مولکولی به دست می‌آیند."
+  },
+  "safety": {
+   "en": "Widely used in foods and in oral and topical pharmaceutical products, and generally regarded as non-toxic. It may be mildly irritant to skin and eyes.",
+   "fa": "در مواد غذایی و فرآورده‌های دارویی خوراکی و موضعی به‌طور گسترده مصرف می‌شود و عموماً غیرسمی شناخته می‌شود. ممکن است برای پوست و چشم کمی محرک باشد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended. Spills are slippery.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و دستکش توصیه می‌شود. ریختگی آن سطوح را لغزنده می‌کند."
+  },
+  "regulatory": {
+   "en": "Mono- and diglycerides are GRAS listed and accepted as food additives in Europe (E471). Glyceryl monooleate is included in the FDA Inactive Ingredient Database (oral and topical preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "مونو و دی‌گلیسریدها در فهرست GRAS قرار دارند و در اروپا به عنوان افزودنی غذایی پذیرفته شده‌اند (E471). گلیسریل مونواولئات در FDA Inactive Ingredient Database (فرآورده‌های خوراکی و موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Glyceryl monolinoleate; glyceryl monostearate; oleoyl polyoxylglycerides; oleic acid.",
+   "fa": "گلیسریل مونولینولئات؛ گلیسریل مونواستئارات؛ اولئویل پلی‌اکسیل‌گلیسریدها؛ اولئیک اسید."
+  },
+  "comments": {
+   "en": "The liquid crystalline cubic phase that forms in excess water is highly viscous and bioadhesive and can hold both water- and oil-soluble drugs, which makes glyceryl monooleate a common material for in-situ forming depots. Grade selection (monoester content) strongly affects phase behaviour and performance.",
+   "fa": "فاز کریستال مایع مکعبی که در آب اضافی تشکیل می‌شود بسیار ویسکوز و چسبنده به مخاط است و می‌تواند هم داروهای محلول در آب و هم محلول در روغن را در خود نگه دارد؛ به همین دلیل گلیسریل مونواولئات ماده رایجی برای دپوهای درجا-تشکیل‌شونده است. انتخاب گرید (مقدار مونواستر) اثر زیادی بر رفتار فازی و عملکرد دارد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Glyceryl monostearate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Glyceryl Monostearate 40–55"
+   },
+   {
+    "ph": "JP",
+    "name": "Glyceryl Monostearate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Glycerol Monostearate 40–55"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Glyceryl Monostearate"
+   }
+  ],
+  "tradeNames": "Capmul GMS-50; Cutina GMS; Geleol; glycerine monostearate; glyceryl stearate; GMS; Imwitor 491; Kessco GMS; monostearin; Tegin; E471",
+  "chemicalName": "Octadecanoic acid, monoester with propane-1,2,3-triol (mixture with di- and triglycerides of stearic and palmitic acids)",
+  "formula": "C21H42O4",
+  "mw": "358.56",
+  "applications": {
+   "en": "A non-ionic emulsifier, stabiliser, emollient and consistency agent used in creams, lotions and ointments; self-emulsifying grades, which contain a small amount of soap or another anionic or non-ionic emulsifier, are used for oil-in-water creams. In oral solid dosage forms it serves as a lubricant, a hydrophobic matrix former for sustained release, a binder in melt granulation and a coating or taste-masking agent; it is also used in solid lipid nanoparticles. It is widely used in foods and cosmetics.",
+   "fa": "یک امولسیفایر غیریونی، پایدارکننده، نرم‌کننده پوست و عامل قوام‌دهنده است که در کرم‌ها، لوسیون‌ها و پمادها به کار می‌رود؛ گریدهای خودامولسیون‌شونده که حاوی مقدار کمی صابون یا امولسیفایر آنیونی یا غیریونی دیگری هستند، برای کرم‌های روغن در آب مصرف می‌شوند. در اشکال دارویی جامد خوراکی به عنوان لغزان‌کننده، تشکیل‌دهنده ماتریکس آب‌گریز برای رهش آهسته، چسباننده در گرانولاسیون مذاب و عامل پوشش یا پوشاندن طعم به کار می‌رود و در نانوذرات لیپیدی جامد نیز مصرف می‌شود. در صنایع غذایی و آرایشی کاربرد گسترده دارد."
+  },
+  "description": {
+   "en": "A white to cream-coloured, waxy solid supplied as beads, flakes or powder, waxy to the touch and with a slight fatty odour and taste. Ph. Eur. glycerol monostearate 40–55 contains 40–55% monoacylglycerols, mainly of stearic and palmitic acids; higher-monoester (distilled) grades are also available.",
+   "fa": "جامد مومی سفید تا کرم‌رنگ به صورت دانه، پولک یا پودر، با لمس مومی و بو و طعم چربی خفیف. گلیسرول مونواستئارات 40–55 فارماکوپه اروپا حاوی 40–55٪ مونوآسیل‌گلیسرول، عمدتاً از استئاریک و پالمیتیک اسید، است؛ گریدهای با مونواستر بالاتر (تقطیرشده) نیز در دسترس‌اند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting range",
+     "fa": "محدوده ذوب"
+    },
+    "v": {
+     "en": "about 55–60 °C (40–55 grade)",
+     "fa": "حدود 55–60 °C (گرید 40–55)"
+    }
+   },
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "≈ 3.8 (non-self-emulsifying grades)",
+     "fa": "حدود 3.8 (گریدهای غیرخودامولسیون‌شونده)"
+    }
+   },
+   {
+    "k": {
+     "en": "Polymorphism",
+     "fa": "پلی‌مورفیسم"
+    },
+    "v": {
+     "en": "occurs in α and β forms; the α form produced on rapid cooling slowly converts to the stable β form",
+     "fa": "به صورت فرم‌های α و β وجود دارد؛ فرم α که در سرد کردن سریع ایجاد می‌شود به‌تدریج به فرم پایدار β تبدیل می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in hot ethanol, chloroform, hot acetone, ether, mineral oil and fixed oils; practically insoluble in water but can be dispersed in hot water with a surfactant",
+     "fa": "محلول در اتانول گرم، کلروفرم، استون گرم، اتر، روغن معدنی و روغن‌های ثابت؛ عملاً نامحلول در آب ولی با کمک سورفکتانت در آب گرم قابل پراکنده شدن"
+    }
+   }
+  ],
+  "stability": {
+   "en": "If stored at warm temperatures its acid value rises because of ester hydrolysis, and polymorphic change can alter the consistency of creams and the release from matrices over time. Store in a tightly closed container in a cool, dry place, protected from light.",
+   "fa": "در صورت نگهداری در دمای گرم، به دلیل هیدرولیز استر عدد اسیدی آن افزایش می‌یابد و تغییر پلی‌مورفیک ممکن است با گذشت زمان قوام کرم‌ها و رهش از ماتریکس‌ها را تغییر دهد. در ظرف کاملاً بسته، در جای خنک و خشک و دور از نور نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Self-emulsifying grades are incompatible with acidic substances, which neutralise the soap emulsifier.",
+   "fa": "گریدهای خودامولسیون‌شونده با مواد اسیدی ناسازگارند، زیرا این مواد امولسیفایر صابونی را خنثی می‌کنند."
+  },
+  "manufacture": {
+   "en": "Prepared by glycerolysis of hydrogenated fats or oils, or by direct esterification of glycerol with stearic acid; molecular distillation is used to obtain grades rich in monoglycerides.",
+   "fa": "از گلیسرولیز چربی‌ها یا روغن‌های هیدروژنه، یا استریفیکاسیون مستقیم گلیسرول با استئاریک اسید تهیه می‌شود؛ برای به دست آوردن گریدهای غنی از مونوگلیسرید از تقطیر مولکولی استفاده می‌شود."
+  },
+  "safety": {
+   "en": "Widely used in foods, cosmetics and oral and topical medicines, and regarded as non-toxic and non-irritant.",
+   "fa": "در مواد غذایی، محصولات آرایشی و داروهای خوراکی و موضعی به‌طور گسترده مصرف می‌شود و غیرسمی و غیرمحرک شناخته می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Mono- and diglycerides are GRAS listed and accepted as food additives in Europe (E471). Glyceryl monostearate is included in the FDA Inactive Ingredient Database (oral capsules and tablets; topical and vaginal preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "مونو و دی‌گلیسریدها در فهرست GRAS قرار دارند و در اروپا به عنوان افزودنی غذایی پذیرفته شده‌اند (E471). گلیسریل مونواستئارات در FDA Inactive Ingredient Database (کپسول و قرص خوراکی؛ فرآورده‌های موضعی و واژینال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Glyceryl behenate; glyceryl monooleate; glyceryl palmitostearate; self-emulsifying glyceryl monostearate; mono- and diglycerides.",
+   "fa": "گلیسریل بهنات؛ گلیسریل مونواولئات؛ گلیسریل پالمیتواستئارات؛ گلیسریل مونواستئارات خودامولسیون‌شونده؛ مونو و دی‌گلیسریدها."
+  },
+  "comments": {
+   "en": "The term covers materials with quite different monoglyceride contents, so the pharmacopoeial grade and supplier should be specified. Because the α-to-β transition is slow, products made with molten glyceryl monostearate should be checked on storage for changes in hardness, viscosity or drug release.",
+   "fa": "این نام شامل موادی با مقدار مونوگلیسرید بسیار متفاوت است؛ بنابراین گرید فارماکوپه‌ای و تأمین‌کننده باید مشخص شود. چون تبدیل α به β کند است، فرآورده‌هایی که با گلیسریل مونواستئارات مذاب ساخته می‌شوند باید در طول نگهداری از نظر تغییر سختی، ویسکوزیته یا رهش دارو بررسی شوند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Glyceryl palmitostearate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Glycerol Distearate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Glycerol Distearate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Glyceryl Distearate"
+   }
+  ],
+  "tradeNames": "Precirol ATO 5; glycerol palmitostearate; glyceryl distearate; glycerol distearate",
+  "chemicalName": "Mixture of mono-, di- and triglycerides of palmitic (C16) and stearic (C18) acids, with diglycerides predominating",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used in oral solid dosage forms as a tablet and capsule lubricant, as a lipophilic binder in melt granulation and as a hot-melt coating agent for taste masking or modified release. At higher levels it forms inert, non-swelling matrices for sustained release. It is also widely used to prepare solid lipid nanoparticles and nanostructured lipid carriers, and in topical products as a consistency agent.",
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان لغزان‌کننده قرص و کپسول، چسباننده لیپوفیل در گرانولاسیون مذاب و عامل پوشش مذاب برای پوشاندن طعم یا رهش تعدیل‌شده به کار می‌رود. در غلظت‌های بالاتر ماتریکس‌های بی‌اثر و غیرمتورم‌شونده برای رهش آهسته تشکیل می‌دهد. همچنین به‌طور گسترده برای تهیه نانوذرات لیپیدی جامد (SLN) و حامل‌های لیپیدی نانوساختار (NLC) و در فرآورده‌های موضعی به عنوان عامل قوام‌دهنده مصرف می‌شود."
+  },
+  "description": {
+   "en": "A fine white powder or waxy solid with a faint odour. The fatty-acid fraction consists mainly of palmitic and stearic acids, and diacylglycerols form the largest part of the glyceride mixture.",
+   "fa": "پودر ریز سفید یا جامد مومی با بوی ضعیف. بخش اسید چرب آن عمدتاً از پالمیتیک و استئاریک اسید تشکیل شده و دی‌آسیل‌گلیسرول‌ها بیشترین سهم مخلوط گلیسریدی را دارند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting range",
+     "fa": "محدوده ذوب"
+    },
+    "v": {
+     "en": "about 50–60 °C",
+     "fa": "حدود 50–60 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "≈ 2",
+     "fa": "حدود 2"
+    }
+   },
+   {
+    "k": {
+     "en": "Iodine value",
+     "fa": "عدد یدی"
+    },
+    "v": {
+     "en": "low (saturated fatty acids)",
+     "fa": "پایین (اسیدهای چرب اشباع)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in chloroform and dichloromethane; practically insoluble in water, ethanol and mineral oil",
+     "fa": "محلول در کلروفرم و دی‌کلرومتان؛ عملاً نامحلول در آب، اتانول و روغن معدنی"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically stable. After melting it may recrystallise in less stable polymorphic forms that change slowly on storage, which can alter drug release; a controlled curing (annealing) step is often used. Store in a tightly closed container in a cool place, protected from heat and light.",
+   "fa": "از نظر شیمیایی پایدار است. پس از ذوب ممکن است به فرم‌های پلی‌مورفیک کم‌پایدارتری کریستالیزه شود که در طول نگهداری به‌تدریج تغییر می‌کنند و رهش دارو را تغییر می‌دهند؛ به همین دلیل اغلب از مرحله کنترل‌شده تثبیت حرارتی (curing) استفاده می‌شود. در ظرف کاملاً بسته، در جای خنک و دور از حرارت و نور نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "No major chemical incompatibilities have been reported. As a hydrophobic material, excessive amounts can slow disintegration and dissolution.",
+   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. به عنوان ماده آب‌گریز، مقادیر زیاد آن ممکن است متلاشی شدن و انحلال را کند کند."
+  },
+  "manufacture": {
+   "en": "Made by esterifying glycerol with palmitic and stearic acids obtained from hydrogenated vegetable oils, followed by spray-cooling (atomisation) of the molten product to give a fine powder.",
+   "fa": "از استریفیکاسیون گلیسرول با پالمیتیک و استئاریک اسید حاصل از روغن‌های گیاهی هیدروژنه و سپس سرد کردن پاششی محصول مذاب برای تهیه پودر ریز به دست می‌آید."
+  },
+  "safety": {
+   "en": "Used in oral and topical pharmaceutical products and in cosmetics, and regarded as essentially non-toxic and non-irritant.",
+   "fa": "در فرآورده‌های دارویی خوراکی و موضعی و محصولات آرایشی مصرف می‌شود و اساساً غیرسمی و غیرمحرک شناخته می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended, with a dust mask where dust is generated.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و دستکش، و در صورت ایجاد گردوغبار ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Glyceryl behenate; glyceryl monostearate; hard fat; hydrogenated vegetable oil.",
+   "fa": "گلیسریل بهنات؛ گلیسریل مونواستئارات؛ چربی سخت؛ روغن گیاهی هیدروژنه."
+  },
+  "comments": {
+   "en": "Its lower melting point compared with glyceryl behenate makes it convenient for melt processes at moderate temperatures. Release from lipid matrices and coatings depends on the solid-state form of the lipid, so stability studies should monitor dissolution after storage.",
+   "fa": "نقطه ذوب پایین‌تر آن نسبت به گلیسریل بهنات، آن را برای فرآیندهای مذاب در دماهای متوسط مناسب می‌کند. رهش از ماتریکس‌ها و پوشش‌های لیپیدی به فرم حالت جامد لیپید بستگی دارد؛ بنابراین در مطالعات پایداری باید انحلال پس از نگهداری پایش شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Glycine": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Glycine"
+   },
+   {
+    "ph": "JP",
+    "name": "Glycine"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Glycine"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Glycine"
+   }
+  ],
+  "tradeNames": "Aminoacetic acid; aminoethanoic acid; glycocoll; Gly; E640",
+  "chemicalName": "Aminoacetic acid",
+  "formula": "C2H5NO2",
+  "mw": "75.07",
+  "applications": {
+   "en": "Used as a buffering agent, bulking agent and protein stabiliser in parenteral products, particularly freeze-dried formulations, where it is often combined with mannitol or sucrose. It is also used in antacid and effervescent formulations, as a sweetening and flavour-modifying agent, and in oral rehydration and nutritional products.",
+   "fa": "به عنوان بافر، عامل حجم‌دهنده و پایدارکننده پروتئین در فرآورده‌های تزریقی، به‌ویژه فرمولاسیون‌های لیوفیلیزه، به کار می‌رود و اغلب همراه مانیتول یا ساکارز مصرف می‌شود. همچنین در فرمولاسیون‌های آنتی‌اسید و جوشان، به عنوان شیرین‌کننده و اصلاح‌کننده طعم و در محصولات آب‌رسانی خوراکی و تغذیه‌ای کاربرد دارد."
+  },
+  "description": {
+   "en": "White, odourless, crystalline powder or crystals with a sweetish taste. It is the simplest amino acid and, having no chiral centre, is optically inactive.",
+   "fa": "پودر یا کریستال سفید، بی‌بو و کریستالی با طعم کمی شیرین. ساده‌ترین اسید آمینه است و چون مرکز کایرال ندارد، فعالیت نوری ندارد."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pKa",
+     "fa": "pKa"
+    },
+    "v": {
+     "en": "≈ 2.3 (carboxyl) and ≈ 9.6 (amino), at 25 °C",
+     "fa": "حدود 2.3 (کربوکسیل) و حدود 9.6 (آمین) در 25 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Isoelectric point",
+     "fa": "نقطه ایزوالکتریک"
+    },
+    "v": {
+     "en": "≈ 6.0",
+     "fa": "حدود 6.0"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "decomposes above about 230 °C",
+     "fa": "بالاتر از حدود 230 °C تجزیه می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water (about 1 in 4 at 25 °C); very slightly soluble in ethanol; practically insoluble in ether",
+     "fa": "به‌راحتی محلول در آب (حدود 1 در 4 در 25 °C)؛ بسیار کم محلول در اتانول؛ عملاً نامحلول در اتر"
+    }
+   },
+   {
+    "k": {
+     "en": "Polymorphism",
+     "fa": "پلی‌مورفیسم"
+    },
+    "v": {
+     "en": "α, β and γ forms; commercial material is normally the α form",
+     "fa": "فرم‌های α، β و γ؛ ماده تجاری معمولاً فرم α است"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable as a solid. Store in a well-closed container in a cool, dry place. In freeze-drying, glycine crystallises readily during freezing or annealing, which gives a strong cake; incomplete crystallisation can leave amorphous glycine that crystallises later and destabilises proteins.",
+   "fa": "به صورت جامد پایدار است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود. در لیوفیلیزاسیون، گلیسین در طی انجماد یا آنیلینگ به‌راحتی کریستالیزه می‌شود و کیک محکمی ایجاد می‌کند؛ کریستالیزاسیون ناقص ممکن است گلیسین آمورف باقی بگذارد که بعداً کریستالیزه شده و پروتئین را ناپایدار کند."
+  },
+  "incompatibilities": {
+   "en": "As a primary amine it can undergo Maillard reaction with reducing sugars. Incompatible with strong oxidising agents.",
+   "fa": "به عنوان یک آمین نوع اول، می‌تواند با قندهای احیاکننده واکنش میلارد بدهد. با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Produced commercially by amination of chloroacetic acid with ammonia, or by the Strecker synthesis from formaldehyde, hydrogen cyanide and ammonia, followed by purification by crystallisation.",
+   "fa": "به‌صورت صنعتی از آمیناسیون کلرواستیک اسید با آمونیاک یا سنتز استرکر از فرمالدهید، هیدروژن سیانید و آمونیاک تهیه و با کریستالیزاسیون خالص می‌شود."
+  },
+  "safety": {
+   "en": "A naturally occurring amino acid regarded as non-toxic at excipient levels. Absorption of large volumes of glycine irrigating solution during urological surgery can cause fluid overload, hyponatraemia and visual and neurological disturbances; this relates to its use as an irrigant rather than as an excipient.",
+   "fa": "اسید آمینه‌ای طبیعی است که در مقادیر مصرفی به عنوان ماده جانبی غیرسمی شناخته می‌شود. جذب حجم زیاد محلول شست‌وشوی گلیسین در جراحی‌های اورولوژی ممکن است باعث افزایش حجم مایعات، هیپوناترمی و اختلالات بینایی و عصبی شود؛ این عارضه به کاربرد آن به عنوان محلول شست‌وشو مربوط است نه به عنوان ماده جانبی."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E640). Included in the FDA Inactive Ingredient Database (injectable preparations; oral products) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E640). در FDA Inactive Ingredient Database (فرآورده‌های تزریقی؛ فرآورده‌های خوراکی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Alanine; histidine; mannitol; sodium glycinate.",
+   "fa": "آلانین؛ هیستیدین؛ مانیتول؛ سدیم گلیسینات."
+  },
+  "comments": {
+   "en": "Sodium phosphate–glycine combinations should be used with care in frozen protein solutions, because selective crystallisation of buffer components can shift the pH during freezing. In lyophilised products, the glycine-to-protein ratio and the freezing and annealing programme largely determine whether glycine acts as a crystalline bulking agent or remains partly amorphous.",
+   "fa": "ترکیب سدیم فسفات و گلیسین در محلول‌های پروتئینی منجمد باید با احتیاط به کار رود، زیرا کریستالیزه شدن انتخابی اجزای بافر ممکن است pH را در طی انجماد تغییر دهد. در فرآورده‌های لیوفیلیزه، نسبت گلیسین به پروتئین و برنامه انجماد و آنیلینگ تا حد زیادی تعیین می‌کند که گلیسین به عنوان عامل حجم‌دهنده کریستالی عمل کند یا تا حدی آمورف باقی بماند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "eu-additives"
+  ]
+ },
+ "Glycofurol": {
+  "names": [],
+  "tradeNames": "Glycofurol 75; tetraglycol; tetrahydrofurfuryl alcohol polyethylene glycol ether; α-(tetrahydrofuranyl)-ω-hydroxypoly(oxyethylene)",
+  "chemicalName": "α-[(Tetrahydro-2-furanyl)methyl]-ω-hydroxypoly(oxy-1,2-ethanediyl)",
+  "formula": "C5H9O(CH2)O(C2H4O)nH; n mainly 1–2",
+  "mw": "190.24 (n = 2)",
+  "applications": {
+   "en": "Used mainly as a water-miscible solvent in parenteral products for intravenous or intramuscular injection, at concentrations of up to about 50% v/v. It has also been investigated as a solvent and penetration enhancer in nasal, rectal and topical formulations and in in-situ forming implants.",
+   "fa": "عمدتاً به عنوان حلال قابل اختلاط با آب در فرآورده‌های تزریقی وریدی یا عضلانی، با غلظت حداکثر حدود 50٪ حجمی، به کار می‌رود. کاربرد آن به عنوان حلال و افزاینده نفوذ در فرمولاسیون‌های بینی، رکتال و موضعی و در ایمپلنت‌های درجا-تشکیل‌شونده نیز بررسی شده است."
+  },
+  "description": {
+   "en": "A clear, colourless, almost odourless liquid with a bitter taste that produces a warm sensation on the tongue. Glycofurol 75 is the grade in which most of the material has n = 1 or 2.",
+   "fa": "مایع شفاف، بی‌رنگ و تقریباً بی‌بو با طعم تلخ که روی زبان احساس گرمی ایجاد می‌کند. Glycofurol 75 گریدی است که بیشتر آن دارای n برابر 1 یا 2 است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "≈ 1.07–1.09 g/cm³ at 20 °C",
+     "fa": "حدود 1.07–1.09 g/cm³ در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "miscible with water, ethanol, glycerin, propylene glycol and polyethylene glycol 400; immiscible with arachis oil and light petroleum",
+     "fa": "قابل اختلاط با آب، اتانول، گلیسرین، پروپیلن گلیکول و پلی‌اتیلن گلیکول 400؛ غیرقابل اختلاط با روغن بادام‌زمینی و پترولیوم سبک"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "low to moderate; somewhat more viscous than water",
+     "fa": "کم تا متوسط؛ کمی ویسکوزتر از آب"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable if stored under nitrogen in a well-closed container, protected from light, in a cool, dry place. As a polyether it may slowly form peroxides on exposure to air.",
+   "fa": "در صورت نگهداری زیر گاز نیتروژن، در ظرف کاملاً بسته، دور از نور و در جای خنک و خشک پایدار است. به عنوان یک پلی‌اتر، در تماس با هوا ممکن است به‌آرامی پراکسید تشکیل دهد."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with oxidising agents.",
+   "fa": "با اکسیدکننده‌ها ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Prepared by reacting tetrahydrofurfuryl alcohol with ethylene oxide, followed by purification to remove tetrahydrofurfuryl alcohol and other impurities.",
+   "fa": "از واکنش تتراهیدروفورفوریل الکل با اتیلن اکساید و سپس خالص‌سازی برای حذف تتراهیدروفورفوریل الکل و سایر ناخالصی‌ها تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Glycofurol is irritant when used undiluted, but is tolerated in parenteral products when diluted to about 50% v/v or less. At high doses it has central nervous system depressant and diuretic effects in animals.",
+   "fa": "گلیکوفورول به صورت رقیق‌نشده محرک است، اما در فرآورده‌های تزریقی پس از رقیق شدن تا حدود 50٪ حجمی یا کمتر قابل تحمل است. در دوزهای بالا در حیوانات اثر مهارکننده دستگاه عصبی مرکزی و ادرارآور دارد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Has been used in parenteral medicines licensed in some European countries. It is not widely used in products marketed in the USA.",
+   "fa": "در داروهای تزریقی مجاز در برخی کشورهای اروپایی به کار رفته است. در فرآورده‌های عرضه‌شده در ایالات متحده کاربرد گسترده‌ای ندارد."
+  },
+  "related": {
+   "en": "Polyethylene glycol; propylene glycol; tetrahydrofurfuryl alcohol.",
+   "fa": "پلی‌اتیلن گلیکول؛ پروپیلن گلیکول؛ تتراهیدروفورفوریل الکل."
+  },
+  "comments": {
+   "en": "Glycofurol is a useful co-solvent for poorly water-soluble drugs in injections, but the content of residual tetrahydrofurfuryl alcohol and peroxides should be controlled, and the product checked for precipitation of the drug on dilution with aqueous infusion fluids.",
+   "fa": "گلیکوفورول حلال کمکی مفیدی برای داروهای کم‌محلول در آب در فرآورده‌های تزریقی است، اما مقدار تتراهیدروفورفوریل الکل باقی‌مانده و پراکسیدها باید کنترل شود و فرآورده از نظر رسوب دارو هنگام رقیق شدن با محلول‌های انفوزیون آبی بررسی گردد."
+  },
+  "refs": []
+ },
+ "Guar gum": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Guar Galactomannan"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Guar Galactomannan"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Guar Gum"
+   }
+  ],
+  "tradeNames": "Galactosol; guar flour; guar galactomannan; jaguar gum; Meyprogat; E412",
+  "chemicalName": "Galactomannan polysaccharide: a (1→4)-linked β-D-mannopyranose backbone with single (1→6)-linked α-D-galactopyranose side chains (mannose:galactose about 2:1)",
+  "formula": "(C6H12O6)n",
+  "mw": "≈ 220 000",
+  "applications": {
+   "en": "Used in oral and topical products as a suspending, thickening and stabilising agent, and in tablets as a binder and disintegrant. Typical concentrations: emulsion stabiliser about 1%; thickener for lotions and creams up to 2.5%; tablet binder up to 10%. It has also been studied as a matrix former for sustained release and as a carrier for colon-targeted delivery, since it is degraded by colonic bacteria. It is widely used in foods.",
+   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان عامل تعلیق‌کننده، غلیظ‌کننده و پایدارکننده و در قرص به عنوان چسباننده و متلاشی‌کننده به کار می‌رود. غلظت‌های متداول: پایدارکننده امولسیون حدود 1٪؛ غلیظ‌کننده لوسیون و کرم حداکثر 2.5٪؛ چسباننده قرص حداکثر 10٪. همچنین به عنوان تشکیل‌دهنده ماتریکس آهسته‌رهش و حامل دارورسانی هدفمند به کولون (چون توسط باکتری‌های کولون تجزیه می‌شود) بررسی شده است. در صنایع غذایی کاربرد گسترده دارد."
+  },
+  "description": {
+   "en": "A white to yellowish-white, almost odourless powder with a bland taste. It disperses in cold or hot water and hydrates to form a highly viscous, slightly cloudy colloidal dispersion.",
+   "fa": "پودر سفید تا سفید مایل به زرد، تقریباً بی‌بو و با طعم ملایم. در آب سرد یا گرم پراکنده می‌شود و با آب‌گیری، دیسپرسیون کلوئیدی بسیار ویسکوز و کمی کدر ایجاد می‌کند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "high at 1% w/v; develops over a period of hours as the gum hydrates and depends on grade and particle size",
+     "fa": "در غلظت 1٪ زیاد است؛ در طی چند ساعت با آب‌گیری صمغ افزایش می‌یابد و به گرید و اندازه ذره بستگی دارد"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "5.0–7.0 (1% w/v aqueous dispersion)",
+     "fa": "5.0–7.0 (دیسپرسیون آبی 1٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Moisture content",
+     "fa": "مقدار رطوبت"
+    },
+    "v": {
+     "en": "up to about 15% w/w",
+     "fa": "حداکثر حدود 15٪ وزنی"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in ethanol and other organic solvents; dispersible and swells in water",
+     "fa": "عملاً نامحلول در اتانول و سایر حلال‌های آلی؛ در آب پراکنده و متورم می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Ionic character",
+     "fa": "ماهیت یونی"
+    },
+    "v": {
+     "en": "non-ionic; viscosity is little affected by pH between about 4 and 10.5",
+     "fa": "غیریونی؛ ویسکوزیته در محدوده pH حدود 4 تا 10.5 تغییر کمی دارد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "The powder is stable in a well-closed container in a cool, dry place. Aqueous dispersions are sensitive to microbial and enzymatic degradation and need a preservative; viscosity falls on prolonged heating and at extremes of pH.",
+   "fa": "پودر در ظرف کاملاً بسته، در جای خنک و خشک پایدار است. دیسپرسیون‌های آبی به تجزیه میکروبی و آنزیمی حساس‌اند و به نگهدارنده نیاز دارند؛ ویسکوزیته با حرارت طولانی و در pH‌های بسیار اسیدی یا قلیایی کاهش می‌یابد."
+  },
+  "incompatibilities": {
+   "en": "Borate ions cross-link guar gum and cause gelation. It is incompatible with acetone, tannins and strong acids and alkalis, and high concentrations of ethanol or salts reduce hydration and viscosity.",
+   "fa": "یون‌های بورات با ایجاد اتصال عرضی در صمغ گوار باعث ژل شدن آن می‌شوند. با استون، تانن‌ها و اسیدها و قلیاهای قوی ناسازگار است و غلظت‌های بالای اتانول یا نمک‌ها آب‌گیری و ویسکوزیته را کاهش می‌دهند."
+  },
+  "manufacture": {
+   "en": "Obtained from the ground endosperm of the seeds of the guar plant, Cyamopsis tetragonolobus (Leguminosae). The seed husk and germ are removed and the endosperm is milled and sieved.",
+   "fa": "از آندوسپرم آسیاب‌شده دانه‌های گیاه گوار (Cyamopsis tetragonolobus، تیره بقولات) به دست می‌آید. پوسته و جوانه دانه جدا و آندوسپرم آسیاب و الک می‌شود."
+  },
+  "safety": {
+   "en": "Generally regarded as non-toxic and non-irritant; it is not digested in the small intestine. Large oral amounts can cause flatulence, diarrhoea and nausea. Tablets of guar gum taken as a dietary fibre have caused oesophageal and intestinal obstruction when swallowed with too little water. It can lower post-prandial blood glucose and reduce the absorption of some drugs.",
+   "fa": "عموماً غیرسمی و غیرمحرک شناخته می‌شود و در روده باریک هضم نمی‌شود. مقادیر خوراکی زیاد ممکن است نفخ، اسهال و تهوع ایجاد کند. قرص‌های صمغ گوار مصرف‌شده به عنوان فیبر غذایی، در صورت بلعیدن با آب ناکافی، باعث انسداد مری و روده شده‌اند. ممکن است قند خون پس از غذا را کاهش دهد و جذب برخی داروها را کم کند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Guar gum dust may be irritant and is a recognised cause of occupational asthma; use eye protection, gloves and a dust respirator.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. گردوغبار صمغ گوار ممکن است محرک باشد و عامل شناخته‌شده آسم شغلی است؛ از محافظ چشم، دستکش و ماسک تنفسی گردوغبار استفاده شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E412). Included in the FDA Inactive Ingredient Database (oral tablets and suspensions; topical preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E412). در FDA Inactive Ingredient Database (قرص و سوسپانسیون خوراکی؛ فرآورده‌های موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Ceratonia (locust bean gum); hydroxypropyl guar; tara gum; xanthan gum.",
+   "fa": "سراتونیا (صمغ لوبیای خرنوب)؛ هیدروکسی‌پروپیل گوار؛ صمغ تارا؛ زانتان گام."
+  },
+  "comments": {
+   "en": "To avoid lumps, sprinkle the powder slowly into vigorously stirred water or pre-disperse it in a non-solvent such as glycerin or ethanol. Mixtures of guar gum with xanthan gum show synergistic increases in viscosity.",
+   "fa": "برای جلوگیری از کلوخه شدن، پودر را به‌آرامی به آب در حال هم زدن شدید بپاشید یا ابتدا آن را در یک غیرحلال مانند گلیسرین یا اتانول پراکنده کنید. مخلوط صمغ گوار با زانتان گام افزایش هم‌افزای ویسکوزیته نشان می‌دهد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Hard fat": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Hard Fat"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Hard Fat"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Hard Fat"
+   }
+  ],
+  "tradeNames": "Adeps neutralis; adeps solidus; Novata; semi-synthetic glycerides; Suppocire; Witepsol",
+  "chemicalName": "Mixture of triglycerides, with smaller amounts of mono- and diglycerides, of saturated C8–C18 fatty acids (mainly lauric acid)",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used chiefly as a base for suppositories and pessaries, where it has largely replaced theobroma oil. Many grades are available, differing in melting range, hydroxyl value and emulsifier content, so that the base can be matched to the drug and the climate. Hard fat is also used in some oral and topical products and in lipid-based capsule fills.",
+   "fa": "عمدتاً به عنوان پایه شیاف رکتال و واژینال به کار می‌رود و تا حد زیادی جایگزین روغن کاکائو شده است. گریدهای متعددی با محدوده ذوب، عدد هیدروکسیل و مقدار امولسیفایر متفاوت وجود دارد تا پایه با دارو و شرایط آب‌وهوایی هماهنگ شود. چربی سخت در برخی فرآورده‌های خوراکی و موضعی و در پرکننده‌های لیپیدی کپسول نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "A white or almost white, waxy, brittle mass, practically odourless and with a greasy feel. When heated to about 50 °C it melts to a colourless or slightly yellowish liquid.",
+   "fa": "توده مومی و شکننده سفید یا تقریباً سفید، عملاً بی‌بو و با لمس چرب. با گرم کردن تا حدود 50 °C به مایعی بی‌رنگ یا کمی زردرنگ ذوب می‌شود."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting range",
+     "fa": "محدوده ذوب"
+    },
+    "v": {
+     "en": "30–45 °C depending on grade; grades melting at about 33–37 °C are typical for suppositories",
+     "fa": "30–45 °C بسته به گرید؛ گریدهای با نقطه ذوب حدود 33–37 °C برای شیاف رایج‌اند"
+    }
+   },
+   {
+    "k": {
+     "en": "Hydroxyl value",
+     "fa": "عدد هیدروکسیل"
+    },
+    "v": {
+     "en": "≤ 50 (grade-dependent)",
+     "fa": "حداکثر 50 (وابسته به گرید)"
+    }
+   },
+   {
+    "k": {
+     "en": "Saponification value",
+     "fa": "عدد صابونی شدن"
+    },
+    "v": {
+     "en": "210–260",
+     "fa": "210–260"
+    }
+   },
+   {
+    "k": {
+     "en": "Iodine value",
+     "fa": "عدد یدی"
+    },
+    "v": {
+     "en": "≤ 3",
+     "fa": "حداکثر 3"
+    }
+   },
+   {
+    "k": {
+     "en": "Acid value",
+     "fa": "عدد اسیدی"
+    },
+    "v": {
+     "en": "≤ 0.5",
+     "fa": "حداکثر 0.5"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in ether; slightly soluble in ethanol; practically insoluble in water",
+     "fa": "به‌راحتی محلول در اتر؛ کمی محلول در اتانول؛ عملاً نامحلول در آب"
+    }
+   }
+  ],
+  "stability": {
+   "en": "More stable than theobroma oil and much less prone to troublesome polymorphism, so it can be melted and poured without special tempering. Some grades show post-hardening on storage, with a small rise in melting point and slower release. Store protected from light and heat, below about 25 °C.",
+   "fa": "پایدارتر از روغن کاکائو است و پلی‌مورفیسم مشکل‌ساز آن بسیار کمتر است؛ بنابراین بدون تمپر کردن ویژه قابل ذوب و قالب‌ریزی است. برخی گریدها در طول نگهداری دچار سخت شدن ثانویه (post-hardening) همراه با افزایش اندک نقطه ذوب و کندتر شدن رهش می‌شوند. دور از نور و حرارت و در دمای کمتر از حدود 25 °C نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Some drugs, for example those soluble in the base, lower the melting point of hard fat and can give soft suppositories. Its compatibility depends on the grade; grades with a high hydroxyl value are more reactive towards drugs that interact with free hydroxyl groups.",
+   "fa": "برخی داروها، به‌ویژه داروهای محلول در پایه، نقطه ذوب چربی سخت را کاهش می‌دهند و ممکن است شیاف نرم ایجاد کنند. سازگاری آن به گرید بستگی دارد؛ گریدهای با عدد هیدروکسیل بالا با داروهایی که با گروه‌های هیدروکسیل آزاد واکنش می‌دهند واکنش‌پذیرترند."
+  },
+  "manufacture": {
+   "en": "Made by esterifying glycerol with saturated fatty acids obtained from hydrogenated vegetable oils such as coconut or palm-kernel oil, or by interesterification and hydrogenation of natural fats. Emulsifier-containing grades include added mono- or diglycerides or other surfactants.",
+   "fa": "از استریفیکاسیون گلیسرول با اسیدهای چرب اشباع حاصل از روغن‌های گیاهی هیدروژنه مانند روغن نارگیل یا هسته خرما، یا از اینتراستریفیکاسیون و هیدروژناسیون چربی‌های طبیعی تهیه می‌شود. گریدهای حاوی امولسیفایر دارای مونو یا دی‌گلیسرید یا سورفکتانت‌های افزوده هستند."
+  },
+  "safety": {
+   "en": "Generally regarded as non-toxic and non-irritant. Occasional mild rectal irritation has been reported with some grades, particularly those containing emulsifiers.",
+   "fa": "عموماً غیرسمی و غیرمحرک شناخته می‌شود. گاهی تحریک خفیف رکتوم با برخی گریدها، به‌ویژه گریدهای حاوی امولسیفایر، گزارش شده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; protect hands and eyes when working with the molten material.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ هنگام کار با ماده مذاب از دست‌ها و چشم‌ها محافظت شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (rectal and vaginal suppositories; oral preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (شیاف رکتال و واژینال؛ فرآورده‌های خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Theobroma oil; polyethylene glycol suppository bases; glyceryl palmitostearate; hydrogenated vegetable oil.",
+   "fa": "روغن کاکائو (تئوبروما)؛ پایه‌های شیاف پلی‌اتیلن گلیکولی؛ گلیسریل پالمیتواستئارات؛ روغن گیاهی هیدروژنه."
+  },
+  "comments": {
+   "en": "When choosing a grade, consider the drug's solubility in the base (dissolved drug lowers the melting point), the drug load (high loads need grades with low viscosity when molten) and the hydroxyl value, which affects water absorption and the speed of solidification. The displacement value of the drug should be used to calculate the amount of base per mould.",
+   "fa": "در انتخاب گرید، حلالیت دارو در پایه (داروی حل‌شده نقطه ذوب را کاهش می‌دهد)، مقدار دارو (مقادیر زیاد به گریدهای با ویسکوزیته کم در حالت مذاب نیاز دارند) و عدد هیدروکسیل که بر جذب آب و سرعت انجماد اثر دارد، باید در نظر گرفته شود. برای محاسبه مقدار پایه در هر قالب باید از ضریب جابه‌جایی (displacement value) دارو استفاده کرد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Histidine": {
+  "names": [
+   {
+    "ph": "JP",
+    "name": "L-Histidine"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Histidine"
+   },
+   {
+    "ph": "BP",
+    "name": "Histidine"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Histidine"
+   }
+  ],
+  "tradeNames": "L-histidine; His; (S)-2-amino-3-(imidazol-4-yl)propanoic acid; α-amino-β-imidazolepropionic acid",
+  "chemicalName": "(S)-2-Amino-3-(1H-imidazol-4-yl)propanoic acid",
+  "formula": "C6H9N3O2",
+  "mw": "155.15",
+  "applications": {
+   "en": "Widely used as a buffer in biopharmaceutical formulations, particularly monoclonal antibodies for subcutaneous and intravenous use, typically at about 10–20 mM and pH 5.5–6.5 where the imidazole group buffers. It also acts as a stabiliser that reduces protein aggregation, as a cryo- and lyoprotectant in freeze-dried products, and as a nutrient in parenteral nutrition solutions.",
+   "fa": "به‌طور گسترده به عنوان بافر در فرمولاسیون‌های بیودارویی، به‌ویژه آنتی‌بادی‌های مونوکلونال زیرجلدی و وریدی، معمولاً با غلظت حدود 10–20 mM و در pH 5.5–6.5 که گروه ایمیدازول در آن خاصیت بافری دارد، به کار می‌رود. همچنین به عنوان پایدارکننده برای کاهش تجمع پروتئین، محافظ انجماد و خشک‌کردن (cryo-/lyoprotectant) در فرآورده‌های لیوفیلیزه و به عنوان ماده مغذی در محلول‌های تغذیه تزریقی کاربرد دارد."
+  },
+  "description": {
+   "en": "White crystals or crystalline powder, odourless and with a slightly bitter taste. It is an essential amino acid; the pharmacopoeial material is the L-enantiomer.",
+   "fa": "کریستال یا پودر کریستالی سفید، بی‌بو و با طعم کمی تلخ. یک اسید آمینه ضروری است و ماده فارماکوپه‌ای انانتیومر L آن است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pKa",
+     "fa": "pKa"
+    },
+    "v": {
+     "en": "≈ 1.8 (carboxyl), ≈ 6.0 (imidazole) and ≈ 9.2 (amino)",
+     "fa": "حدود 1.8 (کربوکسیل)، حدود 6.0 (ایمیدازول) و حدود 9.2 (آمین)"
+    }
+   },
+   {
+    "k": {
+     "en": "Isoelectric point",
+     "fa": "نقطه ایزوالکتریک"
+    },
+    "v": {
+     "en": "≈ 7.6",
+     "fa": "حدود 7.6"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "decomposes at about 280 °C",
+     "fa": "در حدود 280 °C تجزیه می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in water (about 4 g/100 mL at 25 °C); very slightly soluble in ethanol",
+     "fa": "محلول در آب (حدود 4 g/100 mL در 25 °C)؛ بسیار کم محلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Buffer range",
+     "fa": "محدوده بافری"
+    },
+    "v": {
+     "en": "about pH 5.0–7.0",
+     "fa": "حدود pH 5.0–7.0"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable as a solid; store in a well-closed container protected from light. In solution, histidine is susceptible to metal-catalysed and light-induced oxidation, and its degradation products can promote oxidation or discoloration of proteins. Solutions are usually prepared fresh or protected from light.",
+   "fa": "به صورت جامد پایدار است؛ در ظرف کاملاً بسته و دور از نور نگهداری شود. در محلول، هیستیدین مستعد اکسیداسیون کاتالیزشده با فلزات و القاشده با نور است و محصولات تجزیه آن می‌توانند اکسیداسیون یا تغییر رنگ پروتئین‌ها را تشدید کنند. محلول‌ها معمولاً تازه تهیه یا دور از نور نگهداری می‌شوند."
+  },
+  "incompatibilities": {
+   "en": "Chelates transition-metal ions such as copper, zinc and iron. Incompatible with strong oxidising agents; as an amine it can undergo Maillard reaction with reducing sugars.",
+   "fa": "با یون‌های فلزات واسطه مانند مس، روی و آهن کلات تشکیل می‌دهد. با اکسیدکننده‌های قوی ناسازگار است و به عنوان آمین می‌تواند با قندهای احیاکننده واکنش میلارد بدهد."
+  },
+  "manufacture": {
+   "en": "Produced mainly by microbial fermentation, followed by isolation and purification by ion-exchange and crystallisation.",
+   "fa": "عمدتاً با تخمیر میکروبی تولید و سپس با تبادل یونی و کریستالیزاسیون جداسازی و خالص‌سازی می‌شود."
+  },
+  "safety": {
+   "en": "An essential dietary amino acid, regarded as non-toxic and non-irritant at the concentrations used as a buffer.",
+   "fa": "یک اسید آمینه ضروری رژیم غذایی است و در غلظت‌های مصرفی به عنوان بافر غیرسمی و غیرمحرک شناخته می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (intravenous and subcutaneous injections) and in parenteral medicines licensed in Europe, including many biological products.",
+   "fa": "در FDA Inactive Ingredient Database (تزریق وریدی و زیرجلدی) و در داروهای تزریقی مجاز در اروپا، از جمله بسیاری از فرآورده‌های بیولوژیک، وجود دارد."
+  },
+  "related": {
+   "en": "Histidine hydrochloride monohydrate; arginine; glycine; methionine.",
+   "fa": "هیستیدین هیدروکلراید مونوهیدرات؛ آرژنین؛ گلیسین؛ متیونین."
+  },
+  "comments": {
+   "en": "Histidine buffers are normally prepared from a combination of L-histidine and L-histidine hydrochloride monohydrate to reach the target pH without strong acids. The buffer pH of histidine changes noticeably with temperature, which should be considered for products stored refrigerated or frozen.",
+   "fa": "بافرهای هیستیدین معمولاً از ترکیب L-هیستیدین و L-هیستیدین هیدروکلراید مونوهیدرات تهیه می‌شوند تا pH هدف بدون استفاده از اسید قوی به دست آید. pH بافر هیستیدین با دما به‌طور محسوسی تغییر می‌کند و این نکته برای فرآورده‌هایی که در یخچال یا به صورت منجمد نگهداری می‌شوند باید در نظر گرفته شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid"
+  ]
+ },
+ "Hydrochloric acid": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Hydrochloric Acid"
+   },
+   {
+    "ph": "JP",
+    "name": "Hydrochloric Acid"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Hydrochloric Acid, Concentrated"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Hydrochloric Acid"
+   }
+  ],
+  "tradeNames": "Chlorhydric acid; hydrogen chloride solution; muriatic acid; spirits of salt; E507",
+  "chemicalName": "Hydrochloric acid (aqueous solution of hydrogen chloride)",
+  "formula": "HCl",
+  "mw": "36.46",
+  "applications": {
+   "en": "Used, usually after dilution, as an acidifying agent to adjust the pH of injections, ophthalmic, nasal, oral and topical products, and to form hydrochloride salts of basic drugs in situ. It is also used in analytical work and in the manufacture of other materials, and as a food acidulant.",
+   "fa": "معمولاً پس از رقیق شدن، به عنوان عامل اسیدی‌کننده برای تنظیم pH فرآورده‌های تزریقی، چشمی، بینی، خوراکی و موضعی و برای تشکیل درجای نمک هیدروکلراید داروهای بازی به کار می‌رود. همچنین در آزمایش‌های تجزیه‌ای، ساخت سایر مواد و به عنوان اسیدی‌کننده غذایی مصرف می‌شود."
+  },
+  "description": {
+   "en": "Concentrated hydrochloric acid is a clear, colourless, fuming liquid with a pungent, irritating odour; Ph. Eur. and USP–NF specify about 35–39% w/w HCl. Dilute hydrochloric acid (about 10% HCl) is also official and does not fume.",
+   "fa": "هیدروکلریک اسید غلیظ مایعی شفاف، بی‌رنگ و دودکننده با بوی تند و محرک است؛ فارماکوپه اروپا و USP–NF غلظت آن را حدود 35–39٪ وزنی HCl تعیین کرده‌اند. هیدروکلریک اسید رقیق (حدود 10٪ HCl) نیز رسمی است و دود نمی‌کند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Content",
+     "fa": "مقدار"
+    },
+    "v": {
+     "en": "concentrated acid ≈ 35–39% w/w HCl; dilute acid ≈ 10% HCl",
+     "fa": "اسید غلیظ حدود 35–39٪ وزنی HCl؛ اسید رقیق حدود 10٪ HCl"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "≈ 1.18 g/cm³ (concentrated acid at 20 °C)",
+     "fa": "حدود 1.18 g/cm³ (اسید غلیظ در 20 °C)"
+    }
+   },
+   {
+    "k": {
+     "en": "Acidity",
+     "fa": "اسیدیته"
+    },
+    "v": {
+     "en": "strong mineral acid, completely dissociated in water",
+     "fa": "اسید معدنی قوی که در آب کاملاً تفکیک می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "miscible with water and ethanol",
+     "fa": "قابل اختلاط با آب و اتانول"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Concentrated acid loses hydrogen chloride gas on exposure to air. Store in tightly closed glass or other inert containers in a cool, well-ventilated place, away from metals and alkalis.",
+   "fa": "اسید غلیظ در تماس با هوا گاز هیدروژن کلرید از دست می‌دهد. در ظرف شیشه‌ای یا سایر ظروف بی‌اثر کاملاً بسته، در جای خنک و با تهویه مناسب و دور از فلزات و قلیاها نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Reacts violently with alkalis. Attacks many metals with liberation of flammable hydrogen. With oxidising agents such as hypochlorites or permanganates it releases chlorine, and with formaldehyde it can form the carcinogen bis(chloromethyl) ether. Acid-labile drugs and excipients are hydrolysed.",
+   "fa": "با قلیاها واکنش شدید می‌دهد. به بسیاری از فلزات حمله می‌کند و هیدروژن قابل اشتعال آزاد می‌سازد. با اکسیدکننده‌هایی مانند هیپوکلریت‌ها یا پرمنگنات‌ها گاز کلر آزاد می‌کند و با فرمالدهید ممکن است ترکیب سرطان‌زای بیس(کلرومتیل) اتر تشکیل دهد. داروها و مواد جانبی حساس به اسید هیدرولیز می‌شوند."
+  },
+  "manufacture": {
+   "en": "Made by dissolving hydrogen chloride gas in water. The gas is obtained by direct combination of hydrogen and chlorine, as a by-product of the chlorination of organic compounds, or from sodium chloride and sulfuric acid.",
+   "fa": "از حل کردن گاز هیدروژن کلرید در آب تهیه می‌شود. این گاز از ترکیب مستقیم هیدروژن و کلر، به عنوان محصول جانبی کلردار کردن ترکیبات آلی، یا از واکنش سدیم کلرید با سولفوریک اسید به دست می‌آید."
+  },
+  "safety": {
+   "en": "Concentrated hydrochloric acid is corrosive and causes severe burns to skin, eyes and mucous membranes; its vapour irritates the respiratory tract. At the low levels used to adjust pH in medicines it presents no hazard, and dilute hydrochloric acid is a normal constituent of gastric juice.",
+   "fa": "هیدروکلریک اسید غلیظ خورنده است و باعث سوختگی شدید پوست، چشم و غشاهای مخاطی می‌شود و بخار آن دستگاه تنفسی را تحریک می‌کند. در مقادیر کمی که برای تنظیم pH در داروها به کار می‌رود خطری ندارد و هیدروکلریک اسید رقیق جزء طبیعی شیره معده است."
+  },
+  "handling": {
+   "en": "Handle with great care. Wear acid-resistant gloves, goggles and a face shield, and work in a fume cupboard. Always add acid to water, never water to acid. Spills should be neutralised with sodium bicarbonate or another weak base.",
+   "fa": "با احتیاط بسیار جابه‌جا شود. از دستکش مقاوم به اسید، عینک ایمنی و محافظ صورت استفاده و زیر هود کار شود. همیشه اسید را به آب اضافه کنید و هرگز آب را به اسید نیفزایید. ریختگی‌ها باید با سدیم بی‌کربنات یا باز ضعیف دیگری خنثی شوند."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E507). Included in the FDA Inactive Ingredient Database (injectable, inhalation, nasal, ophthalmic, oral, otic and topical preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E507). در FDA Inactive Ingredient Database (فرآورده‌های تزریقی، استنشاقی، بینی، چشمی، خوراکی، گوشی و موضعی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Dilute hydrochloric acid; sodium hydroxide (for pH adjustment in the opposite direction); phosphoric acid; sulfuric acid.",
+   "fa": "هیدروکلریک اسید رقیق؛ سدیم هیدروکسید (برای تنظیم pH در جهت مخالف)؛ فسفریک اسید؛ سولفوریک اسید."
+  },
+  "comments": {
+   "en": "For pH adjustment, dilute (for example 1 M or 10%) acid is normally used and added in small portions with mixing to avoid local overshoot. The amount added 'q.s. to pH' should be recorded, since it contributes chloride ions that can affect the solubility of hydrochloride salts by the common-ion effect.",
+   "fa": "برای تنظیم pH معمولاً از اسید رقیق (مثلاً 1 M یا 10٪) استفاده و به صورت مقادیر کم همراه با هم زدن افزوده می‌شود تا از افت موضعی بیش از حد pH جلوگیری شود. مقدار افزوده‌شده (q.s. تا pH) باید ثبت شود، زیرا یون کلرید وارد می‌کند که می‌تواند از طریق اثر یون مشترک بر حلالیت نمک‌های هیدروکلراید اثر بگذارد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Hydroxyethyl cellulose": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Hydroxyethylcellulose"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Hydroxyethylcellulose"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Hydroxyethyl Cellulose"
+   }
+  ],
+  "tradeNames": "Cellosize HEC; cellulose hydroxyethyl ether; HEC; hydroxyethylcellulosum; Natrosol; Tylose H",
+  "chemicalName": "Cellulose, 2-hydroxyethyl ether",
+  "formula": "",
+  "mw": "≈ 90 000–1 300 000 (grade-dependent)",
+  "applications": {
+   "en": "A non-ionic, water-soluble polymer used mainly as a thickening and suspending agent in ophthalmic and topical products, including gels, lubricating jellies, lotions and artificial tears, usually at concentrations of a few per cent or less. It is also used as a binder and film former in tablets, as a matrix former in sustained-release systems, as a stabiliser in emulsions and in mucoadhesive formulations. It is widely used in cosmetics and toiletries.",
+   "fa": "پلیمری غیریونی و محلول در آب است که عمدتاً به عنوان غلیظ‌کننده و تعلیق‌کننده در فرآورده‌های چشمی و موضعی، از جمله ژل‌ها، ژل‌های لوبریکانت، لوسیون‌ها و قطره‌های اشک مصنوعی، معمولاً با غلظت چند درصد یا کمتر، به کار می‌رود. همچنین به عنوان چسباننده و تشکیل‌دهنده فیلم در قرص، تشکیل‌دهنده ماتریکس در سیستم‌های آهسته‌رهش، پایدارکننده امولسیون و در فرمولاسیون‌های چسبنده به مخاط مصرف می‌شود. در محصولات آرایشی و بهداشتی کاربرد گسترده دارد."
+  },
+  "description": {
+   "en": "A white, yellowish-white or greyish-white, odourless and tasteless, hygroscopic powder or granules. Grades are distinguished by the viscosity of their aqueous solutions and by the degree of hydroxyethyl substitution.",
+   "fa": "پودر یا گرانول سفید، سفید مایل به زرد یا سفید مایل به خاکستری، بی‌بو، بی‌مزه و رطوبت‌گیر. گریدها بر اساس ویسکوزیته محلول آبی و میزان جایگزینی هیدروکسی‌اتیل از هم متمایز می‌شوند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Molar substitution",
+     "fa": "جایگزینی مولی (MS)"
+    },
+    "v": {
+     "en": "typically about 1.5–3.5 (≈ 2.5 for common grades)",
+     "fa": "معمولاً حدود 1.5–3.5 (حدود 2.5 در گریدهای رایج)"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "5.5–8.5 (1% w/v aqueous solution)",
+     "fa": "5.5–8.5 (محلول آبی 1٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "wide range of grades, from a few mPa·s to many thousands of mPa·s for 1–2% w/v solutions",
+     "fa": "طیف وسیعی از گریدها، از چند mPa·s تا چندین هزار mPa·s برای محلول‌های 1–2٪"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in hot and cold water, without thermal gelation; practically insoluble in acetone, ethanol and most other organic solvents",
+     "fa": "محلول در آب سرد و گرم بدون ژل شدن حرارتی؛ عملاً نامحلول در استون، اتانول و بیشتر حلال‌های آلی دیگر"
+    }
+   }
+  ],
+  "stability": {
+   "en": "The powder is stable but hygroscopic; store in a well-closed container in a cool, dry place. Aqueous solutions are relatively stable at pH 2–12, but viscosity falls through acid hydrolysis at low pH and oxidative degradation at high pH. Solutions are susceptible to enzymatic (cellulase) degradation and should be preserved.",
+   "fa": "پودر پایدار ولی رطوبت‌گیر است؛ در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود. محلول‌های آبی در pH 2–12 نسبتاً پایدارند، اما ویسکوزیته در pH پایین به دلیل هیدرولیز اسیدی و در pH بالا به دلیل تجزیه اکسیداتیو کاهش می‌یابد. محلول‌ها به تجزیه آنزیمی (سلولاز) حساس‌اند و باید نگهدارنده داشته باشند."
+  },
+  "incompatibilities": {
+   "en": "Compatible with most water-soluble gums and resins and, being non-ionic, tolerates many salts, although very high salt concentrations can salt it out. It is incompatible with zein and may be precipitated by some concentrated solutions of salts such as sodium sulfate.",
+   "fa": "با بیشتر صمغ‌ها و رزین‌های محلول در آب سازگار است و به دلیل غیریونی بودن، بسیاری از نمک‌ها را تحمل می‌کند، هرچند غلظت‌های بسیار بالای نمک ممکن است آن را رسوب دهد. با زئین ناسازگار است و ممکن است توسط برخی محلول‌های غلیظ نمک‌ها مانند سدیم سولفات رسوب کند."
+  },
+  "manufacture": {
+   "en": "Prepared by treating purified cellulose with sodium hydroxide to form alkali cellulose, which is then reacted with ethylene oxide. The product is neutralised, washed, dried and milled.",
+   "fa": "از واکنش سلولز خالص با سدیم هیدروکسید برای تشکیل سلولز قلیایی و سپس واکنش آن با اتیلن اکساید تهیه می‌شود. محصول خنثی، شسته، خشک و آسیاب می‌گردد."
+  },
+  "safety": {
+   "en": "Regarded as essentially non-toxic and non-irritant; it is not absorbed from the gastrointestinal tract. It is used in ophthalmic preparations and contact lens solutions without significant irritation.",
+   "fa": "اساساً غیرسمی و غیرمحرک شناخته می‌شود و از دستگاه گوارش جذب نمی‌شود. در فرآورده‌های چشمی و محلول‌های لنز تماسی بدون تحریک قابل توجه مصرف می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. The fine powder can form explosive dust–air mixtures; avoid generating dust and use eye protection and gloves.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. پودر ریز آن ممکن است با هوا مخلوط قابل انفجار تشکیل دهد؛ از ایجاد گردوغبار خودداری و از محافظ چشم و دستکش استفاده شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (ophthalmic, otic, oral, topical and vaginal preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های چشمی، گوشی، خوراکی، موضعی و واژینال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Ethylhydroxyethyl cellulose; hydroxypropyl cellulose; hypromellose; methylcellulose.",
+   "fa": "اتیل‌هیدروکسی‌اتیل سلولز؛ هیدروکسی‌پروپیل سلولز؛ هیپرملوز؛ متیل‌سلولز."
+  },
+  "comments": {
+   "en": "Unlike methylcellulose and hypromellose, hydroxyethyl cellulose does not gel on heating, so it can be dissolved directly in hot water. To prevent lumps, disperse the powder in water with good agitation before the pH is raised or before other solutes are added; some grades are surface-treated to delay hydration and ease dispersion.",
+   "fa": "برخلاف متیل‌سلولز و هیپرملوز، هیدروکسی‌اتیل سلولز با گرما ژل نمی‌شود و می‌توان آن را مستقیماً در آب گرم حل کرد. برای جلوگیری از کلوخه شدن، پودر را پیش از بالا بردن pH یا افزودن سایر مواد محلول، با هم زدن خوب در آب پراکنده کنید؛ برخی گریدها برای تأخیر در آب‌گیری و آسان شدن پراکنده‌سازی، عمل‌آوری سطحی شده‌اند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Hydroxypropyl betadex": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Hydroxypropylbetadex"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Hydroxypropylbetadex"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Hydroxypropyl Betadex"
+   }
+  ],
+  "tradeNames": "Cavasol W7 HP; HPβCD; 2-hydroxypropyl-β-cyclodextrin; hydroxypropyl-β-cyclodextrin; Kleptose HPB; Trappsol HPB",
+  "chemicalName": "Cyclomaltoheptaose, 2-hydroxypropyl ether (partially substituted β-cyclodextrin)",
+  "formula": "C42H70O35·(C3H6O)x",
+  "mw": "≈ 1400 (depends on molar substitution)",
+  "applications": {
+   "en": "Used to increase the aqueous solubility, stability and bioavailability of poorly soluble drugs by forming non-covalent inclusion complexes. It is used in oral solutions and solid dosage forms, parenteral products (intravenous and intramuscular), and ophthalmic, nasal and topical preparations; concentrations range from a few per cent to about 40% w/v in some oral and parenteral solutions. It can also mask taste and reduce irritation caused by some drugs.",
+   "fa": "با تشکیل کمپلکس‌های درون‌گیر غیرکووالانسی، حلالیت آبی، پایداری و فراهمی زیستی داروهای کم‌محلول را افزایش می‌دهد. در محلول‌های خوراکی و اشکال دارویی جامد، فرآورده‌های تزریقی (وریدی و عضلانی) و فرآورده‌های چشمی، بینی و موضعی به کار می‌رود؛ غلظت آن از چند درصد تا حدود 40٪ وزنی-حجمی در برخی محلول‌های خوراکی و تزریقی متغیر است. همچنین می‌تواند طعم را بپوشاند و تحریک ناشی از برخی داروها را کاهش دهد."
+  },
+  "description": {
+   "en": "A white or almost white, amorphous or crystalline, hygroscopic powder, practically odourless and with a slightly sweet taste. It is a mixture of β-cyclodextrin derivatives with different numbers and positions of hydroxypropyl groups.",
+   "fa": "پودر سفید یا تقریباً سفید، آمورف یا کریستالی و رطوبت‌گیر، عملاً بی‌بو و با طعم کمی شیرین. مخلوطی از مشتقات بتاسیکلودکسترین با تعداد و موقعیت‌های مختلف گروه‌های هیدروکسی‌پروپیل است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Molar substitution",
+     "fa": "جایگزینی مولی (MS)"
+    },
+    "v": {
+     "en": "0.40–1.50 (Ph. Eur.); commercial parenteral grades typically about 0.6–0.9",
+     "fa": "0.40–1.50 (فارماکوپه اروپا)؛ گریدهای تزریقی تجاری معمولاً حدود 0.6–0.9"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "very soluble in water (more than 50% w/v) and in propylene glycol; freely soluble in methanol and ethanol",
+     "fa": "بسیار محلول در آب (بیش از 50٪ وزنی-حجمی) و در پروپیلن گلیکول؛ به‌راحتی محلول در متانول و اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Cavity diameter",
+     "fa": "قطر حفره"
+    },
+    "v": {
+     "en": "≈ 0.6–0.65 nm (as for β-cyclodextrin)",
+     "fa": "حدود 0.6–0.65 nm (مانند بتاسیکلودکسترین)"
+    }
+   },
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "amorphous; does not crystallise readily from solution",
+     "fa": "آمورف؛ به‌سادگی از محلول کریستالیزه نمی‌شود"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable in the solid state when protected from high humidity; store in a well-closed container in a cool, dry place. Aqueous solutions are stable and can be autoclaved, but the glycosidic bonds are hydrolysed by strong acids at elevated temperature.",
+   "fa": "در حالت جامد، در صورت محافظت از رطوبت زیاد، پایدار است؛ در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود. محلول‌های آبی پایدارند و قابل اتوکلاو هستند، اما پیوندهای گلیکوزیدی با اسیدهای قوی در دمای بالا هیدرولیز می‌شوند."
+  },
+  "incompatibilities": {
+   "en": "Can form inclusion complexes with other formulation components, for example antimicrobial preservatives such as parabens and benzalkonium chloride, and so reduce their effectiveness. Strong oxidising agents should be avoided.",
+   "fa": "ممکن است با سایر اجزای فرمولاسیون، مثلاً نگهدارنده‌های ضدمیکروبی مانند پارابن‌ها و بنزالکونیوم کلراید، کمپلکس درون‌گیر تشکیل دهد و اثربخشی آن‌ها را کاهش دهد. از تماس با اکسیدکننده‌های قوی خودداری شود."
+  },
+  "manufacture": {
+   "en": "Produced by reacting β-cyclodextrin with propylene oxide in alkaline aqueous solution; the reaction conditions control the degree of substitution. The product is neutralised, purified (for example by dialysis or ion exchange) and spray- or freeze-dried.",
+   "fa": "از واکنش بتاسیکلودکسترین با پروپیلن اکساید در محلول آبی قلیایی تهیه می‌شود و شرایط واکنش میزان جایگزینی را کنترل می‌کند. محصول خنثی، خالص‌سازی (مثلاً با دیالیز یا تبادل یونی) و با خشک‌کن پاششی یا انجمادی خشک می‌شود."
+  },
+  "safety": {
+   "en": "Well tolerated orally and parenterally. After oral use it is very poorly absorbed and is fermented in the colon; high oral doses can cause soft stools or diarrhoea. After intravenous administration it is excreted unchanged by the kidneys and is much less nephrotoxic than parent β-cyclodextrin. The EMA has published guidance on cyclodextrins with dose thresholds for labelling.",
+   "fa": "از راه خوراکی و تزریقی به‌خوبی تحمل می‌شود. پس از مصرف خوراکی جذب بسیار کمی دارد و در کولون تخمیر می‌شود؛ دوزهای خوراکی زیاد ممکن است مدفوع شل یا اسهال ایجاد کنند. پس از تزریق وریدی به صورت تغییرنیافته از کلیه دفع می‌شود و سمیت کلیوی آن بسیار کمتر از بتاسیکلودکسترین مادر است. EMA راهنمایی درباره سیکلودکسترین‌ها با آستانه‌های دوز برای درج در برچسب منتشر کرده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection, gloves and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (intravenous and intramuscular injections; oral solutions and tablets) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (تزریق وریدی و عضلانی؛ محلول و قرص خوراکی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Alfadex; betadex; gamma cyclodextrin; sulfobutylether β-cyclodextrin (betadex sulfobutyl ether sodium).",
+   "fa": "آلفادکس؛ بتادکس؛ گاماسیکلودکسترین؛ سولفوبوتیل‌اتر بتاسیکلودکسترین (بتادکس سولفوبوتیل اتر سدیم)."
+  },
+  "comments": {
+   "en": "The solubilising effect depends on the fit of the drug in the cavity and on the degree of substitution, so phase-solubility studies are needed for each drug. Using more cyclodextrin than required can reduce absorption by keeping the drug in the complexed form, and dilution after administration releases the drug rapidly.",
+   "fa": "اثر حل‌کنندگی به تناسب ابعاد دارو با حفره و به میزان جایگزینی بستگی دارد؛ بنابراین برای هر دارو مطالعه فاز-حلالیت لازم است. مصرف سیکلودکسترین بیش از مقدار لازم ممکن است با نگه داشتن دارو در حالت کمپلکس، جذب را کاهش دهد، و رقیق شدن پس از تجویز دارو را به‌سرعت آزاد می‌کند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Hydroxypropyl cellulose": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Hydroxypropylcellulose"
+   },
+   {
+    "ph": "JP",
+    "name": "Hydroxypropylcellulose"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Hydroxypropylcellulose"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Hydroxypropyl Cellulose"
+   }
+  ],
+  "tradeNames": "Cellulose, hydroxypropyl ether; HPC; hyprolose; Klucel; Nisso HPC; oxypropylated cellulose; E463",
+  "chemicalName": "Cellulose, 2-hydroxypropyl ether",
+  "formula": "",
+  "mw": "≈ 50 000–1 250 000 (grade-dependent)",
+  "applications": {
+   "en": "Used in oral products as a tablet binder in wet and dry granulation (2–6%), as a film former for tablet coating (about 5% solutions), and as an extended-release matrix former (15–35%). It is also used as a thickener in topical and oral liquids, in hot-melt extrusion, in transdermal films and as a stabiliser for suspensions. Fine-particle grades are used for direct-compression binding.",
+   "fa": "در فرآورده‌های خوراکی به عنوان چسباننده قرص در گرانولاسیون مرطوب و خشک (2–6٪)، تشکیل‌دهنده فیلم در روکش قرص (محلول‌های حدود 5٪) و تشکیل‌دهنده ماتریکس رهش طولانی (15–35٪) به کار می‌رود. همچنین به عنوان غلیظ‌کننده در مایعات موضعی و خوراکی، در اکستروژن مذاب (HME)، در فیلم‌های ترانس‌درمال و به عنوان پایدارکننده سوسپانسیون مصرف می‌شود. گریدهای با ذرات ریز برای چسبانندگی در پرس مستقیم کاربرد دارند."
+  },
+  "description": {
+   "en": "A white to slightly yellow, odourless and tasteless powder or granules. It is a thermoplastic, non-ionic cellulose ether with a high level of hydroxypropyl substitution, which gives it solubility in both water and polar organic solvents.",
+   "fa": "پودر یا گرانول سفید تا کمی زرد، بی‌بو و بی‌مزه. یک اتر سلولزی غیریونی و ترموپلاستیک با میزان بالای جایگزینی هیدروکسی‌پروپیل است که آن را هم در آب و هم در حلال‌های آلی قطبی محلول می‌کند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Hydroxypropoxy content",
+     "fa": "مقدار هیدروکسی‌پروپوکسی"
+    },
+    "v": {
+     "en": "≤ 80.5% (USP–NF); molar substitution about 3.5–4",
+     "fa": "حداکثر 80.5٪ (USP–NF)؛ جایگزینی مولی حدود 3.5–4"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "5.0–8.5 (1% w/v aqueous solution)",
+     "fa": "5.0–8.5 (محلول آبی 1٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in cold water and in ethanol, methanol, propylene glycol and other polar solvents; insoluble in hot water, from which it precipitates at about 40–45 °C",
+     "fa": "محلول در آب سرد و در اتانول، متانول، پروپیلن گلیکول و سایر حلال‌های قطبی؛ نامحلول در آب گرم که در حدود 40–45 °C از آن رسوب می‌کند"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "grades from very low to very high (for example a few mPa·s to several thousand mPa·s in 2% w/v solution)",
+     "fa": "گریدهایی از ویسکوزیته بسیار کم تا بسیار زیاد (مثلاً از چند mPa·s تا چند هزار mPa·s در محلول 2٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Moisture content",
+     "fa": "مقدار رطوبت"
+    },
+    "v": {
+     "en": "typically below 5% w/w as packed; moderately hygroscopic",
+     "fa": "معمولاً کمتر از 5٪ وزنی در بسته‌بندی؛ به‌طور متوسط رطوبت‌گیر"
+    }
+   }
+  ],
+  "stability": {
+   "en": "The powder is stable but hygroscopic; store in a well-closed container in a cool, dry place. Aqueous solutions are most stable at about pH 6–8; viscosity may fall through acid hydrolysis at low pH and alkaline oxidation at high pH, and through exposure to UV light. Solutions are susceptible to microbial and enzymatic degradation and should be preserved.",
+   "fa": "پودر پایدار ولی رطوبت‌گیر است؛ در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود. محلول‌های آبی در pH حدود 6–8 بیشترین پایداری را دارند؛ ویسکوزیته ممکن است در pH پایین با هیدرولیز اسیدی، در pH بالا با اکسیداسیون قلیایی و در اثر نور UV کاهش یابد. محلول‌ها به تجزیه میکروبی و آنزیمی حساس‌اند و باید نگهدارنده داشته باشند."
+  },
+  "incompatibilities": {
+   "en": "Interacts with substituted phenolic compounds such as methylparaben and propylparaben, which can cause precipitation. High concentrations of dissolved salts or other solutes reduce its solubility and may cause it to salt out. Some anionic polymers can increase the viscosity of its solutions.",
+   "fa": "با ترکیبات فنولی جایگزین‌شده مانند متیل‌پارابن و پروپیل‌پارابن برهم‌کنش دارد که ممکن است باعث رسوب شود. غلظت‌های بالای نمک‌ها یا سایر مواد محلول، حلالیت آن را کاهش داده و ممکن است آن را رسوب دهند. برخی پلیمرهای آنیونی ممکن است ویسکوزیته محلول آن را افزایش دهند."
+  },
+  "manufacture": {
+   "en": "Made by reacting alkali cellulose with propylene oxide at elevated temperature and pressure. The product is purified to remove by-products, then dried and milled to the required particle size.",
+   "fa": "از واکنش سلولز قلیایی با پروپیلن اکساید در دما و فشار بالا تهیه می‌شود. محصول برای حذف محصولات جانبی خالص‌سازی و سپس خشک و تا اندازه ذره مورد نظر آسیاب می‌گردد."
+  },
+  "safety": {
+   "en": "Widely used in oral and topical products and regarded as essentially non-toxic and non-irritant; it is not absorbed from the gastrointestinal tract. Very large oral doses may have a laxative effect.",
+   "fa": "در فرآورده‌های خوراکی و موضعی به‌طور گسترده مصرف می‌شود و اساساً غیرسمی و غیرمحرک شناخته می‌شود؛ از دستگاه گوارش جذب نمی‌شود. دوزهای خوراکی بسیار زیاد ممکن است اثر ملین داشته باشند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid generating dust, which is combustible and may irritate the eyes; eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد گردوغبار که قابل احتراق است و ممکن است چشم را تحریک کند خودداری شود؛ محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E463). Included in the FDA Inactive Ingredient Database (oral capsules, granules, suspensions and tablets; topical and transdermal preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E463). در FDA Inactive Ingredient Database (کپسول، گرانول، سوسپانسیون و قرص خوراکی؛ فرآورده‌های موضعی و ترانس‌درمال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Hydroxyethyl cellulose; hydroxypropyl cellulose, low-substituted; hypromellose; methylcellulose.",
+   "fa": "هیدروکسی‌اتیل سلولز؛ هیدروکسی‌پروپیل سلولز با جایگزینی کم؛ هیپرملوز؛ متیل‌سلولز."
+  },
+  "comments": {
+   "en": "Its solubility in ethanol makes it useful for non-aqueous granulation of moisture-sensitive drugs and for organic-solvent coating. Films are flexible but somewhat tacky, so it is often combined with other film formers. It should not be confused with low-substituted hydroxypropyl cellulose, which is water-insoluble and used as a disintegrant.",
+   "fa": "حلالیت آن در اتانول، آن را برای گرانولاسیون غیرآبی داروهای حساس به رطوبت و برای پوشش با حلال آلی مفید می‌سازد. فیلم‌های آن انعطاف‌پذیر ولی کمی چسبناک‌اند و به همین دلیل اغلب با سایر تشکیل‌دهنده‌های فیلم ترکیب می‌شود. نباید آن را با هیدروکسی‌پروپیل سلولز با جایگزینی کم اشتباه گرفت که در آب نامحلول است و به عنوان متلاشی‌کننده به کار می‌رود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "eu-additives"
+  ]
+ },
+ "Hydroxypropyl cellulose, low-substituted": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Hydroxypropylcellulose, Low-Substituted"
+   },
+   {
+    "ph": "JP",
+    "name": "Low Substituted Hydroxypropylcellulose"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Hydroxypropylcellulose, Low-Substituted"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Low-Substituted Hydroxypropyl Cellulose"
+   }
+  ],
+  "tradeNames": "L-HPC; LH-11; LH-21; LH-31; LH-B1; NBD-021; low-substituted hydroxypropylcellulose; hyprolose, low-substituted",
+  "chemicalName": "Cellulose, 2-hydroxypropyl ether (low-substituted)",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used in oral solid dosage forms as a tablet and capsule disintegrant, usually at a few per cent up to about 10% w/w, and also as a binder because it compacts well; it can therefore serve as a combined binder–disintegrant in wet granulation and direct compression. Grades differ in particle size and substitution and are chosen for direct compression, wet granulation or orally disintegrating tablets. It is also used as an extrusion–spheronisation aid.",
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان متلاشی‌کننده قرص و کپسول، معمولاً با غلظت چند درصد تا حدود 10٪ وزنی، به کار می‌رود و به دلیل تراکم‌پذیری خوب، به عنوان چسباننده نیز عمل می‌کند؛ بنابراین می‌تواند هم‌زمان نقش چسباننده و متلاشی‌کننده را در گرانولاسیون مرطوب و پرس مستقیم داشته باشد. گریدها از نظر اندازه ذره و میزان جایگزینی متفاوت‌اند و برای پرس مستقیم، گرانولاسیون مرطوب یا قرص‌های بازشونده در دهان (ODT) انتخاب می‌شوند. همچنین به عنوان کمک‌کننده در اکستروژن-اسفرونیزاسیون مصرف می‌شود."
+  },
+  "description": {
+   "en": "A white to yellowish-white, odourless and tasteless, fibrous or granular powder. Its low degree of hydroxypropyl substitution makes it insoluble in water, in which it swells.",
+   "fa": "پودر رشته‌ای یا گرانولی سفید تا سفید مایل به زرد، بی‌بو و بی‌مزه. میزان کم جایگزینی هیدروکسی‌پروپیل باعث می‌شود در آب نامحلول باشد و در آن متورم شود."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Hydroxypropoxy content",
+     "fa": "مقدار هیدروکسی‌پروپوکسی"
+    },
+    "v": {
+     "en": "5.0–16.0% (pharmacopoeial range)",
+     "fa": "5.0–16.0٪ (محدوده فارماکوپه‌ای)"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "5.0–7.5 (1% w/v aqueous dispersion)",
+     "fa": "5.0–7.5 (دیسپرسیون آبی 1٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water and ethanol, in which it swells; dissolves in 10% sodium hydroxide solution",
+     "fa": "عملاً نامحلول در آب و اتانول که در آن‌ها متورم می‌شود؛ در محلول 10٪ سدیم هیدروکسید حل می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Particle size",
+     "fa": "اندازه ذره"
+    },
+    "v": {
+     "en": "grade-dependent; fine grades (mean about 20 µm) to coarser fibrous grades (mean about 50 µm or more)",
+     "fa": "وابسته به گرید؛ از گریدهای ریز (میانگین حدود 20 µm) تا گریدهای رشته‌ای درشت‌تر (میانگین حدود 50 µm یا بیشتر)"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable, although hygroscopic. Store in a well-closed container in a cool, dry place.",
+   "fa": "پایدار است ولی رطوبت‌گیر است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Alkaline substances may interact with it, and tablets containing such materials may show slower disintegration after storage.",
+   "fa": "مواد قلیایی ممکن است با آن برهم‌کنش داشته باشند و قرص‌های حاوی چنین موادی ممکن است پس از نگهداری متلاشی شدن کندتری نشان دهند."
+  },
+  "manufacture": {
+   "en": "Made by reacting alkali cellulose with a limited amount of propylene oxide. The crude product is neutralised, washed, dried and milled to the required particle size and shape.",
+   "fa": "از واکنش سلولز قلیایی با مقدار محدودی پروپیلن اکساید تهیه می‌شود. محصول خام خنثی، شسته، خشک و تا اندازه و شکل ذره مورد نظر آسیاب می‌گردد."
+  },
+  "safety": {
+   "en": "Used in oral products and regarded as non-toxic and non-irritant; it is not absorbed from the gastrointestinal tract.",
+   "fa": "در فرآورده‌های خوراکی مصرف می‌شود و غیرسمی و غیرمحرک شناخته می‌شود؛ از دستگاه گوارش جذب نمی‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection, gloves and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe and Japan.",
+   "fa": "در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا و ژاپن وجود دارد."
+  },
+  "related": {
+   "en": "Hydroxypropyl cellulose; croscarmellose sodium; crospovidone; sodium starch glycolate; microcrystalline cellulose.",
+   "fa": "هیدروکسی‌پروپیل سلولز؛ کروس‌کارملوز سدیم؛ کروس‌پوویدون؛ سدیم استارچ گلیکولات؛ سلولز میکروکریستالی."
+  },
+  "comments": {
+   "en": "L-HPC acts mainly by swelling rather than by wicking alone, and its disintegrant action is less affected by tablet hardness than that of some starches. Because it is non-ionic, it is less likely than ionic superdisintegrants to interact with cationic drugs.",
+   "fa": "L-HPC عمدتاً از طریق تورم و نه صرفاً جذب مویینگی عمل می‌کند و اثر متلاشی‌کنندگی آن کمتر از برخی نشاسته‌ها تحت تأثیر سختی قرص قرار می‌گیرد. چون غیریونی است، احتمال برهم‌کنش آن با داروهای کاتیونی کمتر از سوپردیس‌اینتگرنت‌های یونی است."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid"
+  ]
+ },
+ "Hypromellose (HPMC)": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Hypromellose"
+   },
+   {
+    "ph": "JP",
+    "name": "Hypromellose"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Hypromellose"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Hypromellose"
+   }
+  ],
+  "tradeNames": "Benecel MHPC; HPMC; hydroxypropyl methylcellulose; methylhydroxypropylcellulose; Methocel; Metolose; Pharmacoat; Tylopur; E464",
+  "chemicalName": "Cellulose, 2-hydroxypropyl methyl ether",
+  "formula": "",
+  "mw": "≈ 10 000–1 500 000 (grade-dependent)",
+  "applications": {
+   "en": "One of the most widely used polymers in oral, ophthalmic, nasal and topical products. Typical uses: tablet binder in wet or dry granulation, about 2–5% w/w; film coating, using 2–20% w/w solutions depending on viscosity grade; hydrophilic matrix former for extended release, about 10–80% w/w of high-viscosity grades; thickener in eye drops and artificial tears, 0.45–1.0%. It is also used to make capsule shells, as a suspending and stabilising agent, as a precipitation inhibitor in amorphous solid dispersions and in hot-melt extrusion.",
+   "fa": "یکی از پرمصرف‌ترین پلیمرها در فرآورده‌های خوراکی، چشمی، بینی و موضعی است. کاربردهای متداول: چسباننده قرص در گرانولاسیون مرطوب یا خشک حدود 2–5٪ وزنی؛ پوشش فیلمی با محلول‌های 2–20٪ وزنی بسته به گرید ویسکوزیته؛ تشکیل‌دهنده ماتریکس آب‌دوست رهش طولانی با حدود 10–80٪ وزنی از گریدهای ویسکوزیته بالا؛ غلیظ‌کننده در قطره‌های چشمی و اشک مصنوعی 0.45–1.0٪. همچنین برای ساخت پوسته کپسول، به عنوان عامل تعلیق‌کننده و پایدارکننده، مهارکننده رسوب در دیسپرسیون‌های جامد آمورف و در اکستروژن مذاب به کار می‌رود."
+  },
+  "description": {
+   "en": "An odourless and tasteless, white or creamy-white fibrous or granular powder. Pharmacopoeias classify it by substitution type, a four-digit number giving the approximate methoxy and hydroxypropoxy percentages (for example 2910, 2208, 1828, 2906), and by the nominal viscosity of a 2% w/w aqueous solution.",
+   "fa": "پودر رشته‌ای یا گرانولی سفید یا سفید مایل به کرم، بی‌بو و بی‌مزه. فارماکوپه‌ها آن را بر اساس نوع جایگزینی (عددی چهاررقمی که درصد تقریبی متوکسی و هیدروکسی‌پروپوکسی را نشان می‌دهد، مثلاً 2910، 2208، 1828 و 2906) و بر اساس ویسکوزیته اسمی محلول آبی 2٪ دسته‌بندی می‌کنند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Substitution (type 2910 / 2208)",
+     "fa": "جایگزینی (نوع 2910 / 2208)"
+    },
+    "v": {
+     "en": "2910: methoxy 28–30%, hydroxypropoxy 7–12%; 2208: methoxy 19–24%, hydroxypropoxy 4–12%",
+     "fa": "2910: متوکسی 28–30٪، هیدروکسی‌پروپوکسی 7–12٪؛ 2208: متوکسی 19–24٪، هیدروکسی‌پروپوکسی 4–12٪"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "grades from about 3 mPa·s to 100 000 mPa·s or more (2% w/w aqueous solution, 20 °C)",
+     "fa": "گریدهایی از حدود 3 mPa·s تا 100 000 mPa·s یا بیشتر (محلول آبی 2٪، 20 °C)"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "5.0–8.0 (2% w/w aqueous solution)",
+     "fa": "5.0–8.0 (محلول آبی 2٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Thermal gelation",
+     "fa": "ژل شدن حرارتی"
+    },
+    "v": {
+     "en": "aqueous solutions gel reversibly on heating, at about 50–90 °C depending on substitution type and concentration",
+     "fa": "محلول‌های آبی با گرم شدن، در حدود 50–90 °C بسته به نوع جایگزینی و غلظت، به‌طور برگشت‌پذیر ژل می‌شوند"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in cold water; practically insoluble in hot water, ethanol and chloroform; soluble in mixtures of ethanol and dichloromethane and in some aqueous alcohols",
+     "fa": "محلول در آب سرد؛ عملاً نامحلول در آب گرم، اتانول و کلروفرم؛ محلول در مخلوط اتانول و دی‌کلرومتان و برخی الکل‌های آبی"
+    }
+   }
+  ],
+  "stability": {
+   "en": "The powder is stable, although slightly hygroscopic; store in a well-closed container in a cool, dry place. Aqueous solutions are stable over about pH 3–11 but are susceptible to enzymatic and microbial degradation and should be preserved. Viscosity falls as temperature rises until the gel point is reached.",
+   "fa": "پودر پایدار است ولی کمی رطوبت‌گیر است؛ در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود. محلول‌های آبی در محدوده pH حدود 3–11 پایدارند، اما به تجزیه آنزیمی و میکروبی حساس‌اند و باید نگهدارنده داشته باشند. با افزایش دما تا رسیدن به نقطه ژل، ویسکوزیته کاهش می‌یابد."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with some oxidising agents. Being non-ionic, it does not form insoluble complexes with metal salts or ionic organic compounds, but high concentrations of electrolytes or other solutes lower its gelation temperature and can salt it out.",
+   "fa": "با برخی اکسیدکننده‌ها ناسازگار است. به دلیل غیریونی بودن، با نمک‌های فلزی یا ترکیبات آلی یونی کمپلکس نامحلول تشکیل نمی‌دهد، اما غلظت‌های بالای الکترولیت‌ها یا سایر مواد محلول دمای ژل شدن آن را پایین می‌آورند و ممکن است آن را رسوب دهند."
+  },
+  "manufacture": {
+   "en": "Prepared by treating alkali cellulose with chloromethane and propylene oxide to introduce methoxy and hydroxypropoxy groups. The product is purified in hot water, in which it is insoluble, then dried and milled.",
+   "fa": "از واکنش سلولز قلیایی با کلرومتان و پروپیلن اکساید برای وارد کردن گروه‌های متوکسی و هیدروکسی‌پروپوکسی تهیه می‌شود. محصول در آب گرم (که در آن نامحلول است) خالص‌سازی و سپس خشک و آسیاب می‌گردد."
+  },
+  "safety": {
+   "en": "Widely used and regarded as non-toxic and non-irritant; it is not absorbed after oral administration. Excessive oral intake may have a laxative effect.",
+   "fa": "به‌طور گسترده مصرف می‌شود و غیرسمی و غیرمحرک شناخته می‌شود؛ پس از مصرف خوراکی جذب نمی‌شود. مصرف خوراکی بیش از حد ممکن است اثر ملین داشته باشد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. The dust may irritate the eyes and is combustible; use eye protection and avoid generating dust.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. گردوغبار آن ممکن است چشم را تحریک کند و قابل احتراق است؛ از محافظ چشم استفاده و از ایجاد گردوغبار خودداری شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E464). Included in the FDA Inactive Ingredient Database (ophthalmic, nasal, oral, rectal, topical and vaginal preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E464). در FDA Inactive Ingredient Database (فرآورده‌های چشمی، بینی، خوراکی، رکتال، موضعی و واژینال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Hypromellose acetate succinate; hypromellose phthalate; hydroxypropyl cellulose; methylcellulose.",
+   "fa": "هیپرملوز استات سوکسینات؛ هیپرملوز فتالات؛ هیدروکسی‌پروپیل سلولز؛ متیل‌سلولز."
+  },
+  "comments": {
+   "en": "To dissolve it without lumps, disperse the powder in about a third of the water heated above about 80 °C, then add the rest as cold water or ice with stirring. In hydrophilic matrices, drug release is controlled by the formation of a gel layer, and type K (2208) grades are generally preferred because they hydrate fastest.",
+   "fa": "برای حل کردن بدون کلوخه، پودر را در حدود یک‌سوم آب که بالاتر از حدود 80 °C گرم شده پراکنده کنید و سپس بقیه آب را به صورت آب سرد یا یخ همراه با هم زدن اضافه کنید. در ماتریکس‌های آب‌دوست، رهش دارو با تشکیل لایه ژلی کنترل می‌شود و گریدهای نوع K (2208) معمولاً به دلیل آب‌گیری سریع‌تر ترجیح داده می‌شوند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "eu-additives"
+  ]
+ },
+ "Hypromellose acetate succinate": {
+  "names": [
+   {
+    "ph": "JP",
+    "name": "Hypromellose Acetate Succinate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Hypromellose Acetate Succinate"
+   }
+  ],
+  "tradeNames": "Affinisol HPMCAS; Aqoat (AS-L, AS-M, AS-H grades); AquaSolve HPMCAS; HPMCAS; hydroxypropyl methylcellulose acetate succinate",
+  "chemicalName": "Cellulose, 2-hydroxypropyl methyl ether, acetate hydrogen butanedioate (mixed acetic and monosuccinic esters of hypromellose)",
+  "formula": "",
+  "mw": "≈ 55 000–93 000",
+  "applications": {
+   "en": "Used as an enteric film coating applied from organic solutions or aqueous dispersions, and widely as a carrier for amorphous solid dispersions of poorly water-soluble drugs made by spray drying or hot-melt extrusion, where it maintains drug supersaturation and inhibits crystallisation. It is also used in modified-release matrices and granules.",
+   "fa": "به عنوان پوشش فیلمی روده‌ای (انتریک) که از محلول‌های آلی یا دیسپرسیون‌های آبی اعمال می‌شود به کار می‌رود و به‌طور گسترده به عنوان حامل دیسپرسیون‌های جامد آمورف داروهای کم‌محلول در آب که با خشک‌کن پاششی یا اکستروژن مذاب تهیه می‌شوند مصرف می‌گردد؛ در این کاربرد فوق‌اشباع بودن دارو را حفظ و از کریستالیزه شدن آن جلوگیری می‌کند. در ماتریکس‌ها و گرانول‌های رهش تعدیل‌شده نیز کاربرد دارد."
+  },
+  "description": {
+   "en": "A white to off-white, odourless or faintly acetic-smelling powder or granules. Grades (L, M and H) differ in their acetyl-to-succinoyl ratio, which determines the pH at which they dissolve; fine (F) and granular (G) particle-size forms are available.",
+   "fa": "پودر یا گرانول سفید تا سفید مایل به کرم، بی‌بو یا با بوی ضعیف اسید استیک. گریدها (L، M و H) از نظر نسبت استیل به سوکسینویل متفاوت‌اند که pH انحلال آن‌ها را تعیین می‌کند؛ شکل‌های ریز (F) و گرانولی (G) در دسترس‌اند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Dissolution pH",
+     "fa": "pH انحلال"
+    },
+    "v": {
+     "en": "L grade ≥ 5.5; M grade ≥ 6.0; H grade ≥ 6.8",
+     "fa": "گرید L از pH 5.5 به بالا؛ گرید M از pH 6.0 به بالا؛ گرید H از pH 6.8 به بالا"
+    }
+   },
+   {
+    "k": {
+     "en": "Substituent content",
+     "fa": "مقدار گروه‌های جانشین"
+    },
+    "v": {
+     "en": "methoxy 12–28%, hydroxypropoxy 4–23%, acetyl 2–16%, succinoyl 4–28% (pharmacopoeial ranges)",
+     "fa": "متوکسی 12–28٪، هیدروکسی‌پروپوکسی 4–23٪، استیل 2–16٪، سوکسینویل 4–28٪ (محدوده‌های فارماکوپه‌ای)"
+    }
+   },
+   {
+    "k": {
+     "en": "Glass transition temperature",
+     "fa": "دمای انتقال شیشه‌ای"
+    },
+    "v": {
+     "en": "≈ 120 °C",
+     "fa": "حدود 120 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "insoluble in water and acidic media; soluble in aqueous media above the grade's threshold pH, and in acetone and methanol–dichloromethane mixtures",
+     "fa": "نامحلول در آب و محیط‌های اسیدی؛ محلول در محیط‌های آبی بالاتر از pH آستانه هر گرید، و در استون و مخلوط متانول-دی‌کلرومتان"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Hygroscopic. Under high temperature and humidity the ester groups slowly hydrolyse, increasing the content of free acetic and succinic acids. Store in a tightly closed container in a cool, dry place.",
+   "fa": "رطوبت‌گیر است. در دما و رطوبت بالا گروه‌های استری به‌آرامی هیدرولیز می‌شوند و مقدار استیک اسید و سوکسینیک اسید آزاد افزایش می‌یابد. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. Its acidic carboxyl groups can interact with basic drugs or alkaline excipients, which may affect enteric performance or the stability of solid dispersions.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. گروه‌های کربوکسیل اسیدی آن ممکن است با داروهای بازی یا مواد جانبی قلیایی برهم‌کنش داشته باشند که بر عملکرد روده‌ای یا پایداری دیسپرسیون‌های جامد اثر می‌گذارد."
+  },
+  "manufacture": {
+   "en": "Made by esterifying hypromellose with acetic anhydride and succinic anhydride in acetic acid with sodium acetate as catalyst. The product is precipitated with water, washed, dried and milled.",
+   "fa": "از استریفیکاسیون هیپرملوز با استیک انیدرید و سوکسینیک انیدرید در استیک اسید با سدیم استات به عنوان کاتالیزور تهیه می‌شود. محصول با آب رسوب داده، شسته، خشک و آسیاب می‌گردد."
+  },
+  "safety": {
+   "en": "Used in oral products and regarded as non-toxic and non-irritant; it is not absorbed from the gastrointestinal tract.",
+   "fa": "در فرآورده‌های خوراکی مصرف می‌شود و غیرسمی و غیرمحرک شناخته می‌شود؛ از دستگاه گوارش جذب نمی‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection, gloves and a dust mask are recommended. Dust explosions are possible with fine powders.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود. در پودرهای ریز احتمال انفجار گردوغبار وجود دارد."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in oral medicines marketed in the USA, Europe and Japan.",
+   "fa": "در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای خوراکی عرضه‌شده در ایالات متحده، اروپا و ژاپن وجود دارد."
+  },
+  "related": {
+   "en": "Hypromellose; hypromellose phthalate; cellulose acetate phthalate; methacrylic acid copolymers.",
+   "fa": "هیپرملوز؛ هیپرملوز فتالات؛ سلولز استات فتالات؛ کوپلیمرهای متاکریلیک اسید."
+  },
+  "comments": {
+   "en": "For aqueous enteric coating, the micronised (F) grade is dispersed in water with a plasticiser such as triethyl citrate and kept cool during spraying, since the polymer coalesces into a film only after application. For solid dispersions, the grade is chosen by balancing drug–polymer interaction (hydrophobic acetyl groups) against dissolution in the small intestine (succinoyl groups).",
+   "fa": "برای پوشش روده‌ای آبی، گرید میکرونیزه (F) همراه با پلاستی‌سایزری مانند تری‌اتیل سیترات در آب پراکنده و در حین اسپری خنک نگه داشته می‌شود، زیرا پلیمر تنها پس از اعمال روی سطح به فیلم یکپارچه تبدیل می‌شود. برای دیسپرسیون‌های جامد، گرید با ایجاد تعادل بین برهم‌کنش دارو و پلیمر (گروه‌های استیل آب‌گریز) و انحلال در روده باریک (گروه‌های سوکسینویل) انتخاب می‌شود."
+  },
+  "refs": [
+   "usp",
+   "jp",
+   "iid"
+  ]
+ },
+ "Hypromellose phthalate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Hypromellose Phthalate"
+   },
+   {
+    "ph": "JP",
+    "name": "Hypromellose Phthalate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Hypromellose Phthalate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Hypromellose Phthalate"
+   }
+  ],
+  "tradeNames": "HP-50; HP-55; HP-55S; HPMCP; hydroxypropyl methylcellulose phthalate; hypromellosi phthalas",
+  "chemicalName": "Cellulose, hydrogen 1,2-benzenedicarboxylate, 2-hydroxypropyl methyl ether",
+  "formula": "",
+  "mw": "≈ 20 000–200 000",
+  "applications": {
+   "en": "Used mainly as an enteric film coating for tablets, granules and capsules, applied from organic solvent solutions (typically about 5–10% w/w polymer) or from aqueous dispersions with a plasticiser. It is also used as a carrier in solid dispersions to improve the dissolution of poorly soluble drugs, and in sustained-release matrices and microparticles.",
+   "fa": "عمدتاً به عنوان پوشش فیلمی روده‌ای برای قرص، گرانول و کپسول به کار می‌رود و از محلول‌های حلال آلی (معمولاً حدود 5–10٪ وزنی پلیمر) یا دیسپرسیون‌های آبی همراه با پلاستی‌سایزر اعمال می‌شود. همچنین به عنوان حامل در دیسپرسیون‌های جامد برای بهبود انحلال داروهای کم‌محلول و در ماتریکس‌ها و میکروذرات آهسته‌رهش مصرف می‌شود."
+  },
+  "description": {
+   "en": "White to slightly off-white, odourless or nearly odourless, tasteless flakes or granular powder. Pharmacopoeias define two substitution types: 200731 (HP-50) and 220824 (HP-55), which differ in phthalyl (carboxybenzoyl) content and therefore in the pH at which they dissolve.",
+   "fa": "پولک یا پودر گرانولی سفید تا کمی مایل به کرم، بی‌بو یا تقریباً بی‌بو و بی‌مزه. فارماکوپه‌ها دو نوع جایگزینی تعریف کرده‌اند: 200731 (HP-50) و 220824 (HP-55) که از نظر مقدار فتالیل (کربوکسی‌بنزوئیل) و در نتیجه pH انحلال با هم تفاوت دارند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Dissolution pH",
+     "fa": "pH انحلال"
+    },
+    "v": {
+     "en": "HP-50 ≥ 5.0; HP-55 ≥ 5.5",
+     "fa": "HP-50 از pH 5.0 به بالا؛ HP-55 از pH 5.5 به بالا"
+    }
+   },
+   {
+    "k": {
+     "en": "Carboxybenzoyl content",
+     "fa": "مقدار کربوکسی‌بنزوئیل"
+    },
+    "v": {
+     "en": "21–27% (type 200731); 27–35% (type 220824)",
+     "fa": "21–27٪ (نوع 200731)؛ 27–35٪ (نوع 220824)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water, dilute acids and ethanol; soluble in acetone–methanol, acetone–ethanol and methanol–dichloromethane mixtures and in aqueous alkali",
+     "fa": "عملاً نامحلول در آب، اسیدهای رقیق و اتانول؛ محلول در مخلوط‌های استون-متانول، استون-اتانول و متانول-دی‌کلرومتان و در محلول‌های قلیایی آبی"
+    }
+   },
+   {
+    "k": {
+     "en": "Film properties",
+     "fa": "ویژگی‌های فیلم"
+    },
+    "v": {
+     "en": "forms flexible films with less plasticiser than cellulose acetate phthalate",
+     "fa": "با پلاستی‌سایزر کمتر از سلولز استات فتالات فیلم‌های انعطاف‌پذیر تشکیل می‌دهد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically and physically stable for several years at room temperature. Under high temperature and humidity it slowly hydrolyses, releasing phthalic acid, although it is less susceptible than cellulose acetate phthalate. Store in a well-closed container in a cool, dry place.",
+   "fa": "در دمای اتاق به مدت چند سال از نظر شیمیایی و فیزیکی پایدار است. در دما و رطوبت بالا به‌آرامی هیدرولیز شده و فتالیک اسید آزاد می‌کند، هرچند حساسیت آن کمتر از سلولز استات فتالات است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. Its free carboxyl groups can react with basic drugs and alkaline excipients; splitting of enteric films has been reported when coatings contain high levels of some fillers such as talc.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. گروه‌های کربوکسیل آزاد آن ممکن است با داروهای بازی و مواد جانبی قلیایی واکنش دهند؛ ترک خوردن فیلم‌های روده‌ای در پوشش‌های حاوی مقادیر زیاد برخی پرکننده‌ها مانند تالک گزارش شده است."
+  },
+  "manufacture": {
+   "en": "Prepared by esterifying hypromellose with phthalic anhydride in acetic acid, using anhydrous sodium acetate as catalyst. The product is precipitated in water, washed and dried.",
+   "fa": "از استریفیکاسیون هیپرملوز با فتالیک انیدرید در استیک اسید با سدیم استات بدون آب به عنوان کاتالیزور تهیه می‌شود. محصول در آب رسوب داده، شسته و خشک می‌گردد."
+  },
+  "safety": {
+   "en": "Used in oral products and regarded as non-toxic and non-irritant; it is not absorbed from the gastrointestinal tract.",
+   "fa": "در فرآورده‌های خوراکی مصرف می‌شود و غیرسمی و غیرمحرک شناخته می‌شود؛ از دستگاه گوارش جذب نمی‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended. When organic solvent coating solutions are used, the precautions appropriate to the solvents apply.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و دستکش توصیه می‌شود. در صورت استفاده از محلول‌های پوششی با حلال آلی، احتیاط‌های مربوط به همان حلال‌ها باید رعایت شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Cellulose acetate phthalate; hypromellose; hypromellose acetate succinate; polyvinyl acetate phthalate.",
+   "fa": "سلولز استات فتالات؛ هیپرملوز؛ هیپرملوز استات سوکسینات؛ پلی‌وینیل استات فتالات."
+  },
+  "comments": {
+   "en": "HP-55 is the common choice for conventional enteric coating, while HP-50 dissolves at a slightly lower pH and is used when earlier release in the duodenum is wanted. Adequate coat thickness is essential to resist gastric fluid, and coated products should be tested by a two-stage (acid then buffer) dissolution test.",
+   "fa": "HP-55 انتخاب رایج برای پوشش روده‌ای معمول است، در حالی که HP-50 در pH کمی پایین‌تر حل می‌شود و زمانی به کار می‌رود که رهش زودتر در دوازدهه مورد نظر باشد. ضخامت کافی پوشش برای مقاومت در برابر شیره معده ضروری است و فرآورده‌های پوشش‌دار باید با آزمون انحلال دومرحله‌ای (ابتدا اسید و سپس بافر) آزمایش شوند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid"
+  ]
+ },
+ "Imidurea": {
+  "names": [
+   {
+    "ph": "USP-NF",
+    "name": "Imidurea"
+   }
+  ],
+  "tradeNames": "Abiol; Biopure 100; Germall 115; imidazolidinyl urea; Imidurea NF",
+  "chemicalName": "N,N''-Methylenebis{N'-[3-(hydroxymethyl)-2,5-dioxo-4-imidazolidinyl]urea}",
+  "formula": "C11H16N8O8",
+  "mw": "388.29",
+  "applications": {
+   "en": "An antimicrobial preservative used in topical pharmaceutical products and, much more widely, in cosmetics and toiletries, typically at 0.03–0.5% w/w. It is more active against bacteria than against yeasts and moulds, so it is usually combined with parabens or other antifungal preservatives, with which it acts synergistically.",
+   "fa": "نگهدارنده ضدمیکروبی است که در فرآورده‌های دارویی موضعی و به‌طور بسیار گسترده‌تر در محصولات آرایشی و بهداشتی، معمولاً با غلظت 0.03–0.5٪ وزنی، به کار می‌رود. اثر آن بر باکتری‌ها بیشتر از مخمرها و کپک‌هاست؛ بنابراین معمولاً همراه پارابن‌ها یا سایر نگهدارنده‌های ضدقارچ مصرف می‌شود و با آن‌ها اثر هم‌افزا دارد."
+  },
+  "description": {
+   "en": "A white, free-flowing, odourless or almost odourless, hygroscopic powder with a faint characteristic taste. It is a formaldehyde-releasing condensation product of allantoin and formaldehyde.",
+   "fa": "پودر سفید، روان، بی‌بو یا تقریباً بی‌بو و رطوبت‌گیر با طعم ضعیف و مشخص. محصول تراکمی آلانتوئین و فرمالدهید است که فرمالدهید آزاد می‌کند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "very soluble in water; soluble in glycerin; sparingly soluble in propylene glycol; practically insoluble in most oils and in ethanol",
+     "fa": "بسیار محلول در آب؛ محلول در گلیسرین؛ کم محلول در پروپیلن گلیکول؛ عملاً نامحلول در بیشتر روغن‌ها و در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Effective pH range",
+     "fa": "محدوده pH مؤثر"
+    },
+    "v": {
+     "en": "broad, about pH 3–9",
+     "fa": "گسترده، حدود pH 3–9"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "≈ 6.0–7.5 (1% w/v aqueous solution)",
+     "fa": "حدود 6.0–7.5 (محلول آبی 1٪)"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Hygroscopic. Store in a well-closed container in a cool, dry place.",
+   "fa": "رطوبت‌گیر است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Compatible with most cosmetic and topical ingredients, including non-ionic surfactants and proteins, which inactivate many other preservatives. As a formaldehyde donor, it may react with amines and other nucleophilic components.",
+   "fa": "با بیشتر اجزای محصولات آرایشی و موضعی، از جمله سورفکتانت‌های غیریونی و پروتئین‌ها که بسیاری از نگهدارنده‌های دیگر را غیرفعال می‌کنند، سازگار است. به عنوان دهنده فرمالدهید، ممکن است با آمین‌ها و سایر اجزای هسته‌دوست واکنش دهد."
+  },
+  "manufacture": {
+   "en": "Prepared by the condensation of allantoin with formaldehyde.",
+   "fa": "از واکنش تراکمی آلانتوئین با فرمالدهید تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Of low systemic toxicity, but it can cause allergic contact dermatitis, partly through the release of formaldehyde; patients sensitised to formaldehyde may react to products containing it.",
+   "fa": "سمیت سیستمیک کمی دارد، اما می‌تواند درماتیت تماسی آلرژیک ایجاد کند که بخشی از آن به دلیل آزاد شدن فرمالدهید است؛ بیماران حساس به فرمالدهید ممکن است به فرآورده‌های حاوی آن واکنش نشان دهند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection, gloves and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (topical preparations). In the EU it is permitted as a preservative in cosmetic products at up to 0.6%, and products containing formaldehyde releasers carry a warning when the released formaldehyde exceeds the set threshold.",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های موضعی) وجود دارد. در اتحادیه اروپا به عنوان نگهدارنده در محصولات آرایشی تا غلظت 0.6٪ مجاز است و فرآورده‌های حاوی آزادکننده‌های فرمالدهید در صورتی که فرمالدهید آزادشده از حد تعیین‌شده بیشتر باشد، باید هشدار داشته باشند."
+  },
+  "related": {
+   "en": "Diazolidinyl urea; DMDM hydantoin; parabens; quaternium-15.",
+   "fa": "دیازولیدینیل اوره؛ DMDM هیدانتوئین؛ پارابن‌ها؛ کواترنیوم-15."
+  },
+  "comments": {
+   "en": "Because its antifungal activity is weak, imidurea alone rarely protects a formulation adequately; preservative efficacy testing should be carried out on the final product. The use of formaldehyde releasers is declining in favour of other preservative systems because of sensitisation concerns.",
+   "fa": "چون اثر ضدقارچی آن ضعیف است، ایمیدوره به‌تنهایی به‌ندرت محافظت کافی از فرمولاسیون ایجاد می‌کند و آزمون کارایی نگهدارنده باید روی فرآورده نهایی انجام شود. به دلیل نگرانی از حساسیت‌زایی، مصرف آزادکننده‌های فرمالدهید به نفع سایر سیستم‌های نگهدارنده رو به کاهش است."
+  },
+  "refs": [
+   "usp",
+   "iid"
+  ]
+ },
+ "Iron oxides": {
+  "names": [
+   {
+    "ph": "USP-NF",
+    "name": "Ferric Oxide"
+   }
+  ],
+  "tradeNames": "CI 77491 (red), CI 77492 (yellow), CI 77499 (black); ferric oxide; ferrosoferric oxide; iron oxide red, yellow and black; pigment red 101; pigment yellow 42; pigment black 11; Sicopharm; Sicovit; E172",
+  "chemicalName": "Iron(III) oxide (red); hydrated iron(III) oxide, iron oxide hydroxide (yellow); iron(II,III) oxide (black)",
+  "formula": "Fe2O3 (red); FeO(OH)·xH2O (yellow); Fe3O4 (black)",
+  "mw": "159.69 (Fe2O3); 88.85 (FeOOH); 231.54 (Fe3O4)",
+  "applications": {
+   "en": "Used as colourants and opacifiers in tablet film coatings, sugar coatings, hard and soft capsule shells and topical products, usually at low levels within the coating formulation. Blends of red, yellow and black oxides give a range of brown, orange and beige shades. They also provide some protection of light-sensitive drugs and are widely used in cosmetics.",
+   "fa": "به عنوان رنگ‌دهنده و ماده کدرکننده در پوشش فیلمی قرص، روکش قندی، پوسته کپسول سخت و نرم و فرآورده‌های موضعی، معمولاً در مقادیر کم در فرمولاسیون پوشش، به کار می‌روند. مخلوط اکسیدهای قرمز، زرد و سیاه طیفی از رنگ‌های قهوه‌ای، نارنجی و بژ ایجاد می‌کند. همچنین تا حدی از داروهای حساس به نور محافظت می‌کنند و در محصولات آرایشی کاربرد گسترده دارند."
+  },
+  "description": {
+   "en": "Fine, odourless powders: red (haematite type), yellow (goethite type, hydrated) and black (magnetite type). Pharmaceutical grades are synthetic, which allows close control of colour, particle size and heavy-metal impurities.",
+   "fa": "پودرهای ریز و بی‌بو: قرمز (از نوع هماتیت)، زرد (از نوع گوتیت، هیدراته) و سیاه (از نوع مگنتیت). گریدهای دارویی سنتزی‌اند که امکان کنترل دقیق رنگ، اندازه ذره و ناخالصی‌های فلزات سنگین را فراهم می‌کند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water and organic solvents; soluble in hot concentrated mineral acids",
+     "fa": "عملاً نامحلول در آب و حلال‌های آلی؛ محلول در اسیدهای معدنی غلیظ داغ"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "high, about 4–5 g/cm³ depending on type",
+     "fa": "زیاد، حدود 4–5 g/cm³ بسته به نوع"
+    }
+   },
+   {
+    "k": {
+     "en": "Thermal behaviour",
+     "fa": "رفتار حرارتی"
+    },
+    "v": {
+     "en": "yellow oxide loses water above about 200 °C and turns red; black oxide oxidises to red on strong heating in air",
+     "fa": "اکسید زرد در دمای بالاتر از حدود 200 °C آب از دست می‌دهد و قرمز می‌شود؛ اکسید سیاه با حرارت شدید در هوا به قرمز اکسید می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Magnetism",
+     "fa": "خاصیت مغناطیسی"
+    },
+    "v": {
+     "en": "black oxide is strongly magnetic",
+     "fa": "اکسید سیاه به‌شدت مغناطیسی است"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable to light and to the conditions of normal storage and processing. Store in a well-closed container in a cool, dry place.",
+   "fa": "در برابر نور و شرایط معمول نگهداری و فرآیند پایدارند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شوند."
+  },
+  "incompatibilities": {
+   "en": "Generally inert, but traces of soluble iron can catalyse the oxidation of sensitive drugs and may form coloured complexes with phenolic compounds. Strong acids dissolve them.",
+   "fa": "عموماً بی‌اثرند، اما مقادیر کم آهن محلول می‌تواند اکسیداسیون داروهای حساس را کاتالیز کند و با ترکیبات فنولی کمپلکس‌های رنگی تشکیل دهد. اسیدهای قوی آن‌ها را حل می‌کنند."
+  },
+  "manufacture": {
+   "en": "Produced synthetically, for example by precipitation from iron(II) salt solutions followed by oxidation (yellow and black), by calcination of yellow or black oxide (red), or by the reduction of nitrobenzene with iron (Laux process).",
+   "fa": "به روش سنتزی تولید می‌شوند، مثلاً با رسوب‌دهی از محلول نمک‌های آهن (II) و سپس اکسیداسیون (زرد و سیاه)، با کلسینه کردن اکسید زرد یا سیاه (قرمز)، یا با احیای نیتروبنزن با آهن (فرآیند Laux)."
+  },
+  "safety": {
+   "en": "Considered non-toxic and non-irritant at the levels used as colourants; absorption of iron from them is very limited. Inhalation of the dust over long periods should be avoided.",
+   "fa": "در مقادیر مصرفی به عنوان رنگ‌دهنده غیرسمی و غیرمحرک شناخته می‌شوند و جذب آهن از آن‌ها بسیار محدود است. از استنشاق طولانی‌مدت گردوغبار آن‌ها باید پرهیز شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Use a dust mask and eye protection; the powders stain skin and surfaces.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ماسک گردوغبار و محافظ چشم استفاده شود؛ این پودرها پوست و سطوح را لکه‌دار می‌کنند."
+  },
+  "regulatory": {
+   "en": "Accepted as a food colour in Europe (E172), re-evaluated by EFSA. In the USA synthetic iron oxides are permitted as colour additives in drugs, with ingested drugs limited to 5 mg of elemental iron per daily dose. Included in the FDA Inactive Ingredient Database (oral capsules and tablets; topical preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان رنگ غذایی پذیرفته شده (E172) و توسط EFSA بازارزیابی شده است. در ایالات متحده اکسیدهای آهن سنتزی به عنوان افزودنی رنگی در داروها مجازند و در داروهای خوراکی، مقدار آهن عنصری حداکثر 5 mg در دوز روزانه محدود شده است. در FDA Inactive Ingredient Database (کپسول و قرص خوراکی؛ فرآورده‌های موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارند."
+  },
+  "related": {
+   "en": "Titanium dioxide; aluminium lakes; calcium carbonate (as opacifier).",
+   "fa": "تیتانیوم دی‌اکسید؛ لاک‌های آلومینیومی؛ کلسیم کربنات (به عنوان کدرکننده)."
+  },
+  "comments": {
+   "en": "With the restriction of titanium dioxide as a food additive in the EU, iron oxides are increasingly used in combination with other opacifiers in film coatings. Colour of the final coat depends on particle size and dispersion, so pigment suspensions should be milled or homogenised and the colour checked against a standard.",
+   "fa": "با محدود شدن تیتانیوم دی‌اکسید به عنوان افزودنی غذایی در اتحادیه اروپا، اکسیدهای آهن به‌طور فزاینده‌ای همراه سایر کدرکننده‌ها در پوشش‌های فیلمی به کار می‌روند. رنگ پوشش نهایی به اندازه ذره و پراکندگی رنگدانه بستگی دارد؛ بنابراین سوسپانسیون رنگدانه باید آسیاب یا هموژنیزه و رنگ آن با استاندارد مقایسه شود."
+  },
+  "refs": [
+   "usp",
+   "iid",
+   "eu-additives",
+   "efsa"
+  ]
+ },
+ "Isomalt": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Isomalt"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Isomalt"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Isomalt"
+   }
+  ],
+  "tradeNames": "galenIQ; hydrogenated isomaltulose; hydrogenated palatinose; Isomaltidex; Palatinit; E953",
+  "chemicalName": "Mixture of 6-O-α-D-glucopyranosyl-D-glucitol (1,6-GPS) and 1-O-α-D-glucopyranosyl-D-mannitol dihydrate (1,1-GPM)",
+  "formula": "C12H24O11 (1,6-GPS); C12H24O11·2H2O (1,1-GPM)",
+  "mw": "344.31 (1,6-GPS); 380.32 (1,1-GPM dihydrate)",
+  "applications": {
+   "en": "A sugar-free bulk sweetener used as a filler-binder in tablets (particularly direct-compression, chewable and effervescent tablets), in lozenges and hard-boiled medicated sweets, in sugar-free coatings and as a sweetener in powders and syrups. Agglomerated grades are designed for direct compression. It is widely used in confectionery.",
+   "fa": "شیرین‌کننده حجمی بدون قند است که به عنوان پرکننده-چسباننده در قرص‌ها (به‌ویژه قرص‌های پرس مستقیم، جویدنی و جوشان)، در لوزنج‌ها و آب‌نبات‌های دارویی، در روکش‌های بدون قند و به عنوان شیرین‌کننده در پودرها و شربت‌ها به کار می‌رود. گریدهای آگلومره برای پرس مستقیم طراحی شده‌اند. در شیرینی‌سازی کاربرد گسترده دارد."
+  },
+  "description": {
+   "en": "A white or almost white, odourless, crystalline powder or granules with a sweet taste, about half as sweet as sucrose. Commercial grades differ in the GPS:GPM ratio and in particle size.",
+   "fa": "پودر یا گرانول کریستالی سفید یا تقریباً سفید، بی‌بو و با طعم شیرین که شیرینی آن حدود نصف ساکارز است. گریدهای تجاری از نظر نسبت GPS به GPM و اندازه ذره با هم تفاوت دارند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Sweetness",
+     "fa": "شیرینی"
+    },
+    "v": {
+     "en": "about 0.45–0.6 times that of sucrose",
+     "fa": "حدود 0.45–0.6 برابر ساکارز"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting range",
+     "fa": "محدوده ذوب"
+    },
+    "v": {
+     "en": "about 145–150 °C",
+     "fa": "حدود 145–150 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Water content",
+     "fa": "مقدار آب"
+    },
+    "v": {
+     "en": "≤ 7% w/w (mainly water of crystallisation of GPM)",
+     "fa": "حداکثر 7٪ وزنی (عمدتاً آب تبلور GPM)"
+    }
+   },
+   {
+    "k": {
+     "en": "Hygroscopicity",
+     "fa": "رطوبت‌گیری"
+    },
+    "v": {
+     "en": "low; takes up little moisture below about 85% RH at 25 °C",
+     "fa": "کم؛ در رطوبت نسبی کمتر از حدود 85٪ در 25 °C رطوبت ناچیزی جذب می‌کند"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water (about 25 g/100 g water at 20 °C, rising steeply with temperature); practically insoluble in ethanol",
+     "fa": "به‌راحتی محلول در آب (حدود 25 g در 100 g آب در 20 °C که با افزایش دما به‌شدت بالا می‌رود)؛ عملاً نامحلول در اتانول"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically very stable; it is resistant to acid and enzymatic hydrolysis and, being non-reducing, does not brown. It withstands the high temperatures used in hard-candy manufacture. Store in a well-closed container in a dry place.",
+   "fa": "از نظر شیمیایی بسیار پایدار است؛ در برابر هیدرولیز اسیدی و آنزیمی مقاوم است و چون احیاکننده نیست، قهوه‌ای نمی‌شود. دماهای بالای مورد استفاده در ساخت آب‌نبات سخت را تحمل می‌کند. در ظرف کاملاً بسته و در جای خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "No significant incompatibilities are known. As a non-reducing polyol it does not take part in Maillard reactions with amine drugs.",
+   "fa": "ناسازگاری مهمی شناخته نشده است. به عنوان یک پلی‌ال غیراحیاکننده، با داروهای آمینی واکنش میلارد نمی‌دهد."
+  },
+  "manufacture": {
+   "en": "Made in two steps: sucrose is enzymatically rearranged to isomaltulose (palatinose), which is then catalytically hydrogenated to give the mixture of GPS and GPM. The product is crystallised, dried and milled or agglomerated.",
+   "fa": "در دو مرحله تهیه می‌شود: ساکارز به روش آنزیمی به ایزومالتولوز (پالاتینوز) تبدیل و سپس به روش کاتالیزوری هیدروژنه می‌شود تا مخلوط GPS و GPM به دست آید. محصول کریستالیزه، خشک و آسیاب یا آگلومره می‌شود."
+  },
+  "safety": {
+   "en": "Non-cariogenic and only partly absorbed, so it has a low glycaemic response and lower energy value than sugar, making it suitable for diabetic patients. Like other polyols, large amounts can cause flatulence and laxative effects.",
+   "fa": "پوسیدگی‌زا نیست و تنها بخشی از آن جذب می‌شود؛ بنابراین پاسخ قند خون کم و ارزش انرژی کمتری از قند دارد و برای بیماران دیابتی مناسب است. مانند سایر پلی‌ال‌ها، مقادیر زیاد آن ممکن است نفخ و اثر ملین ایجاد کند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E953); foods containing more than 10% added polyols must carry a warning that excessive consumption may have laxative effects. Included in the FDA Inactive Ingredient Database (oral preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E953)؛ غذاهای حاوی بیش از 10٪ پلی‌ال افزوده باید هشدار اثر ملین مصرف زیاد را داشته باشند. در FDA Inactive Ingredient Database (فرآورده‌های خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Lactitol; maltitol; mannitol; sorbitol; xylitol.",
+   "fa": "لاکتیتول؛ مالتیتول؛ مانیتول؛ سوربیتول؛ زایلیتول."
+  },
+  "comments": {
+   "en": "Its low hygroscopicity is an advantage over sorbitol and maltitol in lozenges and chewable tablets, which stay less sticky in humid climates. Isomalt can also be melted and cast or extruded to make medicated lozenges or solid dispersions.",
+   "fa": "رطوبت‌گیری کم آن نسبت به سوربیتول و مالتیتول در لوزنج‌ها و قرص‌های جویدنی مزیت محسوب می‌شود، زیرا این فرآورده‌ها در آب‌وهوای مرطوب کمتر چسبناک می‌شوند. ایزومالت را می‌توان ذوب و قالب‌ریزی یا اکسترود کرد تا لوزنج‌های دارویی یا دیسپرسیون‌های جامد تهیه شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Isopropyl alcohol": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Isopropyl Alcohol"
+   },
+   {
+    "ph": "JP",
+    "name": "Isopropanol"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Isopropyl Alcohol"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Isopropyl Alcohol"
+   }
+  ],
+  "tradeNames": "Dimethyl carbinol; IPA; isopropanol; 2-propanol; propan-2-ol; sec-propyl alcohol; rubbing alcohol",
+  "chemicalName": "Propan-2-ol",
+  "formula": "C3H8O",
+  "mw": "60.10",
+  "applications": {
+   "en": "Used as a solvent in tablet film coating and wet granulation, where it is removed during drying, and as a solvent and penetration-modifying component in topical products. In aqueous solution at about 60–70% v/v it is an effective skin and surface disinfectant and is widely used in hand rubs and swabs. It is also used in the extraction and crystallisation of drugs and excipients.",
+   "fa": "به عنوان حلال در پوشش فیلمی قرص و گرانولاسیون مرطوب (که در طی خشک کردن حذف می‌شود) و به عنوان حلال و جزء تعدیل‌کننده نفوذ در فرآورده‌های موضعی به کار می‌رود. محلول آبی حدود 60–70٪ حجمی آن ضدعفونی‌کننده مؤثر پوست و سطوح است و به‌طور گسترده در ضدعفونی‌کننده‌های دست و پدهای الکلی مصرف می‌شود. همچنین در استخراج و کریستالیزاسیون داروها و مواد جانبی کاربرد دارد."
+  },
+  "description": {
+   "en": "A clear, colourless, mobile, volatile and flammable liquid with a characteristic spirit-like odour and a slightly bitter taste.",
+   "fa": "مایع شفاف، بی‌رنگ، روان، فرار و قابل اشتعال با بوی مشخص شبیه الکل و طعم کمی تلخ."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Boiling point",
+     "fa": "نقطه جوش"
+    },
+    "v": {
+     "en": "≈ 82.4 °C",
+     "fa": "حدود 82.4 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "≈ −89.5 °C",
+     "fa": "حدود −89.5 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "≈ 0.786 g/cm³ at 20 °C",
+     "fa": "حدود 0.786 g/cm³ در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Flash point",
+     "fa": "نقطه اشتعال"
+    },
+    "v": {
+     "en": "≈ 12 °C (closed cup)",
+     "fa": "حدود 12 °C (فنجان بسته)"
+    }
+   },
+   {
+    "k": {
+     "en": "Refractive index",
+     "fa": "ضریب شکست"
+    },
+    "v": {
+     "en": "≈ 1.377 at 20 °C",
+     "fa": "حدود 1.377 در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "miscible with water, ethanol, ether, chloroform and glycerin; forms an azeotrope with water (about 88% w/w)",
+     "fa": "قابل اختلاط با آب، اتانول، اتر، کلروفرم و گلیسرین؛ با آب آزئوتروپ (حدود 88٪ وزنی) تشکیل می‌دهد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Store in an airtight container in a cool, well-ventilated place away from sources of ignition. On prolonged storage, particularly in contact with air and light, peroxides may form.",
+   "fa": "در ظرف دربسته، در جای خنک و دارای تهویه مناسب و دور از منابع اشتعال نگهداری شود. در نگهداری طولانی، به‌ویژه در تماس با هوا و نور، ممکن است پراکسید تشکیل شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents such as hydrogen peroxide and nitric acid. It can be salted out of aqueous mixtures by electrolytes such as sodium chloride and sodium sulfate.",
+   "fa": "با اکسیدکننده‌های قوی مانند هیدروژن پراکسید و نیتریک اسید ناسازگار است. الکترولیت‌هایی مانند سدیم کلرید و سدیم سولفات ممکن است آن را از مخلوط‌های آبی جدا (salting out) کنند."
+  },
+  "manufacture": {
+   "en": "Produced mainly by hydration of propene, either indirectly via sulfuric acid or directly over an acidic catalyst, and to a lesser extent by catalytic hydrogenation of acetone. It is purified by distillation.",
+   "fa": "عمدتاً از هیدراتاسیون پروپن، یا به‌طور غیرمستقیم از طریق سولفوریک اسید یا مستقیماً روی کاتالیزور اسیدی، و به میزان کمتر از هیدروژناسیون کاتالیزوری استون تولید و با تقطیر خالص می‌شود."
+  },
+  "safety": {
+   "en": "Ingestion or substantial inhalation causes central nervous system depression and gastrointestinal irritation; it is more toxic than ethanol and is metabolised to acetone. Repeated application to the skin causes drying and irritation, and significant absorption through the skin can occur in infants. It must not be used in oral products other than as a processing solvent that is removed.",
+   "fa": "بلع یا استنشاق قابل توجه آن باعث تضعیف دستگاه عصبی مرکزی و تحریک دستگاه گوارش می‌شود؛ سمی‌تر از اتانول است و به استون متابولیزه می‌شود. استعمال مکرر روی پوست باعث خشکی و تحریک می‌شود و در نوزادان جذب قابل توجه از راه پوست ممکن است رخ دهد. در فرآورده‌های خوراکی جز به عنوان حلال فرآیندی که حذف می‌شود نباید به کار رود."
+  },
+  "handling": {
+   "en": "Highly flammable. Use in a well-ventilated area or with local exhaust, keep away from ignition sources, use explosion-protected equipment and earthing, and wear eye protection and gloves.",
+   "fa": "بسیار قابل اشتعال است. در محیط با تهویه مناسب یا با تهویه موضعی کار شود، دور از منابع اشتعال نگهداری شود، از تجهیزات ضدانفجار و اتصال به زمین استفاده و از محافظ چشم و دستکش استفاده شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules and tablets as a processing solvent; topical preparations) and in non-parenteral medicines licensed in Europe. Classified by ICH Q3C as a class 3 residual solvent (low toxic potential; residues up to 5000 ppm acceptable without justification).",
+   "fa": "در FDA Inactive Ingredient Database (کپسول و قرص خوراکی به عنوان حلال فرآیندی؛ فرآورده‌های موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد. در راهنمای ICH Q3C به عنوان حلال باقی‌مانده کلاس 3 (پتانسیل سمیت کم؛ باقی‌مانده تا 5000 ppm بدون نیاز به توجیه قابل قبول است) طبقه‌بندی شده است."
+  },
+  "related": {
+   "en": "Ethanol; propan-1-ol (propyl alcohol); acetone.",
+   "fa": "اتانول؛ پروپان-1-ال (پروپیل الکل)؛ استون."
+  },
+  "comments": {
+   "en": "For skin disinfection, concentrations of about 60–70% v/v are more effective than the neat alcohol because water is needed for protein denaturation. Residual solvent levels in coated or granulated products should be controlled by validated drying and tested by gas chromatography.",
+   "fa": "برای ضدعفونی پوست، غلظت‌های حدود 60–70٪ حجمی مؤثرتر از الکل خالص‌اند، زیرا برای دناتوره کردن پروتئین‌ها وجود آب لازم است. مقدار حلال باقی‌مانده در فرآورده‌های پوشش‌دار یا گرانوله باید با خشک کردن معتبرسازی‌شده کنترل و با کروماتوگرافی گازی آزمایش شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "ich"
+  ]
+ },
+ "Isopropyl myristate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Isopropyl Myristate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Isopropyl Myristate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Isopropyl Myristate"
+   }
+  ],
+  "tradeNames": "Crodamol IPM; Estol IPM; IPM; isopropyl tetradecanoate; Kessco IPM; 1-methylethyl tetradecanoate; myristic acid isopropyl ester; Tegosoft M",
+  "chemicalName": "1-Methylethyl tetradecanoate",
+  "formula": "C17H34O2",
+  "mw": "270.45",
+  "applications": {
+   "en": "A non-greasy emollient and oily vehicle used in creams, lotions, ointments, bath oils and topical aerosols, usually at about 1–10% w/w in creams and lotions and at much higher levels in sprays and oils. It improves spreading and skin feel, acts as a penetration enhancer in topical and transdermal products, and serves as a solvent for lipophilic drugs. Sterile isopropyl myristate is used to dissolve ointments and oily preparations in pharmacopoeial sterility testing.",
+   "fa": "نرم‌کننده غیرچرب و حامل روغنی است که در کرم‌ها، لوسیون‌ها، پمادها، روغن‌های حمام و افشانه‌های موضعی، معمولاً با غلظت حدود 1–10٪ وزنی در کرم‌ها و لوسیون‌ها و با مقادیر بسیار بیشتر در اسپری‌ها و روغن‌ها، به کار می‌رود. پخش‌شوندگی و احساس روی پوست را بهبود می‌بخشد، در فرآورده‌های موضعی و ترانس‌درمال به عنوان افزاینده نفوذ عمل می‌کند و حلال داروهای لیپوفیل است. ایزوپروپیل میریستات استریل در آزمون استریلیتی فارماکوپه‌ای برای حل کردن پمادها و فرآورده‌های روغنی استفاده می‌شود."
+  },
+  "description": {
+   "en": "A clear, colourless, practically odourless, oily liquid of low viscosity that congeals at about 5 °C. It consists mainly of the isopropyl ester of myristic acid with smaller amounts of other fatty acid esters.",
+   "fa": "مایع روغنی شفاف، بی‌رنگ، عملاً بی‌بو و کم‌ویسکوزیته که در حدود 5 °C منجمد می‌شود. عمدتاً از استر ایزوپروپیل میریستیک اسید همراه با مقادیر کمتری از استرهای سایر اسیدهای چرب تشکیل شده است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "≈ 0.85 g/cm³ at 20 °C",
+     "fa": "حدود 0.85 g/cm³ در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Freezing point",
+     "fa": "نقطه انجماد"
+    },
+    "v": {
+     "en": "≈ 5 °C",
+     "fa": "حدود 5 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "≈ 5–6 mPa·s at 25 °C",
+     "fa": "حدود 5–6 mPa·s در 25 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Refractive index",
+     "fa": "ضریب شکست"
+    },
+    "v": {
+     "en": "≈ 1.434–1.437 at 20 °C",
+     "fa": "حدود 1.434–1.437 در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in acetone, chloroform, ethanol, ethyl acetate, fixed oils and liquid paraffin; practically insoluble in glycerin, propylene glycol and water",
+     "fa": "محلول در استون، کلروفرم، اتانول، اتیل استات، روغن‌های ثابت و پارافین مایع؛ عملاً نامحلول در گلیسرین، پروپیلن گلیکول و آب"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Resistant to oxidation and hydrolysis and does not become rancid. Store in a well-closed container in a cool, dry place, protected from light.",
+   "fa": "در برابر اکسیداسیون و هیدرولیز مقاوم است و تند (رانسید) نمی‌شود. در ظرف کاملاً بسته، در جای خنک و خشک و دور از نور نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Swells and partly dissolves rubber, and causes swelling of some plastics such as polyethylene and nylon; container and closure materials should be checked. Incompatible with strong oxidising agents.",
+   "fa": "لاستیک را متورم و تا حدی حل می‌کند و باعث تورم برخی پلاستیک‌ها مانند پلی‌اتیلن و نایلون می‌شود؛ مواد ظرف و درپوش باید بررسی شوند. با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Prepared by esterifying myristic acid with propan-2-ol in the presence of an acid catalyst, followed by purification, or by transesterification of fats.",
+   "fa": "از استریفیکاسیون میریستیک اسید با پروپان-2-ال در حضور کاتالیزور اسیدی و سپس خالص‌سازی، یا از ترانس‌استریفیکاسیون چربی‌ها تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Widely used in cosmetics and topical medicines and regarded as non-toxic and only slightly irritant. It has been reported to be comedogenic in some tests, which may be relevant in products for acne-prone skin.",
+   "fa": "در محصولات آرایشی و داروهای موضعی به‌طور گسترده مصرف می‌شود و غیرسمی و فقط کمی محرک شناخته می‌شود. در برخی آزمون‌ها کومدون‌زا گزارش شده است که برای فرآورده‌های پوست مستعد آکنه ممکن است اهمیت داشته باشد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended. Spills are slippery.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و دستکش توصیه می‌شود. ریختگی آن سطوح را لغزنده می‌کند."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (otic, topical, transdermal and vaginal preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های گوشی، موضعی، ترانس‌درمال و واژینال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Isopropyl palmitate; ethyl oleate; medium-chain triglycerides; octyldodecanol.",
+   "fa": "ایزوپروپیل پالمیتات؛ اتیل اولئات؛ تری‌گلیسریدهای با زنجیره متوسط؛ اکتیل‌دودکانول."
+  },
+  "comments": {
+   "en": "Its low viscosity and good spreading make it useful for reducing the greasy feel of ointments and creams. When used for sterility testing, the isopropyl myristate itself must be sterile and shown not to be antimicrobial, and it is normally filter-sterilised.",
+   "fa": "ویسکوزیته کم و پخش‌شوندگی خوب آن، برای کاهش احساس چربی پمادها و کرم‌ها مفید است. در کاربرد برای آزمون استریلیتی، خود ایزوپروپیل میریستات باید استریل باشد و نشان داده شود که خاصیت ضدمیکروبی ندارد؛ معمولاً با فیلتراسیون استریل می‌شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Isopropyl palmitate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Isopropyl Palmitate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Isopropyl Palmitate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Isopropyl Palmitate"
+   }
+  ],
+  "tradeNames": "Crodamol IPP; IPP; isopropyl hexadecanoate; 1-methylethyl hexadecanoate; palmitic acid isopropyl ester; Tegosoft P",
+  "chemicalName": "1-Methylethyl hexadecanoate",
+  "formula": "C19H38O2",
+  "mw": "298.51",
+  "applications": {
+   "en": "An emollient, oleaginous vehicle and solvent used in topical creams, lotions, ointments and bath oils, and as a penetration enhancer in topical and transdermal formulations. It gives a light, non-greasy feel and improves spreading, and is widely used in cosmetics, including as a binder in pressed powders.",
+   "fa": "نرم‌کننده، حامل روغنی و حلال است که در کرم‌ها، لوسیون‌ها، پمادها و روغن‌های حمام موضعی و به عنوان افزاینده نفوذ در فرمولاسیون‌های موضعی و ترانس‌درمال به کار می‌رود. احساسی سبک و غیرچرب ایجاد و پخش‌شوندگی را بهتر می‌کند و در محصولات آرایشی، از جمله به عنوان چسباننده در پودرهای فشرده، کاربرد گسترده دارد."
+  },
+  "description": {
+   "en": "A clear, colourless to pale yellow, practically odourless, oily liquid that solidifies on cooling. It consists mainly of the isopropyl ester of palmitic acid, together with esters of other fatty acids such as stearic and myristic acids.",
+   "fa": "مایع روغنی شفاف، بی‌رنگ تا زرد کم‌رنگ و عملاً بی‌بو که با سرد شدن جامد می‌شود. عمدتاً از استر ایزوپروپیل پالمیتیک اسید همراه با استرهای سایر اسیدهای چرب مانند استئاریک و میریستیک اسید تشکیل شده است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "≈ 0.85 g/cm³ at 20 °C",
+     "fa": "حدود 0.85 g/cm³ در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Refractive index",
+     "fa": "ضریب شکست"
+    },
+    "v": {
+     "en": "≈ 1.435–1.438 at 20 °C",
+     "fa": "حدود 1.435–1.438 در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Physical state",
+     "fa": "حالت فیزیکی"
+    },
+    "v": {
+     "en": "liquid at room temperature; becomes cloudy and solidifies at low temperatures (around 13–15 °C)",
+     "fa": "در دمای اتاق مایع؛ در دماهای پایین (حدود 13–15 °C) کدر و جامد می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in acetone, chloroform, ethanol, ethyl acetate, mineral oil and vegetable oils; practically insoluble in glycerin, propylene glycol and water",
+     "fa": "محلول در استون، کلروفرم، اتانول، اتیل استات، روغن معدنی و روغن‌های گیاهی؛ عملاً نامحلول در گلیسرین، پروپیلن گلیکول و آب"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Resistant to oxidation and hydrolysis and does not become rancid. Store in a well-closed container in a cool, dry place, protected from light.",
+   "fa": "در برابر اکسیداسیون و هیدرولیز مقاوم است و تند نمی‌شود. در ظرف کاملاً بسته، در جای خنک و خشک و دور از نور نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. Like other fatty acid esters, it can swell rubber and some plastics, so compatibility with packaging components should be checked.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. مانند سایر استرهای اسیدهای چرب، ممکن است لاستیک و برخی پلاستیک‌ها را متورم کند؛ بنابراین سازگاری با اجزای بسته‌بندی باید بررسی شود."
+  },
+  "manufacture": {
+   "en": "Prepared by esterifying palmitic acid with propan-2-ol in the presence of an acid catalyst, followed by purification.",
+   "fa": "از استریفیکاسیون پالمیتیک اسید با پروپان-2-ال در حضور کاتالیزور اسیدی و سپس خالص‌سازی تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Widely used in cosmetics and topical medicines and regarded as non-toxic and non-irritant at the concentrations normally used; some tests have suggested comedogenic potential.",
+   "fa": "در محصولات آرایشی و داروهای موضعی به‌طور گسترده مصرف می‌شود و در غلظت‌های معمول غیرسمی و غیرمحرک شناخته می‌شود؛ برخی آزمون‌ها احتمال کومدون‌زایی آن را مطرح کرده‌اند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended. Spills are slippery.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و دستکش توصیه می‌شود. ریختگی آن سطوح را لغزنده می‌کند."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (topical and transdermal preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های موضعی و ترانس‌درمال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Isopropyl myristate; cetyl palmitate; ethyl oleate; octyldodecanol.",
+   "fa": "ایزوپروپیل میریستات؛ ستیل پالمیتات؛ اتیل اولئات؛ اکتیل‌دودکانول."
+  },
+  "comments": {
+   "en": "Isopropyl palmitate is slightly more viscous and less volatile than isopropyl myristate and the two are often interchangeable. Pharmacopoeial grades specify a minimum content of isopropyl palmitate in the ester fraction, so the composition of cosmetic grades may differ.",
+   "fa": "ایزوپروپیل پالمیتات کمی ویسکوزتر و کم‌فرارتر از ایزوپروپیل میریستات است و این دو اغلب قابل جایگزینی با یکدیگرند. گریدهای فارماکوپه‌ای حداقل مقدار ایزوپروپیل پالمیتات را در بخش استری تعیین می‌کنند و ترکیب گریدهای آرایشی ممکن است متفاوت باشد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Kaolin": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Heavy Kaolin"
+   },
+   {
+    "ph": "JP",
+    "name": "Kaolin"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Kaolin, Heavy"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Kaolin"
+   }
+  ],
+  "tradeNames": "Argilla; bolus alba; China clay; hydrated aluminium silicate; porcelain clay; white bole; heavy kaolin; light kaolin",
+  "chemicalName": "Hydrated aluminium silicate",
+  "formula": "Al2H4O9Si2 (Al2O3·2SiO2·2H2O)",
+  "mw": "258.16",
+  "applications": {
+   "en": "Used in oral solid dosage forms as a diluent and adsorbent, and in topical products such as dusting powders, poultices and face masks. As an active substance it has been used as an oral adsorbent in antidiarrhoeal mixtures. It is also widely used in cosmetics and as a filler in many industries.",
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان رقیق‌کننده و جاذب و در فرآورده‌های موضعی مانند پودرهای پاشیدنی، ضمادها و ماسک‌های صورت به کار می‌رود. به عنوان ماده مؤثر نیز در مخلوط‌های ضداسهال خوراکی به عنوان جاذب مصرف شده است. در محصولات آرایشی و به عنوان پرکننده در بسیاری از صنایع نیز کاربرد گسترده دارد."
+  },
+  "description": {
+   "en": "A white or greyish-white, unctuous, fine powder that is practically odourless and has an earthy taste. It is a purified natural clay consisting mainly of the mineral kaolinite; light kaolin contains a dispersing agent and is finer than heavy kaolin.",
+   "fa": "پودر ریز سفید یا سفید مایل به خاکستری با لمس چرب، عملاً بی‌بو و با طعم خاکی. خاک رس طبیعی خالص‌شده‌ای است که عمدتاً از کانی کائولینیت تشکیل شده است؛ کائولن سبک حاوی ماده پراکنده‌کننده است و ریزتر از کائولن سنگین است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "true density about 2.6 g/cm³",
+     "fa": "چگالی حقیقی حدود 2.6 g/cm³"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water, ethanol, ether, other organic solvents, cold dilute acids and alkali hydroxide solutions",
+     "fa": "عملاً نامحلول در آب، اتانول، اتر، سایر حلال‌های آلی، اسیدهای رقیق سرد و محلول‌های هیدروکسید قلیایی"
+    }
+   },
+   {
+    "k": {
+     "en": "Structure",
+     "fa": "ساختار"
+    },
+    "v": {
+     "en": "layered (1:1) aluminosilicate; swells very little in water",
+     "fa": "آلومینوسیلیکات لایه‌ای (1:1)؛ در آب تورم بسیار کمی دارد"
+    }
+   },
+   {
+    "k": {
+     "en": "Heat stability",
+     "fa": "پایداری حرارتی"
+    },
+    "v": {
+     "en": "withstands dry-heat sterilisation; loses structural water only at several hundred °C",
+     "fa": "استریلیزاسیون با حرارت خشک را تحمل می‌کند؛ آب ساختاری خود را فقط در دمای چند صد درجه سلسیوس از دست می‌دهد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable. Store in a well-closed container in a cool, dry place. Because it may carry bacterial spores, including those of Clostridium species, kaolin for poultices and dusting powders should be sterilised, for example by dry heat.",
+   "fa": "پایدار است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود. چون ممکن است حاوی اسپورهای باکتریایی، از جمله گونه‌های Clostridium، باشد، کائولن مصرفی در ضمادها و پودرهای پاشیدنی باید، مثلاً با حرارت خشک، استریل شود."
+  },
+  "incompatibilities": {
+   "en": "Kaolin adsorbs many drugs and can reduce their oral absorption when taken at the same time; reduced absorption has been reported, for example, with digoxin, lincomycin and tetracyclines. It can also adsorb preservatives and reduce their activity.",
+   "fa": "کائولن بسیاری از داروها را جذب سطحی می‌کند و در صورت مصرف هم‌زمان ممکن است جذب خوراکی آن‌ها را کاهش دهد؛ کاهش جذب مثلاً با دیگوکسین، لینکومایسین و تتراسایکلین‌ها گزارش شده است. همچنین ممکن است نگهدارنده‌ها را جذب و اثر آن‌ها را کاهش دهد."
+  },
+  "manufacture": {
+   "en": "Mined natural clay is purified by suspending it in water and separating the fine fraction from sand, mica and other impurities by sedimentation or elutriation; it is then bleached if necessary, dried and milled.",
+   "fa": "خاک رس طبیعی استخراج‌شده با تعلیق در آب و جداسازی بخش ریز از ماسه، میکا و سایر ناخالصی‌ها به روش رسوب‌دهی یا الوتریاسیون خالص و در صورت نیاز سفیدسازی، خشک و آسیاب می‌شود."
+  },
+  "safety": {
+   "en": "Not absorbed orally and regarded as non-toxic by mouth. Chronic inhalation of kaolin dust in occupational settings can cause pneumoconiosis (kaolinosis).",
+   "fa": "از راه خوراکی جذب نمی‌شود و در مصرف خوراکی غیرسمی شناخته می‌شود. استنشاق مزمن گردوغبار کائولن در محیط‌های شغلی ممکن است باعث پنوموکونیوز (کائولینوز) شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid generating dust; use local exhaust, eye protection and a dust respirator.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد گردوغبار خودداری و از تهویه موضعی، محافظ چشم و ماسک تنفسی گردوغبار استفاده شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules and tablets; topical preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (کپسول و قرص خوراکی؛ فرآورده‌های موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Bentonite; magnesium aluminium silicate; talc; light kaolin.",
+   "fa": "بنتونیت؛ منیزیم آلومینیوم سیلیکات؛ تالک؛ کائولن سبک."
+  },
+  "comments": {
+   "en": "Pharmacopoeial kaolin is tested for limits on soluble impurities, heavy metals and swelling, and grades for topical or oral use should be checked for microbial quality. Separating the doses of kaolin-containing products and other oral drugs by at least two hours reduces adsorption interactions.",
+   "fa": "کائولن فارماکوپه‌ای از نظر حدود ناخالصی‌های محلول، فلزات سنگین و تورم آزمایش می‌شود و گریدهای مصرف موضعی یا خوراکی باید از نظر کیفیت میکروبی بررسی شوند. فاصله دادن دست‌کم دو ساعته بین مصرف فرآورده‌های حاوی کائولن و سایر داروهای خوراکی، برهم‌کنش ناشی از جذب سطحی را کاهش می‌دهد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid"
+  ]
+ },
+ "Lactic acid": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Lactic Acid"
+   },
+   {
+    "ph": "JP",
+    "name": "Lactic Acid"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Lactic Acid"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Lactic Acid"
+   }
+  ],
+  "tradeNames": "Acidum lacticum; 2-hydroxypropanoic acid; α-hydroxypropionic acid; DL-lactic acid; milk acid; Purac; E270",
+  "chemicalName": "2-Hydroxypropanoic acid",
+  "formula": "C3H6O3",
+  "mw": "90.08",
+  "applications": {
+   "en": "Used as an acidulant and to adjust pH in oral, topical, vaginal and parenteral products, and, with sodium lactate, as a buffer. It is used in topical preparations as a humectant and, at higher concentrations, as a keratolytic and exfoliating agent (an alpha-hydroxy acid). It is widely used in foods as an acidulant and preservative.",
+   "fa": "به عنوان اسیدی‌کننده و برای تنظیم pH در فرآورده‌های خوراکی، موضعی، واژینال و تزریقی و همراه با سدیم لاکتات به عنوان بافر به کار می‌رود. در فرآورده‌های موضعی به عنوان مرطوب‌کننده و در غلظت‌های بالاتر به عنوان عامل کراتولیتیک و لایه‌بردار (یک آلفاهیدروکسی اسید) مصرف می‌شود. در صنایع غذایی به عنوان اسیدی‌کننده و نگهدارنده کاربرد گسترده دارد."
+  },
+  "description": {
+   "en": "A practically odourless, colourless or slightly yellow, viscous, hygroscopic liquid with an acid taste. Pharmacopoeial lactic acid contains about 88–92% w/w of C3H6O3 as a mixture of lactic acid and its condensation products (lactoyllactic acid and polylactic acids) in equilibrium with water. It is usually racemic; (S)-lactic acid has its own monograph.",
+   "fa": "مایع ویسکوز، رطوبت‌گیر، بی‌رنگ یا کمی زرد و عملاً بی‌بو با طعم اسیدی. لاکتیک اسید فارماکوپه‌ای حدود 88–92٪ وزنی C3H6O3 دارد که به صورت مخلوطی از لاکتیک اسید و محصولات تراکمی آن (لاکتوئیل‌لاکتیک اسید و پلی‌لاکتیک اسیدها) در تعادل با آب است. معمولاً راسمیک است و (S)-لاکتیک اسید تک‌نگاری جداگانه دارد."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Content",
+     "fa": "مقدار"
+    },
+    "v": {
+     "en": "88–92% w/w",
+     "fa": "88–92٪ وزنی"
+    }
+   },
+   {
+    "k": {
+     "en": "pKa",
+     "fa": "pKa"
+    },
+    "v": {
+     "en": "≈ 3.86 at 25 °C",
+     "fa": "حدود 3.86 در 25 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "≈ 1.21 g/cm³ at 20 °C",
+     "fa": "حدود 1.21 g/cm³ در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "miscible with water, ethanol and ether",
+     "fa": "قابل اختلاط با آب، اتانول و اتر"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Hygroscopic. When concentrated, especially on heating, it condenses to lactoyllactic acid and lactide, which hydrolyse back to lactic acid on dilution and warming. Store in a well-closed container in a cool, dry place.",
+   "fa": "رطوبت‌گیر است. در حالت غلیظ، به‌ویژه با حرارت، به لاکتوئیل‌لاکتیک اسید و لاکتید متراکم می‌شود که با رقیق شدن و گرم شدن دوباره به لاکتیک اسید هیدرولیز می‌شوند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with oxidising agents, iodides and albumin. Reacts with alkalis and with carbonates, releasing carbon dioxide.",
+   "fa": "با اکسیدکننده‌ها، یدیدها و آلبومین ناسازگار است. با قلیاها و کربنات‌ها واکنش می‌دهد و کربن دی‌اکسید آزاد می‌کند."
+  },
+  "manufacture": {
+   "en": "Produced mainly by fermentation of carbohydrates such as glucose, sucrose or lactose with lactic acid bacteria, followed by purification; it can also be synthesised from acetaldehyde and hydrogen cyanide via lactonitrile.",
+   "fa": "عمدتاً از تخمیر کربوهیدرات‌هایی مانند گلوکز، ساکارز یا لاکتوز با باکتری‌های لاکتیک و سپس خالص‌سازی تولید می‌شود؛ از استالدهید و هیدروژن سیانید از طریق لاکتونیتریل نیز قابل سنتز است."
+  },
+  "safety": {
+   "en": "A normal product of human metabolism, regarded as non-toxic in dilute form. The concentrated acid is corrosive and irritant to skin, eyes and mucous membranes; topical products with high concentrations may cause stinging and irritation.",
+   "fa": "محصول طبیعی متابولیسم بدن انسان است و در شکل رقیق غیرسمی شناخته می‌شود. اسید غلیظ برای پوست، چشم و غشاهای مخاطی خورنده و محرک است و فرآورده‌های موضعی با غلظت بالا ممکن است سوزش و تحریک ایجاد کنند."
+  },
+  "handling": {
+   "en": "Wear gloves, eye protection and protective clothing when handling the concentrated acid, and work with adequate ventilation.",
+   "fa": "هنگام کار با اسید غلیظ از دستکش، محافظ چشم و لباس محافظ استفاده و در محیط با تهویه کافی کار شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E270). Included in the FDA Inactive Ingredient Database (intravenous, intramuscular and subcutaneous injections; oral, topical and vaginal preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E270). در FDA Inactive Ingredient Database (تزریق وریدی، عضلانی و زیرجلدی؛ فرآورده‌های خوراکی، موضعی و واژینال) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "(S)-Lactic acid; sodium lactate; calcium lactate; glycolic acid.",
+   "fa": "(S)-لاکتیک اسید؛ سدیم لاکتات؛ کلسیم لاکتات؛ گلیکولیک اسید."
+  },
+  "comments": {
+   "en": "Because commercial lactic acid contains condensed forms, solutions should be diluted and allowed to stand (or warmed) before titration or final pH adjustment so that the equilibrium is reached. Lactic acid is also the monomer for poly(lactic acid) and poly(lactic-co-glycolic acid) biodegradable polymers.",
+   "fa": "چون لاکتیک اسید تجاری حاوی شکل‌های متراکم است، محلول‌ها باید پیش از تیتراسیون یا تنظیم نهایی pH رقیق و مدتی نگه داشته (یا گرم) شوند تا به تعادل برسند. لاکتیک اسید مونومر پلیمرهای زیست‌تخریب‌پذیر پلی‌لاکتیک اسید و پلی(لاکتیک-کو-گلیکولیک اسید) نیز هست."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Lactitol": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Lactitol Monohydrate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Lactitol Monohydrate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Lactitol"
+   }
+  ],
+  "tradeNames": "Finlac DC; lactit; lactitol monohydrate; lactobiosit; lactositol; Lacty; E966",
+  "chemicalName": "4-O-β-D-Galactopyranosyl-D-glucitol",
+  "formula": "C12H24O11 (anhydrous); C12H24O11·H2O (monohydrate)",
+  "mw": "344.31 (anhydrous); 362.34 (monohydrate)",
+  "applications": {
+   "en": "A sugar alcohol used as a sweetener and as a non-cariogenic diluent in tablets (direct-compression grades are available), chewable tablets, lozenges, sugar-free coatings and confectionery. Its sweetness is about 30–40% of that of sucrose, so it is often combined with intense sweeteners. As an active substance it is used as an osmotic laxative.",
+   "fa": "یک قند الکلی است که به عنوان شیرین‌کننده و رقیق‌کننده غیرپوسیدگی‌زا در قرص‌ها (گریدهای پرس مستقیم در دسترس‌اند)، قرص‌های جویدنی، لوزنج‌ها، روکش‌های بدون قند و شیرینی‌ها به کار می‌رود. شیرینی آن حدود 30–40٪ ساکارز است و به همین دلیل اغلب همراه شیرین‌کننده‌های قوی مصرف می‌شود. به عنوان ماده مؤثر به عنوان ملین اسمزی مصرف می‌شود."
+  },
+  "description": {
+   "en": "White, odourless, sweet-tasting crystals or crystalline powder. It exists in anhydrous, monohydrate and dihydrate forms; the monohydrate is the usual pharmaceutical form.",
+   "fa": "کریستال یا پودر کریستالی سفید، بی‌بو و با طعم شیرین. به صورت فرم‌های بدون آب، مونوهیدرات و دی‌هیدرات وجود دارد و فرم دارویی رایج مونوهیدرات است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Sweetness",
+     "fa": "شیرینی"
+    },
+    "v": {
+     "en": "about 0.3–0.4 times that of sucrose",
+     "fa": "حدود 0.3–0.4 برابر ساکارز"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "very soluble in water; slightly soluble in ethanol",
+     "fa": "بسیار محلول در آب؛ کمی محلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Hygroscopicity",
+     "fa": "رطوبت‌گیری"
+    },
+    "v": {
+     "en": "the monohydrate is practically non-hygroscopic at normal humidity",
+     "fa": "مونوهیدرات در رطوبت معمول عملاً رطوبت‌گیر نیست"
+    }
+   },
+   {
+    "k": {
+     "en": "Energy value",
+     "fa": "ارزش انرژی"
+    },
+    "v": {
+     "en": "about 2 kcal/g (reduced-calorie)",
+     "fa": "حدود 2 kcal/g (کم‌کالری)"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable to heat and over a wide pH range. It is non-reducing, so it does not take part in Maillard browning. Store in a well-closed container in a dry place.",
+   "fa": "در برابر حرارت و در محدوده وسیعی از pH پایدار است. احیاکننده نیست و بنابراین در واکنش قهوه‌ای شدن میلارد شرکت نمی‌کند. در ظرف کاملاً بسته و در جای خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "No significant incompatibilities have been reported.",
+   "fa": "ناسازگاری مهمی گزارش نشده است."
+  },
+  "manufacture": {
+   "en": "Made by catalytic hydrogenation of lactose in aqueous solution, followed by purification and crystallisation.",
+   "fa": "از هیدروژناسیون کاتالیزوری لاکتوز در محلول آبی و سپس خالص‌سازی و کریستالیزاسیون تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Poorly absorbed from the small intestine and fermented in the colon, so large amounts cause flatulence, abdominal discomfort and an osmotic laxative effect. It is non-cariogenic and produces only a small rise in blood glucose.",
+   "fa": "از روده باریک جذب کمی دارد و در کولون تخمیر می‌شود؛ بنابراین مقادیر زیاد آن باعث نفخ، ناراحتی شکمی و اثر ملین اسمزی می‌شود. پوسیدگی‌زا نیست و قند خون را فقط اندکی افزایش می‌دهد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E966); foods containing more than 10% added polyols must carry a laxative-effect warning. Included in non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E966)؛ غذاهای حاوی بیش از 10٪ پلی‌ال افزوده باید هشدار اثر ملین داشته باشند. در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Isomalt; lactose; maltitol; mannitol; sorbitol; xylitol.",
+   "fa": "ایزومالت؛ لاکتوز؛ مالتیتول؛ مانیتول؛ سوربیتول؛ زایلیتول."
+  },
+  "comments": {
+   "en": "Lactitol has a clean, sugar-like taste without the cooling effect of xylitol or sorbitol. Although it is made from lactose, it is not a reducing sugar and can be used with amine drugs that are incompatible with lactose.",
+   "fa": "لاکتیتول طعمی تمیز و شبیه شکر دارد و اثر خنک‌کنندگی زایلیتول یا سوربیتول را ندارد. با وجود اینکه از لاکتوز تهیه می‌شود، قند احیاکننده نیست و می‌توان آن را همراه داروهای آمینی که با لاکتوز ناسازگارند به کار برد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "eu-additives"
+  ]
+ },
+ "Lactose, anhydrous": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Anhydrous Lactose"
+   },
+   {
+    "ph": "JP",
+    "name": "Anhydrous Lactose"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Lactose, Anhydrous"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Anhydrous Lactose"
+   }
+  ],
+  "tradeNames": "Anhydrous Lactose NF 60M; Lactopress Anhydrous; lactosum anhydricum; milk sugar; Pharmatose DCL 21; Pharmatose DCL 22; SuperTab 21AN; SuperTab 22AN",
+  "chemicalName": "O-β-D-Galactopyranosyl-(1→4)-β-D-glucopyranose (mixture of anhydrous β- and α-lactose)",
+  "formula": "C12H22O11",
+  "mw": "342.30",
+  "applications": {
+   "en": "Used as a filler and binder in direct compression and as a diluent in wet granulation and capsule filling. Its low water content makes it suitable for moisture-sensitive drugs. It is also used in lyophilised products and as a carrier in dry powder inhalers.",
+   "fa": "به عنوان پرکننده و چسباننده در پرس مستقیم و به عنوان رقیق‌کننده در گرانولاسیون مرطوب و پرکردن کپسول به کار می‌رود. مقدار آب کم آن، آن را برای داروهای حساس به رطوبت مناسب می‌سازد. در فرآورده‌های لیوفیلیزه و به عنوان حامل در افشانه‌های پودر خشک استنشاقی نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "White to off-white crystalline particles or powder, odourless and slightly sweet. Commercial anhydrous lactose made by roller drying is mainly anhydrous β-lactose, typically about 70–80%, with the rest anhydrous α-lactose.",
+   "fa": "ذرات یا پودر کریستالی سفید تا سفید مایل به کرم، بی‌بو و کمی شیرین. لاکتوز بدون آب تجاری که با خشک‌کن غلتکی تهیه می‌شود، عمدتاً بتالاکتوز بدون آب (معمولاً حدود 70–80٪) و بقیه آن آلفالاکتوز بدون آب است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Water content",
+     "fa": "مقدار آب"
+    },
+    "v": {
+     "en": "≤ 1.0% w/w; typically about 0.5% or less",
+     "fa": "حداکثر 1.0٪ وزنی؛ معمولاً حدود 0.5٪ یا کمتر"
+    }
+   },
+   {
+    "k": {
+     "en": "β-Lactose content",
+     "fa": "مقدار بتالاکتوز"
+    },
+    "v": {
+     "en": "typically about 70–80% (roller-dried grades)",
+     "fa": "معمولاً حدود 70–80٪ (گریدهای خشک‌شده با غلتک)"
+    }
+   },
+   {
+    "k": {
+     "en": "Specific rotation",
+     "fa": "چرخش ویژه"
+    },
+    "v": {
+     "en": "+54.4° to +55.9° (anhydrous basis, at equilibrium)",
+     "fa": "+54.4° تا +55.9° (بر پایه بدون آب، در حالت تعادل)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water (β-lactose dissolves faster than α-lactose); practically insoluble in ethanol and ether",
+     "fa": "به‌راحتی محلول در آب (بتالاکتوز سریع‌تر از آلفالاکتوز حل می‌شود)؛ عملاً نامحلول در اتانول و اتر"
+    }
+   }
+  ],
+  "stability": {
+   "en": "At high relative humidity anhydrous lactose can take up water and partly convert to α-lactose monohydrate, which may increase tablet weight and hardness on storage. It may brown in warm, damp conditions. Store in a well-closed container in a cool, dry place.",
+   "fa": "در رطوبت نسبی بالا، لاکتوز بدون آب ممکن است آب جذب کرده و تا حدی به آلفالاکتوز مونوهیدرات تبدیل شود که می‌تواند در طول نگهداری وزن و سختی قرص را افزایش دهد. در شرایط گرم و مرطوب ممکن است قهوه‌ای شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "As a reducing sugar it undergoes Maillard reaction with primary amines, and also with secondary amines more slowly, giving brown products. Incompatible with strong oxidising agents.",
+   "fa": "به عنوان قند احیاکننده، با آمین‌های نوع اول و با سرعت کمتر با آمین‌های نوع دوم واکنش میلارد می‌دهد و محصولات قهوه‌ای ایجاد می‌کند. با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "β-Anhydrous lactose is made by roller drying a concentrated lactose solution at a temperature above about 93.5 °C, at which the β-form crystallises, followed by milling and sieving. Anhydrous α-lactose is obtained by thermal or chemical dehydration of α-lactose monohydrate.",
+   "fa": "بتالاکتوز بدون آب از خشک کردن محلول غلیظ لاکتوز با خشک‌کن غلتکی در دمای بالاتر از حدود 93.5 °C (که در آن فرم β کریستالیزه می‌شود) و سپس آسیاب و الک کردن تهیه می‌شود. آلفالاکتوز بدون آب از آب‌زدایی حرارتی یا شیمیایی آلفالاکتوز مونوهیدرات به دست می‌آید."
+  },
+  "safety": {
+   "en": "Widely used and regarded as non-toxic. People with lactase deficiency may have gastrointestinal symptoms after large amounts of lactose, although the quantities in most tablets are too small to matter for most patients.",
+   "fa": "به‌طور گسترده مصرف می‌شود و غیرسمی شناخته می‌شود. افراد دچار کمبود لاکتاز ممکن است پس از مصرف مقادیر زیاد لاکتوز علائم گوارشی پیدا کنند، هرچند مقدار موجود در بیشتر قرص‌ها برای اکثر بیماران اهمیتی ندارد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and a dust mask are recommended. Fine lactose dust can form explosive mixtures with air.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و ماسک گردوغبار توصیه می‌شود. گردوغبار ریز لاکتوز ممکن است با هوا مخلوط قابل انفجار تشکیل دهد."
+  },
+  "regulatory": {
+   "en": "Lactose is GRAS listed. Anhydrous lactose is included in the FDA Inactive Ingredient Database (oral capsules and tablets; inhalation and other preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "لاکتوز در فهرست GRAS قرار دارد. لاکتوز بدون آب در FDA Inactive Ingredient Database (کپسول و قرص خوراکی؛ فرآورده‌های استنشاقی و سایر فرآورده‌ها) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Lactose monohydrate; lactose, spray-dried; lactose, inhalation; anhydrous lactose and microcrystalline cellulose.",
+   "fa": "لاکتوز مونوهیدرات؛ لاکتوز اسپری‌درای؛ لاکتوز مخصوص استنشاق؛ ترکیب لاکتوز بدون آب و سلولز میکروکریستالی."
+  },
+  "comments": {
+   "en": "Anhydrous lactose compacts mainly by brittle fracture, so its tabletability is little affected by lubricant level or blending time. Tablets made from it may slowly increase in hardness at high humidity, which should be checked in stability studies.",
+   "fa": "لاکتوز بدون آب عمدتاً با شکست شکننده (brittle fracture) فشرده می‌شود؛ بنابراین قابلیت قرص‌شدن آن تحت تأثیر مقدار لغزان‌کننده یا زمان اختلاط کمتر قرار می‌گیرد. قرص‌های تهیه‌شده از آن ممکن است در رطوبت بالا به‌تدریج سخت‌تر شوند که باید در مطالعات پایداری بررسی شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras"
+  ]
+ },
+ "Lactose, spray-dried": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Lactose Monohydrate"
+   },
+   {
+    "ph": "JP",
+    "name": "Lactose Hydrate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Lactose Monohydrate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Lactose Monohydrate"
+   }
+  ],
+  "tradeNames": "Fast-Flo 316; FlowLac 90; FlowLac 100; Lactopress Spray-Dried; Pharmatose DCL 11; Pharmatose DCL 14; SuperTab 11SD; SuperTab 14SD",
+  "chemicalName": "O-β-D-Galactopyranosyl-(1→4)-α-D-glucopyranose monohydrate, with a fraction of amorphous lactose",
+  "formula": "C12H22O11·H2O",
+  "mw": "360.31",
+  "applications": {
+   "en": "Used mainly as a filler-binder for direct compression of tablets, where its spherical particles give good flow and its amorphous fraction provides binding. It is also used in capsule filling and in sachets where good flow is needed.",
+   "fa": "عمدتاً به عنوان پرکننده-چسباننده در پرس مستقیم قرص به کار می‌رود؛ ذرات کروی آن جریان‌پذیری خوب و بخش آمورف آن خاصیت چسبانندگی ایجاد می‌کند. در پرکردن کپسول و ساشه‌هایی که به جریان‌پذیری خوب نیاز دارند نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "A white to off-white, free-flowing powder of spherical agglomerates made up of fine α-lactose monohydrate crystals held together by amorphous lactose. It is odourless and slightly sweet.",
+   "fa": "پودر روان سفید تا سفید مایل به کرم متشکل از آگلومره‌های کروی که از کریستال‌های ریز آلفالاکتوز مونوهیدرات تشکیل شده و با لاکتوز آمورف به هم متصل شده‌اند. بی‌بو و کمی شیرین است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Amorphous content",
+     "fa": "مقدار آمورف"
+    },
+    "v": {
+     "en": "typically about 10–20%",
+     "fa": "معمولاً حدود 10–20٪"
+    }
+   },
+   {
+    "k": {
+     "en": "Particle size (mean)",
+     "fa": "اندازه ذره (میانگین)"
+    },
+    "v": {
+     "en": "typically about 100–150 µm, depending on grade",
+     "fa": "معمولاً حدود 100–150 µm بسته به گرید"
+    }
+   },
+   {
+    "k": {
+     "en": "Bulk density",
+     "fa": "چگالی توده"
+    },
+    "v": {
+     "en": "≈ 0.6 g/cm³",
+     "fa": "حدود 0.6 g/cm³"
+    }
+   },
+   {
+    "k": {
+     "en": "Water content",
+     "fa": "مقدار آب"
+    },
+    "v": {
+     "en": "about 4.5–5.5% w/w total (mainly water of crystallisation)",
+     "fa": "در مجموع حدود 4.5–5.5٪ وزنی (عمدتاً آب تبلور)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water; practically insoluble in ethanol and ether",
+     "fa": "به‌راحتی محلول در آب؛ عملاً نامحلول در اتانول و اتر"
+    }
+   }
+  ],
+  "stability": {
+   "en": "At high humidity the amorphous fraction can absorb water and crystallise, which reduces compactibility and may cause caking. It browns more readily than crystalline lactose, particularly in warm, damp conditions. Store in a well-closed container in a cool, dry place.",
+   "fa": "در رطوبت بالا، بخش آمورف ممکن است آب جذب کرده و کریستالیزه شود که تراکم‌پذیری را کاهش داده و ممکن است باعث کلوخه شدن شود. نسبت به لاکتوز کریستالی آسان‌تر قهوه‌ای می‌شود، به‌ویژه در شرایط گرم و مرطوب. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "A reducing sugar that undergoes Maillard reaction with primary and secondary amines; the amorphous fraction reacts faster than crystalline lactose. Incompatible with strong oxidising agents.",
+   "fa": "قند احیاکننده‌ای است که با آمین‌های نوع اول و دوم واکنش میلارد می‌دهد؛ بخش آمورف سریع‌تر از لاکتوز کریستالی واکنش می‌دهد. با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Made by spray drying a suspension of fine α-lactose monohydrate crystals in a saturated lactose solution. The dissolved lactose dries rapidly to an amorphous glass that binds the crystals into spherical particles.",
+   "fa": "از خشک کردن پاششی سوسپانسیون کریستال‌های ریز آلفالاکتوز مونوهیدرات در محلول اشباع لاکتوز تهیه می‌شود. لاکتوز حل‌شده به‌سرعت خشک شده و به شیشه آمورفی تبدیل می‌شود که کریستال‌ها را به صورت ذرات کروی به هم متصل می‌کند."
+  },
+  "safety": {
+   "en": "Regarded as non-toxic. As with other lactose grades, patients with lactase deficiency may be affected by large amounts.",
+   "fa": "غیرسمی شناخته می‌شود. مانند سایر گریدهای لاکتوز، مقادیر زیاد آن ممکن است در بیماران دچار کمبود لاکتاز مشکل ایجاد کند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled; eye protection and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود؛ محافظ چشم و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Lactose is GRAS listed. Spray-dried lactose is included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "لاکتوز در فهرست GRAS قرار دارد. لاکتوز اسپری‌درای در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Lactose, anhydrous; lactose monohydrate; lactose monohydrate and microcrystalline cellulose; lactose monohydrate and povidone.",
+   "fa": "لاکتوز بدون آب؛ لاکتوز مونوهیدرات؛ ترکیب لاکتوز مونوهیدرات و سلولز میکروکریستالی؛ ترکیب لاکتوز مونوهیدرات و پوویدون."
+  },
+  "comments": {
+   "en": "Spray-dried lactose complies with the pharmacopoeial monographs for lactose monohydrate; suppliers state the amorphous content and particle size on the specification. Because its binding relies on the amorphous fraction, tablets should not be exposed to high humidity before packaging.",
+   "fa": "لاکتوز اسپری‌درای با تک‌نگاری‌های فارماکوپه‌ای لاکتوز مونوهیدرات مطابقت دارد و تأمین‌کنندگان مقدار آمورف و اندازه ذره را در مشخصات ذکر می‌کنند. چون چسبانندگی آن به بخش آمورف وابسته است، قرص‌ها نباید پیش از بسته‌بندی در معرض رطوبت بالا قرار گیرند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras"
+  ]
+ }
+}

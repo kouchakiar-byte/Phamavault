@@ -1,0 +1,2070 @@
+{
+ "Phenol": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Phenol"
+   },
+   {
+    "ph": "JP",
+    "name": "Phenol"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Phenol"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Phenol"
+   }
+  ],
+  "tradeNames": "Benzenol; carbolic acid; hydroxybenzene; monohydroxybenzene; phenic acid; phenolum; phenylic acid",
+  "chemicalName": "Phenol",
+  "formula": "C6H6O",
+  "mw": "94.11",
+  "applications": {
+   "en": "Used mainly as an antimicrobial preservative in parenteral products, typically at about 0.25–0.5% w/v, including some insulin preparations and vaccines; it is also used in some topical and oral preparations such as mouthwashes and throat sprays. At higher concentrations phenol is used as a disinfectant, and in topical products it has antipruritic and mild local anaesthetic effects. Its antimicrobial action is bactericidal at about 1% and bacteriostatic at lower concentrations.",
+   "fa": "عمدتاً به عنوان نگهدارنده ضدمیکروبی در فرآورده‌های تزریقی با غلظت معمول حدود 0.25–0.5٪ وزنی/حجمی به کار می‌رود، از جمله در برخی فرآورده‌های انسولین و واکسن‌ها؛ در برخی فرآورده‌های موضعی و خوراکی مانند دهان‌شویه و اسپری گلو نیز مصرف می‌شود. فنل در غلظت‌های بالاتر به عنوان ضدعفونی‌کننده کاربرد دارد و در فرآورده‌های موضعی اثر ضدخارش و بی‌حسی موضعی خفیف دارد. اثر ضدمیکروبی آن در حدود 1٪ باکتری‌کش و در غلظت‌های کمتر باکتریواستاتیک است."
+  },
+  "description": {
+   "en": "Colourless to faintly pink, hygroscopic crystals or a crystalline mass with a characteristic, aromatic odour. It liquefies readily when a small amount of water is added; liquefied phenol contains about 10% water.",
+   "fa": "کریستال‌ها یا توده کریستالی بی‌رنگ تا صورتی کم‌رنگ و رطوبت‌گیر با بوی معطر و مشخص. با افزودن مقدار کمی آب به‌راحتی مایع می‌شود؛ فنل مایع‌شده (liquefied phenol) حدود 10٪ آب دارد."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "about 41 °C",
+     "fa": "حدود 41 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Boiling point",
+     "fa": "نقطه جوش"
+    },
+    "v": {
+     "en": "about 182 °C",
+     "fa": "حدود 182 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "pKa",
+     "fa": "pKa"
+    },
+    "v": {
+     "en": "about 10.0 (25 °C)",
+     "fa": "حدود 10.0 (25 °C)"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 1.07 g/cm³",
+     "fa": "حدود 1.07 g/cm³"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in water (about 1 in 15); very soluble in ethanol, glycerol, chloroform and ether; soluble in fixed and volatile oils",
+     "fa": "محلول در آب (حدود 1 در 15)؛ بسیار محلول در اتانول، گلیسرول، کلروفرم و اتر؛ محلول در روغن‌های ثابت و فرّار"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Phenol darkens to pink or red on exposure to air and light, a change accelerated by alkalinity and traces of metals such as iron and copper. Aqueous solutions are stable. Store in an airtight, light-resistant container in a cool place.",
+   "fa": "فنل در مجاورت هوا و نور به رنگ صورتی یا قرمز تیره می‌شود و قلیایی بودن محیط و مقادیر جزئی فلزاتی مانند آهن و مس این تغییر را تسریع می‌کند. محلول‌های آبی آن پایدارند. در ظرف کاملاً بسته و مقاوم به نور، در جای خنک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Precipitates albumin and gelatin, and gives coloured complexes with ferric salts. It forms liquid or soft eutectic mixtures with compounds such as camphor, menthol, thymol, phenazone and salol. Its preservative activity is reduced by nonionic surfactants and at alkaline pH; it is also incompatible with strong oxidising agents.",
+   "fa": "آلبومین و ژلاتین را رسوب می‌دهد و با نمک‌های فریک کمپلکس رنگی تشکیل می‌دهد. با ترکیباتی مانند کامفر، منتول، تیمول، فنازون و سالول مخلوط اوتکتیک مایع یا نرم ایجاد می‌کند. فعالیت نگهدارندگی آن در حضور سورفکتانت‌های غیریونی و در pH قلیایی کاهش می‌یابد؛ با اکسیدکننده‌های قوی نیز ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Originally isolated from coal tar, phenol is now made mostly synthetically, chiefly by the cumene process, in which cumene hydroperoxide is cleaved with acid to give phenol and acetone.",
+   "fa": "فنل در ابتدا از قطران زغال‌سنگ جدا می‌شد ولی اکنون عمدتاً به روش سنتزی و بیشتر با فرآیند کومن تولید می‌شود؛ در این فرآیند کومن هیدروپراکسید با اسید شکسته می‌شود و فنل و استون به دست می‌آید."
+  },
+  "safety": {
+   "en": "Concentrated phenol is corrosive to skin and mucous membranes and is rapidly absorbed through the skin, lungs and gut; systemic poisoning can affect the central nervous system, heart and kidneys. At the low concentrations used as a preservative it is generally well tolerated, although local irritation and rare hypersensitivity reactions have been reported.",
+   "fa": "فنل غلیظ برای پوست و مخاط خورنده است و به‌سرعت از پوست، ریه و دستگاه گوارش جذب می‌شود؛ مسمومیت سیستمیک می‌تواند دستگاه عصبی مرکزی، قلب و کلیه را درگیر کند. در غلظت‌های پایینی که به عنوان نگهدارنده به کار می‌رود عموماً به‌خوبی تحمل می‌شود، هرچند تحریک موضعی و واکنش‌های حساسیتی نادر گزارش شده است."
+  },
+  "handling": {
+   "en": "Phenol is toxic and corrosive. Wear chemical-resistant gloves, eye protection and protective clothing, and handle in a fume cupboard or with good ventilation. Skin contact should be washed off immediately with plenty of water or with polyethylene glycol.",
+   "fa": "فنل سمی و خورنده است. از دستکش مقاوم به مواد شیمیایی، محافظ چشم و لباس محافظ استفاده و زیر هود یا در محیط با تهویه مناسب کار شود. در صورت تماس با پوست، فوراً با مقدار زیاد آب یا پلی‌اتیلن گلیکول شسته شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (injections; oral, topical and other preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (تزریقی؛ فرآورده‌های خوراکی، موضعی و سایر فرآورده‌ها) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Chlorocresol; cresol; liquefied phenol; thymol.",
+   "fa": "کلروکرزول؛ کرزول؛ فنل مایع‌شده؛ تیمول."
+  },
+  "comments": {
+   "en": "Phenol is more effective against bacteria than against fungi and spores. Its activity is strongly pH dependent because only the un-ionised form is active, and it is lost from solution by sorption into rubber closures and some plastics, which should be considered in container selection.",
+   "fa": "فنل بر باکتری‌ها مؤثرتر از قارچ‌ها و اسپورهاست. فعالیت آن به pH وابستگی زیادی دارد، زیرا فقط شکل غیریونی فعال است؛ همچنین با جذب در درپوش‌های لاستیکی و برخی پلاستیک‌ها از محلول کاسته می‌شود که در انتخاب ظرف باید در نظر گرفته شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "bp",
+   "jp",
+   "iid",
+   "hsdb"
+  ]
+ },
+ "Phenoxyethanol": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Phenoxyethanol"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Phenoxyethanol"
+   }
+  ],
+  "tradeNames": "2-Phenoxyethanol; ethylene glycol monophenyl ether; β-hydroxyethyl phenyl ether; phenoxetol; phenoxyethanolum; phenyl cellosolve",
+  "chemicalName": "2-Phenoxyethanol",
+  "formula": "C8H10O2",
+  "mw": "138.16",
+  "applications": {
+   "en": "An antimicrobial preservative used in topical creams, lotions and shampoos, usually at 0.5–1.0% w/w, and in some vaccines and other injectable products at about 0.5%. It is widely used in cosmetics, where the EU maximum is 1%. It is often combined with parabens or other preservatives to broaden the spectrum of activity.",
+   "fa": "نگهدارنده ضدمیکروبی که در کرم‌ها، لوسیون‌ها و شامپوهای موضعی معمولاً با غلظت 0.5–1.0٪ وزنی، و در برخی واکسن‌ها و دیگر فرآورده‌های تزریقی با غلظت حدود 0.5٪ به کار می‌رود. در محصولات آرایشی بسیار پرمصرف است و حداکثر غلظت مجاز آن در اتحادیه اروپا 1٪ است. اغلب برای گسترش طیف اثر همراه با پارابن‌ها یا نگهدارنده‌های دیگر مصرف می‌شود."
+  },
+  "description": {
+   "en": "A colourless, slightly viscous, oily liquid with a faint, pleasant aromatic odour and a burning taste.",
+   "fa": "مایع روغنی بی‌رنگ و کمی ویسکوز با بوی معطر ملایم و خوشایند و طعم سوزاننده."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Boiling point",
+     "fa": "نقطه جوش"
+    },
+    "v": {
+     "en": "about 245 °C",
+     "fa": "حدود 245 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "about 14 °C",
+     "fa": "حدود 14 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 1.11 g/cm³ (20 °C)",
+     "fa": "حدود 1.11 g/cm³ (20 °C)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "slightly soluble in water (roughly 2.5% w/v); miscible with acetone, ethanol and glycerol; slightly soluble in fixed oils",
+     "fa": "کمی محلول در آب (تقریباً 2.5٪ وزنی/حجمی)؛ قابل امتزاج با استون، اتانول و گلیسرول؛ کمی محلول در روغن‌های ثابت"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable and not volatile at room temperature; aqueous solutions can be sterilised by autoclaving. Store in a well-closed container in a cool, dry place, protected from light.",
+   "fa": "پایدار است و در دمای اتاق فرّار نیست؛ محلول‌های آبی آن را می‌توان با اتوکلاو استریل کرد. در ظرف کاملاً بسته، در جای خنک و خشک و دور از نور نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Its antimicrobial activity can be reduced by nonionic surfactants and by sorption onto some plastics such as PVC. It is incompatible with strong oxidising agents.",
+   "fa": "فعالیت ضدمیکروبی آن ممکن است در حضور سورفکتانت‌های غیریونی و با جذب سطحی روی برخی پلاستیک‌ها مانند PVC کاهش یابد. با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Prepared by reacting phenol with ethylene oxide in an alkaline medium (hydroxyethylation of phenol), followed by purification by distillation.",
+   "fa": "از واکنش فنل با اتیلن اکسید در محیط قلیایی (هیدروکسی‌اتیلاسیون فنل) و سپس خالص‌سازی با تقطیر تهیه می‌شود."
+  },
+  "safety": {
+   "en": "At the concentrations used as a preservative it is generally well tolerated on the skin, although irritation and rare contact allergy have been reported. It is an eye irritant in concentrated form, and ingestion of large amounts can cause central nervous system depression.",
+   "fa": "در غلظت‌هایی که به عنوان نگهدارنده مصرف می‌شود عموماً روی پوست به‌خوبی تحمل می‌شود، هرچند تحریک و به‌ندرت حساسیت تماسی گزارش شده است. شکل غلیظ آن برای چشم محرک است و بلع مقادیر زیاد می‌تواند موجب تضعیف دستگاه عصبی مرکزی شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid contact with the eyes and prolonged skin contact; eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از تماس با چشم و تماس طولانی با پوست خودداری شود؛ استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (injections, including vaccines, and topical preparations) and in medicines licensed in Europe. Permitted as a preservative in cosmetics in the EU up to 1%.",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های تزریقی از جمله واکسن‌ها و فرآورده‌های موضعی) و در داروهای مجاز در اروپا وجود دارد. در اتحادیه اروپا به عنوان نگهدارنده در محصولات آرایشی تا 1٪ مجاز است."
+  },
+  "related": {
+   "en": "Benzyl alcohol; phenylethyl alcohol; phenoxypropanol.",
+   "fa": "بنزیل الکل؛ فنیل‌اتیل الکل؛ فنوکسی‌پروپانول."
+  },
+  "comments": {
+   "en": "Phenoxyethanol is particularly active against Gram-negative bacteria, including Pseudomonas aeruginosa, but is weaker against Gram-positive bacteria, yeasts and moulds, which is why it is usually paired with a second preservative. Its activity is little affected by pH over the usual formulation range.",
+   "fa": "فنوکسی‌اتانول به‌ویژه بر باکتری‌های گرم‌منفی از جمله Pseudomonas aeruginosa مؤثر است ولی اثر آن بر باکتری‌های گرم‌مثبت، مخمرها و کپک‌ها ضعیف‌تر است و به همین دلیل معمولاً همراه یک نگهدارنده دوم مصرف می‌شود. فعالیت آن در محدوده معمول pH فرمولاسیون‌ها تغییر چندانی نمی‌کند."
+  },
+  "refs": [
+   "ep",
+   "bp",
+   "iid"
+  ]
+ },
+ "Phenylethyl alcohol": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Phenylethyl Alcohol"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Phenylethyl Alcohol"
+   }
+  ],
+  "tradeNames": "Benzeneethanol; benzyl carbinol; β-hydroxyethylbenzene; PEA; phenethyl alcohol; 2-phenylethanol; β-phenylethyl alcohol",
+  "chemicalName": "2-Phenylethanol",
+  "formula": "C8H10O",
+  "mw": "122.16",
+  "applications": {
+   "en": "Used as an antimicrobial preservative in ophthalmic, nasal and otic solutions, typically at 0.25–0.5% v/v, usually together with another preservative such as benzalkonium chloride or chlorhexidine for a synergistic effect. It is also widely used as a flavour and fragrance (rose odour) in foods, cosmetics and toiletries.",
+   "fa": "به عنوان نگهدارنده ضدمیکروبی در محلول‌های چشمی، بینی و گوش، معمولاً با غلظت 0.25–0.5٪ حجمی/حجمی و اغلب همراه نگهدارنده دیگری مانند بنزالکونیوم کلرید یا کلرهگزیدین برای اثر هم‌افزا به کار می‌رود. در غذاها، محصولات آرایشی و بهداشتی نیز به عنوان طعم‌دهنده و عطر (بوی گل سرخ) کاربرد گسترده دارد."
+  },
+  "description": {
+   "en": "A clear, colourless liquid with a characteristic rose-like odour and a sharp, burning taste. It occurs naturally in rose oil and several other essential oils.",
+   "fa": "مایع شفاف و بی‌رنگ با بوی مشخص شبیه گل سرخ و طعم تند و سوزاننده. به‌طور طبیعی در روغن گل سرخ و چند اسانس دیگر وجود دارد."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Boiling point",
+     "fa": "نقطه جوش"
+    },
+    "v": {
+     "en": "about 219–221 °C",
+     "fa": "حدود 219–221 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 1.02 g/cm³ (20 °C)",
+     "fa": "حدود 1.02 g/cm³ (20 °C)"
+    }
+   },
+   {
+    "k": {
+     "en": "Refractive index",
+     "fa": "ضریب شکست"
+    },
+    "v": {
+     "en": "about 1.53 (20 °C)",
+     "fa": "حدود 1.53 (20 °C)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "sparingly soluble in water (about 1 in 60); miscible with ethanol, chloroform, ether, glycerol and fixed oils",
+     "fa": "کم محلول در آب (حدود 1 در 60)؛ قابل امتزاج با اتانول، کلروفرم، اتر، گلیسرول و روغن‌های ثابت"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable in bulk, and stable in aqueous solution including on autoclaving. Store in an airtight container, protected from light, in a cool, dry place.",
+   "fa": "به شکل توده پایدار است و در محلول آبی، از جمله هنگام اتوکلاو، نیز پایدار می‌ماند. در ظرف کاملاً بسته، دور از نور و در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with oxidising agents and with protein-containing materials such as serum. Its antimicrobial activity may be partly reduced by polysorbates and other nonionic surfactants.",
+   "fa": "با اکسیدکننده‌ها و مواد پروتئینی مانند سرم ناسازگار است. فعالیت ضدمیکروبی آن ممکن است در حضور پلی‌سوربات‌ها و دیگر سورفکتانت‌های غیریونی تا حدی کاهش یابد."
+  },
+  "manufacture": {
+   "en": "Produced synthetically, for example by Friedel–Crafts reaction of benzene with ethylene oxide in the presence of aluminium chloride, or by reduction of phenylacetic acid esters; it can also be obtained from natural sources.",
+   "fa": "به روش سنتزی تولید می‌شود؛ برای مثال با واکنش فریدل–کرافتس بنزن با اتیلن اکسید در حضور آلومینیوم کلرید، یا با احیای استرهای فنیل‌استیک اسید؛ از منابع طبیعی نیز قابل استحصال است."
+  },
+  "safety": {
+   "en": "Widely used in foods, cosmetics and topical and ophthalmic medicines, and generally regarded as non-toxic and non-irritant at the concentrations used as a preservative. Higher concentrations can irritate the eye, and concentrated material is irritant to the skin.",
+   "fa": "در غذاها، محصولات آرایشی و داروهای موضعی و چشمی به‌طور گسترده مصرف می‌شود و در غلظت‌های مصرفی به عنوان نگهدارنده، عموماً غیرسمی و غیرمحرک شناخته می‌شود. غلظت‌های بالاتر ممکن است چشم را تحریک کنند و ماده غلیظ برای پوست محرک است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended; the liquid is combustible.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود؛ این مایع قابل احتراق است."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (nasal, ophthalmic and otic preparations) and in non-parenteral medicines licensed in Europe. Permitted as a synthetic flavouring substance in foods.",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های بینی، چشمی و گوش) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد. به عنوان ماده طعم‌دهنده سنتزی در غذاها مجاز است."
+  },
+  "related": {
+   "en": "Benzyl alcohol; chlorobutanol; phenoxyethanol.",
+   "fa": "بنزیل الکل؛ کلروبوتانول؛ فنوکسی‌اتانول."
+  },
+  "comments": {
+   "en": "On its own phenylethyl alcohol has relatively weak, slow antimicrobial activity, being more effective against Gram-negative bacteria; it acts mainly by increasing cell-membrane permeability, which explains its usefulness in combination with other preservatives. Activity is greatest at acidic to neutral pH.",
+   "fa": "فنیل‌اتیل الکل به‌تنهایی اثر ضدمیکروبی نسبتاً ضعیف و کندی دارد و بر باکتری‌های گرم‌منفی مؤثرتر است؛ سازوکار اصلی آن افزایش نفوذپذیری غشای سلول است و همین امر سودمندی آن را در ترکیب با نگهدارنده‌های دیگر توضیح می‌دهد. بیشترین فعالیت آن در pH اسیدی تا خنثی است."
+  },
+  "refs": [
+   "usp",
+   "bp",
+   "iid"
+  ]
+ },
+ "Phosphoric acid": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Phosphoric Acid"
+   },
+   {
+    "ph": "JP",
+    "name": "Phosphoric Acid"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Phosphoric Acid, Concentrated"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Phosphoric Acid"
+   }
+  ],
+  "tradeNames": "Acidum phosphoricum concentratum; orthophosphoric acid; E338",
+  "chemicalName": "Orthophosphoric acid",
+  "formula": "H3PO4",
+  "mw": "98.00",
+  "applications": {
+   "en": "Used as an acidifying agent and for pH adjustment in oral, topical and parenteral formulations, normally in dilute form (for example diluted phosphoric acid, about 10% w/v) and in small, quantity-sufficient amounts. It is also used with its salts to prepare phosphate buffers, and in foods and soft drinks as an acidulant.",
+   "fa": "به عنوان عامل اسیدی‌کننده و برای تنظیم pH در فرمولاسیون‌های خوراکی، موضعی و تزریقی، معمولاً به شکل رقیق (مثلاً فسفریک اسید رقیق حدود 10٪ وزنی/حجمی) و به مقدار لازم (q.s.) به کار می‌رود. همراه با نمک‌هایش برای تهیه بافر فسفات و در غذاها و نوشابه‌ها به عنوان اسیدی‌کننده نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "The concentrated acid is a clear, colourless, odourless, syrupy liquid that is strongly corrosive. It may crystallise on standing at low temperatures.",
+   "fa": "اسید غلیظ مایعی شفاف، بی‌رنگ، بی‌بو و شربتی‌شکل با خاصیت خورندگی شدید است. در دمای پایین ممکن است در اثر ماندن کریستالیزه شود."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Concentration",
+     "fa": "غلظت"
+    },
+    "v": {
+     "en": "concentrated grades about 85% w/w H3PO4 (pharmacopoeial limits roughly 84–90%)",
+     "fa": "گریدهای غلیظ حدود 85٪ وزنی H3PO4 (حدود مجاز فارماکوپه‌ای تقریباً 84–90٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "pKa",
+     "fa": "pKa"
+    },
+    "v": {
+     "en": "pKa1 ≈ 2.1; pKa2 ≈ 7.2; pKa3 ≈ 12.3 (25 °C)",
+     "fa": "pKa1 حدود 2.1؛ pKa2 حدود 7.2؛ pKa3 حدود 12.3 (25 °C)"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 1.7 g/cm³ (85% acid)",
+     "fa": "حدود 1.7 g/cm³ (اسید 85٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "miscible with water and ethanol, with evolution of heat",
+     "fa": "قابل امتزاج با آب و اتانول همراه با آزاد شدن گرما"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically stable. The concentrated acid is hygroscopic and should be stored in an airtight container made of a material resistant to the acid, such as glass or suitable plastic.",
+   "fa": "از نظر شیمیایی پایدار است. اسید غلیظ رطوبت‌گیر است و باید در ظرف کاملاً بسته از جنس مقاوم به اسید مانند شیشه یا پلاستیک مناسب نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Reacts vigorously and exothermically with alkalis. It attacks many metals, releasing flammable hydrogen gas, and is incompatible with strong oxidising agents and many organic materials.",
+   "fa": "با قلیاها به‌شدت و با تولید گرما واکنش می‌دهد. به بسیاری از فلزات حمله می‌کند و گاز هیدروژن قابل اشتعال آزاد می‌کند؛ با اکسیدکننده‌های قوی و بسیاری از مواد آلی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "High-purity acid is made by the thermal process, in which elemental phosphorus is burned to phosphorus pentoxide and then hydrated. Technical grades are made by the wet process, by treating phosphate rock with sulfuric acid, and then purified.",
+   "fa": "اسید با خلوص بالا به روش حرارتی تولید می‌شود که در آن فسفر عنصری سوزانده و به فسفر پنتوکسید تبدیل و سپس هیدراته می‌شود. گریدهای صنعتی به روش مرطوب، با اثر سولفوریک اسید بر سنگ فسفات، تهیه و سپس خالص‌سازی می‌شوند."
+  },
+  "safety": {
+   "en": "Dilute phosphoric acid in the amounts used as an excipient is not considered toxic and is widely consumed in foods and drinks. The concentrated acid is corrosive and causes severe burns to the skin, eyes and mucous membranes. EFSA has set a group ADI for phosphates of 40 mg/kg body weight per day, expressed as phosphorus.",
+   "fa": "فسفریک اسید رقیق در مقادیر مصرفی به عنوان ماده جانبی سمی محسوب نمی‌شود و به‌طور گسترده در غذاها و نوشیدنی‌ها مصرف می‌شود. اسید غلیظ خورنده است و سوختگی شدید پوست، چشم و مخاط ایجاد می‌کند. EFSA برای فسفات‌ها ADI گروهی 40 mg/kg وزن بدن در روز (بر حسب فسفر) تعیین کرده است."
+  },
+  "handling": {
+   "en": "The concentrated acid is corrosive. Wear acid-resistant gloves, eye and face protection and protective clothing. When diluting, always add the acid slowly to water, never the reverse.",
+   "fa": "اسید غلیظ خورنده است. از دستکش مقاوم به اسید، محافظ چشم و صورت و لباس محافظ استفاده شود. هنگام رقیق‌سازی همیشه اسید را به‌آرامی به آب اضافه کنید و هرگز برعکس عمل نکنید."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E338). Included in the FDA Inactive Ingredient Database (injections; oral, topical and other preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E338). در FDA Inactive Ingredient Database (تزریقی؛ فرآورده‌های خوراکی، موضعی و سایر فرآورده‌ها) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Diluted phosphoric acid; potassium phosphates; sodium phosphates.",
+   "fa": "فسفریک اسید رقیق؛ پتاسیم فسفات‌ها؛ سدیم فسفات‌ها."
+  },
+  "comments": {
+   "en": "Because it has three dissociation steps, phosphoric acid and its sodium or potassium salts can buffer around pH 2, 7 and 12; the pH 6–8 phosphate buffers are the most widely used in pharmaceutical formulations. Phosphate can precipitate with calcium and some other polyvalent cations, which matters in parenteral nutrition admixtures.",
+   "fa": "فسفریک اسید به دلیل داشتن سه مرحله تفکیک، همراه با نمک‌های سدیم یا پتاسیم خود می‌تواند در حدود pH 2، 7 و 12 بافر ایجاد کند؛ بافرهای فسفات در محدوده pH 6–8 پرمصرف‌ترین آن‌ها در فرمولاسیون‌های دارویی‌اند. فسفات ممکن است با کلسیم و برخی کاتیون‌های چندظرفیتی دیگر رسوب کند که در مخلوط‌های تغذیه وریدی اهمیت دارد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "bp",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives",
+   "efsa",
+   "jecfa"
+  ]
+ },
+ "Polacrilin potassium": {
+  "names": [
+   {
+    "ph": "USP-NF",
+    "name": "Polacrilin Potassium"
+   }
+  ],
+  "tradeNames": "Amberlite IRP88; methacrylic acid polymer with divinylbenzene, potassium salt; polacrilinum kalicum",
+  "chemicalName": "Potassium salt of a cross-linked copolymer of methacrylic acid and divinylbenzene",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used mainly as a tablet disintegrant, typically at 2–10% w/w, in both direct compression and wet granulation. Its strong swelling on contact with water gives rapid disintegration without forming a gel. It is not normally used for its ion-exchange properties.",
+   "fa": "عمدتاً به عنوان متلاشی‌کننده قرص با غلظت معمول 2–10٪ وزنی، هم در پرس مستقیم و هم در گرانولاسیون مرطوب، به کار می‌رود. تورم شدید آن در تماس با آب باعث متلاشی شدن سریع قرص بدون تشکیل ژل می‌شود. معمولاً به خاطر خاصیت تبادل یونی مصرف نمی‌شود."
+  },
+  "description": {
+   "en": "A cation-exchange resin made from methacrylic acid cross-linked with divinylbenzene, in the potassium salt form. It is supplied as a fine, free-flowing, cream-coloured powder with little or no odour or taste.",
+   "fa": "رزین تبادل کاتیونی حاصل از متاکریلیک اسید که با دی‌وینیل‌بنزن شبکه‌ای (کراس‌لینک) شده و به شکل نمک پتاسیم است. به صورت پودر ریز، روان و کرم‌رنگ با بو و طعم ناچیز عرضه می‌شود."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "free-flowing, cream-coloured fine powder; odourless and almost tasteless",
+     "fa": "پودر ریز و روان به رنگ کرم؛ بی‌بو و تقریباً بی‌مزه"
+    }
+   },
+   {
+    "k": {
+     "en": "Potassium content",
+     "fa": "مقدار پتاسیم"
+    },
+    "v": {
+     "en": "about 21–25% (dried basis)",
+     "fa": "حدود 21–25٪ (بر پایه ماده خشک)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "insoluble in water and in most organic solvents; swells rapidly in water",
+     "fa": "نامحلول در آب و بیشتر حلال‌های آلی؛ در آب به‌سرعت متورم می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Type",
+     "fa": "نوع"
+    },
+    "v": {
+     "en": "weakly acidic cation-exchange resin (carboxylate functional groups)",
+     "fa": "رزین تبادل کاتیونی با اسیدیته ضعیف (گروه‌های عاملی کربوکسیلات)"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable. Store in a well-closed container in a cool, dry place.",
+   "fa": "پایدار است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. As an ion-exchange resin it may bind cationic drugs and exchange potassium with other cations, which can affect drug release.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. به عنوان رزین تبادل یونی ممکن است داروهای کاتیونی را به خود متصل و پتاسیم را با کاتیون‌های دیگر مبادله کند که بر آزادسازی دارو اثر می‌گذارد."
+  },
+  "manufacture": {
+   "en": "Made by suspension copolymerisation of methacrylic acid with divinylbenzene as the cross-linker; the resin is then neutralised with potassium hydroxide, washed, dried and milled.",
+   "fa": "از کوپلیمریزاسیون سوسپانسیونی متاکریلیک اسید با دی‌وینیل‌بنزن (به عنوان عامل کراس‌لینک) تهیه می‌شود؛ سپس رزین با پتاسیم هیدروکسید خنثی، شسته، خشک و آسیاب می‌شود."
+  },
+  "safety": {
+   "en": "Used in oral solid dosage forms and regarded as non-toxic; being an insoluble, high-molecular-weight polymer it is not absorbed from the gastrointestinal tract. The potassium it contains should be considered for patients on potassium restriction only when large amounts are taken.",
+   "fa": "در اشکال دارویی جامد خوراکی مصرف می‌شود و غیرسمی شناخته می‌شود؛ چون پلیمری نامحلول با وزن مولکولی بالاست از دستگاه گوارش جذب نمی‌شود. پتاسیم موجود در آن فقط در صورت مصرف مقادیر زیاد برای بیماران دارای محدودیت پتاسیم باید در نظر گرفته شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid generating dust; eye protection, gloves and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد گردوغبار خودداری شود؛ استفاده از محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules and tablets).",
+   "fa": "در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) وجود دارد."
+  },
+  "related": {
+   "en": "Polacrilex resin; sodium polystyrene sulfonate; cholestyramine resin.",
+   "fa": "رزین پولاکریلکس؛ سدیم پلی‌استایرن سولفونات؛ رزین کلستیرامین."
+  },
+  "comments": {
+   "en": "Polacrilin potassium is relatively insensitive to the lubricant and to compression force, but because it is an ion exchanger, compatibility with ionic (especially basic) drugs should be checked. The related hydrogen-form resin (polacrilex) is used to bind and mask the taste of bitter cationic drugs and in nicotine gum.",
+   "fa": "پولاکریلین پتاسیم نسبت به لغزان‌کننده و نیروی پرس حساسیت نسبتاً کمی دارد، ولی چون مبادله‌کننده یون است باید سازگاری آن با داروهای یونی (به‌ویژه بازی) بررسی شود. رزین مشابه به شکل هیدروژنی (پولاکریلکس) برای اتصال و پوشاندن طعم داروهای کاتیونی تلخ و در آدامس نیکوتین به کار می‌رود."
+  },
+  "refs": [
+   "usp",
+   "iid"
+  ]
+ },
+ "Poloxamer": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Poloxamers"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Poloxamers"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Poloxamer"
+   }
+  ],
+  "tradeNames": "Kolliphor P 188; Kolliphor P 407; Lutrol F 68; Lutrol F 127; Pluronic F68; Pluronic F127; poloxamera; polyethylene–polypropylene glycol; Synperonic PE",
+  "chemicalName": "α-Hydro-ω-hydroxypoly(oxyethylene)a poly(oxypropylene)b poly(oxyethylene)a block copolymer",
+  "formula": "HO(C2H4O)a(C3H6O)b(C2H4O)aH",
+  "mw": "≈ 2 000–17 500 depending on type (poloxamer 188 ≈ 7 700–9 500; poloxamer 407 ≈ 9 800–14 600)",
+  "applications": {
+   "en": "Nonionic surfactants used as emulsifiers, solubilisers, wetting agents and stabilisers in oral, parenteral and topical products; poloxamer 188 is used in intravenous fat emulsions and as a stabiliser and shear protectant in cell culture and protein products. Concentrated aqueous solutions of poloxamer 407 (typically about 15–30% w/w) form thermoreversible gels that are liquid when cold and set at body temperature. Typical levels: wetting agent 0.01–5%; stabilising agent 1–5%; tablet excipient or coating 5–10%; gelling agent 15–50%.",
+   "fa": "سورفکتانت‌های غیریونی که به عنوان امولسیون‌کننده، حل‌کننده (سولوبیلایزر)، عامل مرطوب‌کننده و پایدارکننده در فرآورده‌های خوراکی، تزریقی و موضعی به کار می‌روند؛ پولوکسامر 188 در امولسیون‌های چربی وریدی و به عنوان پایدارکننده و محافظ در برابر تنش برشی در کشت سلول و فرآورده‌های پروتئینی مصرف می‌شود. محلول‌های آبی غلیظ پولوکسامر 407 (معمولاً حدود 15–30٪ وزنی) ژل‌های برگشت‌پذیر حرارتی تشکیل می‌دهند که در سرما مایع‌اند و در دمای بدن ژل می‌شوند. غلظت‌های متداول: عامل مرطوب‌کننده 0.01–5٪؛ پایدارکننده 1–5٪؛ ماده جانبی یا پوشش قرص 5–10٪؛ عامل ژل‌ساز 15–50٪."
+  },
+  "description": {
+   "en": "Synthetic block copolymers of ethylene oxide and propylene oxide, with a central hydrophobic polyoxypropylene block flanked by two hydrophilic polyoxyethylene blocks. The three-digit number identifies the type: the first two digits multiplied by 100 give the approximate molecular weight of the polyoxypropylene block, and the last digit multiplied by 10 gives the approximate percentage of polyoxyethylene. They are white or almost white and nearly odourless and tasteless.",
+   "fa": "کوپلیمرهای قطعه‌ای (بلاک) سنتزی اتیلن اکسید و پروپیلن اکسید که یک بلوک آب‌گریز پلی‌اکسی‌پروپیلن در وسط و دو بلوک آب‌دوست پلی‌اکسی‌اتیلن در دو طرف دارند. عدد سه‌رقمی نوع آن را مشخص می‌کند: حاصل‌ضرب دو رقم اول در 100 وزن مولکولی تقریبی بلوک پلی‌اکسی‌پروپیلن و حاصل‌ضرب رقم آخر در 10 درصد تقریبی پلی‌اکسی‌اتیلن را نشان می‌دهد. سفید یا تقریباً سفید و تقریباً بی‌بو و بی‌مزه‌اند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "poloxamer 124 is a liquid; poloxamers 188, 237, 338 and 407 are white, waxy, free-flowing prills or cast solids",
+     "fa": "پولوکسامر 124 مایع است؛ پولوکسامرهای 188، 237، 338 و 407 دانه‌های (پریل) یا جامدات قالبی سفید، مومی و روان‌اند"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "about 52 °C (poloxamer 188); about 56 °C (poloxamer 407)",
+     "fa": "حدود 52 °C (پولوکسامر 188)؛ حدود 56 °C (پولوکسامر 407)"
+    }
+   },
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "about 29 (poloxamer 188); about 22 (poloxamer 407)",
+     "fa": "حدود 29 (پولوکسامر 188)؛ حدود 22 (پولوکسامر 407)"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "5.0–7.5 (2.5% w/v aqueous solution)",
+     "fa": "5.0–7.5 (محلول آبی 2.5٪ وزنی/حجمی)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "solid grades freely soluble in water and ethanol; practically insoluble in ether, liquid paraffin and fixed oils",
+     "fa": "گریدهای جامد به‌راحتی در آب و اتانول محلول؛ عملاً نامحلول در اتر، پارافین مایع و روغن‌های ثابت"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable materials. Aqueous solutions are stable in the presence of acids, alkalis and metal ions, but they support mould growth and should be preserved if stored. Store in a well-closed container in a cool, dry place; some grades contain an antioxidant such as butylated hydroxytoluene.",
+   "fa": "مواد پایداری‌اند. محلول‌های آبی آن‌ها در حضور اسیدها، قلیاها و یون‌های فلزی پایدارند ولی رشد کپک را امکان‌پذیر می‌کنند و در صورت نگهداری باید نگهدارنده داشته باشند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شوند؛ برخی گریدها حاوی آنتی‌اکسیدانی مانند بوتیل‌هیدروکسی‌تولوئن هستند."
+  },
+  "incompatibilities": {
+   "en": "Depending on the relative concentrations, poloxamer 188 is incompatible with phenols and parabens. Poloxamers can reduce the activity of some preservatives by micellar solubilisation.",
+   "fa": "پولوکسامر 188 بسته به غلظت‌های نسبی با فنل‌ها و پارابن‌ها ناسازگار است. پولوکسامرها ممکن است با حل کردن میسلی، فعالیت برخی نگهدارنده‌ها را کاهش دهند."
+  },
+  "manufacture": {
+   "en": "Made by polymerising propylene oxide onto propylene glycol to form the central polyoxypropylene block, then adding ethylene oxide to both ends of the chain, using an alkaline catalyst that is subsequently neutralised and removed.",
+   "fa": "با پلیمریزاسیون پروپیلن اکسید روی پروپیلن گلیکول و تشکیل بلوک مرکزی پلی‌اکسی‌پروپیلن، و سپس افزودن اتیلن اکسید به دو انتهای زنجیره تهیه می‌شود؛ کاتالیزور قلیایی به کار رفته بعداً خنثی و حذف می‌شود."
+  },
+  "safety": {
+   "en": "Poloxamers are generally regarded as non-toxic and non-irritant, and they are not metabolised in the body. They are used in oral, topical and parenteral products, including intravenous use of poloxamer 188.",
+   "fa": "پولوکسامرها عموماً غیرسمی و غیرمحرک شناخته می‌شوند و در بدن متابولیزه نمی‌شوند. در فرآورده‌های خوراکی، موضعی و تزریقی، از جمله مصرف وریدی پولوکسامر 188، به کار می‌روند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended, and a dust mask when handling powdered grades.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش، و هنگام کار با گریدهای پودری ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (IV injections; inhalation; oral powders, solutions, suspensions and syrups; ophthalmic and topical preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (تزریق وریدی؛ استنشاقی؛ پودر، محلول، سوسپانسیون و شربت خوراکی؛ فرآورده‌های چشمی و موضعی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Polyethylene glycol; polyoxyethylene alkyl ethers; polysorbates.",
+   "fa": "پلی‌اتیلن گلیکول؛ پلی‌اکسی‌اتیلن آلکیل اترها؛ پلی‌سوربات‌ها."
+  },
+  "comments": {
+   "en": "The pharmacopoeias cover poloxamers 124, 188, 237, 338 and 407. Thermoreversible poloxamer 407 gels are best prepared by the 'cold method', dissolving the polymer in chilled water; the gelation temperature falls as the polymer concentration increases and is shifted by salts and other additives.",
+   "fa": "فارماکوپه‌ها پولوکسامرهای 124، 188، 237، 338 و 407 را پوشش می‌دهند. ژل‌های برگشت‌پذیر حرارتی پولوکسامر 407 بهتر است به «روش سرد» و با حل کردن پلیمر در آب سرد تهیه شوند؛ دمای ژل شدن با افزایش غلظت پلیمر کاهش می‌یابد و نمک‌ها و دیگر افزودنی‌ها آن را جابه‌جا می‌کنند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "bp",
+   "iid"
+  ]
+ },
+ "Polycarbophil": {
+  "names": [
+   {
+    "ph": "USP-NF",
+    "name": "Polycarbophil"
+   }
+  ],
+  "tradeNames": "Noveon AA-1; acrylic acid polymer cross-linked with divinyl glycol; polyacrylic acid cross-linked with divinyl glycol",
+  "chemicalName": "Poly(acrylic acid) cross-linked with divinyl glycol (3,4-dihydroxy-1,5-hexadiene)",
+  "formula": "(C3H4O2)n",
+  "mw": "",
+  "applications": {
+   "en": "Used as a bioadhesive (mucoadhesive) polymer to prolong residence time on mucosal surfaces, for example in ophthalmic solutions, vaginal moisturising gels and buccal or nasal formulations, and as a thickening and controlled-release agent. It is normally used at low concentrations, generally a few percent or less, adjusted to the viscosity and adhesion required. Its calcium salt (calcium polycarbophil) is used orally as a bulk-forming laxative and antidiarrhoeal.",
+   "fa": "به عنوان پلیمر چسبنده زیستی (موکوادهزیو) برای افزایش زمان ماندگاری روی سطوح مخاطی به کار می‌رود، مثلاً در محلول‌های چشمی، ژل‌های مرطوب‌کننده واژینال و فرمولاسیون‌های باکال یا بینی، و نیز به عنوان غلیظ‌کننده و عامل آزادسازی کنترل‌شده. معمولاً در غلظت‌های پایین، به‌طور کلی چند درصد یا کمتر، و متناسب با ویسکوزیته و چسبندگی مورد نیاز مصرف می‌شود. نمک کلسیم آن (کلسیم پلی‌کربوفیل) به صورت خوراکی به عنوان ملین حجیم‌کننده و ضداسهال کاربرد دارد."
+  },
+  "description": {
+   "en": "A high-molecular-weight polymer of acrylic acid lightly cross-linked with divinyl glycol, supplied as a white to off-white, fluffy powder. In water it does not dissolve but forms a highly swollen, viscous dispersion.",
+   "fa": "پلیمری با وزن مولکولی بالا از آکریلیک اسید که با دی‌وینیل گلیکول به‌طور خفیف کراس‌لینک شده و به صورت پودر سفید تا سفید مایل به کرم و پفکی عرضه می‌شود. در آب حل نمی‌شود بلکه پراکنده‌ای بسیار متورم و ویسکوز ایجاد می‌کند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "white to off-white, fluffy, hygroscopic powder with a slight characteristic odour",
+     "fa": "پودر سفید تا سفید مایل به کرم، پفکی و رطوبت‌گیر با بوی خفیف و مشخص"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "insoluble in water and organic solvents, but swells strongly in water; swelling increases as the carboxyl groups are neutralised",
+     "fa": "نامحلول در آب و حلال‌های آلی ولی در آب به‌شدت متورم می‌شود؛ تورم با خنثی شدن گروه‌های کربوکسیل افزایش می‌یابد"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "acidic in unneutralised aqueous dispersion (about pH 3)",
+     "fa": "در پراکنده آبی خنثی‌نشده اسیدی است (حدود pH 3)"
+    }
+   },
+   {
+    "k": {
+     "en": "Bioadhesion",
+     "fa": "چسبندگی زیستی"
+    },
+    "v": {
+     "en": "strongly mucoadhesive through hydrogen bonding of the carboxyl groups with mucin",
+     "fa": "چسبندگی مخاطی قوی از طریق پیوند هیدروژنی گروه‌های کربوکسیل با موسین"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable but hygroscopic. Dispersions are susceptible to microbial growth and normally need a preservative. Store in an airtight container in a cool, dry place.",
+   "fa": "پایدار ولی رطوبت‌گیر است. پراکنده‌های آن مستعد رشد میکروبی‌اند و معمولاً به نگهدارنده نیاز دارند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "As a polyacid it is incompatible with strong bases and oxidising agents. Viscosity and swelling are reduced by electrolytes and polyvalent cations, and it may interact with cationic drugs and preservatives such as benzalkonium chloride.",
+   "fa": "به عنوان یک پلی‌اسید با بازهای قوی و اکسیدکننده‌ها ناسازگار است. الکترولیت‌ها و کاتیون‌های چندظرفیتی ویسکوزیته و تورم آن را کاهش می‌دهند و ممکن است با داروها و نگهدارنده‌های کاتیونی مانند بنزالکونیوم کلرید برهم‌کنش داشته باشد."
+  },
+  "manufacture": {
+   "en": "Prepared by polymerising acrylic acid in the presence of a small amount of divinyl glycol as the cross-linking agent, followed by drying of the polymer.",
+   "fa": "از پلیمریزاسیون آکریلیک اسید در حضور مقدار کمی دی‌وینیل گلیکول به عنوان عامل کراس‌لینک و سپس خشک کردن پلیمر تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Polycarbophil is not absorbed from the gastrointestinal tract and is regarded as non-toxic; large oral doses of the calcium salt are taken therapeutically as a laxative. It is generally well tolerated on mucous membranes, though mild local irritation can occur.",
+   "fa": "پلی‌کربوفیل از دستگاه گوارش جذب نمی‌شود و غیرسمی شناخته می‌شود؛ دوزهای خوراکی بالای نمک کلسیم آن به صورت درمانی به عنوان ملین مصرف می‌شود. روی مخاط عموماً به‌خوبی تحمل می‌شود، هرچند تحریک موضعی خفیف ممکن است رخ دهد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. The fine powder is easily airborne; avoid inhalation and contact with the eyes, and use eye protection, gloves and a dust mask.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. پودر ریز آن به‌راحتی در هوا پخش می‌شود؛ از استنشاق و تماس با چشم خودداری و از محافظ چشم، دستکش و ماسک گردوغبار استفاده شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (ophthalmic and other non-parenteral preparations).",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های چشمی و سایر فرآورده‌های غیرتزریقی) وجود دارد."
+  },
+  "related": {
+   "en": "Calcium polycarbophil; carbomer.",
+   "fa": "کلسیم پلی‌کربوفیل؛ کربومر."
+  },
+  "comments": {
+   "en": "Polycarbophil is closely related to the carbomers but differs in its cross-linking agent. Its mucoadhesion is greatest when the polymer is only partly ionised (roughly pH 4–6); full neutralisation increases swelling but weakens adhesion. Like carbomer, the powder should be dispersed slowly with good agitation to avoid lumps.",
+   "fa": "پلی‌کربوفیل با کربومرها خویشاوندی نزدیک دارد ولی عامل کراس‌لینک آن متفاوت است. چسبندگی مخاطی آن هنگامی بیشینه است که پلیمر فقط تا حدی یونیزه باشد (تقریباً pH 4–6)؛ خنثی‌سازی کامل تورم را افزایش ولی چسبندگی را کاهش می‌دهد. مانند کربومر، پودر آن باید آهسته و با هم زدن کافی پراکنده شود تا کلوخه تشکیل نشود."
+  },
+  "refs": [
+   "usp",
+   "iid"
+  ]
+ },
+ "Polydextrose": {
+  "names": [
+   {
+    "ph": "USP-NF",
+    "name": "Polydextrose"
+   }
+  ],
+  "tradeNames": "Litesse; polydextrosum; Sta-Lite; E1200",
+  "chemicalName": "Randomly bonded condensation polymer of D-glucose with minor amounts of sorbitol and citric acid",
+  "formula": "(C6H10O5)n",
+  "mw": "",
+  "applications": {
+   "en": "In foods polydextrose is used as a low-calorie bulking agent, humectant and source of soluble dietary fibre, replacing sugar and fat. In pharmaceuticals it is used as a bulking agent and binder in tablets, in chewable and sugar-free formulations, and as a component of film coatings. Use levels depend widely on the function, from a few percent as a binder to a major part of the formulation as a bulking agent.",
+   "fa": "پلی‌دکستروز در غذاها به عنوان حجم‌دهنده کم‌کالری، نگه‌دارنده رطوبت و منبع فیبر غذایی محلول، به جای قند و چربی مصرف می‌شود. در داروسازی به عنوان حجم‌دهنده و چسباننده در قرص‌ها، در فرمولاسیون‌های جویدنی و بدون قند، و به عنوان جزئی از پوشش‌های فیلمی کاربرد دارد. مقدار مصرف بسته به کاربرد بسیار متفاوت است؛ از چند درصد به عنوان چسباننده تا بخش عمده فرمولاسیون به عنوان حجم‌دهنده."
+  },
+  "description": {
+   "en": "A white to light cream, amorphous, hygroscopic powder that is almost odourless and has a neutral to slightly tart taste; it is not sweet. It is a polydisperse polymer with a wide molecular-weight distribution and only a small fraction of free glucose and sorbitol.",
+   "fa": "پودر آمورف، رطوبت‌گیر و سفید تا کرم روشن، تقریباً بی‌بو با طعم خنثی تا کمی ترش؛ شیرین نیست. پلیمری چندپراکنده با توزیع گسترده وزن مولکولی است و فقط بخش کوچکی گلوکز و سوربیتول آزاد دارد."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Composition",
+     "fa": "ترکیب"
+    },
+    "v": {
+     "en": "approximately 90% glucose, 10% sorbitol and 1% citric acid (by weight, before polymerisation); 1→6 glycosidic bonds predominate",
+     "fa": "تقریباً 90٪ گلوکز، 10٪ سوربیتول و 1٪ سیتریک اسید (وزنی، پیش از پلیمریزاسیون)؛ پیوندهای گلیکوزیدی 1→6 غالب‌اند"
+    }
+   },
+   {
+    "k": {
+     "en": "Energy value",
+     "fa": "ارزش انرژی"
+    },
+    "v": {
+     "en": "about 1 kcal/g (≈ 4 kJ/g)",
+     "fa": "حدود 1 kcal/g (حدود 4 kJ/g)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "very soluble in water (solutions of about 80% w/w can be made); limited solubility in ethanol",
+     "fa": "بسیار محلول در آب (محلول‌هایی تا حدود 80٪ وزنی قابل تهیه است)؛ حلالیت محدود در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "2.5–7.0 (10% w/v solution), depending on whether the grade has been neutralised",
+     "fa": "2.5–7.0 (محلول 10٪ وزنی/حجمی)، بسته به اینکه گرید خنثی شده باشد یا نه"
+    }
+   },
+   {
+    "k": {
+     "en": "Hygroscopicity",
+     "fa": "رطوبت‌گیری"
+    },
+    "v": {
+     "en": "hygroscopic amorphous powder",
+     "fa": "پودر آمورف رطوبت‌گیر"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable under normal conditions but hygroscopic; it absorbs moisture and may cake when exposed to humid air. Store in a well-closed container in a cool, dry place.",
+   "fa": "در شرایط معمول پایدار ولی رطوبت‌گیر است؛ در هوای مرطوب رطوبت جذب می‌کند و ممکن است کلوخه شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. The acidic unneutralised grades may affect acid-sensitive drugs, and residual reducing end groups can give some browning with amines on heating.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. گریدهای اسیدی خنثی‌نشده ممکن است بر داروهای حساس به اسید اثر بگذارند و گروه‌های انتهایی احیاکننده باقی‌مانده هنگام حرارت دیدن با آمین‌ها مقداری قهوه‌ای شدن ایجاد کنند."
+  },
+  "manufacture": {
+   "en": "Made by heating a melt of glucose with about 10% sorbitol and 1% citric acid under vacuum, which causes random polycondensation; the product may then be purified and neutralised (for example with potassium hydroxide) and dried.",
+   "fa": "از حرارت دادن مذاب گلوکز همراه با حدود 10٪ سوربیتول و 1٪ سیتریک اسید در خلأ تهیه می‌شود که باعث پلی‌کندانسیون تصادفی می‌شود؛ سپس محصول ممکن است خالص‌سازی، خنثی (مثلاً با پتاسیم هیدروکسید) و خشک شود."
+  },
+  "safety": {
+   "en": "Polydextrose is only partly fermented in the colon and is regarded as non-toxic. Like other poorly digested carbohydrates, large single doses can cause a laxative effect and flatulence. JECFA has not specified an ADI.",
+   "fa": "پلی‌دکستروز فقط تا حدی در روده بزرگ تخمیر می‌شود و غیرسمی شناخته می‌شود. مانند دیگر کربوهیدرات‌های کم‌هضم، دوزهای بالای یک‌باره ممکن است اثر ملین و نفخ ایجاد کنند. JECFA برای آن ADI مشخصی تعیین نکرده است (ADI not specified)."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid dust generation; eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد گردوغبار خودداری شود؛ محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Approved in the USA as a direct food additive and accepted as a food additive in Europe (E1200). Used in oral pharmaceutical products.",
+   "fa": "در آمریکا به عنوان افزودنی مستقیم غذایی تأیید شده و در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E1200). در فرآورده‌های دارویی خوراکی مصرف می‌شود."
+  },
+  "related": {
+   "en": "Dextrin; inulin; maltodextrin.",
+   "fa": "دکسترین؛ اینولین؛ مالتودکسترین."
+  },
+  "comments": {
+   "en": "Because it is not sweet, polydextrose is usually combined with an intense sweetener in sugar-free products. Its hygroscopicity should be considered when it is used in solid dosage forms, and low-moisture packaging may be needed.",
+   "fa": "چون پلی‌دکستروز شیرین نیست، در محصولات بدون قند معمولاً همراه یک شیرین‌کننده قوی مصرف می‌شود. هنگام استفاده در اشکال دارویی جامد باید رطوبت‌گیری آن را در نظر گرفت و ممکن است به بسته‌بندی با رطوبت پایین نیاز باشد."
+  },
+  "refs": [
+   "usp",
+   "eu-additives",
+   "jecfa"
+  ]
+ },
+ "Polyethylene oxide": {
+  "names": [
+   {
+    "ph": "USP-NF",
+    "name": "Polyethylene Oxide"
+   }
+  ],
+  "tradeNames": "Polyox WSR; Polyox WSR 301; Polyox WSR 303; Polyox WSR Coagulant; Polyox WSR N-10; Polyox WSR N-80; Sentry Polyox; polyoxirane; PEO",
+  "chemicalName": "Poly(oxy-1,2-ethanediyl), α-hydro-ω-hydroxy-",
+  "formula": "(CH2CH2O)n, n ≈ 2 000–200 000",
+  "mw": "≈ 100 000–7 000 000 (approximate average, depending on grade)",
+  "applications": {
+   "en": "Used as a hydrophilic matrix former in extended-release tablets, as the swelling 'push' layer in osmotic pump tablets, as a tablet binder, mucoadhesive and thickening agent, and in hot-melt extrusion. High-molecular-weight grades are used in abuse-deterrent tablets because they make the tablet hard to crush and form viscous gels that hinder extraction and injection. Concentrations range from about 5% as a binder to well over 50% in extended-release matrices.",
+   "fa": "به عنوان سازنده ماتریکس آب‌دوست در قرص‌های آهسته‌رهش، به عنوان لایه «رانش» متورم‌شونده در قرص‌های پمپ اسمزی، چسباننده قرص، عامل چسبنده مخاطی و غلیظ‌کننده، و در اکستروژن مذاب داغ (HME) به کار می‌رود. گریدهای با وزن مولکولی بالا در قرص‌های بازدارنده سوءمصرف (abuse-deterrent) مصرف می‌شوند، زیرا خرد کردن قرص را دشوار و با تشکیل ژل ویسکوز، استخراج و تزریق را مختل می‌کنند. غلظت مصرفی از حدود 5٪ به عنوان چسباننده تا بیش از 50٪ در ماتریکس‌های آهسته‌رهش متغیر است."
+  },
+  "description": {
+   "en": "A non-ionic homopolymer of ethylene oxide of high molecular weight. It is chemically similar to polyethylene glycol but of much higher chain length, and is supplied as a white to off-white, free-flowing powder; commercial grades usually contain a small amount of antioxidant (BHT) and may contain fumed silica as a flow aid.",
+   "fa": "هموپلیمر غیریونی اتیلن اکسید با وزن مولکولی بالا. از نظر شیمیایی مشابه پلی‌اتیلن گلیکول است ولی طول زنجیره بسیار بیشتری دارد و به صورت پودر سفید تا سفید مایل به کرم و روان عرضه می‌شود؛ گریدهای تجاری معمولاً مقدار کمی آنتی‌اکسیدان (BHT) و گاهی سیلیس کلوئیدی (fumed silica) به عنوان بهبوددهنده جریان دارند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "white to off-white, free-flowing powder with a slight ammoniacal odour",
+     "fa": "پودر سفید تا سفید مایل به کرم و روان با بوی خفیف آمونیاکی"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "about 65–70 °C (crystalline polymer)",
+     "fa": "حدود 65–70 °C (پلیمر کریستالی)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in water, forming viscous solutions; soluble in some organic solvents such as acetonitrile and chloroform; insoluble in aliphatic hydrocarbons",
+     "fa": "محلول در آب با تشکیل محلول‌های ویسکوز؛ محلول در برخی حلال‌های آلی مانند استونیتریل و کلروفرم؛ نامحلول در هیدروکربن‌های آلیفاتیک"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "strongly grade dependent; solution viscosity rises steeply with molecular weight",
+     "fa": "به‌شدت وابسته به گرید؛ ویسکوزیته محلول با افزایش وزن مولکولی به‌شدت بالا می‌رود"
+    }
+   }
+  ],
+  "stability": {
+   "en": "The powder is stable when stored in a cool, dry place in a tightly closed container. The polymer is susceptible to oxidative chain scission, which lowers viscosity; this is accelerated by heat, UV light, transition-metal ions and peroxides, and solutions also lose viscosity under high shear.",
+   "fa": "پودر آن در صورت نگهداری در ظرف کاملاً بسته و در جای خنک و خشک پایدار است. پلیمر مستعد شکست اکسیداتیو زنجیره است که ویسکوزیته را کاهش می‌دهد؛ گرما، نور UV، یون‌های فلزات واسطه و پراکسیدها این فرآیند را تسریع می‌کنند و محلول‌ها در تنش برشی بالا نیز ویسکوزیته خود را از دست می‌دهند."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. Residual peroxides and oxidative degradation products may affect oxidation-sensitive drugs.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. پراکسیدهای باقی‌مانده و محصولات تخریب اکسیداتیو ممکن است بر داروهای حساس به اکسیداسیون اثر بگذارند."
+  },
+  "manufacture": {
+   "en": "Produced by catalytic (heterogeneous) polymerisation of ethylene oxide to give very long polyether chains.",
+   "fa": "از پلیمریزاسیون کاتالیزوری (ناهمگن) اتیلن اکسید و تشکیل زنجیره‌های بسیار بلند پلی‌اتر تولید می‌شود."
+  },
+  "safety": {
+   "en": "Regarded as non-toxic and non-irritant at the levels used in oral products; because of its high molecular weight it is very poorly absorbed from the gastrointestinal tract.",
+   "fa": "در مقادیر مصرفی در فرآورده‌های خوراکی غیرسمی و غیرمحرک شناخته می‌شود؛ به دلیل وزن مولکولی بالا جذب آن از دستگاه گوارش بسیار ناچیز است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid dust generation and inhalation; eye protection, gloves and a dust mask are recommended. Spilled powder becomes very slippery when wet.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد و استنشاق گردوغبار خودداری شود؛ استفاده از محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود. پودر ریخته‌شده در صورت خیس شدن بسیار لغزنده می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral tablets, including extended-release tablets, and other non-parenteral preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (قرص خوراکی از جمله قرص آهسته‌رهش، و سایر فرآورده‌های غیرتزریقی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Polyethylene glycol; poloxamer.",
+   "fa": "پلی‌اتیلن گلیکول؛ پولوکسامر."
+  },
+  "comments": {
+   "en": "In matrix tablets the rate of drug release is controlled mainly by the molecular weight and level of the polymer. To prepare solutions, disperse the powder in water with vigorous stirring (or pre-wet it with a non-solvent such as ethanol) to avoid lumps, then stir slowly to avoid shear degradation.",
+   "fa": "در قرص‌های ماتریکسی سرعت آزادسازی دارو عمدتاً با وزن مولکولی و مقدار پلیمر کنترل می‌شود. برای تهیه محلول، پودر را با هم زدن شدید در آب پراکنده کنید (یا ابتدا با یک غیرحلال مانند اتانول خیس کنید) تا کلوخه تشکیل نشود، سپس برای جلوگیری از تخریب برشی آهسته هم بزنید."
+  },
+  "refs": [
+   "usp",
+   "iid"
+  ]
+ },
+ "Polymethacrylates": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Methacrylic Acid–Ethyl Acrylate Copolymer (1:1)"
+   },
+   {
+    "ph": "JP",
+    "name": "Methacrylic Acid Copolymer L"
+   },
+   {
+    "ph": "JP",
+    "name": "Methacrylic Acid Copolymer S"
+   },
+   {
+    "ph": "JP",
+    "name": "Methacrylic Acid Copolymer LD"
+   },
+   {
+    "ph": "JP",
+    "name": "Aminoalkyl Methacrylate Copolymer E"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Methacrylic Acid–Ethyl Acrylate Copolymer (1:1)"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Methacrylic Acid–Methyl Methacrylate Copolymer (1:1)"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Methacrylic Acid–Methyl Methacrylate Copolymer (1:2)"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Ammonio Methacrylate Copolymer (Type A)"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Ammonio Methacrylate Copolymer (Type B)"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Basic Butylated Methacrylate Copolymer"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Methacrylic Acid and Ethyl Acrylate Copolymer"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Methacrylic Acid and Methyl Methacrylate Copolymer"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Ammonio Methacrylate Copolymer"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Amino Methacrylate Copolymer"
+   }
+  ],
+  "tradeNames": "Acryl-EZE; Eastacryl 30D; Eudragit E 100; Eudragit E PO; Eudragit L 100; Eudragit L 100-55; Eudragit L 30 D-55; Eudragit S 100; Eudragit FS 30 D; Eudragit RL; Eudragit RS; Eudragit NE 30 D; Kollicoat MAE 30 DP; methacrylic acid copolymers; E1205 (basic methacrylate copolymer); E1206 (neutral methacrylate copolymer); E1207 (anionic methacrylate copolymer)",
+  "chemicalName": "Synthetic cationic, anionic or neutral copolymers of dimethylaminoethyl methacrylate, methacrylic acid and methacrylic or acrylic acid esters, in varying ratios",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used mainly as film coatings for oral tablets, capsules, pellets and granules: the aminoalkyl (basic) copolymer for taste masking, moisture protection and immediate-release coats; the methacrylic acid copolymers for enteric and colon-targeted coatings; and the insoluble ammonio methacrylate and neutral ester copolymers for pH-independent sustained-release coats. They are also used as matrix formers and binders and in hot-melt extrusion and solid dispersions. Coating levels typically correspond to a weight gain of a few percent up to about 10–20%, with plasticisers such as triethyl citrate commonly added at about 10–25% of the dry polymer.",
+   "fa": "عمدتاً به عنوان پوشش فیلمی قرص‌ها، کپسول‌ها، پلت‌ها و گرانول‌های خوراکی به کار می‌روند: کوپلیمر آمینوآلکیل (بازی) برای پوشاندن طعم، محافظت در برابر رطوبت و پوشش‌های آزادسازی فوری؛ کوپلیمرهای متاکریلیک اسید برای پوشش‌های روده‌ای (انتریک) و هدف‌گیری کولون؛ و کوپلیمرهای نامحلول آمونیو متاکریلات و استر خنثی برای پوشش‌های آهسته‌رهش مستقل از pH. همچنین به عنوان سازنده ماتریکس و چسباننده و در اکستروژن مذاب داغ و دیسپرسیون‌های جامد مصرف می‌شوند. مقدار پوشش معمولاً معادل افزایش وزن چند درصد تا حدود 10–20٪ است و نرم‌کننده‌هایی مانند تری‌اتیل سیترات معمولاً حدود 10–25٪ وزن پلیمر خشک افزوده می‌شوند."
+  },
+  "description": {
+   "en": "A family of synthetic polymers based on methacrylic acid, its esters and acrylic esters. Their solubility behaviour is set by the functional groups: free carboxyl groups make them dissolve in intestinal fluid, dimethylaminoethyl groups make them dissolve in gastric acid, and quaternary ammonium or purely ester groups give insoluble, permeable films. The solid grades are white powders or granules with a faint characteristic odour; the dispersions are milky-white liquids of low viscosity.",
+   "fa": "خانواده‌ای از پلیمرهای سنتزی بر پایه متاکریلیک اسید، استرهای آن و استرهای آکریلیک. رفتار انحلال آن‌ها را گروه‌های عاملی تعیین می‌کنند: گروه‌های کربوکسیل آزاد باعث انحلال در مایع روده، گروه‌های دی‌متیل‌آمینواتیل باعث انحلال در اسید معده، و گروه‌های آمونیوم چهارتایی یا استری خالص باعث تشکیل فیلم‌های نامحلول و نفوذپذیر می‌شوند. گریدهای جامد پودر یا گرانول سفید با بوی ضعیف و مشخص‌اند و دیسپرسیون‌ها مایعاتی شیری‌رنگ با ویسکوزیته کم هستند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Dissolution pH (anionic types)",
+     "fa": "pH انحلال (انواع آنیونی)"
+    },
+    "v": {
+     "en": "methacrylic acid–ethyl acrylate (1:1) above about pH 5.5; methacrylic acid–methyl methacrylate (1:1) above about pH 6.0; (1:2) above about pH 7.0",
+     "fa": "متاکریلیک اسید–اتیل آکریلات (1:1) بالاتر از حدود pH 5.5؛ متاکریلیک اسید–متیل متاکریلات (1:1) بالاتر از حدود pH 6.0؛ (1:2) بالاتر از حدود pH 7.0"
+    }
+   },
+   {
+    "k": {
+     "en": "Dissolution pH (cationic type)",
+     "fa": "pH انحلال (نوع کاتیونی)"
+    },
+    "v": {
+     "en": "basic butylated (amino) methacrylate copolymer dissolves in gastric fluid up to about pH 5 and swells above this",
+     "fa": "کوپلیمر متاکریلات بازی بوتیله (آمینو) تا حدود pH 5 در شیره معده حل می‌شود و بالاتر از آن متورم می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Permeability (insoluble types)",
+     "fa": "نفوذپذیری (انواع نامحلول)"
+    },
+    "v": {
+     "en": "ammonio methacrylate copolymers and neutral ester dispersions are insoluble and swell independently of pH; type A (RL) is more permeable than type B (RS)",
+     "fa": "کوپلیمرهای آمونیو متاکریلات و دیسپرسیون‌های استر خنثی نامحلول‌اند و مستقل از pH متورم می‌شوند؛ نوع A (RL) نفوذپذیرتر از نوع B (RS) است"
+    }
+   },
+   {
+    "k": {
+     "en": "Supply forms",
+     "fa": "شکل‌های عرضه"
+    },
+    "v": {
+     "en": "powders, granules, organic solutions (12.5%) and aqueous dispersions (about 30% solids)",
+     "fa": "پودر، گرانول، محلول‌های آلی (12.5٪) و دیسپرسیون‌های آبی (حدود 30٪ ماده جامد)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility (solid grades)",
+     "fa": "حلالیت (گریدهای جامد)"
+    },
+    "v": {
+     "en": "soluble in acetone and in alcohols such as isopropanol; the ionisable types dissolve in water only in the appropriate pH range",
+     "fa": "محلول در استون و الکل‌هایی مانند ایزوپروپانول؛ انواع یونیزه‌شونده فقط در محدوده pH مربوط در آب حل می‌شوند"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Solid grades are stable when stored below about 30 °C in a well-closed container. Aqueous dispersions must be protected from freezing and from high temperatures (typically stored at about 5–25 °C), since freezing or overheating causes irreversible coagulation; they also need protection from microbial contamination.",
+   "fa": "گریدهای جامد در صورت نگهداری در دمای کمتر از حدود 30 °C و در ظرف کاملاً بسته پایدارند. دیسپرسیون‌های آبی باید از یخ‌زدگی و دمای بالا محافظت شوند (معمولاً در حدود 5–25 °C نگهداری می‌شوند)، زیرا یخ زدن یا گرمای بیش از حد موجب انعقاد برگشت‌ناپذیر می‌شود؛ همچنین باید از آلودگی میکروبی محافظت شوند."
+  },
+  "incompatibilities": {
+   "en": "Aqueous dispersions can be coagulated by electrolytes, pH changes, some organic solvents and extremes of temperature. Some types interact with ionic drugs (for example anionic drugs with the cationic types), which can change film permeability or drug release, and excessive amounts of certain pigments or talc can destabilise dispersions.",
+   "fa": "دیسپرسیون‌های آبی ممکن است با الکترولیت‌ها، تغییر pH، برخی حلال‌های آلی و دماهای شدید منعقد شوند. برخی انواع با داروهای یونی برهم‌کنش دارند (مثلاً داروهای آنیونی با انواع کاتیونی) که می‌تواند نفوذپذیری فیلم یا آزادسازی دارو را تغییر دهد؛ مقادیر زیاد برخی رنگدانه‌ها یا تالک نیز ممکن است دیسپرسیون را ناپایدار کند."
+  },
+  "manufacture": {
+   "en": "Made by free-radical emulsion or solution polymerisation of the chosen monomers. Emulsion polymerisation gives aqueous latex dispersions directly; solid grades are obtained from these by spray drying or by solution polymerisation followed by drying and granulation, and some powders are redispersible after partial neutralisation.",
+   "fa": "از پلیمریزاسیون رادیکال آزاد امولسیونی یا محلولی مونومرهای مورد نظر تهیه می‌شوند. پلیمریزاسیون امولسیونی مستقیماً دیسپرسیون‌های آبی لاتکس تولید می‌کند؛ گریدهای جامد با خشک کردن پاششی این دیسپرسیون‌ها یا با پلیمریزاسیون محلولی و سپس خشک کردن و گرانوله کردن به دست می‌آیند و برخی پودرها پس از خنثی‌سازی جزئی دوباره قابل پراکنده شدن‌اند."
+  },
+  "safety": {
+   "en": "Polymethacrylate copolymers are widely used in oral products and are regarded as non-toxic and non-irritant; the polymers are not absorbed from the gastrointestinal tract. Residual monomers are limited by the pharmacopoeias because the monomers themselves are irritant.",
+   "fa": "کوپلیمرهای پلی‌متاکریلات به‌طور گسترده در فرآورده‌های خوراکی مصرف می‌شوند و غیرسمی و غیرمحرک شناخته می‌شوند؛ این پلیمرها از دستگاه گوارش جذب نمی‌شوند. مونومرهای باقی‌مانده در فارماکوپه‌ها محدود شده‌اند، زیرا خود مونومرها محرک‌اند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid inhalation of dust and contact with the eyes; organic solutions are flammable and need explosion-proof equipment and good ventilation.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از استنشاق گردوغبار و تماس با چشم خودداری شود؛ محلول‌های آلی قابل اشتعال‌اند و به تجهیزات ضدانفجار و تهویه مناسب نیاز دارند."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules and tablets, including delayed- and extended-release forms, and transdermal systems) and in non-parenteral medicines licensed in Europe. In the EU, basic, neutral and anionic methacrylate copolymers are authorised for coating food supplements (E1205, E1206 and E1207).",
+   "fa": "در FDA Inactive Ingredient Database (کپسول و قرص خوراکی از جمله اشکال تأخیری‌رهش و آهسته‌رهش، و سامانه‌های ترانس‌درمال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد. در اتحادیه اروپا کوپلیمرهای متاکریلات بازی، خنثی و آنیونی برای پوشش مکمل‌های غذایی مجازند (E1205، E1206 و E1207)."
+  },
+  "related": {
+   "en": "Cellulose acetate phthalate; hypromellose phthalate; polyvinyl acetate phthalate; shellac.",
+   "fa": "سلولز استات فتالات؛ هیپروملوز فتالات؛ پلی‌وینیل استات فتالات؛ شلاک."
+  },
+  "comments": {
+   "en": "The pharmacopoeial names, the old 'Type A/B/C' labels and the Eudragit codes do not map one to one, so the exact grade should always be specified. Aqueous dispersions need a plasticiser and coating temperatures above their minimum film-forming temperature, and coated products often require curing to give stable release; mixing the RL and RS types lets the permeability of sustained-release films be adjusted.",
+   "fa": "نام‌های فارماکوپه‌ای، برچسب‌های قدیمی «نوع A/B/C» و کدهای Eudragit به‌صورت یک‌به‌یک با هم منطبق نیستند، بنابراین همیشه باید گرید دقیق مشخص شود. دیسپرسیون‌های آبی به نرم‌کننده و دمای پوشش‌دهی بالاتر از حداقل دمای تشکیل فیلم (MFFT) نیاز دارند و محصولات پوشش‌دار اغلب برای آزادسازی پایدار نیازمند مرحله پخت (curing) هستند؛ با مخلوط کردن انواع RL و RS می‌توان نفوذپذیری فیلم‌های آهسته‌رهش را تنظیم کرد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "bp",
+   "jp",
+   "iid",
+   "eu-additives"
+  ]
+ },
+ "Polyoxyethylene alkyl ethers": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Macrogol Cetostearyl Ether"
+   },
+   {
+    "ph": "BP",
+    "name": "Macrogol Lauryl Ether"
+   },
+   {
+    "ph": "BP",
+    "name": "Macrogol Oleyl Ether"
+   },
+   {
+    "ph": "JP",
+    "name": "Lauromacrogol"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Macrogol Cetostearyl Ether"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Macrogol Lauryl Ether"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Macrogol Oleyl Ether"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Macrogol Stearyl Ether"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Polyoxyl 10 Oleyl Ether"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Polyoxyl 20 Cetostearyl Ether"
+   }
+  ],
+  "tradeNames": "Brij; cetomacrogol 1000; ceteareth; Cremophor A; Eumulgin; laureth; lauromacrogol; macrogol ethers; oleth; polidocanol; polyoxyl ethers; steareth; Volpo",
+  "chemicalName": "Polyoxyethylene glycol ethers of fatty alcohols (for example lauryl, cetyl, stearyl, cetostearyl and oleyl alcohols)",
+  "formula": "CH3(CH2)x(OCH2CH2)yOH (x typically 11–17; y typically 2–100)",
+  "mw": "",
+  "applications": {
+   "en": "Nonionic surfactants used as emulsifying agents in oil-in-water and water-in-oil creams and lotions, as solubilisers for essential oils, perfumes and poorly soluble drugs, and as wetting agents; cetomacrogol 1000 is the emulsifier in cetomacrogol emulsifying wax and the corresponding creams. Typical levels: emulsifying agent about 0.5–15%, solubilising agent about 1–10%, wetting agent about 0.1–3%. Polidocanol (lauromacrogol 400) is also used in its own right as a sclerosant and topical antipruritic.",
+   "fa": "سورفکتانت‌های غیریونی که به عنوان امولسیون‌کننده در کرم‌ها و لوسیون‌های روغن در آب و آب در روغن، حل‌کننده برای اسانس‌ها، عطرها و داروهای کم‌محلول، و عامل مرطوب‌کننده به کار می‌روند؛ ستوماکروگل 1000 امولسیون‌کننده موجود در موم امولسیون‌کننده ستوماکروگل و کرم‌های مربوط به آن است. غلظت‌های متداول: امولسیون‌کننده حدود 0.5–15٪، حل‌کننده حدود 1–10٪، عامل مرطوب‌کننده حدود 0.1–3٪. پلیدوکانول (لوروماکروگل 400) به‌تنهایی نیز به عنوان داروی اسکلروزان و ضدخارش موضعی مصرف می‌شود."
+  },
+  "description": {
+   "en": "A series of nonionic surfactants made by attaching polyoxyethylene chains of varying length to fatty alcohols. They are named from the alcohol and the average number of ethylene oxide units (for example polyoxyl 20 cetostearyl ether or ceteareth-20). They range from colourless or pale yellow liquids to white or cream-coloured waxy solids with a faint characteristic odour.",
+   "fa": "مجموعه‌ای از سورفکتانت‌های غیریونی که از اتصال زنجیره‌های پلی‌اکسی‌اتیلن با طول‌های مختلف به الکل‌های چرب به دست می‌آیند. نام‌گذاری آن‌ها بر اساس نوع الکل و میانگین تعداد واحدهای اتیلن اکسید است (مثلاً پلی‌اکسیل 20 ستواستئاریل اتر یا ceteareth-20). از مایعات بی‌رنگ یا زرد کم‌رنگ تا جامدات مومی سفید یا کرم‌رنگ با بوی ضعیف و مشخص متغیرند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "liquids, pastes or waxy solids, depending on the alkyl chain length and number of ethylene oxide units",
+     "fa": "مایع، خمیر یا جامد مومی، بسته به طول زنجیره آلکیل و تعداد واحدهای اتیلن اکسید"
+    }
+   },
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "wide range, from about 5 (short polyoxyethylene chains) to about 17 (long chains); e.g. cetomacrogol 1000 ≈ 15.7, polyoxyl 23 lauryl ether ≈ 16.9",
+     "fa": "محدوده گسترده، از حدود 5 (زنجیره‌های کوتاه پلی‌اکسی‌اتیلن) تا حدود 17 (زنجیره‌های بلند)؛ مثلاً ستوماکروگل 1000 حدود 15.7 و پلی‌اکسیل 23 لوریل اتر حدود 16.9"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "types with few ethylene oxide units are oil-soluble and water-dispersible; types with many units are soluble in water and ethanol",
+     "fa": "انواع دارای واحدهای کم اتیلن اکسید در روغن محلول و در آب پراکنده‌شونده‌اند؛ انواع دارای واحدهای زیاد در آب و اتانول محلول‌اند"
+    }
+   },
+   {
+    "k": {
+     "en": "Cloud point",
+     "fa": "نقطه ابری شدن"
+    },
+    "v": {
+     "en": "varies with structure; aqueous solutions of the hydrophilic types become turbid on heating",
+     "fa": "بسته به ساختار متفاوت است؛ محلول‌های آبی انواع آب‌دوست هنگام گرم شدن کدر می‌شوند"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Being ethers, they are chemically stable in strongly acidic and alkaline conditions. The polyoxyethylene chain can undergo autoxidation on storage, forming peroxides, so they should be stored in airtight containers, protected from light, in a cool, dry place.",
+   "fa": "به دلیل ساختار اتری در شرایط بسیار اسیدی و قلیایی از نظر شیمیایی پایدارند. زنجیره پلی‌اکسی‌اتیلن ممکن است در طول نگهداری دچار خوداکسایش (اتواکسیداسیون) و تشکیل پراکسید شود، بنابراین باید در ظرف کاملاً بسته، دور از نور و در جای خنک و خشک نگهداری شوند."
+  },
+  "incompatibilities": {
+   "en": "Discoloration or precipitation can occur with iodides, mercury salts, phenolic substances, salicylates, sulfonamides and tannins. They can reduce the antimicrobial activity of preservatives, notably parabens and phenols, by micellar binding, and peroxide impurities may oxidise sensitive drugs.",
+   "fa": "با یدیدها، نمک‌های جیوه، ترکیبات فنلی، سالیسیلات‌ها، سولفونامیدها و تانن‌ها ممکن است تغییر رنگ یا رسوب ایجاد شود. با اتصال میسلی می‌توانند فعالیت ضدمیکروبی نگهدارنده‌ها، به‌ویژه پارابن‌ها و فنل‌ها، را کاهش دهند و پراکسیدهای ناخالص ممکن است داروهای حساس را اکسید کنند."
+  },
+  "manufacture": {
+   "en": "Prepared by reacting fatty alcohols with ethylene oxide under alkaline catalysis; the amount of ethylene oxide determines the average polyoxyethylene chain length.",
+   "fa": "از واکنش الکل‌های چرب با اتیلن اکسید در حضور کاتالیزور قلیایی تهیه می‌شوند؛ مقدار اتیلن اکسید میانگین طول زنجیره پلی‌اکسی‌اتیلن را تعیین می‌کند."
+  },
+  "safety": {
+   "en": "Widely used in topical products and generally regarded as non-toxic and non-irritant at the levels used, although skin and eye irritation can occur with some types and at high concentrations. Polidocanol is administered by intravenous injection as a sclerosant.",
+   "fa": "در فرآورده‌های موضعی به‌طور گسترده مصرف می‌شوند و در مقادیر مصرفی عموماً غیرسمی و غیرمحرک شناخته می‌شوند، هرچند با برخی انواع و در غلظت‌های بالا تحریک پوست و چشم ممکن است رخ دهد. پلیدوکانول به عنوان اسکلروزان به صورت تزریق وریدی تجویز می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (topical and other non-parenteral preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های موضعی و سایر فرآورده‌های غیرتزریقی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Cetomacrogol emulsifying wax; poloxamer; polyoxyethylene castor oil derivatives; polyoxyethylene stearates; polysorbates.",
+   "fa": "موم امولسیون‌کننده ستوماکروگل؛ پولوکسامر؛ مشتقات پلی‌اکسی‌اتیلنی روغن کرچک؛ پلی‌اکسی‌اتیلن استئارات‌ها؛ پلی‌سوربات‌ها."
+  },
+  "comments": {
+   "en": "Combining a low-HLB and a high-HLB member of the series is a common way of making stable emulsions with the required HLB. Because the ether link is not hydrolysed, these surfactants are preferred over ester-type surfactants such as polysorbates in formulations at extreme pH.",
+   "fa": "ترکیب یک عضو با HLB پایین و یک عضو با HLB بالا از این مجموعه، روشی متداول برای تهیه امولسیون‌های پایدار با HLB مورد نیاز است. چون پیوند اتری هیدرولیز نمی‌شود، این سورفکتانت‌ها در فرمولاسیون‌هایی با pH شدید بر سورفکتانت‌های استری مانند پلی‌سوربات‌ها ترجیح داده می‌شوند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "bp",
+   "jp",
+   "iid"
+  ]
+ },
+ "Polyoxyl 35 castor oil": {
+  "names": [
+   {
+    "ph": "PhEur",
+    "name": "Macrogolglycerol Ricinoleate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Polyoxyl 35 Castor Oil"
+   }
+  ],
+  "tradeNames": "Cremophor EL; Etocas 35; glycerol polyethylene glycol ricinoleate; Kolliphor EL; macrogolglyceroli ricinoleas; PEG-35 castor oil; polyethoxylated castor oil",
+  "chemicalName": "Polyethoxylated castor oil (castor oil reacted with about 35 moles of ethylene oxide per mole)",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "A nonionic solubiliser and emulsifier used to dissolve poorly water-soluble drugs in intravenous concentrates, oral solutions and topical products, and to solubilise fat-soluble vitamins and essential oils. Well-known parenteral examples are paclitaxel concentrate (about 527 mg/mL of polyoxyl 35 castor oil with ethanol) and intravenous ciclosporin. In oral and topical formulations it is commonly used at a few percent up to about 10–20%, depending on the amount of drug to be solubilised.",
+   "fa": "حل‌کننده و امولسیون‌کننده غیریونی که برای حل کردن داروهای کم‌محلول در آب در کنسانتره‌های تزریق وریدی، محلول‌های خوراکی و فرآورده‌های موضعی، و نیز برای حل کردن ویتامین‌های محلول در چربی و اسانس‌ها به کار می‌رود. نمونه‌های شناخته‌شده تزریقی کنسانتره پاکلی‌تاکسل (حدود 527 mg/mL پلی‌اکسیل 35 روغن کرچک همراه با اتانول) و سیکلوسپورین وریدی‌اند. در فرمولاسیون‌های خوراکی و موضعی معمولاً از چند درصد تا حدود 10–20٪، بسته به مقدار دارویی که باید حل شود، مصرف می‌شود."
+  },
+  "description": {
+   "en": "A complex mixture obtained by ethoxylating castor oil. The main component is ricinoleic acid triglyceride whose hydroxyl groups and glycerol carry polyoxyethylene chains, together with free polyethylene glycols and ethoxylated glycerol. It is a pale yellow, oily liquid that is clear above about 26 °C.",
+   "fa": "مخلوطی پیچیده که از اتوکسیله کردن روغن کرچک به دست می‌آید. جزء اصلی آن تری‌گلیسرید ریسینولئیک اسید است که گروه‌های هیدروکسیل و گلیسرول آن زنجیره‌های پلی‌اکسی‌اتیلن دارند و همراه با پلی‌اتیلن گلیکول‌های آزاد و گلیسرول اتوکسیله است. مایعی روغنی و زرد کم‌رنگ است که بالاتر از حدود 26 °C شفاف است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "pale yellow, oily, viscous liquid with a faint characteristic odour; may become turbid or partly solidify below about 26 °C",
+     "fa": "مایع روغنی و ویسکوز زرد کم‌رنگ با بوی ضعیف و مشخص؛ در دمای کمتر از حدود 26 °C ممکن است کدر شود یا تا حدی جامد شود"
+    }
+   },
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "about 12–14",
+     "fa": "حدود 12–14"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "very soluble in water, giving clear solutions; miscible with ethanol; soluble in many organic solvents and miscible with castor oil",
+     "fa": "بسیار محلول در آب با تشکیل محلول شفاف؛ قابل امتزاج با اتانول؛ محلول در بسیاری از حلال‌های آلی و قابل امتزاج با روغن کرچک"
+    }
+   },
+   {
+    "k": {
+     "en": "Composition",
+     "fa": "ترکیب"
+    },
+    "v": {
+     "en": "mainly glycerol polyethylene glycol ricinoleate (hydrophobic part) with free polyethylene glycols and ethoxylated glycerol (hydrophilic part)",
+     "fa": "عمدتاً گلیسرول پلی‌اتیلن گلیکول ریسینولئات (بخش آب‌گریز) همراه با پلی‌اتیلن گلیکول‌های آزاد و گلیسرول اتوکسیله (بخش آب‌دوست)"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable when stored in a well-filled, airtight container, protected from light, in a cool place. On cold storage it may separate or become cloudy; gentle warming and mixing restores it. Aqueous solutions can be heat sterilised, although they may become temporarily turbid.",
+   "fa": "در ظرف پر و کاملاً بسته، دور از نور و در جای خنک پایدار است. در نگهداری سرد ممکن است جدا شود یا کدر شود که با گرم کردن ملایم و هم زدن به حالت اول برمی‌گردد. محلول‌های آبی آن را می‌توان با حرارت استریل کرد، هرچند ممکن است موقتاً کدر شوند."
+  },
+  "incompatibilities": {
+   "en": "It extracts the plasticiser di(2-ethylhexyl) phthalate (DEHP) from PVC infusion bags and sets, so non-PVC containers and administration sets are recommended for diluted parenteral solutions. Phenolic compounds can cause precipitation, and it may reduce the activity of some preservatives.",
+   "fa": "نرم‌کننده دی‌(2-اتیل‌هگزیل) فتالات (DEHP) را از کیسه‌ها و ست‌های تزریق PVC استخراج می‌کند، بنابراین برای محلول‌های تزریقی رقیق‌شده استفاده از ظروف و ست‌های غیر PVC توصیه می‌شود. ترکیبات فنلی ممکن است باعث رسوب شوند و ممکن است فعالیت برخی نگهدارنده‌ها را کاهش دهد."
+  },
+  "manufacture": {
+   "en": "Prepared by reacting castor oil with ethylene oxide in a molar ratio of about 1:35, followed by purification.",
+   "fa": "از واکنش روغن کرچک با اتیلن اکسید با نسبت مولی حدود 1:35 و سپس خالص‌سازی تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Oral and topical use is generally well tolerated. After intravenous administration it has been associated with severe hypersensitivity (anaphylactoid) reactions, thought to involve complement activation, so patients receiving products such as paclitaxel are premedicated with corticosteroids and antihistamines. It can also alter the pharmacokinetics of co-administered drugs.",
+   "fa": "مصرف خوراکی و موضعی آن عموماً به‌خوبی تحمل می‌شود. پس از تجویز وریدی با واکنش‌های شدید حساسیتی (آنافیلاکتوئید) همراه بوده است که احتمالاً با فعال شدن کمپلمان مرتبط است؛ به همین دلیل بیمارانی که فرآورده‌هایی مانند پاکلی‌تاکسل دریافت می‌کنند با کورتیکواستروئید و آنتی‌هیستامین پیش‌درمانی می‌شوند. همچنین ممکن است فارماکوکینتیک داروهای هم‌زمان را تغییر دهد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (IV injections; oral capsules and solutions; ophthalmic and topical preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (تزریق وریدی؛ کپسول و محلول خوراکی؛ فرآورده‌های چشمی و موضعی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Castor oil; polyoxyl 40 hydrogenated castor oil; polyoxyl 60 hydrogenated castor oil; polysorbates.",
+   "fa": "روغن کرچک؛ پلی‌اکسیل 40 روغن کرچک هیدروژنه؛ پلی‌اکسیل 60 روغن کرچک هیدروژنه؛ پلی‌سوربات‌ها."
+  },
+  "comments": {
+   "en": "Because of its hypersensitivity risk, newer parenteral formulations often replace it with other solubilisers or with nanoparticle and albumin-bound systems. It is also used in self-emulsifying and microemulsion drug delivery systems for oral use.",
+   "fa": "به دلیل خطر حساسیت، فرمولاسیون‌های تزریقی جدیدتر اغلب به جای آن از حل‌کننده‌های دیگر یا سامانه‌های نانوذره‌ای و متصل به آلبومین استفاده می‌کنند. در سامانه‌های خودامولسیون‌شونده و میکروامولسیونی خوراکی نیز به کار می‌رود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Polyoxyl 40 hydrogenated castor oil": {
+  "names": [
+   {
+    "ph": "PhEur",
+    "name": "Macrogolglycerol Hydroxystearate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Polyoxyl 40 Hydrogenated Castor Oil"
+   }
+  ],
+  "tradeNames": "Cremophor RH 40; glycerol polyethylene glycol oxystearate; Kolliphor RH 40; macrogolglyceroli hydroxystearas; PEG-40 hydrogenated castor oil",
+  "chemicalName": "Polyethoxylated hydrogenated castor oil (hydrogenated castor oil reacted with about 40 moles of ethylene oxide per mole)",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "A nonionic solubiliser and emulsifier used to solubilise fat-soluble vitamins, essential oils, flavours, fragrances and lipophilic drugs in aqueous oral and topical preparations, and as a surfactant in self-emulsifying (microemulsion) drug delivery systems such as some oral ciclosporin formulations. It is less bitter-tasting and less irritant than polyoxyl 35 castor oil, which makes it popular in oral liquids. Use levels vary with the load to be solubilised, commonly from a few percent up to about 20–25% in liquid formulations and higher in lipid-based concentrates.",
+   "fa": "حل‌کننده و امولسیون‌کننده غیریونی که برای حل کردن ویتامین‌های محلول در چربی، اسانس‌ها، طعم‌دهنده‌ها، عطرها و داروهای چربی‌دوست در فرآورده‌های آبی خوراکی و موضعی، و به عنوان سورفکتانت در سامانه‌های دارورسانی خودامولسیون‌شونده (میکروامولسیونی) مانند برخی فرمولاسیون‌های خوراکی سیکلوسپورین به کار می‌رود. طعم تلخی و خاصیت تحریکی آن از پلی‌اکسیل 35 روغن کرچک کمتر است و به همین دلیل در مایعات خوراکی پرطرفدار است. مقدار مصرف بسته به مقدار ماده‌ای که باید حل شود متفاوت است و معمولاً در فرمولاسیون‌های مایع از چند درصد تا حدود 20–25٪ و در کنسانتره‌های لیپیدی بیشتر است."
+  },
+  "description": {
+   "en": "A mixture obtained by ethoxylating hydrogenated castor oil. The hydrophobic part consists mainly of glycerol polyethylene glycol hydroxystearate and the hydrophilic part of free polyethylene glycols and glycerol ethoxylates. It is a white to yellowish paste at room temperature.",
+   "fa": "مخلوطی که از اتوکسیله کردن روغن کرچک هیدروژنه به دست می‌آید. بخش آب‌گریز آن عمدتاً گلیسرول پلی‌اتیلن گلیکول هیدروکسی‌استئارات و بخش آب‌دوست آن پلی‌اتیلن گلیکول‌های آزاد و اتوکسیلات‌های گلیسرول است. در دمای اتاق خمیری سفید تا زردرنگ است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "white to yellowish paste at room temperature that liquefies at about 30 °C; faint characteristic odour, almost tasteless",
+     "fa": "خمیر سفید تا زردرنگ در دمای اتاق که در حدود 30 °C مایع می‌شود؛ بوی ضعیف و مشخص، تقریباً بی‌مزه"
+    }
+   },
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "about 14–16",
+     "fa": "حدود 14–16"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in water, ethanol, 2-propanol and fatty oils; aqueous solutions are clear",
+     "fa": "محلول در آب، اتانول، 2-پروپانول و روغن‌های چرب؛ محلول‌های آبی آن شفاف‌اند"
+    }
+   },
+   {
+    "k": {
+     "en": "Composition",
+     "fa": "ترکیب"
+    },
+    "v": {
+     "en": "mainly glycerol polyethylene glycol 12-hydroxystearate with free polyethylene glycols and ethoxylated glycerol",
+     "fa": "عمدتاً گلیسرول پلی‌اتیلن گلیکول 12-هیدروکسی‌استئارات همراه با پلی‌اتیلن گلیکول‌های آزاد و گلیسرول اتوکسیله"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable. Aqueous solutions can be heat sterilised, although they may become turbid at high temperature and clear again on cooling. Store in a well-closed container in a cool, dry place, protected from light.",
+   "fa": "پایدار است. محلول‌های آبی آن را می‌توان با حرارت استریل کرد، هرچند ممکن است در دمای بالا کدر شوند و پس از سرد شدن دوباره شفاف شوند. در ظرف کاملاً بسته، در جای خنک و خشک و دور از نور نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Like other polyethoxylated surfactants, it can reduce the activity of some preservatives, such as parabens, through micellar binding, and it may be incompatible with phenolic compounds and strong oxidising agents.",
+   "fa": "مانند دیگر سورفکتانت‌های پلی‌اتوکسیله، ممکن است با اتصال میسلی فعالیت برخی نگهدارنده‌ها مانند پارابن‌ها را کاهش دهد و با ترکیبات فنلی و اکسیدکننده‌های قوی ناسازگار باشد."
+  },
+  "manufacture": {
+   "en": "Prepared by reacting hydrogenated castor oil with ethylene oxide in a molar ratio of about 1:40.",
+   "fa": "از واکنش روغن کرچک هیدروژنه با اتیلن اکسید با نسبت مولی حدود 1:40 تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Generally regarded as non-toxic and non-irritant in oral and topical use. Hypersensitivity reactions have been reported with polyethoxylated castor oils, mainly after intravenous use of the non-hydrogenated material, and should be borne in mind.",
+   "fa": "در مصرف خوراکی و موضعی عموماً غیرسمی و غیرمحرک شناخته می‌شود. واکنش‌های حساسیتی با روغن‌های کرچک پلی‌اتوکسیله، عمدتاً پس از مصرف وریدی نوع هیدروژنه‌نشده، گزارش شده و باید در نظر گرفته شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules, solutions and tablets; ophthalmic and topical preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (کپسول، محلول و قرص خوراکی؛ فرآورده‌های چشمی و موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Polyoxyl 35 castor oil; polyoxyl 60 hydrogenated castor oil; polysorbate 80.",
+   "fa": "پلی‌اکسیل 35 روغن کرچک؛ پلی‌اکسیل 60 روغن کرچک هیدروژنه؛ پلی‌سوربات 80."
+  },
+  "comments": {
+   "en": "To solubilise an oil or lipophilic drug, it is usually best to mix the active thoroughly with the warmed surfactant before slowly adding water. The material should be warmed and homogenised before sampling, because components can separate in the paste.",
+   "fa": "برای حل کردن یک روغن یا داروی چربی‌دوست، معمولاً بهتر است ابتدا ماده مؤثر به‌خوبی با سورفکتانت گرم‌شده مخلوط و سپس آب به‌آهستگی اضافه شود. پیش از نمونه‌برداری، ماده باید گرم و یکنواخت شود، زیرا اجزای آن ممکن است در خمیر از هم جدا شوند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Polyoxyl 40 stearate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Macrogol Stearate"
+   },
+   {
+    "ph": "JP",
+    "name": "Polyoxyl 40 Stearate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Macrogol Stearate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Polyoxyl 40 Stearate"
+   }
+  ],
+  "tradeNames": "Macrogol stearate 2000; Myrj S40; Myrj 52; PEG-40 stearate; polyethylene glycol stearate; polyoxyethylene 40 stearate",
+  "chemicalName": "α-Hydro-ω-hydroxypoly(oxy-1,2-ethanediyl) octadecanoate (mixture of mono- and diesters of stearic acid with polyethylene glycol)",
+  "formula": "C17H35COO(CH2CH2O)nH, n ≈ 40",
+  "mw": "≈ 2 000",
+  "applications": {
+   "en": "A hydrophilic nonionic surfactant used mainly as an emulsifier in oil-in-water creams and lotions, often combined with a lipophilic co-emulsifier such as glyceryl monostearate or cetyl alcohol, and also as a solubiliser and wetting agent. It has been used in tablet film coatings and as a lubricant or release aid in some tablets. Typical levels: emulsifying agent about 0.5–10%, solubilising agent about 1–10%, wetting agent about 0.1–3%.",
+   "fa": "سورفکتانت غیریونی آب‌دوست که عمدتاً به عنوان امولسیون‌کننده در کرم‌ها و لوسیون‌های روغن در آب، اغلب همراه یک امولسیون‌کننده کمکی چربی‌دوست مانند گلیسریل مونواستئارات یا ستیل الکل، و نیز به عنوان حل‌کننده و عامل مرطوب‌کننده به کار می‌رود. در پوشش فیلمی قرص و به عنوان لغزان‌کننده یا کمک‌جداکننده در برخی قرص‌ها نیز مصرف شده است. غلظت‌های متداول: امولسیون‌کننده حدود 0.5–10٪، حل‌کننده حدود 1–10٪، عامل مرطوب‌کننده حدود 0.1–3٪."
+  },
+  "description": {
+   "en": "A mixture of mono- and diesters of mainly stearic and palmitic acids with polyethylene glycol having an average of about 40 oxyethylene units, together with some free polyethylene glycol. It is a white to light tan waxy solid with a faint, fat-like odour.",
+   "fa": "مخلوطی از مونو- و دی‌استرهای عمدتاً استئاریک و پالمیتیک اسید با پلی‌اتیلن گلیکول دارای میانگین حدود 40 واحد اکسی‌اتیلن، همراه با مقداری پلی‌اتیلن گلیکول آزاد. جامدی مومی، سفید تا قهوه‌ای روشن با بوی ضعیف شبیه چربی است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "white to light tan, waxy solid or flakes with a faint fatty odour",
+     "fa": "جامد یا پولک مومی سفید تا قهوه‌ای روشن با بوی ضعیف چربی"
+    }
+   },
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "about 16.9",
+     "fa": "حدود 16.9"
+    }
+   },
+   {
+    "k": {
+     "en": "Congealing range",
+     "fa": "محدوده انجماد"
+    },
+    "v": {
+     "en": "about 39–44 °C",
+     "fa": "حدود 39–44 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Saponification value",
+     "fa": "عدد صابونی شدن"
+    },
+    "v": {
+     "en": "about 25–35",
+     "fa": "حدود 25–35"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in water, ethanol and acetone; insoluble in mineral oil and vegetable oils",
+     "fa": "محلول در آب، اتانول و استون؛ نامحلول در روغن معدنی و روغن‌های گیاهی"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable in the presence of electrolytes and weak acids or bases, but strong acids and alkalis cause gradual hydrolysis (saponification) of the ester. Store in a well-closed container in a cool, dry place.",
+   "fa": "در حضور الکترولیت‌ها و اسیدها یا بازهای ضعیف پایدار است، ولی اسیدها و قلیاهای قوی به‌تدریج باعث هیدرولیز (صابونی شدن) استر می‌شوند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Discoloration or precipitation can occur with salicylates, phenols, iodine salts and salts of bismuth, silver and mercury, and with tannins. It can reduce the activity of antimicrobial preservatives such as parabens and phenols.",
+   "fa": "با سالیسیلات‌ها، فنل‌ها، نمک‌های ید و نمک‌های بیسموت، نقره و جیوه، و با تانن‌ها ممکن است تغییر رنگ یا رسوب ایجاد شود. ممکن است فعالیت نگهدارنده‌های ضدمیکروبی مانند پارابن‌ها و فنل‌ها را کاهش دهد."
+  },
+  "manufacture": {
+   "en": "Prepared either by direct reaction of stearic acid with ethylene oxide or by esterifying polyethylene glycol with stearic acid.",
+   "fa": "یا از واکنش مستقیم استئاریک اسید با اتیلن اکسید، یا از استری کردن پلی‌اتیلن گلیکول با استئاریک اسید تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Used in oral, topical and some parenteral products and generally regarded as non-toxic and non-irritant at the levels used, although occasional skin sensitivity has been reported.",
+   "fa": "در فرآورده‌های خوراکی، موضعی و برخی فرآورده‌های تزریقی مصرف می‌شود و در مقادیر مصرفی عموماً غیرسمی و غیرمحرک شناخته می‌شود، هرچند گاهی حساسیت پوستی گزارش شده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral tablets and other oral forms; topical preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (قرص و سایر اشکال خوراکی؛ فرآورده‌های موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Polyoxyl 8 stearate; polyoxyl 50 stearate; polyoxyethylene alkyl ethers; polysorbates.",
+   "fa": "پلی‌اکسیل 8 استئارات؛ پلی‌اکسیل 50 استئارات؛ پلی‌اکسی‌اتیلن آلکیل اترها؛ پلی‌سوربات‌ها."
+  },
+  "comments": {
+   "en": "The Ph. Eur. monograph covers macrogol stearates of several chain lengths, distinguished by the nominal number of oxyethylene units, so the type equivalent to polyoxyl 40 stearate should be specified. Being an ester, it is best kept away from formulations at extreme pH.",
+   "fa": "مونوگراف فارماکوپه اروپا ماکروگل استئارات‌هایی با طول زنجیره‌های مختلف را پوشش می‌دهد که با تعداد اسمی واحدهای اکسی‌اتیلن از هم متمایز می‌شوند، بنابراین باید نوع معادل پلی‌اکسیل 40 استئارات مشخص شود. چون یک استر است، بهتر است در فرمولاسیون‌هایی با pH شدید به کار نرود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "bp",
+   "jp",
+   "iid"
+  ]
+ },
+ "Polysorbate 20": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Polysorbate 20"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Polysorbate 20"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Polysorbate 20"
+   }
+  ],
+  "tradeNames": "Crillet 1; polyoxyethylene 20 sorbitan monolaurate; polysorbatum 20; PEG-20 sorbitan monolaurate; Tween 20; E432",
+  "chemicalName": "Polyoxyethylene 20 sorbitan monolaurate",
+  "formula": "C58H114O26 (approximate)",
+  "mw": "≈ 1 128",
+  "applications": {
+   "en": "A hydrophilic nonionic surfactant used as an emulsifier, solubiliser, wetting agent and dispersant in oral, topical and parenteral products, and widely used at low levels (typically about 0.001–0.1% w/v) to protect therapeutic proteins and monoclonal antibodies from aggregation and surface adsorption. Typical concentrations: emulsifying agent used alone in oil-in-water emulsions 1–15%, or 1–10% when combined with lipophilic emulsifiers; solubilising agent for poorly soluble drugs in aqueous vehicles 1–10%; wetting agent for insoluble solids 0.1–3%.",
+   "fa": "سورفکتانت غیریونی آب‌دوست که به عنوان امولسیون‌کننده، حل‌کننده، عامل مرطوب‌کننده و پراکنده‌ساز در فرآورده‌های خوراکی، موضعی و تزریقی به کار می‌رود و در غلظت‌های پایین (معمولاً حدود 0.001–0.1٪ وزنی/حجمی) برای محافظت از پروتئین‌های درمانی و آنتی‌بادی‌های مونوکلونال در برابر تجمع و جذب سطحی بسیار مصرف می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های روغن در آب 1–15٪، یا 1–10٪ در ترکیب با امولسیون‌کننده‌های چربی‌دوست؛ حل‌کننده داروهای کم‌محلول در حامل‌های آبی 1–10٪؛ عامل مرطوب‌کننده برای جامدات نامحلول 0.1–3٪."
+  },
+  "description": {
+   "en": "A mixture of partial lauric acid esters of sorbitol and its anhydrides copolymerised with about 20 moles of ethylene oxide per mole of sorbitol. Lauric acid is the main fatty acid, with smaller amounts of other saturated acids. It is a yellow, oily liquid.",
+   "fa": "مخلوطی از استرهای جزئی لوریک اسید با سوربیتول و انیدریدهای آن که با حدود 20 مول اتیلن اکسید به ازای هر مول سوربیتول کوپلیمر شده است. لوریک اسید اسید چرب اصلی آن است و مقادیر کمتری از اسیدهای اشباع دیگر نیز دارد. مایعی روغنی و زردرنگ است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "yellow to yellowish-green, oily liquid at 25 °C with a characteristic odour and a bitter taste",
+     "fa": "مایع روغنی زرد تا زرد مایل به سبز در 25 °C با بوی مشخص و طعم تلخ"
+    }
+   },
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "about 16.7",
+     "fa": "حدود 16.7"
+    }
+   },
+   {
+    "k": {
+     "en": "Saponification value",
+     "fa": "عدد صابونی شدن"
+    },
+    "v": {
+     "en": "about 40–50",
+     "fa": "حدود 40–50"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 1.1 g/cm³",
+     "fa": "حدود 1.1 g/cm³"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in water, ethanol and ethyl acetate; practically insoluble in fatty oils and liquid paraffin",
+     "fa": "محلول در آب، اتانول و اتیل استات؛ عملاً نامحلول در روغن‌های چرب و پارافین مایع"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Polysorbates are stable to electrolytes and weak acids and bases; strong acids and bases cause gradual saponification. The oleic-acid esters in particular are susceptible to autoxidation, forming peroxides and degrading on exposure to light, heat and metal ions. They are hygroscopic and should be stored in a well-closed, well-filled container, protected from light, in a cool, dry place; nitrogen blanketing helps limit oxidation.",
+   "fa": "پلی‌سوربات‌ها در برابر الکترولیت‌ها و اسیدها و بازهای ضعیف پایدارند؛ اسیدها و بازهای قوی به‌تدریج باعث صابونی شدن می‌شوند. به‌ویژه استرهای اولئیک اسید مستعد خوداکسایش‌اند و در مجاورت نور، گرما و یون‌های فلزی پراکسید تشکیل می‌دهند و تخریب می‌شوند. رطوبت‌گیرند و باید در ظرف کاملاً بسته و پر، دور از نور و در جای خنک و خشک نگهداری شوند؛ پوشاندن فضای خالی ظرف با نیتروژن به محدود شدن اکسیداسیون کمک می‌کند."
+  },
+  "incompatibilities": {
+   "en": "Discoloration or precipitation occurs with various substances, especially phenols, tannins and tars. They reduce the antimicrobial activity of many preservatives, particularly parabens, by micellar binding, and peroxide impurities can oxidise sensitive drugs and proteins.",
+   "fa": "با مواد مختلف، به‌ویژه فنل‌ها، تانن‌ها و قطران‌ها، تغییر رنگ یا رسوب ایجاد می‌شود. با اتصال میسلی فعالیت ضدمیکروبی بسیاری از نگهدارنده‌ها، به‌ویژه پارابن‌ها، را کاهش می‌دهند و پراکسیدهای ناخالص می‌توانند داروها و پروتئین‌های حساس را اکسید کنند."
+  },
+  "manufacture": {
+   "en": "Prepared by esterifying sorbitol and its anhydrides (mainly sorbitan) with lauric acid and then reacting the product with about 20 moles of ethylene oxide per mole of sorbitol.",
+   "fa": "از استری کردن سوربیتول و انیدریدهای آن (عمدتاً سوربیتان) با لوریک اسید و سپس واکنش محصول با حدود 20 مول اتیلن اکسید به ازای هر مول سوربیتول تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Polysorbates are widely used in oral, topical and parenteral products and are generally regarded as non-toxic and non-irritant, although hypersensitivity reactions have occasionally been reported, mainly after injection. JECFA and EFSA have set a group ADI of 25 mg/kg body weight per day for polysorbates 20, 40, 60, 65 and 80.",
+   "fa": "پلی‌سوربات‌ها به‌طور گسترده در فرآورده‌های خوراکی، موضعی و تزریقی مصرف می‌شوند و عموماً غیرسمی و غیرمحرک شناخته می‌شوند، هرچند گاهی واکنش‌های حساسیتی، عمدتاً پس از تزریق، گزارش شده است. JECFA و EFSA برای پلی‌سوربات‌های 20، 40، 60، 65 و 80 ADI گروهی 25 mg/kg وزن بدن در روز تعیین کرده‌اند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E432). Included in the FDA Inactive Ingredient Database (injections; nasal, oral, otic and topical preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E432). در FDA Inactive Ingredient Database (تزریقی؛ فرآورده‌های بینی، خوراکی، گوش و موضعی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Polysorbate 40; polysorbate 60; polysorbate 80; sorbitan esters.",
+   "fa": "پلی‌سوربات 40؛ پلی‌سوربات 60؛ پلی‌سوربات 80؛ استرهای سوربیتان."
+  },
+  "comments": {
+   "en": "Because it is based on a saturated fatty acid, polysorbate 20 is somewhat less prone to autoxidation than polysorbate 80, but both can contain peroxides and are hydrolysed by residual enzymes (lipases) in biological products, releasing free fatty acids that may form visible particles. Low-peroxide grades should be chosen for protein formulations.",
+   "fa": "چون پلی‌سوربات 20 بر پایه یک اسید چرب اشباع است، نسبت به پلی‌سوربات 80 تا حدی کمتر مستعد خوداکسایش است، ولی هر دو ممکن است پراکسید داشته باشند و در فرآورده‌های زیستی با آنزیم‌های باقی‌مانده (لیپازها) هیدرولیز شوند و اسیدهای چرب آزاد آزاد کنند که ممکن است ذرات قابل مشاهده تشکیل دهند. برای فرمولاسیون‌های پروتئینی باید گریدهای کم‌پراکسید انتخاب شوند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "bp",
+   "iid",
+   "eu-additives",
+   "efsa",
+   "jecfa"
+  ]
+ },
+ "Polysorbate 60": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Polysorbate 60"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Polysorbate 60"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Polysorbate 60"
+   }
+  ],
+  "tradeNames": "Crillet 3; polyoxyethylene 20 sorbitan monostearate; polysorbatum 60; PEG-20 sorbitan monostearate; Tween 60; E435",
+  "chemicalName": "Polyoxyethylene 20 sorbitan monostearate",
+  "formula": "C64H126O26 (approximate)",
+  "mw": "≈ 1 312",
+  "applications": {
+   "en": "A hydrophilic nonionic surfactant used mainly as an emulsifier in oil-in-water creams, lotions and ointments, often together with a sorbitan ester such as sorbitan monostearate, and as a solubiliser and wetting agent. Typical concentrations: emulsifying agent used alone in oil-in-water emulsions 1–15%, or 1–10% when combined with lipophilic emulsifiers; solubilising agent for poorly soluble drugs in aqueous vehicles 1–10%; wetting agent for insoluble solids 0.1–3%. It is also used widely in foods, for example in bakery products, toppings and confectionery.",
+   "fa": "سورفکتانت غیریونی آب‌دوست که عمدتاً به عنوان امولسیون‌کننده در کرم‌ها، لوسیون‌ها و پمادهای روغن در آب، اغلب همراه یک استر سوربیتان مانند سوربیتان مونواستئارات، و نیز به عنوان حل‌کننده و عامل مرطوب‌کننده به کار می‌رود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های روغن در آب 1–15٪، یا 1–10٪ در ترکیب با امولسیون‌کننده‌های چربی‌دوست؛ حل‌کننده داروهای کم‌محلول در حامل‌های آبی 1–10٪؛ عامل مرطوب‌کننده برای جامدات نامحلول 0.1–3٪. در غذاها نیز، مثلاً در محصولات نانوایی، تاپینگ‌ها و شیرینی‌جات، کاربرد گسترده دارد."
+  },
+  "description": {
+   "en": "A mixture of partial stearic acid esters (with palmitic acid) of sorbitol and its anhydrides copolymerised with about 20 moles of ethylene oxide per mole of sorbitol. It is a yellowish-brown, gel-like semi-solid with a faint characteristic odour.",
+   "fa": "مخلوطی از استرهای جزئی استئاریک اسید (همراه با پالمیتیک اسید) با سوربیتول و انیدریدهای آن که با حدود 20 مول اتیلن اکسید به ازای هر مول سوربیتول کوپلیمر شده است. نیمه‌جامدی ژل‌مانند، زرد مایل به قهوه‌ای و با بوی ضعیف و مشخص است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "yellowish-brown, gel-like or semi-solid mass at 25 °C that liquefies on gentle warming (above about 25 °C)",
+     "fa": "توده ژل‌مانند یا نیمه‌جامد زرد مایل به قهوه‌ای در 25 °C که با گرم کردن ملایم (بالاتر از حدود 25 °C) مایع می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "about 14.9",
+     "fa": "حدود 14.9"
+    }
+   },
+   {
+    "k": {
+     "en": "Saponification value",
+     "fa": "عدد صابونی شدن"
+    },
+    "v": {
+     "en": "about 45–55",
+     "fa": "حدود 45–55"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in water and ethanol; practically insoluble in fatty oils and liquid paraffin",
+     "fa": "محلول در آب و اتانول؛ عملاً نامحلول در روغن‌های چرب و پارافین مایع"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Polysorbates are stable to electrolytes and weak acids and bases; strong acids and bases cause gradual saponification. The oleic-acid esters in particular are susceptible to autoxidation, forming peroxides and degrading on exposure to light, heat and metal ions. They are hygroscopic and should be stored in a well-closed, well-filled container, protected from light, in a cool, dry place; nitrogen blanketing helps limit oxidation.",
+   "fa": "پلی‌سوربات‌ها در برابر الکترولیت‌ها و اسیدها و بازهای ضعیف پایدارند؛ اسیدها و بازهای قوی به‌تدریج باعث صابونی شدن می‌شوند. به‌ویژه استرهای اولئیک اسید مستعد خوداکسایش‌اند و در مجاورت نور، گرما و یون‌های فلزی پراکسید تشکیل می‌دهند و تخریب می‌شوند. رطوبت‌گیرند و باید در ظرف کاملاً بسته و پر، دور از نور و در جای خنک و خشک نگهداری شوند؛ پوشاندن فضای خالی ظرف با نیتروژن به محدود شدن اکسیداسیون کمک می‌کند."
+  },
+  "incompatibilities": {
+   "en": "Discoloration or precipitation occurs with various substances, especially phenols, tannins and tars. They reduce the antimicrobial activity of many preservatives, particularly parabens, by micellar binding, and peroxide impurities can oxidise sensitive drugs and proteins.",
+   "fa": "با مواد مختلف، به‌ویژه فنل‌ها، تانن‌ها و قطران‌ها، تغییر رنگ یا رسوب ایجاد می‌شود. با اتصال میسلی فعالیت ضدمیکروبی بسیاری از نگهدارنده‌ها، به‌ویژه پارابن‌ها، را کاهش می‌دهند و پراکسیدهای ناخالص می‌توانند داروها و پروتئین‌های حساس را اکسید کنند."
+  },
+  "manufacture": {
+   "en": "Prepared by esterifying sorbitol and its anhydrides (mainly sorbitan) with stearic acid and then reacting the product with about 20 moles of ethylene oxide per mole of sorbitol.",
+   "fa": "از استری کردن سوربیتول و انیدریدهای آن (عمدتاً سوربیتان) با استئاریک اسید و سپس واکنش محصول با حدود 20 مول اتیلن اکسید به ازای هر مول سوربیتول تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Generally regarded as non-toxic and non-irritant in oral and topical use; occasional hypersensitivity reactions have been reported. JECFA and EFSA have set a group ADI of 25 mg/kg body weight per day for polysorbates 20, 40, 60, 65 and 80.",
+   "fa": "در مصرف خوراکی و موضعی عموماً غیرسمی و غیرمحرک شناخته می‌شود؛ گاهی واکنش‌های حساسیتی گزارش شده است. JECFA و EFSA برای پلی‌سوربات‌های 20، 40، 60، 65 و 80 ADI گروهی 25 mg/kg وزن بدن در روز تعیین کرده‌اند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E435). Included in the FDA Inactive Ingredient Database (oral and topical preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E435). در FDA Inactive Ingredient Database (فرآورده‌های خوراکی و موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Polysorbate 20; polysorbate 65; polysorbate 80; sorbitan monostearate.",
+   "fa": "پلی‌سوربات 20؛ پلی‌سوربات 65؛ پلی‌سوربات 80؛ سوربیتان مونواستئارات."
+  },
+  "comments": {
+   "en": "Polysorbate 60 is semi-solid at room temperature, so it is usually warmed to about 40–50 °C and mixed before weighing or sampling. With sorbitan monostearate it forms a classic emulsifier pair whose proportions can be adjusted to match the required HLB of the oil phase.",
+   "fa": "پلی‌سوربات 60 در دمای اتاق نیمه‌جامد است، بنابراین معمولاً پیش از توزین یا نمونه‌برداری تا حدود 40–50 °C گرم و مخلوط می‌شود. همراه با سوربیتان مونواستئارات یک جفت امولسیون‌کننده کلاسیک تشکیل می‌دهد که نسبت آن‌ها را می‌توان با HLB مورد نیاز فاز روغنی تطبیق داد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "bp",
+   "iid",
+   "eu-additives",
+   "efsa",
+   "jecfa"
+  ]
+ },
+ "Polysorbate 80": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Polysorbate 80"
+   },
+   {
+    "ph": "JP",
+    "name": "Polysorbate 80"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Polysorbate 80"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Polysorbate 80"
+   }
+  ],
+  "tradeNames": "Crillet 4; Kolliphor PS 80; Montanox 80; polyoxyethylene 20 sorbitan monooleate; polysorbatum 80; PEG-20 sorbitan monooleate; Tween 80; E433",
+  "chemicalName": "Polyoxyethylene 20 sorbitan monooleate",
+  "formula": "C64H124O26 (approximate)",
+  "mw": "≈ 1 310",
+  "applications": {
+   "en": "The most widely used polysorbate in medicines: an emulsifier, solubiliser, wetting agent and stabiliser in oral liquids, topical products and parenteral formulations, including injectable products of poorly soluble drugs (for example amiodarone and docetaxel concentrates), vaccines and biologics. In protein and antibody products it is typically used at about 0.001–0.1% w/v to prevent aggregation at interfaces. Typical concentrations: emulsifying agent used alone in oil-in-water emulsions 1–15%, or 1–10% when combined with lipophilic emulsifiers; solubilising agent for poorly soluble drugs in aqueous vehicles 1–10%; wetting agent for insoluble solids 0.1–3%.",
+   "fa": "پرمصرف‌ترین پلی‌سوربات در داروها: امولسیون‌کننده، حل‌کننده، عامل مرطوب‌کننده و پایدارکننده در مایعات خوراکی، فرآورده‌های موضعی و فرمولاسیون‌های تزریقی، از جمله فرآورده‌های تزریقی داروهای کم‌محلول (مانند کنسانتره‌های آمیودارون و دوستاکسل)، واکسن‌ها و فرآورده‌های زیستی. در فرآورده‌های پروتئینی و آنتی‌بادی معمولاً با غلظت حدود 0.001–0.1٪ وزنی/حجمی برای جلوگیری از تجمع در سطوح مشترک به کار می‌رود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های روغن در آب 1–15٪، یا 1–10٪ در ترکیب با امولسیون‌کننده‌های چربی‌دوست؛ حل‌کننده داروهای کم‌محلول در حامل‌های آبی 1–10٪؛ عامل مرطوب‌کننده برای جامدات نامحلول 0.1–3٪."
+  },
+  "description": {
+   "en": "A mixture of partial oleic acid esters of sorbitol and its anhydrides copolymerised with about 20 moles of ethylene oxide per mole of sorbitol. Oleic acid is the main fatty acid, with smaller amounts of linoleic, palmitic and stearic acids. It is a yellow to amber, oily liquid.",
+   "fa": "مخلوطی از استرهای جزئی اولئیک اسید با سوربیتول و انیدریدهای آن که با حدود 20 مول اتیلن اکسید به ازای هر مول سوربیتول کوپلیمر شده است. اولئیک اسید اسید چرب اصلی آن است و مقادیر کمتری لینولئیک، پالمیتیک و استئاریک اسید نیز دارد. مایعی روغنی و زرد تا کهربایی است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "yellow to amber, oily liquid at 25 °C with a characteristic odour and a warm, somewhat bitter taste",
+     "fa": "مایع روغنی زرد تا کهربایی در 25 °C با بوی مشخص و طعم گرم و تا حدی تلخ"
+    }
+   },
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "about 15.0",
+     "fa": "حدود 15.0"
+    }
+   },
+   {
+    "k": {
+     "en": "Saponification value",
+     "fa": "عدد صابونی شدن"
+    },
+    "v": {
+     "en": "about 45–55",
+     "fa": "حدود 45–55"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 1.08 g/cm³",
+     "fa": "حدود 1.08 g/cm³"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "about 400–425 mPa·s (25 °C)",
+     "fa": "حدود 400–425 mPa·s (25 °C)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in water and ethanol; practically insoluble in fatty oils and liquid paraffin",
+     "fa": "محلول در آب و اتانول؛ عملاً نامحلول در روغن‌های چرب و پارافین مایع"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Polysorbates are stable to electrolytes and weak acids and bases; strong acids and bases cause gradual saponification. The oleic-acid esters in particular are susceptible to autoxidation, forming peroxides and degrading on exposure to light, heat and metal ions. They are hygroscopic and should be stored in a well-closed, well-filled container, protected from light, in a cool, dry place; nitrogen blanketing helps limit oxidation.",
+   "fa": "پلی‌سوربات‌ها در برابر الکترولیت‌ها و اسیدها و بازهای ضعیف پایدارند؛ اسیدها و بازهای قوی به‌تدریج باعث صابونی شدن می‌شوند. به‌ویژه استرهای اولئیک اسید مستعد خوداکسایش‌اند و در مجاورت نور، گرما و یون‌های فلزی پراکسید تشکیل می‌دهند و تخریب می‌شوند. رطوبت‌گیرند و باید در ظرف کاملاً بسته و پر، دور از نور و در جای خنک و خشک نگهداری شوند؛ پوشاندن فضای خالی ظرف با نیتروژن به محدود شدن اکسیداسیون کمک می‌کند."
+  },
+  "incompatibilities": {
+   "en": "Discoloration or precipitation occurs with various substances, especially phenols, tannins and tars. They reduce the antimicrobial activity of many preservatives, particularly parabens, by micellar binding, and peroxide impurities can oxidise sensitive drugs and proteins.",
+   "fa": "با مواد مختلف، به‌ویژه فنل‌ها، تانن‌ها و قطران‌ها، تغییر رنگ یا رسوب ایجاد می‌شود. با اتصال میسلی فعالیت ضدمیکروبی بسیاری از نگهدارنده‌ها، به‌ویژه پارابن‌ها، را کاهش می‌دهند و پراکسیدهای ناخالص می‌توانند داروها و پروتئین‌های حساس را اکسید کنند."
+  },
+  "manufacture": {
+   "en": "Prepared by esterifying sorbitol and its anhydrides (mainly sorbitan) with oleic acid and then reacting the product with about 20 moles of ethylene oxide per mole of sorbitol.",
+   "fa": "از استری کردن سوربیتول و انیدریدهای آن (عمدتاً سوربیتان) با اولئیک اسید و سپس واکنش محصول با حدود 20 مول اتیلن اکسید به ازای هر مول سوربیتول تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Generally regarded as non-toxic and non-irritant in oral and topical use. After intravenous administration it has been associated with hypersensitivity and infusion reactions, and a vitamin E injection containing polysorbates was linked to serious adverse effects and deaths in low-birth-weight infants. JECFA and EFSA have set a group ADI of 25 mg/kg body weight per day for polysorbates 20, 40, 60, 65 and 80.",
+   "fa": "در مصرف خوراکی و موضعی عموماً غیرسمی و غیرمحرک شناخته می‌شود. پس از تجویز وریدی با واکنش‌های حساسیتی و واکنش‌های مرتبط با انفوزیون همراه بوده است و یک فرآورده تزریقی ویتامین E حاوی پلی‌سوربات‌ها با عوارض جدی و مرگ در نوزادان کم‌وزن مرتبط دانسته شد. JECFA و EFSA برای پلی‌سوربات‌های 20، 40، 60، 65 و 80 ADI گروهی 25 mg/kg وزن بدن در روز تعیین کرده‌اند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E433). Included in the FDA Inactive Ingredient Database (IM, IV and SC injections; oral capsules, solutions, suspensions and tablets; ophthalmic, topical and other preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E433). در FDA Inactive Ingredient Database (تزریق عضلانی، وریدی و زیرجلدی؛ کپسول، محلول، سوسپانسیون و قرص خوراکی؛ فرآورده‌های چشمی، موضعی و سایر فرآورده‌ها) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Polysorbate 20; polysorbate 60; polyoxyl 35 castor oil; sorbitan monooleate.",
+   "fa": "پلی‌سوربات 20؛ پلی‌سوربات 60؛ پلی‌اکسیل 35 روغن کرچک؛ سوربیتان مونواولئات."
+  },
+  "comments": {
+   "en": "The unsaturated oleate chain makes polysorbate 80 prone to oxidation; peroxide content varies between grades and lots and can degrade oxidation-sensitive drugs and proteins, so low-peroxide (often plant-derived, high-purity) grades are preferred for parenterals and biologics. Like other surfactants, it extracts DEHP from PVC administration sets.",
+   "fa": "زنجیره غیراشباع اولئات، پلی‌سوربات 80 را مستعد اکسیداسیون می‌کند؛ مقدار پراکسید بین گریدها و سری‌ها متفاوت است و ممکن است داروها و پروتئین‌های حساس به اکسیداسیون را تخریب کند، بنابراین برای فرآورده‌های تزریقی و زیستی گریدهای کم‌پراکسید (اغلب با منشأ گیاهی و خلوص بالا) ترجیح داده می‌شوند. مانند دیگر سورفکتانت‌ها، DEHP را از ست‌های تزریق PVC استخراج می‌کند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "bp",
+   "jp",
+   "iid",
+   "eu-additives",
+   "efsa",
+   "jecfa"
+  ]
+ },
+ "Polyvinyl acetate phthalate": {
+  "names": [
+   {
+    "ph": "USP-NF",
+    "name": "Polyvinyl Acetate Phthalate"
+   }
+  ],
+  "tradeNames": "Opaseal; PVAP; Sureteric; phthalic acid, polymer with vinyl acetate and vinyl alcohol",
+  "chemicalName": "Partial phthalate ester of partially hydrolysed polyvinyl acetate (a reaction product of phthalic anhydride and partially hydrolysed polyvinyl acetate)",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used as an enteric film coating for tablets and capsules, applied either from organic solvent solutions or as aqueous dispersions of fully formulated systems; it is also used as a moisture-protective seal coat on tablet cores before sugar coating. Enteric coatings typically require a weight gain of several percent, with a plasticiser such as triethyl citrate or polyethylene glycol.",
+   "fa": "به عنوان پوشش فیلمی روده‌ای (انتریک) برای قرص‌ها و کپسول‌ها، از محلول‌های حلال آلی یا به صورت دیسپرسیون آبی سامانه‌های آماده، به کار می‌رود؛ همچنین به عنوان پوشش آب‌بند (seal coat) محافظ در برابر رطوبت روی هسته قرص پیش از روکش قندی مصرف می‌شود. پوشش‌های روده‌ای معمولاً به افزایش وزنی چند درصدی همراه با نرم‌کننده‌ای مانند تری‌اتیل سیترات یا پلی‌اتیلن گلیکول نیاز دارند."
+  },
+  "description": {
+   "en": "A vinyl polymer in which part of the hydroxyl groups of partially hydrolysed polyvinyl acetate are esterified with phthalic acid, giving free carboxyl groups that ionise in neutral to mildly acidic intestinal fluid. It is a white to off-white, free-flowing powder.",
+   "fa": "پلیمری وینیلی که در آن بخشی از گروه‌های هیدروکسیل پلی‌وینیل استات تا حدی هیدرولیزشده با فتالیک اسید استری شده و گروه‌های کربوکسیل آزاد ایجاد کرده است که در مایع روده‌ای خنثی تا کمی اسیدی یونیزه می‌شوند. پودری سفید تا سفید مایل به کرم و روان است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "free-flowing white to off-white powder, sometimes with a slight odour of acetic acid",
+     "fa": "پودر روان سفید تا سفید مایل به کرم، گاهی با بوی خفیف استیک اسید"
+    }
+   },
+   {
+    "k": {
+     "en": "Phthalyl content",
+     "fa": "مقدار فتالیل"
+    },
+    "v": {
+     "en": "about 55–62% (dried, acid-free basis)",
+     "fa": "حدود 55–62٪ (بر پایه ماده خشک و عاری از اسید)"
+    }
+   },
+   {
+    "k": {
+     "en": "Dissolution pH",
+     "fa": "pH انحلال"
+    },
+    "v": {
+     "en": "insoluble in gastric fluid; dissolves above about pH 5",
+     "fa": "در شیره معده نامحلول؛ بالاتر از حدود pH 5 حل می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in methanol and ethanol–water mixtures and in alkaline buffer; practically insoluble in water and dichloromethane",
+     "fa": "محلول در متانول، مخلوط‌های اتانول–آب و بافر قلیایی؛ عملاً نامحلول در آب و دی‌کلرومتان"
+    }
+   }
+  ],
+  "stability": {
+   "en": "More resistant to hydrolysis than cellulose acetate phthalate, but exposure to heat and moisture slowly releases free phthalic and acetic acids, which can impair enteric performance. Store in a well-closed container in a cool, dry place.",
+   "fa": "مقاومت آن در برابر هیدرولیز از سلولز استات فتالات بیشتر است، ولی گرما و رطوبت به‌آهستگی فتالیک اسید و استیک اسید آزاد می‌کنند که ممکن است عملکرد روده‌ای را مختل کند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents and with alkaline substances that ionise or hydrolyse the phthalate groups. Its acidic groups may interact with basic drugs in direct contact.",
+   "fa": "با اکسیدکننده‌های قوی و مواد قلیایی که گروه‌های فتالات را یونیزه یا هیدرولیز می‌کنند ناسازگار است. گروه‌های اسیدی آن ممکن است در تماس مستقیم با داروهای بازی برهم‌کنش داشته باشند."
+  },
+  "manufacture": {
+   "en": "Prepared by esterifying partially hydrolysed polyvinyl acetate (a low-molecular-weight polyvinyl alcohol containing residual acetate groups) with phthalic anhydride in the presence of sodium acetate, followed by purification.",
+   "fa": "از استری کردن پلی‌وینیل استات تا حدی هیدرولیزشده (پلی‌وینیل الکل با وزن مولکولی پایین که گروه‌های استات باقی‌مانده دارد) با فتالیک انیدرید در حضور سدیم استات و سپس خالص‌سازی تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Used in oral solid dosage forms and regarded as non-toxic and non-irritant; the polymer is not significantly absorbed from the gastrointestinal tract.",
+   "fa": "در اشکال دارویی جامد خوراکی مصرف می‌شود و غیرسمی و غیرمحرک شناخته می‌شود؛ پلیمر به مقدار قابل توجهی از دستگاه گوارش جذب نمی‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid dust inhalation; eye protection, gloves and a dust mask are recommended. Organic coating solutions are flammable.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از استنشاق گردوغبار خودداری شود؛ محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود. محلول‌های پوشش‌دهی آلی قابل اشتعال‌اند."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral tablets, including delayed-release tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (قرص خوراکی از جمله قرص تأخیری‌رهش) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Cellulose acetate phthalate; hypromellose phthalate; polymethacrylates; shellac.",
+   "fa": "سلولز استات فتالات؛ هیپروملوز فتالات؛ پلی‌متاکریلات‌ها؛ شلاک."
+  },
+  "comments": {
+   "en": "Polyvinyl acetate phthalate dissolves at a relatively low pH among enteric polymers, so drug release begins early in the duodenum. Free phthalic acid content should be monitored on storage, since it increases as the polymer hydrolyses.",
+   "fa": "پلی‌وینیل استات فتالات در میان پلیمرهای روده‌ای در pH نسبتاً پایینی حل می‌شود، بنابراین آزادسازی دارو زود و در دوازدهه آغاز می‌شود. مقدار فتالیک اسید آزاد باید در طول نگهداری پایش شود، زیرا با هیدرولیز پلیمر افزایش می‌یابد."
+  },
+  "refs": [
+   "usp",
+   "iid"
+  ]
+ }
+}

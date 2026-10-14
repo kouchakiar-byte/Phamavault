@@ -1,0 +1,383 @@
+{
+ "Microcrystalline cellulose": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Microcrystalline Cellulose"
+   },
+   {
+    "ph": "JP",
+    "name": "Microcrystalline Cellulose"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Cellulose, Microcrystalline"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Microcrystalline Cellulose"
+   }
+  ],
+  "tradeNames": "Avicel PH; Celex; cellulose gel; Emcocel; Ethispheres; Fibrocel; Pharmacel; Tabulose; Vivapur; E460(i)",
+  "chemicalName": "Cellulose",
+  "formula": "(C6H10O5)n, n ≈ 220",
+  "mw": "≈ 36 000",
+  "applications": {
+   "en": "Microcrystalline cellulose is one of the most widely used tablet and capsule diluents, in both wet granulation and direct compression. Besides acting as a filler and dry binder it has some lubricant and disintegrant properties, which makes it especially useful in direct compression. Typical concentrations: tablet binder/diluent 20–90%; capsule binder/diluent 20–90%; adsorbent 20–90%; antiadherent 5–20%; tablet disintegrant 5–15%. It is also used in cosmetics and foods.",
+   "fa": "سلولز میکروکریستالی یکی از پرمصرف‌ترین رقیق‌کننده‌ها (پرکننده‌ها) در قرص و کپسول است و هم در گرانولاسیون مرطوب و هم در پرس مستقیم به کار می‌رود. علاوه بر نقش پرکننده و چسباننده خشک، خاصیت لغزان‌کنندگی و متلاشی‌کنندگی هم دارد و به همین دلیل در پرس مستقیم بسیار مفید است. غلظت‌های متداول: چسباننده/رقیق‌کننده قرص 20–90٪؛ چسباننده/رقیق‌کننده کپسول 20–90٪؛ جاذب 20–90٪؛ ضدچسبندگی 5–20٪؛ متلاشی‌کننده قرص 5–15٪. در صنایع آرایشی و غذایی نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "A purified, partially depolymerised cellulose. White, odourless, tasteless, crystalline powder made up of porous particles. Commercial grades differ in particle size and moisture content, which govern their properties and uses.",
+   "fa": "سلولز خالص‌شده و تا حدی دپلیمریزه. پودر کریستالی سفید، بی‌بو و بی‌مزه که از ذرات متخلخل تشکیل شده است. گریدهای تجاری از نظر اندازه ذره و مقدار رطوبت با هم فرق دارند و همین تفاوت، ویژگی‌ها و کاربرد آن‌ها را تعیین می‌کند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Particle size (nominal mean)",
+     "fa": "اندازه ذره (میانگین اسمی)"
+    },
+    "v": {
+     "en": "≈ 50 µm (Avicel PH-101); ≈ 100 µm (PH-102); ≈ 180 µm (PH-200)",
+     "fa": "حدود 50 µm (Avicel PH-101)؛ حدود 100 µm (PH-102)؛ حدود 180 µm (PH-200)"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "bulk ≈ 0.32 g/cm³ and tapped ≈ 0.45 g/cm³ (PH-101); true 1.512–1.668 g/cm³",
+     "fa": "توده حدود 0.32 g/cm³ و ضربه‌ای حدود 0.45 g/cm³ (PH-101)؛ حقیقی 1.512–1.668 g/cm³"
+    }
+   },
+   {
+    "k": {
+     "en": "Moisture content",
+     "fa": "مقدار رطوبت"
+    },
+    "v": {
+     "en": "typically below 5% w/w; low-moisture grades below 1.5%",
+     "fa": "معمولاً کمتر از 5٪ وزنی؛ گریدهای کم‌رطوبت کمتر از 1.5٪"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "chars at 260–270 °C",
+     "fa": "در 260–270 °C زغالی می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "5.0–7.5 (supernatant of a 12.5% w/v aqueous dispersion)",
+     "fa": "5.0–7.5 (مایع رویی سوسپانسیون آبی 12.5٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "slightly soluble in 5% w/v sodium hydroxide solution; practically insoluble in water, dilute acids and most organic solvents",
+     "fa": "کمی محلول در محلول 5٪ سدیم هیدروکسید؛ عملاً نامحلول در آب، اسیدهای رقیق و بیشتر حلال‌های آلی"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable, although hygroscopic. Store the bulk material in a well-closed container in a cool, dry place.",
+   "fa": "پایدار است ولی رطوبت‌گیر است. ماده را در ظرف کاملاً بسته، در جای خنک و خشک نگهداری کنید."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Made by controlled hydrolysis of α-cellulose, obtained as a pulp from fibrous plant material, with dilute mineral acid. The hydrocellulose is purified by filtration and the aqueous slurry is spray-dried to give dry, porous particles of a broad size distribution.",
+   "fa": "از هیدرولیز کنترل‌شده آلفاسلولز (خمیر حاصل از الیاف گیاهی) با اسید معدنی رقیق تهیه می‌شود. هیدروسلولز حاصل با فیلتراسیون خالص‌سازی و دوغاب آبی آن خشک‌کن پاششی (اسپری درای) می‌شود تا ذرات خشک و متخلخل با توزیع اندازه گسترده به دست آید."
+  },
+  "safety": {
+   "en": "Widely used in oral products and foods and regarded as relatively non-toxic and non-irritant. It is not absorbed systemically after oral administration. Very large quantities may have a laxative effect. Misuse of tablets by injection or inhalation has caused cellulose granulomas.",
+   "fa": "در فرآورده‌های خوراکی و غذا به‌طور گسترده مصرف می‌شود و نسبتاً غیرسمی و غیرمحرک شناخته می‌شود. پس از مصرف خوراکی جذب سیستمیک ندارد. مقادیر بسیار زیاد ممکن است اثر ملین داشته باشد. سوءمصرف قرص‌ها به صورت تزریقی یا استنشاقی باعث گرانولوم سلولزی شده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. The dust may irritate the eyes; gloves, eye protection and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. گردوغبار آن ممکن است چشم را تحریک کند؛ استفاده از دستکش، محافظ چشم و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E460). Included in the FDA Inactive Ingredient Database (inhalation; oral capsules, powders, suspensions, syrups and tablets; topical and vaginal preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E460). در FDA Inactive Ingredient Database (استنشاقی؛ کپسول، پودر، سوسپانسیون، شربت و قرص خوراکی؛ فرآورده‌های موضعی و واژینال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Microcrystalline cellulose and carboxymethylcellulose sodium; powdered cellulose; silicified microcrystalline cellulose.",
+   "fa": "سلولز میکروکریستالی همراه با کربوکسی‌متیل‌سلولز سدیم؛ سلولز پودری؛ سلولز میکروکریستالی سیلیسیفیه."
+  },
+  "comments": {
+   "en": "Choose the grade for the process: fine grades (PH-101) suit wet granulation, coarser grades (PH-102, PH-200) flow better in direct compression, and low-moisture grades (PH-112, PH-113) are used with moisture-sensitive drugs.",
+   "fa": "گرید را بر اساس فرآیند انتخاب کنید: گریدهای ریز (PH-101) برای گرانولاسیون مرطوب، گریدهای درشت‌تر (PH-102 و PH-200) برای جریان‌پذیری بهتر در پرس مستقیم، و گریدهای کم‌رطوبت (PH-112 و PH-113) برای داروهای حساس به رطوبت مناسب‌اند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "eu-additives",
+   "gras"
+  ]
+ },
+ "Magnesium stearate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Magnesium Stearate"
+   },
+   {
+    "ph": "JP",
+    "name": "Magnesium Stearate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Magnesium Stearate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Magnesium Stearate"
+   }
+  ],
+  "tradeNames": "Dibasic magnesium stearate; magnesium distearate; magnesii stearas; magnesium octadecanoate; octadecanoic acid, magnesium salt; Synpro 90; E470b",
+  "chemicalName": "Octadecanoic acid magnesium salt",
+  "formula": "C36H70MgO4",
+  "mw": "591.24",
+  "applications": {
+   "en": "Used mainly as a lubricant in tablet and capsule manufacture, at 0.25–5.0% w/w. It is also used in barrier creams and as a food additive.",
+   "fa": "عمدتاً به عنوان لغزان‌کننده (لوبریکانت) در ساخت قرص و کپسول با غلظت 0.25–5.0٪ وزنی به کار می‌رود. در کرم‌های محافظ پوست و به عنوان افزودنی غذایی نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "A very fine, light, white, precipitated or milled powder of low bulk density, with a faint odour of stearic acid and a characteristic taste. It is greasy to the touch and adheres readily to the skin. The material is a mixture of magnesium salts of fatty acids, mainly stearic and palmitic acid; Ph. Eur. requires stearic acid ≥ 40% and stearic plus palmitic acid ≥ 90% of the fatty-acid fraction.",
+   "fa": "پودر بسیار ریز، سبک و سفید (رسوبی یا آسیاب‌شده) با چگالی توده کم، بوی ضعیف استئاریک اسید و طعم مشخص. لمس آن چرب است و به‌راحتی به پوست می‌چسبد. این ماده مخلوطی از نمک‌های منیزیم اسیدهای چرب، عمدتاً استئاریک و پالمیتیک اسید است؛ فارماکوپه اروپا استئاریک اسید را دست‌کم 40٪ و مجموع استئاریک و پالمیتیک اسید را دست‌کم 90٪ بخش اسید چرب تعیین کرده است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Crystalline forms",
+     "fa": "اشکال کریستالی"
+    },
+    "v": {
+     "en": "trihydrate (acicular), dihydrate (lamellar) and anhydrate; commercial material is often a mixture, and the form affects lubricant performance",
+     "fa": "تری‌هیدرات (سوزنی)، دی‌هیدرات (لایه‌ای) و بدون آب؛ ماده تجاری اغلب مخلوطی از این‌هاست و نوع فرم بر عملکرد لغزان‌کنندگی اثر دارد"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "bulk ≈ 0.16 g/cm³; tapped ≈ 0.29 g/cm³; true ≈ 1.09 g/cm³",
+     "fa": "توده حدود 0.16 g/cm³؛ ضربه‌ای حدود 0.29 g/cm³؛ حقیقی حدود 1.09 g/cm³"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting range",
+     "fa": "محدوده ذوب"
+    },
+    "v": {
+     "en": "117–150 °C (commercial material); 126–130 °C (high-purity material)",
+     "fa": "117–150 °C (ماده تجاری)؛ 126–130 °C (ماده با خلوص بالا)"
+    }
+   },
+   {
+    "k": {
+     "en": "Specific surface area",
+     "fa": "سطح ویژه"
+    },
+    "v": {
+     "en": "1.6–14.8 m²/g, depending on grade",
+     "fa": "1.6–14.8 m²/g بسته به گرید"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water, ethanol and ether; slightly soluble in warm benzene and warm ethanol (95%)",
+     "fa": "عملاً نامحلول در آب، اتانول و اتر؛ کمی محلول در بنزن گرم و اتانول 95٪ گرم"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable. Store in a well-closed container in a cool, dry place.",
+   "fa": "پایدار است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong acids, alkalis and iron salts; avoid mixing with strong oxidising materials. It should not be used with aspirin, some vitamins and most alkaloidal salts.",
+   "fa": "با اسیدها و قلیاهای قوی و نمک‌های آهن ناسازگار است؛ از مخلوط کردن آن با مواد اکسیدکننده قوی خودداری شود. نباید همراه آسپرین، برخی ویتامین‌ها و بیشتر نمک‌های آلکالوئیدی به کار رود."
+  },
+  "manufacture": {
+   "en": "Prepared either by reacting aqueous solutions of magnesium chloride and sodium stearate, or by reacting magnesium oxide, hydroxide or carbonate with stearic acid at elevated temperature.",
+   "fa": "یا از واکنش محلول‌های آبی منیزیم کلرید و سدیم استئارات، یا از واکنش منیزیم اکسید، هیدروکسید یا کربنات با استئاریک اسید در دمای بالا تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Widely used in oral products and regarded as non-toxic after oral administration. Very large oral doses may have a laxative effect or irritate the mucosa. The fine powder should not be inhaled.",
+   "fa": "در فرآورده‌های خوراکی به‌طور گسترده مصرف می‌شود و پس از مصرف خوراکی غیرسمی شناخته می‌شود. دوزهای خوراکی بسیار زیاد ممکن است اثر ملین یا تحریک مخاط داشته باشد. پودر ریز آن نباید استنشاق شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended, and a dust respirator where dust is generated; use with adequate ventilation.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. محافظ چشم و دستکش، و در صورت ایجاد گردوغبار ماسک تنفسی توصیه می‌شود؛ در محیط با تهویه کافی کار شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E470b). Included in the FDA Inactive Ingredient Database (oral capsules, powders and tablets; buccal and vaginal tablets; topical preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E470b). در FDA Inactive Ingredient Database (کپسول، پودر و قرص خوراکی؛ قرص باکال و واژینال؛ فرآورده‌های موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Calcium stearate; magnesium aluminium silicate; stearic acid; zinc stearate.",
+   "fa": "کلسیم استئارات؛ منیزیم آلومینیوم سیلیکات؛ استئاریک اسید؛ زینک استئارات."
+  },
+  "comments": {
+   "en": "Magnesium stearate is hydrophobic and can slow the dissolution of a drug from a solid dosage form, so the lowest effective level should be used. Over-blending lowers tablet hardness and lengthens disintegration and dissolution; it is normally added last and blended for a short time (typically 2–5 minutes). Lubricant performance varies between suppliers and lots because of differences in hydrate form, particle size and specific surface area.",
+   "fa": "منیزیم استئارات آب‌گریز است و می‌تواند انحلال دارو از شکل دارویی جامد را کند کند؛ بنابراین کمترین غلظت مؤثر باید به کار رود. اختلاط بیش از حد سختی قرص را کم و زمان متلاشی شدن و انحلال را طولانی می‌کند؛ معمولاً در آخر اضافه و مدت کوتاهی (معمولاً 2–5 دقیقه) مخلوط می‌شود. به دلیل تفاوت فرم هیدراته، اندازه ذره و سطح ویژه، عملکرد لغزان‌کنندگی بین تأمین‌کنندگان و سری‌های مختلف متفاوت است."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "eu-additives",
+   "gras"
+  ]
+ },
+ "Lactose monohydrate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Lactose Monohydrate"
+   },
+   {
+    "ph": "JP",
+    "name": "Lactose Hydrate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Lactose Monohydrate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Lactose Monohydrate"
+   }
+  ],
+  "tradeNames": "CapsuLac; GranuLac; Lactochem; lactosum monohydricum; milk sugar; Pharmatose; PrismaLac; SacheLac; SorboLac; SpheroLac; Tablettose",
+  "chemicalName": "O-β-D-Galactopyranosyl-(1→4)-α-D-glucopyranose monohydrate",
+  "formula": "C12H22O11·H2O",
+  "mw": "360.31",
+  "applications": {
+   "en": "Widely used as a filler and diluent in tablets and capsules and, to a lesser extent, in lyophilised products and infant formulas. Fine (milled) grades are used in wet granulation and to make dilutions of potent drugs; coarse sieved grades flow better and are used in capsule filling; specially prepared grades are used as carriers in dry powder inhalers. Spray-dried and anhydrous lactose are preferred for direct compression.",
+   "fa": "به‌طور گسترده به عنوان پرکننده و رقیق‌کننده در قرص و کپسول، و به میزان کمتر در فرآورده‌های لیوفیلیزه و شیرخشک نوزاد به کار می‌رود. گریدهای ریز (آسیاب‌شده) در گرانولاسیون مرطوب و رقیق‌سازی داروهای قوی، گریدهای درشت الک‌شده به دلیل جریان‌پذیری بهتر در پرکردن کپسول، و گریدهای ویژه به عنوان حامل در افشانه‌های پودر خشک استنشاقی (DPI) مصرف می‌شوند. برای پرس مستقیم، لاکتوز اسپری‌درای و لاکتوز بدون آب ترجیح داده می‌شوند."
+  },
+  "description": {
+   "en": "White to off-white crystalline particles or powder. Odourless and slightly sweet-tasting; its sweetness is roughly a fifth of that of sucrose.",
+   "fa": "ذرات یا پودر کریستالی سفید تا سفید مایل به کرم. بی‌بو با طعم کمی شیرین؛ شیرینی آن حدود یک‌پنجم ساکارز است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "201–202 °C (dehydrated α-lactose)",
+     "fa": "201–202 °C (آلفالاکتوز پس از آب‌زدایی)"
+    }
+   },
+   {
+    "k": {
+     "en": "Water content",
+     "fa": "مقدار آب"
+    },
+    "v": {
+     "en": "4.5–5.5% w/w (water of crystallisation, by Karl Fischer)",
+     "fa": "4.5–5.5٪ وزنی (آب تبلور، به روش کارل فیشر)"
+    }
+   },
+   {
+    "k": {
+     "en": "True density",
+     "fa": "چگالی حقیقی"
+    },
+    "v": {
+     "en": "≈ 1.545 g/cm³",
+     "fa": "حدود 1.545 g/cm³"
+    }
+   },
+   {
+    "k": {
+     "en": "Specific rotation",
+     "fa": "چرخش ویژه"
+    },
+    "v": {
+     "en": "+54.4° to +55.9° (anhydrous basis, at equilibrium)",
+     "fa": "+54.4° تا +55.9° (بر پایه بدون آب، در حالت تعادل)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water (about 1 in 5 at 25 °C); practically insoluble in chloroform, ethanol and ether",
+     "fa": "به‌راحتی محلول در آب (حدود 1 در 5 در 25 °C)؛ عملاً نامحلول در کلروفرم، اتانول و اتر"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Mould growth can occur under humid conditions (80% RH and above). Lactose may brown on storage, faster in warm, damp conditions. Solutions show mutarotation. Store in a well-closed container in a cool, dry place.",
+   "fa": "در رطوبت بالا (80٪ رطوبت نسبی و بیشتر) ممکن است کپک بزند. در طول نگهداری ممکن است قهوه‌ای شود که در شرایط گرم و مرطوب سریع‌تر رخ می‌دهد. محلول‌های آن موتاروتاسیون نشان می‌دهند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "As a reducing sugar it undergoes Maillard-type condensation with compounds having a primary amine group (for example amino acids, amphetamines and aminophylline), giving brown products; the reaction is faster with amorphous than with crystalline lactose. It is also incompatible with strong oxidisers.",
+   "fa": "به عنوان قند احیاکننده با ترکیبات دارای گروه آمین نوع اول (مانند اسیدهای آمینه، آمفتامین‌ها و آمینوفیلین) واکنش میلارد می‌دهد و محصولات قهوه‌ای ایجاد می‌کند؛ این واکنش در لاکتوز آمورف سریع‌تر از لاکتوز کریستالی است. با اکسیدکننده‌های قوی نیز ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Obtained from whey, the by-product of cheese making. α-Lactose monohydrate crystallises from a supersaturated solution below 93.5 °C; the crystals are separated, dried, milled and sieved into grades of different particle size.",
+   "fa": "از آب‌پنیر (محصول جانبی تولید پنیر) به دست می‌آید. آلفالاکتوز مونوهیدرات از محلول فوق‌اشباع در دمای کمتر از 93.5 °C کریستالیزه می‌شود؛ کریستال‌ها جدا، خشک، آسیاب و الک می‌شوند تا گریدهایی با اندازه ذره متفاوت به دست آید."
+  },
+  "safety": {
+   "en": "Widely used and generally non-toxic. People with lactase deficiency (lactose intolerance) can develop abdominal cramps, diarrhoea and flatulence after large amounts; the quantities in most tablets and capsules are usually too small to cause symptoms, but this should be considered for sensitive patients.",
+   "fa": "به‌طور گسترده مصرف می‌شود و عموماً غیرسمی است. افراد دچار کمبود لاکتاز (عدم تحمل لاکتوز) پس از مصرف مقادیر زیاد ممکن است دچار دل‌درد، اسهال و نفخ شوند؛ مقدار موجود در بیشتر قرص‌ها و کپسول‌ها معمولاً برای ایجاد علامت کافی نیست، ولی در بیماران حساس باید در نظر گرفته شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Excessive dust should be avoided; eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد گردوغبار زیاد خودداری شود؛ محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Included in the FDA Inactive Ingredient Database (inhalation; oral capsules and tablets; parenteral preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در FDA Inactive Ingredient Database (استنشاقی؛ کپسول و قرص خوراکی؛ فرآورده‌های تزریقی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Lactose, anhydrous; lactose, inhalation; lactose, spray-dried; lactose monohydrate and microcrystalline cellulose; lactose monohydrate and povidone.",
+   "fa": "لاکتوز بدون آب؛ لاکتوز مخصوص استنشاق؛ لاکتوز اسپری‌درای؛ ترکیب لاکتوز مونوهیدرات و سلولز میکروکریستالی؛ ترکیب لاکتوز مونوهیدرات و پوویدون."
+  },
+  "comments": {
+   "en": "Lactose monohydrate is not suited to direct compression on its own because of poor flow and compressibility; use spray-dried or agglomerated grades for that. For dry powder inhalers the particle size distribution and fine-particle fraction of the carrier strongly affect drug delivery and must be controlled.",
+   "fa": "لاکتوز مونوهیدرات به‌تنهایی به دلیل جریان‌پذیری و تراکم‌پذیری ضعیف برای پرس مستقیم مناسب نیست؛ برای این کار از گریدهای اسپری‌درای یا آگلومره استفاده کنید. در افشانه‌های پودر خشک، توزیع اندازه ذره و سهم ذرات ریز حامل بر رسانش دارو اثر زیادی دارد و باید کنترل شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras"
+  ]
+ }
+}

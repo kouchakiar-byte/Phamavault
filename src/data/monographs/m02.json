@@ -1,0 +1,1989 @@
+{
+ "Butylparaben": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Butyl Hydroxybenzoate"
+   },
+   {
+    "ph": "JP",
+    "name": "Butyl Parahydroxybenzoate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Butyl Parahydroxybenzoate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Butylparaben"
+   }
+  ],
+  "tradeNames": "Butyl p-hydroxybenzoate; butyl 4-hydroxybenzoate; butylis parahydroxybenzoas; butyl parahydroxybenzoate; Nipabutyl; Tegosept B",
+  "chemicalName": "Butyl 4-hydroxybenzoate",
+  "formula": "C11H14O3",
+  "mw": "194.23",
+  "applications": {
+   "en": "Used as an antimicrobial preservative in oral and topical pharmaceutical products, cosmetics and toiletries, usually in combination with other parabens such as methylparaben. Its low water solubility limits its use in aqueous systems. Typical concentrations: oral suspensions 0.006–0.05%; topical preparations 0.02–0.4%.",
+   "fa": "به عنوان نگهدارنده ضدمیکروبی در فرآورده‌های دارویی خوراکی و موضعی و نیز محصولات آرایشی و بهداشتی به کار می‌رود و معمولاً همراه پارابن‌های دیگر مانند متیل‌پارابن مصرف می‌شود. حلالیت کم آن در آب، کاربردش را در سامانه‌های آبی محدود می‌کند. غلظت‌های متداول: سوسپانسیون خوراکی 0.006–0.05٪؛ فرآورده‌های موضعی 0.02–0.4٪."
+  },
+  "description": {
+   "en": "Colourless crystals or a white, crystalline powder. It is odourless or almost odourless and has a slight burning taste.",
+   "fa": "بلورهای بی‌رنگ یا پودر کریستالی سفید. بی‌بو یا تقریباً بی‌بو است و طعم کمی سوزاننده دارد."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "68–71 °C",
+     "fa": "68–71 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "very slightly soluble in water; freely soluble in ethanol (95%), acetone and ether; soluble in propylene glycol",
+     "fa": "بسیار کم محلول در آب؛ به‌آسانی محلول در اتانول 95٪، استون و اتر؛ محلول در پروپیلن گلیکول"
+    }
+   },
+   {
+    "k": {
+     "en": "pKa",
+     "fa": "pKa"
+    },
+    "v": {
+     "en": "≈ 8.4 (phenolic hydroxyl)",
+     "fa": "حدود 8.4 (گروه هیدروکسیل فنولی)"
+    }
+   },
+   {
+    "k": {
+     "en": "Antimicrobial spectrum",
+     "fa": "طیف ضدمیکروبی"
+    },
+    "v": {
+     "en": "most active against yeasts and moulds; activity against Gram-positive bacteria is greater than against Gram-negative bacteria",
+     "fa": "بیشترین اثر بر مخمرها و کپک‌ها؛ اثر بر باکتری‌های گرم‌مثبت بیشتر از گرم‌منفی است"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Aqueous solutions at pH 3–6 are stable for long periods at room temperature and can be sterilised by autoclaving, whereas at pH 8 and above the ester is hydrolysed fairly quickly. Store in a well-closed container in a cool, dry place.",
+   "fa": "محلول‌های آبی در pH 3–6 در دمای اتاق مدت طولانی پایدارند و با اتوکلاو قابل استریل شدن‌اند، ولی در pH 8 و بالاتر استر نسبتاً سریع هیدرولیز می‌شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Antimicrobial activity is markedly reduced by nonionic surfactants such as polysorbate 80 (micellar binding) and by cyclodextrins. Parabens are absorbed by some plastics and may be adsorbed by magnesium trisilicate, talc and similar powders. Iron salts cause discoloration, and weak alkalis and strong acids cause hydrolysis.",
+   "fa": "فعالیت ضدمیکروبی آن در حضور سورفکتانت‌های غیریونی مانند پلی‌سوربات 80 (به دلیل اتصال میسلی) و سیکلودکسترین‌ها به‌شدت کاهش می‌یابد. پارابن‌ها جذب برخی پلاستیک‌ها می‌شوند و ممکن است روی منیزیم تری‌سیلیکات، تالک و پودرهای مشابه جذب سطحی شوند. نمک‌های آهن باعث تغییر رنگ، و قلیاهای ضعیف و اسیدهای قوی باعث هیدرولیز آن می‌شوند."
+  },
+  "manufacture": {
+   "en": "Prepared by esterifying p-hydroxybenzoic acid with n-butanol in the presence of an acid catalyst, followed by purification.",
+   "fa": "از استری شدن پارا-هیدروکسی‌بنزوئیک اسید با n-بوتانول در حضور کاتالیزور اسیدی و سپس خالص‌سازی تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Parabens are widely used and are of low systemic toxicity; the main adverse effects are hypersensitivity reactions, usually delayed-type contact dermatitis. Butylparaben shows weak oestrogenic activity in some test systems, and for this reason its use in cosmetics has been restricted in the EU.",
+   "fa": "پارابن‌ها به‌طور گسترده مصرف می‌شوند و سمیت سیستمیک کمی دارند؛ عارضه اصلی آن‌ها واکنش‌های حساسیتی، معمولاً درماتیت تماسی از نوع تأخیری، است. بوتیل‌پارابن در برخی آزمون‌ها اثر استروژنی ضعیف نشان داده و به همین دلیل مصرف آن در محصولات آرایشی در اتحادیه اروپا محدود شده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral and topical preparations) and in non-parenteral medicines licensed in Europe. It is not authorised as a food additive in the EU. In EU cosmetics the combined content of butylparaben and propylparaben is limited to 0.14% (as acid), and they are not permitted in leave-on products for the nappy area of children under 3 years.",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های خوراکی و موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد. در اتحادیه اروپا به عنوان افزودنی غذایی مجاز نیست. در محصولات آرایشی اروپا، مجموع بوتیل‌پارابن و پروپیل‌پارابن به 0.14٪ (بر حسب اسید) محدود شده و مصرف آن‌ها در محصولات ماندگار (leave-on) برای ناحیه پوشک کودکان زیر 3 سال مجاز نیست."
+  },
+  "related": {
+   "en": "Butylparaben sodium; ethylparaben; methylparaben; propylparaben.",
+   "fa": "بوتیل‌پارابن سدیم؛ اتیل‌پارابن؛ متیل‌پارابن؛ پروپیل‌پارابن."
+  },
+  "comments": {
+   "en": "Antimicrobial activity of the parabens rises with the length of the alkyl chain while water solubility falls, so butylparaben is the most active but least soluble of the common parabens. Combinations of parabens show additive or synergistic activity, and the sodium salt is sometimes used to improve aqueous solubility.",
+   "fa": "با افزایش طول زنجیره آلکیل، فعالیت ضدمیکروبی پارابن‌ها بیشتر و حلالیت آبی آن‌ها کمتر می‌شود؛ بنابراین بوتیل‌پارابن فعال‌ترین و کم‌محلول‌ترین پارابن رایج است. ترکیب پارابن‌ها اثر افزایشی یا سینرژیک دارد و گاهی برای افزایش حلالیت آبی از نمک سدیم آن استفاده می‌شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid"
+  ]
+ },
+ "Calcium alginate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Calcium Alginate"
+   }
+  ],
+  "tradeNames": "Alginic acid, calcium salt; calcium polymannuronate; E404",
+  "chemicalName": "Calcium alginate",
+  "formula": "(C12H14CaO12)n",
+  "mw": "",
+  "applications": {
+   "en": "Used as a tablet disintegrant, as a thickening, gelling and stabilising agent, and in controlled-release systems such as calcium-crosslinked alginate beads and microcapsules. Fibres of calcium alginate are widely used in absorbent, haemostatic wound dressings. It is also used in foods.",
+   "fa": "به عنوان متلاشی‌کننده قرص، عامل غلیظ‌کننده، ژل‌ساز و پایدارکننده، و در سامانه‌های رهش کنترل‌شده مانند دانه‌ها و میکروکپسول‌های آلژینات با اتصال عرضی کلسیمی به کار می‌رود. الیاف کلسیم آلژینات به‌طور گسترده در پانسمان‌های جاذب و بندآورنده خون استفاده می‌شوند. در صنایع غذایی نیز مصرف دارد."
+  },
+  "description": {
+   "en": "A white to pale yellowish-brown, almost odourless and tasteless powder or fibrous material.",
+   "fa": "پودر یا ماده رشته‌ای سفید تا قهوه‌ای مایل به زرد کم‌رنگ، تقریباً بی‌بو و بی‌مزه."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water, ethanol and other organic solvents; dissolves in solutions of substances that bind calcium, such as sodium citrate",
+     "fa": "عملاً نامحلول در آب، اتانول و سایر حلال‌های آلی؛ در محلول موادی که کلسیم را به دام می‌اندازند (مانند سدیم سیترات) حل می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Composition",
+     "fa": "ترکیب"
+    },
+    "v": {
+     "en": "calcium salt of a linear copolymer of β-D-mannuronic acid and α-L-guluronic acid; the M/G ratio depends on the seaweed source",
+     "fa": "نمک کلسیم کوپلیمر خطی بتا-D-مانورونیک اسید و آلفا-L-گولورونیک اسید؛ نسبت M/G به منبع جلبک بستگی دارد"
+    }
+   },
+   {
+    "k": {
+     "en": "Behaviour in sodium-containing fluids",
+     "fa": "رفتار در مایعات حاوی سدیم"
+    },
+    "v": {
+     "en": "exchanges calcium for sodium ions to form a soft, hydrophilic gel",
+     "fa": "یون کلسیم را با سدیم مبادله می‌کند و ژل نرم و آب‌دوست تشکیل می‌دهد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable when kept dry. Store in a well-closed container in a cool, dry place.",
+   "fa": "در شرایط خشک پایدار است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Calcium-sequestering agents such as citrates, phosphates and edetate break down the calcium crosslinks and dissolve or weaken the gel. Incompatible with strong oxidising agents.",
+   "fa": "عوامل کی‌لیت‌کننده کلسیم مانند سیترات‌ها، فسفات‌ها و ادتات، اتصالات عرضی کلسیمی را از بین می‌برند و ژل را حل یا سست می‌کنند. با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Alginic acid is extracted from brown seaweeds (Phaeophyceae) with dilute alkali, and calcium alginate is precipitated by adding a soluble calcium salt such as calcium chloride to a sodium alginate solution. Fibres are made by extruding sodium alginate solution into a calcium chloride bath.",
+   "fa": "آلژینیک اسید با قلیای رقیق از جلبک‌های قهوه‌ای (Phaeophyceae) استخراج می‌شود و کلسیم آلژینات با افزودن یک نمک محلول کلسیم مانند کلسیم کلرید به محلول سدیم آلژینات رسوب داده می‌شود. الیاف آن با اکستروژن محلول سدیم آلژینات به داخل حمام کلسیم کلرید ساخته می‌شوند."
+  },
+  "safety": {
+   "en": "Generally regarded as non-toxic and non-irritant. Alginate wound dressings are well tolerated, and alginates are widely consumed in foods.",
+   "fa": "به‌طور کلی غیرسمی و غیرمحرک شناخته می‌شود. پانسمان‌های آلژیناتی به‌خوبی تحمل می‌شوند و آلژینات‌ها به‌طور گسترده در غذا مصرف می‌شوند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid generating and inhaling dust; eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد و استنشاق گردوغبار خودداری شود؛ محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E404).",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E404)."
+  },
+  "related": {
+   "en": "Alginic acid; potassium alginate; propylene glycol alginate; sodium alginate.",
+   "fa": "آلژینیک اسید؛ پتاسیم آلژینات؛ پروپیلن گلیکول آلژینات؛ سدیم آلژینات."
+  },
+  "comments": {
+   "en": "Gels rich in guluronic acid (high G) bind calcium more strongly and are firmer and more brittle than mannuronic-rich gels. In wound dressings the ion exchange with sodium in exudate turns the fibres into a moist gel that can be removed with little trauma.",
+   "fa": "ژل‌های غنی از گولورونیک اسید (G بالا) کلسیم را محکم‌تر متصل می‌کنند و سفت‌تر و شکننده‌تر از ژل‌های غنی از مانورونیک اسید هستند. در پانسمان‌ها، تبادل یون با سدیم موجود در ترشحات زخم الیاف را به ژل مرطوبی تبدیل می‌کند که با آسیب کم برداشته می‌شود."
+  },
+  "refs": [
+   "eu-additives",
+   "gras"
+  ]
+ },
+ "Calcium carbonate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Calcium Carbonate"
+   },
+   {
+    "ph": "JP",
+    "name": "Precipitated Calcium Carbonate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Calcium Carbonate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Calcium Carbonate"
+   }
+  ],
+  "tradeNames": "Calcii carbonas; calcium carbonate, precipitated; precipitated chalk; Destab; Millicarb; Omyapure; Pharma-Carb; Vivapress Ca; E170",
+  "chemicalName": "Carbonic acid, calcium salt (1:1)",
+  "formula": "CaCO3",
+  "mw": "100.09",
+  "applications": {
+   "en": "Used as a diluent in tablets and capsules (special granulated grades are made for direct compression), as a base for chewable and medicated confectionery tablets, as a buffering and dissolution aid, and as an opacifier and white colour in coatings. It is also used therapeutically as an antacid and calcium supplement, in which case it may make up most of the tablet weight, and as a food additive.",
+   "fa": "به عنوان رقیق‌کننده در قرص و کپسول (گریدهای گرانوله ویژه برای پرس مستقیم ساخته می‌شوند)، پایه قرص‌های جویدنی و شیرینی‌های دارویی، عامل بافری و کمک‌کننده انحلال، و کدرکننده و رنگ سفید در پوشش‌ها به کار می‌رود. همچنین به صورت درمانی به عنوان آنتی‌اسید و مکمل کلسیم مصرف می‌شود که در این حالت ممکن است بخش عمده وزن قرص را تشکیل دهد؛ به عنوان افزودنی غذایی نیز کاربرد دارد."
+  },
+  "description": {
+   "en": "A white, odourless and tasteless powder or crystals. Precipitated grades consist of fine particles; ground grades are produced from natural limestone or chalk.",
+   "fa": "پودر یا بلورهای سفید، بی‌بو و بی‌مزه. گریدهای رسوبی از ذرات ریز تشکیل شده‌اند و گریدهای آسیاب‌شده از سنگ آهک یا گچ طبیعی تهیه می‌شوند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Crystal forms",
+     "fa": "اشکال کریستالی"
+    },
+    "v": {
+     "en": "calcite (rhombohedral, the stable form) and aragonite (orthorhombic)",
+     "fa": "کلسیت (رومبوهدرال، فرم پایدار) و آراگونیت (ارتورومبیک)"
+    }
+   },
+   {
+    "k": {
+     "en": "True density",
+     "fa": "چگالی حقیقی"
+    },
+    "v": {
+     "en": "≈ 2.7 g/cm³ (calcite)",
+     "fa": "حدود 2.7 g/cm³ (کلسیت)"
+    }
+   },
+   {
+    "k": {
+     "en": "Thermal behaviour",
+     "fa": "رفتار حرارتی"
+    },
+    "v": {
+     "en": "decomposes above about 800 °C to calcium oxide and carbon dioxide",
+     "fa": "در دمای بالاتر از حدود 800 °C به کلسیم اکسید و کربن دی‌اکسید تجزیه می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water and ethanol; solubility in water is increased by carbon dioxide and ammonium salts; dissolves with effervescence in dilute acids",
+     "fa": "عملاً نامحلول در آب و اتانول؛ حلالیت در آب با کربن دی‌اکسید و نمک‌های آمونیوم افزایش می‌یابد؛ در اسیدهای رقیق با جوشش حل می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "≈ 9 (saturated aqueous suspension)",
+     "fa": "حدود 9 (سوسپانسیون آبی اشباع)"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically stable. Store in a well-closed container in a cool, dry place.",
+   "fa": "از نظر شیمیایی پایدار است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Reacts with acids and ammonium salts with release of carbon dioxide, and can raise the microenvironmental pH of formulations containing acid-labile drugs. Calcium ions reduce the absorption of drugs such as tetracyclines and fluoroquinolones by forming complexes.",
+   "fa": "با اسیدها و نمک‌های آمونیوم واکنش داده و کربن دی‌اکسید آزاد می‌کند و می‌تواند pH ریزمحیط فرمولاسیون‌های حاوی داروهای حساس به اسید را بالا ببرد. یون کلسیم با تشکیل کمپلکس، جذب داروهایی مانند تتراسایکلین‌ها و فلوروکینولون‌ها را کاهش می‌دهد."
+  },
+  "manufacture": {
+   "en": "Precipitated calcium carbonate is made by passing carbon dioxide through a suspension of calcium hydroxide (from calcined limestone), or by reacting calcium chloride with sodium carbonate in solution. Ground calcium carbonate is obtained by milling and classifying purified natural limestone or chalk.",
+   "fa": "کلسیم کربنات رسوبی با عبور دادن کربن دی‌اکسید از سوسپانسیون کلسیم هیدروکسید (حاصل از تکلیس سنگ آهک) یا از واکنش کلسیم کلرید با سدیم کربنات در محلول تهیه می‌شود. کلسیم کربنات آسیاب‌شده از آسیاب و دانه‌بندی سنگ آهک یا گچ طبیعی خالص‌شده به دست می‌آید."
+  },
+  "safety": {
+   "en": "Regarded as non-toxic at excipient levels. At therapeutic antacid doses it may cause constipation and acid rebound, and prolonged high intake, especially with milk or other alkalis, can lead to hypercalcaemia and milk-alkali syndrome.",
+   "fa": "در مقادیر مصرف به عنوان ماده جانبی غیرسمی شناخته می‌شود. در دوزهای درمانی آنتی‌اسید ممکن است یبوست و بازگشت اسید (acid rebound) ایجاد کند و مصرف طولانی و زیاد، به‌ویژه همراه شیر یا قلیاهای دیگر، می‌تواند به هیپرکلسمی و سندرم شیر-قلیا منجر شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. The dust may irritate the eyes and respiratory tract; eye protection, gloves and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. گردوغبار آن ممکن است چشم و دستگاه تنفس را تحریک کند؛ محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E170). Included in the FDA Inactive Ingredient Database (oral capsules, tablets and other oral preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E170). در FDA Inactive Ingredient Database (کپسول، قرص و سایر فرآورده‌های خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Calcium phosphate, dibasic; calcium phosphate, tribasic; calcium sulfate; magnesium carbonate.",
+   "fa": "کلسیم فسفات دی‌بازیک؛ کلسیم فسفات تری‌بازیک؛ کلسیم سولفات؛ منیزیم کربنات."
+  },
+  "comments": {
+   "en": "Plain powdered calcium carbonate compresses poorly, so direct-compression grades are granulated with a small amount of binder. Its high density allows compact high-dose calcium tablets, but in effervescent or acidic formulations its reaction with acids must be taken into account.",
+   "fa": "پودر ساده کلسیم کربنات قابلیت تراکم ضعیفی دارد، به همین دلیل گریدهای پرس مستقیم با مقدار کمی چسباننده گرانوله می‌شوند. چگالی بالای آن امکان ساخت قرص‌های کوچک کلسیم با دوز بالا را می‌دهد، ولی در فرمولاسیون‌های جوشان یا اسیدی باید واکنش آن با اسید را در نظر گرفت."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "eu-additives",
+   "gras"
+  ]
+ },
+ "Calcium phosphate, dibasic anhydrous": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Anhydrous Calcium Hydrogen Phosphate"
+   },
+   {
+    "ph": "JP",
+    "name": "Anhydrous Dibasic Calcium Phosphate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Calcium Hydrogen Phosphate, Anhydrous"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Anhydrous Dibasic Calcium Phosphate"
+   }
+  ],
+  "tradeNames": "A-TAB; Anhydrous Emcompress; calcium hydrogen orthophosphate; calcium monohydrogen phosphate; dicalcium orthophosphate; DI-CAFOS AN; Fujicalin; phosphoric acid calcium salt (1:1); E341(ii)",
+  "chemicalName": "Calcium hydrogen phosphate",
+  "formula": "CaHPO4",
+  "mw": "136.06",
+  "applications": {
+   "en": "Used as a diluent and filler in tablets and capsules, in both direct compression and wet granulation; coarse or porous grades flow well and are designed for direct compression and can form a large part of the tablet. It is also used as an abrasive in toothpastes, as a calcium and phosphorus source in nutritional supplements, and in foods.",
+   "fa": "به عنوان رقیق‌کننده و پرکننده در قرص و کپسول، هم در پرس مستقیم و هم در گرانولاسیون مرطوب به کار می‌رود؛ گریدهای درشت یا متخلخل جریان‌پذیری خوبی دارند، برای پرس مستقیم طراحی شده‌اند و می‌توانند بخش بزرگی از قرص را تشکیل دهند. در خمیردندان به عنوان ساینده، در مکمل‌های غذایی به عنوان منبع کلسیم و فسفر، و در صنایع غذایی نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "A white, odourless and tasteless powder or crystalline solid. Commercial grades range from fine powders to coarse granules and porous, spray-dried particles.",
+   "fa": "پودر یا جامد کریستالی سفید، بی‌بو و بی‌مزه. گریدهای تجاری از پودرهای ریز تا گرانول‌های درشت و ذرات متخلخل اسپری‌درای متغیرند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water and ethanol; soluble in dilute hydrochloric and nitric acids",
+     "fa": "عملاً نامحلول در آب و اتانول؛ محلول در هیدروکلریک اسید و نیتریک اسید رقیق"
+    }
+   },
+   {
+    "k": {
+     "en": "Loss on ignition",
+     "fa": "افت وزن در اثر سوزاندن"
+    },
+    "v": {
+     "en": "6.6–8.5% w/w (from conversion to calcium pyrophosphate)",
+     "fa": "6.6–8.5٪ وزنی (ناشی از تبدیل به کلسیم پیروفسفات)"
+    }
+   },
+   {
+    "k": {
+     "en": "Hygroscopicity",
+     "fa": "رطوبت‌گیری"
+    },
+    "v": {
+     "en": "non-hygroscopic; does not hydrate to the dihydrate under normal storage conditions",
+     "fa": "رطوبت‌گیر نیست؛ در شرایط معمول نگهداری به دی‌هیدرات تبدیل نمی‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Crystal form",
+     "fa": "فرم کریستالی"
+    },
+    "v": {
+     "en": "triclinic (monetite)",
+     "fa": "تری‌کلینیک (مونتیت)"
+    }
+   },
+   {
+    "k": {
+     "en": "Compaction behaviour",
+     "fa": "رفتار تراکمی"
+    },
+    "v": {
+     "en": "consolidates mainly by brittle fracture; relatively insensitive to lubricant level and tableting speed",
+     "fa": "عمدتاً با شکست ترد (brittle fracture) متراکم می‌شود؛ حساسیت نسبتاً کمی به مقدار لغزان‌کننده و سرعت پرس دارد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable and non-hygroscopic at room temperature. Store in a well-closed container in a cool, dry place.",
+   "fa": "در دمای اتاق پایدار و غیررطوبت‌گیر است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Calcium salts reduce the bioavailability of tetracycline antibiotics. The particle surface is slightly alkaline, so it may be unsuitable for drugs that degrade in an alkaline microenvironment.",
+   "fa": "نمک‌های کلسیم فراهمی زیستی آنتی‌بیوتیک‌های تتراسایکلینی را کاهش می‌دهند. سطح ذرات کمی قلیایی است، بنابراین ممکن است برای داروهایی که در ریزمحیط قلیایی تخریب می‌شوند مناسب نباشد."
+  },
+  "manufacture": {
+   "en": "Made by reacting phosphoric acid with calcium hydroxide or calcium carbonate under controlled conditions and drying the precipitate, or by dehydrating the dihydrate; the conditions of precipitation and drying determine particle size and porosity.",
+   "fa": "از واکنش فسفریک اسید با کلسیم هیدروکسید یا کلسیم کربنات در شرایط کنترل‌شده و خشک کردن رسوب، یا از آب‌زدایی دی‌هیدرات تهیه می‌شود؛ شرایط رسوب‌دهی و خشک کردن، اندازه ذره و تخلخل را تعیین می‌کند."
+  },
+  "safety": {
+   "en": "Widely used in oral pharmaceuticals, foods and toothpastes and regarded as non-toxic and non-irritant.",
+   "fa": "در داروهای خوراکی، غذا و خمیردندان به‌طور گسترده مصرف می‌شود و غیرسمی و غیرمحرک شناخته می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid inhaling the dust; eye protection, gloves and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از استنشاق گردوغبار خودداری شود؛ محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E341(ii)). Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E341(ii)). در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Calcium phosphate, dibasic dihydrate; calcium phosphate, tribasic; calcium carbonate.",
+   "fa": "کلسیم فسفات دی‌بازیک دی‌هیدرات؛ کلسیم فسفات تری‌بازیک؛ کلسیم کربنات."
+  },
+  "comments": {
+   "en": "Unlike the dihydrate, the anhydrous form contains no water of crystallisation, so it is preferred for moisture-sensitive drugs and for processes involving heat. Being insoluble, tablets with a high content may need a disintegrant; the material is also fairly abrasive to tooling.",
+   "fa": "برخلاف دی‌هیدرات، فرم بدون آب آب تبلور ندارد و به همین دلیل برای داروهای حساس به رطوبت و فرآیندهای همراه با حرارت ترجیح داده می‌شود. چون نامحلول است، قرص‌های با مقدار زیاد آن ممکن است به متلاشی‌کننده نیاز داشته باشند؛ این ماده همچنین تا حدی برای ابزار پرس (پانچ و ماتریس) ساینده است."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "eu-additives",
+   "gras"
+  ]
+ },
+ "Calcium phosphate, tribasic": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Calcium Phosphate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Calcium Phosphate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Tribasic Calcium Phosphate"
+   }
+  ],
+  "tradeNames": "Calcii phosphas; hydroxyapatite; hydroxylapatite; precipitated calcium phosphate; tertiary calcium phosphate; tricalcium phosphate; TRI-CAFOS; TRI-TAB; E341(iii)",
+  "chemicalName": "Variable mixture of calcium phosphates, approximating to hydroxyapatite",
+  "formula": "Ca3(PO4)2 (nominal); Ca10(OH)2(PO4)6 (hydroxyapatite)",
+  "mw": "310.18 (Ca3(PO4)2); 1004.6 (Ca10(OH)2(PO4)6)",
+  "applications": {
+   "en": "Used as a tablet and capsule diluent (granulated grades for direct compression), as a glidant and anticaking agent in powders and foods, and as a source of calcium and phosphate in nutritional supplements. It is also used as a buffering agent and in dental products.",
+   "fa": "به عنوان رقیق‌کننده قرص و کپسول (گریدهای گرانوله برای پرس مستقیم)، لغزاننده (گلایدنت) و ضدکلوخه در پودرها و غذاها، و منبع کلسیم و فسفات در مکمل‌های غذایی به کار می‌رود. همچنین به عنوان عامل بافری و در فرآورده‌های دندانی مصرف می‌شود."
+  },
+  "description": {
+   "en": "A white, odourless and tasteless powder. It is not a single compound but a mixture of calcium phosphates whose composition approximates to hydroxyapatite.",
+   "fa": "پودر سفید، بی‌بو و بی‌مزه. این ماده یک ترکیب منفرد نیست، بلکه مخلوطی از کلسیم فسفات‌هاست که ترکیب آن به هیدروکسی‌آپاتیت نزدیک است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Calcium content",
+     "fa": "مقدار کلسیم"
+    },
+    "v": {
+     "en": "34.0–40.0% (USP–NF)",
+     "fa": "34.0–40.0٪ (USP–NF)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water, ethanol and acetic acid; soluble in dilute hydrochloric and nitric acids",
+     "fa": "عملاً نامحلول در آب، اتانول و استیک اسید؛ محلول در هیدروکلریک اسید و نیتریک اسید رقیق"
+    }
+   },
+   {
+    "k": {
+     "en": "Particle form",
+     "fa": "شکل ذرات"
+    },
+    "v": {
+     "en": "fine powder of poor flow; granulated grades are available for direct compression",
+     "fa": "پودر ریز با جریان‌پذیری ضعیف؛ گریدهای گرانوله برای پرس مستقیم موجود است"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically stable. Store in a well-closed container in a cool, dry place.",
+   "fa": "از نظر شیمیایی پایدار است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Like other calcium salts it reduces the absorption of tetracyclines. It dissolves in acids and may interact with acidic drugs.",
+   "fa": "مانند سایر نمک‌های کلسیم، جذب تتراسایکلین‌ها را کاهش می‌دهد. در اسیدها حل می‌شود و ممکن است با داروهای اسیدی برهم‌کنش داشته باشد."
+  },
+  "manufacture": {
+   "en": "Made by reacting phosphoric acid with a slurry of calcium hydroxide (milk of lime) under controlled conditions; the precipitate is filtered, dried and milled or granulated.",
+   "fa": "از واکنش فسفریک اسید با دوغاب کلسیم هیدروکسید (شیر آهک) در شرایط کنترل‌شده تهیه می‌شود؛ رسوب حاصل فیلتر، خشک و سپس آسیاب یا گرانوله می‌شود."
+  },
+  "safety": {
+   "en": "Used in oral pharmaceuticals and foods and regarded as non-toxic and non-irritant.",
+   "fa": "در داروهای خوراکی و غذا مصرف می‌شود و غیرسمی و غیرمحرک شناخته می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid inhaling the dust; eye protection and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از استنشاق گردوغبار خودداری شود؛ محافظ چشم و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E341(iii)). Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E341(iii)). در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Calcium phosphate, dibasic anhydrous; calcium phosphate, dibasic dihydrate; hydroxyapatite.",
+   "fa": "کلسیم فسفات دی‌بازیک بدون آب؛ کلسیم فسفات دی‌بازیک دی‌هیدرات؛ هیدروکسی‌آپاتیت."
+  },
+  "comments": {
+   "en": "Tribasic calcium phosphate has a higher calcium content than the dibasic salts, which makes it attractive for calcium-supplement tablets. The fine powder flows poorly and is mainly used as a flow aid or after granulation.",
+   "fa": "کلسیم فسفات تری‌بازیک مقدار کلسیم بیشتری نسبت به نمک‌های دی‌بازیک دارد و به همین دلیل برای قرص‌های مکمل کلسیم جذاب است. پودر ریز آن جریان‌پذیری ضعیفی دارد و بیشتر به عنوان کمک‌جریان یا پس از گرانولاسیون مصرف می‌شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "eu-additives",
+   "gras"
+  ]
+ },
+ "Calcium silicate": {
+  "names": [
+   {
+    "ph": "USP-NF",
+    "name": "Calcium Silicate"
+   }
+  ],
+  "tradeNames": "Calcium hydrosilicate; calcium metasilicate; calcium monosilicate; Micro-Cel; silicic acid, calcium salt; E552",
+  "chemicalName": "Hydrated calcium silicate of variable composition",
+  "formula": "CaSiO3 (nominal; commercial material is hydrated and variable)",
+  "mw": "116.16 (CaSiO3)",
+  "applications": {
+   "en": "Used as an anticaking agent and glidant in powders, and as an adsorbent that converts liquids or oily drugs into free-flowing powders for tableting (for example liquisolid systems). Porous grades of low density have been used in floating, gastroretentive dosage forms. It is also used in foods and cosmetics.",
+   "fa": "به عنوان ضدکلوخه و لغزاننده (گلایدنت) در پودرها و نیز جاذبی که مایعات یا داروهای روغنی را برای پرس به پودر روان تبدیل می‌کند (مثلاً در سامانه‌های liquisolid) به کار می‌رود. گریدهای متخلخل با چگالی کم در اشکال دارویی شناور و ماندگار در معده نیز استفاده شده‌اند. در صنایع غذایی و آرایشی هم مصرف دارد."
+  },
+  "description": {
+   "en": "A white to off-white, free-flowing, very fine powder of low bulk density and high specific surface area.",
+   "fa": "پودر بسیار ریز، روان و سفید تا سفید مایل به کرم با چگالی توده کم و سطح ویژه بالا."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water; decomposed by mineral acids with formation of a silica gel",
+     "fa": "عملاً نامحلول در آب؛ اسیدهای معدنی آن را تجزیه کرده و ژل سیلیس تشکیل می‌دهند"
+    }
+   },
+   {
+    "k": {
+     "en": "Liquid absorption",
+     "fa": "جذب مایع"
+    },
+    "v": {
+     "en": "very high; porous grades can take up several times their own weight of water or oil and remain free-flowing",
+     "fa": "بسیار زیاد؛ گریدهای متخلخل می‌توانند چند برابر وزن خود آب یا روغن جذب کنند و همچنان روان باقی بمانند"
+    }
+   },
+   {
+    "k": {
+     "en": "Bulk density",
+     "fa": "چگالی توده"
+    },
+    "v": {
+     "en": "low; fluffy, high-surface-area powder",
+     "fa": "کم؛ پودر پف‌دار با سطح ویژه بالا"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "alkaline (aqueous slurry)",
+     "fa": "قلیایی (دوغاب آبی)"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable. Store in a well-closed container in a dry place.",
+   "fa": "پایدار است. در ظرف کاملاً بسته و در جای خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Decomposed by strong acids. Its alkaline surface may degrade alkali-sensitive drugs, and its large surface area can adsorb drugs and preservatives.",
+   "fa": "اسیدهای قوی آن را تجزیه می‌کنند. سطح قلیایی آن ممکن است داروهای حساس به قلیا را تخریب کند و سطح ویژه زیادش می‌تواند داروها و نگهدارنده‌ها را جذب سطحی کند."
+  },
+  "manufacture": {
+   "en": "Produced by hydrothermal reaction of lime (calcium oxide or hydroxide) with a reactive silica such as diatomaceous earth, or by precipitation from solutions of sodium silicate and a calcium salt.",
+   "fa": "از واکنش هیدروترمال آهک (کلسیم اکسید یا هیدروکسید) با سیلیس فعال مانند خاک دیاتومه، یا از رسوب‌دهی محلول‌های سدیم سیلیکات و یک نمک کلسیم تولید می‌شود."
+  },
+  "safety": {
+   "en": "Regarded as non-toxic when taken orally at the levels used. As with other fine silicates, inhalation of the dust should be avoided.",
+   "fa": "در مقادیر مصرفی، پس از مصرف خوراکی غیرسمی شناخته می‌شود. مانند سایر سیلیکات‌های ریز، باید از استنشاق گردوغبار آن خودداری کرد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Use with adequate ventilation and wear eye protection and a dust mask.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. در محیط با تهویه کافی کار شود و از محافظ چشم و ماسک گردوغبار استفاده شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E552).",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E552)."
+  },
+  "related": {
+   "en": "Magnesium silicate; magnesium aluminium silicate; silicon dioxide, colloidal.",
+   "fa": "منیزیم سیلیکات؛ منیزیم آلومینیوم سیلیکات؛ سیلیکون دی‌اکسید کلوئیدی."
+  },
+  "comments": {
+   "en": "Its capacity to hold liquids while staying free-flowing distinguishes it from most other glidants and makes it useful for loading oily drugs or lipid formulations into tablets and capsules.",
+   "fa": "توانایی آن در نگه داشتن مایعات در عین حفظ روانی، آن را از بیشتر لغزاننده‌های دیگر متمایز می‌کند و برای بارگذاری داروهای روغنی یا فرمولاسیون‌های لیپیدی در قرص و کپسول مفید است."
+  },
+  "refs": [
+   "usp",
+   "eu-additives",
+   "gras"
+  ]
+ },
+ "Calcium stearate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Calcium Stearate"
+   },
+   {
+    "ph": "JP",
+    "name": "Calcium Stearate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Calcium Stearate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Calcium Stearate"
+   }
+  ],
+  "tradeNames": "Calcii stearas; calcium distearate; calcium octadecanoate; octadecanoic acid, calcium salt; stearic acid, calcium salt; E470a",
+  "chemicalName": "Octadecanoic acid calcium salt",
+  "formula": "C36H70CaO4",
+  "mw": "607.0",
+  "applications": {
+   "en": "Used mainly as a lubricant in tablet and capsule manufacture, usually at up to about 1% w/w. It is also used as an emulsifier and stabiliser, as a water-repellent and anticaking agent, and in foods and cosmetics.",
+   "fa": "عمدتاً به عنوان لغزان‌کننده (لوبریکانت) در ساخت قرص و کپسول، معمولاً تا حدود 1٪ وزنی، به کار می‌رود. همچنین به عنوان امولسیفایر و پایدارکننده، عامل دافع آب و ضدکلوخه، و در صنایع غذایی و آرایشی مصرف می‌شود."
+  },
+  "description": {
+   "en": "A fine, white to yellowish-white, bulky powder with a slight, characteristic odour. It is unctuous to the touch and free from grittiness.",
+   "fa": "پودر ریز، حجیم و سفید تا سفید مایل به زرد با بوی ضعیف و مشخص. لمس آن چرب و لغزنده است و زبری ندارد."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Composition",
+     "fa": "ترکیب"
+    },
+    "v": {
+     "en": "mixture of calcium salts of fatty acids, mainly stearic and palmitic acid; Ph. Eur. requires stearic acid ≥ 40% and stearic plus palmitic acid ≥ 90% of the fatty-acid fraction",
+     "fa": "مخلوط نمک‌های کلسیم اسیدهای چرب، عمدتاً استئاریک و پالمیتیک اسید؛ فارماکوپه اروپا استئاریک اسید را دست‌کم 40٪ و مجموع استئاریک و پالمیتیک اسید را دست‌کم 90٪ بخش اسید چرب تعیین کرده است"
+    }
+   },
+   {
+    "k": {
+     "en": "Calcium content",
+     "fa": "مقدار کلسیم"
+    },
+    "v": {
+     "en": "6.4–7.4% (dried substance, Ph. Eur.)",
+     "fa": "6.4–7.4٪ (نسبت به ماده خشک، فارماکوپه اروپا)"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting behaviour",
+     "fa": "رفتار ذوب"
+    },
+    "v": {
+     "en": "softens and melts at about 150–160 °C (grade-dependent)",
+     "fa": "در حدود 150–160 °C نرم و ذوب می‌شود (بسته به گرید)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water, ethanol and ether; slightly soluble in hot ethanol and in hot vegetable and mineral oils",
+     "fa": "عملاً نامحلول در آب، اتانول و اتر؛ کمی محلول در اتانول داغ و روغن‌های گیاهی و معدنی داغ"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable. Store in a well-closed container in a cool, dry place.",
+   "fa": "پایدار است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents and strong acids. Like other metallic stearates it is hydrophobic and can slow wetting and dissolution if over-blended.",
+   "fa": "با اکسیدکننده‌ها و اسیدهای قوی ناسازگار است. مانند سایر استئارات‌های فلزی آب‌گریز است و در صورت اختلاط بیش از حد می‌تواند خیس شدن و انحلال را کند کند."
+  },
+  "manufacture": {
+   "en": "Prepared by reacting a soluble calcium salt such as calcium chloride with sodium stearate in aqueous solution, or by reacting calcium oxide or hydroxide with stearic acid.",
+   "fa": "از واکنش یک نمک محلول کلسیم مانند کلسیم کلرید با سدیم استئارات در محلول آبی، یا از واکنش کلسیم اکسید یا هیدروکسید با استئاریک اسید تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Used in oral pharmaceuticals and foods and regarded as non-toxic and non-irritant at the levels employed.",
+   "fa": "در داروهای خوراکی و غذا مصرف می‌شود و در مقادیر به‌کاررفته غیرسمی و غیرمحرک شناخته می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection, gloves and a dust mask are recommended where dust is generated.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. در صورت ایجاد گردوغبار، محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E470a). Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E470a). در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Magnesium stearate; stearic acid; zinc stearate; sodium stearyl fumarate.",
+   "fa": "منیزیم استئارات؛ استئاریک اسید؛ زینک استئارات؛ سدیم استئاریل فومارات."
+  },
+  "comments": {
+   "en": "Calcium stearate is used less often than magnesium stearate but is an alternative where magnesium stearate is unsuitable; as with all metallic stearate lubricants, the lowest effective level and short blending times are advisable.",
+   "fa": "کلسیم استئارات کمتر از منیزیم استئارات مصرف می‌شود، ولی در مواردی که منیزیم استئارات مناسب نیست جایگزین آن است؛ مانند همه لغزان‌کننده‌های استئارات فلزی، استفاده از کمترین غلظت مؤثر و زمان اختلاط کوتاه توصیه می‌شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "eu-additives",
+   "gras"
+  ]
+ },
+ "Calcium sulfate dihydrate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Calcium Sulphate Dihydrate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Calcium Sulfate Dihydrate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Calcium Sulfate"
+   }
+  ],
+  "tradeNames": "Calcii sulfas dihydricus; Compactrol; gypsum; light spar; mineral white; terra alba; E516",
+  "chemicalName": "Calcium sulfate dihydrate",
+  "formula": "CaSO4·2H2O",
+  "mw": "172.17",
+  "applications": {
+   "en": "Used as a diluent in tablets and capsules; granular grades are available for direct compression and the powder is also used in wet granulation. It is used in foods as a firming agent and calcium source, and in dental products.",
+   "fa": "به عنوان رقیق‌کننده در قرص و کپسول به کار می‌رود؛ گریدهای گرانوله برای پرس مستقیم موجودند و پودر آن در گرانولاسیون مرطوب نیز مصرف می‌شود. در صنایع غذایی به عنوان عامل سفت‌کننده و منبع کلسیم و در فرآورده‌های دندانی نیز کاربرد دارد."
+  },
+  "description": {
+   "en": "A white or almost white, odourless and tasteless powder or fine crystalline granules.",
+   "fa": "پودر یا گرانول‌های کریستالی ریز سفید یا تقریباً سفید، بی‌بو و بی‌مزه."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Water of crystallisation",
+     "fa": "آب تبلور"
+    },
+    "v": {
+     "en": "≈ 20.9% w/w (theoretical)",
+     "fa": "حدود 20.9٪ وزنی (نظری)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "slightly soluble in water (roughly 2–2.5 g/L at room temperature); practically insoluble in ethanol",
+     "fa": "کمی محلول در آب (حدود 2–2.5 g/L در دمای اتاق)؛ عملاً نامحلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Thermal behaviour",
+     "fa": "رفتار حرارتی"
+    },
+    "v": {
+     "en": "loses water on heating to form the hemihydrate (plaster of Paris) and, at higher temperatures, the anhydrous salt",
+     "fa": "با حرارت آب از دست می‌دهد و به همی‌هیدرات (گچ پاریس) و در دمای بالاتر به نمک بدون آب تبدیل می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "True density",
+     "fa": "چگالی حقیقی"
+    },
+    "v": {
+     "en": "≈ 2.3 g/cm³",
+     "fa": "حدود 2.3 g/cm³"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically stable and does not lose its water of crystallisation at normal storage temperatures. Drying temperatures during granulation should be kept moderate to avoid partial dehydration, which changes the compaction properties. Store in a well-closed container in a cool, dry place.",
+   "fa": "از نظر شیمیایی پایدار است و در دمای معمول نگهداری آب تبلور خود را از دست نمی‌دهد. دمای خشک کردن در گرانولاسیون باید معتدل باشد تا از آب‌زدایی جزئی که ویژگی‌های تراکمی را تغییر می‌دهد جلوگیری شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Calcium salts reduce the absorption of tetracyclines and some other drugs that form calcium complexes.",
+   "fa": "نمک‌های کلسیم جذب تتراسایکلین‌ها و برخی داروهای دیگر را که با کلسیم کمپلکس تشکیل می‌دهند کاهش می‌دهند."
+  },
+  "manufacture": {
+   "en": "Obtained by milling and purifying natural gypsum, or by precipitation from a solution of a calcium salt with a sulfate.",
+   "fa": "از آسیاب و خالص‌سازی سنگ گچ طبیعی، یا از رسوب‌دهی محلول یک نمک کلسیم با یک سولفات به دست می‌آید."
+  },
+  "safety": {
+   "en": "Used in oral pharmaceuticals and foods and regarded as non-toxic and non-irritant at the levels employed.",
+   "fa": "در داروهای خوراکی و غذا مصرف می‌شود و در مقادیر به‌کاررفته غیرسمی و غیرمحرک شناخته می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid inhaling the dust; eye protection and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از استنشاق گردوغبار خودداری شود؛ محافظ چشم و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E516). Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E516). در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Calcium sulfate anhydrous; calcium sulfate hemihydrate; calcium phosphate, dibasic; calcium carbonate.",
+   "fa": "کلسیم سولفات بدون آب؛ کلسیم سولفات همی‌هیدرات؛ کلسیم فسفات دی‌بازیک؛ کلسیم کربنات."
+  },
+  "comments": {
+   "en": "The dihydrate must not be confused with the hemihydrate (plaster of Paris), which sets to a hard mass when mixed with water and is unsuitable as a diluent. Tablets made with calcium sulfate dihydrate are non-hygroscopic but, because the material is poorly soluble, may need a disintegrant.",
+   "fa": "دی‌هیدرات نباید با همی‌هیدرات (گچ پاریس) اشتباه شود؛ همی‌هیدرات با آب سفت می‌شود و به عنوان رقیق‌کننده مناسب نیست. قرص‌های ساخته‌شده با کلسیم سولفات دی‌هیدرات رطوبت‌گیر نیستند، ولی به دلیل حلالیت کم ماده ممکن است به متلاشی‌کننده نیاز داشته باشند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "eu-additives",
+   "gras"
+  ]
+ },
+ "Canola oil": {
+  "names": [
+   {
+    "ph": "PhEur",
+    "name": "Rapeseed Oil, Refined"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Canola Oil"
+   }
+  ],
+  "tradeNames": "Canbra oil; low erucic acid rapeseed oil; rapae oleum raffinatum; refined rapeseed oil",
+  "chemicalName": "Refined fixed oil from seeds of low-erucic-acid varieties of Brassica napus and Brassica rapa",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used as an oily vehicle and solvent in oral formulations such as soft gelatin capsules and emulsions, and as an emollient and oil phase in topical creams and lotions. It is widely used in foods and cosmetics.",
+   "fa": "به عنوان حامل و حلال روغنی در فرمولاسیون‌های خوراکی مانند کپسول ژلاتینی نرم و امولسیون‌ها، و به عنوان نرم‌کننده (امولیئنت) و فاز روغنی در کرم‌ها و لوسیون‌های موضعی به کار می‌رود. در صنایع غذایی و آرایشی به‌طور گسترده مصرف می‌شود."
+  },
+  "description": {
+   "en": "A clear, light-yellow oily liquid with a bland taste. It consists mainly of triglycerides of unsaturated fatty acids.",
+   "fa": "مایع روغنی شفاف و زرد کم‌رنگ با طعم ملایم. عمدتاً از تری‌گلیسریدهای اسیدهای چرب غیراشباع تشکیل شده است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Fatty-acid composition",
+     "fa": "ترکیب اسیدهای چرب"
+    },
+    "v": {
+     "en": "mainly oleic acid (about 50–65%), linoleic acid (about 15–30%) and α-linolenic acid (about 5–15%); erucic acid not more than 2%",
+     "fa": "عمدتاً اولئیک اسید (حدود 50–65٪)، لینولئیک اسید (حدود 15–30٪) و آلفا-لینولنیک اسید (حدود 5–15٪)؛ اروسیک اسید حداکثر 2٪"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "≈ 0.91–0.92 g/cm³ at 20 °C",
+     "fa": "حدود 0.91–0.92 g/cm³ در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Iodine value",
+     "fa": "عدد یدی"
+    },
+    "v": {
+     "en": "≈ 110–126",
+     "fa": "حدود 110–126"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water and ethanol; miscible with light petroleum and other non-polar solvents",
+     "fa": "عملاً نامحلول در آب و اتانول؛ امتزاج‌پذیر با پترولیوم سبک و سایر حلال‌های غیرقطبی"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Because of its content of polyunsaturated fatty acids, especially α-linolenic acid, it is prone to oxidation and rancidity. Store in well-filled, airtight, light-resistant containers in a cool place; an antioxidant may be added.",
+   "fa": "به دلیل داشتن اسیدهای چرب چندغیراشباعی، به‌ویژه آلفا-لینولنیک اسید، مستعد اکسیداسیون و تندی است. در ظروف پر، دربسته و مقاوم به نور، در جای خنک نگهداری شود؛ ممکن است آنتی‌اکسیدان به آن افزوده شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Obtained by mechanical expression and/or solvent extraction of the seeds of rapeseed varieties bred for low erucic acid and low glucosinolate content, followed by refining, bleaching and deodorisation.",
+   "fa": "از پرس مکانیکی و/یا استخراج با حلال دانه‌های واریته‌هایی از کلزا که برای اروسیک اسید و گلوکوزینولات کم اصلاح شده‌اند، و سپس تصفیه، رنگ‌بری و بوزدایی به دست می‌آید."
+  },
+  "safety": {
+   "en": "A common edible oil; regarded as non-toxic and non-irritant.",
+   "fa": "یک روغن خوراکی رایج است و غیرسمی و غیرمحرک شناخته می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Spills are slippery.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. ریختن آن سطوح را لغزنده می‌کند."
+  },
+  "regulatory": {
+   "en": "Low erucic acid rapeseed oil is GRAS listed.",
+   "fa": "روغن کلزای کم‌اروسیک در فهرست GRAS قرار دارد."
+  },
+  "related": {
+   "en": "Rapeseed oil; corn oil; olive oil; soybean oil; sunflower oil.",
+   "fa": "روغن کلزا؛ روغن ذرت؛ روغن زیتون؛ روغن سویا؛ روغن آفتابگردان."
+  },
+  "comments": {
+   "en": "Older rapeseed varieties contained large amounts of erucic acid, which caused myocardial lipidosis in animal studies; canola and refined rapeseed oil of pharmacopoeial quality are limited to low erucic acid levels.",
+   "fa": "واریته‌های قدیمی کلزا مقدار زیادی اروسیک اسید داشتند که در مطالعات حیوانی باعث لیپیدوز میوکارد شده بود؛ روغن کانولا و روغن کلزای تصفیه‌شده با کیفیت فارماکوپه‌ای از نظر اروسیک اسید محدود شده‌اند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "gras"
+  ]
+ },
+ "Caprylocaproyl polyoxylglycerides": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Caprylocaproyl Macrogolglycerides"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Caprylocaproyl Macrogolglycerides"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Caprylocaproyl Polyoxylglycerides"
+   }
+  ],
+  "tradeNames": "Labrasol; Labrasol ALF; Acconon MC8-2; caprylocaproyl macrogol-8 glycerides; macrogolglyceridorum caprylocaprates; PEG-8 caprylic/capric glycerides",
+  "chemicalName": "Mixture of mono-, di- and triglycerides and of mono- and di-fatty acid esters of macrogols, the fatty acids being mainly caprylic (C8) and capric (C10) acids",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used as a solubiliser, surfactant and co-surfactant in lipid-based oral formulations, particularly self-emulsifying and self-microemulsifying drug delivery systems (SEDDS/SMEDDS) filled into capsules, to improve the solubility and absorption of poorly water-soluble drugs. It is also used as a penetration enhancer and solubiliser in topical preparations.",
+   "fa": "به عنوان حل‌کننده (سولوبیلایزر)، سورفکتانت و کمک‌سورفکتانت در فرمولاسیون‌های خوراکی لیپیدی، به‌ویژه سامانه‌های خودامولسیون‌شونده و خودمیکروامولسیون‌شونده (SEDDS/SMEDDS) پرشده در کپسول، برای افزایش حلالیت و جذب داروهای کم‌محلول در آب به کار می‌رود. در فرآورده‌های موضعی نیز به عنوان افزاینده نفوذ و حل‌کننده مصرف می‌شود."
+  },
+  "description": {
+   "en": "A pale-yellow, oily liquid with a faint odour. It is a mixture of medium-chain glycerides and polyethylene glycol (macrogol) esters, typically based on macrogol 400.",
+   "fa": "مایع روغنی زرد کم‌رنگ با بوی ضعیف. مخلوطی از گلیسریدهای زنجیره متوسط و استرهای پلی‌اتیلن گلیکول (ماکروگل) است که معمولاً بر پایه ماکروگل 400 تهیه می‌شود."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "≈ 12 (macrogol 400 grade)",
+     "fa": "حدود 12 (گرید با ماکروگل 400)"
+    }
+   },
+   {
+    "k": {
+     "en": "Fatty-acid composition",
+     "fa": "ترکیب اسیدهای چرب"
+    },
+    "v": {
+     "en": "caprylic acid 50–80% and capric acid 20–50% (Ph. Eur.)",
+     "fa": "کاپریلیک اسید 50–80٪ و کاپریک اسید 20–50٪ (فارماکوپه اروپا)"
+    }
+   },
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "pale-yellow oily liquid at room temperature",
+     "fa": "مایع روغنی زرد کم‌رنگ در دمای اتاق"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "dispersible in water, forming a fine (micro)emulsion; soluble in ethanol and methylene chloride; practically insoluble in mineral oil",
+     "fa": "در آب پراکنده می‌شود و امولسیون ریز (میکروامولسیون) تشکیل می‌دهد؛ محلول در اتانول و متیلن کلرید؛ عملاً نامحلول در روغن معدنی"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable when stored in an airtight container protected from light and moisture. The macrogol component can form peroxides on prolonged exposure to air.",
+   "fa": "در صورت نگهداری در ظرف دربسته و محافظت از نور و رطوبت پایدار است. بخش ماکروگلی آن در تماس طولانی با هوا ممکن است پراکسید تشکیل دهد."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. Peroxide and aldehyde impurities from the macrogol chains may degrade oxidation-sensitive drugs, and the liquid can interact with gelatin capsule shells, so compatibility of fill and shell should be checked.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. ناخالصی‌های پراکسیدی و آلدهیدی زنجیره‌های ماکروگل ممکن است داروهای حساس به اکسیداسیون را تخریب کنند و این مایع ممکن است با پوسته کپسول ژلاتینی برهم‌کنش داشته باشد؛ بنابراین سازگاری محتوای پرشده و پوسته باید بررسی شود."
+  },
+  "manufacture": {
+   "en": "Prepared by partial alcoholysis of medium-chain triglycerides with macrogol, or by esterification of glycerol and macrogol with caprylic and capric acids.",
+   "fa": "از الکلیز جزئی تری‌گلیسریدهای زنجیره متوسط با ماکروگل، یا از استری کردن گلیسرول و ماکروگل با کاپریلیک و کاپریک اسید تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Used in marketed oral and topical products and generally regarded as of low toxicity. High oral doses may cause gastrointestinal irritation or diarrhoea, and the material can be mildly irritant to skin and eyes.",
+   "fa": "در فرآورده‌های خوراکی و موضعی موجود در بازار مصرف می‌شود و به‌طور کلی سمیت کمی دارد. دوزهای خوراکی زیاد ممکن است باعث تحریک گوارشی یا اسهال شوند و ماده ممکن است برای پوست و چشم کمی محرک باشد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral preparations) and in medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های خوراکی) و در داروهای مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Lauroyl polyoxylglycerides; linoleoyl polyoxylglycerides; oleoyl polyoxylglycerides; stearoyl polyoxylglycerides; medium-chain triglycerides.",
+   "fa": "لائوروئیل پلی‌اکسیل‌گلیسریدها؛ لینولئوئیل پلی‌اکسیل‌گلیسریدها؛ اولئوئیل پلی‌اکسیل‌گلیسریدها؛ استئاروئیل پلی‌اکسیل‌گلیسریدها؛ تری‌گلیسریدهای زنجیره متوسط."
+  },
+  "comments": {
+   "en": "It is usually combined with an oil and a co-solvent such as diethylene glycol monoethyl ether in lipid formulations; the performance of such systems should be checked by dispersion and in-vitro lipolysis tests rather than by solubility alone.",
+   "fa": "در فرمولاسیون‌های لیپیدی معمولاً همراه یک روغن و یک کمک‌حلال مانند دی‌اتیلن گلیکول مونواتیل اتر به کار می‌رود؛ عملکرد این سامانه‌ها باید با آزمون‌های پراکندگی و لیپولیز آزمایشگاهی بررسی شود، نه فقط بر اساس حلالیت."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Carbomer": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Carbomers"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Carbomers"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Carbomer Homopolymer; Carbomer Copolymer; Carbomer Interpolymer"
+   }
+  ],
+  "tradeNames": "Acritamer; acrylic acid polymer; carbomera; Carbopol; carboxy polymethylene; carboxyvinyl polymer; Pemulen; polyacrylic acid; Tego Carbomer",
+  "chemicalName": "High-molecular-weight polymers of acrylic acid crosslinked with allyl ethers of sucrose or pentaerythritol",
+  "formula": "(C3H4O2)n (repeat unit)",
+  "mw": "estimated 7 × 10⁵ to 4 × 10⁹",
+  "applications": {
+   "en": "Used mainly as rheology modifiers in liquid and semisolid preparations, such as gels, creams, lotions and suspensions, including ophthalmic, rectal, topical and vaginal products. Some grades act as primary polymeric emulsifiers, and carbomers are also used as tablet binders, controlled-release matrix formers and bioadhesives. Typical concentrations: emulsifying agent 0.1–0.5%; gelling agent 0.5–2.0%; suspending agent 0.5–1.0%; tablet binder 0.75–3.0%; controlled-release agent 5.0–30.0%.",
+   "fa": "عمدتاً به عنوان اصلاح‌کننده رئولوژی در فرآورده‌های مایع و نیمه‌جامد مانند ژل، کرم، لوسیون و سوسپانسیون، از جمله فرآورده‌های چشمی، رکتال، موضعی و واژینال به کار می‌رود. برخی گریدها امولسیفایر پلیمری اولیه هستند و کربومرها به عنوان چسباننده قرص، سازنده ماتریکس رهش کنترل‌شده و چسبنده زیستی (بیوادهزیو) نیز مصرف می‌شوند. غلظت‌های متداول: امولسیفایر 0.1–0.5٪؛ ژل‌ساز 0.5–2.0٪؛ عامل تعلیق‌دهنده 0.5–1.0٪؛ چسباننده قرص 0.75–3.0٪؛ عامل رهش کنترل‌شده 5.0–30.0٪."
+  },
+  "description": {
+   "en": "A white, fluffy, acidic, hygroscopic powder with a slight characteristic odour. Grades differ in crosslink density, polymerisation solvent and the viscosity they give when neutralised.",
+   "fa": "پودر سفید، پف‌دار، اسیدی و رطوبت‌گیر با بوی ضعیف مشخص. گریدها از نظر تراکم اتصالات عرضی، حلال پلیمریزاسیون و ویسکوزیته‌ای که پس از خنثی‌سازی ایجاد می‌کنند با هم فرق دارند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Carboxylic acid content",
+     "fa": "مقدار گروه کربوکسیلیک اسید"
+    },
+    "v": {
+     "en": "56.0–68.0% (dried substance)",
+     "fa": "56.0–68.0٪ (نسبت به ماده خشک)"
+    }
+   },
+   {
+    "k": {
+     "en": "pKa",
+     "fa": "pKa"
+    },
+    "v": {
+     "en": "≈ 6.0 ± 0.5",
+     "fa": "حدود 6.0 ± 0.5"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "≈ 2.5–3.5 (0.5–1% w/v aqueous dispersion)",
+     "fa": "حدود 2.5–3.5 (دیسپرسیون آبی 0.5–1٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "low as an acidic dispersion; rises sharply on neutralisation, with the level depending on grade and concentration",
+     "fa": "در حالت دیسپرسیون اسیدی کم است و با خنثی‌سازی به‌شدت افزایش می‌یابد؛ مقدار آن به گرید و غلظت بستگی دارد"
+    }
+   },
+   {
+    "k": {
+     "en": "Moisture content",
+     "fa": "مقدار رطوبت"
+    },
+    "v": {
+     "en": "hygroscopic; typically not more than 2% as supplied",
+     "fa": "رطوبت‌گیر؛ معمولاً حداکثر 2٪ در حالت عرضه"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "does not dissolve but swells in water, glycerol and, after neutralisation, ethanol (95%)",
+     "fa": "حل نمی‌شود، بلکه در آب، گلیسرول و پس از خنثی‌سازی در اتانول 95٪ متورم می‌شود"
+    }
+   }
+  ],
+  "stability": {
+   "en": "The dry powder is stable and does not support microbial growth, but aqueous gels do and need a preservative. Gels lose viscosity on prolonged exposure to light; this is reduced by adding an antioxidant or a chelating agent such as edetate. Store in an airtight container in a cool, dry place.",
+   "fa": "پودر خشک پایدار است و رشد میکروبی را پشتیبانی نمی‌کند، ولی ژل‌های آبی آن مستعد آلودگی‌اند و به نگهدارنده نیاز دارند. ژل‌ها در تماس طولانی با نور ویسکوزیته خود را از دست می‌دهند که با افزودن آنتی‌اکسیدان یا عامل کی‌لیت‌کننده مانند ادتات کاهش می‌یابد. در ظرف دربسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Discoloured by resorcinol and incompatible with phenol, cationic polymers, strong acids and high concentrations of electrolytes, which reduce gel viscosity. Trace iron and other transition metals catalyse its degradation, and cationic drugs may form insoluble complexes.",
+   "fa": "با رزورسینول تغییر رنگ می‌دهد و با فنول، پلیمرهای کاتیونی، اسیدهای قوی و غلظت‌های زیاد الکترولیت‌ها که ویسکوزیته ژل را کاهش می‌دهند ناسازگار است. مقادیر کم آهن و سایر فلزات واسطه تخریب آن را کاتالیز می‌کنند و داروهای کاتیونی ممکن است با آن کمپلکس نامحلول تشکیل دهند."
+  },
+  "manufacture": {
+   "en": "Made by polymerising acrylic acid with a polyalkenyl ether crosslinker in an organic solvent. Older grades were polymerised in benzene; current grades use ethyl acetate or cyclohexane–ethyl acetate mixtures.",
+   "fa": "از پلیمریزاسیون آکریلیک اسید همراه یک عامل اتصال عرضی پلی‌آلکنیل اتری در حلال آلی تهیه می‌شود. گریدهای قدیمی در بنزن پلیمریزه می‌شدند؛ گریدهای فعلی از اتیل استات یا مخلوط سیکلوهگزان–اتیل استات استفاده می‌کنند."
+  },
+  "safety": {
+   "en": "Regarded as essentially non-toxic and non-irritant when used in topical and oral products; its high molecular weight prevents absorption. The powder can irritate the eyes.",
+   "fa": "در فرآورده‌های موضعی و خوراکی اساساً غیرسمی و غیرمحرک شناخته می‌شود و وزن مولکولی بالای آن مانع جذب می‌شود. پودر آن ممکن است چشم را تحریک کند."
+  },
+  "handling": {
+   "en": "The dust may irritate the eyes, mucous membranes and respiratory tract. Wear gloves, eye protection and a dust respirator, and avoid creating airborne dust.",
+   "fa": "گردوغبار آن ممکن است چشم، غشاهای مخاطی و دستگاه تنفس را تحریک کند. از دستکش، محافظ چشم و ماسک تنفسی گردوغبار استفاده و از پراکنده شدن گرد در هوا جلوگیری شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (ophthalmic, oral, rectal, topical and vaginal preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های چشمی، خوراکی، رکتال، موضعی و واژینال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Polycarbophil; calcium polycarbophil; polyacrylates.",
+   "fa": "پلی‌کربوفیل؛ کلسیم پلی‌کربوفیل؛ پلی‌آکریلات‌ها."
+  },
+  "comments": {
+   "en": "Disperse the powder slowly into vigorously stirred water to avoid lumps, then neutralise with a base such as sodium hydroxide, triethanolamine or trometamol; maximum viscosity is usually reached around pH 6–7.5. Grades polymerised in benzene are subject to residual-solvent limits and have largely been replaced.",
+   "fa": "پودر را به‌آرامی در آب در حال هم زدن شدید پراکنده کنید تا کلوخه تشکیل نشود و سپس با یک باز مانند سدیم هیدروکسید، تری‌اتانول‌آمین یا ترومتامول خنثی کنید؛ بیشترین ویسکوزیته معمولاً در حدود pH 6–7.5 به دست می‌آید. گریدهای پلیمریزه‌شده در بنزن مشمول محدودیت حلال باقی‌مانده‌اند و تا حد زیادی جایگزین شده‌اند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Carbon dioxide": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Carbon Dioxide"
+   },
+   {
+    "ph": "JP",
+    "name": "Carbon Dioxide"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Carbon Dioxide"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Carbon Dioxide"
+   }
+  ],
+  "tradeNames": "Carbonei dioxidum; carbonic acid gas; carbonic anhydride; dry ice (solid form); E290",
+  "chemicalName": "Carbon dioxide",
+  "formula": "CO2",
+  "mw": "44.01",
+  "applications": {
+   "en": "Used as an inert gas to displace air from the headspace of ampoules, vials and liquid containers and to blanket oxygen-sensitive products during manufacture, and as a propellant for topical aerosols. It is generated in situ in effervescent tablets and granules by the reaction of an acid with a carbonate. Supercritical carbon dioxide is used for extraction and for particle engineering, and the solid (dry ice) is used for cooling.",
+   "fa": "به عنوان گاز بی‌اثر برای جایگزینی هوای فضای خالی (headspace) آمپول‌ها، ویال‌ها و ظروف مایعات و پوشش‌دهی فرآورده‌های حساس به اکسیژن در حین ساخت، و به عنوان پیشران (پروپلانت) آئروسل‌های موضعی به کار می‌رود. در قرص‌ها و گرانول‌های جوشان از واکنش یک اسید با یک کربنات در محل تولید می‌شود. کربن دی‌اکسید فوق‌بحرانی برای استخراج و مهندسی ذرات، و فرم جامد آن (یخ خشک) برای سردسازی مصرف می‌شود."
+  },
+  "description": {
+   "en": "A colourless, odourless, non-flammable gas with a faintly acidic taste. It is supplied as a liquefied gas under pressure in cylinders, or as a solid.",
+   "fa": "گازی بی‌رنگ، بی‌بو و غیرقابل اشتعال با طعم کمی اسیدی. به صورت گاز مایع‌شده تحت فشار در سیلندر یا به صورت جامد عرضه می‌شود."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Sublimation point",
+     "fa": "نقطه تصعید"
+    },
+    "v": {
+     "en": "−78.5 °C at atmospheric pressure (the solid sublimes without melting)",
+     "fa": "−78.5 °C در فشار اتمسفر (جامد بدون ذوب شدن تصعید می‌شود)"
+    }
+   },
+   {
+    "k": {
+     "en": "Critical point",
+     "fa": "نقطه بحرانی"
+    },
+    "v": {
+     "en": "≈ 31.1 °C and 7.38 MPa",
+     "fa": "حدود 31.1 °C و 7.38 MPa"
+    }
+   },
+   {
+    "k": {
+     "en": "Gas density",
+     "fa": "چگالی گاز"
+    },
+    "v": {
+     "en": "≈ 1.98 g/L at 0 °C and 101.3 kPa (about 1.5 times that of air)",
+     "fa": "حدود 1.98 g/L در 0 °C و 101.3 kPa (حدود 1.5 برابر هوا)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "moderately soluble in water, giving a weakly acidic solution of carbonic acid",
+     "fa": "به میزان متوسط در آب محلول است و محلول اسیدی ضعیف کربنیک اسید تشکیل می‌دهد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically stable and inert under normal conditions. Store cylinders in a cool, well-ventilated place away from heat.",
+   "fa": "در شرایط معمول از نظر شیمیایی پایدار و بی‌اثر است. سیلندرها در جای خنک با تهویه مناسب و دور از حرارت نگهداری شوند."
+  },
+  "incompatibilities": {
+   "en": "Reacts with alkalis and alkaline solutions to form carbonates, and with reactive metals such as magnesium and sodium at high temperatures. Dissolved carbon dioxide lowers the pH of aqueous solutions and may precipitate drugs that are less soluble at lower pH.",
+   "fa": "با قلیاها و محلول‌های قلیایی واکنش داده و کربنات تشکیل می‌دهد و با فلزات فعال مانند منیزیم و سدیم در دمای بالا واکنش می‌دهد. کربن دی‌اکسید محلول، pH محلول‌های آبی را کاهش می‌دهد و ممکن است داروهایی را که در pH پایین‌تر کم‌محلول‌اند رسوب دهد."
+  },
+  "manufacture": {
+   "en": "Recovered as a by-product of fermentation, ammonia and hydrogen production, or from combustion gases and natural sources, then purified, dried and liquefied by compression and cooling.",
+   "fa": "به عنوان محصول جانبی تخمیر، تولید آمونیاک و هیدروژن، یا از گازهای احتراق و منابع طبیعی بازیافت و سپس خالص‌سازی، خشک و با فشرده‌سازی و سرد کردن مایع می‌شود."
+  },
+  "safety": {
+   "en": "Not toxic at low concentrations, but it is an asphyxiant at high concentrations: raised levels cause headache, rapid breathing and dizziness, and very high levels cause loss of consciousness. The occupational exposure limit is 5000 ppm (8-hour TWA). Contact with the solid or rapidly expanding liquid causes cold burns.",
+   "fa": "در غلظت‌های کم سمی نیست، ولی در غلظت‌های زیاد خفه‌کننده است: افزایش غلظت آن باعث سردرد، تنفس سریع و سرگیجه و غلظت‌های بسیار زیاد باعث کاهش هوشیاری می‌شود. حد مجاز تماس شغلی 5000 ppm (میانگین وزنی 8 ساعته) است. تماس با فرم جامد یا مایع در حال انبساط سریع، سوختگی ناشی از سرما ایجاد می‌کند."
+  },
+  "handling": {
+   "en": "Handle cylinders according to compressed-gas safety rules and use only in well-ventilated areas, since the gas is heavier than air and collects in low places. Wear insulated gloves and eye protection when handling dry ice or the liquid.",
+   "fa": "سیلندرها طبق مقررات ایمنی گازهای فشرده جابه‌جا شوند و فقط در محیط با تهویه مناسب استفاده شود، زیرا گاز از هوا سنگین‌تر است و در نقاط پست تجمع می‌کند. هنگام کار با یخ خشک یا مایع آن از دستکش عایق و محافظ چشم استفاده شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E290). Included in medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E290). در داروهای مجاز در اروپا به کار رفته است."
+  },
+  "related": {
+   "en": "Nitrogen; nitrous oxide.",
+   "fa": "نیتروژن؛ نیتروس اکسید."
+  },
+  "comments": {
+   "en": "As an aerosol propellant it behaves as a compressed gas, but because part of it dissolves in the product the fall in pressure as the container empties is smaller than with nitrogen. In effervescent products the amount of carbon dioxide released depends on the stoichiometry and moisture content of the acid–carbonate couple.",
+   "fa": "به عنوان پیشران آئروسل مانند یک گاز فشرده رفتار می‌کند، ولی چون بخشی از آن در محصول حل می‌شود، افت فشار با خالی شدن ظرف کمتر از نیتروژن است. در فرآورده‌های جوشان، مقدار کربن دی‌اکسید آزادشده به استوکیومتری و رطوبت زوج اسید–کربنات بستگی دارد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "eu-additives",
+   "gras"
+  ]
+ },
+ "Carboxymethylcellulose calcium": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Carmellose Calcium"
+   },
+   {
+    "ph": "JP",
+    "name": "Carmellose Calcium"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Carmellose Calcium"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Carboxymethylcellulose Calcium"
+   }
+  ],
+  "tradeNames": "Calcium carboxymethylcellulose; calcium CMC; carmellosum calcicum; cellulose, carboxymethyl ether, calcium salt; ECG 505",
+  "chemicalName": "Cellulose, carboxymethyl ether, calcium salt",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used in oral and topical products mainly for its water-absorbing and swelling properties: as a tablet disintegrant and binder, and as a suspending or viscosity-increasing agent. In tablets it is typically used at about 1–15% w/w.",
+   "fa": "در فرآورده‌های خوراکی و موضعی عمدتاً به دلیل ویژگی جذب آب و تورم به کار می‌رود: به عنوان متلاشی‌کننده و چسباننده قرص و نیز عامل تعلیق‌دهنده یا افزاینده ویسکوزیته. در قرص معمولاً حدود 1–15٪ وزنی مصرف می‌شود."
+  },
+  "description": {
+   "en": "A white to yellowish-white, hygroscopic, odourless fine powder.",
+   "fa": "پودر ریز سفید تا سفید مایل به زرد، رطوبت‌گیر و بی‌بو."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "≈ 4.5–6.0 (1% w/v aqueous dispersion)",
+     "fa": "حدود 4.5–6.0 (دیسپرسیون آبی 1٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water, ethanol, acetone and ether; swells in water to form a suspension; slightly soluble in dilute sodium hydroxide",
+     "fa": "عملاً نامحلول در آب، اتانول، استون و اتر؛ در آب متورم می‌شود و سوسپانسیون تشکیل می‌دهد؛ کمی محلول در سدیم هیدروکسید رقیق"
+    }
+   },
+   {
+    "k": {
+     "en": "Hygroscopicity",
+     "fa": "رطوبت‌گیری"
+    },
+    "v": {
+     "en": "hygroscopic",
+     "fa": "رطوبت‌گیر"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable but hygroscopic. Store in a well-closed container in a cool, dry place.",
+   "fa": "پایدار ولی رطوبت‌گیر است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "As with carboxymethylcellulose sodium, it is incompatible with strongly acidic solutions and with soluble salts of iron and some other metals such as aluminium, mercury and zinc.",
+   "fa": "مانند کربوکسی‌متیل‌سلولز سدیم، با محلول‌های اسیدی قوی و نمک‌های محلول آهن و برخی فلزات دیگر مانند آلومینیوم، جیوه و روی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Cellulose is carboxymethylated with chloroacetic acid in the presence of sodium hydroxide; the sodium salt is converted to the acid form and then to the calcium salt, for example with calcium carbonate.",
+   "fa": "سلولز در حضور سدیم هیدروکسید با کلرواستیک اسید کربوکسی‌متیله می‌شود؛ نمک سدیم حاصل به فرم اسیدی و سپس، مثلاً با کلسیم کربنات، به نمک کلسیم تبدیل می‌شود."
+  },
+  "safety": {
+   "en": "Used in oral pharmaceuticals and regarded as non-toxic and non-irritant; it is not absorbed. Very large oral amounts may have a laxative effect.",
+   "fa": "در داروهای خوراکی مصرف می‌شود و غیرسمی و غیرمحرک شناخته می‌شود؛ جذب نمی‌شود. مقادیر خوراکی بسیار زیاد ممکن است اثر ملین داشته باشد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid inhaling the dust; eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از استنشاق گردوغبار خودداری شود؛ محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Carboxymethylcellulose sodium; croscarmellose sodium; sodium starch glycolate.",
+   "fa": "کربوکسی‌متیل‌سلولز سدیم؛ کروس‌کارملوز سدیم؛ سدیم استارچ گلیکولات."
+  },
+  "comments": {
+   "en": "Unlike the sodium salt, the calcium salt is insoluble in water; it swells instead of dissolving, which is why it works as a disintegrant rather than a thickener. It is used particularly widely in Japan.",
+   "fa": "برخلاف نمک سدیم، نمک کلسیم در آب نامحلول است و به جای حل شدن متورم می‌شود؛ به همین دلیل بیشتر نقش متلاشی‌کننده دارد تا غلیظ‌کننده. مصرف آن به‌ویژه در ژاپن گسترده است."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid"
+  ]
+ },
+ "Carboxymethylcellulose sodium": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Carmellose Sodium"
+   },
+   {
+    "ph": "JP",
+    "name": "Carmellose Sodium"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Carmellose Sodium"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Carboxymethylcellulose Sodium"
+   }
+  ],
+  "tradeNames": "Akucell; Aquasorb; Blanose; carmellosum natricum; cellulose gum; CMC sodium; sodium carboxymethylcellulose; Tylose CB; Walocel C; E466",
+  "chemicalName": "Cellulose, carboxymethyl ether, sodium salt",
+  "formula": "[C6H7O2(OH)x(OCH2COONa)y]n",
+  "mw": "≈ 90 000–700 000",
+  "applications": {
+   "en": "Widely used in oral, topical and some parenteral formulations, mainly to increase viscosity and as a suspending agent; it is also used as a tablet binder and disintegrant, an emulsion stabiliser and a mucoadhesive, and in wound dressings, cosmetics and foods. Typical concentrations: emulsifying agent 0.25–1.0%; gel-forming agent 3.0–6.0%; injections 0.05–0.75%; oral solutions 0.1–1.0%; tablet binder 1.0–6.0%.",
+   "fa": "به‌طور گسترده در فرمولاسیون‌های خوراکی، موضعی و برخی فرآورده‌های تزریقی، عمدتاً برای افزایش ویسکوزیته و به عنوان عامل تعلیق‌دهنده به کار می‌رود؛ همچنین به عنوان چسباننده و متلاشی‌کننده قرص، پایدارکننده امولسیون و چسبنده مخاطی، و در پانسمان زخم، محصولات آرایشی و غذا مصرف می‌شود. غلظت‌های متداول: امولسیفایر 0.25–1.0٪؛ ژل‌ساز 3.0–6.0٪؛ تزریقی 0.05–0.75٪؛ محلول خوراکی 0.1–1.0٪؛ چسباننده قرص 1.0–6.0٪."
+  },
+  "description": {
+   "en": "A white to almost white, odourless and tasteless, granular powder. It is hygroscopic after drying.",
+   "fa": "پودر گرانولی سفید تا تقریباً سفید، بی‌بو و بی‌مزه. پس از خشک شدن رطوبت‌گیر است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Degree of substitution",
+     "fa": "درجه استخلاف"
+    },
+    "v": {
+     "en": "typically 0.7–1.2 carboxymethyl groups per anhydroglucose unit; sodium content 6.5–10.8% (dried substance)",
+     "fa": "معمولاً 0.7–1.2 گروه کربوکسی‌متیل در هر واحد انیدروگلوکز؛ مقدار سدیم 6.5–10.8٪ (نسبت به ماده خشک)"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "≈ 6.0–8.5 (1% w/v aqueous solution)",
+     "fa": "حدود 6.0–8.5 (محلول آبی 1٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "pKa",
+     "fa": "pKa"
+    },
+    "v": {
+     "en": "≈ 4.3",
+     "fa": "حدود 4.3"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "grade-dependent; low-, medium- and high-viscosity grades are available, and solutions are pseudoplastic",
+     "fa": "وابسته به گرید؛ گریدهای با ویسکوزیته کم، متوسط و زیاد موجود است و محلول‌ها رفتار سودوپلاستیک دارند"
+    }
+   },
+   {
+    "k": {
+     "en": "Moisture content",
+     "fa": "مقدار رطوبت"
+    },
+    "v": {
+     "en": "hygroscopic; typically below 10% w/w as supplied",
+     "fa": "رطوبت‌گیر؛ معمولاً کمتر از 10٪ وزنی در حالت عرضه"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "easily dispersed in water at any temperature to form clear colloidal solutions; practically insoluble in acetone, ethanol, ether and toluene",
+     "fa": "در هر دمایی به‌آسانی در آب پراکنده می‌شود و محلول کلوئیدی شفاف می‌دهد؛ عملاً نامحلول در استون، اتانول، اتر و تولوئن"
+    }
+   }
+  ],
+  "stability": {
+   "en": "The powder is stable but hygroscopic. Aqueous solutions are stable at pH 2–10; below pH 2 the polymer precipitates and above pH 10 viscosity falls. Heating lowers solution viscosity, and solutions should be preserved against microbial growth. The dry powder can be sterilised by dry heat, and solutions by autoclaving or gamma irradiation, but these processes reduce viscosity. Store in a well-closed container in a cool, dry place.",
+   "fa": "پودر آن پایدار ولی رطوبت‌گیر است. محلول‌های آبی در pH 2–10 پایدارند؛ در pH کمتر از 2 پلیمر رسوب می‌کند و در pH بالاتر از 10 ویسکوزیته کاهش می‌یابد. حرارت ویسکوزیته محلول را کم می‌کند و محلول‌ها باید در برابر رشد میکروبی محافظت (نگهدارنده‌دار) شوند. پودر خشک با حرارت خشک و محلول‌ها با اتوکلاو یا پرتو گاما قابل استریل شدن‌اند، ولی این فرآیندها ویسکوزیته را کاهش می‌دهند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strongly acidic solutions and with soluble salts of iron and some other metals such as aluminium, mercury and zinc, and with xanthan gum. It is precipitated by ethanol (95%) and forms complex coacervates with gelatin and pectin.",
+   "fa": "با محلول‌های اسیدی قوی، نمک‌های محلول آهن و برخی فلزات دیگر مانند آلومینیوم، جیوه و روی، و نیز با زانتان گام ناسازگار است. با اتانول 95٪ رسوب می‌کند و با ژلاتین و پکتین کواسروات کمپلکس تشکیل می‌دهد."
+  },
+  "manufacture": {
+   "en": "Alkali cellulose, made by treating cellulose from wood pulp or cotton linters with sodium hydroxide, is reacted with sodium monochloroacetate; the product is purified to remove sodium chloride and sodium glycolate.",
+   "fa": "سلولز قلیایی که از تیمار سلولز خمیر چوب یا لینتر پنبه با سدیم هیدروکسید به دست می‌آید، با سدیم مونوکلرواستات واکنش داده می‌شود؛ محصول برای حذف سدیم کلرید و سدیم گلیکولات خالص‌سازی می‌شود."
+  },
+  "safety": {
+   "en": "Regarded as non-toxic and non-irritant after oral and topical use and is not absorbed from the gut; large oral doses act as a bulk laxative. Hypersensitivity reactions, including anaphylaxis, have been reported rarely after injection of products containing it.",
+   "fa": "پس از مصرف خوراکی و موضعی غیرسمی و غیرمحرک شناخته می‌شود و از روده جذب نمی‌شود؛ دوزهای خوراکی زیاد اثر ملین حجم‌دهنده دارند. واکنش‌های حساسیتی، از جمله آنافیلاکسی، به‌ندرت پس از تزریق فرآورده‌های حاوی آن گزارش شده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid generating dust; eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد گردوغبار خودداری شود؛ محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E466). Included in the FDA Inactive Ingredient Database (dental preparations; various injections; oral, topical and vaginal preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E466). در FDA Inactive Ingredient Database (فرآورده‌های دندانی؛ انواع تزریقی؛ فرآورده‌های خوراکی، موضعی و واژینال) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Carboxymethylcellulose calcium; croscarmellose sodium; microcrystalline cellulose and carboxymethylcellulose sodium.",
+   "fa": "کربوکسی‌متیل‌سلولز کلسیم؛ کروس‌کارملوز سدیم؛ سلولز میکروکریستالی همراه با کربوکسی‌متیل‌سلولز سدیم."
+  },
+  "comments": {
+   "en": "Viscosity depends strongly on grade, concentration and temperature, so the grade should always be specified. Being an anionic polymer, it may interact with cationic drugs and preservatives; dispersing the powder in a non-solvent such as glycerol before adding water helps to avoid lumps.",
+   "fa": "ویسکوزیته به‌شدت به گرید، غلظت و دما بستگی دارد، بنابراین همیشه باید گرید مشخص شود. چون پلیمر آنیونی است، ممکن است با داروها و نگهدارنده‌های کاتیونی برهم‌کنش داشته باشد؛ پراکنده کردن پودر در یک غیرحلال مانند گلیسرول پیش از افزودن آب از تشکیل کلوخه جلوگیری می‌کند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "eu-additives",
+   "gras"
+  ]
+ },
+ "Carrageenan": {
+  "names": [
+   {
+    "ph": "USP-NF",
+    "name": "Carrageenan"
+   }
+  ],
+  "tradeNames": "Chondrus extract; Gelcarin; Genu; Irish moss extract; Viscarin; E407",
+  "chemicalName": "Sulfated galactan: potassium, sodium, calcium and magnesium salts of sulfate esters of galactose and 3,6-anhydrogalactose copolymers",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used as a gelling, thickening, suspending and stabilising agent in oral suspensions, emulsions, gels, toothpastes and topical products, and in foods. Iota-carrageenan, usually combined with starch, is used to make non-animal soft-capsule shells, and carrageenans have been investigated in controlled-release matrices and as tablet excipients.",
+   "fa": "به عنوان عامل ژل‌ساز، غلیظ‌کننده، تعلیق‌دهنده و پایدارکننده در سوسپانسیون‌های خوراکی، امولسیون‌ها، ژل‌ها، خمیردندان و فرآورده‌های موضعی و نیز در غذا به کار می‌رود. یوتا-کاراگینان، معمولاً همراه نشاسته، برای ساخت پوسته کپسول نرم با منشأ غیرحیوانی مصرف می‌شود و کاراگینان‌ها در ماتریکس‌های رهش کنترل‌شده و به عنوان ماده جانبی قرص نیز بررسی شده‌اند."
+  },
+  "description": {
+   "en": "A yellowish, tan or white, coarse to fine powder that is practically odourless and has a mucilaginous taste.",
+   "fa": "پودر درشت تا ریز به رنگ زرد مایل، قهوه‌ای روشن یا سفید، تقریباً بی‌بو با طعم لعابی."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Main types",
+     "fa": "انواع اصلی"
+    },
+    "v": {
+     "en": "kappa (firm, brittle gels with potassium ions), iota (elastic gels with calcium ions) and lambda (non-gelling, thickening)",
+     "fa": "کاپا (ژل سفت و شکننده با یون پتاسیم)، یوتا (ژل الاستیک با یون کلسیم) و لامبدا (غیرژل‌شونده، غلیظ‌کننده)"
+    }
+   },
+   {
+    "k": {
+     "en": "Ester sulfate content",
+     "fa": "مقدار سولفات استری"
+    },
+    "v": {
+     "en": "roughly 25% (kappa), 32% (iota) and 35% (lambda)",
+     "fa": "تقریباً 25٪ (کاپا)، 32٪ (یوتا) و 35٪ (لامبدا)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "lambda and the sodium salts dissolve in cold water; kappa and iota (potassium and calcium salts) need hot water and gel on cooling; insoluble in ethanol",
+     "fa": "لامبدا و نمک‌های سدیم در آب سرد حل می‌شوند؛ کاپا و یوتا (نمک‌های پتاسیم و کلسیم) به آب داغ نیاز دارند و با سرد شدن ژل می‌شوند؛ نامحلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Gel behaviour",
+     "fa": "رفتار ژلی"
+    },
+    "v": {
+     "en": "kappa and iota gels are thermoreversible",
+     "fa": "ژل‌های کاپا و یوتا برگشت‌پذیر با حرارت هستند"
+    }
+   }
+  ],
+  "stability": {
+   "en": "The dry powder is stable. Solutions lose viscosity through acid hydrolysis, which is fastest at low pH and high temperature, so prolonged heating below about pH 4–5 should be avoided. Aqueous preparations need a preservative. Store in a cool, dry place in a well-closed container.",
+   "fa": "پودر خشک پایدار است. محلول‌ها با هیدرولیز اسیدی ویسکوزیته خود را از دست می‌دهند که در pH پایین و دمای بالا سریع‌تر است؛ بنابراین باید از حرارت دادن طولانی در pH کمتر از حدود 4–5 خودداری کرد. فرآورده‌های آبی به نگهدارنده نیاز دارند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "As a strongly anionic polymer it can interact with cationic drugs and cationic surfactants, forming precipitates. It also interacts with proteins; kappa-carrageenan reacts with casein in milk, an effect exploited in dairy foods.",
+   "fa": "به عنوان پلیمر آنیونی قوی ممکن است با داروها و سورفکتانت‌های کاتیونی برهم‌کنش داشته و رسوب تشکیل دهد. با پروتئین‌ها نیز برهم‌کنش دارد؛ کاپا-کاراگینان با کازئین شیر واکنش می‌دهد که در فرآورده‌های لبنی از آن استفاده می‌شود."
+  },
+  "manufacture": {
+   "en": "Extracted from red seaweeds (Rhodophyceae) such as Chondrus crispus, Kappaphycus and Eucheuma species with hot alkaline water; the extract is filtered and the carrageenan recovered by alcohol precipitation or by gelling with potassium chloride, then dried and milled. Semi-refined material (processed Eucheuma seaweed, E407a) is made without dissolving the polysaccharide.",
+   "fa": "از جلبک‌های قرمز (Rhodophyceae) مانند Chondrus crispus و گونه‌های Kappaphycus و Eucheuma با آب داغ قلیایی استخراج می‌شود؛ عصاره فیلتر و کاراگینان با رسوب‌دهی با الکل یا ژل کردن با پتاسیم کلرید جدا، سپس خشک و آسیاب می‌شود. ماده نیمه‌تصفیه (جلبک Eucheuma فرآوری‌شده، E407a) بدون حل کردن پلی‌ساکارید تولید می‌شود."
+  },
+  "safety": {
+   "en": "Food-grade, high-molecular-weight carrageenan is poorly absorbed and of low oral toxicity. Degraded carrageenan (poligeenan), of low molecular weight, causes intestinal ulceration in animals and is not permitted as an additive. EFSA's 2018 re-evaluation set a temporary group ADI of 75 mg/kg body weight per day for E407 and E407a.",
+   "fa": "کاراگینان با وزن مولکولی بالا و کیفیت غذایی جذب ناچیزی دارد و سمیت خوراکی آن کم است. کاراگینان تخریب‌شده (پولی‌ژینان) با وزن مولکولی کم، در حیوانات باعث زخم روده می‌شود و به عنوان افزودنی مجاز نیست. ارزیابی مجدد EFSA در سال 2018 یک ADI گروهی موقت برابر 75 mg/kg وزن بدن در روز برای E407 و E407a تعیین کرد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid inhaling the dust; eye protection and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از استنشاق گردوغبار خودداری شود؛ محافظ چشم و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E407; processed Eucheuma seaweed E407a) and evaluated by JECFA and EFSA. Used in oral and topical medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E407؛ جلبک Eucheuma فرآوری‌شده E407a) و توسط JECFA و EFSA ارزیابی شده است. در داروهای خوراکی و موضعی مجاز در اروپا به کار رفته است."
+  },
+  "related": {
+   "en": "Agar; alginic acid; ceratonia; sodium alginate; xanthan gum.",
+   "fa": "آگار؛ آلژینیک اسید؛ سراتونیا (لوبیای خرنوب)؛ سدیم آلژینات؛ زانتان گام."
+  },
+  "comments": {
+   "en": "The type of carrageenan and the cations present largely determine its behaviour, so the type should be specified. Kappa-carrageenan gels synergistically with locust bean gum, giving more elastic gels with less syneresis.",
+   "fa": "نوع کاراگینان و کاتیون‌های موجود تا حد زیادی رفتار آن را تعیین می‌کنند، بنابراین نوع آن باید مشخص شود. کاپا-کاراگینان با صمغ لوبیای خرنوب ژل سینرژیک می‌دهد که الاستیک‌تر است و آب‌اندازی (سینرزیس) کمتری دارد."
+  },
+  "refs": [
+   "usp",
+   "eu-additives",
+   "efsa",
+   "jecfa"
+  ]
+ },
+ "Castor oil": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Virgin Castor Oil"
+   },
+   {
+    "ph": "JP",
+    "name": "Castor Oil"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Castor Oil, Virgin"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Castor Oil"
+   }
+  ],
+  "tradeNames": "Oleum ricini; palma Christi oil; ricini oleum virginale; ricinus oil; tangantangan oil",
+  "chemicalName": "Castor oil (triglyceride of fatty acids, mainly ricinoleic acid)",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used as an emollient and oily base in topical creams, ointments and lotions, as a solvent and vehicle for some intramuscular injections and oily solutions, as the oil phase of some ophthalmic emulsions, and as a plasticiser for film coatings. It is also widely used in cosmetics such as lipsticks, and orally as a stimulant laxative.",
+   "fa": "به عنوان نرم‌کننده و پایه روغنی در کرم‌ها، پمادها و لوسیون‌های موضعی، حلال و حامل برخی تزریقات عضلانی و محلول‌های روغنی، فاز روغنی برخی امولسیون‌های چشمی، و نرم‌کننده (پلاستی‌سایزر) پوشش‌های فیلمی به کار می‌رود. در محصولات آرایشی مانند رژ لب و به صورت خوراکی به عنوان ملین محرک نیز مصرف گسترده دارد."
+  },
+  "description": {
+   "en": "A clear, almost colourless or pale-yellow, viscous oil with a slight odour and a taste that is bland at first and then slightly acrid.",
+   "fa": "روغنی شفاف، گرانرو و تقریباً بی‌رنگ یا زرد کم‌رنگ با بوی ضعیف و طعمی که ابتدا ملایم و سپس کمی تند و گزنده است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Ricinoleic acid content",
+     "fa": "مقدار ریسینولئیک اسید"
+    },
+    "v": {
+     "en": "85–92% of the fatty acids (Ph. Eur.)",
+     "fa": "85–92٪ اسیدهای چرب (فارماکوپه اروپا)"
+    }
+   },
+   {
+    "k": {
+     "en": "Relative density",
+     "fa": "چگالی نسبی"
+    },
+    "v": {
+     "en": "≈ 0.96",
+     "fa": "حدود 0.96"
+    }
+   },
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "high for a fixed oil; of the order of 1000 mPa·s at 20 °C",
+     "fa": "برای یک روغن ثابت زیاد است؛ در حدود 1000 mPa·s در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Hydroxyl value",
+     "fa": "عدد هیدروکسیل"
+    },
+    "v": {
+     "en": "≥ 150",
+     "fa": "دست‌کم 150"
+    }
+   },
+   {
+    "k": {
+     "en": "Iodine value",
+     "fa": "عدد یدی"
+    },
+    "v": {
+     "en": "82–90",
+     "fa": "82–90"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "miscible with ethanol, glacial acetic acid, chloroform and ether; slightly soluble in light petroleum; practically insoluble in water",
+     "fa": "امتزاج‌پذیر با اتانول، استیک اسید گلاسیال، کلروفرم و اتر؛ کمی محلول در پترولیوم سبک؛ عملاً نامحلول در آب"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Less prone to rancidity than most fixed oils unless overheated. Store in well-filled, airtight containers protected from light. It can be sterilised by dry heat.",
+   "fa": "در مقایسه با بیشتر روغن‌های ثابت کمتر دچار تندی می‌شود، مگر آنکه بیش از حد حرارت ببیند. در ظروف پر و دربسته و دور از نور نگهداری شود. با حرارت خشک قابل استریل شدن است."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Obtained by cold expression of the seeds of Ricinus communis, followed by clarification; refined grades are further treated to remove free fatty acids and colour. The toxic protein ricin remains in the seed cake and is not present in the oil.",
+   "fa": "از پرس سرد دانه‌های Ricinus communis و سپس شفاف‌سازی به دست می‌آید؛ گریدهای تصفیه‌شده برای حذف اسیدهای چرب آزاد و رنگ بیشتر فرآوری می‌شوند. پروتئین سمی ریسین در کنجاله دانه باقی می‌ماند و در روغن وجود ندارد."
+  },
+  "safety": {
+   "en": "Generally regarded as non-toxic and non-irritant when used as an excipient in topical and parenteral products. Oral doses of several millilitres or more have a strong purgative effect, and it should be avoided in pregnancy at laxative doses. It should not be confused with the polyoxyl castor oil surfactants, which are associated with hypersensitivity reactions.",
+   "fa": "در مصرف به عنوان ماده جانبی در فرآورده‌های موضعی و تزریقی به‌طور کلی غیرسمی و غیرمحرک شناخته می‌شود. دوزهای خوراکی چند میلی‌لیتری یا بیشتر اثر مسهل قوی دارند و مصرف آن در دوز ملین در بارداری باید اجتناب شود. نباید آن را با سورفکتانت‌های پلی‌اکسیل کاستور اویل که با واکنش‌های حساسیتی همراه‌اند اشتباه گرفت."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Spills are slippery.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. ریختن آن سطوح را لغزنده می‌کند."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (including intramuscular injections and ophthalmic, oral and topical preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (از جمله تزریق عضلانی و فرآورده‌های چشمی، خوراکی و موضعی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Castor oil, hydrogenated; polyoxyl 35 castor oil; polyoxyl 40 hydrogenated castor oil.",
+   "fa": "روغن کرچک هیدروژنه؛ پلی‌اکسیل 35 کاستور اویل؛ پلی‌اکسیل 40 روغن کرچک هیدروژنه."
+  },
+  "comments": {
+   "en": "The hydroxyl group of ricinoleic acid makes castor oil unusually viscous and polar for a vegetable oil and gives it its miscibility with ethanol, which other fixed oils lack.",
+   "fa": "گروه هیدروکسیل ریسینولئیک اسید باعث می‌شود روغن کرچک برای یک روغن گیاهی به‌طور غیرمعمول گرانرو و قطبی باشد و با اتانول امتزاج‌پذیر شود، ویژگی‌ای که سایر روغن‌های ثابت ندارند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid"
+  ]
+ },
+ "Castor oil, hydrogenated": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Hydrogenated Castor Oil"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Castor Oil, Hydrogenated"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Hydrogenated Castor Oil"
+   }
+  ],
+  "tradeNames": "Castor wax; Castorwax; Cutina HR; glyceryl tri(12-hydroxystearate); Kolliwax HCO; opal wax; ricini oleum hydrogenatum; trihydroxystearin",
+  "chemicalName": "Mainly glyceryl tri(12-hydroxystearate)",
+  "formula": "C57H110O9",
+  "mw": "939.5",
+  "applications": {
+   "en": "Used as a hydrophobic matrix former and coating material in sustained-release tablets and capsules, as a tablet lubricant, and as a stiffening agent in creams, ointments, sticks and suppository bases. It is also used in cosmetics.",
+   "fa": "به عنوان سازنده ماتریکس آب‌گریز و ماده پوشش‌دهنده در قرص‌ها و کپسول‌های پیوسته‌رهش، لغزان‌کننده قرص، و عامل سفت‌کننده در کرم‌ها، پمادها، استیک‌ها و پایه‌های شیاف به کار می‌رود. در محصولات آرایشی نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "A fine, white to yellowish-white, waxy powder, flakes or pellets with little or no odour.",
+   "fa": "پودر، پولک یا پلت مومی ریز و سفید تا سفید مایل به زرد، بی‌بو یا تقریباً بی‌بو."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting range",
+     "fa": "محدوده ذوب"
+    },
+    "v": {
+     "en": "≈ 83–88 °C",
+     "fa": "حدود 83–88 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Hydroxyl value",
+     "fa": "عدد هیدروکسیل"
+    },
+    "v": {
+     "en": "145–165",
+     "fa": "145–165"
+    }
+   },
+   {
+    "k": {
+     "en": "Iodine value",
+     "fa": "عدد یدی"
+    },
+    "v": {
+     "en": "≤ 5",
+     "fa": "حداکثر 5"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water and light petroleum; slightly soluble in methylene chloride; very slightly soluble in ethanol",
+     "fa": "عملاً نامحلول در آب و پترولیوم سبک؛ کمی محلول در متیلن کلرید؛ بسیار کم محلول در اتانول"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable. Store in a well-closed container in a cool, dry place.",
+   "fa": "پایدار است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Prepared by catalytic hydrogenation of refined castor oil, usually with a nickel catalyst, which saturates the double bond of ricinoleic acid to give 12-hydroxystearic acid esters.",
+   "fa": "از هیدروژناسیون کاتالیزوری روغن کرچک تصفیه‌شده، معمولاً با کاتالیزور نیکل، تهیه می‌شود؛ در این فرآیند پیوند دوگانه ریسینولئیک اسید اشباع شده و استرهای 12-هیدروکسی‌استئاریک اسید به دست می‌آید."
+  },
+  "safety": {
+   "en": "Regarded as non-toxic and non-irritant in oral and topical products at the levels used.",
+   "fa": "در مقادیر مصرفی در فرآورده‌های خوراکی و موضعی غیرسمی و غیرمحرک شناخته می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules and tablets; topical preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (کپسول و قرص خوراکی؛ فرآورده‌های موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Castor oil; hydrogenated vegetable oil; polyoxyl 40 hydrogenated castor oil.",
+   "fa": "روغن کرچک؛ روغن گیاهی هیدروژنه؛ پلی‌اکسیل 40 روغن کرچک هیدروژنه."
+  },
+  "comments": {
+   "en": "The hydroxyl groups give it a higher melting point and greater polarity than other hydrogenated vegetable oils; it can be incorporated by melt granulation or hot-melt extrusion as well as by direct blending.",
+   "fa": "گروه‌های هیدروکسیل نقطه ذوب و قطبیت آن را از سایر روغن‌های گیاهی هیدروژنه بالاتر می‌برند؛ می‌توان آن را با گرانولاسیون ذوبی یا اکستروژن ذوب داغ (HME) و نیز با اختلاط مستقیم وارد فرمولاسیون کرد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Cellulose acetate": {
+  "names": [
+   {
+    "ph": "PhEur",
+    "name": "Cellulose Acetate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Cellulose Acetate"
+   }
+  ],
+  "tradeNames": "Acetic acid, cellulose ester; acetyl cellulose; cellulose diacetate; cellulosi acetas; CA-320S; CA-398-10",
+  "chemicalName": "Cellulose acetate (partially or completely acetylated cellulose)",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Used mainly as the semipermeable membrane of osmotic-pump tablets and as a coating or matrix material in controlled-release tablets, beads and pellets; it is also used for taste masking. Release rate is adjusted with plasticisers and water-soluble pore formers such as macrogols.",
+   "fa": "عمدتاً به عنوان غشای نیمه‌تراوای قرص‌های پمپ اسمزی و ماده پوشش یا ماتریکس در قرص‌ها، دانه‌ها و پلت‌های رهش کنترل‌شده به کار می‌رود و برای پوشاندن طعم نیز مصرف می‌شود. سرعت رهش با نرم‌کننده‌ها و منفذسازهای محلول در آب مانند ماکروگل‌ها تنظیم می‌شود."
+  },
+  "description": {
+   "en": "A white to off-white, free-flowing powder, pellets or flakes. It is tasteless and odourless or has a faint odour of acetic acid.",
+   "fa": "پودر، پلت یا پولک روان سفید تا سفید مایل به کرم. بی‌مزه و بی‌بو است یا بوی ضعیف استیک اسید دارد."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Acetyl content",
+     "fa": "مقدار گروه استیل"
+    },
+    "v": {
+     "en": "29.0–44.8% (USP–NF); common grades about 32% (CA-320) and 39.8% (CA-398)",
+     "fa": "29.0–44.8٪ (USP–NF)؛ گریدهای رایج حدود 32٪ (CA-320) و 39.8٪ (CA-398)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "depends on acetyl content: grades with about 39–40% acetyl are soluble in acetone; higher-acetyl (triacetate) grades need methylene chloride; all are practically insoluble in water",
+     "fa": "به مقدار استیل بستگی دارد: گریدهای با حدود 39–40٪ استیل در استون محلول‌اند؛ گریدهای با استیل بیشتر (تری‌استات) به متیلن کلرید نیاز دارند؛ همه عملاً در آب نامحلول‌اند"
+    }
+   },
+   {
+    "k": {
+     "en": "Film properties",
+     "fa": "ویژگی فیلم"
+    },
+    "v": {
+     "en": "forms strong films that are permeable to water but much less permeable to dissolved solutes (semipermeable)",
+     "fa": "فیلم‌های محکمی تشکیل می‌دهد که به آب نفوذپذیر ولی به مواد محلول بسیار کمتر نفوذپذیرند (نیمه‌تراوا)"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable when kept dry. Exposure to heat and high humidity causes slow hydrolysis with release of acetic acid. Store in a well-closed container in a cool, dry place.",
+   "fa": "در شرایط خشک پایدار است. حرارت و رطوبت زیاد باعث هیدرولیز آهسته و آزاد شدن استیک اسید می‌شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strongly acidic or alkaline substances, which hydrolyse the ester groups.",
+   "fa": "با مواد اسیدی یا قلیایی قوی که گروه‌های استری را هیدرولیز می‌کنند ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Purified cellulose from wood pulp or cotton linters is acetylated with acetic anhydride in acetic acid using a sulfuric acid catalyst to give the triacetate, which is then partially hydrolysed to the required acetyl content.",
+   "fa": "سلولز خالص‌شده از خمیر چوب یا لینتر پنبه با استیک انیدرید در استیک اسید و با کاتالیزور سولفوریک اسید استیله می‌شود تا تری‌استات به دست آید؛ سپس تا رسیدن به مقدار استیل مورد نظر به‌طور جزئی هیدرولیز می‌شود."
+  },
+  "safety": {
+   "en": "Regarded as non-toxic and non-irritant; it is not absorbed. The insoluble shells of osmotic tablets pass through the gut intact and may be seen in the stool, which patients should be told about. Non-deformable controlled-release tablets have rarely caused obstruction in patients with pre-existing gastrointestinal narrowing.",
+   "fa": "غیرسمی و غیرمحرک شناخته می‌شود و جذب نمی‌شود. پوسته نامحلول قرص‌های اسمزی دست‌نخورده از دستگاه گوارش عبور می‌کند و ممکن است در مدفوع دیده شود که باید به بیمار اطلاع داده شود. قرص‌های رهش کنترل‌شده غیرقابل تغییر شکل، به‌ندرت در بیماران با تنگی قبلی دستگاه گوارش باعث انسداد شده‌اند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. The fine powder can form explosive dust–air mixtures; avoid ignition sources and wear eye protection and a dust mask.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. پودر ریز آن می‌تواند مخلوط انفجاری گردوغبار–هوا تشکیل دهد؛ از منابع جرقه دور نگه داشته شود و از محافظ چشم و ماسک گردوغبار استفاده شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Cellulose acetate butyrate; cellulose acetate phthalate; ethylcellulose.",
+   "fa": "سلولز استات بوتیرات؛ سلولز استات فتالات؛ اتیل‌سلولز."
+  },
+  "comments": {
+   "en": "In osmotic-pump tablets the drug is released through a small, usually laser-drilled, orifice in the cellulose acetate coat, giving release that is largely independent of pH and gastrointestinal motility.",
+   "fa": "در قرص‌های پمپ اسمزی، دارو از یک منفذ کوچک (معمولاً ایجادشده با لیزر) در پوشش سلولز استات آزاد می‌شود و رهش آن تا حد زیادی مستقل از pH و حرکات دستگاه گوارش است."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ }
+}
