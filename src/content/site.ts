@@ -36,7 +36,7 @@ export const copy = {
   slogan: bi("The Pharmaceutical Information Vault", "گنجینه اطلاعات داروسازی"),
 
   nav: {
-    home: bi("Home", "خانه"),
+    home: bi("Home", "صفحه اصلی"),
     sections: bi("Sections", "بخش‌ها"),
     tools: bi("Calculations", "محاسبات"),
     plans: bi("Plans", "اشتراک"),
