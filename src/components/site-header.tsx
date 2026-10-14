@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronDown, House, UserRound } from "lucide-react";
+import { ChevronDown, UserRound } from "lucide-react";
 import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import { getSection, sectionGroups, sections, supplierBankShort } from "@/content/sections";
@@ -31,11 +31,9 @@ export async function SiteHeader() {
           </Link>
           <Link
             href={href(locale)}
-            aria-label={nav.home[locale]}
-            title={nav.home[locale]}
-            className="grid size-9 place-items-center rounded-full text-vault-800 ring-1 ring-line transition hover:bg-molecule-50 hover:text-molecule-700 hover:ring-molecule-400/50"
+            className="whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-vault-800 transition hover:text-molecule-700"
           >
-            <House className="size-[1.1rem]" aria-hidden="true" />
+            {nav.home[locale]}
           </Link>
         </div>
 
