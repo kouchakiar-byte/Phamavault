@@ -1,5 +1,6 @@
 import { getUser } from "@/lib/auth";
-import { fetchIrcPage, parseIrc, textLines } from "@/lib/iran-drugs";
+import { diagnose } from "@/lib/irc-http";
+import { fetchIrcPage, IRC_ORIGIN, parseIrc, textLines } from "@/lib/iran-drugs";
 
 /**
  * GET /api/admin/irc-raw?q=metformin — admins only: what the Iran FDA register
@@ -22,6 +23,12 @@ export async function GET(request: Request) {
     ].join("\n");
     return new Response(body, { headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store" } });
   } catch (e) {
-    return new Response(`register not reachable: ${String(e)}`, { status: 502, headers: { "Content-Type": "text/plain; charset=utf-8" } });
+    const err = e as { code?: string; cause?: { code?: string; message?: string } };
+    const lines = [
+      `register not reachable: ${String(e)}`,
+      `code: ${err.code ?? "-"} · cause: ${err.cause?.code ?? "-"} ${err.cause?.message ?? ""}`,
+      ...(await diagnose(new URL(IRC_ORIGIN).hostname)),
+    ];
+    return new Response(lines.join("\n"), { status: 502, headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store" } });
   }
 }
