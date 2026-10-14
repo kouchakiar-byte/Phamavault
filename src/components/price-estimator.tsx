@@ -33,7 +33,7 @@ export function PriceEstimator({ locale }: { locale: Locale }) {
   return (
     <div className="mt-10 rounded-card border border-line bg-paper p-6 sm:p-8">
       <p className="text-lg font-bold text-vault-900">{t.title[locale]}</p>
-      <div className="mt-6 grid gap-6 md:grid-cols-2">
+      <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <div className="rounded-xl border border-line bg-white p-5">
           <p className="font-semibold text-vault-900">{t.individual[locale]}</p>
           <p className="mt-4 text-sm text-muted">{t.includes[locale]}</p>
@@ -65,6 +65,16 @@ export function PriceEstimator({ locale }: { locale: Locale }) {
           </p>
           <p className="mt-2 text-sm text-muted">
             {fmt(team / n)} {t.perUser[locale]}
+          </p>
+        </div>
+
+        <div className="rounded-xl border border-line bg-white p-5">
+          <p className="font-semibold text-vault-900">{t.pharmacy[locale]}</p>
+          <p className="mt-4 text-sm text-muted">{t.pharmacyIncludes[locale]}</p>
+          <p className="mt-4 text-sm text-muted">{t.total[locale]}</p>
+          <Was price={p.pharmacy} list={p.pharmacyList} locale={locale} />
+          <p className="text-2xl font-bold text-vault-900">
+            {fmt(p.pharmacy)} <span className="text-sm font-normal text-muted">{perMonth[locale]}</span>
           </p>
         </div>
       </div>

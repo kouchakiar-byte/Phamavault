@@ -8,7 +8,8 @@ import { sections } from "@/content/sections";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
 import { formatNumber } from "@/lib/format";
-import { isPaidSection, listPrice, monthlyPrice, monthOptions, type PaidSection, type PlanId } from "@/lib/pricing";
+import { listPrice, monthlyPrice, monthOptions, planIds, sectionsOf, type PaidSection, type PlanId } from "@/lib/pricing";
+import { planItem } from "@/lib/labels";
 import { withBrand } from "../brand";
 import { VaultLock } from "./vault-lock";
 
@@ -147,7 +148,6 @@ export function BuyForm({
   const monthly = monthlyPrice(purchase);
   const list = listPrice(purchase);
   const off = list > monthly ? Math.round(((list - monthly) / list) * 100) : 0;
-  const planName = (id: PlanId) => copy.plans.items.find((i) => i.id === (id === "team" ? "enterprise" : "individual"))!.name[locale];
   const go = (to: number) => {
     setStep(to);
     turn();
@@ -164,7 +164,7 @@ export function BuyForm({
     }, 900);
   };
 
-  const stepText = t.steps[current === "scope" && plan === "team" ? "seats" : current];
+  const stepText = t.steps[current === "scope" && plan !== "individual" ? (plan === "team" ? "seats" : "pharmacy") : current];
 
   return (
     <form action={submit} className="grid gap-8 md:grid-cols-[13rem_minmax(0,1fr)] md:gap-10">
@@ -209,8 +209,8 @@ export function BuyForm({
           <>
             <fieldset hidden={current !== "plan"} className="pv-step-in">
               <legend className="sr-only">{t.plan[locale]}</legend>
-              <div className="grid gap-3 sm:grid-cols-2">
-                {(["individual", "team"] as const).map((id) => (
+              <div className="grid gap-3 sm:grid-cols-3">
+                {planIds.map((id) => (
                   <label key={id} className={pill(plan === id)}>
                     <input
                       type="radio"
@@ -223,25 +223,23 @@ export function BuyForm({
                       }}
                       className="sr-only"
                     />
-                    <span className="block text-base">{planName(id)}</span>
-                    <span className="mt-1 block text-xs font-normal text-muted">
-                      {copy.plans.items.find((i) => i.id === (id === "team" ? "enterprise" : "individual"))!.priceFor[locale]}
-                    </span>
+                    <span className="block text-base">{planItem(id).name[locale]}</span>
+                    <span className="mt-1 block text-xs font-normal text-muted">{planItem(id).priceFor[locale]}</span>
                   </label>
                 ))}
               </div>
             </fieldset>
 
             <div hidden={current !== "scope"} className="pv-step-in">
-              {plan === "individual" ? (
+              {plan !== "team" ? (
                 <div>
                   <p className={`${pill(true)} flex items-center gap-3`}>
                     <Check className="size-4 shrink-0 text-molecule-600" aria-hidden="true" />
-                    {t.all[locale]}
+                    {(plan === "pharmacy" ? t.allPharmacy : t.all)[locale]}
                   </p>
                   <ul className="mt-3 grid gap-2 sm:grid-cols-2">
                     {sections
-                      .filter((s) => isPaidSection(s.slug))
+                      .filter((s) => sectionsOf(plan).includes(s.slug as PaidSection))
                       .map((s) => (
                         <li key={s.slug} className="flex items-start gap-3 rounded-xl border border-line bg-white px-4 py-3 text-sm text-vault-800">
                           <Check className="mt-0.5 size-4 shrink-0 text-molecule-600" aria-hidden="true" />

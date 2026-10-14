@@ -31,6 +31,7 @@ export function GrantForm({ locale }: { locale: Locale }) {
         <select id="g-plan" name="plan" className="field-input mt-1" value={plan} onChange={(e) => setPlan(e.target.value)}>
           <option value="individual">{copy.plans.items[0].name[locale]}</option>
           <option value="team">{copy.plans.items[1].name[locale]}</option>
+          <option value="pharmacy">{copy.plans.items[2].name[locale]}</option>
         </select>
       </div>
       <div>
