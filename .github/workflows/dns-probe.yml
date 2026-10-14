@@ -1,0 +1,16 @@
+name: DNS probe (temporary)
+on:
+  push:
+    branches: ["claude/**"]
+    paths: [".github/workflows/dns-probe.yml"]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Look up pharmavault.ir records
+        run: |
+          for t in NS SOA A MX TXT CAA; do echo "== $t"; dig +short $t pharmavault.ir; done
+          echo "== www A"; dig +short A www.pharmavault.ir
+          echo "== mail A"; dig +short A mail.pharmavault.ir
+          echo "== _dmarc TXT"; dig +short TXT _dmarc.pharmavault.ir
+          echo "== whois (holder handle lines only)"; whois pharmavault.ir 2>/dev/null | grep -iE "^(nic-hdl|holder-c|admin-c|nserver|last-updated|expire-date|source)" || true
