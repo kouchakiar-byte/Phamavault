@@ -51,6 +51,19 @@ export const referenceLabels = {
   seeAll: bi("All references and pharmacopoeias", "همه رفرنس‌ها و فارماکوپه‌ها"),
 };
 
+/** The searchable Orange Book at the top of the references page. */
+export const referencesOrangeBook = {
+  title: bi("Orange Book — search FDA-approved generic and brand products", "Orange Book — جستجوی داروهای ژنریک و برند تأییدشده FDA"),
+  lead: bi(
+    "The full FDA Orange Book (Approved Drug Products with Therapeutic Equivalence Evaluations), searchable here. Search by active ingredient or brand name to see every approved product of that ingredient — the reference listed drug and its generics — with strength, dosage form, applicant, application number and therapeutic-equivalence (TE) code. The data are refreshed every month from the FDA data files.",
+    "نسخه کامل Orange Book سازمان غذا و دارو آمریکا (Approved Drug Products with Therapeutic Equivalence Evaluations) که همین‌جا قابل جستجوست. با جستجوی ماده مؤثره یا نام تجاری، همه فرآورده‌های تأییدشده آن ماده — داروی مرجع (RLD) و ژنریک‌های آن — را با قدرت، شکل دارویی، شرکت صاحب مجوز، شماره پرونده و کد هم‌ارزی درمانی (TE) ببینید. داده‌ها هر ماه از فایل‌های رسمی FDA به‌روز می‌شوند.",
+  ),
+  note: bi(
+    "TE codes beginning with A are therapeutically equivalent to the reference product (e.g. AB: bioequivalence demonstrated); codes beginning with B are not considered equivalent; a blank code means there is no multisource comparison (single source or OTC monograph). RLD = reference listed drug, the product generics are compared with; RS = reference standard for bioequivalence studies.",
+    "کدهای TE که با A شروع می‌شوند از نظر درمانی با فرآورده مرجع هم‌ارزند (مثلاً AB: هم‌ارزی زیستی اثبات‌شده)؛ کدهای B هم‌ارز محسوب نمی‌شوند؛ کد خالی یعنی مقایسه چندمنبعی وجود ندارد (تک‌منبع یا OTC). RLD = داروی مرجع که ژنریک‌ها با آن مقایسه می‌شوند؛ RS = استاندارد مرجع برای مطالعه هم‌ارزی زیستی.",
+  ),
+};
+
 export const referenceSections: RefSection[] = [
   {
     key: "usp",
