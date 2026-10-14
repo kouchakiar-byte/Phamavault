@@ -18,6 +18,8 @@ export const siteConfig = {
   },
   /** e-Namad trust seal: the id and code from the e-Namad panel; null hides the badge. */
   enamad: null as { id: string; code: string } | null,
+  /** e-Namad domain check: the number e-Namad gives for its <meta name="enamad"> tag; null leaves it out. */
+  enamadVerify: null as string | null,
 };
 
 /** Site-wide copy. Every string is held in both languages. */
