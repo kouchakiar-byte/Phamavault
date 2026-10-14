@@ -7,6 +7,7 @@ import { pages } from "@/content/pages";
 import type { Locale } from "@/i18n/config";
 import { normalize } from "@/i18n/bi";
 import { formatNumber } from "@/lib/format";
+import { useUrlParam } from "@/lib/use-url-param";
 import { Count, Field, FilterBar, TableWrap } from "./filters";
 import { Chip } from "./ui";
 
@@ -40,7 +41,9 @@ type Props = { locale: Locale; data: typeof RawMaterialData };
 const PAGE = 50;
 
 export function MaterialTable({ locale, data }: Props) {
-  const [query, setQuery] = useState("");
+  const urlQuery = useUrlParam("q");
+  const [typed, setQuery] = useState<string | null>(null);
+  const query = typed ?? urlQuery;
   const [group, setGroup] = useState("");
   const [limit, setLimit] = useState(PAGE);
   const t = pages.materials;

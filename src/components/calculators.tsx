@@ -15,6 +15,7 @@ import { Mkt, Q1e, stabilityDefaults } from "./calc/stability";
 import { Nitro, Q3c, Q3d, Rot, Std, qualityDefaults } from "./calc/quality";
 import { Cfu, Eli, F0, Gel, Lal, Sal, microDefaults } from "./calc/micro";
 import { Bsa, Crcl, Hed, Inf, Pk, clinicalDefaults } from "./calc/clinical";
+import { useUrlParam } from "@/lib/use-url-param";
 
 
 /*
@@ -760,7 +761,10 @@ const defaults: Values = {
 };
 
 export function Calculators({ locale }: { locale: Locale }) {
-  const [active, setActive] = useState<string>("pot");
+  // ?calc= (from the site search) opens that calculator.
+  const urlCalc = useUrlParam("calc");
+  const [picked, setActive] = useState<string | null>(null);
+  const active = picked ?? (calculations.some((c) => c.key === urlCalc) ? urlCalc : "pot");
   const [values, setValues] = useState(defaults);
   const ctx: Ctx = { locale, v: values, set: (k, val) => setValues((prev) => ({ ...prev, [k]: val })) };
 

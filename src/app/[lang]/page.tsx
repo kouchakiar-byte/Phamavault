@@ -11,6 +11,7 @@ import {
   Pill,
   Mail,
   Minus,
+  Search,
   ShieldCheck,
   TestTubes,
   Truck,
@@ -22,6 +23,7 @@ import { SupplierSpotlight } from "@/components/supplier-spotlight";
 import { BiTitle, ButtonLink, Container, MoleculePattern, SectionHead } from "@/components/ui";
 import { calculation, calculations, featuredCalculations } from "@/content/calculations";
 import { referenceSections } from "@/content/references";
+import { searchCopy } from "@/content/search";
 import { sections } from "@/content/sections";
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
@@ -184,7 +186,21 @@ export default async function HomePage() {
             </h1>
             <p className="mt-6 max-w-2xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
             <p className="mt-3 max-w-xl text-base font-medium leading-relaxed text-molecule-400">{hero.audience[locale]}</p>
-            <div className="mt-10 flex flex-wrap gap-4">
+            {/* The site-wide search: a plain GET form to /search */}
+            <form action={href(locale, "search")} role="search" className="mt-8 flex max-w-2xl gap-2 rounded-full border border-white/15 bg-white/[0.06] p-1.5 backdrop-blur transition focus-within:border-molecule-400">
+              <Search className="ms-3 size-5 shrink-0 self-center text-molecule-400" aria-hidden="true" />
+              <input
+                type="search"
+                name="q"
+                placeholder={searchCopy.placeholder[locale]}
+                aria-label={searchCopy.label[locale]}
+                className="min-w-0 flex-1 bg-transparent px-1 text-base text-white outline-none placeholder:text-vault-100/50 pv-bare-input"
+              />
+              <button type="submit" className="rounded-full bg-molecule-500 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-molecule-600">
+                {searchCopy.button[locale]}
+              </button>
+            </form>
+            <div className="mt-6 flex flex-wrap gap-4">
               <ButtonLink href={href(locale, "suppliers")}>{hero.supplierSearch[locale]}</ButtonLink>
               <ButtonLink href={href(locale, "#plans")} variant="outline-light">
                 {hero.seePlans[locale]}
