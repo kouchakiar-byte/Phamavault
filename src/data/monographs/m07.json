@@ -1,0 +1,3288 @@
+{
+ "Shellac": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Shellac"
+   },
+   {
+    "ph": "JP",
+    "name": "Purified Shellac"
+   },
+   {
+    "ph": "JP",
+    "name": "White Shellac"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Shellac"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Shellac"
+   }
+  ],
+  "tradeNames": "Lac; gum lac; lacca; orange shellac; bleached shellac; white shellac; dewaxed shellac; confectioner's glaze; E904",
+  "chemicalName": "Purified resinous secretion of the lac insect, made up mainly of polyesters of hydroxy fatty acids (chiefly aleuritic acid) and sesquiterpenic acids (such as shellolic acid)",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Shellac is used as a film-forming coating material for tablets and capsules, mainly as a moisture-protective sealing coat applied before sugar coating, and as a glaze for tablets and confectionery. It was formerly widely used for enteric coating, but because it dissolves only at a relatively high intestinal pH and its solubility falls on ageing, it has largely been replaced by synthetic enteric polymers. It is applied as a solution in ethanol or as an aqueous ammoniacal solution; it is also used in food glazes, cosmetics (for example hair sprays and mascara) and industrial lacquers.",
+   "fa": "شلاک به عنوان ماده فیلم‌ساز برای پوشش قرص و کپسول به کار می‌رود؛ عمدتاً به صورت لایه مهروموم‌کننده (sealing coat) محافظ در برابر رطوبت پیش از روکش قندی، و به عنوان براق‌کننده قرص و شیرینی‌جات. در گذشته برای روکش روده‌ای (انتریک) بسیار مصرف می‌شد، ولی چون فقط در pH نسبتاً بالای روده حل می‌شود و حلالیت آن با گذشت زمان کم می‌شود، تا حد زیادی جای خود را به پلیمرهای انتریک سنتزی داده است. به صورت محلول در اتانول یا محلول آبی آمونیاکی به کار می‌رود و در براق‌کننده‌های غذایی، فرآورده‌های آرایشی (مانند اسپری مو و ریمل) و لاک‌های صنعتی نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "A natural resin obtained from the secretion of the lac insect. It occurs as hard, brittle, translucent flakes or as a powder, ranging in colour from pale yellow (bleached shellac) to orange-brown (orange shellac), with a faint characteristic odour. Grades differ in colour, wax content (regular or dewaxed) and degree of bleaching.",
+   "fa": "رزین طبیعی حاصل از ترشحات حشره لاک. به صورت پولک‌های سخت، شکننده و نیمه‌شفاف یا پودر دیده می‌شود و رنگ آن از زرد کم‌رنگ (شلاک سفیدشده) تا نارنجی مایل به قهوه‌ای (شلاک نارنجی) متغیر است و بوی ضعیف و مشخصی دارد. گریدها از نظر رنگ، مقدار موم (معمولی یا موم‌زدایی‌شده) و میزان سفیدسازی با هم فرق دارند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in ethanol and in aqueous alkaline solutions such as ammonia and borax solutions; practically insoluble in water and acidic aqueous media",
+     "fa": "محلول در اتانول و در محلول‌های آبی قلیایی مانند آمونیاک و بوراکس؛ عملاً نامحلول در آب و محیط‌های آبی اسیدی"
+    }
+   },
+   {
+    "k": {
+     "en": "pH of dissolution",
+     "fa": "pH انحلال"
+    },
+    "v": {
+     "en": "dissolves only at relatively high pH (about 7 and above), which limits its reliability as an enteric coat",
+     "fa": "فقط در pH نسبتاً بالا (حدود 7 و بیشتر) حل می‌شود و همین موضوع قابلیت اطمینان آن را به عنوان روکش انتریک محدود می‌کند"
+    }
+   },
+   {
+    "k": {
+     "en": "Acid value",
+     "fa": "عدد اسیدی"
+    },
+    "v": {
+     "en": "high, owing to free carboxylic acid groups; limits are set in the pharmacopoeias for each grade",
+     "fa": "بالا به دلیل گروه‌های کربوکسیلیک اسید آزاد؛ حدود آن برای هر گرید در فارماکوپه‌ها تعیین شده است"
+    }
+   },
+   {
+    "k": {
+     "en": "Wax content",
+     "fa": "مقدار موم"
+    },
+    "v": {
+     "en": "regular grades contain a few per cent of lac wax; dewaxed grades contain much less",
+     "fa": "گریدهای معمولی چند درصد موم لاک دارند؛ گریدهای موم‌زدایی‌شده مقدار بسیار کمتری دارند"
+    }
+   },
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "brittle flakes or powder; softens on warming",
+     "fa": "پولک شکننده یا پودر؛ با گرم شدن نرم می‌شود"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Shellac slowly polymerises on storage, particularly when warm, so that films become harder, less soluble and slower to dissolve or disintegrate; bleached shellac is less stable than orange shellac. Store in a well-closed container in a cool place.",
+   "fa": "شلاک در طول نگهداری، به‌ویژه در دمای گرم، به‌آهستگی پلیمریزه می‌شود؛ در نتیجه فیلم‌ها سخت‌تر و کم‌محلول‌تر می‌شوند و دیرتر حل یا متلاشی می‌شوند. شلاک سفیدشده از شلاک نارنجی ناپایدارتر است. در ظرف کاملاً بسته و در جای خنک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. Because it is acidic, it may interact with basic drugs and alkaline excipients in a coating.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. به دلیل خاصیت اسیدی ممکن است در لایه پوشش با داروهای بازی و مواد کمکی قلیایی برهم‌کنش داشته باشد."
+  },
+  "manufacture": {
+   "en": "The lac insect (Kerria lacca) secretes the resin onto the twigs of host trees, mainly in India and Thailand. The encrusted twigs (stick lac) are scraped, crushed and washed to give seed lac, which is refined by melting and filtration or by solvent extraction; bleached shellac is produced by treating an alkaline solution with hypochlorite, and dewaxed grades are filtered to remove wax.",
+   "fa": "حشره لاک (Kerria lacca) رزین را روی شاخه‌های درختان میزبان، عمدتاً در هند و تایلند، ترشح می‌کند. شاخه‌های پوشیده از رزین (stick lac) تراشیده، خرد و شسته می‌شوند تا seed lac به دست آید که با ذوب و فیلتراسیون یا استخراج با حلال خالص‌سازی می‌شود. شلاک سفیدشده از تیمار محلول قلیایی آن با هیپوکلریت تهیه می‌شود و در گریدهای موم‌زدایی‌شده، موم با فیلتراسیون جدا می‌شود."
+  },
+  "safety": {
+   "en": "Shellac is used in oral pharmaceuticals and foods and is generally regarded as non-toxic and non-irritant at the levels used. Occasional allergic contact dermatitis has been reported, mainly from cosmetic use.",
+   "fa": "شلاک در داروهای خوراکی و مواد غذایی مصرف می‌شود و در مقادیر مصرفی عموماً غیرسمی و غیرمحرک شناخته می‌شود. موارد گاه‌به‌گاه درماتیت تماسی آلرژیک، عمدتاً ناشی از مصرف در فرآورده‌های آرایشی، گزارش شده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Ethanolic coating solutions are flammable and should be prepared and sprayed with adequate ventilation and away from sources of ignition.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. محلول‌های پوشش اتانولی قابل اشتعال‌اند و باید با تهویه کافی و دور از منابع جرقه تهیه و اسپری شوند."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E904). Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E904). در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Cellulose acetate phthalate; hypromellose phthalate; methacrylic acid copolymers; zein.",
+   "fa": "سلولز استات فتالات؛ هیپروملوز فتالات؛ کوپلیمرهای متاکریلیک اسید؛ زئین."
+  },
+  "comments": {
+   "en": "Because shellac films age and become less soluble, the disintegration and dissolution of shellac-coated products should be checked during stability studies. Aqueous ammoniacal shellac solutions avoid organic solvents and give films that are less affected by ageing.",
+   "fa": "از آنجا که فیلم‌های شلاک با گذشت زمان پیر و کم‌محلول‌تر می‌شوند، زمان متلاشی شدن و انحلال فرآورده‌های روکش‌شده با شلاک باید در مطالعات پایداری بررسی شود. محلول‌های آبی آمونیاکی شلاک نیاز به حلال آلی را از بین می‌برند و فیلم‌هایی می‌دهند که کمتر تحت تأثیر پیرشدگی قرار می‌گیرند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "eu-additives"
+  ]
+ },
+ "Simethicone": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Simeticone"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Simeticone"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Simethicone"
+   }
+  ],
+  "tradeNames": "Activated dimethicone; activated polymethylsiloxane; simeticone; dimethicone with silicon dioxide; silicone antifoam",
+  "chemicalName": "Mixture of fully methylated linear siloxane polymers (dimethicone) with finely divided silicon dioxide",
+  "formula": "[–(CH3)2SiO–]n with SiO2",
+  "mw": "",
+  "applications": {
+   "en": "Simethicone is used as an antifoaming agent: as an active ingredient in antiflatulent products, and as a processing aid to suppress foaming during the manufacture of liquids, emulsions and fermentation products. It is also used in topical barrier preparations and as a defoamer in oral suspensions. It is effective at low concentrations, usually well below 1% of the product, often supplied as an aqueous emulsion for ease of dispersion.",
+   "fa": "سایمتیکون به عنوان ضدکف به کار می‌رود: به عنوان ماده مؤثر در فرآورده‌های ضدنفخ، و به عنوان کمک‌فرآیند برای جلوگیری از کف کردن در ساخت مایعات، امولسیون‌ها و فرآورده‌های تخمیری. در فرآورده‌های موضعی محافظ پوست و به عنوان ضدکف در سوسپانسیون‌های خوراکی نیز مصرف می‌شود. در غلظت‌های کم، معمولاً بسیار کمتر از 1٪ فرآورده، مؤثر است و اغلب برای پراکنش آسان‌تر به صورت امولسیون آبی عرضه می‌شود."
+  },
+  "description": {
+   "en": "A translucent, grey, viscous fluid. Pharmacopoeial material contains about 90.5–99.0% polydimethylsiloxane and 4.0–7.0% silicon dioxide; the silica particles are hydrophobised by the silicone, which makes the mixture a much more effective defoamer than dimethicone alone.",
+   "fa": "مایع ویسکوز، نیمه‌شفاف و خاکستری‌رنگ. ماده فارماکوپه‌ای حدود 90.5–99.0٪ پلی‌دی‌متیل‌سیلوکسان و 4.0–7.0٪ سیلیسیم دی‌اکسید دارد؛ ذرات سیلیس توسط سیلیکون آب‌گریز می‌شوند و همین باعث می‌شود این مخلوط ضدکف بسیار مؤثرتری از دایمتیکون به‌تنهایی باشد."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Silicon dioxide content",
+     "fa": "مقدار سیلیسیم دی‌اکسید"
+    },
+    "v": {
+     "en": "4.0–7.0%",
+     "fa": "4.0–7.0٪"
+    }
+   },
+   {
+    "k": {
+     "en": "Defoaming activity",
+     "fa": "فعالیت ضدکف"
+    },
+    "v": {
+     "en": "foam collapses within 15 seconds in the pharmacopoeial test",
+     "fa": "در آزمون فارماکوپه‌ای کف در کمتر از 15 ثانیه از بین می‌رود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water and ethanol; the polysiloxane fraction is soluble in toluene, chloroform and ether, leaving the silica as a residue",
+     "fa": "عملاً نامحلول در آب و اتانول؛ بخش پلی‌سیلوکسان در تولوئن، کلروفرم و اتر حل می‌شود و سیلیس به صورت باقیمانده می‌ماند"
+    }
+   },
+   {
+    "k": {
+     "en": "Appearance",
+     "fa": "ظاهر"
+    },
+    "v": {
+     "en": "grey, translucent, viscous liquid",
+     "fa": "مایع ویسکوز، نیمه‌شفاف و خاکستری"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically stable and resistant to oxidation. Simethicone emulsions may separate if frozen or exposed to high temperatures. Store in a well-closed container.",
+   "fa": "از نظر شیمیایی پایدار و در برابر اکسیداسیون مقاوم است. امولسیون‌های سایمتیکون در صورت یخ‌زدگی یا قرار گرفتن در دمای بالا ممکن است جدا شوند. در ظرف کاملاً بسته نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Few incompatibilities have been reported. Silicone antifoams can be deactivated by strong emulsifiers and surfactants, and may interfere with the wetting of tablet surfaces in film coating.",
+   "fa": "ناسازگاری زیادی گزارش نشده است. ضدکف‌های سیلیکونی ممکن است با امولسیون‌کننده‌ها و سورفکتانت‌های قوی غیرفعال شوند و ممکن است در روکش فیلمی، خیس شدن سطح قرص را مختل کنند."
+  },
+  "manufacture": {
+   "en": "Prepared by dispersing finely divided silicon dioxide (silica) in dimethicone and treating the mixture, usually with heat, so that the silica surface becomes coated with the silicone. Dimethicone itself is made by hydrolysis and polycondensation of dichlorodimethylsilane with chlorotrimethylsilane as a chain stopper.",
+   "fa": "از پراکنده کردن سیلیسیم دی‌اکسید بسیار ریز در دایمتیکون و تیمار مخلوط، معمولاً با حرارت، تهیه می‌شود تا سطح سیلیس با سیلیکون پوشیده شود. خود دایمتیکون از هیدرولیز و پلی‌کندانسیون دی‌کلرودی‌متیل‌سیلان، با کلروتری‌متیل‌سیلان به عنوان پایان‌دهنده زنجیر، ساخته می‌شود."
+  },
+  "safety": {
+   "en": "Simethicone is physiologically inert, is not absorbed from the gastrointestinal tract and is regarded as non-toxic and non-irritant. It is given orally in relatively large doses as an antiflatulent without significant adverse effects.",
+   "fa": "سایمتیکون از نظر فیزیولوژیک بی‌اثر است، از دستگاه گوارش جذب نمی‌شود و غیرسمی و غیرمحرک شناخته می‌شود. به عنوان ضدنفخ در دوزهای نسبتاً زیاد خوراکی و بدون عوارض قابل توجه مصرف می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Spills are very slippery and should be cleaned up promptly; eye protection is recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. ریختن آن سطوح را بسیار لغزنده می‌کند و باید فوراً پاک شود؛ استفاده از محافظ چشم توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral preparations) and in non-parenteral medicines licensed in Europe. Simethicone is also an FDA monograph active ingredient for over-the-counter antiflatulent products.",
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد. سایمتیکون همچنین در مونوگراف FDA به عنوان ماده مؤثر فرآورده‌های ضدنفخ بدون نسخه پذیرفته شده است."
+  },
+  "related": {
+   "en": "Dimethicone; cyclomethicone; colloidal silicon dioxide.",
+   "fa": "دایمتیکون؛ سیکلومتیکون؛ سیلیسیم دی‌اکسید کلوئیدی."
+  },
+  "comments": {
+   "en": "When used as a processing antifoam, add the minimum amount needed, since excess silicone can cause oily films, turbidity or poor adhesion of later coating layers. Pre-dilution or use of an emulsion grade helps uniform dispersion in aqueous systems.",
+   "fa": "هنگام مصرف به عنوان ضدکف فرآیندی، کمترین مقدار لازم را اضافه کنید، زیرا سیلیکون اضافی ممکن است لایه روغنی، کدورت یا چسبندگی ضعیف لایه‌های بعدی پوشش ایجاد کند. رقیق‌سازی اولیه یا استفاده از گرید امولسیونی به پراکنش یکنواخت در سیستم‌های آبی کمک می‌کند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Sodium acetate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Acetate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Acetate Trihydrate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Acetate"
+   }
+  ],
+  "tradeNames": "Acetic acid, sodium salt; natrii acetas trihydricus; sodium ethanoate; E262",
+  "chemicalName": "Sodium acetate trihydrate",
+  "formula": "C2H3NaO2·3H2O (trihydrate); C2H3NaO2 (anhydrous)",
+  "mw": "136.08 (trihydrate); 82.03 (anhydrous)",
+  "applications": {
+   "en": "Sodium acetate is used, usually together with acetic acid, to prepare acetate buffers in the pH range of about 3.8–5.8 for injections, ophthalmic, oral and topical preparations. It is also used as an electrolyte source and systemic alkalising agent in parenteral nutrition and in haemodialysis and peritoneal dialysis solutions, where acetate is metabolised to bicarbonate. Buffer concentrations are typically low, of the order of 0.1–1% w/v.",
+   "fa": "سدیم استات معمولاً همراه با استیک اسید برای تهیه بافر استات در محدوده pH حدود 3.8–5.8 در فرآورده‌های تزریقی، چشمی، خوراکی و موضعی به کار می‌رود. همچنین به عنوان منبع الکترولیت و قلیایی‌کننده سیستمیک در تغذیه وریدی و محلول‌های همودیالیز و دیالیز صفاقی مصرف می‌شود که در آن‌ها استات به بی‌کربنات متابولیزه می‌شود. غلظت آن در بافرها معمولاً کم و در حد 0.1–1٪ وزنی/حجمی است."
+  },
+  "description": {
+   "en": "Colourless, transparent crystals or a white granular crystalline powder, with a faint acetic odour and a saline taste. The trihydrate effloresces in warm, dry air; the anhydrous form is hygroscopic.",
+   "fa": "کریستال‌های بی‌رنگ و شفاف یا پودر کریستالی دانه‌ای سفید با بوی ضعیف استیک و طعم شور. فرم تری‌هیدرات در هوای گرم و خشک شکوفا (efflorescent) می‌شود و فرم بدون آب رطوبت‌گیر است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pKa (acetic acid)",
+     "fa": "pKa (استیک اسید)"
+    },
+    "v": {
+     "en": "4.76 at 25 °C",
+     "fa": "4.76 در 25 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "7.5–9.2 (5% w/v aqueous solution)",
+     "fa": "7.5–9.2 (محلول آبی 5٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "trihydrate melts in its water of crystallisation at about 58 °C and becomes anhydrous above about 120 °C",
+     "fa": "تری‌هیدرات در حدود 58 °C در آب تبلور خود ذوب می‌شود و بالاتر از حدود 120 °C بدون آب می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "very soluble in water; soluble in ethanol",
+     "fa": "بسیار محلول در آب؛ محلول در اتانول"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable when stored in an airtight container. Aqueous solutions can be sterilised by autoclaving.",
+   "fa": "در ظرف دربسته (airtight) پایدار است. محلول‌های آبی آن را می‌توان با اتوکلاو استریل کرد."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents and strong acids. As an alkaline salt it may precipitate drugs that are poorly soluble at higher pH, and acetate ions may react with some metal salts.",
+   "fa": "با اکسیدکننده‌ها و اسیدهای قوی ناسازگار است. به عنوان نمک قلیایی ممکن است داروهایی را که در pH بالاتر کم‌محلول‌اند رسوب دهد و یون استات ممکن است با برخی نمک‌های فلزی واکنش دهد."
+  },
+  "manufacture": {
+   "en": "Made by neutralising acetic acid with sodium carbonate or sodium hydroxide and crystallising the trihydrate from the solution.",
+   "fa": "از خنثی کردن استیک اسید با سدیم کربنات یا سدیم هیدروکسید و کریستالیزه کردن تری‌هیدرات از محلول به دست می‌آید."
+  },
+  "safety": {
+   "en": "Sodium acetate is a normal metabolic intermediate and is regarded as non-toxic at the concentrations used as an excipient. Excessive parenteral administration can cause metabolic alkalosis and sodium overload, so the acetate and sodium load of large-volume infusions must be taken into account.",
+   "fa": "سدیم استات یک واسطه طبیعی متابولیسم است و در غلظت‌های مصرفی به عنوان ماده کمکی غیرسمی شناخته می‌شود. تجویز تزریقی بیش از حد ممکن است باعث آلکالوز متابولیک و بار زیاد سدیم شود؛ بنابراین مقدار استات و سدیم در انفوزیون‌های حجیم باید در نظر گرفته شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E262). Included in the FDA Inactive Ingredient Database (injections, ophthalmic, oral and topical preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E262). در FDA Inactive Ingredient Database (فرآورده‌های تزریقی، چشمی، خوراکی و موضعی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Acetic acid; potassium acetate; sodium citrate dihydrate; sodium lactate.",
+   "fa": "استیک اسید؛ پتاسیم استات؛ سدیم سیترات دی‌هیدرات؛ سدیم لاکتات."
+  },
+  "comments": {
+   "en": "Specify which form (trihydrate or anhydrous) is used, since the trihydrate contains about 40% water and quantities must be corrected accordingly. Acetate buffers have their greatest capacity close to pH 4.8.",
+   "fa": "مشخص کنید کدام فرم (تری‌هیدرات یا بدون آب) مصرف می‌شود، زیرا تری‌هیدرات حدود 40٪ آب دارد و مقادیر باید بر همین اساس اصلاح شوند. بافرهای استات بیشترین ظرفیت بافری را در نزدیکی pH 4.8 دارند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Sodium alginate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Alginate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Alginate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Alginate"
+   }
+  ],
+  "tradeNames": "Algin; alginic acid, sodium salt; natrii alginas; sodium polymannuronate; Kelcosol; Keltone; Manucol; Protanal; E401",
+  "chemicalName": "Sodium salt of alginic acid, a linear copolymer of (1→4)-linked β-D-mannuronic acid and α-L-guluronic acid residues",
+  "formula": "(C6H7NaO6)n",
+  "mw": "≈ 10 000–600 000 (grade-dependent); repeat unit 198.11",
+  "applications": {
+   "en": "Used as a suspending and thickening agent (1–5%), as an emulsion stabiliser (1–3%), as a tablet binder (1–3%) and disintegrant (2.5–10%), and in pastes and creams (5–10%). It is also used in hydrophilic matrices for modified release, in microencapsulation and bead formation by ionotropic gelation with calcium ions, and with sodium bicarbonate and calcium carbonate in raft-forming preparations for gastro-oesophageal reflux. Calcium alginate made from it is used in wound dressings.",
+   "fa": "به عنوان عامل تعلیق‌دهنده و غلیظ‌کننده (1–5٪)، پایدارکننده امولسیون (1–3٪)، چسباننده قرص (1–3٪) و متلاشی‌کننده قرص (2.5–10٪)، و در خمیرها و کرم‌ها (5–10٪) به کار می‌رود. همچنین در ماتریکس‌های آب‌دوست رهش تعدیل‌شده، میکروانکپسولاسیون و ساخت دانه‌ها (bead) با ژل‌شدن یونی (ionotropic gelation) با یون کلسیم، و همراه با سدیم بی‌کربنات و کلسیم کربنات در فرآورده‌های تشکیل‌دهنده لایه شناور (raft) برای ریفلاکس معده به مری مصرف می‌شود. کلسیم آلژینات حاصل از آن در پانسمان زخم کاربرد دارد."
+  },
+  "description": {
+   "en": "An odourless, almost tasteless, white to pale yellowish-brown powder. It is extracted from brown seaweeds; the ratio and sequence of mannuronic (M) and guluronic (G) acid blocks, which depend on the seaweed source, determine the gel strength and viscosity of each grade.",
+   "fa": "پودر بی‌بو، تقریباً بی‌مزه، سفید تا قهوه‌ای مایل به زرد کم‌رنگ. از جلبک‌های قهوه‌ای استخراج می‌شود؛ نسبت و توالی بلوک‌های مانورونیک (M) و گولورونیک (G) اسید که به منبع جلبک بستگی دارد، قدرت ژل و ویسکوزیته هر گرید را تعیین می‌کند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Viscosity",
+     "fa": "ویسکوزیته"
+    },
+    "v": {
+     "en": "about 20–400 mPa s for a 1% w/v aqueous solution at 20 °C, depending on grade",
+     "fa": "حدود 20–400 mPa s برای محلول آبی 1٪ در 20 °C، بسته به گرید"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "about 7 (1% w/v aqueous solution)",
+     "fa": "حدود 7 (محلول آبی 1٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Loss on drying",
+     "fa": "کاهش وزن در خشک کردن"
+    },
+    "v": {
+     "en": "not more than 15% w/w",
+     "fa": "حداکثر 15٪ وزنی"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "slowly soluble in water, forming a viscous colloidal solution; practically insoluble in ethanol, ether, chloroform and aqueous acids below about pH 3",
+     "fa": "به‌آهستگی در آب حل می‌شود و محلول کلوئیدی ویسکوز می‌دهد؛ عملاً نامحلول در اتانول، اتر، کلروفرم و اسیدهای آبی با pH کمتر از حدود 3"
+    }
+   },
+   {
+    "k": {
+     "en": "Gelation",
+     "fa": "ژل‌شدن"
+    },
+    "v": {
+     "en": "forms gels with calcium and other divalent cations; precipitates as alginic acid at low pH",
+     "fa": "با کلسیم و سایر کاتیون‌های دوظرفیتی ژل تشکیل می‌دهد؛ در pH پایین به صورت آلژینیک اسید رسوب می‌کند"
+    }
+   }
+  ],
+  "stability": {
+   "en": "A hygroscopic material that is stable if stored in an airtight container in a cool, dry place. Aqueous solutions are most stable at pH 4–10; they lose viscosity on heating or autoclaving through depolymerisation and are susceptible to microbial spoilage, so a preservative is needed.",
+   "fa": "ماده‌ای رطوبت‌گیر است که در صورت نگهداری در ظرف دربسته در جای خنک و خشک پایدار است. محلول‌های آبی در pH 4–10 پایدارترند؛ با حرارت یا اتوکلاو به دلیل دپلیمریزاسیون ویسکوزیته خود را از دست می‌دهند و مستعد آلودگی میکروبی‌اند، بنابراین به نگهدارنده نیاز دارند."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with acridine derivatives, crystal violet, phenylmercuric acetate and nitrate, calcium salts, heavy metals and ethanol at concentrations above about 5%. Low concentrations of electrolytes raise viscosity, but high concentrations cause salting out.",
+   "fa": "با مشتقات آکریدین، کریستال ویوله، فنیل‌مرکوریک استات و نیترات، نمک‌های کلسیم، فلزات سنگین و اتانول با غلظت بیش از حدود 5٪ ناسازگار است. غلظت‌های کم الکترولیت ویسکوزیته را افزایش می‌دهند، ولی غلظت‌های زیاد باعث نمک‌زدایی (salting out) می‌شوند."
+  },
+  "manufacture": {
+   "en": "Brown seaweeds (Phaeophyceae, for example Laminaria and Macrocystis species) are extracted with dilute alkali; the alginic acid is precipitated by acid or as calcium alginate, purified and converted to the sodium salt with sodium carbonate or hydroxide, then dried and milled.",
+   "fa": "جلبک‌های قهوه‌ای (Phaeophyceae، مانند گونه‌های Laminaria و Macrocystis) با قلیای رقیق استخراج می‌شوند؛ آلژینیک اسید با اسید یا به صورت کلسیم آلژینات رسوب داده و خالص‌سازی می‌شود و سپس با سدیم کربنات یا هیدروکسید به نمک سدیم تبدیل، خشک و آسیاب می‌شود."
+  },
+  "safety": {
+   "en": "Widely used in oral and topical products and foods, and generally regarded as non-toxic and non-irritant. It is not digested and passes through the gut largely unchanged. Inhalation of the dust may cause respiratory irritation.",
+   "fa": "در فرآورده‌های خوراکی و موضعی و مواد غذایی به‌طور گسترده مصرف می‌شود و عموماً غیرسمی و غیرمحرک شناخته می‌شود. هضم نمی‌شود و عمدتاً بدون تغییر از روده عبور می‌کند. استنشاق گردوغبار آن ممکن است باعث تحریک تنفسی شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid generating dust; eye protection, gloves and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد گردوغبار خودداری شود؛ محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E401). Included in the FDA Inactive Ingredient Database (oral capsules, suspensions and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E401). در FDA Inactive Ingredient Database (کپسول، سوسپانسیون و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Alginic acid; calcium alginate; potassium alginate; propylene glycol alginate.",
+   "fa": "آلژینیک اسید؛ کلسیم آلژینات؛ پتاسیم آلژینات؛ پروپیلن گلیکول آلژینات."
+  },
+  "comments": {
+   "en": "Disperse the powder slowly into vigorously stirred water, or pre-wet it with a non-solvent such as glycerol or ethanol, to avoid lumps. Grades rich in guluronic acid give strong, brittle calcium gels, whereas mannuronic-rich grades give softer, more elastic gels.",
+   "fa": "برای جلوگیری از تشکیل کلوخه، پودر را به‌آهستگی به آب در حال هم‌زدن شدید اضافه کنید یا ابتدا آن را با یک غیرحلال مانند گلیسرول یا اتانول خیس کنید. گریدهای غنی از گولورونیک اسید ژل‌های کلسیمی محکم و شکننده، و گریدهای غنی از مانورونیک اسید ژل‌های نرم‌تر و الاستیک‌تر می‌دهند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Sodium ascorbate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Ascorbate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Ascorbate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Ascorbate"
+   }
+  ],
+  "tradeNames": "Ascorbate sodium; L-ascorbic acid monosodium salt; natrii ascorbas; vitamin C sodium; E301",
+  "chemicalName": "Sodium (2R)-2-[(1S)-1,2-dihydroxyethyl]-4-hydroxy-5-oxo-2H-furan-3-olate (monosodium L-ascorbate)",
+  "formula": "C6H7NaO6",
+  "mw": "198.11",
+  "applications": {
+   "en": "Sodium ascorbate is used as an antioxidant in oral, parenteral and topical preparations and foods, usually at low concentrations (of the order of 0.01–0.1% w/v), and as a source of vitamin C. Because its solutions are close to neutral, it is preferred to ascorbic acid where an acidic pH is undesirable, for example in injections and neutral oral liquids. It is also used to enhance iron absorption and as a meat-curing adjunct in foods.",
+   "fa": "سدیم آسکوربات به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی و مواد غذایی، معمولاً در غلظت‌های کم (در حد 0.01–0.1٪ وزنی/حجمی)، و به عنوان منبع ویتامین C به کار می‌رود. چون محلول‌های آن نزدیک به خنثی هستند، در مواردی که pH اسیدی مطلوب نیست، مانند فرآورده‌های تزریقی و مایعات خوراکی خنثی، بر آسکوربیک اسید ترجیح داده می‌شود. در افزایش جذب آهن و به عنوان کمک‌کننده در عمل‌آوری گوشت نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "A white or very faintly yellow crystalline powder, odourless or almost odourless, with a pleasant saline taste. It darkens gradually on exposure to light. 1 g of sodium ascorbate corresponds to about 0.89 g of ascorbic acid.",
+   "fa": "پودر کریستالی سفید یا بسیار کم زرد، بی‌بو یا تقریباً بی‌بو با طعم شور مطبوع. در معرض نور به‌تدریج تیره می‌شود. هر 1 g سدیم آسکوربات معادل حدود 0.89 g آسکوربیک اسید است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "7.0–8.0 (10% w/v aqueous solution)",
+     "fa": "7.0–8.0 (محلول آبی 10٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Specific rotation",
+     "fa": "چرخش ویژه"
+    },
+    "v": {
+     "en": "+103° to +108° (10% w/v aqueous solution)",
+     "fa": "+103° تا +108° (محلول آبی 10٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "decomposes at about 218 °C",
+     "fa": "در حدود 218 °C تجزیه می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water; very slightly soluble in ethanol; practically insoluble in ether and chloroform",
+     "fa": "به‌راحتی محلول در آب؛ بسیار کم محلول در اتانول؛ عملاً نامحلول در اتر و کلروفرم"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Reasonably stable in dry air, but darkens on exposure to light and moisture. Aqueous solutions oxidise readily, especially at alkaline pH and in the presence of traces of copper or iron, and should be prepared fresh or protected with an inert gas and a chelating agent. Store in an airtight, light-resistant container in a cool, dry place.",
+   "fa": "در هوای خشک نسبتاً پایدار است، ولی در معرض نور و رطوبت تیره می‌شود. محلول‌های آبی به‌آسانی اکسید می‌شوند، به‌ویژه در pH قلیایی و در حضور مقادیر ناچیز مس یا آهن؛ بنابراین باید تازه تهیه شوند یا با گاز بی‌اثر و یک عامل کی‌لیت‌کننده محافظت شوند. در ظرف دربسته و مقاوم به نور، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with oxidising agents, heavy metal ions (especially copper and iron) and alkalis. It is a reducing agent and may reduce or react with other formulation components; in the presence of benzoate it can contribute to the formation of traces of benzene.",
+   "fa": "با اکسیدکننده‌ها، یون‌های فلزات سنگین (به‌ویژه مس و آهن) و قلیاها ناسازگار است. یک عامل احیاکننده است و ممکن است سایر اجزای فرمولاسیون را احیا کند یا با آن‌ها واکنش دهد؛ در حضور بنزوات ممکن است در تشکیل مقادیر ناچیز بنزن نقش داشته باشد."
+  },
+  "manufacture": {
+   "en": "Prepared by dissolving ascorbic acid in water and neutralising with an equivalent amount of sodium bicarbonate or carbonate; the sodium ascorbate is precipitated by adding an alcohol such as isopropanol, then filtered and dried.",
+   "fa": "از حل کردن آسکوربیک اسید در آب و خنثی کردن آن با مقدار هم‌ارز سدیم بی‌کربنات یا کربنات تهیه می‌شود؛ سدیم آسکوربات با افزودن یک الکل مانند ایزوپروپانول رسوب داده، فیلتر و خشک می‌شود."
+  },
+  "safety": {
+   "en": "Generally regarded as non-toxic and non-irritant at the concentrations used as an antioxidant. Very large doses of vitamin C may cause gastrointestinal upset, and the sodium content should be considered for patients on sodium-restricted diets.",
+   "fa": "در غلظت‌های مصرفی به عنوان آنتی‌اکسیدان عموماً غیرسمی و غیرمحرک شناخته می‌شود. دوزهای بسیار زیاد ویتامین C ممکن است باعث ناراحتی گوارشی شود و مقدار سدیم آن باید در بیماران با رژیم کم‌سدیم در نظر گرفته شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E301). Included in the FDA Inactive Ingredient Database (oral preparations and injections) and in medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E301). در FDA Inactive Ingredient Database (فرآورده‌های خوراکی و تزریقی) و در داروهای مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Ascorbic acid; ascorbyl palmitate; calcium ascorbate; erythorbic acid; sodium erythorbate.",
+   "fa": "آسکوربیک اسید؛ آسکوربیل پالمیتات؛ کلسیم آسکوربات؛ اریتوربیک اسید؛ سدیم اریتوربات."
+  },
+  "comments": {
+   "en": "Its antioxidant action depends on being preferentially oxidised, so it is consumed during storage; the remaining content should be monitored in stability studies. A chelating agent such as disodium edetate and nitrogen purging greatly slow its degradation in solution.",
+   "fa": "اثر آنتی‌اکسیدانی آن بر پایه اکسید شدن ترجیحی خود آن است، بنابراین در طول نگهداری مصرف می‌شود و مقدار باقیمانده آن باید در مطالعات پایداری پایش شود. افزودن یک عامل کی‌لیت‌کننده مانند دی‌سدیم ادتات و جایگزینی هوا با نیتروژن، تخریب آن را در محلول بسیار کند می‌کند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Sodium benzoate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Benzoate"
+   },
+   {
+    "ph": "JP",
+    "name": "Sodium Benzoate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Benzoate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Benzoate"
+   }
+  ],
+  "tradeNames": "Benzoic acid sodium salt; benzoate of soda; natrii benzoas; sobenate; E211",
+  "chemicalName": "Sodium benzoate",
+  "formula": "C7H5NaO2",
+  "mw": "144.11",
+  "applications": {
+   "en": "Used mainly as an antimicrobial preservative in oral liquids (typically 0.02–0.5%), in cosmetics (0.1–0.5%) and in foods, and in some parenteral products (up to about 0.5%). Its activity is due to the undissociated benzoic acid, so it is effective only in acidic preparations, best below about pH 4.5. It has also been used as a water-soluble tablet lubricant at about 2–5% w/w, and is used therapeutically in urea-cycle disorders.",
+   "fa": "عمدتاً به عنوان نگهدارنده ضدمیکروبی در مایعات خوراکی (معمولاً 0.02–0.5٪)، فرآورده‌های آرایشی (0.1–0.5٪) و مواد غذایی، و در برخی فرآورده‌های تزریقی (تا حدود 0.5٪) به کار می‌رود. اثر آن مربوط به بنزوئیک اسید تفکیک‌نشده است، بنابراین فقط در فرآورده‌های اسیدی، و به بهترین شکل در pH کمتر از حدود 4.5، مؤثر است. به عنوان لغزان‌کننده محلول در آب قرص در غلظت حدود 2–5٪ وزنی نیز به کار رفته است و در درمان اختلالات چرخه اوره مصرف دارویی دارد."
+  },
+  "description": {
+   "en": "A white, granular or crystalline, slightly hygroscopic powder, odourless or with a faint odour of benzoin, with an unpleasant sweetish and saline taste.",
+   "fa": "پودر سفید دانه‌ای یا کریستالی، کمی رطوبت‌گیر، بی‌بو یا با بوی ضعیف بنزوئین و طعم شیرین و شور نامطبوع."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pKa (benzoic acid)",
+     "fa": "pKa (بنزوئیک اسید)"
+    },
+    "v": {
+     "en": "4.2 at 25 °C",
+     "fa": "4.2 در 25 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "aqueous solutions are slightly alkaline (about pH 8)",
+     "fa": "محلول‌های آبی کمی قلیایی‌اند (حدود pH 8)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water; sparingly soluble in ethanol (90%)",
+     "fa": "به‌راحتی محلول در آب؛ نسبتاً کم محلول در اتانول 90٪"
+    }
+   },
+   {
+    "k": {
+     "en": "Antimicrobial spectrum",
+     "fa": "طیف ضدمیکروبی"
+    },
+    "v": {
+     "en": "mainly bacteriostatic and fungistatic; more active against yeasts and moulds than bacteria",
+     "fa": "عمدتاً باکتریواستاتیک و فونگیستاتیک؛ در برابر مخمرها و کپک‌ها فعال‌تر از باکتری‌ها"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Aqueous solutions are stable and may be sterilised by autoclaving or filtration. Store the solid in a well-closed container in a cool, dry place.",
+   "fa": "محلول‌های آبی پایدارند و می‌توان آن‌ها را با اتوکلاو یا فیلتراسیون استریل کرد. ماده جامد در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with quaternary ammonium compounds, gelatin, ferric salts, calcium salts and salts of heavy metals such as silver, lead and mercury. Preservative activity is reduced by nonionic surfactants and by adsorption onto kaolin, and by any increase in pH. With ascorbic acid, traces of benzene can form, particularly under heat and light.",
+   "fa": "با ترکیبات آمونیوم چهارتایی، ژلاتین، نمک‌های فریک، نمک‌های کلسیم و نمک‌های فلزات سنگین مانند نقره، سرب و جیوه ناسازگار است. فعالیت نگهدارندگی آن با سورفکتانت‌های غیریونی، جذب سطحی روی کائولن و هرگونه افزایش pH کاهش می‌یابد. همراه با آسکوربیک اسید، به‌ویژه در حضور حرارت و نور، ممکن است مقادیر ناچیز بنزن تشکیل شود."
+  },
+  "manufacture": {
+   "en": "Prepared by neutralising benzoic acid with sodium hydroxide or sodium carbonate, followed by evaporation or spray-drying.",
+   "fa": "از خنثی کردن بنزوئیک اسید با سدیم هیدروکسید یا سدیم کربنات و سپس تبخیر یا خشک کردن پاششی تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Benzoate is conjugated with glycine in the liver and excreted as hippuric acid. It is generally well tolerated orally but may cause urticaria, asthma and other hypersensitivity reactions in sensitive people. Benzoates can displace bilirubin from albumin and should be used with care in jaundiced neonates. JECFA has set a group ADI of 0–5 mg/kg body-weight for benzoic acid and its salts.",
+   "fa": "بنزوات در کبد با گلیسین کونژوگه و به صورت هیپوریک اسید دفع می‌شود. معمولاً به صورت خوراکی به‌خوبی تحمل می‌شود، ولی ممکن است در افراد حساس باعث کهیر، آسم و سایر واکنش‌های حساسیتی شود. بنزوات‌ها می‌توانند بیلی‌روبین را از آلبومین جدا کنند و در نوزادان دچار زردی باید با احتیاط مصرف شوند. JECFA برای بنزوئیک اسید و نمک‌های آن ADI گروهی 0–5 mg/kg وزن بدن تعیین کرده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. The dust may irritate the eyes and respiratory tract; eye protection, gloves and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. گردوغبار آن ممکن است چشم و مجاری تنفسی را تحریک کند؛ محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E211). Included in the FDA Inactive Ingredient Database (dental, IM and IV injections, oral capsules, solutions and tablets, rectal and topical preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E211). در FDA Inactive Ingredient Database (فرآورده‌های دندانی، تزریق IM و IV، کپسول، محلول و قرص خوراکی، فرآورده‌های رکتال و موضعی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Benzoic acid; potassium benzoate; benzyl alcohol; sorbic acid.",
+   "fa": "بنزوئیک اسید؛ پتاسیم بنزوات؛ بنزیل الکل؛ سوربیک اسید."
+  },
+  "comments": {
+   "en": "Check the final pH of the formulation: at pH 4 about 60% of the preservative is in the active undissociated form, but at pH 6 less than 2% is, so efficacy falls sharply as pH rises. Because sodium benzoate itself raises pH slightly, the pH should be adjusted after it is added.",
+   "fa": "pH نهایی فرمولاسیون را بررسی کنید: در pH 4 حدود 60٪ نگهدارنده به شکل فعال تفکیک‌نشده است، ولی در pH 6 کمتر از 2٪؛ بنابراین با افزایش pH کارایی به‌شدت کاهش می‌یابد. چون خود سدیم بنزوات pH را کمی بالا می‌برد، تنظیم pH باید پس از افزودن آن انجام شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives",
+   "jecfa"
+  ]
+ },
+ "Sodium bicarbonate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Bicarbonate"
+   },
+   {
+    "ph": "JP",
+    "name": "Sodium Bicarbonate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Hydrogen Carbonate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Bicarbonate"
+   }
+  ],
+  "tradeNames": "Baking soda; bicarbonate of soda; carbonic acid monosodium salt; natrii hydrogenocarbonas; sodium acid carbonate; sodium hydrogen carbonate; E500(ii)",
+  "chemicalName": "Carbonic acid monosodium salt",
+  "formula": "NaHCO3",
+  "mw": "84.01",
+  "applications": {
+   "en": "Sodium bicarbonate is used as the carbon dioxide source in effervescent tablets and granules, usually combined with citric and/or tartaric acid, at about 25–50% w/w. It is also used as an alkalising agent and buffer in oral and parenteral formulations, in isotonic infusions (1.39% w/v is iso-osmotic), as a gas-generating agent in floating and raft-forming systems, and therapeutically as an antacid and systemic alkaliniser.",
+   "fa": "سدیم بی‌کربنات به عنوان منبع کربن دی‌اکسید در قرص‌ها و گرانول‌های جوشان، معمولاً همراه با سیتریک اسید و/یا تارتاریک اسید، در غلظت حدود 25–50٪ وزنی به کار می‌رود. همچنین به عنوان قلیایی‌کننده و بافر در فرمولاسیون‌های خوراکی و تزریقی، در انفوزیون‌های ایزوتونیک (محلول 1.39٪ ایزواسموتیک است)، به عنوان عامل تولید گاز در سیستم‌های شناور و تشکیل‌دهنده raft، و از نظر درمانی به عنوان آنتی‌اسید و قلیایی‌کننده سیستمیک مصرف می‌شود."
+  },
+  "description": {
+   "en": "An odourless, white, crystalline powder with a saline, slightly alkaline taste. Grades of different particle size, and surface-treated or granular grades for direct compression, are available.",
+   "fa": "پودر کریستالی سفید و بی‌بو با طعم شور و کمی قلیایی. گریدهایی با اندازه ذره متفاوت و نیز گریدهای دانه‌ای یا سطح‌پوشش‌داده برای پرس مستقیم در دسترس‌اند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "about 8.3 (freshly prepared 0.1 M aqueous solution)",
+     "fa": "حدود 8.3 (محلول آبی 0.1 M تازه تهیه‌شده)"
+    }
+   },
+   {
+    "k": {
+     "en": "Thermal decomposition",
+     "fa": "تجزیه حرارتی"
+    },
+    "v": {
+     "en": "begins to lose carbon dioxide and water at about 50 °C; converted to sodium carbonate at higher temperatures",
+     "fa": "از حدود 50 °C شروع به از دست دادن کربن دی‌اکسید و آب می‌کند و در دماهای بالاتر به سدیم کربنات تبدیل می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "soluble in water (about 1 in 11 at 20 °C); practically insoluble in ethanol",
+     "fa": "محلول در آب (حدود 1 در 11 در 20 °C)؛ عملاً نامحلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "True density",
+     "fa": "چگالی حقیقی"
+    },
+    "v": {
+     "en": "about 2.2 g/cm³",
+     "fa": "حدود 2.2 g/cm³"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable in dry air but slowly decomposes in moist air. In aqueous solution it gradually loses carbon dioxide and becomes more alkaline, particularly on warming or shaking; autoclaving converts it partly to carbonate, so solutions for injection are usually filter-sterilised or sealed to retain CO2. Store in a well-closed container in a cool, dry place.",
+   "fa": "در هوای خشک پایدار است، ولی در هوای مرطوب به‌آهستگی تجزیه می‌شود. در محلول آبی به‌تدریج کربن دی‌اکسید از دست می‌دهد و قلیایی‌تر می‌شود، به‌ویژه هنگام گرم کردن یا تکان دادن؛ اتوکلاو آن را تا حدی به کربنات تبدیل می‌کند، بنابراین محلول‌های تزریقی معمولاً با فیلتر استریل یا برای حفظ CO2 در ظرف دربسته پر می‌شوند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Reacts with acids, acidic salts and many acidic drugs with evolution of carbon dioxide. Incompatible with calcium salts in solution (precipitation of calcium carbonate) and with many alkaloidal salts, and may raise pH enough to precipitate drugs that are poorly soluble in alkaline conditions.",
+   "fa": "با اسیدها، نمک‌های اسیدی و بسیاری از داروهای اسیدی واکنش می‌دهد و کربن دی‌اکسید آزاد می‌کند. در محلول با نمک‌های کلسیم (رسوب کلسیم کربنات) و بسیاری از نمک‌های آلکالوئیدی ناسازگار است و ممکن است pH را به حدی بالا ببرد که داروهای کم‌محلول در محیط قلیایی رسوب کنند."
+  },
+  "manufacture": {
+   "en": "Manufactured mainly by the ammonia–soda (Solvay) process or by passing carbon dioxide into a solution of sodium carbonate, which precipitates the less soluble bicarbonate. It may also be obtained from the mineral trona.",
+   "fa": "عمدتاً با فرآیند آمونیاک–سودا (Solvay) یا با عبور دادن کربن دی‌اکسید از محلول سدیم کربنات تولید می‌شود که بی‌کربنات کم‌محلول‌تر را رسوب می‌دهد. از کانی ترونا (trona) نیز به دست می‌آید."
+  },
+  "safety": {
+   "en": "Used widely in oral and parenteral products and generally regarded as non-toxic at the levels used as an excipient. Large oral or parenteral doses can cause metabolic alkalosis, sodium overload and fluid retention; oral use releases carbon dioxide, which may cause belching and distension.",
+   "fa": "در فرآورده‌های خوراکی و تزریقی به‌طور گسترده مصرف می‌شود و در مقادیر مصرفی به عنوان ماده کمکی عموماً غیرسمی شناخته می‌شود. دوزهای زیاد خوراکی یا تزریقی ممکن است باعث آلکالوز متابولیک، بار زیاد سدیم و احتباس مایعات شود؛ مصرف خوراکی کربن دی‌اکسید آزاد می‌کند که ممکن است آروغ و نفخ ایجاد کند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E500). Included in the FDA Inactive Ingredient Database (injections, ophthalmic preparations, oral capsules, solutions and tablets) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E500). در FDA Inactive Ingredient Database (فرآورده‌های تزریقی و چشمی، کپسول، محلول و قرص خوراکی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Potassium bicarbonate; sodium carbonate; citric acid monohydrate; tartaric acid.",
+   "fa": "پتاسیم بی‌کربنات؛ سدیم کربنات؛ سیتریک اسید مونوهیدرات؛ تارتاریک اسید."
+  },
+  "comments": {
+   "en": "Effervescent products must be made in low-humidity conditions (often below about 25% RH) because traces of moisture start the acid–bicarbonate reaction, which then propagates; dried or coated bicarbonate grades and moisture-protective packaging help stability. Avoid drying temperatures that cause thermal decomposition.",
+   "fa": "فرآورده‌های جوشان باید در رطوبت کم (اغلب کمتر از حدود 25٪ رطوبت نسبی) ساخته شوند، زیرا مقدار ناچیز رطوبت واکنش اسید–بی‌کربنات را آغاز می‌کند و این واکنش ادامه می‌یابد؛ گریدهای خشک‌شده یا پوشش‌دار بی‌کربنات و بسته‌بندی محافظ رطوبت به پایداری کمک می‌کنند. از دماهای خشک‌کردن که باعث تجزیه حرارتی می‌شوند خودداری کنید."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Sodium bisulfite": {
+  "names": [
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Bisulfite"
+   }
+  ],
+  "tradeNames": "Bisulfite of soda; sodium acid sulfite; sodium hydrogen sulfite; sulfurous acid monosodium salt; E222",
+  "chemicalName": "Sodium hydrogen sulfite",
+  "formula": "NaHSO3",
+  "mw": "104.06",
+  "applications": {
+   "en": "Sodium bisulfite is used as an antioxidant in acidic oral, parenteral and topical preparations, for example adrenaline and other sympathomimetic injections, at low concentrations comparable with those of sodium metabisulfite (typically 0.01–0.1% w/v). It also has antimicrobial activity at acidic pH and is used as a preservative and anti-browning agent in foods and beverages.",
+   "fa": "سدیم بی‌سولفیت به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی اسیدی، مانند تزریق آدرنالین و سایر سمپاتومیمتیک‌ها، در غلظت‌های کم و قابل مقایسه با سدیم متابی‌سولفیت (معمولاً 0.01–0.1٪ وزنی/حجمی) به کار می‌رود. در pH اسیدی اثر ضدمیکروبی نیز دارد و به عنوان نگهدارنده و ضدقهوه‌ای‌شدن در مواد غذایی و نوشیدنی‌ها مصرف می‌شود."
+  },
+  "description": {
+   "en": "White or yellowish-white crystals or granular powder with an odour of sulfur dioxide. The solid article of commerce consists largely of sodium metabisulfite (Na2S2O5) together with some sodium bisulfite; in solution the two are equivalent.",
+   "fa": "کریستال یا پودر دانه‌ای سفید یا سفید مایل به زرد با بوی سولفور دی‌اکسید. ماده جامد تجاری عمدتاً از سدیم متابی‌سولفیت (Na2S2O5) همراه با مقداری سدیم بی‌سولفیت تشکیل شده است؛ در محلول این دو معادل یکدیگرند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water; slightly soluble in ethanol",
+     "fa": "به‌راحتی محلول در آب؛ کمی محلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "aqueous solutions are acidic (about pH 4–5)",
+     "fa": "محلول‌های آبی اسیدی‌اند (حدود pH 4–5)"
+    }
+   },
+   {
+    "k": {
+     "en": "Sulfur dioxide content",
+     "fa": "مقدار سولفور دی‌اکسید"
+    },
+    "v": {
+     "en": "pharmacopoeial material is assayed as SO2, with a minimum of about 58.5%",
+     "fa": "ماده فارماکوپه‌ای بر حسب SO2 سنجش می‌شود و حداقل حدود 58.5٪ SO2 دارد"
+    }
+   },
+   {
+    "k": {
+     "en": "Effective pH range",
+     "fa": "محدوده pH مؤثر"
+    },
+    "v": {
+     "en": "best suited to acidic preparations; sulfite is preferred at neutral to alkaline pH",
+     "fa": "برای فرآورده‌های اسیدی مناسب‌تر است؛ در pH خنثی تا قلیایی سولفیت ترجیح داده می‌شود"
+    }
+   }
+  ],
+  "stability": {
+   "en": "On exposure to air it slowly loses sulfur dioxide and is oxidised to sulfate. Aqueous solutions are oxidised by air, faster on heating and in the presence of metal ions. Store in a well-filled, airtight container protected from light, in a cool place.",
+   "fa": "در معرض هوا به‌آهستگی سولفور دی‌اکسید از دست می‌دهد و به سولفات اکسید می‌شود. محلول‌های آبی توسط هوا اکسید می‌شوند و این فرایند با حرارت و در حضور یون‌های فلزی سریع‌تر است. در ظرف پر، دربسته و محافظت‌شده از نور، در جای خنک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Bisulfite reacts with sympathomimetic amines and other drugs bearing ortho- or para-hydroxybenzyl alcohol groups to form sulfonic acid derivatives with little or no activity, and adds to aldehydes and ketones. It inactivates thiamine and is incompatible with chloramphenicol, cisplatin, oxidising agents and strong acids (which release sulfur dioxide). It can also interact with rubber closures.",
+   "fa": "بی‌سولفیت با آمین‌های سمپاتومیمتیک و سایر داروهای دارای گروه اورتو یا پارا-هیدروکسی‌بنزیل الکل واکنش داده و مشتقات سولفونیک اسید با فعالیت کم یا بدون فعالیت ایجاد می‌کند و به آلدهیدها و کتون‌ها نیز اضافه می‌شود. تیامین را غیرفعال می‌کند و با کلرامفنیکل، سیس‌پلاتین، اکسیدکننده‌ها و اسیدهای قوی (که سولفور دی‌اکسید آزاد می‌کنند) ناسازگار است. با درپوش‌های لاستیکی نیز ممکن است برهم‌کنش داشته باشد."
+  },
+  "manufacture": {
+   "en": "Made by passing sulfur dioxide into a solution of sodium carbonate or sodium hydroxide; on crystallisation the product separates mainly as sodium metabisulfite.",
+   "fa": "از عبور دادن سولفور دی‌اکسید از محلول سدیم کربنات یا سدیم هیدروکسید تهیه می‌شود؛ هنگام کریستالیزاسیون، محصول عمدتاً به صورت سدیم متابی‌سولفیت جدا می‌شود."
+  },
+  "safety": {
+   "en": "Sulfites can provoke bronchospasm, anaphylactoid reactions and other hypersensitivity reactions, especially in asthmatic patients, including after injection or inhalation. In the USA, products containing sulfites must carry a warning statement. JECFA has set a group ADI of 0–0.7 mg/kg body-weight, expressed as sulfur dioxide, for sulfites.",
+   "fa": "سولفیت‌ها ممکن است باعث برونکواسپاسم، واکنش‌های آنافیلاکتوئید و سایر واکنش‌های حساسیتی شوند، به‌ویژه در بیماران آسمی و حتی پس از تزریق یا استنشاق. در آمریکا فرآورده‌های حاوی سولفیت باید هشدار مربوط را روی برچسب داشته باشند. JECFA برای سولفیت‌ها ADI گروهی 0–0.7 mg/kg وزن بدن (بر حسب سولفور دی‌اکسید) تعیین کرده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Sulfur dioxide may be released, particularly on contact with acids; use in a well-ventilated area with eye protection, gloves and, where necessary, respiratory protection.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. ممکن است سولفور دی‌اکسید آزاد شود، به‌ویژه در تماس با اسیدها؛ در محیط با تهویه مناسب و با محافظ چشم، دستکش و در صورت لزوم محافظ تنفسی کار شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed, although sulfites may not be used in foods recognised as sources of thiamine or on fruit and vegetables intended to be eaten raw. Accepted as a food additive in Europe (E222). Included in the FDA Inactive Ingredient Database (injections, inhalation, ophthalmic, oral and topical preparations).",
+   "fa": "در فهرست GRAS قرار دارد، هرچند سولفیت‌ها نباید در غذاهایی که منبع تیامین‌اند یا روی میوه و سبزی‌هایی که خام مصرف می‌شوند به کار روند. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E222). در FDA Inactive Ingredient Database (فرآورده‌های تزریقی، استنشاقی، چشمی، خوراکی و موضعی) وجود دارد."
+  },
+  "related": {
+   "en": "Potassium metabisulfite; sodium metabisulfite; sodium sulfite.",
+   "fa": "پتاسیم متابی‌سولفیت؛ سدیم متابی‌سولفیت؛ سدیم سولفیت."
+  },
+  "comments": {
+   "en": "Choose the sulfite species by pH: bisulfite or metabisulfite for acidic preparations and sulfite for neutral or alkaline ones. Displacing headspace oxygen with nitrogen reduces the amount of antioxidant needed and slows its loss.",
+   "fa": "نوع سولفیت را بر اساس pH انتخاب کنید: بی‌سولفیت یا متابی‌سولفیت برای فرآورده‌های اسیدی و سولفیت برای فرآورده‌های خنثی یا قلیایی. جایگزینی اکسیژن فضای خالی ظرف با نیتروژن مقدار آنتی‌اکسیدان لازم را کم و از دست رفتن آن را کند می‌کند."
+  },
+  "refs": [
+   "usp",
+   "iid",
+   "gras",
+   "eu-additives",
+   "jecfa"
+  ]
+ },
+ "Sodium carbonate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Anhydrous Sodium Carbonate"
+   },
+   {
+    "ph": "JP",
+    "name": "Dried Sodium Carbonate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Carbonate, Anhydrous"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Carbonate Monohydrate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Carbonate Decahydrate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Carbonate"
+   }
+  ],
+  "tradeNames": "Calcined soda; carbonic acid disodium salt; disodium carbonate; natrii carbonas anhydricus; soda ash; washing soda (decahydrate); E500(i)",
+  "chemicalName": "Carbonic acid disodium salt",
+  "formula": "Na2CO3 (anhydrous); Na2CO3·H2O (monohydrate); Na2CO3·10H2O (decahydrate)",
+  "mw": "105.99 (anhydrous); 124.00 (monohydrate); 286.14 (decahydrate)",
+  "applications": {
+   "en": "Sodium carbonate is used as an alkalising agent and pH adjuster in injections, ophthalmic, oral and topical preparations, and as a buffer component. In effervescent tablets and granules it is used together with sodium bicarbonate, where it can act as a moisture scavenger and improve stability. It is also used to form soluble salts of acidic drugs in situ and in some cleansing and dental products.",
+   "fa": "سدیم کربنات به عنوان قلیایی‌کننده و تنظیم‌کننده pH در فرآورده‌های تزریقی، چشمی، خوراکی و موضعی، و به عنوان جزء بافر به کار می‌رود. در قرص‌ها و گرانول‌های جوشان همراه با سدیم بی‌کربنات مصرف می‌شود و می‌تواند به عنوان جاذب رطوبت عمل کند و پایداری را بهبود دهد. همچنین برای تشکیل درجای نمک‌های محلول داروهای اسیدی و در برخی فرآورده‌های پاک‌کننده و دندانی کاربرد دارد."
+  },
+  "description": {
+   "en": "The anhydrous form is an odourless, white, hygroscopic powder or granules with an alkaline taste. The monohydrate is a white crystalline powder, and the decahydrate occurs as colourless, efflorescent crystals.",
+   "fa": "فرم بدون آب پودر یا گرانول سفید، بی‌بو و رطوبت‌گیر با طعم قلیایی است. مونوهیدرات پودر کریستالی سفید است و دکاهیدرات به صورت کریستال‌های بی‌رنگ و شکوفا (efflorescent) دیده می‌شود."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "851 °C (anhydrous)",
+     "fa": "851 °C (بدون آب)"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "strongly alkaline; about 11.5 for a 1% w/v aqueous solution",
+     "fa": "به‌شدت قلیایی؛ حدود 11.5 برای محلول آبی 1٪"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water (more so in hot water); practically insoluble in ethanol",
+     "fa": "به‌راحتی محلول در آب (در آب گرم بیشتر)؛ عملاً نامحلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Hygroscopicity",
+     "fa": "رطوبت‌گیری"
+    },
+    "v": {
+     "en": "the anhydrous form absorbs moisture and carbon dioxide from the air; the decahydrate loses water in dry air",
+     "fa": "فرم بدون آب رطوبت و کربن دی‌اکسید هوا را جذب می‌کند؛ دکاهیدرات در هوای خشک آب از دست می‌دهد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically stable. The anhydrous material slowly absorbs moisture from humid air, forming the monohydrate. Store in an airtight container in a dry place.",
+   "fa": "از نظر شیمیایی پایدار است. ماده بدون آب در هوای مرطوب به‌آهستگی رطوبت جذب کرده و به مونوهیدرات تبدیل می‌شود. در ظرف دربسته در جای خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Reacts with acids and acidic salts with effervescence. Incompatible with calcium and other polyvalent metal salts (precipitation of carbonates) and with aluminium. Its high pH may degrade alkali-sensitive drugs, such as esters, and precipitate weak bases.",
+   "fa": "با اسیدها و نمک‌های اسیدی واکنش داده و جوشش ایجاد می‌کند. با نمک‌های کلسیم و سایر فلزات چندظرفیتی (رسوب کربنات) و با آلومینیوم ناسازگار است. pH بالای آن ممکن است داروهای حساس به قلیا مانند استرها را تخریب کند و بازهای ضعیف را رسوب دهد."
+  },
+  "manufacture": {
+   "en": "Produced by the ammonia–soda (Solvay) process, in which sodium bicarbonate precipitated from brine is calcined to the carbonate, or from natural deposits of trona. The hydrates are obtained by crystallisation from aqueous solution.",
+   "fa": "با فرآیند آمونیاک–سودا (Solvay)، که در آن سدیم بی‌کربنات رسوب‌کرده از آب‌نمک کلسینه و به کربنات تبدیل می‌شود، یا از ذخایر طبیعی ترونا تولید می‌شود. هیدرات‌ها از کریستالیزاسیون در محلول آبی به دست می‌آیند."
+  },
+  "safety": {
+   "en": "At the low concentrations used to adjust pH it is regarded as non-toxic. Concentrated solutions and the solid are irritant or corrosive to skin, eyes and mucous membranes, and ingestion of large amounts can cause gastrointestinal irritation.",
+   "fa": "در غلظت‌های کمی که برای تنظیم pH به کار می‌رود غیرسمی شناخته می‌شود. محلول‌های غلیظ و ماده جامد برای پوست، چشم و غشاهای مخاطی محرک یا خورنده‌اند و بلع مقادیر زیاد ممکن است باعث تحریک گوارشی شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. The powder is irritant to the eyes and respiratory tract; wear eye protection, gloves and a dust mask, and add the solid slowly to water.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. پودر آن برای چشم و مجاری تنفسی محرک است؛ از محافظ چشم، دستکش و ماسک گردوغبار استفاده کنید و ماده جامد را به‌آرامی به آب اضافه کنید."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E500). Included in the FDA Inactive Ingredient Database (injections, ophthalmic, oral and topical preparations) and in medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E500). در FDA Inactive Ingredient Database (فرآورده‌های تزریقی، چشمی، خوراکی و موضعی) و در داروهای مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Potassium carbonate; sodium bicarbonate; sodium sesquicarbonate.",
+   "fa": "پتاسیم کربنات؛ سدیم بی‌کربنات؛ سدیم سسکوئی‌کربنات."
+  },
+  "comments": {
+   "en": "Specify the hydrate used, as the water content (and therefore the amount needed) differs widely: the decahydrate contains about 63% water. Anhydrous sodium carbonate is the usual choice in effervescent and moisture-sensitive formulations.",
+   "fa": "نوع هیدرات مصرفی را مشخص کنید، زیرا مقدار آب (و در نتیجه مقدار لازم) بسیار متفاوت است: دکاهیدرات حدود 63٪ آب دارد. سدیم کربنات بدون آب انتخاب معمول در فرمولاسیون‌های جوشان و حساس به رطوبت است."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Sodium chloride": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Chloride"
+   },
+   {
+    "ph": "JP",
+    "name": "Sodium Chloride"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Chloride"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Chloride"
+   }
+  ],
+  "tradeNames": "Common salt; halite; natrii chloridum; rock salt; saline; sea salt; table salt",
+  "chemicalName": "Sodium chloride",
+  "formula": "NaCl",
+  "mw": "58.44",
+  "applications": {
+   "en": "Sodium chloride is used mainly to adjust tonicity in parenteral, ophthalmic, nasal and irrigation solutions; a 0.9% w/v solution is iso-osmotic with serum. It is also used as an osmotic agent in osmotic-pump and other controlled-release tablets, as a channelling agent and diluent in tablets and capsules, to raise the viscosity of surfactant-thickened liquids such as shampoos, and to adjust the gelation and swelling of polymers.",
+   "fa": "سدیم کلرید عمدتاً برای تنظیم تونیسیته در محلول‌های تزریقی، چشمی، بینی و شستشو به کار می‌رود؛ محلول 0.9٪ وزنی/حجمی با سرم ایزواسموتیک است. همچنین به عنوان عامل اسمزی در قرص‌های پمپ اسمزی و سایر قرص‌های رهش کنترل‌شده، عامل کانال‌ساز و رقیق‌کننده در قرص و کپسول، برای افزایش ویسکوزیته مایعات غلیظ‌شده با سورفکتانت مانند شامپوها، و برای تنظیم ژل‌شدن و تورم پلیمرها مصرف می‌شود."
+  },
+  "description": {
+   "en": "Colourless cubic crystals or a white crystalline powder with a saline taste. It is slightly hygroscopic above about 75% relative humidity.",
+   "fa": "کریستال‌های مکعبی بی‌رنگ یا پودر کریستالی سفید با طعم شور. در رطوبت نسبی بالاتر از حدود 75٪ کمی رطوبت‌گیر است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "801 °C",
+     "fa": "801 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water (about 1 in 2.8 at 20 °C); slightly soluble in ethanol; soluble in glycerol (about 1 in 10)",
+     "fa": "به‌راحتی محلول در آب (حدود 1 در 2.8 در 20 °C)؛ کمی محلول در اتانول؛ محلول در گلیسرول (حدود 1 در 10)"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 2.17 g/cm³",
+     "fa": "حدود 2.17 g/cm³"
+    }
+   },
+   {
+    "k": {
+     "en": "Osmolality",
+     "fa": "اسمولالیته"
+    },
+    "v": {
+     "en": "about 290 mOsm/kg for a 0.9% w/v solution",
+     "fa": "حدود 290 mOsm/kg برای محلول 0.9٪"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "6.7–7.3 (saturated aqueous solution)",
+     "fa": "6.7–7.3 (محلول آبی اشباع)"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Very stable. Aqueous solutions are stable and can be sterilised by autoclaving or filtration, but they may cause separation of glass particles from some types of glass container on storage. Store in a well-closed container in a dry place.",
+   "fa": "بسیار پایدار است. محلول‌های آبی پایدارند و می‌توان آن‌ها را با اتوکلاو یا فیلتراسیون استریل کرد، ولی در طول نگهداری ممکن است باعث جدا شدن ذرات شیشه از برخی انواع ظروف شیشه‌ای شوند. در ظرف کاملاً بسته در جای خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Aqueous solutions are corrosive to iron and precipitate silver, lead and mercury salts. Strong oxidising agents liberate chlorine from acidified solutions. Sodium chloride can salt out other solutes, reduce the solubility of some preservatives such as methylparaben, and decrease the viscosity of carbomer gels and some cellulose ether solutions.",
+   "fa": "محلول‌های آبی برای آهن خورنده‌اند و نمک‌های نقره، سرب و جیوه را رسوب می‌دهند. اکسیدکننده‌های قوی از محلول‌های اسیدی‌شده کلر آزاد می‌کنند. سدیم کلرید می‌تواند سایر مواد محلول را نمک‌زدایی (salting out) کند، حلالیت برخی نگهدارنده‌ها مانند متیل‌پارابن را کم کند و ویسکوزیته ژل‌های کاربومر و برخی محلول‌های اترهای سلولزی را کاهش دهد."
+  },
+  "manufacture": {
+   "en": "Obtained by mining of rock salt, by evaporation of sea water or by evaporation of brine pumped from underground deposits, followed by purification and recrystallisation.",
+   "fa": "از استخراج نمک سنگی، تبخیر آب دریا یا تبخیر آب‌نمک پمپ‌شده از ذخایر زیرزمینی و سپس خالص‌سازی و تبلور مجدد به دست می‌آید."
+  },
+  "safety": {
+   "en": "Sodium chloride is the main extracellular electrolyte and is non-toxic at excipient levels. Excessive intake or infusion can cause hypernatraemia, fluid retention and raised blood pressure, so the sodium load of formulations should be considered for patients with heart failure, hypertension or renal impairment. Hypertonic solutions are irritant to tissues.",
+   "fa": "سدیم کلرید الکترولیت اصلی مایع خارج سلولی است و در مقادیر مصرفی به عنوان ماده کمکی غیرسمی است. مصرف یا انفوزیون بیش از حد ممکن است باعث هیپرناترمی، احتباس مایعات و افزایش فشار خون شود؛ بنابراین بار سدیم فرمولاسیون‌ها باید در بیماران دچار نارسایی قلبی، فشار خون بالا یا اختلال کلیوی در نظر گرفته شود. محلول‌های هیپرتونیک برای بافت‌ها محرک‌اند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Included in the FDA Inactive Ingredient Database (injections, inhalation, nasal, ophthalmic, oral, otic, rectal and topical preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در FDA Inactive Ingredient Database (فرآورده‌های تزریقی، استنشاقی، بینی، چشمی، خوراکی، گوشی، رکتال و موضعی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Potassium chloride; dextrose; mannitol; glycerin.",
+   "fa": "پتاسیم کلرید؛ دکستروز؛ مانیتول؛ گلیسیرین."
+  },
+  "comments": {
+   "en": "When calculating the amount of sodium chloride needed to make a solution isotonic, the freezing-point depression or sodium chloride equivalent of the drug and other solutes must be taken into account (a 0.9% solution depresses the freezing point by about 0.52 °C). Grades for parenteral and haemodialysis use have tighter limits on impurities such as bromide, iodide, aluminium and endotoxins.",
+   "fa": "هنگام محاسبه مقدار سدیم کلرید لازم برای ایزوتونیک کردن محلول، باید کاهش نقطه انجماد یا معادل سدیم کلرید دارو و سایر مواد محلول را در نظر گرفت (محلول 0.9٪ نقطه انجماد را حدود 0.52 °C پایین می‌آورد). گریدهای مخصوص تزریق و همودیالیز برای ناخالصی‌هایی مانند برمید، یدید، آلومینیوم و اندوتوکسین حدود سخت‌گیرانه‌تری دارند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras"
+  ]
+ },
+ "Sodium citrate dihydrate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Citrate"
+   },
+   {
+    "ph": "JP",
+    "name": "Sodium Citrate Hydrate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Citrate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Citrate"
+   }
+  ],
+  "tradeNames": "Citric acid trisodium salt dihydrate; natrii citras; trisodium citrate dihydrate; E331",
+  "chemicalName": "Trisodium 2-hydroxypropane-1,2,3-tricarboxylate dihydrate",
+  "formula": "C6H5Na3O7·2H2O",
+  "mw": "294.10",
+  "applications": {
+   "en": "Sodium citrate is used, alone or with citric acid, as a buffering agent and pH adjuster in oral, parenteral, ophthalmic and topical preparations, typically at concentrations up to a few per cent. It is also used as a sequestering agent, as an alkalising agent, as an anticoagulant in blood-collection and apheresis solutions (for example acid–citrate–dextrose), in effervescent products and to mask the taste of acidic ingredients. In foods it is used as an emulsifying salt and acidity regulator.",
+   "fa": "سدیم سیترات به‌تنهایی یا همراه با سیتریک اسید به عنوان بافر و تنظیم‌کننده pH در فرآورده‌های خوراکی، تزریقی، چشمی و موضعی، معمولاً در غلظت‌های تا چند درصد، به کار می‌رود. همچنین به عنوان عامل کی‌لیت‌کننده (sequestering)، قلیایی‌کننده، ضدانعقاد در محلول‌های جمع‌آوری خون و آفرزیس (مانند اسید–سیترات–دکستروز)، در فرآورده‌های جوشان و برای پوشاندن طعم مواد اسیدی مصرف می‌شود. در مواد غذایی به عنوان نمک امولسیون‌کننده و تنظیم‌کننده اسیدیته کاربرد دارد."
+  },
+  "description": {
+   "en": "Odourless, colourless crystals or a white crystalline powder with a cooling, saline taste. It is slightly deliquescent in moist air and the crystals are efflorescent in warm, dry air.",
+   "fa": "کریستال‌های بی‌رنگ و بی‌بو یا پودر کریستالی سفید با طعم شور و خنک. در هوای مرطوب کمی دلیکوسنت (deliquescent) و در هوای گرم و خشک شکوفا (efflorescent) است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Water content",
+     "fa": "مقدار آب"
+    },
+    "v": {
+     "en": "11.0–13.0% w/w",
+     "fa": "11.0–13.0٪ وزنی"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "mildly alkaline, about 7.5–8.5 for a 5% w/v aqueous solution",
+     "fa": "کمی قلیایی، حدود 7.5–8.5 برای محلول آبی 5٪"
+    }
+   },
+   {
+    "k": {
+     "en": "pKa values (citric acid)",
+     "fa": "مقادیر pKa (سیتریک اسید)"
+    },
+    "v": {
+     "en": "about 3.1, 4.8 and 6.4",
+     "fa": "حدود 3.1، 4.8 و 6.4"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water; practically insoluble in ethanol",
+     "fa": "به‌راحتی محلول در آب؛ عملاً نامحلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Dehydration",
+     "fa": "آب‌زدایی"
+    },
+    "v": {
+     "en": "loses its water of crystallisation at about 150 °C",
+     "fa": "در حدود 150 °C آب تبلور خود را از دست می‌دهد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "A stable material. Aqueous solutions may be sterilised by autoclaving. On storage, solutions may cause separation of small solid particles from glass containers. Store in an airtight container in a cool, dry place.",
+   "fa": "ماده‌ای پایدار است. محلول‌های آبی را می‌توان با اتوکلاو استریل کرد. محلول‌ها در طول نگهداری ممکن است باعث جدا شدن ذرات ریز جامد از ظروف شیشه‌ای شوند. در ظرف دربسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Aqueous solutions are slightly alkaline and react with acidic substances. Alkaloidal salts may be precipitated from their solutions, and calcium and strontium salts precipitate the corresponding citrates. Other incompatibilities include bases, reducing agents and oxidising agents.",
+   "fa": "محلول‌های آبی کمی قلیایی‌اند و با مواد اسیدی واکنش می‌دهند. نمک‌های آلکالوئیدی ممکن است از محلول‌هایشان رسوب کنند و نمک‌های کلسیم و استرانسیم سیترات‌های مربوط را رسوب می‌دهند. با بازها، احیاکننده‌ها و اکسیدکننده‌ها نیز ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Prepared by neutralising citric acid with sodium hydroxide or sodium carbonate and crystallising the dihydrate from the solution. Citric acid itself is produced by fermentation, mainly with Aspergillus niger.",
+   "fa": "از خنثی کردن سیتریک اسید با سدیم هیدروکسید یا سدیم کربنات و کریستالیزه کردن دی‌هیدرات از محلول تهیه می‌شود. خود سیتریک اسید با تخمیر، عمدتاً توسط Aspergillus niger، تولید می‌شود."
+  },
+  "safety": {
+   "en": "Citrate is metabolised to bicarbonate and is generally regarded as non-toxic and non-irritant at excipient levels. Large doses can cause metabolic alkalosis, and rapid infusion of citrate-containing blood products can lower ionised calcium and cause hypocalcaemic symptoms.",
+   "fa": "سیترات به بی‌کربنات متابولیزه می‌شود و در مقادیر مصرفی به عنوان ماده کمکی عموماً غیرسمی و غیرمحرک شناخته می‌شود. دوزهای زیاد ممکن است باعث آلکالوز متابولیک شوند و انفوزیون سریع فرآورده‌های خونی حاوی سیترات ممکن است کلسیم یونیزه را کاهش داده و علائم هیپوکلسمی ایجاد کند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E331). Included in the FDA Inactive Ingredient Database (inhalation, injections, ophthalmic, oral, nasal, otic, rectal, topical and vaginal preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E331). در FDA Inactive Ingredient Database (فرآورده‌های استنشاقی، تزریقی، چشمی، خوراکی، بینی، گوشی، رکتال، موضعی و واژینال) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Citric acid monohydrate; potassium citrate; sodium citrate, anhydrous.",
+   "fa": "سیتریک اسید مونوهیدرات؛ پتاسیم سیترات؛ سدیم سیترات بدون آب."
+  },
+  "comments": {
+   "en": "Citrate buffers cover a wide pH range (about pH 2.5–6.5) because citric acid has three ionisable groups. Citrate-buffered injections can cause stinging on subcutaneous injection, and citrate can chelate metal ions required by some formulations.",
+   "fa": "بافرهای سیترات به دلیل سه گروه یونیزه‌شونده سیتریک اسید محدوده pH گسترده‌ای (حدود pH 2.5–6.5) را پوشش می‌دهند. تزریق‌های بافرشده با سیترات ممکن است هنگام تزریق زیرجلدی سوزش ایجاد کنند و سیترات ممکن است یون‌های فلزی مورد نیاز برخی فرمولاسیون‌ها را کی‌لیت کند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Sodium cyclamate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Cyclamate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Cyclamate"
+   }
+  ],
+  "tradeNames": "Cyclamate sodium; cyclohexylsulfamic acid monosodium salt; natrii cyclamas; sodium cyclohexylsulfamate; E952",
+  "chemicalName": "Sodium N-cyclohexylsulfamate",
+  "formula": "C6H12NNaO3S",
+  "mw": "201.22",
+  "applications": {
+   "en": "Sodium cyclamate is an intense sweetener used in oral liquids, chewable and effervescent tablets, powders and table-top sweeteners. It is about 30 times as sweet as sucrose and is commonly combined with saccharin (classically in a 10:1 ratio), which masks the bitter aftertaste of saccharin and gives a synergistic sweetening effect. It is used at low concentrations, typically a few tenths of a per cent or less.",
+   "fa": "سدیم سیکلامات یک شیرین‌کننده قوی است که در مایعات خوراکی، قرص‌های جویدنی و جوشان، پودرها و شیرین‌کننده‌های رومیزی به کار می‌رود. حدود 30 برابر ساکارز شیرین است و معمولاً همراه با ساخارین (به طور کلاسیک با نسبت 10 به 1) مصرف می‌شود که پس‌مزه تلخ ساخارین را می‌پوشاند و اثر شیرین‌کنندگی هم‌افزا دارد. در غلظت‌های کم، معمولاً چند دهم درصد یا کمتر، به کار می‌رود."
+  },
+  "description": {
+   "en": "White, odourless or almost odourless crystals or crystalline powder with an intensely sweet taste. It is non-hygroscopic.",
+   "fa": "کریستال یا پودر کریستالی سفید، بی‌بو یا تقریباً بی‌بو با طعم بسیار شیرین. رطوبت‌گیر نیست."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Relative sweetness",
+     "fa": "شیرینی نسبی"
+    },
+    "v": {
+     "en": "about 30 times that of sucrose",
+     "fa": "حدود 30 برابر ساکارز"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water; slightly soluble in ethanol; practically insoluble in chloroform and ether",
+     "fa": "به‌راحتی محلول در آب؛ کمی محلول در اتانول؛ عملاً نامحلول در کلروفرم و اتر"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "5.5–7.5 (10% w/v aqueous solution)",
+     "fa": "5.5–7.5 (محلول آبی 10٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Heat stability",
+     "fa": "پایداری حرارتی"
+    },
+    "v": {
+     "en": "stable to heat, light and air over a wide pH range; suitable for cooked and baked products",
+     "fa": "در برابر حرارت، نور و هوا در محدوده pH گسترده پایدار است؛ برای محصولات پخته‌شده مناسب است"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable to heat, light and air across a wide pH range in both the solid state and in solution. Store in a well-closed container in a cool, dry place.",
+   "fa": "هم در حالت جامد و هم در محلول، در محدوده گسترده pH در برابر حرارت، نور و هوا پایدار است. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Few incompatibilities have been reported; it is incompatible with strong oxidising agents. Nitrites can react with it in acidic media.",
+   "fa": "ناسازگاری زیادی گزارش نشده است؛ با اکسیدکننده‌های قوی ناسازگار است. نیتریت‌ها ممکن است در محیط اسیدی با آن واکنش دهند."
+  },
+  "manufacture": {
+   "en": "Prepared by sulfonation of cyclohexylamine (for example with sulfamic acid or sulfur trioxide) followed by neutralisation with sodium hydroxide, and purified by crystallisation.",
+   "fa": "از سولفوناسیون سیکلوهگزیل‌آمین (برای مثال با سولفامیک اسید یا سولفور تری‌اکسید) و سپس خنثی کردن با سدیم هیدروکسید تهیه و با کریستالیزاسیون خالص‌سازی می‌شود."
+  },
+  "safety": {
+   "en": "Most cyclamate is excreted unchanged, but in some individuals gut bacteria convert part of it to cyclohexylamine, which is the basis of the acceptable daily intake. Cyclamate was banned as a food additive in the USA in 1970 after studies in rats suggested bladder tumours; later studies did not confirm a carcinogenic risk. JECFA has set an ADI of 0–11 mg/kg body-weight (as cyclamic acid), and the EU an ADI of 7 mg/kg body-weight.",
+   "fa": "بیشتر سیکلامات بدون تغییر دفع می‌شود، ولی در برخی افراد باکتری‌های روده بخشی از آن را به سیکلوهگزیل‌آمین تبدیل می‌کنند که مبنای تعیین مقدار مجاز مصرف روزانه است. سیکلامات در سال 1970 پس از مطالعاتی در موش صحرایی که احتمال تومور مثانه را مطرح کرد، در آمریکا به عنوان افزودنی غذایی ممنوع شد؛ مطالعات بعدی خطر سرطان‌زایی را تأیید نکردند. JECFA مقدار ADI را 0–11 mg/kg وزن بدن (بر حسب سیکلامیک اسید) و اتحادیه اروپا 7 mg/kg وزن بدن تعیین کرده‌اند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E952) and in many other countries, but not permitted in foods in the USA. Included in non-parenteral medicines licensed in Europe and other regions.",
+   "fa": "در اروپا (E952) و بسیاری از کشورهای دیگر به عنوان افزودنی غذایی پذیرفته شده است، ولی در آمریکا مصرف آن در مواد غذایی مجاز نیست. در داروهای غیرتزریقی مجاز در اروپا و سایر مناطق وجود دارد."
+  },
+  "related": {
+   "en": "Calcium cyclamate; cyclamic acid; saccharin sodium; aspartame; acesulfame potassium.",
+   "fa": "کلسیم سیکلامات؛ سیکلامیک اسید؛ ساخارین سدیم؛ آسپارتام؛ آسه‌سولفام پتاسیم."
+  },
+  "comments": {
+   "en": "Its regulatory status differs between countries, so confirm acceptability in each target market before use, especially for products intended for export to the USA. Combining it with other sweeteners lowers the amount required.",
+   "fa": "وضعیت قانونی آن در کشورهای مختلف متفاوت است؛ بنابراین پیش از مصرف، پذیرش آن را در هر بازار هدف بررسی کنید، به‌ویژه برای فرآورده‌هایی که برای صادرات به آمریکا در نظر گرفته شده‌اند. ترکیب آن با سایر شیرین‌کننده‌ها مقدار لازم را کاهش می‌دهد."
+  },
+  "refs": [
+   "ep",
+   "eu-additives",
+   "jecfa",
+   "efsa"
+  ]
+ },
+ "Sodium hyaluronate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Hyaluronate"
+   },
+   {
+    "ph": "JP",
+    "name": "Purified Sodium Hyaluronate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Hyaluronate"
+   }
+  ],
+  "tradeNames": "Hyaluronan; hyaluronic acid sodium salt; hyaluronate sodium; natrii hyaluronas; sodium hyaluronan",
+  "chemicalName": "Sodium salt of hyaluronic acid, a linear glycosaminoglycan of repeating disaccharide units of D-glucuronic acid and N-acetyl-D-glucosamine linked by alternating β(1→3) and β(1→4) bonds",
+  "formula": "(C14H20NNaO11)n",
+  "mw": "repeat unit 401.3; polymer from about 10⁴ to several 10⁶ Da, depending on grade",
+  "applications": {
+   "en": "Sodium hyaluronate is used as a viscosity-enhancing and lubricating agent in eye drops and artificial tears (typically about 0.1–0.4%), as a viscoelastic agent in ophthalmic surgery (at higher concentrations, around 1–3%), in intra-articular injections for osteoarthritis, in dermal fillers (usually cross-linked) and in topical wound-healing and moisturising products. It is also investigated as a mucoadhesive carrier and as a targeting ligand in drug delivery systems.",
+   "fa": "سدیم هیالورونات به عنوان افزاینده ویسکوزیته و روان‌کننده در قطره‌های چشمی و اشک مصنوعی (معمولاً حدود 0.1–0.4٪)، به عنوان ماده ویسکوالاستیک در جراحی چشم (در غلظت‌های بالاتر، حدود 1–3٪)، در تزریق داخل مفصلی برای استئوآرتریت، در فیلرهای پوستی (معمولاً به صورت کراس‌لینک‌شده) و در فرآورده‌های موضعی ترمیم زخم و مرطوب‌کننده به کار می‌رود. همچنین به عنوان حامل چسبنده به مخاط و لیگاند هدف‌گیری در سیستم‌های دارورسانی بررسی می‌شود."
+  },
+  "description": {
+   "en": "A white or almost white, very hygroscopic powder or fibrous aggregate, odourless. It dissolves slowly in water to give highly viscous, pseudoplastic and viscoelastic solutions; grades are characterised by molecular weight or intrinsic viscosity.",
+   "fa": "پودر یا توده الیافی سفید یا تقریباً سفید، بی‌بو و بسیار رطوبت‌گیر. به‌آهستگی در آب حل می‌شود و محلول‌هایی بسیار ویسکوز، شبه‌پلاستیک (pseudoplastic) و ویسکوالاستیک می‌دهد؛ گریدها بر اساس وزن مولکولی یا ویسکوزیته ذاتی مشخص می‌شوند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "sparingly to freely soluble in water depending on molecular weight, dissolving slowly; practically insoluble in acetone and ethanol",
+     "fa": "بسته به وزن مولکولی، نسبتاً کم محلول تا به‌راحتی محلول در آب که به‌آهستگی حل می‌شود؛ عملاً نامحلول در استون و اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "about 5.0–8.5 (0.5% w/v aqueous solution)",
+     "fa": "حدود 5.0–8.5 (محلول آبی 0.5٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Rheology",
+     "fa": "رئولوژی"
+    },
+    "v": {
+     "en": "solutions are shear-thinning and viscoelastic; viscosity rises steeply with molecular weight and concentration",
+     "fa": "محلول‌ها رقیق‌شونده با برش (shear-thinning) و ویسکوالاستیک‌اند؛ ویسکوزیته با افزایش وزن مولکولی و غلظت به‌شدت بالا می‌رود"
+    }
+   },
+   {
+    "k": {
+     "en": "Hygroscopicity",
+     "fa": "رطوبت‌گیری"
+    },
+    "v": {
+     "en": "very hygroscopic; water content must be controlled",
+     "fa": "بسیار رطوبت‌گیر است؛ مقدار آب باید کنترل شود"
+    }
+   }
+  ],
+  "stability": {
+   "en": "The solid is stable if protected from moisture. In solution the polymer chain is degraded by hyaluronidase, free radicals, heat and extremes of pH, which reduce molecular weight and viscosity; heat sterilisation therefore lowers viscosity, and solutions are often sterile-filtered or processed aseptically. Store in an airtight container protected from light, usually refrigerated or at controlled room temperature as specified by the supplier.",
+   "fa": "ماده جامد در صورت محافظت از رطوبت پایدار است. در محلول، زنجیر پلیمر توسط هیالورونیداز، رادیکال‌های آزاد، حرارت و pH‌های بسیار پایین یا بالا تخریب می‌شود و وزن مولکولی و ویسکوزیته کاهش می‌یابد؛ بنابراین استریل کردن حرارتی ویسکوزیته را کم می‌کند و محلول‌ها اغلب با فیلتر استریل یا به روش آسپتیک تهیه می‌شوند. در ظرف دربسته و محافظت‌شده از نور، معمولاً در یخچال یا در دمای کنترل‌شده اتاق طبق توصیه تأمین‌کننده نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "As a polyanion it forms precipitates or complexes with cationic substances such as quaternary ammonium preservatives (for example benzalkonium chloride and cetylpyridinium chloride) at certain concentrations. Oxidising agents and transition metal ions accelerate its depolymerisation.",
+   "fa": "به عنوان پلی‌آنیون، با مواد کاتیونی مانند نگهدارنده‌های آمونیوم چهارتایی (برای مثال بنزالکونیوم کلرید و ستیل‌پیریدینیوم کلرید) در برخی غلظت‌ها رسوب یا کمپلکس تشکیل می‌دهد. اکسیدکننده‌ها و یون‌های فلزات واسطه دپلیمریزاسیون آن را تسریع می‌کنند."
+  },
+  "manufacture": {
+   "en": "Produced mainly by fermentation with selected strains of Streptococcus (such as S. equi subsp. zooepidemicus) or recombinant organisms, followed by precipitation, purification and drying. It was formerly extracted from rooster combs; material from animal sources requires additional controls for proteins and viral safety.",
+   "fa": "عمدتاً با تخمیر توسط سویه‌های انتخاب‌شده Streptococcus (مانند S. equi subsp. zooepidemicus) یا میکروارگانیسم‌های نوترکیب و سپس رسوب‌دهی، خالص‌سازی و خشک کردن تولید می‌شود. در گذشته از تاج خروس استخراج می‌شد؛ ماده با منشأ حیوانی به کنترل‌های بیشتری از نظر پروتئین و ایمنی ویروسی نیاز دارد."
+  },
+  "safety": {
+   "en": "Hyaluronic acid is a natural component of connective tissue, synovial fluid and the vitreous humour, and sodium hyaluronate is generally regarded as biocompatible and non-immunogenic. Local reactions such as pain and swelling (including pseudo-septic reactions) have been reported after intra-articular injection, and inflammatory or hypersensitivity reactions after dermal filler use.",
+   "fa": "هیالورونیک اسید جزء طبیعی بافت همبند، مایع مفصلی و زجاجیه چشم است و سدیم هیالورونات عموماً زیست‌سازگار و غیرایمنی‌زا شناخته می‌شود. واکنش‌های موضعی مانند درد و تورم (از جمله واکنش‌های شبه‌عفونی) پس از تزریق داخل مفصلی، و واکنش‌های التهابی یا حساسیتی پس از مصرف فیلرهای پوستی گزارش شده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Used in ophthalmic, intra-articular and topical medicines and medical devices licensed in Europe, the USA and elsewhere; many viscoelastic, intra-articular and filler products are regulated as medical devices. It is also used widely in cosmetics.",
+   "fa": "در داروهای چشمی، داخل مفصلی و موضعی و نیز تجهیزات پزشکی مجاز در اروپا، آمریکا و سایر کشورها به کار می‌رود؛ بسیاری از فرآورده‌های ویسکوالاستیک، داخل مفصلی و فیلرها به عنوان تجهیزات پزشکی تنظیم مقررات می‌شوند. در صنایع آرایشی نیز به‌طور گسترده مصرف می‌شود."
+  },
+  "related": {
+   "en": "Hyaluronic acid; cross-linked sodium hyaluronate (hylan); chondroitin sulfate sodium; carbomers.",
+   "fa": "هیالورونیک اسید؛ سدیم هیالورونات کراس‌لینک‌شده (hylan)؛ کندرویتین سولفات سدیم؛ کاربومرها."
+  },
+  "comments": {
+   "en": "Specify the molecular weight or intrinsic viscosity range, since this governs viscosity, residence time and biological behaviour. Hydrate the powder slowly without high shear, which can break the polymer chains, and control endotoxin and microbial levels for ophthalmic and parenteral use.",
+   "fa": "محدوده وزن مولکولی یا ویسکوزیته ذاتی را مشخص کنید، زیرا ویسکوزیته، زمان ماندگاری و رفتار زیستی را تعیین می‌کند. پودر را به‌آهستگی و بدون برش شدید (که زنجیرهای پلیمر را می‌شکند) آب‌دهی کنید و برای مصارف چشمی و تزریقی، مقدار اندوتوکسین و بار میکروبی را کنترل کنید."
+  },
+  "refs": [
+   "ep",
+   "jp"
+  ]
+ },
+ "Sodium hydroxide": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Hydroxide"
+   },
+   {
+    "ph": "JP",
+    "name": "Sodium Hydroxide"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Hydroxide"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Hydroxide"
+   }
+  ],
+  "tradeNames": "Caustic soda; lye; natrii hydroxidum; soda lye; sodium hydrate; E524",
+  "chemicalName": "Sodium hydroxide",
+  "formula": "NaOH",
+  "mw": "40.00",
+  "applications": {
+   "en": "Sodium hydroxide is widely used to adjust pH and to neutralise acids in parenteral, ophthalmic, oral and topical preparations, usually as a dilute solution and in very small amounts. It is used to form water-soluble salts of acidic drugs, to prepare buffer systems with weak acids, to neutralise carbomer dispersions to form gels, and to form soaps in situ with fatty acids in creams and emulsions.",
+   "fa": "سدیم هیدروکسید به‌طور گسترده برای تنظیم pH و خنثی کردن اسیدها در فرآورده‌های تزریقی، چشمی، خوراکی و موضعی، معمولاً به صورت محلول رقیق و در مقادیر بسیار کم، به کار می‌رود. برای تشکیل نمک‌های محلول در آب داروهای اسیدی، تهیه سیستم‌های بافری با اسیدهای ضعیف، خنثی کردن پراکنش‌های کاربومر برای تشکیل ژل، و تشکیل درجای صابون با اسیدهای چرب در کرم‌ها و امولسیون‌ها مصرف می‌شود."
+  },
+  "description": {
+   "en": "White or almost white, hard, deliquescent pellets, flakes, sticks or fused masses. It is strongly alkaline and corrosive, and absorbs water and carbon dioxide rapidly from the air.",
+   "fa": "قرص‌های کوچک (pellet)، پولک، میله یا توده‌های ذوب‌شده سخت، سفید یا تقریباً سفید و دلیکوسنت. به‌شدت قلیایی و خورنده است و به‌سرعت آب و کربن دی‌اکسید هوا را جذب می‌کند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "318 °C",
+     "fa": "318 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "very soluble in water, with strong evolution of heat; freely soluble in ethanol",
+     "fa": "بسیار محلول در آب همراه با آزاد شدن گرمای زیاد؛ به‌راحتی محلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "about 12 for a 0.05% w/v solution and about 13 for a 0.5% w/v solution",
+     "fa": "حدود 12 برای محلول 0.05٪ و حدود 13 برای محلول 0.5٪"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 2.1 g/cm³",
+     "fa": "حدود 2.1 g/cm³"
+    }
+   },
+   {
+    "k": {
+     "en": "Assay",
+     "fa": "سنجش"
+    },
+    "v": {
+     "en": "pharmacopoeial material contains not less than about 97% total alkali as NaOH, including a limited amount of sodium carbonate",
+     "fa": "ماده فارماکوپه‌ای دست‌کم حدود 97٪ قلیای کل بر حسب NaOH، شامل مقدار محدودی سدیم کربنات، دارد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Sodium hydroxide absorbs moisture and carbon dioxide from the air, forming sodium carbonate. Store in an airtight, non-metallic container (such as polyethylene) in a cool, dry place. Solutions stored in glass slowly attack the glass.",
+   "fa": "سدیم هیدروکسید رطوبت و کربن دی‌اکسید هوا را جذب کرده و به سدیم کربنات تبدیل می‌شود. در ظرف دربسته و غیرفلزی (مانند پلی‌اتیلن) در جای خنک و خشک نگهداری شود. محلول‌هایی که در شیشه نگهداری شوند به‌آهستگی به شیشه حمله می‌کنند."
+  },
+  "incompatibilities": {
+   "en": "Reacts violently with acids, liberating heat. Attacks aluminium, zinc and tin, producing flammable hydrogen. It hydrolyses esters, amides and many drugs, and may cause degradation or precipitation of alkali-sensitive drugs and excipients.",
+   "fa": "با اسیدها به‌شدت واکنش داده و گرما آزاد می‌کند. به آلومینیوم، روی و قلع حمله کرده و هیدروژن قابل اشتعال تولید می‌کند. استرها، آمیدها و بسیاری از داروها را هیدرولیز می‌کند و ممکن است باعث تخریب یا رسوب داروها و مواد کمکی حساس به قلیا شود."
+  },
+  "manufacture": {
+   "en": "Produced industrially by electrolysis of sodium chloride solution (brine) in membrane, diaphragm or mercury cells, with chlorine and hydrogen as co-products; the solution is concentrated and the solid is obtained by evaporation.",
+   "fa": "در صنعت از الکترولیز محلول سدیم کلرید (آب‌نمک) در سلول‌های غشایی، دیافراگمی یا جیوه‌ای، همراه با تولید کلر و هیدروژن به عنوان فرآورده‌های جانبی، تولید می‌شود؛ محلول تغلیظ و ماده جامد با تبخیر به دست می‌آید."
+  },
+  "safety": {
+   "en": "In the small amounts used to adjust pH, sodium hydroxide is neutralised in the formulation and is not toxic. The solid and concentrated solutions are highly corrosive: they cause severe burns to the skin and eyes, and ingestion causes serious injury to the gastrointestinal tract.",
+   "fa": "در مقادیر کمی که برای تنظیم pH به کار می‌رود، سدیم هیدروکسید در فرمولاسیون خنثی می‌شود و سمی نیست. ماده جامد و محلول‌های غلیظ بسیار خورنده‌اند: باعث سوختگی شدید پوست و چشم می‌شوند و بلع آن‌ها آسیب جدی به دستگاه گوارش وارد می‌کند."
+  },
+  "handling": {
+   "en": "Handle with great care. Wear chemical-resistant gloves, eye and face protection and protective clothing. Always add the solid slowly to water with stirring (never water to the solid), as the dissolution is strongly exothermic.",
+   "fa": "با احتیاط زیاد کار شود. از دستکش مقاوم به مواد شیمیایی، محافظ چشم و صورت و لباس محافظ استفاده کنید. همیشه ماده جامد را به‌آرامی و با هم‌زدن به آب اضافه کنید (نه آب را به ماده جامد)، زیرا انحلال آن به‌شدت گرمازاست."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E524). Included in the FDA Inactive Ingredient Database (injections, inhalation, nasal, ophthalmic, oral, otic, rectal, topical and vaginal preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E524). در FDA Inactive Ingredient Database (فرآورده‌های تزریقی، استنشاقی، بینی، چشمی، خوراکی، گوشی، رکتال، موضعی و واژینال) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Potassium hydroxide; ammonia solution; trolamine.",
+   "fa": "پتاسیم هیدروکسید؛ محلول آمونیاک؛ ترولامین."
+  },
+  "comments": {
+   "en": "For pH adjustment use freshly prepared or standardised dilute solutions (for example 0.1–1 M), since solutions absorb carbon dioxide and change strength. The final formulation records should state the amount of sodium hydroxide added or describe it as 'quantity sufficient to adjust pH'.",
+   "fa": "برای تنظیم pH از محلول‌های رقیق تازه تهیه‌شده یا استانداردشده (برای مثال 0.1–1 M) استفاده کنید، زیرا محلول‌ها کربن دی‌اکسید جذب می‌کنند و غلظتشان تغییر می‌کند. در سوابق فرمولاسیون نهایی باید مقدار سدیم هیدروکسید افزوده‌شده ذکر شود یا به صورت «به مقدار کافی برای تنظیم pH» توصیف شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Sodium lauryl sulfate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Laurilsulfate"
+   },
+   {
+    "ph": "JP",
+    "name": "Sodium Lauryl Sulfate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Laurilsulfate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Lauryl Sulfate"
+   }
+  ],
+  "tradeNames": "Dodecyl sodium sulfate; natrii laurilsulfas; SDS; sodium dodecyl sulfate; sodium laurilsulfate; sodium monododecyl sulfate; Texapon K12",
+  "chemicalName": "Sulfuric acid monododecyl ester sodium salt (mixture of sodium alkyl sulfates consisting chiefly of sodium dodecyl sulfate)",
+  "formula": "C12H25NaO4S",
+  "mw": "288.38",
+  "applications": {
+   "en": "An anionic surfactant used in a wide range of non-parenteral products: as an emulsifier (0.5–2.5%), as a detergent in medicated shampoos (about 10%), in skin cleansers (about 1%), as a solubiliser (above about 0.25%), as a tablet lubricant (1–2%) and as a wetting agent in tablets, capsules and dentifrices (1–2%). It is also used in dissolution media for poorly soluble drugs and as a wetting agent to improve drug release.",
+   "fa": "یک سورفکتانت آنیونی که در طیف گسترده‌ای از فرآورده‌های غیرتزریقی به کار می‌رود: به عنوان امولسیون‌کننده (0.5–2.5٪)، شوینده در شامپوهای دارویی (حدود 10٪)، پاک‌کننده پوست (حدود 1٪)، حل‌کننده (بیشتر از حدود 0.25٪)، لغزان‌کننده قرص (1–2٪) و عامل مرطوب‌کننده (wetting agent) در قرص، کپسول و خمیردندان (1–2٪). در محیط‌های انحلال برای داروهای کم‌محلول و به عنوان عامل مرطوب‌کننده برای بهبود رهش دارو نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "White or cream to pale yellow crystals, flakes or powder with a smooth feel, a soapy, bitter taste and a faint odour of fatty substances. The pharmacopoeias require not less than 85% of sodium alkyl sulfates calculated as C12H25NaO4S.",
+   "fa": "کریستال، پولک یا پودر سفید یا کرم تا زرد کم‌رنگ با لمس نرم، طعم صابونی و تلخ و بوی ضعیف مواد چرب. فارماکوپه‌ها دست‌کم 85٪ سدیم آلکیل سولفات بر حسب C12H25NaO4S را الزامی می‌دانند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "about 40",
+     "fa": "حدود 40"
+    }
+   },
+   {
+    "k": {
+     "en": "Critical micelle concentration",
+     "fa": "غلظت بحرانی میسل (CMC)"
+    },
+    "v": {
+     "en": "about 8.2 mmol/L (about 0.23% w/v) in water at 20 °C",
+     "fa": "حدود 8.2 mmol/L (حدود 0.23٪) در آب در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "7.0–9.5 (1% w/v aqueous solution)",
+     "fa": "7.0–9.5 (محلول آبی 1٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "about 204–207 °C (pure substance)",
+     "fa": "حدود 204–207 °C (ماده خالص)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water, giving an opalescent solution; practically insoluble in chloroform and ether",
+     "fa": "به‌راحتی محلول در آب و ایجاد محلول شیری‌رنگ (opalescent)؛ عملاً نامحلول در کلروفرم و اتر"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable under normal storage conditions. In solution it is hydrolysed under strongly acidic conditions (below about pH 2.5) to lauryl alcohol and sodium bisulfate, a reaction accelerated by heat. Store in a well-closed container away from strong oxidisers, in a cool, dry place.",
+   "fa": "در شرایط معمول نگهداری پایدار است. در محلول، در شرایط به‌شدت اسیدی (pH کمتر از حدود 2.5) به لوریل الکل و سدیم بی‌سولفات هیدرولیز می‌شود و حرارت این واکنش را تسریع می‌کند. در ظرف کاملاً بسته، دور از اکسیدکننده‌های قوی، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Reacts with cationic surfactants and cationic drugs, causing loss of activity or precipitation. Incompatible with salts of polyvalent metal ions such as aluminium, lead, tin and zinc, and precipitates with potassium salts. Solutions are slightly corrosive to mild steel, copper, brass and aluminium.",
+   "fa": "با سورفکتانت‌ها و داروهای کاتیونی واکنش داده و باعث از دست رفتن فعالیت یا رسوب می‌شود. با نمک‌های یون‌های فلزی چندظرفیتی مانند آلومینیوم، سرب، قلع و روی ناسازگار است و با نمک‌های پتاسیم رسوب می‌دهد. محلول‌های آن برای فولاد نرم، مس، برنج و آلومینیوم کمی خورنده‌اند."
+  },
+  "manufacture": {
+   "en": "Lauryl (dodecyl) alcohol, obtained from coconut or palm kernel oil or by synthesis, is sulfated with sulfur trioxide or chlorosulfonic acid, and the resulting acid ester is neutralised with sodium hydroxide or sodium carbonate.",
+   "fa": "لوریل (دودسیل) الکل، حاصل از روغن نارگیل یا هسته خرما یا سنتز، با سولفور تری‌اکسید یا کلروسولفونیک اسید سولفاته می‌شود و استر اسیدی حاصل با سدیم هیدروکسید یا سدیم کربنات خنثی می‌گردد."
+  },
+  "safety": {
+   "en": "Moderately toxic if swallowed in large amounts, causing gastrointestinal irritation. It is irritant to the skin, eyes and mucous membranes in a concentration-dependent way and can damage the skin barrier with repeated exposure; it is often used as a model irritant in skin testing. It may also increase the permeability of mucosae and skin to other substances.",
+   "fa": "در صورت بلع مقادیر زیاد سمیت متوسطی دارد و باعث تحریک گوارشی می‌شود. به صورت وابسته به غلظت برای پوست، چشم و غشاهای مخاطی محرک است و با تماس مکرر ممکن است سد پوستی را آسیب بزند؛ اغلب به عنوان ماده محرک مرجع در آزمون‌های پوستی به کار می‌رود. همچنین ممکن است نفوذپذیری مخاط و پوست را نسبت به سایر مواد افزایش دهد."
+  },
+  "handling": {
+   "en": "The fine powder is irritant to the eyes and respiratory tract. Wear eye protection, gloves and a dust mask or respirator, and handle in a well-ventilated area; low-dust needle or granular grades are available.",
+   "fa": "پودر ریز آن برای چشم و مجاری تنفسی محرک است. از محافظ چشم، دستکش و ماسک گردوغبار یا رسپیراتور استفاده کنید و در محیط با تهویه مناسب کار کنید؛ گریدهای سوزنی یا دانه‌ای کم‌گردوغبار نیز در دسترس‌اند."
+  },
+  "regulatory": {
+   "en": "Permitted as a direct food additive in the USA for specified uses. Included in the FDA Inactive Ingredient Database (dental preparations, oral capsules, suspensions and tablets, topical and vaginal preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در آمریکا به عنوان افزودنی مستقیم غذایی برای مصارف مشخص مجاز است. در FDA Inactive Ingredient Database (فرآورده‌های دندانی، کپسول، سوسپانسیون و قرص خوراکی، فرآورده‌های موضعی و واژینال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Sodium laureth sulfate; magnesium lauryl sulfate; sodium cetostearyl sulfate; docusate sodium.",
+   "fa": "سدیم لورت سولفات؛ منیزیم لوریل سولفات؛ سدیم ستواستئاریل سولفات؛ دوکوزات سدیم."
+  },
+  "comments": {
+   "en": "Its strong wetting effect can improve the dissolution of hydrophobic drugs from tablets and capsules, but it can also cause foaming during wet granulation and coating. When it is used in dissolution media, check for interactions with gelatin capsule shells and cationic drugs.",
+   "fa": "اثر مرطوب‌کنندگی قوی آن می‌تواند انحلال داروهای آب‌گریز را از قرص و کپسول بهبود دهد، ولی ممکن است در گرانولاسیون مرطوب و روکش‌دهی باعث کف کردن شود. هنگام مصرف در محیط انحلال، برهم‌کنش با پوسته کپسول ژلاتینی و داروهای کاتیونی را بررسی کنید."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid"
+  ]
+ },
+ "Sodium metabisulfite": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Metabisulfite"
+   },
+   {
+    "ph": "JP",
+    "name": "Sodium Pyrosulfite"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Metabisulfite"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Metabisulfite"
+   }
+  ],
+  "tradeNames": "Disodium disulfite; disodium pyrosulfite; natrii metabisulfis; sodium disulfite; sodium pyrosulfite; E223",
+  "chemicalName": "Disodium disulfite",
+  "formula": "Na2S2O5",
+  "mw": "190.11",
+  "applications": {
+   "en": "Sodium metabisulfite is used as an antioxidant in oral, parenteral and topical preparations at concentrations of about 0.01–1.0% w/v, most often around 0.1%. It is used mainly in acidic preparations (for example adrenaline, local anaesthetic with vasoconstrictor, and some aminoglycoside injections), while sodium sulfite is preferred at higher pH. It also has antimicrobial activity in acidic conditions and is used as a preservative in foods and beverages.",
+   "fa": "سدیم متابی‌سولفیت به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی در غلظت‌های حدود 0.01–1.0٪ وزنی/حجمی، و اغلب در حدود 0.1٪، به کار می‌رود. عمدتاً در فرآورده‌های اسیدی (مانند تزریق آدرنالین، بی‌حس‌کننده‌های موضعی همراه با منقبض‌کننده عروق و برخی تزریق‌های آمینوگلیکوزیدی) مصرف می‌شود، در حالی که در pH بالاتر سدیم سولفیت ترجیح داده می‌شود. در شرایط اسیدی اثر ضدمیکروبی نیز دارد و به عنوان نگهدارنده در مواد غذایی و نوشیدنی‌ها مصرف می‌شود."
+  },
+  "description": {
+   "en": "Colourless, prismatic crystals or a white to creamy-white crystalline powder with an odour of sulfur dioxide and an acidic, saline taste. In aqueous solution it forms sodium bisulfite.",
+   "fa": "کریستال‌های منشوری بی‌رنگ یا پودر کریستالی سفید تا سفید مایل به کرم با بوی سولفور دی‌اکسید و طعم اسیدی و شور. در محلول آبی به سدیم بی‌سولفیت تبدیل می‌شود."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "3.5–5.0 (5% w/v aqueous solution)",
+     "fa": "3.5–5.0 (محلول آبی 5٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water (about 1 in 2); slightly soluble in ethanol; freely soluble in glycerol",
+     "fa": "به‌راحتی محلول در آب (حدود 1 در 2)؛ کمی محلول در اتانول؛ به‌راحتی محلول در گلیسرول"
+    }
+   },
+   {
+    "k": {
+     "en": "Thermal behaviour",
+     "fa": "رفتار حرارتی"
+    },
+    "v": {
+     "en": "decomposes above about 150 °C, releasing sulfur dioxide",
+     "fa": "بالاتر از حدود 150 °C تجزیه شده و سولفور دی‌اکسید آزاد می‌کند"
+    }
+   },
+   {
+    "k": {
+     "en": "Sulfur dioxide content",
+     "fa": "مقدار سولفور دی‌اکسید"
+    },
+    "v": {
+     "en": "theoretical about 67% w/w; pharmacopoeial assay is expressed as Na2S2O5",
+     "fa": "مقدار نظری حدود 67٪ وزنی؛ سنجش فارماکوپه‌ای بر حسب Na2S2O5 بیان می‌شود"
+    }
+   }
+  ],
+  "stability": {
+   "en": "On exposure to air and moisture it is slowly oxidised to sodium sulfate, with loss of sulfur dioxide and disintegration of the crystals. Aqueous solutions also oxidise in air, especially on heating, and are best prepared with water purged of oxygen and filled under nitrogen. Store in a well-filled, airtight container protected from light, in a cool, dry place.",
+   "fa": "در معرض هوا و رطوبت به‌آهستگی به سدیم سولفات اکسید می‌شود و همراه با آن سولفور دی‌اکسید از دست می‌رود و کریستال‌ها خرد می‌شوند. محلول‌های آبی نیز در هوا اکسید می‌شوند، به‌ویژه هنگام گرم کردن؛ بهتر است با آب عاری از اکسیژن تهیه و زیر نیتروژن پر شوند. در ظرف پر، دربسته و محافظت‌شده از نور، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Reacts with sympathomimetics and other drugs that are ortho- or para-hydroxybenzyl alcohol derivatives to form inactive sulfonic acid derivatives. Incompatible with chloramphenicol (in some cases), cisplatin and thiamine, which it inactivates, and with phenylmercuric acetate in eye drops. Strong acids liberate sulfur dioxide. It can also react with rubber closures, which should be pre-treated.",
+   "fa": "با سمپاتومیمتیک‌ها و سایر داروهایی که مشتق اورتو یا پارا-هیدروکسی‌بنزیل الکل‌اند واکنش داده و مشتقات سولفونیک اسید غیرفعال ایجاد می‌کند. با کلرامفنیکل (در برخی موارد)، سیس‌پلاتین و تیامین (که آن را غیرفعال می‌کند) و با فنیل‌مرکوریک استات در قطره‌های چشمی ناسازگار است. اسیدهای قوی سولفور دی‌اکسید آزاد می‌کنند. با درپوش‌های لاستیکی نیز ممکن است واکنش دهد که باید پیش‌تیمار شوند."
+  },
+  "manufacture": {
+   "en": "Prepared by saturating a solution of sodium hydroxide or sodium carbonate with sulfur dioxide and crystallising the product, which separates as the metabisulfite.",
+   "fa": "از اشباع کردن محلول سدیم هیدروکسید یا سدیم کربنات با سولفور دی‌اکسید و کریستالیزه کردن محصول، که به صورت متابی‌سولفیت جدا می‌شود، تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Sulfites are oxidised to sulfate in the body and are of low systemic toxicity at the levels used, but they can cause severe hypersensitivity reactions, including bronchospasm and anaphylaxis, particularly in asthmatic patients, after oral, parenteral or inhaled exposure. A sulfite warning is required on US prescription drug labelling. JECFA has set a group ADI of 0–0.7 mg/kg body-weight, expressed as sulfur dioxide.",
+   "fa": "سولفیت‌ها در بدن به سولفات اکسید می‌شوند و در مقادیر مصرفی سمیت سیستمیک کمی دارند، ولی ممکن است به‌ویژه در بیماران آسمی، پس از مصرف خوراکی، تزریقی یا استنشاقی، واکنش‌های حساسیتی شدید از جمله برونکواسپاسم و آنافیلاکسی ایجاد کنند. درج هشدار سولفیت در برچسب داروهای نسخه‌ای در آمریکا الزامی است. JECFA ADI گروهی 0–0.7 mg/kg وزن بدن (بر حسب سولفور دی‌اکسید) تعیین کرده است."
+  },
+  "handling": {
+   "en": "May release sulfur dioxide, which irritates the eyes and respiratory tract; handle in a well-ventilated area, avoid contact with acids, and wear eye protection, gloves and, where dust or gas is generated, respiratory protection.",
+   "fa": "ممکن است سولفور دی‌اکسید آزاد کند که چشم و مجاری تنفسی را تحریک می‌کند؛ در محیط با تهویه مناسب کار کنید، از تماس با اسیدها خودداری کنید و از محافظ چشم، دستکش و در صورت ایجاد گردوغبار یا گاز، محافظ تنفسی استفاده کنید."
+  },
+  "regulatory": {
+   "en": "GRAS listed, with restrictions (not to be used in foods that are recognised sources of thiamine). Accepted as a food additive in Europe (E223). Included in the FDA Inactive Ingredient Database (IM, IV and other injections, inhalation, ophthalmic, oral, otic, rectal and topical preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "با محدودیت در فهرست GRAS قرار دارد (نباید در غذاهایی که منبع شناخته‌شده تیامین‌اند به کار رود). در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E223). در FDA Inactive Ingredient Database (تزریق IM، IV و سایر تزریق‌ها، فرآورده‌های استنشاقی، چشمی، خوراکی، گوشی، رکتال و موضعی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Potassium metabisulfite; sodium bisulfite; sodium sulfite; sodium thiosulfate.",
+   "fa": "پتاسیم متابی‌سولفیت؛ سدیم بی‌سولفیت؛ سدیم سولفیت؛ سدیم تیوسولفات."
+  },
+  "comments": {
+   "en": "Because it is consumed as it protects the drug, the residual sulfite content should be monitored on stability, and the minimum effective level used. In multidose preparations, sulfite-preservative combinations should be checked, since sulfites can inactivate some preservatives.",
+   "fa": "چون هنگام محافظت از دارو مصرف می‌شود، مقدار سولفیت باقیمانده باید در مطالعات پایداری پایش و کمترین غلظت مؤثر به کار گرفته شود. در فرآورده‌های چنددوزی باید ترکیب سولفیت با نگهدارنده بررسی شود، زیرا سولفیت‌ها ممکن است برخی نگهدارنده‌ها را غیرفعال کنند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives",
+   "jecfa"
+  ]
+ },
+ "Sodium phosphate, dibasic": {
+  "names": [
+   {
+    "ph": "JP",
+    "name": "Dibasic Sodium Phosphate Hydrate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Disodium Phosphate Dihydrate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Disodium Phosphate Dodecahydrate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Disodium Phosphate, Anhydrous"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Dibasic Sodium Phosphate"
+   }
+  ],
+  "tradeNames": "Disodium hydrogen phosphate; disodium hydrogen orthophosphate; disodium phosphate; natrii phosphas; phosphoric acid disodium salt; secondary sodium phosphate; E339(ii)",
+  "chemicalName": "Disodium hydrogen phosphate (anhydrous or as the dihydrate, heptahydrate or dodecahydrate)",
+  "formula": "Na2HPO4 (anhydrous); Na2HPO4·2H2O; Na2HPO4·7H2O; Na2HPO4·12H2O",
+  "mw": "141.96 (anhydrous); 177.99 (dihydrate); 268.07 (heptahydrate); 358.14 (dodecahydrate)",
+  "applications": {
+   "en": "Dibasic sodium phosphate is used widely as a buffering agent, usually in combination with monobasic sodium phosphate to give phosphate buffers in the pH range of about 6–8, in parenteral, ophthalmic, nasal, oral and topical preparations and in biologics. It is also used as a sequestering agent and as a source of phosphate, and it is used therapeutically as a saline laxative and phosphate supplement. Buffer concentrations are usually low (of the order of 0.1–1% w/v).",
+   "fa": "دی‌بازیک سدیم فسفات به‌طور گسترده به عنوان بافر، معمولاً همراه با منوبازیک سدیم فسفات برای تهیه بافرهای فسفات در محدوده pH حدود 6–8، در فرآورده‌های تزریقی، چشمی، بینی، خوراکی و موضعی و نیز داروهای بیولوژیک به کار می‌رود. همچنین به عنوان عامل کی‌لیت‌کننده و منبع فسفات مصرف می‌شود و از نظر درمانی به عنوان ملین نمکی و مکمل فسفات کاربرد دارد. غلظت آن در بافرها معمولاً کم (در حد 0.1–1٪ وزنی/حجمی) است."
+  },
+  "description": {
+   "en": "The anhydrous form is a white, hygroscopic powder. The dihydrate is a white or almost white crystalline powder or colourless crystals, the heptahydrate occurs as colourless crystals or a granular powder, and the dodecahydrate as colourless, transparent, strongly efflorescent crystals. All are odourless with a saline taste.",
+   "fa": "فرم بدون آب پودر سفید و رطوبت‌گیر است. دی‌هیدرات پودر کریستالی سفید یا تقریباً سفید یا کریستال‌های بی‌رنگ است، هپتاهیدرات به صورت کریستال‌های بی‌رنگ یا پودر دانه‌ای، و دودکاهیدرات به صورت کریستال‌های بی‌رنگ، شفاف و به‌شدت شکوفا (efflorescent) دیده می‌شود. همه بی‌بو و دارای طعم شورند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pKa values (phosphoric acid)",
+     "fa": "مقادیر pKa (فسفریک اسید)"
+    },
+    "v": {
+     "en": "about 2.1, 7.2 and 12.3 at 25 °C",
+     "fa": "حدود 2.1، 7.2 و 12.3 در 25 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "about 9 (1% w/v aqueous solution)",
+     "fa": "حدود 9 (محلول آبی 1٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water (more so in hot water); practically insoluble in ethanol",
+     "fa": "به‌راحتی محلول در آب (در آب گرم بیشتر)؛ عملاً نامحلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Hydrate behaviour",
+     "fa": "رفتار هیدرات‌ها"
+    },
+    "v": {
+     "en": "the dodecahydrate effloresces in air and melts at about 35 °C; the anhydrous form absorbs moisture",
+     "fa": "دودکاهیدرات در هوا شکوفا می‌شود و در حدود 35 °C ذوب می‌گردد؛ فرم بدون آب رطوبت جذب می‌کند"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically stable. The hydrates gain or lose water depending on temperature and humidity, so the water content can change on storage; heating at high temperatures converts it to sodium pyrophosphate. Aqueous solutions are stable and may be sterilised by autoclaving. Store in an airtight container in a cool, dry place.",
+   "fa": "از نظر شیمیایی پایدار است. هیدرات‌ها بسته به دما و رطوبت آب جذب یا از دست می‌دهند و مقدار آب ممکن است در طول نگهداری تغییر کند؛ حرارت دادن در دماهای بالا آن را به سدیم پیروفسفات تبدیل می‌کند. محلول‌های آبی پایدارند و می‌توان آن‌ها را با اتوکلاو استریل کرد. در ظرف دربسته در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with alkaloids, antipyrine, chloral hydrate, lead acetate, pyrogallol and resorcinol, and with calcium and magnesium salts, with which it forms insoluble phosphates (for example calcium phosphate precipitation in parenteral nutrition mixtures). Interactions between calcium, magnesium and phosphate can also lead to insoluble complexes in other formulations.",
+   "fa": "با آلکالوئیدها، آنتی‌پیرین، کلرال هیدرات، سرب استات، پیروگالول و رزورسینول، و با نمک‌های کلسیم و منیزیم ناسازگار است و با آن‌ها فسفات‌های نامحلول تشکیل می‌دهد (برای مثال رسوب کلسیم فسفات در مخلوط‌های تغذیه وریدی). برهم‌کنش کلسیم، منیزیم و فسفات در سایر فرمولاسیون‌ها نیز ممکن است به کمپلکس‌های نامحلول منجر شود."
+  },
+  "manufacture": {
+   "en": "Prepared by partial neutralisation of phosphoric acid with sodium carbonate or sodium hydroxide to the appropriate stoichiometry; the hydrates are obtained by crystallisation and the anhydrous form by drying.",
+   "fa": "از خنثی‌سازی جزئی فسفریک اسید با سدیم کربنات یا سدیم هیدروکسید به نسبت استوکیومتری مناسب تهیه می‌شود؛ هیدرات‌ها با کریستالیزاسیون و فرم بدون آب با خشک کردن به دست می‌آیند."
+  },
+  "safety": {
+   "en": "Generally regarded as non-toxic at the levels used as a buffer. Large oral doses act as an osmotic laxative, and excessive intake or administration, particularly in patients with renal impairment or in bowel-cleansing regimens, can cause hyperphosphataemia, hypocalcaemia and acute phosphate nephropathy.",
+   "fa": "در مقادیر مصرفی به عنوان بافر عموماً غیرسمی شناخته می‌شود. دوزهای خوراکی زیاد اثر ملین اسمزی دارند و مصرف یا تجویز بیش از حد، به‌ویژه در بیماران دچار اختلال کلیوی یا در رژیم‌های پاک‌سازی روده، ممکن است باعث هیپرفسفاتمی، هیپوکلسمی و نفروپاتی حاد فسفاتی شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E339). Included in the FDA Inactive Ingredient Database (injections, inhalation, nasal, ophthalmic, oral, otic, topical and vaginal preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E339). در FDA Inactive Ingredient Database (فرآورده‌های تزریقی، استنشاقی، بینی، چشمی، خوراکی، گوشی، موضعی و واژینال) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Sodium phosphate, monobasic; potassium phosphate, dibasic; trisodium phosphate.",
+   "fa": "منوبازیک سدیم فسفات؛ دی‌بازیک پتاسیم فسفات؛ تری‌سدیم فسفات."
+  },
+  "comments": {
+   "en": "Always state which hydrate is used and calculate quantities on that basis, since the dodecahydrate contains about 60% water. Phosphate buffers can crystallise selectively during freezing, causing large pH shifts in frozen and lyophilised protein formulations.",
+   "fa": "همیشه نوع هیدرات مصرفی را مشخص و مقادیر را بر همان اساس محاسبه کنید، زیرا دودکاهیدرات حدود 60٪ آب دارد. بافرهای فسفات ممکن است هنگام انجماد به‌طور انتخابی کریستالیزه شوند و در فرمولاسیون‌های پروتئینی منجمد و لیوفیلیزه تغییر pH زیادی ایجاد کنند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Sodium phosphate, monobasic": {
+  "names": [
+   {
+    "ph": "PhEur",
+    "name": "Sodium Dihydrogen Phosphate Dihydrate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Monobasic Sodium Phosphate"
+   }
+  ],
+  "tradeNames": "Acid sodium phosphate; monosodium orthophosphate; monosodium phosphate; natrii dihydrogenophosphas dihydricus; primary sodium phosphate; sodium biphosphate; sodium dihydrogen phosphate; E339(i)",
+  "chemicalName": "Sodium dihydrogen phosphate (anhydrous or as the monohydrate or dihydrate)",
+  "formula": "NaH2PO4 (anhydrous); NaH2PO4·H2O; NaH2PO4·2H2O",
+  "mw": "119.98 (anhydrous); 137.99 (monohydrate); 156.01 (dihydrate)",
+  "applications": {
+   "en": "Monobasic sodium phosphate is used as a buffering agent and acidifier, most often together with dibasic sodium phosphate, to prepare phosphate buffers for parenteral, ophthalmic, oral and topical preparations and protein formulations. It is also used as a sequestering agent, in effervescent and laxative products, and as a urinary acidifier. Typical buffer concentrations are low, of the order of 0.1–1% w/v.",
+   "fa": "منوبازیک سدیم فسفات به عنوان بافر و اسیدی‌کننده، اغلب همراه با دی‌بازیک سدیم فسفات، برای تهیه بافرهای فسفات در فرآورده‌های تزریقی، چشمی، خوراکی و موضعی و فرمولاسیون‌های پروتئینی به کار می‌رود. همچنین به عنوان عامل کی‌لیت‌کننده، در فرآورده‌های جوشان و ملین، و به عنوان اسیدی‌کننده ادرار مصرف می‌شود. غلظت معمول آن در بافرها کم و در حد 0.1–1٪ وزنی/حجمی است."
+  },
+  "description": {
+   "en": "The anhydrous form is a white, crystalline powder or granules. The monohydrate and dihydrate occur as colourless crystals or a white crystalline powder. It is odourless, slightly deliquescent and has an acidic, saline taste.",
+   "fa": "فرم بدون آب پودر یا گرانول کریستالی سفید است. مونوهیدرات و دی‌هیدرات به صورت کریستال‌های بی‌رنگ یا پودر کریستالی سفید دیده می‌شوند. بی‌بو، کمی دلیکوسنت و دارای طعم اسیدی و شور است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "about 4.1–4.5 (5% w/v aqueous solution)",
+     "fa": "حدود 4.1–4.5 (محلول آبی 5٪)"
+    }
+   },
+   {
+    "k": {
+     "en": "pKa values (phosphoric acid)",
+     "fa": "مقادیر pKa (فسفریک اسید)"
+    },
+    "v": {
+     "en": "about 2.1, 7.2 and 12.3 at 25 °C",
+     "fa": "حدود 2.1، 7.2 و 12.3 در 25 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "very soluble in water; practically insoluble in ethanol",
+     "fa": "بسیار محلول در آب؛ عملاً نامحلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Thermal behaviour",
+     "fa": "رفتار حرارتی"
+    },
+    "v": {
+     "en": "loses water of crystallisation on heating and, at higher temperatures, is converted to sodium acid pyrophosphate and then metaphosphate",
+     "fa": "با حرارت آب تبلور خود را از دست می‌دهد و در دماهای بالاتر به سدیم اسید پیروفسفات و سپس متافسفات تبدیل می‌شود"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically stable, although slightly deliquescent. Aqueous solutions are stable and can be autoclaved. Store in an airtight container in a cool, dry place.",
+   "fa": "از نظر شیمیایی پایدار است، هرچند کمی دلیکوسنت است. محلول‌های آبی پایدارند و می‌توان آن‌ها را اتوکلاو کرد. در ظرف دربسته در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with alkaline materials and carbonates; its acidic solutions cause carbonates to effervesce. Like other phosphates, it forms insoluble precipitates with calcium, magnesium, aluminium and other polyvalent metal ions.",
+   "fa": "با مواد قلیایی و کربنات‌ها ناسازگار است؛ محلول‌های اسیدی آن باعث جوشش کربنات‌ها می‌شوند. مانند سایر فسفات‌ها با یون‌های کلسیم، منیزیم، آلومینیوم و سایر فلزات چندظرفیتی رسوب نامحلول تشکیل می‌دهد."
+  },
+  "manufacture": {
+   "en": "Prepared by treating phosphoric acid with sodium carbonate or sodium hydroxide in a 1:1 molar ratio, followed by crystallisation of the required hydrate or drying to the anhydrous form.",
+   "fa": "از تیمار فسفریک اسید با سدیم کربنات یا سدیم هیدروکسید با نسبت مولی 1 به 1 و سپس کریستالیزه کردن هیدرات مورد نظر یا خشک کردن تا فرم بدون آب تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Generally regarded as non-toxic at buffer levels. Large oral doses act as a saline laxative, and excessive phosphate intake can cause hyperphosphataemia and hypocalcaemia, particularly in patients with renal impairment.",
+   "fa": "در مقادیر مصرفی در بافرها عموماً غیرسمی شناخته می‌شود. دوزهای خوراکی زیاد اثر ملین نمکی دارند و مصرف بیش از حد فسفات ممکن است، به‌ویژه در بیماران دچار اختلال کلیوی، باعث هیپرفسفاتمی و هیپوکلسمی شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E339). Included in the FDA Inactive Ingredient Database (injections, inhalation, nasal, ophthalmic, oral, otic, topical and vaginal preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E339). در FDA Inactive Ingredient Database (فرآورده‌های تزریقی، استنشاقی، بینی، چشمی، خوراکی، گوشی، موضعی و واژینال) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Sodium phosphate, dibasic; potassium phosphate, monobasic; phosphoric acid.",
+   "fa": "دی‌بازیک سدیم فسفات؛ منوبازیک پتاسیم فسفات؛ فسفریک اسید."
+  },
+  "comments": {
+   "en": "Phosphate buffers have their greatest capacity near pH 7.2, the second pKa of phosphoric acid; the ratio of monobasic to dibasic salt sets the pH and ionic strength also affects it. Specify the hydrate form used and correct quantities for water content.",
+   "fa": "بافرهای فسفات بیشترین ظرفیت را در نزدیکی pH 7.2، یعنی pKa دوم فسفریک اسید، دارند؛ نسبت نمک منوبازیک به دی‌بازیک pH را تعیین می‌کند و قدرت یونی نیز بر آن اثر دارد. نوع هیدرات مصرفی را مشخص و مقادیر را بر اساس مقدار آب اصلاح کنید."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Sodium starch glycolate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Starch Glycolate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Starch Glycolate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Starch Glycolate"
+   }
+  ],
+  "tradeNames": "Carboxymethyl starch, sodium salt; carboxymethylamylum natricum; Explotab; Glycolys; Primojel; sodium carboxymethyl starch; Vivastar P",
+  "chemicalName": "Sodium carboxymethyl ether of starch, usually cross-linked (prepared mainly from potato starch)",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Sodium starch glycolate is a 'superdisintegrant' used in oral tablets and capsules prepared by direct compression or wet granulation. Usual concentrations are 2–8% w/w, with about 4% often optimal; higher levels can slow disintegration because the swollen gel blocks further water uptake. It may be added intragranularly, extragranularly or split between the two.",
+   "fa": "سدیم استارچ گلیکولات یک «سوپر متلاشی‌کننده» است که در قرص‌ها و کپسول‌های خوراکی تهیه‌شده با پرس مستقیم یا گرانولاسیون مرطوب به کار می‌رود. غلظت معمول آن 2–8٪ وزنی است و حدود 4٪ اغلب بهینه است؛ مقادیر بیشتر ممکن است متلاشی شدن را کند کنند، زیرا ژل متورم‌شده ورود بیشتر آب را مسدود می‌کند. می‌توان آن را به صورت داخل گرانولی، خارج گرانولی یا تقسیم‌شده بین هر دو اضافه کرد."
+  },
+  "description": {
+   "en": "A white or almost white, odourless, tasteless, free-flowing, very hygroscopic powder made up of oval or spherical granules. The pharmacopoeias describe types that differ in pH and sodium content (Ph. Eur. Types A, B and C; USP–NF Types A and B).",
+   "fa": "پودر سفید یا تقریباً سفید، بی‌بو، بی‌مزه، روان و بسیار رطوبت‌گیر متشکل از گرانول‌های بیضی یا کروی. فارماکوپه‌ها انواعی را توصیف می‌کنند که از نظر pH و مقدار سدیم با هم فرق دارند (انواع A، B و C در فارماکوپه اروپا؛ انواع A و B در USP–NF)."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "Type A 5.5–7.5; Type B 3.0–5.0 (aqueous dispersion)",
+     "fa": "نوع A: 5.5–7.5؛ نوع B: 3.0–5.0 (پراکنش آبی)"
+    }
+   },
+   {
+    "k": {
+     "en": "Sodium content",
+     "fa": "مقدار سدیم"
+    },
+    "v": {
+     "en": "Type A 2.8–4.2%; Type B 2.0–3.4% (dried basis)",
+     "fa": "نوع A: 2.8–4.2٪؛ نوع B: 2.0–3.4٪ (بر پایه خشک)"
+    }
+   },
+   {
+    "k": {
+     "en": "Loss on drying",
+     "fa": "کاهش وزن در خشک کردن"
+    },
+    "v": {
+     "en": "not more than 10% w/w",
+     "fa": "حداکثر 10٪ وزنی"
+    }
+   },
+   {
+    "k": {
+     "en": "Swelling",
+     "fa": "تورم"
+    },
+    "v": {
+     "en": "swells rapidly in water to many times its original volume (up to about 300-fold) without dissolving",
+     "fa": "در آب به‌سرعت تا چندین برابر حجم اولیه (تا حدود 300 برابر) متورم می‌شود، بدون آنکه حل شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water and in most organic solvents; forms a translucent suspension in water",
+     "fa": "عملاً نامحلول در آب و بیشتر حلال‌های آلی؛ در آب سوسپانسیون نیمه‌شفاف تشکیل می‌دهد"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable, but very hygroscopic. Store in a well-closed container to protect it from wide variations in humidity and temperature, which can cause caking. Tablets containing it may harden on storage at high humidity.",
+   "fa": "پایدار ولی بسیار رطوبت‌گیر است. در ظرف کاملاً بسته نگهداری شود تا از تغییرات زیاد رطوبت و دما که باعث کلوخه شدن می‌شوند محافظت شود. قرص‌های حاوی آن ممکن است در نگهداری در رطوبت بالا سخت شوند."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with ascorbic acid. Its disintegrant efficiency can be reduced by high concentrations of hydrophobic lubricants, by some highly soluble or hygroscopic excipients, and by high compression forces. As an anionic polymer it may bind some cationic drugs.",
+   "fa": "با آسکوربیک اسید ناسازگار است. کارایی متلاشی‌کنندگی آن ممکن است با غلظت‌های زیاد لغزان‌کننده‌های آب‌گریز، برخی مواد کمکی بسیار محلول یا رطوبت‌گیر و نیروهای پرس زیاد کاهش یابد. به عنوان پلیمر آنیونی ممکن است برخی داروهای کاتیونی را به خود متصل کند."
+  },
+  "manufacture": {
+   "en": "Starch (usually potato starch) is cross-linked, either chemically (for example with sodium trimetaphosphate) or by dehydration, and then carboxymethylated by reaction with sodium monochloroacetate in an alkaline alcoholic medium. The product is neutralised with an acid such as citric acid, washed with aqueous alcohol to remove sodium chloride and glycolate by-products, and dried.",
+   "fa": "نشاسته (معمولاً نشاسته سیب‌زمینی) به روش شیمیایی (برای مثال با سدیم تری‌متافسفات) یا با آب‌زدایی کراس‌لینک می‌شود و سپس با واکنش با سدیم مونوکلرواستات در محیط الکلی قلیایی کربوکسی‌متیله می‌شود. محصول با یک اسید مانند سیتریک اسید خنثی، برای حذف سدیم کلرید و فرآورده‌های جانبی گلیکولات با الکل آبی شسته و خشک می‌شود."
+  },
+  "safety": {
+   "en": "Widely used in oral products and generally regarded as non-toxic and non-irritant. Very large oral amounts may be harmful, but such quantities are far above those used in formulations.",
+   "fa": "در فرآورده‌های خوراکی به‌طور گسترده مصرف می‌شود و عموماً غیرسمی و غیرمحرک شناخته می‌شود. مقادیر خوراکی بسیار زیاد ممکن است زیان‌آور باشد، ولی چنین مقادیری بسیار بیشتر از مقادیر مصرفی در فرمولاسیون‌هاست."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid dust generation; eye protection, gloves and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد گردوغبار خودداری شود؛ محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Croscarmellose sodium; crospovidone; pregelatinised starch; starch.",
+   "fa": "کروس‌کارملوز سدیم؛ کراس‌پوویدون؛ نشاسته پیش‌ژلاتینه؛ نشاسته."
+  },
+  "comments": {
+   "en": "Its rapid swelling with little gel formation makes it effective at low levels, but performance varies with degree of substitution, cross-linking and particle size, so the source and grade should be specified. It is less affected by wet granulation than many disintegrants, though some loss of efficiency can occur.",
+   "fa": "تورم سریع آن همراه با تشکیل ژل کم باعث می‌شود در غلظت‌های پایین مؤثر باشد، ولی عملکرد آن با درجه جانشینی، میزان کراس‌لینک و اندازه ذره تغییر می‌کند؛ بنابراین منبع و گرید باید مشخص شود. نسبت به بسیاری از متلاشی‌کننده‌ها کمتر تحت تأثیر گرانولاسیون مرطوب قرار می‌گیرد، هرچند ممکن است مقداری از کارایی آن کم شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Sodium stearyl fumarate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Stearyl Fumarate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Stearyl Fumarate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Stearyl Fumarate"
+   }
+  ],
+  "tradeNames": "Fumaric acid octadecyl ester sodium salt; natrii stearylis fumaras; sodium monostearyl fumarate; Lubripharm; Pruv",
+  "chemicalName": "Sodium (E)-4-octadecoxy-4-oxobut-2-enoate (monosodium octadecyl fumarate)",
+  "formula": "C22H39NaO4",
+  "mw": "390.5",
+  "applications": {
+   "en": "Used as a tablet and capsule lubricant at about 0.5–2.0% w/w. It is chosen in place of magnesium stearate when that lubricant is incompatible with the drug, slows dissolution or gives soft tablets, as it is less hydrophobic and less sensitive to over-blending. It is also used in effervescent and orally disintegrating tablets, and in some food applications.",
+   "fa": "به عنوان لغزان‌کننده قرص و کپسول در غلظت حدود 0.5–2.0٪ وزنی به کار می‌رود. در مواردی که منیزیم استئارات با دارو ناسازگار است، انحلال را کند می‌کند یا قرص نرم می‌دهد، به جای آن انتخاب می‌شود، زیرا آب‌گریزی کمتری دارد و به اختلاط بیش از حد حساسیت کمتری نشان می‌دهد. در قرص‌های جوشان و قرص‌های بازشونده در دهان و برخی کاربردهای غذایی نیز مصرف می‌شود."
+  },
+  "description": {
+   "en": "A fine, white powder with agglomerates of flat, circular particles. Pharmacopoeial material limits the related impurities sodium stearyl maleate and stearyl alcohol.",
+   "fa": "پودر ریز و سفید متشکل از توده‌هایی از ذرات مسطح و دایره‌ای. در ماده فارماکوپه‌ای، ناخالصی‌های مرتبط سدیم استئاریل مالئات و استئاریل الکل محدود شده‌اند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "about 224–245 °C, with decomposition",
+     "fa": "حدود 224–245 °C همراه با تجزیه"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water, acetone and ethanol; slightly soluble in methanol",
+     "fa": "عملاً نامحلول در آب، استون و اتانول؛ کمی محلول در متانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Sodium stearyl maleate",
+     "fa": "سدیم استئاریل مالئات"
+    },
+    "v": {
+     "en": "not more than 0.25% (Ph. Eur.)",
+     "fa": "حداکثر 0.25٪ (فارماکوپه اروپا)"
+    }
+   },
+   {
+    "k": {
+     "en": "Stearyl alcohol",
+     "fa": "استئاریل الکل"
+    },
+    "v": {
+     "en": "not more than 0.5% (Ph. Eur.)",
+     "fa": "حداکثر 0.5٪ (فارماکوپه اروپا)"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable when stored in a well-closed container in a cool, dry place.",
+   "fa": "در صورت نگهداری در ظرف کاملاً بسته، در جای خنک و خشک پایدار است."
+  },
+  "incompatibilities": {
+   "en": "It has been reported to be incompatible with chlorhexidine acetate. As an ester, it may react with strongly basic or nucleophilic drugs under adverse conditions.",
+   "fa": "ناسازگاری آن با کلرهگزیدین استات گزارش شده است. به عنوان یک استر ممکن است در شرایط نامناسب با داروهای به‌شدت بازی یا نوکلئوفیل واکنش دهد."
+  },
+  "manufacture": {
+   "en": "Prepared by reacting stearyl alcohol with maleic anhydride to give the monoester, which is isomerised to the fumarate and then converted to the sodium salt.",
+   "fa": "از واکنش استئاریل الکل با مالئیک انیدرید و تشکیل مونواستر، ایزومریزه کردن آن به فومارات و سپس تبدیل به نمک سدیم تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Partly absorbed and hydrolysed to stearyl alcohol and fumaric acid, which are metabolised; the unabsorbed portion is excreted in the faeces. It is regarded as non-toxic at the levels used.",
+   "fa": "بخشی از آن جذب و به استئاریل الکل و فوماریک اسید هیدرولیز می‌شود که متابولیزه می‌شوند؛ بخش جذب‌نشده از راه مدفوع دفع می‌شود. در مقادیر مصرفی غیرسمی شناخته می‌شود."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Avoid inhaling the dust; eye protection, gloves and a dust mask are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از استنشاق گردوغبار آن خودداری شود؛ محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Permitted as a direct food additive in the USA for specified uses. Included in the FDA Inactive Ingredient Database (oral capsules and tablets) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در آمریکا به عنوان افزودنی مستقیم غذایی برای مصارف مشخص مجاز است. در FDA Inactive Ingredient Database (کپسول و قرص خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Magnesium stearate; glyceryl behenate; stearic acid; sodium lauryl sulfate.",
+   "fa": "منیزیم استئارات؛ گلیسریل بهنات؛ استئاریک اسید؛ سدیم لوریل سولفات."
+  },
+  "comments": {
+   "en": "Compared with magnesium stearate it usually gives harder tablets, faster dissolution and less dependence on blending time, though a slightly higher concentration may be needed for equivalent lubrication. It is a useful option for drugs that interact with stearate salts.",
+   "fa": "در مقایسه با منیزیم استئارات معمولاً قرص‌های سخت‌تر، انحلال سریع‌تر و وابستگی کمتر به زمان اختلاط می‌دهد، هرچند ممکن است برای لغزندگی معادل، غلظت کمی بیشتری لازم باشد. برای داروهایی که با نمک‌های استئارات برهم‌کنش دارند گزینه مناسبی است."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid"
+  ]
+ },
+ "Sodium sulfite": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Anhydrous Sodium Sulfite"
+   },
+   {
+    "ph": "JP",
+    "name": "Dried Sodium Sulfite"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Sulfite, Anhydrous"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Sulfite Heptahydrate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Sulfite"
+   }
+  ],
+  "tradeNames": "Disodium sulfite; exsiccated sodium sulfite; natrii sulfis anhydricus; sulfurous acid disodium salt; E221",
+  "chemicalName": "Disodium sulfite",
+  "formula": "Na2SO3 (anhydrous); Na2SO3·7H2O (heptahydrate)",
+  "mw": "126.04 (anhydrous); 252.15 (heptahydrate)",
+  "applications": {
+   "en": "Sodium sulfite is used as an antioxidant in neutral or alkaline oral, parenteral and topical preparations, at low concentrations of the same order as other sulfites (typically about 0.01–0.1% w/v). In acidic formulations sodium metabisulfite or bisulfite is used instead. It is also used as a preservative and antioxidant in foods.",
+   "fa": "سدیم سولفیت به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی خنثی یا قلیایی، در غلظت‌های کم و هم‌اندازه سایر سولفیت‌ها (معمولاً حدود 0.01–0.1٪ وزنی/حجمی) به کار می‌رود. در فرمولاسیون‌های اسیدی به جای آن از سدیم متابی‌سولفیت یا بی‌سولفیت استفاده می‌شود. در مواد غذایی نیز به عنوان نگهدارنده و آنتی‌اکسیدان مصرف می‌شود."
+  },
+  "description": {
+   "en": "The anhydrous form is a white, odourless powder; the heptahydrate occurs as colourless crystals, which effloresce in dry air and oxidise readily.",
+   "fa": "فرم بدون آب پودر سفید و بی‌بو است؛ هپتاهیدرات به صورت کریستال‌های بی‌رنگ است که در هوای خشک شکوفا می‌شوند و به‌آسانی اکسید می‌گردند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "freely soluble in water; very slightly soluble in ethanol",
+     "fa": "به‌راحتی محلول در آب؛ بسیار کم محلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "aqueous solutions are alkaline (about pH 9–10)",
+     "fa": "محلول‌های آبی قلیایی‌اند (حدود pH 9–10)"
+    }
+   },
+   {
+    "k": {
+     "en": "Effective pH range",
+     "fa": "محدوده pH مؤثر"
+    },
+    "v": {
+     "en": "used at neutral to alkaline pH",
+     "fa": "در pH خنثی تا قلیایی به کار می‌رود"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Sodium sulfite is gradually oxidised to sodium sulfate by air, more rapidly in moist conditions and in solution; the heptahydrate is less stable than the anhydrous form. Store in a well-filled, airtight container in a cool, dry place.",
+   "fa": "سدیم سولفیت به‌تدریج توسط هوا به سدیم سولفات اکسید می‌شود و این فرایند در شرایط مرطوب و در محلول سریع‌تر است؛ هپتاهیدرات از فرم بدون آب ناپایدارتر است. در ظرف پر و دربسته در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Shares the incompatibilities of the other sulfites: it reacts with drugs containing ortho- or para-hydroxybenzyl alcohol groups, with aldehydes and ketones, and inactivates thiamine. Acids release sulfur dioxide, and it is incompatible with oxidising agents and heavy metal salts.",
+   "fa": "ناسازگاری‌های سایر سولفیت‌ها را دارد: با داروهای دارای گروه اورتو یا پارا-هیدروکسی‌بنزیل الکل و با آلدهیدها و کتون‌ها واکنش می‌دهد و تیامین را غیرفعال می‌کند. اسیدها سولفور دی‌اکسید آزاد می‌کنند و با اکسیدکننده‌ها و نمک‌های فلزات سنگین ناسازگار است."
+  },
+  "manufacture": {
+   "en": "Made by reacting sulfur dioxide with sodium carbonate or sodium hydroxide solution in the appropriate proportion; the anhydrous salt is obtained by crystallisation above about 33 °C or by drying the heptahydrate.",
+   "fa": "از واکنش سولفور دی‌اکسید با محلول سدیم کربنات یا سدیم هیدروکسید به نسبت مناسب تهیه می‌شود؛ نمک بدون آب از کریستالیزاسیون در دمای بالاتر از حدود 33 °C یا خشک کردن هپتاهیدرات به دست می‌آید."
+  },
+  "safety": {
+   "en": "Low systemic toxicity at antioxidant levels, but as with all sulfites, hypersensitivity reactions including bronchospasm and anaphylaxis can occur, particularly in asthmatic patients. JECFA has set a group ADI of 0–0.7 mg/kg body-weight, expressed as sulfur dioxide.",
+   "fa": "در غلظت‌های مصرفی به عنوان آنتی‌اکسیدان سمیت سیستمیک کمی دارد، ولی مانند همه سولفیت‌ها ممکن است واکنش‌های حساسیتی از جمله برونکواسپاسم و آنافیلاکسی، به‌ویژه در بیماران آسمی، ایجاد کند. JECFA ADI گروهی 0–0.7 mg/kg وزن بدن (بر حسب سولفور دی‌اکسید) تعیین کرده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed, with the restrictions that apply to sulfites. Accepted as a food additive in Europe (E221). Included in the FDA Inactive Ingredient Database (injections, oral and topical preparations) and in medicines licensed in Europe.",
+   "fa": "با محدودیت‌های مربوط به سولفیت‌ها در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E221). در FDA Inactive Ingredient Database (فرآورده‌های تزریقی، خوراکی و موضعی) و در داروهای مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Sodium bisulfite; sodium metabisulfite; potassium metabisulfite.",
+   "fa": "سدیم بی‌سولفیت؛ سدیم متابی‌سولفیت؛ پتاسیم متابی‌سولفیت."
+  },
+  "comments": {
+   "en": "Specify whether the anhydrous form or the heptahydrate is used, as the heptahydrate contains about half its weight as water. Products containing any sulfite require the appropriate sulfite warning in the labelling of some markets.",
+   "fa": "مشخص کنید که فرم بدون آب یا هپتاهیدرات مصرف می‌شود، زیرا هپتاهیدرات حدود نیمی از وزن خود آب دارد. فرآورده‌های حاوی هر نوع سولفیت در برخی بازارها باید هشدار مربوط به سولفیت را روی برچسب داشته باشند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives",
+   "jecfa"
+  ]
+ },
+ "Sodium thiosulfate": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sodium Thiosulfate"
+   },
+   {
+    "ph": "JP",
+    "name": "Sodium Thiosulfate Hydrate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sodium Thiosulfate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sodium Thiosulfate"
+   }
+  ],
+  "tradeNames": "Disodium thiosulfate pentahydrate; hypo; natrii thiosulfas; sodium hyposulfite; thiosulfuric acid disodium salt",
+  "chemicalName": "Disodium thiosulfate pentahydrate",
+  "formula": "Na2S2O3·5H2O (pentahydrate); Na2S2O3 (anhydrous)",
+  "mw": "248.17 (pentahydrate); 158.11 (anhydrous)",
+  "applications": {
+   "en": "As an excipient, sodium thiosulfate is used as an antioxidant and reducing agent in some injections and other preparations, generally at low concentrations. It is better known as an active ingredient: intravenously as an antidote in cyanide poisoning (with sodium nitrite) and to reduce cisplatin-induced ototoxicity, topically for pityriasis versicolor, and in analytical and antiseptic practice to neutralise iodine and chlorine.",
+   "fa": "سدیم تیوسولفات به عنوان ماده کمکی، به عنوان آنتی‌اکسیدان و عامل احیاکننده در برخی فرآورده‌های تزریقی و سایر فرآورده‌ها، معمولاً در غلظت‌های کم، به کار می‌رود. بیشتر به عنوان ماده مؤثر شناخته می‌شود: به صورت داخل وریدی به عنوان پادزهر در مسمومیت با سیانید (همراه با سدیم نیتریت) و برای کاهش سمیت گوشی ناشی از سیس‌پلاتین، به صورت موضعی برای پیتیریازیس ورسیکالر، و در کارهای آزمایشگاهی و ضدعفونی برای خنثی کردن ید و کلر."
+  },
+  "description": {
+   "en": "Large, colourless, transparent crystals or a coarse crystalline powder, odourless, with a cooling and slightly bitter, saline taste. The crystals effloresce in warm, dry air and are slightly deliquescent in moist air.",
+   "fa": "کریستال‌های درشت، بی‌رنگ و شفاف یا پودر کریستالی درشت، بی‌بو با طعم خنک و کمی تلخ و شور. کریستال‌ها در هوای گرم و خشک شکوفا و در هوای مرطوب کمی دلیکوسنت می‌شوند."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "the pentahydrate melts in its water of crystallisation at about 48 °C and loses it at about 100 °C",
+     "fa": "پنتاهیدرات در حدود 48 °C در آب تبلور خود ذوب می‌شود و در حدود 100 °C آن را از دست می‌دهد"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "very soluble in water; practically insoluble in ethanol",
+     "fa": "بسیار محلول در آب؛ عملاً نامحلول در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "pH",
+     "fa": "pH"
+    },
+    "v": {
+     "en": "aqueous solutions are approximately neutral to slightly alkaline",
+     "fa": "محلول‌های آبی تقریباً خنثی تا کمی قلیایی‌اند"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Stable in the solid state when stored in an airtight container. Aqueous solutions decompose slowly, especially if acidic, with deposition of sulfur; they are stabilised by a small amount of alkali and can be sterilised by autoclaving.",
+   "fa": "در حالت جامد در ظرف دربسته پایدار است. محلول‌های آبی، به‌ویژه در شرایط اسیدی، به‌آهستگی تجزیه و گوگرد رسوب می‌دهند؛ مقدار کمی قلیا آن‌ها را پایدار می‌کند و می‌توان آن‌ها را با اتوکلاو استریل کرد."
+  },
+  "incompatibilities": {
+   "en": "Decomposed by acids with liberation of sulfur dioxide and precipitation of sulfur. Incompatible with oxidising agents, iodine (which it reduces) and salts of heavy metals such as lead, mercury and silver, with which it forms complexes or precipitates.",
+   "fa": "توسط اسیدها تجزیه و همراه با آزاد شدن سولفور دی‌اکسید، گوگرد رسوب می‌کند. با اکسیدکننده‌ها، ید (که آن را احیا می‌کند) و نمک‌های فلزات سنگین مانند سرب، جیوه و نقره ناسازگار است و با آن‌ها کمپلکس یا رسوب تشکیل می‌دهد."
+  },
+  "manufacture": {
+   "en": "Prepared by boiling a solution of sodium sulfite with sulfur, or as a by-product of sulfide dye and sulfur-removal processes, and purified by crystallisation of the pentahydrate.",
+   "fa": "از جوشاندن محلول سدیم سولفیت با گوگرد یا به عنوان فرآورده جانبی فرآیندهای رنگ‌های سولفیدی و گوگردزدایی تهیه و با کریستالیزه کردن پنتاهیدرات خالص‌سازی می‌شود."
+  },
+  "safety": {
+   "en": "Of low toxicity; it is poorly absorbed orally and acts as an osmotic laxative in large doses. Intravenous use in high doses can cause hypotension, nausea, vomiting and osmotic effects, but excipient levels are not associated with significant toxicity.",
+   "fa": "سمیت کمی دارد؛ از راه خوراکی جذب کمی دارد و در دوزهای زیاد اثر ملین اسمزی دارد. مصرف داخل وریدی در دوزهای زیاد ممکن است باعث افت فشار خون، تهوع، استفراغ و اثرات اسمزی شود، ولی مقادیر مصرفی به عنوان ماده کمکی با سمیت قابل توجهی همراه نیست."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Included in the FDA Inactive Ingredient Database (injections and other preparations) and in medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در FDA Inactive Ingredient Database (فرآورده‌های تزریقی و سایر فرآورده‌ها) و در داروهای مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Sodium metabisulfite; sodium sulfite; sodium formaldehyde sulfoxylate.",
+   "fa": "سدیم متابی‌سولفیت؛ سدیم سولفیت؛ سدیم فرمالدهید سولفوکسیلات."
+  },
+  "comments": {
+   "en": "Keep solutions at neutral to slightly alkaline pH to prevent sulfur deposition. The pentahydrate contains about 36% water, which must be allowed for when the anhydrous equivalent is specified.",
+   "fa": "برای جلوگیری از رسوب گوگرد، pH محلول‌ها را خنثی تا کمی قلیایی نگه دارید. پنتاهیدرات حدود 36٪ آب دارد که هنگام تعیین مقدار معادل بدون آب باید در نظر گرفته شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras"
+  ]
+ },
+ "Sorbic acid": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sorbic Acid"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sorbic Acid"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sorbic Acid"
+   }
+  ],
+  "tradeNames": "Acidum sorbicum; (E,E)-hexa-2,4-dienoic acid; 2-propenylacrylic acid; 2,4-hexadienoic acid; E200",
+  "chemicalName": "(2E,4E)-Hexa-2,4-dienoic acid",
+  "formula": "C6H8O2",
+  "mw": "112.13",
+  "applications": {
+   "en": "Sorbic acid is an antimicrobial preservative, with antibacterial and particularly antifungal activity, used in oral and topical pharmaceuticals and in cosmetics and foods, at concentrations of about 0.05–0.2%. Its activity depends on the undissociated acid, so it is effective up to about pH 6 and best below pH 5. It is often combined with other preservatives or glycols, which have a synergistic effect.",
+   "fa": "سوربیک اسید یک نگهدارنده ضدمیکروبی با اثر ضدباکتریایی و به‌ویژه ضدقارچی است که در داروهای خوراکی و موضعی، فرآورده‌های آرایشی و مواد غذایی در غلظت حدود 0.05–0.2٪ به کار می‌رود. اثر آن به اسید تفکیک‌نشده وابسته است؛ بنابراین تا حدود pH 6 مؤثر است و بهترین اثر را در pH کمتر از 5 دارد. اغلب همراه با سایر نگهدارنده‌ها یا گلیکول‌ها که اثر هم‌افزا دارند مصرف می‌شود."
+  },
+  "description": {
+   "en": "A free-flowing, white crystalline powder with a faint characteristic odour.",
+   "fa": "پودر کریستالی سفید و روان با بوی ضعیف و مشخص."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "pKa",
+     "fa": "pKa"
+    },
+    "v": {
+     "en": "4.76 at 25 °C",
+     "fa": "4.76 در 25 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "132–135 °C",
+     "fa": "132–135 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Boiling point",
+     "fa": "نقطه جوش"
+    },
+    "v": {
+     "en": "about 228 °C, with decomposition",
+     "fa": "حدود 228 °C همراه با تجزیه"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "slightly soluble in water; freely soluble in ethanol; soluble in propylene glycol and in fixed oils to a limited extent",
+     "fa": "کمی محلول در آب؛ به‌راحتی محلول در اتانول؛ تا حدی محلول در پروپیلن گلیکول و روغن‌های ثابت"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Sensitive to oxidation, especially in aqueous solution and in the presence of light; oxidation causes discoloration and loss of activity, and is accelerated by heat and by some metal ions. Antioxidants and protection from light improve stability. Store the solid in a well-closed container, protected from light, at a temperature not exceeding about 40 °C.",
+   "fa": "به اکسیداسیون حساس است، به‌ویژه در محلول آبی و در حضور نور؛ اکسیداسیون باعث تغییر رنگ و از دست رفتن فعالیت می‌شود و با حرارت و برخی یون‌های فلزی تسریع می‌گردد. آنتی‌اکسیدان‌ها و محافظت از نور پایداری را بهبود می‌دهند. ماده جامد را در ظرف کاملاً بسته، محافظت‌شده از نور و در دمای حداکثر حدود 40 °C نگهداری کنید."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with bases, oxidising agents and reducing agents. Some loss of antimicrobial activity occurs with nonionic surfactants and through sorption into plastics,.",
+   "fa": "با بازها، اکسیدکننده‌ها و احیاکننده‌ها ناسازگار است. با سورفکتانت‌های غیریونی و در اثر جذب در پلاستیک‌ها بخشی از فعالیت ضدمیکروبی از دست می‌رود."
+  },
+  "manufacture": {
+   "en": "Produced commercially by condensation of crotonaldehyde with ketene to give a polyester, which is then hydrolysed to sorbic acid. It occurs naturally in rowan (mountain ash) berries.",
+   "fa": "در صنعت از تراکم کروتون‌آلدهید با کتن و تشکیل پلی‌استر و سپس هیدرولیز آن به سوربیک اسید تولید می‌شود. به طور طبیعی در میوه درخت بارانک (rowan) وجود دارد."
+  },
+  "safety": {
+   "en": "Sorbic acid is metabolised like other fatty acids and has low systemic toxicity. It may cause skin irritation and, occasionally, allergic or non-immunological contact urticaria and dermatitis when applied topically. JECFA has set a group ADI of 0–25 mg/kg body-weight for sorbic acid and its salts.",
+   "fa": "سوربیک اسید مانند سایر اسیدهای چرب متابولیزه می‌شود و سمیت سیستمیک کمی دارد. در مصرف موضعی ممکن است باعث تحریک پوست و گاهی کهیر و درماتیت تماسی آلرژیک یا غیرایمنولوژیک شود. JECFA برای سوربیک اسید و نمک‌های آن ADI گروهی 0–25 mg/kg وزن بدن تعیین کرده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. The dust is irritant to the eyes, skin and respiratory tract; wear eye protection, gloves and a dust mask.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. گردوغبار آن برای چشم، پوست و مجاری تنفسی محرک است؛ از محافظ چشم، دستکش و ماسک گردوغبار استفاده کنید."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E200). Included in the FDA Inactive Ingredient Database (oral capsules, solutions, syrups and tablets; topical and vaginal preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E200). در FDA Inactive Ingredient Database (کپسول، محلول، شربت و قرص خوراکی؛ فرآورده‌های موضعی و واژینال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Potassium sorbate; calcium sorbate; benzoic acid; sodium benzoate.",
+   "fa": "پتاسیم سوربات؛ کلسیم سوربات؛ بنزوئیک اسید؛ سدیم بنزوات."
+  },
+  "comments": {
+   "en": "Because sorbic acid dissolves slowly and poorly in water, the more soluble potassium sorbate is often used and the pH then adjusted to form the active acid in situ. Check preservative content during stability studies, since oxidative loss can be significant.",
+   "fa": "چون سوربیک اسید به‌آهستگی و به مقدار کم در آب حل می‌شود، اغلب از پتاسیم سوربات که محلول‌تر است استفاده و سپس pH تنظیم می‌شود تا اسید فعال درجا تشکیل شود. مقدار نگهدارنده را در مطالعات پایداری بررسی کنید، زیرا کاهش اکسیداتیو آن ممکن است قابل توجه باشد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "gras",
+   "eu-additives",
+   "jecfa"
+  ]
+ },
+ "Sorbitan monolaurate (Span 20)": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sorbitan Laurate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sorbitan Laurate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sorbitan Monolaurate"
+   }
+  ],
+  "tradeNames": "Sorbitan laurate; sorbitani lauras; Span 20; Arlacel 20; Crill 1; E493",
+  "chemicalName": "Sorbitan monododecanoate (partial esters of sorbitol and its mono- and dianhydrides with lauric acid)",
+  "formula": "C18H34O6",
+  "mw": "346.5",
+  "applications": {
+   "en": "A lipophilic nonionic surfactant used as an emulsifier, solubiliser and wetting agent in creams, emulsions and ointments for topical use, and in oral and other preparations. Of the sorbitan esters it is the most hydrophilic and is often combined with polysorbates to obtain the required HLB. Typical concentrations: emulsifier used alone in water-in-oil emulsions 1–15%; in combination with hydrophilic emulsifiers in oil-in-water emulsions 1–10%; to increase the water-holding capacity of ointments 1–10%; solubiliser for poorly soluble actives in lipophilic bases 1–10%; wetting agent for insoluble actives in lipophilic bases 0.1–3%.",
+   "fa": "یک سورفکتانت غیریونی چربی‌دوست که به عنوان امولسیون‌کننده، حل‌کننده و عامل مرطوب‌کننده در کرم‌ها، امولسیون‌ها و پمادهای موضعی و نیز در فرآورده‌های خوراکی و سایر فرآورده‌ها به کار می‌رود. در میان استرهای سوربیتان آب‌دوست‌ترین است و اغلب برای رسیدن به HLB مورد نیاز با پلی‌سوربات‌ها ترکیب می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های آب در روغن 1–15٪؛ همراه با امولسیون‌کننده‌های آب‌دوست در امولسیون‌های روغن در آب 1–10٪؛ افزایش ظرفیت نگهداری آب پمادها 1–10٪؛ حل‌کننده مواد مؤثر کم‌محلول در پایه‌های چربی‌دوست 1–10٪؛ عامل مرطوب‌کننده برای مواد مؤثر نامحلول در پایه‌های چربی‌دوست 0.1–3٪."
+  },
+  "description": {
+   "en": "A yellow to amber, viscous oily liquid with a faint characteristic odour and a bland taste. It is a mixture of esters of lauric acid with sorbitol anhydrides, the main component being sorbitan monolaurate.",
+   "fa": "مایع روغنی ویسکوز زرد تا کهربایی با بوی ضعیف و مشخص و طعم ملایم. مخلوطی از استرهای لوریک اسید با انیدریدهای سوربیتول است که جزء اصلی آن سوربیتان مونولورات است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "8.6",
+     "fa": "8.6"
+    }
+   },
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "viscous liquid at room temperature",
+     "fa": "مایع ویسکوز در دمای اتاق"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "insoluble but dispersible in water; soluble or dispersible in mineral and vegetable oils and in ethanol",
+     "fa": "نامحلول ولی قابل پراکنش در آب؛ محلول یا قابل پراکنش در روغن‌های معدنی و گیاهی و در اتانول"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 1.0 g/cm³",
+     "fa": "حدود 1.0 g/cm³"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Gradual soap formation occurs with strong acids or bases; the esters are stable in weak acids and bases. Store in a well-closed container in a cool, dry place.",
+   "fa": "در حضور اسیدها یا بازهای قوی به‌تدریج صابون تشکیل می‌شود؛ این استرها در اسیدها و بازهای ضعیف پایدارند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. Like other nonionic surfactants, it may reduce the activity of some preservatives such as parabens.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. مانند سایر سورفکتانت‌های غیریونی ممکن است فعالیت برخی نگهدارنده‌ها مانند پارابن‌ها را کاهش دهد."
+  },
+  "manufacture": {
+   "en": "Prepared by dehydration of sorbitol to sorbitan (a mixture of cyclic anhydrides) followed by esterification with lauric acid, or by a one-step reaction of sorbitol and lauric acid at high temperature with a catalyst.",
+   "fa": "از آب‌زدایی سوربیتول به سوربیتان (مخلوطی از انیدریدهای حلقوی) و سپس استری کردن با لوریک اسید، یا با واکنش یک‌مرحله‌ای سوربیتول و لوریک اسید در دمای بالا و در حضور کاتالیزور تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Sorbitan esters are widely used in cosmetics, foods and oral and topical pharmaceuticals and are generally regarded as non-toxic and non-irritant, although hypersensitivity skin reactions have occasionally been reported after topical use.",
+   "fa": "استرهای سوربیتان به‌طور گسترده در فرآورده‌های آرایشی، مواد غذایی و داروهای خوراکی و موضعی مصرف می‌شوند و عموماً غیرسمی و غیرمحرک شناخته می‌شوند، هرچند گاهی واکنش‌های حساسیتی پوستی پس از مصرف موضعی گزارش شده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E493). Included in the FDA Inactive Ingredient Database (oral and topical preparations) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E493). در FDA Inactive Ingredient Database (فرآورده‌های خوراکی و موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Polysorbate 20; sorbitan monooleate (Span 80); sorbitan monostearate (Span 60); sorbitan trioleate.",
+   "fa": "پلی‌سوربات 20؛ سوربیتان مونواولئات (Span 80)؛ سوربیتان مونواستئارات (Span 60)؛ سوربیتان تری‌اولئات."
+  },
+  "comments": {
+   "en": "Blending a sorbitan ester with its corresponding polysorbate allows the HLB to be matched to the oil phase; for example, mixtures of Span 20 and polysorbate 20 cover an HLB range of about 8.6–16.7. Commercial products vary in fatty-acid and ester distribution, so specify the grade.",
+   "fa": "مخلوط کردن یک استر سوربیتان با پلی‌سوربات متناظر آن امکان تطبیق HLB با فاز روغنی را فراهم می‌کند؛ برای مثال، مخلوط‌های Span 20 و پلی‌سوربات 20 محدوده HLB حدود 8.6–16.7 را پوشش می‌دهند. محصولات تجاری از نظر توزیع اسیدهای چرب و استرها متفاوت‌اند؛ بنابراین گرید را مشخص کنید."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "eu-additives"
+  ]
+ },
+ "Sorbitan monooleate (Span 80)": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sorbitan Oleate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sorbitan Oleate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sorbitan Monooleate"
+   }
+  ],
+  "tradeNames": "Sorbitan oleate; sorbitani oleas; Span 80; Arlacel 80; Crill 4; E494",
+  "chemicalName": "Sorbitan mono-(9Z)-octadecenoate (partial esters of sorbitol and its mono- and dianhydrides with oleic acid)",
+  "formula": "C24H44O6",
+  "mw": "428.6",
+  "applications": {
+   "en": "A lipophilic nonionic surfactant widely used as a water-in-oil emulsifier and as a co-emulsifier with polysorbates (particularly polysorbate 80) in oil-in-water creams, lotions and ointments, and as a dispersing and wetting agent in oral and other preparations. It is also used to prepare microemulsions, niosomes and other lipid-based delivery systems. Typical concentrations: emulsifier used alone in water-in-oil emulsions 1–15%; in combination with hydrophilic emulsifiers in oil-in-water emulsions 1–10%; to increase the water-holding capacity of ointments 1–10%; solubiliser for poorly soluble actives in lipophilic bases 1–10%; wetting agent for insoluble actives in lipophilic bases 0.1–3%.",
+   "fa": "یک سورفکتانت غیریونی چربی‌دوست که به‌طور گسترده به عنوان امولسیون‌کننده آب در روغن و به عنوان امولسیون‌کننده کمکی همراه با پلی‌سوربات‌ها (به‌ویژه پلی‌سوربات 80) در کرم‌ها، لوسیون‌ها و پمادهای روغن در آب، و به عنوان عامل پراکنده‌ساز و مرطوب‌کننده در فرآورده‌های خوراکی و سایر فرآورده‌ها به کار می‌رود. در تهیه میکروامولسیون‌ها، نیوزوم‌ها و سایر سیستم‌های دارورسانی بر پایه لیپید نیز مصرف می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های آب در روغن 1–15٪؛ همراه با امولسیون‌کننده‌های آب‌دوست در امولسیون‌های روغن در آب 1–10٪؛ افزایش ظرفیت نگهداری آب پمادها 1–10٪؛ حل‌کننده مواد مؤثر کم‌محلول در پایه‌های چربی‌دوست 1–10٪؛ عامل مرطوب‌کننده برای مواد مؤثر نامحلول در پایه‌های چربی‌دوست 0.1–3٪."
+  },
+  "description": {
+   "en": "A yellow to amber, viscous oily liquid with a characteristic odour and a bland taste. It is a mixture of esters of oleic acid (with smaller amounts of other fatty acids) with sorbitol anhydrides.",
+   "fa": "مایع روغنی ویسکوز زرد تا کهربایی با بوی مشخص و طعم ملایم. مخلوطی از استرهای اولئیک اسید (همراه با مقادیر کمتری از سایر اسیدهای چرب) با انیدریدهای سوربیتول است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "4.3",
+     "fa": "4.3"
+    }
+   },
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "viscous liquid at room temperature",
+     "fa": "مایع ویسکوز در دمای اتاق"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "insoluble but dispersible in water; soluble in most mineral and vegetable oils; slightly soluble in ether",
+     "fa": "نامحلول ولی قابل پراکنش در آب؛ محلول در بیشتر روغن‌های معدنی و گیاهی؛ کمی محلول در اتر"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 1.0 g/cm³",
+     "fa": "حدود 1.0 g/cm³"
+    }
+   }
+  ],
+  "stability": {
+   "en": "As for other sorbitan esters, soap formation occurs gradually with strong acids or bases, and the unsaturated oleate chain can undergo slow oxidation. Store in a well-closed container in a cool, dry place, protected from light.",
+   "fa": "مانند سایر استرهای سوربیتان، در حضور اسیدها یا بازهای قوی به‌تدریج صابون تشکیل می‌شود و زنجیر غیراشباع اولئات ممکن است به‌آهستگی اکسید شود. در ظرف کاملاً بسته، در جای خنک و خشک و محافظت‌شده از نور نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. Like other nonionic surfactants, it may reduce the activity of some preservatives such as parabens.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. مانند سایر سورفکتانت‌های غیریونی ممکن است فعالیت برخی نگهدارنده‌ها مانند پارابن‌ها را کاهش دهد."
+  },
+  "manufacture": {
+   "en": "Prepared by dehydration of sorbitol to sorbitan followed by esterification with oleic acid, or by direct reaction of sorbitol with oleic acid at high temperature in the presence of a catalyst.",
+   "fa": "از آب‌زدایی سوربیتول به سوربیتان و سپس استری کردن با اولئیک اسید، یا با واکنش مستقیم سوربیتول با اولئیک اسید در دمای بالا و در حضور کاتالیزور تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Sorbitan esters are widely used in cosmetics, foods and oral and topical pharmaceuticals and are generally regarded as non-toxic and non-irritant, although hypersensitivity skin reactions have occasionally been reported after topical use.",
+   "fa": "استرهای سوربیتان به‌طور گسترده در فرآورده‌های آرایشی، مواد غذایی و داروهای خوراکی و موضعی مصرف می‌شوند و عموماً غیرسمی و غیرمحرک شناخته می‌شوند، هرچند گاهی واکنش‌های حساسیتی پوستی پس از مصرف موضعی گزارش شده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E494). Included in the FDA Inactive Ingredient Database (oral and topical preparations, among others) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E494). در FDA Inactive Ingredient Database (از جمله فرآورده‌های خوراکی و موضعی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Polysorbate 80; sorbitan monolaurate (Span 20); sorbitan monostearate (Span 60); sorbitan trioleate; sorbitan sesquioleate.",
+   "fa": "پلی‌سوربات 80؛ سوربیتان مونولورات (Span 20)؛ سوربیتان مونواستئارات (Span 60)؛ سوربیتان تری‌اولئات؛ سوربیتان سسکوئی‌اولئات."
+  },
+  "comments": {
+   "en": "The Span 80 and polysorbate 80 pair is one of the most common emulsifier systems: mixing them in different ratios gives HLB values between about 4.3 and 15, so the blend can be matched to the required HLB of the oil phase.",
+   "fa": "زوج Span 80 و پلی‌سوربات 80 یکی از رایج‌ترین سیستم‌های امولسیون‌کننده است: مخلوط کردن آن‌ها با نسبت‌های مختلف مقادیر HLB بین حدود 4.3 و 15 را به دست می‌دهد و می‌توان مخلوط را با HLB مورد نیاز فاز روغنی تطبیق داد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "eu-additives"
+  ]
+ },
+ "Sorbitan monostearate (Span 60)": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sorbitan Stearate"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sorbitan Stearate"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sorbitan Monostearate"
+   }
+  ],
+  "tradeNames": "Sorbitan stearate; sorbitani stearas; Span 60; Arlacel 60; Crill 3; E491",
+  "chemicalName": "Sorbitan mono-octadecanoate (partial esters of sorbitol and its mono- and dianhydrides with stearic acid)",
+  "formula": "C24H46O6",
+  "mw": "430.6",
+  "applications": {
+   "en": "A lipophilic nonionic surfactant used as an emulsifier and stabiliser in water-in-oil creams and ointments, as a co-emulsifier with polysorbates (for example polysorbate 60) in oil-in-water creams, and as a consistency-improving agent. It is also used in foods, for example in yeast, cake mixes and confectionery coatings, and in the preparation of niosomes and organogels. Typical concentrations: emulsifier used alone in water-in-oil emulsions 1–15%; in combination with hydrophilic emulsifiers in oil-in-water emulsions 1–10%; to increase the water-holding capacity of ointments 1–10%; solubiliser for poorly soluble actives in lipophilic bases 1–10%; wetting agent for insoluble actives in lipophilic bases 0.1–3%.",
+   "fa": "یک سورفکتانت غیریونی چربی‌دوست که به عنوان امولسیون‌کننده و پایدارکننده در کرم‌ها و پمادهای آب در روغن، به عنوان امولسیون‌کننده کمکی همراه با پلی‌سوربات‌ها (مانند پلی‌سوربات 60) در کرم‌های روغن در آب، و به عنوان بهبوددهنده قوام به کار می‌رود. در مواد غذایی، مانند مخمر، مخلوط‌های کیک و پوشش‌های شیرینی، و در تهیه نیوزوم‌ها و ارگانوژل‌ها نیز مصرف می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های آب در روغن 1–15٪؛ همراه با امولسیون‌کننده‌های آب‌دوست در امولسیون‌های روغن در آب 1–10٪؛ افزایش ظرفیت نگهداری آب پمادها 1–10٪؛ حل‌کننده مواد مؤثر کم‌محلول در پایه‌های چربی‌دوست 1–10٪؛ عامل مرطوب‌کننده برای مواد مؤثر نامحلول در پایه‌های چربی‌دوست 0.1–3٪."
+  },
+  "description": {
+   "en": "A cream to light tan, waxy solid supplied as beads, flakes or powder, with a faint characteristic odour and a bland taste. It is a mixture of esters of stearic and palmitic acids with sorbitol anhydrides.",
+   "fa": "جامد مومی کرم تا قهوه‌ای روشن که به صورت دانه، پولک یا پودر عرضه می‌شود و بوی ضعیف و مشخص و طعم ملایم دارد. مخلوطی از استرهای استئاریک و پالمیتیک اسید با انیدریدهای سوربیتول است."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "HLB",
+     "fa": "HLB"
+    },
+    "v": {
+     "en": "4.7",
+     "fa": "4.7"
+    }
+   },
+   {
+    "k": {
+     "en": "Physical form",
+     "fa": "شکل فیزیکی"
+    },
+    "v": {
+     "en": "waxy solid at room temperature; melts at roughly 50–60 °C",
+     "fa": "جامد مومی در دمای اتاق؛ تقریباً در 50–60 °C ذوب می‌شود"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "insoluble but dispersible in warm water; soluble in warm mineral and vegetable oils at higher temperatures; slightly soluble in ether",
+     "fa": "نامحلول ولی قابل پراکنش در آب گرم؛ در دمای بالاتر در روغن‌های معدنی و گیاهی گرم محلول؛ کمی محلول در اتر"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Gradual soap formation occurs with strong acids or bases; the esters are stable in weak acids and bases. Store in a well-closed container in a cool, dry place.",
+   "fa": "در حضور اسیدها یا بازهای قوی به‌تدریج صابون تشکیل می‌شود؛ این استرها در اسیدها و بازهای ضعیف پایدارند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. Like other nonionic surfactants, it may reduce the activity of some preservatives such as parabens.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. مانند سایر سورفکتانت‌های غیریونی ممکن است فعالیت برخی نگهدارنده‌ها مانند پارابن‌ها را کاهش دهد."
+  },
+  "manufacture": {
+   "en": "Prepared by dehydration of sorbitol to sorbitan followed by esterification with commercial stearic acid (a mixture of stearic and palmitic acids), or by direct reaction of sorbitol with the fatty acid at high temperature with a catalyst.",
+   "fa": "از آب‌زدایی سوربیتول به سوربیتان و سپس استری کردن با استئاریک اسید تجاری (مخلوطی از استئاریک و پالمیتیک اسید)، یا با واکنش مستقیم سوربیتول با اسید چرب در دمای بالا و در حضور کاتالیزور تهیه می‌شود."
+  },
+  "safety": {
+   "en": "Sorbitan esters are widely used in cosmetics, foods and oral and topical pharmaceuticals and are generally regarded as non-toxic and non-irritant, although hypersensitivity skin reactions have occasionally been reported after topical use.",
+   "fa": "استرهای سوربیتان به‌طور گسترده در فرآورده‌های آرایشی، مواد غذایی و داروهای خوراکی و موضعی مصرف می‌شوند و عموماً غیرسمی و غیرمحرک شناخته می‌شوند، هرچند گاهی واکنش‌های حساسیتی پوستی پس از مصرف موضعی گزارش شده است."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Accepted as a food additive in Europe (E491) and permitted as a direct food additive in the USA. Included in the FDA Inactive Ingredient Database (oral, topical and vaginal preparations, among others) and in non-parenteral medicines licensed in Europe.",
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E491) و در آمریکا به عنوان افزودنی مستقیم غذایی مجاز است. در FDA Inactive Ingredient Database (از جمله فرآورده‌های خوراکی، موضعی و واژینال) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Polysorbate 60; sorbitan monolaurate (Span 20); sorbitan monooleate (Span 80); sorbitan tristearate; glyceryl monostearate.",
+   "fa": "پلی‌سوربات 60؛ سوربیتان مونولورات (Span 20)؛ سوربیتان مونواولئات (Span 80)؛ سوربیتان تری‌استئارات؛ گلیسریل مونواستئارات."
+  },
+  "comments": {
+   "en": "Because it is solid at room temperature, it is melted with the oil phase during emulsion preparation. Its saturated fatty-acid chains make it more resistant to oxidation than sorbitan monooleate and give firmer creams.",
+   "fa": "چون در دمای اتاق جامد است، هنگام تهیه امولسیون همراه با فاز روغنی ذوب می‌شود. زنجیرهای اسید چرب اشباع آن باعث می‌شوند در برابر اکسیداسیون مقاوم‌تر از سوربیتان مونواولئات باشد و کرم‌های سفت‌تری بدهد."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "iid",
+   "eu-additives"
+  ]
+ },
+ "Sorbitol": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Sorbitol"
+   },
+   {
+    "ph": "JP",
+    "name": "D-Sorbitol"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Sorbitol"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Sorbitol"
+   }
+  ],
+  "tradeNames": "D-Glucitol; glucitol; sorbitolum; Liponic; Neosorb; Parteck SI; Sorbifin; Sorbogem; E420",
+  "chemicalName": "D-Glucitol",
+  "formula": "C6H14O6",
+  "mw": "182.17",
+  "applications": {
+   "en": "Sorbitol is used as a diluent in tablets made by wet granulation or direct compression (especially chewable and lozenge-type tablets), as a sweetening agent, humectant and plasticiser, and as a vehicle in sugar-free liquids. Typical concentrations: tablet binder and filler 25–90%; humectant 3–15%; moisture-control agent in tablets 3–15%; oral solutions 20–35%; oral suspensions up to 70% (as sorbitol solution); plasticiser for gelatin and cellulose films 5–20%; to prevent crystallisation around bottle caps 15–30%; toothpastes 20–60%; topical emulsions 2–18%; intramuscular injections 10–25%.",
+   "fa": "سوربیتول به عنوان رقیق‌کننده در قرص‌های تهیه‌شده با گرانولاسیون مرطوب یا پرس مستقیم (به‌ویژه قرص‌های جویدنی و لوزانژ)، شیرین‌کننده، مرطوب‌نگه‌دارنده (humectant) و نرم‌کننده (plasticiser)، و به عنوان حامل در مایعات بدون قند به کار می‌رود. غلظت‌های متداول: چسباننده و پرکننده قرص 25–90٪؛ مرطوب‌نگه‌دارنده 3–15٪؛ کنترل رطوبت در قرص 3–15٪؛ محلول خوراکی 20–35٪؛ سوسپانسیون خوراکی تا 70٪ (به صورت محلول سوربیتول)؛ نرم‌کننده فیلم‌های ژلاتین و سلولزی 5–20٪؛ جلوگیری از کریستالیزه شدن در اطراف درب بطری 15–30٪؛ خمیردندان 20–60٪؛ امولسیون‌های موضعی 2–18٪؛ تزریق عضلانی 10–25٪."
+  },
+  "description": {
+   "en": "An odourless, white or almost colourless, crystalline, hygroscopic powder, granules or flakes with a pleasant, cooling, sweet taste; its sweetness is about 50–60% of that of sucrose. Several crystalline polymorphs and an amorphous form exist; the stable γ-form is used in most direct-compression grades.",
+   "fa": "پودر، گرانول یا پولک کریستالی، سفید یا تقریباً بی‌رنگ، بی‌بو و رطوبت‌گیر با طعم شیرین، خنک و مطبوع؛ شیرینی آن حدود 50–60٪ ساکارز است. چند پلی‌مورف کریستالی و یک فرم آمورف وجود دارد؛ فرم پایدار γ در بیشتر گریدهای پرس مستقیم به کار می‌رود."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Melting point",
+     "fa": "نقطه ذوب"
+    },
+    "v": {
+     "en": "about 110–112 °C (anhydrous γ-form); metastable forms melt lower (about 93–100 °C)",
+     "fa": "حدود 110–112 °C (فرم γ بدون آب)؛ فرم‌های نیمه‌پایدار در دمای کمتر (حدود 93–100 °C) ذوب می‌شوند"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "very soluble in water (about 1 in 0.5); slightly soluble in ethanol; practically insoluble in chloroform and ether",
+     "fa": "بسیار محلول در آب (حدود 1 در 0.5)؛ کمی محلول در اتانول؛ عملاً نامحلول در کلروفرم و اتر"
+    }
+   },
+   {
+    "k": {
+     "en": "Relative sweetness",
+     "fa": "شیرینی نسبی"
+    },
+    "v": {
+     "en": "about 50–60% of sucrose",
+     "fa": "حدود 50–60٪ ساکارز"
+    }
+   },
+   {
+    "k": {
+     "en": "Heat of solution",
+     "fa": "گرمای انحلال"
+    },
+    "v": {
+     "en": "negative (endothermic), giving a cooling sensation in the mouth",
+     "fa": "منفی (گرماگیر) که در دهان حس خنکی ایجاد می‌کند"
+    }
+   },
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "true density about 1.49 g/cm³",
+     "fa": "چگالی حقیقی حدود 1.49 g/cm³"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Chemically relatively inert and compatible with most excipients. It is stable in air, does not darken or decompose at elevated temperatures or in the presence of amines, and is not fermented by many micro-organisms, although solutions may support mould growth if unpreserved. It is hygroscopic and should be stored in an airtight container in a cool, dry place.",
+   "fa": "از نظر شیمیایی نسبتاً بی‌اثر و با بیشتر مواد کمکی سازگار است. در هوا پایدار است، در دماهای بالا یا در حضور آمین‌ها تیره یا تجزیه نمی‌شود و توسط بسیاری از میکروارگانیسم‌ها تخمیر نمی‌شود، هرچند محلول‌های بدون نگهدارنده ممکن است کپک بزنند. رطوبت‌گیر است و باید در ظرف دربسته، در جای خنک و خشک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Sorbitol forms water-soluble chelates with many divalent and trivalent metal ions in strongly acidic and alkaline conditions. Adding liquid polyethylene glycols to sorbitol solution with vigorous stirring produces a waxy, water-soluble gel. It may discolour in the presence of iron oxide.",
+   "fa": "سوربیتول در شرایط به‌شدت اسیدی و قلیایی با بسیاری از یون‌های فلزی دو و سه‌ظرفیتی کی‌لیت‌های محلول در آب تشکیل می‌دهد. افزودن پلی‌اتیلن گلیکول‌های مایع به محلول سوربیتول همراه با هم‌زدن شدید، ژلی مومی و محلول در آب ایجاد می‌کند. در حضور آهن اکسید ممکن است تغییر رنگ دهد."
+  },
+  "manufacture": {
+   "en": "Manufactured by catalytic hydrogenation of D-glucose (obtained from maize or wheat starch) under high pressure, followed by purification and crystallisation or concentration to sorbitol solution.",
+   "fa": "از هیدروژناسیون کاتالیزوری D-گلوکز (حاصل از نشاسته ذرت یا گندم) تحت فشار بالا و سپس خالص‌سازی و کریستالیزاسیون یا تغلیظ به صورت محلول سوربیتول تولید می‌شود."
+  },
+  "safety": {
+   "en": "Sorbitol is slowly and incompletely absorbed from the gut and has an osmotic laxative effect; oral intake of more than about 20 g daily in adults may cause diarrhoea, flatulence and abdominal discomfort, and smaller amounts can affect children. It is metabolised to fructose and should be avoided in hereditary fructose intolerance. It is not cariogenic and is used in products for diabetics, although it still provides energy.",
+   "fa": "سوربیتول به‌آهستگی و به‌طور ناقص از روده جذب می‌شود و اثر ملین اسمزی دارد؛ مصرف خوراکی بیش از حدود 20 g در روز در بزرگسالان ممکن است باعث اسهال، نفخ و ناراحتی شکمی شود و مقادیر کمتر نیز در کودکان مؤثر است. به فروکتوز متابولیزه می‌شود و در عدم تحمل ارثی فروکتوز باید از آن پرهیز شود. پوسیدگی‌زا نیست و در فرآورده‌های مخصوص بیماران دیابتی مصرف می‌شود، هرچند همچنان انرژی تولید می‌کند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. استفاده از محافظ چشم و دستکش توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "GRAS listed. Accepted as a food additive in Europe (E420); foods containing more than 10% added polyols must carry a warning about laxative effects. Included in the FDA Inactive Ingredient Database (dental, inhalation, IM, IV and other injections, oral capsules, solutions, suspensions, syrups and tablets, rectal, topical and vaginal preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E420)؛ غذاهایی که بیش از 10٪ پلی‌ال افزوده دارند باید هشدار اثر ملین را داشته باشند. در FDA Inactive Ingredient Database (فرآورده‌های دندانی، استنشاقی، تزریق IM، IV و سایر تزریق‌ها، کپسول، محلول، سوسپانسیون، شربت و قرص خوراکی، فرآورده‌های رکتال، موضعی و واژینال) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Sorbitol solution 70%; sorbitol sorbitan solution; mannitol; maltitol; xylitol.",
+   "fa": "محلول سوربیتول 70٪؛ محلول سوربیتول سوربیتان؛ مانیتول؛ مالتیتول؛ زایلیتول."
+  },
+  "comments": {
+   "en": "Direct-compression sorbitol grades give hard tablets with a pleasant mouthfeel, but the material is hygroscopic, so manufacture should take place below about 50% RH and the product be packaged with moisture protection. The total daily sorbitol dose delivered by a product should be considered, particularly for paediatric liquids, because of its laxative effect.",
+   "fa": "گریدهای پرس مستقیم سوربیتول قرص‌های سخت با حس دهانی مطبوع می‌دهند، ولی این ماده رطوبت‌گیر است؛ بنابراین ساخت باید در رطوبت نسبی کمتر از حدود 50٪ انجام شود و فرآورده با محافظت در برابر رطوبت بسته‌بندی گردد. به دلیل اثر ملین، مقدار کل سوربیتول روزانه‌ای که از یک فرآورده دریافت می‌شود، به‌ویژه در مایعات کودکان، باید در نظر گرفته شود."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid",
+   "gras",
+   "eu-additives"
+  ]
+ },
+ "Soybean oil": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Refined Soya Oil"
+   },
+   {
+    "ph": "JP",
+    "name": "Soybean Oil"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Soya-bean Oil, Refined"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Soybean Oil"
+   }
+  ],
+  "tradeNames": "Oleum sojae raffinatum; refined soya-bean oil; soja bean oil; soya oil; soyabean oil",
+  "chemicalName": "Refined fixed oil obtained from the seeds of the soya plant (Glycine max); a mixture of triglycerides of mainly unsaturated fatty acids",
+  "formula": "",
+  "mw": "",
+  "applications": {
+   "en": "Refined soybean oil is the main oil phase of parenteral fat emulsions used in nutrition (typically 10–30% w/v) and of some injectable emulsions of lipophilic drugs such as propofol. It is also used as a solvent and vehicle in oral emulsions, soft gelatin capsules and other lipid-based formulations, in topical creams and bath oils, and as an edible oil in foods.",
+   "fa": "روغن سویای تصفیه‌شده فاز روغنی اصلی امولسیون‌های چربی تزریقی برای تغذیه (معمولاً 10–30٪ وزنی/حجمی) و برخی امولسیون‌های تزریقی داروهای چربی‌دوست مانند پروپوفول است. همچنین به عنوان حلال و حامل در امولسیون‌های خوراکی، کپسول‌های ژلاتینی نرم و سایر فرمولاسیون‌های بر پایه لیپید، در کرم‌های موضعی و روغن‌های حمام، و به عنوان روغن خوراکی در مواد غذایی مصرف می‌شود."
+  },
+  "description": {
+   "en": "A clear, pale-yellow, oily liquid, odourless or with a slight characteristic odour and a bland taste. The fatty-acid fraction is made up mainly of linoleic acid (roughly half), oleic acid, palmitic acid and α-linolenic acid, with smaller amounts of stearic acid. It solidifies at well below 0 °C.",
+   "fa": "مایع روغنی شفاف و زرد کم‌رنگ، بی‌بو یا با بوی کم مشخص و طعم ملایم. بخش اسید چرب آن عمدتاً از لینولئیک اسید (حدود نیمی از کل)، اولئیک اسید، پالمیتیک اسید و آلفالینولنیک اسید همراه با مقادیر کمتر استئاریک اسید تشکیل شده است. در دمای بسیار کمتر از 0 °C جامد می‌شود."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 0.92 g/cm³ at 20 °C",
+     "fa": "حدود 0.92 g/cm³ در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Iodine value",
+     "fa": "عدد یدی"
+    },
+    "v": {
+     "en": "about 120–140, reflecting a high content of polyunsaturated fatty acids",
+     "fa": "حدود 120–140 که نشان‌دهنده مقدار زیاد اسیدهای چرب چندغیراشباع است"
+    }
+   },
+   {
+    "k": {
+     "en": "Saponification value",
+     "fa": "عدد صابونی"
+    },
+    "v": {
+     "en": "about 185–195",
+     "fa": "حدود 185–195"
+    }
+   },
+   {
+    "k": {
+     "en": "Main fatty acids",
+     "fa": "اسیدهای چرب اصلی"
+    },
+    "v": {
+     "en": "linoleic about 48–58%; oleic about 17–30%; palmitic about 9–13%; α-linolenic about 5–11%; stearic about 3–5%",
+     "fa": "لینولئیک حدود 48–58٪؛ اولئیک حدود 17–30٪؛ پالمیتیک حدود 9–13٪؛ آلفالینولنیک حدود 5–11٪؛ استئاریک حدود 3–5٪"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water and ethanol; miscible with chloroform, ether, light petroleum and other fixed oils",
+     "fa": "عملاً نامحلول در آب و اتانول؛ قابل امتزاج با کلروفرم، اتر، اتر نفت و سایر روغن‌های ثابت"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Because of its high content of polyunsaturated fatty acids, soybean oil oxidises on exposure to air, light and heat, with an increase in peroxide value and development of rancidity; antioxidants such as tocopherol are often added. Store in a well-filled, airtight, light-resistant container under nitrogen, in a cool place. Fat emulsions should be protected from freezing and stored as specified.",
+   "fa": "به دلیل مقدار زیاد اسیدهای چرب چندغیراشباع، روغن سویا در معرض هوا، نور و حرارت اکسید می‌شود و عدد پراکسید آن بالا رفته و تند (rancid) می‌شود؛ اغلب آنتی‌اکسیدان‌هایی مانند توکوفرول به آن افزوده می‌شود. در ظرف پر، دربسته و مقاوم به نور، زیر نیتروژن و در جای خنک نگهداری شود. امولسیون‌های چربی باید از یخ‌زدگی محافظت و طبق دستور نگهداری شوند."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. Emulsions containing soybean oil are destabilised by high concentrations of electrolytes, particularly divalent cations such as calcium and magnesium, by low pH and by some drugs, which can cause creaming, oiling out and coalescence.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. امولسیون‌های حاوی روغن سویا با غلظت‌های زیاد الکترولیت‌ها، به‌ویژه کاتیون‌های دوظرفیتی مانند کلسیم و منیزیم، با pH پایین و با برخی داروها ناپایدار می‌شوند و ممکن است کرم‌شدن (creaming)، جدا شدن روغن و به هم پیوستن قطرات رخ دهد."
+  },
+  "manufacture": {
+   "en": "Obtained by solvent extraction (usually with hexane) or expression of soybean seeds, followed by refining: degumming, neutralisation, bleaching and deodorisation. Parenteral grades are further purified and controlled for peroxides, fatty-acid composition and contaminants.",
+   "fa": "از استخراج با حلال (معمولاً هگزان) یا فشردن دانه‌های سویا و سپس تصفیه شامل صمغ‌گیری، خنثی‌سازی، رنگ‌بری و بوگیری به دست می‌آید. گریدهای تزریقی بیشتر خالص‌سازی و از نظر پراکسیدها، ترکیب اسیدهای چرب و آلاینده‌ها کنترل می‌شوند."
+  },
+  "safety": {
+   "en": "Refined soybean oil is a common food and is non-toxic and non-irritant when taken orally or applied topically. Intravenous fat emulsions can cause hypersensitivity reactions (including in people allergic to soya or peanut), fat-overload syndrome, hyperlipidaemia and, in long-term use, liver dysfunction; they must be used with care in neonates.",
+   "fa": "روغن سویای تصفیه‌شده یک ماده غذایی رایج است و در مصرف خوراکی یا موضعی غیرسمی و غیرمحرک است. امولسیون‌های چربی داخل وریدی ممکن است باعث واکنش‌های حساسیتی (از جمله در افراد حساس به سویا یا بادام‌زمینی)، سندرم بار اضافی چربی (fat-overload)، هیپرلیپیدمی و در مصرف طولانی‌مدت اختلال عملکرد کبد شوند و در نوزادان باید با احتیاط مصرف شوند."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Spills are slippery; oil-soaked rags may self-heat, so dispose of them safely.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. روغن ریخته‌شده سطوح را لغزنده می‌کند؛ پارچه‌های آغشته به روغن ممکن است خودبه‌خود گرم شوند و باید به‌طور ایمن دور ریخته شوند."
+  },
+  "regulatory": {
+   "en": "Used widely as an edible oil. Included in the FDA Inactive Ingredient Database (IV injections, oral capsules and topical preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
+   "fa": "به‌طور گسترده به عنوان روغن خوراکی مصرف می‌شود. در FDA Inactive Ingredient Database (تزریق IV، کپسول خوراکی و فرآورده‌های موضعی) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+  },
+  "related": {
+   "en": "Hydrogenated soybean oil; soybean lecithin; corn oil; cottonseed oil; sesame oil; medium-chain triglycerides.",
+   "fa": "روغن سویای هیدروژنه؛ لسیتین سویا؛ روغن ذرت؛ روغن پنبه‌دانه؛ روغن کنجد؛ تری‌گلیسریدهای با زنجیر متوسط."
+  },
+  "comments": {
+   "en": "For parenteral emulsions use a dedicated injectable grade with low peroxide value and controlled phytosterol content, and protect the oil from oxygen throughout processing. Mixed lipid emulsions combining soybean oil with medium-chain triglycerides, olive oil or fish oil are used to reduce the load of ω-6 fatty acids.",
+   "fa": "برای امولسیون‌های تزریقی از گرید مخصوص تزریق با عدد پراکسید پایین و مقدار فیتواسترول کنترل‌شده استفاده کنید و روغن را در تمام مراحل فرآیند از اکسیژن محافظت کنید. امولسیون‌های لیپیدی مخلوط که روغن سویا را با تری‌گلیسریدهای با زنجیر متوسط، روغن زیتون یا روغن ماهی ترکیب می‌کنند، برای کاهش بار اسیدهای چرب ω-6 به کار می‌روند."
+  },
+  "refs": [
+   "usp",
+   "ep",
+   "jp",
+   "iid"
+  ]
+ },
+ "Squalane": {
+  "names": [
+   {
+    "ph": "BP",
+    "name": "Squalane"
+   },
+   {
+    "ph": "PhEur",
+    "name": "Squalane"
+   },
+   {
+    "ph": "USP-NF",
+    "name": "Squalane"
+   }
+  ],
+  "tradeNames": "Cosbiol; dodecahydrosqualene; hexamethyltetracosane; perhydrosqualene; spinacane; squalanum",
+  "chemicalName": "2,6,10,15,19,23-Hexamethyltetracosane",
+  "formula": "C30H62",
+  "mw": "422.8",
+  "applications": {
+   "en": "Squalane is used mainly as an emollient, skin-conditioning agent and oil phase in topical creams, lotions and ointments, and very widely in cosmetics. It spreads well, is non-greasy and penetrates the skin surface readily, and it is used as a lubricant and vehicle for lipophilic actives. It has also been used as a component of lipid-based delivery systems and as an alternative to mineral oil.",
+   "fa": "اسکوالان عمدتاً به عنوان نرم‌کننده پوست (emollient)، تقویت‌کننده پوست و فاز روغنی در کرم‌ها، لوسیون‌ها و پمادهای موضعی، و به‌طور بسیار گسترده در فرآورده‌های آرایشی به کار می‌رود. به‌خوبی پخش می‌شود، چرب نیست و به‌آسانی به لایه سطحی پوست نفوذ می‌کند و به عنوان روان‌کننده و حامل مواد مؤثر چربی‌دوست مصرف می‌شود. همچنین به عنوان جزء سیستم‌های دارورسانی بر پایه لیپید و جایگزین روغن معدنی به کار رفته است."
+  },
+  "description": {
+   "en": "A colourless, transparent, oily liquid, practically odourless and tasteless. It is a saturated branched hydrocarbon obtained by complete hydrogenation of squalene.",
+   "fa": "مایع روغنی بی‌رنگ و شفاف، تقریباً بی‌بو و بی‌مزه. هیدروکربن شاخه‌دار اشباعی است که از هیدروژناسیون کامل اسکوالن به دست می‌آید."
+  },
+  "properties": [
+   {
+    "k": {
+     "en": "Density",
+     "fa": "چگالی"
+    },
+    "v": {
+     "en": "about 0.81 g/cm³ at 20 °C",
+     "fa": "حدود 0.81 g/cm³ در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Freezing point",
+     "fa": "نقطه انجماد"
+    },
+    "v": {
+     "en": "about −38 °C",
+     "fa": "حدود −38 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Refractive index",
+     "fa": "ضریب شکست"
+    },
+    "v": {
+     "en": "about 1.452 at 20 °C",
+     "fa": "حدود 1.452 در 20 °C"
+    }
+   },
+   {
+    "k": {
+     "en": "Iodine value",
+     "fa": "عدد یدی"
+    },
+    "v": {
+     "en": "very low (not more than about 4), indicating near-complete saturation",
+     "fa": "بسیار پایین (حداکثر حدود 4) که نشان‌دهنده اشباع تقریباً کامل است"
+    }
+   },
+   {
+    "k": {
+     "en": "Solubility",
+     "fa": "حلالیت"
+    },
+    "v": {
+     "en": "practically insoluble in water; slightly soluble in ethanol; miscible with light petroleum, ether, chloroform and fixed oils",
+     "fa": "عملاً نامحلول در آب؛ کمی محلول در اتانول؛ قابل امتزاج با اتر نفت، اتر، کلروفرم و روغن‌های ثابت"
+    }
+   }
+  ],
+  "stability": {
+   "en": "Because it is fully saturated, squalane is very resistant to oxidation and does not become rancid, unlike squalene. Store in a well-closed container protected from light, in a cool place.",
+   "fa": "چون کاملاً اشباع است، برخلاف اسکوالن در برابر اکسیداسیون بسیار مقاوم است و تند (rancid) نمی‌شود. در ظرف کاملاً بسته، محافظت‌شده از نور و در جای خنک نگهداری شود."
+  },
+  "incompatibilities": {
+   "en": "Incompatible with strong oxidising agents. It may soften or swell some plastics and rubbers.",
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. ممکن است برخی پلاستیک‌ها و لاستیک‌ها را نرم یا متورم کند."
+  },
+  "manufacture": {
+   "en": "Prepared by catalytic hydrogenation of squalene. Squalene was traditionally obtained from shark-liver oil; plant-derived material (for example from olive-oil refining by-products) and squalane made from sugarcane-derived farnesene by fermentation and chemical synthesis are now widely used.",
+   "fa": "از هیدروژناسیون کاتالیزوری اسکوالن تهیه می‌شود. اسکوالن به طور سنتی از روغن کبد کوسه به دست می‌آمد؛ امروزه ماده با منشأ گیاهی (مانند فرآورده‌های جانبی تصفیه روغن زیتون) و اسکوالان ساخته‌شده از فارنزن حاصل از نیشکر با تخمیر و سنتز شیمیایی به‌طور گسترده مصرف می‌شوند."
+  },
+  "safety": {
+   "en": "Squalane is generally regarded as non-toxic, non-irritant and non-sensitising when applied to the skin, and it has low comedogenic potential.",
+   "fa": "اسکوالان در مصرف روی پوست عموماً غیرسمی، غیرمحرک و غیرحساسیت‌زا شناخته می‌شود و پتانسیل کومدوژنیک کمی دارد."
+  },
+  "handling": {
+   "en": "Observe normal precautions for the quantity handled. Spills are slippery; eye protection is recommended.",
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. روغن ریخته‌شده سطوح را لغزنده می‌کند؛ استفاده از محافظ چشم توصیه می‌شود."
+  },
+  "regulatory": {
+   "en": "Used in topical medicines licensed in Europe and elsewhere and widely in cosmetics.",
+   "fa": "در داروهای موضعی مجاز در اروپا و سایر کشورها و به‌طور گسترده در فرآورده‌های آرایشی مصرف می‌شود."
+  },
+  "related": {
+   "en": "Squalene; mineral oil; light mineral oil; isopropyl myristate.",
+   "fa": "اسکوالن؛ روغن معدنی؛ روغن معدنی سبک؛ ایزوپروپیل میریستات."
+  },
+  "comments": {
+   "en": "Do not confuse squalane (saturated, stable) with squalene (unsaturated, oxidation-prone), which is used, for example, in vaccine adjuvant emulsions. The source (animal, plant or bio-based) should be specified where vegetarian or sustainability requirements apply.",
+   "fa": "اسکوالان (اشباع و پایدار) را با اسکوالن (غیراشباع و مستعد اکسیداسیون) که برای مثال در امولسیون‌های ادجوان واکسن به کار می‌رود اشتباه نگیرید. در مواردی که الزامات گیاه‌خواری یا پایداری زیست‌محیطی مطرح است، منبع (حیوانی، گیاهی یا زیستی) باید مشخص شود."
+  },
+  "refs": [
+   "usp",
+   "ep"
+  ]
+ }
+}
