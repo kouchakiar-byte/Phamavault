@@ -1,6 +1,11 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { CopyButton } from "@/components/copy-button";
+import { Suspense, type ReactNode } from "react";
+import { cookies } from "next/headers";
+import { SopCopyLock } from "@/components/sop-copy-lock";
+import type { Locale } from "@/i18n/config";
+import { getUser } from "@/lib/auth";
+import { sectionsFor } from "@/lib/subscriptions";
 import { PageHeader } from "@/components/page-header";
 import { Container } from "@/components/ui";
 import { pages } from "@/content/pages";
@@ -195,6 +200,38 @@ function FullSop({ code, title, dep, full }: { code: string; title: { fa: string
   );
 }
 
+
+const lockProps = (locale: Locale) => ({
+  targetId: "sop-doc",
+  buyHref: `${href(locale, "account/buy")}?s=qa`,
+  plansHref: href(locale, "#plans"),
+  labels: {
+    copy: page.copy[locale],
+    copied: page.copied[locale],
+    title: page.copyLock.title[locale],
+    text: page.copyLock.text[locale],
+    buy: page.copyLock.buy[locale],
+    plans: page.copyLock.plans[locale],
+    close: page.copyLock.close[locale],
+  },
+});
+
+/** Copying the SOP text is for subscribers to the QA or QC section (and admins); everyone else can read only. */
+async function CopyAccess({ locale, children }: { locale: Locale; children: ReactNode }) {
+  await cookies(); // request-time check
+  const user = await getUser().catch(() => null);
+  let allowed = Boolean(user?.isAdmin);
+  if (user && !allowed) {
+    const sections = await sectionsFor(user.mobile).catch(() => new Set<string>());
+    allowed = sections.has("qa") || sections.has("qc");
+  }
+  return (
+    <SopCopyLock locked={!allowed} {...lockProps(locale)}>
+      {children}
+    </SopCopyLock>
+  );
+}
+
 export default async function SopPage({ params }: PageProps<"/[lang]/qa/[code]">) {
   const [locale, sop] = await Promise.all([getLocale(), load(params)]);
   const { text } = sop;
@@ -205,18 +242,7 @@ export default async function SopPage({ params }: PageProps<"/[lang]/qa/[code]">
     </h2>
   );
 
-  return (
-    <>
-      <PageHeader
-        locale={locale}
-        section="qa"
-        title={{ en: `${sop.code} · ${sop.title.en}`, fa: `${sop.code} · ${sop.title.fa}` }}
-        lead={sop.covers}
-        back={{ href: href(locale, "qa"), label: page.backToList }}
-      />
-      <Container className="py-12">
-        {locale === "en" && <p className="text-sm text-muted">{page.inPersian.en}</p>}
-
+  const doc = (
         <article
           id="sop-doc"
           dir="rtl"
@@ -256,10 +282,24 @@ export default async function SopPage({ params }: PageProps<"/[lang]/qa/[code]">
             </>
           )}
         </article>
+  );
 
-        <div className="mt-6">
-          <CopyButton targetId="sop-doc" label={page.copy[locale]} doneLabel={page.copied[locale]} />
-        </div>
+  return (
+    <>
+      <PageHeader
+        locale={locale}
+        section="qa"
+        title={{ en: `${sop.code} · ${sop.title.en}`, fa: `${sop.code} · ${sop.title.fa}` }}
+        lead={sop.covers}
+        back={{ href: href(locale, "qa"), label: page.backToList }}
+      />
+      <Container className="py-12">
+        {locale === "en" && <p className="text-sm text-muted">{page.inPersian.en}</p>}
+
+        <Suspense fallback={<SopCopyLock locked {...lockProps(locale)}>{doc}</SopCopyLock>}>
+          <CopyAccess locale={locale}>{doc}</CopyAccess>
+        </Suspense>
+
       </Container>
     </>
   );
