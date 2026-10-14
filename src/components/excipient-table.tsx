@@ -204,12 +204,13 @@ export function ExcipientTable({ locale, data }: Props) {
               <th>{t.fn[locale]}</th>
               <th>{t.useLevel[locale]}</th>
               <th>{t.form[locale]}</th>
+              <th>{excipientSheet.column[locale]}</th>
             </tr>
           </thead>
           <tbody>
             {rows.length === 0 && (
               <tr>
-                <td colSpan={5}>{c.noMatch[locale]}</td>
+                <td colSpan={6}>{c.noMatch[locale]}</td>
               </tr>
             )}
             {rows.map((r) => {
@@ -241,16 +242,27 @@ export function ExcipientTable({ locale, data }: Props) {
                         <Chip key={k}>{data.functions[k]?.[locale] ?? k}</Chip>
                       ))}
                     </td>
-                    <td className="num">{r.useLevel}</td>
+                    <td className="num" style={{ whiteSpace: "normal", minWidth: "9rem" }}>
+                      {r.useLevel}
+                    </td>
                     <td>
                       {r.forms.map((k) => (
                         <Chip key={k}>{data.forms[k]?.[locale] ?? k}</Chip>
                       ))}
                     </td>
+                    <td>
+                      <Link
+                        href={href(locale, `excipients/${excipientSlug(r.name)}`)}
+                        className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-vault-900 px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-vault-800"
+                      >
+                        <FileText className="size-3.5 text-capsule-400" aria-hidden="true" />
+                        {excipientSheet.cell[locale]}
+                      </Link>
+                    </td>
                   </tr>
                   {isOpen && (
                     <tr>
-                      <td colSpan={5} className="bg-vault-50">
+                      <td colSpan={6} className="bg-vault-50">
                         <Detail r={r} data={data} locale={locale} />
                       </td>
                     </tr>
