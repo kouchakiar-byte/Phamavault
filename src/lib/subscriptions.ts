@@ -1,6 +1,6 @@
 import type { PoolClient } from "pg";
 import { db, transaction } from "./db";
-import { isPaidSection, paidSections, type PaidSection, type PlanId } from "./pricing";
+import { isPaidSection, type PaidSection, type PlanId } from "./pricing";
 
 /** The paywall is off until PAYWALL=on, so the site stays open while payments are being set up. */
 export const paywallEnabled = (): boolean => process.env.PAYWALL === "on";
@@ -54,20 +54,15 @@ const SELECT_SUBSCRIPTION = `
   select s.*, (select array_agg(m.mobile order by m.mobile) from subscription_members m where m.subscription_id = s.id) as members
   from subscriptions s`;
 
-/**
- * Sections the mobile can open right now. Every plan covers all sections, so
- * any active subscription it is a member of opens all of them (including
- * subscriptions bought before pharmacy joined the paid sections).
- */
+/** Sections the mobile can open right now, through any active subscription it is a member of. */
 export async function sectionsFor(mobile: string): Promise<Set<PaidSection>> {
-  const { rows } = await (await db()).query(
-    `select 1
+  const { rows } = await (await db()).query<{ section: string }>(
+    `select distinct unnest(s.sections) as section
      from subscriptions s join subscription_members m on m.subscription_id = s.id
-     where m.mobile = $1 and not s.revoked and s.starts_at <= now() and s.ends_at > now()
-     limit 1`,
+     where m.mobile = $1 and not s.revoked and s.starts_at <= now() and s.ends_at > now()`,
     [mobile],
   );
-  return new Set(rows.length ? paidSections : []);
+  return new Set(rows.map((r) => r.section).filter(isPaidSection));
 }
 
 /** Subscriptions the user owns or is a member of, newest first. */
@@ -102,7 +97,7 @@ type NewSubscription = { ownerId: string; plan: PlanId; sections: PaidSection[];
 
 /**
  * Adds the months to a matching subscription (the one being renewed, or an
- * active individual one with the same sections), or starts a new one.
+ * active one-user subscription of the same plan and sections), or starts a new one.
  * Returns the subscription id.
  */
 async function grant(client: PoolClient, input: NewSubscription & { renews?: string | null }): Promise<string> {
@@ -112,12 +107,12 @@ async function grant(client: PoolClient, input: NewSubscription & { renews?: str
         "select id from subscriptions where id = $1 and owner_id = $2 and not revoked for update",
         [input.renews, input.ownerId],
       )
-    : input.plan === "individual"
+    : input.plan !== "team"
       ? await client.query<{ id: string }>(
           `select id from subscriptions
-           where owner_id = $1 and plan = 'individual' and not revoked and ends_at > now() and sections = $2::text[]
+           where owner_id = $1 and plan = $3 and not revoked and ends_at > now() and sections = $2::text[]
            order by ends_at desc limit 1 for update`,
-          [input.ownerId, sections],
+          [input.ownerId, sections, input.plan],
         )
       : { rows: [] };
   if (existing[0]) {

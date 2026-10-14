@@ -31,6 +31,7 @@ import { bi, type Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
 import { href } from "@/lib/paths";
+import { listPrice, monthlyPrice, type PlanId } from "@/lib/pricing";
 
 /** Counts shown on the prerendered home page, from the base data. */
 type Counts = { suppliers: number; supplierMaterials: number; materials: number };
@@ -137,13 +138,13 @@ export default async function HomePage() {
   const { pricing } = plans;
   /** Fill {section}, {full}, {team} and {extraUser} with formatted prices. */
   const priceText = (s: string) =>
-    s.replace(/\{(full|team|extraUser)\}/g, (_, k: "full" | "team" | "extraUser") => num(pricing[k]));
+    s.replace(/\{(full|team|extraUser|pharmacy)\}/g, (_, k: "full" | "team" | "extraUser" | "pharmacy") => num(pricing[k]));
   const both = (b: { en: string; fa: string }) => ({ en: priceText(b.en), fa: priceText(b.fa) });
   const rows = plans.compareRows;
   const priceRows: { label: { en: string; fa: string }; values: ({ en: string; fa: string } | boolean)[] }[] = [
     { label: rows.users, values: rows.usersValues },
-    { label: rows.price, values: [both(rows.priceIndividual), both(rows.priceTeam)] },
-    { label: rows.extraUsers, values: [false, both(rows.extraUsersValue)] },
+    { label: rows.price, values: [both(rows.priceIndividual), both(rows.priceTeam), both(rows.pricePharmacy)] },
+    { label: rows.extraUsers, values: [false, both(rows.extraUsersValue), false] },
   ];
 
   return (
@@ -454,12 +455,13 @@ export default async function HomePage() {
       <section id="plans" className="scroll-mt-20 border-t border-line bg-white py-20 lg:py-28">
         <Container>
           <SectionHead eyebrow={plans.eyebrow[locale]} title={plans.title} locale={locale} lead={plans.lead[locale]} />
-          <div className="mx-auto mt-14 grid max-w-5xl items-stretch gap-6 lg:grid-cols-2">
+          <div className="mx-auto mt-14 grid max-w-6xl items-stretch gap-6 lg:grid-cols-3">
             {plans.items.map((plan) => {
               const featured = plan.style === "primary";
               const badge = "badge" in plan ? plan.badge : undefined;
-              const price = plan.id === "individual" ? pricing.full : pricing.team;
-              const was = plan.id === "individual" ? pricing.fullList : pricing.teamList;
+              const planId = (plan.id === "enterprise" ? "team" : plan.id) as PlanId;
+              const price = monthlyPrice({ plan: planId, seats: pricing.teamUsers });
+              const was = listPrice({ plan: planId, seats: pricing.teamUsers });
               return (
                 <div
                   key={plan.id}
@@ -502,7 +504,7 @@ export default async function HomePage() {
                     ))}
                   </ul>
                   <ButtonLink
-                    href={`${href(locale, "account/buy")}${plan.id === "enterprise" ? "?plan=team" : ""}`}
+                    href={`${href(locale, "account/buy")}${planId === "individual" ? "" : `?plan=${planId}`}`}
                     variant={featured ? "primary" : "ghost"}
                   >
                     {plan.cta[locale]}
@@ -520,7 +522,7 @@ export default async function HomePage() {
             <table className="db" style={{ minWidth: 0 }}>
               <thead>
                 <tr>
-                  <th className="w-2/5" />
+                  <th className="w-1/3" />
                   {plans.items.map((p) => (
                     <th key={p.id} className="px-1.5! text-center text-xs sm:px-3! sm:text-sm">
                       {p.name[locale]}
