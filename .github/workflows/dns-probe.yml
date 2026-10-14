@@ -1,0 +1,16 @@
+name: DNS probe (temporary)
+on:
+  push:
+    branches: ["claude/**"]
+    paths: [".github/workflows/dns-probe.yml"]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Look up mail records
+        run: |
+          for r in "MX pharmavault.ir" "TXT pharmavault.ir" "CNAME rp.pharmavault.ir" "A pharmavault.ir"; do
+            echo "== $r"; dig +short $r @ns1.liara.zone; echo "-- public resolver:"; dig +short $r @8.8.8.8
+          done
+          echo "== DKIM-ish TXT names"; for n in liara._domainkey default._domainkey mail._domainkey dkim._domainkey c1._domainkey; do v=$(dig +short TXT $n.pharmavault.ir @ns1.liara.zone); [ -n "$v" ] && echo "$n: ${v:0:80}..."; done
+          echo "== MX host reachable on port 25?"; timeout 10 bash -c "echo > /dev/tcp/c1.liara.email/25" && echo open || echo "closed/filtered from runner"
