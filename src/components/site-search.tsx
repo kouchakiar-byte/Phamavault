@@ -3,10 +3,13 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { ArrowUpRight, Lock, Search, X } from "lucide-react";
+import { ArrowUpRight, ExternalLink, Lock, Search, X } from "lucide-react";
 import { searchCopy as t } from "@/content/search";
+import { sourcesFor } from "@/content/search-sources";
 import type { Locale } from "@/i18n/config";
-import type { SearchResult } from "@/lib/site-search";
+import type { SearchResult, SearchScope } from "@/lib/site-search";
+
+const scopeKeys = Object.keys(t.scopes) as SearchScope[];
 
 const fa = (n: number, locale: Locale) => n.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
 
@@ -27,6 +30,11 @@ export function SearchResults({
   return (
     <div className="space-y-5">
       {result.fuzzy && <p className="text-sm text-muted">{t.fuzzy[locale].replace("{q}", result.query)}</p>}
+      {result.relaxed.length > 0 && (
+        <p className="rounded-lg bg-capsule-400/10 px-3 py-2 text-sm text-vault-800">
+          {t.relaxed[locale].replace("{grades}", result.relaxed.map((g) => g.toUpperCase()).join("، "))}
+        </p>
+      )}
       {result.groups.map((g, gi) => (
         <section key={g.key}>
           <div className="mb-1.5 flex items-baseline justify-between gap-3 px-1">
@@ -72,6 +80,97 @@ export function SearchResults({
         </section>
       ))}
     </div>
+  );
+}
+
+/** The scope filter as a row of radio pills (search page and palette). */
+export function ScopePicker({
+  locale,
+  value,
+  onChange,
+  name = "scope",
+}: {
+  locale: Locale;
+  value: SearchScope;
+  onChange?: (scope: SearchScope) => void;
+  name?: string;
+}) {
+  return (
+    <fieldset className="flex flex-wrap gap-2">
+      <legend className="sr-only">{t.scopeLabel[locale]}</legend>
+      {scopeKeys.map((key) => (
+        <label
+          key={key}
+          className={`cursor-pointer rounded-full border px-3.5 py-1.5 text-sm transition has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-molecule-400 ${
+            value === key ? "border-molecule-500 bg-molecule-600 font-semibold text-white" : "border-line bg-white text-vault-800 hover:border-molecule-400"
+          }`}
+        >
+          <input
+            type="radio"
+            name={name}
+            value={key}
+            {...(onChange
+              ? { checked: value === key, onChange: () => onChange(key) }
+              : // Inside the search page's GET form: a new scope searches again at once.
+                { defaultChecked: value === key, onChange: (e: React.ChangeEvent<HTMLInputElement>) => e.currentTarget.form?.requestSubmit() })}
+            className="sr-only"
+          />
+          {t.scopes[key][locale]}
+        </label>
+      ))}
+    </fieldset>
+  );
+}
+
+/** Links that run the same query in authoritative external databases. */
+export function SourceLinks({ locale, scope, query, compact = false }: { locale: Locale; scope: SearchScope; query: string; compact?: boolean }) {
+  const sources = sourcesFor(scope, query);
+  if (compact) {
+    return (
+      <p className="flex flex-wrap items-center gap-1.5 text-xs text-muted">
+        <span className="font-semibold text-vault-800">{t.sourcesTitle[locale]}:</span>
+        {sources.map((s) => (
+          <a
+            key={s.key}
+            href={s.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 rounded-full border border-line bg-white px-2 py-0.5 font-medium text-vault-800 hover:border-molecule-400 hover:text-molecule-700"
+          >
+            {s.name}
+            <ExternalLink className="size-3" aria-hidden="true" />
+          </a>
+        ))}
+      </p>
+    );
+  }
+  return (
+    <section className="rounded-card border border-line bg-white p-5">
+      <h2 className="font-bold text-vault-900">{t.sourcesTitle[locale]}</h2>
+      <p className="mt-1 text-xs leading-relaxed text-muted">{t.sourcesLead[locale]}</p>
+      <p className="mt-3 text-xs text-muted" dir="ltr" style={{ textAlign: "start" }}>
+        <bdi className="rounded bg-vault-50 px-1.5 py-0.5 font-mono text-vault-900">{query}</bdi>
+      </p>
+      <ul className="mt-3 divide-y divide-line">
+        {sources.map((s) => (
+          <li key={s.key}>
+            <a href={s.href} target="_blank" rel="noopener noreferrer" className="group flex items-start gap-3 py-2.5">
+              <span className="min-w-0 flex-1">
+                <span className="block text-sm font-semibold text-vault-900 group-hover:text-molecule-700" dir="ltr" style={{ textAlign: "start" }}>
+                  {s.name}
+                </span>
+                <span className="mt-0.5 block text-xs text-muted">
+                  {s.what[locale]}
+                  {!s.takesQuery && ` (${t.typeThere[locale]})`}
+                </span>
+                <span className="mt-0.5 block text-[0.7rem] text-muted/80">{s.org[locale]}</span>
+              </span>
+              <ExternalLink className="mt-0.5 size-4 shrink-0 text-muted group-hover:text-molecule-600" aria-hidden="true" />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
 
@@ -133,19 +232,20 @@ export function SiteSearch({ locale }: { locale: Locale }) {
 function Palette({ locale, onClose }: { locale: Locale; onClose: () => void }) {
   const router = useRouter();
   const [query, setQuery] = useState("");
+  const [scope, setScope] = useState<SearchScope>("all");
   const [result, setResult] = useState<SearchResult | null>(null);
   const [loading, setLoading] = useState(false);
   const [active, setActive] = useState(0);
   const list = useRef<HTMLDivElement>(null);
   const q = query.trim();
-  const page = `/${locale}/search?q=${encodeURIComponent(q)}`;
+  const page = `/${locale}/search?q=${encodeURIComponent(q)}${scope === "all" ? "" : `&scope=${scope}`}`;
 
   useEffect(() => {
     if (q.length < 2) return;
     const ctrl = new AbortController();
     const timer = setTimeout(() => {
       setLoading(true);
-      fetch(`/api/search?q=${encodeURIComponent(q)}&lang=${locale}&n=5`, { signal: ctrl.signal })
+      fetch(`/api/search?q=${encodeURIComponent(q)}&lang=${locale}&n=5&scope=${scope}`, { signal: ctrl.signal })
         .then((r) => r.json() as Promise<SearchResult>)
         .then((r) => {
           setResult(r);
@@ -158,7 +258,7 @@ function Palette({ locale, onClose }: { locale: Locale; onClose: () => void }) {
       clearTimeout(timer);
       ctrl.abort();
     };
-  }, [q, locale]);
+  }, [q, locale, scope]);
 
   // Keep the page behind still while the palette is open.
   useEffect(() => {
@@ -219,7 +319,11 @@ function Palette({ locale, onClose }: { locale: Locale; onClose: () => void }) {
           </button>
         </div>
 
-        <div ref={list} className="min-h-0 flex-1 overflow-y-auto p-4" aria-live="polite">
+        <div className="border-b border-line bg-white px-4 py-2.5">
+          <ScopePicker locale={locale} value={scope} onChange={setScope} name="palette-scope" />
+        </div>
+
+        <div ref={list} className="min-h-0 flex-1 space-y-4 overflow-y-auto p-4" aria-live="polite">
           {!shown ? (
             <SearchExamples locale={locale} onPick={setQuery} />
           ) : shown.total === 0 ? (
@@ -227,6 +331,7 @@ function Palette({ locale, onClose }: { locale: Locale; onClose: () => void }) {
           ) : (
             <SearchResults result={shown} locale={locale} active={active} onPick={onClose} />
           )}
+          {shown?.sourceQuery && <SourceLinks locale={locale} scope={scope} query={shown.sourceQuery} compact />}
         </div>
 
         <div className="flex items-center justify-between gap-3 border-t border-line bg-white px-4 py-2.5 text-xs text-muted">

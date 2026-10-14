@@ -46,7 +46,34 @@ type Entry = {
 
 export type SearchHit = { title: string; sub: string; href: string; locked: boolean };
 export type SearchGroup = { key: GroupKey; label: string; total: number; more: string | null; items: SearchHit[] };
-export type SearchResult = { query: string; total: number; fuzzy: boolean; groups: SearchGroup[] };
+export type SearchResult = {
+  query: string;
+  scope: SearchScope;
+  total: number;
+  fuzzy: boolean;
+  /** Grade words (e.g. PH102) dropped for hits that only match without them. */
+  relaxed: string[];
+  /** The query in English for external sources: the query itself, or the English name of the best material hit for a Persian query. */
+  sourceQuery: string | null;
+  groups: SearchGroup[];
+};
+
+/** The filters of the search: all results, or one family of groups. */
+export const searchScopes = {
+  all: null,
+  materials: ["excipients", "materials", "suppliers", "orangeBook"],
+  standards: ["references", "regulatory", "sops", "handbooks"],
+  tools: ["calculators", "formulation"],
+} as const satisfies Record<string, readonly GroupKey[] | null>;
+export type SearchScope = keyof typeof searchScopes;
+export const isSearchScope = (v: string): v is SearchScope => v in searchScopes;
+const inScope = (scope: SearchScope, group: GroupKey) => {
+  const keys: readonly GroupKey[] | null = searchScopes[scope];
+  return !keys || keys.includes(group);
+};
+
+/** A grade or type code inside a query: letters and digits mixed, e.g. PH102, K4M, E15, LH-11. */
+const isGrade = (word: string) => /[a-z]/.test(word) && /\d/.test(word) && word.length <= 8;
 
 const same = (text: string): Bi => ({ en: text, fa: text });
 const joinBi = (parts: Bi[], sep = " · "): Bi => ({
@@ -328,10 +355,11 @@ export async function siteSearch(
   locale: Locale,
   perGroup: number,
   locked: (section: PaidSection | null) => boolean,
+  scope: SearchScope = "all",
 ): Promise<SearchResult> {
   const query = raw.trim().slice(0, 80);
   const q = nrm(query);
-  const empty: SearchResult = { query, total: 0, fuzzy: false, groups: [] };
+  const empty: SearchResult = { query, scope, total: 0, fuzzy: false, relaxed: [], sourceQuery: null, groups: [] };
   if (q.replace(/\s/g, "").length < 2) return empty;
 
   const catalog = await getCatalog();
@@ -344,13 +372,34 @@ export async function siteSearch(
 
   let scored = entries.map((e) => ({ e, s: score(e, q, sets) })).filter((x) => x.s > 0);
 
+  // A grade in the query (Microcrystalline cellulose PH102): items that match
+  // without it come next, as the vault describes the material, not each grade.
+  const grades = sets.filter((set) => set.length === 1 && isGrade(set[0])).map((set) => set[0]);
+  const core = sets.filter((set) => !(set.length === 1 && isGrade(set[0])));
+  const coreQuery = q.split(" ").filter((w) => !grades.includes(w)).join(" ");
+  const relaxed: string[] = [];
+  if (grades.length && core.length) {
+    const found = new Set(scored.map((x) => x.e));
+    const loose = entries
+      .filter((e) => !found.has(e))
+      .map((e) => ({ e, s: score(e, coreQuery, core) * 0.9 - 50 }))
+      .filter((x) => x.s > 0);
+    // Say so only when the grade itself named nothing in the vault (Povidone K30 is an item of its own).
+    const strictMaterial = scored.some((x) => x.e.group === "materials" || x.e.group === "excipients");
+    if (loose.length && !strictMaterial) relaxed.push(...grades);
+    scored = [...scored, ...loose];
+  }
+
   // Supplier bank: its own ranked search, so synonyms and credibility tiers apply as on the bank page.
-  const suppliers = searchSuppliers(
-    preparedSuppliers(catalog.companies),
-    { query, type: "all", cat: "all", sort: "cred", telOnly: false },
-    synonyms,
-    catalog.provinceOrder,
-  );
+  const findSuppliers = (text: string) =>
+    searchSuppliers(
+      preparedSuppliers(catalog.companies),
+      { query: text, type: "all", cat: "all", sort: "cred", telOnly: false },
+      synonyms,
+      catalog.provinceOrder,
+    );
+  let suppliers = findSuppliers(query);
+  if (!suppliers.length && grades.length && core.length) suppliers = findSuppliers(coreQuery);
   const supplierHits = suppliers.map((r, i) => ({
     e: entry({
       group: "suppliers",
@@ -372,7 +421,7 @@ export async function siteSearch(
 
   // Orange Book: English drug and brand names only.
   const obHits: { e: Entry; s: number }[] = [];
-  if (/[a-z]{4}/.test(q)) {
+  if (/[a-z]{4}/.test(q) && inScope(scope, "orangeBook")) {
     const ob = searchOrangeBook(query, false);
     ob.groups.forEach((g, i) => {
       const trades = [...new Set(g.products.map((p) => p.trade))].slice(0, 4).join(", ");
@@ -396,12 +445,12 @@ export async function siteSearch(
     });
   }
 
-  scored = [...scored, ...supplierHits, ...obHits];
+  scored = [...scored, ...supplierHits, ...obHits].filter((x) => inScope(scope, x.e.group));
   let fuzzy = false;
   if (!scored.length) {
     const words = q.split(" ").filter((w) => w.length >= 4);
     if (words.length) {
-      scored = entries.map((e) => ({ e, s: fuzzyScore(e, words) })).filter((x) => x.s > 0);
+      scored = entries.filter((e) => inScope(scope, e.group)).map((e) => ({ e, s: fuzzyScore(e, words) })).filter((x) => x.s > 0);
       fuzzy = scored.length > 0;
     }
   }
@@ -430,7 +479,16 @@ export async function siteSearch(
       };
     });
 
-  return { query, total: scored.length, fuzzy, groups };
+  // External sources are English: a Persian query hands over the English name of its best material.
+  let sourceQuery: string | null = PERSIAN.test(query) ? null : query;
+  if (!sourceQuery) {
+    const best = scored
+      .filter((x) => x.e.group === "materials" || x.e.group === "excipients")
+      .sort((a, b) => b.s - a.s)[0];
+    sourceQuery = best ? best.e.title.en : null;
+  }
+
+  return { query, scope, total: scored.length, fuzzy, relaxed: fuzzy ? [] : relaxed, sourceQuery, groups };
 }
 
 /** Which sections are closed to the visitor of this request (none while the paywall is off). */

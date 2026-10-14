@@ -35,6 +35,24 @@ export const searchCopy = {
     references: bi("References and pharmacopoeias", "رفرنس‌ها و فارماکوپه‌ها"),
     orangeBook: bi("Orange Book (FDA)", "Orange Book (FDA)"),
   },
+  scopeLabel: bi("Search in", "جستجو در"),
+  scopes: {
+    all: bi("All results", "همه نتایج"),
+    materials: bi("Raw materials and excipients", "مواد اولیه و مواد جانبی"),
+    standards: bi("Standards and references", "استانداردها و منابع"),
+    tools: bi("Tools and calculations", "ابزارها و محاسبات"),
+  },
+  relaxed: bi(
+    "“{grades}” is read as a grade: the material itself is shown, and suppliers that list the grade come first.",
+    "«{grades}» به‌عنوان گرید در نظر گرفته شد: خود ماده نمایش داده می‌شود و تأمین‌کنندگانی که همین گرید را دارند در ابتدا آمده‌اند.",
+  ),
+  vault: bi("In the vault", "در گنجینه PharmaVault"),
+  typeThere: bi("open it and search the name there", "باز کنید و نام را همان‌جا جستجو کنید"),
+  sourcesTitle: bi("Search authoritative sources", "جستجو در منابع معتبر"),
+  sourcesLead: bi(
+    "The same query in the official databases of regulators, pharmacopoeias and the scientific literature; each link opens the source's own search in a new tab.",
+    "همین عبارت در پایگاه‌های رسمی نهادهای رگولاتوری، فارماکوپه‌ها و مقالات علمی؛ هر لینک جستجوی خود همان منبع را در تب جدید باز می‌کند.",
+  ),
   suppliersMatch: bi("{n} products match", "{n} قلم منطبق"),
   orangeBookProducts: bi("{n} products in the Orange Book", "{n} فرآورده در Orange Book"),
 };
