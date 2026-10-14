@@ -49,6 +49,37 @@ function sources(r: Item) {
   ];
 }
 
+/** Links to the full monograph and data for one excipient. */
+function SourceList({ r, locale, wide = false }: { r: Item; locale: Locale; wide?: boolean }) {
+  return (
+          <ul className={`mt-2 grid gap-2 ${wide ? "sm:grid-cols-2 lg:grid-cols-3" : ""}`}>
+            {sources(r).map((s) => (
+              <li key={s.label}>
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2 rounded-xl border border-line bg-white px-3 py-2 transition hover:border-molecule-500 hover:bg-molecule-50"
+                >
+                  <ExternalLink
+                    className="mt-0.5 size-4 shrink-0 text-molecule-500"
+                    aria-hidden="true"
+                  />
+                  <span className="min-w-0">
+                    <span className="block text-sm font-semibold text-vault-900">
+                      <bdi>{s.label}</bdi>
+                    </span>
+                    <span className="block text-xs leading-relaxed text-muted">
+                      {s.note[locale].replace("{name}", r.name)}
+                    </span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+  );
+}
+
 function Detail({
   r,
   data,
@@ -64,13 +95,13 @@ function Detail({
       k: t.functions,
       v: r.functions.map((f) => data.functions[f]?.[locale] ?? f).join(locale === "fa" ? "، " : ", "),
     },
-    { k: pages.excipients.useLevel, v: r.useLevel },
+    { k: pages.excipients.useLevel, v: blank(r.useLevel) },
     {
       k: pages.excipients.form,
       v: r.forms.map((f) => data.forms[f]?.[locale] ?? f).join(locale === "fa" ? "، " : ", "),
     },
-    { k: t.cas, v: r.cas || "—" },
-    { k: t.synonyms, v: r.synonyms || "—" },
+    { k: t.cas, v: blank(r.cas) },
+    { k: t.synonyms, v: r.synonyms },
   ];
   return (
     <div className="grid gap-5 p-4 md:grid-cols-2">
@@ -98,41 +129,21 @@ function Detail({
           </span>
         </Link>
         <p className="text-sm font-semibold text-vault-900">{t.read[locale]}</p>
-        <ul className="mt-2 space-y-2">
-          {sources(r).map((s) => (
-            <li key={s.label}>
-              <a
-                href={s.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-start gap-2 rounded-xl border border-line bg-white px-3 py-2 transition hover:border-molecule-500 hover:bg-molecule-50"
-              >
-                <ExternalLink
-                  className="mt-0.5 size-4 shrink-0 text-molecule-500"
-                  aria-hidden="true"
-                />
-                <span className="min-w-0">
-                  <span className="block text-sm font-semibold text-vault-900">
-                    <bdi>{s.label}</bdi>
-                  </span>
-                  <span className="block text-xs leading-relaxed text-muted">
-                    {s.note[locale].replace("{name}", r.name)}
-                  </span>
-                </span>
-              </a>
-            </li>
-          ))}
-        </ul>
+        <SourceList r={r} locale={locale} />
       </div>
     </div>
   );
 }
+
+/** Empty cells stay empty rather than showing a dash. */
+const blank = (v: string) => (v === "—" ? "" : v);
 
 export function ExcipientTable({ locale, data }: Props) {
   const [query, setQuery] = useState("");
   const [fn, setFn] = useState("");
   const [form, setForm] = useState("");
   const [open, setOpen] = useState<string | null>(null);
+  const [srcOpen, setSrcOpen] = useState<string | null>(null);
   const t = pages.excipients;
   const c = copy.common;
 
@@ -205,12 +216,13 @@ export function ExcipientTable({ locale, data }: Props) {
               <th>{t.useLevel[locale]}</th>
               <th>{t.form[locale]}</th>
               <th>{excipientSheet.column[locale]}</th>
+              <th>{t.detail.read[locale]}</th>
             </tr>
           </thead>
           <tbody>
             {rows.length === 0 && (
               <tr>
-                <td colSpan={6}>{c.noMatch[locale]}</td>
+                <td colSpan={7}>{c.noMatch[locale]}</td>
               </tr>
             )}
             {rows.map((r) => {
@@ -236,14 +248,14 @@ export function ExcipientTable({ locale, data }: Props) {
                         {r.synonyms}
                       </small>
                     </td>
-                    <td className="num">{r.cas}</td>
+                    <td className="num text-[0.8rem]">{blank(r.cas)}</td>
                     <td>
                       {r.functions.map((k) => (
                         <Chip key={k}>{data.functions[k]?.[locale] ?? k}</Chip>
                       ))}
                     </td>
-                    <td className="num" style={{ whiteSpace: "normal", minWidth: "9rem" }}>
-                      {r.useLevel}
+                    <td className="text-center text-xs leading-relaxed text-ink" dir="ltr" style={{ minWidth: "9rem" }}>
+                      {blank(r.useLevel)}
                     </td>
                     <td>
                       {r.forms.map((k) => (
@@ -259,10 +271,32 @@ export function ExcipientTable({ locale, data }: Props) {
                         {excipientSheet.cell[locale]}
                       </Link>
                     </td>
+                    <td>
+                      <button
+                        type="button"
+                        onClick={() => setSrcOpen(srcOpen === id ? null : id)}
+                        aria-expanded={srcOpen === id}
+                        className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-molecule-500/60 bg-molecule-50 px-3 py-1.5 text-xs font-semibold text-molecule-700 transition hover:bg-molecule-100"
+                      >
+                        <ExternalLink className="size-3.5" aria-hidden="true" />
+                        {excipientSheet.sourcesCell[locale]}
+                        <ChevronDown className={`size-3.5 transition ${srcOpen === id ? "rotate-180" : ""}`} aria-hidden="true" />
+                      </button>
+                    </td>
                   </tr>
+                  {srcOpen === id && !isOpen && (
+                    <tr>
+                      <td colSpan={7} className="bg-vault-50 p-4">
+                        <p className="text-sm font-semibold text-vault-900">
+                          <bdi>{r.name}</bdi> — {t.detail.read[locale]}
+                        </p>
+                        <SourceList r={r} locale={locale} wide />
+                      </td>
+                    </tr>
+                  )}
                   {isOpen && (
                     <tr>
-                      <td colSpan={6} className="bg-vault-50">
+                      <td colSpan={7} className="bg-vault-50">
                         <Detail r={r} data={data} locale={locale} />
                       </td>
                     </tr>
