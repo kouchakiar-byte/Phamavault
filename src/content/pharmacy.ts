@@ -192,3 +192,43 @@ export const compounding = {
     { label: "USP–NF 2026 <51> Antimicrobial Effectiveness Testing", url: "https://www.uspnf.com/" },
   ] as Ref[],
 };
+
+/** Live search of the Iran FDA product register, with the alternatives of each generic. */
+export const iranDrugs = {
+  key: "iran-drugs",
+  title: bi("Iranian medicines and their alternatives", "داروهای ایران و جایگزین‌ها"),
+  lead: bi(
+    "Search the Iran FDA register by generic or brand name: every licensed product of the same generic (same generic code — same ingredient, dosage form and strength) is listed together, cheapest first, with the brand owner, licence holder, pack and approved price — the alternatives to offer when one brand is out of stock.",
+    "با نام ژنریک یا تجاری در سامانه سازمان غذا و دارو جستجو کنید: همه فرآورده‌های دارای مجوز با یک کد ژنریک (همان ماده مؤثره، شکل دارویی و قدرت) کنار هم و از ارزان‌ترین می‌آیند، با صاحب برند، صاحب پروانه، بسته‌بندی و قیمت مصوب؛ یعنی جایگزین‌هایی که وقتی یک برند نایاب است می‌توانید پیشنهاد کنید.",
+  ),
+  placeholder: bi("e.g. Metformin, Amoxicillin, Atorvastatin", "مثلاً Metformin، Amoxicillin، Atorvastatin"),
+  search: bi("Search", "جستجو"),
+  loading: bi("Asking the Iran FDA register…", "در حال جستجو در سامانه سازمان غذا و دارو…"),
+  hint: bi("Type at least 3 letters; English generic names give the most complete results.", "دست‌کم ۳ حرف بنویسید؛ نام ژنریک انگلیسی کامل‌ترین نتیجه را می‌دهد."),
+  none: bi("No licensed product found for “{q}”.", "فرآورده دارای مجوزی برای «{q}» پیدا نشد."),
+  unavailable: bi(
+    "The Iran FDA register is not answering right now. Try again in a few minutes, or open the search on the register itself.",
+    "سامانه سازمان غذا و دارو الان پاسخ نمی‌دهد. چند دقیقه دیگر دوباره امتحان کنید، یا جستجو را در خود سامانه باز کنید.",
+  ),
+  unreadable: bi(
+    "The register answered, but its page could not be read. Open the search on the register itself.",
+    "سامانه پاسخ داد اما صفحه آن خوانده نشد. جستجو را در خود سامانه باز کنید.",
+  ),
+  locked: bi("This search is part of the pharmacy plan.", "این جستجو بخشی از اشتراک داروخانه است."),
+  generic: bi("Generic code {code}", "کد ژنریک {code}"),
+  products: bi("{n} licensed products", "{n} فرآورده دارای مجوز"),
+  cols: {
+    brand: bi("Brand owner", "صاحب برند"),
+    licence: bi("Licence holder", "صاحب پروانه"),
+    pack: bi("Pack", "بسته‌بندی"),
+    price: bi("Price per pack", "قیمت هر بسته"),
+    code: bi("Product code", "کد فرآورده"),
+  },
+  rial: bi("Rial", "ریال"),
+  toman: bi("Toman", "تومان"),
+  openRegister: bi("Open this search in the Iran FDA register", "باز کردن همین جستجو در سامانه سازمان غذا و دارو"),
+  source: bi(
+    "Source: Iran Food and Drug Administration product register (irc.fda.gov.ir), read live when you search and kept for a day. Prices are the approved prices shown in the register; check the register before dispensing.",
+    "منبع: سامانه فرآورده‌های دارای مجوز سازمان غذا و دارو (irc.fda.gov.ir)، هنگام جستجو مستقیم خوانده و یک روز نگه داشته می‌شود. قیمت‌ها همان قیمت مصوب درج‌شده در سامانه است؛ پیش از تحویل دارو با خود سامانه تطبیق دهید.",
+  ),
+};
