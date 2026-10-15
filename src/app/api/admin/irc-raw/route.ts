@@ -18,6 +18,13 @@ export async function GET(request: Request) {
     const body = [
       `requests: ${reply.chain.join("  →  ")}`,
       `bytes: ${html.length}`,
+      // Links inside the result cards: where a product's own page (licence date, packaging) lives.
+      "----- links (first 15) -----",
+      ...[...new Set(Array.from(html.matchAll(/href\s*=\s*["']([^"'#]+)["']/gi), (m) => m[1]))]
+        .filter((h) => !/\.(css|js|png|jpe?g|svg|ico|woff2?)(\?|$)/i.test(h) && !/^(javascript|mailto|tel):/i.test(h))
+        .filter((h) => /nfi|detail|drug|product|license|licence/i.test(h))
+        .slice(0, 15),
+      "-----",
       `parsed products: ${parsed.length}`,
       JSON.stringify(parsed.slice(0, 3), null, 1),
       "----- text lines (first 120) -----",

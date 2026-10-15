@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { ExternalLink, Search } from "lucide-react";
 import { iranDrugs as t } from "@/content/pharmacy";
 import type { Locale } from "@/i18n/config";
-import type { IranDrugResult } from "@/lib/iran-drugs";
+import type { IranDrugResult, IranGeneric } from "@/lib/iran-drugs";
+import { moieties, moietyKey, moietyLabel } from "@/lib/moieties";
 
 const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
 const registerUrl = (q: string) => `https://irc.fda.gov.ir/nfi/Search?Term=${encodeURIComponent(q)}&PageNumber=1&PageSize=10`;
@@ -14,7 +15,24 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<IranDrugResult | null>(null);
   const [state, setState] = useState<"idle" | "loading" | "locked">("idle");
+  const [picked, setPicked] = useState<string | null>(null);
   const q = query.trim();
+
+  // The medicines found, by exact set of active ingredients: metformin alone, metformin + linagliptin, …
+  const options = useMemo(() => {
+    const byKey = new Map<string, { key: string; generics: IranGeneric[]; products: number }>();
+    for (const g of result?.generics ?? []) {
+      const key = moietyKey(moieties(g.titleEn || g.titleFa));
+      const o = byKey.get(key) ?? { key, generics: [], products: 0 };
+      o.generics.push(g);
+      o.products += g.products.length;
+      byKey.set(key, o);
+    }
+    const asked = result ? moietyKey(moieties(result.term)) : "";
+    // The medicine typed comes first (metformin before its combinations), then the most products.
+    return [...byKey.values()].sort((a, b) => Number(b.key === asked) - Number(a.key === asked) || b.products - a.products);
+  }, [result]);
+  const chosen = options.find((o) => o.key === picked) ?? options[0];
 
   const search = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,6 +42,7 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
       const res = await fetch(`/api/iran-drugs?q=${encodeURIComponent(q)}`);
       if (res.status === 403) return setState("locked");
       setResult((await res.json()) as IranDrugResult);
+      setPicked(null);
     } catch {
       setResult({ term: q, status: "unavailable", generics: [], total: 0, fetchedAt: "", source: registerUrl(q) });
     }
@@ -63,8 +82,36 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
         {state === "locked" && <p className="rounded-xl bg-capsule-400/10 px-4 py-3 text-sm text-vault-900">{t.locked[locale]}</p>}
         {state === "idle" && message && <p className="rounded-xl bg-vault-50 px-4 py-3 text-sm text-ink">{message}</p>}
 
+        {state === "idle" && options.length > 1 && (
+          <div className="rounded-card border border-line bg-white p-4">
+            <p className="text-sm font-semibold text-vault-900">{t.which[locale]}</p>
+            <div className="mt-3 flex flex-wrap gap-2" role="radiogroup" aria-label={t.which[locale]}>
+              {options.map((o) => {
+                const on = o.key === chosen?.key;
+                return (
+                  <button
+                    key={o.key}
+                    type="button"
+                    role="radio"
+                    aria-checked={on}
+                    onClick={() => setPicked(o.key)}
+                    className={`rounded-full border px-3.5 py-1.5 text-sm transition ${
+                      on ? "border-molecule-500 bg-molecule-600 font-semibold text-white" : "border-line bg-white text-vault-800 hover:border-molecule-400"
+                    }`}
+                  >
+                    <bdi>{moietyLabel(o.key)}</bdi>
+                    <span className={`ms-1.5 text-xs ${on ? "text-white/80" : "text-muted"}`}>
+                      ({t.optionCount[locale].replace("{n}", n(o.products, locale)).replace("{d}", n(o.generics.length, locale))})
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {state === "idle" &&
-          result?.generics.map((g) => (
+          chosen?.generics.map((g) => (
             <section key={g.genericCode + g.titleEn} className="overflow-hidden rounded-card border border-line bg-white">
               <header className="border-b border-line bg-vault-50 px-4 py-3">
                 <h3 className="font-bold text-vault-900">{g.titleFa || g.titleEn}</h3>
