@@ -1,5 +1,6 @@
 import { databaseConfigured, db, transaction } from "./db";
 import { invalidateCatalog, loadCatalog, type CatalogKind } from "./catalog";
+import { refreshIranDrugs } from "./iran-drugs";
 import { tehranNow } from "./scheduler";
 
 /** Adds an edit to the queue the next daily update publishes. `data: null` hides the record. */
@@ -120,5 +121,7 @@ export async function runDailyUpdate({ force = false } = {}): Promise<RunSummary
     [day, published, new Set(urls).size, unreachable],
   );
   invalidateCatalog(); // the new run date is the "last updated" stamp
+  // Renew the most asked Iranian-medicine searches in the background (paced, a few minutes).
+  void refreshIranDrugs().catch((error) => console.error("iran drugs refresh failed", error));
   return { day, finishedAt: rows[0]?.finished_at ?? null, published, checked: new Set(urls).size, unreachable };
 }
