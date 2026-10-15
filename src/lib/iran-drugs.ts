@@ -146,7 +146,12 @@ export function parseIrc(html: string): IranDrug[] {
 
 export function groupByGeneric(drugs: IranDrug[]): IranGeneric[] {
   const groups = new Map<string, IranGeneric>();
+  const seen = new Set<string>();
   for (const d of drugs) {
+    // Pages can overlap (or repeat when the register ignores the page number): one row per product.
+    const id = d.productCode || `${d.brandOwner}|${d.titleEn}|${d.pack}`;
+    if (seen.has(id)) continue;
+    seen.add(id);
     const key = d.genericCode || d.titleEn || d.titleFa;
     const g = groups.get(key) ?? { genericCode: d.genericCode, titleFa: d.titleFa, titleEn: d.titleEn, products: [] };
     g.products.push(d);
@@ -157,8 +162,8 @@ export function groupByGeneric(drugs: IranDrug[]): IranGeneric[] {
 }
 
 /** Fetches one register search page; throws when the register cannot be reached. */
-export async function fetchIrcPage(term: string): Promise<string> {
-  const res = await ircGet(ircSearchUrl(term, 1, PAGE_SIZE));
+export async function fetchIrcPage(term: string, page = 1): Promise<string> {
+  const res = await ircGet(ircSearchUrl(term, page, PAGE_SIZE));
   if (res.status < 200 || res.status >= 300) throw new Error(`IRC ${res.status}`);
   return res.body;
 }
@@ -180,13 +185,22 @@ export async function searchIranDrugs(raw: string): Promise<IranDrugResult> {
     return hit?.result ?? { ...base, status: "unavailable" };
   }
   const drugs = parseIrc(html);
+  // A full page means there may be more: read up to 4 further pages while the rate allows.
+  for (let page = 2; drugs.length === (page - 1) * PAGE_SIZE && page <= 5 && allowRequest(); page++) {
+    try {
+      drugs.push(...parseIrc(await fetchIrcPage(term, page)));
+    } catch {
+      break;
+    }
+  }
   const looksLikeResults = /صاحب\s*برند|کد\s*ژنریک/.test(textLines(html).join(" "));
   const result: IranDrugResult = {
     ...base,
     status: drugs.length ? "ok" : looksLikeResults ? "unreadable" : "empty",
     generics: groupByGeneric(drugs),
-    total: drugs.length,
+    total: 0,
   };
+  result.total = result.generics.reduce((n, g) => n + g.products.length, 0);
   if (result.status !== "unreadable") {
     if (cache.size > 1000) cache.delete(cache.keys().next().value!);
     cache.set(key, { at: Date.now(), result });
