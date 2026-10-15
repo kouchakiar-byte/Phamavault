@@ -5,6 +5,7 @@ import { orangeBook as t } from "@/content/pharmacy";
 import type { Locale } from "@/i18n/config";
 import type { ObResult } from "@/lib/orange-book";
 import { formatDate } from "@/lib/format";
+import { IranMakers } from "./iran-makers";
 import { useUrlParam } from "@/lib/use-url-param";
 
 const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
@@ -120,32 +121,7 @@ export function OrangeBookSearch({ locale, iran = true }: { locale: Locale; iran
           {g.more > 0 && <p className="mt-2 text-xs text-muted">{t.more[locale].replace("{n}", n(g.more, locale))}</p>}
 
           {iran && <h4 className="mt-4 text-sm font-bold text-vault-900">{t.iranTitle[locale]}</h4>}
-          {!iran ? null : g.iran.length === 0 ? (
-            <p className="mt-1 text-sm text-muted">{t.iranEmpty[locale]}</p>
-          ) : (
-            <div className="mt-2 overflow-x-auto rounded-xl border border-line">
-              <table className="db">
-                <thead>
-                  <tr>
-                    <th>{t.iranCols.brand[locale]}</th>
-                    <th>{t.iranCols.company[locale]}</th>
-                    <th>{t.iranCols.form[locale]}</th>
-                    <th>{t.iranCols.strength[locale]}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {g.iran.map((p, i) => (
-                    <tr key={i}>
-                      <td className="font-medium text-vault-900">{p.brand}</td>
-                      <td>{p.company}</td>
-                      <td>{p.form}</td>
-                      <td className="num">{p.strength}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
+          {iran && <IranMakers locale={locale} ingredient={g.ingredient} />}
         </section>
       ))}
     </div>
