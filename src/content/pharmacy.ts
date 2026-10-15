@@ -74,7 +74,7 @@ export const orangeBook = {
   iranFailed: bi("The Iran FDA register is not answering right now; try again in a few minutes.", "سامانه سازمان غذا و دارو الان پاسخ نمی‌دهد؛ چند دقیقه دیگر دوباره امتحان کنید."),
   iranLocked: bi("Iranian manufacturers are part of the pharmacy plan.", "تولیدکنندگان داخلی بخشی از اشتراک داروخانه است."),
   iranCount: bi("{n} licensed products", "{n} فرآورده دارای مجوز"),
-  iranCodes: bi("Product code {p} · generic code {g}", "کد فرآورده {p} · کد ژنریک {g}"),
+  iranCodes: bi("IRC {p} · generic code {g}", "کد \u2066IRC\u2069 {p} · کد ژنریک {g}"),
   iranSource: bi("Source: Iran FDA product register (irc.fda.gov.ir); approved prices per pack.", "منبع: سامانه فرآورده‌های دارای مجوز سازمان غذا و دارو (irc.fda.gov.ir)؛ قیمت مصوب هر بسته."),
   toman: bi("Toman", "تومان"),
   iranCols: {
@@ -231,7 +231,7 @@ export const iranDrugs = {
     licence: bi("Marketing authorisation holder", "دارنده پروانه"),
     pack: bi("Pack presentation", "بسته‌بندی"),
     price: bi("Approved price per pack", "قیمت مصوب هر بسته"),
-    code: bi("Product code", "کد فرآورده"),
+    code: bi("IRC", "کد \u2066IRC\u2069"),
     brandName: bi("Brand name", "نام تجاری"),
     genericCode: bi("Generic code", "کد ژنریک"),
   },
