@@ -66,15 +66,20 @@ export const orangeBook = {
     discn: bi("Discontinued", "متوقف‌شده"),
   },
   iranTitle: bi("Iranian manufacturers", "تولیدکنندگان داخلی"),
-  iranEmpty: bi(
-    "The list of Iranian manufacturers is being added from the Iran FDA's official records. Meanwhile, check the Iran FDA site.",
-    "فهرست تولیدکنندگان داخلی در حال تکمیل از روی داده‌های رسمی سازمان غذا و دارو است. تا آن زمان به سایت سازمان غذا و دارو مراجعه کنید.",
+  iranLoading: bi("Looking up the Iran FDA register…", "در حال جستجو در سامانه سازمان غذا و دارو…"),
+  iranNone: bi(
+    "No Iranian licensed product with exactly this active ingredient was found. Try the Iranian medicines search above with the ingredient's international name.",
+    "فرآورده دارای مجوز داخلی با دقیقاً همین ماده مؤثره پیدا نشد. با نام بین‌المللی ماده مؤثره در جستجوی «داروهای ایران» در بالای همین صفحه امتحان کنید.",
   ),
+  iranFailed: bi("The Iran FDA register is not answering right now; try again in a few minutes.", "سامانه سازمان غذا و دارو الان پاسخ نمی‌دهد؛ چند دقیقه دیگر دوباره امتحان کنید."),
+  iranLocked: bi("Iranian manufacturers are part of the pharmacy plan.", "تولیدکنندگان داخلی بخشی از اشتراک داروخانه است."),
+  iranCount: bi("{n} licensed products", "{n} فرآورده دارای مجوز"),
+  iranSource: bi("Source: Iran FDA product register (irc.fda.gov.ir); approved prices per pack.", "منبع: سامانه فرآورده‌های دارای مجوز سازمان غذا و دارو (irc.fda.gov.ir)؛ قیمت مصوب هر بسته."),
+  toman: bi("Toman", "تومان"),
   iranCols: {
-    brand: bi("Brand", "نام تجاری"),
-    company: bi("Manufacturer", "تولیدکننده"),
-    form: bi("Dosage form", "شکل دارویی"),
-    strength: bi("Strength", "قدرت"),
+    company: bi("Manufacturer (brand owner)", "تولیدکننده (صاحب برند)"),
+    pack: bi("Pack", "بسته‌بندی"),
+    price: bi("Price per pack", "قیمت هر بسته"),
   },
   note: bi(
     "TE codes beginning with A are therapeutically equivalent to the reference product (e.g. AB: bioequivalence demonstrated); codes beginning with B are not considered equivalent; a blank code means no multisource comparison (single source or OTC monograph). RLD = reference listed drug, the product generics are compared with; RS = reference standard for bioequivalence studies. Orange Book equivalence is a US regulatory status: substitution in Iran follows the Iran FDA list and the prescriber.",
