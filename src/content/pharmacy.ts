@@ -231,6 +231,8 @@ export const iranDrugs = {
     brandName: bi("Brand name", "نام تجاری"),
   },
   genericOnly: bi("Sold under the generic name", "با نام ژنریک"),
+  which: bi("Which medicine? Each option is one exact ingredient or combination, in all its strengths.", "کدام دارو؟ هر گزینه دقیقاً یک ماده مؤثره یا یک ترکیب است، با همه دوزهایش."),
+  optionCount: bi("{d} strengths · {n} products", "{d} دوز · {n} فرآورده"),
   updated: bi("Updated daily at 18:00 Tehran time · this answer: {date}", "به‌روزرسانی روزانه ساعت ۱۸ · این نتیجه: {date}"),
   rial: bi("Rial", "ریال"),
   toman: bi("Toman", "تومان"),

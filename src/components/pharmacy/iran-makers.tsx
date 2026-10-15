@@ -4,52 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { orangeBook as t } from "@/content/pharmacy";
 import type { Locale } from "@/i18n/config";
 import type { IranDrugResult, IranGeneric } from "@/lib/iran-drugs";
+import { moieties, sameSet } from "@/lib/moieties";
 
 const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
 
-/** US (USAN) names that Iran lists under the international (INN) name. */
-const INN: Record<string, string> = {
-  GLYBURIDE: "GLIBENCLAMIDE",
-  ACETAMINOPHEN: "PARACETAMOL",
-  ALBUTEROL: "SALBUTAMOL",
-  EPINEPHRINE: "ADRENALINE",
-  NOREPINEPHRINE: "NORADRENALINE",
-  LIDOCAINE: "LIDOCAINE",
-  MEPERIDINE: "PETHIDINE",
-  CYCLOSPORINE: "CICLOSPORIN",
-  RIFAMPIN: "RIFAMPICIN",
-  FUROSEMIDE: "FUROSEMIDE",
-  ISOPROTERENOL: "ISOPRENALINE",
-  PHENYTOIN: "PHENYTOIN",
-  BUDESONIDE: "BUDESONIDE",
-};
-
-/** Words that name a salt, form, route or unit rather than the active moiety. */
-const NOT_MOIETY = new Set(
-  (
-    "AND WITH OF FOR PER EQ BASE HCL HYDROCHLORIDE DIHYDROCHLORIDE HYDROBROMIDE SODIUM POTASSIUM CALCIUM MAGNESIUM ZINC " +
-    "SULFATE SULPHATE MALEATE ACETATE CITRATE TARTRATE BITARTRATE BESYLATE BESILATE MESYLATE MESILATE FUMARATE SUCCINATE " +
-    "PHOSPHATE BROMIDE CHLORIDE NITRATE LACTATE GLUCONATE HYCLATE HYDRATE MONOHYDRATE DIHYDRATE TRIHYDRATE ANHYDROUS " +
-    "TABLET TABLETS CAPSULE CAPSULES ORAL INJECTION INJECTABLE SOLUTION SUSPENSION SYRUP DROP DROPS CREAM OINTMENT GEL " +
-    "LOTION SPRAY NASAL OPHTHALMIC OTIC TOPICAL RECTAL VAGINAL SUPPOSITORY FILM COATED EXTENDED DELAYED SUSTAINED " +
-    "MODIFIED RELEASE CHEWABLE DISPERSIBLE EFFERVESCENT ORALLY DISINTEGRATING POWDER RECONSTITUTION INTRAVENOUS " +
-    "INTRAMUSCULAR SUBCUTANEOUS IV IM SC VIAL AMPOULE PREFILLED SYRINGE PEN INHALATION AEROSOL ELIXIR EMULSION " +
-    "MG G MCG ML IU UNIT UNITS KG L"
-  ).split(" "),
-);
-
-/** Active moieties of a name: "GLYBURIDE; METFORMIN HYDROCHLORIDE" → {GLIBENCLAMIDE, METFORMIN}. */
-function moieties(name: string): Set<string> {
-  return new Set(
-    name
-      .toUpperCase()
-      .split(/[^A-Z]+/)
-      .filter((w) => w.length > 2 && !NOT_MOIETY.has(w))
-      .map((w) => INN[w] ?? w),
-  );
-}
-
-const sameSet = (a: Set<string>, b: Set<string>) => a.size === b.size && [...a].every((x) => b.has(x));
 
 /** One request per term for all the cards of a search (e.g. every metformin combination). */
 const requests = new Map<string, Promise<IranDrugResult | "locked">>();
