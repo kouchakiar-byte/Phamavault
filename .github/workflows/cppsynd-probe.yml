@@ -1,0 +1,12 @@
+name: cppsynd probe (temporary)
+on:
+  push:
+    branches: ["claude/**"]
+    paths: [".github/workflows/cppsynd-probe.yml", ".github/probe/**"]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read the syndicate member pages
+        run: python3 .github/probe/cppsynd.py
