@@ -74,6 +74,7 @@ export const orangeBook = {
   iranFailed: bi("The Iran FDA register is not answering right now; try again in a few minutes.", "سامانه سازمان غذا و دارو الان پاسخ نمی‌دهد؛ چند دقیقه دیگر دوباره امتحان کنید."),
   iranLocked: bi("Iranian manufacturers are part of the pharmacy plan.", "تولیدکنندگان داخلی بخشی از اشتراک داروخانه است."),
   iranCount: bi("{n} licensed products", "{n} فرآورده دارای مجوز"),
+  iranCodes: bi("IRC {p} · generic code {g}", "کد \u2066IRC\u2069 {p} · کد ژنریک {g}"),
   iranSource: bi("Source: Iran FDA product register (irc.fda.gov.ir); approved prices per pack.", "منبع: سامانه فرآورده‌های دارای مجوز سازمان غذا و دارو (irc.fda.gov.ir)؛ قیمت مصوب هر بسته."),
   toman: bi("Toman", "تومان"),
   iranCols: {
@@ -230,8 +231,9 @@ export const iranDrugs = {
     licence: bi("Marketing authorisation holder", "دارنده پروانه"),
     pack: bi("Pack presentation", "بسته‌بندی"),
     price: bi("Approved price per pack", "قیمت مصوب هر بسته"),
-    code: bi("Product code", "کد فرآورده"),
+    code: bi("IRC", "کد \u2066IRC\u2069"),
     brandName: bi("Brand name", "نام تجاری"),
+    genericCode: bi("Generic code", "کد ژنریک"),
   },
   genericOnly: bi("Sold under the generic name", "با نام ژنریک"),
   which: bi(
@@ -242,7 +244,6 @@ export const iranDrugs = {
   updated: bi("Updated daily at 18:00 \u2066(Tehran)\u2069 · last update: {date}", "به‌روزرسانی روزانه ساعت ۱۸ · آخرین به‌روزرسانی این نتیجه: {date}"),
   rial: bi("Rial", "ریال"),
   toman: bi("Toman", "تومان"),
-  openRegister: bi("View this search in the official Iran FDA register", "مشاهده همین جستجو در سامانه رسمی سازمان غذا و دارو"),
   source: bi(
     "Source: Iran Food and Drug Administration — register of licensed finished products (irc.fda.gov.ir), updated daily at 18:00 (Tehran). Prices are the approved consumer prices recorded in the register. Substitution remains subject to the prescriber and current Iran FDA regulations.",
     "منبع: سازمان غذا و دارو، سامانه فرآورده‌های نهایی دارای مجوز \u2066(irc.fda.gov.ir)\u2069؛ به‌روزرسانی روزانه ساعت ۱۸. قیمت‌ها قیمت مصوب مصرف‌کننده ثبت‌شده در سامانه است. جایگزینی دارو تابع نظر پزشک معالج و ضوابط جاری سازمان غذا و دارو است.",

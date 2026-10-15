@@ -1,14 +1,29 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ExternalLink, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import { iranDrugs as t } from "@/content/pharmacy";
 import type { Locale } from "@/i18n/config";
 import type { IranDrugResult, IranGeneric } from "@/lib/iran-drugs";
+import { splitStrength } from "@/lib/drug-title";
 import { moieties, moietyKey, moietyLabel } from "@/lib/moieties";
 
 const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
-const registerUrl = (q: string) => `https://irc.fda.gov.ir/nfi/Search?Term=${encodeURIComponent(q)}&PageNumber=1&PageSize=10`;
+
+/** The medicine's name, then its strength as one left-to-right chip. */
+function Title({ title }: { title: string }) {
+  const [name, strength] = splitStrength(title);
+  return (
+    <h3 className="flex flex-wrap items-center gap-x-2 gap-y-1 font-bold text-vault-900">
+      <span>{name}</span>
+      {strength && (
+        <span dir="ltr" className="rounded-md bg-white px-2 py-0.5 text-sm font-semibold text-molecule-700 ring-1 ring-line">
+          {strength}
+        </span>
+      )}
+    </h3>
+  );
+}
 
 /** Live search of the Iran FDA register: each generic with its licensed products, cheapest first. */
 export function IranDrugSearch({ locale }: { locale: Locale }) {
@@ -44,7 +59,7 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
       setResult((await res.json()) as IranDrugResult);
       setPicked(null);
     } catch {
-      setResult({ term: q, status: "unavailable", generics: [], total: 0, fetchedAt: "", source: registerUrl(q) });
+      setResult({ term: q, status: "unavailable", generics: [], total: 0, fetchedAt: "", source: "" });
     }
     setState("idle");
   };
@@ -114,14 +129,14 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
           chosen?.generics.map((g) => (
             <section key={g.genericCode + g.titleEn} className="overflow-hidden rounded-card border border-line bg-white">
               <header className="border-b border-line bg-vault-50 px-4 py-3">
-                <h3 className="font-bold text-vault-900">{g.titleFa || g.titleEn}</h3>
+                <Title title={g.titleFa || g.titleEn} />
                 {g.titleEn && g.titleFa && (
-                  <p className="mt-0.5 text-xs text-muted" dir="ltr" style={{ textAlign: "start" }}>
-                    {g.titleEn}
+                  <p className="mt-1 text-xs text-muted" dir="ltr" style={{ textAlign: "start" }}>
+                    {splitStrength(g.titleEn)[0]}
                   </p>
                 )}
                 <p className="mt-1 flex flex-wrap gap-x-3 text-xs font-semibold text-molecule-700">
-                  {g.genericCode && <span>{t.generic[locale].replace("{code}", n(Number(g.genericCode), locale))}</span>}
+                  {g.genericCode && <span>{t.generic[locale].replace("{code}", g.genericCode)}</span>}
                   <span>{t.products[locale].replace("{n}", n(g.products.length, locale))}</span>
                 </p>
               </header>
@@ -155,9 +170,19 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
                         <span className="text-muted">{t.genericOnly[locale]}</span>
                       )}
                     </div>
-                    <p className="min-w-0 break-words text-xs text-ink" dir="ltr" style={{ textAlign: "start" }}>
-                      {p.pack}
-                    </p>
+                    <div className="min-w-0 text-xs">
+                      <p className="break-words text-ink" dir="ltr" style={{ textAlign: "start" }}>
+                        {p.pack}
+                      </p>
+                      <p className="mt-1 text-muted">
+                        {t.cols.code[locale]}: <span dir="ltr" className="font-mono text-vault-800">{p.productCode || "—"}</span>
+                      </p>
+                      {p.genericCode && (
+                        <p className="text-muted">
+                          {t.cols.genericCode[locale]}: <span dir="ltr" className="font-mono text-vault-800">{p.genericCode}</span>
+                        </p>
+                      )}
+                    </div>
                     <p className="whitespace-nowrap font-semibold text-vault-900 sm:text-end">
                       {p.priceRial !== null ? (
                         <>
@@ -176,17 +201,6 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
             </section>
           ))}
 
-        {result && state === "idle" && (
-          <a
-            href={result.source || registerUrl(result.term)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-molecule-700 hover:underline"
-          >
-            <ExternalLink className="size-4" aria-hidden="true" />
-            {t.openRegister[locale]}
-          </a>
-        )}
       </div>
       {result?.status === "ok" && result.fetchedAt && state === "idle" && (
         <p className="text-xs text-muted">

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { orangeBook as t } from "@/content/pharmacy";
 import type { Locale } from "@/i18n/config";
 import type { IranDrugResult, IranGeneric } from "@/lib/iran-drugs";
+import { splitStrength } from "@/lib/drug-title";
 import { moieties, sameSet } from "@/lib/moieties";
 
 const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
@@ -65,9 +66,14 @@ export function IranMakers({ locale, ingredient }: { locale: Locale; ingredient:
       {state === "done" &&
         generics.map((g) => (
           <div key={g.genericCode + g.titleEn} className="mt-2 overflow-x-auto rounded-xl border border-line">
-            <p className="border-b border-line bg-vault-50 px-3 py-2 text-sm font-semibold text-vault-900">
-              {g.titleFa || g.titleEn}
-              <span className="ms-2 text-xs font-normal text-muted">{t.iranCount[locale].replace("{n}", n(g.products.length, locale))}</span>
+            <p className="flex flex-wrap items-center gap-x-2 gap-y-1 border-b border-line bg-vault-50 px-3 py-2 text-sm font-semibold text-vault-900">
+              <span>{splitStrength(g.titleFa || g.titleEn)[0]}</span>
+              {splitStrength(g.titleFa || g.titleEn)[1] && (
+                <span dir="ltr" className="rounded-md bg-white px-1.5 py-0.5 text-xs font-semibold text-molecule-700 ring-1 ring-line">
+                  {splitStrength(g.titleFa || g.titleEn)[1]}
+                </span>
+              )}
+              <span className="text-xs font-normal text-muted">{t.iranCount[locale].replace("{n}", n(g.products.length, locale))}</span>
             </p>
             <table className="db">
               <thead>
@@ -86,8 +92,13 @@ export function IranMakers({ locale, ingredient }: { locale: Locale; ingredient:
                         <span className="block text-xs font-normal text-molecule-700">{locale === "fa" ? p.brandFa || p.brandEn : p.brandEn || p.brandFa}</span>
                       )}
                     </td>
-                    <td dir="ltr" className="text-xs" style={{ textAlign: "start" }}>
-                      {p.pack}
+                    <td className="text-xs">
+                      <span className="block" dir="ltr" style={{ textAlign: "start" }}>
+                        {p.pack}
+                      </span>
+                      <span className="mt-0.5 block text-muted">
+                        {t.iranCodes[locale].replace("{p}", p.productCode || "—").replace("{g}", p.genericCode || "—")}
+                      </span>
                     </td>
                     <td className="whitespace-nowrap">
                       {p.priceRial !== null ? `${n(Math.round(p.priceRial / 10), locale)} ${t.toman[locale]}` : "—"}
