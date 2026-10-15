@@ -93,6 +93,27 @@ export function terms(q: string, synonyms: string[][]): string[][] {
 
 const matchProduct = (key: string, sets: string[][]) => sets.every((s) => s.some((a) => has(key, a)));
 
+/** Words that say "a company" rather than which one: «شرکت داروسازی تماد» and «Temad Co.» are both Temad. */
+const COMPANY_WORDS = new Set([
+  "شرکت", "داروسازی", "دارویی", "صنایع", "گروه", "تولیدی", "تولید", "مواد", "اولیه", "کارخانه", "سهامی", "خاص", "عام",
+  "co", "company", "corp", "ltd", "inc", "llc", "group", "industries", "industrial", "pharmaceutical", "pharmaceuticals",
+]);
+
+/**
+ * A company found by its name however it is typed: with or without «شرکت» /
+ * «داروسازی» / "Co.", with the words in another order, or spaced differently
+ * («دارو پخش» = «داروپخش», "Cinna Gen" = "CinnaGen").
+ */
+export function nameMatch(nameKey: string, q: string): boolean {
+  if (has(nameKey, q)) return true;
+  const flat = nameKey.replace(/ /g, "");
+  const qFlat = q.replace(/ /g, "");
+  if (qFlat.length >= 4 && flat.includes(qFlat)) return true;
+  const words = q.split(" ").filter((w) => w && !COMPANY_WORDS.has(w));
+  if (!words.length || !words.some((w) => w.length >= 3)) return false;
+  return words.every((w) => has(nameKey, w) || (w.length >= 3 && flat.includes(w)));
+}
+
 /** A = syndicate member with phone, B = contact from own site, C = website only, D = marketplace/ads/retail. */
 function tier(d: SupplierRecord): Tier {
   const note = d.note || "";
@@ -138,7 +159,7 @@ export function search(
   const rows = suppliers
     .map((s) => {
       const hits = sets.length ? s.products.filter((p) => matchProduct(p.key, sets)) : [];
-      const nameHit = Boolean(q) && (has(s.nameKey, q) || (Boolean(s.gv) && vitaminQuery));
+      const nameHit = Boolean(q) && (nameMatch(s.nameKey, q) || (Boolean(s.gv) && vitaminQuery));
       return { s, hits, nameHit };
     })
     .filter(
