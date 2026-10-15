@@ -24,6 +24,6 @@ for kind in ("pages", "posts"):
             x = text(it["content"]["rendered"])
             links = [urllib.parse.unquote(u) for u in re.findall(r'href="(https?://[^"]+)"', it["content"]["rendered"])]
             if "نوع فعالیت" not in x: continue
-            print("@@" + json.dumps({"k": kind[0], "t": html.unescape(it["title"]["rendered"]), "u": link, "x": x}, ensure_ascii=False))
+            print("@@" + json.dumps({"k": kind[0], "t": html.unescape(it["title"]["rendered"]), "u": link, "x": x, "h": it["content"]["rendered"]}, ensure_ascii=False))
         if page >= int(hd.get("X-WP-TotalPages", hd.get("x-wp-totalpages", "1"))): break
         page += 1
