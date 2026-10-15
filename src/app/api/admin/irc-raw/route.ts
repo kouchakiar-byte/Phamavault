@@ -1,6 +1,6 @@
 import { getUser } from "@/lib/auth";
-import { diagnose } from "@/lib/irc-http";
-import { fetchIrcPage, IRC_ORIGIN, parseIrc, textLines } from "@/lib/iran-drugs";
+import { diagnose, ircGet } from "@/lib/irc-http";
+import { IRC_ORIGIN, ircSearchUrl, parseIrc, textLines } from "@/lib/iran-drugs";
 
 /**
  * GET /api/admin/irc-raw?q=metformin — admins only: what the Iran FDA register
@@ -12,9 +12,11 @@ export async function GET(request: Request) {
   if (!user?.isAdmin) return new Response("Not found", { status: 404 });
   const q = new URL(request.url).searchParams.get("q") || "metformin";
   try {
-    const html = await fetchIrcPage(q);
+    const reply = await ircGet(ircSearchUrl(q, 1, 100));
+    const html = reply.body;
     const parsed = parseIrc(html);
     const body = [
+      `requests: ${reply.chain.join("  →  ")}`,
       `bytes: ${html.length}`,
       `parsed products: ${parsed.length}`,
       JSON.stringify(parsed.slice(0, 3), null, 1),
