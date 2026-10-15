@@ -23,11 +23,7 @@ for kind in ("pages", "posts"):
             link = urllib.parse.unquote(it["link"])
             x = text(it["content"]["rendered"])
             links = [urllib.parse.unquote(u) for u in re.findall(r'href="(https?://[^"]+)"', it["content"]["rendered"])]
-            if kind == "posts" and not re.search(r"تلفن|مدیرعامل|نوع فعالیت|عضویت", x): continue
-            print("@@" + json.dumps({"k": kind[0], "t": html.unescape(it["title"]["rendered"]), "u": link, "x": x[:2500], "l": [u for u in links if "cppsynd.com/wp-content" not in u][:40]}, ensure_ascii=False))
+            if "نوع فعالیت" not in x: continue
+            print("@@" + json.dumps({"k": kind[0], "t": html.unescape(it["title"]["rendered"]), "u": link, "x": x}, ensure_ascii=False))
         if page >= int(hd.get("X-WP-TotalPages", hd.get("x-wp-totalpages", "1"))): break
         page += 1
-# Tehran chemical importers association: main members
-for u in ["https://tcia.ir/%D9%84%DB%8C%D8%B3%D8%AA-%D8%A7%D8%B9%D8%B6%D8%A7%DB%8C-%D8%A7%D8%B5%D9%84%DB%8C-%D8%A7%D9%86%D8%AC%D9%85%D9%86/"]:
-    s, b, _ = get(u)
-    print("@@" + json.dumps({"k": "tcia", "s": s, "u": u, "x": text(b)[:60000] if s == 200 else b}, ensure_ascii=False))
