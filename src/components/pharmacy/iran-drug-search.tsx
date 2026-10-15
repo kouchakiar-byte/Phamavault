@@ -78,45 +78,54 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
                   <span>{t.products[locale].replace("{n}", n(g.products.length, locale))}</span>
                 </p>
               </header>
-              <div className="overflow-x-auto">
-                <table className="db">
-                  <thead>
-                    <tr>
-                      <th>{t.cols.brand[locale]}</th>
-                      <th>{t.cols.licence[locale]}</th>
-                      <th>{t.cols.pack[locale]}</th>
-                      <th>{t.cols.price[locale]}</th>
-                      <th>{t.cols.code[locale]}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {g.products.map((p) => (
-                      <tr key={p.productCode || p.brandOwner + p.pack}>
-                        <td className="font-semibold text-vault-900">{p.brandOwner}</td>
-                        <td>{p.licenseHolder !== p.brandOwner ? p.licenseHolder : "—"}</td>
-                        <td dir="ltr" className="text-xs" style={{ textAlign: "start" }}>
-                          {p.pack}
-                        </td>
-                        <td className="whitespace-nowrap">
-                          {p.priceRial !== null ? (
-                            <>
-                              {n(p.priceRial, locale)} {t.rial[locale]}
-                              <span className="block text-xs text-muted">
-                                {n(Math.round(p.priceRial / 10), locale)} {t.toman[locale]}
-                              </span>
-                            </>
-                          ) : (
-                            "—"
+              {/* One row per product: works on a phone without sideways scrolling */}
+              <ul className="divide-y divide-line">
+                {g.products.map((p) => (
+                  <li
+                    key={p.productCode || p.brandOwner + p.pack}
+                    className="grid gap-x-4 gap-y-1 px-4 py-3 text-sm sm:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_minmax(0,1.2fr)_auto]"
+                  >
+                    <div className="min-w-0">
+                      <p className="font-semibold text-vault-900">{p.brandOwner}</p>
+                      {p.licenseHolder && p.licenseHolder !== p.brandOwner && (
+                        <p className="text-xs text-muted">
+                          {t.cols.licence[locale]}: {p.licenseHolder}
+                        </p>
+                      )}
+                    </div>
+                    <div className="min-w-0">
+                      <span className="text-xs text-muted sm:hidden">{t.cols.brandName[locale]}: </span>
+                      {p.brandFa || p.brandEn ? (
+                        <span className="font-medium text-molecule-700">
+                          {locale === "fa" ? p.brandFa || p.brandEn : p.brandEn || p.brandFa}
+                          {locale === "fa" && p.brandFa && p.brandEn && (
+                            <span className="ms-1.5 text-xs font-normal text-muted">
+                              <bdi>{p.brandEn}</bdi>
+                            </span>
                           )}
-                        </td>
-                        <td className="font-mono text-xs" dir="ltr">
-                          {p.productCode}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+                        </span>
+                      ) : (
+                        <span className="text-muted">{t.genericOnly[locale]}</span>
+                      )}
+                    </div>
+                    <p className="min-w-0 break-words text-xs text-ink" dir="ltr" style={{ textAlign: "start" }}>
+                      {p.pack}
+                    </p>
+                    <p className="whitespace-nowrap font-semibold text-vault-900 sm:text-end">
+                      {p.priceRial !== null ? (
+                        <>
+                          {n(Math.round(p.priceRial / 10), locale)} {t.toman[locale]}
+                          <span className="block text-xs font-normal text-muted">
+                            {n(p.priceRial, locale)} {t.rial[locale]}
+                          </span>
+                        </>
+                      ) : (
+                        "—"
+                      )}
+                    </p>
+                  </li>
+                ))}
+              </ul>
             </section>
           ))}
 
@@ -132,6 +141,18 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
           </a>
         )}
       </div>
+      {result?.status === "ok" && result.fetchedAt && state === "idle" && (
+        <p className="text-xs text-muted">
+          {t.updated[locale].replace(
+            "{date}",
+            new Date(result.fetchedAt).toLocaleString(locale === "fa" ? "fa-IR" : "en-GB", {
+              timeZone: "Asia/Tehran",
+              dateStyle: "medium",
+              timeStyle: "short",
+            }),
+          )}
+        </p>
+      )}
       <p className="text-xs leading-relaxed text-muted">{t.source[locale]}</p>
     </div>
   );

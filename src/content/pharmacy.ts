@@ -228,12 +228,15 @@ export const iranDrugs = {
     pack: bi("Pack", "بسته‌بندی"),
     price: bi("Price per pack", "قیمت هر بسته"),
     code: bi("Product code", "کد فرآورده"),
+    brandName: bi("Brand name", "نام تجاری"),
   },
+  genericOnly: bi("Sold under the generic name", "با نام ژنریک"),
+  updated: bi("Updated daily at 18:00 Tehran time · this answer: {date}", "به‌روزرسانی روزانه ساعت ۱۸ · این نتیجه: {date}"),
   rial: bi("Rial", "ریال"),
   toman: bi("Toman", "تومان"),
   openRegister: bi("Open this search in the Iran FDA register", "باز کردن همین جستجو در سامانه سازمان غذا و دارو"),
   source: bi(
-    "Source: Iran Food and Drug Administration product register (irc.fda.gov.ir), read live when you search and kept for a day. Prices are the approved prices shown in the register; check the register before dispensing.",
-    "منبع: سامانه فرآورده‌های دارای مجوز سازمان غذا و دارو (irc.fda.gov.ir)، هنگام جستجو مستقیم خوانده و یک روز نگه داشته می‌شود. قیمت‌ها همان قیمت مصوب درج‌شده در سامانه است؛ پیش از تحویل دارو با خود سامانه تطبیق دهید.",
+    "Source: Iran Food and Drug Administration product register (irc.fda.gov.ir), read from the register and renewed daily at 18:00 Tehran time. Prices are the approved prices shown in the register; check the register before dispensing.",
+    "منبع: سامانه فرآورده‌های دارای مجوز سازمان غذا و دارو (irc.fda.gov.ir)، از سامانه خوانده و هر روز ساعت ۱۸ به‌روز می‌شود. قیمت‌ها همان قیمت مصوب درج‌شده در سامانه است؛ پیش از تحویل دارو با خود سامانه تطبیق دهید.",
   ),
 };

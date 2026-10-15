@@ -122,7 +122,12 @@ export function IranMakers({ locale, ingredient }: { locale: Locale; ingredient:
               <tbody>
                 {g.products.map((p) => (
                   <tr key={p.productCode || p.brandOwner + p.pack}>
-                    <td className="font-medium text-vault-900">{p.brandOwner}</td>
+                    <td className="font-medium text-vault-900">
+                      {p.brandOwner}
+                      {(p.brandFa || p.brandEn) && (
+                        <span className="block text-xs font-normal text-molecule-700">{locale === "fa" ? p.brandFa || p.brandEn : p.brandEn || p.brandFa}</span>
+                      )}
+                    </td>
                     <td dir="ltr" className="text-xs" style={{ textAlign: "start" }}>
                       {p.pack}
                     </td>

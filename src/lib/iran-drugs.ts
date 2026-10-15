@@ -22,10 +22,19 @@ export type IranDrug = {
   pack: string;
   productCode: string;
   genericCode: string;
+  /** The product's own brand name ("" for a product sold under its generic name). */
+  brandFa: string;
+  brandEn: string;
 };
 
-/** Products of one generic (same generic code): the alternatives to each other. */
-export type IranGeneric = { genericCode: string; titleFa: string; titleEn: string; products: IranDrug[] };
+/** Products of one generic (same generic code: ingredient, form and strength) — the alternatives to each other. */
+export type IranGeneric = {
+  genericCode: string;
+  /** The generic name with form and strength, e.g. "محلول تزریقی سماگلوتاید 2 mg/1.5 mL". */
+  titleFa: string;
+  titleEn: string;
+  products: IranDrug[];
+};
 
 export type IranDrugResult = {
   term: string;
@@ -38,8 +47,18 @@ export type IranDrugResult = {
 };
 
 const PAGE_SIZE = 100;
-const DAY = 24 * 60 * 60 * 1000;
 const cache = new Map<string, { at: number; result: IranDrugResult }>();
+/** How often each term was asked for: the daily refresh renews the most asked first. */
+const asked = new Map<string, number>();
+
+/** The last 18:00 Tehran time (UTC+3:30) at or before `now`: answers older than that are renewed. */
+export function lastDailyUpdate(now = Date.now()): number {
+  const tehranOffset = 3.5 * 3600_000;
+  const local = new Date(now + tehranOffset);
+  let at = Date.UTC(local.getUTCFullYear(), local.getUTCMonth(), local.getUTCDate(), 18) - tehranOffset;
+  if (at > now) at -= 24 * 3600_000;
+  return at;
+}
 
 // At most 20 requests to the register per minute from the whole site.
 const window: number[] = [];
@@ -126,10 +145,13 @@ export function parseIrc(html: string): IranDrug[] {
       const fa = card.title.filter((t) => /[؀-ۿ]/.test(t)).at(-1) ?? "";
       const en = card.title.filter((t) => !/[؀-ۿ]/.test(t) && /[A-Za-z]/.test(t)).at(-1) ?? "";
       const price = latinDigits(card.price ?? "").replace(/[^\d]/g, "");
+      // "(SALT FORM … )BASE FORM …" as the register prints it → "BASE FORM … (SALT FORM …)"
+      const titleEn = en.replace(/^\((.+?)\s*\)\s*(.+)$/, "$2 ($1)");
       out.push({
         titleFa: fa,
-        // "(SALT FORM … )BASE FORM …" as the register prints it → "BASE FORM … (SALT FORM …)"
-        titleEn: en.replace(/^\((.+?)\s*\)\s*(.+)$/, "$2 ($1)"),
+        titleEn,
+        brandFa: brandFa(fa),
+        brandEn: brandEn(titleEn),
         brandOwner: card.brandOwner ?? "",
         licenseHolder: card.licenseHolder ?? "",
         priceRial: price ? Number(price) : null,
@@ -144,6 +166,50 @@ export function parseIrc(html: string): IranDrug[] {
   return out;
 }
 
+/** "OUTER (INNER)" → [outer, inner]; the register writes the product title, then the generic in brackets. */
+const splitTitle = (t: string): [string, string] => {
+  const m = /^(.*?)\s*\((.*)\)\s*$/.exec(t.trim());
+  return m ? [m[1].trim(), m[2].trim()] : [t.trim(), ""];
+};
+const words = (t: string) => t.split(/\s+/).filter(Boolean);
+const titleCase = (t: string) => t.toLowerCase().replace(/(^|[\s-])(\p{L})/gu, (_, p: string, c: string) => p + c.toUpperCase());
+
+/** Brand part of an English title: what precedes the form and strength it shares with the generic. */
+export function brandEn(title: string): string {
+  const [outer, inner] = splitTitle(title);
+  if (!inner) return "";
+  const o = words(outer);
+  const i = words(inner);
+  let k = 0;
+  while (k < o.length && k < i.length && o[o.length - 1 - k].toLowerCase() === i[i.length - 1 - k].toLowerCase()) k++;
+  const prefix = o.slice(0, o.length - k);
+  const innerSet = new Set(i.map((w) => w.toLowerCase()));
+  if (!prefix.length || prefix.every((w) => innerSet.has(w.toLowerCase()))) return "";
+  return titleCase(prefix.join(" "));
+}
+
+/** Brand part of a Persian title: what precedes the dosage-form word that opens the generic in brackets. */
+export function brandFa(title: string): string {
+  const [outer, inner] = splitTitle(title);
+  if (!inner) return "";
+  const o = words(outer);
+  const i = words(inner);
+  const at = o.indexOf(i[0]);
+  if (at <= 0) return "";
+  const prefix = o.slice(0, at);
+  return prefix.every((w) => i.includes(w)) ? "" : prefix.join(" ");
+}
+
+/** The generic of a product title: the bracketed name, with the strength taken from the product title. */
+function genericTitle(title: string): string {
+  const [outer, inner] = splitTitle(title);
+  if (!inner) return outer;
+  if (/\d/.test(inner)) return inner;
+  const o = words(outer);
+  const first = o.findIndex((w) => /\d/.test(w));
+  return first < 0 ? inner : `${inner} ${o.slice(first).join(" ")}`;
+}
+
 export function groupByGeneric(drugs: IranDrug[]): IranGeneric[] {
   const groups = new Map<string, IranGeneric>();
   const seen = new Set<string>();
@@ -153,7 +219,7 @@ export function groupByGeneric(drugs: IranDrug[]): IranGeneric[] {
     if (seen.has(id)) continue;
     seen.add(id);
     const key = d.genericCode || d.titleEn || d.titleFa;
-    const g = groups.get(key) ?? { genericCode: d.genericCode, titleFa: d.titleFa, titleEn: d.titleEn, products: [] };
+    const g = groups.get(key) ?? { genericCode: d.genericCode, titleFa: genericTitle(d.titleFa), titleEn: genericTitle(d.titleEn), products: [] };
     g.products.push(d);
     groups.set(key, g);
   }
@@ -174,8 +240,10 @@ export async function searchIranDrugs(raw: string): Promise<IranDrugResult> {
   const base = { term, generics: [], total: 0, fetchedAt: new Date().toISOString(), source: ircSearchUrl(term) };
   if (term.length < 3) return { ...base, status: "empty" };
 
+  asked.set(key, (asked.get(key) ?? 0) + 1);
   const hit = cache.get(key);
-  if (hit && Date.now() - hit.at < DAY) return hit.result;
+  // Answers are renewed daily at 18:00 Tehran time, together with the rest of the catalog.
+  if (hit && hit.at >= lastDailyUpdate()) return hit.result;
   if (!allowRequest()) return hit?.result ?? { ...base, status: "unavailable" };
 
   let html: string;
@@ -206,4 +274,21 @@ export async function searchIranDrugs(raw: string): Promise<IranDrugResult> {
     cache.set(key, { at: Date.now(), result });
   }
   return result;
+}
+
+/**
+ * The daily 18:00 refresh: renews the answers of the most asked terms (up to
+ * 40), one request every 4 seconds so the register is never loaded.
+ */
+export async function refreshIranDrugs(limit = 40): Promise<number> {
+  const terms = [...asked.entries()].sort((a, b) => b[1] - a[1]).slice(0, limit).map(([t]) => t);
+  let renewed = 0;
+  for (const term of terms) {
+    const hit = cache.get(term);
+    if (hit && hit.at >= lastDailyUpdate()) continue;
+    await new Promise((r) => setTimeout(r, 4_000));
+    const result = await searchIranDrugs(term);
+    if (result.status === "ok" || result.status === "empty") renewed++;
+  }
+  return renewed;
 }
