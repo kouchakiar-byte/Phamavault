@@ -86,8 +86,13 @@ export function IranMakers({ locale, ingredient }: { locale: Locale; ingredient:
                         <span className="block text-xs font-normal text-molecule-700">{locale === "fa" ? p.brandFa || p.brandEn : p.brandEn || p.brandFa}</span>
                       )}
                     </td>
-                    <td dir="ltr" className="text-xs" style={{ textAlign: "start" }}>
-                      {p.pack}
+                    <td className="text-xs">
+                      <span className="block" dir="ltr" style={{ textAlign: "start" }}>
+                        {p.pack}
+                      </span>
+                      <span className="mt-0.5 block text-muted">
+                        {t.iranCodes[locale].replace("{p}", p.productCode || "—").replace("{g}", p.genericCode || "—")}
+                      </span>
                     </td>
                     <td className="whitespace-nowrap">
                       {p.priceRial !== null ? `${n(Math.round(p.priceRial / 10), locale)} ${t.toman[locale]}` : "—"}
