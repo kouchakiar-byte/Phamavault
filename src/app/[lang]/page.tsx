@@ -1,3 +1,4 @@
+import { EnamadSeal } from "@/components/enamad-seal";
 import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 import {
@@ -484,6 +485,10 @@ export default async function HomePage() {
           </div>
 
           <PriceEstimator locale={locale} />
+
+          <div className="mt-10 flex justify-center">
+            <EnamadSeal locale={locale} className="w-full max-w-md" />
+          </div>
 
           {/* Comparison table */}
           <BiTitle as="h3" text={plans.compareTitle} locale={locale} className="mt-20 text-2xl font-bold text-vault-900" />

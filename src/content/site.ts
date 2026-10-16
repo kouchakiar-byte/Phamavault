@@ -17,7 +17,7 @@ export const siteConfig = {
     hours: bi("Saturday to Wednesday, 9:00–17:00", "شنبه تا چهارشنبه، ساعت ۹ تا ۱۷"),
   },
   /** e-Namad trust seal: the id and code from the e-Namad panel; null hides the badge. */
-  enamad: null as { id: string; code: string } | null,
+  enamad: { id: "8206119", code: "cRoMXWmJrmcqg8byEKpKdBNXXvYg9sQ5" } as { id: string; code: string } | null,
   /** e-Namad domain check: the number e-Namad gives for its <meta name="enamad"> tag; null leaves it out. */
   enamadVerify: null as string | null,
 };
@@ -485,6 +485,14 @@ export const copy = {
     ),
   },
 
+  enamad: {
+    title: bi("Electronic Trust Seal (e-Namad)", "نماد اعتماد الکترونیکی (اینماد)"),
+    text: bi(
+      "Licensed for online business and sales by the Center for E-Commerce Development, Ministry of Industry, Mine and Trade.",
+      "دارای مجوز کسب‌وکار و فروش اینترنتی از مرکز توسعه تجارت الکترونیکی، وزارت صنعت، معدن و تجارت.",
+    ),
+    check: bi("Tap the seal to verify it on enamad.ir", "برای استعلام، روی نماد بزنید"),
+  },
   footer: {
     about: bi(
       "A specialised pharmaceutical knowledge and information platform for research and development (R&D), production, quality control (QC), quality assurance (QA), regulatory affairs and supply chain.",
