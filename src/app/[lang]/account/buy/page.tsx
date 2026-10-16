@@ -1,3 +1,4 @@
+import { EnamadSeal } from "@/components/enamad-seal";
 import { Suspense } from "react";
 import { BuyForm } from "@/components/account/forms";
 import { AccountShell, Loading, accountMetadata } from "@/components/account/shell";
@@ -64,6 +65,7 @@ export default async function BuyPage({ searchParams }: PageProps<"/[lang]/accou
       <Suspense fallback={<Loading label="…" />}>
         <Checkout locale={locale} searchParams={searchParams} />
       </Suspense>
+      <EnamadSeal locale={locale} className="mx-auto mt-8 w-full max-w-md" />
     </AccountShell>
   );
 }
