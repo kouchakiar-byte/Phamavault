@@ -3,6 +3,7 @@ import { IBM_Plex_Sans, JetBrains_Mono, Vazirmatn } from "next/font/google";
 import { InstallApp } from "@/components/install-app";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { VisitBeacon } from "@/components/visit-beacon";
 import { copy, siteConfig } from "@/content/site";
 import { localeDirection, locales } from "@/i18n/config";
 import { languageAlternates } from "@/lib/metadata";
@@ -103,6 +104,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
         </main>
         <SiteFooter />
         <InstallApp locale={locale} />
+        <VisitBeacon />
       </body>
     </html>
   );
