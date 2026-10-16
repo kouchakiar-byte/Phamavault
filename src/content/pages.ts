@@ -57,6 +57,7 @@ export const pages = {
       sup: bi("Supplement ingredients and amino acids", "مواد اولیه مکمل و آمینواسیدها"),
       bio: bi("Biologics", "فرآورده‌های بیولوژیک"),
       std: bi("Laboratory reference standards", "استانداردهای مرجع آزمایشگاهی"),
+      pkg: bi("Pharmaceutical packaging", "بسته‌بندی دارویی"),
     } as Record<string, ReturnType<typeof bi>>,
     sort: bi("Sort", "مرتب‌سازی"),
     sorts: {
