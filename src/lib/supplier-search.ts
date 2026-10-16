@@ -24,6 +24,7 @@ export type SupplierRecord = {
   hi?: number; // force tier B
   partial?: number; // incomplete entry
   gv?: number; // general vitamin supplier: matches any vitamin query
+  cs?: number; // specialist in cosmetic raw materials: first when the cosmetic category is chosen
   webDown?: boolean; // website failed several daily link checks in a row
 };
 
@@ -192,5 +193,8 @@ export function search(
     name: (a, b) => a.s.n.localeCompare(b.s.n, "fa"),
   };
 
-  return rows.map(({ s, hits }) => ({ s, hits })).sort(compare[f.sort]);
+  // With the cosmetic category chosen, cosmetic specialists come first, then the chosen order.
+  const cosFocus = (r: Result) => (r.s.cs ? 2 : 0) + (r.s.c[0] === "cos" ? 1 : 0);
+  const order = f.cat === "cos" ? (a: Result, b: Result) => cosFocus(b) - cosFocus(a) || compare[f.sort](a, b) : compare[f.sort];
+  return rows.map(({ s, hits }) => ({ s, hits })).sort(order);
 }
