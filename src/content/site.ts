@@ -491,7 +491,6 @@ export const copy = {
       "Licensed for online business and sales by the Center for E-Commerce Development, Ministry of Industry, Mine and Trade.",
       "دارای مجوز کسب‌وکار و فروش اینترنتی از مرکز توسعه تجارت الکترونیکی، وزارت صنعت، معدن و تجارت.",
     ),
-    check: bi("Tap the seal to verify it on enamad.ir", "برای استعلام، روی نماد بزنید"),
   },
   footer: {
     about: bi(
