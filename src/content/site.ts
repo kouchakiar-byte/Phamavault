@@ -11,8 +11,8 @@ export const siteConfig = {
    */
   contact: {
     owner: null as string | null,
-    address: "تهران، خیابان آزادی، مرکز ایستگاه نوآوری شریف" as string | null,
-    postalCode: "1517615561" as string | null,
+    address: "تهران، بلوار نلسون ماندلا، کوچه اول" as string | null,
+    postalCode: null as string | null,
     phone: "0938 941 1123" as string | null,
     hours: bi("Saturday to Wednesday, 9:00–17:00", "شنبه تا چهارشنبه، ساعت ۹ تا ۱۷"),
   },
