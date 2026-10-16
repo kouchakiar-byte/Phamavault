@@ -89,6 +89,15 @@ create table if not exists catalog_runs (
   checked int not null default 0,
   unreachable int not null default 0
 );
+create table if not exists page_views (
+  id bigserial primary key,
+  at timestamptz not null default now(),
+  path text not null,
+  visitor text not null,
+  ref text,
+  device text not null
+);
+create index if not exists page_views_at_idx on page_views(at);
 create table if not exists supplier_links (
   url text primary key,
   fails int not null default 0,

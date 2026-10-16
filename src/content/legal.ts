@@ -216,6 +216,10 @@ export const privacy: LegalPage = {
           "دستگاه و IP ورود فعال، برای اجرای قاعده «یک کاربر روی یک دستگاه».",
         ),
         bi("Two cookies: the sign-in session and your language choice.", "دو کوکی: نشست ورود به حساب و زبان انتخابی شما."),
+        bi(
+          "Anonymous visit counts (page, referring site, device type), kept on our own server to see which pages are useful. No cookie is set for this and no IP is stored; visitors are counted with a one-way code that changes every day.",
+          "آمار ناشناس بازدید (صفحه، سایت ارجاع‌دهنده و نوع دستگاه) روی سرور خود سایت، برای اینکه بدانیم کدام صفحه‌ها مفیدند. برای این کار کوکی گذاشته نمی‌شود و IP ذخیره نمی‌شود؛ بازدیدکننده با یک کد یک‌طرفه شمرده می‌شود که هر روز عوض می‌شود.",
+        ),
       ],
     },
     {

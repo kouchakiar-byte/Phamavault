@@ -50,6 +50,9 @@ async function Admin({ locale }: { locale: Locale }) {
     <div className="space-y-8">
       <div className="flex flex-wrap items-baseline justify-between gap-4">
         <BiTitle as="h1" text={t.title} locale={locale} className="text-3xl font-bold text-vault-900" />
+        <Link href={href(locale, "admin/visits")} className="rounded-full border border-molecule-600 px-4 py-2 text-sm font-semibold text-molecule-700 hover:bg-molecule-50">
+          {t.visits.link[locale]}
+        </Link>
         <Link href={href(locale, "admin/catalog")} className="rounded-full bg-molecule-600 px-4 py-2 text-sm font-semibold text-white hover:bg-molecule-700">
           {t.catalog.link[locale]}
         </Link>
