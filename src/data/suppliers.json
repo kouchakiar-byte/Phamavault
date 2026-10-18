@@ -1774,9 +1774,18 @@
    "tel": [
     "041-36300281-2"
    ],
-   "note": "مواد شیمیایی؛ فهرست محصول در منبع نیامده است.",
-   "src": "https://cppsynd.com/",
-   "p": []
+   "web": "https://www.chlorpars.com/",
+   "note": "تولیدکننده محصولات کلر-آلکالی؛ فهرست محصول از سایت شرکت (گرید محصولات در سایت ذکر نشده است؛ پیش از مصرف دارویی گرید و CoA را استعلام کنید).",
+   "src": "https://www.chlorpars.com/",
+   "p": [
+    "آب اکسیژنه|Hydrogen peroxide",
+    "اسید کلریدریک|Hydrochloric acid",
+    "سود پرک|Sodium hydroxide flakes",
+    "سود مایع|Sodium hydroxide solution",
+    "آب ژاول|Sodium hypochlorite solution",
+    "پرکلرین|Calcium hypochlorite",
+    "کلرور فریک|Ferric chloride"
+   ]
   },
   {
    "n": "آمو فارمد آریا",

@@ -97,8 +97,8 @@ export const copy = {
       "مرجع تخصصی دانش، اطلاعات و ابزارهای داروسازی",
     ),
     text: bi(
-      "From raw material sourcing and formulation development to technical calculations and quality and regulatory requirements — built on authoritative, citable scientific sources.",
-      "از تأمین مواد اولیه و توسعه فرمولاسیون تا محاسبات فنی، الزامات کیفی و رگولاتوری؛ مبتنی بر منابع علمی معتبر و قابل استناد.",
+      "From raw material sourcing and formulation development to technical calculations and quality and regulatory requirements — compiled by the PharmaVault expert team from authoritative, citable scientific sources.",
+      "از تأمین مواد اولیه و توسعه فرمولاسیون تا محاسبات فنی، الزامات کیفی و رگولاتوری؛ تدوین‌شده توسط تیم تخصصی فارماوالت بر پایه منابع علمی معتبر و قابل استناد.",
     ),
   },
 
@@ -389,15 +389,15 @@ export const copy = {
       {
         title: bi("Custom handbook", "هندبوک اختصاصی"),
         text: bi(
-          "A handbook written around your products, production lines and procedures.",
-          "هندبوکی که برای محصولات، خطوط تولید و رویه‌های شرکت شما نوشته می‌شود.",
+          "A handbook written by the PharmaVault expert team around your products, production lines and procedures.",
+          "هندبوکی که تیم تخصصی فارماوالت برای محصولات، خطوط تولید و رویه‌های شرکت شما می‌نویسد.",
         ),
       },
       {
         title: bi("Company-specific software", "نرم‌افزار ویژه شرکت"),
         text: bi(
-          "A calculation or formulation tool built on your data and your way of working.",
-          "ابزار محاسبه یا فرمولاسیون که با داده‌ها و روش کار شرکت شما ساخته می‌شود.",
+          "A calculation or formulation tool the PharmaVault expert team builds on your data and your way of working.",
+          "ابزار محاسبه یا فرمولاسیون که تیم تخصصی فارماوالت با داده‌ها و روش کار شرکت شما می‌سازد.",
         ),
       },
       {
@@ -408,6 +408,28 @@ export const copy = {
         ),
       },
     ],
+  },
+
+  ctdService: {
+    eyebrow: bi("CTD dossier compilation", "تدوین CTD"),
+    title: bi("Your project's CTD in just 5 working days", "تدوین CTD پروژه شما فقط در ۵ روز کاری"),
+    lead: bi(
+      "The PharmaVault expert team compiles your registration dossier in the Common Technical Document format (ICH M4), ready for submission to the Iran Food and Drug Administration.",
+      "تیم تخصصی فارماوالت پرونده ثبت فرآورده شما را در قالب سند فنی مشترک (CTD) بر اساس ICH M4 و آماده ارائه به سازمان غذا و دارو تدوین می‌کند.",
+    ),
+    points: [
+      bi("Module 1: regional administrative documents for the IFDA", "ماژول ۱: مدارک اداری و منطقه‌ای مطابق الزامات سازمان غذا و دارو"),
+      bi("Module 2: quality overall summary and overviews", "ماژول ۲: خلاصه کلی کیفیت (QOS) و مرورها"),
+      bi("Module 3: drug substance (3.2.S) and drug product (3.2.P), stability included", "ماژول ۳: ماده مؤثره (3.2.S) و فرآورده (3.2.P) همراه با پایداری"),
+      bi("Review against ICH Q-series guidelines and the current pharmacopoeias", "بازبینی بر اساس راهنماهای سری ICH Q و آخرین ویرایش فارماکوپه‌ها"),
+    ],
+    days: bi("working days", "روز کاری"),
+    cta: bi("Request CTD compilation", "درخواست تدوین CTD"),
+    subject: bi("PharmaVault — CTD compilation request", "PharmaVault — درخواست تدوین CTD"),
+    body: bi(
+      "Name:\nCompany:\nProduct (name, dosage form, strength):\nModules needed:\nPhone:\n",
+      "نام و نام خانوادگی:\nشرکت:\nفرآورده (نام، شکل دارویی، قدرت):\nماژول‌های موردنیاز:\nشماره تماس:\n",
+    ),
   },
 
   faq: {
@@ -445,8 +467,8 @@ export const copy = {
       {
         q: bi("Can we order company-specific handbooks, SOPs or software?", "آیا امکان سفارش هندبوک، SOP یا نرم‌افزار اختصاصی شرکت وجود دارد؟"),
         a: bi(
-          "Yes. Custom handbooks, company-specific software and database licences can be ordered separately from a subscription or together with the Team / Organisation plan.",
-          "بله. هندبوک اختصاصی، نرم‌افزار ویژه شرکت و مجوز استفاده از پایگاه داده را می‌توان جدا از اشتراک یا همراه با طرح تیمی / سازمانی سفارش داد.",
+          "Yes. The PharmaVault expert team prepares custom handbooks, company-specific software, database licences and CTD dossiers (compiled in 5 working days), ordered separately from a subscription or together with the Team / Organisation plan.",
+          "بله. تیم تخصصی فارماوالت هندبوک اختصاصی، نرم‌افزار ویژه شرکت، مجوز استفاده از پایگاه داده و تدوین CTD (در ۵ روز کاری) را جدا از اشتراک یا همراه با طرح تیمی / سازمانی آماده می‌کند.",
         ),
       },
       {

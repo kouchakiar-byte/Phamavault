@@ -136,7 +136,7 @@ export default async function HomePage() {
     supplierMaterials: suppliers.companies.reduce((n, c) => n + c.p.length, 0),
     materials: rawMaterials.items.length,
   };
-  const { hero, departments, sectionsIntro, databases, toolsShowcase, howItWorks, plans, faq, contact } = copy;
+  const { hero, departments, sectionsIntro, ctdService, databases, toolsShowcase, howItWorks, plans, faq, contact } = copy;
   const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
   const enterprise = plans.items.find((p) => p.id === "enterprise")!;
   const { pricing } = plans;
@@ -157,7 +157,7 @@ export default async function HomePage() {
       <section className="relative isolate overflow-hidden bg-vault-900 text-white">
         <MoleculePattern className="text-white/[0.05]" />
         <div className="absolute -top-40 end-[-10%] -z-10 size-[36rem] rounded-full bg-molecule-500/20 blur-3xl" />
-        <Container className="grid items-center gap-14 py-20 lg:grid-cols-[1.15fr_1fr] lg:py-28">
+        <Container className="grid items-start gap-10 pb-16 pt-8 sm:pt-10 lg:grid-cols-[1.15fr_1fr] lg:gap-14 lg:pb-20 lg:pt-12">
           <div className="fade-in">
             {/* Brand: the vault mark beside the name, as tall as the name and slogan together */}
             <h1 className="flex max-w-full items-center gap-3 sm:gap-5" dir="ltr">
@@ -211,7 +211,7 @@ export default async function HomePage() {
 
           {/* The "vault" panel: every section one click away */}
           <div className="fade-in [animation-delay:.1s]">
-            <p className="mx-auto mb-4 flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-molecule-400">
+            <p className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-molecule-400">
               {copy.platform[locale]}
               <span className="text-molecule-400/60" aria-hidden="true">·</span>
               <span dir={locale === "fa" ? "ltr" : "rtl"}>{copy.platform[locale === "fa" ? "en" : "fa"]}</span>
@@ -224,19 +224,19 @@ export default async function HomePage() {
                   <p className="text-xs text-vault-100/60">{copy.platform[locale]}</p>
                 </div>
               </div>
-              <ul className="mt-3 grid gap-0.5">
+              <ul className="mt-4 grid gap-1.5">
                 {sections.map(({ slug, href: path, icon: Icon, title }) => (
                   <li key={slug}>
                     <Link
                       href={href(locale, path)}
-                      className="group flex items-center gap-3.5 rounded-xl px-2.5 py-2 transition hover:bg-white/[0.06]"
+                      className="group flex items-center gap-3.5 rounded-xl border border-white/10 bg-white/[0.07] px-2.5 py-2 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-gradient-to-l hover:from-capsule-400 hover:to-capsule-500 hover:text-vault-950 hover:shadow-lg hover:shadow-capsule-500/30 focus-visible:scale-[0.97] motion-reduce:transform-none"
                     >
-                      <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-molecule-500/15 text-molecule-400">
+                      <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-molecule-500/15 text-molecule-400 transition group-hover:bg-vault-950/90 group-hover:text-capsule-400">
                         <Icon className="size-[1.1rem]" aria-hidden="true" />
                       </span>
-                      <span className="flex-1 text-sm font-medium">{title[locale]}</span>
+                      <span className="flex-1 text-sm font-medium group-hover:font-semibold">{title[locale]}</span>
                       <ArrowUpRight
-                        className="size-4 shrink-0 text-vault-100/40 transition group-hover:text-molecule-400 rtl:-scale-x-100"
+                        className="size-4 shrink-0 text-vault-100/40 transition group-hover:text-vault-950 rtl:-scale-x-100"
                         aria-hidden="true"
                       />
                     </Link>
@@ -312,13 +312,13 @@ export default async function HomePage() {
               return (
                 <article
                   key={slug}
-                  className="group relative flex flex-col rounded-card border border-line bg-white p-7 transition hover:-translate-y-0.5 hover:border-molecule-400 hover:shadow-lg hover:shadow-vault-900/5"
+                  className="group relative flex flex-col rounded-card border border-vault-100 bg-vault-50 p-7 shadow-sm shadow-vault-900/5 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-capsule-100 hover:shadow-xl hover:shadow-capsule-500/25 focus-within:scale-[0.97] focus-within:border-capsule-400 motion-reduce:transform-none"
                 >
                   <div className="flex items-start justify-between">
-                    <span className="flex size-12 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition group-hover:bg-molecule-500 group-hover:text-white">
+                    <span className="flex size-12 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition duration-300 group-hover:bg-gradient-to-br group-hover:from-capsule-400 group-hover:to-capsule-600 group-hover:text-vault-950">
                       <Icon className="size-6" aria-hidden="true" />
                     </span>
-                    <span className="rounded border border-line px-2 py-0.5 font-mono text-xs tracking-widest text-muted" dir="ltr">
+                    <span className="rounded border border-line bg-white/60 px-2 py-0.5 font-mono text-xs tracking-widest text-muted transition group-hover:border-capsule-400 group-hover:text-capsule-700" dir="ltr">
                       {plate}
                     </span>
                   </div>
@@ -329,14 +329,50 @@ export default async function HomePage() {
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted">{description[locale]}</p>
                   {highlight && (
-                    <p className="mt-4 self-start rounded-md bg-molecule-50 px-2.5 py-1 text-xs font-semibold text-molecule-700">
+                    <p className="mt-4 self-start rounded-md bg-molecule-50 px-2.5 py-1 text-xs font-semibold text-molecule-700 transition group-hover:bg-white/70 group-hover:text-capsule-700">
                       {highlight[locale]}
                     </p>
                   )}
-                  <span className="mt-auto pt-6 text-sm font-semibold text-molecule-700">{sectionsIntro.open[locale]}</span>
+                  <span className="mt-auto pt-6 text-sm font-semibold text-molecule-700 transition group-hover:text-capsule-700">{sectionsIntro.open[locale]}</span>
                 </article>
               );
             })}
+          </div>
+        </Container>
+      </section>
+
+      {/* CTD compilation service */}
+      <section id="ctd" className="scroll-mt-20 pb-20 lg:pb-28">
+        <Container>
+          <div className="relative isolate grid gap-10 overflow-hidden rounded-3xl bg-vault-900 px-6 py-12 text-white sm:px-12 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+            <MoleculePattern className="text-white/[0.05]" />
+            <div className="absolute -top-32 end-[-6rem] -z-10 size-[26rem] rounded-full bg-capsule-500/20 blur-3xl" />
+            <div>
+              <p className="text-sm font-semibold text-capsule-400">{ctdService.eyebrow[locale]}</p>
+              <BiTitle as="h2" text={ctdService.title} locale={locale} className="mt-3 text-3xl font-bold sm:text-4xl" secondaryClassName="text-vault-100" />
+              <p className="mt-4 max-w-2xl text-lg leading-relaxed text-vault-100/85">{ctdService.lead[locale]}</p>
+              <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
+                {ctdService.points.map((pt) => (
+                  <li key={pt.en} className="flex gap-2.5 text-sm leading-relaxed text-vault-100/90">
+                    <Check className="mt-0.5 size-4 shrink-0 text-capsule-400" aria-hidden="true" />
+                    {pt[locale]}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8">
+                <a
+                  href={`mailto:${siteConfig.email}?subject=${encodeURIComponent(ctdService.subject[locale])}&body=${encodeURIComponent(ctdService.body[locale])}`}
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-l from-capsule-400 to-capsule-500 px-6 py-3 text-sm font-bold text-vault-950 shadow-lg shadow-capsule-500/30 transition duration-300 hover:scale-[0.97]"
+                >
+                  <Mail className="size-4" aria-hidden="true" />
+                  {ctdService.cta[locale]}
+                </a>
+              </div>
+            </div>
+            <div className="mx-auto flex size-48 flex-col items-center justify-center rounded-full border-4 border-capsule-400/70 bg-vault-950/50 text-center shadow-2xl shadow-capsule-500/20 sm:size-56">
+              <span className="pv-gold-text text-7xl font-bold leading-none sm:text-8xl">{num(5)}</span>
+              <span className="mt-2 text-base font-semibold text-capsule-400">{ctdService.days[locale]}</span>
+            </div>
           </div>
         </Container>
       </section>

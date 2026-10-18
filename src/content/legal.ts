@@ -29,8 +29,8 @@ export const contactLabels = {
 export const about: LegalPage = {
   title: bi("About PharmaVault", "درباره PharmaVault"),
   lead: bi(
-    "PharmaVault is a specialist reference for pharmaceutical knowledge, data and practical tools, built to support the whole life cycle of a medicine in Iran — from sourcing raw materials and designing the formulation to manufacturing, analysis, quality assurance and registration.",
-    "PharmaVault مرجع تخصصی دانش، داده و ابزارهای کاربردی داروسازی است؛ طراحی‌شده برای پشتیبانی از چرخه کامل توسعه دارو در ایران — از تأمین مواد اولیه و طراحی فرمولاسیون تا تولید، آنالیز، تضمین کیفیت و ثبت فرآورده.",
+    "PharmaVault is a specialist reference for pharmaceutical knowledge, data and practical tools, built by the PharmaVault expert team to support the whole life cycle of a medicine in Iran — from sourcing raw materials and designing the formulation to manufacturing, analysis, quality assurance and registration.",
+    "PharmaVault مرجع تخصصی دانش، داده و ابزارهای کاربردی داروسازی است که توسط تیم تخصصی فارماوالت برای پشتیبانی از چرخه کامل توسعه دارو در ایران طراحی شده است — از تأمین مواد اولیه و طراحی فرمولاسیون تا تولید، آنالیز، تضمین کیفیت و ثبت فرآورده.",
   ),
   sections: [
     {
@@ -60,14 +60,18 @@ export const about: LegalPage = {
           "A regulatory reference for the CTD dossier and ICH guidelines",
           "مرجع رگولاتوری پرونده CTD و راهنماهای ICH",
         ),
+        bi(
+          "CTD dossier compilation for your project in 5 working days by the PharmaVault expert team",
+          "تدوین CTD پروژه شما در ۵ روز کاری توسط تیم تخصصی فارماوالت",
+        ),
       ],
     },
     {
       title: bi("Scientific basis", "مبنای علمی"),
       paragraphs: [
         bi(
-          "Content is drawn from authoritative, citable sources — the USP–NF, BP, Ph. Eur. and JP pharmacopoeias, ICH guidelines and PIC/S GMP — and each topic names its reference so it can be checked against the current official edition.",
-          "محتوا بر پایه منابع معتبر و قابل استناد تدوین می‌شود — فارماکوپه‌های \u2066USP–NF\u2069، \u2066BP\u2069، \u2066Ph. Eur.\u2069 و \u2066JP\u2069، راهنماهای ICH و GMP سازمان \u2066PIC/S\u2069 — و مرجع هر موضوع ذکر می‌شود تا با آخرین ویرایش رسمی قابل تطبیق باشد.",
+          "The PharmaVault expert team draws the content from authoritative, citable sources — the USP–NF, BP, Ph. Eur. and JP pharmacopoeias, ICH guidelines and PIC/S GMP — and each topic names its reference so it can be checked against the current official edition.",
+          "محتوا توسط تیم تخصصی فارماوالت بر پایه منابع معتبر و قابل استناد تدوین می‌شود — فارماکوپه‌های \u2066USP–NF\u2069، \u2066BP\u2069، \u2066Ph. Eur.\u2069 و \u2066JP\u2069، راهنماهای ICH و GMP سازمان \u2066PIC/S\u2069 — و مرجع هر موضوع ذکر می‌شود تا با آخرین ویرایش رسمی قابل تطبیق باشد.",
         ),
       ],
     },
@@ -88,8 +92,8 @@ export const about: LegalPage = {
 export const contact: LegalPage = {
   title: bi("Contact us", "تماس با ما"),
   lead: bi(
-    "Questions about subscriptions, invoices for companies, custom handbooks or the content of the site — we are glad to help.",
-    "برای پرسش درباره اشتراک، پیش‌فاکتور شرکت‌ها، سفارش هندبوک اختصاصی یا محتوای سایت، با ما در تماس باشید.",
+    "Questions about subscriptions, invoices for companies, CTD compilation, custom handbooks or the content of the site — the PharmaVault expert team is glad to help.",
+    "برای پرسش درباره اشتراک، پیش‌فاکتور شرکت‌ها، تدوین CTD، سفارش هندبوک اختصاصی یا محتوای سایت، با تیم تخصصی فارماوالت در تماس باشید.",
   ),
   sections: [],
 };
