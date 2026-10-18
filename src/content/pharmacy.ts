@@ -28,11 +28,11 @@ export const interactionsCopy = {
   unknown: bi("Not found in the database:", "در پایگاه داده پیدا نشد:"),
   maxDrugs: bi("Up to 10 medicines can be checked together.", "حداکثر ۱۰ دارو را می‌توان همزمان بررسی کرد."),
   summary: bi("{n} interactions found among {p} pairs", "{n} تداخل در {p} جفت دارو یافت شد"),
-  none: bi("No interaction recorded for these medicines", "برای این داروها تداخل ثبت‌شده‌ای یافت نشد"),
-  clearPairs: bi("No interaction recorded", "تداخل ثبت‌شده‌ای ندارد"),
+  none: bi("No significant interaction identified", "تداخل مهمی شناسایی نشد"),
+  clearPairs: bi("No significant interaction identified", "تداخل مهمی شناسایی نشد"),
   noneNote: bi(
-    "This means no interaction is recorded in the PharmaVault database, not that none exists. Check the product information of both medicines.",
-    "یعنی در پایگاه داده فارماوالت تداخلی ثبت نشده است، نه اینکه قطعاً تداخلی وجود ندارد. اطلاعات فرآورده هر دو دارو را بررسی کنید.",
+    "Clinical monitoring appropriate to the patient's condition is recommended.",
+    "پایش بالینی متناسب با شرایط بیمار توصیه می‌شود.",
   ),
   highest: bi("Highest severity", "بالاترین شدت"),
   effect: bi("Effect", "اثر بالینی"),
@@ -257,6 +257,193 @@ export const compounding = {
     { label: "USP–NF 2026 <795> Pharmaceutical Compounding—Nonsterile Preparations", url: "https://www.uspnf.com/" },
     { label: "USP–NF 2026 <51> Antimicrobial Effectiveness Testing", url: "https://www.uspnf.com/" },
   ] as Ref[],
+};
+
+/** Practical guide to compounding: key numbers, technique cards, published formulas and paediatric excipients. */
+export const compoundingGuide = {
+  factsTitle: bi("Numbers every compounder should know", "اعدادی که هر سازنده باید بداند"),
+  facts: [
+    { value: "180", unit: bi("days", "روز"), text: bi("Maximum BUD for a non-sterile preparation, even with stability data (USP <795>)", `سقف BUD فرآورده غیراستریل، حتی با داده پایداری ${ltr("(USP <795>)")}`) },
+    { value: "120", unit: bi("mg", "میلی‌گرم"), text: bi("Smallest quantity on a Class A prescription balance (sensitivity 6 mg) for an error of 5% or less", "کمترین مقدار قابل توزین با ترازوی نسخه‌پیچی کلاس A (حساسیت ۶ میلی‌گرم) برای خطای حداکثر ۵٪") },
+    { value: "1:1", unit: bi("ratio", "نسبت"), text: bi("Ora-Plus : Ora-Sweet, the most studied vehicle for oral suspensions in children", "Ora-Plus به Ora-Sweet، پرمطالعه‌ترین حامل سوسپانسیون‌های خوراکی کودکان") },
+    { value: "0.60", unit: bi("aw", "aw"), text: bi("Water activity at or above which a preparation counts as aqueous and gets a short BUD", "فعالیت آبی که از آن به بالا فرآورده آبی محسوب می‌شود و BUD کوتاه می‌گیرد") },
+  ],
+  topicsTitle: bi("Compounding step by step", "ساخت فرآورده، گام به گام"),
+  topics: [
+    {
+      key: "when",
+      title: bi("When compounding is justified", "چه زمانی ساخت فرآورده توجیه دارد"),
+      points: [
+        bi("No licensed product in the strength or dosage form the patient needs, e.g. an oral liquid for an infant or a patient who cannot swallow.", "فرآورده دارای مجوز با قدرت یا شکل دارویی موردنیاز بیمار وجود ندارد؛ مثلاً شربت برای شیرخوار یا بیماری که نمی‌تواند قرص ببلعد."),
+        bi("The patient is allergic or intolerant to an excipient of the commercial product (dye, lactose, gluten, preservative).", "بیمار به یکی از مواد جانبی فرآورده تجاری (رنگ، لاکتوز، گلوتن، نگهدارنده) حساسیت یا عدم تحمل دارد."),
+        bi("The product is discontinued or in shortage.", "فرآورده تولیدش متوقف شده یا با کمبود مواجه است."),
+        bi("Do not compound essential copies of a commercially available product.", "از ساخت نسخه مشابه فرآورده‌ای که در بازار موجود است خودداری شود."),
+      ],
+      refs: ["USP–NF 2026 <795>", "FDA, Human Drug Compounding (Section 503A)"],
+    },
+    {
+      key: "technique",
+      title: bi("Core techniques", "تکنیک‌های پایه"),
+      points: [
+        bi("Trituration: reduce particle size in a mortar before mixing; a finer powder disperses and dissolves better.", "تریچوراسیون: پیش از مخلوط کردن، اندازه ذرات را در هاون کاهش دهید؛ پودر ریزتر بهتر پخش و حل می‌شود."),
+        bi("Geometric dilution: mix a small amount of potent drug with an equal volume of diluent, then keep doubling, so the drug is spread evenly.", "رقیق‌سازی هندسی: مقدار کم داروی قوی را با هم‌حجم خود رقیق‌کننده مخلوط کنید و هر بار دو برابر کنید تا یکنواخت پخش شود."),
+        bi("Levigation: wet the powder into a smooth paste first — mineral oil for oily bases, glycerin or propylene glycol for water-miscible ones.", "لویگیشن: ابتدا پودر را به خمیر یکنواخت تبدیل کنید؛ با روغن معدنی برای پایه‌های چرب و با گلیسرین یا پروپیلن گلیکول برای پایه‌های آب‌دوست."),
+        bi("Add the vehicle in portions with constant mixing, and check the final weight or volume.", "حامل را به‌تدریج و با هم زدن مداوم اضافه کنید و وزن یا حجم نهایی را کنترل کنید."),
+      ],
+      refs: ["Remington, 23rd ed. (2020)", "Allen LV, The Art, Science, and Technology of Pharmaceutical Compounding (APhA)"],
+    },
+    {
+      key: "oral",
+      title: bi("Oral liquids for children", "مایعات خوراکی برای کودکان"),
+      points: [
+        bi("Most published paediatric suspensions are made from crushed tablets in Ora-Plus : Ora-Sweet (1:1) or 1% methylcellulose : simple syrup (1:1).", "بیشتر سوسپانسیون‌های منتشرشده کودکان از قرص خردشده در Ora-Plus و Ora-Sweet (۱ به ۱) یا متیل‌سلولز ۱٪ و شربت ساده (۱ به ۱) ساخته می‌شوند."),
+        bi("Use exactly the formula, container (usually amber plastic or glass) and storage of the published study; a different vehicle needs its own data.", "دقیقاً همان فرمول، ظرف (معمولاً پلاستیک یا شیشه کهربایی) و شرایط نگهداری مطالعه منتشرشده را به کار ببرید؛ حامل متفاوت داده پایداری خودش را می‌خواهد."),
+        bi("Label “Shake well”, the BUD and the storage temperature, and use an oral syringe for measuring.", "روی برچسب «قبل از مصرف تکان دهید»، BUD و دمای نگهداری را بنویسید و برای اندازه‌گیری سرنگ خوراکی بدهید."),
+        bi("Watch the excipients in the table below for neonates and young children.", "مواد جانبی جدول زیر را در نوزادان و کودکان خردسال در نظر داشته باشید."),
+      ],
+      refs: ["Nahata MC, Pai VB, Pediatric Drug Formulations (Harvey Whitney Books)", "Trissel's Stability of Compounded Formulations (APhA)"],
+    },
+    {
+      key: "capsules",
+      title: bi("Capsules", "کپسول"),
+      points: [
+        bi("Choose the size from the fill volume (weight ÷ tapped density) and make up the volume with a diluent such as microcrystalline cellulose or lactose.", "سایز را از حجم پرکردن (وزن ÷ دانسیته پس از ضربه) انتخاب کنید و باقی حجم را با رقیق‌کننده‌ای مانند میکروکریستالین سلولز یا لاکتوز پر کنید."),
+        bi("Blend by geometric dilution, fill by the punch method or a capsule-filling plate, and prepare one or two extra capsules for losses.", "با رقیق‌سازی هندسی مخلوط کنید، به روش پانچ یا با صفحه پرکن کپسول پر کنید و یکی دو کپسول اضافه برای افت در نظر بگیرید."),
+        bi("Check weight: weigh each capsule (or a sample) against the theoretical fill weight.", "کنترل وزن: هر کپسول (یا نمونه‌ای از آن‌ها) را با وزن تئوری مقایسه کنید."),
+      ],
+      refs: ["Remington, 23rd ed. (2020)", "USP–NF 2026 <795>"],
+    },
+    {
+      key: "topical",
+      title: bi("Creams and ointments", "کرم و پماد"),
+      points: [
+        bi("Pick the base by its class: hydrocarbon (white petrolatum, occlusive), absorption (lanolin, takes up water), water-removable (creams) or water-soluble (PEG).", "پایه را بر اساس نوع انتخاب کنید: هیدروکربنی (وازلین سفید، انسدادی)، جذبی (لانولین، آب می‌گیرد)، قابل شست‌وشو با آب (کرم‌ها) یا محلول در آب (PEG)."),
+        bi("Levigate powders before incorporation, or dissolve them in a little compatible liquid; an ointment mill gives a smooth, uniform product.", "پودرها را پیش از افزودن لویگیت کنید یا در کمی مایع سازگار حل کنید؛ آسیاب پماد (Ointment mill) محصول یکنواخت و نرم می‌دهد."),
+        bi("Do not dilute a commercial cream with another base unless compatibility is known: emulsifiers, preservatives and pH may clash.", "کرم تجاری را با پایه دیگر رقیق نکنید مگر سازگاری آن‌ها شناخته شده باشد؛ امولسیفایر، نگهدارنده و pH ممکن است ناسازگار باشند."),
+      ],
+      refs: ["USP–NF 2026, Ointment bases (Pharmaceutical dosage forms <1151>)", "Allen LV, The Art, Science, and Technology of Pharmaceutical Compounding (APhA)"],
+    },
+    {
+      key: "suppositories",
+      title: bi("Suppositories", "شیاف"),
+      points: [
+        bi("Fatty bases (cocoa butter, hard fat) melt at body temperature; overheating cocoa butter forms unstable polymorphs that set poorly, so melt it gently below about 35 °C.", "پایه‌های چرب (کره کاکائو، چربی سخت) در دمای بدن ذوب می‌شوند؛ حرارت زیاد کره کاکائو پلی‌مورف‌های ناپایدار می‌سازد که خوب سفت نمی‌شوند، پس آن را آرام و زیر حدود ۳۵ درجه ذوب کنید."),
+        bi("PEG bases dissolve in body fluids, do not need refrigeration, but can irritate: moisten before insertion.", "پایه‌های PEG در مایعات بدن حل می‌شوند و یخچال نمی‌خواهند ولی ممکن است تحریک کنند؛ پیش از مصرف مرطوب شوند."),
+        bi("Calibrate the mould with the base and correct for the drug's displacement factor.", "قالب را با پایه کالیبره کنید و ضریب جابه‌جایی دارو را اعمال کنید."),
+      ],
+      refs: ["Remington, 23rd ed. (2020)"],
+    },
+    {
+      key: "weighing",
+      title: bi("Weighing accuracy", "دقت توزین"),
+      points: [
+        bi("Know the balance's minimum weight: for a Class A prescription balance (sensitivity requirement 6 mg) weigh at least 120 mg for an error of 5% or less.", "حداقل وزن ترازو را بدانید: با ترازوی کلاس A (حساسیت ۶ میلی‌گرم) برای خطای حداکثر ۵٪ دست‌کم ۱۲۰ میلی‌گرم توزین کنید."),
+        bi("For smaller amounts make an aliquot: weigh a larger quantity, dilute it with an inert powder or liquid and take the fraction that contains the dose.", "برای مقادیر کمتر از روش آلیکوت استفاده کنید: مقدار بیشتری توزین، با پودر یا مایع بی‌اثر رقیق و کسری که دوز لازم را دارد برداشته شود."),
+        bi("Check and calibrate electronic balances regularly with certified weights.", "ترازوهای الکترونیکی را به‌طور منظم با وزنه‌های استاندارد کنترل و کالیبره کنید."),
+      ],
+      refs: ["USP–NF 2026 <41> Balances", "USP–NF 2026 <1251> Weighing on an Analytical Balance"],
+    },
+    {
+      key: "hazardous",
+      title: bi("Hazardous drugs", "داروهای خطرناک (Hazardous drugs)"),
+      points: [
+        bi("Drugs on the NIOSH hazardous-drug list (e.g. methotrexate, tamoxifen, estradiol, testosterone, valganciclovir) need containment, protective equipment and dedicated tools.", "داروهای فهرست داروهای خطرناک NIOSH (مانند متوترکسات، تاموکسیفن، استرادیول، تستوسترون، والگان‌سیکلوویر) به محیط مهارکننده، تجهیزات حفاظت فردی و ابزار اختصاصی نیاز دارند."),
+        bi("Crushing tablets or opening capsules of these drugs on an open bench exposes staff to dust.", "خرد کردن قرص یا باز کردن کپسول این داروها روی میز باز، کارکنان را در معرض گرد و غبار دارو قرار می‌دهد."),
+        bi("Pregnant staff should not compound hazardous drugs without risk assessment.", "کارکنان باردار بدون ارزیابی ریسک داروهای خطرناک را نسازند."),
+      ],
+      refs: ["USP–NF 2026 <800> Hazardous Drugs—Handling in Healthcare Settings", "NIOSH List of Hazardous Drugs in Healthcare Settings (2024)"],
+    },
+  ],
+  formulasTitle: bi("Published paediatric formulas with stability data", "فرمول‌های منتشرشده کودکان با داده پایداری"),
+  formulasLead: bi(
+    "Examples from peer-reviewed stability studies (prepared from commercial tablets). Use the same ingredients, container and storage as the article, and apply the BUD rules of USP <795> and the Iran FDA.",
+    "نمونه‌هایی از مطالعات پایداری داوری‌شده (ساخته‌شده از قرص تجاری). همان مواد، ظرف و شرایط نگهداری مقاله را به کار ببرید و قواعد BUD در USP <795> و سازمان غذا و دارو را رعایت کنید.",
+  ),
+  formulaCols: {
+    drug: bi("Drug and strength", "دارو و غلظت"),
+    vehicle: bi("Vehicle", "حامل"),
+    stability: bi("Published stability", "پایداری گزارش‌شده"),
+    ref: bi("Reference", "رفرنس"),
+  },
+  formulas: [
+    {
+      drug: bi("Sildenafil 2.5 mg/mL", "سیلدنافیل ۲٫۵ میلی‌گرم در میلی‌لیتر"),
+      vehicle: bi("Ora-Plus : Ora-Sweet 1:1, or 1% methylcellulose : simple syrup 1:1", "Ora-Plus و Ora-Sweet (۱:۱) یا متیل‌سلولز ۱٪ و شربت ساده (۱:۱)"),
+      stability: bi("91 days at 4 °C and 25 °C", "۹۱ روز در ۴ و ۲۵ درجه"),
+      ref: "Nahata MC et al. Am J Health Syst Pharm 2006;63:254–7",
+    },
+    {
+      drug: bi("Amlodipine 1 mg/mL", "آملودیپین ۱ میلی‌گرم در میلی‌لیتر"),
+      vehicle: bi("Ora-Plus : Ora-Sweet 1:1, or 1% methylcellulose : simple syrup 1:1", "Ora-Plus و Ora-Sweet (۱:۱) یا متیل‌سلولز ۱٪ و شربت ساده (۱:۱)"),
+      stability: bi("91 days at 4 °C; 56 days at 25 °C", "۹۱ روز در ۴ درجه؛ ۵۶ روز در ۲۵ درجه"),
+      ref: "Nahata MC et al. Am J Health Syst Pharm 1999;56:1748–50",
+    },
+    {
+      drug: bi("Omeprazole 2 mg/mL", "امپرازول ۲ میلی‌گرم در میلی‌لیتر"),
+      vehicle: bi("Sodium bicarbonate 8.4%", "سدیم بی‌کربنات ۸٫۴٪"),
+      stability: bi("30 days at 5 °C; 14 days at room temperature", "۳۰ روز در ۵ درجه؛ ۱۴ روز در دمای اتاق"),
+      ref: "Quercia RA et al. Am J Health Syst Pharm 1997;54:1833–6",
+    },
+    {
+      drug: bi("Spironolactone 25 mg/mL", "اسپیرونولاکتون ۲۵ میلی‌گرم در میلی‌لیتر"),
+      vehicle: bi("Ora-Plus : Ora-Sweet 1:1", "Ora-Plus و Ora-Sweet (۱:۱)"),
+      stability: bi("60 days at 5 °C and 25 °C", "۶۰ روز در ۵ و ۲۵ درجه"),
+      ref: "Allen LV, Erickson MA. Am J Health Syst Pharm 1996;53:2073–8",
+    },
+    {
+      drug: bi("Metronidazole 50 mg/mL", "مترونیدازول ۵۰ میلی‌گرم در میلی‌لیتر"),
+      vehicle: bi("Ora-Plus : Ora-Sweet 1:1", "Ora-Plus و Ora-Sweet (۱:۱)"),
+      stability: bi("60 days at 5 °C and 25 °C", "۶۰ روز در ۵ و ۲۵ درجه"),
+      ref: "Allen LV, Erickson MA. Am J Health Syst Pharm 1996;53:2073–8",
+    },
+  ],
+  excipientsTitle: bi("Excipients to watch in neonates and young children", "مواد جانبی حساس در نوزادان و کودکان خردسال"),
+  excipientCols: {
+    name: bi("Excipient", "ماده جانبی"),
+    risk: bi("Risk", "خطر"),
+    advice: bi("Advice", "توصیه"),
+  },
+  excipients: [
+    {
+      name: bi("Benzyl alcohol", "بنزیل الکل"),
+      risk: bi("“Gasping syndrome” (metabolic acidosis, respiratory distress) in neonates", "«سندرم گاسپینگ» (اسیدوز متابولیک، دیسترس تنفسی) در نوزادان"),
+      advice: bi("Avoid in neonates; prefer preservative-free products", "در نوزادان مصرف نشود؛ فرآورده بدون نگهدارنده ترجیح دارد"),
+    },
+    {
+      name: bi("Propylene glycol", "پروپیلن گلیکول"),
+      risk: bi("CNS depression, hyperosmolality and lactic acidosis; neonates cannot clear it well", "تضعیف CNS، هیپراسمولالیتی و اسیدوز لاکتیک؛ نوزادان آن را به‌خوبی دفع نمی‌کنند"),
+      advice: bi("EMA thresholds: 1 mg/kg/day in neonates, 50 mg/kg/day under 5 years", "آستانه‌های EMA: ۱ میلی‌گرم/کیلوگرم/روز در نوزادان و ۵۰ میلی‌گرم/کیلوگرم/روز زیر ۵ سال"),
+    },
+    {
+      name: bi("Ethanol", "اتانول"),
+      risk: bi("CNS depression and hypoglycaemia in young children", "تضعیف CNS و هیپوگلیسمی در کودکان خردسال"),
+      advice: bi("Keep to the minimum needed for solubility; prefer alcohol-free vehicles", "به حداقل لازم برای انحلال محدود شود؛ حامل بدون الکل ترجیح دارد"),
+    },
+    {
+      name: bi("Sodium benzoate / benzoic acid", "سدیم بنزوات / بنزوئیک اسید"),
+      risk: bi("May increase jaundice in newborns (bilirubin displacement)", "ممکن است زردی نوزاد را تشدید کند (جابه‌جایی بیلی‌روبین)"),
+      advice: bi("Use with caution in neonates", "در نوزادان با احتیاط"),
+    },
+    {
+      name: bi("Sorbitol, fructose, sucrose", "سوربیتول، فروکتوز، ساکارز"),
+      risk: bi("Osmotic diarrhoea at high doses; dangerous in hereditary fructose intolerance; dental caries with long use", "اسهال اسموتیک در دوز بالا؛ خطرناک در عدم تحمل ارثی فروکتوز؛ پوسیدگی دندان در مصرف طولانی"),
+      advice: bi("Ask about fructose intolerance; consider sugar-free vehicles for chronic use", "درباره عدم تحمل فروکتوز بپرسید؛ در مصرف مزمن حامل بدون قند در نظر گرفته شود"),
+    },
+    {
+      name: bi("Aspartame", "آسپارتام"),
+      risk: bi("Source of phenylalanine", "منبع فنیل‌آلانین"),
+      advice: bi("Avoid in phenylketonuria", "در فنیل‌کتونوری مصرف نشود"),
+    },
+  ],
+  excipientRefs: ["EMA, Excipients in the labelling and package leaflet of medicinal products for human use (EMA/CHMP/302620/2017, current revision)", "FDA, Benzyl alcohol toxicity in neonates (MMWR 1982;31:290–1)"],
+  counselTitle: bi("Labelling and counselling checklist", "چک‌لیست برچسب و مشاوره"),
+  counsel: [
+    bi("Patient name, drug, strength, dose and directions", "نام بیمار، دارو، قدرت، دوز و دستور مصرف"),
+    bi("Beyond-use date and storage temperature", "تاریخ مصرف پس از ساخت (BUD) و دمای نگهداری"),
+    bi("“Shake well before use” for suspensions; “For external use only” for topicals", "«قبل از مصرف تکان دهید» برای سوسپانسیون و «فقط مصرف خارجی» برای فرآورده‌های موضعی"),
+    bi("A statement that this is a compounded preparation", "ذکر اینکه فرآورده در داروخانه ساخته شده است"),
+    bi("Oral syringe and a demonstration of how to measure the dose", "سرنگ خوراکی و آموزش اندازه‌گیری دوز"),
+  ],
 };
 
 /** Live search of the Iran FDA product register, with the alternatives of each generic. */
