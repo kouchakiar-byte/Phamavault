@@ -14,13 +14,12 @@ const input =
 
 /**
  * The CTD request: a form that saves the request on the site (so it never depends
- * on the visitor having an email app), with Gmail, phone and the address as fallbacks.
+ * on the visitor having an email app), with the phone number and the PharmaVault address as fallbacks.
  */
 export function CtdRequest({ locale }: { locale: Locale }) {
   const [open, setOpen] = useState(false);
   const [state, action, pending] = useActionState<ServiceRequestState, FormData>(requestCtd, {});
   const f = t.form;
-  const gmail = `https://mail.google.com/mail/?view=cm&fs=1&to=${siteConfig.email}&su=${encodeURIComponent(t.subject[locale])}&body=${encodeURIComponent(t.body[locale])}`;
   const phone = siteConfig.contact.phone;
 
   if (!open) {
@@ -98,17 +97,14 @@ export function CtdRequest({ locale }: { locale: Locale }) {
       <div className="text-sm text-vault-100/80">
         <p className="mb-2.5">{f.orContact[locale]}</p>
         <div className="flex flex-wrap items-center gap-2">
-          <a href={gmail} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 font-semibold text-white hover:border-capsule-400">
-            <Mail className="size-4" aria-hidden="true" />
-            Gmail
-          </a>
           {phone && (
             <a href={`tel:${phone.replace(/\s/g, "")}`} className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 font-semibold text-white hover:border-capsule-400">
               <Phone className="size-4" aria-hidden="true" />
               <span dir="ltr">{phone}</span>
             </a>
           )}
-          <span id="ctd-email-address" dir="ltr" className="select-all rounded-full bg-white/[0.06] px-4 py-2 font-mono text-xs text-white">
+          <span id="ctd-email-address" dir="ltr" className="inline-flex select-all items-center gap-2 rounded-full bg-white/[0.06] px-4 py-2 font-mono text-xs text-white">
+            <Mail className="size-4" aria-hidden="true" />
             {siteConfig.email}
           </span>
           <CopyButton targetId="ctd-email-address" label={f.copyEmail[locale]} doneLabel={f.copied[locale]} />
