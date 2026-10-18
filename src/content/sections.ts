@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Atom, BookMarked, BookOpen, Briefcase, Calculator, Factory, FileCheck, FlaskConical, Layers, Pill, ShieldCheck, TestTubes } from "lucide-react";
+import { Atom, BookMarked, BookOpen, Briefcase, Calculator, ClipboardCheck, Factory, FileCheck, FlaskConical, Layers, Pill, ShieldCheck, TestTubes } from "lucide-react";
 import { bi, type Bi } from "@/i18n/bi";
 
 export type SectionGroup = "knowledge" | "databases" | "tools" | "company";
@@ -150,6 +150,18 @@ export const sections = [
     description: bi(
       "Generic and brand products from the FDA Orange Book with the Iranian manufacturers, and non-sterile compounding with the USP <795> beyond-use date calculator.",
       "داروهای ژنریک و برند بر اساس Orange Book همراه با تولیدکنندگان داخلی، و ساخت فرآورده‌های غیراستریل در داروخانه با محاسبه تاریخ مصرف پس از ساخت طبق USP <795>.",
+    ),
+  },
+  {
+    slug: "ctd",
+    href: "#ctd",
+    plate: "CT",
+    icon: ClipboardCheck,
+    group: "company",
+    title: bi("CTD Dossier Compilation", "تدوین CTD"),
+    description: bi(
+      "Your project's CTD dossier compiled in just 5 working days by the PharmaVault expert team.",
+      "تدوین CTD پروژه شما فقط در ۵ روز کاری توسط تیم تخصصی فارماوالت.",
     ),
   },
   {
