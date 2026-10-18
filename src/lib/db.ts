@@ -103,6 +103,20 @@ create table if not exists supplier_links (
   fails int not null default 0,
   checked_at timestamptz not null default now()
 );
+create table if not exists service_requests (
+  id bigserial primary key,
+  kind text not null,
+  name text not null,
+  company text,
+  phone text not null,
+  email text,
+  product text,
+  message text,
+  locale text not null default 'fa',
+  handled boolean not null default false,
+  created_at timestamptz not null default now()
+);
+create index if not exists service_requests_created_idx on service_requests(created_at);
 `;
 
 const g = globalThis as unknown as { pvPool?: Pool; pvSchema?: Promise<unknown> };

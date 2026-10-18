@@ -10,6 +10,66 @@ const ltr = (s: string) => `⁦${s}⁩`;
 
 export type Ref = { label: string; url?: string };
 
+/** The drug–drug interaction checker: a box on the pharmacy page and its own results page. */
+export const interactionsCopy = {
+  key: "interactions",
+  title: bi("Drug interaction checker", "بررسی تداخلات دارویی"),
+  lead: bi(
+    "Type two or more medicines, or a question such as “warfarin with ibuprofen”, to see each interaction with its severity, effect, mechanism and what to do.",
+    "دو یا چند دارو را وارد کنید، یا بپرسید «تداخل وارفارین با ایبوپروفن»، تا هر تداخل با شدت، اثر، سازوکار و اقدام لازم نمایش داده شود.",
+  ),
+  placeholder: bi("e.g. interaction of warfarin with ibuprofen", "مثلاً: تداخل وارفارین با ایبوپروفن"),
+  label: bi("Medicines to check", "داروهای موردنظر"),
+  check: bi("Check interactions", "بررسی تداخل"),
+  add: bi("Add", "افزودن"),
+  remove: bi("Remove", "حذف"),
+  clear: bi("Clear all", "پاک کردن همه"),
+  needTwo: bi("Add at least two medicines.", "دست‌کم دو دارو اضافه کنید."),
+  unknown: bi("Not found in the database:", "در پایگاه داده پیدا نشد:"),
+  maxDrugs: bi("Up to 10 medicines can be checked together.", "حداکثر ۱۰ دارو را می‌توان همزمان بررسی کرد."),
+  summary: bi("{n} interactions found among {p} pairs", "{n} تداخل در {p} جفت دارو یافت شد"),
+  none: bi("No interaction recorded for these medicines", "برای این داروها تداخل ثبت‌شده‌ای یافت نشد"),
+  clearPairs: bi("No interaction recorded", "تداخل ثبت‌شده‌ای ندارد"),
+  noneNote: bi(
+    "This means no interaction is recorded in the PharmaVault database, not that none exists. Check the product information of both medicines.",
+    "یعنی در پایگاه داده فارماوالت تداخلی ثبت نشده است، نه اینکه قطعاً تداخلی وجود ندارد. اطلاعات فرآورده هر دو دارو را بررسی کنید.",
+  ),
+  highest: bi("Highest severity", "بالاترین شدت"),
+  effect: bi("Effect", "اثر بالینی"),
+  mechanism: bi("Mechanism", "سازوکار"),
+  management: bi("What to do", "اقدام لازم"),
+  basis: bi("Based on", "بر اساس"),
+  severity: {
+    contraindicated: bi("Contraindicated", "منع مصرف همزمان"),
+    major: bi("Major", "شدید"),
+    moderate: bi("Moderate", "متوسط"),
+    minor: bi("Minor", "خفیف"),
+  },
+  severityHint: {
+    contraindicated: bi("Do not use together.", "همزمان مصرف نشوند."),
+    major: bi("Avoid, or use only with close monitoring.", "پرهیز شود یا فقط با پایش دقیق."),
+    moderate: bi("Use with caution and monitoring.", "با احتیاط و پایش."),
+    minor: bi("Usually no action needed.", "معمولاً اقدامی لازم نیست."),
+  },
+  examples: bi("Try", "نمونه‌ها"),
+  coverage: bi(
+    "{d} medicines and {r} interaction rules between drugs and drug classes, compiled by the PharmaVault expert team.",
+    "{d} دارو و {r} قاعده تداخل بین داروها و گروه‌های دارویی، گردآوری‌شده توسط تیم تخصصی فارماوالت.",
+  ),
+  disclaimer: bi(
+    "For healthcare professionals. The checker covers clinically important interactions but cannot list every interaction; always confirm with the product information (SmPC or label) and clinical judgement.",
+    "ویژه کادر درمان. این ابزار تداخلات مهم بالینی را پوشش می‌دهد اما نمی‌تواند همه تداخلات را فهرست کند؛ همیشه با اطلاعات فرآورده (SmPC یا بروشور) و قضاوت بالینی تأیید کنید.",
+  ),
+  refs: [
+    { label: "Stockley's Drug Interactions (Pharmaceutical Press)" },
+    { label: "FDA, Drug Development and Drug Interactions: Table of Substrates, Inhibitors and Inducers", url: "https://www.fda.gov/drugs/drug-interactions-labeling/healthcare-professionals-fdas-examples-drugs-interact-cyp-enzymes-and-transporter-systems" },
+    { label: "CredibleMeds QTdrugs list", url: "https://crediblemeds.org/" },
+    { label: "DailyMed (FDA labels)", url: "https://dailymed.nlm.nih.gov/dailymed/" },
+    { label: "EMA product information (SmPC)", url: "https://www.ema.europa.eu/en/medicines" },
+  ] as Ref[],
+  open: bi("Open the full checker", "باز کردن صفحه کامل بررسی تداخل"),
+};
+
 export const pharmacyPage = {
   title: bi("Pharmacy", "داروخانه (Pharmacy)"),
   lead: bi(
