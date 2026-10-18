@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { BudCalculator } from "@/components/pharmacy/bud-calculator";
+import { CompoundingBasics, CompoundingTables } from "@/components/pharmacy/compounding-guide";
 import { InteractionSearchBox } from "@/components/pharmacy/interaction-checker";
 import { IranDrugSearch } from "@/components/pharmacy/iran-drug-search";
 import { OrangeBookSearch } from "@/components/pharmacy/orange-book-search";
@@ -127,6 +128,8 @@ export default async function PharmacyPage() {
             <p className="mt-2 text-muted">{compounding.lead[locale]}</p>
           </div>
 
+          <CompoundingBasics locale={locale} />
+
           <div>
             <h3 className="mb-3 text-lg font-bold text-vault-900">{compounding.budTitle[locale]}</h3>
             <BudCalculator locale={locale} />
@@ -144,6 +147,8 @@ export default async function PharmacyPage() {
             <p className="mt-3 text-sm leading-relaxed text-muted">{compounding.recordNote[locale]}</p>
           </div>
 
+          <CompoundingTables locale={locale} />
+
           <div>
             <h3 className="text-lg font-bold text-vault-900">{compounding.formulasTitle[locale]}</h3>
             <LinkCards links={compounding.formulas} locale={locale} />
@@ -154,7 +159,7 @@ export default async function PharmacyPage() {
             <ul className="mt-3 flex flex-wrap gap-2">
               {compounding.calcs.map((c) => (
                 <li key={c.key}>
-                  <Link href={href(locale, "tools")} className="inline-block rounded-full border border-line bg-white px-4 py-1.5 text-sm font-medium text-molecule-700 hover:border-molecule-500">
+                  <Link href={`${href(locale, "tools")}?calc=${c.key}`} className="inline-block rounded-full border border-line bg-white px-4 py-1.5 text-sm font-medium text-molecule-700 hover:border-molecule-500">
                     {c.label[locale]}
                   </Link>
                 </li>
