@@ -448,8 +448,8 @@ export const copy = {
         missing: bi("Enter your name and phone number.", "نام و شماره تماس را وارد کنید."),
         phone: bi("The phone number looks too short.", "شماره تماس کامل نیست."),
         unavailable: bi(
-          "The request could not be saved right now. Please call us or use Gmail below.",
-          "ثبت درخواست الان ممکن نشد. لطفاً تماس بگیرید یا از Gmail در پایین استفاده کنید.",
+          "The request could not be saved right now. Please call us or email the address below.",
+          "ثبت درخواست الان ممکن نشد. لطفاً تماس بگیرید یا به ایمیل زیر پیام دهید.",
         ),
       },
     },
