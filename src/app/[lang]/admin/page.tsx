@@ -17,9 +17,21 @@ import { recentOrders, stats } from "@/lib/orders";
 import { href } from "@/lib/paths";
 import { paywallEnabled, recentSubscriptions, subscriptionStatus } from "@/lib/subscriptions";
 import { onlinePaymentEnabled } from "@/lib/zarinpal";
-import { cancelOrder, changeSeats, extend, markOrderPaid, toggleRevoked } from "./actions";
+import { recentServiceRequests } from "@/lib/service-requests";
+import { bi } from "@/i18n/bi";
+import { cancelOrder, changeSeats, extend, markOrderPaid, toggleRequestHandled, toggleRevoked } from "./actions";
 
 const { admin: t, dashboard: d } = account;
+
+const requestLabels = {
+  title: bi("Service requests (CTD compilation)", "درخواست‌های خدمات (تدوین CTD)"),
+  none: bi("No requests yet.", "هنوز درخواستی ثبت نشده است."),
+  who: bi("Requester", "درخواست‌کننده"),
+  product: bi("Product", "فرآورده"),
+  message: bi("Details", "توضیحات"),
+  done: bi("Mark handled", "پیگیری شد"),
+  reopen: bi("Reopen", "بازگشایی"),
+};
 
 export const generateMetadata = () => accountMetadata(t.title);
 
@@ -41,7 +53,7 @@ async function Admin({ locale }: { locale: Locale }) {
   if (!user) redirect(`${href(locale, "account/login")}?next=${encodeURIComponent(href(locale, "admin"))}`);
   if (!user.isAdmin) notFound();
 
-  const [numbers, orders, subscriptions] = await Promise.all([stats(), recentOrders(), recentSubscriptions()]);
+  const [numbers, orders, subscriptions, requests] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests()]);
   const gateway = onlinePaymentEnabled()
     ? `${t.on[locale]}${process.env.ZARINPAL_SANDBOX === "1" ? ` (${t.sandbox[locale]})` : ""}`
     : t.off[locale];
@@ -77,6 +89,59 @@ async function Admin({ locale }: { locale: Locale }) {
           </div>
         ))}
       </div>
+
+      <Panel title={requestLabels.title} locale={locale}>
+        {requests.length === 0 ? (
+          <p className="text-sm text-muted">{requestLabels.none[locale]}</p>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="db">
+              <thead>
+                <tr>
+                  <th>{d.orderCols.date[locale]}</th>
+                  <th>{requestLabels.who[locale]}</th>
+                  <th>{requestLabels.product[locale]}</th>
+                  <th>{requestLabels.message[locale]}</th>
+                  <th />
+                </tr>
+              </thead>
+              <tbody>
+                {requests.map((r) => (
+                  <tr key={r.id} className={r.handled ? "opacity-60" : undefined}>
+                    <td className="whitespace-nowrap">
+                      {formatDate(r.createdAt, locale)}
+                      <span className="block text-xs font-semibold text-capsule-600">{r.kind.toUpperCase()}</span>
+                    </td>
+                    <td>
+                      {r.name}
+                      {r.company && <span className="block text-xs text-muted">{r.company}</span>}
+                      <a href={`tel:${r.phone}`} className="block font-mono text-xs text-molecule-700" dir="ltr">
+                        {r.phone}
+                      </a>
+                      {r.email && (
+                        <span className="block font-mono text-xs text-muted" dir="ltr">
+                          {r.email}
+                        </span>
+                      )}
+                    </td>
+                    <td>{r.product ?? "—"}</td>
+                    <td className="max-w-sm whitespace-pre-line text-sm">{r.message ?? "—"}</td>
+                    <td>
+                      <form action={toggleRequestHandled}>
+                        <input type="hidden" name="id" value={r.id} />
+                        <input type="hidden" name="handled" value={r.handled ? "0" : "1"} />
+                        <button type="submit" className={`${smallButton} border border-line hover:border-molecule-500`}>
+                          {r.handled ? requestLabels.reopen[locale] : requestLabels.done[locale]}
+                        </button>
+                      </form>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </Panel>
 
       <Panel title={t.orders} locale={locale}>
         <div className="overflow-x-auto">

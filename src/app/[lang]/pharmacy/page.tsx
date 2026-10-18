@@ -2,10 +2,11 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { BudCalculator } from "@/components/pharmacy/bud-calculator";
+import { InteractionSearchBox } from "@/components/pharmacy/interaction-checker";
 import { IranDrugSearch } from "@/components/pharmacy/iran-drug-search";
 import { OrangeBookSearch } from "@/components/pharmacy/orange-book-search";
 import { Container } from "@/components/ui";
-import { compounding, iranDrugs, orangeBook, pharmacyPage, type Ref } from "@/content/pharmacy";
+import { compounding, interactionsCopy, iranDrugs, orangeBook, pharmacyPage, type Ref } from "@/content/pharmacy";
 import type { Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
@@ -76,13 +77,27 @@ export default async function PharmacyPage() {
             {pharmacyPage.disclaimer[locale]} {pharmacyPage.reviewed[locale]}
           </p>
           <nav aria-label={pharmacyPage.toc[locale]} className="flex flex-wrap gap-2 text-sm">
-            {[iranDrugs, orangeBook, compounding].map((s) => (
+            {[interactionsCopy, iranDrugs, orangeBook, compounding].map((s) => (
               <a key={s.key} href={`#${s.key}`} className="rounded-full border border-line bg-white px-4 py-1.5 font-medium text-vault-900 hover:border-molecule-500">
                 {s.title[locale]}
               </a>
             ))}
           </nav>
         </div>
+
+        {/* 0. Drug interaction checker */}
+        <section id={interactionsCopy.key} className="scroll-mt-24 space-y-5 rounded-3xl border border-capsule-400/40 bg-gradient-to-br from-capsule-50 to-white p-6 sm:p-8">
+          <div className="flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <h2 className="text-2xl font-bold text-vault-900">{interactionsCopy.title[locale]}</h2>
+              <p className="mt-2 max-w-3xl text-muted">{interactionsCopy.lead[locale]}</p>
+            </div>
+            <Link href={href(locale, "pharmacy/interactions")} className="text-sm font-semibold text-capsule-700 hover:underline">
+              {interactionsCopy.open[locale]}
+            </Link>
+          </div>
+          <InteractionSearchBox locale={locale} />
+        </section>
 
         {/* 1. Iranian medicines: live from the Iran FDA register */}
         <section id={iranDrugs.key} className="scroll-mt-24 space-y-6">

@@ -108,6 +108,20 @@ export const calculations = [
     equation: "MACO = PDE × MBS / MDD ;  swab limit = MACO × A_swab / A_shared",
   },
   {
+    key: "yld",
+    group: "formulation",
+    label: bi("Batch yield and reconciliation", "بازده و تطبیق مقادیر بچ"),
+    title: bi("Batch yield and reconciliation against the master batch record limits", "بازده بچ و تطبیق مقادیر (Reconciliation) با حدود دستور ساخت"),
+    equation: "Yield % = good ÷ theoretical × 100 ;  Reconciliation % = (good + samples + rejects + losses) ÷ theoretical × 100",
+  },
+  {
+    key: "samp",
+    group: "formulation",
+    label: bi("Sampling plan (√N + 1)", "طرح نمونه‌برداری (√N + 1)"),
+    title: bi("Sampling of incoming materials: WHO n, p and r plans", "نمونه‌برداری از مواد ورودی: طرح‌های n، p و r سازمان جهانی بهداشت"),
+    equation: "n = 1 + √N ;  p = 0.4·√N ;  r = 1.5·√N",
+  },
+  {
     key: "iso",
     group: "solutions",
     label: bi("Isotonicity (E-value)", "ایزوتونیسیته (روش E)"),
@@ -276,6 +290,20 @@ export const calculations = [
     equation: "limit (ppm) = AI (ng/day) / MDD (mg/day)",
   },
   {
+    key: "lodq",
+    group: "analysis",
+    label: bi("LOD and LOQ (ICH Q2)", "حد تشخیص و حد اندازه‌گیری (LOD و LOQ)"),
+    title: bi("Detection and quantitation limits from a calibration line (ICH Q2(R2))", "حد تشخیص و حد اندازه‌گیری از منحنی کالیبراسیون ⁦(ICH Q2(R2))⁩"),
+    equation: "LOD = 3.3σ ÷ S ;  LOQ = 10σ ÷ S",
+  },
+  {
+    key: "cpk",
+    group: "analysis",
+    label: bi("Process capability (Cp, Cpk)", "توانایی فرایند (Cp و Cpk)"),
+    title: bi("Process capability: Cp, Cpk and expected out-of-specification rate", "توانایی فرایند: Cp، Cpk و درصد پیش‌بینی خارج از مشخصات"),
+    equation: "Cp = (USL − LSL) ÷ 6s ;  Cpk = min(USL − x̄, x̄ − LSL) ÷ 3s",
+  },
+  {
     key: "diss",
     group: "analysis",
     label: bi("Dissolution % released", "درصد انحلال"),
@@ -330,6 +358,13 @@ export const calculations = [
     label: bi("D-value, log reduction and SAL", "مقدار D، کاهش لگاریتمی و SAL"),
     title: bi("D-value, log reduction and sterility assurance level", "مقدار D، کاهش لگاریتمی و سطح اطمینان از استریلیتی (SAL)"),
     equation: "D = t / (log N₀ − log N) ;  log N_F = log N₀ − F/D",
+  },
+  {
+    key: "ach",
+    group: "micro",
+    label: bi("Cleanroom air changes (ACH)", "تعویض هوای اتاق تمیز (ACH)"),
+    title: bi("Cleanroom air changes per hour and theoretical recovery time", "تعداد تعویض هوا در ساعت اتاق تمیز و زمان بازیابی نظری"),
+    equation: "ACH = Q ÷ V ;  t₁₀₀:₁ = 60·ln(100) ÷ ACH",
   },
   {
     key: "cfu",
@@ -456,6 +491,11 @@ export const calculationRefs: Record<CalculationKey, string[]> = withBp({
   inf: [`${USP} <1160>`],
   pk: ["Rowland & Tozer, Clinical Pharmacokinetics and Pharmacodynamics, 5th ed. (2019)"],
   hed: ["FDA, Estimating the Maximum Safe Starting Dose in Initial Clinical Trials (2005)"],
+  yld: ["21 CFR 211.103 (calculation of yield)", "EU GMP Part I, Chapter 5 (Production)"],
+  samp: ["WHO TRS 929, Annex 4: Guidelines for sampling of pharmaceutical products (2005)", "EU GMP Annex 8 (Sampling of starting and packaging materials)"],
+  lodq: ["ICH Q2(R2) (2023)"],
+  cpk: ["ISO 22514-2:2017", "FDA, Process Validation: General Principles and Practices (2011)"],
+  ach: ["EU GMP Annex 1 (2022)", "ISO 14644-3:2019"],
 });
 
 /** The references of the calculator with this title (Panel only knows the title). */
@@ -477,6 +517,9 @@ const refLinks: [prefix: string, url: string][] = [
   ["EMA, Guideline on setting health-based", "https://www.ema.europa.eu/en/setting-health-based-exposure-limits-use-risk-identification-manufacture-different-medicinal-products-shared-facilities-scientific-guideline"],
   ["EMA, Q&A on nitrosamine", "https://www.ema.europa.eu/en/nitrosamine-impurities-guidance-marketing-authorisation-holders"],
   ["ISO 11138-1", "https://www.iso.org/standard/66442.html"],
+  ["21 CFR 211.103", "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211/subpart-F/section-211.103"],
+  ["EU GMP", "https://health.ec.europa.eu/medicinal-products/eudralex/eudralex-volume-4_en"],
+  ["FDA, Process Validation", "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/process-validation-general-principles-and-practices"],
   ["Pharmaceutical Excipients", "https://www.pharmaceuticalpress.com/content/pharmaceutical-excipients/"],
   ["Mosteller", "https://doi.org/10.1056/NEJM198710223171717"],
   ["DuBois", "https://doi.org/10.1001/archinte.1916.00080130010002"],

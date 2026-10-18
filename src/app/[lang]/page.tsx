@@ -1,3 +1,4 @@
+import { CtdRequest } from "@/components/ctd-request";
 import { EnamadSeal } from "@/components/enamad-seal";
 import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
@@ -360,13 +361,7 @@ export default async function HomePage() {
                 ))}
               </ul>
               <div className="mt-8">
-                <a
-                  href={`mailto:${siteConfig.email}?subject=${encodeURIComponent(ctdService.subject[locale])}&body=${encodeURIComponent(ctdService.body[locale])}`}
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-l from-capsule-400 to-capsule-500 px-6 py-3 text-sm font-bold text-vault-950 shadow-lg shadow-capsule-500/30 transition duration-300 hover:scale-[0.97]"
-                >
-                  <Mail className="size-4" aria-hidden="true" />
-                  {ctdService.cta[locale]}
-                </a>
+                <CtdRequest locale={locale} />
               </div>
             </div>
             <div className="mx-auto flex size-48 flex-col items-center justify-center rounded-full border-4 border-capsule-400/70 bg-vault-950/50 text-center shadow-2xl shadow-capsule-500/20 sm:size-56">

@@ -6,6 +6,7 @@ import { getUser, hashPassword, normalizeMobile } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { setStatus } from "@/lib/orders";
 import { normalizePurchase } from "@/lib/pricing";
+import { setRequestHandled } from "@/lib/service-requests";
 import { activateOrder, extendSubscription, grantManually, setRevoked, setSeats } from "@/lib/subscriptions";
 
 export type AdminState = { error?: keyof typeof account.errors; ok?: boolean };
@@ -65,6 +66,13 @@ export async function toggleRevoked(form: FormData): Promise<void> {
   await requireAdmin();
   const subscriptionId = id(form);
   if (subscriptionId) await setRevoked(subscriptionId, text(form, "revoked") === "1");
+  refresh();
+}
+
+export async function toggleRequestHandled(form: FormData): Promise<void> {
+  await requireAdmin();
+  const requestId = id(form);
+  if (requestId) await setRequestHandled(requestId, text(form, "handled") === "1");
   refresh();
 }
 

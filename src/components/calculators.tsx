@@ -15,6 +15,7 @@ import { Mkt, Q1e, stabilityDefaults } from "./calc/stability";
 import { Nitro, Q3c, Q3d, Rot, Std, qualityDefaults } from "./calc/quality";
 import { Cfu, Eli, F0, Gel, Lal, Sal, microDefaults } from "./calc/micro";
 import { Bsa, Crcl, Hed, Inf, Pk, clinicalDefaults } from "./calc/clinical";
+import { Ach, Cpk, Lodq, Samp, Yld, gmpDefaults } from "./calc/gmp";
 import { useUrlParam } from "@/lib/use-url-param";
 
 
@@ -717,6 +718,7 @@ const components: Record<CalculationKey, (props: { ctx: Ctx }) => React.JSX.Elem
   std: Std, rot: Rot, q3c: Q3c, q3d: Q3d, nitro: Nitro,
   eli: Eli, lal: Lal, gel: Gel, f0: F0, sal: Sal, cfu: Cfu,
   bsa: Bsa, crcl: Crcl, inf: Inf, pk: Pk, hed: Hed,
+  yld: Yld, samp: Samp, lodq: Lodq, cpk: Cpk, ach: Ach,
 };
 
 const defaults: Values = {
@@ -758,6 +760,7 @@ const defaults: Values = {
   ...qualityDefaults,
   ...microDefaults,
   ...clinicalDefaults,
+  ...gmpDefaults,
 };
 
 export function Calculators({ locale }: { locale: Locale }) {
