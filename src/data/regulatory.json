@@ -148,6 +148,11 @@
    "fa": "آزمون پایداری مواد مؤثره و فرآورده‌های جدید"
   },
   {
+   "code": "Q1",
+   "en": "Consolidated stability guideline replacing Q1A–Q1E and Q5C (draft, Step 2, April 2025; Step 4 expected late 2026)",
+   "fa": "گایدلاین یکپارچه پایداری، جایگزین Q1A تا Q1E و Q5C (پیش‌نویس، مرحله ۲، فروردین ۱۴۰۴؛ نسخه نهایی مورد انتظار اواخر ۲۰۲۶)"
+  },
+  {
    "code": "Q1B",
    "en": "Photostability testing",
    "fa": "آزمون پایداری نوری"
@@ -168,14 +173,19 @@
    "fa": "ناخالصی‌ها در فرآورده‌های جدید"
   },
   {
-   "code": "Q3C",
+   "code": "Q3C(R9)",
    "en": "Residual solvents",
    "fa": "حلال‌های باقی‌مانده"
   },
   {
-   "code": "Q3D",
+   "code": "Q3D(R2)",
    "en": "Elemental impurities",
    "fa": "ناخالصی‌های عنصری"
+  },
+  {
+   "code": "Q3E",
+   "en": "Extractables and leachables (draft, Step 2, 2025; Step 4 expected 2027)",
+   "fa": "مواد استخراج‌شونده و نشت‌کننده (پیش‌نویس، مرحله ۲، ۲۰۲۵؛ نسخه نهایی مورد انتظار ۲۰۲۷)"
   },
   {
    "code": "Q6A",
@@ -228,7 +238,7 @@
    "fa": "سند فنی مشترک (CTD)"
   },
   {
-   "code": "M7",
+   "code": "M7(R2)",
    "en": "Mutagenic impurities",
    "fa": "ناخالصی‌های جهش‌زا"
   },
