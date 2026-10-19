@@ -34,6 +34,8 @@ export type RawMaterial = {
   mw: string;
   note: Bi;
   synonyms: string;
+  /** Biopharmaceutics Classification System class of the oral immediate-release drug ("1"–"4"), where published. */
+  bcs?: string;
 };
 
 export type FormulaTemplate = {

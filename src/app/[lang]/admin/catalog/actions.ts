@@ -65,6 +65,7 @@ export async function saveMaterial(_: CatalogState, form: FormData): Promise<Cat
     mw: text(form, "mw"),
     note: { en: text(form, "noteEn"), fa: text(form, "noteFa") },
     synonyms: text(form, "synonyms"),
+    bcs: /^[1-4]$/.test(text(form, "bcs")) ? text(form, "bcs") : undefined,
   };
   if (!record.name || !record.group) return { error: "invalid" };
   await queueChange("material", materialKey(record), record, userId);
