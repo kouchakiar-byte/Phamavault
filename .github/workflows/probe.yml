@@ -8,9 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          for i in 1 2 3; do
-            curl -sS -D /tmp/h -o /tmp/p.html --max-time 60 "https://pharmavault.ir/fa?nocache=$RANDOM" && break; sleep 5; done
-          grep -iE "^(HTTP|date|age|x-nextjs-cache|etag|last-modified)" /tmp/h || true
-          echo "--- markers"
-          grep -oE "دوازده بخش|یازده بخش|رفرنس استانداردها و ریجنت|lg:grid-rows-\[1fr_auto_auto_1fr\]|lg:grid-rows-\[auto_1fr\]" /tmp/p.html | sort | uniq -c
-          grep -oE '"buildId":"[^"]+"|/_next/static/[A-Za-z0-9_-]{10,}/_buildManifest' /tmp/p.html | head -3
+          for u in "/fa?n=$RANDOM" "/fa/pharmacy/interactions?n=$RANDOM"; do
+            curl -sS -D /tmp/h -o /tmp/p.html --max-time 60 "https://pharmavault.ir$u" || true
+            echo "== $u"; grep -iE "^(HTTP|date|x-nextjs-cache|etag)" /tmp/h || true
+            grep -oE "دوازده بخش|یازده بخش|lg:grid-rows-\[1fr_auto_auto_1fr\]|lg:grid-rows-\[auto_1fr\]|Micromedex|Lexicomp" /tmp/p.html | sort | uniq -c
+          done
