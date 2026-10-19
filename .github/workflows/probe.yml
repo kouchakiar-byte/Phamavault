@@ -6,10 +6,12 @@ on:
 jobs:
   probe:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - run: |
-          for u in "/fa?n=$RANDOM" "/fa/pharmacy/interactions?n=$RANDOM"; do
-            curl -sS -D /tmp/h -o /tmp/p.html --max-time 60 "https://pharmavault.ir$u" || true
-            echo "== $u"; grep -iE "^(HTTP|date|x-nextjs-cache|etag)" /tmp/h || true
-            grep -oE "دوازده بخش|یازده بخش|lg:grid-rows-\[1fr_auto_auto_1fr\]|lg:grid-rows-\[auto_1fr\]|Micromedex|Lexicomp" /tmp/p.html | sort | uniq -c
+          for i in $(seq 1 50); do
+            curl -sS -o /tmp/p.html --max-time 60 "https://pharmavault.ir/fa?n=$RANDOM" || true
+            if grep -q "دوازده بخش" /tmp/p.html; then echo "NEW VERSION LIVE at $(date -u +%H:%M:%S)"; grep -oE "lg:grid-rows-\[1fr_auto_auto_1fr\]" /tmp/p.html | head -1; exit 0; fi
+            echo "$(date -u +%H:%M:%S) still old"; sleep 30
           done
+          echo "STILL OLD after 25 minutes"
