@@ -202,6 +202,9 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
           ))}
 
       </div>
+      {result?.status === "ok" && result.stored && state === "idle" && (
+        <p className="rounded-xl bg-capsule-400/10 px-4 py-3 text-xs text-vault-900">{t.stored[locale]}</p>
+      )}
       {result?.status === "ok" && result.fetchedAt && state === "idle" && (
         <p className="text-xs text-muted">
           {t.updated[locale].replace(

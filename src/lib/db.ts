@@ -89,6 +89,12 @@ create table if not exists catalog_runs (
   checked int not null default 0,
   unreachable int not null default 0
 );
+create table if not exists iran_drug_cache (
+  term text primary key,
+  result jsonb not null,
+  fetched_at timestamptz not null default now(),
+  asked int not null default 0
+);
 create table if not exists page_views (
   id bigserial primary key,
   at timestamptz not null default now(),

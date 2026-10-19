@@ -57,8 +57,8 @@ export const interactionsCopy = {
     "{d} دارو و {r} قاعده تداخل بین داروها و گروه‌های دارویی، گردآوری‌شده توسط تیم تخصصی فارماوالت.",
   ),
   disclaimer: bi(
-    "For healthcare professionals. The checker covers clinically important interactions but cannot list every interaction; always confirm with the product information (SmPC or label) and clinical judgement.",
-    "ویژه کادر درمان. این ابزار تداخلات مهم بالینی را پوشش می‌دهد اما نمی‌تواند همه تداخلات را فهرست کند؛ همیشه با اطلاعات فرآورده (SmPC یا بروشور) و قضاوت بالینی تأیید کنید.",
+    "For healthcare professionals. The checker identifies clinically important drug interactions from the official product information (FDA labels, EMA SmPCs) and Stockley's Drug Interactions, and gives the severity, mechanism and management for each. Use it alongside the product leaflet and your clinical judgement for each patient.",
+    "ویژه کادر درمان. این ابزار تداخلات مهم دارویی را بر اساس اطلاعات رسمی فرآورده‌ها ⁦(FDA، EMA)⁩ و مرجع ⁦Stockley’s Drug Interactions⁩ شناسایی می‌کند و برای هر مورد، شدت، سازوکار و راهکار مدیریت را ارائه می‌دهد. برای تصمیم درباره هر بیمار، آن را در کنار بروشور دارو و قضاوت بالینی خود به کار ببرید.",
   ),
   refs: [
     { label: "Stockley's Drug Interactions (Pharmaceutical Press)" },
@@ -488,6 +488,10 @@ export const iranDrugs = {
     "انتخاب دارو: هر گزینه یک ماده مؤثره تک‌جزئی یا یک ترکیب ثابت \u2066(FDC)\u2069 است، با همه قدرت‌های موجود.",
   ),
   optionCount: bi("{d} strengths · {n} products", "{d} قدرت · {n} فرآورده"),
+  stored: bi(
+    "The register is not answering right now; these are the results saved at its last update.",
+    "سامانه‌ی سازمان غذا و دارو در این لحظه پاسخ نمی‌دهد؛ نتایج زیر از آخرین به‌روزرسانی ذخیره‌شده است.",
+  ),
   updated: bi("Updated daily at 18:00 \u2066(Tehran)\u2069 · last update: {date}", "به‌روزرسانی روزانه ساعت ۱۸ · آخرین به‌روزرسانی این نتیجه: {date}"),
   rial: bi("Rial", "ریال"),
   toman: bi("Toman", "تومان"),

@@ -3,9 +3,12 @@
  * register is reachable from servers inside Iran only, so the site's own
  * server asks it one query at a time — no bulk copy — keeps each answer for a
  * day, and caps how often it asks, so the public register is never loaded.
+ * The last good answer to each search is also kept in the database, so when
+ * the register does not answer the stored copy is shown, with its date.
  * Server only.
  */
 
+import { databaseConfigured, db } from "./db";
 import { ircGet } from "./irc-http";
 
 export const IRC_ORIGIN = "https://irc.fda.gov.ir";
@@ -44,7 +47,39 @@ export type IranDrugResult = {
   total: number;
   fetchedAt: string;
   source: string;
+  /** True when the register did not answer and this is the last stored copy. */
+  stored?: boolean;
 };
+
+/** The last good answer kept in the database, or null. */
+async function storedResult(key: string): Promise<IranDrugResult | null> {
+  if (!databaseConfigured()) return null;
+  try {
+    const { rows } = await (await db()).query<{ result: IranDrugResult }>("select result from iran_drug_cache where term = $1", [key]);
+    return rows[0] ? { ...rows[0].result, stored: true } : null;
+  } catch {
+    return null;
+  }
+}
+
+async function storeResult(key: string, result: IranDrugResult): Promise<void> {
+  if (!databaseConfigured()) return;
+  await (await db())
+    .query(
+      `insert into iran_drug_cache (term, result, fetched_at, asked) values ($1, $2, now(), 1)
+       on conflict (term) do update set result = excluded.result, fetched_at = now(), asked = iran_drug_cache.asked + 1`,
+      [key, JSON.stringify(result)],
+    )
+    .catch((error) => console.error("iran drug cache write failed", error));
+}
+
+/** The register did not answer: the in-memory answer, else the stored one, else "unavailable". */
+async function fallback(key: string, hit: IranDrugResult | undefined, base: IranDrugResult): Promise<IranDrugResult> {
+  if (hit) return hit;
+  const stored = await storedResult(key);
+  if (stored) cache.set(key, { at: Date.now(), result: stored });
+  return stored ?? base;
+}
 
 const PAGE_SIZE = 100;
 const cache = new Map<string, { at: number; result: IranDrugResult }>();
@@ -244,13 +279,13 @@ export async function searchIranDrugs(raw: string): Promise<IranDrugResult> {
   const hit = cache.get(key);
   // Answers are renewed daily at 18:00 Tehran time, together with the rest of the catalog.
   if (hit && hit.at >= lastDailyUpdate()) return hit.result;
-  if (!allowRequest()) return hit?.result ?? { ...base, status: "unavailable" };
+  if (!allowRequest()) return fallback(key, hit?.result, { ...base, status: "unavailable" });
 
   let html: string;
   try {
     html = await fetchIrcPage(term);
   } catch {
-    return hit?.result ?? { ...base, status: "unavailable" };
+    return fallback(key, hit?.result, { ...base, status: "unavailable" });
   }
   const drugs = parseIrc(html);
   // A full page means there may be more: read up to 4 further pages while the rate allows.
@@ -272,6 +307,9 @@ export async function searchIranDrugs(raw: string): Promise<IranDrugResult> {
   if (result.status !== "unreadable") {
     if (cache.size > 1000) cache.delete(cache.keys().next().value!);
     cache.set(key, { at: Date.now(), result });
+    if (result.status === "ok") await storeResult(key, result);
+  } else {
+    return fallback(key, hit?.result, result);
   }
   return result;
 }
@@ -282,6 +320,12 @@ export async function searchIranDrugs(raw: string): Promise<IranDrugResult> {
  */
 export async function refreshIranDrugs(limit = 40): Promise<number> {
   const terms = [...asked.entries()].sort((a, b) => b[1] - a[1]).slice(0, limit).map(([t]) => t);
+  if (terms.length < limit && databaseConfigured()) {
+    const { rows } = await (await db())
+      .query<{ term: string }>("select term from iran_drug_cache order by asked desc limit $1", [limit])
+      .catch(() => ({ rows: [] as { term: string }[] }));
+    for (const r of rows) if (terms.length < limit && !terms.includes(r.term)) terms.push(r.term);
+  }
   let renewed = 0;
   for (const term of terms) {
     const hit = cache.get(term);

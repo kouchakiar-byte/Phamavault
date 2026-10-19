@@ -159,8 +159,9 @@ export default async function HomePage() {
       <section className="relative isolate overflow-hidden bg-vault-900 text-white">
         <MoleculePattern className="text-white/[0.05]" />
         <div className="absolute -top-40 end-[-10%] -z-10 size-[36rem] rounded-full bg-molecule-500/20 blur-3xl" />
-        <Container className="grid items-start gap-10 pb-16 pt-8 sm:pt-10 lg:grid-cols-[1.15fr_1fr] lg:gap-14 lg:pb-20 lg:pt-12">
-          <div className="fade-in">
+        {/* Phone: brand and search, then the sections panel, then the counts. Desktop: the panel beside both. */}
+        <Container className="grid items-start gap-10 pb-16 pt-8 sm:pt-10 lg:grid-cols-[1.15fr_1fr] lg:grid-rows-[auto_1fr] lg:gap-x-14 lg:gap-y-0 lg:pb-20 lg:pt-12">
+          <div className="fade-in lg:col-start-1 lg:row-start-1">
             {/* Brand: the vault mark beside the name, as tall as the name and slogan together */}
             <h1 className="flex max-w-full items-center gap-3 sm:gap-5" dir="ltr">
               <LogoMark tight className="h-[6.25rem] w-auto shrink-0 sm:h-[8.9rem]" />
@@ -209,38 +210,10 @@ export default async function HomePage() {
                 {hero.seePlans[locale]}
               </ButtonLink>
             </div>
-            {/* The vault at a glance: live counts, then a few one-click searches */}
-            <dl className="mt-9 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
-              {(
-                [
-                  [counts.suppliers, hero.stats.suppliers],
-                  [counts.supplierMaterials, hero.stats.products],
-                  [counts.materials, hero.stats.materials],
-                  [sections.length, hero.stats.sections],
-                ] as const
-              ).map(([value, label]) => (
-                <div key={label.en} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3">
-                  <dt className="mt-1 text-xs leading-snug text-vault-100/70">{label[locale]}</dt>
-                  <dd className="num text-2xl font-bold text-capsule-400">{formatNumber(value, locale)}</dd>
-                </div>
-              ))}
-            </dl>
-            <div className="mt-5 flex max-w-2xl flex-wrap items-center gap-2 text-sm">
-              <span className="text-vault-100/60">{hero.popular[locale]}</span>
-              {hero.popularQueries.map((q) => (
-                <Link
-                  key={q}
-                  href={`${href(locale, "search")}?q=${encodeURIComponent(q)}`}
-                  className="rounded-full border border-white/15 px-3 py-1 text-vault-100/90 transition hover:border-capsule-400 hover:bg-capsule-400 hover:text-vault-950"
-                >
-                  {q}
-                </Link>
-              ))}
-            </div>
           </div>
 
           {/* The "vault" panel: every section one click away */}
-          <div className="fade-in [animation-delay:.1s]">
+          <div className="fade-in [animation-delay:.1s] lg:col-start-2 lg:row-span-2 lg:row-start-1">
             <p className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-molecule-400">
               {copy.platform[locale]}
               <span className="text-molecule-400/60" aria-hidden="true">·</span>
@@ -273,6 +246,36 @@ export default async function HomePage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+          <div className="fade-in lg:col-start-1 lg:row-start-2">
+            {/* The vault at a glance: live counts, then a few one-click searches */}
+            <dl className="grid lg:mt-9 max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
+              {(
+                [
+                  [counts.suppliers, hero.stats.suppliers],
+                  [counts.supplierMaterials, hero.stats.products],
+                  [counts.materials, hero.stats.materials],
+                  [sections.length, hero.stats.sections],
+                ] as const
+              ).map(([value, label]) => (
+                <div key={label.en} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3">
+                  <dt className="mt-1 text-xs leading-snug text-vault-100/70">{label[locale]}</dt>
+                  <dd className="num text-2xl font-bold text-capsule-400">{formatNumber(value, locale)}</dd>
+                </div>
+              ))}
+            </dl>
+            <div className="mt-5 flex max-w-2xl flex-wrap items-center gap-2 text-sm">
+              <span className="text-vault-100/60">{hero.popular[locale]}</span>
+              {hero.popularQueries.map((q) => (
+                <Link
+                  key={q}
+                  href={`${href(locale, "search")}?q=${encodeURIComponent(q)}`}
+                  className="rounded-full border border-white/15 px-3 py-1 text-vault-100/90 transition hover:border-capsule-400 hover:bg-capsule-400 hover:text-vault-950"
+                >
+                  {q}
+                </Link>
+              ))}
             </div>
           </div>
         </Container>

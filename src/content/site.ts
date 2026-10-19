@@ -44,6 +44,7 @@ export const copy = {
   nav: {
     home: bi("Home", "صفحه اصلی"),
     sections: bi("Sections", "بخش‌ها"),
+    services: bi("Services", "خدمات"),
     tools: bi("Calculations", "محاسبات"),
     plans: bi("Plans", "اشتراک"),
     enterprise: bi("Enterprise", "راهکار سازمانی"),

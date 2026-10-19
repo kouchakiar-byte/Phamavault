@@ -338,5 +338,113 @@ export const qc = {
     "FDA Guidance: Investigating Out-of-Specification (OOS) Test Results for Pharmaceutical Production؛ راهنمای OOS سازمان MHRA.",
   ),
 
+  // ---------- Impurities ----------
+  impTitle: bi("Impurity thresholds (ICH Q3A(R2) · Q3B(R2))", `آستانه‌های ناخالصی ${ltr("(ICH Q3A(R2) · Q3B(R2))")}`),
+  impLead: bi(
+    "Above the reporting threshold an impurity is reported; above the identification threshold its structure must be identified; above the qualification threshold its safety must be established. TDI: total daily intake; MDD: maximum daily dose.",
+    "بالاتر از آستانه گزارش، ناخالصی گزارش می‌شود؛ بالاتر از آستانه شناسایی، ساختار آن باید شناسایی شود؛ بالاتر از آستانه صلاحیت‌سنجی (Qualification)، ایمنی آن باید اثبات شود. TDI: دریافت کل روزانه؛ MDD: حداکثر دوز روزانه.",
+  ),
+  impCols: {
+    scope: bi("Applies to", "حوزه"),
+    mdd: bi("Maximum daily dose", "حداکثر دوز روزانه"),
+    reporting: bi("Reporting", "گزارش"),
+    identification: bi("Identification", "شناسایی"),
+    qualification: bi("Qualification", "صلاحیت‌سنجی"),
+  },
+  impurities: [
+    { scope: bi("Drug substance (Q3A)", "ماده مؤثره (Q3A)"), mdd: "≤ 2 g/day", reporting: "0.05%", identification: "0.10% or 1.0 mg TDI*", qualification: "0.15% or 1.0 mg TDI*" },
+    { scope: bi("Drug substance (Q3A)", "ماده مؤثره (Q3A)"), mdd: "> 2 g/day", reporting: "0.03%", identification: "0.05%", qualification: "0.05%" },
+    { scope: bi("Drug product (Q3B)", "فرآورده (Q3B)"), mdd: "< 1 mg", reporting: "0.1%", identification: "1.0% or 5 µg TDI*", qualification: "1.0% or 50 µg TDI*" },
+    { scope: bi("Drug product (Q3B)", "فرآورده (Q3B)"), mdd: "1–10 mg", reporting: "0.1%", identification: "0.5% or 20 µg TDI*", qualification: "1.0% or 50 µg TDI*" },
+    { scope: bi("Drug product (Q3B)", "فرآورده (Q3B)"), mdd: "> 10–100 mg", reporting: "0.1%", identification: "0.2% or 2 mg TDI*", qualification: "0.5% or 200 µg TDI*" },
+    { scope: bi("Drug product (Q3B)", "فرآورده (Q3B)"), mdd: "> 100 mg–1 g", reporting: "0.1%", identification: "0.2% or 2 mg TDI*", qualification: "0.2% or 3 mg TDI*" },
+    { scope: bi("Drug product (Q3B)", "فرآورده (Q3B)"), mdd: "> 1–2 g", reporting: "0.05%", identification: "0.2% or 2 mg TDI*", qualification: "0.2% or 3 mg TDI*" },
+    { scope: bi("Drug product (Q3B)", "فرآورده (Q3B)"), mdd: "> 2 g", reporting: "0.05%", identification: "0.10%", qualification: "0.15%" },
+  ],
+  impNote: bi(
+    "* Whichever is lower. Q3B thresholds apply to degradation products. Mutagenic impurities are controlled separately under ICH M7, at much lower limits (e.g. TTC 1.5 µg/day for lifetime exposure).",
+    `* هر کدام کمتر باشد. آستانه‌های Q3B برای محصولات تخریب است. ناخالصی‌های جهش‌زا جداگانه طبق ${ltr("ICH M7")} و با حدود بسیار پایین‌تر کنترل می‌شوند (مثلاً ${ltr("TTC 1.5 µg/day")} برای مواجهه مادام‌العمر).`,
+  ),
+
+  // ---------- Residual solvents ----------
+  solventsTitle: bi("Residual solvents (ICH Q3C · USP <467>)", `حلال‌های باقیمانده ${ltr("(ICH Q3C · USP <467>)")}`),
+  solventCols: { cls: bi("Class", "رده"), meaning: bi("Meaning", "مفهوم"), examples: bi("Examples and concentration limits (ppm)", "نمونه‌ها و حد غلظت (ppm)") },
+  solvents: [
+    {
+      cls: "1",
+      meaning: bi("Avoid: known or suspected human carcinogens and environmental hazards.", "پرهیز شود: سرطان‌زای شناخته‌شده یا مشکوک انسانی و خطرناک برای محیط زیست."),
+      examples: "Benzene 2 · Carbon tetrachloride 4 · 1,2-Dichloroethane 5 · 1,1-Dichloroethene 8 · 1,1,1-Trichloroethane 1500",
+    },
+    {
+      cls: "2",
+      meaning: bi("Limit: non-genotoxic toxicity; each solvent has a PDE.", "محدود شود: سمیت غیرژنوتوکسیک؛ هر حلال PDE مشخص دارد."),
+      examples: "Acetonitrile 410 · Chloroform 60 · Dichloromethane 600 · N,N-Dimethylformamide 880 · Hexane 290 · Methanol 3000 · Tetrahydrofuran 720 · Toluene 890",
+    },
+    {
+      cls: "3",
+      meaning: bi("Low toxic potential: PDE 50 mg/day or more.", "پتانسیل سمیت کم: PDE برابر ۵۰ میلی‌گرم در روز یا بیشتر."),
+      examples: "≤ 5000 ppm (0.5%) without justification · e.g. Acetone, Ethanol, Ethyl acetate, 2-Propanol, Heptane, DMSO",
+    },
+  ],
+  solventsNote: bi(
+    "Concentration limits assume a daily intake of 10 g of drug product (Option 1); Option 2 allows the sum over all components, against the PDE.",
+    `حدود غلظت بر پایه مصرف روزانه ۱۰ گرم فرآورده است (گزینه ۱)؛ در گزینه ۲ مجموع همه اجزا با PDE مقایسه می‌شود.`,
+  ),
+
+  // ---------- Elemental impurities ----------
+  elementsTitle: bi("Elemental impurities (ICH Q3D · USP <232>)", `ناخالصی‌های عنصری ${ltr("(ICH Q3D · USP <232>)")}`),
+  elementCols: { element: bi("Element", "عنصر"), cls: bi("Class", "رده"), oral: bi("Oral PDE (µg/day)", "PDE خوراکی (میکروگرم در روز)"), parenteral: bi("Parenteral PDE (µg/day)", "PDE تزریقی (میکروگرم در روز)") },
+  elements: [
+    { element: "Cd", cls: "1", oral: "5", parenteral: "2" },
+    { element: "Pb", cls: "1", oral: "5", parenteral: "5" },
+    { element: "As", cls: "1", oral: "15", parenteral: "15" },
+    { element: "Hg", cls: "1", oral: "30", parenteral: "3" },
+    { element: "Co", cls: "2A", oral: "50", parenteral: "5" },
+    { element: "V", cls: "2A", oral: "100", parenteral: "10" },
+    { element: "Ni", cls: "2A", oral: "200", parenteral: "20" },
+  ],
+  elementsNote: bi(
+    "Class 1 and 2A elements are assessed in every risk assessment. If the assessed level stays below 30% of the PDE (the control threshold), no additional controls are needed.",
+    "عناصر رده ۱ و ۲A در هر ارزیابی ریسک بررسی می‌شوند. اگر مقدار برآوردشده کمتر از ۳۰٪ PDE (آستانه کنترل) باشد، کنترل اضافی لازم نیست.",
+  ),
+
+  // ---------- System suitability ----------
+  sstTitle: bi("Chromatographic system suitability (USP <621> · Ph. Eur. 2.2.46)", `انطباق سیستم کروماتوگرافی ${ltr("(USP <621> · Ph. Eur. 2.2.46)")}`),
+  sstCols: { parameter: bi("Parameter", "پارامتر"), what: bi("What it shows", "آنچه نشان می‌دهد"), typical: bi("Typical requirement", "الزام متداول") },
+  sst: [
+    { parameter: bi("Repeatability (replicate injections)", "تکرارپذیری (تزریق‌های تکراری)"), what: bi("Precision of the system", "دقت سیستم"), typical: bi("RSD as the monograph states; for assays commonly ≤ 2.0% for 5 injections", "RSD طبق مونوگراف؛ برای تعیین مقدار معمولاً ≤ ۲٫۰٪ برای ۵ تزریق") },
+    { parameter: bi("Resolution (Rs)", "قدرت تفکیک (Rs)"), what: bi("Separation of the critical pair", "جداسازی زوج بحرانی"), typical: bi("Usually ≥ 1.5 (baseline), or the monograph value", "معمولاً ≥ ۱٫۵ (جداسازی کامل) یا مقدار مونوگراف") },
+    { parameter: bi("Symmetry (tailing) factor", "فاکتور تقارن (دنباله‌دار شدن)"), what: bi("Peak shape", "شکل پیک"), typical: bi("0.8–1.8 for assay peaks unless the monograph states otherwise", "۰٫۸ تا ۱٫۸ برای پیک تعیین مقدار مگر مونوگراف چیز دیگری بگوید") },
+    { parameter: bi("Signal-to-noise ratio (S/N)", "نسبت سیگنال به نویز (S/N)"), what: bi("Sensitivity at the reporting level", "حساسیت در سطح گزارش"), typical: bi("≥ 10 at the quantitation limit; about 3 at the detection limit", "≥ ۱۰ در حد کمّی‌سازی؛ حدود ۳ در حد تشخیص") },
+    { parameter: bi("Plate number (N)", "تعداد بشقابک (N)"), what: bi("Column efficiency", "کارایی ستون"), typical: bi("As the monograph states", "طبق مونوگراف") },
+  ],
+  sstNote: bi(
+    "System suitability is an integral part of the method: if it fails, no sample result from that run may be reported.",
+    "انطباق سیستم بخش جدایی‌ناپذیر روش است: اگر برقرار نباشد، هیچ نتیجه نمونه‌ای از آن ران قابل گزارش نیست.",
+  ),
+
+  // ---------- Dissolution ----------
+  dissoTitle: bi("Dissolution apparatus and usual conditions (USP <711>)", `دستگاه‌های انحلال و شرایط متداول ${ltr("(USP <711>)")}`),
+  dissoCols: { app: bi("Apparatus", "دستگاه"), use: bi("Typical use", "کاربرد متداول"), speed: bi("Usual speed", "سرعت متداول") },
+  disso: [
+    { app: bi("1 — Basket", "۱ — سبد (Basket)"), use: bi("Capsules, floating and multiparticulate forms", "کپسول، فرآورده‌های شناور و چندذره‌ای"), speed: "50–100 rpm" },
+    { app: bi("2 — Paddle", "۲ — پارو (Paddle)"), use: bi("Tablets (most common); sinkers for capsules", "قرص (رایج‌ترین)؛ با سینکر برای کپسول"), speed: "50–75 rpm" },
+    { app: bi("3 — Reciprocating cylinder", "۳ — سیلندر رفت‌وبرگشتی"), use: bi("Extended release, pH-change profiles", "رهش طولانی و پروفایل با تغییر pH"), speed: "5–30 dips/min" },
+    { app: bi("4 — Flow-through cell", "۴ — سلول جریانی (Flow-through)"), use: bi("Poorly soluble drugs, implants, microspheres", "داروهای کم‌محلول، ایمپلنت و میکروسفر"), speed: "4–16 mL/min" },
+  ],
+  dissoNote: bi(
+    "Medium usually 900 mL (500–1000 mL) at 37 ± 0.5 °C, degassed when dissolved gases affect results. Sink conditions: a medium volume at least three times that needed to saturate the dose.",
+    `محیط معمولاً ۹۰۰ میلی‌لیتر (۵۰۰ تا ۱۰۰۰ میلی‌لیتر) در دمای ${ltr("37 ± 0.5 °C")} و گاززدایی‌شده اگر گازهای محلول بر نتیجه اثر بگذارند. شرایط Sink: حجم محیط دست‌کم سه برابر حجمی که دوز را اشباع می‌کند.`,
+  ),
+
+  // ---------- Sterility ----------
+  sterilityTitle: bi("Sterility test (USP <71> · Ph. Eur. 2.6.1)", `آزمون استریلیتی ${ltr("(USP <71> · Ph. Eur. 2.6.1)")}`),
+  sterility: [
+    { title: bi("Methods", "روش‌ها"), text: bi("Membrane filtration (preferred where the product can be filtered) or direct inoculation of the media.", "فیلتراسیون غشایی (روش ترجیحی برای محصولات قابل فیلتر) یا تلقیح مستقیم به محیط کشت.") },
+    { title: bi("Media and incubation", "محیط‌ها و انکوباسیون"), text: bi("Fluid thioglycollate medium at 30–35 °C (anaerobes and aerobes) and soya-bean casein digest medium at 20–25 °C (fungi and aerobes), each for at least 14 days.", "محیط تیوگلیکولات مایع در ۳۰ تا ۳۵ درجه (بی‌هوازی و هوازی) و محیط سویابین کازئین دایجست در ۲۰ تا ۲۵ درجه (قارچ و هوازی)، هر کدام دست‌کم ۱۴ روز.") },
+    { title: bi("Method suitability", "تناسب روش"), text: bi("Before routine use, show that the product does not inhibit growth: ≤ 100 CFU of each test organism must grow visibly.", "پیش از استفاده روتین ثابت شود که محصول از رشد جلوگیری نمی‌کند: ≤ ۱۰۰ CFU از هر میکروارگانیسم آزمون باید رشد قابل مشاهده داشته باشد.") },
+    { title: bi("Interpretation", "تفسیر"), text: bi("No growth: complies. Growth: fails, unless the test is shown to be invalid (e.g. contamination in the test environment) and repeated.", "عدم رشد: منطبق. رشد: مردود، مگر اینکه نامعتبر بودن آزمون (مثلاً آلودگی محیط آزمون) اثبات و آزمون تکرار شود.") },
+  ],
+
   sopsTitle: bi("QC and microbiology SOPs", "دستورالعمل‌های کنترل کیفیت و میکروبیولوژی"),
 };
