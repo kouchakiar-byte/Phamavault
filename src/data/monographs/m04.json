@@ -272,7 +272,7 @@
   "mw": "737.2 (glyceryl dibehenate)",
   "applications": {
    "en": "Used in oral solid dosage forms as a tablet and capsule lubricant, typically at 1–3% w/w, where it is less sensitive to over-blending than magnesium stearate. At higher levels (often 10% w/w or more) it forms inert lipid matrices for sustained release, and it is also used for hot-melt coating, melt granulation, taste masking and the preparation of solid lipid nanoparticles and microparticles. In cosmetics it acts as a thickener for oily phases.",
-   "fa": "در اشکال دارویی جامد خوراکی به عنوان لغزان‌کننده قرص و کپسول، معمولاً با غلظت 1–3٪ وزنی، به کار می‌رود و نسبت به منیزیم استئارات حساسیت کمتری به اختلاط بیش از حد دارد. در غلظت‌های بالاتر (اغلب 10٪ وزنی یا بیشتر) ماتریکس لیپیدی بی‌اثر برای رهش آهسته تشکیل می‌دهد و در پوشش‌دهی مذاب (hot-melt coating)، گرانولاسیون مذاب، پوشاندن طعم و تهیه نانوذرات و میکروذرات لیپیدی جامد نیز کاربرد دارد. در محصولات آرایشی به عنوان غلیظ‌کننده فاز روغنی مصرف می‌شود."
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان روان‌کننده قرص و کپسول، معمولاً با غلظت 1–3٪ وزنی، به کار می‌رود و نسبت به منیزیم استئارات حساسیت کمتری به اختلاط بیش از حد دارد. در غلظت‌های بالاتر (اغلب 10٪ وزنی یا بیشتر) ماتریکس لیپیدی بی‌اثر برای رهش آهسته تشکیل می‌دهد و در پوشش‌دهی مذاب (hot-melt coating)، گرانولاسیون مذاب، پوشاندن طعم و تهیه نانوذرات و میکروذرات لیپیدی جامد نیز کاربرد دارد. در محصولات آرایشی به عنوان غلیظ‌کننده فاز روغنی مصرف می‌شود."
   },
   "description": {
    "en": "A fine white powder or hard, waxy mass with a faint odour. Ph. Eur. specifies about 15–23% monoacylglycerols, 40–60% diacylglycerols and 21–35% triacylglycerols, with behenic acid as the main fatty acid.",
@@ -336,7 +336,7 @@
   },
   "incompatibilities": {
    "en": "No significant chemical incompatibilities have been reported. Like other hydrophobic lubricants it can slow tablet disintegration and drug dissolution if used in excess.",
-   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. مانند سایر لغزان‌کننده‌های آب‌گریز، مصرف بیش از حد آن ممکن است متلاشی شدن قرص و انحلال دارو را کند کند."
+   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. مانند سایر روان‌کننده‌های آب‌گریز، مصرف بیش از حد آن ممکن است متلاشی شدن قرص و انحلال دارو را کند کند."
   },
   "manufacture": {
    "en": "Made by esterifying glycerol with behenic acid, obtained from hydrogenated rapeseed or similar oils, without a catalyst; the product is then atomised (spray-cooled) to give a fine powder.",
@@ -360,7 +360,7 @@
   },
   "comments": {
    "en": "As a lubricant it is a useful alternative where magnesium stearate causes incompatibility, softening of tablets or slow dissolution, although higher levels are usually needed. In matrix tablets the release rate can be adjusted by changing its proportion, adding hydrophilic fillers or channelling agents, and by thermal treatment.",
-   "fa": "به عنوان لغزان‌کننده، در مواردی که منیزیم استئارات باعث ناسازگاری، نرم شدن قرص یا کندی انحلال می‌شود، جایگزین مفیدی است، هرچند معمولاً به مقدار بیشتری نیاز دارد. در قرص‌های ماتریکسی، سرعت رهش را می‌توان با تغییر نسبت آن، افزودن پرکننده‌های آب‌دوست یا عوامل کانال‌ساز و نیز عملیات حرارتی تنظیم کرد."
+   "fa": "به عنوان روان‌کننده، در مواردی که منیزیم استئارات باعث ناسازگاری، نرم شدن قرص یا کندی انحلال می‌شود، جایگزین مفیدی است، هرچند معمولاً به مقدار بیشتری نیاز دارد. در قرص‌های ماتریکسی، سرعت رهش را می‌توان با تغییر نسبت آن، افزودن پرکننده‌های آب‌دوست یا عوامل کانال‌ساز و نیز عملیات حرارتی تنظیم کرد."
   },
   "refs": [
    "usp",
@@ -503,7 +503,7 @@
   "mw": "358.56",
   "applications": {
    "en": "A non-ionic emulsifier, stabiliser, emollient and consistency agent used in creams, lotions and ointments; self-emulsifying grades, which contain a small amount of soap or another anionic or non-ionic emulsifier, are used for oil-in-water creams. In oral solid dosage forms it serves as a lubricant, a hydrophobic matrix former for sustained release, a binder in melt granulation and a coating or taste-masking agent; it is also used in solid lipid nanoparticles. It is widely used in foods and cosmetics.",
-   "fa": "یک امولسیفایر غیریونی، پایدارکننده، نرم‌کننده پوست و عامل قوام‌دهنده است که در کرم‌ها، لوسیون‌ها و پمادها به کار می‌رود؛ گریدهای خودامولسیون‌شونده که حاوی مقدار کمی صابون یا امولسیفایر آنیونی یا غیریونی دیگری هستند، برای کرم‌های روغن در آب مصرف می‌شوند. در اشکال دارویی جامد خوراکی به عنوان لغزان‌کننده، تشکیل‌دهنده ماتریکس آب‌گریز برای رهش آهسته، چسباننده در گرانولاسیون مذاب و عامل پوشش یا پوشاندن طعم به کار می‌رود و در نانوذرات لیپیدی جامد نیز مصرف می‌شود. در صنایع غذایی و آرایشی کاربرد گسترده دارد."
+   "fa": "یک امولسیفایر غیریونی، پایدارکننده، نرم‌کننده پوست و عامل قوام‌دهنده است که در کرم‌ها، لوسیون‌ها و پمادها به کار می‌رود؛ گریدهای خودامولسیون‌شونده که حاوی مقدار کمی صابون یا امولسیفایر آنیونی یا غیریونی دیگری هستند، برای کرم‌های روغن در آب مصرف می‌شوند. در اشکال دارویی جامد خوراکی به عنوان روان‌کننده، تشکیل‌دهنده ماتریکس آب‌گریز برای رهش آهسته، چسباننده در گرانولاسیون مذاب و عامل پوشش یا پوشاندن طعم به کار می‌رود و در نانوذرات لیپیدی جامد نیز مصرف می‌شود. در صنایع غذایی و آرایشی کاربرد گسترده دارد."
   },
   "description": {
    "en": "A white to cream-coloured, waxy solid supplied as beads, flakes or powder, waxy to the touch and with a slight fatty odour and taste. Ph. Eur. glycerol monostearate 40–55 contains 40–55% monoacylglycerols, mainly of stearic and palmitic acids; higher-monoester (distilled) grades are also available.",
@@ -613,7 +613,7 @@
   "mw": "",
   "applications": {
    "en": "Used in oral solid dosage forms as a tablet and capsule lubricant, as a lipophilic binder in melt granulation and as a hot-melt coating agent for taste masking or modified release. At higher levels it forms inert, non-swelling matrices for sustained release. It is also widely used to prepare solid lipid nanoparticles and nanostructured lipid carriers, and in topical products as a consistency agent.",
-   "fa": "در اشکال دارویی جامد خوراکی به عنوان لغزان‌کننده قرص و کپسول، چسباننده لیپوفیل در گرانولاسیون مذاب و عامل پوشش مذاب برای پوشاندن طعم یا رهش تعدیل‌شده به کار می‌رود. در غلظت‌های بالاتر ماتریکس‌های بی‌اثر و غیرمتورم‌شونده برای رهش آهسته تشکیل می‌دهد. همچنین به‌طور گسترده برای تهیه نانوذرات لیپیدی جامد (SLN) و حامل‌های لیپیدی نانوساختار (NLC) و در فرآورده‌های موضعی به عنوان عامل قوام‌دهنده مصرف می‌شود."
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان روان‌کننده قرص و کپسول، چسباننده لیپوفیل در گرانولاسیون مذاب و عامل پوشش مذاب برای پوشاندن طعم یا رهش تعدیل‌شده به کار می‌رود. در غلظت‌های بالاتر ماتریکس‌های بی‌اثر و غیرمتورم‌شونده برای رهش آهسته تشکیل می‌دهد. همچنین به‌طور گسترده برای تهیه نانوذرات لیپیدی جامد (SLN) و حامل‌های لیپیدی نانوساختار (NLC) و در فرآورده‌های موضعی به عنوان عامل قوام‌دهنده مصرف می‌شود."
   },
   "description": {
    "en": "A fine white powder or waxy solid with a faint odour. The fatty-acid fraction consists mainly of palmitic and stearic acids, and diacylglycerols form the largest part of the glyceride mixture.",
@@ -1746,7 +1746,7 @@
   "mw": "",
   "applications": {
    "en": "Used in oral solid dosage forms as a tablet and capsule disintegrant, usually at a few per cent up to about 10% w/w, and also as a binder because it compacts well; it can therefore serve as a combined binder–disintegrant in wet granulation and direct compression. Grades differ in particle size and substitution and are chosen for direct compression, wet granulation or orally disintegrating tablets. It is also used as an extrusion–spheronisation aid.",
-   "fa": "در اشکال دارویی جامد خوراکی به عنوان متلاشی‌کننده قرص و کپسول، معمولاً با غلظت چند درصد تا حدود 10٪ وزنی، به کار می‌رود و به دلیل تراکم‌پذیری خوب، به عنوان چسباننده نیز عمل می‌کند؛ بنابراین می‌تواند هم‌زمان نقش چسباننده و متلاشی‌کننده را در گرانولاسیون مرطوب و پرس مستقیم داشته باشد. گریدها از نظر اندازه ذره و میزان جایگزینی متفاوت‌اند و برای پرس مستقیم، گرانولاسیون مرطوب یا قرص‌های بازشونده در دهان (ODT) انتخاب می‌شوند. همچنین به عنوان کمک‌کننده در اکستروژن-اسفرونیزاسیون مصرف می‌شود."
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان متلاشی‌کننده قرص و کپسول، معمولاً با غلظت چند درصد تا حدود 10٪ وزنی، به کار می‌رود و به دلیل تراکم‌پذیری خوب، به عنوان چسباننده نیز عمل می‌کند؛ بنابراین می‌تواند هم‌زمان نقش چسباننده و متلاشی‌کننده را در گرانولاسیون مرطوب و پرس مستقیم داشته باشد. گریدها از نظر اندازه ذره و میزان جایگزینی متفاوت‌اند و برای پرس مستقیم، گرانولاسیون مرطوب یا قرص‌های متلاشی‌شونده در دهان (ODT) انتخاب می‌شوند. همچنین به عنوان کمک‌کننده در اکستروژن-اسفرونیزاسیون مصرف می‌شود."
   },
   "description": {
    "en": "A white to yellowish-white, odourless and tasteless, fibrous or granular powder. Its low degree of hydroxypropyl substitution makes it insoluble in water, in which it swells.",
@@ -1824,7 +1824,7 @@
   },
   "comments": {
    "en": "L-HPC acts mainly by swelling rather than by wicking alone, and its disintegrant action is less affected by tablet hardness than that of some starches. Because it is non-ionic, it is less likely than ionic superdisintegrants to interact with cationic drugs.",
-   "fa": "L-HPC عمدتاً از طریق تورم و نه صرفاً جذب مویینگی عمل می‌کند و اثر متلاشی‌کنندگی آن کمتر از برخی نشاسته‌ها تحت تأثیر سختی قرص قرار می‌گیرد. چون غیریونی است، احتمال برهم‌کنش آن با داروهای کاتیونی کمتر از سوپردیس‌اینتگرنت‌های یونی است."
+   "fa": "L-HPC عمدتاً از طریق تورم و نه صرفاً جذب مویینگی عمل می‌کند و اثر متلاشی‌کنندگی آن کمتر از برخی نشاسته‌ها تحت تأثیر سختی قرص قرار می‌گیرد. چون غیریونی است، احتمال برهم‌کنش آن با داروهای کاتیونی کمتر از متلاشی‌کننده‌های یونی از نوع Superdisintegrant است."
   },
   "refs": [
    "usp",
@@ -2547,7 +2547,7 @@
     },
     "v": {
      "en": "≈ 12 °C (closed cup)",
-     "fa": "حدود 12 °C (فنجان بسته)"
+     "fa": "حدود 12 °C (ظرف بسته)"
     }
    },
    {
@@ -2601,7 +2601,7 @@
   },
   "comments": {
    "en": "For skin disinfection, concentrations of about 60–70% v/v are more effective than the neat alcohol because water is needed for protein denaturation. Residual solvent levels in coated or granulated products should be controlled by validated drying and tested by gas chromatography.",
-   "fa": "برای ضدعفونی پوست، غلظت‌های حدود 60–70٪ حجمی مؤثرتر از الکل خالص‌اند، زیرا برای دناتوره کردن پروتئین‌ها وجود آب لازم است. مقدار حلال باقی‌مانده در فرآورده‌های پوشش‌دار یا گرانوله باید با خشک کردن معتبرسازی‌شده کنترل و با کروماتوگرافی گازی آزمایش شود."
+   "fa": "برای ضدعفونی پوست، غلظت‌های حدود 60–70٪ حجمی مؤثرتر از الکل خالص‌اند، زیرا برای دناتوره کردن پروتئین‌ها وجود آب لازم است. مقدار حلال باقی‌مانده در فرآورده‌های پوشش‌دار یا گرانوله باید با خشک کردن اعتبارسنجی‌شده کنترل و با کروماتوگرافی گازی آزمایش شود."
   },
   "refs": [
    "usp",
@@ -3160,7 +3160,7 @@
   },
   "comments": {
    "en": "Lactitol has a clean, sugar-like taste without the cooling effect of xylitol or sorbitol. Although it is made from lactose, it is not a reducing sugar and can be used with amine drugs that are incompatible with lactose.",
-   "fa": "لاکتیتول طعمی تمیز و شبیه شکر دارد و اثر خنک‌کنندگی زایلیتول یا سوربیتول را ندارد. با وجود اینکه از لاکتوز تهیه می‌شود، قند احیاکننده نیست و می‌توان آن را همراه داروهای آمینی که با لاکتوز ناسازگارند به کار برد."
+   "fa": "لاکتیتول طعمی خالص و شبیه شکر دارد و اثر خنک‌کنندگی زایلیتول یا سوربیتول را ندارد. با وجود اینکه از لاکتوز تهیه می‌شود، قند احیاکننده نیست و می‌توان آن را همراه داروهای آمینی که با لاکتوز ناسازگارند به کار برد."
   },
   "refs": [
    "usp",
@@ -3271,7 +3271,7 @@
   },
   "comments": {
    "en": "Anhydrous lactose compacts mainly by brittle fracture, so its tabletability is little affected by lubricant level or blending time. Tablets made from it may slowly increase in hardness at high humidity, which should be checked in stability studies.",
-   "fa": "لاکتوز بدون آب عمدتاً با شکست شکننده (brittle fracture) فشرده می‌شود؛ بنابراین قابلیت قرص‌شدن آن تحت تأثیر مقدار لغزان‌کننده یا زمان اختلاط کمتر قرار می‌گیرد. قرص‌های تهیه‌شده از آن ممکن است در رطوبت بالا به‌تدریج سخت‌تر شوند که باید در مطالعات پایداری بررسی شود."
+   "fa": "لاکتوز بدون آب عمدتاً با شکست شکننده (brittle fracture) فشرده می‌شود؛ بنابراین قابلیت قرص‌شدن آن تحت تأثیر مقدار روان‌کننده یا زمان اختلاط کمتر قرار می‌گیرد. قرص‌های تهیه‌شده از آن ممکن است در رطوبت بالا به‌تدریج سخت‌تر شوند که باید در مطالعات پایداری بررسی شود."
   },
   "refs": [
    "usp",

@@ -24,7 +24,7 @@
   "mw": "131.17",
   "applications": {
    "en": "Leucine is used as a water-soluble lubricant in tablets, particularly effervescent and soluble tablets where insoluble stearates would leave a scum. In spray-dried powders for inhalation it is added as a dispersibility enhancer: it accumulates at the particle surface, lowering cohesion and moisture uptake and improving aerosol performance; levels of several percent up to about 20% w/w are commonly reported. It is also used as a nutritional amino acid.",
-   "fa": "لوسین به عنوان لغزان‌کننده محلول در آب در قرص‌ها، به‌ویژه قرص‌های جوشان و محلول که استئارات‌های نامحلول در آن‌ها لایه کدر روی آب ایجاد می‌کنند، به کار می‌رود. در پودرهای اسپری‌درای استنشاقی به عنوان بهبوددهنده پراکنش افزوده می‌شود؛ در سطح ذرات تجمع می‌یابد، چسبندگی بین ذرات و جذب رطوبت را کم می‌کند و عملکرد آئروسل را بهتر می‌کند؛ مقادیر چند درصد تا حدود 20٪ وزنی معمولاً گزارش شده است. به عنوان اسید آمینه تغذیه‌ای نیز مصرف می‌شود."
+   "fa": "لوسین به عنوان روان‌کننده محلول در آب در قرص‌ها، به‌ویژه قرص‌های جوشان و محلول که استئارات‌های نامحلول در آن‌ها لایه کدر روی آب ایجاد می‌کنند، به کار می‌رود. در پودرهای اسپری‌درای استنشاقی به عنوان بهبوددهنده پراکنش افزوده می‌شود؛ در سطح ذرات تجمع می‌یابد، چسبندگی بین ذرات و جذب رطوبت را کم می‌کند و عملکرد آئروسل را بهتر می‌کند؛ مقادیر چند درصد تا حدود 20٪ وزنی معمولاً گزارش شده است. به عنوان اسید آمینه تغذیه‌ای نیز مصرف می‌شود."
   },
   "description": {
    "en": "White, shiny crystals or white crystalline powder, practically odourless, with a slightly bitter taste. It is an essential, branched-chain amino acid.",
@@ -108,11 +108,11 @@
   },
   "related": {
    "en": "Isoleucine; valine; glycine; sodium benzoate (as an alternative soluble lubricant).",
-   "fa": "ایزولوسین؛ والین؛ گلیسین؛ سدیم بنزوات (به عنوان لغزان‌کننده محلول جایگزین)."
+   "fa": "ایزولوسین؛ والین؛ گلیسین؛ سدیم بنزوات (به عنوان روان‌کننده محلول جایگزین)."
   },
   "comments": {
    "en": "As a tablet lubricant leucine is less efficient than magnesium stearate, so relatively high levels are needed, but it gives clear solutions. In spray drying, its low aqueous solubility makes it precipitate early at the droplet surface, which is the basis of its shell-forming effect; the crystallinity of the surface layer depends on drying conditions.",
-   "fa": "لوسین به عنوان لغزان‌کننده قرص کارایی کمتری از منیزیم استئارات دارد و به مقادیر نسبتاً زیاد نیاز است، ولی محلول شفاف ایجاد می‌کند. در خشک‌کردن پاششی، حلالیت کم آن در آب باعث می‌شود زودتر در سطح قطره رسوب کند و همین اساس اثر پوسته‌سازی آن است؛ میزان کریستالی بودن لایه سطحی به شرایط خشک‌کردن بستگی دارد."
+   "fa": "لوسین به عنوان روان‌کننده قرص کارایی کمتری از منیزیم استئارات دارد و به مقادیر نسبتاً زیاد نیاز است، ولی محلول شفاف ایجاد می‌کند. در خشک‌کردن پاششی، حلالیت کم آن در آب باعث می‌شود زودتر در سطح قطره رسوب کند و همین اساس اثر پوسته‌سازی آن است؛ میزان کریستالی بودن لایه سطحی به شرایط خشک‌کردن بستگی دارد."
   },
   "refs": [
    "usp",
@@ -145,7 +145,7 @@
   "mw": "",
   "applications": {
    "en": "Used mainly in topical preparations as an emollient and as the oil phase of emulsions and ointments, and in ophthalmic ointments. It is also used as a lubricant in capsule and tablet manufacture, as a vehicle and solvent, and in oral emulsions as a laxative. Typical concentrations: ophthalmic ointments 3–60%; otic preparations 0.5–3%; topical emulsions 1–32%; topical lotions 1–20%; topical ointments 0.1–95%.",
-   "fa": "عمدتاً در فرآورده‌های موضعی به عنوان نرم‌کننده و فاز روغنی امولسیون‌ها و پمادها و نیز در پمادهای چشمی به کار می‌رود. همچنین به عنوان لغزان‌کننده در ساخت کپسول و قرص، به عنوان حامل و حلال، و در امولسیون‌های خوراکی به عنوان ملین مصرف می‌شود. غلظت‌های متداول: پماد چشمی 3–60٪؛ فرآورده‌های گوش 0.5–3٪؛ امولسیون موضعی 1–32٪؛ لوسیون موضعی 1–20٪؛ پماد موضعی 0.1–95٪."
+   "fa": "عمدتاً در فرآورده‌های موضعی به عنوان نرم‌کننده و فاز روغنی امولسیون‌ها و پمادها و نیز در پمادهای چشمی به کار می‌رود. همچنین به عنوان روان‌کننده در ساخت کپسول و قرص، به عنوان حامل و حلال، و در امولسیون‌های خوراکی به عنوان ملین مصرف می‌شود. غلظت‌های متداول: پماد چشمی 3–60٪؛ فرآورده‌های گوش 0.5–3٪؛ امولسیون موضعی 1–32٪؛ لوسیون موضعی 1–20٪؛ پماد موضعی 0.1–95٪."
   },
   "description": {
    "en": "A transparent, colourless, oily liquid without fluorescence in daylight. It is practically odourless and tasteless. Light liquid paraffin (light mineral oil) is a separate, lower-viscosity grade.",
@@ -223,7 +223,7 @@
   },
   "comments": {
    "en": "Grades differ mainly in viscosity, so the pharmacopoeial grade should be specified; the light grade spreads more easily and is preferred in sprays and some lotions. Gelled liquid paraffin (with polyethylene) forms a hydrocarbon gel ointment base.",
-   "fa": "گریدها عمدتاً در گرانروی متفاوت‌اند و بنابراین گرید فارماکوپه‌ای باید مشخص شود؛ گرید سبک راحت‌تر پخش می‌شود و در اسپری‌ها و برخی لوسیون‌ها ترجیح داده می‌شود. پارافین مایع ژله‌ای‌شده با پلی‌اتیلن، پایه پماد ژل هیدروکربنی را تشکیل می‌دهد."
+   "fa": "گریدها عمدتاً در گرانروی متفاوت‌اند و بنابراین گرید فارماکوپه‌ای باید مشخص شود؛ گرید سبک آسان‌تر پخش می‌شود و در اسپری‌ها و برخی لوسیون‌ها ترجیح داده می‌شود. پارافین مایع ژله‌ای‌شده با پلی‌اتیلن، پایه پماد ژل هیدروکربنی را تشکیل می‌دهد."
   },
   "refs": [
    "usp",
@@ -315,7 +315,7 @@
   },
   "safety": {
    "en": "Regarded as having low toxicity. In parenteral use it causes less histamine release than polyoxyl 35 castor oil, but hypersensitivity reactions are still possible and should be considered with intravenous products.",
-   "fa": "سمیت کمی برای آن قائل‌اند. در مصرف تزریقی آزادسازی هیستامین کمتری نسبت به روغن کرچک پلی‌اکسیل 35 ایجاد می‌کند، ولی واکنش‌های حساسیتی همچنان ممکن است و در فرآورده‌های وریدی باید در نظر گرفته شود."
+   "fa": "کم‌سمیت تلقی می‌شود. در مصرف تزریقی آزادسازی هیستامین کمتری نسبت به روغن کرچک پلی‌اکسیل 35 ایجاد می‌کند، ولی واکنش‌های حساسیتی همچنان ممکن است و در فرآورده‌های وریدی باید در نظر گرفته شود."
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended. Warm gently to liquefy before dispensing.",
@@ -496,7 +496,7 @@
   "mw": "about 950–35 000 (grade-dependent average)",
   "applications": {
    "en": "Solid macrogols are used as water-soluble suppository bases (alone or blended, typically making up most of the base), in ointment bases blended with liquid grades, as binders and soluble lubricants in tablets, as carriers in solid dispersions and melt granulation, and as plasticisers and polishing agents in film coating. Grades such as PEG 3350 and PEG 4000 are also used therapeutically as osmotic laxatives.",
-   "fa": "ماکروگل‌های جامد به عنوان پایه شیاف محلول در آب (به‌تنهایی یا مخلوط، معمولاً بخش عمده پایه)، در پایه پماد همراه گریدهای مایع، به عنوان چسباننده و لغزان‌کننده محلول در قرص، حامل در دیسپرسیون جامد و گرانولاسیون مذاب، و به عنوان نرم‌کننده و براق‌کننده در پوشش فیلمی به کار می‌روند. گریدهایی مانند PEG 3350 و PEG 4000 به عنوان ملین اسمزی نیز مصرف درمانی دارند."
+   "fa": "ماکروگل‌های جامد به عنوان پایه شیاف محلول در آب (به‌تنهایی یا مخلوط، معمولاً بخش عمده پایه)، در پایه پماد همراه گریدهای مایع، به عنوان چسباننده و روان‌کننده محلول در قرص، حامل در دیسپرسیون جامد و گرانولاسیون مذاب، و به عنوان نرم‌کننده و براق‌کننده در پوشش فیلمی به کار می‌روند. گریدهایی مانند PEG 3350 و PEG 4000 به عنوان ملین اسمزی نیز مصرف درمانی دارند."
   },
   "description": {
    "en": "White or almost white, waxy or paraffin-like solids supplied as flakes, granules or powder; grades around PEG 1000 are soft, low-melting solids. They are odourless or nearly so.",
@@ -880,7 +880,7 @@
   ],
   "stability": {
    "en": "Absorbs moisture and carbon dioxide from the air, gradually converting to the hydroxide and basic carbonate; the light form does so more readily. Store in an airtight container in a cool, dry place.",
-   "fa": "رطوبت و کربن دی‌اکسید هوا را جذب می‌کند و به‌تدریج به هیدروکسید و کربنات بازی تبدیل می‌شود؛ نوع سبک این تغییر را راحت‌تر نشان می‌دهد. در ظرف دربسته، در جای خنک و خشک نگهداری شود."
+   "fa": "رطوبت و کربن دی‌اکسید هوا را جذب می‌کند و به‌تدریج به هیدروکسید و کربنات بازی تبدیل می‌شود؛ نوع سبک این تغییر را آسان‌تر نشان می‌دهد. در ظرف دربسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "Reacts with acids. Its alkalinity can degrade base-labile drugs, and it can adsorb or chelate drugs (for example tetracyclines, fluoroquinolones and some antimuscarinics), reducing their absorption. Incompatible with strong oxidising agents.",
@@ -936,7 +936,7 @@
   "mw": "",
   "applications": {
    "en": "Used in oral pharmaceutical products and foods as a glidant and anticaking agent, and as an adsorbent. Therapeutically it has been used as an antacid. It has also been used as a filter aid and in chromatography.",
-   "fa": "در فرآورده‌های دارویی خوراکی و غذا به عنوان روان‌کننده جریان (گلایدنت) و ضدکلوخه و همچنین به عنوان جاذب به کار می‌رود. از نظر درمانی به عنوان آنتی‌اسید مصرف شده است. به عنوان کمک‌صافی و در کروماتوگرافی نیز کاربرد دارد."
+   "fa": "در فرآورده‌های دارویی خوراکی و غذا به عنوان تسهیل‌کننده جریان (Glidant) و ضدکلوخه و همچنین به عنوان جاذب به کار می‌رود. از نظر درمانی به عنوان آنتی‌اسید مصرف شده است. به عنوان کمک‌صافی و در کروماتوگرافی نیز کاربرد دارد."
   },
   "description": {
    "en": "A fine, white, odourless and tasteless powder, free from grittiness. It is a synthetic compound of magnesium oxide and silicon dioxide with varying amounts of water.",
@@ -1044,7 +1044,7 @@
   "mw": "260.86 (anhydrous)",
   "applications": {
    "en": "Used in oral pharmaceutical products and foods as a glidant and adsorbent. It is used more widely as an active ingredient, an antacid, often combined with aluminium hydroxide.",
-   "fa": "در فرآورده‌های دارویی خوراکی و غذا به عنوان روان‌کننده جریان و جاذب به کار می‌رود. مصرف گسترده‌تر آن به عنوان ماده مؤثره آنتی‌اسید، اغلب همراه آلومینیوم هیدروکسید، است."
+   "fa": "در فرآورده‌های دارویی خوراکی و غذا به عنوان تسهیل‌کننده جریان و جاذب به کار می‌رود. مصرف گسترده‌تر آن به عنوان ماده مؤثره آنتی‌اسید، اغلب همراه آلومینیوم هیدروکسید، است."
   },
   "description": {
    "en": "A white, odourless, tasteless, fine powder, free from grittiness.",
@@ -1122,7 +1122,7 @@
   },
   "comments": {
    "en": "Its strong adsorptive capacity is an advantage as a glidant but a risk for low-dose drugs and preserved liquids; check drug assay, preservative efficacy and dissolution when it is included in a formulation.",
-   "fa": "ظرفیت جذب سطحی زیاد آن به عنوان روان‌کننده جریان مزیت است، ولی برای داروهای کم‌دوز و مایعات دارای نگهدارنده خطر محسوب می‌شود؛ هنگام استفاده در فرمولاسیون، سنجش دارو، کارایی نگهدارنده و انحلال را بررسی کنید."
+   "fa": "ظرفیت جذب سطحی زیاد آن به عنوان تسهیل‌کننده جریان مزیت است، ولی برای داروهای کم‌دوز و مایعات دارای نگهدارنده خطر محسوب می‌شود؛ هنگام استفاده در فرمولاسیون، سنجش دارو، کارایی نگهدارنده و انحلال را بررسی کنید."
   },
   "refs": [
    "usp",
@@ -1335,7 +1335,7 @@
   },
   "comments": {
    "en": "Its sourness develops more gradually and lasts longer than that of citric acid, so it is often blended with citric acid to shape the taste profile of flavoured products.",
-   "fa": "ترشی آن تدریجی‌تر از سیتریک اسید ظاهر شده و ماندگارتر است؛ به همین دلیل اغلب با سیتریک اسید مخلوط می‌شود تا نیم‌رخ طعمی فرآورده‌های طعم‌دار تنظیم شود."
+   "fa": "طعم ترش آن تدریجی‌تر از سیتریک اسید ظاهر شده و ماندگارتر است؛ به همین دلیل اغلب با سیتریک اسید مخلوط می‌شود تا نیم‌رخ طعمی فرآورده‌های طعم‌دار تنظیم شود."
   },
   "refs": [
    "usp",
@@ -1391,7 +1391,7 @@
     },
     "v": {
      "en": "very soluble in water; very slightly soluble in ethanol",
-     "fa": "بسیار محلول در آب؛ خیلی کم محلول در اتانول"
+     "fa": "بسیار محلول در آب؛ بسیار کم محلول در اتانول"
     }
    },
    {
@@ -1530,7 +1530,7 @@
     },
     "v": {
      "en": "freely soluble or readily dispersible in water (higher-DE grades dissolve more easily); practically insoluble in ethanol",
-     "fa": "به‌راحتی محلول یا قابل پراکنش در آب (گریدهای با DE بیشتر راحت‌تر حل می‌شوند)؛ عملاً نامحلول در اتانول"
+     "fa": "به‌راحتی محلول یا قابل پراکنش در آب (گریدهای با DE بیشتر آسان‌تر حل می‌شوند)؛ عملاً نامحلول در اتانول"
     }
    }
   ],
@@ -1564,7 +1564,7 @@
   },
   "comments": {
    "en": "Low-DE grades are less hygroscopic, less sweet and give more viscous solutions; higher-DE grades are more soluble and compress better but brown more readily. Choose the DE to suit the process and the drug's reactivity.",
-   "fa": "گریدهای با DE پایین رطوبت‌گیری و شیرینی کمتر و محلول‌های گرانروتری دارند؛ گریدهای با DE بالاتر محلول‌ترند و بهتر فشرده می‌شوند ولی راحت‌تر قهوه‌ای می‌شوند. DE را متناسب با فرآیند و واکنش‌پذیری دارو انتخاب کنید."
+   "fa": "گریدهای با DE پایین رطوبت‌گیری و شیرینی کمتر و محلول‌های گرانروتری دارند؛ گریدهای با DE بالاتر محلول‌ترند و بهتر فشرده می‌شوند ولی آسان‌تر قهوه‌ای می‌شوند. DE را متناسب با فرآیند و واکنش‌پذیری دارو انتخاب کنید."
   },
   "refs": [
    "usp",
@@ -1590,7 +1590,7 @@
   "mw": "360.31",
   "applications": {
    "en": "Used as a sweetener and as a tablet diluent and binder, including spray-dried grades for direct compression. It is used as a stabiliser and tonicity agent in some parenteral protein products (for example intravenous immunoglobulins), as a lyoprotectant in freeze-dried products, and as a carbohydrate source in some intravenous infusions.",
-   "fa": "به عنوان شیرین‌کننده و رقیق‌کننده و چسباننده قرص، از جمله گریدهای اسپری‌درای برای پرس مستقیم، به کار می‌رود. در برخی فرآورده‌های پروتئینی تزریقی (مانند ایمونوگلوبولین‌های وریدی) به عنوان پایدارکننده و تنظیم‌کننده تونیسیته، در فرآورده‌های لیوفیلیزه به عنوان محافظ انجماد‌خشک و در برخی محلول‌های انفوزیون وریدی به عنوان منبع کربوهیدرات مصرف می‌شود."
+   "fa": "به عنوان شیرین‌کننده و رقیق‌کننده و چسباننده قرص، از جمله گریدهای اسپری‌درای برای پرس مستقیم، به کار می‌رود. در برخی فرآورده‌های پروتئینی تزریقی (مانند ایمونوگلوبولین‌های وریدی) به عنوان پایدارکننده و تنظیم‌کننده تونیسیته، در فرآورده‌های لیوفیلیزه به عنوان محافظ در خشک‌کردن انجمادی (lyoprotectant) و در برخی محلول‌های انفوزیون وریدی به عنوان منبع کربوهیدرات مصرف می‌شود."
   },
   "description": {
    "en": "White crystals or crystalline powder, odourless, with a mildly sweet taste; its sweetness is roughly a third of that of sucrose.",
@@ -1614,7 +1614,7 @@
     },
     "v": {
      "en": "freely soluble in water; very slightly soluble in ethanol; practically insoluble in ether",
-     "fa": "به‌راحتی محلول در آب؛ خیلی کم محلول در اتانول؛ عملاً نامحلول در اتر"
+     "fa": "به‌راحتی محلول در آب؛ بسیار کم محلول در اتانول؛ عملاً نامحلول در اتر"
     }
    },
    {
@@ -1700,7 +1700,7 @@
   "mw": "182.17",
   "applications": {
    "en": "Widely used as a diluent in tablets and capsules (typically 10–90% w/w), particularly in chewable and orally disintegrating tablets, because it is non-hygroscopic, pleasantly sweet and gives a cooling sensation. It is a common bulking agent in freeze-dried injections, an isotonicity agent in parenterals and ophthalmics, and is used in direct-compression (granulated or spray-dried) grades and as a plasticiser in soft capsules. Therapeutically it is an osmotic diuretic.",
-   "fa": "به‌طور گسترده به عنوان رقیق‌کننده در قرص و کپسول (معمولاً 10–90٪ وزنی)، به‌ویژه در قرص‌های جویدنی و قرص‌های بازشونده در دهان (ODT)، به کار می‌رود، چون رطوبت‌گیر نیست، شیرینی مطبوع دارد و احساس خنکی ایجاد می‌کند. حجم‌دهنده رایج در تزریقی‌های لیوفیلیزه و تنظیم‌کننده تونیسیته در فرآورده‌های تزریقی و چشمی است؛ گریدهای مخصوص پرس مستقیم (گرانوله یا اسپری‌درای) دارد و به عنوان نرم‌کننده در کپسول نرم نیز مصرف می‌شود. از نظر درمانی دیورتیک اسمزی است."
+   "fa": "به‌طور گسترده به عنوان رقیق‌کننده در قرص و کپسول (معمولاً 10–90٪ وزنی)، به‌ویژه در قرص‌های جویدنی و قرص‌های متلاشی‌شونده در دهان (ODT)، به کار می‌رود، چون رطوبت‌گیر نیست، شیرینی مطبوع دارد و احساس خنکی ایجاد می‌کند. حجم‌دهنده رایج در تزریقی‌های لیوفیلیزه و تنظیم‌کننده تونیسیته در فرآورده‌های تزریقی و چشمی است؛ گریدهای مخصوص پرس مستقیم (گرانوله یا اسپری‌درای) دارد و به عنوان نرم‌کننده در کپسول نرم نیز مصرف می‌شود. از نظر درمانی دیورتیک اسمزی است."
   },
   "description": {
    "en": "White, odourless, crystalline powder or free-flowing granules with a sweet taste about half that of sucrose and a cooling mouthfeel.",
@@ -1724,7 +1724,7 @@
     },
     "v": {
      "en": "freely soluble in water (about 1 in 5.5 at 20 °C); very slightly soluble in ethanol; practically insoluble in ether",
-     "fa": "به‌راحتی محلول در آب (حدود 1 در 5.5 در 20 °C)؛ خیلی کم محلول در اتانول؛ عملاً نامحلول در اتر"
+     "fa": "به‌راحتی محلول در آب (حدود 1 در 5.5 در 20 °C)؛ بسیار کم محلول در اتانول؛ عملاً نامحلول در اتر"
     }
    },
    {
@@ -1770,7 +1770,7 @@
   ],
   "stability": {
    "en": "Stable in the dry state and in aqueous solution; solutions may be autoclaved. Concentrated solutions (about 15–20% and above) can crystallise when cooled; crystals should be redissolved by warming and an in-line filter used for infusion. Store in a well-closed container in a cool, dry place.",
-   "fa": "در حالت خشک و در محلول آبی پایدار است و محلول‌ها را می‌توان اتوکلاو کرد. محلول‌های غلیظ (حدود 15–20٪ و بیشتر) با سرد شدن ممکن است کریستالیزه شوند؛ کریستال‌ها باید با گرم کردن دوباره حل شوند و در انفوزیون از فیلتر سر راه استفاده شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+   "fa": "در حالت خشک و در محلول آبی پایدار است و محلول‌ها را می‌توان اتوکلاو کرد. محلول‌های غلیظ (حدود 15–20٪ و بیشتر) با سرد شدن ممکن است کریستالیزه شوند؛ کریستال‌ها باید با گرم کردن دوباره حل شوند و در انفوزیون از فیلتر درون‌خطی (in-line) استفاده شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "Concentrated solutions (20–25%) may be salted out by potassium or sodium chloride, and mannitol should not be added to whole blood for transfusion. It can complex some metal ions (for example aluminium, copper and iron), and the reducing-sugar impurities of some grades have been linked to drug degradation. Mannitol has been reported to reduce the oral bioavailability of some drugs compared with sucrose.",
@@ -1829,7 +1829,7 @@
   "mw": "≈ 500 (average)",
   "applications": {
    "en": "Used as an oily vehicle and solvent in oral solutions and suspensions, soft gelatin capsule fills, self-emulsifying lipid formulations, topical creams and ointments, and parenteral lipid emulsions (commonly mixed with long-chain triglycerides). They are also used as emollients, lubricants and in clinical nutrition.",
-   "fa": "به عنوان حامل و حلال روغنی در محلول‌ها و سوسپانسیون‌های خوراکی، پرکننده کپسول نرم ژلاتینی، فرمولاسیون‌های لیپیدی خودامولسیون‌شونده، کرم‌ها و پمادهای موضعی و امولسیون‌های لیپیدی تزریقی (معمولاً مخلوط با تری‌گلیسریدهای زنجیر بلند) به کار می‌روند. همچنین به عنوان نرم‌کننده پوست، لغزان‌کننده و در تغذیه بالینی مصرف می‌شوند."
+   "fa": "به عنوان حامل و حلال روغنی در محلول‌ها و سوسپانسیون‌های خوراکی، پرکننده کپسول نرم ژلاتینی، فرمولاسیون‌های لیپیدی خودامولسیون‌شونده، کرم‌ها و پمادهای موضعی و امولسیون‌های لیپیدی تزریقی (معمولاً مخلوط با تری‌گلیسریدهای زنجیر بلند) به کار می‌روند. همچنین به عنوان نرم‌کننده پوست، روان‌کننده و در تغذیه بالینی مصرف می‌شوند."
   },
   "description": {
    "en": "A colourless or slightly yellowish, practically odourless and tasteless oily liquid of low viscosity.",
@@ -2126,7 +2126,7 @@
     },
     "v": {
      "en": "very slightly soluble in water; very soluble in ethanol (95%), chloroform and ether; freely soluble in fixed oils, liquid paraffin and glacial acetic acid",
-     "fa": "خیلی کم محلول در آب؛ بسیار محلول در اتانول 95٪، کلروفرم و اتر؛ به‌راحتی محلول در روغن‌های ثابت، پارافین مایع و استیک اسید گلاسیال"
+     "fa": "بسیار کم محلول در آب؛ بسیار محلول در اتانول 95٪، کلروفرم و اتر؛ به‌راحتی محلول در روغن‌های ثابت، پارافین مایع و استیک اسید گلاسیال"
     }
    }
   ],
@@ -2220,7 +2220,7 @@
     },
     "v": {
      "en": "soluble in water; very slightly soluble in ethanol (95%); dissolves in dilute acids and dilute alkali hydroxide solutions",
-     "fa": "محلول در آب؛ خیلی کم محلول در اتانول 95٪؛ در اسیدهای رقیق و محلول‌های رقیق هیدروکسیدهای قلیایی حل می‌شود"
+     "fa": "محلول در آب؛ بسیار کم محلول در اتانول 95٪؛ در اسیدهای رقیق و محلول‌های رقیق هیدروکسیدهای قلیایی حل می‌شود"
     }
    },
    {
@@ -2621,7 +2621,7 @@
   },
   "handling": {
    "en": "Corrosive: wear chemical-resistant gloves, eye protection (face shield) and protective clothing and handle in a well-ventilated area. It is combustible; keep away from sources of ignition.",
-   "fa": "خورنده است: از دستکش مقاوم به مواد شیمیایی، محافظ چشم (شیلد صورت) و لباس محافظ استفاده و در محیط با تهویه خوب کار شود. قابل اشتعال است؛ از منابع جرقه و شعله دور نگه داشته شود."
+   "fa": "خورنده است: از دستکش مقاوم به مواد شیمیایی، محافظ چشم (محافظ صورت) و لباس محافظ استفاده و در محیط با تهویه خوب کار شود. قابل اشتعال است؛ از منابع جرقه و شعله دور نگه داشته شود."
   },
   "regulatory": {
    "en": "Described in the USP–NF. Used in parenteral (as ethanolamine oleate) and topical medicinal products and in cosmetics.",
@@ -2930,7 +2930,7 @@
     },
     "v": {
      "en": "very slightly soluble in water and ethanol",
-     "fa": "خیلی کم محلول در آب و اتانول"
+     "fa": "بسیار کم محلول در آب و اتانول"
     }
    },
    {
@@ -2962,7 +2962,7 @@
   },
   "handling": {
    "en": "Handle cylinders according to compressed-gas safety rules: secure them upright, use proper regulators and ensure good ventilation; oxygen monitoring is advisable where large volumes are used. Wear insulated gloves and a face shield with liquid nitrogen.",
-   "fa": "سیلندرها را طبق مقررات ایمنی گازهای فشرده جابه‌جا کنید: به صورت ایستاده مهار شوند، از رگولاتور مناسب استفاده و تهویه خوب تأمین شود؛ در محل مصرف حجم‌های زیاد، پایش اکسیژن توصیه می‌شود. هنگام کار با نیتروژن مایع از دستکش عایق و شیلد صورت استفاده کنید."
+   "fa": "سیلندرها را طبق مقررات ایمنی گازهای فشرده جابه‌جا کنید: به صورت ایستاده مهار شوند، از رگولاتور مناسب استفاده و تهویه خوب تأمین شود؛ در محل مصرف حجم‌های زیاد، پایش اکسیژن توصیه می‌شود. هنگام کار با نیتروژن مایع از دستکش عایق و محافظ صورت استفاده کنید."
   },
   "regulatory": {
    "en": "GRAS listed. Accepted as a food additive in Europe (E941). Included in the FDA Inactive Ingredient Database (injections; aerosols and other preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
@@ -3451,7 +3451,7 @@
   "mw": "256.42",
   "applications": {
    "en": "Used as a lubricant and as an emulsifying agent (after neutralisation to soaps) in topical and oral products, as a lipid component of solid lipid nanoparticles and other lipid carriers, and as a constituent of many fatty-acid mixtures, notably pharmacopoeial stearic acid. It is also used in cosmetics and foods.",
-   "fa": "به عنوان لغزان‌کننده و امولسیفایر (پس از خنثی‌سازی و تشکیل صابون) در فرآورده‌های موضعی و خوراکی، جزء لیپیدی نانوذرات لیپیدی جامد و سایر حامل‌های لیپیدی و جزء بسیاری از مخلوط‌های اسید چرب، به‌ویژه استئاریک اسید فارماکوپه‌ای، به کار می‌رود. در محصولات آرایشی و غذا نیز مصرف می‌شود."
+   "fa": "به عنوان روان‌کننده و امولسیفایر (پس از خنثی‌سازی و تشکیل صابون) در فرآورده‌های موضعی و خوراکی، جزء لیپیدی نانوذرات لیپیدی جامد و سایر حامل‌های لیپیدی و جزء بسیاری از مخلوط‌های اسید چرب، به‌ویژه استئاریک اسید فارماکوپه‌ای، به کار می‌رود. در محصولات آرایشی و غذا نیز مصرف می‌شود."
   },
   "description": {
    "en": "Hard, white or faintly yellowish, slightly glossy crystalline solid, flakes or powder with a slight characteristic odour. It is the most common saturated fatty acid in animal and plant fats.",
@@ -3529,7 +3529,7 @@
   },
   "comments": {
    "en": "Commercial palmitic acid is often supplied as blends with stearic acid; the ratio of the two acids affects melting behaviour and lubricant or emulsifying performance, so the grade composition should be specified.",
-   "fa": "پالمیتیک اسید تجاری اغلب به صورت مخلوط با استئاریک اسید عرضه می‌شود؛ نسبت این دو اسید بر رفتار ذوب و عملکرد لغزان‌کنندگی یا امولسیون‌کنندگی اثر دارد و ترکیب گرید باید مشخص شود."
+   "fa": "پالمیتیک اسید تجاری اغلب به صورت مخلوط با استئاریک اسید عرضه می‌شود؛ نسبت این دو اسید بر رفتار ذوب و عملکرد روان‌کنندگی یا امولسیون‌کنندگی اثر دارد و ترکیب گرید باید مشخص شود."
   },
   "refs": [
    "usp"
@@ -3560,7 +3560,7 @@
   "mw": "",
   "applications": {
    "en": "Used mainly in topical ointments and creams as a stiffening agent to raise the melting point and increase consistency, in combination with soft and liquid paraffins. It has also been used to coat capsules and tablets, as a sealing or moisture-barrier material, and in foods and confectionery.",
-   "fa": "عمدتاً در پمادها و کرم‌های موضعی به عنوان سفت‌کننده برای بالا بردن نقطه ذوب و افزایش قوام، همراه پارافین‌های نرم و مایع، به کار می‌رود. برای پوشش کپسول و قرص، به عنوان ماده آب‌بندی یا سد رطوبت و در غذا و شیرینی‌جات نیز مصرف شده است."
+   "fa": "عمدتاً در پمادها و کرم‌های موضعی به عنوان سخت‌کننده برای بالا بردن نقطه ذوب و افزایش قوام، همراه پارافین‌های نرم و مایع، به کار می‌رود. برای پوشش کپسول و قرص، به عنوان ماده آب‌بندی یا سد رطوبت و در غذا و شیرینی‌جات نیز مصرف شده است."
   },
   "description": {
    "en": "A colourless or white, odourless, tasteless, translucent, wax-like solid that is slightly greasy to the touch and often shows a crystalline structure.",
@@ -3672,7 +3672,7 @@
   "mw": "",
   "applications": {
    "en": "Used as an oily vehicle and solvent for intramuscular injections and oral soft capsules, in topical preparations and ear drops, and in rectal enemas for softening impacted faeces. It is also a food oil.",
-   "fa": "به عنوان حامل و حلال روغنی برای تزریقی‌های عضلانی و کپسول نرم خوراکی، در فرآورده‌های موضعی و قطره گوش و در انمای رکتال برای نرم کردن مدفوع سفت‌شده به کار می‌رود. روغن خوراکی نیز هست."
+   "fa": "به عنوان حامل و حلال روغنی برای تزریقی‌های عضلانی و کپسول نرم خوراکی، در فرآورده‌های موضعی و قطره گوش و در انمای رکتال برای نرم کردن مدفوع سخت‌شده به کار می‌رود. روغن خوراکی نیز هست."
   },
   "description": {
    "en": "A colourless or pale yellow oily liquid with a faint, nutty odour and a bland taste. It becomes cloudy at about 3 °C and partly solidifies at lower temperatures.",
@@ -3716,7 +3716,7 @@
     },
     "v": {
      "en": "practically insoluble in water; very slightly soluble in ethanol (95%); miscible with light petroleum, chloroform and ether",
-     "fa": "عملاً نامحلول در آب؛ خیلی کم محلول در اتانول 95٪؛ با اتر نفت، کلروفرم و اتر امتزاج‌پذیر"
+     "fa": "عملاً نامحلول در آب؛ بسیار کم محلول در اتانول 95٪؛ با اتر نفت، کلروفرم و اتر امتزاج‌پذیر"
     }
    }
   ],
