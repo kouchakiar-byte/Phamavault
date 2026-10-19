@@ -3,7 +3,8 @@ import { bi, type Bi } from "@/i18n/bi";
 /*
  * Drug–drug interaction knowledge base, compiled by the PharmaVault expert team
  * from the product information (FDA labels, EMA SmPCs) and Stockley's Drug
- * Interactions. Rules are written between drug classes (e.g. every NSAID with
+ * Interactions. Severity uses the four Micromedex levels, which match the
+ * Lexicomp risk ratings X, D, C and B. Rules are written between drug classes (e.g. every NSAID with
  * every vitamin K antagonist) or between single drugs; one drug belongs to
  * several classes, so a few hundred rules cover thousands of pairs.
  * Reviewed and extended October 2026 (Mehr 1405).

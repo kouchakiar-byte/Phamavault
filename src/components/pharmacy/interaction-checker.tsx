@@ -2,7 +2,7 @@
 
 import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AlertTriangle, ArrowLeftRight, CheckCircle2, ClipboardCheck, FlaskConical, Search, ShieldAlert, X } from "lucide-react";
+import { AlertTriangle, ArrowLeftRight, BookOpen, CheckCircle2, ClipboardCheck, ExternalLink, FlaskConical, Search, ShieldAlert, X } from "lucide-react";
 import { classNames, drugs, rules, type ClassId, type Drug, type Ref, type Severity } from "@/data/interactions";
 import { interactionsCopy as t } from "@/content/pharmacy";
 import type { Locale } from "@/i18n/config";
@@ -38,10 +38,94 @@ function refLabel(ref: Ref, drug: Drug, locale: Locale) {
 
 export function SeverityPill({ severity, locale }: { severity: Severity; locale: Locale }) {
   return (
-    <span className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold ${tone[severity].pill}`}>
+    <span className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-1 text-xs font-bold ${tone[severity].pill}`}>
       {severity === "contraindicated" ? <ShieldAlert className="size-3.5" aria-hidden="true" /> : <AlertTriangle className="size-3.5" aria-hidden="true" />}
       {t.severity[severity][locale]}
     </span>
+  );
+}
+
+const severities: Severity[] = ["contraindicated", "major", "moderate", "minor"];
+
+/** Searches for one pair in UpToDate (which carries Lexicomp) and in PubMed. */
+function pairLinks(a: Drug, b: Drug) {
+  return [
+    { label: "UpToDate", url: `https://www.uptodate.com/contents/search?search=${encodeURIComponent(`${a.en} ${b.en} drug interaction`)}` },
+    {
+      label: t.studies,
+      url: `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(`"${a.en}"[tiab] AND "${b.en}"[tiab] AND interaction*[tiab]`)}`,
+    },
+  ];
+}
+
+/** How the severity levels line up with Micromedex and Lexicomp. */
+export function SeverityScale({ locale }: { locale: Locale }) {
+  return (
+    <section className="space-y-3">
+      <h2 className="text-lg font-bold text-vault-900">{t.scaleTitle[locale]}</h2>
+      <p className="text-sm text-muted">{t.scaleLead[locale]}</p>
+      <div className="overflow-hidden rounded-2xl border border-line bg-white">
+        <div className="hidden grid-cols-3 gap-4 border-b border-line bg-paper px-4 py-2.5 text-xs font-semibold text-muted sm:grid">
+          <span>{t.scaleCols.level[locale]}</span>
+          <span>{t.scaleCols.micromedex[locale]}</span>
+          <span>{t.scaleCols.lexicomp[locale]}</span>
+        </div>
+        <ul className="divide-y divide-line text-sm">
+          {severities.map((s) => (
+            <li key={s} className="grid grid-cols-[auto_1fr] items-center gap-x-3 gap-y-2 px-4 py-3 sm:grid-cols-3 sm:gap-4">
+              <span>
+                <SeverityPill severity={s} locale={locale} />
+              </span>
+              <span className="text-muted sm:text-ink" dir="ltr" style={{ textAlign: "start" }}>
+                <span className="sm:hidden">Micromedex: </span>
+                {t.severity[s].en}
+              </span>
+              <span className="col-span-2 flex items-center gap-2 text-ink sm:col-span-1">
+                <b className="grid size-6 shrink-0 place-items-center rounded-md bg-vault-900 text-xs text-white">{t.lexicomp[s].letter}</b>
+                <span>
+                  <span className="text-muted sm:hidden">Lexicomp: </span>
+                  {t.lexicomp[s].text[locale]}
+                </span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+/** Micromedex, Lexicomp and UpToDate: where to check a whole regimen. */
+export function ReferenceCheckers({ locale }: { locale: Locale }) {
+  return (
+    <section className="space-y-3">
+      <h2 className="flex items-center gap-2 text-lg font-bold text-vault-900">
+        <BookOpen className="size-5 text-molecule-600" aria-hidden="true" />
+        {t.checkersTitle[locale]}
+      </h2>
+      <p className="text-sm text-muted">{t.checkersLead[locale]}</p>
+      <ul className="grid gap-3 md:grid-cols-3">
+        {t.checkers.map((c) => (
+          <li key={c.name}>
+            <a
+              href={c.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-full flex-col rounded-2xl border border-line bg-white p-4 transition hover:border-molecule-400 hover:shadow-sm"
+            >
+              <span className="flex items-center justify-between gap-2 font-bold text-vault-900" dir="ltr">
+                {c.name}
+                <ExternalLink className="size-4 shrink-0 text-molecule-600" aria-hidden="true" />
+              </span>
+              <span className="text-xs text-muted" dir="ltr" style={{ textAlign: locale === "fa" ? "right" : "left" }}>
+                {c.by}
+              </span>
+              <span className="mt-2 text-sm leading-relaxed text-ink">{c.text[locale]}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
 
@@ -325,6 +409,24 @@ export function InteractionChecker({ locale }: { locale: Locale }) {
                   );
                 })}
               </div>
+              <footer className="flex flex-wrap items-center gap-2 border-t border-line bg-paper px-6 py-3 text-xs">
+                <span className="text-muted">{t.verify[locale]}:</span>
+                {pairLinks(a, b).map((l) => {
+                  const label = typeof l.label === "string" ? l.label : l.label[locale];
+                  return (
+                    <a
+                      key={label}
+                      href={l.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 rounded-full border border-line bg-white px-3 py-1 font-semibold text-molecule-700 hover:border-molecule-500"
+                    >
+                      {label}
+                      <ExternalLink className="size-3" aria-hidden="true" />
+                    </a>
+                  );
+                })}
+              </footer>
             </article>
           ))}
 
