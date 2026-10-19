@@ -54,7 +54,7 @@
   },
   "min": {
    "en": "Mineral salt",
-   "fa": "مینرال‌ها"
+   "fa": "نمک‌های معدنی"
   },
   "sup": {
    "en": "Amino acids and supplement ingredients",
@@ -1067,7 +1067,7 @@
    "mw": "385.82",
    "note": {
     "en": "Fluoroquinolone (monohydrate); light-sensitive; chelates Ca, Mg, Fe, Al",
-    "fa": "فلوروکینولون (مونوهیدرات)؛ حساس به نور؛ با کلسیم، منیزیم، آهن و آلومینیوم کمپلکس می‌دهد"
+    "fa": "فلوروکینولون (مونوهیدرات)؛ حساس به نور؛ با کلسیم، منیزیم، آهن و آلومینیوم کلات تشکیل می‌دهد"
    },
    "synonyms": "سیپروفلوکساسین هیدروکلراید, سیپروفلوکساسین",
    "bcs": "4"
@@ -2843,7 +2843,7 @@
    "mw": "267.24",
    "note": {
     "en": "Antiarrhythmic (PSVT, IV); slightly soluble in water; refrigerated solutions crystallise",
-    "fa": "ضدآریتمی (PSVT، تزریقی)؛ کم‌محلول در آب؛ محلول آن در یخچال کریستاله می‌شود"
+    "fa": "ضدآریتمی (PSVT، تزریقی)؛ کم‌محلول در آب؛ محلول آن در یخچال متبلور می‌شود"
    },
    "synonyms": "آدنوزین"
   },
@@ -3118,7 +3118,7 @@
    "mw": "504.63",
    "note": {
     "en": "Antiplatelet/coronary vasodilator; practically insoluble in water; yellow; light-sensitive",
-    "fa": "ضدپلاکت و گشادکننده عروق کرونر؛ تقریباً نامحلول در آب؛ زرد رنگ؛ حساس به نور"
+    "fa": "ضدپلاکت و گشادکننده عروق کرونر؛ تقریباً نامحلول در آب؛ زردرنگ؛ حساس به نور"
    },
    "synonyms": "دی‌پیریدامول"
   },
@@ -3894,7 +3894,7 @@
    "mw": "253.26",
    "note": {
     "en": "Potassium-sparing diuretic; very slightly soluble in water; yellow, fluoresces in acid solution",
-    "fa": "دیورتیک نگهدارنده پتاسیم؛ بسیار کم‌محلول در آب؛ زرد رنگ، فلورسانس در محلول اسیدی"
+    "fa": "دیورتیک نگهدارنده پتاسیم؛ بسیار کم‌محلول در آب؛ زردرنگ، فلورسانس در محلول اسیدی"
    },
    "synonyms": "تریامترن"
   },
@@ -8101,7 +8101,7 @@
    "mw": "637.03",
    "note": {
     "en": "Multikinase inhibitor; practically insoluble in aqueous media, high-potency handling",
-    "fa": "مهارکننده چندکینازی؛ تقریباً نامحلول در محیط آبی، نیازمند جابجایی ماده پرقدرت"
+    "fa": "مهارکننده چندکینازی؛ تقریباً نامحلول در محیط آبی، نیازمند ملاحظات ویژه کار با ماده پرقدرت"
    },
    "synonyms": "Sorafenib tosylate, سورافنیب توزیلات, سورافنیب"
   },
@@ -8113,7 +8113,7 @@
    "mw": "532.56",
    "note": {
     "en": "Multikinase (VEGFR/PDGFR) inhibitor; polymorphism, high-potency handling",
-    "fa": "مهارکننده چندکینازی (⁦VEGFR/PDGFR⁩)؛ پلی‌مورفیسم، نیازمند جابجایی ماده پرقدرت"
+    "fa": "مهارکننده چندکینازی (⁦VEGFR/PDGFR⁩)؛ پلی‌مورفیسم، نیازمند ملاحظات ویژه کار با ماده پرقدرت"
    },
    "synonyms": "سونیتینیب مالات, سونیتینیب"
   },
@@ -8307,7 +8307,7 @@
    "mw": "676.80",
    "note": {
     "en": "Antimuscarinic; anaesthesia premedication, bradycardia, organophosphate poisoning",
-    "fa": "آنتی‌موسکارینی؛ پیش‌داروی بیهوشی، برادیکاردی و مسمومیت ارگانوفسفره"
+    "fa": "آنتی‌موسکارینی؛ پیش‌داروی بیهوشی، برادی‌کاردی و مسمومیت ارگانوفسفره"
    },
    "synonyms": "آتروپین سولفات"
   },
@@ -9941,7 +9941,7 @@
    "mw": "136.29",
    "note": {
     "en": "Zinc source (parenteral trace element); 48.0% elemental zinc; very soluble, deliquescent",
-    "fa": "منبع روی (عنصر کمیاب تزریقی)؛ ⁦48.0 %⁩ روی عنصری؛ بسیار محلول در آب، آب‌گیر"
+    "fa": "منبع روی (عنصر کمیاب تزریقی)؛ ⁦48.0 %⁩ روی عنصری؛ بسیار محلول در آب، روان‌شونده (Deliquescent)"
    },
    "synonyms": "کلرید روی, زینک کلراید"
   },
@@ -10169,7 +10169,7 @@
    "mw": "146.14",
    "note": {
     "en": "Amino acid; soluble in water; unstable in solution (cyclises to pyroglutamic acid)",
-    "fa": "آمینواسید؛ محلول در آب؛ در محلول ناپایدار (حلقوی شدن به پیروگلوتامیک اسید)"
+    "fa": "آمینواسید؛ محلول در آب؛ در محلول ناپایدار (حلقوی‌شدن به پیروگلوتامیک اسید)"
    },
    "synonyms": "L-Glutamine, ال-گلوتامین, گلوتامین"
   },

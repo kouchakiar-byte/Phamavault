@@ -174,7 +174,7 @@ export const orangeBook = {
     "No Iranian licensed product with this exact active ingredient or combination was found. Search by INN in “Iranian licensed medicines” above.",
     "فرآورده داخلی دارای مجوز با همین ماده یا ترکیب مؤثره یافت نشد. با نام ژنریک بین‌المللی (INN) در بخش «داروهای دارای مجوز ایران» در بالای همین صفحه جستجو کنید.",
   ),
-  iranFailed: bi("The Iran FDA register is not answering right now; try again in a few minutes.", "سامانه سازمان غذا و دارو الان پاسخ نمی‌دهد؛ چند دقیقه دیگر دوباره امتحان کنید."),
+  iranFailed: bi("The Iran FDA register is not answering right now; try again in a few minutes.", "سامانه سازمان غذا و دارو در حال حاضر پاسخ نمی‌دهد؛ چند دقیقه دیگر دوباره امتحان کنید."),
   iranLocked: bi("Iranian manufacturers are part of the pharmacy plan.", "تولیدکنندگان داخلی بخشی از اشتراک داروخانه است."),
   iranCount: bi("{n} licensed products", "{n} فرآورده دارای مجوز"),
   iranCodes: bi("IRC {p} · generic code {g}", "کد \u2066IRC\u2069 {p} · کد ژنریک {g}"),
@@ -256,7 +256,7 @@ export const compounding = {
     pick: bi("Choose the date compounded.", "تاریخ ساخت را انتخاب کنید."),
     daysUnit: bi("days", "روز"),
   },
-  recordTitle: bi("Master formulation record — what it must contain", "سوابق فرمولاسیون اصلی (Master Formulation Record) — چه باید داشته باشد"),
+  recordTitle: bi("Master formulation record — what it must contain", "سوابق فرمولاسیون اصلی (Master Formulation Record) — محتوای الزامی"),
   record: [
     bi("Name, strength or activity, and dosage form of the preparation", "نام، قدرت یا فعالیت و شکل دارویی فرآورده"),
     bi("Identity and amount of every ingredient, with their source or grade where relevant", "نام و مقدار هر جزء و در صورت لزوم منبع یا گرید آن"),
@@ -309,7 +309,7 @@ export const compoundingGuide = {
     { value: "180", unit: bi("days", "روز"), text: bi("Maximum BUD for a non-sterile preparation, even with stability data (USP <795>)", `سقف BUD فرآورده غیراستریل، حتی با داده پایداری ${ltr("(USP <795>)")}`) },
     { value: "120", unit: bi("mg", "میلی‌گرم"), text: bi("Smallest quantity on a Class A prescription balance (sensitivity 6 mg) for an error of 5% or less", "کمترین مقدار قابل توزین با ترازوی نسخه‌پیچی کلاس A (حساسیت ۶ میلی‌گرم) برای خطای حداکثر ۵٪") },
     { value: "1:1", unit: bi("ratio", "نسبت"), text: bi("Ora-Plus : Ora-Sweet, the most studied vehicle for oral suspensions in children", "Ora-Plus به Ora-Sweet، پرمطالعه‌ترین حامل سوسپانسیون‌های خوراکی کودکان") },
-    { value: "0.60", unit: bi("aw", "aw"), text: bi("Water activity at or above which a preparation counts as aqueous and gets a short BUD", "فعالیت آبی که از آن به بالا فرآورده آبی محسوب می‌شود و BUD کوتاه می‌گیرد") },
+    { value: "0.60", unit: bi("aw", "aw"), text: bi("Water activity at or above which a preparation counts as aqueous and gets a short BUD", "فعالیت آبی که از آن به بالا فرآورده آبی محسوب می‌شود و BUD کوتاهی برای آن تعیین می‌شود") },
   ],
   topicsTitle: bi("Compounding step by step", "ساخت فرآورده، گام به گام"),
   topics: [
@@ -319,7 +319,7 @@ export const compoundingGuide = {
       points: [
         bi("No licensed product in the strength or dosage form the patient needs, e.g. an oral liquid for an infant or a patient who cannot swallow.", "فرآورده دارای مجوز با قدرت یا شکل دارویی موردنیاز بیمار وجود ندارد؛ مثلاً شربت برای شیرخوار یا بیماری که نمی‌تواند قرص ببلعد."),
         bi("The patient is allergic or intolerant to an excipient of the commercial product (dye, lactose, gluten, preservative).", "بیمار به یکی از مواد جانبی فرآورده تجاری (رنگ، لاکتوز، گلوتن، نگهدارنده) حساسیت یا عدم تحمل دارد."),
-        bi("The product is discontinued or in shortage.", "فرآورده تولیدش متوقف شده یا با کمبود مواجه است."),
+        bi("The product is discontinued or in shortage.", "تولید فرآورده متوقف شده یا با کمبود مواجه است."),
         bi("Do not compound essential copies of a commercially available product.", "از ساخت نسخه مشابه فرآورده‌ای که در بازار موجود است خودداری شود."),
       ],
       refs: ["USP–NF 2026 <795>", "FDA, Human Drug Compounding (Section 503A)"],
@@ -328,9 +328,9 @@ export const compoundingGuide = {
       key: "technique",
       title: bi("Core techniques", "تکنیک‌های پایه"),
       points: [
-        bi("Trituration: reduce particle size in a mortar before mixing; a finer powder disperses and dissolves better.", "تریچوراسیون: پیش از مخلوط کردن، اندازه ذرات را در هاون کاهش دهید؛ پودر ریزتر بهتر پخش و حل می‌شود."),
-        bi("Geometric dilution: mix a small amount of potent drug with an equal volume of diluent, then keep doubling, so the drug is spread evenly.", "رقیق‌سازی هندسی: مقدار کم داروی قوی را با هم‌حجم خود رقیق‌کننده مخلوط کنید و هر بار دو برابر کنید تا یکنواخت پخش شود."),
-        bi("Levigation: wet the powder into a smooth paste first — mineral oil for oily bases, glycerin or propylene glycol for water-miscible ones.", "لویگیشن: ابتدا پودر را به خمیر یکنواخت تبدیل کنید؛ با روغن معدنی برای پایه‌های چرب و با گلیسرین یا پروپیلن گلیکول برای پایه‌های آب‌دوست."),
+        bi("Trituration: reduce particle size in a mortar before mixing; a finer powder disperses and dissolves better.", "تریتوراسیون (Trituration): پیش از مخلوط کردن، اندازه ذرات را در هاون کاهش دهید؛ پودر ریزتر بهتر پراکنده و حل می‌شود."),
+        bi("Geometric dilution: mix a small amount of potent drug with an equal volume of diluent, then keep doubling, so the drug is spread evenly.", "رقیق‌سازی هندسی: مقدار کم داروی قوی را با هم‌حجم خود رقیق‌کننده مخلوط کنید و هر بار دو برابر کنید تا دارو به‌طور یکنواخت توزیع شود."),
+        bi("Levigation: wet the powder into a smooth paste first — mineral oil for oily bases, glycerin or propylene glycol for water-miscible ones.", "لویگیشن (Levigation): ابتدا پودر را به خمیر یکنواخت تبدیل کنید؛ با روغن معدنی برای پایه‌های چرب و با گلیسرین یا پروپیلن گلیکول برای پایه‌های آب‌دوست."),
         bi("Add the vehicle in portions with constant mixing, and check the final weight or volume.", "حامل را به‌تدریج و با هم زدن مداوم اضافه کنید و وزن یا حجم نهایی را کنترل کنید."),
       ],
       refs: ["Remington, 23rd ed. (2020)", "Allen LV, The Art, Science, and Technology of Pharmaceutical Compounding (APhA)"],
@@ -340,8 +340,8 @@ export const compoundingGuide = {
       title: bi("Oral liquids for children", "مایعات خوراکی برای کودکان"),
       points: [
         bi("Most published paediatric suspensions are made from crushed tablets in Ora-Plus : Ora-Sweet (1:1) or 1% methylcellulose : simple syrup (1:1).", "بیشتر سوسپانسیون‌های منتشرشده کودکان از قرص خردشده در Ora-Plus و Ora-Sweet (۱ به ۱) یا متیل‌سلولز ۱٪ و شربت ساده (۱ به ۱) ساخته می‌شوند."),
-        bi("Use exactly the formula, container (usually amber plastic or glass) and storage of the published study; a different vehicle needs its own data.", "دقیقاً همان فرمول، ظرف (معمولاً پلاستیک یا شیشه کهربایی) و شرایط نگهداری مطالعه منتشرشده را به کار ببرید؛ حامل متفاوت داده پایداری خودش را می‌خواهد."),
-        bi("Label “Shake well”, the BUD and the storage temperature, and use an oral syringe for measuring.", "روی برچسب «قبل از مصرف تکان دهید»، BUD و دمای نگهداری را بنویسید و برای اندازه‌گیری سرنگ خوراکی بدهید."),
+        bi("Use exactly the formula, container (usually amber plastic or glass) and storage of the published study; a different vehicle needs its own data.", "دقیقاً همان فرمول، ظرف (معمولاً پلاستیک یا شیشه کهربایی) و شرایط نگهداری مطالعه منتشرشده را به کار ببرید؛ حامل متفاوت به داده پایداری مختص خود نیاز دارد."),
+        bi("Label “Shake well”, the BUD and the storage temperature, and use an oral syringe for measuring.", "روی برچسب «قبل از مصرف تکان دهید»، BUD و دمای نگهداری را بنویسید و برای اندازه‌گیری، سرنگ خوراکی تحویل دهید."),
         bi("Watch the excipients in the table below for neonates and young children.", "مواد جانبی جدول زیر را در نوزادان و کودکان خردسال در نظر داشته باشید."),
       ],
       refs: ["Nahata MC, Pai VB, Pediatric Drug Formulations (Harvey Whitney Books)", "Trissel's Stability of Compounded Formulations (APhA)"],
@@ -350,8 +350,8 @@ export const compoundingGuide = {
       key: "capsules",
       title: bi("Capsules", "کپسول"),
       points: [
-        bi("Choose the size from the fill volume (weight ÷ tapped density) and make up the volume with a diluent such as microcrystalline cellulose or lactose.", "سایز را از حجم پرکردن (وزن ÷ دانسیته پس از ضربه) انتخاب کنید و باقی حجم را با رقیق‌کننده‌ای مانند میکروکریستالین سلولز یا لاکتوز پر کنید."),
-        bi("Blend by geometric dilution, fill by the punch method or a capsule-filling plate, and prepare one or two extra capsules for losses.", "با رقیق‌سازی هندسی مخلوط کنید، به روش پانچ یا با صفحه پرکن کپسول پر کنید و یکی دو کپسول اضافه برای افت در نظر بگیرید."),
+        bi("Choose the size from the fill volume (weight ÷ tapped density) and make up the volume with a diluent such as microcrystalline cellulose or lactose.", "اندازه کپسول را بر اساس حجم پرکردن (وزن ÷ دانسیته ضربه‌ای) انتخاب کنید و حجم باقی‌مانده را با رقیق‌کننده‌ای مانند میکروکریستالین سلولز یا لاکتوز پر کنید."),
+        bi("Blend by geometric dilution, fill by the punch method or a capsule-filling plate, and prepare one or two extra capsules for losses.", "با رقیق‌سازی هندسی مخلوط کنید، به روش پانچ یا با صفحه پرکن کپسول پر کنید و یک یا دو کپسول اضافی برای جبران اتلاف در نظر بگیرید."),
         bi("Check weight: weigh each capsule (or a sample) against the theoretical fill weight.", "کنترل وزن: هر کپسول (یا نمونه‌ای از آن‌ها) را با وزن تئوری مقایسه کنید."),
       ],
       refs: ["Remington, 23rd ed. (2020)", "USP–NF 2026 <795>"],
@@ -360,7 +360,7 @@ export const compoundingGuide = {
       key: "topical",
       title: bi("Creams and ointments", "کرم و پماد"),
       points: [
-        bi("Pick the base by its class: hydrocarbon (white petrolatum, occlusive), absorption (lanolin, takes up water), water-removable (creams) or water-soluble (PEG).", "پایه را بر اساس نوع انتخاب کنید: هیدروکربنی (وازلین سفید، انسدادی)، جذبی (لانولین، آب می‌گیرد)، قابل شست‌وشو با آب (کرم‌ها) یا محلول در آب (PEG)."),
+        bi("Pick the base by its class: hydrocarbon (white petrolatum, occlusive), absorption (lanolin, takes up water), water-removable (creams) or water-soluble (PEG).", "پایه را بر اساس نوع انتخاب کنید: هیدروکربنی (وازلین سفید، انسدادی)، جذبی (لانولین، جاذب آب)، قابل شست‌وشو با آب (کرم‌ها) یا محلول در آب (PEG)."),
         bi("Levigate powders before incorporation, or dissolve them in a little compatible liquid; an ointment mill gives a smooth, uniform product.", "پودرها را پیش از افزودن لویگیت کنید یا در کمی مایع سازگار حل کنید؛ آسیاب پماد (Ointment mill) محصول یکنواخت و نرم می‌دهد."),
         bi("Do not dilute a commercial cream with another base unless compatibility is known: emulsifiers, preservatives and pH may clash.", "کرم تجاری را با پایه دیگر رقیق نکنید مگر سازگاری آن‌ها شناخته شده باشد؛ امولسیفایر، نگهدارنده و pH ممکن است ناسازگار باشند."),
       ],
@@ -370,8 +370,8 @@ export const compoundingGuide = {
       key: "suppositories",
       title: bi("Suppositories", "شیاف"),
       points: [
-        bi("Fatty bases (cocoa butter, hard fat) melt at body temperature; overheating cocoa butter forms unstable polymorphs that set poorly, so melt it gently below about 35 °C.", "پایه‌های چرب (کره کاکائو، چربی سخت) در دمای بدن ذوب می‌شوند؛ حرارت زیاد کره کاکائو پلی‌مورف‌های ناپایدار می‌سازد که خوب سفت نمی‌شوند، پس آن را آرام و زیر حدود ۳۵ درجه ذوب کنید."),
-        bi("PEG bases dissolve in body fluids, do not need refrigeration, but can irritate: moisten before insertion.", "پایه‌های PEG در مایعات بدن حل می‌شوند و یخچال نمی‌خواهند ولی ممکن است تحریک کنند؛ پیش از مصرف مرطوب شوند."),
+        bi("Fatty bases (cocoa butter, hard fat) melt at body temperature; overheating cocoa butter forms unstable polymorphs that set poorly, so melt it gently below about 35 °C.", "پایه‌های چرب (کره کاکائو، چربی سخت) در دمای بدن ذوب می‌شوند؛ حرارت‌دادن بیش از حد کره کاکائو موجب تشکیل پلی‌مورف‌های ناپایداری می‌شود که به‌خوبی جامد نمی‌شوند؛ از این رو آن را به‌آرامی و در دمای کمتر از حدود ۳۵ درجه ذوب کنید."),
+        bi("PEG bases dissolve in body fluids, do not need refrigeration, but can irritate: moisten before insertion.", "پایه‌های PEG در مایعات بدن حل می‌شوند و به نگهداری در یخچال نیاز ندارند، ولی ممکن است تحریک‌کننده باشند؛ پیش از مصرف مرطوب شوند."),
         bi("Calibrate the mould with the base and correct for the drug's displacement factor.", "قالب را با پایه کالیبره کنید و ضریب جابه‌جایی دارو را اعمال کنید."),
       ],
       refs: ["Remington, 23rd ed. (2020)"],
@@ -390,7 +390,7 @@ export const compoundingGuide = {
       key: "hazardous",
       title: bi("Hazardous drugs", "داروهای خطرناک (Hazardous drugs)"),
       points: [
-        bi("Drugs on the NIOSH hazardous-drug list (e.g. methotrexate, tamoxifen, estradiol, testosterone, valganciclovir) need containment, protective equipment and dedicated tools.", "داروهای فهرست داروهای خطرناک NIOSH (مانند متوترکسات، تاموکسیفن، استرادیول، تستوسترون، والگان‌سیکلوویر) به محیط مهارکننده، تجهیزات حفاظت فردی و ابزار اختصاصی نیاز دارند."),
+        bi("Drugs on the NIOSH hazardous-drug list (e.g. methotrexate, tamoxifen, estradiol, testosterone, valganciclovir) need containment, protective equipment and dedicated tools.", "داروهای فهرست داروهای خطرناک NIOSH (مانند متوترکسات، تاموکسیفن، استرادیول، تستوسترون، والگان‌سیکلوویر) به محیط مهارشده (Containment)، تجهیزات حفاظت فردی و ابزار اختصاصی نیاز دارند."),
         bi("Crushing tablets or opening capsules of these drugs on an open bench exposes staff to dust.", "خرد کردن قرص یا باز کردن کپسول این داروها روی میز باز، کارکنان را در معرض گرد و غبار دارو قرار می‌دهد."),
         bi("Pregnant staff should not compound hazardous drugs without risk assessment.", "کارکنان باردار بدون ارزیابی ریسک داروهای خطرناک را نسازند."),
       ],
@@ -507,7 +507,7 @@ export const iranDrugs = {
   none: bi("No licensed product found for “{q}”.", "فرآورده دارای مجوزی برای «{q}» پیدا نشد."),
   unavailable: bi(
     "The Iran FDA register is not answering right now. Try again in a few minutes, or open the search on the register itself.",
-    "سامانه سازمان غذا و دارو الان پاسخ نمی‌دهد. چند دقیقه دیگر دوباره امتحان کنید، یا جستجو را در خود سامانه باز کنید.",
+    "سامانه سازمان غذا و دارو در حال حاضر پاسخ نمی‌دهد. چند دقیقه دیگر دوباره امتحان کنید، یا جستجو را در خود سامانه باز کنید.",
   ),
   unreadable: bi(
     "The register answered, but its page could not be read. Open the search on the register itself.",
@@ -533,7 +533,7 @@ export const iranDrugs = {
   optionCount: bi("{d} strengths · {n} products", "{d} قدرت · {n} فرآورده"),
   stored: bi(
     "The register is not answering right now; these are the results saved at its last update.",
-    "سامانه‌ی سازمان غذا و دارو در این لحظه پاسخ نمی‌دهد؛ نتایج زیر از آخرین به‌روزرسانی ذخیره‌شده است.",
+    "سامانه سازمان غذا و دارو در این لحظه پاسخ نمی‌دهد؛ نتایج زیر از آخرین به‌روزرسانی ذخیره‌شده است.",
   ),
   updated: bi("Updated daily at 18:00 \u2066(Tehran)\u2069 · last update: {date}", "به‌روزرسانی روزانه ساعت ۱۸ · آخرین به‌روزرسانی این نتیجه: {date}"),
   rial: bi("Rial", "ریال"),
