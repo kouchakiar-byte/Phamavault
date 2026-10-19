@@ -19,8 +19,8 @@ export const pages = {
       "بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی (Suppliers)",
     ),
     lead: bi(
-      "Domestic manufacturers and importers in Iran of pharmaceutical raw materials (APIs and excipients), vitamins and mineral salts, supplement ingredients and amino acids, and cosmetic raw materials. Search by Persian or English name, salt form or synonym.",
-      "تولیدکنندگان داخلی و واردکنندگان مواد اولیه دارویی (مواد مؤثره و مواد جانبی)، ویتامین‌ها و مینرال‌ها، مواد اولیه مکمل و آمینواسیدها، و مواد اولیه آرایشی‌بهداشتی در ایران. با نام فارسی یا انگلیسی، فرم نمکی یا مترادف جستجو کنید.",
+      "Domestic manufacturers and importers in Iran of pharmaceutical raw materials (APIs and excipients), vitamins and mineral salts, supplement ingredients and amino acids, cosmetic raw materials, pharmaceutical packaging, and laboratory reference standards and reagents. Search by Persian or English name, salt form or synonym.",
+      "تولیدکنندگان داخلی و واردکنندگان مواد اولیه دارویی (مواد مؤثره و مواد جانبی)، ویتامین‌ها و مینرال‌ها، مواد اولیه مکمل و آمینواسیدها، مواد اولیه آرایشی‌بهداشتی، بسته‌بندی دارویی، و رفرنس استانداردها و ریجنت‌های آزمایشگاهی در ایران. با نام فارسی یا انگلیسی، فرم نمکی یا مترادف جستجو کنید.",
     ),
     placeholder: bi(
       "e.g. Vitamin B1, thiamine hydrochloride, Zinc sulfate, polysorbate 80",
@@ -56,7 +56,7 @@ export const pages = {
       cos: bi("Cosmetic and personal-care raw materials", "مواد اولیه آرایشی‌بهداشتی"),
       sup: bi("Supplement ingredients and amino acids", "مواد اولیه مکمل و آمینواسیدها"),
       bio: bi("Biologics", "فرآورده‌های بیولوژیک"),
-      std: bi("Laboratory reference standards", "استانداردهای مرجع آزمایشگاهی"),
+      std: bi("Reference standards and reagents", "رفرنس استانداردها و ریجنت‌ها"),
       pkg: bi("Pharmaceutical packaging", "بسته‌بندی دارویی"),
     } as Record<string, ReturnType<typeof bi>>,
     sort: bi("Sort", "مرتب‌سازی"),

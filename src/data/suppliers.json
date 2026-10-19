@@ -3210,12 +3210,15 @@
     "exc",
     "cos",
     "sup",
-    "api"
+    "api",
+    "std"
    ],
    "prov": "تهران",
    "city": "تهران",
    "tel": [
-    "021-88349147"
+    "021-88349147",
+    "021-88282482",
+    "021-88282483"
    ],
    "web": "https://adonisdrug.com/",
    "src": "https://adonisdrug.com/",
@@ -3264,9 +3267,11 @@
     "دایمتیکونول|Dimethiconol",
     "آسه سولفام پتاسیم|Acesulfame potassium, Acesulfame K",
     "بنزوئیل پراکسید|Benzoyl peroxide",
-    "پنتوپرازول|Pantoprazole"
+    "پنتوپرازول|Pantoprazole",
+    "رفرنس استاندارد (USP، BP)|Reference standards (USP, BP)",
+    "مواد شیمیایی آزمایشگاهی Merck|Merck laboratory chemicals"
    ],
-   "note": "تولیدکننده، واردکننده و صادرکننده طبق دایرکتوری پارس‌سنتر.",
+   "note": "تولیدکننده، واردکننده و صادرکننده طبق دایرکتوری پارس‌سنتر. تهیه رفرنس استاندارد طبق USP و BP و مواد آزمایشگاهی مرک طبق سایت adonisherb.ir.",
    "via": 1
   },
   {
@@ -3607,7 +3612,8 @@
     "min",
     "exc",
     "sup",
-    "cos"
+    "cos",
+    "std"
    ],
    "prov": "نامشخص",
    "city": "—",
@@ -3640,7 +3646,8 @@
     "اسپن ۶۰ / ۸۰ (سوربیتان استئارات / اولئات)|Span 60, Span 80, Sorbitan monostearate, Sorbitan oleate",
     "پتاسیم دی‌هیدروژن فسفات|Potassium dihydrogen phosphate, Monopotassium phosphate",
     "آسه سولفام پتاسیم|Acesulfame potassium, Acesulfame K",
-    "روغن آرگان|Argan oil"
+    "روغن آرگان|Argan oil",
+    "مواد شیمیایی آزمایشگاهی Merck|Merck laboratory chemicals"
    ],
    "note": "مواد آزمایشگاهی (مرک) و صنعتی.",
    "via": 1
@@ -4230,7 +4237,8 @@
     "sup",
     "exc",
     "api",
-    "cos"
+    "cos",
+    "std"
    ],
    "prov": "نامشخص",
    "city": "—",
@@ -4247,7 +4255,8 @@
     "کولین کلراید سیگما (کد ۲۶۹۷۸)، گرید آزمایشگاهی|Choline chloride Sigma 26978, laboratory grade",
     "تیمول|Thymol",
     "دی‌متیل سولفوکسید (DMSO)|Dimethyl sulfoxide, DMSO",
-    "میریستیک اسید|Myristic acid"
+    "میریستیک اسید|Myristic acid",
+    "مواد شیمیایی آزمایشگاهی Sigma-Aldrich|Sigma-Aldrich laboratory chemicals"
    ],
    "note": "مواد شیمیایی آزمایشگاهی (سیگما).",
    "via": 1
@@ -7294,6 +7303,212 @@
     "Simulgel™ NS|Seppic",
     "SIMULSOL CS|Seppic"
    ]
+  },
+  {
+   "n": "داریکو شیمی دارو",
+   "e": "Darico Shimi Darou — daricodarou.com",
+   "t": "t",
+   "c": [
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-71058308",
+    "021-71058208"
+   ],
+   "web": "https://daricodarou.com/",
+   "addr": "تهران، اندرزگو، خیابان سلیمی، پلاک ۱۴، واحد ۹",
+   "note": "واردکننده مواد شیمیایی آزمایشگاهی و رفرنس استانداردهای دارویی، با بیش از ده سال فعالیت؛ برندهای اعلام‌شده: Merck، Sigma-Aldrich، USP، EP، BP، Lonza، Santa Cruz، PerkinElmer، Restek، Alfa Aesar، VWR، Abcam و TCI.",
+   "src": "https://daricodarou.com/",
+   "p": [
+    "رفرنس استاندارد USP|USP reference standards",
+    "رفرنس استاندارد EP|EP (EDQM) reference standards",
+    "رفرنس استاندارد BP|BP reference standards",
+    "استانداردهای Supelco|Supelco analytical standards",
+    "مواد شیمیایی آزمایشگاهی Merck|Merck laboratory chemicals",
+    "مواد شیمیایی آزمایشگاهی Sigma-Aldrich|Sigma-Aldrich laboratory chemicals",
+    "کیت اندوتوکسین Lonza|Lonza endotoxin (LAL) kits",
+    "کیت‌های آزمون شیمیایی و زیستی|Chemical and biological test kits"
+   ]
+  },
+  {
+   "n": "ایمن گستر شیمی",
+   "e": "Imen Gostar Shimi — imengostarshimi.com",
+   "t": "t",
+   "c": [
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66412612",
+    "021-66412608"
+   ],
+   "mail": "info@imengostarshimi.com",
+   "web": "https://www.imengostarshimi.com/",
+   "addr": "تهران، اتوبان چمران جنوب، نرسیده به میدان توحید، باقرخان غربی، پلاک ۱۰۱، واحد ۳",
+   "note": "واردکننده مستقیم مواد شیمیایی و تجهیزات آزمایشگاهی (شماره ثبت ۵۱۰۳۵۸).",
+   "src": "https://www.imengostarshimi.com/",
+   "p": [
+    "رفرنس استاندارد USP|USP reference standards",
+    "رفرنس استاندارد EP|EP (EDQM) reference standards",
+    "رفرنس استاندارد BP|BP reference standards",
+    "رفرنس استاندارد NIBSC|NIBSC reference standards",
+    "استانداردهای Supelco|Supelco analytical standards",
+    "مواد شیمیایی آزمایشگاهی Merck Millipore|Merck Millipore laboratory chemicals",
+    "مواد شیمیایی آزمایشگاهی Sigma-Aldrich|Sigma-Aldrich laboratory chemicals",
+    "حلال‌های آزمایشگاهی|Laboratory solvents",
+    "محیط کشت میکروبی|Microbiological culture media",
+    "کیت‌های آزمایشگاهی|Laboratory kits"
+   ]
+  },
+  {
+   "n": "آرگون اکسیر تهران",
+   "e": "Argon Exir Tehran — argonexir.com",
+   "t": "t",
+   "c": [
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-90008555",
+    "021-28425220",
+    "0901-3334613"
+   ],
+   "mail": "info@argonexir.com",
+   "web": "https://argonexir.com/",
+   "addr": "تهران، اسکندری شمالی، قبل از تقاطع طوسی، پلاک ۸۷، واحد ۴",
+   "note": "واردات مستقیم استانداردهای USP، EP و BP با گواهی COA و زنجیره سرد؛ تأمین استاندارد ثانویه؛ برند مستقل از ۱۴۰۱.",
+   "src": "https://argonexir.com/",
+   "p": [
+    "رفرنس استاندارد USP|USP reference standards",
+    "رفرنس استاندارد EP|EP (EDQM) reference standards",
+    "رفرنس استاندارد BP|BP reference standards",
+    "استاندارد ثانویه (ورکینگ استاندارد)|Secondary (working) standards",
+    "مواد شیمیایی آزمایشگاهی Merck|Merck laboratory chemicals",
+    "مواد شیمیایی آزمایشگاهی Sigma-Aldrich|Sigma-Aldrich laboratory chemicals",
+    "استانداردهای Supelco|Supelco analytical standards"
+   ]
+  },
+  {
+   "n": "مدرن شیمی گستر مانا (مانا شیمی)",
+   "e": "Modern Shimi Gostar Mana — manashimi.com",
+   "t": "t",
+   "c": [
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66404450",
+    "0912-5255933"
+   ],
+   "mail": "info@manashimi.com",
+   "web": "https://manashimi.com/",
+   "note": "مواد شیمیایی آزمایشگاهی، معرف‌ها، حلال‌های تخصصی، مواد HPLC، فیلتر و ممبران و استانداردهای مرجع؛ برندهای اعلام‌شده: Merck، Sigma-Aldrich، TCI، Thermo Fisher، TRC، Santa Cruz، Supelco، USP، EP و BP. استعلام با نام، کد کالا یا شماره CAS.",
+   "src": "https://manashimi.com/",
+   "p": [
+    "رفرنس استاندارد USP|USP reference standards",
+    "رفرنس استاندارد EP|EP (EDQM) reference standards",
+    "رفرنس استاندارد BP|BP reference standards",
+    "استانداردهای Supelco|Supelco analytical standards",
+    "ناخالصی‌ها و استانداردهای TRC|TRC impurity and reference standards",
+    "مواد شیمیایی آزمایشگاهی Merck|Merck laboratory chemicals",
+    "مواد شیمیایی آزمایشگاهی Sigma-Aldrich|Sigma-Aldrich laboratory chemicals",
+    "معرف‌های شیمیایی|Chemical reagents",
+    "حلال‌های HPLC و آزمایشگاهی|HPLC and laboratory solvents",
+    "فیلتر و ممبران آزمایشگاهی|Laboratory filters and membranes"
+   ]
+  },
+  {
+   "n": "یاس ژن کوثر",
+   "e": "Yas Gene Kowsar — yasgene.com",
+   "t": "t",
+   "c": [
+    "std"
+   ],
+   "prov": "اصفهان",
+   "city": "اصفهان",
+   "tel": [
+    "031-31313585",
+    "031-32688531",
+    "0937-8335121"
+   ],
+   "mail": "info@yasgene.com",
+   "web": "https://yasgene.com/",
+   "addr": "خیابان بزرگمهر، خیابان شریف واقفی، بعد از چهارراه ابوالحسن، جنب داروخانه بهشتی",
+   "note": "واردکننده مواد و کیت‌های آزمایشگاهی (از ۱۳۹۶)؛ فقط برندهای اروپایی و آمریکایی. بیشتر اقلام سفارشی وارد می‌شود و طبق سایت شرکت تحویل به‌طور میانگین ۶۰ روز کاری است.",
+   "src": "https://yasgene.com/",
+   "p": [
+    "استانداردهای فارماکوپه (USP، EP، BP، JP)|Pharmacopoeial reference standards (USP, EP, BP, JP)",
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals",
+    "کیت‌ها و مواد بیولوژی مولکولی و کشت سلولی|Molecular biology and cell culture kits and reagents"
+   ]
+  },
+  {
+   "n": "رابین آزما پارسیان",
+   "e": "Rabin Azma Parsian — rabinazma.com",
+   "t": "t",
+   "c": [
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "0930-1810400"
+   ],
+   "web": "https://rabinazma.com/",
+   "addr": "تهران، شهرک غرب، خیابان ایران‌زمین شمالی، کاتبی، بن‌بست مریم، پلاک ۵، واحد ۱",
+   "note": "عمدتاً تجهیزات آزمایشگاهی و کنترل کیفیت (از جمله دستگاه انحلال)؛ رفرنس استاندارد USP، EP و BP هم در سایت عرضه می‌شود. تلفن ثابت را از سایت شرکت بگیرید.",
+   "src": "https://rabinazma.com/",
+   "p": [
+    "رفرنس استاندارد USP|USP reference standards",
+    "رفرنس استاندارد EP|EP (EDQM) reference standards",
+    "رفرنس استاندارد BP|BP reference standards"
+   ]
+  },
+  {
+   "n": "آرین پژوه",
+   "e": "Arian Pajooh — arianpajooh.com",
+   "t": "t",
+   "c": [
+    "std"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://arianpajooh.com/",
+   "note": "واردات و فروش ورکینگ رفرنس استاندارد دارویی (USP). سایت شرکت از سرور ما باز نشد؛ تلفن و نشانی را از سایت شرکت بگیرید.",
+   "src": "https://arianpajooh.com/product-category/pharmaceutical-standard-reference/",
+   "p": [
+    "ورکینگ رفرنس استاندارد USP|USP working reference standards"
+   ],
+   "via": 1
+  },
+  {
+   "n": "نیروانا اکسیر گستر پارس",
+   "e": "Nirvana Exir Gostar Pars — nirvanashimi.com",
+   "t": "t",
+   "c": [
+    "std"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "web": "https://nirvanashimi.com/",
+   "note": "رفرنس استاندارد USP، EP و BP، مواد مرک-میلی‌پور و سیگما-آلدریچ و محیط کشت. سایت شرکت از سرور ما باز نشد؛ تلفن و نشانی را از سایت شرکت بگیرید.",
+   "src": "https://nirvanashimi.com/product-category/standard-refrence/",
+   "p": [
+    "رفرنس استاندارد USP|USP reference standards",
+    "رفرنس استاندارد EP|EP (EDQM) reference standards",
+    "رفرنس استاندارد BP|BP reference standards",
+    "مواد آزمایشگاهی Merck Millipore|Merck Millipore laboratory chemicals",
+    "مواد شیمیایی آزمایشگاهی Sigma-Aldrich|Sigma-Aldrich laboratory chemicals",
+    "محیط کشت میکروبی|Microbiological culture media"
+   ],
+   "via": 1
   }
  ],
  "provinceOrder": [
@@ -8162,6 +8377,53 @@
   [
    "کلیندامایسین",
    "clindamycin"
+  ],
+  [
+   "مرک",
+   "merck",
+   "میلی پور",
+   "millipore"
+  ],
+  [
+   "سیگما",
+   "sigma",
+   "آلدریچ",
+   "aldrich"
+  ],
+  [
+   "سوپلکو",
+   "supelco"
+  ],
+  [
+   "رفرنس استاندارد",
+   "رفرانس استاندارد",
+   "استاندارد مرجع",
+   "استاندارد رفرنس",
+   "reference standard",
+   "reference standards"
+  ],
+  [
+   "ورکینگ استاندارد",
+   "استاندارد ثانویه",
+   "working standard",
+   "secondary standard"
+  ],
+  [
+   "ریجنت",
+   "معرف",
+   "reagent",
+   "reagents"
+  ],
+  [
+   "ناخالصی",
+   "impurity",
+   "impurities",
+   "related compound"
+  ],
+  [
+   "محیط کشت",
+   "culture media",
+   "culture medium"
   ]
  ]
 }
