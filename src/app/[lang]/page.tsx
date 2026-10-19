@@ -27,6 +27,9 @@ import { calculation, calculations, featuredCalculations } from "@/content/calcu
 import { referenceSections } from "@/content/references";
 import { searchCopy } from "@/content/search";
 import { sections } from "@/content/sections";
+
+// The platform's sections, CTD compilation included; enterprise solutions are a plan, not a section.
+const platformSections = sections.filter((s) => s.slug !== "enterprise");
 import { formatNumber } from "@/lib/format";
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
@@ -228,7 +231,7 @@ export default async function HomePage() {
                 </div>
               </div>
               <ul className="mt-4 grid gap-1.5">
-                {sections.map(({ slug, href: path, icon: Icon, title }) => (
+                {platformSections.map(({ slug, href: path, icon: Icon, title }) => (
                   <li key={slug}>
                     <Link
                       href={href(locale, path)}
@@ -256,7 +259,7 @@ export default async function HomePage() {
                   [counts.suppliers, hero.stats.suppliers],
                   [counts.supplierMaterials, hero.stats.products],
                   [counts.materials, hero.stats.materials],
-                  [sections.length, hero.stats.sections],
+                  [platformSections.length, hero.stats.sections],
                 ] as const
               ).map(([value, label]) => (
                 <div key={label.en} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3">
@@ -340,7 +343,7 @@ export default async function HomePage() {
         <Container>
           <SectionHead eyebrow={sectionsIntro.eyebrow[locale]} title={sectionsIntro.title} locale={locale} lead={sectionsIntro.lead[locale]} />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {sections.map(({ slug, href: path, plate, icon: Icon, title, description }) => {
+            {platformSections.map(({ slug, href: path, plate, icon: Icon, title, description }) => {
               const highlight = sectionHighlight(slug, num, counts);
               return (
                 <article

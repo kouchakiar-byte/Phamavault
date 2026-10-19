@@ -11,7 +11,7 @@ export const paidSections = sections
 export const isPaidSection = (value: string): value is PaidSection =>
   (paidSections as readonly string[]).includes(value);
 
-/** The nine sections of the individual and team plans; the pharmacy section comes only with the pharmacy plan. */
+/** The ten sections of the individual and team plans; the pharmacy section comes only with the pharmacy plan. */
 export const coreSections = paidSections.filter((s) => s !== "pharmacy");
 
 export type PlanId = "individual" | "team" | "pharmacy";

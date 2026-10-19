@@ -196,7 +196,7 @@ export const copy = {
 
   sectionsIntro: {
     eyebrow: bi("Inside the vault", "بخش‌های پلتفرم"),
-    title: bi("Eleven specialised sections, one integrated platform", "یازده بخش تخصصی در یک پلتفرم یکپارچه"),
+    title: bi("Twelve specialised sections, one integrated platform", "دوازده بخش تخصصی در یک پلتفرم یکپارچه"),
     lead: bi(
       "The sections are designed to work together: from an excipient you move to its suppliers, to the calculation that uses it and to the regulatory requirement that governs it.",
       "بخش‌ها برای کار در کنار هم طراحی شده‌اند: از یک ماده جانبی به تأمین‌کنندگان آن، به محاسبه‌ای که در آن به کار می‌رود و به الزام رگولاتوری حاکم بر آن می‌رسید.",
@@ -291,7 +291,7 @@ export const copy = {
       teamList: 14_917_500,
       teamUsers: 6,
       extraUser: 1_000_000,
-      /** Pharmacy: all ten sections (the pharmacy section only opens with this plan) for one user, 15% off. */
+      /** Pharmacy: all eleven subscription sections (the pharmacy section only opens with this plan) for one user, 15% off. */
       pharmacy: 8_700_000,
       pharmacyList: 10_235_000,
     },
