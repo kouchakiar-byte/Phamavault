@@ -5,7 +5,7 @@ export const searchCopy = {
   title: bi("PharmaVault search", "جستجوی PharmaVault"),
   lead: bi(
     "One search across the whole vault: excipients and monographs, APIs and raw materials, suppliers, SOPs, calculators, ICH and CTD, handbooks and references. Search by name, CAS number, abbreviation, SOP code or function, in Persian or English.",
-    "یک جستجو در کل گنجینه: مواد جانبی و مونوگراف‌ها، مواد مؤثره و مواد اولیه، تأمین‌کنندگان، دستورالعمل‌ها، ماشین‌حساب‌ها، ICH و CTD، هندبوک‌ها و مراجع. با نام، شماره CAS، مخفف، کد SOP یا عملکرد، به فارسی یا انگلیسی جستجو کنید.",
+    "یک جستجو در کل گنجینه: مواد جانبی و مونوگراف‌ها، مواد مؤثره و مواد اولیه، تأمین‌کنندگان، دستورالعمل‌ها، ماشین‌حساب‌ها، ICH و CTD، هندبوک‌ها و رفرنس‌ها. با نام، شماره CAS، مخفف، کد SOP یا عملکرد، به فارسی یا انگلیسی جستجو کنید.",
   ),
   button: bi("Search", "جستجو"),
   placeholder: bi("Excipient, API, CAS, supplier, SOP code, calculator…", "ماده جانبی، ماده مؤثره، CAS، تأمین‌کننده، کد SOP، ماشین‌حساب…"),
@@ -32,7 +32,7 @@ export const searchCopy = {
     regulatory: bi("ICH guidelines and CTD", "راهنماهای ICH و CTD"),
     handbooks: bi("Handbooks", "هندبوک‌ها"),
     formulation: bi("Formulation templates", "الگوهای فرمولاسیون"),
-    references: bi("References and pharmacopoeias", "مراجع و فارماکوپه‌ها"),
+    references: bi("References and pharmacopoeias", "رفرنس‌ها و فارماکوپه‌ها"),
     orangeBook: bi("Orange Book (FDA)", "Orange Book (FDA)"),
   },
   scopeLabel: bi("Search in", "جستجو در"),

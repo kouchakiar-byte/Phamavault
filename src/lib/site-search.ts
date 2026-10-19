@@ -150,8 +150,6 @@ function buildStatic(): Entry[] {
         group: "sections",
         section: isPaidSection(s.slug) ? s.slug : null,
         title: s.title,
-        // Colloquial name users may still type for the references section.
-        aliases: s.slug === "references" ? ["رفرنس‌ها و فارماکوپه‌ها", "رفرنس"] : [],
         sub: s.description,
         path: s.href,
         extra: keys(s.description.en, s.description.fa),

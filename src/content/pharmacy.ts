@@ -124,7 +124,7 @@ export const pharmacyPage = {
     "ویژه استفاده حرفه‌ای. جایگزینی یک فرآورده با فرآورده دیگر تابع ضوابط سازمان غذا و دارو و نظر پزشک است؛ همیشه اطلاعات فرآورده (SmPC یا بروشور) همان فرآورده‌ای را که تحویل می‌دهید بررسی کنید.",
   ),
   reviewed: bi("Content reviewed October 2026.", "آخرین بازبینی محتوا: مهر ۱۴۰۵."),
-  refsLabel: bi("References", "مراجع"),
+  refsLabel: bi("References", "رفرنس‌ها"),
   toc: bi("In this section", "در این بخش"),
 };
 
@@ -265,7 +265,7 @@ export const compounding = {
     bi("Physical description of the finished preparation", "توصیف ظاهری فرآورده نهایی"),
     bi("Beyond-use date and storage requirements, with the source of the BUD", "BUD و شرایط نگهداری، همراه با منبع BUD"),
     bi("Labelling requirements and any quality-control checks", "الزامات برچسب‌گذاری و کنترل‌های کیفی"),
-    bi("Reference for the formulation (published formula or stability study)", "مرجع فرمولاسیون (فرمول منتشرشده یا مطالعه پایداری)"),
+    bi("Reference for the formulation (published formula or stability study)", "رفرنس فرمولاسیون (فرمول منتشرشده یا مطالعه پایداری)"),
   ],
   recordNote: bi(
     "USP <795> also requires a compounding record for each batch: date, lot numbers and expiry of the ingredients, quantities weighed, the compounder and verifier, the assigned BUD and any deviations.",
@@ -406,7 +406,7 @@ export const compoundingGuide = {
     drug: bi("Drug and strength", "دارو و غلظت"),
     vehicle: bi("Vehicle", "حامل"),
     stability: bi("Published stability", "پایداری گزارش‌شده"),
-    ref: bi("Reference", "مرجع"),
+    ref: bi("Reference", "رفرنس"),
   },
   formulas: [
     {

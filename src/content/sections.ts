@@ -134,10 +134,10 @@ export const sections = [
     plate: "RF",
     icon: BookMarked,
     group: "knowledge",
-    title: bi("Pharmaceutical references and pharmacopoeias", "مراجع و فارماکوپه‌ها در داروسازی"),
+    title: bi("Pharmaceutical references and pharmacopoeias", "رفرنس‌ها و فارماکوپه‌ها در داروسازی"),
     description: bi(
       "USP–NF, BP, Ph. Eur., JP and the other pharmacopoeias, regulators and drug-information sources: the edition in force, the latest published and official links, with a searchable Orange Book.",
-      "فارماکوپه‌های آمریکا، بریتانیا، اروپا و ژاپن \u2066(USP–NF, BP, Ph. Eur., JP)\u2069 و دیگر مراجع رگولاتوری و اطلاعات دارویی: ویرایش لازم‌الاجرا، آخرین ویرایش منتشرشده و لینک رسمی هر مرجع، همراه با جستجوی Orange Book.",
+      "فارماکوپه‌های آمریکا، بریتانیا، اروپا و ژاپن \u2066(USP–NF, BP, Ph. Eur., JP)\u2069 و دیگر مراجع رگولاتوری و اطلاعات دارویی: ویرایش لازم‌الاجرا، آخرین ویرایش منتشرشده و لینک رسمی هر رفرنس، همراه با جستجوی Orange Book.",
     ),
   },
   {

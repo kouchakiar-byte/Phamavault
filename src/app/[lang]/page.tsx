@@ -101,7 +101,7 @@ function sectionHighlight(slug: string, n: (x: number) => string, c: Counts): Bi
         `${n(sops.items.length)} دستورالعمل · ${n(Object.keys(sops.departments).length)} واحد`,
       );
     case "references":
-      return bi(`${n(referenceSections.length)} references · Orange Book search`, `${n(referenceSections.length)} مرجع · جستجوی Orange Book`);
+      return bi(`${n(referenceSections.length)} references · Orange Book search`, `${n(referenceSections.length)} رفرنس · جستجوی Orange Book`);
     default:
       return null;
   }

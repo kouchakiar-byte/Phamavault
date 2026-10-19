@@ -371,7 +371,7 @@ export const copy = {
     },
     compare: [
       { label: bi("The 10 specialised sections", "۱۰ بخش تخصصی"), values: [true, true, true] },
-      { label: bi("References and pharmacopoeias in pharmacy", "مراجع و فارماکوپه‌ها در داروسازی"), values: [true, true, true] },
+      { label: bi("References and pharmacopoeias in pharmacy", "رفرنس‌ها و فارماکوپه‌ها در داروسازی"), values: [true, true, true] },
       { label: bi("Pharmacy section", "بخش داروخانه"), values: [false, false, true] },
       { label: bi("Supplier & manufacturer bank", "بانک تأمین‌کنندگان و تولیدکنندگان"), values: [true, true, true] },
       { label: bi("Pharmaceutical calculators and formulation tools", "ماشین‌حساب‌های داروسازی و ابزارهای فرمولاسیون"), values: [true, true, true] },
