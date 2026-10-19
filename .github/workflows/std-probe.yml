@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Search for reference-standard and reagent suppliers
+      - name: Search for and read reference-standard and reagent suppliers
         run: python3 .github/probe/std.py > .github/probe/out.jsonl
       - name: Save the output to the branch
         run: |
