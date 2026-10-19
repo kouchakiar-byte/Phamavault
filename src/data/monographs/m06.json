@@ -459,7 +459,7 @@
   "mw": "",
   "applications": {
    "en": "Used mainly as a tablet disintegrant, typically at 2–10% w/w, in both direct compression and wet granulation. Its strong swelling on contact with water gives rapid disintegration without forming a gel. It is not normally used for its ion-exchange properties.",
-   "fa": "عمدتاً به عنوان متلاشی‌کننده قرص با غلظت معمول 2–10٪ وزنی، هم در پرس مستقیم و هم در گرانولاسیون مرطوب، به کار می‌رود. تورم شدید آن در تماس با آب باعث متلاشی شدن سریع قرص بدون تشکیل ژل می‌شود. معمولاً به خاطر خاصیت تبادل یونی مصرف نمی‌شود."
+   "fa": "عمدتاً به عنوان متلاشی‌کننده قرص با غلظت معمول 2–10٪ وزنی، هم در پرس مستقیم و هم در گرانولاسیون مرطوب، به کار می‌رود. تورم شدید آن در تماس با آب باعث متلاشی شدن سریع قرص بدون تشکیل ژل می‌شود. معمولاً به دلیل خاصیت تبادل یونی مصرف نمی‌شود."
   },
   "description": {
    "en": "A cation-exchange resin made from methacrylic acid cross-linked with divinylbenzene, in the potassium salt form. It is supplied as a fine, free-flowing, cream-coloured powder with little or no odour or taste.",
@@ -537,7 +537,7 @@
   },
   "comments": {
    "en": "Polacrilin potassium is relatively insensitive to the lubricant and to compression force, but because it is an ion exchanger, compatibility with ionic (especially basic) drugs should be checked. The related hydrogen-form resin (polacrilex) is used to bind and mask the taste of bitter cationic drugs and in nicotine gum.",
-   "fa": "پولاکریلین پتاسیم نسبت به لغزان‌کننده و نیروی پرس حساسیت نسبتاً کمی دارد، ولی چون مبادله‌کننده یون است باید سازگاری آن با داروهای یونی (به‌ویژه بازی) بررسی شود. رزین مشابه به شکل هیدروژنی (پولاکریلکس) برای اتصال و پوشاندن طعم داروهای کاتیونی تلخ و در آدامس نیکوتین به کار می‌رود."
+   "fa": "پولاکریلین پتاسیم نسبت به روان‌کننده و نیروی پرس حساسیت نسبتاً کمی دارد، ولی چون مبادله‌کننده یون است باید سازگاری آن با داروهای یونی (به‌ویژه بازی) بررسی شود. رزین مشابه به شکل هیدروژنی (پولاکریلکس) برای اتصال و پوشاندن طعم داروهای کاتیونی تلخ و در آدامس نیکوتین به کار می‌رود."
   },
   "refs": [
    "usp",
@@ -679,7 +679,7 @@
   },
   "description": {
    "en": "A high-molecular-weight polymer of acrylic acid lightly cross-linked with divinyl glycol, supplied as a white to off-white, fluffy powder. In water it does not dissolve but forms a highly swollen, viscous dispersion.",
-   "fa": "پلیمری با وزن مولکولی بالا از آکریلیک اسید که با دی‌وینیل گلیکول به‌طور خفیف کراس‌لینک شده و به صورت پودر سفید تا سفید مایل به کرم و پفکی عرضه می‌شود. در آب حل نمی‌شود بلکه پراکنده‌ای بسیار متورم و ویسکوز ایجاد می‌کند."
+   "fa": "پلیمری با وزن مولکولی بالا از آکریلیک اسید که با دی‌وینیل گلیکول به‌طور خفیف کراس‌لینک شده و به صورت پودر سفید تا سفید مایل به کرم و حجیم عرضه می‌شود. در آب حل نمی‌شود بلکه دیسپرسیونی بسیار متورم و ویسکوز ایجاد می‌کند."
   },
   "properties": [
    {
@@ -689,7 +689,7 @@
     },
     "v": {
      "en": "white to off-white, fluffy, hygroscopic powder with a slight characteristic odour",
-     "fa": "پودر سفید تا سفید مایل به کرم، پفکی و رطوبت‌گیر با بوی خفیف و مشخص"
+     "fa": "پودر سفید تا سفید مایل به کرم، حجیم و رطوبت‌گیر با بوی خفیف و مشخص"
     }
    },
    {
@@ -709,7 +709,7 @@
     },
     "v": {
      "en": "acidic in unneutralised aqueous dispersion (about pH 3)",
-     "fa": "در پراکنده آبی خنثی‌نشده اسیدی است (حدود pH 3)"
+     "fa": "در دیسپرسیون آبی خنثی‌نشده اسیدی است (حدود pH 3)"
     }
    },
    {
@@ -725,7 +725,7 @@
   ],
   "stability": {
    "en": "Stable but hygroscopic. Dispersions are susceptible to microbial growth and normally need a preservative. Store in an airtight container in a cool, dry place.",
-   "fa": "پایدار ولی رطوبت‌گیر است. پراکنده‌های آن مستعد رشد میکروبی‌اند و معمولاً به نگهدارنده نیاز دارند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+   "fa": "پایدار ولی رطوبت‌گیر است. دیسپرسیون‌های آن مستعد رشد میکروبی‌اند و معمولاً به نگهدارنده نیاز دارند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "As a polyacid it is incompatible with strong bases and oxidising agents. Viscosity and swelling are reduced by electrolytes and polyvalent cations, and it may interact with cationic drugs and preservatives such as benzalkonium chloride.",
@@ -1392,7 +1392,7 @@
   "mw": "",
   "applications": {
    "en": "A nonionic solubiliser and emulsifier used to solubilise fat-soluble vitamins, essential oils, flavours, fragrances and lipophilic drugs in aqueous oral and topical preparations, and as a surfactant in self-emulsifying (microemulsion) drug delivery systems such as some oral ciclosporin formulations. It is less bitter-tasting and less irritant than polyoxyl 35 castor oil, which makes it popular in oral liquids. Use levels vary with the load to be solubilised, commonly from a few percent up to about 20–25% in liquid formulations and higher in lipid-based concentrates.",
-   "fa": "حل‌کننده و امولسیون‌کننده غیریونی که برای حل کردن ویتامین‌های محلول در چربی، اسانس‌ها، طعم‌دهنده‌ها، عطرها و داروهای چربی‌دوست در فرآورده‌های آبی خوراکی و موضعی، و به عنوان سورفکتانت در سامانه‌های دارورسانی خودامولسیون‌شونده (میکروامولسیونی) مانند برخی فرمولاسیون‌های خوراکی سیکلوسپورین به کار می‌رود. طعم تلخی و خاصیت تحریکی آن از پلی‌اکسیل 35 روغن کرچک کمتر است و به همین دلیل در مایعات خوراکی پرطرفدار است. مقدار مصرف بسته به مقدار ماده‌ای که باید حل شود متفاوت است و معمولاً در فرمولاسیون‌های مایع از چند درصد تا حدود 20–25٪ و در کنسانتره‌های لیپیدی بیشتر است."
+   "fa": "حل‌کننده و امولسیون‌کننده غیریونی که برای حل کردن ویتامین‌های محلول در چربی، اسانس‌ها، طعم‌دهنده‌ها، عطرها و داروهای چربی‌دوست در فرآورده‌های آبی خوراکی و موضعی، و به عنوان سورفکتانت در سامانه‌های دارورسانی خودامولسیون‌شونده (میکروامولسیونی) مانند برخی فرمولاسیون‌های خوراکی سیکلوسپورین به کار می‌رود. طعم تلخی و خاصیت تحریکی آن از پلی‌اکسیل 35 روغن کرچک کمتر است و به همین دلیل در مایعات خوراکی پرکاربرد است. مقدار مصرف بسته به مقدار ماده‌ای که باید حل شود متفاوت است و معمولاً در فرمولاسیون‌های مایع از چند درصد تا حدود 20–25٪ و در کنسانتره‌های لیپیدی بیشتر است."
   },
   "description": {
    "en": "A mixture obtained by ethoxylating hydrogenated castor oil. The hydrophobic part consists mainly of glycerol polyethylene glycol hydroxystearate and the hydrophilic part of free polyethylene glycols and glycerol ethoxylates. It is a white to yellowish paste at room temperature.",
@@ -1503,7 +1503,7 @@
   "mw": "≈ 2 000",
   "applications": {
    "en": "A hydrophilic nonionic surfactant used mainly as an emulsifier in oil-in-water creams and lotions, often combined with a lipophilic co-emulsifier such as glyceryl monostearate or cetyl alcohol, and also as a solubiliser and wetting agent. It has been used in tablet film coatings and as a lubricant or release aid in some tablets. Typical levels: emulsifying agent about 0.5–10%, solubilising agent about 1–10%, wetting agent about 0.1–3%.",
-   "fa": "سورفکتانت غیریونی آب‌دوست که عمدتاً به عنوان امولسیون‌کننده در کرم‌ها و لوسیون‌های روغن در آب، اغلب همراه یک امولسیون‌کننده کمکی چربی‌دوست مانند گلیسریل مونواستئارات یا ستیل الکل، و نیز به عنوان حل‌کننده و عامل مرطوب‌کننده به کار می‌رود. در پوشش فیلمی قرص و به عنوان لغزان‌کننده یا کمک‌جداکننده در برخی قرص‌ها نیز مصرف شده است. غلظت‌های متداول: امولسیون‌کننده حدود 0.5–10٪، حل‌کننده حدود 1–10٪، عامل مرطوب‌کننده حدود 0.1–3٪."
+   "fa": "سورفکتانت غیریونی آب‌دوست که عمدتاً به عنوان امولسیون‌کننده در کرم‌ها و لوسیون‌های روغن در آب، اغلب همراه یک امولسیون‌کننده کمکی چربی‌دوست مانند گلیسریل مونواستئارات یا ستیل الکل، و نیز به عنوان حل‌کننده و عامل مرطوب‌کننده به کار می‌رود. در پوشش فیلمی قرص و به عنوان روان‌کننده یا کمک‌جداکننده در برخی قرص‌ها نیز مصرف شده است. غلظت‌های متداول: امولسیون‌کننده حدود 0.5–10٪، حل‌کننده حدود 1–10٪، عامل مرطوب‌کننده حدود 0.1–3٪."
   },
   "description": {
    "en": "A mixture of mono- and diesters of mainly stearic and palmitic acids with polyethylene glycol having an average of about 40 oxyethylene units, together with some free polyethylene glycol. It is a white to light tan waxy solid with a faint, fat-like odour.",
