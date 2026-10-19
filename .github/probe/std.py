@@ -19,29 +19,25 @@ def text(h):
     return "\n".join(lines)
 def out(**k): print("@@" + json.dumps(k, ensure_ascii=False), flush=True)
 Q = [
- "استاندارد مرجع فارماکوپه EP فروش", "نماینده LGC Standards در ایران", "تولید استاندارد ثانویه دارویی", "فروش ناخالصی دارویی impurity",
- "نمایندگی مرک آلمان مواد شیمیایی آزمایشگاهی", "نمایندگی سیگما آلدریچ ایران", "فروش حلال HPLC", "فروش محلول کارل فیشر",
- "تولیدکننده مواد شیمیایی آزمایشگاهی ایران", "فروش سویه استاندارد ATCC", "واردکننده رفرنس استاندارد دارویی", "فروش استاندارد EDQM",
- "رفرنس استاندارد BP فروش", "ورکینگ استاندارد دارویی", "مواد شیمیایی آزمایشگاهی مرک فروش تهران", "خرید رفرنس استاندارد USP",
+ "فروش مواد شیمیایی آزمایشگاهی مرک", "نمایندگی سیگما آلدریچ", "فروش حلال HPLC", "خرید محلول کارل فیشر", "تولید مواد شیمیایی آزمایشگاهی دکتر مجللی",
+ "فروش محیط کشت میکروبی مرک", "خرید سویه میکروبی ATCC", "فروش کیت اندوتوکسین LAL", "فروش بافر استاندارد pH", "خرید رفرنس استاندارد EP",
+ "تولیدکننده مواد شیمیایی آزمایشگاهی داخلی", "واردکننده مواد شیمیایی آزمایشگاهی تهران", "خرید ناخالصی دارویی", "خرید استاندارد LGC",
 ]
 for q in Q:
-    s, b, _ = get("https://www.mojeek.com/search?" + urllib.parse.urlencode({"q": q}))
-    res = [[m.group(1), clean(m.group(2))] for m in re.finditer(r'<a class="ob" href="([^"]+)"[^>]*>(.*?)</a>', b, re.S)]
-    if not res: res = [[m.group(1), clean(m.group(2))] for m in re.finditer(r'<h2><a[^>]*href="(https?://[^"]+)"[^>]*>(.*?)</a>', b, re.S)]
-    out(k="mojeek", q=q, s=s, n=len(res), r=res[:20], err="" if res else b[:300])
-    time.sleep(4)
-    s, b, _ = get("https://www.bing.com/search?" + urllib.parse.urlencode({"q": q, "count": "30", "setlang": "en", "cc": "us"}))
+    s, b, _ = get("https://www.bing.com/search?" + urllib.parse.urlencode({"q": q, "count": "30"}))
     res = []
-    for m in re.finditer(r'<li class="b_algo".*?<h2[^>]*><a[^>]*href="([^"]+)"[^>]*>(.*?)</a>', b, re.S):
-        res.append([html.unescape(m.group(1)), clean(m.group(2))])
-    cites = re.findall(r'<cite>(.*?)</cite>', b)
-    out(k="bing", q=q, s=s, n=len(res), r=res[:30], c=[clean(c) for c in cites][:30], err="" if res else text(b)[:300])
-    time.sleep(6)
-SITES = ["arianpajooh.com", "rabinazma.com", "daricodarou.com", "imengostarshimi.com", "yasgene.com", "argonexir.com", "nirvanashimi.com", "manashimi.com", "www.adonisherb.ir"]
+    for m in re.finditer(r'<li class="b_algo".*?<h2[^>]*><a[^>]*href="([^"]+)"[^>]*>(.*?)</a>(.*?)</li>', b, re.S):
+        sn = re.search(r"<p[^>]*>(.*?)</p>", m.group(3), re.S)
+        res.append([html.unescape(m.group(1)), clean(m.group(2)), clean(sn.group(1))[:300] if sn else ""])
+    cites = [clean(c) for c in re.findall(r'<cite>(.*?)</cite>', b)]
+    out(k="bing", q=q, s=s, n=len(res), r=res[:30], c=cites[:30], err="" if res else text(b)[:300])
+    time.sleep(12)
+SITES = ["nirvanashimi.com", "www.nirvanashimi.com", "adonisherb.ir", "arianpajooh.com"]
 PATHS = ["/", "/contact-us/", "/contact/", "/about-us/", "/about/", "/تماس-با-ما/", "/درباره-ما/"]
 for d in SITES:
     for p in PATHS:
         s, b, fu = get("https://" + d + urllib.parse.quote(p))
+        if s == 0: s, b, fu = get("http://" + d + urllib.parse.quote(p))
         if s != 200: out(k="page", d=d, p=p, s=s, x=b[:150]); continue
         t = text(b)
         tel = sorted(set(re.findall(r"(?:0\d{2,3}[-\s]?\d{7,8}|\+98[\d\s-]{9,13}|۰[۰-۹]{2,3}[-\s]?[۰-۹]{7,8}|09\d{9})", t)))
