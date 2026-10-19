@@ -171,6 +171,17 @@ export function MaterialEditor({
         </div>
         <Input name="formula" title={t.formula[locale]} value={m?.formula} dir="ltr" />
         <Input name="mw" title={t.mw[locale]} value={m?.mw} dir="ltr" />
+        <div>
+          <label className={label} htmlFor="mat-bcs">BCS</label>
+          <select id="mat-bcs" name="bcs" defaultValue={m?.bcs ?? ""} className="field-input mt-1" dir="ltr">
+            <option value="">—</option>
+            {["1", "2", "3", "4"].map((c) => (
+              <option key={c} value={c}>
+                Class {c}
+              </option>
+            ))}
+          </select>
+        </div>
         <Input name="noteEn" title={t.noteEn[locale]} value={m?.note.en} dir="ltr" />
         <Input name="noteFa" title={t.noteFa[locale]} value={m?.note.fa} />
         <div className="sm:col-span-2 lg:col-span-3">

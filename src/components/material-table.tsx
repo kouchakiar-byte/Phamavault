@@ -37,6 +37,14 @@ function Synonyms({ value, locale }: { value: string; locale: Locale }) {
 
 type Props = { locale: Locale; data: typeof RawMaterialData };
 
+/** One colour per BCS class; the class number is always written, so colour is never the only cue. */
+const bcsTone: Record<string, string> = {
+  "1": "bg-molecule-100 text-molecule-700",
+  "2": "bg-capsule-400/25 text-vault-900",
+  "3": "bg-sky-100 text-sky-800",
+  "4": "bg-red-100 text-red-800",
+};
+
 /** Rows rendered at a time; the rest follow with "show more". */
 const PAGE = 50;
 
@@ -45,6 +53,7 @@ export function MaterialTable({ locale, data }: Props) {
   const [typed, setQuery] = useState<string | null>(null);
   const query = typed ?? urlQuery;
   const [group, setGroup] = useState("");
+  const [bcs, setBcs] = useState("");
   const [limit, setLimit] = useState(PAGE);
   const t = pages.materials;
   const c = copy.common;
@@ -52,9 +61,9 @@ export function MaterialTable({ locale, data }: Props) {
   const rows = useMemo(() => {
     const q = normalize(query);
     return data.items.filter(
-      (r) => (!q || normalize(`${r.name} ${r.cas} ${r.synonyms}`).includes(q)) && (!group || r.group === group),
+      (r) => (!q || normalize(`${r.name} ${r.cas} ${r.synonyms}`).includes(q)) && (!group || r.group === group) && (!bcs || r.bcs === bcs),
     );
-  }, [data, query, group]);
+  }, [data, query, group, bcs]);
 
   return (
     <>
@@ -78,6 +87,19 @@ export function MaterialTable({ locale, data }: Props) {
             ))}
           </select>
         </Field>
+        <Field label={t.bcs[locale]} htmlFor="r-bcs">
+          <select id="r-bcs" className="field-input" value={bcs} onChange={(e) => {
+              setBcs(e.target.value);
+              setLimit(PAGE);
+            }}>
+            <option value="">{t.allBcs[locale]}</option>
+            {Object.entries(t.bcsClasses).map(([k, v]) => (
+              <option key={k} value={k}>
+                {v[locale]}
+              </option>
+            ))}
+          </select>
+        </Field>
       </FilterBar>
       <Count shown={rows.length} total={data.items.length} of={c.of[locale]} unit={c.records[locale]} />
       <TableWrap>
@@ -87,6 +109,7 @@ export function MaterialTable({ locale, data }: Props) {
               <th>{c.name[locale]}</th>
               <th>CAS</th>
               <th>{t.group[locale]}</th>
+              <th>{t.bcs[locale]}</th>
               <th>{t.mw[locale]}</th>
               <th>{t.keyPoint[locale]}</th>
             </tr>
@@ -94,7 +117,7 @@ export function MaterialTable({ locale, data }: Props) {
           <tbody>
             {rows.length === 0 && (
               <tr>
-                <td colSpan={5}>{c.noMatch[locale]}</td>
+                <td colSpan={6}>{c.noMatch[locale]}</td>
               </tr>
             )}
             {rows.slice(0, limit).map((r) => (
@@ -109,6 +132,19 @@ export function MaterialTable({ locale, data }: Props) {
                 <td>
                   <Chip>{data.groups[r.group]?.[locale] ?? r.group}</Chip>
                 </td>
+                <td>
+                  {r.bcs ? (
+                    <span
+                      className={`inline-flex rounded-full px-2.5 py-0.5 text-xs font-bold ${bcsTone[r.bcs] ?? ""}`}
+                      title={t.bcsClasses[r.bcs]?.[locale]}
+                      dir="ltr"
+                    >
+                      BCS {r.bcs}
+                    </span>
+                  ) : (
+                    <span className="text-muted">—</span>
+                  )}
+                </td>
                 <td className="num">
                   {r.mw}
                   {r.formula && <Formula value={r.formula} />}
@@ -119,6 +155,7 @@ export function MaterialTable({ locale, data }: Props) {
           </tbody>
         </table>
       </TableWrap>
+      <p className="mt-3 text-xs leading-relaxed text-muted">{t.bcsNote[locale]}</p>
       {rows.length > limit && (
         <button type="button" className="mx-auto mt-4 flex rounded-lg border border-line px-5 py-2 text-sm font-medium text-vault-900 hover:border-molecule-500" onClick={() => setLimit((n) => n + PAGE)}>
           {t.showMore[locale].replace("{n}", formatNumber(Math.min(PAGE, rows.length - limit), locale))}

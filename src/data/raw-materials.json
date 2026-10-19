@@ -144,7 +144,8 @@
     "en": "Selective COX-2 inhibitor; practically insoluble in water; BCS class II",
     "fa": "مهارکننده انتخابی ⁦COX-2⁩؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "سلکوکسیب"
+   "synonyms": "سلکوکسیب",
+   "bcs": "2"
   },
   {
    "name": "Codeine phosphate hemihydrate",
@@ -192,7 +193,8 @@
     "en": "NSAID (arylacetic acid); sparingly soluble in water; BCS class II",
     "fa": "ضدالتهاب غیراستروئیدی (آریل‌استیک اسید)؛ نسبتاً کم‌محلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "دیکلوفناک سدیم"
+   "synonyms": "دیکلوفناک سدیم",
+   "bcs": "2"
   },
   {
    "name": "Diflunisal",
@@ -228,7 +230,8 @@
     "en": "Selective COX-2 inhibitor; weak base, BCS class II (solubility rises at low pH)",
     "fa": "مهارکننده انتخابی ⁦COX-2⁩؛ باز ضعیف، BCS کلاس II (حلالیت در pH پایین بیشتر است)"
    },
-   "synonyms": "اتوریکوکسیب"
+   "synonyms": "اتوریکوکسیب",
+   "bcs": "2"
   },
   {
    "name": "Febuxostat",
@@ -276,7 +279,8 @@
     "en": "NSAID (propionic acid); practically insoluble in water; BCS class II",
     "fa": "ضدالتهاب غیراستروئیدی (پروپیونیک اسید)؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "فلوربی‌پروفن"
+   "synonyms": "فلوربی‌پروفن",
+   "bcs": "2"
   },
   {
    "name": "Hydromorphone hydrochloride",
@@ -300,7 +304,8 @@
     "en": "NSAID (propionic acid); practically insoluble in water; low melting point; BCS class II",
     "fa": "ضدالتهاب غیراستروئیدی (پروپیونیک اسید)؛ تقریباً نامحلول در آب؛ نقطه ذوب پایین؛ BCS کلاس II"
    },
-   "synonyms": "ایبوپروفن"
+   "synonyms": "ایبوپروفن",
+   "bcs": "2"
   },
   {
    "name": "Indometacin",
@@ -312,7 +317,8 @@
     "en": "NSAID (indoleacetic acid); practically insoluble in water; polymorphism, light-sensitive",
     "fa": "ضدالتهاب غیراستروئیدی (ایندول‌استیک اسید)؛ تقریباً نامحلول در آب؛ پلی‌مورفیسم، حساس به نور"
    },
-   "synonyms": "Indomethacin, ایندومتاسین"
+   "synonyms": "Indomethacin, ایندومتاسین",
+   "bcs": "2"
   },
   {
    "name": "Ketoprofen",
@@ -324,7 +330,8 @@
     "en": "NSAID (propionic acid); practically insoluble in water; light-sensitive",
     "fa": "ضدالتهاب غیراستروئیدی (پروپیونیک اسید)؛ تقریباً نامحلول در آب؛ حساس به نور"
    },
-   "synonyms": "کتوپروفن"
+   "synonyms": "کتوپروفن",
+   "bcs": "2"
   },
   {
    "name": "Ketorolac trometamol",
@@ -348,7 +355,8 @@
     "en": "NSAID (fenamate); practically insoluble in water; polymorphism, BCS class II",
     "fa": "ضدالتهاب غیراستروئیدی (فنامات)؛ تقریباً نامحلول در آب؛ پلی‌مورفیسم، BCS کلاس II"
    },
-   "synonyms": "مفنامیک اسید"
+   "synonyms": "مفنامیک اسید",
+   "bcs": "2"
   },
   {
    "name": "Meloxicam",
@@ -360,7 +368,8 @@
     "en": "NSAID (oxicam, COX-2 preferential); practically insoluble in water; BCS class II",
     "fa": "ضدالتهاب غیراستروئیدی (اکسیکام، ترجیحاً ⁦COX-2⁩)؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "ملوکسیکام"
+   "synonyms": "ملوکسیکام",
+   "bcs": "2"
   },
   {
    "name": "Metamizole sodium",
@@ -468,7 +477,8 @@
     "en": "NSAID (propionic acid); practically insoluble in water; BCS class II",
     "fa": "ضدالتهاب غیراستروئیدی (پروپیونیک اسید)؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "ناپروکسن"
+   "synonyms": "ناپروکسن",
+   "bcs": "2"
   },
   {
    "name": "Naproxen sodium",
@@ -480,7 +490,8 @@
     "en": "NSAID (propionic acid); freely soluble in water; hygroscopic",
     "fa": "ضدالتهاب غیراستروئیدی (پروپیونیک اسید)؛ آزادانه محلول در آب؛ جاذب رطوبت"
    },
-   "synonyms": "ناپروکسن سدیم"
+   "synonyms": "ناپروکسن سدیم",
+   "bcs": "2"
   },
   {
    "name": "Nefopam hydrochloride",
@@ -493,6 +504,18 @@
     "fa": "ضددرد غیراپیوئیدی با اثر مرکزی؛ نسبتاً کم‌محلول در آب"
    },
    "synonyms": "نفوپام هیدروکلراید, نفوپام"
+  },
+  {
+   "name": "Oxycodone hydrochloride",
+   "cas": "124-90-3",
+   "group": "ain",
+   "formula": "C18H22ClNO4",
+   "mw": "351.80",
+   "note": {
+    "en": "Opioid analgesic; immediate and prolonged release",
+    "fa": "مسکن اپیوئیدی؛ رهش فوری و طولانی"
+   },
+   "synonyms": "اکسی‌کدون هیدروکلراید"
   },
   {
    "name": "Paracetamol",
@@ -552,7 +575,8 @@
     "en": "NSAID (oxicam); practically insoluble in water; polymorphism",
     "fa": "ضدالتهاب غیراستروئیدی (اکسیکام)؛ تقریباً نامحلول در آب؛ پلی‌مورفیسم"
    },
-   "synonyms": "پیروکسیکام"
+   "synonyms": "پیروکسیکام",
+   "bcs": "2"
   },
   {
    "name": "Probenecid",
@@ -639,6 +663,18 @@
    "synonyms": "سوماتریپتان سوکسینات, سوماتریپتان"
   },
   {
+   "name": "Tapentadol hydrochloride",
+   "cas": "175591-09-0",
+   "group": "ain",
+   "formula": "C14H24ClNO",
+   "mw": "257.80",
+   "note": {
+    "en": "Opioid agonist with noradrenaline reuptake inhibition",
+    "fa": "آگونیست اپیوئید با مهار بازجذب نورآدرنالین"
+   },
+   "synonyms": "تاپنتادول"
+  },
+  {
    "name": "Tenoxicam",
    "cas": "59804-37-4",
    "group": "ain",
@@ -672,7 +708,8 @@
     "en": "Opioid analgesic (controlled in Iran); freely soluble in water; BCS class I",
     "fa": "ضددرد اپیوئیدی (تحت کنترل در ایران)؛ آزادانه محلول در آب؛ BCS کلاس I"
    },
-   "synonyms": "ترامادول هیدروکلراید, ترامادول"
+   "synonyms": "ترامادول هیدروکلراید, ترامادول",
+   "bcs": "1"
   },
   {
    "name": "Amikacin sulfate",
@@ -757,6 +794,18 @@
     "fa": "بتالاکتام مونوباکتام؛ همراه با ال-آرژینین برای تزریق فرموله می‌شود"
    },
    "synonyms": "آزترئونام"
+  },
+  {
+   "name": "Bedaquiline fumarate",
+   "cas": "845533-86-0",
+   "group": "abx",
+   "formula": "C36H35BrN2O6",
+   "mw": "671.60",
+   "note": {
+    "en": "Diarylquinoline for multidrug-resistant tuberculosis; ATP-synthase inhibitor",
+    "fa": "دی‌آریل‌کینولین برای سل مقاوم به چند دارو؛ مهارکننده ATP سنتاز"
+   },
+   "synonyms": "بداکیلین"
   },
   {
    "name": "Benzathine benzylpenicillin tetrahydrate",
@@ -1020,7 +1069,8 @@
     "en": "Fluoroquinolone (monohydrate); light-sensitive; chelates Ca, Mg, Fe, Al",
     "fa": "فلوروکینولون (مونوهیدرات)؛ حساس به نور؛ با کلسیم، منیزیم، آهن و آلومینیوم کمپلکس می‌دهد"
    },
-   "synonyms": "سیپروفلوکساسین هیدروکلراید, سیپروفلوکساسین"
+   "synonyms": "سیپروفلوکساسین هیدروکلراید, سیپروفلوکساسین",
+   "bcs": "4"
   },
   {
    "name": "Clarithromycin",
@@ -1059,6 +1109,18 @@
    "synonyms": "کلیندامایسین فسفات"
   },
   {
+   "name": "Clofazimine",
+   "cas": "2030-63-9",
+   "group": "abx",
+   "formula": "C27H22Cl2N4",
+   "mw": "473.40",
+   "note": {
+    "en": "Riminophenazine for leprosy and MDR-TB; highly lipophilic, skin discoloration",
+    "fa": "ریمینوفنازین برای جذام و سل مقاوم؛ بسیار چربی‌دوست، تغییر رنگ پوست"
+   },
+   "synonyms": "کلوفازیمین"
+  },
+  {
    "name": "Cloxacillin sodium",
    "cas": "7081-44-9",
    "group": "abx",
@@ -1095,6 +1157,18 @@
    "synonyms": "سیکلوسرین"
   },
   {
+   "name": "Dalbavancin",
+   "cas": "171500-79-1",
+   "group": "abx",
+   "formula": "C88H100Cl2N10O28",
+   "mw": "1816.70",
+   "note": {
+    "en": "Long-acting lipoglycopeptide (parenteral)",
+    "fa": "لیپوگلیکوپپتید طولانی‌اثر (تزریقی)"
+   },
+   "synonyms": "دالباوانسین"
+  },
+  {
    "name": "Dapsone",
    "cas": "80-08-0",
    "group": "abx",
@@ -1105,6 +1179,18 @@
     "fa": "سولفون ضدجذام/ضدباکتری؛ بسیار کم‌محلول در آب"
    },
    "synonyms": "داپسون"
+  },
+  {
+   "name": "Delamanid",
+   "cas": "681492-22-8",
+   "group": "abx",
+   "formula": "C25H25F3N4O6",
+   "mw": "534.50",
+   "note": {
+    "en": "Nitro-dihydroimidazooxazole for multidrug-resistant tuberculosis",
+    "fa": "نیترودی‌هیدروایمیدازواکسازول برای سل مقاوم به چند دارو"
+   },
+   "synonyms": "دلامانید"
   },
   {
    "name": "Dicloxacillin sodium",
@@ -1128,7 +1214,20 @@
     "en": "Tetracycline; freely soluble in water; hygroscopic, light-sensitive",
     "fa": "تتراسایکلین؛ آزادانه محلول در آب؛ جاذب رطوبت، حساس به نور"
    },
-   "synonyms": "Doxycycline hydrochloride hemiethanolate hemihydrate, داکسی‌سایکلین هیکلات, داکسی‌سایکلین"
+   "synonyms": "Doxycycline hydrochloride hemiethanolate hemihydrate, داکسی‌سایکلین هیکلات, داکسی‌سایکلین",
+   "bcs": "1"
+  },
+  {
+   "name": "Ertapenem sodium",
+   "cas": "153773-82-1",
+   "group": "abx",
+   "formula": "C22H24N3NaO7S",
+   "mw": "497.50",
+   "note": {
+    "en": "Carbapenem (parenteral), once daily",
+    "fa": "کارباپنم (تزریقی)، یک بار در روز"
+   },
+   "synonyms": "ارتاپنم سدیم"
   },
   {
    "name": "Erythromycin",
@@ -1164,7 +1263,8 @@
     "en": "Antitubercular (first-line); very soluble in water; BCS class III",
     "fa": "ضدسل (خط اول)؛ بسیار محلول در آب؛ BCS کلاس III"
    },
-   "synonyms": "Ethambutol hydrochloride, اتامبوتول هیدروکلراید, اتامبوتول"
+   "synonyms": "Ethambutol hydrochloride, اتامبوتول هیدروکلراید, اتامبوتول",
+   "bcs": "3"
   },
   {
    "name": "Ethionamide",
@@ -1248,7 +1348,8 @@
     "en": "Antitubercular (first-line); freely soluble in water; light-sensitive",
     "fa": "ضدسل (خط اول)؛ آزادانه محلول در آب؛ حساس به نور"
    },
-   "synonyms": "INH, ایزونیازید"
+   "synonyms": "INH, ایزونیازید",
+   "bcs": "3"
   },
   {
    "name": "Levofloxacin hemihydrate",
@@ -1260,7 +1361,8 @@
     "en": "Fluoroquinolone (S-ofloxacin); BCS class I; light-sensitive",
     "fa": "فلوروکینولون (ایزومر S افلوکساسین)؛ BCS کلاس I؛ حساس به نور"
    },
-   "synonyms": "Levofloxacin, لووفلوکساسین"
+   "synonyms": "Levofloxacin, لووفلوکساسین",
+   "bcs": "1"
   },
   {
    "name": "Lincomycin hydrochloride",
@@ -1308,7 +1410,8 @@
     "en": "Nitroimidazole (anaerobes, protozoa); slightly soluble in water; BCS class I, light-sensitive",
     "fa": "نیتروایمیدازول (بی‌هوازی‌ها، تک‌یاخته‌ها)؛ کم‌محلول در آب؛ BCS کلاس I، حساس به نور"
    },
-   "synonyms": "مترونیدازول"
+   "synonyms": "مترونیدازول",
+   "bcs": "1"
   },
   {
    "name": "Minocycline hydrochloride",
@@ -1464,7 +1567,20 @@
     "en": "Antitubercular (first-line); sparingly soluble in water",
     "fa": "ضدسل (خط اول)؛ نسبتاً کم‌محلول در آب"
    },
-   "synonyms": "پیرازینامید"
+   "synonyms": "پیرازینامید",
+   "bcs": "3"
+  },
+  {
+   "name": "Rifabutin",
+   "cas": "72559-06-9",
+   "group": "abx",
+   "formula": "C46H62N4O11",
+   "mw": "847.00",
+   "note": {
+    "en": "Rifamycin for tuberculosis and MAC; weaker CYP3A4 inducer than rifampicin",
+    "fa": "ریفامایسین برای سل و MAC؛ القاکننده ضعیف‌تر CYP3A4 نسبت به ریفامپین"
+   },
+   "synonyms": "ریفابوتین"
   },
   {
    "name": "Rifampicin",
@@ -1476,7 +1592,20 @@
     "en": "Antitubercular rifamycin; slightly soluble in water; polymorphism, BCS class II",
     "fa": "ضدسل ریفامایسینی؛ کم‌محلول در آب؛ پلی‌مورفیسم، BCS کلاس II"
    },
-   "synonyms": "Rifampin, ریفامپین, ریفامپیسین"
+   "synonyms": "Rifampin, ریفامپین, ریفامپیسین",
+   "bcs": "2"
+  },
+  {
+   "name": "Rifapentine",
+   "cas": "61379-65-5",
+   "group": "abx",
+   "formula": "C47H64N4O12",
+   "mw": "877.00",
+   "note": {
+    "en": "Long-acting rifamycin for latent tuberculosis (weekly regimens)",
+    "fa": "ریفامایسین طولانی‌اثر برای سل نهفته (رژیم‌های هفتگی)"
+   },
+   "synonyms": "ریفاپنتین"
   },
   {
    "name": "Rifaximin",
@@ -1587,6 +1716,18 @@
    "synonyms": "تازوباکتام سدیم, تازوباکتام"
   },
   {
+   "name": "Tedizolid phosphate",
+   "cas": "856867-55-5",
+   "group": "abx",
+   "formula": "C17H16FN6O6P",
+   "mw": "450.30",
+   "note": {
+    "en": "Oxazolidinone prodrug for skin infections",
+    "fa": "پیش‌داروی اکسازولیدینون برای عفونت‌های پوستی"
+   },
+   "synonyms": "تدیزولید فسفات"
+  },
+  {
    "name": "Tetracycline hydrochloride",
    "cas": "64-75-5",
    "group": "abx",
@@ -1597,6 +1738,18 @@
     "fa": "تتراسایکلین؛ محلول در آب؛ حساس به نور، تخریب به فرم‌های اپی و آنهیدرو"
    },
    "synonyms": "تتراسایکلین هیدروکلراید, تتراسایکلین"
+  },
+  {
+   "name": "Tigecycline",
+   "cas": "220620-09-7",
+   "group": "abx",
+   "formula": "C29H39N5O8",
+   "mw": "585.60",
+   "note": {
+    "en": "Glycylcycline (parenteral); broad spectrum incl. MRSA",
+    "fa": "گلیسیل‌سیکلین (تزریقی)؛ طیف وسیع از جمله MRSA"
+   },
+   "synonyms": "تیگسایکلین"
   },
   {
    "name": "Tinidazole",
@@ -1668,7 +1821,8 @@
     "en": "Antiherpes nucleoside analogue; slightly soluble in water, BCS III",
     "fa": "آنالوگ نوکلئوزیدی ضدهرپس؛ کم‌محلول در آب، ⁦BCS III⁩"
    },
-   "synonyms": "Acyclovir, آسیکلوویر, اسیکلوویر"
+   "synonyms": "Acyclovir, آسیکلوویر, اسیکلوویر",
+   "bcs": "3"
   },
   {
    "name": "Adefovir dipivoxil",
@@ -1705,6 +1859,18 @@
     "fa": "مهارکننده پروتئاز HIV؛ کم‌محلول در آب، جذب وابسته به pH"
    },
    "synonyms": "Atazanavir sulphate, آتازاناویر سولفات, آتازاناویر"
+  },
+  {
+   "name": "Baloxavir marboxil",
+   "cas": "1985606-14-1",
+   "group": "avi",
+   "formula": "C27H23F2N3O7S",
+   "mw": "571.60",
+   "note": {
+    "en": "Influenza cap-dependent endonuclease inhibitor (single dose)",
+    "fa": "مهارکننده اندونوکلئاز وابسته به کلاهک آنفلوانزا (تک‌دوز)"
+   },
+   "synonyms": "بالوکساویر ماربوکسیل"
   },
   {
    "name": "Daclatasvir dihydrochloride",
@@ -1752,7 +1918,8 @@
     "en": "NNRTI antiretroviral (HIV); practically insoluble in water, BCS II, polymorphism",
     "fa": "مهارکننده غیرنوکلئوزیدی ترانس‌کریپتاز معکوس (HIV)؛ تقریباً نامحلول در آب، ⁦BCS II⁩، پلی‌مورفیسم"
    },
-   "synonyms": "افاویرنز"
+   "synonyms": "افاویرنز",
+   "bcs": "2"
   },
   {
    "name": "Emtricitabine",
@@ -1836,7 +2003,8 @@
     "en": "NRTI antiretroviral (HIV/HBV); soluble in water, polymorphism",
     "fa": "مهارکننده نوکلئوزیدی ترانس‌کریپتاز معکوس (⁦HIV/HBV⁩)؛ محلول در آب، پلی‌مورفیسم"
    },
-   "synonyms": "3TC, لامیوودین, لامی‌وودین"
+   "synonyms": "3TC, لامیوودین, لامی‌وودین",
+   "bcs": "3"
   },
   {
    "name": "Ledipasvir",
@@ -1884,7 +2052,20 @@
     "en": "NNRTI antiretroviral (HIV); practically insoluble in water (anhydrous form)",
     "fa": "مهارکننده غیرنوکلئوزیدی ترانس‌کریپتاز معکوس (HIV)؛ تقریباً نامحلول در آب (فرم بی‌آب)"
    },
-   "synonyms": "Nevirapine anhydrous, نویراپین"
+   "synonyms": "Nevirapine anhydrous, نویراپین",
+   "bcs": "2"
+  },
+  {
+   "name": "Nirmatrelvir",
+   "cas": "2628280-40-8",
+   "group": "avi",
+   "formula": "C23H32F3N5O4",
+   "mw": "499.50",
+   "note": {
+    "en": "SARS-CoV-2 main-protease inhibitor; co-packed with ritonavir",
+    "fa": "مهارکننده پروتئاز اصلی SARS-CoV-2؛ همراه ریتوناویر"
+   },
+   "synonyms": "نیرماترلویر"
   },
   {
    "name": "Oseltamivir phosphate",
@@ -1944,7 +2125,8 @@
     "en": "NNRTI antiretroviral (HIV); practically insoluble in water, BCS II",
     "fa": "مهارکننده غیرنوکلئوزیدی ترانس‌کریپتاز معکوس (HIV)؛ تقریباً نامحلول در آب، ⁦BCS II⁩"
    },
-   "synonyms": "ریلپی‌ویرین هیدروکلراید, ریلپی‌ویرین"
+   "synonyms": "ریلپی‌ویرین هیدروکلراید, ریلپی‌ویرین",
+   "bcs": "2"
   },
   {
    "name": "Ritonavir",
@@ -2052,7 +2234,20 @@
     "en": "Benzimidazole anthelmintic; practically insoluble in water, BCS II, polymorphism",
     "fa": "ضدکرم بنزیمیدازولی؛ تقریباً نامحلول در آب، ⁦BCS II⁩، پلی‌مورفیسم"
    },
-   "synonyms": "آلبندازول"
+   "synonyms": "آلبندازول",
+   "bcs": "2"
+  },
+  {
+   "name": "Amodiaquine hydrochloride",
+   "cas": "69-44-3",
+   "group": "afp",
+   "formula": "C20H28Cl3N3O3",
+   "mw": "464.80",
+   "note": {
+    "en": "4-Aminoquinoline antimalarial, with artesunate",
+    "fa": "ضدمالاریای ۴-آمینوکینولینی، همراه آرتسونات"
+   },
+   "synonyms": "آمودیاکین"
   },
   {
    "name": "Amphotericin B",
@@ -2100,7 +2295,20 @@
     "en": "Naphthoquinone antiprotozoal; practically insoluble in water, BCS II",
     "fa": "ضدتک‌یاخته نفتوکینونی؛ تقریباً نامحلول در آب، ⁦BCS II⁩"
    },
-   "synonyms": "آتوواکوئون"
+   "synonyms": "آتوواکوئون",
+   "bcs": "2"
+  },
+  {
+   "name": "Benznidazole",
+   "cas": "22994-85-0",
+   "group": "afp",
+   "formula": "C12H12N4O3",
+   "mw": "260.25",
+   "note": {
+    "en": "Nitroimidazole for Chagas disease",
+    "fa": "نیتروایمیدازول برای بیماری شاگاس"
+   },
+   "synonyms": "بنزنیدازول"
   },
   {
    "name": "Benzyl benzoate",
@@ -2148,7 +2356,8 @@
     "en": "4-Aminoquinoline antimalarial; freely soluble in water, light-sensitive, bitter",
     "fa": "ضدمالاریای 4-آمینوکینولینی؛ آزادانه محلول در آب، حساس به نور، تلخ"
    },
-   "synonyms": "Chloroquine diphosphate, کلروکین فسفات, کلروکین"
+   "synonyms": "Chloroquine diphosphate, کلروکین فسفات, کلروکین",
+   "bcs": "1"
   },
   {
    "name": "Ciclopirox olamine",
@@ -2199,6 +2408,18 @@
    "synonyms": "DEC, دی‌اتیل‌کاربامازین سیترات"
   },
   {
+   "name": "Diloxanide furoate",
+   "cas": "3736-81-0",
+   "group": "afp",
+   "formula": "C14H11Cl2NO4",
+   "mw": "328.10",
+   "note": {
+    "en": "Luminal amoebicide",
+    "fa": "آمیب‌کش داخل روده‌ای"
+   },
+   "synonyms": "دیلوکسانید فوروات"
+  },
+  {
    "name": "Econazole nitrate",
    "cas": "24169-02-6",
    "group": "afp",
@@ -2220,7 +2441,8 @@
     "en": "Triazole antifungal; slightly soluble in water, BCS I, polymorphism",
     "fa": "ضدقارچ تری‌آزولی؛ کم‌محلول در آب، ⁦BCS I⁩، پلی‌مورفیسم"
    },
-   "synonyms": "فلوکونازول"
+   "synonyms": "فلوکونازول",
+   "bcs": "1"
   },
   {
    "name": "Flucytosine",
@@ -2244,7 +2466,8 @@
     "en": "Antifungal (dermatophytes); practically insoluble in water, BCS II, micronised grade",
     "fa": "ضدقارچ (درماتوفیت‌ها)؛ تقریباً نامحلول در آب، ⁦BCS II⁩، گرید میکرونیزه"
    },
-   "synonyms": "گریزئوفولوین"
+   "synonyms": "گریزئوفولوین",
+   "bcs": "2"
   },
   {
    "name": "Hydroxychloroquine sulfate",
@@ -2259,6 +2482,18 @@
    "synonyms": "Hydroxychloroquine sulphate, هیدروکسی‌کلروکین سولفات, هیدروکسی‌کلروکین"
   },
   {
+   "name": "Isavuconazonium sulfate",
+   "cas": "946075-13-4",
+   "group": "afp",
+   "formula": "C35H36F2N8O9S2",
+   "mw": "814.80",
+   "note": {
+    "en": "Triazole antifungal, water-soluble prodrug of isavuconazole",
+    "fa": "ضدقارچ تری‌آزولی، پیش‌داروی محلول در آب ایزاووکونازول"
+   },
+   "synonyms": "ایزاووکونازونیوم سولفات"
+  },
+  {
    "name": "Itraconazole",
    "cas": "84625-61-6",
    "group": "afp",
@@ -2268,7 +2503,8 @@
     "en": "Triazole antifungal; practically insoluble in water, BCS II, needs solid dispersion",
     "fa": "ضدقارچ تری‌آزولی؛ تقریباً نامحلول در آب، ⁦BCS II⁩، نیازمند پراکندگی جامد"
    },
-   "synonyms": "ایتراکونازول"
+   "synonyms": "ایتراکونازول",
+   "bcs": "2"
   },
   {
    "name": "Ivermectin",
@@ -2292,7 +2528,8 @@
     "en": "Imidazole antifungal; practically insoluble in water, acid needed for dissolution",
     "fa": "ضدقارچ ایمیدازولی؛ تقریباً نامحلول در آب، انحلال وابسته به محیط اسیدی"
    },
-   "synonyms": "کتوکونازول"
+   "synonyms": "کتوکونازول",
+   "bcs": "2"
   },
   {
    "name": "Levamisole hydrochloride",
@@ -2328,7 +2565,8 @@
     "en": "Benzimidazole anthelmintic; practically insoluble, polymorphism (form C preferred)",
     "fa": "ضدکرم بنزیمیدازولی؛ تقریباً نامحلول در آب، پلی‌مورفیسم (فرم C مطلوب)"
    },
-   "synonyms": "مبندازول"
+   "synonyms": "مبندازول",
+   "bcs": "2"
   },
   {
    "name": "Mefloquine hydrochloride",
@@ -2365,6 +2603,18 @@
     "fa": "ضدقارچ ایمیدازولی (موضعی/ژل خوراکی)؛ بسیار کم‌محلول در آب"
    },
    "synonyms": "میکونازول نیترات, میکونازول"
+  },
+  {
+   "name": "Miltefosine",
+   "cas": "58066-85-6",
+   "group": "afp",
+   "formula": "C21H46NO4P",
+   "mw": "407.60",
+   "note": {
+    "en": "Oral alkylphosphocholine for leishmaniasis",
+    "fa": "آلکیل‌فسفوکولین خوراکی برای لیشمانیوز"
+   },
+   "synonyms": "میلتفوسین"
   },
   {
    "name": "Natamycin",
@@ -2448,7 +2698,8 @@
     "en": "Triazole antifungal; practically insoluble in water, BCS II, polymorphism",
     "fa": "ضدقارچ تری‌آزولی؛ تقریباً نامحلول در آب، ⁦BCS II⁩، پلی‌مورفیسم"
    },
-   "synonyms": "پوساکونازول"
+   "synonyms": "پوساکونازول",
+   "bcs": "2"
   },
   {
    "name": "Praziquantel",
@@ -2460,7 +2711,8 @@
     "en": "Anthelmintic (schistosomes, tapeworms); very slightly soluble in water, bitter",
     "fa": "ضدکرم (شیستوزوما، کرم‌های نواری)؛ بسیار کم‌محلول در آب، تلخ"
    },
-   "synonyms": "پرازیکوانتل"
+   "synonyms": "پرازیکوانتل",
+   "bcs": "2"
   },
   {
    "name": "Primaquine diphosphate",
@@ -2472,7 +2724,8 @@
     "en": "8-Aminoquinoline antimalarial; soluble in water, light-sensitive",
     "fa": "ضدمالاریای 8-آمینوکینولینی؛ محلول در آب، حساس به نور"
    },
-   "synonyms": "Primaquine phosphate, پریماکین فسفات, پریماکین"
+   "synonyms": "Primaquine phosphate, پریماکین فسفات, پریماکین",
+   "bcs": "1"
   },
   {
    "name": "Proguanil hydrochloride",
@@ -2521,6 +2774,18 @@
     "fa": "ضدمالاریای گنه‌گنه؛ کم‌محلول در آب، حساس به نور (دی‌هیدرات)"
    },
    "synonyms": "Quinine sulphate dihydrate, کینین سولفات, کینین"
+  },
+  {
+   "name": "Secnidazole",
+   "cas": "3366-95-8",
+   "group": "afp",
+   "formula": "C7H11N3O3",
+   "mw": "185.18",
+   "note": {
+    "en": "Long half-life 5-nitroimidazole (single-dose granules)",
+    "fa": "۵-نیتروایمیدازول با نیمه‌عمر طولانی (گرانول تک‌دوز)"
+   },
+   "synonyms": "سکنیدازول"
   },
   {
    "name": "Terbinafine hydrochloride",
@@ -2628,7 +2893,8 @@
     "en": "Calcium-channel blocker (dihydropyridine); slightly soluble in water; light-sensitive",
     "fa": "مسدودکننده کانال کلسیم (دی‌هیدروپیریدین)؛ کم‌محلول در آب؛ حساس به نور"
    },
-   "synonyms": "Amlodipine besylate, آملودیپین بزیلات, آملودیپین"
+   "synonyms": "Amlodipine besylate, آملودیپین بزیلات, آملودیپین",
+   "bcs": "1"
   },
   {
    "name": "Apixaban",
@@ -2640,7 +2906,8 @@
     "en": "Direct factor Xa inhibitor; practically insoluble in water; BCS III (low dose)",
     "fa": "مهارکننده مستقیم فاکتور Xa؛ تقریباً نامحلول در آب؛ BCS کلاس III (دوز پایین)"
    },
-   "synonyms": "آپیکسابان"
+   "synonyms": "آپیکسابان",
+   "bcs": "3"
   },
   {
    "name": "Atenolol",
@@ -2652,7 +2919,8 @@
     "en": "Cardioselective beta-blocker; sparingly soluble in water; BCS III",
     "fa": "بتابلوکر انتخابی قلبی؛ نسبتاً کم‌محلول در آب؛ BCS کلاس III"
    },
-   "synonyms": "آتنولول"
+   "synonyms": "آتنولول",
+   "bcs": "3"
   },
   {
    "name": "Atorvastatin calcium trihydrate",
@@ -2664,7 +2932,8 @@
     "en": "HMG-CoA reductase inhibitor (statin); very slightly soluble in water; polymorphism",
     "fa": "مهارکننده ⁦HMG-CoA⁩ ردوکتاز (استاتین)؛ بسیار کم‌محلول در آب؛ پلی‌مورفیسم"
    },
-   "synonyms": "آتورواستاتین کلسیم"
+   "synonyms": "آتورواستاتین کلسیم",
+   "bcs": "2"
   },
   {
    "name": "Bisoprolol fumarate",
@@ -2676,7 +2945,8 @@
     "en": "Cardioselective beta-blocker; very soluble in water; BCS I",
     "fa": "بتابلوکر انتخابی قلبی؛ بسیار محلول در آب؛ BCS کلاس I"
    },
-   "synonyms": "Bisoprolol hemifumarate, بیزوپرولول فومارات, بیزوپرولول"
+   "synonyms": "Bisoprolol hemifumarate, بیزوپرولول فومارات, بیزوپرولول",
+   "bcs": "1"
   },
   {
    "name": "Bosentan",
@@ -2724,7 +2994,8 @@
     "en": "Angiotensin II receptor blocker (ester prodrug); practically insoluble in water; BCS II",
     "fa": "مسدودکننده گیرنده آنژیوتانسین II (پیش‌داروی استری)؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "کاندسارتان سیلکستیل, کاندسارتان"
+   "synonyms": "کاندسارتان سیلکستیل, کاندسارتان",
+   "bcs": "2"
   },
   {
    "name": "Captopril",
@@ -2736,7 +3007,8 @@
     "en": "ACE inhibitor; freely soluble in water; thiol oxidises to captopril disulfide",
     "fa": "مهارکننده ACE؛ آزادانه محلول در آب؛ اکسیداسیون گروه تیول به دی‌سولفید کاپتوپریل"
    },
-   "synonyms": "کاپتوپریل"
+   "synonyms": "کاپتوپریل",
+   "bcs": "3"
   },
   {
    "name": "Carvedilol",
@@ -2748,7 +3020,8 @@
     "en": "Beta-blocker with alpha1-blockade; practically insoluble in water; BCS II; polymorphism",
     "fa": "بتابلوکر با اثر مسدودکنندگی آلفا-1؛ تقریباً نامحلول در آب؛ BCS کلاس II؛ پلی‌مورفیسم"
    },
-   "synonyms": "کارودیلول"
+   "synonyms": "کارودیلول",
+   "bcs": "2"
   },
   {
    "name": "Chlortalidone",
@@ -2772,7 +3045,8 @@
     "en": "PDE3 inhibitor antiplatelet/vasodilator; practically insoluble in water; BCS II",
     "fa": "ضدپلاکت و گشادکننده عروق مهارکننده ⁦PDE3⁩؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "سیلوستازول"
+   "synonyms": "سیلوستازول",
+   "bcs": "2"
   },
   {
    "name": "Clonidine hydrochloride",
@@ -2796,7 +3070,8 @@
     "en": "P2Y12 antiplatelet (prodrug); polymorphism (forms I/II); soluble at pH 1, insoluble at pH 7",
     "fa": "ضدپلاکت ⁦P2Y12⁩ (پیش‌دارو)؛ پلی‌مورفیسم (فرم I و II)؛ محلول در ⁦pH 1⁩، تقریباً نامحلول در pH خنثی"
    },
-   "synonyms": "Clopidogrel bisulfate, کلوپیدوگرل بی‌سولفات, کلوپیدوگرل"
+   "synonyms": "Clopidogrel bisulfate, کلوپیدوگرل بی‌سولفات, کلوپیدوگرل",
+   "bcs": "2"
   },
   {
    "name": "Dabigatran etexilate mesilate",
@@ -2832,7 +3107,8 @@
     "en": "Calcium-channel blocker (benzothiazepine); freely soluble in water; hydrolyses to desacetyl",
     "fa": "مسدودکننده کانال کلسیم (بنزوتیازپین)؛ آزادانه محلول در آب؛ هیدرولیز به دِاستیل‌دیلتیازم"
    },
-   "synonyms": "Diltiazem HCl, دیلتیازم هیدروکلراید, دیلتیازم"
+   "synonyms": "Diltiazem HCl, دیلتیازم هیدروکلراید, دیلتیازم",
+   "bcs": "1"
   },
   {
    "name": "Dipyridamole",
@@ -2883,6 +3159,18 @@
    "synonyms": "Doxazosin mesylate, دوکسازوسین مزیلات, دوکسازوسین"
   },
   {
+   "name": "Edoxaban tosylate",
+   "cas": "480449-71-6",
+   "group": "cv",
+   "formula": "C31H38ClN7O7S2",
+   "mw": "720.30",
+   "note": {
+    "en": "Direct factor Xa inhibitor (oral anticoagulant)",
+    "fa": "مهارکننده مستقیم فاکتور Xa (ضدانعقاد خوراکی)"
+   },
+   "synonyms": "ادوکسابان"
+  },
+  {
    "name": "Enalapril maleate",
    "cas": "76095-16-4",
    "group": "cv",
@@ -2892,7 +3180,8 @@
     "en": "ACE inhibitor (prodrug); sparingly soluble in water; degrades to enalaprilat/diketopiperazine",
     "fa": "مهارکننده ACE (پیش‌دارو)؛ نسبتاً کم‌محلول در آب؛ تخریب به انالاپریلات و دی‌کتوپیپرازین"
    },
-   "synonyms": "انالاپریل مالئات, انالاپریل"
+   "synonyms": "انالاپریل مالئات, انالاپریل",
+   "bcs": "3"
   },
   {
    "name": "Eplerenone",
@@ -2928,7 +3217,8 @@
     "en": "Cholesterol absorption inhibitor; practically insoluble in water; BCS II",
     "fa": "مهارکننده جذب کلسترول؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "ازتیمایب"
+   "synonyms": "ازتیمایب",
+   "bcs": "2"
   },
   {
    "name": "Felodipine",
@@ -2940,7 +3230,8 @@
     "en": "Calcium-channel blocker (dihydropyridine); practically insoluble in water; BCS II",
     "fa": "مسدودکننده کانال کلسیم (دی‌هیدروپیریدین)؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "فلودیپین"
+   "synonyms": "فلودیپین",
+   "bcs": "2"
   },
   {
    "name": "Fenofibrate",
@@ -2952,7 +3243,8 @@
     "en": "Fibrate (PPAR-alpha agonist); practically insoluble in water; BCS II; micronised/nanosized",
     "fa": "فیبرات (آگونیست PPAR-آلفا)؛ تقریباً نامحلول در آب؛ BCS کلاس II؛ به‌صورت میکرونیزه/نانو"
    },
-   "synonyms": "فنوفیبرات"
+   "synonyms": "فنوفیبرات",
+   "bcs": "2"
   },
   {
    "name": "Fosinopril sodium",
@@ -2976,7 +3268,8 @@
     "en": "Loop diuretic; practically insoluble in water; light-sensitive; BCS IV",
     "fa": "دیورتیک لوپ؛ تقریباً نامحلول در آب؛ حساس به نور؛ BCS کلاس IV"
    },
-   "synonyms": "Frusemide, فوروزماید, فوروسماید"
+   "synonyms": "Frusemide, فوروزماید, فوروسماید",
+   "bcs": "4"
   },
   {
    "name": "Gemfibrozil",
@@ -2988,7 +3281,8 @@
     "en": "Fibrate lipid regulator; practically insoluble in water; BCS II; low melting point",
     "fa": "فیبرات تنظیم‌کننده چربی خون؛ تقریباً نامحلول در آب؛ BCS کلاس II؛ نقطه ذوب پایین"
    },
-   "synonyms": "جم‌فیبروزیل"
+   "synonyms": "جم‌فیبروزیل",
+   "bcs": "2"
   },
   {
    "name": "Glyceryl trinitrate",
@@ -3048,7 +3342,8 @@
     "en": "Angiotensin II receptor blocker; practically insoluble in water; BCS II; polymorphism",
     "fa": "مسدودکننده گیرنده آنژیوتانسین II؛ تقریباً نامحلول در آب؛ BCS کلاس II؛ پلی‌مورفیسم"
    },
-   "synonyms": "ایربسارتان"
+   "synonyms": "ایربسارتان",
+   "bcs": "2"
   },
   {
    "name": "Isosorbide dinitrate",
@@ -3108,7 +3403,8 @@
     "en": "Alpha/beta-blocker; sparingly soluble in water",
     "fa": "مسدودکننده آلفا و بتا؛ نسبتاً کم‌محلول در آب"
    },
-   "synonyms": "Labetalol HCl, لابتالول هیدروکلراید, لابتالول"
+   "synonyms": "Labetalol HCl, لابتالول هیدروکلراید, لابتالول",
+   "bcs": "1"
   },
   {
    "name": "Lisinopril dihydrate",
@@ -3120,7 +3416,8 @@
     "en": "ACE inhibitor; soluble in water; BCS III",
     "fa": "مهارکننده ACE؛ محلول در آب؛ BCS کلاس III"
    },
-   "synonyms": "Lisinopril, لیزینوپریل"
+   "synonyms": "Lisinopril, لیزینوپریل",
+   "bcs": "3"
   },
   {
    "name": "Losartan potassium",
@@ -3168,7 +3465,8 @@
     "en": "Cardioselective beta-blocker; freely soluble in water; used in extended-release tablets",
     "fa": "بتابلوکر انتخابی قلبی؛ آزادانه محلول در آب؛ مورد مصرف در قرص‌های آهسته‌رهش"
    },
-   "synonyms": "متوپرولول سوکسینات, متوپرولول"
+   "synonyms": "متوپرولول سوکسینات, متوپرولول",
+   "bcs": "1"
   },
   {
    "name": "Metoprolol tartrate",
@@ -3180,7 +3478,8 @@
     "en": "Cardioselective beta-blocker; very soluble in water; BCS I",
     "fa": "بتابلوکر انتخابی قلبی؛ بسیار محلول در آب؛ BCS کلاس I"
    },
-   "synonyms": "متوپرولول تارترات, متوپرولول"
+   "synonyms": "متوپرولول تارترات, متوپرولول",
+   "bcs": "1"
   },
   {
    "name": "Mexiletine hydrochloride",
@@ -3264,7 +3563,8 @@
     "en": "Calcium-channel blocker (dihydropyridine); practically insoluble in water; very light-sensitive",
     "fa": "مسدودکننده کانال کلسیم (دی‌هیدروپیریدین)؛ تقریباً نامحلول در آب؛ بسیار حساس به نور"
    },
-   "synonyms": "نیفدیپین"
+   "synonyms": "نیفدیپین",
+   "bcs": "2"
   },
   {
    "name": "Nimodipine",
@@ -3288,7 +3588,8 @@
     "en": "Angiotensin II receptor blocker (ester prodrug); practically insoluble in water; BCS II",
     "fa": "مسدودکننده گیرنده آنژیوتانسین II (پیش‌داروی استری)؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "اولمسارتان مدوکسومیل, اولمسارتان"
+   "synonyms": "اولمسارتان مدوکسومیل, اولمسارتان",
+   "bcs": "2"
   },
   {
    "name": "Pentoxifylline",
@@ -3384,7 +3685,8 @@
     "en": "Non-selective beta-blocker; soluble in water; BCS I; light-sensitive",
     "fa": "بتابلوکر غیرانتخابی؛ محلول در آب؛ BCS کلاس I؛ حساس به نور"
    },
-   "synonyms": "Propranolol HCl, پروپرانولول هیدروکلراید, پروپرانولول"
+   "synonyms": "Propranolol HCl, پروپرانولول هیدروکلراید, پروپرانولول",
+   "bcs": "1"
   },
   {
    "name": "Ramipril",
@@ -3420,7 +3722,8 @@
     "en": "Direct factor Xa inhibitor; practically insoluble in water; BCS II; polymorphism",
     "fa": "مهارکننده مستقیم فاکتور Xa؛ تقریباً نامحلول در آب؛ BCS کلاس II؛ پلی‌مورفیسم"
    },
-   "synonyms": "ریواروکسابان"
+   "synonyms": "ریواروکسابان",
+   "bcs": "2"
   },
   {
    "name": "Rosuvastatin calcium",
@@ -3459,6 +3762,18 @@
    "synonyms": "سیلدنافیل سیترات, سیلدنافیل"
   },
   {
+   "name": "Silodosin",
+   "cas": "160970-54-7",
+   "group": "cv",
+   "formula": "C25H32F3N3O4",
+   "mw": "495.50",
+   "note": {
+    "en": "Selective alpha-1A blocker for benign prostatic hyperplasia",
+    "fa": "آلفا-۱A بلاکر انتخابی برای هیپرپلازی خوش‌خیم پروستات"
+   },
+   "synonyms": "سیلودوسین"
+  },
+  {
    "name": "Simvastatin",
    "cas": "79902-63-9",
    "group": "cv",
@@ -3468,7 +3783,8 @@
     "en": "Statin (lactone prodrug); practically insoluble in water; oxidation-sensitive",
     "fa": "استاتین (پیش‌داروی لاکتونی)؛ تقریباً نامحلول در آب؛ حساس به اکسیداسیون"
    },
-   "synonyms": "سیمواستاتین"
+   "synonyms": "سیمواستاتین",
+   "bcs": "2"
   },
   {
    "name": "Sodium nitroprusside",
@@ -3492,7 +3808,8 @@
     "en": "Beta-blocker with class III antiarrhythmic action; freely soluble in water; QT prolongation",
     "fa": "بتابلوکر با اثر ضدآریتمی کلاس III؛ آزادانه محلول در آب؛ طولانی‌کردن QT"
    },
-   "synonyms": "Sotalol HCl, سوتالول هیدروکلراید, سوتالول"
+   "synonyms": "Sotalol HCl, سوتالول هیدروکلراید, سوتالول",
+   "bcs": "1"
   },
   {
    "name": "Spironolactone",
@@ -3504,7 +3821,8 @@
     "en": "Aldosterone antagonist (K-sparing diuretic); practically insoluble in water; polymorphism",
     "fa": "آنتاگونیست آلدوسترون (دیورتیک نگهدارنده پتاسیم)؛ تقریباً نامحلول در آب؛ پلی‌مورفیسم"
    },
-   "synonyms": "اسپیرونولاکتون"
+   "synonyms": "اسپیرونولاکتون",
+   "bcs": "2"
   },
   {
    "name": "Telmisartan",
@@ -3516,7 +3834,8 @@
     "en": "Angiotensin II receptor blocker; practically insoluble in water; BCS II; polymorphism",
     "fa": "مسدودکننده گیرنده آنژیوتانسین II؛ تقریباً نامحلول در آب؛ BCS کلاس II؛ پلی‌مورفیسم"
    },
-   "synonyms": "تلمیسارتان"
+   "synonyms": "تلمیسارتان",
+   "bcs": "2"
   },
   {
    "name": "Terazosin hydrochloride dihydrate",
@@ -3540,7 +3859,8 @@
     "en": "Reversible P2Y12 antiplatelet; practically insoluble in water; BCS IV; polymorphism",
     "fa": "ضدپلاکت برگشت‌پذیر ⁦P2Y12⁩؛ تقریباً نامحلول در آب؛ BCS کلاس IV؛ پلی‌مورفیسم"
    },
-   "synonyms": "تیکاگرلور"
+   "synonyms": "تیکاگرلور",
+   "bcs": "4"
   },
   {
    "name": "Torasemide",
@@ -3553,6 +3873,18 @@
     "fa": "دیورتیک لوپ؛ تقریباً نامحلول در آب؛ پلی‌مورفیسم"
    },
    "synonyms": "Torsemide, تورسماید, توراسماید"
+  },
+  {
+   "name": "Tranexamic acid",
+   "cas": "1197-18-8",
+   "group": "cv",
+   "formula": "C8H15NO2",
+   "mw": "157.21",
+   "note": {
+    "en": "Antifibrinolytic (lysine analogue); freely soluble in water",
+    "fa": "ضدفیبرینولیتیک (آنالوگ لیزین)؛ به‌آسانی محلول در آب"
+   },
+   "synonyms": "ترانگزامیک اسید"
   },
   {
    "name": "Triamterene",
@@ -3600,7 +3932,8 @@
     "en": "Calcium-channel blocker (phenylalkylamine); soluble in water; light-sensitive",
     "fa": "مسدودکننده کانال کلسیم (فنیل‌آلکیل‌آمین)؛ محلول در آب؛ حساس به نور"
    },
-   "synonyms": "Verapamil HCl, وراپامیل هیدروکلراید, وراپامیل"
+   "synonyms": "Verapamil HCl, وراپامیل هیدروکلراید, وراپامیل",
+   "bcs": "1"
   },
   {
    "name": "Warfarin sodium",
@@ -3636,7 +3969,8 @@
     "en": "Bisphosphonate; sparingly soluble in water; BCS III; oesophageal irritant",
     "fa": "بیس‌فسفونات؛ نسبتاً کم‌محلول در آب؛ BCS کلاس III؛ محرک مری"
    },
-   "synonyms": "Sodium alendronate, Alendronate sodium, آلندرونات سدیم"
+   "synonyms": "Sodium alendronate, Alendronate sodium, آلندرونات سدیم",
+   "bcs": "3"
   },
   {
    "name": "Alfacalcidol",
@@ -3685,6 +4019,18 @@
     "fa": "فرم فعال ویتامین ⁦D3⁩؛ تقریباً نامحلول در آب؛ حساس به نور و هوا؛ پرقدرت"
    },
    "synonyms": "1,25-Dihydroxycholecalciferol, کلسیتریول"
+  },
+  {
+   "name": "Canagliflozin",
+   "cas": "842133-18-0",
+   "group": "met",
+   "formula": "C24H25FO5S",
+   "mw": "444.50",
+   "note": {
+    "en": "SGLT2 inhibitor",
+    "fa": "مهارکننده SGLT2"
+   },
+   "synonyms": "کاناگلیفلوزین"
   },
   {
    "name": "Chlorpropamide",
@@ -3756,7 +4102,8 @@
     "en": "Sulfonylurea; practically insoluble in water; BCS II; polymorphism",
     "fa": "سولفونیل‌اوره؛ تقریباً نامحلول در آب؛ BCS کلاس II؛ پلی‌مورفیسم"
    },
-   "synonyms": "Glyburide, گلی‌بنکلامید"
+   "synonyms": "Glyburide, گلی‌بنکلامید",
+   "bcs": "2"
   },
   {
    "name": "Gliclazide",
@@ -3768,7 +4115,8 @@
     "en": "Sulfonylurea; practically insoluble in water; BCS II; used in modified-release tablets",
     "fa": "سولفونیل‌اوره؛ تقریباً نامحلول در آب؛ BCS کلاس II؛ مورد مصرف در قرص‌های پیوسته‌رهش"
    },
-   "synonyms": "گلی‌کلازید"
+   "synonyms": "گلی‌کلازید",
+   "bcs": "2"
   },
   {
    "name": "Glimepiride",
@@ -3780,7 +4128,8 @@
     "en": "Sulfonylurea; practically insoluble in water; BCS II; polymorphism",
     "fa": "سولفونیل‌اوره؛ تقریباً نامحلول در آب؛ BCS کلاس II؛ پلی‌مورفیسم"
    },
-   "synonyms": "گلی‌مپراید"
+   "synonyms": "گلی‌مپراید",
+   "bcs": "2"
   },
   {
    "name": "Glipizide",
@@ -3792,7 +4141,8 @@
     "en": "Sulfonylurea; practically insoluble in water; BCS II",
     "fa": "سولفونیل‌اوره؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "گلی‌پیزاید"
+   "synonyms": "گلی‌پیزاید",
+   "bcs": "2"
   },
   {
    "name": "Ibandronate sodium monohydrate",
@@ -3840,7 +4190,8 @@
     "en": "Biguanide antidiabetic; freely soluble in water; BCS class III, poor compressibility",
     "fa": "ضددیابت بیگوانیدی؛ آزادانه محلول در آب؛ BCS کلاس III، تراکم‌پذیری ضعیف"
    },
-   "synonyms": "متفورمین هیدروکلراید"
+   "synonyms": "متفورمین هیدروکلراید",
+   "bcs": "3"
   },
   {
    "name": "Nateglinide",
@@ -3900,7 +4251,8 @@
     "en": "Thiazolidinedione (PPAR-gamma agonist); practically insoluble in water; BCS II",
     "fa": "تیازولیدین‌دیون (آگونیست PPAR-گاما)؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "Pioglitazone HCl, پیوگلیتازون هیدروکلراید, پیوگلیتازون"
+   "synonyms": "Pioglitazone HCl, پیوگلیتازون هیدروکلراید, پیوگلیتازون",
+   "bcs": "2"
   },
   {
    "name": "Raloxifene hydrochloride",
@@ -3912,7 +4264,8 @@
     "en": "SERM for osteoporosis; very slightly soluble in water; BCS II",
     "fa": "تعدیل‌کننده انتخابی گیرنده استروژن (SERM) برای پوکی استخوان؛ بسیار کم‌محلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "Raloxifene HCl, رالوکسیفن هیدروکلراید, رالوکسیفن"
+   "synonyms": "Raloxifene HCl, رالوکسیفن هیدروکلراید, رالوکسیفن",
+   "bcs": "2"
   },
   {
    "name": "Repaglinide",
@@ -3924,7 +4277,8 @@
     "en": "Meglitinide insulin secretagogue; practically insoluble in water; BCS II",
     "fa": "محرک ترشح انسولین از گروه مگلیتینیدها؛ تقریباً نامحلول در آب؛ BCS کلاس II"
    },
-   "synonyms": "رپاگلینید"
+   "synonyms": "رپاگلینید",
+   "bcs": "2"
   },
   {
    "name": "Risedronate sodium hemipentahydrate",
@@ -3937,6 +4291,18 @@
     "fa": "بیس‌فسفونات؛ محلول در آب؛ اشکال هیدراته (⁦2.5⁩-هیدرات، مونوهیدرات)"
    },
    "synonyms": "Risedronate sodium 2.5-hydrate, Sodium risedronate, ریزدرونات سدیم"
+  },
+  {
+   "name": "Saxagliptin hydrochloride",
+   "cas": "709031-78-7",
+   "group": "met",
+   "formula": "C18H26ClN3O2",
+   "mw": "351.90",
+   "note": {
+    "en": "DPP-4 inhibitor",
+    "fa": "مهارکننده DPP-4"
+   },
+   "synonyms": "ساکساگلیپتین"
   },
   {
    "name": "Semaglutide",
@@ -4044,7 +4410,8 @@
     "en": "Tricyclic antidepressant; freely soluble in water",
     "fa": "ضدافسردگی سه‌حلقه‌ای؛ آزادانه محلول در آب"
    },
-   "synonyms": "آمی‌تریپتیلین هیدروکلراید, آمی‌تریپتیلین, Amitriptyline HCl"
+   "synonyms": "آمی‌تریپتیلین هیدروکلراید, آمی‌تریپتیلین, Amitriptyline HCl",
+   "bcs": "1"
   },
   {
    "name": "Aripiprazole",
@@ -4107,6 +4474,18 @@
    "synonyms": "بی‌پریدن هیدروکلراید, بی‌پریدن, Biperiden HCl"
   },
   {
+   "name": "Brivaracetam",
+   "cas": "357336-20-0",
+   "group": "cns",
+   "formula": "C11H20N2O2",
+   "mw": "212.29",
+   "note": {
+    "en": "SV2A ligand antiepileptic (levetiracetam analogue)",
+    "fa": "ضدصرع لیگاند SV2A (آنالوگ لوتیراستام)"
+   },
+   "synonyms": "بریواراستام"
+  },
+  {
    "name": "Bromazepam",
    "cas": "1812-30-2",
    "group": "cns",
@@ -4152,7 +4531,8 @@
     "en": "Antiepileptic; very slightly soluble in water; polymorphism; BCS class II",
     "fa": "ضدصرع؛ بسیار کم‌محلول در آب؛ پلی‌مورفیسم؛ BCS کلاس II"
    },
-   "synonyms": "کاربامازپین"
+   "synonyms": "کاربامازپین",
+   "bcs": "2"
   },
   {
    "name": "Carbidopa",
@@ -4287,6 +4667,30 @@
    "synonyms": "دزیپرامین هیدروکلراید, دزیپرامین, Desipramine HCl"
   },
   {
+   "name": "Desvenlafaxine succinate",
+   "cas": "386750-22-7",
+   "group": "cns",
+   "formula": "C20H33NO7",
+   "mw": "399.50",
+   "note": {
+    "en": "SNRI antidepressant (O-desmethylvenlafaxine); extended-release",
+    "fa": "ضدافسردگی SNRI (او-دس‌متیل‌ونلافاکسین)؛ پیوسته‌رهش"
+   },
+   "synonyms": "دسونلافاکسین"
+  },
+  {
+   "name": "Dexmedetomidine hydrochloride",
+   "cas": "145108-58-3",
+   "group": "cns",
+   "formula": "C13H17ClN2",
+   "mw": "236.74",
+   "note": {
+    "en": "Alpha-2 agonist for ICU and procedural sedation (parenteral)",
+    "fa": "آگونیست آلفا-۲ برای آرام‌بخشی در ICU و حین عمل (تزریقی)"
+   },
+   "synonyms": "دکسمدتومیدین"
+  },
+  {
    "name": "Diazepam",
    "cas": "439-14-5",
    "group": "cns",
@@ -4381,6 +4785,18 @@
     "fa": "ضدافسردگی SSRI (انانتیومر S)؛ نسبتاً کم‌محلول در آب"
    },
    "synonyms": "اس‌سیتالوپرام اگزالات, اس‌سیتالوپرام, Escitalopram"
+  },
+  {
+   "name": "Eslicarbazepine acetate",
+   "cas": "236395-14-5",
+   "group": "cns",
+   "formula": "C17H16N2O3",
+   "mw": "296.32",
+   "note": {
+    "en": "Antiepileptic, prodrug of eslicarbazepine",
+    "fa": "ضدصرع، پیش‌داروی اسلی‌کاربازپین"
+   },
+   "synonyms": "اسلی‌کاربازپین استات"
   },
   {
    "name": "Ethosuximide",
@@ -4560,7 +4976,8 @@
     "en": "Antiepileptic (SV2A ligand); very soluble in water; BCS class I",
     "fa": "ضدصرع (لیگاند ⁦SV2A⁩)؛ بسیار محلول در آب؛ BCS کلاس I"
    },
-   "synonyms": "لوتیراستام"
+   "synonyms": "لوتیراستام",
+   "bcs": "1"
   },
   {
    "name": "Levodopa",
@@ -4597,6 +5014,18 @@
     "fa": "بنزودیازپین ضداضطراب؛ تقریباً نامحلول در آب؛ حساس به نور"
    },
    "synonyms": "لورازپام"
+  },
+  {
+   "name": "Lurasidone hydrochloride",
+   "cas": "367514-88-3",
+   "group": "cns",
+   "formula": "C28H37ClN4O2S",
+   "mw": "529.10",
+   "note": {
+    "en": "Atypical antipsychotic; take with food; CYP3A4 substrate",
+    "fa": "آنتی‌سایکوتیک آتیپیک؛ همراه غذا؛ سوبسترای CYP3A4"
+   },
+   "synonyms": "لوراسیدون"
   },
   {
    "name": "Maprotiline hydrochloride",
@@ -4755,6 +5184,18 @@
    "synonyms": "اکس‌کاربازپین"
   },
   {
+   "name": "Paliperidone",
+   "cas": "144598-75-4",
+   "group": "cns",
+   "formula": "C23H27FN4O3",
+   "mw": "426.50",
+   "note": {
+    "en": "Atypical antipsychotic (9-hydroxyrisperidone); extended-release and depot forms",
+    "fa": "آنتی‌سایکوتیک آتیپیک (۹-هیدروکسی‌ریسپریدون)؛ فرم‌های پیوسته‌رهش و دپو"
+   },
+   "synonyms": "پالیپریدون"
+  },
+  {
    "name": "Paroxetine hydrochloride hemihydrate",
    "cas": "110429-35-1",
    "group": "cns",
@@ -4765,6 +5206,18 @@
     "fa": "ضدافسردگی SSRI؛ کم‌محلول در آب؛ پلی‌مورفیسم (بی‌آب/همی‌هیدرات)"
    },
    "synonyms": "پاروکستین هیدروکلراید همی‌هیدرات, پاروکستین, Paroxetine HCl"
+  },
+  {
+   "name": "Perampanel",
+   "cas": "380917-97-5",
+   "group": "cns",
+   "formula": "C23H15N3O",
+   "mw": "349.40",
+   "note": {
+    "en": "AMPA-receptor antagonist antiepileptic",
+    "fa": "ضدصرع آنتاگونیست گیرنده AMPA"
+   },
+   "synonyms": "پرامپانل"
   },
   {
    "name": "Perphenazine",
@@ -4788,7 +5241,8 @@
     "en": "Barbiturate antiepileptic; very slightly soluble in water; polymorphism",
     "fa": "ضدصرع باربیتوراتی؛ بسیار کم‌محلول در آب؛ پلی‌مورفیسم"
    },
-   "synonyms": "فنوباربیتال, Phenobarbitone"
+   "synonyms": "فنوباربیتال, Phenobarbitone",
+   "bcs": "1"
   },
   {
    "name": "Phenobarbital sodium",
@@ -4812,7 +5266,8 @@
     "en": "Hydantoin antiepileptic; practically insoluble in water; narrow therapeutic index",
     "fa": "ضدصرع هیدانتوئینی؛ تقریباً نامحلول در آب؛ شاخص درمانی باریک"
    },
-   "synonyms": "فنی‌توئین, Diphenylhydantoin"
+   "synonyms": "فنی‌توئین, Diphenylhydantoin",
+   "bcs": "2"
   },
   {
    "name": "Phenytoin sodium",
@@ -4872,7 +5327,8 @@
     "en": "Gabapentinoid antiepileptic/neuropathic pain; BCS class I",
     "fa": "ضدصرع گاباپنتینوئیدی و درد نوروپاتیک؛ BCS کلاس I"
    },
-   "synonyms": "پرگابالین"
+   "synonyms": "پرگابالین",
+   "bcs": "1"
   },
   {
    "name": "Primidone",
@@ -4896,7 +5352,8 @@
     "en": "Cholinesterase inhibitor (myasthenia gravis); very soluble in water; hygroscopic",
     "fa": "مهارکننده کولین‌استراز (میاستنی گراویس)؛ بسیار محلول در آب؛ جاذب رطوبت"
    },
-   "synonyms": "پیریدوستیگمین بروماید, پیریدوستیگمین"
+   "synonyms": "پیریدوستیگمین بروماید, پیریدوستیگمین",
+   "bcs": "3"
   },
   {
    "name": "Quetiapine fumarate",
@@ -4969,6 +5426,18 @@
     "fa": "آگونیست دوپامین غیرارگوتی؛ پرقدرت (دوز پایین)"
    },
    "synonyms": "روپینیرول هیدروکلراید, روپینیرول, Ropinirole HCl"
+  },
+  {
+   "name": "Safinamide mesylate",
+   "cas": "202825-46-5",
+   "group": "cns",
+   "formula": "C18H23FN2O5S",
+   "mw": "398.50",
+   "note": {
+    "en": "MAO-B inhibitor for Parkinson's disease",
+    "fa": "مهارکننده MAO-B برای پارکینسون"
+   },
+   "synonyms": "سافینامید"
   },
   {
    "name": "Selegiline hydrochloride",
@@ -5115,6 +5584,18 @@
    "synonyms": "والپروئیک اسید, اسید والپروئیک"
   },
   {
+   "name": "Varenicline tartrate",
+   "cas": "375815-87-5",
+   "group": "cns",
+   "formula": "C17H19N3O6",
+   "mw": "361.30",
+   "note": {
+    "en": "Partial nicotinic agonist for smoking cessation",
+    "fa": "آگونیست نسبی نیکوتینی برای ترک سیگار"
+   },
+   "synonyms": "وارنیکلین"
+  },
+  {
    "name": "Venlafaxine hydrochloride",
    "cas": "99300-78-4",
    "group": "cns",
@@ -5137,6 +5618,18 @@
     "fa": "ضدافسردگی سروتونرژیک چندوجهی؛ پلی‌مورفیسم"
    },
    "synonyms": "ورتیوکستین هیدروبروماید, ورتیوکستین, Vortioxetine HBr"
+  },
+  {
+   "name": "Ziprasidone hydrochloride",
+   "cas": "122883-93-6",
+   "group": "cns",
+   "formula": "C21H22Cl2N4OS",
+   "mw": "449.40",
+   "note": {
+    "en": "Atypical antipsychotic; take with food; QT prolongation",
+    "fa": "آنتی‌سایکوتیک آتیپیک؛ همراه غذا؛ طولانی‌شدن QT"
+   },
+   "synonyms": "زیپراسیدون"
   },
   {
    "name": "Zolpidem tartrate",
@@ -5196,7 +5689,8 @@
     "en": "H2-receptor antagonist; slightly soluble in water; polymorphism",
     "fa": "آنتاگونیست گیرنده ⁦H2⁩؛ کم‌محلول در آب؛ پلی‌مورفیسم"
    },
-   "synonyms": "سایمتیدین, سایمِتیدین"
+   "synonyms": "سایمتیدین, سایمِتیدین",
+   "bcs": "3"
   },
   {
    "name": "Clidinium bromide",
@@ -5268,7 +5762,8 @@
     "en": "Prokinetic/antiemetic (D2 antagonist); practically insoluble in water; BCS II",
     "fa": "پروکینتیک و ضدتهوع (آنتاگونیست ⁦D2⁩)؛ تقریباً نامحلول در آب؛ ⁦BCS II⁩"
    },
-   "synonyms": "دومپریدون"
+   "synonyms": "دومپریدون",
+   "bcs": "2"
   },
   {
    "name": "Drotaverine hydrochloride",
@@ -5427,6 +5922,18 @@
    "synonyms": "Metoclopramide hydrochloride, متوکلوپرامید هیدروکلراید, متوکلوپرامید"
   },
   {
+   "name": "Mirabegron",
+   "cas": "223673-61-8",
+   "group": "gi",
+   "formula": "C21H24N4O2S",
+   "mw": "396.50",
+   "note": {
+    "en": "Beta-3 agonist for overactive bladder; extended-release",
+    "fa": "آگونیست بتا-۳ برای مثانه بیش‌فعال؛ پیوسته‌رهش"
+   },
+   "synonyms": "میرابگرون"
+  },
+  {
    "name": "Misoprostol",
    "cas": "59122-46-2",
    "group": "gi",
@@ -5535,6 +6042,19 @@
    "synonyms": "Acetorphan, راسکادوتریل"
   },
   {
+   "name": "Ranitidine hydrochloride",
+   "cas": "66357-59-3",
+   "group": "gi",
+   "formula": "C13H23ClN4O3S",
+   "mw": "350.87",
+   "note": {
+    "en": "H2 antagonist; withdrawn in many markets since 2020 over NDMA impurity",
+    "fa": "آنتاگونیست H2؛ از ۲۰۲۰ در بسیاری از بازارها به دلیل ناخالصی NDMA جمع‌آوری شده"
+   },
+   "synonyms": "رانیتیدین هیدروکلراید",
+   "bcs": "3"
+  },
+  {
    "name": "Sodium picosulfate",
    "cas": "10040-45-6",
    "group": "gi",
@@ -5641,6 +6161,18 @@
     "fa": "آنتی‌هیستامین ⁦H1⁩ بینی و چشمی؛ نسبتاً کم‌محلول در آب؛ تلخ"
    },
    "synonyms": "آزلاستین هیدروکلراید, آزلاستین"
+  },
+  {
+   "name": "Bilastine",
+   "cas": "202189-78-4",
+   "group": "res",
+   "formula": "C28H37N3O3",
+   "mw": "463.60",
+   "note": {
+    "en": "Second-generation non-sedating H1 antihistamine",
+    "fa": "آنتی‌هیستامین H1 نسل دوم بدون خواب‌آلودگی"
+   },
+   "synonyms": "بیلاستین"
   },
   {
    "name": "Bromhexine hydrochloride",
@@ -5904,7 +6436,8 @@
     "en": "Non-sedating H1 antihistamine; practically insoluble in water; BCS II",
     "fa": "آنتی‌هیستامین ⁦H1⁩ غیرخواب‌آور؛ تقریباً نامحلول در آب؛ ⁦BCS II⁩"
    },
-   "synonyms": "لوراتادین"
+   "synonyms": "لوراتادین",
+   "bcs": "2"
   },
   {
    "name": "Montelukast sodium",
@@ -5916,7 +6449,8 @@
     "en": "Leukotriene receptor antagonist; hygroscopic, light-sensitive; freely soluble in water",
     "fa": "آنتاگونیست گیرنده لکوترین؛ جاذب رطوبت و حساس به نور؛ آزادانه محلول در آب"
    },
-   "synonyms": "مونته‌لوکاست سدیم, مونته‌لوکاست"
+   "synonyms": "مونته‌لوکاست سدیم, مونته‌لوکاست",
+   "bcs": "2"
   },
   {
    "name": "Naphazoline hydrochloride",
@@ -6207,6 +6741,18 @@
    "synonyms": "کابرگولین"
   },
   {
+   "name": "Carbimazole",
+   "cas": "22232-54-8",
+   "group": "hor",
+   "formula": "C7H10N2O2S",
+   "mw": "186.23",
+   "note": {
+    "en": "Antithyroid prodrug of thiamazole",
+    "fa": "پیش‌داروی ضدتیروئید (تیامازول)"
+   },
+   "synonyms": "کاربیمازول"
+  },
+  {
    "name": "Clobetasol propionate",
    "cas": "25122-46-7",
    "group": "hor",
@@ -6252,7 +6798,8 @@
     "en": "Gonadotrophin inhibitor (endometriosis); practically insoluble in water; BCS II",
     "fa": "مهارکننده گنادوتروپین (اندومتریوز)؛ تقریباً نامحلول در آب؛ ⁦BCS II⁩"
    },
-   "synonyms": "دانازول"
+   "synonyms": "دانازول",
+   "bcs": "2"
   },
   {
    "name": "Deflazacort",
@@ -6265,6 +6812,18 @@
     "fa": "پیش‌داروی گلوکوکورتیکوئید اگزازولینی؛ تقریباً نامحلول در آب"
    },
    "synonyms": "دفلازاکورت"
+  },
+  {
+   "name": "Desmopressin acetate",
+   "cas": "62288-83-9",
+   "group": "hor",
+   "formula": "C48H68N14O14S2",
+   "mw": "1129.30",
+   "note": {
+    "en": "Synthetic vasopressin analogue (peptide); diabetes insipidus, nocturnal enuresis",
+    "fa": "آنالوگ سنتتیک وازوپرسین (پپتید)؛ دیابت بی‌مزه و شب‌ادراری"
+   },
+   "synonyms": "دسموپرسین استات"
   },
   {
    "name": "Desogestrel",
@@ -6373,6 +6932,18 @@
     "fa": "استروژن سنتتیک؛ تقریباً نامحلول در آب؛ بسیار پرقدرت، نیازمند سیستم بسته"
    },
    "synonyms": "Ethinyl estradiol, اتینیل‌استرادیول, اتینیل استرادیول"
+  },
+  {
+   "name": "Etonogestrel",
+   "cas": "54048-10-1",
+   "group": "hor",
+   "formula": "C22H28O2",
+   "mw": "324.50",
+   "note": {
+    "en": "Progestogen for contraceptive implant and vaginal ring",
+    "fa": "پروژستوژن برای ایمپلنت و حلقه واژینال ضدبارداری"
+   },
+   "synonyms": "اتونوژسترل"
   },
   {
    "name": "Fludrocortisone acetate",
@@ -6555,6 +7126,18 @@
    "synonyms": "Methylprednisolone hemisuccinate sodium, متیل‌پردنیزولون سدیم سوکسینات"
   },
   {
+   "name": "Mifepristone",
+   "cas": "84371-65-3",
+   "group": "hor",
+   "formula": "C29H35NO2",
+   "mw": "429.60",
+   "note": {
+    "en": "Antiprogestogen; used with misoprostol",
+    "fa": "آنتی‌پروژسترون؛ همراه میزوپروستول"
+   },
+   "synonyms": "میفپریستون"
+  },
+  {
    "name": "Mometasone furoate",
    "cas": "83919-23-7",
    "group": "hor",
@@ -6612,7 +7195,8 @@
     "en": "Glucocorticoid; very slightly soluble in water; hygroscopic",
     "fa": "گلوکوکورتیکوئید؛ بسیار کم‌محلول در آب؛ جاذب رطوبت"
    },
-   "synonyms": "پردنیزولون"
+   "synonyms": "پردنیزولون",
+   "bcs": "1"
   },
   {
    "name": "Prednisolone acetate",
@@ -6744,7 +7328,8 @@
     "en": "CYP17 inhibitor (prostate cancer); practically insoluble, BCS IV, strong food effect",
     "fa": "مهارکننده ⁦CYP17⁩ (سرطان پروستات)؛ تقریباً نامحلول در آب، ⁦BCS IV⁩، اثر شدید غذا"
    },
-   "synonyms": "آبیراترون استات, آبیراترون"
+   "synonyms": "آبیراترون استات, آبیراترون",
+   "bcs": "4"
   },
   {
    "name": "Anastrozole",
@@ -6757,6 +7342,18 @@
     "fa": "مهارکننده غیراستروئیدی آروماتاز؛ بسیار کم‌محلول در آب، پرقدرت"
    },
    "synonyms": "آناستروزول"
+  },
+  {
+   "name": "Apremilast",
+   "cas": "608141-41-9",
+   "group": "onc",
+   "formula": "C22H24N2O7S",
+   "mw": "460.50",
+   "note": {
+    "en": "PDE4 inhibitor for psoriasis and psoriatic arthritis",
+    "fa": "مهارکننده PDE4 برای پسوریازیس و آرتریت پسوریاتیک"
+   },
+   "synonyms": "آپرمیلاست"
   },
   {
    "name": "Arsenic trioxide",
@@ -6795,6 +7392,18 @@
    "synonyms": "آزاتیوپرین"
   },
   {
+   "name": "Baricitinib",
+   "cas": "1187594-09-7",
+   "group": "onc",
+   "formula": "C16H17N7O2S",
+   "mw": "371.40",
+   "note": {
+    "en": "JAK1/JAK2 inhibitor",
+    "fa": "مهارکننده JAK1/JAK2"
+   },
+   "synonyms": "باریسیتینیب"
+  },
+  {
    "name": "Bendamustine hydrochloride",
    "cas": "3543-75-7",
    "group": "onc",
@@ -6816,7 +7425,8 @@
     "en": "Non-steroidal antiandrogen; practically insoluble in water, BCS II, polymorphism",
     "fa": "آنتی‌آندروژن غیراستروئیدی؛ تقریباً نامحلول در آب، ⁦BCS II⁩، پلی‌مورفیسم"
    },
-   "synonyms": "بیکالوتامید"
+   "synonyms": "بیکالوتامید",
+   "bcs": "2"
   },
   {
    "name": "Bortezomib",
@@ -6841,6 +7451,18 @@
     "fa": "عامل آلکیله‌کننده آلکیل‌سولفونات؛ بسیار کم‌محلول در آب، سایتوتوکسیک؛ نیازمند سیستم بسته"
    },
    "synonyms": "Busulphan, بوسولفان"
+  },
+  {
+   "name": "Calcium folinate",
+   "cas": "1492-18-8",
+   "group": "onc",
+   "formula": "C20H21CaN7O7",
+   "mw": "511.50",
+   "note": {
+    "en": "Folinic acid rescue after methotrexate; with fluorouracil",
+    "fa": "نجات با اسید فولینیک پس از متوترکسات؛ همراه فلوئورویوراسیل"
+   },
+   "synonyms": "کلسیم فولینات (لکوورین)"
   },
   {
    "name": "Capecitabine",
@@ -6900,7 +7522,8 @@
     "en": "Calcineurin-inhibitor immunosuppressant; practically insoluble, narrow therapeutic index",
     "fa": "سرکوبگر ایمنی مهارکننده کلسینورین؛ تقریباً نامحلول در آب، شاخص درمانی باریک"
    },
-   "synonyms": "Cyclosporine, Ciclosporin A, سیکلوسپورین"
+   "synonyms": "Cyclosporine, Ciclosporin A, سیکلوسپورین",
+   "bcs": "2"
   },
   {
    "name": "Cisplatin",
@@ -7020,7 +7643,8 @@
     "en": "Androgen-receptor inhibitor; practically insoluble in water, BCS II",
     "fa": "مهارکننده گیرنده آندروژن؛ تقریباً نامحلول در آب، ⁦BCS II⁩"
    },
-   "synonyms": "انزالوتامید"
+   "synonyms": "انزالوتامید",
+   "bcs": "2"
   },
   {
    "name": "Epirubicin hydrochloride",
@@ -7128,7 +7752,8 @@
     "en": "EGFR kinase inhibitor; practically insoluble above pH 7, BCS II",
     "fa": "مهارکننده کیناز EGFR؛ تقریباً نامحلول در pH بالاتر از 7، ⁦BCS II⁩"
    },
-   "synonyms": "جفیتینیب, ژفیتینیب"
+   "synonyms": "جفیتینیب, ژفیتینیب",
+   "bcs": "2"
   },
   {
    "name": "Gemcitabine hydrochloride",
@@ -7452,7 +8077,8 @@
     "en": "JAK1/JAK2 inhibitor; soluble across pH 1–8, BCS I, high potency",
     "fa": "مهارکننده ⁦JAK1/JAK2⁩؛ محلول در محدوده ⁦pH 1⁩ تا 8، ⁦BCS I⁩، پرقدرت"
    },
-   "synonyms": "روکسولیتینیب فسفات, روکسولیتینیب"
+   "synonyms": "روکسولیتینیب فسفات, روکسولیتینیب",
+   "bcs": "1"
   },
   {
    "name": "Sirolimus",
@@ -7464,7 +8090,8 @@
     "en": "mTOR-inhibitor immunosuppressant; practically insoluble, narrow therapeutic index",
     "fa": "سرکوبگر ایمنی مهارکننده mTOR؛ تقریباً نامحلول در آب، شاخص درمانی باریک"
    },
-   "synonyms": "Rapamycin, سیرولیموس"
+   "synonyms": "Rapamycin, سیرولیموس",
+   "bcs": "2"
   },
   {
    "name": "Sorafenib tosilate",
@@ -7500,7 +8127,8 @@
     "en": "Calcineurin-inhibitor immunosuppressant; practically insoluble, narrow therapeutic index",
     "fa": "سرکوبگر ایمنی مهارکننده کلسینورین؛ تقریباً نامحلول در آب، شاخص درمانی باریک"
    },
-   "synonyms": "Tacrolimus, FK506, تاکرولیموس"
+   "synonyms": "Tacrolimus, FK506, تاکرولیموس",
+   "bcs": "2"
   },
   {
    "name": "Tamoxifen citrate",
@@ -7563,6 +8191,18 @@
    "synonyms": "Thioguanine, 6-Thioguanine, تیوگوانین"
   },
   {
+   "name": "Tofacitinib citrate",
+   "cas": "540737-29-9",
+   "group": "onc",
+   "formula": "C22H28N6O8",
+   "mw": "504.50",
+   "note": {
+    "en": "JAK inhibitor for rheumatoid arthritis and ulcerative colitis",
+    "fa": "مهارکننده JAK برای آرتریت روماتوئید و کولیت اولسراتیو"
+   },
+   "synonyms": "توفاسیتینیب"
+  },
+  {
    "name": "Topotecan hydrochloride",
    "cas": "119413-54-6",
    "group": "onc",
@@ -7620,7 +8260,8 @@
     "en": "Carbonic anhydrase inhibitor; very slightly soluble in water; BCS IV",
     "fa": "مهارکننده کربنیک انیدراز؛ بسیار کم‌محلول در آب؛ ⁦BCS IV⁩"
    },
-   "synonyms": "استازولامید"
+   "synonyms": "استازولامید",
+   "bcs": "4"
   },
   {
    "name": "Adapalene",
@@ -7657,6 +8298,18 @@
     "fa": "مسدودکننده عصبی‌عضلانی غیردپلاریزان؛ نسبتاً کم‌محلول در آب؛ نگهداری در 2 تا 8 درجه"
    },
    "synonyms": "Atracurium besylate, آتراکوریوم بزیلات, آتراکوریوم"
+  },
+  {
+   "name": "Atropine sulfate",
+   "cas": "55-48-1",
+   "group": "api",
+   "formula": "C34H48N2O10S",
+   "mw": "676.80",
+   "note": {
+    "en": "Antimuscarinic; anaesthesia premedication, bradycardia, organophosphate poisoning",
+    "fa": "آنتی‌موسکارینی؛ پیش‌داروی بیهوشی، برادیکاردی و مسمومیت ارگانوفسفره"
+   },
+   "synonyms": "آتروپین سولفات"
   },
   {
    "name": "Azelaic acid",
@@ -7824,7 +8477,8 @@
     "en": "Oral iron chelator; practically insoluble in water; BCS II",
     "fa": "شلاتور خوراکی آهن؛ تقریباً نامحلول در آب؛ ⁦BCS II⁩"
    },
-   "synonyms": "دفرازیروکس"
+   "synonyms": "دفرازیروکس",
+   "bcs": "2"
   },
   {
    "name": "Deferiprone",
@@ -8211,6 +8865,18 @@
    "synonyms": "سولیفناسین سوکسینات, سولیفناسین"
   },
   {
+   "name": "Sugammadex sodium",
+   "cas": "343306-79-6",
+   "group": "api",
+   "formula": "C72H104Na8O48S8",
+   "mw": "2178.00",
+   "note": {
+    "en": "Modified gamma-cyclodextrin reversing rocuronium/vecuronium (parenteral)",
+    "fa": "گاما-سیکلودکسترین تغییریافته برای برگشت اثر روکورونیوم/وکورونیوم (تزریقی)"
+   },
+   "synonyms": "شوگامادکس"
+  },
+  {
    "name": "Suxamethonium chloride",
    "cas": "71-27-2",
    "group": "api",
@@ -8232,7 +8898,8 @@
     "en": "PDE5 inhibitor (ED, BPH, PAH); practically insoluble in water; BCS II",
     "fa": "مهارکننده ⁦PDE5⁩ (اختلال نعوظ، پروستات، فشار خون ریوی)؛ تقریباً نامحلول در آب؛ ⁦BCS II⁩"
    },
-   "synonyms": "تادالافیل"
+   "synonyms": "تادالافیل",
+   "bcs": "2"
   },
   {
    "name": "Tamsulosin hydrochloride",
