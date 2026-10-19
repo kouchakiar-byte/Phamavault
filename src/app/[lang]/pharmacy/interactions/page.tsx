@@ -1,5 +1,5 @@
 import { PageHeader } from "@/components/page-header";
-import { InteractionChecker } from "@/components/pharmacy/interaction-checker";
+import { InteractionChecker, ReferenceCheckers, SeverityScale } from "@/components/pharmacy/interaction-checker";
 import { Container } from "@/components/ui";
 import { interactionsCopy as t, pharmacyPage } from "@/content/pharmacy";
 import { getLocale } from "@/i18n/locale";
@@ -22,6 +22,8 @@ export default async function InteractionsPage() {
       />
       <Container className="space-y-10 py-12">
         <InteractionChecker locale={locale} />
+        <ReferenceCheckers locale={locale} />
+        <SeverityScale locale={locale} />
         <div className="space-y-3 border-t border-line pt-8 text-sm leading-relaxed text-muted">
           <p className="rounded-xl border border-capsule-400/40 bg-capsule-400/10 px-4 py-3 text-ink">
             {t.disclaimer[locale]} {interactionsReviewed[locale]}.
