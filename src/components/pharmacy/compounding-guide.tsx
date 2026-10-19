@@ -55,7 +55,7 @@ export function CompoundingBasics({ locale }: { locale: Locale }) {
             return (
               <article
                 key={topic.key}
-                className="group flex flex-col rounded-card border border-vault-100 bg-vault-50 p-6 transition duration-300 ease-out hover:scale-[0.98] hover:border-capsule-400 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-white hover:shadow-lg hover:shadow-capsule-500/15 motion-reduce:transform-none"
+                className="group flex flex-col rounded-card border border-vault-100 bg-vault-50 p-6 transition duration-300 ease-out hover:scale-[0.98] hover:border-capsule-400 hover:bg-capsule-50 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-white hover:shadow-lg hover:shadow-capsule-500/15 motion-reduce:transform-none"
               >
                 <div className="flex items-center gap-3">
                   <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition group-hover:bg-capsule-500 group-hover:text-vault-950">
@@ -144,7 +144,7 @@ export function CompoundingTables({ locale }: { locale: Locale }) {
         <RefLine refs={g.excipientRefs} />
       </div>
 
-      <div className="rounded-card border border-capsule-400/40 bg-gradient-to-br from-capsule-50 to-white p-6">
+      <div className="rounded-card border border-capsule-400/40 bg-capsule-50 bg-gradient-to-br from-capsule-50 to-white p-6">
         <h3 className="text-lg font-bold text-vault-900">{g.counselTitle[locale]}</h3>
         <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
           {g.counsel.map((c) => (
