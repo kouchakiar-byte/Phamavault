@@ -108,7 +108,7 @@ export function Eli({ ctx }: { ctx: Ctx }) {
       }
       note={bi(
         "USP <85> and Ph. Eur. 2.6.14 / 5.1.10: endotoxin limit = K/M, with K = 5.0 EU/kg (0.2 EU/kg intrathecal) and M the maximum dose per kg of body mass given within one hour (USP takes 70 kg for an average adult). Radiopharmaceuticals: 175/V EU/mL (14/V intrathecal). MVD = endotoxin limit × concentration of the test solution ÷ λ (concentration = 1 when the limit is per mL); MVC = λ × M ÷ K. The test may be run at any dilution up to the MVD; λ is the labelled gel-clot sensitivity or the lowest concentration of the photometric standard curve.",
-        `${ltr("USP <85>")} و ${ltr("Ph. Eur. 2.6.14 / 5.1.10")}: حد اندوتوکسین ${ltr("= K/M")}؛ K برابر ${ltr("5.0 EU/kg")} (اینتراتکال ${ltr("0.2 EU/kg")}) و M حداکثر دوز به ازای هر کیلوگرم وزن بدن که در یک ساعت تجویز می‌شود (USP وزن بزرگسال متوسط را ۷۰ کیلوگرم می‌گیرد). رادیوداروها: ${ltr("175/V EU/mL")} (اینتراتکال ${ltr("14/V")}). ${ltr("MVD = EL × C ÷ λ")} (وقتی حد بر حسب میلی‌لیتر است ${ltr("C = 1")})؛ ${ltr("MVC = λ × M ÷ K")}. آزمون را می‌توان در هر رقتی تا MVD انجام داد؛ λ حساسیت برچسب لیزات در روش ژل‌کلات یا کمترین غلظت منحنی استاندارد در روش فوتومتریک است.`,
+        `${ltr("USP <85>")} و ${ltr("Ph. Eur. 2.6.14 / 5.1.10")}: حد اندوتوکسین ${ltr("= K/M")}؛ K برابر ${ltr("5.0 EU/kg")} (اینتراتکال ${ltr("0.2 EU/kg")}) و M حداکثر دوز به ازای هر کیلوگرم وزن بدن که در یک ساعت تجویز می‌شود (USP وزن متوسط بزرگسال را ۷۰ کیلوگرم در نظر می‌گیرد). رادیوداروها: ${ltr("175/V EU/mL")} (اینتراتکال ${ltr("14/V")}). ${ltr("MVD = EL × C ÷ λ")} (وقتی حد بر حسب میلی‌لیتر است ${ltr("C = 1")})؛ ${ltr("MVC = λ × M ÷ K")}. آزمون را می‌توان در هر رقتی تا MVD انجام داد؛ λ حساسیت برچسب لیزات در روش ژل‌کلات یا کمترین غلظت منحنی استاندارد در روش فوتومتریک است.`,
       )}
     />
   );
@@ -234,7 +234,7 @@ export function Gel({ ctx }: { ctx: Ctx }) {
       note={bi(
         "USP <85> / Ph. Eur. 2.6.14, gel-clot method: the end-point is the lowest concentration in a series of decreasing endotoxin concentrations that gives a firm clot. Geometric mean end-point = antilog(Σ log eᵢ ÷ f) for f replicate series (four in the confirmation of λ). The labelled sensitivity is confirmed, and the product shows no interference, when the geometric mean lies between 0.5λ and 2λ. A negative limit test at dilution d shows less than d × λ EU/mL in the undiluted sample. " +
           listNote.en,
-        `${ltr("USP <85>")} و ${ltr("Ph. Eur. 2.6.14")}، روش ژل‌کلات: نقطه پایانی کمترین غلظت در سری غلظت‌های نزولی اندوتوکسین است که لخته سفت می‌دهد. میانگین هندسی نقطه پایانی ${ltr("= antilog(Σ log eᵢ ÷ f)")} برای f سری تکراری (در تأیید λ چهار سری). اگر میانگین هندسی بین 0.5λ و 2λ باشد، حساسیت برچسب تأیید می‌شود و فرآورده تداخل ندارد. آزمون حدی منفی در رقت d یعنی اندوتوکسین نمونه رقیق‌نشده کمتر از ${ltr("d × λ EU/mL")} است. ${listNote.fa}`,
+        `${ltr("USP <85>")} و ${ltr("Ph. Eur. 2.6.14")}، روش ژل‌کلات: نقطه پایانی کمترین غلظت در سری غلظت‌های نزولی اندوتوکسین است که لخته محکم تشکیل می‌دهد. میانگین هندسی نقطه پایانی ${ltr("= antilog(Σ log eᵢ ÷ f)")} برای f سری تکراری (در تأیید λ چهار سری). اگر میانگین هندسی بین 0.5λ و 2λ باشد، حساسیت برچسب تأیید می‌شود و فرآورده تداخل ندارد. آزمون حدی منفی در رقت d یعنی اندوتوکسین نمونه رقیق‌نشده کمتر از ${ltr("d × λ EU/mL")} است. ${listNote.fa}`,
       )}
     />
   );

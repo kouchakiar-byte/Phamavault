@@ -134,7 +134,7 @@ export const copy = {
         points: [
           bi("QC laboratory and microbiology SOPs: sampling, calibration, water and environmental monitoring", "دستورالعمل‌های آزمایشگاه کنترل کیفیت و میکروبیولوژی: نمونه‌برداری، کالیبراسیون، آب و پایش محیطی"),
           bi("Stability study conditions per ICH Q1A(R2) and validation guidance per ICH Q2(R2)", "شرایط مطالعات پایداری طبق ICH Q1A(R2) و اعتبارسنجی روش طبق ICH Q2(R2)"),
-          bi("Pharmacopoeial acceptance criteria: dissolution, uniformity of dosage units, friability and microbial limits", "معیارهای پذیرش فارماکوپه‌ای: انحلال، یکنواختی واحدهای دارویی، سایش و حدود میکروبی"),
+          bi("Pharmacopoeial acceptance criteria: dissolution, uniformity of dosage units, friability and microbial limits", "معیارهای پذیرش فارماکوپه‌ای: انحلال، یکنواختی واحدهای دارویی، فرسایش‌پذیری و حدود میکروبی"),
         ],
       },
       {
@@ -151,7 +151,7 @@ export const copy = {
         title: bi("Production", "تولید (Production)"),
         points: [
           bi("Production SOPs from dispensing and granulation to tablet coating and line clearance", "دستورالعمل‌های تولید از توزین و گرانولاسیون تا روکش‌دهی قرص و ترخیص خط"),
-          bi("Batch scale-up from unit formula to batch formula with overage", "افزایش مقیاس از فرمول واحد به فرمول بچ با احتساب اضافه‌ساخت"),
+          bi("Batch scale-up from unit formula to batch formula with overage", "افزایش مقیاس از فرمول واحد به فرمول بچ با احتساب مقدار اضافی (Overage)"),
           bi("Handbook chapters on critical process parameters and technology transfer", "فصل‌های هندبوک درباره پارامترهای بحرانی فرآیند و انتقال فناوری"),
         ],
       },
@@ -371,7 +371,7 @@ export const copy = {
     },
     compare: [
       { label: bi("The 10 specialised sections", "۱۰ بخش تخصصی"), values: [true, true, true] },
-      { label: bi("References and pharmacopoeias in pharmacy", "رفرنس‌ها و فارماکوپه‌ها در داروسازی"), values: [true, true, true] },
+      { label: bi("References and pharmacopoeias in pharmacy", "مراجع و فارماکوپه‌ها در داروسازی"), values: [true, true, true] },
       { label: bi("Pharmacy section", "بخش داروخانه"), values: [false, false, true] },
       { label: bi("Supplier & manufacturer bank", "بانک تأمین‌کنندگان و تولیدکنندگان"), values: [true, true, true] },
       { label: bi("Pharmaceutical calculators and formulation tools", "ماشین‌حساب‌های داروسازی و ابزارهای فرمولاسیون"), values: [true, true, true] },
@@ -458,7 +458,7 @@ export const copy = {
         phone: bi("The phone number looks too short.", "شماره تماس کامل نیست."),
         unavailable: bi(
           "The request could not be saved right now. Please call us or email the address below.",
-          "ثبت درخواست الان ممکن نشد. لطفاً تماس بگیرید یا به ایمیل زیر پیام دهید.",
+          "ثبت درخواست در حال حاضر ممکن نشد. لطفاً تماس بگیرید یا به ایمیل زیر پیام دهید.",
         ),
       },
     },
@@ -576,6 +576,6 @@ export const copy = {
       "The page you are looking for does not exist or has been moved.",
       "صفحه‌ای که به دنبال آن هستید وجود ندارد یا منتقل شده است.",
     ),
-    backHome: bi("Back to home", "بازگشت به خانه"),
+    backHome: bi("Back to home", "بازگشت به صفحه اصلی"),
   },
 };

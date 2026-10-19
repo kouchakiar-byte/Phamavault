@@ -23,10 +23,10 @@ export type RefSection = {
 };
 
 export const referencesPage: LegalPage = {
-  title: bi("Pharmaceutical references and pharmacopoeias", "رفرنس‌ها و فارماکوپه‌ها در داروسازی"),
+  title: bi("Pharmaceutical references and pharmacopoeias", "مراجع و فارماکوپه‌ها در داروسازی"),
   lead: bi(
     "The pharmacopoeias, regulatory agencies and drug-information databases used across the pharmaceutical industry — with the edition in force today, the latest edition already published, and a direct link to each official source.",
-    "فارماکوپه‌ها، نهادهای رگولاتوری و پایگاه‌های اطلاعات دارویی مورد استناد در صنعت داروسازی — با ویرایش لازم‌الاجرای فعلی، آخرین ویرایش منتشرشده و لینک مستقیم به منبع رسمی هر رفرنس.",
+    "فارماکوپه‌ها، نهادهای رگولاتوری و پایگاه‌های اطلاعات دارویی مورد استناد در صنعت داروسازی — با ویرایش لازم‌الاجرای فعلی، آخرین ویرایش منتشرشده و لینک مستقیم به منبع رسمی هر مرجع.",
   ),
   sections: [],
 };
@@ -34,15 +34,15 @@ export const referencesPage: LegalPage = {
 export const referencesReviewedOn = bi("Editions last reviewed: October 2026.", "آخرین بازبینی ویرایش‌ها: مهر ۱۴۰۵.");
 export const referencesPaid = bi(
   "Links open the official site in a new tab. The full texts of USP–NF, BP, Ph. Eur. need a subscription; the others are free.",
-  `لینک‌ها سایت رسمی را در تب جدید باز می‌کنند. متن کامل ${ltr("USP–NF")}، ${ltr("BP")} و ${ltr("Ph.\u00a0Eur.")} نیاز به اشتراک دارد؛ بقیه رایگان‌اند.`,
+  `لینک‌ها سایت رسمی را در زبانه جدید باز می‌کنند. متن کامل ${ltr("USP–NF")}، ${ltr("BP")} و ${ltr("Ph.\u00a0Eur.")} نیاز به اشتراک دارد؛ سایر موارد رایگان‌اند.`,
 );
 export const referenceLabels = {
   inForce: bi("In force", "لازم‌الاجرا"),
   latest: bi("Latest published", "آخرین ویرایش منتشرشده"),
   next: bi("Next", "بعدی"),
   links: bi("Official links", "لینک‌های رسمی"),
-  nav: bi("References and pharmacopoeias", "رفرنس‌ها و فارماکوپه‌ها"),
-  short: bi("References", "رفرنس‌ها"),
+  nav: bi("References and pharmacopoeias", "مراجع و فارماکوپه‌ها"),
+  short: bi("References", "مراجع"),
 };
 
 /** The searchable Orange Book at the top of the references page. */
@@ -50,7 +50,7 @@ export const referencesOrangeBook = {
   title: bi("Orange Book — search FDA-approved generic and brand products", "Orange Book — جستجوی داروهای ژنریک و برند تأییدشده FDA"),
   lead: bi(
     "The full FDA Orange Book (Approved Drug Products with Therapeutic Equivalence Evaluations), searchable here. Search by active ingredient or brand name to see every approved product of that ingredient — the reference listed drug and its generics — with strength, dosage form, applicant, application number and therapeutic-equivalence (TE) code. The data are refreshed every month from the FDA data files.",
-    "نسخه کامل Orange Book سازمان غذا و دارو آمریکا (Approved Drug Products with Therapeutic Equivalence Evaluations) که همین‌جا قابل جستجوست. با جستجوی ماده مؤثره یا نام تجاری، همه فرآورده‌های تأییدشده آن ماده — داروی مرجع (RLD) و ژنریک‌های آن — را با قدرت، شکل دارویی، شرکت صاحب مجوز، شماره پرونده و کد هم‌ارزی درمانی (TE) ببینید. داده‌ها هر ماه از فایل‌های رسمی FDA به‌روز می‌شوند.",
+    "نسخه کامل Orange Book سازمان غذا و دارو آمریکا (Approved Drug Products with Therapeutic Equivalence Evaluations) که همین‌جا قابل جستجوست. با جستجوی ماده مؤثره یا نام تجاری، همه فرآورده‌های تأییدشده آن ماده — داروی مرجع (RLD) و ژنریک‌های آن — را با قدرت، شکل دارویی، شرکت صاحب مجوز، شماره پرونده و کد هم‌ارزی درمانی (TE) مشاهده کنید. داده‌ها هر ماه از فایل‌های رسمی FDA به‌روز می‌شوند.",
   ),
   note: bi(
     "TE codes beginning with A are therapeutically equivalent to the reference product (e.g. AB: bioequivalence demonstrated); codes beginning with B are not considered equivalent; a blank code means there is no multisource comparison (single source or OTC monograph). RLD = reference listed drug, the product generics are compared with; RS = reference standard for bioequivalence studies.",
@@ -79,7 +79,7 @@ export const referenceSections: RefSection[] = [
     ],
     text: bi(
       "The legal standard for medicines in the United States. Since 2026 USP–NF Online publishes several issues a year and every chapter or monograph carries its own official date, so check the “official” date of the text you cite.",
-      "استاندارد قانونی دارو در آمریکا. از ۲۰۲۶ نسخه آنلاین USP–NF چند شماره در سال منتشر می‌کند و هر فصل یا مونوگراف تاریخ رسمی شدن خودش را دارد؛ پس تاریخ «رسمی از» متنی را که استناد می‌کنید بررسی کنید.",
+      "استاندارد قانونی دارو در آمریکا. از ۲۰۲۶ نسخه آنلاین USP–NF چند شماره در سال منتشر می‌کند و هر فصل یا مونوگراف تاریخ رسمی‌شدن خاص خود را دارد؛ بنابراین تاریخ «رسمی از» متنی را که استناد می‌کنید بررسی کنید.",
     ),
     links: [
       { label: "USP–NF Online", url: "https://www.uspnf.com/", note: bi("Official texts (subscription)", "متن رسمی (با اشتراک)") },
@@ -101,7 +101,7 @@ export const referenceSections: RefSection[] = [
     ],
     text: bi(
       "Published each August by the MHRA and legally effective from the following 1 January; it reproduces every Ph. Eur. monograph alongside about 4,000 monographs of its own.",
-      "هر سال در ماه اوت از سوی MHRA منتشر و از اول ژانویه سال بعد لازم‌الاجرا می‌شود؛ همه مونوگراف‌های فارماکوپه اروپا را هم در کنار حدود ۴۰۰۰ مونوگراف خودش در بر دارد.",
+      "هر سال در ماه اوت از سوی MHRA منتشر و از اول ژانویه سال بعد لازم‌الاجرا می‌شود؛ همه مونوگراف‌های فارماکوپه اروپا را هم در کنار حدود ۴۰۰۰ مونوگراف خود در بر دارد.",
     ),
     links: [
       { label: "BP 2026 online", url: "https://www.pharmacopoeia.com/", note: bi("Official texts — sign in with a subscription", "متن رسمی — ورود با اشتراک") },
@@ -151,12 +151,12 @@ export const referenceSections: RefSection[] = [
     chip: "FDA",
     text: bi(
       "Approvals, guidance documents, excipient levels in approved products and recommended dissolution methods.",
-      "تأییدیه‌ها، گایدلاین‌ها، مقدار مواد جانبی در فرآورده‌های تأییدشده و روش‌های انحلال توصیه‌شده.",
+      "تأییدیه‌ها، راهنماها، مقدار مواد جانبی در فرآورده‌های تأییدشده و روش‌های انحلال توصیه‌شده.",
     ),
     links: [
       { label: "FDA", url: "https://www.fda.gov/", note: bi("Home page", "صفحه اصلی") },
       { label: "Drugs@FDA", url: "https://www.accessdata.fda.gov/scripts/cder/daf/", note: bi("Approved drugs, labels and review documents", "داروهای تأییدشده، بروشور و مستندات بررسی") },
-      { label: "Guidance documents", url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents", note: bi("Search all FDA guidances", "جستجوی همه گایدلاین‌های FDA") },
+      { label: "Guidance documents", url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents", note: bi("Search all FDA guidances", "جستجوی همه راهنماهای FDA") },
       { label: "Inactive Ingredient Database", url: "https://www.accessdata.fda.gov/scripts/cder/iig/", note: bi("Maximum excipient levels in approved products", "حداکثر مقدار مواد جانبی در فرآورده‌های تأییدشده") },
       { label: "Dissolution Methods Database", url: "https://www.accessdata.fda.gov/scripts/cder/dissolution/", note: bi("Recommended dissolution conditions", "شرایط انحلال توصیه‌شده") },
       { label: "Product-specific guidances", url: "https://www.fda.gov/drugs/guidances-drugs/product-specific-guidances-generic-drug-development", note: bi("Bioequivalence for generic products", "هم‌ارزی زیستی فرآورده‌های ژنریک") },
@@ -194,7 +194,7 @@ export const referenceSections: RefSection[] = [
     chip: "EMA",
     text: bi(
       "Centrally authorised medicines and their public assessment reports (EPAR), scientific guidelines and product-specific bioequivalence guidance for the EU.",
-      "داروهای تأییدشده متمرکز اروپا و گزارش‌های ارزیابی عمومی آن‌ها (EPAR)، گایدلاین‌های علمی و گایدلاین‌های هم‌ارزی زیستی اختصاصی هر فرآورده.",
+      "داروهای تأییدشده متمرکز اروپا و گزارش‌های ارزیابی عمومی آن‌ها (EPAR)، راهنماهای علمی و راهنماهای هم‌ارزی زیستی اختصاصی هر فرآورده.",
     ),
     links: [
       { label: "EMA", url: "https://www.ema.europa.eu/en", note: bi("Home page", "صفحه اصلی") },
@@ -255,7 +255,7 @@ export const referenceSections: RefSection[] = [
   },
   {
     key: "ich",
-    title: bi("ICH, PIC/S and international guidelines", "ICH، PIC/S و گایدلاین‌های بین‌المللی"),
+    title: bi("ICH, PIC/S and international guidelines", "ICH، PIC/S و راهنماهای بین‌المللی"),
     abbr: "ICH · PIC/S",
     chip: "ICH · PIC/S",
     editions: [
@@ -263,18 +263,18 @@ export const referenceSections: RefSection[] = [
         label: referenceLabels.inForce,
         value: bi(
           "Q1A(R2)–Q1E (consolidated Q1 still in draft), Q2(R2) and Q14 (2023), Q3C(R9) (2024), Q3D(R2) (2022), M7(R2) (2023), M4 (CTD)",
-          `${ltr("Q1A(R2)–Q1E")} (گایدلاین یکپارچه Q1 هنوز پیش‌نویس است)، ${ltr("Q2(R2)")} و ${ltr("Q14")} (۲۰۲۳)، ${ltr("Q3C(R9)")} (۲۰۲۴)، ${ltr("Q3D(R2)")} (۲۰۲۲)، ${ltr("M7(R2)")} (۲۰۲۳)، ${ltr("M4 (CTD)")}`,
+          `${ltr("Q1A(R2)–Q1E")} (راهنمای یکپارچه Q1 هنوز پیش‌نویس است)، ${ltr("Q2(R2)")} و ${ltr("Q14")} (۲۰۲۳)، ${ltr("Q3C(R9)")} (۲۰۲۴)، ${ltr("Q3D(R2)")} (۲۰۲۲)، ${ltr("M7(R2)")} (۲۰۲۳)، ${ltr("M4 (CTD)")}`,
         ),
       },
     ],
     text: bi(
       "ICH sets the harmonised quality, safety and efficacy guidelines and the CTD format; PIC/S publishes the GMP guide followed by its member inspectorates.",
-      "ICH گایدلاین‌های هماهنگ کیفیت، ایمنی و اثربخشی و قالب CTD را تدوین می‌کند؛ PIC/S گایدلاین GMP مورد استفاده بازرسی‌های عضو را منتشر می‌کند.",
+      "ICH راهنماهای هماهنگ کیفیت، ایمنی و اثربخشی و قالب CTD را تدوین می‌کند؛ PIC/S راهنمای GMP مورد استفاده بازرسی‌های عضو را منتشر می‌کند.",
     ),
     links: [
-      { label: "ICH Quality guidelines", url: "https://www.ich.org/page/quality-guidelines", note: bi("Q1–Q14 (free)", "گایدلاین‌های Q1 تا Q14 (رایگان)") },
-      { label: "ICH", url: "https://www.ich.org/", note: bi("All ICH guidelines", "همه گایدلاین‌های ICH") },
-      { label: "PIC/S", url: "https://picscheme.org/", note: bi("GMP guide and publications", "گایدلاین GMP و انتشارات") },
+      { label: "ICH Quality guidelines", url: "https://www.ich.org/page/quality-guidelines", note: bi("Q1–Q14 (free)", "راهنماهای Q1 تا Q14 (رایگان)") },
+      { label: "ICH", url: "https://www.ich.org/", note: bi("All ICH guidelines", "همه راهنماهای ICH") },
+      { label: "PIC/S", url: "https://picscheme.org/", note: bi("GMP guide and publications", "راهنمای GMP و انتشارات") },
     ],
   },
 ];

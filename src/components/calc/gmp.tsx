@@ -69,9 +69,9 @@ export function Cpk({ ctx }: { ctx: Ctx }) {
       title={calculation("cpk").title}
       form={
         <>
-          <ListInput ctx={ctx} id="ck-x" rows={4} label={bi("Results (e.g. assay % of batches)", "نتایج (مثلاً اسی بچ‌ها به درصد)")} />
-          <NumberInput ctx={ctx} id="ck-lsl" label={bi("Lower specification limit (LSL; blank if none)", "حد پایین مشخصات (LSL؛ اگر ندارد خالی بگذارید)")} />
-          <NumberInput ctx={ctx} id="ck-usl" label={bi("Upper specification limit (USL; blank if none)", "حد بالای مشخصات (USL؛ اگر ندارد خالی بگذارید)")} />
+          <ListInput ctx={ctx} id="ck-x" rows={4} label={bi("Results (e.g. assay % of batches)", "نتایج (مثلاً Assay بچ‌ها به درصد)")} />
+          <NumberInput ctx={ctx} id="ck-lsl" label={bi("Lower specification limit (LSL; blank if none)", "حد پایین مشخصات (LSL؛ در صورت نبود، خالی بگذارید)")} />
+          <NumberInput ctx={ctx} id="ck-usl" label={bi("Upper specification limit (USL; blank if none)", "حد بالای مشخصات (USL؛ در صورت نبود، خالی بگذارید)")} />
         </>
       }
       results={[
@@ -87,7 +87,7 @@ export function Cpk({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "Cp = (USL − LSL) ÷ 6s; Cpu = (USL − x̄) ÷ 3s; Cpl = (x̄ − LSL) ÷ 3s; Cpk = min(Cpu, Cpl). The overall sample SD is used, so strictly this is Ppk (process performance); it equals Cpk only for a stable process. Expected out-of-specification assumes a normal distribution. Common targets: Cpk ≥ 1.33 for continued process verification (CPV) and APQR trending. " + listNote.en,
-        "Cp = (USL − LSL) ÷ 6s؛ Cpu = (USL − x̄) ÷ 3s؛ Cpl = (x̄ − LSL) ÷ 3s؛ Cpk = کمینه Cpu و Cpl. انحراف معیار کل نمونه به کار رفته است، پس دقیق‌تر Ppk (عملکرد فرایند) است و فقط برای فرایند پایدار با Cpk برابر است. پیش‌بینی خارج از مشخصات بر پایه توزیع نرمال است. هدف متداول در پایش مستمر فرایند (CPV) و بازنگری سالانه (APQR): Cpk ≥ 1.33. " + listNote.fa,
+        "Cp = (USL − LSL) ÷ 6s؛ Cpu = (USL − x̄) ÷ 3s؛ Cpl = (x̄ − LSL) ÷ 3s؛ Cpk = کمینه Cpu و Cpl. انحراف معیار کل نمونه به کار رفته است، بنابراین شاخص به‌دست‌آمده به‌طور دقیق Ppk (عملکرد فرایند) است و فقط برای فرایند پایدار با Cpk برابر است. پیش‌بینی خارج از مشخصات بر پایه توزیع نرمال است. هدف متداول در پایش مستمر فرایند (CPV) و بازنگری سالانه (APQR): Cpk ≥ 1.33. " + listNote.fa,
       )}
     />
   );
@@ -233,7 +233,7 @@ export function Yld({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "Yield = good output ÷ theoretical × 100; reconciliation = (good + samples + rejects + documented losses) ÷ theoretical × 100. Use the same unit throughout. Limits come from the master batch record; a result outside them is a deviation to investigate before release. The same calculation applies to printed packaging materials, where any unexplained difference must be investigated.",
-        "بازده = محصول قابل‌قبول ÷ مقدار تئوری × ۱۰۰؛ تطبیق مقادیر = (محصول قابل‌قبول + نمونه‌ها + مردودی + افت مستند) ÷ مقدار تئوری × ۱۰۰. همه مقادیر با یک واحد باشند. حدود از دستور ساخت اصلی (MBR) گرفته می‌شود و نتیجه خارج از آن انحرافی است که پیش از آزادسازی باید بررسی شود. همین محاسبه برای مواد بسته‌بندی چاپی هم به کار می‌رود و هر اختلاف توضیح‌داده‌نشده باید بررسی شود.",
+        "بازده = محصول قابل‌قبول ÷ مقدار تئوری × ۱۰۰؛ تطبیق مقادیر = (محصول قابل‌قبول + نمونه‌ها + مردودی + افت مستند) ÷ مقدار تئوری × ۱۰۰. همه مقادیر باید با یک واحد وارد شوند. حدود از دستور ساخت اصلی (MBR) گرفته می‌شود و نتیجه خارج از آن انحرافی است که پیش از آزادسازی باید بررسی شود. همین محاسبه برای مواد بسته‌بندی چاپی هم به کار می‌رود و هر اختلاف توضیح‌داده‌نشده باید بررسی شود.",
       )}
     />
   );

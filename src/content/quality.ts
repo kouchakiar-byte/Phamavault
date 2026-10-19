@@ -191,15 +191,15 @@ export const qc = {
       ),
     },
     {
-      test: bi("Disintegration", "زمان باز شدن (Disintegration)"),
+      test: bi("Disintegration", "زمان متلاشی‌شدن (Disintegration)"),
       chapter: "USP <701> · Ph. Eur. 2.9.1",
       criteria: bi(
         "6 units disintegrate within the specified time; if 1 or 2 fail, test 12 more and at least 16 of 18 must pass. Ph. Eur. limits: uncoated tablets 15 min, film-coated tablets 30 min.",
-        `۶ واحد در زمان تعیین‌شده باز شوند؛ اگر ۱ یا ۲ واحد مردود شد، ۱۲ واحد دیگر آزمون و دست‌کم ۱۶ از ۱۸ واحد باید قبول شوند. حدود ${ltr("Ph. Eur.")}: قرص بدون روکش ۱۵ دقیقه، قرص فیلم‌کوت ۳۰ دقیقه.`,
+        `۶ واحد در زمان تعیین‌شده متلاشی شوند؛ اگر ۱ یا ۲ واحد مردود شد، ۱۲ واحد دیگر آزمون و دست‌کم ۱۶ از ۱۸ واحد باید قبول شوند. حدود ${ltr("Ph. Eur.")}: قرص بدون روکش ۱۵ دقیقه، قرص با روکش فیلم ۳۰ دقیقه.`,
       ),
     },
     {
-      test: bi("Friability", "سایش (Friability)"),
+      test: bi("Friability", "فرسایش‌پذیری (Friability)"),
       chapter: "USP <1216> · Ph. Eur. 2.9.7",
       criteria: bi(
         "100 rotations (25 rpm, 4 min). Tablets ≤ 650 mg: whole tablets close to 6.5 g; > 650 mg: 10 tablets. Mean weight loss ≤ 1.0% and no cracked, cleaved or broken tablets.",
@@ -414,23 +414,23 @@ export const qc = {
   sst: [
     { parameter: bi("Repeatability (replicate injections)", "تکرارپذیری (تزریق‌های تکراری)"), what: bi("Precision of the system", "دقت سیستم"), typical: bi("RSD as the monograph states; for assays commonly ≤ 2.0% for 5 injections", "RSD طبق مونوگراف؛ برای تعیین مقدار معمولاً ≤ ۲٫۰٪ برای ۵ تزریق") },
     { parameter: bi("Resolution (Rs)", "قدرت تفکیک (Rs)"), what: bi("Separation of the critical pair", "جداسازی زوج بحرانی"), typical: bi("Usually ≥ 1.5 (baseline), or the monograph value", "معمولاً ≥ ۱٫۵ (جداسازی کامل) یا مقدار مونوگراف") },
-    { parameter: bi("Symmetry (tailing) factor", "فاکتور تقارن (دنباله‌دار شدن)"), what: bi("Peak shape", "شکل پیک"), typical: bi("0.8–1.8 for assay peaks unless the monograph states otherwise", "۰٫۸ تا ۱٫۸ برای پیک تعیین مقدار مگر مونوگراف چیز دیگری بگوید") },
+    { parameter: bi("Symmetry (tailing) factor", "فاکتور تقارن (دنباله‌دار شدن)"), what: bi("Peak shape", "شکل پیک"), typical: bi("0.8–1.8 for assay peaks unless the monograph states otherwise", "۰٫۸ تا ۱٫۸ برای پیک تعیین مقدار، مگر آنکه مونوگراف حد دیگری تعیین کرده باشد") },
     { parameter: bi("Signal-to-noise ratio (S/N)", "نسبت سیگنال به نویز (S/N)"), what: bi("Sensitivity at the reporting level", "حساسیت در سطح گزارش"), typical: bi("≥ 10 at the quantitation limit; about 3 at the detection limit", "≥ ۱۰ در حد کمّی‌سازی؛ حدود ۳ در حد تشخیص") },
     { parameter: bi("Plate number (N)", "تعداد بشقابک (N)"), what: bi("Column efficiency", "کارایی ستون"), typical: bi("As the monograph states", "طبق مونوگراف") },
   ],
   sstNote: bi(
     "System suitability is an integral part of the method: if it fails, no sample result from that run may be reported.",
-    "انطباق سیستم بخش جدایی‌ناپذیر روش است: اگر برقرار نباشد، هیچ نتیجه نمونه‌ای از آن ران قابل گزارش نیست.",
+    "انطباق سیستم بخش جدایی‌ناپذیر روش است: اگر برقرار نباشد، هیچ نتیجه نمونه‌ای از آن اجرای آنالیز (Run) قابل گزارش نیست.",
   ),
 
   // ---------- Dissolution ----------
   dissoTitle: bi("Dissolution apparatus and usual conditions (USP <711>)", `دستگاه‌های انحلال و شرایط متداول ${ltr("(USP <711>)")}`),
   dissoCols: { app: bi("Apparatus", "دستگاه"), use: bi("Typical use", "کاربرد متداول"), speed: bi("Usual speed", "سرعت متداول") },
   disso: [
-    { app: bi("1 — Basket", "۱ — سبد (Basket)"), use: bi("Capsules, floating and multiparticulate forms", "کپسول، فرآورده‌های شناور و چندذره‌ای"), speed: "50–100 rpm" },
-    { app: bi("2 — Paddle", "۲ — پارو (Paddle)"), use: bi("Tablets (most common); sinkers for capsules", "قرص (رایج‌ترین)؛ با سینکر برای کپسول"), speed: "50–75 rpm" },
-    { app: bi("3 — Reciprocating cylinder", "۳ — سیلندر رفت‌وبرگشتی"), use: bi("Extended release, pH-change profiles", "رهش طولانی و پروفایل با تغییر pH"), speed: "5–30 dips/min" },
-    { app: bi("4 — Flow-through cell", "۴ — سلول جریانی (Flow-through)"), use: bi("Poorly soluble drugs, implants, microspheres", "داروهای کم‌محلول، ایمپلنت و میکروسفر"), speed: "4–16 mL/min" },
+    { app: bi("1 — Basket", "۱ — Basket"), use: bi("Capsules, floating and multiparticulate forms", "کپسول، فرآورده‌های شناور و چندذره‌ای"), speed: "50–100 rpm" },
+    { app: bi("2 — Paddle", "۲ — Paddle"), use: bi("Tablets (most common); sinkers for capsules", "قرص (رایج‌ترین)؛ با سینکر برای کپسول"), speed: "50–75 rpm" },
+    { app: bi("3 — Reciprocating cylinder", "۳ — سیلندر رفت‌وبرگشتی (Reciprocating cylinder)"), use: bi("Extended release, pH-change profiles", "رهش طولانی و پروفایل با تغییر pH"), speed: "5–30 dips/min" },
+    { app: bi("4 — Flow-through cell", "۴ — سلول جریانی (Flow-through cell)"), use: bi("Poorly soluble drugs, implants, microspheres", "داروهای کم‌محلول، ایمپلنت و میکروسفر"), speed: "4–16 mL/min" },
   ],
   dissoNote: bi(
     "Medium usually 900 mL (500–1000 mL) at 37 ± 0.5 °C, degassed when dissolved gases affect results. Sink conditions: a medium volume at least three times that needed to saturate the dose.",

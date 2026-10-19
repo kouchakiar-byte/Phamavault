@@ -92,6 +92,40 @@ const PERSIAN = /[\u0600-\u06FF]/;
 const splitSynonyms = (s: string) => s.split(/[,،;]/).map((x) => x.trim()).filter(Boolean);
 const persianName = (synonyms: string) => splitSynonyms(synonyms).find((x) => PERSIAN.test(x));
 
+/**
+ * Colloquial or transliterated Persian words users may still type, kept for
+ * matching only (the shown labels use the formal terms).
+ */
+const excipientFunctionAliases: Record<string, string> = {
+  bin: "بایندر",
+  dis: "دیس‌اینتگرانت",
+  lub: "لغزان‌کننده لوبریکانت",
+  gli: "بهبوددهنده جریان پودر گلایدانت",
+  sur: "سورفکتانت امولسی‌فایر امولسیفایر",
+  bas: "امولینت",
+  sol: "هیومکتانت",
+  plz: "پلاستی‌سایزر",
+  slb: "سالوبیلایزر",
+  stb: "لیوپروتکتانت",
+  ads: "ادسوربنت",
+};
+const formulationFunctionAliases: Record<string, string> = {
+  bin: "بایندر",
+  dis: "دیس‌اینتگرانت",
+  lub: "لغزان‌کننده لوبریکانت",
+  gli: "بهبوددهنده جریان پودر گلایدانت",
+  emo: "امولینت",
+  emu: "امولسی‌فایر امولسیفایر",
+  hum: "هیومکتانت",
+};
+const calculatorAliases: Record<string, string> = {
+  pot: "اسی",
+  asy: "اسی",
+  hlb: "امولسی‌فایر امولسیفایر",
+  caps: "سایز کپسول",
+  maco: "سواب آبکشی",
+};
+
 /** `aliases` (synonyms, trade names) count as titles when matching but are not shown. */
 function entry(e: Omit<Entry, "titles" | "shown" | "extra" | "exact"> & { extra?: string; exact?: string[]; aliases?: string[] }): Entry {
   const { aliases = [], ...rest } = e;
@@ -116,6 +150,8 @@ function buildStatic(): Entry[] {
         group: "sections",
         section: isPaidSection(s.slug) ? s.slug : null,
         title: s.title,
+        // Colloquial name users may still type for the references section.
+        aliases: s.slug === "references" ? ["رفرنس‌ها و فارماکوپه‌ها", "رفرنس"] : [],
         sub: s.description,
         path: s.href,
         extra: keys(s.description.en, s.description.fa),
@@ -139,6 +175,7 @@ function buildStatic(): Entry[] {
           x.synonyms,
           x.cas,
           fns.map((f) => `${f.en} ${f.fa}`).join(" "),
+          x.functions.map((f) => excipientFunctionAliases[f] ?? "").join(" "),
           mono?.tradeNames,
           mono?.chemicalName,
           mono?.names.map((n) => n.name).join(" "),
@@ -171,7 +208,7 @@ function buildStatic(): Entry[] {
         title: c.label,
         sub: c.title,
         path: `tools?calc=${c.key}`,
-        extra: keys(c.title.en, c.title.fa, "equation" in c ? String(c.equation) : ""),
+        extra: keys(c.title.en, c.title.fa, "equation" in c ? String(c.equation) : "", calculatorAliases[c.key]),
       }),
     );
   }
@@ -225,7 +262,10 @@ function buildStatic(): Entry[] {
         title: t.name,
         sub: same(t.rows.map((r) => r.material).filter(Boolean).slice(0, 6).join("، ")),
         path: "formulation",
-        extra: keys(t.rows.map((r) => `${r.material ?? ""} ${formulation.functions[r.fn]?.en ?? ""} ${formulation.functions[r.fn]?.fa ?? ""}`).join(" ")),
+        extra: keys(
+          t.rows.map((r) => `${r.material ?? ""} ${formulation.functions[r.fn]?.en ?? ""} ${formulation.functions[r.fn]?.fa ?? ""} ${formulationFunctionAliases[r.fn] ?? ""}`).join(" "),
+          t.name.fa.includes("فشرده‌سازی مستقیم") ? "پرس مستقیم" : "",
+        ),
       }),
     );
   }

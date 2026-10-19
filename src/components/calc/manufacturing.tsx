@@ -101,8 +101,8 @@ export function Fri({ ctx }: { ctx: Ctx }) {
       form={
         <>
           <NumberInput ctx={ctx} id="fr-m" label={bi("Mass of one tablet (mg)", "وزن یک قرص (میلی‌گرم)")} />
-          <NumberInput ctx={ctx} id="fr-w1" label={bi("Dedusted sample mass before the test W₁ (g)", "وزن نمونه گردگیری‌شده پیش از آزمون W₁ (گرم)")} />
-          <NumberInput ctx={ctx} id="fr-w2" label={bi("Dedusted sample mass after 100 rotations W₂ (g)", "وزن نمونه گردگیری‌شده پس از ۱۰۰ دور W₂ (گرم)")} />
+          <NumberInput ctx={ctx} id="fr-w1" label={bi("Dedusted sample mass before the test W₁ (g)", "وزن نمونه غبارزدایی‌شده پیش از آزمون W₁ (گرم)")} />
+          <NumberInput ctx={ctx} id="fr-w2" label={bi("Dedusted sample mass after 100 rotations W₂ (g)", "وزن نمونه غبارزدایی‌شده پس از ۱۰۰ دور W₂ (گرم)")} />
         </>
       }
       results={[
@@ -116,7 +116,7 @@ export function Fri({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "USP <1216> / Ph. Eur. 2.9.7: for tablets of 650 mg or less take whole tablets as near as possible to 6.5 g; above 650 mg take 10 tablets. Dedust, weigh, rotate 100 times (25 rpm, 4 min), dedust and weigh again. A maximum mean loss of not more than 1.0% is acceptable for most products; if the result is doubtful or above the target, repeat the test twice and use the mean of the three. No tablet may be cracked, cleaved or broken.",
-        `${ltr("USP <1216>")} و ${ltr("Ph. Eur. 2.9.7")}: برای قرص‌های ۶۵۰ میلی‌گرم یا کمتر، قرص‌های کامل به وزن نزدیک ۶٫۵ گرم و برای قرص‌های سنگین‌تر ۱۰ قرص بردارید. گردگیری، توزین، ۱۰۰ دور چرخش (۲۵ دور در دقیقه، ۴ دقیقه)، گردگیری و توزین دوباره. حداکثر میانگین کاهش وزن 1.0٪ برای بیشتر فرآورده‌ها قابل قبول است؛ اگر نتیجه مشکوک یا بیشتر از هدف باشد، آزمون دو بار دیگر تکرار و میانگین سه آزمون محاسبه می‌شود. هیچ قرصی نباید ترک‌خورده، لایه‌لایه یا شکسته باشد.`,
+        `${ltr("USP <1216>")} و ${ltr("Ph. Eur. 2.9.7")}: برای قرص‌های ۶۵۰ میلی‌گرم یا کمتر، قرص‌های کامل به وزن نزدیک ۶٫۵ گرم و برای قرص‌های سنگین‌تر ۱۰ قرص بردارید. غبارزدایی، توزین، ۱۰۰ دور چرخش (۲۵ دور در دقیقه، ۴ دقیقه)، غبارزدایی و توزین دوباره. حداکثر میانگین کاهش وزن 1.0٪ برای بیشتر فرآورده‌ها قابل قبول است؛ اگر نتیجه مشکوک یا بیشتر از هدف باشد، آزمون دو بار دیگر تکرار و میانگین سه آزمون محاسبه می‌شود. هیچ قرصی نباید ترک‌خورده، لایه‌لایه یا شکسته باشد.`,
       )}
     />
   );
@@ -192,7 +192,7 @@ export function Maco({ ctx }: { ctx: Ctx }) {
           <NumberInput ctx={ctx} id="ma-swab" label={bi("Swabbed area (cm²)", "سطح سواب‌شده (سانتی‌متر مربع)")} />
           <NumberInput ctx={ctx} id="ma-vext" label={bi("Swab extraction volume (mL)", "حجم استخراج سواب (میلی‌لیتر)")} />
           <NumberInput ctx={ctx} id="ma-rec" label={bi("Swab recovery (%)", "بازیافت سواب (%)")} />
-          <NumberInput ctx={ctx} id="ma-rinse" label={bi("Final rinse volume (L)", "حجم آبکشی نهایی (لیتر)")} />
+          <NumberInput ctx={ctx} id="ma-rinse" label={bi("Final rinse volume (L)", "حجم شست‌وشوی نهایی (لیتر)")} />
         </>
       }
       results={[
@@ -203,12 +203,12 @@ export function Maco({ ctx }: { ctx: Ctx }) {
         { label: bi("Limit per swab", "حد هر سواب"), value: okS ? `${sig(perSwab)} µg` : DASH },
         { label: bi("Limit in the swab solution", "حد در محلول سواب"), value: okS && vext > 0 ? `${sig(perSwab / vext)} µg/mL` : DASH },
         { label: bi("Same, corrected for recovery", "همان، اصلاح‌شده برای بازیافت"), value: okS && vext > 0 && rec > 0 && rec <= 100 ? `${sig(((perSwab / vext) * rec) / 100)} µg/mL` : DASH },
-        { label: bi("Limit in the final rinse", "حد در آب آبکشی نهایی"), value: Number.isFinite(maco) && rinse > 0 ? `${sig((maco * 1000) / (rinse * 1000))} µg/mL` : DASH },
+        { label: bi("Limit in the final rinse", "حد در آب شست‌وشوی نهایی"), value: Number.isFinite(maco) && rinse > 0 ? `${sig((maco * 1000) / (rinse * 1000))} µg/mL` : DASH },
       ]}
       message={okB ? "" : bad(ctx)}
       note={bi(
         "Maximum allowable carryover of product A into the next product B. Health-based (EMA guideline on HBEL, 2014; PIC/S): MACO = PDE × MBS ÷ MDD. Traditional criteria, still used as additional checks: 1/1000 of the smallest therapeutic dose (MACO = STD × MBS ÷ (SF × MDD)) and 10 ppm of A in B. The lowest value governs. Swab limit = MACO × swabbed area ÷ shared area; the measured swab result is compared with the limit multiplied by the recovery. Rinse limit assumes the residue is evenly distributed in the final rinse.",
-        `حداکثر انتقال مجاز محصول A به محصول بعدی B. بر پایه سلامت (راهنمای HBEL آژانس دارویی اروپا، ۲۰۱۴؛ PIC/S): ${ltr("MACO = PDE × MBS ÷ MDD")}. معیارهای سنتی که هنوز به‌عنوان کنترل تکمیلی به کار می‌روند: یک‌هزارم کمترین دوز درمانی ${ltr("(MACO = STD × MBS ÷ (SF × MDD))")} و 10 ppm از A در B. کمترین مقدار ملاک است. حد سواب ${ltr("= MACO × swab area ÷ shared area")}؛ نتیجه اندازه‌گیری‌شده سواب با حد ضرب‌شده در بازیافت مقایسه می‌شود. حد آبکشی با فرض توزیع یکنواخت باقیمانده در آب آبکشی نهایی است.`,
+        `حداکثر انتقال مجاز محصول A به محصول بعدی B. بر پایه سلامت (راهنمای HBEL آژانس دارویی اروپا، ۲۰۱۴؛ PIC/S): ${ltr("MACO = PDE × MBS ÷ MDD")}. معیارهای سنتی که هنوز به‌عنوان کنترل تکمیلی به کار می‌روند: یک‌هزارم کمترین دوز درمانی ${ltr("(MACO = STD × MBS ÷ (SF × MDD))")} و 10 ppm از A در B. کمترین مقدار ملاک است. حد سواب ${ltr("= MACO × swab area ÷ shared area")}؛ نتیجه اندازه‌گیری‌شده سواب با حد ضرب‌شده در بازیافت مقایسه می‌شود. حد Rinse با فرض توزیع یکنواخت باقیمانده در آب شست‌وشوی نهایی محاسبه می‌شود.`,
       )}
     />
   );

@@ -14,7 +14,7 @@ export const legalNav = {
   contact: bi("Contact us", "تماس با ما"),
   terms: bi("Terms and conditions", "قوانین و مقررات"),
   privacy: bi("Privacy policy", "حریم خصوصی"),
-  references: bi("References and pharmacopoeias", "رفرنس‌ها و فارماکوپه‌ها"),
+  references: bi("References and pharmacopoeias", "مراجع و فارماکوپه‌ها"),
 };
 
 export const contactLabels = {
@@ -144,7 +144,7 @@ export const terms: LegalPage = {
         ),
         bi(
           "If a payment was taken but the subscription did not open, contact us with the payment reference; it is activated or refunded.",
-          "اگر مبلغ کسر شد ولی اشتراک فعال نشد، با کد پیگیری پرداخت با ما تماس بگیرید تا اشتراک فعال یا مبلغ بازگردانده شود.",
+          "اگر مبلغ کسر شد اما اشتراک فعال نشد، با کد پیگیری پرداخت با ما تماس بگیرید تا اشتراک فعال یا مبلغ بازگردانده شود.",
         ),
         bi(
           "Failed bank payments are returned to the card by the bank, normally within 72 hours.",
@@ -222,7 +222,7 @@ export const privacy: LegalPage = {
         bi("Two cookies: the sign-in session and your language choice.", "دو کوکی: نشست ورود به حساب و زبان انتخابی شما."),
         bi(
           "Anonymous visit counts (page, referring site, device type), kept on our own server to see which pages are useful. No cookie is set for this and no IP is stored; visitors are counted with a one-way code that changes every day.",
-          "آمار ناشناس بازدید (صفحه، سایت ارجاع‌دهنده و نوع دستگاه) روی سرور خود سایت، برای اینکه بدانیم کدام صفحه‌ها مفیدند. برای این کار کوکی گذاشته نمی‌شود و IP ذخیره نمی‌شود؛ بازدیدکننده با یک کد یک‌طرفه شمرده می‌شود که هر روز عوض می‌شود.",
+          "آمار ناشناس بازدید (صفحه، سایت ارجاع‌دهنده و نوع دستگاه) روی سرور خود سایت، به‌منظور شناسایی صفحات مفید. برای این کار کوکی ذخیره نمی‌شود و IP نیز ثبت نمی‌شود؛ بازدیدکننده با یک کد یک‌طرفه شمرده می‌شود که هر روز تغییر می‌کند.",
         ),
       ],
     },

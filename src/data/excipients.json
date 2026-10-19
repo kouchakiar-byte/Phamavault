@@ -6,27 +6,27 @@
   },
   "bin": {
    "en": "Binder",
-   "fa": "چسباننده (بایندر)"
+   "fa": "چسباننده (Binder)"
   },
   "dis": {
    "en": "Disintegrant",
-   "fa": "متلاشی‌کننده (دیس‌اینتگرانت)"
+   "fa": "متلاشی‌کننده (Disintegrant)"
   },
   "lub": {
    "en": "Lubricant",
-   "fa": "لغزان‌کننده (لوبریکانت)"
+   "fa": "روان‌کننده (Lubricant)"
   },
   "gli": {
    "en": "Glidant",
-   "fa": "بهبوددهنده جریان پودر (گلایدانت)"
+   "fa": "تسهیل‌کننده جریان (Glidant)"
   },
   "sur": {
    "en": "Surfactant, emulsifier",
-   "fa": "سورفکتانت، امولسی‌فایر"
+   "fa": "عامل فعال سطحی، امولسیون‌کننده"
   },
   "bas": {
    "en": "Semi-solid base, emollient",
-   "fa": "پایه نیمه‌جامد، امولینت"
+   "fa": "پایه نیمه‌جامد، نرم‌کننده پوست (Emollient)"
   },
   "gel": {
    "en": "Gelling agent, viscosity modifier",
@@ -34,7 +34,7 @@
   },
   "sol": {
    "en": "Solvent, humectant",
-   "fa": "حلال، هیومکتانت (رطوبت‌گیر)"
+   "fa": "حلال، رطوبت‌گیر (Humectant)"
   },
   "pre": {
    "en": "Antimicrobial preservative",
@@ -58,7 +58,7 @@
   },
   "plz": {
    "en": "Plasticiser",
-   "fa": "پلاستی‌سایزر (نرم‌کننده پلیمر)"
+   "fa": "نرم‌کننده پلیمر (Plasticiser)"
   },
   "pol": {
    "en": "Release-modifying polymer",
@@ -66,7 +66,7 @@
   },
   "slb": {
    "en": "Solubilising agent",
-   "fa": "عامل افزایش حلالیت (سالوبیلایزر)"
+   "fa": "عامل افزایش حلالیت (Solubiliser)"
   },
   "oil": {
    "en": "Oleaginous vehicle",
@@ -82,11 +82,11 @@
   },
   "stb": {
    "en": "Stabiliser, lyoprotectant",
-   "fa": "پایدارکننده، لیوپروتکتانت"
+   "fa": "پایدارکننده، محافظ لیوفیلیزاسیون (Lyoprotectant)"
   },
   "ads": {
    "en": "Adsorbent",
-   "fa": "جاذب سطحی (ادسوربنت)"
+   "fa": "جاذب سطحی (Adsorbent)"
   },
   "fla": {
    "en": "Flavouring agent",
