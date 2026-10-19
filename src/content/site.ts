@@ -55,6 +55,14 @@ export const copy = {
   },
 
   hero: {
+    stats: {
+      suppliers: bi("suppliers & makers", "تأمین‌کننده و تولیدکننده"),
+      products: bi("products in the supplier bank", "محصول در بانک تأمین"),
+      materials: bi("raw materials with specs", "ماده اولیه با مشخصات"),
+      sections: bi("specialised sections", "بخش تخصصی"),
+    },
+    popular: bi("Popular searches:", "جستجوهای پرتکرار:"),
+    popularQueries: ["لاکتوز", "منیزیم استئارات", "آویسل", "متفورمین", "ویتامین C", "کولین کلراید"],
     headline: bi(
       "Integrated knowledge, sharper decisions, smarter drug development",
       "دانش یکپارچه، تصمیم‌گیری دقیق‌تر، توسعه هوشمندانه‌تر\u00a0دارو",

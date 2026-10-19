@@ -27,7 +27,7 @@ export function CtdRequest({ locale }: { locale: Locale }) {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-l from-capsule-400 to-capsule-500 px-6 py-3 text-sm font-bold text-vault-950 shadow-lg shadow-capsule-500/30 transition duration-300 hover:scale-[0.97]"
+        className="inline-flex items-center justify-center gap-2 rounded-full bg-capsule-400 bg-gradient-to-l from-capsule-400 to-capsule-500 px-6 py-3 text-sm font-bold text-vault-950 shadow-lg shadow-capsule-500/30 transition duration-300 hover:scale-[0.97]"
       >
         <Send className="size-4 rtl:-scale-x-100" aria-hidden="true" />
         {t.cta[locale]}
@@ -86,7 +86,7 @@ export function CtdRequest({ locale }: { locale: Locale }) {
           <button
             type="submit"
             disabled={pending}
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-l from-capsule-400 to-capsule-500 px-6 py-3 text-sm font-bold text-vault-950 shadow-lg shadow-capsule-500/30 transition duration-300 hover:scale-[0.97] disabled:opacity-60"
+            className="inline-flex items-center gap-2 rounded-full bg-capsule-400 bg-gradient-to-l from-capsule-400 to-capsule-500 px-6 py-3 text-sm font-bold text-vault-950 shadow-lg shadow-capsule-500/30 transition duration-300 hover:scale-[0.97] disabled:opacity-60"
           >
             <Send className="size-4 rtl:-scale-x-100" aria-hidden="true" />
             {pending ? f.sending[locale] : f.submit[locale]}

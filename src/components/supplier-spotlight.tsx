@@ -31,7 +31,7 @@ export function SupplierSpotlight({ locale }: { locale: Locale }) {
   return (
     <section id="supplier-bank" className="scroll-mt-20 bg-white py-16 lg:py-20">
       <Container>
-        <div className="overflow-hidden rounded-3xl border border-molecule-400/40 bg-gradient-to-br from-molecule-50 via-white to-vault-50 shadow-xl shadow-vault-900/5">
+        <div className="overflow-hidden rounded-3xl border border-molecule-400/40 bg-white bg-gradient-to-br from-molecule-50 via-white to-vault-50 shadow-xl shadow-vault-900/5">
           <div className="grid gap-10 p-6 sm:p-10 lg:grid-cols-[1.35fr_1fr] lg:gap-14">
             <div>
               <div className="flex flex-wrap items-center gap-3">

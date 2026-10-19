@@ -27,6 +27,7 @@ import { calculation, calculations, featuredCalculations } from "@/content/calcu
 import { referenceSections } from "@/content/references";
 import { searchCopy } from "@/content/search";
 import { sections } from "@/content/sections";
+import { formatNumber } from "@/lib/format";
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
 import suppliers from "@/data/suppliers.json";
@@ -208,6 +209,34 @@ export default async function HomePage() {
                 {hero.seePlans[locale]}
               </ButtonLink>
             </div>
+            {/* The vault at a glance: live counts, then a few one-click searches */}
+            <dl className="mt-9 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
+              {(
+                [
+                  [counts.suppliers, hero.stats.suppliers],
+                  [counts.supplierMaterials, hero.stats.products],
+                  [counts.materials, hero.stats.materials],
+                  [sections.length, hero.stats.sections],
+                ] as const
+              ).map(([value, label]) => (
+                <div key={label.en} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3">
+                  <dt className="mt-1 text-xs leading-snug text-vault-100/70">{label[locale]}</dt>
+                  <dd className="num text-2xl font-bold text-capsule-400">{formatNumber(value, locale)}</dd>
+                </div>
+              ))}
+            </dl>
+            <div className="mt-5 flex max-w-2xl flex-wrap items-center gap-2 text-sm">
+              <span className="text-vault-100/60">{hero.popular[locale]}</span>
+              {hero.popularQueries.map((q) => (
+                <Link
+                  key={q}
+                  href={`${href(locale, "search")}?q=${encodeURIComponent(q)}`}
+                  className="rounded-full border border-white/15 px-3 py-1 text-vault-100/90 transition hover:border-capsule-400 hover:bg-capsule-400 hover:text-vault-950"
+                >
+                  {q}
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* The "vault" panel: every section one click away */}
@@ -230,7 +259,7 @@ export default async function HomePage() {
                   <li key={slug}>
                     <Link
                       href={href(locale, path)}
-                      className="group flex items-center gap-3.5 rounded-xl border border-white/10 bg-white/[0.07] px-2.5 py-2 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-gradient-to-l hover:from-capsule-400 hover:to-capsule-500 hover:text-vault-950 hover:shadow-lg hover:shadow-capsule-500/30 focus-visible:scale-[0.97] motion-reduce:transform-none"
+                      className="group flex items-center gap-3.5 rounded-xl border border-white/10 bg-white/[0.07] px-2.5 py-2 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-capsule-400 hover:bg-gradient-to-l hover:from-capsule-400 hover:to-capsule-500 hover:text-vault-950 hover:shadow-lg hover:shadow-capsule-500/30 focus-visible:scale-[0.97] motion-reduce:transform-none"
                     >
                       <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-molecule-500/15 text-molecule-400 transition group-hover:bg-vault-950/90 group-hover:text-capsule-400">
                         <Icon className="size-[1.1rem]" aria-hidden="true" />
@@ -313,10 +342,10 @@ export default async function HomePage() {
               return (
                 <article
                   key={slug}
-                  className="group relative flex flex-col rounded-card border border-vault-100 bg-vault-50 p-7 shadow-sm shadow-vault-900/5 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-capsule-100 hover:shadow-xl hover:shadow-capsule-500/25 focus-within:scale-[0.97] focus-within:border-capsule-400 motion-reduce:transform-none"
+                  className="group relative flex flex-col rounded-card border border-vault-100 bg-vault-50 p-7 shadow-sm shadow-vault-900/5 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-capsule-50 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-capsule-100 hover:shadow-xl hover:shadow-capsule-500/25 focus-within:scale-[0.97] focus-within:border-capsule-400 motion-reduce:transform-none"
                 >
                   <div className="flex items-start justify-between">
-                    <span className="flex size-12 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition duration-300 group-hover:bg-gradient-to-br group-hover:from-capsule-400 group-hover:to-capsule-600 group-hover:text-vault-950">
+                    <span className="flex size-12 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition duration-300 group-hover:bg-gradient-to-br group-hover:bg-capsule-400 group-hover:from-capsule-400 group-hover:to-capsule-600 group-hover:text-vault-950">
                       <Icon className="size-6" aria-hidden="true" />
                     </span>
                     <span className="rounded border border-line bg-white/60 px-2 py-0.5 font-mono text-xs tracking-widest text-muted transition group-hover:border-capsule-400 group-hover:text-capsule-700" dir="ltr">

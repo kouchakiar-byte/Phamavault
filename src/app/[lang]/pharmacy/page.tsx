@@ -87,7 +87,7 @@ export default async function PharmacyPage() {
         </div>
 
         {/* 0. Drug interaction checker */}
-        <section id={interactionsCopy.key} className="scroll-mt-24 space-y-5 rounded-3xl border border-capsule-400/40 bg-gradient-to-br from-capsule-50 to-white p-6 sm:p-8">
+        <section id={interactionsCopy.key} className="scroll-mt-24 space-y-5 rounded-3xl border border-capsule-400/40 bg-capsule-50 bg-gradient-to-br from-capsule-50 to-white p-6 sm:p-8">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
               <h2 className="text-2xl font-bold text-vault-900">{interactionsCopy.title[locale]}</h2>

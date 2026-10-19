@@ -126,7 +126,7 @@ function DrugInput({ locale, chosen, setChosen, onSubmit }: { locale: Locale; ch
             autoComplete="off"
             className="min-w-[12rem] flex-1 bg-transparent px-1 py-2 text-base text-ink outline-none placeholder:text-muted/50"
           />
-          <button type="submit" className="rounded-xl bg-gradient-to-l from-capsule-400 to-capsule-500 px-5 py-2.5 text-sm font-bold text-vault-950 shadow-sm transition hover:scale-[0.97]">
+          <button type="submit" className="rounded-xl bg-capsule-400 bg-gradient-to-l from-capsule-400 to-capsule-500 px-5 py-2.5 text-sm font-bold text-vault-950 shadow-sm transition hover:scale-[0.97]">
             {t.check[locale]}
           </button>
         </form>
