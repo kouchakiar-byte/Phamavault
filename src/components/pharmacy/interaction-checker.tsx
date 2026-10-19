@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { AlertTriangle, ArrowLeftRight, CheckCircle2, ClipboardCheck, FlaskConical, Search, ShieldAlert, X } from "lucide-react";
 import { classNames, drugs, rules, type ClassId, type Drug, type Ref, type Severity } from "@/data/interactions";
@@ -202,7 +202,13 @@ export function InteractionChecker({ locale }: { locale: Locale }) {
   const [checked, setChecked] = useState<Drug[]>([]);
   const [tried, setTried] = useState(false);
 
-  useEffect(() => {
+  // A new ?d= or ?q= in the address selects and checks those drugs. Adjusting
+  // state while rendering (only when the address changed) avoids the extra
+  // render an effect would cause.
+  const urlKey = `${d}|${q}`;
+  const [seenUrl, setSeenUrl] = useState("");
+  if (urlKey !== seenUrl) {
+    setSeenUrl(urlKey);
     const fromIds = d
       .split(",")
       .map((id) => drugById(id.trim()))
@@ -213,7 +219,7 @@ export function InteractionChecker({ locale }: { locale: Locale }) {
       setChecked(list.slice(0, MAX));
       setTried(true);
     }
-  }, [d, q]);
+  }
 
   const run = (list: Drug[]) => {
     setTried(true);
