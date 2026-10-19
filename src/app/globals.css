@@ -68,6 +68,12 @@ body {
   outline-offset: 2px;
 }
 
+/* A hover menu just used to pick a link stays shut until the pointer comes back. */
+.menu-closed [data-menu-panel] {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
 /* Search inputs inside a framed box: the box shows focus instead. */
 .pv-bare-input:focus-visible {
   outline: none;

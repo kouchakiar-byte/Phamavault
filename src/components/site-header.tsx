@@ -7,6 +7,7 @@ import { referenceLabels } from "@/content/references";
 import { getLocale } from "@/i18n/locale";
 import { href } from "@/lib/paths";
 import { LanguageSwitcher } from "./language-switcher";
+import { HoverMenu } from "./hover-menu";
 import { Logo } from "./logo";
 import { MobileNav } from "./mobile-nav";
 import { SiteSearch } from "./site-search";
@@ -46,7 +47,7 @@ export async function SiteHeader() {
             <SupplierIcon className="size-4" aria-hidden="true" />
             {supplierBankShort[locale]}
           </Link>
-          <div className="group">
+          <HoverMenu className="group">
             <Link
               href={href(locale, "#sections")}
               aria-haspopup="true"
@@ -56,9 +57,12 @@ export async function SiteHeader() {
               <ChevronDown className="size-4 transition group-focus-within:rotate-180 group-hover:rotate-180" aria-hidden="true" />
             </Link>
             {/* Mega menu: the sections grouped as databases, tools and knowledge */}
-            <div className="invisible absolute inset-x-8 top-full pt-1 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
-              <div className="grid grid-cols-3 gap-4 rounded-card border border-line bg-white p-4 shadow-xl shadow-vault-900/10">
-                {sectionGroups.map((g) => (
+            <div
+              data-menu-panel
+              className="invisible absolute inset-x-8 top-full pt-1 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100"
+            >
+              <div className="grid grid-cols-4 gap-4 rounded-card border border-line bg-white p-4 shadow-xl shadow-vault-900/10">
+                {[...sectionGroups, { key: "company" as const, title: nav.services }].map((g) => (
                   <div key={g.key}>
                     <p className="px-3 pb-2 text-xs font-semibold tracking-wide text-muted">{g.title[locale]}</p>
                     <ul>
@@ -66,7 +70,7 @@ export async function SiteHeader() {
                         .filter((s) => s.group === g.key)
                         .map(({ slug, href: path, icon: Icon, title }) => (
                           <li key={slug}>
-                            <Link href={href(locale, path)} className="flex gap-2.5 rounded-lg p-2.5 hover:bg-vault-50">
+                            <Link data-menu-item href={href(locale, path)} className="flex gap-2.5 rounded-lg p-2.5 hover:bg-vault-50">
                               <Icon className="mt-0.5 size-[1.1rem] shrink-0 text-molecule-500" aria-hidden="true" />
                               <span className="text-sm font-semibold leading-snug text-vault-900">{title[locale]}</span>
                             </Link>
@@ -77,7 +81,7 @@ export async function SiteHeader() {
                 ))}
               </div>
             </div>
-          </div>
+          </HoverMenu>
           {links.map((item) => (
             <Link
               key={item.href}

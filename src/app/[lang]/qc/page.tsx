@@ -186,6 +186,138 @@ export default async function QcPage() {
         </ol>
         <p className="mt-3 text-sm text-muted">{qc.oosRef[locale]}</p>
 
+        <SubTitle text={qc.impTitle} locale={locale} lead={qc.impLead} />
+        <TableWrap>
+          <table className="db">
+            <thead>
+              <tr>
+                {Object.values(qc.impCols).map((c) => (
+                  <th key={c.en}>{c[locale]}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {qc.impurities.map((row) => (
+                <tr key={row.scope.en + row.mdd}>
+                  <td className="font-medium text-vault-900">{row.scope[locale]}</td>
+                  <td className="num">{row.mdd}</td>
+                  <td className="num">{row.reporting}</td>
+                  <td className="num">{row.identification}</td>
+                  <td className="num">{row.qualification}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </TableWrap>
+        <p className="mt-3 text-sm text-muted">{qc.impNote[locale]}</p>
+
+        <SubTitle text={qc.solventsTitle} locale={locale} />
+        <TableWrap>
+          <table className="db">
+            <thead>
+              <tr>
+                {Object.values(qc.solventCols).map((c) => (
+                  <th key={c.en}>{c[locale]}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {qc.solvents.map((row) => (
+                <tr key={row.cls}>
+                  <td className="num font-semibold text-vault-900">{row.cls}</td>
+                  <td className="min-w-56">{row.meaning[locale]}</td>
+                  <td className="min-w-72 leading-relaxed" dir="ltr" style={{ textAlign: "start" }}>
+                    {row.examples}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </TableWrap>
+        <p className="mt-3 text-sm text-muted">{qc.solventsNote[locale]}</p>
+
+        <SubTitle text={qc.elementsTitle} locale={locale} />
+        <TableWrap>
+          <table className="db">
+            <thead>
+              <tr>
+                {Object.values(qc.elementCols).map((c) => (
+                  <th key={c.en}>{c[locale]}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {qc.elements.map((row) => (
+                <tr key={row.element}>
+                  <td className="font-semibold text-vault-900" dir="ltr" style={{ textAlign: "start" }}>
+                    {row.element}
+                  </td>
+                  <td className="num">{row.cls}</td>
+                  <td className="num">{row.oral}</td>
+                  <td className="num">{row.parenteral}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </TableWrap>
+        <p className="mt-3 text-sm text-muted">{qc.elementsNote[locale]}</p>
+
+        <SubTitle text={qc.sstTitle} locale={locale} />
+        <TableWrap>
+          <table className="db">
+            <thead>
+              <tr>
+                {Object.values(qc.sstCols).map((c) => (
+                  <th key={c.en}>{c[locale]}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {qc.sst.map((row) => (
+                <tr key={row.parameter.en}>
+                  <td className="font-medium text-vault-900">{row.parameter[locale]}</td>
+                  <td>{row.what[locale]}</td>
+                  <td className="min-w-64 leading-relaxed">{row.typical[locale]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </TableWrap>
+        <p className="mt-3 text-sm text-muted">{qc.sstNote[locale]}</p>
+
+        <SubTitle text={qc.dissoTitle} locale={locale} />
+        <TableWrap>
+          <table className="db">
+            <thead>
+              <tr>
+                {Object.values(qc.dissoCols).map((c) => (
+                  <th key={c.en}>{c[locale]}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {qc.disso.map((row) => (
+                <tr key={row.app.en}>
+                  <td className="font-medium text-vault-900">{row.app[locale]}</td>
+                  <td>{row.use[locale]}</td>
+                  <td className="num">{row.speed}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </TableWrap>
+        <p className="mt-3 text-sm text-muted">{qc.dissoNote[locale]}</p>
+
+        <SubTitle text={qc.sterilityTitle} locale={locale} />
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {qc.sterility.map((step) => (
+            <div key={step.title.en} className="rounded-card border border-line bg-white p-5">
+              <p className="font-bold text-vault-900">{step.title[locale]}</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted">{step.text[locale]}</p>
+            </div>
+          ))}
+        </div>
+
         <SubTitle text={qc.sopsTitle} locale={locale} />
         <ul className="grid gap-x-8 gap-y-2 sm:grid-cols-2">
           {labSops.map((s) => (
