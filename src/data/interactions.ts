@@ -1020,4 +1020,4 @@ export const rules: Rule[] = [
 
 export const severityOrder: Severity[] = ["contraindicated", "major", "moderate", "minor"];
 
-export const interactionsReviewed = bi("Reviewed October 2026", "آخرین بازبینی: مهر ۱۴۰۵");
+export const interactionsReviewed = bi("Reviewed {month}", "آخرین بازبینی: {month}");

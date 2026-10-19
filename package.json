@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/data-dates.mjs && node scripts/check-data.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check": "node scripts/check-data.mjs && tsc --noEmit -p . && eslint src scripts"
   },
   "dependencies": {
     "lucide-react": "^1.53.0",

@@ -426,11 +426,6 @@ const USP = "USP–NF 2026";
 const EP = "Ph. Eur. 12.3";
 const REMINGTON = "Remington, 23rd ed. (2020)";
 
-export const referencesReviewed = bi(
-  "References follow the editions in force: USP–NF 2026, BP 2026, Ph. Eur. 12th Edition (12.3, in force since 1 July 2026) and the latest ICH Step 4 guidelines. Last reviewed October 2026.",
-  "مراجع بر پایه ویرایش‌های لازم‌الاجرا هستند: ⁦USP–NF 2026⁩، ⁦BP 2026⁩، فارماکوپه اروپا ویرایش ۱۲ ⁦(12.3)⁩ که از ۱۰ تیر ۱۴۰۵ لازم‌الاجراست، و آخرین نسخه نهایی (Step 4) راهنماهای ICH. آخرین بازبینی: مهر ۱۴۰۵.",
-);
-
 const BP = "BP 2026";
 
 /** BP 2026 reproduces every Ph. Eur. text, so it is cited wherever Ph. Eur. is. */

@@ -1,0 +1,32 @@
+# Checks every pull request (and every push to a working branch) before it
+# can reach the site: the data checks, type check, lint and a full production
+# build. A red check means the merge would break the site on Liara.
+name: Checks
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: ["claude/**"]
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history, so scripts/data-dates.mjs can date the content
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Data, types and lint
+        run: npm run check
+      - name: Production build
+        run: npm run build

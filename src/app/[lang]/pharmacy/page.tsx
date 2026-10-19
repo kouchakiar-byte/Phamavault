@@ -13,6 +13,7 @@ import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
 import { pageMetadata } from "@/lib/metadata";
 import { href } from "@/lib/paths";
+import { withReviewedMonth } from "@/lib/data-dates";
 
 export const generateMetadata = () => pageMetadata(pharmacyPage.title, pharmacyPage.lead, "pharmacy");
 
@@ -75,7 +76,7 @@ export default async function PharmacyPage() {
       <Container className="space-y-14 py-12">
         <div className="space-y-3">
           <p className="rounded-xl border border-capsule-400/40 bg-capsule-400/10 px-4 py-3 text-sm leading-relaxed text-ink">
-            {pharmacyPage.disclaimer[locale]} {pharmacyPage.reviewed[locale]}
+            {pharmacyPage.disclaimer[locale]} {withReviewedMonth(pharmacyPage.reviewed[locale], "pharmacy", locale)}
           </p>
           <nav aria-label={pharmacyPage.toc[locale]} className="flex flex-wrap gap-2 text-sm">
             {[interactionsCopy, iranDrugs, orangeBook, compounding].map((s) => (
