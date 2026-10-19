@@ -31,7 +31,7 @@ export const account = {
     ),
     forgot: bi(
       "Forgot your password? Email us with your account's mobile number and we will reset it.",
-      "رمز را فراموش کرده‌اید؟ با شماره موبایل حساب‌تان به ما ایمیل بزنید تا رمز را بازنشانی کنیم.",
+      "رمز را فراموش کرده‌اید؟ شماره موبایل حساب خود را به ما ایمیل کنید تا رمز بازنشانی شود.",
     ),
   },
   errors: {
@@ -134,7 +134,7 @@ export const account = {
     invoice: bi("Pro-forma invoice / pay from a company account", "صدور پیش‌فاکتور / پرداخت از حساب شرکت"),
     onlineOff: bi(
       "Online payment opens soon. For now the order is registered and we contact you to arrange payment.",
-      "پرداخت آنلاین به‌زودی فعال می‌شود؛ فعلاً سفارش ثبت می‌شود و برای پرداخت با شما تماس می‌گیریم.",
+      "پرداخت آنلاین به‌زودی فعال می‌شود؛ در حال حاضر سفارش ثبت می‌شود و برای پرداخت با شما تماس می‌گیریم.",
     ),
     monthly: bi("Monthly", "ماهانه"),
     total: bi("Total to pay", "مبلغ قابل پرداخت"),
@@ -265,7 +265,7 @@ export const account = {
       page: bi("Page", "صفحه"),
       refs: bi("Arrived from (30 days)", "ورودی از سایت‌های دیگر (۳۰ روز اخیر)"),
       site: bi("Site", "سایت"),
-      direct: bi("The rest came directly (typed address, app, bookmark).", "بقیه مستقیم آمده‌اند (تایپ آدرس، برنامه نصبی یا نشانک)."),
+      direct: bi("The rest came directly (typed address, app, bookmark).", "سایر بازدیدها مستقیم بوده است (تایپ نشانی، برنامه نصب‌شده یا نشانک)."),
       devices: bi("Devices (30 days)", "دستگاه‌ها (۳۰ روز اخیر)"),
       device: { mobile: bi("Mobile", "موبایل"), tablet: bi("Tablet", "تبلت"), desktop: bi("Computer", "رایانه") } as Record<string, ReturnType<typeof bi>>,
       empty: bi("No visits recorded yet. Counting starts once this update is live.", "هنوز بازدیدی ثبت نشده است. شمارش از زمان انتشار این به‌روزرسانی شروع می‌شود."),
@@ -276,7 +276,7 @@ export const account = {
       title: bi("Daily catalog update", "به‌روزرسانی روزانه بانک تأمین‌کنندگان و مواد اولیه"),
       lead: bi(
         "Add or edit suppliers and raw materials here. Changes wait in the queue and go live every day at 18:00 Tehran time, when every supplier website is also checked and the “last updated” stamp is renewed.",
-        "تأمین‌کننده یا ماده اولیه را اینجا اضافه یا ویرایش کنید. تغییرات در صف می‌مانند و هر روز ساعت ۱۸:۰۰ به وقت تهران روی سایت می‌روند؛ همان موقع وب‌سایت همه تأمین‌کنندگان بررسی و تاریخ «آخرین به‌روزرسانی» تمدید می‌شود.",
+        "تأمین‌کننده یا ماده اولیه را اینجا اضافه یا ویرایش کنید. تغییرات در صف می‌مانند و هر روز ساعت ۱۸:۰۰ به وقت تهران در سایت منتشر می‌شوند؛ در همان زمان وب‌سایت همه تأمین‌کنندگان بررسی و تاریخ «آخرین به‌روزرسانی» تمدید می‌شود.",
       ),
       runs: bi("Recent updates", "به‌روزرسانی‌های اخیر"),
       day: bi("Day", "روز"),
@@ -289,7 +289,7 @@ export const account = {
       none: bi("The queue is empty.", "صف خالی است."),
       hideTag: bi("remove", "حذف"),
       editTag: bi("add / edit", "افزودن / ویرایش"),
-      publishNow: bi("Publish now", "انتشار همین حالا"),
+      publishNow: bi("Publish now", "انتشار فوری"),
       published_: bi("Published.", "منتشر شد."),
       supplier: bi("Supplier", "تأمین‌کننده"),
       material: bi("Raw material", "ماده اولیه"),
@@ -319,12 +319,12 @@ export const account = {
       synonyms: bi("Synonyms / Persian names", "مترادف‌ها / نام فارسی"),
       queue: bi("Add to queue", "افزودن به صف"),
       hide: bi("Remove from the site", "حذف از سایت"),
-      queued: bi("Added to the queue; it goes live at 18:00.", "به صف اضافه شد؛ ساعت ۱۸:۰۰ روی سایت می‌رود."),
+      queued: bi("Added to the queue; it goes live at 18:00.", "به صف اضافه شد؛ ساعت ۱۸:۰۰ در سایت منتشر می‌شود."),
       invalid: bi("Fill in the required fields.", "فیلدهای ضروری را کامل کنید."),
     },
     noDatabase: bi(
       "The database is not connected: set DATABASE_URL in the Liara app settings.",
-      "پایگاه داده وصل نیست: DATABASE_URL را در تنظیمات برنامه در لیارا وارد کنید.",
+      "پایگاه داده متصل نیست: DATABASE_URL را در تنظیمات برنامه در لیارا وارد کنید.",
     ),
   },
 } as const;

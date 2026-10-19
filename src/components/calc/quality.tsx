@@ -123,7 +123,7 @@ export function Rot({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "USP <781> / Ph. Eur. 2.2.7: for a solution [α] = 100·α ÷ (l·c), with l in dm and c in g per 100 mL (on the dried or anhydrous basis when the monograph says so); for a neat liquid [α] = α ÷ (l·ρ). Measured at the sodium D line (589.3 nm) and 20 °C (Ph. Eur.) or 25 °C (USP) unless the monograph states otherwise. Dextrorotation is positive.",
-        `${ltr("USP <781>")} و ${ltr("Ph. Eur. 2.2.7")}: برای محلول ${ltr("[α] = 100·α ÷ (l·c)")} که l بر حسب دسی‌متر و c گرم در ۱۰۰ میلی‌لیتر است (در صورت ذکر مونوگراف، بر پایه ماده خشک یا بی‌آب)؛ برای مایع خالص ${ltr("[α] = α ÷ (l·ρ)")}. اندازه‌گیری در خط D سدیم ${ltr("(589.3 nm)")} و دمای ۲۰ درجه (فارماکوپه اروپا) یا ۲۵ درجه (USP)، مگر مونوگراف چیز دیگری بگوید. چرخش راست‌گرد مثبت است.`,
+        `${ltr("USP <781>")} و ${ltr("Ph. Eur. 2.2.7")}: برای محلول ${ltr("[α] = 100·α ÷ (l·c)")} که l بر حسب دسی‌متر و c گرم در ۱۰۰ میلی‌لیتر است (در صورت ذکر مونوگراف، بر پایه ماده خشک یا بی‌آب)؛ برای مایع خالص ${ltr("[α] = α ÷ (l·ρ)")}. اندازه‌گیری در خط D سدیم ${ltr("(589.3 nm)")} و دمای ۲۰ درجه (فارماکوپه اروپا) یا ۲۵ درجه (USP)، مگر آنکه در مونوگراف شرایط دیگری ذکر شده باشد. چرخش راست‌گرد مثبت است.`,
       )}
     />
   );
@@ -142,7 +142,7 @@ const solvents: Preset[] = [
   ["Formamide", "فرمامید", "2.2"], ["2-Methoxyethanol", "۲-متوکسی‌اتانول", "0.5"], ["2-Ethoxyethanol", "۲-اتوکسی‌اتانول", "1.6"],
   ["1,2-Dimethoxyethane", "۱،۲-دی‌متوکسی‌اتان", "1.0"], ["1,2-Dichloroethene", "۱،۲-دی‌کلرواتن", "18.7"], ["Trichloroethylene", "تری‌کلرواتیلن", "0.8"],
   ["Methylbutyl ketone", "متیل بوتیل کتون", "0.5"], ["Nitromethane", "نیترومتان", "0.5"], ["Sulfolane", "سولفولان", "1.6"], ["Tetralin", "تترالین", "1.0"],
-  ["Class 3 solvent (e.g. ethanol, acetone, ethyl acetate, 2-propanol)", "حلال کلاس ۳ (مثل اتانول، استون، اتیل استات، ایزوپروپانول)", "50"],
+  ["Class 3 solvent (e.g. ethanol, acetone, ethyl acetate, 2-propanol)", "حلال کلاس ۳ (مانند اتانول، استون، اتیل استات، ایزوپروپانول)", "50"],
 ].map(([en, fa, pde]) => ({ label: bi(en, fa), values: [pde] }));
 
 export function Q3c({ ctx }: { ctx: Ctx }) {
@@ -179,7 +179,7 @@ export function Q3c({ ctx }: { ctx: Ctx }) {
       note={bi(
         "ICH Q3C(R9): concentration limit (ppm) = 1000 × PDE (mg/day) ÷ daily dose (g/day). Option 1 assumes 10 g/day, so the limit is PDE × 100 and applies to every component without further calculation. Option 2 sums the solvent from all components of the daily dose and compares it with the PDE. Class 3 solvents: 50 mg/day (0.5%) without justification. " +
           listNote.en,
-        `${ltr("ICH Q3C(R9)")}: حد غلظت ${ltr("(ppm) = 1000 × PDE (mg/day) ÷ dose (g/day)")}. روش ۱ دوز روزانه را ۱۰ گرم فرض می‌کند، پس حد ${ltr("PDE × 100")} است و برای همه اجزا بدون محاسبه دیگر معتبر است. روش ۲ حلال همه اجزای دوز روزانه را جمع و با PDE مقایسه می‌کند. حلال‌های کلاس ۳: ۵۰ میلی‌گرم در روز (0.5٪) بدون نیاز به توجیه. ${listNote.fa}`,
+        `${ltr("ICH Q3C(R9)")}: حد غلظت ${ltr("(ppm) = 1000 × PDE (mg/day) ÷ dose (g/day)")}. روش ۱ دوز روزانه را ۱۰ گرم فرض می‌کند، بنابراین حد ${ltr("PDE × 100")} است و برای همه اجزا بدون محاسبه دیگر معتبر است. روش ۲ حلال همه اجزای دوز روزانه را جمع و با PDE مقایسه می‌کند. حلال‌های کلاس ۳: ۵۰ میلی‌گرم در روز (0.5٪) بدون نیاز به توجیه. ${listNote.fa}`,
       )}
     />
   );

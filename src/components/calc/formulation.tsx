@@ -15,7 +15,7 @@ const flowClasses: Bi[] = [
   bi("Fair", "متوسط"),
   bi("Passable", "قابل قبول"),
   bi("Poor", "ضعیف"),
-  bi("Very poor", "خیلی ضعیف"),
+  bi("Very poor", "بسیار ضعیف"),
   bi("Very, very poor", "بسیار بسیار ضعیف"),
 ];
 
@@ -66,7 +66,7 @@ export function Flow({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "USP <1174> scale. Carr index ≤ 10 excellent, 11–15 good, 16–20 fair, 21–25 passable, 26–31 poor, 32–37 very poor, ≥ 38 very, very poor; the matching Hausner ratios are 1.00–1.11, 1.12–1.18, 1.19–1.25, 1.26–1.34, 1.35–1.45, 1.46–1.59 and ≥ 1.60. Angle of repose 25–30° excellent up to > 66° very, very poor. Bulk and tapped volumes are measured per USP <616>.",
-        `مقیاس ${ltr("USP <1174>")}. شاخص Carr تا 10 عالی، 11 تا 15 خوب، 16 تا 20 متوسط، 21 تا 25 قابل قبول، 26 تا 31 ضعیف، 32 تا 37 خیلی ضعیف و از 38 به بالا بسیار بسیار ضعیف است؛ نسبت‌های Hausner متناظر 1.00–1.11، 1.12–1.18، 1.19–1.25، 1.26–1.34، 1.35–1.45، 1.46–1.59 و بالای 1.60 است. زاویه سکون 25 تا 30 درجه عالی و بیش از 66 درجه بسیار بسیار ضعیف است. حجم توده و حجم پس از ضربه طبق ${ltr("USP <616>")} اندازه‌گیری می‌شود.`,
+        `مقیاس ${ltr("USP <1174>")}. شاخص Carr تا 10 عالی، 11 تا 15 خوب، 16 تا 20 متوسط، 21 تا 25 قابل قبول، 26 تا 31 ضعیف، 32 تا 37 بسیار ضعیف و از 38 به بالا بسیار بسیار ضعیف است؛ نسبت‌های Hausner متناظر 1.00–1.11، 1.12–1.18، 1.19–1.25، 1.26–1.34، 1.35–1.45، 1.46–1.59 و بالای 1.60 است. زاویه سکون 25 تا 30 درجه عالی و بیش از 66 درجه بسیار بسیار ضعیف است. حجم توده و حجم پس از ضربه طبق ${ltr("USP <616>")} اندازه‌گیری می‌شود.`,
       )}
     />
   );
@@ -97,7 +97,7 @@ export function Caps({ ctx }: { ctx: Ctx }) {
   const best = fits[fits.length - 1];
   let msg = ok ? "" : bad(ctx);
   if (ok && !best)
-    msg = bi("The fill volume exceeds size 000; increase the density (e.g. by granulation) or split the dose.", "حجم پرکردن از سایز 000 بیشتر است؛ دانسیته را افزایش دهید (مثلاً با گرانوله کردن) یا دوز را تقسیم کنید.")[locale];
+    msg = bi("The fill volume exceeds size 000; increase the density (e.g. by granulation) or split the dose.", "حجم پرکردن از اندازه 000 بیشتر است؛ دانسیته را افزایش دهید (مثلاً با گرانوله کردن) یا دوز را تقسیم کنید.")[locale];
   return (
     <Panel
       ctx={ctx}
@@ -110,7 +110,7 @@ export function Caps({ ctx }: { ctx: Ctx }) {
       }
       results={[
         { label: bi("Fill volume needed", "حجم موردنیاز"), value: ok ? `${fixed(need, 3)} mL` : DASH },
-        { label: bi("Smallest suitable size", "کوچک‌ترین سایز مناسب"), value: best ? best[0] : DASH },
+        { label: bi("Smallest suitable size", "کوچک‌ترین اندازه مناسب"), value: best ? best[0] : DASH },
         { label: bi("Body volume filled", "درصد پر شدن بدنه"), value: best ? `${fixed((need / best[1]) * 100, 1)}%` : DASH },
       ]}
       message={msg}
@@ -123,7 +123,7 @@ export function Caps({ ctx }: { ctx: Ctx }) {
         <table className="db">
           <thead>
             <tr>
-              <th>{bi("Size", "سایز")[locale]}</th>
+              <th>{bi("Size", "اندازه")[locale]}</th>
               <th>{bi("Body volume (mL)", "حجم بدنه (mL)")[locale]}</th>
               <th>{bi("Maximum fill at this density (mg)", "حداکثر وزن پرکردن با این دانسیته (mg)")[locale]}</th>
             </tr>

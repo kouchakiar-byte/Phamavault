@@ -38,7 +38,7 @@ function Hlb({ ctx }: { ctx: Ctx }) {
   let plo = DASH, phi = DASH, msg = "";
   if (!(hi > lo) || !Number.isFinite(r) || !(m >= 0)) msg = bad(ctx);
   else if (r < lo || r > hi)
-    msg = bi("The required HLB must lie between the two emulsifiers.", "HLB موردنیاز باید بین HLB دو امولسیفایر باشد.")[locale];
+    msg = bi("The required HLB must lie between the two emulsifiers.", "HLB موردنیاز باید بین HLB دو امولسیون‌کننده باشد.")[locale];
   else {
     const b = (r - lo) / (hi - lo);
     plo = `${fixed((1 - b) * 100, 1)}%  ·  ${fixed((1 - b) * m)} g`;
@@ -51,19 +51,19 @@ function Hlb({ ctx }: { ctx: Ctx }) {
       title={calculation("hlb").title}
       form={
         <>
-          <PresetSelect ctx={ctx} id="h-pair" label={bi("Emulsifier pair", "زوج امولسیفایر")} presets={hlbPairs} targets={["h-lo", "h-hi"]} />
-          <NumberInput ctx={ctx} id="h-lo" label={bi("HLB of low-HLB emulsifier", "HLB امولسیفایر با HLB پایین")} readOnly={locked} />
-          <NumberInput ctx={ctx} id="h-hi" label={bi("HLB of high-HLB emulsifier", "HLB امولسیفایر با HLB بالا")} readOnly={locked} />
+          <PresetSelect ctx={ctx} id="h-pair" label={bi("Emulsifier pair", "زوج امولسیون‌کننده")} presets={hlbPairs} targets={["h-lo", "h-hi"]} />
+          <NumberInput ctx={ctx} id="h-lo" label={bi("HLB of low-HLB emulsifier", "HLB امولسیون‌کننده با HLB پایین")} readOnly={locked} />
+          <NumberInput ctx={ctx} id="h-hi" label={bi("HLB of high-HLB emulsifier", "HLB امولسیون‌کننده با HLB بالا")} readOnly={locked} />
           <NumberInput ctx={ctx} id="h-req" label={bi("Required HLB of the oil phase", "HLB موردنیاز فاز روغنی")} />
-          <NumberInput ctx={ctx} id="h-mass" label={bi("Total emulsifier (g)", "مقدار کل امولسیفایر (گرم)")} />
+          <NumberInput ctx={ctx} id="h-mass" label={bi("Total emulsifier (g)", "مقدار کل امولسیون‌کننده (گرم)")} />
         </>
       }
       results={[
-        { label: bi("Low-HLB emulsifier", "امولسیفایر HLB پایین"), value: plo },
-        { label: bi("High-HLB emulsifier", "امولسیفایر HLB بالا"), value: phi },
+        { label: bi("Low-HLB emulsifier", "امولسیون‌کننده HLB پایین"), value: plo },
+        { label: bi("High-HLB emulsifier", "امولسیون‌کننده HLB بالا"), value: phi },
       ]}
       message={msg}
-      note={bi("High-HLB fraction = (required − low) ÷ (high − low)", "کسر امولسیفایر HLB بالا = (موردنیاز − پایین) ÷ (بالا − پایین)")}
+      note={bi("High-HLB fraction = (required − low) ÷ (high − low)", "کسر امولسیون‌کننده HLB بالا = (موردنیاز − پایین) ÷ (بالا − پایین)")}
     />
   );
 }
@@ -86,7 +86,7 @@ function Iso({ ctx }: { ctx: Ctx }) {
     drug = `${fixed(d, 3)} g`;
     add = a > 0 ? `${fixed(a, 3)} g` : "0 g";
     if (a < 0) msg = bi("The drug alone makes the solution hypertonic.", "دارو به‌تنهایی محلول را هیپرتونیک می‌کند.")[locale];
-    else if (a === 0) msg = bi("The solution is already isotonic.", "محلول همین حالا ایزوتونیک است.")[locale];
+    else if (a === 0) msg = bi("The solution is already isotonic.", "محلول هم‌اکنون ایزوتونیک است.")[locale];
   }
   return (
     <Panel
@@ -260,7 +260,7 @@ function BufCap({ ctx }: { ctx: Ctx }) {
     if (base <= 0 || acid <= 0)
       msg = bi(
         "The added acid or base exceeds the buffer: one form is used up and the pH is no longer buffered.",
-        "اسید یا باز افزوده‌شده از ظرفیت بافر بیشتر است: یکی از دو فرم تمام شده و pH دیگر بافری نیست.",
+        "اسید یا باز افزوده‌شده از ظرفیت بافر بیشتر است: یکی از دو فرم به‌طور کامل مصرف شده و pH دیگر بافری نیست.",
       )[locale];
     else {
       const p = pk + Math.log10(base / acid);
@@ -325,7 +325,7 @@ function Sup({ ctx }: { ctx: Ctx }) {
           <NumberInput ctx={ctx} id="s-dose" label={bi("Drug per suppository (mg)", "دارو در هر شیاف (میلی‌گرم)")} />
           <NumberInput ctx={ctx} id="s-dv" label={bi("Displacement value", "ضریب جابه‌جایی")} />
           <NumberInput ctx={ctx} id="s-n" label={bi("Number of suppositories", "تعداد شیاف")} />
-          <NumberInput ctx={ctx} id="s-ov" label={bi("Overage (%)", "اضافه‌ساخت (%)")} />
+          <NumberInput ctx={ctx} id="s-ov" label={bi("Overage (%)", "Overage (%)")} />
         </>
       }
       results={[
@@ -336,7 +336,7 @@ function Sup({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "Base per unit = mould capacity − (drug ÷ displacement value). Displacement value is the grams of drug that displace 1 g of base.",
-        "پایه هر شیاف = ظرفیت قالب − (دارو ÷ ضریب جابه‌جایی). ضریب جابه‌جایی یعنی چند گرم دارو جای 1 گرم پایه را می‌گیرد.",
+        "پایه هر شیاف = ظرفیت قالب − (دارو ÷ ضریب جابه‌جایی). ضریب جابه‌جایی مقدار دارو (گرم) است که جای 1 گرم پایه را اشغال می‌کند.",
       )}
     />
   );
@@ -481,7 +481,7 @@ const saltForms: Preset[] = [
 ];
 
 const potencyModes = [
-  { value: "pct", label: bi("Assay in % (chemical APIs)", "اسی به درصد (مواد مؤثره شیمیایی)") },
+  { value: "pct", label: bi("Assay in % (chemical APIs)", "Assay به درصد (مواد مؤثره شیمیایی)") },
   { value: "ugmg", label: bi("Potency in µg of active per mg (antibiotics)", "پوتنسی به میکروگرم ماده فعال در هر میلی‌گرم (آنتی‌بیوتیک‌ها)") },
   { value: "iumg", label: bi("Potency in IU per mg (biologics, some antibiotics)", "پوتنسی به واحد بین‌المللی در هر میلی‌گرم (بیولوژیک‌ها و برخی آنتی‌بیوتیک‌ها)") },
 ];
@@ -510,15 +510,15 @@ function Asy({ ctx }: { ctx: Ctx }) {
           <PresetSelect ctx={ctx} id="a-salt" label={bi("Salt / hydrate form", "فرم نمکی یا هیدرات")} presets={saltForms} targets={["a-mws", "a-mwb"]} />
           <NumberInput ctx={ctx} id="a-mws" label={bi("MW of the salt weighed (g/mol)", "وزن مولکولی نمک توزین‌شده (g/mol)")} readOnly={isLocked(ctx, "a-salt")} />
           <NumberInput ctx={ctx} id="a-mwb" label={bi("MW of the base in the label claim (g/mol)", "وزن مولکولی باز در ادعای برچسب (g/mol)")} readOnly={isLocked(ctx, "a-salt")} />
-          <NumberInput ctx={ctx} id="a-assay" label={bi("Assay on the CoA (%)", "اسی در برگه آنالیز (%)")} />
-          <Choice ctx={ctx} id="a-basis" label={bi("Basis of the assay", "مبنای گزارش اسی")} options={potencyBases} />
+          <NumberInput ctx={ctx} id="a-assay" label={bi("Assay on the CoA (%)", "Assay در برگه آنالیز (%)")} />
+          <Choice ctx={ctx} id="a-basis" label={bi("Basis of the assay", "مبنای گزارش Assay")} options={potencyBases} />
           {dried && <NumberInput ctx={ctx} id="a-lod" label={bi("LOD or water content (KF) on the CoA (%)", "LOD یا مقدار آب (کارل فیشر) در برگه آنالیز (%)")} />}
           <NumberInput ctx={ctx} id="a-units" label={bi("Batch size (units)", "اندازه بچ (تعداد واحد)")} />
         </>
       }
       results={[
         { label: bi("Salt factor (MW salt ÷ MW base)", "ضریب نمک (وزن مولکولی نمک ÷ باز)"), value: ok ? fixed(fSalt, 4) : DASH },
-        { label: bi("Assay factor (100 ÷ assay)", "ضریب اسی \u2066(100 ÷ Assay)\u2069"), value: ok ? fixed(fAssay, 4) : DASH },
+        { label: bi("Assay factor (100 ÷ assay)", "ضریب Assay \u2066(100 ÷ Assay)\u2069"), value: ok ? fixed(fAssay, 4) : DASH },
         { label: bi("Water/LOD factor [100 ÷ (100 − LOD)]", "ضریب رطوبت \u2066[100 ÷ (100 − LOD)]\u2069"), value: ok ? fixed(fLod, 4) : DASH },
         { label: bi("Total correction factor F", "فاکتور اصلاح کل F"), value: ok ? fixed(f, 4) : DASH },
         { label: bi("Quantity to weigh per unit", "مقدار توزین در هر واحد"), value: ok ? `${fixed(lc * f, 3)} mg` : DASH },
@@ -528,7 +528,7 @@ function Asy({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "Quantity = label claim × (MW salt ÷ MW base) × (100 ÷ assay) × [100 ÷ (100 − LOD)]. Use the water/LOD factor only when the certificate reports the assay on the dried or anhydrous basis; when the assay is “as is” the factor is 1. Take assay and LOD (or KF water) from the certificate of analysis of the lot in use, and lower the q.s. diluent by the excess so the unit weight stays constant. Example: amlodipine 10 mg as besilate (567.05 / 408.88), assay 99.5% dried basis, LOD 0.5% → F = 1.4008, 14.008 mg per tablet.",
-        "مقدار توزین ⁦= LC × (MW salt ÷ MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]⁩. ضریب رطوبت فقط وقتی به کار می‌رود که اسی در برگه آنالیز بر پایه ماده خشک یا بدون آب گزارش شده باشد؛ اگر اسی «همان‌گونه که هست» (as is) باشد این ضریب ۱ است. اسی و LOD (یا آب کارل فیشر) را از برگه آنالیز همان سری ماده بردارید و مقدار پرکننده q.s. را به اندازه اضافه وزن کم کنید تا وزن واحد ثابت بماند. مثال: آملودیپین ۱۰ میلی‌گرم به صورت بزیلات ⁦(567.05 / 408.88)⁩، اسی 99.5% بر پایه خشک، LOD 0.5% ← ⁦F = 1.4008⁩ و 14.008 میلی‌گرم در هر قرص.",
+        "مقدار توزین ⁦= LC × (MW salt ÷ MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]⁩. ضریب رطوبت فقط وقتی به کار می‌رود که Assay در برگه آنالیز بر پایه ماده خشک یا بدون آب گزارش شده باشد؛ اگر Assay «همان‌گونه که هست» (as is) گزارش شده باشد، این ضریب ۱ است. Assay و LOD (یا آب کارل فیشر) را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه اضافه وزن کم کنید تا وزن واحد ثابت بماند. مثال: آملودیپین ۱۰ میلی‌گرم به صورت بزیلات ⁦(567.05 / 408.88)⁩، Assay 99.5% بر پایه خشک، LOD 0.5% ← ⁦F = 1.4008⁩ و 14.008 میلی‌گرم در هر قرص.",
       )}
     />
   );
@@ -553,7 +553,7 @@ function Pot({ ctx }: { ctx: Ctx }) {
     batch = `${fixed((mg * units) / 1e6, 3)} kg`;
     if (mode !== "iumg") comp = `${fixed(mg - lc * factor, 3)} mg`;
     if (mode === "pct" && pot > 102)
-      msg = bi("An assay above 102% is unusual; check the certificate of analysis.", "اسی بالای 102% غیرمعمول است؛ برگه آنالیز را بررسی کنید.")[locale];
+      msg = bi("An assay above 102% is unusual; check the certificate of analysis.", "Assay بالاتر از 102% غیرمعمول است؛ برگه آنالیز را بررسی کنید.")[locale];
   }
   const lcLabel =
     mode === "iumg"
@@ -569,12 +569,12 @@ function Pot({ ctx }: { ctx: Ctx }) {
         <>
           <Choice ctx={ctx} id="p-mode" label={bi("How potency is reported", "نحوه گزارش پوتنسی")} options={potencyModes} />
           <NumberInput ctx={ctx} id="p-lc" label={lcLabel} />
-          <NumberInput ctx={ctx} id="p-pot" label={bi(`Assay / potency on the CoA (${unit})`, `اسی یا پوتنسی در برگه آنالیز (${unit})`)} />
-          <Choice ctx={ctx} id="p-basis" label={bi("Basis of the assay", "مبنای گزارش اسی")} options={potencyBases} />
+          <NumberInput ctx={ctx} id="p-pot" label={bi(`Assay / potency on the CoA (${unit})`, `Assay یا پوتنسی در برگه آنالیز (${unit})`)} />
+          <Choice ctx={ctx} id="p-basis" label={bi("Basis of the assay", "مبنای گزارش Assay")} options={potencyBases} />
           {dried && (
             <>
               <NumberInput ctx={ctx} id="p-w" label={bi("Water content (KF) or loss on drying (%)", "مقدار آب (کارل فیشر) یا افت وزن در خشک کردن (%)")} />
-              <NumberInput ctx={ctx} id="p-rs" label={bi("Residual solvents (%), if the assay is on the solvent-free basis", "حلال باقیمانده (%)، اگر اسی بر پایه بدون حلال گزارش شده باشد")} />
+              <NumberInput ctx={ctx} id="p-rs" label={bi("Residual solvents (%), if the assay is on the solvent-free basis", "حلال باقیمانده (%)، اگر Assay بر پایه بدون حلال گزارش شده باشد")} />
             </>
           )}
           {mode === "pct" && (
@@ -597,7 +597,7 @@ function Pot({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "% assay: m = LC × SF × 100 ÷ P; µg/mg: m = LC × 1000 ÷ P; IU/mg: m = LC ÷ P, where P is the as-is potency. On a dried, anhydrous or solvent-free basis, P = assay × (100 − W − RS) ÷ 100, with W the water content or LOD and RS the residual solvents (%); leave RS at 0 when LOD is used, since LOD already includes volatile solvents. Take assay and water from the certificate of analysis of the lot in use, and lower the q.s. diluent by the compensation amount so the unit weight stays constant. Example: amoxicillin trihydrate is specified as 900–1050 µg of amoxicillin per mg on the anhydrous basis.",
-        "اسی درصدی: \u2066m = LC × SF × 100 ÷ P\u2069؛ میکروگرم بر میلی‌گرم: \u2066m = LC × 1000 ÷ P\u2069؛ واحد بر میلی‌گرم: \u2066m = LC ÷ P\u2069؛ که P پوتنسی نمونه همان‌گونه که هست (as is) است. اگر اسی بر پایه ماده خشک، بدون آب یا بدون حلال گزارش شده باشد: \u2066P = Assay × (100 − W − RS) ÷ 100\u2069 که W درصد آب یا LOD و RS درصد حلال باقیمانده است؛ اگر از LOD استفاده می‌کنید RS را صفر بگذارید، چون LOD حلال‌های فرار را هم در بر دارد. اسی و رطوبت را از برگه آنالیز همان سری ماده بردارید و مقدار پرکننده q.s. را به اندازه جبران کاهش دهید تا وزن واحد ثابت بماند. مثال: آموکسی‌سیلین تری‌هیدرات با پوتنسی 900 تا 1050 میکروگرم آموکسی‌سیلین در هر میلی‌گرم بر پایه بدون آب مشخص می‌شود.",
+        "Assay درصدی: \u2066m = LC × SF × 100 ÷ P\u2069؛ میکروگرم بر میلی‌گرم: \u2066m = LC × 1000 ÷ P\u2069؛ واحد بر میلی‌گرم: \u2066m = LC ÷ P\u2069؛ که P پوتنسی نمونه همان‌گونه که هست (as is) است. اگر Assay بر پایه ماده خشک، بدون آب یا بدون حلال گزارش شده باشد: \u2066P = Assay × (100 − W − RS) ÷ 100\u2069 که W درصد آب یا LOD و RS درصد حلال باقیمانده است؛ اگر از LOD استفاده می‌کنید RS را صفر بگذارید، چون LOD حلال‌های فرار را هم در بر دارد. Assay و رطوبت را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه جبران کاهش دهید تا وزن واحد ثابت بماند. مثال: آموکسی‌سیلین تری‌هیدرات با پوتنسی 900 تا 1050 میکروگرم آموکسی‌سیلین در هر میلی‌گرم بر پایه بدون آب مشخص می‌شود.",
       )}
     />
   );
@@ -634,7 +634,7 @@ function Batch({ ctx }: { ctx: Ctx }) {
       form={
         <>
           <NumberInput ctx={ctx} id="x-units" label={bi("Batch size (units)", "اندازه بچ (تعداد واحد)")} />
-          <NumberInput ctx={ctx} id="x-ov" label={bi("Overage (%)", "اضافه‌ساخت (%)")} />
+          <NumberInput ctx={ctx} id="x-ov" label={bi("Overage (%)", "Overage (%)")} />
         </>
       }
       results={[
@@ -642,7 +642,7 @@ function Batch({ ctx }: { ctx: Ctx }) {
         { label: bi("Batch weight", "وزن بچ"), value: ok ? `${fixed((sum * scale) / 1e6, 3)} kg` : DASH },
       ]}
       message={ok ? "" : bad(ctx)}
-      note={bi("The formula below is an example. Replace the rows with your own.", "فرمول نمونه است. ردیف‌ها را با فرمول خودتان عوض کنید.")}
+      note={bi("The formula below is an example. Replace the rows with your own.", "این فرمول صرفاً نمونه است. ردیف‌ها را با فرمول خود جایگزین کنید.")}
     >
       <div className="overflow-x-auto rounded-xl border border-line">
         <table className="db min-w-[520px]">

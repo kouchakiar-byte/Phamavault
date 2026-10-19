@@ -17,7 +17,7 @@ export const calculations = [
     key: "pot",
     group: "formulation",
     label: bi("Potency calculation", "محاسبه پوتنسی (Potency)"),
-    title: bi("Potency calculation: API quantity from assay, water, residual solvents and salt factor", "محاسبه پوتنسی: مقدار ماده مؤثره بر اساس اسی، رطوبت، حلال باقیمانده و ضریب نمک"),
+    title: bi("Potency calculation: API quantity from assay, water, residual solvents and salt factor", "محاسبه پوتنسی: مقدار ماده مؤثره بر اساس Assay، رطوبت، حلال باقیمانده و ضریب نمک"),
     equation: "m = LC × SF × 100 / [Assay × (100 − W − RS) / 100]",
   },
   {
@@ -26,7 +26,7 @@ export const calculations = [
     label: bi("Assay correction factor", "محاسبه Assay در فرمولاسیون"),
     title: bi(
       "Assay correction in formulation: salt factor × assay factor × water/LOD factor",
-      "محاسبه Assay در فرمولاسیون: ضریب نمک × ضریب اسی × ضریب رطوبت (LOD/Water)",
+      "محاسبه Assay در فرمولاسیون: ضریب نمک × ضریب Assay × ضریب رطوبت (LOD/Water)",
     ),
     equation: "F = (MW salt ÷ MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]",
   },
@@ -41,7 +41,7 @@ export const calculations = [
     key: "hlb",
     group: "formulation",
     label: bi("HLB blending", "محاسبه HLB"),
-    title: bi("HLB blending of an emulsifier pair", "محاسبه HLB مخلوط دو امولسی‌فایر"),
+    title: bi("HLB blending of an emulsifier pair", "محاسبه HLB مخلوط دو امولسیون‌کننده"),
     equation: "HLB_mix = f_A·HLB_A + f_B·HLB_B",
   },
   {
@@ -54,8 +54,8 @@ export const calculations = [
   {
     key: "caps",
     group: "formulation",
-    label: bi("Capsule size and fill", "انتخاب سایز کپسول"),
-    title: bi("Hard capsule size selection from fill weight and blend density", "انتخاب سایز کپسول سخت از وزن پرکردن و دانسیته مخلوط"),
+    label: bi("Capsule size and fill", "انتخاب اندازه کپسول"),
+    title: bi("Hard capsule size selection from fill weight and blend density", "انتخاب اندازه کپسول سخت از وزن پرکردن و دانسیته مخلوط"),
     equation: "V = fill weight / ρ_tapped",
   },
   {
@@ -104,7 +104,7 @@ export const calculations = [
     key: "maco",
     group: "formulation",
     label: bi("Cleaning validation (MACO)", "اعتبارسنجی تمیزکاری (MACO)"),
-    title: bi("Cleaning validation: maximum allowable carryover and swab/rinse limits", "اعتبارسنجی تمیزکاری: حداکثر انتقال مجاز (MACO) و حد سواب و آبکشی"),
+    title: bi("Cleaning validation: maximum allowable carryover and swab/rinse limits", "اعتبارسنجی تمیزکاری: حداکثر انتقال مجاز (MACO) و حدود نمونه‌برداری Swab و Rinse"),
     equation: "MACO = PDE × MBS / MDD ;  swab limit = MACO × A_swab / A_shared",
   },
   {
@@ -229,7 +229,7 @@ export const calculations = [
   {
     key: "tit",
     group: "analysis",
-    label: bi("Titrimetric assay", "تعیین مقدار تیتراسیون"),
+    label: bi("Titrimetric assay", "تعیین مقدار تیتریمتری"),
     title: bi("Titrimetric assay (direct or back titration)", "تعیین مقدار به روش تیتراسیون (مستقیم یا برگشتی)"),
     equation: "% = (V − V_b)·(M/M_nom)·E / W × 100",
   },
@@ -535,5 +535,5 @@ export const refUrl = (ref: string): string | undefined => refLinks.find(([prefi
 
 export const referencesAccess = bi(
   "Each reference links to its official page; USP–NF, BP and Ph. Eur. texts need a subscription.",
-  "هر مرجع به صفحه رسمی‌اش لینک شده است؛ متن کامل USP–NF، BP و فارماکوپه اروپا نیاز به اشتراک دارد.",
+  "هر مرجع به صفحه رسمی آن لینک شده است؛ متن کامل USP–NF، BP و فارماکوپه اروپا نیاز به اشتراک دارد.",
 );

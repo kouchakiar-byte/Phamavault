@@ -64,7 +64,7 @@
     },
     "v": {
      "en": "the sucrose fraction dissolves readily in water, while the starch fraction is insoluble, so the cores soften and partly disintegrate in water",
-     "fa": "بخش ساکارز به‌راحتی در آب حل می‌شود ولی بخش نشاسته نامحلول است؛ بنابراین هسته‌ها در آب نرم شده و تا حدی از هم می‌پاشند"
+     "fa": "بخش ساکارز به‌راحتی در آب حل می‌شود ولی بخش نشاسته نامحلول است؛ بنابراین هسته‌ها در آب نرم شده و تا حدی متلاشی می‌شوند"
     }
    },
    {
@@ -144,7 +144,7 @@
     },
     "v": {
      "en": "95.0–98.0% (dried basis); the remainder is, for example, maltodextrin or invert sugar, and a lubricant may be present",
-     "fa": "95.0–98.0٪ (بر پایه خشک)؛ باقی‌مانده مثلاً مالتودکسترین یا شکر اینورت است و ممکن است لغزان‌کننده نیز داشته باشد"
+     "fa": "95.0–98.0٪ (بر پایه خشک)؛ باقی‌مانده مثلاً مالتودکسترین یا شکر اینورت است و ممکن است روان‌کننده نیز داشته باشد"
     }
    },
    {
@@ -214,11 +214,11 @@
   },
   "related": {
    "en": "Sucrose; confectioner's sugar; sugar spheres; dextrates.",
-   "fa": "ساکارز؛ پودر قند؛ کره‌های شکر؛ دکستریت‌ها."
+   "fa": "ساکارز؛ پودر قند؛ کره‌های شکر؛ دکسترات‌ها."
   },
   "comments": {
    "en": "Tablets made with compressible sugar can harden on storage, especially if exposed to moisture and then dried. A lubricant such as magnesium stearate is usually needed, because sugar-based blends tend to stick to punches.",
-   "fa": "قرص‌های ساخته‌شده با شکر قابل تراکم ممکن است در طول نگهداری سخت‌تر شوند، به‌ویژه اگر رطوبت جذب و دوباره خشک شوند. معمولاً به لغزان‌کننده‌ای مانند منیزیم استئارات نیاز است، چون مخلوط‌های قندی تمایل به چسبیدن به پانچ دارند."
+   "fa": "قرص‌های ساخته‌شده با شکر قابل تراکم ممکن است در طول نگهداری سخت‌تر شوند، به‌ویژه اگر رطوبت جذب و دوباره خشک شوند. معمولاً به روان‌کننده‌ای مانند منیزیم استئارات نیاز است، چون مخلوط‌های قندی تمایل به چسبیدن به پانچ دارند."
   },
   "refs": [
    "usp",
@@ -476,7 +476,7 @@
   "mw": "379.27",
   "applications": {
    "en": "Used in oral solid dosage forms as a glidant and lubricant (about 1–10% w/w) and as a diluent (about 5–30% w/w), and as an anti-tacking agent in film and sugar coating. It is also used as a dusting powder (90–99%), in cosmetics and in foods.",
-   "fa": "در اشکال دارویی جامد خوراکی به عنوان روان‌کننده (گلایدنت) و لغزان‌کننده (حدود 1–10٪ وزنی) و رقیق‌کننده (حدود 5–30٪ وزنی)، و به عنوان ضدچسبندگی در پوشش فیلمی و قندی مصرف می‌شود. به عنوان پودر پاشیدنی (90–99٪)، در صنایع آرایشی و در غذا نیز به کار می‌رود."
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان تسهیل‌کننده جریان (Glidant) و روان‌کننده (Lubricant) با غلظت حدود 1–10٪ وزنی و رقیق‌کننده (حدود 5–30٪ وزنی)، و به عنوان ضدچسبندگی در پوشش فیلمی و قندی مصرف می‌شود. به عنوان پودر پاشیدنی (90–99٪)، در صنایع آرایشی و در غذا نیز به کار می‌رود."
   },
   "description": {
    "en": "A very fine, white to greyish-white, odourless, impalpable crystalline powder that is unctuous, adheres readily to the skin and is free from grittiness. It is a natural mineral, mainly hydrated magnesium silicate, that may contain small amounts of aluminium silicate and iron; pharmacopoeial talc must be free from asbestos.",
@@ -490,7 +490,7 @@
     },
     "v": {
      "en": "varies with grade; pharmaceutical grades are fine, micronised or milled powders, and particle size affects lubricant and glidant efficiency",
-     "fa": "بسته به گرید متفاوت است؛ گریدهای دارویی پودرهای ریز میکرونیزه یا آسیاب‌شده‌اند و اندازه ذره بر کارایی لغزان‌کنندگی و روان‌کنندگی اثر دارد"
+     "fa": "بسته به گرید متفاوت است؛ گریدهای دارویی پودرهای ریز میکرونیزه یا آسیاب‌شده‌اند و اندازه ذره بر کارایی روان‌کنندگی و تسهیل جریان اثر دارد"
     }
    },
    {
@@ -564,7 +564,7 @@
   },
   "comments": {
    "en": "Talc is hydrophobic and, at higher levels, can slow tablet disintegration and dissolution. Its lubricant efficiency is lower than that of magnesium stearate, so it is often combined with it. Pharmacopoeias now require specific tests for amphibole and serpentine asbestos.",
-   "fa": "تالک آب‌گریز است و در غلظت‌های بالاتر می‌تواند متلاشی شدن و انحلال قرص را کند کند. کارایی لغزان‌کنندگی آن از منیزیم استئارات کمتر است و به همین دلیل اغلب همراه آن مصرف می‌شود. فارماکوپه‌ها اکنون آزمون‌های ویژه‌ای برای آزبست آمفیبول و سرپانتین الزامی کرده‌اند."
+   "fa": "تالک آب‌گریز است و در غلظت‌های بالاتر می‌تواند متلاشی شدن و انحلال قرص را کند کند. کارایی روان‌کنندگی آن از منیزیم استئارات کمتر است و به همین دلیل اغلب همراه آن مصرف می‌شود. فارماکوپه‌ها اکنون آزمون‌های ویژه‌ای برای آزبست آمفیبول و سرپانتین الزامی کرده‌اند."
   },
   "refs": [
    "usp",
@@ -874,7 +874,7 @@
     },
     "v": {
      "en": "very slightly soluble in water (about 1 in 1000); very soluble in ethanol (95%); freely soluble in ether, chloroform and fixed and volatile oils",
-     "fa": "خیلی کم محلول در آب (حدود 1 در 1000)؛ بسیار محلول در اتانول 95٪؛ به‌راحتی محلول در اتر، کلروفرم و روغن‌های ثابت و فرار"
+     "fa": "بسیار کم محلول در آب (حدود 1 در 1000)؛ بسیار محلول در اتانول 95٪؛ به‌راحتی محلول در اتر، کلروفرم و روغن‌های ثابت و فرار"
     }
    },
    {
@@ -1154,7 +1154,7 @@
   },
   "comments": {
    "en": "Iran is a major source of tragacanth, and the ribbon grades are generally of higher quality than the flake grades. Because the gum clumps when added to water, it is best dispersed first in a wetting agent such as ethanol, glycerol or propylene glycol, or mixed with other powders, before water is added. Quality and viscosity vary between natural lots.",
-   "fa": "ایران از منابع اصلی کتیرا (تراگاکانت) است و گریدهای نواری عموماً کیفیت بالاتری از گریدهای پولکی دارند. چون صمغ هنگام افزودن به آب گلوله می‌شود، بهتر است ابتدا در یک عامل مرطوب‌کننده مانند اتانول، گلیسرول یا پروپیلن گلیکول پراکنده یا با سایر پودرها مخلوط و سپس آب اضافه شود. کیفیت و ویسکوزیته بین سری‌های طبیعی متفاوت است."
+   "fa": "ایران از منابع اصلی کتیرا (تراگاکانت) است و گریدهای نواری عموماً کیفیت بالاتری از گریدهای پولکی دارند. چون صمغ هنگام افزودن به آب کلوخه می‌شود، بهتر است ابتدا در یک عامل مرطوب‌کننده مانند اتانول، گلیسرول یا پروپیلن گلیکول پراکنده یا با سایر پودرها مخلوط و سپس آب اضافه شود. کیفیت و ویسکوزیته بین سری‌های طبیعی متفاوت است."
   },
   "refs": [
    "usp",
@@ -1231,7 +1231,7 @@
     },
     "v": {
      "en": "freely soluble in water; very slightly soluble in ethanol",
-     "fa": "به‌راحتی محلول در آب؛ خیلی کم محلول در اتانول"
+     "fa": "به‌راحتی محلول در آب؛ بسیار کم محلول در اتانول"
     }
    },
    {
@@ -1306,7 +1306,7 @@
   "mw": "218.20",
   "applications": {
    "en": "Used mainly as a hydrophilic plasticiser in aqueous and solvent-based film coatings of tablets, beads and granules, typically at about 10–35% w/w of the polymer. It is also used as a humectant, as a solvent for flavours and drugs, in cosmetics and in perfumery, and as a food additive.",
-   "fa": "عمدتاً به عنوان پلاستی‌سایزر آب‌دوست در پوشش‌های فیلمی آبی و حلالی قرص، بید و گرانول، معمولاً با غلظت حدود 10–35٪ وزنی پلیمر، مصرف می‌شود. به عنوان مرطوب‌نگه‌دارنده، حلال طعم‌دهنده‌ها و داروها، در صنایع آرایشی و عطرسازی و به عنوان افزودنی غذایی نیز به کار می‌رود."
+   "fa": "عمدتاً به عنوان پلاستی‌سایزر آب‌دوست در پوشش‌های فیلمی آبی و حلالی قرص، دانه (bead) و گرانول، معمولاً با غلظت حدود 10–35٪ وزنی پلیمر، مصرف می‌شود. به عنوان مرطوب‌نگه‌دارنده، حلال طعم‌دهنده‌ها و داروها، در صنایع آرایشی و عطرسازی و به عنوان افزودنی غذایی نیز به کار می‌رود."
   },
   "description": {
    "en": "A colourless, slightly viscous, oily liquid with a slight fatty odour and a bitter taste. It is the triacetyl ester of glycerol.",
@@ -1836,7 +1836,7 @@
   },
   "incompatibilities": {
    "en": "As a primary amine it reacts with aldehydes and ketones and can undergo Maillard reactions with reducing sugars. It may corrode copper, brass and aluminium, and reacts with acids.",
-   "fa": "به عنوان آمین نوع اول با آلدهیدها و کتون‌ها واکنش می‌دهد و ممکن است با قندهای احیاکننده واکنش میلارد بدهد. ممکن است مس، برنج و آلومینیوم را خورده کند و با اسیدها واکنش می‌دهد."
+   "fa": "به عنوان آمین نوع اول با آلدهیدها و کتون‌ها واکنش می‌دهد و ممکن است با قندهای احیاکننده واکنش میلارد بدهد. ممکن است مس، برنج و آلومینیوم را دچار خوردگی کند و با اسیدها واکنش می‌دهد."
   },
   "manufacture": {
    "en": "Prepared by condensing nitromethane with formaldehyde in the presence of a base and reducing the resulting 2-nitro-2-(hydroxymethyl)propane-1,3-diol to the amine.",
@@ -1996,7 +1996,7 @@
   "mw": "",
   "applications": {
    "en": "Used as a tablet and capsule lubricant, typically at about 1–6% w/w, and as a matrix-forming agent or hot-melt coating in sustained-release and taste-masked products. It is also used as a viscosity modifier and stiffening agent in ointments, creams and suppository bases, and to thicken oily liquids in soft capsule fills.",
-   "fa": "به عنوان لغزان‌کننده قرص و کپسول، معمولاً با غلظت حدود 1–6٪ وزنی، و به عنوان عامل تشکیل‌دهنده ماتریکس یا پوشش ذوبی (hot-melt) در فرآورده‌های آهسته‌رهش و فرآورده‌های با طعم پوشانده‌شده به کار می‌رود. به عنوان تنظیم‌کننده ویسکوزیته و سفت‌کننده در پمادها، کرم‌ها و پایه‌های شیاف و برای غلیظ کردن مایعات روغنی در محتوای کپسول نرم نیز مصرف می‌شود."
+   "fa": "به عنوان روان‌کننده (Lubricant) قرص و کپسول، معمولاً با غلظت حدود 1–6٪ وزنی، و به عنوان عامل تشکیل‌دهنده ماتریکس یا پوشش ذوبی (hot-melt) در فرآورده‌های آهسته‌رهش و فرآورده‌های با طعم پوشانده‌شده به کار می‌رود. به عنوان تنظیم‌کننده ویسکوزیته و قوام‌دهنده در پمادها، کرم‌ها و پایه‌های شیاف و برای غلیظ کردن مایعات روغنی در محتوای کپسول نرم نیز مصرف می‌شود."
   },
   "description": {
    "en": "Type I material is a white to yellowish-white, waxy fine powder, flakes or pellets with a bland taste and little odour. It consists mainly of triglycerides of saturated C16–C18 fatty acids (palmitic and stearic acids), produced by hydrogenating refined oils such as cottonseed, soybean or palm oil.",
@@ -2235,7 +2235,7 @@
   "mw": "18.02",
   "applications": {
    "en": "The vehicle and solvent for parenteral products and the water used in their manufacture, including final rinsing of containers and equipment that contact parenteral products. Sterile water for injections in final containers is used to reconstitute or dilute powders and concentrates for injection.",
-   "fa": "حامل و حلال فرآورده‌های تزریقی و آبی است که در ساخت آن‌ها، از جمله شستشوی نهایی ظروف و تجهیزاتی که با فرآورده تزریقی تماس دارند، به کار می‌رود. آب استریل برای تزریق در ظروف نهایی برای بازسازی یا رقیق کردن پودرها و غلیظ‌های تزریقی مصرف می‌شود."
+   "fa": "حامل و حلال فرآورده‌های تزریقی و آبی است که در ساخت آن‌ها، از جمله شستشوی نهایی ظروف و تجهیزاتی که با فرآورده تزریقی تماس دارند، به کار می‌رود. آب استریل برای تزریق در ظروف نهایی برای بازسازی یا رقیق کردن پودرها و کنسانتره‌های تزریقی مصرف می‌شود."
   },
   "description": {
    "en": "A clear, colourless, odourless and tasteless liquid. Water for injections in bulk is purified water of high chemical and microbiological quality with a specified endotoxin limit; it is not necessarily sterile until it has been filled and sterilised.",
@@ -2477,7 +2477,7 @@
   "mw": "",
   "applications": {
    "en": "Used as an emulsifying agent and stiffener to make o/w creams and emulsifying ointments. Classic examples are Emulsifying Ointment BP (30% emulsifying wax with white soft paraffin and liquid paraffin) and Aqueous Cream BP, which contains 30% emulsifying ointment.",
-   "fa": "به عنوان عامل امولسیون‌کننده و سفت‌کننده برای ساخت کرم‌های روغن در آب و پمادهای امولسیون‌شونده به کار می‌رود. نمونه‌های کلاسیک آن Emulsifying Ointment BP (30٪ موم امولسیون‌کننده همراه با پارافین نرم سفید و پارافین مایع) و Aqueous Cream BP است که 30٪ پماد امولسیون‌کننده دارد."
+   "fa": "به عنوان عامل امولسیون‌کننده و قوام‌دهنده برای ساخت کرم‌های روغن در آب و پمادهای امولسیون‌شونده به کار می‌رود. نمونه‌های کلاسیک آن Emulsifying Ointment BP (30٪ موم امولسیون‌کننده همراه با پارافین نرم سفید و پارافین مایع) و Aqueous Cream BP است که 30٪ پماد امولسیون‌کننده دارد."
   },
   "description": {
    "en": "A white or pale yellow waxy solid or flakes with a faint characteristic odour. It becomes plastic when warm and melts to a clear liquid. On mixing with water when melted it forms stable o/w emulsions.",
@@ -2597,7 +2597,7 @@
   "mw": "",
   "applications": {
    "en": "Used mainly as a polishing agent for sugar-coated and film-coated tablets, applied in very small amounts as a fine powder or as a solution or emulsion, to give a glossy finish. It is also used in controlled-release matrices and melt-processed products, as a stiffener in topical preparations and cosmetics such as lipsticks, and as a glazing agent in foods.",
-   "fa": "عمدتاً به عنوان عامل براق‌کننده برای قرص‌های روکش قندی و فیلمی به کار می‌رود که به مقدار بسیار کم به صورت پودر ریز یا محلول یا امولسیون استفاده می‌شود تا سطح براقی ایجاد کند. در ماتریکس‌های رهش کنترل‌شده و فرآورده‌های ساخته‌شده به روش ذوبی، به عنوان سفت‌کننده در فرآورده‌های موضعی و آرایشی مانند رژلب، و به عنوان براق‌کننده در غذا نیز مصرف می‌شود."
+   "fa": "عمدتاً به عنوان عامل براق‌کننده برای قرص‌های روکش قندی و فیلمی به کار می‌رود که به مقدار بسیار کم به صورت پودر ریز یا محلول یا امولسیون استفاده می‌شود تا سطح براقی ایجاد کند. در ماتریکس‌های رهش کنترل‌شده و فرآورده‌های ساخته‌شده به روش ذوبی، به عنوان قوام‌دهنده در فرآورده‌های موضعی و آرایشی مانند رژلب، و به عنوان براق‌کننده در غذا نیز مصرف می‌شود."
   },
   "description": {
    "en": "Light brown to pale yellow powder, flakes or irregular lumps of hard, brittle wax with a characteristic bland odour and practically no taste. It consists mainly of esters of long-chain fatty acids and fatty alcohols, with free acids, alcohols, hydrocarbons and resins.",
@@ -2710,7 +2710,7 @@
   "mw": "",
   "applications": {
    "en": "Used as a stiffening agent in creams and ointments, where it increases consistency and reduces 'sweating' of oils from petrolatum-based bases. It is also used in tablet and capsule coatings, in controlled-release matrices, in cosmetics and as a glazing and coating agent in foods.",
-   "fa": "به عنوان سفت‌کننده در کرم‌ها و پمادها به کار می‌رود و قوام را افزایش و تراوش روغن از پایه‌های بر پایه پترولاتوم را کاهش می‌دهد. در پوشش قرص و کپسول، ماتریکس‌های رهش کنترل‌شده، محصولات آرایشی و به عنوان براق‌کننده و پوشش‌دهنده در غذا نیز مصرف می‌شود."
+   "fa": "به عنوان قوام‌دهنده در کرم‌ها و پمادها به کار می‌رود و قوام را افزایش و تراوش روغن از پایه‌های بر پایه پترولاتوم را کاهش می‌دهد. در پوشش قرص و کپسول، ماتریکس‌های رهش کنترل‌شده، محصولات آرایشی و به عنوان براق‌کننده و پوشش‌دهنده در غذا نیز مصرف می‌شود."
   },
   "description": {
    "en": "Odourless, white to yellow or amber, waxy solid made of very small, irregular crystals. It is more flexible, tougher and more adhesive than paraffin wax and holds oils well.",

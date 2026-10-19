@@ -131,11 +131,11 @@
   "mw": "60.08",
   "applications": {
    "en": "Used mainly as a glidant to improve the flow of powders in tablet and capsule manufacture, and as an anticaking agent, adsorbent and viscosity-increasing or thixotropic agent in liquids, gels, ointments and suppositories. Typical concentrations: glidant 0.1–1.0%; aerosols 0.5–2.0%; emulsion stabiliser 1.0–5.0%; suspending and thickening agent 2.0–10.0%. It is also used to convert oily liquids into free-flowing powders.",
-   "fa": "عمدتاً به عنوان روان‌کننده جریان (گلایدنت) برای بهبود جریان‌پذیری پودرها در ساخت قرص و کپسول، و نیز به عنوان ضدکلوخه، جاذب و عامل افزایش ویسکوزیته یا تیکسوتروپ در مایعات، ژل‌ها، پمادها و شیاف‌ها به کار می‌رود. غلظت‌های متداول: گلایدنت 0.1–1.0٪؛ آئروسل‌ها 0.5–2.0٪؛ پایدارکننده امولسیون 1.0–5.0٪؛ عامل تعلیق‌کننده و غلیظ‌کننده 2.0–10.0٪. برای تبدیل مایعات روغنی به پودر روان نیز استفاده می‌شود."
+   "fa": "عمدتاً به عنوان تسهیل‌کننده جریان (Glidant) برای بهبود جریان‌پذیری پودرها در ساخت قرص و کپسول، و نیز به عنوان ضدکلوخه، جاذب و عامل افزایش ویسکوزیته یا تیکسوتروپ در مایعات، ژل‌ها، پمادها و شیاف‌ها به کار می‌رود. غلظت‌های متداول: تسهیل‌کننده جریان 0.1–1.0٪؛ آئروسل‌ها 0.5–2.0٪؛ پایدارکننده امولسیون 1.0–5.0٪؛ عامل تعلیق‌کننده و غلیظ‌کننده 2.0–10.0٪. برای تبدیل مایعات روغنی به پودر روان نیز استفاده می‌شود."
   },
   "description": {
    "en": "A light, loose, bluish-white, odourless and tasteless amorphous powder made of submicroscopic fumed silica particles that form loose aggregates. It has a very large specific surface area and a very low bulk density.",
-   "fa": "پودر آمورف سبک، پف‌دار، سفید مایل به آبی، بی‌بو و بی‌مزه که از ذرات زیرمیکروسکوپی سیلیکای دوددار (fumed) تشکیل شده و آگلومره‌های سستی می‌سازد. سطح ویژه بسیار بالا و چگالی توده بسیار پایینی دارد."
+   "fa": "پودر آمورف سبک، حجیم، سفید مایل به آبی، بی‌بو و بی‌مزه که از ذرات زیرمیکروسکوپی سیلیکای دودی (fumed) تشکیل شده و آگلومره‌های سستی می‌سازد. سطح ویژه بسیار بالا و چگالی توده بسیار پایینی دارد."
   },
   "properties": [
    {
@@ -199,11 +199,11 @@
   },
   "manufacture": {
    "en": "Made by vapour-phase hydrolysis of silicon tetrachloride in an oxygen–hydrogen flame at high temperature (about 1800 °C); the resulting fumed silica is collected as a fluffy powder.",
-   "fa": "از هیدرولیز فاز بخار سیلیسیم تتراکلرید در شعله اکسیژن–هیدروژن در دمای بالا (حدود 1800 °C) تهیه می‌شود و سیلیکای دوددار حاصل به صورت پودر پف‌دار جمع‌آوری می‌شود."
+   "fa": "از هیدرولیز فاز بخار سیلیسیم تتراکلرید در شعله اکسیژن–هیدروژن در دمای بالا (حدود 1800 °C) تهیه می‌شود و سیلیکای دودی حاصل به صورت پودر حجیم جمع‌آوری می‌شود."
   },
   "safety": {
    "en": "Essentially non-toxic and non-irritant after oral or topical use, and not absorbed from the gut. Unlike crystalline silica, amorphous colloidal silica has not been linked to silicosis, but inhalation of the fine dust should still be avoided. Local tissue reactions have been seen after injection.",
-   "fa": "پس از مصرف خوراکی یا موضعی اساساً غیرسمی و غیرمحرک است و از دستگاه گوارش جذب نمی‌شود. برخلاف سیلیکای کریستالی، سیلیکای کلوئیدی آمورف با سیلیکوزیس مرتبط دانسته نشده است، ولی باز هم باید از استنشاق گردوغبار ریز آن پرهیز کرد. پس از تزریق، واکنش‌های بافتی موضعی دیده شده است."
+   "fa": "پس از مصرف خوراکی یا موضعی اساساً غیرسمی و غیرمحرک است و از دستگاه گوارش جذب نمی‌شود. برخلاف سیلیکای کریستالی، سیلیکای کلوئیدی آمورف با سیلیکوزیس مرتبط دانسته نشده است، ولی همچنان باید از استنشاق گردوغبار ریز آن پرهیز کرد. پس از تزریق، واکنش‌های بافتی موضعی دیده شده است."
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled. The very fine, light powder is easily airborne; wear eye protection, gloves and a suitable respirator, and use local exhaust ventilation.",
@@ -219,7 +219,7 @@
   },
   "comments": {
    "en": "A glidant works best at low levels; above about 1% flow often stops improving and may even worsen. Because of its low bulk density it should be pre-sieved or pre-blended with part of the formulation to avoid agglomerates and poor distribution.",
-   "fa": "این گلایدنت در مقادیر کم بهترین اثر را دارد؛ بیش از حدود 1٪ معمولاً جریان‌پذیری بهتر نمی‌شود و حتی ممکن است بدتر شود. به دلیل چگالی توده پایین، باید پیش از اختلاط الک یا با بخشی از فرمولاسیون پیش‌مخلوط شود تا کلوخه ایجاد نشود و توزیع یکنواخت باشد."
+   "fa": "این تسهیل‌کننده جریان در مقادیر کم بهترین اثر را دارد؛ بیش از حدود 1٪ معمولاً جریان‌پذیری بهتر نمی‌شود و حتی ممکن است بدتر شود. به دلیل چگالی توده پایین، باید پیش از اختلاط الک یا با بخشی از فرمولاسیون پیش‌مخلوط شود تا کلوخه ایجاد نشود و توزیع یکنواخت باشد."
   },
   "refs": [
    "usp",
@@ -262,7 +262,7 @@
     },
     "v": {
      "en": "insoluble; colour by dispersion; more stable to light and heat than the parent dye; preferred in film coatings and suspensions; may bleed at strongly acidic or alkaline pH",
-     "fa": "نامحلول؛ با پراکنده شدن رنگ می‌دهند؛ در برابر نور و گرما پایدارتر از رنگ مادر؛ در روکش فیلمی و سوسپانسیون ترجیح داده می‌شوند؛ در pH بسیار اسیدی یا قلیایی ممکن است رنگ پس بدهند"
+     "fa": "نامحلول؛ با پراکنده شدن رنگ می‌دهند؛ در برابر نور و گرما پایدارتر از رنگ مادر؛ در روکش فیلمی و سوسپانسیون ترجیح داده می‌شوند؛ در pH بسیار اسیدی یا قلیایی ممکن است رنگ آزاد کنند"
     }
    },
    {
@@ -638,7 +638,7 @@
   },
   "comments": {
    "en": "Hydrogenated cottonseed oil, a solid fat used as a tablet lubricant and in lipid matrices, is a different material with its own Ph. Eur. and USP–NF monographs. For injections, low-peroxide grades and protection from oxidation are needed.",
-   "fa": "روغن پنبه‌دانه هیدروژنه چربی جامدی است که به عنوان لغزان‌کننده قرص و در ماتریس‌های لیپیدی مصرف می‌شود و ماده‌ای متفاوت با تک‌نگاری‌های جداگانه در فارماکوپه اروپا و USP–NF است. برای تزریقات، گریدهای کم‌پراکسید و محافظت از اکسیداسیون لازم است."
+   "fa": "روغن پنبه‌دانه هیدروژنه چربی جامدی است که به عنوان روان‌کننده (Lubricant) قرص و در ماتریس‌های لیپیدی مصرف می‌شود و ماده‌ای متفاوت با تک‌نگاری‌های جداگانه در فارماکوپه اروپا و USP–NF است. برای تزریقات، گریدهای کم‌پراکسید و محافظت از اکسیداسیون لازم است."
   },
   "refs": [
    "usp",
@@ -671,7 +671,7 @@
   },
   "description": {
    "en": "A colourless, yellowish, pale brownish-yellow or pinkish liquid with a strong phenolic, creosote-like odour. It darkens on ageing and on exposure to light and air. Crude cresol is a mixture of the three isomers obtained from coal tar or petroleum.",
-   "fa": "مایعی بی‌رنگ، زرد مایل، زرد قهوه‌ای کم‌رنگ یا صورتی با بوی تند فنولی شبیه کرئوزوت. با گذشت زمان و در معرض نور و هوا تیره می‌شود. کرزول خام مخلوطی از سه ایزومر است که از قطران زغال‌سنگ یا نفت به دست می‌آید."
+   "fa": "مایعی بی‌رنگ، مایل به زرد، زرد قهوه‌ای کم‌رنگ یا صورتی با بوی تند فنولی شبیه کرئوزوت. با گذشت زمان و در معرض نور و هوا تیره می‌شود. کرزول خام مخلوطی از سه ایزومر است که از قطران زغال‌سنگ یا نفت به دست می‌آید."
   },
   "properties": [
    {
@@ -790,7 +790,7 @@
   "mw": "",
   "applications": {
    "en": "A 'superdisintegrant' used in tablets and capsules, in both direct compression and wet granulation. Typical concentrations: tablet disintegrant 0.5–5.0% (commonly about 2%); capsule disintegrant 10–25%. In wet granulation it is often split between the granules and the external phase.",
-   "fa": "یک «سوپردیس‌اینتگرانت» (متلاشی‌کننده قوی) است که در قرص و کپسول، هم در پرس مستقیم و هم در گرانولاسیون مرطوب، به کار می‌رود. غلظت‌های متداول: متلاشی‌کننده قرص 0.5–5.0٪ (معمولاً حدود 2٪)؛ متلاشی‌کننده کپسول 10–25٪. در گرانولاسیون مرطوب اغلب بین داخل گرانول و فاز خارجی تقسیم می‌شود."
+   "fa": "یک متلاشی‌کننده قوی (Superdisintegrant) است که در قرص و کپسول، هم در پرس مستقیم و هم در گرانولاسیون مرطوب، به کار می‌رود. غلظت‌های متداول: متلاشی‌کننده قرص 0.5–5.0٪ (معمولاً حدود 2٪)؛ متلاشی‌کننده کپسول 10–25٪. در گرانولاسیون مرطوب اغلب بین داخل گرانول و فاز خارجی تقسیم می‌شود."
   },
   "description": {
    "en": "An odourless, white or greyish-white powder. It is an internally cross-linked form of carboxymethylcellulose sodium that swells strongly in water but does not dissolve.",
@@ -878,7 +878,7 @@
   },
   "comments": {
    "en": "Croscarmellose sodium acts by rapid wicking and swelling, and its fibrous particles keep working after wet granulation, although some activity is lost. Because it is anionic, possible interaction with weakly basic, cationic drugs and its effect on dissolution should be checked.",
-   "fa": "کراس‌کارملوز سدیم با جذب سریع آب از طریق مویینگی (wicking) و تورم عمل می‌کند و ذرات رشته‌ای آن پس از گرانولاسیون مرطوب نیز کار می‌کنند، هرچند بخشی از فعالیت از دست می‌رود. چون آنیونی است، احتمال برهم‌کنش با داروهای بازی ضعیف و کاتیونی و اثر آن بر انحلال باید بررسی شود."
+   "fa": "کراس‌کارملوز سدیم با جذب سریع آب از طریق مویینگی (wicking) و تورم عمل می‌کند و ذرات رشته‌ای آن پس از گرانولاسیون مرطوب نیز عمل می‌کنند، هرچند بخشی از فعالیت از دست می‌رود. چون آنیونی است، احتمال برهم‌کنش با داروهای بازی ضعیف و کاتیونی و اثر آن بر انحلال باید بررسی شود."
   },
   "refs": [
    "usp",
@@ -910,7 +910,7 @@
   "mw": "> 1 000 000",
   "applications": {
    "en": "A water-insoluble 'superdisintegrant' used in tablets made by direct compression or by wet or dry granulation, typically at 2–5% w/w, and in orally disintegrating tablets. Micronised grades are used as suspension stabilisers and to improve dissolution of poorly soluble drugs. In the food industry it is used to clarify and stabilise beverages.",
-   "fa": "یک «سوپردیس‌اینتگرانت» نامحلول در آب است که در قرص‌های تولیدشده با پرس مستقیم یا گرانولاسیون مرطوب یا خشک، معمولاً با غلظت 2–5٪ وزنی، و در قرص‌های بازشونده در دهان (ODT) به کار می‌رود. گریدهای میکرونیزه به عنوان پایدارکننده سوسپانسیون و برای بهبود انحلال داروهای کم‌محلول مصرف می‌شوند. در صنایع غذایی برای شفاف‌سازی و پایدارسازی نوشیدنی‌ها استفاده می‌شود."
+   "fa": "یک متلاشی‌کننده قوی (Superdisintegrant) نامحلول در آب است که در قرص‌های تولیدشده با پرس مستقیم یا گرانولاسیون مرطوب یا خشک، معمولاً با غلظت 2–5٪ وزنی، و در قرص‌های متلاشی‌شونده در دهان (ODT) به کار می‌رود. گریدهای میکرونیزه به عنوان پایدارکننده سوسپانسیون و برای بهبود انحلال داروهای کم‌محلول مصرف می‌شوند. در صنایع غذایی برای شفاف‌سازی و پایدارسازی نوشیدنی‌ها استفاده می‌شود."
   },
   "description": {
    "en": "A white to creamy-white, finely divided, free-flowing, practically tasteless, odourless or nearly odourless, hygroscopic powder. Pharmacopoeias describe a coarser Type A and a finer Type B.",
@@ -968,7 +968,7 @@
   },
   "manufacture": {
    "en": "Made by 'popcorn' polymerisation of N-vinyl-2-pyrrolidone in the presence of a small amount of a cross-linking agent formed in situ, which gives a highly cross-linked, porous, insoluble polymer.",
-   "fa": "از پلیمریزاسیون «پاپکورنی» N-وینیل-2-پیرولیدون در حضور مقدار کمی عامل اتصال‌دهنده عرضی که در محل تشکیل می‌شود تهیه می‌شود و پلیمری با اتصال عرضی زیاد، متخلخل و نامحلول به دست می‌آید."
+   "fa": "از پلیمریزاسیون «popcorn» N-وینیل-2-پیرولیدون در حضور مقدار کمی عامل اتصال‌دهنده عرضی که در محل تشکیل می‌شود تهیه می‌شود و پلیمری با اتصال عرضی زیاد، متخلخل و نامحلول به دست می‌آید."
   },
   "safety": {
    "en": "Not absorbed after oral administration because of its high molecular weight and insolubility, and generally regarded as non-toxic and non-irritant.",
@@ -1207,7 +1207,7 @@
   },
   "comments": {
    "en": "Tablets made with dextrates often increase in hardness for some hours after compression. It needs a lubricant, and tablet properties are sensitive to storage humidity, so moisture-protective packaging may be needed.",
-   "fa": "قرص‌های تهیه‌شده با دکسترات‌ها اغلب تا چند ساعت پس از پرس سخت‌تر می‌شوند. به لغزان‌کننده نیاز دارد و ویژگی‌های قرص به رطوبت محیط نگهداری حساس است؛ بنابراین ممکن است بسته‌بندی محافظ رطوبت لازم باشد."
+   "fa": "قرص‌های تهیه‌شده با دکسترات‌ها اغلب تا چند ساعت پس از پرس سخت‌تر می‌شوند. به روان‌کننده نیاز دارد و ویژگی‌های قرص به رطوبت محیط نگهداری حساس است؛ بنابراین ممکن است بسته‌بندی محافظ رطوبت لازم باشد."
   },
   "refs": [
    "usp",
@@ -1239,7 +1239,7 @@
   "mw": "variable",
   "applications": {
    "en": "Used as a binder (as an aqueous paste or solution) and diluent in tablets and capsules, as an adhesive and plasticising component of sugar-coating syrups, and as a thickening and stiffening agent in suspensions, pastes and topical preparations. It is also used widely as an adhesive and in foods. Concentrations depend on the role and are chosen empirically.",
-   "fa": "به عنوان چسباننده (به صورت خمیر یا محلول آبی) و رقیق‌کننده در قرص و کپسول، به عنوان جزء چسبنده و نرم‌کننده شربت‌های روکش قندی و به عنوان غلیظ‌کننده و سفت‌کننده در سوسپانسیون‌ها، خمیرها و فرآورده‌های موضعی به کار می‌رود. به عنوان چسب و در مواد غذایی نیز مصرف گسترده دارد. غلظت آن بسته به نقش آن به‌صورت تجربی انتخاب می‌شود."
+   "fa": "به عنوان چسباننده (به صورت خمیر یا محلول آبی) و رقیق‌کننده در قرص و کپسول، به عنوان جزء چسبنده و نرم‌کننده شربت‌های روکش قندی و به عنوان غلیظ‌کننده و قوام‌دهنده در سوسپانسیون‌ها، خمیرها و فرآورده‌های موضعی به کار می‌رود. به عنوان چسب و در مواد غذایی نیز مصرف گسترده دارد. غلظت آن بسته به نقش آن به‌صورت تجربی انتخاب می‌شود."
   },
   "description": {
    "en": "A white, pale yellow or brown powder or granules with a slight characteristic odour. The colour and properties depend on how the starch was converted: white dextrins are pale, while yellow dextrins and British gums are darker.",
@@ -1555,7 +1555,7 @@
   },
   "comments": {
    "en": "It consolidates mainly by brittle fracture, so tablet strength is relatively insensitive to lubricant level and mixing time, and it is often combined with plastically deforming microcrystalline cellulose. It is abrasive to tooling, and because it is insoluble a disintegrant is needed.",
-   "fa": "عمدتاً با شکست شکننده (brittle fracture) فشرده می‌شود؛ بنابراین استحکام قرص نسبت به مقدار لغزان‌کننده و زمان اختلاط حساسیت کمی دارد و اغلب با سلولز میکروکریستالی که تغییر شکل پلاستیک دارد ترکیب می‌شود. برای ابزار پرس سایشی است و چون نامحلول است به متلاشی‌کننده نیاز دارد."
+   "fa": "عمدتاً با شکست شکننده (brittle fracture) فشرده می‌شود؛ بنابراین استحکام قرص نسبت به مقدار روان‌کننده و زمان اختلاط حساسیت کمی دارد و اغلب با سلولز میکروکریستالی که تغییر شکل پلاستیک دارد ترکیب می‌شود. برای ابزار پرس سایشی است و چون نامحلول است به متلاشی‌کننده نیاز دارد."
   },
   "refs": [
    "usp",
@@ -1588,7 +1588,7 @@
   "mw": "278.34",
   "applications": {
    "en": "Used as a plasticiser in film coatings, including enteric coatings of cellulose acetate phthalate and coatings of ethylcellulose and other polymers, typically at about 10–30% of the polymer weight. It has also been used as a solvent and in insect repellents. Because of its reproductive toxicity its use in medicines is now discouraged.",
-   "fa": "به عنوان نرم‌کننده (پلاستی‌سایزر) در روکش‌های فیلمی، از جمله روکش‌های رودئی سلولز استات فتالات و روکش‌های اتیل‌سلولز و دیگر پلیمرها، معمولاً حدود 10–30٪ وزن پلیمر، به کار می‌رود. به عنوان حلال و در دورکننده‌های حشرات نیز مصرف شده است. به دلیل سمیت تولیدمثلی، امروزه مصرف آن در داروها توصیه نمی‌شود."
+   "fa": "به عنوان نرم‌کننده (پلاستی‌سایزر) در روکش‌های فیلمی، از جمله روکش‌های روده‌ای سلولز استات فتالات و روکش‌های اتیل‌سلولز و دیگر پلیمرها، معمولاً حدود 10–30٪ وزن پلیمر، به کار می‌رود. به عنوان حلال و در دورکننده‌های حشرات نیز مصرف شده است. به دلیل سمیت تولیدمثلی، امروزه مصرف آن در داروها توصیه نمی‌شود."
   },
   "description": {
    "en": "A clear, colourless or very slightly yellowish, oily liquid that is odourless or almost so.",
@@ -1666,7 +1666,7 @@
   },
   "comments": {
    "en": "In new products, replace dibutyl phthalate with non-phthalate plasticisers such as triethyl citrate, acetyltributyl citrate or dibutyl sebacate; note that enteric polymers such as cellulose acetate phthalate are not affected by these restrictions, which concern the low-molecular-weight phthalate esters.",
-   "fa": "در فرآورده‌های جدید، دی‌بوتیل فتالات را با نرم‌کننده‌های غیرفتالاتی مانند تری‌اتیل سیترات، استیل‌تری‌بوتیل سیترات یا دی‌بوتیل سباکات جایگزین کنید؛ توجه داشته باشید که پلیمرهای رودئی مانند سلولز استات فتالات مشمول این محدودیت‌ها نیستند و محدودیت‌ها مربوط به استرهای فتالات با وزن مولکولی پایین است."
+   "fa": "در فرآورده‌های جدید، دی‌بوتیل فتالات را با نرم‌کننده‌های غیرفتالاتی مانند تری‌اتیل سیترات، استیل‌تری‌بوتیل سیترات یا دی‌بوتیل سباکات جایگزین کنید؛ توجه داشته باشید که پلیمرهای روده‌ای مانند سلولز استات فتالات مشمول این محدودیت‌ها نیستند و محدودیت‌ها مربوط به استرهای فتالات با وزن مولکولی پایین است."
   },
   "refs": [
    "usp",
@@ -1689,7 +1689,7 @@
   "mw": "314.46",
   "applications": {
    "en": "Used as a plasticiser in film coatings for modified-release and enteric products, particularly with ethylcellulose and methacrylic acid copolymers, typically at about 10–30% of the polymer weight. It also plasticises polymers in other applications and is used as a flavouring in foods.",
-   "fa": "به عنوان نرم‌کننده در روکش‌های فیلمی فرآورده‌های رهش اصلاح‌شده و رودئی، به‌ویژه با اتیل‌سلولز و کوپلیمرهای متاکریلیک اسید، معمولاً حدود 10–30٪ وزن پلیمر، به کار می‌رود. در کاربردهای دیگر نیز پلیمرها را نرم می‌کند و به عنوان طعم‌دهنده در مواد غذایی مصرف می‌شود."
+   "fa": "به عنوان نرم‌کننده در روکش‌های فیلمی فرآورده‌های رهش اصلاح‌شده و روده‌ای، به‌ویژه با اتیل‌سلولز و کوپلیمرهای متاکریلیک اسید، معمولاً حدود 10–30٪ وزن پلیمر، به کار می‌رود. در کاربردهای دیگر نیز پلیمرها را نرم می‌کند و به عنوان طعم‌دهنده در مواد غذایی مصرف می‌شود."
   },
   "description": {
    "en": "A clear, colourless, oily liquid with a faint odour.",
@@ -1982,7 +1982,7 @@
   },
   "comments": {
    "en": "Diethyl phthalate is a comparatively efficient plasticiser for phthalate-ester enteric polymers, but many companies now prefer citrate esters or triacetin to avoid phthalates altogether.",
-   "fa": "دی‌اتیل فتالات برای پلیمرهای رودئی استر فتالاتی نرم‌کننده نسبتاً کارآمدی است، ولی امروزه بسیاری از شرکت‌ها برای پرهیز کامل از فتالات‌ها، استرهای سیترات یا تری‌استین را ترجیح می‌دهند."
+   "fa": "دی‌اتیل فتالات برای پلیمرهای روده‌ای استر فتالاتی نرم‌کننده نسبتاً کارآمدی است، ولی امروزه بسیاری از شرکت‌ها برای پرهیز کامل از فتالات‌ها، استرهای سیترات یا تری‌استین را ترجیح می‌دهند."
   },
   "refs": [
    "usp",
@@ -2121,7 +2121,7 @@
   "mw": "variable (depends on chain length and viscosity grade)",
   "applications": {
    "en": "Used as an emollient and water-repellent in topical barrier creams and lotions (often about 10–30% in barrier preparations, and lower in cosmetic emulsions), as an antifoaming agent, as a lubricant for syringes, stoppers and other components, and as a release agent. Mixed with silicon dioxide it forms simethicone, which is used as an antiflatulent and antifoam.",
-   "fa": "به عنوان نرم‌کننده و دافع آب در کرم‌ها و لوسیون‌های محافظ پوست (اغلب حدود 10–30٪ در فرآورده‌های محافظ و کمتر در امولسیون‌های آرایشی)، عامل ضدکف، لغزان‌کننده سرنگ، درپوش و دیگر اجزا و عامل جداکننده قالب به کار می‌رود. مخلوط آن با سیلیسیم دی‌اکسید سایمتیکون را تشکیل می‌دهد که به عنوان ضدنفخ و ضدکف مصرف می‌شود."
+   "fa": "به عنوان نرم‌کننده و دافع آب در کرم‌ها و لوسیون‌های محافظ پوست (اغلب حدود 10–30٪ در فرآورده‌های محافظ و کمتر در امولسیون‌های آرایشی)، عامل ضدکف، روان‌کننده سرنگ، درپوش و دیگر اجزا و عامل جداکننده قالب به کار می‌رود. مخلوط آن با سیلیسیم دی‌اکسید سایمتیکون را تشکیل می‌دهد که به عنوان ضدنفخ و ضدکف مصرف می‌شود."
   },
   "description": {
    "en": "A clear, colourless, odourless, non-volatile liquid. It is a series of linear, fully methylated polysiloxanes end-blocked with trimethylsiloxy groups, available in a wide range of viscosities, typically 20–1300 mm²/s for pharmacopoeial grades.",
@@ -2646,7 +2646,7 @@
   },
   "safety": {
    "en": "At excipient levels it is generally well tolerated. Therapeutic oral doses can cause abdominal cramps and diarrhoea, and oral liquids have a bitter taste and can irritate the throat. Concentrated solutions irritate the eyes and skin.",
-   "fa": "در مقادیر ماده جانبی عموماً به‌خوبی تحمل می‌شود. دوزهای درمانی خوراکی ممکن است دل‌درد و اسهال ایجاد کنند و مایعات خوراکی آن تلخ‌اند و ممکن است گلو را تحریک کنند. محلول‌های غلیظ چشم و پوست را تحریک می‌کنند."
+   "fa": "در مقادیر ماده جانبی عموماً به‌خوبی تحمل می‌شود. دوزهای درمانی خوراکی ممکن است درد شکمی و اسهال ایجاد کنند و مایعات خوراکی آن تلخ‌اند و ممکن است گلو را تحریک کنند. محلول‌های غلیظ چشم و پوست را تحریک می‌کنند."
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled. It is an eye irritant; wear eye protection and gloves.",

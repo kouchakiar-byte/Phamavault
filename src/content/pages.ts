@@ -19,8 +19,8 @@ export const pages = {
       "بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی (Suppliers)",
     ),
     lead: bi(
-      "Domestic manufacturers and importers in Iran of pharmaceutical raw materials (APIs and excipients), vitamins and mineral salts, supplement ingredients and amino acids, and cosmetic raw materials. Search by Persian or English name, salt form or synonym.",
-      "تولیدکنندگان داخلی و واردکنندگان مواد اولیه دارویی (مواد مؤثره و مواد جانبی)، ویتامین‌ها و مینرال‌ها، مواد اولیه مکمل و آمینواسیدها، و مواد اولیه آرایشی‌بهداشتی در ایران. با نام فارسی یا انگلیسی، فرم نمکی یا مترادف جستجو کنید.",
+      "Domestic manufacturers and importers in Iran of pharmaceutical raw materials (APIs and excipients), vitamins and mineral salts, supplement ingredients and amino acids, cosmetic raw materials, pharmaceutical packaging, and laboratory reference standards and reagents. Search by Persian or English name, salt form or synonym.",
+      "تولیدکنندگان داخلی و واردکنندگان مواد اولیه دارویی (مواد مؤثره و مواد جانبی)، ویتامین‌ها و مینرال‌ها، مواد اولیه مکمل و آمینواسیدها، مواد اولیه آرایشی‌بهداشتی، بسته‌بندی دارویی، و رفرنس استانداردها و ریجنت‌های آزمایشگاهی در ایران. با نام فارسی یا انگلیسی، فرم نمکی یا مترادف جستجو کنید.",
     ),
     placeholder: bi(
       "e.g. Vitamin B1, thiamine hydrochloride, Zinc sulfate, polysorbate 80",
@@ -56,15 +56,15 @@ export const pages = {
       cos: bi("Cosmetic and personal-care raw materials", "مواد اولیه آرایشی‌بهداشتی"),
       sup: bi("Supplement ingredients and amino acids", "مواد اولیه مکمل و آمینواسیدها"),
       bio: bi("Biologics", "فرآورده‌های بیولوژیک"),
-      std: bi("Laboratory reference standards", "استانداردهای مرجع آزمایشگاهی"),
+      std: bi("Reference standards and reagents", "رفرنس استانداردها و ریجنت‌ها"),
       pkg: bi("Pharmaceutical packaging", "بسته‌بندی دارویی"),
     } as Record<string, ReturnType<typeof bi>>,
     sort: bi("Sort", "مرتب‌سازی"),
     sorts: {
-      cred: bi("Credibility (most reliable first)", "اعتبار (معتبرترین بالا)"),
+      cred: bi("Credibility (most reliable first)", "اعتبار (معتبرترین در ابتدا)"),
       rel: bi("Best match", "بیشترین تطابق"),
-      site: bi("Plant / warehouse location (Tehran and Alborz first)", "محل کارخانه / انبار (تهران و البرز اول)"),
-      type: bi("Domestic manufacturers first", "تولیدکننده داخلی اول"),
+      site: bi("Plant / warehouse location (Tehran and Alborz first)", "محل کارخانه / انبار (ابتدا تهران و البرز)"),
+      type: bi("Domestic manufacturers first", "ابتدا تولیدکنندگان داخلی"),
       name: bi("Company name", "نام شرکت"),
     },
     telOnly: bi("Only with a phone number", "فقط دارای تلفن"),
@@ -88,25 +88,25 @@ export const pages = {
     copy: bi("Copy", "کپی"),
     copied: bi("Copied", "کپی شد"),
     otherProducts: bi("Other products of this company", "سایر محصولات این شرکت"),
-    moreProducts: bi("More products", "بقیه محصولات"),
+    moreProducts: bi("More products", "محصولات بیشتر"),
     searchSite: bi("Search “{q}” on this company's site ↗", "جستجوی «{q}» در سایت این شرکت ↗"),
     source: bi("Source", "منبع"),
     viaSearch: bi(" (product page title in web search)", " (عنوان صفحه محصول در جستجوی وب)"),
     orderTitle: bi("Display order", "ترتیب نمایش"),
     orderText: bi(
       "Results are listed by credibility: first syndicate-member manufacturers with a phone number, then companies whose contacts and catalogue come from their own website, then companies with only a website, and finally marketplaces, adverts and retailers. The order reflects how verifiable the information is, not an assessment of the company's quality.",
-      "نتیجه‌ها به ترتیب اعتبار می‌آیند: اول تولیدکنندگان عضو سندیکا با تلفن، بعد شرکت‌هایی که تماس و کاتالوگشان از سایت خودشان برداشته شده، بعد شرکت‌های فقط دارای وب‌سایت، و در آخر بازارگاه‌ها، آگهی‌ها و خرده‌فروش‌ها. این ترتیب بر پایه قابل‌راستی‌آزمایی بودن اطلاعات است، نه ارزیابی کیفیت شرکت.",
+      "نتایج به ترتیب اعتبار نمایش داده می‌شوند: ابتدا تولیدکنندگان عضو سندیکا دارای تلفن، سپس شرکت‌هایی که اطلاعات تماس و کاتالوگ آن‌ها از وب‌سایت خودشان گرفته شده است، سپس شرکت‌هایی که فقط وب‌سایت دارند، و در پایان بازارگاه‌ها، آگهی‌ها و خرده‌فروشان. این ترتیب بر پایه قابل‌راستی‌آزمایی بودن اطلاعات است، نه ارزیابی کیفیت شرکت.",
     ),
     aboutTitle: bi("About this data", "درباره این داده‌ها"),
     about: [
       bi("Last updated: 17 Mehr 1405 (9 October 2026).", "آخرین به‌روزرسانی: ۱۷ مهر ۱۴۰۵"),
       bi(
         "Rows marked “no phone” were recorded from product-page titles in web search: the company has a sales page for that material on its site. Take the phone number from the company's own site; the “search on this company's site” link goes straight to that material.",
-        "ردیف‌های «بدون تلفن» از روی عنوان صفحه محصول در جستجوی وب ثبت شده‌اند: یعنی آن شرکت در سایتش صفحه فروش آن ماده را دارد. تلفن را از سایت خود شرکت بردارید؛ لینک «جستجو در سایت این شرکت» مستقیم به همان ماده می‌رسد.",
+        "ردیف‌های «بدون تلفن» از روی عنوان صفحه محصول در جستجوی وب ثبت شده‌اند: یعنی آن شرکت در وب‌سایت خود صفحه فروش آن ماده را دارد. شماره تلفن را از وب‌سایت خود شرکت دریافت کنید؛ پیوند «جستجو در سایت این شرکت» مستقیماً به صفحه همان ماده می‌رود.",
       ),
       bi(
         "Each company's product list is what the company or the syndicate has declared and may be incomplete or out of date. Ask the company for the grade and licence before ordering.",
-        "فهرست محصول هر شرکت همان چیزی است که خودش یا سندیکا اعلام کرده و ممکن است کامل یا به‌روز نباشد. پیش از سفارش، گرید و پروانه را از خود شرکت بپرسید.",
+        "فهرست محصولات هر شرکت همان است که خود شرکت یا سندیکا اعلام کرده و ممکن است کامل یا به‌روز نباشد. پیش از سفارش، گرید و پروانه را از خود شرکت استعلام کنید.",
       ),
     ],
   },
@@ -132,7 +132,7 @@ export const pages = {
       ),
       print: bi(
         "Latest printed edition (Pharmaceutical Press, 2020; hardback and eBook) — look up “{name}” in the monograph index",
-        "آخرین ویرایش چاپی (Pharmaceutical Press، 2020؛ نسخه چاپی و الکترونیک) — «\u2066{name}\u2069» را در فهرست مونوگراف‌ها ببینید",
+        "آخرین ویرایش چاپی (Pharmaceutical Press، 2020؛ نسخه چاپی و الکترونیک) — «\u2066{name}\u2069» را در فهرست مونوگراف‌ها مشاهده کنید",
       ),
       library: bi("Find a library near you that holds the printed 9th edition (free)", "کتابخانه‌هایی که نسخه چاپی ویرایش نهم را دارند (رایگان)"),
       pubchem: bi("Structure, identifiers, properties and safety (free)", "ساختار، شناسه‌ها، ویژگی‌ها و ایمنی (رایگان)"),
@@ -236,7 +236,7 @@ export const pages = {
     sops: bi("SOPs", "دستورالعمل"),
     codesNote: bi(
       "Codes are suggestions; each company can apply its own numbering system.",
-      "کدها پیشنهادی‌اند و هر شرکت می‌تواند سیستم شماره‌گذاری خودش را به کار ببرد.",
+      "کدها پیشنهادی‌اند و هر شرکت می‌تواند سیستم شماره‌گذاری خود را به کار ببرد.",
     ),
     template: bi("Standard SOP template", "قالب استاندارد SOP"),
     templateHead: bi(

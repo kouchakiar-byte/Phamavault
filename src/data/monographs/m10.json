@@ -20,7 +20,7 @@
   "mw": "122.12",
   "applications": {
    "en": "Erythritol is used as a bulk sweetener and as a filler in tablets, especially chewable and orally disintegrating tablets, sugar-free lozenges and medicated chewing gum; directly compressible granulated grades are available and it may make up the bulk of such tablets. It has about 60–70% of the sweetness of sucrose and is often combined with intense sweeteners to round off the taste. It is also widely used in foods and beverages as a low-calorie, non-cariogenic sweetener.",
-   "fa": "اریتریتول به عنوان شیرین‌کننده حجیم و پرکننده در قرص‌ها، به‌ویژه قرص‌های جویدنی و قرص‌های بازشونده در دهان (ODT)، لوزنج‌های بدون قند و آدامس‌های دارویی به کار می‌رود؛ گریدهای گرانوله قابل پرس مستقیم نیز وجود دارد و ممکن است بخش عمده وزن این قرص‌ها را تشکیل دهد. شیرینی آن حدود 60–70٪ ساکارز است و اغلب همراه با شیرین‌کننده‌های قوی مصرف می‌شود تا طعم متعادل‌تری حاصل شود. در صنایع غذایی و نوشیدنی نیز به عنوان شیرین‌کننده کم‌کالری و غیرپوسیدگی‌زا مصرف گسترده دارد."
+   "fa": "اریتریتول به عنوان شیرین‌کننده حجیم و پرکننده در قرص‌ها، به‌ویژه قرص‌های جویدنی و قرص‌های متلاشی‌شونده در دهان (ODT)، لوزنج‌های بدون قند و آدامس‌های دارویی به کار می‌رود؛ گریدهای گرانوله قابل پرس مستقیم نیز وجود دارد و ممکن است بخش عمده وزن این قرص‌ها را تشکیل دهد. شیرینی آن حدود 60–70٪ ساکارز است و اغلب همراه با شیرین‌کننده‌های قوی مصرف می‌شود تا طعم متعادل‌تری حاصل شود. در صنایع غذایی و نوشیدنی نیز به عنوان شیرین‌کننده کم‌کالری و غیرپوسیدگی‌زا مصرف گسترده دارد."
   },
   "description": {
    "en": "A four-carbon sugar alcohol (polyol) that occurs naturally in some fruits and fermented foods. It is a white, odourless, crystalline powder or granules with a clean sweet taste and a marked cooling sensation in the mouth.",
@@ -216,7 +216,7 @@
   },
   "handling": {
    "en": "Highly flammable: handle in a well-ventilated area with flameproof equipment, away from heat and sparks, and earth equipment to prevent static discharge. Eye protection and solvent-resistant gloves are recommended; the occupational exposure limit is 400 ppm (ACGIH TLV, OSHA PEL).",
-   "fa": "بسیار اشتعال‌پذیر است: در محیط با تهویه مناسب و با تجهیزات ضدانفجار، دور از گرما و جرقه کار شود و تجهیزات برای جلوگیری از تخلیه الکتریسیته ساکن ارت شوند. محافظ چشم و دستکش مقاوم به حلال توصیه می‌شود؛ حد مجاز مواجهه شغلی 400 ppm است (ACGIH TLV و OSHA PEL)."
+   "fa": "بسیار اشتعال‌پذیر است: در محیط با تهویه مناسب و با تجهیزات ضدانفجار، دور از گرما و جرقه کار شود و تجهیزات برای جلوگیری از تخلیه الکتریسیته ساکن اتصال زمین (Earthing) داده شوند. محافظ چشم و دستکش مقاوم به حلال توصیه می‌شود؛ حد مجاز مواجهه شغلی 400 ppm است (ACGIH TLV و OSHA PEL)."
   },
   "regulatory": {
    "en": "GRAS listed as a flavouring substance in the USA. Included in the FDA Inactive Ingredient Database and in non-parenteral medicines licensed in Europe. Evaluated by JECFA as a flavouring agent.",
@@ -555,7 +555,7 @@
   },
   "comments": {
    "en": "Ethylcellulose films are brittle without a plasticiser such as dibutyl sebacate or triethyl citrate. Aqueous dispersions need adequate coalescence and usually a curing step to give stable release, and water-soluble pore formers (for example hypromellose) are often added to adjust the release rate.",
-   "fa": "فیلم‌های اتیل‌سلولز بدون نرم‌کننده‌ای مانند دی‌بوتیل سباکات یا تری‌اتیل سیترات شکننده‌اند. دیسپرسیون‌های آبی برای رهش پایدار به هم‌آمیزی کامل ذرات و معمولاً مرحله کیورینگ نیاز دارند و اغلب منفذسازهای محلول در آب (مانند هیپروملوز) برای تنظیم سرعت رهش افزوده می‌شوند."
+   "fa": "فیلم‌های اتیل‌سلولز بدون نرم‌کننده‌ای مانند دی‌بوتیل سباکات یا تری‌اتیل سیترات شکننده‌اند. دیسپرسیون‌های آبی برای رهش پایدار به هم‌آمیزی کامل ذرات و معمولاً مرحله پخت (Curing) نیاز دارند و اغلب منفذسازهای محلول در آب (مانند هیپروملوز) برای تنظیم سرعت رهش افزوده می‌شوند."
   },
   "refs": [
    "usp",
@@ -778,7 +778,7 @@
   },
   "safety": {
    "en": "Fructose is absorbed more slowly than glucose and is metabolised largely in the liver; it provides the same energy as other sugars. It must be avoided in patients with hereditary fructose intolerance, and large oral doses can cause flatulence, abdominal pain and diarrhoea. It is no longer recommended as a sugar substitute for diabetic patients, and intravenous use has been associated with lactic acidosis.",
-   "fa": "فروکتوز کندتر از گلوکز جذب و عمدتاً در کبد متابولیزه می‌شود و انرژی آن برابر سایر قندهاست. در بیماران مبتلا به عدم تحمل ارثی فروکتوز باید از آن پرهیز شود و دوزهای خوراکی زیاد ممکن است باعث نفخ، دل‌درد و اسهال شود. دیگر به عنوان جایگزین قند برای بیماران دیابتی توصیه نمی‌شود و مصرف وریدی آن با اسیدوز لاکتیک همراه بوده است."
+   "fa": "فروکتوز کندتر از گلوکز جذب و عمدتاً در کبد متابولیزه می‌شود و انرژی آن برابر سایر قندهاست. در بیماران مبتلا به عدم تحمل ارثی فروکتوز باید از آن پرهیز شود و دوزهای خوراکی زیاد ممکن است باعث نفخ، درد شکمی و اسهال شود. دیگر به عنوان جایگزین قند برای بیماران دیابتی توصیه نمی‌شود و مصرف وریدی آن با اسیدوز لاکتیک همراه بوده است."
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled. Avoid generating dust; eye protection is recommended.",
@@ -1367,7 +1367,7 @@
   "mw": "",
   "applications": {
    "en": "Used as a dispersing, emulsifying, wetting and stabilising agent in intramuscular and intravenous injections, parenteral nutrition fat emulsions, oral suspensions, topical creams and ointments, rectal and vaginal products, and as a suspending/dispersing agent and valve lubricant in metered-dose inhalers. Purified fractions are used to make liposomes. Typical concentrations: aerosol inhalation about 0.1%; intramuscular injection 0.3–2.3%; oral suspensions 0.25–10%. It is also widely used in foods and cosmetics.",
-   "fa": "به عنوان عامل پراکنده‌کننده، امولسیون‌کننده، ترکننده و پایدارکننده در تزریق‌های عضلانی و وریدی، امولسیون‌های چربی تغذیه وریدی، سوسپانسیون‌های خوراکی، کرم‌ها و پمادهای موضعی و فرآورده‌های رکتال و واژینال، و نیز به عنوان عامل پراکنده‌کننده و روان‌کننده والو در افشانه‌های استنشاقی دوز-معین به کار می‌رود. بخش‌های خالص‌شده آن برای ساخت لیپوزوم مصرف می‌شوند. غلظت‌های متداول: آئروسل استنشاقی حدود 0.1٪؛ تزریق عضلانی 0.3–2.3٪؛ سوسپانسیون خوراکی 0.25–10٪. در غذا و فرآورده‌های آرایشی نیز کاربرد گسترده دارد."
+   "fa": "به عنوان عامل پراکنده‌کننده، امولسیون‌کننده، ترکننده و پایدارکننده در تزریق‌های عضلانی و وریدی، امولسیون‌های چربی تغذیه وریدی، سوسپانسیون‌های خوراکی، کرم‌ها و پمادهای موضعی و فرآورده‌های رکتال و واژینال، و نیز به عنوان عامل پراکنده‌کننده و روان‌کننده دریچه (Valve) در افشانه‌های استنشاقی دوز-معین به کار می‌رود. بخش‌های خالص‌شده آن برای ساخت لیپوزوم مصرف می‌شوند. غلظت‌های متداول: آئروسل استنشاقی حدود 0.1٪؛ تزریق عضلانی 0.3–2.3٪؛ سوسپانسیون خوراکی 0.25–10٪. در غذا و فرآورده‌های آرایشی نیز کاربرد گسترده دارد."
   },
   "description": {
    "en": "Lecithins vary widely in appearance with their source, purity and free fatty acid content, from viscous semi-liquids to pastes and powders, and from brown to light yellow; highly refined grades are almost white. The odour ranges from almost none to faintly nut-like. Commercial material is obtained mainly from soybeans or egg yolk.",
@@ -1411,7 +1411,7 @@
   },
   "incompatibilities": {
    "en": "Incompatible with esterases, which hydrolyse it. Oxidising agents and extremes of pH accelerate its degradation.",
-   "fa": "با استرازها که آن را هیدرولیز می‌کنند ناسازگار است. اکسیدکننده‌ها و pHهای خیلی بالا یا پایین تخریب آن را تسریع می‌کنند."
+   "fa": "با استرازها که آن را هیدرولیز می‌کنند ناسازگار است. اکسیدکننده‌ها و pHهای بسیار بالا یا پایین تخریب آن را تسریع می‌کنند."
   },
   "manufacture": {
    "en": "Soybean lecithin is obtained as a by-product of soybean oil refining: the crude oil is degummed with water, and the hydrated phosphatides are separated and dried. Egg lecithin is extracted from egg yolk with solvents. Further fractionation with ethanol or acetone, and in some cases hydrogenation, gives purified phosphatidylcholine grades.",
@@ -1511,7 +1511,7 @@
     },
     "v": {
      "en": "soluble in water, more readily on heating (partially hydrolysed grades dissolve more easily); slightly soluble in ethanol (95%); insoluble in most organic solvents",
-     "fa": "محلول در آب و با حرارت راحت‌تر (گریدهای نیمه‌هیدرولیزشده آسان‌تر حل می‌شوند)؛ کمی محلول در اتانول 95٪؛ نامحلول در بیشتر حلال‌های آلی"
+     "fa": "محلول در آب و با حرارت آسان‌تر (گریدهای نیمه‌هیدرولیزشده آسان‌تر حل می‌شوند)؛ کمی محلول در اتانول 95٪؛ نامحلول در بیشتر حلال‌های آلی"
     }
    }
   ],
@@ -2161,7 +2161,7 @@
   "mw": "",
   "applications": {
    "en": "Used in oral capsules and tablets as a binder, diluent and disintegrant; partially pregelatinised grades flow and compress well enough for direct compression and also act as a lubricant to some degree. Fully pregelatinised starch is used as a binder and thickening agent. Typical concentrations: capsule diluent 5–75%; tablet binder in direct compression 5–20%; tablet binder in wet granulation 5–10%; tablet disintegrant 5–10%.",
-   "fa": "در کپسول و قرص خوراکی به عنوان چسباننده، رقیق‌کننده و متلاشی‌کننده به کار می‌رود؛ گریدهای نیمه‌پیش‌ژلاتینه جریان‌پذیری و تراکم‌پذیری کافی برای پرس مستقیم دارند و تا حدی خاصیت لغزان‌کنندگی هم دارند. نشاسته کاملاً پیش‌ژلاتینه به عنوان چسباننده و غلیظ‌کننده مصرف می‌شود. غلظت‌های متداول: رقیق‌کننده کپسول 5–75٪؛ چسباننده قرص در پرس مستقیم 5–20٪؛ چسباننده قرص در گرانولاسیون مرطوب 5–10٪؛ متلاشی‌کننده قرص 5–10٪."
+   "fa": "در کپسول و قرص خوراکی به عنوان چسباننده، رقیق‌کننده و متلاشی‌کننده به کار می‌رود؛ گریدهای نیمه‌پیش‌ژلاتینه جریان‌پذیری و تراکم‌پذیری کافی برای پرس مستقیم دارند و تا حدی خاصیت روان‌کنندگی هم دارند. نشاسته کاملاً پیش‌ژلاتینه به عنوان چسباننده و غلیظ‌کننده مصرف می‌شود. غلظت‌های متداول: رقیق‌کننده کپسول 5–75٪؛ چسباننده قرص در پرس مستقیم 5–20٪؛ چسباننده قرص در گرانولاسیون مرطوب 5–10٪؛ متلاشی‌کننده قرص 5–10٪."
   },
   "description": {
    "en": "Starch (usually maize, but also potato or rice) that has been chemically unmodified but physically processed to rupture all or part of the starch granules. It is a moderately coarse to fine, white to off-white powder, odourless and with a slight characteristic taste. Partially pregelatinised grades contain a cold-water-soluble fraction together with intact granules.",
@@ -2219,7 +2219,7 @@
   },
   "manufacture": {
    "en": "An aqueous slurry of starch is heated to gelatinise the granules and then dried, for example on heated drums or by spray-drying, and milled. Partially pregelatinised starch is produced by mechanical and thermal processing of moist starch so that only part of the granules is ruptured.",
-   "fa": "دوغاب آبی نشاسته حرارت داده می‌شود تا گرانول‌ها ژلاتینه شوند و سپس، مثلاً روی درام‌های داغ یا با خشک‌کن پاششی، خشک و آسیاب می‌شود. نشاسته نیمه‌پیش‌ژلاتینه از فرآوری مکانیکی و حرارتی نشاسته مرطوب تولید می‌شود، به‌طوری که فقط بخشی از گرانول‌ها شکسته شود."
+   "fa": "دوغاب آبی نشاسته حرارت داده می‌شود تا گرانول‌ها ژلاتینه شوند و سپس، مثلاً روی غلتک‌های داغ (Drum drying) یا با خشک‌کن پاششی، خشک و آسیاب می‌شود. نشاسته نیمه‌پیش‌ژلاتینه از فرآوری مکانیکی و حرارتی نشاسته مرطوب تولید می‌شود، به‌طوری که فقط بخشی از گرانول‌ها شکسته شود."
   },
   "safety": {
    "en": "Starch is a normal food and pregelatinised starch is regarded as non-toxic and non-irritant. Excessive dust should be avoided, and rare hypersensitivity to starch of particular botanical origin is possible.",
@@ -2239,7 +2239,7 @@
   },
   "comments": {
    "en": "Partially pregelatinised starch is sensitive to over-lubrication: magnesium stearate can markedly reduce tablet hardness, so its level is kept low (often about 0.25% or less) or stearic acid is used instead. Its moisture content can affect moisture-sensitive drugs and should be considered in stability studies.",
-   "fa": "نشاسته نیمه‌پیش‌ژلاتینه به لغزان‌سازی بیش از حد حساس است: منیزیم استئارات ممکن است سختی قرص را به‌طور چشمگیری کاهش دهد؛ بنابراین مقدار آن پایین (اغلب حدود 0.25٪ یا کمتر) نگه داشته می‌شود یا به جای آن از استئاریک اسید استفاده می‌شود. مقدار رطوبت آن ممکن است بر داروهای حساس به رطوبت اثر بگذارد و باید در مطالعات پایداری در نظر گرفته شود."
+   "fa": "نشاسته نیمه‌پیش‌ژلاتینه به روان‌کنندگی بیش از حد حساس است: منیزیم استئارات ممکن است سختی قرص را به‌طور چشمگیری کاهش دهد؛ بنابراین مقدار آن پایین (اغلب حدود 0.25٪ یا کمتر) نگه داشته می‌شود یا به جای آن از استئاریک اسید استفاده می‌شود. مقدار رطوبت آن ممکن است بر داروهای حساس به رطوبت اثر بگذارد و باید در مطالعات پایداری در نظر گرفته شود."
   },
   "refs": [
    "usp",

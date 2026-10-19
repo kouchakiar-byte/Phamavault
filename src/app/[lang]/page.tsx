@@ -27,6 +27,9 @@ import { calculation, calculations, featuredCalculations } from "@/content/calcu
 import { referenceSections } from "@/content/references";
 import { searchCopy } from "@/content/search";
 import { sections } from "@/content/sections";
+
+// The platform's sections, CTD compilation included; enterprise solutions are a plan, not a section.
+const platformSections = sections.filter((s) => s.slug !== "enterprise");
 import { formatNumber } from "@/lib/format";
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
@@ -159,9 +162,9 @@ export default async function HomePage() {
       <section className="relative isolate overflow-hidden bg-vault-900 text-white">
         <MoleculePattern className="text-white/[0.05]" />
         <div className="absolute -top-40 end-[-10%] -z-10 size-[36rem] rounded-full bg-molecule-500/20 blur-3xl" />
-        {/* Phone: brand and search, then the sections panel, then the counts. Desktop: the panel beside both. */}
-        <Container className="grid items-start gap-10 pb-16 pt-8 sm:pt-10 lg:grid-cols-[1.15fr_1fr] lg:grid-rows-[auto_1fr] lg:gap-x-14 lg:gap-y-0 lg:pb-20 lg:pt-12">
-          <div className="fade-in lg:col-start-1 lg:row-start-1">
+        {/* Phone: brand and search, then the sections panel, then the counts. Desktop: the panel beside both, which sit centred against its height. */}
+        <Container className="grid items-start gap-10 pb-16 pt-8 sm:pt-10 lg:grid-cols-[1.15fr_1fr] lg:grid-rows-[1fr_auto_auto_1fr] lg:gap-x-14 lg:gap-y-0 lg:pb-20 lg:pt-12">
+          <div className="fade-in lg:col-start-1 lg:row-start-2">
             {/* Brand: the vault mark beside the name, as tall as the name and slogan together */}
             <h1 className="flex max-w-full items-center gap-3 sm:gap-5" dir="ltr">
               <LogoMark tight className="h-[6.25rem] w-auto shrink-0 sm:h-[8.9rem]" />
@@ -213,7 +216,7 @@ export default async function HomePage() {
           </div>
 
           {/* The "vault" panel: every section one click away */}
-          <div className="fade-in [animation-delay:.1s] lg:col-start-2 lg:row-span-2 lg:row-start-1">
+          <div className="fade-in [animation-delay:.1s] lg:col-start-2 lg:row-span-4 lg:row-start-1">
             <p className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-molecule-400">
               {copy.platform[locale]}
               <span className="text-molecule-400/60" aria-hidden="true">·</span>
@@ -228,7 +231,7 @@ export default async function HomePage() {
                 </div>
               </div>
               <ul className="mt-4 grid gap-1.5">
-                {sections.map(({ slug, href: path, icon: Icon, title }) => (
+                {platformSections.map(({ slug, href: path, icon: Icon, title }) => (
                   <li key={slug}>
                     <Link
                       href={href(locale, path)}
@@ -248,7 +251,7 @@ export default async function HomePage() {
               </ul>
             </div>
           </div>
-          <div className="fade-in lg:col-start-1 lg:row-start-2">
+          <div className="fade-in lg:col-start-1 lg:row-start-3">
             {/* The vault at a glance: live counts, then a few one-click searches */}
             <dl className="grid lg:mt-9 max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
               {(
@@ -256,7 +259,7 @@ export default async function HomePage() {
                   [counts.suppliers, hero.stats.suppliers],
                   [counts.supplierMaterials, hero.stats.products],
                   [counts.materials, hero.stats.materials],
-                  [sections.length, hero.stats.sections],
+                  [platformSections.length, hero.stats.sections],
                 ] as const
               ).map(([value, label]) => (
                 <div key={label.en} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3">
@@ -340,7 +343,7 @@ export default async function HomePage() {
         <Container>
           <SectionHead eyebrow={sectionsIntro.eyebrow[locale]} title={sectionsIntro.title} locale={locale} lead={sectionsIntro.lead[locale]} />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {sections.map(({ slug, href: path, plate, icon: Icon, title, description }) => {
+            {platformSections.map(({ slug, href: path, plate, icon: Icon, title, description }) => {
               const highlight = sectionHighlight(slug, num, counts);
               return (
                 <article

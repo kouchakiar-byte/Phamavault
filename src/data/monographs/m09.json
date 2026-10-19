@@ -591,11 +591,11 @@
   "mw": "≈ 243 000",
   "applications": {
    "en": "Used as a tablet and capsule diluent (filler), and also as a tablet binder and disintegrant, a glidant, a suspending or thickening agent and a carrier in oral and topical products. Typical concentrations: capsule filler 0–100%; tablet binder 5–25%; tablet disintegrant 5–15%; glidant 1–2%. It is also used in foods as a source of dietary fibre and as an anticaking agent.",
-   "fa": "به عنوان رقیق‌کننده (پرکننده) قرص و کپسول، و نیز چسباننده و متلاشی‌کننده قرص، لغزاننده (گلایدنت)، عامل تعلیق‌دهنده یا غلیظ‌کننده و حامل در فرآورده‌های خوراکی و موضعی به کار می‌رود. غلظت‌های متداول: پرکننده کپسول 0–100٪؛ چسباننده قرص 5–25٪؛ متلاشی‌کننده قرص 5–15٪؛ لغزاننده 1–2٪. در صنایع غذایی نیز به عنوان منبع فیبر و ضدکلوخه مصرف می‌شود."
+   "fa": "به عنوان رقیق‌کننده (پرکننده) قرص و کپسول، و نیز چسباننده و متلاشی‌کننده قرص، تسهیل‌کننده جریان (Glidant)، عامل تعلیق‌دهنده یا غلیظ‌کننده و حامل در فرآورده‌های خوراکی و موضعی به کار می‌رود. غلظت‌های متداول: پرکننده کپسول 0–100٪؛ چسباننده قرص 5–25٪؛ متلاشی‌کننده قرص 5–15٪؛ تسهیل‌کننده جریان 1–2٪. در صنایع غذایی نیز به عنوان منبع فیبر و ضدکلوخه مصرف می‌شود."
   },
   "description": {
    "en": "A white or almost white, odourless and tasteless powder of various particle sizes, ranging from a free-flowing fine or granular powder to a coarse, fluffy, non-flowing material.",
-   "fa": "پودر سفید یا تقریباً سفید، بی‌بو و بی‌مزه با اندازه ذرات متفاوت، از پودر ریز یا گرانولی روان تا ماده‌ای درشت، پف‌دار و غیرروان."
+   "fa": "پودر سفید یا تقریباً سفید، بی‌بو و بی‌مزه با اندازه ذرات متفاوت، از پودر ریز یا گرانولی روان تا ماده‌ای درشت، حجیم و غیرروان."
   },
   "properties": [
    {
@@ -625,7 +625,7 @@
     },
     "v": {
      "en": "grades range from fine, free-flowing powders to coarse, fluffy, poorly flowing materials",
-     "fa": "گریدها از پودرهای ریز و روان تا مواد درشت، پف‌دار و با جریان‌پذیری ضعیف متغیرند"
+     "fa": "گریدها از پودرهای ریز و روان تا مواد درشت، حجیم و با جریان‌پذیری ضعیف متغیرند"
     }
    },
    {
@@ -772,7 +772,7 @@
   },
   "manufacture": {
    "en": "Made by co-processing: colloidal silicon dioxide is dispersed in an aqueous slurry of microcrystalline cellulose and the mixture is spray-dried, so the silica becomes intimately associated with the cellulose particle surface rather than simply blended.",
-   "fa": "به روش کوپروسسینگ تولید می‌شود: سیلیکون دی‌اکسید کلوئیدی در دوغاب آبی سلولز میکروکریستالی پخش و مخلوط خشک‌کن پاششی (اسپری درای) می‌شود؛ در نتیجه سیلیس به‌جای اختلاط ساده، به‌طور تنگاتنگ با سطح ذرات سلولز همراه می‌شود."
+   "fa": "به روش کوپروسسینگ تولید می‌شود: سیلیکون دی‌اکسید کلوئیدی در دوغاب آبی سلولز میکروکریستالی پخش و مخلوط به روش خشک‌کردن پاششی (Spray drying) خشک می‌شود؛ در نتیجه سیلیس به‌جای اختلاط ساده، به‌طور تنگاتنگ با سطح ذرات سلولز همراه می‌شود."
   },
   "safety": {
    "en": "Both components are widely used in oral products and foods and are regarded as non-toxic and non-irritant; the co-processed material is not absorbed after oral administration.",
@@ -792,7 +792,7 @@
   },
   "comments": {
    "en": "Compared with ordinary microcrystalline cellulose, silicified grades flow better, give stronger tablets at the same compression force, lose less compactibility after wet granulation and are less sensitive to over-lubrication with magnesium stearate. The silica does not change the chemical identity of the cellulose; physical blends of the two components do not reproduce these benefits.",
-   "fa": "در مقایسه با سلولز میکروکریستالی معمولی، گریدهای سیلیسیفیه جریان‌پذیری بهتری دارند، در نیروی تراکم یکسان قرص‌های محکم‌تری می‌دهند، پس از گرانولاسیون مرطوب تراکم‌پذیری کمتری از دست می‌دهند و نسبت به لغزان‌کنندگی بیش از حد با منیزیم استئارات حساسیت کمتری دارند. سیلیس ماهیت شیمیایی سلولز را تغییر نمی‌دهد و مخلوط فیزیکی ساده این دو جزء چنین مزایایی ایجاد نمی‌کند."
+   "fa": "در مقایسه با سلولز میکروکریستالی معمولی، گریدهای سیلیسیفیه جریان‌پذیری بهتری دارند، در نیروی تراکم یکسان قرص‌های محکم‌تری می‌دهند، پس از گرانولاسیون مرطوب تراکم‌پذیری کمتری از دست می‌دهند و نسبت به روان‌کنندگی بیش از حد با منیزیم استئارات حساسیت کمتری دارند. سیلیس ماهیت شیمیایی سلولز را تغییر نمی‌دهد و مخلوط فیزیکی ساده این دو جزء چنین مزایایی ایجاد نمی‌کند."
   },
   "refs": [
    "usp"
@@ -2286,7 +2286,7 @@
   "mw": "292.24",
   "applications": {
    "en": "A chelating (sequestering) agent used to bind trace metal ions that catalyse oxidation and other degradation reactions, typically at 0.005–0.1% w/v. It acts as an antioxidant synergist and enhances the activity of preservatives such as benzalkonium chloride against Gram-negative bacteria, particularly Pseudomonas. Because the free acid is poorly soluble, the more soluble disodium salt is usually preferred in aqueous products.",
-   "fa": "یک عامل شلات‌کننده (سکسترینگ) است که برای اتصال به یون‌های فلزی جزئی که اکسیداسیون و سایر واکنش‌های تخریبی را کاتالیز می‌کنند، معمولاً با غلظت 0.005–0.1٪ وزنی/حجمی به کار می‌رود. نقش هم‌افزای آنتی‌اکسیدان دارد و اثر نگهدارنده‌هایی مانند بنزالکونیوم کلرید را بر باکتری‌های گرم‌منفی، به‌ویژه Pseudomonas، افزایش می‌دهد. چون اسید آزاد حلالیت کمی دارد، در فرآورده‌های آبی معمولاً نمک دی‌سدیم آن که محلول‌تر است، ترجیح داده می‌شود."
+   "fa": "یک عامل شلات‌کننده (Sequestering agent) است که برای اتصال به یون‌های فلزی جزئی که اکسیداسیون و سایر واکنش‌های تخریبی را کاتالیز می‌کنند، معمولاً با غلظت 0.005–0.1٪ وزنی/حجمی به کار می‌رود. نقش هم‌افزای آنتی‌اکسیدان دارد و اثر نگهدارنده‌هایی مانند بنزالکونیوم کلرید را بر باکتری‌های گرم‌منفی، به‌ویژه Pseudomonas، افزایش می‌دهد. چون اسید آزاد حلالیت کمی دارد، در فرآورده‌های آبی معمولاً نمک دی‌سدیم آن که محلول‌تر است، ترجیح داده می‌شود."
   },
   "description": {
    "en": "A white or almost white, odourless crystalline powder or colourless crystals.",

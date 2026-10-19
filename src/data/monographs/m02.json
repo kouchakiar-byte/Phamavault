@@ -192,7 +192,7 @@
   },
   "comments": {
    "en": "Gels rich in guluronic acid (high G) bind calcium more strongly and are firmer and more brittle than mannuronic-rich gels. In wound dressings the ion exchange with sodium in exudate turns the fibres into a moist gel that can be removed with little trauma.",
-   "fa": "ژل‌های غنی از گولورونیک اسید (G بالا) کلسیم را محکم‌تر متصل می‌کنند و سفت‌تر و شکننده‌تر از ژل‌های غنی از مانورونیک اسید هستند. در پانسمان‌ها، تبادل یون با سدیم موجود در ترشحات زخم الیاف را به ژل مرطوبی تبدیل می‌کند که با آسیب کم برداشته می‌شود."
+   "fa": "ژل‌های غنی از گولورونیک اسید (G بالا) کلسیم را محکم‌تر متصل می‌کنند و سخت‌تر و شکننده‌تر از ژل‌های غنی از مانورونیک اسید هستند. در پانسمان‌ها، تبادل یون با سدیم موجود در ترشحات زخم الیاف را به ژل مرطوبی تبدیل می‌کند که با آسیب کم برداشته می‌شود."
   },
   "refs": [
    "eu-additives",
@@ -402,7 +402,7 @@
     },
     "v": {
      "en": "consolidates mainly by brittle fracture; relatively insensitive to lubricant level and tableting speed",
-     "fa": "عمدتاً با شکست ترد (brittle fracture) متراکم می‌شود؛ حساسیت نسبتاً کمی به مقدار لغزان‌کننده و سرعت پرس دارد"
+     "fa": "عمدتاً با شکست ترد (brittle fracture) متراکم می‌شود؛ حساسیت نسبتاً کمی به مقدار روان‌کننده و سرعت پرس دارد"
     }
    }
   ],
@@ -468,7 +468,7 @@
   "mw": "310.18 (Ca3(PO4)2); 1004.6 (Ca10(OH)2(PO4)6)",
   "applications": {
    "en": "Used as a tablet and capsule diluent (granulated grades for direct compression), as a glidant and anticaking agent in powders and foods, and as a source of calcium and phosphate in nutritional supplements. It is also used as a buffering agent and in dental products.",
-   "fa": "به عنوان رقیق‌کننده قرص و کپسول (گریدهای گرانوله برای پرس مستقیم)، لغزاننده (گلایدنت) و ضدکلوخه در پودرها و غذاها، و منبع کلسیم و فسفات در مکمل‌های غذایی به کار می‌رود. همچنین به عنوان عامل بافری و در فرآورده‌های دندانی مصرف می‌شود."
+   "fa": "به عنوان رقیق‌کننده قرص و کپسول (گریدهای گرانوله برای پرس مستقیم)، تسهیل‌کننده جریان (Glidant) و ضدکلوخه در پودرها و غذاها، و منبع کلسیم و فسفات در مکمل‌های غذایی به کار می‌رود. همچنین به عنوان عامل بافری و در فرآورده‌های دندانی مصرف می‌شود."
   },
   "description": {
    "en": "A white, odourless and tasteless powder. It is not a single compound but a mixture of calcium phosphates whose composition approximates to hydroxyapatite.",
@@ -536,7 +536,7 @@
   },
   "comments": {
    "en": "Tribasic calcium phosphate has a higher calcium content than the dibasic salts, which makes it attractive for calcium-supplement tablets. The fine powder flows poorly and is mainly used as a flow aid or after granulation.",
-   "fa": "کلسیم فسفات تری‌بازیک مقدار کلسیم بیشتری نسبت به نمک‌های دی‌بازیک دارد و به همین دلیل برای قرص‌های مکمل کلسیم جذاب است. پودر ریز آن جریان‌پذیری ضعیفی دارد و بیشتر به عنوان کمک‌جریان یا پس از گرانولاسیون مصرف می‌شود."
+   "fa": "کلسیم فسفات تری‌بازیک مقدار کلسیم بیشتری نسبت به نمک‌های دی‌بازیک دارد و به همین دلیل برای قرص‌های مکمل کلسیم جذاب است. پودر ریز آن جریان‌پذیری ضعیفی دارد و بیشتر به عنوان تسهیل‌کننده جریان یا پس از گرانولاسیون مصرف می‌شود."
   },
   "refs": [
    "usp",
@@ -559,7 +559,7 @@
   "mw": "116.16 (CaSiO3)",
   "applications": {
    "en": "Used as an anticaking agent and glidant in powders, and as an adsorbent that converts liquids or oily drugs into free-flowing powders for tableting (for example liquisolid systems). Porous grades of low density have been used in floating, gastroretentive dosage forms. It is also used in foods and cosmetics.",
-   "fa": "به عنوان ضدکلوخه و لغزاننده (گلایدنت) در پودرها و نیز جاذبی که مایعات یا داروهای روغنی را برای پرس به پودر روان تبدیل می‌کند (مثلاً در سامانه‌های liquisolid) به کار می‌رود. گریدهای متخلخل با چگالی کم در اشکال دارویی شناور و ماندگار در معده نیز استفاده شده‌اند. در صنایع غذایی و آرایشی هم مصرف دارد."
+   "fa": "به عنوان ضدکلوخه و تسهیل‌کننده جریان (Glidant) در پودرها و نیز جاذبی که مایعات یا داروهای روغنی را برای پرس به پودر روان تبدیل می‌کند (مثلاً در سامانه‌های liquisolid) به کار می‌رود. گریدهای متخلخل با چگالی کم در اشکال دارویی شناور و ماندگار در معده نیز استفاده شده‌اند. در صنایع غذایی و آرایشی هم مصرف دارد."
   },
   "description": {
    "en": "A white to off-white, free-flowing, very fine powder of low bulk density and high specific surface area.",
@@ -593,7 +593,7 @@
     },
     "v": {
      "en": "low; fluffy, high-surface-area powder",
-     "fa": "کم؛ پودر پف‌دار با سطح ویژه بالا"
+     "fa": "کم؛ پودر حجیم با سطح ویژه بالا"
     }
    },
    {
@@ -637,7 +637,7 @@
   },
   "comments": {
    "en": "Its capacity to hold liquids while staying free-flowing distinguishes it from most other glidants and makes it useful for loading oily drugs or lipid formulations into tablets and capsules.",
-   "fa": "توانایی آن در نگه داشتن مایعات در عین حفظ روانی، آن را از بیشتر لغزاننده‌های دیگر متمایز می‌کند و برای بارگذاری داروهای روغنی یا فرمولاسیون‌های لیپیدی در قرص و کپسول مفید است."
+   "fa": "توانایی آن در نگه داشتن مایعات در عین حفظ روانی، آن را از بیشتر تسهیل‌کننده‌های جریان دیگر متمایز می‌کند و برای بارگذاری داروهای روغنی یا فرمولاسیون‌های لیپیدی در قرص و کپسول مفید است."
   },
   "refs": [
    "usp",
@@ -670,7 +670,7 @@
   "mw": "607.0",
   "applications": {
    "en": "Used mainly as a lubricant in tablet and capsule manufacture, usually at up to about 1% w/w. It is also used as an emulsifier and stabiliser, as a water-repellent and anticaking agent, and in foods and cosmetics.",
-   "fa": "عمدتاً به عنوان لغزان‌کننده (لوبریکانت) در ساخت قرص و کپسول، معمولاً تا حدود 1٪ وزنی، به کار می‌رود. همچنین به عنوان امولسیفایر و پایدارکننده، عامل دافع آب و ضدکلوخه، و در صنایع غذایی و آرایشی مصرف می‌شود."
+   "fa": "عمدتاً به عنوان روان‌کننده (Lubricant) در ساخت قرص و کپسول، معمولاً تا حدود 1٪ وزنی، به کار می‌رود. همچنین به عنوان امولسیفایر و پایدارکننده، عامل دافع آب و ضدکلوخه، و در صنایع غذایی و آرایشی مصرف می‌شود."
   },
   "description": {
    "en": "A fine, white to yellowish-white, bulky powder with a slight, characteristic odour. It is unctuous to the touch and free from grittiness.",
@@ -748,7 +748,7 @@
   },
   "comments": {
    "en": "Calcium stearate is used less often than magnesium stearate but is an alternative where magnesium stearate is unsuitable; as with all metallic stearate lubricants, the lowest effective level and short blending times are advisable.",
-   "fa": "کلسیم استئارات کمتر از منیزیم استئارات مصرف می‌شود، ولی در مواردی که منیزیم استئارات مناسب نیست جایگزین آن است؛ مانند همه لغزان‌کننده‌های استئارات فلزی، استفاده از کمترین غلظت مؤثر و زمان اختلاط کوتاه توصیه می‌شود."
+   "fa": "کلسیم استئارات کمتر از منیزیم استئارات مصرف می‌شود، ولی در مواردی که منیزیم استئارات مناسب نیست جایگزین آن است؛ مانند همه روان‌کننده‌های استئارات فلزی، استفاده از کمترین غلظت مؤثر و زمان اختلاط کوتاه توصیه می‌شود."
   },
   "refs": [
    "usp",
@@ -780,7 +780,7 @@
   "mw": "172.17",
   "applications": {
    "en": "Used as a diluent in tablets and capsules; granular grades are available for direct compression and the powder is also used in wet granulation. It is used in foods as a firming agent and calcium source, and in dental products.",
-   "fa": "به عنوان رقیق‌کننده در قرص و کپسول به کار می‌رود؛ گریدهای گرانوله برای پرس مستقیم موجودند و پودر آن در گرانولاسیون مرطوب نیز مصرف می‌شود. در صنایع غذایی به عنوان عامل سفت‌کننده و منبع کلسیم و در فرآورده‌های دندانی نیز کاربرد دارد."
+   "fa": "به عنوان رقیق‌کننده در قرص و کپسول به کار می‌رود؛ گریدهای گرانوله برای پرس مستقیم موجودند و پودر آن در گرانولاسیون مرطوب نیز مصرف می‌شود. در صنایع غذایی به عنوان عامل استحکام‌بخش (Firming agent) و منبع کلسیم و در فرآورده‌های دندانی نیز کاربرد دارد."
   },
   "description": {
    "en": "A white or almost white, odourless and tasteless powder or fine crystalline granules.",
@@ -858,7 +858,7 @@
   },
   "comments": {
    "en": "The dihydrate must not be confused with the hemihydrate (plaster of Paris), which sets to a hard mass when mixed with water and is unsuitable as a diluent. Tablets made with calcium sulfate dihydrate are non-hygroscopic but, because the material is poorly soluble, may need a disintegrant.",
-   "fa": "دی‌هیدرات نباید با همی‌هیدرات (گچ پاریس) اشتباه شود؛ همی‌هیدرات با آب سفت می‌شود و به عنوان رقیق‌کننده مناسب نیست. قرص‌های ساخته‌شده با کلسیم سولفات دی‌هیدرات رطوبت‌گیر نیستند، ولی به دلیل حلالیت کم ماده ممکن است به متلاشی‌کننده نیاز داشته باشند."
+   "fa": "دی‌هیدرات نباید با همی‌هیدرات (گچ پاریس) اشتباه شود؛ همی‌هیدرات با آب سخت می‌شود و به عنوان رقیق‌کننده مناسب نیست. قرص‌های ساخته‌شده با کلسیم سولفات دی‌هیدرات رطوبت‌گیر نیستند، ولی به دلیل حلالیت کم ماده ممکن است به متلاشی‌کننده نیاز داشته باشند."
   },
   "refs": [
    "usp",
@@ -1103,7 +1103,7 @@
   },
   "description": {
    "en": "A white, fluffy, acidic, hygroscopic powder with a slight characteristic odour. Grades differ in crosslink density, polymerisation solvent and the viscosity they give when neutralised.",
-   "fa": "پودر سفید، پف‌دار، اسیدی و رطوبت‌گیر با بوی ضعیف مشخص. گریدها از نظر تراکم اتصالات عرضی، حلال پلیمریزاسیون و ویسکوزیته‌ای که پس از خنثی‌سازی ایجاد می‌کنند با هم فرق دارند."
+   "fa": "پودر سفید، حجیم، اسیدی و رطوبت‌گیر با بوی ضعیف مشخص. گریدها از نظر تراکم اتصالات عرضی، حلال پلیمریزاسیون و ویسکوزیته‌ای که پس از خنثی‌سازی ایجاد می‌کنند با هم فرق دارند."
   },
   "properties": [
    {
@@ -1581,7 +1581,7 @@
     },
     "v": {
      "en": "kappa (firm, brittle gels with potassium ions), iota (elastic gels with calcium ions) and lambda (non-gelling, thickening)",
-     "fa": "کاپا (ژل سفت و شکننده با یون پتاسیم)، یوتا (ژل الاستیک با یون کلسیم) و لامبدا (غیرژل‌شونده، غلیظ‌کننده)"
+     "fa": "کاپا (ژل محکم و شکننده با یون پتاسیم)، یوتا (ژل الاستیک با یون کلسیم) و لامبدا (غیرژل‌شونده، غلیظ‌کننده)"
     }
    },
    {
@@ -1807,7 +1807,7 @@
   "mw": "939.5",
   "applications": {
    "en": "Used as a hydrophobic matrix former and coating material in sustained-release tablets and capsules, as a tablet lubricant, and as a stiffening agent in creams, ointments, sticks and suppository bases. It is also used in cosmetics.",
-   "fa": "به عنوان سازنده ماتریکس آب‌گریز و ماده پوشش‌دهنده در قرص‌ها و کپسول‌های پیوسته‌رهش، لغزان‌کننده قرص، و عامل سفت‌کننده در کرم‌ها، پمادها، استیک‌ها و پایه‌های شیاف به کار می‌رود. در محصولات آرایشی نیز مصرف می‌شود."
+   "fa": "به عنوان سازنده ماتریکس آب‌گریز و ماده پوشش‌دهنده در قرص‌ها و کپسول‌های پیوسته‌رهش، روان‌کننده قرص، و عامل قوام‌دهنده در کرم‌ها، پمادها، استیک‌ها و پایه‌های شیاف به کار می‌رود. در محصولات آرایشی نیز مصرف می‌شود."
   },
   "description": {
    "en": "A fine, white to yellowish-white, waxy powder, flakes or pellets with little or no odour.",

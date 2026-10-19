@@ -134,7 +134,7 @@ export const copy = {
         points: [
           bi("QC laboratory and microbiology SOPs: sampling, calibration, water and environmental monitoring", "دستورالعمل‌های آزمایشگاه کنترل کیفیت و میکروبیولوژی: نمونه‌برداری، کالیبراسیون، آب و پایش محیطی"),
           bi("Stability study conditions per ICH Q1A(R2) and validation guidance per ICH Q2(R2)", "شرایط مطالعات پایداری طبق ICH Q1A(R2) و اعتبارسنجی روش طبق ICH Q2(R2)"),
-          bi("Pharmacopoeial acceptance criteria: dissolution, uniformity of dosage units, friability and microbial limits", "معیارهای پذیرش فارماکوپه‌ای: انحلال، یکنواختی واحدهای دارویی، سایش و حدود میکروبی"),
+          bi("Pharmacopoeial acceptance criteria: dissolution, uniformity of dosage units, friability and microbial limits", "معیارهای پذیرش فارماکوپه‌ای: انحلال، یکنواختی واحدهای دارویی، فرسایش‌پذیری و حدود میکروبی"),
         ],
       },
       {
@@ -151,7 +151,7 @@ export const copy = {
         title: bi("Production", "تولید (Production)"),
         points: [
           bi("Production SOPs from dispensing and granulation to tablet coating and line clearance", "دستورالعمل‌های تولید از توزین و گرانولاسیون تا روکش‌دهی قرص و ترخیص خط"),
-          bi("Batch scale-up from unit formula to batch formula with overage", "افزایش مقیاس از فرمول واحد به فرمول بچ با احتساب اضافه‌ساخت"),
+          bi("Batch scale-up from unit formula to batch formula with overage", "افزایش مقیاس از فرمول واحد به فرمول بچ با احتساب مقدار اضافی (Overage)"),
           bi("Handbook chapters on critical process parameters and technology transfer", "فصل‌های هندبوک درباره پارامترهای بحرانی فرآیند و انتقال فناوری"),
         ],
       },
@@ -196,7 +196,7 @@ export const copy = {
 
   sectionsIntro: {
     eyebrow: bi("Inside the vault", "بخش‌های پلتفرم"),
-    title: bi("Eleven specialised sections, one integrated platform", "یازده بخش تخصصی در یک پلتفرم یکپارچه"),
+    title: bi("Twelve specialised sections, one integrated platform", "دوازده بخش تخصصی در یک پلتفرم یکپارچه"),
     lead: bi(
       "The sections are designed to work together: from an excipient you move to its suppliers, to the calculation that uses it and to the regulatory requirement that governs it.",
       "بخش‌ها برای کار در کنار هم طراحی شده‌اند: از یک ماده جانبی به تأمین‌کنندگان آن، به محاسبه‌ای که در آن به کار می‌رود و به الزام رگولاتوری حاکم بر آن می‌رسید.",
@@ -291,7 +291,7 @@ export const copy = {
       teamList: 14_917_500,
       teamUsers: 6,
       extraUser: 1_000_000,
-      /** Pharmacy: all ten sections (the pharmacy section only opens with this plan) for one user, 15% off. */
+      /** Pharmacy: all eleven subscription sections (the pharmacy section only opens with this plan) for one user, 15% off. */
       pharmacy: 8_700_000,
       pharmacyList: 10_235_000,
     },
@@ -458,7 +458,7 @@ export const copy = {
         phone: bi("The phone number looks too short.", "شماره تماس کامل نیست."),
         unavailable: bi(
           "The request could not be saved right now. Please call us or email the address below.",
-          "ثبت درخواست الان ممکن نشد. لطفاً تماس بگیرید یا به ایمیل زیر پیام دهید.",
+          "ثبت درخواست در حال حاضر ممکن نشد. لطفاً تماس بگیرید یا به ایمیل زیر پیام دهید.",
         ),
       },
     },
@@ -576,6 +576,6 @@ export const copy = {
       "The page you are looking for does not exist or has been moved.",
       "صفحه‌ای که به دنبال آن هستید وجود ندارد یا منتقل شده است.",
     ),
-    backHome: bi("Back to home", "بازگشت به خانه"),
+    backHome: bi("Back to home", "بازگشت به صفحه اصلی"),
   },
 };

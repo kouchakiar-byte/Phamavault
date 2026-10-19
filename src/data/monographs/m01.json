@@ -349,7 +349,7 @@
   },
   "comments": {
    "en": "Diluted grades are much more convenient for pH adjustment in formulation work. Glacial acetic acid may solidify in a cold store; gently warming the container restores it to liquid without affecting quality.",
-   "fa": "برای تنظیم pH در کار فرمولاسیون، گریدهای رقیق بسیار راحت‌ترند. استیک اسید گلاسیال ممکن است در انبار سرد جامد شود؛ گرم کردن ملایم ظرف آن را بدون تأثیر بر کیفیت دوباره مایع می‌کند."
+   "fa": "برای تنظیم pH در فرمولاسیون، استفاده از گریدهای رقیق بسیار آسان‌تر است. استیک اسید گلاسیال ممکن است در انبار سرد جامد شود؛ گرم کردن ملایم ظرف آن را بدون تأثیر بر کیفیت دوباره مایع می‌کند."
   },
   "refs": [
    "usp",
@@ -814,7 +814,7 @@
   "mw": "",
   "applications": {
    "en": "Used as a gelling, suspending, emulsion-stabilising and thickening agent, in suppositories and surgical lubricants, and occasionally as a tablet binder or disintegrant. It is also used as a bulk laxative, and it is the standard gelling agent for microbiological culture media (usually around 1–2%). In foods it is a gelling agent and stabiliser.",
-   "fa": "به عنوان عامل ژل‌ساز، تعلیق‌کننده، پایدارکننده امولسیون و غلیظ‌کننده، در شیاف‌ها و لوبریکانت‌های جراحی، و گاهی به عنوان چسباننده یا متلاشی‌کننده قرص به کار می‌رود. همچنین ملین حجم‌دهنده است و ژل‌ساز استاندارد محیط‌های کشت میکروبی (معمولاً حدود 1–2٪) به شمار می‌رود. در غذا به عنوان ژل‌ساز و پایدارکننده مصرف می‌شود."
+   "fa": "به عنوان عامل ژل‌ساز، تعلیق‌کننده، پایدارکننده امولسیون و غلیظ‌کننده، در شیاف‌ها و روان‌کننده‌های جراحی، و گاهی به عنوان چسباننده یا متلاشی‌کننده قرص به کار می‌رود. همچنین ملین حجم‌دهنده است و ژل‌ساز استاندارد محیط‌های کشت میکروبی (معمولاً حدود 1–2٪) به شمار می‌رود. در غذا به عنوان ژل‌ساز و پایدارکننده مصرف می‌شود."
   },
   "description": {
    "en": "Supplied as colourless to pale yellow translucent strips, flakes or granules, or as a powder. It is tough when damp and brittle when dry, practically odourless or with a slight odour, and has a mucilaginous taste. Agar consists mainly of agarose, a neutral gelling galactan, together with agaropectin, a more charged sulfated fraction.",
@@ -828,7 +828,7 @@
     },
     "v": {
      "en": "dilute hot solutions (from about 0.5–1.5%) set to firm gels on cooling to about 32–40 °C; the gel does not melt again until heated to about 85 °C or above",
-     "fa": "محلول‌های داغ رقیق (از حدود 0.5–1.5٪) با سرد شدن تا حدود 32–40 °C به ژل سفت تبدیل می‌شوند؛ ژل تا رسیدن به حدود 85 °C یا بالاتر دوباره ذوب نمی‌شود"
+     "fa": "محلول‌های داغ رقیق (از حدود 0.5–1.5٪) با سرد شدن تا حدود 32–40 °C به ژل محکم تبدیل می‌شوند؛ ژل تا رسیدن به حدود 85 °C یا بالاتر دوباره ذوب نمی‌شود"
     }
    },
    {
@@ -892,7 +892,7 @@
   },
   "comments": {
    "en": "The marked hysteresis between gelling and melting temperatures is the property that makes agar useful: gels made with it stay solid at body and incubation temperatures. Gel strength varies with the seaweed source and grade, so the grade should be specified when gel firmness matters.",
-   "fa": "پسماند (هیسترزیس) چشمگیر بین دمای ژل شدن و دمای ذوب، ویژگی‌ای است که آگار را مفید می‌کند: ژل‌های تهیه‌شده با آن در دمای بدن و انکوباسیون جامد می‌مانند. استحکام ژل بسته به منبع جلبک و گرید متفاوت است؛ بنابراین وقتی سفتی ژل اهمیت دارد، گرید باید مشخص شود."
+   "fa": "پسماند (هیسترزیس) چشمگیر بین دمای ژل شدن و دمای ذوب، ویژگی‌ای است که آگار را مفید می‌کند: ژل‌های تهیه‌شده با آن در دمای بدن و انکوباسیون جامد می‌مانند. استحکام ژل بسته به منبع جلبک و گرید متفاوت است؛ بنابراین وقتی استحکام ژل اهمیت دارد، گرید باید مشخص شود."
   },
   "refs": [
    "usp",
@@ -1240,7 +1240,7 @@
   },
   "comments": {
    "en": "The ratio and arrangement of guluronic and mannuronic blocks control gel behaviour: alginates rich in guluronic acid form stronger, more rigid calcium gels, whereas mannuronic-rich alginates give softer, more elastic gels.",
-   "fa": "نسبت و آرایش بلوک‌های گولورونیک و مانورونیک رفتار ژل را تعیین می‌کند: آلژینات‌های غنی از گولورونیک اسید ژل‌های کلسیمی قوی‌تر و سفت‌تری تشکیل می‌دهند، در حالی که آلژینات‌های غنی از مانورونیک اسید ژل‌های نرم‌تر و الاستیک‌تری ایجاد می‌کنند."
+   "fa": "نسبت و آرایش بلوک‌های گولورونیک و مانورونیک رفتار ژل را تعیین می‌کند: آلژینات‌های غنی از گولورونیک اسید ژل‌های کلسیمی قوی‌تر و محکم‌تری تشکیل می‌دهند، در حالی که آلژینات‌های غنی از مانورونیک اسید ژل‌های نرم‌تر و الاستیک‌تری ایجاد می‌کنند."
   },
   "refs": [
    "usp",
@@ -2827,7 +2827,7 @@
   "mw": "122.12",
   "applications": {
    "en": "Used as an antimicrobial preservative in oral, topical and some parenteral preparations, and widely in foods. It is effective only in its undissociated form, so it is used in products with a pH below about 4.5. Typical concentrations: oral solutions 0.01–0.1%; oral syrups about 0.15%; topical and vaginal preparations 0.1–0.2%; injections about 0.17%. It has also been used as a tablet lubricant and, with salicylic acid, as a keratolytic and antifungal.",
-   "fa": "به عنوان نگهدارنده ضدمیکروبی در فرآورده‌های خوراکی، موضعی و برخی تزریقی‌ها و به‌طور گسترده در غذا به کار می‌رود. فقط به شکل تفکیک‌نشده مؤثر است، بنابراین در فرآورده‌هایی با pH کمتر از حدود 4.5 مصرف می‌شود. غلظت‌های متداول: محلول‌های خوراکی 0.01–0.1٪؛ شربت‌های خوراکی حدود 0.15٪؛ فرآورده‌های موضعی و واژینال 0.1–0.2٪؛ تزریقی‌ها حدود 0.17٪. همچنین به عنوان لغزان‌کننده قرص و همراه با سالیسیلیک اسید به عنوان کراتولیتیک و ضدقارچ استفاده شده است."
+   "fa": "به عنوان نگهدارنده ضدمیکروبی در فرآورده‌های خوراکی، موضعی و برخی تزریقی‌ها و به‌طور گسترده در غذا به کار می‌رود. فقط به شکل تفکیک‌نشده مؤثر است، بنابراین در فرآورده‌هایی با pH کمتر از حدود 4.5 مصرف می‌شود. غلظت‌های متداول: محلول‌های خوراکی 0.01–0.1٪؛ شربت‌های خوراکی حدود 0.15٪؛ فرآورده‌های موضعی و واژینال 0.1–0.2٪؛ تزریقی‌ها حدود 0.17٪. همچنین به عنوان روان‌کننده قرص و همراه با سالیسیلیک اسید به عنوان کراتولیتیک و ضدقارچ استفاده شده است."
   },
   "description": {
    "en": "White, lustrous crystalline plates, needles or powder, odourless or with a faint characteristic odour (of benzaldehyde or benzoin).",

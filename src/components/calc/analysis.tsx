@@ -126,7 +126,7 @@ export function Uv({ ctx }: { ctx: Ctx }) {
         </>
       }
       results={[
-        { label: bi("Concentration in the cell", "غلظت در سل"), value: c },
+        { label: bi("Concentration in the cell", "غلظت در کووت (Cell)"), value: c },
         { label: bi("Amount found", "مقدار یافت‌شده"), value: found },
         { label: bi("% of expected", "درصد از مقدار مورد انتظار"), value: pct },
         { label: bi("Molar absorptivity ε", "ضریب جذب مولی ε"), value: eps },

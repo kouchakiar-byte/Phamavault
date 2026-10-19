@@ -34,7 +34,7 @@ export const referencesPage: LegalPage = {
 export const referencesReviewedOn = bi("Editions last reviewed: October 2026.", "آخرین بازبینی ویرایش‌ها: مهر ۱۴۰۵.");
 export const referencesPaid = bi(
   "Links open the official site in a new tab. The full texts of USP–NF, BP, Ph. Eur. need a subscription; the others are free.",
-  `لینک‌ها سایت رسمی را در تب جدید باز می‌کنند. متن کامل ${ltr("USP–NF")}، ${ltr("BP")} و ${ltr("Ph.\u00a0Eur.")} نیاز به اشتراک دارد؛ بقیه رایگان‌اند.`,
+  `لینک‌ها سایت رسمی را در زبانه جدید باز می‌کنند. متن کامل ${ltr("USP–NF")}، ${ltr("BP")} و ${ltr("Ph.\u00a0Eur.")} نیاز به اشتراک دارد؛ سایر موارد رایگان‌اند.`,
 );
 export const referenceLabels = {
   inForce: bi("In force", "لازم‌الاجرا"),
@@ -50,7 +50,7 @@ export const referencesOrangeBook = {
   title: bi("Orange Book — search FDA-approved generic and brand products", "Orange Book — جستجوی داروهای ژنریک و برند تأییدشده FDA"),
   lead: bi(
     "The full FDA Orange Book (Approved Drug Products with Therapeutic Equivalence Evaluations), searchable here. Search by active ingredient or brand name to see every approved product of that ingredient — the reference listed drug and its generics — with strength, dosage form, applicant, application number and therapeutic-equivalence (TE) code. The data are refreshed every month from the FDA data files.",
-    "نسخه کامل Orange Book سازمان غذا و دارو آمریکا (Approved Drug Products with Therapeutic Equivalence Evaluations) که همین‌جا قابل جستجوست. با جستجوی ماده مؤثره یا نام تجاری، همه فرآورده‌های تأییدشده آن ماده — داروی مرجع (RLD) و ژنریک‌های آن — را با قدرت، شکل دارویی، شرکت صاحب مجوز، شماره پرونده و کد هم‌ارزی درمانی (TE) ببینید. داده‌ها هر ماه از فایل‌های رسمی FDA به‌روز می‌شوند.",
+    "نسخه کامل Orange Book سازمان غذا و دارو آمریکا (Approved Drug Products with Therapeutic Equivalence Evaluations) که همین‌جا قابل جستجوست. با جستجوی ماده مؤثره یا نام تجاری، همه فرآورده‌های تأییدشده آن ماده — داروی مرجع (RLD) و ژنریک‌های آن — را با قدرت، شکل دارویی، شرکت صاحب مجوز، شماره پرونده و کد هم‌ارزی درمانی (TE) مشاهده کنید. داده‌ها هر ماه از فایل‌های رسمی FDA به‌روز می‌شوند.",
   ),
   note: bi(
     "TE codes beginning with A are therapeutically equivalent to the reference product (e.g. AB: bioequivalence demonstrated); codes beginning with B are not considered equivalent; a blank code means there is no multisource comparison (single source or OTC monograph). RLD = reference listed drug, the product generics are compared with; RS = reference standard for bioequivalence studies.",
@@ -79,7 +79,7 @@ export const referenceSections: RefSection[] = [
     ],
     text: bi(
       "The legal standard for medicines in the United States. Since 2026 USP–NF Online publishes several issues a year and every chapter or monograph carries its own official date, so check the “official” date of the text you cite.",
-      "استاندارد قانونی دارو در آمریکا. از ۲۰۲۶ نسخه آنلاین USP–NF چند شماره در سال منتشر می‌کند و هر فصل یا مونوگراف تاریخ رسمی شدن خودش را دارد؛ پس تاریخ «رسمی از» متنی را که استناد می‌کنید بررسی کنید.",
+      "استاندارد قانونی دارو در آمریکا. از ۲۰۲۶ نسخه آنلاین USP–NF چند شماره در سال منتشر می‌کند و هر فصل یا مونوگراف تاریخ رسمی‌شدن خاص خود را دارد؛ بنابراین تاریخ «رسمی از» متنی را که استناد می‌کنید بررسی کنید.",
     ),
     links: [
       { label: "USP–NF Online", url: "https://www.uspnf.com/", note: bi("Official texts (subscription)", "متن رسمی (با اشتراک)") },
@@ -101,7 +101,7 @@ export const referenceSections: RefSection[] = [
     ],
     text: bi(
       "Published each August by the MHRA and legally effective from the following 1 January; it reproduces every Ph. Eur. monograph alongside about 4,000 monographs of its own.",
-      "هر سال در ماه اوت از سوی MHRA منتشر و از اول ژانویه سال بعد لازم‌الاجرا می‌شود؛ همه مونوگراف‌های فارماکوپه اروپا را هم در کنار حدود ۴۰۰۰ مونوگراف خودش در بر دارد.",
+      "هر سال در ماه اوت از سوی MHRA منتشر و از اول ژانویه سال بعد لازم‌الاجرا می‌شود؛ همه مونوگراف‌های فارماکوپه اروپا را هم در کنار حدود ۴۰۰۰ مونوگراف خود در بر دارد.",
     ),
     links: [
       { label: "BP 2026 online", url: "https://www.pharmacopoeia.com/", note: bi("Official texts — sign in with a subscription", "متن رسمی — ورود با اشتراک") },

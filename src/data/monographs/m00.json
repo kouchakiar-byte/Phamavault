@@ -24,7 +24,7 @@
   "mw": "≈ 36 000",
   "applications": {
    "en": "Microcrystalline cellulose is one of the most widely used tablet and capsule diluents, in both wet granulation and direct compression. Besides acting as a filler and dry binder it has some lubricant and disintegrant properties, which makes it especially useful in direct compression. Typical concentrations: tablet binder/diluent 20–90%; capsule binder/diluent 20–90%; adsorbent 20–90%; antiadherent 5–20%; tablet disintegrant 5–15%. It is also used in cosmetics and foods.",
-   "fa": "سلولز میکروکریستالی یکی از پرمصرف‌ترین رقیق‌کننده‌ها (پرکننده‌ها) در قرص و کپسول است و هم در گرانولاسیون مرطوب و هم در پرس مستقیم به کار می‌رود. علاوه بر نقش پرکننده و چسباننده خشک، خاصیت لغزان‌کنندگی و متلاشی‌کنندگی هم دارد و به همین دلیل در پرس مستقیم بسیار مفید است. غلظت‌های متداول: چسباننده/رقیق‌کننده قرص 20–90٪؛ چسباننده/رقیق‌کننده کپسول 20–90٪؛ جاذب 20–90٪؛ ضدچسبندگی 5–20٪؛ متلاشی‌کننده قرص 5–15٪. در صنایع آرایشی و غذایی نیز مصرف می‌شود."
+   "fa": "سلولز میکروکریستالی یکی از پرمصرف‌ترین رقیق‌کننده‌ها (پرکننده‌ها) در قرص و کپسول است و هم در گرانولاسیون مرطوب و هم در پرس مستقیم به کار می‌رود. علاوه بر نقش پرکننده و چسباننده خشک، خاصیت روان‌کنندگی و متلاشی‌کنندگی هم دارد و به همین دلیل در پرس مستقیم بسیار مفید است. غلظت‌های متداول: چسباننده/رقیق‌کننده قرص 20–90٪؛ چسباننده/رقیق‌کننده کپسول 20–90٪؛ جاذب 20–90٪؛ ضدچسبندگی 5–20٪؛ متلاشی‌کننده قرص 5–15٪. در صنایع آرایشی و غذایی نیز مصرف می‌شود."
   },
   "description": {
    "en": "A purified, partially depolymerised cellulose. White, odourless, tasteless, crystalline powder made up of porous particles. Commercial grades differ in particle size and moisture content, which govern their properties and uses.",
@@ -102,7 +102,7 @@
   },
   "manufacture": {
    "en": "Made by controlled hydrolysis of α-cellulose, obtained as a pulp from fibrous plant material, with dilute mineral acid. The hydrocellulose is purified by filtration and the aqueous slurry is spray-dried to give dry, porous particles of a broad size distribution.",
-   "fa": "از هیدرولیز کنترل‌شده آلفاسلولز (خمیر حاصل از الیاف گیاهی) با اسید معدنی رقیق تهیه می‌شود. هیدروسلولز حاصل با فیلتراسیون خالص‌سازی و دوغاب آبی آن خشک‌کن پاششی (اسپری درای) می‌شود تا ذرات خشک و متخلخل با توزیع اندازه گسترده به دست آید."
+   "fa": "از هیدرولیز کنترل‌شده آلفاسلولز (خمیر حاصل از الیاف گیاهی) با اسید معدنی رقیق تهیه می‌شود. هیدروسلولز حاصل با فیلتراسیون خالص‌سازی و دوغاب آبی آن به روش خشک‌کردن پاششی (Spray drying) خشک می‌شود تا ذرات خشک و متخلخل با توزیع اندازه گسترده به دست آید."
   },
   "safety": {
    "en": "Widely used in oral products and foods and regarded as relatively non-toxic and non-irritant. It is not absorbed systemically after oral administration. Very large quantities may have a laxative effect. Misuse of tablets by injection or inhalation has caused cellulose granulomas.",
@@ -158,7 +158,7 @@
   "mw": "591.24",
   "applications": {
    "en": "Used mainly as a lubricant in tablet and capsule manufacture, at 0.25–5.0% w/w. It is also used in barrier creams and as a food additive.",
-   "fa": "عمدتاً به عنوان لغزان‌کننده (لوبریکانت) در ساخت قرص و کپسول با غلظت 0.25–5.0٪ وزنی به کار می‌رود. در کرم‌های محافظ پوست و به عنوان افزودنی غذایی نیز مصرف می‌شود."
+   "fa": "عمدتاً به عنوان روان‌کننده (Lubricant) در ساخت قرص و کپسول با غلظت 0.25–5.0٪ وزنی به کار می‌رود. در کرم‌های محافظ پوست و به عنوان افزودنی غذایی نیز مصرف می‌شود."
   },
   "description": {
    "en": "A very fine, light, white, precipitated or milled powder of low bulk density, with a faint odour of stearic acid and a characteristic taste. It is greasy to the touch and adheres readily to the skin. The material is a mixture of magnesium salts of fatty acids, mainly stearic and palmitic acid; Ph. Eur. requires stearic acid ≥ 40% and stearic plus palmitic acid ≥ 90% of the fatty-acid fraction.",
@@ -172,7 +172,7 @@
     },
     "v": {
      "en": "trihydrate (acicular), dihydrate (lamellar) and anhydrate; commercial material is often a mixture, and the form affects lubricant performance",
-     "fa": "تری‌هیدرات (سوزنی)، دی‌هیدرات (لایه‌ای) و بدون آب؛ ماده تجاری اغلب مخلوطی از این‌هاست و نوع فرم بر عملکرد لغزان‌کنندگی اثر دارد"
+     "fa": "تری‌هیدرات (سوزنی)، دی‌هیدرات (لایه‌ای) و بدون آب؛ ماده تجاری اغلب مخلوطی از این‌هاست و نوع فرم بر عملکرد روان‌کنندگی اثر دارد"
     }
    },
    {
@@ -246,7 +246,7 @@
   },
   "comments": {
    "en": "Magnesium stearate is hydrophobic and can slow the dissolution of a drug from a solid dosage form, so the lowest effective level should be used. Over-blending lowers tablet hardness and lengthens disintegration and dissolution; it is normally added last and blended for a short time (typically 2–5 minutes). Lubricant performance varies between suppliers and lots because of differences in hydrate form, particle size and specific surface area.",
-   "fa": "منیزیم استئارات آب‌گریز است و می‌تواند انحلال دارو از شکل دارویی جامد را کند کند؛ بنابراین کمترین غلظت مؤثر باید به کار رود. اختلاط بیش از حد سختی قرص را کم و زمان متلاشی شدن و انحلال را طولانی می‌کند؛ معمولاً در آخر اضافه و مدت کوتاهی (معمولاً 2–5 دقیقه) مخلوط می‌شود. به دلیل تفاوت فرم هیدراته، اندازه ذره و سطح ویژه، عملکرد لغزان‌کنندگی بین تأمین‌کنندگان و سری‌های مختلف متفاوت است."
+   "fa": "منیزیم استئارات آب‌گریز است و می‌تواند انحلال دارو از شکل دارویی جامد را کند کند؛ بنابراین کمترین غلظت مؤثر باید به کار رود. اختلاط بیش از حد سختی قرص را کم و زمان متلاشی شدن و انحلال را طولانی می‌کند؛ معمولاً در آخر اضافه و مدت کوتاهی (معمولاً 2–5 دقیقه) مخلوط می‌شود. به دلیل تفاوت فرم هیدراته، اندازه ذره و سطح ویژه، عملکرد روان‌کنندگی بین تأمین‌کنندگان و سری‌های مختلف متفاوت است."
   },
   "refs": [
    "usp",
@@ -342,7 +342,7 @@
   ],
   "stability": {
    "en": "Mould growth can occur under humid conditions (80% RH and above). Lactose may brown on storage, faster in warm, damp conditions. Solutions show mutarotation. Store in a well-closed container in a cool, dry place.",
-   "fa": "در رطوبت بالا (80٪ رطوبت نسبی و بیشتر) ممکن است کپک بزند. در طول نگهداری ممکن است قهوه‌ای شود که در شرایط گرم و مرطوب سریع‌تر رخ می‌دهد. محلول‌های آن موتاروتاسیون نشان می‌دهند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+   "fa": "در رطوبت بالا (80٪ رطوبت نسبی و بیشتر) ممکن است دچار رشد کپک شود. در طول نگهداری ممکن است قهوه‌ای شود که در شرایط گرم و مرطوب سریع‌تر رخ می‌دهد. محلول‌های آن موتاروتاسیون نشان می‌دهند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "As a reducing sugar it undergoes Maillard-type condensation with compounds having a primary amine group (for example amino acids, amphetamines and aminophylline), giving brown products; the reaction is faster with amorphous than with crystalline lactose. It is also incompatible with strong oxidisers.",
@@ -354,7 +354,7 @@
   },
   "safety": {
    "en": "Widely used and generally non-toxic. People with lactase deficiency (lactose intolerance) can develop abdominal cramps, diarrhoea and flatulence after large amounts; the quantities in most tablets and capsules are usually too small to cause symptoms, but this should be considered for sensitive patients.",
-   "fa": "به‌طور گسترده مصرف می‌شود و عموماً غیرسمی است. افراد دچار کمبود لاکتاز (عدم تحمل لاکتوز) پس از مصرف مقادیر زیاد ممکن است دچار دل‌درد، اسهال و نفخ شوند؛ مقدار موجود در بیشتر قرص‌ها و کپسول‌ها معمولاً برای ایجاد علامت کافی نیست، ولی در بیماران حساس باید در نظر گرفته شود."
+   "fa": "به‌طور گسترده مصرف می‌شود و عموماً غیرسمی است. افراد دچار کمبود لاکتاز (عدم تحمل لاکتوز) پس از مصرف مقادیر زیاد ممکن است دچار درد شکمی، اسهال و نفخ شوند؛ مقدار موجود در بیشتر قرص‌ها و کپسول‌ها معمولاً برای ایجاد علامت کافی نیست، ولی در بیماران حساس باید در نظر گرفته شود."
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled. Excessive dust should be avoided; eye protection and gloves are recommended.",

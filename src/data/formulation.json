@@ -10,19 +10,19 @@
   },
   "bin": {
    "en": "Binder",
-   "fa": "چسباننده (بایندر)"
+   "fa": "چسباننده (Binder)"
   },
   "dis": {
    "en": "Disintegrant",
-   "fa": "متلاشی‌کننده (دیس‌اینتگرانت)"
+   "fa": "متلاشی‌کننده (Disintegrant)"
   },
   "gli": {
    "en": "Glidant",
-   "fa": "بهبوددهنده جریان پودر (گلایدانت)"
+   "fa": "تسهیل‌کننده جریان (Glidant)"
   },
   "lub": {
    "en": "Lubricant",
-   "fa": "لغزان‌کننده (لوبریکانت)"
+   "fa": "روان‌کننده (Lubricant)"
   },
   "stf": {
    "en": "Stiffening agent",
@@ -30,15 +30,15 @@
   },
   "emo": {
    "en": "Emollient",
-   "fa": "امولینت (نرم‌کننده پوست)"
+   "fa": "نرم‌کننده پوست (Emollient)"
   },
   "emu": {
    "en": "Emulsifying agent",
-   "fa": "امولسی‌فایر"
+   "fa": "امولسیون‌کننده (Emulsifier)"
   },
   "hum": {
    "en": "Humectant",
-   "fa": "هیومکتانت (رطوبت‌گیر)"
+   "fa": "رطوبت‌گیر (Humectant)"
   },
   "pre": {
    "en": "Antimicrobial preservative",
@@ -97,7 +97,7 @@
   {
    "name": {
     "en": "Tablet — direct compression",
-    "fa": "قرص — پرس مستقیم (Direct compression)"
+    "fa": "قرص — فشرده‌سازی مستقیم (Direct compression)"
    },
    "rows": [
     {

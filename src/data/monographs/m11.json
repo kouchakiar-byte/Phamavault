@@ -74,7 +74,7 @@
   },
   "safety": {
    "en": "Used in oral and topical pharmaceutical products and in cosmetics, where it is generally regarded as having low toxicity. It may cause mild skin and eye irritation, and the neat liquid can irritate the mucous membranes.",
-   "fa": "در فرآورده‌های دارویی خوراکی و موضعی و نیز در فرآورده‌های آرایشی مصرف می‌شود و به‌طور کلی سمیت کمی برای آن قائل‌اند. ممکن است تحریک خفیف پوست و چشم ایجاد کند و مایع خالص آن می‌تواند غشاهای مخاطی را تحریک کند."
+   "fa": "در فرآورده‌های دارویی خوراکی و موضعی و نیز در فرآورده‌های آرایشی مصرف می‌شود و به‌طور کلی سمیت آن کم در نظر گرفته می‌شود. ممکن است تحریک خفیف پوست و چشم ایجاد کند و مایع خالص آن می‌تواند غشاهای مخاطی را تحریک کند."
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled. Eye protection and gloves are recommended. It is a combustible liquid and should be kept away from sources of ignition.",
@@ -498,7 +498,7 @@
     },
     "v": {
      "en": "transparent, flexible and heat-sealable films with low oxygen permeability and good oil resistance",
-     "fa": "فیلم‌های شفاف، انعطاف‌پذیر و قابل دوخت حرارتی با نفوذپذیری کم به اکسیژن و مقاومت خوب در برابر روغن"
+     "fa": "فیلم‌های شفاف، انعطاف‌پذیر و قابل درزگیری حرارتی (Heat-sealable) با نفوذپذیری کم به اکسیژن و مقاومت خوب در برابر روغن"
     }
    }
   ],
@@ -922,7 +922,7 @@
   "mw": "",
   "applications": {
    "en": "A versatile excipient in oral solid dosage forms, used as a diluent, binder and disintegrant, and also as a glidant and in dusting powders. Typical concentrations: tablet disintegrant 3–25% w/w (often about 5–15%); binder, added as a freshly prepared paste in wet granulation, 5–25% w/w; diluent in tablets and capsules at higher levels. It is also used as a thickener in foods and as a component of topical dusting powders.",
-   "fa": "اکسیپینتی همه‌کاره در اشکال دارویی جامد خوراکی است که به عنوان رقیق‌کننده، چسباننده و متلاشی‌کننده، و همچنین به عنوان روان‌کننده (گلایدنت) و در پودرهای پاشیدنی به کار می‌رود. غلظت‌های متداول: متلاشی‌کننده قرص 3–25٪ وزنی (اغلب حدود 5–15٪)؛ چسباننده به صورت خمیر تازه‌تهیه‌شده در گرانولاسیون مرطوب 5–25٪ وزنی؛ رقیق‌کننده قرص و کپسول در مقادیر بیشتر. همچنین به عنوان غلیظ‌کننده در مواد غذایی و جزئی از پودرهای پاشیدنی موضعی مصرف می‌شود."
+   "fa": "ماده جانبی همه‌کاره‌ای در اشکال دارویی جامد خوراکی است که به عنوان رقیق‌کننده، چسباننده و متلاشی‌کننده، و همچنین به عنوان تسهیل‌کننده جریان (Glidant) و در پودرهای پاشیدنی به کار می‌رود. غلظت‌های متداول: متلاشی‌کننده قرص 3–25٪ وزنی (اغلب حدود 5–15٪)؛ چسباننده به صورت خمیر تازه‌تهیه‌شده در گرانولاسیون مرطوب 5–25٪ وزنی؛ رقیق‌کننده قرص و کپسول در مقادیر بیشتر. همچنین به عنوان غلیظ‌کننده در مواد غذایی و جزئی از پودرهای پاشیدنی موضعی مصرف می‌شود."
   },
   "description": {
    "en": "An odourless, tasteless, fine white to off-white powder. Under the microscope the granules are polyhedral or rounded, roughly 2–30 µm across, with a central hilum, and show a dark cross between crossed polarisers. Normal maize starch contains roughly one-quarter amylose and three-quarters amylopectin.",
@@ -982,7 +982,7 @@
   ],
   "stability": {
    "en": "Dry starch is stable if protected from high humidity and is considered chemically and microbiologically inert under normal storage. Starch pastes and solutions are physically unstable (they retrograde) and readily support microbial growth, so they should be freshly prepared. Store in an airtight container in a cool, dry place.",
-   "fa": "نشاسته خشک در صورت محافظت از رطوبت زیاد پایدار است و در شرایط معمول نگهداری از نظر شیمیایی و میکروبی بی‌اثر محسوب می‌شود. خمیرها و محلول‌های نشاسته از نظر فیزیکی ناپایدارند (رتروگرید می‌شوند) و به‌راحتی رشد میکروبی را پشتیبانی می‌کنند، بنابراین باید تازه تهیه شوند. در ظرف هوابندی‌شده، در جای خنک و خشک نگهداری شود."
+   "fa": "نشاسته خشک در صورت محافظت از رطوبت زیاد پایدار است و در شرایط معمول نگهداری از نظر شیمیایی و میکروبی بی‌اثر محسوب می‌شود. خمیرها و محلول‌های نشاسته از نظر فیزیکی ناپایدارند (دچار رتروگراداسیون می‌شوند) و به‌راحتی رشد میکروبی را پشتیبانی می‌کنند، بنابراین باید تازه تهیه شوند. در ظرف هوابندی‌شده، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "Incompatible with strongly oxidising substances. It forms coloured inclusion complexes with iodine.",
@@ -1045,7 +1045,7 @@
   "mw": "284.48",
   "applications": {
    "en": "Used in oral products mainly as a tablet and capsule lubricant, and also as a binder and as a matrix or coating material in sustained-release forms. In topical products it is an emulsifying and solubilising agent and stiffener; partly neutralised with an alkali or triethanolamine it forms the soap-based emulsifier of 'vanishing' creams. It is also a hardening agent in suppositories. Typical concentrations: tablet lubricant 1–3% w/w; ointments and creams 1–20% w/w.",
-   "fa": "در فرآورده‌های خوراکی عمدتاً به عنوان لغزان‌کننده قرص و کپسول، و همچنین به عنوان چسباننده و ماده ماتریکس یا پوشش در اشکال آهسته‌رهش به کار می‌رود. در فرآورده‌های موضعی عامل امولسیون‌کننده، حل‌کننده و سفت‌کننده است؛ پس از خنثی‌سازی جزئی با قلیا یا تری‌اتانول‌آمین، امولسیفایر صابونی کرم‌های «ونیشینگ» را تشکیل می‌دهد. در شیاف‌ها نیز به عنوان سفت‌کننده مصرف می‌شود. غلظت‌های متداول: لغزان‌کننده قرص 1–3٪ وزنی؛ پمادها و کرم‌ها 1–20٪ وزنی."
+   "fa": "در فرآورده‌های خوراکی عمدتاً به عنوان روان‌کننده قرص و کپسول، و همچنین به عنوان چسباننده و ماده ماتریکس یا پوشش در اشکال آهسته‌رهش به کار می‌رود. در فرآورده‌های موضعی عامل امولسیون‌کننده، حل‌کننده و قوام‌دهنده است؛ پس از خنثی‌سازی جزئی با قلیا یا تری‌اتانول‌آمین، امولسیفایر صابونی کرم‌های محوشونده (Vanishing cream) را تشکیل می‌دهد. در شیاف‌ها نیز به عنوان سخت‌کننده مصرف می‌شود. غلظت‌های متداول: روان‌کننده قرص 1–3٪ وزنی؛ پمادها و کرم‌ها 1–20٪ وزنی."
   },
   "description": {
    "en": "A hard, white or faintly yellow, somewhat glossy crystalline solid, or a white to yellowish-white powder, with a slight odour and taste suggesting tallow. The pharmaceutical material is a mixture of stearic and palmitic acids; Ph. Eur. describes types 50, 70 and 95 according to their nominal stearic acid content.",
@@ -1123,7 +1123,7 @@
   },
   "comments": {
    "en": "As a tablet lubricant stearic acid is less efficient than magnesium stearate but is less likely to slow dissolution or interact with drugs that are sensitive to alkaline earth salts. Grades differ in stearic:palmitic ratio and in source (animal or vegetable), which affects melting behaviour and suitability for some markets.",
-   "fa": "استئاریک اسید به عنوان لغزان‌کننده قرص کارایی کمتری از منیزیم استئارات دارد، اما احتمال کند کردن انحلال یا تداخل آن با داروهای حساس به نمک‌های قلیایی خاکی کمتر است. گریدها از نظر نسبت استئاریک به پالمیتیک و منشأ (حیوانی یا گیاهی) متفاوت‌اند که بر رفتار ذوب و مناسب بودن برای برخی بازارها اثر دارد."
+   "fa": "استئاریک اسید به عنوان روان‌کننده قرص کارایی کمتری از منیزیم استئارات دارد، اما احتمال کند کردن انحلال یا تداخل آن با داروهای حساس به نمک‌های قلیایی خاکی کمتر است. گریدها از نظر نسبت استئاریک به پالمیتیک و منشأ (حیوانی یا گیاهی) متفاوت‌اند که بر رفتار ذوب و مناسب بودن برای برخی بازارها اثر دارد."
   },
   "refs": [
    "usp",
@@ -1160,7 +1160,7 @@
   "mw": "270.49",
   "applications": {
    "en": "Used in creams and ointments as a stiffening agent and co-emulsifier: it increases viscosity, stabilises emulsions and increases the water-holding capacity of ointment bases. Hydrophilic Ointment USP, for example, contains 25% w/w. It has also been used as a matrix-forming agent in sustained-release tablets and in cosmetics.",
-   "fa": "در کرم‌ها و پمادها به عنوان سفت‌کننده و کمک‌امولسیفایر به کار می‌رود: ویسکوزیته را افزایش می‌دهد، امولسیون را پایدار می‌کند و ظرفیت نگهداری آب پایه‌های پماد را بالا می‌برد. برای نمونه، Hydrophilic Ointment USP حاوی 25٪ وزنی از آن است. به عنوان ماده تشکیل‌دهنده ماتریکس در قرص‌های آهسته‌رهش و در فرآورده‌های آرایشی نیز مصرف شده است."
+   "fa": "در کرم‌ها و پمادها به عنوان قوام‌دهنده و کمک‌امولسیفایر به کار می‌رود: ویسکوزیته را افزایش می‌دهد، امولسیون را پایدار می‌کند و ظرفیت نگهداری آب پایه‌های پماد را بالا می‌برد. برای نمونه، Hydrophilic Ointment USP حاوی 25٪ وزنی از آن است. به عنوان ماده تشکیل‌دهنده ماتریکس در قرص‌های آهسته‌رهش و در فرآورده‌های آرایشی نیز مصرف شده است."
   },
   "description": {
    "en": "Hard, white, waxy pieces, flakes or granules with a faint characteristic odour and a bland taste. It is a mixture of solid aliphatic alcohols consisting mainly of stearyl alcohol (Ph. Eur.: at least 95%).",
@@ -1238,7 +1238,7 @@
   },
   "comments": {
    "en": "Stearyl alcohol gives firmer creams than cetyl alcohol of similar concentration. In combination with a hydrophilic surfactant it forms a gel network in the continuous phase of o/w creams, which accounts for much of their consistency.",
-   "fa": "استئاریل الکل در غلظت مشابه، کرم‌های سفت‌تری از ستیل الکل ایجاد می‌کند. در ترکیب با یک سورفکتانت آب‌دوست، شبکه ژلی در فاز پیوسته کرم‌های o/w تشکیل می‌دهد که بخش عمده قوام این کرم‌ها از آن ناشی می‌شود."
+   "fa": "استئاریل الکل در غلظت مشابه، کرم‌هایی با قوام بیشتر از ستیل الکل ایجاد می‌کند. در ترکیب با یک سورفکتانت آب‌دوست، شبکه ژلی در فاز پیوسته کرم‌های o/w تشکیل می‌دهد که بخش عمده قوام این کرم‌ها از آن ناشی می‌شود."
   },
   "refs": [
    "usp",
@@ -1269,7 +1269,7 @@
   "mw": "397.64",
   "applications": {
    "en": "An intense sweetener, roughly 600 times as sweet as sucrose (300–1000 times depending on the system), used in oral solutions, suspensions, syrups, chewable and orally disintegrating tablets, powders and foods. It has a clean, sugar-like taste with little aftertaste and is often combined with other sweeteners and flavours. Because of its potency it is used at low concentrations, usually well below 0.5% w/w.",
-   "fa": "شیرین‌کننده‌ای قوی با شیرینی تقریباً 600 برابر ساکارز (بسته به سامانه 300–1000 برابر) است که در محلول‌ها، سوسپانسیون‌ها و شربت‌های خوراکی، قرص‌های جویدنی و دهان‌پاش، پودرها و مواد غذایی مصرف می‌شود. طعمی خالص و شبیه قند با طعم باقی‌مانده اندک دارد و اغلب با شیرین‌کننده‌ها و طعم‌دهنده‌های دیگر ترکیب می‌شود. به دلیل قدرت زیاد، در غلظت‌های کم، معمولاً بسیار کمتر از 0.5٪ وزنی، به کار می‌رود."
+   "fa": "شیرین‌کننده‌ای قوی با شیرینی تقریباً 600 برابر ساکارز (بسته به سامانه 300–1000 برابر) است که در محلول‌ها، سوسپانسیون‌ها و شربت‌های خوراکی، قرص‌های جویدنی و متلاشی‌شونده در دهان، پودرها و مواد غذایی مصرف می‌شود. طعمی خالص و شبیه قند با طعم باقی‌مانده اندک دارد و اغلب با شیرین‌کننده‌ها و طعم‌دهنده‌های دیگر ترکیب می‌شود. به دلیل قدرت زیاد، در غلظت‌های کم، معمولاً بسیار کمتر از 0.5٪ وزنی، به کار می‌رود."
   },
   "description": {
    "en": "A white to off-white, practically odourless, free-flowing crystalline powder with a sweet taste.",
@@ -1347,7 +1347,7 @@
   },
   "comments": {
    "en": "Sucralose is non-hygroscopic and, unlike aspartame, does not degrade in acidic liquids or at baking temperatures, which makes it convenient for oral liquids with long shelf lives. Its bitterness-masking ability is limited, so it is usually used together with flavours.",
-   "fa": "سوکرالوز رطوبت‌گیر نیست و برخلاف آسپارتام در مایعات اسیدی یا دمای پخت تجزیه نمی‌شود، که آن را برای مایعات خوراکی با عمر قفسه‌ای طولانی مناسب می‌کند. توانایی آن در پوشاندن تلخی محدود است و به همین دلیل معمولاً همراه با طعم‌دهنده‌ها مصرف می‌شود."
+   "fa": "سوکرالوز رطوبت‌گیر نیست و برخلاف آسپارتام در مایعات اسیدی یا دمای پخت تجزیه نمی‌شود، که آن را برای مایعات خوراکی با عمر مفید (Shelf life) طولانی مناسب می‌کند. توانایی آن در پوشاندن تلخی محدود است و به همین دلیل معمولاً همراه با طعم‌دهنده‌ها مصرف می‌شود."
   },
   "refs": [
    "usp",
@@ -1499,7 +1499,7 @@
   "mw": "",
   "applications": {
    "en": "Used as an emulsifying and stiffening agent to make oil-in-water creams and lotions and water-miscible ointments, particularly when the formulation contains ionic ingredients or a pH that would destabilise soap-based or anionic emulsifiers. For example, Cetomacrogol Emulsifying Ointment BP contains 30% w/w of the wax, and Cetomacrogol Cream BP is made from that ointment. The level used depends on the consistency required.",
-   "fa": "به عنوان امولسیفایر و سفت‌کننده برای تهیه کرم‌ها و لوسیون‌های روغن در آب و پمادهای قابل امتزاج با آب به کار می‌رود، به‌ویژه زمانی که فرمولاسیون حاوی اجزای یونی یا pH ای است که امولسیفایرهای صابونی یا آنیونی را ناپایدار می‌کند. برای مثال، Cetomacrogol Emulsifying Ointment BP حاوی 30٪ وزنی از این موم است و Cetomacrogol Cream BP از همین پماد تهیه می‌شود. مقدار مصرف به قوام مورد نیاز بستگی دارد."
+   "fa": "به عنوان امولسیفایر و قوام‌دهنده برای تهیه کرم‌ها و لوسیون‌های روغن در آب و پمادهای قابل امتزاج با آب به کار می‌رود، به‌ویژه زمانی که فرمولاسیون حاوی اجزای یونی یا pH ای است که امولسیفایرهای صابونی یا آنیونی را ناپایدار می‌کند. برای مثال، Cetomacrogol Emulsifying Ointment BP حاوی 30٪ وزنی از این موم است و Cetomacrogol Cream BP از همین پماد تهیه می‌شود. مقدار مصرف به قوام مورد نیاز بستگی دارد."
   },
   "description": {
    "en": "A white or off-white waxy solid or flakes with a faint odour of cetostearyl alcohol. It melts to a clear liquid and disperses in hot water with stirring to form an emulsion.",
@@ -1523,7 +1523,7 @@
     },
     "v": {
      "en": "about 5.5–7 (aqueous dispersion)",
-     "fa": "حدود 5.5–7 (پراکنده آبی)"
+     "fa": "حدود 5.5–7 (دیسپرسیون آبی)"
     }
    },
    {
@@ -1610,7 +1610,7 @@
   "mw": "",
   "applications": {
    "en": "Used as a stiffening agent in ointments, creams and suppositories, to raise the melting point and consistency of fatty bases, and as a co-emulsifier that stabilises water-in-oil emulsions. It is also used in polishing coats for sugar-coated tablets, in sustained-release matrices and coatings, and widely in cosmetics and foods. Concentrations depend on the consistency required, generally from a few per cent up to about 20% w/w in ointments.",
-   "fa": "به عنوان سفت‌کننده در پمادها، کرم‌ها و شیاف‌ها، برای افزایش نقطه ذوب و قوام پایه‌های چرب و به عنوان کمک‌امولسیفایری که امولسیون‌های آب در روغن را پایدار می‌کند به کار می‌رود. همچنین در لایه براق‌کننده قرص‌های روکش قندی، در ماتریکس‌ها و پوشش‌های آهسته‌رهش و به‌طور گسترده در فرآورده‌های آرایشی و مواد غذایی مصرف می‌شود. غلظت مصرف به قوام مورد نیاز بستگی دارد و در پمادها معمولاً از چند درصد تا حدود 20٪ وزنی است."
+   "fa": "به عنوان قوام‌دهنده در پمادها، کرم‌ها و شیاف‌ها، برای افزایش نقطه ذوب و قوام پایه‌های چرب و به عنوان کمک‌امولسیفایری که امولسیون‌های آب در روغن را پایدار می‌کند به کار می‌رود. همچنین در لایه براق‌کننده قرص‌های روکش قندی، در ماتریکس‌ها و پوشش‌های آهسته‌رهش و به‌طور گسترده در فرآورده‌های آرایشی و مواد غذایی مصرف می‌شود. غلظت مصرف به قوام مورد نیاز بستگی دارد و در پمادها معمولاً از چند درصد تا حدود 20٪ وزنی است."
   },
   "description": {
    "en": "White or yellowish-white pieces or plates, translucent when thin, with a fine-grained, non-crystalline fracture. It has an odour like that of yellow wax but fainter, and is tasteless. It softens and becomes plastic when warmed in the hand.",
@@ -1906,7 +1906,7 @@
   },
   "safety": {
    "en": "Widely used in foods and medicines and regarded as non-toxic and non-irritant at the levels used. Large oral amounts can cause flatulence and loose stools. JECFA has allocated an ADI 'not specified'. Xanthan-based thickeners have been associated with necrotising enterocolitis in premature infants, and the FDA has advised against their use in that group.",
-   "fa": "به‌طور گسترده در مواد غذایی و داروها مصرف می‌شود و در مقادیر مصرفی غیرسمی و غیرمحرک شناخته می‌شود. مصرف خوراکی مقادیر زیاد ممکن است نفخ و شل شدن مدفوع ایجاد کند. JECFA برای آن ADI «تعیین‌نشده» (not specified) در نظر گرفته است. غلیظ‌کننده‌های بر پایه زانتان با آنتروکولیت نکروزان در نوزادان نارس مرتبط دانسته شده‌اند و FDA مصرف آن‌ها را در این گروه توصیه نکرده است."
+   "fa": "به‌طور گسترده در مواد غذایی و داروها مصرف می‌شود و در مقادیر مصرفی غیرسمی و غیرمحرک شناخته می‌شود. مصرف خوراکی مقادیر زیاد ممکن است نفخ و نرم شدن مدفوع ایجاد کند. JECFA برای آن ADI «تعیین‌نشده» (not specified) در نظر گرفته است. غلیظ‌کننده‌های بر پایه زانتان با آنتروکولیت نکروزان در نوزادان نارس مرتبط دانسته شده‌اند و FDA مصرف آن‌ها را در این گروه توصیه نکرده است."
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled. Avoid generating dust; eye protection and a dust mask are recommended. Spilled powder becomes very slippery when wet.",
@@ -2130,7 +2130,7 @@
   },
   "comments": {
    "en": "Zein is a plant-derived alternative to shellac for glazes and protective coatings. Because coating solutions use aqueous ethanol, solvent recovery and flammability must be managed; aqueous dispersions and alkaline solutions have been studied as alternatives.",
-   "fa": "زئین جایگزینی گیاهی برای شلاک در لایه‌های براق‌کننده و پوشش‌های محافظ است. چون محلول‌های پوشش آن با اتانول آبی تهیه می‌شوند، بازیافت حلال و خطر اشتعال باید مدیریت شود؛ پراکنده‌های آبی و محلول‌های قلیایی به عنوان جایگزین بررسی شده‌اند."
+   "fa": "زئین جایگزینی گیاهی برای شلاک در لایه‌های براق‌کننده و پوشش‌های محافظ است. چون محلول‌های پوشش آن با اتانول آبی تهیه می‌شوند، بازیافت حلال و خطر اشتعال باید مدیریت شود؛ دیسپرسیون‌های آبی و محلول‌های قلیایی به عنوان جایگزین بررسی شده‌اند."
   },
   "refs": [
    "usp",
@@ -2159,7 +2159,7 @@
   "mw": "632.33",
   "applications": {
    "en": "Used mainly as a lubricant in tablet and capsule manufacture, at concentrations up to about 1.5% w/w. It is also used in topical dusting powders and as a thickening and opacifying agent in creams and cosmetics, where it gives slip and water repellency.",
-   "fa": "عمدتاً به عنوان لغزان‌کننده در ساخت قرص و کپسول با غلظت تا حدود 1.5٪ وزنی به کار می‌رود. همچنین در پودرهای پاشیدنی موضعی و به عنوان غلیظ‌کننده و کدرکننده در کرم‌ها و فرآورده‌های آرایشی مصرف می‌شود و حالت لغزندگی و دافع آب ایجاد می‌کند."
+   "fa": "عمدتاً به عنوان روان‌کننده در ساخت قرص و کپسول با غلظت تا حدود 1.5٪ وزنی به کار می‌رود. همچنین در پودرهای پاشیدنی موضعی و به عنوان غلیظ‌کننده و کدرکننده در کرم‌ها و فرآورده‌های آرایشی مصرف می‌شود و حالت لغزندگی و دافع آب ایجاد می‌کند."
   },
   "description": {
    "en": "A fine, white, bulky, hydrophobic powder, free from grittiness, with a faint characteristic odour. It is greasy to the touch and adheres to the skin. The material is a mixture of zinc salts of fatty acids, mainly stearic and palmitic acids.",
@@ -2211,7 +2211,7 @@
   },
   "safety": {
    "en": "Regarded as non-toxic and non-irritant after oral use at the levels used in medicines. Inhalation of the fine powder can cause pneumonitis, and fatal cases in infants who accidentally inhaled zinc stearate dusting powders led to its removal from baby powders.",
-   "fa": "پس از مصرف خوراکی در مقادیر مصرفی در داروها غیرسمی و غیرمحرک شناخته می‌شود. استنشاق پودر ریز آن ممکن است پنومونیت ایجاد کند و موارد مرگ‌بار در نوزادانی که به‌طور تصادفی پودرهای پاشیدنی زینک استئارات را استنشاق کرده بودند، به حذف آن از پودرهای بچه منجر شد."
+   "fa": "پس از مصرف خوراکی در مقادیر مصرفی در داروها غیرسمی و غیرمحرک شناخته می‌شود. استنشاق پودر ریز آن ممکن است پنومونیت ایجاد کند و موارد مرگ‌بار در نوزادانی که به‌طور تصادفی پودرهای پاشیدنی زینک استئارات را استنشاق کرده بودند، به حذف آن از پودرهای کودک منجر شد."
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled. Avoid inhaling the dust; eye protection, gloves and a dust respirator are recommended, with adequate ventilation.",
