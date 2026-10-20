@@ -84,41 +84,10 @@ export function CompoundingBasics({ locale }: { locale: Locale }) {
   );
 }
 
-/** Published formulas, paediatric excipients and the labelling checklist. */
+/** Paediatric excipients and the labelling checklist. */
 export function CompoundingTables({ locale }: { locale: Locale }) {
   return (
     <div className="space-y-8">
-      <div>
-        <h3 className="text-lg font-bold text-vault-900">{g.formulasTitle[locale]}</h3>
-        <p className="mt-1 text-sm leading-relaxed text-muted">{g.formulasLead[locale]}</p>
-        <div className="mt-4 overflow-x-auto rounded-card border border-line bg-white">
-          <table className="db min-w-[720px]">
-            <thead>
-              <tr>
-                <th>{g.formulaCols.drug[locale]}</th>
-                <th>{g.formulaCols.vehicle[locale]}</th>
-                <th>{g.formulaCols.stability[locale]}</th>
-                <th>{g.formulaCols.ref[locale]}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {g.formulas.map((f) => (
-                <tr key={f.drug.en}>
-                  <td className="font-semibold text-vault-900">{f.drug[locale]}</td>
-                  <td>{f.vehicle[locale]}</td>
-                  <td>
-                    <span className="rounded-full bg-capsule-50 px-2.5 py-1 text-xs font-semibold text-capsule-700">{f.stability[locale]}</span>
-                  </td>
-                  <td className="text-xs text-muted">
-                    <bdi dir="ltr">{f.ref}</bdi>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
       <div>
         <h3 className="text-lg font-bold text-vault-900">{g.excipientsTitle[locale]}</h3>
         <div className="mt-4 overflow-x-auto rounded-card border border-line bg-white">

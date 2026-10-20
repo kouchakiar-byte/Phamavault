@@ -302,7 +302,7 @@ export const compounding = {
   ] as Ref[],
 };
 
-/** Practical guide to compounding: key numbers, technique cards, published formulas and paediatric excipients. */
+/** Practical guide to compounding: key numbers, technique cards and paediatric excipients. */
 export const compoundingGuide = {
   factsTitle: bi("Numbers every compounder should know", "اعدادی که هر سازنده باید بداند"),
   facts: [
@@ -395,49 +395,6 @@ export const compoundingGuide = {
         bi("Pregnant staff should not compound hazardous drugs without risk assessment.", "کارکنان باردار بدون ارزیابی ریسک داروهای خطرناک را نسازند."),
       ],
       refs: ["USP–NF 2026 <800> Hazardous Drugs—Handling in Healthcare Settings", "NIOSH List of Hazardous Drugs in Healthcare Settings (2024)"],
-    },
-  ],
-  formulasTitle: bi("Published paediatric formulas with stability data", "فرمول‌های منتشرشده کودکان با داده پایداری"),
-  formulasLead: bi(
-    "Examples from peer-reviewed stability studies (prepared from commercial tablets). Use the same ingredients, container and storage as the article, and apply the BUD rules of USP <795> and the Iran FDA.",
-    "نمونه‌هایی از مطالعات پایداری داوری‌شده (ساخته‌شده از قرص تجاری). همان مواد، ظرف و شرایط نگهداری مقاله را به کار ببرید و قواعد BUD در USP <795> و سازمان غذا و دارو را رعایت کنید.",
-  ),
-  formulaCols: {
-    drug: bi("Drug and strength", "دارو و غلظت"),
-    vehicle: bi("Vehicle", "حامل"),
-    stability: bi("Published stability", "پایداری گزارش‌شده"),
-    ref: bi("Reference", "رفرنس"),
-  },
-  formulas: [
-    {
-      drug: bi("Sildenafil 2.5 mg/mL", "سیلدنافیل ۲٫۵ میلی‌گرم در میلی‌لیتر"),
-      vehicle: bi("Ora-Plus : Ora-Sweet 1:1, or 1% methylcellulose : simple syrup 1:1", "Ora-Plus و Ora-Sweet (۱:۱) یا متیل‌سلولز ۱٪ و شربت ساده (۱:۱)"),
-      stability: bi("91 days at 4 °C and 25 °C", "۹۱ روز در ۴ و ۲۵ درجه"),
-      ref: "Nahata MC et al. Am J Health Syst Pharm 2006;63:254–7",
-    },
-    {
-      drug: bi("Amlodipine 1 mg/mL", "آملودیپین ۱ میلی‌گرم در میلی‌لیتر"),
-      vehicle: bi("Ora-Plus : Ora-Sweet 1:1, or 1% methylcellulose : simple syrup 1:1", "Ora-Plus و Ora-Sweet (۱:۱) یا متیل‌سلولز ۱٪ و شربت ساده (۱:۱)"),
-      stability: bi("91 days at 4 °C; 56 days at 25 °C", "۹۱ روز در ۴ درجه؛ ۵۶ روز در ۲۵ درجه"),
-      ref: "Nahata MC et al. Am J Health Syst Pharm 1999;56:1748–50",
-    },
-    {
-      drug: bi("Omeprazole 2 mg/mL", "امپرازول ۲ میلی‌گرم در میلی‌لیتر"),
-      vehicle: bi("Sodium bicarbonate 8.4%", "سدیم بی‌کربنات ۸٫۴٪"),
-      stability: bi("30 days at 5 °C; 14 days at room temperature", "۳۰ روز در ۵ درجه؛ ۱۴ روز در دمای اتاق"),
-      ref: "Quercia RA et al. Am J Health Syst Pharm 1997;54:1833–6",
-    },
-    {
-      drug: bi("Spironolactone 25 mg/mL", "اسپیرونولاکتون ۲۵ میلی‌گرم در میلی‌لیتر"),
-      vehicle: bi("Ora-Plus : Ora-Sweet 1:1", "Ora-Plus و Ora-Sweet (۱:۱)"),
-      stability: bi("60 days at 5 °C and 25 °C", "۶۰ روز در ۵ و ۲۵ درجه"),
-      ref: "Allen LV, Erickson MA. Am J Health Syst Pharm 1996;53:2073–8",
-    },
-    {
-      drug: bi("Metronidazole 50 mg/mL", "مترونیدازول ۵۰ میلی‌گرم در میلی‌لیتر"),
-      vehicle: bi("Ora-Plus : Ora-Sweet 1:1", "Ora-Plus و Ora-Sweet (۱:۱)"),
-      stability: bi("60 days at 5 °C and 25 °C", "۶۰ روز در ۵ و ۲۵ درجه"),
-      ref: "Allen LV, Erickson MA. Am J Health Syst Pharm 1996;53:2073–8",
     },
   ],
   excipientsTitle: bi("Excipients to watch in neonates and young children", "مواد جانبی حساس در نوزادان و کودکان خردسال"),
