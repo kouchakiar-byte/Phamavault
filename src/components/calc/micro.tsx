@@ -102,13 +102,13 @@ export function Eli({ ctx }: { ctx: Ctx }) {
       message={
         Number.isFinite(el) && lam > 0 && C > 0
           ? mvd < 1
-            ? bi("MVD below 1: the method is not sensitive enough; use a more sensitive lysate.", "MVD کمتر از ۱ است: روش به اندازه کافی حساس نیست؛ از لیزات حساس‌تر استفاده کنید.")[locale]
+            ? bi("MVD below 1: the method is not sensitive enough; use a more sensitive lysate.", "MVD کمتر از 1 است: روش به اندازه کافی حساس نیست؛ از لیزات حساس‌تر استفاده کنید.")[locale]
             : ""
           : bad(ctx)
       }
       note={bi(
         "USP <85> and Ph. Eur. 2.6.14 / 5.1.10: endotoxin limit = K/M, with K = 5.0 EU/kg (0.2 EU/kg intrathecal) and M the maximum dose per kg of body mass given within one hour (USP takes 70 kg for an average adult). Radiopharmaceuticals: 175/V EU/mL (14/V intrathecal). MVD = endotoxin limit × concentration of the test solution ÷ λ (concentration = 1 when the limit is per mL); MVC = λ × M ÷ K. The test may be run at any dilution up to the MVD; λ is the labelled gel-clot sensitivity or the lowest concentration of the photometric standard curve.",
-        `${ltr("USP <85>")} و ${ltr("Ph. Eur. 2.6.14 / 5.1.10")}: حد اندوتوکسین ${ltr("= K/M")}؛ K برابر ${ltr("5.0 EU/kg")} (اینتراتکال ${ltr("0.2 EU/kg")}) و M حداکثر دوز به ازای هر کیلوگرم وزن بدن که در یک ساعت تجویز می‌شود (USP وزن متوسط بزرگسال را ۷۰ کیلوگرم در نظر می‌گیرد). رادیوداروها: ${ltr("175/V EU/mL")} (اینتراتکال ${ltr("14/V")}). ${ltr("MVD = EL × C ÷ λ")} (وقتی حد بر حسب میلی‌لیتر است ${ltr("C = 1")})؛ ${ltr("MVC = λ × M ÷ K")}. آزمون را می‌توان در هر رقتی تا MVD انجام داد؛ λ حساسیت برچسب لیزات در روش ژل‌کلات یا کمترین غلظت منحنی استاندارد در روش فوتومتریک است.`,
+        `${ltr("USP <85>")} و ${ltr("Ph. Eur. 2.6.14 / 5.1.10")}: حد اندوتوکسین ${ltr("= K/M")}؛ K برابر ${ltr("5.0 EU/kg")} (اینتراتکال ${ltr("0.2 EU/kg")}) و M حداکثر دوز به ازای هر کیلوگرم وزن بدن که در یک ساعت تجویز می‌شود (USP وزن متوسط بزرگسال را 70 کیلوگرم در نظر می‌گیرد). رادیوداروها: ${ltr("175/V EU/mL")} (اینتراتکال ${ltr("14/V")}). ${ltr("MVD = EL × C ÷ λ")} (وقتی حد بر حسب میلی‌لیتر است ${ltr("C = 1")})؛ ${ltr("MVC = λ × M ÷ K")}. آزمون را می‌توان در هر رقتی تا MVD انجام داد؛ λ حساسیت برچسب لیزات در روش ژل‌کلات یا کمترین غلظت منحنی استاندارد در روش فوتومتریک است.`,
       )}
     />
   );
@@ -178,14 +178,14 @@ export function Lal({ ctx }: { ctx: Ctx }) {
         { label: bi("|r| (≥ 0.980)", "ضریب همبستگی ⁦|r| ≥ 0.980⁩"), value: r },
         { label: bi("Endotoxin in the diluted sample", "اندوتوکسین در نمونه رقیق‌شده"), value: sample },
         { label: bi("Endotoxin in the product", "اندوتوکسین در فرآورده"), value: product },
-        { label: bi("Spike recovery (50–200%)", "بازیافت اسپایک (50 تا 200٪)"), value: rec },
+        { label: bi("Spike recovery (50–200%)", "بازیافت اسپایک (50 تا 200%)"), value: rec },
         { label: bi("Conclusion", "نتیجه"), value: verdict },
       ]}
       message={msg}
       note={bi(
         "USP <85> / Ph. Eur. 2.6.14, photometric methods (kinetic turbidimetric or chromogenic): the log–log regression of reaction time on endotoxin concentration must have |r| ≥ 0.980 over at least three standards; the endotoxin found in the positive product control (PPC), less that in the sample, must be 50–200% of the spike. Results below the lowest standard are reported as less than it. The limit is compared with the result corrected for dilution. " +
           listNote.en,
-        `${ltr("USP <85>")} و ${ltr("Ph. Eur. 2.6.14")}، روش‌های فوتومتریک (کینتیک توربیدیمتریک یا کروموژنیک): رگرسیون لگاریتمی زمان واکنش بر غلظت اندوتوکسین با دست‌کم سه استاندارد باید ${ltr("|r| ≥ 0.980")} داشته باشد؛ اندوتوکسین کنترل مثبت فرآورده (PPC) منهای اندوتوکسین نمونه باید 50 تا 200٪ مقدار اسپایک باشد. نتیجه کمتر از پایین‌ترین استاندارد به‌صورت «کمتر از» گزارش می‌شود. حد با نتیجه اصلاح‌شده برای رقت مقایسه می‌شود. ${listNote.fa}`,
+        `${ltr("USP <85>")} و ${ltr("Ph. Eur. 2.6.14")}، روش‌های فوتومتریک (کینتیک توربیدیمتریک یا کروموژنیک): رگرسیون لگاریتمی زمان واکنش بر غلظت اندوتوکسین با دست‌کم سه استاندارد باید ${ltr("|r| ≥ 0.980")} داشته باشد؛ اندوتوکسین کنترل مثبت فرآورده (PPC) منهای اندوتوکسین نمونه باید 50 تا 200% مقدار اسپایک باشد. نتیجه کمتر از پایین‌ترین استاندارد به‌صورت «کمتر از» گزارش می‌شود. حد با نتیجه اصلاح‌شده برای رقت مقایسه می‌شود. ${listNote.fa}`,
       )}
     />
   );
@@ -272,7 +272,7 @@ export function F0({ ctx }: { ctx: Ctx }) {
       note={bi(
         "F₀ is the equivalent time in minutes at 121 °C delivered to the product, with z = 10 °C for bacterial spores (Ph. Eur. 5.1.5): lethal rate L = 10^((T − T_ref)/z), F₀ = Δt × ΣL. 121.1 °C (250 °F) is also widely used as reference. The Ph. Eur. 5.1.1 reference cycle for aqueous preparations is at least 15 min at 121 °C. " +
           listNote.en,
-        `F₀ زمان معادل (دقیقه) در دمای ۱۲۱ درجه است که به محصول می‌رسد، با ${ltr("z = 10 °C")} برای اسپورهای باکتریایی ${ltr("(Ph. Eur. 5.1.5)")}: نرخ کشندگی ${ltr("L = 10^((T − T_ref)/z)")} و ${ltr("F₀ = Δt × ΣL")}. دمای ${ltr("121.1 °C (250 °F)")} نیز به‌طور رایج مرجع قرار می‌گیرد. چرخه مرجع ${ltr("Ph. Eur. 5.1.1")} برای فرآورده‌های آبی دست‌کم ۱۵ دقیقه در ۱۲۱ درجه است. ${listNote.fa}`,
+        `F₀ زمان معادل (دقیقه) در دمای 121 درجه است که به محصول می‌رسد، با ${ltr("z = 10 °C")} برای اسپورهای باکتریایی ${ltr("(Ph. Eur. 5.1.5)")}: نرخ کشندگی ${ltr("L = 10^((T − T_ref)/z)")} و ${ltr("F₀ = Δt × ΣL")}. دمای ${ltr("121.1 °C (250 °F)")} نیز به‌طور رایج مرجع قرار می‌گیرد. چرخه مرجع ${ltr("Ph. Eur. 5.1.1")} برای فرآورده‌های آبی دست‌کم 15 دقیقه در 121 درجه است. ${listNote.fa}`,
       )}
     />
   );
@@ -315,7 +315,7 @@ export function Sal({ ctx }: { ctx: Ctx }) {
       message={okD || okS ? "" : bad(ctx)}
       note={bi(
         "First-order inactivation: D = t ÷ (log N₀ − log N) is the time for a 1-log (90%) reduction. After a lethality F the expected survivors per unit are N = N₀ × 10^(−F/D); a terminally sterilised product must reach a sterility assurance level of 10⁻⁶ or better (Ph. Eur. 5.1.1, USP <1229>). F and D must refer to the same temperature (for F₀, D at 121 °C).",
-        `غیرفعال‌سازی درجه اول: ${ltr("D = t ÷ (log N₀ − log N)")} زمان لازم برای کاهش یک لگاریتم (90٪) است. پس از کشندگی F، تعداد زنده‌مانده مورد انتظار در هر واحد ${ltr("N = N₀ × 10^(−F/D)")} است؛ فرآورده‌ای که در ظرف نهایی استریل می‌شود باید به سطح اطمینان از استریلیتی ${ltr("10⁻⁶")} یا بهتر برسد ${ltr("(Ph. Eur. 5.1.1, USP <1229>)")}. F و D باید به یک دما مربوط باشند (برای F₀، مقدار D در ۱۲۱ درجه).`,
+        `غیرفعال‌سازی درجه اول: ${ltr("D = t ÷ (log N₀ − log N)")} زمان لازم برای کاهش یک لگاریتم (90%) است. پس از کشندگی F، تعداد زنده‌مانده مورد انتظار در هر واحد ${ltr("N = N₀ × 10^(−F/D)")} است؛ فرآورده‌ای که در ظرف نهایی استریل می‌شود باید به سطح اطمینان از استریلیتی ${ltr("10⁻⁶")} یا بهتر برسد ${ltr("(Ph. Eur. 5.1.1, USP <1229>)")}. F و D باید به یک دما مربوط باشند (برای F₀، مقدار D در 121 درجه).`,
       )}
     />
   );
@@ -376,7 +376,7 @@ export function Cfu({ ctx }: { ctx: Ctx }) {
       note={bi(
         "USP <61> / Ph. Eur. 2.6.12 plate count: cfu per g or mL = mean colonies × dilution factor ÷ volume plated. Use plates with not more than 250 colonies for TAMC and 50 for TYMC (9-cm plates). USP <1111> / Ph. Eur. 5.1.4: an acceptance criterion of 10¹ cfu allows up to 20, 10² up to 200, 10³ up to 2000, and so on. " +
           listNote.en,
-        `شمارش پلیت ${ltr("USP <61>")} و ${ltr("Ph. Eur. 2.6.12")}: ${ltr("cfu = mean colonies × dilution ÷ volume")} در هر گرم یا میلی‌لیتر. پلیت‌هایی را بشمارید که حداکثر ۲۵۰ کلنی برای TAMC و ۵۰ کلنی برای TYMC دارند (پلیت ۹ سانتی‌متری). طبق ${ltr("USP <1111>")} و ${ltr("Ph. Eur. 5.1.4")}، معیار ${ltr("10¹ cfu")} تا ۲۰، ${ltr("10² cfu")} تا ۲۰۰ و ${ltr("10³ cfu")} تا ۲۰۰۰ را می‌پذیرد و به همین ترتیب. ${listNote.fa}`,
+        `شمارش پلیت ${ltr("USP <61>")} و ${ltr("Ph. Eur. 2.6.12")}: ${ltr("cfu = mean colonies × dilution ÷ volume")} در هر گرم یا میلی‌لیتر. پلیت‌هایی را بشمارید که حداکثر 250 کلنی برای TAMC و 50 کلنی برای TYMC دارند (پلیت 9 سانتی‌متری). طبق ${ltr("USP <1111>")} و ${ltr("Ph. Eur. 5.1.4")}، معیار ${ltr("10¹ cfu")} تا 20، ${ltr("10² cfu")} تا 200 و ${ltr("10³ cfu")} تا 2000 را می‌پذیرد و به همین ترتیب. ${listNote.fa}`,
       )}
     />
   );

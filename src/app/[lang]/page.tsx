@@ -142,7 +142,7 @@ export default async function HomePage() {
     materials: rawMaterials.items.length,
   };
   const { hero, departments, sectionsIntro, ctdService, databases, toolsShowcase, howItWorks, plans, faq, contact } = copy;
-  const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
+  const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
   const enterprise = plans.items.find((p) => p.id === "enterprise")!;
   const { pricing } = plans;
   /** Fill {section}, {full}, {team} and {extraUser} with formatted prices. */
@@ -444,7 +444,7 @@ export default async function HomePage() {
                 as="h2"
                 text={bi(
                   toolsShowcase.title.en.replace("{n}", String(calculations.length)),
-                  toolsShowcase.title.fa.replace("{n}", calculations.length.toLocaleString("fa-IR")),
+                  toolsShowcase.title.fa.replace("{n}", calculations.length.toLocaleString("fa-IR-u-nu-latn")),
                 )}
                 locale={locale}
                 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl"

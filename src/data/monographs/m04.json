@@ -44,7 +44,7 @@
     },
     "v": {
      "en": "typically about 70–80% w/w",
-     "fa": "معمولاً حدود 70–80٪ وزنی"
+     "fa": "معمولاً حدود 70–80% وزنی"
     }
    },
    {
@@ -142,7 +142,7 @@
   "mw": "92.09",
   "applications": {
    "en": "Used in a wide range of oral, ophthalmic, otic, topical and parenteral products as a solvent, co-solvent, humectant, plasticiser, sweetener and tonicity agent. Typical concentrations: antimicrobial preservative < 20%; emollient and humectant ≤ 30%; aqueous gel vehicle 5–15%; non-aqueous gel vehicle 50–80%; ophthalmic preparations 0.5–3%; solvent in parenteral products ≤ 50%; sweetener in alcoholic elixirs ≤ 20%. It is also used as a plasticiser in film coatings and soft gelatin capsule shells.",
-   "fa": "در طیف وسیعی از فرآورده‌های خوراکی، چشمی، گوشی، موضعی و تزریقی به عنوان حلال، حلال کمکی، مرطوب‌کننده (هیومکتانت)، نرم‌کننده پلاستیکی (پلاستی‌سایزر)، شیرین‌کننده و عامل تنظیم تونیسیته به کار می‌رود. غلظت‌های متداول: نگهدارنده ضدمیکروبی کمتر از 20٪؛ نرم‌کننده پوست و مرطوب‌کننده حداکثر 30٪؛ حامل ژل آبی 5–15٪؛ حامل ژل غیرآبی 50–80٪؛ فرآورده‌های چشمی 0.5–3٪؛ حلال در فرآورده‌های تزریقی حداکثر 50٪؛ شیرین‌کننده در الگزیرهای الکلی حداکثر 20٪. همچنین به عنوان پلاستی‌سایزر در پوشش فیلمی و پوسته کپسول ژلاتینی نرم مصرف می‌شود."
+   "fa": "در طیف وسیعی از فرآورده‌های خوراکی، چشمی، گوشی، موضعی و تزریقی به عنوان حلال، حلال کمکی، مرطوب‌کننده (هیومکتانت)، نرم‌کننده پلاستیکی (پلاستی‌سایزر)، شیرین‌کننده و عامل تنظیم تونیسیته به کار می‌رود. غلظت‌های متداول: نگهدارنده ضدمیکروبی کمتر از 20%؛ نرم‌کننده پوست و مرطوب‌کننده حداکثر 30%؛ حامل ژل آبی 5–15%؛ حامل ژل غیرآبی 50–80%؛ فرآورده‌های چشمی 0.5–3%؛ حلال در فرآورده‌های تزریقی حداکثر 50%؛ شیرین‌کننده در الگزیرهای الکلی حداکثر 20%. همچنین به عنوان پلاستی‌سایزر در پوشش فیلمی و پوسته کپسول ژلاتینی نرم مصرف می‌شود."
   },
   "description": {
    "en": "A clear, colourless, odourless, viscous and hygroscopic liquid with a sweet taste, roughly 0.6 times as sweet as sucrose.",
@@ -240,7 +240,7 @@
   },
   "comments": {
    "en": "Glycerin contaminated with diethylene glycol (DEG) or ethylene glycol has caused fatal mass poisonings, mostly in children taking oral syrups. Current USP–NF and Ph. Eur. monographs include tests that limit these impurities, and every incoming lot should be tested accordingly. Pharmacopoeial grades of different strength exist (for example glycerol 85% in Ph. Eur.).",
-   "fa": "گلیسرین آلوده به دی‌اتیلن گلیکول (DEG) یا اتیلن گلیکول باعث مسمومیت‌های جمعی کشنده، عمدتاً در کودکان مصرف‌کننده شربت‌های خوراکی، شده است. تک‌نگاری‌های فعلی USP–NF و فارماکوپه اروپا آزمون‌هایی برای محدود کردن این ناخالصی‌ها دارند و هر سری ورودی باید بر همین اساس آزمایش شود. گریدهای فارماکوپه‌ای با غلظت‌های مختلف نیز وجود دارد (مثلاً گلیسرول 85٪ در فارماکوپه اروپا)."
+   "fa": "گلیسرین آلوده به دی‌اتیلن گلیکول (DEG) یا اتیلن گلیکول باعث مسمومیت‌های جمعی کشنده، عمدتاً در کودکان مصرف‌کننده شربت‌های خوراکی، شده است. تک‌نگاری‌های فعلی USP–NF و فارماکوپه اروپا آزمون‌هایی برای محدود کردن این ناخالصی‌ها دارند و هر سری ورودی باید بر همین اساس آزمایش شود. گریدهای فارماکوپه‌ای با غلظت‌های مختلف نیز وجود دارد (مثلاً گلیسرول 85% در فارماکوپه اروپا)."
   },
   "refs": [
    "usp",
@@ -272,11 +272,11 @@
   "mw": "737.2 (glyceryl dibehenate)",
   "applications": {
    "en": "Used in oral solid dosage forms as a tablet and capsule lubricant, typically at 1–3% w/w, where it is less sensitive to over-blending than magnesium stearate. At higher levels (often 10% w/w or more) it forms inert lipid matrices for sustained release, and it is also used for hot-melt coating, melt granulation, taste masking and the preparation of solid lipid nanoparticles and microparticles. In cosmetics it acts as a thickener for oily phases.",
-   "fa": "در اشکال دارویی جامد خوراکی به عنوان روان‌کننده قرص و کپسول، معمولاً با غلظت 1–3٪ وزنی، به کار می‌رود و نسبت به منیزیم استئارات حساسیت کمتری به اختلاط بیش از حد دارد. در غلظت‌های بالاتر (اغلب 10٪ وزنی یا بیشتر) ماتریکس لیپیدی بی‌اثر برای رهش آهسته تشکیل می‌دهد و در پوشش‌دهی مذاب (hot-melt coating)، گرانولاسیون مذاب، پوشاندن طعم و تهیه نانوذرات و میکروذرات لیپیدی جامد نیز کاربرد دارد. در محصولات آرایشی به عنوان غلیظ‌کننده فاز روغنی مصرف می‌شود."
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان روان‌کننده قرص و کپسول، معمولاً با غلظت 1–3% وزنی، به کار می‌رود و نسبت به منیزیم استئارات حساسیت کمتری به اختلاط بیش از حد دارد. در غلظت‌های بالاتر (اغلب 10% وزنی یا بیشتر) ماتریکس لیپیدی بی‌اثر برای رهش آهسته تشکیل می‌دهد و در پوشش‌دهی مذاب (hot-melt coating)، گرانولاسیون مذاب، پوشاندن طعم و تهیه نانوذرات و میکروذرات لیپیدی جامد نیز کاربرد دارد. در محصولات آرایشی به عنوان غلیظ‌کننده فاز روغنی مصرف می‌شود."
   },
   "description": {
    "en": "A fine white powder or hard, waxy mass with a faint odour. Ph. Eur. specifies about 15–23% monoacylglycerols, 40–60% diacylglycerols and 21–35% triacylglycerols, with behenic acid as the main fatty acid.",
-   "fa": "پودر ریز سفید یا توده سخت و مومی با بوی ضعیف. فارماکوپه اروپا ترکیب آن را حدود 15–23٪ مونوآسیل‌گلیسرول، 40–60٪ دی‌آسیل‌گلیسرول و 21–35٪ تری‌آسیل‌گلیسرول تعیین کرده است و اسید چرب اصلی آن بهنیک اسید است."
+   "fa": "پودر ریز سفید یا توده سخت و مومی با بوی ضعیف. فارماکوپه اروپا ترکیب آن را حدود 15–23% مونوآسیل‌گلیسرول، 40–60% دی‌آسیل‌گلیسرول و 21–35% تری‌آسیل‌گلیسرول تعیین کرده است و اسید چرب اصلی آن بهنیک اسید است."
   },
   "properties": [
    {
@@ -394,7 +394,7 @@
   },
   "description": {
    "en": "A pale yellow, oily liquid or soft, waxy solid (depending on monoester content and temperature) with a faint characteristic odour. Pharmacopoeial grades are classified by their monoglyceride content, for example about 40%, 60% and 90%.",
-   "fa": "مایع روغنی زرد کم‌رنگ یا جامد مومی نرم (بسته به مقدار مونواستر و دما) با بوی ضعیف و مشخص. گریدهای فارماکوپه‌ای بر اساس مقدار مونوگلیسرید، مثلاً حدود 40٪، 60٪ و 90٪، دسته‌بندی می‌شوند."
+   "fa": "مایع روغنی زرد کم‌رنگ یا جامد مومی نرم (بسته به مقدار مونواستر و دما) با بوی ضعیف و مشخص. گریدهای فارماکوپه‌ای بر اساس مقدار مونوگلیسرید، مثلاً حدود 40%، 60% و 90%، دسته‌بندی می‌شوند."
   },
   "properties": [
    {
@@ -507,7 +507,7 @@
   },
   "description": {
    "en": "A white to cream-coloured, waxy solid supplied as beads, flakes or powder, waxy to the touch and with a slight fatty odour and taste. Ph. Eur. glycerol monostearate 40–55 contains 40–55% monoacylglycerols, mainly of stearic and palmitic acids; higher-monoester (distilled) grades are also available.",
-   "fa": "جامد مومی سفید تا کرم‌رنگ به صورت دانه، پولک یا پودر، با لمس مومی و بو و طعم چربی خفیف. گلیسرول مونواستئارات 40–55 فارماکوپه اروپا حاوی 40–55٪ مونوآسیل‌گلیسرول، عمدتاً از استئاریک و پالمیتیک اسید، است؛ گریدهای با مونواستر بالاتر (تقطیرشده) نیز در دسترس‌اند."
+   "fa": "جامد مومی سفید تا کرم‌رنگ به صورت دانه، پولک یا پودر، با لمس مومی و بو و طعم چربی خفیف. گلیسرول مونواستئارات 40–55 فارماکوپه اروپا حاوی 40–55% مونوآسیل‌گلیسرول، عمدتاً از استئاریک و پالمیتیک اسید، است؛ گریدهای با مونواستر بالاتر (تقطیرشده) نیز در دسترس‌اند."
   },
   "properties": [
    {
@@ -830,7 +830,7 @@
   "mw": "190.24 (n = 2)",
   "applications": {
    "en": "Used mainly as a water-miscible solvent in parenteral products for intravenous or intramuscular injection, at concentrations of up to about 50% v/v. It has also been investigated as a solvent and penetration enhancer in nasal, rectal and topical formulations and in in-situ forming implants.",
-   "fa": "عمدتاً به عنوان حلال قابل اختلاط با آب در فرآورده‌های تزریقی وریدی یا عضلانی، با غلظت حداکثر حدود 50٪ حجمی، به کار می‌رود. کاربرد آن به عنوان حلال و افزاینده نفوذ در فرمولاسیون‌های بینی، رکتال و موضعی و در ایمپلنت‌های درجا-تشکیل‌شونده نیز بررسی شده است."
+   "fa": "عمدتاً به عنوان حلال قابل اختلاط با آب در فرآورده‌های تزریقی وریدی یا عضلانی، با غلظت حداکثر حدود 50% حجمی، به کار می‌رود. کاربرد آن به عنوان حلال و افزاینده نفوذ در فرمولاسیون‌های بینی، رکتال و موضعی و در ایمپلنت‌های درجا-تشکیل‌شونده نیز بررسی شده است."
   },
   "description": {
    "en": "A clear, colourless, almost odourless liquid with a bitter taste that produces a warm sensation on the tongue. Glycofurol 75 is the grade in which most of the material has n = 1 or 2.",
@@ -882,7 +882,7 @@
   },
   "safety": {
    "en": "Glycofurol is irritant when used undiluted, but is tolerated in parenteral products when diluted to about 50% v/v or less. At high doses it has central nervous system depressant and diuretic effects in animals.",
-   "fa": "گلیکوفورول به صورت رقیق‌نشده محرک است، اما در فرآورده‌های تزریقی پس از رقیق شدن تا حدود 50٪ حجمی یا کمتر قابل تحمل است. در دوزهای بالا در حیوانات اثر مهارکننده دستگاه عصبی مرکزی و ادرارآور دارد."
+   "fa": "گلیکوفورول به صورت رقیق‌نشده محرک است، اما در فرآورده‌های تزریقی پس از رقیق شدن تا حدود 50% حجمی یا کمتر قابل تحمل است. در دوزهای بالا در حیوانات اثر مهارکننده دستگاه عصبی مرکزی و ادرارآور دارد."
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled; eye protection and gloves are recommended.",
@@ -923,7 +923,7 @@
   "mw": "≈ 220 000",
   "applications": {
    "en": "Used in oral and topical products as a suspending, thickening and stabilising agent, and in tablets as a binder and disintegrant. Typical concentrations: emulsion stabiliser about 1%; thickener for lotions and creams up to 2.5%; tablet binder up to 10%. It has also been studied as a matrix former for sustained release and as a carrier for colon-targeted delivery, since it is degraded by colonic bacteria. It is widely used in foods.",
-   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان عامل تعلیق‌کننده، غلیظ‌کننده و پایدارکننده و در قرص به عنوان چسباننده و متلاشی‌کننده به کار می‌رود. غلظت‌های متداول: پایدارکننده امولسیون حدود 1٪؛ غلیظ‌کننده لوسیون و کرم حداکثر 2.5٪؛ چسباننده قرص حداکثر 10٪. همچنین به عنوان تشکیل‌دهنده ماتریکس آهسته‌رهش و حامل دارورسانی هدفمند به کولون (چون توسط باکتری‌های کولون تجزیه می‌شود) بررسی شده است. در صنایع غذایی کاربرد گسترده دارد."
+   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان عامل تعلیق‌کننده، غلیظ‌کننده و پایدارکننده و در قرص به عنوان چسباننده و متلاشی‌کننده به کار می‌رود. غلظت‌های متداول: پایدارکننده امولسیون حدود 1%؛ غلیظ‌کننده لوسیون و کرم حداکثر 2.5%؛ چسباننده قرص حداکثر 10%. همچنین به عنوان تشکیل‌دهنده ماتریکس آهسته‌رهش و حامل دارورسانی هدفمند به کولون (چون توسط باکتری‌های کولون تجزیه می‌شود) بررسی شده است. در صنایع غذایی کاربرد گسترده دارد."
   },
   "description": {
    "en": "A white to yellowish-white, almost odourless powder with a bland taste. It disperses in cold or hot water and hydrates to form a highly viscous, slightly cloudy colloidal dispersion.",
@@ -937,7 +937,7 @@
     },
     "v": {
      "en": "high at 1% w/v; develops over a period of hours as the gum hydrates and depends on grade and particle size",
-     "fa": "در غلظت 1٪ زیاد است؛ در طی چند ساعت با آب‌گیری صمغ افزایش می‌یابد و به گرید و اندازه ذره بستگی دارد"
+     "fa": "در غلظت 1% زیاد است؛ در طی چند ساعت با آب‌گیری صمغ افزایش می‌یابد و به گرید و اندازه ذره بستگی دارد"
     }
    },
    {
@@ -947,7 +947,7 @@
     },
     "v": {
      "en": "5.0–7.0 (1% w/v aqueous dispersion)",
-     "fa": "5.0–7.0 (دیسپرسیون آبی 1٪)"
+     "fa": "5.0–7.0 (دیسپرسیون آبی 1%)"
     }
    },
    {
@@ -957,7 +957,7 @@
     },
     "v": {
      "en": "up to about 15% w/w",
-     "fa": "حداکثر حدود 15٪ وزنی"
+     "fa": "حداکثر حدود 15% وزنی"
     }
    },
    {
@@ -1299,7 +1299,7 @@
   },
   "description": {
    "en": "Concentrated hydrochloric acid is a clear, colourless, fuming liquid with a pungent, irritating odour; Ph. Eur. and USP–NF specify about 35–39% w/w HCl. Dilute hydrochloric acid (about 10% HCl) is also official and does not fume.",
-   "fa": "هیدروکلریک اسید غلیظ مایعی شفاف، بی‌رنگ و دودکننده با بوی تند و محرک است؛ فارماکوپه اروپا و USP–NF غلظت آن را حدود 35–39٪ وزنی HCl تعیین کرده‌اند. هیدروکلریک اسید رقیق (حدود 10٪ HCl) نیز رسمی است و دود نمی‌کند."
+   "fa": "هیدروکلریک اسید غلیظ مایعی شفاف، بی‌رنگ و دودکننده با بوی تند و محرک است؛ فارماکوپه اروپا و USP–NF غلظت آن را حدود 35–39% وزنی HCl تعیین کرده‌اند. هیدروکلریک اسید رقیق (حدود 10% HCl) نیز رسمی است و دود نمی‌کند."
   },
   "properties": [
    {
@@ -1309,7 +1309,7 @@
     },
     "v": {
      "en": "concentrated acid ≈ 35–39% w/w HCl; dilute acid ≈ 10% HCl",
-     "fa": "اسید غلیظ حدود 35–39٪ وزنی HCl؛ اسید رقیق حدود 10٪ HCl"
+     "fa": "اسید غلیظ حدود 35–39% وزنی HCl؛ اسید رقیق حدود 10% HCl"
     }
    },
    {
@@ -1373,7 +1373,7 @@
   },
   "comments": {
    "en": "For pH adjustment, dilute (for example 1 M or 10%) acid is normally used and added in small portions with mixing to avoid local overshoot. The amount added 'q.s. to pH' should be recorded, since it contributes chloride ions that can affect the solubility of hydrochloride salts by the common-ion effect.",
-   "fa": "برای تنظیم pH معمولاً از اسید رقیق (مثلاً 1 M یا 10٪) استفاده و به صورت مقادیر کم همراه با هم زدن افزوده می‌شود تا از افت موضعی بیش از حد pH جلوگیری شود. مقدار افزوده‌شده (q.s. تا pH) باید ثبت شود، زیرا یون کلرید وارد می‌کند که می‌تواند از طریق اثر یون مشترک بر حلالیت نمک‌های هیدروکلراید اثر بگذارد."
+   "fa": "برای تنظیم pH معمولاً از اسید رقیق (مثلاً 1 M یا 10%) استفاده و به صورت مقادیر کم همراه با هم زدن افزوده می‌شود تا از افت موضعی بیش از حد pH جلوگیری شود. مقدار افزوده‌شده (q.s. تا pH) باید ثبت شود، زیرا یون کلرید وارد می‌کند که می‌تواند از طریق اثر یون مشترک بر حلالیت نمک‌های هیدروکلراید اثر بگذارد."
   },
   "refs": [
    "usp",
@@ -1429,7 +1429,7 @@
     },
     "v": {
      "en": "5.5–8.5 (1% w/v aqueous solution)",
-     "fa": "5.5–8.5 (محلول آبی 1٪)"
+     "fa": "5.5–8.5 (محلول آبی 1%)"
     }
    },
    {
@@ -1439,7 +1439,7 @@
     },
     "v": {
      "en": "wide range of grades, from a few mPa·s to many thousands of mPa·s for 1–2% w/v solutions",
-     "fa": "طیف وسیعی از گریدها، از چند mPa·s تا چندین هزار mPa·s برای محلول‌های 1–2٪"
+     "fa": "طیف وسیعی از گریدها، از چند mPa·s تا چندین هزار mPa·s برای محلول‌های 1–2%"
     }
    },
    {
@@ -1512,7 +1512,7 @@
   "mw": "≈ 1400 (depends on molar substitution)",
   "applications": {
    "en": "Used to increase the aqueous solubility, stability and bioavailability of poorly soluble drugs by forming non-covalent inclusion complexes. It is used in oral solutions and solid dosage forms, parenteral products (intravenous and intramuscular), and ophthalmic, nasal and topical preparations; concentrations range from a few per cent to about 40% w/v in some oral and parenteral solutions. It can also mask taste and reduce irritation caused by some drugs.",
-   "fa": "با تشکیل کمپلکس‌های درون‌گیر غیرکووالانسی، حلالیت آبی، پایداری و فراهمی زیستی داروهای کم‌محلول را افزایش می‌دهد. در محلول‌های خوراکی و اشکال دارویی جامد، فرآورده‌های تزریقی (وریدی و عضلانی) و فرآورده‌های چشمی، بینی و موضعی به کار می‌رود؛ غلظت آن از چند درصد تا حدود 40٪ وزنی-حجمی در برخی محلول‌های خوراکی و تزریقی متغیر است. همچنین می‌تواند طعم را بپوشاند و تحریک ناشی از برخی داروها را کاهش دهد."
+   "fa": "با تشکیل کمپلکس‌های درون‌گیر غیرکووالانسی، حلالیت آبی، پایداری و فراهمی زیستی داروهای کم‌محلول را افزایش می‌دهد. در محلول‌های خوراکی و اشکال دارویی جامد، فرآورده‌های تزریقی (وریدی و عضلانی) و فرآورده‌های چشمی، بینی و موضعی به کار می‌رود؛ غلظت آن از چند درصد تا حدود 40% وزنی-حجمی در برخی محلول‌های خوراکی و تزریقی متغیر است. همچنین می‌تواند طعم را بپوشاند و تحریک ناشی از برخی داروها را کاهش دهد."
   },
   "description": {
    "en": "A white or almost white, amorphous or crystalline, hygroscopic powder, practically odourless and with a slightly sweet taste. It is a mixture of β-cyclodextrin derivatives with different numbers and positions of hydroxypropyl groups.",
@@ -1536,7 +1536,7 @@
     },
     "v": {
      "en": "very soluble in water (more than 50% w/v) and in propylene glycol; freely soluble in methanol and ethanol",
-     "fa": "بسیار محلول در آب (بیش از 50٪ وزنی-حجمی) و در پروپیلن گلیکول؛ به‌راحتی محلول در متانول و اتانول"
+     "fa": "بسیار محلول در آب (بیش از 50% وزنی-حجمی) و در پروپیلن گلیکول؛ به‌راحتی محلول در متانول و اتانول"
     }
    },
    {
@@ -1623,7 +1623,7 @@
   "mw": "≈ 50 000–1 250 000 (grade-dependent)",
   "applications": {
    "en": "Used in oral products as a tablet binder in wet and dry granulation (2–6%), as a film former for tablet coating (about 5% solutions), and as an extended-release matrix former (15–35%). It is also used as a thickener in topical and oral liquids, in hot-melt extrusion, in transdermal films and as a stabiliser for suspensions. Fine-particle grades are used for direct-compression binding.",
-   "fa": "در فرآورده‌های خوراکی به عنوان چسباننده قرص در گرانولاسیون مرطوب و خشک (2–6٪)، تشکیل‌دهنده فیلم در روکش قرص (محلول‌های حدود 5٪) و تشکیل‌دهنده ماتریکس رهش طولانی (15–35٪) به کار می‌رود. همچنین به عنوان غلیظ‌کننده در مایعات موضعی و خوراکی، در اکستروژن مذاب (HME)، در فیلم‌های ترانس‌درمال و به عنوان پایدارکننده سوسپانسیون مصرف می‌شود. گریدهای با ذرات ریز برای چسبانندگی در پرس مستقیم کاربرد دارند."
+   "fa": "در فرآورده‌های خوراکی به عنوان چسباننده قرص در گرانولاسیون مرطوب و خشک (2–6%)، تشکیل‌دهنده فیلم در روکش قرص (محلول‌های حدود 5%) و تشکیل‌دهنده ماتریکس رهش طولانی (15–35%) به کار می‌رود. همچنین به عنوان غلیظ‌کننده در مایعات موضعی و خوراکی، در اکستروژن مذاب (HME)، در فیلم‌های ترانس‌درمال و به عنوان پایدارکننده سوسپانسیون مصرف می‌شود. گریدهای با ذرات ریز برای چسبانندگی در پرس مستقیم کاربرد دارند."
   },
   "description": {
    "en": "A white to slightly yellow, odourless and tasteless powder or granules. It is a thermoplastic, non-ionic cellulose ether with a high level of hydroxypropyl substitution, which gives it solubility in both water and polar organic solvents.",
@@ -1637,7 +1637,7 @@
     },
     "v": {
      "en": "≤ 80.5% (USP–NF); molar substitution about 3.5–4",
-     "fa": "حداکثر 80.5٪ (USP–NF)؛ جایگزینی مولی حدود 3.5–4"
+     "fa": "حداکثر 80.5% (USP–NF)؛ جایگزینی مولی حدود 3.5–4"
     }
    },
    {
@@ -1647,7 +1647,7 @@
     },
     "v": {
      "en": "5.0–8.5 (1% w/v aqueous solution)",
-     "fa": "5.0–8.5 (محلول آبی 1٪)"
+     "fa": "5.0–8.5 (محلول آبی 1%)"
     }
    },
    {
@@ -1667,7 +1667,7 @@
     },
     "v": {
      "en": "grades from very low to very high (for example a few mPa·s to several thousand mPa·s in 2% w/v solution)",
-     "fa": "گریدهایی از ویسکوزیته بسیار کم تا بسیار زیاد (مثلاً از چند mPa·s تا چند هزار mPa·s در محلول 2٪)"
+     "fa": "گریدهایی از ویسکوزیته بسیار کم تا بسیار زیاد (مثلاً از چند mPa·s تا چند هزار mPa·s در محلول 2%)"
     }
    },
    {
@@ -1677,7 +1677,7 @@
     },
     "v": {
      "en": "typically below 5% w/w as packed; moderately hygroscopic",
-     "fa": "معمولاً کمتر از 5٪ وزنی در بسته‌بندی؛ به‌طور متوسط رطوبت‌گیر"
+     "fa": "معمولاً کمتر از 5% وزنی در بسته‌بندی؛ به‌طور متوسط رطوبت‌گیر"
     }
    }
   ],
@@ -1746,7 +1746,7 @@
   "mw": "",
   "applications": {
    "en": "Used in oral solid dosage forms as a tablet and capsule disintegrant, usually at a few per cent up to about 10% w/w, and also as a binder because it compacts well; it can therefore serve as a combined binder–disintegrant in wet granulation and direct compression. Grades differ in particle size and substitution and are chosen for direct compression, wet granulation or orally disintegrating tablets. It is also used as an extrusion–spheronisation aid.",
-   "fa": "در اشکال دارویی جامد خوراکی به عنوان متلاشی‌کننده قرص و کپسول، معمولاً با غلظت چند درصد تا حدود 10٪ وزنی، به کار می‌رود و به دلیل تراکم‌پذیری خوب، به عنوان چسباننده نیز عمل می‌کند؛ بنابراین می‌تواند هم‌زمان نقش چسباننده و متلاشی‌کننده را در گرانولاسیون مرطوب و پرس مستقیم داشته باشد. گریدها از نظر اندازه ذره و میزان جایگزینی متفاوت‌اند و برای پرس مستقیم، گرانولاسیون مرطوب یا قرص‌های متلاشی‌شونده در دهان (ODT) انتخاب می‌شوند. همچنین به عنوان کمک‌کننده در اکستروژن-اسفرونیزاسیون مصرف می‌شود."
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان متلاشی‌کننده قرص و کپسول، معمولاً با غلظت چند درصد تا حدود 10% وزنی، به کار می‌رود و به دلیل تراکم‌پذیری خوب، به عنوان چسباننده نیز عمل می‌کند؛ بنابراین می‌تواند هم‌زمان نقش چسباننده و متلاشی‌کننده را در گرانولاسیون مرطوب و پرس مستقیم داشته باشد. گریدها از نظر اندازه ذره و میزان جایگزینی متفاوت‌اند و برای پرس مستقیم، گرانولاسیون مرطوب یا قرص‌های متلاشی‌شونده در دهان (ODT) انتخاب می‌شوند. همچنین به عنوان کمک‌کننده در اکستروژن-اسفرونیزاسیون مصرف می‌شود."
   },
   "description": {
    "en": "A white to yellowish-white, odourless and tasteless, fibrous or granular powder. Its low degree of hydroxypropyl substitution makes it insoluble in water, in which it swells.",
@@ -1760,7 +1760,7 @@
     },
     "v": {
      "en": "5.0–16.0% (pharmacopoeial range)",
-     "fa": "5.0–16.0٪ (محدوده فارماکوپه‌ای)"
+     "fa": "5.0–16.0% (محدوده فارماکوپه‌ای)"
     }
    },
    {
@@ -1770,7 +1770,7 @@
     },
     "v": {
      "en": "5.0–7.5 (1% w/v aqueous dispersion)",
-     "fa": "5.0–7.5 (دیسپرسیون آبی 1٪)"
+     "fa": "5.0–7.5 (دیسپرسیون آبی 1%)"
     }
    },
    {
@@ -1780,7 +1780,7 @@
     },
     "v": {
      "en": "practically insoluble in water and ethanol, in which it swells; dissolves in 10% sodium hydroxide solution",
-     "fa": "عملاً نامحلول در آب و اتانول که در آن‌ها متورم می‌شود؛ در محلول 10٪ سدیم هیدروکسید حل می‌شود"
+     "fa": "عملاً نامحلول در آب و اتانول که در آن‌ها متورم می‌شود؛ در محلول 10% سدیم هیدروکسید حل می‌شود"
     }
    },
    {
@@ -1858,11 +1858,11 @@
   "mw": "≈ 10 000–1 500 000 (grade-dependent)",
   "applications": {
    "en": "One of the most widely used polymers in oral, ophthalmic, nasal and topical products. Typical uses: tablet binder in wet or dry granulation, about 2–5% w/w; film coating, using 2–20% w/w solutions depending on viscosity grade; hydrophilic matrix former for extended release, about 10–80% w/w of high-viscosity grades; thickener in eye drops and artificial tears, 0.45–1.0%. It is also used to make capsule shells, as a suspending and stabilising agent, as a precipitation inhibitor in amorphous solid dispersions and in hot-melt extrusion.",
-   "fa": "یکی از پرمصرف‌ترین پلیمرها در فرآورده‌های خوراکی، چشمی، بینی و موضعی است. کاربردهای متداول: چسباننده قرص در گرانولاسیون مرطوب یا خشک حدود 2–5٪ وزنی؛ پوشش فیلمی با محلول‌های 2–20٪ وزنی بسته به گرید ویسکوزیته؛ تشکیل‌دهنده ماتریکس آب‌دوست رهش طولانی با حدود 10–80٪ وزنی از گریدهای ویسکوزیته بالا؛ غلیظ‌کننده در قطره‌های چشمی و اشک مصنوعی 0.45–1.0٪. همچنین برای ساخت پوسته کپسول، به عنوان عامل تعلیق‌کننده و پایدارکننده، مهارکننده رسوب در دیسپرسیون‌های جامد آمورف و در اکستروژن مذاب به کار می‌رود."
+   "fa": "یکی از پرمصرف‌ترین پلیمرها در فرآورده‌های خوراکی، چشمی، بینی و موضعی است. کاربردهای متداول: چسباننده قرص در گرانولاسیون مرطوب یا خشک حدود 2–5% وزنی؛ پوشش فیلمی با محلول‌های 2–20% وزنی بسته به گرید ویسکوزیته؛ تشکیل‌دهنده ماتریکس آب‌دوست رهش طولانی با حدود 10–80% وزنی از گریدهای ویسکوزیته بالا؛ غلیظ‌کننده در قطره‌های چشمی و اشک مصنوعی 0.45–1.0%. همچنین برای ساخت پوسته کپسول، به عنوان عامل تعلیق‌کننده و پایدارکننده، مهارکننده رسوب در دیسپرسیون‌های جامد آمورف و در اکستروژن مذاب به کار می‌رود."
   },
   "description": {
    "en": "An odourless and tasteless, white or creamy-white fibrous or granular powder. Pharmacopoeias classify it by substitution type, a four-digit number giving the approximate methoxy and hydroxypropoxy percentages (for example 2910, 2208, 1828, 2906), and by the nominal viscosity of a 2% w/w aqueous solution.",
-   "fa": "پودر رشته‌ای یا گرانولی سفید یا سفید مایل به کرم، بی‌بو و بی‌مزه. فارماکوپه‌ها آن را بر اساس نوع جایگزینی (عددی چهاررقمی که درصد تقریبی متوکسی و هیدروکسی‌پروپوکسی را نشان می‌دهد، مثلاً 2910، 2208، 1828 و 2906) و بر اساس ویسکوزیته اسمی محلول آبی 2٪ دسته‌بندی می‌کنند."
+   "fa": "پودر رشته‌ای یا گرانولی سفید یا سفید مایل به کرم، بی‌بو و بی‌مزه. فارماکوپه‌ها آن را بر اساس نوع جایگزینی (عددی چهاررقمی که درصد تقریبی متوکسی و هیدروکسی‌پروپوکسی را نشان می‌دهد، مثلاً 2910، 2208، 1828 و 2906) و بر اساس ویسکوزیته اسمی محلول آبی 2% دسته‌بندی می‌کنند."
   },
   "properties": [
    {
@@ -1872,7 +1872,7 @@
     },
     "v": {
      "en": "2910: methoxy 28–30%, hydroxypropoxy 7–12%; 2208: methoxy 19–24%, hydroxypropoxy 4–12%",
-     "fa": "2910: متوکسی 28–30٪، هیدروکسی‌پروپوکسی 7–12٪؛ 2208: متوکسی 19–24٪، هیدروکسی‌پروپوکسی 4–12٪"
+     "fa": "2910: متوکسی 28–30%، هیدروکسی‌پروپوکسی 7–12%؛ 2208: متوکسی 19–24%، هیدروکسی‌پروپوکسی 4–12%"
     }
    },
    {
@@ -1882,7 +1882,7 @@
     },
     "v": {
      "en": "grades from about 3 mPa·s to 100 000 mPa·s or more (2% w/w aqueous solution, 20 °C)",
-     "fa": "گریدهایی از حدود 3 mPa·s تا 100 000 mPa·s یا بیشتر (محلول آبی 2٪، 20 °C)"
+     "fa": "گریدهایی از حدود 3 mPa·s تا 100 000 mPa·s یا بیشتر (محلول آبی 2%، 20 °C)"
     }
    },
    {
@@ -1892,7 +1892,7 @@
     },
     "v": {
      "en": "5.0–8.0 (2% w/w aqueous solution)",
-     "fa": "5.0–8.0 (محلول آبی 2٪)"
+     "fa": "5.0–8.0 (محلول آبی 2%)"
     }
    },
    {
@@ -1997,7 +1997,7 @@
     },
     "v": {
      "en": "methoxy 12–28%, hydroxypropoxy 4–23%, acetyl 2–16%, succinoyl 4–28% (pharmacopoeial ranges)",
-     "fa": "متوکسی 12–28٪، هیدروکسی‌پروپوکسی 4–23٪، استیل 2–16٪، سوکسینویل 4–28٪ (محدوده‌های فارماکوپه‌ای)"
+     "fa": "متوکسی 12–28%، هیدروکسی‌پروپوکسی 4–23%، استیل 2–16%، سوکسینویل 4–28% (محدوده‌های فارماکوپه‌ای)"
     }
    },
    {
@@ -2084,7 +2084,7 @@
   "mw": "≈ 20 000–200 000",
   "applications": {
    "en": "Used mainly as an enteric film coating for tablets, granules and capsules, applied from organic solvent solutions (typically about 5–10% w/w polymer) or from aqueous dispersions with a plasticiser. It is also used as a carrier in solid dispersions to improve the dissolution of poorly soluble drugs, and in sustained-release matrices and microparticles.",
-   "fa": "عمدتاً به عنوان پوشش فیلمی روده‌ای برای قرص، گرانول و کپسول به کار می‌رود و از محلول‌های حلال آلی (معمولاً حدود 5–10٪ وزنی پلیمر) یا دیسپرسیون‌های آبی همراه با پلاستی‌سایزر اعمال می‌شود. همچنین به عنوان حامل در دیسپرسیون‌های جامد برای بهبود انحلال داروهای کم‌محلول و در ماتریکس‌ها و میکروذرات آهسته‌رهش مصرف می‌شود."
+   "fa": "عمدتاً به عنوان پوشش فیلمی روده‌ای برای قرص، گرانول و کپسول به کار می‌رود و از محلول‌های حلال آلی (معمولاً حدود 5–10% وزنی پلیمر) یا دیسپرسیون‌های آبی همراه با پلاستی‌سایزر اعمال می‌شود. همچنین به عنوان حامل در دیسپرسیون‌های جامد برای بهبود انحلال داروهای کم‌محلول و در ماتریکس‌ها و میکروذرات آهسته‌رهش مصرف می‌شود."
   },
   "description": {
    "en": "White to slightly off-white, odourless or nearly odourless, tasteless flakes or granular powder. Pharmacopoeias define two substitution types: 200731 (HP-50) and 220824 (HP-55), which differ in phthalyl (carboxybenzoyl) content and therefore in the pH at which they dissolve.",
@@ -2108,7 +2108,7 @@
     },
     "v": {
      "en": "21–27% (type 200731); 27–35% (type 220824)",
-     "fa": "21–27٪ (نوع 200731)؛ 27–35٪ (نوع 220824)"
+     "fa": "21–27% (نوع 200731)؛ 27–35% (نوع 220824)"
     }
    },
    {
@@ -2184,7 +2184,7 @@
   "mw": "388.29",
   "applications": {
    "en": "An antimicrobial preservative used in topical pharmaceutical products and, much more widely, in cosmetics and toiletries, typically at 0.03–0.5% w/w. It is more active against bacteria than against yeasts and moulds, so it is usually combined with parabens or other antifungal preservatives, with which it acts synergistically.",
-   "fa": "نگهدارنده ضدمیکروبی است که در فرآورده‌های دارویی موضعی و به‌طور بسیار گسترده‌تر در محصولات آرایشی و بهداشتی، معمولاً با غلظت 0.03–0.5٪ وزنی، به کار می‌رود. اثر آن بر باکتری‌ها بیشتر از مخمرها و کپک‌هاست؛ بنابراین معمولاً همراه پارابن‌ها یا سایر نگهدارنده‌های ضدقارچ مصرف می‌شود و با آن‌ها اثر هم‌افزا دارد."
+   "fa": "نگهدارنده ضدمیکروبی است که در فرآورده‌های دارویی موضعی و به‌طور بسیار گسترده‌تر در محصولات آرایشی و بهداشتی، معمولاً با غلظت 0.03–0.5% وزنی، به کار می‌رود. اثر آن بر باکتری‌ها بیشتر از مخمرها و کپک‌هاست؛ بنابراین معمولاً همراه پارابن‌ها یا سایر نگهدارنده‌های ضدقارچ مصرف می‌شود و با آن‌ها اثر هم‌افزا دارد."
   },
   "description": {
    "en": "A white, free-flowing, odourless or almost odourless, hygroscopic powder with a faint characteristic taste. It is a formaldehyde-releasing condensation product of allantoin and formaldehyde.",
@@ -2218,7 +2218,7 @@
     },
     "v": {
      "en": "≈ 6.0–7.5 (1% w/v aqueous solution)",
-     "fa": "حدود 6.0–7.5 (محلول آبی 1٪)"
+     "fa": "حدود 6.0–7.5 (محلول آبی 1%)"
     }
    }
   ],
@@ -2244,7 +2244,7 @@
   },
   "regulatory": {
    "en": "Included in the FDA Inactive Ingredient Database (topical preparations). In the EU it is permitted as a preservative in cosmetic products at up to 0.6%, and products containing formaldehyde releasers carry a warning when the released formaldehyde exceeds the set threshold.",
-   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های موضعی) وجود دارد. در اتحادیه اروپا به عنوان نگهدارنده در محصولات آرایشی تا غلظت 0.6٪ مجاز است و فرآورده‌های حاوی آزادکننده‌های فرمالدهید در صورتی که فرمالدهید آزادشده از حد تعیین‌شده بیشتر باشد، باید هشدار داشته باشند."
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های موضعی) وجود دارد. در اتحادیه اروپا به عنوان نگهدارنده در محصولات آرایشی تا غلظت 0.6% مجاز است و فرآورده‌های حاوی آزادکننده‌های فرمالدهید در صورتی که فرمالدهید آزادشده از حد تعیین‌شده بیشتر باشد، باید هشدار داشته باشند."
   },
   "related": {
    "en": "Diazolidinyl urea; DMDM hydantoin; parabens; quaternium-15.",
@@ -2414,7 +2414,7 @@
     },
     "v": {
      "en": "≤ 7% w/w (mainly water of crystallisation of GPM)",
-     "fa": "حداکثر 7٪ وزنی (عمدتاً آب تبلور GPM)"
+     "fa": "حداکثر 7% وزنی (عمدتاً آب تبلور GPM)"
     }
    },
    {
@@ -2424,7 +2424,7 @@
     },
     "v": {
      "en": "low; takes up little moisture below about 85% RH at 25 °C",
-     "fa": "کم؛ در رطوبت نسبی کمتر از حدود 85٪ در 25 °C رطوبت ناچیزی جذب می‌کند"
+     "fa": "کم؛ در رطوبت نسبی کمتر از حدود 85% در 25 °C رطوبت ناچیزی جذب می‌کند"
     }
    },
    {
@@ -2460,7 +2460,7 @@
   },
   "regulatory": {
    "en": "GRAS listed. Accepted as a food additive in Europe (E953); foods containing more than 10% added polyols must carry a warning that excessive consumption may have laxative effects. Included in the FDA Inactive Ingredient Database (oral preparations) and in non-parenteral medicines licensed in Europe.",
-   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E953)؛ غذاهای حاوی بیش از 10٪ پلی‌ال افزوده باید هشدار اثر ملین مصرف زیاد را داشته باشند. در FDA Inactive Ingredient Database (فرآورده‌های خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E953)؛ غذاهای حاوی بیش از 10% پلی‌ال افزوده باید هشدار اثر ملین مصرف زیاد را داشته باشند. در FDA Inactive Ingredient Database (فرآورده‌های خوراکی) و در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
   },
   "related": {
    "en": "Lactitol; maltitol; mannitol; sorbitol; xylitol.",
@@ -2503,7 +2503,7 @@
   "mw": "60.10",
   "applications": {
    "en": "Used as a solvent in tablet film coating and wet granulation, where it is removed during drying, and as a solvent and penetration-modifying component in topical products. In aqueous solution at about 60–70% v/v it is an effective skin and surface disinfectant and is widely used in hand rubs and swabs. It is also used in the extraction and crystallisation of drugs and excipients.",
-   "fa": "به عنوان حلال در پوشش فیلمی قرص و گرانولاسیون مرطوب (که در طی خشک کردن حذف می‌شود) و به عنوان حلال و جزء تعدیل‌کننده نفوذ در فرآورده‌های موضعی به کار می‌رود. محلول آبی حدود 60–70٪ حجمی آن ضدعفونی‌کننده مؤثر پوست و سطوح است و به‌طور گسترده در ضدعفونی‌کننده‌های دست و پدهای الکلی مصرف می‌شود. همچنین در استخراج و کریستالیزاسیون داروها و مواد جانبی کاربرد دارد."
+   "fa": "به عنوان حلال در پوشش فیلمی قرص و گرانولاسیون مرطوب (که در طی خشک کردن حذف می‌شود) و به عنوان حلال و جزء تعدیل‌کننده نفوذ در فرآورده‌های موضعی به کار می‌رود. محلول آبی حدود 60–70% حجمی آن ضدعفونی‌کننده مؤثر پوست و سطوح است و به‌طور گسترده در ضدعفونی‌کننده‌های دست و پدهای الکلی مصرف می‌شود. همچنین در استخراج و کریستالیزاسیون داروها و مواد جانبی کاربرد دارد."
   },
   "description": {
    "en": "A clear, colourless, mobile, volatile and flammable liquid with a characteristic spirit-like odour and a slightly bitter taste.",
@@ -2567,7 +2567,7 @@
     },
     "v": {
      "en": "miscible with water, ethanol, ether, chloroform and glycerin; forms an azeotrope with water (about 88% w/w)",
-     "fa": "قابل اختلاط با آب، اتانول، اتر، کلروفرم و گلیسرین؛ با آب آزئوتروپ (حدود 88٪ وزنی) تشکیل می‌دهد"
+     "fa": "قابل اختلاط با آب، اتانول، اتر، کلروفرم و گلیسرین؛ با آب آزئوتروپ (حدود 88% وزنی) تشکیل می‌دهد"
     }
    }
   ],
@@ -2601,7 +2601,7 @@
   },
   "comments": {
    "en": "For skin disinfection, concentrations of about 60–70% v/v are more effective than the neat alcohol because water is needed for protein denaturation. Residual solvent levels in coated or granulated products should be controlled by validated drying and tested by gas chromatography.",
-   "fa": "برای ضدعفونی پوست، غلظت‌های حدود 60–70٪ حجمی مؤثرتر از الکل خالص‌اند، زیرا برای دناتوره کردن پروتئین‌ها وجود آب لازم است. مقدار حلال باقی‌مانده در فرآورده‌های پوشش‌دار یا گرانوله باید با خشک کردن اعتبارسنجی‌شده کنترل و با کروماتوگرافی گازی آزمایش شود."
+   "fa": "برای ضدعفونی پوست، غلظت‌های حدود 60–70% حجمی مؤثرتر از الکل خالص‌اند، زیرا برای دناتوره کردن پروتئین‌ها وجود آب لازم است. مقدار حلال باقی‌مانده در فرآورده‌های پوشش‌دار یا گرانوله باید با خشک کردن اعتبارسنجی‌شده کنترل و با کروماتوگرافی گازی آزمایش شود."
   },
   "refs": [
    "usp",
@@ -2632,7 +2632,7 @@
   "mw": "270.45",
   "applications": {
    "en": "A non-greasy emollient and oily vehicle used in creams, lotions, ointments, bath oils and topical aerosols, usually at about 1–10% w/w in creams and lotions and at much higher levels in sprays and oils. It improves spreading and skin feel, acts as a penetration enhancer in topical and transdermal products, and serves as a solvent for lipophilic drugs. Sterile isopropyl myristate is used to dissolve ointments and oily preparations in pharmacopoeial sterility testing.",
-   "fa": "نرم‌کننده غیرچرب و حامل روغنی است که در کرم‌ها، لوسیون‌ها، پمادها، روغن‌های حمام و افشانه‌های موضعی، معمولاً با غلظت حدود 1–10٪ وزنی در کرم‌ها و لوسیون‌ها و با مقادیر بسیار بیشتر در اسپری‌ها و روغن‌ها، به کار می‌رود. پخش‌شوندگی و احساس روی پوست را بهبود می‌بخشد، در فرآورده‌های موضعی و ترانس‌درمال به عنوان افزاینده نفوذ عمل می‌کند و حلال داروهای لیپوفیل است. ایزوپروپیل میریستات استریل در آزمون استریلیتی فارماکوپه‌ای برای حل کردن پمادها و فرآورده‌های روغنی استفاده می‌شود."
+   "fa": "نرم‌کننده غیرچرب و حامل روغنی است که در کرم‌ها، لوسیون‌ها، پمادها، روغن‌های حمام و افشانه‌های موضعی، معمولاً با غلظت حدود 1–10% وزنی در کرم‌ها و لوسیون‌ها و با مقادیر بسیار بیشتر در اسپری‌ها و روغن‌ها، به کار می‌رود. پخش‌شوندگی و احساس روی پوست را بهبود می‌بخشد، در فرآورده‌های موضعی و ترانس‌درمال به عنوان افزاینده نفوذ عمل می‌کند و حلال داروهای لیپوفیل است. ایزوپروپیل میریستات استریل در آزمون استریلیتی فارماکوپه‌ای برای حل کردن پمادها و فرآورده‌های روغنی استفاده می‌شود."
   },
   "description": {
    "en": "A clear, colourless, practically odourless, oily liquid of low viscosity that congeals at about 5 °C. It consists mainly of the isopropyl ester of myristic acid with smaller amounts of other fatty acid esters.",
@@ -2976,7 +2976,7 @@
   },
   "description": {
    "en": "A practically odourless, colourless or slightly yellow, viscous, hygroscopic liquid with an acid taste. Pharmacopoeial lactic acid contains about 88–92% w/w of C3H6O3 as a mixture of lactic acid and its condensation products (lactoyllactic acid and polylactic acids) in equilibrium with water. It is usually racemic; (S)-lactic acid has its own monograph.",
-   "fa": "مایع ویسکوز، رطوبت‌گیر، بی‌رنگ یا کمی زرد و عملاً بی‌بو با طعم اسیدی. لاکتیک اسید فارماکوپه‌ای حدود 88–92٪ وزنی C3H6O3 دارد که به صورت مخلوطی از لاکتیک اسید و محصولات تراکمی آن (لاکتوئیل‌لاکتیک اسید و پلی‌لاکتیک اسیدها) در تعادل با آب است. معمولاً راسمیک است و (S)-لاکتیک اسید تک‌نگاری جداگانه دارد."
+   "fa": "مایع ویسکوز، رطوبت‌گیر، بی‌رنگ یا کمی زرد و عملاً بی‌بو با طعم اسیدی. لاکتیک اسید فارماکوپه‌ای حدود 88–92% وزنی C3H6O3 دارد که به صورت مخلوطی از لاکتیک اسید و محصولات تراکمی آن (لاکتوئیل‌لاکتیک اسید و پلی‌لاکتیک اسیدها) در تعادل با آب است. معمولاً راسمیک است و (S)-لاکتیک اسید تک‌نگاری جداگانه دارد."
   },
   "properties": [
    {
@@ -2986,7 +2986,7 @@
     },
     "v": {
      "en": "88–92% w/w",
-     "fa": "88–92٪ وزنی"
+     "fa": "88–92% وزنی"
     }
    },
    {
@@ -3082,7 +3082,7 @@
   "mw": "344.31 (anhydrous); 362.34 (monohydrate)",
   "applications": {
    "en": "A sugar alcohol used as a sweetener and as a non-cariogenic diluent in tablets (direct-compression grades are available), chewable tablets, lozenges, sugar-free coatings and confectionery. Its sweetness is about 30–40% of that of sucrose, so it is often combined with intense sweeteners. As an active substance it is used as an osmotic laxative.",
-   "fa": "یک قند الکلی است که به عنوان شیرین‌کننده و رقیق‌کننده غیرپوسیدگی‌زا در قرص‌ها (گریدهای پرس مستقیم در دسترس‌اند)، قرص‌های جویدنی، لوزنج‌ها، روکش‌های بدون قند و شیرینی‌ها به کار می‌رود. شیرینی آن حدود 30–40٪ ساکارز است و به همین دلیل اغلب همراه شیرین‌کننده‌های قوی مصرف می‌شود. به عنوان ماده مؤثر به عنوان ملین اسمزی مصرف می‌شود."
+   "fa": "یک قند الکلی است که به عنوان شیرین‌کننده و رقیق‌کننده غیرپوسیدگی‌زا در قرص‌ها (گریدهای پرس مستقیم در دسترس‌اند)، قرص‌های جویدنی، لوزنج‌ها، روکش‌های بدون قند و شیرینی‌ها به کار می‌رود. شیرینی آن حدود 30–40% ساکارز است و به همین دلیل اغلب همراه شیرین‌کننده‌های قوی مصرف می‌شود. به عنوان ماده مؤثر به عنوان ملین اسمزی مصرف می‌شود."
   },
   "description": {
    "en": "White, odourless, sweet-tasting crystals or crystalline powder. It exists in anhydrous, monohydrate and dihydrate forms; the monohydrate is the usual pharmaceutical form.",
@@ -3152,7 +3152,7 @@
   },
   "regulatory": {
    "en": "Accepted as a food additive in Europe (E966); foods containing more than 10% added polyols must carry a laxative-effect warning. Included in non-parenteral medicines licensed in Europe.",
-   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E966)؛ غذاهای حاوی بیش از 10٪ پلی‌ال افزوده باید هشدار اثر ملین داشته باشند. در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
+   "fa": "در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E966)؛ غذاهای حاوی بیش از 10% پلی‌ال افزوده باید هشدار اثر ملین داشته باشند. در داروهای غیرتزریقی مجاز در اروپا وجود دارد."
   },
   "related": {
    "en": "Isomalt; lactose; maltitol; mannitol; sorbitol; xylitol.",
@@ -3197,7 +3197,7 @@
   },
   "description": {
    "en": "White to off-white crystalline particles or powder, odourless and slightly sweet. Commercial anhydrous lactose made by roller drying is mainly anhydrous β-lactose, typically about 70–80%, with the rest anhydrous α-lactose.",
-   "fa": "ذرات یا پودر کریستالی سفید تا سفید مایل به کرم، بی‌بو و کمی شیرین. لاکتوز بدون آب تجاری که با خشک‌کن غلتکی تهیه می‌شود، عمدتاً بتالاکتوز بدون آب (معمولاً حدود 70–80٪) و بقیه آن آلفالاکتوز بدون آب است."
+   "fa": "ذرات یا پودر کریستالی سفید تا سفید مایل به کرم، بی‌بو و کمی شیرین. لاکتوز بدون آب تجاری که با خشک‌کن غلتکی تهیه می‌شود، عمدتاً بتالاکتوز بدون آب (معمولاً حدود 70–80%) و بقیه آن آلفالاکتوز بدون آب است."
   },
   "properties": [
    {
@@ -3207,7 +3207,7 @@
     },
     "v": {
      "en": "≤ 1.0% w/w; typically about 0.5% or less",
-     "fa": "حداکثر 1.0٪ وزنی؛ معمولاً حدود 0.5٪ یا کمتر"
+     "fa": "حداکثر 1.0% وزنی؛ معمولاً حدود 0.5% یا کمتر"
     }
    },
    {
@@ -3217,7 +3217,7 @@
     },
     "v": {
      "en": "typically about 70–80% (roller-dried grades)",
-     "fa": "معمولاً حدود 70–80٪ (گریدهای خشک‌شده با غلتک)"
+     "fa": "معمولاً حدود 70–80% (گریدهای خشک‌شده با غلتک)"
     }
    },
    {
@@ -3320,7 +3320,7 @@
     },
     "v": {
      "en": "typically about 10–20%",
-     "fa": "معمولاً حدود 10–20٪"
+     "fa": "معمولاً حدود 10–20%"
     }
    },
    {
@@ -3350,7 +3350,7 @@
     },
     "v": {
      "en": "about 4.5–5.5% w/w total (mainly water of crystallisation)",
-     "fa": "در مجموع حدود 4.5–5.5٪ وزنی (عمدتاً آب تبلور)"
+     "fa": "در مجموع حدود 4.5–5.5% وزنی (عمدتاً آب تبلور)"
     }
    },
    {

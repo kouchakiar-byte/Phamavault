@@ -27,7 +27,7 @@ const examples = [
 ];
 
 const fmt = (s: string, values: Record<string, number>, locale: Locale) =>
-  s.replace(/\{(\w+)\}/g, (_, k: string) => values[k].toLocaleString(locale === "fa" ? "fa-IR" : "en-US"));
+  s.replace(/\{(\w+)\}/g, (_, k: string) => values[k].toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US"));
 
 const name = (drug: Drug, locale: Locale) => (locale === "fa" ? drug.fa : drug.en);
 

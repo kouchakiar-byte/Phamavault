@@ -30,7 +30,7 @@ function RefLine({ refs }: { refs: string[] }) {
 export function CompoundingBasics({ locale }: { locale: Locale }) {
   return (
     <div className="space-y-8">
-      <div>
+      <div id="cmp-facts" className="scroll-mt-24">
         <h3 className="mb-4 text-lg font-bold text-vault-900">{g.factsTitle[locale]}</h3>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {g.facts.map((f) => (
@@ -47,7 +47,7 @@ export function CompoundingBasics({ locale }: { locale: Locale }) {
         </div>
       </div>
 
-      <div>
+      <div id="cmp-steps" className="scroll-mt-24">
         <h3 className="mb-4 text-lg font-bold text-vault-900">{g.topicsTitle[locale]}</h3>
         <div className="grid gap-4 md:grid-cols-2">
           {g.topics.map((topic, i) => {
@@ -55,14 +55,15 @@ export function CompoundingBasics({ locale }: { locale: Locale }) {
             return (
               <article
                 key={topic.key}
-                className="group flex flex-col rounded-card border border-vault-100 bg-vault-50 p-6 transition duration-300 ease-out hover:scale-[0.98] hover:border-capsule-400 hover:bg-capsule-50 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-white hover:shadow-lg hover:shadow-capsule-500/15 motion-reduce:transform-none"
+                id={`cmp-${topic.key}`}
+                className="group flex scroll-mt-24 flex-col rounded-card border border-vault-100 bg-vault-50 p-6 transition duration-300 ease-out hover:scale-[0.98] hover:border-capsule-400 hover:bg-capsule-50 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-white hover:shadow-lg hover:shadow-capsule-500/15 motion-reduce:transform-none"
               >
                 <div className="flex items-center gap-3">
                   <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition group-hover:bg-capsule-500 group-hover:text-vault-950">
                     <Icon className="size-5" aria-hidden="true" />
                   </span>
                   <h4 className="font-bold text-vault-900">
-                    <span className="me-1.5 font-mono text-xs text-muted">{(i + 1).toLocaleString(locale === "fa" ? "fa-IR" : "en-US")}.</span>
+                    <span className="me-1.5 font-mono text-xs text-muted">{(i + 1).toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US")}.</span>
                     {topic.title[locale]}
                   </h4>
                 </div>
@@ -88,7 +89,7 @@ export function CompoundingBasics({ locale }: { locale: Locale }) {
 export function CompoundingTables({ locale }: { locale: Locale }) {
   return (
     <div className="space-y-8">
-      <div>
+      <div id="cmp-excipients" className="scroll-mt-24">
         <h3 className="text-lg font-bold text-vault-900">{g.excipientsTitle[locale]}</h3>
         <div className="mt-4 overflow-x-auto rounded-card border border-line bg-white">
           <table className="db min-w-[680px]">
@@ -113,7 +114,7 @@ export function CompoundingTables({ locale }: { locale: Locale }) {
         <RefLine refs={g.excipientRefs} />
       </div>
 
-      <div className="rounded-card border border-capsule-400/40 bg-capsule-50 bg-gradient-to-br from-capsule-50 to-white p-6">
+      <div id="cmp-counsel" className="scroll-mt-24 rounded-card border border-capsule-400/40 bg-capsule-50 bg-gradient-to-br from-capsule-50 to-white p-6">
         <h3 className="text-lg font-bold text-vault-900">{g.counselTitle[locale]}</h3>
         <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
           {g.counsel.map((c) => (

@@ -44,7 +44,7 @@
     },
     "v": {
      "en": "USP-NF: not more than 92% (dried basis); Ph. Eur.: 62.5–91.5%, the remainder being mainly starch",
-     "fa": "USP-NF: حداکثر 92٪ (بر پایه خشک)؛ فارماکوپه اروپا: 62.5–91.5٪؛ باقی‌مانده عمدتاً نشاسته است"
+     "fa": "USP-NF: حداکثر 92% (بر پایه خشک)؛ فارماکوپه اروپا: 62.5–91.5%؛ باقی‌مانده عمدتاً نشاسته است"
     }
    },
    {
@@ -54,7 +54,7 @@
     },
     "v": {
      "en": "low; not more than 4% w/w (USP-NF)",
-     "fa": "کم؛ حداکثر 4٪ وزنی (USP-NF)"
+     "fa": "کم؛ حداکثر 4% وزنی (USP-NF)"
     }
    },
    {
@@ -130,7 +130,7 @@
   "mw": "342.30 (sucrose)",
   "applications": {
    "en": "Used as a directly compressible filler and binder, mainly in chewable tablets and lozenges where its sweetness and pleasant mouthfeel are an advantage. It is typically used at about 20–60% w/w as a diluent and at lower levels as a dry binder, and it also acts as a sweetening agent.",
-   "fa": "به عنوان پرکننده و چسباننده قابل پرس مستقیم، عمدتاً در قرص‌های جویدنی و لوزنج‌ها به کار می‌رود که شیرینی و حس دهانی مطلوب آن مزیت است. معمولاً حدود 20–60٪ وزنی به عنوان رقیق‌کننده و در مقادیر کمتر به عنوان چسباننده خشک مصرف می‌شود و نقش شیرین‌کننده نیز دارد."
+   "fa": "به عنوان پرکننده و چسباننده قابل پرس مستقیم، عمدتاً در قرص‌های جویدنی و لوزنج‌ها به کار می‌رود که شیرینی و حس دهانی مطلوب آن مزیت است. معمولاً حدود 20–60% وزنی به عنوان رقیق‌کننده و در مقادیر کمتر به عنوان چسباننده خشک مصرف می‌شود و نقش شیرین‌کننده نیز دارد."
   },
   "description": {
    "en": "White, odourless, crystalline or granular powder with a sweet taste. The co-processed agglomerates are more porous than ordinary sugar crystals, which gives better flow and compactibility.",
@@ -144,7 +144,7 @@
     },
     "v": {
      "en": "95.0–98.0% (dried basis); the remainder is, for example, maltodextrin or invert sugar, and a lubricant may be present",
-     "fa": "95.0–98.0٪ (بر پایه خشک)؛ باقی‌مانده مثلاً مالتودکسترین یا شکر اینورت است و ممکن است روان‌کننده نیز داشته باشد"
+     "fa": "95.0–98.0% (بر پایه خشک)؛ باقی‌مانده مثلاً مالتودکسترین یا شکر اینورت است و ممکن است روان‌کننده نیز داشته باشد"
     }
    },
    {
@@ -154,7 +154,7 @@
     },
     "v": {
      "en": "0.25–1.0% w/w (USP-NF)",
-     "fa": "0.25–1.0٪ وزنی (USP-NF)"
+     "fa": "0.25–1.0% وزنی (USP-NF)"
     }
    },
    {
@@ -239,7 +239,7 @@
   "mw": "≈ 2160 (for n = 6.5)",
   "applications": {
    "en": "Used to solubilise and stabilise poorly water-soluble drugs by forming inclusion complexes, chiefly in intravenous and intramuscular injections and also in oral, ophthalmic and inhalation products. Marketed injections such as voriconazole, ziprasidone, amiodarone and remdesivir rely on it; the concentration depends on the drug dose and binding constant, and reconstituted parenteral solutions commonly contain about 15–30% w/v.",
-   "fa": "برای افزایش حلالیت و پایداری داروهای کم‌محلول در آب از راه تشکیل کمپلکس‌های درون‌گیر به کار می‌رود؛ عمدتاً در تزریقات وریدی و عضلانی و همچنین در فرآورده‌های خوراکی، چشمی و استنشاقی. تزریقات موجود در بازار مانند وریکونازول، زیپراسیدون، آمیودارون و رمدسیویر بر آن متکی‌اند؛ غلظت آن به دوز دارو و ثابت اتصال بستگی دارد و محلول‌های تزریقی بازسازی‌شده معمولاً حدود 15–30٪ وزنی/حجمی از آن دارند."
+   "fa": "برای افزایش حلالیت و پایداری داروهای کم‌محلول در آب از راه تشکیل کمپلکس‌های درون‌گیر به کار می‌رود؛ عمدتاً در تزریقات وریدی و عضلانی و همچنین در فرآورده‌های خوراکی، چشمی و استنشاقی. تزریقات موجود در بازار مانند وریکونازول، زیپراسیدون، آمیودارون و رمدسیویر بر آن متکی‌اند؛ غلظت آن به دوز دارو و ثابت اتصال بستگی دارد و محلول‌های تزریقی بازسازی‌شده معمولاً حدود 15–30% وزنی/حجمی از آن دارند."
   },
   "description": {
    "en": "White to off-white, amorphous, practically odourless powder. It is a mixture of β-cyclodextrin molecules carrying different numbers of sodium sulfobutyl ether groups on their hydroxyl positions, which make the molecule highly water-soluble and anionic.",
@@ -369,7 +369,7 @@
     },
     "v": {
      "en": "mainly linoleic acid (about 48–74%) and oleic acid (about 14–40%), with smaller amounts of palmitic and stearic acids (Ph. Eur.); high-oleic varieties contain much more oleic acid",
-     "fa": "عمدتاً لینولئیک اسید (حدود 48–74٪) و اولئیک اسید (حدود 14–40٪)، همراه با مقادیر کمتر پالمیتیک و استئاریک اسید (فارماکوپه اروپا)؛ واریته‌های پراولئیک مقدار بسیار بیشتری اولئیک اسید دارند"
+     "fa": "عمدتاً لینولئیک اسید (حدود 48–74%) و اولئیک اسید (حدود 14–40%)، همراه با مقادیر کمتر پالمیتیک و استئاریک اسید (فارماکوپه اروپا)؛ واریته‌های پراولئیک مقدار بسیار بیشتری اولئیک اسید دارند"
     }
    },
    {
@@ -476,7 +476,7 @@
   "mw": "379.27",
   "applications": {
    "en": "Used in oral solid dosage forms as a glidant and lubricant (about 1–10% w/w) and as a diluent (about 5–30% w/w), and as an anti-tacking agent in film and sugar coating. It is also used as a dusting powder (90–99%), in cosmetics and in foods.",
-   "fa": "در اشکال دارویی جامد خوراکی به عنوان تسهیل‌کننده جریان (Glidant) و روان‌کننده (Lubricant) با غلظت حدود 1–10٪ وزنی و رقیق‌کننده (حدود 5–30٪ وزنی)، و به عنوان ضدچسبندگی در پوشش فیلمی و قندی مصرف می‌شود. به عنوان پودر پاشیدنی (90–99٪)، در صنایع آرایشی و در غذا نیز به کار می‌رود."
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان تسهیل‌کننده جریان (Glidant) و روان‌کننده (Lubricant) با غلظت حدود 1–10% وزنی و رقیق‌کننده (حدود 5–30% وزنی)، و به عنوان ضدچسبندگی در پوشش فیلمی و قندی مصرف می‌شود. به عنوان پودر پاشیدنی (90–99%)، در صنایع آرایشی و در غذا نیز به کار می‌رود."
   },
   "description": {
    "en": "A very fine, white to greyish-white, odourless, impalpable crystalline powder that is unctuous, adheres readily to the skin and is free from grittiness. It is a natural mineral, mainly hydrated magnesium silicate, that may contain small amounts of aluminium silicate and iron; pharmacopoeial talc must be free from asbestos.",
@@ -510,7 +510,7 @@
     },
     "v": {
      "en": "about 7–10 (20% w/v aqueous dispersion)",
-     "fa": "حدود 7–10 (سوسپانسیون آبی 20٪)"
+     "fa": "حدود 7–10 (سوسپانسیون آبی 20%)"
     }
    },
    {
@@ -644,7 +644,7 @@
     },
     "v": {
      "en": "+12.0° to +12.8° (20% w/v aqueous solution)",
-     "fa": "+12.0° تا +12.8° (محلول آبی 20٪)"
+     "fa": "+12.0° تا +12.8° (محلول آبی 20%)"
     }
    },
    {
@@ -654,7 +654,7 @@
     },
     "v": {
      "en": "very soluble in water; freely soluble in ethanol (95%)",
-     "fa": "بسیار محلول در آب؛ به‌راحتی محلول در اتانول 95٪"
+     "fa": "بسیار محلول در آب؛ به‌راحتی محلول در اتانول 95%"
     }
    }
   ],
@@ -722,7 +722,7 @@
   "mw": "404.81",
   "applications": {
    "en": "An organomercurial antimicrobial preservative used in vaccines, biological products and other injections at about 0.01% w/v, and in ophthalmic and nasal preparations, typically at 0.001–0.01% w/v. It has also been used in contact lens solutions and as a topical antiseptic, although such uses have declined sharply.",
-   "fa": "نگه‌دارنده ضدمیکروبی آلی جیوه‌دار که در واکسن‌ها، فرآورده‌های بیولوژیک و سایر تزریقات با غلظت حدود 0.01٪ وزنی/حجمی، و در فرآورده‌های چشمی و بینی معمولاً با غلظت 0.001–0.01٪ وزنی/حجمی به کار می‌رود. در محلول‌های لنز تماسی و به عنوان ضدعفونی‌کننده موضعی نیز مصرف شده است، هرچند این کاربردها به‌شدت کاهش یافته است."
+   "fa": "نگه‌دارنده ضدمیکروبی آلی جیوه‌دار که در واکسن‌ها، فرآورده‌های بیولوژیک و سایر تزریقات با غلظت حدود 0.01% وزنی/حجمی، و در فرآورده‌های چشمی و بینی معمولاً با غلظت 0.001–0.01% وزنی/حجمی به کار می‌رود. در محلول‌های لنز تماسی و به عنوان ضدعفونی‌کننده موضعی نیز مصرف شده است، هرچند این کاربردها به‌شدت کاهش یافته است."
   },
   "description": {
    "en": "A light cream-coloured crystalline powder with a slight characteristic odour.",
@@ -736,7 +736,7 @@
     },
     "v": {
      "en": "about 49.5% w/w Hg",
-     "fa": "حدود 49.5٪ وزنی جیوه"
+     "fa": "حدود 49.5% وزنی جیوه"
     }
    },
    {
@@ -756,7 +756,7 @@
     },
     "v": {
      "en": "about 6–8 (1% w/v aqueous solution)",
-     "fa": "حدود 6–8 (محلول آبی 1٪)"
+     "fa": "حدود 6–8 (محلول آبی 1%)"
     }
    },
    {
@@ -766,7 +766,7 @@
     },
     "v": {
      "en": "very soluble in water; freely soluble in ethanol (95%); practically insoluble in ether and benzene",
-     "fa": "بسیار محلول در آب؛ به‌راحتی محلول در اتانول 95٪؛ عملاً نامحلول در اتر و بنزن"
+     "fa": "بسیار محلول در آب؛ به‌راحتی محلول در اتانول 95%؛ عملاً نامحلول در اتر و بنزن"
     }
    },
    {
@@ -840,7 +840,7 @@
   "mw": "150.22",
   "applications": {
    "en": "Used as an antimicrobial and flavouring agent in mouthwashes, gargles and toothpastes, and as a stabiliser (antioxidant) in halothane at about 0.01% w/w. It is also included in some topical antiseptic and antifungal preparations and in cosmetics and perfumes.",
-   "fa": "به عنوان عامل ضدمیکروبی و طعم‌دهنده در دهان‌شویه‌ها، غرغره‌ها و خمیردندان‌ها، و به عنوان پایدارکننده (آنتی‌اکسیدان) در هالوتان با غلظت حدود 0.01٪ وزنی به کار می‌رود. در برخی فرآورده‌های ضدعفونی‌کننده و ضدقارچ موضعی و در محصولات آرایشی و عطرها نیز وجود دارد."
+   "fa": "به عنوان عامل ضدمیکروبی و طعم‌دهنده در دهان‌شویه‌ها، غرغره‌ها و خمیردندان‌ها، و به عنوان پایدارکننده (آنتی‌اکسیدان) در هالوتان با غلظت حدود 0.01% وزنی به کار می‌رود. در برخی فرآورده‌های ضدعفونی‌کننده و ضدقارچ موضعی و در محصولات آرایشی و عطرها نیز وجود دارد."
   },
   "description": {
    "en": "Colourless, often large crystals or a white crystalline powder with an aromatic, thyme-like odour and a pungent, burning taste. It is the main phenolic component of thyme oil.",
@@ -874,7 +874,7 @@
     },
     "v": {
      "en": "very slightly soluble in water (about 1 in 1000); very soluble in ethanol (95%); freely soluble in ether, chloroform and fixed and volatile oils",
-     "fa": "بسیار کم محلول در آب (حدود 1 در 1000)؛ بسیار محلول در اتانول 95٪؛ به‌راحتی محلول در اتر، کلروفرم و روغن‌های ثابت و فرار"
+     "fa": "بسیار کم محلول در آب (حدود 1 در 1000)؛ بسیار محلول در اتانول 95%؛ به‌راحتی محلول در اتر، کلروفرم و روغن‌های ثابت و فرار"
     }
    },
    {
@@ -1076,7 +1076,7 @@
   "mw": "≈ 840 000",
   "applications": {
    "en": "Used as a suspending agent and emulsifier in oral liquids and lotions, commonly at about 0.5–2% w/v, and as a thickener in creams, gels and jellies. It has also been used as a tablet and lozenge binder, and is widely used in foods.",
-   "fa": "به عنوان عامل تعلیق‌کننده و امولسیفایر در مایعات خوراکی و لوسیون‌ها، معمولاً با غلظت حدود 0.5–2٪ وزنی/حجمی، و به عنوان غلیظ‌کننده در کرم‌ها، ژل‌ها و ژله‌ها مصرف می‌شود. به عنوان چسباننده قرص و لوزنج نیز به کار رفته و در غذا به‌طور گسترده مصرف می‌شود."
+   "fa": "به عنوان عامل تعلیق‌کننده و امولسیفایر در مایعات خوراکی و لوسیون‌ها، معمولاً با غلظت حدود 0.5–2% وزنی/حجمی، و به عنوان غلیظ‌کننده در کرم‌ها، ژل‌ها و ژله‌ها مصرف می‌شود. به عنوان چسباننده قرص و لوزنج نیز به کار رفته و در غذا به‌طور گسترده مصرف می‌شود."
   },
   "description": {
    "en": "Occurs as flattened, ribbon-like, white to pale yellow, translucent flakes or as a white to yellowish-white powder. It is odourless and has a mucilaginous taste. Chemically it is a complex mixture of acidic polysaccharides containing galacturonic acid, galactose, arabinose, xylose and fucose, with small amounts of protein.",
@@ -1100,7 +1100,7 @@
     },
     "v": {
      "en": "1% w/v dispersions are typically about 100–4000 mPa·s, depending on grade; the dispersions are pseudoplastic",
-     "fa": "سوسپانسیون‌های 1٪ بسته به گرید معمولاً حدود 100–4000 mPa·s هستند؛ رفتار سودوپلاستیک دارند"
+     "fa": "سوسپانسیون‌های 1% بسته به گرید معمولاً حدود 100–4000 mPa·s هستند؛ رفتار سودوپلاستیک دارند"
     }
    },
    {
@@ -1110,7 +1110,7 @@
     },
     "v": {
      "en": "about 5–6 (1% w/v aqueous dispersion)",
-     "fa": "حدود 5–6 (سوسپانسیون آبی 1٪)"
+     "fa": "حدود 5–6 (سوسپانسیون آبی 1%)"
     }
    },
    {
@@ -1221,7 +1221,7 @@
     },
     "v": {
      "en": "about 9.5% w/w (water of crystallisation of the dihydrate)",
-     "fa": "حدود 9.5٪ وزنی (آب تبلور دی‌هیدرات)"
+     "fa": "حدود 9.5% وزنی (آب تبلور دی‌هیدرات)"
     }
    },
    {
@@ -1306,7 +1306,7 @@
   "mw": "218.20",
   "applications": {
    "en": "Used mainly as a hydrophilic plasticiser in aqueous and solvent-based film coatings of tablets, beads and granules, typically at about 10–35% w/w of the polymer. It is also used as a humectant, as a solvent for flavours and drugs, in cosmetics and in perfumery, and as a food additive.",
-   "fa": "عمدتاً به عنوان پلاستی‌سایزر آب‌دوست در پوشش‌های فیلمی آبی و حلالی قرص، دانه (bead) و گرانول، معمولاً با غلظت حدود 10–35٪ وزنی پلیمر، مصرف می‌شود. به عنوان مرطوب‌نگه‌دارنده، حلال طعم‌دهنده‌ها و داروها، در صنایع آرایشی و عطرسازی و به عنوان افزودنی غذایی نیز به کار می‌رود."
+   "fa": "عمدتاً به عنوان پلاستی‌سایزر آب‌دوست در پوشش‌های فیلمی آبی و حلالی قرص، دانه (bead) و گرانول، معمولاً با غلظت حدود 10–35% وزنی پلیمر، مصرف می‌شود. به عنوان مرطوب‌نگه‌دارنده، حلال طعم‌دهنده‌ها و داروها، در صنایع آرایشی و عطرسازی و به عنوان افزودنی غذایی نیز به کار می‌رود."
   },
   "description": {
    "en": "A colourless, slightly viscous, oily liquid with a slight fatty odour and a bitter taste. It is the triacetyl ester of glycerol.",
@@ -1418,7 +1418,7 @@
   "mw": "360.44",
   "applications": {
    "en": "Used as a hydrophobic plasticiser for polymers in pharmaceutical film coatings, for example aqueous dispersions of ethylcellulose or methacrylate copolymers, typically at about 10–35% w/w of the polymer. It is also used as a plasticiser in food-contact plastics, chewing gum base and cosmetics.",
-   "fa": "به عنوان پلاستی‌سایزر آب‌گریز برای پلیمرهای پوشش فیلمی دارویی، مثلاً سوسپانسیون‌های آبی اتیل‌سلولز یا کوپلیمرهای متاکریلات، معمولاً با غلظت حدود 10–35٪ وزنی پلیمر به کار می‌رود. به عنوان پلاستی‌سایزر در پلاستیک‌های در تماس با غذا، پایه آدامس و محصولات آرایشی نیز مصرف می‌شود."
+   "fa": "به عنوان پلاستی‌سایزر آب‌گریز برای پلیمرهای پوشش فیلمی دارویی، مثلاً سوسپانسیون‌های آبی اتیل‌سلولز یا کوپلیمرهای متاکریلات، معمولاً با غلظت حدود 10–35% وزنی پلیمر به کار می‌رود. به عنوان پلاستی‌سایزر در پلاستیک‌های در تماس با غذا، پایه آدامس و محصولات آرایشی نیز مصرف می‌شود."
   },
   "description": {
    "en": "A clear, colourless or nearly colourless, oily liquid that is practically odourless. It is the tri-n-butyl ester of citric acid.",
@@ -1524,7 +1524,7 @@
   "mw": "276.29",
   "applications": {
    "en": "One of the most widely used plasticisers for aqueous and organic film coatings, including enteric and sustained-release coats based on methacrylic acid copolymers, ethylcellulose, hypromellose acetate succinate and cellulose acetate phthalate, typically at about 10–30% w/w of the polymer. It is also used as a solvent and fixative for flavours and as a food additive.",
-   "fa": "یکی از پرمصرف‌ترین پلاستی‌سایزرها برای پوشش‌های فیلمی آبی و آلی، از جمله پوشش‌های روده‌ای و آهسته‌رهش بر پایه کوپلیمرهای متاکریلیک اسید، اتیل‌سلولز، هیپرملوز استات سوکسینات و سلولز استات فتالات است و معمولاً با غلظت حدود 10–30٪ وزنی پلیمر مصرف می‌شود. به عنوان حلال و تثبیت‌کننده طعم‌دهنده‌ها و افزودنی غذایی نیز به کار می‌رود."
+   "fa": "یکی از پرمصرف‌ترین پلاستی‌سایزرها برای پوشش‌های فیلمی آبی و آلی، از جمله پوشش‌های روده‌ای و آهسته‌رهش بر پایه کوپلیمرهای متاکریلیک اسید، اتیل‌سلولز، هیپرملوز استات سوکسینات و سلولز استات فتالات است و معمولاً با غلظت حدود 10–30% وزنی پلیمر مصرف می‌شود. به عنوان حلال و تثبیت‌کننده طعم‌دهنده‌ها و افزودنی غذایی نیز به کار می‌رود."
   },
   "description": {
    "en": "A clear, colourless, practically odourless, slightly viscous oily liquid with a bitter taste. It is the triethyl ester of citric acid.",
@@ -1644,7 +1644,7 @@
   "mw": "149.19",
   "applications": {
    "en": "Used widely in topical products as an alkalising agent and to neutralise carbomer gels. Combined with fatty acids such as stearic or oleic acid it forms soaps in situ that act as anionic emulsifiers for o/w creams and lotions; typically about 2–4% trolamine is used with 2–5 times its weight of fatty acid. It is also used as a buffer and to form salts of acidic drugs.",
-   "fa": "به‌طور گسترده در فرآورده‌های موضعی به عنوان قلیایی‌کننده و برای خنثی کردن ژل‌های کاربومر به کار می‌رود. همراه با اسیدهای چرب مانند استئاریک یا اولئیک اسید در محل صابون تشکیل می‌دهد که به عنوان امولسیفایر آنیونی در کرم‌ها و لوسیون‌های روغن در آب عمل می‌کند؛ معمولاً حدود 2–4٪ ترولامین همراه با 2–5 برابر وزن آن اسید چرب مصرف می‌شود. به عنوان بافر و برای تشکیل نمک داروهای اسیدی نیز به کار می‌رود."
+   "fa": "به‌طور گسترده در فرآورده‌های موضعی به عنوان قلیایی‌کننده و برای خنثی کردن ژل‌های کاربومر به کار می‌رود. همراه با اسیدهای چرب مانند استئاریک یا اولئیک اسید در محل صابون تشکیل می‌دهد که به عنوان امولسیفایر آنیونی در کرم‌ها و لوسیون‌های روغن در آب عمل می‌کند؛ معمولاً حدود 2–4% ترولامین همراه با 2–5 برابر وزن آن اسید چرب مصرف می‌شود. به عنوان بافر و برای تشکیل نمک داروهای اسیدی نیز به کار می‌رود."
   },
   "description": {
    "en": "A clear, colourless to pale yellow, viscous liquid with a slight ammoniacal odour; it may solidify below room temperature. Commercial material is a mixture of bases consisting mainly of triethanolamine with smaller amounts of diethanolamine and monoethanolamine.",
@@ -1698,7 +1698,7 @@
     },
     "v": {
      "en": "miscible with water, ethanol (95%), methanol, acetone and glycerol; soluble in chloroform",
-     "fa": "امتزاج‌پذیر با آب، اتانول 95٪، متانول، استون و گلیسرول؛ محلول در کلروفرم"
+     "fa": "امتزاج‌پذیر با آب، اتانول 95%، متانول، استون و گلیسرول؛ محلول در کلروفرم"
     }
    },
    {
@@ -1816,7 +1816,7 @@
     },
     "v": {
      "en": "freely soluble in water; sparingly soluble in ethanol (95%)",
-     "fa": "به‌راحتی محلول در آب؛ به مقدار کم محلول در اتانول 95٪"
+     "fa": "به‌راحتی محلول در آب؛ به مقدار کم محلول در اتانول 95%"
     }
    },
    {
@@ -1934,7 +1934,7 @@
     },
     "v": {
      "en": "slightly soluble in water (about 1 in 100); freely soluble in ethanol (95%); soluble in glycerol, ether and chloroform",
-     "fa": "کمی محلول در آب (حدود 1 در 100)؛ به‌راحتی محلول در اتانول 95٪؛ محلول در گلیسرول، اتر و کلروفرم"
+     "fa": "کمی محلول در آب (حدود 1 در 100)؛ به‌راحتی محلول در اتانول 95%؛ محلول در گلیسرول، اتر و کلروفرم"
     }
    }
   ],
@@ -1996,7 +1996,7 @@
   "mw": "",
   "applications": {
    "en": "Used as a tablet and capsule lubricant, typically at about 1–6% w/w, and as a matrix-forming agent or hot-melt coating in sustained-release and taste-masked products. It is also used as a viscosity modifier and stiffening agent in ointments, creams and suppository bases, and to thicken oily liquids in soft capsule fills.",
-   "fa": "به عنوان روان‌کننده (Lubricant) قرص و کپسول، معمولاً با غلظت حدود 1–6٪ وزنی، و به عنوان عامل تشکیل‌دهنده ماتریکس یا پوشش ذوبی (hot-melt) در فرآورده‌های آهسته‌رهش و فرآورده‌های با طعم پوشانده‌شده به کار می‌رود. به عنوان تنظیم‌کننده ویسکوزیته و قوام‌دهنده در پمادها، کرم‌ها و پایه‌های شیاف و برای غلیظ کردن مایعات روغنی در محتوای کپسول نرم نیز مصرف می‌شود."
+   "fa": "به عنوان روان‌کننده (Lubricant) قرص و کپسول، معمولاً با غلظت حدود 1–6% وزنی، و به عنوان عامل تشکیل‌دهنده ماتریکس یا پوشش ذوبی (hot-melt) در فرآورده‌های آهسته‌رهش و فرآورده‌های با طعم پوشانده‌شده به کار می‌رود. به عنوان تنظیم‌کننده ویسکوزیته و قوام‌دهنده در پمادها، کرم‌ها و پایه‌های شیاف و برای غلیظ کردن مایعات روغنی در محتوای کپسول نرم نیز مصرف می‌شود."
   },
   "description": {
    "en": "Type I material is a white to yellowish-white, waxy fine powder, flakes or pellets with a bland taste and little odour. It consists mainly of triglycerides of saturated C16–C18 fatty acids (palmitic and stearic acids), produced by hydrogenating refined oils such as cottonseed, soybean or palm oil.",
@@ -2137,7 +2137,7 @@
     },
     "v": {
      "en": "about 0.02% w/w (in water at 37 °C)",
-     "fa": "حدود 0.02٪ وزنی (در آب در 37 °C)"
+     "fa": "حدود 0.02% وزنی (در آب در 37 °C)"
     }
    },
    {
@@ -2157,7 +2157,7 @@
     },
     "v": {
      "en": "soluble in water (forms micellar solutions at up to about 20% w/w; liquid-crystalline phases form at higher concentrations); soluble in ethanol and many lipids",
-     "fa": "محلول در آب (تا حدود 20٪ وزنی محلول میسلی تشکیل می‌دهد و در غلظت‌های بالاتر فازهای کریستال مایع ایجاد می‌شود)؛ محلول در اتانول و بسیاری از لیپیدها"
+     "fa": "محلول در آب (تا حدود 20% وزنی محلول میسلی تشکیل می‌دهد و در غلظت‌های بالاتر فازهای کریستال مایع ایجاد می‌شود)؛ محلول در اتانول و بسیاری از لیپیدها"
     }
    },
    {
@@ -2477,7 +2477,7 @@
   "mw": "",
   "applications": {
    "en": "Used as an emulsifying agent and stiffener to make o/w creams and emulsifying ointments. Classic examples are Emulsifying Ointment BP (30% emulsifying wax with white soft paraffin and liquid paraffin) and Aqueous Cream BP, which contains 30% emulsifying ointment.",
-   "fa": "به عنوان عامل امولسیون‌کننده و قوام‌دهنده برای ساخت کرم‌های روغن در آب و پمادهای امولسیون‌شونده به کار می‌رود. نمونه‌های کلاسیک آن Emulsifying Ointment BP (30٪ موم امولسیون‌کننده همراه با پارافین نرم سفید و پارافین مایع) و Aqueous Cream BP است که 30٪ پماد امولسیون‌کننده دارد."
+   "fa": "به عنوان عامل امولسیون‌کننده و قوام‌دهنده برای ساخت کرم‌های روغن در آب و پمادهای امولسیون‌شونده به کار می‌رود. نمونه‌های کلاسیک آن Emulsifying Ointment BP (30% موم امولسیون‌کننده همراه با پارافین نرم سفید و پارافین مایع) و Aqueous Cream BP است که 30% پماد امولسیون‌کننده دارد."
   },
   "description": {
    "en": "A white or pale yellow waxy solid or flakes with a faint characteristic odour. It becomes plastic when warm and melts to a clear liquid. On mixing with water when melted it forms stable o/w emulsions.",
@@ -2511,7 +2511,7 @@
     },
     "v": {
      "en": "soluble in ether and chloroform, partly soluble in ethanol (95%); practically insoluble in water but forms emulsions when melted with water",
-     "fa": "محلول در اتر و کلروفرم، تا حدی محلول در اتانول 95٪؛ عملاً نامحلول در آب ولی هنگام ذوب با آب امولسیون تشکیل می‌دهد"
+     "fa": "محلول در اتر و کلروفرم، تا حدی محلول در اتانول 95%؛ عملاً نامحلول در آب ولی هنگام ذوب با آب امولسیون تشکیل می‌دهد"
     }
    },
    {
@@ -2641,7 +2641,7 @@
     },
     "v": {
      "en": "soluble in warm chloroform and warm toluene; slightly soluble in boiling ethanol (95%); practically insoluble in water",
-     "fa": "محلول در کلروفرم گرم و تولوئن گرم؛ کمی محلول در اتانول 95٪ جوشان؛ عملاً نامحلول در آب"
+     "fa": "محلول در کلروفرم گرم و تولوئن گرم؛ کمی محلول در اتانول 95% جوشان؛ عملاً نامحلول در آب"
     }
    },
    {

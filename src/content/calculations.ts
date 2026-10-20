@@ -202,7 +202,7 @@ export const calculations = [
     key: "q1e",
     group: "solutions",
     label: bi("Shelf life by regression (ICH Q1E)", "تعیین تاریخ انقضا با رگرسیون \u2066(ICH Q1E)\u2069"),
-    title: bi("Shelf-life estimation from stability data: 95% one-sided confidence limit (ICH Q1E)", "برآورد عمر قفسه‌ای از داده‌های پایداری: حد اطمینان یک‌طرفه ۹۵٪ \u2066(ICH Q1E)\u2069"),
+    title: bi("Shelf-life estimation from stability data: 95% one-sided confidence limit (ICH Q1E)", "برآورد عمر قفسه‌ای از داده‌های پایداری: حد اطمینان یک‌طرفه 95% \u2066(ICH Q1E)\u2069"),
     equation: "ŷ(t) − t₀.₉₅,ₙ₋₂ · s·√[1/n + (t − t̄)²/Sxx] = spec",
   },
   {

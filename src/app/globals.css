@@ -41,9 +41,14 @@
   --font-mono: var(--font-num-mono), ui-monospace, monospace;
 }
 
-/* Persian uses Vazirmatn; English uses IBM Plex Sans. Each falls back to the other. */
+/*
+ * Persian text uses Vazirmatn and English uses IBM Plex Sans. On Persian pages
+ * Plex Sans (Latin only) comes first, so digits and Latin words in Persian
+ * sentences share the English pages' typeface while Persian letters fall
+ * through to Vazirmatn.
+ */
 .locale-fa {
-  --font-body: var(--font-vazirmatn), var(--font-plex-sans), system-ui, sans-serif;
+  --font-body: var(--font-plex-sans), var(--font-vazirmatn), system-ui, sans-serif;
 }
 .locale-en {
   --font-body: var(--font-plex-sans), var(--font-vazirmatn), system-ui, sans-serif;

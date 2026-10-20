@@ -1,7 +1,8 @@
 // Checks the site's data before a build or a merge: every JSON file parses,
 // every supplier record is complete and unique, every "last reviewed" date
-// exists, and no "last updated" date is typed by hand into the content
-// (those go stale; dates come from the daily update or scripts/data-dates.mjs).
+// exists, no "last updated" date is typed by hand into the content (those go
+// stale; dates come from the daily update or scripts/data-dates.mjs), and every
+// number is written in English digits.
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 
@@ -49,12 +50,23 @@ const dates = JSON.parse(readFileSync("src/data/data-dates.json", "utf8"));
 for (const [key, value] of Object.entries(dates)) if (!/^\d{4}-\d{2}-\d{2}$/.test(value) || Number.isNaN(Date.parse(value))) fail(`data-dates.json: bad date for ${key}`);
 
 // 4. No hand-typed "last updated / reviewed" dates in the content.
-const stale = /(آخرین (به‌روزرسانی|بازبینی)[^"`]{0,30}[۰-۹]{1,2} (فروردین|اردیبهشت|خرداد|تیر|مرداد|شهریور|مهر|آبان|آذر|دی|بهمن|اسفند))|(آخرین (به‌روزرسانی|بازبینی)[^"`{]{0,30}(فروردین|اردیبهشت|خرداد|تیر|مرداد|شهریور|مهر|آبان|آذر|دی|بهمن|اسفند) [۰-۹]{4})|(Last (updated|reviewed)[^"`{]{0,20}\d{4})/;
+const stale = /(آخرین (به‌روزرسانی|بازبینی)[^"`]{0,30}[0-9۰-۹]{1,2} (فروردین|اردیبهشت|خرداد|تیر|مرداد|شهریور|مهر|آبان|آذر|دی|بهمن|اسفند))|(آخرین (به‌روزرسانی|بازبینی)[^"`{]{0,30}(فروردین|اردیبهشت|خرداد|تیر|مرداد|شهریور|مهر|آبان|آذر|دی|بهمن|اسفند) [0-9۰-۹]{4})|(Last (updated|reviewed)[^"`{]{0,20}\d{4})/;
 for (const file of [...walk("src/content"), ...walk("src/data"), ...walk("src/components"), ...walk("src/app")].filter((f) => /\.(ts|tsx)$/.test(f))) {
   readFileSync(file, "utf8")
     .split("\n")
     .forEach((line, n) => {
       if (stale.test(line)) fail(`${file}:${n + 1}: hand-typed "last updated" date; use the daily-update stamp or {month} with withReviewedMonth`);
+    });
+}
+
+// 5. English digits everywhere in the content (Persian ones only in code that reads what users type).
+const persianDigits = /[۰-۹٠-٩٫٬٪]/;
+const digitCode = /۰۱۲۳|٠١٢٣|\/\[[^\]\n]*[۰-۹٠-٩٫٬٪][^\]\n]*\][^/\n]*\/[a-z]*|\/[٫٬٪]\/[a-z]*/;
+for (const file of walk("src").filter((f) => /\.(ts|tsx|json)$/.test(f))) {
+  readFileSync(file, "utf8")
+    .split("\n")
+    .forEach((line, n) => {
+      if (persianDigits.test(line) && !digitCode.test(line)) fail(`${file}:${n + 1}: Persian digit; the site writes numbers in English digits`);
     });
 }
 

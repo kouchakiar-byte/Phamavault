@@ -6,7 +6,7 @@
  */
 export function splitStrength(title: string): [string, string] {
   const words = title.trim().split(/\s+/);
-  const at = words.findIndex((w) => /^[\d۰-۹]/.test(w));
+  const at = words.findIndex((w) => /^[\d0-9]/.test(w));
   if (at <= 0) return [title.trim(), ""];
   return [words.slice(0, at).join(" ").replace(/[,،]$/, ""), words.slice(at).join(" ")];
 }

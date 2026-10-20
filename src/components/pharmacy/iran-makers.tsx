@@ -7,7 +7,7 @@ import type { IranDrugResult, IranGeneric } from "@/lib/iran-drugs";
 import { splitStrength } from "@/lib/drug-title";
 import { moieties, sameSet } from "@/lib/moieties";
 
-const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
+const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
 
 
 /** One request per term for all the cards of a search (e.g. every metformin combination). */

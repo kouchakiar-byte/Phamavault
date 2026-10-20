@@ -24,7 +24,7 @@
   "mw": "≈ 36 000",
   "applications": {
    "en": "Microcrystalline cellulose is one of the most widely used tablet and capsule diluents, in both wet granulation and direct compression. Besides acting as a filler and dry binder it has some lubricant and disintegrant properties, which makes it especially useful in direct compression. Typical concentrations: tablet binder/diluent 20–90%; capsule binder/diluent 20–90%; adsorbent 20–90%; antiadherent 5–20%; tablet disintegrant 5–15%. It is also used in cosmetics and foods.",
-   "fa": "سلولز میکروکریستالی یکی از پرمصرف‌ترین رقیق‌کننده‌ها (پرکننده‌ها) در قرص و کپسول است و هم در گرانولاسیون مرطوب و هم در پرس مستقیم به کار می‌رود. علاوه بر نقش پرکننده و چسباننده خشک، خاصیت روان‌کنندگی و متلاشی‌کنندگی هم دارد و به همین دلیل در پرس مستقیم بسیار مفید است. غلظت‌های متداول: چسباننده/رقیق‌کننده قرص 20–90٪؛ چسباننده/رقیق‌کننده کپسول 20–90٪؛ جاذب 20–90٪؛ ضدچسبندگی 5–20٪؛ متلاشی‌کننده قرص 5–15٪. در صنایع آرایشی و غذایی نیز مصرف می‌شود."
+   "fa": "سلولز میکروکریستالی یکی از پرمصرف‌ترین رقیق‌کننده‌ها (پرکننده‌ها) در قرص و کپسول است و هم در گرانولاسیون مرطوب و هم در پرس مستقیم به کار می‌رود. علاوه بر نقش پرکننده و چسباننده خشک، خاصیت روان‌کنندگی و متلاشی‌کنندگی هم دارد و به همین دلیل در پرس مستقیم بسیار مفید است. غلظت‌های متداول: چسباننده/رقیق‌کننده قرص 20–90%؛ چسباننده/رقیق‌کننده کپسول 20–90%؛ جاذب 20–90%؛ ضدچسبندگی 5–20%؛ متلاشی‌کننده قرص 5–15%. در صنایع آرایشی و غذایی نیز مصرف می‌شود."
   },
   "description": {
    "en": "A purified, partially depolymerised cellulose. White, odourless, tasteless, crystalline powder made up of porous particles. Commercial grades differ in particle size and moisture content, which govern their properties and uses.",
@@ -58,7 +58,7 @@
     },
     "v": {
      "en": "typically below 5% w/w; low-moisture grades below 1.5%",
-     "fa": "معمولاً کمتر از 5٪ وزنی؛ گریدهای کم‌رطوبت کمتر از 1.5٪"
+     "fa": "معمولاً کمتر از 5% وزنی؛ گریدهای کم‌رطوبت کمتر از 1.5%"
     }
    },
    {
@@ -78,7 +78,7 @@
     },
     "v": {
      "en": "5.0–7.5 (supernatant of a 12.5% w/v aqueous dispersion)",
-     "fa": "5.0–7.5 (مایع رویی سوسپانسیون آبی 12.5٪)"
+     "fa": "5.0–7.5 (مایع رویی سوسپانسیون آبی 12.5%)"
     }
    },
    {
@@ -88,7 +88,7 @@
     },
     "v": {
      "en": "slightly soluble in 5% w/v sodium hydroxide solution; practically insoluble in water, dilute acids and most organic solvents",
-     "fa": "کمی محلول در محلول 5٪ سدیم هیدروکسید؛ عملاً نامحلول در آب، اسیدهای رقیق و بیشتر حلال‌های آلی"
+     "fa": "کمی محلول در محلول 5% سدیم هیدروکسید؛ عملاً نامحلول در آب، اسیدهای رقیق و بیشتر حلال‌های آلی"
     }
    }
   ],
@@ -158,11 +158,11 @@
   "mw": "591.24",
   "applications": {
    "en": "Used mainly as a lubricant in tablet and capsule manufacture, at 0.25–5.0% w/w. It is also used in barrier creams and as a food additive.",
-   "fa": "عمدتاً به عنوان روان‌کننده (Lubricant) در ساخت قرص و کپسول با غلظت 0.25–5.0٪ وزنی به کار می‌رود. در کرم‌های محافظ پوست و به عنوان افزودنی غذایی نیز مصرف می‌شود."
+   "fa": "عمدتاً به عنوان روان‌کننده (Lubricant) در ساخت قرص و کپسول با غلظت 0.25–5.0% وزنی به کار می‌رود. در کرم‌های محافظ پوست و به عنوان افزودنی غذایی نیز مصرف می‌شود."
   },
   "description": {
    "en": "A very fine, light, white, precipitated or milled powder of low bulk density, with a faint odour of stearic acid and a characteristic taste. It is greasy to the touch and adheres readily to the skin. The material is a mixture of magnesium salts of fatty acids, mainly stearic and palmitic acid; Ph. Eur. requires stearic acid ≥ 40% and stearic plus palmitic acid ≥ 90% of the fatty-acid fraction.",
-   "fa": "پودر بسیار ریز، سبک و سفید (رسوبی یا آسیاب‌شده) با چگالی توده کم، بوی ضعیف استئاریک اسید و طعم مشخص. لمس آن چرب است و به‌راحتی به پوست می‌چسبد. این ماده مخلوطی از نمک‌های منیزیم اسیدهای چرب، عمدتاً استئاریک و پالمیتیک اسید است؛ فارماکوپه اروپا استئاریک اسید را دست‌کم 40٪ و مجموع استئاریک و پالمیتیک اسید را دست‌کم 90٪ بخش اسید چرب تعیین کرده است."
+   "fa": "پودر بسیار ریز، سبک و سفید (رسوبی یا آسیاب‌شده) با چگالی توده کم، بوی ضعیف استئاریک اسید و طعم مشخص. لمس آن چرب است و به‌راحتی به پوست می‌چسبد. این ماده مخلوطی از نمک‌های منیزیم اسیدهای چرب، عمدتاً استئاریک و پالمیتیک اسید است؛ فارماکوپه اروپا استئاریک اسید را دست‌کم 40% و مجموع استئاریک و پالمیتیک اسید را دست‌کم 90% بخش اسید چرب تعیین کرده است."
   },
   "properties": [
    {
@@ -212,7 +212,7 @@
     },
     "v": {
      "en": "practically insoluble in water, ethanol and ether; slightly soluble in warm benzene and warm ethanol (95%)",
-     "fa": "عملاً نامحلول در آب، اتانول و اتر؛ کمی محلول در بنزن گرم و اتانول 95٪ گرم"
+     "fa": "عملاً نامحلول در آب، اتانول و اتر؛ کمی محلول در بنزن گرم و اتانول 95% گرم"
     }
    }
   ],
@@ -306,7 +306,7 @@
     },
     "v": {
      "en": "4.5–5.5% w/w (water of crystallisation, by Karl Fischer)",
-     "fa": "4.5–5.5٪ وزنی (آب تبلور، به روش کارل فیشر)"
+     "fa": "4.5–5.5% وزنی (آب تبلور، به روش کارل فیشر)"
     }
    },
    {
@@ -342,7 +342,7 @@
   ],
   "stability": {
    "en": "Mould growth can occur under humid conditions (80% RH and above). Lactose may brown on storage, faster in warm, damp conditions. Solutions show mutarotation. Store in a well-closed container in a cool, dry place.",
-   "fa": "در رطوبت بالا (80٪ رطوبت نسبی و بیشتر) ممکن است دچار رشد کپک شود. در طول نگهداری ممکن است قهوه‌ای شود که در شرایط گرم و مرطوب سریع‌تر رخ می‌دهد. محلول‌های آن موتاروتاسیون نشان می‌دهند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+   "fa": "در رطوبت بالا (80% رطوبت نسبی و بیشتر) ممکن است دچار رشد کپک شود. در طول نگهداری ممکن است قهوه‌ای شود که در شرایط گرم و مرطوب سریع‌تر رخ می‌دهد. محلول‌های آن موتاروتاسیون نشان می‌دهند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "As a reducing sugar it undergoes Maillard-type condensation with compounds having a primary amine group (for example amino acids, amphetamines and aminophylline), giving brown products; the reaction is faster with amorphous than with crystalline lactose. It is also incompatible with strong oxidisers.",

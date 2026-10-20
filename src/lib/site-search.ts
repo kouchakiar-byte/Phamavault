@@ -447,7 +447,7 @@ export async function siteSearch(
         ? joinBi([
             {
               en: searchCopy.suppliersMatch.en.replace("{n}", String(r.hits.length)),
-              fa: searchCopy.suppliersMatch.fa.replace("{n}", r.hits.length.toLocaleString("fa-IR")),
+              fa: searchCopy.suppliersMatch.fa.replace("{n}", r.hits.length.toLocaleString("fa-IR-u-nu-latn")),
             },
             { en: r.hits.slice(0, 3).map((h) => h.en || h.fa).join(", "), fa: r.hits.slice(0, 3).map((h) => h.fa).join("، ") },
           ])
@@ -472,7 +472,7 @@ export async function siteSearch(
           sub: joinBi([
             {
               en: searchCopy.orangeBookProducts.en.replace("{n}", String(n)),
-              fa: searchCopy.orangeBookProducts.fa.replace("{n}", n.toLocaleString("fa-IR")),
+              fa: searchCopy.orangeBookProducts.fa.replace("{n}", n.toLocaleString("fa-IR-u-nu-latn")),
             },
             same(trades),
           ]),

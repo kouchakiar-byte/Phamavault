@@ -70,7 +70,7 @@ export function Bsa({ ctx }: { ctx: Ctx }) {
       note={bi(
         "Mosteller: BSA = √(height cm × weight kg ÷ 3600). DuBois: 0.007184 × W^0.425 × H^0.725. Haycock (also used in children): 0.024265 × W^0.5378 × H^0.3964. BMI = weight ÷ height² (WHO: <18.5 underweight, 18.5–24.9 normal, 25–29.9 overweight, ≥30 obese). Devine ideal body weight: 50 kg (men) or 45.5 kg (women) + 2.3 kg per inch above 5 feet (152.4 cm); adjusted weight = IBW + 0.4 × (actual − IBW) when actual weight exceeds 120% of IBW." +
           disclaimer.en,
-        `موستلر: ${ltr("BSA = √(H × W ÷ 3600)")} (قد بر حسب سانتی‌متر و وزن بر حسب کیلوگرم). دوبوآ: ${ltr("0.007184 × W^0.425 × H^0.725")}. هایکاک (در کودکان هم به کار می‌رود): ${ltr("0.024265 × W^0.5378 × H^0.3964")}. ${ltr("BMI = W ÷ H²")} (سازمان جهانی بهداشت: کمتر از 18.5 کم‌وزن، 18.5 تا 24.9 طبیعی، 25 تا 29.9 اضافه‌وزن، 30 و بیشتر چاق). وزن ایده‌آل دیواین: ۵۰ کیلوگرم (مرد) یا ۴۵٫۵ کیلوگرم (زن) به‌اضافه ۲٫۳ کیلوگرم برای هر اینچ قد بالاتر از ۱۵۲٫۴ سانتی‌متر؛ وزن اصلاح‌شده ${ltr("= IBW + 0.4 × (W − IBW)")} وقتی وزن واقعی بیش از 120٪ وزن ایده‌آل باشد.` +
+        `موستلر: ${ltr("BSA = √(H × W ÷ 3600)")} (قد بر حسب سانتی‌متر و وزن بر حسب کیلوگرم). دوبوآ: ${ltr("0.007184 × W^0.425 × H^0.725")}. هایکاک (در کودکان هم به کار می‌رود): ${ltr("0.024265 × W^0.5378 × H^0.3964")}. ${ltr("BMI = W ÷ H²")} (سازمان جهانی بهداشت: کمتر از 18.5 کم‌وزن، 18.5 تا 24.9 طبیعی، 25 تا 29.9 اضافه‌وزن، 30 و بیشتر چاق). وزن ایده‌آل دیواین: 50 کیلوگرم (مرد) یا 45.5 کیلوگرم (زن) به‌اضافه 2.3 کیلوگرم برای هر اینچ قد بالاتر از 152.4 سانتی‌متر؛ وزن اصلاح‌شده ${ltr("= IBW + 0.4 × (W − IBW)")} وقتی وزن واقعی بیش از 120% وزن ایده‌آل باشد.` +
           disclaimer.fa,
       )}
     />
@@ -136,7 +136,7 @@ export function Crcl({ ctx }: { ctx: Ctx }) {
       note={bi(
         "Cockcroft–Gault (1976): CrCl (mL/min) = (140 − age) × weight ÷ (72 × SCr mg/dL), × 0.85 for women; most drug labels base renal dose adjustment on it. CKD-EPI 2021 (race-free): eGFR = 142 × min(SCr/κ, 1)^α × max(SCr/κ, 1)^−1.200 × 0.9938^age × 1.012 (women), κ = 0.7/0.9 and α = −0.241/−0.302 for women/men. KDIGO stages: G1 ≥ 90, G2 60–89, G3a 45–59, G3b 30–44, G4 15–29, G5 < 15. 1 mg/dL creatinine = 88.4 µmol/L." +
           disclaimer.en,
-        `کاکرافت–گالت (۱۹۷۶): ${ltr("CrCl = (140 − age) × W ÷ (72 × SCr)")} میلی‌لیتر در دقیقه با کراتینین بر حسب mg/dL، در زنان ضرب در 0.85؛ تنظیم دوز کلیوی در بیشتر بروشورهای دارویی بر پایه آن است. ${ltr("CKD-EPI 2021")} (بدون ضریب نژاد): ${ltr("eGFR = 142 × min(SCr/κ, 1)^α × max(SCr/κ, 1)^−1.200 × 0.9938^age × 1.012 [F]")} که κ برای زن و مرد 0.7 و 0.9 و α برابر −0.241 و −0.302 است. مراحل KDIGO: ${ltr("G1 ≥ 90, G2 60–89, G3a 45–59, G3b 30–44, G4 15–29, G5 < 15")}. هر ${ltr("1 mg/dL")} کراتینین برابر ${ltr("88.4 µmol/L")} است.` +
+        `کاکرافت–گالت (1976): ${ltr("CrCl = (140 − age) × W ÷ (72 × SCr)")} میلی‌لیتر در دقیقه با کراتینین بر حسب mg/dL، در زنان ضرب در 0.85؛ تنظیم دوز کلیوی در بیشتر بروشورهای دارویی بر پایه آن است. ${ltr("CKD-EPI 2021")} (بدون ضریب نژاد): ${ltr("eGFR = 142 × min(SCr/κ, 1)^α × max(SCr/κ, 1)^−1.200 × 0.9938^age × 1.012 [F]")} که κ برای زن و مرد 0.7 و 0.9 و α برابر −0.241 و −0.302 است. مراحل KDIGO: ${ltr("G1 ≥ 90, G2 60–89, G3a 45–59, G3b 30–44, G4 15–29, G5 < 15")}. هر ${ltr("1 mg/dL")} کراتینین برابر ${ltr("88.4 µmol/L")} است.` +
           disclaimer.fa,
       )}
     />
@@ -189,7 +189,7 @@ export function Inf({ ctx }: { ctx: Ctx }) {
       note={bi(
         "Concentration = drug in the bag ÷ volume; mL/h = dose per hour ÷ concentration; for weight-based orders, mg/h = µg/kg/min × kg × 60 ÷ 1000. Drops/min = mL/h × drop factor ÷ 60 (macro sets 10–20 drops/mL, micro sets 60). Use an infusion pump for high-alert drugs." +
           disclaimer.en,
-        `غلظت = مقدار دارو در کیسه ÷ حجم؛ ${ltr("mL/h = dose per hour ÷ concentration")}؛ برای دستور بر پایه وزن ${ltr("mg/h = µg/kg/min × kg × 60 ÷ 1000")}. ${ltr("drops/min = mL/h × drop factor ÷ 60")} (ست‌های ماکرو ۱۰ تا ۲۰ قطره در میلی‌لیتر و ست میکرو ۶۰). برای داروهای پرخطر از پمپ انفوزیون استفاده کنید.` +
+        `غلظت = مقدار دارو در کیسه ÷ حجم؛ ${ltr("mL/h = dose per hour ÷ concentration")}؛ برای دستور بر پایه وزن ${ltr("mg/h = µg/kg/min × kg × 60 ÷ 1000")}. ${ltr("drops/min = mL/h × drop factor ÷ 60")} (ست‌های ماکرو 10 تا 20 قطره در میلی‌لیتر و ست میکرو 60). برای داروهای پرخطر از پمپ انفوزیون استفاده کنید.` +
           disclaimer.fa,
       )}
     />
@@ -220,7 +220,7 @@ export function Pk({ ctx }: { ctx: Ctx }) {
           <NumberInput ctx={ctx} id="pk-c2" label={bi("Concentration C₂ (mg/L)", "غلظت C₂ (میلی‌گرم در لیتر)")} />
           <NumberInput ctx={ctx} id="pk-t2" label={bi("Time of C₂ (h)", "زمان C₂ (ساعت)")} />
           <NumberInput ctx={ctx} id="pk-vd" label={bi("Volume of distribution Vd (L)", "حجم توزیع Vd (لیتر)")} />
-          <NumberInput ctx={ctx} id="pk-f" label={bi("Bioavailability F (0–1)", "فراهمی زیستی F (۰ تا ۱)")} />
+          <NumberInput ctx={ctx} id="pk-f" label={bi("Bioavailability F (0–1)", "فراهمی زیستی F (0 تا 1)")} />
           <NumberInput ctx={ctx} id="pk-d" label={bi("Maintenance dose (mg)", "دوز نگهدارنده (میلی‌گرم)")} />
           <NumberInput ctx={ctx} id="pk-tau" label={bi("Dosing interval τ (h)", "فاصله دوز τ (ساعت)")} />
           <NumberInput ctx={ctx} id="pk-ct" label={bi("Target average steady-state concentration (mg/L)", "غلظت میانگین هدف در حالت پایدار (میلی‌گرم در لیتر)")} />
@@ -230,7 +230,7 @@ export function Pk({ ctx }: { ctx: Ctx }) {
         { label: bi("Elimination rate constant k", "ثابت سرعت حذف k"), value: ok ? `${fixed(k, 4)} h⁻¹` : DASH },
         { label: bi("Half-life t½", "نیمه‌عمر t½"), value: ok ? `${fixed(half, 2)} h` : DASH },
         { label: bi("Clearance CL = k·Vd", "کلیرانس ⁦(CL = k·Vd)⁩"), value: okV ? `${fixed(cl, 2)} L/h` : DASH },
-        { label: bi("Time to ~90% of steady state", "زمان رسیدن به حدود 90٪ حالت پایدار"), value: ok ? `${fixed(3.32 * half, 1)} h` : DASH },
+        { label: bi("Time to ~90% of steady state", "زمان رسیدن به حدود 90% حالت پایدار"), value: ok ? `${fixed(3.32 * half, 1)} h` : DASH },
         { label: bi("Accumulation factor R", "ضریب تجمع R"), value: ok && tau > 0 ? fixed(1 / (1 - Math.exp(-k * tau)), 2) : DASH },
         { label: bi("Average steady-state concentration", "غلظت میانگین حالت پایدار"), value: okD ? `${fixed((f * d) / (cl * tau), 2)} mg/L` : DASH },
         { label: bi("Loading dose for the target", "دوز بارگیری برای غلظت هدف"), value: okT ? `${sig((ct * vd) / f)} mg` : DASH },
@@ -240,7 +240,7 @@ export function Pk({ ctx }: { ctx: Ctx }) {
       note={bi(
         "One-compartment model with first-order elimination; both samples in the elimination phase. k = ln(C₁/C₂) ÷ (t₂ − t₁), t½ = 0.693 ÷ k, CL = k × Vd. Accumulation R = 1 ÷ (1 − e^(−kτ)); C_ss,avg = F × dose ÷ (CL × τ); about 3.3 half-lives give 90% of steady state. Loading dose = C_target × Vd ÷ F; maintenance dose = C_target × CL × τ ÷ F." +
           disclaimer.en,
-        `مدل تک‌بخشی با حذف درجه اول؛ هر دو نمونه در فاز حذف. ${ltr("k = ln(C₁/C₂) ÷ (t₂ − t₁)")}، ${ltr("t½ = 0.693 ÷ k")}، ${ltr("CL = k × Vd")}. ضریب تجمع ${ltr("R = 1 ÷ (1 − e^(−kτ))")}؛ ${ltr("C_ss,avg = F × dose ÷ (CL × τ)")}؛ حدود ۳٫۳ نیمه‌عمر برای رسیدن به 90٪ حالت پایدار لازم است. دوز بارگیری ${ltr("= C_target × Vd ÷ F")} و دوز نگهدارنده ${ltr("= C_target × CL × τ ÷ F")}.` +
+        `مدل تک‌بخشی با حذف درجه اول؛ هر دو نمونه در فاز حذف. ${ltr("k = ln(C₁/C₂) ÷ (t₂ − t₁)")}، ${ltr("t½ = 0.693 ÷ k")}، ${ltr("CL = k × Vd")}. ضریب تجمع ${ltr("R = 1 ÷ (1 − e^(−kτ))")}؛ ${ltr("C_ss,avg = F × dose ÷ (CL × τ)")}؛ حدود 3.3 نیمه‌عمر برای رسیدن به 90% حالت پایدار لازم است. دوز بارگیری ${ltr("= C_target × Vd ÷ F")} و دوز نگهدارنده ${ltr("= C_target × CL × τ ÷ F")}.` +
           disclaimer.fa,
       )}
     />
@@ -288,7 +288,7 @@ export function Hed({ ctx }: { ctx: Ctx }) {
       note={bi(
         "FDA guidance (2005), Estimating the Maximum Safe Starting Dose in Initial Clinical Trials for Therapeutics in Adult Healthy Volunteers: HED (mg/kg) = animal NOAEL × (animal Km ÷ human Km), with human Km = 37 (60 kg adult). The maximum recommended starting dose (MRSD) is the HED from the most appropriate species divided by a safety factor, by default 10. Body-surface-area scaling does not apply to every product (e.g. proteins given intravascularly)." +
           disclaimer.en,
-        `راهنمای FDA (۲۰۰۵) درباره برآورد حداکثر دوز شروع ایمن در نخستین کارآزمایی‌های بالینی در داوطلبان سالم بزرگسال: ${ltr("HED (mg/kg) = NOAEL × (Km animal ÷ Km human)")} با Km انسان برابر ۳۷ (بزرگسال ۶۰ کیلوگرمی). حداکثر دوز شروع توصیه‌شده (MRSD) برابر HED مناسب‌ترین گونه تقسیم بر ضریب اطمینان (به‌طور پیش‌فرض ۱۰) است. مقیاس‌بندی بر پایه سطح بدن برای همه فرآورده‌ها کاربرد ندارد (مثلاً پروتئین‌هایی که داخل عروقی تجویز می‌شوند).` +
+        `راهنمای FDA (2005) درباره برآورد حداکثر دوز شروع ایمن در نخستین کارآزمایی‌های بالینی در داوطلبان سالم بزرگسال: ${ltr("HED (mg/kg) = NOAEL × (Km animal ÷ Km human)")} با Km انسان برابر 37 (بزرگسال 60 کیلوگرمی). حداکثر دوز شروع توصیه‌شده (MRSD) برابر HED مناسب‌ترین گونه تقسیم بر ضریب اطمینان (به‌طور پیش‌فرض 10) است. مقیاس‌بندی بر پایه سطح بدن برای همه فرآورده‌ها کاربرد ندارد (مثلاً پروتئین‌هایی که داخل عروقی تجویز می‌شوند).` +
           disclaimer.fa,
       )}
     />

@@ -10,8 +10,8 @@ import { Choice, DASH, NumberInput, Panel, PresetSelect, bad, isLocked, ltr, num
 // ---------- Isotonicity by freezing-point depression ----------
 
 const fpdAgents: Preset[] = [
-  { label: bi("Sodium chloride (ΔTf of 1% = 0.576 °C)", "سدیم کلراید (ΔTf محلول 1٪ = 0.576)"), values: ["0.576"] },
-  { label: bi("Boric acid (ΔTf of 1% = 0.288 °C)", "بوریک اسید (ΔTf محلول 1٪ = 0.288)"), values: ["0.288"] },
+  { label: bi("Sodium chloride (ΔTf of 1% = 0.576 °C)", "سدیم کلراید (ΔTf محلول 1% = 0.576)"), values: ["0.576"] },
+  { label: bi("Boric acid (ΔTf of 1% = 0.288 °C)", "بوریک اسید (ΔTf محلول 1% = 0.288)"), values: ["0.288"] },
 ];
 
 export function Fpd({ ctx }: { ctx: Ctx }) {
@@ -38,10 +38,10 @@ export function Fpd({ ctx }: { ctx: Ctx }) {
       form={
         <>
           <NumberInput ctx={ctx} id="fp-c" label={bi("Drug concentration (% w/v)", "غلظت دارو (% وزنی/حجمی)")} />
-          <NumberInput ctx={ctx} id="fp-d1" label={bi("Freezing-point depression of a 1% drug solution (°C)", "کاهش نقطه انجماد محلول 1٪ دارو (درجه سانتی‌گراد)")} />
+          <NumberInput ctx={ctx} id="fp-d1" label={bi("Freezing-point depression of a 1% drug solution (°C)", "کاهش نقطه انجماد محلول 1% دارو (درجه سانتی‌گراد)")} />
           <NumberInput ctx={ctx} id="fp-v" label={bi("Volume to prepare (mL)", "حجم ساخت (میلی‌لیتر)")} />
           <PresetSelect ctx={ctx} id="fp-agent" label={bi("Tonicity agent", "ماده تنظیم‌کننده تونیسیته")} presets={fpdAgents} targets={["fp-b"]} />
-          <NumberInput ctx={ctx} id="fp-b" label={bi("ΔTf of a 1% solution of the agent (°C)", "ΔTf محلول 1٪ ماده تنظیم‌کننده (درجه)")} readOnly={isLocked(ctx, "fp-agent")} />
+          <NumberInput ctx={ctx} id="fp-b" label={bi("ΔTf of a 1% solution of the agent (°C)", "ΔTf محلول 1% ماده تنظیم‌کننده (درجه)")} readOnly={isLocked(ctx, "fp-agent")} />
         </>
       }
       results={[
@@ -52,7 +52,7 @@ export function Fpd({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "Blood and tears freeze at −0.52 °C. W (% w/v) = (0.52 − a) ÷ b, where a is the depression produced by the drug and b that of a 1% solution of the tonicity agent. ΔTf of a 1% solution ≈ 0.576 × E (sodium chloride equivalent).",
-        `خون و اشک در دمای ${ltr("−0.52 °C")} منجمد می‌شوند. ${ltr("W (% w/v) = (0.52 − a) ÷ b")} که a کاهش نقطه انجماد ناشی از دارو و b کاهش ناشی از محلول 1٪ ماده تنظیم‌کننده است. ΔTf محلول 1٪ تقریباً برابر ${ltr("0.576 × E")} (معادل سدیم کلراید) است.`,
+        `خون و اشک در دمای ${ltr("−0.52 °C")} منجمد می‌شوند. ${ltr("W (% w/v) = (0.52 − a) ÷ b")} که a کاهش نقطه انجماد ناشی از دارو و b کاهش ناشی از محلول 1% ماده تنظیم‌کننده است. ΔTf محلول 1% تقریباً برابر ${ltr("0.576 × E")} (معادل سدیم کلراید) است.`,
       )}
     />
   );
@@ -113,7 +113,7 @@ export function Osm({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "mOsm/L = (mg/mL ÷ MW) × number of particles × 1000, assuming complete dissociation. Measured osmolality is lower: 0.9% NaCl calculates to 308 mOsm/L but measures about 286 mOsm/kg. Plasma osmolality is about 285–295 mOsm/kg; peripheral intravenous solutions are usually kept below about 900 mOsm/L. The example is Ringer's injection.",
-        `${ltr("mOsm/L = (mg/mL ÷ MW) × n × 1000")} با فرض تفکیک کامل، که n تعداد ذرات حاصل از هر مولکول است. اسمولالیته اندازه‌گیری‌شده کمتر است: NaCl 0.9٪ از راه محاسبه 308 ولی در اندازه‌گیری حدود 286 میلی‌اسمول بر کیلوگرم است. اسمولالیته پلاسما حدود 285 تا 295 میلی‌اسمول بر کیلوگرم است و محلول‌های تزریق وریدی محیطی معمولاً زیر حدود 900 میلی‌اسمول بر لیتر نگه داشته می‌شوند. مثال پیش‌فرض، محلول رینگر است.`,
+        `${ltr("mOsm/L = (mg/mL ÷ MW) × n × 1000")} با فرض تفکیک کامل، که n تعداد ذرات حاصل از هر مولکول است. اسمولالیته اندازه‌گیری‌شده کمتر است: NaCl 0.9% از راه محاسبه 308 ولی در اندازه‌گیری حدود 286 میلی‌اسمول بر کیلوگرم است. اسمولالیته پلاسما حدود 285 تا 295 میلی‌اسمول بر کیلوگرم است و محلول‌های تزریق وریدی محیطی معمولاً زیر حدود 900 میلی‌اسمول بر لیتر نگه داشته می‌شوند. مثال پیش‌فرض، محلول رینگر است.`,
       )}
     />
   );
@@ -167,7 +167,7 @@ export function Conc({ ctx }: { ctx: Ctx }) {
       message={x > 0 && (!needsMw || mw > 0) ? "" : bad(ctx)}
       note={bi(
         "1% w/v = 1 g/100 mL = 10 mg/mL; 1 ppm (w/v) = 1 mg/L = 1 µg/mL; ratio strength 1:1000 = 1 g in 1000 mL = 0.1% w/v. The example is adrenaline 1 mg/mL (MW 183.20).",
-        "هر 1٪ وزنی/حجمی برابر 1 گرم در 100 میلی‌لیتر یا 10 میلی‌گرم در میلی‌لیتر است؛ هر ppm (وزنی/حجمی) برابر 1 میلی‌گرم در لیتر یا 1 میکروگرم در میلی‌لیتر؛ نسبت 1:1000 یعنی 1 گرم در 1000 میلی‌لیتر یا 0.1٪. مثال پیش‌فرض، آدرنالین 1 میلی‌گرم در میلی‌لیتر (وزن مولکولی 183.20) است.",
+        "هر 1% وزنی/حجمی برابر 1 گرم در 100 میلی‌لیتر یا 10 میلی‌گرم در میلی‌لیتر است؛ هر ppm (وزنی/حجمی) برابر 1 میلی‌گرم در لیتر یا 1 میکروگرم در میلی‌لیتر؛ نسبت 1:1000 یعنی 1 گرم در 1000 میلی‌لیتر یا 0.1%. مثال پیش‌فرض، آدرنالین 1 میلی‌گرم در میلی‌لیتر (وزن مولکولی 183.20) است.",
       )}
     />
   );

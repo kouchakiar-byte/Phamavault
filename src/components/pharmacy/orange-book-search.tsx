@@ -8,7 +8,7 @@ import { formatDate } from "@/lib/format";
 import { IranMakers } from "./iran-makers";
 import { useUrlParam } from "@/lib/use-url-param";
 
-const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
+const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
 
 /** `iran` adds the Iranian manufacturers of each ingredient (pharmacy section only). */
 export function OrangeBookSearch({ locale, iran = true }: { locale: Locale; iran?: boolean }) {

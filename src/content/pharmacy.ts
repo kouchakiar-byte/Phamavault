@@ -26,7 +26,7 @@ export const interactionsCopy = {
   clear: bi("Clear all", "پاک کردن همه"),
   needTwo: bi("Add at least two medicines.", "دست‌کم دو دارو اضافه کنید."),
   unknown: bi("Not found in the database:", "در پایگاه داده پیدا نشد:"),
-  maxDrugs: bi("Up to 10 medicines can be checked together.", "حداکثر ۱۰ دارو را می‌توان همزمان بررسی کرد."),
+  maxDrugs: bi("Up to 10 medicines can be checked together.", "حداکثر 10 دارو را می‌توان همزمان بررسی کرد."),
   summary: bi("{n} interactions found among {p} pairs", "{n} تداخل در {p} جفت دارو یافت شد"),
   none: bi("No significant interaction identified", "تداخل مهمی شناسایی نشد"),
   clearPairs: bi("No significant interaction identified", "تداخل مهمی شناسایی نشد"),
@@ -126,6 +126,17 @@ export const pharmacyPage = {
   reviewed: bi("Content reviewed {month}.", "آخرین بازبینی محتوا: {month}."),
   refsLabel: bi("References", "رفرنس‌ها"),
   toc: bi("In this section", "در این بخش"),
+  quick: {
+    title: bi("Quick access", "دسترسی سریع"),
+    compounding: bi("Compounding: go straight to", "ساخت فرآورده؛ دسترسی مستقیم به"),
+    facts: bi("Key numbers", "اعدادی که هر سازنده باید بداند"),
+    bud: bi("Beyond-use date (BUD)", "تاریخ مصرف پس از ساخت (BUD)"),
+    record: bi("Master formulation record", "سوابق فرمولاسیون اصلی"),
+    excipients: bi("Excipients to watch in neonates and children", "مواد جانبی حساس در نوزادان و کودکان"),
+    counsel: bi("Labelling and counselling checklist", "چک‌لیست برچسب و مشاوره"),
+    formulas: bi("Validated formula sources", "منابع فرمول‌های معتبر"),
+    calcs: bi("Related calculators", "ماشین‌حساب‌های مرتبط"),
+  },
 };
 
 // ---------- 1. Generic and brand products (Orange Book) ----------
@@ -140,7 +151,7 @@ export const orangeBook = {
   search: bi("Active ingredient or brand name (English)", "ماده مؤثره یا نام تجاری (انگلیسی)"),
   placeholder: bi("e.g. atorvastatin, Lipitor, metformin", "مثلاً atorvastatin، Lipitor، metformin"),
   discontinued: bi("Include discontinued products", "نمایش فرآورده‌های متوقف‌شده"),
-  minChars: bi("Type at least 3 letters.", "دست‌کم ۳ حرف وارد کنید."),
+  minChars: bi("Type at least 3 letters.", "دست‌کم 3 حرف وارد کنید."),
   loading: bi("Searching…", "در حال جستجو…"),
   none: bi("No product found. Try the generic (INN/USAN) name in English.", "فرآورده‌ای پیدا نشد. نام ژنریک انگلیسی (INN یا USAN) را امتحان کنید."),
   noData: bi(
@@ -214,14 +225,14 @@ export const compounding = {
   budTitle: bi("Beyond-use date calculator (USP <795>)", `محاسبه تاریخ مصرف پس از ساخت ${ltr("(USP <795>)")}`),
   budNote: bi(
     "USP <795> (revision official 1 November 2023), default BUDs when there is no USP–NF compounded preparation monograph and no formulation-specific stability study. A monograph's BUD takes precedence; with stability data the BUD may be extended but not beyond 180 days, and preserved aqueous preparations extended beyond the default need antimicrobial-effectiveness testing (USP <51>). The BUD may never exceed the earliest expiry date of any ingredient. Water activity (aw) ≥ 0.60 counts as aqueous.",
-    `${ltr("USP <795>")} (ویرایش رسمی از ۱۰ آبان ۱۴۰۲): BUD پیش‌فرض وقتی مونوگراف فرآورده ساختنی در USP–NF و مطالعه پایداری اختصاصی وجود ندارد. BUD مونوگراف مقدم است؛ با داده پایداری می‌توان BUD را افزایش داد ولی نه بیش از ۱۸۰ روز، و برای فرآورده‌های آبی نگهدارنده‌دار با BUD بیشتر از پیش‌فرض، آزمون کارایی نگهدارنده ${ltr("(USP <51>)")} لازم است. BUD هرگز نباید از زودترین تاریخ انقضای اجزا بیشتر شود. فعالیت آبی ${ltr("aw ≥ 0.60")} آبی محسوب می‌شود.`,
+    `${ltr("USP <795>")} (ویرایش رسمی از 10 آبان 1402): BUD پیش‌فرض وقتی مونوگراف فرآورده ساختنی در USP–NF و مطالعه پایداری اختصاصی وجود ندارد. BUD مونوگراف مقدم است؛ با داده پایداری می‌توان BUD را افزایش داد ولی نه بیش از 180 روز، و برای فرآورده‌های آبی نگهدارنده‌دار با BUD بیشتر از پیش‌فرض، آزمون کارایی نگهدارنده ${ltr("(USP <51>)")} لازم است. BUD هرگز نباید از زودترین تاریخ انقضای اجزا بیشتر شود. فعالیت آبی ${ltr("aw ≥ 0.60")} آبی محسوب می‌شود.`,
   ),
   budTypes: [
     {
       value: "aq-np",
       days: 14,
       label: bi("Aqueous, without preservative (aw ≥ 0.60)", "آبی، بدون نگهدارنده (aw ≥ 0.60)"),
-      storage: bi("Refrigerator (2–8 °C)", "یخچال (۲ تا ۸ درجه)"),
+      storage: bi("Refrigerator (2–8 °C)", "یخچال (2 تا 8 درجه)"),
     },
     {
       value: "aq-p",
@@ -307,7 +318,7 @@ export const compoundingGuide = {
   factsTitle: bi("Numbers every compounder should know", "اعدادی که هر سازنده باید بداند"),
   facts: [
     { value: "180", unit: bi("days", "روز"), text: bi("Maximum BUD for a non-sterile preparation, even with stability data (USP <795>)", `سقف BUD فرآورده غیراستریل، حتی با داده پایداری ${ltr("(USP <795>)")}`) },
-    { value: "120", unit: bi("mg", "میلی‌گرم"), text: bi("Smallest quantity on a Class A prescription balance (sensitivity 6 mg) for an error of 5% or less", "کمترین مقدار قابل توزین با ترازوی نسخه‌پیچی کلاس A (حساسیت ۶ میلی‌گرم) برای خطای حداکثر ۵٪") },
+    { value: "120", unit: bi("mg", "میلی‌گرم"), text: bi("Smallest quantity on a Class A prescription balance (sensitivity 6 mg) for an error of 5% or less", "کمترین مقدار قابل توزین با ترازوی نسخه‌پیچی کلاس A (حساسیت 6 میلی‌گرم) برای خطای حداکثر 5%") },
     { value: "1:1", unit: bi("ratio", "نسبت"), text: bi("Ora-Plus : Ora-Sweet, the most studied vehicle for oral suspensions in children", "Ora-Plus به Ora-Sweet، پرمطالعه‌ترین حامل سوسپانسیون‌های خوراکی کودکان") },
     { value: "0.60", unit: bi("aw", "aw"), text: bi("Water activity at or above which a preparation counts as aqueous and gets a short BUD", "فعالیت آبی که از آن به بالا فرآورده آبی محسوب می‌شود و BUD کوتاهی برای آن تعیین می‌شود") },
   ],
@@ -339,7 +350,7 @@ export const compoundingGuide = {
       key: "oral",
       title: bi("Oral liquids for children", "مایعات خوراکی برای کودکان"),
       points: [
-        bi("Most published paediatric suspensions are made from crushed tablets in Ora-Plus : Ora-Sweet (1:1) or 1% methylcellulose : simple syrup (1:1).", "بیشتر سوسپانسیون‌های منتشرشده کودکان از قرص خردشده در Ora-Plus و Ora-Sweet (۱ به ۱) یا متیل‌سلولز ۱٪ و شربت ساده (۱ به ۱) ساخته می‌شوند."),
+        bi("Most published paediatric suspensions are made from crushed tablets in Ora-Plus : Ora-Sweet (1:1) or 1% methylcellulose : simple syrup (1:1).", "بیشتر سوسپانسیون‌های منتشرشده کودکان از قرص خردشده در Ora-Plus و Ora-Sweet (1 به 1) یا متیل‌سلولز 1% و شربت ساده (1 به 1) ساخته می‌شوند."),
         bi("Use exactly the formula, container (usually amber plastic or glass) and storage of the published study; a different vehicle needs its own data.", "دقیقاً همان فرمول، ظرف (معمولاً پلاستیک یا شیشه کهربایی) و شرایط نگهداری مطالعه منتشرشده را به کار ببرید؛ حامل متفاوت به داده پایداری مختص خود نیاز دارد."),
         bi("Label “Shake well”, the BUD and the storage temperature, and use an oral syringe for measuring.", "روی برچسب «قبل از مصرف تکان دهید»، BUD و دمای نگهداری را بنویسید و برای اندازه‌گیری، سرنگ خوراکی تحویل دهید."),
         bi("Watch the excipients in the table below for neonates and young children.", "مواد جانبی جدول زیر را در نوزادان و کودکان خردسال در نظر داشته باشید."),
@@ -370,7 +381,7 @@ export const compoundingGuide = {
       key: "suppositories",
       title: bi("Suppositories", "شیاف"),
       points: [
-        bi("Fatty bases (cocoa butter, hard fat) melt at body temperature; overheating cocoa butter forms unstable polymorphs that set poorly, so melt it gently below about 35 °C.", "پایه‌های چرب (کره کاکائو، چربی سخت) در دمای بدن ذوب می‌شوند؛ حرارت‌دادن بیش از حد کره کاکائو موجب تشکیل پلی‌مورف‌های ناپایداری می‌شود که به‌خوبی جامد نمی‌شوند؛ از این رو آن را به‌آرامی و در دمای کمتر از حدود ۳۵ درجه ذوب کنید."),
+        bi("Fatty bases (cocoa butter, hard fat) melt at body temperature; overheating cocoa butter forms unstable polymorphs that set poorly, so melt it gently below about 35 °C.", "پایه‌های چرب (کره کاکائو، چربی سخت) در دمای بدن ذوب می‌شوند؛ حرارت‌دادن بیش از حد کره کاکائو موجب تشکیل پلی‌مورف‌های ناپایداری می‌شود که به‌خوبی جامد نمی‌شوند؛ از این رو آن را به‌آرامی و در دمای کمتر از حدود 35 درجه ذوب کنید."),
         bi("PEG bases dissolve in body fluids, do not need refrigeration, but can irritate: moisten before insertion.", "پایه‌های PEG در مایعات بدن حل می‌شوند و به نگهداری در یخچال نیاز ندارند، ولی ممکن است تحریک‌کننده باشند؛ پیش از مصرف مرطوب شوند."),
         bi("Calibrate the mould with the base and correct for the drug's displacement factor.", "قالب را با پایه کالیبره کنید و ضریب جابه‌جایی دارو را اعمال کنید."),
       ],
@@ -380,7 +391,7 @@ export const compoundingGuide = {
       key: "weighing",
       title: bi("Weighing accuracy", "دقت توزین"),
       points: [
-        bi("Know the balance's minimum weight: for a Class A prescription balance (sensitivity requirement 6 mg) weigh at least 120 mg for an error of 5% or less.", "حداقل وزن ترازو را بدانید: با ترازوی کلاس A (حساسیت ۶ میلی‌گرم) برای خطای حداکثر ۵٪ دست‌کم ۱۲۰ میلی‌گرم توزین کنید."),
+        bi("Know the balance's minimum weight: for a Class A prescription balance (sensitivity requirement 6 mg) weigh at least 120 mg for an error of 5% or less.", "حداقل وزن ترازو را بدانید: با ترازوی کلاس A (حساسیت 6 میلی‌گرم) برای خطای حداکثر 5% دست‌کم 120 میلی‌گرم توزین کنید."),
         bi("For smaller amounts make an aliquot: weigh a larger quantity, dilute it with an inert powder or liquid and take the fraction that contains the dose.", "برای مقادیر کمتر از روش آلیکوت استفاده کنید: مقدار بیشتری توزین، با پودر یا مایع بی‌اثر رقیق و کسری که دوز لازم را دارد برداشته شود."),
         bi("Check and calibrate electronic balances regularly with certified weights.", "ترازوهای الکترونیکی را به‌طور منظم با وزنه‌های استاندارد کنترل و کالیبره کنید."),
       ],
@@ -412,7 +423,7 @@ export const compoundingGuide = {
     {
       name: bi("Propylene glycol", "پروپیلن گلیکول"),
       risk: bi("CNS depression, hyperosmolality and lactic acidosis; neonates cannot clear it well", "تضعیف CNS، هیپراسمولالیتی و اسیدوز لاکتیک؛ نوزادان آن را به‌خوبی دفع نمی‌کنند"),
-      advice: bi("EMA thresholds: 1 mg/kg/day in neonates, 50 mg/kg/day under 5 years", "آستانه‌های EMA: ۱ میلی‌گرم/کیلوگرم/روز در نوزادان و ۵۰ میلی‌گرم/کیلوگرم/روز زیر ۵ سال"),
+      advice: bi("EMA thresholds: 1 mg/kg/day in neonates, 50 mg/kg/day under 5 years", "آستانه‌های EMA: 1 میلی‌گرم/کیلوگرم/روز در نوزادان و 50 میلی‌گرم/کیلوگرم/روز زیر 5 سال"),
     },
     {
       name: bi("Ethanol", "اتانول"),
@@ -459,7 +470,7 @@ export const iranDrugs = {
   loading: bi("Searching…", "در حال جستجو…"),
   hint: bi(
     "At least 3 characters. The INN in English (e.g. Metformin) returns the most complete results; then choose the single ingredient or the fixed-dose combination you need.",
-    "دست‌کم ۳ حرف. نام ژنریک بین‌المللی \u2066(INN)\u2069 به انگلیسی، مثلاً Metformin، کامل‌ترین نتیجه را می‌دهد؛ سپس تک‌جزئی یا ترکیب ثابت \u2066(FDC)\u2069 موردنظر را انتخاب کنید.",
+    "دست‌کم 3 حرف. نام ژنریک بین‌المللی \u2066(INN)\u2069 به انگلیسی، مثلاً Metformin، کامل‌ترین نتیجه را می‌دهد؛ سپس تک‌جزئی یا ترکیب ثابت \u2066(FDC)\u2069 موردنظر را انتخاب کنید.",
   ),
   none: bi("No licensed product found for “{q}”.", "فرآورده دارای مجوزی برای «{q}» پیدا نشد."),
   unavailable: bi(
@@ -492,11 +503,11 @@ export const iranDrugs = {
     "The register is not answering right now; these are the results saved at its last update.",
     "سامانه سازمان غذا و دارو در این لحظه پاسخ نمی‌دهد؛ نتایج زیر از آخرین به‌روزرسانی ذخیره‌شده است.",
   ),
-  updated: bi("Updated daily at 18:00 \u2066(Tehran)\u2069 · last update: {date}", "به‌روزرسانی روزانه ساعت ۱۸ · آخرین به‌روزرسانی این نتیجه: {date}"),
+  updated: bi("Updated daily at 18:00 \u2066(Tehran)\u2069 · last update: {date}", "به‌روزرسانی روزانه ساعت 18 · آخرین به‌روزرسانی این نتیجه: {date}"),
   rial: bi("Rial", "ریال"),
   toman: bi("Toman", "تومان"),
   source: bi(
     "Source: Iran Food and Drug Administration — register of licensed finished products (irc.fda.gov.ir), updated daily at 18:00 (Tehran). Prices are the approved consumer prices recorded in the register. Substitution remains subject to the prescriber and current Iran FDA regulations.",
-    "منبع: سازمان غذا و دارو، سامانه فرآورده‌های نهایی دارای مجوز \u2066(irc.fda.gov.ir)\u2069؛ به‌روزرسانی روزانه ساعت ۱۸. قیمت‌ها قیمت مصوب مصرف‌کننده ثبت‌شده در سامانه است. جایگزینی دارو تابع نظر پزشک معالج و ضوابط جاری سازمان غذا و دارو است.",
+    "منبع: سازمان غذا و دارو، سامانه فرآورده‌های نهایی دارای مجوز \u2066(irc.fda.gov.ir)\u2069؛ به‌روزرسانی روزانه ساعت 18. قیمت‌ها قیمت مصوب مصرف‌کننده ثبت‌شده در سامانه است. جایگزینی دارو تابع نظر پزشک معالج و ضوابط جاری سازمان غذا و دارو است.",
   ),
 };

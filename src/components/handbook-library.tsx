@@ -10,7 +10,7 @@ const anchor = handbookAnchor;
 
 /** The handbooks: a contents list, then each title with its topics as expandable entries. */
 export function HandbookLibrary({ handbooks, locale }: { handbooks: Handbook[]; locale: Locale }) {
-  const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
+  const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
   return (
     <div className="grid gap-10 lg:grid-cols-[16rem_minmax(0,1fr)]">
       <nav aria-label={t.contents[locale]} className="lg:sticky lg:top-24 lg:self-start">

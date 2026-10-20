@@ -53,7 +53,7 @@ export function Mkt({ ctx }: { ctx: Ctx }) {
       note={bi(
         "USP <1079.2> (Haynes): MKT = (ΔH/R) ÷ −ln[(e^(−ΔH/RT₁) + … + e^(−ΔH/RTₙ)) ÷ n], T in kelvin, R = 8.3144 J/(mol·K). The default ΔH = 83.144 kJ/mol (ΔH/R = 10 000 K) is the conventional value. MKT weighs warm periods more than the arithmetic mean does; USP <659> defines controlled room temperature with an MKT not above 25 °C. " +
           listNote.en,
-        `${ltr("USP <1079.2>")} (روش هینز): ${ltr("MKT = (ΔH/R) ÷ −ln[(Σ e^(−ΔH/RTᵢ)) ÷ n]")}؛ T بر حسب کلوین و ${ltr("R = 8.3144 J/(mol·K)")}. مقدار پیش‌فرض ${ltr("ΔH = 83.144 kJ/mol")} (یعنی ${ltr("ΔH/R = 10 000 K")}) مقدار قراردادی است. MKT دوره‌های گرم را بیشتر از میانگین حسابی وزن می‌دهد؛ ${ltr("USP <659>")} دمای کنترل‌شده اتاق را با MKT حداکثر ۲۵ درجه تعریف می‌کند. ${listNote.fa}`,
+        `${ltr("USP <1079.2>")} (روش هینز): ${ltr("MKT = (ΔH/R) ÷ −ln[(Σ e^(−ΔH/RTᵢ)) ÷ n]")}؛ T بر حسب کلوین و ${ltr("R = 8.3144 J/(mol·K)")}. مقدار پیش‌فرض ${ltr("ΔH = 83.144 kJ/mol")} (یعنی ${ltr("ΔH/R = 10 000 K")}) مقدار قراردادی است. MKT دوره‌های گرم را بیشتر از میانگین حسابی وزن می‌دهد؛ ${ltr("USP <659>")} دمای کنترل‌شده اتاق را با MKT حداکثر 25 درجه تعریف می‌کند. ${listNote.fa}`,
       )}
     />
   );
@@ -165,7 +165,7 @@ export function Q1e({ ctx }: { ctx: Ctx }) {
       form={
         <>
           <ListInput ctx={ctx} id="q1-t" label={bi("Time points (months)", "نقاط زمانی (ماه)")} />
-          <ListInput ctx={ctx} id="q1-y" label={bi("Results at each time point (e.g. % of label claim)", "نتیجه هر نقطه زمانی (مثلاً ٪ ادعای برچسب)")} />
+          <ListInput ctx={ctx} id="q1-y" label={bi("Results at each time point (e.g. % of label claim)", "نتیجه هر نقطه زمانی (مثلاً % ادعای برچسب)")} />
           <Choice ctx={ctx} id="q1-dir" label={bi("Attribute", "نوع ویژگی")} options={directions} />
           <NumberInput ctx={ctx} id="q1-spec" label={bi("Acceptance criterion", "معیار پذیرش")} />
         </>
@@ -173,7 +173,7 @@ export function Q1e({ ctx }: { ctx: Ctx }) {
       results={[
         { label: bi("Regression line", "خط رگرسیون"), value: line },
         { label: bi("r²", "r²"), value: r2 },
-        { label: bi("t (one-sided 95%)", "t (یک‌طرفه ۹۵٪)"), value: tval },
+        { label: bi("t (one-sided 95%)", "t (یک‌طرفه 95%)"), value: tval },
         { label: bi("Confidence limit at time zero", "حد اطمینان در زمان صفر"), value: at0 },
         { label: bi("Shelf life supported by the data", "عمر قفسه‌ای پشتیبانی‌شده با داده‌ها"), value: life },
         { label: bi("Extrapolation ceiling: min(2X, X + 12)", "سقف برون‌یابی: min(2X, X + 12)"), value: cap },
@@ -182,7 +182,7 @@ export function Q1e({ ctx }: { ctx: Ctx }) {
       note={bi(
         "ICH Q1E: the shelf life is the time at which the one-sided 95% confidence limit of the mean regression line meets the acceptance criterion (lower limit for a decreasing attribute, upper limit for an increasing one); limit = ŷ ∓ t₀.₉₅,ₙ₋₂ · s · √(1/n + (t − t̄)²/Sxx). For one batch at room-temperature storage with statistical analysis and no significant change at the accelerated condition, the proposed shelf life may be extrapolated up to twice the long-term period X but not more than 12 months beyond it; with several batches, test poolability first (p > 0.25). " +
           listNote.en,
-        `${ltr("ICH Q1E")}: عمر قفسه‌ای زمانی است که حد اطمینان یک‌طرفه ۹۵٪ خط رگرسیون میانگین به معیار پذیرش می‌رسد (حد پایین برای ویژگی کاهشی و حد بالا برای ویژگی افزایشی)؛ ${ltr("limit = ŷ ∓ t₀.₉₅,ₙ₋₂ · s · √(1/n + (t − t̄)²/Sxx)")}. برای نگهداری در دمای اتاق، با تحلیل آماری و بدون تغییر معنی‌دار در شرایط تسریع‌شده، عمر قفسه‌ای پیشنهادی را می‌توان تا دو برابر دوره داده‌های بلندمدت X برون‌یابی کرد، ولی حداکثر ۱۲ ماه بیشتر از X؛ برای چند بچ ابتدا قابلیت ادغام داده‌ها را بسنجید ${ltr("(p > 0.25)")}. ${listNote.fa}`,
+        `${ltr("ICH Q1E")}: عمر قفسه‌ای زمانی است که حد اطمینان یک‌طرفه 95% خط رگرسیون میانگین به معیار پذیرش می‌رسد (حد پایین برای ویژگی کاهشی و حد بالا برای ویژگی افزایشی)؛ ${ltr("limit = ŷ ∓ t₀.₉₅,ₙ₋₂ · s · √(1/n + (t − t̄)²/Sxx)")}. برای نگهداری در دمای اتاق، با تحلیل آماری و بدون تغییر معنی‌دار در شرایط تسریع‌شده، عمر قفسه‌ای پیشنهادی را می‌توان تا دو برابر دوره داده‌های بلندمدت X برون‌یابی کرد، ولی حداکثر 12 ماه بیشتر از X؛ برای چند بچ ابتدا قابلیت ادغام داده‌ها را بسنجید ${ltr("(p > 0.25)")}. ${listNote.fa}`,
       )}
     />
   );

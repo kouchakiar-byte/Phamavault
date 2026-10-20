@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/metadata";
 const page = pages.tools;
 const lead = bi(
   page.lead.en.replace("{n}", String(calculations.length)),
-  page.lead.fa.replace("{n}", calculations.length.toLocaleString("fa-IR")),
+  page.lead.fa.replace("{n}", calculations.length.toLocaleString("fa-IR-u-nu-latn")),
 );
 
 export const generateMetadata = () => pageMetadata(page.title, lead, "tools");

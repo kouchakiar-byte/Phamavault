@@ -12,7 +12,7 @@
   "mw": "199.99",
   "applications": {
    "en": "Bronopol is an antimicrobial preservative used mainly in topical pharmaceutical preparations and in cosmetics and toiletries, typically at 0.01–0.1% w/v. Its value lies in its strong activity against Gram-negative bacteria such as Pseudomonas, so it is often combined with an antifungal preservative (for example a paraben) to cover yeasts and moulds.",
-   "fa": "برونوپول یک نگهدارنده ضدمیکروبی است که عمدتاً در فرآورده‌های دارویی موضعی و نیز در محصولات آرایشی و بهداشتی با غلظت معمول 0.01–0.1٪ وزنی/حجمی به کار می‌رود. ارزش اصلی آن اثر قوی بر باکتری‌های گرم‌منفی مانند Pseudomonas است؛ به همین دلیل اغلب همراه یک نگهدارنده ضدقارچ (مثلاً یک پارابن) مصرف می‌شود تا مخمرها و کپک‌ها نیز پوشش داده شوند."
+   "fa": "برونوپول یک نگهدارنده ضدمیکروبی است که عمدتاً در فرآورده‌های دارویی موضعی و نیز در محصولات آرایشی و بهداشتی با غلظت معمول 0.01–0.1% وزنی/حجمی به کار می‌رود. ارزش اصلی آن اثر قوی بر باکتری‌های گرم‌منفی مانند Pseudomonas است؛ به همین دلیل اغلب همراه یک نگهدارنده ضدقارچ (مثلاً یک پارابن) مصرف می‌شود تا مخمرها و کپک‌ها نیز پوشش داده شوند."
   },
   "description": {
    "en": "White or almost white crystals or crystalline powder, odourless or with only a faint characteristic odour.",
@@ -82,7 +82,7 @@
   },
   "regulatory": {
    "en": "Included in the FDA Inactive Ingredient Database (topical preparations) and in non-parenteral medicines licensed in the UK. Permitted as a preservative in cosmetics in the EU up to 0.1%, with the requirement that conditions favouring nitrosamine formation are avoided.",
-   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های موضعی) و در داروهای غیرتزریقی مجاز در انگلستان وجود دارد. در اتحادیه اروپا به عنوان نگهدارنده در محصولات آرایشی تا 0.1٪ مجاز است، به شرط آنکه از شرایط مساعد برای تشکیل نیتروزآمین پرهیز شود."
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های موضعی) و در داروهای غیرتزریقی مجاز در انگلستان وجود دارد. در اتحادیه اروپا به عنوان نگهدارنده در محصولات آرایشی تا 0.1% مجاز است، به شرط آنکه از شرایط مساعد برای تشکیل نیتروزآمین پرهیز شود."
   },
   "related": {
    "en": "Other preservatives used in topical products, such as imidurea, phenoxyethanol and the parabens.",
@@ -117,7 +117,7 @@
   "mw": "180.25",
   "applications": {
    "en": "An antioxidant used to delay rancidity in fats, oils and oil-containing formulations and to protect oxidation-sensitive drugs and vitamins. Typical levels are 0.005–0.02% in topical products and up to about 0.02% of the fat or oil content in oils and foods; it is also used in some injectable products at low concentrations. It is often used together with BHT, propyl gallate and a chelating acid such as citric acid, which act synergistically.",
-   "fa": "آنتی‌اکسیدانی است که برای به تأخیر انداختن تند شدن چربی‌ها، روغن‌ها و فرمولاسیون‌های حاوی روغن و محافظت از داروها و ویتامین‌های حساس به اکسیداسیون به کار می‌رود. مقادیر متداول در فرآورده‌های موضعی 0.005–0.02٪ و در روغن‌ها و مواد غذایی تا حدود 0.02٪ مقدار چربی یا روغن است؛ در برخی فرآورده‌های تزریقی نیز با غلظت کم مصرف می‌شود. اغلب همراه BHT، پروپیل گالات و یک اسید شلات‌کننده مانند سیتریک اسید به کار می‌رود که اثر هم‌افزایی دارند."
+   "fa": "آنتی‌اکسیدانی است که برای به تأخیر انداختن تند شدن چربی‌ها، روغن‌ها و فرمولاسیون‌های حاوی روغن و محافظت از داروها و ویتامین‌های حساس به اکسیداسیون به کار می‌رود. مقادیر متداول در فرآورده‌های موضعی 0.005–0.02% و در روغن‌ها و مواد غذایی تا حدود 0.02% مقدار چربی یا روغن است؛ در برخی فرآورده‌های تزریقی نیز با غلظت کم مصرف می‌شود. اغلب همراه BHT، پروپیل گالات و یک اسید شلات‌کننده مانند سیتریک اسید به کار می‌رود که اثر هم‌افزایی دارند."
   },
   "description": {
    "en": "A white or almost white crystalline powder or a yellowish-white waxy solid with a faint, characteristic aromatic odour.",
@@ -233,7 +233,7 @@
   "mw": "220.35",
   "applications": {
    "en": "An antioxidant used to delay or prevent oxidative rancidity of fats and oils and loss of activity of oil-soluble vitamins in pharmaceuticals, cosmetics and foods. Typical concentrations are 0.0075–0.1% in topical preparations and about 0.01–0.02% of the fat or oil in oils and foods; low concentrations are also used in some injections and in vitamin A preparations. It is commonly combined with BHA, propyl gallate or citric acid.",
-   "fa": "آنتی‌اکسیدانی است که برای به تأخیر انداختن یا جلوگیری از تند شدن اکسیداتیو چربی‌ها و روغن‌ها و کاهش فعالیت ویتامین‌های محلول در چربی در دارو، محصولات آرایشی و غذا به کار می‌رود. غلظت‌های متداول در فرآورده‌های موضعی 0.0075–0.1٪ و در روغن‌ها و غذاها حدود 0.01–0.02٪ مقدار چربی یا روغن است؛ غلظت‌های کم آن در برخی تزریقی‌ها و فرآورده‌های ویتامین A نیز مصرف می‌شود. معمولاً همراه BHA، پروپیل گالات یا سیتریک اسید به کار می‌رود."
+   "fa": "آنتی‌اکسیدانی است که برای به تأخیر انداختن یا جلوگیری از تند شدن اکسیداتیو چربی‌ها و روغن‌ها و کاهش فعالیت ویتامین‌های محلول در چربی در دارو، محصولات آرایشی و غذا به کار می‌رود. غلظت‌های متداول در فرآورده‌های موضعی 0.0075–0.1% و در روغن‌ها و غذاها حدود 0.01–0.02% مقدار چربی یا روغن است؛ غلظت‌های کم آن در برخی تزریقی‌ها و فرآورده‌های ویتامین A نیز مصرف می‌شود. معمولاً همراه BHA، پروپیل گالات یا سیتریک اسید به کار می‌رود."
   },
   "description": {
    "en": "White or pale yellow crystals or crystalline powder with a faint characteristic phenolic odour.",
@@ -338,7 +338,7 @@
   "mw": "90.12",
   "applications": {
    "en": "Butylene glycol is a water-miscible solvent, humectant and co-solvent used mainly in topical pharmaceutical and cosmetic products such as creams, lotions, gels and hair products. It is commonly used at a few per cent up to about 10% as a humectant and solvent; it also enhances the efficacy of preservative systems and has antimicrobial activity of its own at high concentrations. It is used as a solvent for flavourings in foods.",
-   "fa": "بوتیلن گلیکول حلال قابل امتزاج با آب، مرطوب‌کننده (هیومکتانت) و کمک‌حلال است که عمدتاً در فرآورده‌های دارویی و آرایشی موضعی مانند کرم، لوسیون، ژل و محصولات مو به کار می‌رود. به عنوان مرطوب‌کننده و حلال معمولاً از چند درصد تا حدود 10٪ مصرف می‌شود؛ همچنین کارایی سیستم‌های نگهدارنده را افزایش می‌دهد و در غلظت‌های بالا خود اثر ضدمیکروبی دارد. در صنایع غذایی به عنوان حلال طعم‌دهنده‌ها مصرف می‌شود."
+   "fa": "بوتیلن گلیکول حلال قابل امتزاج با آب، مرطوب‌کننده (هیومکتانت) و کمک‌حلال است که عمدتاً در فرآورده‌های دارویی و آرایشی موضعی مانند کرم، لوسیون، ژل و محصولات مو به کار می‌رود. به عنوان مرطوب‌کننده و حلال معمولاً از چند درصد تا حدود 10% مصرف می‌شود؛ همچنین کارایی سیستم‌های نگهدارنده را افزایش می‌دهد و در غلظت‌های بالا خود اثر ضدمیکروبی دارد. در صنایع غذایی به عنوان حلال طعم‌دهنده‌ها مصرف می‌شود."
   },
   "description": {
    "en": "A clear, colourless, viscous and hygroscopic liquid with a slight odour and a sweetish taste with a bitter aftertaste.",
@@ -458,7 +458,7 @@
   "mw": "",
   "applications": {
    "en": "Used as an enteric film coating for tablets and capsules, which resists the acid of the stomach and dissolves in the small intestine, and as a matrix former in granules and tablets for modified release. Coatings are usually applied at about 0.5–9.0% of the core weight from organic solvent solutions or from aqueous dispersions or ammonium-salt solutions, with a plasticiser such as diethyl phthalate, triacetin or triethyl citrate.",
-   "fa": "به عنوان پوشش فیلمی روده‌ای (انتریک) برای قرص و کپسول به کار می‌رود که در برابر اسید معده مقاوم است و در روده باریک حل می‌شود؛ همچنین در گرانول‌ها و قرص‌ها به عنوان ماتریکس برای رهش تعدیل‌شده مصرف می‌شود. پوشش معمولاً به میزان حدود 0.5–9.0٪ وزن هسته، از محلول در حلال آلی یا از دیسپرسیون آبی یا محلول نمک آمونیومی، همراه یک نرم‌کننده (پلاستی‌سایزر) مانند دی‌اتیل فتالات، تری‌استین یا تری‌اتیل سیترات اعمال می‌شود."
+   "fa": "به عنوان پوشش فیلمی روده‌ای (انتریک) برای قرص و کپسول به کار می‌رود که در برابر اسید معده مقاوم است و در روده باریک حل می‌شود؛ همچنین در گرانول‌ها و قرص‌ها به عنوان ماتریکس برای رهش تعدیل‌شده مصرف می‌شود. پوشش معمولاً به میزان حدود 0.5–9.0% وزن هسته، از محلول در حلال آلی یا از دیسپرسیون آبی یا محلول نمک آمونیومی، همراه یک نرم‌کننده (پلاستی‌سایزر) مانند دی‌اتیل فتالات، تری‌استین یا تری‌اتیل سیترات اعمال می‌شود."
   },
   "description": {
    "en": "A hygroscopic, white to off-white, free-flowing powder, granules or flakes. It is tasteless and odourless, or may have a faint odour of acetic acid.",
@@ -472,7 +472,7 @@
     },
     "v": {
      "en": "21.5–26.0% (USP-NF, anhydrous, acid-free basis)",
-     "fa": "21.5–26.0٪ (USP-NF، بر پایه بدون آب و بدون اسید آزاد)"
+     "fa": "21.5–26.0% (USP-NF، بر پایه بدون آب و بدون اسید آزاد)"
     }
    },
    {
@@ -482,7 +482,7 @@
     },
     "v": {
      "en": "30.0–36.0% (USP-NF, anhydrous, acid-free basis)",
-     "fa": "30.0–36.0٪ (USP-NF، بر پایه بدون آب و بدون اسید آزاد)"
+     "fa": "30.0–36.0% (USP-NF، بر پایه بدون آب و بدون اسید آزاد)"
     }
    },
    {
@@ -492,7 +492,7 @@
     },
     "v": {
      "en": "not more than 6.0% (calculated as phthalic acid)",
-     "fa": "حداکثر 6.0٪ (بر حسب فتالیک اسید)"
+     "fa": "حداکثر 6.0% (بر حسب فتالیک اسید)"
     }
    },
    {
@@ -522,7 +522,7 @@
     },
     "v": {
      "en": "not more than 5.0% (hygroscopic)",
-     "fa": "حداکثر 5.0٪ (رطوبت‌گیر)"
+     "fa": "حداکثر 5.0% (رطوبت‌گیر)"
     }
    }
   ],
@@ -591,7 +591,7 @@
   "mw": "≈ 243 000",
   "applications": {
    "en": "Used as a tablet and capsule diluent (filler), and also as a tablet binder and disintegrant, a glidant, a suspending or thickening agent and a carrier in oral and topical products. Typical concentrations: capsule filler 0–100%; tablet binder 5–25%; tablet disintegrant 5–15%; glidant 1–2%. It is also used in foods as a source of dietary fibre and as an anticaking agent.",
-   "fa": "به عنوان رقیق‌کننده (پرکننده) قرص و کپسول، و نیز چسباننده و متلاشی‌کننده قرص، تسهیل‌کننده جریان (Glidant)، عامل تعلیق‌دهنده یا غلیظ‌کننده و حامل در فرآورده‌های خوراکی و موضعی به کار می‌رود. غلظت‌های متداول: پرکننده کپسول 0–100٪؛ چسباننده قرص 5–25٪؛ متلاشی‌کننده قرص 5–15٪؛ تسهیل‌کننده جریان 1–2٪. در صنایع غذایی نیز به عنوان منبع فیبر و ضدکلوخه مصرف می‌شود."
+   "fa": "به عنوان رقیق‌کننده (پرکننده) قرص و کپسول، و نیز چسباننده و متلاشی‌کننده قرص، تسهیل‌کننده جریان (Glidant)، عامل تعلیق‌دهنده یا غلیظ‌کننده و حامل در فرآورده‌های خوراکی و موضعی به کار می‌رود. غلظت‌های متداول: پرکننده کپسول 0–100%؛ چسباننده قرص 5–25%؛ متلاشی‌کننده قرص 5–15%؛ تسهیل‌کننده جریان 1–2%. در صنایع غذایی نیز به عنوان منبع فیبر و ضدکلوخه مصرف می‌شود."
   },
   "description": {
    "en": "A white or almost white, odourless and tasteless powder of various particle sizes, ranging from a free-flowing fine or granular powder to a coarse, fluffy, non-flowing material.",
@@ -615,7 +615,7 @@
     },
     "v": {
      "en": "5.0–7.5 (supernatant of a 10% w/v aqueous dispersion)",
-     "fa": "5.0–7.5 (مایع رویی سوسپانسیون آبی 10٪)"
+     "fa": "5.0–7.5 (مایع رویی سوسپانسیون آبی 10%)"
     }
    },
    {
@@ -635,7 +635,7 @@
     },
     "v": {
      "en": "slightly hygroscopic; loss on drying typically not more than 6.5%",
-     "fa": "کمی رطوبت‌گیر؛ افت وزن در اثر خشک کردن معمولاً حداکثر 6.5٪"
+     "fa": "کمی رطوبت‌گیر؛ افت وزن در اثر خشک کردن معمولاً حداکثر 6.5%"
     }
    },
    {
@@ -645,7 +645,7 @@
     },
     "v": {
      "en": "practically insoluble in water, dilute acids and most organic solvents; slightly soluble in 5% w/v sodium hydroxide solution",
-     "fa": "عملاً نامحلول در آب، اسیدهای رقیق و بیشتر حلال‌های آلی؛ کمی محلول در محلول 5٪ سدیم هیدروکسید"
+     "fa": "عملاً نامحلول در آب، اسیدهای رقیق و بیشتر حلال‌های آلی؛ کمی محلول در محلول 5% سدیم هیدروکسید"
     }
    }
   ],
@@ -704,7 +704,7 @@
   "mw": "",
   "applications": {
    "en": "A filler–binder for tablets and capsules, used particularly in direct compression but also in wet granulation, dry granulation and capsule filling. Like microcrystalline cellulose it is used over a wide range, typically about 20–90% of the formulation weight, and it is especially helpful for high-dose drugs and formulations with poor flow.",
-   "fa": "پرکننده–چسباننده قرص و کپسول است که به‌ویژه در پرس مستقیم و نیز در گرانولاسیون مرطوب، گرانولاسیون خشک و پرکردن کپسول به کار می‌رود. مانند سلولز میکروکریستالی در محدوده گسترده‌ای، معمولاً حدود 20–90٪ وزن فرمولاسیون، مصرف می‌شود و به‌خصوص برای داروهای پردوز و فرمولاسیون‌هایی با جریان‌پذیری ضعیف مفید است."
+   "fa": "پرکننده–چسباننده قرص و کپسول است که به‌ویژه در پرس مستقیم و نیز در گرانولاسیون مرطوب، گرانولاسیون خشک و پرکردن کپسول به کار می‌رود. مانند سلولز میکروکریستالی در محدوده گسترده‌ای، معمولاً حدود 20–90% وزن فرمولاسیون، مصرف می‌شود و به‌خصوص برای داروهای پردوز و فرمولاسیون‌هایی با جریان‌پذیری ضعیف مفید است."
   },
   "description": {
    "en": "A fine, white or almost white, odourless and tasteless, free-flowing powder made of agglomerated particles of microcrystalline cellulose with colloidal silicon dioxide distributed over their surface.",
@@ -718,7 +718,7 @@
     },
     "v": {
      "en": "microcrystalline cellulose with about 2% w/w colloidal silicon dioxide",
-     "fa": "سلولز میکروکریستالی همراه حدود 2٪ وزنی سیلیکون دی‌اکسید کلوئیدی"
+     "fa": "سلولز میکروکریستالی همراه حدود 2% وزنی سیلیکون دی‌اکسید کلوئیدی"
     }
    },
    {
@@ -806,7 +806,7 @@
   "mw": "≈ 310 000",
   "applications": {
    "en": "Ceratonia is a thickening, suspending and stabilising agent used mainly in foods and, to a lesser extent, in oral and topical pharmaceutical products; it has also been studied as a hydrophilic matrix former for controlled-release tablets, often combined with xanthan gum. In foods it is typically used at about 0.1–1%. It is an ingredient of thickened infant formulas used for regurgitation.",
-   "fa": "سراتونیا (صمغ لوبیای خرنوب) عامل غلیظ‌کننده، تعلیق‌دهنده و پایدارکننده است که عمدتاً در صنایع غذایی و به میزان کمتر در فرآورده‌های دارویی خوراکی و موضعی به کار می‌رود؛ به عنوان ماتریکس آب‌دوست در قرص‌های رهش کنترل‌شده، اغلب همراه با زانتان گام، نیز بررسی شده است. در غذا معمولاً با غلظت حدود 0.1–1٪ مصرف می‌شود. در شیرخشک‌های غلیظ‌شده ضدبرگشت (ضدریفلاکس) نوزادان نیز وجود دارد."
+   "fa": "سراتونیا (صمغ لوبیای خرنوب) عامل غلیظ‌کننده، تعلیق‌دهنده و پایدارکننده است که عمدتاً در صنایع غذایی و به میزان کمتر در فرآورده‌های دارویی خوراکی و موضعی به کار می‌رود؛ به عنوان ماتریکس آب‌دوست در قرص‌های رهش کنترل‌شده، اغلب همراه با زانتان گام، نیز بررسی شده است. در غذا معمولاً با غلظت حدود 0.1–1% مصرف می‌شود. در شیرخشک‌های غلیظ‌شده ضدبرگشت (ضدریفلاکس) نوزادان نیز وجود دارد."
   },
   "description": {
    "en": "A white to yellowish-white, almost odourless powder obtained by milling the endosperm of carob seeds.",
@@ -840,7 +840,7 @@
     },
     "v": {
      "en": "forms highly viscous, pseudoplastic dispersions at low concentrations (around 1%); viscosity is relatively unaffected by pH over a wide range",
-     "fa": "در غلظت‌های کم (حدود 1٪) دیسپرسیون‌های بسیار ویسکوز و شبه‌پلاستیک تشکیل می‌دهد؛ ویسکوزیته در محدوده وسیعی از pH نسبتاً ثابت است"
+     "fa": "در غلظت‌های کم (حدود 1%) دیسپرسیون‌های بسیار ویسکوز و شبه‌پلاستیک تشکیل می‌دهد؛ ویسکوزیته در محدوده وسیعی از pH نسبتاً ثابت است"
     }
    },
    {
@@ -914,7 +914,7 @@
   "mw": "",
   "applications": {
    "en": "Used in creams, lotions and ointments as an emollient, a stiffening (consistency-building) agent and a co-emulsifier that stabilises oil-in-water emulsions together with an ionic or non-ionic surfactant. Typical concentrations are about 2–10%, depending on the consistency required. Combined with sodium lauryl sulfate or sodium cetostearyl sulfate it forms emulsifying cetostearyl alcohol (emulsifying wax). It is also used in suppositories and in some modified-release oral matrices.",
-   "fa": "در کرم‌ها، لوسیون‌ها و پمادها به عنوان نرم‌کننده پوست (امولینت)، عامل قوام‌دهنده و کمک‌امولسیفایر به کار می‌رود که همراه یک سورفکتانت یونی یا غیریونی امولسیون‌های روغن در آب را پایدار می‌کند. غلظت‌های متداول بسته به قوام مورد نیاز حدود 2–10٪ است. ترکیب آن با سدیم لوریل سولفات یا سدیم ستواستئاریل سولفات، ستواستئاریل الکل امولسیفایر (موم امولسیفایر) را می‌سازد. در شیاف‌ها و برخی ماتریکس‌های خوراکی رهش تعدیل‌شده نیز مصرف می‌شود."
+   "fa": "در کرم‌ها، لوسیون‌ها و پمادها به عنوان نرم‌کننده پوست (امولینت)، عامل قوام‌دهنده و کمک‌امولسیفایر به کار می‌رود که همراه یک سورفکتانت یونی یا غیریونی امولسیون‌های روغن در آب را پایدار می‌کند. غلظت‌های متداول بسته به قوام مورد نیاز حدود 2–10% است. ترکیب آن با سدیم لوریل سولفات یا سدیم ستواستئاریل سولفات، ستواستئاریل الکل امولسیفایر (موم امولسیفایر) را می‌سازد. در شیاف‌ها و برخی ماتریکس‌های خوراکی رهش تعدیل‌شده نیز مصرف می‌شود."
   },
   "description": {
    "en": "A white or pale yellow, waxy, unctuous mass, or white flakes, pellets or granules, with a faint characteristic odour and a bland taste.",
@@ -928,7 +928,7 @@
     },
     "v": {
      "en": "stearyl alcohol not less than 40% and stearyl plus cetyl alcohol not less than 90% (Ph. Eur.)",
-     "fa": "استئاریل الکل دست‌کم 40٪ و مجموع استئاریل و ستیل الکل دست‌کم 90٪ (فارماکوپه اروپا)"
+     "fa": "استئاریل الکل دست‌کم 40% و مجموع استئاریل و ستیل الکل دست‌کم 90% (فارماکوپه اروپا)"
     }
    },
    {
@@ -968,7 +968,7 @@
     },
     "v": {
      "en": "practically insoluble in water; soluble in ethanol (95%), ether and light petroleum; when melted, miscible with fats and liquid and solid paraffins",
-     "fa": "عملاً نامحلول در آب؛ محلول در اتانول 95٪، اتر و پترولیوم سبک؛ در حالت مذاب با چربی‌ها و پارافین‌های مایع و جامد قابل امتزاج"
+     "fa": "عملاً نامحلول در آب؛ محلول در اتانول 95%، اتر و پترولیوم سبک؛ در حالت مذاب با چربی‌ها و پارافین‌های مایع و جامد قابل امتزاج"
     }
    }
   ],
@@ -1028,7 +1028,7 @@
   "mw": "336.40 (tetradecyl compound)",
   "applications": {
    "en": "A quaternary ammonium antiseptic and cationic surfactant used in topical antiseptic creams and solutions (typically 0.1–1.0%), in wound and skin cleansers, and in medicated shampoos for seborrhoea and dandruff; it has also been used as an antimicrobial preservative in eye drops at about 0.005% w/v. It is frequently combined with chlorhexidine.",
-   "fa": "یک ضدعفونی‌کننده آمونیوم چهارتایی و سورفکتانت کاتیونی است که در کرم‌ها و محلول‌های ضدعفونی‌کننده موضعی (معمولاً 0.1–1.0٪)، پاک‌کننده‌های زخم و پوست، و شامپوهای دارویی برای سبوره و شوره سر به کار می‌رود؛ به عنوان نگهدارنده ضدمیکروبی در قطره‌های چشمی با غلظت حدود 0.005٪ وزنی/حجمی نیز مصرف شده است. اغلب همراه کلرهگزیدین به کار می‌رود."
+   "fa": "یک ضدعفونی‌کننده آمونیوم چهارتایی و سورفکتانت کاتیونی است که در کرم‌ها و محلول‌های ضدعفونی‌کننده موضعی (معمولاً 0.1–1.0%)، پاک‌کننده‌های زخم و پوست، و شامپوهای دارویی برای سبوره و شوره سر به کار می‌رود؛ به عنوان نگهدارنده ضدمیکروبی در قطره‌های چشمی با غلظت حدود 0.005% وزنی/حجمی نیز مصرف شده است. اغلب همراه کلرهگزیدین به کار می‌رود."
   },
   "description": {
    "en": "A white to creamy-white, voluminous, free-flowing powder with a faint characteristic odour and a bitter, soapy taste.",
@@ -1128,7 +1128,7 @@
   "mw": "242.44",
   "applications": {
    "en": "Used in creams, lotions and ointments for its emollient, emulsifying, stiffening and water-absorbing properties, and in suppositories and modified-release solid dosage forms. Typical concentrations: emollient 2–5%; emulsifying agent 2–5%; stiffening agent 2–10%; water absorption 5%. Added to petrolatum, about 5% markedly increases the amount of water the base can take up, and in oil-in-water emulsions it acts as a co-emulsifier that improves stability and texture.",
-   "fa": "در کرم‌ها، لوسیون‌ها و پمادها به دلیل خاصیت نرم‌کنندگی پوست، امولسیفایری، قوام‌دهندگی و جذب آب، و نیز در شیاف‌ها و اشکال دارویی جامد رهش تعدیل‌شده به کار می‌رود. غلظت‌های متداول: نرم‌کننده 2–5٪؛ امولسیفایر 2–5٪؛ قوام‌دهنده 2–10٪؛ جذب آب 5٪. افزودن حدود 5٪ آن به پترولاتوم ظرفیت جذب آب پایه را به‌طور چشمگیری افزایش می‌دهد و در امولسیون‌های روغن در آب به عنوان کمک‌امولسیفایر پایداری و بافت را بهبود می‌بخشد."
+   "fa": "در کرم‌ها، لوسیون‌ها و پمادها به دلیل خاصیت نرم‌کنندگی پوست، امولسیفایری، قوام‌دهندگی و جذب آب، و نیز در شیاف‌ها و اشکال دارویی جامد رهش تعدیل‌شده به کار می‌رود. غلظت‌های متداول: نرم‌کننده 2–5%؛ امولسیفایر 2–5%؛ قوام‌دهنده 2–10%؛ جذب آب 5%. افزودن حدود 5% آن به پترولاتوم ظرفیت جذب آب پایه را به‌طور چشمگیری افزایش می‌دهد و در امولسیون‌های روغن در آب به عنوان کمک‌امولسیفایر پایداری و بافت را بهبود می‌بخشد."
   },
   "description": {
    "en": "Waxy, white flakes, granules, cubes or castings with a faint characteristic odour and a bland taste. Pharmacopoeial material contains mainly hexadecan-1-ol together with smaller amounts of related aliphatic alcohols, chiefly octadecan-1-ol.",
@@ -1182,7 +1182,7 @@
     },
     "v": {
      "en": "freely soluble in ethanol (95%) and ether; solubility increases with temperature; practically insoluble in water; miscible with fats and paraffins when melted",
-     "fa": "به‌راحتی محلول در اتانول 95٪ و اتر و حلالیت با افزایش دما بیشتر می‌شود؛ عملاً نامحلول در آب؛ در حالت مذاب با چربی‌ها و پارافین‌ها قابل امتزاج"
+     "fa": "به‌راحتی محلول در اتانول 95% و اتر و حلالیت با افزایش دما بیشتر می‌شود؛ عملاً نامحلول در آب؛ در حالت مذاب با چربی‌ها و پارافین‌ها قابل امتزاج"
     }
    }
   ],
@@ -1247,7 +1247,7 @@
   "mw": "480.85",
   "applications": {
    "en": "A wax ester used in topical creams, ointments and lotions as an emollient, consistency-giving agent and pearlising agent, typically at about 1–10%. It is also used as a solid lipid in solid lipid nanoparticles and nanostructured lipid carriers, in suppositories, and in cosmetics such as lipsticks.",
-   "fa": "یک استر مومی است که در کرم‌ها، پمادها و لوسیون‌های موضعی به عنوان نرم‌کننده پوست، قوام‌دهنده و عامل ایجاد جلای مرواریدی، معمولاً با غلظت حدود 1–10٪، به کار می‌رود. همچنین به عنوان لیپید جامد در نانوذرات لیپیدی جامد (SLN) و حامل‌های لیپیدی نانوساختار (NLC)، در شیاف‌ها و در محصولات آرایشی مانند رژ لب مصرف می‌شود."
+   "fa": "یک استر مومی است که در کرم‌ها، پمادها و لوسیون‌های موضعی به عنوان نرم‌کننده پوست، قوام‌دهنده و عامل ایجاد جلای مرواریدی، معمولاً با غلظت حدود 1–10%، به کار می‌رود. همچنین به عنوان لیپید جامد در نانوذرات لیپیدی جامد (SLN) و حامل‌های لیپیدی نانوساختار (NLC)، در شیاف‌ها و در محصولات آرایشی مانند رژ لب مصرف می‌شود."
   },
   "description": {
    "en": "White or almost white, waxy flakes, plates or powder with a faint odour.",
@@ -1355,7 +1355,7 @@
   "mw": "358.01",
   "applications": {
    "en": "A quaternary ammonium cationic surfactant used as an antiseptic in mouthwashes (typically about 0.05–0.1% w/v), throat lozenges and toothpastes, and as an antimicrobial preservative at lower concentrations in some nasal, inhalation and topical products. It is also used as a cationic surfactant to solubilise drugs.",
-   "fa": "یک سورفکتانت کاتیونی آمونیوم چهارتایی است که به عنوان ضدعفونی‌کننده در دهان‌شویه‌ها (معمولاً حدود 0.05–0.1٪ وزنی/حجمی)، قرص‌های مکیدنی گلو و خمیردندان‌ها، و به عنوان نگهدارنده ضدمیکروبی با غلظت کمتر در برخی فرآورده‌های بینی، استنشاقی و موضعی به کار می‌رود. به عنوان سورفکتانت کاتیونی برای حل کردن داروها نیز مصرف می‌شود."
+   "fa": "یک سورفکتانت کاتیونی آمونیوم چهارتایی است که به عنوان ضدعفونی‌کننده در دهان‌شویه‌ها (معمولاً حدود 0.05–0.1% وزنی/حجمی)، قرص‌های مکیدنی گلو و خمیردندان‌ها، و به عنوان نگهدارنده ضدمیکروبی با غلظت کمتر در برخی فرآورده‌های بینی، استنشاقی و موضعی به کار می‌رود. به عنوان سورفکتانت کاتیونی برای حل کردن داروها نیز مصرف می‌شود."
   },
   "description": {
    "en": "A white or almost white powder, slightly soapy to the touch, with a faint characteristic odour.",
@@ -1459,7 +1459,7 @@
   "mw": "≈ 10 000–1 000 000 (grade-dependent)",
   "applications": {
    "en": "Chitosan is used as a mucoadhesive polymer, permeation enhancer (particularly for nasal and oral delivery), film former, gel former and matrix for modified-release tablets, beads and microspheres; it also forms nanoparticles and polyelectrolyte complexes with anionic polymers and nucleic acids. Solutions of about 0.5–2% w/v in dilute acid are commonly used to prepare gels, films and coatings. It is also used in wound dressings and haemostatic products and as a dietary supplement.",
-   "fa": "کیتوزان به عنوان پلیمر چسبنده به مخاط (موکوادهزیو)، افزایش‌دهنده نفوذ (به‌ویژه در رسانش بینی و خوراکی)، فیلم‌ساز، ژل‌ساز و ماتریکس برای قرص‌ها، گرانول‌ها و میکروسفرهای رهش تعدیل‌شده به کار می‌رود؛ با پلیمرهای آنیونی و اسیدهای نوکلئیک نیز نانوذره و کمپلکس پلی‌الکترولیتی تشکیل می‌دهد. محلول‌های حدود 0.5–2٪ وزنی/حجمی در اسید رقیق معمولاً برای تهیه ژل، فیلم و پوشش مصرف می‌شوند. در پانسمان زخم، فرآورده‌های بندآورنده خون (هموستاتیک) و مکمل‌های غذایی نیز کاربرد دارد."
+   "fa": "کیتوزان به عنوان پلیمر چسبنده به مخاط (موکوادهزیو)، افزایش‌دهنده نفوذ (به‌ویژه در رسانش بینی و خوراکی)، فیلم‌ساز، ژل‌ساز و ماتریکس برای قرص‌ها، گرانول‌ها و میکروسفرهای رهش تعدیل‌شده به کار می‌رود؛ با پلیمرهای آنیونی و اسیدهای نوکلئیک نیز نانوذره و کمپلکس پلی‌الکترولیتی تشکیل می‌دهد. محلول‌های حدود 0.5–2% وزنی/حجمی در اسید رقیق معمولاً برای تهیه ژل، فیلم و پوشش مصرف می‌شوند. در پانسمان زخم، فرآورده‌های بندآورنده خون (هموستاتیک) و مکمل‌های غذایی نیز کاربرد دارد."
   },
   "description": {
    "en": "An odourless, white or creamy-white to pale yellow powder or flakes. Commercial grades differ widely in molecular weight, degree of deacetylation and viscosity.",
@@ -1473,7 +1473,7 @@
     },
     "v": {
      "en": "commonly about 70–95% for pharmaceutical grades",
-     "fa": "معمولاً حدود 70–95٪ در گریدهای دارویی"
+     "fa": "معمولاً حدود 70–95% در گریدهای دارویی"
     }
    },
    {
@@ -1493,7 +1493,7 @@
     },
     "v": {
      "en": "the free base is insoluble in water at neutral and alkaline pH and in organic solvents, but dissolves in dilute acids (for example 1% acetic acid) below about pH 6; the hydrochloride is soluble in water",
-     "fa": "باز آزاد در آب با pH خنثی و قلیایی و در حلال‌های آلی نامحلول است، ولی در اسیدهای رقیق (مثلاً استیک اسید 1٪) در pH کمتر از حدود 6 حل می‌شود؛ نمک هیدروکلراید در آب محلول است"
+     "fa": "باز آزاد در آب با pH خنثی و قلیایی و در حلال‌های آلی نامحلول است، ولی در اسیدهای رقیق (مثلاً استیک اسید 1%) در pH کمتر از حدود 6 حل می‌شود؛ نمک هیدروکلراید در آب محلول است"
     }
    },
    {
@@ -1503,7 +1503,7 @@
     },
     "v": {
      "en": "strongly dependent on molecular weight and degree of deacetylation; grades range from low to very high viscosity in 1% acid solution",
-     "fa": "به‌شدت به وزن مولکولی و درجه داستیلاسیون وابسته است؛ گریدها در محلول اسیدی 1٪ از ویسکوزیته کم تا بسیار زیاد متغیرند"
+     "fa": "به‌شدت به وزن مولکولی و درجه داستیلاسیون وابسته است؛ گریدها در محلول اسیدی 1% از ویسکوزیته کم تا بسیار زیاد متغیرند"
     }
    },
    {
@@ -1579,11 +1579,11 @@
   "mw": "897.76",
   "applications": {
    "en": "A bisbiguanide antiseptic used as an antimicrobial preservative in eye drops, contact lens solutions and topical products at about 0.0025–0.01% w/v, and as the active ingredient in antiseptic products: about 0.05% for wound cleansing, 0.12–0.2% in mouthwashes, 0.5% in 70% ethanol or 2% in 70% isopropyl alcohol for skin preparation, and 4% in surgical hand scrubs. Its persistent binding to skin and mucosa gives a prolonged residual effect.",
-   "fa": "یک ضدعفونی‌کننده بیس‌بیگوانیدی است که به عنوان نگهدارنده ضدمیکروبی در قطره‌های چشمی، محلول‌های لنز تماسی و فرآورده‌های موضعی با غلظت حدود 0.0025–0.01٪ وزنی/حجمی و به عنوان ماده مؤثر فرآورده‌های ضدعفونی‌کننده به کار می‌رود: حدود 0.05٪ برای شستشوی زخم، 0.12–0.2٪ در دهان‌شویه‌ها، 0.5٪ در اتانول 70٪ یا 2٪ در ایزوپروپیل الکل 70٪ برای آماده‌سازی پوست، و 4٪ در اسکراب‌های جراحی دست. اتصال پایدار آن به پوست و مخاط اثر باقیمانده طولانی ایجاد می‌کند."
+   "fa": "یک ضدعفونی‌کننده بیس‌بیگوانیدی است که به عنوان نگهدارنده ضدمیکروبی در قطره‌های چشمی، محلول‌های لنز تماسی و فرآورده‌های موضعی با غلظت حدود 0.0025–0.01% وزنی/حجمی و به عنوان ماده مؤثر فرآورده‌های ضدعفونی‌کننده به کار می‌رود: حدود 0.05% برای شستشوی زخم، 0.12–0.2% در دهان‌شویه‌ها، 0.5% در اتانول 70% یا 2% در ایزوپروپیل الکل 70% برای آماده‌سازی پوست، و 4% در اسکراب‌های جراحی دست. اتصال پایدار آن به پوست و مخاط اثر باقیمانده طولانی ایجاد می‌کند."
   },
   "description": {
    "en": "The pharmacopoeial material is a clear or slightly opalescent, almost colourless or pale yellow aqueous solution containing about 20% w/v chlorhexidine digluconate; it is practically odourless and has a bitter taste.",
-   "fa": "ماده فارماکوپه‌ای محلولی آبی، شفاف یا کمی اوپالسانت، تقریباً بی‌رنگ یا زرد کم‌رنگ است که حدود 20٪ وزنی/حجمی کلرهگزیدین دی‌گلوکونات دارد؛ عملاً بی‌بو و تلخ است."
+   "fa": "ماده فارماکوپه‌ای محلولی آبی، شفاف یا کمی اوپالسانت، تقریباً بی‌رنگ یا زرد کم‌رنگ است که حدود 20% وزنی/حجمی کلرهگزیدین دی‌گلوکونات دارد؛ عملاً بی‌بو و تلخ است."
   },
   "properties": [
    {
@@ -1593,7 +1593,7 @@
     },
     "v": {
      "en": "19.0–21.0% w/v of chlorhexidine digluconate in the pharmacopoeial solution",
-     "fa": "19.0–21.0٪ وزنی/حجمی کلرهگزیدین دی‌گلوکونات در محلول فارماکوپه‌ای"
+     "fa": "19.0–21.0% وزنی/حجمی کلرهگزیدین دی‌گلوکونات در محلول فارماکوپه‌ای"
     }
    },
    {
@@ -1613,7 +1613,7 @@
     },
     "v": {
      "en": "5.5–7.0 (solution diluted to 5% w/v)",
-     "fa": "5.5–7.0 (محلول رقیق‌شده تا 5٪)"
+     "fa": "5.5–7.0 (محلول رقیق‌شده تا 5%)"
     }
    },
    {
@@ -1709,7 +1709,7 @@
   "mw": "177.46 (anhydrous); 186.46 (hemihydrate)",
   "applications": {
    "en": "An antimicrobial preservative, with both antibacterial and antifungal activity, used mainly at 0.5% w/v in injections, ophthalmic and nasal preparations and other liquid products. It also has mild sedative and local anaesthetic properties and is used as a plasticiser for cellulose esters.",
-   "fa": "نگهدارنده ضدمیکروبی با اثر ضدباکتری و ضدقارچ است که عمدتاً با غلظت 0.5٪ وزنی/حجمی در تزریقی‌ها، فرآورده‌های چشمی و بینی و سایر فرآورده‌های مایع به کار می‌رود. همچنین خواص آرام‌بخش و بی‌حس‌کننده موضعی خفیف دارد و به عنوان نرم‌کننده (پلاستی‌سایزر) استرهای سلولز مصرف می‌شود."
+   "fa": "نگهدارنده ضدمیکروبی با اثر ضدباکتری و ضدقارچ است که عمدتاً با غلظت 0.5% وزنی/حجمی در تزریقی‌ها، فرآورده‌های چشمی و بینی و سایر فرآورده‌های مایع به کار می‌رود. همچنین خواص آرام‌بخش و بی‌حس‌کننده موضعی خفیف دارد و به عنوان نرم‌کننده (پلاستی‌سایزر) استرهای سلولز مصرف می‌شود."
   },
   "description": {
    "en": "Colourless or white crystals or crystalline powder with a characteristic, somewhat camphoraceous odour. It is volatile and sublimes readily.",
@@ -1781,7 +1781,7 @@
   },
   "safety": {
    "en": "At the preservative concentration of 0.5% it is generally well tolerated, although hypersensitivity reactions have been reported. Larger systemic doses cause sedation and CNS depression, and the drug has a long elimination half-life, so cumulative exposure from frequently dosed parenteral products should be considered.",
-   "fa": "در غلظت نگهدارنده 0.5٪ عموماً به‌خوبی تحمل می‌شود، هرچند واکنش‌های حساسیتی گزارش شده است. دوزهای سیستمیک بالاتر موجب خواب‌آلودگی و تضعیف CNS می‌شوند و نیمه‌عمر حذف آن طولانی است؛ بنابراین مواجهه تجمعی ناشی از فرآورده‌های تزریقی پرتکرار باید در نظر گرفته شود."
+   "fa": "در غلظت نگهدارنده 0.5% عموماً به‌خوبی تحمل می‌شود، هرچند واکنش‌های حساسیتی گزارش شده است. دوزهای سیستمیک بالاتر موجب خواب‌آلودگی و تضعیف CNS می‌شوند و نیمه‌عمر حذف آن طولانی است؛ بنابراین مواجهه تجمعی ناشی از فرآورده‌های تزریقی پرتکرار باید در نظر گرفته شود."
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled. It is irritant to the eyes, skin and respiratory tract; wear eye protection and gloves and handle in a well-ventilated area.",
@@ -1828,7 +1828,7 @@
   "mw": "142.58",
   "applications": {
    "en": "A phenolic antimicrobial preservative used mainly in topical creams and emulsions, typically at about 0.1% w/v (up to about 0.2%), and at about 0.1% in some multidose injections. It is not suitable for eye drops because it irritates the eye. At higher concentrations it is used as a disinfectant.",
-   "fa": "یک نگهدارنده ضدمیکروبی فنلی است که عمدتاً در کرم‌ها و امولسیون‌های موضعی، معمولاً با غلظت حدود 0.1٪ وزنی/حجمی (تا حدود 0.2٪) و در برخی تزریقی‌های چنددوزی با غلظت حدود 0.1٪ به کار می‌رود. به دلیل تحریک چشم برای قطره‌های چشمی مناسب نیست. در غلظت‌های بالاتر به عنوان گندزدا مصرف می‌شود."
+   "fa": "یک نگهدارنده ضدمیکروبی فنلی است که عمدتاً در کرم‌ها و امولسیون‌های موضعی، معمولاً با غلظت حدود 0.1% وزنی/حجمی (تا حدود 0.2%) و در برخی تزریقی‌های چنددوزی با غلظت حدود 0.1% به کار می‌رود. به دلیل تحریک چشم برای قطره‌های چشمی مناسب نیست. در غلظت‌های بالاتر به عنوان گندزدا مصرف می‌شود."
   },
   "description": {
    "en": "Colourless or almost white crystals or crystalline powder with a characteristic phenolic odour.",
@@ -1941,7 +1941,7 @@
   "mw": "156.61",
   "applications": {
    "en": "A phenolic antimicrobial used as a preservative in topical creams, lotions and shampoos, typically at about 0.1–0.8%, and as the active ingredient of antiseptic and disinfectant products such as skin cleansers and hand washes; Chloroxylenol Solution BP contains 5% w/v solubilised with soap, terpineol and alcohol.",
-   "fa": "یک ماده ضدمیکروبی فنلی است که به عنوان نگهدارنده در کرم‌ها، لوسیون‌ها و شامپوهای موضعی، معمولاً با غلظت حدود 0.1–0.8٪، و به عنوان ماده مؤثر فرآورده‌های ضدعفونی‌کننده و گندزدا مانند پاک‌کننده‌های پوست و مایع‌های شستشوی دست به کار می‌رود؛ Chloroxylenol Solution BP حاوی 5٪ وزنی/حجمی است که با صابون، ترپینئول و الکل محلول شده است."
+   "fa": "یک ماده ضدمیکروبی فنلی است که به عنوان نگهدارنده در کرم‌ها، لوسیون‌ها و شامپوهای موضعی، معمولاً با غلظت حدود 0.1–0.8%، و به عنوان ماده مؤثر فرآورده‌های ضدعفونی‌کننده و گندزدا مانند پاک‌کننده‌های پوست و مایع‌های شستشوی دست به کار می‌رود؛ Chloroxylenol Solution BP حاوی 5% وزنی/حجمی است که با صابون، ترپینئول و الکل محلول شده است."
   },
   "description": {
    "en": "White or creamy-white crystals or crystalline powder with a characteristic phenolic odour. It is volatile in steam.",
@@ -2051,7 +2051,7 @@
   "mw": "386.65",
   "applications": {
    "en": "Used as an emulsifying agent and emollient in topical creams and ointments, typically at about 0.3–5.0%, where it gives water-in-oil emulsions and increases the water-absorbing capacity of ointment bases. It is an essential membrane component of liposomes (commonly about 30–50 mol% of total lipid), where it reduces bilayer permeability and improves stability, and of lipid nanoparticles for nucleic acid delivery, which typically contain about 40 mol%.",
-   "fa": "به عنوان امولسیفایر و نرم‌کننده پوست در کرم‌ها و پمادهای موضعی، معمولاً با غلظت حدود 0.3–5.0٪، به کار می‌رود؛ در این فرآورده‌ها امولسیون آب در روغن ایجاد و ظرفیت جذب آب پایه‌های پماد را زیاد می‌کند. جزء غشایی اساسی لیپوزوم‌ها (معمولاً حدود 30–50 درصد مولی لیپید کل) است که نفوذپذیری دولایه را کم و پایداری را بیشتر می‌کند، و نیز جزء نانوذرات لیپیدی (LNP) برای رسانش اسیدهای نوکلئیک است که معمولاً حدود 40 درصد مولی آن را دارند."
+   "fa": "به عنوان امولسیفایر و نرم‌کننده پوست در کرم‌ها و پمادهای موضعی، معمولاً با غلظت حدود 0.3–5.0%، به کار می‌رود؛ در این فرآورده‌ها امولسیون آب در روغن ایجاد و ظرفیت جذب آب پایه‌های پماد را زیاد می‌کند. جزء غشایی اساسی لیپوزوم‌ها (معمولاً حدود 30–50 درصد مولی لیپید کل) است که نفوذپذیری دولایه را کم و پایداری را بیشتر می‌کند، و نیز جزء نانوذرات لیپیدی (LNP) برای رسانش اسیدهای نوکلئیک است که معمولاً حدود 40 درصد مولی آن را دارند."
   },
   "description": {
    "en": "White or faintly yellow, almost odourless pearly leaflets, needles, powder or granules. On prolonged exposure to light and air it gradually becomes yellow to tan.",
@@ -2164,7 +2164,7 @@
   "mw": "192.12 (anhydrous); 210.14 (monohydrate)",
   "applications": {
    "en": "Widely used as an acidifier, buffer component (with sodium citrate), flavour enhancer and chelating antioxidant synergist in oral, topical and parenteral products, cosmetics and foods. Typical concentrations: buffer solutions 0.1–2.0%; flavour enhancer in oral liquids 0.3–2.0%; sequestering agent 0.3–2.0%. In effervescent tablets and granules it is combined with sodium bicarbonate or carbonate as the acid source, at much higher proportions.",
-   "fa": "به‌طور گسترده به عنوان اسیدی‌کننده، جزء بافر (همراه سدیم سیترات)، تقویت‌کننده طعم و هم‌افزای آنتی‌اکسیدان از طریق شلات کردن فلزات در فرآورده‌های خوراکی، موضعی و تزریقی، محصولات آرایشی و غذا به کار می‌رود. غلظت‌های متداول: محلول‌های بافر 0.1–2.0٪؛ تقویت‌کننده طعم در مایعات خوراکی 0.3–2.0٪؛ عامل شلات‌کننده 0.3–2.0٪. در قرص‌ها و گرانول‌های جوشان به عنوان منبع اسید همراه سدیم بی‌کربنات یا کربنات و با نسبت‌های بسیار بیشتر مصرف می‌شود."
+   "fa": "به‌طور گسترده به عنوان اسیدی‌کننده، جزء بافر (همراه سدیم سیترات)، تقویت‌کننده طعم و هم‌افزای آنتی‌اکسیدان از طریق شلات کردن فلزات در فرآورده‌های خوراکی، موضعی و تزریقی، محصولات آرایشی و غذا به کار می‌رود. غلظت‌های متداول: محلول‌های بافر 0.1–2.0%؛ تقویت‌کننده طعم در مایعات خوراکی 0.3–2.0%؛ عامل شلات‌کننده 0.3–2.0%. در قرص‌ها و گرانول‌های جوشان به عنوان منبع اسید همراه سدیم بی‌کربنات یا کربنات و با نسبت‌های بسیار بیشتر مصرف می‌شود."
   },
   "description": {
    "en": "Colourless or translucent crystals, or a white crystalline powder, odourless with a strongly acidic taste. The monohydrate is efflorescent in dry air.",
@@ -2198,7 +2198,7 @@
     },
     "v": {
      "en": "about 2.2 (1% w/v aqueous solution)",
-     "fa": "حدود 2.2 (محلول آبی 1٪)"
+     "fa": "حدود 2.2 (محلول آبی 1%)"
     }
    },
    {
@@ -2286,7 +2286,7 @@
   "mw": "292.24",
   "applications": {
    "en": "A chelating (sequestering) agent used to bind trace metal ions that catalyse oxidation and other degradation reactions, typically at 0.005–0.1% w/v. It acts as an antioxidant synergist and enhances the activity of preservatives such as benzalkonium chloride against Gram-negative bacteria, particularly Pseudomonas. Because the free acid is poorly soluble, the more soluble disodium salt is usually preferred in aqueous products.",
-   "fa": "یک عامل شلات‌کننده (Sequestering agent) است که برای اتصال به یون‌های فلزی جزئی که اکسیداسیون و سایر واکنش‌های تخریبی را کاتالیز می‌کنند، معمولاً با غلظت 0.005–0.1٪ وزنی/حجمی به کار می‌رود. نقش هم‌افزای آنتی‌اکسیدان دارد و اثر نگهدارنده‌هایی مانند بنزالکونیوم کلرید را بر باکتری‌های گرم‌منفی، به‌ویژه Pseudomonas، افزایش می‌دهد. چون اسید آزاد حلالیت کمی دارد، در فرآورده‌های آبی معمولاً نمک دی‌سدیم آن که محلول‌تر است، ترجیح داده می‌شود."
+   "fa": "یک عامل شلات‌کننده (Sequestering agent) است که برای اتصال به یون‌های فلزی جزئی که اکسیداسیون و سایر واکنش‌های تخریبی را کاتالیز می‌کنند، معمولاً با غلظت 0.005–0.1% وزنی/حجمی به کار می‌رود. نقش هم‌افزای آنتی‌اکسیدان دارد و اثر نگهدارنده‌هایی مانند بنزالکونیوم کلرید را بر باکتری‌های گرم‌منفی، به‌ویژه Pseudomonas، افزایش می‌دهد. چون اسید آزاد حلالیت کمی دارد، در فرآورده‌های آبی معمولاً نمک دی‌سدیم آن که محلول‌تر است، ترجیح داده می‌شود."
   },
   "description": {
    "en": "A white or almost white, odourless crystalline powder or colourless crystals.",

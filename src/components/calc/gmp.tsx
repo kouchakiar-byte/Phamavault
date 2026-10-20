@@ -59,7 +59,7 @@ export function Cpk({ ctx }: { ctx: Ctx }) {
       if (xs.length < 25)
         msg = bi(
           "Fewer than 25 results give a wide confidence interval on Cpk; treat the value as an estimate.",
-          "با کمتر از ۲۵ نتیجه، بازه اطمینان Cpk پهن است و عدد به‌دست‌آمده فقط تخمین است.",
+          "با کمتر از 25 نتیجه، بازه اطمینان Cpk پهن است و عدد به‌دست‌آمده فقط تخمین است.",
         )[locale];
     }
   }
@@ -114,7 +114,7 @@ export function Samp({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "Values are rounded up to the next whole container. n plan: for uniform material from a recognised, qualified supplier — samples from n containers are tested for identity. p plan: when the material is uniform and the aim is full testing — the containers are pooled into p composite samples. r plan: for non-uniform material or material from an unqualified source (e.g. crude herbal drugs) — samples from r containers are tested separately. Under EU GMP Annex 8, identity is normally tested on a sample from every container of a starting material; sampling only some containers needs a validated procedure.",
-        "اعداد به عدد صحیح بالاتر گرد شده‌اند. طرح n: برای ماده یکنواخت از تأمین‌کننده شناخته‌شده و تأییدشده؛ نمونه n ظرف برای شناسایی آزمون می‌شود. طرح p: برای ماده یکنواخت وقتی آزمون کامل لازم است؛ ظروف در p نمونه مرکب ترکیب می‌شوند. طرح r: برای ماده غیریکنواخت یا از منبع تأییدنشده (مثلاً داروهای گیاهی خام)؛ نمونه r ظرف جداگانه آزمون می‌شود. طبق ضمیمه ۸ GMP اروپا، شناسایی معمولاً روی نمونه همه ظروف ماده اولیه انجام می‌شود و نمونه‌برداری از بخشی از ظروف به روش اعتبارسنجی‌شده نیاز دارد.",
+        "اعداد به عدد صحیح بالاتر گرد شده‌اند. طرح n: برای ماده یکنواخت از تأمین‌کننده شناخته‌شده و تأییدشده؛ نمونه n ظرف برای شناسایی آزمون می‌شود. طرح p: برای ماده یکنواخت وقتی آزمون کامل لازم است؛ ظروف در p نمونه مرکب ترکیب می‌شوند. طرح r: برای ماده غیریکنواخت یا از منبع تأییدنشده (مثلاً داروهای گیاهی خام)؛ نمونه r ظرف جداگانه آزمون می‌شود. طبق ضمیمه 8 GMP اروپا، شناسایی معمولاً روی نمونه همه ظروف ماده اولیه انجام می‌شود و نمونه‌برداری از بخشی از ظروف به روش اعتبارسنجی‌شده نیاز دارد.",
       )}
     />
   );
@@ -132,7 +132,7 @@ export function Lodq({ ctx }: { ctx: Ctx }) {
   const x = parseList(v["lq-x"]), y = parseList(v["lq-y"]);
   const ok = x.length >= 3 && x.length === y.length && [...x, ...y].every(Number.isFinite);
   let slope = DASH, icpt = DASH, sigma = DASH, lod = DASH, loq = DASH, r2 = DASH;
-  let msg = ok ? "" : bi("Enter at least 3 concentrations and the same number of responses.", "حداقل ۳ غلظت و به همان تعداد پاسخ وارد کنید.")[locale];
+  let msg = ok ? "" : bi("Enter at least 3 concentrations and the same number of responses.", "حداقل 3 غلظت و به همان تعداد پاسخ وارد کنید.")[locale];
   if (ok) {
     const n = x.length, mx = mean(x), my = mean(y);
     const sxx = x.reduce((a, xi) => a + (xi - mx) ** 2, 0);
@@ -183,7 +183,7 @@ export function Lodq({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "ICH Q2(R2): detection and quantitation limits from the standard deviation of the response and the slope. Results are in the unit of the concentrations. Confirm the calculated LOQ experimentally by analysing samples at that level for precision and accuracy (or a signal-to-noise of about 10:1). " + listNote.en,
-        "طبق ICH Q2(R2): حد تشخیص و حد اندازه‌گیری از انحراف معیار پاسخ و شیب منحنی. نتایج با واحد غلظت‌ها است. LOQ محاسبه‌شده را با آنالیز نمونه در همان سطح از نظر دقت و صحت (یا نسبت سیگنال به نویز حدود ۱۰ به ۱) تأیید تجربی کنید. " + listNote.fa,
+        "طبق ICH Q2(R2): حد تشخیص و حد اندازه‌گیری از انحراف معیار پاسخ و شیب منحنی. نتایج با واحد غلظت‌ها است. LOQ محاسبه‌شده را با آنالیز نمونه در همان سطح از نظر دقت و صحت (یا نسبت سیگنال به نویز حدود 10 به 1) تأیید تجربی کنید. " + listNote.fa,
       )}
     />
   );
@@ -233,7 +233,7 @@ export function Yld({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "Yield = good output ÷ theoretical × 100; reconciliation = (good + samples + rejects + documented losses) ÷ theoretical × 100. Use the same unit throughout. Limits come from the master batch record; a result outside them is a deviation to investigate before release. The same calculation applies to printed packaging materials, where any unexplained difference must be investigated.",
-        "بازده = محصول قابل‌قبول ÷ مقدار تئوری × ۱۰۰؛ تطبیق مقادیر = (محصول قابل‌قبول + نمونه‌ها + مردودی + افت مستند) ÷ مقدار تئوری × ۱۰۰. همه مقادیر باید با یک واحد وارد شوند. حدود از دستور ساخت اصلی (MBR) گرفته می‌شود و نتیجه خارج از آن انحرافی است که پیش از آزادسازی باید بررسی شود. همین محاسبه برای مواد بسته‌بندی چاپی هم به کار می‌رود و هر اختلاف توضیح‌داده‌نشده باید بررسی شود.",
+        "بازده = محصول قابل‌قبول ÷ مقدار تئوری × 100؛ تطبیق مقادیر = (محصول قابل‌قبول + نمونه‌ها + مردودی + افت مستند) ÷ مقدار تئوری × 100. همه مقادیر باید با یک واحد وارد شوند. حدود از دستور ساخت اصلی (MBR) گرفته می‌شود و نتیجه خارج از آن انحرافی است که پیش از آزادسازی باید بررسی شود. همین محاسبه برای مواد بسته‌بندی چاپی هم به کار می‌رود و هر اختلاف توضیح‌داده‌نشده باید بررسی شود.",
       )}
     />
   );
@@ -269,12 +269,12 @@ export function Ach({ ctx }: { ctx: Ctx }) {
         { label: bi("Room volume", "حجم اتاق"), value: ok ? `${fixed(vol, 1)} m³` : DASH },
         { label: bi("Supply air flow", "دبی هوای ورودی"), value: ok ? `${fixed(q, 0)} m³/h` : DASH },
         { label: bi("Air changes per hour (ACH)", "تعداد تعویض هوا در ساعت (ACH)"), value: ok ? fixed(ach, 1) : DASH },
-        { label: bi("Theoretical 100:1 recovery time", "زمان بازیابی نظری ۱۰۰ به ۱"), value: ok ? `${fixed((60 * Math.log(100)) / ach, 1)} min` : DASH },
+        { label: bi("Theoretical 100:1 recovery time", "زمان بازیابی نظری 100 به 1"), value: ok ? `${fixed((60 * Math.log(100)) / ach, 1)} min` : DASH },
       ]}
       message={ok ? "" : bad(ctx)}
       note={bi(
         "ACH = supply air (m³/h) ÷ room volume (m³); 1 CFM = 1.699 m³/h. The recovery time assumes perfect mixing: t = 60·ln(100) ÷ ACH. EU GMP Annex 1 sets particle limits and a guidance clean-up time of 15–20 minutes, not a fixed ACH; air change rates are design values to be confirmed by the ISO 14644-3 recovery test.",
-        "ACH = دبی هوای ورودی (m³/h) ÷ حجم اتاق (m³)؛ هر CFM برابر 1.699 m³/h. زمان بازیابی با فرض اختلاط کامل: t = 60·ln(100) ÷ ACH. ضمیمه ۱ GMP اروپا حدود ذرات و زمان راهنمای پاک‌سازی ۱۵ تا ۲۰ دقیقه را تعیین می‌کند نه عدد ثابت ACH؛ نرخ تعویض هوا مقدار طراحی است و باید با آزمون بازیابی ISO 14644-3 تأیید شود.",
+        "ACH = دبی هوای ورودی (m³/h) ÷ حجم اتاق (m³)؛ هر CFM برابر 1.699 m³/h. زمان بازیابی با فرض اختلاط کامل: t = 60·ln(100) ÷ ACH. ضمیمه 1 GMP اروپا حدود ذرات و زمان راهنمای پاک‌سازی 15 تا 20 دقیقه را تعیین می‌کند نه عدد ثابت ACH؛ نرخ تعویض هوا مقدار طراحی است و باید با آزمون بازیابی ISO 14644-3 تأیید شود.",
       )}
     />
   );

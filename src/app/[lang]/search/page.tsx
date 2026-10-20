@@ -22,7 +22,7 @@ async function Results({ locale, searchParams }: { locale: Locale; searchParams:
   const scopeParam = String(params.scope ?? "all");
   const scope: SearchScope = isSearchScope(scopeParam) ? scopeParam : "all";
   const result = await siteSearch(q, locale, 30, await lockedSections(), scope);
-  const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
+  const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
   return (
     <>
       <SearchForm locale={locale} value={q} scope={scope} />
