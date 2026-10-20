@@ -3,6 +3,7 @@
 import { useMemo, useState, type ReactNode } from "react";
 import { Search, X } from "lucide-react";
 import { pages } from "@/content/pages";
+import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
 import {
   norm,
@@ -23,6 +24,8 @@ export type SupplierData = {
   companies: SupplierRecord[];
   synonyms: string[][];
   provinceOrder: string[];
+  /** The last daily update, already written out on the server ("27 Mehr 1405, 18:00"). */
+  updated?: string | null;
 };
 
 const fill = (template: string, vars: Record<string, string | number>) =>
@@ -184,6 +187,11 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
         <p>{t.orderText[locale]}</p>
         <BiTitle as="h2" text={t.aboutTitle} locale={locale} className="mb-1 mt-4 text-base font-bold text-ink" />
         <ul className="list-disc space-y-1 ps-5">
+          {data.updated && (
+            <li>
+              {copy.lastUpdate.label[locale]}: {data.updated} · {copy.lastUpdate.daily[locale]}
+            </li>
+          )}
           {t.about.map((item) => (
             <li key={item.en}>{item[locale]}</li>
           ))}
