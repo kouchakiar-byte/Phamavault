@@ -11,6 +11,7 @@ import {
 } from "@/content/references";
 import { getLocale } from "@/i18n/locale";
 import { pageMetadata } from "@/lib/metadata";
+import { withReviewedMonth } from "@/lib/data-dates";
 
 export const generateMetadata = () => pageMetadata(referencesPage.title, referencesPage.lead, "references");
 
@@ -19,7 +20,7 @@ export default async function ReferencesPage() {
   return (
     <LegalPage page={referencesPage} locale={locale}>
       <p className="rounded-xl border border-line bg-vault-50 px-4 py-3 text-sm text-muted">
-        {referencesReviewedOn[locale]} {referencesPaid[locale]}
+        {withReviewedMonth(referencesReviewedOn[locale], "references", locale)} {referencesPaid[locale]}
       </p>
       {/* Our searchable Orange Book comes first, before the pharmacopoeias */}
       <section id="orange-book-search" className="scroll-mt-24 rounded-card border-2 border-molecule-500/60 bg-white p-5 sm:p-6">

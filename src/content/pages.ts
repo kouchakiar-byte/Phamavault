@@ -99,7 +99,6 @@ export const pages = {
     ),
     aboutTitle: bi("About this data", "درباره این داده‌ها"),
     about: [
-      bi("Last updated: 17 Mehr 1405 (9 October 2026).", "آخرین به‌روزرسانی: ۱۷ مهر ۱۴۰۵"),
       bi(
         "Rows marked “no phone” were recorded from product-page titles in web search: the company has a sales page for that material on its site. Take the phone number from the company's own site; the “search on this company's site” link goes straight to that material.",
         "ردیف‌های «بدون تلفن» از روی عنوان صفحه محصول در جستجوی وب ثبت شده‌اند: یعنی آن شرکت در وب‌سایت خود صفحه فروش آن ماده را دارد. شماره تلفن را از وب‌سایت خود شرکت دریافت کنید؛ پیوند «جستجو در سایت این شرکت» مستقیماً به صفحه همان ماده می‌رود.",

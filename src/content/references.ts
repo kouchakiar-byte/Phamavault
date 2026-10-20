@@ -31,7 +31,7 @@ export const referencesPage: LegalPage = {
   sections: [],
 };
 
-export const referencesReviewedOn = bi("Editions last reviewed: October 2026.", "آخرین بازبینی ویرایش‌ها: مهر ۱۴۰۵.");
+export const referencesReviewedOn = bi("Editions last reviewed: {month}.", "آخرین بازبینی ویرایش‌ها: {month}.");
 export const referencesPaid = bi(
   "Links open the official site in a new tab. The full texts of USP–NF, BP, Ph. Eur. need a subscription; the others are free.",
   `لینک‌ها سایت رسمی را در زبانه جدید باز می‌کنند. متن کامل ${ltr("USP–NF")}، ${ltr("BP")} و ${ltr("Ph.\u00a0Eur.")} نیاز به اشتراک دارد؛ سایر موارد رایگان‌اند.`,

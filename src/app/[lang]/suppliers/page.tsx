@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { LastUpdate } from "@/components/last-update";
+import { LastUpdate, lastUpdateText } from "@/components/last-update";
 import { PageHeader } from "@/components/page-header";
 import { SupplierBankFromUrl } from "@/components/supplier-bank-from-url";
 import { Container } from "@/components/ui";
@@ -21,7 +21,7 @@ export default async function SuppliersPage() {
       <Container className="max-w-5xl py-10">
         <LastUpdate at={updatedAt} locale={locale} className="mb-5 text-muted" />
         <Suspense>
-          <SupplierBankFromUrl locale={locale} data={{ companies, synonyms, provinceOrder }} />
+          <SupplierBankFromUrl locale={locale} data={{ companies, synonyms, provinceOrder, updated: updatedAt && lastUpdateText(updatedAt, locale) }} />
         </Suspense>
       </Container>
     </>

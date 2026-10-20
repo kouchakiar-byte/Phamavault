@@ -6,6 +6,7 @@ import { getLocale } from "@/i18n/locale";
 import { interactionsReviewed } from "@/data/interactions";
 import { pageMetadata } from "@/lib/metadata";
 import { href } from "@/lib/paths";
+import { withReviewedMonth } from "@/lib/data-dates";
 
 export const generateMetadata = () => pageMetadata(t.title, t.lead, "pharmacy/interactions");
 
@@ -26,7 +27,7 @@ export default async function InteractionsPage() {
         <SeverityScale locale={locale} />
         <div className="space-y-3 border-t border-line pt-8 text-sm leading-relaxed text-muted">
           <p className="rounded-xl border border-capsule-400/40 bg-capsule-400/10 px-4 py-3 text-ink">
-            {t.disclaimer[locale]} {interactionsReviewed[locale]}.
+            {t.disclaimer[locale]} {withReviewedMonth(interactionsReviewed[locale], "interactions", locale)}.
           </p>
           <p className="flex flex-wrap items-center gap-2">
             <span className="font-semibold text-vault-900">{pharmacyPage.refsLabel[locale]}:</span>

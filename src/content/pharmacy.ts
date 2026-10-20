@@ -123,7 +123,7 @@ export const pharmacyPage = {
     "For professional use. Substituting one product for another follows the Iran FDA rules and the prescriber; always check the current product information (SmPC) of the product actually dispensed.",
     "ویژه استفاده حرفه‌ای. جایگزینی یک فرآورده با فرآورده دیگر تابع ضوابط سازمان غذا و دارو و نظر پزشک است؛ همیشه اطلاعات فرآورده (SmPC یا بروشور) همان فرآورده‌ای را که تحویل می‌دهید بررسی کنید.",
   ),
-  reviewed: bi("Content reviewed October 2026.", "آخرین بازبینی محتوا: مهر ۱۴۰۵."),
+  reviewed: bi("Content reviewed {month}.", "آخرین بازبینی محتوا: {month}."),
   refsLabel: bi("References", "رفرنس‌ها"),
   toc: bi("In this section", "در این بخش"),
 };
