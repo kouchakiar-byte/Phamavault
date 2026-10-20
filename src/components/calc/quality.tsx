@@ -48,7 +48,7 @@ export function Std({ ctx }: { ctx: Ctx }) {
       form={
         <>
           <PresetSelect ctx={ctx} id="sd-sys" label={bi("Titrant and primary standard", "تیترانت و استاندارد اولیه")} presets={vsSystems} targets={["sd-e", "sd-nom"]} />
-          <NumberInput ctx={ctx} id="sd-e" label={bi("mg of standard per mL of 1 M titrant", "میلی‌گرم استاندارد به ازای هر میلی‌لیتر تیترانت ۱ مولار")} readOnly={locked} />
+          <NumberInput ctx={ctx} id="sd-e" label={bi("mg of standard per mL of 1 M titrant", "میلی‌گرم استاندارد به ازای هر میلی‌لیتر تیترانت 1 مولار")} readOnly={locked} />
           <NumberInput ctx={ctx} id="sd-nom" label={bi("Nominal molarity (M)", "مولاریته اسمی (M)")} />
           <NumberInput ctx={ctx} id="sd-w" label={bi("Mass of primary standard (mg)", "وزن استاندارد اولیه (میلی‌گرم)")} />
           <NumberInput ctx={ctx} id="sd-p" label={bi("Purity of the standard (%)", "خلوص استاندارد (%)")} />
@@ -66,7 +66,7 @@ export function Std({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "M = m × purity ÷ ((V − V_blank) × E), where E is the mass (mg) of primary standard that reacts with 1 mL of 1 M titrant: KHP 204.22 (1:1); Na₂CO₃ 52.99 for HCl (2 H⁺ per carbonate) and 105.99 for H₂SO₄; KIO₃ 35.67 and K₂Cr₂O₇ 49.03 for thiosulfate (6 S₂O₃²⁻ each); Na₂C₂O₄ 335.0 for KMnO₄ (5 oxalate : 2 permanganate); Zn 65.38 and CaCO₃ 100.09 for edetate; NaCl 58.44 for AgNO₃. Dry the standard as its monograph directs. Factor f is used in assays as M_actual ÷ M_nominal.",
-        `${ltr("M = m × purity ÷ ((V − V_blank) × E)")} که E وزن (میلی‌گرم) استاندارد اولیه‌ای است که با ۱ میلی‌لیتر تیترانت ۱ مولار واکنش می‌دهد: پتاسیم هیدروژن فتالات 204.22 (۱:۱)؛ سدیم کربنات برای HCl برابر 52.99 (دو پروتون به ازای هر کربنات) و برای سولفوریک اسید 105.99؛ پتاسیم یدات 35.67 و پتاسیم دی‌کرومات 49.03 برای تیوسولفات (هر کدام معادل ۶ تیوسولفات)؛ سدیم اگزالات 335.0 برای پرمنگنات (۵ اگزالات : ۲ پرمنگنات)؛ روی 65.38 و کلسیم کربنات 100.09 برای ادتات؛ سدیم کلرید 58.44 برای نقره نیترات. استاندارد را طبق مونوگراف خشک کنید. ضریب f در تعیین مقدار به‌صورت ${ltr("M_actual ÷ M_nominal")} به کار می‌رود.`,
+        `${ltr("M = m × purity ÷ ((V − V_blank) × E)")} که E وزن (میلی‌گرم) استاندارد اولیه‌ای است که با 1 میلی‌لیتر تیترانت 1 مولار واکنش می‌دهد: پتاسیم هیدروژن فتالات 204.22 (1:1)؛ سدیم کربنات برای HCl برابر 52.99 (دو پروتون به ازای هر کربنات) و برای سولفوریک اسید 105.99؛ پتاسیم یدات 35.67 و پتاسیم دی‌کرومات 49.03 برای تیوسولفات (هر کدام معادل 6 تیوسولفات)؛ سدیم اگزالات 335.0 برای پرمنگنات (5 اگزالات : 2 پرمنگنات)؛ روی 65.38 و کلسیم کربنات 100.09 برای ادتات؛ سدیم کلرید 58.44 برای نقره نیترات. استاندارد را طبق مونوگراف خشک کنید. ضریب f در تعیین مقدار به‌صورت ${ltr("M_actual ÷ M_nominal")} به کار می‌رود.`,
       )}
     />
   );
@@ -113,7 +113,7 @@ export function Rot({ ctx }: { ctx: Ctx }) {
         </>
       }
       results={[
-        { label: bi("Concentration c (g/100 mL)", "غلظت c (گرم در ۱۰۰ میلی‌لیتر)"), value: Number.isFinite(c) ? fixed(c, 4) : DASH, hidden: neat },
+        { label: bi("Concentration c (g/100 mL)", "غلظت c (گرم در 100 میلی‌لیتر)"), value: Number.isFinite(c) ? fixed(c, 4) : DASH, hidden: neat },
         { label: bi("Specific optical rotation [α]", "چرخش نوری ویژه [α]"), value: ok ? `${spec >= 0 ? "+" : "−"}${fixed(Math.abs(spec), 2)}°` : DASH },
         {
           label: bi("Conclusion", "نتیجه"),
@@ -123,7 +123,7 @@ export function Rot({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "USP <781> / Ph. Eur. 2.2.7: for a solution [α] = 100·α ÷ (l·c), with l in dm and c in g per 100 mL (on the dried or anhydrous basis when the monograph says so); for a neat liquid [α] = α ÷ (l·ρ). Measured at the sodium D line (589.3 nm) and 20 °C (Ph. Eur.) or 25 °C (USP) unless the monograph states otherwise. Dextrorotation is positive.",
-        `${ltr("USP <781>")} و ${ltr("Ph. Eur. 2.2.7")}: برای محلول ${ltr("[α] = 100·α ÷ (l·c)")} که l بر حسب دسی‌متر و c گرم در ۱۰۰ میلی‌لیتر است (در صورت ذکر مونوگراف، بر پایه ماده خشک یا بی‌آب)؛ برای مایع خالص ${ltr("[α] = α ÷ (l·ρ)")}. اندازه‌گیری در خط D سدیم ${ltr("(589.3 nm)")} و دمای ۲۰ درجه (فارماکوپه اروپا) یا ۲۵ درجه (USP)، مگر آنکه در مونوگراف شرایط دیگری ذکر شده باشد. چرخش راست‌گرد مثبت است.`,
+        `${ltr("USP <781>")} و ${ltr("Ph. Eur. 2.2.7")}: برای محلول ${ltr("[α] = 100·α ÷ (l·c)")} که l بر حسب دسی‌متر و c گرم در 100 میلی‌لیتر است (در صورت ذکر مونوگراف، بر پایه ماده خشک یا بی‌آب)؛ برای مایع خالص ${ltr("[α] = α ÷ (l·ρ)")}. اندازه‌گیری در خط D سدیم ${ltr("(589.3 nm)")} و دمای 20 درجه (فارماکوپه اروپا) یا 25 درجه (USP)، مگر آنکه در مونوگراف شرایط دیگری ذکر شده باشد. چرخش راست‌گرد مثبت است.`,
       )}
     />
   );
@@ -137,12 +137,12 @@ const solvents: Preset[] = [
   ["Toluene", "تولوئن", "8.9"], ["Hexane", "هگزان", "2.9"], ["Tetrahydrofuran", "تتراهیدروفوران", "7.2"],
   ["N,N-Dimethylformamide", "دی‌متیل‌فرمامید", "8.8"], ["N,N-Dimethylacetamide", "دی‌متیل‌استامید", "10.9"],
   ["N-Methylpyrrolidone", "ان‌متیل‌پیرولیدون", "5.3"], ["Chloroform", "کلروفرم", "0.6"], ["Cyclohexane", "سیکلوهگزان", "38.8"],
-  ["Methylcyclohexane", "متیل‌سیکلوهگزان", "11.8"], ["1,4-Dioxane", "۱،۴-دی‌اکسان", "3.8"], ["Pyridine", "پیریدین", "2.0"],
+  ["Methylcyclohexane", "متیل‌سیکلوهگزان", "11.8"], ["1,4-Dioxane", "1،4-دی‌اکسان", "3.8"], ["Pyridine", "پیریدین", "2.0"],
   ["Xylene", "زایلن", "21.7"], ["Chlorobenzene", "کلروبنزن", "3.6"], ["Cumene", "کیومن", "0.7"], ["Ethylene glycol", "اتیلن گلیکول", "6.2"],
-  ["Formamide", "فرمامید", "2.2"], ["2-Methoxyethanol", "۲-متوکسی‌اتانول", "0.5"], ["2-Ethoxyethanol", "۲-اتوکسی‌اتانول", "1.6"],
-  ["1,2-Dimethoxyethane", "۱،۲-دی‌متوکسی‌اتان", "1.0"], ["1,2-Dichloroethene", "۱،۲-دی‌کلرواتن", "18.7"], ["Trichloroethylene", "تری‌کلرواتیلن", "0.8"],
+  ["Formamide", "فرمامید", "2.2"], ["2-Methoxyethanol", "2-متوکسی‌اتانول", "0.5"], ["2-Ethoxyethanol", "2-اتوکسی‌اتانول", "1.6"],
+  ["1,2-Dimethoxyethane", "1،2-دی‌متوکسی‌اتان", "1.0"], ["1,2-Dichloroethene", "1،2-دی‌کلرواتن", "18.7"], ["Trichloroethylene", "تری‌کلرواتیلن", "0.8"],
   ["Methylbutyl ketone", "متیل بوتیل کتون", "0.5"], ["Nitromethane", "نیترومتان", "0.5"], ["Sulfolane", "سولفولان", "1.6"], ["Tetralin", "تترالین", "1.0"],
-  ["Class 3 solvent (e.g. ethanol, acetone, ethyl acetate, 2-propanol)", "حلال کلاس ۳ (مانند اتانول، استون، اتیل استات، ایزوپروپانول)", "50"],
+  ["Class 3 solvent (e.g. ethanol, acetone, ethyl acetate, 2-propanol)", "حلال کلاس 3 (مانند اتانول، استون، اتیل استات، ایزوپروپانول)", "50"],
 ].map(([en, fa, pde]) => ({ label: bi(en, fa), values: [pde] }));
 
 export function Q3c({ ctx }: { ctx: Ctx }) {
@@ -161,16 +161,16 @@ export function Q3c({ ctx }: { ctx: Ctx }) {
           <PresetSelect ctx={ctx} id="rs-sol" label={bi("Solvent", "حلال")} presets={solvents} targets={["rs-pde"]} />
           <NumberInput ctx={ctx} id="rs-pde" label={bi("PDE (mg/day)", "PDE (میلی‌گرم در روز)")} readOnly={isLocked(ctx, "rs-sol")} />
           <NumberInput ctx={ctx} id="rs-dose" label={bi("Daily dose of the drug product (g/day)", "دوز روزانه فرآورده (گرم در روز)")} />
-          <ListInput ctx={ctx} id="rs-m" label={bi("Option 2: daily mass of each component (g/day; optional)", "روش ۲: مقدار روزانه هر جزء (گرم در روز؛ اختیاری)")} />
-          <ListInput ctx={ctx} id="rs-ppm" label={bi("Option 2: solvent found in each component (ppm)", "روش ۲: حلال اندازه‌گیری‌شده در هر جزء (ppm)")} />
+          <ListInput ctx={ctx} id="rs-m" label={bi("Option 2: daily mass of each component (g/day; optional)", "روش 2: مقدار روزانه هر جزء (گرم در روز؛ اختیاری)")} />
+          <ListInput ctx={ctx} id="rs-ppm" label={bi("Option 2: solvent found in each component (ppm)", "روش 2: حلال اندازه‌گیری‌شده در هر جزء (ppm)")} />
         </>
       }
       results={[
-        { label: bi("Option 1 limit (10 g/day)", "حد روش ۱ (۱۰ گرم در روز)"), value: ok ? `${sig(pde * 100)} ppm` : DASH },
+        { label: bi("Option 1 limit (10 g/day)", "حد روش 1 (10 گرم در روز)"), value: ok ? `${sig(pde * 100)} ppm` : DASH },
         { label: bi("Limit for this daily dose", "حد برای این دوز روزانه"), value: ok && dose > 0 ? `${sig((1000 * pde) / dose)} ppm` : DASH },
-        { label: bi("Option 2: total daily intake", "روش ۲: دریافت روزانه کل"), value: okC ? `${sig(total)} mg/day` : DASH, hidden: !okC },
+        { label: bi("Option 2: total daily intake", "روش 2: دریافت روزانه کل"), value: okC ? `${sig(total)} mg/day` : DASH, hidden: !okC },
         {
-          label: bi("Option 2: conclusion", "روش ۲: نتیجه"),
+          label: bi("Option 2: conclusion", "روش 2: نتیجه"),
           value: okC && ok ? (total <= pde ? bi("Within the PDE", "در محدوده PDE") : bi("Exceeds the PDE", "بیش از PDE"))[locale] : DASH,
           hidden: !okC,
         },
@@ -179,7 +179,7 @@ export function Q3c({ ctx }: { ctx: Ctx }) {
       note={bi(
         "ICH Q3C(R9): concentration limit (ppm) = 1000 × PDE (mg/day) ÷ daily dose (g/day). Option 1 assumes 10 g/day, so the limit is PDE × 100 and applies to every component without further calculation. Option 2 sums the solvent from all components of the daily dose and compares it with the PDE. Class 3 solvents: 50 mg/day (0.5%) without justification. " +
           listNote.en,
-        `${ltr("ICH Q3C(R9)")}: حد غلظت ${ltr("(ppm) = 1000 × PDE (mg/day) ÷ dose (g/day)")}. روش ۱ دوز روزانه را ۱۰ گرم فرض می‌کند، بنابراین حد ${ltr("PDE × 100")} است و برای همه اجزا بدون محاسبه دیگر معتبر است. روش ۲ حلال همه اجزای دوز روزانه را جمع و با PDE مقایسه می‌کند. حلال‌های کلاس ۳: ۵۰ میلی‌گرم در روز (0.5٪) بدون نیاز به توجیه. ${listNote.fa}`,
+        `${ltr("ICH Q3C(R9)")}: حد غلظت ${ltr("(ppm) = 1000 × PDE (mg/day) ÷ dose (g/day)")}. روش 1 دوز روزانه را 10 گرم فرض می‌کند، بنابراین حد ${ltr("PDE × 100")} است و برای همه اجزا بدون محاسبه دیگر معتبر است. روش 2 حلال همه اجزای دوز روزانه را جمع و با PDE مقایسه می‌کند. حلال‌های کلاس 3: 50 میلی‌گرم در روز (0.5%) بدون نیاز به توجیه. ${listNote.fa}`,
       )}
     />
   );
@@ -234,7 +234,7 @@ export function Q3d({ ctx }: { ctx: Ctx }) {
       results={[
         { label: bi("PDE", "PDE"), value: ok ? `${pde} µg/day` : DASH },
         { label: bi("Permitted concentration", "غلظت مجاز"), value: ok ? `${sig(limit)} µg/g` : DASH },
-        { label: bi("Control threshold (30% of PDE)", "آستانه کنترل (30٪ PDE)"), value: ok ? `${sig(0.3 * limit)} µg/g` : DASH },
+        { label: bi("Control threshold (30% of PDE)", "آستانه کنترل (30% PDE)"), value: ok ? `${sig(0.3 * limit)} µg/g` : DASH },
         { label: bi("Daily intake", "دریافت روزانه"), value: hasC ? `${sig(c * dose)} µg/day  ·  ${fixed(share, 1)}% PDE` : DASH },
         {
           label: bi("Conclusion", "نتیجه"),
@@ -250,7 +250,7 @@ export function Q3d({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "ICH Q3D(R2): permitted concentration (µg/g) = PDE (µg/day) ÷ maximum daily dose (g/day); with Option 1 the dose is taken as 10 g/day. When the expected level is consistently below 30% of the PDE (the control threshold), no additional controls are needed. Class 1 and 2A elements must always be assessed; class 2B and 3 only when intentionally added or, for class 3, for parenteral and inhalation products. PDEs from Table A.2.1, including the 2022 corrections for gold, silver and nickel.",
-        `${ltr("ICH Q3D(R2)")}: غلظت مجاز ${ltr("(µg/g) = PDE (µg/day) ÷ dose (g/day)")}؛ در روش ۱ دوز روزانه ۱۰ گرم فرض می‌شود. اگر سطح مورد انتظار همواره کمتر از 30٪ PDE (آستانه کنترل) باشد، کنترل بیشتری لازم نیست. عناصر کلاس ۱ و 2A همیشه ارزیابی می‌شوند؛ کلاس 2B و ۳ فقط اگر عمداً افزوده شوند یا، برای کلاس ۳، در فرآورده‌های تزریقی و استنشاقی. مقادیر PDE از جدول ${ltr("A.2.1")} با اصلاحیه ۲۰۲۲ برای طلا، نقره و نیکل.`,
+        `${ltr("ICH Q3D(R2)")}: غلظت مجاز ${ltr("(µg/g) = PDE (µg/day) ÷ dose (g/day)")}؛ در روش 1 دوز روزانه 10 گرم فرض می‌شود. اگر سطح مورد انتظار همواره کمتر از 30% PDE (آستانه کنترل) باشد، کنترل بیشتری لازم نیست. عناصر کلاس 1 و 2A همیشه ارزیابی می‌شوند؛ کلاس 2B و 3 فقط اگر عمداً افزوده شوند یا، برای کلاس 3، در فرآورده‌های تزریقی و استنشاقی. مقادیر PDE از جدول ${ltr("A.2.1")} با اصلاحیه 2022 برای طلا، نقره و نیکل.`,
       )}
     />
   );
@@ -262,15 +262,15 @@ export function Q3d({ ctx }: { ctx: Ctx }) {
 const nitrosamines: Preset[] = [
   ["NDMA (N-nitrosodimethylamine)", "NDMA (ان-نیتروزودی‌متیل‌آمین)", "96"],
   ["NDEA (N-nitrosodiethylamine)", "NDEA (ان-نیتروزودی‌اتیل‌آمین)", "26.5"],
-  ["NMBA (N-nitroso-N-methyl-4-aminobutyric acid)", "NMBA (ان-نیتروزو-ان-متیل-۴-آمینوبوتیریک اسید)", "96"],
+  ["NMBA (N-nitroso-N-methyl-4-aminobutyric acid)", "NMBA (ان-نیتروزو-ان-متیل-4-آمینوبوتیریک اسید)", "96"],
   ["NEIPA (N-nitrosoethylisopropylamine)", "NEIPA (ان-نیتروزواتیل‌ایزوپروپیل‌آمین)", "26.5"],
   ["NDIPA (N-nitrosodiisopropylamine)", "NDIPA (ان-نیتروزودی‌ایزوپروپیل‌آمین)", "26.5"],
   ["NMPA (N-nitrosomethylphenylamine)", "NMPA (ان-نیتروزومتیل‌فنیل‌آمین)", "26.5"],
-  ["NDSRI, CPCA potency category 1", "ناخالصی NDSRI، رده توان CPCA ۱", "26.5"],
-  ["NDSRI, CPCA potency category 2", "ناخالصی NDSRI، رده توان CPCA ۲", "100"],
-  ["NDSRI, CPCA potency category 3", "ناخالصی NDSRI، رده توان CPCA ۳", "400"],
-  ["NDSRI, CPCA potency category 4", "ناخالصی NDSRI، رده توان CPCA ۴", "1500"],
-  ["NDSRI, CPCA potency category 5", "ناخالصی NDSRI، رده توان CPCA ۵", "1500"],
+  ["NDSRI, CPCA potency category 1", "ناخالصی NDSRI، رده توان CPCA 1", "26.5"],
+  ["NDSRI, CPCA potency category 2", "ناخالصی NDSRI، رده توان CPCA 2", "100"],
+  ["NDSRI, CPCA potency category 3", "ناخالصی NDSRI، رده توان CPCA 3", "400"],
+  ["NDSRI, CPCA potency category 4", "ناخالصی NDSRI، رده توان CPCA 4", "1500"],
+  ["NDSRI, CPCA potency category 5", "ناخالصی NDSRI، رده توان CPCA 5", "1500"],
 ].map(([en, fa, ai]) => ({ label: bi(en, fa), values: [ai] }));
 
 export function Nitro({ ctx }: { ctx: Ctx }) {
@@ -303,7 +303,7 @@ export function Nitro({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "Limit (ppm) = AI (ng/day) ÷ maximum daily dose (mg/day), since 1 ng/mg = 1 ppm. AIs as published by FDA (Control of Nitrosamine Impurities in Human Drugs) and EMA; for nitrosamine drug-substance-related impurities (NDSRIs) without compound-specific data, the Carcinogenic Potency Categorization Approach (CPCA) assigns 26.5, 100, 400 or 1500 ng/day. When several nitrosamines are present, the sum of each intake divided by its AI should not exceed 1. Check the current agency list for the specific nitrosamine.",
-        `حد ${ltr("(ppm) = AI (ng/day) ÷ MDD (mg/day)")}، زیرا ${ltr("1 ng/mg = 1 ppm")}. مقادیر AI طبق فهرست منتشرشده FDA (کنترل ناخالصی‌های نیتروزآمین در داروهای انسانی) و آژانس دارویی اروپا؛ برای ناخالصی‌های نیتروزآمین مرتبط با ماده مؤثره (NDSRI) بدون داده اختصاصی، رویکرد رده‌بندی توان سرطان‌زایی (CPCA) مقدار 26.5، 100، 400 یا 1500 نانوگرم در روز تعیین می‌کند. اگر چند نیتروزآمین وجود داشته باشد، مجموع نسبت دریافت هر کدام به AI آن نباید از ۱ بیشتر شود. فهرست به‌روز مرجع را برای نیتروزآمین موردنظر بررسی کنید.`,
+        `حد ${ltr("(ppm) = AI (ng/day) ÷ MDD (mg/day)")}، زیرا ${ltr("1 ng/mg = 1 ppm")}. مقادیر AI طبق فهرست منتشرشده FDA (کنترل ناخالصی‌های نیتروزآمین در داروهای انسانی) و آژانس دارویی اروپا؛ برای ناخالصی‌های نیتروزآمین مرتبط با ماده مؤثره (NDSRI) بدون داده اختصاصی، رویکرد رده‌بندی توان سرطان‌زایی (CPCA) مقدار 26.5، 100، 400 یا 1500 نانوگرم در روز تعیین می‌کند. اگر چند نیتروزآمین وجود داشته باشد، مجموع نسبت دریافت هر کدام به AI آن نباید از 1 بیشتر شود. فهرست به‌روز مرجع را برای نیتروزآمین موردنظر بررسی کنید.`,
       )}
     />
   );

@@ -8,7 +8,7 @@ import type { IranDrugResult, IranGeneric } from "@/lib/iran-drugs";
 import { splitStrength } from "@/lib/drug-title";
 import { moieties, moietyKey, moietyLabel } from "@/lib/moieties";
 
-const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
+const n = (x: number, locale: Locale) => x.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
 
 /** The medicine's name, then its strength as one left-to-right chip. */
 function Title({ title }: { title: string }) {
@@ -209,7 +209,7 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
         <p className="text-xs text-muted">
           {t.updated[locale].replace(
             "{date}",
-            new Date(result.fetchedAt).toLocaleString(locale === "fa" ? "fa-IR" : "en-GB", {
+            new Date(result.fetchedAt).toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-GB", {
               timeZone: "Asia/Tehran",
               dateStyle: "medium",
               timeStyle: "short",

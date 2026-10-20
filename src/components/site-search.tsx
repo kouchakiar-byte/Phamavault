@@ -11,7 +11,7 @@ import type { SearchResult, SearchScope } from "@/lib/site-search";
 
 const scopeKeys = Object.keys(t.scopes) as SearchScope[];
 
-const fa = (n: number, locale: Locale) => n.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
+const fa = (n: number, locale: Locale) => n.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
 
 /** Grouped results; `active` highlights one hit (palette keyboard navigation). */
 export function SearchResults({

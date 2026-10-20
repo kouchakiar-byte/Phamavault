@@ -8,11 +8,11 @@ import type { Locale } from "@/i18n/config";
  */
 export type DataKey = keyof typeof dates;
 
-/** "مهر ۱۴۰۵" or "October 2026": the month the content last changed, Tehran time. */
+/** "مهر 1405" or "October 2026": the month the content last changed, Tehran time. */
 export function reviewedMonth(key: DataKey, locale: Locale): string {
   const date = new Date(`${dates[key]}T12:00:00+03:30`);
   if (locale === "en") return new Intl.DateTimeFormat("en-GB", { month: "long", year: "numeric", timeZone: "Asia/Tehran" }).format(date);
-  const parts = new Intl.DateTimeFormat("fa-IR-u-ca-persian", { month: "long", year: "numeric", timeZone: "Asia/Tehran" }).formatToParts(date);
+  const parts = new Intl.DateTimeFormat("fa-IR-u-ca-persian-nu-latn", { month: "long", year: "numeric", timeZone: "Asia/Tehran" }).formatToParts(date);
   const part = (type: string) => parts.find((p) => p.type === type)?.value ?? "";
   return `${part("month")} ${part("year")}`;
 }

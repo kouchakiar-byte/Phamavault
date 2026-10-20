@@ -40,7 +40,7 @@ export function Wv({ ctx }: { ctx: Ctx }) {
   const xs = parseList(v["wv-x"]);
   const ok = valid(xs) && xs.length === 20 && xs.every((x) => x > 0);
   let avg = DASH, range = DASH, rsd = DASH, tol = DASH, out1 = DASH, out2 = DASH, verdict = DASH;
-  let msg = ok ? "" : bi("Enter the masses of exactly 20 units.", "وزن دقیقاً ۲۰ واحد را وارد کنید.")[locale];
+  let msg = ok ? "" : bi("Enter the masses of exactly 20 units.", "وزن دقیقاً 20 واحد را وارد کنید.")[locale];
   if (ok) {
     const m = mean(xs);
     const devs = xs.map((x) => ((x - m) / m) * 100);
@@ -64,7 +64,7 @@ export function Wv({ ctx }: { ctx: Ctx }) {
       form={
         <>
           <Choice ctx={ctx} id="wv-form" label={bi("Dosage form", "شکل دارویی")} options={forms} />
-          <ListInput ctx={ctx} id="wv-x" rows={4} label={bi("Masses of 20 units (mg)", "وزن ۲۰ واحد (میلی‌گرم)")} />
+          <ListInput ctx={ctx} id="wv-x" rows={4} label={bi("Masses of 20 units (mg)", "وزن 20 واحد (میلی‌گرم)")} />
         </>
       }
       results={[
@@ -72,7 +72,7 @@ export function Wv({ ctx }: { ctx: Ctx }) {
         { label: bi("Deviation range", "محدوده انحراف"), value: range },
         { label: bi("RSD", "RSD"), value: rsd },
         { label: bi("Permitted deviation (1× · 2×)", "انحراف مجاز (یک‌برابر · دوبرابر)"), value: tol },
-        { label: bi("Units outside 1× (max 2)", "واحدهای خارج از حد یک‌برابر (حداکثر ۲)"), value: out1 },
+        { label: bi("Units outside 1× (max 2)", "واحدهای خارج از حد یک‌برابر (حداکثر 2)"), value: out1 },
         { label: bi("Units outside 2× (none allowed)", "واحدهای خارج از حد دوبرابر (هیچ)"), value: out2 },
         { label: bi("Conclusion", "نتیجه"), value: verdict },
       ]}
@@ -80,7 +80,7 @@ export function Wv({ ctx }: { ctx: Ctx }) {
       note={bi(
         "Ph. Eur. 2.9.5: weigh 20 units taken at random. Not more than 2 may deviate from the average mass by more than the percentage in the table, and none by more than twice that. Tablets: 10% up to 80 mg, 7.5% between 80 and 250 mg, 5% at 250 mg or more. Capsules, single-dose granules and powders: 10% below 300 mg, 7.5% at 300 mg or more. Powders for parenteral use: 10% above 40 mg. Suppositories and pessaries: 5%. " +
           listNote.en,
-        `${ltr("Ph. Eur. 2.9.5")}: ۲۰ واحد را به‌طور تصادفی وزن کنید. حداکثر ۲ واحد می‌توانند بیش از درصد جدول از میانگین انحراف داشته باشند و هیچ واحدی نباید بیش از دو برابر آن انحراف داشته باشد. قرص: تا ۸۰ میلی‌گرم 10٪، بین ۸۰ و ۲۵۰ میلی‌گرم 7.5٪، ۲۵۰ میلی‌گرم و بیشتر 5٪. کپسول، گرانول و پودر تک‌دوز: کمتر از ۳۰۰ میلی‌گرم 10٪، ۳۰۰ میلی‌گرم و بیشتر 7.5٪. پودر تزریقی: بیش از ۴۰ میلی‌گرم 10٪. شیاف: 5٪. ${listNote.fa}`,
+        `${ltr("Ph. Eur. 2.9.5")}: 20 واحد را به‌طور تصادفی وزن کنید. حداکثر 2 واحد می‌توانند بیش از درصد جدول از میانگین انحراف داشته باشند و هیچ واحدی نباید بیش از دو برابر آن انحراف داشته باشد. قرص: تا 80 میلی‌گرم 10%، بین 80 و 250 میلی‌گرم 7.5%، 250 میلی‌گرم و بیشتر 5%. کپسول، گرانول و پودر تک‌دوز: کمتر از 300 میلی‌گرم 10%، 300 میلی‌گرم و بیشتر 7.5%. پودر تزریقی: بیش از 40 میلی‌گرم 10%. شیاف: 5%. ${listNote.fa}`,
       )}
     />
   );
@@ -93,7 +93,7 @@ export function Fri({ ctx }: { ctx: Ctx }) {
   const w1 = num(v["fr-w1"]), w2 = num(v["fr-w2"]), m = num(v["fr-m"]);
   const ok = w1 > 0 && w2 >= 0 && w2 <= w1;
   const loss = ok ? ((w1 - w2) / w1) * 100 : NaN;
-  const sample = m > 0 ? (m <= 650 ? `${Math.round(6500 / m)} ${bi("tablets (≈ 6.5 g)", "قرص (حدود ۶٫۵ گرم)")[locale]}` : bi("10 tablets", "۱۰ قرص")[locale]) : DASH;
+  const sample = m > 0 ? (m <= 650 ? `${Math.round(6500 / m)} ${bi("tablets (≈ 6.5 g)", "قرص (حدود 6.5 گرم)")[locale]}` : bi("10 tablets", "10 قرص")[locale]) : DASH;
   return (
     <Panel
       ctx={ctx}
@@ -102,21 +102,21 @@ export function Fri({ ctx }: { ctx: Ctx }) {
         <>
           <NumberInput ctx={ctx} id="fr-m" label={bi("Mass of one tablet (mg)", "وزن یک قرص (میلی‌گرم)")} />
           <NumberInput ctx={ctx} id="fr-w1" label={bi("Dedusted sample mass before the test W₁ (g)", "وزن نمونه غبارزدایی‌شده پیش از آزمون W₁ (گرم)")} />
-          <NumberInput ctx={ctx} id="fr-w2" label={bi("Dedusted sample mass after 100 rotations W₂ (g)", "وزن نمونه غبارزدایی‌شده پس از ۱۰۰ دور W₂ (گرم)")} />
+          <NumberInput ctx={ctx} id="fr-w2" label={bi("Dedusted sample mass after 100 rotations W₂ (g)", "وزن نمونه غبارزدایی‌شده پس از 100 دور W₂ (گرم)")} />
         </>
       }
       results={[
         { label: bi("Sample to test", "نمونه آزمون"), value: sample },
         { label: bi("Mass loss", "کاهش وزن"), value: ok ? `${fixed(loss, 2)}%` : DASH },
         {
-          label: bi("Conclusion (≤ 1.0%)", "نتیجه (≤ 1.0٪)"),
-          value: ok ? (loss <= 1 ? bi("Acceptable", "قابل قبول") : bi("Above 1.0%: repeat twice and use the mean of three", "بیش از 1.0٪: دو بار تکرار و میانگین سه آزمون"))[locale] : DASH,
+          label: bi("Conclusion (≤ 1.0%)", "نتیجه (≤ 1.0%)"),
+          value: ok ? (loss <= 1 ? bi("Acceptable", "قابل قبول") : bi("Above 1.0%: repeat twice and use the mean of three", "بیش از 1.0%: دو بار تکرار و میانگین سه آزمون"))[locale] : DASH,
         },
       ]}
       message={ok ? "" : bad(ctx)}
       note={bi(
         "USP <1216> / Ph. Eur. 2.9.7: for tablets of 650 mg or less take whole tablets as near as possible to 6.5 g; above 650 mg take 10 tablets. Dedust, weigh, rotate 100 times (25 rpm, 4 min), dedust and weigh again. A maximum mean loss of not more than 1.0% is acceptable for most products; if the result is doubtful or above the target, repeat the test twice and use the mean of the three. No tablet may be cracked, cleaved or broken.",
-        `${ltr("USP <1216>")} و ${ltr("Ph. Eur. 2.9.7")}: برای قرص‌های ۶۵۰ میلی‌گرم یا کمتر، قرص‌های کامل به وزن نزدیک ۶٫۵ گرم و برای قرص‌های سنگین‌تر ۱۰ قرص بردارید. غبارزدایی، توزین، ۱۰۰ دور چرخش (۲۵ دور در دقیقه، ۴ دقیقه)، غبارزدایی و توزین دوباره. حداکثر میانگین کاهش وزن 1.0٪ برای بیشتر فرآورده‌ها قابل قبول است؛ اگر نتیجه مشکوک یا بیشتر از هدف باشد، آزمون دو بار دیگر تکرار و میانگین سه آزمون محاسبه می‌شود. هیچ قرصی نباید ترک‌خورده، لایه‌لایه یا شکسته باشد.`,
+        `${ltr("USP <1216>")} و ${ltr("Ph. Eur. 2.9.7")}: برای قرص‌های 650 میلی‌گرم یا کمتر، قرص‌های کامل به وزن نزدیک 6.5 گرم و برای قرص‌های سنگین‌تر 10 قرص بردارید. غبارزدایی، توزین، 100 دور چرخش (25 دور در دقیقه، 4 دقیقه)، غبارزدایی و توزین دوباره. حداکثر میانگین کاهش وزن 1.0% برای بیشتر فرآورده‌ها قابل قبول است؛ اگر نتیجه مشکوک یا بیشتر از هدف باشد، آزمون دو بار دیگر تکرار و میانگین سه آزمون محاسبه می‌شود. هیچ قرصی نباید ترک‌خورده، لایه‌لایه یا شکسته باشد.`,
       )}
     />
   );
@@ -208,7 +208,7 @@ export function Maco({ ctx }: { ctx: Ctx }) {
       message={okB ? "" : bad(ctx)}
       note={bi(
         "Maximum allowable carryover of product A into the next product B. Health-based (EMA guideline on HBEL, 2014; PIC/S): MACO = PDE × MBS ÷ MDD. Traditional criteria, still used as additional checks: 1/1000 of the smallest therapeutic dose (MACO = STD × MBS ÷ (SF × MDD)) and 10 ppm of A in B. The lowest value governs. Swab limit = MACO × swabbed area ÷ shared area; the measured swab result is compared with the limit multiplied by the recovery. Rinse limit assumes the residue is evenly distributed in the final rinse.",
-        `حداکثر انتقال مجاز محصول A به محصول بعدی B. بر پایه سلامت (راهنمای HBEL آژانس دارویی اروپا، ۲۰۱۴؛ PIC/S): ${ltr("MACO = PDE × MBS ÷ MDD")}. معیارهای سنتی که هنوز به‌عنوان کنترل تکمیلی به کار می‌روند: یک‌هزارم کمترین دوز درمانی ${ltr("(MACO = STD × MBS ÷ (SF × MDD))")} و 10 ppm از A در B. کمترین مقدار ملاک است. حد سواب ${ltr("= MACO × swab area ÷ shared area")}؛ نتیجه اندازه‌گیری‌شده سواب با حد ضرب‌شده در بازیافت مقایسه می‌شود. حد Rinse با فرض توزیع یکنواخت باقیمانده در آب شست‌وشوی نهایی محاسبه می‌شود.`,
+        `حداکثر انتقال مجاز محصول A به محصول بعدی B. بر پایه سلامت (راهنمای HBEL آژانس دارویی اروپا، 2014؛ PIC/S): ${ltr("MACO = PDE × MBS ÷ MDD")}. معیارهای سنتی که هنوز به‌عنوان کنترل تکمیلی به کار می‌روند: یک‌هزارم کمترین دوز درمانی ${ltr("(MACO = STD × MBS ÷ (SF × MDD))")} و 10 ppm از A در B. کمترین مقدار ملاک است. حد سواب ${ltr("= MACO × swab area ÷ shared area")}؛ نتیجه اندازه‌گیری‌شده سواب با حد ضرب‌شده در بازیافت مقایسه می‌شود. حد Rinse با فرض توزیع یکنواخت باقیمانده در آب شست‌وشوی نهایی محاسبه می‌شود.`,
       )}
     />
   );

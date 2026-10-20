@@ -9,7 +9,7 @@ const t = copy.lastUpdate;
 /** "27 Mehr 1405, 18:00" (Tehran time) for a daily-update stamp. */
 export function lastUpdateText(at: string, locale: Locale): string {
   const date = new Date(at);
-  const time = new Intl.DateTimeFormat(locale === "fa" ? "fa-IR" : "en-GB", {
+  const time = new Intl.DateTimeFormat(locale === "fa" ? "fa-IR-u-nu-latn" : "en-GB", {
     timeZone: "Asia/Tehran",
     hour: "2-digit",
     minute: "2-digit",

@@ -69,17 +69,17 @@ export const referenceSections: RefSection[] = [
         label: referenceLabels.inForce,
         value: bi(
           "USP–NF 2026 — Issue 1 official 1 February 2026, Issue 2 on 1 April 2026, Issue 3 on 1 June 2026",
-          `${ltr("USP–NF 2026")} — شماره ۱ رسمی از ۱۲ بهمن ۱۴۰۴، شماره ۲ از ۱۲ فروردین ۱۴۰۵، شماره ۳ از ۱۱ خرداد ۱۴۰۵`,
+          `${ltr("USP–NF 2026")} — شماره 1 رسمی از 12 بهمن 1404، شماره 2 از 12 فروردین 1405، شماره 3 از 11 خرداد 1405`,
         ),
       },
       {
         label: referenceLabels.next,
-        value: bi("USP–NF 2027 issues, official from 2027", `شماره‌های ${ltr("USP–NF 2027")}، رسمی از ۲۰۲۷`),
+        value: bi("USP–NF 2027 issues, official from 2027", `شماره‌های ${ltr("USP–NF 2027")}، رسمی از 2027`),
       },
     ],
     text: bi(
       "The legal standard for medicines in the United States. Since 2026 USP–NF Online publishes several issues a year and every chapter or monograph carries its own official date, so check the “official” date of the text you cite.",
-      "استاندارد قانونی دارو در آمریکا. از ۲۰۲۶ نسخه آنلاین USP–NF چند شماره در سال منتشر می‌کند و هر فصل یا مونوگراف تاریخ رسمی‌شدن خاص خود را دارد؛ بنابراین تاریخ «رسمی از» متنی را که استناد می‌کنید بررسی کنید.",
+      "استاندارد قانونی دارو در آمریکا. از 2026 نسخه آنلاین USP–NF چند شماره در سال منتشر می‌کند و هر فصل یا مونوگراف تاریخ رسمی‌شدن خاص خود را دارد؛ بنابراین تاریخ «رسمی از» متنی را که استناد می‌کنید بررسی کنید.",
     ),
     links: [
       { label: "USP–NF Online", url: "https://www.uspnf.com/", note: bi("Official texts (subscription)", "متن رسمی (با اشتراک)") },
@@ -93,15 +93,15 @@ export const referenceSections: RefSection[] = [
     abbr: "BP",
     chip: "BP 2026 · 2027",
     editions: [
-      { label: referenceLabels.inForce, value: bi("BP 2026 — legally effective since 1 January 2026", `${ltr("BP 2026")} — لازم‌الاجرا از ۱۱ دی ۱۴۰۴`) },
+      { label: referenceLabels.inForce, value: bi("BP 2026 — legally effective since 1 January 2026", `${ltr("BP 2026")} — لازم‌الاجرا از 11 دی 1404`) },
       {
         label: referenceLabels.latest,
-        value: bi("BP 2027 — available since 1 August 2026, legally effective 1 January 2027", `${ltr("BP 2027")} — در دسترس از ۱۰ مرداد ۱۴۰۵، لازم‌الاجرا از ۱۱ دی ۱۴۰۵`),
+        value: bi("BP 2027 — available since 1 August 2026, legally effective 1 January 2027", `${ltr("BP 2027")} — در دسترس از 10 مرداد 1405، لازم‌الاجرا از 11 دی 1405`),
       },
     ],
     text: bi(
       "Published each August by the MHRA and legally effective from the following 1 January; it reproduces every Ph. Eur. monograph alongside about 4,000 monographs of its own.",
-      "هر سال در ماه اوت از سوی MHRA منتشر و از اول ژانویه سال بعد لازم‌الاجرا می‌شود؛ همه مونوگراف‌های فارماکوپه اروپا را هم در کنار حدود ۴۰۰۰ مونوگراف خود در بر دارد.",
+      "هر سال در ماه اوت از سوی MHRA منتشر و از اول ژانویه سال بعد لازم‌الاجرا می‌شود؛ همه مونوگراف‌های فارماکوپه اروپا را هم در کنار حدود 4000 مونوگراف خود در بر دارد.",
     ),
     links: [
       { label: "BP 2026 online", url: "https://www.pharmacopoeia.com/", note: bi("Official texts — sign in with a subscription", "متن رسمی — ورود با اشتراک") },
@@ -114,15 +114,15 @@ export const referenceSections: RefSection[] = [
     abbr: "Ph. Eur.",
     chip: "Ph. Eur. 12.3 · 13.1",
     editions: [
-      { label: referenceLabels.inForce, value: bi("12th Edition, Issue 12.3 — in force since 1 July 2026", `ویرایش ۱۲، شماره ${ltr("12.3")} — لازم‌الاجرا از ۱۰ تیر ۱۴۰۵`) },
+      { label: referenceLabels.inForce, value: bi("12th Edition, Issue 12.3 — in force since 1 July 2026", `ویرایش 12، شماره ${ltr("12.3")} — لازم‌الاجرا از 10 تیر 1405`) },
       {
         label: referenceLabels.latest,
-        value: bi("Issue 13.1 — published April 2026, in force 1 January 2027", `شماره ${ltr("13.1")} — منتشرشده در اردیبهشت ۱۴۰۵، لازم‌الاجرا از ۱۱ دی ۱۴۰۵`),
+        value: bi("Issue 13.1 — published April 2026, in force 1 January 2027", `شماره ${ltr("13.1")} — منتشرشده در اردیبهشت 1405، لازم‌الاجرا از 11 دی 1405`),
       },
     ],
     text: bi(
       "Published by the EDQM (Council of Europe) as three issues a year on an online-only platform; from Issue 13.1 the gap between publication and implementation is nine months. The old pheur.edqm.eu site was retired in January 2026.",
-      "از سوی EDQM (شورای اروپا) سالی سه شماره و فقط به‌صورت آنلاین منتشر می‌شود؛ از شماره 13.1 فاصله انتشار تا اجرا نه ماه است. سایت قدیمی pheur.edqm.eu در بهمن ۱۴۰۴ بسته شد.",
+      "از سوی EDQM (شورای اروپا) سالی سه شماره و فقط به‌صورت آنلاین منتشر می‌شود؛ از شماره 13.1 فاصله انتشار تا اجرا نه ماه است. سایت قدیمی pheur.edqm.eu در بهمن 1404 بسته شد.",
     ),
     links: [
       { label: "Ph. Eur. Online", url: "https://go.edqm.eu/PhEurOnline", note: bi("Official texts (subscription)", "متن رسمی (با اشتراک)") },
@@ -135,7 +135,7 @@ export const referenceSections: RefSection[] = [
     abbr: "JP",
     chip: "JP 19",
     editions: [
-      { label: referenceLabels.inForce, value: bi("JP 19th Edition (JP19) — in effect since 10 April 2026, 2,072 monographs", `ویرایش ۱۹ ${ltr("(JP19)")} — لازم‌الاجرا از ۲۱ فروردین ۱۴۰۵، ۲۰۷۲ مونوگراف`) },
+      { label: referenceLabels.inForce, value: bi("JP 19th Edition (JP19) — in effect since 10 April 2026, 2,072 monographs", `ویرایش 19 ${ltr("(JP19)")} — لازم‌الاجرا از 21 فروردین 1405، 2072 مونوگراف`) },
       { label: referenceLabels.next, value: bi("English translation of JP19 — usually within a year of publication", "ترجمه انگلیسی JP19 — معمولاً تا یک سال پس از انتشار") },
     ],
     text: bi(
@@ -240,7 +240,7 @@ export const referenceSections: RefSection[] = [
         url: "https://www.medicinescomplete.com/",
         note: bi(
           "The current, regularly updated online edition of the Handbook of Pharmaceutical Excipients (the print 9th edition, 2020, was the last): excipient monographs with functions, typical concentrations, properties and safety (subscription)",
-          "نسخه آنلاین، جاری و مرتب به‌روزشونده Handbook of Pharmaceutical Excipients (ویرایش چاپی ۹ در ۲۰۲۰ آخرین چاپ بود): مونوگراف مواد جانبی با نقش‌ها، غلظت متداول، ویژگی‌ها و ایمنی (با اشتراک)",
+          "نسخه آنلاین، جاری و مرتب به‌روزشونده Handbook of Pharmaceutical Excipients (ویرایش چاپی 9 در 2020 آخرین چاپ بود): مونوگراف مواد جانبی با نقش‌ها، غلظت متداول، ویژگی‌ها و ایمنی (با اشتراک)",
         ),
       },
       { label: "PubChem", url: "https://pubchem.ncbi.nlm.nih.gov/", note: bi("Structures, CAS, properties, safety", "ساختار، CAS، ویژگی‌ها و ایمنی") },
@@ -263,7 +263,7 @@ export const referenceSections: RefSection[] = [
         label: referenceLabels.inForce,
         value: bi(
           "Q1A(R2)–Q1E (consolidated Q1 still in draft), Q2(R2) and Q14 (2023), Q3C(R9) (2024), Q3D(R2) (2022), M7(R2) (2023), M4 (CTD)",
-          `${ltr("Q1A(R2)–Q1E")} (گایدلاین یکپارچه Q1 هنوز پیش‌نویس است)، ${ltr("Q2(R2)")} و ${ltr("Q14")} (۲۰۲۳)، ${ltr("Q3C(R9)")} (۲۰۲۴)، ${ltr("Q3D(R2)")} (۲۰۲۲)، ${ltr("M7(R2)")} (۲۰۲۳)، ${ltr("M4 (CTD)")}`,
+          `${ltr("Q1A(R2)–Q1E")} (گایدلاین یکپارچه Q1 هنوز پیش‌نویس است)، ${ltr("Q2(R2)")} و ${ltr("Q14")} (2023)، ${ltr("Q3C(R9)")} (2024)، ${ltr("Q3D(R2)")} (2022)، ${ltr("M7(R2)")} (2023)، ${ltr("M4 (CTD)")}`,
         ),
       },
     ],

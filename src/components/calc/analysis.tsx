@@ -220,7 +220,7 @@ export function Kf({ ctx }: { ctx: Ctx }) {
       message={okKf || okLod ? "" : bad(ctx)}
       note={bi(
         "Volumetric KF (USP <921>, Ph. Eur. 2.5.12): F = water in standard ÷ volume; water % = V × F ÷ sample weight × 100. Sodium tartrate dihydrate contains 15.66% water. LOD (USP <731>) also counts volatile solvents.",
-        `کارل فیشر حجمی ${ltr("(USP <921>, Ph. Eur. 2.5.12)")}: ${ltr("F = water (mg) ÷ V (mL)")}؛ ${ltr("H₂O % = V × F ÷ W × 100")}. سدیم تارتارات دی‌هیدرات 15.66٪ آب دارد. LOD ${ltr("(USP <731>)")} حلال‌های فرار را هم شامل می‌شود.`,
+        `کارل فیشر حجمی ${ltr("(USP <921>, Ph. Eur. 2.5.12)")}: ${ltr("F = water (mg) ÷ V (mL)")}؛ ${ltr("H₂O % = V × F ÷ W × 100")}. سدیم تارتارات دی‌هیدرات 15.66% آب دارد. LOD ${ltr("(USP <731>)")} حلال‌های فرار را هم شامل می‌شود.`,
       )}
     />
   );
@@ -244,8 +244,8 @@ export function Sst({ ctx }: { ctx: Ctx }) {
           <NumberInput ctx={ctx} id="ss-t2" label={bi("Retention time, peak 2 (min)", "زمان بازداری پیک 2 (دقیقه)")} />
           <NumberInput ctx={ctx} id="ss-w1" label={bi("Width at half height, peak 1 (min)", "پهنای پیک 1 در نصف ارتفاع (دقیقه)")} />
           <NumberInput ctx={ctx} id="ss-w2" label={bi("Width at half height, peak 2 (min)", "پهنای پیک 2 در نصف ارتفاع (دقیقه)")} />
-          <NumberInput ctx={ctx} id="ss-w05" label={bi("Peak 2 width at 5% height, W₀.₀₅ (min)", "پهنای پیک 2 در 5٪ ارتفاع، W₀.₀₅ (دقیقه)")} />
-          <NumberInput ctx={ctx} id="ss-f" label={bi("Front half-width at 5% height, f (min)", "نیم‌پهنای جلویی در 5٪ ارتفاع، f (دقیقه)")} />
+          <NumberInput ctx={ctx} id="ss-w05" label={bi("Peak 2 width at 5% height, W₀.₀₅ (min)", "پهنای پیک 2 در 5% ارتفاع، W₀.₀₅ (دقیقه)")} />
+          <NumberInput ctx={ctx} id="ss-f" label={bi("Front half-width at 5% height, f (min)", "نیم‌پهنای جلویی در 5% ارتفاع، f (دقیقه)")} />
           <ListInput ctx={ctx} id="ss-areas" label={bi("Peak areas of replicate injections", "سطح پیک تزریق‌های تکراری")} />
         </>
       }
@@ -425,7 +425,7 @@ export function F2({ ctx }: { ctx: Ctx }) {
       note={bi(
         "f2 of 50–100 means similar profiles (f1 0–15). Conditions: at least 12 units per product, identical time points, no more than one point above 85% dissolved for either product, and a coefficient of variation of no more than 20% at early points and 10% at later points. If both products release ≥ 85% within 15 minutes, the profiles are similar without f2. " +
           listNote.en,
-        `f2 بین 50 تا 100 یعنی پروفایل‌ها مشابه‌اند (f1 بین 0 تا 15). شرایط: دست‌کم 12 واحد از هر فرآورده، زمان‌های یکسان، حداکثر یک نقطه بالای 85٪ انحلال برای هر فرآورده، و ضریب تغییرات حداکثر 20٪ در نقاط اولیه و 10٪ در سایر نقاط. اگر هر دو فرآورده در 15 دقیقه دست‌کم 85٪ آزاد کنند، بدون محاسبه f2 مشابه تلقی می‌شوند. ${listNote.fa}`,
+        `f2 بین 50 تا 100 یعنی پروفایل‌ها مشابه‌اند (f1 بین 0 تا 15). شرایط: دست‌کم 12 واحد از هر فرآورده، زمان‌های یکسان، حداکثر یک نقطه بالای 85% انحلال برای هر فرآورده، و ضریب تغییرات حداکثر 20% در نقاط اولیه و 10% در سایر نقاط. اگر هر دو فرآورده در 15 دقیقه دست‌کم 85% آزاد کنند، بدون محاسبه f2 مشابه تلقی می‌شوند. ${listNote.fa}`,
       )}
     />
   );
@@ -452,14 +452,14 @@ export function Udu({ ctx }: { ctx: Ctx }) {
     verdict = (value <= 15 && l2ok
       ? bi("Complies (AV ≤ L1 = 15.0)", "منطبق (AV ≤ L1 = 15.0)")
       : n === 10
-        ? bi("Not met at stage 1: test 20 more units", "مرحله اول قبول نشد: ۲۰ واحد دیگر آزمون شود")
+        ? bi("Not met at stage 1: test 20 more units", "مرحله اول قبول نشد: 20 واحد دیگر آزمون شود")
         : bi("Does not comply", "منطبق نیست"))[locale];
   }
   return (
     <Panel
       ctx={ctx}
       title={calculation("udu").title}
-      form={<ListInput ctx={ctx} id="ud-x" rows={4} label={bi("Individual contents, % of label claim (10 or 30 units)", "مقدار تک‌تک واحدها، % ادعای برچسب (۱۰ یا ۳۰ واحد)")} />}
+      form={<ListInput ctx={ctx} id="ud-x" rows={4} label={bi("Individual contents, % of label claim (10 or 30 units)", "مقدار تک‌تک واحدها، % ادعای برچسب (10 یا 30 واحد)")} />}
       results={[
         { label: bi("Mean X̄", "میانگین X̄"), value: mx },
         { label: bi("Standard deviation s", "انحراف معیار s"), value: s },
@@ -467,11 +467,11 @@ export function Udu({ ctx }: { ctx: Ctx }) {
         { label: bi("Acceptance value AV", "مقدار پذیرش AV"), value: av },
         { label: bi("Conclusion", "نتیجه"), value: verdict },
       ]}
-      message={ok ? "" : bi("Enter the results of exactly 10 or 30 units.", "نتیجه دقیقاً ۱۰ یا ۳۰ واحد را وارد کنید.")[locale]}
+      message={ok ? "" : bi("Enter the results of exactly 10 or 30 units.", "نتیجه دقیقاً 10 یا 30 واحد را وارد کنید.")[locale]}
       note={bi(
         "USP <905> / Ph. Eur. 2.9.40, for a target content T ≤ 101.5%: M = X̄ when 98.5 ≤ X̄ ≤ 101.5, otherwise 98.5 or 101.5; k = 2.4 for 10 units and 2.0 for 30. With 30 units, no unit may lie outside 0.75M–1.25M (L2 = 25.0). " +
           listNote.en,
-        `${ltr("USP <905>")} و ${ltr("Ph. Eur. 2.9.40")} برای مقدار هدف ${ltr("T ≤ 101.5%")}: اگر ${ltr("98.5 ≤ X̄ ≤ 101.5")} باشد M = X̄، در غیر این صورت 98.5 یا 101.5؛ k برای ۱۰ واحد 2.4 و برای ۳۰ واحد 2.0. با ۳۰ واحد، هیچ واحدی نباید خارج از ${ltr("0.75M–1.25M")} باشد (L2 = 25.0). ${listNote.fa}`,
+        `${ltr("USP <905>")} و ${ltr("Ph. Eur. 2.9.40")} برای مقدار هدف ${ltr("T ≤ 101.5%")}: اگر ${ltr("98.5 ≤ X̄ ≤ 101.5")} باشد M = X̄، در غیر این صورت 98.5 یا 101.5؛ k برای 10 واحد 2.4 و برای 30 واحد 2.0. با 30 واحد، هیچ واحدی نباید خارج از ${ltr("0.75M–1.25M")} باشد (L2 = 25.0). ${listNote.fa}`,
       )}
     />
   );

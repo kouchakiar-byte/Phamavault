@@ -177,7 +177,7 @@ export default async function QcPage() {
           {qc.oos.map((step, i) => (
             <li key={step.title.en} className="rounded-card border border-line bg-white p-6">
               <span className="flex size-9 items-center justify-center rounded-full bg-vault-900 font-mono text-sm font-semibold text-molecule-400">
-                {(i + 1).toLocaleString(locale === "fa" ? "fa-IR" : "en-US")}
+                {(i + 1).toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US")}
               </span>
               <p className="mt-4 font-bold text-vault-900">{step.title[locale]}</p>
               <p className="mt-2 text-sm leading-relaxed text-muted">{step.text[locale]}</p>

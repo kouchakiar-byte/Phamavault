@@ -62,7 +62,7 @@ export const about: LegalPage = {
         ),
         bi(
           "CTD dossier compilation for your project in 5 working days by the PharmaVault expert team",
-          "تدوین CTD پروژه شما در ۵ روز کاری توسط تیم تخصصی فارماوالت",
+          "تدوین CTD پروژه شما در 5 روز کاری توسط تیم تخصصی فارماوالت",
         ),
       ],
     },
@@ -106,7 +106,7 @@ export const terms: LegalPage = {
   ),
   sections: [
     {
-      title: bi("1. Account", "۱. حساب کاربری"),
+      title: bi("1. Account", "1. حساب کاربری"),
       items: [
         bi("An account is created with a mobile number and password and belongs to one person.", "حساب کاربری با شماره موبایل و رمز عبور ساخته می‌شود و متعلق به یک نفر است."),
         bi(
@@ -117,7 +117,7 @@ export const terms: LegalPage = {
       ],
     },
     {
-      title: bi("2. Subscriptions and payment", "۲. اشتراک و پرداخت"),
+      title: bi("2. Subscriptions and payment", "2. اشتراک و پرداخت"),
       items: [
         bi("Prices are in Toman and shown on the site before payment; the amount on the payment page is final.", "قیمت‌ها به تومان و پیش از پرداخت در سایت نمایش داده می‌شود؛ مبلغ صفحه پرداخت، مبلغ نهایی است."),
         bi(
@@ -126,7 +126,7 @@ export const terms: LegalPage = {
         ),
         bi(
           "Access opens as soon as the payment is confirmed, for the period bought (1, 3, 6 or 12 months). The start and end dates are shown in your account.",
-          "دسترسی بلافاصله پس از تأیید پرداخت و برای مدت خریداری‌شده (۱، ۳، ۶ یا ۱۲ ماه) باز می‌شود. تاریخ شروع و پایان در حساب کاربری نمایش داده می‌شود.",
+          "دسترسی بلافاصله پس از تأیید پرداخت و برای مدت خریداری‌شده (1، 3، 6 یا 12 ماه) باز می‌شود. تاریخ شروع و پایان در حساب کاربری نمایش داده می‌شود.",
         ),
         bi("Renewal adds the new period to the current end date.", "تمدید، مدت جدید را به تاریخ پایان فعلی اضافه می‌کند."),
         bi(
@@ -136,11 +136,11 @@ export const terms: LegalPage = {
       ],
     },
     {
-      title: bi("3. Refunds", "۳. بازگشت وجه"),
+      title: bi("3. Refunds", "3. بازگشت وجه"),
       items: [
         bi(
           "Within 3 days of purchase, if the subscribed sections have not been used, the full amount is refunded on request.",
-          "تا ۳ روز پس از خرید، در صورتی که از بخش‌های اشتراک استفاده نشده باشد، با درخواست شما کل مبلغ بازگردانده می‌شود.",
+          "تا 3 روز پس از خرید، در صورتی که از بخش‌های اشتراک استفاده نشده باشد، با درخواست شما کل مبلغ بازگردانده می‌شود.",
         ),
         bi(
           "If a payment was taken but the subscription did not open, contact us with the payment reference; it is activated or refunded.",
@@ -148,12 +148,12 @@ export const terms: LegalPage = {
         ),
         bi(
           "Failed bank payments are returned to the card by the bank, normally within 72 hours.",
-          "مبالغ پرداخت‌های ناموفق، معمولاً ظرف ۷۲ ساعت توسط بانک به کارت بازگردانده می‌شود.",
+          "مبالغ پرداخت‌های ناموفق، معمولاً ظرف 72 ساعت توسط بانک به کارت بازگردانده می‌شود.",
         ),
       ],
     },
     {
-      title: bi("4. Permitted use", "۴. استفاده مجاز"),
+      title: bi("4. Permitted use", "4. استفاده مجاز"),
       items: [
         bi("Content is for the subscriber's own professional and educational use.", "محتوا برای استفاده حرفه‌ای و آموزشی خود مشترک است."),
         bi(
@@ -163,7 +163,7 @@ export const terms: LegalPage = {
       ],
     },
     {
-      title: bi("5. Intellectual property", "۵. مالکیت معنوی"),
+      title: bi("5. Intellectual property", "5. مالکیت معنوی"),
       items: [
         bi(
           "All content on PharmaVault — the monographs, databases, calculators, SOPs, handbook chapters, translations, compilation and design — belongs to the PharmaVault platform (The Pharmaceutical Information Vault) and is protected by intellectual-property law.",
@@ -180,7 +180,7 @@ export const terms: LegalPage = {
       ],
     },
     {
-      title: bi("6. Nature of the information", "۶. ماهیت اطلاعات"),
+      title: bi("6. Nature of the information", "6. ماهیت اطلاعات"),
       paragraphs: [
         bi(
           "PharmaVault is a working reference that shortens the search. Specifications, limits and registration requirements must always be confirmed against the current official pharmacopoeia, guideline or authority before use in production, release or a regulatory submission. Supplier details are published as found in the cited sources; PharmaVault is not a party to any purchase between users and suppliers.",
@@ -189,7 +189,7 @@ export const terms: LegalPage = {
       ],
     },
     {
-      title: bi("7. Changes", "۷. تغییرات"),
+      title: bi("7. Changes", "7. تغییرات"),
       paragraphs: [
         bi(
           "These terms and the prices may change; changes apply to purchases made after they are published and do not affect a subscription already paid for.",

@@ -179,7 +179,7 @@ export const qc = {
       chapter: "USP <905> · Ph. Eur. 2.9.40",
       criteria: bi(
         "10 units: acceptance value AV ≤ L1 (15.0). If AV > 15.0, test 20 more: AV of 30 ≤ 15.0 and no unit outside (1 ± 0.25) × M.",
-        `۱۰ واحد: مقدار پذیرش ${ltr("AV ≤ L1 (15.0)")}. اگر ${ltr("AV > 15.0")} بود، ۲۰ واحد دیگر آزمون می‌شود: مقدار AV برای ۳۰ واحد ${ltr("≤ 15.0")} و هیچ واحدی خارج از ${ltr("(1 ± 0.25) × M")} نباشد.`,
+        `10 واحد: مقدار پذیرش ${ltr("AV ≤ L1 (15.0)")}. اگر ${ltr("AV > 15.0")} بود، 20 واحد دیگر آزمون می‌شود: مقدار AV برای 30 واحد ${ltr("≤ 15.0")} و هیچ واحدی خارج از ${ltr("(1 ± 0.25) × M")} نباشد.`,
       ),
     },
     {
@@ -187,7 +187,7 @@ export const qc = {
       chapter: "USP <711> · Ph. Eur. 2.9.3",
       criteria: bi(
         "S1 (6 units): each ≥ Q + 5%. S2 (12): mean ≥ Q, none < Q − 15%. S3 (24): mean ≥ Q, no more than 2 units < Q − 15%, none < Q − 25%.",
-        `مرحله S1 (۶ واحد): هر واحد ${ltr("≥ Q + 5%")}. مرحله S2 (۱۲ واحد): میانگین ${ltr("≥ Q")} و هیچ واحدی ${ltr("< Q − 15%")} نباشد. مرحله S3 (۲۴ واحد): میانگین ${ltr("≥ Q")}، حداکثر ۲ واحد ${ltr("< Q − 15%")} و هیچ واحدی ${ltr("< Q − 25%")} نباشد.`,
+        `مرحله S1 (6 واحد): هر واحد ${ltr("≥ Q + 5%")}. مرحله S2 (12 واحد): میانگین ${ltr("≥ Q")} و هیچ واحدی ${ltr("< Q − 15%")} نباشد. مرحله S3 (24 واحد): میانگین ${ltr("≥ Q")}، حداکثر 2 واحد ${ltr("< Q − 15%")} و هیچ واحدی ${ltr("< Q − 25%")} نباشد.`,
       ),
     },
     {
@@ -195,7 +195,7 @@ export const qc = {
       chapter: "USP <701> · Ph. Eur. 2.9.1",
       criteria: bi(
         "6 units disintegrate within the specified time; if 1 or 2 fail, test 12 more and at least 16 of 18 must pass. Ph. Eur. limits: uncoated tablets 15 min, film-coated tablets 30 min.",
-        `۶ واحد در زمان تعیین‌شده متلاشی شوند؛ اگر ۱ یا ۲ واحد مردود شد، ۱۲ واحد دیگر آزمون و دست‌کم ۱۶ از ۱۸ واحد باید قبول شوند. حدود ${ltr("Ph. Eur.")}: قرص بدون روکش ۱۵ دقیقه، قرص با روکش فیلم ۳۰ دقیقه.`,
+        `6 واحد در زمان تعیین‌شده متلاشی شوند؛ اگر 1 یا 2 واحد مردود شد، 12 واحد دیگر آزمون و دست‌کم 16 از 18 واحد باید قبول شوند. حدود ${ltr("Ph. Eur.")}: قرص بدون روکش 15 دقیقه، قرص با روکش فیلم 30 دقیقه.`,
       ),
     },
     {
@@ -203,7 +203,7 @@ export const qc = {
       chapter: "USP <1216> · Ph. Eur. 2.9.7",
       criteria: bi(
         "100 rotations (25 rpm, 4 min). Tablets ≤ 650 mg: whole tablets close to 6.5 g; > 650 mg: 10 tablets. Mean weight loss ≤ 1.0% and no cracked, cleaved or broken tablets.",
-        `۱۰۰ دور (۲۵ دور در دقیقه به مدت ۴ دقیقه). قرص‌های ${ltr("≤ 650 mg")}: قرص کامل نزدیک به ۶٫۵ گرم؛ قرص‌های ${ltr("> 650 mg")}: ۱۰ قرص. میانگین کاهش وزن ${ltr("≤ 1.0%")} و هیچ قرص ترک‌خورده، دولایه یا شکسته‌ای نباشد.`,
+        `100 دور (25 دور در دقیقه به مدت 4 دقیقه). قرص‌های ${ltr("≤ 650 mg")}: قرص کامل نزدیک به 6.5 گرم؛ قرص‌های ${ltr("> 650 mg")}: 10 قرص. میانگین کاهش وزن ${ltr("≤ 1.0%")} و هیچ قرص ترک‌خورده، دولایه یا شکسته‌ای نباشد.`,
       ),
     },
     {
@@ -211,7 +211,7 @@ export const qc = {
       chapter: "Ph. Eur. 2.9.5",
       criteria: bi(
         "20 tablets: no more than 2 deviate from the mean by more than 10% (≤ 80 mg), 7.5% (80–250 mg) or 5% (> 250 mg), and none by more than twice that.",
-        `۲۰ قرص: حداکثر ۲ قرص بیش از ۱۰٪ (${ltr("≤ 80 mg")})، ۷٫۵٪ (${ltr("80–250 mg")}) یا ۵٪ (${ltr("> 250 mg")}) از میانگین انحراف داشته باشند و هیچ قرصی بیش از دو برابر این حد.`,
+        `20 قرص: حداکثر 2 قرص بیش از 10% (${ltr("≤ 80 mg")})، 7.5% (${ltr("80–250 mg")}) یا 5% (${ltr("> 250 mg")}) از میانگین انحراف داشته باشند و هیچ قرصی بیش از دو برابر این حد.`,
       ),
     },
     {
@@ -239,7 +239,7 @@ export const qc = {
   route: bi("Route of administration", "راه مصرف"),
   tamc: bi("TAMC (CFU/g or mL)", "TAMC (CFU در گرم یا میلی‌لیتر)"),
   tymc: bi("TYMC (CFU/g or mL)", "TYMC (CFU در گرم یا میلی‌لیتر)"),
-  specified: bi("Specified microorganisms (absent in 1 g or 1 mL)", "میکروارگانیسم‌های مشخص (عدم وجود در ۱ گرم یا ۱ میلی‌لیتر)"),
+  specified: bi("Specified microorganisms (absent in 1 g or 1 mL)", "میکروارگانیسم‌های مشخص (عدم وجود در 1 گرم یا 1 میلی‌لیتر)"),
   micro: [
     { route: bi("Oral, non-aqueous", "خوراکی غیرآبی"), tamc: "10³", tymc: "10²", specified: "Escherichia coli" },
     { route: bi("Oral, aqueous", "خوراکی آبی"), tamc: "10²", tymc: "10¹", specified: "Escherichia coli" },
@@ -265,7 +265,7 @@ export const qc = {
   ],
   microNote: bi(
     "A limit of 10¹ CFU allows a maximum count of 20, 10² allows 200 and 10³ allows 2000. TAMC: total aerobic microbial count; TYMC: total combined yeasts and moulds count.",
-    `حد ${ltr("10¹ CFU")} یعنی حداکثر شمارش ۲۰، حد ${ltr("10²")} یعنی ۲۰۰ و حد ${ltr("10³")} یعنی ۲۰۰۰. TAMC: شمارش کل میکروارگانیسم‌های هوازی؛ TYMC: شمارش کل مخمرها و کپک‌ها.`,
+    `حد ${ltr("10¹ CFU")} یعنی حداکثر شمارش 20، حد ${ltr("10²")} یعنی 200 و حد ${ltr("10³")} یعنی 2000. TAMC: شمارش کل میکروارگانیسم‌های هوازی؛ TYMC: شمارش کل مخمرها و کپک‌ها.`,
   ),
 
   waterTitle: bi("Pharmaceutical water", "آب دارویی"),
@@ -382,13 +382,13 @@ export const qc = {
     },
     {
       cls: "3",
-      meaning: bi("Low toxic potential: PDE 50 mg/day or more.", "پتانسیل سمیت کم: PDE برابر ۵۰ میلی‌گرم در روز یا بیشتر."),
+      meaning: bi("Low toxic potential: PDE 50 mg/day or more.", "پتانسیل سمیت کم: PDE برابر 50 میلی‌گرم در روز یا بیشتر."),
       examples: "≤ 5000 ppm (0.5%) without justification · e.g. Acetone, Ethanol, Ethyl acetate, 2-Propanol, Heptane, DMSO",
     },
   ],
   solventsNote: bi(
     "Concentration limits assume a daily intake of 10 g of drug product (Option 1); Option 2 allows the sum over all components, against the PDE.",
-    `حدود غلظت بر پایه مصرف روزانه ۱۰ گرم فرآورده است (گزینه ۱)؛ در گزینه ۲ مجموع همه اجزا با PDE مقایسه می‌شود.`,
+    `حدود غلظت بر پایه مصرف روزانه 10 گرم فرآورده است (گزینه 1)؛ در گزینه 2 مجموع همه اجزا با PDE مقایسه می‌شود.`,
   ),
 
   // ---------- Elemental impurities ----------
@@ -405,17 +405,17 @@ export const qc = {
   ],
   elementsNote: bi(
     "Class 1 and 2A elements are assessed in every risk assessment. If the assessed level stays below 30% of the PDE (the control threshold), no additional controls are needed.",
-    "عناصر رده ۱ و ۲A در هر ارزیابی ریسک بررسی می‌شوند. اگر مقدار برآوردشده کمتر از ۳۰٪ PDE (آستانه کنترل) باشد، کنترل اضافی لازم نیست.",
+    "عناصر رده 1 و 2A در هر ارزیابی ریسک بررسی می‌شوند. اگر مقدار برآوردشده کمتر از 30% PDE (آستانه کنترل) باشد، کنترل اضافی لازم نیست.",
   ),
 
   // ---------- System suitability ----------
   sstTitle: bi("Chromatographic system suitability (USP <621> · Ph. Eur. 2.2.46)", `انطباق سیستم کروماتوگرافی ${ltr("(USP <621> · Ph. Eur. 2.2.46)")}`),
   sstCols: { parameter: bi("Parameter", "پارامتر"), what: bi("What it shows", "آنچه نشان می‌دهد"), typical: bi("Typical requirement", "الزام متداول") },
   sst: [
-    { parameter: bi("Repeatability (replicate injections)", "تکرارپذیری (تزریق‌های تکراری)"), what: bi("Precision of the system", "دقت سیستم"), typical: bi("RSD as the monograph states; for assays commonly ≤ 2.0% for 5 injections", "RSD طبق مونوگراف؛ برای تعیین مقدار معمولاً ≤ ۲٫۰٪ برای ۵ تزریق") },
-    { parameter: bi("Resolution (Rs)", "قدرت تفکیک (Rs)"), what: bi("Separation of the critical pair", "جداسازی زوج بحرانی"), typical: bi("Usually ≥ 1.5 (baseline), or the monograph value", "معمولاً ≥ ۱٫۵ (جداسازی کامل) یا مقدار مونوگراف") },
-    { parameter: bi("Symmetry (tailing) factor", "فاکتور تقارن (دنباله‌دار شدن)"), what: bi("Peak shape", "شکل پیک"), typical: bi("0.8–1.8 for assay peaks unless the monograph states otherwise", "۰٫۸ تا ۱٫۸ برای پیک تعیین مقدار، مگر آنکه مونوگراف حد دیگری تعیین کرده باشد") },
-    { parameter: bi("Signal-to-noise ratio (S/N)", "نسبت سیگنال به نویز (S/N)"), what: bi("Sensitivity at the reporting level", "حساسیت در سطح گزارش"), typical: bi("≥ 10 at the quantitation limit; about 3 at the detection limit", "≥ ۱۰ در حد کمّی‌سازی؛ حدود ۳ در حد تشخیص") },
+    { parameter: bi("Repeatability (replicate injections)", "تکرارپذیری (تزریق‌های تکراری)"), what: bi("Precision of the system", "دقت سیستم"), typical: bi("RSD as the monograph states; for assays commonly ≤ 2.0% for 5 injections", "RSD طبق مونوگراف؛ برای تعیین مقدار معمولاً ≤ 2.0% برای 5 تزریق") },
+    { parameter: bi("Resolution (Rs)", "قدرت تفکیک (Rs)"), what: bi("Separation of the critical pair", "جداسازی زوج بحرانی"), typical: bi("Usually ≥ 1.5 (baseline), or the monograph value", "معمولاً ≥ 1.5 (جداسازی کامل) یا مقدار مونوگراف") },
+    { parameter: bi("Symmetry (tailing) factor", "فاکتور تقارن (دنباله‌دار شدن)"), what: bi("Peak shape", "شکل پیک"), typical: bi("0.8–1.8 for assay peaks unless the monograph states otherwise", "0.8 تا 1.8 برای پیک تعیین مقدار، مگر آنکه مونوگراف حد دیگری تعیین کرده باشد") },
+    { parameter: bi("Signal-to-noise ratio (S/N)", "نسبت سیگنال به نویز (S/N)"), what: bi("Sensitivity at the reporting level", "حساسیت در سطح گزارش"), typical: bi("≥ 10 at the quantitation limit; about 3 at the detection limit", "≥ 10 در حد کمّی‌سازی؛ حدود 3 در حد تشخیص") },
     { parameter: bi("Plate number (N)", "تعداد بشقابک (N)"), what: bi("Column efficiency", "کارایی ستون"), typical: bi("As the monograph states", "طبق مونوگراف") },
   ],
   sstNote: bi(
@@ -427,22 +427,22 @@ export const qc = {
   dissoTitle: bi("Dissolution apparatus and usual conditions (USP <711>)", `دستگاه‌های انحلال و شرایط متداول ${ltr("(USP <711>)")}`),
   dissoCols: { app: bi("Apparatus", "دستگاه"), use: bi("Typical use", "کاربرد متداول"), speed: bi("Usual speed", "سرعت متداول") },
   disso: [
-    { app: bi("1 — Basket", "۱ — Basket"), use: bi("Capsules, floating and multiparticulate forms", "کپسول، فرآورده‌های شناور و چندذره‌ای"), speed: "50–100 rpm" },
-    { app: bi("2 — Paddle", "۲ — Paddle"), use: bi("Tablets (most common); sinkers for capsules", "قرص (رایج‌ترین)؛ با سینکر برای کپسول"), speed: "50–75 rpm" },
-    { app: bi("3 — Reciprocating cylinder", "۳ — سیلندر رفت‌وبرگشتی (Reciprocating cylinder)"), use: bi("Extended release, pH-change profiles", "رهش طولانی و پروفایل با تغییر pH"), speed: "5–30 dips/min" },
-    { app: bi("4 — Flow-through cell", "۴ — سلول جریانی (Flow-through cell)"), use: bi("Poorly soluble drugs, implants, microspheres", "داروهای کم‌محلول، ایمپلنت و میکروسفر"), speed: "4–16 mL/min" },
+    { app: bi("1 — Basket", "1 — Basket"), use: bi("Capsules, floating and multiparticulate forms", "کپسول، فرآورده‌های شناور و چندذره‌ای"), speed: "50–100 rpm" },
+    { app: bi("2 — Paddle", "2 — Paddle"), use: bi("Tablets (most common); sinkers for capsules", "قرص (رایج‌ترین)؛ با سینکر برای کپسول"), speed: "50–75 rpm" },
+    { app: bi("3 — Reciprocating cylinder", "3 — سیلندر رفت‌وبرگشتی (Reciprocating cylinder)"), use: bi("Extended release, pH-change profiles", "رهش طولانی و پروفایل با تغییر pH"), speed: "5–30 dips/min" },
+    { app: bi("4 — Flow-through cell", "4 — سلول جریانی (Flow-through cell)"), use: bi("Poorly soluble drugs, implants, microspheres", "داروهای کم‌محلول، ایمپلنت و میکروسفر"), speed: "4–16 mL/min" },
   ],
   dissoNote: bi(
     "Medium usually 900 mL (500–1000 mL) at 37 ± 0.5 °C, degassed when dissolved gases affect results. Sink conditions: a medium volume at least three times that needed to saturate the dose.",
-    `محیط معمولاً ۹۰۰ میلی‌لیتر (۵۰۰ تا ۱۰۰۰ میلی‌لیتر) در دمای ${ltr("37 ± 0.5 °C")} و گاززدایی‌شده اگر گازهای محلول بر نتیجه اثر بگذارند. شرایط Sink: حجم محیط دست‌کم سه برابر حجمی که دوز را اشباع می‌کند.`,
+    `محیط معمولاً 900 میلی‌لیتر (500 تا 1000 میلی‌لیتر) در دمای ${ltr("37 ± 0.5 °C")} و گاززدایی‌شده اگر گازهای محلول بر نتیجه اثر بگذارند. شرایط Sink: حجم محیط دست‌کم سه برابر حجمی که دوز را اشباع می‌کند.`,
   ),
 
   // ---------- Sterility ----------
   sterilityTitle: bi("Sterility test (USP <71> · Ph. Eur. 2.6.1)", `آزمون استریلیتی ${ltr("(USP <71> · Ph. Eur. 2.6.1)")}`),
   sterility: [
     { title: bi("Methods", "روش‌ها"), text: bi("Membrane filtration (preferred where the product can be filtered) or direct inoculation of the media.", "فیلتراسیون غشایی (روش ترجیحی برای محصولات قابل فیلتر) یا تلقیح مستقیم به محیط کشت.") },
-    { title: bi("Media and incubation", "محیط‌ها و انکوباسیون"), text: bi("Fluid thioglycollate medium at 30–35 °C (anaerobes and aerobes) and soya-bean casein digest medium at 20–25 °C (fungi and aerobes), each for at least 14 days.", "محیط تیوگلیکولات مایع در ۳۰ تا ۳۵ درجه (بی‌هوازی و هوازی) و محیط سویابین کازئین دایجست در ۲۰ تا ۲۵ درجه (قارچ و هوازی)، هر کدام دست‌کم ۱۴ روز.") },
-    { title: bi("Method suitability", "تناسب روش"), text: bi("Before routine use, show that the product does not inhibit growth: ≤ 100 CFU of each test organism must grow visibly.", "پیش از استفاده روتین ثابت شود که محصول از رشد جلوگیری نمی‌کند: ≤ ۱۰۰ CFU از هر میکروارگانیسم آزمون باید رشد قابل مشاهده داشته باشد.") },
+    { title: bi("Media and incubation", "محیط‌ها و انکوباسیون"), text: bi("Fluid thioglycollate medium at 30–35 °C (anaerobes and aerobes) and soya-bean casein digest medium at 20–25 °C (fungi and aerobes), each for at least 14 days.", "محیط تیوگلیکولات مایع در 30 تا 35 درجه (بی‌هوازی و هوازی) و محیط سویابین کازئین دایجست در 20 تا 25 درجه (قارچ و هوازی)، هر کدام دست‌کم 14 روز.") },
+    { title: bi("Method suitability", "تناسب روش"), text: bi("Before routine use, show that the product does not inhibit growth: ≤ 100 CFU of each test organism must grow visibly.", "پیش از استفاده روتین ثابت شود که محصول از رشد جلوگیری نمی‌کند: ≤ 100 CFU از هر میکروارگانیسم آزمون باید رشد قابل مشاهده داشته باشد.") },
     { title: bi("Interpretation", "تفسیر"), text: bi("No growth: complies. Growth: fails, unless the test is shown to be invalid (e.g. contamination in the test environment) and repeated.", "عدم رشد: منطبق. رشد: مردود، مگر اینکه نامعتبر بودن آزمون (مثلاً آلودگی محیط آزمون) اثبات و آزمون تکرار شود.") },
   ],
 

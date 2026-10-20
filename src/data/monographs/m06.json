@@ -24,11 +24,11 @@
   "mw": "94.11",
   "applications": {
    "en": "Used mainly as an antimicrobial preservative in parenteral products, typically at about 0.25–0.5% w/v, including some insulin preparations and vaccines; it is also used in some topical and oral preparations such as mouthwashes and throat sprays. At higher concentrations phenol is used as a disinfectant, and in topical products it has antipruritic and mild local anaesthetic effects. Its antimicrobial action is bactericidal at about 1% and bacteriostatic at lower concentrations.",
-   "fa": "عمدتاً به عنوان نگهدارنده ضدمیکروبی در فرآورده‌های تزریقی با غلظت معمول حدود 0.25–0.5٪ وزنی/حجمی به کار می‌رود، از جمله در برخی فرآورده‌های انسولین و واکسن‌ها؛ در برخی فرآورده‌های موضعی و خوراکی مانند دهان‌شویه و اسپری گلو نیز مصرف می‌شود. فنل در غلظت‌های بالاتر به عنوان ضدعفونی‌کننده کاربرد دارد و در فرآورده‌های موضعی اثر ضدخارش و بی‌حسی موضعی خفیف دارد. اثر ضدمیکروبی آن در حدود 1٪ باکتری‌کش و در غلظت‌های کمتر باکتریواستاتیک است."
+   "fa": "عمدتاً به عنوان نگهدارنده ضدمیکروبی در فرآورده‌های تزریقی با غلظت معمول حدود 0.25–0.5% وزنی/حجمی به کار می‌رود، از جمله در برخی فرآورده‌های انسولین و واکسن‌ها؛ در برخی فرآورده‌های موضعی و خوراکی مانند دهان‌شویه و اسپری گلو نیز مصرف می‌شود. فنل در غلظت‌های بالاتر به عنوان ضدعفونی‌کننده کاربرد دارد و در فرآورده‌های موضعی اثر ضدخارش و بی‌حسی موضعی خفیف دارد. اثر ضدمیکروبی آن در حدود 1% باکتری‌کش و در غلظت‌های کمتر باکتریواستاتیک است."
   },
   "description": {
    "en": "Colourless to faintly pink, hygroscopic crystals or a crystalline mass with a characteristic, aromatic odour. It liquefies readily when a small amount of water is added; liquefied phenol contains about 10% water.",
-   "fa": "کریستال‌ها یا توده کریستالی بی‌رنگ تا صورتی کم‌رنگ و رطوبت‌گیر با بوی معطر و مشخص. با افزودن مقدار کمی آب به‌راحتی مایع می‌شود؛ فنل مایع‌شده (liquefied phenol) حدود 10٪ آب دارد."
+   "fa": "کریستال‌ها یا توده کریستالی بی‌رنگ تا صورتی کم‌رنگ و رطوبت‌گیر با بوی معطر و مشخص. با افزودن مقدار کمی آب به‌راحتی مایع می‌شود؛ فنل مایع‌شده (liquefied phenol) حدود 10% آب دارد."
   },
   "properties": [
    {
@@ -140,7 +140,7 @@
   "mw": "138.16",
   "applications": {
    "en": "An antimicrobial preservative used in topical creams, lotions and shampoos, usually at 0.5–1.0% w/w, and in some vaccines and other injectable products at about 0.5%. It is widely used in cosmetics, where the EU maximum is 1%. It is often combined with parabens or other preservatives to broaden the spectrum of activity.",
-   "fa": "نگهدارنده ضدمیکروبی که در کرم‌ها، لوسیون‌ها و شامپوهای موضعی معمولاً با غلظت 0.5–1.0٪ وزنی، و در برخی واکسن‌ها و دیگر فرآورده‌های تزریقی با غلظت حدود 0.5٪ به کار می‌رود. در محصولات آرایشی بسیار پرمصرف است و حداکثر غلظت مجاز آن در اتحادیه اروپا 1٪ است. اغلب برای گسترش طیف اثر همراه با پارابن‌ها یا نگهدارنده‌های دیگر مصرف می‌شود."
+   "fa": "نگهدارنده ضدمیکروبی که در کرم‌ها، لوسیون‌ها و شامپوهای موضعی معمولاً با غلظت 0.5–1.0% وزنی، و در برخی واکسن‌ها و دیگر فرآورده‌های تزریقی با غلظت حدود 0.5% به کار می‌رود. در محصولات آرایشی بسیار پرمصرف است و حداکثر غلظت مجاز آن در اتحادیه اروپا 1% است. اغلب برای گسترش طیف اثر همراه با پارابن‌ها یا نگهدارنده‌های دیگر مصرف می‌شود."
   },
   "description": {
    "en": "A colourless, slightly viscous, oily liquid with a faint, pleasant aromatic odour and a burning taste.",
@@ -184,7 +184,7 @@
     },
     "v": {
      "en": "slightly soluble in water (roughly 2.5% w/v); miscible with acetone, ethanol and glycerol; slightly soluble in fixed oils",
-     "fa": "کمی محلول در آب (تقریباً 2.5٪ وزنی/حجمی)؛ قابل امتزاج با استون، اتانول و گلیسرول؛ کمی محلول در روغن‌های ثابت"
+     "fa": "کمی محلول در آب (تقریباً 2.5% وزنی/حجمی)؛ قابل امتزاج با استون، اتانول و گلیسرول؛ کمی محلول در روغن‌های ثابت"
     }
    }
   ],
@@ -210,7 +210,7 @@
   },
   "regulatory": {
    "en": "Included in the FDA Inactive Ingredient Database (injections, including vaccines, and topical preparations) and in medicines licensed in Europe. Permitted as a preservative in cosmetics in the EU up to 1%.",
-   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های تزریقی از جمله واکسن‌ها و فرآورده‌های موضعی) و در داروهای مجاز در اروپا وجود دارد. در اتحادیه اروپا به عنوان نگهدارنده در محصولات آرایشی تا 1٪ مجاز است."
+   "fa": "در FDA Inactive Ingredient Database (فرآورده‌های تزریقی از جمله واکسن‌ها و فرآورده‌های موضعی) و در داروهای مجاز در اروپا وجود دارد. در اتحادیه اروپا به عنوان نگهدارنده در محصولات آرایشی تا 1% مجاز است."
   },
   "related": {
    "en": "Benzyl alcohol; phenylethyl alcohol; phenoxypropanol.",
@@ -243,7 +243,7 @@
   "mw": "122.16",
   "applications": {
    "en": "Used as an antimicrobial preservative in ophthalmic, nasal and otic solutions, typically at 0.25–0.5% v/v, usually together with another preservative such as benzalkonium chloride or chlorhexidine for a synergistic effect. It is also widely used as a flavour and fragrance (rose odour) in foods, cosmetics and toiletries.",
-   "fa": "به عنوان نگهدارنده ضدمیکروبی در محلول‌های چشمی، بینی و گوش، معمولاً با غلظت 0.25–0.5٪ حجمی/حجمی و اغلب همراه نگهدارنده دیگری مانند بنزالکونیوم کلرید یا کلرهگزیدین برای اثر هم‌افزا به کار می‌رود. در غذاها، محصولات آرایشی و بهداشتی نیز به عنوان طعم‌دهنده و عطر (بوی گل سرخ) کاربرد گسترده دارد."
+   "fa": "به عنوان نگهدارنده ضدمیکروبی در محلول‌های چشمی، بینی و گوش، معمولاً با غلظت 0.25–0.5% حجمی/حجمی و اغلب همراه نگهدارنده دیگری مانند بنزالکونیوم کلرید یا کلرهگزیدین برای اثر هم‌افزا به کار می‌رود. در غذاها، محصولات آرایشی و بهداشتی نیز به عنوان طعم‌دهنده و عطر (بوی گل سرخ) کاربرد گسترده دارد."
   },
   "description": {
    "en": "A clear, colourless liquid with a characteristic rose-like odour and a sharp, burning taste. It occurs naturally in rose oil and several other essential oils.",
@@ -354,7 +354,7 @@
   "mw": "98.00",
   "applications": {
    "en": "Used as an acidifying agent and for pH adjustment in oral, topical and parenteral formulations, normally in dilute form (for example diluted phosphoric acid, about 10% w/v) and in small, quantity-sufficient amounts. It is also used with its salts to prepare phosphate buffers, and in foods and soft drinks as an acidulant.",
-   "fa": "به عنوان عامل اسیدی‌کننده و برای تنظیم pH در فرمولاسیون‌های خوراکی، موضعی و تزریقی، معمولاً به شکل رقیق (مثلاً فسفریک اسید رقیق حدود 10٪ وزنی/حجمی) و به مقدار لازم (q.s.) به کار می‌رود. همراه با نمک‌هایش برای تهیه بافر فسفات و در غذاها و نوشابه‌ها به عنوان اسیدی‌کننده نیز مصرف می‌شود."
+   "fa": "به عنوان عامل اسیدی‌کننده و برای تنظیم pH در فرمولاسیون‌های خوراکی، موضعی و تزریقی، معمولاً به شکل رقیق (مثلاً فسفریک اسید رقیق حدود 10% وزنی/حجمی) و به مقدار لازم (q.s.) به کار می‌رود. همراه با نمک‌هایش برای تهیه بافر فسفات و در غذاها و نوشابه‌ها به عنوان اسیدی‌کننده نیز مصرف می‌شود."
   },
   "description": {
    "en": "The concentrated acid is a clear, colourless, odourless, syrupy liquid that is strongly corrosive. It may crystallise on standing at low temperatures.",
@@ -368,7 +368,7 @@
     },
     "v": {
      "en": "concentrated grades about 85% w/w H3PO4 (pharmacopoeial limits roughly 84–90%)",
-     "fa": "گریدهای غلیظ حدود 85٪ وزنی H3PO4 (حدود مجاز فارماکوپه‌ای تقریباً 84–90٪)"
+     "fa": "گریدهای غلیظ حدود 85% وزنی H3PO4 (حدود مجاز فارماکوپه‌ای تقریباً 84–90%)"
     }
    },
    {
@@ -388,7 +388,7 @@
     },
     "v": {
      "en": "about 1.7 g/cm³ (85% acid)",
-     "fa": "حدود 1.7 g/cm³ (اسید 85٪)"
+     "fa": "حدود 1.7 g/cm³ (اسید 85%)"
     }
    },
    {
@@ -459,7 +459,7 @@
   "mw": "",
   "applications": {
    "en": "Used mainly as a tablet disintegrant, typically at 2–10% w/w, in both direct compression and wet granulation. Its strong swelling on contact with water gives rapid disintegration without forming a gel. It is not normally used for its ion-exchange properties.",
-   "fa": "عمدتاً به عنوان متلاشی‌کننده قرص با غلظت معمول 2–10٪ وزنی، هم در پرس مستقیم و هم در گرانولاسیون مرطوب، به کار می‌رود. تورم شدید آن در تماس با آب باعث متلاشی شدن سریع قرص بدون تشکیل ژل می‌شود. معمولاً به دلیل خاصیت تبادل یونی مصرف نمی‌شود."
+   "fa": "عمدتاً به عنوان متلاشی‌کننده قرص با غلظت معمول 2–10% وزنی، هم در پرس مستقیم و هم در گرانولاسیون مرطوب، به کار می‌رود. تورم شدید آن در تماس با آب باعث متلاشی شدن سریع قرص بدون تشکیل ژل می‌شود. معمولاً به دلیل خاصیت تبادل یونی مصرف نمی‌شود."
   },
   "description": {
    "en": "A cation-exchange resin made from methacrylic acid cross-linked with divinylbenzene, in the potassium salt form. It is supplied as a fine, free-flowing, cream-coloured powder with little or no odour or taste.",
@@ -483,7 +483,7 @@
     },
     "v": {
      "en": "about 21–25% (dried basis)",
-     "fa": "حدود 21–25٪ (بر پایه ماده خشک)"
+     "fa": "حدود 21–25% (بر پایه ماده خشک)"
     }
    },
    {
@@ -565,7 +565,7 @@
   "mw": "≈ 2 000–17 500 depending on type (poloxamer 188 ≈ 7 700–9 500; poloxamer 407 ≈ 9 800–14 600)",
   "applications": {
    "en": "Nonionic surfactants used as emulsifiers, solubilisers, wetting agents and stabilisers in oral, parenteral and topical products; poloxamer 188 is used in intravenous fat emulsions and as a stabiliser and shear protectant in cell culture and protein products. Concentrated aqueous solutions of poloxamer 407 (typically about 15–30% w/w) form thermoreversible gels that are liquid when cold and set at body temperature. Typical levels: wetting agent 0.01–5%; stabilising agent 1–5%; tablet excipient or coating 5–10%; gelling agent 15–50%.",
-   "fa": "سورفکتانت‌های غیریونی که به عنوان امولسیون‌کننده، حل‌کننده (سولوبیلایزر)، عامل مرطوب‌کننده و پایدارکننده در فرآورده‌های خوراکی، تزریقی و موضعی به کار می‌روند؛ پولوکسامر 188 در امولسیون‌های چربی وریدی و به عنوان پایدارکننده و محافظ در برابر تنش برشی در کشت سلول و فرآورده‌های پروتئینی مصرف می‌شود. محلول‌های آبی غلیظ پولوکسامر 407 (معمولاً حدود 15–30٪ وزنی) ژل‌های برگشت‌پذیر حرارتی تشکیل می‌دهند که در سرما مایع‌اند و در دمای بدن ژل می‌شوند. غلظت‌های متداول: عامل مرطوب‌کننده 0.01–5٪؛ پایدارکننده 1–5٪؛ ماده جانبی یا پوشش قرص 5–10٪؛ عامل ژل‌ساز 15–50٪."
+   "fa": "سورفکتانت‌های غیریونی که به عنوان امولسیون‌کننده، حل‌کننده (سولوبیلایزر)، عامل مرطوب‌کننده و پایدارکننده در فرآورده‌های خوراکی، تزریقی و موضعی به کار می‌روند؛ پولوکسامر 188 در امولسیون‌های چربی وریدی و به عنوان پایدارکننده و محافظ در برابر تنش برشی در کشت سلول و فرآورده‌های پروتئینی مصرف می‌شود. محلول‌های آبی غلیظ پولوکسامر 407 (معمولاً حدود 15–30% وزنی) ژل‌های برگشت‌پذیر حرارتی تشکیل می‌دهند که در سرما مایع‌اند و در دمای بدن ژل می‌شوند. غلظت‌های متداول: عامل مرطوب‌کننده 0.01–5%؛ پایدارکننده 1–5%؛ ماده جانبی یا پوشش قرص 5–10%؛ عامل ژل‌ساز 15–50%."
   },
   "description": {
    "en": "Synthetic block copolymers of ethylene oxide and propylene oxide, with a central hydrophobic polyoxypropylene block flanked by two hydrophilic polyoxyethylene blocks. The three-digit number identifies the type: the first two digits multiplied by 100 give the approximate molecular weight of the polyoxypropylene block, and the last digit multiplied by 10 gives the approximate percentage of polyoxyethylene. They are white or almost white and nearly odourless and tasteless.",
@@ -609,7 +609,7 @@
     },
     "v": {
      "en": "5.0–7.5 (2.5% w/v aqueous solution)",
-     "fa": "5.0–7.5 (محلول آبی 2.5٪ وزنی/حجمی)"
+     "fa": "5.0–7.5 (محلول آبی 2.5% وزنی/حجمی)"
     }
    },
    {
@@ -787,7 +787,7 @@
     },
     "v": {
      "en": "approximately 90% glucose, 10% sorbitol and 1% citric acid (by weight, before polymerisation); 1→6 glycosidic bonds predominate",
-     "fa": "تقریباً 90٪ گلوکز، 10٪ سوربیتول و 1٪ سیتریک اسید (وزنی، پیش از پلیمریزاسیون)؛ پیوندهای گلیکوزیدی 1→6 غالب‌اند"
+     "fa": "تقریباً 90% گلوکز، 10% سوربیتول و 1% سیتریک اسید (وزنی، پیش از پلیمریزاسیون)؛ پیوندهای گلیکوزیدی 1→6 غالب‌اند"
     }
    },
    {
@@ -807,7 +807,7 @@
     },
     "v": {
      "en": "very soluble in water (solutions of about 80% w/w can be made); limited solubility in ethanol",
-     "fa": "بسیار محلول در آب (محلول‌هایی تا حدود 80٪ وزنی قابل تهیه است)؛ حلالیت محدود در اتانول"
+     "fa": "بسیار محلول در آب (محلول‌هایی تا حدود 80% وزنی قابل تهیه است)؛ حلالیت محدود در اتانول"
     }
    },
    {
@@ -817,7 +817,7 @@
     },
     "v": {
      "en": "2.5–7.0 (10% w/v solution), depending on whether the grade has been neutralised",
-     "fa": "2.5–7.0 (محلول 10٪ وزنی/حجمی)، بسته به اینکه گرید خنثی شده باشد یا نه"
+     "fa": "2.5–7.0 (محلول 10% وزنی/حجمی)، بسته به اینکه گرید خنثی شده باشد یا نه"
     }
    },
    {
@@ -841,7 +841,7 @@
   },
   "manufacture": {
    "en": "Made by heating a melt of glucose with about 10% sorbitol and 1% citric acid under vacuum, which causes random polycondensation; the product may then be purified and neutralised (for example with potassium hydroxide) and dried.",
-   "fa": "از حرارت دادن مذاب گلوکز همراه با حدود 10٪ سوربیتول و 1٪ سیتریک اسید در خلأ تهیه می‌شود که باعث پلی‌کندانسیون تصادفی می‌شود؛ سپس محصول ممکن است خالص‌سازی، خنثی (مثلاً با پتاسیم هیدروکسید) و خشک شود."
+   "fa": "از حرارت دادن مذاب گلوکز همراه با حدود 10% سوربیتول و 1% سیتریک اسید در خلأ تهیه می‌شود که باعث پلی‌کندانسیون تصادفی می‌شود؛ سپس محصول ممکن است خالص‌سازی، خنثی (مثلاً با پتاسیم هیدروکسید) و خشک شود."
   },
   "safety": {
    "en": "Polydextrose is only partly fermented in the colon and is regarded as non-toxic. Like other poorly digested carbohydrates, large single doses can cause a laxative effect and flatulence. JECFA has not specified an ADI.",
@@ -882,7 +882,7 @@
   "mw": "≈ 100 000–7 000 000 (approximate average, depending on grade)",
   "applications": {
    "en": "Used as a hydrophilic matrix former in extended-release tablets, as the swelling 'push' layer in osmotic pump tablets, as a tablet binder, mucoadhesive and thickening agent, and in hot-melt extrusion. High-molecular-weight grades are used in abuse-deterrent tablets because they make the tablet hard to crush and form viscous gels that hinder extraction and injection. Concentrations range from about 5% as a binder to well over 50% in extended-release matrices.",
-   "fa": "به عنوان سازنده ماتریکس آب‌دوست در قرص‌های آهسته‌رهش، به عنوان لایه «رانش» متورم‌شونده در قرص‌های پمپ اسمزی، چسباننده قرص، عامل چسبنده مخاطی و غلیظ‌کننده، و در اکستروژن مذاب داغ (HME) به کار می‌رود. گریدهای با وزن مولکولی بالا در قرص‌های بازدارنده سوءمصرف (abuse-deterrent) مصرف می‌شوند، زیرا خرد کردن قرص را دشوار و با تشکیل ژل ویسکوز، استخراج و تزریق را مختل می‌کنند. غلظت مصرفی از حدود 5٪ به عنوان چسباننده تا بیش از 50٪ در ماتریکس‌های آهسته‌رهش متغیر است."
+   "fa": "به عنوان سازنده ماتریکس آب‌دوست در قرص‌های آهسته‌رهش، به عنوان لایه «رانش» متورم‌شونده در قرص‌های پمپ اسمزی، چسباننده قرص، عامل چسبنده مخاطی و غلیظ‌کننده، و در اکستروژن مذاب داغ (HME) به کار می‌رود. گریدهای با وزن مولکولی بالا در قرص‌های بازدارنده سوءمصرف (abuse-deterrent) مصرف می‌شوند، زیرا خرد کردن قرص را دشوار و با تشکیل ژل ویسکوز، استخراج و تزریق را مختل می‌کنند. غلظت مصرفی از حدود 5% به عنوان چسباننده تا بیش از 50% در ماتریکس‌های آهسته‌رهش متغیر است."
   },
   "description": {
    "en": "A non-ionic homopolymer of ethylene oxide of high molecular weight. It is chemically similar to polyethylene glycol but of much higher chain length, and is supplied as a white to off-white, free-flowing powder; commercial grades usually contain a small amount of antioxidant (BHT) and may contain fumed silica as a flow aid.",
@@ -1036,7 +1036,7 @@
   "mw": "",
   "applications": {
    "en": "Used mainly as film coatings for oral tablets, capsules, pellets and granules: the aminoalkyl (basic) copolymer for taste masking, moisture protection and immediate-release coats; the methacrylic acid copolymers for enteric and colon-targeted coatings; and the insoluble ammonio methacrylate and neutral ester copolymers for pH-independent sustained-release coats. They are also used as matrix formers and binders and in hot-melt extrusion and solid dispersions. Coating levels typically correspond to a weight gain of a few percent up to about 10–20%, with plasticisers such as triethyl citrate commonly added at about 10–25% of the dry polymer.",
-   "fa": "عمدتاً به عنوان پوشش فیلمی قرص‌ها، کپسول‌ها، پلت‌ها و گرانول‌های خوراکی به کار می‌روند: کوپلیمر آمینوآلکیل (بازی) برای پوشاندن طعم، محافظت در برابر رطوبت و پوشش‌های آزادسازی فوری؛ کوپلیمرهای متاکریلیک اسید برای پوشش‌های روده‌ای (انتریک) و هدف‌گیری کولون؛ و کوپلیمرهای نامحلول آمونیو متاکریلات و استر خنثی برای پوشش‌های آهسته‌رهش مستقل از pH. همچنین به عنوان سازنده ماتریکس و چسباننده و در اکستروژن مذاب داغ و دیسپرسیون‌های جامد مصرف می‌شوند. مقدار پوشش معمولاً معادل افزایش وزن چند درصد تا حدود 10–20٪ است و نرم‌کننده‌هایی مانند تری‌اتیل سیترات معمولاً حدود 10–25٪ وزن پلیمر خشک افزوده می‌شوند."
+   "fa": "عمدتاً به عنوان پوشش فیلمی قرص‌ها، کپسول‌ها، پلت‌ها و گرانول‌های خوراکی به کار می‌روند: کوپلیمر آمینوآلکیل (بازی) برای پوشاندن طعم، محافظت در برابر رطوبت و پوشش‌های آزادسازی فوری؛ کوپلیمرهای متاکریلیک اسید برای پوشش‌های روده‌ای (انتریک) و هدف‌گیری کولون؛ و کوپلیمرهای نامحلول آمونیو متاکریلات و استر خنثی برای پوشش‌های آهسته‌رهش مستقل از pH. همچنین به عنوان سازنده ماتریکس و چسباننده و در اکستروژن مذاب داغ و دیسپرسیون‌های جامد مصرف می‌شوند. مقدار پوشش معمولاً معادل افزایش وزن چند درصد تا حدود 10–20% است و نرم‌کننده‌هایی مانند تری‌اتیل سیترات معمولاً حدود 10–25% وزن پلیمر خشک افزوده می‌شوند."
   },
   "description": {
    "en": "A family of synthetic polymers based on methacrylic acid, its esters and acrylic esters. Their solubility behaviour is set by the functional groups: free carboxyl groups make them dissolve in intestinal fluid, dimethylaminoethyl groups make them dissolve in gastric acid, and quaternary ammonium or purely ester groups give insoluble, permeable films. The solid grades are white powders or granules with a faint characteristic odour; the dispersions are milky-white liquids of low viscosity.",
@@ -1080,7 +1080,7 @@
     },
     "v": {
      "en": "powders, granules, organic solutions (12.5%) and aqueous dispersions (about 30% solids)",
-     "fa": "پودر، گرانول، محلول‌های آلی (12.5٪) و دیسپرسیون‌های آبی (حدود 30٪ ماده جامد)"
+     "fa": "پودر، گرانول، محلول‌های آلی (12.5%) و دیسپرسیون‌های آبی (حدود 30% ماده جامد)"
     }
    },
    {
@@ -1184,7 +1184,7 @@
   "mw": "",
   "applications": {
    "en": "Nonionic surfactants used as emulsifying agents in oil-in-water and water-in-oil creams and lotions, as solubilisers for essential oils, perfumes and poorly soluble drugs, and as wetting agents; cetomacrogol 1000 is the emulsifier in cetomacrogol emulsifying wax and the corresponding creams. Typical levels: emulsifying agent about 0.5–15%, solubilising agent about 1–10%, wetting agent about 0.1–3%. Polidocanol (lauromacrogol 400) is also used in its own right as a sclerosant and topical antipruritic.",
-   "fa": "سورفکتانت‌های غیریونی که به عنوان امولسیون‌کننده در کرم‌ها و لوسیون‌های روغن در آب و آب در روغن، حل‌کننده برای اسانس‌ها، عطرها و داروهای کم‌محلول، و عامل مرطوب‌کننده به کار می‌روند؛ ستوماکروگل 1000 امولسیون‌کننده موجود در موم امولسیون‌کننده ستوماکروگل و کرم‌های مربوط به آن است. غلظت‌های متداول: امولسیون‌کننده حدود 0.5–15٪، حل‌کننده حدود 1–10٪، عامل مرطوب‌کننده حدود 0.1–3٪. پلیدوکانول (لوروماکروگل 400) به‌تنهایی نیز به عنوان داروی اسکلروزان و ضدخارش موضعی مصرف می‌شود."
+   "fa": "سورفکتانت‌های غیریونی که به عنوان امولسیون‌کننده در کرم‌ها و لوسیون‌های روغن در آب و آب در روغن، حل‌کننده برای اسانس‌ها، عطرها و داروهای کم‌محلول، و عامل مرطوب‌کننده به کار می‌روند؛ ستوماکروگل 1000 امولسیون‌کننده موجود در موم امولسیون‌کننده ستوماکروگل و کرم‌های مربوط به آن است. غلظت‌های متداول: امولسیون‌کننده حدود 0.5–15%، حل‌کننده حدود 1–10%، عامل مرطوب‌کننده حدود 0.1–3%. پلیدوکانول (لوروماکروگل 400) به‌تنهایی نیز به عنوان داروی اسکلروزان و ضدخارش موضعی مصرف می‌شود."
   },
   "description": {
    "en": "A series of nonionic surfactants made by attaching polyoxyethylene chains of varying length to fatty alcohols. They are named from the alcohol and the average number of ethylene oxide units (for example polyoxyl 20 cetostearyl ether or ceteareth-20). They range from colourless or pale yellow liquids to white or cream-coloured waxy solids with a faint characteristic odour.",
@@ -1289,7 +1289,7 @@
   "mw": "",
   "applications": {
    "en": "A nonionic solubiliser and emulsifier used to dissolve poorly water-soluble drugs in intravenous concentrates, oral solutions and topical products, and to solubilise fat-soluble vitamins and essential oils. Well-known parenteral examples are paclitaxel concentrate (about 527 mg/mL of polyoxyl 35 castor oil with ethanol) and intravenous ciclosporin. In oral and topical formulations it is commonly used at a few percent up to about 10–20%, depending on the amount of drug to be solubilised.",
-   "fa": "حل‌کننده و امولسیون‌کننده غیریونی که برای حل کردن داروهای کم‌محلول در آب در کنسانتره‌های تزریق وریدی، محلول‌های خوراکی و فرآورده‌های موضعی، و نیز برای حل کردن ویتامین‌های محلول در چربی و اسانس‌ها به کار می‌رود. نمونه‌های شناخته‌شده تزریقی کنسانتره پاکلی‌تاکسل (حدود 527 mg/mL پلی‌اکسیل 35 روغن کرچک همراه با اتانول) و سیکلوسپورین وریدی‌اند. در فرمولاسیون‌های خوراکی و موضعی معمولاً از چند درصد تا حدود 10–20٪، بسته به مقدار دارویی که باید حل شود، مصرف می‌شود."
+   "fa": "حل‌کننده و امولسیون‌کننده غیریونی که برای حل کردن داروهای کم‌محلول در آب در کنسانتره‌های تزریق وریدی، محلول‌های خوراکی و فرآورده‌های موضعی، و نیز برای حل کردن ویتامین‌های محلول در چربی و اسانس‌ها به کار می‌رود. نمونه‌های شناخته‌شده تزریقی کنسانتره پاکلی‌تاکسل (حدود 527 mg/mL پلی‌اکسیل 35 روغن کرچک همراه با اتانول) و سیکلوسپورین وریدی‌اند. در فرمولاسیون‌های خوراکی و موضعی معمولاً از چند درصد تا حدود 10–20%، بسته به مقدار دارویی که باید حل شود، مصرف می‌شود."
   },
   "description": {
    "en": "A complex mixture obtained by ethoxylating castor oil. The main component is ricinoleic acid triglyceride whose hydroxyl groups and glycerol carry polyoxyethylene chains, together with free polyethylene glycols and ethoxylated glycerol. It is a pale yellow, oily liquid that is clear above about 26 °C.",
@@ -1392,7 +1392,7 @@
   "mw": "",
   "applications": {
    "en": "A nonionic solubiliser and emulsifier used to solubilise fat-soluble vitamins, essential oils, flavours, fragrances and lipophilic drugs in aqueous oral and topical preparations, and as a surfactant in self-emulsifying (microemulsion) drug delivery systems such as some oral ciclosporin formulations. It is less bitter-tasting and less irritant than polyoxyl 35 castor oil, which makes it popular in oral liquids. Use levels vary with the load to be solubilised, commonly from a few percent up to about 20–25% in liquid formulations and higher in lipid-based concentrates.",
-   "fa": "حل‌کننده و امولسیون‌کننده غیریونی که برای حل کردن ویتامین‌های محلول در چربی، اسانس‌ها، طعم‌دهنده‌ها، عطرها و داروهای چربی‌دوست در فرآورده‌های آبی خوراکی و موضعی، و به عنوان سورفکتانت در سامانه‌های دارورسانی خودامولسیون‌شونده (میکروامولسیونی) مانند برخی فرمولاسیون‌های خوراکی سیکلوسپورین به کار می‌رود. طعم تلخی و خاصیت تحریکی آن از پلی‌اکسیل 35 روغن کرچک کمتر است و به همین دلیل در مایعات خوراکی پرکاربرد است. مقدار مصرف بسته به مقدار ماده‌ای که باید حل شود متفاوت است و معمولاً در فرمولاسیون‌های مایع از چند درصد تا حدود 20–25٪ و در کنسانتره‌های لیپیدی بیشتر است."
+   "fa": "حل‌کننده و امولسیون‌کننده غیریونی که برای حل کردن ویتامین‌های محلول در چربی، اسانس‌ها، طعم‌دهنده‌ها، عطرها و داروهای چربی‌دوست در فرآورده‌های آبی خوراکی و موضعی، و به عنوان سورفکتانت در سامانه‌های دارورسانی خودامولسیون‌شونده (میکروامولسیونی) مانند برخی فرمولاسیون‌های خوراکی سیکلوسپورین به کار می‌رود. طعم تلخی و خاصیت تحریکی آن از پلی‌اکسیل 35 روغن کرچک کمتر است و به همین دلیل در مایعات خوراکی پرکاربرد است. مقدار مصرف بسته به مقدار ماده‌ای که باید حل شود متفاوت است و معمولاً در فرمولاسیون‌های مایع از چند درصد تا حدود 20–25% و در کنسانتره‌های لیپیدی بیشتر است."
   },
   "description": {
    "en": "A mixture obtained by ethoxylating hydrogenated castor oil. The hydrophobic part consists mainly of glycerol polyethylene glycol hydroxystearate and the hydrophilic part of free polyethylene glycols and glycerol ethoxylates. It is a white to yellowish paste at room temperature.",
@@ -1503,7 +1503,7 @@
   "mw": "≈ 2 000",
   "applications": {
    "en": "A hydrophilic nonionic surfactant used mainly as an emulsifier in oil-in-water creams and lotions, often combined with a lipophilic co-emulsifier such as glyceryl monostearate or cetyl alcohol, and also as a solubiliser and wetting agent. It has been used in tablet film coatings and as a lubricant or release aid in some tablets. Typical levels: emulsifying agent about 0.5–10%, solubilising agent about 1–10%, wetting agent about 0.1–3%.",
-   "fa": "سورفکتانت غیریونی آب‌دوست که عمدتاً به عنوان امولسیون‌کننده در کرم‌ها و لوسیون‌های روغن در آب، اغلب همراه یک امولسیون‌کننده کمکی چربی‌دوست مانند گلیسریل مونواستئارات یا ستیل الکل، و نیز به عنوان حل‌کننده و عامل مرطوب‌کننده به کار می‌رود. در پوشش فیلمی قرص و به عنوان روان‌کننده یا کمک‌جداکننده در برخی قرص‌ها نیز مصرف شده است. غلظت‌های متداول: امولسیون‌کننده حدود 0.5–10٪، حل‌کننده حدود 1–10٪، عامل مرطوب‌کننده حدود 0.1–3٪."
+   "fa": "سورفکتانت غیریونی آب‌دوست که عمدتاً به عنوان امولسیون‌کننده در کرم‌ها و لوسیون‌های روغن در آب، اغلب همراه یک امولسیون‌کننده کمکی چربی‌دوست مانند گلیسریل مونواستئارات یا ستیل الکل، و نیز به عنوان حل‌کننده و عامل مرطوب‌کننده به کار می‌رود. در پوشش فیلمی قرص و به عنوان روان‌کننده یا کمک‌جداکننده در برخی قرص‌ها نیز مصرف شده است. غلظت‌های متداول: امولسیون‌کننده حدود 0.5–10%، حل‌کننده حدود 1–10%، عامل مرطوب‌کننده حدود 0.1–3%."
   },
   "description": {
    "en": "A mixture of mono- and diesters of mainly stearic and palmitic acids with polyethylene glycol having an average of about 40 oxyethylene units, together with some free polyethylene glycol. It is a white to light tan waxy solid with a faint, fat-like odour.",
@@ -1622,7 +1622,7 @@
   "mw": "≈ 1 128",
   "applications": {
    "en": "A hydrophilic nonionic surfactant used as an emulsifier, solubiliser, wetting agent and dispersant in oral, topical and parenteral products, and widely used at low levels (typically about 0.001–0.1% w/v) to protect therapeutic proteins and monoclonal antibodies from aggregation and surface adsorption. Typical concentrations: emulsifying agent used alone in oil-in-water emulsions 1–15%, or 1–10% when combined with lipophilic emulsifiers; solubilising agent for poorly soluble drugs in aqueous vehicles 1–10%; wetting agent for insoluble solids 0.1–3%.",
-   "fa": "سورفکتانت غیریونی آب‌دوست که به عنوان امولسیون‌کننده، حل‌کننده، عامل مرطوب‌کننده و پراکنده‌ساز در فرآورده‌های خوراکی، موضعی و تزریقی به کار می‌رود و در غلظت‌های پایین (معمولاً حدود 0.001–0.1٪ وزنی/حجمی) برای محافظت از پروتئین‌های درمانی و آنتی‌بادی‌های مونوکلونال در برابر تجمع و جذب سطحی بسیار مصرف می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های روغن در آب 1–15٪، یا 1–10٪ در ترکیب با امولسیون‌کننده‌های چربی‌دوست؛ حل‌کننده داروهای کم‌محلول در حامل‌های آبی 1–10٪؛ عامل مرطوب‌کننده برای جامدات نامحلول 0.1–3٪."
+   "fa": "سورفکتانت غیریونی آب‌دوست که به عنوان امولسیون‌کننده، حل‌کننده، عامل مرطوب‌کننده و پراکنده‌ساز در فرآورده‌های خوراکی، موضعی و تزریقی به کار می‌رود و در غلظت‌های پایین (معمولاً حدود 0.001–0.1% وزنی/حجمی) برای محافظت از پروتئین‌های درمانی و آنتی‌بادی‌های مونوکلونال در برابر تجمع و جذب سطحی بسیار مصرف می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های روغن در آب 1–15%، یا 1–10% در ترکیب با امولسیون‌کننده‌های چربی‌دوست؛ حل‌کننده داروهای کم‌محلول در حامل‌های آبی 1–10%؛ عامل مرطوب‌کننده برای جامدات نامحلول 0.1–3%."
   },
   "description": {
    "en": "A mixture of partial lauric acid esters of sorbitol and its anhydrides copolymerised with about 20 moles of ethylene oxide per mole of sorbitol. Lauric acid is the main fatty acid, with smaller amounts of other saturated acids. It is a yellow, oily liquid.",
@@ -1743,7 +1743,7 @@
   "mw": "≈ 1 312",
   "applications": {
    "en": "A hydrophilic nonionic surfactant used mainly as an emulsifier in oil-in-water creams, lotions and ointments, often together with a sorbitan ester such as sorbitan monostearate, and as a solubiliser and wetting agent. Typical concentrations: emulsifying agent used alone in oil-in-water emulsions 1–15%, or 1–10% when combined with lipophilic emulsifiers; solubilising agent for poorly soluble drugs in aqueous vehicles 1–10%; wetting agent for insoluble solids 0.1–3%. It is also used widely in foods, for example in bakery products, toppings and confectionery.",
-   "fa": "سورفکتانت غیریونی آب‌دوست که عمدتاً به عنوان امولسیون‌کننده در کرم‌ها، لوسیون‌ها و پمادهای روغن در آب، اغلب همراه یک استر سوربیتان مانند سوربیتان مونواستئارات، و نیز به عنوان حل‌کننده و عامل مرطوب‌کننده به کار می‌رود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های روغن در آب 1–15٪، یا 1–10٪ در ترکیب با امولسیون‌کننده‌های چربی‌دوست؛ حل‌کننده داروهای کم‌محلول در حامل‌های آبی 1–10٪؛ عامل مرطوب‌کننده برای جامدات نامحلول 0.1–3٪. در غذاها نیز، مثلاً در محصولات نانوایی، تاپینگ‌ها و شیرینی‌جات، کاربرد گسترده دارد."
+   "fa": "سورفکتانت غیریونی آب‌دوست که عمدتاً به عنوان امولسیون‌کننده در کرم‌ها، لوسیون‌ها و پمادهای روغن در آب، اغلب همراه یک استر سوربیتان مانند سوربیتان مونواستئارات، و نیز به عنوان حل‌کننده و عامل مرطوب‌کننده به کار می‌رود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های روغن در آب 1–15%، یا 1–10% در ترکیب با امولسیون‌کننده‌های چربی‌دوست؛ حل‌کننده داروهای کم‌محلول در حامل‌های آبی 1–10%؛ عامل مرطوب‌کننده برای جامدات نامحلول 0.1–3%. در غذاها نیز، مثلاً در محصولات نانوایی، تاپینگ‌ها و شیرینی‌جات، کاربرد گسترده دارد."
   },
   "description": {
    "en": "A mixture of partial stearic acid esters (with palmitic acid) of sorbitol and its anhydrides copolymerised with about 20 moles of ethylene oxide per mole of sorbitol. It is a yellowish-brown, gel-like semi-solid with a faint characteristic odour.",
@@ -1858,7 +1858,7 @@
   "mw": "≈ 1 310",
   "applications": {
    "en": "The most widely used polysorbate in medicines: an emulsifier, solubiliser, wetting agent and stabiliser in oral liquids, topical products and parenteral formulations, including injectable products of poorly soluble drugs (for example amiodarone and docetaxel concentrates), vaccines and biologics. In protein and antibody products it is typically used at about 0.001–0.1% w/v to prevent aggregation at interfaces. Typical concentrations: emulsifying agent used alone in oil-in-water emulsions 1–15%, or 1–10% when combined with lipophilic emulsifiers; solubilising agent for poorly soluble drugs in aqueous vehicles 1–10%; wetting agent for insoluble solids 0.1–3%.",
-   "fa": "پرمصرف‌ترین پلی‌سوربات در داروها: امولسیون‌کننده، حل‌کننده، عامل مرطوب‌کننده و پایدارکننده در مایعات خوراکی، فرآورده‌های موضعی و فرمولاسیون‌های تزریقی، از جمله فرآورده‌های تزریقی داروهای کم‌محلول (مانند کنسانتره‌های آمیودارون و دوستاکسل)، واکسن‌ها و فرآورده‌های زیستی. در فرآورده‌های پروتئینی و آنتی‌بادی معمولاً با غلظت حدود 0.001–0.1٪ وزنی/حجمی برای جلوگیری از تجمع در سطوح مشترک به کار می‌رود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های روغن در آب 1–15٪، یا 1–10٪ در ترکیب با امولسیون‌کننده‌های چربی‌دوست؛ حل‌کننده داروهای کم‌محلول در حامل‌های آبی 1–10٪؛ عامل مرطوب‌کننده برای جامدات نامحلول 0.1–3٪."
+   "fa": "پرمصرف‌ترین پلی‌سوربات در داروها: امولسیون‌کننده، حل‌کننده، عامل مرطوب‌کننده و پایدارکننده در مایعات خوراکی، فرآورده‌های موضعی و فرمولاسیون‌های تزریقی، از جمله فرآورده‌های تزریقی داروهای کم‌محلول (مانند کنسانتره‌های آمیودارون و دوستاکسل)، واکسن‌ها و فرآورده‌های زیستی. در فرآورده‌های پروتئینی و آنتی‌بادی معمولاً با غلظت حدود 0.001–0.1% وزنی/حجمی برای جلوگیری از تجمع در سطوح مشترک به کار می‌رود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های روغن در آب 1–15%، یا 1–10% در ترکیب با امولسیون‌کننده‌های چربی‌دوست؛ حل‌کننده داروهای کم‌محلول در حامل‌های آبی 1–10%؛ عامل مرطوب‌کننده برای جامدات نامحلول 0.1–3%."
   },
   "description": {
    "en": "A mixture of partial oleic acid esters of sorbitol and its anhydrides copolymerised with about 20 moles of ethylene oxide per mole of sorbitol. Oleic acid is the main fatty acid, with smaller amounts of linoleic, palmitic and stearic acids. It is a yellow to amber, oily liquid.",
@@ -2006,7 +2006,7 @@
     },
     "v": {
      "en": "about 55–62% (dried, acid-free basis)",
-     "fa": "حدود 55–62٪ (بر پایه ماده خشک و عاری از اسید)"
+     "fa": "حدود 55–62% (بر پایه ماده خشک و عاری از اسید)"
     }
    },
    {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
+import { ArrowLeftRight, BookOpen, ExternalLink, FlaskConical, Pill } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { BudCalculator } from "@/components/pharmacy/bud-calculator";
 import { CompoundingBasics, CompoundingTables } from "@/components/pharmacy/compounding-guide";
@@ -7,7 +7,7 @@ import { InteractionSearchBox } from "@/components/pharmacy/interaction-checker"
 import { IranDrugSearch } from "@/components/pharmacy/iran-drug-search";
 import { OrangeBookSearch } from "@/components/pharmacy/orange-book-search";
 import { Container } from "@/components/ui";
-import { compounding, interactionsCopy, iranDrugs, orangeBook, pharmacyPage, type Ref } from "@/content/pharmacy";
+import { compounding, compoundingGuide, interactionsCopy, iranDrugs, orangeBook, pharmacyPage, type Ref } from "@/content/pharmacy";
 import type { Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
@@ -68,6 +68,63 @@ function LinkCards({ links, locale }: { links: { label: string; url: string; not
   );
 }
 
+const q = pharmacyPage.quick;
+const tools = [
+  { section: interactionsCopy, icon: ArrowLeftRight },
+  { section: iranDrugs, icon: Pill },
+  { section: orangeBook, icon: BookOpen },
+];
+
+/** Every part of the page one click away: the three search tools, then each compounding topic. */
+function QuickAccess({ locale }: { locale: Locale }) {
+  const chip = "inline-block rounded-full border border-line bg-white px-3.5 py-1.5 text-sm text-vault-900 transition hover:border-molecule-500 hover:text-molecule-700";
+  const compoundingLinks = [
+    { id: "cmp-facts", label: q.facts },
+    ...compoundingGuide.topics.map((t) => ({ id: `cmp-${t.key}`, label: t.title })),
+    { id: "cmp-bud", label: q.bud },
+    { id: "cmp-record", label: q.record },
+    { id: "cmp-excipients", label: q.excipients },
+    { id: "cmp-counsel", label: q.counsel },
+    { id: "cmp-formulas", label: q.formulas },
+    { id: "cmp-calcs", label: q.calcs },
+  ];
+  return (
+    <nav id="quick" aria-label={q.title[locale]} className="scroll-mt-24 rounded-3xl border border-line bg-white p-5 shadow-sm sm:p-6">
+      <h2 className="text-base font-bold text-vault-900">{q.title[locale]}</h2>
+      <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+        {tools.map(({ section, icon: Icon }) => (
+          <li key={section.key}>
+            <a
+              href={`#${section.key}`}
+              className="flex h-full items-center gap-3 rounded-2xl border border-vault-100 bg-vault-50 px-4 py-3 font-semibold text-vault-900 transition hover:border-capsule-400 hover:bg-capsule-50"
+            >
+              <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-vault-900 text-molecule-400">
+                <Icon className="size-4" aria-hidden="true" />
+              </span>
+              <span className="text-sm leading-snug">{section.title[locale]}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div className="mt-5 border-t border-line pt-4">
+        <a href={`#${compounding.key}`} className="flex items-center gap-2 text-sm font-bold text-vault-900 hover:text-molecule-700">
+          <FlaskConical className="size-4 text-capsule-600" aria-hidden="true" />
+          {q.compounding[locale]}
+        </a>
+        <ul className="mt-3 flex flex-wrap gap-2">
+          {compoundingLinks.map((l) => (
+            <li key={l.id}>
+              <a href={`#${l.id}`} className={chip}>
+                {l.label[locale]}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
+}
+
 export default async function PharmacyPage() {
   const locale = await getLocale();
   return (
@@ -78,13 +135,7 @@ export default async function PharmacyPage() {
           <p className="rounded-xl border border-capsule-400/40 bg-capsule-400/10 px-4 py-3 text-sm leading-relaxed text-ink">
             {pharmacyPage.disclaimer[locale]} {withReviewedMonth(pharmacyPage.reviewed[locale], "pharmacy", locale)}
           </p>
-          <nav aria-label={pharmacyPage.toc[locale]} className="flex flex-wrap gap-2 text-sm">
-            {[interactionsCopy, iranDrugs, orangeBook, compounding].map((s) => (
-              <a key={s.key} href={`#${s.key}`} className="rounded-full border border-line bg-white px-4 py-1.5 font-medium text-vault-900 hover:border-molecule-500">
-                {s.title[locale]}
-              </a>
-            ))}
-          </nav>
+          <QuickAccess locale={locale} />
         </div>
 
         {/* 0. Drug interaction checker */}
@@ -131,14 +182,14 @@ export default async function PharmacyPage() {
 
           <CompoundingBasics locale={locale} />
 
-          <div>
+          <div id="cmp-bud" className="scroll-mt-24">
             <h3 className="mb-3 text-lg font-bold text-vault-900">{compounding.budTitle[locale]}</h3>
             <BudCalculator locale={locale} />
             <p className="mt-3 text-sm leading-relaxed text-ink">{compounding.budNote[locale]}</p>
             <Refs refs={compounding.refs} locale={locale} />
           </div>
 
-          <div className="rounded-card border border-line bg-white p-5">
+          <div id="cmp-record" className="scroll-mt-24 rounded-card border border-line bg-white p-5">
             <h3 className="text-lg font-bold text-vault-900">{compounding.recordTitle[locale]}</h3>
             <ul className="mt-3 list-disc space-y-1.5 ps-5 leading-relaxed text-ink">
               {compounding.record.map((r) => (
@@ -150,12 +201,12 @@ export default async function PharmacyPage() {
 
           <CompoundingTables locale={locale} />
 
-          <div>
+          <div id="cmp-formulas" className="scroll-mt-24">
             <h3 className="text-lg font-bold text-vault-900">{compounding.formulasTitle[locale]}</h3>
             <LinkCards links={compounding.formulas} locale={locale} />
           </div>
 
-          <div>
+          <div id="cmp-calcs" className="scroll-mt-24">
             <h3 className="text-lg font-bold text-vault-900">{compounding.calcsTitle[locale]}</h3>
             <ul className="mt-3 flex flex-wrap gap-2">
               {compounding.calcs.map((c) => (

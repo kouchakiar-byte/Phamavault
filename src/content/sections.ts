@@ -161,7 +161,7 @@ export const sections = [
     title: bi("CTD Dossier Compilation", "تدوین CTD"),
     description: bi(
       "Your project's CTD dossier compiled in just 5 working days by the PharmaVault expert team.",
-      "تدوین CTD پروژه شما فقط در ۵ روز کاری توسط تیم تخصصی فارماوالت.",
+      "تدوین CTD پروژه شما فقط در 5 روز کاری توسط تیم تخصصی فارماوالت.",
     ),
   },
   {

@@ -147,11 +147,11 @@
   "mw": "",
   "applications": {
    "en": "Simethicone is used as an antifoaming agent: as an active ingredient in antiflatulent products, and as a processing aid to suppress foaming during the manufacture of liquids, emulsions and fermentation products. It is also used in topical barrier preparations and as a defoamer in oral suspensions. It is effective at low concentrations, usually well below 1% of the product, often supplied as an aqueous emulsion for ease of dispersion.",
-   "fa": "سایمتیکون به عنوان ضدکف به کار می‌رود: به عنوان ماده مؤثر در فرآورده‌های ضدنفخ، و به عنوان کمک‌فرآیند برای جلوگیری از کف کردن در ساخت مایعات، امولسیون‌ها و فرآورده‌های تخمیری. در فرآورده‌های موضعی محافظ پوست و به عنوان ضدکف در سوسپانسیون‌های خوراکی نیز مصرف می‌شود. در غلظت‌های کم، معمولاً بسیار کمتر از 1٪ فرآورده، مؤثر است و اغلب برای پراکنش آسان‌تر به صورت امولسیون آبی عرضه می‌شود."
+   "fa": "سایمتیکون به عنوان ضدکف به کار می‌رود: به عنوان ماده مؤثر در فرآورده‌های ضدنفخ، و به عنوان کمک‌فرآیند برای جلوگیری از کف کردن در ساخت مایعات، امولسیون‌ها و فرآورده‌های تخمیری. در فرآورده‌های موضعی محافظ پوست و به عنوان ضدکف در سوسپانسیون‌های خوراکی نیز مصرف می‌شود. در غلظت‌های کم، معمولاً بسیار کمتر از 1% فرآورده، مؤثر است و اغلب برای پراکنش آسان‌تر به صورت امولسیون آبی عرضه می‌شود."
   },
   "description": {
    "en": "A translucent, grey, viscous fluid. Pharmacopoeial material contains about 90.5–99.0% polydimethylsiloxane and 4.0–7.0% silicon dioxide; the silica particles are hydrophobised by the silicone, which makes the mixture a much more effective defoamer than dimethicone alone.",
-   "fa": "مایع ویسکوز، نیمه‌شفاف و خاکستری‌رنگ. ماده فارماکوپه‌ای حدود 90.5–99.0٪ پلی‌دی‌متیل‌سیلوکسان و 4.0–7.0٪ سیلیسیم دی‌اکسید دارد؛ ذرات سیلیس توسط سیلیکون آب‌گریز می‌شوند و همین باعث می‌شود این مخلوط ضدکف بسیار مؤثرتری از دایمتیکون به‌تنهایی باشد."
+   "fa": "مایع ویسکوز، نیمه‌شفاف و خاکستری‌رنگ. ماده فارماکوپه‌ای حدود 90.5–99.0% پلی‌دی‌متیل‌سیلوکسان و 4.0–7.0% سیلیسیم دی‌اکسید دارد؛ ذرات سیلیس توسط سیلیکون آب‌گریز می‌شوند و همین باعث می‌شود این مخلوط ضدکف بسیار مؤثرتری از دایمتیکون به‌تنهایی باشد."
   },
   "properties": [
    {
@@ -161,7 +161,7 @@
     },
     "v": {
      "en": "4.0–7.0%",
-     "fa": "4.0–7.0٪"
+     "fa": "4.0–7.0%"
     }
    },
    {
@@ -254,7 +254,7 @@
   "mw": "136.08 (trihydrate); 82.03 (anhydrous)",
   "applications": {
    "en": "Sodium acetate is used, usually together with acetic acid, to prepare acetate buffers in the pH range of about 3.8–5.8 for injections, ophthalmic, oral and topical preparations. It is also used as an electrolyte source and systemic alkalising agent in parenteral nutrition and in haemodialysis and peritoneal dialysis solutions, where acetate is metabolised to bicarbonate. Buffer concentrations are typically low, of the order of 0.1–1% w/v.",
-   "fa": "سدیم استات معمولاً همراه با استیک اسید برای تهیه بافر استات در محدوده pH حدود 3.8–5.8 در فرآورده‌های تزریقی، چشمی، خوراکی و موضعی به کار می‌رود. همچنین به عنوان منبع الکترولیت و قلیایی‌کننده سیستمیک در تغذیه وریدی و محلول‌های همودیالیز و دیالیز صفاقی مصرف می‌شود که در آن‌ها استات به بی‌کربنات متابولیزه می‌شود. غلظت آن در بافرها معمولاً کم و در حد 0.1–1٪ وزنی/حجمی است."
+   "fa": "سدیم استات معمولاً همراه با استیک اسید برای تهیه بافر استات در محدوده pH حدود 3.8–5.8 در فرآورده‌های تزریقی، چشمی، خوراکی و موضعی به کار می‌رود. همچنین به عنوان منبع الکترولیت و قلیایی‌کننده سیستمیک در تغذیه وریدی و محلول‌های همودیالیز و دیالیز صفاقی مصرف می‌شود که در آن‌ها استات به بی‌کربنات متابولیزه می‌شود. غلظت آن در بافرها معمولاً کم و در حد 0.1–1% وزنی/حجمی است."
   },
   "description": {
    "en": "Colourless, transparent crystals or a white granular crystalline powder, with a faint acetic odour and a saline taste. The trihydrate effloresces in warm, dry air; the anhydrous form is hygroscopic.",
@@ -278,7 +278,7 @@
     },
     "v": {
      "en": "7.5–9.2 (5% w/v aqueous solution)",
-     "fa": "7.5–9.2 (محلول آبی 5٪)"
+     "fa": "7.5–9.2 (محلول آبی 5%)"
     }
    },
    {
@@ -332,7 +332,7 @@
   },
   "comments": {
    "en": "Specify which form (trihydrate or anhydrous) is used, since the trihydrate contains about 40% water and quantities must be corrected accordingly. Acetate buffers have their greatest capacity close to pH 4.8.",
-   "fa": "مشخص کنید کدام فرم (تری‌هیدرات یا بدون آب) مصرف می‌شود، زیرا تری‌هیدرات حدود 40٪ آب دارد و مقادیر باید بر همین اساس اصلاح شوند. بافرهای استات بیشترین ظرفیت بافری را در نزدیکی pH 4.8 دارند."
+   "fa": "مشخص کنید کدام فرم (تری‌هیدرات یا بدون آب) مصرف می‌شود، زیرا تری‌هیدرات حدود 40% آب دارد و مقادیر باید بر همین اساس اصلاح شوند. بافرهای استات بیشترین ظرفیت بافری را در نزدیکی pH 4.8 دارند."
   },
   "refs": [
    "usp",
@@ -363,7 +363,7 @@
   "mw": "≈ 10 000–600 000 (grade-dependent); repeat unit 198.11",
   "applications": {
    "en": "Used as a suspending and thickening agent (1–5%), as an emulsion stabiliser (1–3%), as a tablet binder (1–3%) and disintegrant (2.5–10%), and in pastes and creams (5–10%). It is also used in hydrophilic matrices for modified release, in microencapsulation and bead formation by ionotropic gelation with calcium ions, and with sodium bicarbonate and calcium carbonate in raft-forming preparations for gastro-oesophageal reflux. Calcium alginate made from it is used in wound dressings.",
-   "fa": "به عنوان عامل تعلیق‌دهنده و غلیظ‌کننده (1–5٪)، پایدارکننده امولسیون (1–3٪)، چسباننده قرص (1–3٪) و متلاشی‌کننده قرص (2.5–10٪)، و در خمیرها و کرم‌ها (5–10٪) به کار می‌رود. همچنین در ماتریکس‌های آب‌دوست رهش تعدیل‌شده، میکروانکپسولاسیون و ساخت دانه‌ها (bead) با ژل‌شدن یونی (ionotropic gelation) با یون کلسیم، و همراه با سدیم بی‌کربنات و کلسیم کربنات در فرآورده‌های تشکیل‌دهنده لایه شناور (raft) برای ریفلاکس معده به مری مصرف می‌شود. کلسیم آلژینات حاصل از آن در پانسمان زخم کاربرد دارد."
+   "fa": "به عنوان عامل تعلیق‌دهنده و غلیظ‌کننده (1–5%)، پایدارکننده امولسیون (1–3%)، چسباننده قرص (1–3%) و متلاشی‌کننده قرص (2.5–10%)، و در خمیرها و کرم‌ها (5–10%) به کار می‌رود. همچنین در ماتریکس‌های آب‌دوست رهش تعدیل‌شده، میکروانکپسولاسیون و ساخت دانه‌ها (bead) با ژل‌شدن یونی (ionotropic gelation) با یون کلسیم، و همراه با سدیم بی‌کربنات و کلسیم کربنات در فرآورده‌های تشکیل‌دهنده لایه شناور (raft) برای ریفلاکس معده به مری مصرف می‌شود. کلسیم آلژینات حاصل از آن در پانسمان زخم کاربرد دارد."
   },
   "description": {
    "en": "An odourless, almost tasteless, white to pale yellowish-brown powder. It is extracted from brown seaweeds; the ratio and sequence of mannuronic (M) and guluronic (G) acid blocks, which depend on the seaweed source, determine the gel strength and viscosity of each grade.",
@@ -377,7 +377,7 @@
     },
     "v": {
      "en": "about 20–400 mPa s for a 1% w/v aqueous solution at 20 °C, depending on grade",
-     "fa": "حدود 20–400 mPa s برای محلول آبی 1٪ در 20 °C، بسته به گرید"
+     "fa": "حدود 20–400 mPa s برای محلول آبی 1% در 20 °C، بسته به گرید"
     }
    },
    {
@@ -387,7 +387,7 @@
     },
     "v": {
      "en": "about 7 (1% w/v aqueous solution)",
-     "fa": "حدود 7 (محلول آبی 1٪)"
+     "fa": "حدود 7 (محلول آبی 1%)"
     }
    },
    {
@@ -397,7 +397,7 @@
     },
     "v": {
      "en": "not more than 15% w/w",
-     "fa": "حداکثر 15٪ وزنی"
+     "fa": "حداکثر 15% وزنی"
     }
    },
    {
@@ -427,7 +427,7 @@
   },
   "incompatibilities": {
    "en": "Incompatible with acridine derivatives, crystal violet, phenylmercuric acetate and nitrate, calcium salts, heavy metals and ethanol at concentrations above about 5%. Low concentrations of electrolytes raise viscosity, but high concentrations cause salting out.",
-   "fa": "با مشتقات آکریدین، کریستال ویوله، فنیل‌مرکوریک استات و نیترات، نمک‌های کلسیم، فلزات سنگین و اتانول با غلظت بیش از حدود 5٪ ناسازگار است. غلظت‌های کم الکترولیت ویسکوزیته را افزایش می‌دهند، ولی غلظت‌های زیاد باعث نمک‌زدایی (salting out) می‌شوند."
+   "fa": "با مشتقات آکریدین، کریستال ویوله، فنیل‌مرکوریک استات و نیترات، نمک‌های کلسیم، فلزات سنگین و اتانول با غلظت بیش از حدود 5% ناسازگار است. غلظت‌های کم الکترولیت ویسکوزیته را افزایش می‌دهند، ولی غلظت‌های زیاد باعث نمک‌زدایی (salting out) می‌شوند."
   },
   "manufacture": {
    "en": "Brown seaweeds (Phaeophyceae, for example Laminaria and Macrocystis species) are extracted with dilute alkali; the alginic acid is precipitated by acid or as calcium alginate, purified and converted to the sodium salt with sodium carbonate or hydroxide, then dried and milled.",
@@ -482,7 +482,7 @@
   "mw": "198.11",
   "applications": {
    "en": "Sodium ascorbate is used as an antioxidant in oral, parenteral and topical preparations and foods, usually at low concentrations (of the order of 0.01–0.1% w/v), and as a source of vitamin C. Because its solutions are close to neutral, it is preferred to ascorbic acid where an acidic pH is undesirable, for example in injections and neutral oral liquids. It is also used to enhance iron absorption and as a meat-curing adjunct in foods.",
-   "fa": "سدیم آسکوربات به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی و مواد غذایی، معمولاً در غلظت‌های کم (در حد 0.01–0.1٪ وزنی/حجمی)، و به عنوان منبع ویتامین C به کار می‌رود. چون محلول‌های آن نزدیک به خنثی هستند، در مواردی که pH اسیدی مطلوب نیست، مانند فرآورده‌های تزریقی و مایعات خوراکی خنثی، بر آسکوربیک اسید ترجیح داده می‌شود. در افزایش جذب آهن و به عنوان کمک‌کننده در عمل‌آوری گوشت نیز مصرف می‌شود."
+   "fa": "سدیم آسکوربات به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی و مواد غذایی، معمولاً در غلظت‌های کم (در حد 0.01–0.1% وزنی/حجمی)، و به عنوان منبع ویتامین C به کار می‌رود. چون محلول‌های آن نزدیک به خنثی هستند، در مواردی که pH اسیدی مطلوب نیست، مانند فرآورده‌های تزریقی و مایعات خوراکی خنثی، بر آسکوربیک اسید ترجیح داده می‌شود. در افزایش جذب آهن و به عنوان کمک‌کننده در عمل‌آوری گوشت نیز مصرف می‌شود."
   },
   "description": {
    "en": "A white or very faintly yellow crystalline powder, odourless or almost odourless, with a pleasant saline taste. It darkens gradually on exposure to light. 1 g of sodium ascorbate corresponds to about 0.89 g of ascorbic acid.",
@@ -496,7 +496,7 @@
     },
     "v": {
      "en": "7.0–8.0 (10% w/v aqueous solution)",
-     "fa": "7.0–8.0 (محلول آبی 10٪)"
+     "fa": "7.0–8.0 (محلول آبی 10%)"
     }
    },
    {
@@ -506,7 +506,7 @@
     },
     "v": {
      "en": "+103° to +108° (10% w/v aqueous solution)",
-     "fa": "+103° تا +108° (محلول آبی 10٪)"
+     "fa": "+103° تا +108° (محلول آبی 10%)"
     }
    },
    {
@@ -595,7 +595,7 @@
   "mw": "144.11",
   "applications": {
    "en": "Used mainly as an antimicrobial preservative in oral liquids (typically 0.02–0.5%), in cosmetics (0.1–0.5%) and in foods, and in some parenteral products (up to about 0.5%). Its activity is due to the undissociated benzoic acid, so it is effective only in acidic preparations, best below about pH 4.5. It has also been used as a water-soluble tablet lubricant at about 2–5% w/w, and is used therapeutically in urea-cycle disorders.",
-   "fa": "عمدتاً به عنوان نگهدارنده ضدمیکروبی در مایعات خوراکی (معمولاً 0.02–0.5٪)، فرآورده‌های آرایشی (0.1–0.5٪) و مواد غذایی، و در برخی فرآورده‌های تزریقی (تا حدود 0.5٪) به کار می‌رود. اثر آن مربوط به بنزوئیک اسید تفکیک‌نشده است، بنابراین فقط در فرآورده‌های اسیدی، و به بهترین شکل در pH کمتر از حدود 4.5، مؤثر است. به عنوان روان‌کننده (Lubricant) محلول در آب قرص در غلظت حدود 2–5٪ وزنی نیز به کار رفته است و در درمان اختلالات چرخه اوره مصرف دارویی دارد."
+   "fa": "عمدتاً به عنوان نگهدارنده ضدمیکروبی در مایعات خوراکی (معمولاً 0.02–0.5%)، فرآورده‌های آرایشی (0.1–0.5%) و مواد غذایی، و در برخی فرآورده‌های تزریقی (تا حدود 0.5%) به کار می‌رود. اثر آن مربوط به بنزوئیک اسید تفکیک‌نشده است، بنابراین فقط در فرآورده‌های اسیدی، و به بهترین شکل در pH کمتر از حدود 4.5، مؤثر است. به عنوان روان‌کننده (Lubricant) محلول در آب قرص در غلظت حدود 2–5% وزنی نیز به کار رفته است و در درمان اختلالات چرخه اوره مصرف دارویی دارد."
   },
   "description": {
    "en": "A white, granular or crystalline, slightly hygroscopic powder, odourless or with a faint odour of benzoin, with an unpleasant sweetish and saline taste.",
@@ -629,7 +629,7 @@
     },
     "v": {
      "en": "freely soluble in water; sparingly soluble in ethanol (90%)",
-     "fa": "به‌راحتی محلول در آب؛ نسبتاً کم محلول در اتانول 90٪"
+     "fa": "به‌راحتی محلول در آب؛ نسبتاً کم محلول در اتانول 90%"
     }
    },
    {
@@ -673,7 +673,7 @@
   },
   "comments": {
    "en": "Check the final pH of the formulation: at pH 4 about 60% of the preservative is in the active undissociated form, but at pH 6 less than 2% is, so efficacy falls sharply as pH rises. Because sodium benzoate itself raises pH slightly, the pH should be adjusted after it is added.",
-   "fa": "pH نهایی فرمولاسیون را بررسی کنید: در pH 4 حدود 60٪ نگهدارنده به شکل فعال تفکیک‌نشده است، ولی در pH 6 کمتر از 2٪؛ بنابراین با افزایش pH کارایی به‌شدت کاهش می‌یابد. چون خود سدیم بنزوات pH را کمی بالا می‌برد، تنظیم pH باید پس از افزودن آن انجام شود."
+   "fa": "pH نهایی فرمولاسیون را بررسی کنید: در pH 4 حدود 60% نگهدارنده به شکل فعال تفکیک‌نشده است، ولی در pH 6 کمتر از 2%؛ بنابراین با افزایش pH کارایی به‌شدت کاهش می‌یابد. چون خود سدیم بنزوات pH را کمی بالا می‌برد، تنظیم pH باید پس از افزودن آن انجام شود."
   },
   "refs": [
    "usp",
@@ -710,7 +710,7 @@
   "mw": "84.01",
   "applications": {
    "en": "Sodium bicarbonate is used as the carbon dioxide source in effervescent tablets and granules, usually combined with citric and/or tartaric acid, at about 25–50% w/w. It is also used as an alkalising agent and buffer in oral and parenteral formulations, in isotonic infusions (1.39% w/v is iso-osmotic), as a gas-generating agent in floating and raft-forming systems, and therapeutically as an antacid and systemic alkaliniser.",
-   "fa": "سدیم بی‌کربنات به عنوان منبع کربن دی‌اکسید در قرص‌ها و گرانول‌های جوشان، معمولاً همراه با سیتریک اسید و/یا تارتاریک اسید، در غلظت حدود 25–50٪ وزنی به کار می‌رود. همچنین به عنوان قلیایی‌کننده و بافر در فرمولاسیون‌های خوراکی و تزریقی، در انفوزیون‌های ایزوتونیک (محلول 1.39٪ ایزواسموتیک است)، به عنوان عامل تولید گاز در سیستم‌های شناور و تشکیل‌دهنده raft، و از نظر درمانی به عنوان آنتی‌اسید و قلیایی‌کننده سیستمیک مصرف می‌شود."
+   "fa": "سدیم بی‌کربنات به عنوان منبع کربن دی‌اکسید در قرص‌ها و گرانول‌های جوشان، معمولاً همراه با سیتریک اسید و/یا تارتاریک اسید، در غلظت حدود 25–50% وزنی به کار می‌رود. همچنین به عنوان قلیایی‌کننده و بافر در فرمولاسیون‌های خوراکی و تزریقی، در انفوزیون‌های ایزوتونیک (محلول 1.39% ایزواسموتیک است)، به عنوان عامل تولید گاز در سیستم‌های شناور و تشکیل‌دهنده raft، و از نظر درمانی به عنوان آنتی‌اسید و قلیایی‌کننده سیستمیک مصرف می‌شود."
   },
   "description": {
    "en": "An odourless, white, crystalline powder with a saline, slightly alkaline taste. Grades of different particle size, and surface-treated or granular grades for direct compression, are available.",
@@ -788,7 +788,7 @@
   },
   "comments": {
    "en": "Effervescent products must be made in low-humidity conditions (often below about 25% RH) because traces of moisture start the acid–bicarbonate reaction, which then propagates; dried or coated bicarbonate grades and moisture-protective packaging help stability. Avoid drying temperatures that cause thermal decomposition.",
-   "fa": "فرآورده‌های جوشان باید در رطوبت کم (اغلب کمتر از حدود 25٪ رطوبت نسبی) ساخته شوند، زیرا مقدار ناچیز رطوبت واکنش اسید–بی‌کربنات را آغاز می‌کند و این واکنش ادامه می‌یابد؛ گریدهای خشک‌شده یا پوشش‌دار بی‌کربنات و بسته‌بندی محافظ رطوبت به پایداری کمک می‌کنند. از دماهای خشک‌کردن که باعث تجزیه حرارتی می‌شوند خودداری کنید."
+   "fa": "فرآورده‌های جوشان باید در رطوبت کم (اغلب کمتر از حدود 25% رطوبت نسبی) ساخته شوند، زیرا مقدار ناچیز رطوبت واکنش اسید–بی‌کربنات را آغاز می‌کند و این واکنش ادامه می‌یابد؛ گریدهای خشک‌شده یا پوشش‌دار بی‌کربنات و بسته‌بندی محافظ رطوبت به پایداری کمک می‌کنند. از دماهای خشک‌کردن که باعث تجزیه حرارتی می‌شوند خودداری کنید."
   },
   "refs": [
    "usp",
@@ -812,7 +812,7 @@
   "mw": "104.06",
   "applications": {
    "en": "Sodium bisulfite is used as an antioxidant in acidic oral, parenteral and topical preparations, for example adrenaline and other sympathomimetic injections, at low concentrations comparable with those of sodium metabisulfite (typically 0.01–0.1% w/v). It also has antimicrobial activity at acidic pH and is used as a preservative and anti-browning agent in foods and beverages.",
-   "fa": "سدیم بی‌سولفیت به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی اسیدی، مانند تزریق آدرنالین و سایر سمپاتومیمتیک‌ها، در غلظت‌های کم و قابل مقایسه با سدیم متابی‌سولفیت (معمولاً 0.01–0.1٪ وزنی/حجمی) به کار می‌رود. در pH اسیدی اثر ضدمیکروبی نیز دارد و به عنوان نگهدارنده و ضدقهوه‌ای‌شدن در مواد غذایی و نوشیدنی‌ها مصرف می‌شود."
+   "fa": "سدیم بی‌سولفیت به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی اسیدی، مانند تزریق آدرنالین و سایر سمپاتومیمتیک‌ها، در غلظت‌های کم و قابل مقایسه با سدیم متابی‌سولفیت (معمولاً 0.01–0.1% وزنی/حجمی) به کار می‌رود. در pH اسیدی اثر ضدمیکروبی نیز دارد و به عنوان نگهدارنده و ضدقهوه‌ای‌شدن در مواد غذایی و نوشیدنی‌ها مصرف می‌شود."
   },
   "description": {
    "en": "White or yellowish-white crystals or granular powder with an odour of sulfur dioxide. The solid article of commerce consists largely of sodium metabisulfite (Na2S2O5) together with some sodium bisulfite; in solution the two are equivalent.",
@@ -846,7 +846,7 @@
     },
     "v": {
      "en": "pharmacopoeial material is assayed as SO2, with a minimum of about 58.5%",
-     "fa": "ماده فارماکوپه‌ای بر حسب SO2 سنجش می‌شود و حداقل حدود 58.5٪ SO2 دارد"
+     "fa": "ماده فارماکوپه‌ای بر حسب SO2 سنجش می‌شود و حداقل حدود 58.5% SO2 دارد"
     }
    },
    {
@@ -957,7 +957,7 @@
     },
     "v": {
      "en": "strongly alkaline; about 11.5 for a 1% w/v aqueous solution",
-     "fa": "به‌شدت قلیایی؛ حدود 11.5 برای محلول آبی 1٪"
+     "fa": "به‌شدت قلیایی؛ حدود 11.5 برای محلول آبی 1%"
     }
    },
    {
@@ -1011,7 +1011,7 @@
   },
   "comments": {
    "en": "Specify the hydrate used, as the water content (and therefore the amount needed) differs widely: the decahydrate contains about 63% water. Anhydrous sodium carbonate is the usual choice in effervescent and moisture-sensitive formulations.",
-   "fa": "نوع هیدرات مصرفی را مشخص کنید، زیرا مقدار آب (و در نتیجه مقدار لازم) بسیار متفاوت است: دکاهیدرات حدود 63٪ آب دارد. سدیم کربنات بدون آب انتخاب معمول در فرمولاسیون‌های جوشان و حساس به رطوبت است."
+   "fa": "نوع هیدرات مصرفی را مشخص کنید، زیرا مقدار آب (و در نتیجه مقدار لازم) بسیار متفاوت است: دکاهیدرات حدود 63% آب دارد. سدیم کربنات بدون آب انتخاب معمول در فرمولاسیون‌های جوشان و حساس به رطوبت است."
   },
   "refs": [
    "usp",
@@ -1047,11 +1047,11 @@
   "mw": "58.44",
   "applications": {
    "en": "Sodium chloride is used mainly to adjust tonicity in parenteral, ophthalmic, nasal and irrigation solutions; a 0.9% w/v solution is iso-osmotic with serum. It is also used as an osmotic agent in osmotic-pump and other controlled-release tablets, as a channelling agent and diluent in tablets and capsules, to raise the viscosity of surfactant-thickened liquids such as shampoos, and to adjust the gelation and swelling of polymers.",
-   "fa": "سدیم کلرید عمدتاً برای تنظیم تونیسیته در محلول‌های تزریقی، چشمی، بینی و شستشو به کار می‌رود؛ محلول 0.9٪ وزنی/حجمی با سرم ایزواسموتیک است. همچنین به عنوان عامل اسمزی در قرص‌های پمپ اسمزی و سایر قرص‌های رهش کنترل‌شده، عامل کانال‌ساز و رقیق‌کننده در قرص و کپسول، برای افزایش ویسکوزیته مایعات غلیظ‌شده با سورفکتانت مانند شامپوها، و برای تنظیم ژل‌شدن و تورم پلیمرها مصرف می‌شود."
+   "fa": "سدیم کلرید عمدتاً برای تنظیم تونیسیته در محلول‌های تزریقی، چشمی، بینی و شستشو به کار می‌رود؛ محلول 0.9% وزنی/حجمی با سرم ایزواسموتیک است. همچنین به عنوان عامل اسمزی در قرص‌های پمپ اسمزی و سایر قرص‌های رهش کنترل‌شده، عامل کانال‌ساز و رقیق‌کننده در قرص و کپسول، برای افزایش ویسکوزیته مایعات غلیظ‌شده با سورفکتانت مانند شامپوها، و برای تنظیم ژل‌شدن و تورم پلیمرها مصرف می‌شود."
   },
   "description": {
    "en": "Colourless cubic crystals or a white crystalline powder with a saline taste. It is slightly hygroscopic above about 75% relative humidity.",
-   "fa": "کریستال‌های مکعبی بی‌رنگ یا پودر کریستالی سفید با طعم شور. در رطوبت نسبی بالاتر از حدود 75٪ کمی رطوبت‌گیر است."
+   "fa": "کریستال‌های مکعبی بی‌رنگ یا پودر کریستالی سفید با طعم شور. در رطوبت نسبی بالاتر از حدود 75% کمی رطوبت‌گیر است."
   },
   "properties": [
    {
@@ -1091,7 +1091,7 @@
     },
     "v": {
      "en": "about 290 mOsm/kg for a 0.9% w/v solution",
-     "fa": "حدود 290 mOsm/kg برای محلول 0.9٪"
+     "fa": "حدود 290 mOsm/kg برای محلول 0.9%"
     }
    },
    {
@@ -1135,7 +1135,7 @@
   },
   "comments": {
    "en": "When calculating the amount of sodium chloride needed to make a solution isotonic, the freezing-point depression or sodium chloride equivalent of the drug and other solutes must be taken into account (a 0.9% solution depresses the freezing point by about 0.52 °C). Grades for parenteral and haemodialysis use have tighter limits on impurities such as bromide, iodide, aluminium and endotoxins.",
-   "fa": "هنگام محاسبه مقدار سدیم کلرید لازم برای ایزوتونیک کردن محلول، باید کاهش نقطه انجماد یا معادل سدیم کلرید دارو و سایر مواد محلول را در نظر گرفت (محلول 0.9٪ نقطه انجماد را حدود 0.52 °C پایین می‌آورد). گریدهای مخصوص تزریق و همودیالیز برای ناخالصی‌هایی مانند برمید، یدید، آلومینیوم و اندوتوکسین حدود سخت‌گیرانه‌تری دارند."
+   "fa": "هنگام محاسبه مقدار سدیم کلرید لازم برای ایزوتونیک کردن محلول، باید کاهش نقطه انجماد یا معادل سدیم کلرید دارو و سایر مواد محلول را در نظر گرفت (محلول 0.9% نقطه انجماد را حدود 0.52 °C پایین می‌آورد). گریدهای مخصوص تزریق و همودیالیز برای ناخالصی‌هایی مانند برمید، یدید، آلومینیوم و اندوتوکسین حدود سخت‌گیرانه‌تری دارند."
   },
   "refs": [
    "usp",
@@ -1184,7 +1184,7 @@
     },
     "v": {
      "en": "11.0–13.0% w/w",
-     "fa": "11.0–13.0٪ وزنی"
+     "fa": "11.0–13.0% وزنی"
     }
    },
    {
@@ -1194,7 +1194,7 @@
     },
     "v": {
      "en": "mildly alkaline, about 7.5–8.5 for a 5% w/v aqueous solution",
-     "fa": "کمی قلیایی، حدود 7.5–8.5 برای محلول آبی 5٪"
+     "fa": "کمی قلیایی، حدود 7.5–8.5 برای محلول آبی 5%"
     }
    },
    {
@@ -1320,7 +1320,7 @@
     },
     "v": {
      "en": "5.5–7.5 (10% w/v aqueous solution)",
-     "fa": "5.5–7.5 (محلول آبی 10٪)"
+     "fa": "5.5–7.5 (محلول آبی 10%)"
     }
    },
    {
@@ -1394,7 +1394,7 @@
   "mw": "repeat unit 401.3; polymer from about 10⁴ to several 10⁶ Da, depending on grade",
   "applications": {
    "en": "Sodium hyaluronate is used as a viscosity-enhancing and lubricating agent in eye drops and artificial tears (typically about 0.1–0.4%), as a viscoelastic agent in ophthalmic surgery (at higher concentrations, around 1–3%), in intra-articular injections for osteoarthritis, in dermal fillers (usually cross-linked) and in topical wound-healing and moisturising products. It is also investigated as a mucoadhesive carrier and as a targeting ligand in drug delivery systems.",
-   "fa": "سدیم هیالورونات به عنوان افزاینده ویسکوزیته و روان‌کننده در قطره‌های چشمی و اشک مصنوعی (معمولاً حدود 0.1–0.4٪)، به عنوان ماده ویسکوالاستیک در جراحی چشم (در غلظت‌های بالاتر، حدود 1–3٪)، در تزریق داخل مفصلی برای استئوآرتریت، در فیلرهای پوستی (معمولاً به صورت کراس‌لینک‌شده) و در فرآورده‌های موضعی ترمیم زخم و مرطوب‌کننده به کار می‌رود. همچنین به عنوان حامل چسبنده به مخاط و لیگاند هدف‌گیری در سیستم‌های دارورسانی بررسی می‌شود."
+   "fa": "سدیم هیالورونات به عنوان افزاینده ویسکوزیته و روان‌کننده در قطره‌های چشمی و اشک مصنوعی (معمولاً حدود 0.1–0.4%)، به عنوان ماده ویسکوالاستیک در جراحی چشم (در غلظت‌های بالاتر، حدود 1–3%)، در تزریق داخل مفصلی برای استئوآرتریت، در فیلرهای پوستی (معمولاً به صورت کراس‌لینک‌شده) و در فرآورده‌های موضعی ترمیم زخم و مرطوب‌کننده به کار می‌رود. همچنین به عنوان حامل چسبنده به مخاط و لیگاند هدف‌گیری در سیستم‌های دارورسانی بررسی می‌شود."
   },
   "description": {
    "en": "A white or almost white, very hygroscopic powder or fibrous aggregate, odourless. It dissolves slowly in water to give highly viscous, pseudoplastic and viscoelastic solutions; grades are characterised by molecular weight or intrinsic viscosity.",
@@ -1418,7 +1418,7 @@
     },
     "v": {
      "en": "about 5.0–8.5 (0.5% w/v aqueous solution)",
-     "fa": "حدود 5.0–8.5 (محلول آبی 0.5٪)"
+     "fa": "حدود 5.0–8.5 (محلول آبی 0.5%)"
     }
    },
    {
@@ -1538,7 +1538,7 @@
     },
     "v": {
      "en": "about 12 for a 0.05% w/v solution and about 13 for a 0.5% w/v solution",
-     "fa": "حدود 12 برای محلول 0.05٪ و حدود 13 برای محلول 0.5٪"
+     "fa": "حدود 12 برای محلول 0.05% و حدود 13 برای محلول 0.5%"
     }
    },
    {
@@ -1558,7 +1558,7 @@
     },
     "v": {
      "en": "pharmacopoeial material contains not less than about 97% total alkali as NaOH, including a limited amount of sodium carbonate",
-     "fa": "ماده فارماکوپه‌ای دست‌کم حدود 97٪ قلیای کل بر حسب NaOH، شامل مقدار محدودی سدیم کربنات، دارد"
+     "fa": "ماده فارماکوپه‌ای دست‌کم حدود 97% قلیای کل بر حسب NaOH، شامل مقدار محدودی سدیم کربنات، دارد"
     }
    }
   ],
@@ -1628,11 +1628,11 @@
   "mw": "288.38",
   "applications": {
    "en": "An anionic surfactant used in a wide range of non-parenteral products: as an emulsifier (0.5–2.5%), as a detergent in medicated shampoos (about 10%), in skin cleansers (about 1%), as a solubiliser (above about 0.25%), as a tablet lubricant (1–2%) and as a wetting agent in tablets, capsules and dentifrices (1–2%). It is also used in dissolution media for poorly soluble drugs and as a wetting agent to improve drug release.",
-   "fa": "یک سورفکتانت آنیونی که در طیف گسترده‌ای از فرآورده‌های غیرتزریقی به کار می‌رود: به عنوان امولسیون‌کننده (0.5–2.5٪)، شوینده در شامپوهای دارویی (حدود 10٪)، پاک‌کننده پوست (حدود 1٪)، حل‌کننده (بیشتر از حدود 0.25٪)، روان‌کننده قرص (1–2٪) و عامل مرطوب‌کننده (wetting agent) در قرص، کپسول و خمیردندان (1–2٪). در محیط‌های انحلال برای داروهای کم‌محلول و به عنوان عامل مرطوب‌کننده برای بهبود رهش دارو نیز مصرف می‌شود."
+   "fa": "یک سورفکتانت آنیونی که در طیف گسترده‌ای از فرآورده‌های غیرتزریقی به کار می‌رود: به عنوان امولسیون‌کننده (0.5–2.5%)، شوینده در شامپوهای دارویی (حدود 10%)، پاک‌کننده پوست (حدود 1%)، حل‌کننده (بیشتر از حدود 0.25%)، روان‌کننده قرص (1–2%) و عامل مرطوب‌کننده (wetting agent) در قرص، کپسول و خمیردندان (1–2%). در محیط‌های انحلال برای داروهای کم‌محلول و به عنوان عامل مرطوب‌کننده برای بهبود رهش دارو نیز مصرف می‌شود."
   },
   "description": {
    "en": "White or cream to pale yellow crystals, flakes or powder with a smooth feel, a soapy, bitter taste and a faint odour of fatty substances. The pharmacopoeias require not less than 85% of sodium alkyl sulfates calculated as C12H25NaO4S.",
-   "fa": "کریستال، پولک یا پودر سفید یا کرم تا زرد کم‌رنگ با لمس نرم، طعم صابونی و تلخ و بوی ضعیف مواد چرب. فارماکوپه‌ها دست‌کم 85٪ سدیم آلکیل سولفات بر حسب C12H25NaO4S را الزامی می‌دانند."
+   "fa": "کریستال، پولک یا پودر سفید یا کرم تا زرد کم‌رنگ با لمس نرم، طعم صابونی و تلخ و بوی ضعیف مواد چرب. فارماکوپه‌ها دست‌کم 85% سدیم آلکیل سولفات بر حسب C12H25NaO4S را الزامی می‌دانند."
   },
   "properties": [
    {
@@ -1652,7 +1652,7 @@
     },
     "v": {
      "en": "about 8.2 mmol/L (about 0.23% w/v) in water at 20 °C",
-     "fa": "حدود 8.2 mmol/L (حدود 0.23٪) در آب در 20 °C"
+     "fa": "حدود 8.2 mmol/L (حدود 0.23%) در آب در 20 °C"
     }
    },
    {
@@ -1662,7 +1662,7 @@
     },
     "v": {
      "en": "7.0–9.5 (1% w/v aqueous solution)",
-     "fa": "7.0–9.5 (محلول آبی 1٪)"
+     "fa": "7.0–9.5 (محلول آبی 1%)"
     }
    },
    {
@@ -1750,7 +1750,7 @@
   "mw": "190.11",
   "applications": {
    "en": "Sodium metabisulfite is used as an antioxidant in oral, parenteral and topical preparations at concentrations of about 0.01–1.0% w/v, most often around 0.1%. It is used mainly in acidic preparations (for example adrenaline, local anaesthetic with vasoconstrictor, and some aminoglycoside injections), while sodium sulfite is preferred at higher pH. It also has antimicrobial activity in acidic conditions and is used as a preservative in foods and beverages.",
-   "fa": "سدیم متابی‌سولفیت به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی در غلظت‌های حدود 0.01–1.0٪ وزنی/حجمی، و اغلب در حدود 0.1٪، به کار می‌رود. عمدتاً در فرآورده‌های اسیدی (مانند تزریق آدرنالین، بی‌حس‌کننده‌های موضعی همراه با منقبض‌کننده عروق و برخی تزریق‌های آمینوگلیکوزیدی) مصرف می‌شود، در حالی که در pH بالاتر سدیم سولفیت ترجیح داده می‌شود. در شرایط اسیدی اثر ضدمیکروبی نیز دارد و به عنوان نگهدارنده در مواد غذایی و نوشیدنی‌ها مصرف می‌شود."
+   "fa": "سدیم متابی‌سولفیت به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی در غلظت‌های حدود 0.01–1.0% وزنی/حجمی، و اغلب در حدود 0.1%، به کار می‌رود. عمدتاً در فرآورده‌های اسیدی (مانند تزریق آدرنالین، بی‌حس‌کننده‌های موضعی همراه با منقبض‌کننده عروق و برخی تزریق‌های آمینوگلیکوزیدی) مصرف می‌شود، در حالی که در pH بالاتر سدیم سولفیت ترجیح داده می‌شود. در شرایط اسیدی اثر ضدمیکروبی نیز دارد و به عنوان نگهدارنده در مواد غذایی و نوشیدنی‌ها مصرف می‌شود."
   },
   "description": {
    "en": "Colourless, prismatic crystals or a white to creamy-white crystalline powder with an odour of sulfur dioxide and an acidic, saline taste. In aqueous solution it forms sodium bisulfite.",
@@ -1764,7 +1764,7 @@
     },
     "v": {
      "en": "3.5–5.0 (5% w/v aqueous solution)",
-     "fa": "3.5–5.0 (محلول آبی 5٪)"
+     "fa": "3.5–5.0 (محلول آبی 5%)"
     }
    },
    {
@@ -1794,7 +1794,7 @@
     },
     "v": {
      "en": "theoretical about 67% w/w; pharmacopoeial assay is expressed as Na2S2O5",
-     "fa": "مقدار نظری حدود 67٪ وزنی؛ سنجش فارماکوپه‌ای بر حسب Na2S2O5 بیان می‌شود"
+     "fa": "مقدار نظری حدود 67% وزنی؛ سنجش فارماکوپه‌ای بر حسب Na2S2O5 بیان می‌شود"
     }
    }
   ],
@@ -1869,7 +1869,7 @@
   "mw": "141.96 (anhydrous); 177.99 (dihydrate); 268.07 (heptahydrate); 358.14 (dodecahydrate)",
   "applications": {
    "en": "Dibasic sodium phosphate is used widely as a buffering agent, usually in combination with monobasic sodium phosphate to give phosphate buffers in the pH range of about 6–8, in parenteral, ophthalmic, nasal, oral and topical preparations and in biologics. It is also used as a sequestering agent and as a source of phosphate, and it is used therapeutically as a saline laxative and phosphate supplement. Buffer concentrations are usually low (of the order of 0.1–1% w/v).",
-   "fa": "دی‌بازیک سدیم فسفات به‌طور گسترده به عنوان بافر، معمولاً همراه با منوبازیک سدیم فسفات برای تهیه بافرهای فسفات در محدوده pH حدود 6–8، در فرآورده‌های تزریقی، چشمی، بینی، خوراکی و موضعی و نیز داروهای بیولوژیک به کار می‌رود. همچنین به عنوان عامل کی‌لیت‌کننده و منبع فسفات مصرف می‌شود و از نظر درمانی به عنوان ملین نمکی و مکمل فسفات کاربرد دارد. غلظت آن در بافرها معمولاً کم (در حد 0.1–1٪ وزنی/حجمی) است."
+   "fa": "دی‌بازیک سدیم فسفات به‌طور گسترده به عنوان بافر، معمولاً همراه با منوبازیک سدیم فسفات برای تهیه بافرهای فسفات در محدوده pH حدود 6–8، در فرآورده‌های تزریقی، چشمی، بینی، خوراکی و موضعی و نیز داروهای بیولوژیک به کار می‌رود. همچنین به عنوان عامل کی‌لیت‌کننده و منبع فسفات مصرف می‌شود و از نظر درمانی به عنوان ملین نمکی و مکمل فسفات کاربرد دارد. غلظت آن در بافرها معمولاً کم (در حد 0.1–1% وزنی/حجمی) است."
   },
   "description": {
    "en": "The anhydrous form is a white, hygroscopic powder. The dihydrate is a white or almost white crystalline powder or colourless crystals, the heptahydrate occurs as colourless crystals or a granular powder, and the dodecahydrate as colourless, transparent, strongly efflorescent crystals. All are odourless with a saline taste.",
@@ -1893,7 +1893,7 @@
     },
     "v": {
      "en": "about 9 (1% w/v aqueous solution)",
-     "fa": "حدود 9 (محلول آبی 1٪)"
+     "fa": "حدود 9 (محلول آبی 1%)"
     }
    },
    {
@@ -1947,7 +1947,7 @@
   },
   "comments": {
    "en": "Always state which hydrate is used and calculate quantities on that basis, since the dodecahydrate contains about 60% water. Phosphate buffers can crystallise selectively during freezing, causing large pH shifts in frozen and lyophilised protein formulations.",
-   "fa": "همیشه نوع هیدرات مصرفی را مشخص و مقادیر را بر همان اساس محاسبه کنید، زیرا دودکاهیدرات حدود 60٪ آب دارد. بافرهای فسفات ممکن است هنگام انجماد به‌طور انتخابی کریستالیزه شوند و در فرمولاسیون‌های پروتئینی منجمد و لیوفیلیزه تغییر pH زیادی ایجاد کنند."
+   "fa": "همیشه نوع هیدرات مصرفی را مشخص و مقادیر را بر همان اساس محاسبه کنید، زیرا دودکاهیدرات حدود 60% آب دارد. بافرهای فسفات ممکن است هنگام انجماد به‌طور انتخابی کریستالیزه شوند و در فرمولاسیون‌های پروتئینی منجمد و لیوفیلیزه تغییر pH زیادی ایجاد کنند."
   },
   "refs": [
    "usp",
@@ -1975,7 +1975,7 @@
   "mw": "119.98 (anhydrous); 137.99 (monohydrate); 156.01 (dihydrate)",
   "applications": {
    "en": "Monobasic sodium phosphate is used as a buffering agent and acidifier, most often together with dibasic sodium phosphate, to prepare phosphate buffers for parenteral, ophthalmic, oral and topical preparations and protein formulations. It is also used as a sequestering agent, in effervescent and laxative products, and as a urinary acidifier. Typical buffer concentrations are low, of the order of 0.1–1% w/v.",
-   "fa": "منوبازیک سدیم فسفات به عنوان بافر و اسیدی‌کننده، اغلب همراه با دی‌بازیک سدیم فسفات، برای تهیه بافرهای فسفات در فرآورده‌های تزریقی، چشمی، خوراکی و موضعی و فرمولاسیون‌های پروتئینی به کار می‌رود. همچنین به عنوان عامل کی‌لیت‌کننده، در فرآورده‌های جوشان و ملین، و به عنوان اسیدی‌کننده ادرار مصرف می‌شود. غلظت معمول آن در بافرها کم و در حد 0.1–1٪ وزنی/حجمی است."
+   "fa": "منوبازیک سدیم فسفات به عنوان بافر و اسیدی‌کننده، اغلب همراه با دی‌بازیک سدیم فسفات، برای تهیه بافرهای فسفات در فرآورده‌های تزریقی، چشمی، خوراکی و موضعی و فرمولاسیون‌های پروتئینی به کار می‌رود. همچنین به عنوان عامل کی‌لیت‌کننده، در فرآورده‌های جوشان و ملین، و به عنوان اسیدی‌کننده ادرار مصرف می‌شود. غلظت معمول آن در بافرها کم و در حد 0.1–1% وزنی/حجمی است."
   },
   "description": {
    "en": "The anhydrous form is a white, crystalline powder or granules. The monohydrate and dihydrate occur as colourless crystals or a white crystalline powder. It is odourless, slightly deliquescent and has an acidic, saline taste.",
@@ -1989,7 +1989,7 @@
     },
     "v": {
      "en": "about 4.1–4.5 (5% w/v aqueous solution)",
-     "fa": "حدود 4.1–4.5 (محلول آبی 5٪)"
+     "fa": "حدود 4.1–4.5 (محلول آبی 5%)"
     }
    },
    {
@@ -2084,7 +2084,7 @@
   "mw": "",
   "applications": {
    "en": "Sodium starch glycolate is a 'superdisintegrant' used in oral tablets and capsules prepared by direct compression or wet granulation. Usual concentrations are 2–8% w/w, with about 4% often optimal; higher levels can slow disintegration because the swollen gel blocks further water uptake. It may be added intragranularly, extragranularly or split between the two.",
-   "fa": "سدیم استارچ گلیکولات یک متلاشی‌کننده قوی (Superdisintegrant) است که در قرص‌ها و کپسول‌های خوراکی تهیه‌شده با پرس مستقیم یا گرانولاسیون مرطوب به کار می‌رود. غلظت معمول آن 2–8٪ وزنی است و حدود 4٪ اغلب بهینه است؛ مقادیر بیشتر ممکن است متلاشی شدن را کند کنند، زیرا ژل متورم‌شده ورود بیشتر آب را مسدود می‌کند. می‌توان آن را به صورت داخل گرانولی، خارج گرانولی یا تقسیم‌شده بین هر دو اضافه کرد."
+   "fa": "سدیم استارچ گلیکولات یک متلاشی‌کننده قوی (Superdisintegrant) است که در قرص‌ها و کپسول‌های خوراکی تهیه‌شده با پرس مستقیم یا گرانولاسیون مرطوب به کار می‌رود. غلظت معمول آن 2–8% وزنی است و حدود 4% اغلب بهینه است؛ مقادیر بیشتر ممکن است متلاشی شدن را کند کنند، زیرا ژل متورم‌شده ورود بیشتر آب را مسدود می‌کند. می‌توان آن را به صورت داخل گرانولی، خارج گرانولی یا تقسیم‌شده بین هر دو اضافه کرد."
   },
   "description": {
    "en": "A white or almost white, odourless, tasteless, free-flowing, very hygroscopic powder made up of oval or spherical granules. The pharmacopoeias describe types that differ in pH and sodium content (Ph. Eur. Types A, B and C; USP–NF Types A and B).",
@@ -2108,7 +2108,7 @@
     },
     "v": {
      "en": "Type A 2.8–4.2%; Type B 2.0–3.4% (dried basis)",
-     "fa": "نوع A: 2.8–4.2٪؛ نوع B: 2.0–3.4٪ (بر پایه خشک)"
+     "fa": "نوع A: 2.8–4.2%؛ نوع B: 2.0–3.4% (بر پایه خشک)"
     }
    },
    {
@@ -2118,7 +2118,7 @@
     },
     "v": {
      "en": "not more than 10% w/w",
-     "fa": "حداکثر 10٪ وزنی"
+     "fa": "حداکثر 10% وزنی"
     }
    },
    {
@@ -2201,7 +2201,7 @@
   "mw": "390.5",
   "applications": {
    "en": "Used as a tablet and capsule lubricant at about 0.5–2.0% w/w. It is chosen in place of magnesium stearate when that lubricant is incompatible with the drug, slows dissolution or gives soft tablets, as it is less hydrophobic and less sensitive to over-blending. It is also used in effervescent and orally disintegrating tablets, and in some food applications.",
-   "fa": "به عنوان روان‌کننده (Lubricant) قرص و کپسول در غلظت حدود 0.5–2.0٪ وزنی به کار می‌رود. در مواردی که منیزیم استئارات با دارو ناسازگار است، انحلال را کند می‌کند یا قرص نرم می‌دهد، به جای آن انتخاب می‌شود، زیرا آب‌گریزی کمتری دارد و به اختلاط بیش از حد حساسیت کمتری نشان می‌دهد. در قرص‌های جوشان و قرص‌های متلاشی‌شونده در دهان و برخی کاربردهای غذایی نیز مصرف می‌شود."
+   "fa": "به عنوان روان‌کننده (Lubricant) قرص و کپسول در غلظت حدود 0.5–2.0% وزنی به کار می‌رود. در مواردی که منیزیم استئارات با دارو ناسازگار است، انحلال را کند می‌کند یا قرص نرم می‌دهد، به جای آن انتخاب می‌شود، زیرا آب‌گریزی کمتری دارد و به اختلاط بیش از حد حساسیت کمتری نشان می‌دهد. در قرص‌های جوشان و قرص‌های متلاشی‌شونده در دهان و برخی کاربردهای غذایی نیز مصرف می‌شود."
   },
   "description": {
    "en": "A fine, white powder with agglomerates of flat, circular particles. Pharmacopoeial material limits the related impurities sodium stearyl maleate and stearyl alcohol.",
@@ -2235,7 +2235,7 @@
     },
     "v": {
      "en": "not more than 0.25% (Ph. Eur.)",
-     "fa": "حداکثر 0.25٪ (فارماکوپه اروپا)"
+     "fa": "حداکثر 0.25% (فارماکوپه اروپا)"
     }
    },
    {
@@ -2245,7 +2245,7 @@
     },
     "v": {
      "en": "not more than 0.5% (Ph. Eur.)",
-     "fa": "حداکثر 0.5٪ (فارماکوپه اروپا)"
+     "fa": "حداکثر 0.5% (فارماکوپه اروپا)"
     }
    }
   ],
@@ -2316,7 +2316,7 @@
   "mw": "126.04 (anhydrous); 252.15 (heptahydrate)",
   "applications": {
    "en": "Sodium sulfite is used as an antioxidant in neutral or alkaline oral, parenteral and topical preparations, at low concentrations of the same order as other sulfites (typically about 0.01–0.1% w/v). In acidic formulations sodium metabisulfite or bisulfite is used instead. It is also used as a preservative and antioxidant in foods.",
-   "fa": "سدیم سولفیت به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی خنثی یا قلیایی، در غلظت‌های کم و هم‌اندازه سایر سولفیت‌ها (معمولاً حدود 0.01–0.1٪ وزنی/حجمی) به کار می‌رود. در فرمولاسیون‌های اسیدی به جای آن از سدیم متابی‌سولفیت یا بی‌سولفیت استفاده می‌شود. در مواد غذایی نیز به عنوان نگهدارنده و آنتی‌اکسیدان مصرف می‌شود."
+   "fa": "سدیم سولفیت به عنوان آنتی‌اکسیدان در فرآورده‌های خوراکی، تزریقی و موضعی خنثی یا قلیایی، در غلظت‌های کم و هم‌اندازه سایر سولفیت‌ها (معمولاً حدود 0.01–0.1% وزنی/حجمی) به کار می‌رود. در فرمولاسیون‌های اسیدی به جای آن از سدیم متابی‌سولفیت یا بی‌سولفیت استفاده می‌شود. در مواد غذایی نیز به عنوان نگهدارنده و آنتی‌اکسیدان مصرف می‌شود."
   },
   "description": {
    "en": "The anhydrous form is a white, odourless powder; the heptahydrate occurs as colourless crystals, which effloresce in dry air and oxidise readily.",
@@ -2489,7 +2489,7 @@
   },
   "comments": {
    "en": "Keep solutions at neutral to slightly alkaline pH to prevent sulfur deposition. The pentahydrate contains about 36% water, which must be allowed for when the anhydrous equivalent is specified.",
-   "fa": "برای جلوگیری از رسوب گوگرد، pH محلول‌ها را خنثی تا کمی قلیایی نگه دارید. پنتاهیدرات حدود 36٪ آب دارد که هنگام تعیین مقدار معادل بدون آب باید در نظر گرفته شود."
+   "fa": "برای جلوگیری از رسوب گوگرد، pH محلول‌ها را خنثی تا کمی قلیایی نگه دارید. پنتاهیدرات حدود 36% آب دارد که هنگام تعیین مقدار معادل بدون آب باید در نظر گرفته شود."
   },
   "refs": [
    "usp",
@@ -2520,7 +2520,7 @@
   "mw": "112.13",
   "applications": {
    "en": "Sorbic acid is an antimicrobial preservative, with antibacterial and particularly antifungal activity, used in oral and topical pharmaceuticals and in cosmetics and foods, at concentrations of about 0.05–0.2%. Its activity depends on the undissociated acid, so it is effective up to about pH 6 and best below pH 5. It is often combined with other preservatives or glycols, which have a synergistic effect.",
-   "fa": "سوربیک اسید یک نگهدارنده ضدمیکروبی با اثر ضدباکتریایی و به‌ویژه ضدقارچی است که در داروهای خوراکی و موضعی، فرآورده‌های آرایشی و مواد غذایی در غلظت حدود 0.05–0.2٪ به کار می‌رود. اثر آن به اسید تفکیک‌نشده وابسته است؛ بنابراین تا حدود pH 6 مؤثر است و بهترین اثر را در pH کمتر از 5 دارد. اغلب همراه با سایر نگهدارنده‌ها یا گلیکول‌ها که اثر هم‌افزا دارند مصرف می‌شود."
+   "fa": "سوربیک اسید یک نگهدارنده ضدمیکروبی با اثر ضدباکتریایی و به‌ویژه ضدقارچی است که در داروهای خوراکی و موضعی، فرآورده‌های آرایشی و مواد غذایی در غلظت حدود 0.05–0.2% به کار می‌رود. اثر آن به اسید تفکیک‌نشده وابسته است؛ بنابراین تا حدود pH 6 مؤثر است و بهترین اثر را در pH کمتر از 5 دارد. اغلب همراه با سایر نگهدارنده‌ها یا گلیکول‌ها که اثر هم‌افزا دارند مصرف می‌شود."
   },
   "description": {
    "en": "A free-flowing, white crystalline powder with a faint characteristic odour.",
@@ -2630,7 +2630,7 @@
   "mw": "346.5",
   "applications": {
    "en": "A lipophilic nonionic surfactant used as an emulsifier, solubiliser and wetting agent in creams, emulsions and ointments for topical use, and in oral and other preparations. Of the sorbitan esters it is the most hydrophilic and is often combined with polysorbates to obtain the required HLB. Typical concentrations: emulsifier used alone in water-in-oil emulsions 1–15%; in combination with hydrophilic emulsifiers in oil-in-water emulsions 1–10%; to increase the water-holding capacity of ointments 1–10%; solubiliser for poorly soluble actives in lipophilic bases 1–10%; wetting agent for insoluble actives in lipophilic bases 0.1–3%.",
-   "fa": "یک سورفکتانت غیریونی چربی‌دوست که به عنوان امولسیون‌کننده، حل‌کننده و عامل مرطوب‌کننده در کرم‌ها، امولسیون‌ها و پمادهای موضعی و نیز در فرآورده‌های خوراکی و سایر فرآورده‌ها به کار می‌رود. در میان استرهای سوربیتان آب‌دوست‌ترین است و اغلب برای رسیدن به HLB مورد نیاز با پلی‌سوربات‌ها ترکیب می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های آب در روغن 1–15٪؛ همراه با امولسیون‌کننده‌های آب‌دوست در امولسیون‌های روغن در آب 1–10٪؛ افزایش ظرفیت نگهداری آب پمادها 1–10٪؛ حل‌کننده مواد مؤثر کم‌محلول در پایه‌های چربی‌دوست 1–10٪؛ عامل مرطوب‌کننده برای مواد مؤثر نامحلول در پایه‌های چربی‌دوست 0.1–3٪."
+   "fa": "یک سورفکتانت غیریونی چربی‌دوست که به عنوان امولسیون‌کننده، حل‌کننده و عامل مرطوب‌کننده در کرم‌ها، امولسیون‌ها و پمادهای موضعی و نیز در فرآورده‌های خوراکی و سایر فرآورده‌ها به کار می‌رود. در میان استرهای سوربیتان آب‌دوست‌ترین است و اغلب برای رسیدن به HLB مورد نیاز با پلی‌سوربات‌ها ترکیب می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های آب در روغن 1–15%؛ همراه با امولسیون‌کننده‌های آب‌دوست در امولسیون‌های روغن در آب 1–10%؛ افزایش ظرفیت نگهداری آب پمادها 1–10%؛ حل‌کننده مواد مؤثر کم‌محلول در پایه‌های چربی‌دوست 1–10%؛ عامل مرطوب‌کننده برای مواد مؤثر نامحلول در پایه‌های چربی‌دوست 0.1–3%."
   },
   "description": {
    "en": "A yellow to amber, viscous oily liquid with a faint characteristic odour and a bland taste. It is a mixture of esters of lauric acid with sorbitol anhydrides, the main component being sorbitan monolaurate.",
@@ -2738,7 +2738,7 @@
   "mw": "428.6",
   "applications": {
    "en": "A lipophilic nonionic surfactant widely used as a water-in-oil emulsifier and as a co-emulsifier with polysorbates (particularly polysorbate 80) in oil-in-water creams, lotions and ointments, and as a dispersing and wetting agent in oral and other preparations. It is also used to prepare microemulsions, niosomes and other lipid-based delivery systems. Typical concentrations: emulsifier used alone in water-in-oil emulsions 1–15%; in combination with hydrophilic emulsifiers in oil-in-water emulsions 1–10%; to increase the water-holding capacity of ointments 1–10%; solubiliser for poorly soluble actives in lipophilic bases 1–10%; wetting agent for insoluble actives in lipophilic bases 0.1–3%.",
-   "fa": "یک سورفکتانت غیریونی چربی‌دوست که به‌طور گسترده به عنوان امولسیون‌کننده آب در روغن و به عنوان امولسیون‌کننده کمکی همراه با پلی‌سوربات‌ها (به‌ویژه پلی‌سوربات 80) در کرم‌ها، لوسیون‌ها و پمادهای روغن در آب، و به عنوان عامل پراکنده‌ساز و مرطوب‌کننده در فرآورده‌های خوراکی و سایر فرآورده‌ها به کار می‌رود. در تهیه میکروامولسیون‌ها، نیوزوم‌ها و سایر سیستم‌های دارورسانی بر پایه لیپید نیز مصرف می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های آب در روغن 1–15٪؛ همراه با امولسیون‌کننده‌های آب‌دوست در امولسیون‌های روغن در آب 1–10٪؛ افزایش ظرفیت نگهداری آب پمادها 1–10٪؛ حل‌کننده مواد مؤثر کم‌محلول در پایه‌های چربی‌دوست 1–10٪؛ عامل مرطوب‌کننده برای مواد مؤثر نامحلول در پایه‌های چربی‌دوست 0.1–3٪."
+   "fa": "یک سورفکتانت غیریونی چربی‌دوست که به‌طور گسترده به عنوان امولسیون‌کننده آب در روغن و به عنوان امولسیون‌کننده کمکی همراه با پلی‌سوربات‌ها (به‌ویژه پلی‌سوربات 80) در کرم‌ها، لوسیون‌ها و پمادهای روغن در آب، و به عنوان عامل پراکنده‌ساز و مرطوب‌کننده در فرآورده‌های خوراکی و سایر فرآورده‌ها به کار می‌رود. در تهیه میکروامولسیون‌ها، نیوزوم‌ها و سایر سیستم‌های دارورسانی بر پایه لیپید نیز مصرف می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های آب در روغن 1–15%؛ همراه با امولسیون‌کننده‌های آب‌دوست در امولسیون‌های روغن در آب 1–10%؛ افزایش ظرفیت نگهداری آب پمادها 1–10%؛ حل‌کننده مواد مؤثر کم‌محلول در پایه‌های چربی‌دوست 1–10%؛ عامل مرطوب‌کننده برای مواد مؤثر نامحلول در پایه‌های چربی‌دوست 0.1–3%."
   },
   "description": {
    "en": "A yellow to amber, viscous oily liquid with a characteristic odour and a bland taste. It is a mixture of esters of oleic acid (with smaller amounts of other fatty acids) with sorbitol anhydrides.",
@@ -2846,7 +2846,7 @@
   "mw": "430.6",
   "applications": {
    "en": "A lipophilic nonionic surfactant used as an emulsifier and stabiliser in water-in-oil creams and ointments, as a co-emulsifier with polysorbates (for example polysorbate 60) in oil-in-water creams, and as a consistency-improving agent. It is also used in foods, for example in yeast, cake mixes and confectionery coatings, and in the preparation of niosomes and organogels. Typical concentrations: emulsifier used alone in water-in-oil emulsions 1–15%; in combination with hydrophilic emulsifiers in oil-in-water emulsions 1–10%; to increase the water-holding capacity of ointments 1–10%; solubiliser for poorly soluble actives in lipophilic bases 1–10%; wetting agent for insoluble actives in lipophilic bases 0.1–3%.",
-   "fa": "یک سورفکتانت غیریونی چربی‌دوست که به عنوان امولسیون‌کننده و پایدارکننده در کرم‌ها و پمادهای آب در روغن، به عنوان امولسیون‌کننده کمکی همراه با پلی‌سوربات‌ها (مانند پلی‌سوربات 60) در کرم‌های روغن در آب، و به عنوان بهبوددهنده قوام به کار می‌رود. در مواد غذایی، مانند مخمر، مخلوط‌های کیک و پوشش‌های شیرینی، و در تهیه نیوزوم‌ها و ارگانوژل‌ها نیز مصرف می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های آب در روغن 1–15٪؛ همراه با امولسیون‌کننده‌های آب‌دوست در امولسیون‌های روغن در آب 1–10٪؛ افزایش ظرفیت نگهداری آب پمادها 1–10٪؛ حل‌کننده مواد مؤثر کم‌محلول در پایه‌های چربی‌دوست 1–10٪؛ عامل مرطوب‌کننده برای مواد مؤثر نامحلول در پایه‌های چربی‌دوست 0.1–3٪."
+   "fa": "یک سورفکتانت غیریونی چربی‌دوست که به عنوان امولسیون‌کننده و پایدارکننده در کرم‌ها و پمادهای آب در روغن، به عنوان امولسیون‌کننده کمکی همراه با پلی‌سوربات‌ها (مانند پلی‌سوربات 60) در کرم‌های روغن در آب، و به عنوان بهبوددهنده قوام به کار می‌رود. در مواد غذایی، مانند مخمر، مخلوط‌های کیک و پوشش‌های شیرینی، و در تهیه نیوزوم‌ها و ارگانوژل‌ها نیز مصرف می‌شود. غلظت‌های متداول: امولسیون‌کننده به‌تنهایی در امولسیون‌های آب در روغن 1–15%؛ همراه با امولسیون‌کننده‌های آب‌دوست در امولسیون‌های روغن در آب 1–10%؛ افزایش ظرفیت نگهداری آب پمادها 1–10%؛ حل‌کننده مواد مؤثر کم‌محلول در پایه‌های چربی‌دوست 1–10%؛ عامل مرطوب‌کننده برای مواد مؤثر نامحلول در پایه‌های چربی‌دوست 0.1–3%."
   },
   "description": {
    "en": "A cream to light tan, waxy solid supplied as beads, flakes or powder, with a faint characteristic odour and a bland taste. It is a mixture of esters of stearic and palmitic acids with sorbitol anhydrides.",
@@ -2948,11 +2948,11 @@
   "mw": "182.17",
   "applications": {
    "en": "Sorbitol is used as a diluent in tablets made by wet granulation or direct compression (especially chewable and lozenge-type tablets), as a sweetening agent, humectant and plasticiser, and as a vehicle in sugar-free liquids. Typical concentrations: tablet binder and filler 25–90%; humectant 3–15%; moisture-control agent in tablets 3–15%; oral solutions 20–35%; oral suspensions up to 70% (as sorbitol solution); plasticiser for gelatin and cellulose films 5–20%; to prevent crystallisation around bottle caps 15–30%; toothpastes 20–60%; topical emulsions 2–18%; intramuscular injections 10–25%.",
-   "fa": "سوربیتول به عنوان رقیق‌کننده در قرص‌های تهیه‌شده با گرانولاسیون مرطوب یا پرس مستقیم (به‌ویژه قرص‌های جویدنی و لوزانژ)، شیرین‌کننده، مرطوب‌نگه‌دارنده (humectant) و نرم‌کننده (plasticiser)، و به عنوان حامل در مایعات بدون قند به کار می‌رود. غلظت‌های متداول: چسباننده و پرکننده قرص 25–90٪؛ مرطوب‌نگه‌دارنده 3–15٪؛ کنترل رطوبت در قرص 3–15٪؛ محلول خوراکی 20–35٪؛ سوسپانسیون خوراکی تا 70٪ (به صورت محلول سوربیتول)؛ نرم‌کننده فیلم‌های ژلاتین و سلولزی 5–20٪؛ جلوگیری از کریستالیزه شدن در اطراف درپوش بطری 15–30٪؛ خمیردندان 20–60٪؛ امولسیون‌های موضعی 2–18٪؛ تزریق عضلانی 10–25٪."
+   "fa": "سوربیتول به عنوان رقیق‌کننده در قرص‌های تهیه‌شده با گرانولاسیون مرطوب یا پرس مستقیم (به‌ویژه قرص‌های جویدنی و لوزانژ)، شیرین‌کننده، مرطوب‌نگه‌دارنده (humectant) و نرم‌کننده (plasticiser)، و به عنوان حامل در مایعات بدون قند به کار می‌رود. غلظت‌های متداول: چسباننده و پرکننده قرص 25–90%؛ مرطوب‌نگه‌دارنده 3–15%؛ کنترل رطوبت در قرص 3–15%؛ محلول خوراکی 20–35%؛ سوسپانسیون خوراکی تا 70% (به صورت محلول سوربیتول)؛ نرم‌کننده فیلم‌های ژلاتین و سلولزی 5–20%؛ جلوگیری از کریستالیزه شدن در اطراف درپوش بطری 15–30%؛ خمیردندان 20–60%؛ امولسیون‌های موضعی 2–18%؛ تزریق عضلانی 10–25%."
   },
   "description": {
    "en": "An odourless, white or almost colourless, crystalline, hygroscopic powder, granules or flakes with a pleasant, cooling, sweet taste; its sweetness is about 50–60% of that of sucrose. Several crystalline polymorphs and an amorphous form exist; the stable γ-form is used in most direct-compression grades.",
-   "fa": "پودر، گرانول یا پولک کریستالی، سفید یا تقریباً بی‌رنگ، بی‌بو و رطوبت‌گیر با طعم شیرین، خنک و مطبوع؛ شیرینی آن حدود 50–60٪ ساکارز است. چند پلی‌مورف کریستالی و یک فرم آمورف وجود دارد؛ فرم پایدار γ در بیشتر گریدهای پرس مستقیم به کار می‌رود."
+   "fa": "پودر، گرانول یا پولک کریستالی، سفید یا تقریباً بی‌رنگ، بی‌بو و رطوبت‌گیر با طعم شیرین، خنک و مطبوع؛ شیرینی آن حدود 50–60% ساکارز است. چند پلی‌مورف کریستالی و یک فرم آمورف وجود دارد؛ فرم پایدار γ در بیشتر گریدهای پرس مستقیم به کار می‌رود."
   },
   "properties": [
    {
@@ -2982,7 +2982,7 @@
     },
     "v": {
      "en": "about 50–60% of sucrose",
-     "fa": "حدود 50–60٪ ساکارز"
+     "fa": "حدود 50–60% ساکارز"
     }
    },
    {
@@ -3028,15 +3028,15 @@
   },
   "regulatory": {
    "en": "GRAS listed. Accepted as a food additive in Europe (E420); foods containing more than 10% added polyols must carry a warning about laxative effects. Included in the FDA Inactive Ingredient Database (dental, inhalation, IM, IV and other injections, oral capsules, solutions, suspensions, syrups and tablets, rectal, topical and vaginal preparations) and in parenteral and non-parenteral medicines licensed in Europe.",
-   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E420)؛ غذاهایی که بیش از 10٪ پلی‌ال افزوده دارند باید هشدار اثر ملین را داشته باشند. در FDA Inactive Ingredient Database (فرآورده‌های دندانی، استنشاقی، تزریق IM، IV و سایر تزریق‌ها، کپسول، محلول، سوسپانسیون، شربت و قرص خوراکی، فرآورده‌های رکتال، موضعی و واژینال) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
+   "fa": "در فهرست GRAS قرار دارد. در اروپا به عنوان افزودنی غذایی پذیرفته شده است (E420)؛ غذاهایی که بیش از 10% پلی‌ال افزوده دارند باید هشدار اثر ملین را داشته باشند. در FDA Inactive Ingredient Database (فرآورده‌های دندانی، استنشاقی، تزریق IM، IV و سایر تزریق‌ها، کپسول، محلول، سوسپانسیون، شربت و قرص خوراکی، فرآورده‌های رکتال، موضعی و واژینال) و در داروهای تزریقی و غیرتزریقی مجاز در اروپا وجود دارد."
   },
   "related": {
    "en": "Sorbitol solution 70%; sorbitol sorbitan solution; mannitol; maltitol; xylitol.",
-   "fa": "محلول سوربیتول 70٪؛ محلول سوربیتول سوربیتان؛ مانیتول؛ مالتیتول؛ زایلیتول."
+   "fa": "محلول سوربیتول 70%؛ محلول سوربیتول سوربیتان؛ مانیتول؛ مالتیتول؛ زایلیتول."
   },
   "comments": {
    "en": "Direct-compression sorbitol grades give hard tablets with a pleasant mouthfeel, but the material is hygroscopic, so manufacture should take place below about 50% RH and the product be packaged with moisture protection. The total daily sorbitol dose delivered by a product should be considered, particularly for paediatric liquids, because of its laxative effect.",
-   "fa": "گریدهای پرس مستقیم سوربیتول قرص‌های سخت با حس دهانی مطبوع می‌دهند، ولی این ماده رطوبت‌گیر است؛ بنابراین ساخت باید در رطوبت نسبی کمتر از حدود 50٪ انجام شود و فرآورده با محافظت در برابر رطوبت بسته‌بندی گردد. به دلیل اثر ملین، مقدار کل سوربیتول روزانه‌ای که از یک فرآورده دریافت می‌شود، به‌ویژه در مایعات کودکان، باید در نظر گرفته شود."
+   "fa": "گریدهای پرس مستقیم سوربیتول قرص‌های سخت با حس دهانی مطبوع می‌دهند، ولی این ماده رطوبت‌گیر است؛ بنابراین ساخت باید در رطوبت نسبی کمتر از حدود 50% انجام شود و فرآورده با محافظت در برابر رطوبت بسته‌بندی گردد. به دلیل اثر ملین، مقدار کل سوربیتول روزانه‌ای که از یک فرآورده دریافت می‌شود، به‌ویژه در مایعات کودکان، باید در نظر گرفته شود."
   },
   "refs": [
    "usp",
@@ -3072,7 +3072,7 @@
   "mw": "",
   "applications": {
    "en": "Refined soybean oil is the main oil phase of parenteral fat emulsions used in nutrition (typically 10–30% w/v) and of some injectable emulsions of lipophilic drugs such as propofol. It is also used as a solvent and vehicle in oral emulsions, soft gelatin capsules and other lipid-based formulations, in topical creams and bath oils, and as an edible oil in foods.",
-   "fa": "روغن سویای تصفیه‌شده فاز روغنی اصلی امولسیون‌های چربی تزریقی برای تغذیه (معمولاً 10–30٪ وزنی/حجمی) و برخی امولسیون‌های تزریقی داروهای چربی‌دوست مانند پروپوفول است. همچنین به عنوان حلال و حامل در امولسیون‌های خوراکی، کپسول‌های ژلاتینی نرم و سایر فرمولاسیون‌های بر پایه لیپید، در کرم‌های موضعی و روغن‌های حمام، و به عنوان روغن خوراکی در مواد غذایی مصرف می‌شود."
+   "fa": "روغن سویای تصفیه‌شده فاز روغنی اصلی امولسیون‌های چربی تزریقی برای تغذیه (معمولاً 10–30% وزنی/حجمی) و برخی امولسیون‌های تزریقی داروهای چربی‌دوست مانند پروپوفول است. همچنین به عنوان حلال و حامل در امولسیون‌های خوراکی، کپسول‌های ژلاتینی نرم و سایر فرمولاسیون‌های بر پایه لیپید، در کرم‌های موضعی و روغن‌های حمام، و به عنوان روغن خوراکی در مواد غذایی مصرف می‌شود."
   },
   "description": {
    "en": "A clear, pale-yellow, oily liquid, odourless or with a slight characteristic odour and a bland taste. The fatty-acid fraction is made up mainly of linoleic acid (roughly half), oleic acid, palmitic acid and α-linolenic acid, with smaller amounts of stearic acid. It solidifies at well below 0 °C.",
@@ -3116,7 +3116,7 @@
     },
     "v": {
      "en": "linoleic about 48–58%; oleic about 17–30%; palmitic about 9–13%; α-linolenic about 5–11%; stearic about 3–5%",
-     "fa": "لینولئیک حدود 48–58٪؛ اولئیک حدود 17–30٪؛ پالمیتیک حدود 9–13٪؛ آلفالینولنیک حدود 5–11٪؛ استئاریک حدود 3–5٪"
+     "fa": "لینولئیک حدود 48–58%؛ اولئیک حدود 17–30%؛ پالمیتیک حدود 9–13%؛ آلفالینولنیک حدود 5–11%؛ استئاریک حدود 3–5%"
     }
    },
    {

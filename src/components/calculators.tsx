@@ -528,7 +528,7 @@ function Asy({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "Quantity = label claim × (MW salt ÷ MW base) × (100 ÷ assay) × [100 ÷ (100 − LOD)]. Use the water/LOD factor only when the certificate reports the assay on the dried or anhydrous basis; when the assay is “as is” the factor is 1. Take assay and LOD (or KF water) from the certificate of analysis of the lot in use, and lower the q.s. diluent by the excess so the unit weight stays constant. Example: amlodipine 10 mg as besilate (567.05 / 408.88), assay 99.5% dried basis, LOD 0.5% → F = 1.4008, 14.008 mg per tablet.",
-        "مقدار توزین ⁦= LC × (MW salt ÷ MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]⁩. ضریب رطوبت فقط وقتی به کار می‌رود که Assay در برگه آنالیز بر پایه ماده خشک یا بدون آب گزارش شده باشد؛ اگر Assay «همان‌گونه که هست» (as is) گزارش شده باشد، این ضریب ۱ است. Assay و LOD (یا آب کارل فیشر) را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه اضافه وزن کم کنید تا وزن واحد ثابت بماند. مثال: آملودیپین ۱۰ میلی‌گرم به صورت بزیلات ⁦(567.05 / 408.88)⁩، Assay 99.5% بر پایه خشک، LOD 0.5% ← ⁦F = 1.4008⁩ و 14.008 میلی‌گرم در هر قرص.",
+        "مقدار توزین ⁦= LC × (MW salt ÷ MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]⁩. ضریب رطوبت فقط وقتی به کار می‌رود که Assay در برگه آنالیز بر پایه ماده خشک یا بدون آب گزارش شده باشد؛ اگر Assay «همان‌گونه که هست» (as is) گزارش شده باشد، این ضریب 1 است. Assay و LOD (یا آب کارل فیشر) را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه اضافه وزن کم کنید تا وزن واحد ثابت بماند. مثال: آملودیپین 10 میلی‌گرم به صورت بزیلات ⁦(567.05 / 408.88)⁩، Assay 99.5% بر پایه خشک، LOD 0.5% ← ⁦F = 1.4008⁩ و 14.008 میلی‌گرم در هر قرص.",
       )}
     />
   );

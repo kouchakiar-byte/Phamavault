@@ -6,7 +6,7 @@ import type { Locale } from "@/i18n/config";
 
 const { pricing: p, estimator: t, currency, perMonth } = copy.plans;
 
-const digits = (n: number, locale: Locale) => Math.round(n).toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
+const digits = (n: number, locale: Locale) => Math.round(n).toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
 const money = (n: number, locale: Locale) => `${digits(n, locale)} ${currency[locale]}`;
 
 /** Full price struck through with the discount, shown above a discounted total. */

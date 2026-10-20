@@ -20,7 +20,7 @@ const t = a.visits;
 export const generateMetadata = () => accountMetadata(t.title);
 
 const dayLabel = (day: string, locale: Locale, long = false) =>
-  new Intl.DateTimeFormat(locale === "fa" ? "fa-IR-u-ca-persian" : "en-GB", {
+  new Intl.DateTimeFormat(locale === "fa" ? "fa-IR-u-ca-persian-nu-latn" : "en-GB", {
     day: "numeric",
     month: long ? "long" : "short",
     ...(long ? { weekday: "long" } : {}),
@@ -244,7 +244,7 @@ async function Visits({ locale }: { locale: Locale }) {
                           </span>
                           <span className="text-muted">
                             {n(d.visitors)} · {n(share)}
-                            {locale === "fa" ? "٪" : "%"}
+                            {locale === "fa" ? "%" : "%"}
                           </span>
                         </div>
                         <div className="mt-1 h-2 rounded-full bg-vault-50">

@@ -119,7 +119,7 @@ export default async function QaPage() {
 
         <SubTitle id="library" text={page.library} locale={locale} lead={page.libraryLead} />
         <p className="mb-6 rounded-card border-2 border-dashed border-molecule-400 bg-molecule-50 px-5 py-3.5 text-sm text-molecule-700">
-          {page.ready[locale].replace("{n}", withText.toLocaleString(locale === "fa" ? "fa-IR" : "en-US"))}
+          {page.ready[locale].replace("{n}", withText.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US"))}
         </p>
         <SopTable locale={locale} rows={rows} departments={sops.departments} />
         <p className="mt-4 text-sm text-muted">{page.codesNote[locale]}</p>

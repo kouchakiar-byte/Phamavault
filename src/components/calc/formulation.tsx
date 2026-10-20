@@ -116,7 +116,7 @@ export function Caps({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "Nominal body volumes from capsule manufacturers' data; confirm with your supplier. A fill above about 90% of the body volume leaves little margin for density variation.",
-        "حجم‌های اسمی بدنه از داده‌های سازندگان کپسول است و باید با تأمین‌کننده تأیید شود. پر شدن بیش از حدود 90٪ حجم بدنه، حاشیه کمی برای تغییرات دانسیته باقی می‌گذارد.",
+        "حجم‌های اسمی بدنه از داده‌های سازندگان کپسول است و باید با تأمین‌کننده تأیید شود. پر شدن بیش از حدود 90% حجم بدنه، حاشیه کمی برای تغییرات دانسیته باقی می‌گذارد.",
       )}
     >
       <div className="overflow-x-auto rounded-xl border border-line">
@@ -228,7 +228,7 @@ export function Coat({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "Solids applied = core weight × weight gain; solids to spray = applied ÷ efficiency; suspension = solids to spray ÷ solids fraction. Prepare a working excess (often 10–20%) for line priming and losses.",
-        "جامد روی قرص = وزن هسته × افزایش وزن؛ جامد اسپری = جامد روی قرص ÷ راندمان؛ سوسپانسیون = جامد اسپری ÷ کسر جامد. برای پر کردن خطوط و اتلاف، مقداری اضافه (معمولاً 10 تا 20٪) آماده کنید.",
+        "جامد روی قرص = وزن هسته × افزایش وزن؛ جامد اسپری = جامد روی قرص ÷ راندمان؛ سوسپانسیون = جامد اسپری ÷ کسر جامد. برای پر کردن خطوط و اتلاف، مقداری اضافه (معمولاً 10 تا 20%) آماده کنید.",
       )}
     />
   );

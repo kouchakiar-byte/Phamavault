@@ -25,7 +25,7 @@ export function SupplierSpotlight({ locale }: { locale: Locale }) {
   const section = getSection("suppliers");
   const t = copy.supplierSpotlight;
   const p = pages.suppliers;
-  const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR" : "en-US");
+  const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
   const bankHref = href(locale, "suppliers");
 
   return (
