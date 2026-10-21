@@ -330,3 +330,36 @@ body {
     display: block !important;
   }
 }
+
+/* DNA helix beside the hero counters: each rung swings out of phase with the next. */
+.pv-dna-rung {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pv-helix 3.4s ease-in-out infinite;
+}
+.pv-dna-bar {
+  stroke: rgb(255 255 255 / 0.22);
+  stroke-width: 1.6;
+}
+.pv-dna-a {
+  fill: var(--color-molecule-400);
+}
+.pv-dna-b {
+  fill: var(--color-capsule-400);
+}
+@keyframes pv-helix {
+  0%,
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleX(-1);
+    opacity: 0.55;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pv-dna-rung {
+    animation: none;
+  }
+}

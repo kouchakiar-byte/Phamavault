@@ -27,10 +27,11 @@ import { calculation, calculations, featuredCalculations } from "@/content/calcu
 import { referenceSections } from "@/content/references";
 import { searchCopy } from "@/content/search";
 import { sections } from "@/content/sections";
+import { DnaHelix } from "@/components/dna-helix";
+import { HeroStats } from "@/components/hero-stats";
 
 // The platform's sections, CTD compilation included; enterprise solutions are a plan, not a section.
 const platformSections = sections.filter((s) => s.slug !== "enterprise");
-import { formatNumber } from "@/lib/format";
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
 import suppliers from "@/data/suppliers.json";
@@ -191,7 +192,9 @@ export default async function HomePage() {
                 ))}
               </span>
             </h1>
-            <p className="mt-6 max-w-2xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
+            {/* A DNA strand under the name, over the hero's benzene-ring pattern */}
+            <DnaHelix orientation="horizontal" rungs={26} className="mt-5 h-12 w-full max-w-lg sm:h-14" />
+            <p className="mt-5 max-w-2xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
             <p className="mt-3 max-w-xl text-base font-medium leading-relaxed text-molecule-400">{hero.audience[locale]}</p>
             {/* The site-wide search: a plain GET form to /search */}
             <form action={href(locale, "search")} role="search" className="mt-8 flex max-w-2xl gap-2 rounded-full border border-white/15 bg-white/[0.06] p-1.5 backdrop-blur transition focus-within:border-molecule-400">
@@ -253,21 +256,15 @@ export default async function HomePage() {
           </div>
           <div className="fade-in lg:col-start-1 lg:row-start-3">
             {/* The vault at a glance: live counts, then a few one-click searches */}
-            <dl className="grid lg:mt-9 max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
-              {(
-                [
-                  [counts.suppliers, hero.stats.suppliers],
-                  [counts.supplierMaterials, hero.stats.products],
-                  [counts.materials, hero.stats.materials],
-                  [platformSections.length, hero.stats.sections],
-                ] as const
-              ).map(([value, label]) => (
-                <div key={label.en} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3">
-                  <dt className="mt-1 text-xs leading-snug text-vault-100/70">{label[locale]}</dt>
-                  <dd className="num text-2xl font-bold text-capsule-400">{formatNumber(value, locale)}</dd>
-                </div>
-              ))}
-            </dl>
+            <HeroStats
+              locale={locale}
+              stats={[
+                { value: counts.suppliers, label: hero.stats.suppliers },
+                { value: counts.supplierMaterials, label: hero.stats.products },
+                { value: counts.materials, label: hero.stats.materials },
+                { value: platformSections.length, label: hero.stats.sections },
+              ]}
+            />
             <div className="mt-5 flex max-w-2xl flex-wrap items-center gap-2 text-sm">
               <span className="text-vault-100/60">{hero.popular[locale]}</span>
               {hero.popularQueries.map((q) => (
