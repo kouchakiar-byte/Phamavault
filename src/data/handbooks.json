@@ -6,7 +6,7 @@
   },
   "intro": {
    "en": "Tablets and capsules dominate oral therapy because they are stable, dose-accurate and well accepted by patients. Their quality is governed by the properties of the powders (particle size, flow, compressibility, moisture), by the unit operations that transform them (blending, granulation, compression, coating, encapsulation) and by the tests that confirm uniformity, mechanical strength, disintegration and dissolution. A QbD approach per ICH Q8(R2) links material attributes and process parameters to these CQAs.",
-   "fa": "قرص‌ها و کپسول‌ها به دلیل پایداری، دقت دوز و پذیرش خوب بیمار، بخش اصلی درمان خوراکی را تشکیل می‌دهند. کیفیت آن‌ها به ویژگی‌های پودر (اندازهٔ ذره، جریان‌پذیری، تراکم‌پذیری، رطوبت)، به عملیات واحدی که پودر را تبدیل می‌کنند (اختلاط، گرانوله‌سازی، پرس، روکش‌دهی، پرکردن کپسول) و به آزمون‌هایی که یکنواختی، استحکام مکانیکی، متلاشی‌شدن (disintegration) و انحلال را تأیید می‌کنند وابسته است. رویکرد QbD مطابق ⁦ICH Q8(R2)⁩ ویژگی‌های مواد و پارامترهای فرایند را به این CQAها مرتبط می‌کند."
+   "fa": "قرص‌ها و کپسول‌ها به دلیل پایداری، دقت دوز و پذیرش خوب بیمار، بخش اصلی درمان خوراکی را تشکیل می‌دهند. کیفیت آن‌ها به ویژگی‌های پودر (اندازهٔ ذره، جریان‌پذیری، تراکم‌پذیری، رطوبت)، به عملیات واحدی که پودر را تبدیل می‌کنند (اختلاط، گرانوله‌سازی، پرس، روکش‌دهی، پرکردن کپسول) و به آزمون‌هایی که یکنواختی، استحکام مکانیکی، باززایی (disintegration) و انحلال را تأیید می‌کنند وابسته است. رویکرد QbD مطابق ⁦ICH Q8(R2)⁩ ویژگی‌های مواد و پارامترهای فرایند را به این CQAها مرتبط می‌کند."
   },
   "topics": [
    {
@@ -58,7 +58,7 @@
     },
     "summary": {
      "en": "Granulation enlarges and densifies particles to improve flow and compressibility, lock the API into granules so it cannot segregate, and reduce dust. In wet granulation the liquid passes through pendular, funicular and capillary saturation states; on drying, dissolved binder forms solid bridges, which makes the route robust for high-dose, poorly compressible APIs but exposes them to water and heat. Dry granulation (roller compaction or slugging) densifies by pressure alone and suits moisture- or heat-sensitive APIs, but the first compaction consumes part of the material's bonding capacity (loss of re-compactibility, 'work hardening'). Direct compression is the simplest and cheapest route but depends entirely on excipients with good flow and compactibility and on well-controlled API particle properties.",
-     "fa": "گرانوله‌سازی ذرات را بزرگ‌تر و متراکم‌تر می‌کند تا جریان و تراکم‌پذیری بهتر شود، API درون گرانول قفل شود و جدا نشود و گرد و غبار کاهش یابد. در گرانوله‌سازی مرطوب، مایع حالت‌های اشباع pendular، funicular و capillary را طی می‌کند و هنگام خشک‌شدن، چسبانندهٔ حل‌شده پل‌های جامد می‌سازد؛ این روش برای APIهای پردوز با تراکم‌پذیری ضعیف قابل‌اطمینان است اما دارو را در معرض آب و حرارت قرار می‌دهد. گرانوله‌سازی خشک (⁦roller compaction⁩ یا slugging) فقط با فشار متراکم می‌کند و برای APIهای حساس به رطوبت یا حرارت مناسب است، اما فشردگی اول بخشی از ظرفیت پیوندپذیری ماده را مصرف می‌کند (کاهش تراکم‌پذیری مجدد یا ⁦work hardening⁩). پرس مستقیم ساده‌ترین و ارزان‌ترین روش است اما کاملاً به اکسیپیان‌هایی با جریان و تراکم‌پذیری خوب و به کنترل دقیق ویژگی‌های ذره‌ای API وابسته است."
+     "fa": "گرانوله‌سازی ذرات را بزرگ‌تر و متراکم‌تر می‌کند تا جریان و تراکم‌پذیری بهتر شود، API درون گرانول تثبیت شود و جدا نشود و گرد و غبار کاهش یابد. در گرانوله‌سازی مرطوب، مایع حالت‌های اشباع pendular، funicular و capillary را طی می‌کند و هنگام خشک‌شدن، چسبانندهٔ حل‌شده پل‌های جامد می‌سازد؛ این روش برای APIهای پردوز با تراکم‌پذیری ضعیف قابل‌اطمینان است اما دارو را در معرض آب و حرارت قرار می‌دهد. گرانوله‌سازی خشک (⁦roller compaction⁩ یا slugging) فقط با فشار متراکم می‌کند و برای APIهای حساس به رطوبت یا حرارت مناسب است، اما فشردگی اول بخشی از ظرفیت پیوندپذیری ماده را مصرف می‌کند (کاهش تراکم‌پذیری مجدد یا ⁦work hardening⁩). پرس مستقیم ساده‌ترین و ارزان‌ترین روش است اما کاملاً به اکسیپیان‌هایی با جریان و تراکم‌پذیری خوب و به کنترل دقیق ویژگی‌های ذره‌ای API وابسته است."
     },
     "points": [
      {
@@ -67,7 +67,7 @@
      },
      {
       "en": "Wet-granulation binders (typical levels): povidone K30 about 2–5 % w/w, low-viscosity HPMC about 2–5 %, pregelatinised starch about 5–10 %. Endpoint in high-shear granulators is tracked by impeller power/torque and liquid quantity; over-wetting gives hard, dense granules and slow dissolution, under-wetting gives friable granules and fines.",
-      "fa": "چسباننده‌های گرانوله‌سازی مرطوب (مقادیر رایج): پوویدون ⁦K30⁩ حدود ⁦2–5 % w/w⁩، HPMC با ویسکوزیتهٔ پایین حدود ⁦2–5 %⁩ و نشاستهٔ پیش‌ژلاتینه حدود ⁦5–10 %⁩. نقطهٔ پایان در گرانولاتور ⁦high-shear⁩ با توان/گشتاور پروانه و مقدار مایع پایش می‌شود؛ خیس‌شدن بیش از حد گرانول سخت و متراکم و انحلال کند می‌دهد و خیس‌شدن ناکافی گرانول شکننده و ذرات ریز."
+      "fa": "چسباننده‌های گرانوله‌سازی مرطوب (مقادیر رایج): پوویدون ⁦K30⁩ حدود ⁦2–5 % w/w⁩، HPMC با ویسکوزیتهٔ پایین حدود ⁦2–5 %⁩ و نشاستهٔ پیش‌ژلاتینه حدود ⁦5–10 %⁩. نقطهٔ پایان در گرانولاتور ⁦high-shear⁩ با توان/گشتاور پروانه و مقدار مایع پایش می‌شود؛ مرطوب‌شدن بیش از حد گرانول سخت و متراکم و انحلال کند می‌دهد و مرطوب‌شدن ناکافی گرانول شکننده و ذرات ریز."
      },
      {
       "en": "Drying: set the loss-on-drying (USP <731>) endpoint from sorption and stability data; it is product-specific and commonly falls around 1–3 %. Over-dried granules tend to cap; residual moisture that is too high causes sticking and chemical instability.",
@@ -125,7 +125,7 @@
      },
      {
       "en": "Disintegration per USP <701>/Ph. Eur. 2.9.1: Ph. Eur. requires uncoated tablets to disintegrate within 15 min and film-coated tablets within 30 min (USP limits are set in individual monographs). Slow disintegration → excessive compression force, binder or lubricant; check superdisintegrant level (e.g. croscarmellose sodium about 0.5–5 %).",
-      "fa": "متلاشی‌شدن طبق ⁦USP <701>⁩/⁦Ph. Eur. 2.9.1⁩: فارماکوپهٔ اروپا برای قرص‌های بدون روکش حداکثر ⁦15 min⁩ و برای قرص‌های با روکش فیلمی حداکثر ⁦30 min⁩ را الزامی می‌داند (حدود USP در مونوگراف هر فرآورده تعیین می‌شود). متلاشی‌شدن کند ← نیروی پرس، چسباننده یا روان‌کنندهٔ بیش از حد؛ مقدار superdisintegrant را بررسی کنید (مثلاً کراس‌کارملوز سدیم حدود ⁦0.5–5 %⁩)."
+      "fa": "باززایی طبق ⁦USP <701>⁩/⁦Ph. Eur. 2.9.1⁩: فارماکوپهٔ اروپا برای قرص‌های بدون روکش حداکثر ⁦15 min⁩ و برای قرص‌های با روکش فیلمی حداکثر ⁦30 min⁩ را الزامی می‌داند (حدود USP در مونوگراف هر فرآورده تعیین می‌شود). باززایی کند ← نیروی پرس، چسباننده یا روان‌کنندهٔ بیش از حد؛ مقدار superdisintegrant را بررسی کنید (مثلاً کراس‌کارملوز سدیم حدود ⁦0.5–5 %⁩)."
      }
     ],
     "refs": [
@@ -142,7 +142,7 @@
     },
     "summary": {
      "en": "Film coating deposits a thin polymer layer, usually HPMC-, PVA- or methacrylate-based, to mask taste, improve appearance and swallowability, protect against moisture or light, or control release. Coating quality is a balance between spray rate and drying capacity: atomised droplets must reach the tablet, spread and coalesce before they dry (otherwise spray-drying and rough films result), but the surface must not be over-wetted (twinning, picking, core erosion). Plasticisers lower the glass transition and minimum film-forming temperature so that the film coalesces without cracking, and opacifiers such as titanium dioxide or iron oxides provide opacity and light protection (titanium dioxide is under regulatory review in the EU after its food-additive ban, so alternatives are increasingly evaluated). Enteric films use polymers with acidic groups that stay insoluble in gastric acid and dissolve above about pH 5.5–7 depending on the polymer.",
-     "fa": "روکش فیلمی لایهٔ نازکی از پلیمر، معمولاً بر پایهٔ HPMC، PVA یا متاکریلات، روی قرص می‌نشاند تا طعم را بپوشاند، ظاهر و قابلیت بلع را بهتر کند، از فرآورده در برابر رطوبت یا نور محافظت کند یا رهایش را کنترل کند. کیفیت روکش حاصل تعادل بین سرعت اسپری و ظرفیت خشک‌کردن است: قطرات اتمیزه باید پیش از خشک‌شدن به قرص برسند، پخش شوند و به هم بپیوندند (وگرنه ⁦spray-drying⁩ و فیلم زبر ایجاد می‌شود)، اما سطح نباید بیش از حد خیس شود (twinning، picking، فرسایش هسته). نرم‌کننده‌ها دمای انتقال شیشه‌ای و حداقل دمای تشکیل فیلم را پایین می‌آورند تا فیلم بدون ترک به هم بپیوندد و کدرکننده‌هایی مانند تیتانیوم دی‌اکسید یا اکسیدهای آهن کدری و محافظت در برابر نور ایجاد می‌کنند (تیتانیوم دی‌اکسید پس از ممنوعیت به‌عنوان افزودنی غذایی در اتحادیهٔ اروپا تحت بازنگری مقرراتی است و جایگزین‌ها بیش از پیش ارزیابی می‌شوند). روکش‌های روده‌ای از پلیمرهای دارای گروه اسیدی استفاده می‌کنند که در اسید معده نامحلول می‌مانند و بسته به نوع پلیمر بالاتر از ⁦pH 5.5–7⁩ حل می‌شوند."
+     "fa": "روکش فیلمی لایهٔ نازکی از پلیمر، معمولاً بر پایهٔ HPMC، PVA یا متاکریلات، روی قرص می‌نشاند تا طعم را بپوشاند، ظاهر و قابلیت بلع را بهتر کند، از فرآورده در برابر رطوبت یا نور محافظت کند یا رهایش را کنترل کند. کیفیت روکش حاصل تعادل بین سرعت اسپری و ظرفیت خشک‌کردن است: قطرات اتمیزه باید پیش از خشک‌شدن به قرص برسند، پخش شوند و به هم بپیوندند (وگرنه ⁦spray-drying⁩ و فیلم زبر ایجاد می‌شود)، اما سطح نباید بیش از حد مرطوب شود (twinning، picking، فرسایش هسته). نرم‌کننده‌ها دمای انتقال شیشه‌ای و حداقل دمای تشکیل فیلم را پایین می‌آورند تا فیلم بدون ترک به هم بپیوندد و کدرکننده‌هایی مانند تیتانیوم دی‌اکسید یا اکسیدهای آهن کدری و محافظت در برابر نور ایجاد می‌کنند (تیتانیوم دی‌اکسید پس از ممنوعیت به‌عنوان افزودنی غذایی در اتحادیهٔ اروپا تحت بازنگری مقرراتی است و جایگزین‌ها بیش از پیش ارزیابی می‌شوند). روکش‌های روده‌ای از پلیمرهای دارای گروه اسیدی استفاده می‌کنند که در اسید معده نامحلول می‌مانند و بسته به نوع پلیمر بالاتر از ⁦pH 5.5–7⁩ حل می‌شوند."
     },
     "points": [
      {
@@ -155,7 +155,7 @@
      },
      {
       "en": "Over-wet defects: twinning, sticking, picking, colour bleeding, core erosion → reduce spray rate, raise inlet air temperature or airflow, increase pan speed. Over-dry defects: rough surface, orange peel, spray-dried dust → lower viscosity/solids, increase atomising air pressure, reduce gun-to-bed distance or bed temperature.",
-      "fa": "نقص‌های ناشی از خیسی زیاد: twinning، چسبیدن، picking، نشت رنگ و فرسایش هسته ← کاهش سرعت اسپری، افزایش دما یا جریان هوای ورودی، افزایش سرعت پن. نقص‌های ناشی از خشکی زیاد: سطح زبر، ⁦orange peel⁩، گرد ناشی از ⁦spray-drying⁩ ← کاهش ویسکوزیته/درصد جامد، افزایش فشار هوای اتمیزه، کاهش فاصلهٔ نازل تا بستر یا دمای بستر."
+      "fa": "نقص‌های ناشی از مرطوب‌شدن بیش از حد: twinning، چسبیدن، picking، نشت رنگ و فرسایش هسته ← کاهش سرعت اسپری، افزایش دما یا جریان هوای ورودی، افزایش سرعت پن. نقص‌های ناشی از خشک‌شدن بیش از حد: سطح زبر، ⁦orange peel⁩، گرد ناشی از ⁦spray-drying⁩ ← کاهش ویسکوزیته/درصد جامد، افزایش فشار هوای اتمیزه، کاهش فاصلهٔ نازل تا بستر یا دمای بستر."
      },
      {
       "en": "Film stress defects: cracking, logo bridging, peeling, edge chipping → increase plasticiser or use a lower-viscosity polymer grade, improve core strength and friability, choose embossing designs compatible with coating, and use a lower pan speed at the start of coating to protect edges.",
@@ -163,7 +163,7 @@
      },
      {
       "en": "Enteric (delayed-release) performance per USP <711>: acid stage 2 h in 0.1 N HCl, where at stage A1 no individual unit may release more than 10 % of label claim; followed by the buffer stage at pH 6.8. Ph. Eur. 2.9.1 also includes a gastro-resistance disintegration test. Failures usually trace to insufficient coat thickness at edges or film defects.",
-      "fa": "عملکرد روکش روده‌ای (تأخیری) طبق ⁦USP <711>⁩: مرحلهٔ اسیدی ⁦2 h⁩ در ⁦0.1 N HCl⁩ که در مرحلهٔ ⁦A1⁩ هیچ واحدی نباید بیش از ⁦10 %⁩ مقدار برچسب را آزاد کند؛ سپس مرحلهٔ بافر در ⁦pH 6.8⁩. ⁦Ph. Eur. 2.9.1⁩ نیز آزمون متلاشی‌شدن برای مقاومت معده‌ای دارد. شکست‌ها معمولاً ناشی از ضخامت ناکافی روکش در لبه‌ها یا نقص فیلم است."
+      "fa": "عملکرد روکش روده‌ای (تأخیری) طبق ⁦USP <711>⁩: مرحلهٔ اسیدی ⁦2 h⁩ در ⁦0.1 N HCl⁩ که در مرحلهٔ ⁦A1⁩ هیچ واحدی نباید بیش از ⁦10 %⁩ مقدار برچسب را آزاد کند؛ سپس مرحلهٔ بافر در ⁦pH 6.8⁩. ⁦Ph. Eur. 2.9.1⁩ نیز آزمون باززایی برای مقاومت معده‌ای دارد. شکست‌ها معمولاً ناشی از ضخامت ناکافی روکش در لبه‌ها یا نقص فیلم است."
      },
      {
       "en": "Aqueous polymer dispersions (ethylcellulose, methacrylate copolymers) require curing above the MFFT to complete coalescence; incomplete curing causes release that changes on storage. Confirm with stability per ICH Q1A(R2), and assess light protection of the film per ICH Q1B.",
@@ -184,7 +184,7 @@
     },
     "summary": {
      "en": "Hard capsules (gelatin or HPMC) are filled mainly by dosator or dosing-disc (tamping) machines, both of which form a lightly compacted plug; fill-weight accuracy therefore depends on bulk density, flow, compressibility and lubricity of the powder. Gelatin shells contain about 13–16 % water, which acts as a plasticiser: they become brittle when dried out at low humidity and soft or sticky at high humidity, whereas HPMC shells contain less water (about 4–6 %) and are preferred for hygroscopic or moisture-sensitive fills. Gelatin can cross-link on exposure to aldehydes (e.g. from excipient impurities) or heat and humidity, forming a pellicle that slows dissolution; USP <711> therefore permits enzymes (pepsin or pancreatin) in the dissolution medium for gelatin capsules.",
-     "fa": "کپسول‌های سخت (ژلاتینی یا HPMC) عمدتاً با دستگاه‌های دوزاتوری یا دیسک دوزینگ (tamping) پر می‌شوند که هر دو یک plug کمی فشرده می‌سازند؛ بنابراین دقت وزن پرشدن به دانسیتهٔ توده، جریان، تراکم‌پذیری و روان‌بودن پودر وابسته است. پوستهٔ ژلاتینی حدود ⁦13–16 %⁩ آب دارد که نقش نرم‌کننده را ایفا می‌کند: در رطوبت پایین خشک و شکننده و در رطوبت بالا نرم و چسبناک می‌شود، در حالی که پوستهٔ HPMC آب کمتری (حدود ⁦4–6 %⁩) دارد و برای محتوای جاذب‌الرطوبه یا حساس به رطوبت ترجیح داده می‌شود. ژلاتین در مواجهه با آلدهیدها (مثلاً از ناخالصی‌های اکسیپیان) یا حرارت و رطوبت دچار اتصال عرضی (⁦cross-linking⁩) می‌شود و لایه‌ای (pellicle) تشکیل می‌دهد که انحلال را کند می‌کند؛ به همین دلیل ⁦USP <711>⁩ افزودن آنزیم (پپسین یا پانکراتین) به محیط انحلال کپسول‌های ژلاتینی را مجاز می‌داند."
+     "fa": "کپسول‌های سخت (ژلاتینی یا HPMC) عمدتاً با دستگاه‌های دوزاتوری یا دیسک دوزینگ (tamping) پر می‌شوند که هر دو یک plug کمی فشرده می‌سازند؛ بنابراین دقت وزن پرشدن به دانسیتهٔ توده، جریان، تراکم‌پذیری و روان‌بودن پودر وابسته است. پوستهٔ ژلاتینی حدود ⁦13–16 %⁩ آب دارد که نقش نرم‌کننده را ایفا می‌کند: در رطوبت پایین خشک و شکننده و در رطوبت بالا نرم و چسبنده می‌شود، در حالی که پوستهٔ HPMC آب کمتری (حدود ⁦4–6 %⁩) دارد و برای محتوای جاذب‌الرطوبه یا حساس به رطوبت ترجیح داده می‌شود. ژلاتین در مواجهه با آلدهیدها (مثلاً از ناخالصی‌های اکسیپیان) یا حرارت و رطوبت دچار اتصال عرضی (⁦cross-linking⁩) می‌شود و لایه‌ای (pellicle) تشکیل می‌دهد که انحلال را کند می‌کند؛ به همین دلیل ⁦USP <711>⁩ افزودن آنزیم (پپسین یا پانکراتین) به محیط انحلال کپسول‌های ژلاتینی را مجاز می‌داند."
     },
     "points": [
      {
@@ -205,11 +205,11 @@
      },
      {
       "en": "In-process and release controls: net fill weight checks with automatic checkweighers; uniformity of dosage units per USP <905>/Ph. Eur. 2.9.40; Ph. Eur. requires hard capsules to disintegrate within 30 min (Ph. Eur. 2.9.1). Erratic weights → improve flow, keep a constant powder-bed level and verify dosator/tamping settings.",
-      "fa": "کنترل‌های حین فرایند و آزادسازی: کنترل وزن خالص پرشده با checkweigher خودکار؛ یکنواختی واحدهای دوز طبق ⁦USP <905>⁩/⁦Ph. Eur. 2.9.40⁩؛ فارماکوپهٔ اروپا متلاشی‌شدن کپسول‌های سخت را حداکثر ⁦30 min⁩ می‌خواهد (⁦Ph. Eur. 2.9.1⁩). وزن‌های نامنظم ← بهبود جریان، ثابت نگه‌داشتن سطح بستر پودر و بررسی تنظیمات دوزاتور/tamping."
+      "fa": "کنترل‌های حین فرایند و آزادسازی: کنترل وزن خالص پرشده با checkweigher خودکار؛ یکنواختی واحدهای دوز طبق ⁦USP <905>⁩/⁦Ph. Eur. 2.9.40⁩؛ فارماکوپهٔ اروپا زمان باززایی کپسول‌های سخت را حداکثر ⁦30 min⁩ می‌خواهد (⁦Ph. Eur. 2.9.1⁩). وزن‌های نامنظم ← بهبود جریان، ثابت نگه‌داشتن سطح بستر پودر و بررسی تنظیمات دوزاتور/tamping."
      },
      {
       "en": "Dissolution slowdown on stability in gelatin capsules → suspect cross-linking; screen excipients for aldehydes/peroxides, protect from heat and humidity, apply the enzyme-containing two-tier test of USP <711>, or switch to HPMC shells. Note that some HPMC shells (gelled with gellan or carrageenan) can open more slowly in certain acidic or cation-containing media.",
-      "fa": "کندشدن انحلال کپسول‌های ژلاتینی در مطالعات پایداری ← به ⁦cross-linking⁩ مشکوک شوید؛ اکسیپیان‌ها را از نظر آلدهید/پراکسید غربال کنید، از حرارت و رطوبت محافظت کنید، از آزمون دومرحله‌ای حاوی آنزیم ⁦USP <711>⁩ استفاده کنید یا به پوستهٔ HPMC تغییر دهید. توجه کنید برخی پوسته‌های HPMC (ژل‌شده با gellan یا carrageenan) ممکن است در برخی محیط‌های اسیدی یا حاوی کاتیون دیرتر باز شوند."
+      "fa": "کندشدن انحلال کپسول‌های ژلاتینی در مطالعات پایداری ← به ⁦cross-linking⁩ مشکوک شوید؛ اکسیپیان‌ها را از نظر آلدهید/پراکسید غربال کنید، از حرارت و رطوبت محافظت کنید، از آزمون دومرحله‌ای حاوی آنزیم ⁦USP <711>⁩ استفاده کنید یا به پوستهٔ HPMC تغییر دهید. توجه کنید برخی پوسته‌های HPMC (ژل‌شده با gellan یا carrageenan) ممکن است در برخی محیط‌های اسیدی یا حاوی کاتیون دیرتر گسیخته شوند."
      }
     ],
     "refs": [
@@ -514,7 +514,7 @@
      },
      {
       "en": "Wet hydrophobic powders with low levels of surfactant (e.g. polysorbate 80) or with glycerol or propylene glycol; excess surfactant deflocculates the system and promotes caking.",
-      "fa": "پودرهای آب‌گریز را با مقادیر کم سورفکتانت (مثلاً ⁦polysorbate 80⁩) یا با گلیسرول یا پروپیلن گلیکول خیس کنید؛ سورفکتانت اضافی سیستم را دفلوکوله می‌کند و کیک‌بستن را تشدید می‌کند."
+      "fa": "پودرهای آب‌گریز را با مقادیر کم سورفکتانت (مثلاً ⁦polysorbate 80⁩) یا با گلیسرول یا پروپیلن گلیکول مرطوب کنید؛ سورفکتانت اضافی سیستم را دفلوکوله می‌کند و کیک‌بستن را تشدید می‌کند."
      },
      {
       "en": "Build a pseudoplastic or thixotropic vehicle with a yield value: xanthan gum (≈ 0.1–1.0%), microcrystalline cellulose–carboxymethylcellulose sodium, HPMC or magnesium aluminium silicate; check polymer–electrolyte and polymer–preservative incompatibilities.",
@@ -1251,7 +1251,7 @@
      },
      {
       "en": "Testing: identity and assay by compendial titration (complexometric EDTA for Ca, Mg and Zn; cerimetric for ferrous iron) or by ICP-OES/ICP-MS (USP <730>); disintegration and dissolution of supplement tablets per USP <2040>; elemental contaminants per USP <2232> (dietary supplements) or ICH Q3D(R2) (medicines). Natural calcium sources (oyster shell, bone meal, dolomite) carry a higher lead risk.",
-      "fa": "آزمون‌ها: شناسایی و تعیین مقدار با تیتراسیون فارماکوپه‌ای (کمپلکسومتری با EDTA برای Ca، Mg و Zn؛ سریمتری برای آهن فرو) یا با ⁦ICP-OES/ICP-MS (USP <730>)⁩؛ زمان متلاشی‌شدن (disintegration) و انحلال قرص‌های مکمل مطابق ⁦USP <2040>⁩؛ آلاینده‌های عنصری مطابق ⁦USP <2232>⁩ (مکمل‌های غذایی) یا ⁦ICH Q3D(R2)⁩ (داروها). منابع طبیعی کلسیم (صدف، پودر استخوان، دولومیت) خطر سرب بالاتری دارند."
+      "fa": "آزمون‌ها: شناسایی و تعیین مقدار با تیتراسیون فارماکوپه‌ای (کمپلکسومتری با EDTA برای Ca، Mg و Zn؛ سریمتری برای آهن فرو) یا با ⁦ICP-OES/ICP-MS (USP <730>)⁩؛ زمان باززایی (disintegration) و انحلال قرص‌های مکمل مطابق ⁦USP <2040>⁩؛ آلاینده‌های عنصری مطابق ⁦USP <2232>⁩ (مکمل‌های غذایی) یا ⁦ICH Q3D(R2)⁩ (داروها). منابع طبیعی کلسیم (صدف، پودر استخوان، دولومیت) خطر سرب بالاتری دارند."
      },
      {
       "en": "Troubleshooting: oversized tablets → switch to a higher-fraction compound (oxide, carbonate) or a directly compressible granular grade; losses of vitamins C and A in mineral-rich tablets → replace ferrous sulfate with a less reactive or coated iron form; capping or poor compressibility with MgO or CaCO3 → use pre-granulated (starch- or maltodextrin-granulated) grades.",
@@ -1268,7 +1268,7 @@
    {
     "title": {
      "en": "Premix design",
-     "fa": "طراحی پرمیکس"
+     "fa": "طراحی پری‌میکس"
     },
     "summary": {
      "en": "A premix is a pre-blended concentrate of micronutrients, usually on an inert carrier, that is added to the final formulation — tablet or capsule blend, powder sachet or fortified food — at a fixed rate. Its purpose is to turn microgram-level ingredients into a mass that can be weighed accurately and distributed uniformly, and to separate or protect mutually reactive nutrients. Content uniformity is ultimately limited by particle statistics — each dose must contain enough particles of every micro-ingredient — and by segregation driven by differences in particle size, density and shape.",
@@ -1289,7 +1289,7 @@
      },
      {
       "en": "Segregation control: match the particle-size distribution (similar d50) of actives and carrier, avoid long free-fall and vibration after blending, consider ordered mixing (fine actives adhering to carrier particles) or a small amount of oil or binder to fix micro-ingredients, and use mass-flow discharge.",
-      "fa": "کنترل جداشدگی: توزیع اندازه ذرات مواد مؤثره و حامل را تطبیق دهید (d50 مشابه)، پس از اختلاط از سقوط آزاد طولانی و ارتعاش پرهیز کنید، مخلوط‌سازی منظم (⁦ordered mixing⁩؛ چسبیدن ذرات ریز مؤثره به ذرات حامل) یا مقدار کمی روغن یا چسب برای تثبیت اجزای کم‌مقدار را در نظر بگیرید و از تخلیه mass-flow استفاده کنید."
+      "fa": "کنترل جداشدگی: توزیع اندازه ذرات مواد مؤثره و حامل را تطبیق دهید (d50 مشابه)، پس از اختلاط از سقوط آزاد طولانی و ارتعاش پرهیز کنید، مخلوط‌سازی منظم (⁦ordered mixing⁩؛ چسبیدن ذرات ریز مؤثره به ذرات حامل) یا مقدار کمی روغن یا چسباننده برای تثبیت اجزای کم‌مقدار را در نظر بگیرید و از تخلیه mass-flow استفاده کنید."
      },
      {
       "en": "Mixer and validation: choose the blender type (ribbon, ploughshare, V-blender, bin blender) and fill level within the validated range; validate mixing time with a tracer or the most critical micronutrient using thief samples of 1–3 unit-dose weights, with typical acceptance of mean 90–110 % and RSD ≤ 5 %, then confirm in finished units per USP <905>.",
@@ -1338,11 +1338,11 @@
      },
      {
       "en": "High-shear wet granulation: keep impeller tip speed or Froude number in a comparable range, scale granulation liquid in proportion to batch mass, and define the end-point by a scale-independent signal (power/torque profile, granule size or density) rather than a fixed time; over-wetting at large scale is a common cause of hard granules and slow dissolution.",
-      "fa": "گرانولاسیون مرطوب ⁦high-shear⁩: سرعت نوک پروانه یا عدد Froude را در محدوده‌ای مشابه نگه دارید، مقدار مایع گرانولاسیون را متناسب با جرم بچ افزایش دهید و نقطه پایان را با یک شاخص مستقل از مقیاس (پروفایل توان/گشتاور، اندازه یا دانسیته گرانول) تعریف کنید نه با زمان ثابت؛ خیس‌شدن بیش از حد در مقیاس بزرگ علت شایع گرانول‌های سخت و کندی انحلال است."
+      "fa": "گرانولاسیون مرطوب ⁦high-shear⁩: سرعت نوک پروانه یا عدد Froude را در محدوده‌ای مشابه نگه دارید، مقدار مایع گرانولاسیون را متناسب با جرم بچ افزایش دهید و نقطه پایان را با یک شاخص مستقل از مقیاس (پروفایل توان/گشتاور، اندازه یا دانسیته گرانول) تعریف کنید نه با زمان ثابت؛ مرطوب‌شدن بیش از حد در مقیاس بزرگ علت شایع گرانول‌های سخت و کندی انحلال است."
      },
      {
       "en": "Fluid-bed processing and film coating: scale spray rate by bed cross-sectional area or number of spray guns, and keep droplet size (atomizing air pressure/ratio) and the product temperature and humidity environment constant; at scale, over-wetting shows up as agglomerates, twinning or picking, and over-drying as spray-drying losses and excess fines.",
-      "fa": "فرایندهای بستر سیال و روکش‌دهی فیلمی: سرعت اسپری را بر اساس سطح مقطع بستر یا تعداد نازل‌ها افزایش دهید و اندازه قطرات (فشار/نسبت هوای اتمایز) و شرایط دما و رطوبت محصول را ثابت نگه دارید؛ در مقیاس بزرگ، خیس‌شدن بیش از حد به صورت آگلومره شدن، twinning یا picking و خشک‌شدن بیش از حد به صورت اتلاف ناشی از ⁦spray-drying⁩ و افزایش نرمه ظاهر می‌شود."
+      "fa": "فرایندهای بستر سیال و روکش‌دهی فیلمی: سرعت اسپری را بر اساس سطح مقطع بستر یا تعداد نازل‌ها افزایش دهید و اندازه قطرات (فشار/نسبت هوای اتمایز) و شرایط دما و رطوبت محصول را ثابت نگه دارید؛ در مقیاس بزرگ، مرطوب‌شدن بیش از حد به صورت آگلومره شدن، twinning یا picking و خشک‌شدن بیش از حد به صورت اتلاف ناشی از ⁦spray-drying⁩ و افزایش نرمه ظاهر می‌شود."
      },
      {
       "en": "Blending and lubrication: express mixing as number of revolutions and keep the fill level within the validated working range of the blender; magnesium stearate lubrication is sensitive to shear and revolutions — over-lubrication lowers tablet hardness and slows dissolution, so lubrication time must be re-established at the new scale.",
@@ -1438,7 +1438,7 @@
      },
      {
       "en": "Sample across the run (start, middle, end, and after stoppages or hopper changes) for weight, hardness, thickness, friability (≤ 1.0 % mass loss per Ph. Eur. 2.9.7/USP <1216>), disintegration, dissolution profile, assay, related substances, LOD and coating weight gain.",
-      "fa": "در طول فرایند (ابتدا، میانه، انتها و پس از توقف‌ها یا تعویض هاپر) برای وزن، سختی، ضخامت، فرسایش‌پذیری (کاهش وزن ⁦≤ 1.0 %⁩ طبق ⁦Ph. Eur. 2.9.7/USP <1216>⁩)، زمان متلاشی‌شدن (disintegration)، پروفایل انحلال، تعیین مقدار، مواد مرتبط، LOD و افزایش وزن روکش نمونه‌برداری کنید."
+      "fa": "در طول فرایند (ابتدا، میانه، انتها و پس از توقف‌ها یا تعویض هاپر) برای وزن، سختی، ضخامت، فرسایش‌پذیری (کاهش وزن ⁦≤ 1.0 %⁩ طبق ⁦Ph. Eur. 2.9.7/USP <1216>⁩)، زمان باززایی (disintegration)، پروفایل انحلال، تعیین مقدار، مواد مرتبط، LOD و افزایش وزن روکش نمونه‌برداری کنید."
      },
      {
       "en": "Establish hold times for wet granules, dried granules, final blend, cores before coating and bulk tablets before packaging, supported by assay, impurities, water content, microbial and dissolution data; unsupported hold times are a frequent inspection finding.",
@@ -1688,7 +1688,7 @@
      },
      {
       "en": "Set acceptance criteria from data — batch results (e.g., mean ± 3 SD as a statistical starting point), stability trends to the end of shelf life, analytical variability and the qualified level — rather than copying a pharmacopoeial monograph; a monograph is a minimum standard, and an impurity above its qualification threshold needs safety justification.",
-      "fa": "معیارهای پذیرش را بر پایه داده تعیین کنید — نتایج بچ‌ها (مثلاً ⁦mean ± 3 SD⁩ به عنوان نقطه شروع آماری)، روند پایداری تا پایان عمر قفسه‌ای، تغییرپذیری آنالیتیکی و سطح تأییدشده ایمنی — نه با کپی کردن مونوگراف فارماکوپه؛ مونوگراف حداقل استاندارد است و ناخالصی بالاتر از آستانه تأیید ایمنی به توجیه ایمنی نیاز دارد."
+      "fa": "معیارهای پذیرش را بر پایه داده تعیین کنید — نتایج بچ‌ها (مثلاً ⁦mean ± 3 SD⁩ به عنوان نقطه شروع آماری)، روند پایداری تا پایان عمر قفسه‌ای، تغییرپذیری آنالیتیکی و سطح تأییدشده ایمنی — نه با رونویسی از مونوگراف فارماکوپه؛ مونوگراف حداقل استاندارد است و ناخالصی بالاتر از آستانه تأیید ایمنی به توجیه ایمنی نیاز دارد."
      },
      {
       "en": "Pitfalls → fixes: relative response factors not determined (impurities mis-quantified) → determine RRFs and apply correction factors, conventionally when outside 0.8–1.2; poor mass balance on stability (assay loss without matching degradant growth) → look for non-UV-absorbing or volatile degradants with orthogonal detection; OOS results invalidated without a documented laboratory investigation → follow the phased approach of the FDA OOS guidance.",

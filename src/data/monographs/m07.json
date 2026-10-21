@@ -88,7 +88,7 @@
   ],
   "stability": {
    "en": "Shellac slowly polymerises on storage, particularly when warm, so that films become harder, less soluble and slower to dissolve or disintegrate; bleached shellac is less stable than orange shellac. Store in a well-closed container in a cool place.",
-   "fa": "شلاک در طول نگهداری، به‌ویژه در دمای گرم، به‌آهستگی پلیمریزه می‌شود؛ در نتیجه فیلم‌ها سخت‌تر و کم‌محلول‌تر می‌شوند و دیرتر حل یا متلاشی می‌شوند. شلاک سفیدشده از شلاک نارنجی ناپایدارتر است. در ظرف کاملاً بسته و در جای خنک نگهداری شود."
+   "fa": "شلاک در طول نگهداری، به‌ویژه در دمای گرم، به‌آهستگی پلیمریزه می‌شود؛ در نتیجه فیلم‌ها سخت‌تر و کم‌محلول‌تر می‌شوند و انحلال یا باززایی آن‌ها دیرتر رخ می‌دهد. شلاک سفیدشده از شلاک نارنجی ناپایدارتر است. در ظرف کاملاً بسته و در جای خنک نگهداری شود."
   },
   "incompatibilities": {
    "en": "Incompatible with strong oxidising agents. Because it is acidic, it may interact with basic drugs and alkaline excipients in a coating.",
@@ -116,7 +116,7 @@
   },
   "comments": {
    "en": "Because shellac films age and become less soluble, the disintegration and dissolution of shellac-coated products should be checked during stability studies. Aqueous ammoniacal shellac solutions avoid organic solvents and give films that are less affected by ageing.",
-   "fa": "از آنجا که فیلم‌های شلاک با گذشت زمان پیر و کم‌محلول‌تر می‌شوند، زمان متلاشی شدن و انحلال فرآورده‌های روکش‌شده با شلاک باید در مطالعات پایداری بررسی شود. محلول‌های آبی آمونیاکی شلاک نیاز به حلال آلی را از بین می‌برند و فیلم‌هایی می‌دهند که کمتر تحت تأثیر پیرشدگی قرار می‌گیرند."
+   "fa": "از آنجا که فیلم‌های شلاک با گذشت زمان پیر و کم‌محلول‌تر می‌شوند، زمان باززایی و انحلال فرآورده‌های روکش‌شده با شلاک باید در مطالعات پایداری بررسی شود. محلول‌های آبی آمونیاکی شلاک نیاز به حلال آلی را از بین می‌برند و فیلم‌هایی می‌دهند که کمتر تحت تأثیر پیرشدگی قرار می‌گیرند."
   },
   "refs": [
    "usp",
@@ -201,7 +201,7 @@
   },
   "incompatibilities": {
    "en": "Few incompatibilities have been reported. Silicone antifoams can be deactivated by strong emulsifiers and surfactants, and may interfere with the wetting of tablet surfaces in film coating.",
-   "fa": "ناسازگاری زیادی گزارش نشده است. ضدکف‌های سیلیکونی ممکن است با امولسیون‌کننده‌ها و سورفکتانت‌های قوی غیرفعال شوند و ممکن است در روکش فیلمی، خیس شدن سطح قرص را مختل کنند."
+   "fa": "ناسازگاری زیادی گزارش نشده است. ضدکف‌های سیلیکونی ممکن است با امولسیون‌کننده‌ها و سورفکتانت‌های قوی غیرفعال شوند و ممکن است در روکش فیلمی، ترشوندگی (Wetting) سطح قرص را مختل کنند."
   },
   "manufacture": {
    "en": "Prepared by dispersing finely divided silicon dioxide (silica) in dimethicone and treating the mixture, usually with heat, so that the silica surface becomes coated with the silicone. Dimethicone itself is made by hydrolysis and polycondensation of dichlorodimethylsilane with chlorotrimethylsilane as a chain stopper.",
@@ -363,7 +363,7 @@
   "mw": "≈ 10 000–600 000 (grade-dependent); repeat unit 198.11",
   "applications": {
    "en": "Used as a suspending and thickening agent (1–5%), as an emulsion stabiliser (1–3%), as a tablet binder (1–3%) and disintegrant (2.5–10%), and in pastes and creams (5–10%). It is also used in hydrophilic matrices for modified release, in microencapsulation and bead formation by ionotropic gelation with calcium ions, and with sodium bicarbonate and calcium carbonate in raft-forming preparations for gastro-oesophageal reflux. Calcium alginate made from it is used in wound dressings.",
-   "fa": "به عنوان عامل تعلیق‌دهنده و غلیظ‌کننده (1–5%)، پایدارکننده امولسیون (1–3%)، چسباننده قرص (1–3%) و متلاشی‌کننده قرص (2.5–10%)، و در خمیرها و کرم‌ها (5–10%) به کار می‌رود. همچنین در ماتریکس‌های آب‌دوست رهش تعدیل‌شده، میکروانکپسولاسیون و ساخت دانه‌ها (bead) با ژل‌شدن یونی (ionotropic gelation) با یون کلسیم، و همراه با سدیم بی‌کربنات و کلسیم کربنات در فرآورده‌های تشکیل‌دهنده لایه شناور (raft) برای ریفلاکس معده به مری مصرف می‌شود. کلسیم آلژینات حاصل از آن در پانسمان زخم کاربرد دارد."
+   "fa": "به عنوان عامل تعلیق‌دهنده و غلیظ‌کننده (1–5%)، پایدارکننده امولسیون (1–3%)، چسباننده قرص (1–3%) و باززای قرص (2.5–10%)، و در خمیرها و کرم‌ها (5–10%) به کار می‌رود. همچنین در ماتریکس‌های آب‌دوست رهش تعدیل‌شده، میکروانکپسولاسیون و ساخت دانه‌ها (bead) با ژل‌شدن یونی (ionotropic gelation) با یون کلسیم، و همراه با سدیم بی‌کربنات و کلسیم کربنات در فرآورده‌های تشکیل‌دهنده لایه شناور (raft) برای ریفلاکس معده به مری مصرف می‌شود. کلسیم آلژینات حاصل از آن در پانسمان زخم کاربرد دارد."
   },
   "description": {
    "en": "An odourless, almost tasteless, white to pale yellowish-brown powder. It is extracted from brown seaweeds; the ratio and sequence of mannuronic (M) and guluronic (G) acid blocks, which depend on the seaweed source, determine the gel strength and viscosity of each grade.",
@@ -451,7 +451,7 @@
   },
   "comments": {
    "en": "Disperse the powder slowly into vigorously stirred water, or pre-wet it with a non-solvent such as glycerol or ethanol, to avoid lumps. Grades rich in guluronic acid give strong, brittle calcium gels, whereas mannuronic-rich grades give softer, more elastic gels.",
-   "fa": "برای جلوگیری از تشکیل کلوخه، پودر را به‌آهستگی به آب در حال هم‌زدن شدید اضافه کنید یا ابتدا آن را با یک غیرحلال مانند گلیسرول یا اتانول خیس کنید. گریدهای غنی از گولورونیک اسید ژل‌های کلسیمی محکم و شکننده، و گریدهای غنی از مانورونیک اسید ژل‌های نرم‌تر و الاستیک‌تر می‌دهند."
+   "fa": "برای جلوگیری از تشکیل کلوخه، پودر را به‌آهستگی به آب در حال هم‌زدن شدید اضافه کنید یا ابتدا آن را با یک غیرحلال مانند گلیسرول یا اتانول مرطوب کنید. گریدهای غنی از گولورونیک اسید ژل‌های کلسیمی محکم و شکننده، و گریدهای غنی از مانورونیک اسید ژل‌های نرم‌تر و الاستیک‌تر می‌دهند."
   },
   "refs": [
    "usp",
@@ -2084,7 +2084,7 @@
   "mw": "",
   "applications": {
    "en": "Sodium starch glycolate is a 'superdisintegrant' used in oral tablets and capsules prepared by direct compression or wet granulation. Usual concentrations are 2–8% w/w, with about 4% often optimal; higher levels can slow disintegration because the swollen gel blocks further water uptake. It may be added intragranularly, extragranularly or split between the two.",
-   "fa": "سدیم استارچ گلیکولات یک متلاشی‌کننده قوی (Superdisintegrant) است که در قرص‌ها و کپسول‌های خوراکی تهیه‌شده با پرس مستقیم یا گرانولاسیون مرطوب به کار می‌رود. غلظت معمول آن 2–8% وزنی است و حدود 4% اغلب بهینه است؛ مقادیر بیشتر ممکن است متلاشی شدن را کند کنند، زیرا ژل متورم‌شده ورود بیشتر آب را مسدود می‌کند. می‌توان آن را به صورت داخل گرانولی، خارج گرانولی یا تقسیم‌شده بین هر دو اضافه کرد."
+   "fa": "سدیم استارچ گلیکولات یک سوپرباززا (Superdisintegrant) است که در قرص‌ها و کپسول‌های خوراکی تهیه‌شده با پرس مستقیم یا گرانولاسیون مرطوب به کار می‌رود. غلظت معمول آن 2–8% وزنی است و حدود 4% اغلب بهینه است؛ مقادیر بیشتر ممکن است باززایی را کند کنند، زیرا ژل متورم‌شده ورود بیشتر آب را مسدود می‌کند. می‌توان آن را به صورت داخل گرانولی، خارج گرانولی یا تقسیم‌شده بین هر دو اضافه کرد."
   },
   "description": {
    "en": "A white or almost white, odourless, tasteless, free-flowing, very hygroscopic powder made up of oval or spherical granules. The pharmacopoeias describe types that differ in pH and sodium content (Ph. Eur. Types A, B and C; USP–NF Types A and B).",
@@ -2144,11 +2144,11 @@
   ],
   "stability": {
    "en": "Stable, but very hygroscopic. Store in a well-closed container to protect it from wide variations in humidity and temperature, which can cause caking. Tablets containing it may harden on storage at high humidity.",
-   "fa": "پایدار ولی بسیار رطوبت‌گیر است. در ظرف کاملاً بسته نگهداری شود تا از تغییرات زیاد رطوبت و دما که باعث کلوخه شدن می‌شوند محافظت شود. قرص‌های حاوی آن ممکن است در نگهداری در رطوبت بالا سخت شوند."
+   "fa": "پایدار ولی بسیار رطوبت‌گیر است. در ظرف کاملاً بسته نگهداری شود تا از تغییرات زیاد رطوبت و دما که باعث کلوخه‌ای شدن (Caking) می‌شوند محافظت شود. قرص‌های حاوی آن ممکن است در نگهداری در رطوبت بالا سخت شوند."
   },
   "incompatibilities": {
    "en": "Incompatible with ascorbic acid. Its disintegrant efficiency can be reduced by high concentrations of hydrophobic lubricants, by some highly soluble or hygroscopic excipients, and by high compression forces. As an anionic polymer it may bind some cationic drugs.",
-   "fa": "با آسکوربیک اسید ناسازگار است. کارایی متلاشی‌کنندگی آن ممکن است با غلظت‌های زیاد روان‌کننده‌های آب‌گریز، برخی مواد کمکی بسیار محلول یا رطوبت‌گیر و نیروهای پرس زیاد کاهش یابد. به عنوان پلیمر آنیونی ممکن است برخی داروهای کاتیونی را به خود متصل کند."
+   "fa": "با آسکوربیک اسید ناسازگار است. کارایی باززایی آن ممکن است با غلظت‌های زیاد روان‌کننده‌های آب‌گریز، برخی مواد کمکی بسیار محلول یا رطوبت‌گیر و نیروهای پرس زیاد کاهش یابد. به عنوان پلیمر آنیونی ممکن است برخی داروهای کاتیونی را به خود متصل کند."
   },
   "manufacture": {
    "en": "Starch (usually potato starch) is cross-linked, either chemically (for example with sodium trimetaphosphate) or by dehydration, and then carboxymethylated by reaction with sodium monochloroacetate in an alkaline alcoholic medium. The product is neutralised with an acid such as citric acid, washed with aqueous alcohol to remove sodium chloride and glycolate by-products, and dried.",
@@ -2172,7 +2172,7 @@
   },
   "comments": {
    "en": "Its rapid swelling with little gel formation makes it effective at low levels, but performance varies with degree of substitution, cross-linking and particle size, so the source and grade should be specified. It is less affected by wet granulation than many disintegrants, though some loss of efficiency can occur.",
-   "fa": "تورم سریع آن همراه با تشکیل ژل کم باعث می‌شود در غلظت‌های پایین مؤثر باشد، ولی عملکرد آن با درجه جانشینی، میزان کراس‌لینک و اندازه ذره تغییر می‌کند؛ بنابراین منبع و گرید باید مشخص شود. نسبت به بسیاری از متلاشی‌کننده‌ها کمتر تحت تأثیر گرانولاسیون مرطوب قرار می‌گیرد، هرچند ممکن است مقداری از کارایی آن کم شود."
+   "fa": "تورم سریع آن همراه با تشکیل ژل کم باعث می‌شود در غلظت‌های پایین مؤثر باشد، ولی عملکرد آن با درجه جانشینی، میزان کراس‌لینک و اندازه ذره تغییر می‌کند؛ بنابراین منبع و گرید باید مشخص شود. نسبت به بسیاری از باززاها کمتر تحت تأثیر گرانولاسیون مرطوب قرار می‌گیرد، هرچند ممکن است مقداری از کارایی آن کم شود."
   },
   "refs": [
    "usp",
@@ -2201,7 +2201,7 @@
   "mw": "390.5",
   "applications": {
    "en": "Used as a tablet and capsule lubricant at about 0.5–2.0% w/w. It is chosen in place of magnesium stearate when that lubricant is incompatible with the drug, slows dissolution or gives soft tablets, as it is less hydrophobic and less sensitive to over-blending. It is also used in effervescent and orally disintegrating tablets, and in some food applications.",
-   "fa": "به عنوان روان‌کننده (Lubricant) قرص و کپسول در غلظت حدود 0.5–2.0% وزنی به کار می‌رود. در مواردی که منیزیم استئارات با دارو ناسازگار است، انحلال را کند می‌کند یا قرص نرم می‌دهد، به جای آن انتخاب می‌شود، زیرا آب‌گریزی کمتری دارد و به اختلاط بیش از حد حساسیت کمتری نشان می‌دهد. در قرص‌های جوشان و قرص‌های متلاشی‌شونده در دهان و برخی کاربردهای غذایی نیز مصرف می‌شود."
+   "fa": "به عنوان روان‌کننده (Lubricant) قرص و کپسول در غلظت حدود 0.5–2.0% وزنی به کار می‌رود. در مواردی که منیزیم استئارات با دارو ناسازگار است، انحلال را کند می‌کند یا قرص نرم می‌دهد، به جای آن انتخاب می‌شود، زیرا آب‌گریزی کمتری دارد و به اختلاط بیش از حد حساسیت کمتری نشان می‌دهد. در قرص‌های جوشان و قرص‌های باززاشونده در دهان و برخی کاربردهای غذایی نیز مصرف می‌شود."
   },
   "description": {
    "en": "A fine, white powder with agglomerates of flat, circular particles. Pharmacopoeial material limits the related impurities sodium stearyl maleate and stearyl alcohol.",

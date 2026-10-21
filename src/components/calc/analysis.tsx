@@ -452,7 +452,7 @@ export function Udu({ ctx }: { ctx: Ctx }) {
     verdict = (value <= 15 && l2ok
       ? bi("Complies (AV ≤ L1 = 15.0)", "منطبق (AV ≤ L1 = 15.0)")
       : n === 10
-        ? bi("Not met at stage 1: test 20 more units", "مرحله اول قبول نشد: 20 واحد دیگر آزمون شود")
+        ? bi("Not met at stage 1: test 20 more units", "معیار مرحله اول احراز نشد: 20 واحد دیگر آزمون شود")
         : bi("Does not comply", "منطبق نیست"))[locale];
   }
   return (

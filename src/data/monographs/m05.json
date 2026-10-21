@@ -223,7 +223,7 @@
   },
   "comments": {
    "en": "Grades differ mainly in viscosity, so the pharmacopoeial grade should be specified; the light grade spreads more easily and is preferred in sprays and some lotions. Gelled liquid paraffin (with polyethylene) forms a hydrocarbon gel ointment base.",
-   "fa": "گریدها عمدتاً در گرانروی متفاوت‌اند و بنابراین گرید فارماکوپه‌ای باید مشخص شود؛ گرید سبک آسان‌تر پخش می‌شود و در اسپری‌ها و برخی لوسیون‌ها ترجیح داده می‌شود. پارافین مایع ژله‌ای‌شده با پلی‌اتیلن، پایه پماد ژل هیدروکربنی را تشکیل می‌دهد."
+   "fa": "گریدها عمدتاً در گرانروی متفاوت‌اند و بنابراین گرید فارماکوپه‌ای باید مشخص شود؛ گرید سبک آسان‌تر پخش می‌شود و در اسپری‌ها و برخی لوسیون‌ها ترجیح داده می‌شود. پارافین مایع ژل‌شده با پلی‌اتیلن، پایه پماد ژل هیدروکربنی را تشکیل می‌دهد."
   },
   "refs": [
    "usp",
@@ -605,7 +605,7 @@
   "mw": "",
   "applications": {
    "en": "Used as a suspending agent, emulsion stabiliser, viscosity-increasing agent and adsorbent in oral and topical preparations, and as a binder and disintegrant in tablets. Typical concentrations: adsorbent 10–50%; emulsion stabiliser 1–5% (oral) or 2–5% (topical); suspending agent 0.5–2.5% (oral) or 1–10% (topical); tablet binder or disintegrant 2–10%; viscosity-increasing agent 2–10%.",
-   "fa": "به عنوان عامل تعلیق‌کننده، پایدارکننده امولسیون، افزاینده گرانروی و جاذب در فرآورده‌های خوراکی و موضعی و به عنوان چسباننده و متلاشی‌کننده در قرص به کار می‌رود. غلظت‌های متداول: جاذب 10–50%؛ پایدارکننده امولسیون 1–5% (خوراکی) یا 2–5% (موضعی)؛ تعلیق‌کننده 0.5–2.5% (خوراکی) یا 1–10% (موضعی)؛ چسباننده یا متلاشی‌کننده قرص 2–10%؛ افزاینده گرانروی 2–10%."
+   "fa": "به عنوان عامل تعلیق‌کننده، پایدارکننده امولسیون، افزاینده گرانروی و جاذب در فرآورده‌های خوراکی و موضعی و به عنوان چسباننده و باززا (Disintegrant) در قرص به کار می‌رود. غلظت‌های متداول: جاذب 10–50%؛ پایدارکننده امولسیون 1–5% (خوراکی) یا 2–5% (موضعی)؛ تعلیق‌کننده 0.5–2.5% (خوراکی) یا 1–10% (موضعی)؛ چسباننده یا باززای قرص 2–10%؛ افزاینده گرانروی 2–10%."
   },
   "description": {
    "en": "Off-white to creamy white, odourless, tasteless, soft, slippery small flakes or a fine powder. The particles are thin platelets that swell in water to form colloidal dispersions.",
@@ -720,7 +720,7 @@
   },
   "description": {
    "en": "A white, odourless powder or light, friable masses. The light form is very bulky; the heavy form is denser and granular. Commercial material is a basic hydrated carbonate rather than normal MgCO3.",
-   "fa": "پودر سفید و بی‌بو یا توده‌های سبک و ترد. نوع سبک بسیار حجیم و نوع سنگین متراکم‌تر و دانه‌ای است. ماده تجاری کربنات بازی هیدراته است و نه MgCO3 معمولی."
+   "fa": "پودر سفید و بی‌بو یا توده‌های سبک و شکننده. نوع سبک بسیار حجیم و نوع سنگین متراکم‌تر و دانه‌ای است. ماده تجاری کربنات بازی هیدراته است و نه MgCO3 معمولی."
   },
   "properties": [
    {
@@ -1311,11 +1311,11 @@
   },
   "incompatibilities": {
    "en": "Incompatible with strong oxidising agents and bases; reacts with carbonates and bicarbonates (the basis of effervescence). It can corrode some metals in the presence of moisture.",
-   "fa": "با اکسیدکننده‌های قوی و بازها ناسازگار است؛ با کربنات‌ها و بی‌کربنات‌ها واکنش می‌دهد (اساس جوشش). در حضور رطوبت ممکن است برخی فلزات را خورده کند."
+   "fa": "با اکسیدکننده‌های قوی و بازها ناسازگار است؛ با کربنات‌ها و بی‌کربنات‌ها واکنش می‌دهد (اساس جوشش). در حضور رطوبت ممکن است باعث خوردگی برخی فلزات شود."
   },
   "manufacture": {
    "en": "The racemate is made synthetically by hydration of maleic or fumaric acid at high temperature and pressure; L-malic acid can be produced by enzymatic hydration of fumaric acid.",
-   "fa": "فرم راسمیک به روش سنتزی از آب‌دار کردن مالئیک یا فوماریک اسید در دما و فشار بالا ساخته می‌شود؛ L-مالیک اسید را می‌توان با آب‌دار کردن آنزیمی فوماریک اسید تولید کرد."
+   "fa": "فرم راسمیک به روش سنتزی از هیدراتاسیون مالئیک یا فوماریک اسید در دما و فشار بالا ساخته می‌شود؛ L-مالیک اسید را می‌توان با هیدراتاسیون آنزیمی فوماریک اسید تولید کرد."
   },
   "safety": {
    "en": "A normal metabolite (in the citric acid cycle) and regarded as non-toxic at excipient levels; the concentrated acid is irritant to eyes and skin. Use of the DL-form in foods for infants is not recommended because of uncertainty about metabolism of the D-isomer.",
@@ -1700,7 +1700,7 @@
   "mw": "182.17",
   "applications": {
    "en": "Widely used as a diluent in tablets and capsules (typically 10–90% w/w), particularly in chewable and orally disintegrating tablets, because it is non-hygroscopic, pleasantly sweet and gives a cooling sensation. It is a common bulking agent in freeze-dried injections, an isotonicity agent in parenterals and ophthalmics, and is used in direct-compression (granulated or spray-dried) grades and as a plasticiser in soft capsules. Therapeutically it is an osmotic diuretic.",
-   "fa": "به‌طور گسترده به عنوان رقیق‌کننده در قرص و کپسول (معمولاً 10–90% وزنی)، به‌ویژه در قرص‌های جویدنی و قرص‌های متلاشی‌شونده در دهان (ODT)، به کار می‌رود، چون رطوبت‌گیر نیست، شیرینی مطبوع دارد و احساس خنکی ایجاد می‌کند. حجم‌دهنده رایج در تزریقی‌های لیوفیلیزه و تنظیم‌کننده تونیسیته در فرآورده‌های تزریقی و چشمی است؛ گریدهای مخصوص پرس مستقیم (گرانوله یا اسپری‌درای) دارد و به عنوان نرم‌کننده در کپسول نرم نیز مصرف می‌شود. از نظر درمانی دیورتیک اسمزی است."
+   "fa": "به‌طور گسترده به عنوان رقیق‌کننده در قرص و کپسول (معمولاً 10–90% وزنی)، به‌ویژه در قرص‌های جویدنی و قرص‌های باززاشونده در دهان (ODT)، به کار می‌رود، چون رطوبت‌گیر نیست، شیرینی مطبوع دارد و احساس خنکی ایجاد می‌کند. حجم‌دهنده رایج در تزریقی‌های لیوفیلیزه و تنظیم‌کننده تونیسیته در فرآورده‌های تزریقی و چشمی است؛ گریدهای مخصوص پرس مستقیم (گرانوله یا اسپری‌درای) دارد و به عنوان نرم‌کننده در کپسول نرم نیز مصرف می‌شود. از نظر درمانی دیورتیک اسمزی است."
   },
   "description": {
    "en": "White, odourless, crystalline powder or free-flowing granules with a sweet taste about half that of sucrose and a cooling mouthfeel.",
@@ -2308,7 +2308,7 @@
   "mw": "≈ 10 000–220 000",
   "applications": {
    "en": "Used in oral and topical products as a viscosity-increasing, suspending, emulsifying and thickening agent, as a tablet binder, coating polymer and disintegrant, in modified-release matrices, and therapeutically as a bulk laxative. Typical concentrations: creams, gels and ointments 1–5%; emulsifying agent 1–5%; ophthalmic preparations 0.5–1%; suspensions 1–2%; tablet binder 1–5%; tablet coating 0.5–5%; tablet disintegrant 2–10%; modified-release matrix 5–75%.",
-   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان افزاینده گرانروی، تعلیق‌کننده، امولسیفایر و غلیظ‌کننده، چسباننده، پلیمر پوشش و متلاشی‌کننده قرص، در ماتریکس‌های رهش اصلاح‌شده و از نظر درمانی به عنوان ملین حجیم‌کننده به کار می‌رود. غلظت‌های متداول: کرم، ژل و پماد 1–5%؛ امولسیفایر 1–5%؛ فرآورده‌های چشمی 0.5–1%؛ سوسپانسیون 1–2%؛ چسباننده قرص 1–5%؛ پوشش قرص 0.5–5%؛ متلاشی‌کننده قرص 2–10%؛ ماتریکس رهش اصلاح‌شده 5–75%."
+   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان افزاینده گرانروی، تعلیق‌کننده، امولسیفایر و غلیظ‌کننده، چسباننده، پلیمر پوشش و باززای قرص (Disintegrant)، در ماتریکس‌های رهش اصلاح‌شده و از نظر درمانی به عنوان ملین حجیم‌کننده به کار می‌رود. غلظت‌های متداول: کرم، ژل و پماد 1–5%؛ امولسیفایر 1–5%؛ فرآورده‌های چشمی 0.5–1%؛ سوسپانسیون 1–2%؛ چسباننده قرص 1–5%؛ پوشش قرص 0.5–5%؛ باززای قرص 2–10%؛ ماتریکس رهش اصلاح‌شده 5–75%."
   },
   "description": {
    "en": "A white to yellowish-white, practically odourless and tasteless, fibrous powder or granules. It is a cellulose in which part of the hydroxyl groups are methylated; grades are distinguished by the viscosity of a 2% w/v aqueous solution.",
@@ -3860,7 +3860,7 @@
   },
   "comments": {
    "en": "Pectin powder tends to form lumps; disperse it with sugar or another dry ingredient, or in a little ethanol or glycerin, before adding water with stirring. The degree of esterification and amidation determines the gelling mechanism and must be matched to the formulation.",
-   "fa": "پودر پکتین تمایل به کلوخه شدن دارد؛ پیش از افزودن آب همراه هم‌زدن، آن را با قند یا جزء خشک دیگر یا در کمی اتانول یا گلیسرین پراکنده کنید. درجه استری شدن و آمیده شدن، مکانیسم ژل شدن را تعیین می‌کند و باید با فرمولاسیون متناسب باشد."
+   "fa": "پودر پکتین تمایل به تشکیل کلوخه دارد؛ پیش از افزودن آب همراه هم‌زدن، آن را با قند یا جزء خشک دیگر یا در کمی اتانول یا گلیسرین پراکنده کنید. درجه استری شدن و آمیده شدن، مکانیسم ژل شدن را تعیین می‌کند و باید با فرمولاسیون متناسب باشد."
   },
   "refs": [
    "usp",

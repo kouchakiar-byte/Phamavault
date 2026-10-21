@@ -396,7 +396,7 @@
   ],
   "stability": {
    "en": "Stable when stored dry. It is hygroscopic, although less so than povidone, and caking can occur at high humidity. Store in an airtight container in a cool, dry place.",
-   "fa": "در شرایط خشک پایدار است. رطوبت‌گیر است، هرچند کمتر از پوویدون، و در رطوبت بالا ممکن است کلوخه شود. در ظرف کاملاً دربسته، در جای خنک و خشک نگهداری شود."
+   "fa": "در شرایط خشک پایدار است. رطوبت‌گیر است، هرچند کمتر از پوویدون، و در رطوبت بالا ممکن است دچار کلوخه‌ای شدن (Caking) شود. در ظرف کاملاً دربسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "Compatible with most excipients and drugs. Residual peroxides in the polymer can oxidise sensitive drugs, so the peroxide level should be considered for oxidation-prone actives.",
@@ -790,7 +790,7 @@
   "mw": "",
   "applications": {
    "en": "A 'superdisintegrant' used in tablets and capsules, in both direct compression and wet granulation. Typical concentrations: tablet disintegrant 0.5–5.0% (commonly about 2%); capsule disintegrant 10–25%. In wet granulation it is often split between the granules and the external phase.",
-   "fa": "یک متلاشی‌کننده قوی (Superdisintegrant) است که در قرص و کپسول، هم در پرس مستقیم و هم در گرانولاسیون مرطوب، به کار می‌رود. غلظت‌های متداول: متلاشی‌کننده قرص 0.5–5.0% (معمولاً حدود 2%)؛ متلاشی‌کننده کپسول 10–25%. در گرانولاسیون مرطوب اغلب بین داخل گرانول و فاز خارجی تقسیم می‌شود."
+   "fa": "یک سوپرباززا (Superdisintegrant) است که در قرص و کپسول، هم در پرس مستقیم و هم در گرانولاسیون مرطوب، به کار می‌رود. غلظت‌های متداول: باززای قرص 0.5–5.0% (معمولاً حدود 2%)؛ باززای کپسول 10–25%. در گرانولاسیون مرطوب اغلب بین داخل گرانول و فاز خارجی تقسیم می‌شود."
   },
   "description": {
    "en": "An odourless, white or greyish-white powder. It is an internally cross-linked form of carboxymethylcellulose sodium that swells strongly in water but does not dissolve.",
@@ -858,7 +858,7 @@
   },
   "manufacture": {
    "en": "Alkali cellulose, made by steeping wood pulp or cotton linters in sodium hydroxide, is reacted with sodium monochloroacetate to give carboxymethylcellulose sodium. Part of the carboxymethyl groups are then allowed to esterify with hydroxyl groups of neighbouring chains under acidic conditions and heat, producing the cross-links without an added cross-linking agent.",
-   "fa": "آلکالی‌سلولز که از خیساندن خمیر چوب یا لینتر پنبه در سدیم هیدروکسید تهیه می‌شود با سدیم مونوکلرواستات واکنش می‌دهد و کربوکسی‌متیل‌سلولز سدیم به دست می‌آید. سپس در شرایط اسیدی و با حرارت، بخشی از گروه‌های کربوکسی‌متیل با گروه‌های هیدروکسیل زنجیره‌های مجاور استری می‌شوند و اتصال عرضی بدون افزودن عامل اتصال‌دهنده ایجاد می‌شود."
+   "fa": "آلکالی‌سلولز که از غوطه‌ورسازی خمیر چوب یا لینتر پنبه در سدیم هیدروکسید تهیه می‌شود با سدیم مونوکلرواستات واکنش می‌دهد و کربوکسی‌متیل‌سلولز سدیم به دست می‌آید. سپس در شرایط اسیدی و با حرارت، بخشی از گروه‌های کربوکسی‌متیل با گروه‌های هیدروکسیل زنجیره‌های مجاور استری می‌شوند و اتصال عرضی بدون افزودن عامل اتصال‌دهنده ایجاد می‌شود."
   },
   "safety": {
    "en": "Not absorbed after oral administration and generally regarded as non-toxic and non-irritant. Very large oral amounts may have a laxative effect, but the quantities in tablets are far too small for this.",
@@ -910,7 +910,7 @@
   "mw": "> 1 000 000",
   "applications": {
    "en": "A water-insoluble 'superdisintegrant' used in tablets made by direct compression or by wet or dry granulation, typically at 2–5% w/w, and in orally disintegrating tablets. Micronised grades are used as suspension stabilisers and to improve dissolution of poorly soluble drugs. In the food industry it is used to clarify and stabilise beverages.",
-   "fa": "یک متلاشی‌کننده قوی (Superdisintegrant) نامحلول در آب است که در قرص‌های تولیدشده با پرس مستقیم یا گرانولاسیون مرطوب یا خشک، معمولاً با غلظت 2–5% وزنی، و در قرص‌های متلاشی‌شونده در دهان (ODT) به کار می‌رود. گریدهای میکرونیزه به عنوان پایدارکننده سوسپانسیون و برای بهبود انحلال داروهای کم‌محلول مصرف می‌شوند. در صنایع غذایی برای شفاف‌سازی و پایدارسازی نوشیدنی‌ها استفاده می‌شود."
+   "fa": "یک سوپرباززا (Superdisintegrant) نامحلول در آب است که در قرص‌های تولیدشده با پرس مستقیم یا گرانولاسیون مرطوب یا خشک، معمولاً با غلظت 2–5% وزنی، و در قرص‌های باززاشونده در دهان (ODT) به کار می‌رود. گریدهای میکرونیزه به عنوان پایدارکننده سوسپانسیون و برای بهبود انحلال داروهای کم‌محلول مصرف می‌شوند. در صنایع غذایی برای شفاف‌سازی و پایدارسازی نوشیدنی‌ها استفاده می‌شود."
   },
   "description": {
    "en": "A white to creamy-white, finely divided, free-flowing, practically tasteless, odourless or nearly odourless, hygroscopic powder. Pharmacopoeias describe a coarser Type A and a finer Type B.",
@@ -988,7 +988,7 @@
   },
   "comments": {
    "en": "Crospovidone works mainly by capillary wicking and recovery of particles deformed during compression, rather than by gelling, so it does not slow dissolution by forming a viscous layer and its action is largely independent of pH. Coarse grades disintegrate faster, while fine grades give smoother tablet surfaces and better mouthfeel in orally disintegrating tablets.",
-   "fa": "کراسپوویدون عمدتاً از طریق جذب مویینگی آب و بازگشت شکل ذراتی که هنگام پرس تغییر شکل یافته‌اند عمل می‌کند، نه با ژل شدن؛ بنابراین با ایجاد لایه ویسکوز انحلال را کند نمی‌کند و عملکرد آن تا حد زیادی مستقل از pH است. گریدهای درشت متلاشی شدن سریع‌تری ایجاد می‌کنند و گریدهای ریز سطح قرص صاف‌تر و حس دهانی بهتری در قرص‌های ODT می‌دهند."
+   "fa": "کراسپوویدون عمدتاً از طریق جذب مویینگی آب و بازگشت شکل ذراتی که هنگام پرس تغییر شکل یافته‌اند عمل می‌کند، نه با ژل شدن؛ بنابراین با ایجاد لایه ویسکوز انحلال را کند نمی‌کند و عملکرد آن تا حد زیادی مستقل از pH است. گریدهای درشت باززایی سریع‌تری ایجاد می‌کنند و گریدهای ریز سطح قرص صاف‌تر و حس دهانی بهتری در قرص‌های ODT می‌دهند."
   },
   "refs": [
    "usp",
@@ -1179,7 +1179,7 @@
   ],
   "stability": {
    "en": "Stable under normal conditions, but it takes up moisture at high relative humidity and may cake. Store in a well-closed container in a cool, dry place.",
-   "fa": "در شرایط معمول پایدار است ولی در رطوبت نسبی بالا آب جذب می‌کند و ممکن است کلوخه شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+   "fa": "در شرایط معمول پایدار است ولی در رطوبت نسبی بالا آب جذب می‌کند و ممکن است دچار کلوخه‌ای شدن (Caking) شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "As a reducing sugar mixture it can undergo Maillard reactions with drugs containing primary amine groups, which causes browning. Incompatible with strong oxidising agents.",
@@ -1555,7 +1555,7 @@
   },
   "comments": {
    "en": "It consolidates mainly by brittle fracture, so tablet strength is relatively insensitive to lubricant level and mixing time, and it is often combined with plastically deforming microcrystalline cellulose. It is abrasive to tooling, and because it is insoluble a disintegrant is needed.",
-   "fa": "عمدتاً با شکست شکننده (brittle fracture) فشرده می‌شود؛ بنابراین استحکام قرص نسبت به مقدار روان‌کننده و زمان اختلاط حساسیت کمی دارد و اغلب با سلولز میکروکریستالی که تغییر شکل پلاستیک دارد ترکیب می‌شود. برای ابزار پرس سایشی است و چون نامحلول است به متلاشی‌کننده نیاز دارد."
+   "fa": "عمدتاً با شکست شکننده (brittle fracture) فشرده می‌شود؛ بنابراین استحکام قرص نسبت به مقدار روان‌کننده و زمان اختلاط حساسیت کمی دارد و اغلب با سلولز میکروکریستالی که تغییر شکل پلاستیک دارد ترکیب می‌شود. برای ابزار پرس سایشی است و چون نامحلول است به باززا (Disintegrant) نیاز دارد."
   },
   "refs": [
    "usp",
@@ -2312,7 +2312,7 @@
   },
   "safety": {
    "en": "Rapidly absorbed through the skin and able to carry dissolved substances with it, so toxic solutes must not be applied in DMSO. Topical use can cause local irritation, erythema, itching and urticaria (it releases histamine), and patients notice a garlic-like breath odour. Infusion of cells cryopreserved in DMSO can cause nausea, flushing and cardiovascular reactions; lens changes have been seen in some animal species.",
-   "fa": "به‌سرعت از پوست جذب می‌شود و می‌تواند مواد حل‌شده را با خود ببرد؛ بنابراین مواد سمی نباید در DMSO روی پوست مالیده شوند. مصرف موضعی ممکن است تحریک موضعی، اریتم، خارش و کهیر ایجاد کند (هیستامین آزاد می‌کند) و بیماران بوی تنفس شبیه سیر را متوجه می‌شوند. انفوزیون سلول‌های منجمدشده در DMSO ممکن است تهوع، برافروختگی و واکنش‌های قلبی-عروقی ایجاد کند؛ در برخی گونه‌های حیوانی تغییرات عدسی چشم دیده شده است."
+   "fa": "به‌سرعت از پوست جذب می‌شود و می‌تواند مواد حل‌شده را با خود ببرد؛ بنابراین مواد سمی نباید در DMSO روی پوست به کار روند. مصرف موضعی ممکن است تحریک موضعی، اریتم، خارش و کهیر ایجاد کند (هیستامین آزاد می‌کند) و بیماران بوی تنفس شبیه سیر را متوجه می‌شوند. انفوزیون سلول‌های منجمدشده در DMSO ممکن است تهوع، برافروختگی و واکنش‌های قلبی-عروقی ایجاد کند؛ در برخی گونه‌های حیوانی تغییرات عدسی چشم دیده شده است."
   },
   "handling": {
    "en": "Wear suitable gloves (for example butyl rubber; DMSO penetrates many glove materials) and eye protection, and avoid skin contact with solutions of other chemicals. Combustible; keep away from heat and strong oxidisers.",
@@ -2584,7 +2584,7 @@
   "mw": "444.56",
   "applications": {
    "en": "An anionic surfactant used as a wetting, dispersing and solubilising agent in tablets, capsules, suspensions and topical products, typically at 0.01–1.0%; it improves wetting and dissolution of hydrophobic drugs and has been used at about 0.5% as a disintegration aid. It is also used therapeutically as a faecal softener.",
-   "fa": "سورفکتانت آنیونی است که به عنوان عامل ترکننده، پراکنده‌کننده و حل‌کننده در قرص، کپسول، سوسپانسیون و فرآورده‌های موضعی، معمولاً با غلظت 0.01–1.0%، به کار می‌رود؛ ترشوندگی و انحلال داروهای آب‌گریز را بهبود می‌دهد و با غلظت حدود 0.5% به عنوان کمک‌متلاشی‌کننده نیز استفاده شده است. به عنوان نرم‌کننده مدفوع نیز مصرف درمانی دارد."
+   "fa": "سورفکتانت آنیونی است که به عنوان عامل ترکننده، پراکنده‌کننده و حل‌کننده در قرص، کپسول، سوسپانسیون و فرآورده‌های موضعی، معمولاً با غلظت 0.01–1.0%، به کار می‌رود؛ ترشوندگی و انحلال داروهای آب‌گریز را بهبود می‌دهد و با غلظت حدود 0.5% به عنوان کمک‌باززا نیز استفاده شده است. به عنوان نرم‌کننده مدفوع نیز مصرف درمانی دارد."
   },
   "description": {
    "en": "A white or almost white, waxy, bitter-tasting, hygroscopic solid with a characteristic odour, supplied as pellets, flakes or rolls; powder grades often contain sodium benzoate as a processing aid.",
