@@ -28,7 +28,7 @@ export async function SiteFooter() {
         </div>
         {sectionGroups.map((g) => (
           <div key={g.key}>
-            <h2 className="text-sm font-semibold text-white">{g.title[locale]}</h2>
+            <h2 className="text-sm font-bold text-white">{g.title[locale]}</h2>
             <ul className="mt-4 space-y-2.5 text-sm">
               {sections
                 .filter((s) => s.group === g.key)

@@ -28,7 +28,7 @@ export default async function ContactPage() {
               <Icon className="mt-0.5 size-5 shrink-0 text-molecule-500" aria-hidden="true" />
               <div>
                 <dt className="text-sm text-muted">{label}</dt>
-                <dd className="mt-1 font-semibold text-vault-900" dir={ltr ? "ltr" : undefined}>
+                <dd className="mt-1 font-bold text-vault-900" dir={ltr ? "ltr" : undefined}>
                   {href ? (
                     <a href={href} className="hover:text-molecule-700">
                       {value}

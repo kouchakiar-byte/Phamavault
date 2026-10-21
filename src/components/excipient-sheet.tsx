@@ -108,7 +108,7 @@ export function SheetPage({ children, locale, printBlocked }: { children: ReactN
           <button
             type="button"
             onClick={unshield}
-            className="absolute inset-0 z-20 flex flex-col items-center justify-start gap-3 bg-white/40 px-6 pt-40 text-center text-sm font-semibold text-vault-900"
+            className="absolute inset-0 z-20 flex flex-col items-center justify-start gap-3 bg-white/40 px-6 pt-40 text-center text-sm font-bold text-vault-900"
           >
             <EyeOff className="size-8 text-molecule-600" aria-hidden="true" />
             {copy.shield[locale]}
@@ -138,7 +138,7 @@ export function SheetHeader({ docTitle }: { docTitle: string }) {
         </div>
       </div>
       <div className="text-end text-xs">
-        <p className="hidden font-semibold text-vault-900 sm:block">{docTitle}</p>
+        <p className="hidden font-bold text-vault-900 sm:block">{docTitle}</p>
         <p className="mt-1 font-mono text-molecule-700">pharmavault.ir</p>
       </div>
     </header>

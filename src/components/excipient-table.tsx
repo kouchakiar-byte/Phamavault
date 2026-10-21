@@ -67,7 +67,7 @@ function SourceList({ r, locale, wide = false }: { r: Item; locale: Locale; wide
                     aria-hidden="true"
                   />
                   <span className="min-w-0">
-                    <span className="block text-sm font-semibold text-vault-900">
+                    <span className="block text-sm font-bold text-vault-900">
                       <bdi>{s.label}</bdi>
                     </span>
                     <span className="block text-xs leading-relaxed text-muted">
@@ -109,7 +109,7 @@ function Detail({
       <dl className="space-y-2 text-sm">
         {rows.map(({ k, v }) => (
           <div key={k.en} className="flex gap-3">
-            <dt className="w-36 shrink-0 font-semibold text-vault-900">
+            <dt className="w-36 shrink-0 font-bold text-vault-900">
               {k[locale]}
             </dt>
             <dd className="leading-relaxed text-ink">
@@ -129,7 +129,7 @@ function Detail({
             <span className="block text-xs leading-relaxed text-vault-100/75">{excipientSheet.openNote[locale]}</span>
           </span>
         </Link>
-        <p className="text-sm font-semibold text-vault-900">{t.read[locale]}</p>
+        <p className="text-sm font-bold text-vault-900">{t.read[locale]}</p>
         <SourceList r={r} locale={locale} />
       </div>
     </div>
@@ -290,7 +290,7 @@ export function ExcipientTable({ locale, data }: Props) {
                   {srcOpen === id && !isOpen && (
                     <tr>
                       <td colSpan={7} className="bg-vault-50 p-4">
-                        <p className="text-sm font-semibold text-vault-900">
+                        <p className="text-sm font-bold text-vault-900">
                           <bdi>{r.name}</bdi> — {t.detail.read[locale]}
                         </p>
                         <SourceList r={r} locale={locale} wide />

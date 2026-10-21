@@ -88,7 +88,7 @@ export default async function QaPage() {
             <tbody>
               {k.qrmTools.map((t) => (
                 <tr key={t.name}>
-                  <td className="font-semibold text-vault-900">{locale === "fa" && t.nameFa ? t.nameFa : t.name}</td>
+                  <td className="font-bold text-vault-900">{locale === "fa" && t.nameFa ? t.nameFa : t.name}</td>
                   <td>{t.use[locale]}</td>
                   <td className="min-w-72 leading-relaxed">{t.method[locale]}</td>
                 </tr>

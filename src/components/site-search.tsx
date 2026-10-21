@@ -61,7 +61,7 @@ export function SearchResults({
                     className={`group flex items-start gap-3 px-3.5 py-2.5 transition ${on ? "bg-molecule-50" : "hover:bg-vault-50"}`}
                   >
                     <span className="min-w-0 flex-1">
-                      <span className="block truncate text-sm font-semibold text-vault-900">{hit.title}</span>
+                      <span className="block truncate text-sm font-bold text-vault-900">{hit.title}</span>
                       {hit.sub && <span className="mt-0.5 block truncate text-xs text-muted">{hit.sub}</span>}
                     </span>
                     {hit.locked ? (
@@ -156,7 +156,7 @@ export function SourceLinks({ locale, scope, query, compact = false }: { locale:
           <li key={s.key}>
             <a href={s.href} target="_blank" rel="noopener noreferrer" className="group flex items-start gap-3 py-2.5">
               <span className="min-w-0 flex-1">
-                <span className="block text-sm font-semibold text-vault-900 group-hover:text-molecule-700" dir="ltr" style={{ textAlign: "start" }}>
+                <span className="block text-sm font-bold text-vault-900 group-hover:text-molecule-700" dir="ltr" style={{ textAlign: "start" }}>
                   {s.name}
                 </span>
                 <span className="mt-0.5 block text-xs text-muted">

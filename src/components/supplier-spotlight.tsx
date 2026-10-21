@@ -103,7 +103,7 @@ export function SupplierSpotlight({ locale }: { locale: Locale }) {
                 ))}
               </dl>
               <div>
-                <p className="text-sm font-semibold text-vault-900">{t.byCategory[locale]}</p>
+                <p className="text-sm font-bold text-vault-900">{t.byCategory[locale]}</p>
                 <ul className="mt-3 flex flex-wrap gap-2">
                   {Object.entries(categoryCounts).map(([k, n]) => (
                     <li key={k}>

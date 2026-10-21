@@ -66,7 +66,7 @@ export function IranMakers({ locale, ingredient }: { locale: Locale; ingredient:
       {state === "done" &&
         generics.map((g) => (
           <div key={g.genericCode + g.titleEn} className="mt-2 overflow-x-auto rounded-xl border border-line">
-            <p className="flex flex-wrap items-center gap-x-2 gap-y-1 border-b border-line bg-vault-50 px-3 py-2 text-sm font-semibold text-vault-900">
+            <p className="flex flex-wrap items-center gap-x-2 gap-y-1 border-b border-line bg-vault-50 px-3 py-2 text-sm font-bold text-vault-900">
               <span>{splitStrength(g.titleFa || g.titleEn)[0]}</span>
               {splitStrength(g.titleFa || g.titleEn)[1] && (
                 <span dir="ltr" className="rounded-md bg-white px-1.5 py-0.5 text-xs font-semibold text-molecule-700 ring-1 ring-line">

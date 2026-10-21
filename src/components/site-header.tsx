@@ -26,7 +26,7 @@ export async function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-line/80 bg-white/90 backdrop-blur">
-      <Container className="relative flex h-18 items-center justify-between gap-3 xl:gap-6">
+      <Container className="relative flex h-18 items-center justify-between gap-3 xl:gap-4">
         <div className="flex items-center gap-2">
           <Link href={href(locale)} aria-label="PharmaVault">
             <Logo />
@@ -51,7 +51,7 @@ export async function SiteHeader() {
             <Link
               href={href(locale, "#sections")}
               aria-haspopup="true"
-              className="inline-flex items-center gap-1 whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700"
+              className="inline-flex items-center gap-1 whitespace-nowrap rounded-lg px-1.5 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700"
             >
               {nav.sections[locale]}
               <ChevronDown className="size-4 transition group-focus-within:rotate-180 group-hover:rotate-180" aria-hidden="true" />
@@ -72,7 +72,7 @@ export async function SiteHeader() {
                           <li key={slug}>
                             <Link data-menu-item href={href(locale, path)} className="flex gap-2.5 rounded-lg p-2.5 hover:bg-vault-50">
                               <Icon className="mt-0.5 size-[1.1rem] shrink-0 text-molecule-500" aria-hidden="true" />
-                              <span className="text-sm font-semibold leading-snug text-vault-900">{title[locale]}</span>
+                              <span className="text-sm font-bold leading-snug text-vault-900">{title[locale]}</span>
                             </Link>
                           </li>
                         ))}
@@ -86,7 +86,7 @@ export async function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className={`whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700 ${item.wide ? "hidden xl:block" : ""}`}
+              className={`whitespace-nowrap rounded-lg px-1.5 py-2 text-sm font-medium text-vault-800 hover:text-molecule-700 ${item.wide ? "hidden xl:block" : ""}`}
             >
               {item.label}
             </Link>
@@ -101,10 +101,10 @@ export async function SiteHeader() {
           <Link
             href={href(locale, "account")}
             aria-label={account.nav.account[locale]}
-            className="hidden items-center gap-2 whitespace-nowrap rounded-full bg-vault-900 px-3 py-2.5 text-sm font-semibold text-white transition hover:bg-vault-800 lg:inline-flex xl:px-5"
+            className="hidden items-center gap-2 whitespace-nowrap rounded-full bg-vault-900 px-3 py-2.5 text-sm font-semibold text-white transition hover:bg-vault-800 lg:inline-flex min-[1340px]:px-5"
           >
             <UserRound className="size-4" aria-hidden="true" />
-            <span className="hidden xl:inline">{account.nav.account[locale]}</span>
+            <span className="hidden min-[1340px]:inline">{account.nav.account[locale]}</span>
           </Link>
           <MobileNav
             menuLabel={nav.menu[locale]}

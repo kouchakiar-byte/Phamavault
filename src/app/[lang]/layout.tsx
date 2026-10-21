@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, JetBrains_Mono, Vazirmatn } from "next/font/google";
+import { IBM_Plex_Sans, JetBrains_Mono, Readex_Pro } from "next/font/google";
 import { InstallApp } from "@/components/install-app";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -10,8 +10,9 @@ import { languageAlternates } from "@/lib/metadata";
 import { getLocale } from "@/i18n/locale";
 import "../globals.css";
 
-const vazirmatn = Vazirmatn({
-  variable: "--font-vazirmatn",
+// Persian text: Readex Pro, a lively modern sans with full Persian letterforms.
+const readex = Readex_Pro({
+  variable: "--font-readex",
   subsets: ["arabic", "latin"],
 });
 
@@ -59,7 +60,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
     <html
       lang={locale}
       dir={localeDirection[locale]}
-      className={`locale-${locale} ${vazirmatn.variable} ${plexSans.variable} ${numMono.variable} h-full antialiased`}
+      className={`locale-${locale} ${readex.variable} ${plexSans.variable} ${numMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
         <a

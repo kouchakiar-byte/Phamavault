@@ -54,13 +54,13 @@ export function BudCalculator({ locale }: { locale: Locale }) {
       <dl className="flex h-fit flex-col gap-3 rounded-xl bg-vault-50 p-5 text-sm">
         <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-line pb-2.5 text-muted">
           <dt>{t.days[locale]}</dt>
-          <dd className="font-semibold text-ink">
+          <dd className="font-bold text-ink">
             {kind.days.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US")} {t.daysUnit[locale]}
           </dd>
         </div>
         <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-line pb-2.5 text-muted">
           <dt>{t.storage[locale]}</dt>
-          <dd className="font-semibold text-ink">{kind.storage[locale]}</dd>
+          <dd className="font-bold text-ink">{kind.storage[locale]}</dd>
         </div>
         <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-line pb-2.5 text-muted">
           <dt>{t.result[locale]}</dt>

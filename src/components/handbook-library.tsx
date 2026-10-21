@@ -57,7 +57,7 @@ export function HandbookLibrary({ handbooks, locale }: { handbooks: Handbook[]; 
                   </summary>
                   <div className="border-t border-line px-5 pb-6 pt-4">
                     <p className="leading-loose text-ink">{topic.summary[locale]}</p>
-                    <p className="mt-5 text-sm font-semibold text-vault-900">{t.keyPoints[locale]}</p>
+                    <p className="mt-5 text-sm font-bold text-vault-900">{t.keyPoints[locale]}</p>
                     <ul className="mt-2 space-y-2.5">
                       {topic.points.map((point) => (
                         <li key={point.en} className="flex gap-2.5 text-sm leading-relaxed text-muted">

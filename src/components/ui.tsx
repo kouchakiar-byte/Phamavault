@@ -55,7 +55,7 @@ export function BiTitle({
 
 export function Eyebrow({ children, inverted = false }: { children: ReactNode; inverted?: boolean }) {
   return (
-    <p className={`text-sm font-semibold tracking-wide ${inverted ? "text-molecule-400" : "text-molecule-600"}`}>
+    <p className={`text-sm font-bold tracking-wide ${inverted ? "text-molecule-400" : "text-molecule-600"}`}>
       {children}
     </p>
   );
