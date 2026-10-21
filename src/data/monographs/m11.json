@@ -425,7 +425,7 @@
   },
   "comments": {
    "en": "Because of its low water solubility, propylparaben is usually dissolved in hot water, in propylene glycol or in ethanol before addition, or the more soluble sodium salt is used (which raises the pH). The EMA reflection paper on parabens asks that its use in paediatric oral medicines be justified.",
-   "fa": "به دلیل حلالیت کم در آب، پروپیل‌پارابن معمولاً پیش از افزودن در آب داغ، پروپیلن گلیکول یا اتانول حل می‌شود، یا از نمک سدیم آن که محلول‌تر است استفاده می‌شود (که pH را بالا می‌برد). مقاله بازتابی EMA درباره پارابن‌ها خواستار توجیه مصرف آن در داروهای خوراکی کودکان است."
+   "fa": "به دلیل حلالیت کم در آب، پروپیل‌پارابن معمولاً پیش از افزودن در آب داغ، پروپیلن گلیکول یا اتانول حل می‌شود، یا از نمک سدیم آن که محلول‌تر است استفاده می‌شود (که pH را بالا می‌برد). سند Reflection paper آژانس EMA درباره پارابن‌ها خواستار توجیه مصرف آن در داروهای خوراکی کودکان است."
   },
   "refs": [
    "usp",
@@ -922,7 +922,7 @@
   "mw": "",
   "applications": {
    "en": "A versatile excipient in oral solid dosage forms, used as a diluent, binder and disintegrant, and also as a glidant and in dusting powders. Typical concentrations: tablet disintegrant 3–25% w/w (often about 5–15%); binder, added as a freshly prepared paste in wet granulation, 5–25% w/w; diluent in tablets and capsules at higher levels. It is also used as a thickener in foods and as a component of topical dusting powders.",
-   "fa": "ماده جانبی همه‌کاره‌ای در اشکال دارویی جامد خوراکی است که به عنوان رقیق‌کننده، چسباننده و متلاشی‌کننده، و همچنین به عنوان تسهیل‌کننده جریان (Glidant) و در پودرهای پاشیدنی به کار می‌رود. غلظت‌های متداول: متلاشی‌کننده قرص 3–25% وزنی (اغلب حدود 5–15%)؛ چسباننده به صورت خمیر تازه‌تهیه‌شده در گرانولاسیون مرطوب 5–25% وزنی؛ رقیق‌کننده قرص و کپسول در مقادیر بیشتر. همچنین به عنوان غلیظ‌کننده در مواد غذایی و جزئی از پودرهای پاشیدنی موضعی مصرف می‌شود."
+   "fa": "ماده جانبی همه‌کاره‌ای در اشکال دارویی جامد خوراکی است که به عنوان رقیق‌کننده، چسباننده و باززا، و همچنین به عنوان تسهیل‌کننده جریان (Glidant) و در پودرهای پاشیدنی به کار می‌رود. غلظت‌های متداول: باززای قرص 3–25% وزنی (اغلب حدود 5–15%)؛ چسباننده به صورت خمیر تازه‌تهیه‌شده در گرانولاسیون مرطوب 5–25% وزنی؛ رقیق‌کننده قرص و کپسول در مقادیر بیشتر. همچنین به عنوان غلیظ‌کننده در مواد غذایی و جزئی از پودرهای پاشیدنی موضعی مصرف می‌شود."
   },
   "description": {
    "en": "An odourless, tasteless, fine white to off-white powder. Under the microscope the granules are polyhedral or rounded, roughly 2–30 µm across, with a central hilum, and show a dark cross between crossed polarisers. Normal maize starch contains roughly one-quarter amylose and three-quarters amylopectin.",
@@ -1010,7 +1010,7 @@
   },
   "comments": {
    "en": "Native maize starch flows and compresses poorly, so it is seldom used alone in direct compression; pregelatinised starch is preferred there. As a disintegrant it works mainly by wicking and limited swelling and is more effective when part is added extragranularly. Its moisture content can be transferred to moisture-sensitive drugs.",
-   "fa": "نشاسته ذرت طبیعی جریان‌پذیری و تراکم‌پذیری ضعیفی دارد و به همین دلیل به‌ندرت به تنهایی در پرس مستقیم به کار می‌رود؛ در این مورد نشاسته پیش‌ژلاتینه ترجیح داده می‌شود. به عنوان متلاشی‌کننده عمدتاً از راه جذب مویینگی آب و تورم محدود عمل می‌کند و اگر بخشی از آن خارج از گرانول اضافه شود مؤثرتر است. رطوبت آن ممکن است به داروهای حساس به رطوبت منتقل شود."
+   "fa": "نشاسته ذرت طبیعی جریان‌پذیری و تراکم‌پذیری ضعیفی دارد و به همین دلیل به‌ندرت به تنهایی در پرس مستقیم به کار می‌رود؛ در این مورد نشاسته پیش‌ژلاتینه ترجیح داده می‌شود. به عنوان باززا عمدتاً از راه جذب مویینگی آب و تورم محدود عمل می‌کند و اگر بخشی از آن خارج از گرانول اضافه شود مؤثرتر است. رطوبت آن ممکن است به داروهای حساس به رطوبت منتقل شود."
   },
   "refs": [
    "usp",
@@ -1103,7 +1103,7 @@
   },
   "manufacture": {
    "en": "Obtained by hydrolysis (fat splitting) of animal fats or of vegetable oils such as hydrogenated palm or cottonseed oil; the fatty acid mixture is hydrogenated and separated by distillation, pressing or crystallisation to give the required stearic acid content.",
-   "fa": "از هیدرولیز (شکستن چربی) چربی‌های حیوانی یا روغن‌های گیاهی مانند روغن پالم یا پنبه‌دانه هیدروژنه به دست می‌آید؛ مخلوط اسیدهای چرب هیدروژنه و با تقطیر، پرس یا تبلور جداسازی می‌شود تا مقدار مورد نیاز استئاریک اسید حاصل شود."
+   "fa": "از هیدرولیز (Fat splitting) چربی‌های حیوانی یا روغن‌های گیاهی مانند روغن پالم یا پنبه‌دانه هیدروژنه به دست می‌آید؛ مخلوط اسیدهای چرب هیدروژنه و با تقطیر، پرس یا تبلور جداسازی می‌شود تا مقدار مورد نیاز استئاریک اسید حاصل شود."
   },
   "safety": {
    "en": "Widely used in oral and topical products and in foods, and regarded as non-toxic and non-irritant. It is a normal component of dietary fat.",
@@ -1269,7 +1269,7 @@
   "mw": "397.64",
   "applications": {
    "en": "An intense sweetener, roughly 600 times as sweet as sucrose (300–1000 times depending on the system), used in oral solutions, suspensions, syrups, chewable and orally disintegrating tablets, powders and foods. It has a clean, sugar-like taste with little aftertaste and is often combined with other sweeteners and flavours. Because of its potency it is used at low concentrations, usually well below 0.5% w/w.",
-   "fa": "شیرین‌کننده‌ای قوی با شیرینی تقریباً 600 برابر ساکارز (بسته به سامانه 300–1000 برابر) است که در محلول‌ها، سوسپانسیون‌ها و شربت‌های خوراکی، قرص‌های جویدنی و متلاشی‌شونده در دهان، پودرها و مواد غذایی مصرف می‌شود. طعمی خالص و شبیه قند با طعم باقی‌مانده اندک دارد و اغلب با شیرین‌کننده‌ها و طعم‌دهنده‌های دیگر ترکیب می‌شود. به دلیل قدرت زیاد، در غلظت‌های کم، معمولاً بسیار کمتر از 0.5% وزنی، به کار می‌رود."
+   "fa": "شیرین‌کننده‌ای قوی با شیرینی تقریباً 600 برابر ساکارز (بسته به سامانه 300–1000 برابر) است که در محلول‌ها، سوسپانسیون‌ها و شربت‌های خوراکی، قرص‌های جویدنی و باززاشونده در دهان، پودرها و مواد غذایی مصرف می‌شود. طعمی خالص و شبیه قند با طعم باقی‌مانده اندک دارد و اغلب با شیرین‌کننده‌ها و طعم‌دهنده‌های دیگر ترکیب می‌شود. به دلیل قدرت زیاد، در غلظت‌های کم، معمولاً بسیار کمتر از 0.5% وزنی، به کار می‌رود."
   },
   "description": {
    "en": "A white to off-white, practically odourless, free-flowing crystalline powder with a sweet taste.",
@@ -1910,7 +1910,7 @@
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled. Avoid generating dust; eye protection and a dust mask are recommended. Spilled powder becomes very slippery when wet.",
-   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد گردوغبار خودداری شود؛ استفاده از محافظ چشم و ماسک گردوغبار توصیه می‌شود. پودر ریخته‌شده در صورت خیس شدن بسیار لغزنده می‌شود."
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد گردوغبار خودداری شود؛ استفاده از محافظ چشم و ماسک گردوغبار توصیه می‌شود. پودر ریخته‌شده در صورت مرطوب‌شدن بسیار لغزنده می‌شود."
   },
   "regulatory": {
    "en": "Approved as a food additive in the USA and accepted in Europe as a food additive (E415). Included in the FDA Inactive Ingredient Database (oral solutions, suspensions and tablets; rectal and topical preparations) and in non-parenteral medicines licensed in Europe.",
@@ -1922,7 +1922,7 @@
   },
   "comments": {
    "en": "To avoid lumps, disperse the powder in water with vigorous stirring or pre-wet it with glycerin, propylene glycol or ethanol before adding water. It shows synergistic viscosity increases with galactomannans such as guar and locust bean gum.",
-   "fa": "برای جلوگیری از کلوخه شدن، پودر را با هم زدن شدید در آب پراکنده کنید یا پیش از افزودن آب با گلیسرین، پروپیلن گلیکول یا اتانول خیس کنید. با گالاکتومانان‌هایی مانند صمغ گوار و صمغ لوبیای خرنوب افزایش ویسکوزیته هم‌افزا نشان می‌دهد."
+   "fa": "برای جلوگیری از تشکیل کلوخه، پودر را با هم زدن شدید در آب پراکنده کنید یا پیش از افزودن آب با گلیسرین، پروپیلن گلیکول یا اتانول مرطوب کنید. با گالاکتومانان‌هایی مانند صمغ گوار و صمغ لوبیای خرنوب افزایش ویسکوزیته هم‌افزا نشان می‌دهد."
   },
   "refs": [
    "usp",

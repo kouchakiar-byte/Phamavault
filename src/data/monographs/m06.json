@@ -92,7 +92,7 @@
   },
   "manufacture": {
    "en": "Originally isolated from coal tar, phenol is now made mostly synthetically, chiefly by the cumene process, in which cumene hydroperoxide is cleaved with acid to give phenol and acetone.",
-   "fa": "فنل در ابتدا از قطران زغال‌سنگ جدا می‌شد ولی اکنون عمدتاً به روش سنتزی و بیشتر با فرآیند کومن تولید می‌شود؛ در این فرآیند کومن هیدروپراکسید با اسید شکسته می‌شود و فنل و استون به دست می‌آید."
+   "fa": "فنل در ابتدا از قطران زغال‌سنگ جدا می‌شد ولی اکنون عمدتاً به روش سنتزی و بیشتر با فرآیند کومن تولید می‌شود؛ در این فرآیند کومن هیدروپراکسید با اسید تجزیه می‌شود و فنل و استون به دست می‌آید."
   },
   "safety": {
    "en": "Concentrated phenol is corrosive to skin and mucous membranes and is rapidly absorbed through the skin, lungs and gut; systemic poisoning can affect the central nervous system, heart and kidneys. At the low concentrations used as a preservative it is generally well tolerated, although local irritation and rare hypersensitivity reactions have been reported.",
@@ -459,7 +459,7 @@
   "mw": "",
   "applications": {
    "en": "Used mainly as a tablet disintegrant, typically at 2–10% w/w, in both direct compression and wet granulation. Its strong swelling on contact with water gives rapid disintegration without forming a gel. It is not normally used for its ion-exchange properties.",
-   "fa": "عمدتاً به عنوان متلاشی‌کننده قرص با غلظت معمول 2–10% وزنی، هم در پرس مستقیم و هم در گرانولاسیون مرطوب، به کار می‌رود. تورم شدید آن در تماس با آب باعث متلاشی شدن سریع قرص بدون تشکیل ژل می‌شود. معمولاً به دلیل خاصیت تبادل یونی مصرف نمی‌شود."
+   "fa": "عمدتاً به عنوان باززای قرص (Disintegrant) با غلظت معمول 2–10% وزنی، هم در پرس مستقیم و هم در گرانولاسیون مرطوب، به کار می‌رود. تورم شدید آن در تماس با آب باعث باززایی سریع قرص بدون تشکیل ژل می‌شود. معمولاً به دلیل خاصیت تبادل یونی مصرف نمی‌شود."
   },
   "description": {
    "en": "A cation-exchange resin made from methacrylic acid cross-linked with divinylbenzene, in the potassium salt form. It is supplied as a fine, free-flowing, cream-coloured powder with little or no odour or taste.",
@@ -653,7 +653,7 @@
   },
   "comments": {
    "en": "The pharmacopoeias cover poloxamers 124, 188, 237, 338 and 407. Thermoreversible poloxamer 407 gels are best prepared by the 'cold method', dissolving the polymer in chilled water; the gelation temperature falls as the polymer concentration increases and is shifted by salts and other additives.",
-   "fa": "فارماکوپه‌ها پولوکسامرهای 124، 188، 237، 338 و 407 را پوشش می‌دهند. ژل‌های برگشت‌پذیر حرارتی پولوکسامر 407 بهتر است به «روش سرد» و با حل کردن پلیمر در آب سرد تهیه شوند؛ دمای ژل شدن با افزایش غلظت پلیمر کاهش می‌یابد و نمک‌ها و دیگر افزودنی‌ها آن را جابه‌جا می‌کنند."
+   "fa": "فارماکوپه‌ها پولوکسامرهای 124، 188، 237، 338 و 407 را پوشش می‌دهند. ژل‌های برگشت‌پذیر حرارتی پولوکسامر 407 بهتر است به «روش سرد» و با حل کردن پلیمر در آب سرد تهیه شوند؛ دمای ژل شدن با افزایش غلظت پلیمر کاهش می‌یابد و نمک‌ها و دیگر افزودنی‌ها آن را تغییر می‌دهند."
   },
   "refs": [
    "usp",
@@ -833,7 +833,7 @@
   ],
   "stability": {
    "en": "Stable under normal conditions but hygroscopic; it absorbs moisture and may cake when exposed to humid air. Store in a well-closed container in a cool, dry place.",
-   "fa": "در شرایط معمول پایدار ولی رطوبت‌گیر است؛ در هوای مرطوب رطوبت جذب می‌کند و ممکن است کلوخه شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+   "fa": "در شرایط معمول پایدار ولی رطوبت‌گیر است؛ در هوای مرطوب رطوبت جذب می‌کند و ممکن است دچار کلوخه‌ای شدن (Caking) شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "Incompatible with strong oxidising agents. The acidic unneutralised grades may affect acid-sensitive drugs, and residual reducing end groups can give some browning with amines on heating.",
@@ -882,7 +882,7 @@
   "mw": "≈ 100 000–7 000 000 (approximate average, depending on grade)",
   "applications": {
    "en": "Used as a hydrophilic matrix former in extended-release tablets, as the swelling 'push' layer in osmotic pump tablets, as a tablet binder, mucoadhesive and thickening agent, and in hot-melt extrusion. High-molecular-weight grades are used in abuse-deterrent tablets because they make the tablet hard to crush and form viscous gels that hinder extraction and injection. Concentrations range from about 5% as a binder to well over 50% in extended-release matrices.",
-   "fa": "به عنوان سازنده ماتریکس آب‌دوست در قرص‌های آهسته‌رهش، به عنوان لایه «رانش» متورم‌شونده در قرص‌های پمپ اسمزی، چسباننده قرص، عامل چسبنده مخاطی و غلیظ‌کننده، و در اکستروژن مذاب داغ (HME) به کار می‌رود. گریدهای با وزن مولکولی بالا در قرص‌های بازدارنده سوءمصرف (abuse-deterrent) مصرف می‌شوند، زیرا خرد کردن قرص را دشوار و با تشکیل ژل ویسکوز، استخراج و تزریق را مختل می‌کنند. غلظت مصرفی از حدود 5% به عنوان چسباننده تا بیش از 50% در ماتریکس‌های آهسته‌رهش متغیر است."
+   "fa": "به عنوان سازنده ماتریکس آب‌دوست در قرص‌های آهسته‌رهش، به عنوان لایه رانشی (Push layer) متورم‌شونده در قرص‌های پمپ اسمزی، چسباننده قرص، عامل چسبنده مخاطی و غلیظ‌کننده، و در اکستروژن مذاب داغ (HME) به کار می‌رود. گریدهای با وزن مولکولی بالا در قرص‌های بازدارنده سوءمصرف (abuse-deterrent) مصرف می‌شوند، زیرا خرد کردن قرص را دشوار و با تشکیل ژل ویسکوز، استخراج و تزریق را مختل می‌کنند. غلظت مصرفی از حدود 5% به عنوان چسباننده تا بیش از 50% در ماتریکس‌های آهسته‌رهش متغیر است."
   },
   "description": {
    "en": "A non-ionic homopolymer of ethylene oxide of high molecular weight. It is chemically similar to polyethylene glycol but of much higher chain length, and is supplied as a white to off-white, free-flowing powder; commercial grades usually contain a small amount of antioxidant (BHT) and may contain fumed silica as a flow aid.",
@@ -948,7 +948,7 @@
   },
   "handling": {
    "en": "Observe normal precautions for the quantity handled. Avoid dust generation and inhalation; eye protection, gloves and a dust mask are recommended. Spilled powder becomes very slippery when wet.",
-   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد و استنشاق گردوغبار خودداری شود؛ استفاده از محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود. پودر ریخته‌شده در صورت خیس شدن بسیار لغزنده می‌شود."
+   "fa": "احتیاط‌های معمول متناسب با مقدار ماده رعایت شود. از ایجاد و استنشاق گردوغبار خودداری شود؛ استفاده از محافظ چشم، دستکش و ماسک گردوغبار توصیه می‌شود. پودر ریخته‌شده در صورت مرطوب‌شدن بسیار لغزنده می‌شود."
   },
   "regulatory": {
    "en": "Included in the FDA Inactive Ingredient Database (oral tablets, including extended-release tablets, and other non-parenteral preparations) and in non-parenteral medicines licensed in Europe.",
@@ -960,7 +960,7 @@
   },
   "comments": {
    "en": "In matrix tablets the rate of drug release is controlled mainly by the molecular weight and level of the polymer. To prepare solutions, disperse the powder in water with vigorous stirring (or pre-wet it with a non-solvent such as ethanol) to avoid lumps, then stir slowly to avoid shear degradation.",
-   "fa": "در قرص‌های ماتریکسی سرعت آزادسازی دارو عمدتاً با وزن مولکولی و مقدار پلیمر کنترل می‌شود. برای تهیه محلول، پودر را با هم زدن شدید در آب پراکنده کنید (یا ابتدا با یک غیرحلال مانند اتانول خیس کنید) تا کلوخه تشکیل نشود، سپس برای جلوگیری از تخریب برشی آهسته هم بزنید."
+   "fa": "در قرص‌های ماتریکسی سرعت آزادسازی دارو عمدتاً با وزن مولکولی و مقدار پلیمر کنترل می‌شود. برای تهیه محلول، پودر را با هم زدن شدید در آب پراکنده کنید (یا ابتدا با یک غیرحلال مانند اتانول مرطوب کنید) تا کلوخه تشکیل نشود، سپس برای جلوگیری از تخریب برشی آهسته هم بزنید."
   },
   "refs": [
    "usp",
@@ -1503,7 +1503,7 @@
   "mw": "≈ 2 000",
   "applications": {
    "en": "A hydrophilic nonionic surfactant used mainly as an emulsifier in oil-in-water creams and lotions, often combined with a lipophilic co-emulsifier such as glyceryl monostearate or cetyl alcohol, and also as a solubiliser and wetting agent. It has been used in tablet film coatings and as a lubricant or release aid in some tablets. Typical levels: emulsifying agent about 0.5–10%, solubilising agent about 1–10%, wetting agent about 0.1–3%.",
-   "fa": "سورفکتانت غیریونی آب‌دوست که عمدتاً به عنوان امولسیون‌کننده در کرم‌ها و لوسیون‌های روغن در آب، اغلب همراه یک امولسیون‌کننده کمکی چربی‌دوست مانند گلیسریل مونواستئارات یا ستیل الکل، و نیز به عنوان حل‌کننده و عامل مرطوب‌کننده به کار می‌رود. در پوشش فیلمی قرص و به عنوان روان‌کننده یا کمک‌جداکننده در برخی قرص‌ها نیز مصرف شده است. غلظت‌های متداول: امولسیون‌کننده حدود 0.5–10%، حل‌کننده حدود 1–10%، عامل مرطوب‌کننده حدود 0.1–3%."
+   "fa": "سورفکتانت غیریونی آب‌دوست که عمدتاً به عنوان امولسیون‌کننده در کرم‌ها و لوسیون‌های روغن در آب، اغلب همراه یک امولسیون‌کننده کمکی چربی‌دوست مانند گلیسریل مونواستئارات یا ستیل الکل، و نیز به عنوان حل‌کننده و عامل مرطوب‌کننده به کار می‌رود. در پوشش فیلمی قرص و به عنوان روان‌کننده یا کمک‌جداکننده (Release aid) در برخی قرص‌ها نیز مصرف شده است. غلظت‌های متداول: امولسیون‌کننده حدود 0.5–10%، حل‌کننده حدود 1–10%، عامل مرطوب‌کننده حدود 0.1–3%."
   },
   "description": {
    "en": "A mixture of mono- and diesters of mainly stearic and palmitic acids with polyethylene glycol having an average of about 40 oxyethylene units, together with some free polyethylene glycol. It is a white to light tan waxy solid with a faint, fat-like odour.",

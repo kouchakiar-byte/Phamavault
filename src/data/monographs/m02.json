@@ -124,7 +124,7 @@
   "mw": "",
   "applications": {
    "en": "Used as a tablet disintegrant, as a thickening, gelling and stabilising agent, and in controlled-release systems such as calcium-crosslinked alginate beads and microcapsules. Fibres of calcium alginate are widely used in absorbent, haemostatic wound dressings. It is also used in foods.",
-   "fa": "به عنوان متلاشی‌کننده قرص، عامل غلیظ‌کننده، ژل‌ساز و پایدارکننده، و در سامانه‌های رهش کنترل‌شده مانند دانه‌ها و میکروکپسول‌های آلژینات با اتصال عرضی کلسیمی به کار می‌رود. الیاف کلسیم آلژینات به‌طور گسترده در پانسمان‌های جاذب و بندآورنده خون استفاده می‌شوند. در صنایع غذایی نیز مصرف دارد."
+   "fa": "به عنوان باززای قرص، عامل غلیظ‌کننده، ژل‌ساز و پایدارکننده، و در سامانه‌های رهش کنترل‌شده مانند دانه‌ها و میکروکپسول‌های آلژینات با اتصال عرضی کلسیمی به کار می‌رود. الیاف کلسیم آلژینات به‌طور گسترده در پانسمان‌های جاذب و بندآورنده خون استفاده می‌شوند. در صنایع غذایی نیز مصرف دارد."
   },
   "description": {
    "en": "A white to pale yellowish-brown, almost odourless and tasteless powder or fibrous material.",
@@ -138,7 +138,7 @@
     },
     "v": {
      "en": "practically insoluble in water, ethanol and other organic solvents; dissolves in solutions of substances that bind calcium, such as sodium citrate",
-     "fa": "عملاً نامحلول در آب، اتانول و سایر حلال‌های آلی؛ در محلول موادی که کلسیم را به دام می‌اندازند (مانند سدیم سیترات) حل می‌شود"
+     "fa": "عملاً نامحلول در آب، اتانول و سایر حلال‌های آلی؛ در محلول موادی که کلسیم را به خود متصل می‌کنند (مانند سدیم سیترات) حل می‌شود"
     }
    },
    {
@@ -168,7 +168,7 @@
   },
   "incompatibilities": {
    "en": "Calcium-sequestering agents such as citrates, phosphates and edetate break down the calcium crosslinks and dissolve or weaken the gel. Incompatible with strong oxidising agents.",
-   "fa": "عوامل کی‌لیت‌کننده کلسیم مانند سیترات‌ها، فسفات‌ها و ادتات، اتصالات عرضی کلسیمی را از بین می‌برند و ژل را حل یا سست می‌کنند. با اکسیدکننده‌های قوی ناسازگار است."
+   "fa": "عوامل کی‌لیت‌کننده کلسیم مانند سیترات‌ها، فسفات‌ها و ادتات، اتصالات عرضی کلسیمی را از بین می‌برند و ژل را حل یا تضعیف می‌کنند. با اکسیدکننده‌های قوی ناسازگار است."
   },
   "manufacture": {
    "en": "Alginic acid is extracted from brown seaweeds (Phaeophyceae) with dilute alkali, and calcium alginate is precipitated by adding a soluble calcium salt such as calcium chloride to a sodium alginate solution. Fibres are made by extruding sodium alginate solution into a calcium chloride bath.",
@@ -436,7 +436,7 @@
   },
   "comments": {
    "en": "Unlike the dihydrate, the anhydrous form contains no water of crystallisation, so it is preferred for moisture-sensitive drugs and for processes involving heat. Being insoluble, tablets with a high content may need a disintegrant; the material is also fairly abrasive to tooling.",
-   "fa": "برخلاف دی‌هیدرات، فرم بدون آب آب تبلور ندارد و به همین دلیل برای داروهای حساس به رطوبت و فرآیندهای همراه با حرارت ترجیح داده می‌شود. چون نامحلول است، قرص‌های با مقدار زیاد آن ممکن است به متلاشی‌کننده نیاز داشته باشند؛ این ماده همچنین تا حدی برای ابزار پرس (پانچ و ماتریس) ساینده است."
+   "fa": "برخلاف دی‌هیدرات، فرم بدون آب آب تبلور ندارد و به همین دلیل برای داروهای حساس به رطوبت و فرآیندهای همراه با حرارت ترجیح داده می‌شود. چون نامحلول است، قرص‌های با مقدار زیاد آن ممکن است به باززا نیاز داشته باشند؛ این ماده همچنین تا حدی برای ابزار پرس (پانچ و ماتریس) ساینده است."
   },
   "refs": [
    "usp",
@@ -724,7 +724,7 @@
   },
   "incompatibilities": {
    "en": "Incompatible with strong oxidising agents and strong acids. Like other metallic stearates it is hydrophobic and can slow wetting and dissolution if over-blended.",
-   "fa": "با اکسیدکننده‌ها و اسیدهای قوی ناسازگار است. مانند سایر استئارات‌های فلزی آب‌گریز است و در صورت اختلاط بیش از حد می‌تواند خیس شدن و انحلال را کند کند."
+   "fa": "با اکسیدکننده‌ها و اسیدهای قوی ناسازگار است. مانند سایر استئارات‌های فلزی آب‌گریز است و در صورت اختلاط بیش از حد می‌تواند ترشوندگی و انحلال را کند کند."
   },
   "manufacture": {
    "en": "Prepared by reacting a soluble calcium salt such as calcium chloride with sodium stearate in aqueous solution, or by reacting calcium oxide or hydroxide with stearic acid.",
@@ -858,7 +858,7 @@
   },
   "comments": {
    "en": "The dihydrate must not be confused with the hemihydrate (plaster of Paris), which sets to a hard mass when mixed with water and is unsuitable as a diluent. Tablets made with calcium sulfate dihydrate are non-hygroscopic but, because the material is poorly soluble, may need a disintegrant.",
-   "fa": "دی‌هیدرات نباید با همی‌هیدرات (گچ پاریس) اشتباه شود؛ همی‌هیدرات با آب سخت می‌شود و به عنوان رقیق‌کننده مناسب نیست. قرص‌های ساخته‌شده با کلسیم سولفات دی‌هیدرات رطوبت‌گیر نیستند، ولی به دلیل حلالیت کم ماده ممکن است به متلاشی‌کننده نیاز داشته باشند."
+   "fa": "دی‌هیدرات نباید با همی‌هیدرات (گچ پاریس) اشتباه شود؛ همی‌هیدرات با آب سخت می‌شود و به عنوان رقیق‌کننده مناسب نیست. قرص‌های ساخته‌شده با کلسیم سولفات دی‌هیدرات رطوبت‌گیر نیستند، ولی به دلیل حلالیت کم ماده ممکن است به باززا نیاز داشته باشند."
   },
   "refs": [
    "usp",
@@ -1343,7 +1343,7 @@
   "mw": "",
   "applications": {
    "en": "Used in oral and topical products mainly for its water-absorbing and swelling properties: as a tablet disintegrant and binder, and as a suspending or viscosity-increasing agent. In tablets it is typically used at about 1–15% w/w.",
-   "fa": "در فرآورده‌های خوراکی و موضعی عمدتاً به دلیل ویژگی جذب آب و تورم به کار می‌رود: به عنوان متلاشی‌کننده و چسباننده قرص و نیز عامل تعلیق‌دهنده یا افزاینده ویسکوزیته. در قرص معمولاً حدود 1–15% وزنی مصرف می‌شود."
+   "fa": "در فرآورده‌های خوراکی و موضعی عمدتاً به دلیل ویژگی جذب آب و تورم به کار می‌رود: به عنوان باززا و چسباننده قرص و نیز عامل تعلیق‌دهنده یا افزاینده ویسکوزیته. در قرص معمولاً حدود 1–15% وزنی مصرف می‌شود."
   },
   "description": {
    "en": "A white to yellowish-white, hygroscopic, odourless fine powder.",
@@ -1411,7 +1411,7 @@
   },
   "comments": {
    "en": "Unlike the sodium salt, the calcium salt is insoluble in water; it swells instead of dissolving, which is why it works as a disintegrant rather than a thickener. It is used particularly widely in Japan.",
-   "fa": "برخلاف نمک سدیم، نمک کلسیم در آب نامحلول است و به جای حل شدن متورم می‌شود؛ به همین دلیل بیشتر نقش متلاشی‌کننده دارد تا غلیظ‌کننده. مصرف آن به‌ویژه در ژاپن گسترده است."
+   "fa": "برخلاف نمک سدیم، نمک کلسیم در آب نامحلول است و به جای حل شدن متورم می‌شود؛ به همین دلیل بیشتر نقش باززا دارد تا غلیظ‌کننده. مصرف آن به‌ویژه در ژاپن گسترده است."
   },
   "refs": [
    "usp",
@@ -1445,7 +1445,7 @@
   "mw": "≈ 90 000–700 000",
   "applications": {
    "en": "Widely used in oral, topical and some parenteral formulations, mainly to increase viscosity and as a suspending agent; it is also used as a tablet binder and disintegrant, an emulsion stabiliser and a mucoadhesive, and in wound dressings, cosmetics and foods. Typical concentrations: emulsifying agent 0.25–1.0%; gel-forming agent 3.0–6.0%; injections 0.05–0.75%; oral solutions 0.1–1.0%; tablet binder 1.0–6.0%.",
-   "fa": "به‌طور گسترده در فرمولاسیون‌های خوراکی، موضعی و برخی فرآورده‌های تزریقی، عمدتاً برای افزایش ویسکوزیته و به عنوان عامل تعلیق‌دهنده به کار می‌رود؛ همچنین به عنوان چسباننده و متلاشی‌کننده قرص، پایدارکننده امولسیون و چسبنده مخاطی، و در پانسمان زخم، محصولات آرایشی و غذا مصرف می‌شود. غلظت‌های متداول: امولسیفایر 0.25–1.0%؛ ژل‌ساز 3.0–6.0%؛ تزریقی 0.05–0.75%؛ محلول خوراکی 0.1–1.0%؛ چسباننده قرص 1.0–6.0%."
+   "fa": "به‌طور گسترده در فرمولاسیون‌های خوراکی، موضعی و برخی فرآورده‌های تزریقی، عمدتاً برای افزایش ویسکوزیته و به عنوان عامل تعلیق‌دهنده به کار می‌رود؛ همچنین به عنوان چسباننده و باززای قرص، پایدارکننده امولسیون و چسبنده مخاطی، و در پانسمان زخم، محصولات آرایشی و غذا مصرف می‌شود. غلظت‌های متداول: امولسیفایر 0.25–1.0%؛ ژل‌ساز 3.0–6.0%؛ تزریقی 0.05–0.75%؛ محلول خوراکی 0.1–1.0%؛ چسباننده قرص 1.0–6.0%."
   },
   "description": {
    "en": "A white to almost white, odourless and tasteless, granular powder. It is hygroscopic after drying.",
@@ -1515,7 +1515,7 @@
   ],
   "stability": {
    "en": "The powder is stable but hygroscopic. Aqueous solutions are stable at pH 2–10; below pH 2 the polymer precipitates and above pH 10 viscosity falls. Heating lowers solution viscosity, and solutions should be preserved against microbial growth. The dry powder can be sterilised by dry heat, and solutions by autoclaving or gamma irradiation, but these processes reduce viscosity. Store in a well-closed container in a cool, dry place.",
-   "fa": "پودر آن پایدار ولی رطوبت‌گیر است. محلول‌های آبی در pH 2–10 پایدارند؛ در pH کمتر از 2 پلیمر رسوب می‌کند و در pH بالاتر از 10 ویسکوزیته کاهش می‌یابد. حرارت ویسکوزیته محلول را کم می‌کند و محلول‌ها باید در برابر رشد میکروبی محافظت (نگهدارنده‌دار) شوند. پودر خشک با حرارت خشک و محلول‌ها با اتوکلاو یا پرتو گاما قابل استریل شدن‌اند، ولی این فرآیندها ویسکوزیته را کاهش می‌دهند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+   "fa": "پودر آن پایدار ولی رطوبت‌گیر است. محلول‌های آبی در pH 2–10 پایدارند؛ در pH کمتر از 2 پلیمر رسوب می‌کند و در pH بالاتر از 10 ویسکوزیته کاهش می‌یابد. حرارت ویسکوزیته محلول را کم می‌کند و محلول‌ها باید با افزودن نگهدارنده در برابر رشد میکروبی محافظت شوند. پودر خشک با حرارت خشک و محلول‌ها با اتوکلاو یا پرتو گاما قابل استریل شدن‌اند، ولی این فرآیندها ویسکوزیته را کاهش می‌دهند. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "Incompatible with strongly acidic solutions and with soluble salts of iron and some other metals such as aluminium, mercury and zinc, and with xanthan gum. It is precipitated by ethanol (95%) and forms complex coacervates with gelatin and pectin.",
@@ -1571,7 +1571,7 @@
   },
   "description": {
    "en": "A yellowish, tan or white, coarse to fine powder that is practically odourless and has a mucilaginous taste.",
-   "fa": "پودر درشت تا ریز به رنگ زرد مایل، قهوه‌ای روشن یا سفید، تقریباً بی‌بو با طعم لعابی."
+   "fa": "پودر درشت تا ریز به رنگ مایل به زرد، قهوه‌ای روشن یا سفید، تقریباً بی‌بو با طعم لعابی."
   },
   "properties": [
    {

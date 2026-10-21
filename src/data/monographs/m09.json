@@ -591,7 +591,7 @@
   "mw": "≈ 243 000",
   "applications": {
    "en": "Used as a tablet and capsule diluent (filler), and also as a tablet binder and disintegrant, a glidant, a suspending or thickening agent and a carrier in oral and topical products. Typical concentrations: capsule filler 0–100%; tablet binder 5–25%; tablet disintegrant 5–15%; glidant 1–2%. It is also used in foods as a source of dietary fibre and as an anticaking agent.",
-   "fa": "به عنوان رقیق‌کننده (پرکننده) قرص و کپسول، و نیز چسباننده و متلاشی‌کننده قرص، تسهیل‌کننده جریان (Glidant)، عامل تعلیق‌دهنده یا غلیظ‌کننده و حامل در فرآورده‌های خوراکی و موضعی به کار می‌رود. غلظت‌های متداول: پرکننده کپسول 0–100%؛ چسباننده قرص 5–25%؛ متلاشی‌کننده قرص 5–15%؛ تسهیل‌کننده جریان 1–2%. در صنایع غذایی نیز به عنوان منبع فیبر و ضدکلوخه مصرف می‌شود."
+   "fa": "به عنوان رقیق‌کننده (پرکننده) قرص و کپسول، و نیز چسباننده و باززای قرص، تسهیل‌کننده جریان (Glidant)، عامل تعلیق‌دهنده یا غلیظ‌کننده و حامل در فرآورده‌های خوراکی و موضعی به کار می‌رود. غلظت‌های متداول: پرکننده کپسول 0–100%؛ چسباننده قرص 5–25%؛ باززای قرص 5–15%؛ تسهیل‌کننده جریان 1–2%. در صنایع غذایی نیز به عنوان منبع فیبر و ضدکلوخه مصرف می‌شود."
   },
   "description": {
    "en": "A white or almost white, odourless and tasteless powder of various particle sizes, ranging from a free-flowing fine or granular powder to a coarse, fluffy, non-flowing material.",
@@ -806,7 +806,7 @@
   "mw": "≈ 310 000",
   "applications": {
    "en": "Ceratonia is a thickening, suspending and stabilising agent used mainly in foods and, to a lesser extent, in oral and topical pharmaceutical products; it has also been studied as a hydrophilic matrix former for controlled-release tablets, often combined with xanthan gum. In foods it is typically used at about 0.1–1%. It is an ingredient of thickened infant formulas used for regurgitation.",
-   "fa": "سراتونیا (صمغ لوبیای خرنوب) عامل غلیظ‌کننده، تعلیق‌دهنده و پایدارکننده است که عمدتاً در صنایع غذایی و به میزان کمتر در فرآورده‌های دارویی خوراکی و موضعی به کار می‌رود؛ به عنوان ماتریکس آب‌دوست در قرص‌های رهش کنترل‌شده، اغلب همراه با زانتان گام، نیز بررسی شده است. در غذا معمولاً با غلظت حدود 0.1–1% مصرف می‌شود. در شیرخشک‌های غلیظ‌شده ضدبرگشت (ضدریفلاکس) نوزادان نیز وجود دارد."
+   "fa": "سراتونیا (صمغ لوبیای خرنوب) عامل غلیظ‌کننده، تعلیق‌دهنده و پایدارکننده است که عمدتاً در صنایع غذایی و به میزان کمتر در فرآورده‌های دارویی خوراکی و موضعی به کار می‌رود؛ به عنوان ماتریکس آب‌دوست در قرص‌های رهش کنترل‌شده، اغلب همراه با زانتان گام، نیز بررسی شده است. در غذا معمولاً با غلظت حدود 0.1–1% مصرف می‌شود. در شیرخشک‌های غلیظ‌شده ضدریفلاکس (Anti-reflux) نوزادان نیز وجود دارد."
   },
   "description": {
    "en": "A white to yellowish-white, almost odourless powder obtained by milling the endosperm of carob seeds.",
@@ -1325,7 +1325,7 @@
   },
   "comments": {
    "en": "Cetyl palmitate gives creams a smooth, non-greasy feel and body without the stickiness of beeswax. In lipid nanoparticles its highly ordered crystal lattice tends to limit drug loading and may expel drug on storage, so it is often blended with a liquid oil to form nanostructured lipid carriers.",
-   "fa": "ستیل پالمیتات به کرم‌ها حس نرم و غیرچرب و قوام می‌دهد، بدون چسبندگی موم زنبور عسل. در نانوذرات لیپیدی، شبکه کریستالی بسیار منظم آن بارگیری دارو را محدود می‌کند و ممکن است در طول نگهداری دارو را بیرون براند؛ به همین دلیل اغلب با یک روغن مایع مخلوط می‌شود تا حامل لیپیدی نانوساختار (NLC) به دست آید."
+   "fa": "ستیل پالمیتات به کرم‌ها حس نرم و غیرچرب و قوام می‌دهد، بدون چسبندگی موم زنبور عسل. در نانوذرات لیپیدی، شبکه کریستالی بسیار منظم آن بارگیری دارو را محدود می‌کند و ممکن است در طول نگهداری موجب خروج دارو (Drug expulsion) شود؛ به همین دلیل اغلب با یک روغن مایع مخلوط می‌شود تا حامل لیپیدی نانوساختار (NLC) به دست آید."
   },
   "refs": [
    "usp",
