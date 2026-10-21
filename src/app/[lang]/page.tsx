@@ -29,6 +29,7 @@ import { searchCopy } from "@/content/search";
 import { sections } from "@/content/sections";
 import { DnaHelix } from "@/components/dna-helix";
 import { HeroStats } from "@/components/hero-stats";
+import { LabCollage } from "@/components/lab-collage";
 
 // The platform's sections, CTD compilation included; enterprise solutions are a plan, not a section.
 const platformSections = sections.filter((s) => s.slug !== "enterprise");
@@ -301,9 +302,7 @@ export default async function HomePage() {
             <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-muted sm:text-xl lg:mx-0">{copy.statement.text[locale]}</p>
             <div className="mx-auto mt-8 h-1 w-16 rounded-full bg-capsule-500 lg:mx-0" aria-hidden="true" />
           </div>
-          {/* Researcher with a magnifier over a capsule, pills and an ampoule floating around (adapted from unDraw, free licence) */}
-          {/* eslint-disable-next-line @next/next/no-img-element -- an animated SVG; next/image would not keep its CSS animation */}
-          <img src="/illustrations/pharma-search.svg" alt="" width={800} height={880} className="mx-auto w-full max-w-sm lg:max-w-md" />
+          <LabCollage alt={copy.statement.photoAlt[locale]} />
         </Container>
       </section>
 

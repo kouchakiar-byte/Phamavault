@@ -101,6 +101,7 @@ export const copy = {
   },
 
   statement: {
+    photoAlt: bi("Two pharmaceutical researchers examining a sample through a magnifying glass", "دو پژوهشگر دارویی در حال بررسی نمونه با ذره‌بین"),
     title: bi(
       "The specialist reference for pharmaceutical knowledge, information and tools",
       "مرجع تخصصی دانش، اطلاعات و ابزارهای داروسازی",
