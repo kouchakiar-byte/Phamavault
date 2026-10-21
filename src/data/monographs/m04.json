@@ -336,7 +336,7 @@
   },
   "incompatibilities": {
    "en": "No significant chemical incompatibilities have been reported. Like other hydrophobic lubricants it can slow tablet disintegration and drug dissolution if used in excess.",
-   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. مانند سایر روان‌کننده‌های آب‌گریز، مصرف بیش از حد آن ممکن است متلاشی شدن قرص و انحلال دارو را کند کند."
+   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. مانند سایر روان‌کننده‌های آب‌گریز، مصرف بیش از حد آن ممکن است باززایی قرص و انحلال دارو را کند کند."
   },
   "manufacture": {
    "en": "Made by esterifying glycerol with behenic acid, obtained from hydrogenated rapeseed or similar oils, without a catalyst; the product is then atomised (spray-cooled) to give a fine powder.",
@@ -667,7 +667,7 @@
   },
   "incompatibilities": {
    "en": "No major chemical incompatibilities have been reported. As a hydrophobic material, excessive amounts can slow disintegration and dissolution.",
-   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. به عنوان ماده آب‌گریز، مقادیر زیاد آن ممکن است متلاشی شدن و انحلال را کند کند."
+   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. به عنوان ماده آب‌گریز، مقادیر زیاد آن ممکن است باززایی و انحلال را کند کند."
   },
   "manufacture": {
    "en": "Made by esterifying glycerol with palmitic and stearic acids obtained from hydrogenated vegetable oils, followed by spray-cooling (atomisation) of the molten product to give a fine powder.",
@@ -923,7 +923,7 @@
   "mw": "≈ 220 000",
   "applications": {
    "en": "Used in oral and topical products as a suspending, thickening and stabilising agent, and in tablets as a binder and disintegrant. Typical concentrations: emulsion stabiliser about 1%; thickener for lotions and creams up to 2.5%; tablet binder up to 10%. It has also been studied as a matrix former for sustained release and as a carrier for colon-targeted delivery, since it is degraded by colonic bacteria. It is widely used in foods.",
-   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان عامل تعلیق‌کننده، غلیظ‌کننده و پایدارکننده و در قرص به عنوان چسباننده و متلاشی‌کننده به کار می‌رود. غلظت‌های متداول: پایدارکننده امولسیون حدود 1%؛ غلیظ‌کننده لوسیون و کرم حداکثر 2.5%؛ چسباننده قرص حداکثر 10%. همچنین به عنوان تشکیل‌دهنده ماتریکس آهسته‌رهش و حامل دارورسانی هدفمند به کولون (چون توسط باکتری‌های کولون تجزیه می‌شود) بررسی شده است. در صنایع غذایی کاربرد گسترده دارد."
+   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان عامل تعلیق‌کننده، غلیظ‌کننده و پایدارکننده و در قرص به عنوان چسباننده و باززا (Disintegrant) به کار می‌رود. غلظت‌های متداول: پایدارکننده امولسیون حدود 1%؛ غلیظ‌کننده لوسیون و کرم حداکثر 2.5%؛ چسباننده قرص حداکثر 10%. همچنین به عنوان تشکیل‌دهنده ماتریکس آهسته‌رهش و حامل دارورسانی هدفمند به کولون (چون توسط باکتری‌های کولون تجزیه می‌شود) بررسی شده است. در صنایع غذایی کاربرد گسترده دارد."
   },
   "description": {
    "en": "A white to yellowish-white, almost odourless powder with a bland taste. It disperses in cold or hot water and hydrates to form a highly viscous, slightly cloudy colloidal dispersion.",
@@ -1011,7 +1011,7 @@
   },
   "comments": {
    "en": "To avoid lumps, sprinkle the powder slowly into vigorously stirred water or pre-disperse it in a non-solvent such as glycerin or ethanol. Mixtures of guar gum with xanthan gum show synergistic increases in viscosity.",
-   "fa": "برای جلوگیری از کلوخه شدن، پودر را به‌آرامی به آب در حال هم زدن شدید بپاشید یا ابتدا آن را در یک غیرحلال مانند گلیسرین یا اتانول پراکنده کنید. مخلوط صمغ گوار با زانتان گام افزایش هم‌افزای ویسکوزیته نشان می‌دهد."
+   "fa": "برای جلوگیری از تشکیل کلوخه، پودر را به‌آرامی به آب در حال هم زدن شدید بپاشید یا ابتدا آن را در یک غیرحلال مانند گلیسرین یا اتانول پراکنده کنید. مخلوط صمغ گوار با زانتان گام افزایش هم‌افزای ویسکوزیته نشان می‌دهد."
   },
   "refs": [
    "usp",
@@ -1483,7 +1483,7 @@
   },
   "comments": {
    "en": "Unlike methylcellulose and hypromellose, hydroxyethyl cellulose does not gel on heating, so it can be dissolved directly in hot water. To prevent lumps, disperse the powder in water with good agitation before the pH is raised or before other solutes are added; some grades are surface-treated to delay hydration and ease dispersion.",
-   "fa": "برخلاف متیل‌سلولز و هیپرملوز، هیدروکسی‌اتیل سلولز با گرما ژل نمی‌شود و می‌توان آن را مستقیماً در آب گرم حل کرد. برای جلوگیری از کلوخه شدن، پودر را پیش از بالا بردن pH یا افزودن سایر مواد محلول، با هم زدن خوب در آب پراکنده کنید؛ برخی گریدها برای تأخیر در آب‌گیری و آسان شدن پراکنده‌سازی، عمل‌آوری سطحی شده‌اند."
+   "fa": "برخلاف متیل‌سلولز و هیپرملوز، هیدروکسی‌اتیل سلولز با گرما ژل نمی‌شود و می‌توان آن را مستقیماً در آب گرم حل کرد. برای جلوگیری از تشکیل کلوخه، پودر را پیش از بالا بردن pH یا افزودن سایر مواد محلول، با هم زدن خوب در آب پراکنده کنید؛ برخی گریدها برای تأخیر در آب‌گیری و آسان شدن پراکنده‌سازی، عمل‌آوری سطحی شده‌اند."
   },
   "refs": [
    "usp",
@@ -1711,7 +1711,7 @@
   },
   "comments": {
    "en": "Its solubility in ethanol makes it useful for non-aqueous granulation of moisture-sensitive drugs and for organic-solvent coating. Films are flexible but somewhat tacky, so it is often combined with other film formers. It should not be confused with low-substituted hydroxypropyl cellulose, which is water-insoluble and used as a disintegrant.",
-   "fa": "حلالیت آن در اتانول، آن را برای گرانولاسیون غیرآبی داروهای حساس به رطوبت و برای پوشش با حلال آلی مفید می‌سازد. فیلم‌های آن انعطاف‌پذیر ولی کمی چسبناک‌اند و به همین دلیل اغلب با سایر تشکیل‌دهنده‌های فیلم ترکیب می‌شود. نباید آن را با هیدروکسی‌پروپیل سلولز با جایگزینی کم اشتباه گرفت که در آب نامحلول است و به عنوان متلاشی‌کننده به کار می‌رود."
+   "fa": "حلالیت آن در اتانول، آن را برای گرانولاسیون غیرآبی داروهای حساس به رطوبت و برای پوشش با حلال آلی مفید می‌سازد. فیلم‌های آن انعطاف‌پذیر ولی کمی چسبنده‌اند و به همین دلیل اغلب با سایر تشکیل‌دهنده‌های فیلم ترکیب می‌شود. نباید آن را با هیدروکسی‌پروپیل سلولز با جایگزینی کم اشتباه گرفت که در آب نامحلول است و به عنوان باززا (Disintegrant) به کار می‌رود."
   },
   "refs": [
    "usp",
@@ -1746,7 +1746,7 @@
   "mw": "",
   "applications": {
    "en": "Used in oral solid dosage forms as a tablet and capsule disintegrant, usually at a few per cent up to about 10% w/w, and also as a binder because it compacts well; it can therefore serve as a combined binder–disintegrant in wet granulation and direct compression. Grades differ in particle size and substitution and are chosen for direct compression, wet granulation or orally disintegrating tablets. It is also used as an extrusion–spheronisation aid.",
-   "fa": "در اشکال دارویی جامد خوراکی به عنوان متلاشی‌کننده قرص و کپسول، معمولاً با غلظت چند درصد تا حدود 10% وزنی، به کار می‌رود و به دلیل تراکم‌پذیری خوب، به عنوان چسباننده نیز عمل می‌کند؛ بنابراین می‌تواند هم‌زمان نقش چسباننده و متلاشی‌کننده را در گرانولاسیون مرطوب و پرس مستقیم داشته باشد. گریدها از نظر اندازه ذره و میزان جایگزینی متفاوت‌اند و برای پرس مستقیم، گرانولاسیون مرطوب یا قرص‌های متلاشی‌شونده در دهان (ODT) انتخاب می‌شوند. همچنین به عنوان کمک‌کننده در اکستروژن-اسفرونیزاسیون مصرف می‌شود."
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان باززا (Disintegrant) در قرص و کپسول، معمولاً با غلظت چند درصد تا حدود 10% وزنی، به کار می‌رود و به دلیل تراکم‌پذیری خوب، به عنوان چسباننده نیز عمل می‌کند؛ بنابراین می‌تواند هم‌زمان نقش چسباننده و باززا را در گرانولاسیون مرطوب و پرس مستقیم داشته باشد. گریدها از نظر اندازه ذره و میزان جایگزینی متفاوت‌اند و برای پرس مستقیم، گرانولاسیون مرطوب یا قرص‌های باززاشونده در دهان (ODT) انتخاب می‌شوند. همچنین به عنوان کمک‌کننده در اکستروژن-اسفرونیزاسیون مصرف می‌شود."
   },
   "description": {
    "en": "A white to yellowish-white, odourless and tasteless, fibrous or granular powder. Its low degree of hydroxypropyl substitution makes it insoluble in water, in which it swells.",
@@ -1800,7 +1800,7 @@
   },
   "incompatibilities": {
    "en": "Alkaline substances may interact with it, and tablets containing such materials may show slower disintegration after storage.",
-   "fa": "مواد قلیایی ممکن است با آن برهم‌کنش داشته باشند و قرص‌های حاوی چنین موادی ممکن است پس از نگهداری متلاشی شدن کندتری نشان دهند."
+   "fa": "مواد قلیایی ممکن است با آن برهم‌کنش داشته باشند و قرص‌های حاوی چنین موادی ممکن است پس از نگهداری باززایی کندتری نشان دهند."
   },
   "manufacture": {
    "en": "Made by reacting alkali cellulose with a limited amount of propylene oxide. The crude product is neutralised, washed, dried and milled to the required particle size and shape.",
@@ -1824,7 +1824,7 @@
   },
   "comments": {
    "en": "L-HPC acts mainly by swelling rather than by wicking alone, and its disintegrant action is less affected by tablet hardness than that of some starches. Because it is non-ionic, it is less likely than ionic superdisintegrants to interact with cationic drugs.",
-   "fa": "L-HPC عمدتاً از طریق تورم و نه صرفاً جذب مویینگی عمل می‌کند و اثر متلاشی‌کنندگی آن کمتر از برخی نشاسته‌ها تحت تأثیر سختی قرص قرار می‌گیرد. چون غیریونی است، احتمال برهم‌کنش آن با داروهای کاتیونی کمتر از متلاشی‌کننده‌های یونی از نوع Superdisintegrant است."
+   "fa": "L-HPC عمدتاً از طریق تورم و نه صرفاً جذب مویینگی عمل می‌کند و خاصیت باززایی آن کمتر از برخی نشاسته‌ها تحت تأثیر سختی قرص قرار می‌گیرد. چون غیریونی است، احتمال برهم‌کنش آن با داروهای کاتیونی کمتر از سوپرباززاهای یونی (Superdisintegrant) است."
   },
   "refs": [
    "usp",
@@ -2138,7 +2138,7 @@
   },
   "incompatibilities": {
    "en": "Incompatible with strong oxidising agents. Its free carboxyl groups can react with basic drugs and alkaline excipients; splitting of enteric films has been reported when coatings contain high levels of some fillers such as talc.",
-   "fa": "با اکسیدکننده‌های قوی ناسازگار است. گروه‌های کربوکسیل آزاد آن ممکن است با داروهای بازی و مواد جانبی قلیایی واکنش دهند؛ ترک خوردن فیلم‌های روده‌ای در پوشش‌های حاوی مقادیر زیاد برخی پرکننده‌ها مانند تالک گزارش شده است."
+   "fa": "با اکسیدکننده‌های قوی ناسازگار است. گروه‌های کربوکسیل آزاد آن ممکن است با داروهای بازی و مواد جانبی قلیایی واکنش دهند؛ ترک‌خوردگی فیلم‌های روده‌ای در پوشش‌های حاوی مقادیر زیاد برخی پرکننده‌ها مانند تالک گزارش شده است."
   },
   "manufacture": {
    "en": "Prepared by esterifying hypromellose with phthalic anhydride in acetic acid, using anhydrous sodium acetate as catalyst. The product is precipitated in water, washed and dried.",
@@ -2468,7 +2468,7 @@
   },
   "comments": {
    "en": "Its low hygroscopicity is an advantage over sorbitol and maltitol in lozenges and chewable tablets, which stay less sticky in humid climates. Isomalt can also be melted and cast or extruded to make medicated lozenges or solid dispersions.",
-   "fa": "رطوبت‌گیری کم آن نسبت به سوربیتول و مالتیتول در لوزنج‌ها و قرص‌های جویدنی مزیت محسوب می‌شود، زیرا این فرآورده‌ها در آب‌وهوای مرطوب کمتر چسبناک می‌شوند. ایزومالت را می‌توان ذوب و قالب‌ریزی یا اکسترود کرد تا لوزنج‌های دارویی یا دیسپرسیون‌های جامد تهیه شود."
+   "fa": "رطوبت‌گیری کم آن نسبت به سوربیتول و مالتیتول در لوزنج‌ها و قرص‌های جویدنی مزیت محسوب می‌شود، زیرا این فرآورده‌ها در آب‌وهوای مرطوب کمتر دچار چسبندگی می‌شوند. ایزومالت را می‌توان ذوب و قالب‌ریزی یا اکسترود کرد تا لوزنج‌های دارویی یا دیسپرسیون‌های جامد تهیه شود."
   },
   "refs": [
    "usp",
@@ -3366,7 +3366,7 @@
   ],
   "stability": {
    "en": "At high humidity the amorphous fraction can absorb water and crystallise, which reduces compactibility and may cause caking. It browns more readily than crystalline lactose, particularly in warm, damp conditions. Store in a well-closed container in a cool, dry place.",
-   "fa": "در رطوبت بالا، بخش آمورف ممکن است آب جذب کرده و کریستالیزه شود که تراکم‌پذیری را کاهش داده و ممکن است باعث کلوخه شدن شود. نسبت به لاکتوز کریستالی آسان‌تر قهوه‌ای می‌شود، به‌ویژه در شرایط گرم و مرطوب. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+   "fa": "در رطوبت بالا، بخش آمورف ممکن است آب جذب کرده و کریستالیزه شود که تراکم‌پذیری را کاهش داده و ممکن است باعث کلوخه‌ای شدن (Caking) شود. نسبت به لاکتوز کریستالی آسان‌تر قهوه‌ای می‌شود، به‌ویژه در شرایط گرم و مرطوب. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "A reducing sugar that undergoes Maillard reaction with primary and secondary amines; the amorphous fraction reacts faster than crystalline lactose. Incompatible with strong oxidising agents.",
