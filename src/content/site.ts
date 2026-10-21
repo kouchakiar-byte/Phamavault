@@ -101,7 +101,7 @@ export const copy = {
   },
 
   tour: {
-    label: bi("A one-minute tour of the PharmaVault sections", "تور یک‌دقیقه‌ای بخش‌های فارماوالت"),
+    label: bi("A two-minute tour of the twelve PharmaVault sections", "تور دودقیقه‌ای دوازده بخش فارماوالت"),
     pause: bi("Pause the tour", "توقف تور"),
     play: bi("Play the tour", "پخش تور"),
   },

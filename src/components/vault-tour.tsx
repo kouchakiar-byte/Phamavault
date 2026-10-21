@@ -10,9 +10,9 @@ const STEPS = 4;
 type Stage = "locked" | "unlocking" | "opening" | "playing";
 
 /**
- * The vault in the hero: three seconds after it comes into view the key turns,
- * the tumblers light one by one, the door swings open and a one-minute,
- * silent tour of the sections plays in its place, looping.
+ * The vault in the hero: as soon as it comes into view the key turns once every
+ * half second, lighting a tumbler each time; then the door swings open and a
+ * two-minute, silent tour of all twelve sections plays in its place, looping.
  */
 export function VaultTour({ locale, className = "" }: { locale: Locale; className?: string }) {
   const box = useRef<HTMLDivElement>(null);
@@ -41,14 +41,16 @@ export function VaultTour({ locale, className = "" }: { locale: Locale; classNam
           });
           return;
         }
-        later(3000, () => setStage("unlocking"));
+        const start = 150;
+        const turn = 500; // one key turn every half second
+        later(start, () => setStage("unlocking"));
         for (let i = 1; i <= STEPS; i++)
-          later(3000 + i * 380, () => {
+          later(start + i * turn, () => {
             setUnlocked(i);
             setTurns(i);
           });
-        later(3000 + STEPS * 380 + 300, () => setStage("opening"));
-        later(3000 + STEPS * 380 + 1300, () => setStage("playing"));
+        later(start + STEPS * turn + 200, () => setStage("opening"));
+        later(start + STEPS * turn + 800, () => setStage("playing"));
       },
       { threshold: 0.4 },
     );
@@ -59,12 +61,16 @@ export function VaultTour({ locale, className = "" }: { locale: Locale; classNam
     };
   }, []);
 
-  // Start loading the film as the door opens, so it is ready when the vault fades.
+  // Load the film while the key turns and start it as the door opens, so it is
+  // already running when the vault fades away.
   useEffect(() => {
     const v = video.current;
-    if (!v || (stage !== "opening" && stage !== "playing")) return;
-    if (stage === "opening") v.preload = "auto";
-    if (stage === "playing" && !paused) v.play().catch(() => setPaused(true));
+    if (!v || stage === "locked") return;
+    if (v.preload !== "auto") {
+      v.preload = "auto";
+      v.load();
+    }
+    if ((stage === "opening" || stage === "playing") && !paused) v.play().catch(() => setPaused(true));
   }, [stage, paused]);
 
   const toggle = () => {
