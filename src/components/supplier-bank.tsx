@@ -128,9 +128,9 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
               </button>
             ))}
           </div>
-          <label className="flex items-center gap-2 text-sm text-muted">
+          <label className="flex max-w-full items-center gap-2 text-sm text-muted">
             {t.category[locale]}
-            <select className="field-input w-auto py-1 text-sm" value={filters.cat} onChange={(e) => set({ cat: e.target.value })}>
+            <select className="field-input w-auto min-w-0 max-w-full py-1 text-sm" value={filters.cat} onChange={(e) => set({ cat: e.target.value })}>
               {Object.entries(t.categories).map(([k, v]) => (
                 <option key={k} value={k}>
                   {v[locale]}
@@ -138,10 +138,10 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
               ))}
             </select>
           </label>
-          <label className="flex items-center gap-2 text-sm text-muted">
+          <label className="flex max-w-full items-center gap-2 text-sm text-muted">
             {t.sort[locale]}
             <select
-              className="field-input w-auto py-1 text-sm"
+              className="field-input w-auto min-w-0 max-w-full py-1 text-sm"
               value={filters.sort}
               onChange={(e) => set({ sort: e.target.value as SortKey })}
             >
@@ -152,7 +152,7 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
               ))}
             </select>
           </label>
-          <label className="flex items-center gap-2 text-sm text-muted">
+          <label className="flex max-w-full items-center gap-2 text-sm text-muted">
             <input
               type="checkbox"
               className="size-4 accent-molecule-600"

@@ -105,7 +105,7 @@ function FullSop({ code, title, dep, full }: { code: string; title: { fa: string
           <dl className="space-y-1.5">
             {full.definitions.map((d) => (
               <div key={d.term}>
-                <dt className="inline font-semibold text-vault-900">{d.term}: </dt>
+                <dt className="inline font-bold text-vault-900">{d.term}: </dt>
                 <dd className="inline">{d.def}</dd>
               </div>
             ))}
@@ -149,7 +149,7 @@ function FullSop({ code, title, dep, full }: { code: string; title: { fa: string
           <div className="space-y-3">
             {full.calculations.map((c) => (
               <div key={c.name} className="rounded-lg border border-line bg-vault-50 px-4 py-3">
-                <p className="font-semibold text-vault-900">{c.name}</p>
+                <p className="font-bold text-vault-900">{c.name}</p>
                 <p className="mt-1 font-mono text-sm text-ink" dir="ltr" style={{ textAlign: "left" }}>
                   {c.formula}
                 </p>
@@ -251,7 +251,7 @@ export default async function SopPage({ params }: PageProps<"/[lang]/qa/[code]">
           dir="rtl"
           lang="fa"
           className="mt-4 max-w-3xl rounded-card border-2 border-molecule-400 bg-white p-6 text-right leading-loose sm:p-8"
-          style={{ fontFamily: "var(--font-vazirmatn), sans-serif" }}
+          style={{ fontFamily: "var(--font-readex), sans-serif" }}
         >
           {sopFull[sop.code] ? (
             <FullSop code={sop.code} title={sop.title} dep={dep.fa} full={sopFull[sop.code]} />

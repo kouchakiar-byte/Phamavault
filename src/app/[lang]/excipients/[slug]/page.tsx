@@ -237,7 +237,7 @@ export default async function ExcipientSheetPage({ params }: PageProps<"/[lang]/
                     <dl className="divide-y divide-line/70">
                       {mono.properties.map((p) => (
                         <div key={p.k.en} className="grid gap-0.5 py-1.5 sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-3">
-                          <dt className="font-semibold text-vault-900">{isolate(p.k[locale], locale)}</dt>
+                          <dt className="font-bold text-vault-900">{isolate(p.k[locale], locale)}</dt>
                           <dd>{isolate(p.v[locale], locale)}</dd>
                         </div>
                       ))}
@@ -281,7 +281,7 @@ export default async function ExcipientSheetPage({ params }: PageProps<"/[lang]/
             </ol>
             <p className="mt-3 text-muted">{t.disclaimer[locale]}</p>
             <p className="mt-1.5 text-muted">© PharmaVault — {copy.rights[locale]}</p>
-            <p className="mt-2 flex items-center justify-between gap-3 font-semibold text-vault-900" dir="ltr">
+            <p className="mt-2 flex items-center justify-between gap-3 font-bold text-vault-900" dir="ltr">
               <span>PharmaVault · The Pharmaceutical Information Vault · گنجینه اطلاعات داروسازی</span>
               <span className="font-mono text-molecule-700">pharmavault.ir</span>
             </p>

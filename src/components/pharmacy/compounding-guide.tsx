@@ -103,7 +103,7 @@ export function CompoundingTables({ locale }: { locale: Locale }) {
             <tbody>
               {g.excipients.map((x) => (
                 <tr key={x.name.en}>
-                  <td className="font-semibold text-vault-900">{x.name[locale]}</td>
+                  <td className="font-bold text-vault-900">{x.name[locale]}</td>
                   <td>{x.risk[locale]}</td>
                   <td>{x.advice[locale]}</td>
                 </tr>

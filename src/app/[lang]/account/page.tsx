@@ -82,7 +82,7 @@ function SubscriptionCard({ s, user, locale }: { s: Subscription; user: User; lo
 
       {s.plan === "team" && owner && (
         <div className="mt-6 border-t border-line pt-5">
-          <p className="font-semibold text-vault-900">
+          <p className="font-bold text-vault-900">
             {t.members[locale]
               .replace("{used}", formatNumber(s.members.length, locale))
               .replace("{seats}", formatNumber(s.seats, locale))}

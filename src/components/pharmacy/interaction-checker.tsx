@@ -224,7 +224,7 @@ function DrugInput({ locale, chosen, setChosen, onSubmit }: { locale: Locale; ch
                   onClick={() => add(d)}
                   className={`flex w-full items-baseline justify-between gap-3 px-4 py-2.5 text-start text-sm hover:bg-capsule-50 ${i === focus ? "bg-capsule-50" : ""}`}
                 >
-                  <span className="font-semibold text-vault-900">{name(d, locale)}</span>
+                  <span className="font-bold text-vault-900">{name(d, locale)}</span>
                   <span className="truncate text-xs text-muted" dir={locale === "fa" ? "ltr" : "rtl"}>
                     {locale === "fa" ? d.en : d.fa}
                   </span>

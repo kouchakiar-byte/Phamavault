@@ -30,7 +30,7 @@ export default async function InteractionsPage() {
             {t.disclaimer[locale]} {withReviewedMonth(interactionsReviewed[locale], "interactions", locale)}.
           </p>
           <p className="flex flex-wrap items-center gap-2">
-            <span className="font-semibold text-vault-900">{pharmacyPage.refsLabel[locale]}:</span>
+            <span className="font-bold text-vault-900">{pharmacyPage.refsLabel[locale]}:</span>
             {t.refs.map((r) =>
               r.url ? (
                 <a key={r.label} href={r.url} target="_blank" rel="noopener noreferrer" dir="ltr" className="rounded-lg border border-line bg-white px-2 py-0.5 text-molecule-700 hover:border-molecule-500">

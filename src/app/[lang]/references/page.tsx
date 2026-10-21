@@ -56,14 +56,14 @@ export default async function ReferencesPage() {
               <dl className="mt-4 space-y-2 rounded-xl bg-vault-50 p-4 text-sm">
                 {s.editions.map((e) => (
                   <div key={e.label.en + e.value.en} className="flex flex-col gap-0.5 sm:flex-row sm:gap-3">
-                    <dt className="shrink-0 font-semibold text-vault-900 sm:w-40">{e.label[locale]}</dt>
+                    <dt className="shrink-0 font-bold text-vault-900 sm:w-40">{e.label[locale]}</dt>
                     <dd className="leading-relaxed text-ink">{e.value[locale]}</dd>
                   </div>
                 ))}
               </dl>
             )}
             <p className="mt-4 leading-loose text-ink">{s.text[locale]}</p>
-            <h3 className="mt-4 text-sm font-semibold text-muted">{referenceLabels.links[locale]}</h3>
+            <h3 className="mt-4 text-sm font-bold text-muted">{referenceLabels.links[locale]}</h3>
             <ul className="mt-2 grid gap-2 sm:grid-cols-2">
               {s.links.map((l) => (
                 <li key={l.url}>
@@ -75,7 +75,7 @@ export default async function ReferencesPage() {
                   >
                     <ExternalLink className="mt-0.5 size-4 shrink-0 text-molecule-500" aria-hidden="true" />
                     <span className="min-w-0">
-                      <span className="block font-semibold text-vault-900">
+                      <span className="block font-bold text-vault-900">
                         <bdi>{l.label}</bdi>
                       </span>
                       <span className="block text-xs leading-relaxed text-muted">{l.note[locale]}</span>

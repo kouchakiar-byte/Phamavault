@@ -35,7 +35,7 @@ export function PriceEstimator({ locale }: { locale: Locale }) {
       <p className="text-lg font-bold text-vault-900">{t.title[locale]}</p>
       <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <div className="rounded-xl border border-line bg-white p-5">
-          <p className="font-semibold text-vault-900">{t.individual[locale]}</p>
+          <p className="font-bold text-vault-900">{t.individual[locale]}</p>
           <p className="mt-4 text-sm text-muted">{t.includes[locale]}</p>
           <p className="mt-4 text-sm text-muted">{t.total[locale]}</p>
           <Was price={p.full} list={p.fullList} locale={locale} />
@@ -45,7 +45,7 @@ export function PriceEstimator({ locale }: { locale: Locale }) {
         </div>
 
         <div className="rounded-xl border border-molecule-400 bg-white p-5">
-          <p className="font-semibold text-vault-900">{t.team[locale]}</p>
+          <p className="font-bold text-vault-900">{t.team[locale]}</p>
           <label htmlFor="est-users" className="mt-4 block text-sm text-muted">
             {t.users[locale]}
           </label>
@@ -69,7 +69,7 @@ export function PriceEstimator({ locale }: { locale: Locale }) {
         </div>
 
         <div className="rounded-xl border border-line bg-white p-5">
-          <p className="font-semibold text-vault-900">{t.pharmacy[locale]}</p>
+          <p className="font-bold text-vault-900">{t.pharmacy[locale]}</p>
           <p className="mt-4 text-sm text-muted">{t.pharmacyIncludes[locale]}</p>
           <p className="mt-4 text-sm text-muted">{t.total[locale]}</p>
           <Was price={p.pharmacy} list={p.pharmacyList} locale={locale} />

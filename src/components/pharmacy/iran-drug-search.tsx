@@ -99,7 +99,7 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
 
         {state === "idle" && options.length > 1 && (
           <div className="rounded-card border border-line bg-white p-4">
-            <p className="text-sm font-semibold text-vault-900">{t.which[locale]}</p>
+            <p className="text-sm font-bold text-vault-900">{t.which[locale]}</p>
             <div className="mt-3 flex flex-wrap gap-2" role="radiogroup" aria-label={t.which[locale]}>
               {options.map((o) => {
                 const on = o.key === chosen?.key;
@@ -148,7 +148,7 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
                     className="grid gap-x-4 gap-y-1 px-4 py-3 text-sm sm:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_minmax(0,1.2fr)_auto]"
                   >
                     <div className="min-w-0">
-                      <p className="font-semibold text-vault-900">{p.brandOwner}</p>
+                      <p className="font-bold text-vault-900">{p.brandOwner}</p>
                       {p.licenseHolder && p.licenseHolder !== p.brandOwner && (
                         <p className="text-xs text-muted">
                           {t.cols.licence[locale]}: {p.licenseHolder}
@@ -183,7 +183,7 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
                         </p>
                       )}
                     </div>
-                    <p className="whitespace-nowrap font-semibold text-vault-900 sm:text-end">
+                    <p className="whitespace-nowrap font-bold text-vault-900 sm:text-end">
                       {p.priceRial !== null ? (
                         <>
                           {n(Math.round(p.priceRial / 10), locale)} {t.toman[locale]}

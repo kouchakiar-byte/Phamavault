@@ -775,7 +775,7 @@ export function Calculators({ locale }: { locale: Locale }) {
     <div className="grid grid-cols-[minmax(0,1fr)] items-start gap-6 lg:grid-cols-[260px_minmax(0,1fr)]">
       {/* Phones and tablets: one grouped drop-down */}
       <div className="flex flex-col gap-1.5 lg:hidden">
-        <label htmlFor="calc-picker" className="text-sm font-semibold text-vault-900">
+        <label htmlFor="calc-picker" className="text-sm font-bold text-vault-900">
           {bi("Choose a calculation", "انتخاب محاسبه")[locale]}
         </label>
         <select id="calc-picker" className="field-input text-base" value={active} onChange={(e) => setActive(e.target.value)}>

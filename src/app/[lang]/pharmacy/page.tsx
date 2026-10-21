@@ -22,7 +22,7 @@ export const generateMetadata = () => pageMetadata(pharmacyPage.title, pharmacyP
 function Refs({ refs, locale }: { refs: Ref[]; locale: Locale }) {
   return (
     <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1.5 text-xs text-muted">
-      <span className="font-semibold text-vault-900">{pharmacyPage.refsLabel[locale]}:</span>
+      <span className="font-bold text-vault-900">{pharmacyPage.refsLabel[locale]}:</span>
       {refs.map((r) =>
         r.url ? (
           <a
@@ -58,7 +58,7 @@ function LinkCards({ links, locale }: { links: { label: string; url: string; not
           >
             <ExternalLink className="mt-0.5 size-4 shrink-0 text-molecule-500" aria-hidden="true" />
             <span className="min-w-0">
-              <span className="block font-semibold text-vault-900">
+              <span className="block font-bold text-vault-900">
                 <bdi>{l.label}</bdi>
               </span>
               <span className="block text-xs leading-relaxed text-muted">{l.note[locale]}</span>
@@ -98,7 +98,7 @@ function QuickAccess({ locale }: { locale: Locale }) {
           <li key={section.key}>
             <a
               href={`#${section.key}`}
-              className="flex h-full items-center gap-3 rounded-2xl border border-vault-100 bg-vault-50 px-4 py-3 font-semibold text-vault-900 transition hover:border-capsule-400 hover:bg-capsule-50"
+              className="flex h-full items-center gap-3 rounded-2xl border border-vault-100 bg-vault-50 px-4 py-3 font-bold text-vault-900 transition hover:border-capsule-400 hover:bg-capsule-50"
             >
               <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-vault-900 text-molecule-400">
                 <Icon className="size-4" aria-hidden="true" />

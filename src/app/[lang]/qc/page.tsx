@@ -224,7 +224,7 @@ export default async function QcPage() {
             <tbody>
               {qc.solvents.map((row) => (
                 <tr key={row.cls}>
-                  <td className="num font-semibold text-vault-900">{row.cls}</td>
+                  <td className="num font-bold text-vault-900">{row.cls}</td>
                   <td className="min-w-56">{row.meaning[locale]}</td>
                   <td className="min-w-72 leading-relaxed" dir="ltr" style={{ textAlign: "start" }}>
                     {row.examples}
@@ -249,7 +249,7 @@ export default async function QcPage() {
             <tbody>
               {qc.elements.map((row) => (
                 <tr key={row.element}>
-                  <td className="font-semibold text-vault-900" dir="ltr" style={{ textAlign: "start" }}>
+                  <td className="font-bold text-vault-900" dir="ltr" style={{ textAlign: "start" }}>
                     {row.element}
                   </td>
                   <td className="num">{row.cls}</td>

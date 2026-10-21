@@ -42,16 +42,15 @@
 }
 
 /*
- * Persian text uses Vazirmatn and English uses IBM Plex Sans. On Persian pages
- * Plex Sans (Latin only) comes first, so digits and Latin words in Persian
- * sentences share the English pages' typeface while Persian letters fall
- * through to Vazirmatn.
+ * Persian pages are set in Readex Pro throughout, so Persian letters and the
+ * digits and Latin words between them share one typeface. English pages use
+ * IBM Plex Sans, with Readex Pro for any Persian on them.
  */
 .locale-fa {
-  --font-body: var(--font-plex-sans), var(--font-vazirmatn), system-ui, sans-serif;
+  --font-body: var(--font-readex), system-ui, sans-serif;
 }
 .locale-en {
-  --font-body: var(--font-plex-sans), var(--font-vazirmatn), system-ui, sans-serif;
+  --font-body: var(--font-plex-sans), var(--font-readex), system-ui, sans-serif;
 }
 
 html {

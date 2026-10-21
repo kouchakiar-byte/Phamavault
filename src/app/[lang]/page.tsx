@@ -198,7 +198,7 @@ export default async function HomePage() {
             </h1>
             {/* A DNA strand under the name, over the hero's benzene-ring pattern */}
             <DnaHelix orientation="horizontal" rungs={26} className="mt-5 h-12 w-full max-w-lg sm:h-14" />
-            <p className="mt-5 max-w-2xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
+            <p className="mt-5 max-w-2xl text-xl font-bold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
             <p className="mt-3 max-w-xl text-base font-medium leading-relaxed text-molecule-400">{hero.audience[locale]}</p>
             {/* The site-wide search: a plain GET form to /search */}
             <form action={href(locale, "search")} role="search" className="mt-8 flex max-w-2xl gap-2 rounded-full border border-white/15 bg-white/[0.06] p-1.5 backdrop-blur transition focus-within:border-molecule-400">
@@ -224,7 +224,7 @@ export default async function HomePage() {
 
           {/* The "vault" panel: every section one click away */}
           <div className="fade-in [animation-delay:.1s] lg:col-start-2 lg:row-span-4 lg:row-start-1">
-            <p className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-molecule-400">
+            <p className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/5 whitespace-nowrap px-4 py-1.5 text-xs font-bold tracking-wide text-molecule-400 sm:text-sm">
               {copy.platform[locale]}
               <span className="text-molecule-400/60" aria-hidden="true">·</span>
               <span dir={locale === "fa" ? "ltr" : "rtl"}>{copy.platform[locale === "fa" ? "en" : "fa"]}</span>
@@ -233,8 +233,8 @@ export default async function HomePage() {
               <div className="flex items-center gap-3 border-b border-white/10 pb-4">
                 <LogoMark className="size-10" />
                 <div>
-                  <p className="text-sm font-semibold">{copy.nav.sections[locale]}</p>
-                  <p className="text-xs text-vault-100/60">{copy.platform[locale]}</p>
+                  <p className="text-base font-bold">{copy.nav.sections[locale]}</p>
+                  <p className="text-xs font-semibold text-vault-100/70">{copy.platform[locale]}</p>
                 </div>
               </div>
               <ul className="mt-4 grid gap-1.5">
@@ -247,7 +247,7 @@ export default async function HomePage() {
                       <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-molecule-500/15 text-molecule-400 transition group-hover:bg-vault-950/90 group-hover:text-capsule-400">
                         <Icon className="size-[1.1rem]" aria-hidden="true" />
                       </span>
-                      <span className="flex-1 text-sm font-medium group-hover:font-semibold">{title[locale]}</span>
+                      <span className="flex-1 text-sm font-bold sm:text-[0.95rem]">{title[locale]}</span>
                       <ArrowUpRight
                         className="size-4 shrink-0 text-vault-100/40 transition group-hover:text-vault-950 rtl:-scale-x-100"
                         aria-hidden="true"
@@ -288,7 +288,7 @@ export default async function HomePage() {
           <Container className="grid gap-6 py-8 sm:grid-cols-3">
             {hero.pillars.map((p) => (
               <div key={p.title.en} className="border-s-2 border-molecule-500 ps-4">
-                <p className="font-semibold">{p.title[locale]}</p>
+                <p className="font-bold">{p.title[locale]}</p>
                 <p className="mt-1 text-sm leading-relaxed text-vault-100/70">{p.text[locale]}</p>
               </div>
             ))}
@@ -369,11 +369,11 @@ export default async function HomePage() {
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted">{description[locale]}</p>
                   {highlight && (
-                    <p className="mt-4 self-start rounded-md bg-molecule-50 px-2.5 py-1 text-xs font-semibold text-molecule-700 transition group-hover:bg-white/70 group-hover:text-capsule-700">
+                    <p className="mt-4 self-start rounded-md bg-molecule-50 px-2.5 py-1 text-xs font-bold text-molecule-700 transition group-hover:bg-white/70 group-hover:text-capsule-700">
                       {highlight[locale]}
                     </p>
                   )}
-                  <span className="mt-auto pt-6 text-sm font-semibold text-molecule-700 transition group-hover:text-capsule-700">{sectionsIntro.open[locale]}</span>
+                  <span className="mt-auto pt-6 text-sm font-bold text-molecule-700 transition group-hover:text-capsule-700">{sectionsIntro.open[locale]}</span>
                 </article>
               );
             })}
@@ -431,7 +431,7 @@ export default async function HomePage() {
                   <section.icon className="size-6 text-molecule-500" aria-hidden="true" />
                   <p className="mt-5 font-mono text-4xl font-medium tracking-tight text-vault-900">{num(count)}</p>
                   <p className="mt-1 text-sm text-muted">{unit[locale].replace("{p}", num(counts.supplierMaterials))}</p>
-                  <p className="mt-auto pt-5 text-sm font-semibold text-vault-900 group-hover:text-molecule-700">
+                  <p className="mt-auto pt-5 text-sm font-bold text-vault-900 group-hover:text-molecule-700">
                     {section.title[locale]}
                   </p>
                 </Link>
@@ -471,7 +471,7 @@ export default async function HomePage() {
           <div className="mt-12 grid gap-px overflow-hidden rounded-card border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
             {featuredCalculations.map(calculation).map((c) => (
               <div key={c.key} className="bg-vault-950 p-6">
-                <h3 className="font-semibold">{c.title[locale]}</h3>
+                <h3 className="font-bold">{c.title[locale]}</h3>
                 <p className="mt-3 font-mono text-xs leading-relaxed text-molecule-400" dir="ltr" style={{ textAlign: "start" }}>
                   {c.equation}
                 </p>
@@ -603,7 +603,7 @@ export default async function HomePage() {
             </table>
           </div>
 
-          <h3 className="mt-14 text-sm font-semibold text-muted">{plans.ordersTitle[locale]}</h3>
+          <h3 className="mt-14 text-sm font-bold text-muted">{plans.ordersTitle[locale]}</h3>
           <div className="mt-4 grid gap-px overflow-hidden rounded-card border border-line bg-line md:grid-cols-3">
             {plans.orders.map((o) => (
               <div key={o.title.en} className="bg-white p-6">
@@ -622,7 +622,7 @@ export default async function HomePage() {
           <div className="mt-10 divide-y divide-line overflow-hidden rounded-card border border-line bg-white">
             {faq.items.map((item) => (
               <details key={item.q.en} className="group">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 font-semibold text-vault-900 hover:bg-vault-50 [&::-webkit-details-marker]:hidden">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 font-bold text-vault-900 hover:bg-vault-50 [&::-webkit-details-marker]:hidden">
                   {item.q[locale]}
                   <ChevronDown className="size-5 shrink-0 text-muted transition group-open:rotate-180" aria-hidden="true" />
                 </summary>

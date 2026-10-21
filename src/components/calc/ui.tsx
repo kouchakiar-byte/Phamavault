@@ -145,7 +145,7 @@ function References({ refs, locale }: { refs: string[]; locale: Locale }) {
   if (!refs.length) return null;
   return (
     <p className="flex flex-wrap items-center gap-x-2 gap-y-1.5 border-t border-line pt-3 text-xs text-muted">
-      <span className="font-semibold text-vault-900">{bi("References (current editions):", "رفرنس‌ها (آخرین ویرایش):")[locale]}</span>
+      <span className="font-bold text-vault-900">{bi("References (current editions):", "رفرنس‌ها (آخرین ویرایش):")[locale]}</span>
       {refs.map((r) => {
         const url = refUrl(r);
         const pill = "rounded-lg border border-line bg-white px-2 py-0.5";

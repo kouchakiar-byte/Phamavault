@@ -200,7 +200,7 @@ export function BuyForm({
 
         {renewal && (
           <div className="rounded-xl border border-line bg-white p-4">
-            <p className="font-semibold text-vault-900">{t.renewing[locale].replace("{id}", renewal.id)}</p>
+            <p className="font-bold text-vault-900">{t.renewing[locale].replace("{id}", renewal.id)}</p>
             <p className="mt-1 text-sm text-muted">{renewal.label}</p>
           </div>
         )}
