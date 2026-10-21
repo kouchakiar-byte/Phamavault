@@ -64,7 +64,7 @@
     },
     "v": {
      "en": "the sucrose fraction dissolves readily in water, while the starch fraction is insoluble, so the cores soften and partly disintegrate in water",
-     "fa": "بخش ساکارز به‌راحتی در آب حل می‌شود ولی بخش نشاسته نامحلول است؛ بنابراین هسته‌ها در آب نرم شده و تا حدی متلاشی می‌شوند"
+     "fa": "بخش ساکارز به‌راحتی در آب حل می‌شود ولی بخش نشاسته نامحلول است؛ بنابراین هسته‌ها در آب نرم می‌شوند و باززایی نسبی آن‌ها رخ می‌دهد"
     }
    },
    {
@@ -190,7 +190,7 @@
   ],
   "stability": {
    "en": "Stable in air at moderate temperatures. It may cake when stored at high relative humidity. Store in a well-closed container in a cool, dry place.",
-   "fa": "در هوا و دمای متوسط پایدار است. در رطوبت نسبی بالا ممکن است کلوخه شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
+   "fa": "در هوا و دمای متوسط پایدار است. در رطوبت نسبی بالا ممکن است دچار کلوخه‌ای شدن (Caking) شود. در ظرف کاملاً بسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "Shares the incompatibilities of sucrose. Hydrolysis to reducing sugars, accelerated by acid and moisture, can lead to Maillard browning with amine drugs; any invert sugar present is already reducing.",
@@ -218,7 +218,7 @@
   },
   "comments": {
    "en": "Tablets made with compressible sugar can harden on storage, especially if exposed to moisture and then dried. A lubricant such as magnesium stearate is usually needed, because sugar-based blends tend to stick to punches.",
-   "fa": "قرص‌های ساخته‌شده با شکر قابل تراکم ممکن است در طول نگهداری سخت‌تر شوند، به‌ویژه اگر رطوبت جذب و دوباره خشک شوند. معمولاً به روان‌کننده‌ای مانند منیزیم استئارات نیاز است، چون مخلوط‌های قندی تمایل به چسبیدن به پانچ دارند."
+   "fa": "قرص‌های ساخته‌شده با شکر قابل تراکم ممکن است در طول نگهداری سخت‌تر شوند، به‌ویژه اگر رطوبت جذب و دوباره خشک شوند. معمولاً به روان‌کننده‌ای مانند منیزیم استئارات نیاز است، چون مخلوط‌های قندی تمایل به چسبیدن به پانچ (Sticking) دارند."
   },
   "refs": [
    "usp",
@@ -564,7 +564,7 @@
   },
   "comments": {
    "en": "Talc is hydrophobic and, at higher levels, can slow tablet disintegration and dissolution. Its lubricant efficiency is lower than that of magnesium stearate, so it is often combined with it. Pharmacopoeias now require specific tests for amphibole and serpentine asbestos.",
-   "fa": "تالک آب‌گریز است و در غلظت‌های بالاتر می‌تواند متلاشی شدن و انحلال قرص را کند کند. کارایی روان‌کنندگی آن از منیزیم استئارات کمتر است و به همین دلیل اغلب همراه آن مصرف می‌شود. فارماکوپه‌ها اکنون آزمون‌های ویژه‌ای برای آزبست آمفیبول و سرپانتین الزامی کرده‌اند."
+   "fa": "تالک آب‌گریز است و در غلظت‌های بالاتر می‌تواند باززایی و انحلال قرص را کند کند. کارایی روان‌کنندگی آن از منیزیم استئارات کمتر است و به همین دلیل اغلب همراه آن مصرف می‌شود. فارماکوپه‌ها اکنون آزمون‌های ویژه‌ای برای آزبست آمفیبول و سرپانتین الزامی کرده‌اند."
   },
   "refs": [
    "usp",
@@ -1154,7 +1154,7 @@
   },
   "comments": {
    "en": "Iran is a major source of tragacanth, and the ribbon grades are generally of higher quality than the flake grades. Because the gum clumps when added to water, it is best dispersed first in a wetting agent such as ethanol, glycerol or propylene glycol, or mixed with other powders, before water is added. Quality and viscosity vary between natural lots.",
-   "fa": "ایران از منابع اصلی کتیرا (تراگاکانت) است و گریدهای نواری عموماً کیفیت بالاتری از گریدهای پولکی دارند. چون صمغ هنگام افزودن به آب کلوخه می‌شود، بهتر است ابتدا در یک عامل مرطوب‌کننده مانند اتانول، گلیسرول یا پروپیلن گلیکول پراکنده یا با سایر پودرها مخلوط و سپس آب اضافه شود. کیفیت و ویسکوزیته بین سری‌های طبیعی متفاوت است."
+   "fa": "ایران از منابع اصلی کتیرا (تراگاکانت) است و گریدهای نواری عموماً کیفیت بالاتری از گریدهای پولکی دارند. چون صمغ هنگام افزودن به آب کلوخه تشکیل می‌دهد، بهتر است ابتدا در یک عامل مرطوب‌کننده مانند اتانول، گلیسرول یا پروپیلن گلیکول پراکنده یا با سایر پودرها مخلوط و سپس آب اضافه شود. کیفیت و ویسکوزیته بین سری‌های طبیعی متفاوت است."
   },
   "refs": [
    "usp",

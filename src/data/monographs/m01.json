@@ -814,7 +814,7 @@
   "mw": "",
   "applications": {
    "en": "Used as a gelling, suspending, emulsion-stabilising and thickening agent, in suppositories and surgical lubricants, and occasionally as a tablet binder or disintegrant. It is also used as a bulk laxative, and it is the standard gelling agent for microbiological culture media (usually around 1–2%). In foods it is a gelling agent and stabiliser.",
-   "fa": "به عنوان عامل ژل‌ساز، تعلیق‌کننده، پایدارکننده امولسیون و غلیظ‌کننده، در شیاف‌ها و روان‌کننده‌های جراحی، و گاهی به عنوان چسباننده یا متلاشی‌کننده قرص به کار می‌رود. همچنین ملین حجم‌دهنده است و ژل‌ساز استاندارد محیط‌های کشت میکروبی (معمولاً حدود 1–2%) به شمار می‌رود. در غذا به عنوان ژل‌ساز و پایدارکننده مصرف می‌شود."
+   "fa": "به عنوان عامل ژل‌ساز، تعلیق‌کننده، پایدارکننده امولسیون و غلیظ‌کننده، در شیاف‌ها و روان‌کننده‌های جراحی، و گاهی به عنوان چسباننده یا باززای قرص به کار می‌رود. همچنین ملین حجم‌دهنده است و ژل‌ساز استاندارد محیط‌های کشت میکروبی (معمولاً حدود 1–2%) به شمار می‌رود. در غذا به عنوان ژل‌ساز و پایدارکننده مصرف می‌شود."
   },
   "description": {
    "en": "Supplied as colourless to pale yellow translucent strips, flakes or granules, or as a powder. It is tough when damp and brittle when dry, practically odourless or with a slight odour, and has a mucilaginous taste. Agar consists mainly of agarose, a neutral gelling galactan, together with agaropectin, a more charged sulfated fraction.",
@@ -1162,7 +1162,7 @@
   "mw": "≈ 10 000–600 000",
   "applications": {
    "en": "Used in oral and topical products as a tablet binder and disintegrant, as a thickening and suspending agent, and in modified-release matrices. Combined with sodium bicarbonate and antacids it forms a floating gel raft in reflux-suppressant products. Typical concentrations: tablet binder 1–5%; tablet disintegrant 1–5%.",
-   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان چسباننده و متلاشی‌کننده قرص، غلیظ‌کننده و تعلیق‌کننده و در ماتریکس‌های رهش اصلاح‌شده به کار می‌رود. همراه با سدیم بی‌کربنات و آنتی‌اسیدها، در فرآورده‌های ضدریفلاکس یک لایه ژلی شناور (raft) ایجاد می‌کند. غلظت‌های متداول: چسباننده قرص 1–5%؛ متلاشی‌کننده قرص 1–5%."
+   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان چسباننده و باززای (Disintegrant) قرص، غلیظ‌کننده و تعلیق‌کننده و در ماتریکس‌های رهش اصلاح‌شده به کار می‌رود. همراه با سدیم بی‌کربنات و آنتی‌اسیدها، در فرآورده‌های ضدریفلاکس یک لایه ژلی شناور (raft) ایجاد می‌کند. غلظت‌های متداول: چسباننده قرص 1–5%؛ باززای قرص 1–5%."
   },
   "description": {
    "en": "A white to yellowish-white, fibrous powder, odourless or almost odourless and practically tasteless. It is a linear polyuronide made of blocks of β-(1→4)-D-mannuronic acid and α-(1→4)-L-guluronic acid in varying proportions and sequence, depending on the seaweed source.",
@@ -1864,7 +1864,7 @@
   ],
   "stability": {
    "en": "Stable, but slightly hygroscopic and may cake. Store in an airtight container in a cool, dry place.",
-   "fa": "پایدار است ولی کمی رطوبت‌گیر است و ممکن است کلوخه شود. در ظرف دربسته، در جای خنک و خشک نگهداری شود."
+   "fa": "پایدار است ولی کمی رطوبت‌گیر است و ممکن است دچار کلوخه‌ای شدن (Caking) شود. در ظرف دربسته، در جای خنک و خشک نگهداری شود."
   },
   "incompatibilities": {
    "en": "Liberates ammonia with alkalis and alkali carbonates. Incompatible with silver and lead salts, with strong oxidising agents such as potassium chlorate, and with nitrites; it can corrode metals in the presence of moisture.",
@@ -2565,7 +2565,7 @@
   },
   "comments": {
    "en": "Bentonite hydrates best when sprinkled onto the surface of water and left to stand, or when dispersed with high-shear mixing; adding water to the powder tends to form lumps. Pre-wetting with glycerol also helps dispersion.",
-   "fa": "بنتونیت وقتی روی سطح آب پاشیده و به حال خود رها شود یا با همزن پربرش پخش گردد بهتر آب‌پوشی می‌شود؛ افزودن آب به پودر معمولاً باعث کلوخه شدن می‌شود. خیس کردن اولیه با گلیسرول نیز به پخش شدن آن کمک می‌کند."
+   "fa": "بنتونیت وقتی روی سطح آب پاشیده و به حال خود رها شود یا با همزن پربرش پخش گردد بهتر آب‌پوشی می‌شود؛ افزودن آب به پودر معمولاً باعث تشکیل کلوخه می‌شود. مرطوب‌کردن اولیه با گلیسرول نیز به پخش شدن آن کمک می‌کند."
   },
   "refs": [
    "usp",
