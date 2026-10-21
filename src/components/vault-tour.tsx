@@ -90,10 +90,10 @@ export function VaultTour({ locale, className = "" }: { locale: Locale; classNam
     <figure ref={box} className={`overflow-hidden rounded-2xl border border-white/15 bg-vault-950/70 shadow-2xl shadow-black/40 ${className}`}>
       {/* Browser chrome, so the film reads as the site itself */}
       <div className="flex items-center gap-2 border-b border-white/10 bg-white/[0.06] px-3 py-2" dir="ltr">
-        <span className="size-2.5 rounded-full bg-[#ff5f57]" />
-        <span className="size-2.5 rounded-full bg-[#febc2e]" />
-        <span className="size-2.5 rounded-full bg-[#28c840]" />
-        <span className="mx-auto rounded-md bg-white/10 px-3 py-0.5 font-mono text-[0.7rem] text-vault-100/70">pharmavault.ir</span>
+        <span className="size-6" aria-hidden="true" />
+        <span className="mx-auto rounded-md bg-white/10 px-3 py-0.5 font-mono text-[0.75rem] font-bold">
+          <span className="pv-gold-text">pharmavault.ir</span>
+        </span>
         <button
           type="button"
           onClick={toggle}
