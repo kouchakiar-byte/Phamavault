@@ -442,16 +442,19 @@ export default async function HomePage() {
       </section>
 
       {/* Calculations */}
-      <section className="relative isolate overflow-hidden bg-vault-950 py-20 text-white lg:py-28">
-        <MoleculePattern className="text-white/[0.03]" />
-        <div className="absolute inset-y-0 end-0 -z-10 hidden w-1/2 md:block" aria-hidden="true">
-          <Image src={flaskPhoto} alt="" fill sizes="50vw" placeholder="blur" className="object-cover object-[30%_50%] opacity-35" />
-          <div className="absolute inset-0 bg-gradient-to-r from-vault-950 via-vault-950/60 to-vault-950/10 rtl:bg-gradient-to-l" />
+      <section className="relative isolate overflow-hidden border-y border-line bg-gradient-to-br from-molecule-50 via-white to-vault-50 py-20 lg:py-28">
+        <MoleculePattern className="-z-20 text-vault-900/[0.04]" />
+        {/* The flask photo on the end side, fading softly into the light background */}
+        <div
+          className="absolute inset-y-0 end-0 -z-10 hidden w-[52%] [mask-image:linear-gradient(to_left,#000_55%,transparent)] md:block rtl:[mask-image:linear-gradient(to_right,#000_55%,transparent)]"
+          aria-hidden="true"
+        >
+          <Image src={flaskPhoto} alt="" fill sizes="52vw" placeholder="blur" className="object-cover object-[30%_50%]" />
         </div>
         <Container>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
-              <p className="text-sm font-semibold tracking-wide text-molecule-400">{toolsShowcase.eyebrow[locale]}</p>
+              <p className="text-sm font-bold tracking-wide text-molecule-700">{toolsShowcase.eyebrow[locale]}</p>
               <BiTitle
                 as="h2"
                 text={bi(
@@ -459,20 +462,26 @@ export default async function HomePage() {
                   toolsShowcase.title.fa.replace("{n}", calculations.length.toLocaleString("fa-IR-u-nu-latn")),
                 )}
                 locale={locale}
-                className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl"
-                secondaryClassName="text-vault-100"
+                className="mt-3 text-3xl font-bold tracking-tight text-vault-900 sm:text-4xl"
+                secondaryClassName="text-muted"
               />
-              <p className="mt-4 text-lg text-vault-100/80">{toolsShowcase.lead[locale]}</p>
+              <p className="mt-4 text-lg leading-relaxed text-ink/80">{toolsShowcase.lead[locale]}</p>
             </div>
-            <ButtonLink href={href(locale, "tools")} variant="outline-light">
+            <ButtonLink href={href(locale, "tools")}>
               {toolsShowcase.open[locale]}
             </ButtonLink>
           </div>
-          <div className="mt-12 grid gap-px overflow-hidden rounded-card border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="relative mt-8 h-52 overflow-hidden rounded-card md:hidden" aria-hidden="true">
+            <Image src={flaskPhoto} alt="" fill sizes="100vw" placeholder="blur" className="object-cover object-[50%_45%]" />
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-4">
             {featuredCalculations.map(calculation).map((c) => (
-              <div key={c.key} className="bg-vault-950 p-6">
-                <h3 className="font-bold">{c.title[locale]}</h3>
-                <p className="mt-3 font-mono text-xs leading-relaxed text-molecule-400" dir="ltr" style={{ textAlign: "start" }}>
+              <div
+                key={c.key}
+                className="rounded-card border border-white/80 bg-white/80 p-6 shadow-lg shadow-vault-900/5 ring-1 ring-vault-900/5 backdrop-blur-md transition hover:-translate-y-0.5 hover:border-molecule-400 hover:shadow-molecule-500/10"
+              >
+                <h3 className="font-bold text-vault-900">{c.title[locale]}</h3>
+                <p className="mt-3 font-mono text-xs leading-relaxed text-molecule-700" dir="ltr" style={{ textAlign: "start" }}>
                   {c.equation}
                 </p>
               </div>
