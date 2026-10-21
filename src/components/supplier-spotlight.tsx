@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Search } from "lucide-react";
 import { pages } from "@/content/pages";
@@ -6,6 +7,7 @@ import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
 import suppliers from "@/data/suppliers.json";
 import { href } from "@/lib/paths";
+import pillsYellow from "@/assets/photos/pills-yellow.webp";
 import { BiTitle, ButtonLink, Container } from "./ui";
 
 /** The supplier bank, featured on the home page with a search box that works without JavaScript. */
@@ -32,6 +34,10 @@ export function SupplierSpotlight({ locale }: { locale: Locale }) {
     <section id="supplier-bank" className="scroll-mt-20 bg-white py-16 lg:py-20">
       <Container>
         <div className="overflow-hidden rounded-3xl border border-molecule-400/40 bg-white bg-gradient-to-br from-molecule-50 via-white to-vault-50 shadow-xl shadow-vault-900/5">
+          <div className="relative h-32 sm:h-44">
+            <Image src={pillsYellow} alt="" fill sizes="(min-width: 1280px) 1200px, 100vw" placeholder="blur" className="object-cover object-[50%_40%]" />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/90" aria-hidden="true" />
+          </div>
           <div className="grid gap-10 p-6 sm:p-10 lg:grid-cols-[1.35fr_1fr] lg:gap-14">
             <div>
               <div className="flex flex-wrap items-center gap-3">

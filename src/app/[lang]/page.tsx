@@ -1,5 +1,6 @@
 import { CtdRequest } from "@/components/ctd-request";
 import { EnamadSeal } from "@/components/enamad-seal";
+import Image from "next/image";
 import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 import {
@@ -30,6 +31,9 @@ import { sections } from "@/content/sections";
 import { DnaHelix } from "@/components/dna-helix";
 import { HeroStats } from "@/components/hero-stats";
 import { LabCollage } from "@/components/lab-collage";
+import ampoulesPhoto from "@/assets/photos/ampoules.webp";
+import flaskPhoto from "@/assets/photos/flask.webp";
+import pillsPhoto from "@/assets/photos/pills-scattered.webp";
 
 // The platform's sections, CTD compilation included; enterprise solutions are a plan, not a section.
 const platformSections = sections.filter((s) => s.slug !== "enterprise");
@@ -400,9 +404,14 @@ export default async function HomePage() {
                 <CtdRequest locale={locale} />
               </div>
             </div>
-            <div className="mx-auto flex size-48 flex-col items-center justify-center rounded-full border-4 border-capsule-400/70 bg-vault-950/50 text-center shadow-2xl shadow-capsule-500/20 sm:size-56">
-              <span className="pv-gold-text text-7xl font-bold leading-none sm:text-8xl">{num(5)}</span>
-              <span className="mt-2 text-base font-semibold text-capsule-400">{ctdService.days[locale]}</span>
+            <div className="relative mx-auto w-full max-w-xs pb-16 sm:max-w-sm">
+              <div className="overflow-hidden rounded-[2rem] shadow-2xl shadow-black/40 ring-1 ring-white/10">
+                <Image src={ampoulesPhoto} alt="" sizes="(min-width: 1024px) 380px, 80vw" placeholder="blur" className="aspect-[4/5] h-auto w-full object-cover" />
+              </div>
+              <div className="absolute -bottom-2 start-1/2 flex size-36 -translate-x-1/2 flex-col items-center justify-center rounded-full border-4 border-capsule-400/80 bg-vault-950/90 text-center shadow-2xl shadow-capsule-500/30 backdrop-blur rtl:translate-x-1/2 sm:size-44">
+                <span className="pv-gold-text text-6xl font-bold leading-none sm:text-7xl">{num(5)}</span>
+                <span className="mt-1.5 text-sm font-semibold text-capsule-400">{ctdService.days[locale]}</span>
+              </div>
             </div>
           </div>
         </Container>
@@ -412,7 +421,11 @@ export default async function HomePage() {
       <section className="border-y border-line bg-white py-20 lg:py-28">
         <Container>
           <SectionHead eyebrow={databases.eyebrow[locale]} title={databases.title} locale={locale} lead={databases.lead[locale]} />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="relative mt-10 h-44 overflow-hidden rounded-3xl sm:h-60">
+            <Image src={pillsPhoto} alt="" fill sizes="(min-width: 1280px) 1200px, 100vw" placeholder="blur" className="object-cover object-[50%_60%]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-transparent" aria-hidden="true" />
+          </div>
+          <div className="relative -mt-14 grid gap-6 px-3 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
             {databaseStats(counts).map(({ slug, count, unit }) => {
               const section = sections.find((s) => s.slug === slug)!;
               return (
@@ -437,6 +450,10 @@ export default async function HomePage() {
       {/* Calculations */}
       <section className="relative isolate overflow-hidden bg-vault-950 py-20 text-white lg:py-28">
         <MoleculePattern className="text-white/[0.03]" />
+        <div className="absolute inset-y-0 end-0 -z-10 hidden w-1/2 md:block" aria-hidden="true">
+          <Image src={flaskPhoto} alt="" fill sizes="50vw" placeholder="blur" className="object-cover object-[30%_50%] opacity-35" />
+          <div className="absolute inset-0 bg-gradient-to-r from-vault-950 via-vault-950/60 to-vault-950/10 rtl:bg-gradient-to-l" />
+        </div>
         <Container>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
