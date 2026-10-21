@@ -31,6 +31,7 @@ import { sections } from "@/content/sections";
 import { DnaHelix } from "@/components/dna-helix";
 import { HeroStats } from "@/components/hero-stats";
 import { LabCollage } from "@/components/lab-collage";
+import ctdPhoto from "@/assets/photos/ctd-dossier.webp";
 import flaskPhoto from "@/assets/photos/flask.webp";
 import pillsPhoto from "@/assets/photos/pills-scattered.webp";
 
@@ -384,9 +385,14 @@ export default async function HomePage() {
       {/* CTD compilation service */}
       <section id="ctd" className="scroll-mt-20 pb-20 lg:pb-28">
         <Container>
-          <div className="relative isolate grid gap-10 overflow-hidden rounded-3xl bg-vault-900 px-6 py-12 text-white sm:px-12 lg:grid-cols-[1.4fr_1fr] lg:items-center">
-            <MoleculePattern className="text-white/[0.05]" />
-            <div className="absolute -top-32 end-[-6rem] -z-10 size-[26rem] rounded-full bg-capsule-500/20 blur-3xl" />
+          <div className="relative isolate grid gap-10 overflow-hidden rounded-3xl bg-vault-900 px-6 py-12 text-white shadow-2xl shadow-vault-900/20 sm:px-12 lg:grid-cols-[1.4fr_1fr] lg:items-center lg:py-16">
+            {/* A dossier being reviewed: behind the whole card on phones, the end half on desktop, fading into the navy */}
+            <div className="absolute inset-0 -z-20 lg:start-auto lg:w-[48%]" aria-hidden="true">
+              <Image src={ctdPhoto} alt="" fill sizes="(min-width: 1024px) 600px, 100vw" placeholder="blur" className="object-cover object-[45%_55%]" />
+              <div className="absolute inset-0 bg-vault-900/80 lg:bg-transparent lg:bg-gradient-to-r lg:from-vault-900 lg:via-vault-900/45 lg:to-vault-900/5 lg:rtl:bg-gradient-to-l" />
+            </div>
+            <MoleculePattern className="-z-10 text-white/[0.05]" />
+            <div className="absolute -top-32 end-[-6rem] -z-10 size-[26rem] rounded-full bg-capsule-500/15 blur-3xl" />
             <div>
               <p className="text-sm font-semibold text-capsule-400">{ctdService.eyebrow[locale]}</p>
               <BiTitle as="h2" text={ctdService.title} locale={locale} className="mt-3 text-3xl font-bold sm:text-4xl" secondaryClassName="text-vault-100" />
@@ -403,7 +409,7 @@ export default async function HomePage() {
                 <CtdRequest locale={locale} />
               </div>
             </div>
-            <div className="mx-auto flex size-48 flex-col items-center justify-center rounded-full border-4 border-capsule-400/70 bg-vault-950/50 text-center shadow-2xl shadow-capsule-500/20 sm:size-56">
+            <div className="mx-auto flex size-48 flex-col items-center justify-center rounded-full border-4 border-capsule-400/80 bg-vault-950/55 text-center shadow-2xl shadow-black/40 ring-8 ring-white/10 backdrop-blur-md sm:size-56">
               <span className="pv-gold-text text-7xl font-bold leading-none sm:text-8xl">{num(5)}</span>
               <span className="mt-2 text-base font-semibold text-capsule-400">{ctdService.days[locale]}</span>
             </div>
