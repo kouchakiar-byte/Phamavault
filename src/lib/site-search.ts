@@ -98,7 +98,7 @@ const persianName = (synonyms: string) => splitSynonyms(synonyms).find((x) => PE
  */
 const excipientFunctionAliases: Record<string, string> = {
   bin: "بایندر",
-  dis: "دیس‌اینتگرانت",
+  dis: "دیس‌اینتگرانت متلاشی‌کننده",
   lub: "لغزان‌کننده لوبریکانت",
   gli: "بهبوددهنده جریان پودر گلایدانت",
   sur: "سورفکتانت امولسی‌فایر امولسیفایر",
@@ -111,7 +111,7 @@ const excipientFunctionAliases: Record<string, string> = {
 };
 const formulationFunctionAliases: Record<string, string> = {
   bin: "بایندر",
-  dis: "دیس‌اینتگرانت",
+  dis: "دیس‌اینتگرانت متلاشی‌کننده",
   lub: "لغزان‌کننده لوبریکانت",
   gli: "بهبوددهنده جریان پودر گلایدانت",
   emo: "امولینت",
