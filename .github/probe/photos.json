@@ -1,0 +1,30 @@
+[
+ {
+  "q": "scientists magnifying glass",
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ {
+  "q": "pharmacist magnifying glass",
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ {
+  "q": "doctor magnifying glass",
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ {
+  "q": "researcher magnifying glass",
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ {
+  "q": "two scientists magnifying glass",
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ {
+  "q": "magnifying glass pills",
+  "error": "HTTP Error 401: Unauthorized"
+ },
+ {
+  "q": "pharmacy research team",
+  "error": "HTTP Error 401: Unauthorized"
+ }
+]
