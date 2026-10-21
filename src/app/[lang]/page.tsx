@@ -31,6 +31,7 @@ import { sections } from "@/content/sections";
 import { DnaHelix } from "@/components/dna-helix";
 import { HeroStats } from "@/components/hero-stats";
 import { LabCollage } from "@/components/lab-collage";
+import { VaultTour } from "@/components/vault-tour";
 import ctdPhoto from "@/assets/photos/ctd-dossier.webp";
 import flaskPhoto from "@/assets/photos/flask.webp";
 import pillsPhoto from "@/assets/photos/pills-scattered.webp";
@@ -199,6 +200,8 @@ export default async function HomePage() {
             </h1>
             {/* A DNA strand under the name, over the hero's benzene-ring pattern */}
             <DnaHelix orientation="horizontal" rungs={26} className="mt-5 h-12 w-full max-w-lg sm:h-14" />
+            {/* The vault opens onto a one-minute tour of the sections */}
+            <VaultTour locale={locale} className="mt-6 max-w-xl" />
             <p className="mt-5 max-w-2xl text-xl font-bold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
             <p className="mt-3 max-w-xl text-base font-medium leading-relaxed text-molecule-400">{hero.audience[locale]}</p>
             {/* The site-wide search: a plain GET form to /search */}
