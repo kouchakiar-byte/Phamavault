@@ -31,7 +31,6 @@ import { sections } from "@/content/sections";
 import { DnaHelix } from "@/components/dna-helix";
 import { HeroStats } from "@/components/hero-stats";
 import { LabCollage } from "@/components/lab-collage";
-import ampoulesPhoto from "@/assets/photos/ampoules.webp";
 import flaskPhoto from "@/assets/photos/flask.webp";
 import pillsPhoto from "@/assets/photos/pills-scattered.webp";
 
@@ -404,14 +403,9 @@ export default async function HomePage() {
                 <CtdRequest locale={locale} />
               </div>
             </div>
-            <div className="relative mx-auto w-full max-w-xs pb-16 sm:max-w-sm">
-              <div className="overflow-hidden rounded-[2rem] shadow-2xl shadow-black/40 ring-1 ring-white/10">
-                <Image src={ampoulesPhoto} alt="" sizes="(min-width: 1024px) 380px, 80vw" placeholder="blur" className="aspect-[4/5] h-auto w-full object-cover" />
-              </div>
-              <div className="absolute -bottom-2 start-1/2 flex size-36 -translate-x-1/2 flex-col items-center justify-center rounded-full border-4 border-capsule-400/80 bg-vault-950/90 text-center shadow-2xl shadow-capsule-500/30 backdrop-blur rtl:translate-x-1/2 sm:size-44">
-                <span className="pv-gold-text text-6xl font-bold leading-none sm:text-7xl">{num(5)}</span>
-                <span className="mt-1.5 text-sm font-semibold text-capsule-400">{ctdService.days[locale]}</span>
-              </div>
+            <div className="mx-auto flex size-48 flex-col items-center justify-center rounded-full border-4 border-capsule-400/70 bg-vault-950/50 text-center shadow-2xl shadow-capsule-500/20 sm:size-56">
+              <span className="pv-gold-text text-7xl font-bold leading-none sm:text-8xl">{num(5)}</span>
+              <span className="mt-2 text-base font-semibold text-capsule-400">{ctdService.days[locale]}</span>
             </div>
           </div>
         </Container>

@@ -15,7 +15,7 @@ import { getLocale } from "@/i18n/locale";
 import { pageMetadata } from "@/lib/metadata";
 import { href } from "@/lib/paths";
 import { withReviewedMonth } from "@/lib/data-dates";
-import blisters from "@/assets/photos/blisters.webp";
+import pharmacist from "@/assets/photos/pharmacist.webp";
 
 export const generateMetadata = () => pageMetadata(pharmacyPage.title, pharmacyPage.lead, "pharmacy");
 
@@ -133,15 +133,17 @@ export default async function PharmacyPage() {
     <>
       <PageHeader locale={locale} section="pharmacy" title={pharmacyPage.title} lead={pharmacyPage.lead} />
       <Container className="space-y-14 py-12">
-        <div className="space-y-3">
-          <div className="relative h-40 overflow-hidden rounded-3xl sm:h-56">
-            <Image src={blisters} alt="" fill priority sizes="(min-width: 1280px) 1200px, 100vw" placeholder="blur" className="object-cover object-[50%_45%]" />
-            <div className="absolute inset-0 bg-gradient-to-t from-vault-950/35 to-transparent" aria-hidden="true" />
+        <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_17rem]">
+          <div className="space-y-3">
+            <p className="rounded-xl border border-capsule-400/40 bg-capsule-400/10 px-4 py-3 text-sm leading-relaxed text-ink">
+              {pharmacyPage.disclaimer[locale]} {withReviewedMonth(pharmacyPage.reviewed[locale], "pharmacy", locale)}
+            </p>
+            <QuickAccess locale={locale} />
           </div>
-          <p className="rounded-xl border border-capsule-400/40 bg-capsule-400/10 px-4 py-3 text-sm leading-relaxed text-ink">
-            {pharmacyPage.disclaimer[locale]} {withReviewedMonth(pharmacyPage.reviewed[locale], "pharmacy", locale)}
-          </p>
-          <QuickAccess locale={locale} />
+          <div className="relative order-first h-60 overflow-hidden rounded-3xl shadow-lg shadow-vault-950/10 ring-1 ring-line sm:h-72 lg:order-none lg:h-auto">
+            <Image src={pharmacist} alt="" fill priority sizes="(min-width: 1024px) 272px, 100vw" placeholder="blur" className="object-cover object-[50%_28%] lg:object-[50%_35%]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-vault-950/30 to-transparent" aria-hidden="true" />
+          </div>
         </div>
 
         {/* 0. Drug interaction checker */}
