@@ -14,6 +14,8 @@ type BiTitleProps = {
   locale: Locale;
   as?: "h1" | "h2" | "h3" | "h4" | "span";
   className?: string;
+  /** Classes for the main-language title. */
+  primaryClassName?: string;
   /** Classes for the second-language label. */
   secondaryClassName?: string;
   /** Put the second language on its own line instead of beside the first. */
@@ -31,6 +33,7 @@ export function BiTitle({
   locale,
   as: Tag = "span",
   className = "",
+  primaryClassName = "",
   secondaryClassName = "",
   stacked = false,
   brandPlate = false,
@@ -39,7 +42,7 @@ export function BiTitle({
   const layout = stacked ? "flex flex-col gap-1" : "flex flex-wrap items-baseline gap-x-3 gap-y-1";
   return (
     <Tag className={`${layout} ${className}`}>
-      <span>{withBrand(text[locale], { plate: brandPlate })}</span>
+      <span className={primaryClassName}>{withBrand(text[locale], { plate: brandPlate })}</span>
       {text.en !== text.fa && (
         <span
           lang={other}

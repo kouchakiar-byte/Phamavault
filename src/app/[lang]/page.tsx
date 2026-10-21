@@ -395,7 +395,14 @@ export default async function HomePage() {
             <div className="absolute -top-32 end-[-6rem] -z-10 size-[26rem] rounded-full bg-capsule-500/15 blur-3xl" />
             <div>
               <p className="text-sm font-semibold text-capsule-400">{ctdService.eyebrow[locale]}</p>
-              <BiTitle as="h2" text={ctdService.title} locale={locale} className="mt-3 text-3xl font-bold sm:text-4xl" secondaryClassName="text-vault-100" />
+              <BiTitle
+                as="h2"
+                text={ctdService.title}
+                locale={locale}
+                className="mt-3 text-3xl font-bold sm:text-4xl"
+                primaryClassName="pv-gold-text font-extrabold leading-snug drop-shadow-[0_2px_10px_rgba(220,189,109,0.35)]"
+                secondaryClassName="text-vault-100"
+              />
               <p className="mt-4 max-w-2xl text-lg leading-relaxed text-vault-100/85">{ctdService.lead[locale]}</p>
               <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
                 {ctdService.points.map((pt) => (
