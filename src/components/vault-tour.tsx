@@ -12,7 +12,7 @@ type Stage = "locked" | "unlocking" | "opening" | "playing";
 /**
  * The vault in the hero: as soon as it comes into view the key turns once every
  * half second, lighting a tumbler each time; then the door swings open and a
- * one-minute, silent tour of the sections plays in its place, looping.
+ * two-minute, silent tour of all twelve sections plays in its place, looping.
  */
 export function VaultTour({ locale, className = "" }: { locale: Locale; className?: string }) {
   const box = useRef<HTMLDivElement>(null);
