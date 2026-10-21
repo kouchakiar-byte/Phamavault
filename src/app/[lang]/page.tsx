@@ -293,12 +293,17 @@ export default async function HomePage() {
       </section>
 
       {/* Statement */}
-      <section className="border-b border-line bg-paper py-14 lg:py-16">
-        <Container className="max-w-4xl text-center">
-          <LogoMark className="mx-auto size-11" />
-          <p className="mt-6 text-2xl font-bold leading-snug text-vault-900 sm:text-3xl">{copy.statement.title[locale]}</p>
-          <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-muted sm:text-xl">{copy.statement.text[locale]}</p>
-          <div className="mx-auto mt-8 h-1 w-16 rounded-full bg-capsule-500" aria-hidden="true" />
+      <section className="overflow-hidden border-b border-line bg-paper py-14 lg:py-16">
+        <Container className="grid items-center gap-10 lg:grid-cols-[1.1fr_1fr]">
+          <div className="text-center lg:text-start">
+            <LogoMark className="mx-auto size-11 lg:mx-0" />
+            <p className="mt-6 text-2xl font-bold leading-snug text-vault-900 sm:text-3xl">{copy.statement.title[locale]}</p>
+            <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-muted sm:text-xl lg:mx-0">{copy.statement.text[locale]}</p>
+            <div className="mx-auto mt-8 h-1 w-16 rounded-full bg-capsule-500 lg:mx-0" aria-hidden="true" />
+          </div>
+          {/* Researcher with a magnifier over a capsule, pills and an ampoule floating around (adapted from unDraw, free licence) */}
+          {/* eslint-disable-next-line @next/next/no-img-element -- an animated SVG; next/image would not keep its CSS animation */}
+          <img src="/illustrations/pharma-search.svg" alt="" width={800} height={880} className="mx-auto w-full max-w-sm lg:max-w-md" />
         </Container>
       </section>
 
