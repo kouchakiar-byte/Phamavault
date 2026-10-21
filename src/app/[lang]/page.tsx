@@ -1,5 +1,6 @@
 import { CtdRequest } from "@/components/ctd-request";
 import { EnamadSeal } from "@/components/enamad-seal";
+import Image from "next/image";
 import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 import {
@@ -27,10 +28,14 @@ import { calculation, calculations, featuredCalculations } from "@/content/calcu
 import { referenceSections } from "@/content/references";
 import { searchCopy } from "@/content/search";
 import { sections } from "@/content/sections";
+import { DnaHelix } from "@/components/dna-helix";
+import { HeroStats } from "@/components/hero-stats";
+import { LabCollage } from "@/components/lab-collage";
+import flaskPhoto from "@/assets/photos/flask.webp";
+import pillsPhoto from "@/assets/photos/pills-scattered.webp";
 
 // The platform's sections, CTD compilation included; enterprise solutions are a plan, not a section.
 const platformSections = sections.filter((s) => s.slug !== "enterprise");
-import { formatNumber } from "@/lib/format";
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
 import suppliers from "@/data/suppliers.json";
@@ -191,7 +196,9 @@ export default async function HomePage() {
                 ))}
               </span>
             </h1>
-            <p className="mt-6 max-w-2xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
+            {/* A DNA strand under the name, over the hero's benzene-ring pattern */}
+            <DnaHelix orientation="horizontal" rungs={26} className="mt-5 h-12 w-full max-w-lg sm:h-14" />
+            <p className="mt-5 max-w-2xl text-xl font-semibold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
             <p className="mt-3 max-w-xl text-base font-medium leading-relaxed text-molecule-400">{hero.audience[locale]}</p>
             {/* The site-wide search: a plain GET form to /search */}
             <form action={href(locale, "search")} role="search" className="mt-8 flex max-w-2xl gap-2 rounded-full border border-white/15 bg-white/[0.06] p-1.5 backdrop-blur transition focus-within:border-molecule-400">
@@ -253,21 +260,15 @@ export default async function HomePage() {
           </div>
           <div className="fade-in lg:col-start-1 lg:row-start-3">
             {/* The vault at a glance: live counts, then a few one-click searches */}
-            <dl className="grid lg:mt-9 max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
-              {(
-                [
-                  [counts.suppliers, hero.stats.suppliers],
-                  [counts.supplierMaterials, hero.stats.products],
-                  [counts.materials, hero.stats.materials],
-                  [platformSections.length, hero.stats.sections],
-                ] as const
-              ).map(([value, label]) => (
-                <div key={label.en} className="flex flex-col-reverse rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3">
-                  <dt className="mt-1 text-xs leading-snug text-vault-100/70">{label[locale]}</dt>
-                  <dd className="num text-2xl font-bold text-capsule-400">{formatNumber(value, locale)}</dd>
-                </div>
-              ))}
-            </dl>
+            <HeroStats
+              locale={locale}
+              stats={[
+                { value: counts.suppliers, label: hero.stats.suppliers },
+                { value: counts.supplierMaterials, label: hero.stats.products },
+                { value: counts.materials, label: hero.stats.materials },
+                { value: platformSections.length, label: hero.stats.sections },
+              ]}
+            />
             <div className="mt-5 flex max-w-2xl flex-wrap items-center gap-2 text-sm">
               <span className="text-vault-100/60">{hero.popular[locale]}</span>
               {hero.popularQueries.map((q) => (
@@ -296,12 +297,15 @@ export default async function HomePage() {
       </section>
 
       {/* Statement */}
-      <section className="border-b border-line bg-paper py-14 lg:py-16">
-        <Container className="max-w-4xl text-center">
-          <LogoMark className="mx-auto size-11" />
-          <p className="mt-6 text-2xl font-bold leading-snug text-vault-900 sm:text-3xl">{copy.statement.title[locale]}</p>
-          <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-muted sm:text-xl">{copy.statement.text[locale]}</p>
-          <div className="mx-auto mt-8 h-1 w-16 rounded-full bg-capsule-500" aria-hidden="true" />
+      <section className="overflow-hidden border-b border-line bg-paper py-14 lg:py-16">
+        <Container className="grid items-center gap-10 lg:grid-cols-[1.1fr_1fr]">
+          <div className="text-center lg:text-start">
+            <LogoMark className="mx-auto size-11 lg:mx-0" />
+            <p className="mt-6 text-2xl font-bold leading-snug text-vault-900 sm:text-3xl">{copy.statement.title[locale]}</p>
+            <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-muted sm:text-xl lg:mx-0">{copy.statement.text[locale]}</p>
+            <div className="mx-auto mt-8 h-1 w-16 rounded-full bg-capsule-500 lg:mx-0" aria-hidden="true" />
+          </div>
+          <LabCollage alt={copy.statement.photoAlt[locale]} />
         </Container>
       </section>
 
@@ -411,7 +415,11 @@ export default async function HomePage() {
       <section className="border-y border-line bg-white py-20 lg:py-28">
         <Container>
           <SectionHead eyebrow={databases.eyebrow[locale]} title={databases.title} locale={locale} lead={databases.lead[locale]} />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="relative mt-10 h-44 overflow-hidden rounded-3xl sm:h-60">
+            <Image src={pillsPhoto} alt="" fill sizes="(min-width: 1280px) 1200px, 100vw" placeholder="blur" className="object-cover object-[50%_60%]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-transparent" aria-hidden="true" />
+          </div>
+          <div className="relative -mt-14 grid gap-6 px-3 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
             {databaseStats(counts).map(({ slug, count, unit }) => {
               const section = sections.find((s) => s.slug === slug)!;
               return (
@@ -436,6 +444,10 @@ export default async function HomePage() {
       {/* Calculations */}
       <section className="relative isolate overflow-hidden bg-vault-950 py-20 text-white lg:py-28">
         <MoleculePattern className="text-white/[0.03]" />
+        <div className="absolute inset-y-0 end-0 -z-10 hidden w-1/2 md:block" aria-hidden="true">
+          <Image src={flaskPhoto} alt="" fill sizes="50vw" placeholder="blur" className="object-cover object-[30%_50%] opacity-35" />
+          <div className="absolute inset-0 bg-gradient-to-r from-vault-950 via-vault-950/60 to-vault-950/10 rtl:bg-gradient-to-l" />
+        </div>
         <Container>
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
