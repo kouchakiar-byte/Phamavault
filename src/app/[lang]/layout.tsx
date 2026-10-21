@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Estedad, IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import { InstallApp } from "@/components/install-app";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -10,23 +10,39 @@ import { languageAlternates } from "@/lib/metadata";
 import { getLocale } from "@/i18n/locale";
 import "../globals.css";
 
+// Fonts are bundled with the site (src/app/fonts, all SIL OFL) rather than fetched
+// from Google at build time, which the Iran build servers cannot always reach.
+
 // Persian text: Estedad, a sans designed for Persian, with true Persian letterforms.
-const estedad = Estedad({
+const estedad = localFont({
   variable: "--font-estedad",
-  subsets: ["arabic", "latin"],
+  src: [
+    { path: "../fonts/Estedad-Regular.woff2", weight: "400" },
+    { path: "../fonts/Estedad-Medium.woff2", weight: "500" },
+    { path: "../fonts/Estedad-SemiBold.woff2", weight: "600" },
+    { path: "../fonts/Estedad-Bold.woff2", weight: "700" },
+    { path: "../fonts/Estedad-ExtraBold.woff2", weight: "800" },
+  ],
 });
 
-const plexSans = IBM_Plex_Sans({
+const plexSans = localFont({
   variable: "--font-plex-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  src: [
+    { path: "../fonts/ibm-plex-sans-latin-400-normal.woff2", weight: "400" },
+    { path: "../fonts/ibm-plex-sans-latin-500-normal.woff2", weight: "500" },
+    { path: "../fonts/ibm-plex-sans-latin-600-normal.woff2", weight: "600" },
+    { path: "../fonts/ibm-plex-sans-latin-700-normal.woff2", weight: "700" },
+  ],
 });
 
 // Numbers use JetBrains Mono: tall, sturdy digits that stay legible at small sizes.
-const numMono = JetBrains_Mono({
+const numMono = localFont({
   variable: "--font-num-mono",
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  src: [
+    { path: "../fonts/jetbrains-mono-latin-500-normal.woff2", weight: "500" },
+    { path: "../fonts/jetbrains-mono-latin-600-normal.woff2", weight: "600" },
+    { path: "../fonts/jetbrains-mono-latin-700-normal.woff2", weight: "700" },
+  ],
 });
 
 export function generateStaticParams() {
