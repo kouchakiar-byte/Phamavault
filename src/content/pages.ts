@@ -20,7 +20,7 @@ export const pages = {
     ),
     lead: bi(
       "Domestic manufacturers and importers in Iran of pharmaceutical raw materials (APIs and excipients), vitamins and mineral salts, supplement ingredients and amino acids, cosmetic raw materials, pharmaceutical packaging, and laboratory reference standards and reagents. Search by Persian or English name, salt form or synonym.",
-      "تولیدکنندگان داخلی و واردکنندگان مواد اولیه دارویی (مواد مؤثره و مواد جانبی)، ویتامین‌ها و مینرال‌ها، مواد اولیه مکمل و آمینواسیدها، مواد اولیه آرایشی‌بهداشتی، بسته‌بندی دارویی، و رفرنس استانداردها و ریجنت‌های آزمایشگاهی در ایران. با نام فارسی یا انگلیسی، فرم نمکی یا مترادف جستجو کنید.",
+      "تولیدکنندگان داخلی و واردکنندگان مواد اولیه دارویی (مواد مؤثره و مواد جانبی)، ویتامین‌ها و مینرال‌ها، مواد اولیه مکمل و آمینواسیدها، مواد اولیه آرایشی‌بهداشتی، بسته‌بندی دارویی، و رفرنس استانداردها و معرف‌های آزمایشگاهی در ایران. با نام فارسی یا انگلیسی، فرم نمکی یا مترادف جستجو کنید.",
     ),
     placeholder: bi(
       "e.g. Vitamin B1, thiamine hydrochloride, Zinc sulfate, polysorbate 80",
@@ -56,7 +56,7 @@ export const pages = {
       cos: bi("Cosmetic and personal-care raw materials", "مواد اولیه آرایشی‌بهداشتی"),
       sup: bi("Supplement ingredients and amino acids", "مواد اولیه مکمل و آمینواسیدها"),
       bio: bi("Biologics", "فرآورده‌های بیولوژیک"),
-      std: bi("Reference standards and reagents", "رفرنس استانداردها و ریجنت‌ها"),
+      std: bi("Reference standards and reagents", "رفرنس استانداردها و معرف‌ها"),
       pkg: bi("Pharmaceutical packaging", "بسته‌بندی دارویی"),
     } as Record<string, ReturnType<typeof bi>>,
     sort: bi("Sort", "مرتب‌سازی"),
@@ -163,7 +163,7 @@ export const pages = {
     } as Record<string, ReturnType<typeof bi>>,
     bcsNote: bi(
       "BCS (Biopharmaceutics Classification System, ICH M9) groups oral immediate-release drugs by solubility at the highest dose strength over pH 1.2–6.8 and by intestinal permeability; classes 1 and 3 can qualify for a biowaiver. Classes shown are those published by the WHO (TRS 937, Annex 8), in the FIP biowaiver monographs and in regulatory assessment reports; a dash means no published class, and borderline cases (e.g. paracetamol, 1/3) are given in the key property.",
-      "سیستم طبقه‌بندی بیوفارماسیوتیکی (BCS، راهنمای ICH M9) داروهای خوراکی رهش فوری را بر اساس حلالیت بالاترین دوز در pH بین 1.2 تا 6.8 و نفوذپذیری روده‌ای دسته‌بندی می‌کند؛ کلاس 1 و 3 می‌توانند واجد شرایط معافیت از مطالعه زیست‌هم‌ارزی (Biowaiver) باشند. کلاس‌ها از طبقه‌بندی منتشرشده سازمان جهانی بهداشت (TRS 937، ضمیمه 8)، مونوگراف‌های Biowaiver فدراسیون بین‌المللی داروسازی (FIP) و گزارش‌های ارزیابی مراجع رگولاتوری است؛ خط تیره یعنی کلاس منتشرشده‌ای وجود ندارد و موارد مرزی (مثلاً استامینوفن، 1/3) در ستون ویژگی کلیدی آمده است.",
+      "سیستم طبقه‌بندی بیوفارماسیوتیکی (BCS، راهنمای ICH M9) داروهای خوراکی رهش فوری را بر اساس حلالیت بالاترین دوز در pH بین 1.2 تا 6.8 و نفوذپذیری روده‌ای دسته‌بندی می‌کند؛ کلاس 1 و 3 می‌توانند واجد شرایط معافیت از مطالعه هم‌ارزی زیستی (Biowaiver) باشند. کلاس‌ها از طبقه‌بندی منتشرشده سازمان جهانی بهداشت (TRS 937، ضمیمه 8)، مونوگراف‌های Biowaiver فدراسیون بین‌المللی داروسازی (FIP) و گزارش‌های ارزیابی مراجع رگولاتوری است؛ خط تیره یعنی کلاس منتشرشده‌ای وجود ندارد و موارد مرزی (مثلاً استامینوفن، 1/3) در ستون ویژگی کلیدی آمده است.",
     ),
     showMore: bi("Show {n} more", "نمایش {n} مورد دیگر"),
   },

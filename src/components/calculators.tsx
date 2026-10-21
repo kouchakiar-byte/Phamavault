@@ -488,7 +488,7 @@ const potencyModes = [
 
 const potencyBases = [
   { value: "dried", label: bi("Dried, anhydrous or solvent-free basis", "بر پایه ماده خشک، بدون آب یا بدون حلال") },
-  { value: "asis", label: bi("As-is basis (no correction)", "بر پایه نمونه همان‌گونه که هست (بدون اصلاح)") },
+  { value: "asis", label: bi("As-is basis (no correction)", "بر پایه as is (بدون اصلاح)") },
 ];
 
 // ---------- Assay correction factor ----------
@@ -528,7 +528,7 @@ function Asy({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "Quantity = label claim × (MW salt ÷ MW base) × (100 ÷ assay) × [100 ÷ (100 − LOD)]. Use the water/LOD factor only when the certificate reports the assay on the dried or anhydrous basis; when the assay is “as is” the factor is 1. Take assay and LOD (or KF water) from the certificate of analysis of the lot in use, and lower the q.s. diluent by the excess so the unit weight stays constant. Example: amlodipine 10 mg as besilate (567.05 / 408.88), assay 99.5% dried basis, LOD 0.5% → F = 1.4008, 14.008 mg per tablet.",
-        "مقدار توزین ⁦= LC × (MW salt ÷ MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]⁩. ضریب رطوبت فقط وقتی به کار می‌رود که Assay در برگه آنالیز بر پایه ماده خشک یا بدون آب گزارش شده باشد؛ اگر Assay «همان‌گونه که هست» (as is) گزارش شده باشد، این ضریب 1 است. Assay و LOD (یا آب کارل فیشر) را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه اضافه وزن کم کنید تا وزن واحد ثابت بماند. مثال: آملودیپین 10 میلی‌گرم به صورت بزیلات ⁦(567.05 / 408.88)⁩، Assay 99.5% بر پایه خشک، LOD 0.5% ← ⁦F = 1.4008⁩ و 14.008 میلی‌گرم در هر قرص.",
+        "مقدار توزین ⁦= LC × (MW salt ÷ MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]⁩. ضریب رطوبت فقط وقتی به کار می‌رود که Assay در برگه آنالیز بر پایه ماده خشک یا بدون آب گزارش شده باشد؛ اگر Assay بر پایه as is گزارش شده باشد، این ضریب 1 است. Assay و LOD (یا آب کارل فیشر) را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه اضافه وزن کم کنید تا وزن واحد ثابت بماند. مثال: آملودیپین 10 میلی‌گرم به صورت بزیلات ⁦(567.05 / 408.88)⁩، Assay 99.5% بر پایه خشک، LOD 0.5% ← ⁦F = 1.4008⁩ و 14.008 میلی‌گرم در هر قرص.",
       )}
     />
   );
@@ -589,7 +589,7 @@ function Pot({ ctx }: { ctx: Ctx }) {
       }
       results={[
         { label: bi("Salt factor (SF)", "ضریب نمک (SF)"), value: sf, hidden: mode !== "pct" },
-        { label: bi("As-is potency", "پوتنسی نمونه همان‌گونه که هست"), value: asIs },
+        { label: bi("As-is potency", "پوتنسی بر پایه as is"), value: asIs },
         { label: bi("Quantity to dispense per unit", "مقدار توزین در هر واحد"), value: perUnit },
         { label: bi("Quantity per batch", "مقدار در هر بچ"), value: batch },
         { label: bi("Reduce the diluent per unit by", "کاهش پرکننده در هر واحد"), value: comp, hidden: mode === "iumg" },
@@ -597,7 +597,7 @@ function Pot({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "% assay: m = LC × SF × 100 ÷ P; µg/mg: m = LC × 1000 ÷ P; IU/mg: m = LC ÷ P, where P is the as-is potency. On a dried, anhydrous or solvent-free basis, P = assay × (100 − W − RS) ÷ 100, with W the water content or LOD and RS the residual solvents (%); leave RS at 0 when LOD is used, since LOD already includes volatile solvents. Take assay and water from the certificate of analysis of the lot in use, and lower the q.s. diluent by the compensation amount so the unit weight stays constant. Example: amoxicillin trihydrate is specified as 900–1050 µg of amoxicillin per mg on the anhydrous basis.",
-        "Assay درصدی: \u2066m = LC × SF × 100 ÷ P\u2069؛ میکروگرم بر میلی‌گرم: \u2066m = LC × 1000 ÷ P\u2069؛ واحد بر میلی‌گرم: \u2066m = LC ÷ P\u2069؛ که P پوتنسی نمونه همان‌گونه که هست (as is) است. اگر Assay بر پایه ماده خشک، بدون آب یا بدون حلال گزارش شده باشد: \u2066P = Assay × (100 − W − RS) ÷ 100\u2069 که W درصد آب یا LOD و RS درصد حلال باقیمانده است؛ اگر از LOD استفاده می‌کنید RS را صفر بگذارید، چون LOD حلال‌های فرار را هم در بر دارد. Assay و رطوبت را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه جبران کاهش دهید تا وزن واحد ثابت بماند. مثال: آموکسی‌سیلین تری‌هیدرات با پوتنسی 900 تا 1050 میکروگرم آموکسی‌سیلین در هر میلی‌گرم بر پایه بدون آب مشخص می‌شود.",
+        "Assay درصدی: \u2066m = LC × SF × 100 ÷ P\u2069؛ میکروگرم بر میلی‌گرم: \u2066m = LC × 1000 ÷ P\u2069؛ واحد بر میلی‌گرم: \u2066m = LC ÷ P\u2069؛ که P پوتنسی نمونه بر پایه as is است. اگر Assay بر پایه ماده خشک، بدون آب یا بدون حلال گزارش شده باشد: \u2066P = Assay × (100 − W − RS) ÷ 100\u2069 که W درصد آب یا LOD و RS درصد حلال باقیمانده است؛ اگر از LOD استفاده می‌کنید RS را صفر بگذارید، چون LOD حلال‌های فرار را هم در بر دارد. Assay و رطوبت را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه جبران کاهش دهید تا وزن واحد ثابت بماند. مثال: آموکسی‌سیلین تری‌هیدرات با پوتنسی 900 تا 1050 میکروگرم آموکسی‌سیلین در هر میلی‌گرم بر پایه بدون آب مشخص می‌شود.",
       )}
     />
   );

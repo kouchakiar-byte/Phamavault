@@ -129,7 +129,7 @@ export const pharmacyPage = {
   quick: {
     title: bi("Quick access", "دسترسی سریع"),
     compounding: bi("Compounding: go straight to", "ساخت فرآورده؛ دسترسی مستقیم به"),
-    facts: bi("Key numbers", "اعدادی که هر سازنده باید بداند"),
+    facts: bi("Key numbers", "اعداد کلیدی"),
     bud: bi("Beyond-use date (BUD)", "تاریخ مصرف پس از ساخت (BUD)"),
     record: bi("Master formulation record", "سوابق فرمولاسیون اصلی"),
     excipients: bi("Excipients to watch in neonates and children", "مواد جانبی حساس در نوزادان و کودکان"),
@@ -315,7 +315,7 @@ export const compounding = {
 
 /** Practical guide to compounding: key numbers, technique cards and paediatric excipients. */
 export const compoundingGuide = {
-  factsTitle: bi("Numbers every compounder should know", "اعدادی که هر سازنده باید بداند"),
+  factsTitle: bi("Numbers every compounder should know", "اعداد کلیدی در ساخت فرآورده"),
   facts: [
     { value: "180", unit: bi("days", "روز"), text: bi("Maximum BUD for a non-sterile preparation, even with stability data (USP <795>)", `سقف BUD فرآورده غیراستریل، حتی با داده پایداری ${ltr("(USP <795>)")}`) },
     { value: "120", unit: bi("mg", "میلی‌گرم"), text: bi("Smallest quantity on a Class A prescription balance (sensitivity 6 mg) for an error of 5% or less", "کمترین مقدار قابل توزین با ترازوی نسخه‌پیچی کلاس A (حساسیت 6 میلی‌گرم) برای خطای حداکثر 5%") },
