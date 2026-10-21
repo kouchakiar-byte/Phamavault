@@ -251,7 +251,7 @@ export default async function SopPage({ params }: PageProps<"/[lang]/qa/[code]">
           dir="rtl"
           lang="fa"
           className="mt-4 max-w-3xl rounded-card border-2 border-molecule-400 bg-white p-6 text-right leading-loose sm:p-8"
-          style={{ fontFamily: "var(--font-readex), sans-serif" }}
+          style={{ fontFamily: "var(--font-estedad), sans-serif" }}
         >
           {sopFull[sop.code] ? (
             <FullSop code={sop.code} title={sop.title} dep={dep.fa} full={sopFull[sop.code]} />
