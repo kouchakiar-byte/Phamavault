@@ -37,6 +37,8 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/qa/[code]"
     { en: `${sop.code} ${sop.title.en}`, fa: `${sop.code} ${sop.title.fa}` },
     sop.covers,
     `qa/${sop.code.toLowerCase()}`,
+    // The SOP text is Persian in both languages.
+    true,
   );
 }
 
