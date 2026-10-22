@@ -1,48 +1,53 @@
-# Temporary probe: list the member pages of the pharmaceutical raw-material
-# producers' syndicate (cppsynd.com) and keep the text of each page.
-import json, re, html, urllib.request, urllib.parse, ssl, time
+# Temporary probe: download the syndicate's current product lists (محصولات page)
+# and keep their text, so the supplier bank can be checked against them.
+import json, re, html, urllib.request, urllib.parse, ssl, subprocess, os
 
 ctx = ssl.create_default_context()
 UA = {"User-Agent": "Mozilla/5.0 (PharmaVault catalog check)"}
+os.makedirs(".github/probe/lists", exist_ok=True)
 
-def get(url):
+def get(url, binary=False):
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=60, context=ctx) as r:
+        data = r.read()
+    return data if binary else data.decode("utf-8", "replace")
+
+out = {"links": [], "files": {}}
+for page in ["https://cppsynd.com/محصولات/", "https://cppsynd.com/لیست-قیمت/"]:
+    h = get(urllib.parse.quote(page, safe=":/"))
+    for href, label in re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', h, re.S):
+        label = re.sub(r"<[^>]+>", " ", html.unescape(label)).strip()
+        if re.search(r"\.(pdf|xlsx?|docx?)(\?|$)", href, re.I):
+            out["links"].append({"page": page, "href": href, "label": label})
+for i, l in enumerate(out["links"]):
+    href = l["href"]
     try:
-        req = urllib.request.Request(url, headers=UA)
-        with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
-            return r.read().decode("utf-8", "replace")
+        data = get(urllib.parse.quote(href, safe=":/%?=&"), binary=True)
     except Exception as e:
-        return f"__ERR__ {e}"
-
-def text(h):
-    h = re.sub(r"(?is)<(script|style|noscript).*?</\1>", " ", h)
-    h = re.sub(r"(?s)<[^>]+>", "\n", h)
-    h = html.unescape(h)
-    return "\n".join(l.strip() for l in h.splitlines() if l.strip())
-
-out = {"sitemaps": {}, "pages": {}}
-seen = set()
-for sm in ["https://cppsynd.com/sitemap_index.xml", "https://cppsynd.com/wp-sitemap.xml", "https://cppsynd.com/sitemap.xml"]:
-    body = get(sm)
-    out["sitemaps"][sm] = body[:3000]
-    for loc in re.findall(r"<loc>([^<]+)</loc>", body):
-        seen.add(loc.strip())
-# expand nested sitemaps
-for loc in list(seen):
-    if loc.endswith(".xml"):
-        body = get(loc)
-        out["sitemaps"][loc] = body[:500]
-        for l in re.findall(r"<loc>([^<]+)</loc>", body):
-            seen.add(l.strip())
-urls = sorted(u for u in seen if not u.endswith(".xml"))
-out["urls"] = urls
-home = get("https://cppsynd.com/")
-out["home"] = text(home)[:20000]
-out["home_links"] = sorted(set(re.findall(r'href="(https://cppsynd\.com/[^"#?]+)"', home)))
-for u in urls[:400]:
-    if any(x in u for x in ["/tag/", "/category/", "/author/", "/feed"]):
+        out["files"][href] = f"__ERR__ {e}"
         continue
-    t = text(get(u))
-    out["pages"][urllib.parse.unquote(u)] = t[:6000]
-    time.sleep(0.3)
-json.dump(out, open(".github/probe/cppsynd.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-print(len(urls), "urls", len(out["pages"]), "pages")
+    ext = re.search(r"\.(pdf|xlsx?|docx?)", href, re.I).group(1).lower()
+    path = f"/tmp/f{i}.{ext}"
+    open(path, "wb").write(data)
+    txt = ""
+    if ext == "pdf":
+        txt = subprocess.run(["pdftotext", "-layout", path, "-"], capture_output=True, text=True).stdout
+    elif ext in ("xlsx", "xls"):
+        try:
+            import openpyxl
+            wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+            rows = []
+            for ws in wb.worksheets:
+                rows.append(f"### sheet {ws.title}")
+                for row in ws.iter_rows(values_only=True):
+                    cells = [str(c).strip() for c in row if c is not None and str(c).strip()]
+                    if cells:
+                        rows.append(" | ".join(cells))
+            txt = "\n".join(rows)
+        except Exception as e:
+            txt = f"__XLSX_ERR__ {e}"
+    name = f".github/probe/lists/{i:02d}.txt"
+    open(name, "w", encoding="utf-8").write(txt)
+    out["files"][href] = {"bytes": len(data), "text": name, "chars": len(txt)}
+json.dump(out, open(".github/probe/lists.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+print(json.dumps(out, ensure_ascii=False)[:3000])
