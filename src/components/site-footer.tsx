@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { freeHandbookCopy } from "@/content/free-handbooks";
 import { copy, siteConfig } from "@/content/site";
 import { sectionGroups, sections } from "@/content/sections";
 import { getLocale } from "@/i18n/locale";
@@ -40,11 +41,18 @@ export async function SiteFooter() {
                   </li>
                 ))}
               {g.key === "knowledge" && (
-                <li>
-                  <Link href={href(locale, "#plans")} className="hover:text-molecule-400">
-                    {copy.footer.plans[locale]}
-                  </Link>
-                </li>
+                <>
+                  <li>
+                    <Link href={href(locale, "free-handbooks")} className="font-semibold text-capsule-400 hover:text-capsule-100">
+                      {freeHandbookCopy.pageTitle[locale]}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={href(locale, "#plans")} className="hover:text-molecule-400">
+                      {copy.footer.plans[locale]}
+                    </Link>
+                  </li>
+                </>
               )}
             </ul>
           </div>

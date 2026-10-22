@@ -1,5 +1,6 @@
 import { CtdRequest } from "@/components/ctd-request";
 import { EnamadSeal } from "@/components/enamad-seal";
+import { FreeHandbookFeature } from "@/components/free-handbook-feature";
 import Image from "next/image";
 import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
@@ -41,6 +42,7 @@ const platformSections = sections.filter((s) => s.slug !== "enterprise");
 import { copy, siteConfig } from "@/content/site";
 import { excipients, formulation, handbooks, rawMaterials, regulatory, sops } from "@/data";
 import suppliers from "@/data/suppliers.json";
+import { freeHandbooks } from "@/content/free-handbooks";
 import { bi, type Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
@@ -310,6 +312,13 @@ export default async function HomePage() {
             <div className="mx-auto mt-8 h-1 w-16 rounded-full bg-capsule-500 lg:mx-0" aria-hidden="true" />
           </div>
           <LabCollage alt={copy.statement.photoAlt[locale]} />
+        </Container>
+      </section>
+
+      {/* This week's free handbook */}
+      <section id="free-handbook" className="scroll-mt-20 bg-white pt-16 lg:pt-20">
+        <Container>
+          <FreeHandbookFeature handbook={freeHandbooks[0]} locale={locale} />
         </Container>
       </section>
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { ChevronDown, UserRound } from "lucide-react";
+import { ChevronDown, Download, Sparkles, UserRound } from "lucide-react";
 import { account } from "@/content/account";
+import { freeHandbookCopy, freeHandbooks } from "@/content/free-handbooks";
 import { copy } from "@/content/site";
 import { getSection, sectionGroups, sections, supplierBankShort } from "@/content/sections";
 import { referenceLabels } from "@/content/references";
@@ -61,24 +62,42 @@ export async function SiteHeader() {
               data-menu-panel
               className="invisible absolute inset-x-8 top-full pt-1 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100"
             >
-              <div className="grid grid-cols-4 gap-4 rounded-card border border-line bg-white p-4 shadow-xl shadow-vault-900/10">
-                {[...sectionGroups, { key: "company" as const, title: nav.services }].map((g) => (
-                  <div key={g.key}>
-                    <p className="px-3 pb-2 text-xs font-semibold tracking-wide text-muted">{g.title[locale]}</p>
-                    <ul>
-                      {sections
-                        .filter((s) => s.group === g.key)
-                        .map(({ slug, href: path, icon: Icon, title }) => (
-                          <li key={slug}>
-                            <Link data-menu-item href={href(locale, path)} className="flex gap-2.5 rounded-lg p-2.5 hover:bg-vault-50">
-                              <Icon className="mt-0.5 size-[1.1rem] shrink-0 text-molecule-500" aria-hidden="true" />
-                              <span className="text-sm font-bold leading-snug text-vault-900">{title[locale]}</span>
-                            </Link>
-                          </li>
-                        ))}
-                    </ul>
-                  </div>
-                ))}
+              <div className="rounded-card border border-line bg-white p-4 shadow-xl shadow-vault-900/10">
+                <div className="grid grid-cols-4 gap-4">
+                  {[...sectionGroups, { key: "company" as const, title: nav.services }].map((g) => (
+                    <div key={g.key}>
+                      <p className="px-3 pb-2 text-xs font-semibold tracking-wide text-muted">{g.title[locale]}</p>
+                      <ul>
+                        {sections
+                          .filter((s) => s.group === g.key)
+                          .map(({ slug, href: path, icon: Icon, title }) => (
+                            <li key={slug}>
+                              <Link data-menu-item href={href(locale, path)} className="flex gap-2.5 rounded-lg p-2.5 hover:bg-vault-50">
+                                <Icon className="mt-0.5 size-[1.1rem] shrink-0 text-molecule-500" aria-hidden="true" />
+                                <span className="text-sm font-bold leading-snug text-vault-900">{title[locale]}</span>
+                              </Link>
+                            </li>
+                          ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+                {/* This week's free handbook, under the sections */}
+                <Link
+                  data-menu-item
+                  href={href(locale, "free-handbooks")}
+                  className="mt-3 flex items-center justify-between gap-4 rounded-xl bg-vault-900 px-4 py-3 text-white transition hover:bg-vault-800"
+                >
+                  <span className="flex items-center gap-2.5 text-sm font-bold">
+                    <Sparkles className="size-4 text-capsule-400" aria-hidden="true" />
+                    <span className="text-capsule-400">{freeHandbookCopy.eyebrow[locale]}:</span>
+                    {freeHandbooks[0].title[locale]}
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-capsule-400 px-3 py-1 text-xs font-extrabold text-vault-900">
+                    <Download className="size-3.5" aria-hidden="true" />
+                    {freeHandbookCopy.free[locale]}
+                  </span>
+                </Link>
               </div>
             </div>
           </HoverMenu>
@@ -112,6 +131,7 @@ export async function SiteHeader() {
             items={[
               { href: href(locale), label: nav.home[locale] },
               ...sections.map((s) => ({ href: href(locale, s.href), label: s.title[locale] })),
+              { href: href(locale, "free-handbooks"), label: freeHandbookCopy.pageTitle[locale] },
               { href: href(locale, "#plans"), label: nav.plans[locale] },
               { href: href(locale, "account"), label: account.nav.account[locale] },
             ]}

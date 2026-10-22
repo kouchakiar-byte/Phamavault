@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // `fa`: Persian-only pages, listed once at their Persian address.
   const entries: { path: string; priority: number; changeFrequency: "weekly" | "monthly"; fa?: boolean }[] = [
     { path: "", priority: 1, changeFrequency: "weekly" },
-    ...["references", "tools"].map((path) => ({ path, priority: 0.9, changeFrequency: "weekly" as const })),
+    ...["references", "tools", "free-handbooks"].map((path) => ({ path, priority: 0.9, changeFrequency: "weekly" as const })),
     ...sections
       .filter((s) => !s.href.startsWith("#") && s.href !== "tools")
       .map((s) => ({ path: s.href, priority: 0.8, changeFrequency: "weekly" as const })),
