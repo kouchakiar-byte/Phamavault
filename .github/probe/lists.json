@@ -1,0 +1,146 @@
+{
+ "links": [
+  {
+   "page": "https://cppsynd.com/محصولات/",
+   "href": "https://cppsynd.com/wp-content/uploads/2026/10/لیست-کلی-محصولات-جدید-مهر-1405.xlsx",
+   "label": "لیست کلی محصولات – جدید -مهر 1405"
+  },
+  {
+   "page": "https://cppsynd.com/محصولات/",
+   "href": "https://cppsynd.com/wp-content/uploads/2026/06/لیست-محصولات-شرکتها-بروزرسانی-31-3-1405.xlsx",
+   "label": "لیست محصولات"
+  },
+  {
+   "page": "https://cppsynd.com/محصولات/",
+   "href": "https://cppsynd.com/wp-content/uploads/2025/10/لیست-محصولات-بر-حسب-شرکتها.pdf",
+   "label": "لیست محصولات بر حسب شرکتها"
+  },
+  {
+   "page": "https://cppsynd.com/محصولات/",
+   "href": "https://cppsynd.com/wp-content/uploads/2025/10/لیست-محصولات-بر-حسب-مواد-اولیه.pdf",
+   "label": "لیست محصولات بر حسب مواد اولیه"
+  },
+  {
+   "page": "https://cppsynd.com/محصولات/",
+   "href": "https://cppsynd.com/wp-content/uploads/2025/10/لیست-محصولات-شرکتهای-بسته-بندی-دارویی.pdf",
+   "label": "لیست محصولات شرکتهای بسته بندی دارو"
+  },
+  {
+   "page": "https://cppsynd.com/محصولات/",
+   "href": "https://cppsynd.com/wp-content/uploads/2025/12/لیست-قیمتهای-جدید-4-آذر-1404-.pdf",
+   "label": "فایل قیمتهای  جدید"
+  },
+  {
+   "page": "https://cppsynd.com/لیست-قیمت/",
+   "href": "https://cppsynd.com/wp-content/uploads/2026/04/لیست-قیمت-1-فروردین-1405-.xlsx",
+   "label": "لیست قیمت مواد موثره – 1"
+  },
+  {
+   "page": "https://cppsynd.com/لیست-قیمت/",
+   "href": "https://cppsynd.com/wp-content/uploads/2026/04/لیست-قیمت-1-فروردین-1405-.xlsx",
+   "label": "فروردین 1405"
+  },
+  {
+   "page": "https://cppsynd.com/لیست-قیمت/",
+   "href": "https://cppsynd.com/wp-content/uploads/2026/04/لیست-قیمت-2-فروردین-1405.xlsx",
+   "label": "لیست قیمت مواد موثره 2 – فروردین 1405"
+  },
+  {
+   "page": "https://cppsynd.com/لیست-قیمت/",
+   "href": "https://cppsynd.com/wp-content/uploads/2026/04/نامه-پیوست-23-1-1405-.pdf",
+   "label": "نامه پیوست – 23 فروردین 1405"
+  },
+  {
+   "page": "https://cppsynd.com/لیست-قیمت/",
+   "href": "https://cppsynd.com/wp-content/uploads/2025/10/قیمت-دارو-اسفند-1403.pdf",
+   "label": "قیمت دارو – اسفند 1403"
+  },
+  {
+   "page": "https://cppsynd.com/لیست-قیمت/",
+   "href": "https://cppsynd.com/wp-content/uploads/2025/10/پیوست-1.pdf",
+   "label": "پیوست 1"
+  },
+  {
+   "page": "https://cppsynd.com/لیست-قیمت/",
+   "href": "https://cppsynd.com/wp-content/uploads/2025/10/پیوست-2.pdf",
+   "label": "پیوست 2"
+  },
+  {
+   "page": "https://cppsynd.com/لیست-قیمت/",
+   "href": "https://cppsynd.com/wp-content/uploads/2025/12/لیست-قیمتهای-جدید-4-آذر-1404-.pdf",
+   "label": "لیست قیمتهای جدید  _ 4 آذر 1404"
+  },
+  {
+   "page": "https://cppsynd.com/لیست-قیمت/",
+   "href": "https://cppsynd.com/wp-content/uploads/2025/12/نامه-پیوست-اعلام-آخرین-قیمت-4-آذر-1404-.pdf",
+   "label": "نامه پیوست – اعلام آخرین قیمت – 4 آذر 1404"
+  }
+ ],
+ "files": {
+  "https://cppsynd.com/wp-content/uploads/2026/10/لیست-کلی-محصولات-جدید-مهر-1405.xlsx": {
+   "bytes": 836809,
+   "text": ".github/probe/lists/00.txt",
+   "chars": 188602
+  },
+  "https://cppsynd.com/wp-content/uploads/2026/06/لیست-محصولات-شرکتها-بروزرسانی-31-3-1405.xlsx": {
+   "bytes": 624006,
+   "text": ".github/probe/lists/01.txt",
+   "chars": 280629
+  },
+  "https://cppsynd.com/wp-content/uploads/2025/10/لیست-محصولات-بر-حسب-شرکتها.pdf": {
+   "bytes": 2244679,
+   "text": ".github/probe/lists/02.txt",
+   "chars": 348642
+  },
+  "https://cppsynd.com/wp-content/uploads/2025/10/لیست-محصولات-بر-حسب-مواد-اولیه.pdf": {
+   "bytes": 890149,
+   "text": ".github/probe/lists/03.txt",
+   "chars": 271528
+  },
+  "https://cppsynd.com/wp-content/uploads/2025/10/لیست-محصولات-شرکتهای-بسته-بندی-دارویی.pdf": {
+   "bytes": 247939,
+   "text": ".github/probe/lists/04.txt",
+   "chars": 11918
+  },
+  "https://cppsynd.com/wp-content/uploads/2025/12/لیست-قیمتهای-جدید-4-آذر-1404-.pdf": {
+   "bytes": 1234903,
+   "text": ".github/probe/lists/13.txt",
+   "chars": 1
+  },
+  "https://cppsynd.com/wp-content/uploads/2026/04/لیست-قیمت-1-فروردین-1405-.xlsx": {
+   "bytes": 13322,
+   "text": ".github/probe/lists/07.txt",
+   "chars": 1953
+  },
+  "https://cppsynd.com/wp-content/uploads/2026/04/لیست-قیمت-2-فروردین-1405.xlsx": {
+   "bytes": 11369,
+   "text": ".github/probe/lists/08.txt",
+   "chars": 353
+  },
+  "https://cppsynd.com/wp-content/uploads/2026/04/نامه-پیوست-23-1-1405-.pdf": {
+   "bytes": 132647,
+   "text": ".github/probe/lists/09.txt",
+   "chars": 2434
+  },
+  "https://cppsynd.com/wp-content/uploads/2025/10/قیمت-دارو-اسفند-1403.pdf": {
+   "bytes": 24417,
+   "text": ".github/probe/lists/10.txt",
+   "chars": 1
+  },
+  "https://cppsynd.com/wp-content/uploads/2025/10/پیوست-1.pdf": {
+   "bytes": 5241450,
+   "text": ".github/probe/lists/11.txt",
+   "chars": 4
+  },
+  "https://cppsynd.com/wp-content/uploads/2025/10/پیوست-2.pdf": {
+   "bytes": 1277514,
+   "text": ".github/probe/lists/12.txt",
+   "chars": 1
+  },
+  "https://cppsynd.com/wp-content/uploads/2025/12/نامه-پیوست-اعلام-آخرین-قیمت-4-آذر-1404-.pdf": {
+   "bytes": 1157581,
+   "text": ".github/probe/lists/14.txt",
+   "chars": 1
+  }
+ }
+}

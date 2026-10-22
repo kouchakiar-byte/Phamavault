@@ -1,0 +1,3291 @@
+### sheet مواد اولیه و شیمیایی
+نام شرکت | نام محصول تولیدی به فارسی | نام محصول تولیدی به انگلیسی
+ارسطو | اپرپیتانت | Aprepitant
+ارسطو | ارلوتینیب هیدروکلراید | Erlotinibhydrochloride
+ارسطو | ایماتینیب مسیلات | Imatinibmesylate
+ارسطو | آبیراترون استات | Abirateroneacetate
+ارسطو | آزاتیوپرین | Azathioprine
+ارسطو | آسیکلوویر | Acyclovir
+ارسطو | آلندرونیت سدیم | Alendronatesodium
+ارسطو | آمیتریپتیلین هیدروکلراید | Amitriptylinehydrochloride
+ارسطو | بورتزومیب | Bortezomib
+ارسطو | پنتاپرازول سدیم | Pentaprazolesodium
+ارسطو | جمسیتابین هیدروکلراید | Gemcitabinehydrochloride
+ارسطو | دس لوراتادین | Des loratadine
+ارسطو | دفراسیروکس | Deferasirox
+ارسطو | دفریپرون | Deferiprone
+ارسطو | دوسه تاکسل | TwoTexels
+ارسطو | رزواستاتین کلسیم | Rosuvastatincalcium
+ارسطو | زولدرونیک اسید | Zoledronic acid
+ارسطو | سانیتینیب مالئات | Sunitinibmaleate
+ارسطو | سلکوکسیب | Celecoxib
+ارسطو | سیتارابین | Cytarabine
+ارسطو | کاربامازپین | Carbamazepine
+ارسطو | کپسیتابین | Capecitabine
+ارسطو | کیتوکونازول | Ketoconazole
+ارسطو | لاموتریژین | Lamotrigine
+ارسطو | لوراتادین | Loratadine
+ارسطو | مایکوفنولات | Mycophenolate
+ارسطو | مونته‌لوکاست | Montelokast
+ارسطو | نورتریپتیلین هیدروکلراید | Nortriptylinehydrochloride
+ارسطو | نیلوتینیب هیدروکلراید | Nilotinibhydrochloride
+ارسطو | ورینوستات | Vorinostat
+توفيق دارو | انزالوتاماید | Enzalutamide
+توفيق دارو | اوسلتامیویر فسفات | Oseltamivir phosphate
+توفيق دارو | ایبروتینیب | Ibrutinib
+توفيق دارو | آرپیپرازول | Aripiprazole
+توفيق دارو | آلپرازولام | Alprazolam
+توفيق دارو | سماگلوتاید | Semaglutide
+توفيق دارو | سیتاگلیپتین فسفات مونوهیدرات | Sitagliptin phosphate monohydrate
+توفيق دارو | لیناگلیپتین | Linagliptin
+توفيق دارو | میرابگرون | Mirabegron
+توفيق دارو | اکترئوتاید استات | Octreotide acetate
+توفيق دارو | آتراکوریوم بزیلات | Atracurium besylate
+توفيق دارو | ساکوبیتریل/ والزارتان | Sacubitril/Valsartan
+توفيق دارو | سترورلیکس استات | Cetirizine acetate
+توفيق دارو | لیزدکسامفتامین دی مزیلات | Lisdexamfetamine dimesylate
+توفيق دارو | مزالازین | Mesalazine
+افشان شیمی مهر | در حال صدور پروانه
+اکتروخاورمیانه | بواسیزومب | Bevacizumab
+اکتروخاورمیانه | ریتوکسی‌مب | Rituximab
+اکتوبایوکم | اس سیتالوپرام اگزالات | Escitalopram oxalate
+اکتوبایوکم | امپاگلیفلوزین | Empagliflozin
+اکتوبایوکم | اندانسترون | Ondansetron
+اکتوبایوکم | آپیکسابان | Apixaban
+اکتوبایوکم | آتورواستاتین کلسیم | Atorvastatin Calcium
+اکتوبایوکم | بورتزومیب | Bortezomib
+اکتوبایوکم | پروژسترون | Progesterone
+اکتوبایوکم | پلت اسموپرازول دی آر ۱۳.۵٪ | Esomeprazole DR 13.5  pellet
+اکتوبایوکم | پلت اورلیستات ۵۰٪ | Orlistat pellet 50
+اکتوبایوکم | پلت پنتوپرازول | Pantoprazole pellet
+اکتوبایوکم | پلت دولوکستین | duloxetine pellet
+اکتوبایوکم | پلت لانسوپرازول دکتر ۸.۵٪ | Lansoprazole Dr pellet 8.5
+اکتوبایوکم | پلت مبورین 80 | Mebeverine pellet 80
+اکتوبایوکم | تلمیزارتان | Telmisartan
+اکتوبایوکم | دس لوراتادین | Des loratadine
+اکتوبایوکم | رزواستاتین کلسیم | Rosuvastatincalcium
+اکتوبایوکم | ریواروکسابان | Rivaroxaban
+اکتوبایوکم | زولدرونیک اسید | Zoledronic acid
+اکتوبایوکم | ساکوبیتریل/ والزارتان | Sacubitril/Valsartan
+اکتوبایوکم | ستیریزین هیدروکلراید | Cetirizine hydrochloride
+اکتوبایوکم | سیتاگلیپتین فسفات | Sitagliptin phosphate
+اکتوبایوکم | سیلدنافیل سیترات | Sildenafil citrate
+اکتوبایوکم | فریک کربوکسی مالتوز | Ferric Carboxy maltose
+اکتوبایوکم | فکسوفنادین هیدروکلراید | Fexofenadine Hydrochloride
+اکتوبایوکم | قرص امپرازول ۸.۵٪ | Omeprazole dr pellet 8.5
+اکتوبایوکم | کانابیدیول | Cannabidiol
+اکتوبایوکم | کپسیتابین | Capecitabine
+اکتوبایوکم | کلوپیدوگرل | Clopidogrel
+اکتوبایوکم | گاباپنتین | Gabapentin
+اکتوبایوکم | گرانول نیتروگلیسیرین | Nitroglycerin Granules
+اکتوبایوکم | گلیکلازید | Gliclazide
+اکتوبایوکم | لیناگلیپتین | Linagliptin
+اکتوبایوکم | مونته‌لوکاست | Montelokast
+اکتوبایوکم | والزارتان | Valsartan
+اکتوورکو | اینترفرون بتا 1آ | Interferon beta-1a
+البرزبالک | اپرپیتانت | Aprepitant
+البرزبالک | اس سیتالوپرام اگزالات | Escitalopram oxalate
+البرزبالک | اکسیمتالون | Oxymetholone
+البرزبالک | اندانسترون | Ondansetron
+البرزبالک | آتورواستاتین کلسیم | Atorvastatin Calcium
+البرزبالک | آزیترومایسین | Azithromycin
+البرزبالک | بتامتازون سدیم فسفات | Betamethasone sodium phosphate
+البرزبالک | بتامتازون والرات | Betamethasone valerate
+البرزبالک | پروپیل پارابن | Propylparaben
+البرزبالک | پریگابالین | Pregabalin
+البرزبالک | تریامسینولون استوناید | Triamcinolone acetonide
+البرزبالک | داپوکستین هیدروکلراید | Dapoxetinehydrochloride
+البرزبالک | دس لوراتادین | Des loratadine
+البرزبالک | دکسترومتورفان هیدروبروماید | Dextromethorphan hydrobromide
+البرزبالک | دگزامتازون سدیم فسفات | Dexamethasone sodium phosphate
+البرزبالک | دیکلوفناک پتاسیم | Diclofenacpotassium
+البرزبالک | دیکلوفناک سدیم | Diclofenac sodium
+البرزبالک | رزواستاتین کلسیم | Rosuvastatincalcium
+البرزبالک | ریواروکسابان | Rivaroxaban
+البرزبالک | سرترالین | Sertraline
+البرزبالک | سفیکسیم | Cefixime
+البرزبالک | سیپروترون استات | Cyproteroneacetate
+البرزبالک | سیپروفلوکساسین | Ciprofloxacin
+البرزبالک | سیتاگلیپتین فسفات | Sitagliptin phosphate
+البرزبالک | سیتالوپرام هایدروبروماید | Citalopramhydrobromide
+البرزبالک | فلوواکسامین مالئات | Fluvoxaminemaleate
+البرزبالک | کاربامازپین | Carbamazepine
+البرزبالک | گاباپنتین | Gabapentin
+البرزبالک | لوراتادین | Loratadine
+البرزبالک | لوزارتان پتاسیم | Losartanpotassium
+البرزبالک | لیدوکائین بیس | Lidocainebase
+البرزبالک | لیدوکائین هیدروکلراید | Lidocainehydrochloride
+البرزبالک | متوپرولولتارتارات | Metoprololtartrate
+البرزبالک | متوپرولولسوکسینات | Metoprololsuccinate
+البرزبالک | متیلپارابن | Methylparaben
+البرزفارمد | اپلرنون | Eplerenone
+البرزفارمد | آلپرازولام | Alprazolam
+البرزفارمد | امپاگلیفلوزین | Empagliflozin
+البرزفارمد | اورفورگلیپرون | Orforglipron
+البرزفارمد | ایواکافتور | Ivacaftor
+البرزفارمد | آپیکسابان | Apixaban
+البرزفارمد | آسیکلوویر | Acyclovir
+البرزفارمد | داپاگلیفلوزین | Dapagliflozin
+البرزفارمد | رانولازین | Ranolazine
+البرزفارمد | رسمیتروم | Officially
+البرزفارمد | ساکوبیتریل/ والزارتان | Sacubitril/Valsartan
+البرزفارمد | سوزتریجین | Soztrigin
+البرزفارمد | سیلودوسین | Silodosin
+البرزفارمد | کارودیلول | Carvedilol
+البرزفارمد | نوسکاپین بیس | NOSCAPINE BASE
+الوان ثابت | رنگهای دارویی،آرایشی و بهداشتی | Pharmaceutical, cosmetic and hygienic dyes
+امرتات شیمی | در حال صدور پروانه
+ایتوک فارمد | پارافین مایع | Liquid Paraffin
+ایتوک فارمد | کلسیم کلرید دی هیدرات | Calcium chloride dihydrate
+ایتوک فارمد | 10.00 | 10.00
+ایتوک فارمد | 1-بوتانول | Butanol-1
+ایتوک فارمد | 1و2 پروپاندیول | Propanediol (Propylene Glycol)1,2
+ایتوک فارمد | 2-پروپانول | Propanol-2
+ایتوک فارمد | 4.00 | 4.00
+ایتوک فارمد | 5 - سولفوسالیسیلیک اسید دی هیدرات | Sulfosalicylic acid dihydrate-5
+ایتوک فارمد | 7.00 | 7.00
+ایتوک فارمد | 9.00 | 9.00
+ایتوک فارمد | N/9 سدیم هیدروکسید | Sodium hydroxide N/9
+ایتوک فارمد | اتانول آمین | Ethanol amine
+ایتوک فارمد | اتانول96% | Ethanol96%
+ایتوک فارمد | اتیل استات | Ethyl acetate
+ایتوک فارمد | اتیلن دی تترا استیک اسید 0.1 | EDTA 0.1N
+ایتوک فارمد | اتیلن گلایکول | Ethylene glycol
+ایتوک فارمد | ادتات دی سدیم | Edetate disodium(EDTA)
+ایتوک فارمد | اریوکروم بلک تی | Eriochrome black T
+ایتوک فارمد | استون | Acetone
+ایتوک فارمد | استونیتریل | Acetonitrile
+ایتوک فارمد | استیک اسید | Acetic Acid (Glacial)
+ایتوک فارمد | ال-(+) تاتاریک اسید | L-(+)-Tartaic acid
+ایتوک فارمد | ان-اکتان | n-Octane
+ایتوک فارمد | ان-ان-دی متیل فرم آمید | N,N-dimethylformamide (DMF)
+ایتوک فارمد | ان-بوتیل استات | n-Butyl Acetate
+ایتوک فارمد | ان-پنتان | n-Pantane
+ایتوک فارمد | ان-هپتان | n-Heptane
+ایتوک فارمد | ان-هگزان | n-Hexane
+ایتوک فارمد | اورنج جی | Orange G
+ایتوک فارمد | اوره | Urea
+ایتوک فارمد | ائوزین وای | Eosin Y
+ایتوک فارمد | آمونیا سولوشن25% | Ammonia solution25%
+ایتوک فارمد | آمونیوم استات | Ammonium acetate
+ایتوک فارمد | آمونیوم کلرید | Ammonium Chloride
+ایتوک فارمد | آهن2 سولفات هپتاهیدرات | Iron (II) sulfate heptahydrate
+ایتوک فارمد | برومو فنول بلو | Bromophenol blue
+ایتوک فارمد | بروموتیمول بلو | Bromothymol blue
+ایتوک فارمد | بنتونیت | Bentonite
+ایتوک فارمد | بنزیل الکل | Benzyl alcohol
+ایتوک فارمد | بوریک اسید | Boric Acid
+ایتوک فارمد | پارافین | Paraffin (Pastille)
+ایتوک فارمد | پتاسیم استات | Potassium acetate
+ایتوک فارمد | پتاسیم پرسولفات | Potassium persulfate
+ایتوک فارمد | پتاسیم پرمنگنات | Potassium permanganate
+ایتوک فارمد | پتاسیم دی کلرمات | Potassium dichromate
+ایتوک فارمد | پتاسیم دی هیدروژن فسفات | Potassium dihydrogen phosphate
+ایتوک فارمد | پتاسیم سدیم تارتارات تتراهیدرات | Potassium sodium tartrate tetrahydrate (Rochelle salt)
+ایتوک فارمد | پتاسیم سولفات | Potassium sulfate
+ایتوک فارمد | پتاسیم کلراید | Potassium chloride
+ایتوک فارمد | پتاسیم هیدروکسید | Potassium hydroxide
+ایتوک فارمد | پتاسیم یدید | Potassium iodide
+ایتوک فارمد | پترولیوم اتر(60-40) | Petroleum ether (40-60)
+ایتوک فارمد | پلی اتیلن گلایکول400 | Polyethylene glycol 400 (PEG 400)
+ایتوک فارمد | پلی اتیلن گلایکول4000 | Polyethlene glycol 4000 (PEG4000)
+ایتوک فارمد | پلی اتیلن گلایکول600 | Polyethylene glycol 600 (PEG 600)
+ایتوک فارمد | پلی اتیلن گلایکول6000 | Polyethlene glycol 6000 (PEG6000)
+ایتوک فارمد | پیریدین | Pyridine
+ایتوک فارمد | تتراهیدروفوران | Tetrahydrofuran(THF)
+ایتوک فارمد | تری اتانول آمین | Triethanolamine
+ایتوک فارمد | تری سدیم سیترات دی هیدرات | Tri-sodium citrate dihydrate
+ایتوک فارمد | تری سدیم فسفات دودکا هیدرات | Tri-sodium phosphate dodecahydrate
+ایتوک فارمد | تولوئن | Toluene
+ایتوک فارمد | دی اتانول آمین | Diethanolamin
+ایتوک فارمد | دی اتیلن گلایکول مونو اتیل اتر | Diethylene glycol monoethyl ether
+ایتوک فارمد | دی اتیلن گلایکول مونومتیل اتر | Diethylene glycol monomethyl ether
+ایتوک فارمد | دی پتاسیم هیدروژن فسفات | Di-potassium hydrogen phosphate
+ایتوک فارمد | دی سدیم تترابورات دیکاهیدرات | Di-sodium tetraborate decahydrate(Borax)
+ایتوک فارمد | دی سدیم هیدروژن فسفات دی هیدرات | Di-sodium hydrogen phosphate dihydrate
+ایتوک فارمد | دی کلرومتان | Dichloromethane
+ایتوک فارمد | دی متیل سولفوکسید | Dimethyl sulfoxide (DMSO)
+ایتوک فارمد | زایلین | Xylene
+ایتوک فارمد | سالیسیلیک اسید | Salicylic acid
+ایتوک فارمد | سدیم استات تری هیدرات | Sodium acetate trihydrate
+ایتوک فارمد | سدیم استات خشک | Sodium acetate anhydrous
+ایتوک فارمد | سدیم بنزوات | Sodium benzoate
+ایتوک فارمد | سدیم تیو سولفات 0.1 | Sodium thiosulfate 0.1N
+ایتوک فارمد | سدیم تیوسولفات پنا هیدرات | Sodium thiosulfate pentahydrate
+ایتوک فارمد | سدیم دودیسل سولفات | Sodium dodecyl sulfate
+ایتوک فارمد | سدیم دی هیدروژن فسفات دی هیدرات | Sodium dihydrogen phosphate dihydrate
+ایتوک فارمد | سدیم سولفات خشک | Sodium sulfate anhydrous
+ایتوک فارمد | سدیم سولفیت خشک | Sodium sulfite anhydrous
+ایتوک فارمد | سدیم کربنات خشک | Sodium carbonate anhydrous
+ایتوک فارمد | سدیم کربنات مونوهیدرات | Sodium carbonate monohydrate
+ایتوک فارمد | سدیم کلراید | Sodium chloride
+ایتوک فارمد | سدیم متا بی سولفیت | Sodium metabisulfite
+ایتوک فارمد | سدیم نیترات | Sodium nitrate
+ایتوک فارمد | سدیم هگزامتافسفات | Sodium hexametaphosphate
+ایتوک فارمد | سدیم هیپوکلریت سولوشن | Sodium hypochlorite solution
+ایتوک فارمد | سدیم هیدروژن کربنات | Sodium hydrogen carbonate
+ایتوک فارمد | سدیم هیدروکساید گرانول | Sodium hydroxide granulated
+ایتوک فارمد | سدیم هیدروکسید 0.1 | Sodium hydroxide 0.1N
+ایتوک فارمد | سدیم هیدروکسید 1.0 | Sodium hydroxide 1.0N
+ایتوک فارمد | سدیم هیدورکساید پرک | Sodium hydroxide flake
+ایتوک فارمد | سولفات مس پنتاهیدرات | Copper(II) sulfate pentahydrate
+ایتوک فارمد | سولفوریک اسید 0.1 | Sulfuric acid 0.1N
+ایتوک فارمد | سولفوریک اسید 1.0 | Sulfuric acid 1.0N
+ایتوک فارمد | سولفوریک اسید 95-98% | Sulfuric acid95%-98%
+ایتوک فارمد | سولفوکرومیک اسید | Sulfochromic acid
+ایتوک فارمد | سیتریک اسید خشک | Citric acid anhydrous
+ایتوک فارمد | سیتریک اسید سولوشن 20% | Citric acid solution 20%
+ایتوک فارمد | سیتریک اسید سولوشن 50% | Citric acid solution 50%
+ایتوک فارمد | سیتریک اسید مونوهیدرات | Citric acid monohydrate
+ایتوک فارمد | سیلیکا ژل بروکن | Silica gel broken (5-10mm)
+ایتوک فارمد | سیلیکا ژل گرانول | Silica gel granules (2-5mm)
+ایتوک فارمد | فرمالدهید سولوشن 10% | Formaldehyde solution 10%
+ایتوک فارمد | فرمالدهید سولوشن 2% | Formaldehyde solution 2%
+ایتوک فارمد | فرمالدهید سولوشن 3% | Formaldehyde solution 3%
+ایتوک فارمد | فرمالدهید سولوشن 37% | Formaldehyde solution 37%
+ایتوک فارمد | فرمیک اسید | Formic acid
+ایتوک فارمد | فسفوریک اسید 85% | Phosphoric acid85%
+ایتوک فارمد | فنول | Phenol
+ایتوک فارمد | فنول فتالئین | Phenolphthalein
+ایتوک فارمد | کلروفرم | Chloroform
+ایتوک فارمد | کلسیم کربنات | Calcium Carbonate
+ایتوک فارمد | گلیسیرین | Glycerol
+ایتوک فارمد | متانول | Methanol
+ایتوک فارمد | متیل اورنج | Methyl orange
+ایتوک فارمد | متیل رد | Methyl red
+ایتوک فارمد | متیلن بلو | Methylene blue
+ایتوک فارمد | معرف کارل فیشر با پیریدین | Karl Fischer reagent - With Pyridine
+ایتوک فارمد | معرف کارل فیشر بدون پیریدین | Karl Fischer reagent - Pyridine free
+ایتوک فارمد | منیزیم سولفات هپتا هيدرات | Magnesium sulfate heptahydrate
+ایتوک فارمد | منیزیم كلرايد هگزا هيدرات | Magnesium Chloride Hexahydrate
+ایتوک فارمد | مولکولارسیو 3آ | Moleculer sieve 3 A (2-3mm)
+ایتوک فارمد | مولکولارسیو 4آ | Moleculer sieve 4 A (2-3mm)
+ایتوک فارمد | موم طبیعی(زرد) | Yellow beeswax
+ایتوک فارمد | موم طبیعی(سفید) | White beeswax
+ایتوک فارمد | نقره نیترات | Silver nitrate
+ایتوک فارمد | نقره نیترات 0.1 | Silver nitrate 0.1N
+ایتوک فارمد | نیتریک اسید55% | Nitric acid 55%
+ایتوک فارمد | نیتریک اسید65% | Nitric acid 65%
+ایتوک فارمد | هیدروژن پراکسید 35% | Hydrogen peroxide 35%
+ایتوک فارمد | هیدروکلریک  اسید 0.1 | Hydrochloric acid 0.1N
+ایتوک فارمد | هیدروکلریک اسید 1.0 | Hydrochloric acid 1.0N
+ایتوک فارمد | هیدروکلریک اسید 32% | Hydrochloric acid32%
+ایتوک فارمد | هیدروکلریک اسید 37% | Hydrochloric acid37%
+ایماژن | اورسودیول | Ursodiol
+ایماژن | ایبوپروفن | Ibuprofen
+ایماژن | آزیترومایسین | Azithromycin
+ایماژن | ماینوکسیدیل | Minoxidil
+آریا شیمی رایکا | آریا اسپان 60 | Ariaspan 60 (sorbitan monostearate)
+آریا شیمی رایکا | آریا اسپان20 | Ariaspan 20 (sorbitan monolaurate)
+آریا شیمی رایکا | آریا اسپان80 | Ariaspan 80 (sorbitan monooleate)
+آریا شیمی رایکا | آریا سوربات 20 | Ariasorbate 20 (polyoxyethylene 20 sorbitan monolaurate)
+آریا شیمی رایکا | آریا سوربات 60 | Ariasorbate 60 (polyoxyethylene 20 sorbitan monostearate)
+آریا شیمی رایکا | آریا سوربات 80 | Ariasorbate 80 (polyoxyethylene 20 sorbitan monooleate)
+آریا شیمی رایکا | آریا گلیسرول | Aria Gelycerol(pharma grade )
+آریوژن فارمد | اپتاکوگ آلفا (فاکتور هفت) | Eptacog alfa ( Factor VII)
+آریوژن فارمد | اتانرسپت | Etanercept
+آریوژن فارمد | افموروکتوکوگ آلفا (فاکتور هشت) | Efmoroctocog Alfa (Favtor VIII)
+آریوژن فارمد | بواسیزومب | Bevacizumab
+آریوژن فارمد | تراستوزومب | Trastuzumab
+آریوژن فارمد | توسیلیزومب | Tocilizumab
+آریوژن فارمد | دنوزومب | Denosumab
+آریوژن فارمد | ریتوکسی‌مب | Rituximab
+آریوژن فارمد | ودولیزومب | Vedolizumab
+آموفارمد آریا | پریلوکائین | prilocaine
+آموفارمد آریا | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+آموفارمد آریا | ملوکسیکام | Meloxicam
+آموفارمد آریا | ویتامین  E 50% | Tocopheryl Acetate 50%
+آموفارمد آریا | ویتامین  E 98% | Tocopheryl Acetate 98%
+آموفارمد آریا | ویتامین D3 100000 (کوله کلسیفرول) | Vitamin D3 100000 (Cholecalciferol)
+آنتی بیوتیک سازی ایران | آزیترومایسین | Azithromycin
+آنتی بیوتیک سازی ایران | آسیکلوویر | Acyclovir
+آنتی بیوتیک سازی ایران | آموکسی سیلین | Amoxicillin
+آنتی بیوتیک سازی ایران | سفالکسین | Cephalexin
+آنتی بیوتیک سازی ایران | سفیکسیم | Cefixime
+آنتی بیوتیک سازی ایران | سیتاگلیپتین فسفات مونوهیدرات | Sitagliptin phosphate monohydrate
+آنتی بیوتیک سازی ایران | کوئتیاپین فومارات | Quetiapine fumarate
+آنتی بیوتیک سازی ایران | والزارتان | Valsartan
+بهان سار | امونيوم كلرايد | Ammonium chloride
+بهان سار | آلومينيوم ساب استات | Aluminum Subacetate
+بهان سار | آهن گلوكونات | Ferrous gluconate
+بهان سار | پتاسيم سيترات | Potassium citrate
+بهان سار | پتاسيم كلرايد | Potassium chloride
+بهان سار | پودر الومينيوم هيدروكسايد | Aluminum hydroxide powder
+بهان سار | پودر منيزيم هيدروكسايد | Magnesium hydroxide powder
+بهان سار | زينك اكسايد | Zinc oxide
+بهان سار | زينك سولفات | Zinc sulfate
+بهان سار | زينك سيترات آنهيدروس | Anhydrous zinc citrate
+بهان سار | زينك كتات | Zinc oxide
+بهان سار | زينك گلوكونات(اداره دارو) | Zinc gluconate (Medicare)
+بهان سار | زينك گلوكونات(اداره مكمل) | Zinc gluconate (supplementary administration)
+بهان سار | زينك گيسينات | Zinc gycinate
+بهان سار | ژل الومينيوم هيدروكسايد | Aluminum hydroxide gel
+بهان سار | ژل منيزيم هيدروكسايد | Magnesium hydroxide gel
+بهان سار | سديم كتات | Sodium ketate
+بهان سار | كلسيم سيترات | Calcium citrate
+بهان سار | كلسيم فسفات | Calcium phosphate
+بهان سار | كلسيم كتات | Calcium Ketate
+بهان سار | كلسيم كلرايد | Calcium chloride
+بهان سار | كلسيم گلوكونات انهيدروس | Calcium gluconate anhydrous
+بهان سار | كلسيم گيسينات | Calcium gisinate
+بهان سار | ليتيم كربنات | Lithium carbonate
+بهان سار | مس گلوكونات | Copper gluconate
+بهان سار | منيزيم استئارات | Magnesium stearate
+بهان سار | منيزيم سيترات | Magnesium citrate
+بهان سار | منيزيم كتات | Magnesium Ketate
+بهان سار | منيزيم كربنات | Magnesium carbonate
+بهان سار | منيزيم گلوكونات آنهيدروس | Magnesium gluconate anhydrous
+بهان سار | منيزيم گيسينات | Magnesium gisinate
+بهداشت کار | اسپیرونولاکتون | Spironolactone
+بهداشت کار | آلوپورینول | Allopurinol
+بهداشت کار | بتامتازون سدیم فسفات | Betamethasone sodium phosphate
+بهداشت کار | بتامتازون والرات | Betamethasone valerate
+بهداشت کار | پزودوافدرین هیدروکلراید | Pseudoephedrine hydrochloride
+بهداشت کار | تریامسینولون استوناید | Triamcinolone acetonide
+بهداشت کار | دکسترومتورفان هیدروبروماید | Dextromethorphan hydrobromide
+بهداشت کار | دگزامتازون سدیم فسفات | Dexamethasone sodium phosphate
+بهداشت کار | فنیل افرین هیدروکلراید | Phenylephrine hydrochloride
+بهداشت کار | کلوبتازول پروپیونات | Clobetasol propionate
+بهداشت کار | متوکلوپرامید هیدروکلراید | Metoclopramide hydrochloride
+بهداشت کار | هیدروکورتیزون استات | Hydrocortisone acetate
+پارس نمک کاوه | کلرور سدیم دارا. گرید دارویی | Sodium chloride, pharmaceutical grade
+پایا شیمی اسپادانا | پارچه ملت بلون
+پایا شیمی اسپادانا | تولید محصولات لیپوزدمال دافع حشرات با نیمه عمر بالا جهت حفاظت در مقابل سالک
+پایا شیمی اسپادانا | دستگاه تولید ماسک N95
+پایا شیمی اسپادانا | دستگاه تولید ملت بلون
+پایا شیمی اسپادانا | دستگاه روتاری درام فیلتر 2000 لیتری(در حال ساخت)
+پایا شیمی اسپادانا | دستگاه کش زن نیمه اتوماتیک
+پایا شیمی اسپادانا | ستونهای کروماتوگرافی یکبار مصرف | cloumn chromatography
+پایا شیمی اسپادانا | سفادکس G10 مخصوص کروماتوگرافی | sephadex G10
+پایا شیمی اسپادانا | سیلیس حجم دهنده و سیلیس لایه بردار (ساینده)  مخصوص تولید خمیر دندان | silica
+پایا شیمی اسپادانا | سیلیکاژل ستون وTLC | silica gel column and plate chromatography
+پایا شیمی اسپادانا | کاتالیست پالادیوم کربن5 و 10 درصد | Palladium catalyst
+پایا شیمی اسپادانا | ورق TLC  کیفی و کمی | Ptlc
+پردیس عصاره | طعم دهنده طبیعی آلبالو | Natural cherry flavoring
+پردیس عصاره | طعم دهنده طبیعی زردآلو | Natural apricot flavoring
+پردیس عصاره | بلک کروت | Black Crow
+پردیس عصاره | بیت روت | Root beet
+پردیس عصاره | پودر بیت روت | Beetroot powder
+پردیس عصاره | پودر عصاره بره موم | Propolis extract powder
+پردیس عصاره | پودر عصاره چای سبز | Green tea extract powder
+پردیس عصاره | پودر عصاره رازیانه | Fennel extract powder
+پردیس عصاره | پودر عصاره سرخارگل | Echinacea extract powder
+پردیس عصاره | پودر عصاره سنا | Senna extract powder
+پردیس عصاره | پودر عصاره شنبلیله | Fenugreek extract powder
+پردیس عصاره | پودر عصاره عشقه | Rose extract powder
+پردیس عصاره | پودر عصاره کنگر فرنگی | Artichoke extract powder
+پردیس عصاره | پودر عصاره گل ساعتی | Passion flower extract powder
+پردیس عصاره | پودر عصاره گل محمدی | Rosehip extract powder
+پردیس عصاره | ریشه شیرین بیان | Licorice root
+پردیس عصاره | طعم دهنده طبیعی انار | Natural pomegranate flavoring
+پردیس عصاره | طعم دهنده طبیعی بادام تلخ | Natural bitter almond flavoring
+پردیس عصاره | طعم دهنده طبیعی پسته | Natural pistachio flavoring
+پردیس عصاره | طعم دهنده طبیعی چای سبز | Natural green tea flavoring
+پردیس عصاره | طعم دهنده طبیعی چای سیاه | Natural black tea flavoring
+پردیس عصاره | طعم دهنده طبیعی خیار | Natural cucumber flavoring
+پردیس عصاره | طعم دهنده طبیعی ریحان | Natural basil flavoring
+پردیس عصاره | طعم دهنده طبیعی سیب | Natural apple flavoring
+پردیس عصاره | طعم دهنده طبیعی شکر | Natural sugar flavoring
+پردیس عصاره | طعم دهنده طبیعی شیرین بیان | Natural licorice flavoring
+پردیس عصاره | طعم دهنده طبیعی طالبی | Natural cantaloupe flavoring
+پردیس عصاره | طعم دهنده طبیعی فندق | Natural hazelnut flavoring
+پردیس عصاره | طعم دهنده طبیعی قهوه | Natural coffee flavoring
+پردیس عصاره | طعم دهنده طبیعی کیوی | Natural kiwi flavoring
+پردیس عصاره | طعم دهنده طبیعی گل محمدی | Natural rose flavoring
+پردیس عصاره | طعم دهنده طبیعی لیمو | Natural lemon flavoring
+پردیس عصاره | طعم دهنده طبیعی هلو | Natural peach flavoring
+پردیس عصاره | طعم دهنده طبیعی هندوانه | Natural watermelon flavoring
+پردیس عصاره | عصاره آبی تغلیظ‌شده انجیر | Concentrated aqueous extract of figs
+پردیس عصاره | عصاره بالک شیرین بیان | Licorice Bulk Extract
+پردیس عصاره | عصاره برگ زیتون پودری | Olive leaf extract powder
+پردیس عصاره | عصاره پروپیلن گلیکولی سدر | Cedarwood Propylene Glycol Extract
+پردیس عصاره | عصاره پنجه شیطان | Devil's claw extract
+پردیس عصاره | عصاره پودری اسطوخودوس | Lavender powder extract
+پردیس عصاره | عصاره پودری آویشن | Thyme powder extract
+پردیس عصاره | عصاره پودری بابونه | Chamomile powder extract
+پردیس عصاره | عصاره پودری بابونه تانسی | Chamomile Tansy Powder Extract
+پردیس عصاره | عصاره پودری بادرنجبویه | Lemon balm powder extract
+پردیس عصاره | عصاره پودری پالرگونیوم | Pelargonium powder extract
+پردیس عصاره | عصاره پودری پنیرک | Paneerak powdered extract
+پردیس عصاره | عصاره پودری پوست انار | Pomegranate peel powder extract
+پردیس عصاره | عصاره پودری چای ترش | Sour tea powder extract
+پردیس عصاره | عصاره پودری چای سیاه | Black tea powder extract
+پردیس عصاره | عصاره پودری دگلیسیریزینه شیرین بیان | Licorice deglycyrrhizinate powder extract
+پردیس عصاره | عصاره پودری رزماری | Rosemary powder extract
+پردیس عصاره | عصاره پودری ریشه کاسنی | Chicory root powder extract
+پردیس عصاره | عصاره پودری زعفران | Saffron powder extract
+پردیس عصاره | عصاره پودری سرکه سیب | Apple cider vinegar powder extract
+پردیس عصاره | عصاره پودری سنجد | Powdered extract of gentian
+پردیس عصاره | عصاره پودری غنی‌شده گلیسیریزیک اسید شیرین بیان | Glycyrrhizic acid enriched licorice powder extract
+پردیس عصاره | عصاره پودری قارچ شیتاکه | Shiitake mushroom powder extract
+پردیس عصاره | عصاره پودری قهوه سبز | Green coffee bean extract powder
+پردیس عصاره | عصاره پودری گزنه | Nettle powder extract
+پردیس عصاره | عصاره پودری گل همیشه بهار | Marigold powder extract
+پردیس عصاره | عصاره پودری گلرنگ | Safflower powder extract
+پردیس عصاره | عصاره پودری لیمو عمانی | Omani lemon powder extract
+پردیس عصاره | عصاره پودری مریم گلی | Sage powder extract
+پردیس عصاره | عصاره پودری میوه نسترن | Rosehip fruit powder extract
+پردیس عصاره | عصاره پودری نعنا فلفلی | Peppermint powder extract
+پردیس عصاره | عصاره پودری والرین | Valerian powder extract
+پردیس عصاره | عصاره تغلیظ‌شده آبی خرنوب | Concentrated carob water extract
+پردیس عصاره | عصاره تغلیظ‌شده زعفران | Concentrated saffron extract
+پردیس عصاره | عصاره تغلیظ‌شده سرخارگل | Concentrated Echinacea extract
+پردیس عصاره | عصاره تغلیظ‌شده کاکائو | Concentrated cocoa extract
+پردیس عصاره | عصاره تغلیظ‌شده گلرنگ | Concentrated safflower extract
+پردیس عصاره | عصاره خشک آویشن | Thyme dry extract
+پردیس عصاره | عصاره خشک چای سبز | Green tea dry extract
+پردیس عصاره | عصاره خشک شیرین بیان | Dry licorice extract
+پردیس عصاره | عصاره خشک میکس: کنگر فرنگی، خارمریم و ریشه قاصدک | Dry extract mix: artichoke, milk thistle and dandelion root
+پردیس عصاره | عصاره رزماری هیدروگلیکولی | Hydroglycolic rosemary extract
+پردیس عصاره | عصاره شیرین بیان قره | Licorice extract
+پردیس عصاره | عصاره گلیکولی انار | Pomegranate glycolic extract
+پردیس عصاره | عصاره گلیکولی آلوئه‌ورا | Aloe vera glycolic extract
+پردیس عصاره | عصاره گلیکولی بابونه | Chamomile glycolic extract
+پردیس عصاره | عصاره گلیکولی بادرنجبویه | Glycolic lemon balm extract
+پردیس عصاره | عصاره گلیکولی زعفران | Saffron glycolic extract
+پردیس عصاره | عصاره گلیکولی گل محمدی | Rosehip Glycolic Extract
+پردیس عصاره | عصاره گلیکولی مریم گلی | Sage Glycolic Extract
+پردیس عصاره | عصاره مایع بابونه | Chamomile liquid extract
+پردیس عصاره | عصاره مایع تمر هندی | Tamarind liquid extract
+پردیس عصاره | عصاره مایع عشقه | Liquid extract of love
+پردیس عصاره | عصاره هیدروالکلی اسطوخودوس | Lavender hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی اکالیپتوس | Eucalyptus hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی اکیناسه | Echinacea hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی انجیر | Fig hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی آنیسون | Anise hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی آویشن | Thyme hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی آویشن باغی | Hydroalcoholic extract of thyme
+پردیس عصاره | عصاره هیدروالکلی آویشن شیرازی | Shirazi thyme hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی بادرنجبویه | Lemon balm hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی برگ بو | Hydroalcoholic extract of bay leaf
+پردیس عصاره | عصاره هیدروالکلی برگ زیتون | Olive leaf hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی بنفشه سه رنگ | Tricolor violet hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی بنفشه سه رنگ ۱۸ میلی‌گرم در ۱۰۰ گرم | Tricolor violet hydroalcoholic extract 18 mg/100 g
+پردیس عصاره | عصاره هیدروالکلی پنیرک | Hydroalcoholic extract of cheese
+پردیس عصاره | عصاره هیدروالکلی پوست انار | Hydroalcoholic extract of pomegranate peel
+پردیس عصاره | عصاره هیدروالکلی تغلیظ‌شده آلو | Concentrated hydroalcoholic extract of plum
+پردیس عصاره | عصاره هیدروالکلی خارخاسک | Hydroalcoholic extract of Kharkhasak
+پردیس عصاره | عصاره هیدروالکلی خارمریم | Milk thistle hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی ختمی | Marshmallow hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی دانه خربزه | Hydroalcoholic extract of melon seeds
+پردیس عصاره | عصاره هیدروالکلی دم گیلاس | Cherry stem hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی رازیانه | Hydroalcoholic extract of fennel
+پردیس عصاره | عصاره هیدروالکلی رزماری | Rosemary hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی ریشه کاسنی | Chicory root hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی زردآلو | Hydroalcoholic extract of apricot
+پردیس عصاره | عصاره هیدروالکلی زردچوبه | Turmeric hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی زنجبیل ماده خشک ۱۰ درصد | Hydroalcoholic extract of ginger, dry matter 10
+پردیس عصاره | عصاره هیدروالکلی زنجبیل ماده خشک ۲ درصد | Hydroalcoholic extract of ginger, dry matter 2 .
+پردیس عصاره | عصاره هیدروالکلی زیره سبز | Cumin hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی سنا | Senna hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی شنبلیله | Hydroalcoholic extract of fenugreek
+پردیس عصاره | عصاره هیدروالکلی شیرین بیان | Licorice hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی کاکل ذرت | Corn cob hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی کنگر فرنگی | Hydroalcoholic extract of artichoke
+پردیس عصاره | عصاره هیدروالکلی گزنه | Nettle hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی گل ساعتی | Hydroalcoholic extract of passion flower
+پردیس عصاره | عصاره هیدروالکلی گل همیشه بهار | Marigold hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی مرزه | Sage hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی مریم گلی | Sage hydroalcoholic extract
+پردیس عصاره | عصاره هیدروالکلی نعنا فلفلی | Peppermint hydroalcoholic extract
+پردیس عصاره | عصاره هیدروگلیسیرینه آلوئه‌ورا | Hydroglycerinated aloe vera extract
+پردیس عصاره | عصاره هیدروگلیکولی اسطوخودوس | Lavender Hydroglycolic Extract
+پردیس عصاره | عصاره هیدروگلیکولی پوست انار | Pomegranate peel hydroglycolic extract
+پردیس عصاره | عصاره هیدروگلیکولی چای سبز | Green tea hydroglycolic extract
+پردیس عصاره | عصاره هیدروگلیکولی سیر | Garlic Hydroglycolic Extract
+پردیس عصاره | عصاره هیدروگلیکولی گزنه | Nettle Hydroglycolic Extract
+پردیس عصاره | عصاره هیدروگلیکولی گل همیشه بهار | Marigold Hydroglycolic Extract
+پردیس عصاره | گلرنگ | Safflower
+پرسیس ژن بار | برکتانت | Beractant
+پرسیس ژن بار | برکسورف | Beraksurf
+پرسیس ژن بار | پرکینرا® (آناکینرا) | PerkinRA® (Anakinra)
+پرسیس ژن بار | سی آر ام 197 | CRM197
+پرسیس ژن بار | واکسن نوترکیب کووید-۱۹ نورا | The Noora recombinant COVID-19 vaccine
+پرند دارو | بوپرنورفین هیدورکلراید | Buprenorphine hydrochloride
+پرند دارو | ترامادول هیدروکلراید | Tramadol hydrochloride
+پرند دارو | کدئین فسفات | Codeine phosphate
+پرند دارو | متادون هیدروکلراید | Methadone hydrochloride
+پرند دارو | نالتروکسان هیدروکلراید | Naltrexone hydrochloride
+پرند دارو | نالوکسان هیدروکلراید | Naloxone hydrochloride
+پژوهان شیمی ناصر خسرو | انواع کاتالیست
+پژوهان شیمی ناصر خسرو | کربن اکتیو گرانولی | Granular Activated Carbon
+پژوهان شیمی ناصر خسرو | کربن فعال اشباع شده | Impregnated Activated Carbon
+پژوهان شیمی ناصر خسرو | کربن فعال پودری | Powder Activated Carbon
+پژوهان شیمی ناصر خسرو | کربن فعال میله‌ای | Extruded Activated Carbon
+تدبیرداروسلامت | پلت اس امپرازول منیزیم تری هیدرات 22/5 % | Omeprazole Magnesium Trihydrate 22.5% Tablets
+تدبیرداروسلامت | پلت اس امپرازول منیزیم تری هیدرات 8/5 % | Omeprazole Magnesium Trihydrate Tablets 8.5%
+تدبیرداروسلامت | پلت امپرازول 8/5 % | Omeprazole 8.5% pellets
+تدبیرداروسلامت | پلت پنتوپرازول سدیم 15 % | Pantoprazole Sodium Pellets 15%
+تدبیرداروسلامت | پلت داکسی سایکلین هایکلیت 33% | Doxycycline Hyclate 33% Pellets
+تدبیرداروسلامت | پلت دلوکستین 20% | Duloxetine 20% pellets
+تدبیرداروسلامت | پلت دلوکستین هیدروکلراید 25% | Duloxetine hydrochloride pellets 25%
+تدبیرداروسلامت | پلت دولوکستین 17% | Duloxetine 17% pellets
+تدبیرداروسلامت | پلت دیکلوفناک سدیم 40% | Diclofenac sodium pellets 40%
+تدبیرداروسلامت | پلت دیکلوفناک سدیم 45% | Diclofenac sodium pellets 45%
+تدبیرداروسلامت | پلت دیکلوفناک سدیم 52% | Diclofenac Sodium Pellet 52%
+تعاونی تولیدی باریم سولفات ایران | باریم سولفات | Barium Sulfate
+تعاونی تولیدی باریم سولفات ایران | کربنات کلسیم سبک | Light Calcium Carbonate
+تعاونی تولیدی باریم سولفات ایران | کربنات کلسیم سنگین | Heavy Calcium Carbonate
+تماد | اپیوم | OPIUM (FOR EXPORT)
+تماد | اریترومایسین | Erythromycin
+تماد | اس امپرازول پلت 8.5% | ESOMEPRAZOLE PELLET 8.5%
+تماد | استامینوفن | ACETAMINOPHEN
+تماد | استامینوفن تزریقی غیر استریل | ACETAMINOPHEN INJECTION GRADE NON-STRIEL
+تماد | استامینوفن دی سی | ACTEAMINOPHEN DC
+تماد | استامینوفن روش (ب) | ACETAMINOPHEN METHOD (B)
+تماد | افلوکساسین | OFLOXACIN
+تماد | اکسی کدون هایدروکلراید( گرید تزریقی غیر استریل) | OXYCODONE HYDROCHLORIDE(INJECTION GRADE NON-STERILE)
+تماد | اکسی کدون هیدروکلراید | OXYCODONE HYDROCHLORIDE
+تماد | اکسی مورفون هیدروکلراید | OXYMORPHONE HYDROCHLORIDE
+تماد | امپرازول پلت 8.5% | OMEPRAZOLE PELLET 8.5%
+تماد | ایتراکونازول پلت 22% | ITRACONAZOLE PELLET 22%
+تماد | آتورواستاتین کلسیم | Atorvastatin Calcium
+تماد | آسپرین | ASPIRIN
+تماد | آسیکلوویر | Acyclovir
+تماد | بتامتازون 17 والرات | BETAMETHASONE 17 VALERATE
+تماد | بتامتازون دی پروپیونات | BETAMETHASONE DIPROPIONATE
+تماد | بتامتازون سدیم فسفات | Betamethasone sodium phosphate
+تماد | بتامتازون سدیم فسفات ( گرید تزریقی غیر استریل) | BETAMETHASONE SODIUM PHOSPHATE( INJECTION GRADE NON-STERILE)
+تماد | بوپرنورفین هایدروکلراید | Buprenorphine hydrochloride
+تماد | بوپرنورفین هیدروکلراید (گرید تزریقی غیر استریل) | BUPRENORPHINE HYDROCHLORIDE (INJECTION GRADE NON STERILE)
+تماد | پاپاورین هیدروکلراید | PAPAVERINE HYDROCHLORIDE (FOR EXPORT)
+تماد | پاپاورین هیدروکلراید صادراتی ( گرید تزریقی غیر استریل) | PAPAVERINE HYDROCHLORIDE FOR EXPORT( INJECTION GRADE NON-STERILE)
+تماد | پرازوسین هیدرو کلراید | PRAZOSIN HYDROCHLRIDE
+تماد | پریگابالین | Pregabalin
+تماد | پلت اس امپرازول 22.5% | ESOMEPRAZOLE PELLET 22.5%
+تماد | پلت پنتوپرازول 15% | PANTOPRAZOLE PELLET 15%
+تماد | پلت لنسوپرازول 8.5 % | LANSOPRAZOLE PELLET 8.5%
+تماد | پنتوپرازول پلت 20% | PANTOPRAZOLE PELLET 20%
+تماد | پنتوپرازول سدیم سسکوئی هیدرات | PANTOPRAZOLE SODIUM SESQUIHYDRATE
+تماد | پنتوپرازول سدیم سسکوئی هیدرات (گرید تزریقی غیراستریل) | PANTOPRAZOLE SODIUM SESQIHYDRATE (INJECTION GRADE - NON STERILE)
+تماد | پیوگلیتازون هیدروکلراید | PIOGLITAZONE HYDROCHLORIDE
+تماد | تامسولوسین هایدروکلراید | TAMSULOSIN HYDROCHLORIDE
+تماد | تبائین (جهت صادرات) | THEBAINE (FOR EXPORT)
+تماد | ترامادول هایدروکلراید( گرید تزریقی غیر استریل) | TRAMADOL HYDROCHLORIDE( INJECTION GRADE NON-STERILE)
+تماد | ترامادول هیدروکلراید | Tramadol hydrochloride
+تماد | تریامسینولون استوناید | Triamcinolone acetonide
+تماد | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+تماد | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+تماد | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+تماد | جمفیبروزیل | GEMFIBROZIL
+تماد | داپوکستین هیدروکلراید | DAPOXETINE HYDROCHLORIDE
+تماد | دکسترومتورفان هیدروبروماید | Dextromethorphan hydrobromide
+تماد | دگزامتازون دی سدیم فسفات ( گرید تزریقی غیر استریل) | DEXAMETHASONE DI SODIUM PHOSPHATE(INJECTION GRADE NON-STERILE)
+تماد | دگزامتازون سدیم فسفات | Dexamethasone sodium phosphate
+تماد | رزواستاتین کلسیم | Rosuvastatincalcium
+تماد | ریسپریدون | RISPERIDONE
+تماد | سلکوکسیب | Celecoxib
+تماد | سولفابنزامید | SULFABENZAMIDE
+تماد | سیپروترون استات | Cyproteroneacetate
+تماد | سیپروفلوکساسین تزریقی غیر استریل | CIPROFLOXACIN INJECTION GRADE NON-STRIEL
+تماد | سیپروفلوکساسین هیدروکلراید | CIPROFLOXACIN HYDROCHLORIDE
+تماد | سیتاگلیپتین فسفات | Sitagliptin phosphate
+تماد | فلوکستین هیدروکلراید | FLUOXETINE HYDROCHLORIDE
+تماد | فلوواکسامین مالئات | Fluvoxaminemaleate
+تماد | فنوباربیتال | PHENOBARBITAL
+تماد | فولکدین | PHOLCODINE (FOR EXPORT)
+تماد | کاربامازپین | Carbamazepine
+تماد | کتوتیفن فومارات | KETOTIFEN FUMARATE
+تماد | کتورولاک ترومتامین ( گرید تزریقی غیر استریل) | KETOROLAC TROMETHAMIN( INJECTION GRADE NON STRILE)
+تماد | کدئین بیس | CODEINE BASE (FOR EXPORT)
+تماد | کدئین فسفات | Codeine phosphate
+تماد | کلاریترومایسین | Clarithromycin
+تماد | کوئتیاپین فومارات | Quetiapine fumarate
+تماد | گلیکلازید | Gliclazide
+تماد | لنسوپرازول پلت 15% | LANSOPRAZOLE PELLET 15%
+تماد | لووفلوکساسین تزریقی غیر استریل | LEVOFLOXACIN INJECTION GRADE NON-STRIEL
+تماد | لووفلوکساسین همی هیدرات | LEVOFLOXACIN HEMIHYDRATE
+تماد | متادون هیدروکلراید | Methadone hydrochloride
+تماد | متفورمین | Metformin
+تماد | مرفین سولفات | MORPHINE SULPHATE
+تماد | مرفین سولفات( گرید تزریقی غیر استریل) | MORPHINE SULFATE( INJECTION GRADE NON-STERILE)
+تماد | مورفین هیدورکلراید | MORPHINE HYDROCHLORIDE (FOR EXPORT)
+تماد | نالتروکسان هیدروکلراید | Naltrexone hydrochloride
+تماد | نالوکسان هیدروکلراید | Naloxone hydrochloride
+تماد | نوروکسی مورفون بیس | NOROXYMORPHONE BASE (FOR EXPORT)
+تماد | نوسکاپین بیس | NOSCAPINE BASE (FOR EXPORT)
+تماد | نوسکاپین هیدروکلراید | NOSCAPINE HYDROCHLORIDE (FOR EXPORT)
+تماد | هسته شکر | SUGAR SPHERE
+تماد | هیدروکدون بی تارتارات | HYDROCODONE BITARTRATE (FOR EXPORT)
+تماد | هیدروکسی کلروکین سولفات | HYDROXYCHLOROQUINE SULFATE
+تماد | هیدروکورتیزون استات | Hydrocortisone acetate
+تهران شیمی | اریترومایسین | Erythromycin
+تهران شیمی | اندانسترون | Ondansetron
+تهران شیمی | آتورواستاتین کلسیم | Atorvastatin Calcium
+تهران شیمی | آزیترومایسین | Azithromycin
+تهران شیمی | آسیکلوویر | Acyclovir
+تهران شیمی | آموکسی سیلین | Amoxicillin
+تهران شیمی | بی پریدین | Beperiden
+تهران شیمی | پنتاپرازول سدیم | Pentaprazolesodium
+تهران شیمی | ترامادول هیدروکلراید | Tramadol hydrochloride
+تهران شیمی | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+تهران شیمی | رزواستاتین کلسیم | Rosuvastatincalcium
+تهران شیمی | سفالکسین | Cephalexin
+تهران شیمی | سفیکسیم | Cefixime
+تهران شیمی | سلکوکسیب | Celecoxib
+تهران شیمی | سوماتریپتان سوکسینات | Sumatriptan succinate
+تهران شیمی | سیپروفلوکساسین | Ciprofloxacin
+تهران شیمی | سیتالوپرام هیدروبروماید | Citalopram hydrobromide
+تهران شیمی | فاموتیدین | Famotidine
+تهران شیمی | فکسوفنادین هیدرو کلراید | Fexofenadine Hydrochloride
+تهران شیمی | فلوواکسامین مالئات | Fluvoxaminemaleate
+تهران شیمی | کلاولانات پتاسیم | Clavulanate potassium
+تهران شیمی | لوزارتان پتاسیم | Losartanpotassium
+تهران شیمی | متوکاربامول | Methocarbamol
+توسعه داروسازی دانش | بوسنتان مونوهیدرات | Bosentan Monohydrate
+توسعه داروسازی دانش | دس لوراتادین | Des loratadine
+توسعه داروسازی دانش | دفراسیروکس | Deferasirox
+توسعه داروسازی دانش | فینگولیمود هیدروکلراید | Fingolimod HCl
+توسعه داروسازی دانش | نیتیزینون | Nitisinone
+ثمین دارو ایرانیان | امپاگلیفلوزین | Empagliflozin
+ثمین دارو ایرانیان | آتورواستاتین کلسیم | Atorvastatin Calcium
+ثمین دارو ایرانیان | آزیترومایسین | Azithromycin
+ثمین دارو ایرانیان | آسیکلوویر | Acyclovir
+ثمین دارو ایرانیان | بیپریدین هیدروکلراید | BIPERIDEN HYDROCHLORIDE
+ثمین دارو ایرانیان | پریلوکائین | PRILOCAINE
+ثمین دارو ایرانیان | پنتوپرازول سدیم هیدرات | Pantoprazole sodium hydrate
+ثمین دارو ایرانیان | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+ثمین دارو ایرانیان | سلکوکسیب | Celecoxib
+ثمین دارو ایرانیان | سیتاگلیپتین فسفات | Sitagliptin phosphate
+ثمین دارو ایرانیان | فاموتیدین | Famotidine
+ثمین دارو ایرانیان | فکسوفنادین هیدروکلراید | Fexofenadine Hydrochloride
+ثمین دارو ایرانیان | کربنات لیتیوم | Lithium carbonate
+ثمین دارو ایرانیان | کلاریترومایسین | Clarithromycin
+ثمین دارو ایرانیان | رزواستاتین کلسیم | Rosuvastatincalcium
+ثمین دارو ایرانیان | گاباپنتین | Gabapentin
+ثمین دارو ایرانیان | گلیکلازید | Gliclazide
+ثمین دارو ایرانیان | لوزارتان پتاسیم | Losartanpotassium
+ثمین دارو ایرانیان | لیدوکائین | Lidocaine
+ثمین دارو ایرانیان | مترونیدازول | Metronidazole
+ثمین دارو ایرانیان | متفورمین | Metformin
+ثمین دارو ایرانیان | متوکاربامول | Methocarbamol
+ثمین دارو ایرانیان | مونته‌لوکاست سدیم | Montelukast sodium
+ثمین دارو ایرانیان | نیاسین | NIACIN
+ثمین دارو ایرانیان | نیاسینامید | NIACINAMIDE
+ثمین دارو ایرانیان | هیدروکسی کلروکین سولفات | HYDROXYCHLOROQUINE SULFATE
+ثمین دارو ایرانیان | ونلافاکسین هیدروکلراید | VENLAFAXINE HYDROCHLORIDE
+جابر ازنق شیمی | اتیل استات | Ethyl acetate
+جابر ازنق شیمی | اسید کلریدریک | Hydrochloric acid
+جابر ازنق شیمی | تولوئن | Toluene
+جابر ازنق شیمی | دی متوکسی متان (متیلال) | Dimethoxymethane
+جابر ازنق شیمی | زایلین | Xylene
+جابر ازنق شیمی | متانول | Methanol
+جابر ازنق شیمی | متیل استات | Methyl acetate
+جابر ازنق شیمی | محلول آمونیاک | ammonia solution
+جابر ازنق شیمی | نرمال بوتیل استات | n-Buthyl acetate
+جوین | اسید سیتریک | Citric acid
+خورشید کادووس | پیرفنیدون | Pirfenidone
+خورشید کادووس | تنوفویر آلافنامید فومارات | Tenofovir alafenamide fumarate
+خورشید کادووس | توفاسیتینیب-سیترات | TOFACITINIB-CITRATE
+خورشید کادووس | داکلاتاسویر دی هیدروکلراید | Daclatasvir dihydrochloride
+خورشید کادووس | ریفاکسیمین | Rifaximin
+خورشید کادووس | ریلوزول | Riluzole
+خورشید کادووس | سوفوسبوویر | Sofosbuvir
+خورشید کادووس | وونوپرازان فومارات | Vonoprazan fumarate
+داروسازی دانا | آموکسی سیلین | Amoxicillin
+داروسازی دانا | پودر پتاسیم کلاونات | Potassium Clavulanate Powder
+داروسازی دانا | پودر سفالکسین | Cephalexin powder
+داروسازی دانا | پودر سفکسیم | Cefixime powder
+درسا دارو | گرانول نیتروگلیسرین پیوسته رهش 1/6% | NITROGLYCERIN SR GRANULES 1.6%
+درسا دارو | نیتروگلیسرین 0.35درصد رقیق شده در میگلیول | DILUTED NITROGLYCERIN 0.35% IN MIGLYOL
+درسا دارو | نیتروگلیسرین 5 درصد رقیق شده در اتانول گرید تزریقی | DILLUTED NITROGLYCERIN 5% IN ETHANOL INJECTION GRADE
+درسا دارو | نیتروگلیسرین 5 درصد رقیق شده در پروپیلن گلایکول گرید تزریقی | DILUTED NITROGLYCERIN 5% IN PROPYLENE GLYCOL INJECTION GRADE
+درسا دارو | نیتروگلیسرین5 درصد رقیق شده در میگلیول | DILUTED NITROGLYCERIN 5% IN MIGLYOL
+درسا دارو | نیتروگلیسیرین رقیق شده 5% در اتانول | Diluted Nitroglycerin 5% in Ethanol
+دکترمجللی | سدیم دی هیدروژن فسفات | sodium di- hydrogen phosphate
+دکترمجللی | اتانول96% | Ethanol96%
+دکترمجللی | اتیلن گلایکول | ethylene glycol
+دکترمجللی | استون | Acetone
+دکترمجللی | استونیتریل | Acetonitrile
+دکترمجللی | اسيد استيک | Acetic Acid
+دکترمجللی | اسيد سولفوريک | Sulfuric acid
+دکترمجللی | اسيد کلريدريک | Hydrochloric acid
+دکترمجللی | اسيد نيتريک | Nitric acid
+دکترمجللی | اسید سیتریک | Citric acid
+دکترمجللی | اسید فسفريک | Phosphoric acid
+دکترمجللی | ایزو پروپیل الکل | Iso propyl alchohol
+دکترمجللی | پتاسیم دی هیدروژن فسفات | potassium di- hydrogen phosphate
+دکترمجللی | دی پتاسیم هیدروژن فسفات | di-potassium hydrogen phosphate
+دکترمجللی | دی سدیم هیدروژن فسفات | di-sodium hydrogen phosphate
+دکترمجللی | سدیم استات | Sodium acetate
+دکترمجللی | سدیم لوریل سولفات | Sodium dodecyl sulfate
+دکترمجللی | سدیم هیدروکساید | Sodium hydroxide
+دکترمجللی | متانول | Methanol
+دماوند دارو | ایبوپروفن | Ibuprofen
+دماوند دارو | آملودیپین | Amlodipine
+دماوند دارو | سدیم والپروات | SODIUM VALPEROATE
+دماوند دارو | سوماتریپتان سوکسینات | SUMATRIPTAN SUCCINATE
+دماوند دارو | سیپروهپتادین هیدروکلراید | CYPROHEPTADINE Hcl
+دماوند دارو | سیتاگلیپتین فسفات مونوهیدرات | Sitagliptin Phosphate Monohydrate
+دماوند دارو | سیلدنافیل سیترات | SILDENAFIL CITRATE
+دماوند دارو | فلوکستین هیدروکلراید | Fluoxetine Hydrochloride
+دماوند دارو | فلوواکسامین مالئات | Fluvoxaminemaleate
+دماوند دارو | فنیل افرین هیدروکلراید | Phenylephrine hydrochloride
+دماوند دارو | کارودیلول | Carvedilol
+دماوند دارو | کلرفنیرامین مالئات | Chlorpheniramine Maleate
+دماوند دارو | گاباپنتین | Gabapentin
+دماوند دارو | لوزارتان پتاسیم | Losartanpotassium
+دماوند دارو | متوپرولول تارتارات | METOPROLOL TARTRATE
+ره آورد تامین | povidone k17-k90-cross povidone | povidone k17-k90-cross povidone
+ره آورد تامین | povidone k25-k30 | povidone k25-k31
+ره آورد تامین | PVPI | PVPI
+ره آورد تامین | RT.COAT(L30D-L100) | RT.COAT(L30D-L100)
+ره آورد تامین | RT.FILM-coating | RT.FILM-coating
+ره آورد تامین | RUVIMER-پلیمرهای اکریلاتی | Acrylate polymers
+ره آورد تامین | SOKALIX HCP-پلی استات وینیل | Polyvinyl acetate
+زیست تخمیر | ادار آوون | Edaravone
+زیست تخمیر | ایبروتینیب | Ibrutinib
+زیست تخمیر | بروکا | BRUCA
+زیست تخمیر | توفاسیتینیب-سیترات | TOFACITINIB-CITRATE
+زیست تخمیر | زیموسیل 100 | ZYMUCIL100
+زیست تخمیر | زیموسیل 200 | ZYMUCIL200
+سروش مانا فارمد | آریپیپرازول | Aripiprazole
+سروش مانا فارمد | آزیترومایسین | Azithromycin
+سروش مانا فارمد | باکلوفن | Baclofen
+سروش مانا فارمد | پرگابالین | Pregabalin
+سروش مانا فارمد | پنتاپرازول سدیم | Pentaprazolesodium
+سروش مانا فارمد | تترابنازین | Tetrabenazine
+سروش مانا فارمد | تلمیزارتان | Telmisartan
+سروش مانا فارمد | دفراسیروکس | Deferasirox
+سروش مانا فارمد | دولوکستین هیدروکلراید | Duloxetine hydrochloride
+سروش مانا فارمد | رزواستاتین کلسیم | Rosuvastatincalcium
+سروش مانا فارمد | ساکوبیتریل/ والزارتان | Sacubitril/Valsartan
+سروش مانا فارمد | سلکوکسیب | Celecoxib
+سروش مانا فارمد | فاموتیدین | Famotidine
+سروش مانا فارمد | فلوواکسامین مالئات | Fluvoxaminemaleate
+سروش مانا فارمد | گلیکلازید | Gliclazide
+سروش مانا فارمد | لنسوپرازول | Lansoprazole
+سروش مانا فارمد | مونته لوکاست سدیم | Montelukast sodium
+سیناژن | اریتروپیتین | Erythropietin
+سیناژن | افلیبرسپت | Aflibercept
+سیناژن | اکولیزوماب | Eculizumab
+سیناژن | اوکرلیزوماب | Ocrelizumab
+سیناژن | اومالیزوماب | Omalizumab
+سیناژن | اوولوکوماب | Evolucumab
+سیناژن | اینترفرون بتا | Interferon Beta
+سیناژن | آدالیموماب | Adalimumab
+سیناژن | پرتوزوماب | Pertuzumab
+سیناژن | پگفیلگراستیم | Pegfilgrastim
+سیناژن | پمبرولیزوماب | Pembrolizumab
+سیناژن | تری‌پاراتید | Teriparatide
+سیناژن | داراتوموماب | Daratumumab
+سیناژن | ستوکسیماب | Cetuximab
+سیناژن | سوماتروپین | Somatropin
+سیناژن | فولیتروپین | Follitropin
+سیناژن | فیلگراستیم | Filgrastim
+سیناژن | گوسلکوماب | Guselkumab
+سیناژن | لارونیداز | Laronidase
+سیناژن | لیراگلوتاید | Liraglutide
+سیناژن | نیولوماب | Nivolumab
+شتاب دهنده ماد | دورزولامید | Dorzolamide
+شتاب دهنده ماد | سولیفناسین سوکسینات | Sulifnacin succinate
+شيمي دارويي داروپخش | اندانسترون | Ondansetron
+شيمي دارويي داروپخش | آتنولول | Atenolol
+شيمي دارويي داروپخش | آزیترومایسین | Azithromycin
+شيمي دارويي داروپخش | آملودیپین | Amlodipine
+شيمي دارويي داروپخش | باکلوفن | Baclofen
+شيمي دارويي داروپخش | پتاسیم کلاولانات | Potassium Clavulanate
+شيمي دارويي داروپخش | پتاسیم کلاولانات مخلوط با سایلوئید | Potassium Clavulanate Mixed with Cyloid
+شيمي دارويي داروپخش | پروپرانولول | Propranolol
+شيمي دارويي داروپخش | پیروکسیکام | Piroxicam
+شيمي دارويي داروپخش | تامسولوسین هایدروکلراید | TAMSULOSIN HYDROCHLORIDE
+شيمي دارويي داروپخش | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+شيمي دارويي داروپخش | دی والپرکس سدیم | Divalproex sodium
+شيمي دارويي داروپخش | دیکلوفناک سدیم | Diclofenac sodium
+شيمي دارويي داروپخش | دیلتیازم هیدروکلراید | Diltiazem hydrochloride
+شيمي دارويي داروپخش | رزواستاتین کلسیم | Rosuvastatincalcium
+شيمي دارويي داروپخش | ریواستیگمین هیدروژن تارتارات | Rivastigmine hydrogen tartrate
+شيمي دارويي داروپخش | سلکوکسیب | Celecoxib
+شيمي دارويي داروپخش | سوماتریپتان سوکسینات | Sumatriptan succinate
+شيمي دارويي داروپخش | سیتریزین هیدروکلراید | Cetirizine hydrochloride
+شيمي دارويي داروپخش | سیلدنافیل سیترات | Sildenafil citrate
+شيمي دارويي داروپخش | فاموتیدین | Famotidine
+شيمي دارويي داروپخش | فروس فومارات | Ferrous Fumarate
+شيمي دارويي داروپخش | فکسوفنادین هیدرو کلراید | Fexofenadine Hydrochloride
+شيمي دارويي داروپخش | کاپتوپریل | Captopril
+شيمي دارويي داروپخش | کارودیلول | Carvedilol
+شيمي دارويي داروپخش | گاباپنتین | Gabapentin
+شيمي دارويي داروپخش | گرانیسترون هیدروکلراید | Granisetron hydrochloride
+شيمي دارويي داروپخش | لاموتریژین | Lamotrigine
+شيمي دارويي داروپخش | لوراتادین | Loratadine
+شيمي دارويي داروپخش | لوزارتان پتاسیم | Losartanpotassium
+شيمي دارويي داروپخش | لیدوکانین هیدروکلراید | Lidocaine hydrochloride
+شيمي دارويي داروپخش | لیدوکائین بیس | Lidocaine base
+شيمي دارويي داروپخش | متوکاربامول | Methocarbamol
+شيمي دارويي داروپخش | والپرات سديم | Sodium valproate
+شيمي دارويي داروپخش
+شیمی دارویی تک ماد | اوره | Urea
+شیمی دارویی تک ماد | آلومينيوم ساب استات | Aluminum Subacetate
+شیمی دارویی تک ماد | پتاسیم کلراید | Potassium chloride
+شیمی دارویی تک ماد | زینک سولفات مونوهیدارت | Zinc Sulfate  Monohydrate
+شیمی دارویی تک ماد | زینک سولفات هپتاهیدرات | Zinc Sulfate Heptahydrate
+شیمی دارویی تک ماد | منیزیم كلرايد هگزا هيدرات | Magnesium Chloride Hexahydrate
+شیمی درمان اندیشه | رفرنس استاندارد های  دارویی
+شیمی درمان اندیشه | ورکینگ استاندارد های دارویی
+شیمی فارمد پارس | استامینوفن | ACETAMINOPHEN
+شیمی فارمد پارس | آزیترومایسین | Azithromycin
+شیمی فارمد پارس | آسپرین | ASPIRIN
+شیمی فارمد پارس | پنتاپرازول سدیم | Pentaprazolesodium
+شیمی فارمد پارس | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+شیمی فارمد پارس | سلکوکسیب | Celecoxib
+شیمی فارمد پارس | سلولز، میکروکریستالین | CELLULOSE, MICROCRYSTALLINE
+شیمی فارمد پارس | فاموتیدین | Famotidine
+شیمی فارمد پارس | لاکتوز مونوهیدرات | Lactose monohydrate
+شیمی فارمد پارس | لوزارتان پتاسیم | Losartanpotassium
+شیمی فارمد پارس | متفورمین | Metformin
+صنایع شیمیایی و دارویی تبریز | اسيد بوريک  USP-BP | Boric acid usp-bp
+صنایع شیمیایی و دارویی تبریز | اوره | Urea
+صنایع شیمیایی و دارویی تبریز | بیس گلیسینات آهن | Ferrous Bisglycinate
+صنایع شیمیایی و دارویی تبریز | پتاسيم کلرايد  BP | Potassium choloride bp
+صنایع شیمیایی و دارویی تبریز | پتاسیم بیکربنات | Potassium bicarbonate
+صنایع شیمیایی و دارویی تبریز | پتاسیم سیترات منوهیدرات | Potassium citrate monohydrate
+صنایع شیمیایی و دارویی تبریز | پیپرازین سیترات | Piperazine citrate usp
+صنایع شیمیایی و دارویی تبریز | تالک | Talc
+صنایع شیمیایی و دارویی تبریز | تری سدیم سیترات انهیدروس | trisodium citrate anhydrous
+صنایع شیمیایی و دارویی تبریز | تری سدیم سیترات دی هیدرات | trisodium citrate dihydrate
+صنایع شیمیایی و دارویی تبریز | تری سدیم فسفات انهیدروس | Tribasic sodium phosphate anhydrous usp
+صنایع شیمیایی و دارویی تبریز | تری کلسیم فسفات | Tricalcium phosphate usp
+صنایع شیمیایی و دارویی تبریز | تیامین هیدروکلراید usp | Thiamine hydrocholoride usp
+صنایع شیمیایی و دارویی تبریز | دی پتاسیم فسفات | Dibasic potassium phosphate
+صنایع شیمیایی و دارویی تبریز | دی سدیم فسفات 12 آبه | Dibasic sodium phosphate dodecahydrate usp
+صنایع شیمیایی و دارویی تبریز | دی سدیم فسفات انهیدروس | Dibasic sodium phosphate anhydrous usp
+صنایع شیمیایی و دارویی تبریز | دی سدیم فسفات دی هیدرات | Dibasic sodium phosphate dihydrate usp
+صنایع شیمیایی و دارویی تبریز | دی کلسیم فسفات بدون آب | Anhydrous Dicalcium Phosphate
+صنایع شیمیایی و دارویی تبریز | دی کلسیم فسفات دی هیدرات | Dicalcium Phosphate Dihydrate
+صنایع شیمیایی و دارویی تبریز | دی متیل فومارات | Dimethyl Fumarate
+صنایع شیمیایی و دارویی تبریز | زینک اکساید | Zinc oxide
+صنایع شیمیایی و دارویی تبریز | زینک سولفات مونوهیدارت | Zinc Sulfate  Monohydrate
+صنایع شیمیایی و دارویی تبریز | زینک سولفات هپتاهیدرات | Zinc Sulfate Heptahydrate
+صنایع شیمیایی و دارویی تبریز | زینک سیترات | Zinc citrate
+صنایع شیمیایی و دارویی تبریز | زینک کربنات | Zinc carbonate
+صنایع شیمیایی و دارویی تبریز | سدیم بیکربنات | Sodium bicarbonate usp-bp
+صنایع شیمیایی و دارویی تبریز | سدیم ساخارین | Sodium saccharin usp-bp
+صنایع شیمیایی و دارویی تبریز | سدیم کربنات | Sodium carbonate
+صنایع شیمیایی و دارویی تبریز | سولفات آهن گلیسین | Ferrous Glycine Sulfate
+صنایع شیمیایی و دارویی تبریز | کالامین | Calamine
+صنایع شیمیایی و دارویی تبریز | کلسیم استئارات | Calcium stearate
+صنایع شیمیایی و دارویی تبریز | کلسیم سیترات | Calcium citrate
+صنایع شیمیایی و دارویی تبریز | کلسیم کربنات سبک | Calcium carbonate(light) usp
+صنایع شیمیایی و دارویی تبریز | کلسیم کربنات سنگین | Calcium carbonate(heavy) usp
+صنایع شیمیایی و دارویی تبریز | کلسیم کربنات گرانوله | Calcium carbonate granular(easy press) usp
+صنایع شیمیایی و دارویی تبریز | کلسیم گلیسروفسفات | Calcium Glycerophosphate
+صنایع شیمیایی و دارویی تبریز | منو سدیم فسفات انهیدروس | monobasic sodium phosphate Anhydrous
+صنایع شیمیایی و دارویی تبریز | منو سدیم فسفات دی هیدرات | monobasic sodium phosphate dihydrate
+صنایع شیمیایی و دارویی تبریز | منیزیم استئارات | magnesium stearate
+صنایع شیمیایی و دارویی تبریز | منیزیم سیترات | Magnesium Citrate
+صنایع شیمیایی و دارویی تبریز | هیدروکسید منیزیم | Magnesium Hydroxide
+صنایع مشارکتی طاها | پردنیزولون | Prednisolone
+صنایع مشارکتی طاها | پروژسترون | Progesterone
+صنایع مشارکتی طاها | هیدروکورتیزون | Hydrocortisone
+صنعت سبز طبرستان | 3و1--دی اکسالان | Dioxolane-1,3
+صنعت سبز طبرستان | ایزوآمیل استات | Iso Amyl Acetate
+صنعت سبز طبرستان | ایزوآمیل استات | Iso Amyl Acetate
+صنعت سبز طبرستان | بازیابی حلال های دارویی | Pharmaceutical solvents Rcovery
+صنعت سبز طبرستان | برش نفتی مطابق با خواسته مشتری | Oil fractions according to the customer's request
+صنعت سبز طبرستان | حلال پارافینیک | Parraffinic Solvents
+صنعت سبز طبرستان | دی متوکسی متان (متیلال) | Dimethoxymethane
+عصرنانو | پودر عصاره پروپولیس | Propolis extract powder
+عصرنانو | پودر عصاره چای ترش | Sour tea extract powder
+عصرنانو | پودر عصاره زعفران | Saffron extract powder
+عصرنانو | پودر منیزیم اکساید 400 پلاس ویتامین های گروه B | Magnesium Oxide Powder 400 Plus B Vitamins
+عصرنانو | شربت امگا3 (ادونسیس) | Omega-3 syrup (Adonis)
+عصرنانو | شربت امگا3 پلاس زینک | Omega-3 Plus Zinc Syrup
+عصرنانو | شربت منیزیم سیترات پلاس ویتامین B6 | Magnesium Citrate Plus Vitamin B6 Syrup
+فاران شیمی | امپاگلیفلوزین | Empagliflozin
+فاران شیمی | اندانسترون | Ondansetron
+فاران شیمی | آپریمیلاست | apremilast
+فاران شیمی | آپیکسابان | Apixaban
+فاران شیمی | بوسنتان مونوهیدرات | Bosentan Monohydrate
+فاران شیمی | بیزوپرولول فومارات | BISOPROLOL FUMARATE
+فاران شیمی | پنتاپرازول سدیم | Pentaprazolesodium
+فاران شیمی | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+فاران شیمی | داپاگلیفلوزین پروپاندیول مونوهیدرات | DAPAGLIFLOZIN PROPANEDIOL MONOHYDRATE
+فاران شیمی | سوماتریپتان سوکسینات | Sumatriptan Succinat
+فاران شیمی | سیتاگلیپتین فسفات مونوهیدرات | Sitagliptin phosphate monohydrate
+فاران شیمی | لوزارتان پتاسیم | Losartanpotassium
+فاران شیمی | لیناگلیپتین | Linagliptin
+فاران شیمی | میگلوستات | Miglustat
+فاران شیمی | هیوسین بوتیل بروماید | Hyoscine Butylbromide
+فرآیند شیمی حکیم | اس سیتالوپرام اگزالات | Escitalopram oxalate
+فرآیند شیمی حکیم | امپاگلیفلوزین | Empagliflozin
+فرآیند شیمی حکیم | اندانسترون | Ondansetron
+فرآیند شیمی حکیم | آتورواستاتین کلسیم | Atorvastatin Calcium
+فرآیند شیمی حکیم | باکلوفن | Baclofen
+فرآیند شیمی حکیم | حدواسط فکسوفنادین (n-1) | Fexofenadine intermediate (n-1)
+فرآیند شیمی حکیم | دس لوراتادین | Des loratadine
+فرآیند شیمی حکیم | رزواستاتین کلسیم | Rosuvastatincalcium
+فرآیند شیمی حکیم | ساکوبیتریل/ والزارتان | Sacubitril/Valsartan
+فرآیند شیمی حکیم | سیتاگلیپتین فسفات | Sitagliptin phosphate
+فرآیند شیمی حکیم | فکسوفنادین هیدروکلراید | Fexofenadine Hydrochloride
+فرآیند شیمی حکیم | کلوپیدوگرل | Clopidogrel
+فرآیند شیمی حکیم | کوئتیاپین فومارات | Quetiapine fumarate
+فرآیند شیمی حکیم | گلیکلازید | Gliclazide
+فرهیختگان زرنام | شربت فروکتوز | fructose syrup
+فرهیختگان زرنام | شربت گلوکز | glucose syrup
+فرهیختگان زرنام | مالتودکسترین | Maltodextrin
+فرهیختگان زرنام | نشاسته اصلاح شده ذرت | Corn Modified Starch
+فرهیختگان زرنام | نشاسته ذرت | Corn Starch
+فناوران دارویی پارسیان | ارلوتینیب هیدروکلراید | Erlotinibhydrochloride
+فناوران دارویی پارسیان | امپاگلیفلوزین | Empagliflozin
+فناوران دارویی پارسیان | اورفورگلیپرون | Orforglipron
+فناوران دارویی پارسیان | اوزانیمود هیدروکلراید | Ozanimod Hydrochloride
+فناوران دارویی پارسیان | اوسیمرتینیب مسیلات | Osimertinib Mesylate
+فناوران دارویی پارسیان | اولاپاریب | Olaparib
+فناوران دارویی پارسیان | ایبروتینیب | Ibrutinib
+فناوران دارویی پارسیان | ایماتینیب مسیلات | Imatinibmesylate
+فناوران دارویی پارسیان | آبماسیکلیب | Abemaciclib
+فناوران دارویی پارسیان | آبیراترون استات | Abirateroneacetate
+فناوران دارویی پارسیان | آپیکسابان | Apixaban
+فناوران دارویی پارسیان | پازوپانیب هیدروکلراید | Pazopanib Hydrochloride
+فناوران دارویی پارسیان | پالبوسیکلیب | Palbociclib
+فناوران دارویی پارسیان | ترامتینیب دی متیل سولفوکسید | Trametinib Dimethyl Sulfoxide
+فناوران دارویی پارسیان | تریفلونوماید | Teriflunomide
+فناوران دارویی پارسیان | توفاسیتینیب-سیترات | TOFACITINIB-CITRATE
+فناوران دارویی پارسیان | تیرزپاتید | Tirzepatide
+فناوران دارویی پارسیان | تیکاگرلور | Ticagrelor
+فناوران دارویی پارسیان | جفیتینیب | Gefitinib
+فناوران دارویی پارسیان | دابرافنیب مسیلات | Dabrafenib Mesylate
+فناوران دارویی پارسیان | داپاگلیفلوزین پروپاندیول مونوهیدرات | DAPAGLIFLOZIN PROPANEDIOL MONOHYDRATE
+فناوران دارویی پارسیان | داساتینیب | Dasatinib
+فناوران دارویی پارسیان | دس لوراتادین | Des loratadine
+فناوران دارویی پارسیان | دی متیل فومارات | Dimethyl Fumarate
+فناوران دارویی پارسیان | دیروکسیمل فومارات | Diroximel Fumarate
+فناوران دارویی پارسیان | رگورافنیب مونوهیدرات | Regorafenib Monohydrate
+فناوران دارویی پارسیان | روکسادوستات | Roxadustat
+فناوران دارویی پارسیان | ریلوزول | Riluzole
+فناوران دارویی پارسیان | ریواروکسابان | Rivaroxaban
+فناوران دارویی پارسیان | ساکوبیتریل/ والزارتان | Sacubitril/Valsartan
+فناوران دارویی پارسیان | سانیتینیب مالئات | Sunitinibmaleate
+فناوران دارویی پارسیان | سورافنیب توسیلات | Sorafenib Tosylate
+فناوران دارویی پارسیان | سیپونیمود فومارات | Siponimod Fumarate
+فناوران دارویی پارسیان | سیتاگلیپتین فسفات | Sitagliptin phosphate
+فناوران دارویی پارسیان | فاویپیراویر | Favipiravir
+فناوران دارویی پارسیان | فسفات روکسولیتینیب | Ruxolitinib Phosphate
+فناوران دارویی پارسیان | فینگولیمود هیدروکلراید | Fingolimod HCl
+فناوران دارویی پارسیان | کریزوتینیب | Crizotinib
+فناوران دارویی پارسیان | گرانول ارلوتینیب هیدروکلراید | Erlotinib Hydrochloride Granule
+فناوران دارویی پارسیان | گرانول استات آبیراترون | Abiraterone Acetate Granule
+فناوران دارویی پارسیان | گرانول ایبروتینیب | Ibrutinib Granule
+فناوران دارویی پارسیان | گرانول ایماتینیب مزیلات | Imatinib Mesylate Granule
+فناوران دارویی پارسیان | گرانول آپیکسابان | Apixaban Granule
+فناوران دارویی پارسیان | گرانول پازوپانیب هیدروکلراید | Pazopanib Hydrochloride Granule
+فناوران دارویی پارسیان | گرانول پالبوسیکلیب | Palbociclib Granule
+فناوران دارویی پارسیان | گرانول تیکاگرلور | Ticagrelor Granule
+فناوران دارویی پارسیان | گرانول جفیتینیب | Gefitinib Granule
+فناوران دارویی پارسیان | گرانول داساتینیب مونوهیدرات | Dasatinib Monohydrate Granule
+فناوران دارویی پارسیان | گرانول رسمتیروم | Resmetirom Granule
+فناوران دارویی پارسیان | گرانول ریواروکسابان | Rivaroxaban Granule
+فناوران دارویی پارسیان | گرانول سورافنیب توسیلات | Sorafenib Tosylate Granule
+فناوران دارویی پارسیان | گرانول سیترات توفاسیتینیب | Tofacitinib Citrate Granule
+فناوران دارویی پارسیان | گرانول فاویپیراویر | Favipiravir Granule
+فناوران دارویی پارسیان | گرانول مالات سونیتینیب | Sunitinib Malate Granule
+فناوران دارویی پارسیان | گرانول مزیلات اوسیمرتینیب | Osimertinib Mesylate Granule
+فناوران دارویی پارسیان | گرانول مونوهیدرات رگورافنیب | Regorafenib Monohydrate Granule
+فناوران دارویی پارسیان | گرانول مونوهیدرات نیلوتینیب هیدروکلراید | Nilotinib Hydrochloride Monohydrate Granule
+فناوران دارویی پارسیان | گرانول همی هیدرات لنالیدومید | Lenalidomide Hemihydrate Granule
+فناوران دارویی پارسیان | گرانول واندتانیب | Vandetanib Granule
+فناوران دارویی پارسیان | لتروزول | Letrozole
+فناوران دارویی پارسیان | لنالیدومید همی‌هیدرات | Lenalidomide Hemihydrate
+فناوران دارویی پارسیان | لنواتینیب مسیلات | Lenvatinib Mesylate
+فناوران دارویی پارسیان | لیناگلیپتین | Linagliptin
+فناوران دارویی پارسیان | مولنوپیراویر | Molnupiravir
+فناوران دارویی پارسیان | نیلوتینیب هیدروکلراید | Nilotinibhydrochloride
+فناوران دارویی پارسیان | واندتانیب | Vandetanib
+فناوران دارویی پارسیان | وریکونازول | Voriconazole
+فناوران دارویی پارسیان | ونتوکلاکس | Venetoclax
+فناوران دارویی حکیم | آپیکسابان اسید ایمپیوریتی | Apixaban Acid Impurity
+فناوران دارویی حکیم | آداپالن ریلیتد کالمپاند A | Adapalene Related Compound A (USP)
+فناوران دارویی حکیم | آداپالن ریلیتد کالمپاند B | Adapalene Related Compound B (USP)
+فناوران دارویی حکیم | آداپالن ریلیتد کالمپاند C | Adapalene Related Compound C (USP)
+فناوران دارویی حکیم | آداپالن ریلیتد کالمپاند E | Adapalene Related Compound E (USP)
+فناوران دارویی حکیم | آسپرین ایمپیوریتی استاندارد | Aspirine Impurity Standard (BP)
+فناوران دارویی حکیم | آسیکلوویر ریلیتد کالمپاند A | Aciclovir Related Compound A (USP)
+فناوران دارویی حکیم | آسیکلوویر ریلیتد کالمپاند F | Aciclovir Related Compound F (USP)
+فناوران دارویی حکیم | آلپرازولام ریلیتد کالمپاند A | Alprazolam Related Compound A (USP)
+فناوران دارویی حکیم | گلایبورید ریلیتد کامپاند A | Glyburide Related Compound A
+فناوران دارویی حکیم | ممانتین هیدروکلراید | Memantine Hydrochloride
+فناوران دارویی حکیم | o-تولوئن سولفونامید | o-Toluenesulfonamide
+فناوران دارویی حکیم | اپی نفرین بی تارترات | Epinephrine Bitartrate
+فناوران دارویی حکیم | اتومیدیت کنید | Etomidate
+فناوران دارویی حکیم | اتیل پارابن | Ethylparaben
+فناوران دارویی حکیم | اریترومایسین | Erythromycin
+فناوران دارویی حکیم | اریترومایسین | Erythromycin
+فناوران دارویی حکیم | اریترومایسین ریلیتد کامپاند N | Erythromycin Related Compound N (USP)
+فناوران دارویی حکیم | استامینوفن | ACETAMINOPHEN
+فناوران دارویی حکیم | استامینوفن ریلیتد کالمپاند A | Acetaminophen Related Compound A (USP)
+فناوران دارویی حکیم | استامینوفن ریلیتد کالمپاند B | Acetaminophen Related Compound B (USP)
+فناوران دارویی حکیم | استامینوفن ریلیتد کالمپاند C | Acetaminophen Related Compound C (USP)
+فناوران دارویی حکیم | استامینوفن ریلیتد کالمپاند D | Acetaminophen Related Compound D (USP)
+فناوران دارویی حکیم | استامینوفن ریلیتد کالمپاند F | Acetaminophen Related Compound F (USP)
+فناوران دارویی حکیم | استامینوفن ریلیتد کالمپاند J | Acetaminophen Related Compound J (USP)
+فناوران دارویی حکیم | استاندارد ایمپیوریتی فلوکونازول (BP) | Fluconazole Impurity Standard (BP)
+فناوران دارویی حکیم | استیل سالیسیلیک اسید  برای شناسایی پیک | Acetylsalicylic Acid for Peak Identification (EP)
+فناوران دارویی حکیم | استیل سیستئین | Acetylcysteine
+فناوران دارویی حکیم | اسکوربیک اسید | Ascorbic Acid
+فناوران دارویی حکیم | اسومپرازول منیزیم | Esomeprazole Magnesium
+فناوران دارویی حکیم | اسیتالوپرام اگزالات | Escitalopram Oxalate
+فناوران دارویی حکیم | اسید فولیک | Folic Acid
+فناوران دارویی حکیم | اسید فوماریک | Fumaric Acid
+فناوران دارویی حکیم | افلوکساسین | Ofloxacin
+فناوران دارویی حکیم | افلوکساسین ریلیتد کامپاند A | Ofloxacin Related Compound A (USP)
+فناوران دارویی حکیم | اکسی تتراسایکلین | Oxytetracycline
+فناوران دارویی حکیم | اکسی کدون | OXYCODONE
+فناوران دارویی حکیم | اکسی کدون ریلیتد کامپاند | Oxycodone Related Compound B (USP)
+فناوران دارویی حکیم | اکسی کدون هیدروکلراید | OXYCODONE HYDROCHLORIDE
+فناوران دارویی حکیم | اکونازول نیترات | Econazole Nitrate
+فناوران دارویی حکیم | ال-فنیل‌آلانین | L-Phenylalanine
+فناوران دارویی حکیم | امپاگلیفلوزین | Empagliflozin
+فناوران دارویی حکیم | امپرازول | Omeprazole
+فناوران دارویی حکیم | امپرازول ریلیتد کامپاند A | Omeprazole Related Compound A (USP)
+فناوران دارویی حکیم | امپرازول ریلیتد کامپاند B | Omeprazole Related Compound B (USP)
+فناوران دارویی حکیم | امپرازول ریلیتد کامپاند F&G مخلوط | Omeprazole Related Compound F and G Mixture (USP)
+فناوران دارویی حکیم | انالاپریل مالئات | Enalapril Maleate
+فناوران دارویی حکیم | اندانسترون | Ondansetron
+فناوران دارویی حکیم | اندانسترون بامخلوط حل شونده | Ondansetron Resolution Mixture (USP)
+فناوران دارویی حکیم | اندانسترون ریلیتد کامپاند A | Ondansetron Related Compound A (USP)
+فناوران دارویی حکیم | اندانسترون ریلیتد کامپاند C | Ondansetron Related Compound C (USP)
+فناوران دارویی حکیم | اندانسترون ریلیتد کامپاند D | Ondansetron Related Compound D (USP)
+فناوران دارویی حکیم | اندانسترون ریلیتد کامپاند G | Ondansetron Related Compound G (USP)
+فناوران دارویی حکیم | اندانسترون | Ondansetron
+فناوران دارویی حکیم | اورلیستات | Orlistat
+فناوران دارویی حکیم | اورلیستات ریلیتد کامپاند B | Orlistat Related Compound B (USP)
+فناوران دارویی حکیم | اورلیستات ریلیتد کامپاند C | Orlistat Related Compound C (USP)
+فناوران دارویی حکیم | اورلیستات ریلیتد کامپاند D | Orlistat Related Compound D (USP)
+فناوران دارویی حکیم | اولانزاپین | Olanzapine
+فناوران دارویی حکیم | اولانزاپین ریلیتد کامپاند A | Olanzapine Related Compound A (USP)
+فناوران دارویی حکیم | اولانزاپین ریلیتد کامپاند B | Olanzapine Related Compound B (USP)
+فناوران دارویی حکیم | اولانزاپین ریلیتد کامپاند C | Olanzapine Related Compound C (USP)
+فناوران دارویی حکیم | ایبوبروفن ریلیتد کامپاند C | Ibuprofen Related Compound C (USP)
+فناوران دارویی حکیم | ایبوبروفن ریلیتد کامپاند J | Ibuprofen Related Compound J (USP)
+فناوران دارویی حکیم | ایبوپروفن | Ibuprofen
+فناوران دارویی حکیم | ایبوپروفن ایمپیوریتی B (EP)، خالص | Ibuprofen Impurity B (EP), Net
+فناوران دارویی حکیم | ایبوپروفن ایمپیوریتی B (EP)، محلول 0.07% w/v | Ibuprofen Impurity B (EP), Solution 0.07% w/v
+فناوران دارویی حکیم | ایبوپروفن ایمپیوریتی F (EP) | Ibuprofen Impurity F (EP)
+فناوران دارویی حکیم | ایبوپروفن ایمپیوریتی N (EP) | Ibuprofen Impurity N (EP)
+فناوران دارویی حکیم | ایبوپروفن برای شناسایی پیک  (EP) | Ibuprofen for Peak Identification (EP)
+فناوران دارویی حکیم | ایتراکونازول | Itraconazole
+فناوران دارویی حکیم | ایمپیوریتی کلرفنامین D (EP) | Chlorphenamine Impurity D (EP)
+فناوران دارویی حکیم | ایمپیوریتی گلیکلازید B (EP) | Gliclazide Impurity B (EP)
+فناوران دارویی حکیم | ایمپیوریتی گلیکلازید F (EP) | Gliclazide Impurity F (EP)
+فناوران دارویی حکیم | ایمیدازول | Imidazole
+فناوران دارویی حکیم | ایندومتاسین ریلیتد کامپاند A | Indomethacin Related Compound A (USP)
+فناوران دارویی حکیم | ایندومتاسین ریلیتد کامپاند B | Indomethacin Related Compound B (USP)
+فناوران دارویی حکیم | ایواکافتور | Ivacaftor
+فناوران دارویی حکیم | آپیکسابان | Apixaban
+فناوران دارویی حکیم | آتورواستاتین ریلیتد کامپاند A | Atorvastatin Related Compound A (USP)
+فناوران دارویی حکیم | آتورواستاتین ریلیتد کامپاند B | Atorvastatin Related Compound B (USP)
+فناوران دارویی حکیم | آتورواستاتین ریلیتد کامپاند C | Atorvastatin Related Compound C (USP)
+فناوران دارویی حکیم | آتورواستاتین ریلیتد کامپاند E | Atorvastatin Related Compound E (USP)
+فناوران دارویی حکیم | آتورواستاتین ریلیتد کامپاند H | Atorvastatin Related Compound H (USP)
+فناوران دارویی حکیم | آتورواستاتین ریلیتد کامپاند I | Atorvastatin Related Compound I (USP)
+فناوران دارویی حکیم | آتورواستاتین کلسیم | Atorvastatin Calcium
+فناوران دارویی حکیم | آداپالن | Adapalene
+فناوران دارویی حکیم | آدرنالون هیدروکلراید | Adrenalone Hydrochloride
+فناوران دارویی حکیم | آر-سیتالوپرام اگزالات | R-Citalopram Oxalate
+فناوران دارویی حکیم | آزاریترومایسین A | Azaerythromycin A (USP)
+فناوران دارویی حکیم | آزیترومایسین | Azithromycin
+فناوران دارویی حکیم | آزیترومایسین ریلیتد کامپاند F | Azithromycin Related Compound F (USP)
+فناوران دارویی حکیم | آسپارتام | Aspartame
+فناوران دارویی حکیم | آسپارتام ریلیتد کامپاند A | Aspartame Related Compound A (USP)
+فناوران دارویی حکیم | آسپرین | ASPIRIN
+فناوران دارویی حکیم | آسیکلوویر | Acyclovir
+فناوران دارویی حکیم | آلپرازولام | Alprazolam
+فناوران دارویی حکیم | آلفا نفتول | Alpha-Naphthol
+فناوران دارویی حکیم | آمانتادین هیدروکلراید | Amantadine Hydrochloride
+فناوران دارویی حکیم | آملودیپین ایمپیوریتی B | Amlodipine Impurity B (EP)
+فناوران دارویی حکیم | آملودیپین برای شناسایی پیک | Amlodipine for Peak Identification
+فناوران دارویی حکیم | آملودیپین | Amlodipine
+فناوران دارویی حکیم | آملودیپین ریلیتد کالمپاند A | Amlodipine Related Compound A (USP)
+فناوران دارویی حکیم | آملودیپین ریلیتد کالمپاند C | Amlodipine Related Compound C (USP)
+فناوران دارویی حکیم | آملودیپین ریلیتد کالمپاند D | Amlodipine Related Compound D (USP)
+فناوران دارویی حکیم | آموکسی سیلین | Amoxicillin
+فناوران دارویی حکیم | آموکسی سیلین ریلیتد کالمپاند A | Amoxicillin Related Compound A (USP)
+فناوران دارویی حکیم | آموکسی سیلین ریلیتد کالمپاند D | Amoxicillin Related Compound D (USP)
+فناوران دارویی حکیم | آمی تریپتیلین ریلیتد کالمپاند A | Amitriptyline Related Compound A (USP)
+فناوران دارویی حکیم | آمی تریپتیلین ریلیتد کالمپاند B | Amitriptyline Related Compound B (USP)
+فناوران دارویی حکیم | آمینو-2-5-کلروبنزوفنون | Amino-2-5-chlorobenzophenone
+فناوران دارویی حکیم | آمینوفنول-4 | Aminophenol-4
+فناوران دارویی حکیم | آمیودارون ریلیتد کالمپاند D | Amiodarone Related Compound D (USP)
+فناوران دارویی حکیم | آمیودارون ریلیتد کالمپاند E | Amiodarone Related Compound E (USP)
+فناوران دارویی حکیم | آمیودارون هیدروکلراید | Amiodarone Hydrochloride
+فناوران دارویی حکیم | باکلوفن | Baclofen
+فناوران دارویی حکیم | باکلوفن ریلیتد کامپاند A | Baclofen Related Compound A (USP)
+فناوران دارویی حکیم | بتامتازون | Betamethasone
+فناوران دارویی حکیم | بتامتازون سدیم فسفات | Betamethasone Sodium Phosphate
+فناوران دارویی حکیم | بتامتازون والرات | Betamethasone Valerate
+فناوران دارویی حکیم | بتامتازون والرات ریلیتد کامپاند A | Betamethasone Valerate Related Compound A (USP)
+فناوران دارویی حکیم | بکلومتازون دی پروپیونات | Beclomethasone Dipropionate
+فناوران دارویی حکیم | بکلومتازون دی پروپیونات مونوهیدرات | Beclometasone Dipropionate Monohydrate
+فناوران دارویی حکیم | بنزالدئید | Benzaldehyde
+فناوران دارویی حکیم | بنزوات سدیم | Sodium Benzoate
+فناوران دارویی حکیم | بنزوتیادیازین ریلیتد کامپاند A | Benzothiadiazine Related Compound A (USP)
+فناوران دارویی حکیم | بنزوفنون | Benzophenone
+فناوران دارویی حکیم | بنزوئیک اسید | Benzoic Acid
+فناوران دارویی حکیم | بنزیل الکل | Benzyl Alcohol
+فناوران دارویی حکیم | بنژیدرول | Benzhydrol
+فناوران دارویی حکیم | بنسرازید ایمپیوریتی A (EP) | Benserazide Impurity A (EP)
+فناوران دارویی حکیم | بنسرازید ایمپیوریتی A (EP) | Benserazide Impurity A (EP)
+فناوران دارویی حکیم | بنسرازید هیدروکلراید | Benserazide Hydrochloride
+فناوران دارویی حکیم | بوپروپیون هیدروکلراید | Bupropion Hydrochloride
+فناوران دارویی حکیم | بوپروپیون هیدروکلراید ریلیتد کامپاند A | Bupropion Hydrochloride Related Compound A (USP)
+فناوران دارویی حکیم | بوپروپیون هیدروکلراید ریلیتد کامپاند B | Bupropion Hydrochloride Related Compound B (USP)
+فناوران دارویی حکیم | بوتیل پارابن | Butylparaben
+فناوران دارویی حکیم | بوسپیرون ریلیتد کامپاند L | Buspirone Related Compound L (USP)
+فناوران دارویی حکیم | بوسپیرون هیدروکلراید | Buspirone Hydrochloride
+فناوران دارویی حکیم | بیزاکودیل | Bisacodyl
+فناوران دارویی حکیم | بیسوپرولول فومارات | Bisoprolol Fumarate
+فناوران دارویی حکیم | بیوتین | Biotin
+فناوران دارویی حکیم | پارا-تولوئن سولفونامید | p-Toluenesulfonamide
+فناوران دارویی حکیم | پارا-رانولازین | p-Ranolazine
+فناوران دارویی حکیم | پتاسیم سوربات | Potassium Sorbate
+فناوران دارویی حکیم | پردنیزون | Prednisone
+فناوران دارویی حکیم | پرگابالین | Pregabalin
+فناوران دارویی حکیم | پرگابالین ایمپیوریتی D | Pregabalin Impurity D (EP)
+فناوران دارویی حکیم | پرگابالین ایمپیوریتی استاندارد | Pregabalin Impurity Standard (BP)
+فناوران دارویی حکیم | پرگابالین ریلیتد کامپاند A | Pregabalin Related Compound A (USP)
+فناوران دارویی حکیم | پرگابالین ریلیتد کامپاند C | Pregabalin Related Compound C (USP)
+فناوران دارویی حکیم | پروپرانولول هیدروکلراید | Propranolol Hydrochloride
+فناوران دارویی حکیم | پروپوفول | Propofol
+فناوران دارویی حکیم | پروپوفول ریلیتد کامپاند A | Propofol Related Compound A (USP)
+فناوران دارویی حکیم | پروپوفول ریلیتد کامپاند B | Propofol Related Compound B (USP)
+فناوران دارویی حکیم | پروپوفول ریلیتد کامپاند C | Propofol Related Compound C (USP)
+فناوران دارویی حکیم | پروپیل پارابن | Propylparaben
+فناوران دارویی حکیم | پرومتازین ریلیتد کامپاند B | Promethazine Related Compound B (USP)
+فناوران دارویی حکیم | پرومتازین هیدروکلراید | Promethazine Hydrochloride
+فناوران دارویی حکیم | پریلوکائین | Prilocaine
+فناوران دارویی حکیم | پریلوکائین ریلیتد کامپاند A | Prilocaine Related Compound A (USP)
+فناوران دارویی حکیم | پریلوکائین ریلیتد کامپاند B | Prilocaine Related Compound B (USP)
+فناوران دارویی حکیم | پریلوکائین هیدروکلراید | Prilocaine Hydrochloride
+فناوران دارویی حکیم | پنتوپرازول برای سازگاری با سیستم | Pantoprazole for System Suitability (EP)
+فناوران دارویی حکیم | پنتوپرازول ریلیتد کامپاند A | Pantoprazole Related Compound A (USP)
+فناوران دارویی حکیم | پنتوپرازول ریلیتد کامپاند B | Pantoprazole Related Compound B (USP)
+فناوران دارویی حکیم | پنتوپرازول ریلیتد کامپاند C | Pantoprazole Related Compound C (USP)
+فناوران دارویی حکیم | پنتوپرازول ریلیتد کامپاند D&F مخلوط | Pantoprazole Related Compounds D and F Mixture (USP)
+فناوران دارویی حکیم | پنتوپرازول سدیم | Pantoprazole Sodium
+فناوران دارویی حکیم | پیروکسیکام | Piroxicam
+فناوران دارویی حکیم | پیروکسیکام ریلیتد کامپاند A | Piroxicam Related Compound A (USP)
+فناوران دارویی حکیم | پیروکسیکام ریلیتد کامپاند D | Piroxicam Related Compound D (USP)
+فناوران دارویی حکیم | پیروکسیکام ریلیتد کامپاند G | Piroxicam Related Compound G (USP)
+فناوران دارویی حکیم | پیروکسیکام ریلیتد کامپاند J | Piroxicam Related Compound J (USP)
+فناوران دارویی حکیم | پیریدوکسین هیدروکلراید | Pyridoxine Hydrochloride
+فناوران دارویی حکیم | پیوگلیتازون هیدروکلراید | PIOGLITAZONE HYDROCHLORIDE
+فناوران دارویی حکیم | تادالافیل | Tadalafil
+فناوران دارویی حکیم | تامسولوسین هایدروکلراید | TAMSULOSIN HYDROCHLORIDE
+فناوران دارویی حکیم | تتراسایکلین هیدروکلراید | Tetracycline Hydrochloride
+فناوران دارویی حکیم | ترامادول هیدروکلراید | Tramadol Hydrochloride
+فناوران دارویی حکیم | تریازولام | Triazolam
+فناوران دارویی حکیم | تلمیزارتان | Telmisartan
+فناوران دارویی حکیم | تلمیسارتان ریلیتد کامپاند A | Telmisartan Related Compound A (USP)
+فناوران دارویی حکیم | تلمیسارتان ریلیتد کامپاند B | Telmisartan Related Compound B (USP)
+فناوران دارویی حکیم | توپیرامات ریلیتد کامپاند A | Topiramate Related Compound A (USP)
+فناوران دارویی حکیم | تولترودین تارترات | Tolterodine Tartrate
+فناوران دارویی حکیم | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+فناوران دارویی حکیم | تیزانیدین ریلیتد کامپاند C | Tizanidine Related Compound C
+فناوران دارویی حکیم | تیکاگرلور | Ticagrelor
+فناوران دارویی حکیم | تیکاگرلور ریلیتد کامپاند B | Ticagrelor Related Compound B (USP)
+فناوران دارویی حکیم | تینیدازول ریلیتد کامپاند A | Tinidazole Related Compound A (USP)
+فناوران دارویی حکیم | تینیدازول ریلیتد کامپاند B | Tinidazole Related Compound B (USP)
+فناوران دارویی حکیم | داپوکستین هیدروکلراید | Dapoxetine Hydrochloride
+فناوران دارویی حکیم | داکسی سایکلین هیکلات | Doxycycline Hyclate
+فناوران دارویی حکیم | دالفامپریدین (فامپریدین) | Dalfampridine (fampridine)
+فناوران دارویی حکیم | دزلوراتادین ریلیتد کامپاند F | Desloratadine Related Compound F (USP)
+فناوران دارویی حکیم | دزوزامینیل آزیترومایسین | Desosaminylazithromycin
+فناوران دارویی حکیم | دسلوراتادین | Desloratadine
+فناوران دارویی حکیم | دکسترومتورفان هیدروبروماید | Dextromethorphan hydrobromide
+فناوران دارویی حکیم | دگزامتازون | Dexamethasone
+فناوران دارویی حکیم | دوکسازوسین ریلیتد کامپاند C | Doxazosin Related Compound C (USP)
+فناوران دارویی حکیم | دولوکستین ریلیتد کامپاند A | Duloxetine Related Compound A (USP)
+فناوران دارویی حکیم | دولوکستین ریلیتد کامپاند F | Duloxetine Related Compound F (USP)
+فناوران دارویی حکیم | دولوکستین ریلیتد کامپاند H | Duloxetine Related Compound H (USP)
+فناوران دارویی حکیم | دولوکستین هیدروکلراید | Duloxetine Hydrochloride
+فناوران دارویی حکیم | دومپریدون مالئات | Domperidone Maleate
+فناوران دارویی حکیم | دونپزیل ریلیتد کامپاند A | Donepezil Related Compound A (USP)
+فناوران دارویی حکیم | دونپزیل هیدروکلراید | Donepezil Hydrochloride
+فناوران دارویی حکیم | دی سیکلومین هیدروکلراید | Dicyclomine Hydrochloride
+فناوران دارویی حکیم | دی متیلانیلین-2،3 | Dimethylaniline-2,3
+فناوران دارویی حکیم | دیفن هیدرامین N-اکساید | Diphenhydramine N-Oxide
+فناوران دارویی حکیم | دیفن هیدرامین ریلیتد کامپاند A | Diphenhydramine Related Compound A (USP)
+فناوران دارویی حکیم | دیفن هیدرامین ریلیتد کامپاند B | Diphenhydramine Related Compound B (USP)
+فناوران دارویی حکیم | دیفن هیدرامین سیترات | Diphenhydramine Citrate
+فناوران دارویی حکیم | دیفن هیدرامین هیدروکلراید | Diphenhydramine Hydrochloride
+فناوران دارویی حکیم | دیکلوفناک برای تناسب سیستم (EP) | Diclofenac for system suitability (EP)
+فناوران دارویی حکیم | دیکلوفناک پتاسیم | Diclofenac Potassium
+فناوران دارویی حکیم | دیکلوفناک دی اتیلامین | Diclofenac Diethylamine
+فناوران دارویی حکیم | دیکلوفناک ریلیتد کامپاند A | Diclofenac Related Compound A (USP)
+فناوران دارویی حکیم | دیکلوفناک سدیم | Diclofenac Sodium
+فناوران دارویی حکیم | رانولازین | Ranolazine
+فناوران دارویی حکیم | رانولازین ریلیتد کامپاند A | Ranolazine Related Compound A (USP)
+فناوران دارویی حکیم | رانولازین ریلیتد کامپاند B | Ranolazine Related Compound B (USP)
+فناوران دارویی حکیم | رانولازین ریلیتد کامپاند C | Ranolazine Related Compound C (USP)
+فناوران دارویی حکیم | رانولازین ریلیتد کامپاند D | Ranolazine Related Compound D (USP)
+فناوران دارویی حکیم | رگورافنیب | Regorafenib
+فناوران دارویی حکیم | روپیواکائین ریلیتد کامپاند A | Ropivacaine Related Compound A (USP)
+فناوران دارویی حکیم | روزوواستاتین انانتیومر | Rosuvastatin Enantiomer
+فناوران دارویی حکیم | روزوواستاتین ایمپیوریتی میکسچر | Rosuvastatin Impurity Mixture (EP)
+فناوران دارویی حکیم | روزوواستاتین برای سازگاری باسیستم | Rosuvastatin for System Suitability (EP)
+فناوران دارویی حکیم | روزوواستاتین ریلیتد کامپاند A | Rosuvastatin Related Compound A (USP)
+فناوران دارویی حکیم | روزوواستاتین ریلیتد کامپاند B | Rosuvastatin Related Compound B (USP)
+فناوران دارویی حکیم | روزوواستاتین ریلیتد کامپاند C | Rosuvastatin Related Compound C (USP)
+فناوران دارویی حکیم | روزوواستاتین کلسیم | Rosuvastatin Calcium
+فناوران دارویی حکیم | ریبوفلاوین | Riboflavin
+فناوران دارویی حکیم | ریزاتریپتان بنزوات | Rizatriptan Benzoate
+فناوران دارویی حکیم | ریواستیگمین تارترات | Rivastigmine Tartrate
+فناوران دارویی حکیم | ریواستیگمین ریلیتد کامپاند A | Rivastigmine Related Compound A (USP)
+فناوران دارویی حکیم | ریواستیگمین ریلیتد کامپاند B | Rivastigmine Related Compound B (USP)
+فناوران دارویی حکیم | زولپیدم تارترات | Zolpidem Tartrate
+فناوران دارویی حکیم | ساخارین سدیم | Saccharin Sodium
+فناوران دارویی حکیم | سالیسیلیک اسید | Salicylic Acid
+فناوران دارویی حکیم | ستیریزین ایمپیوریتی D (EP) | Cetirizine Impurity D (EP)
+فناوران دارویی حکیم | ستیریزین ریلیتد کامپاند A | Cetirizine Related Compound A (USP)
+فناوران دارویی حکیم | ستیریزین ریلیتد کامپاند G | Cetirizine Related Compound G (USP)
+فناوران دارویی حکیم | ستیریزین هیدروکلراید | Cetirizine Hydrochloride
+فناوران دارویی حکیم | سدیم مونته لوکاست | Montelukast Sodium
+فناوران دارویی حکیم | سرتاکونازول نیترات | Sertaconazole Nitrate
+فناوران دارویی حکیم | سرترالین ایمپیوریتی E | Sertraline Impurity E (EP)
+فناوران دارویی حکیم | سرترالین برای سازگاری با سیستم | Sertraline for System Suitability (EP)
+فناوران دارویی حکیم | سرترالین برای شناسایی پیک | Sertraline for Peak Identification (EP)
+فناوران دارویی حکیم | سرترالین هیدروکلراید | Sertraline Hydrochloride
+فناوران دارویی حکیم | سرترالین هیدروکلراید ریلیتد کامپاند A | Sertraline Hydrochloride Related Compound A (USP)
+فناوران دارویی حکیم | سرترالین هیدروکلراید مخلوط راسمیک | Sertraline Hydrochloride Racemic Mixture (USP)
+فناوران دارویی حکیم | سفالکسین | Cephalexin
+فناوران دارویی حکیم | سفیکسیم | Cefixime
+فناوران دارویی حکیم | سلکوکسیب | Celecoxib
+فناوران دارویی حکیم | سلکوکسیب ریلیتد کامپاند A | Celecoxib Related Compound A (USP)
+فناوران دارویی حکیم | سلکوکسیب ریلیتد کامپاند B | Celecoxib Related Compound B (USP)
+فناوران دارویی حکیم | سوتالول هیدروکلراید | Sotalol Hydrochloride
+فناوران دارویی حکیم | سولفات آلبوترول | Albuterol Sulfate
+فناوران دارویی حکیم | سولفاسالازین | Sulfasalazine
+فناوران دارویی حکیم | سولفانیلامید | Sulfanilamide
+فناوران دارویی حکیم | سیانوکوبالامین | Cyanocobalamin
+فناوران دارویی حکیم | سیپروفلوکساسین آنالوگ اتیلن دیامین | Ciprofloxacin Ethylenediamine Analog
+فناوران دارویی حکیم | سیپروفلوکساسین هیدروکلراید | Ciprofloxacin Hydrochloride
+فناوران دارویی حکیم | سیتاگلیپتین فسفات | Sitagliptin Phosphate
+فناوران دارویی حکیم | سیتاگلیپتین مخلوط مناسب سیستم | Sitagliptin System Suitability Mixture (USP)
+فناوران دارویی حکیم | سیتالوپرام ریلیتد کامپاند A | Citalopram Related Compound A (USP)
+فناوران دارویی حکیم | سیتالوپرام ریلیتد کامپاند B | Citalopram Related Compound B (USP)
+فناوران دارویی حکیم | سیتالوپرام ریلیتد کامپاند C | Citalopram Related Compound C (USP)
+فناوران دارویی حکیم | سیتالوپرام ریلیتد کامپاند D | Citalopram Related Compound D (USP)
+فناوران دارویی حکیم | سیتالوپرام ریلیتد کامپاند E | Citalopram Related Compound E (USP)
+فناوران دارویی حکیم | سیتالوپرام ریلیتد کامپاند F | Citalopram Related Compound F (USP)
+فناوران دارویی حکیم | سیتالوپرام ریلیتد کامپاند H | Citalopram Related Compound H (USP)
+فناوران دارویی حکیم | سیتالوپرام هیدروبروماید | Citalopram Hydrobromide
+فناوران دارویی حکیم | سیکلومین ریلیتد کامپاند A | Dicyclomine Related Compound A (USP)
+فناوران دارویی حکیم | سیلدنافیل ریلیتد کامپاند A | Sildenafil Related Compound A (USP)
+فناوران دارویی حکیم | سیلدنافیل سیترات | Sildenafil Citrate
+فناوران دارویی حکیم | سیلوستازول ریلیتد کامپاند A | Cilostazol Related Compound A ( USP)
+فناوران دارویی حکیم | سیلوستازول ریلیتد کامپاند B | Cilostazol Related Compound B ( USP)
+فناوران دارویی حکیم | شناسه کلاریترومایسین (USP) | Clarithromycin Identity (USP)
+فناوران دارویی حکیم | فاموتیدین | Famotidine
+فناوران دارویی حکیم | فاموتیدین ریلیتد کامپاند B | Famotidine Related Compound B (USP)
+فناوران دارویی حکیم | فاموتیدین ریلیتد کامپاند C | Famotidine Related Compound C (USP)
+فناوران دارویی حکیم | فاموتیدین ریلیتد کامپاند D | Famotidine Related Compound D (USP)
+فناوران دارویی حکیم | فاموتیدین ریلیتد کامپاند E | Famotidine Related Compound E (USP)
+فناوران دارویی حکیم | فاموتیدین ریلیتد کامپاند F | Famotidine Related Compound F (USP)
+فناوران دارویی حکیم | فکسوفنادین ریلیتد کامپاند A | Fexofenadine Related Compound A (USP)
+فناوران دارویی حکیم | فکسوفنادین ریلیتد کامپاند B | Fexofenadine Related Compound B (USP)
+فناوران دارویی حکیم | فکسوفنادین ریلیتد کامپاند C | Fexofenadine Related Compound C (USP)
+فناوران دارویی حکیم | فکسوفنادین هیدروکلراید | Fexofenadine Hydrochloride
+فناوران دارویی حکیم | فلوتیکازون پروپیونات | Fluticasone Propionate
+فناوران دارویی حکیم | فلوروکینولونیک اسید | Fluoroquinolonic Acid
+فناوران دارویی حکیم | فلوکستین ریلیتد کامپاند A | Fluoxetine Reloated Compound B (USP)
+فناوران دارویی حکیم | فلوکستین ریلیتد کامپاند B | Fluoxetine Reloated Compound B (USP)
+فناوران دارویی حکیم | فلوکستین هیدروکلراید | Fluoxetine Hydrochloride
+فناوران دارویی حکیم | فلوکونازول | Fluconazole
+فناوران دارویی حکیم | فلوکونازول ریلیتد کامپاند A | Fluconazole Related Compound A (USP)
+فناوران دارویی حکیم | فلوکونازول ریلیتد کامپاند B | Fluconazole Related Compound B (USP)
+فناوران دارویی حکیم | فلوکونازول ریلیتد کامپاند C | Fluconazole Related Compound C (USP)
+فناوران دارویی حکیم | فلونیکسین ریلیتد کامپاند A | Flunixin Related Compound A (USP)
+فناوران دارویی حکیم | فلونیکسین ریلیتد کامپاند B | Flunixin Related Compound B (USP)
+فناوران دارویی حکیم | فلونیکسین ریلیتد کامپاند C | Flunixin Related Compound C (USP)
+فناوران دارویی حکیم | فلوواکسامین مالئات | Fluvoxaminemaleate
+فناوران دارویی حکیم | فنوفیبرات | Fenofibrate
+فناوران دارویی حکیم | فنوفیبرات ریلیتد کامپاند A | Fenofibrate Related Compound A (USP)
+فناوران دارویی حکیم | فنوفیبرات ریلیتد کامپاند B | Fenofibrate Related Compound B (USP)
+فناوران دارویی حکیم | فنوفیبرات ریلیتد کامپاند C | Fenofibrate Related Compound C (USP)
+فناوران دارویی حکیم | فنی‌توئین | Phenytoin
+فناوران دارویی حکیم | فنی‌توئین ریلیتد کامپاند A | Phenytoin Related Compound A (USP)
+فناوران دارویی حکیم | فنی‌توئین سدیم | Phenytoin Sodium
+فناوران دارویی حکیم | فنیرامین مالئات | Pheniramine Maleate
+فناوران دارویی حکیم | فنیل‌افرین ریلیتد کامپاند C | Phenylephrine Related Compound C (USP)
+فناوران دارویی حکیم | فنیل‌افرین ریلیتد کامپاند D | Phenylephrine Related Compound D (USP)
+فناوران دارویی حکیم | فنیل‌افرین ریلیتد کامپاند E | Phenylephrine Related Compound E (USP)
+فناوران دارویی حکیم | فنیل‌افرین هیدروکلراید | Phenylephrine Hydrochloride
+فناوران دارویی حکیم | فنیل‌افرین هیدروکلراید برای شناسایی پیک | Phenylephrine HCl for Peak Identification (EP)
+فناوران دارویی حکیم | کاپتوپریل | Captopril
+فناوران دارویی حکیم | کاپتوپریل دی سولفید | Captopril Disulfide
+فناوران دارویی حکیم | کاربامازپین | Carbamazepine
+فناوران دارویی حکیم | کاربامازپین ریلیتد کامپاند B | Carbamazepine Related Compound B (USP)
+فناوران دارویی حکیم | کاربامازپین ریلیتد کامپاند A | Carbamazepine Related Compound A (USP)
+فناوران دارویی حکیم | کاربیدوپا | Carbidopa
+فناوران دارویی حکیم | کارودیلول | Carvedilol
+فناوران دارویی حکیم | کارودیلول ریلیتد کامپاند A | Carvedilol Related Compound A (USP)
+فناوران دارویی حکیم | کارودیلول ریلیتد کامپاند B | Carvedilol Related Compound B (USP)
+فناوران دارویی حکیم | کارودیلول ریلیتد کامپاند C | Carvedilol Related Compound C (USP)
+فناوران دارویی حکیم | کارودیلول ریلیتد کامپاند D | Carvedilol Related Compound D (USP)
+فناوران دارویی حکیم | کارودیلول ریلیتد کامپاند E | Carvedilol Related Compound E (USP)
+فناوران دارویی حکیم | کارودیلول مخلوط مناسب سیستم | Carvedilol System Suitability Mixture (USP)
+فناوران دارویی حکیم | کافئین | Caffeine
+فناوران دارویی حکیم | کتورولاک ترومتامین | Ketorolac Tromethamine
+فناوران دارویی حکیم | کتورولاک ریلیتد کامپاند A | Ketorolac Related Compound A (USP)
+فناوران دارویی حکیم | کتورولاک ریلیتد کامپاند B | Ketorolac Related Compound B (USP)
+فناوران دارویی حکیم | کتورولاک ریلیتد کامپاند C | Ketorolac Related Compound C (USP)
+فناوران دارویی حکیم | کتورولاک ریلیتد کامپاند D | Ketorolac Related Compound D (USP)
+فناوران دارویی حکیم | کتورولاک ریلیتد کامپاند G | Ketotifen Related Compound G (USP)
+فناوران دارویی حکیم | کتوکونازول | Ketoconazole
+فناوران دارویی حکیم | کدئین فسفات | Codeine Phosphate
+فناوران دارویی حکیم | کدئین مخلوط مناسب سیستم (USP) | Codeine System Suitability Mixture (USP)
+فناوران دارویی حکیم | کربنات کلسیم | Calcium Carbonate
+فناوران دارویی حکیم | کرومولین ریلیتد کامپاند A | Cromolyn Related Compound A (USP)
+فناوران دارویی حکیم | کرومولین ریلیتد کامپاند B | Cromolyn Related Compound B (USP)
+فناوران دارویی حکیم | کرومولین سدیم | Cromolyn Sodium
+فناوران دارویی حکیم | کلاریترومایسین | Clarithromycin
+فناوران دارویی حکیم | کلرپرومازین هیدروکلراید | Chlorpromazine Hydrochloride
+فناوران دارویی حکیم | کلردیازپوکساید | Chlordiazepoxide
+فناوران دارویی حکیم | کلردیازپوکساید ریلیتد کامپاند A | Chlordiazepoxide Related Compound A (USP)
+فناوران دارویی حکیم | کلردیازپوکساید ریلیتد کامپاند B | Chlorpheniramine Related Compound B (USP)
+فناوران دارویی حکیم | کلردیازپوکساید ریلیتد کامپاند C | Chlorpheniramine Related Compound C (USP)
+فناوران دارویی حکیم | کلردیازپوکساید هیدروکلراید | Chlordiazepoxide Hydrochloride
+فناوران دارویی حکیم | کلرفنیرامین مالئات | Chlorpheniramine Maleate
+فناوران دارویی حکیم | کلروبنزوفنون-4 | Chlorobenzophenone-4
+فناوران دارویی حکیم | کلوبتازول پروپیونات | Clobetasol Propionate
+فناوران دارویی حکیم | کلوبتازول پروپیونات ریلیتد کامپاند A | Clobetasol Propionate Related Compound A (USP)
+فناوران دارویی حکیم | کلوپیدوگرل | Clopidogrel
+فناوران دارویی حکیم | کلوپیدوگرل ریلیتد کامپاند A | Clopidogrel Related Compound A (USP)
+فناوران دارویی حکیم | کلوپیدوگرل ریلیتد کامپاند B | Clopidogrel Related Compound B (USP)
+فناوران دارویی حکیم | کلوپیدوگرل ریلیتد کامپاند C | Clopidogrel Related Compound C (USP)
+فناوران دارویی حکیم | کلوتریمازول | Clotrimazole
+فناوران دارویی حکیم | کلوتریمازول ریلیتد کامپاند A | Clotrimazole Related Compound A (USP)
+فناوران دارویی حکیم | کلوزاپین | Clozapine
+فناوران دارویی حکیم | کلونازپام | Clonazepam
+فناوران دارویی حکیم | کلونازپام ریلیتد کامپاند A | Clonazepam Related Compound A (USP)
+فناوران دارویی حکیم | کلونازپام ریلیتد کامپاند B | Clonazepam Related Compound B (USP)
+فناوران دارویی حکیم | کلونازپام ریلیتد کامپاند C | Clonazepam Related Compound C (USP)
+فناوران دارویی حکیم | کلیندامایسین فسفات | Clindamycin Phosphate
+فناوران دارویی حکیم | کلیندامایسین هیدروکلراید | Clindamycin Hydrochloride
+فناوران دارویی حکیم | کوتیاپین دسثوکسی | Quetiapine Desethoxy
+فناوران دارویی حکیم | کوتیاپین ریلیتد کامپاند B | Quetiapine Related Compound B (USP)
+فناوران دارویی حکیم | کوتیاپین ریلیتد کامپاند G | Quetiapine Related Compound G (USP)
+فناوران دارویی حکیم | کوتیاپین ریلیتد کامپاند H | Quetiapine Related Compound H (USP)
+فناوران دارویی حکیم | کوئتیاپین فومارات | Quetiapine fumarate
+فناوران دارویی حکیم | کوتیاپین فومارات برای سازگاری باسیستم | Quetiapine for System Suitability (USP)
+فناوران دارویی حکیم | گاباپنتین | Gabapentin
+فناوران دارویی حکیم | گاباپنتین ریلیتد کامپاند A | Gabapentin Related Compound A (USP)
+فناوران دارویی حکیم | گاباپنتین ریلیتد کامپاند B | Gabapentin Related Compound B (USP)
+فناوران دارویی حکیم | گاباپنتین ریلیتد کامپاند D | Gabapentin Related Compound D (USP)
+فناوران دارویی حکیم | گاباپنتین ریلیتد کامپاند E | Gabapentin Related Compound E (USP)
+فناوران دارویی حکیم | گرانیسترون ریلیتد کامپاند A | Granisetron Related Compound A (USP)
+فناوران دارویی حکیم | گرانیسترون ریلیتد کامپاند B | Granisetron Related Compound B (USP)
+فناوران دارویی حکیم | گرانیسترون ریلیتد کامپاند C | Granisetron Related Compound C (USP)
+فناوران دارویی حکیم | گرانیسترون ریلیتد کامپاند D | Granisetron Related Compound D (USP)
+فناوران دارویی حکیم | گلایبورید | Glyburide
+فناوران دارویی حکیم | گلوکزامین هیدروکلراید | Glucosamine Hydrochloride
+فناوران دارویی حکیم | گلیکلازید | Gliclazide
+فناوران دارویی حکیم | گوانین | Guanine
+فناوران دارویی حکیم | گوایفنسین | Guaifenesin
+فناوران دارویی حکیم | لانزوپرازول | Lansoprazole
+فناوران دارویی حکیم | لانزوپرازول ریلیتد کامپاند A | Lansoprazole Related Compound A (USP)
+فناوران دارویی حکیم | لانزوپرازول ریلیتد کامپاند B | Lansoprazole Related Compound B (USP)
+فناوران دارویی حکیم | لوپرامید ریلیتد کامپاند F | Loperamide Related Compound F (USP)
+فناوران دارویی حکیم | لوپرامید هیدروکلراید | Loperamide Hydrochloride
+فناوران دارویی حکیم | لوتیراستام | Levetiracetam
+فناوران دارویی حکیم | لوتیراستام ریلیتد کامپاند A | Levetiracetam Related Compound A (USP)
+فناوران دارویی حکیم | لوتیراستام ریلیتد کامپاند B | Levetiracetam Related Compound B (USP)
+فناوران دارویی حکیم | لوراتادین | Loratadine
+فناوران دارویی حکیم | لوراتادین ریلیتد کامپاند A | Loratadine Related Compound A (USP)
+فناوران دارویی حکیم | لوراتادین ریلیتد کامپاند B | Loratadine Related Compound B (USP)
+فناوران دارویی حکیم | لوزارتان پتاسیم | Losartanpotassium
+فناوران دارویی حکیم | لوودوپا | Levodopa
+فناوران دارویی حکیم | لووفلوکساسین | Levofloxacin
+فناوران دارویی حکیم | لووفلوکساسین ریلیتد کامپاند A | Levofloxacin Related Compound A (USP)
+فناوران دارویی حکیم | لووفلوکساسین ریلیتد کامپاند B | Levofloxacin Related Compound B (USP)
+فناوران دارویی حکیم | لووکارنیتین | Levocarnitine
+فناوران دارویی حکیم | لووکارنیتین ریلیتد کامپاند A | Levocarnitine Related Compound A (USP)
+فناوران دارویی حکیم | لیدوکائین | Lidocaine
+فناوران دارویی حکیم | لیدوکائین ریلیتد کامپاند H | Lidocaine Related Compound H (USP)
+فناوران دارویی حکیم | لیدوکائین هیدروکلراید | Lidocaine Hydrochloride
+فناوران دارویی حکیم | لیناگلیپتین | Linagliptin
+فناوران دارویی حکیم | لینزولید ریلیتد کامپاند B | Linezolid Related Compound B (USP)
+فناوران دارویی حکیم | لینزولید ریلیتد کامپاند D | Linezolid Related Compound D (USP)
+فناوران دارویی حکیم | لینکومایسین هیدروکلراید | Lincomycin Hydrochloride
+فناوران دارویی حکیم | ماندلیک اسید | Mandelic Acid
+فناوران دارویی حکیم | ماینوکسیدیل ریلیتد کامپاند E | Minoxidil Related Compound E (USP)
+فناوران دارویی حکیم | مبورین هیدروکلراید | Mebeverine Hydrochloride
+فناوران دارویی حکیم | مترونیدازول | Metronidazole
+فناوران دارویی حکیم | متفورمین ایمپیوریتی F | Metformin Impurity F (EP)
+فناوران دارویی حکیم | متفورمین ایمپیوریتی F (NET) | Metformin Impurity F (EP), Net
+فناوران دارویی حکیم | متفورمین ریلیتد کامپاند A | Metformin Related Compound A (USP)
+فناوران دارویی حکیم | متفورمین ریلیتد کامپاند B | Metformin Related Compound B (USP)
+فناوران دارویی حکیم | متفورمین ریلیتد کامپاند C | Metformin Related Compound C (USP)
+فناوران دارویی حکیم | متفورمین | Metformin
+فناوران دارویی حکیم | متوپرولول تارتارات | METOPROLOL TARTRATE
+فناوران دارویی حکیم | متوپرولول ریلیتد کامپاند A | Metoprolol Related Compound A (USP)
+فناوران دارویی حکیم | متوپرولول ریلیتد کامپاند B | Metoprolol Related Compound B (USP)
+فناوران دارویی حکیم | متوپرولول ریلیتد کامپاند C | Metoprolol Related Compound C (USP)
+فناوران دارویی حکیم | متوپرولول ریلیتد کامپاند D | Metoprolol Related Compound D (USP)
+فناوران دارویی حکیم | متوپرولول سوکسینات | Metoprolol Succinate
+فناوران دارویی حکیم | متوپرولول فومارات | Metoprolol Fumarate
+فناوران دارویی حکیم | متوکاربامول | Methocarbamol
+فناوران دارویی حکیم | متیل آکریدین-9 | Methylacridine-9
+فناوران دارویی حکیم | متیل پارابن | Methylparaben
+فناوران دارویی حکیم | متیل دوپا | Methyldopa
+فناوران دارویی حکیم | متیمازول ریلیتد کامپاند C | Methimazole Related Compound C (USP)
+فناوران دارویی حکیم | مخلوط راسمیک لوتیراستام (USP) | Levetiracetam Racemic Mixture (USP)
+فناوران دارویی حکیم | مخلوط مناسب سیستم لوپرامید (USP) | Loperamide System Suitability Mixture (USP)
+فناوران دارویی حکیم | مسالامین | Mesalamine
+فناوران دارویی حکیم | مفنامیک اسید | Mefenamic Acid
+فناوران دارویی حکیم | ملاتونین | Melatonin
+فناوران دارویی حکیم | ملاتونین ریلیتد کامپاند A | Melatonin Related Compound A (USP)
+فناوران دارویی حکیم | ملامینه | Melamine
+فناوران دارویی حکیم | ملوکسیکام | Meloxicam
+فناوران دارویی حکیم | ملوکسیکام ایمپیوریتی C | Meloxicam Impurity C (EP)
+فناوران دارویی حکیم | ملوکسیکام ایمپیوریتی استاندارد | Meloxicam Impurity Standard (BP)
+فناوران دارویی حکیم | ملوکسیکام ریلیتد کامپاند A | Meloxicam Related Compound A (USP)
+فناوران دارویی حکیم | ملوکسیکام ریلیتد کامپاند B | Meloxicam Related Compound B (USP)
+فناوران دارویی حکیم | ملوکسیکام ریلیتد کامپاند C | Meloxicam Related Compound C (USP)
+فناوران دارویی حکیم | ممانتین ریلیتد کامپاند A | Memantine Related Compound A (USP)
+فناوران دارویی حکیم | ممانتین ریلیتد کامپاند B | Memantine Related Compound B (USP)
+فناوران دارویی حکیم | ممانتین ریلیتد کامپاند C | Memantine Related Compound C (USP)
+فناوران دارویی حکیم | ممانتین ریلیتد کامپاند D | Memantine Related Compound D (USP)
+فناوران دارویی حکیم | ممانتین ریلیتد کامپاند E | Memantine Related Compound E (USP)
+فناوران دارویی حکیم | مودافینیل | Modafinil
+فناوران دارویی حکیم | مودافینیل ریلیتد کامپاند A | Modafinil Related Compound A (USP)
+فناوران دارویی حکیم | مودافینیل ریلیتد کامپاند B | Modafinil Related Compound B (USP)
+فناوران دارویی حکیم | مودافینیل ریلیتد کامپاند C | Modafinil Related Compound C (USP)
+فناوران دارویی حکیم | مودافینیل ریلیتد کامپاند E | Modafinil Related Compound E (USP)
+فناوران دارویی حکیم | مورفین برای سازگاری باسیستم | Morphine for System Suitability (EP)
+فناوران دارویی حکیم | مورفین سولفات | Morphine Sulfate
+فناوران دارویی حکیم | موکسی فلوکساسین هیدروکلراید | Moxifloxacin Hydrochloride
+فناوران دارویی حکیم | مونته‌لوکاست دی‌سیکلوهگزیل‌آمین | Montelukast Dicyclohexylamine
+فناوران دارویی حکیم | میدازولام | Midazolam
+فناوران دارویی حکیم | ناپروکسن | Naproxen
+فناوران دارویی حکیم | ناپروکسن ایمپیوریتی استاندارد | Naproxen Impurity Standard (BP)
+فناوران دارویی حکیم | ناپروکسن ریلیتد کامپاند A | Naproxen Related Compound A (USP)
+فناوران دارویی حکیم | ناپروکسن ریلیتد کامپاند L | Naproxen Related Compound L (USP)
+فناوران دارویی حکیم | نوراپی نفرین بی تارترات | Norepinephrine Bitartrate
+فناوران دارویی حکیم | نورفنیل افرین هیدروکلراید | Norphenylephrine Hydrochloride
+فناوران دارویی حکیم | نیاسینامید | Niacinamide
+فناوران دارویی حکیم | نیتروفورازون | Nitrofurazone
+فناوران دارویی حکیم | نیتروفورانتوئین | Nitrofurantoin
+فناوران دارویی حکیم | نیلوتینیب ریلیتد کامپاند A | Nilotinib Related Compound A (USP)
+فناوران دارویی حکیم | نیلوتینیب ریلیتد کامپاند B | Nilotinib Related Compound B (USP)
+فناوران دارویی حکیم | نیلوتینیب ریلیتد کامپاند C | Nilotinib Related Compound C (USP)
+فناوران دارویی حکیم | هیدروکسی تولوئن بوتیله | Butylated Hydroxytoluene
+فناوران دارویی حکیم | هیدروکسیزین ریلیتد کامپاند A | Hydroxyzine Related Compound A (USP)
+فناوران دارویی حکیم | هیدروکورتیزون | Hydrocortisone
+فناوران دارویی حکیم | والاسیکلوویر ریلیتد کامپاند G | Valacyclovir Related Compound G (USP)
+فناوران دارویی حکیم | والزارتان | Valsartan
+فناوران دارویی حکیم | والزارتان ریلیتد کامپاند A | Valsartan Related Compound A (USP)
+فناوران دارویی حکیم | والزارتان ریلیتد کامپاند B | Valsartan Related Compound B (USP)
+فناوران دارویی حکیم | والزارتان ریلیتد کامپاند C | Valsartan Related Compound C (USP)
+فناوران دارویی حکیم | والزارتان ریلیتد کامپاند E | Valsartan Related Compound E (USP)
+فناوران دارویی حکیم | وراپامیل ریلیتد کامپاند A | Venlafaxine Related Compound A (USP)
+فناوران دارویی حکیم | وراپامیل ریلیتد کامپاند F | Verapamil Related Compound F (USP)
+فناوران دارویی حکیم | ونلافکسین هیدروکلراید | Venlafaxine Hydrochloride
+کاویان شیمی | فروس سولفات 7 آبه | Crystalline Ferrous sulphate
+کاویان شیمی | فروس سولفات خشک | Dried Ferrous sulphate
+کشت و صنعت حکیم فارابی خوزستان | شکر دارویی( ساکارز) | pharma sugar(sucrose)
+کلرپارس | اسید کلریدریک | Hydrochloric acid
+کلرپارس | آب اکسیژنه | Hydrogen Peroxide
+کلرپارس | آب ژاول | Sodium Hypochlorite
+کلرپارس | پارافین کلره | Chlorinated paraffine
+کلرپارس | پرکلرین | Calcium Hypochlorite
+کلرپارس | سود پرک | Flake
+کلرپارس | سود مایع | Sodium Hydroxide
+کلرپارس | کلر مایع | Liquide Chlorine
+کلرپارس | کلروفریک | Ferric Chloride
+کلرپارس | گاز هیدروژن | Hydrogen Gas
+کیمیا اثر سلامت | آتورواستاتین کلسیم | Atorvastatin Calcium
+کیمیا اثر سلامت | آزیترومایسین | Azithromycin
+کیمیا اثر سلامت | لیدوکائین | Lidocaine
+کیمیاگران امروز | استامینوفن | ACETAMINOPHEN
+کیمیاگران امروز | آسپرین | ASPIRIN
+کیمیاگران امروز | آسپرین گرانول | Aspirin granules
+کیمیاگران امروز | پارا آمینو فنل | Para-aminophenol
+کیمیاگران امروز | پروپیلن گلیکول | Propylene glycol
+کیمیاگران امروز | پلی اتیلن گلایکول | Polyethylene glycol
+کیمیاگران امروز | پلی سوربات | Polysorbate
+کیمیاگران امروز | سایر پلی اتیلن گلایکول ها | Other polyethylene glycols
+کیمیاگران امروز | مترونيدازول بنزوات | Metronidazole benzoate
+کیمیاگران امروز | مترونیدازول | Metronidazole
+کیمیاگران امروز | متفورمین | Metformin
+کیمیاگران امروز | مزالازین | Mesalazine
+گروه صنایع شفا فارمد | ادار آوون | Edaravone
+گروه صنایع شفا فارمد | اریترومایسین | Erythromycin
+گروه صنایع شفا فارمد | اریترومایسین | Erythromycin
+گروه صنایع شفا فارمد | آزیترومایسین | Azithromycin
+گروه صنایع شفا فارمد | کلاریترومایسین | Clarithromycin
+گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین | اسید سولفوریک | Sulfuric acid
+گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین | اسید فسفريک | Phosphoric acid
+گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین | اسید نیتریک | Nitric acid
+گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین | انیدرید استیک
+گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین | آمینوگوانیدین بی کربنات
+گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین | دی اتیل اتر
+گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین | نیترات آمونیوم دارویی
+گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین | نیتروگلیسیرین دارویی
+لیو آناهیتا فارمد | تولید ندارد | تولید ندارد
+مهبان شیمی | اپلرنون | Eplerenone
+مهبان شیمی | اوسلتامیویر | Oseltamivir
+مهبان شیمی | آتورواستاتین کلسیم | Atorvastatin Calcium
+مهبان شیمی | آزیترومایسین | Azithromycin
+مهبان شیمی | آملودیپین | Amlodipine
+مهبان شیمی | بنفوتیامین | Benfotiamine
+مهبان شیمی | پنتاپرازول سدیم | Pentaprazolesodium
+مهبان شیمی | پیرفنیدون | Pirfenidone
+مهبان شیمی | ترامادول هیدروکلراید | Tramadol hydrochloride
+مهبان شیمی | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+مهبان شیمی | دیلتیازم هیدروکلراید | Diltiazem hydrochloride
+مهبان شیمی | سرترالین | Sertraline
+مهبان شیمی | سلکوکسیب | Celecoxib
+مهبان شیمی | سیتاگلیپتین فسفات | Sitagliptin phosphate
+مهبان شیمی | سیتالوپرام هایدروبروماید | Citalopramhydrobromide
+مهبان شیمی | فاموتیدین | Famotidine
+مهبان شیمی | کلوپیدوگرل | Clopidogrel
+مهبان شیمی | گاباپنتین | Gabapentin
+مهبان شیمی | گلی بن کلامید | Glibenclamide
+مهبان شیمی | مایکوفنولات | Mycophenolate
+مهبان شیمی | متادون هیدروکلراید | Methadone hydrochloride
+مهبان شیمی | متفورمین | Metformin
+مهبان شیمی | نیکوراندیل | Nicorandil
+مهرسام دارو | در حال صدور پروانه
+مهرسام دارو | در حال صدور پروانه
+نگین دارو نوآور | آپیکسابان | Apixaban
+نگین دارو نوآور | آپیکسابان | Apixaban
+نگین دارو نوآور | دالفامپریدین (فامپریدین) | Dalfampridine (fampridine)
+نگین دارو نوآور | دالفامپریدین (فامپریدین) | Dalfampridine (fampridine)
+نگین دارو نوآور | زولدرونیک اسید | Zoledronic acid
+نگین دارو نوآور | زولدرونیک اسید | Zoledronic acid
+نگین دارو نوآور | فریک کربوکسی مالتوز | Ferric carboxymaltose
+نگین دارو نوآور | فریک کربوکسی مالتوز | Ferric carboxymaltose
+نگین دارو نوآور | گلاتیرامر استات | Glatiramer acetate
+نگین دارو نوآور | گلاتیرامر استات | Glatiramer acetate
+نوا فارمد کیمیا | سدیم بیکربنات | sodium bicarbonate
+نیکان اکسیر باختر | اولانزاپین | Olanzapine
+نیکان اکسیر باختر | ایمیکیمود | Imiquimod
+نیکان اکسیر باختر | پرامیپکسول دی هیدروکلراید مونوهیدرات | Pramipexole dihydrochloride monohydrate
+نیکان اکسیر باختر | دولوکستین هیدروکلراید | Duloxetine hydrochloride
+نیکان اکسیر باختر | دونپزیل هیدروکلراید | Donepezil hydrochloride
+هستی آریا شیمی | اندانسترون | Ondansetron
+هستی آریا شیمی | آتورواستاتین کلسیم | Atorvastatin Calcium
+هستی آریا شیمی | آزیترومایسین | Azithromycin
+هستی آریا شیمی | آملودیپین | Amlodipine
+هستی آریا شیمی | پرگابالین | Pregabalin
+هستی آریا شیمی | ترامادول HCl | Tramadol HCl
+هستی آریا شیمی | تلمیزارتان | Telmisartan
+هستی آریا شیمی | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+هستی آریا شیمی | رزواستاتین کلسیم | Rosuvastatincalcium
+هستی آریا شیمی | ساکوبیتریل/ والزارتان | Sacubitril/Valsartan
+هستی آریا شیمی | سرترالین | Sertraline
+هستی آریا شیمی | سلکوکسیب | Celecoxib
+هستی آریا شیمی | سودوافدرین | Pseudoephedrine
+هستی آریا شیمی | سیپروفلوکساسین | Ciprofloxacin
+هستی آریا شیمی | سیتاگلیپتین فسفات مونوهیدرات | Sitagliptin phosphate monohydrate
+هستی آریا شیمی | فاموتیدین | Famotidine
+هستی آریا شیمی | فلوواکسامین مالئات | Fluvoxaminemaleate
+هستی آریا شیمی | فنیل افرین هیدروکلراید | Phenylephrine hydrochloride
+هستی آریا شیمی | کلوپیدوگرل | Clopidogrel
+هستی آریا شیمی | گلیکلازید | Gliclazide
+هستی آریا شیمی | لوراتادین | Loratadine
+هستی آریا شیمی | لوزارتان پتاسیم | Losartanpotassium
+هستی آریا شیمی | لووتیراستام | Levetiracetam
+هستی آریا شیمی | لووفلوکساسین | Levofloxacin
+هستی آریا شیمی | لیدوکائین هیدروکلراید | Lidocaine HCl
+هستی آریا شیمی | لیناگلیپتین | Linagliptin
+هستی آریا شیمی | متادون هیدروکلراید | Methadone hydrochloride
+هستی آریا شیمی | متوکاربامول | Methocarbamol
+هستی آریا شیمی | مزالازین | Mesalazine
+هستی آریا شیمی | مونته‌لوکاست | Montelukast
+هستی آریا شیمی | والپروئیک اسید | Valproic Acid
+هستی آریا شیمی | والزارتان | Valsartan
+هستی بهین فارمد(توسط فاران شیمی خریداری گردیده) | امپاگلیفلوزین | Empagliflozin
+هستی بهین فارمد(توسط فاران شیمی خریداری گردیده) | تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE
+هستی بهین فارمد(توسط فاران شیمی خریداری گردیده) | سیتاگلیپتین فسفات مونوهیدرات | Sitagliptin Phosphate Monohydrate
+هستی بهین فارمد(توسط فاران شیمی خریداری گردیده) | لوزارتان پتاسیم | Losartanpotassium
+هستی بهین فارمد(توسط فاران شیمی خریداری گردیده) | لیناگلیپتین | Linagliptin
+هیوا فارمد | امپاگلیفلوزین | Empagliflozin
+هیوا فارمد | آبیراترون استات | Abirateroneacetate
+هیوا فارمد | آپیکسابان | Apixaban
+هیوا فارمد | بورتزومیب | Bortezomib
+هیوا فارمد | پالبوسیکلیب | Palbociclib
+هیوا فارمد | توفاسیتینیب-سیترات | TOFACITINIB-CITRATE
+هیوا فارمد | دالفامپریدین (فامپریدین) | Dalfampridine (fampridine)
+هیوا فارمد | دفراسیروکس | Deferasirox
+هیوا فارمد | دی متیل فومارات | Dimethyl Fumarate
+هیوا فارمد | زولدرونیک اسید | Zoledronic acid
+هیوا فارمد | سورافنیب توسیلات | Sorafenib Tosylate
+هیوا فارمد | سونیتینیب مالات | Sunitinib malate
+هیوا فارمد | لنالیدومید | Lenalidomide
+هیوا فارمد | لیناگلیپتین | Linagliptin
+هیوا فارمد | نیلوتینیب هیدروکلراید | Nilotinibhydrochloride
+67شرکت تولید کننده مواد اولیه دارویی | 2005قلم مواد اولیه تولیدی مشترک و غیر مشترک
+430قلم مواد اولیه تولیدی مشترک
+### sheet BLUE LIST
+نام محصول تولیدی به فارسی | نام محصول تولیدی به انگلیسی | نام شرکت
+آپیکسابان اسید ایمپیوریتی | Apixaban Acid Impurity | فناوران دارویی حکیم
+آداپالن ریلیتد کالمپاند A | Adapalene Related Compound A (USP) | فناوران دارویی حکیم
+آداپالن ریلیتد کالمپاند B | Adapalene Related Compound B (USP) | فناوران دارویی حکیم
+آداپالن ریلیتد کالمپاند C | Adapalene Related Compound C (USP) | فناوران دارویی حکیم
+آداپالن ریلیتد کالمپاند E | Adapalene Related Compound E (USP) | فناوران دارویی حکیم
+آرپیپرازول | Aripiprazole | توفيق دارو
+آسپرین ایمپیوریتی استاندارد | Aspirine Impurity Standard (BP) | فناوران دارویی حکیم
+آسیکلوویر ریلیتد کالمپاند A | Aciclovir Related Compound A (USP) | فناوران دارویی حکیم
+آسیکلوویر ریلیتد کالمپاند F | Aciclovir Related Compound F (USP) | فناوران دارویی حکیم
+آلپرازولام | Alprazolam | توفيق دارو
+البرزفارمد
+فناوران دارویی حکیم
+آلپرازولام ریلیتد کالمپاند A | Alprazolam Related Compound A (USP) | فناوران دارویی حکیم
+انزالوتاماید | Enzalutamide | توفيق دارو
+اوسلتامیویر فسفات | Oseltamivir phosphate | توفيق دارو
+ایبروتینیب | Ibrutinib | توفيق دارو
+پارافین مایع | Liquid Paraffin | ایتوک فارمد
+سدیم دی هیدروژن فسفات | sodium di- hydrogen phosphate | دکترمجللی
+سماگلوتاید | Semaglutide | توفيق دارو
+سیتاگلیپتین فسفات مونوهیدرات | Sitagliptin phosphate monohydrate | توفيق دارو
+طعم دهنده طبیعی آلبالو | Natural cherry flavoring | پردیس عصاره
+طعم دهنده طبیعی زردآلو | Natural apricot flavoring | پردیس عصاره
+کلسیم کلرید دی هیدرات | Calcium chloride dihydrate | ایتوک فارمد
+گلایبورید ریلیتد کامپاند A | Glyburide Related Compound A | فناوران دارویی حکیم
+لیناگلیپتین | Linagliptin | توفيق دارو
+ممانتین هیدروکلراید | Memantine Hydrochloride | فناوران دارویی حکیم
+میرابگرون | Mirabegron | توفيق دارو
+10.00 | 10.00 | ایتوک فارمد
+1-بوتانول | Butanol-1 | ایتوک فارمد
+1و2 پروپاندیول | Propanediol (Propylene Glycol)1,2 | ایتوک فارمد
+2-پروپانول | Propanol-2 | ایتوک فارمد
+3و1--دی اکسالان | Dioxolane-1,3 | صنعت سبز طبرستان
+4.00 | 4.00 | ایتوک فارمد
+5 - سولفوسالیسیلیک اسید دی هیدرات | Sulfosalicylic acid dihydrate-5 | ایتوک فارمد
+7.00 | 7.00 | ایتوک فارمد
+9.00 | 9.00 | ایتوک فارمد
+N/9 سدیم هیدروکسید | Sodium hydroxide N/9 | ایتوک فارمد
+o-تولوئن سولفونامید | o-Toluenesulfonamide | فناوران دارویی حکیم
+povidone k17-k90-cross povidone | povidone k17-k90-cross povidone | ره آورد تامین
+povidone k25-k30 | povidone k25-k31 | ره آورد تامین
+PVPI | PVPI | ره آورد تامین
+RT.COAT(L30D-L100) | RT.COAT(L30D-L100) | ره آورد تامین
+RT.FILM-coating | RT.FILM-coating | ره آورد تامین
+RUVIMER-پلیمرهای اکریلاتی | Acrylate polymers | ره آورد تامین
+SOKALIX HCP-پلی استات وینیل | Polyvinyl acetate | ره آورد تامین
+آب اکسیژنه | Hydrogen Peroxide | کلرپارس
+آب ژاول | Sodium Hypochlorite | کلرپارس
+آبماسیکلیب | Abemaciclib | فناوران دارویی پارسیان
+آبیراترون استات | Abirateroneacetate | ارسطو
+فناوران دارویی پارسیان
+هیوا فارمد
+اپتاکوگ آلفا (فاکتور هفت) | Eptacog alfa ( Factor VII) | آریوژن فارمد
+اپرپیتانت | Aprepitant | ارسطو
+البرزبالک
+آپریمیلاست | apremilast | فاران شیمی
+اپلرنون | Eplerenone | البرزفارمد
+مهبان شیمی
+اپی نفرین بی تارترات | Epinephrine Bitartrate | فناوران دارویی حکیم
+آپیکسابان | Apixaban | اکتوبایوکم
+البرزفارمد
+فاران شیمی
+فناوران دارویی پارسیان
+فناوران دارویی حکیم
+نگین دارو نوآور
+هیوا فارمد
+اپیوم | OPIUM (FOR EXPORT) | تماد
+اتانرسپت | Etanercept | آریوژن فارمد
+اتانول آمین | Ethanol amine | ایتوک فارمد
+اتانول96% | Ethanol96% | ایتوک فارمد
+دکترمجللی
+آتراکوریوم بزیلات | Atracurium besylate | توفيق دارو
+آتنولول | Atenolol | شيمي دارويي داروپخش
+آتورواستاتین ریلیتد کامپاند A | Atorvastatin Related Compound A (USP) | فناوران دارویی حکیم
+آتورواستاتین ریلیتد کامپاند B | Atorvastatin Related Compound B (USP) | فناوران دارویی حکیم
+آتورواستاتین ریلیتد کامپاند C | Atorvastatin Related Compound C (USP) | فناوران دارویی حکیم
+آتورواستاتین ریلیتد کامپاند E | Atorvastatin Related Compound E (USP) | فناوران دارویی حکیم
+آتورواستاتین ریلیتد کامپاند H | Atorvastatin Related Compound H (USP) | فناوران دارویی حکیم
+آتورواستاتین ریلیتد کامپاند I | Atorvastatin Related Compound I (USP) | فناوران دارویی حکیم
+آتورواستاتین کلسیم | Atorvastatin Calcium | اکتوبایوکم
+البرزبالک
+تماد
+تهران شیمی
+ثمین دارو ایرانیان
+فرآیند شیمی حکیم
+فناوران دارویی حکیم
+کیمیا اثر سلامت
+مهبان شیمی
+هستی آریا شیمی
+اتومیدیت کنید | Etomidate | فناوران دارویی حکیم
+اتیل استات | Ethyl acetate | ایتوک فارمد
+جابر ازنق شیمی
+اتیل پارابن | Ethylparaben | فناوران دارویی حکیم
+اتیلن دی تترا استیک اسید 0.1 | EDTA 0.1N | ایتوک فارمد
+اتیلن گلایکول | Ethylene glycol | ایتوک فارمد
+اتیلن گلایکول | Ethylene glycol | دکترمجللی
+آداپالن | Adapalene | فناوران دارویی حکیم
+ادار آوون | Edaravone | زیست تخمیر
+گروه صنایع شفا فارمد
+آدالیموماب | Adalimumab | سیناژن
+ادتات دی سدیم | Edetate disodium(EDTA) | ایتوک فارمد
+آدرنالون هیدروکلراید | Adrenalone Hydrochloride | فناوران دارویی حکیم
+آر-سیتالوپرام اگزالات | R-Citalopram Oxalate | فناوران دارویی حکیم
+ارلوتینیب هیدروکلراید | Erlotinibhydrochloride | ارسطو
+فناوران دارویی پارسیان
+آریا اسپان 60 | Ariaspan 60 (sorbitan monostearate) | آریا شیمی رایکا
+آریا اسپان20 | Ariaspan 20 (sorbitan monolaurate) | آریا شیمی رایکا
+آریا اسپان80 | Ariaspan 80 (sorbitan monooleate) | آریا شیمی رایکا
+آریا سوربات 20 | Ariasorbate 20 (polyoxyethylene 20 sorbitan monolaurate) | آریا شیمی رایکا
+آریا سوربات 60 | Ariasorbate 60 (polyoxyethylene 20 sorbitan monostearate) | آریا شیمی رایکا
+آریا سوربات 80 | Ariasorbate 80 (polyoxyethylene 20 sorbitan monooleate) | آریا شیمی رایکا
+آریا گلیسرول | Aria Gelycerol(pharma grade ) | آریا شیمی رایکا
+آریپیپرازول | Aripiprazole | سروش مانا فارمد
+اریتروپیتین | Erythropietin | سیناژن
+اریترومایسین | Erythromycin | تماد
+تهران شیمی
+فناوران دارویی حکیم
+گروه صنایع شفا فارمد
+اریترومایسین ریلیتد کامپاند N | Erythromycin Related Compound N (USP) | فناوران دارویی حکیم
+اریوکروم بلک تی | Eriochrome black T | ایتوک فارمد
+آزاتیوپرین | Azathioprine | ارسطو
+آزاریترومایسین A | Azaerythromycin A (USP) | فناوران دارویی حکیم
+آزیترومایسین | Azithromycin | البرزبالک
+آنتی بیوتیک سازی ایران
+ایماژن
+تهران شیمی
+ثمین دارو ایرانیان
+سروش مانا فارمد
+شيمي دارويي داروپخش
+شیمی فارمد پارس
+فناوران دارویی حکیم
+کیمیا اثر سلامت
+گروه صنایع شفا فارمد
+مهبان شیمی
+هستی آریا شیمی
+آزیترومایسین ریلیتد کامپاند F | Azithromycin Related Compound F (USP) | فناوران دارویی حکیم
+اس امپرازول پلت 8.5% | ESOMEPRAZOLE PELLET 8.5% | تماد
+اس سیتالوپرام اگزالات | Escitalopram oxalate | اکتوبایوکم
+البرزبالک
+فرآیند شیمی حکیم
+آسپارتام | Aspartame | فناوران دارویی حکیم
+آسپارتام ریلیتد کامپاند A | Aspartame Related Compound A (USP) | فناوران دارویی حکیم
+آسپرین | ASPIRIN | تماد
+شیمی فارمد پارس
+فناوران دارویی حکیم
+کیمیاگران امروز
+آسپرین گرانول | Aspirin granules | کیمیاگران امروز
+اسپیرونولاکتون | Spironolactone | بهداشت کار
+استامینوفن | ACETAMINOPHEN | تماد
+شیمی فارمد پارس
+فناوران دارویی حکیم
+کیمیاگران امروز
+استامینوفن تزریقی غیر استریل | ACETAMINOPHEN INJECTION GRADE NON-STRIEL | تماد
+استامینوفن دی سی | ACTEAMINOPHEN DC | تماد
+استامینوفن روش (ب) | ACETAMINOPHEN METHOD (B) | تماد
+استامینوفن ریلیتد کالمپاند A | Acetaminophen Related Compound A (USP) | فناوران دارویی حکیم
+استامینوفن ریلیتد کالمپاند B | Acetaminophen Related Compound B (USP) | فناوران دارویی حکیم
+استامینوفن ریلیتد کالمپاند C | Acetaminophen Related Compound C (USP) | فناوران دارویی حکیم
+استامینوفن ریلیتد کالمپاند D | Acetaminophen Related Compound D (USP) | فناوران دارویی حکیم
+استامینوفن ریلیتد کالمپاند F | Acetaminophen Related Compound F (USP) | فناوران دارویی حکیم
+استامینوفن ریلیتد کالمپاند J | Acetaminophen Related Compound J (USP) | فناوران دارویی حکیم
+استاندارد ایمپیوریتی فلوکونازول (BP) | Fluconazole Impurity Standard (BP) | فناوران دارویی حکیم
+استون | Acetone | ایتوک فارمد
+دکترمجللی
+استونیتریل | Acetonitrile | ایتوک فارمد
+دکترمجللی
+استیک اسید | Acetic Acid (Glacial) | ایتوک فارمد
+استیل سالیسیلیک اسید  برای شناسایی پیک | Acetylsalicylic Acid for Peak Identification (EP) | فناوران دارویی حکیم
+استیل سیستئین | Acetylcysteine | فناوران دارویی حکیم
+اسکوربیک اسید | Ascorbic Acid | فناوران دارویی حکیم
+اسومپرازول منیزیم | Esomeprazole Magnesium | فناوران دارویی حکیم
+اسيد استيک | Acetic Acid | دکترمجللی
+اسيد بوريک  USP-BP | Boric acid usp-bp | صنایع شیمیایی و دارویی تبریز
+اسيد سولفوريک | Sulfuric acid | دکترمجللی
+اسيد کلريدريک | Hydrochloric acid | دکترمجللی
+اسيد نيتريک | Nitric acid | دکترمجللی
+اسیتالوپرام اگزالات | Escitalopram oxalate | فناوران دارویی حکیم
+اسید سولفوریک | Sulfuric acid | گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین
+اسید سیتریک | Citric acid | جوین
+دکترمجللی
+اسید فسفريک | Phosphoric acid | دکترمجللی
+گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین
+اسید فولیک | Folic Acid | فناوران دارویی حکیم
+اسید فوماریک | Fumaric Acid | فناوران دارویی حکیم
+اسید کلریدریک | Hydrochloric acid | جابر ازنق شیمی
+کلرپارس
+اسید نیتریک | Nitric acid | گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین
+آسیکلوویر | Acyclovir | ارسطو
+البرزفارمد
+آنتی بیوتیک سازی ایران
+تماد
+تهران شیمی
+ثمین دارو ایرانیان
+فناوران دارویی حکیم
+افلوکساسین | OFLOXACIN | تماد
+فناوران دارویی حکیم
+افلوکساسین ریلیتد کامپاند A | Ofloxacin Related Compound A (USP) | فناوران دارویی حکیم
+افلیبرسپت | Aflibercept | سیناژن
+افموروکتوکوگ آلفا (فاکتور هشت) | Efmoroctocog Alfa (Favtor VIII) | آریوژن فارمد
+اکترئوتاید استات | Octreotide acetate | توفيق دارو
+اکسی تتراسایکلین | Oxytetracycline | فناوران دارویی حکیم
+اکسی کدون | OXYCODONE | فناوران دارویی حکیم
+اکسی کدون ریلیتد کامپاند | Oxycodone Related Compound B (USP) | فناوران دارویی حکیم
+اکسی کدون هایدروکلراید( گرید تزریقی غیر استریل) | OXYCODONE HYDROCHLORIDE(INJECTION GRADE NON-STERILE) | تماد
+اکسی کدون هیدروکلراید | OXYCODONE HYDROCHLORIDE | تماد
+فناوران دارویی حکیم
+اکسی مورفون هیدروکلراید | OXYMORPHONE HYDROCHLORIDE | تماد
+اکسیمتالون | Oxymetholone | البرزبالک
+اکولیزوماب | Eculizumab | سیناژن
+اکونازول نیترات | Econazole Nitrate | فناوران دارویی حکیم
+ال-(+) تاتاریک اسید | L-(+)-Tartaic acid | ایتوک فارمد
+ال-فنیل‌آلانین | L-Phenylalanine | فناوران دارویی حکیم
+آلفا نفتول | Alpha-Naphthol | فناوران دارویی حکیم
+آلندرونیت سدیم | Alendronatesodium | ارسطو
+آلوپورینول | Allopurinol | بهداشت کار
+آلومينيوم ساب استات | Aluminum Subacetate | بهان سار
+شیمی دارویی تک ماد
+آمانتادین هیدروکلراید | Amantadine Hydrochloride | فناوران دارویی حکیم
+امپاگلیفلوزین | Empagliflozin | اکتوبایوکم
+البرزفارمد
+ثمین دارو ایرانیان
+فاران شیمی
+فرآیند شیمی حکیم
+فناوران دارویی پارسیان
+فناوران دارویی حکیم
+هستی بهین فارمد(توسط فاران شیمی خریداری گردیده)
+هیوا فارمد
+امپرازول | Omeprazole | فناوران دارویی حکیم
+امپرازول پلت 8.5% | OMEPRAZOLE PELLET 8.5% | تماد
+امپرازول ریلیتد کامپاند A | Omeprazole Related Compound A (USP) | فناوران دارویی حکیم
+امپرازول ریلیتد کامپاند B | Omeprazole Related Compound B (USP) | فناوران دارویی حکیم
+امپرازول ریلیتد کامپاند F&G مخلوط | Omeprazole Related Compound F and G Mixture (USP) | فناوران دارویی حکیم
+آملودیپین | Amlodipine | دماوند دارو
+شيمي دارويي داروپخش
+فناوران دارویی حکیم
+مهبان شیمی
+هستی آریا شیمی
+آملودیپین ایمپیوریتی B | Amlodipine Impurity B (EP) | فناوران دارویی حکیم
+آملودیپین برای شناسایی پیک | Amlodipine for Peak Identification | فناوران دارویی حکیم
+آملودیپین ریلیتد کالمپاند A | Amlodipine Related Compound A (USP) | فناوران دارویی حکیم
+آملودیپین ریلیتد کالمپاند C | Amlodipine Related Compound C (USP) | فناوران دارویی حکیم
+آملودیپین ریلیتد کالمپاند D | Amlodipine Related Compound D (USP) | فناوران دارویی حکیم
+آموکسی سیلین | Amoxicillin | آنتی بیوتیک سازی ایران
+تهران شیمی
+داروسازی دانا
+فناوران دارویی حکیم
+آموکسی سیلین ریلیتد کالمپاند A | Amoxicillin Related Compound A (USP) | فناوران دارویی حکیم
+آموکسی سیلین ریلیتد کالمپاند D | Amoxicillin Related Compound D (USP) | فناوران دارویی حکیم
+امونيوم كلرايد2 | Ammonium chloride | بهان سار
+آمونیا سولوشن25% | Ammonia solution25% | ایتوک فارمد
+آمونیوم استات | Ammonium acetate | ایتوک فارمد
+آمونیوم کلرید | Ammonium chloride | ایتوک فارمد
+آمی تریپتیلین ریلیتد کالمپاند A | Amitriptyline Related Compound A (USP) | فناوران دارویی حکیم
+آمی تریپتیلین ریلیتد کالمپاند B | Amitriptyline Related Compound B (USP) | فناوران دارویی حکیم
+آمیتریپتیلین هیدروکلراید | Amitriptylinehydrochloride | ارسطو
+آمینو-2-5-کلروبنزوفنون | Amino-2-5-chlorobenzophenone | فناوران دارویی حکیم
+آمینوفنول-4 | Aminophenol-4 | فناوران دارویی حکیم
+آمینوگوانیدین بی کربنات | (blank) | گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین
+آمیودارون ریلیتد کالمپاند D | Amiodarone Related Compound D (USP) | فناوران دارویی حکیم
+آمیودارون ریلیتد کالمپاند E | Amiodarone Related Compound E (USP) | فناوران دارویی حکیم
+آمیودارون هیدروکلراید | Amiodarone Hydrochloride | فناوران دارویی حکیم
+ان-اکتان | n-Octane | ایتوک فارمد
+ان-ان-دی متیل فرم آمید | N,N-dimethylformamide (DMF) | ایتوک فارمد
+ان-بوتیل استات | n-Butyl Acetate | ایتوک فارمد
+ان-پنتان | n-Pantane | ایتوک فارمد
+ان-هپتان | n-Heptane | ایتوک فارمد
+ان-هگزان | n-Hexane | ایتوک فارمد
+انالاپریل مالئات | Enalapril Maleate | فناوران دارویی حکیم
+اندانسترون | Ondansetron | اکتوبایوکم
+البرزبالک
+تهران شیمی
+شيمي دارويي داروپخش
+فاران شیمی
+فرآیند شیمی حکیم
+فناوران دارویی حکیم
+هستی آریا شیمی
+اندانسترون بامخلوط حل شونده | Ondansetron Resolution Mixture (USP) | فناوران دارویی حکیم
+اندانسترون ریلیتد کامپاند A | Ondansetron Related Compound A (USP) | فناوران دارویی حکیم
+اندانسترون ریلیتد کامپاند C | Ondansetron Related Compound C (USP) | فناوران دارویی حکیم
+اندانسترون ریلیتد کامپاند D | Ondansetron Related Compound D (USP) | فناوران دارویی حکیم
+اندانسترون ریلیتد کامپاند G | Ondansetron Related Compound G (USP) | فناوران دارویی حکیم
+انواع کاتالیست | (blank) | پژوهان شیمی ناصر خسرو
+انیدرید استیک | (blank) | گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین
+آهن گلوكونات | Ferrous gluconate | بهان سار
+آهن2 سولفات هپتاهیدرات | Iron (II) sulfate heptahydrate | ایتوک فارمد
+اورسودیول | Ursodiol | ایماژن
+اورفورگلیپرون | Orforglipron | البرزفارمد
+فناوران دارویی پارسیان
+اورلیستات | Orlistat | فناوران دارویی حکیم
+اورلیستات ریلیتد کامپاند B | Orlistat Related Compound B (USP) | فناوران دارویی حکیم
+اورلیستات ریلیتد کامپاند C | Orlistat Related Compound C (USP) | فناوران دارویی حکیم
+اورلیستات ریلیتد کامپاند D | Orlistat Related Compound D (USP) | فناوران دارویی حکیم
+اورنج جی | Orange G | ایتوک فارمد
+اوره | Urea | ایتوک فارمد
+شیمی دارویی تک ماد
+صنایع شیمیایی و دارویی تبریز
+اوزانیمود هیدروکلراید | Ozanimod Hydrochloride | فناوران دارویی پارسیان
+اوسلتامیویر | Oseltamivir | مهبان شیمی
+اوسیمرتینیب مسیلات | Osimertinib Mesylate | فناوران دارویی پارسیان
+اوکرلیزوماب | Ocrelizumab | سیناژن
+اولاپاریب | Olaparib | فناوران دارویی پارسیان
+اولانزاپین | Olanzapine | فناوران دارویی حکیم
+نیکان اکسیر باختر
+اولانزاپین ریلیتد کامپاند A | Olanzapine Related Compound A (USP) | فناوران دارویی حکیم
+اولانزاپین ریلیتد کامپاند B | Olanzapine Related Compound B (USP) | فناوران دارویی حکیم
+اولانزاپین ریلیتد کامپاند C | Olanzapine Related Compound C (USP) | فناوران دارویی حکیم
+اومالیزوماب | Omalizumab | سیناژن
+اوولوکوماب | Evolucumab | سیناژن
+ایبروتینیب | Ibrutinib | زیست تخمیر
+فناوران دارویی پارسیان
+ایبوبروفن ریلیتد کامپاند C | Ibuprofen Related Compound C (USP) | فناوران دارویی حکیم
+ایبوبروفن ریلیتد کامپاند J | Ibuprofen Related Compound J (USP) | فناوران دارویی حکیم
+ایبوپروفن | Ibuprofen | ایماژن
+دماوند دارو
+فناوران دارویی حکیم
+ایبوپروفن ایمپیوریتی B (EP)، خالص | Ibuprofen Impurity B (EP), Net | فناوران دارویی حکیم
+ایبوپروفن ایمپیوریتی B (EP)، محلول 0.07% w/v | Ibuprofen Impurity B (EP), Solution 0.07% w/v | فناوران دارویی حکیم
+ایبوپروفن ایمپیوریتی F (EP) | Ibuprofen Impurity F (EP) | فناوران دارویی حکیم
+ایبوپروفن ایمپیوریتی N (EP) | Ibuprofen Impurity N (EP) | فناوران دارویی حکیم
+ایبوپروفن برای شناسایی پیک  (EP) | Ibuprofen for Peak Identification (EP) | فناوران دارویی حکیم
+ایتراکونازول | Itraconazole | فناوران دارویی حکیم
+ایتراکونازول پلت 22% | ITRACONAZOLE PELLET 22% | تماد
+ایزو پروپیل الکل | Iso propyl alchohol | دکترمجللی
+ایزوآمیل استات | Iso Amyl Acetate | صنعت سبز طبرستان
+ایماتینیب مسیلات | Imatinibmesylate | ارسطو
+فناوران دارویی پارسیان
+ایمپیوریتی کلرفنامین D (EP) | Chlorphenamine Impurity D (EP) | فناوران دارویی حکیم
+ایمپیوریتی گلیکلازید B (EP) | Gliclazide Impurity B (EP) | فناوران دارویی حکیم
+ایمپیوریتی گلیکلازید F (EP) | Gliclazide Impurity F (EP) | فناوران دارویی حکیم
+ایمیدازول | Imidazole | فناوران دارویی حکیم
+ایمیکیمود | Imiquimod | نیکان اکسیر باختر
+اینترفرون بتا | Interferon Beta | سیناژن
+اینترفرون بتا 1آ | Interferon beta-1a | اکتوورکو
+ایندومتاسین ریلیتد کامپاند A | Indomethacin Related Compound A (USP) | فناوران دارویی حکیم
+ایندومتاسین ریلیتد کامپاند B | Indomethacin Related Compound B (USP) | فناوران دارویی حکیم
+ایواکافتور | Ivacaftor | البرزفارمد
+فناوران دارویی حکیم
+ائوزین وای | Eosin Y | ایتوک فارمد
+باریم سولفات | Barium Sulfate | تعاونی تولیدی باریم سولفات ایران
+بازیابی حلال های دارویی | Pharmaceutical solvents Rcovery | صنعت سبز طبرستان
+باکلوفن | Baclofen | سروش مانا فارمد
+شيمي دارويي داروپخش
+فرآیند شیمی حکیم
+فناوران دارویی حکیم
+باکلوفن ریلیتد کامپاند A | Baclofen Related Compound A (USP) | فناوران دارویی حکیم
+بتامتازون | Betamethasone | فناوران دارویی حکیم
+بتامتازون 17 والرات | BETAMETHASONE 17 VALERATE | تماد
+بتامتازون دی پروپیونات | BETAMETHASONE DIPROPIONATE | تماد
+بتامتازون سدیم فسفات | Betamethasone sodium phosphate | البرزبالک
+بهداشت کار
+تماد
+Betamethasone Sodium Phosphate | فناوران دارویی حکیم
+بتامتازون سدیم فسفات ( گرید تزریقی غیر استریل) | BETAMETHASONE SODIUM PHOSPHATE( INJECTION GRADE NON-STERILE) | تماد
+بتامتازون والرات | Betamethasone valerate | البرزبالک
+بهداشت کار
+فناوران دارویی حکیم
+بتامتازون والرات ریلیتد کامپاند A | Betamethasone Valerate Related Compound A (USP) | فناوران دارویی حکیم
+برش نفتی مطابق با خواسته مشتری | Oil fractions according to the customer's request | صنعت سبز طبرستان
+برکتانت | Beractant | پرسیس ژن بار
+برکسورف | Beraksurf | پرسیس ژن بار
+بروکا | BRUCA | زیست تخمیر
+برومو فنول بلو | Bromophenol blue | ایتوک فارمد
+بروموتیمول بلو | Bromothymol blue | ایتوک فارمد
+بکلومتازون دی پروپیونات | Beclomethasone Dipropionate | فناوران دارویی حکیم
+بکلومتازون دی پروپیونات مونوهیدرات | Beclometasone Dipropionate Monohydrate | فناوران دارویی حکیم
+بلک کروت | Black Crow | پردیس عصاره
+بنتونیت | Bentonite | ایتوک فارمد
+بنزالدئید | Benzaldehyde | فناوران دارویی حکیم
+بنزوات سدیم | Sodium Benzoate | فناوران دارویی حکیم
+بنزوتیادیازین ریلیتد کامپاند A | Benzothiadiazine Related Compound A (USP) | فناوران دارویی حکیم
+بنزوفنون | Benzophenone | فناوران دارویی حکیم
+بنزوئیک اسید | Benzoic Acid | فناوران دارویی حکیم
+بنزیل الکل | Benzyl alcohol | ایتوک فارمد
+فناوران دارویی حکیم
+بنژیدرول | Benzhydrol | فناوران دارویی حکیم
+بنسرازید ایمپیوریتی A (EP) | Benserazide Impurity A (EP) | فناوران دارویی حکیم
+بنسرازید هیدروکلراید | Benserazide Hydrochloride | فناوران دارویی حکیم
+بنفوتیامین | Benfotiamine | مهبان شیمی
+بواسیزومب | Bevacizumab | آریوژن فارمد
+اکتروخاورمیانه
+بوپرنورفین هایدروکلراید | Buprenorphine hydrochloride | تماد
+بوپرنورفین هیدروکلراید (گرید تزریقی غیر استریل) | BUPRENORPHINE HYDROCHLORIDE (INJECTION GRADE NON STERILE) | تماد
+بوپرنورفین هیدورکلراید | Buprenorphine hydrochloride | پرند دارو
+بوپروپیون هیدروکلراید | Bupropion Hydrochloride | فناوران دارویی حکیم
+بوپروپیون هیدروکلراید ریلیتد کامپاند A | Bupropion Hydrochloride Related Compound A (USP) | فناوران دارویی حکیم
+بوپروپیون هیدروکلراید ریلیتد کامپاند B | Bupropion Hydrochloride Related Compound B (USP) | فناوران دارویی حکیم
+بوتیل پارابن | Butylparaben | فناوران دارویی حکیم
+بورتزومیب | Bortezomib | ارسطو
+اکتوبایوکم
+هیوا فارمد
+بوریک اسید | Boric Acid | ایتوک فارمد
+بوسپیرون ریلیتد کامپاند L | Buspirone Related Compound L (USP) | فناوران دارویی حکیم
+بوسپیرون هیدروکلراید | Buspirone Hydrochloride | فناوران دارویی حکیم
+بوسنتان مونوهیدرات | Bosentan Monohydrate | توسعه داروسازی دانش
+فاران شیمی
+بی پریدین | Beperiden | تهران شیمی
+بیپریدین هیدروکلراید | BIPERIDEN HYDROCHLORIDE | ثمین دارو ایرانیان
+بیت روت | Root beet | پردیس عصاره
+بیزاکودیل | Bisacodyl | فناوران دارویی حکیم
+بیزوپرولول فومارات | BISOPROLOL FUMARATE | فاران شیمی
+بیس گلیسینات آهن | Ferrous Bisglycinate | صنایع شیمیایی و دارویی تبریز
+بیسوپرولول فومارات | BISOPROLOL FUMARATE | فناوران دارویی حکیم
+بیوتین | Biotin | فناوران دارویی حکیم
+پاپاورین هیدروکلراید | PAPAVERINE HYDROCHLORIDE (FOR EXPORT) | تماد
+پاپاورین هیدروکلراید صادراتی ( گرید تزریقی غیر استریل) | PAPAVERINE HYDROCHLORIDE FOR EXPORT( INJECTION GRADE NON-STERILE) | تماد
+پارا-تولوئن سولفونامید | p-Toluenesulfonamide | فناوران دارویی حکیم
+پارا-رانولازین | p-Ranolazine | فناوران دارویی حکیم
+پارا آمینو فنل | Para-aminophenol | کیمیاگران امروز
+پارافین | Paraffin (Pastille) | ایتوک فارمد
+پارافین کلره | Chlorinated paraffine | کلرپارس
+پارچه ملت بلون | (blank) | پایا شیمی اسپادانا
+پازوپانیب هیدروکلراید | Pazopanib Hydrochloride | فناوران دارویی پارسیان
+پالبوسیکلیب | Palbociclib | فناوران دارویی پارسیان
+هیوا فارمد
+پتاسيم سيترات | Potassium citrate | بهان سار
+پتاسيم كلرايد | Potassium chloride | بهان سار
+پتاسيم کلرايد  BP | Potassium choloride bp | صنایع شیمیایی و دارویی تبریز
+پتاسیم استات | Potassium acetate | ایتوک فارمد
+پتاسیم بیکربنات | Potassium bicarbonate | صنایع شیمیایی و دارویی تبریز
+پتاسیم پرسولفات | Potassium persulfate | ایتوک فارمد
+پتاسیم پرمنگنات | Potassium permanganate | ایتوک فارمد
+پتاسیم دی کلرمات | Potassium dichromate | ایتوک فارمد
+پتاسیم دی هیدروژن فسفات | potassium di- hydrogen phosphate | دکترمجللی
+Potassium dihydrogen phosphate | ایتوک فارمد
+پتاسیم سدیم تارتارات تتراهیدرات | Potassium sodium tartrate tetrahydrate (Rochelle salt) | ایتوک فارمد
+پتاسیم سوربات | Potassium Sorbate | فناوران دارویی حکیم
+پتاسیم سولفات | Potassium sulfate | ایتوک فارمد
+پتاسیم سیترات منوهیدرات | Potassium citrate monohydrate | صنایع شیمیایی و دارویی تبریز
+پتاسیم کلاولانات | Potassium Clavulanate | شيمي دارويي داروپخش
+پتاسیم کلاولانات مخلوط با سایلوئید | Potassium Clavulanate Mixed with Cyloid | شيمي دارويي داروپخش
+پتاسیم کلراید | Potassium chloride | ایتوک فارمد
+شیمی دارویی تک ماد
+پتاسیم هیدروکسید | Potassium hydroxide | ایتوک فارمد
+پتاسیم یدید | Potassium iodide | ایتوک فارمد
+پترولیوم اتر(60-40) | Petroleum ether (40-60) | ایتوک فارمد
+پرازوسین هیدرو کلراید | PRAZOSIN HYDROCHLRIDE | تماد
+پرامیپکسول دی هیدروکلراید مونوهیدرات | Pramipexole dihydrochloride monohydrate | نیکان اکسیر باختر
+پرتوزوماب | Pertuzumab | سیناژن
+پردنیزولون | Prednisolone | صنایع مشارکتی طاها
+پردنیزون | Prednisone | فناوران دارویی حکیم
+پرکلرین | Calcium Hypochlorite | کلرپارس
+پرکینرا® (آناکینرا) | PerkinRA® (Anakinra) | پرسیس ژن بار
+پرگابالین | Pregabalin | سروش مانا فارمد
+فناوران دارویی حکیم
+هستی آریا شیمی
+پرگابالین ایمپیوریتی D | Pregabalin Impurity D (EP) | فناوران دارویی حکیم
+پرگابالین ایمپیوریتی استاندارد | Pregabalin Impurity Standard (BP) | فناوران دارویی حکیم
+پرگابالین ریلیتد کامپاند A | Pregabalin Related Compound A (USP) | فناوران دارویی حکیم
+پرگابالین ریلیتد کامپاند C | Pregabalin Related Compound C (USP) | فناوران دارویی حکیم
+پروپرانولول | Propranolol | شيمي دارويي داروپخش
+پروپرانولول هیدروکلراید | Propranolol Hydrochloride | فناوران دارویی حکیم
+پروپوفول | Propofol | فناوران دارویی حکیم
+پروپوفول ریلیتد کامپاند A | Propofol Related Compound A (USP) | فناوران دارویی حکیم
+پروپوفول ریلیتد کامپاند B | Propofol Related Compound B (USP) | فناوران دارویی حکیم
+پروپوفول ریلیتد کامپاند C | Propofol Related Compound C (USP) | فناوران دارویی حکیم
+پروپیل پارابن | Propylparaben | البرزبالک
+فناوران دارویی حکیم
+پروپیلن گلیکول | Propylene glycol | کیمیاگران امروز
+پروژسترون | Progesterone | اکتوبایوکم
+صنایع مشارکتی طاها
+پرومتازین ریلیتد کامپاند B | Promethazine Related Compound B (USP) | فناوران دارویی حکیم
+پرومتازین هیدروکلراید | Promethazine Hydrochloride | فناوران دارویی حکیم
+پریگابالین | Pregabalin | البرزبالک
+تماد
+پریلوکائین | prilocaine | آموفارمد آریا
+ثمین دارو ایرانیان
+فناوران دارویی حکیم
+پریلوکائین ریلیتد کامپاند A | Prilocaine Related Compound A (USP) | فناوران دارویی حکیم
+پریلوکائین ریلیتد کامپاند B | Prilocaine Related Compound B (USP) | فناوران دارویی حکیم
+پریلوکائین هیدروکلراید | Prilocaine Hydrochloride | فناوران دارویی حکیم
+پزودوافدرین هیدروکلراید | Pseudoephedrine hydrochloride | بهداشت کار
+پگفیلگراستیم | Pegfilgrastim | سیناژن
+پلت اس امپرازول 22.5% | ESOMEPRAZOLE PELLET 22.5% | تماد
+پلت اس امپرازول منیزیم تری هیدرات 22/5 % | Omeprazole Magnesium Trihydrate 22.5% Tablets | تدبیرداروسلامت
+پلت اس امپرازول منیزیم تری هیدرات 8/5 % | Omeprazole Magnesium Trihydrate Tablets 8.5% | تدبیرداروسلامت
+پلت اسموپرازول دی آر ۱۳.۵٪ | Esomeprazole DR 13.5  pellet | اکتوبایوکم
+پلت امپرازول 8/5 % | Omeprazole 8.5% pellets | تدبیرداروسلامت
+پلت اورلیستات ۵۰٪ | Orlistat pellet 50 | اکتوبایوکم
+پلت پنتوپرازول | Pantoprazole pellet | اکتوبایوکم
+پلت پنتوپرازول 15% | PANTOPRAZOLE PELLET 15% | تماد
+پلت پنتوپرازول سدیم 15 % | Pantoprazole Sodium Pellets 15% | تدبیرداروسلامت
+پلت داکسی سایکلین هایکلیت 33% | Doxycycline Hyclate 33% Pellets | تدبیرداروسلامت
+پلت دلوکستین 20% | Duloxetine 20% pellets | تدبیرداروسلامت
+پلت دلوکستین هیدروکلراید 25% | Duloxetine hydrochloride pellets 25% | تدبیرداروسلامت
+پلت دولوکستین | duloxetine pellet | اکتوبایوکم
+پلت دولوکستین 17% | Duloxetine 17% pellets | تدبیرداروسلامت
+پلت دیکلوفناک سدیم 40% | Diclofenac sodium pellets 40% | تدبیرداروسلامت
+پلت دیکلوفناک سدیم 45% | Diclofenac sodium pellets 45% | تدبیرداروسلامت
+پلت دیکلوفناک سدیم 52% | Diclofenac Sodium Pellet 52% | تدبیرداروسلامت
+پلت لانسوپرازول دکتر ۸.۵٪ | Lansoprazole Dr pellet 8.5 | اکتوبایوکم
+پلت لنسوپرازول 8.5 % | LANSOPRAZOLE PELLET 8.5% | تماد
+پلت مبورین 80 | Mebeverine pellet 80 | اکتوبایوکم
+پلی اتیلن گلایکول | Polyethylene glycol | کیمیاگران امروز
+پلی اتیلن گلایکول400 | Polyethylene glycol 400 (PEG 400) | ایتوک فارمد
+پلی اتیلن گلایکول4000 | Polyethlene glycol 4000 (PEG4000) | ایتوک فارمد
+پلی اتیلن گلایکول600 | Polyethylene glycol 600 (PEG 600) | ایتوک فارمد
+پلی اتیلن گلایکول6000 | Polyethlene glycol 6000 (PEG6000) | ایتوک فارمد
+پلی سوربات | Polysorbate | کیمیاگران امروز
+پمبرولیزوماب | Pembrolizumab | سیناژن
+پنتاپرازول سدیم | Pentaprazolesodium | ارسطو
+تهران شیمی
+سروش مانا فارمد
+شیمی فارمد پارس
+فاران شیمی
+مهبان شیمی
+پنتوپرازول برای سازگاری با سیستم | Pantoprazole for System Suitability (EP) | فناوران دارویی حکیم
+پنتوپرازول پلت 20% | PANTOPRAZOLE PELLET 20% | تماد
+پنتوپرازول ریلیتد کامپاند A | Pantoprazole Related Compound A (USP) | فناوران دارویی حکیم
+پنتوپرازول ریلیتد کامپاند B | Pantoprazole Related Compound B (USP) | فناوران دارویی حکیم
+پنتوپرازول ریلیتد کامپاند C | Pantoprazole Related Compound C (USP) | فناوران دارویی حکیم
+پنتوپرازول ریلیتد کامپاند D&F مخلوط | Pantoprazole Related Compounds D and F Mixture (USP) | فناوران دارویی حکیم
+پنتوپرازول سدیم | Pantoprazole Sodium | فناوران دارویی حکیم
+پنتوپرازول سدیم سسکوئی هیدرات | PANTOPRAZOLE SODIUM SESQUIHYDRATE | تماد
+پنتوپرازول سدیم سسکوئی هیدرات (گرید تزریقی غیراستریل) | PANTOPRAZOLE SODIUM SESQIHYDRATE (INJECTION GRADE - NON STERILE) | تماد
+پنتوپرازول سدیم هیدرات | Pantoprazole sodium hydrate | ثمین دارو ایرانیان
+پودر الومينيوم هيدروكسايد2 | Aluminum hydroxide powder | بهان سار
+پودر بیت روت | Beetroot powder | پردیس عصاره
+پودر پتاسیم کلاونات | Potassium Clavulanate Powder | داروسازی دانا
+پودر سفالکسین | Cephalexin powder | داروسازی دانا
+پودر سفکسیم | Cefixime powder | داروسازی دانا
+پودر عصاره بره موم | Propolis extract powder | پردیس عصاره
+پودر عصاره پروپولیس | Propolis extract powder | عصرنانو
+پودر عصاره چای ترش | Sour tea extract powder | عصرنانو
+پودر عصاره چای سبز | Green tea extract powder | پردیس عصاره
+پودر عصاره رازیانه | Fennel extract powder | پردیس عصاره
+پودر عصاره زعفران | Saffron extract powder | عصرنانو
+پودر عصاره سرخارگل | Echinacea extract powder | پردیس عصاره
+پودر عصاره سنا | Senna extract powder | پردیس عصاره
+پودر عصاره شنبلیله | Fenugreek extract powder | پردیس عصاره
+پودر عصاره عشقه | Rose extract powder | پردیس عصاره
+پودر عصاره کنگر فرنگی | Artichoke extract powder | پردیس عصاره
+پودر عصاره گل ساعتی | Passion flower extract powder | پردیس عصاره
+پودر عصاره گل محمدی | Rosehip extract powder | پردیس عصاره
+پودر منيزيم هيدروكسايد | Magnesium hydroxide powder | بهان سار
+پودر منیزیم اکساید 400 پلاس ویتامین های گروه B | Magnesium Oxide Powder 400 Plus B Vitamins | عصرنانو
+پیپرازین سیترات | Piperazine citrate usp | صنایع شیمیایی و دارویی تبریز
+پیرفنیدون | Pirfenidone | مهبان شیمی
+خورشید کادووس
+پیروکسیکام | Piroxicam | شيمي دارويي داروپخش
+فناوران دارویی حکیم
+پیروکسیکام ریلیتد کامپاند A | Piroxicam Related Compound A (USP) | فناوران دارویی حکیم
+پیروکسیکام ریلیتد کامپاند D | Piroxicam Related Compound D (USP) | فناوران دارویی حکیم
+پیروکسیکام ریلیتد کامپاند G | Piroxicam Related Compound G (USP) | فناوران دارویی حکیم
+پیروکسیکام ریلیتد کامپاند J | Piroxicam Related Compound J (USP) | فناوران دارویی حکیم
+پیریدوکسین هیدروکلراید | Pyridoxine Hydrochloride | فناوران دارویی حکیم
+پیریدین | Pyridine | ایتوک فارمد
+پیوگلیتازون هیدروکلراید | PIOGLITAZONE HYDROCHLORIDE | تماد
+فناوران دارویی حکیم
+تادالافیل | Tadalafil | فناوران دارویی حکیم
+تالک | Talc | صنایع شیمیایی و دارویی تبریز
+تامسولوسین هایدروکلراید | TAMSULOSIN HYDROCHLORIDE | تماد
+شيمي دارويي داروپخش
+فناوران دارویی حکیم
+تبائین (جهت صادرات) | THEBAINE (FOR EXPORT) | تماد
+تترابنازین | Tetrabenazine | سروش مانا فارمد
+تتراسایکلین هیدروکلراید | Tetracycline Hydrochloride | فناوران دارویی حکیم
+تتراهیدروفوران | Tetrahydrofuran(THF) | ایتوک فارمد
+تراستوزومب | Trastuzumab | آریوژن فارمد
+ترامادول HCl | Tramadol HCl | هستی آریا شیمی
+ترامادول هایدروکلراید( گرید تزریقی غیر استریل) | TRAMADOL HYDROCHLORIDE( INJECTION GRADE NON-STERILE) | تماد
+ترامادول هیدروکلراید | Tramadol hydrochloride | پرند دارو
+تماد
+تهران شیمی
+فناوران دارویی حکیم
+مهبان شیمی
+ترامتینیب دی متیل سولفوکسید | Trametinib Dimethyl Sulfoxide | فناوران دارویی پارسیان
+تری اتانول آمین | Triethanolamine | ایتوک فارمد
+تری سدیم سیترات انهیدروس | trisodium citrate anhydrous | صنایع شیمیایی و دارویی تبریز
+تری سدیم سیترات دی هیدرات | trisodium citrate dihydrate | صنایع شیمیایی و دارویی تبریز
+Tri-sodium citrate dihydrate | ایتوک فارمد
+تری سدیم فسفات انهیدروس | Tribasic sodium phosphate anhydrous usp | صنایع شیمیایی و دارویی تبریز
+تری سدیم فسفات دودکا هیدرات | Tri-sodium phosphate dodecahydrate | ایتوک فارمد
+تری کلسیم فسفات | Tricalcium phosphate usp | صنایع شیمیایی و دارویی تبریز
+تریازولام | Triazolam | فناوران دارویی حکیم
+تریامسینولون استوناید | Triamcinolone acetonide | البرزبالک
+بهداشت کار
+تماد
+تری‌پاراتید | Teriparatide | سیناژن
+تریفلونوماید | Teriflunomide | فناوران دارویی پارسیان
+تلمیزارتان | Telmisartan | اکتوبایوکم
+سروش مانا فارمد
+فناوران دارویی حکیم
+هستی آریا شیمی
+تلمیسارتان ریلیتد کامپاند A | Telmisartan Related Compound A (USP) | فناوران دارویی حکیم
+تلمیسارتان ریلیتد کامپاند B | Telmisartan Related Compound B (USP) | فناوران دارویی حکیم
+تنوفویر آلافنامید فومارات | Tenofovir alafenamide fumarate | خورشید کادووس
+توپیرامات ریلیتد کامپاند A | Topiramate Related Compound A (USP) | فناوران دارویی حکیم
+توسیلیزومب | Tocilizumab | آریوژن فارمد
+توفاسیتینیب-سیترات | TOFACITINIB-CITRATE | زیست تخمیر
+فناوران دارویی پارسیان
+هیوا فارمد
+خورشید کادووس
+تولترودین تارترات | Tolterodine Tartrate | فناوران دارویی حکیم
+تولوئن | Toluene | ایتوک فارمد
+جابر ازنق شیمی
+تولید محصولات لیپوزدمال دافع حشرات با نیمه عمر بالا جهت حفاظت در مقابل سالک | (blank) | پایا شیمی اسپادانا
+تولید ندارد | تولید ندارد | لیو آناهیتا فارمد
+تیامین هیدرو کلراید | THIAMINE HYDROCHLORIDE | آموفارمد آریا
+تماد
+تهران شیمی
+ثمین دارو ایرانیان
+شيمي دارويي داروپخش
+شیمی فارمد پارس
+فاران شیمی
+فناوران دارویی حکیم
+مهبان شیمی
+هستی آریا شیمی
+هستی بهین فارمد(توسط فاران شیمی خریداری گردیده)
+تیامین هیدروکلراید usp | Thiamine hydrocholoride usp | صنایع شیمیایی و دارویی تبریز
+تیرزپاتید | Tirzepatide | فناوران دارویی پارسیان
+تیزانیدین ریلیتد کامپاند C | Tizanidine Related Compound C | فناوران دارویی حکیم
+تیکاگرلور | Ticagrelor | فناوران دارویی پارسیان
+فناوران دارویی حکیم
+تیکاگرلور ریلیتد کامپاند B | Ticagrelor Related Compound B (USP) | فناوران دارویی حکیم
+تینیدازول ریلیتد کامپاند A | Tinidazole Related Compound A (USP) | فناوران دارویی حکیم
+تینیدازول ریلیتد کامپاند B | Tinidazole Related Compound B (USP) | فناوران دارویی حکیم
+جفیتینیب | Gefitinib | فناوران دارویی پارسیان
+جمسیتابین هیدروکلراید | Gemcitabinehydrochloride | ارسطو
+جمفیبروزیل | GEMFIBROZIL | تماد
+حدواسط فکسوفنادین (n-1) | Fexofenadine intermediate (n-1) | فرآیند شیمی حکیم
+حلال پارافینیک | Parraffinic Solvents | صنعت سبز طبرستان
+دابرافنیب مسیلات | Dabrafenib Mesylate | فناوران دارویی پارسیان
+داپاگلیفلوزین | Dapagliflozin | البرزفارمد
+داپاگلیفلوزین پروپاندیول مونوهیدرات | DAPAGLIFLOZIN PROPANEDIOL MONOHYDRATE | فاران شیمی
+فناوران دارویی پارسیان
+داپوکستین هیدروکلراید | DAPOXETINE HYDROCHLORIDE | تماد
+فناوران دارویی حکیم
+Dapoxetinehydrochloride | البرزبالک
+داراتوموماب | Daratumumab | سیناژن
+داساتینیب | Dasatinib | فناوران دارویی پارسیان
+داکسی سایکلین هیکلات | Doxycycline Hyclate | فناوران دارویی حکیم
+داکلاتاسویر دی هیدروکلراید | Daclatasvir dihydrochloride | خورشید کادووس
+دالفامپریدین (فامپریدین) | Dalfampridine (fampridine) | فناوران دارویی حکیم
+نگین دارو نوآور
+هیوا فارمد
+در حال صدور پروانه | (blank) | افشان شیمی مهر
+امرتات شیمی
+مهرسام دارو
+دزلوراتادین ریلیتد کامپاند F | Desloratadine Related Compound F (USP) | فناوران دارویی حکیم
+دزوزامینیل آزیترومایسین | Desosaminylazithromycin | فناوران دارویی حکیم
+دس لوراتادین | Des loratadine | ارسطو
+اکتوبایوکم
+البرزبالک
+توسعه داروسازی دانش
+فرآیند شیمی حکیم
+فناوران دارویی پارسیان
+دستگاه تولید ماسک N95 | (blank) | پایا شیمی اسپادانا
+دستگاه تولید ملت بلون | (blank) | پایا شیمی اسپادانا
+دستگاه روتاری درام فیلتر 2000 لیتری(در حال ساخت) | (blank) | پایا شیمی اسپادانا
+دستگاه کش زن نیمه اتوماتیک | (blank) | پایا شیمی اسپادانا
+دسلوراتادین | Desloratadine | فناوران دارویی حکیم
+دفراسیروکس | Deferasirox | ارسطو
+توسعه داروسازی دانش
+سروش مانا فارمد
+هیوا فارمد
+دفریپرون | Deferiprone | ارسطو
+دکسترومتورفان هیدروبروماید | Dextromethorphan hydrobromide | البرزبالک
+بهداشت کار
+تماد
+فناوران دارویی حکیم
+دگزامتازون | Dexamethasone | فناوران دارویی حکیم
+دگزامتازون دی سدیم فسفات ( گرید تزریقی غیر استریل) | DEXAMETHASONE DI SODIUM PHOSPHATE(INJECTION GRADE NON-STERILE) | تماد
+دگزامتازون سدیم فسفات | Dexamethasone sodium phosphate | البرزبالک
+بهداشت کار
+تماد
+دنوزومب | Denosumab | آریوژن فارمد
+دورزولامید | Dorzolamide | شتاب دهنده ماد
+دوسه تاکسل | TwoTexels | ارسطو
+دوکسازوسین ریلیتد کامپاند C | Doxazosin Related Compound C (USP) | فناوران دارویی حکیم
+دولوکستین ریلیتد کامپاند A | Duloxetine Related Compound A (USP) | فناوران دارویی حکیم
+دولوکستین ریلیتد کامپاند F | Duloxetine Related Compound F (USP) | فناوران دارویی حکیم
+دولوکستین ریلیتد کامپاند H | Duloxetine Related Compound H (USP) | فناوران دارویی حکیم
+دولوکستین هیدروکلراید | Duloxetine hydrochloride | سروش مانا فارمد
+فناوران دارویی حکیم
+نیکان اکسیر باختر
+دومپریدون مالئات | Domperidone Maleate | فناوران دارویی حکیم
+دونپزیل ریلیتد کامپاند A | Donepezil Related Compound A (USP) | فناوران دارویی حکیم
+دونپزیل هیدروکلراید | Donepezil Hydrochloride | فناوران دارویی حکیم
+نیکان اکسیر باختر
+دی اتانول آمین | Diethanolamin | ایتوک فارمد
+دی اتیل اتر | (blank) | گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین
+دی اتیلن گلایکول مونو اتیل اتر | Diethylene glycol monoethyl ether | ایتوک فارمد
+دی اتیلن گلایکول مونومتیل اتر | Diethylene glycol monomethyl ether | ایتوک فارمد
+دی پتاسیم فسفات | Dibasic potassium phosphate | صنایع شیمیایی و دارویی تبریز
+دی پتاسیم هیدروژن فسفات | Di-potassium hydrogen phosphate | ایتوک فارمد
+دی پتاسیم هیدروژن فسفات | Di-potassium hydrogen phosphate | دکترمجللی
+دی سدیم تترابورات دیکاهیدرات | Di-sodium tetraborate decahydrate(Borax) | ایتوک فارمد
+دی سدیم فسفات 12 آبه | Dibasic sodium phosphate dodecahydrate usp | صنایع شیمیایی و دارویی تبریز
+دی سدیم فسفات انهیدروس | Dibasic sodium phosphate anhydrous usp | صنایع شیمیایی و دارویی تبریز
+دی سدیم فسفات دی هیدرات | Dibasic sodium phosphate dihydrate usp | صنایع شیمیایی و دارویی تبریز
+دی سدیم هیدروژن فسفات | di-sodium hydrogen phosphate | دکترمجللی
+دی سدیم هیدروژن فسفات دی هیدرات | Di-sodium hydrogen phosphate dihydrate | ایتوک فارمد
+دی سیکلومین هیدروکلراید | Dicyclomine Hydrochloride | فناوران دارویی حکیم
+دی کلرومتان | Dichloromethane | ایتوک فارمد
+دی کلسیم فسفات بدون آب | Anhydrous Dicalcium Phosphate | صنایع شیمیایی و دارویی تبریز
+دی کلسیم فسفات دی هیدرات | Dicalcium Phosphate Dihydrate | صنایع شیمیایی و دارویی تبریز
+دی متوکسی متان (متیلال) | Dimethoxymethane | جابر ازنق شیمی
+صنعت سبز طبرستان
+دی متیل سولفوکسید | Dimethyl sulfoxide (DMSO) | ایتوک فارمد
+دی متیل فومارات | Dimethyl Fumarate | صنایع شیمیایی و دارویی تبریز
+فناوران دارویی پارسیان
+هیوا فارمد
+دی متیلانیلین-2،3 | Dimethylaniline-2,3 | فناوران دارویی حکیم
+دی والپرکس سدیم | Divalproex sodium | شيمي دارويي داروپخش
+دیروکسیمل فومارات | Diroximel Fumarate | فناوران دارویی پارسیان
+دیفن هیدرامین N-اکساید | Diphenhydramine N-Oxide | فناوران دارویی حکیم
+دیفن هیدرامین ریلیتد کامپاند A | Diphenhydramine Related Compound A (USP) | فناوران دارویی حکیم
+دیفن هیدرامین ریلیتد کامپاند B | Diphenhydramine Related Compound B (USP) | فناوران دارویی حکیم
+دیفن هیدرامین سیترات | Diphenhydramine Citrate | فناوران دارویی حکیم
+دیفن هیدرامین هیدروکلراید | Diphenhydramine Hydrochloride | فناوران دارویی حکیم
+دیکلوفناک برای تناسب سیستم (EP) | Diclofenac for system suitability (EP) | فناوران دارویی حکیم
+دیکلوفناک پتاسیم | Diclofenac Potassium | فناوران دارویی حکیم
+Diclofenacpotassium | البرزبالک
+دیکلوفناک دی اتیلامین | Diclofenac Diethylamine | فناوران دارویی حکیم
+دیکلوفناک ریلیتد کامپاند A | Diclofenac Related Compound A (USP) | فناوران دارویی حکیم
+دیکلوفناک سدیم | Diclofenac sodium | البرزبالک
+شيمي دارويي داروپخش
+فناوران دارویی حکیم
+دیلتیازم هیدروکلراید | Diltiazem hydrochloride | شيمي دارويي داروپخش
+مهبان شیمی
+رانولازین | Ranolazine | البرزفارمد
+فناوران دارویی حکیم
+رانولازین ریلیتد کامپاند A | Ranolazine Related Compound A (USP) | فناوران دارویی حکیم
+رانولازین ریلیتد کامپاند B | Ranolazine Related Compound B (USP) | فناوران دارویی حکیم
+رانولازین ریلیتد کامپاند C | Ranolazine Related Compound C (USP) | فناوران دارویی حکیم
+رانولازین ریلیتد کامپاند D | Ranolazine Related Compound D (USP) | فناوران دارویی حکیم
+رزواستاتین کلسیم | Rosuvastatincalcium | ارسطو
+اکتوبایوکم
+البرزبالک
+تماد
+تهران شیمی
+ثمین دارو ایرانیان
+سروش مانا فارمد
+شيمي دارويي داروپخش
+فرآیند شیمی حکیم
+هستی آریا شیمی
+رسمیتروم | Officially | البرزفارمد
+رفرنس استاندارد های  دارویی | (blank) | شیمی درمان اندیشه
+رگورافنیب | Regorafenib | فناوران دارویی حکیم
+رگورافنیب مونوهیدرات | Regorafenib Monohydrate | فناوران دارویی پارسیان
+رنگهای دارویی،آرایشی و بهداشتی | Pharmaceutical, cosmetic and hygienic dyes | الوان ثابت
+روپیواکائین ریلیتد کامپاند A | Ropivacaine Related Compound A (USP) | فناوران دارویی حکیم
+روزوواستاتین انانتیومر | Rosuvastatin Enantiomer | فناوران دارویی حکیم
+روزوواستاتین ایمپیوریتی میکسچر | Rosuvastatin Impurity Mixture (EP) | فناوران دارویی حکیم
+روزوواستاتین برای سازگاری باسیستم | Rosuvastatin for System Suitability (EP) | فناوران دارویی حکیم
+روزوواستاتین ریلیتد کامپاند A | Rosuvastatin Related Compound A (USP) | فناوران دارویی حکیم
+روزوواستاتین ریلیتد کامپاند B | Rosuvastatin Related Compound B (USP) | فناوران دارویی حکیم
+روزوواستاتین ریلیتد کامپاند C | Rosuvastatin Related Compound C (USP) | فناوران دارویی حکیم
+روزوواستاتین کلسیم | Rosuvastatin Calcium | فناوران دارویی حکیم
+روکسادوستات | Roxadustat | فناوران دارویی پارسیان
+ریبوفلاوین | Riboflavin | فناوران دارویی حکیم
+ریتوکسی‌مب | Rituximab | آریوژن فارمد
+اکتروخاورمیانه
+ریزاتریپتان بنزوات | Rizatriptan Benzoate | فناوران دارویی حکیم
+ریسپریدون | RISPERIDONE | تماد
+ریشه شیرین بیان | Licorice root | پردیس عصاره
+ریفاکسیمین | Rifaximin | خورشید کادووس
+ریلوزول | Riluzole | فناوران دارویی پارسیان
+خورشید کادووس
+ریواروکسابان | Rivaroxaban | اکتوبایوکم
+البرزبالک
+فناوران دارویی پارسیان
+ریواستیگمین تارترات | Rivastigmine Tartrate | فناوران دارویی حکیم
+ریواستیگمین ریلیتد کامپاند A | Rivastigmine Related Compound A (USP) | فناوران دارویی حکیم
+ریواستیگمین ریلیتد کامپاند B | Rivastigmine Related Compound B (USP) | فناوران دارویی حکیم
+ریواستیگمین هیدروژن تارتارات | Rivastigmine hydrogen tartrate | شيمي دارويي داروپخش
+زایلین | Xylene | ایتوک فارمد
+جابر ازنق شیمی
+زولپیدم تارترات | Zolpidem Tartrate | فناوران دارویی حکیم
+زولدرونیک اسید | Zoledronic acid | ارسطو
+اکتوبایوکم
+نگین دارو نوآور
+هیوا فارمد
+زينك اكسايد | Zinc oxide | بهان سار
+زينك سولفات | Zinc sulfate | بهان سار
+زينك سيترات آنهيدروس | Anhydrous zinc citrate | بهان سار
+زينك كتات | Zinc oxide | بهان سار
+زينك گلوكونات(اداره دارو) | Zinc gluconate (Medicare) | بهان سار
+زينك گلوكونات(اداره مكمل) | Zinc gluconate (supplementary administration) | بهان سار
+زينك گيسينات | Zinc gycinate | بهان سار
+زیموسیل 100 | ZYMUCIL100 | زیست تخمیر
+زیموسیل 200 | ZYMUCIL200 | زیست تخمیر
+زینک اکساید | Zinc oxide | صنایع شیمیایی و دارویی تبریز
+زینک سولفات مونوهیدارت | Zinc Sulfate  Monohydrate | شیمی دارویی تک ماد
+صنایع شیمیایی و دارویی تبریز
+زینک سولفات هپتاهیدرات | Zinc Sulfate Heptahydrate | شیمی دارویی تک ماد
+صنایع شیمیایی و دارویی تبریز
+زینک سیترات | Zinc citrate | صنایع شیمیایی و دارویی تبریز
+زینک کربنات | Zinc carbonate | صنایع شیمیایی و دارویی تبریز
+ژل الومينيوم هيدروكسايد2 | Aluminum hydroxide gel | بهان سار
+ژل منيزيم هيدروكسايد | Magnesium hydroxide gel | بهان سار
+ساخارین سدیم | Saccharin Sodium | فناوران دارویی حکیم
+ساکوبیتریل/ والزارتان | Sacubitril/Valsartan | توفيق دارو
+اکتوبایوکم
+البرزفارمد
+سروش مانا فارمد
+فرآیند شیمی حکیم
+فناوران دارویی پارسیان
+هستی آریا شیمی
+سالیسیلیک اسید | Salicylic acid | ایتوک فارمد
+فناوران دارویی حکیم
+سانیتینیب مالئات | Sunitinibmaleate | ارسطو
+فناوران دارویی پارسیان
+سایر پلی اتیلن گلایکول ها | Other polyethylene glycols | کیمیاگران امروز
+سترورلیکس استات | Cetirizine acetate | توفيق دارو
+ستوکسیماب | Cetuximab | سیناژن
+ستونهای کروماتوگرافی یکبار مصرف | cloumn chromatography | پایا شیمی اسپادانا
+ستیریزین ایمپیوریتی D (EP) | Cetirizine Impurity D (EP) | فناوران دارویی حکیم
+ستیریزین ریلیتد کامپاند A | Cetirizine Related Compound A (USP) | فناوران دارویی حکیم
+ستیریزین ریلیتد کامپاند G | Cetirizine Related Compound G (USP) | فناوران دارویی حکیم
+ستیریزین هیدروکلراید | Cetirizine hydrochloride | اکتوبایوکم
+Cetirizine Hydrochloride | فناوران دارویی حکیم
+سديم كتات | Sodium ketate | بهان سار
+سدیم استات | Sodium acetate | دکترمجللی
+سدیم استات تری هیدرات | Sodium acetate trihydrate | ایتوک فارمد
+سدیم استات خشک | Sodium acetate anhydrous | ایتوک فارمد
+سدیم بنزوات | Sodium Benzoate | ایتوک فارمد
+سدیم بیکربنات | sodium bicarbonate | نوا فارمد کیمیا
+Sodium bicarbonate usp-bp | صنایع شیمیایی و دارویی تبریز
+سدیم تیو سولفات 0.1 | Sodium thiosulfate 0.1N | ایتوک فارمد
+سدیم تیوسولفات پنا هیدرات | Sodium thiosulfate pentahydrate | ایتوک فارمد
+سدیم دودیسل سولفات | Sodium dodecyl sulfate | ایتوک فارمد
+سدیم دی هیدروژن فسفات دی هیدرات | Sodium dihydrogen phosphate dihydrate | ایتوک فارمد
+سدیم ساخارین | Sodium saccharin usp-bp | صنایع شیمیایی و دارویی تبریز
+سدیم سولفات خشک | Sodium sulfate anhydrous | ایتوک فارمد
+سدیم سولفیت خشک | Sodium sulfite anhydrous | ایتوک فارمد
+سدیم کربنات | Sodium carbonate | صنایع شیمیایی و دارویی تبریز
+سدیم کربنات خشک | Sodium carbonate anhydrous | ایتوک فارمد
+سدیم کربنات مونوهیدرات | Sodium carbonate monohydrate | ایتوک فارمد
+سدیم کلراید | Sodium chloride | ایتوک فارمد
+سدیم لوریل سولفات | Sodium dodecyl sulfate | دکترمجللی
+سدیم متا بی سولفیت | Sodium metabisulfite | ایتوک فارمد
+سدیم مونته لوکاست | Montelukast Sodium | فناوران دارویی حکیم
+سدیم نیترات | Sodium nitrate | ایتوک فارمد
+سدیم هگزامتافسفات | Sodium hexametaphosphate | ایتوک فارمد
+سدیم هیپوکلریت سولوشن | Sodium hypochlorite solution | ایتوک فارمد
+سدیم هیدروژن کربنات | Sodium hydrogen carbonate | ایتوک فارمد
+سدیم هیدروکساید | Sodium hydroxide | دکترمجللی
+سدیم هیدروکساید گرانول | Sodium hydroxide granulated | ایتوک فارمد
+سدیم هیدروکسید 0.1 | Sodium hydroxide 0.1N | ایتوک فارمد
+سدیم هیدروکسید 1.0 | Sodium hydroxide 1.0N | ایتوک فارمد
+سدیم هیدورکساید پرک | Sodium hydroxide flake | ایتوک فارمد
+سدیم والپروات | SODIUM VALPEROATE | دماوند دارو
+سرتاکونازول نیترات | Sertaconazole Nitrate | فناوران دارویی حکیم
+سرترالین | Sertraline | البرزبالک
+مهبان شیمی
+هستی آریا شیمی
+سرترالین ایمپیوریتی E | Sertraline Impurity E (EP) | فناوران دارویی حکیم
+سرترالین برای سازگاری با سیستم | Sertraline for System Suitability (EP) | فناوران دارویی حکیم
+سرترالین برای شناسایی پیک | Sertraline for Peak Identification (EP) | فناوران دارویی حکیم
+سرترالین هیدروکلراید | Sertraline Hydrochloride | فناوران دارویی حکیم
+سرترالین هیدروکلراید ریلیتد کامپاند A | Sertraline Hydrochloride Related Compound A (USP) | فناوران دارویی حکیم
+سرترالین هیدروکلراید مخلوط راسمیک | Sertraline Hydrochloride Racemic Mixture (USP) | فناوران دارویی حکیم
+سفادکس G10 مخصوص کروماتوگرافی | sephadex G10 | پایا شیمی اسپادانا
+سفالکسین | Cephalexin | آنتی بیوتیک سازی ایران
+تهران شیمی
+فناوران دارویی حکیم
+سفیکسیم | Cefixime | البرزبالک
+آنتی بیوتیک سازی ایران
+تهران شیمی
+فناوران دارویی حکیم
+سلکوکسیب | Celecoxib | ارسطو
+تماد
+تهران شیمی
+ثمین دارو ایرانیان
+سروش مانا فارمد
+شيمي دارويي داروپخش
+شیمی فارمد پارس
+فناوران دارویی حکیم
+مهبان شیمی
+هستی آریا شیمی
+سلکوکسیب ریلیتد کامپاند A | Celecoxib Related Compound A (USP) | فناوران دارویی حکیم
+سلکوکسیب ریلیتد کامپاند B | Celecoxib Related Compound B (USP) | فناوران دارویی حکیم
+سلولز، میکروکریستالین | CELLULOSE, MICROCRYSTALLINE | شیمی فارمد پارس
+سوتالول هیدروکلراید | Sotalol Hydrochloride | فناوران دارویی حکیم
+سود پرک | Flake | کلرپارس
+سود مایع | Sodium hydroxide | کلرپارس
+سودوافدرین | Pseudoephedrine | هستی آریا شیمی
+سورافنیب توسیلات | Sorafenib Tosylate | فناوران دارویی پارسیان
+هیوا فارمد
+سوزتریجین | Soztrigin | البرزفارمد
+سوفوسبوویر | Sofosbuvir | خورشید کادووس
+سولفابنزامید | SULFABENZAMIDE | تماد
+سولفات آلبوترول | Albuterol Sulfate | فناوران دارویی حکیم
+سولفات آهن گلیسین | Ferrous Glycine Sulfate | صنایع شیمیایی و دارویی تبریز
+سولفات مس پنتاهیدرات | Copper(II) sulfate pentahydrate | ایتوک فارمد
+سولفاسالازین | Sulfasalazine | فناوران دارویی حکیم
+سولفانیلامید | Sulfanilamide | فناوران دارویی حکیم
+سولفوریک اسید 0.1 | Sulfuric acid 0.1N | ایتوک فارمد
+سولفوریک اسید 1.0 | Sulfuric acid 1.0N | ایتوک فارمد
+سولفوریک اسید 95-98% | Sulfuric acid95%-98% | ایتوک فارمد
+سولفوکرومیک اسید | Sulfochromic acid | ایتوک فارمد
+سولیفناسین سوکسینات | Sulifnacin succinate | شتاب دهنده ماد
+سوماتروپین | Somatropin | سیناژن
+سوماتریپتان سوکسینات | Sumatriptan Succinat | فاران شیمی
+Sumatriptan succinate | تهران شیمی
+دماوند دارو
+شيمي دارويي داروپخش
+سونیتینیب مالات | Sunitinib malate | هیوا فارمد
+سی آر ام 197 | CRM197 | پرسیس ژن بار
+سیانوکوبالامین | Cyanocobalamin | فناوران دارویی حکیم
+سیپروترون استات | Cyproteroneacetate | البرزبالک
+تماد
+سیپروفلوکساسین | Ciprofloxacin | البرزبالک
+تهران شیمی
+هستی آریا شیمی
+سیپروفلوکساسین آنالوگ اتیلن دیامین | Ciprofloxacin Ethylenediamine Analog | فناوران دارویی حکیم
+سیپروفلوکساسین تزریقی غیر استریل | CIPROFLOXACIN INJECTION GRADE NON-STRIEL | تماد
+سیپروفلوکساسین هیدروکلراید | CIPROFLOXACIN HYDROCHLORIDE | تماد
+فناوران دارویی حکیم
+سیپروهپتادین هیدروکلراید | CYPROHEPTADINE Hcl | دماوند دارو
+سیپونیمود فومارات | Siponimod Fumarate | فناوران دارویی پارسیان
+سیتارابین | Cytarabine | ارسطو
+سیتاگلیپتین فسفات | Sitagliptin phosphate | اکتوبایوکم
+البرزبالک
+تماد
+ثمین دارو ایرانیان
+فرآیند شیمی حکیم
+فناوران دارویی پارسیان
+فناوران دارویی حکیم
+مهبان شیمی
+سیتاگلیپتین فسفات مونوهیدرات | Sitagliptin phosphate monohydrate | آنتی بیوتیک سازی ایران
+دماوند دارو
+فاران شیمی
+هستی آریا شیمی
+هستی بهین فارمد(توسط فاران شیمی خریداری گردیده)
+سیتاگلیپتین مخلوط مناسب سیستم | Sitagliptin System Suitability Mixture (USP) | فناوران دارویی حکیم
+سیتالوپرام ریلیتد کامپاند A | Citalopram Related Compound A (USP) | فناوران دارویی حکیم
+سیتالوپرام ریلیتد کامپاند B | Citalopram Related Compound B (USP) | فناوران دارویی حکیم
+سیتالوپرام ریلیتد کامپاند C | Citalopram Related Compound C (USP) | فناوران دارویی حکیم
+سیتالوپرام ریلیتد کامپاند D | Citalopram Related Compound D (USP) | فناوران دارویی حکیم
+سیتالوپرام ریلیتد کامپاند E | Citalopram Related Compound E (USP) | فناوران دارویی حکیم
+سیتالوپرام ریلیتد کامپاند F | Citalopram Related Compound F (USP) | فناوران دارویی حکیم
+سیتالوپرام ریلیتد کامپاند H | Citalopram Related Compound H (USP) | فناوران دارویی حکیم
+سیتالوپرام هایدروبروماید | Citalopramhydrobromide | البرزبالک
+مهبان شیمی
+سیتالوپرام هیدروبروماید | Citalopram hydrobromide | تهران شیمی
+فناوران دارویی حکیم
+سیتریزین هیدروکلراید | Cetirizine hydrochloride | شيمي دارويي داروپخش
+سیتریک اسید خشک | Citric acid anhydrous | ایتوک فارمد
+سیتریک اسید سولوشن 20% | Citric acid solution 20% | ایتوک فارمد
+سیتریک اسید سولوشن 50% | Citric acid solution 50% | ایتوک فارمد
+سیتریک اسید مونوهیدرات | Citric acid monohydrate | ایتوک فارمد
+سیکلومین ریلیتد کامپاند A | Dicyclomine Related Compound A (USP) | فناوران دارویی حکیم
+سیلدنافیل ریلیتد کامپاند A | Sildenafil Related Compound A (USP) | فناوران دارویی حکیم
+سیلدنافیل سیترات | Sildenafil citrate | اکتوبایوکم
+دماوند دارو
+شيمي دارويي داروپخش
+فناوران دارویی حکیم
+سیلودوسین | Silodosin | البرزفارمد
+سیلوستازول ریلیتد کامپاند A | Cilostazol Related Compound A ( USP) | فناوران دارویی حکیم
+سیلوستازول ریلیتد کامپاند B | Cilostazol Related Compound B ( USP) | فناوران دارویی حکیم
+سیلیس حجم دهنده و سیلیس لایه بردار (ساینده)  مخصوص تولید خمیر دندان | silica | پایا شیمی اسپادانا
+سیلیکا ژل بروکن | Silica gel broken (5-10mm) | ایتوک فارمد
+سیلیکا ژل گرانول | Silica gel granules (2-5mm) | ایتوک فارمد
+سیلیکاژل ستون وTLC | silica gel column and plate chromatography | پایا شیمی اسپادانا
+شربت امگا3 (ادونسیس) | Omega-3 syrup (Adonis) | عصرنانو
+شربت امگا3 پلاس زینک | Omega-3 Plus Zinc Syrup | عصرنانو
+شربت فروکتوز | fructose syrup | فرهیختگان زرنام
+شربت گلوکز | glucose syrup | فرهیختگان زرنام
+شربت منیزیم سیترات پلاس ویتامین B6 | Magnesium Citrate Plus Vitamin B6 Syrup | عصرنانو
+شکر دارویی( ساکارز) | pharma sugar(sucrose) | کشت و صنعت حکیم فارابی خوزستان
+شناسه کلاریترومایسین (USP) | Clarithromycin Identity (USP) | فناوران دارویی حکیم
+طعم دهنده طبیعی انار | Natural pomegranate flavoring | پردیس عصاره
+طعم دهنده طبیعی بادام تلخ | Natural bitter almond flavoring | پردیس عصاره
+طعم دهنده طبیعی پسته | Natural pistachio flavoring | پردیس عصاره
+طعم دهنده طبیعی چای سبز | Natural green tea flavoring | پردیس عصاره
+طعم دهنده طبیعی چای سیاه | Natural black tea flavoring | پردیس عصاره
+طعم دهنده طبیعی خیار | Natural cucumber flavoring | پردیس عصاره
+طعم دهنده طبیعی ریحان | Natural basil flavoring | پردیس عصاره
+طعم دهنده طبیعی سیب | Natural apple flavoring | پردیس عصاره
+طعم دهنده طبیعی شکر | Natural sugar flavoring | پردیس عصاره
+طعم دهنده طبیعی شیرین بیان | Natural licorice flavoring | پردیس عصاره
+طعم دهنده طبیعی طالبی | Natural cantaloupe flavoring | پردیس عصاره
+طعم دهنده طبیعی فندق | Natural hazelnut flavoring | پردیس عصاره
+طعم دهنده طبیعی قهوه | Natural coffee flavoring | پردیس عصاره
+طعم دهنده طبیعی کیوی | Natural kiwi flavoring | پردیس عصاره
+طعم دهنده طبیعی گل محمدی | Natural rose flavoring | پردیس عصاره
+طعم دهنده طبیعی لیمو | Natural lemon flavoring | پردیس عصاره
+طعم دهنده طبیعی هلو | Natural peach flavoring | پردیس عصاره
+طعم دهنده طبیعی هندوانه | Natural watermelon flavoring | پردیس عصاره
+عصاره آبی تغلیظ‌شده انجیر | Concentrated aqueous extract of figs | پردیس عصاره
+عصاره بالک شیرین بیان | Licorice Bulk Extract | پردیس عصاره
+عصاره برگ زیتون پودری | Olive leaf extract powder | پردیس عصاره
+عصاره پروپیلن گلیکولی سدر | Cedarwood Propylene Glycol Extract | پردیس عصاره
+عصاره پنجه شیطان | Devil's claw extract | پردیس عصاره
+عصاره پودری اسطوخودوس | Lavender powder extract | پردیس عصاره
+عصاره پودری آویشن | Thyme powder extract | پردیس عصاره
+عصاره پودری بابونه | Chamomile powder extract | پردیس عصاره
+عصاره پودری بابونه تانسی | Chamomile Tansy Powder Extract | پردیس عصاره
+عصاره پودری بادرنجبویه | Lemon balm powder extract | پردیس عصاره
+عصاره پودری پالرگونیوم | Pelargonium powder extract | پردیس عصاره
+عصاره پودری پنیرک | Paneerak powdered extract | پردیس عصاره
+عصاره پودری پوست انار | Pomegranate peel powder extract | پردیس عصاره
+عصاره پودری چای ترش | Sour tea powder extract | پردیس عصاره
+عصاره پودری چای سیاه | Black tea powder extract | پردیس عصاره
+عصاره پودری دگلیسیریزینه شیرین بیان | Licorice deglycyrrhizinate powder extract | پردیس عصاره
+عصاره پودری رزماری | Rosemary powder extract | پردیس عصاره
+عصاره پودری ریشه کاسنی | Chicory root powder extract | پردیس عصاره
+عصاره پودری زعفران | Saffron powder extract | پردیس عصاره
+عصاره پودری سرکه سیب | Apple cider vinegar powder extract | پردیس عصاره
+عصاره پودری سنجد | Powdered extract of gentian | پردیس عصاره
+عصاره پودری غنی‌شده گلیسیریزیک اسید شیرین بیان | Glycyrrhizic acid enriched licorice powder extract | پردیس عصاره
+عصاره پودری قارچ شیتاکه | Shiitake mushroom powder extract | پردیس عصاره
+عصاره پودری قهوه سبز | Green coffee bean extract powder | پردیس عصاره
+عصاره پودری گزنه | Nettle powder extract | پردیس عصاره
+عصاره پودری گل همیشه بهار | Marigold powder extract | پردیس عصاره
+عصاره پودری گلرنگ | Safflower powder extract | پردیس عصاره
+عصاره پودری لیمو عمانی | Omani lemon powder extract | پردیس عصاره
+عصاره پودری مریم گلی | Sage powder extract | پردیس عصاره
+عصاره پودری میوه نسترن | Rosehip fruit powder extract | پردیس عصاره
+عصاره پودری نعنا فلفلی | Peppermint powder extract | پردیس عصاره
+عصاره پودری والرین | Valerian powder extract | پردیس عصاره
+عصاره تغلیظ‌شده آبی خرنوب | Concentrated carob water extract | پردیس عصاره
+عصاره تغلیظ‌شده زعفران | Concentrated saffron extract | پردیس عصاره
+عصاره تغلیظ‌شده سرخارگل | Concentrated Echinacea extract | پردیس عصاره
+عصاره تغلیظ‌شده کاکائو | Concentrated cocoa extract | پردیس عصاره
+عصاره تغلیظ‌شده گلرنگ | Concentrated safflower extract | پردیس عصاره
+عصاره خشک آویشن | Thyme dry extract | پردیس عصاره
+عصاره خشک چای سبز | Green tea dry extract | پردیس عصاره
+عصاره خشک شیرین بیان | Dry licorice extract | پردیس عصاره
+عصاره خشک میکس: کنگر فرنگی، خارمریم و ریشه قاصدک | Dry extract mix: artichoke, milk thistle and dandelion root | پردیس عصاره
+عصاره رزماری هیدروگلیکولی | Hydroglycolic rosemary extract | پردیس عصاره
+عصاره شیرین بیان قره | Licorice extract | پردیس عصاره
+عصاره گلیکولی آلوئه‌ورا | Aloe vera glycolic extract | پردیس عصاره
+عصاره گلیکولی انار | Pomegranate glycolic extract | پردیس عصاره
+عصاره گلیکولی بابونه | Chamomile glycolic extract | پردیس عصاره
+عصاره گلیکولی بادرنجبویه | Glycolic lemon balm extract | پردیس عصاره
+عصاره گلیکولی زعفران | Saffron glycolic extract | پردیس عصاره
+عصاره گلیکولی گل محمدی | Rosehip Glycolic Extract | پردیس عصاره
+عصاره گلیکولی مریم گلی | Sage Glycolic Extract | پردیس عصاره
+عصاره مایع بابونه | Chamomile liquid extract | پردیس عصاره
+عصاره مایع تمر هندی | Tamarind liquid extract | پردیس عصاره
+عصاره مایع عشقه | Liquid extract of love | پردیس عصاره
+عصاره هیدروالکلی اسطوخودوس | Lavender hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی اکالیپتوس | Eucalyptus hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی اکیناسه | Echinacea hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی انجیر | Fig hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی آنیسون | Anise hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی آویشن | Thyme hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی آویشن باغی | Hydroalcoholic extract of thyme | پردیس عصاره
+عصاره هیدروالکلی آویشن شیرازی | Shirazi thyme hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی بادرنجبویه | Lemon balm hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی برگ بو | Hydroalcoholic extract of bay leaf | پردیس عصاره
+عصاره هیدروالکلی برگ زیتون | Olive leaf hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی بنفشه سه رنگ | Tricolor violet hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی بنفشه سه رنگ ۱۸ میلی‌گرم در ۱۰۰ گرم | Tricolor violet hydroalcoholic extract 18 mg/100 g | پردیس عصاره
+عصاره هیدروالکلی پنیرک | Hydroalcoholic extract of cheese | پردیس عصاره
+عصاره هیدروالکلی پوست انار | Hydroalcoholic extract of pomegranate peel | پردیس عصاره
+عصاره هیدروالکلی تغلیظ‌شده آلو | Concentrated hydroalcoholic extract of plum | پردیس عصاره
+عصاره هیدروالکلی خارخاسک | Hydroalcoholic extract of Kharkhasak | پردیس عصاره
+عصاره هیدروالکلی خارمریم | Milk thistle hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی ختمی | Marshmallow hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی دانه خربزه | Hydroalcoholic extract of melon seeds | پردیس عصاره
+عصاره هیدروالکلی دم گیلاس | Cherry stem hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی رازیانه | Hydroalcoholic extract of fennel | پردیس عصاره
+عصاره هیدروالکلی رزماری | Rosemary hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی ریشه کاسنی | Chicory root hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی زردآلو | Hydroalcoholic extract of apricot | پردیس عصاره
+عصاره هیدروالکلی زردچوبه | Turmeric hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی زنجبیل ماده خشک ۱۰ درصد | Hydroalcoholic extract of ginger, dry matter 10 | پردیس عصاره
+عصاره هیدروالکلی زنجبیل ماده خشک ۲ درصد | Hydroalcoholic extract of ginger, dry matter 2 . | پردیس عصاره
+عصاره هیدروالکلی زیره سبز | Cumin hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی سنا | Senna hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی شنبلیله | Hydroalcoholic extract of fenugreek | پردیس عصاره
+عصاره هیدروالکلی شیرین بیان | Licorice hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی کاکل ذرت | Corn cob hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی کنگر فرنگی | Hydroalcoholic extract of artichoke | پردیس عصاره
+عصاره هیدروالکلی گزنه | Nettle hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی گل ساعتی | Hydroalcoholic extract of passion flower | پردیس عصاره
+عصاره هیدروالکلی گل همیشه بهار | Marigold hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی مرزه | Sage hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی مریم گلی | Sage hydroalcoholic extract | پردیس عصاره
+عصاره هیدروالکلی نعنا فلفلی | Peppermint hydroalcoholic extract | پردیس عصاره
+عصاره هیدروگلیسیرینه آلوئه‌ورا | Hydroglycerinated aloe vera extract | پردیس عصاره
+عصاره هیدروگلیکولی اسطوخودوس | Lavender Hydroglycolic Extract | پردیس عصاره
+عصاره هیدروگلیکولی پوست انار | Pomegranate peel hydroglycolic extract | پردیس عصاره
+عصاره هیدروگلیکولی چای سبز | Green tea hydroglycolic extract | پردیس عصاره
+عصاره هیدروگلیکولی سیر | Garlic Hydroglycolic Extract | پردیس عصاره
+عصاره هیدروگلیکولی گزنه | Nettle Hydroglycolic Extract | پردیس عصاره
+عصاره هیدروگلیکولی گل همیشه بهار | Marigold Hydroglycolic Extract | پردیس عصاره
+فاموتیدین | Famotidine | تهران شیمی
+ثمین دارو ایرانیان
+سروش مانا فارمد
+شيمي دارويي داروپخش
+شیمی فارمد پارس
+فناوران دارویی حکیم
+مهبان شیمی
+هستی آریا شیمی
+فاموتیدین ریلیتد کامپاند B | Famotidine Related Compound B (USP) | فناوران دارویی حکیم
+فاموتیدین ریلیتد کامپاند C | Famotidine Related Compound C (USP) | فناوران دارویی حکیم
+فاموتیدین ریلیتد کامپاند D | Famotidine Related Compound D (USP) | فناوران دارویی حکیم
+فاموتیدین ریلیتد کامپاند E | Famotidine Related Compound E (USP) | فناوران دارویی حکیم
+فاموتیدین ریلیتد کامپاند F | Famotidine Related Compound F (USP) | فناوران دارویی حکیم
+فاویپیراویر | Favipiravir | فناوران دارویی پارسیان
+فرمالدهید سولوشن 10% | Formaldehyde solution 10% | ایتوک فارمد
+فرمالدهید سولوشن 2% | Formaldehyde solution 2% | ایتوک فارمد
+فرمالدهید سولوشن 3% | Formaldehyde solution 3% | ایتوک فارمد
+فرمالدهید سولوشن 37% | Formaldehyde solution 37% | ایتوک فارمد
+فرمیک اسید | Formic acid | ایتوک فارمد
+فروس سولفات 7 آبه | Crystalline Ferrous sulphate | کاویان شیمی
+فروس سولفات خشک | Dried Ferrous sulphate | کاویان شیمی
+فروس فومارات | Ferrous Fumarate | شيمي دارويي داروپخش
+فریک کربوکسی مالتوز | Ferric Carboxy maltose | اکتوبایوکم
+Ferric carboxymaltose | نگین دارو نوآور
+فسفات روکسولیتینیب | Ruxolitinib Phosphate | فناوران دارویی پارسیان
+فسفوریک اسید 85% | Phosphoric acid85% | ایتوک فارمد
+فکسوفنادین ریلیتد کامپاند A | Fexofenadine Related Compound A (USP) | فناوران دارویی حکیم
+فکسوفنادین ریلیتد کامپاند B | Fexofenadine Related Compound B (USP) | فناوران دارویی حکیم
+فکسوفنادین ریلیتد کامپاند C | Fexofenadine Related Compound C (USP) | فناوران دارویی حکیم
+فکسوفنادین هیدرو کلراید | Fexofenadine Hydrochloride | تهران شیمی
+شيمي دارويي داروپخش
+فکسوفنادین هیدروکلراید | Fexofenadine Hydrochloride | اکتوبایوکم
+ثمین دارو ایرانیان
+فرآیند شیمی حکیم
+فناوران دارویی حکیم
+فلوتیکازون پروپیونات | Fluticasone Propionate | فناوران دارویی حکیم
+فلوروکینولونیک اسید | Fluoroquinolonic Acid | فناوران دارویی حکیم
+فلوکستین ریلیتد کامپاند A | Fluoxetine Reloated Compound B (USP) | فناوران دارویی حکیم
+فلوکستین ریلیتد کامپاند B | Fluoxetine Reloated Compound B (USP) | فناوران دارویی حکیم
+فلوکستین هیدروکلراید | FLUOXETINE HYDROCHLORIDE | تماد
+دماوند دارو
+فناوران دارویی حکیم
+فلوکونازول | Fluconazole | فناوران دارویی حکیم
+فلوکونازول ریلیتد کامپاند A | Fluconazole Related Compound A (USP) | فناوران دارویی حکیم
+فلوکونازول ریلیتد کامپاند B | Fluconazole Related Compound B (USP) | فناوران دارویی حکیم
+فلوکونازول ریلیتد کامپاند C | Fluconazole Related Compound C (USP) | فناوران دارویی حکیم
+فلونیکسین ریلیتد کامپاند A | Flunixin Related Compound A (USP) | فناوران دارویی حکیم
+فلونیکسین ریلیتد کامپاند B | Flunixin Related Compound B (USP) | فناوران دارویی حکیم
+فلونیکسین ریلیتد کامپاند C | Flunixin Related Compound C (USP) | فناوران دارویی حکیم
+فلوواکسامین مالئات | Fluvoxaminemaleate | البرزبالک
+تماد
+تهران شیمی
+دماوند دارو
+سروش مانا فارمد
+فناوران دارویی حکیم
+هستی آریا شیمی
+فنوباربیتال | PHENOBARBITAL | تماد
+فنوفیبرات | Fenofibrate | فناوران دارویی حکیم
+فنوفیبرات ریلیتد کامپاند A | Fenofibrate Related Compound A (USP) | فناوران دارویی حکیم
+فنوفیبرات ریلیتد کامپاند B | Fenofibrate Related Compound B (USP) | فناوران دارویی حکیم
+فنوفیبرات ریلیتد کامپاند C | Fenofibrate Related Compound C (USP) | فناوران دارویی حکیم
+فنول | Phenol | ایتوک فارمد
+فنول فتالئین | Phenolphthalein | ایتوک فارمد
+فنی‌توئین | Phenytoin | فناوران دارویی حکیم
+فنی‌توئین ریلیتد کامپاند A | Phenytoin Related Compound A (USP) | فناوران دارویی حکیم
+فنی‌توئین سدیم | Phenytoin Sodium | فناوران دارویی حکیم
+فنیرامین مالئات | Pheniramine Maleate | فناوران دارویی حکیم
+فنیل افرین هیدروکلراید | Phenylephrine hydrochloride | بهداشت کار
+دماوند دارو
+هستی آریا شیمی
+فنیل‌افرین ریلیتد کامپاند C | Phenylephrine Related Compound C (USP) | فناوران دارویی حکیم
+فنیل‌افرین ریلیتد کامپاند D | Phenylephrine Related Compound D (USP) | فناوران دارویی حکیم
+فنیل‌افرین ریلیتد کامپاند E | Phenylephrine Related Compound E (USP) | فناوران دارویی حکیم
+فنیل‌افرین هیدروکلراید | Phenylephrine hydrochloride | فناوران دارویی حکیم
+فنیل‌افرین هیدروکلراید برای شناسایی پیک | Phenylephrine HCl for Peak Identification (EP) | فناوران دارویی حکیم
+فولکدین | PHOLCODINE (FOR EXPORT) | تماد
+فولیتروپین | Follitropin | سیناژن
+فیلگراستیم | Filgrastim | سیناژن
+فینگولیمود هیدروکلراید | Fingolimod HCl | توسعه داروسازی دانش
+فناوران دارویی پارسیان
+قرص امپرازول ۸.۵٪ | Omeprazole dr pellet 8.5 | اکتوبایوکم
+كلسيم سيترات | Calcium citrate | بهان سار
+كلسيم فسفات | Calcium phosphate | بهان سار
+كلسيم كتات | Calcium Ketate | بهان سار
+كلسيم كلرايد | Calcium chloride | بهان سار
+كلسيم گلوكونات انهيدروس2 | Calcium gluconate anhydrous | بهان سار
+كلسيم گيسينات | Calcium gisinate | بهان سار
+کاپتوپریل | Captopril | شيمي دارويي داروپخش
+فناوران دارویی حکیم
+کاپتوپریل دی سولفید | Captopril Disulfide | فناوران دارویی حکیم
+کاتالیست پالادیوم کربن5 و 10 درصد | Palladium catalyst | پایا شیمی اسپادانا
+کاربامازپین | Carbamazepine | ارسطو
+البرزبالک
+تماد
+فناوران دارویی حکیم
+کاربامازپین ریلیتد کامپاند A | Carbamazepine Related Compound A (USP) | فناوران دارویی حکیم
+کاربامازپین ریلیتد کامپاند B | Carbamazepine Related Compound B (USP) | فناوران دارویی حکیم
+کاربیدوپا | Carbidopa | فناوران دارویی حکیم
+کارودیلول | Carvedilol | البرزفارمد
+دماوند دارو
+شيمي دارويي داروپخش
+فناوران دارویی حکیم
+کارودیلول ریلیتد کامپاند A | Carvedilol Related Compound A (USP) | فناوران دارویی حکیم
+کارودیلول ریلیتد کامپاند B | Carvedilol Related Compound B (USP) | فناوران دارویی حکیم
+کارودیلول ریلیتد کامپاند C | Carvedilol Related Compound C (USP) | فناوران دارویی حکیم
+کارودیلول ریلیتد کامپاند D | Carvedilol Related Compound D (USP) | فناوران دارویی حکیم
+کارودیلول ریلیتد کامپاند E | Carvedilol Related Compound E (USP) | فناوران دارویی حکیم
+کارودیلول مخلوط مناسب سیستم | Carvedilol System Suitability Mixture (USP) | فناوران دارویی حکیم
+کافئین | Caffeine | فناوران دارویی حکیم
+کالامین | Calamine | صنایع شیمیایی و دارویی تبریز
+کانابیدیول | Cannabidiol | اکتوبایوکم
+کپسیتابین | Capecitabine | ارسطو
+اکتوبایوکم
+کتوتیفن فومارات | KETOTIFEN FUMARATE | تماد
+کتورولاک ترومتامین | Ketorolac Tromethamine | فناوران دارویی حکیم
+کتورولاک ترومتامین ( گرید تزریقی غیر استریل) | KETOROLAC TROMETHAMIN( INJECTION GRADE NON STRILE) | تماد
+کتورولاک ریلیتد کامپاند A | Ketorolac Related Compound A (USP) | فناوران دارویی حکیم
+کتورولاک ریلیتد کامپاند B | Ketorolac Related Compound B (USP) | فناوران دارویی حکیم
+کتورولاک ریلیتد کامپاند C | Ketorolac Related Compound C (USP) | فناوران دارویی حکیم
+کتورولاک ریلیتد کامپاند D | Ketorolac Related Compound D (USP) | فناوران دارویی حکیم
+کتورولاک ریلیتد کامپاند G | Ketotifen Related Compound G (USP) | فناوران دارویی حکیم
+کتوکونازول | Ketoconazole | فناوران دارویی حکیم
+کدئین بیس | CODEINE BASE (FOR EXPORT) | تماد
+کدئین فسفات | Codeine phosphate | پرند دارو
+تماد
+فناوران دارویی حکیم
+کدئین مخلوط مناسب سیستم (USP) | Codeine System Suitability Mixture (USP) | فناوران دارویی حکیم
+کربن اکتیو گرانولی | Granular Activated Carbon | پژوهان شیمی ناصر خسرو
+کربن فعال اشباع شده | Impregnated Activated Carbon | پژوهان شیمی ناصر خسرو
+کربن فعال پودری | Powder Activated Carbon | پژوهان شیمی ناصر خسرو
+کربن فعال میله‌ای | Extruded Activated Carbon | پژوهان شیمی ناصر خسرو
+کربنات کلسیم | Calcium Carbonate | فناوران دارویی حکیم
+کربنات کلسیم سبک | Light Calcium Carbonate | تعاونی تولیدی باریم سولفات ایران
+کربنات کلسیم سنگین | Heavy Calcium Carbonate | تعاونی تولیدی باریم سولفات ایران
+کربنات لیتیوم | Lithium carbonate | ثمین دارو ایرانیان
+کرومولین ریلیتد کامپاند A | Cromolyn Related Compound A (USP) | فناوران دارویی حکیم
+کرومولین ریلیتد کامپاند B | Cromolyn Related Compound B (USP) | فناوران دارویی حکیم
+کرومولین سدیم | Cromolyn Sodium | فناوران دارویی حکیم
+کریزوتینیب | Crizotinib | فناوران دارویی پارسیان
+کلاریترومایسین | Clarithromycin | تماد
+ثمین دارو ایرانیان
+فناوران دارویی حکیم
+گروه صنایع شفا فارمد
+کلاولانات پتاسیم | Clavulanate potassium | تهران شیمی
+کلر مایع | Liquide Chlorine | کلرپارس
+کلرپرومازین هیدروکلراید | Chlorpromazine Hydrochloride | فناوران دارویی حکیم
+کلردیازپوکساید | Chlordiazepoxide | فناوران دارویی حکیم
+کلردیازپوکساید ریلیتد کامپاند A | Chlordiazepoxide Related Compound A (USP) | فناوران دارویی حکیم
+کلردیازپوکساید ریلیتد کامپاند B | Chlorpheniramine Related Compound B (USP) | فناوران دارویی حکیم
+کلردیازپوکساید ریلیتد کامپاند C | Chlorpheniramine Related Compound C (USP) | فناوران دارویی حکیم
+کلردیازپوکساید هیدروکلراید | Chlordiazepoxide Hydrochloride | فناوران دارویی حکیم
+کلرفنیرامین مالئات2 | Chlorpheniramine Maleate | دماوند دارو
+فناوران دارویی حکیم
+کلروبنزوفنون-4 | Chlorobenzophenone-4 | فناوران دارویی حکیم
+کلرور سدیم دارا. گرید دارویی | Sodium chloride, pharmaceutical grade | پارس نمک کاوه
+کلروفرم | Chloroform | ایتوک فارمد
+کلروفریک | Ferric Chloride | کلرپارس
+کلسیم استئارات | Calcium stearate | صنایع شیمیایی و دارویی تبریز
+کلسیم سیترات | Calcium citrate | صنایع شیمیایی و دارویی تبریز
+کلسیم کربنات | Calcium Carbonate | ایتوک فارمد
+کلسیم کربنات سبک | Calcium carbonate(light) usp | صنایع شیمیایی و دارویی تبریز
+کلسیم کربنات سنگین | Calcium carbonate(heavy) usp | صنایع شیمیایی و دارویی تبریز
+کلسیم کربنات گرانوله | Calcium carbonate granular(easy press) usp | صنایع شیمیایی و دارویی تبریز
+کلسیم گلیسروفسفات | Calcium Glycerophosphate | صنایع شیمیایی و دارویی تبریز
+کلوبتازول پروپیونات | Clobetasol propionate | بهداشت کار
+فناوران دارویی حکیم
+کلوبتازول پروپیونات ریلیتد کامپاند A | Clobetasol Propionate Related Compound A (USP) | فناوران دارویی حکیم
+کلوپیدوگرل | Clopidogrel | اکتوبایوکم
+فرآیند شیمی حکیم
+فناوران دارویی حکیم
+مهبان شیمی
+هستی آریا شیمی
+کلوپیدوگرل ریلیتد کامپاند A | Clopidogrel Related Compound A (USP) | فناوران دارویی حکیم
+کلوپیدوگرل ریلیتد کامپاند B | Clopidogrel Related Compound B (USP) | فناوران دارویی حکیم
+کلوپیدوگرل ریلیتد کامپاند C | Clopidogrel Related Compound C (USP) | فناوران دارویی حکیم
+کلوتریمازول | Clotrimazole | فناوران دارویی حکیم
+کلوتریمازول ریلیتد کامپاند A | Clotrimazole Related Compound A (USP) | فناوران دارویی حکیم
+کلوزاپین | Clozapine | فناوران دارویی حکیم
+کلونازپام | Clonazepam | فناوران دارویی حکیم
+کلونازپام ریلیتد کامپاند A | Clonazepam Related Compound A (USP) | فناوران دارویی حکیم
+کلونازپام ریلیتد کامپاند B | Clonazepam Related Compound B (USP) | فناوران دارویی حکیم
+کلونازپام ریلیتد کامپاند C | Clonazepam Related Compound C (USP) | فناوران دارویی حکیم
+کلیندامایسین فسفات | Clindamycin Phosphate | فناوران دارویی حکیم
+کلیندامایسین هیدروکلراید | Clindamycin Hydrochloride | فناوران دارویی حکیم
+کوتیاپین دسثوکسی | Quetiapine Desethoxy | فناوران دارویی حکیم
+کوتیاپین ریلیتد کامپاند B | Quetiapine Related Compound B (USP) | فناوران دارویی حکیم
+کوتیاپین ریلیتد کامپاند G | Quetiapine Related Compound G (USP) | فناوران دارویی حکیم
+کوتیاپین ریلیتد کامپاند H | Quetiapine Related Compound H (USP) | فناوران دارویی حکیم
+کوتیاپین فومارات برای سازگاری باسیستم | Quetiapine for System Suitability (USP) | فناوران دارویی حکیم
+کوئتیاپین فومارات | Quetiapine fumarate | آنتی بیوتیک سازی ایران
+تماد
+فرآیند شیمی حکیم
+فناوران دارویی حکیم
+کیتوکونازول | Ketoconazole | ارسطو
+گاباپنتین | Gabapentin | اکتوبایوکم
+البرزبالک
+ثمین دارو ایرانیان
+دماوند دارو
+شيمي دارويي داروپخش
+فناوران دارویی حکیم
+مهبان شیمی
+گاباپنتین ریلیتد کامپاند A | Gabapentin Related Compound A (USP) | فناوران دارویی حکیم
+گاباپنتین ریلیتد کامپاند B | Gabapentin Related Compound B (USP) | فناوران دارویی حکیم
+گاباپنتین ریلیتد کامپاند D | Gabapentin Related Compound D (USP) | فناوران دارویی حکیم
+گاباپنتین ریلیتد کامپاند E | Gabapentin Related Compound E (USP) | فناوران دارویی حکیم
+گاز هیدروژن | Hydrogen Gas | کلرپارس
+گرانول آپیکسابان | Apixaban Granule | فناوران دارویی پارسیان
+گرانول ارلوتینیب هیدروکلراید | Erlotinib Hydrochloride Granule | فناوران دارویی پارسیان
+گرانول استات آبیراترون | Abiraterone Acetate Granule | فناوران دارویی پارسیان
+گرانول ایبروتینیب | Ibrutinib Granule | فناوران دارویی پارسیان
+گرانول ایماتینیب مزیلات | Imatinib Mesylate Granule | فناوران دارویی پارسیان
+گرانول پازوپانیب هیدروکلراید | Pazopanib Hydrochloride Granule | فناوران دارویی پارسیان
+گرانول پالبوسیکلیب | Palbociclib Granule | فناوران دارویی پارسیان
+گرانول تیکاگرلور | Ticagrelor Granule | فناوران دارویی پارسیان
+گرانول جفیتینیب | Gefitinib Granule | فناوران دارویی پارسیان
+گرانول داساتینیب مونوهیدرات | Dasatinib Monohydrate Granule | فناوران دارویی پارسیان
+گرانول رسمتیروم | Resmetirom Granule | فناوران دارویی پارسیان
+گرانول ریواروکسابان | Rivaroxaban Granule | فناوران دارویی پارسیان
+گرانول سورافنیب توسیلات | Sorafenib Tosylate Granule | فناوران دارویی پارسیان
+گرانول سیترات توفاسیتینیب | Tofacitinib Citrate Granule | فناوران دارویی پارسیان
+گرانول فاویپیراویر | Favipiravir Granule | فناوران دارویی پارسیان
+گرانول مالات سونیتینیب | Sunitinib Malate Granule | فناوران دارویی پارسیان
+گرانول مزیلات اوسیمرتینیب | Osimertinib Mesylate Granule | فناوران دارویی پارسیان
+گرانول مونوهیدرات رگورافنیب | Regorafenib Monohydrate Granule | فناوران دارویی پارسیان
+گرانول مونوهیدرات نیلوتینیب هیدروکلراید | Nilotinib Hydrochloride Monohydrate Granule | فناوران دارویی پارسیان
+گرانول نیتروگلیسرین پیوسته رهش 1/6% | NITROGLYCERIN SR GRANULES 1.6% | درسا دارو
+گرانول نیتروگلیسیرین | Nitroglycerin Granules | اکتوبایوکم
+گرانول همی هیدرات لنالیدومید | Lenalidomide Hemihydrate Granule | فناوران دارویی پارسیان
+گرانول واندتانیب | Vandetanib Granule | فناوران دارویی پارسیان
+گرانیسترون ریلیتد کامپاند A | Granisetron Related Compound A (USP) | فناوران دارویی حکیم
+گرانیسترون ریلیتد کامپاند B | Granisetron Related Compound B (USP) | فناوران دارویی حکیم
+گرانیسترون ریلیتد کامپاند C | Granisetron Related Compound C (USP) | فناوران دارویی حکیم
+گرانیسترون ریلیتد کامپاند D | Granisetron Related Compound D (USP) | فناوران دارویی حکیم
+گرانیسترون هیدروکلراید | Granisetron hydrochloride | شيمي دارويي داروپخش
+گلاتیرامر استات | Glatiramer acetate | نگین دارو نوآور
+گلایبورید | Glyburide | فناوران دارویی حکیم
+گلرنگ | Safflower | پردیس عصاره
+گلوکزامین هیدروکلراید | Glucosamine Hydrochloride | فناوران دارویی حکیم
+گلی بن کلامید | Glibenclamide | مهبان شیمی
+گلیسیرین | Glycerol | ایتوک فارمد
+گلیکلازید | Gliclazide | اکتوبایوکم
+تماد
+ثمین دارو ایرانیان
+سروش مانا فارمد
+فرآیند شیمی حکیم
+فناوران دارویی حکیم
+هستی آریا شیمی
+گوانین | Guanine | فناوران دارویی حکیم
+گوایفنسین | Guaifenesin | فناوران دارویی حکیم
+گوسلکوماب | Guselkumab | سیناژن
+لارونیداز | Laronidase | سیناژن
+لاکتوز مونوهیدرات | Lactose monohydrate | شیمی فارمد پارس
+لاموتریژین | Lamotrigine | ارسطو
+شيمي دارويي داروپخش
+لانزوپرازول | Lansoprazole | فناوران دارویی حکیم
+لانزوپرازول ریلیتد کامپاند A | Lansoprazole Related Compound A (USP) | فناوران دارویی حکیم
+لانزوپرازول ریلیتد کامپاند B | Lansoprazole Related Compound B (USP) | فناوران دارویی حکیم
+لتروزول | Letrozole | فناوران دارویی پارسیان
+لنالیدومید | Lenalidomide | هیوا فارمد
+لنالیدومید همی‌هیدرات | Lenalidomide Hemihydrate | فناوران دارویی پارسیان
+لنسوپرازول | Lansoprazole | سروش مانا فارمد
+لنسوپرازول پلت 15% | LANSOPRAZOLE PELLET 15% | تماد
+لنواتینیب مسیلات | Lenvatinib Mesylate | فناوران دارویی پارسیان
+لوپرامید ریلیتد کامپاند F | Loperamide Related Compound F (USP) | فناوران دارویی حکیم
+لوپرامید هیدروکلراید | Loperamide Hydrochloride | فناوران دارویی حکیم
+لوتیراستام | Levetiracetam | فناوران دارویی حکیم
+لوتیراستام ریلیتد کامپاند A | Levetiracetam Related Compound A (USP) | فناوران دارویی حکیم
+لوتیراستام ریلیتد کامپاند B | Levetiracetam Related Compound B (USP) | فناوران دارویی حکیم
+لوراتادین | Loratadine | ارسطو
+البرزبالک
+شيمي دارويي داروپخش
+فناوران دارویی حکیم
+هستی آریا شیمی
+لوراتادین ریلیتد کامپاند A | Loratadine Related Compound A (USP) | فناوران دارویی حکیم
+لوراتادین ریلیتد کامپاند B | Loratadine Related Compound B (USP) | فناوران دارویی حکیم
+لوزارتان پتاسیم | Losartanpotassium | البرزبالک
+تهران شیمی
+ثمین دارو ایرانیان
+دماوند دارو
+شيمي دارويي داروپخش
+شیمی فارمد پارس
+فاران شیمی
+فناوران دارویی حکیم
+هستی آریا شیمی
+هستی بهین فارمد(توسط فاران شیمی خریداری گردیده)
+لووتیراستام | Levetiracetam | هستی آریا شیمی
+لوودوپا | Levodopa | فناوران دارویی حکیم
+لووفلوکساسین | Levofloxacin | فناوران دارویی حکیم
+هستی آریا شیمی
+لووفلوکساسین تزریقی غیر استریل | LEVOFLOXACIN INJECTION GRADE NON-STRIEL | تماد
+لووفلوکساسین ریلیتد کامپاند A | Levofloxacin Related Compound A (USP) | فناوران دارویی حکیم
+لووفلوکساسین ریلیتد کامپاند B | Levofloxacin Related Compound B (USP) | فناوران دارویی حکیم
+لووفلوکساسین همی هیدرات | LEVOFLOXACIN HEMIHYDRATE | تماد
+لووکارنیتین | Levocarnitine | فناوران دارویی حکیم
+لووکارنیتین ریلیتد کامپاند A | Levocarnitine Related Compound A (USP) | فناوران دارویی حکیم
+ليتيم كربنات | Lithium carbonate | بهان سار
+لیدوکانین هیدروکلراید | Lidocaine hydrochloride | شيمي دارويي داروپخش
+لیدوکائین | Lidocaine | ثمین دارو ایرانیان
+فناوران دارویی حکیم
+کیمیا اثر سلامت
+لیدوکائین بیس | Lidocaine base | شيمي دارويي داروپخش
+Lidocainebase | البرزبالک
+لیدوکائین ریلیتد کامپاند H | Lidocaine Related Compound H (USP) | فناوران دارویی حکیم
+لیدوکائین هیدروکلراید | Lidocaine HCl | هستی آریا شیمی
+Lidocaine hydrochloride | فناوران دارویی حکیم
+Lidocainehydrochloride | البرزبالک
+لیراگلوتاید | Liraglutide | سیناژن
+لیزدکسامفتامین دی مزیلات | Lisdexamfetamine dimesylate | توفيق دارو
+لیناگلیپتین | Linagliptin | اکتوبایوکم
+فاران شیمی
+فناوران دارویی پارسیان
+فناوران دارویی حکیم
+هستی آریا شیمی
+هستی بهین فارمد(توسط فاران شیمی خریداری گردیده)
+هیوا فارمد
+لینزولید ریلیتد کامپاند B | Linezolid Related Compound B (USP) | فناوران دارویی حکیم
+لینزولید ریلیتد کامپاند D | Linezolid Related Compound D (USP) | فناوران دارویی حکیم
+لینکومایسین هیدروکلراید | Lincomycin Hydrochloride | فناوران دارویی حکیم
+مالتودکسترین | Maltodextrin | فرهیختگان زرنام
+ماندلیک اسید | Mandelic Acid | فناوران دارویی حکیم
+مایکوفنولات | Mycophenolate | ارسطو
+مهبان شیمی
+ماینوکسیدیل | Minoxidil | ایماژن
+ماینوکسیدیل ریلیتد کامپاند E | Minoxidil Related Compound E (USP) | فناوران دارویی حکیم
+مبورین هیدروکلراید | Mebeverine Hydrochloride | فناوران دارویی حکیم
+متادون هیدروکلراید | Methadone hydrochloride | پرند دارو
+تماد
+مهبان شیمی
+هستی آریا شیمی
+متانول | Methanol | ایتوک فارمد
+جابر ازنق شیمی
+دکترمجللی
+مترونيدازول بنزوات | Metronidazole benzoate | کیمیاگران امروز
+مترونیدازول | Metronidazole | ثمین دارو ایرانیان
+فناوران دارویی حکیم
+کیمیاگران امروز
+متفورمین | Metformin | تماد
+ثمین دارو ایرانیان
+شیمی فارمد پارس
+فناوران دارویی حکیم
+کیمیاگران امروز
+مهبان شیمی
+متفورمین ایمپیوریتی F | Metformin Impurity F (EP) | فناوران دارویی حکیم
+متفورمین ایمپیوریتی F (NET) | Metformin Impurity F (EP), Net | فناوران دارویی حکیم
+متفورمین ریلیتد کامپاند A | Metformin Related Compound A (USP) | فناوران دارویی حکیم
+متفورمین ریلیتد کامپاند B | Metformin Related Compound B (USP) | فناوران دارویی حکیم
+متفورمین ریلیتد کامپاند C | Metformin Related Compound C (USP) | فناوران دارویی حکیم
+متوپرولول تارتارات | METOPROLOL TARTRATE | دماوند دارو
+فناوران دارویی حکیم
+متوپرولول ریلیتد کامپاند A | Metoprolol Related Compound A (USP) | فناوران دارویی حکیم
+متوپرولول ریلیتد کامپاند B | Metoprolol Related Compound B (USP) | فناوران دارویی حکیم
+متوپرولول ریلیتد کامپاند C | Metoprolol Related Compound C (USP) | فناوران دارویی حکیم
+متوپرولول ریلیتد کامپاند D | Metoprolol Related Compound D (USP) | فناوران دارویی حکیم
+متوپرولول سوکسینات | Metoprolol Succinate | فناوران دارویی حکیم
+متوپرولول فومارات | Metoprolol Fumarate | فناوران دارویی حکیم
+متوپرولولتارتارات | Metoprololtartrate | البرزبالک
+متوپرولولسوکسینات | Metoprololsuccinate | البرزبالک
+متوکاربامول | Methocarbamol | تهران شیمی
+ثمین دارو ایرانیان
+شيمي دارويي داروپخش
+فناوران دارویی حکیم
+هستی آریا شیمی
+متوکلوپرامید هیدروکلراید | Metoclopramide hydrochloride | بهداشت کار
+متیل استات | Methyl acetate | جابر ازنق شیمی
+متیل آکریدین-9 | Methylacridine-9 | فناوران دارویی حکیم
+متیل اورنج | Methyl orange | ایتوک فارمد
+متیل پارابن | Methylparaben | فناوران دارویی حکیم
+متیل دوپا | Methyldopa | فناوران دارویی حکیم
+متیل رد | Methyl red | ایتوک فارمد
+متیلپارابن | Methylparaben | البرزبالک
+متیلن بلو | Methylene blue | ایتوک فارمد
+متیمازول ریلیتد کامپاند C | Methimazole Related Compound C (USP) | فناوران دارویی حکیم
+محلول آمونیاک | ammonia solution | جابر ازنق شیمی
+مخلوط راسمیک لوتیراستام (USP) | Levetiracetam Racemic Mixture (USP) | فناوران دارویی حکیم
+مخلوط مناسب سیستم لوپرامید (USP) | Loperamide System Suitability Mixture (USP) | فناوران دارویی حکیم
+مرفین سولفات | MORPHINE SULPHATE | تماد
+مرفین سولفات( گرید تزریقی غیر استریل) | MORPHINE SULFATE( INJECTION GRADE NON-STERILE) | تماد
+مزالازین | Mesalazine | توفيق دارو
+کیمیاگران امروز
+هستی آریا شیمی
+مس گلوكونات | Copper gluconate | بهان سار
+مسالامین | Mesalamine | فناوران دارویی حکیم
+معرف کارل فیشر با پیریدین | Karl Fischer reagent - With Pyridine | ایتوک فارمد
+معرف کارل فیشر بدون پیریدین | Karl Fischer reagent - Pyridine free | ایتوک فارمد
+مفنامیک اسید | Mefenamic Acid | فناوران دارویی حکیم
+ملاتونین | Melatonin | فناوران دارویی حکیم
+ملاتونین ریلیتد کامپاند A | Melatonin Related Compound A (USP) | فناوران دارویی حکیم
+ملامینه | Melamine | فناوران دارویی حکیم
+ملوکسیکام | Meloxicam | آموفارمد آریا
+فناوران دارویی حکیم
+ملوکسیکام ایمپیوریتی C | Meloxicam Impurity C (EP) | فناوران دارویی حکیم
+ملوکسیکام ایمپیوریتی استاندارد | Meloxicam Impurity Standard (BP) | فناوران دارویی حکیم
+ملوکسیکام ریلیتد کامپاند A | Meloxicam Related Compound A (USP) | فناوران دارویی حکیم
+ملوکسیکام ریلیتد کامپاند B | Meloxicam Related Compound B (USP) | فناوران دارویی حکیم
+ملوکسیکام ریلیتد کامپاند C | Meloxicam Related Compound C (USP) | فناوران دارویی حکیم
+ممانتین ریلیتد کامپاند A | Memantine Related Compound A (USP) | فناوران دارویی حکیم
+ممانتین ریلیتد کامپاند B | Memantine Related Compound B (USP) | فناوران دارویی حکیم
+ممانتین ریلیتد کامپاند C | Memantine Related Compound C (USP) | فناوران دارویی حکیم
+ممانتین ریلیتد کامپاند D | Memantine Related Compound D (USP) | فناوران دارویی حکیم
+ممانتین ریلیتد کامپاند E | Memantine Related Compound E (USP) | فناوران دارویی حکیم
+منو سدیم فسفات انهیدروس | monobasic sodium phosphate Anhydrous | صنایع شیمیایی و دارویی تبریز
+منو سدیم فسفات دی هیدرات | monobasic sodium phosphate dihydrate | صنایع شیمیایی و دارویی تبریز
+منيزيم استئارات | Magnesium stearate | بهان سار
+منيزيم سيترات | Magnesium citrate | بهان سار
+منيزيم كتات | Magnesium Ketate | بهان سار
+منيزيم كربنات | Magnesium carbonate | بهان سار
+منيزيم گلوكونات آنهيدروس | Magnesium gluconate anhydrous | بهان سار
+منيزيم گيسينات | Magnesium gisinate | بهان سار
+منیزیم استئارات | Magnesium stearate | صنایع شیمیایی و دارویی تبریز
+منیزیم سولفات هپتا هيدرات | Magnesium sulfate heptahydrate | ایتوک فارمد
+منیزیم سیترات | Magnesium citrate | صنایع شیمیایی و دارویی تبریز
+منیزیم كلرايد هگزا هيدرات | Magnesium Chloride Hexahydrate | ایتوک فارمد
+شیمی دارویی تک ماد
+مودافینیل | Modafinil | فناوران دارویی حکیم
+مودافینیل ریلیتد کامپاند A | Modafinil Related Compound A (USP) | فناوران دارویی حکیم
+مودافینیل ریلیتد کامپاند B | Modafinil Related Compound B (USP) | فناوران دارویی حکیم
+مودافینیل ریلیتد کامپاند C | Modafinil Related Compound C (USP) | فناوران دارویی حکیم
+مودافینیل ریلیتد کامپاند E | Modafinil Related Compound E (USP) | فناوران دارویی حکیم
+مورفین برای سازگاری باسیستم | Morphine for System Suitability (EP) | فناوران دارویی حکیم
+مورفین سولفات | Morphine Sulfate | فناوران دارویی حکیم
+مورفین هیدورکلراید | MORPHINE HYDROCHLORIDE (FOR EXPORT) | تماد
+موکسی فلوکساسین هیدروکلراید | Moxifloxacin Hydrochloride | فناوران دارویی حکیم
+مولکولارسیو 3آ | Moleculer sieve 3 A (2-3mm) | ایتوک فارمد
+مولکولارسیو 4آ | Moleculer sieve 4 A (2-3mm) | ایتوک فارمد
+مولنوپیراویر | Molnupiravir | فناوران دارویی پارسیان
+موم طبیعی(زرد) | Yellow beeswax | ایتوک فارمد
+موم طبیعی(سفید) | White beeswax | ایتوک فارمد
+مونته لوکاست سدیم | Montelukast Sodium | سروش مانا فارمد
+مونته‌لوکاست | Montelokast | ارسطو
+اکتوبایوکم
+Montelukast | هستی آریا شیمی
+مونته‌لوکاست دی‌سیکلوهگزیل‌آمین | Montelukast Dicyclohexylamine | فناوران دارویی حکیم
+مونته‌لوکاست سدیم | Montelukast Sodium | ثمین دارو ایرانیان
+میدازولام | Midazolam | فناوران دارویی حکیم
+میگلوستات | Miglustat | فاران شیمی
+ناپروکسن | Naproxen | فناوران دارویی حکیم
+ناپروکسن ایمپیوریتی استاندارد | Naproxen Impurity Standard (BP) | فناوران دارویی حکیم
+ناپروکسن ریلیتد کامپاند A | Naproxen Related Compound A (USP) | فناوران دارویی حکیم
+ناپروکسن ریلیتد کامپاند L | Naproxen Related Compound L (USP) | فناوران دارویی حکیم
+نالتروکسان هیدروکلراید | Naltrexone hydrochloride | پرند دارو
+تماد
+نالوکسان هیدروکلراید | Naloxone hydrochloride | پرند دارو
+تماد
+نرمال بوتیل استات | n-Buthyl acetate | جابر ازنق شیمی
+نشاسته اصلاح شده ذرت | Corn Modified Starch | فرهیختگان زرنام
+نشاسته ذرت | Corn Starch | فرهیختگان زرنام
+نقره نیترات | Silver nitrate | ایتوک فارمد
+نقره نیترات 0.1 | Silver nitrate 0.1N | ایتوک فارمد
+نوراپی نفرین بی تارترات | Norepinephrine Bitartrate | فناوران دارویی حکیم
+نورتریپتیلین هیدروکلراید | Nortriptylinehydrochloride | ارسطو
+نورفنیل افرین هیدروکلراید | Norphenylephrine Hydrochloride | فناوران دارویی حکیم
+نوروکسی مورفون بیس | NOROXYMORPHONE BASE (FOR EXPORT) | تماد
+نوسکاپین بیس | NOSCAPINE BASE | البرزفارمد
+نوسکاپین بیس | NOSCAPINE BASE (FOR EXPORT) | تماد
+نوسکاپین هیدروکلراید | NOSCAPINE HYDROCHLORIDE (FOR EXPORT) | تماد
+نیاسین | NIACIN | ثمین دارو ایرانیان
+نیاسینامید | NIACINAMIDE | ثمین دارو ایرانیان
+فناوران دارویی حکیم
+نیترات آمونیوم دارویی | (blank) | گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین
+نیتروفورازون | Nitrofurazone | فناوران دارویی حکیم
+نیتروفورانتوئین | Nitrofurantoin | فناوران دارویی حکیم
+نیتروگلیسرین 0.35درصد رقیق شده در میگلیول | DILUTED NITROGLYCERIN 0.35% IN MIGLYOL | درسا دارو
+نیتروگلیسرین 5 درصد رقیق شده در اتانول گرید تزریقی | DILLUTED NITROGLYCERIN 5% IN ETHANOL INJECTION GRADE | درسا دارو
+نیتروگلیسرین 5 درصد رقیق شده در پروپیلن گلایکول گرید تزریقی | DILUTED NITROGLYCERIN 5% IN PROPYLENE GLYCOL INJECTION GRADE | درسا دارو
+نیتروگلیسرین5 درصد رقیق شده در میگلیول | DILUTED NITROGLYCERIN 5% IN MIGLYOL | درسا دارو
+نیتروگلیسیرین دارویی | (blank) | گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین
+نیتروگلیسیرین رقیق شده 5% در اتانول | Diluted Nitroglycerin 5% in Ethanol | درسا دارو
+نیتریک اسید55% | Nitric acid 55% | ایتوک فارمد
+نیتریک اسید65% | Nitric acid 65% | ایتوک فارمد
+نیتیزینون | Nitisinone | توسعه داروسازی دانش
+نیکوراندیل | Nicorandil | مهبان شیمی
+نیلوتینیب ریلیتد کامپاند A | Nilotinib Related Compound A (USP) | فناوران دارویی حکیم
+نیلوتینیب ریلیتد کامپاند B | Nilotinib Related Compound B (USP) | فناوران دارویی حکیم
+نیلوتینیب ریلیتد کامپاند C | Nilotinib Related Compound C (USP) | فناوران دارویی حکیم
+نیلوتینیب هیدروکلراید | Nilotinibhydrochloride | ارسطو
+فناوران دارویی پارسیان
+هیوا فارمد
+نیولوماب | Nivolumab | سیناژن
+هسته شکر | SUGAR SPHERE | تماد
+هیدروژن پراکسید 35% | Hydrogen peroxide 35% | ایتوک فارمد
+هیدروکدون بی تارتارات | HYDROCODONE BITARTRATE (FOR EXPORT) | تماد
+هیدروکسی تولوئن بوتیله | Butylated Hydroxytoluene | فناوران دارویی حکیم
+هیدروکسی کلروکین سولفات | HYDROXYCHLOROQUINE SULFATE | تماد
+ثمین دارو ایرانیان
+هیدروکسید منیزیم | Magnesium Hydroxide | صنایع شیمیایی و دارویی تبریز
+هیدروکسیزین ریلیتد کامپاند A | Hydroxyzine Related Compound A (USP) | فناوران دارویی حکیم
+هیدروکلریک  اسید 0.1 | Hydrochloric acid 0.1N | ایتوک فارمد
+هیدروکلریک اسید 1.0 | Hydrochloric acid 1.0N | ایتوک فارمد
+هیدروکلریک اسید 32% | Hydrochloric acid32% | ایتوک فارمد
+هیدروکلریک اسید 37% | Hydrochloric acid37% | ایتوک فارمد
+هیدروکورتیزون | Hydrocortisone | صنایع مشارکتی طاها
+فناوران دارویی حکیم
+هیدروکورتیزون استات | Hydrocortisone acetate | بهداشت کار
+تماد
+هیوسین بوتیل بروماید | Hyoscine Butylbromide | فاران شیمی
+واکسن نوترکیب کووید-۱۹ نورا | The Noora recombinant COVID-19 vaccine | پرسیس ژن بار
+والاسیکلوویر ریلیتد کامپاند G | Valacyclovir Related Compound G (USP) | فناوران دارویی حکیم
+والپرات سديم | Sodium valproate | شيمي دارويي داروپخش
+والپروئیک اسید | Valproic Acid | هستی آریا شیمی
+والزارتان | Valsartan | اکتوبایوکم
+آنتی بیوتیک سازی ایران
+فناوران دارویی حکیم
+هستی آریا شیمی
+والزارتان ریلیتد کامپاند A | Valsartan Related Compound A (USP) | فناوران دارویی حکیم
+والزارتان ریلیتد کامپاند B | Valsartan Related Compound B (USP) | فناوران دارویی حکیم
+والزارتان ریلیتد کامپاند C | Valsartan Related Compound C (USP) | فناوران دارویی حکیم
+والزارتان ریلیتد کامپاند E | Valsartan Related Compound E (USP) | فناوران دارویی حکیم
+واندتانیب | Vandetanib | فناوران دارویی پارسیان
+ودولیزومب | Vedolizumab | آریوژن فارمد
+وراپامیل ریلیتد کامپاند A | Venlafaxine Related Compound A (USP) | فناوران دارویی حکیم
+وراپامیل ریلیتد کامپاند F | Verapamil Related Compound F (USP) | فناوران دارویی حکیم
+ورق TLC  کیفی و کمی | Ptlc | پایا شیمی اسپادانا
+ورکینگ استاندارد های دارویی | (blank) | شیمی درمان اندیشه
+وریکونازول | Voriconazole | فناوران دارویی پارسیان
+ورینوستات | Vorinostat | ارسطو
+ونتوکلاکس | Venetoclax | فناوران دارویی پارسیان
+ونلافاکسین هیدروکلراید | VENLAFAXINE HYDROCHLORIDE | ثمین دارو ایرانیان
+ونلافکسین هیدروکلراید | VENLAFAXINE HYDROCHLORIDE | فناوران دارویی حکیم
+وونوپرازان فومارات | Vonoprazan fumarate | خورشید کادووس
+ویتامین  E 50% | Tocopheryl Acetate 50% | آموفارمد آریا
+ویتامین  E 98% | Tocopheryl Acetate 98% | آموفارمد آریا
+ویتامین D3 100000 (کوله کلسیفرول) | Vitamin D3 100000 (Cholecalciferol) | آموفارمد آریا
+(blank)
+Grand Total
+### sheet بسته بندی دارویی
+نام شرکت | محصولات
+اشاورز | تیوپ دارویی-تیوپ آلومینیومی(مصارف غذایی،بهداشتی،دارویی و صنعتی)
+اماد پلاس فارمد | Caps
+اماد پلاس فارمد | Eye drops Packaging
+اماد پلاس فارمد | Autoclavable  PP bottle (100 ml)
+اماد پلاس فارمد | Measuring Cup
+اماد پلاس فارمد | Measuring spoon
+اماد پلاس فارمد | Nasal Spray Bottle
+اماد پلاس فارمد | PET & HDPE Container
+اماد پلاس فارمد | Syrup Bottle
+آکو صنعت تجارت آریا | Aluminum Pilfer Proof Cap- 28mm (Height: 16mm)
+آکو صنعت تجارت آریا | Aluminum Pilfer Proof Cap- 28mm (Height: 17mm)
+آکو صنعت تجارت آریا | Aluminum Pilfer Proof Cap- 28mm (Height: 18mm)
+آکو صنعت تجارت آریا | Aluminum Pilfer Proof Cap- 31.5mm
+آکو صنعت تجارت آریا | Aluminum Pilfer Proof Cap- 35mm
+آکو صنعت تجارت آریا | Combi- Seal
+آکو صنعت تجارت آریا | Hanger
+آکو صنعت تجارت آریا | Measuring Cup
+آکو صنعت تجارت آریا | Plunger Rod
+آکو صنعت تجارت آریا | Tear Off Cap – 20mmتی ار آف
+آکو صنعت تجارت آریا | سیل کپ Seal Cap – 20 mm
+آکو صنعت تجارت آریا | فلیپ آف( Flip Off Cap)13mm
+آکو صنعت تجارت آریا | فلیپ آف( Flip Off Cap)20mm
+آکو صنعت تجارت آریا | فلیپ آف( Flip Off Cap)32mm
+آکو صنعت تجارت آریا | فلیپ آف( Flip Off Cap)32mm (Height: 13mm)
+بهینه پوشش جم | بسته بندی دارویی
+پارس آمپول | ظروف شیشه ای دارو های تزریقی
+پرسام رابر فارمد | درب پوش لاستیکی ویال های تزریقی( انواع رابر استاپر و پلانجر)
+دارو پلاستیک پارس | اپلیکاتور آزمایشگاهی
+دارو پلاستیک پارس | اپلیکاتور رکتال
+دارو پلاستیک پارس | اپلیکاتور واژینال
+دارو پلاستیک پارس | انواع درپوش و سرپوش پلاستیکی(پلی اتیلن،پلی پروپیلن،واشر،پلمپ آلومینیومی،سیلیکاژل)
+دارو پلاستیک پارس | بطری از pet
+دارو پلاستیک پارس | بطری از پلی اتیلن
+دارو پلاستیک پارس | بطری از پلی پروپیلن
+دارو پلاستیک پارس | بطری دارویی بیرنگ
+دارو پلاستیک پارس | قطره چکان با لوله پلاستیکی
+دارو شیشه | Neutral High Borosilicate Type 1 Glass Ampoules Sizes 1 to 30 cc ,Amber & Clear
+دارو شیشه | Neutral High Borosilicate Type 1 Glass Cartridges Sizes 1.8 & 3 cc , Clear
+دارو شیشه | Neutral High Borosilicate Type 1 Glass Tubes Sizes 8.65 to 32 mm ,Amber & Clear
+دارو شیشه | Neutral High Borosilicate Type 1 Glass Vials Sizes 2 to 30 cc ,Rubber & Screw- Neck, Amber & Clear
+ژلاتین حلال | Edible Gelatin – 25 kg bulk packaging (Food Industry Grade)
+ژلاتین حلال | Household Usage Gelatin – 40 g retail packaging
+ژلاتین حلال | Pharmaceutical Gelatin – 25 kg bulk packaging (Pharma Grade)
+ژلاتین کپسول ایران | پوکه کپسول دارویی از نوع ژلاتین
+ژلاتین کپسول ایران | سایر پوکه های کپسول دارویی
+ژلاتین کپسول ایران | کپسول دارویی از نوع ژلاتینی
+ژلامین(پوشینه فارمد کاوه) | سایر پوکه های کپسول دارویی
+شرکت دارو پوش | Aluminum Can(SIZE:35MM)
+شرکت دارو پوش | Aluminum Can(SIZE:45MM)
+شرکت دارو پوش | Aluminum Collapsible Tube(SIZE:19MM)
+شرکت دارو پوش | Aluminum Collapsible Tube(SIZE:22MM)
+شرکت دارو پوش | Aluminum Collapsible Tube(SIZE:25MM)
+شرکت دارو پوش | Aluminum Collapsible Tube(SIZE:30MM)
+شرکت دارو پوش | Aluminum Collapsible Tube(SIZE:35MM)
+شرکت دارو پوش | تیوپ دارویی(تیوپ آلومینیومی)
+شرکت مجتمع چاپ و بسته بندی(هودیس) | بسته بندی دارویی
+شیمی آذر جام | (ساخت ماشین آلات خطوط تولید)
+مکمل سلامت فارمد | ALUMINIUM BLISTER FOIL
+مکمل سلامت فارمد | ALUMINIUM STRIP FOILS
+مکمل سلامت فارمد | CHILD RESISTANTE FOIL
+مکمل سلامت فارمد | COLD FORMING FOIL(ALU ALU)
+مکمل سلامت فارمد | SUPPOSITORY PACKAGING
+مکمل سلامت فارمد | THE MULTI LAYER LAMINATION FOIL
