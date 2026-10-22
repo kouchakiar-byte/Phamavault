@@ -33,7 +33,9 @@ export type Tier = "A" | "B" | "C" | "D";
 export type Supplier = SupplierRecord & { products: Product[]; nameKey: string; tier: Tier };
 export type SortKey = "cred" | "rel" | "site" | "type" | "name";
 export type Filters = { query: string; type: "all" | "m" | "t"; cat: string; sort: SortKey; telOnly: boolean };
-export type Result = { s: Supplier; hits: Product[] };
+/** Why a company is in the results, strongest first. */
+export type MatchKind = "name" | "product" | "category" | "general";
+export type Result = { s: Supplier; hits: Product[]; match?: MatchKind };
 
 export const norm = (s: string | undefined) =>
   (s || "")
@@ -53,23 +55,52 @@ export const norm = (s: string | undefined) =>
     .replace(/گلایکول/g, "گلیکول")
     .replace(/[‌\-_،,.()٪%]/g, " ")
     .replace(/\s+/g, " ")
+    // «هایدرو کلراید» / «هیدرو کلرید» is one word: hydrochloride, not chloride.
+    .replace(/هایدرو/g, "هیدرو")
+    .replace(/هیدرو (کلرید|برمید|برماید)/g, "هیدرو$1")
     .trim();
 
-/** Whole-ish match: a needle ending in a digit must not be followed by another digit (B1 vs B12). */
+const isWordChar = (c: string) => /[\p{L}\p{N}]/u.test(c);
+
+/*
+ * Salt and class words that must not match inside another word: «کلرید» is not
+ * «هیدروکلرید», "oxide" is not "hydroxide" or "chlordiazepoxide".
+ */
+const BOUND_WORDS = new Set([
+  "chloride", "bromide", "iodide", "fluoride", "oxide", "dioxide", "hydroxide", "peroxide", "sulfate", "sulphate",
+  "sulfide", "sulfite", "phosphate", "carbonate", "nitrate", "citrate", "acetate", "lactate", "gluconate", "tartrate",
+  "stearate", "chromium", "sodium", "calcium", "potassium", "magnesium",
+]);
+
+/**
+ * Word-aware match. The needle must start a word («کلرید» is not
+ * «هیدروکلرید»), so typing the start of a name still finds it; a very short
+ * needle must be the whole word («روی» is not «دارویی», «کروم» is not
+ * «کروماتوگرافی»); and a needle ending in a digit must not run into another
+ * digit (B1 vs B12). Long Latin words may still match inside a compound
+ * ("paraben" in "methylparaben"), except salt and class words.
+ */
+const WHOLE_WORDS = new Set(["کروم", "chrome"]);
+
 export function has(hay: string, needle: string): boolean {
+  if (!needle) return false;
+  const short = (needle.length <= 3 && !/\d/.test(needle)) || WHOLE_WORDS.has(needle);
+  const inner = needle.length >= 7 && /^[a-z]+$/.test(needle) && !BOUND_WORDS.has(needle);
   let i = hay.indexOf(needle);
   while (i > -1) {
-    const nx = hay[i + needle.length] || "";
     const pv = hay[i - 1] || "";
-    const okEnd = !(/\d$/.test(needle) && /\d/.test(nx));
-    const okShort = needle.length > 3 || ((pv === "" || pv === " ") && (nx === "" || nx === " "));
-    if (okEnd && okShort) return true;
+    const nx = hay[i + needle.length] || "";
+    const okStart = inner || !pv || !isWordChar(pv);
+    const okEnd = /\d$/.test(needle) ? !/\d/.test(nx) : !short || !nx || !isWordChar(nx);
+    if (okStart && okEnd) return true;
     i = hay.indexOf(needle, i + 1);
   }
   return false;
 }
 
 const STOP_WORDS = ["ویتامین", "vitamin", "ماده", "اولیه", "b", "ب"];
+/** Stop words that still mean something when the query is nothing else («ویتامین» alone). */
+const ALONE_WORDS = new Set(["ویتامین", "vitamin"]);
 
 /** Each query word (or a synonym phrase inside the query) becomes a set of alternatives; all sets must match. */
 export function terms(q: string, synonyms: string[][]): string[][] {
@@ -89,6 +120,10 @@ export function terms(q: string, synonyms: string[][]): string[][] {
     .forEach((w) => {
       if (w.length > 1 || /\d/.test(w)) sets.push([w]);
     });
+  if (!sets.length) {
+    const alone = q.split(" ").filter((w) => ALONE_WORDS.has(w));
+    if (alone.length) sets.push(["ویتامین", "vitamin"]);
+  }
   return sets;
 }
 
@@ -107,12 +142,21 @@ const COMPANY_WORDS = new Set([
  */
 export function nameMatch(nameKey: string, q: string): boolean {
   if (has(nameKey, q)) return true;
+  // Spacing only: «دارو پخش» = «داروپخش». Long enough not to hit the middle of an unrelated name.
   const flat = nameKey.replace(/ /g, "");
   const qFlat = q.replace(/ /g, "");
-  if (qFlat.length >= 4 && flat.includes(qFlat)) return true;
+  if (qFlat.length >= 5 && flat.includes(qFlat)) return true;
   const words = q.split(" ").filter((w) => w && !COMPANY_WORDS.has(w));
   if (!words.length || !words.some((w) => w.length >= 3)) return false;
-  return words.every((w) => has(nameKey, w) || (w.length >= 3 && flat.includes(w)));
+  return words.every((w) => has(nameKey, w) || (w.length >= 5 && flat.includes(w)));
+}
+
+/** Categories whose label the query names: «بسته بندی» → packaging, «رفرنس استاندارد» → standards. */
+export function categoryMatch(q: string, labels: Record<string, string[]>): string[] {
+  if (q.length < 3) return [];
+  return Object.entries(labels)
+    .filter(([key, names]) => key !== "all" && names.some((n) => has(n, q) || (n.length >= 3 && has(q, n))))
+    .map(([key]) => key);
 }
 
 /** A = syndicate member with phone, B = contact from own site, C = website only, D = marketplace/ads/retail. */
@@ -152,20 +196,32 @@ export function search(
   f: Filters,
   synonyms: string[][],
   provinceOrder: string[],
+  categoryLabels: Record<string, string[]> = {},
 ): Result[] {
   const q = norm(f.query);
   const sets = q ? terms(q, synonyms) : [];
   const vitaminQuery = /ویتامین|vitamin/.test(q) || sets.some((g) => g.some((x) => /ویتامین|vitamin/.test(x)));
+  const cats = q ? categoryMatch(q, categoryLabels) : [];
+
+  const kindOf = (s: Supplier, hits: Product[]): MatchKind | undefined => {
+    if (!q) return undefined;
+    if (nameMatch(s.nameKey, q)) return "name";
+    if (hits.length) return "product";
+    if (s.c.some((c) => cats.includes(c))) return "category";
+    // General vitamin suppliers are listed for a vitamin they have not named, after those who did.
+    if (s.gv && vitaminQuery) return "general";
+    return undefined;
+  };
+  const rank: Record<MatchKind, number> = { name: 0, product: 1, category: 2, general: 3 };
 
   const rows = suppliers
     .map((s) => {
       const hits = sets.length ? s.products.filter((p) => matchProduct(p.key, sets)) : [];
-      const nameHit = Boolean(q) && (nameMatch(s.nameKey, q) || (Boolean(s.gv) && vitaminQuery));
-      return { s, hits, nameHit };
+      return { s, hits, match: kindOf(s, hits) };
     })
     .filter(
       (r) =>
-        (!q || r.hits.length || r.nameHit) &&
+        (!q || r.match) &&
         (f.type === "all" || r.s.t === f.type) &&
         (f.cat === "all" || r.s.c.includes(f.cat)) &&
         (!f.telOnly || r.s.tel.length),
@@ -195,6 +251,9 @@ export function search(
 
   // With the cosmetic category chosen, cosmetic specialists come first, then the chosen order.
   const cosFocus = (r: Result) => (r.s.cs ? 2 : 0) + (r.s.c[0] === "cos" ? 1 : 0);
-  const order = f.cat === "cos" ? (a: Result, b: Result) => cosFocus(b) - cosFocus(a) || compare[f.sort](a, b) : compare[f.sort];
-  return rows.map(({ s, hits }) => ({ s, hits })).sort(order);
+  const chosen = f.cat === "cos" ? (a: Result, b: Result) => cosFocus(b) - cosFocus(a) || compare[f.sort](a, b) : compare[f.sort];
+  // Whatever the sort, companies that actually list the searched material come before looser matches.
+  // Entries still missing their contact details come after complete ones of the same strength.
+  const strength = (r: Result) => (r.match ? rank[r.match] : 0) + (r.s.partial ? 2.5 : 0);
+  return rows.sort((a, b) => strength(a) - strength(b) || chosen(a, b));
 }

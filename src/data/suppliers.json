@@ -51,8 +51,23 @@
     "پیپرازین سیترات|Piperazine citrate USP|API",
     "کالامین|Calamine BP/USP",
     "اسید بوریک|Boric acid USP-BP|API",
-    "اوره|Urea"
-   ]
+    "اوره|Urea",
+    "بیس گلیسینات آهن|Ferrous Bisglycinate",
+    "تری سدیم فسفات انهیدروس|Tribasic sodium phosphate anhydrous usp",
+    "دی سدیم فسفات 12 آبه|Dibasic sodium phosphate dodeca hydrate usp",
+    "دی سدیم فسفات انهیدروس|Dibasic sodium phosphate anhydrous usp",
+    "دی سدیم فسفات دی هیدرات|Dibasic sodium phosphate dihydrate usp",
+    "دی کلسیم فسفات بدون آب|Anhydrous Dicalcium Phosphate",
+    "دی کلسیم فسفات دی هیدرات|Dicalcium Phosphate Dihydrate",
+    "دی متیل فومارات|Dimethyl Fumarate",
+    "سولفات آهن گلیسین|Ferrous Glycine Sulfate",
+    "کلسیم گلیسروفسفات|Calcium Glycero phosphate",
+    "منو سدیم فسفات انهیدروس|monobasic sodium phosphate Anhydrous",
+    "منو سدیم فسفات دی هیدرات|monobasic sodium phosphate dihydrate",
+    "منیزیم سیترات|Magnesium Citrate",
+    "هیدروکسید منیزیم|Magnesium Hydroxide"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "هستی آریا شیمی (هیتا فارما)",
@@ -69,7 +84,7 @@
    ],
    "mail": "Management.office@hastiaria.com",
    "web": "https://www.hitapharma.com/per/",
-   "note": "نام تجاری: هیتا فارما (HITA PHARMA)؛ فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "نام تجاری: هیتا فارما (HITA PHARMA)؛ فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/هستی-آریا-شیمی/",
    "p": [
     "رپاگلیناید|Repaglinide",
@@ -84,6 +99,7 @@
     "آملودیپین بزیلات|Amlodipine besylate",
     "لیناگلیپتین|Linagliptin",
     "والزارتان|Valsartan",
+    "ساکوبیتریل والزارتان|Sacubitril valsartan",
     "آزیترومایسین دی‌هیدرات|Azithromycin dihydrate",
     "متفورمین هیدروکلراید|Metformin hydrochloride",
     "آپیکسابان|Apixaban",
@@ -102,7 +118,27 @@
     "مونته‌لوکاست سدیم|Montelukast sodium",
     "سلکوکسیب|Celecoxib",
     "Methadone hydrochloride|",
-    "Fentanyl citrate|"
+    "Fentanyl citrate|",
+    "اندانسترون|Ondansetron",
+    "آزیترومایسین|Azithromycin",
+    "آملودیپین|Amlodipine",
+    "پرگابالین|Pregabalin",
+    "ترامادول HCl|Tramadol HCl",
+    "تلمیزارتان|Telmisartan",
+    "سرترالین|Sertraline",
+    "سودوافدرین|Pseudoephedrine",
+    "سیپروفلوکساسین|Ciprofloxacin",
+    "سیتاگلیپتین فسفات مونوهیدرات|Sitagliptin phosphate mono hydrate",
+    "فلوواکسامین مالئات|Fluvoxamine maleate",
+    "فنیل افرین هیدروکلراید|Phenylephrine hydrochloride",
+    "کلوپیدوگرل|Clopidogrel",
+    "لوراتادین|Loratadine",
+    "لووتیراستام|Levetiracetam",
+    "لووفلوکساسین|Levofloxacin",
+    "لیدوکائین هیدروکلراید|Lidocaine HCl",
+    "متوکاربامول|Methocarbamol",
+    "مونته‌لوکاست|Montelukast",
+    "والپروئیک اسید|Valproic Acid"
    ]
   },
   {
@@ -129,8 +165,11 @@
     "آزیترومایسین دی‌هیدرات|Azithromycin dihydrate",
     "اداراوون|Edaravone",
     "اریترومایسین اتیل سوکسینات|Erythromycin ethylsuccinate",
-    "اریترومایسین بیس|Erythromycin base"
-   ]
+    "اریترومایسین بیس|Erythromycin base",
+    "اریترومایسین|Erythromycin",
+    "آزیترومایسین|Azithromycin"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "ثمین دارو ایرانیان",
@@ -165,8 +204,23 @@
     "لوزارتان پتاسیم|Losartan potassium",
     "متفورمین هیدروکلراید|Metformin hydrochloride",
     "متوکاربامول|Methocarbamol",
-    "هیدروکسی کلروکین سولفات|Hydroxychloroquine sulfate"
-   ]
+    "هیدروکسی کلروکین سولفات|Hydroxychloroquine sulfate",
+    "امپاگلیفلوزین|Empagliflozin",
+    "آزیترومایسین|Azithromycin",
+    "پریلوکائین|PRILOCAINE",
+    "پنتوپرازول سدیم هیدرات|Pantoprazole sodium hydrate",
+    "سیتاگلیپتین فسفات|Sitagliptin phosphate",
+    "کربنات لیتیوم|Lithium carbonate",
+    "رزواستاتین کلسیم|Rosuvastatin calcium",
+    "گلیکلازید|Gliclazide",
+    "لیدوکائین|Lidocaine",
+    "مترونیدازول|Metronidazole",
+    "متفورمین|Metformin",
+    "مونته‌لوکاست سدیم|Montelukast sodium",
+    "نیاسینامید|NIACINAMIDE",
+    "ونلافاکسین هیدروکلراید|VENLAFAXINE HYDROCHLORIDE"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "دماوند دارو",
@@ -197,8 +251,10 @@
     "لوزارتان پتاسیم|Losartan potassium",
     "متوپرولول تارتارات|Metoprolol tartrate",
     "آملودیپین بزیلات|Amlodipine besylate",
-    "سیتاگلیپتین فسفات مونوهیدرات|Sitagliptin phosphate monohydrate"
-   ]
+    "سیتاگلیپتین فسفات مونوهیدرات|Sitagliptin phosphate monohydrate",
+    "آملودیپین|Amlodipine"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "تولید مواد اولیه دارویی تهران شیمی",
@@ -251,10 +307,19 @@
     "پلت دیکلوفناک سدیم 45%|Diclofenac Sodium SR Pellet 45%",
     "پلت اس امپرازول منیزیم 22.5%|Esomeprazole Magnesium DR Pellet 22.5%",
     "پلت امپرازول 8.5%|Omeprazole DR Pellet 8.5%",
-    "پلت تامسولوسین هیدروکلراید 0.2%|Tamsolusin HCl SR Pellet 0.2%"
+    "پلت تامسولوسین هیدروکلراید 0.2%|Tamsolusin HCl SR Pellet 0.2%",
+    "اریترومایسین|Erythromycin",
+    "اندانسترون|Ondansetron",
+    "آزیترومایسین|Azithromycin",
+    "آموکسی سیلین|Amoxicillin",
+    "بی پریدین|Biperiden",
+    "رزواستاتین کلسیم|Rosuvastatin calcium",
+    "سفیکسیم|Cefixime",
+    "فکسوفنادین هیدرو کلراید|Fexofenadine Hydrochloride",
+    "کلاولانات پتاسیم|Clavulanate potassium"
    ],
    "mail": "info@tcapi.co",
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا."
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "فناوران دارویی پارسیان",
@@ -325,9 +390,35 @@
     "دیروکسیمل فومارات|Diroximel Fumarate",
     "روکسولیتینیب فسفات|Ruxolitinib Phosphate",
     "ووریکونازول|Voriconazole",
-    "ونتوکلاکس|Venetoclax"
+    "ونتوکلاکس|Venetoclax",
+    "اورفورگلیپرون|Orforglipron",
+    "رگورافنیب مونوهیدرات|Regorafenib Mono hydrate",
+    "ساکوبیتریل/ والزارتان|Sacubitril/Valsartan",
+    "سانیتینیب مالئات|Sunitinib maleate",
+    "سیتاگلیپتین فسفات|Sitagliptin phosphate",
+    "گرانول ارلوتینیب هیدروکلراید|Erlotinib Hydrochloride Granule",
+    "گرانول استات آبیراترون|Abiraterone Acetate Granule",
+    "گرانول ایبروتینیب|Ibrutinib Granule",
+    "گرانول ایماتینیب مزیلات|Imatinib Mesylate Granule",
+    "گرانول آپیکسابان|Apixaban Granule",
+    "گرانول پازوپانیب هیدروکلراید|Pazopanib Hydrochloride Granule",
+    "گرانول پالبوسیکلیب|Palbociclib Granule",
+    "گرانول جفیتینیب|Gefitinib Granule",
+    "گرانول داساتینیب مونوهیدرات|Dasatinib Mono hydrate Granule",
+    "گرانول رسمتیروم|Resmetirom Granule",
+    "گرانول ریواروکسابان|Rivaroxaban Granule",
+    "گرانول سورافنیب توسیلات|Sorafenib Tosylate Granule",
+    "گرانول سیترات توفاسیتینیب|Tofacitinib Citrate Granule",
+    "گرانول فاویپیراویر|Favipiravir Granule",
+    "گرانول مالات سونیتینیب|Sunitinib Malate Granule",
+    "گرانول مزیلات اوسیمرتینیب|Osimertinib Mesylate Granule",
+    "گرانول مونوهیدرات رگورافنیب|Regorafenib Mono hydrate Granule",
+    "گرانول مونوهیدرات نیلوتینیب هیدروکلراید|Nilotinib Hydrochloride Mono hydrate Granule",
+    "گرانول همی هیدرات لنالیدومید|Lenalidomide Hemi hydrate Granule",
+    "گرانول واندتانیب|Vandetanib Granule",
+    "لنالیدومید همی‌هیدرات|Lenalidomide Hemi hydrate"
    ],
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا."
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "بهداشت کار",
@@ -384,8 +475,11 @@
     "ماینوکسیدیل|Minoxidil API",
     "ال-کارنیتین|L-Carnitine API",
     "ال-کارنیتین ال-تارترات|L-Carnitine L-tartrate API",
-    "ایبوپروفن|Ibuprofen API"
-   ]
+    "ایبوپروفن|Ibuprofen API",
+    "اورسودیول|Ursodiol",
+    "آزیترومایسین|Azithromycin"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "صنایع شیمیایی کیمیاگران امروز",
@@ -433,10 +527,17 @@
     "مخلوط سورفکتانت های نانیونیک و کاتیونیک|Blend of Nonionic and Cationic Surfactants (KEMIX 50)",
     "مونو اتیلن گلایکول|MonoEthylene Glycol (MEG)",
     "دی اتیلن گلایگول|Di Ethylene Glycol(DEG)",
-    "تری اتیلن گلایکول|Tri Ethylene Glycol (TEG)"
+    "تری اتیلن گلایکول|Tri Ethylene Glycol (TEG)",
+    "آسپرین گرانول|Aspirin granules",
+    "پروپیلن گلیکول|Propylene glycol",
+    "پلی اتیلن گلایکول|Polyethylene glycol",
+    "پلی سوربات|Polysorbate",
+    "سایر پلی اتیلن گلایکول ها|Other polyethylene glycols",
+    "مترونیدازول بنزوات|Metronidazole benzoate",
+    "مزالازین|Mesalazine"
    ],
    "mail": "info@kimyagaran.com",
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا."
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "آریا شیمی رایکا",
@@ -460,10 +561,17 @@
     "اسپان 80 (سوربیتان مونواولئات)|Span 80, Sorbitan monooleate",
     "پلی‌سوربات 20|Polysorbate 20",
     "پلی‌سوربات 80|Polysorbate 80",
-    "پلی‌سوربات 60|Polysorbate 60"
+    "پلی‌سوربات 60|Polysorbate 60",
+    "آریا اسپان 60|Ariaspan 60 (sorbitan monostearate)",
+    "آریا اسپان20|Ariaspan 20 (sorbitan monolaurate)",
+    "آریا اسپان80|Ariaspan 80 (sorbitan monooleate)",
+    "آریا سوربات 20|Ariasorbate 20 (polyoxyethylene 20 sorbitan monolaurate)",
+    "آریا سوربات 60|Ariasorbate 60 (polyoxyethylene 20 sorbitan monostearate)",
+    "آریا سوربات 80|Ariasorbate 80 (polyoxyethylene 20 sorbitan monooleate)",
+    "آریا گلیسرول|Aria Glycerol(pharma grade )"
    ],
    "cs": 1,
-   "note": "عضو گروه طلایی و کمیسیون مواد اولیه انجمن صنایع شوینده، بهداشتی و آرایشی ایران."
+   "note": "عضو گروه طلایی و کمیسیون مواد اولیه انجمن صنایع شوینده، بهداشتی و آرایشی ایران؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "ایتوک فارمد",
@@ -607,9 +715,29 @@
     "بافرها PH|4.00",
     "7.00|",
     "9.00|",
-    "10.00|"
+    "10.00|",
+    "1،2-پروپاندیول|1,2-Propanediol (Propylene Glycol)",
+    "2-پروپانول|2-Propanol",
+    "5 - سولفوسالیسیلیک اسید دی هیدرات|5-Sulfosalicylic acid dihydrate",
+    "N/9 سدیم هیدروکسید|Sodium hydroxide N/9",
+    "اتانول آمین|Ethanol amine",
+    "پارافین|Paraffin (Pastille)",
+    "سدیم استات تری هیدرات|Sodium acetate trihydrate",
+    "سدیم استات خشک|Sodium acetate anhydrous",
+    "سدیم دودیسل سولفات|Sodium dodecyl sulfate",
+    "سدیم هیدروکساید گرانول|Sodium hydroxide granulated",
+    "سدیم هیدروکسید 0.1|Sodium hydroxide 0.1N",
+    "سدیم هیدروکسید 1.0|Sodium hydroxide 1.0N",
+    "سدیم هیدورکساید پرک|Sodium hydroxide flake",
+    "سیتریک اسید خشک|Citric acid anhydrous",
+    "سیتریک اسید مونوهیدرات|Citric acid mono hydrate",
+    "فسفوریک اسید 85%|Phosphoric acid 85%",
+    "موم طبیعی(زرد)|Yellow beeswax",
+    "موم طبیعی(سفید)|White beeswax",
+    "هیدروکلریک اسید 37%|Hydrochloric acid 37%",
+    "Potassium dihydrogen phosphate|"
    ],
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا."
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "مجتمع صنایع شیمیایی دکتر مجللی",
@@ -764,8 +892,12 @@
    "mail": "faravaridarooihalal@yahoo.com",
    "src": "https://cppsynd.com/",
    "p": [
-    "پودر ژلاتین حلال گرید دارویی|Halal bovine gelatin powder, pharma grade"
-   ]
+    "پودر ژلاتین حلال گرید دارویی|Halal bovine gelatin powder, pharma grade",
+    "Edible Gelatin – 25 kg bulk packaging (Food Industry Grade)|",
+    "Household Usage Gelatin – 40 g retail packaging|",
+    "Pharmaceutical Gelatin – 25 kg bulk packaging (Pharma Grade)|"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "درسا دارو",
@@ -786,8 +918,13 @@
     "نیتروگلیسرین 10% در لاکتوز انهیدروس|Diluted nitroglycerin 10% in lactose",
     "نیتروگلیسرین 5% در اتانول (تزریقی)|Diluted nitroglycerin 5% in ethanol",
     "نیتروگلیسرین 5% در پروپیلن گلایکول (تزریقی)|Diluted nitroglycerin 5% in propylene glycol",
-    "نیتروگلیسرین در میگلیول|Diluted nitroglycerin in Miglyol"
-   ]
+    "نیتروگلیسرین در میگلیول|Diluted nitroglycerin in Miglyol",
+    "نیتروگلیسرین 0.35درصد رقیق شده در میگلیول|DILUTED NITROGLYCERIN 0.35% IN MIGLYOL",
+    "نیتروگلیسرین 5 درصد رقیق شده در اتانول گرید تزریقی|DILLUTED NITROGLYCERIN 5% IN ETHANOL INJECTION GRADE",
+    "نیتروگلیسرین 5 درصد رقیق شده در پروپیلن گلایکول گرید تزریقی|DILUTED NITROGLYCERIN 5% IN PROPYLENE GLYCOL INJECTION GRADE",
+    "نیتروگلیسرین5 درصد رقیق شده در میگلیول|DILUTED NITROGLYCERIN 5% IN MIGLYOL"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "نیکان اکسیر باختر",
@@ -811,8 +948,10 @@
     "دولوکستین هیدروکلراید|Duloxetine hydrochloride",
     "تامسولوسین هیدروکلراید|Tamsulosin hydrochloride",
     "الانزاپین|Olanzapine",
-    "ایمیکویمود|Imiquimod"
-   ]
+    "ایمیکویمود|Imiquimod",
+    "پرامیپکسول دی هیدروکلراید مونوهیدرات|Pramipexole dihydrochloride mono hydrate"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "هیوا فارمد",
@@ -834,8 +973,20 @@
     "بورتزومیب|Bortezomib",
     "دالفامپریدین|Dalfampridine",
     "امپاگلیفلوزین|Empagliflozin",
-    "توفاسیتینیب|Tofacitinib"
-   ]
+    "توفاسیتینیب|Tofacitinib",
+    "آبیراترون استات|Abiraterone acetate",
+    "آپیکسابان|Apixaban",
+    "پالبوسیکلیب|Palbociclib",
+    "توفاسیتینیب-سیترات|TOFACITINIB-CITRATE",
+    "دالفامپریدین (فامپریدین)|Dalfampridine (fampridine)",
+    "دفراسیروکس|Deferasirox",
+    "سورافنیب توسیلات|Sorafenib Tosylate",
+    "سونیتینیب مالات|Sunitinib malate",
+    "لنالیدومید|Lenalidomide",
+    "لیناگلیپتین|Linagliptin",
+    "نیلوتینیب هیدروکلراید|Nilotinib hydrochloride"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "کیمیا اثر سلامت",
@@ -854,8 +1005,10 @@
    "p": [
     "آزیترومایسین دی‌هیدرات|Azithromycin dihydrate",
     "آتورواستاتین کلسیم|Atorvastatin calcium",
-    "لیدوکائین|Lidocaine"
-   ]
+    "لیدوکائین|Lidocaine",
+    "آزیترومایسین|Azithromycin"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "مهبان شیمی (گروه مهبان)",
@@ -873,7 +1026,7 @@
    "addr": "تهران، خیابان ولی‌عصر، بلوار اسفندیار",
    "site": "ساوه (کارخانه)",
    "web": "https://mahbangroup.com/",
-   "note": "تلفن‌ها از سایت شرکت. فهرست محصول ناقص است (11 قلم از 22 قلم)؛ فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "تلفن‌ها از سایت شرکت. فهرست محصول ناقص است (11 قلم از 22 قلم)؛ فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/گروه-مهبان-شیمی/",
    "p": [
     "آملودیپین بزیلات|Amlodipine besylate",
@@ -894,7 +1047,20 @@
     "سرترالین هیدروکلراید|Sertraline HCL",
     "سیتاگلیپتین فسفات|Sitagliptin phosphate",
     "تیامین هیدروکلراید|Thiamine HCL",
-    "ترامادول هیدروکلراید|Tramadol HCL"
+    "ترامادول هیدروکلراید|Tramadol HCL",
+    "اپلرنون|Eplerenone",
+    "اوسلتامیویر|Oseltamivir",
+    "آتورواستاتین کلسیم|Atorvastatin Calcium",
+    "آملودیپین|Amlodipine",
+    "بنفوتیامین|Benfotiamine",
+    "پنتاپرازول سدیم|Pantoprazole sodium",
+    "پیرفنیدون|Pirfenidone",
+    "سرترالین|Sertraline",
+    "کلوپیدوگرل|Clopidogrel",
+    "مایکوفنولات|Mycophenolate",
+    "متادون هیدروکلراید|Methadone hydrochloride",
+    "متفورمین|Metformin",
+    "نیکوراندیل|Nicorandil"
    ],
    "mail": "Mahbanchemi@mahbangroup.com"
   },
@@ -913,7 +1079,7 @@
    "site": "کیلومتر 28 جاده مخصوص کرج، روبروی ایستگاه مترو اتمسفر",
    "mail": "info@temad.com",
    "web": "http://www.temad.com",
-   "note": "بزرگ‌ترین تولیدکننده مواد اولیه نارکوتیک و غیرنارکوتیک؛ فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "بزرگ‌ترین تولیدکننده مواد اولیه نارکوتیک و غیرنارکوتیک؛ فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/تولید-مواد-اولیه-داروپخشتماد/",
    "p": [
     "مواد اولیه نارکوتیک|Narcotic APIs",
@@ -966,7 +1132,46 @@
     "اکسی مورفون هیدرو کلراید (برای صادرات)|Oxymorphone Hydrochloride (For Export)",
     "پاپاورین هیدروکلراید (برای صادرات)|Papaverine Hydrochloride (For Export)",
     "فولوکدین (جهت صادرات)|Pholcodine (For Export)",
-    "هیدروکدون بی تارتارات (جهت صادرات)|Hydrocodone Bitartrate (For Export)"
+    "هیدروکدون بی تارتارات (جهت صادرات)|Hydrocodone Bitartrate (For Export)",
+    "اپیوم|OPIUM (FOR EXPORT)",
+    "اریترومایسین|Erythromycin",
+    "استامینوفن|ACETAMINOPHEN",
+    "استامینوفن تزریقی غیر استریل|ACETAMINOPHEN INJECTION GRADE NON-STERILE",
+    "استامینوفن دی سی|ACETAMINOPHEN DC",
+    "استامینوفن روش (ب)|ACETAMINOPHEN METHOD (B)",
+    "افلوکساسین|OFLOXACIN",
+    "اکسی کدون هایدروکلراید( گرید تزریقی غیر استریل)|OXYCODONE HYDROCHLORIDE(INJECTION GRADE NON-STERILE)",
+    "اکسی مورفون هیدروکلراید|OXYMORPHONE HYDROCHLORIDE",
+    "آتورواستاتین کلسیم|Atorvastatin Calcium",
+    "آسپرین|ASPIRIN",
+    "آسیکلوویر|Acyclovir",
+    "بتامتازون سدیم فسفات ( گرید تزریقی غیر استریل)|BETAMETHASONE SODIUM PHOSPHATE( INJECTION GRADE NON-STERILE)",
+    "پاپاورین هیدروکلراید صادراتی ( گرید تزریقی غیر استریل)|PAPAVERINE HYDROCHLORIDE FOR EXPORT( INJECTION GRADE NON-STERILE)",
+    "پرازوسین هیدرو کلراید|PRAZOSIN HYDROCHLRIDE",
+    "پنتوپرازول سدیم سسکوئی هیدرات|PANTOPRAZOLE SODIUM SESQUI HYDRATE",
+    "پنتوپرازول سدیم سسکوئی هیدرات (گرید تزریقی غیراستریل)|PANTOPRAZOLE SODIUM SESQI HYDRATE (INJECTION GRADE - NON STERILE)",
+    "تبائین (جهت صادرات)|THEBAINE (FOR EXPORT)",
+    "ترامادول هایدروکلراید( گرید تزریقی غیر استریل)|TRAMADOL HYDROCHLORIDE( INJECTION GRADE NON-STERILE)",
+    "جمفیبروزیل|GEMFIBROZIL",
+    "دگزامتازون دی سدیم فسفات ( گرید تزریقی غیر استریل)|DEXAMETHASONE DI SODIUM PHOSPHATE(INJECTION GRADE NON-STERILE)",
+    "دگزامتازون سدیم فسفات|Dexamethasone sodium phosphate",
+    "سلکوکسیب|Celecoxib",
+    "سولفابنزامید|SULFABENZAMIDE",
+    "سیپروفلوکساسین تزریقی غیر استریل|CIPROFLOXACIN INJECTION GRADE NON-STERILE",
+    "سیپروفلوکساسین هیدروکلراید|CIPROFLOXACIN HYDROCHLORIDE",
+    "فلوکستین هیدروکلراید|FLUOXETINE HYDROCHLORIDE",
+    "فنوباربیتال|PHENOBARBITAL",
+    "کاربامازپین|Carbamazepine",
+    "کتورولاک ترومتامین ( گرید تزریقی غیر استریل)|KETOROLAC TROMETHAMIN( INJECTION GRADE NON STRILE)",
+    "کوئتیاپین فومارات|Quetiapine fumarate",
+    "لووفلوکساسین تزریقی غیر استریل|LEVOFLOXACIN INJECTION GRADE NON-STERILE",
+    "لووفلوکساسین همی هیدرات|LEVOFLOXACIN HEMI HYDRATE",
+    "متفورمین|Metformin",
+    "مرفین سولفات( گرید تزریقی غیر استریل)|MORPHINE SULFATE( INJECTION GRADE NON-STERILE)",
+    "مورفین هیدروکلراید|MORPHINE HYDROCHLORIDE (FOR EXPORT)",
+    "نوروکسی مورفون بیس|NOROXYMORPHONE BASE (FOR EXPORT)",
+    "هسته شکر|SUGAR SPHERE",
+    "هیدروکسی کلروکین سولفات|HYDROXYCHLOROQUINE SULFATE"
    ]
   },
   {
@@ -986,7 +1191,7 @@
    "site": "ساوه، شهرک صنعتی کاوه",
    "mail": "info@alborzbulk.com",
    "web": "https://alborzbulk.com/",
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/البرز-بالک/",
    "p": [
     "اپرپیتانت|Aprepitant",
@@ -1020,7 +1225,17 @@
     "سیپروترون استات|Cyproterone Acetate",
     "دگزامتازون سدیم فسفات|Dexamethasone Sodium Phosphate",
     "اکسی متالون|Oxymetholone",
-    "تریامسینولون استوناید|Triamcinolone Acetonide"
+    "تریامسینولون استوناید|Triamcinolone Acetonide",
+    "اندانسترون|Ondansetron",
+    "آزیترومایسین|Azithromycin",
+    "پریگابالین|Pregabalin",
+    "دس لوراتادین|Desloratadine",
+    "ریواروکسابان|Rivaroxaban",
+    "سرترالین|Sertraline",
+    "سفیکسیم|Cefixime",
+    "سیپروفلوکساسین|Ciprofloxacin",
+    "سیتاگلیپتین فسفات|Sitagliptin phosphate",
+    "لیدوکائین هیدروکلراید|Lidocaine hydrochloride"
    ]
   },
   {
@@ -1036,7 +1251,7 @@
     "021-46032997-8"
    ],
    "mail": "sales.fdhpharma@gmail.com",
-   "note": "استاندارد ثانویه و ناخالصی (Related Compound) برای آزمایشگاه کنترل کیفیت؛ ماده اولیه تولید نیست؛ فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "استاندارد ثانویه و ناخالصی (Related Compound) برای آزمایشگاه کنترل کیفیت؛ ماده اولیه تولید نیست؛ فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/فناوران-دارویی-حکیم/",
    "p": [
     "استاندارد استامینوفن و ناخالصی‌ها|Acetaminophen RS & related compounds",
@@ -1312,7 +1527,442 @@
     "Tizanidine Hydrochloride|",
     "Tizanidine Related Compound A|",
     "Tizanidine Related Compound B|",
-    "Tizanidine Related Compound C|"
+    "Tizanidine Related Compound C|",
+    "آپیکسابان اسید ایمپیوریتی|Apixaban Acid Impurity",
+    "آداپالن ریلیتد کامپاند A|Adapalene Related Compound A (USP)",
+    "آداپالن ریلیتد کامپاند B|Adapalene Related Compound B (USP)",
+    "آداپالن ریلیتد کامپاند C|Adapalene Related Compound C (USP)",
+    "آداپالن ریلیتد کامپاند E|Adapalene Related Compound E (USP)",
+    "آسپرین ایمپیوریتی استاندارد|Aspirine Impurity Standard (BP)",
+    "آسیکلوویر ریلیتد کامپاند A|Aciclovir Related Compound A (USP)",
+    "آسیکلوویر ریلیتد کامپاند F|Aciclovir Related Compound F (USP)",
+    "آلپرازولام ریلیتد کامپاند A|Alprazolam Related Compound A (USP)",
+    "گلایبورید ریلیتد کامپاند A|Glyburide Related Compound A",
+    "o-تولوئن سولفونامید|o-Toluenesulfonamide",
+    "اپی نفرین بی تارترات|Epinephrine Bitartrate",
+    "اتومیدیت|Etomidate",
+    "اتیل پارابن|Ethylparaben",
+    "اریترومایسین|Erythromycin",
+    "اریترومایسین ریلیتد کامپاند N|Erythromycin Related Compound N (USP)",
+    "استامینوفن ریلیتد کامپاند A|Acetaminophen Related Compound A (USP)",
+    "استامینوفن ریلیتد کامپاند B|Acetaminophen Related Compound B (USP)",
+    "استامینوفن ریلیتد کامپاند C|Acetaminophen Related Compound C (USP)",
+    "استامینوفن ریلیتد کامپاند D|Acetaminophen Related Compound D (USP)",
+    "استامینوفن ریلیتد کامپاند F|Acetaminophen Related Compound F (USP)",
+    "استامینوفن ریلیتد کامپاند J|Acetaminophen Related Compound J (USP)",
+    "استاندارد ایمپیوریتی فلوکونازول (BP)|Fluconazole Impurity Standard (BP)",
+    "استیل سالیسیلیک اسید برای شناسایی پیک|Acetylsalicylic Acid for Peak Identification (EP)",
+    "استیل سیستئین|Acetylcysteine",
+    "اسکوربیک اسید|Ascorbic Acid",
+    "اسید فولیک|Folic Acid",
+    "اسید فوماریک|Fumaric Acid",
+    "افلوکساسین|Ofloxacin",
+    "افلوکساسین ریلیتد کامپاند A|Ofloxacin Related Compound A (USP)",
+    "اکسی تتراسایکلین|Oxytetracycline",
+    "اکسی کدون|OXYCODONE",
+    "اکسی کدون ریلیتد کامپاند|Oxycodone Related Compound B (USP)",
+    "اکسی کدون هیدروکلراید|OXYCODONE HYDROCHLORIDE",
+    "اکونازول نیترات|Econazole Nitrate",
+    "ال-فنیل‌آلانین|L-Phenylalanine",
+    "امپاگلیفلوزین|Empagliflozin",
+    "امپرازول ریلیتد کامپاند A|Omeprazole Related Compound A (USP)",
+    "امپرازول ریلیتد کامپاند B|Omeprazole Related Compound B (USP)",
+    "امپرازول ریلیتد کامپاند F&G مخلوط|Omeprazole Related Compound F and G Mixture (USP)",
+    "انالاپریل مالئات|Enalapril Maleate",
+    "اندانسترون بامخلوط حل شونده|Ondansetron Resolution Mixture (USP)",
+    "اندانسترون ریلیتد کامپاند A|Ondansetron Related Compound A (USP)",
+    "اندانسترون ریلیتد کامپاند C|Ondansetron Related Compound C (USP)",
+    "اندانسترون ریلیتد کامپاند D|Ondansetron Related Compound D (USP)",
+    "اندانسترون ریلیتد کامپاند G|Ondansetron Related Compound G (USP)",
+    "اورلیستات|Orlistat",
+    "اورلیستات ریلیتد کامپاند B|Orlistat Related Compound B (USP)",
+    "اورلیستات ریلیتد کامپاند C|Orlistat Related Compound C (USP)",
+    "اورلیستات ریلیتد کامپاند D|Orlistat Related Compound D (USP)",
+    "اولانزاپین|Olanzapine",
+    "اولانزاپین ریلیتد کامپاند A|Olanzapine Related Compound A (USP)",
+    "اولانزاپین ریلیتد کامپاند B|Olanzapine Related Compound B (USP)",
+    "اولانزاپین ریلیتد کامپاند C|Olanzapine Related Compound C (USP)",
+    "ایبوبروفن ریلیتد کامپاند C|Ibuprofen Related Compound C (USP)",
+    "ایبوبروفن ریلیتد کامپاند J|Ibuprofen Related Compound J (USP)",
+    "ایبوپروفن ایمپیوریتی B (EP)، خالص|Ibuprofen Impurity B (EP), Net",
+    "ایبوپروفن ایمپیوریتی B (EP)، محلول 0.07% w/v|Ibuprofen Impurity B (EP), Solution 0.07% w/v",
+    "ایبوپروفن ایمپیوریتی F (EP)|Ibuprofen Impurity F (EP)",
+    "ایبوپروفن ایمپیوریتی N (EP)|Ibuprofen Impurity N (EP)",
+    "ایبوپروفن برای شناسایی پیک (EP)|Ibuprofen for Peak Identification (EP)",
+    "ایتراکونازول|Itraconazole",
+    "ایمپیوریتی کلرفنامین D (EP)|Chlorphenamine Impurity D (EP)",
+    "ایمپیوریتی گلیکلازید B (EP)|Gliclazide Impurity B (EP)",
+    "ایمپیوریتی گلیکلازید F (EP)|Gliclazide Impurity F (EP)",
+    "ایندومتاسین ریلیتد کامپاند A|Indomethacin Related Compound A (USP)",
+    "ایندومتاسین ریلیتد کامپاند B|Indomethacin Related Compound B (USP)",
+    "ایواکافتور|Ivacaftor",
+    "آپیکسابان|Apixaban",
+    "آتورواستاتین ریلیتد کامپاند A|Atorvastatin Related Compound A (USP)",
+    "آتورواستاتین ریلیتد کامپاند B|Atorvastatin Related Compound B (USP)",
+    "آتورواستاتین ریلیتد کامپاند C|Atorvastatin Related Compound C (USP)",
+    "آتورواستاتین ریلیتد کامپاند E|Atorvastatin Related Compound E (USP)",
+    "آتورواستاتین ریلیتد کامپاند H|Atorvastatin Related Compound H (USP)",
+    "آتورواستاتین ریلیتد کامپاند I|Atorvastatin Related Compound I (USP)",
+    "آداپالن|Adapalene",
+    "آدرنالون هیدروکلراید|Adrenalone Hydrochloride",
+    "آر-سیتالوپرام اگزالات|R-Citalopram Oxalate",
+    "آزاریترومایسین A|Azaerythromycin A (USP)",
+    "آزیترومایسین|Azithromycin",
+    "آزیترومایسین ریلیتد کامپاند F|Azithromycin Related Compound F (USP)",
+    "آسپارتام|Aspartame",
+    "آسپارتام ریلیتد کامپاند A|Aspartame Related Compound A (USP)",
+    "آسپرین|ASPIRIN",
+    "آسیکلوویر|Acyclovir",
+    "آلپرازولام|Alprazolam",
+    "آلفا نفتول|Alpha-Naphthol",
+    "آمانتادین هیدروکلراید|Amantadine Hydrochloride",
+    "آملودیپین ایمپیوریتی B|Amlodipine Impurity B (EP)",
+    "آملودیپین|Amlodipine",
+    "آملودیپین ریلیتد کامپاند A|Amlodipine Related Compound A (USP)",
+    "آملودیپین ریلیتد کامپاند C|Amlodipine Related Compound C (USP)",
+    "آملودیپین ریلیتد کامپاند D|Amlodipine Related Compound D (USP)",
+    "آموکسی سیلین|Amoxicillin",
+    "آموکسی سیلین ریلیتد کامپاند A|Amoxicillin Related Compound A (USP)",
+    "آموکسی سیلین ریلیتد کامپاند D|Amoxicillin Related Compound D (USP)",
+    "آمی تریپتیلین ریلیتد کامپاند A|Amitriptyline Related Compound A (USP)",
+    "آمی تریپتیلین ریلیتد کامپاند B|Amitriptyline Related Compound B (USP)",
+    "آمینو-2-5-کلروبنزوفنون|Amino-2-5-chlorobenzophenone",
+    "آمینوفنول-4|4-Aminophenol",
+    "آمیودارون ریلیتد کامپاند D|Amiodarone Related Compound D (USP)",
+    "آمیودارون ریلیتد کامپاند E|Amiodarone Related Compound E (USP)",
+    "آمیودارون هیدروکلراید|Amiodarone Hydrochloride",
+    "باکلوفن|Baclofen",
+    "باکلوفن ریلیتد کامپاند A|Baclofen Related Compound A (USP)",
+    "بتامتازون|Betamethasone",
+    "بتامتازون سدیم فسفات|Betamethasone Sodium Phosphate",
+    "بتامتازون والرات|Betamethasone Valerate",
+    "بتامتازون والرات ریلیتد کامپاند A|Betamethasone Valerate Related Compound A (USP)",
+    "بکلومتازون دی پروپیونات|Beclomethasone Dipropionate",
+    "بکلومتازون دی پروپیونات مونوهیدرات|Beclometasone Dipropionate Mono hydrate",
+    "بنزالدئید|Benzaldehyde",
+    "بنزوات سدیم|Sodium Benzoate",
+    "بنزوتیادیازین ریلیتد کامپاند A|Benzothiadiazine Related Compound A (USP)",
+    "بنزوئیک اسید|Benzoic Acid",
+    "بنزیل الکل|Benzyl Alcohol",
+    "بنسرازید ایمپیوریتی A (EP)|Benserazide Impurity A (EP)",
+    "بنسرازید هیدروکلراید|Benserazide Hydrochloride",
+    "بوپروپیون هیدروکلراید|Bupropion Hydrochloride",
+    "بوپروپیون هیدروکلراید ریلیتد کامپاند A|Bupropion Hydrochloride Related Compound A (USP)",
+    "بوپروپیون هیدروکلراید ریلیتد کامپاند B|Bupropion Hydrochloride Related Compound B (USP)",
+    "بوتیل پارابن|Butylparaben",
+    "بوسپیرون ریلیتد کامپاند L|Buspirone Related Compound L (USP)",
+    "بوسپیرون هیدروکلراید|Buspirone Hydrochloride",
+    "بیزاکودیل|Bisacodyl",
+    "بیسوپرولول فومارات|Bisoprolol Fumarate",
+    "بیوتین|Biotin",
+    "پارا-تولوئن سولفونامید|p-Toluenesulfonamide",
+    "پارا-رانولازین|p-Ranolazine",
+    "پتاسیم سوربات|Potassium Sorbate",
+    "پردنیزون|Prednisone",
+    "پرگابالین ایمپیوریتی D|Pregabalin Impurity D (EP)",
+    "پرگابالین ایمپیوریتی استاندارد|Pregabalin Impurity Standard (BP)",
+    "پرگابالین ریلیتد کامپاند A|Pregabalin Related Compound A (USP)",
+    "پرگابالین ریلیتد کامپاند C|Pregabalin Related Compound C (USP)",
+    "پروپرانولول هیدروکلراید|Propranolol Hydrochloride",
+    "پروپوفول|Propofol",
+    "پروپوفول ریلیتد کامپاند A|Propofol Related Compound A (USP)",
+    "پروپوفول ریلیتد کامپاند B|Propofol Related Compound B (USP)",
+    "پروپوفول ریلیتد کامپاند C|Propofol Related Compound C (USP)",
+    "پروپیل پارابن|Propylparaben",
+    "پرومتازین ریلیتد کامپاند B|Promethazine Related Compound B (USP)",
+    "پرومتازین هیدروکلراید|Promethazine Hydrochloride",
+    "پریلوکائین ریلیتد کامپاند A|Prilocaine Related Compound A (USP)",
+    "پریلوکائین ریلیتد کامپاند B|Prilocaine Related Compound B (USP)",
+    "پنتوپرازول برای سازگاری با سیستم|Pantoprazole for System Suitability (EP)",
+    "پنتوپرازول ریلیتد کامپاند A|Pantoprazole Related Compound A (USP)",
+    "پنتوپرازول ریلیتد کامپاند B|Pantoprazole Related Compound B (USP)",
+    "پنتوپرازول ریلیتد کامپاند C|Pantoprazole Related Compound C (USP)",
+    "پنتوپرازول ریلیتد کامپاند D&F مخلوط|Pantoprazole Related Compounds D and F Mixture (USP)",
+    "پیروکسیکام|Piroxicam",
+    "پیروکسیکام ریلیتد کامپاند A|Piroxicam Related Compound A (USP)",
+    "پیروکسیکام ریلیتد کامپاند D|Piroxicam Related Compound D (USP)",
+    "پیروکسیکام ریلیتد کامپاند G|Piroxicam Related Compound G (USP)",
+    "پیروکسیکام ریلیتد کامپاند J|Piroxicam Related Compound J (USP)",
+    "پیریدوکسین هیدروکلراید|Pyridoxine Hydrochloride",
+    "پیوگلیتازون هیدروکلراید|PIOGLITAZONE HYDROCHLORIDE",
+    "تادالافیل|Tadalafil",
+    "تامسولوسین هایدروکلراید|TAMSULOSIN HYDROCHLORIDE",
+    "تتراسایکلین هیدروکلراید|Tetracycline Hydrochloride",
+    "ترامادول هیدروکلراید|Tramadol Hydrochloride",
+    "تریازولام|Triazolam",
+    "تلمیزارتان|Telmisartan",
+    "تلمیسارتان ریلیتد کامپاند A|Telmisartan Related Compound A (USP)",
+    "تلمیسارتان ریلیتد کامپاند B|Telmisartan Related Compound B (USP)",
+    "توپیرامات ریلیتد کامپاند A|Topiramate Related Compound A (USP)",
+    "تولترودین تارترات|Tolterodine Tartrate",
+    "تیامین هیدرو کلراید|THIAMINE HYDROCHLORIDE",
+    "تیکاگرلور|Ticagrelor",
+    "تیکاگرلور ریلیتد کامپاند B|Ticagrelor Related Compound B (USP)",
+    "تینیدازول ریلیتد کامپاند A|Tinidazole Related Compound A (USP)",
+    "تینیدازول ریلیتد کامپاند B|Tinidazole Related Compound B (USP)",
+    "داپوکستین هیدروکلراید|Dapoxetine Hydrochloride",
+    "داکسی سایکلین هیکلات|Doxycycline Hyclate",
+    "دالفامپریدین (فامپریدین)|Dalfampridine (fampridine)",
+    "دزلوراتادین ریلیتد کامپاند F|Desloratadine Related Compound F (USP)",
+    "دزوزامینیل آزیترومایسین|Desosaminylazithromycin",
+    "دسلوراتادین|Desloratadine",
+    "دکسترومتورفان هیدروبروماید|Dextromethorphan hydro bromide",
+    "دگزامتازون|Dexamethasone",
+    "دوکسازوسین ریلیتد کامپاند C|Doxazosin Related Compound C (USP)",
+    "دولوکستین ریلیتد کامپاند A|Duloxetine Related Compound A (USP)",
+    "دولوکستین ریلیتد کامپاند F|Duloxetine Related Compound F (USP)",
+    "دولوکستین ریلیتد کامپاند H|Duloxetine Related Compound H (USP)",
+    "دومپریدون مالئات|Domperidone Maleate",
+    "دونپزیل ریلیتد کامپاند A|Donepezil Related Compound A (USP)",
+    "دونپزیل هیدروکلراید|Donepezil Hydrochloride",
+    "دی سیکلومین هیدروکلراید|Dicyclomine Hydrochloride",
+    "دی متیلانیلین-2،3|2,3-Dimethylaniline",
+    "دیفن هیدرامین ریلیتد کامپاند A|Diphenhydramine Related Compound A (USP)",
+    "دیفن هیدرامین ریلیتد کامپاند B|Diphenhydramine Related Compound B (USP)",
+    "دیکلوفناک برای تناسب سیستم (EP)|Diclofenac for system suitability (EP)",
+    "دیکلوفناک ریلیتد کامپاند A|Diclofenac Related Compound A (USP)",
+    "رانولازین|Ranolazine",
+    "رانولازین ریلیتد کامپاند A|Ranolazine Related Compound A (USP)",
+    "رانولازین ریلیتد کامپاند B|Ranolazine Related Compound B (USP)",
+    "رانولازین ریلیتد کامپاند C|Ranolazine Related Compound C (USP)",
+    "رانولازین ریلیتد کامپاند D|Ranolazine Related Compound D (USP)",
+    "رگورافنیب|Regorafenib",
+    "روپیواکائین ریلیتد کامپاند A|Ropivacaine Related Compound A (USP)",
+    "روزوواستاتین انانتیومر|Rosuvastatin Enantiomer",
+    "روزوواستاتین ایمپیوریتی میکسچر|Rosuvastatin Impurity Mixture (EP)",
+    "روزوواستاتین برای سازگاری باسیستم|Rosuvastatin for System Suitability (EP)",
+    "روزوواستاتین ریلیتد کامپاند A|Rosuvastatin Related Compound A (USP)",
+    "روزوواستاتین ریلیتد کامپاند B|Rosuvastatin Related Compound B (USP)",
+    "روزوواستاتین ریلیتد کامپاند C|Rosuvastatin Related Compound C (USP)",
+    "روزوواستاتین کلسیم|Rosuvastatin Calcium",
+    "ریبوفلاوین|Riboflavin",
+    "ریزاتریپتان بنزوات|Rizatriptan Benzoate",
+    "ریواستیگمین تارترات|Rivastigmine Tartrate",
+    "ریواستیگمین ریلیتد کامپاند A|Rivastigmine Related Compound A (USP)",
+    "ریواستیگمین ریلیتد کامپاند B|Rivastigmine Related Compound B (USP)",
+    "زولپیدم تارترات|Zolpidem Tartrate",
+    "ساخارین سدیم|Saccharin Sodium",
+    "سالیسیلیک اسید|Salicylic Acid",
+    "ستیریزین ایمپیوریتی D (EP)|Cetirizine Impurity D (EP)",
+    "ستیریزین ریلیتد کامپاند A|Cetirizine Related Compound A (USP)",
+    "ستیریزین ریلیتد کامپاند G|Cetirizine Related Compound G (USP)",
+    "ستیریزین هیدروکلراید|Cetirizine Hydrochloride",
+    "سدیم مونته لوکاست|Montelukast Sodium",
+    "سرتاکونازول نیترات|Sertaconazole Nitrate",
+    "سرترالین ایمپیوریتی E|Sertraline Impurity E (EP)",
+    "سرترالین برای سازگاری با سیستم|Sertraline for System Suitability (EP)",
+    "سرترالین برای شناسایی پیک|Sertraline for Peak Identification (EP)",
+    "سرترالین هیدروکلراید ریلیتد کامپاند A|Sertraline Hydrochloride Related Compound A (USP)",
+    "سرترالین هیدروکلراید مخلوط راسمیک|Sertraline Hydrochloride Racemic Mixture (USP)",
+    "سفالکسین|Cephalexin",
+    "سفیکسیم|Cefixime",
+    "سلکوکسیب ریلیتد کامپاند A|Celecoxib Related Compound A (USP)",
+    "سلکوکسیب ریلیتد کامپاند B|Celecoxib Related Compound B (USP)",
+    "سوتالول هیدروکلراید|Sotalol Hydrochloride",
+    "سولفات آلبوترول|Albuterol Sulfate",
+    "سولفاسالازین|Sulfasalazine",
+    "سولفانیلامید|Sulfanilamide",
+    "سیانوکوبالامین|Cyanocobalamin",
+    "سیپروفلوکساسین آنالوگ اتیلن دیامین|Ciprofloxacin Ethylenediamine Analog",
+    "سیپروفلوکساسین هیدروکلراید|Ciprofloxacin Hydrochloride",
+    "سیتاگلیپتین فسفات|Sitagliptin Phosphate",
+    "سیتاگلیپتین مخلوط مناسب سیستم|Sitagliptin System Suitability Mixture (USP)",
+    "سیتالوپرام ریلیتد کامپاند A|Citalopram Related Compound A (USP)",
+    "سیتالوپرام ریلیتد کامپاند B|Citalopram Related Compound B (USP)",
+    "سیتالوپرام ریلیتد کامپاند C|Citalopram Related Compound C (USP)",
+    "سیتالوپرام ریلیتد کامپاند D|Citalopram Related Compound D (USP)",
+    "سیتالوپرام ریلیتد کامپاند E|Citalopram Related Compound E (USP)",
+    "سیتالوپرام ریلیتد کامپاند F|Citalopram Related Compound F (USP)",
+    "سیتالوپرام ریلیتد کامپاند H|Citalopram Related Compound H (USP)",
+    "دی‌سیکلومین ریلیتد کامپاند A|Dicyclomine Related Compound A (USP)",
+    "سیلدنافیل ریلیتد کامپاند A|Sildenafil Related Compound A (USP)",
+    "سیلدنافیل سیترات|Sildenafil Citrate",
+    "سیلوستازول ریلیتد کامپاند A|Cilostazol Related Compound A ( USP)",
+    "سیلوستازول ریلیتد کامپاند B|Cilostazol Related Compound B ( USP)",
+    "شناسه کلاریترومایسین (USP)|Clarithromycin Identity (USP)",
+    "فاموتیدین ریلیتد کامپاند B|Famotidine Related Compound B (USP)",
+    "فاموتیدین ریلیتد کامپاند C|Famotidine Related Compound C (USP)",
+    "فاموتیدین ریلیتد کامپاند D|Famotidine Related Compound D (USP)",
+    "فاموتیدین ریلیتد کامپاند E|Famotidine Related Compound E (USP)",
+    "فاموتیدین ریلیتد کامپاند F|Famotidine Related Compound F (USP)",
+    "فکسوفنادین ریلیتد کامپاند A|Fexofenadine Related Compound A (USP)",
+    "فکسوفنادین ریلیتد کامپاند B|Fexofenadine Related Compound B (USP)",
+    "فکسوفنادین ریلیتد کامپاند C|Fexofenadine Related Compound C (USP)",
+    "فکسوفنادین هیدروکلراید|Fexofenadine Hydrochloride",
+    "فلوتیکازون پروپیونات|Fluticasone Propionate",
+    "فلوروکینولونیک اسید|Fluoroquinolonic Acid",
+    "فلوکستین ریلیتد کامپاند A|Fluoxetine Reloated Compound B (USP)",
+    "فلوکستین هیدروکلراید|Fluoxetine Hydrochloride",
+    "فلوکونازول|Fluconazole",
+    "فلوکونازول ریلیتد کامپاند A|Fluconazole Related Compound A (USP)",
+    "فلوکونازول ریلیتد کامپاند B|Fluconazole Related Compound B (USP)",
+    "فلوکونازول ریلیتد کامپاند C|Fluconazole Related Compound C (USP)",
+    "فلونیکسین ریلیتد کامپاند A|Flunixin Related Compound A (USP)",
+    "فلونیکسین ریلیتد کامپاند B|Flunixin Related Compound B (USP)",
+    "فلونیکسین ریلیتد کامپاند C|Flunixin Related Compound C (USP)",
+    "فلوواکسامین مالئات|Fluvoxamine maleate",
+    "فنوفیبرات ریلیتد کامپاند A|Fenofibrate Related Compound A (USP)",
+    "فنوفیبرات ریلیتد کامپاند B|Fenofibrate Related Compound B (USP)",
+    "فنوفیبرات ریلیتد کامپاند C|Fenofibrate Related Compound C (USP)",
+    "فنی‌توئین|Phenytoin",
+    "فنی‌توئین ریلیتد کامپاند A|Phenytoin Related Compound A (USP)",
+    "فنی‌توئین سدیم|Phenytoin Sodium",
+    "فنیرامین مالئات|Pheniramine Maleate",
+    "فنیل‌افرین ریلیتد کامپاند C|Phenylephrine Related Compound C (USP)",
+    "فنیل‌افرین ریلیتد کامپاند D|Phenylephrine Related Compound D (USP)",
+    "فنیل‌افرین ریلیتد کامپاند E|Phenylephrine Related Compound E (USP)",
+    "فنیل‌افرین هیدروکلراید|Phenylephrine Hydrochloride",
+    "فنیل‌افرین هیدروکلراید برای شناسایی پیک|Phenylephrine HCl for Peak Identification (EP)",
+    "کاپتوپریل|Captopril",
+    "کاپتوپریل دی سولفید|Captopril Disulfide",
+    "کاربامازپین ریلیتد کامپاند B|Carbamazepine Related Compound B (USP)",
+    "کاربامازپین ریلیتد کامپاند A|Carbamazepine Related Compound A (USP)",
+    "کاربیدوپا|Carbidopa",
+    "کارودیلول ریلیتد کامپاند A|Carvedilol Related Compound A (USP)",
+    "کارودیلول ریلیتد کامپاند B|Carvedilol Related Compound B (USP)",
+    "کارودیلول ریلیتد کامپاند C|Carvedilol Related Compound C (USP)",
+    "کارودیلول ریلیتد کامپاند D|Carvedilol Related Compound D (USP)",
+    "کارودیلول ریلیتد کامپاند E|Carvedilol Related Compound E (USP)",
+    "کارودیلول مخلوط مناسب سیستم|Carvedilol System Suitability Mixture (USP)",
+    "کافئین|Caffeine",
+    "کتورولاک ترومتامین|Ketorolac Tromethamine",
+    "کتورولاک ریلیتد کامپاند A|Ketorolac Related Compound A (USP)",
+    "کتورولاک ریلیتد کامپاند B|Ketorolac Related Compound B (USP)",
+    "کتورولاک ریلیتد کامپاند C|Ketorolac Related Compound C (USP)",
+    "کتورولاک ریلیتد کامپاند D|Ketorolac Related Compound D (USP)",
+    "کتورولاک ریلیتد کامپاند G|",
+    "کتوکونازول|Ketoconazole",
+    "کدئین فسفات|Codeine Phosphate",
+    "کدئین مخلوط مناسب سیستم (USP)|Codeine System Suitability Mixture (USP)",
+    "کربنات کلسیم|Calcium Carbonate",
+    "کرومولین ریلیتد کامپاند A|Cromolyn Related Compound A (USP)",
+    "کرومولین ریلیتد کامپاند B|Cromolyn Related Compound B (USP)",
+    "کرومولین سدیم|Cromolyn Sodium",
+    "کلاریترومایسین|Clarithromycin",
+    "کلرپرومازین هیدروکلراید|Chlorpromazine Hydrochloride",
+    "کلردیازپوکساید ریلیتد کامپاند A|Chlordiazepoxide Related Compound A (USP)",
+    "کلردیازپوکساید ریلیتد کامپاند B|",
+    "کلردیازپوکساید ریلیتد کامپاند C|",
+    "کلروبنزوفنون-4|4-Chlorobenzophenone",
+    "کلوبتازول پروپیونات|Clobetasol Propionate",
+    "کلوبتازول پروپیونات ریلیتد کامپاند A|Clobetasol Propionate Related Compound A (USP)",
+    "کلوپیدوگرل|Clopidogrel",
+    "کلوپیدوگرل ریلیتد کامپاند A|Clopidogrel Related Compound A (USP)",
+    "کلوپیدوگرل ریلیتد کامپاند B|Clopidogrel Related Compound B (USP)",
+    "کلوپیدوگرل ریلیتد کامپاند C|Clopidogrel Related Compound C (USP)",
+    "کلوتریمازول ریلیتد کامپاند A|Clotrimazole Related Compound A (USP)",
+    "کلوزاپین|Clozapine",
+    "کلونازپام ریلیتد کامپاند A|Clonazepam Related Compound A (USP)",
+    "کلونازپام ریلیتد کامپاند B|Clonazepam Related Compound B (USP)",
+    "کلونازپام ریلیتد کامپاند C|Clonazepam Related Compound C (USP)",
+    "کلیندامایسین فسفات|Clindamycin Phosphate",
+    "کلیندامایسین هیدروکلراید|Clindamycin Hydrochloride",
+    "کوتیاپین دسثوکسی|Quetiapine Desethoxy",
+    "کوتیاپین ریلیتد کامپاند B|Quetiapine Related Compound B (USP)",
+    "کوتیاپین ریلیتد کامپاند G|Quetiapine Related Compound G (USP)",
+    "کوتیاپین ریلیتد کامپاند H|Quetiapine Related Compound H (USP)",
+    "کوئتیاپین فومارات|Quetiapine fumarate",
+    "کوتیاپین فومارات برای سازگاری باسیستم|Quetiapine for System Suitability (USP)",
+    "گاباپنتین ریلیتد کامپاند A|Gabapentin Related Compound A (USP)",
+    "گاباپنتین ریلیتد کامپاند B|Gabapentin Related Compound B (USP)",
+    "گاباپنتین ریلیتد کامپاند D|Gabapentin Related Compound D (USP)",
+    "گاباپنتین ریلیتد کامپاند E|Gabapentin Related Compound E (USP)",
+    "گرانیسترون ریلیتد کامپاند A|Granisetron Related Compound A (USP)",
+    "گرانیسترون ریلیتد کامپاند B|Granisetron Related Compound B (USP)",
+    "گرانیسترون ریلیتد کامپاند C|Granisetron Related Compound C (USP)",
+    "گرانیسترون ریلیتد کامپاند D|Granisetron Related Compound D (USP)",
+    "گلایبورید|Glyburide",
+    "گلوکزامین هیدروکلراید|Glucosamine Hydrochloride",
+    "گلیکلازید|Gliclazide",
+    "گوانین|Guanine",
+    "گوایفنسین|Guaifenesin",
+    "لانزوپرازول|Lansoprazole",
+    "لانزوپرازول ریلیتد کامپاند A|Lansoprazole Related Compound A (USP)",
+    "لانزوپرازول ریلیتد کامپاند B|Lansoprazole Related Compound B (USP)",
+    "لوپرامید ریلیتد کامپاند F|Loperamide Related Compound F (USP)",
+    "لوپرامید هیدروکلراید|Loperamide Hydrochloride",
+    "لوتیراستام|Levetiracetam",
+    "لوتیراستام ریلیتد کامپاند A|Levetiracetam Related Compound A (USP)",
+    "لوتیراستام ریلیتد کامپاند B|Levetiracetam Related Compound B (USP)",
+    "لوراتادین|Loratadine",
+    "لوراتادین ریلیتد کامپاند A|Loratadine Related Compound A (USP)",
+    "لوراتادین ریلیتد کامپاند B|Loratadine Related Compound B (USP)",
+    "لوزارتان پتاسیم|Losartan potassium",
+    "لوودوپا|Levodopa",
+    "لووفلوکساسین ریلیتد کامپاند A|Levofloxacin Related Compound A (USP)",
+    "لووفلوکساسین ریلیتد کامپاند B|Levofloxacin Related Compound B (USP)",
+    "لووکارنیتین ریلیتد کامپاند A|Levocarnitine Related Compound A (USP)",
+    "لیدوکائین ریلیتد کامپاند H|Lidocaine Related Compound H (USP)",
+    "لیناگلیپتین|Linagliptin",
+    "لینزولید ریلیتد کامپاند B|Linezolid Related Compound B (USP)",
+    "لینزولید ریلیتد کامپاند D|Linezolid Related Compound D (USP)",
+    "لینکومایسین هیدروکلراید|Lincomycin Hydrochloride",
+    "ماینوکسیدیل ریلیتد کامپاند E|Minoxidil Related Compound E (USP)",
+    "مبورین هیدروکلراید|Mebeverine Hydrochloride",
+    "مترونیدازول|Metronidazole",
+    "متفورمین ایمپیوریتی F|Metformin Impurity F (EP)",
+    "متفورمین ایمپیوریتی F (NET)|Metformin Impurity F (EP), Net",
+    "متفورمین ریلیتد کامپاند A|Metformin Related Compound A (USP)",
+    "متفورمین ریلیتد کامپاند B|Metformin Related Compound B (USP)",
+    "متفورمین ریلیتد کامپاند C|Metformin Related Compound C (USP)",
+    "متفورمین|Metformin",
+    "متوپرولول ریلیتد کامپاند A|Metoprolol Related Compound A (USP)",
+    "متوپرولول ریلیتد کامپاند B|Metoprolol Related Compound B (USP)",
+    "متوپرولول ریلیتد کامپاند C|Metoprolol Related Compound C (USP)",
+    "متوپرولول ریلیتد کامپاند D|Metoprolol Related Compound D (USP)",
+    "متوکاربامول|Methocarbamol",
+    "متیل پارابن|Methylparaben",
+    "متیل دوپا|Methyldopa",
+    "متیمازول ریلیتد کامپاند C|Methimazole Related Compound C (USP)",
+    "مخلوط راسمیک لوتیراستام (USP)|Levetiracetam Racemic Mixture (USP)",
+    "مخلوط مناسب سیستم لوپرامید (USP)|Loperamide System Suitability Mixture (USP)",
+    "مسالامین|Mesalamine",
+    "مفنامیک اسید|Mefenamic Acid",
+    "ملاتونین|Melatonin",
+    "ملاتونین ریلیتد کامپاند A|Melatonin Related Compound A (USP)",
+    "ملوکسیکام|Meloxicam",
+    "ملوکسیکام ایمپیوریتی C|Meloxicam Impurity C (EP)",
+    "ملوکسیکام ایمپیوریتی استاندارد|Meloxicam Impurity Standard (BP)",
+    "ملوکسیکام ریلیتد کامپاند A|Meloxicam Related Compound A (USP)",
+    "ملوکسیکام ریلیتد کامپاند B|Meloxicam Related Compound B (USP)",
+    "ملوکسیکام ریلیتد کامپاند C|Meloxicam Related Compound C (USP)",
+    "ممانتین ریلیتد کامپاند A|Memantine Related Compound A (USP)",
+    "ممانتین ریلیتد کامپاند B|Memantine Related Compound B (USP)",
+    "ممانتین ریلیتد کامپاند C|Memantine Related Compound C (USP)",
+    "ممانتین ریلیتد کامپاند D|Memantine Related Compound D (USP)",
+    "ممانتین ریلیتد کامپاند E|Memantine Related Compound E (USP)",
+    "مودافینیل|Modafinil",
+    "مودافینیل ریلیتد کامپاند A|Modafinil Related Compound A (USP)",
+    "مودافینیل ریلیتد کامپاند B|Modafinil Related Compound B (USP)",
+    "مودافینیل ریلیتد کامپاند C|Modafinil Related Compound C (USP)",
+    "مودافینیل ریلیتد کامپاند E|Modafinil Related Compound E (USP)",
+    "مورفین برای سازگاری باسیستم|Morphine for System Suitability (EP)",
+    "مورفین سولفات|Morphine Sulfate",
+    "موکسی فلوکساسین هیدروکلراید|Moxifloxacin Hydrochloride",
+    "مونته‌لوکاست دی‌سیکلوهگزیل‌آمین|Montelukast Dicyclohexylamine",
+    "میدازولام|Midazolam",
+    "ناپروکسن ایمپیوریتی استاندارد|Naproxen Impurity Standard (BP)",
+    "ناپروکسن ریلیتد کامپاند A|Naproxen Related Compound A (USP)",
+    "ناپروکسن ریلیتد کامپاند L|Naproxen Related Compound L (USP)",
+    "نوراپی نفرین بی تارترات|Norepinephrine Bitartrate",
+    "نورفنیل افرین هیدروکلراید|Norphenylephrine Hydrochloride",
+    "نیاسینامید|Niacinamide",
+    "نیتروفورازون|Nitrofurazone",
+    "نیتروفورانتوئین|Nitrofurantoin",
+    "نیلوتینیب ریلیتد کامپاند A|Nilotinib Related Compound A (USP)",
+    "نیلوتینیب ریلیتد کامپاند B|Nilotinib Related Compound B (USP)",
+    "نیلوتینیب ریلیتد کامپاند C|Nilotinib Related Compound C (USP)",
+    "هیدروکسی تولوئن بوتیله|Butylated Hydroxytoluene",
+    "هیدروکسیزین ریلیتد کامپاند A|Hydroxyzine Related Compound A (USP)",
+    "هیدروکورتیزون|Hydrocortisone",
+    "والاسیکلوویر ریلیتد کامپاند G|Valacyclovir Related Compound G (USP)",
+    "والزارتان ریلیتد کامپاند A|Valsartan Related Compound A (USP)",
+    "والزارتان ریلیتد کامپاند B|Valsartan Related Compound B (USP)",
+    "والزارتان ریلیتد کامپاند C|Valsartan Related Compound C (USP)",
+    "والزارتان ریلیتد کامپاند E|Valsartan Related Compound E (USP)",
+    "وراپامیل ریلیتد کامپاند A|",
+    "وراپامیل ریلیتد کامپاند F|Verapamil Related Compound F (USP)",
+    "ونلافکسین هیدروکلراید|Venlafaxine Hydrochloride"
    ]
   },
   {
@@ -1366,8 +2016,10 @@
     "نرمال بوتیل استات|n-Butyl acetate",
     "متانول|Methanol",
     "تولوئن|Toluene",
-    "زایلین|Xylene"
-   ]
+    "زایلین|Xylene",
+    "دی متوکسی متان (متیلال)|Dimethoxymethane"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "پایا شیمی اسپادانا",
@@ -1392,9 +2044,16 @@
     "کاتالیست پالادیوم کربن5 و 10 درصد|Palladium catalyst",
     "سیلیکاژل ستون وTLC|silica gel column and plate chromatography",
     "ورق TLC کیفی و کمی|Ptlc",
-    "ستونهای کروماتوگرافی یکبار مصرف|cloumn chromatography"
+    "ستونهای کروماتوگرافی یکبار مصرف|cloumn chromatography",
+    "پارچه ملت بلون|",
+    "تولید محصولات لیپوزدمال دافع حشرات با نیمه عمر بالا جهت حفاظت در مقابل سالک|",
+    "دستگاه تولید ماسک N95|",
+    "دستگاه تولید ملت بلون|",
+    "دستگاه روتاری درام فیلتر 2000 لیتری(در حال ساخت)|",
+    "دستگاه کش زن نیمه اتوماتیک|",
+    "سیلیس حجم دهنده و سیلیس لایه بردار (ساینده) مخصوص تولید خمیر دندان|silica"
    ],
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا."
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "آریوژن فارمد",
@@ -1460,8 +2119,13 @@
    "src": "https://cppsynd.com/",
    "p": [
     "آناکینرا|Anakinra (PerkinRA)",
-    "برکسورف (سورفکتانت ریوی)|Beraksurf"
-   ]
+    "برکسورف (سورفکتانت ریوی)|Beraksurf",
+    "برکتانت|Beractant",
+    "پرکینرا® (آناکینرا)|PerkinRA® (Anakinra)",
+    "سی آر ام 197|CRM197",
+    "واکسن نوترکیب کووید-19 نورا|The Noora recombinant COVID-19 vaccine"
+   ],
+   "note": "محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "سیناژن",
@@ -1477,7 +2141,7 @@
     "021-42915300"
    ],
    "addr": "تهران، شهرک غرب، خیابان سیمای ایران، کوچه هفتم، پلاک 2",
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/سیناژن/",
    "p": [
     "اکولیزومب|Eculizumab",
@@ -1502,7 +2166,15 @@
     "امالیزومب|Omalizumab",
     "نیوولومب|Nivolumab",
     "گوسلکومب|Guselkumab",
-    "سترورلیکس|Cetrorelix"
+    "سترورلیکس|Cetrorelix",
+    "اریتروپیتین|Erythropoietin",
+    "اوولوکوماب|Evolocumab",
+    "اینترفرون بتا|Interferon Beta",
+    "داراتوموماب|Daratumumab",
+    "ستوکسیماب|Cetuximab",
+    "فولیتروپین|Follitropin",
+    "فیلگراستیم|Filgrastim",
+    "لارونیداز|Laronidase"
    ],
    "mail": "Info@cinnagen.com"
   },
@@ -1519,7 +2191,7 @@
     "021-57941000 داخلی 7"
    ],
    "addr": "تهران، بالاتر از میدان ونک، خیابان عطار، میدان عطار، خیابان نیروی انتظامی، بن‌بست کاوه، پلاک 3",
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/فاران-شیمی/",
    "p": [
     "کدئین فسفات|CODEINE PHOSPHATE",
@@ -1542,7 +2214,13 @@
     "پاپاورین هیدروکلراید (گرید تزریقی)|PAPAVERINE HYDROCHLORIDE (INJECTABLE GRADE)",
     "هیوسین بوتیل بروماید|HYOSCINE BUTYLE BROMIDE",
     "ليناگليپتين|LINAGLIPTIN",
-    "بیزوپرولول فومارات|BISOPROLOL FUMARATE"
+    "بیزوپرولول فومارات|BISOPROLOL FUMARATE",
+    "امپاگلیفلوزین|Empagliflozin",
+    "اندانسترون|Ondansetron",
+    "آپریمیلاست|apremilast",
+    "داپاگلیفلوزین پروپاندیول مونوهیدرات|DAPAGLIFLOZIN PROPANEDIOL MONO HYDRATE",
+    "سوماتریپتان سوکسینات|Sumatriptan Succinat",
+    "لوزارتان پتاسیم|Losartan potassium"
    ],
    "mail": "info@Faranshimi.com"
   },
@@ -1585,7 +2263,7 @@
     "021-88332272"
    ],
    "addr": "تهران، خیابان یوسف‌آباد، خیابان جهان‌آرا، خیابان بیست‌وسوم، شماره 8",
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/صنایع-شیمیایی-دارویی-ارسطوسهامی-خاص/",
    "p": [
     "آسیکلویر|Acyclovir",
@@ -1618,7 +2296,14 @@
     "نورتریپتیلین هیدروکلراید|Nortriptyline Hydrochloride",
     "نیلوتینیب هیدروکلراید مونوهیدرات|Nilotinib hydrochloride Monohydrate",
     "گرانول نیلوتینیب هیدروکلراید مونوهیدرات73.70%|Nilotinib hydrochloride Monohydrate Granules73.70%",
-    "زولدرونیک اسید|Zoledronic acid"
+    "زولدرونیک اسید|Zoledronic acid",
+    "آبیراترون استات|Abiraterone acetate",
+    "پنتاپرازول سدیم|Pantoprazole sodium",
+    "دس لوراتادین|Desloratadine",
+    "مایکوفنولات|Mycophenolate",
+    "مونته‌لوکاست|Montelukast",
+    "نیلوتینیب هیدروکلراید|Nilotinib hydrochloride",
+    "ورینوستات|Vorinostat"
    ],
    "mail": "secretary@arasto.com"
   },
@@ -1635,7 +2320,7 @@
     "021-66945803-4"
    ],
    "addr": "تهران، بلوار کشاورز غربی، بن‌بست دوم، پلاک 3، طبقه 2",
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/نگین-دارو-نوآور/",
    "p": [
     "گلاتیرامر استات|Glatiramer Acetate",
@@ -1647,7 +2332,8 @@
     "فریک کربوکسی مالتوز|Ferric Carboxymaltose",
     "آریپیپرازول|Aripiprazole",
     "میکوفانژین سدیم|Micafungin Sodium",
-    "دیروکسیمل فومارات|Diroximel Fumarate"
+    "دیروکسیمل فومارات|Diroximel Fumarate",
+    "دالفامپریدین (فامپریدین)|Dalfampridine (fampridine)"
    ],
    "mail": "info@neginpharma.com"
   },
@@ -1665,13 +2351,16 @@
     "021-44908770"
    ],
    "addr": "کیلومتر 13 جاده مخصوص کرج، روبروی کاشی ایرانا، خیابان امید، بن‌بست سوم شرقی، پلاک 5",
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/توسعه-داروسازی-دانش/",
    "p": [
     "نیتیزینون|Nitisinone",
     "دفراسیروکس|Deferasirox",
     "فینگولیمود|Fingolimod",
-    "بوسنتان|Bosentan"
+    "بوسنتان|Bosentan",
+    "بوسنتان مونوهیدرات|Bosentan Mono hydrate",
+    "دس لوراتادین|Desloratadine",
+    "فینگولیمود هیدروکلراید|Fingolimod HCl"
    ],
    "mail": "office@daneshpharmaco.ir"
   },
@@ -1688,9 +2377,14 @@
     "041-36300592",
     "021-88540626"
    ],
-   "note": "فهرست محصول در منبع نیامده است.",
+   "note": "فهرست محصول در منبع نیامده است؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/",
-   "p": []
+   "p": [
+    "آموکسی سیلین|Amoxicillin",
+    "پودر پتاسیم کلاونات|Potassium Clavulanate Powder",
+    "پودر سفالکسین|Cephalexin powder",
+    "پودر سفکسیم|Cefixime powder"
+   ]
   },
   {
    "n": "اکتوورکو",
@@ -1725,13 +2419,45 @@
     "021-88309291",
     "021-88311666"
    ],
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/اکتو-بایوکم/",
    "p": [
     "والزارتان|valsartan",
     "اتورواستاتین|atorvastatin",
     "رزوواستاتین|rosuvastatin",
-    "گرانول نیتروگلیسیرین|Nitroglycerin granule"
+    "گرانول نیتروگلیسیرین|Nitroglycerin granule",
+    "اس سیتالوپرام اگزالات|Escitalopram oxalate",
+    "امپاگلیفلوزین|Empagliflozin",
+    "اندانسترون|Ondansetron",
+    "آپیکسابان|Apixaban",
+    "آتورواستاتین کلسیم|Atorvastatin Calcium",
+    "بورتزومیب|Bortezomib",
+    "پروژسترون|Progesterone",
+    "پلت اسموپرازول دی آر 13.5%|Esomeprazole DR 13.5 pellet",
+    "پلت اورلیستات 50%|Orlistat pellet 50",
+    "پلت پنتوپرازول|Pantoprazole pellet",
+    "پلت دولوکستین|duloxetine pellet",
+    "پلت لانسوپرازول DR 8.5%|Lansoprazole Dr pellet 8.5",
+    "پلت مبورین 80|Mebeverine pellet 80",
+    "تلمیزارتان|Telmisartan",
+    "دس لوراتادین|Desloratadine",
+    "رزواستاتین کلسیم|Rosuvastatin calcium",
+    "ریواروکسابان|Rivaroxaban",
+    "زولدرونیک اسید|Zoledronic acid",
+    "ساکوبیتریل/ والزارتان|Sacubitril/Valsartan",
+    "ستیریزین هیدروکلراید|Cetirizine hydrochloride",
+    "سیتاگلیپتین فسفات|Sitagliptin phosphate",
+    "سیلدنافیل سیترات|Sildenafil citrate",
+    "فریک کربوکسی مالتوز|Ferric Carboxy maltose",
+    "فکسوفنادین هیدروکلراید|Fexofenadine Hydrochloride",
+    "قرص امپرازول 8.5%|Omeprazole dr pellet 8.5",
+    "کانابیدیول|Cannabidiol",
+    "کپسیتابین|Capecitabine",
+    "کلوپیدوگرل|Clopidogrel",
+    "گاباپنتین|Gabapentin",
+    "گلیکلازید|Gliclazide",
+    "لیناگلیپتین|Linagliptin",
+    "مونته‌لوکاست|Montelukast"
    ],
    "mail": "mohammad.pirvaram@actobiochem.com"
   },
@@ -1748,7 +2474,7 @@
     "021-22134339"
    ],
    "mail": "office@AlborzPharmed.ir",
-   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/البرز-فارمد/",
    "p": [
     "کدئین فسفات|CODEINE PHOSPHATE",
@@ -1759,7 +2485,18 @@
     "امپاگلیفلوزین|EMPAGLIFLOZIN",
     "کارودیلول|CARVEDILOL",
     "داپاگلیفلوزین پروپان دیول|DAPAGLIFLOZIN PROPANEDIOL",
-    "نوسکاپین هیدروکلراید|NOSCAPINE HCL"
+    "نوسکاپین هیدروکلراید|NOSCAPINE HCL",
+    "اپلرنون|Eplerenone",
+    "آلپرازولام|Alprazolam",
+    "اورفورگلیپرون|Orforglipron",
+    "ایواکافتور|Ivacaftor",
+    "داپاگلیفلوزین|Dapagliflozin",
+    "رانولازین|Ranolazine",
+    "رسمیتروم|Resmetirom",
+    "ساکوبیتریل/ والزارتان|Sacubitril/Valsartan",
+    "سوزتریجین|Soztrigin",
+    "سیلودوسین|Silodosin",
+    "نوسکاپین بیس|NOSCAPINE BASE"
    ]
   },
   {
@@ -1775,7 +2512,7 @@
     "041-36300281-2"
    ],
    "web": "https://www.chlorpars.com/",
-   "note": "تولیدکننده محصولات کلر-آلکالی؛ فهرست محصول از سایت شرکت (گرید محصولات در سایت ذکر نشده است؛ پیش از مصرف دارویی گرید و CoA را استعلام کنید).",
+   "note": "تولیدکننده محصولات کلر-آلکالی؛ فهرست محصول از سایت شرکت (گرید محصولات در سایت ذکر نشده است؛ پیش از مصرف دارویی گرید و CoA را استعلام کنید)؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://www.chlorpars.com/",
    "p": [
     "آب اکسیژنه|Hydrogen peroxide",
@@ -1784,7 +2521,10 @@
     "سود مایع|Sodium hydroxide solution",
     "آب ژاول|Sodium hypochlorite solution",
     "پرکلرین|Calcium hypochlorite",
-    "کلرور فریک|Ferric chloride"
+    "کلرور فریک|Ferric chloride",
+    "پارافین کلره|Chlorinated paraffin",
+    "کلر مایع|Liquid chlorine",
+    "گاز هیدروژن|Hydrogen Gas"
    ]
   },
   {
@@ -1801,9 +2541,16 @@
     "021-22879040"
    ],
    "mail": "info@amopharmed.com",
-   "note": "طبق صفحه سندیکا فعلاً تولید ندارد.",
+   "note": "طبق صفحه سندیکا فعلاً تولید ندارد؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/",
-   "p": []
+   "p": [
+    "پریلوکائین|prilocaine",
+    "تیامین هیدرو کلراید|THIAMINE HYDROCHLORIDE",
+    "ملوکسیکام|Meloxicam",
+    "ویتامین E 50%|Tocopheryl Acetate 50%",
+    "ویتامین E 98%|Tocopheryl Acetate 98%",
+    "ویتامین D3 100000 (کوله کلسیفرول)|Vitamin D3 100000 (Cholecalciferol)"
+   ]
   },
   {
    "n": "شیمی پیک",
@@ -2911,7 +3658,7 @@
     "لوریک اسید|Lauric acid",
     "فروکتوز|Fructose",
     "Oil MCT (روغن ام سی تی)|",
-    "ویتامین D3 کریستال 40,000|MIU/g",
+    "ویتامین D3 کریستال 40,000 MIU/g|Vitamin D3 crystalline 40,000 MIU/g",
     "روغن فلفل قرمز|",
     "روغن زردچوبه|",
     "اتیلن گلیکول دی استئارات|",
@@ -5122,7 +5869,7 @@
    "addr": "تهران، خیابان بهار جنوبی، کوچه حمید صدیق، پلاک 31",
    "mail": "info@behansar.com",
    "web": "https://www.behansar.com/",
-   "note": "تولیدکننده داخلی نمک‌های معدنی دارویی، مواد نیمه‌ساخته (گرید DC، پلت، پرمیکس) و چند ماده مؤثره؛ عضو سندیکا.",
+   "note": "تولیدکننده داخلی نمک‌های معدنی دارویی، مواد نیمه‌ساخته (گرید DC، پلت، پرمیکس) و چند ماده مؤثره؛ عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://www.behansar.com/products/mineral-salts/all-mineral-salts",
    "p": [
     "پتاسیم کلراید|Potassium Chloride",
@@ -5254,7 +6001,29 @@
     "ویتامین B3 (نیاسین‌آمید)|Vitamin B3, Niacinamide",
     "تری‌اتیل سیترات|Triethyl Citrate",
     "تری‌استین|Triacetin",
-    "میکروکریستالین سلولز|Microcrystalline Cellulose"
+    "میکروکریستالین سلولز|Microcrystalline Cellulose",
+    "پتاسیم سیترات|Potassium citrate",
+    "پودر الومینیوم هیدروکساید|Aluminum hydroxide powder",
+    "پودر منیزیم هیدروکساید|Magnesium hydroxide powder",
+    "زینک سولفات|Zinc sulfate",
+    "زینک سیترات آنهیدروس|Anhydrous zinc citrate",
+    "زینک گلوکونات(اداره دارو)|Zinc gluconate (Medicare)",
+    "زینک گلوکونات(اداره مکمل)|Zinc gluconate (supplementary administration)",
+    "زینک گیسینات|Zinc gycinate",
+    "ژل الومینیوم هیدروکساید|Aluminum hydroxide gel",
+    "ژل منیزیم هیدروکساید|Magnesium hydroxide gel",
+    "سدیم کتات|Sodium ketate",
+    "کلسیم سیترات|Calcium citrate",
+    "کلسیم فسفات|Calcium phosphate",
+    "کلسیم کتات|Calcium Ketate",
+    "کلسیم کلراید|Calcium chloride",
+    "کلسیم گلوکونات انهیدروس|Calcium gluconate anhydrous",
+    "کلسیم گیسینات|Calcium gisinate",
+    "منیزیم سیترات|Magnesium citrate",
+    "منیزیم کتات|Magnesium Ketate",
+    "منیزیم کربنات|Magnesium carbonate",
+    "منیزیم گلوکونات آنهیدروس|Magnesium gluconate anhydrous",
+    "منیزیم گیسینات|Magnesium gisinate"
    ]
   },
   {
@@ -5275,7 +6044,7 @@
    "addr": "تهران، کیلومتر 18 اتوبان تهران–کرج، خیابان داروپخش، خیابان طالقانی",
    "site": "کرمانشاه (کارخانه)",
    "web": "https://dppcco.com/",
-   "note": "تلفن‌ها از سایت شرکت؛ فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "تلفن‌ها از سایت شرکت؛ فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/شيمي-دارويي-داروپخش/",
    "p": [
     "آتنولول|Atenolol",
@@ -5344,17 +6113,29 @@
     "ویتامین ب1 تزریقی و خوراکی|Vit. B1 (Inj., Oral)",
     "پلت اپرپیتانت 40%|Aprepitant Pellet 40%",
     "پلت دولوکستین هیدروکلراید 20%|Duloxetine HCl Pellet 20%",
-    "پلت آسکوربیک اسید 55 %|Amlodipine Besylate",
-    "امپاگلیفلوزین|Ascorbic acid 55% pellet",
-    "پرگابالین|B-Complex + Ascorbic acid Pellet",
-    "پلت ایتراکونازول 22 %|Bisoprolo Tartrate",
-    "بیسوپرولول تارتارات|Dex Lansoprazole Sesquihydrate pellet Dual Delayed Release",
-    "اس سیتالوپرام|Empagliflozin",
-    "آملودیپین بزیلات|Escitalopram",
-    "زولپیدم تارتارات|Fenofibrate Pellet 66%",
-    "پلت فنوفیبرات 66%|Itraconazole pellet 22%",
-    "پلت دکس لنسوپرازول|Omeprazole pellet for Export",
-    "پلت ب کمپلکس + آسکوربیک اسید|Zolpidem Tartrate"
+    "پلت آسکوربیک اسید 55 %|Ascorbic acid 55% pellet",
+    "امپاگلیفلوزین|Empagliflozin",
+    "پرگابالین|Pregabalin",
+    "پلت ایتراکونازول 22 %|Itraconazole pellet 22%",
+    "بیسوپرولول تارتارات|Bisoprolol tartrate",
+    "اس سیتالوپرام|Escitalopram",
+    "آملودیپین بزیلات|Amlodipine besylate",
+    "زولپیدم تارتارات|Zolpidem tartrate",
+    "پلت فنوفیبرات 66%|Fenofibrate pellet 66%",
+    "پلت دکس لنسوپرازول|Dexlansoprazole sesquihydrate pellet, dual delayed release",
+    "پلت ب کمپلکس + آسکوربیک اسید|B-complex + ascorbic acid pellet",
+    "پلت امپرازول سفارشی صادراتی|Omeprazole pellet for export",
+    "اندانسترون|Ondansetron",
+    "آزیترومایسین|Azithromycin",
+    "آملودیپین|Amlodipine",
+    "پتاسیم کلاولانات مخلوط با سایلوئید|Potassium Clavulanate Mixed with Syloid",
+    "تامسولوسین هایدروکلراید|TAMSULOSIN HYDROCHLORIDE",
+    "تیامین هیدرو کلراید|THIAMINE HYDROCHLORIDE",
+    "ریواستیگمین هیدروژن تارتارات|Rivastigmine hydrogen tartrate",
+    "سیتریزین هیدروکلراید|Cetirizine hydrochloride",
+    "فاموتیدین|Famotidine",
+    "گرانیسترون هیدروکلراید|Granisetron hydrochloride",
+    "لیدوکانین هیدروکلراید|Lidocaine hydrochloride"
    ],
    "mail": "info@dppcco.com"
   },
@@ -5401,7 +6182,7 @@
     "021-44787858"
    ],
    "mail": "Info@smpharmed.com",
-   "note": "عضو وابسته سندیکا؛ فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "عضو وابسته سندیکا؛ فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/سروش-مانا-فارمد-2/",
    "p": [
     "استامینوفن (پاراستامول)|Acetaminophen, Paracetamol",
@@ -5422,7 +6203,14 @@
     "متیل وینیل کتون|Methyl vinyl ketone",
     "هیدروکسی کلروکین سولفات|Hydroxychloroquine Sulfate",
     "نالبوفین هیدروکلراید|Nalbuphine Hydrochloride",
-    "رپاگلیناید|Repaglinide"
+    "رپاگلیناید|Repaglinide",
+    "آزیترومایسین|Azithromycin",
+    "باکلوفن|Baclofen",
+    "تلمیزارتان|Telmisartan",
+    "ساکوبیتریل/ والزارتان|Sacubitril/Valsartan",
+    "فاموتیدین|Famotidine",
+    "لنسوپرازول|Lansoprazole",
+    "مونته لوکاست سدیم|Montelukast sodium"
    ]
   },
   {
@@ -5438,7 +6226,7 @@
     "021-65278401-5"
    ],
    "addr": "شهریار، شهرک اداری، خیابان دولت، کد پستی 3351773495",
-   "note": "عضو سندیکا؛ فهرست محصول در منبع نیامده و از نام شرکت برداشت شده است؛ فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "عضو سندیکا؛ فهرست محصول در منبع نیامده و از نام شرکت برداشت شده است؛ فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/ژلاتين-كپسول-ايران/",
    "p": [
     "پوسته کپسول ژلاتینی سخت|Hard gelatin capsules, Empty capsules",
@@ -5447,7 +6235,10 @@
     "پوکه ژلاتینی سخت دارویی سایز صفر|Empty Hard Gelatin Capsule #0",
     "پوکه ژلاتینی سخت دارویی سایز یک|Empty Hard Gelatin Capsule #1",
     "پوکه ژلاتینی سخت دارویی سایز دو|Empty Hard Gelatin Capsule #2",
-    "پوکه ژلاتینی سخت دارویی سایز سه|Empty Hard Gelatin Capsule #3"
+    "پوکه ژلاتینی سخت دارویی سایز سه|Empty Hard Gelatin Capsule #3",
+    "پوکه کپسول دارویی از نوع ژلاتین|",
+    "سایر پوکه های کپسول دارویی|",
+    "کپسول دارویی از نوع ژلاتینی|"
    ],
    "mail": "info@irancapsule.com"
   },
@@ -5664,7 +6455,7 @@
     "021-44991335-7"
    ],
    "web": "https://www.rtpvp.com/",
-   "note": "تولیدکننده داخلی PVP و روکش قرص؛ عضو سندیکا. تلفن دفتر مرکزی از سایت شرکت؛ فهرست محصول از صفحه شرکت در سایت سندیکا.",
+   "note": "تولیدکننده داخلی PVP و روکش قرص؛ عضو سندیکا. تلفن دفتر مرکزی از سایت شرکت؛ فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/شرکت-دارویی-ره-آورد-تامین-سهامی-عام/",
    "p": [
     "پلی‌وینیل پیرولیدون (پوویدون PVP)|Povidone, PVP, Polyvinylpyrrolidone",
@@ -5677,7 +6468,14 @@
     "کوپلیمر اتیل اکریلات -متا اکریلیک اسید|Ethyl acrylate-Methacrylic acid Copolymer (RT.Coat L30D®)",
     "کوپلیمر اتیل اکریلات- متا اکریلیک اسید|Ethyl acrylate-Methacrylic acid Copolymer (RT.Coat L 100-55®)",
     "کوپلیمر وینیل پیرولیدون-وینیل ایمیدازول|Vinyl pyrrolidone-Vinylimidazole Copolymer (RT.Sokalix HCP®)",
-    "ترپلیمر اتیل اکریلات -متا اکریلیک اسید- ترشیو بوتیل آکریلات|Ethyl acrylate-Methacrylic acid- tert Butyl acrylate terepolymer (RT.Ruvimer 100p®)"
+    "ترپلیمر اتیل اکریلات -متا اکریلیک اسید- ترشیو بوتیل آکریلات|Ethyl acrylate-Methacrylic acid- tert Butyl acrylate terepolymer (RT.Ruvimer 100p®)",
+    "povidone k17-k90-cross povidone|povidone k17-k90-cross povidone",
+    "povidone k25-k30|Povidone K25-K30",
+    "PVPI|PVPI",
+    "RT.COAT(L30D-L100)|RT.COAT(L30D-L100)",
+    "RT.FILM-coating|RT.FILM-coating",
+    "RUVIMER-پلیمرهای اکریلاتی|Acrylate polymers",
+    "SOKALIX HCP-پلی استات وینیل|Polyvinyl acetate"
    ],
    "mail": "jahangirpour@rahavardtamin.ir"
   },
@@ -5846,7 +6644,7 @@
     "021-58146000"
    ],
    "web": "https://pardisextract.de/",
-   "note": "فروش عصاره‌های گیاهی. تولیدکننده بودن و نشانی از منبع تأیید نشد؛ تلفن به دست نیامد.",
+   "note": "فروش عصاره‌های گیاهی. تولیدکننده بودن و نشانی از منبع تأیید نشد؛ تلفن به دست نیامد؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://pardisextract.de/shop/",
    "via": 1,
    "p": [
@@ -5864,7 +6662,139 @@
     "عصاره هیدروالکلی بابونه|Chamomile hydroalcoholic extract",
     "عصاره هیدروالکلی گل ختمی|Marshmallow hydroalcoholic extract, Althaea",
     "عصاره آووکادو و سویا|Avocado soybean extract, ASU",
-    "عصاره زردچوبه|Turmeric extract, Curcumin"
+    "عصاره زردچوبه|Turmeric extract, Curcumin",
+    "طعم دهنده طبیعی آلبالو|Natural cherry flavoring",
+    "طعم دهنده طبیعی زردآلو|Natural apricot flavoring",
+    "بلک کروت|Black Crow",
+    "بیت روت|Root beet",
+    "پودر بیت روت|Beetroot powder",
+    "پودر عصاره بره موم|Propolis extract powder",
+    "پودر عصاره چای سبز|Green tea extract powder",
+    "پودر عصاره رازیانه|Fennel extract powder",
+    "پودر عصاره سرخارگل|Echinacea extract powder",
+    "پودر عصاره سنا|Senna extract powder",
+    "پودر عصاره شنبلیله|Fenugreek extract powder",
+    "پودر عصاره عشقه|Rose extract powder",
+    "پودر عصاره کنگر فرنگی|Artichoke extract powder",
+    "پودر عصاره گل ساعتی|Passion flower extract powder",
+    "پودر عصاره گل محمدی|Rosehip extract powder",
+    "ریشه شیرین بیان|Licorice root",
+    "طعم دهنده طبیعی انار|Natural pomegranate flavoring",
+    "طعم دهنده طبیعی بادام تلخ|Natural bitter almond flavoring",
+    "طعم دهنده طبیعی پسته|Natural pistachio flavoring",
+    "طعم دهنده طبیعی چای سبز|Natural green tea flavoring",
+    "طعم دهنده طبیعی چای سیاه|Natural black tea flavoring",
+    "طعم دهنده طبیعی خیار|Natural cucumber flavoring",
+    "طعم دهنده طبیعی ریحان|Natural basil flavoring",
+    "طعم دهنده طبیعی سیب|Natural apple flavoring",
+    "طعم دهنده طبیعی شکر|Natural sugar flavoring",
+    "طعم دهنده طبیعی شیرین بیان|Natural licorice flavoring",
+    "طعم دهنده طبیعی طالبی|Natural cantaloupe flavoring",
+    "طعم دهنده طبیعی فندق|Natural hazelnut flavoring",
+    "طعم دهنده طبیعی قهوه|Natural coffee flavoring",
+    "طعم دهنده طبیعی کیوی|Natural kiwi flavoring",
+    "طعم دهنده طبیعی گل محمدی|Natural rose flavoring",
+    "طعم دهنده طبیعی لیمو|Natural lemon flavoring",
+    "طعم دهنده طبیعی هلو|Natural peach flavoring",
+    "طعم دهنده طبیعی هندوانه|Natural watermelon flavoring",
+    "عصاره آبی تغلیظ‌شده انجیر|Concentrated aqueous extract of figs",
+    "عصاره بالک شیرین بیان|Licorice Bulk Extract",
+    "عصاره برگ زیتون پودری|Olive leaf extract powder",
+    "عصاره پروپیلن گلیکولی سدر|Cedarwood Propylene Glycol Extract",
+    "عصاره پنجه شیطان|Devil's claw extract",
+    "عصاره پودری اسطوخودوس|Lavender powder extract",
+    "عصاره پودری آویشن|Thyme powder extract",
+    "عصاره پودری بابونه|Chamomile powder extract",
+    "عصاره پودری بابونه تانسی|Chamomile Tansy Powder Extract",
+    "عصاره پودری بادرنجبویه|Lemon balm powder extract",
+    "عصاره پودری پالرگونیوم|Pelargonium powder extract",
+    "عصاره پودری پنیرک|Paneerak powdered extract",
+    "عصاره پودری پوست انار|Pomegranate peel powder extract",
+    "عصاره پودری چای ترش|Sour tea powder extract",
+    "عصاره پودری چای سیاه|Black tea powder extract",
+    "عصاره پودری دگلیسیریزینه شیرین بیان|Licorice deglycyrrhizinate powder extract",
+    "عصاره پودری رزماری|Rosemary powder extract",
+    "عصاره پودری ریشه کاسنی|Chicory root powder extract",
+    "عصاره پودری زعفران|Saffron powder extract",
+    "عصاره پودری سرکه سیب|Apple cider vinegar powder extract",
+    "عصاره پودری سنجد|Powdered extract of gentian",
+    "عصاره پودری غنی‌شده گلیسیریزیک اسید شیرین بیان|Glycyrrhizic acid enriched licorice powder extract",
+    "عصاره پودری قارچ شیتاکه|Shiitake mushroom powder extract",
+    "عصاره پودری قهوه سبز|Green coffee bean extract powder",
+    "عصاره پودری گزنه|Nettle powder extract",
+    "عصاره پودری گل همیشه بهار|Marigold powder extract",
+    "عصاره پودری گلرنگ|Safflower powder extract",
+    "عصاره پودری لیمو عمانی|Omani lemon powder extract",
+    "عصاره پودری مریم گلی|Sage powder extract",
+    "عصاره پودری میوه نسترن|Rosehip fruit powder extract",
+    "عصاره پودری نعنا فلفلی|Peppermint powder extract",
+    "عصاره پودری والرین|Valerian powder extract",
+    "عصاره تغلیظ‌شده آبی خرنوب|Concentrated carob water extract",
+    "عصاره تغلیظ‌شده زعفران|Concentrated saffron extract",
+    "عصاره تغلیظ‌شده سرخارگل|Concentrated Echinacea extract",
+    "عصاره تغلیظ‌شده کاکائو|Concentrated cocoa extract",
+    "عصاره تغلیظ‌شده گلرنگ|Concentrated safflower extract",
+    "عصاره خشک آویشن|Thyme dry extract",
+    "عصاره خشک چای سبز|Green tea dry extract",
+    "عصاره خشک شیرین بیان|Dry licorice extract",
+    "عصاره خشک میکس: کنگر فرنگی، خارمریم و ریشه قاصدک|Dry extract mix: artichoke, milk thistle and dandelion root",
+    "عصاره رزماری هیدروگلیکولی|Hydroglycolic rosemary extract",
+    "عصاره گلیکولی انار|Pomegranate glycolic extract",
+    "عصاره گلیکولی آلوئه‌ورا|Aloe vera glycolic extract",
+    "عصاره گلیکولی بابونه|Chamomile glycolic extract",
+    "عصاره گلیکولی بادرنجبویه|Glycolic lemon balm extract",
+    "عصاره گلیکولی زعفران|Saffron glycolic extract",
+    "عصاره گلیکولی گل محمدی|Rosehip Glycolic Extract",
+    "عصاره گلیکولی مریم گلی|Sage Glycolic Extract",
+    "عصاره مایع بابونه|Chamomile liquid extract",
+    "عصاره مایع تمر هندی|Tamarind liquid extract",
+    "عصاره مایع عشقه|Ivy (Hedera helix) liquid extract",
+    "عصاره هیدروالکلی اسطوخودوس|Lavender hydroalcoholic extract",
+    "عصاره هیدروالکلی اکالیپتوس|Eucalyptus hydroalcoholic extract",
+    "عصاره هیدروالکلی اکیناسه|Echinacea hydroalcoholic extract",
+    "عصاره هیدروالکلی انجیر|Fig hydroalcoholic extract",
+    "عصاره هیدروالکلی آنیسون|Anise hydroalcoholic extract",
+    "عصاره هیدروالکلی آویشن|Thyme hydroalcoholic extract",
+    "عصاره هیدروالکلی آویشن باغی|Hydroalcoholic extract of thyme",
+    "عصاره هیدروالکلی آویشن شیرازی|Shirazi thyme hydroalcoholic extract",
+    "عصاره هیدروالکلی بادرنجبویه|Lemon balm hydroalcoholic extract",
+    "عصاره هیدروالکلی برگ بو|Hydroalcoholic extract of bay leaf",
+    "عصاره هیدروالکلی برگ زیتون|Olive leaf hydroalcoholic extract",
+    "عصاره هیدروالکلی بنفشه سه رنگ|Tricolor violet hydroalcoholic extract",
+    "عصاره هیدروالکلی بنفشه سه رنگ 18 میلی‌گرم در 100 گرم|Tricolor violet hydroalcoholic extract 18 mg/100 g",
+    "عصاره هیدروالکلی پوست انار|Hydroalcoholic extract of pomegranate peel",
+    "عصاره هیدروالکلی تغلیظ‌شده آلو|Concentrated hydroalcoholic extract of plum",
+    "عصاره هیدروالکلی خارخاسک|Hydroalcoholic extract of Kharkhasak",
+    "عصاره هیدروالکلی خارمریم|Milk thistle hydroalcoholic extract",
+    "عصاره هیدروالکلی ختمی|Marshmallow hydroalcoholic extract",
+    "عصاره هیدروالکلی دانه خربزه|Hydroalcoholic extract of melon seeds",
+    "عصاره هیدروالکلی دم گیلاس|Cherry stem hydroalcoholic extract",
+    "عصاره هیدروالکلی رازیانه|Hydroalcoholic extract of fennel",
+    "عصاره هیدروالکلی رزماری|Rosemary hydroalcoholic extract",
+    "عصاره هیدروالکلی ریشه کاسنی|Chicory root hydroalcoholic extract",
+    "عصاره هیدروالکلی زردآلو|Hydroalcoholic extract of apricot",
+    "عصاره هیدروالکلی زردچوبه|Turmeric hydroalcoholic extract",
+    "عصاره هیدروالکلی زنجبیل ماده خشک 10 درصد|Hydroalcoholic extract of ginger, dry matter 10",
+    "عصاره هیدروالکلی زنجبیل ماده خشک 2 درصد|Hydroalcoholic extract of ginger, dry matter 2 .",
+    "عصاره هیدروالکلی زیره سبز|Cumin hydroalcoholic extract",
+    "عصاره هیدروالکلی سنا|Senna hydroalcoholic extract",
+    "عصاره هیدروالکلی شنبلیله|Hydroalcoholic extract of fenugreek",
+    "عصاره هیدروالکلی شیرین بیان|Licorice hydroalcoholic extract",
+    "عصاره هیدروالکلی کاکل ذرت|Corn cob hydroalcoholic extract",
+    "عصاره هیدروالکلی کنگر فرنگی|Hydroalcoholic extract of artichoke",
+    "عصاره هیدروالکلی گزنه|Nettle hydroalcoholic extract",
+    "عصاره هیدروالکلی گل ساعتی|Hydroalcoholic extract of passion flower",
+    "عصاره هیدروالکلی گل همیشه بهار|Marigold hydroalcoholic extract",
+    "عصاره هیدروالکلی مرزه|Sage hydroalcoholic extract",
+    "عصاره هیدروالکلی نعنا فلفلی|Peppermint hydroalcoholic extract",
+    "عصاره هیدروگلیسیرینه آلوئه‌ورا|Hydroglycerinated aloe vera extract",
+    "عصاره هیدروگلیکولی اسطوخودوس|Lavender Hydroglycolic Extract",
+    "عصاره هیدروگلیکولی پوست انار|Pomegranate peel hydroglycolic extract",
+    "عصاره هیدروگلیکولی چای سبز|Green tea hydroglycolic extract",
+    "عصاره هیدروگلیکولی سیر|Garlic Hydroglycolic Extract",
+    "عصاره هیدروگلیکولی گزنه|Nettle Hydroglycolic Extract",
+    "عصاره هیدروگلیکولی گل همیشه بهار|Marigold Hydroglycolic Extract",
+    "گلرنگ|Safflower"
    ]
   },
   {
@@ -5965,9 +6895,15 @@
     "تموزولامید|Temozolomide",
     "کارفیزومیب|Carfilzomib",
     "ایزومیب|Ixazomib",
-    "ایبروتینیب|Ibrutinib"
+    "ایبروتینیب|Ibrutinib",
+    "اوسلتامیویر فسفات|Oseltamivir phosphate",
+    "سماگلوتاید|Semaglutide",
+    "سیتاگلیپتین فسفات مونوهیدرات|Sitagliptin phosphate mono hydrate",
+    "میرابگرون|Mirabegron",
+    "ساکوبیتریل/ والزارتان|Sacubitril/Valsartan",
+    "لیزدکسامفتامین دی مزیلات|Lisdexamfetamine dimesylate"
    ],
-   "note": "تولیدکننده و مرکز تحقیقات مواد اولیه دارویی (از 1378)، با تمرکز بر داروهای پپتیدی و شیمیایی. تلفن در منبع کامل نبود؛ از سایت شرکت بگیرید؛ فهرست محصول از صفحه شرکت در سایت سندیکا."
+   "note": "تولیدکننده و مرکز تحقیقات مواد اولیه دارویی (از 1378)، با تمرکز بر داروهای پپتیدی و شیمیایی. تلفن در منبع کامل نبود؛ از سایت شرکت بگیرید؛ فهرست محصول از صفحه شرکت در سایت سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405)."
   },
   {
    "n": "آپیرا فارما (گروه کیمیا)",
@@ -6151,16 +7087,13 @@
     "021-88390169 (انجمن تولیدکنندگان داروهای طبیعی)"
    ],
    "partial": 1,
-   "note": "تلفن و محصول این شرکت‌ها هنوز برداشت نشده است؛ از طریق سندیکا (021-22547182) قابل پیگیری است.",
+   "note": "تلفن و محصول این شرکت‌ها در فهرست سندیکا ثبت نشده است؛ از طریق سندیکا (021-65012536) قابل پیگیری است.",
    "src": "https://cppsynd.com/",
    "p": [
     "هوبر دارو گستر|Hoober Darou Gostar",
-    "جوین|Jovein",
     "مهرسام دارو|Mehrsam Darou",
-    "شیمی فارمد پارس|Shimi Pharmed Pars",
     "شیمی دارویی شاری|Shari",
-    "باران|Baran",
-    "شیمی درمان اندیشه|Shimi Darman Andisheh"
+    "باران|Baran"
    ]
   },
   {
@@ -6290,7 +7223,7 @@
     "021-44342364"
    ],
    "mail": "info.tadbirdarou@gmail.com",
-   "note": "پلت‌های دارویی و ساشه‌های مکمل.",
+   "note": "پلت‌های دارویی و ساشه‌های مکمل؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/تدبیر-دارو-سلامت/",
    "p": [
     "پلت دیکلوفناک سدیم 40، 45، 52 درصد|Diclofenac Sodium 40%, 45%, 52% Pellets",
@@ -6442,7 +7375,18 @@
     "ساشه ویتامین ث، ویتامین های ب2، ب3، ب5، ب6، ب9، ب12، زینک، منیزیم، کروم، منیزیم (مولتی ویتامین بزرگسالان)|Vitamin C + Folic Acid + Vitamin (B2 + B3 + B5 + B6 + B12) + Zinc + Manganese + Chrome + Magnesium (Multivitamin Adult)",
     "ساشه ویتامین ث، ویتامین های ب2، ب3، ب5، ب6، ب9، ب12، زینک، منیزیم، کروم، منیزیم (مولتی ویتامین کودکان)|Vitamin C + Folic Acid + Vitamin (B2 + B3 + B5 + B6 + B12) + Zinc + Manganese + Chrome + Magnesium (Multivitamin Kid)",
     "ساشه ال آرژنین، ال کارنتین، ب3، ویتامین د3، سلنیوم، زینک|L-Arginine + L- carnitine + Niacin + Vitamin D3 + Selenium + Zinc",
-    "ساشه ال آرژنین، ال کارنتین، ویتامین ای، کوآنزیم کیوتن، ویتامین ث، زینک، بتاکاروتن، منیزیم، ویتامین های ب6، ب9، ب12|L-Arginine + L- carnitine + Q10 + Vitamin E + Vitamin C + Zinc + Beta carotene + Magnesium + Vitamin (B6 + B9 + B12)"
+    "ساشه ال آرژنین، ال کارنتین، ویتامین ای، کوآنزیم کیوتن، ویتامین ث، زینک، بتاکاروتن، منیزیم، ویتامین های ب6، ب9، ب12|L-Arginine + L- carnitine + Q10 + Vitamin E + Vitamin C + Zinc + Beta carotene + Magnesium + Vitamin (B6 + B9 + B12)",
+    "پلت اس امپرازول منیزیم تری هیدرات 22/5 %|Omeprazole Magnesium Trihydrate 22.5% Tablets",
+    "پلت اس امپرازول منیزیم تری هیدرات 8/5 %|Omeprazole Magnesium Trihydrate Tablets 8.5%",
+    "پلت امپرازول 8/5 %|Omeprazole 8.5% pellets",
+    "پلت پنتوپرازول سدیم 15 %|Pantoprazole Sodium Pellets 15%",
+    "پلت داکسی سایکلین هایکلیت 33%|Doxycycline Hyclate 33% Pellets",
+    "پلت دلوکستین 20%|Duloxetine 20% pellets",
+    "پلت دلوکستین هیدروکلراید 25%|Duloxetine hydrochloride pellets 25%",
+    "پلت دولوکستین 17%|Duloxetine 17% pellets",
+    "پلت دیکلوفناک سدیم 40%|Diclofenac sodium pellets 40%",
+    "پلت دیکلوفناک سدیم 45%|Diclofenac sodium pellets 45%",
+    "پلت دیکلوفناک سدیم 52%|Diclofenac Sodium Pellet 52%"
    ]
   },
   {
@@ -6462,7 +7406,7 @@
    "mail": "info@asico.org",
    "web": "https://www.asico.org/",
    "addr": "کارخانه: مازندران، ساری، کیلومتر 5 جاده خزرآباد (فرح‌آباد)",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/شرکت-آنتی-بیوتیک-سازی-ایران-asico/",
    "p": [
     "آموکسی سیلین تری هیدرات|Amoxicillin trihydrate",
@@ -6474,7 +7418,12 @@
     "کوئتیاپین فومارات|Quetiapine fumarate",
     "والزارتان|Valsartan",
     "سیتاگلیپتین فسفات|Sitagliptin Phosphate",
-    "دی متوکسی متان|Dimethoxy methane"
+    "دی متوکسی متان|Dimethoxy methane",
+    "آزیترومایسین|Azithromycin",
+    "آموکسی سیلین|Amoxicillin",
+    "سفالکسین|Cephalexin",
+    "سفیکسیم|Cefixime",
+    "سیتاگلیپتین فسفات مونوهیدرات|Sitagliptin phosphate mono hydrate"
    ]
   },
   {
@@ -6515,11 +7464,12 @@
    ],
    "mail": "info@tahapharma-group.com",
    "web": "https://tahapharma-group.com/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/صنایع-مشارکتی-طاها/",
    "p": [
     "پروژسترون|Progesterone",
-    "پردنیزولون|Prednisolone"
+    "پردنیزولون|Prednisolone",
+    "هیدروکورتیزون|Hydrocortisone"
    ]
   },
   {
@@ -6536,7 +7486,7 @@
    ],
    "mail": "info@nanoageco.ir",
    "web": "https://nanoageco.ir/",
-   "note": "عصاره‌ها و روغن‌های گیاهی میکرو/نانوانکپسوله برای مکمل.",
+   "note": "عصاره‌ها و روغن‌های گیاهی میکرو/نانوانکپسوله برای مکمل؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/عصر-نانو/",
    "p": [
     "پودر عصاره چای سبز|Green tea extract powder microencapsolated",
@@ -6615,7 +7565,11 @@
     "پودر نانو انکپسوله رز ماری|Rosmary essential oil powder nanoencapsolated",
     "روغن نانو انکپسوله گل مغربی|Evening primrose oil nanoencapsolated",
     "روغن نانو انکپسوله تخم کدو|Flaxseed oil nanoencapsolated",
-    "پودر عصاره پروپولیس|Propolis Extract Micpoencapsulated Powder"
+    "پودر عصاره پروپولیس|Propolis Extract Micpoencapsulated Powder",
+    "پودر منیزیم اکساید 400 پلاس ویتامین های گروه B|Magnesium Oxide Powder 400 Plus B Vitamins",
+    "شربت امگا3 (ادونسیس)|Omega-3 syrup (Adonis)",
+    "شربت امگا3 پلاس زینک|Omega-3 Plus Zinc Syrup",
+    "شربت منیزیم سیترات پلاس ویتامین B6|Magnesium Citrate Plus Vitamin B6 Syrup"
    ]
   },
   {
@@ -6632,7 +7586,7 @@
    ],
    "mail": "info@hfcapi.com",
    "web": "https://hfcapi.com/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/فرآيند-شيمي-حكيم/",
    "p": [
     "آتورواستاتین|Atorvastatin",
@@ -6643,7 +7597,17 @@
     "کوئتیاپین|Quetiapine",
     "فکسوفنادین|Fexofenadine",
     "رزوواستاتین|Rosuvastatin",
-    "کلوپیدوگرل|Clopidogrel"
+    "کلوپیدوگرل|Clopidogrel",
+    "اس سیتالوپرام اگزالات|Escitalopram oxalate",
+    "اندانسترون|Ondansetron",
+    "آتورواستاتین کلسیم|Atorvastatin Calcium",
+    "باکلوفن|Baclofen",
+    "حدواسط فکسوفنادین (n-1)|Fexofenadine intermediate (n-1)",
+    "دس لوراتادین|Desloratadine",
+    "رزواستاتین کلسیم|Rosuvastatin calcium",
+    "سیتاگلیپتین فسفات|Sitagliptin phosphate",
+    "فکسوفنادین هیدروکلراید|Fexofenadine Hydrochloride",
+    "کوئتیاپین فومارات|Quetiapine fumarate"
    ]
   },
   {
@@ -6660,10 +7624,11 @@
     "021-88214115-7"
    ],
    "mail": "info.parsnamak@gmail.com",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/پارس-نمک-کاوه/",
    "p": [
-    "سدیم کلراید|NACL"
+    "سدیم کلراید|NACL",
+    "کلرور سدیم دارا. گرید دارویی|Sodium chloride, pharmaceutical grade"
    ]
   },
   {
@@ -6681,7 +7646,7 @@
    ],
    "mail": "info@paranddarou.com",
    "web": "https://paranddarou.com/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/پرند-دارو/",
    "p": [
     "کدئین فسفات|Codeine Phosphate",
@@ -6700,7 +7665,10 @@
     "داپاگلیفلوزین|Dapagliflozin",
     "سیتاگلیپتین فسفات مونوهیدراته|Sitagliptin phosphate monohydrate",
     "ریوارکسابان|Rivaroxaban",
-    "گلیکلازید|Gliclazide"
+    "گلیکلازید|Gliclazide",
+    "بوپرنورفین هیدروکلراید|Buprenorphine hydrochloride",
+    "نالتروکسان هیدروکلراید|Naltrexone hydrochloride",
+    "نالوکسان هیدروکلراید|Naloxone hydrochloride"
    ]
   },
   {
@@ -6717,14 +7685,20 @@
    ],
    "mail": "info@amadplastpharmed.com",
    "web": "https://amadplastpharmed.com/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/آماد-پلاست-فارمد/",
    "p": [
     "بطری شربت|syrup Bottle",
     "قوطی|container",
     "درب|cap",
     "پیمانه|measuring cap",
-    "قاشق|measuring spoon"
+    "قاشق|measuring spoon",
+    "Caps|",
+    "Eye drops Packaging|",
+    "Autoclavable PP bottle (100 ml)|",
+    "Measuring Cup|",
+    "Nasal Spray Bottle|",
+    "PET & HDPE Container|"
    ]
   },
   {
@@ -6742,7 +7716,7 @@
    ],
    "mail": "sm@ako-sanat.com",
    "web": "https://ako-sanat.com/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/آکو-صنعت-تجارت-آریا/",
    "p": [
     "درب فلیپ آف 32 میلیمتری|FLIP OFF 32mm",
@@ -6751,7 +7725,20 @@
     "درب فلیپ آف 20 میلیمتری|FLIP OFF 20mm",
     "درب آلومینیومی 28 میلیمتری|ALUMINUM CAP 28mm",
     "پیمانه اندازه گیری|MEASURING CUP",
-    "پلانجر راد|PLUNGER ROD"
+    "پلانجر راد|PLUNGER ROD",
+    "Aluminum Pilfer Proof Cap- 28mm (Height: 16mm)|",
+    "Aluminum Pilfer Proof Cap- 28mm (Height: 17mm)|",
+    "Aluminum Pilfer Proof Cap- 28mm (Height: 18mm)|",
+    "Aluminum Pilfer Proof Cap- 31.5mm|",
+    "Aluminum Pilfer Proof Cap- 35mm|",
+    "Combi- Seal|",
+    "Hanger|",
+    "Tear Off Cap – 20mmتی ار آف|",
+    "سیل کپ Seal Cap – 20 mm|",
+    "فلیپ آف( Flip Off Cap)13mm|",
+    "فلیپ آف( Flip Off Cap)20mm|",
+    "فلیپ آف( Flip Off Cap)32mm|",
+    "فلیپ آف( Flip Off Cap)32mm (Height: 13mm)|"
    ]
   },
   {
@@ -6770,12 +7757,13 @@
    ],
    "mail": "info@Ashavarz.com",
    "web": "https://ashavarz.com/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/اشاورز/",
    "p": [
     "تیوب آلومینیومی نرم جهت مصارف دارویی|pharmaciutical collapsible aluminium tube",
     "تیوب آلومینیومی نرم جهت مصارف غذایی|food cpllapsible aluminium tube",
-    "تیوب آلومینیومی نرم جهت مصارف آرایشی و بهداشتی|cosmetic cpllapsible aluminium tube"
+    "تیوب آلومینیومی نرم جهت مصارف آرایشی و بهداشتی|cosmetic cpllapsible aluminium tube",
+    "تیوپ دارویی-تیوپ آلومینیومی(مصارف غذایی،بهداشتی،دارویی و صنعتی)|"
    ]
   },
   {
@@ -6817,13 +7805,14 @@
    ],
    "mail": "info@dashco.ir",
    "web": "https://dashco.ir/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/دارو-شيشه/",
    "p": [
     "پوکه شیشه ای آمپول تیپ 1 بروسیلیکاتی خنثی از سایز 1تا 30 سی سی (قهوه ای و بیرنگ)|Neutral High Borosilicate Type 1 Glass Ampoules Sizes 1 to 30 cc ,Amber & Clear",
     "پوکه شیشه ای کارپول تیپ 1 بروسیلیکاتی خنثی سایز 1.8 و 3 سی سی|Neutral High Borosilicate Type 1 Glass Cartridges Sizes 1.8 & 3 cc , Clear",
     "پوکه شیشه ای ویال تیپ 1 بروسیلیکاتی خنثی از سایز 2 الی 30 سی سی در دو نوع درب لاستیکی و سرپیچ دار (قهوه ای و بیرنگ)|Neutral High Borosilicate Type 1 Glass Vials Sizes 2 to 30 cc ,Rubber & Screw- Neck, Amber & Clear",
-    "لوله شیشه ای تیپ 1 بروسیلیکاتی خنثی از سایز 6.25 تا 32 میلی متر (قهوه ای و بیرنگ)|Neutral High Borosilicate Type 1 Glass Tubes Sizes 6.25 to 32 mm ,Amber & Clear"
+    "لوله شیشه ای تیپ 1 بروسیلیکاتی خنثی از سایز 6.25 تا 32 میلی متر (قهوه ای و بیرنگ)|Neutral High Borosilicate Type 1 Glass Tubes Sizes 6.25 to 32 mm ,Amber & Clear",
+    "Neutral High Borosilicate Type 1 Glass Tubes Sizes 8.65 to 32 mm ,Amber & Clear|"
    ]
   },
   {
@@ -6841,7 +7830,7 @@
    ],
    "mail": "info@dpp.ir",
    "web": "https://dpp.ir/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/دارو-پلاستيك-پارس/",
    "p": [
     "درب ها|Caps",
@@ -6852,7 +7841,16 @@
     "قاشق و پیمانه|Spoon and measure",
     "سرنگ|Syringes",
     "سینی|tray",
-    "کارتریج|Cartridge"
+    "کارتریج|Cartridge",
+    "اپلیکاتور آزمایشگاهی|",
+    "اپلیکاتور رکتال|",
+    "اپلیکاتور واژینال|",
+    "انواع درپوش و سرپوش پلاستیکی(پلی اتیلن،پلی پروپیلن،واشر،پلمپ آلومینیومی،سیلیکاژل)|",
+    "بطری از pet|",
+    "بطری از پلی اتیلن|",
+    "بطری از پلی پروپیلن|",
+    "بطری دارویی بیرنگ|",
+    "قطره چکان با لوله پلاستیکی|"
    ]
   },
   {
@@ -6870,11 +7868,19 @@
    ],
    "mail": "poosh@daroupoosh.com",
    "web": "https://daroupoosh.com/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/داروپوش/",
    "p": [
     "تیوپ آلومینیوم سایز19-22-25-30-35|Alluminium Collapsible Tubes",
-    "قوطی آلومینیوم سایز35-45|Aluminum can"
+    "قوطی آلومینیوم سایز35-45|Aluminum can",
+    "Aluminum Can(SIZE:35MM)|",
+    "Aluminum Can(SIZE:45MM)|",
+    "Aluminum Collapsible Tube(SIZE:19MM)|",
+    "Aluminum Collapsible Tube(SIZE:22MM)|",
+    "Aluminum Collapsible Tube(SIZE:25MM)|",
+    "Aluminum Collapsible Tube(SIZE:30MM)|",
+    "Aluminum Collapsible Tube(SIZE:35MM)|",
+    "تیوپ دارویی(تیوپ آلومینیومی)|"
    ]
   },
   {
@@ -6923,10 +7929,16 @@
    ],
    "mail": "sales@msphfoil.com",
    "web": "https://msphfoil.com/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/مکمل-سلامت-فارمد/",
    "p": [
-    "فویل آلومینیومی 20 میکرون(بلیستر)|Aluminium Foil 20 Microns(Blister)"
+    "فویل آلومینیومی 20 میکرون(بلیستر)|Aluminium Foil 20 Microns(Blister)",
+    "ALUMINIUM BLISTER FOIL|",
+    "ALUMINIUM STRIP FOILS|",
+    "CHILD RESISTANTE FOIL|",
+    "COLD FORMING FOIL(ALU ALU)|",
+    "SUPPOSITORY PACKAGING|",
+    "THE MULTI LAYER LAMINATION FOIL|"
    ]
   },
   {
@@ -6943,14 +7955,15 @@
    ],
    "mail": "info@parsampoule.ir",
    "web": "https://parsampoule.ir/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/پارس-آمپول/",
    "p": [
     "آمپول ( بیرنگ)|Ampoule(Clear)",
     "آمپول (قهوه ای )|Ampoule (Amber)",
     "ویال (بیرنگ)|Vial(Clear)",
     "ویال (قهوه ای )|Vial(Amber)",
-    "کارتریج (بیرنگ)|Cartrige(Clear)"
+    "کارتریج (بیرنگ)|Cartrige(Clear)",
+    "ظروف شیشه ای دارو های تزریقی|"
    ]
   },
   {
@@ -6967,7 +7980,7 @@
    ],
    "mail": "info@parsamrp.com",
    "web": "https://parsamrp.com/",
-   "note": "عضو سندیکا.",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/پرسام-رابر-فارمد/",
    "p": [
     "رابر استاپر 13 میلی متر- بروموبوتیل|Bromobutyl Rubber Stopper-13mm",
@@ -6975,7 +7988,8 @@
     "رابر استاپر 20 میلی متر- بروموبوتیل|Bromobutyl Rubber Stopper-20mm",
     "رابر استاپر 20 میلی متر- کلروبوتیل|Chlorobutyl Rubber Stopper-20mm",
     "رابر استاپر 32 میلی متر- بروموبوتیل|Bromobutyl Rubber Stopper-32mm",
-    "رابر استاپر 32 میلی متر- کلروبوتیل|Chlorobutyl Rubber Stopper-32mm"
+    "رابر استاپر 32 میلی متر- کلروبوتیل|Chlorobutyl Rubber Stopper-32mm",
+    "درب پوش لاستیکی ویال های تزریقی( انواع رابر استاپر و پلانجر)|"
    ]
   },
   {
@@ -6992,9 +8006,11 @@
    ],
    "mail": "info@gelamin.ir",
    "web": "https://gelamin.ir/",
-   "note": "فهرست محصول در صفحه سندیکا نیامده است.",
+   "note": "فهرست محصول در صفحه سندیکا نیامده است؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
    "src": "https://cppsynd.com/پوشینه-فارمد-کاوهژلامین/",
-   "p": []
+   "p": [
+    "سایر پوکه های کپسول دارویی|"
+   ]
   },
   {
    "n": "چاپ و نشر هودیس پارس",
@@ -7509,6 +8525,190 @@
     "محیط کشت میکروبی|Microbiological culture media"
    ],
    "via": 1
+  },
+  {
+   "n": "الوان ثابت",
+   "e": "Alvan Sabet",
+   "t": "m",
+   "c": [
+    "exc",
+    "cos"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "partial": 1,
+   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
+   "src": "https://cppsynd.com/محصولات/",
+   "p": [
+    "رنگهای دارویی،آرایشی و بهداشتی|Pharmaceutical, cosmetic and hygienic dyes"
+   ]
+  },
+  {
+   "n": "پژوهان شیمی ناصر خسرو",
+   "e": "Pajouhan Shimi Naser Khosrow",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "partial": 1,
+   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
+   "src": "https://cppsynd.com/محصولات/",
+   "p": [
+    "انواع کاتالیست|",
+    "کربن اکتیو گرانولی|Granular Activated Carbon",
+    "کربن فعال اشباع شده|Impregnated Activated Carbon",
+    "کربن فعال پودری|Powder Activated Carbon",
+    "کربن فعال میله‌ای|Extruded Activated Carbon"
+   ]
+  },
+  {
+   "n": "جوین",
+   "e": "Jovein",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "partial": 1,
+   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
+   "src": "https://cppsynd.com/محصولات/",
+   "p": [
+    "اسید سیتریک|Citric acid"
+   ]
+  },
+  {
+   "n": "خورشید کادووس",
+   "e": "Khorshid Kadous",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "partial": 1,
+   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
+   "src": "https://cppsynd.com/محصولات/",
+   "p": [
+    "پیرفنیدون|Pirfenidone",
+    "تنوفویر آلافنامید فومارات|Tenofovir alafenamide fumarate",
+    "توفاسیتینیب-سیترات|TOFACITINIB-CITRATE",
+    "داکلاتاسویر دی هیدروکلراید|Daclatasvir dihydrochloride",
+    "ریفاکسیمین|Rifaximin",
+    "ریلوزول|Riluzole",
+    "سوفوسبوویر|Sofosbuvir",
+    "وونوپرازان فومارات|Vonoprazan fumarate"
+   ]
+  },
+  {
+   "n": "شتاب دهنده ماد",
+   "e": "Shetab Dahandeh Mad",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "partial": 1,
+   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
+   "src": "https://cppsynd.com/محصولات/",
+   "p": [
+    "دورزولامید|Dorzolamide",
+    "سولیفناسین سوکسینات|Solifenacin succinate"
+   ]
+  },
+  {
+   "n": "شیمی درمان اندیشه",
+   "e": "Shimi Darman Andisheh",
+   "t": "m",
+   "c": [
+    "std"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "partial": 1,
+   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
+   "src": "https://cppsynd.com/محصولات/",
+   "p": [
+    "رفرنس استاندارد های دارویی|",
+    "ورکینگ استاندارد های دارویی|"
+   ]
+  },
+  {
+   "n": "شیمی فارمد پارس",
+   "e": "Shimi Pharmed Pars",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "partial": 1,
+   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
+   "src": "https://cppsynd.com/محصولات/",
+   "p": [
+    "استامینوفن|ACETAMINOPHEN",
+    "آزیترومایسین|Azithromycin",
+    "آسپرین|ASPIRIN",
+    "پنتاپرازول سدیم|Pantoprazole sodium",
+    "تیامین هیدرو کلراید|THIAMINE HYDROCHLORIDE",
+    "سلکوکسیب|Celecoxib",
+    "سلولز، میکروکریستالین|CELLULOSE, MICROCRYSTALLINE",
+    "فاموتیدین|Famotidine",
+    "لاکتوز مونوهیدرات|Lactose mono hydrate",
+    "لوزارتان پتاسیم|Losartan potassium",
+    "متفورمین|Metformin"
+   ]
+  },
+  {
+   "n": "گروه صنایع شیمیایی سازمان صنایع دفاع - پارچین",
+   "e": "Parchin Chemical Industries (DIO)",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "partial": 1,
+   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
+   "src": "https://cppsynd.com/محصولات/",
+   "p": [
+    "اسید سولفوریک|Sulfuric acid",
+    "اسید فسفریک|Phosphoric acid",
+    "اسید نیتریک|Nitric acid",
+    "انیدرید استیک|",
+    "آمینوگوانیدین بی کربنات|",
+    "دی اتیل اتر|",
+    "نیترات آمونیوم دارویی|",
+    "نیتروگلیسیرین دارویی|"
+   ]
+  },
+  {
+   "n": "بهینه پوشش جم",
+   "e": "Behineh Pooshesh Jam",
+   "t": "m",
+   "c": [
+    "pkg"
+   ],
+   "prov": "نامشخص",
+   "city": "—",
+   "tel": [],
+   "partial": 1,
+   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
+   "src": "https://cppsynd.com/محصولات/",
+   "p": [
+    "بسته بندی دارویی|"
+   ]
   }
  ],
  "provinceOrder": [
@@ -7528,6 +8728,12 @@
   "نامشخص"
  ],
  "synonyms": [
+  [
+   "آمینو اسید",
+   "آمینواسید",
+   "amino acid",
+   "amino acids"
+  ],
   [
    "ویتامین ب1",
    "ویتامین b1",
@@ -8185,8 +9391,7 @@
   ],
   [
    "تری اتانول امین",
-   "triethanolamine",
-   "tea"
+   "triethanolamine"
   ],
   [
    "کواترنیوم",
