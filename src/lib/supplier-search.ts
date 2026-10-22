@@ -55,6 +55,9 @@ export const norm = (s: string | undefined) =>
     .replace(/گلایکول/g, "گلیکول")
     .replace(/[‌\-_،,.()٪%]/g, " ")
     .replace(/\s+/g, " ")
+    // «هایدرو کلراید» / «هیدرو کلرید» is one word: hydrochloride, not chloride.
+    .replace(/هایدرو/g, "هیدرو")
+    .replace(/هیدرو (کلرید|برمید|برماید)/g, "هیدرو$1")
     .trim();
 
 const isWordChar = (c: string) => /[\p{L}\p{N}]/u.test(c);
@@ -250,6 +253,7 @@ export function search(
   const cosFocus = (r: Result) => (r.s.cs ? 2 : 0) + (r.s.c[0] === "cos" ? 1 : 0);
   const chosen = f.cat === "cos" ? (a: Result, b: Result) => cosFocus(b) - cosFocus(a) || compare[f.sort](a, b) : compare[f.sort];
   // Whatever the sort, companies that actually list the searched material come before looser matches.
-  const strength = (r: Result) => (r.match ? rank[r.match] : 0);
+  // Entries still missing their contact details come after complete ones of the same strength.
+  const strength = (r: Result) => (r.match ? rank[r.match] : 0) + (r.s.partial ? 2.5 : 0);
   return rows.sort((a, b) => strength(a) - strength(b) || chosen(a, b));
 }
