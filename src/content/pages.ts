@@ -88,6 +88,14 @@ export const pages = {
     copy: bi("Copy", "کپی"),
     copied: bi("Copied", "کپی شد"),
     otherProducts: bi("Other products of this company", "سایر محصولات این شرکت"),
+    matchCategory: bi(
+      "Active in this category; the material you searched is not named in its listed products.",
+      "در این دسته فعال است؛ ماده‌ای که جستجو کردید در فهرست محصولات اعلام‌شده آن نیامده است.",
+    ),
+    matchGeneral: bi(
+      "General vitamin supplier; the vitamin you searched is not named in its listed products.",
+      "تأمین‌کننده عمومی ویتامین‌ها؛ ویتامینی که جستجو کردید در فهرست محصولات اعلام‌شده آن نیامده است.",
+    ),
     moreProducts: bi("More products", "محصولات بیشتر"),
     searchSite: bi("Search “{q}” on this company's site ↗", "جستجوی «{q}» در سایت این شرکت ↗"),
     source: bi("Source", "منبع"),

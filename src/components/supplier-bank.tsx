@@ -10,6 +10,7 @@ import {
   prepare,
   search,
   type Filters,
+  type MatchKind,
   type Product,
   type SortKey,
   type Supplier,
@@ -18,6 +19,11 @@ import {
 import { BiTitle } from "./ui";
 
 const t = pages.suppliers;
+
+/** Category names as the search reads them, so «بسته بندی» or «رفرنس استاندارد» finds the whole category. */
+const categoryLabels = Object.fromEntries(
+  Object.entries(t.categories).map(([key, label]) => [key, [norm(label.fa), norm(label.en)]]),
+);
 
 /** What the bank searches; passed from the server so it only reaches subscribers. */
 export type SupplierData = {
@@ -67,7 +73,7 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
     };
   }, [data]);
   const results = useMemo(
-    () => search(suppliers, filters, synonyms, data.provinceOrder),
+    () => search(suppliers, filters, synonyms, data.provinceOrder, categoryLabels),
     [suppliers, synonyms, data.provinceOrder, filters],
   );
   const q = norm(filters.query);
@@ -176,8 +182,8 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
         </p>
       ) : (
         <div className="flex flex-col gap-3">
-          {results.map(({ s, hits }) => (
-            <SupplierCard key={s.n} s={s} hits={hits} locale={locale} query={q ? filters.query : ""} />
+          {results.map(({ s, hits, match }) => (
+            <SupplierCard key={s.n} s={s} hits={hits} match={match} locale={locale} query={q ? filters.query : ""} />
           ))}
         </div>
       )}
@@ -255,7 +261,19 @@ function PhoneLine({ tel, locale }: { tel: string; locale: Locale }) {
   );
 }
 
-function SupplierCard({ s, hits, locale, query }: { s: Supplier; hits: Product[]; locale: Locale; query: string }) {
+function SupplierCard({
+  s,
+  hits,
+  match,
+  locale,
+  query,
+}: {
+  s: Supplier;
+  hits: Product[];
+  match?: MatchKind;
+  locale: Locale;
+  query: string;
+}) {
   const others = s.products.filter((p) => !hits.includes(p));
   const shown = hits.length ? hits : others.slice(0, 8);
   const more = hits.length ? others : others.slice(8);
@@ -287,6 +305,11 @@ function SupplierCard({ s, hits, locale, query }: { s: Supplier; hits: Product[]
         ))}
       </div>
 
+      {query && (match === "category" || match === "general") && (
+        <p className="rounded-lg bg-capsule-50 px-3 py-1.5 text-sm text-capsule-700">
+          {(match === "category" ? t.matchCategory : t.matchGeneral)[locale]}
+        </p>
+      )}
       <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 text-[0.92rem]">
         <dt className={dt}>{t.phone[locale]}</dt>
         <dd className={dd}>
