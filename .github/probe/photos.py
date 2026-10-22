@@ -1,24 +1,12 @@
-import os, urllib.request, urllib.parse, json, re
+import os, urllib.request
 H = {"User-Agent": "PharmaVaultPhotoProbe/1.0 (contact: info@pharmavault.ir)"}
-def get(u, binary=False):
-    r = urllib.request.urlopen(urllib.request.Request(u, headers=H), timeout=40); b = r.read()
-    return b if binary else json.loads(b)
-os.makedirs(".github/probe/thumbs", exist_ok=True)
-out, seen = [], set()
-for q in ["HPLC laboratory", "HPLC injection", "high performance liquid chromatography", "HPLC operator", "chromatography laboratory scientist", "liquid chromatography instrument", "standard operating procedure binder", "binders documents shelf"]:
-    p = {"action": "query", "format": "json", "generator": "search", "gsrsearch": f"{q} filetype:bitmap", "gsrnamespace": 6, "gsrlimit": 14,
-         "prop": "imageinfo", "iiprop": "url|extmetadata|size", "iiurlwidth": 480}
-    try: d = get("https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode(p))
-    except Exception as e: out.append({"q": q, "error": str(e)}); continue
-    for pg in (d.get("query", {}).get("pages", {}) or {}).values():
-        t = pg["title"]
-        if t in seen or "imageinfo" not in pg: continue
-        seen.add(t); ii = pg["imageinfo"][0]; m = ii.get("extmetadata", {})
-        g = lambda k: re.sub("<[^>]+>", "", (m.get(k) or {}).get("value", ""))[:160]
-        item = {"q": q, "title": t, "w": ii.get("width"), "h": ii.get("height"), "url": ii.get("url"), "thumb": ii.get("thumburl"), "page": ii.get("descriptionurl"),
-                "license": g("LicenseShortName"), "artist": g("Artist"), "desc": g("ImageDescription")}
-        n = len(out)
-        try: open(f".github/probe/thumbs/c{n:03d}.jpg", "wb").write(get(ii["thumburl"], True)); item["file"] = f"c{n:03d}.jpg"
-        except Exception as e: item["thumb_error"] = str(e)
-        out.append(item)
-json.dump(out, open(".github/probe/photos.json", "w"), indent=1, ensure_ascii=False)
+os.makedirs(".github/probe/full", exist_ok=True)
+files = {
+    "qc-doe.jpg": "https://upload.wikimedia.org/wikipedia/commons/2/29/U.S._Department_of_Energy_-_Science_-_408_041_001_%289788226824%29.jpg",
+    "qc-fda.jpg": "https://upload.wikimedia.org/wikipedia/commons/0/09/Toxicology_Research_at_FDA_%28NCTR_-_Biochemical_Toxicology_Division%29_%286022922674%29.jpg",
+    "qa-357514.jpg": "https://images.pexels.com/photos/357514/pexels-photo-357514.jpeg?auto=compress&cs=tinysrgb&w=1800",
+    "qa-4502977.jpg": "https://images.pexels.com/photos/4502977/pexels-photo-4502977.jpeg?auto=compress&cs=tinysrgb&w=1800",
+}
+for name, url in files.items():
+    open(f".github/probe/full/{name}", "wb").write(urllib.request.urlopen(urllib.request.Request(url, headers=H), timeout=60).read())
+open(".github/probe/photos.json", "w").write("ok")
