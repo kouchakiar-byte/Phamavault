@@ -1,15 +1,28 @@
 import type { ReactNode } from "react";
+import type { StaticImageData } from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import type { LegalPage as LegalPageData } from "@/content/legal";
 import type { Locale } from "@/i18n/config";
 import { withBrand } from "./brand";
+import { HeaderPhoto } from "./page-header";
 import { BiTitle, Container, MoleculePattern } from "./ui";
 
-/** Plain text page (about, contact, terms, privacy) with a dark title band. */
-export function LegalPage({ page, locale, children }: { page: LegalPageData; locale: Locale; children?: ReactNode }) {
+/** Plain text page (about, contact, terms, privacy) with a dark title band, optionally over a photo. */
+export function LegalPage({
+  page,
+  locale,
+  children,
+  photo,
+}: {
+  page: LegalPageData;
+  locale: Locale;
+  children?: ReactNode;
+  photo?: StaticImageData;
+}) {
   return (
     <>
       <section className="relative isolate overflow-hidden bg-vault-900 text-white">
+        {photo && <HeaderPhoto photo={photo} />}
         <MoleculePattern className="text-white/[0.05]" />
         <Container className="py-14">
           <BiTitle
