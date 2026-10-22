@@ -42,7 +42,7 @@ ${hexes}
  <div style="font-size:10pt;color:#9fb3c8;margin-top:4mm;direction:ltr;text-align:right">High-Performance Liquid Chromatography — An Applied Handbook for the QC Laboratory</div>
  <div style="width:62mm;height:1.2pt;background:${C.gold};margin:8mm 0 7mm auto"></div>
  <div style="font-size:10.5pt;line-height:2.25;color:#e6eef6">
-  ${[["مبانی جداسازی، پارامترهای کروماتوگرافی و معادله تفکیک", "اجزای دستگاه، ستون‌ها و دتکتورها"], ["فاز متحرک، الزامات فارماکوپه و سیستم سوتیبیلیتی", "صحه‌گذاری، کوالیفیکیشن و یکپارچگی داده"], ["عیب‌یابی سیستماتیک و 12 مطالعه موردی", "مسائل محاسباتی حل‌شده و پرسش‌های ارزیابی"]]
+  ${[["مبانی جداسازی، پارامترهای کروماتوگرافی و معادله تفکیک", "اجزای دستگاه، ستون‌ها و Detector‌ها"], ["فاز متحرک، الزامات فارماکوپه و System Suitability", "صحه‌گذاری، Qualification و یکپارچگی داده"], ["عیب‌یابی سیستماتیک و 12 مطالعه موردی", "مسائل محاسباتی حل‌شده و پرسش‌های ارزیابی"]]
     .map((r) => `<div>${r.map((x) => `<span style="color:${C.gold}">◆</span> ${x}`).join("&emsp;&ensp;")}</div>`).join("")}
  </div>
 </div>
