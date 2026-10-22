@@ -9,14 +9,20 @@ export function languageAlternates(path: string): Record<string, string> {
   return { ...Object.fromEntries(locales.map((l) => [l, href(l, path)])), "x-default": href("fa", path) };
 }
 
-/** Bilingual <title>, description, hreflang alternates and share preview for a page. */
-export async function pageMetadata(title: Bi, description: Bi, path: string): Promise<Metadata> {
+/**
+ * Bilingual <title>, description, hreflang alternates and share preview for a page.
+ * `persianOnly`: the body is the same Persian text in both languages, so the
+ * Persian address is the canonical one and there is no English alternate.
+ */
+export async function pageMetadata(title: Bi, description: Bi, path: string, persianOnly = false): Promise<Metadata> {
   const locale = await getLocale();
   const t = both(title, locale);
   return {
     title: t,
     description: description[locale],
-    alternates: { canonical: href(locale, path), languages: languageAlternates(path) },
+    alternates: persianOnly
+      ? { canonical: href("fa", path) }
+      : { canonical: href(locale, path), languages: languageAlternates(path) },
     // Child openGraph replaces the layout's, so the shared fields are repeated here.
     openGraph: {
       siteName: "PharmaVault",
