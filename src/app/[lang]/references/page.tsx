@@ -1,5 +1,6 @@
 import { BookMarked, ExternalLink, Search } from "lucide-react";
 import { LegalPage } from "@/components/legal-page";
+import { sectionPhotos } from "@/components/page-header";
 import { OrangeBookSearch } from "@/components/pharmacy/orange-book-search";
 import {
   referenceLabels,
@@ -18,7 +19,7 @@ export const generateMetadata = () => pageMetadata(referencesPage.title, referen
 export default async function ReferencesPage() {
   const locale = await getLocale();
   return (
-    <LegalPage page={referencesPage} locale={locale}>
+    <LegalPage page={referencesPage} locale={locale} photo={sectionPhotos.references}>
       <p className="rounded-xl border border-line bg-vault-50 px-4 py-3 text-sm text-muted">
         {withReviewedMonth(referencesReviewedOn[locale], "references", locale)} {referencesPaid[locale]}
       </p>
