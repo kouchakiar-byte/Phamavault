@@ -32,13 +32,34 @@ export const sectionPhotos: Partial<Record<SectionSlug, StaticImageData>> = {
   pharmacy,
 };
 
+/** Photos whose licence asks for the author's name (CC BY). */
+export const photoCredits: Partial<Record<SectionSlug, { text: string; href: string }>> = {
+  qa: {
+    text: "Photo: Shixart1985, CC BY 2.0",
+    href: "https://commons.wikimedia.org/wiki/File:Collection_of_colorful_binders_on_a_shelf_for_storing_documents_in_an_office_setting.jpg",
+  },
+};
+
 /** A header band's photo: behind the whole band on phones, the end half on desktop, fading into the navy. */
-export function HeaderPhoto({ photo }: { photo: StaticImageData }) {
+export function HeaderPhoto({ photo, credit }: { photo: StaticImageData; credit?: { text: string; href: string } }) {
   return (
-    <div className="absolute inset-0 -z-20 lg:start-auto lg:w-[58%]" aria-hidden="true">
-      <Image src={photo} alt="" fill sizes="(min-width: 1024px) 58vw, 100vw" placeholder="blur" fetchPriority="high" className="object-cover" />
-      <div className="absolute inset-0 bg-vault-900/80 lg:bg-transparent lg:bg-gradient-to-r lg:from-vault-900 lg:via-vault-900/60 lg:to-vault-900/15 lg:rtl:bg-gradient-to-l" />
-    </div>
+    <>
+      <div className="absolute inset-0 -z-20 lg:start-auto lg:w-[58%]" aria-hidden="true">
+        <Image src={photo} alt="" fill sizes="(min-width: 1024px) 58vw, 100vw" placeholder="blur" fetchPriority="high" className="object-cover" />
+        <div className="absolute inset-0 bg-vault-900/80 lg:bg-transparent lg:bg-gradient-to-r lg:from-vault-900 lg:via-vault-900/60 lg:to-vault-900/15 lg:rtl:bg-gradient-to-l" />
+      </div>
+      {credit && (
+        <a
+          href={credit.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          dir="ltr"
+          className="absolute bottom-2 end-3 z-10 text-[10px] text-white/45 hover:text-white/80"
+        >
+          {credit.text}
+        </a>
+      )}
+    </>
   );
 }
 
@@ -52,7 +73,7 @@ export function PageHeader({ locale, section: slug, title, lead, back }: Props) 
   const backLink = back ?? { href: href(locale, "#sections"), label: copy.nav.allSections };
   return (
     <section className="relative isolate overflow-hidden bg-vault-900 text-white">
-      {photo && <HeaderPhoto photo={photo} />}
+      {photo && <HeaderPhoto photo={photo} credit={photoCredits[slug]} />}
       <MoleculePattern className="text-white/[0.05]" />
       <div className="absolute -top-32 end-[-8%] -z-10 size-[28rem] rounded-full bg-molecule-500/15 blur-3xl" />
       <Container className="py-14 lg:py-18">
