@@ -6,87 +6,87 @@
   },
   "dil": {
    "en": "Diluent (filler)",
-   "fa": "رقیق‌کننده (پرکننده)"
+   "fa": "Filler (Diluent)"
   },
   "bin": {
    "en": "Binder",
-   "fa": "چسباننده (Binder)"
+   "fa": "Binder"
   },
   "dis": {
    "en": "Disintegrant",
-   "fa": "باززا (Disintegrant)"
+   "fa": "Disintegrant"
   },
   "gli": {
    "en": "Glidant",
-   "fa": "تسهیل‌کننده جریان (Glidant)"
+   "fa": "Glidant"
   },
   "lub": {
    "en": "Lubricant",
-   "fa": "روان‌کننده (Lubricant)"
+   "fa": "Lubricant"
   },
   "stf": {
    "en": "Stiffening agent",
-   "fa": "عامل قوام‌دهنده"
+   "fa": "Stiffening agent"
   },
   "emo": {
    "en": "Emollient",
-   "fa": "نرم‌کننده پوست (Emollient)"
+   "fa": "Emollient"
   },
   "emu": {
    "en": "Emulsifying agent",
-   "fa": "امولسیون‌کننده (Emulsifier)"
+   "fa": "Emulsifying agent"
   },
   "hum": {
    "en": "Humectant",
-   "fa": "رطوبت‌گیر (Humectant)"
+   "fa": "Humectant"
   },
   "pre": {
    "en": "Antimicrobial preservative",
-   "fa": "نگهدارنده ضدمیکروبی"
+   "fa": "Antimicrobial preservative"
   },
   "veh": {
    "en": "Vehicle",
-   "fa": "حامل (Vehicle)"
+   "fa": "Vehicle"
   },
   "bas": {
    "en": "Ointment base",
-   "fa": "پایه پماد"
+   "fa": "Ointment base"
   },
   "gel": {
    "en": "Gelling agent",
-   "fa": "عامل ژل‌ساز"
+   "fa": "Gelling agent"
   },
   "neu": {
    "en": "Neutralising agent (adjust to pH 6–7)",
-   "fa": "عامل خنثی‌کننده (تنظیم pH به 6 تا 7)"
+   "fa": "Neutralising agent (تنظیم pH به 6 تا 7)"
   },
   "che": {
    "en": "Chelating agent",
-   "fa": "عامل کی‌لیت‌کننده"
+   "fa": "Chelating agent"
   },
   "swe": {
    "en": "Sweetening agent",
-   "fa": "شیرین‌کننده"
+   "fa": "Sweetening agent"
   },
   "cos": {
    "en": "Co-solvent",
-   "fa": "کمک‌حلال (Co-solvent)"
+   "fa": "Co-solvent"
   },
   "aci": {
    "en": "pH adjuster (acidulant)",
-   "fa": "تنظیم‌کننده pH (اسیدی‌کننده)"
+   "fa": "pH adjuster (Acidulant)"
   },
   "fla": {
    "en": "Flavouring agent",
-   "fa": "طعم‌دهنده"
+   "fa": "Flavouring agent"
   },
   "sus": {
    "en": "Suspending agent",
-   "fa": "عامل تعلیق‌دهنده"
+   "fa": "Suspending agent"
   },
   "wet": {
    "en": "Wetting agent",
-   "fa": "عامل ترکننده (Wetting agent)"
+   "fa": "Wetting agent"
   }
  },
  "api": {
