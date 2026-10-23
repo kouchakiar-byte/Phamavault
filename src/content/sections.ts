@@ -88,8 +88,8 @@ export const sections = [
     group: "tools",
     title: bi("Formulation Design Tools", "ابزارهای طراحی فرمولاسیون"),
     description: bi(
-      "Starting compositions by dosage form with the functional role of each component, q.s. balancing and batch quantities.",
-      "ترکیب پایه هر شکل دارویی با نقش عملکردی اجزا، محاسبه جزء q.s. و مقادیر بچ.",
+      "Formulation advisor: from the drug, strength, dosage form and reference brand it proposes the manufacturing route, unit weight and starting % w/w of each excipient, with monograph ranges and manufacturing steps; plus starting compositions with q.s. balancing and batch quantities.",
+      "مشاور هوشمند فرمولاسیون: بر اساس ماده مؤثره، قدرت دارویی، شکل دارویی و برند مرجع، روش ساخت، وزن هر واحد و درصد وزنی پیشنهادی هر ماده جانبی را همراه با محدوده‌های مونوگراف و مراحل ساخت ارائه می‌دهد؛ به‌همراه ترکیب‌های پایه، محاسبه جزء q.s. و مقادیر بچ.",
     ),
   },
   {
