@@ -233,30 +233,6 @@ export const specText: Record<string, Bi> = {
   sWater: bi("Water content / LOD: in-house limit from stability data.", "Water content / LOD: حد داخلی بر اساس داده‌های Stability."),
 };
 
-/** Manufacturing steps for each route (tablets; capsules replace compression by filling). */
-export const processSteps: Record<Route, Bi[]> = {
-  dc: [
-    bi("Sieve the API and excipients; deagglomerate cohesive powders.", "Sieving ماده مؤثره و مواد جانبی؛ Deagglomeration پودرهای Cohesive."),
-    bi("Pre-blend the API with part of the filler (geometric dilution for low doses), then add the rest of the filler, the disintegrant and the glidant; blend.", "Pre-blending ماده مؤثره با بخشی از Filler (برای دوز پایین به روش Geometric dilution)، سپس افزودن باقی Filler، Disintegrant و Glidant و Blending."),
-    bi("Add the sieved lubricant last and blend for 2–5 min.", "افزودن Lubricant الک‌شده در انتها و Blending به مدت 2 تا 5 دقیقه."),
-  ],
-  wg: [
-    bi("Sieve and dry-mix the API, filler and the intragranular disintegrant.", "Sieving و Dry mixing ماده مؤثره، Filler و Disintegrant درون‌گرانولی (Intragranular)."),
-    bi("Granulate with the binder solution in a high-shear granulator to the end point.", "Granulation با Binder solution در High-shear granulator تا رسیدن به End point."),
-    bi("Wet screening, then fluid-bed drying to the target LOD.", "Wet screening و سپس Fluid-bed drying تا LOD هدف."),
-    bi("Dry sizing; add the extragranular disintegrant and the glidant; blend.", "Dry sizing؛ افزودن Disintegrant برون‌گرانولی (Extragranular) و Glidant و Blending."),
-    bi("Add the lubricant last and blend for 2–5 min.", "افزودن Lubricant در انتها و Blending به مدت 2 تا 5 دقیقه."),
-  ],
-  dg: [
-    bi("Sieve and blend the API, filler, binder, part of the disintegrant and about a quarter to half of the lubricant.", "Sieving و Blending ماده مؤثره، Filler، Binder، بخشی از Disintegrant و حدود یک‌چهارم تا نیمی از Lubricant."),
-    bi("Roller compaction to ribbons; mill to granules.", "Roller compaction به نوار (Ribbon) و Milling به گرانول."),
-    bi("Add the extragranular disintegrant and glidant; blend; add the rest of the lubricant (2–5 min).", "افزودن Disintegrant برون‌گرانولی و Glidant و Blending؛ سپس افزودن باقی Lubricant (2 تا 5 دقیقه)."),
-  ],
-};
-export const compressionStep = bi("Compression to the target weight, thickness and breaking force.", "Compression مطابق وزن، ضخامت و Breaking force هدف.");
-export const fillingStep = bi("Capsule filling to the target fill weight; weight checks during the run.", "Capsule filling مطابق Fill weight هدف و کنترل وزن حین تولید.");
-export const coatingStep = bi("Film coating with an HPMC-based system in a perforated coating pan to the target weight gain.", "Film coating با سیستم پایه HPMC در Perforated coating pan تا Weight gain هدف.");
-
 export const ipcList: Bi[] = [
   bi("Blend: Blend Uniformity (stratified sampling), bulk/tapped density, Carr index or Hausner ratio.", "Blend: Blend Uniformity (Stratified sampling)، Bulk/Tapped density، Carr index یا Hausner ratio."),
   bi("Granules (WG): LOD, particle size distribution.", "گرانول (WG): LOD و Particle size distribution."),
@@ -299,13 +275,17 @@ export const advisorCopy = {
   overage: bi("Overage (%)", "Overage (%)"),
   step3: bi("Reference product", "فرآورده مرجع (Reference product)"),
   brand: bi("Reference brand", "برند مرجع"),
-  brandPh: bi("e.g. Glucophage", "برای نمونه Glucophage"),
+  brandPh: bi("e.g. Glucophage (or search by the API above)", "برای نمونه Glucophage (یا جستجو بر اساس API)"),
   brandWeight: bi("Brand unit weight (mg, optional)", "وزن هر واحد برند (میلی‌گرم، اختیاری)"),
   brandWeightHint: bi(
     "Average weight of 20 tablets (Ph. Eur. 2.9.5). Leave empty and the advisor computes the smallest suitable weight.",
     "وزن متوسط 20 قرص برند (Ph. Eur. 2.9.5). در صورت عدم ورود، مشاور کمترین وزن مناسب را محاسبه می‌کند.",
   ),
   checking: bi("Searching…", "در حال جستجو…"),
+  findBrands: bi("Find brands (Orange Book)", "جستجوی برندها (Orange Book)"),
+  obSummary: bi("{n} brand (NDA) products and {g} generic (ANDA) holders for {f}; strengths matching yours are highlighted.", "{n} فرآورده برند (NDA) و {g} دارنده ژنریک (ANDA) برای {f}؛ قدرت‌های منطبق با قدرت واردشده برجسته شده‌اند."),
+  obGenerics: bi("Generic (ANDA) holders: {g}", "دارندگان ژنریک (ANDA): {g}"),
+  pickBrand: bi("Use as reference", "انتخاب به‌عنوان مرجع"),
   noMatch: bi("No match in the Orange Book.", "موردی در Orange Book یافت نشد."),
   rld: bi("Reference listed drug (RLD), Orange Book", "Reference Listed Drug (RLD) در Orange Book"),
   obNote: bi(

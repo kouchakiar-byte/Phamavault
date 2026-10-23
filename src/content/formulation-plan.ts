@@ -1,0 +1,347 @@
+import { bi, type Bi } from "@/i18n/bi";
+
+/*
+ * Text of the manufacturing plan (src/lib/formulation-plan.ts). Starting
+ * values are common oral-solid development practice, to be confirmed for
+ * each product.
+ */
+
+/** Unit operations: title, purpose and typical equipment. */
+export const planSteps: Record<string, { title: Bi; purpose: Bi; equipment: Bi }> = {
+  sDispense: {
+    title: bi("Dispensing and API pre-treatment", "Dispensing و آماده‌سازی API"),
+    purpose: bi("Weigh every material to the dispensing formula and confirm the API attributes that drive the process.", "توزین همه مواد طبق Dispensing formula و تأیید ویژگی‌های API که فرایند را کنترل می‌کنند."),
+    equipment: bi("Calibrated balances, dispensing booth (LAF)", "ترازوهای کالیبره، Dispensing booth (LAF)"),
+  },
+  sSieve: {
+    title: bi("Sieving and deagglomeration", "Sieving و Deagglomeration"),
+    purpose: bi("Break agglomerates and match particle sizes so the blend mixes and stays uniform.", "شکستن کلوخه‌ها و هم‌اندازه‌کردن ذرات برای اختلاط یکنواخت و پایدار."),
+    equipment: bi("Vibratory sifter or conical mill (co-mill) with a round-hole screen", "Vibratory sifter یا Conical mill (Co-mill) با الک سوراخ گرد"),
+  },
+  sPreblend: {
+    title: bi("Pre-blend (API with part of the filler)", "Pre-blend (API با بخشی از Filler)"),
+    purpose: bi("Distribute the API evenly before the bulk of the excipients is added.", "توزیع یکنواخت API پیش از افزودن عمده مواد جانبی."),
+    equipment: bi("Bin blender or V-blender", "Bin blender یا V-blender"),
+  },
+  sBlend: {
+    title: bi("Main blend", "Main blend"),
+    purpose: bi("Add the rest of the filler, the disintegrant and the glidant and reach blend uniformity.", "افزودن باقی Filler، Disintegrant و Glidant و دستیابی به Blend uniformity."),
+    equipment: bi("Bin blender or V-blender (40–70% fill volume)", "Bin blender یا V-blender (Fill volume بین 40 تا 70%)"),
+  },
+  sDryMix: {
+    title: bi("Dry mixing", "Dry mixing"),
+    purpose: bi("Mix the API, filler and intragranular disintegrant before liquid addition.", "اختلاط API، Filler و Disintegrant درون‌گرانولی پیش از افزودن مایع."),
+    equipment: bi("High-shear mixer granulator (impeller + chopper)", "High-shear mixer granulator (Impeller و Chopper)"),
+  },
+  sBinderSol: {
+    title: bi("Granulating fluid preparation", "تهیه Granulating fluid"),
+    purpose: bi("Dissolve the binder (and any wetting agent) completely so it spreads evenly on the powder.", "انحلال کامل Binder (و Wetting agent در صورت وجود) برای پخش یکنواخت روی پودر."),
+    equipment: bi("Stainless-steel vessel with a propeller stirrer", "مخزن استیل با همزن پروانه‌ای"),
+  },
+  sWetMass: {
+    title: bi("Wet massing", "Wet massing"),
+    purpose: bi("Form granules of the target density and size; the most critical step of Wet Granulation.", "تشکیل گرانول با دانسیته و اندازه هدف؛ بحرانی‌ترین مرحله Wet Granulation."),
+    equipment: bi("High-shear granulator with power or torque monitoring", "High-shear granulator با پایش Power یا Torque"),
+  },
+  sWetMill: {
+    title: bi("Wet milling", "Wet milling"),
+    purpose: bi("Break oversized wet lumps so the granules dry evenly.", "شکستن توده‌های درشت مرطوب برای Drying یکنواخت."),
+    equipment: bi("Conical mill, 4–6 mm screen", "Conical mill با الک 4 تا 6 میلی‌متر"),
+  },
+  sDry: {
+    title: bi("Drying", "Drying"),
+    purpose: bi("Remove the granulating fluid to the target loss on drying.", "حذف Granulating fluid تا LOD هدف."),
+    equipment: bi("Fluid-bed dryer (or vacuum / tray dryer)", "Fluid-bed dryer (یا Vacuum dryer / Tray dryer)"),
+  },
+  sDryMill: {
+    title: bi("Dry milling (sizing)", "Dry milling (Sizing)"),
+    purpose: bi("Bring the dried granules to the target particle size distribution.", "رساندن گرانول خشک به Particle size distribution هدف."),
+    equipment: bi("Conical mill, 1.0–1.5 mm screen", "Conical mill با الک 1.0 تا 1.5 میلی‌متر"),
+  },
+  sExtra: {
+    title: bi("Extragranular blending", "Extragranular blending"),
+    purpose: bi("Add the extragranular disintegrant and glidant to the sized granules.", "افزودن Disintegrant و Glidant برون‌گرانولی به گرانول کالیبره‌شده."),
+    equipment: bi("Bin blender", "Bin blender"),
+  },
+  sDgBlend: {
+    title: bi("Pre-compaction blend", "Pre-compaction blend"),
+    purpose: bi("Blend the API, filler, binder, part of the disintegrant and an intragranular part of the lubricant.", "اختلاط API، Filler، Binder، بخشی از Disintegrant و بخش درون‌گرانولی Lubricant."),
+    equipment: bi("Bin blender", "Bin blender"),
+  },
+  sCompact: {
+    title: bi("Roller compaction", "Roller compaction"),
+    purpose: bi("Densify the blend into ribbons without water or heat.", "Densification مخلوط به نوار (Ribbon) بدون آب و حرارت."),
+    equipment: bi("Roller compactor with feed screw and roll-gap control", "Roller compactor با Feed screw و کنترل Roll gap"),
+  },
+  sDgMill: {
+    title: bi("Ribbon milling", "Milling نوار"),
+    purpose: bi("Mill the ribbons to free-flowing granules with limited fines.", "Milling نوار به گرانول با Flowability مطلوب و Fines محدود."),
+    equipment: bi("Oscillating granulator or conical mill, 1.0–1.5 mm screen", "Oscillating granulator یا Conical mill با الک 1.0 تا 1.5 میلی‌متر"),
+  },
+  sLube: {
+    title: bi("Lubrication", "Lubrication"),
+    purpose: bi("Coat the particles with lubricant just enough for ejection, without over-lubrication.", "پوشاندن ذرات با Lubricant به میزان لازم برای Ejection، بدون Over-lubrication."),
+    equipment: bi("Bin blender", "Bin blender"),
+  },
+  sCompress: {
+    title: bi("Compression", "Compression"),
+    purpose: bi("Compress tablets of uniform weight, thickness and breaking force.", "تولید قرص با وزن، ضخامت و Breaking force یکنواخت."),
+    equipment: bi("Rotary tablet press with pre-compression and force monitoring", "Rotary tablet press با Pre-compression و پایش نیرو"),
+  },
+  sFill: {
+    title: bi("Capsule filling", "Capsule filling"),
+    purpose: bi("Fill the capsules to the target fill weight with low variation.", "پرکردن کپسول‌ها مطابق Fill weight هدف با کمترین تغییرات."),
+    equipment: bi("Automatic capsule filler (dosator or tamping-disc)", "دستگاه Capsule filler خودکار (Dosator یا Tamping-disc)"),
+  },
+  sCoat: {
+    title: bi("Film coating", "Film coating"),
+    purpose: bi("Apply the film coat to the target weight gain for appearance, swallowability and protection.", "اعمال روکش فیلمی تا Weight gain هدف برای ظاهر، Swallowability و محافظت."),
+    equipment: bi("Perforated coating pan with spray guns", "Perforated coating pan با Spray gun"),
+  },
+};
+
+/** Step parameters. */
+export const planParams: Record<string, Bi> = {
+  pPotency: bi("API quantity corrected by factor {f} (assay, water, overage).", "مقدار API با ضریب {f} اصلاح می‌شود (Assay، Water، Overage)."),
+  pLowRh: bi("Dispense and process at controlled low humidity (about ≤ 40% RH, 20–25 °C).", "Dispensing و فرایند در رطوبت کنترل‌شده پایین (حدود ≤ 40% RH و 20 تا 25 °C)."),
+  pSieve: bi("API and excipients through #30–#40 mesh (425–600 µm); lubricant through #60 (250 µm).", "API و مواد جانبی با مش 30 تا 40 (425 تا 600 µm)؛ Lubricant با مش 60 (250 µm)."),
+  pPreblend: bi("API with about an equal mass of filler, 5–10 min.", "API با جرم تقریباً برابر از Filler به مدت 5 تا 10 دقیقه."),
+  pBlend: bi("10–15 min (about 200–300 revolutions in a bin blender).", "10 تا 15 دقیقه (حدود 200 تا 300 دور در Bin blender)."),
+  pBu: bi("Blend Uniformity: 10 locations, 1–3 × unit dose each; RSD ≤ 5% as a development target.", "Blend Uniformity: 10 نقطه نمونه‌برداری با 1 تا 3 برابر دوز واحد؛ هدف توسعه RSD ≤ 5%."),
+  pDryMix: bi("3–5 min, impeller at low speed, chopper on.", "3 تا 5 دقیقه، Impeller با سرعت پایین و Chopper روشن."),
+  pBinderSol: bi("{b} kg binder in about {w} kg purified water (10% w/w); stir until clear.", "{b} کیلوگرم Binder در حدود {w} کیلوگرم Purified water (10% w/w)؛ همزدن تا شفاف‌شدن محلول."),
+  pWetInFluid: bi("Dissolve the wetting agent ({w} kg) in the granulating fluid rather than adding it dry.", "Wetting agent ({w} کیلوگرم) به‌جای افزودن خشک، در Granulating fluid حل شود."),
+  pFluid: bi("Total fluid about {lo}–{hi} kg (set by trials).", "مجموع مایع حدود {lo} تا {hi} کیلوگرم (با آزمایش تعیین شود)."),
+  pAddRate: bi("Add the fluid over 2–5 min (pump or spray), impeller at medium speed, chopper on; wet massing 1–3 min.", "افزودن مایع طی 2 تا 5 دقیقه (پمپ یا Spray) با Impeller در سرعت متوسط و Chopper روشن؛ Wet massing به مدت 1 تا 3 دقیقه."),
+  pEndPoint: bi("End point by impeller power/torque plateau and a granule that holds its shape when squeezed but breaks cleanly.", "End point بر اساس Plateau در Power/Torque و گرانولی که با فشار دست شکل می‌گیرد و به‌راحتی می‌شکند."),
+  pWetMill: bi("4–6 mm screen, low speed.", "الک 4 تا 6 میلی‌متر با سرعت پایین."),
+  pDry: bi("Inlet air 55–65 °C; product temperature not above about 45 °C; end at the target LOD.", "Inlet air برابر 55 تا 65 °C؛ دمای محصول حداکثر حدود 45 °C؛ پایان در LOD هدف."),
+  pDryCool: bi("Inlet air ≤ 45 °C or vacuum drying; product temperature ≤ 35–40 °C.", "Inlet air ≤ 45 °C یا Vacuum drying؛ دمای محصول ≤ 35 تا 40 °C."),
+  pLod: bi("LOD target usually 1.5–3.0%, confirmed by stability and compression results.", "LOD هدف معمولاً 1.5 تا 3.0%، تأییدشده با نتایج Stability و Compression."),
+  pDryMill: bi("1.0–1.5 mm screen; target d50 about 150–300 µm, fines (< 75 µm) below about 20%.", "الک 1.0 تا 1.5 میلی‌متر؛ d50 هدف حدود 150 تا 300 µm و Fines (کمتر از 75 µm) کمتر از حدود 20%."),
+  pExtra: bi("5–10 min.", "5 تا 10 دقیقه."),
+  pDgBlend: bi("10–15 min including about 0.25–0.5% of the lubricant.", "10 تا 15 دقیقه همراه با حدود 0.25 تا 0.5% از Lubricant."),
+  pRoll: bi("Start at roll force about 4–6 kN/cm, gap 2–3 mm; adjust the feed screw to keep the gap constant.", "شروع با Roll force حدود 4 تا 6 kN/cm و Gap برابر 2 تا 3 میلی‌متر؛ تنظیم Feed screw برای ثابت‌ماندن Gap."),
+  pRibbon: bi("Ribbon solid fraction target about 0.6–0.7 (envelope density / true density).", "Solid fraction هدف نوار حدود 0.6 تا 0.7 (Envelope density / True density)."),
+  pDgMill: bi("1.0–1.5 mm screen; recycle of fines only if validated.", "الک 1.0 تا 1.5 میلی‌متر؛ بازگرداندن Fines فقط در صورت Validation."),
+  pLube: bi("2–5 min (about 50–100 revolutions); no longer.", "2 تا 5 دقیقه (حدود 50 تا 100 دور)؛ نه بیشتر."),
+  pTool: bi("Tooling {s} mm round, standard concave; estimated thickness about {t} mm.", "Tooling: پانچ گرد {s} میلی‌متری Standard concave؛ ضخامت تخمینی حدود {t} میلی‌متر."),
+  pToolCaplet: bi("Tooling: caplet about {s} mm.", "Tooling: Caplet حدود {s} میلی‌متر."),
+  pForce: bi("Breaking force target about {lo}–{hi} N (tensile strength 1–2 MPa); build a compression profile (force vs hardness, DT, friability).", "Breaking force هدف حدود {lo} تا {hi} نیوتن (Tensile strength برابر 1 تا 2 MPa)؛ تهیه Compression profile (نیرو در برابر Hardness، DT و Friability)."),
+  pPrecomp: bi("Pre-compression about 10–20% of main force; start at moderate turret speed.", "Pre-compression حدود 10 تا 20% نیروی اصلی؛ شروع با سرعت متوسط Turret."),
+  pIpcCompress: bi("IPC every 15–30 min: weight (individual and average), thickness, breaking force, friability, disintegration.", "IPC هر 15 تا 30 دقیقه: وزن (تکی و متوسط)، ضخامت، Breaking force، Friability و Disintegration."),
+  pFill: bi("Size {s}, fill weight {f} mg; set dosing disc / dosator height and compression.", "سایز {s} و Fill weight برابر {f} میلی‌گرم؛ تنظیم Dosing disc یا ارتفاع Dosator و Compression."),
+  pFillNo: bi("Select the capsule size from the blend's tapped density.", "انتخاب سایز کپسول بر اساس Tapped density مخلوط."),
+  pFillChecks: bi("IPC every 15–30 min: individual fill weights, closure, appearance.", "IPC هر 15 تا 30 دقیقه: وزن تکی، بسته‌شدن کپسول و ظاهر."),
+  pCoatQty: bi("{s} kg coating solids ({g}% weight gain); about {q} kg suspension at 15% solids, including 15% for spray losses.", "{s} کیلوگرم جامد پوشش (Weight gain برابر {g}%)؛ حدود {q} کیلوگرم سوسپانسیون با 15% جامد شامل 15% اضافه برای Spray loss."),
+  pCoatParams: bi("Pre-warm cores to bed 40–45 °C; low pan speed and spray rate at start, then raise; atomizing air about 1.5–2.5 bar.", "پیش‌گرم‌کردن هسته‌ها تا Bed temperature برابر 40 تا 45 °C؛ شروع با Pan speed و Spray rate پایین و سپس افزایش؛ Atomizing air حدود 1.5 تا 2.5 bar."),
+};
+
+/** Precautions tied to the risk profile. */
+export const planTips: Record<string, Bi> = {
+  tPsd: bi("Specify API particle size (e.g. d90) as a critical material attribute; micronized API improves dissolution but flows poorly.", "Particle size ماده مؤثره (مانند d90) به‌عنوان Critical material attribute تعریف شود؛ API میکرونیزه Dissolution را بهبود می‌دهد اما Flowability نامطلوبی دارد."),
+  tOxDispense: bi("Keep API containers closed and nitrogen-flushed; minimise exposure to air and light.", "ظروف API بسته و با Nitrogen flushing نگهداری شود؛ تماس با هوا و نور به حداقل برسد."),
+  tPotent: bi("Very low dose: use containment appropriate to potency and verify API transfer (no losses on equipment).", "دوز بسیار پایین: Containment متناسب با Potency و اطمینان از انتقال کامل API (بدون اتلاف روی تجهیزات)."),
+  tCoMill: bi("Co-mill the cohesive API with part of the filler instead of sieving it alone.", "API چسبنده (Cohesive) همراه با بخشی از Filler از Co-mill عبور داده شود، نه به‌تنهایی."),
+  tSilicaFirst: bi("Pre-blend the colloidal silica with the API first: it coats the cohesive particles and improves flow.", "Colloidal silica ابتدا با API پیش‌اختلاط شود؛ ذرات Cohesive را می‌پوشاند و Flowability را بهبود می‌دهد."),
+  tGeometric: bi("Geometric dilution: API + equal mass of filler, then double the mass at each stage.", "Geometric dilution: API با جرم برابر Filler و سپس دوبرابرکردن جرم در هر مرحله."),
+  tTrituration: bi("Very low dose: prepare a trituration (e.g. 1:10 with filler) or consider Wet Granulation with the API in the granulating fluid.", "دوز بسیار پایین: تهیه Trituration (مثلاً 1:10 با Filler) یا Wet Granulation با API در Granulating fluid بررسی شود."),
+  tOrderedMix: bi("Use a fine carrier-friendly filler grade (ordered mixing) to hold the fine API.", "استفاده از گرید Filler مناسب Ordered mixing برای نگهداشتن ذرات ریز API."),
+  tBuSampling: bi("Sample with a thief at 10 locations, 1–3 × unit dose; demonstrate uniformity before compression.", "نمونه‌برداری با Thief از 10 نقطه با 1 تا 3 برابر دوز واحد؛ اثبات یکنواختی پیش از Compression."),
+  tSegregation: bi("Minimise drops and vibration after blending (segregation in transfer and the press hopper).", "کاهش سقوط و ارتعاش مخلوط پس از Blending (Segregation حین انتقال و در Hopper دستگاه)."),
+  tApiInFluid: bi("Dissolve or suspend the API in the binder solution for the best content uniformity.", "API در Binder solution حل یا معلق شود تا بهترین Content uniformity حاصل شود."),
+  tN2Water: bi("Use nitrogen-sparged water and consider an antioxidant (e.g. sodium metabisulfite or BHT, per compatibility).", "از آب Nitrogen-sparged استفاده و افزودن Antioxidant (مانند Sodium metabisulfite یا BHT، با توجه به سازگاری) بررسی شود."),
+  tHpmcSol: bi("Disperse HPMC in hot water, then cool to dissolve (avoids lumps).", "HPMC در آب داغ پراکنده و سپس برای انحلال سرد شود (جلوگیری از توده‌شدن)."),
+  tSolubleApi: bi("Highly soluble API dissolves in the fluid: narrow liquid window, risk of over-wetting. Use less water, add it slowly, or a hydroalcoholic fluid.", "API بسیار محلول در مایع حل می‌شود: Liquid window باریک و ریسک Over-wetting. آب کمتر، افزودن آهسته یا Granulating fluid هیدروالکلی."),
+  tHighLoadWg: bi("At high drug load the API's own wetting behaviour dominates; fix binder level and fluid amount by a small DoE.", "در Drug load بالا رفتار ترشوندگی خود API غالب است؛ مقدار Binder و مایع با یک DoE کوچک تعیین شود."),
+  tHydrophilize: bi("Granulation hydrophilises a poorly soluble API; include the wetting agent in the fluid.", "Granulation سطح API کم‌محلول را Hydrophilic می‌کند؛ Wetting agent در مایع گنجانده شود."),
+  tVacuum: bi("Heat-sensitive drug: vacuum drying at low temperature, or switch to Dry Granulation.", "داروی Heat-sensitive: Vacuum drying در دمای پایین یا تغییر به Dry Granulation."),
+  tLodLow: bi("Moisture-sensitive drug: aim at the low end of the LOD range and confirm by stability.", "داروی Moisture-sensitive: هدف‌گیری حد پایین محدوده LOD و تأیید با Stability."),
+  tMeltDry: bi("Low-melting API: keep product temperature well below the melting point.", "API با Melting point پایین: دمای محصول به‌طور قابل توجهی کمتر از Melting point نگه داشته شود."),
+  tPsdGran: bi("Measure granule PSD and bulk/tapped density; they predict compression and weight variation.", "اندازه‌گیری PSD گرانول و Bulk/Tapped density؛ این‌ها رفتار Compression و Weight variation را پیش‌بینی می‌کنند."),
+  tSplitDis: bi("Disintegrant split about 50:50 intra/extragranular for fast disintegration and dissolution.", "Disintegrant به نسبت حدود 50:50 درون/برون‌گرانولی برای Disintegration و Dissolution سریع."),
+  tIntraLub: bi("A small intragranular lubricant level prevents sticking to the rolls.", "مقدار کم Lubricant درون‌گرانولی از Sticking به Roll جلوگیری می‌کند."),
+  tWorkHardening: bi("High drug load: recompaction loses strength (work hardening); keep roll force moderate and MCC in the formula.", "Drug load بالا: فشرده‌سازی مجدد استحکام را کاهش می‌دهد (Work hardening)؛ Roll force متوسط و حضور MCC در فرمول."),
+  tLowRhRoom: bi("Compact in a low-humidity room.", "Compaction در اتاق با رطوبت پایین انجام شود."),
+  tRollCool: bi("Low-melting API: chilled rolls and moderate roll speed.", "API با Melting point پایین: Roll خنک‌شونده و سرعت متوسط Roll."),
+  tFines: bi("Control fines: too many fines cause weight variation and capping.", "کنترل Fines: Fines زیاد موجب Weight variation و Capping می‌شود."),
+  tLubeSol: bi("Poorly soluble drug: keep magnesium stearate ≤ 1% and lubrication short, or use sodium stearyl fumarate.", "داروی کم‌محلول: Magnesium stearate ≤ 1% و Lubrication کوتاه، یا استفاده از Sodium stearyl fumarate."),
+  tOverLube: bi("Over-lubrication with stearates lowers hardness and slows dissolution; fix the blend time in the batch record.", "Over-lubrication با استئارات‌ها Hardness را کاهش و Dissolution را کند می‌کند؛ زمان Blending در Batch record ثابت شود."),
+  tHpmcShell: bi("Hygroscopic fill draws water from gelatin shells (brittleness): use HPMC capsules.", "مخلوط Hygroscopic آب پوسته ژلاتینی را جذب می‌کند (شکنندگی)؛ از کپسول HPMC استفاده شود."),
+  tDosator: bi("Poor flow: a tamping-disc machine tolerates cohesive blends better than a dosator.", "Flowability نامطلوب: دستگاه Tamping-disc مخلوط Cohesive را بهتر از Dosator تحمل می‌کند."),
+  tCapCu: bi("Low dose in capsules: content uniformity depends on blend uniformity and fill-weight control.", "دوز پایین در کپسول: Content uniformity به Blend uniformity و کنترل Fill weight وابسته است."),
+  tCapping: bi("High drug load: watch for capping and lamination; use pre-compression, longer dwell time (lower speed) and tapered dies if needed.", "Drug load بالا: پایش Capping و Lamination؛ استفاده از Pre-compression، Dwell time بیشتر (سرعت کمتر) و در صورت نیاز Tapered die."),
+  tSticking: bi("Low-melting API: chromium-coated or anti-stick tooling, lower speed, room temperature control.", "API با Melting point پایین: Tooling با پوشش کروم یا Anti-stick، سرعت کمتر و کنترل دمای اتاق."),
+  tOdtHard: bi("ODT: balance low hardness (fast disintegration) with friability; a low compression force and a superdisintegrant are usual.", "ODT: تعادل بین Hardness پایین (Disintegration سریع) و Friability؛ نیروی Compression پایین و Superdisintegrant متداول است."),
+  tChewHard: bi("Chewable: lower hardness than swallowed tablets, but enough for packaging and transport.", "Chewable: Hardness کمتر از قرص بلعیدنی، اما کافی برای بسته‌بندی و حمل."),
+  tBigTablet: bi("Large tablet: caplet shape and a score line may improve swallowability.", "قرص بزرگ: شکل Caplet و Score line می‌تواند Swallowability را بهبود دهد."),
+  tPvaCoat: bi("Moisture-sensitive core: a PVA-based moisture-barrier coating protects better than plain HPMC.", "هسته Moisture-sensitive: روکش Moisture-barrier بر پایه PVA محافظت بهتری از HPMC ساده دارد."),
+  tOpaque: bi("Oxidation- or light-sensitive drug: an opaque coat (titanium dioxide) protects from light.", "داروی مستعد Oxidation یا حساس به نور: روکش Opaque (Titanium dioxide) از نور محافظت می‌کند."),
+  tTasteCoat: bi("Bitter drug: the film coat also masks taste.", "داروی تلخ: روکش فیلمی طعم را نیز می‌پوشاند (Taste masking)."),
+  tCoatWater: bi("Aqueous coating: keep spray rate low at start and bed temperature in range to limit water uptake by the cores.", "Aqueous coating: Spray rate پایین در شروع و Bed temperature در محدوده برای محدودکردن جذب آب توسط هسته‌ها."),
+};
+
+/** Challenge → strategy: the problem, the formula answer, the process answer and what to monitor. */
+export const challengeText: Record<string, { title: Bi; formula: Bi; process: Bi; monitor: Bi }> = {
+  cHighLoad: {
+    title: bi("High drug load ({p}%)", "Drug load بالا ({p}%)"),
+    formula: bi("Little room for excipients: use efficient ones (superdisintegrant, PVP/copovidone, MCC as dry binder).", "فضای کم برای مواد جانبی: استفاده از اجزای کارآمد (Superdisintegrant، PVP/Copovidone، MCC به‌عنوان Dry binder)."),
+    process: bi("Wet Granulation to give the API compactibility; pre-compression on the press.", "Wet Granulation برای ایجاد Compactibility در API؛ Pre-compression در دستگاه پرس."),
+    monitor: bi("Hardness, friability, capping.", "Hardness، Friability و Capping."),
+  },
+  cVeryLow: {
+    title: bi("Very low dose", "دوز بسیار پایین"),
+    formula: bi("Fine filler grades; consider the API in the granulating fluid.", "گرید ریز Filler؛ API در Granulating fluid بررسی شود."),
+    process: bi("Trituration and geometric dilution, or Wet Granulation with the API in solution.", "Trituration و Geometric dilution، یا Wet Granulation با API در محلول."),
+    monitor: bi("Blend Uniformity and Content Uniformity (USP <905>).", "Blend Uniformity و Content Uniformity (USP <905>)."),
+  },
+  cLowDose: {
+    title: bi("Low dose (content uniformity)", "دوز پایین (Content uniformity)"),
+    formula: bi("Match filler and API particle sizes.", "هم‌اندازه‌کردن ذرات Filler و API."),
+    process: bi("Geometric dilution; avoid segregation in transfer.", "Geometric dilution؛ جلوگیری از Segregation حین انتقال."),
+    monitor: bi("Blend Uniformity, Content Uniformity.", "Blend Uniformity و Content Uniformity."),
+  },
+  cSoluble: {
+    title: bi("Highly soluble API in Wet Granulation", "API بسیار محلول در Wet Granulation"),
+    formula: bi("Lower water, binder dissolved in a small volume.", "آب کمتر و Binder حل‌شده در حجم کم."),
+    process: bi("Slow fluid addition, short wet massing, power-based end point.", "افزودن آهسته مایع، Wet massing کوتاه و End point بر اساس Power."),
+    monitor: bi("Granule PSD, LOD, over-wetting.", "PSD گرانول، LOD و Over-wetting."),
+  },
+  cPoorSol: {
+    title: bi("Poorly soluble API (BCS II / IV)", "API کم‌محلول (BCS II / IV)"),
+    formula: bi("Micronized API, wetting agent, superdisintegrant, Mg stearate ≤ 1% or SSF.", "API میکرونیزه، Wetting agent، Superdisintegrant و Magnesium stearate ≤ 1% یا SSF."),
+    process: bi("Wet Granulation with the surfactant in the fluid; short lubrication.", "Wet Granulation با Surfactant در مایع؛ Lubrication کوتاه."),
+    monitor: bi("Dissolution profile (discriminating method), API PSD.", "Dissolution profile (روش Discriminating) و PSD ماده مؤثره."),
+  },
+  cFlow: {
+    title: bi("Poor API flow", "Flowability نامطلوب API"),
+    formula: bi("Glidant (colloidal silica), free-flowing filler grades.", "Glidant (Colloidal silica) و گریدهای Filler با Flowability مطلوب."),
+    process: bi("Granulation (wet or dry) or co-milling with silica.", "Granulation (مرطوب یا خشک) یا Co-milling با Silica."),
+    monitor: bi("Carr index / Hausner ratio, weight variation.", "Carr index / Hausner ratio و Weight variation."),
+  },
+  cMoisture: {
+    title: bi("Moisture-sensitive or hydrolysable API", "API حساس به رطوبت یا مستعد Hydrolysis"),
+    formula: bi("Low-moisture excipients (DCP anhydrous, anhydrous lactose, low-moisture MCC); avoid hygroscopic binders.", "مواد جانبی کم‌رطوبت (DCP بی‌آب، Lactose بی‌آب، MCC کم‌رطوبت)؛ اجتناب از Binder هیگروسکوپیک."),
+    process: bi("Direct Compression or Dry Granulation at low RH; PVA-based barrier coat.", "Direct Compression یا Dry Granulation در RH پایین؛ روکش Barrier بر پایه PVA."),
+    monitor: bi("Water content, hydrolysis degradants at accelerated stability.", "Water content و محصولات Hydrolysis در Stability تسریع‌شده."),
+  },
+  cHeat: {
+    title: bi("Heat-sensitive API", "API حساس به حرارت"),
+    formula: bi("No heat-requiring binders (e.g. starch paste).", "عدم استفاده از Binder نیازمند حرارت (مانند Starch paste)."),
+    process: bi("Direct Compression or Dry Granulation; if WG, vacuum drying at low temperature.", "Direct Compression یا Dry Granulation؛ در صورت WG، Vacuum drying در دمای پایین."),
+    monitor: bi("Degradation products after drying and coating.", "Degradation products پس از Drying و Coating."),
+  },
+  cOx: {
+    title: bi("Oxidation-prone API", "API مستعد Oxidation"),
+    formula: bi("Low-peroxide grades of povidone/crospovidone or HPC / L-HPC instead; antioxidant; chelating agent if metal-catalysed.", "گرید Low-peroxide از Povidone/Crospovidone یا جایگزینی با HPC / L-HPC؛ Antioxidant؛ Chelating agent در صورت کاتالیز فلزی."),
+    process: bi("Nitrogen blanketing, opaque coat.", "Nitrogen blanketing و روکش Opaque."),
+    monitor: bi("Oxidative degradants, peroxide value of excipient lots.", "محصولات Oxidation و Peroxide value سری‌های ماده جانبی."),
+  },
+  cAmine: {
+    title: bi("Primary / secondary amine", "Primary / Secondary amine"),
+    formula: bi("No reducing sugars (lactose, maltodextrin): mannitol, MCC or DCP.", "عدم استفاده از Reducing sugar (Lactose، Maltodextrin)؛ Mannitol، MCC یا DCP."),
+    process: bi("Low moisture and temperature limit the Maillard reaction.", "رطوبت و دمای پایین Maillard reaction را محدود می‌کند."),
+    monitor: bi("Discolouration (browning), Maillard adducts at stability.", "تغییر رنگ (Browning) و محصولات Maillard در Stability."),
+  },
+  cAcid: {
+    title: bi("Acidic API", "API اسیدی"),
+    formula: bi("Avoid alkaline stearates and alkaline fillers: sodium stearyl fumarate, neutral fillers.", "اجتناب از استئارات‌ها و Filler قلیایی؛ Sodium stearyl fumarate و Filler خنثی."),
+    process: bi("Low moisture limits acid–base reactions in the solid state.", "رطوبت پایین واکنش اسید و باز در حالت جامد را محدود می‌کند."),
+    monitor: bi("Assay and degradants at stability.", "Assay و Degradation products در Stability."),
+  },
+  cCation: {
+    title: bi("Cationic API", "API کاتیونی"),
+    formula: bi("Non-ionic disintegrant (crospovidone, L-HPC) and wetting agent (poloxamer) instead of CCS, SSG, SLS.", "Disintegrant غیریونی (Crospovidone، L-HPC) و Wetting agent غیریونی (Poloxamer) به‌جای CCS، SSG و SLS."),
+    process: bi("—", "—"),
+    monitor: bi("Dissolution (incomplete release from ionic binding).", "Dissolution (رهش ناقص به‌دلیل Ionic binding)."),
+  },
+  cMelt: {
+    title: bi("Low melting point", "Melting point پایین"),
+    formula: bi("Higher lubricant level, adsorbent fillers (MCC, silica).", "Lubricant بیشتر و Filler جاذب (MCC، Silica)."),
+    process: bi("Avoid heat in drying; cooled rolls; lower press speed; anti-stick tooling.", "اجتناب از حرارت در Drying؛ Roll خنک؛ سرعت پرس کمتر؛ Tooling ضدچسبندگی."),
+    monitor: bi("Sticking, picking, hardness drift.", "Sticking، Picking و تغییرات Hardness."),
+  },
+  cBitter: {
+    title: bi("Bitter API", "API تلخ"),
+    formula: bi("Film coat masks taste for swallowed tablets.", "روکش فیلمی برای قرص بلعیدنی Taste masking انجام می‌دهد."),
+    process: bi("Complete coat coverage (weight gain ≥ 3%).", "پوشش کامل روکش (Weight gain ≥ 3%)."),
+    monitor: bi("Coat integrity, taste panel if needed.", "یکپارچگی روکش و در صورت نیاز Taste panel."),
+  },
+  cBitterOral: {
+    title: bi("Bitter API in a chewable / ODT", "API تلخ در Chewable / ODT"),
+    formula: bi("Taste-masked API (polymer-coated particles, ion-exchange resin or cyclodextrin complex) plus sweetener and flavour.", "API با Taste masking (ذرات پوشش‌دار پلیمری، Ion-exchange resin یا کمپلکس Cyclodextrin) به‌همراه Sweetener و Flavour."),
+    process: bi("Low compression force to avoid rupturing coated particles.", "نیروی Compression پایین برای جلوگیری از شکستن ذرات پوشش‌دار."),
+    monitor: bi("Taste, dissolution of the masked API.", "طعم و Dissolution ماده مؤثره Taste-masked."),
+  },
+  cHygro: {
+    title: bi("Hygroscopic API", "API هیگروسکوپیک"),
+    formula: bi("Non-hygroscopic fillers (mannitol, DCP); avoid sorbitol.", "Filler غیرهیگروسکوپیک (Mannitol، DCP)؛ اجتناب از Sorbitol."),
+    process: bi("Low-RH processing; Dry Granulation or Direct Compression.", "فرایند در RH پایین؛ Dry Granulation یا Direct Compression."),
+    monitor: bi("Water uptake, hardness and dissolution on storage.", "جذب رطوبت و تغییر Hardness و Dissolution در نگهداری."),
+  },
+  cHygroCap: {
+    title: bi("Hygroscopic fill in capsules", "مخلوط هیگروسکوپیک در کپسول"),
+    formula: bi("HPMC capsule shells (low water content).", "پوسته کپسول HPMC (رطوبت پایین)."),
+    process: bi("Low-RH filling room.", "اتاق Filling با RH پایین."),
+    monitor: bi("Shell brittleness, water content.", "شکنندگی پوسته و Water content."),
+  },
+  cBig: {
+    title: bi("Large unit ({w} mg)", "واحد بزرگ ({w} میلی‌گرم)"),
+    formula: bi("Raise drug load (efficient excipients) to reduce size.", "افزایش Drug load با مواد جانبی کارآمد برای کاهش اندازه."),
+    process: bi("Caplet tooling, score line.", "Tooling از نوع Caplet و Score line."),
+    monitor: bi("Size not larger than the reference product.", "اندازه نه بزرگ‌تر از فرآورده مرجع."),
+  },
+  cOdt: {
+    title: bi("ODT: speed vs strength", "ODT: سرعت Disintegration در برابر استحکام"),
+    formula: bi("Mannitol (DC grade) and a superdisintegrant at the upper level.", "Mannitol (گرید DC) و Superdisintegrant در حد بالای محدوده."),
+    process: bi("Low compression force; Alu-Alu packaging (low hardness).", "نیروی Compression پایین؛ بسته‌بندی Alu-Alu (Hardness پایین)."),
+    monitor: bi("Disintegration ≤ 3 min, friability.", "Disintegration ≤ 3 دقیقه و Friability."),
+  },
+  cChew: {
+    title: bi("Chewable: mouthfeel and taste", "Chewable: Mouthfeel و طعم"),
+    formula: bi("Mannitol base, sweetener and flavour.", "پایه Mannitol، Sweetener و Flavour."),
+    process: bi("Moderate hardness for chewing.", "Hardness متوسط برای جویدن."),
+    monitor: bi("Hardness, taste, dissolution.", "Hardness، طعم و Dissolution."),
+  },
+};
+
+/** Development, scale-up and packaging notes. */
+export const planNotes: Record<string, Bi> = {
+  dDcFactors: bi("Factors: lubricant level (0.5–1.5%), lubrication time (2–6 min), compression force (3 levels).", "Factors: غلظت Lubricant (0.5 تا 1.5%)، زمان Lubrication (2 تا 6 دقیقه) و نیروی Compression (3 سطح)."),
+  dDcResponses: bi("Responses: Blend Uniformity, weight RSD, hardness, friability, disintegration, dissolution.", "Responses: Blend Uniformity، RSD وزن، Hardness، Friability، Disintegration و Dissolution."),
+  dWgFactors: bi("Factors: binder level, water amount (% of dry mass), wet-massing time, impeller speed.", "Factors: غلظت Binder، مقدار آب (% جرم خشک)، زمان Wet massing و سرعت Impeller."),
+  dWgResponses: bi("Responses: granule PSD and density, LOD, hardness, friability, disintegration, dissolution.", "Responses: PSD و دانسیته گرانول، LOD، Hardness، Friability، Disintegration و Dissolution."),
+  dDgFactors: bi("Factors: roll force, roll gap, mill screen size, intragranular lubricant level.", "Factors: Roll force، Roll gap، اندازه الک Mill و غلظت Lubricant درون‌گرانولی."),
+  dDgResponses: bi("Responses: ribbon solid fraction, granule PSD and fines, hardness, dissolution.", "Responses: Solid fraction نوار، PSD و Fines گرانول، Hardness و Dissolution."),
+  dLube: bi("Confirm lubrication time on the final blend (over-lubrication window).", "تأیید زمان Lubrication روی Final blend (پنجره Over-lubrication)."),
+  dPsd: bi("API particle size (e.g. two d90 levels) against dissolution.", "Particle size ماده مؤثره (مثلاً دو سطح d90) در برابر Dissolution."),
+  dCompat: bi("Drug–excipient compatibility: binary mixtures 1:1 at 40 °C / 75% RH (open and closed) for 2–4 weeks, assay and impurities.", "Drug–excipient compatibility: مخلوط‌های دوتایی 1:1 در 40 °C / 75% RH (باز و بسته) به مدت 2 تا 4 هفته؛ Assay و Impurities."),
+  dStability: bi("Stability of the selected formula: ICH Q1A(R2) accelerated (40 °C / 75% RH) and long-term (zone IVa, 30 °C / 65% RH, for Iran).", "Stability فرمول منتخب: ICH Q1A(R2) تسریع‌شده (40 °C / 75% RH) و بلندمدت (Zone IVa، 30 °C / 65% RH برای ایران)."),
+  uWg: bi("Wet Granulation scale-up: keep water as % of dry mass, scale impeller by tip speed or Froude number, and use power/torque for the end point.", "Scale-up در Wet Granulation: آب به‌صورت % جرم خشک ثابت، Impeller بر اساس Tip speed یا Froude number و End point بر اساس Power/Torque."),
+  uDry: bi("Drying: keep product temperature and the LOD end point, not time.", "Drying: ثابت‌نگه‌داشتن دمای محصول و End point بر اساس LOD، نه زمان."),
+  uDg: bi("Dry Granulation scale-up: roll force per unit width (kN/cm) and ribbon solid fraction transfer between scales.", "Scale-up در Dry Granulation: Roll force بر واحد عرض (kN/cm) و Solid fraction نوار بین مقیاس‌ها قابل انتقال‌اند."),
+  uBlend: bi("Blending: scale by number of revolutions at the same fill volume.", "Blending: Scale-up بر اساس تعداد دور در Fill volume یکسان."),
+  uPress: bi("Compression: match dwell time (punch-head flat and turret speed), not only force.", "Compression: تطبیق Dwell time (Punch head flat و سرعت Turret)، نه فقط نیرو."),
+  uCoat: bi("Coating: scale spray rate by pan load and keep bed temperature and spray-rate/air ratio.", "Coating: Spray rate متناسب با بار پن و ثابت‌ماندن Bed temperature و نسبت Spray rate به جریان هوا."),
+  kMoisture: bi("Moisture protection: Alu-Alu blister, or HDPE bottle with desiccant.", "محافظت از رطوبت: بلیستر Alu-Alu یا بطری HDPE با Desiccant."),
+  kOxygen: bi("Oxygen protection: Alu-Alu blister or bottle with oxygen scavenger, nitrogen flushing.", "محافظت از اکسیژن: بلیستر Alu-Alu یا بطری با Oxygen scavenger و Nitrogen flushing."),
+  kStandard: bi("PVC/PVDC–Alu blister or HDPE bottle, chosen from stability data.", "بلیستر PVC/PVDC–Alu یا بطری HDPE، بر اساس داده‌های Stability."),
+  kStability: bi("Confirm the pack in the stability study (zone IVa).", "تأیید بسته‌بندی در مطالعه Stability (Zone IVa)."),
+};
+
+export const planCopy = {
+  plan: bi("Manufacturing plan", "Manufacturing plan"),
+  purpose: bi("Purpose", "هدف"),
+  equipment: bi("Equipment", "تجهیزات"),
+  params: bi("Parameters", "پارامترها"),
+  tips: bi("Critical points for this product", "نکات بحرانی برای این فرآورده"),
+  challenges: bi("Challenges and strategy", "چالش‌ها و راهبرد"),
+  challenge: bi("Challenge", "چالش"),
+  formula: bi("Formula", "فرمول"),
+  process: bi("Process", "فرایند"),
+  monitor: bi("Monitor", "پایش"),
+  noChallenges: bi("No special challenge selected; the standard route applies.", "چالش خاصی انتخاب نشده است؛ روش استاندارد کافی است."),
+  doe: bi("Development plan (DoE)", "برنامه Development (DoE)"),
+  scaleUp: bi("Scale-up", "Scale-up"),
+  packaging: bi("Packaging", "بسته‌بندی"),
+};

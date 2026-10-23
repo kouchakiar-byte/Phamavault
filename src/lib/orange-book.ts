@@ -42,7 +42,8 @@ function iranFor(ingredient: string): IranProduct[] {
     .map((r) => ({ brand: r[1], company: r[2], form: r[3], strength: r[4] }));
 }
 
-export function searchOrangeBook(query: string, withDiscontinued: boolean): ObResult {
+/** perGroup: products listed per ingredient (the formulation advisor asks for all of them). */
+export function searchOrangeBook(query: string, withDiscontinued: boolean, perGroup = PER_GROUP): ObResult {
   const q = norm(query);
   const base = { updated: orangeBook.updated, iranUpdated: iran.updated, groups: [], total: 0 };
   if (q.length < 3) return base;
@@ -77,7 +78,7 @@ export function searchOrangeBook(query: string, withDiscontinued: boolean): ObRe
     const list = byIngredient.get(ingredient)!.sort(
       (a, b) => Number(b.rld) - Number(a.rld) || a.applType.localeCompare(b.applType) * -1 || a.trade.localeCompare(b.trade),
     );
-    return { ingredient, products: list.slice(0, PER_GROUP), more: Math.max(0, list.length - PER_GROUP), iran: iranFor(ingredient) };
+    return { ingredient, products: list.slice(0, perGroup), more: Math.max(0, list.length - perGroup), iran: iranFor(ingredient) };
   });
   return { ...base, groups, total: names.length };
 }

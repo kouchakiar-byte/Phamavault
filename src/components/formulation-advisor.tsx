@@ -26,16 +26,12 @@ import {
   advisorCatalogue,
   advisorCopy as t,
   capsuleRouteLabels,
-  coatingStep,
-  compressionStep,
   cqaLabels,
-  fillingStep,
   findingText,
   flagLabels,
   formLabels,
   ipcList,
   levelLabels,
-  processSteps,
   processText,
   riskWhy,
   roleLabels,
@@ -43,6 +39,7 @@ import {
   routeNotes,
   specText,
 } from "@/content/formulation-advisor";
+import { challengeText, planCopy as pc, planNotes, planParams, planSteps, planTips } from "@/content/formulation-plan";
 import type { Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { excipientSlug } from "@/lib/excipient-slug";
@@ -63,6 +60,7 @@ import {
   type Role,
   type Route,
 } from "@/lib/formulation-advisor";
+import { buildPlan } from "@/lib/formulation-plan";
 import type { ObResult } from "@/lib/orange-book";
 import { href } from "@/lib/paths";
 import { fixed } from "./calc-format";
@@ -178,6 +176,8 @@ export function FormulationAdvisor({ locale, incompatibilities, apis }: Props) {
   const apiEntry = apis.find((a) => a[0].toLowerCase() === api.trim().toLowerCase());
   const base = apiEntry && baseName(apiEntry[0]) !== apiEntry[0].toLowerCase() ? apis.find((a) => a[0].toLowerCase() === baseName(apiEntry[0])) : undefined;
   const saltHint = apiEntry && base && parseFloat(apiEntry[1]) > 0 && parseFloat(base[1]) > 0 ? { base: base[0], f: (parseFloat(apiEntry[1]) / parseFloat(base[1])).toFixed(4), a: apiEntry[1], b: base[1] } : null;
+  // BCS I / III: highly soluble (narrow liquid window in Wet Granulation).
+  const plan = result ? buildPlan({ ...input, soluble: apiEntry?.[2] === "1" || apiEntry?.[2] === "3" }, result) : null;
 
   function chooseApi(v: string) {
     setApi(v);
@@ -198,19 +198,15 @@ export function FormulationAdvisor({ locale, incompatibilities, apis }: Props) {
     if (list.length) setComponents(list.map(withId));
   }
 
-  async function checkBrand() {
-    const queries = [brand, api].map((x) => x.trim()).filter((x) => x.length >= 3);
-    if (!queries.length) return;
+  /** Orange Book by molecule (generic name) or, without an API, by brand: every brand and generic of the single-ingredient product. */
+  async function findBrands() {
+    const molecule = api.trim();
+    const q = molecule.length >= 3 ? baseName(molecule) || molecule : brand.trim();
+    if (q.length < 3) return;
     setObBusy(true);
     try {
-      // The brand first, then the active ingredient; discontinued brands (often the original RLD) are included.
-      let found: ObResult | null = null;
-      for (const q of queries) {
-        const res = await fetch(`/api/orange-book?q=${encodeURIComponent(q)}&discn=1`);
-        found = (await res.json()) as ObResult;
-        if (found.groups.length) break;
-      }
-      setOb(found);
+      const res = await fetch(`/api/orange-book?q=${encodeURIComponent(q)}&discn=1&all=1`);
+      setOb((await res.json()) as ObResult);
     } catch {
       setOb({ updated: null, iranUpdated: null, groups: [], total: 0 });
     } finally {
@@ -221,11 +217,7 @@ export function FormulationAdvisor({ locale, incompatibilities, apis }: Props) {
   const update = (id: string, patch: Partial<Component>) => setComponents((list) => list.map((c) => (c.id === id ? { ...c, ...patch } : c)));
   const label = (key?: string, name?: string) => (key ? byKey.get(key)?.label : name) ?? name ?? "";
   const chosen = [...new Set(components.map((c) => c.key).filter(Boolean) as string[])];
-  const brandKey = brand.trim().toUpperCase();
-  // Immediate-release reference tablets and capsules, the searched brand first; the Federal Register note is dropped from the strength.
-  const rlds = (ob?.groups.flatMap((g) => g.products.filter((p) => p.rld && /TABLET|CAPSULE/.test(p.form) && !/EXTENDED|DELAYED/.test(p.form)).map((p) => ({ ...p, ingredient: g.ingredient, strength: p.strength.replace(/\s*\*\*.*$/, "") }))) ?? [])
-    .sort((a, b) => Number(!!brandKey && b.trade.includes(brandKey)) - Number(!!brandKey && a.trade.includes(brandKey)))
-    .slice(0, 8);
+  const brands = ob ? obBrands(ob, api, brand, form, s) : null;
   const dailymed = `https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=${encodeURIComponent(brand || api)}`;
   const routeName = (r: Route) => (form === "cap" ? capsuleRouteLabels : routeLabels)[r][locale];
   const apiName = api || t.apiRow[locale];
@@ -365,12 +357,12 @@ export function FormulationAdvisor({ locale, incompatibilities, apis }: Props) {
                 <input id="fa-brand" dir="ltr" className="field-input min-w-0 flex-1" placeholder={t.brandPh[locale]} value={brand} onChange={(e) => setBrand(e.target.value)} />
                 <button
                   type="button"
-                  onClick={checkBrand}
+                  onClick={findBrands}
                   disabled={obBusy}
                   className="inline-flex shrink-0 items-center gap-1.5 rounded-xl bg-molecule-600 px-3 text-sm font-semibold text-white transition hover:bg-molecule-700 disabled:opacity-60"
                 >
                   <Search className="size-4" aria-hidden="true" />
-                  {obBusy ? t.checking[locale] : "Orange Book"}
+                  {obBusy ? t.checking[locale] : t.findBrands[locale]}
                 </button>
               </div>
             </Field>
@@ -378,19 +370,48 @@ export function FormulationAdvisor({ locale, incompatibilities, apis }: Props) {
               <input id="fa-bw" type="number" min="0" step="any" className="field-input" value={brandWeight} onChange={(e) => setBrandWeight(e.target.value)} />
             </Field>
             <p className="text-sm text-muted">{t.brandWeightHint[locale]}</p>
-            {ob && (
+            {brands && (
               <div className="rounded-xl border border-line bg-vault-50 p-4 text-sm">
-                {rlds.length ? (
+                {brands.ingredient ? (
                   <>
-                    <p className="mb-2 font-bold text-vault-900">{t.rld[locale]}</p>
-                    <ul className="space-y-1" dir="ltr">
-                      {rlds.map((p) => (
-                        <li key={`${p.applNo}-${p.strength}-${p.form}`} className="text-start">
-                          <b>{p.trade}</b> · {p.ingredient} · {p.strength} · {p.form} · {p.applicant}
-                          {p.type === "D" && <span className="ms-1 text-xs text-muted">(discontinued)</span>}
+                    <p className="mb-1 font-bold text-vault-900" dir="ltr">
+                      {brands.ingredient}
+                    </p>
+                    <p className="mb-3 text-xs text-muted">{fmt(t.obSummary[locale], { n: brands.nda.length, g: brands.generics.length, f: brands.formLabel })}</p>
+                    <ul className="space-y-2" dir="ltr">
+                      {brands.nda.map((b) => (
+                        <li key={`${b.trade}-${b.applicant}`} className="flex flex-wrap items-center gap-2 rounded-lg bg-white px-3 py-2 ring-1 ring-line">
+                          <b className="text-vault-900">{b.trade}</b>
+                          {b.rld && <span className="rounded bg-capsule-400 px-1.5 text-[10px] font-extrabold text-vault-900">RLD</span>}
+                          {b.rs && <span className="rounded bg-molecule-600 px-1.5 text-[10px] font-extrabold text-white">RS</span>}
+                          {b.discontinued && <span className="text-[11px] text-muted">(discontinued)</span>}
+                          <span className="text-xs text-muted">{b.applicant}</span>
+                          <span className="flex flex-wrap gap-1">
+                            {b.strengths.map((st) => (
+                              <span key={st.label} className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${st.match ? "bg-emerald-600 text-white" : "bg-vault-50 text-vault-900"}`}>
+                                {st.label}
+                              </span>
+                            ))}
+                          </span>
+                          <button type="button" onClick={() => setBrand(titleCase(b.trade))} className="ms-auto rounded-full border border-line px-2.5 py-0.5 text-xs font-bold text-molecule-700 hover:border-molecule-400">
+                            {t.pickBrand[locale]}
+                          </button>
                         </li>
                       ))}
                     </ul>
+                    {brands.generics.length > 0 && (
+                      <>
+                        <p className="mb-1.5 mt-4 text-xs font-bold text-vault-900">{fmt(t.obGenerics[locale], { g: brands.generics.length })}</p>
+                        <p className="flex flex-wrap gap-1.5" dir="ltr">
+                          {brands.generics.slice(0, 18).map((g) => (
+                            <span key={g} className="rounded-full bg-white px-2 py-0.5 text-[11px] text-muted ring-1 ring-line">
+                              {g}
+                            </span>
+                          ))}
+                          {brands.generics.length > 18 && <span className="text-[11px] text-muted">+{brands.generics.length - 18}</span>}
+                        </p>
+                      </>
+                    )}
                   </>
                 ) : (
                   <p>{t.noMatch[locale]}</p>
@@ -733,39 +754,131 @@ export function FormulationAdvisor({ locale, incompatibilities, apis }: Props) {
             </div>
           )}
 
-          {tab === "process" && (
-            <div className="grid gap-6 lg:grid-cols-2">
+          {tab === "process" && plan && (
+            <div className="space-y-6">
               <div className="rounded-2xl border border-line bg-white p-5">
-                <h4 className="mb-3 font-bold text-vault-900">
-                  {t.steps[locale]} — <span dir="ltr">{routeName(result.route)}</span>
+                <h4 className="mb-4 flex flex-wrap items-center gap-2 font-bold text-vault-900">
+                  <Cog className="size-5 text-molecule-600" aria-hidden="true" />
+                  {pc.plan[locale]} — <span dir="ltr">{routeName(result.route)}</span>
                 </h4>
-                <ol className="list-decimal space-y-2 ps-5 text-sm leading-relaxed">
-                  {processSteps[result.route].map((st) => (
-                    <li key={st.en}>{st[locale]}</li>
-                  ))}
-                  <li>{(form === "cap" ? fillingStep : compressionStep)[locale]}</li>
-                  {form === "fc" && <li>{coatingStep[locale]}</li>}
+                <ol className="space-y-4">
+                  {plan.steps.map((st, i) => {
+                    const meta = planSteps[st.code];
+                    return (
+                      <li key={`${st.code}-${i}`} className="relative rounded-2xl border border-line p-4 ps-14">
+                        <span className="absolute start-4 top-4 grid size-8 place-items-center rounded-full bg-vault-900 text-xs font-extrabold text-capsule-400" dir="ltr">
+                          {i + 1}
+                        </span>
+                        <p className="font-bold text-vault-900">{meta.title[locale]}</p>
+                        <p className="mt-1 text-sm leading-relaxed text-ink">{meta.purpose[locale]}</p>
+                        <p className="mt-1 text-xs text-muted">
+                          <b>{pc.equipment[locale]}:</b> {meta.equipment[locale]}
+                        </p>
+                        {st.params.length > 0 && (
+                          <ul className="mt-3 space-y-1.5 text-sm leading-relaxed">
+                            {st.params.map((p, k) => (
+                              <li key={`${p.code}-${k}`} className="flex gap-2">
+                                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-molecule-500" aria-hidden="true" />
+                                {say(planParams, p, locale)}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                        {st.tips.length > 0 && (
+                          <div className="mt-3 rounded-xl bg-capsule-50 p-3">
+                            <p className="mb-1 text-xs font-bold text-capsule-700">{pc.tips[locale]}</p>
+                            <ul className="space-y-1.5 text-sm leading-relaxed">
+                              {st.tips.map((tp, k) => (
+                                <li key={`${tp.code}-${k}`} className="flex gap-2">
+                                  <AlertTriangle className="mt-0.5 size-4 shrink-0 text-capsule-600" aria-hidden="true" />
+                                  {say(planTips, tp, locale)}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ol>
               </div>
-              <div className="space-y-6">
+
+              <div className="rounded-2xl border border-line bg-white p-5">
+                <h4 className="mb-3 font-bold text-vault-900">{pc.challenges[locale]}</h4>
+                {plan.challenges.length ? (
+                  <TableWrap>
+                    <table className="db">
+                      <thead>
+                        <tr>
+                          <th>{pc.challenge[locale]}</th>
+                          <th>{pc.formula[locale]}</th>
+                          <th>{pc.process[locale]}</th>
+                          <th>{pc.monitor[locale]}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {plan.challenges.map((c) => {
+                          const ct = challengeText[c.code];
+                          return (
+                            <tr key={c.code}>
+                              <td className="text-start font-semibold">{fmt(ct.title[locale], c.values)}</td>
+                              <td className="text-start text-sm">{ct.formula[locale]}</td>
+                              <td className="text-start text-sm">{ct.process[locale]}</td>
+                              <td className="text-start text-sm">{ct.monitor[locale]}</td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </TableWrap>
+                ) : (
+                  <p className="text-sm text-muted">{pc.noChallenges[locale]}</p>
+                )}
+              </div>
+
+              <div className="grid gap-6 lg:grid-cols-2">
                 <div className="rounded-2xl border border-line bg-white p-5">
-                  <h4 className="mb-3 font-bold text-vault-900">{t.params[locale]}</h4>
+                  <h4 className="mb-3 font-bold text-vault-900">{pc.doe[locale]}</h4>
                   <ul className="space-y-2 text-sm leading-relaxed">
-                    {result.process.map((p, i) => (
-                      <li key={`${p.code}-${i}`} className="flex gap-2">
+                    {plan.doe.map((d) => (
+                      <li key={d.code} className="flex gap-2">
                         <span className="mt-2 size-1.5 shrink-0 rounded-full bg-capsule-500" aria-hidden="true" />
-                        {say(processText, p, locale)}
+                        {say(planNotes, d, locale)}
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="rounded-2xl border border-line bg-white p-5">
-                  <h4 className="mb-3 font-bold text-vault-900">{t.ipc[locale]}</h4>
-                  <ul className="list-disc space-y-2 ps-5 text-sm leading-relaxed">
-                    {ipcList.map((c) => (
-                      <li key={c.en}>{c[locale]}</li>
-                    ))}
-                  </ul>
+                <div className="space-y-6">
+                  <div className="rounded-2xl border border-line bg-white p-5">
+                    <h4 className="mb-3 font-bold text-vault-900">{pc.scaleUp[locale]}</h4>
+                    <ul className="space-y-2 text-sm leading-relaxed">
+                      {plan.scaleUp.map((d) => (
+                        <li key={d.code} className="flex gap-2">
+                          <span className="mt-2 size-1.5 shrink-0 rounded-full bg-molecule-500" aria-hidden="true" />
+                          {say(planNotes, d, locale)}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="rounded-2xl border border-line bg-white p-5">
+                    <h4 className="mb-3 font-bold text-vault-900">{pc.packaging[locale]}</h4>
+                    <ul className="space-y-2 text-sm leading-relaxed">
+                      {plan.packaging.map((d) => (
+                        <li key={d.code} className="flex gap-2">
+                          <span className="mt-2 size-1.5 shrink-0 rounded-full bg-molecule-500" aria-hidden="true" />
+                          {say(planNotes, d, locale)}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="rounded-2xl border border-line bg-white p-5">
+                    <h4 className="mb-3 font-bold text-vault-900">{t.ipc[locale]}</h4>
+                    <ul className="list-disc space-y-2 ps-5 text-sm leading-relaxed">
+                      {ipcList.map((c) => (
+                        <li key={c.en}>{c[locale]}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -893,6 +1006,71 @@ export function FormulationAdvisor({ locale, incompatibilities, apis }: Props) {
       )}
     </div>
   );
+}
+
+/* Orange Book brands of one molecule ---------------------------------- */
+
+const SALT_ALIAS: [RegExp, string][] = [
+  [/BESILATE/g, "BESYLATE"],
+  [/MESILATE/g, "MESYLATE"],
+  [/TOSILATE/g, "TOSYLATE"],
+  [/SULPHATE/g, "SULFATE"],
+];
+const obNorm = (x: string) => SALT_ALIAS.reduce((v, [re, to]) => v.replace(re, to), x.toUpperCase()).replace(/[^A-Z0-9]+/g, " ").trim();
+const titleCase = (x: string) => x.toLowerCase().replace(/\b[a-z]/g, (c) => c.toUpperCase());
+
+/** Orange Book dosage-form text for the advisor's forms (immediate release only). */
+const OB_FORM: Record<DosageForm, { re: RegExp; label: string }> = {
+  ir: { re: /^TABLET(, FILM COATED)?;ORAL$/, label: "TABLET;ORAL" },
+  fc: { re: /^TABLET(, FILM COATED)?;ORAL$/, label: "TABLET;ORAL" },
+  chew: { re: /CHEWABLE/, label: "TABLET, CHEWABLE" },
+  odt: { re: /ORALLY DISINTEGRATING/, label: "TABLET, ORALLY DISINTEGRATING" },
+  cap: { re: /^CAPSULE;ORAL$/, label: "CAPSULE;ORAL" },
+};
+
+type ObBrand = { trade: string; applicant: string; rld: boolean; rs: boolean; discontinued: boolean; strengths: { label: string; match: boolean }[] };
+
+/**
+ * The single-ingredient product that matches the molecule (exact name first,
+ * then the base name), restricted to the dosage form: NDA brands with their
+ * strengths (the entered strength highlighted) and the ANDA generic holders.
+ */
+function obBrands(ob: ObResult, api: string, brand: string, form: DosageForm, strength: number) {
+  const single = ob.groups.filter((g) => !g.ingredient.includes(";"));
+  const want = obNorm(api);
+  const base = obNorm(baseName(api));
+  const trade = obNorm(brand);
+  const group =
+    single.find((g) => api && obNorm(g.ingredient) === want) ??
+    single.find((g) => api && base && obNorm(g.ingredient).startsWith(base)) ??
+    single.find((g) => trade && g.products.some((p) => obNorm(p.trade) === trade)) ??
+    single[0];
+  const { re, label } = OB_FORM[form];
+  const empty = { ingredient: "", nda: [] as ObBrand[], generics: [] as string[], formLabel: label };
+  if (!group) return empty;
+  let products = group.products.filter((p) => re.test(p.form));
+  if (!products.length) products = group.products.filter((p) => !/EXTENDED|DELAYED|INJECT|SOLUTION|SUSPENSION/.test(p.form));
+  const mg = (x: string) => parseFloat((x.match(/([\d.]+)\s*MG/) ?? [])[1] ?? "NaN");
+  const nda = new Map<string, ObBrand>();
+  const generics = new Set<string>();
+  for (const p of products) {
+    if (p.applType === "A") {
+      generics.add(titleCase(p.applicant));
+      continue;
+    }
+    const k = `${p.trade}|${p.applicant}`;
+    const b = nda.get(k) ?? { trade: p.trade, applicant: titleCase(p.applicant), rld: false, rs: false, discontinued: true, strengths: [] };
+    b.rld ||= p.rld;
+    b.rs ||= p.rs;
+    if (p.type !== "D") b.discontinued = false;
+    const st = p.strength.replace(/\s*\*\*.*$/, "");
+    if (!b.strengths.some((x) => x.label === st)) b.strengths.push({ label: st, match: strength > 0 && Math.abs(mg(st) - strength) < 1e-6 });
+    nda.set(k, b);
+  }
+  const list = [...nda.values()].sort(
+    (a, b) => Number(b.trade === trade || obNorm(b.trade) === trade) - Number(obNorm(a.trade) === trade) || Number(b.rld) - Number(a.rld) || Number(a.discontinued) - Number(b.discontinued) || a.trade.localeCompare(b.trade),
+  );
+  return { ingredient: group.ingredient, nda: list.slice(0, 10), generics: [...generics].sort(), formLabel: label };
 }
 
 function Findings({ result, locale }: { result: NonNullable<ReturnType<typeof advise>>; locale: Locale }) {
