@@ -2,141 +2,785 @@
  "ctd": [
   {
    "title": {
-    "en": "Module 1: Regional administrative information",
-    "fa": "ماژول 1: اطلاعات اداری منطقه‌ای"
+    "en": "Module 1: Administrative Information and Prescribing Information",
+    "fa": "ماژول 1: اطلاعات اداری و اطلاعات تجویز"
+   },
+   "note": {
+    "en": "Regional module: content and format are set by each authority (in Iran, the IFDA).",
+    "fa": "ماژول منطقه‌ای: محتوا و قالب آن را هر مرجع تعیین می‌کند (در ایران، سازمان غذا و دارو)."
    },
    "items": [
     {
-     "en": "Application forms, labelling and regional documents; not part of the common CTD",
-     "fa": "فرم‌های درخواست، برچسب‌گذاری و مدارک منطقه‌ای؛ بخشی از CTD مشترک نیست"
+     "code": "1.1",
+     "en": "Table of Contents of the Submission Including Module 1",
+     "fa": "فهرست مندرجات کل پرونده شامل ماژول 1"
+    },
+    {
+     "code": "1.2",
+     "en": "Documents Specific to Each Region",
+     "fa": "مدارک اختصاصی هر منطقه (مانند فرم درخواست و اطلاعات تجویز)"
     }
    ]
   },
   {
    "title": {
-    "en": "Module 2: Summaries",
-    "fa": "ماژول 2: خلاصه‌ها"
+    "en": "Module 2: Common Technical Document Summaries",
+    "fa": "ماژول 2: خلاصه‌های CTD"
    },
    "items": [
     {
-     "en": "2.3 Quality overall summary",
-     "fa": "2.3 خلاصه کلی کیفیت"
+     "code": "2.1",
+     "en": "CTD Table of Contents (Modules 2–5)",
+     "fa": "فهرست مندرجات ماژول‌های 2 تا 5"
     },
     {
-     "en": "2.4 Nonclinical overview",
-     "fa": "2.4 مرور غیربالینی"
+     "code": "2.2",
+     "en": "CTD Introduction",
+     "fa": "مقدمه CTD"
     },
     {
-     "en": "2.5 Clinical overview",
-     "fa": "2.5 مرور بالینی"
+     "code": "2.3",
+     "en": "Quality Overall Summary (QOS)",
+     "fa": "خلاصه کلی کیفیت",
+     "sub": [
+      {
+       "code": "2.3.S",
+       "en": "Drug Substance",
+       "fa": "ماده مؤثره"
+      },
+      {
+       "code": "2.3.P",
+       "en": "Drug Product",
+       "fa": "فرآورده دارویی"
+      },
+      {
+       "code": "2.3.A",
+       "en": "Appendices",
+       "fa": "پیوست‌ها"
+      },
+      {
+       "code": "2.3.R",
+       "en": "Regional Information",
+       "fa": "اطلاعات منطقه‌ای"
+      }
+     ]
     },
     {
-     "en": "2.6 Nonclinical summaries",
-     "fa": "2.6 خلاصه‌های غیربالینی"
+     "code": "2.4",
+     "en": "Nonclinical Overview",
+     "fa": "مرور غیربالینی"
     },
     {
-     "en": "2.7 Clinical summary",
-     "fa": "2.7 خلاصه بالینی"
+     "code": "2.5",
+     "en": "Clinical Overview",
+     "fa": "مرور بالینی"
+    },
+    {
+     "code": "2.6",
+     "en": "Nonclinical Written and Tabulated Summaries",
+     "fa": "خلاصه‌های نوشتاری و جدولی غیربالینی",
+     "sub": [
+      {
+       "code": "2.6.1",
+       "en": "Introduction",
+       "fa": "مقدمه"
+      },
+      {
+       "code": "2.6.2",
+       "en": "Pharmacology Written Summary",
+       "fa": "خلاصه نوشتاری فارماکولوژی"
+      },
+      {
+       "code": "2.6.3",
+       "en": "Pharmacology Tabulated Summary",
+       "fa": "خلاصه جدولی فارماکولوژی"
+      },
+      {
+       "code": "2.6.4",
+       "en": "Pharmacokinetics Written Summary",
+       "fa": "خلاصه نوشتاری فارماکوکینتیک"
+      },
+      {
+       "code": "2.6.5",
+       "en": "Pharmacokinetics Tabulated Summary",
+       "fa": "خلاصه جدولی فارماکوکینتیک"
+      },
+      {
+       "code": "2.6.6",
+       "en": "Toxicology Written Summary",
+       "fa": "خلاصه نوشتاری سم‌شناسی"
+      },
+      {
+       "code": "2.6.7",
+       "en": "Toxicology Tabulated Summary",
+       "fa": "خلاصه جدولی سم‌شناسی"
+      }
+     ]
+    },
+    {
+     "code": "2.7",
+     "en": "Clinical Summary",
+     "fa": "خلاصه بالینی",
+     "sub": [
+      {
+       "code": "2.7.1",
+       "en": "Summary of Biopharmaceutic Studies and Associated Analytical Methods",
+       "fa": "خلاصه مطالعات بیوفارماسی و روش‌های آنالیز مربوط"
+      },
+      {
+       "code": "2.7.2",
+       "en": "Summary of Clinical Pharmacology Studies",
+       "fa": "خلاصه مطالعات فارماکولوژی بالینی"
+      },
+      {
+       "code": "2.7.3",
+       "en": "Summary of Clinical Efficacy",
+       "fa": "خلاصه اثربخشی بالینی"
+      },
+      {
+       "code": "2.7.4",
+       "en": "Summary of Clinical Safety",
+       "fa": "خلاصه ایمنی بالینی"
+      },
+      {
+       "code": "2.7.5",
+       "en": "Literature References",
+       "fa": "منابع"
+      },
+      {
+       "code": "2.7.6",
+       "en": "Synopses of Individual Studies",
+       "fa": "خلاصه تک‌تک مطالعات"
+      }
+     ]
     }
    ]
   },
   {
    "title": {
-    "en": "Module 3: Quality, drug substance (3.2.S)",
-    "fa": "ماژول 3: کیفیت، ماده مؤثره (3.2.S)"
+    "en": "Module 3: Quality — structure",
+    "fa": "ماژول 3: کیفیت — ساختار کلی"
    },
    "items": [
     {
-     "en": "S.1 General information",
-     "fa": "S.1 اطلاعات عمومی"
+     "code": "3.1",
+     "en": "Table of Contents of Module 3",
+     "fa": "فهرست مندرجات ماژول 3"
     },
     {
-     "en": "S.2 Manufacture",
-     "fa": "S.2 ساخت"
+     "code": "3.2",
+     "en": "Body of Data",
+     "fa": "بدنه داده‌ها",
+     "sub": [
+      {
+       "code": "3.2.S",
+       "en": "Drug Substance",
+       "fa": "ماده مؤثره"
+      },
+      {
+       "code": "3.2.P",
+       "en": "Drug Product",
+       "fa": "فرآورده دارویی"
+      },
+      {
+       "code": "3.2.A",
+       "en": "Appendices",
+       "fa": "پیوست‌ها",
+       "sub": [
+        {
+         "code": "3.2.A.1",
+         "en": "Facilities and Equipment",
+         "fa": "تأسیسات و تجهیزات"
+        },
+        {
+         "code": "3.2.A.2",
+         "en": "Adventitious Agents Safety Evaluation",
+         "fa": "ارزیابی ایمنی عوامل ناخواسته (Adventitious agents)"
+        },
+        {
+         "code": "3.2.A.3",
+         "en": "Novel Excipients",
+         "fa": "مواد جانبی جدید"
+        }
+       ]
+      },
+      {
+       "code": "3.2.R",
+       "en": "Regional Information",
+       "fa": "اطلاعات منطقه‌ای"
+      }
+     ]
     },
     {
-     "en": "S.3 Characterisation",
-     "fa": "S.3 شناسایی و تعیین ویژگی‌ها"
-    },
-    {
-     "en": "S.4 Control of drug substance",
-     "fa": "S.4 کنترل ماده مؤثره"
-    },
-    {
-     "en": "S.5 Reference standards",
-     "fa": "S.5 استانداردهای مرجع"
-    },
-    {
-     "en": "S.6 Container closure system",
-     "fa": "S.6 سیستم بسته‌بندی"
-    },
-    {
-     "en": "S.7 Stability",
-     "fa": "S.7 پایداری"
+     "code": "3.3",
+     "en": "Literature References",
+     "fa": "منابع"
     }
    ]
   },
   {
    "title": {
-    "en": "Module 3: Quality, drug product (3.2.P)",
-    "fa": "ماژول 3: کیفیت، فرآورده دارویی (3.2.P)"
+    "en": "Module 3: 3.2.S Drug Substance",
+    "fa": "ماژول 3: ⁦3.2.S⁩ ماده مؤثره"
    },
    "items": [
     {
-     "en": "P.1 Description and composition",
-     "fa": "P.1 شرح و ترکیب"
+     "code": "3.2.S.1",
+     "en": "General Information",
+     "fa": "اطلاعات عمومی",
+     "sub": [
+      {
+       "code": "3.2.S.1.1",
+       "en": "Nomenclature",
+       "fa": "نام‌گذاری"
+      },
+      {
+       "code": "3.2.S.1.2",
+       "en": "Structure",
+       "fa": "ساختار"
+      },
+      {
+       "code": "3.2.S.1.3",
+       "en": "General Properties",
+       "fa": "ویژگی‌های عمومی"
+      }
+     ]
     },
     {
-     "en": "P.2 Pharmaceutical development",
-     "fa": "P.2 توسعه دارویی"
+     "code": "3.2.S.2",
+     "en": "Manufacture",
+     "fa": "ساخت",
+     "sub": [
+      {
+       "code": "3.2.S.2.1",
+       "en": "Manufacturer(s)",
+       "fa": "سازنده(ها)"
+      },
+      {
+       "code": "3.2.S.2.2",
+       "en": "Description of Manufacturing Process and Process Controls",
+       "fa": "شرح فرایند ساخت و کنترل‌های فرایند"
+      },
+      {
+       "code": "3.2.S.2.3",
+       "en": "Control of Materials",
+       "fa": "کنترل مواد"
+      },
+      {
+       "code": "3.2.S.2.4",
+       "en": "Controls of Critical Steps and Intermediates",
+       "fa": "کنترل مراحل بحرانی و حدواسط‌ها"
+      },
+      {
+       "code": "3.2.S.2.5",
+       "en": "Process Validation and/or Evaluation",
+       "fa": "اعتبارسنجی و/یا ارزیابی فرایند"
+      },
+      {
+       "code": "3.2.S.2.6",
+       "en": "Manufacturing Process Development",
+       "fa": "توسعه فرایند ساخت"
+      }
+     ]
     },
     {
-     "en": "P.3 Manufacture",
-     "fa": "P.3 ساخت"
+     "code": "3.2.S.3",
+     "en": "Characterisation",
+     "fa": "تعیین ویژگی‌ها",
+     "sub": [
+      {
+       "code": "3.2.S.3.1",
+       "en": "Elucidation of Structure and other Characteristics",
+       "fa": "تعیین ساختار و سایر ویژگی‌ها"
+      },
+      {
+       "code": "3.2.S.3.2",
+       "en": "Impurities",
+       "fa": "ناخالصی‌ها"
+      }
+     ]
     },
     {
-     "en": "P.4 Control of excipients",
-     "fa": "P.4 کنترل مواد جانبی"
+     "code": "3.2.S.4",
+     "en": "Control of Drug Substance",
+     "fa": "کنترل ماده مؤثره",
+     "sub": [
+      {
+       "code": "3.2.S.4.1",
+       "en": "Specification",
+       "fa": "مشخصات (Specification)"
+      },
+      {
+       "code": "3.2.S.4.2",
+       "en": "Analytical Procedures",
+       "fa": "روش‌های آنالیز"
+      },
+      {
+       "code": "3.2.S.4.3",
+       "en": "Validation of Analytical Procedures",
+       "fa": "اعتبارسنجی روش‌های آنالیز"
+      },
+      {
+       "code": "3.2.S.4.4",
+       "en": "Batch Analyses",
+       "fa": "آنالیز بچ‌ها"
+      },
+      {
+       "code": "3.2.S.4.5",
+       "en": "Justification of Specification",
+       "fa": "توجیه مشخصات"
+      }
+     ]
     },
     {
-     "en": "P.5 Control of drug product",
-     "fa": "P.5 کنترل فرآورده"
+     "code": "3.2.S.5",
+     "en": "Reference Standards or Materials",
+     "fa": "استانداردها یا مواد مرجع"
     },
     {
-     "en": "P.6 Reference standards",
-     "fa": "P.6 استانداردهای مرجع"
+     "code": "3.2.S.6",
+     "en": "Container Closure System",
+     "fa": "سیستم بسته‌بندی (Container closure)"
     },
     {
-     "en": "P.7 Container closure system",
-     "fa": "P.7 سیستم بسته‌بندی"
-    },
-    {
-     "en": "P.8 Stability",
-     "fa": "P.8 پایداری"
+     "code": "3.2.S.7",
+     "en": "Stability",
+     "fa": "پایداری",
+     "sub": [
+      {
+       "code": "3.2.S.7.1",
+       "en": "Stability Summary and Conclusions",
+       "fa": "خلاصه و نتیجه‌گیری پایداری"
+      },
+      {
+       "code": "3.2.S.7.2",
+       "en": "Post-approval Stability Protocol and Stability Commitment",
+       "fa": "پروتکل پایداری پس از تأیید و تعهد پایداری"
+      },
+      {
+       "code": "3.2.S.7.3",
+       "en": "Stability Data",
+       "fa": "داده‌های پایداری"
+      }
+     ]
     }
    ]
   },
   {
    "title": {
-    "en": "Module 4: Nonclinical study reports",
+    "en": "Module 3: 3.2.P Drug Product",
+    "fa": "ماژول 3: ⁦3.2.P⁩ فرآورده دارویی"
+   },
+   "items": [
+    {
+     "code": "3.2.P.1",
+     "en": "Description and Composition of the Drug Product",
+     "fa": "شرح و ترکیب فرآورده دارویی"
+    },
+    {
+     "code": "3.2.P.2",
+     "en": "Pharmaceutical Development",
+     "fa": "توسعه دارویی",
+     "sub": [
+      {
+       "code": "3.2.P.2.1",
+       "en": "Components of the Drug Product",
+       "fa": "اجزای فرآورده دارویی",
+       "sub": [
+        {
+         "code": "3.2.P.2.1.1",
+         "en": "Drug Substance",
+         "fa": "ماده مؤثره"
+        },
+        {
+         "code": "3.2.P.2.1.2",
+         "en": "Excipients",
+         "fa": "مواد جانبی"
+        }
+       ]
+      },
+      {
+       "code": "3.2.P.2.2",
+       "en": "Drug Product",
+       "fa": "فرآورده دارویی",
+       "sub": [
+        {
+         "code": "3.2.P.2.2.1",
+         "en": "Formulation Development",
+         "fa": "توسعه فرمولاسیون"
+        },
+        {
+         "code": "3.2.P.2.2.2",
+         "en": "Overages",
+         "fa": "مقادیر اضافی (Overages)"
+        },
+        {
+         "code": "3.2.P.2.2.3",
+         "en": "Physicochemical and Biological Properties",
+         "fa": "ویژگی‌های فیزیکوشیمیایی و بیولوژیک"
+        }
+       ]
+      },
+      {
+       "code": "3.2.P.2.3",
+       "en": "Manufacturing Process Development",
+       "fa": "توسعه فرایند ساخت"
+      },
+      {
+       "code": "3.2.P.2.4",
+       "en": "Container Closure System",
+       "fa": "سیستم بسته‌بندی"
+      },
+      {
+       "code": "3.2.P.2.5",
+       "en": "Microbiological Attributes",
+       "fa": "ویژگی‌های میکروبی"
+      },
+      {
+       "code": "3.2.P.2.6",
+       "en": "Compatibility",
+       "fa": "سازگاری"
+      }
+     ]
+    },
+    {
+     "code": "3.2.P.3",
+     "en": "Manufacture",
+     "fa": "ساخت",
+     "sub": [
+      {
+       "code": "3.2.P.3.1",
+       "en": "Manufacturer(s)",
+       "fa": "سازنده(ها)"
+      },
+      {
+       "code": "3.2.P.3.2",
+       "en": "Batch Formula",
+       "fa": "فرمول بچ"
+      },
+      {
+       "code": "3.2.P.3.3",
+       "en": "Description of Manufacturing Process and Process Controls",
+       "fa": "شرح فرایند ساخت و کنترل‌های فرایند"
+      },
+      {
+       "code": "3.2.P.3.4",
+       "en": "Controls of Critical Steps and Intermediates",
+       "fa": "کنترل مراحل بحرانی و حدواسط‌ها"
+      },
+      {
+       "code": "3.2.P.3.5",
+       "en": "Process Validation and/or Evaluation",
+       "fa": "اعتبارسنجی و/یا ارزیابی فرایند"
+      }
+     ]
+    },
+    {
+     "code": "3.2.P.4",
+     "en": "Control of Excipients",
+     "fa": "کنترل مواد جانبی",
+     "sub": [
+      {
+       "code": "3.2.P.4.1",
+       "en": "Specifications",
+       "fa": "مشخصات"
+      },
+      {
+       "code": "3.2.P.4.2",
+       "en": "Analytical Procedures",
+       "fa": "روش‌های آنالیز"
+      },
+      {
+       "code": "3.2.P.4.3",
+       "en": "Validation of Analytical Procedures",
+       "fa": "اعتبارسنجی روش‌های آنالیز"
+      },
+      {
+       "code": "3.2.P.4.4",
+       "en": "Justification of Specifications",
+       "fa": "توجیه مشخصات"
+      },
+      {
+       "code": "3.2.P.4.5",
+       "en": "Excipients of Human or Animal Origin",
+       "fa": "مواد جانبی با منشأ انسانی یا حیوانی"
+      },
+      {
+       "code": "3.2.P.4.6",
+       "en": "Novel Excipients",
+       "fa": "مواد جانبی جدید"
+      }
+     ]
+    },
+    {
+     "code": "3.2.P.5",
+     "en": "Control of Drug Product",
+     "fa": "کنترل فرآورده دارویی",
+     "sub": [
+      {
+       "code": "3.2.P.5.1",
+       "en": "Specification(s)",
+       "fa": "مشخصات"
+      },
+      {
+       "code": "3.2.P.5.2",
+       "en": "Analytical Procedures",
+       "fa": "روش‌های آنالیز"
+      },
+      {
+       "code": "3.2.P.5.3",
+       "en": "Validation of Analytical Procedures",
+       "fa": "اعتبارسنجی روش‌های آنالیز"
+      },
+      {
+       "code": "3.2.P.5.4",
+       "en": "Batch Analyses",
+       "fa": "آنالیز بچ‌ها"
+      },
+      {
+       "code": "3.2.P.5.5",
+       "en": "Characterisation of Impurities",
+       "fa": "تعیین ویژگی ناخالصی‌ها"
+      },
+      {
+       "code": "3.2.P.5.6",
+       "en": "Justification of Specification(s)",
+       "fa": "توجیه مشخصات"
+      }
+     ]
+    },
+    {
+     "code": "3.2.P.6",
+     "en": "Reference Standards or Materials",
+     "fa": "استانداردها یا مواد مرجع"
+    },
+    {
+     "code": "3.2.P.7",
+     "en": "Container Closure System",
+     "fa": "سیستم بسته‌بندی (Container closure)"
+    },
+    {
+     "code": "3.2.P.8",
+     "en": "Stability",
+     "fa": "پایداری",
+     "sub": [
+      {
+       "code": "3.2.P.8.1",
+       "en": "Stability Summary and Conclusion",
+       "fa": "خلاصه و نتیجه‌گیری پایداری"
+      },
+      {
+       "code": "3.2.P.8.2",
+       "en": "Post-approval Stability Protocol and Stability Commitment",
+       "fa": "پروتکل پایداری پس از تأیید و تعهد پایداری"
+      },
+      {
+       "code": "3.2.P.8.3",
+       "en": "Stability Data",
+       "fa": "داده‌های پایداری"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": {
+    "en": "Module 4: Nonclinical Study Reports",
     "fa": "ماژول 4: گزارش‌های مطالعات غیربالینی"
    },
    "items": [
     {
-     "en": "Pharmacology, pharmacokinetics and toxicology reports",
-     "fa": "گزارش‌های فارماکولوژی، فارماکوکینتیک و سم‌شناسی"
+     "code": "4.1",
+     "en": "Table of Contents of Module 4",
+     "fa": "فهرست مندرجات ماژول 4"
+    },
+    {
+     "code": "4.2",
+     "en": "Study Reports",
+     "fa": "گزارش‌های مطالعات",
+     "sub": [
+      {
+       "code": "4.2.1",
+       "en": "Pharmacology",
+       "fa": "فارماکولوژی",
+       "sub": [
+        {
+         "code": "4.2.1.1",
+         "en": "Primary Pharmacodynamics",
+         "fa": "فارماکودینامیک اولیه"
+        },
+        {
+         "code": "4.2.1.2",
+         "en": "Secondary Pharmacodynamics",
+         "fa": "فارماکودینامیک ثانویه"
+        },
+        {
+         "code": "4.2.1.3",
+         "en": "Safety Pharmacology",
+         "fa": "فارماکولوژی ایمنی"
+        },
+        {
+         "code": "4.2.1.4",
+         "en": "Pharmacodynamic Drug Interactions",
+         "fa": "تداخلات فارماکودینامیک"
+        }
+       ]
+      },
+      {
+       "code": "4.2.2",
+       "en": "Pharmacokinetics",
+       "fa": "فارماکوکینتیک",
+       "sub": [
+        {
+         "code": "4.2.2.1",
+         "en": "Analytical Methods and Validation Reports",
+         "fa": "روش‌های آنالیز و گزارش‌های اعتبارسنجی"
+        },
+        {
+         "code": "4.2.2.2",
+         "en": "Absorption",
+         "fa": "جذب"
+        },
+        {
+         "code": "4.2.2.3",
+         "en": "Distribution",
+         "fa": "توزیع"
+        },
+        {
+         "code": "4.2.2.4",
+         "en": "Metabolism",
+         "fa": "متابولیسم"
+        },
+        {
+         "code": "4.2.2.5",
+         "en": "Excretion",
+         "fa": "دفع"
+        },
+        {
+         "code": "4.2.2.6",
+         "en": "Pharmacokinetic Drug Interactions (nonclinical)",
+         "fa": "تداخلات فارماکوکینتیک (غیربالینی)"
+        },
+        {
+         "code": "4.2.2.7",
+         "en": "Other Pharmacokinetic Studies",
+         "fa": "سایر مطالعات فارماکوکینتیک"
+        }
+       ]
+      },
+      {
+       "code": "4.2.3",
+       "en": "Toxicology",
+       "fa": "سم‌شناسی",
+       "sub": [
+        {
+         "code": "4.2.3.1",
+         "en": "Single-Dose Toxicity",
+         "fa": "سمیت تک‌دوز"
+        },
+        {
+         "code": "4.2.3.2",
+         "en": "Repeat-Dose Toxicity",
+         "fa": "سمیت دوز مکرر"
+        },
+        {
+         "code": "4.2.3.3",
+         "en": "Genotoxicity",
+         "fa": "سمیت ژنتیکی"
+        },
+        {
+         "code": "4.2.3.4",
+         "en": "Carcinogenicity",
+         "fa": "سرطان‌زایی"
+        },
+        {
+         "code": "4.2.3.5",
+         "en": "Reproductive and Developmental Toxicity",
+         "fa": "سمیت تولیدمثلی و تکاملی"
+        },
+        {
+         "code": "4.2.3.6",
+         "en": "Local Tolerance",
+         "fa": "تحمل موضعی"
+        },
+        {
+         "code": "4.2.3.7",
+         "en": "Other Toxicity Studies",
+         "fa": "سایر مطالعات سمیت"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "4.3",
+     "en": "Literature References",
+     "fa": "منابع"
     }
    ]
   },
   {
    "title": {
-    "en": "Module 5: Clinical study reports",
+    "en": "Module 5: Clinical Study Reports",
     "fa": "ماژول 5: گزارش‌های مطالعات بالینی"
    },
    "items": [
     {
-     "en": "Biopharmaceutic, pharmacokinetic, efficacy and safety study reports",
-     "fa": "گزارش‌های مطالعات بیوفارماسی، فارماکوکینتیک، اثربخشی و ایمنی"
+     "code": "5.1",
+     "en": "Table of Contents of Module 5",
+     "fa": "فهرست مندرجات ماژول 5"
+    },
+    {
+     "code": "5.2",
+     "en": "Tabular Listing of All Clinical Studies",
+     "fa": "فهرست جدولی همه مطالعات بالینی"
+    },
+    {
+     "code": "5.3",
+     "en": "Clinical Study Reports",
+     "fa": "گزارش‌های مطالعات بالینی",
+     "sub": [
+      {
+       "code": "5.3.1",
+       "en": "Reports of Biopharmaceutic Studies",
+       "fa": "گزارش‌های مطالعات بیوفارماسی (شامل BA و BE)"
+      },
+      {
+       "code": "5.3.2",
+       "en": "Reports of Studies Pertinent to Pharmacokinetics using Human Biomaterials",
+       "fa": "گزارش‌های مطالعات فارماکوکینتیک با Biomaterial انسانی"
+      },
+      {
+       "code": "5.3.3",
+       "en": "Reports of Human Pharmacokinetic (PK) Studies",
+       "fa": "گزارش‌های مطالعات فارماکوکینتیک انسانی (PK)"
+      },
+      {
+       "code": "5.3.4",
+       "en": "Reports of Human Pharmacodynamic (PD) Studies",
+       "fa": "گزارش‌های مطالعات فارماکودینامیک انسانی (PD)"
+      },
+      {
+       "code": "5.3.5",
+       "en": "Reports of Efficacy and Safety Studies",
+       "fa": "گزارش‌های مطالعات اثربخشی و ایمنی"
+      },
+      {
+       "code": "5.3.6",
+       "en": "Reports of Post-Marketing Experience",
+       "fa": "گزارش‌های تجربه پس از عرضه"
+      },
+      {
+       "code": "5.3.7",
+       "en": "Case Report Forms and Individual Patient Listings",
+       "fa": "فرم‌های گزارش مورد (CRF) و فهرست تک‌تک بیماران"
+      }
+     ]
+    },
+    {
+     "code": "5.4",
+     "en": "Literature References",
+     "fa": "منابع"
     }
    ]
   }

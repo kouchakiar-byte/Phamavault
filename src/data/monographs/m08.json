@@ -64,7 +64,7 @@
     },
     "v": {
      "en": "the sucrose fraction dissolves readily in water, while the starch fraction is insoluble, so the cores soften and partly disintegrate in water",
-     "fa": "بخش ساکارز به‌راحتی در آب حل می‌شود ولی بخش نشاسته نامحلول است؛ بنابراین هسته‌ها در آب نرم می‌شوند و باززایی نسبی آن‌ها رخ می‌دهد"
+     "fa": "بخش ساکارز به‌راحتی در آب حل می‌شود ولی بخش نشاسته نامحلول است؛ بنابراین هسته‌ها در آب نرم می‌شوند و Disintegration نسبی آن‌ها رخ می‌دهد"
     }
    },
    {
@@ -130,7 +130,7 @@
   "mw": "342.30 (sucrose)",
   "applications": {
    "en": "Used as a directly compressible filler and binder, mainly in chewable tablets and lozenges where its sweetness and pleasant mouthfeel are an advantage. It is typically used at about 20–60% w/w as a diluent and at lower levels as a dry binder, and it also acts as a sweetening agent.",
-   "fa": "به عنوان پرکننده و چسباننده قابل پرس مستقیم، عمدتاً در قرص‌های جویدنی و لوزنج‌ها به کار می‌رود که شیرینی و حس دهانی مطلوب آن مزیت است. معمولاً حدود 20–60% وزنی به عنوان رقیق‌کننده و در مقادیر کمتر به عنوان چسباننده خشک مصرف می‌شود و نقش شیرین‌کننده نیز دارد."
+   "fa": "به عنوان پرکننده و چسباننده قابل پرس مستقیم، عمدتاً در قرص‌های جویدنی و لوزنج‌ها به کار می‌رود که شیرینی و حس دهانی مطلوب آن مزیت است. معمولاً حدود 20–60% وزنی به عنوان Diluent و در مقادیر کمتر به عنوان چسباننده خشک مصرف می‌شود و نقش شیرین‌کننده نیز دارد."
   },
   "description": {
    "en": "White, odourless, crystalline or granular powder with a sweet taste. The co-processed agglomerates are more porous than ordinary sugar crystals, which gives better flow and compactibility.",
@@ -476,7 +476,7 @@
   "mw": "379.27",
   "applications": {
    "en": "Used in oral solid dosage forms as a glidant and lubricant (about 1–10% w/w) and as a diluent (about 5–30% w/w), and as an anti-tacking agent in film and sugar coating. It is also used as a dusting powder (90–99%), in cosmetics and in foods.",
-   "fa": "در اشکال دارویی جامد خوراکی به عنوان تسهیل‌کننده جریان (Glidant) و روان‌کننده (Lubricant) با غلظت حدود 1–10% وزنی و رقیق‌کننده (حدود 5–30% وزنی)، و به عنوان ضدچسبندگی در پوشش فیلمی و قندی مصرف می‌شود. به عنوان پودر پاشیدنی (90–99%)، در صنایع آرایشی و در غذا نیز به کار می‌رود."
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان Glidant و روان‌کننده (Lubricant) با غلظت حدود 1–10% وزنی و Diluent (حدود 5–30% وزنی)، و به عنوان ضدچسبندگی در پوشش فیلمی و قندی مصرف می‌شود. به عنوان پودر پاشیدنی (90–99%)، در صنایع آرایشی و در غذا نیز به کار می‌رود."
   },
   "description": {
    "en": "A very fine, white to greyish-white, odourless, impalpable crystalline powder that is unctuous, adheres readily to the skin and is free from grittiness. It is a natural mineral, mainly hydrated magnesium silicate, that may contain small amounts of aluminium silicate and iron; pharmacopoeial talc must be free from asbestos.",
@@ -564,7 +564,7 @@
   },
   "comments": {
    "en": "Talc is hydrophobic and, at higher levels, can slow tablet disintegration and dissolution. Its lubricant efficiency is lower than that of magnesium stearate, so it is often combined with it. Pharmacopoeias now require specific tests for amphibole and serpentine asbestos.",
-   "fa": "تالک آب‌گریز است و در غلظت‌های بالاتر می‌تواند باززایی و انحلال قرص را کند کند. کارایی روان‌کنندگی آن از منیزیم استئارات کمتر است و به همین دلیل اغلب همراه آن مصرف می‌شود. فارماکوپه‌ها اکنون آزمون‌های ویژه‌ای برای آزبست آمفیبول و سرپانتین الزامی کرده‌اند."
+   "fa": "تالک آب‌گریز است و در غلظت‌های بالاتر می‌تواند Disintegration و انحلال قرص را کند کند. کارایی روان‌کنندگی آن از منیزیم استئارات کمتر است و به همین دلیل اغلب همراه آن مصرف می‌شود. فارماکوپه‌ها اکنون آزمون‌های ویژه‌ای برای آزبست آمفیبول و سرپانتین الزامی کرده‌اند."
   },
   "refs": [
    "usp",
@@ -1187,7 +1187,7 @@
   "mw": "378.33",
   "applications": {
    "en": "Widely used as a stabiliser and lyoprotectant for proteins, monoclonal antibodies and vaccines in freeze-dried and liquid parenteral products, where it protects proteins during freezing, drying and storage. It is also used as a tonicity agent, as a bulking agent and diluent in oral solids, in ophthalmic products and as a food ingredient.",
-   "fa": "به‌طور گسترده به عنوان پایدارکننده و محافظ لیوفیلیزاسیون (لیوپروتکتانت) برای پروتئین‌ها، آنتی‌بادی‌های مونوکلونال و واکسن‌ها در فرآورده‌های تزریقی لیوفیلیزه و مایع به کار می‌رود و از پروتئین‌ها در طول انجماد، خشک شدن و نگهداری محافظت می‌کند. به عنوان عامل تونیسیته، عامل حجم‌دهنده و رقیق‌کننده در اشکال جامد خوراکی، در فرآورده‌های چشمی و به عنوان جزء غذایی نیز مصرف می‌شود."
+   "fa": "به‌طور گسترده به عنوان پایدارکننده و محافظ لیوفیلیزاسیون (لیوپروتکتانت) برای پروتئین‌ها، آنتی‌بادی‌های مونوکلونال و واکسن‌ها در فرآورده‌های تزریقی لیوفیلیزه و مایع به کار می‌رود و از پروتئین‌ها در طول انجماد، خشک شدن و نگهداری محافظت می‌کند. به عنوان عامل تونیسیته، عامل حجم‌دهنده و Diluent در اشکال جامد خوراکی، در فرآورده‌های چشمی و به عنوان جزء غذایی نیز مصرف می‌شود."
   },
   "description": {
    "en": "White or almost white, odourless crystalline powder with a mildly sweet taste. It is a non-reducing disaccharide of two glucose units joined through their anomeric carbons.",

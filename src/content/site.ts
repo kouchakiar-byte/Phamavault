@@ -192,7 +192,7 @@ export const copy = {
           bi("Free weekly technical handbook (PDF), starting with applied HPLC", "هندبوک تخصصی رایگان هفتگی (PDF)، با شروع از HPLC کاربردی"),
           bi("Calculators that show each equation: HLB, isotonicity, buffer and displacement factor", "ماشین‌حساب‌هایی که معادله هر محاسبه را نشان می‌دهند: HLB، ایزوتونیسیته، بافر و ضریب جابه‌جایی"),
           bi("Formulation advisor that explains every choice: route, excipient levels, process and controls", "مشاور فرمولاسیون که دلیل هر انتخاب را توضیح می‌دهد: روش ساخت، غلظت مواد جانبی، فرایند و کنترل‌ها"),
-          bi("Full-text SOPs to understand a GMP plant before an internship or first job", "متن کامل SOPها برای آشنایی با کارخانه GMP پیش از کارآموزی یا ورود به صنعت"),
+          bi("Full-text SOPs to learn how GMP works in a manufacturing site before an internship or first job", "متن کامل SOPها برای آشنایی با الزامات GMP در واحد تولیدی پیش از کارآموزی یا ورود به صنعت"),
         ],
       },
       {
@@ -443,7 +443,7 @@ export const copy = {
     points: [
       bi("Module 1: regional administrative documents for the IFDA", "ماژول 1: مدارک اداری و منطقه‌ای مطابق الزامات سازمان غذا و دارو"),
       bi("Module 2: quality overall summary and overviews", "ماژول 2: خلاصه کلی کیفیت (QOS) و مرورها"),
-      bi("Module 3: drug substance (3.2.S) and drug product (3.2.P), stability included", "ماژول 3: ماده مؤثره (3.2.S) و فرآورده (3.2.P) همراه با پایداری"),
+      bi("Module 3: drug substance (3.2.S) and drug product (3.2.P), stability included", "ماژول 3: ماده مؤثره (⁦3.2.S⁩) و فرآورده (⁦3.2.P⁩) همراه با پایداری"),
       bi("Review against ICH Q-series guidelines and the current pharmacopoeias", "بازبینی بر اساس راهنماهای سری ICH Q و آخرین ویرایش فارماکوپه‌ها"),
     ],
     days: bi("working days", "روز کاری"),

@@ -11,7 +11,9 @@ import sopsJson from "./sops.json";
  * approved site design and are the single source for every table.
  */
 
-export type Accordion = { title: Bi; items: Bi[] }[];
+/** One CTD heading (ICH M4): its number, the official English title and the Persian title. */
+export type CtdItem = { code: string; en: string; fa: string; sub?: CtdItem[] };
+export type CtdModule = { title: Bi; note?: Bi; items: CtdItem[] };
 
 export type HandbookTopic = { title: Bi; summary: Bi; points: Bi[]; refs: string[] };
 export type Handbook = { title: Bi; intro: Bi; topics: HandbookTopic[] };
@@ -71,7 +73,7 @@ export const formulation = formulationJson as {
 export const handbooks = handbooksJson as Handbook[];
 
 export const regulatory = regulatoryJson as {
-  ctd: Accordion;
+  ctd: CtdModule[];
   ich: { code: string; en: string; fa: string }[];
 };
 

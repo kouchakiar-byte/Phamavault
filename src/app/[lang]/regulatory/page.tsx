@@ -1,4 +1,4 @@
-import { Accordion } from "@/components/accordion";
+import { CtdTree } from "@/components/ctd-tree";
 import { TableWrap } from "@/components/filters";
 import { IchTable } from "@/components/ich-table";
 import { PageHeader } from "@/components/page-header";
@@ -32,7 +32,7 @@ export default async function RegulatoryPage() {
       <PageHeader locale={locale} section="regulatory" title={page.title} lead={page.lead} />
       <Container className="py-12">
         <SubTitle text={page.ctd} locale={locale} />
-        <Accordion items={regulatory.ctd} locale={locale} />
+        <CtdTree modules={regulatory.ctd} locale={locale} />
 
         <SubTitle text={page.ich} locale={locale} />
         <IchTable locale={locale} rows={regulatory.ich} />

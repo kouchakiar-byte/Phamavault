@@ -605,7 +605,7 @@
   "mw": "",
   "applications": {
    "en": "Used as a suspending agent, emulsion stabiliser, viscosity-increasing agent and adsorbent in oral and topical preparations, and as a binder and disintegrant in tablets. Typical concentrations: adsorbent 10–50%; emulsion stabiliser 1–5% (oral) or 2–5% (topical); suspending agent 0.5–2.5% (oral) or 1–10% (topical); tablet binder or disintegrant 2–10%; viscosity-increasing agent 2–10%.",
-   "fa": "به عنوان عامل تعلیق‌کننده، پایدارکننده امولسیون، افزاینده گرانروی و جاذب در فرآورده‌های خوراکی و موضعی و به عنوان چسباننده و باززا (Disintegrant) در قرص به کار می‌رود. غلظت‌های متداول: جاذب 10–50%؛ پایدارکننده امولسیون 1–5% (خوراکی) یا 2–5% (موضعی)؛ تعلیق‌کننده 0.5–2.5% (خوراکی) یا 1–10% (موضعی)؛ چسباننده یا باززای قرص 2–10%؛ افزاینده گرانروی 2–10%."
+   "fa": "به عنوان عامل تعلیق‌کننده، پایدارکننده امولسیون، افزاینده گرانروی و جاذب در فرآورده‌های خوراکی و موضعی و به عنوان چسباننده و Disintegrant در قرص به کار می‌رود. غلظت‌های متداول: جاذب 10–50%؛ پایدارکننده امولسیون 1–5% (خوراکی) یا 2–5% (موضعی)؛ تعلیق‌کننده 0.5–2.5% (خوراکی) یا 1–10% (موضعی)؛ چسباننده یا Disintegrant قرص 2–10%؛ افزاینده گرانروی 2–10%."
   },
   "description": {
    "en": "Off-white to creamy white, odourless, tasteless, soft, slippery small flakes or a fine powder. The particles are thin platelets that swell in water to form colloidal dispersions.",
@@ -716,7 +716,7 @@
   "mw": "≈ 485 (basic); 84.31 (MgCO3)",
   "applications": {
    "en": "Used as a tablet and capsule diluent, including in direct compression where levels of up to about 45% w/w have been used, and as an adsorbent for liquids such as flavour oils in powders. It is also used as an alkalising agent, an anticaking agent and colour-retention agent in foods, and therapeutically as an antacid and osmotic laxative.",
-   "fa": "به عنوان رقیق‌کننده در قرص و کپسول، از جمله در پرس مستقیم با مقادیر تا حدود 45% وزنی، و به عنوان جاذب مایعاتی مانند روغن‌های طعم‌دهنده در پودرها به کار می‌رود. همچنین به عنوان قلیایی‌کننده، ضدکلوخه و حافظ رنگ در غذا، و از نظر درمانی به عنوان آنتی‌اسید و ملین اسمزی مصرف می‌شود."
+   "fa": "به عنوان Diluent در قرص و کپسول، از جمله در پرس مستقیم با مقادیر تا حدود 45% وزنی، و به عنوان جاذب مایعاتی مانند روغن‌های طعم‌دهنده در پودرها به کار می‌رود. همچنین به عنوان قلیایی‌کننده، ضدکلوخه و حافظ رنگ در غذا، و از نظر درمانی به عنوان آنتی‌اسید و ملین اسمزی مصرف می‌شود."
   },
   "description": {
    "en": "A white, odourless powder or light, friable masses. The light form is very bulky; the heavy form is denser and granular. Commercial material is a basic hydrated carbonate rather than normal MgCO3.",
@@ -830,7 +830,7 @@
   "mw": "40.30",
   "applications": {
    "en": "Used as an alkaline stabiliser or pH modifier in solid dosage forms of acid-labile drugs (for example in benzimidazole proton pump inhibitor formulations), as a diluent in tablets and capsules, and as an adsorbent and anticaking agent. It is used in foods and therapeutically as an antacid, laxative and magnesium supplement. As a stabiliser it is usually used at a few percent of the formulation.",
-   "fa": "به عنوان پایدارکننده قلیایی یا تنظیم‌کننده pH در اشکال جامد داروهای حساس به اسید (مانند فرمولاسیون‌های مهارکننده‌های پمپ پروتون بنزیمیدازولی)، به عنوان رقیق‌کننده در قرص و کپسول و به عنوان جاذب و ضدکلوخه به کار می‌رود. در غذا و از نظر درمانی به عنوان آنتی‌اسید، ملین و مکمل منیزیم مصرف می‌شود. به عنوان پایدارکننده معمولاً چند درصد از فرمولاسیون را تشکیل می‌دهد."
+   "fa": "به عنوان پایدارکننده قلیایی یا تنظیم‌کننده pH در اشکال جامد داروهای حساس به اسید (مانند فرمولاسیون‌های مهارکننده‌های پمپ پروتون بنزیمیدازولی)، به عنوان Diluent در قرص و کپسول و به عنوان جاذب و ضدکلوخه به کار می‌رود. در غذا و از نظر درمانی به عنوان آنتی‌اسید، ملین و مکمل منیزیم مصرف می‌شود. به عنوان پایدارکننده معمولاً چند درصد از فرمولاسیون را تشکیل می‌دهد."
   },
   "description": {
    "en": "A fine, white, odourless powder. The light form is very bulky; the heavy form is a denser powder.",
@@ -936,7 +936,7 @@
   "mw": "",
   "applications": {
    "en": "Used in oral pharmaceutical products and foods as a glidant and anticaking agent, and as an adsorbent. Therapeutically it has been used as an antacid. It has also been used as a filter aid and in chromatography.",
-   "fa": "در فرآورده‌های دارویی خوراکی و غذا به عنوان تسهیل‌کننده جریان (Glidant) و ضدکلوخه و همچنین به عنوان جاذب به کار می‌رود. از نظر درمانی به عنوان آنتی‌اسید مصرف شده است. به عنوان کمک‌صافی و در کروماتوگرافی نیز کاربرد دارد."
+   "fa": "در فرآورده‌های دارویی خوراکی و غذا به عنوان Glidant و ضدکلوخه و همچنین به عنوان جاذب به کار می‌رود. از نظر درمانی به عنوان آنتی‌اسید مصرف شده است. به عنوان کمک‌صافی و در کروماتوگرافی نیز کاربرد دارد."
   },
   "description": {
    "en": "A fine, white, odourless and tasteless powder, free from grittiness. It is a synthetic compound of magnesium oxide and silicon dioxide with varying amounts of water.",
@@ -1044,7 +1044,7 @@
   "mw": "260.86 (anhydrous)",
   "applications": {
    "en": "Used in oral pharmaceutical products and foods as a glidant and adsorbent. It is used more widely as an active ingredient, an antacid, often combined with aluminium hydroxide.",
-   "fa": "در فرآورده‌های دارویی خوراکی و غذا به عنوان تسهیل‌کننده جریان و جاذب به کار می‌رود. مصرف گسترده‌تر آن به عنوان ماده مؤثره آنتی‌اسید، اغلب همراه آلومینیوم هیدروکسید، است."
+   "fa": "در فرآورده‌های دارویی خوراکی و غذا به عنوان Glidant و جاذب به کار می‌رود. مصرف گسترده‌تر آن به عنوان ماده مؤثره آنتی‌اسید، اغلب همراه آلومینیوم هیدروکسید، است."
   },
   "description": {
    "en": "A white, odourless, tasteless, fine powder, free from grittiness.",
@@ -1122,7 +1122,7 @@
   },
   "comments": {
    "en": "Its strong adsorptive capacity is an advantage as a glidant but a risk for low-dose drugs and preserved liquids; check drug assay, preservative efficacy and dissolution when it is included in a formulation.",
-   "fa": "ظرفیت جذب سطحی زیاد آن به عنوان تسهیل‌کننده جریان مزیت است، ولی برای داروهای کم‌دوز و مایعات دارای نگهدارنده خطر محسوب می‌شود؛ هنگام استفاده در فرمولاسیون، سنجش دارو، کارایی نگهدارنده و انحلال را بررسی کنید."
+   "fa": "ظرفیت جذب سطحی زیاد آن به عنوان Glidant مزیت است، ولی برای داروهای کم‌دوز و مایعات دارای نگهدارنده خطر محسوب می‌شود؛ هنگام استفاده در فرمولاسیون، سنجش دارو، کارایی نگهدارنده و انحلال را بررسی کنید."
   },
   "refs": [
    "usp",
@@ -1367,7 +1367,7 @@
   "mw": "344.31",
   "applications": {
    "en": "A sugar-free sweetener and bulking agent used in oral solid and liquid products: as a diluent in tablets (including chewable tablets and lozenges), in sugar-free hard coatings for tablets, and (as maltitol solution) in sugar-free syrups. Its sweetness is about 75–90% of that of sucrose, so it can often replace sucrose weight for weight.",
-   "fa": "شیرین‌کننده و حجم‌دهنده بدون قند است که در فرآورده‌های خوراکی جامد و مایع به کار می‌رود: به عنوان رقیق‌کننده در قرص (از جمله قرص جویدنی و لوزنج)، در پوشش سخت بدون قند قرص‌ها و (به صورت محلول مالتیتول) در شربت‌های بدون قند. شیرینی آن حدود 75–90% ساکارز است و اغلب می‌تواند وزن به وزن جایگزین ساکارز شود."
+   "fa": "شیرین‌کننده و حجم‌دهنده بدون قند است که در فرآورده‌های خوراکی جامد و مایع به کار می‌رود: به عنوان Diluent در قرص (از جمله قرص جویدنی و لوزنج)، در پوشش سخت بدون قند قرص‌ها و (به صورت محلول مالتیتول) در شربت‌های بدون قند. شیرینی آن حدود 75–90% ساکارز است و اغلب می‌تواند وزن به وزن جایگزین ساکارز شود."
   },
   "description": {
    "en": "A white, odourless, crystalline powder with a sweet taste similar to sucrose.",
@@ -1486,7 +1486,7 @@
   "mw": "≈ 900–9000",
   "applications": {
    "en": "Used as a tablet binder and diluent in wet granulation (typically about 3–10% w/w) and direct compression (often at higher proportions), as a film-coating additive, a viscosity-increasing agent in oral liquids, a carrier for spray-dried and freeze-dried products, and as a carbohydrate source in nutritional products.",
-   "fa": "به عنوان چسباننده و رقیق‌کننده قرص در گرانولاسیون مرطوب (معمولاً حدود 3–10% وزنی) و پرس مستقیم (اغلب با نسبت‌های بیشتر)، افزودنی پوشش فیلمی، افزاینده گرانروی در مایعات خوراکی، حامل در فرآورده‌های اسپری‌درای و لیوفیلیزه و منبع کربوهیدرات در فرآورده‌های تغذیه‌ای به کار می‌رود."
+   "fa": "به عنوان چسباننده و Diluent قرص در گرانولاسیون مرطوب (معمولاً حدود 3–10% وزنی) و پرس مستقیم (اغلب با نسبت‌های بیشتر)، افزودنی پوشش فیلمی، افزاینده گرانروی در مایعات خوراکی، حامل در فرآورده‌های اسپری‌درای و لیوفیلیزه و منبع کربوهیدرات در فرآورده‌های تغذیه‌ای به کار می‌رود."
   },
   "description": {
    "en": "A white, hygroscopic powder or granules, odourless and with a bland or slightly sweet taste. Grades are classified by dextrose equivalent (DE), which reflects the degree of starch hydrolysis.",
@@ -1590,7 +1590,7 @@
   "mw": "360.31",
   "applications": {
    "en": "Used as a sweetener and as a tablet diluent and binder, including spray-dried grades for direct compression. It is used as a stabiliser and tonicity agent in some parenteral protein products (for example intravenous immunoglobulins), as a lyoprotectant in freeze-dried products, and as a carbohydrate source in some intravenous infusions.",
-   "fa": "به عنوان شیرین‌کننده و رقیق‌کننده و چسباننده قرص، از جمله گریدهای اسپری‌درای برای پرس مستقیم، به کار می‌رود. در برخی فرآورده‌های پروتئینی تزریقی (مانند ایمونوگلوبولین‌های وریدی) به عنوان پایدارکننده و تنظیم‌کننده تونیسیته، در فرآورده‌های لیوفیلیزه به عنوان محافظ در خشک‌کردن انجمادی (lyoprotectant) و در برخی محلول‌های انفوزیون وریدی به عنوان منبع کربوهیدرات مصرف می‌شود."
+   "fa": "به عنوان شیرین‌کننده و Diluent و چسباننده قرص، از جمله گریدهای اسپری‌درای برای پرس مستقیم، به کار می‌رود. در برخی فرآورده‌های پروتئینی تزریقی (مانند ایمونوگلوبولین‌های وریدی) به عنوان پایدارکننده و تنظیم‌کننده تونیسیته، در فرآورده‌های لیوفیلیزه به عنوان محافظ در خشک‌کردن انجمادی (lyoprotectant) و در برخی محلول‌های انفوزیون وریدی به عنوان منبع کربوهیدرات مصرف می‌شود."
   },
   "description": {
    "en": "White crystals or crystalline powder, odourless, with a mildly sweet taste; its sweetness is roughly a third of that of sucrose.",
@@ -1700,7 +1700,7 @@
   "mw": "182.17",
   "applications": {
    "en": "Widely used as a diluent in tablets and capsules (typically 10–90% w/w), particularly in chewable and orally disintegrating tablets, because it is non-hygroscopic, pleasantly sweet and gives a cooling sensation. It is a common bulking agent in freeze-dried injections, an isotonicity agent in parenterals and ophthalmics, and is used in direct-compression (granulated or spray-dried) grades and as a plasticiser in soft capsules. Therapeutically it is an osmotic diuretic.",
-   "fa": "به‌طور گسترده به عنوان رقیق‌کننده در قرص و کپسول (معمولاً 10–90% وزنی)، به‌ویژه در قرص‌های جویدنی و قرص‌های باززاشونده در دهان (ODT)، به کار می‌رود، چون رطوبت‌گیر نیست، شیرینی مطبوع دارد و احساس خنکی ایجاد می‌کند. حجم‌دهنده رایج در تزریقی‌های لیوفیلیزه و تنظیم‌کننده تونیسیته در فرآورده‌های تزریقی و چشمی است؛ گریدهای مخصوص پرس مستقیم (گرانوله یا اسپری‌درای) دارد و به عنوان نرم‌کننده در کپسول نرم نیز مصرف می‌شود. از نظر درمانی دیورتیک اسمزی است."
+   "fa": "به‌طور گسترده به عنوان Diluent در قرص و کپسول (معمولاً 10–90% وزنی)، به‌ویژه در قرص‌های جویدنی و قرص‌های ODT (Orally disintegrating) (ODT)، به کار می‌رود، چون رطوبت‌گیر نیست، شیرینی مطبوع دارد و احساس خنکی ایجاد می‌کند. حجم‌دهنده رایج در تزریقی‌های لیوفیلیزه و تنظیم‌کننده تونیسیته در فرآورده‌های تزریقی و چشمی است؛ گریدهای مخصوص پرس مستقیم (گرانوله یا اسپری‌درای) دارد و به عنوان نرم‌کننده در کپسول نرم نیز مصرف می‌شود. از نظر درمانی دیورتیک اسمزی است."
   },
   "description": {
    "en": "White, odourless, crystalline powder or free-flowing granules with a sweet taste about half that of sucrose and a cooling mouthfeel.",
@@ -2308,7 +2308,7 @@
   "mw": "≈ 10 000–220 000",
   "applications": {
    "en": "Used in oral and topical products as a viscosity-increasing, suspending, emulsifying and thickening agent, as a tablet binder, coating polymer and disintegrant, in modified-release matrices, and therapeutically as a bulk laxative. Typical concentrations: creams, gels and ointments 1–5%; emulsifying agent 1–5%; ophthalmic preparations 0.5–1%; suspensions 1–2%; tablet binder 1–5%; tablet coating 0.5–5%; tablet disintegrant 2–10%; modified-release matrix 5–75%.",
-   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان افزاینده گرانروی، تعلیق‌کننده، امولسیفایر و غلیظ‌کننده، چسباننده، پلیمر پوشش و باززای قرص (Disintegrant)، در ماتریکس‌های رهش اصلاح‌شده و از نظر درمانی به عنوان ملین حجیم‌کننده به کار می‌رود. غلظت‌های متداول: کرم، ژل و پماد 1–5%؛ امولسیفایر 1–5%؛ فرآورده‌های چشمی 0.5–1%؛ سوسپانسیون 1–2%؛ چسباننده قرص 1–5%؛ پوشش قرص 0.5–5%؛ باززای قرص 2–10%؛ ماتریکس رهش اصلاح‌شده 5–75%."
+   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان افزاینده گرانروی، تعلیق‌کننده، امولسیفایر و غلیظ‌کننده، چسباننده، پلیمر پوشش و Disintegrant قرص، در ماتریکس‌های رهش اصلاح‌شده و از نظر درمانی به عنوان ملین حجیم‌کننده به کار می‌رود. غلظت‌های متداول: کرم، ژل و پماد 1–5%؛ امولسیفایر 1–5%؛ فرآورده‌های چشمی 0.5–1%؛ سوسپانسیون 1–2%؛ چسباننده قرص 1–5%؛ پوشش قرص 0.5–5%؛ Disintegrant قرص 2–10%؛ ماتریکس رهش اصلاح‌شده 5–75%."
   },
   "description": {
    "en": "A white to yellowish-white, practically odourless and tasteless, fibrous powder or granules. It is a cellulose in which part of the hydroxyl groups are methylated; grades are distinguished by the viscosity of a 2% w/v aqueous solution.",

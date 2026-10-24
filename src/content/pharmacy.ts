@@ -340,7 +340,7 @@ export const compoundingGuide = {
       title: bi("Core techniques", "تکنیک‌های پایه"),
       points: [
         bi("Trituration: reduce particle size in a mortar before mixing; a finer powder disperses and dissolves better.", "تریتوراسیون (Trituration): پیش از مخلوط کردن، اندازه ذرات را در هاون کاهش دهید؛ پودر ریزتر بهتر پراکنده و حل می‌شود."),
-        bi("Geometric dilution: mix a small amount of potent drug with an equal volume of diluent, then keep doubling, so the drug is spread evenly.", "رقیق‌سازی هندسی: مقدار کم داروی قوی را با هم‌حجم خود رقیق‌کننده مخلوط کنید و هر بار دو برابر کنید تا دارو به‌طور یکنواخت توزیع شود."),
+        bi("Geometric dilution: mix a small amount of potent drug with an equal volume of diluent, then keep doubling, so the drug is spread evenly.", "رقیق‌سازی هندسی: مقدار کم داروی قوی را با هم‌حجم خود Diluent مخلوط کنید و هر بار دو برابر کنید تا دارو به‌طور یکنواخت توزیع شود."),
         bi("Levigation: wet the powder into a smooth paste first — mineral oil for oily bases, glycerin or propylene glycol for water-miscible ones.", "لویگیشن (Levigation): ابتدا پودر را به خمیر یکنواخت تبدیل کنید؛ با روغن معدنی برای پایه‌های چرب و با گلیسرین یا پروپیلن گلیکول برای پایه‌های آب‌دوست."),
         bi("Add the vehicle in portions with constant mixing, and check the final weight or volume.", "حامل را به‌تدریج و با هم زدن مداوم اضافه کنید و وزن یا حجم نهایی را کنترل کنید."),
       ],
@@ -361,7 +361,7 @@ export const compoundingGuide = {
       key: "capsules",
       title: bi("Capsules", "کپسول"),
       points: [
-        bi("Choose the size from the fill volume (weight ÷ tapped density) and make up the volume with a diluent such as microcrystalline cellulose or lactose.", "اندازه کپسول را بر اساس حجم پرکردن (وزن ÷ دانسیته ضربه‌ای) انتخاب کنید و حجم باقی‌مانده را با رقیق‌کننده‌ای مانند میکروکریستالین سلولز یا لاکتوز پر کنید."),
+        bi("Choose the size from the fill volume (weight ÷ tapped density) and make up the volume with a diluent such as microcrystalline cellulose or lactose.", "اندازه کپسول را بر اساس حجم پرکردن (وزن ÷ دانسیته ضربه‌ای) انتخاب کنید و حجم باقی‌مانده را با Diluent‌ای مانند میکروکریستالین سلولز یا لاکتوز پر کنید."),
         bi("Blend by geometric dilution, fill by the punch method or a capsule-filling plate, and prepare one or two extra capsules for losses.", "با رقیق‌سازی هندسی مخلوط کنید، به روش پانچ یا با صفحه پرکن کپسول پر کنید و یک یا دو کپسول اضافی برای جبران اتلاف در نظر بگیرید."),
         bi("Check weight: weigh each capsule (or a sample) against the theoretical fill weight.", "کنترل وزن: هر کپسول (یا نمونه‌ای از آن‌ها) را با وزن تئوری مقایسه کنید."),
       ],

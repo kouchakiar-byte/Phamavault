@@ -24,7 +24,7 @@
   "mw": "≈ 36 000",
   "applications": {
    "en": "Microcrystalline cellulose is one of the most widely used tablet and capsule diluents, in both wet granulation and direct compression. Besides acting as a filler and dry binder it has some lubricant and disintegrant properties, which makes it especially useful in direct compression. Typical concentrations: tablet binder/diluent 20–90%; capsule binder/diluent 20–90%; adsorbent 20–90%; antiadherent 5–20%; tablet disintegrant 5–15%. It is also used in cosmetics and foods.",
-   "fa": "سلولز میکروکریستالی یکی از پرمصرف‌ترین رقیق‌کننده‌ها (پرکننده‌ها) در قرص و کپسول است و هم در گرانولاسیون مرطوب و هم در پرس مستقیم به کار می‌رود. علاوه بر نقش پرکننده و چسباننده خشک، خاصیت روان‌کنندگی و باززایی هم دارد و به همین دلیل در پرس مستقیم بسیار مفید است. غلظت‌های متداول: چسباننده/رقیق‌کننده قرص 20–90%؛ چسباننده/رقیق‌کننده کپسول 20–90%؛ جاذب 20–90%؛ ضدچسبندگی 5–20%؛ باززای قرص 5–15%. در صنایع آرایشی و غذایی نیز مصرف می‌شود."
+   "fa": "سلولز میکروکریستالی یکی از پرمصرف‌ترین Diluentها (پرکننده‌ها) در قرص و کپسول است و هم در گرانولاسیون مرطوب و هم در پرس مستقیم به کار می‌رود. علاوه بر نقش پرکننده و چسباننده خشک، خاصیت روان‌کنندگی و Disintegration هم دارد و به همین دلیل در پرس مستقیم بسیار مفید است. غلظت‌های متداول: چسباننده/Diluent قرص 20–90%؛ چسباننده/Diluent کپسول 20–90%؛ جاذب 20–90%؛ ضدچسبندگی 5–20%؛ Disintegrant قرص 5–15%. در صنایع آرایشی و غذایی نیز مصرف می‌شود."
   },
   "description": {
    "en": "A purified, partially depolymerised cellulose. White, odourless, tasteless, crystalline powder made up of porous particles. Commercial grades differ in particle size and moisture content, which govern their properties and uses.",
@@ -246,7 +246,7 @@
   },
   "comments": {
    "en": "Magnesium stearate is hydrophobic and can slow the dissolution of a drug from a solid dosage form, so the lowest effective level should be used. Over-blending lowers tablet hardness and lengthens disintegration and dissolution; it is normally added last and blended for a short time (typically 2–5 minutes). Lubricant performance varies between suppliers and lots because of differences in hydrate form, particle size and specific surface area.",
-   "fa": "منیزیم استئارات آب‌گریز است و می‌تواند انحلال دارو از شکل دارویی جامد را کند کند؛ بنابراین کمترین غلظت مؤثر باید به کار رود. اختلاط بیش از حد سختی قرص را کم و زمان باززایی و انحلال را طولانی می‌کند؛ معمولاً در آخر اضافه و مدت کوتاهی (معمولاً 2–5 دقیقه) مخلوط می‌شود. به دلیل تفاوت فرم هیدراته، اندازه ذره و سطح ویژه، عملکرد روان‌کنندگی بین تأمین‌کنندگان و سری‌های مختلف متفاوت است."
+   "fa": "منیزیم استئارات آب‌گریز است و می‌تواند انحلال دارو از شکل دارویی جامد را کند کند؛ بنابراین کمترین غلظت مؤثر باید به کار رود. اختلاط بیش از حد سختی قرص را کم و زمان Disintegration و انحلال را طولانی می‌کند؛ معمولاً در آخر اضافه و مدت کوتاهی (معمولاً 2–5 دقیقه) مخلوط می‌شود. به دلیل تفاوت فرم هیدراته، اندازه ذره و سطح ویژه، عملکرد روان‌کنندگی بین تأمین‌کنندگان و سری‌های مختلف متفاوت است."
   },
   "refs": [
    "usp",
@@ -282,7 +282,7 @@
   "mw": "360.31",
   "applications": {
    "en": "Widely used as a filler and diluent in tablets and capsules and, to a lesser extent, in lyophilised products and infant formulas. Fine (milled) grades are used in wet granulation and to make dilutions of potent drugs; coarse sieved grades flow better and are used in capsule filling; specially prepared grades are used as carriers in dry powder inhalers. Spray-dried and anhydrous lactose are preferred for direct compression.",
-   "fa": "به‌طور گسترده به عنوان پرکننده و رقیق‌کننده در قرص و کپسول، و به میزان کمتر در فرآورده‌های لیوفیلیزه و شیرخشک نوزاد به کار می‌رود. گریدهای ریز (آسیاب‌شده) در گرانولاسیون مرطوب و رقیق‌سازی داروهای قوی، گریدهای درشت الک‌شده به دلیل جریان‌پذیری بهتر در پرکردن کپسول، و گریدهای ویژه به عنوان حامل در افشانه‌های پودر خشک استنشاقی (DPI) مصرف می‌شوند. برای پرس مستقیم، لاکتوز اسپری‌درای و لاکتوز بدون آب ترجیح داده می‌شوند."
+   "fa": "به‌طور گسترده به عنوان پرکننده و Diluent در قرص و کپسول، و به میزان کمتر در فرآورده‌های لیوفیلیزه و شیرخشک نوزاد به کار می‌رود. گریدهای ریز (آسیاب‌شده) در گرانولاسیون مرطوب و رقیق‌سازی داروهای قوی، گریدهای درشت الک‌شده به دلیل جریان‌پذیری بهتر در پرکردن کپسول، و گریدهای ویژه به عنوان حامل در افشانه‌های پودر خشک استنشاقی (DPI) مصرف می‌شوند. برای پرس مستقیم، لاکتوز اسپری‌درای و لاکتوز بدون آب ترجیح داده می‌شوند."
   },
   "description": {
    "en": "White to off-white crystalline particles or powder. Odourless and slightly sweet-tasting; its sweetness is roughly a fifth of that of sucrose.",

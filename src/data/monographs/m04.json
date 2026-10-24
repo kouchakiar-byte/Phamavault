@@ -336,7 +336,7 @@
   },
   "incompatibilities": {
    "en": "No significant chemical incompatibilities have been reported. Like other hydrophobic lubricants it can slow tablet disintegration and drug dissolution if used in excess.",
-   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. مانند سایر روان‌کننده‌های آب‌گریز، مصرف بیش از حد آن ممکن است باززایی قرص و انحلال دارو را کند کند."
+   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. مانند سایر روان‌کننده‌های آب‌گریز، مصرف بیش از حد آن ممکن است Disintegration قرص و انحلال دارو را کند کند."
   },
   "manufacture": {
    "en": "Made by esterifying glycerol with behenic acid, obtained from hydrogenated rapeseed or similar oils, without a catalyst; the product is then atomised (spray-cooled) to give a fine powder.",
@@ -667,7 +667,7 @@
   },
   "incompatibilities": {
    "en": "No major chemical incompatibilities have been reported. As a hydrophobic material, excessive amounts can slow disintegration and dissolution.",
-   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. به عنوان ماده آب‌گریز، مقادیر زیاد آن ممکن است باززایی و انحلال را کند کند."
+   "fa": "ناسازگاری شیمیایی مهمی گزارش نشده است. به عنوان ماده آب‌گریز، مقادیر زیاد آن ممکن است Disintegration و انحلال را کند کند."
   },
   "manufacture": {
    "en": "Made by esterifying glycerol with palmitic and stearic acids obtained from hydrogenated vegetable oils, followed by spray-cooling (atomisation) of the molten product to give a fine powder.",
@@ -923,7 +923,7 @@
   "mw": "≈ 220 000",
   "applications": {
    "en": "Used in oral and topical products as a suspending, thickening and stabilising agent, and in tablets as a binder and disintegrant. Typical concentrations: emulsion stabiliser about 1%; thickener for lotions and creams up to 2.5%; tablet binder up to 10%. It has also been studied as a matrix former for sustained release and as a carrier for colon-targeted delivery, since it is degraded by colonic bacteria. It is widely used in foods.",
-   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان عامل تعلیق‌کننده، غلیظ‌کننده و پایدارکننده و در قرص به عنوان چسباننده و باززا (Disintegrant) به کار می‌رود. غلظت‌های متداول: پایدارکننده امولسیون حدود 1%؛ غلیظ‌کننده لوسیون و کرم حداکثر 2.5%؛ چسباننده قرص حداکثر 10%. همچنین به عنوان تشکیل‌دهنده ماتریکس آهسته‌رهش و حامل دارورسانی هدفمند به کولون (چون توسط باکتری‌های کولون تجزیه می‌شود) بررسی شده است. در صنایع غذایی کاربرد گسترده دارد."
+   "fa": "در فرآورده‌های خوراکی و موضعی به عنوان عامل تعلیق‌کننده، غلیظ‌کننده و پایدارکننده و در قرص به عنوان چسباننده و Disintegrant به کار می‌رود. غلظت‌های متداول: پایدارکننده امولسیون حدود 1%؛ غلیظ‌کننده لوسیون و کرم حداکثر 2.5%؛ چسباننده قرص حداکثر 10%. همچنین به عنوان تشکیل‌دهنده ماتریکس آهسته‌رهش و حامل دارورسانی هدفمند به کولون (چون توسط باکتری‌های کولون تجزیه می‌شود) بررسی شده است. در صنایع غذایی کاربرد گسترده دارد."
   },
   "description": {
    "en": "A white to yellowish-white, almost odourless powder with a bland taste. It disperses in cold or hot water and hydrates to form a highly viscous, slightly cloudy colloidal dispersion.",
@@ -1711,7 +1711,7 @@
   },
   "comments": {
    "en": "Its solubility in ethanol makes it useful for non-aqueous granulation of moisture-sensitive drugs and for organic-solvent coating. Films are flexible but somewhat tacky, so it is often combined with other film formers. It should not be confused with low-substituted hydroxypropyl cellulose, which is water-insoluble and used as a disintegrant.",
-   "fa": "حلالیت آن در اتانول، آن را برای گرانولاسیون غیرآبی داروهای حساس به رطوبت و برای پوشش با حلال آلی مفید می‌سازد. فیلم‌های آن انعطاف‌پذیر ولی کمی چسبنده‌اند و به همین دلیل اغلب با سایر تشکیل‌دهنده‌های فیلم ترکیب می‌شود. نباید آن را با هیدروکسی‌پروپیل سلولز با جایگزینی کم اشتباه گرفت که در آب نامحلول است و به عنوان باززا (Disintegrant) به کار می‌رود."
+   "fa": "حلالیت آن در اتانول، آن را برای گرانولاسیون غیرآبی داروهای حساس به رطوبت و برای پوشش با حلال آلی مفید می‌سازد. فیلم‌های آن انعطاف‌پذیر ولی کمی چسبنده‌اند و به همین دلیل اغلب با سایر تشکیل‌دهنده‌های فیلم ترکیب می‌شود. نباید آن را با هیدروکسی‌پروپیل سلولز با جایگزینی کم اشتباه گرفت که در آب نامحلول است و به عنوان Disintegrant به کار می‌رود."
   },
   "refs": [
    "usp",
@@ -1746,7 +1746,7 @@
   "mw": "",
   "applications": {
    "en": "Used in oral solid dosage forms as a tablet and capsule disintegrant, usually at a few per cent up to about 10% w/w, and also as a binder because it compacts well; it can therefore serve as a combined binder–disintegrant in wet granulation and direct compression. Grades differ in particle size and substitution and are chosen for direct compression, wet granulation or orally disintegrating tablets. It is also used as an extrusion–spheronisation aid.",
-   "fa": "در اشکال دارویی جامد خوراکی به عنوان باززا (Disintegrant) در قرص و کپسول، معمولاً با غلظت چند درصد تا حدود 10% وزنی، به کار می‌رود و به دلیل تراکم‌پذیری خوب، به عنوان چسباننده نیز عمل می‌کند؛ بنابراین می‌تواند هم‌زمان نقش چسباننده و باززا را در گرانولاسیون مرطوب و پرس مستقیم داشته باشد. گریدها از نظر اندازه ذره و میزان جایگزینی متفاوت‌اند و برای پرس مستقیم، گرانولاسیون مرطوب یا قرص‌های باززاشونده در دهان (ODT) انتخاب می‌شوند. همچنین به عنوان کمک‌کننده در اکستروژن-اسفرونیزاسیون مصرف می‌شود."
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان Disintegrant در قرص و کپسول، معمولاً با غلظت چند درصد تا حدود 10% وزنی، به کار می‌رود و به دلیل تراکم‌پذیری خوب، به عنوان چسباننده نیز عمل می‌کند؛ بنابراین می‌تواند هم‌زمان نقش چسباننده و Disintegrant را در گرانولاسیون مرطوب و پرس مستقیم داشته باشد. گریدها از نظر اندازه ذره و میزان جایگزینی متفاوت‌اند و برای پرس مستقیم، گرانولاسیون مرطوب یا قرص‌های ODT (Orally disintegrating) (ODT) انتخاب می‌شوند. همچنین به عنوان کمک‌کننده در اکستروژن-اسفرونیزاسیون مصرف می‌شود."
   },
   "description": {
    "en": "A white to yellowish-white, odourless and tasteless, fibrous or granular powder. Its low degree of hydroxypropyl substitution makes it insoluble in water, in which it swells.",
@@ -1800,7 +1800,7 @@
   },
   "incompatibilities": {
    "en": "Alkaline substances may interact with it, and tablets containing such materials may show slower disintegration after storage.",
-   "fa": "مواد قلیایی ممکن است با آن برهم‌کنش داشته باشند و قرص‌های حاوی چنین موادی ممکن است پس از نگهداری باززایی کندتری نشان دهند."
+   "fa": "مواد قلیایی ممکن است با آن برهم‌کنش داشته باشند و قرص‌های حاوی چنین موادی ممکن است پس از نگهداری Disintegration کندتری نشان دهند."
   },
   "manufacture": {
    "en": "Made by reacting alkali cellulose with a limited amount of propylene oxide. The crude product is neutralised, washed, dried and milled to the required particle size and shape.",
@@ -1824,7 +1824,7 @@
   },
   "comments": {
    "en": "L-HPC acts mainly by swelling rather than by wicking alone, and its disintegrant action is less affected by tablet hardness than that of some starches. Because it is non-ionic, it is less likely than ionic superdisintegrants to interact with cationic drugs.",
-   "fa": "L-HPC عمدتاً از طریق تورم و نه صرفاً جذب مویینگی عمل می‌کند و خاصیت باززایی آن کمتر از برخی نشاسته‌ها تحت تأثیر سختی قرص قرار می‌گیرد. چون غیریونی است، احتمال برهم‌کنش آن با داروهای کاتیونی کمتر از سوپرباززاهای یونی (Superdisintegrant) است."
+   "fa": "L-HPC عمدتاً از طریق تورم و نه صرفاً جذب مویینگی عمل می‌کند و خاصیت Disintegration آن کمتر از برخی نشاسته‌ها تحت تأثیر سختی قرص قرار می‌گیرد. چون غیریونی است، احتمال برهم‌کنش آن با داروهای کاتیونی کمتر از Superdisintegrantهای یونی (Superdisintegrant) است."
   },
   "refs": [
    "usp",
@@ -2860,7 +2860,7 @@
   "mw": "258.16",
   "applications": {
    "en": "Used in oral solid dosage forms as a diluent and adsorbent, and in topical products such as dusting powders, poultices and face masks. As an active substance it has been used as an oral adsorbent in antidiarrhoeal mixtures. It is also widely used in cosmetics and as a filler in many industries.",
-   "fa": "در اشکال دارویی جامد خوراکی به عنوان رقیق‌کننده و جاذب و در فرآورده‌های موضعی مانند پودرهای پاشیدنی، ضمادها و ماسک‌های صورت به کار می‌رود. به عنوان ماده مؤثر نیز در مخلوط‌های ضداسهال خوراکی به عنوان جاذب مصرف شده است. در محصولات آرایشی و به عنوان پرکننده در بسیاری از صنایع نیز کاربرد گسترده دارد."
+   "fa": "در اشکال دارویی جامد خوراکی به عنوان Diluent و جاذب و در فرآورده‌های موضعی مانند پودرهای پاشیدنی، ضمادها و ماسک‌های صورت به کار می‌رود. به عنوان ماده مؤثر نیز در مخلوط‌های ضداسهال خوراکی به عنوان جاذب مصرف شده است. در محصولات آرایشی و به عنوان پرکننده در بسیاری از صنایع نیز کاربرد گسترده دارد."
   },
   "description": {
    "en": "A white or greyish-white, unctuous, fine powder that is practically odourless and has an earthy taste. It is a purified natural clay consisting mainly of the mineral kaolinite; light kaolin contains a dispersing agent and is finer than heavy kaolin.",
@@ -3082,7 +3082,7 @@
   "mw": "344.31 (anhydrous); 362.34 (monohydrate)",
   "applications": {
    "en": "A sugar alcohol used as a sweetener and as a non-cariogenic diluent in tablets (direct-compression grades are available), chewable tablets, lozenges, sugar-free coatings and confectionery. Its sweetness is about 30–40% of that of sucrose, so it is often combined with intense sweeteners. As an active substance it is used as an osmotic laxative.",
-   "fa": "یک قند الکلی است که به عنوان شیرین‌کننده و رقیق‌کننده غیرپوسیدگی‌زا در قرص‌ها (گریدهای پرس مستقیم در دسترس‌اند)، قرص‌های جویدنی، لوزنج‌ها، روکش‌های بدون قند و شیرینی‌ها به کار می‌رود. شیرینی آن حدود 30–40% ساکارز است و به همین دلیل اغلب همراه شیرین‌کننده‌های قوی مصرف می‌شود. به عنوان ماده مؤثر به عنوان ملین اسمزی مصرف می‌شود."
+   "fa": "یک قند الکلی است که به عنوان شیرین‌کننده و Diluent غیرپوسیدگی‌زا در قرص‌ها (گریدهای پرس مستقیم در دسترس‌اند)، قرص‌های جویدنی، لوزنج‌ها، روکش‌های بدون قند و شیرینی‌ها به کار می‌رود. شیرینی آن حدود 30–40% ساکارز است و به همین دلیل اغلب همراه شیرین‌کننده‌های قوی مصرف می‌شود. به عنوان ماده مؤثر به عنوان ملین اسمزی مصرف می‌شود."
   },
   "description": {
    "en": "White, odourless, sweet-tasting crystals or crystalline powder. It exists in anhydrous, monohydrate and dihydrate forms; the monohydrate is the usual pharmaceutical form.",
@@ -3193,7 +3193,7 @@
   "mw": "342.30",
   "applications": {
    "en": "Used as a filler and binder in direct compression and as a diluent in wet granulation and capsule filling. Its low water content makes it suitable for moisture-sensitive drugs. It is also used in lyophilised products and as a carrier in dry powder inhalers.",
-   "fa": "به عنوان پرکننده و چسباننده در پرس مستقیم و به عنوان رقیق‌کننده در گرانولاسیون مرطوب و پرکردن کپسول به کار می‌رود. مقدار آب کم آن، آن را برای داروهای حساس به رطوبت مناسب می‌سازد. در فرآورده‌های لیوفیلیزه و به عنوان حامل در افشانه‌های پودر خشک استنشاقی نیز مصرف می‌شود."
+   "fa": "به عنوان پرکننده و چسباننده در پرس مستقیم و به عنوان Diluent در گرانولاسیون مرطوب و پرکردن کپسول به کار می‌رود. مقدار آب کم آن، آن را برای داروهای حساس به رطوبت مناسب می‌سازد. در فرآورده‌های لیوفیلیزه و به عنوان حامل در افشانه‌های پودر خشک استنشاقی نیز مصرف می‌شود."
   },
   "description": {
    "en": "White to off-white crystalline particles or powder, odourless and slightly sweet. Commercial anhydrous lactose made by roller drying is mainly anhydrous β-lactose, typically about 70–80%, with the rest anhydrous α-lactose.",

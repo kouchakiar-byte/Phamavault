@@ -922,7 +922,7 @@
   "mw": "",
   "applications": {
    "en": "A versatile excipient in oral solid dosage forms, used as a diluent, binder and disintegrant, and also as a glidant and in dusting powders. Typical concentrations: tablet disintegrant 3–25% w/w (often about 5–15%); binder, added as a freshly prepared paste in wet granulation, 5–25% w/w; diluent in tablets and capsules at higher levels. It is also used as a thickener in foods and as a component of topical dusting powders.",
-   "fa": "ماده جانبی همه‌کاره‌ای در اشکال دارویی جامد خوراکی است که به عنوان رقیق‌کننده، چسباننده و باززا، و همچنین به عنوان تسهیل‌کننده جریان (Glidant) و در پودرهای پاشیدنی به کار می‌رود. غلظت‌های متداول: باززای قرص 3–25% وزنی (اغلب حدود 5–15%)؛ چسباننده به صورت خمیر تازه‌تهیه‌شده در گرانولاسیون مرطوب 5–25% وزنی؛ رقیق‌کننده قرص و کپسول در مقادیر بیشتر. همچنین به عنوان غلیظ‌کننده در مواد غذایی و جزئی از پودرهای پاشیدنی موضعی مصرف می‌شود."
+   "fa": "ماده جانبی همه‌کاره‌ای در اشکال دارویی جامد خوراکی است که به عنوان Diluent، چسباننده و Disintegrant، و همچنین به عنوان Glidant و در پودرهای پاشیدنی به کار می‌رود. غلظت‌های متداول: Disintegrant قرص 3–25% وزنی (اغلب حدود 5–15%)؛ چسباننده به صورت خمیر تازه‌تهیه‌شده در گرانولاسیون مرطوب 5–25% وزنی؛ Diluent قرص و کپسول در مقادیر بیشتر. همچنین به عنوان غلیظ‌کننده در مواد غذایی و جزئی از پودرهای پاشیدنی موضعی مصرف می‌شود."
   },
   "description": {
    "en": "An odourless, tasteless, fine white to off-white powder. Under the microscope the granules are polyhedral or rounded, roughly 2–30 µm across, with a central hilum, and show a dark cross between crossed polarisers. Normal maize starch contains roughly one-quarter amylose and three-quarters amylopectin.",
@@ -1010,7 +1010,7 @@
   },
   "comments": {
    "en": "Native maize starch flows and compresses poorly, so it is seldom used alone in direct compression; pregelatinised starch is preferred there. As a disintegrant it works mainly by wicking and limited swelling and is more effective when part is added extragranularly. Its moisture content can be transferred to moisture-sensitive drugs.",
-   "fa": "نشاسته ذرت طبیعی جریان‌پذیری و تراکم‌پذیری ضعیفی دارد و به همین دلیل به‌ندرت به تنهایی در پرس مستقیم به کار می‌رود؛ در این مورد نشاسته پیش‌ژلاتینه ترجیح داده می‌شود. به عنوان باززا عمدتاً از راه جذب مویینگی آب و تورم محدود عمل می‌کند و اگر بخشی از آن خارج از گرانول اضافه شود مؤثرتر است. رطوبت آن ممکن است به داروهای حساس به رطوبت منتقل شود."
+   "fa": "نشاسته ذرت طبیعی جریان‌پذیری و تراکم‌پذیری ضعیفی دارد و به همین دلیل به‌ندرت به تنهایی در پرس مستقیم به کار می‌رود؛ در این مورد نشاسته پیش‌ژلاتینه ترجیح داده می‌شود. به عنوان Disintegrant عمدتاً از راه جذب مویینگی آب و تورم محدود عمل می‌کند و اگر بخشی از آن خارج از گرانول اضافه شود مؤثرتر است. رطوبت آن ممکن است به داروهای حساس به رطوبت منتقل شود."
   },
   "refs": [
    "usp",
@@ -1269,7 +1269,7 @@
   "mw": "397.64",
   "applications": {
    "en": "An intense sweetener, roughly 600 times as sweet as sucrose (300–1000 times depending on the system), used in oral solutions, suspensions, syrups, chewable and orally disintegrating tablets, powders and foods. It has a clean, sugar-like taste with little aftertaste and is often combined with other sweeteners and flavours. Because of its potency it is used at low concentrations, usually well below 0.5% w/w.",
-   "fa": "شیرین‌کننده‌ای قوی با شیرینی تقریباً 600 برابر ساکارز (بسته به سامانه 300–1000 برابر) است که در محلول‌ها، سوسپانسیون‌ها و شربت‌های خوراکی، قرص‌های جویدنی و باززاشونده در دهان، پودرها و مواد غذایی مصرف می‌شود. طعمی خالص و شبیه قند با طعم باقی‌مانده اندک دارد و اغلب با شیرین‌کننده‌ها و طعم‌دهنده‌های دیگر ترکیب می‌شود. به دلیل قدرت زیاد، در غلظت‌های کم، معمولاً بسیار کمتر از 0.5% وزنی، به کار می‌رود."
+   "fa": "شیرین‌کننده‌ای قوی با شیرینی تقریباً 600 برابر ساکارز (بسته به سامانه 300–1000 برابر) است که در محلول‌ها، سوسپانسیون‌ها و شربت‌های خوراکی، قرص‌های جویدنی و ODT، پودرها و مواد غذایی مصرف می‌شود. طعمی خالص و شبیه قند با طعم باقی‌مانده اندک دارد و اغلب با شیرین‌کننده‌ها و طعم‌دهنده‌های دیگر ترکیب می‌شود. به دلیل قدرت زیاد، در غلظت‌های کم، معمولاً بسیار کمتر از 0.5% وزنی، به کار می‌رود."
   },
   "description": {
    "en": "A white to off-white, practically odourless, free-flowing crystalline powder with a sweet taste.",
