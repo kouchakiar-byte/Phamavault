@@ -148,8 +148,8 @@ export const sections = [
     group: "tools",
     title: bi("Pharmacy", "داروخانه (Pharmacy)"),
     description: bi(
-      "Generic and brand products from the FDA Orange Book with the Iranian manufacturers, and non-sterile compounding with the USP <795> beyond-use date calculator.",
-      "داروهای ژنریک و برند بر اساس Orange Book همراه با تولیدکنندگان داخلی، و ساخت فرآورده‌های غیراستریل در داروخانه با محاسبه تاریخ مصرف پس از ساخت طبق USP <795>.",
+      "Drug interaction checker, Iranian licensed medicines and generic substitution, generic and brand products from the FDA Orange Book, and non-sterile compounding with the USP <795> beyond-use date calculator.",
+      "بررسی تداخلات دارویی، داروهای دارای مجوز ایران و جایگزینی ژنریک، داروهای ژنریک و برند بر اساس Orange Book، و ساخت فرآورده‌های غیراستریل در داروخانه با محاسبه تاریخ مصرف پس از ساخت طبق USP <795>.",
     ),
   },
   {
