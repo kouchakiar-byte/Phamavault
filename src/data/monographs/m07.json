@@ -88,7 +88,7 @@
   ],
   "stability": {
    "en": "Shellac slowly polymerises on storage, particularly when warm, so that films become harder, less soluble and slower to dissolve or disintegrate; bleached shellac is less stable than orange shellac. Store in a well-closed container in a cool place.",
-   "fa": "شلاک در طول نگهداری، به‌ویژه در دمای گرم، به‌آهستگی پلیمریزه می‌شود؛ در نتیجه فیلم‌ها سخت‌تر و کم‌محلول‌تر می‌شوند و انحلال یا باززایی آن‌ها دیرتر رخ می‌دهد. شلاک سفیدشده از شلاک نارنجی ناپایدارتر است. در ظرف کاملاً بسته و در جای خنک نگهداری شود."
+   "fa": "شلاک در طول نگهداری، به‌ویژه در دمای گرم، به‌آهستگی پلیمریزه می‌شود؛ در نتیجه فیلم‌ها سخت‌تر و کم‌محلول‌تر می‌شوند و انحلال یا Disintegration آن‌ها دیرتر رخ می‌دهد. شلاک سفیدشده از شلاک نارنجی ناپایدارتر است. در ظرف کاملاً بسته و در جای خنک نگهداری شود."
   },
   "incompatibilities": {
    "en": "Incompatible with strong oxidising agents. Because it is acidic, it may interact with basic drugs and alkaline excipients in a coating.",
@@ -116,7 +116,7 @@
   },
   "comments": {
    "en": "Because shellac films age and become less soluble, the disintegration and dissolution of shellac-coated products should be checked during stability studies. Aqueous ammoniacal shellac solutions avoid organic solvents and give films that are less affected by ageing.",
-   "fa": "از آنجا که فیلم‌های شلاک با گذشت زمان پیر و کم‌محلول‌تر می‌شوند، زمان باززایی و انحلال فرآورده‌های روکش‌شده با شلاک باید در مطالعات پایداری بررسی شود. محلول‌های آبی آمونیاکی شلاک نیاز به حلال آلی را از بین می‌برند و فیلم‌هایی می‌دهند که کمتر تحت تأثیر پیرشدگی قرار می‌گیرند."
+   "fa": "از آنجا که فیلم‌های شلاک با گذشت زمان پیر و کم‌محلول‌تر می‌شوند، زمان Disintegration و انحلال فرآورده‌های روکش‌شده با شلاک باید در مطالعات پایداری بررسی شود. محلول‌های آبی آمونیاکی شلاک نیاز به حلال آلی را از بین می‌برند و فیلم‌هایی می‌دهند که کمتر تحت تأثیر پیرشدگی قرار می‌گیرند."
   },
   "refs": [
    "usp",
@@ -363,7 +363,7 @@
   "mw": "≈ 10 000–600 000 (grade-dependent); repeat unit 198.11",
   "applications": {
    "en": "Used as a suspending and thickening agent (1–5%), as an emulsion stabiliser (1–3%), as a tablet binder (1–3%) and disintegrant (2.5–10%), and in pastes and creams (5–10%). It is also used in hydrophilic matrices for modified release, in microencapsulation and bead formation by ionotropic gelation with calcium ions, and with sodium bicarbonate and calcium carbonate in raft-forming preparations for gastro-oesophageal reflux. Calcium alginate made from it is used in wound dressings.",
-   "fa": "به عنوان عامل تعلیق‌دهنده و غلیظ‌کننده (1–5%)، پایدارکننده امولسیون (1–3%)، چسباننده قرص (1–3%) و باززای قرص (2.5–10%)، و در خمیرها و کرم‌ها (5–10%) به کار می‌رود. همچنین در ماتریکس‌های آب‌دوست رهش تعدیل‌شده، میکروانکپسولاسیون و ساخت دانه‌ها (bead) با ژل‌شدن یونی (ionotropic gelation) با یون کلسیم، و همراه با سدیم بی‌کربنات و کلسیم کربنات در فرآورده‌های تشکیل‌دهنده لایه شناور (raft) برای ریفلاکس معده به مری مصرف می‌شود. کلسیم آلژینات حاصل از آن در پانسمان زخم کاربرد دارد."
+   "fa": "به عنوان عامل تعلیق‌دهنده و غلیظ‌کننده (1–5%)، پایدارکننده امولسیون (1–3%)، چسباننده قرص (1–3%) و Disintegrant قرص (2.5–10%)، و در خمیرها و کرم‌ها (5–10%) به کار می‌رود. همچنین در ماتریکس‌های آب‌دوست رهش تعدیل‌شده، میکروانکپسولاسیون و ساخت دانه‌ها (bead) با ژل‌شدن یونی (ionotropic gelation) با یون کلسیم، و همراه با سدیم بی‌کربنات و کلسیم کربنات در فرآورده‌های تشکیل‌دهنده لایه شناور (raft) برای ریفلاکس معده به مری مصرف می‌شود. کلسیم آلژینات حاصل از آن در پانسمان زخم کاربرد دارد."
   },
   "description": {
    "en": "An odourless, almost tasteless, white to pale yellowish-brown powder. It is extracted from brown seaweeds; the ratio and sequence of mannuronic (M) and guluronic (G) acid blocks, which depend on the seaweed source, determine the gel strength and viscosity of each grade.",
@@ -1047,7 +1047,7 @@
   "mw": "58.44",
   "applications": {
    "en": "Sodium chloride is used mainly to adjust tonicity in parenteral, ophthalmic, nasal and irrigation solutions; a 0.9% w/v solution is iso-osmotic with serum. It is also used as an osmotic agent in osmotic-pump and other controlled-release tablets, as a channelling agent and diluent in tablets and capsules, to raise the viscosity of surfactant-thickened liquids such as shampoos, and to adjust the gelation and swelling of polymers.",
-   "fa": "سدیم کلرید عمدتاً برای تنظیم تونیسیته در محلول‌های تزریقی، چشمی، بینی و شستشو به کار می‌رود؛ محلول 0.9% وزنی/حجمی با سرم ایزواسموتیک است. همچنین به عنوان عامل اسمزی در قرص‌های پمپ اسمزی و سایر قرص‌های رهش کنترل‌شده، عامل کانال‌ساز و رقیق‌کننده در قرص و کپسول، برای افزایش ویسکوزیته مایعات غلیظ‌شده با سورفکتانت مانند شامپوها، و برای تنظیم ژل‌شدن و تورم پلیمرها مصرف می‌شود."
+   "fa": "سدیم کلرید عمدتاً برای تنظیم تونیسیته در محلول‌های تزریقی، چشمی، بینی و شستشو به کار می‌رود؛ محلول 0.9% وزنی/حجمی با سرم ایزواسموتیک است. همچنین به عنوان عامل اسمزی در قرص‌های پمپ اسمزی و سایر قرص‌های رهش کنترل‌شده، عامل کانال‌ساز و Diluent در قرص و کپسول، برای افزایش ویسکوزیته مایعات غلیظ‌شده با سورفکتانت مانند شامپوها، و برای تنظیم ژل‌شدن و تورم پلیمرها مصرف می‌شود."
   },
   "description": {
    "en": "Colourless cubic crystals or a white crystalline powder with a saline taste. It is slightly hygroscopic above about 75% relative humidity.",
@@ -2084,7 +2084,7 @@
   "mw": "",
   "applications": {
    "en": "Sodium starch glycolate is a 'superdisintegrant' used in oral tablets and capsules prepared by direct compression or wet granulation. Usual concentrations are 2–8% w/w, with about 4% often optimal; higher levels can slow disintegration because the swollen gel blocks further water uptake. It may be added intragranularly, extragranularly or split between the two.",
-   "fa": "سدیم استارچ گلیکولات یک سوپرباززا (Superdisintegrant) است که در قرص‌ها و کپسول‌های خوراکی تهیه‌شده با پرس مستقیم یا گرانولاسیون مرطوب به کار می‌رود. غلظت معمول آن 2–8% وزنی است و حدود 4% اغلب بهینه است؛ مقادیر بیشتر ممکن است باززایی را کند کنند، زیرا ژل متورم‌شده ورود بیشتر آب را مسدود می‌کند. می‌توان آن را به صورت داخل گرانولی، خارج گرانولی یا تقسیم‌شده بین هر دو اضافه کرد."
+   "fa": "سدیم استارچ گلیکولات یک Superdisintegrant است که در قرص‌ها و کپسول‌های خوراکی تهیه‌شده با پرس مستقیم یا گرانولاسیون مرطوب به کار می‌رود. غلظت معمول آن 2–8% وزنی است و حدود 4% اغلب بهینه است؛ مقادیر بیشتر ممکن است Disintegration را کند کنند، زیرا ژل متورم‌شده ورود بیشتر آب را مسدود می‌کند. می‌توان آن را به صورت داخل گرانولی، خارج گرانولی یا تقسیم‌شده بین هر دو اضافه کرد."
   },
   "description": {
    "en": "A white or almost white, odourless, tasteless, free-flowing, very hygroscopic powder made up of oval or spherical granules. The pharmacopoeias describe types that differ in pH and sodium content (Ph. Eur. Types A, B and C; USP–NF Types A and B).",
@@ -2148,7 +2148,7 @@
   },
   "incompatibilities": {
    "en": "Incompatible with ascorbic acid. Its disintegrant efficiency can be reduced by high concentrations of hydrophobic lubricants, by some highly soluble or hygroscopic excipients, and by high compression forces. As an anionic polymer it may bind some cationic drugs.",
-   "fa": "با آسکوربیک اسید ناسازگار است. کارایی باززایی آن ممکن است با غلظت‌های زیاد روان‌کننده‌های آب‌گریز، برخی مواد کمکی بسیار محلول یا رطوبت‌گیر و نیروهای پرس زیاد کاهش یابد. به عنوان پلیمر آنیونی ممکن است برخی داروهای کاتیونی را به خود متصل کند."
+   "fa": "با آسکوربیک اسید ناسازگار است. کارایی Disintegration آن ممکن است با غلظت‌های زیاد روان‌کننده‌های آب‌گریز، برخی مواد کمکی بسیار محلول یا رطوبت‌گیر و نیروهای پرس زیاد کاهش یابد. به عنوان پلیمر آنیونی ممکن است برخی داروهای کاتیونی را به خود متصل کند."
   },
   "manufacture": {
    "en": "Starch (usually potato starch) is cross-linked, either chemically (for example with sodium trimetaphosphate) or by dehydration, and then carboxymethylated by reaction with sodium monochloroacetate in an alkaline alcoholic medium. The product is neutralised with an acid such as citric acid, washed with aqueous alcohol to remove sodium chloride and glycolate by-products, and dried.",
@@ -2172,7 +2172,7 @@
   },
   "comments": {
    "en": "Its rapid swelling with little gel formation makes it effective at low levels, but performance varies with degree of substitution, cross-linking and particle size, so the source and grade should be specified. It is less affected by wet granulation than many disintegrants, though some loss of efficiency can occur.",
-   "fa": "تورم سریع آن همراه با تشکیل ژل کم باعث می‌شود در غلظت‌های پایین مؤثر باشد، ولی عملکرد آن با درجه جانشینی، میزان کراس‌لینک و اندازه ذره تغییر می‌کند؛ بنابراین منبع و گرید باید مشخص شود. نسبت به بسیاری از باززاها کمتر تحت تأثیر گرانولاسیون مرطوب قرار می‌گیرد، هرچند ممکن است مقداری از کارایی آن کم شود."
+   "fa": "تورم سریع آن همراه با تشکیل ژل کم باعث می‌شود در غلظت‌های پایین مؤثر باشد، ولی عملکرد آن با درجه جانشینی، میزان کراس‌لینک و اندازه ذره تغییر می‌کند؛ بنابراین منبع و گرید باید مشخص شود. نسبت به بسیاری از Disintegrantها کمتر تحت تأثیر گرانولاسیون مرطوب قرار می‌گیرد، هرچند ممکن است مقداری از کارایی آن کم شود."
   },
   "refs": [
    "usp",
@@ -2201,7 +2201,7 @@
   "mw": "390.5",
   "applications": {
    "en": "Used as a tablet and capsule lubricant at about 0.5–2.0% w/w. It is chosen in place of magnesium stearate when that lubricant is incompatible with the drug, slows dissolution or gives soft tablets, as it is less hydrophobic and less sensitive to over-blending. It is also used in effervescent and orally disintegrating tablets, and in some food applications.",
-   "fa": "به عنوان روان‌کننده (Lubricant) قرص و کپسول در غلظت حدود 0.5–2.0% وزنی به کار می‌رود. در مواردی که منیزیم استئارات با دارو ناسازگار است، انحلال را کند می‌کند یا قرص نرم می‌دهد، به جای آن انتخاب می‌شود، زیرا آب‌گریزی کمتری دارد و به اختلاط بیش از حد حساسیت کمتری نشان می‌دهد. در قرص‌های جوشان و قرص‌های باززاشونده در دهان و برخی کاربردهای غذایی نیز مصرف می‌شود."
+   "fa": "به عنوان روان‌کننده (Lubricant) قرص و کپسول در غلظت حدود 0.5–2.0% وزنی به کار می‌رود. در مواردی که منیزیم استئارات با دارو ناسازگار است، انحلال را کند می‌کند یا قرص نرم می‌دهد، به جای آن انتخاب می‌شود، زیرا آب‌گریزی کمتری دارد و به اختلاط بیش از حد حساسیت کمتری نشان می‌دهد. در قرص‌های جوشان و قرص‌های ODT (Orally disintegrating) و برخی کاربردهای غذایی نیز مصرف می‌شود."
   },
   "description": {
    "en": "A fine, white powder with agglomerates of flat, circular particles. Pharmacopoeial material limits the related impurities sodium stearyl maleate and stearyl alcohol.",
@@ -2948,7 +2948,7 @@
   "mw": "182.17",
   "applications": {
    "en": "Sorbitol is used as a diluent in tablets made by wet granulation or direct compression (especially chewable and lozenge-type tablets), as a sweetening agent, humectant and plasticiser, and as a vehicle in sugar-free liquids. Typical concentrations: tablet binder and filler 25–90%; humectant 3–15%; moisture-control agent in tablets 3–15%; oral solutions 20–35%; oral suspensions up to 70% (as sorbitol solution); plasticiser for gelatin and cellulose films 5–20%; to prevent crystallisation around bottle caps 15–30%; toothpastes 20–60%; topical emulsions 2–18%; intramuscular injections 10–25%.",
-   "fa": "سوربیتول به عنوان رقیق‌کننده در قرص‌های تهیه‌شده با گرانولاسیون مرطوب یا پرس مستقیم (به‌ویژه قرص‌های جویدنی و لوزانژ)، شیرین‌کننده، مرطوب‌نگه‌دارنده (humectant) و نرم‌کننده (plasticiser)، و به عنوان حامل در مایعات بدون قند به کار می‌رود. غلظت‌های متداول: چسباننده و پرکننده قرص 25–90%؛ مرطوب‌نگه‌دارنده 3–15%؛ کنترل رطوبت در قرص 3–15%؛ محلول خوراکی 20–35%؛ سوسپانسیون خوراکی تا 70% (به صورت محلول سوربیتول)؛ نرم‌کننده فیلم‌های ژلاتین و سلولزی 5–20%؛ جلوگیری از کریستالیزه شدن در اطراف درپوش بطری 15–30%؛ خمیردندان 20–60%؛ امولسیون‌های موضعی 2–18%؛ تزریق عضلانی 10–25%."
+   "fa": "سوربیتول به عنوان Diluent در قرص‌های تهیه‌شده با گرانولاسیون مرطوب یا پرس مستقیم (به‌ویژه قرص‌های جویدنی و لوزانژ)، شیرین‌کننده، مرطوب‌نگه‌دارنده (humectant) و نرم‌کننده (plasticiser)، و به عنوان حامل در مایعات بدون قند به کار می‌رود. غلظت‌های متداول: چسباننده و پرکننده قرص 25–90%؛ مرطوب‌نگه‌دارنده 3–15%؛ کنترل رطوبت در قرص 3–15%؛ محلول خوراکی 20–35%؛ سوسپانسیون خوراکی تا 70% (به صورت محلول سوربیتول)؛ نرم‌کننده فیلم‌های ژلاتین و سلولزی 5–20%؛ جلوگیری از کریستالیزه شدن در اطراف درپوش بطری 15–30%؛ خمیردندان 20–60%؛ امولسیون‌های موضعی 2–18%؛ تزریق عضلانی 10–25%."
   },
   "description": {
    "en": "An odourless, white or almost colourless, crystalline, hygroscopic powder, granules or flakes with a pleasant, cooling, sweet taste; its sweetness is about 50–60% of that of sucrose. Several crystalline polymorphs and an amorphous form exist; the stable γ-form is used in most direct-compression grades.",

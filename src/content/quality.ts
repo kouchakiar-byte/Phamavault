@@ -191,11 +191,11 @@ export const qc = {
       ),
     },
     {
-      test: bi("Disintegration", "زمان باززایی (Disintegration)"),
+      test: bi("Disintegration", "زمان Disintegration"),
       chapter: "USP <701> · Ph. Eur. 2.9.1",
       criteria: bi(
         "6 units disintegrate within the specified time; if 1 or 2 fail, test 12 more and at least 16 of 18 must pass. Ph. Eur. limits: uncoated tablets 15 min, film-coated tablets 30 min.",
-        `باززایی هر 6 واحد در زمان تعیین‌شده کامل شود؛ اگر 1 یا 2 واحد مردود شد، 12 واحد دیگر آزمون و دست‌کم 16 از 18 واحد باید منطبق باشند. حدود ${ltr("Ph. Eur.")}: قرص بدون روکش 15 دقیقه، قرص با روکش فیلم 30 دقیقه.`,
+        `Disintegration هر 6 واحد در زمان تعیین‌شده کامل شود؛ اگر 1 یا 2 واحد مردود شد، 12 واحد دیگر آزمون و دست‌کم 16 از 18 واحد باید منطبق باشند. حدود ${ltr("Ph. Eur.")}: قرص بدون روکش 15 دقیقه، قرص با روکش فیلم 30 دقیقه.`,
       ),
     },
     {

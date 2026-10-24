@@ -20,7 +20,7 @@
   "mw": "122.12",
   "applications": {
    "en": "Erythritol is used as a bulk sweetener and as a filler in tablets, especially chewable and orally disintegrating tablets, sugar-free lozenges and medicated chewing gum; directly compressible granulated grades are available and it may make up the bulk of such tablets. It has about 60–70% of the sweetness of sucrose and is often combined with intense sweeteners to round off the taste. It is also widely used in foods and beverages as a low-calorie, non-cariogenic sweetener.",
-   "fa": "اریتریتول به عنوان شیرین‌کننده حجیم و پرکننده در قرص‌ها، به‌ویژه قرص‌های جویدنی و قرص‌های باززاشونده در دهان (ODT)، لوزنج‌های بدون قند و آدامس‌های دارویی به کار می‌رود؛ گریدهای گرانوله قابل پرس مستقیم نیز وجود دارد و ممکن است بخش عمده وزن این قرص‌ها را تشکیل دهد. شیرینی آن حدود 60–70% ساکارز است و اغلب همراه با شیرین‌کننده‌های قوی مصرف می‌شود تا طعم متعادل‌تری حاصل شود. در صنایع غذایی و نوشیدنی نیز به عنوان شیرین‌کننده کم‌کالری و غیرپوسیدگی‌زا مصرف گسترده دارد."
+   "fa": "اریتریتول به عنوان شیرین‌کننده حجیم و پرکننده در قرص‌ها، به‌ویژه قرص‌های جویدنی و قرص‌های ODT (Orally disintegrating) (ODT)، لوزنج‌های بدون قند و آدامس‌های دارویی به کار می‌رود؛ گریدهای گرانوله قابل پرس مستقیم نیز وجود دارد و ممکن است بخش عمده وزن این قرص‌ها را تشکیل دهد. شیرینی آن حدود 60–70% ساکارز است و اغلب همراه با شیرین‌کننده‌های قوی مصرف می‌شود تا طعم متعادل‌تری حاصل شود. در صنایع غذایی و نوشیدنی نیز به عنوان شیرین‌کننده کم‌کالری و غیرپوسیدگی‌زا مصرف گسترده دارد."
   },
   "description": {
    "en": "A four-carbon sugar alcohol (polyol) that occurs naturally in some fruits and fermented foods. It is a white, odourless, crystalline powder or granules with a clean sweet taste and a marked cooling sensation in the mouth.",
@@ -706,7 +706,7 @@
   "mw": "180.16",
   "applications": {
    "en": "Used as a sweetener and flavour enhancer in tablets, syrups and oral solutions; it is sweeter than sucrose (about 1.2–1.8 times, depending on temperature and pH) and enhances fruit flavours. Directly compressible grades are used as tablet diluents, particularly in chewable tablets. It is also used widely in foods and beverages.",
-   "fa": "به عنوان شیرین‌کننده و تقویت‌کننده طعم در قرص، شربت و محلول خوراکی به کار می‌رود؛ از ساکارز شیرین‌تر است (بسته به دما و pH حدود 1.2–1.8 برابر) و طعم میوه‌ای را تقویت می‌کند. گریدهای قابل پرس مستقیم به عنوان رقیق‌کننده قرص، به‌ویژه در قرص‌های جویدنی، مصرف می‌شوند. در غذا و نوشیدنی نیز کاربرد گسترده دارد."
+   "fa": "به عنوان شیرین‌کننده و تقویت‌کننده طعم در قرص، شربت و محلول خوراکی به کار می‌رود؛ از ساکارز شیرین‌تر است (بسته به دما و pH حدود 1.2–1.8 برابر) و طعم میوه‌ای را تقویت می‌کند. گریدهای قابل پرس مستقیم به عنوان Diluent قرص، به‌ویژه در قرص‌های جویدنی، مصرف می‌شوند. در غذا و نوشیدنی نیز کاربرد گسترده دارد."
   },
   "description": {
    "en": "A ketohexose monosaccharide occurring naturally in fruit and honey. Colourless crystals or a white crystalline powder, odourless and with a very sweet taste.",
@@ -2161,7 +2161,7 @@
   "mw": "",
   "applications": {
    "en": "Used in oral capsules and tablets as a binder, diluent and disintegrant; partially pregelatinised grades flow and compress well enough for direct compression and also act as a lubricant to some degree. Fully pregelatinised starch is used as a binder and thickening agent. Typical concentrations: capsule diluent 5–75%; tablet binder in direct compression 5–20%; tablet binder in wet granulation 5–10%; tablet disintegrant 5–10%.",
-   "fa": "در کپسول و قرص خوراکی به عنوان چسباننده، رقیق‌کننده و باززا به کار می‌رود؛ گریدهای نیمه‌پیش‌ژلاتینه جریان‌پذیری و تراکم‌پذیری کافی برای پرس مستقیم دارند و تا حدی خاصیت روان‌کنندگی هم دارند. نشاسته کاملاً پیش‌ژلاتینه به عنوان چسباننده و غلیظ‌کننده مصرف می‌شود. غلظت‌های متداول: رقیق‌کننده کپسول 5–75%؛ چسباننده قرص در پرس مستقیم 5–20%؛ چسباننده قرص در گرانولاسیون مرطوب 5–10%؛ باززای قرص 5–10%."
+   "fa": "در کپسول و قرص خوراکی به عنوان چسباننده، Diluent و Disintegrant به کار می‌رود؛ گریدهای نیمه‌پیش‌ژلاتینه جریان‌پذیری و تراکم‌پذیری کافی برای پرس مستقیم دارند و تا حدی خاصیت روان‌کنندگی هم دارند. نشاسته کاملاً پیش‌ژلاتینه به عنوان چسباننده و غلیظ‌کننده مصرف می‌شود. غلظت‌های متداول: Diluent کپسول 5–75%؛ چسباننده قرص در پرس مستقیم 5–20%؛ چسباننده قرص در گرانولاسیون مرطوب 5–10%؛ Disintegrant قرص 5–10%."
   },
   "description": {
    "en": "Starch (usually maize, but also potato or rice) that has been chemically unmodified but physically processed to rupture all or part of the starch granules. It is a moderately coarse to fine, white to off-white powder, odourless and with a slight characteristic taste. Partially pregelatinised grades contain a cold-water-soluble fraction together with intact granules.",

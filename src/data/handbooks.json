@@ -6,7 +6,7 @@
   },
   "intro": {
    "en": "Tablets and capsules dominate oral therapy because they are stable, dose-accurate and well accepted by patients. Their quality is governed by the properties of the powders (particle size, flow, compressibility, moisture), by the unit operations that transform them (blending, granulation, compression, coating, encapsulation) and by the tests that confirm uniformity, mechanical strength, disintegration and dissolution. A QbD approach per ICH Q8(R2) links material attributes and process parameters to these CQAs.",
-   "fa": "قرص‌ها و کپسول‌ها به دلیل پایداری، دقت دوز و پذیرش خوب بیمار، بخش اصلی درمان خوراکی را تشکیل می‌دهند. کیفیت آن‌ها به ویژگی‌های پودر (اندازهٔ ذره، جریان‌پذیری، تراکم‌پذیری، رطوبت)، به عملیات واحدی که پودر را تبدیل می‌کنند (اختلاط، گرانوله‌سازی، پرس، روکش‌دهی، پرکردن کپسول) و به آزمون‌هایی که یکنواختی، استحکام مکانیکی، باززایی (disintegration) و انحلال را تأیید می‌کنند وابسته است. رویکرد QbD مطابق ⁦ICH Q8(R2)⁩ ویژگی‌های مواد و پارامترهای فرایند را به این CQAها مرتبط می‌کند."
+   "fa": "قرص‌ها و کپسول‌ها به دلیل پایداری، دقت دوز و پذیرش خوب بیمار، بخش اصلی درمان خوراکی را تشکیل می‌دهند. کیفیت آن‌ها به ویژگی‌های پودر (اندازهٔ ذره، جریان‌پذیری، تراکم‌پذیری، رطوبت)، به عملیات واحدی که پودر را تبدیل می‌کنند (اختلاط، گرانوله‌سازی، پرس، روکش‌دهی، پرکردن کپسول) و به آزمون‌هایی که یکنواختی، استحکام مکانیکی، Disintegration و انحلال را تأیید می‌کنند وابسته است. رویکرد QbD مطابق ⁦ICH Q8(R2)⁩ ویژگی‌های مواد و پارامترهای فرایند را به این CQAها مرتبط می‌کند."
   },
   "topics": [
    {
@@ -29,7 +29,7 @@
      },
      {
       "en": "Flow aids: colloidal silicon dioxide is effective at about 0.1–0.5 % w/w (it coats host particles and reduces cohesion); talc is used at higher levels (about 1–10 %). Excess colloidal silica can reduce bulk density and give no further gain.",
-      "fa": "تسهیل‌کننده‌های جریان (glidant): سیلیکون دی‌اکسید کلوئیدی در حدود ⁦0.1–0.5 % w/w⁩ مؤثر است (سطح ذرات میزبان را می‌پوشاند و چسبندگی را کم می‌کند)؛ تالک در مقادیر بالاتر (حدود ⁦1–10 %⁩) به کار می‌رود. مقدار زیاد سیلیس کلوئیدی ممکن است دانسیتهٔ توده را کاهش دهد بی‌آنکه بهبود بیشتری ایجاد کند."
+      "fa": "Glidantها: سیلیکون دی‌اکسید کلوئیدی در حدود ⁦0.1–0.5 % w/w⁩ مؤثر است (سطح ذرات میزبان را می‌پوشاند و چسبندگی را کم می‌کند)؛ تالک در مقادیر بالاتر (حدود ⁦1–10 %⁩) به کار می‌رود. مقدار زیاد سیلیس کلوئیدی ممکن است دانسیتهٔ توده را کاهش دهد بی‌آنکه بهبود بیشتری ایجاد کند."
      },
      {
       "en": "Lubrication: magnesium stearate is typically 0.25–1 % w/w, added last and blended briefly (often 2–5 min, or a defined number of bin revolutions). Over-lubrication shows up as falling hardness and slower dissolution; fix by reducing level or blend time, or by switching to sodium stearyl fumarate.",
@@ -125,7 +125,7 @@
      },
      {
       "en": "Disintegration per USP <701>/Ph. Eur. 2.9.1: Ph. Eur. requires uncoated tablets to disintegrate within 15 min and film-coated tablets within 30 min (USP limits are set in individual monographs). Slow disintegration → excessive compression force, binder or lubricant; check superdisintegrant level (e.g. croscarmellose sodium about 0.5–5 %).",
-      "fa": "باززایی طبق ⁦USP <701>⁩/⁦Ph. Eur. 2.9.1⁩: فارماکوپهٔ اروپا برای قرص‌های بدون روکش حداکثر ⁦15 min⁩ و برای قرص‌های با روکش فیلمی حداکثر ⁦30 min⁩ را الزامی می‌داند (حدود USP در مونوگراف هر فرآورده تعیین می‌شود). باززایی کند ← نیروی پرس، چسباننده یا روان‌کنندهٔ بیش از حد؛ مقدار superdisintegrant را بررسی کنید (مثلاً کراس‌کارملوز سدیم حدود ⁦0.5–5 %⁩)."
+      "fa": "Disintegration طبق ⁦USP <701>⁩/⁦Ph. Eur. 2.9.1⁩: فارماکوپهٔ اروپا برای قرص‌های بدون روکش حداکثر ⁦15 min⁩ و برای قرص‌های با روکش فیلمی حداکثر ⁦30 min⁩ را الزامی می‌داند (حدود USP در مونوگراف هر فرآورده تعیین می‌شود). Disintegration کند ← نیروی پرس، چسباننده یا روان‌کنندهٔ بیش از حد؛ مقدار superdisintegrant را بررسی کنید (مثلاً کراس‌کارملوز سدیم حدود ⁦0.5–5 %⁩)."
      }
     ],
     "refs": [
@@ -163,7 +163,7 @@
      },
      {
       "en": "Enteric (delayed-release) performance per USP <711>: acid stage 2 h in 0.1 N HCl, where at stage A1 no individual unit may release more than 10 % of label claim; followed by the buffer stage at pH 6.8. Ph. Eur. 2.9.1 also includes a gastro-resistance disintegration test. Failures usually trace to insufficient coat thickness at edges or film defects.",
-      "fa": "عملکرد روکش روده‌ای (تأخیری) طبق ⁦USP <711>⁩: مرحلهٔ اسیدی ⁦2 h⁩ در ⁦0.1 N HCl⁩ که در مرحلهٔ ⁦A1⁩ هیچ واحدی نباید بیش از ⁦10 %⁩ مقدار برچسب را آزاد کند؛ سپس مرحلهٔ بافر در ⁦pH 6.8⁩. ⁦Ph. Eur. 2.9.1⁩ نیز آزمون باززایی برای مقاومت معده‌ای دارد. شکست‌ها معمولاً ناشی از ضخامت ناکافی روکش در لبه‌ها یا نقص فیلم است."
+      "fa": "عملکرد روکش روده‌ای (تأخیری) طبق ⁦USP <711>⁩: مرحلهٔ اسیدی ⁦2 h⁩ در ⁦0.1 N HCl⁩ که در مرحلهٔ ⁦A1⁩ هیچ واحدی نباید بیش از ⁦10 %⁩ مقدار برچسب را آزاد کند؛ سپس مرحلهٔ بافر در ⁦pH 6.8⁩. ⁦Ph. Eur. 2.9.1⁩ نیز آزمون Disintegration برای مقاومت معده‌ای دارد. شکست‌ها معمولاً ناشی از ضخامت ناکافی روکش در لبه‌ها یا نقص فیلم است."
      },
      {
       "en": "Aqueous polymer dispersions (ethylcellulose, methacrylate copolymers) require curing above the MFFT to complete coalescence; incomplete curing causes release that changes on storage. Confirm with stability per ICH Q1A(R2), and assess light protection of the film per ICH Q1B.",
@@ -205,7 +205,7 @@
      },
      {
       "en": "In-process and release controls: net fill weight checks with automatic checkweighers; uniformity of dosage units per USP <905>/Ph. Eur. 2.9.40; Ph. Eur. requires hard capsules to disintegrate within 30 min (Ph. Eur. 2.9.1). Erratic weights → improve flow, keep a constant powder-bed level and verify dosator/tamping settings.",
-      "fa": "کنترل‌های حین فرایند و آزادسازی: کنترل وزن خالص پرشده با checkweigher خودکار؛ یکنواختی واحدهای دوز طبق ⁦USP <905>⁩/⁦Ph. Eur. 2.9.40⁩؛ فارماکوپهٔ اروپا زمان باززایی کپسول‌های سخت را حداکثر ⁦30 min⁩ می‌خواهد (⁦Ph. Eur. 2.9.1⁩). وزن‌های نامنظم ← بهبود جریان، ثابت نگه‌داشتن سطح بستر پودر و بررسی تنظیمات دوزاتور/tamping."
+      "fa": "کنترل‌های حین فرایند و آزادسازی: کنترل وزن خالص پرشده با checkweigher خودکار؛ یکنواختی واحدهای دوز طبق ⁦USP <905>⁩/⁦Ph. Eur. 2.9.40⁩؛ فارماکوپهٔ اروپا زمان Disintegration کپسول‌های سخت را حداکثر ⁦30 min⁩ می‌خواهد (⁦Ph. Eur. 2.9.1⁩). وزن‌های نامنظم ← بهبود جریان، ثابت نگه‌داشتن سطح بستر پودر و بررسی تنظیمات دوزاتور/tamping."
      },
      {
       "en": "Dissolution slowdown on stability in gelatin capsules → suspect cross-linking; screen excipients for aldehydes/peroxides, protect from heat and humidity, apply the enzyme-containing two-tier test of USP <711>, or switch to HPMC shells. Note that some HPMC shells (gelled with gellan or carrageenan) can open more slowly in certain acidic or cation-containing media.",
@@ -1251,7 +1251,7 @@
      },
      {
       "en": "Testing: identity and assay by compendial titration (complexometric EDTA for Ca, Mg and Zn; cerimetric for ferrous iron) or by ICP-OES/ICP-MS (USP <730>); disintegration and dissolution of supplement tablets per USP <2040>; elemental contaminants per USP <2232> (dietary supplements) or ICH Q3D(R2) (medicines). Natural calcium sources (oyster shell, bone meal, dolomite) carry a higher lead risk.",
-      "fa": "آزمون‌ها: شناسایی و تعیین مقدار با تیتراسیون فارماکوپه‌ای (کمپلکسومتری با EDTA برای Ca، Mg و Zn؛ سریمتری برای آهن فرو) یا با ⁦ICP-OES/ICP-MS (USP <730>)⁩؛ زمان باززایی (disintegration) و انحلال قرص‌های مکمل مطابق ⁦USP <2040>⁩؛ آلاینده‌های عنصری مطابق ⁦USP <2232>⁩ (مکمل‌های غذایی) یا ⁦ICH Q3D(R2)⁩ (داروها). منابع طبیعی کلسیم (صدف، پودر استخوان، دولومیت) خطر سرب بالاتری دارند."
+      "fa": "آزمون‌ها: شناسایی و تعیین مقدار با تیتراسیون فارماکوپه‌ای (کمپلکسومتری با EDTA برای Ca، Mg و Zn؛ سریمتری برای آهن فرو) یا با ⁦ICP-OES/ICP-MS (USP <730>)⁩؛ زمان Disintegration و انحلال قرص‌های مکمل مطابق ⁦USP <2040>⁩؛ آلاینده‌های عنصری مطابق ⁦USP <2232>⁩ (مکمل‌های غذایی) یا ⁦ICH Q3D(R2)⁩ (داروها). منابع طبیعی کلسیم (صدف، پودر استخوان، دولومیت) خطر سرب بالاتری دارند."
      },
      {
       "en": "Troubleshooting: oversized tablets → switch to a higher-fraction compound (oxide, carbonate) or a directly compressible granular grade; losses of vitamins C and A in mineral-rich tablets → replace ferrous sulfate with a less reactive or coated iron form; capping or poor compressibility with MgO or CaCO3 → use pre-granulated (starch- or maltodextrin-granulated) grades.",
@@ -1281,7 +1281,7 @@
      },
      {
       "en": "Build-up: pre-dilute micro-ingredients by geometric dilution on part of the carrier before adding them to the main carrier; typical carriers are maltodextrin, microcrystalline cellulose, rice flour, and calcium carbonate or dicalcium phosphate for mineral premixes, chosen for particle-size match, low moisture and inertness; add a flow aid such as colloidal silicon dioxide where needed.",
-      "fa": "ساخت: اجزای کم‌مقدار را ابتدا به روش رقیق‌سازی هندسی روی بخشی از حامل رقیق کنید و سپس به حامل اصلی بیفزایید؛ حامل‌های متداول مالتودکسترین، میکروکریستالین سلولز، آرد برنج و برای پری‌میکس‌های معدنی کلسیم کربنات یا دی‌کلسیم فسفات هستند که بر اساس تطابق اندازه ذره، رطوبت پایین و بی‌اثر بودن انتخاب می‌شوند؛ در صورت نیاز تسهیل‌کننده جریان مانند سیلیکون دی‌اکسید کلوئیدی اضافه کنید."
+      "fa": "ساخت: اجزای کم‌مقدار را ابتدا به روش رقیق‌سازی هندسی روی بخشی از حامل رقیق کنید و سپس به حامل اصلی بیفزایید؛ حامل‌های متداول مالتودکسترین، میکروکریستالین سلولز، آرد برنج و برای پری‌میکس‌های معدنی کلسیم کربنات یا دی‌کلسیم فسفات هستند که بر اساس تطابق اندازه ذره، رطوبت پایین و بی‌اثر بودن انتخاب می‌شوند؛ در صورت نیاز Glidant مانند سیلیکون دی‌اکسید کلوئیدی اضافه کنید."
      },
      {
       "en": "Separate premixes: keep vitamin and mineral premixes apart, and keep highly hygroscopic or reactive components (choline chloride, ferrous and copper salts, free ascorbic acid next to B12) out of the vitamin premix, or use coated/encapsulated grades.",
@@ -1438,7 +1438,7 @@
      },
      {
       "en": "Sample across the run (start, middle, end, and after stoppages or hopper changes) for weight, hardness, thickness, friability (≤ 1.0 % mass loss per Ph. Eur. 2.9.7/USP <1216>), disintegration, dissolution profile, assay, related substances, LOD and coating weight gain.",
-      "fa": "در طول فرایند (ابتدا، میانه، انتها و پس از توقف‌ها یا تعویض هاپر) برای وزن، سختی، ضخامت، فرسایش‌پذیری (کاهش وزن ⁦≤ 1.0 %⁩ طبق ⁦Ph. Eur. 2.9.7/USP <1216>⁩)، زمان باززایی (disintegration)، پروفایل انحلال، تعیین مقدار، مواد مرتبط، LOD و افزایش وزن روکش نمونه‌برداری کنید."
+      "fa": "در طول فرایند (ابتدا، میانه، انتها و پس از توقف‌ها یا تعویض هاپر) برای وزن، سختی، ضخامت، فرسایش‌پذیری (کاهش وزن ⁦≤ 1.0 %⁩ طبق ⁦Ph. Eur. 2.9.7/USP <1216>⁩)، زمان Disintegration، پروفایل انحلال، تعیین مقدار، مواد مرتبط، LOD و افزایش وزن روکش نمونه‌برداری کنید."
      },
      {
       "en": "Establish hold times for wet granules, dried granules, final blend, cores before coating and bulk tablets before packaging, supported by assay, impurities, water content, microbial and dissolution data; unsupported hold times are a frequent inspection finding.",
@@ -1692,7 +1692,7 @@
      },
      {
       "en": "Pitfalls → fixes: relative response factors not determined (impurities mis-quantified) → determine RRFs and apply correction factors, conventionally when outside 0.8–1.2; poor mass balance on stability (assay loss without matching degradant growth) → look for non-UV-absorbing or volatile degradants with orthogonal detection; OOS results invalidated without a documented laboratory investigation → follow the phased approach of the FDA OOS guidance.",
-      "fa": "خطاها و راه‌حل‌ها: تعیین نشدن فاکتور پاسخ نسبی (RRF) و در نتیجه کمّی‌سازی نادرست ناخالصی‌ها ← RRF را تعیین و در صورت خارج بودن از محدوده متداول ⁦0.8–1.2⁩ فاکتور تصحیح اعمال کنید؛ موازنه جرمی ضعیف در پایداری (کاهش تعیین مقدار بدون افزایش متناظر محصولات تخریب) ← جستجوی محصولات تخریب فاقد جذب UV یا فرار با روش‌های آشکارسازی متعامد؛ ابطال نتایج OOS بدون بررسی آزمایشگاهی مستند ← پیروی از رویکرد مرحله‌ای راهنمای OOS سازمان FDA."
+      "fa": "خطاها و راه‌حل‌ها: تعیین نشدن فاکتور پاسخ نسبی (RRF) و در نتیجه کمّی‌سازی نادرست ناخالصی‌ها ← RRF را تعیین و در صورت خارج بودن از محدوده متداول ⁦0.8–1.2⁩ فاکتور تصحیح اعمال کنید؛ موازنه جرمی ضعیف در پایداری (کاهش تعیین مقدار بدون افزایش متناظر محصولات تخریب) ← جستجوی محصولات تخریب فاقد جذب UV یا فرار با روش‌های Detection متعامد؛ ابطال نتایج OOS بدون بررسی آزمایشگاهی مستند ← پیروی از رویکرد مرحله‌ای راهنمای OOS سازمان FDA."
      }
     ],
     "refs": [

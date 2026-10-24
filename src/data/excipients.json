@@ -2,7 +2,7 @@
  "functions": {
   "dil": {
    "en": "Diluent (filler)",
-   "fa": "رقیق‌کننده (پرکننده)"
+   "fa": "Filler (Diluent)"
   },
   "bin": {
    "en": "Binder",
@@ -10,7 +10,7 @@
   },
   "dis": {
    "en": "Disintegrant",
-   "fa": "باززا (Disintegrant)"
+   "fa": "Disintegrant"
   },
   "lub": {
    "en": "Lubricant",
@@ -18,7 +18,7 @@
   },
   "gli": {
    "en": "Glidant",
-   "fa": "تسهیل‌کننده جریان (Glidant)"
+   "fa": "Glidant"
   },
   "sur": {
    "en": "Surfactant, emulsifier",
