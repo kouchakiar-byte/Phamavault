@@ -40,12 +40,12 @@ export const photoCredits: Partial<Record<SectionSlug, { text: string; href: str
   },
 };
 
-/** A header band's photo: behind the whole band on phones, the end half on desktop, fading into the navy. */
+/** A header band's photo: behind the whole band on phones, the end half on desktop (the text keeps to the start half), fading into the navy. */
 export function HeaderPhoto({ photo, credit }: { photo: StaticImageData; credit?: { text: string; href: string } }) {
   return (
     <>
-      <div className="absolute inset-0 -z-20 lg:start-auto lg:w-[58%]" aria-hidden="true">
-        <Image src={photo} alt="" fill sizes="(min-width: 1024px) 58vw, 100vw" placeholder="blur" fetchPriority="high" className="object-cover" />
+      <div className="absolute inset-0 -z-20 lg:start-auto lg:w-1/2" aria-hidden="true">
+        <Image src={photo} alt="" fill sizes="(min-width: 1024px) 50vw, 100vw" placeholder="blur" fetchPriority="high" className="object-cover" />
         <div className="absolute inset-0 bg-vault-900/80 lg:bg-transparent lg:bg-gradient-to-r lg:from-vault-900 lg:via-vault-900/60 lg:to-vault-900/15 lg:rtl:bg-gradient-to-l" />
       </div>
       {credit && (
@@ -80,7 +80,7 @@ export function PageHeader({ locale, section: slug, title, lead, back }: Props) 
         <BackLink href={backLink.href} tone="light">
           {backLink.label[locale]}
         </BackLink>
-        <div className="mt-6 flex items-start gap-5">
+        <div className={`mt-6 flex items-start gap-5 ${photo ? "lg:w-1/2 lg:pe-10" : ""}`}>
           <span className="hidden size-14 shrink-0 items-center justify-center rounded-2xl bg-molecule-500/15 text-molecule-400 sm:flex">
             <Icon className="size-7" aria-hidden="true" />
           </span>
@@ -97,7 +97,7 @@ export function PageHeader({ locale, section: slug, title, lead, back }: Props) 
               as="h1"
               text={title}
               locale={locale}
-              className="mt-3 text-3xl font-bold tracking-tight text-capsule-400 sm:text-5xl"
+              className={`mt-3 text-3xl font-bold tracking-tight text-capsule-400 ${photo ? "sm:text-4xl xl:text-5xl" : "sm:text-5xl"}`}
               secondaryClassName="text-vault-100"
             />
             {lead && <p className="mt-5 text-lg leading-relaxed text-vault-100/80">{lead[locale]}</p>}
