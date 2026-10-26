@@ -25,22 +25,28 @@ export function LegalPage({
         {photo && <HeaderPhoto photo={photo} />}
         <MoleculePattern className="text-white/[0.05]" />
         <Container className="py-14">
-          <BiTitle
-            as="h1"
-            text={page.title}
-            locale={locale}
-            className="text-3xl font-bold tracking-tight text-capsule-400 sm:text-4xl"
-            secondaryClassName="!opacity-100 text-vault-100/60"
-            brandPlate
-          />
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-vault-100/80">{withBrand(page.lead[locale], { plate: true })}</p>
+          <div className={photo ? "lg:w-1/2 lg:pe-10" : undefined}>
+            <BiTitle
+              as="h1"
+              text={page.title}
+              locale={locale}
+              className="text-3xl font-bold tracking-tight text-capsule-400 sm:text-4xl"
+              secondaryClassName="!opacity-100 text-vault-100/60"
+              brandPlate
+            />
+            <p className="mt-4 max-w-3xl text-lg leading-relaxed text-vault-100/80">
+              {withBrand(page.lead[locale], { plate: true })}
+            </p>
+          </div>
         </Container>
       </section>
       <Container className="max-w-3xl space-y-10 py-12">
         {children}
         {page.sections.map((section) => (
           <section key={section.title.en}>
-            <h2 className="text-xl font-bold text-vault-900">{section.title[locale]}</h2>
+            <h2 className="text-xl font-bold text-vault-900">
+              {section.title[locale]}
+            </h2>
             {section.paragraphs?.map((p) => (
               <p key={p.en} className="mt-3 leading-loose text-ink">
                 {withBrand(p[locale])}
@@ -49,8 +55,14 @@ export function LegalPage({
             {section.items && (
               <ul className="mt-3 space-y-2.5">
                 {section.items.map((item) => (
-                  <li key={item.en} className="flex gap-2.5 leading-relaxed text-ink">
-                    <CheckCircle2 className="mt-1 size-4 shrink-0 text-molecule-500" aria-hidden="true" />
+                  <li
+                    key={item.en}
+                    className="flex gap-2.5 leading-relaxed text-ink"
+                  >
+                    <CheckCircle2
+                      className="mt-1 size-4 shrink-0 text-molecule-500"
+                      aria-hidden="true"
+                    />
                     <span>{withBrand(item[locale])}</span>
                   </li>
                 ))}
