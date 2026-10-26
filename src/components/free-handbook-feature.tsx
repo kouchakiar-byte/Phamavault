@@ -84,7 +84,7 @@ export function FreeHandbookFeature({ handbook, locale, details = true }: { hand
       <div className="relative order-first mx-auto w-44 sm:w-64 lg:order-none lg:w-72">
         <div className="absolute inset-4 -z-10 rounded-2xl bg-capsule-400/40 blur-2xl" aria-hidden="true" />
         <div className="rotate-[-4deg] overflow-hidden rounded-xl shadow-2xl shadow-black/50 ring-1 ring-capsule-400/50 transition duration-500 hover:rotate-0 rtl:rotate-[4deg] rtl:hover:rotate-0">
-          <Image src={handbook.cover} alt={t.coverAlt[locale]} sizes="(min-width: 1024px) 288px, 256px" placeholder="blur" className="h-auto w-full" />
+          <Image src={handbook.cover} alt={handbook.coverAlt[locale]} sizes="(min-width: 1024px) 288px, 256px" placeholder="blur" className="h-auto w-full" />
         </div>
         <span className="absolute -top-3 end-[-0.75rem] rotate-12 rounded-full bg-gradient-to-br from-capsule-400 to-capsule-600 px-4 py-2 text-sm font-extrabold text-vault-900 shadow-lg shadow-black/30">
           {t.free[locale]}
