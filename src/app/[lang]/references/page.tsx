@@ -1,7 +1,9 @@
-import { BookMarked, ExternalLink, Search } from "lucide-react";
+import Link from "next/link";
+import { BookMarked, BookOpenText, ExternalLink, Search } from "lucide-react";
 import { LegalPage } from "@/components/legal-page";
 import { sectionPhotos } from "@/components/page-header";
 import { OrangeBookSearch } from "@/components/pharmacy/orange-book-search";
+import { generalChaptersPage } from "@/content/general-chapters";
 import {
   referenceLabels,
   referenceSections,
@@ -13,6 +15,10 @@ import {
 import { getLocale } from "@/i18n/locale";
 import { pageMetadata } from "@/lib/metadata";
 import { withReviewedMonth } from "@/lib/data-dates";
+import { href } from "@/lib/paths";
+
+/** Pharmacopoeia cards that link to their part of the general chapters bank. */
+const chapterBank: Record<string, "USP" | "EP"> = { usp: "USP", bp: "EP", ep: "EP" };
 
 export const generateMetadata = () => pageMetadata(referencesPage.title, referencesPage.lead, "references");
 
@@ -64,6 +70,18 @@ export default async function ReferencesPage() {
               </dl>
             )}
             <p className="mt-4 leading-loose text-ink">{s.text[locale]}</p>
+            {chapterBank[s.key] && (
+              <Link
+                href={`${href(locale, "references/general-chapters")}?ph=${chapterBank[s.key]}`}
+                className="mt-4 flex items-start gap-2.5 rounded-xl bg-vault-900 px-3.5 py-2.5 text-white transition hover:bg-vault-800"
+              >
+                <BookOpenText className="mt-0.5 size-5 shrink-0 text-capsule-400" aria-hidden="true" />
+                <span className="min-w-0">
+                  <span className="block text-sm font-bold">{generalChaptersPage.open[locale]}</span>
+                  <span className="block text-xs leading-relaxed text-vault-100/75">{generalChaptersPage.openNote[locale]}</span>
+                </span>
+              </Link>
+            )}
             <h3 className="mt-4 text-sm font-bold text-muted">{referenceLabels.links[locale]}</h3>
             <ul className="mt-2 grid gap-2 sm:grid-cols-2">
               {s.links.map((l) => (

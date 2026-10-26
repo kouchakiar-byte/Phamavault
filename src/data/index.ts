@@ -1,6 +1,7 @@
 import type { Bi } from "@/i18n/bi";
 import excipientsJson from "./excipients.json";
 import formulationJson from "./formulation.json";
+import generalChaptersJson from "./general-chapters.json";
 import handbooksJson from "./handbooks.json";
 import rawMaterialsJson from "./raw-materials.json";
 import regulatoryJson from "./regulatory.json";
@@ -78,3 +79,8 @@ export const regulatory = regulatoryJson as {
 };
 
 export const sops = sopsJson as { departments: Record<string, Bi>; items: Sop[] };
+
+/** One USP–NF general chapter or Ph. Eur. general method, with Persian title and summary. */
+export type GeneralChapter = { ph: "USP" | "EP"; code: string; cat: string; en: string; fa: string; s: Bi };
+
+export const generalChapters = generalChaptersJson as { categories: Record<string, Bi>; items: GeneralChapter[] };
