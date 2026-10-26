@@ -149,23 +149,23 @@ export const qaKnowledge = {
 export const qc = {
   title: bi("Quality Control (QC)", "کنترل کیفیت (QC)"),
   lead: bi(
-    "Pharmacopoeial tests and acceptance criteria, microbiological quality of non-sterile products, pharmaceutical water, analytical method validation and OOS investigation — with the related laboratory SOPs.",
-    "آزمون‌ها و معیارهای پذیرش فارماکوپه‌ای، کیفیت میکروبی فرآورده‌های غیراستریل، آب دارویی، اعتبارسنجی روش‌های آنالیز و بررسی نتایج خارج از مشخصات، همراه با دستورالعمل‌های آزمایشگاهی مرتبط.",
+    "Pharmacopoeial tests and acceptance criteria, dissolution and stability, microbiology and clean-room limits, pharmaceutical water, method validation, instrument qualification, data integrity and OOS investigation — with the related laboratory SOPs.",
+    "آزمون‌ها و معیارهای پذیرش فارماکوپه‌ای، انحلال و پایداری، میکروبیولوژی و حدود اتاق تمیز، آب دارویی، اعتبارسنجی روش، Qualification دستگاه‌ها، یکپارچگی داده و بررسی نتایج OOS، همراه با دستورالعمل‌های آزمایشگاهی مرتبط.",
   ),
   growing: bi(
-    "This section is being expanded with new topics and tables.",
-    "این بخش در حال گسترش است و موضوعات و جدول‌های تازه به آن اضافه می‌شود.",
+    "Acceptance criteria and procedures are summarised from USP–NF, Ph. Eur., ICH, EU GMP and WHO texts; always confirm against the edition in force.",
+    "معیارهای پذیرش و روش‌ها از متون USP–NF، Ph. Eur.، ICH، EU GMP و WHO خلاصه شده‌اند؛ همواره با ویرایش لازم‌الاجرا تطبیق داده شوند.",
   ),
 
   areasTitle: bi("Scope of the QC laboratory", "حوزه‌های کار آزمایشگاه کنترل کیفیت"),
   areas: [
     { title: bi("Starting and packaging materials", "مواد اولیه و بسته‌بندی"), codes: ["QC-001", "QC-002", "QC-005", "QC-006"] },
     { title: bi("In-process and finished product", "حین فرایند و محصول نهایی"), codes: ["QC-003", "QC-007"] },
-    { title: bi("Stability studies", "مطالعات پایداری"), codes: ["QC-022", "QC-023", "QC-024"] },
-    { title: bi("Microbiology", "میکروبیولوژی"), codes: ["MIC-002", "MIC-003", "MIC-004", "MIC-005"] },
+    { title: bi("Stability studies", "مطالعات پایداری"), codes: ["QC-022", "QC-023", "QC-024", "QC-030"] },
+    { title: bi("Microbiology", "میکروبیولوژی"), codes: ["MIC-002", "MIC-003", "MIC-004", "MIC-005", "MIC-012"] },
     { title: bi("Water and environment", "آب و پایش محیطی"), codes: ["QC-025", "MIC-001", "MIC-008"] },
-    { title: bi("Methods and instruments", "روش‌ها و دستگاه‌ها"), codes: ["QC-010", "QC-011", "QC-014", "QC-017"] },
-    { title: bi("Results and data", "نتایج و داده‌ها"), codes: ["QC-008", "QC-009", "QC-021"] },
+    { title: bi("Methods and instruments", "روش‌ها و دستگاه‌ها"), codes: ["QC-010", "QC-011", "QC-014", "QC-017", "QC-029"] },
+    { title: bi("Results and data", "نتایج و داده‌ها"), codes: ["QC-008", "QC-009", "QC-021", "QC-028"] },
     { title: bi("Standards and reagents", "استانداردها و معرف‌ها"), codes: ["QC-012", "QC-013"] },
   ],
 
@@ -444,6 +444,164 @@ export const qc = {
     { title: bi("Media and incubation", "محیط‌ها و انکوباسیون"), text: bi("Fluid thioglycollate medium at 30–35 °C (anaerobes and aerobes) and soya-bean casein digest medium at 20–25 °C (fungi and aerobes), each for at least 14 days.", "محیط تیوگلیکولات مایع در 30 تا 35 درجه (بی‌هوازی و هوازی) و محیط سویابین کازئین دایجست در 20 تا 25 درجه (قارچ و هوازی)، هر کدام دست‌کم 14 روز.") },
     { title: bi("Method suitability", "تناسب روش"), text: bi("Before routine use, show that the product does not inhibit growth: ≤ 100 CFU of each test organism must grow visibly.", "پیش از استفاده روتین ثابت شود که محصول از رشد جلوگیری نمی‌کند: ≤ 100 CFU از هر میکروارگانیسم آزمون باید رشد قابل مشاهده داشته باشد.") },
     { title: bi("Interpretation", "تفسیر"), text: bi("No growth: complies. Growth: fails, unless the test is shown to be invalid (e.g. contamination in the test environment) and repeated.", "عدم رشد: منطبق. رشد: مردود، مگر اینکه نامعتبر بودن آزمون (مثلاً آلودگی محیط آزمون) اثبات و آزمون تکرار شود.") },
+  ],
+
+  // ---------- Dissolution acceptance ----------
+  dissoAccTitle: bi("Dissolution acceptance table, immediate release (USP <711>)", `جدول پذیرش انحلال برای فرآورده Immediate-release ${ltr("(USP <711>)")}`),
+  dissoAccCols: { stage: bi("Stage", "مرحله"), n: bi("Units tested", "تعداد واحد"), criteria: bi("Acceptance criteria", "معیار پذیرش") },
+  dissoAcc: [
+    { stage: "S1", n: "6", criteria: bi("Each unit not less than Q + 5%.", "هر واحد حداقل Q + 5%.") },
+    { stage: "S2", n: "6 (12 in total)", criteria: bi("Average of 12 units (S1 + S2) ≥ Q and no unit less than Q − 15%.", "میانگین 12 واحد (S1 + S2) ≥ Q و هیچ واحدی کمتر از Q − 15% نباشد.") },
+    { stage: "S3", n: "12 (24 in total)", criteria: bi("Average of 24 units ≥ Q; not more than 2 units less than Q − 15%; no unit less than Q − 25%.", "میانگین 24 واحد ≥ Q؛ حداکثر 2 واحد کمتر از Q − 15% و هیچ واحدی کمتر از Q − 25% نباشد.") },
+  ],
+  dissoAccNote: bi(
+    "Q is the amount dissolved stated in the monograph as a percentage of label claim (for example Q = 80% at 30 min).",
+    "Q مقدار حل‌شده‌ای است که مونوگراف به‌صورت درصدی از مقدار برچسب تعیین می‌کند (برای نمونه Q = 80% در 30 دقیقه).",
+  ),
+  f2Title: bi("Comparing dissolution profiles (f2 similarity factor)", `مقایسه پروفایل‌های انحلال ${ltr("(Similarity factor f2)")}`),
+  f2: [
+    bi("At least 12 units of the test and the reference product, tested under the same conditions and at the same time points.", "حداقل 12 واحد از فرآورده آزمون و مرجع، در شرایط یکسان و در زمان‌های نمونه‌برداری یکسان."),
+    bi("At least three time points (zero excluded) and not more than one point after 85% dissolution of either product.", "حداقل سه نقطه زمانی (بدون صفر) و حداکثر یک نقطه پس از رسیدن هر یک از دو فرآورده به 85% انحلال."),
+    bi("Coefficient of variation not more than 20% at the earliest time point and not more than 10% at the others.", "ضریب تغییرات (CV) در نخستین نقطه حداکثر 20% و در سایر نقاط حداکثر 10%."),
+    bi("f2 = 50 × log{[1 + (1/n) Σ(Rt − Tt)²]^−0.5 × 100}; f2 between 50 and 100 shows similar profiles.", "f2 = 50 × log{[1 + (1/n) Σ(Rt − Tt)²]^−0.5 × 100}؛ مقدار f2 بین 50 تا 100 نشانه مشابهت پروفایل‌هاست."),
+    bi("When both products dissolve 85% or more within 15 min, the profiles are considered similar without f2.", "اگر هر دو فرآورده در 15 دقیقه حداقل 85% حل شوند، پروفایل‌ها بدون محاسبه f2 مشابه تلقی می‌شوند."),
+  ],
+  f2Ref: bi(
+    "Sources: FDA Guidance, Dissolution Testing of Immediate Release Solid Oral Dosage Forms (1997); EMA Guideline on the Investigation of Bioequivalence (2010), Appendix I.",
+    "منابع: FDA Guidance, Dissolution Testing of Immediate Release Solid Oral Dosage Forms (1997)؛ EMA Guideline on the Investigation of Bioequivalence (2010)، پیوست I.",
+  ),
+
+  // ---------- Stability testing ----------
+  stabTitle: bi("Stability testing: frequency and significant change (ICH Q1A(R2) · Q1B)", `آزمون پایداری: تناوب آزمون و تغییر قابل توجه ${ltr("(ICH Q1A(R2) · Q1B)")}`),
+  stabFreq: [
+    { study: bi("Long-term", "بلندمدت (Long-term)"), when: bi("Every 3 months in the first year, every 6 months in the second year, then annually (e.g. 0, 3, 6, 9, 12, 18, 24, 36 months).", "هر 3 ماه در سال اول، هر 6 ماه در سال دوم و سپس سالانه (برای نمونه 0، 3، 6، 9، 12، 18، 24 و 36 ماه).") },
+    { study: bi("Accelerated", "تسریع‌شده (Accelerated)"), when: bi("At least three points including start and end of a 6-month study (e.g. 0, 3, 6 months).", "حداقل سه نقطه شامل ابتدا و انتهای مطالعه 6 ماهه (برای نمونه 0، 3 و 6 ماه).") },
+    { study: bi("Intermediate", "میانی (Intermediate)"), when: bi("At least four points including start and end of a 12-month study (e.g. 0, 6, 9, 12 months), when accelerated shows significant change.", "حداقل چهار نقطه شامل ابتدا و انتهای مطالعه 12 ماهه (برای نمونه 0، 6، 9 و 12 ماه)، هنگامی که در شرایط تسریع‌شده تغییر قابل توجه رخ دهد.") },
+  ],
+  stabCols: { study: bi("Study", "مطالعه"), when: bi("Testing frequency", "تناوب آزمون") },
+  sigTitle: bi("Significant change for a drug product", "تغییر قابل توجه (Significant change) در فرآورده دارویی"),
+  sig: [
+    bi("A 5% change in assay from the initial value.", "تغییر 5% در Assay نسبت به مقدار اولیه."),
+    bi("Any degradation product exceeding its acceptance criterion.", "تجاوز هر محصول تخریب از معیار پذیرش آن."),
+    bi("Failure of appearance, physical attributes and functionality tests (e.g. colour, phase separation, hardness, dose delivery per actuation).", "عدم انطباق ظاهر، ویژگی‌های فیزیکی و عملکردی (مانند رنگ، جداشدن فاز، Hardness و دوز تحویلی در هر Actuation)."),
+    bi("Failure of the pH criterion, as appropriate.", "عدم انطباق pH، در صورت کاربرد."),
+    bi("Failure of the dissolution criterion for 12 units.", "عدم انطباق Dissolution برای 12 واحد."),
+  ],
+  photo: bi(
+    "Photostability (ICH Q1B): expose to not less than 1.2 million lux hours of visible light and not less than 200 watt hours per square metre of near-UV energy, with a dark control wrapped in aluminium foil.",
+    "Photostability (ICH Q1B): مواجهه با حداقل 1.2 میلیون lux·h نور مرئی و حداقل 200 W·h/m² انرژی UV نزدیک، همراه با نمونه شاهد تاریکی (پوشیده در فویل آلومینیوم).",
+  ),
+
+  // ---------- Bacterial endotoxins ----------
+  betTitle: bi("Bacterial endotoxins: limit and maximum valid dilution (USP <85> · Ph. Eur. 2.6.14)", `اندوتوکسین باکتریایی: حد و حداکثر رقت معتبر ${ltr("(USP <85> · Ph. Eur. 2.6.14)")}`),
+  bet: [
+    { title: bi("Endotoxin limit", "حد اندوتوکسین"), formula: "Limit = K / M", text: bi("K = 5 EU/kg for parenteral routes other than intrathecal (0.2 EU/kg intrathecal); M = the maximum dose per kg given in one hour (a 70 kg adult is assumed).", "K = 5 EU/kg برای راه‌های تزریقی غیر از داخل نخاعی (0.2 EU/kg برای Intrathecal)؛ M = حداکثر دوز به ازای هر کیلوگرم در یک ساعت (وزن بزرگسال 70 کیلوگرم فرض می‌شود).") },
+    { title: bi("Maximum valid dilution", "حداکثر رقت معتبر (MVD)"), formula: "MVD = (Limit × C) / λ", text: bi("C = concentration of the test solution; λ = the labelled sensitivity of the lysate (gel clot) or the lowest point of the standard curve (photometric).", "C = غلظت محلول آزمون؛ λ = حساسیت برچسب لیزات (روش Gel clot) یا پایین‌ترین نقطه منحنی استاندارد (روش‌های فتومتریک).") },
+    { title: bi("Interference", "تداخل (Interference)"), formula: "50–200%", text: bi("Before routine testing show the product does not inhibit or enhance the reaction: recovery of the spike must be 50–200% (photometric) at a dilution not exceeding the MVD.", "پیش از آزمون روتین ثابت شود محصول واکنش را مهار یا تقویت نمی‌کند: بازیابی Spike در روش‌های فتومتریک 50 تا 200% و در رقتی نه بیشتر از MVD.") },
+  ],
+
+  // ---------- Microbiology: test strains ----------
+  strainsTitle: bi("Test strains for growth promotion and method suitability (USP <61> · <62>)", `سویه‌های آزمون برای Growth promotion و تناسب روش ${ltr("(USP <61> · <62>)")}`),
+  strainsCols: { organism: bi("Microorganism", "میکروارگانیسم"), strain: bi("Strain", "سویه"), use: bi("Used in", "کاربرد") },
+  strains: [
+    { organism: "Staphylococcus aureus", strain: "ATCC 6538", use: bi("TAMC; S. aureus test", "TAMC؛ آزمون S. aureus") },
+    { organism: "Pseudomonas aeruginosa", strain: "ATCC 9027", use: bi("TAMC; P. aeruginosa test", "TAMC؛ آزمون P. aeruginosa") },
+    { organism: "Bacillus subtilis", strain: "ATCC 6633", use: bi("TAMC", "TAMC") },
+    { organism: "Candida albicans", strain: "ATCC 10231", use: bi("TAMC, TYMC; C. albicans test", "TAMC و TYMC؛ آزمون C. albicans") },
+    { organism: "Aspergillus brasiliensis", strain: "ATCC 16404", use: bi("TAMC, TYMC", "TAMC و TYMC") },
+    { organism: "Escherichia coli", strain: "ATCC 8739", use: bi("E. coli test", "آزمون E. coli") },
+    { organism: "Salmonella enterica subsp. enterica serovar Typhimurium", strain: "ATCC 14028", use: bi("Salmonella test", "آزمون Salmonella") },
+    { organism: "Clostridium sporogenes", strain: "ATCC 11437 / 19404", use: bi("Clostridia test", "آزمون Clostridia") },
+  ],
+  strainsNote: bi(
+    "Inoculum not more than 100 CFU; for solid media the count recovered must be within a factor of 2 of the standardised inoculum. Use cultures not more than five passages from the reference seed lot.",
+    "Inoculum حداکثر 100 CFU؛ در محیط جامد شمارش بازیابی‌شده باید در محدوده ضریب 2 از Inoculum استانداردشده باشد. کشت‌ها حداکثر پنج پاساژ از Seed lot مرجع فاصله داشته باشند.",
+  ),
+
+  // ---------- Clean-room monitoring ----------
+  emTitle: bi("Clean-room limits (EU GMP Annex 1, 2022)", `حدود اتاق تمیز ${ltr("(EU GMP Annex 1, 2022)")}`),
+  emCols: {
+    grade: bi("Grade", "گرید"),
+    restSmall: bi("At rest ≥ 0.5 µm /m³", "At rest ≥ 0.5 µm در m³"),
+    restLarge: bi("At rest ≥ 5.0 µm /m³", "At rest ≥ 5.0 µm در m³"),
+    opSmall: bi("In operation ≥ 0.5 µm /m³", "In operation ≥ 0.5 µm در m³"),
+    opLarge: bi("In operation ≥ 5.0 µm /m³", "In operation ≥ 5.0 µm در m³"),
+    air: bi("Air sample CFU/m³", "Air sample (CFU/m³)"),
+    settle: bi("Settle plate CFU/4 h", "Settle plate (CFU/4 h)"),
+    contact: bi("Contact plate CFU/plate", "Contact plate (CFU/plate)"),
+  },
+  em: [
+    { grade: "A", restSmall: "3 520", restLarge: "—", opSmall: "3 520", opLarge: "29", air: "No growth", settle: "No growth", contact: "No growth" },
+    { grade: "B", restSmall: "3 520", restLarge: "—", opSmall: "352 000", opLarge: "2 930", air: "10", settle: "5", contact: "5" },
+    { grade: "C", restSmall: "352 000", restLarge: "2 930", opSmall: "3 520 000", opLarge: "29 300", air: "100", settle: "50", contact: "25" },
+    { grade: "D", restSmall: "3 520 000", restLarge: "29 300", opSmall: "—", opLarge: "—", air: "200", settle: "100", contact: "50" },
+  ],
+  emNote: bi(
+    "— : not specified or not predetermined (set by the manufacturer from risk assessment and routine data). Glove prints in grade A: no growth; grade B: 5 CFU/glove. Settle plates 90 mm, contact plates 55 mm.",
+    "— : تعیین نشده یا از پیش تعیین نشده (بر اساس ارزیابی ریسک و داده‌های روتین توسط سازنده تعیین می‌شود). Glove print در گرید A: عدم رشد؛ در گرید B: 5 CFU در هر دستکش. Settle plate با قطر 90 میلی‌متر و Contact plate با قطر 55 میلی‌متر.",
+  ),
+
+  // ---------- Sampling ----------
+  samplingTitle: bi("Sampling plans for starting materials (WHO TRS 929, Annex 4)", `طرح‌های نمونه‌برداری مواد اولیه ${ltr("(WHO TRS 929, Annex 4)")}`),
+  samplingCols: { plan: bi("Plan", "طرح"), formula: bi("Containers sampled", "تعداد ظروف نمونه‌برداری"), use: bi("When", "کاربرد") },
+  sampling: [
+    { plan: "n", formula: "n = 1 + √N", use: bi("Uniform material from a recognised supplier; samples tested individually for identity.", "ماده یکنواخت از تأمین‌کننده شناخته‌شده؛ نمونه‌ها برای شناسایی جداگانه آزمون می‌شوند.") },
+    { plan: "p", formula: "p = 0.4 √N", use: bi("Uniform material from a recognised supplier when only identity of each container is checked (e.g. NIR) and the composite sample is tested in full.", "ماده یکنواخت از تأمین‌کننده شناخته‌شده، وقتی فقط هویت هر ظرف کنترل می‌شود (مانند NIR) و نمونه مرکب آزمون کامل می‌شود.") },
+    { plan: "r", formula: "r = 1.5 √N", use: bi("Material suspected of being non-uniform or from a less well-known source (e.g. herbal materials).", "ماده مشکوک به عدم یکنواختی یا از منبع کمتر شناخته‌شده (مانند مواد گیاهی).") },
+  ],
+  samplingNote: bi("N = number of containers in the consignment; round the result up to the next whole number.", "N = تعداد ظروف محموله؛ عدد حاصل به عدد صحیح بالاتر گرد می‌شود."),
+
+  // ---------- Instruments ----------
+  aiqTitle: bi("Analytical instrument qualification (USP <1058>)", `Qualification دستگاه‌های آنالیز ${ltr("(USP <1058>)")}`),
+  aiqStages: [
+    { stage: "DQ", text: bi("Design qualification: user requirements (URS) and the choice of instrument and supplier.", "Design qualification: نیازمندی‌های کاربر (URS) و انتخاب دستگاه و تأمین‌کننده.") },
+    { stage: "IQ", text: bi("Installation qualification: delivery, installation and environment as specified.", "Installation qualification: تحویل، نصب و شرایط محیطی مطابق مشخصات.") },
+    { stage: "OQ", text: bi("Operational qualification: the instrument works to its specifications in the user's environment.", "Operational qualification: عملکرد دستگاه مطابق مشخصات در محیط کاربر.") },
+    { stage: "PQ", text: bi("Performance qualification: continued fitness for the intended use (periodic checks, system suitability).", "Performance qualification: تداوم تناسب برای کاربرد موردنظر (کنترل‌های دوره‌ای و System suitability).") },
+  ],
+  aiqGroups: [
+    { group: "A", text: bi("Standard equipment without measurement capability or with conformance verified by observation (stirrers, vortex mixers).", "تجهیزات استاندارد بدون قابلیت اندازه‌گیری یا با انطباق قابل مشاهده (همزن، Vortex).") },
+    { group: "B", text: bi("Instruments giving measured values or controlling physical parameters, with calibration (balances, pH meters, ovens, thermometers).", "دستگاه‌هایی که مقدار اندازه‌گیری می‌کنند یا پارامتر فیزیکی را کنترل می‌کنند و کالیبراسیون لازم دارند (ترازو، pH متر، آون، دماسنج).") },
+    { group: "C", text: bi("Computerised analytical systems with full qualification and software validation (HPLC, GC, dissolution systems, spectrophotometers).", "سیستم‌های آنالیز رایانه‌ای با Qualification کامل و Validation نرم‌افزار (HPLC، GC، دستگاه انحلال، اسپکتروفتومتر).") },
+  ],
+  balanceTitle: bi("Analytical balances (USP <41> · <1251>)", `ترازوهای آنالیتیک ${ltr("(USP <41> · <1251>)")}`),
+  balance: [
+    bi("Repeatability: twice the standard deviation of 10 replicate weighings divided by the smallest net weight to be weighed is not more than 0.10%.", "Repeatability: دو برابر انحراف معیار 10 توزین تکراری، تقسیم بر کمترین وزن خالص قابل توزین، حداکثر 0.10% باشد."),
+    bi("Accuracy: a test weight between 5% and 100% of capacity reads within 0.10% of its value.", "Accuracy: وزنه آزمون بین 5% تا 100% ظرفیت ترازو، با خطای حداکثر 0.10% از مقدار خود خوانده شود."),
+    bi("Minimum weight: the smallest net weight that satisfies repeatability; do not weigh below it for quantitative work.", "Minimum weight: کمترین وزن خالصی که الزام Repeatability را برآورده می‌کند؛ توزین کمّی کمتر از آن مجاز نیست."),
+    bi("Daily or before-use check with a test weight; periodic calibration by an accredited body with traceable weights.", "کنترل روزانه یا پیش از استفاده با وزنه آزمون؛ کالیبراسیون دوره‌ای توسط مرجع معتبر با وزنه‌های قابل ردیابی."),
+  ],
+
+  // ---------- Data integrity ----------
+  diTitle: bi("Data integrity in the QC laboratory (ALCOA+)", `یکپارچگی داده در آزمایشگاه کنترل کیفیت ${ltr("(ALCOA+)")}`),
+  di: [
+    { k: "Attributable", v: bi("Who performed the action and when (unique user IDs, no shared accounts).", "مشخص بودن انجام‌دهنده و زمان هر اقدام (شناسه کاربری اختصاصی، بدون حساب مشترک).") },
+    { k: "Legible", v: bi("Readable and permanent throughout the retention period.", "خوانا و ماندگار در تمام دوره نگهداری.") },
+    { k: "Contemporaneous", v: bi("Recorded at the time the work is done.", "ثبت هم‌زمان با انجام کار.") },
+    { k: "Original", v: bi("The first record (or a certified true copy), including electronic raw data and metadata.", "سند اولیه (یا رونوشت تأییدشده)، شامل داده خام الکترونیکی و Metadata.") },
+    { k: "Accurate", v: bi("Correct, complete and free from unrecorded changes.", "درست، کامل و بدون تغییر ثبت‌نشده.") },
+    { k: "Complete · Consistent · Enduring · Available", v: bi("All data including repeats and failed runs; time-stamped in sequence; on durable media; retrievable for review and inspection.", "همه داده‌ها از جمله تکرارها و Runهای ناموفق؛ ثبت زمانی به ترتیب؛ روی رسانه بادوام؛ قابل بازیابی برای بازبینی و بازرسی.") },
+  ],
+  diNote: bi(
+    "Review the audit trail of every chromatographic run before the result is approved; manual integration only with a recorded justification and second-person approval. Sources: MHRA GXP Data Integrity Guidance (2018); PIC/S PI 041-1 (2021); WHO TRS 1033, Annex 4 (2021).",
+    "Audit trail هر Run کروماتوگرافی پیش از تأیید نتیجه بازبینی شود؛ Manual integration فقط با دلیل ثبت‌شده و تأیید نفر دوم مجاز است. منابع: MHRA GXP Data Integrity Guidance (2018)؛ PIC/S PI 041-1 (2021)؛ WHO TRS 1033، پیوست 4 (2021).",
+  ),
+
+  // ---------- Reference and retention samples ----------
+  retTitle: bi("Reference and retention samples (EU GMP Annex 19)", `نمونه‌های مرجع و نگهداری ${ltr("(EU GMP Annex 19)")}`),
+  ret: [
+    bi("Finished product: keep reference and retention samples of each batch for at least one year after its expiry date, in the final pack.", "فرآورده نهایی: نمونه مرجع و نگهداری هر بچ دست‌کم تا یک سال پس از تاریخ انقضا، در بسته‌بندی نهایی نگهداری شود."),
+    bi("Starting materials (other than solvents, gases and water): at least two years after release of the product, unless their stability is shorter.", "مواد اولیه (به جز حلال‌ها، گازها و آب): دست‌کم دو سال پس از ترخیص فرآورده، مگر آنکه پایداری آن‌ها کوتاه‌تر باشد."),
+    bi("Quantity: enough for at least two full analytical controls of the batch.", "مقدار: کافی برای دست‌کم دو بار آزمون کامل بچ."),
+    bi("Store under the labelled conditions with controlled access and a sample register.", "نگهداری در شرایط برچسب، با دسترسی کنترل‌شده و دفتر ثبت نمونه‌ها."),
+  ],
+
+  // ---------- Method lifecycle ----------
+  lifecycleTitle: bi("Validation, verification and transfer of methods", "Validation، Verification و Transfer روش‌های آنالیز"),
+  lifecycle: [
+    { k: "Validation", v: bi("Full validation of in-house methods per ICH Q2(R2), within the lifecycle of ICH Q14 and USP <1220>.", "Validation کامل روش‌های داخلی طبق ICH Q2(R2)، در چارچوب چرخه عمر ICH Q14 و USP <1220>.") },
+    { k: "Verification", v: bi("Compendial methods are not revalidated but verified under actual conditions of use (USP <1226>): typically specificity, precision and, for impurities, LOQ.", "روش‌های فارماکوپه‌ای Validation مجدد نمی‌شوند بلکه در شرایط واقعی استفاده Verification می‌شوند (USP <1226>): معمولاً Specificity، Precision و برای ناخالصی‌ها LOQ.") },
+    { k: "Transfer", v: bi("Transfer to another laboratory by comparative testing, co-validation, revalidation or waiver, with predefined acceptance criteria (USP <1224>).", "انتقال به آزمایشگاه دیگر به روش Comparative testing، Co-validation، Revalidation یا Waiver، با معیارهای پذیرش از پیش تعیین‌شده (USP <1224>).") },
   ],
 
   sopsTitle: bi("QC and microbiology SOPs", "دستورالعمل‌های کنترل کیفیت و میکروبیولوژی"),
