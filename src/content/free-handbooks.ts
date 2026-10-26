@@ -1,5 +1,9 @@
 import type { StaticImageData } from "next/image";
 import { bi, type Bi } from "@/i18n/bi";
+import dissolutionCover from "@/assets/handbooks/dissolution-cover.webp";
+import dissolutionPage1 from "@/assets/handbooks/dissolution-page-1.webp";
+import dissolutionPage2 from "@/assets/handbooks/dissolution-page-2.webp";
+import dissolutionPage3 from "@/assets/handbooks/dissolution-page-3.webp";
 import hplcCover from "@/assets/handbooks/hplc-cover.webp";
 import hplcPage1 from "@/assets/handbooks/hplc-page-1.webp";
 import hplcPage2 from "@/assets/handbooks/hplc-page-2.webp";
@@ -16,6 +20,7 @@ export type FreeHandbook = {
   sizeMb: number;
   pages: number;
   cover: StaticImageData;
+  coverAlt: Bi;
   samples: StaticImageData[];
   stats: { value: number; label: Bi; plus?: boolean }[];
   chapters: Bi[];
@@ -23,6 +28,41 @@ export type FreeHandbook = {
 
 /** Weekly free handbooks, newest first. */
 export const freeHandbooks: FreeHandbook[] = [
+  {
+    slug: "dissolution",
+    issue: 2,
+    date: bi("November 2026", "آبان 1405"),
+    title: bi("Dissolution testing — an applied handbook", "راهنمای کاربردی آزمون انحلال (Dissolution)"),
+    subtitle: bi(
+      "From dissolution fundamentals and apparatus qualification to troubleshooting and profile comparison: media, discriminating methods, USP acceptance tables for IR, ER and DR, f2 and biowaivers, case studies and worked calculations.",
+      "از مبانی انحلال و Qualification دستگاه تا Troubleshooting و مقایسه پروفایل: Dissolution medium، روش Discriminating، جدول‌های پذیرش USP برای IR، ER و DR، f2 و Biowaiver، مطالعات موردی و مسائل محاسباتی حل‌شده.",
+    ),
+    file: "/downloads/pharmavault-dissolution-handbook.pdf",
+    sizeMb: 1.9,
+    pages: 59,
+    cover: dissolutionCover,
+    coverAlt: bi("Cover of the PharmaVault dissolution handbook", "جلد هندبوک آزمون انحلال فارماوالت"),
+    samples: [dissolutionPage1, dissolutionPage2, dissolutionPage3],
+    stats: [
+      { value: 59, label: bi("pages", "صفحه") },
+      { value: 10, label: bi("chapters", "فصل") },
+      { value: 18, label: bi("figures", "شکل و نمودار") },
+      { value: 10, label: bi("case studies", "مطالعه موردی") },
+    ],
+    chapters: [
+      bi("Dissolution fundamentals: Noyes–Whitney, solubility, BCS, sink", "مبانی انحلال: Noyes–Whitney، Solubility، BCS و Sink condition"),
+      bi("Apparatus 1 to 7", "Apparatus 1 تا 7"),
+      bi("Mechanical qualification, PVT and maintenance", "Mechanical qualification، PVT و نگهداری دستگاه"),
+      bi("Dissolution media: selection, degassing, surfactants", "Dissolution medium: انتخاب، Degassing و Surfactant"),
+      bi("Method development, discriminating power and validation", "توسعه روش، Discriminating power و Validation"),
+      bi("Acceptance tables for IR, ER and DR; two-tier test", "جدول‌های پذیرش IR، ER و DR؛ آزمون Two-tier"),
+      bi("Profile comparison (f2), ICH M9 biowaivers, SUPAC and IVIVC", "مقایسه پروفایل (f2)، Biowaiver طبق ICH M9، SUPAC و IVIVC"),
+      bi("Systematic troubleshooting", "Troubleshooting سیستماتیک"),
+      bi("10 troubleshooting case studies", "10 مطالعه موردی Troubleshooting"),
+      bi("Worked calculations", "مسائل محاسباتی حل‌شده"),
+      bi("Appendices: quick matrix, 25 questions, glossary, references", "پیوست‌ها: جدول Troubleshooting سریع، 25 پرسش، واژه‌نامه اصطلاحات، رفرنس‌ها"),
+    ],
+  },
   {
     slug: "hplc",
     issue: 1,
@@ -37,6 +77,7 @@ export const freeHandbooks: FreeHandbook[] = [
     sizeMb: 2.9,
     pages: 74,
     cover: hplcCover,
+    coverAlt: bi("Cover of the PharmaVault HPLC handbook", "جلد هندبوک HPLC فارماوالت"),
     samples: [hplcPage1, hplcPage2, hplcPage3],
     stats: [
       { value: 74, label: bi("pages", "صفحه") },
@@ -86,6 +127,6 @@ export const freeHandbookCopy = {
     "New issues are added here every week. Bookmark this page or install the PharmaVault app so you don't miss one.",
     "شماره‌های جدید هر هفته در همین صفحه منتشر می‌شوند. این صفحه را نشانه‌گذاری کنید یا اپلیکیشن فارماوالت را نصب کنید تا هیچ شماره‌ای را از دست ندهید.",
   ),
-  coverAlt: bi("Cover of the PharmaVault HPLC handbook", "جلد هندبوک HPLC فارماوالت"),
+  archive: bi("Previous issues", "شماره‌های قبلی"),
   sampleAlt: bi("Sample page", "نمونه صفحه"),
 };

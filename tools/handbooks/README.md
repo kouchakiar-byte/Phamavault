@@ -5,6 +5,7 @@ Each folder builds one PDF handbook in the site's colours, with the site's own f
 ```
 node tools/handbooks/hplc/build.mjs            # full handbook → tools/handbooks/hplc/out/PharmaVault-HPLC-Handbook.pdf
 node tools/handbooks/hplc/build.mjs --preview  # cover + first chapters only
+node tools/handbooks/dissolution/build.mjs     # issue 2 → tools/handbooks/dissolution/out/PharmaVault-Dissolution-Handbook.pdf
 ```
 
 Needs Playwright with Chromium (`/opt/node-tools/node_modules/playwright`, `/opt/pw-browsers/chromium`),
