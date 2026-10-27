@@ -76,7 +76,7 @@ ${h2("Solubility، pH و فرم جامد")}
 ${p(
   "برای داروهای اسیدی یا بازی ضعیف، Solubility کل تابع pH است و با معادله Henderson–Hasselbalch پیش‌بینی می‌شود. یک باز ضعیف (مانند بسیاری از داروهای قلبی و CNS) در pH اسیدی معده به‌خوبی حل می‌شود اما در pH 6.8 ممکن است Solubility آن صدها برابر کاهش یابد؛ عکس این رفتار برای اسیدهای ضعیف (مانند NSAIDها) صادق است. به همین دلیل، پروفایل Solubility در گستره pH 1.2 تا 6.8 نخستین داده لازم برای طراحی روش انحلال است.",
 )}
-${eq("اسید ضعیف: C<sub>s</sub> = C<sub>0</sub> · (1 + 10<sup>pH − pKa</sup>) &nbsp;&nbsp;·&nbsp;&nbsp; باز ضعیف: C<sub>s</sub> = C<sub>0</sub> · (1 + 10<sup>pKa − pH</sup>)", "C<sub>0</sub> Solubility ذاتی فرم یونیزه‌نشده (Intrinsic solubility)")}
+${eq("Weak acid: C<sub>s</sub> = C<sub>0</sub> · (1 + 10<sup>pH − pKa</sup>) &nbsp;&nbsp;·&nbsp;&nbsp; Weak base: C<sub>s</sub> = C<sub>0</sub> · (1 + 10<sup>pKa − pH</sup>)", "C<sub>0</sub> Solubility ذاتی فرم یونیزه‌نشده (Intrinsic solubility)")}
 ${ul([
   "<b>Polymorphism:</b> فرم Metastable معمولاً Solubility و سرعت انحلال بالاتری دارد اما ممکن است حین فرایند (Wet granulation، Drying) یا Stability به فرم پایدار تبدیل شود و افت انحلال ایجاد کند.",
   "<b>Hydrate و Solvate:</b> فرم Anhydrous اغلب سریع‌تر از Hydrate حل می‌شود؛ تبدیل فرم در تماس با آب (Solution-mediated transformation) می‌تواند به کاهش سرعت انحلال در طول آزمون بینجامد.",

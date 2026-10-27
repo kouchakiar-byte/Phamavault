@@ -31,12 +31,42 @@ const hf = (inner) => `<style>${fontFaces()}*{font-family:"Plex","Estedad";-webk
 const headerTemplate = hf(`<div style="width:100%;margin:0 17mm;padding-top:7mm;display:flex;justify-content:space-between;font-size:7.5pt;color:${C.muted};direction:rtl;border-bottom:.6pt solid ${C.gold};padding-bottom:2mm"><span style="color:${C.tealD};font-weight:700">${RUN}</span><span style="direction:ltr;color:${C.goldD};font-weight:700">pharmavault.ir</span></div>`);
 const footerTemplate = hf(`<div style="width:100%;margin:0 17mm;padding-bottom:6mm;display:flex;justify-content:space-between;align-items:center;font-size:7.5pt;color:${C.muted};direction:rtl"><span>© PharmaVault · هرگونه کپی‌برداری و بازنشر بدون مجوز ممنوع است</span><span style="background:${C.navy};color:#fff;border-radius:8pt;padding:1pt 8pt;font-weight:700" class="pageNumber"></span></div>`);
 
+/**
+ * Runs in the page before printing: every Latin run inside Persian text (numbers with units,
+ * English terms, formulas such as "900 mL Medium" or "Q + 5%") is wrapped in a left-to-right
+ * isolate so the bidi algorithm cannot reorder its parts. Text already set left-to-right
+ * (equations, code, references, figures) is left alone.
+ */
+function isolateLatin() {
+  const RUN = /[A-Za-z0-9<>≤≥±≈~+−\-(][A-Za-z0-9<>≤≥±≈~+−\-–=.,:/×·°µμ%³²¹⁰⁴⁵⁶⁻₀-₉ ()[\]]*[A-Za-z0-9>%°µμ³²¹⁰⁴⁵⁶₀-₉)\]]|[A-Za-z0-9]/g;
+  const wrap = (s) => (s.trim() ? `\u2066${s}\u2069` : s);
+  // A bracket with no partner inside the run belongs to the Persian text around it.
+  const fit = (m) => {
+    let lead = "";
+    let tail = "";
+    while (m.startsWith("(") && !m.slice(1).includes(")")) [lead, m] = [lead + "(", m.slice(1)];
+    while (m.endsWith(")") && (m.match(/\(/g) || []).length < (m.match(/\)/g) || []).length) [tail, m] = [")" + tail, m.slice(0, -1)];
+    return lead + wrap(m) + tail;
+  };
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  for (let n = walker.nextNode(); n; n = walker.nextNode()) nodes.push(n);
+  for (const n of nodes) {
+    const el = n.parentElement;
+    if (!el || el.closest("svg, style, script") || getComputedStyle(el).direction === "ltr") continue;
+    if (!/[A-Za-z0-9]/.test(n.data)) continue;
+    // "A1: آزادسازی" or "مسئله 9: Validation": the label and what follows are separate runs.
+    n.data = n.data.replace(RUN, (m) => m.split(/(:\s+)/).map((part, i) => (i % 2 ? part : fit(part))).join(""));
+  }
+}
+
 const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium" });
 const page = await browser.newPage();
 async function render(html, out, opts) {
   writeFileSync(out.replace(/\.pdf$/, ".html"), html);
   await page.setContent(html, { waitUntil: "load" });
   await page.evaluate(() => document.fonts.ready);
+  await page.evaluate(isolateLatin);
   await page.pdf({ path: out, format: "A4", printBackground: true, ...opts });
 }
 const bodyOpts = { margin: { top: "24mm", bottom: "19mm", left: "17mm", right: "17mm" }, displayHeaderFooter: true, headerTemplate, footerTemplate };
