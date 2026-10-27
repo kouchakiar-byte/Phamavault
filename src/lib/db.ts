@@ -95,6 +95,12 @@ create table if not exists iran_drug_cache (
   fetched_at timestamptz not null default now(),
   asked int not null default 0
 );
+create table if not exists iran_drug_products (
+  product_code text primary key,
+  search text not null,
+  data jsonb not null,
+  seen_at timestamptz not null default now()
+);
 create table if not exists page_views (
   id bigserial primary key,
   at timestamptz not null default now(),

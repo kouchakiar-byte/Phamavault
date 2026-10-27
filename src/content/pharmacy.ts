@@ -474,8 +474,8 @@ export const iranDrugs = {
   ),
   none: bi("No licensed product found for “{q}”.", "فرآورده دارای مجوزی برای «{q}» پیدا نشد."),
   unavailable: bi(
-    "The Iran FDA register is not answering right now. Try again in a few minutes, or open the search on the register itself.",
-    "سامانه سازمان غذا و دارو در حال حاضر پاسخ نمی‌دهد. چند دقیقه دیگر دوباره امتحان کنید، یا جستجو را در خود سامانه باز کنید.",
+    "The Iran FDA register is not answering right now, and PharmaVault has no stored copy for “{q}” yet. Try the INN in English (e.g. Metformin), or try again in a few minutes.",
+    "سامانه سازمان غذا و دارو در حال حاضر پاسخ نمی‌دهد و نسخه ذخیره‌شده‌ای برای «{q}» در فارماوالت وجود ندارد. نام ژنریک به انگلیسی، مثلاً Metformin، را امتحان کنید یا چند دقیقه دیگر دوباره جستجو کنید.",
   ),
   unreadable: bi(
     "The register answered, but its page could not be read. Open the search on the register itself.",
@@ -500,8 +500,8 @@ export const iranDrugs = {
   ),
   optionCount: bi("{d} strengths · {n} products", "{d} قدرت · {n} فرآورده"),
   stored: bi(
-    "The register is not answering right now; these are the results saved at its last update.",
-    "سامانه سازمان غذا و دارو در این لحظه پاسخ نمی‌دهد؛ نتایج زیر از آخرین به‌روزرسانی ذخیره‌شده است.",
+    "The Iran FDA register is not answering right now; these results come from PharmaVault's stored copy of the register, renewed daily at 18:00 (Tehran).",
+    "سامانه سازمان غذا و دارو در این لحظه پاسخ نمی‌دهد؛ نتایج زیر از نسخه ذخیره‌شده فارماوالت است که هر روز ساعت 18 به‌روز می‌شود.",
   ),
   updated: bi("Updated daily at 18:00 \u2066(Tehran)\u2069 · last update: {date}", "به‌روزرسانی روزانه ساعت 18 · آخرین به‌روزرسانی این نتیجه: {date}"),
   rial: bi("Rial", "ریال"),

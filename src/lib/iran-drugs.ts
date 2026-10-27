@@ -3,8 +3,9 @@
  * register is reachable from servers inside Iran only, so the site's own
  * server asks it one query at a time — no bulk copy — keeps each answer for a
  * day, and caps how often it asks, so the public register is never loaded.
- * The last good answer to each search is also kept in the database, so when
- * the register does not answer the stored copy is shown, with its date.
+ * Every product the register returns is also kept in the database, so when the
+ * register does not answer, any name found in that stored copy — the exact
+ * search, a brand, a company or part of a title — is shown, with its date.
  * Server only.
  */
 
@@ -51,7 +52,19 @@ export type IranDrugResult = {
   stored?: boolean;
 };
 
-/** The last good answer kept in the database, or null. */
+/** Lower case, Arabic ي/ك as Persian ی/ک, Persian digits as Latin, no ZWNJ: how stored products are matched. */
+const fold = (s: string) =>
+  latinDigits(s)
+    .toLowerCase()
+    .replace(/ي/g, "ی")
+    .replace(/ك/g, "ک")
+    .replace(/[\u200c\u200e\u200f]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const searchText = (d: IranDrug) => fold([d.titleFa, d.titleEn, d.brandFa, d.brandEn, d.brandOwner, d.licenseHolder, d.productCode, d.genericCode].join(" | "));
+
+/** The last good answer to this exact search, or null. */
 async function storedResult(key: string): Promise<IranDrugResult | null> {
   if (!databaseConfigured()) return null;
   try {
@@ -62,23 +75,74 @@ async function storedResult(key: string): Promise<IranDrugResult | null> {
   }
 }
 
+/** Stored products whose titles, brands, companies or codes contain every word of the search. */
+async function storedProducts(base: IranDrugResult): Promise<IranDrugResult | null> {
+  if (!databaseConfigured()) return null;
+  const terms = fold(base.term).split(" ").filter((w) => w.length >= 2).slice(0, 5);
+  if (!terms.length) return null;
+  try {
+    const { rows } = await (await db()).query<{ data: IranDrug; seen_at: Date }>(
+      `select data, seen_at from iran_drug_products
+       where ${terms.map((_, i) => `strpos(search, $${i + 1}) > 0`).join(" and ")}
+       order by seen_at desc limit 500`,
+      terms,
+    );
+    if (!rows.length) return null;
+    const generics = groupByGeneric(rows.map((r) => r.data));
+    const newest = rows.reduce((t, r) => Math.max(t, new Date(r.seen_at).getTime()), 0);
+    return { ...base, status: "ok", generics, total: rows.length, fetchedAt: new Date(newest).toISOString(), stored: true };
+  } catch {
+    return null;
+  }
+}
+
 async function storeResult(key: string, result: IranDrugResult): Promise<void> {
   if (!databaseConfigured()) return;
-  await (await db())
+  const pool = await db();
+  await pool
     .query(
       `insert into iran_drug_cache (term, result, fetched_at, asked) values ($1, $2, now(), 1)
        on conflict (term) do update set result = excluded.result, fetched_at = now(), asked = iran_drug_cache.asked + 1`,
       [key, JSON.stringify(result)],
     )
     .catch((error) => console.error("iran drug cache write failed", error));
+  await storeProducts(result);
 }
 
-/** The register did not answer: the in-memory answer, else the stored one, else "unavailable". */
+/** Keeps every product of an answer, renewing those already kept. */
+async function storeProducts(result: IranDrugResult): Promise<void> {
+  const products = result.generics.flatMap((g) => g.products).filter((d) => d.productCode);
+  if (!products.length) return;
+  await (await db())
+    .query(
+      `insert into iran_drug_products (product_code, search, data, seen_at)
+       select p->>'productCode', p->>'search', p->'data', now() from jsonb_array_elements($1::jsonb) p
+       on conflict (product_code) do update set search = excluded.search, data = excluded.data, seen_at = now()`,
+      [JSON.stringify(products.map((d) => ({ productCode: d.productCode, search: searchText(d), data: d })))],
+    )
+    .catch((error) => console.error("iran drug products write failed", error));
+}
+
+/** Once per server start: products of answers stored before the product copy existed. */
+let backfilled: Promise<void> | undefined;
+const backfill = () =>
+  (backfilled ??= (async () => {
+    if (!databaseConfigured()) return;
+    const { rows } = await (await db()).query<{ result: IranDrugResult }>(
+      `select result from iran_drug_cache
+       where not exists (select 1 from iran_drug_products limit 1)`,
+    );
+    for (const r of rows) await storeProducts(r.result);
+  })().catch((error) => console.error("iran drug products backfill failed", error)));
+
+/** When the register fails, it is not asked again for 3 minutes: searches meanwhile answer at once from the stored copy. */
+let registerDownUntil = 0;
+
+/** The register did not answer: today's answer, else the stored answer to this search, else stored products that match, else "unavailable". */
 async function fallback(key: string, hit: IranDrugResult | undefined, base: IranDrugResult): Promise<IranDrugResult> {
-  if (hit) return hit;
-  const stored = await storedResult(key);
-  if (stored) cache.set(key, { at: Date.now(), result: stored });
-  return stored ?? base;
+  if (hit) return { ...hit, stored: true };
+  await backfill();
+  return (await storedResult(key)) ?? (await storedProducts(base)) ?? base;
 }
 
 const PAGE_SIZE = 100;
@@ -279,12 +343,13 @@ export async function searchIranDrugs(raw: string): Promise<IranDrugResult> {
   const hit = cache.get(key);
   // Answers are renewed daily at 18:00 Tehran time, together with the rest of the catalog.
   if (hit && hit.at >= lastDailyUpdate()) return hit.result;
-  if (!allowRequest()) return fallback(key, hit?.result, { ...base, status: "unavailable" });
+  if (Date.now() < registerDownUntil || !allowRequest()) return fallback(key, hit?.result, { ...base, status: "unavailable" });
 
   let html: string;
   try {
     html = await fetchIrcPage(term);
   } catch {
+    registerDownUntil = Date.now() + 3 * 60_000;
     return fallback(key, hit?.result, { ...base, status: "unavailable" });
   }
   const drugs = parseIrc(html);
@@ -316,9 +381,10 @@ export async function searchIranDrugs(raw: string): Promise<IranDrugResult> {
 
 /**
  * The daily 18:00 refresh: renews the answers of the most asked terms (up to
- * 40), one request every 4 seconds so the register is never loaded.
+ * 60) and with them the stored products, one request every 4 seconds so the
+ * register is never loaded.
  */
-export async function refreshIranDrugs(limit = 40): Promise<number> {
+export async function refreshIranDrugs(limit = 60): Promise<number> {
   const terms = [...asked.entries()].sort((a, b) => b[1] - a[1]).slice(0, limit).map(([t]) => t);
   if (terms.length < limit && databaseConfigured()) {
     const { rows } = await (await db())
@@ -332,6 +398,8 @@ export async function refreshIranDrugs(limit = 40): Promise<number> {
     if (hit && hit.at >= lastDailyUpdate()) continue;
     await new Promise((r) => setTimeout(r, 4_000));
     const result = await searchIranDrugs(term);
+    // The register stopped answering: the stored copy stays as it is until the next day.
+    if (result.stored || result.status === "unavailable") break;
     if (result.status === "ok" || result.status === "empty") renewed++;
   }
   return renewed;
