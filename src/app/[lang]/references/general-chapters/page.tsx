@@ -2,7 +2,7 @@ import { GeneralChaptersTable } from "@/components/general-chapters-table";
 import { PageHeader } from "@/components/page-header";
 import { Container } from "@/components/ui";
 import { generalChaptersPage as page } from "@/content/general-chapters";
-import { generalChapters } from "@/data";
+import { generalChapters, generalChapterSheets } from "@/data";
 import { getLocale } from "@/i18n/locale";
 import { pageMetadata } from "@/lib/metadata";
 import { href } from "@/lib/paths";
@@ -22,7 +22,7 @@ export default async function GeneralChaptersPage() {
       />
       <Container className="py-12">
         <p className="mb-6 rounded-xl border border-line bg-vault-50 px-4 py-3 text-sm leading-relaxed text-muted">{page.note[locale]}</p>
-        <GeneralChaptersTable locale={locale} data={generalChapters} />
+        <GeneralChaptersTable locale={locale} data={generalChapters} detailed={Object.keys(generalChapterSheets)} />
       </Container>
     </>
   );

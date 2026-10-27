@@ -1,21 +1,26 @@
 "use client";
 
 import { Fragment, useMemo, useState } from "react";
-import { ChevronDown, ExternalLink } from "lucide-react";
+import Link from "next/link";
+import { ChevronDown, ExternalLink, FileText } from "lucide-react";
 import type { generalChapters as GeneralChaptersData } from "@/data";
 import { copy } from "@/content/site";
 import { generalChaptersPage as t } from "@/content/general-chapters";
+import { chapterSlug } from "@/lib/chapter-slug";
+import { href } from "@/lib/paths";
 import { useUrlParam } from "@/lib/use-url-param";
 import type { Locale } from "@/i18n/config";
 import { normalize } from "@/i18n/bi";
 import { Count, Field, FilterBar, TableWrap } from "./filters";
 import { Chip } from "./ui";
 
-type Props = { locale: Locale; data: typeof GeneralChaptersData };
+/** `detailed`: keys ("USP <711>") of the chapters with a detailed PharmaVault sheet. */
+type Props = { locale: Locale; data: typeof GeneralChaptersData; detailed: string[] };
 type Ph = "USP" | "EP";
 
 /** Searchable bank of USP–NF general chapters and Ph. Eur. / BP general methods. */
-export function GeneralChaptersTable({ locale, data }: Props) {
+export function GeneralChaptersTable({ locale, data, detailed }: Props) {
+  const full = useMemo(() => new Set(detailed), [detailed]);
   const urlQuery = useUrlParam("q");
   const urlPh = useUrlParam("ph");
   const [typed, setQuery] = useState<string | null>(null);
@@ -101,12 +106,13 @@ export function GeneralChaptersTable({ locale, data }: Props) {
               <th>{t.chapter[locale]}</th>
               <th>{t.titleCol[locale]}</th>
               <th>{t.subject[locale]}</th>
+              <th>{t.sheet.open[locale]}</th>
             </tr>
           </thead>
           <tbody>
             {rows.length === 0 && (
               <tr>
-                <td colSpan={3}>{c.noMatch[locale]}</td>
+                <td colSpan={4}>{c.noMatch[locale]}</td>
               </tr>
             )}
             {rows.map((r) => {
@@ -136,10 +142,23 @@ export function GeneralChaptersTable({ locale, data }: Props) {
                     <td>
                       <Chip>{data.categories[r.cat][locale]}</Chip>
                     </td>
+                    <td>
+                      <Link
+                        href={href(locale, `references/general-chapters/${chapterSlug(r.ph, r.code)}`)}
+                        className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-semibold transition ${
+                          full.has(`${r.ph} ${r.code}`)
+                            ? "bg-vault-900 text-white hover:bg-vault-800"
+                            : "border border-line bg-white text-vault-900 hover:border-molecule-500"
+                        }`}
+                      >
+                        <FileText className={`size-3.5 ${full.has(`${r.ph} ${r.code}`) ? "text-capsule-400" : "text-molecule-600"}`} aria-hidden="true" />
+                        {t.sheet.open[locale]}
+                      </Link>
+                    </td>
                   </tr>
                   {isOpen && (
                     <tr>
-                      <td colSpan={3} className="bg-vault-50 p-4">
+                      <td colSpan={4} className="bg-vault-50 p-4">
                         <p className="text-sm font-bold text-vault-900">
                           <bdi>
                             {t.ph[r.ph][locale]} {r.code}
@@ -148,6 +167,15 @@ export function GeneralChaptersTable({ locale, data }: Props) {
                         </p>
                         <p className="mt-2 max-w-4xl text-sm leading-loose text-ink">{r.s[locale]}</p>
                         <ul className="mt-3 flex flex-wrap gap-2">
+                          <li>
+                            <Link
+                              href={href(locale, `references/general-chapters/${chapterSlug(r.ph, r.code)}`)}
+                              className="inline-flex items-center gap-1.5 rounded-full bg-vault-900 px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-vault-800"
+                            >
+                              <FileText className="size-3.5 text-capsule-400" aria-hidden="true" />
+                              {t.sheet.openLong[locale]}
+                            </Link>
+                          </li>
                           {t.links[r.ph].map((l) => (
                             <li key={l.url}>
                               <a

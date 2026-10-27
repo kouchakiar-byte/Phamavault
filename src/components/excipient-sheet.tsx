@@ -25,8 +25,21 @@ function viewerWatermark(text: string): string {
  * starts (Win/⌘ key, PrintScreen), when the window loses focus (Snipping
  * Tool, app switcher, another window) or when the page is hidden, and every
  * view carries the viewer's account code and the time.
+ *
+ * `copyable` lets a subscriber select and copy the text; the shield, the
+ * watermarks and the print block stay on.
  */
-export function SheetPage({ children, locale, printBlocked }: { children: ReactNode; locale: "fa" | "en"; printBlocked: string }) {
+export function SheetPage({
+  children,
+  locale,
+  printBlocked,
+  copyable = false,
+}: {
+  children: ReactNode;
+  locale: "fa" | "en";
+  printBlocked: string;
+  copyable?: boolean;
+}) {
   const [shielded, setShielded] = useState(false);
   const [mark, setMark] = useState(`pharmavault.ir · ${stamp()}`);
   const article = useRef<HTMLElement>(null);
@@ -40,7 +53,7 @@ export function SheetPage({ children, locale, printBlocked }: { children: ReactN
     };
     const onKey = (e: KeyboardEvent) => {
       const k = e.key.toLowerCase();
-      if ((e.ctrlKey || e.metaKey) && ["s", "p", "c", "a", "x"].includes(k)) e.preventDefault();
+      if ((e.ctrlKey || e.metaKey) && (copyable ? ["s", "p"] : ["s", "p", "c", "a", "x"]).includes(k)) e.preventDefault();
       // Win+Shift+S, ⌘+Shift+3/4/5 and PrintScreen all start with one of these keys.
       if (e.key === "Meta" || e.key === "OS" || e.key === "PrintScreen" || (e.metaKey && e.shiftKey)) {
         clearTimeout(release);
@@ -77,7 +90,7 @@ export function SheetPage({ children, locale, printBlocked }: { children: ReactN
       window.removeEventListener("blur", onBlur);
       document.removeEventListener("visibilitychange", onVisibility);
     };
-  }, []);
+  }, [copyable]);
 
   const unshield = () => {
     article.current?.classList.remove("pv-shielded");
@@ -89,11 +102,11 @@ export function SheetPage({ children, locale, printBlocked }: { children: ReactN
       <p className="pv-sheet-print-note hidden">{printBlocked}</p>
       <article
         ref={article}
-        className="pv-sheet relative mx-auto w-full max-w-[210mm] select-none overflow-hidden rounded-sm bg-white text-ink shadow-xl shadow-vault-900/15 ring-1 ring-line"
+        className={`pv-sheet relative mx-auto w-full max-w-[210mm] overflow-hidden rounded-sm bg-white text-ink shadow-xl shadow-vault-900/15 ring-1 ring-line ${copyable ? "pv-sheet-copyable" : "select-none"}`}
         lang={locale}
-        onContextMenu={block}
-        onCopy={block}
-        onCut={block}
+        onContextMenu={copyable ? undefined : block}
+        onCopy={copyable ? undefined : block}
+        onCut={copyable ? undefined : block}
         onDragStart={block}
       >
         {/* Watermark: a faint tiled mark with a larger one in the middle */}
