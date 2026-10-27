@@ -900,7 +900,7 @@
    "fa": "آزمون ناخالصی‌ها در گازهای طبی",
    "s": {
     "en": "Describes impurity testing for medical gases.",
-    "fa": "روش‌های تعیین ناخالصی‌ها در گازهای طبی (CO، CO2، NO/NO2، رطوبت و …) با تیوب‌های آشکارساز گاز و دستگاه‌های آنالیز را بیان می‌کند."
+    "fa": "روش‌های تعیین ناخالصی‌ها در گازهای طبی (CO، CO2، NO/NO2، رطوبت و …) با تیوب‌های Gas detector و دستگاه‌های آنالیز را بیان می‌کند."
    }
   },
   {
@@ -2374,7 +2374,7 @@
    "fa": "مواد مشتق از بیوتکنولوژی — Peptide mapping",
    "s": {
     "en": "Describes peptide mapping for primary structure confirmation.",
-    "fa": "روش Peptide mapping (هضم آنزیمی، جداسازی با HPLC و آشکارسازی UV یا MS) برای تأیید ساختار اول پروتئین را بیان می‌کند. با Ph. Eur. 2.2.55 هماهنگ است."
+    "fa": "روش Peptide mapping (هضم آنزیمی، جداسازی با HPLC و Detection با UV یا MS) برای تأیید ساختار اول پروتئین را بیان می‌کند. با Ph. Eur. 2.2.55 هماهنگ است."
    }
   },
   {
@@ -2473,7 +2473,7 @@
    "fa": "کروماتوگرافی یونی",
    "s": {
     "en": "Describes ion chromatography.",
-    "fa": "اصول Ion chromatography، ستون‌ها، Suppressor و آشکارسازی هدایتی و کاربرد آن در اندازه‌گیری یون‌ها را بیان می‌کند."
+    "fa": "اصول Ion chromatography، ستون‌ها، Suppressor و Conductivity detection و کاربرد آن در اندازه‌گیری یون‌ها را بیان می‌کند."
    }
   },
   {
@@ -2605,7 +2605,7 @@
    "fa": "آنالیز گلیکوپروتئین و گلیکان — ملاحظات عمومی",
    "s": {
     "en": "Gives general considerations for glycoprotein and glycan analysis.",
-    "fa": "رویکرد کلی آنالیز گلیکوزیلاسیون را بیان می‌کند: آزادسازی گلیکان‌ها، روش‌های جداسازی و آشکارسازی و تفسیر داده."
+    "fa": "رویکرد کلی آنالیز گلیکوزیلاسیون را بیان می‌کند: آزادسازی گلیکان‌ها، روش‌های جداسازی و Detection و تفسیر داده."
    }
   },
   {
@@ -2888,7 +2888,7 @@
    "code": "<1126>",
    "cat": "bio",
    "en": "Nucleic Acid-Based Techniques—Extraction, Detection, and Sequencing",
-   "fa": "روش‌های مبتنی بر اسید نوکلئیک — استخراج، آشکارسازی و توالی‌یابی",
+   "fa": "روش‌های مبتنی بر اسید نوکلئیک — استخراج، Detection و توالی‌یابی",
    "s": {
     "en": "Describes nucleic acid extraction, detection and sequencing.",
     "fa": "روش‌های استخراج DNA و RNA، کمّی‌سازی و توالی‌یابی را بیان می‌کند."
@@ -3958,7 +3958,7 @@
    "fa": "رادیواکتیویته — نظریه و عمل",
    "s": {
     "en": "Describes radioactivity theory and practice.",
-    "fa": "اصول نظری رادیواکتیویته، واپاشی و آشکارسازی را بیان می‌کند."
+    "fa": "اصول نظری رادیواکتیویته، واپاشی و Detection را بیان می‌کند."
    }
   },
   {
@@ -4208,10 +4208,10 @@
    "code": "2.1.6",
    "cat": "gas",
    "en": "Gas Detector Tubes",
-   "fa": "تیوب‌های آشکارساز گاز",
+   "fa": "تیوب‌های Gas detector",
    "s": {
     "en": "Describes gas detector tubes.",
-    "fa": "ویژگی‌ها و کاربرد تیوب‌های آشکارساز گاز در آزمون ناخالصی‌های گازهای طبی را بیان می‌کند."
+    "fa": "ویژگی‌ها و کاربرد تیوب‌های Gas detector در آزمون ناخالصی‌های گازهای طبی را بیان می‌کند."
    }
   },
   {
@@ -4420,7 +4420,7 @@
    "fa": "تیتراسیون آمپرومتری",
    "s": {
     "en": "Describes amperometric titration.",
-    "fa": "تیتراسیون با آشکارسازی آمپرومتری نقطه پایانی را بیان می‌کند."
+    "fa": "تیتراسیون با Amperometric detection نقطه پایانی را بیان می‌کند."
    }
   },
   {
@@ -4508,7 +4508,7 @@
    "fa": "کروماتوگرافی لایه نازک",
    "s": {
     "en": "Describes thin-layer chromatography.",
-    "fa": "اصول TLC، صفحات، توسعه، آشکارسازی و الزامات System suitability را بیان می‌کند."
+    "fa": "اصول TLC، صفحات، توسعه، Detection و الزامات System suitability را بیان می‌کند."
    }
   },
   {
@@ -4519,7 +4519,7 @@
    "fa": "کروماتوگرافی گازی",
    "s": {
     "en": "Describes gas chromatography.",
-    "fa": "اصول GC، دستگاه، روش‌های تزریق (از جمله Static head-space) و آشکارسازها را بیان می‌کند."
+    "fa": "اصول GC، دستگاه، روش‌های تزریق (از جمله Static head-space) و Detectorها را بیان می‌کند."
    }
   },
   {
@@ -4530,7 +4530,7 @@
    "fa": "کروماتوگرافی مایع",
    "s": {
     "en": "Describes liquid chromatography.",
-    "fa": "اصول HPLC، فازهای ساکن و متحرک، آشکارسازها و کاربرد را بیان می‌کند. الزامات System suitability و Adjustment در 2.2.46 آمده است."
+    "fa": "اصول HPLC، فازهای ساکن و متحرک، Detectorها و کاربرد را بیان می‌کند. الزامات System suitability و Adjustment در 2.2.46 آمده است."
    }
   },
   {
@@ -4846,10 +4846,10 @@
    "code": "2.2.63",
    "cat": "instr",
    "en": "Direct Amperometric and Pulsed Electrochemical Detection",
-   "fa": "آشکارسازی آمپرومتری مستقیم و الکتروشیمیایی پالسی",
+   "fa": "Direct amperometric detection و Pulsed electrochemical detection",
    "s": {
     "en": "Describes amperometric and pulsed electrochemical detection.",
-    "fa": "اصول آشکارسازی الکتروشیمیایی در کروماتوگرافی را بیان می‌کند."
+    "fa": "اصول Electrochemical detection در کروماتوگرافی را بیان می‌کند."
    }
   },
   {
@@ -4871,7 +4871,7 @@
    "fa": "تیتراسیون ولتامتری",
    "s": {
     "en": "Describes voltametric titration.",
-    "fa": "تیتراسیون با آشکارسازی ولتامتری (مانند Karl Fischer) را بیان می‌کند."
+    "fa": "تیتراسیون با Voltametric detection (مانند Karl Fischer) را بیان می‌کند."
    }
   },
   {
@@ -4879,7 +4879,7 @@
    "code": "2.2.66",
    "cat": "rad",
    "en": "Detection and Measurement of Radioactivity",
-   "fa": "آشکارسازی و اندازه‌گیری رادیواکتیویته",
+   "fa": "Detection و اندازه‌گیری رادیواکتیویته",
    "s": {
     "en": "Describes radioactivity measurement.",
     "fa": "روش‌های اندازه‌گیری رادیواکتیویته را بیان می‌کند."
