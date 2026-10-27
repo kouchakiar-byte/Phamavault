@@ -51,8 +51,8 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/references
   return { ...meta, title: title[locale], openGraph: { ...meta.openGraph, title: title[locale] } };
 }
 
-/** Latin runs (codes, units, terms) inside Persian text keep their own order. */
-const LATIN_RUN = /[A-Za-z0-9≈±~<>≤≥+−-][A-Za-z0-9≈±~<>≤≥+−\-–.,:/×·°µμ%³²⁻¹⁰⁵⁶ ()]*[A-Za-z0-9°µμ%³²⁻¹⁰⁵⁶)>]|[A-Za-z0-9]/g;
+/** Latin runs (codes, units, terms; "Ph. Eur. 2.9.3" as one run) inside Persian text keep their own order. */
+const LATIN_RUN = /Ph\. Eur\.(?: \d+(?:\.\d+)*)?|[A-Za-z0-9≈±~<>≤≥+−-][A-Za-z0-9≈±~<>≤≥+−\-–.,:/×·°µμ%³²⁻¹⁰⁵⁶ ()]*[A-Za-z0-9°µμ%³²⁻¹⁰⁵⁶)>]|[A-Za-z0-9]/g;
 const isolate = (text: string) => text.replace(LATIN_RUN, (m) => `⁦${m}⁩`);
 
 function Section({ n, title, children }: { n: number; title: string; children: ReactNode }) {
