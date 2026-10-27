@@ -67,7 +67,7 @@ ${table(
     ["Lauryldimethylamine oxide (LDAO)", "زویتریونی", "طبق روش", "در برخی مونوگراف‌های USP به کار رفته است."],
   ],
 )}
-${eq("CMC (SLS در آب خالص) ≈ 8 mM ≈ 0.24% w/v", "Critical micelle concentration در حضور الکترولیت‌ها کاهش می‌یابد؛ افزایش Solubility عمدتاً بالاتر از CMC و با تشکیل میسل رخ می‌دهد")}
+${eq("CMC of SLS in water ≈ 8 mM ≈ 0.24% w/v", "Critical micelle concentration در حضور الکترولیت‌ها کاهش می‌یابد؛ افزایش Solubility عمدتاً بالاتر از CMC و با تشکیل میسل رخ می‌دهد")}
 ${fig(figPhSol(), "4-1", "پروفایل pH–Solubility یک باز ضعیف (pKa 5.2) و خط Sink برای دوز 20 میلی‌گرم در 900 mL: در 0.1 N HCl شرایط Sink برقرار است، اما در pH 6.8 نیست (داده نمایشی).")}
 ${h2("Mediumهای Biorelevant و آنزیم‌ها")}
 ${p(
