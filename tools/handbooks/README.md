@@ -18,3 +18,8 @@ Needs Playwright with Chromium (`/opt/node-tools/node_modules/playwright`, `/opt
 
 To publish an issue, copy the PDF to `public/downloads/`, put the cover and sample-page images in
 `src/assets/handbooks/` and add the issue to `src/content/free-handbooks.ts`.
+
+Persian text follows `.claude/skills/fa-technical-writing/SKILL.md`. Each `build.mjs` runs
+`isolateLatin()` before printing so English terms, numbers and units keep their order inside
+Persian ("900 mL Medium"); keep it in any new handbook, and keep equation boxes free of
+Persian words.

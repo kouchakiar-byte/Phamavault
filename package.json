@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/data-dates.mjs && node scripts/check-data.mjs",
+    "prebuild": "node scripts/data-dates.mjs && node scripts/check-data.mjs && node scripts/check-text.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check": "node scripts/check-data.mjs && next typegen && tsc --noEmit -p . && eslint src scripts"
+    "check": "node scripts/check-data.mjs && node scripts/check-text.mjs && next typegen && tsc --noEmit -p . && eslint src scripts"
   },
   "dependencies": {
     "lucide-react": "^1.53.0",
