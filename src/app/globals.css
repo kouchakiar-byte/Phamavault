@@ -317,6 +317,10 @@ body {
   user-select: none;
   -webkit-touch-callout: none;
 }
+.pv-sheet.pv-sheet-copyable {
+  -webkit-user-select: text;
+  user-select: text;
+}
 /* Hidden at once while a screenshot may be taken (see SheetPage). */
 .pv-shielded .pv-sheet-content {
   filter: blur(14px);
