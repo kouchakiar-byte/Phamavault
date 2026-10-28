@@ -1,12 +1,12 @@
 import { TableWrap } from "@/components/filters";
 import { PageHeader } from "@/components/page-header";
+import { Bullets, Cards, DataTable, JumpNav, Steps, SubTitle } from "@/components/quality-blocks";
 import { SopTable, type SopRow } from "@/components/sop-table";
 import { BiTitle, Container } from "@/components/ui";
 import { pages } from "@/content/pages";
 import { qaKnowledge as k } from "@/content/quality";
+import { qaMore as q } from "@/content/quality-more";
 import { sops } from "@/data";
-import type { Bi } from "@/i18n/bi";
-import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -24,20 +24,25 @@ const rows: SopRow[] = sops.items.map(({ code, dep, title, covers, text }) => ({
 }));
 const withText = sops.items.filter((s) => s.text !== null).length;
 
-function SubTitle({ id, text, locale, lead }: { id?: string; text: Bi; locale: Locale; lead?: Bi }) {
-  return (
-    <div id={id} className="mb-5 mt-14 scroll-mt-24 first:mt-0">
-      <BiTitle as="h2" text={text} locale={locale} className="text-2xl font-bold text-vault-900" />
-      {lead && <p className="mt-2 max-w-3xl text-sm text-muted">{lead[locale]}</p>}
-    </div>
-  );
-}
-
 export default async function QaPage() {
   const locale = await getLocale();
   const jump = [
     { id: "pqs", label: k.pqsTitle },
     { id: "qrm", label: k.qrmTitle },
+    { id: "gmp", label: q.gmpTitle },
+    { id: "deviations", label: q.devTitle },
+    { id: "rca", label: q.rcaTitle },
+    { id: "change", label: q.changeTitle },
+    { id: "validation", label: q.pvTitle },
+    { id: "cleaning", label: q.cleanTitle },
+    { id: "release", label: q.releaseTitle },
+    { id: "pqr", label: q.pqrTitle },
+    { id: "suppliers", label: q.supplierTitle },
+    { id: "recall", label: q.recallTitle },
+    { id: "inspections", label: q.inspTitle },
+    { id: "metrics", label: q.metricsTitle },
+    { id: "ccs", label: q.ccsTitle },
+    { id: "gdp", label: q.gdpTitle },
     { id: "refs", label: k.refsTitle },
     { id: "library", label: page.library },
   ];
@@ -45,17 +50,7 @@ export default async function QaPage() {
     <>
       <PageHeader locale={locale} section="qa" title={page.title} lead={page.lead} />
       <Container className="py-12">
-        <nav className="mb-10 flex flex-wrap gap-2" aria-label={page.title[locale]}>
-          {jump.map((j) => (
-            <a
-              key={j.id}
-              href={`#${j.id}`}
-              className="rounded-full border border-line bg-white px-4 py-1.5 text-sm text-vault-900 hover:border-molecule-400 hover:text-molecule-700"
-            >
-              {j.label[locale]}
-            </a>
-          ))}
-        </nav>
+        <JumpNav items={jump} locale={locale} label={page.title[locale]} />
 
         <SubTitle id="pqs" text={k.pqsTitle} locale={locale} lead={k.pqsLead} />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -96,6 +91,64 @@ export default async function QaPage() {
             </tbody>
           </table>
         </TableWrap>
+
+        <SubTitle id="gmp" text={q.gmpTitle} locale={locale} lead={q.gmpLead} />
+        <DataTable cols={q.gmpCols} rows={q.gmp} locale={locale} />
+
+        <SubTitle id="deviations" text={q.devTitle} locale={locale} lead={q.devLead} />
+        <Cards items={q.devClasses} locale={locale} />
+        <div className="mt-4">
+          <Steps items={q.devSteps} locale={locale} />
+        </div>
+
+        <SubTitle id="rca" text={q.rcaTitle} locale={locale} />
+        <Cards items={q.rca} locale={locale} />
+        <p className="mb-3 mt-6 font-bold text-vault-900">{q.capaTitle[locale]}</p>
+        <Bullets items={q.capa} locale={locale} />
+
+        <SubTitle id="change" text={q.changeTitle} locale={locale} lead={q.changeLead} />
+        <DataTable cols={q.changeCols} rows={q.change} locale={locale} />
+        <p className="mt-3 text-sm text-muted">{q.changeNote[locale]}</p>
+
+        <SubTitle id="validation" text={q.pvTitle} locale={locale} />
+        <Cards items={q.pv} locale={locale} />
+        <div className="mt-4">
+          <Bullets items={q.pvNotes} locale={locale} />
+        </div>
+        <p className="mb-3 mt-6 font-bold text-vault-900">{q.qualTitle[locale]}</p>
+        <Cards items={q.qual} locale={locale} />
+
+        <SubTitle id="cleaning" text={q.cleanTitle} locale={locale} lead={q.cleanLead} />
+        <Cards items={q.clean} locale={locale} />
+        <div className="mt-4">
+          <Bullets items={q.cleanNotes} locale={locale} />
+        </div>
+
+        <SubTitle id="release" text={q.releaseTitle} locale={locale} />
+        <Bullets items={q.release} locale={locale} />
+
+        <SubTitle id="pqr" text={q.pqrTitle} locale={locale} lead={q.pqrLead} />
+        <Bullets items={q.pqr} locale={locale} numbered />
+
+        <SubTitle id="suppliers" text={q.supplierTitle} locale={locale} />
+        <Steps items={q.supplier} locale={locale} />
+
+        <SubTitle id="recall" text={q.recallTitle} locale={locale} />
+        <DataTable cols={q.recallCols} rows={q.recall} locale={locale} />
+        <p className="mt-3 text-sm text-muted">{q.recallNote[locale]}</p>
+
+        <SubTitle id="inspections" text={q.inspTitle} locale={locale} />
+        <Cards items={q.insp} locale={locale} />
+        <p className="mt-3 text-sm text-muted">{q.inspNote[locale]}</p>
+
+        <SubTitle id="metrics" text={q.metricsTitle} locale={locale} lead={q.metricsLead} />
+        <Cards items={q.metrics} locale={locale} />
+
+        <SubTitle id="ccs" text={q.ccsTitle} locale={locale} />
+        <Bullets items={q.ccs} locale={locale} />
+
+        <SubTitle id="gdp" text={q.gdpTitle} locale={locale} />
+        <Bullets items={q.gdp} locale={locale} />
 
         <SubTitle id="refs" text={k.refsTitle} locale={locale} />
         <TableWrap>

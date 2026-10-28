@@ -2,10 +2,11 @@ import Link from "next/link";
 import { Check, Minus } from "lucide-react";
 import { TableWrap } from "@/components/filters";
 import { PageHeader } from "@/components/page-header";
-import { BiTitle, Container } from "@/components/ui";
+import { Bullets, Cards, DataTable, JumpNav, Steps, SubTitle } from "@/components/quality-blocks";
+import { Container } from "@/components/ui";
 import { qc } from "@/content/quality";
+import { qcMore as m } from "@/content/quality-more";
 import { sops } from "@/data";
-import type { Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
 import { pageMetadata } from "@/lib/metadata";
@@ -15,15 +16,6 @@ export const generateMetadata = () => pageMetadata(qc.title, qc.lead, "qc");
 
 const sopByCode = new Map(sops.items.map((s) => [s.code, s]));
 const labSops = sops.items.filter((s) => s.dep === "qc" || s.dep === "mic");
-
-function SubTitle({ text, locale, lead }: { text: Bi; locale: Locale; lead?: Bi }) {
-  return (
-    <div className="mb-5 mt-14 first:mt-0">
-      <BiTitle as="h2" text={text} locale={locale} className="text-2xl font-bold text-vault-900" />
-      {lead && <p className="mt-2 max-w-3xl text-sm text-muted">{lead[locale]}</p>}
-    </div>
-  );
-}
 
 function SopLink({ code, locale }: { code: string; locale: Locale }) {
   const sop = sopByCode.get(code);
@@ -41,73 +33,6 @@ function SopLink({ code, locale }: { code: string; locale: Locale }) {
   );
 }
 
-/** A table from column labels and rows of cells (strings, or bilingual text). */
-function DataTable({ cols, rows, locale, mono = [] }: { cols: Bi[]; rows: (string | Bi)[][]; locale: Locale; mono?: number[] }) {
-  return (
-    <TableWrap>
-      <table className="db">
-        <thead>
-          <tr>
-            {cols.map((c) => (
-              <th key={c.en}>{c[locale]}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((r, i) => (
-            <tr key={i}>
-              {r.map((cell, j) =>
-                typeof cell === "string" ? (
-                  <td key={j} className={j === 0 ? "font-bold text-vault-900" : mono.includes(j) ? "num" : ""} dir="ltr" style={{ textAlign: "start" }}>
-                    {cell}
-                  </td>
-                ) : (
-                  <td key={j} className="min-w-56 leading-relaxed">
-                    {cell[locale]}
-                  </td>
-                ),
-              )}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </TableWrap>
-  );
-}
-
-function Bullets({ items, locale }: { items: Bi[]; locale: Locale }) {
-  return (
-    <ul className="space-y-2.5 rounded-card border border-line bg-white p-5">
-      {items.map((b) => (
-        <li key={b.en} className="flex gap-2.5 text-sm leading-relaxed text-ink">
-          <Check className="mt-0.5 size-4 shrink-0 text-molecule-600" aria-hidden="true" />
-          <span>{b[locale]}</span>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-function Cards({ items, locale }: { items: { k: string; v: Bi; f?: string }[]; locale: Locale }) {
-  return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {items.map((c) => (
-        <div key={c.k} className="rounded-card border border-line bg-white p-5">
-          <p className="font-bold text-vault-900" dir="ltr" style={{ textAlign: "start" }}>
-            {c.k}
-          </p>
-          {c.f && (
-            <p className="mt-2 rounded-lg bg-vault-50 px-3 py-1.5 font-mono text-sm text-molecule-700" dir="ltr">
-              {c.f}
-            </p>
-          )}
-          <p className="mt-2 text-sm leading-relaxed text-muted">{c.v[locale]}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
 export default async function QcPage() {
   const locale = await getLocale();
   return (
@@ -118,7 +43,38 @@ export default async function QcPage() {
           {qc.growing[locale]}
         </p>
 
-        <SubTitle text={qc.areasTitle} locale={locale} />
+        <JumpNav
+          locale={locale}
+          label={qc.title[locale]}
+          items={[
+            { id: "tests", label: qc.testsTitle },
+            { id: "spec", label: m.specTitle },
+            { id: "micro", label: qc.microTitle },
+            { id: "water", label: qc.waterTitle },
+            { id: "validation", label: qc.validationTitle },
+            { id: "oos", label: qc.oosTitle },
+            { id: "oot", label: m.ootTitle },
+            { id: "imp", label: qc.impTitle },
+            { id: "solvents", label: qc.solventsTitle },
+            { id: "elements", label: qc.elementsTitle },
+            { id: "m7", label: m.m7Title },
+            { id: "nitro", label: m.nitroTitle },
+            { id: "sst", label: qc.sstTitle },
+            { id: "disso", label: qc.dissoTitle },
+            { id: "stab", label: qc.stabTitle },
+            { id: "conditions", label: m.condTitle },
+            { id: "sterility", label: qc.sterilityTitle },
+            { id: "bet", label: qc.betTitle },
+            { id: "particles", label: m.partTitle },
+            { id: "em", label: qc.emTitle },
+            { id: "techniques", label: m.techTitle },
+            { id: "standards", label: m.stdTitle },
+            { id: "di", label: qc.diTitle },
+            { id: "sops", label: qc.sopsTitle },
+          ]}
+        />
+
+        <SubTitle id="areas" text={qc.areasTitle} locale={locale} />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {qc.areas.map((a) => (
             <div key={a.title.en} className="rounded-card border border-line bg-white p-5">
@@ -135,7 +91,7 @@ export default async function QcPage() {
           ))}
         </div>
 
-        <SubTitle text={qc.testsTitle} locale={locale} />
+        <SubTitle id="tests" text={qc.testsTitle} locale={locale} />
         <TableWrap>
           <table className="db">
             <thead>
@@ -157,7 +113,10 @@ export default async function QcPage() {
           </table>
         </TableWrap>
 
-        <SubTitle text={qc.microTitle} locale={locale} />
+        <SubTitle id="spec" text={m.specTitle} locale={locale} lead={m.specLead} />
+        <DataTable cols={m.specCols} rows={m.spec} locale={locale} />
+
+        <SubTitle id="micro" text={qc.microTitle} locale={locale} />
         <TableWrap>
           <table className="db">
             <thead>
@@ -184,7 +143,7 @@ export default async function QcPage() {
         </TableWrap>
         <p className="mt-3 text-sm text-muted">{qc.microNote[locale]}</p>
 
-        <SubTitle text={qc.waterTitle} locale={locale} />
+        <SubTitle id="water" text={qc.waterTitle} locale={locale} />
         <TableWrap>
           <table className="db">
             <thead>
@@ -206,7 +165,7 @@ export default async function QcPage() {
           </table>
         </TableWrap>
 
-        <SubTitle text={qc.validationTitle} locale={locale} />
+        <SubTitle id="validation" text={qc.validationTitle} locale={locale} />
         <TableWrap>
           <table className="db">
             <thead>
@@ -239,21 +198,14 @@ export default async function QcPage() {
         </TableWrap>
         <p className="mt-3 text-sm text-muted">{qc.validationNote[locale]}</p>
 
-        <SubTitle text={qc.oosTitle} locale={locale} />
-        <ol className="grid gap-4 md:grid-cols-3">
-          {qc.oos.map((step, i) => (
-            <li key={step.title.en} className="rounded-card border border-line bg-white p-6">
-              <span className="flex size-9 items-center justify-center rounded-full bg-vault-900 font-mono text-sm font-semibold text-molecule-400">
-                {(i + 1).toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US")}
-              </span>
-              <p className="mt-4 font-bold text-vault-900">{step.title[locale]}</p>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{step.text[locale]}</p>
-            </li>
-          ))}
-        </ol>
+        <SubTitle id="oos" text={qc.oosTitle} locale={locale} />
+        <Steps items={qc.oos} locale={locale} />
         <p className="mt-3 text-sm text-muted">{qc.oosRef[locale]}</p>
 
-        <SubTitle text={qc.impTitle} locale={locale} lead={qc.impLead} />
+        <SubTitle id="oot" text={m.ootTitle} locale={locale} />
+        <Bullets items={m.oot} locale={locale} />
+
+        <SubTitle id="imp" text={qc.impTitle} locale={locale} lead={qc.impLead} />
         <TableWrap>
           <table className="db">
             <thead>
@@ -278,7 +230,7 @@ export default async function QcPage() {
         </TableWrap>
         <p className="mt-3 text-sm text-muted">{qc.impNote[locale]}</p>
 
-        <SubTitle text={qc.solventsTitle} locale={locale} />
+        <SubTitle id="solvents" text={qc.solventsTitle} locale={locale} />
         <TableWrap>
           <table className="db">
             <thead>
@@ -303,7 +255,7 @@ export default async function QcPage() {
         </TableWrap>
         <p className="mt-3 text-sm text-muted">{qc.solventsNote[locale]}</p>
 
-        <SubTitle text={qc.elementsTitle} locale={locale} />
+        <SubTitle id="elements" text={qc.elementsTitle} locale={locale} />
         <TableWrap>
           <table className="db">
             <thead>
@@ -329,7 +281,19 @@ export default async function QcPage() {
         </TableWrap>
         <p className="mt-3 text-sm text-muted">{qc.elementsNote[locale]}</p>
 
-        <SubTitle text={qc.sstTitle} locale={locale} />
+        <SubTitle id="m7" text={m.m7Title} locale={locale} />
+        <Cards items={m.m7} locale={locale} />
+        <p className="mb-3 mt-6 font-bold text-vault-900">{m.ltlTitle[locale]}</p>
+        <DataTable cols={m.ltlCols} rows={m.ltl} locale={locale} mono={[1]} />
+
+        <SubTitle id="nitro" text={m.nitroTitle} locale={locale} lead={m.nitroLead} />
+        <DataTable cols={m.nitroCols} rows={m.nitro} locale={locale} mono={[1]} />
+        <p className="mt-3 inline-block rounded-lg bg-vault-50 px-3 py-1.5 font-mono text-sm text-molecule-700" dir="ltr">
+          {m.nitroFormula}
+        </p>
+        <p className="mt-3 text-sm text-muted">{m.nitroNote[locale]}</p>
+
+        <SubTitle id="sst" text={qc.sstTitle} locale={locale} />
         <TableWrap>
           <table className="db">
             <thead>
@@ -352,7 +316,7 @@ export default async function QcPage() {
         </TableWrap>
         <p className="mt-3 text-sm text-muted">{qc.sstNote[locale]}</p>
 
-        <SubTitle text={qc.dissoTitle} locale={locale} />
+        <SubTitle id="disso" text={qc.dissoTitle} locale={locale} />
         <TableWrap>
           <table className="db">
             <thead>
@@ -375,7 +339,7 @@ export default async function QcPage() {
         </TableWrap>
         <p className="mt-3 text-sm text-muted">{qc.dissoNote[locale]}</p>
 
-        <SubTitle text={qc.sterilityTitle} locale={locale} />
+        <SubTitle id="sterility" text={qc.sterilityTitle} locale={locale} />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {qc.sterility.map((step) => (
             <div key={step.title.en} className="rounded-card border border-line bg-white p-5">
@@ -385,14 +349,14 @@ export default async function QcPage() {
           ))}
         </div>
 
-        <SubTitle text={qc.dissoAccTitle} locale={locale} lead={qc.dissoAccNote} />
+        <SubTitle id="dissoacc" text={qc.dissoAccTitle} locale={locale} lead={qc.dissoAccNote} />
         <DataTable cols={Object.values(qc.dissoAccCols)} rows={qc.dissoAcc.map((r) => [r.stage, r.n, r.criteria])} locale={locale} mono={[1]} />
 
-        <SubTitle text={qc.f2Title} locale={locale} />
+        <SubTitle id="f2" text={qc.f2Title} locale={locale} />
         <Bullets items={qc.f2} locale={locale} />
         <p className="mt-3 text-sm text-muted">{qc.f2Ref[locale]}</p>
 
-        <SubTitle text={qc.stabTitle} locale={locale} />
+        <SubTitle id="stab" text={qc.stabTitle} locale={locale} />
         <TableWrap>
           <table className="db">
             <thead>
@@ -416,10 +380,20 @@ export default async function QcPage() {
         <Bullets items={qc.sig} locale={locale} />
         <p className="mt-3 text-sm text-muted">{qc.photo[locale]}</p>
 
-        <SubTitle text={qc.betTitle} locale={locale} />
+        <SubTitle id="conditions" text={m.condTitle} locale={locale} />
+        <DataTable cols={m.condCols} rows={m.cond} locale={locale} mono={[1, 2]} />
+        <p className="mb-3 mt-6 font-bold text-vault-900">{m.zonesTitle[locale]}</p>
+        <DataTable cols={m.zonesCols} rows={m.zones} locale={locale} mono={[2]} />
+        <p className="mt-3 text-sm text-muted">{m.condNote[locale]}</p>
+
+        <SubTitle id="bet" text={qc.betTitle} locale={locale} />
         <Cards items={qc.bet.map((b) => ({ k: b.title[locale], v: b.text, f: b.formula }))} locale={locale} />
 
-        <SubTitle text={qc.strainsTitle} locale={locale} lead={qc.strainsNote} />
+        <SubTitle id="particles" text={m.partTitle} locale={locale} />
+        <DataTable cols={m.partCols} rows={m.part} locale={locale} mono={[1, 2, 3]} />
+        <p className="mt-3 text-sm text-muted">{m.partNote[locale]}</p>
+
+        <SubTitle id="strains" text={qc.strainsTitle} locale={locale} lead={qc.strainsNote} />
         <TableWrap>
           <table className="db">
             <thead>
@@ -443,33 +417,39 @@ export default async function QcPage() {
           </table>
         </TableWrap>
 
-        <SubTitle text={qc.emTitle} locale={locale} />
+        <SubTitle id="em" text={qc.emTitle} locale={locale} />
         <DataTable cols={Object.values(qc.emCols)} rows={qc.em.map((r) => [r.grade, r.restSmall, r.restLarge, r.opSmall, r.opLarge, r.air, r.settle, r.contact])} locale={locale} mono={[1, 2, 3, 4, 5, 6, 7]} />
         <p className="mt-3 text-sm text-muted">{qc.emNote[locale]}</p>
 
-        <SubTitle text={qc.samplingTitle} locale={locale} lead={qc.samplingNote} />
+        <SubTitle id="sampling" text={qc.samplingTitle} locale={locale} lead={qc.samplingNote} />
         <DataTable cols={Object.values(qc.samplingCols)} rows={qc.sampling.map((r) => [r.plan, r.formula, r.use])} locale={locale} mono={[1]} />
 
-        <SubTitle text={qc.aiqTitle} locale={locale} />
+        <SubTitle id="aiq" text={qc.aiqTitle} locale={locale} />
         <Cards items={qc.aiqStages.map((a) => ({ k: a.stage, v: a.text }))} locale={locale} />
         <div className="mt-4">
           <Cards items={qc.aiqGroups.map((g) => ({ k: `Group ${g.group}`, v: g.text }))} locale={locale} />
         </div>
 
-        <SubTitle text={qc.balanceTitle} locale={locale} />
+        <SubTitle id="balance" text={qc.balanceTitle} locale={locale} />
         <Bullets items={qc.balance} locale={locale} />
 
-        <SubTitle text={qc.lifecycleTitle} locale={locale} />
+        <SubTitle id="lifecycle" text={qc.lifecycleTitle} locale={locale} />
         <Cards items={qc.lifecycle} locale={locale} />
 
-        <SubTitle text={qc.diTitle} locale={locale} />
+        <SubTitle id="techniques" text={m.techTitle} locale={locale} />
+        <DataTable cols={m.techCols} rows={m.tech} locale={locale} mono={[2, 3]} />
+
+        <SubTitle id="standards" text={m.stdTitle} locale={locale} />
+        <Cards items={m.std} locale={locale} />
+
+        <SubTitle id="di" text={qc.diTitle} locale={locale} />
         <Cards items={qc.di} locale={locale} />
         <p className="mt-3 text-sm text-muted">{qc.diNote[locale]}</p>
 
-        <SubTitle text={qc.retTitle} locale={locale} />
+        <SubTitle id="ret" text={qc.retTitle} locale={locale} />
         <Bullets items={qc.ret} locale={locale} />
 
-        <SubTitle text={qc.sopsTitle} locale={locale} />
+        <SubTitle id="sops" text={qc.sopsTitle} locale={locale} />
         <ul className="grid gap-x-8 gap-y-2 sm:grid-cols-2">
           {labSops.map((s) => (
             <li key={s.code} className="flex items-start gap-2.5 text-sm">
