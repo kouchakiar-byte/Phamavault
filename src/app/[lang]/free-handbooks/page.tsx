@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { BellRing, ShieldAlert, Sparkles } from "lucide-react";
-import { FreeHandbookFeature, HandbookDownload } from "@/components/free-handbook-feature";
+import { FreeHandbookFeature, HandbookDownload, handbookArchive } from "@/components/free-handbook-feature";
+import { ArchiveList } from "@/components/handbook-archive";
 import { BackLink, BiTitle, Container, MoleculePattern } from "@/components/ui";
 import { freeHandbookCopy as t, freeHandbooks } from "@/content/free-handbooks";
 import { copy } from "@/content/site";
@@ -12,7 +13,8 @@ export const generateMetadata = () => pageMetadata(t.pageTitle, t.lead, "free-ha
 
 export default async function FreeHandbooksPage() {
   const locale = await getLocale();
-  const [current, ...previous] = freeHandbooks;
+  const [current] = freeHandbooks;
+  const archive = handbookArchive(locale);
   const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
 
   return (
@@ -83,28 +85,12 @@ export default async function FreeHandbooksPage() {
           </section>
         </div>
 
-        {previous.length > 0 && (
-          <section className="mt-14">
-            <h2 className="text-2xl font-extrabold text-vault-900">{t.archive[locale]}</h2>
-            <div className="mt-6 grid gap-5 md:grid-cols-2">
-              {previous.map((hb) => (
-                <article key={hb.slug} className="flex gap-5 rounded-3xl border border-line bg-white p-5 shadow-sm shadow-vault-900/5">
-                  <div className="w-28 shrink-0 overflow-hidden rounded-lg shadow-lg shadow-vault-900/20 ring-1 ring-line sm:w-32">
-                    <Image src={hb.cover} alt={hb.coverAlt[locale]} sizes="128px" placeholder="blur" className="h-auto w-full" />
-                  </div>
-                  <div className="flex min-w-0 flex-col">
-                    <p className="text-xs font-bold text-molecule-600">
-                      {t.issue[locale].replace("{n}", num(hb.issue))} · {hb.date[locale]}
-                    </p>
-                    <h3 className="mt-1 font-extrabold leading-snug text-vault-900">{hb.title[locale]}</h3>
-                    <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted">{hb.subtitle[locale]}</p>
-                    <p className="mt-2 text-xs text-muted">{t.size[locale].replace("{s}", num(hb.sizeMb)).replace("{p}", num(hb.pages))}</p>
-                    <div className="mt-auto pt-4">
-                      <HandbookDownload handbook={hb} locale={locale} />
-                    </div>
-                  </div>
-                </article>
-              ))}
+        {archive.items.length > 0 && (
+          <section id="archive" className="mt-14 scroll-mt-24">
+            <h2 className="text-2xl font-extrabold text-vault-900">{t.archiveTitle[locale]}</h2>
+            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted">{t.archiveLead[locale]}</p>
+            <div className="mt-6">
+              <ArchiveList items={archive.items} labels={archive.labels} links={archive.links} />
             </div>
           </section>
         )}
