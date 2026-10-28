@@ -16,8 +16,9 @@ Needs Playwright with Chromium (`/opt/node-tools/node_modules/playwright`, `/opt
 - The finished file is encrypted (printing allowed; copying, editing and extraction not) and its fonts carry no
   text mapping, so copied text comes out as meaningless glyph codes.
 
-To publish an issue, copy the PDF to `public/downloads/`, put the cover and sample-page images in
-`src/assets/handbooks/` and add the issue to `src/content/free-handbooks.ts`.
+To publish an issue, copy the PDF to `private/handbooks/` (served by `/api/free-handbooks/[slug]`: the newest
+issue is free, earlier issues need a subscription), put the cover and sample-page images in
+`src/assets/handbooks/` and add the issue first in `src/content/free-handbooks.ts`, with its `published` day.
 
 Persian text follows `.claude/skills/fa-technical-writing/SKILL.md`. Each `build.mjs` runs
 `isolateLatin()` before printing so English terms, numbers and units keep their order inside

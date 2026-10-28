@@ -12,11 +12,14 @@ import hplcPage3 from "@/assets/handbooks/hplc-page-3.webp";
 export type FreeHandbook = {
   slug: string;
   issue: number;
-  date: Bi;
+  /** Publication day (YYYY-MM-DD); the label shows the week of the Persian month. */
+  published: string;
   title: Bi;
   subtitle: Bi;
-  /** Path of the PDF under public/. */
-  file: string;
+  /** File name of the PDF under private/handbooks/, served by /api/free-handbooks/[slug]. */
+  pdf: string;
+  /** Raised when the PDF is replaced, so browsers fetch the new edition. */
+  edition?: number;
   sizeMb: number;
   pages: number;
   cover: StaticImageData;
@@ -26,18 +29,18 @@ export type FreeHandbook = {
   chapters: Bi[];
 };
 
-/** Weekly free handbooks, newest first. */
+/** Weekly handbooks, newest first. Only the newest is free; earlier issues are for subscribers. */
 export const freeHandbooks: FreeHandbook[] = [
   {
     slug: "dissolution",
     issue: 2,
-    date: bi("November 2026", "آبان 1405"),
+    published: "2026-10-26",
     title: bi("Dissolution testing — an applied handbook", "راهنمای کاربردی آزمون انحلال (Dissolution)"),
     subtitle: bi(
       "From dissolution fundamentals and apparatus qualification to troubleshooting and profile comparison: media, discriminating methods, USP acceptance tables for IR, ER and DR, f2 and biowaivers, case studies and worked calculations.",
       "از مبانی انحلال و Qualification دستگاه تا Troubleshooting و مقایسه پروفایل: Dissolution medium، روش Discriminating، جدول‌های پذیرش USP برای IR، ER و DR، f2 و Biowaiver، مطالعات موردی و مسائل محاسباتی حل‌شده.",
     ),
-    file: "/downloads/pharmavault-dissolution-handbook.pdf",
+    pdf: "pharmavault-dissolution-handbook.pdf",
     sizeMb: 1.9,
     pages: 59,
     cover: dissolutionCover,
@@ -66,14 +69,14 @@ export const freeHandbooks: FreeHandbook[] = [
   {
     slug: "hplc",
     issue: 1,
-    date: bi("October 2026", "مهر 1405"),
+    published: "2026-10-22",
     title: bi("HPLC — an applied handbook for the QC laboratory", "راهنمای کاربردی HPLC در واحد کنترل کیفیت"),
     subtitle: bi(
       "From separation fundamentals to systematic troubleshooting: columns, detectors, mobile phase, pharmacopoeial requirements, validation, data integrity, case studies and worked calculations.",
       "از مبانی جداسازی تا Troubleshooting سیستماتیک: ستون‌ها، Detectorها، فاز متحرک، الزامات فارماکوپه، صحه‌گذاری، یکپارچگی داده، مطالعات موردی و مسائل محاسباتی حل‌شده.",
     ),
-    // The query string makes browsers fetch the revised edition.
-    file: "/downloads/pharmavault-hplc-handbook.pdf?v=2",
+    pdf: "pharmavault-hplc-handbook.pdf",
+    edition: 2,
     sizeMb: 2.9,
     pages: 74,
     cover: hplcCover,
@@ -102,6 +105,34 @@ export const freeHandbooks: FreeHandbook[] = [
   },
 ];
 
+/** Where the PDF is downloaded from. */
+export const handbookUrl = (h: FreeHandbook) => `/api/free-handbooks/${h.slug}${h.edition ? `?v=${h.edition}` : ""}`;
+
+const ORDINAL_FA = ["اول", "دوم", "سوم", "چهارم", "پنجم", "ششم"];
+const ORDINAL_EN = ["1st", "2nd", "3rd", "4th", "5th", "6th"];
+
+/**
+ * "هفته دوم آبان 1405": the week of the Persian month the issue appeared in.
+ * Weeks start on Saturday, so days before the first Saturday are week one.
+ */
+export function issueWeek(published: string): Bi {
+  const at = new Date(`${published}T12:00:00Z`);
+  const parts = (locale: string) =>
+    Object.fromEntries(
+      new Intl.DateTimeFormat(`${locale}-u-ca-persian-nu-latn`, { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })
+        .formatToParts(at)
+        .map((p) => [p.type, p.value]),
+    );
+  const en = parts("en");
+  const fa = parts("fa-IR");
+  const day = Number(en.day);
+  const first = new Date(at.getTime() - (day - 1) * 86_400_000);
+  const offset = (first.getUTCDay() + 1) % 7; // Saturday = 0
+  const week = Math.floor((day - 1 + offset) / 7);
+  const year = String(en.year).replace(/\D/g, "");
+  return bi(`${ORDINAL_EN[week]} week of ${en.month} ${year}`, `هفته ${ORDINAL_FA[week]} ${fa.month} ${year}`);
+}
+
 export const freeHandbookCopy = {
   eyebrow: bi("Free weekly handbook", "هندبوک رایگان هفته"),
   pageTitle: bi("Free weekly handbooks", "هندبوک‌های رایگان هفته"),
@@ -128,5 +159,21 @@ export const freeHandbookCopy = {
     "شماره‌های جدید هر هفته در همین صفحه منتشر می‌شوند. این صفحه را نشانه‌گذاری کنید یا اپلیکیشن فارماوالت را نصب کنید تا هیچ شماره‌ای را از دست ندهید.",
   ),
   archive: bi("Previous issues", "شماره‌های قبلی"),
+  archiveTitle: bi("Handbooks of previous weeks", "هندبوک‌های هفته‌های گذشته"),
+  archiveLead: bi(
+    "Earlier issues, in order of issue number. This week's handbook is free for everyone; earlier issues are available to PharmaVault subscribers.",
+    "شماره‌های قبلی به ترتیب شماره. هندبوک این هفته برای همه رایگان است؛ شماره‌های قبلی ویژه مشترکان فارماوالت است.",
+  ),
+  subscribers: bi("Subscribers", "ویژه مشترکان"),
+  downloadPrevious: bi("Download PDF", "دانلود PDF"),
+  checking: bi("Checking…", "در حال بررسی…"),
+  lockedTitle: bi("For subscribers only", "ویژه مشترکان"),
+  lockedText: bi(
+    "Handbooks of previous weeks are available only to users with a subscription. This week's handbook is free for everyone.",
+    "هندبوک‌های هفته‌های گذشته فقط برای کاربرانی که اشتراک تهیه کرده‌اند در دسترس است. هندبوک این هفته برای همه رایگان است.",
+  ),
+  buy: bi("Get a subscription", "تهیه اشتراک"),
+  login: bi("Sign in", "ورود به حساب"),
+  close: bi("Close", "بستن"),
   sampleAlt: bi("Sample page", "نمونه صفحه"),
 };
