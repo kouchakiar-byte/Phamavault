@@ -13,6 +13,7 @@ import { sops } from "@/data";
 import { sopFull, type SopFull } from "@/data/sop-extended";
 import { getLocale } from "@/i18n/locale";
 import { pageMetadata } from "@/lib/metadata";
+import { isolateLatin as iso } from "@/lib/bidi";
 import { href } from "@/lib/paths";
 
 const page = pages.qa;
@@ -55,7 +56,7 @@ function FullSop({ code, title, dep, full }: { code: string; title: { fa: string
   const list = (items: string[]) => (
     <ul className="list-disc space-y-1 ps-6">
       {items.map((x, i) => (
-        <li key={i}>{x}</li>
+        <li key={i}>{iso(x)}</li>
       ))}
     </ul>
   );
@@ -87,16 +88,16 @@ function FullSop({ code, title, dep, full }: { code: string; title: { fa: string
         </table>
       </header>
       {heading("هدف")}
-      <p className="text-justify">{full.purpose}</p>
+      <p className="text-justify">{iso(full.purpose)}</p>
       {heading("دامنه کاربرد")}
-      <p className="text-justify">{full.scope}</p>
+      <p className="text-justify">{iso(full.scope)}</p>
       {heading("مسئولیت‌ها")}
       <table className="w-full border-collapse text-sm">
         <tbody>
           {full.responsibilities.map((r) => (
             <tr key={r.role}>
-              <th className={`${cell} w-40 bg-vault-50 text-right font-semibold`}>{r.role}</th>
-              <td className={cell}>{r.duty}</td>
+              <th className={`${cell} w-40 bg-vault-50 text-right font-semibold`}>{iso(r.role)}</th>
+              <td className={cell}>{iso(r.duty)}</td>
             </tr>
           ))}
         </tbody>
@@ -107,8 +108,8 @@ function FullSop({ code, title, dep, full }: { code: string; title: { fa: string
           <dl className="space-y-1.5">
             {full.definitions.map((d) => (
               <div key={d.term}>
-                <dt className="inline font-bold text-vault-900">{d.term}: </dt>
-                <dd className="inline">{d.def}</dd>
+                <dt className="inline font-bold text-vault-900">{iso(d.term)}: </dt>
+                <dd className="inline">{iso(d.def)}</dd>
               </div>
             ))}
           </dl>
@@ -130,11 +131,11 @@ function FullSop({ code, title, dep, full }: { code: string; title: { fa: string
       {full.procedure.map((p, i) => (
         <section key={p.title} className="mt-3">
           <h3 className="font-bold text-vault-900">
-            {n}.{i + 1}. {p.title}
+            {n}.{i + 1}. {iso(p.title)}
           </h3>
           <ol className="mt-1 list-decimal space-y-1 ps-6">
             {p.steps.map((s, j) => (
-              <li key={j}>{s}</li>
+              <li key={j}>{iso(s)}</li>
             ))}
           </ol>
         </section>
@@ -151,11 +152,11 @@ function FullSop({ code, title, dep, full }: { code: string; title: { fa: string
           <div className="space-y-3">
             {full.calculations.map((c) => (
               <div key={c.name} className="rounded-lg border border-line bg-vault-50 px-4 py-3">
-                <p className="font-bold text-vault-900">{c.name}</p>
+                <p className="font-bold text-vault-900">{iso(c.name)}</p>
                 <p className="mt-1 font-mono text-sm text-ink" dir="ltr" style={{ textAlign: "left" }}>
                   {c.formula}
                 </p>
-                {c.note && <p className="mt-1 text-sm text-muted">{c.note}</p>}
+                {c.note && <p className="mt-1 text-sm text-muted">{iso(c.note)}</p>}
               </div>
             ))}
           </div>
@@ -172,7 +173,9 @@ function FullSop({ code, title, dep, full }: { code: string; title: { fa: string
       {heading("مراجع")}
       <ul className="list-disc space-y-1 ps-6" dir="ltr" style={{ textAlign: "left" }}>
         {full.references.map((r) => (
-          <li key={r}>{r}</li>
+          <li key={r} dir="auto">
+            {r}
+          </li>
         ))}
       </ul>
       {heading("تأیید")}
@@ -269,19 +272,19 @@ export default async function SopPage({ params }: PageProps<"/[lang]/qa/[code]">
               </p>
             </header>
             {heading(1, "هدف")}
-            <p>{text.purpose}</p>
+            <p>{iso(text.purpose)}</p>
             {heading(2, "دامنه کاربرد")}
-            <p>{text.scope}</p>
+            <p>{iso(text.scope)}</p>
             {heading(3, "مسئولیت‌ها")}
-            <p>{text.responsibilities}</p>
+            <p>{iso(text.responsibilities)}</p>
             {heading(4, "روش اجرا")}
             <ol className="list-decimal space-y-1 ps-6">
               {text.procedure.map((step, i) => (
-                <li key={i}>{step}</li>
+                <li key={i}>{iso(step)}</li>
               ))}
             </ol>
             {heading(5, "سوابق و فرم‌ها")}
-            <p>{text.records}</p>
+            <p>{iso(text.records)}</p>
             {heading(6, "مراجع")}
             <p>{text.references}</p>
             </>

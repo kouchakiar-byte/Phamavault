@@ -149,7 +149,7 @@ export const copy = {
         key: "qa",
         title: bi("Quality Assurance (QA)", "تضمین کیفیت (QA)"),
         points: [
-          bi("149 full-text SOPs: change control, deviation, CAPA and quality risk management", "149 دستورالعمل با متن کامل: کنترل تغییرات، مدیریت انحراف، CAPA و مدیریت ریسک کیفیت"),
+          bi("157 full-text SOPs: change control, deviation, CAPA and quality risk management", "157 دستورالعمل با متن کامل: کنترل تغییرات، مدیریت انحراف، CAPA و مدیریت ریسک کیفیت"),
           bi("Validation master plan, process and cleaning validation, self-inspection", "برنامه جامع اعتبارسنجی، اعتبارسنجی فرآیند و تمیزکاری و خودبازرسی"),
           bi("Nitrosamine, elemental impurity (ICH Q3D) and PDE-based cross-contamination risk assessments", "ارزیابی ریسک نیتروزآمین، ناخالصی‌های عنصری (ICH Q3D) و آلودگی متقاطع بر پایه PDE"),
           bi("Pharmaceutical quality system (ICH Q10) and quality risk management tools (ICH Q9)", "سیستم کیفیت دارویی (ICH Q10) و ابزارهای مدیریت ریسک کیفیت (ICH Q9)"),
