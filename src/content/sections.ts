@@ -100,8 +100,8 @@ export const sections = [
     group: "knowledge",
     title: bi("Regulatory Affairs: CTD & ICH", "امور رگولاتوری: CTD و ICH"),
     description: bi(
-      "CTD module structure, the core ICH quality guidelines and ICH Q1A(R2) stability storage conditions.",
-      "ساختار ماژول‌های CTD، راهنماهای کلیدی کیفیت ICH و شرایط نگهداری مطالعات پایداری ICH Q1A(R2).",
+      "CTD module structure, the core ICH quality guidelines, ICH Q1A(R2) stability storage conditions and bioequivalence (BE) with sample-size calculators.",
+      "ساختار ماژول‌های CTD، راهنماهای کلیدی کیفیت ICH، شرایط نگهداری مطالعات پایداری ICH Q1A(R2) و مطالعات Bioequivalence همراه با ماشین‌حساب حجم نمونه.",
     ),
   },
   {

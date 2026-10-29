@@ -6,7 +6,7 @@
  * stays with the Persian text, and "label: value" are separate runs.
  */
 
-const RUN = /Ph\. Eur\.(?: \d+(?:\.\d+)*)?|[A-Za-z0-9<>≤≥±≈~+−\-(][A-Za-z0-9<>≤≥±≈~+−\-–=.,:/×·°µμ%³²¹⁰⁴⁵⁶⁻₀-₉ ()[\]]*[A-Za-z0-9>%°µμ³²¹⁰⁴⁵⁶₀-₉)\]]|[A-Za-z0-9]/g;
+const RUN = /Ph\. Eur\.(?: \d+(?:\.\d+)*)?|[A-Za-z0-9α-ωΑ-Ω√<>≤≥±≈~+−\-(][A-Za-z0-9α-ωΑ-Ω√½<>≤≥±≈~+−\-–=.,:/×·°µ%³²¹⁰⁴⁵⁶⁻₀-₉ ()[\]]*[A-Za-z0-9α-ωΑ-Ω½>%°µ³²¹⁰⁴⁵⁶₀-₉)\]]|[A-Za-z0-9α-ωΑ-Ω]/g;
 
 const wrap = (s: string) => (s.trim() ? `⁦${s}⁩` : s);
 
