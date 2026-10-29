@@ -160,11 +160,11 @@ export const qc = {
   areasTitle: bi("Scope of the QC laboratory", "حوزه‌های کار آزمایشگاه کنترل کیفیت"),
   areas: [
     { title: bi("Starting and packaging materials", "مواد اولیه و بسته‌بندی"), codes: ["QC-001", "QC-002", "QC-005", "QC-006"] },
-    { title: bi("In-process and finished product", "حین فرایند و محصول نهایی"), codes: ["QC-003", "QC-007"] },
+    { title: bi("In-process and finished product", "حین فرایند و محصول نهایی"), codes: ["QC-003", "QC-007", "QC-031", "QC-033", "QC-034"] },
     { title: bi("Stability studies", "مطالعات پایداری"), codes: ["QC-022", "QC-023", "QC-024", "QC-030"] },
     { title: bi("Microbiology", "میکروبیولوژی"), codes: ["MIC-002", "MIC-003", "MIC-004", "MIC-005", "MIC-012"] },
     { title: bi("Water and environment", "آب و پایش محیطی"), codes: ["QC-025", "MIC-001", "MIC-008"] },
-    { title: bi("Methods and instruments", "روش‌ها و دستگاه‌ها"), codes: ["QC-010", "QC-011", "QC-014", "QC-017", "QC-029"] },
+    { title: bi("Methods and instruments", "روش‌ها و دستگاه‌ها"), codes: ["QC-010", "QC-011", "QC-014", "QC-017", "QC-029", "QC-032"] },
     { title: bi("Results and data", "نتایج و داده‌ها"), codes: ["QC-008", "QC-009", "QC-021", "QC-028"] },
     { title: bi("Standards and reagents", "استانداردها و معرف‌ها"), codes: ["QC-012", "QC-013"] },
   ],
