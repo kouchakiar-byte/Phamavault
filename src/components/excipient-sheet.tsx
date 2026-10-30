@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useContext, useEffect, useRef, useState, type ReactNode } from "react";
 import { EyeOff } from "lucide-react";
 import { excipientSheet as copy } from "@/content/excipient-sheet";
 import { LogoMark } from "./logo";
 import { VaultWord } from "./brand";
+import { CopyableContext } from "./sop-copy-lock";
 
 const stamp = () =>
   new Date().toLocaleString("fa-IR-u-nu-latn", { timeZone: "Asia/Tehran", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
@@ -33,13 +34,15 @@ export function SheetPage({
   children,
   locale,
   printBlocked,
-  copyable = false,
+  copyable: copyableProp = false,
 }: {
   children: ReactNode;
   locale: "fa" | "en";
   printBlocked: string;
   copyable?: boolean;
 }) {
+  // A sheet inside an unlocked <SopCopyLock> (subscriber) can be copied too.
+  const copyable = useContext(CopyableContext) || copyableProp;
   const [shielded, setShielded] = useState(false);
   const [mark, setMark] = useState(`pharmavault.ir · ${stamp()}`);
   const article = useRef<HTMLElement>(null);
