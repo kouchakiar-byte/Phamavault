@@ -102,11 +102,6 @@ export const copy = {
     ],
   },
 
-  tour: {
-    label: bi("A two-minute tour of the twelve PharmaVault sections", "تور دودقیقه‌ای دوازده بخش فارماوالت"),
-    pause: bi("Pause the tour", "توقف تور"),
-    play: bi("Play the tour", "پخش تور"),
-  },
   statement: {
     photoAlt: bi("Two pharmaceutical researchers examining a sample through a magnifying glass", "دو پژوهشگر دارویی در حال بررسی نمونه با ذره‌بین"),
     title: bi(

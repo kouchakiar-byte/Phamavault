@@ -6,8 +6,8 @@ const t = copy.enamad;
 
 /**
  * The e-Namad seal image as the e-Namad panel issues it (same image, referrer
- * policy and `code` attribute), not clickable. `compact` is the small badge at
- * the top of the home page; otherwise it sits in a card that names what it
+ * policy and `code` attribute), not clickable. `compact` is a smaller copy of the
+ * footer card for the top of the home page; otherwise it sits in a card that names what it
  * certifies (`dark` on the footer, `light` on white pages).
  */
 export function EnamadSeal({ locale, tone = "light", compact = false, className = "" }: { locale: Locale; tone?: "light" | "dark"; compact?: boolean; className?: string }) {
@@ -27,11 +27,18 @@ export function EnamadSeal({ locale, tone = "light", compact = false, className 
     />
   );
   if (compact) {
+    // The footer card on the dark hero, smaller: seal, tick and title, then the description
     return (
-      <span className={`inline-flex items-center gap-2.5 rounded-2xl bg-white/95 py-1.5 pe-3.5 ps-1.5 text-vault-900 shadow-lg shadow-black/20 ${className}`}>
-        <span className="shrink-0">{image(52)}</span>
-        <span className="text-xs font-bold leading-snug">{t.title[locale]}</span>
-      </span>
+      <div className={`flex max-w-md items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-2 pe-4 ${className}`}>
+        <span className="shrink-0 rounded-lg bg-white p-1 ring-1 ring-black/5">{image(56)}</span>
+        <div className="min-w-0">
+          <p className="flex items-center gap-1 text-xs font-bold text-white">
+            <ShieldCheck className="size-3.5 shrink-0 text-molecule-400" aria-hidden="true" />
+            {t.title[locale]}
+          </p>
+          <p className="mt-0.5 text-[0.7rem] leading-relaxed text-vault-100/80">{t.text[locale]}</p>
+        </div>
+      </div>
     );
   }
   const dark = tone === "dark";
