@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { Suspense, type ReactNode } from "react";
+import { Suspense } from "react";
 import { cookies } from "next/headers";
-import { SopCopyLock } from "@/components/sop-copy-lock";
+import { CopyUnlock, SopCopyLock } from "@/components/sop-copy-lock";
 import type { Locale } from "@/i18n/config";
 import { getUser } from "@/lib/auth";
 import { sectionsFor } from "@/lib/subscriptions";
@@ -36,7 +36,11 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/qa/[code]"
   const sop = await load(params);
   return pageMetadata(
     { en: `${sop.code} ${sop.title.en}`, fa: `${sop.code} ${sop.title.fa}` },
-    sop.covers,
+    // The short "covers" list alone is too thin for a search snippet.
+    {
+      en: `Standard operating procedure ${sop.code}, ${sop.title.en}: ${sop.covers.en}. Full GMP text in Persian with references.`,
+      fa: `دستورالعمل اجرایی (SOP) ${sop.code} – ${sop.title.fa}: ${sop.covers.fa}. متن کامل مطابق GMP همراه با رفرنس.`,
+    },
     `qa/${sop.code.toLowerCase()}`,
     // The SOP text is Persian in both languages.
     true,
@@ -225,7 +229,7 @@ const lockProps = (locale: Locale) => ({
  * Copying the SOP text is for subscribers to the QA or QC section; everyone else, admins
  * included, can read only (an admin who needs to copy can grant themselves a subscription).
  */
-async function CopyAccess({ locale, children }: { locale: Locale; children: ReactNode }) {
+async function CopyAccess() {
   await cookies(); // request-time check
   const user = await getUser().catch(() => null);
   let allowed = false;
@@ -233,11 +237,7 @@ async function CopyAccess({ locale, children }: { locale: Locale; children: Reac
     const sections = await sectionsFor(user.mobile).catch(() => new Set<string>());
     allowed = sections.has("qa") || sections.has("qc");
   }
-  return (
-    <SopCopyLock locked={!allowed} {...lockProps(locale)}>
-      {children}
-    </SopCopyLock>
-  );
+  return allowed ? <CopyUnlock targetId="sop-doc" /> : null;
 }
 
 export default async function SopPage({ params }: PageProps<"/[lang]/qa/[code]">) {
@@ -304,8 +304,12 @@ export default async function SopPage({ params }: PageProps<"/[lang]/qa/[code]">
       <Container className="py-12">
         {locale === "en" && <p className="text-sm text-muted">{page.inPersian.en}</p>}
 
-        <Suspense fallback={<SopCopyLock locked {...lockProps(locale)}>{doc}</SopCopyLock>}>
-          <CopyAccess locale={locale}>{doc}</CopyAccess>
+        {/* The SOP is rendered once, locked; for subscribers CopyAccess streams in and unlocks it. */}
+        <SopCopyLock locked {...lockProps(locale)}>
+          {doc}
+        </SopCopyLock>
+        <Suspense fallback={null}>
+          <CopyAccess />
         </Suspense>
 
       </Container>

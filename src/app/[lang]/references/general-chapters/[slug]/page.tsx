@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { ExternalLink } from "lucide-react";
 import { SheetHeader, SheetPage } from "@/components/excipient-sheet";
-import { SopCopyLock } from "@/components/sop-copy-lock";
+import { CopyUnlock, SopCopyLock } from "@/components/sop-copy-lock";
 import { BackLink, Container } from "@/components/ui";
 import { generalChaptersPage as page } from "@/content/general-chapters";
 import { copy, siteConfig } from "@/content/site";
@@ -46,8 +46,13 @@ async function load(params: PageProps<"/[lang]/references/general-chapters/[slug
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/references/general-chapters/[slug]">): Promise<Metadata> {
   const [locale, { item }] = await Promise.all([getLocale(), load(params)]);
-  const title = { en: `${label(item)} ${item.en} — PharmaVault`, fa: `${label(item)} ${item.fa} — ${t.docTitle.fa}` };
-  const meta = await pageMetadata(title, item.s, `references/general-chapters/${chapterSlug(item.ph, item.code)}`);
+  const title = { en: `${label(item)} ${item.en}`, fa: `${label(item)} ${item.fa}` };
+  // Many summaries are one line; the chapter number and title make the snippet self-contained.
+  const description = {
+    en: `${label(item)} ${item.en}: ${item.s.en} Summary, key requirements and related chapters.`,
+    fa: `${label(item)} – ${item.fa}: ${item.s.fa} خلاصه، الزامات کلیدی و فصل‌های مرتبط.`,
+  };
+  const meta = await pageMetadata(title, description, `references/general-chapters/${chapterSlug(item.ph, item.code)}`);
   return { ...meta, title: title[locale], openGraph: { ...meta.openGraph, title: title[locale] } };
 }
 
@@ -120,32 +125,30 @@ function sections(blocks: SheetBlock[]) {
 }
 
 /** Copying the sheet text is for subscribers to the References section. */
-async function CopyAccess({ locale, children }: { locale: Locale; children: (copyable: boolean) => ReactNode }) {
+async function CopyAccess() {
   await cookies(); // request-time check
   const user = await getUser().catch(() => null);
-  let allowed = false;
-  if (user) allowed = (await sectionsFor(user.mobile).catch(() => new Set<string>())).has("references");
-  const l = t.copyLock;
-  return (
-    <SopCopyLock
-      locked={!allowed}
-      targetId="gc-sheet"
-      buyHref={`${href(locale, "account/buy")}?s=references`}
-      plansHref={href(locale, "#plans")}
-      labels={{
-        copy: t.copy[locale],
-        copied: t.copied[locale],
-        title: l.title[locale],
-        text: l.text[locale],
-        buy: l.buy[locale],
-        plans: l.plans[locale],
-        close: l.close[locale],
-      }}
-    >
-      {children(allowed)}
-    </SopCopyLock>
-  );
+  const allowed = user ? (await sectionsFor(user.mobile).catch(() => new Set<string>())).has("references") : false;
+  return allowed ? <CopyUnlock targetId="gc-sheet" /> : null;
 }
+
+const lockProps = (locale: Locale) => {
+  const l = t.copyLock;
+  return {
+    targetId: "gc-sheet",
+    buyHref: `${href(locale, "account/buy")}?s=references`,
+    plansHref: href(locale, "#plans"),
+    labels: {
+      copy: t.copy[locale],
+      copied: t.copied[locale],
+      title: l.title[locale],
+      text: l.text[locale],
+      buy: l.buy[locale],
+      plans: l.plans[locale],
+      close: l.close[locale],
+    },
+  };
+};
 
 export default async function GeneralChapterSheet({ params }: PageProps<"/[lang]/references/general-chapters/[slug]">) {
   const [locale, { item, same, sheet }] = await Promise.all([getLocale(), load(params)]);
@@ -154,10 +157,10 @@ export default async function GeneralChapterSheet({ params }: PageProps<"/[lang]
   const related = (sheet?.rel ?? []).map((k) => byKey.get(k)).filter((c): c is GeneralChapter => Boolean(c) && c !== item);
   const links = page.links[item.ph];
 
-  const body = (copyable: boolean) => {
+  const body = () => {
     let n = 0;
     return (
-      <SheetPage locale={locale} printBlocked={t.printBlocked[locale]} copyable={copyable}>
+      <SheetPage locale={locale} printBlocked={t.printBlocked[locale]}>
         <SheetHeader docTitle={`${t.docTitle.en} · ${t.docTitle.fa}`} />
         <div id="gc-sheet" className="px-6 pb-8 pt-6 text-sm sm:px-10">
           <p className="font-mono text-3xl font-bold tracking-tight text-molecule-700 sm:text-4xl" dir="ltr" style={{ textAlign: fa ? "right" : "left" }}>
@@ -280,8 +283,12 @@ export default async function GeneralChapterSheet({ params }: PageProps<"/[lang]
       />
       <BackLink href={href(locale, "references/general-chapters")}>{t.back[locale]}</BackLink>
       <div className="mt-5">
-        <Suspense fallback={body(false)}>
-          <CopyAccess locale={locale}>{body}</CopyAccess>
+        {/* The sheet is rendered once, locked; for subscribers CopyAccess streams in and unlocks it. */}
+        <SopCopyLock locked {...lockProps(locale)}>
+          {body()}
+        </SopCopyLock>
+        <Suspense fallback={null}>
+          <CopyAccess />
         </Suspense>
       </div>
     </Container>

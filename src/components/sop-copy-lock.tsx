@@ -1,18 +1,41 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { createContext, useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import Link from "next/link";
 import { Lock, X } from "lucide-react";
 import { CopyButton } from "./copy-button";
 
 type Labels = { copy: string; copied: string; title: string; text: string; buy: string; plans: string; close: string };
 
+/** Documents the signed-in reader may copy, by target id. Filled by <CopyUnlock>, which streams in after the page. */
+const unlocked = new Set<string>();
+const UNLOCK_EVENT = "pv-copy-unlock";
+const subscribe = (cb: () => void) => {
+  window.addEventListener(UNLOCK_EVENT, cb);
+  return () => window.removeEventListener(UNLOCK_EVENT, cb);
+};
+
+/** True inside an unlocked document, so nested sheets (SheetPage) can allow copying too. */
+export const CopyableContext = createContext(false);
+
+/**
+ * Rendered (inside Suspense) only for readers who may copy. The document itself is rendered
+ * once, locked, in the static page; this unlocks it, so the text is not sent twice.
+ */
+export function CopyUnlock({ targetId }: { targetId: string }) {
+  useEffect(() => {
+    unlocked.add(targetId);
+    window.dispatchEvent(new Event(UNLOCK_EVENT));
+  }, [targetId]);
+  return null;
+}
+
 /**
  * Wraps an SOP document. For readers without a subscription, selecting and
  * copying the text is blocked and the copy button explains how to get access.
  */
 export function SopCopyLock({
-  locked,
+  locked: lockedByDefault,
   targetId,
   buyHref,
   plansHref,
@@ -28,6 +51,8 @@ export function SopCopyLock({
 }) {
   const [notice, setNotice] = useState(false);
   const box = useRef<HTMLDivElement>(null);
+  const opened = useSyncExternalStore(subscribe, () => unlocked.has(targetId), () => false);
+  const locked = lockedByDefault && !opened;
 
   // Page-wide guard: a selection that reaches into the SOP (Ctrl+A, long-press on a phone,
   // keyboard shortcuts) is cleared and the copy is cancelled.
@@ -65,33 +90,32 @@ export function SopCopyLock({
     };
   }, [locked]);
 
+  const block = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    setNotice(true);
+  };
+  // One wrapper in both states, so unlocking does not remount the document.
+  const guard = locked
+    ? { className: "select-none", style: { WebkitUserSelect: "none", WebkitTouchCallout: "none" } as const, onCopy: block, onCut: block, onContextMenu: block, onDragStart: block }
+    : {};
+  const doc = (
+    <div ref={box} {...guard}>
+      <CopyableContext.Provider value={!locked}>{children}</CopyableContext.Provider>
+    </div>
+  );
   if (!locked) {
     return (
       <>
-        {children}
+        {doc}
         <div className="mt-6">
           <CopyButton targetId={targetId} label={labels.copy} doneLabel={labels.copied} />
         </div>
       </>
     );
   }
-  const block = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    setNotice(true);
-  };
   return (
     <>
-      <div
-        ref={box}
-        className="select-none"
-        style={{ WebkitUserSelect: "none", WebkitTouchCallout: "none" }}
-        onCopy={block}
-        onCut={block}
-        onContextMenu={block}
-        onDragStart={block}
-      >
-        {children}
-      </div>
+      {doc}
       <div className="mt-6 space-y-3">
         <button
           type="button"
