@@ -4,10 +4,11 @@ import { copy, siteConfig } from "@/content/site";
 import { sectionGroups, sections } from "@/content/sections";
 import { getLocale } from "@/i18n/locale";
 import { href } from "@/lib/paths";
-import { legalNav } from "@/content/legal";
+import { contactLabels, legalNav } from "@/content/legal";
 import { BrandName } from "./brand";
 import { EnamadSeal } from "./enamad-seal";
 import { Logo } from "./logo";
+import { WhatsAppIcon, whatsappHref } from "./whatsapp-icon";
 import { Container } from "./ui";
 
 export async function SiteFooter() {
@@ -26,6 +27,26 @@ export async function SiteFooter() {
           >
             {siteConfig.email}
           </a>
+          <ul className="mt-3 space-y-2 text-sm">
+            {siteConfig.contact.landline && (
+              <li>
+                <span className="text-vault-100/60">{contactLabels.landline[locale]}: </span>
+                <a href={`tel:${siteConfig.contact.landline.replace(/\D/g, "")}`} dir="ltr" className="font-medium text-white hover:text-molecule-400">
+                  {siteConfig.contact.landline}
+                </a>
+              </li>
+            )}
+            {siteConfig.contact.phone && (
+              <li className="flex items-center gap-2">
+                <a href={whatsappHref(siteConfig.contact.phone)} target="_blank" rel="noopener noreferrer" aria-label={contactLabels.whatsapp[locale]} className="text-[#25D366] hover:text-[#5be38f]">
+                  <WhatsAppIcon className="size-5" />
+                </a>
+                <a href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`} dir="ltr" className="font-medium text-white hover:text-molecule-400">
+                  {siteConfig.contact.phone}
+                </a>
+              </li>
+            )}
+          </ul>
         </div>
         {sectionGroups.map((g) => (
           <div key={g.key}>

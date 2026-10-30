@@ -1,6 +1,7 @@
 import { Clock, Mail, MapPin, Phone, UserRound } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { LegalPage } from "@/components/legal-page";
+import { WhatsAppIcon, whatsappHref } from "@/components/whatsapp-icon";
 import { contact, contactLabels as t } from "@/content/legal";
 import { siteConfig } from "@/content/site";
 import { getLocale } from "@/i18n/locale";
@@ -11,10 +12,12 @@ export const generateMetadata = () => pageMetadata(contact.title, contact.lead, 
 export default async function ContactPage() {
   const locale = await getLocale();
   const c = siteConfig.contact;
-  const rows: { icon: LucideIcon; label: string; value: string | null; ltr?: boolean; href?: string }[] = [
+  const tel = (n: string) => `tel:${n.replace(/[^\d+]/g, "")}`;
+  const rows: { icon: LucideIcon | typeof WhatsAppIcon; label: string; value: string | null; ltr?: boolean; href?: string; whatsapp?: string }[] = [
     { icon: UserRound, label: t.owner[locale], value: c.owner },
     { icon: MapPin, label: t.address[locale], value: c.address && (c.postalCode ? `${c.address} — ${t.postalCode[locale]}: ${c.postalCode}` : c.address) },
-    { icon: Phone, label: t.phone[locale], value: c.phone, ltr: true, href: c.phone ? `tel:${c.phone.replace(/[^\d+]/g, "")}` : undefined },
+    { icon: Phone, label: t.landline[locale], value: c.landline, ltr: true, href: c.landline ? tel(c.landline) : undefined },
+    { icon: WhatsAppIcon, label: t.phone[locale], value: c.phone, ltr: true, href: c.phone ? tel(c.phone) : undefined, whatsapp: c.phone ? whatsappHref(c.phone) : undefined },
     { icon: Mail, label: t.email[locale], value: siteConfig.email, ltr: true, href: `mailto:${siteConfig.email}` },
     { icon: Clock, label: t.hours[locale], value: c.hours[locale] },
   ];
@@ -23,7 +26,7 @@ export default async function ContactPage() {
       <dl className="grid gap-4 sm:grid-cols-2">
         {rows
           .filter((r) => r.value)
-          .map(({ icon: Icon, label, value, ltr, href }) => (
+          .map(({ icon: Icon, label, value, ltr, href, whatsapp }) => (
             <div key={label} className="flex gap-3 rounded-card border border-line bg-white p-5">
               <Icon className="mt-0.5 size-5 shrink-0 text-molecule-500" aria-hidden="true" />
               <div>
@@ -37,6 +40,12 @@ export default async function ContactPage() {
                     value
                   )}
                 </dd>
+                {whatsapp && (
+                  <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-[#25D366]/10 px-3 py-1 text-xs font-semibold text-[#128C7E] hover:bg-[#25D366]/20">
+                    <WhatsAppIcon className="size-4" />
+                    {t.whatsapp[locale]}
+                  </a>
+                )}
               </div>
             </div>
           ))}
