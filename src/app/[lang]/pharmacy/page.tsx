@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeftRight, BookOpen, ExternalLink, FlaskConical, Pill } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
@@ -15,7 +14,6 @@ import { getLocale } from "@/i18n/locale";
 import { pageMetadata } from "@/lib/metadata";
 import { href } from "@/lib/paths";
 import { withReviewedMonth } from "@/lib/data-dates";
-import pharmacist from "@/assets/photos/pharmacist.webp";
 
 export const generateMetadata = () => pageMetadata(pharmacyPage.title, pharmacyPage.lead, "pharmacy");
 
@@ -133,17 +131,11 @@ export default async function PharmacyPage() {
     <>
       <PageHeader locale={locale} section="pharmacy" title={pharmacyPage.title} lead={pharmacyPage.lead} />
       <Container className="space-y-14 py-12">
-        <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_17rem]">
-          <div className="space-y-3">
-            <p className="rounded-xl border border-capsule-400/40 bg-capsule-400/10 px-4 py-3 text-sm leading-relaxed text-ink">
-              {pharmacyPage.disclaimer[locale]} {withReviewedMonth(pharmacyPage.reviewed[locale], "pharmacy", locale)}
-            </p>
-            <QuickAccess locale={locale} />
-          </div>
-          <div className="relative order-first h-60 overflow-hidden rounded-3xl shadow-lg shadow-vault-950/10 ring-1 ring-line sm:h-72 lg:order-none lg:h-auto">
-            <Image src={pharmacist} alt="" fill priority sizes="(min-width: 1024px) 272px, 100vw" placeholder="blur" className="object-cover object-[50%_28%] lg:object-[50%_35%]" />
-            <div className="absolute inset-0 bg-gradient-to-t from-vault-950/30 to-transparent" aria-hidden="true" />
-          </div>
+        <div className="space-y-3">
+          <p className="rounded-xl border border-capsule-400/40 bg-capsule-400/10 px-4 py-3 text-sm leading-relaxed text-ink">
+            {pharmacyPage.disclaimer[locale]} {withReviewedMonth(pharmacyPage.reviewed[locale], "pharmacy", locale)}
+          </p>
+          <QuickAccess locale={locale} />
         </div>
 
         {/* 0. Drug interaction checker */}
