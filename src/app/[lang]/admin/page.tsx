@@ -13,7 +13,7 @@ import { getUser } from "@/lib/auth";
 import { databaseConfigured } from "@/lib/db";
 import { formatDate, formatNumber } from "@/lib/format";
 import { planName, periodLabel, sectionsLabel } from "@/lib/labels";
-import { recentOrders, stats } from "@/lib/orders";
+import { recentOrders, recentUsers, stats } from "@/lib/orders";
 import { href } from "@/lib/paths";
 import { paywallEnabled, recentSubscriptions, subscriptionStatus } from "@/lib/subscriptions";
 import { onlinePaymentEnabled } from "@/lib/zarinpal";
@@ -53,7 +53,8 @@ async function Admin({ locale }: { locale: Locale }) {
   if (!user) redirect(`${href(locale, "account/login")}?next=${encodeURIComponent(href(locale, "admin"))}`);
   if (!user.isAdmin) notFound();
 
-  const [numbers, orders, subscriptions, requests] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests()]);
+  const [numbers, orders, subscriptions, requests, users] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers()]);
+  const u = t.usersList;
   const gateway = onlinePaymentEnabled()
     ? `${t.on[locale]}${process.env.ZARINPAL_SANDBOX === "1" ? ` (${t.sandbox[locale]})` : ""}`
     : t.off[locale];
@@ -89,6 +90,43 @@ async function Admin({ locale }: { locale: Locale }) {
           </div>
         ))}
       </div>
+
+      <Panel title={u.title} locale={locale}>
+        {users.length === 0 ? (
+          <p className="text-sm text-muted">{u.none[locale]}</p>
+        ) : (
+          <div className="max-h-[32rem] overflow-auto">
+            <table className="db">
+              <thead>
+                <tr>
+                  <th>{u.name[locale]}</th>
+                  <th>{u.mobile[locale]}</th>
+                  <th>{u.joined[locale]}</th>
+                  <th>{u.lastSeen[locale]}</th>
+                  <th>{u.subscription[locale]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {users.map((x) => (
+                  <tr key={x.id}>
+                    <td>{x.name}</td>
+                    <td>
+                      <a href={`tel:${x.mobile}`} className="font-mono text-molecule-700 hover:underline" dir="ltr">
+                        {x.mobile}
+                      </a>
+                    </td>
+                    <td className="whitespace-nowrap">{formatDate(x.createdAt, locale)}</td>
+                    <td className="whitespace-nowrap">{x.lastSeen ? formatDate(x.lastSeen, locale) : "—"}</td>
+                    <td className={x.activeSubscriptions ? "font-semibold text-molecule-700" : "text-muted"}>
+                      {x.activeSubscriptions ? u.active[locale] : u.none2[locale]}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </Panel>
 
       <Panel title={requestLabels.title} locale={locale}>
         {requests.length === 0 ? (

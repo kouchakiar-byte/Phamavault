@@ -218,6 +218,17 @@ export const account = {
       revenue: bi("Revenue, last 30 days (Toman)", "درآمد 30 روز اخیر (تومان)"),
       pending: bi("Invoices awaiting payment", "پیش‌فاکتورهای در انتظار پرداخت"),
     },
+    usersList: {
+      title: bi("Users", "کاربران"),
+      none: bi("No users yet.", "هنوز کاربری ثبت‌نام نکرده است."),
+      name: bi("Name", "نام"),
+      mobile: bi("Mobile", "موبایل"),
+      joined: bi("Signed up", "تاریخ ثبت‌نام"),
+      lastSeen: bi("Last sign-in", "آخرین ورود"),
+      subscription: bi("Subscription", "اشتراک"),
+      active: bi("Active", "فعال"),
+      none2: bi("None", "ندارد"),
+    },
     orders: bi("Orders", "سفارش‌ها"),
     buyer: bi("Buyer", "خریدار"),
     method: {
