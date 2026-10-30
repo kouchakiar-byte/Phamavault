@@ -88,8 +88,8 @@ export const sections = [
     group: "tools",
     title: bi("Formulation Design Tools", "ابزارهای طراحی فرمولاسیون"),
     description: bi(
-      "Formulation advisor: from the drug, strength, dosage form and reference brand it proposes the manufacturing route, unit weight and starting % w/w of each excipient, with monograph ranges and manufacturing steps; plus starting compositions with q.s. balancing and batch quantities.",
-      "مشاور هوشمند فرمولاسیون: بر اساس ماده مؤثره، قدرت دارویی، شکل دارویی و برند مرجع، روش ساخت، وزن هر واحد و درصد وزنی پیشنهادی هر ماده جانبی را همراه با محدوده‌های مونوگراف و مراحل ساخت ارائه می‌دهد؛ به‌همراه ترکیب‌های پایه، محاسبه جزء q.s. و مقادیر بچ.",
+      "Formulation advisor: from the drug, strength, dosage form and reference brand it proposes the manufacturing route, unit weight and starting % w/w of each excipient, with monograph ranges and manufacturing steps; an API–excipient compatibility checker with literature; plus starting compositions with q.s. balancing and batch quantities.",
+      "مشاور هوشمند فرمولاسیون: بر اساس ماده مؤثره، قدرت دارویی، شکل دارویی و برند مرجع، روش ساخت، وزن هر واحد و درصد وزنی پیشنهادی هر ماده جانبی را همراه با محدوده‌های مونوگراف و مراحل ساخت ارائه می‌دهد؛ بررسی سازگاری API و Excipient همراه با رفرنس؛ و ترکیب‌های پایه با محاسبه جزء q.s. و مقادیر بچ.",
     ),
   },
   {
@@ -112,8 +112,8 @@ export const sections = [
     group: "knowledge",
     title: bi("Quality Control (QC)", "کنترل کیفیت (QC)"),
     description: bi(
-      "Pharmacopoeial tests and acceptance criteria, microbial limits for non-sterile products, pharmaceutical water, ICH Q2 method validation and OOS investigation.",
-      "آزمون‌ها و معیارهای پذیرش فارماکوپه‌ای، حدود میکروبی فرآورده‌های غیراستریل، آب دارویی، اعتبارسنجی روش طبق ICH Q2 و بررسی نتایج OOS.",
+      "Pharmacopoeial tests and acceptance criteria, specifications (ICH Q6A), impurities, mutagenic impurities and nitrosamines, stability conditions, microbial limits, pharmaceutical water, method validation and OOS/OOT investigation.",
+      "آزمون‌ها و معیارهای پذیرش فارماکوپه‌ای، مشخصات محصول (ICH Q6A)، ناخالصی‌ها، ناخالصی‌های جهش‌زا و نیتروزآمین، شرایط پایداری، حدود میکروبی، آب دارویی، اعتبارسنجی روش و بررسی نتایج OOS و OOT.",
     ),
   },
   {
@@ -124,8 +124,8 @@ export const sections = [
     group: "knowledge",
     title: bi("Quality Assurance & SOPs", "تضمین کیفیت و دستورالعمل‌های استاندارد (SOP)"),
     description: bi(
-      "The pharmaceutical quality system (ICH Q10), quality risk management tools and a GMP-aligned SOP library for every department, with full text.",
-      "سیستم کیفیت دارویی (ICH Q10)، ابزارهای مدیریت ریسک کیفیت و کتابخانه دستورالعمل‌های منطبق بر GMP برای همه واحدها، همراه با متن کامل.",
+      "The pharmaceutical quality system (ICH Q10), deviations, CAPA, change control, validation and PQR, a GMP form generator (Word/PDF) and a full-text SOP library for every department.",
+      "سیستم کیفیت دارویی (ICH Q10)، انحراف، CAPA، کنترل تغییر، Validation و PQR، فرم‌ساز GMP با خروجی Word و PDF، و کتابخانه دستورالعمل‌های GMP با متن کامل برای همه واحدها.",
     ),
   },
   {
@@ -136,8 +136,8 @@ export const sections = [
     group: "knowledge",
     title: bi("Pharmaceutical references and pharmacopoeias", "رفرنس‌ها و فارماکوپه‌ها در داروسازی"),
     description: bi(
-      "USP–NF, BP, Ph. Eur., JP and the other pharmacopoeias, regulators and drug-information sources: the edition in force, the latest published and official links, with a searchable Orange Book.",
-      "فارماکوپه‌های آمریکا، بریتانیا، اروپا و ژاپن \u2066(USP–NF, BP, Ph. Eur., JP)\u2069 و دیگر مراجع رگولاتوری و اطلاعات دارویی: ویرایش لازم‌الاجرا، آخرین ویرایش منتشرشده و لینک رسمی هر رفرنس، همراه با جستجوی Orange Book.",
+      "USP–NF, BP, Ph. Eur., JP and the other pharmacopoeias, regulators and drug-information sources: the edition in force, the latest published and official links, a searchable Orange Book and 669 general chapters summarised in Persian.",
+      "فارماکوپه‌های آمریکا، بریتانیا، اروپا و ژاپن \u2066(USP–NF, BP, Ph. Eur., JP)\u2069 و دیگر مراجع رگولاتوری و اطلاعات دارویی: ویرایش لازم‌الاجرا، آخرین ویرایش منتشرشده و لینک رسمی هر رفرنس، همراه با جستجوی Orange Book و خلاصه فارسی 669 General Chapter.",
     ),
   },
   {

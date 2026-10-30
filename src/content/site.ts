@@ -116,10 +116,10 @@ export const copy = {
 
   departments: {
     eyebrow: bi("Who it is for", "برای چه کسانی"),
-    title: bi("Built for industry, students and pharmacies", "طراحی‌شده برای صنعت دارو، دانشجویان و داروخانه‌ها"),
+    title: bi("Designed for the pharmaceutical industry, pharmacies and students", "طراحی‌شده برای صنعت دارو، داروخانه‌ها و دانشجویان"),
     lead: bi(
-      "Every department of a pharmaceutical company — and students and pharmacists — gets the references and tools they use every day, in one subscription.",
-      "هر واحد شرکت داروسازی، و همچنین دانشجویان و داروسازان داروخانه، مراجع و ابزارهایی را که هر روز به\u00a0آن‌ها\u00a0نیاز\u00a0دارند در یک اشتراک در\u00a0اختیار\u00a0دارند.",
+      "Everyday references and tools for every department, pharmacy and student, in one subscription.",
+      "مراجع و ابزارهای روزانه هر واحد صنعت داروسازی، داروخانه‌ها و دانشجویان، در یک اشتراک.",
     ),
     items: [
       {
@@ -127,7 +127,8 @@ export const copy = {
         title: bi("Research & Development (R&D)", "تحقیق و توسعه (R&D)"),
         points: [
           bi("Smart formulation design: route, unit weight and % w/w of every excipient within monograph ranges", "طراحی هوشمند فرمولاسیون: روش ساخت، وزن واحد و درصد هر ماده جانبی داخل محدوده مونوگراف"),
-          bi("Manufacturing plan, drug–excipient compatibility, DoE and ICH Q9 risk assessment for each product", "Manufacturing plan، سازگاری دارو و ماده جانبی، DoE و Risk assessment طبق ICH Q9 برای هر فرآورده"),
+          bi("API–excipient compatibility checker: Maillard reaction, peroxides, nitrite and nitrosamines, with mitigation and literature", "بررسی سازگاری API و Excipient: واکنش Maillard، Peroxideها، Nitrite و نیتروزآمین، همراه با راه‌حل و رفرنس"),
+          bi("Manufacturing plan, DoE and ICH Q9 risk assessment for each product", "Manufacturing plan، DoE و Risk assessment طبق ICH Q9 برای هر فرآورده"),
           bi("Reference brand (RLD) by molecule from the Orange Book; a Q1 formula from the brand label", "یافتن برند مرجع (RLD) با نام مولکول از Orange Book و ساخت فرمول Q1 از برچسب برند"),
           bi("Data sheets of 272 excipients and 857 APIs with MW and BCS class", "برگه اطلاعات 272 ماده جانبی و 857 ماده مؤثره همراه با MW و کلاس BCS"),
         ],
@@ -136,9 +137,9 @@ export const copy = {
         key: "qc",
         title: bi("Quality Control (QC)", "کنترل کیفیت (QC)"),
         points: [
-          bi("Free applied HPLC handbook: system suitability, method transfer, troubleshooting and worked calculations", "هندبوک کاربردی رایگان HPLC: System suitability، انتقال روش، Troubleshooting و مسائل محاسباتی حل‌شده"),
+          bi("Weekly applied handbooks (HPLC, dissolution testing): system suitability, troubleshooting and worked calculations", "هندبوک‌های کاربردی هفتگی (HPLC، آزمون انحلال): System suitability، Troubleshooting و مسائل محاسباتی حل‌شده"),
           bi("QC laboratory and microbiology SOPs: sampling, calibration, water and environmental monitoring", "دستورالعمل‌های آزمایشگاه کنترل کیفیت و میکروبیولوژی: نمونه‌برداری، کالیبراسیون، آب و پایش محیطی"),
-          bi("Pharmacopoeial acceptance criteria, microbial limits, ICH Q2(R2) method validation and OOS investigation", "معیارهای پذیرش فارماکوپه‌ای، حدود میکروبی، اعتبارسنجی روش طبق ICH Q2(R2) و بررسی نتایج OOS"),
+          bi("Acceptance criteria, impurity limits (ICH Q3, M7, nitrosamines), ICH Q2(R2) validation and OOS/OOT investigation", "معیارهای پذیرش، حدود ناخالصی (ICH Q3، M7 و نیتروزآمین)، اعتبارسنجی طبق ICH Q2(R2) و بررسی OOS و OOT"),
           bi("Analytical calculators: HPLC and UV assay, linearity, dissolution and f2, content uniformity, Karl Fischer", "ماشین‌حساب‌های آنالیز: Assay به روش HPLC و UV، خطی‌بودن، انحلال و f2، یکنواختی محتوا و Karl Fischer"),
         ],
       },
@@ -147,9 +148,9 @@ export const copy = {
         title: bi("Quality Assurance (QA)", "تضمین کیفیت (QA)"),
         points: [
           bi("157 full-text SOPs: change control, deviation, CAPA and quality risk management", "157 دستورالعمل با متن کامل: کنترل تغییرات، مدیریت انحراف، CAPA و مدیریت ریسک کیفیت"),
-          bi("Validation master plan, process and cleaning validation, self-inspection", "برنامه جامع اعتبارسنجی، اعتبارسنجی فرآیند و تمیزکاری و خودبازرسی"),
+          bi("GMP form generator: deviation, change control, CAPA, OOS and line clearance, exported to Word or PDF with your logo", "فرم‌ساز GMP: انحراف، کنترل تغییر، CAPA، OOS و Line clearance با خروجی Word یا PDF و لوگوی شرکت"),
+          bi("Process and cleaning validation (HBEL), PQR, supplier qualification and inspection readiness", "Process validation و Cleaning validation بر پایه HBEL، PQR، ارزیابی تأمین‌کنندگان و آمادگی بازرسی"),
           bi("Nitrosamine, elemental impurity (ICH Q3D) and PDE-based cross-contamination risk assessments", "ارزیابی ریسک نیتروزآمین، ناخالصی‌های عنصری (ICH Q3D) و آلودگی متقاطع بر پایه PDE"),
-          bi("Pharmaceutical quality system (ICH Q10) and quality risk management tools (ICH Q9)", "سیستم کیفیت دارویی (ICH Q10) و ابزارهای مدیریت ریسک کیفیت (ICH Q9)"),
         ],
       },
       {
@@ -169,7 +170,7 @@ export const copy = {
           bi("CTD Modules 1–5 with the Module 3 structure (3.2.S and 3.2.P), and CTD compilation by the PharmaVault team", "ماژول‌های 1 تا 5 CTD شامل بخش‌های \u20663.2.S\u2069 و \u20663.2.P\u2069، و تدوین CTD توسط تیم فارماوالت"),
           bi("Searchable ICH quality (Q1–Q14) and multidisciplinary (M4, M7, M9, M10) guidelines", "راهنماهای کیفیت ICH از \u2066Q1\u2069 تا \u2066Q14\u2069 و راهنماهای چندرشته‌ای \u2066M4\u2069، \u2066M7\u2069، \u2066M9\u2069 و \u2066M10\u2069، با امکان جستجو"),
           bi("Orange Book: RLD, reference standard, TE codes and generic holders of every product", "Orange Book: فرآورده مرجع (RLD)، Reference standard، کد TE و دارندگان ژنریک هر فرآورده"),
-          bi("Pharmacopoeias and regulators: the edition in force, the latest edition and official links", "فارماکوپه‌ها و مراجع رگولاتوری: ویرایش لازم‌الاجرا، آخرین ویرایش و لینک رسمی"),
+          bi("Bioequivalence: ICH M13A design, acceptance limits for NTI and highly variable drugs, sample-size and 90% CI calculators", "Bioequivalence: طراحی طبق ICH M13A، حدود پذیرش داروهای NTI و HVD، ماشین‌حساب حجم نمونه و فاصله اطمینان 90%"),
         ],
       },
       {
@@ -186,7 +187,8 @@ export const copy = {
         key: "stu",
         title: bi("Students", "دانشجویان (Students)"),
         points: [
-          bi("Free weekly technical handbook (PDF), starting with applied HPLC", "هندبوک تخصصی رایگان هفتگی (PDF)، با شروع از HPLC کاربردی"),
+          bi("Free weekly technical handbook (PDF): applied HPLC, dissolution testing and more", "هندبوک تخصصی رایگان هفتگی (PDF): HPLC کاربردی، آزمون انحلال و موضوعات بعدی"),
+          bi("669 USP and Ph. Eur. general chapters summarised in Persian", "خلاصه فارسی 669 General Chapter فارماکوپه USP و Ph. Eur."),
           bi("Calculators that show each equation: HLB, isotonicity, buffer and displacement factor", "ماشین‌حساب‌هایی که معادله هر محاسبه را نشان می‌دهند: HLB، ایزوتونیسیته، بافر و ضریب جابه‌جایی"),
           bi("Formulation advisor that explains every choice: route, excipient levels, process and controls", "مشاور فرمولاسیون که دلیل هر انتخاب را توضیح می‌دهد: روش ساخت، غلظت مواد جانبی، فرایند و کنترل‌ها"),
           bi("Full-text SOPs to learn how GMP works in a manufacturing site before an internship or first job", "متن کامل SOPها برای آشنایی با الزامات GMP در واحد تولیدی پیش از کارآموزی یا ورود به صنعت"),

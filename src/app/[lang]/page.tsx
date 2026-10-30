@@ -327,7 +327,7 @@ export default async function HomePage() {
       {/* By department */}
       <section className="border-y border-line bg-paper py-20 lg:py-24">
         <Container>
-          <SectionHead eyebrow={departments.eyebrow[locale]} title={departments.title} locale={locale} lead={departments.lead[locale]} />
+          <SectionHead eyebrow={departments.eyebrow[locale]} title={departments.title} locale={locale} lead={departments.lead[locale]} wide />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {departments.items.map((d) => {
               const Icon = departmentIcons[d.key];
