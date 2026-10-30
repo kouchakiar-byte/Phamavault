@@ -1,0 +1,47 @@
+plugins {
+    id "com.android.application"
+}
+
+// Release signing comes from the CI secrets (see android/README.md). Without a
+// keystore the release build is signed with the debug key, for testing only.
+def releaseKeystore = rootProject.file("release.keystore")
+
+android {
+    namespace "ir.pharmavault.app"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "ir.pharmavault.app"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    signingConfigs {
+        release {
+            if (releaseKeystore.exists()) {
+                storeFile releaseKeystore
+                storePassword System.getenv("ANDROID_KEYSTORE_PASSWORD")
+                keyAlias System.getenv("ANDROID_KEY_ALIAS")
+                keyPassword System.getenv("ANDROID_KEY_PASSWORD")
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig releaseKeystore.exists() ? signingConfigs.release : signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}

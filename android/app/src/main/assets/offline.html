@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PharmaVault</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px; padding: 24px; box-sizing: border-box; text-align: center;
+    background: #0B1F3A; color: #fff; font-family: sans-serif; line-height: 1.8;
+  }
+  h1 { font-size: 20px; margin: 0; }
+  p { margin: 0; color: #c8d3e3; font-size: 15px; }
+  button {
+    margin-top: 8px; padding: 12px 32px; border: 0; border-radius: 999px;
+    background: #2CC4BC; color: #0B1F3A; font-size: 16px; font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <h1>اتصال به اینترنت برقرار نیست</h1>
+  <p>اتصال اینترنت را بررسی کنید و دوباره تلاش کنید.</p>
+  <button type="button" onclick="window.PharmaVaultApp &amp;&amp; PharmaVaultApp.retry()">تلاش دوباره</button>
+</body>
+</html>

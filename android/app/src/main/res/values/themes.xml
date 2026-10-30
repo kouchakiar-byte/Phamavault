@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PharmaVault" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:statusBarColor">@color/vault_900</item>
+        <item name="android:navigationBarColor">@color/vault_900</item>
+        <item name="android:colorPrimary">@color/vault_900</item>
+        <item name="android:colorAccent">#2CC4BC</item>
+    </style>
+</resources>

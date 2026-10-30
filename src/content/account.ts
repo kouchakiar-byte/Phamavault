@@ -122,6 +122,11 @@ export const account = {
   },
   buy: {
     title: bi("Buy a subscription", "خرید اشتراک"),
+    appTitle: bi("Subscriptions are not sold in the app", "خرید اشتراک در اپلیکیشن انجام نمی‌شود"),
+    appLead: bi(
+      "This version of the app does not sell subscriptions. If you already have a subscription, sign in with the same account to open every section that it covers.",
+      "در این نسخه از اپلیکیشن امکان خرید اشتراک وجود ندارد. اگر اشتراک دارید، با همان حساب کاربری وارد شوید تا همه بخش‌های اشتراک شما باز شود.",
+    ),
     lead: bi("Choose a plan and period; access opens as soon as the payment is confirmed.", "طرح و مدت را انتخاب کنید؛ دسترسی بلافاصله پس از تأیید پرداخت باز می‌شود."),
     plan: bi("Plan", "طرح"),
     sections: bi("Sections", "بخش‌ها"),

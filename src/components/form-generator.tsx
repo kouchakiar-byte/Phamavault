@@ -200,6 +200,16 @@ function Field({ field, value, onChange, locale }: { field: FormField; value: Fo
 
 const noSubscribe = () => () => {};
 
+/** The PharmaVault Android app's JavaScript bridge (android/…/MainActivity.java), when the page runs inside it. */
+type AppBridge = { saveFile(base64: string, name: string, mimeType: string): void; print(html: string, title: string): void };
+const appBridge = () => (window as { PharmaVaultApp?: AppBridge }).PharmaVaultApp;
+
+function toBase64(bytes: Uint8Array) {
+  let bin = "";
+  for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+  return btoa(bin);
+}
+
 /** Fills a GMP form, previews it as a document, and exports Word (.docx) or prints it (subscribers). */
 export function FormGenerator(props: { locale: Locale; allowed: boolean; buyHref: string }) {
   // Drafts live in this browser's storage, so the generator renders in the browser only.
@@ -240,7 +250,14 @@ function Generator({ locale, allowed, buyHref }: { locale: Locale; allowed: bool
   const guard = (action: () => void) => () => (allowed ? action() : setNotice(true));
 
   const downloadWord = guard(() => {
-    const url = URL.createObjectURL(buildDocx(doc));
+    const blob = buildDocx(doc);
+    const app = appBridge();
+    if (app) {
+      // The Android app's WebView cannot follow blob: downloads; it saves the bytes itself.
+      blob.arrayBuffer().then((buf) => app.saveFile(toBase64(new Uint8Array(buf)), `${form.code}.docx`, blob.type));
+      return;
+    }
+    const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
     a.download = `${form.code}.docx`;
@@ -251,6 +268,11 @@ function Generator({ locale, allowed, buyHref }: { locale: Locale; allowed: bool
   });
 
   const print = guard(() => {
+    const app = appBridge();
+    if (app) {
+      app.print(html, form.code);
+      return;
+    }
     const frame = document.createElement("iframe");
     frame.style.cssText = "position:fixed;right:0;bottom:0;width:0;height:0;border:0";
     frame.srcdoc = html;
