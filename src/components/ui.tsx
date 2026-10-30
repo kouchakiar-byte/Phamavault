@@ -71,12 +71,14 @@ type SectionHeadProps = {
   lead?: string;
   as?: "h1" | "h2";
   action?: ReactNode;
+  /** A wider block, for a title and lead that should each stay on one line on desktop. */
+  wide?: boolean;
 };
 
-export function SectionHead({ eyebrow, title, locale, lead, as = "h2", action }: SectionHeadProps) {
+export function SectionHead({ eyebrow, title, locale, lead, as = "h2", action, wide = false }: SectionHeadProps) {
   return (
     <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-      <div className="max-w-3xl">
+      <div className={wide ? "max-w-6xl" : "max-w-3xl"}>
         <Eyebrow>{eyebrow}</Eyebrow>
         <BiTitle
           as={as}

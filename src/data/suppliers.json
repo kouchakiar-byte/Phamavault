@@ -9051,6 +9051,55 @@
    ],
    "via": 1,
    "partial": 1
+  },
+  {
+   "n": "بازرگانی صباحی (Sabahi Enterprises)",
+   "e": "Sabahi Enterprises Co.",
+   "t": "t",
+   "c": [
+    "api",
+    "exc",
+    "pkg"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "web": "https://sabahi.com",
+   "src": "https://www.pharmacompass.com/api-manufacturers/sabahi-enterprises-co",
+   "note": "شناسایی‌شده در جستجوی وب (آبان 1405)؛ نماینده انحصاری تأمین‌کنندگان بین‌المللی از 1980، تأمین مواد اولیه، بسته‌بندی و ماشین‌آلات برای صنعت دارو طبق PharmaCompass؛ دامنه sabahi.com طبق village.ai؛ تلفن و نشانی در منبع نبود.",
+   "p": [
+    "مواد اولیه دارویی|Pharmaceutical raw materials",
+    "مواد جانبی دارویی|Pharmaceutical excipients",
+    "مواد بسته‌بندی دارویی|Pharmaceutical packaging materials"
+   ],
+   "via": 1,
+   "partial": 1
+  },
+  {
+   "n": "دانش کیمیا فارمد (DAKPHA)",
+   "e": "Danesh Kimia Pharmed",
+   "t": "m",
+   "c": [
+    "api"
+   ],
+   "prov": "نامشخص",
+   "city": "نامشخص",
+   "tel": [],
+   "src": "https://www.pharmacompass.com/pharma-services/api-manufacturing-services/danesh-kimia-pharmed",
+   "note": "شناسایی‌شده در جستجوی وب (آبان 1405)؛ تولیدکننده API، Intermediate و فرآورده نهایی از 2011 طبق پروفایل شرکت؛ فهرست محصولات از PharmaCompass (وضعیت GMP در منبع تأیید نشده)؛ تلفن، نشانی و سایت در منبع نبود.",
+   "p": [
+    "آپیکسابان|Apixaban",
+    "ایماتینیب مزیلات|Imatinib mesylate",
+    "سونیتینیب|Sunitinib",
+    "امپاگلیفلوزین|Empagliflozin",
+    "داپاگلیفلوزین|Dapagliflozin",
+    "ارلوتینیب|Erlotinib",
+    "کدئین فسفات|Codeine phosphate",
+    "بوپرنورفین هیدروکلراید|Buprenorphine hydrochloride",
+    "اکسی‌کدون هیدروکلراید|Oxycodone hydrochloride"
+   ],
+   "via": 1,
+   "partial": 1
   }
  ],
  "provinceOrder": [
