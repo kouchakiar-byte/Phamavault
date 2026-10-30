@@ -31,6 +31,7 @@ const MOVED: Record<string, string> = {
 // Sheets and SOPs that exist. Others would render the 404 page with a 200 status, which search engines report as a soft 404.
 const sheetSlugs = new Set(excipients.items.map((x) => excipientSlug(x.name)));
 const sopCodes = new Set(sops.items.filter((s) => s.text).map((s) => s.code.toLowerCase()));
+sopCodes.add("forms"); // the GMP form generator lives beside the SOP pages
 const known: Record<string, Set<string>> = { excipients: sheetSlugs, qa: sopCodes };
 
 function redirect(request: NextRequest, path: string) {
