@@ -101,3 +101,19 @@ export async function stats(): Promise<{ users: number; active: number; revenue3
   );
   return { ...rows[0], revenue30: Number(rows[0].revenue30) };
 }
+
+export type UserRow = { id: string; name: string; mobile: string; createdAt: Date; lastSeen: Date | null; activeSubscriptions: number };
+
+/** Newest sign-ups for the admin panel, with their last sign-in and active subscriptions (owned or as a team member). */
+export async function recentUsers(limit = 200): Promise<UserRow[]> {
+  const { rows } = await (await db()).query<{ id: string; name: string; mobile: string; created_at: Date; last_seen: Date | null; active: number }>(
+    `select u.id, u.name, u.mobile, u.created_at,
+       (select max(s.created_at) from sessions s where s.user_id = u.id) as last_seen,
+       (select count(*)::int from subscriptions x
+          where not x.revoked and x.starts_at <= now() and x.ends_at > now()
+            and (x.owner_id = u.id or exists (select 1 from subscription_members m where m.subscription_id = x.id and m.mobile = u.mobile))) as active
+     from users u order by u.created_at desc limit $1`,
+    [limit],
+  );
+  return rows.map((r) => ({ id: String(r.id), name: r.name, mobile: r.mobile, createdAt: r.created_at, lastSeen: r.last_seen, activeSubscriptions: r.active }));
+}

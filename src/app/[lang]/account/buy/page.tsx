@@ -1,4 +1,6 @@
 import { EnamadSeal } from "@/components/enamad-seal";
+import { headers } from "next/headers";
+import Link from "next/link";
 import { Suspense } from "react";
 import { BuyForm } from "@/components/account/forms";
 import { AccountShell, Loading, accountMetadata } from "@/components/account/shell";
@@ -10,6 +12,7 @@ import { getUser } from "@/lib/auth";
 import { formatNumber } from "@/lib/format";
 import { planName, sectionsLabel } from "@/lib/labels";
 import { isPlanId, monthOptions, type PlanId } from "@/lib/pricing";
+import { href } from "@/lib/paths";
 import { getSubscription } from "@/lib/subscriptions";
 import { onlinePaymentEnabled } from "@/lib/zarinpal";
 
@@ -21,6 +24,8 @@ type Search = Record<string, string | string[] | undefined>;
 
 async function Checkout({ locale, searchParams }: { locale: Locale; searchParams: Promise<Search> }) {
   const search = await searchParams;
+  // The Android app (user agent "PharmaVaultApp") does not sell subscriptions; the stores have their own billing rules.
+  if ((await headers()).get("user-agent")?.includes("PharmaVaultApp")) return <AppNotice locale={locale} signedIn={Boolean(await getUser())} />;
   // Anyone can walk through the vault; signing up is asked for at the last key.
   const user = await getUser();
 
@@ -55,6 +60,21 @@ async function Checkout({ locale, searchParams }: { locale: Locale; searchParams
       renewal={renewal}
       online={onlinePaymentEnabled()}
     />
+  );
+}
+
+function AppNotice({ locale, signedIn }: { locale: Locale; signedIn: boolean }) {
+  return (
+    <div className="mx-auto max-w-md rounded-card border border-line bg-white p-6 text-center">
+      <h2 className="font-bold text-vault-900">{t.appTitle[locale]}</h2>
+      <p className="mt-3 text-sm leading-relaxed text-muted">{t.appLead[locale]}</p>
+      <Link
+        href={signedIn ? href(locale, "account") : href(locale, "account/login")}
+        className="mt-5 inline-flex rounded-full bg-vault-900 px-6 py-2.5 text-sm font-semibold text-white hover:bg-vault-800"
+      >
+        {signedIn ? account.nav.account[locale] : account.nav.signIn[locale]}
+      </Link>
+    </div>
   );
 }
 

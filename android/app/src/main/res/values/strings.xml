@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">فارماوالت</string>
+    <string name="saved">در پوشه Download ذخیره شد</string>
+    <string name="save_failed">ذخیره فایل انجام نشد</string>
+    <string name="downloading">در حال دانلود…</string>
+    <string name="no_app">برنامه‌ای برای باز کردن این لینک پیدا نشد</string>
+    <string name="permission_needed">برای ذخیره فایل، اجازه دسترسی به حافظه لازم است</string>
+</resources>

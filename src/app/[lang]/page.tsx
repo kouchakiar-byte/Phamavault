@@ -171,7 +171,7 @@ export default async function HomePage() {
         <MoleculePattern className="text-white/[0.05]" />
         <div className="absolute -top-40 end-[-10%] -z-10 size-[36rem] rounded-full bg-molecule-500/20 blur-3xl" />
         {/* Phone: brand and search, then the sections panel, then the counts. Desktop: the panel beside both, which sit centred against its height. */}
-        <Container className="grid items-start gap-10 pb-16 pt-8 sm:pt-10 lg:grid-cols-[1.15fr_1fr] lg:grid-rows-[1fr_auto_auto_1fr] lg:gap-x-14 lg:gap-y-0 lg:pb-20 lg:pt-12">
+        <Container className="grid grid-cols-1 items-start gap-10 pb-16 pt-8 sm:pt-10 lg:grid-cols-[1.15fr_1fr] lg:grid-rows-[1fr_auto_auto_1fr] lg:gap-x-14 lg:gap-y-0 lg:pb-20 lg:pt-12">
           <div className="fade-in lg:col-start-1 lg:row-start-2">
             {/* e-Namad requires its seal at the top of the home page */}
             <EnamadSeal locale={locale} compact className="mb-5" />
