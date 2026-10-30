@@ -5,9 +5,9 @@ import type { Locale } from "@/i18n/config";
 const t = copy.enamad;
 
 /**
- * The e-Namad seal image as the e-Namad panel issues it (same image, referrer
- * policy and `code` attribute), in a card that names what it certifies. It is
- * not linked to the verification page, which shows the owner's name.
+ * The e-Namad seal exactly as the e-Namad panel issues it: the image (referrer
+ * policy and `code` attribute) linked to the verification page, which e-Namad
+ * requires on the home page. It sits in a card that names what it certifies.
  * `dark` sits on the footer; `light` on white pages.
  */
 export function EnamadSeal({ locale, tone = "light", className = "" }: { locale: Locale; tone?: "light" | "dark"; className?: string }) {
@@ -20,8 +20,12 @@ export function EnamadSeal({ locale, tone = "light", className = "" }: { locale:
         dark ? "border-white/10 bg-white/5" : "border-line bg-white shadow-sm"
       } ${className}`}
     >
-      {/* Image only, no link: the verification page shows the owner's name, which stays private */}
-      <span className="shrink-0 rounded-xl bg-white p-1.5 ring-1 ring-black/5">
+      <a
+        href={`https://trustseal.enamad.ir/?id=${seal.id}&Code=${seal.code}`}
+        target="_blank"
+        referrerPolicy="origin"
+        className="shrink-0 rounded-xl bg-white p-1.5 ring-1 ring-black/5"
+      >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           referrerPolicy="origin"
@@ -29,11 +33,11 @@ export function EnamadSeal({ locale, tone = "light", className = "" }: { locale:
           alt={t.title[locale]}
           width={84}
           height={92}
-          style={{ height: "auto" }}
           // @ts-expect-error e-Namad reads this attribute on the seal image
           code={seal.code}
+          style={{ height: "auto", cursor: "pointer" }}
         />
-      </span>
+      </a>
       <div className="min-w-0">
         <p className={`flex items-center gap-1.5 text-sm font-bold ${dark ? "text-white" : "text-vault-900"}`}>
           <ShieldCheck className={`size-4 shrink-0 ${dark ? "text-molecule-400" : "text-molecule-600"}`} aria-hidden="true" />

@@ -13,7 +13,9 @@ export const siteConfig = {
     owner: null as string | null,
     address: "تهران، بلوار نلسون ماندلا، کوچه اول" as string | null,
     postalCode: null as string | null,
+    /** Mobile, also on WhatsApp. */
     phone: "0938 941 1123" as string | null,
+    landline: "021 8605 3484" as string | null,
     hours: bi("Saturday to Wednesday, 9:00–17:00", "شنبه تا چهارشنبه، ساعت 9 تا 17"),
   },
   /** e-Namad trust seal: the id and code from the e-Namad panel; null hides the badge. */

@@ -48,6 +48,9 @@ export function proxy(request: NextRequest) {
 
   if (!hasLocale(lang)) {
     request.nextUrl.pathname = `/${preferredLocale(request)}${pathname}`;
+    // The bare domain answers with the home page itself (no redirect), so checkers such as
+    // e-Namad that read https://pharmavault.ir/ find the seal; other paths still redirect.
+    if (pathname === "/") return NextResponse.rewrite(request.nextUrl);
     return NextResponse.redirect(request.nextUrl);
   }
 
