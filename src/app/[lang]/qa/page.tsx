@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowLeft, ArrowRight, FileText } from "lucide-react";
 import { TableWrap } from "@/components/filters";
 import { PageHeader } from "@/components/page-header";
 import { Bullets, Cards, DataTable, JumpNav, Steps, SubTitle } from "@/components/quality-blocks";
@@ -6,9 +8,11 @@ import { BiTitle, Container } from "@/components/ui";
 import { pages } from "@/content/pages";
 import { qaKnowledge as k } from "@/content/quality";
 import { qaMore as q } from "@/content/quality-more";
+import { formsCopy } from "@/content/qa-forms";
 import { sops } from "@/data";
 import { getLocale } from "@/i18n/locale";
 import { pageMetadata } from "@/lib/metadata";
+import { href } from "@/lib/paths";
 
 const page = pages.qa;
 
@@ -51,6 +55,23 @@ export default async function QaPage() {
       <PageHeader locale={locale} section="qa" title={page.title} lead={page.lead} />
       <Container className="py-12">
         <JumpNav items={jump} locale={locale} label={page.title[locale]} />
+        <Link
+          href={href(locale, "qa/forms")}
+          className="group mb-12 flex items-center gap-5 rounded-card border border-molecule-400/60 bg-gradient-to-l from-molecule-50 to-white p-5 transition hover:border-molecule-500 hover:shadow-md sm:p-6"
+        >
+          <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-vault-900 text-capsule-400">
+            <FileText className="size-6" aria-hidden="true" />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-lg font-bold text-vault-900">{formsCopy.title[locale]}</span>
+            <span className="mt-1 block text-sm leading-relaxed text-muted">{formsCopy.card[locale]}</span>
+          </span>
+          {locale === "fa" ? (
+            <ArrowLeft className="size-5 shrink-0 text-molecule-600 transition group-hover:-translate-x-1" aria-hidden="true" />
+          ) : (
+            <ArrowRight className="size-5 shrink-0 text-molecule-600 transition group-hover:translate-x-1" aria-hidden="true" />
+          )}
+        </Link>
 
         <SubTitle id="pqs" text={k.pqsTitle} locale={locale} lead={k.pqsLead} />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

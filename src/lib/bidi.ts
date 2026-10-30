@@ -29,3 +29,9 @@ export function isolateLatin(text: string): string {
       .join(""),
   );
 }
+
+/** Like isolateLatin, and a wholly Latin string ("5 Whys") becomes one isolated run, for use inside right-to-left text. */
+export function isolateText(text: string): string {
+  if (text && !/[؀-ۿ]/.test(text) && /[A-Za-z0-9]/.test(text) && !/[⁦-⁩]/.test(text)) return `⁦${text}⁩`;
+  return isolateLatin(text);
+}
