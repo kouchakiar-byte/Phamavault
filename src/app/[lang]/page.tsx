@@ -174,6 +174,8 @@ export default async function HomePage() {
         {/* Phone: brand and search, then the sections panel, then the counts. Desktop: the panel beside both, which sit centred against its height. */}
         <Container className="grid items-start gap-10 pb-16 pt-8 sm:pt-10 lg:grid-cols-[1.15fr_1fr] lg:grid-rows-[1fr_auto_auto_1fr] lg:gap-x-14 lg:gap-y-0 lg:pb-20 lg:pt-12">
           <div className="fade-in lg:col-start-1 lg:row-start-2">
+            {/* e-Namad requires its seal at the top of the home page */}
+            <EnamadSeal locale={locale} compact className="mb-5" />
             {/* Brand: the vault mark beside the name, as tall as the name and slogan together */}
             <h1 className="flex max-w-full items-center gap-3 sm:gap-5" dir="ltr">
               <LogoMark tight className="h-[6.25rem] w-auto shrink-0 sm:h-[8.9rem]" />
