@@ -21,9 +21,7 @@ export const contactLabels = {
   owner: bi("Owner", "صاحب امتیاز"),
   address: bi("Address", "نشانی"),
   postalCode: bi("Postal code", "کد پستی"),
-  phone: bi("Mobile and WhatsApp", "موبایل و واتساپ"),
-  landline: bi("Phone", "تلفن ثابت"),
-  whatsapp: bi("Message on WhatsApp", "پیام در واتساپ"),
+  phone: bi("Phone", "تلفن"),
   email: bi("Email", "ایمیل"),
   hours: bi("Support hours", "ساعات پاسخگویی"),
 };

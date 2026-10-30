@@ -13,7 +13,7 @@ export const siteConfig = {
     owner: null as string | null,
     address: "تهران، بلوار نلسون ماندلا، کوچه اول" as string | null,
     postalCode: null as string | null,
-    /** Mobile, also on WhatsApp. */
+    /** Mobile. */
     phone: "0938 941 1123" as string | null,
     landline: "021 8605 3484" as string | null,
     hours: bi("Saturday to Wednesday, 9:00–17:00", "شنبه تا چهارشنبه، ساعت 9 تا 17"),
