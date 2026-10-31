@@ -2,18 +2,21 @@
 
 import { useState } from "react";
 import { Check, Copy } from "lucide-react";
+import { watermark } from "@/lib/watermark";
 
-type Props = { targetId: string; label: string; doneLabel: string };
+/** `mark`: the reader's account id, hidden in the copied text (see lib/watermark). */
+type Props = { targetId: string; label: string; doneLabel: string; mark?: number };
 
 /** Copies the text content of the element with `targetId`. */
-export function CopyButton({ targetId, label, doneLabel }: Props) {
+export function CopyButton({ targetId, label, doneLabel, mark }: Props) {
   const [done, setDone] = useState(false);
 
   async function copyText() {
     const el = document.getElementById(targetId);
     if (!el) return;
     try {
-      await navigator.clipboard.writeText(el.innerText.trim());
+      const text = el.innerText.trim();
+      await navigator.clipboard.writeText(mark === undefined ? text : watermark(text, mark));
       setDone(true);
     } catch {
       // Clipboard blocked: select the text so the reader can copy it manually.

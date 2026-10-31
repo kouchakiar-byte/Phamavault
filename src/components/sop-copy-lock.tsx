@@ -1,14 +1,15 @@
 "use client";
 
-import { createContext, useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
+import { createContext, useEffect, useRef, useState, useSyncExternalStore, type ClipboardEvent as ReactClipboardEvent, type ReactNode } from "react";
 import Link from "next/link";
 import { Lock, X } from "lucide-react";
+import { watermark } from "@/lib/watermark";
 import { CopyButton } from "./copy-button";
 
 type Labels = { copy: string; copied: string; title: string; text: string; buy: string; plans: string; close: string };
 
-/** Documents the signed-in reader may copy, by target id. Filled by <CopyUnlock>, which streams in after the page. */
-const unlocked = new Set<string>();
+/** Documents the signed-in reader may copy, by target id, with the reader's account id for the watermark. Filled by <CopyUnlock>, which streams in after the page. */
+const unlocked = new Map<string, number>();
 const UNLOCK_EVENT = "pv-copy-unlock";
 const subscribe = (cb: () => void) => {
   window.addEventListener(UNLOCK_EVENT, cb);
@@ -22,11 +23,11 @@ export const CopyableContext = createContext(false);
  * Rendered (inside Suspense) only for readers who may copy. The document itself is rendered
  * once, locked, in the static page; this unlocks it, so the text is not sent twice.
  */
-export function CopyUnlock({ targetId }: { targetId: string }) {
+export function CopyUnlock({ targetId, mark }: { targetId: string; mark: number }) {
   useEffect(() => {
-    unlocked.add(targetId);
+    unlocked.set(targetId, mark);
     window.dispatchEvent(new Event(UNLOCK_EVENT));
-  }, [targetId]);
+  }, [targetId, mark]);
   return null;
 }
 
@@ -53,6 +54,7 @@ export function SopCopyLock({
   const box = useRef<HTMLDivElement>(null);
   const opened = useSyncExternalStore(subscribe, () => unlocked.has(targetId), () => false);
   const locked = lockedByDefault && !opened;
+  const mark = opened ? unlocked.get(targetId) : undefined;
 
   // Page-wide guard: a selection that reaches into the SOP (Ctrl+A, long-press on a phone,
   // keyboard shortcuts) is cleared and the copy is cancelled.
@@ -97,7 +99,17 @@ export function SopCopyLock({
   // One wrapper in both states, so unlocking does not remount the document.
   const guard = locked
     ? { className: "select-none", style: { WebkitUserSelect: "none", WebkitTouchCallout: "none" } as const, onCopy: block, onCut: block, onContextMenu: block, onDragStart: block }
-    : {};
+    : mark !== undefined
+      ? {
+          // A subscriber's copy carries their account code invisibly (see lib/watermark).
+          onCopy: (e: ReactClipboardEvent<HTMLDivElement>) => {
+            const text = window.getSelection()?.toString() ?? "";
+            if (!text) return;
+            e.preventDefault();
+            e.clipboardData.setData("text/plain", watermark(text, mark));
+          },
+        }
+      : {};
   const doc = (
     <div ref={box} {...guard}>
       <CopyableContext.Provider value={!locked}>{children}</CopyableContext.Provider>
@@ -108,7 +120,7 @@ export function SopCopyLock({
       <>
         {doc}
         <div className="mt-6">
-          <CopyButton targetId={targetId} label={labels.copy} doneLabel={labels.copied} />
+          <CopyButton targetId={targetId} label={labels.copy} doneLabel={labels.copied} mark={mark} />
         </div>
       </>
     );

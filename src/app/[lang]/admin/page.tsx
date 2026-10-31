@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense, type ReactNode } from "react";
 import { notFound, redirect } from "next/navigation";
 import { connection } from "next/server";
-import { GrantForm, ResetPasswordForm } from "@/components/account/admin-forms";
+import { GrantForm, ResetPasswordForm, TraceForm } from "@/components/account/admin-forms";
 import { Loading, accountMetadata } from "@/components/account/shell";
 import { BiTitle, Container } from "@/components/ui";
 import { account } from "@/content/account";
@@ -126,6 +126,11 @@ async function Admin({ locale }: { locale: Locale }) {
             </table>
           </div>
         )}
+      </Panel>
+
+      <Panel title={t.trace.title} locale={locale}>
+        <p className="mb-3 text-sm text-muted">{t.trace.lead[locale]}</p>
+        <TraceForm locale={locale} />
       </Panel>
 
       <Panel title={requestLabels.title} locale={locale}>
