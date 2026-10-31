@@ -5,8 +5,9 @@ import type { Locale } from "@/i18n/config";
 const t = copy.enamad;
 
 /**
- * The e-Namad seal image as the e-Namad panel issues it (same image, referrer
- * policy and `code` attribute), not clickable. `compact` is a smaller copy of the
+ * The e-Namad seal exactly as the e-Namad panel issues it: the image (referrer
+ * policy and `code` attribute) inside a link to the domain's e-Namad profile,
+ * which e-Namad requires. `compact` is a smaller copy of the
  * footer card for the top of the home page; otherwise it sits in a card that names what it
  * certifies (`dark` on the footer, `light` on white pages).
  */
@@ -14,17 +15,19 @@ export function EnamadSeal({ locale, tone = "light", compact = false, className 
   const seal = siteConfig.enamad;
   if (!seal) return null;
   const image = (size: number) => (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      referrerPolicy="origin"
-      src={`https://trustseal.enamad.ir/logo.aspx?id=${seal.id}&Code=${seal.code}`}
-      alt={t.title[locale]}
-      width={size}
-      height={Math.round(size * 1.1)}
-      style={{ height: "auto" }}
-      // @ts-expect-error e-Namad reads this attribute on the seal image
-      code={seal.code}
-    />
+    <a referrerPolicy="origin" target="_blank" href={`https://trustseal.enamad.ir/?id=${seal.id}&Code=${seal.code}`}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        referrerPolicy="origin"
+        src={`https://trustseal.enamad.ir/logo.aspx?id=${seal.id}&Code=${seal.code}`}
+        alt={t.title[locale]}
+        width={size}
+        height={Math.round(size * 1.1)}
+        style={{ height: "auto", cursor: "pointer" }}
+        // @ts-expect-error e-Namad reads this attribute on the seal image
+        code={seal.code}
+      />
+    </a>
   );
   if (compact) {
     // The footer card on the dark hero, smaller: seal, tick and title, then the description
