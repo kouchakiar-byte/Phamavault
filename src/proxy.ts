@@ -47,10 +47,14 @@ export function proxy(request: NextRequest) {
   const [, lang, section, slug, ...rest] = pathname.split("/");
 
   if (!hasLocale(lang)) {
+    // The bare domain always answers with the Persian home page itself (no redirect, whatever the
+    // browser language or a saved choice), so checkers such as e-Namad that read
+    // https://pharmavault.ir/ find the seal; other paths still redirect to the preferred language.
+    if (pathname === "/") {
+      request.nextUrl.pathname = `/${defaultLocale}`;
+      return NextResponse.rewrite(request.nextUrl);
+    }
     request.nextUrl.pathname = `/${preferredLocale(request)}${pathname}`;
-    // The bare domain answers with the home page itself (no redirect), so checkers such as
-    // e-Namad that read https://pharmavault.ir/ find the seal; other paths still redirect.
-    if (pathname === "/") return NextResponse.rewrite(request.nextUrl);
     return NextResponse.redirect(request.nextUrl);
   }
 
