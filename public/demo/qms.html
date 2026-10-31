@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>QMS | PharmaVault</title>
+<link rel="icon" href="/icon-512.png">
+<style>
+/* PharmaVault QMS demo: a standalone page. Document control, deviation, CAPA and change control share one
+   append-only, hash-chained audit trail and Part 11 style e-signatures. Data stays in the visitor's browser. */
+@font-face { font-family: "Estedad"; src: url("/fonts/Estedad-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Estedad"; src: url("/fonts/Estedad-Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+:root {
+  --bg: #f3f6f9; --surface: #ffffff; --sunken: #edf2f7; --line: #d6dee8; --fg: #12233b; --muted: #5b6b80;
+  --navy: #0b1f3a; --on-navy: #ffffff; --navy-soft: #b9c8db; --accent: #127f79; --accent-soft: #dff3f1; --gold: #a97a22;
+  --ok: #1f7a46; --ok-soft: #e0f2e8; --warn: #9a5b00; --warn-soft: #fbefd9; --bad: #b3261e; --bad-soft: #fbe3e1; --info: #2a5a9e; --info-soft: #e3ecf8;
+  --font: "Estedad", Tahoma, "Segoe UI", sans-serif; --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 14px; line-height: 1.8; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.mono { font-family: var(--mono); font-size: 12.5px; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+.top { background: var(--navy); color: var(--on-navy); position: sticky; top: 0; z-index: 5; }
+.top .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px; padding-block: 10px; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand img { width: 34px; height: 34px; }
+.brand b { font-family: Arial, sans-serif; font-size: 18px; direction: ltr; }
+.brand b span { color: #d4a64a; }
+.brand small { color: var(--navy-soft); font-size: 12px; display: block; line-height: 1.3; }
+.who { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; }
+.who .pill { background: rgba(255,255,255,.1); border-radius: 999px; padding: 3px 12px; }
+.who select, .who input { font: inherit; font-size: 13px; border-radius: 8px; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.08); color: #fff; padding: 4px 8px; }
+.who select option { color: #12233b; }
+.who input { width: 110px; direction: ltr; }
+.demo { background: var(--warn-soft); color: var(--warn); font-size: 12.5px; }
+.demo .wrap { padding-block: 6px; }
+.tabs { display: flex; gap: 2px; margin-top: 16px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+.tabs button { font: inherit; font-weight: 700; background: none; border: 0; color: var(--muted); padding: 10px 12px; border-bottom: 3px solid transparent; cursor: pointer; white-space: nowrap; }
+.tabs button[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--accent); }
+.tabs .count { font-family: var(--mono); font-size: 11px; background: var(--sunken); color: var(--muted); border-radius: 999px; padding: 0 7px; margin-inline-start: 5px; }
+main { padding-block: 16px 48px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; min-width: 0; }
+.panel h2 { font-size: 15px; }
+.lead { color: var(--muted); font-size: 13px; margin: 2px 0 0; }
+.row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.kpi { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; border-top: 4px solid var(--accent); }
+.kpi.bad { border-top-color: var(--bad); } .kpi.warn { border-top-color: var(--gold); }
+.kpi p { margin: 0; color: var(--muted); font-size: 12.5px; }
+.kpi b { font-size: 28px; line-height: 1.4; }
+.guide { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 10px; }
+.guide div { background: var(--sunken); border-radius: 10px; padding: 10px 12px; font-size: 12.5px; }
+.guide b { display: block; color: var(--accent); font-size: 12px; }
+.btn { font: inherit; font-size: 13px; font-weight: 700; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); padding: 5px 12px; cursor: pointer; white-space: nowrap; }
+.btn:hover:not(:disabled) { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.navy { background: var(--navy); border-color: var(--navy); color: #fff; }
+.btn.danger { color: var(--bad); }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.btn:focus-visible, .tabs button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, tr.click:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.tablebox { overflow-x: auto; margin-top: 12px; border: 1px solid var(--line); border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+th { background: var(--sunken); color: var(--muted); font-weight: 700; text-align: start; padding: 8px 10px; white-space: nowrap; border-bottom: 1px solid var(--line); }
+td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+tr.click { cursor: pointer; } tr.click:hover td { background: var(--sunken); }
+tr.broken td { background: var(--bad-soft); }
+td.nowrap, .nowrap { white-space: nowrap; }
+.chip { display: inline-block; border-radius: 999px; padding: 1px 10px; font-size: 11.5px; font-weight: 700; white-space: nowrap; }
+.c-grey { background: var(--sunken); color: var(--muted); } .c-info { background: var(--info-soft); color: var(--info); }
+.c-warn { background: var(--warn-soft); color: var(--warn); } .c-ok { background: var(--ok-soft); color: var(--ok); } .c-bad { background: var(--bad-soft); color: var(--bad); }
+.flag { color: var(--bad); font-weight: 700; font-size: 11.5px; display: block; }
+.flag.warn { color: var(--warn); }
+.old { color: var(--bad); text-decoration: line-through; } .new { color: var(--ok); font-weight: 700; }
+.hash { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; margin-top: 12px; }
+label.f { display: grid; gap: 2px; font-size: 12px; color: var(--muted); }
+input, select, textarea { font: inherit; font-size: 13px; color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 9px; min-width: 0; width: 100%; }
+textarea { min-height: 70px; resize: vertical; }
+.verdict { border-radius: 10px; padding: 12px 14px; margin-top: 12px; font-weight: 700; }
+.verdict.good { background: var(--ok-soft); color: var(--ok); } .verdict.bad { background: var(--bad-soft); color: var(--bad); }
+.verdict p { margin: 4px 0 0; font-weight: 400; color: var(--fg); font-size: 13px; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; }
+.reg { font-size: 12.5px; color: var(--muted); margin: 8px 0 0; padding-inline-start: 18px; }
+.overlay { position: fixed; inset: 0; background: rgba(5, 14, 28, .55); display: grid; place-items: center; z-index: 20; padding: 16px; }
+.modal { background: var(--surface); border-radius: 14px; width: min(640px, 100%); max-height: 100%; overflow-y: auto; padding: 18px; border-top: 4px solid var(--accent); }
+.modal.sign { border-top-color: var(--gold); width: min(480px, 100%); }
+.modal h3 { font-size: 16px; }
+.modal .sub { color: var(--muted); font-size: 12.5px; margin: 2px 0 12px; }
+.modal form { display: grid; gap: 10px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.err { color: var(--bad); font-size: 12.5px; min-height: 1em; }
+.meaning { background: var(--sunken); border-radius: 8px; padding: 8px 10px; font-size: 12.5px; }
+dl.kv { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 10px 0; font-size: 13px; }
+dl.kv dt { color: var(--muted); } dl.kv dd { margin: 0; }
+.section-t { font-weight: 700; font-size: 13px; margin: 12px 0 4px; }
+.toast { position: fixed; bottom: 16px; inset-inline-start: 16px; background: var(--navy); color: #fff; padding: 10px 16px; border-radius: 10px; font-size: 13px; z-index: 30; max-width: calc(100% - 32px); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+footer { color: var(--muted); font-size: 12px; text-align: center; padding-block: 0 24px; }
+@media (max-width: 560px) { .two { grid-template-columns: 1fr; } .brand small { display: none; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <img src="/icon-512.png" alt="">
+      <div><b>Pharma<span>Vault</span> QMS</b><small>سامانه مدیریت کیفیت با Audit trail و امضای الکترونیک</small></div>
+    </div>
+    <div class="who" id="who"></div>
+  </div>
+</header>
+<div class="demo"><div class="wrap">نسخه نمایشی: شرکت، محصولات، اسناد و کاربران نمونه هستند. رمز همه کاربران <bdi dir="ltr">1234</bdi> است. داده‌ها فقط در مرورگر شما نگه داشته می‌شوند.</div></div>
+<div class="wrap">
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+  <main id="main"></main>
+</div>
+<footer>PharmaVault · <bdi dir="ltr">https://pharmavault.ir</bdi></footer>
+<div id="layer"></div>
+
+<script>
+(() => {
+  "use strict";
+  const KEY = "pv-qms-demo-v1";
+  const PASSWORD = "1234";
+  const USERS = [
+    { id: "qa.officer", name: "نگار رضایی", role: "QA Officer", fa: "کارشناس تضمین کیفیت" },
+    { id: "qa.manager", name: "حسین نوری", role: "QA Manager", fa: "مدیر تضمین کیفیت" },
+    { id: "tech.pharm", name: "مینا صادقی", role: "Responsible Pharmacist", fa: "مسئول فنی" },
+    { id: "admin", name: "مدیر سیستم", role: "Admin", fa: "مدیر سیستم" },
+  ];
+  const ACT = {
+    LOGIN: ["ورود", "c-grey"], LOGOUT: ["خروج", "c-grey"], LOGIN_FAILED: ["ورود ناموفق", "c-bad"],
+    CREATE: ["ایجاد", "c-info"], MODIFY: ["تغییر داده", "c-warn"], STATUS: ["تغییر وضعیت", "c-info"],
+    SIGN: ["امضای الکترونیک", "c-ok"], SIGN_FAILED: ["امضای ناموفق", "c-bad"], REJECT: ["رد", "c-bad"],
+    BLOCKED: ["تلاش مسدودشده", "c-bad"],
+  };
+  const TYPE = { doc: "سند", dev: "انحراف", capa: "CAPA", cc: "کنترل تغییر" };
+  const ST = {
+    Draft: ["پیش‌نویس", "c-grey"], "In Review": ["در انتظار بازبینی", "c-info"], Reviewed: ["بازبینی‌شده", "c-warn"],
+    Effective: ["لازم‌الاجرا", "c-ok"], Superseded: ["منسوخ", "c-grey"],
+    Open: ["باز", "c-info"], Investigation: ["در حال بررسی", "c-warn"], Closed: ["بسته", "c-ok"],
+    Implemented: ["اجراشده", "c-warn"],
+    Requested: ["درخواست‌شده", "c-info"], Assessed: ["ارزیابی‌شده", "c-warn"], "QA Approved": ["تأیید QA", "c-warn"],
+    Approved: ["تأییدشده", "c-ok"], Rejected: ["ردشده", "c-bad"],
+  };
+  const FL = {
+    title: "عنوان", dept: "واحد", summary: "شرح تغییرات نسخه", file: "فایل سند", version: "نسخه", effective: "تاریخ اجرا", reviewDue: "موعد بازنگری",
+    product: "محصول", batch: "بچ", site: "محل تولید", found: "تاریخ کشف", desc: "شرح", cls: "طبقه‌بندی", sev: "شدت", occ: "احتمال وقوع", det: "قابلیت کشف", rpn: "RPN",
+    root: "علت ریشه‌ای", method: "روش بررسی", action: "اقدام", owner: "مسئول", due: "مهلت", evidence: "شواهد اجرا", type: "نوع تغییر", why: "دلیل تغییر",
+    reg: "نیاز به اطلاع سازمان غذا و دارو", val: "نیاز به Validation", stab: "نیاز به مطالعه پایداری", docs: "اسناد متأثر", risk: "ریسک", notes: "یادداشت اجرا", status: "وضعیت",
+  };
+  const REASONS = ["خطای ورود داده", "به‌روزرسانی پس از بررسی", "درخواست مدیر QA", "سایر"];
+
+  let S = { items: [], audit: [], session: null, tab: "dash", filters: {}, verify: null, tampered: null };
+
+  const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  const ltr = (v) => (v === "" || v == null ? "" : `<bdi dir="ltr">${esc(v)}</bdi>`);
+  const user = (id) => USERS.find((u) => u.id === id);
+  const me = () => (S.session ? user(S.session) : null);
+  const $ = (s, r = document) => r.querySelector(s);
+  const jdt = new Intl.DateTimeFormat("fa-IR-u-ca-persian-nu-latn", { timeZone: "Asia/Tehran", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
+  const jd = new Intl.DateTimeFormat("fa-IR-u-ca-persian-nu-latn", { timeZone: "Asia/Tehran", year: "numeric", month: "2-digit", day: "2-digit" });
+  const when = (iso) => jdt.format(new Date(iso));
+  const day = (d) => (d ? jd.format(new Date(`${d}T12:00:00+03:30`)) : "");
+  const today = () => new Date(Date.now() + 3.5 * 3600e3).toISOString().slice(0, 10);
+  const addDays = (d, n) => { const x = new Date(`${d}T12:00:00Z`); x.setUTCDate(x.getUTCDate() + n); return x.toISOString().slice(0, 10); };
+  const daysTo = (d) => Math.round((new Date(`${d}T12:00:00Z`) - new Date(`${today()}T12:00:00Z`)) / 864e5);
+  const get = (id) => S.items.find((x) => x.id === id);
+
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ items: S.items, audit: S.audit, session: S.session, tampered: S.tampered })); } catch (e) {} };
+  const load = () => { try { const d = JSON.parse(localStorage.getItem(KEY) || "null"); if (d && d.audit && d.audit.length) { Object.assign(S, d); return true; } } catch (e) {} return false; };
+
+  // ---------- append-only, hash-chained audit trail ----------
+  async function sha256(t) { const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(t)); return [...new Uint8Array(b)].map((x) => x.toString(16).padStart(2, "0")).join(""); }
+  const canon = (e) => JSON.stringify([e.seq, e.ts, e.user, e.role, e.action, e.rec, e.field, e.old, e.new, e.reason, e.meaning, e.prev]);
+  let chain = Promise.resolve();
+  function log(o) {
+    chain = chain.then(async () => {
+      const last = S.audit[S.audit.length - 1]; const u = user(o.user) || {};
+      const e = { seq: S.audit.length + 1, ts: o.ts || new Date().toISOString(), user: o.user, role: u.role || "-", action: o.action, rec: o.rec ?? "", field: o.field ?? "", old: o.old ?? "", new: o.new ?? "", reason: o.reason ?? "", meaning: o.meaning ?? "", prev: last ? last.hash : "GENESIS" };
+      e.hash = await sha256(canon(e)); S.audit.push(e); save();
+    });
+    return chain;
+  }
+  async function verifyChain() {
+    let prev = "GENESIS";
+    for (const e of S.audit) {
+      if (e.prev !== prev) return { ok: false, at: e.seq, why: "پیوند با رکورد قبلی قطع شده است (رکوردی حذف یا جابه‌جا شده)." };
+      if ((await sha256(canon(e))) !== e.hash) return { ok: false, at: e.seq, why: "محتوای این رکورد پس از ثبت تغییر کرده است؛ Hash محاسبه‌شده با Hash ذخیره‌شده یکی نیست." };
+      prev = e.hash;
+    }
+    return { ok: true, n: S.audit.length };
+  }
+
+  // ---------- sample data ----------
+  async function seed() {
+    S = { items: [], audit: [], session: null, tab: "dash", filters: {}, verify: null, tampered: null };
+    const T = today(); const D = (n) => addDays(T, n);
+    const ts = (n, h) => `${D(n)}T${h}:00+03:30`;
+    const add = (it) => { S.items.push(it); return it; };
+    add({ id: "SOP-QA-001 v1.0", kind: "doc", code: "SOP-QA-001", title: "تهیه، تأیید و کنترل مستندات", dept: "QA", version: "1.0", status: "Superseded", effective: D(-760), reviewDue: D(-30), summary: "صدور اولیه", file: "SOP-QA-001_v1.0.pdf" });
+    add({ id: "SOP-QA-001 v2.0", kind: "doc", code: "SOP-QA-001", title: "تهیه، تأیید و کنترل مستندات", dept: "QA", version: "2.0", status: "Effective", effective: D(-40), reviewDue: D(690), summary: "افزودن الزامات مستندات الکترونیک و Audit trail", file: "SOP-QA-001_v2.0.pdf" });
+    add({ id: "SOP-QA-005 v1.0", kind: "doc", code: "SOP-QA-005", title: "مدیریت انحراف و CAPA", dept: "QA", version: "1.0", status: "Effective", effective: D(-700), reviewDue: D(30), summary: "صدور اولیه", file: "SOP-QA-005_v1.0.pdf" });
+    add({ id: "SOP-QA-012 v1.0", kind: "doc", code: "SOP-QA-012", title: "ارزیابی و ممیزی تولیدکنندگان قراردادی", dept: "QA", version: "1.0", status: "In Review", effective: "", reviewDue: "", summary: "صدور اولیه؛ مطابق EU GMP فصل 7", file: "SOP-QA-012_v1.0.pdf" });
+    add({ id: "SOP-QA-020 v1.0", kind: "doc", code: "SOP-QA-020", title: "بازبینی سوابق بچ و Release محصولات تولید قراردادی", dept: "QA", version: "1.0", status: "Draft", effective: "", reviewDue: "", summary: "پیش‌نویس اولیه", file: "SOP-QA-020_draft.docx" });
+    add({ id: "DEV-1405-011", kind: "dev", title: "برچسب نادرست ظرف نمونه نگهداری بچ", product: "قرص Atorvastatin 20 mg", batch: "AT-1405-033", site: "تولیدکننده قراردادی الف", found: D(-60), desc: "شماره بچ روی برچسب ظرف Retention sample اشتباه درج شده بود.", cls: "Minor", sev: 2, occ: 2, det: 2, rpn: 8, root: "عدم کنترل دوم برچسب پیش از نصب", method: "5 Whys", status: "Closed" });
+    add({ id: "DEV-1405-014", kind: "dev", title: "خروج دمای حمل بچ از محدوده مجاز", product: "کپسول Omeprazole 20 mg", batch: "OM-1405-021", site: "تولیدکننده قراردادی ب", found: D(-25), desc: "Data logger حمل از سایت تولیدکننده قراردادی تا انبار، 3 ساعت دمای \u206631 °C\u2069 ثبت کرده است (محدوده مجاز: کمتر از \u206625 °C\u2069).", cls: "Major", sev: 4, occ: 3, det: 2, rpn: 24, root: "خودروی حمل بدون سیستم سرمایشی فعال؛ قرارداد حمل الزام دمایی نداشت.", method: "Ishikawa", status: "Investigation" });
+    add({ id: "DEV-1405-016", kind: "dev", title: "عدم ارسال گواهی آنالیز ماده جانبی همراه بچ", product: "قرص Metformin 500 mg", batch: "MF-1405-048", site: "تولیدکننده قراردادی الف", found: D(-2), desc: "CoA ماده Microcrystalline cellulose در مدارک بچ ارسالی موجود نیست.", cls: "", sev: "", occ: "", det: "", rpn: "", root: "", method: "", status: "Open" });
+    add({ id: "CAPA-1405-007", kind: "capa", parent: "DEV-1405-011", action: "افزودن کنترل دوم برچسب Retention sample در چک‌لیست بچ", owner: "qa.officer", due: D(-35), evidence: "چک‌لیست ویرایش 3 ابلاغ شد.", status: "Closed" });
+    add({ id: "CAPA-1405-009", kind: "capa", parent: "DEV-1405-014", action: "افزودن الزام حمل با کنترل دما (\u206615–25 °C\u2069) به Quality Agreement با تولیدکننده و شرکت حمل", owner: "qa.officer", due: D(-5), evidence: "", status: "Open" });
+    add({ id: "CAPA-1405-010", kind: "capa", parent: "DEV-1405-014", action: "ارزیابی پایداری بچ OM-1405-021 بر اساس داده‌های Stress testing و تصمیم درباره Release", owner: "qa.manager", due: D(10), evidence: "", status: "Open" });
+    add({ id: "CC-1405-004", kind: "cc", title: "تغییر اندازه بسته‌بندی ثانویه قرص Atorvastatin", type: "بسته‌بندی", why: "درخواست واحد بازرگانی", desc: "تغییر جعبه 30 عددی به 28 عددی", reg: "بله", val: "خیر", stab: "خیر", docs: "BOM، دستورالعمل بسته‌بندی", risk: "کم", notes: "دستورالعمل جدید در تولیدکننده قراردادی ابلاغ شد.", status: "Closed" });
+    add({ id: "CC-1405-006", kind: "cc", title: "تغییر تأمین‌کننده Microcrystalline cellulose در تولیدکننده قراردادی", type: "تأمین‌کننده", why: "توقف تولید تأمین‌کننده فعلی", desc: "جایگزینی با گرید PH-102 از تأمین‌کننده جدید", reg: "بله", val: "بله", stab: "بله", docs: "مشخصات ماده اولیه، پرونده محصول", risk: "متوسط", notes: "", status: "Assessed" });
+    const L = (o) => log(o);
+    L({ ts: ts(-60, "09:10"), user: "qa.officer", action: "CREATE", rec: "DEV-1405-011", new: "Open" });
+    L({ ts: ts(-58, "11:00"), user: "qa.manager", action: "MODIFY", rec: "DEV-1405-011", field: "cls", new: "Minor", reason: "طبقه‌بندی اولیه" });
+    L({ ts: ts(-58, "11:05"), user: "qa.officer", action: "CREATE", rec: "CAPA-1405-007", new: "Open" });
+    L({ ts: ts(-36, "10:20"), user: "qa.officer", action: "STATUS", rec: "CAPA-1405-007", field: "status", old: "Open", new: "Implemented" });
+    L({ ts: ts(-34, "14:00"), user: "qa.manager", action: "SIGN", rec: "CAPA-1405-007", field: "status", old: "Implemented", new: "Closed", meaning: "Effectiveness verified: اثربخشی اقدام تأیید شد" });
+    L({ ts: ts(-33, "09:00"), user: "qa.manager", action: "SIGN", rec: "DEV-1405-011", field: "status", old: "Investigation", new: "Closed", meaning: "Closed: بررسی و اقدامات اصلاحی کامل است" });
+    L({ ts: ts(-42, "10:00"), user: "qa.manager", action: "SIGN", rec: "SOP-QA-001 v2.0", field: "status", old: "In Review", new: "Reviewed", meaning: "Reviewed: محتوای سند بازبینی شد" });
+    L({ ts: ts(-40, "09:30"), user: "tech.pharm", action: "SIGN", rec: "SOP-QA-001 v2.0", field: "status", old: "Reviewed", new: "Effective", meaning: "Approved: سند برای اجرا تأیید شد" });
+    L({ ts: ts(-40, "09:30"), user: "tech.pharm", action: "STATUS", rec: "SOP-QA-001 v1.0", field: "status", old: "Effective", new: "Superseded" });
+    L({ ts: ts(-25, "16:40"), user: "qa.officer", action: "CREATE", rec: "DEV-1405-014", new: "Open" });
+    L({ ts: ts(-24, "10:15"), user: "qa.manager", action: "MODIFY", rec: "DEV-1405-014", field: "cls", new: "Major", reason: "خروج دما در زمان حمل؛ اثر احتمالی بر کیفیت" });
+    L({ ts: ts(-20, "12:00"), user: "qa.officer", action: "MODIFY", rec: "DEV-1405-014", field: "root", new: "خودروی حمل بدون سیستم سرمایشی فعال؛ قرارداد حمل الزام دمایی نداشت.", reason: "نتیجه بررسی Ishikawa" });
+    L({ ts: ts(-20, "12:10"), user: "qa.officer", action: "CREATE", rec: "CAPA-1405-009", new: "Open" });
+    L({ ts: ts(-20, "12:12"), user: "qa.officer", action: "CREATE", rec: "CAPA-1405-010", new: "Open" });
+    L({ ts: ts(-15, "09:00"), user: "qa.officer", action: "CREATE", rec: "CC-1405-006", new: "Requested" });
+    L({ ts: ts(-12, "11:30"), user: "qa.manager", action: "STATUS", rec: "CC-1405-006", field: "status", old: "Requested", new: "Assessed", reason: "ارزیابی اثر: نیاز به Validation و مطالعه پایداری" });
+    L({ ts: ts(-6, "10:00"), user: "qa.officer", action: "STATUS", rec: "SOP-QA-012 v1.0", field: "status", old: "Draft", new: "In Review" });
+    L({ ts: ts(-3, "08:45"), user: "admin", action: "BLOCKED", field: "audit trail", reason: "تلاش برای حذف یک رکورد Audit trail؛ سیستم اجازه نداد" });
+    L({ ts: ts(-2, "13:20"), user: "qa.officer", action: "CREATE", rec: "DEV-1405-016", new: "Open" });
+    await chain; save();
+  }
+
+  // ---------- dialogs ----------
+  function toast(m) { const t = document.createElement("div"); t.className = "toast"; t.setAttribute("role", "status"); t.textContent = m; document.body.append(t); setTimeout(() => t.remove(), 3200); }
+  const close = () => { $("#layer").innerHTML = ""; };
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+  function modal(html, cls = "") {
+    const layer = $("#layer");
+    layer.innerHTML = `<div class="overlay"><div class="modal ${cls}" role="dialog" aria-modal="true">${html}</div></div>`;
+    layer.querySelector(".overlay").addEventListener("click", (e) => { if (e.target.classList.contains("overlay")) close(); });
+    layer.querySelectorAll("[data-close]").forEach((b) => b.addEventListener("click", close));
+    const f = layer.querySelector("input:not([readonly]), select, textarea"); if (f) f.focus();
+    return layer.querySelector(".modal");
+  }
+  const field = (f, v) => {
+    const id = `fx-${f.k}`; const val = esc(v ?? f.value ?? "");
+    const lab = `${esc(f.label || FL[f.k] || f.k)}`;
+    if (f.type === "textarea") return `<label class="f" for="${id}">${lab}<textarea id="${id}" ${f.req ? "required" : ""}>${val}</textarea></label>`;
+    if (f.type === "select") return `<label class="f" for="${id}">${lab}<select id="${id}">${f.options.map((o) => `<option ${String(o) === String(v ?? f.value) ? "selected" : ""}>${esc(o)}</option>`).join("")}</select></label>`;
+    return `<label class="f" for="${id}">${lab}<input id="${id}" type="${f.type || "text"}" value="${val}" ${f.req ? "required" : ""} ${f.ltr ? 'dir="ltr"' : ""}></label>`;
+  };
+  // A form, then (when the record already exists) a reason for change, then (when needed) an e-signature.
+  function flow({ title, sub, fields = [], values = {}, reason = false, sign = null, run }) {
+    const step2 = async (data) => {
+      const step3 = async (why) => {
+        if (!sign) { close(); await run(data, why); render(); return; }
+        const u = me();
+        const m = modal(`<h3>${esc(title)}</h3><p class="sub">امضای الکترونیک: شناسه کاربری و رمز عبور دوباره وارد می‌شود (21 CFR 11.200).</p>
+          <form id="sf"><div class="meaning"><b>معنای امضا:</b> ${esc(sign)}</div>
+          <div class="two"><label class="f" for="sg-u">شناسه کاربری<input id="sg-u" class="mono" dir="ltr" value="${esc(u.id)}" readonly></label>
+          <label class="f" for="sg-p">رمز عبور<input id="sg-p" type="password" dir="ltr" autocomplete="off" required></label></div>
+          <div class="err" id="sg-e"></div><div class="actions"><button class="btn navy" type="submit">امضا</button><button class="btn" type="button" data-close>انصراف</button></div></form>`, "sign");
+        m.querySelector("#sf").addEventListener("submit", async (e) => {
+          e.preventDefault();
+          if (m.querySelector("#sg-p").value !== PASSWORD) { await log({ user: u.id, action: "SIGN_FAILED", reason: `رمز نادرست هنگام «${sign}»` }); m.querySelector("#sg-e").textContent = "رمز عبور نادرست است. این تلاش در Audit trail ثبت شد."; return; }
+          close(); await run(data, why, sign); render();
+        });
+      };
+      if (!reason) return step3("");
+      const m = modal(`<h3>دلیل تغییر</h3><p class="sub">${esc(title)}؛ دلیل در Audit trail ثبت می‌شود.</p>
+        <form id="rf"><label class="f" for="rs-t">نوع دلیل<select id="rs-t">${REASONS.map((r) => `<option>${esc(r)}</option>`).join("")}</select></label>
+        <label class="f" for="rs-x">توضیح (حداقل 10 نویسه)<textarea id="rs-x" required></textarea></label><div class="err" id="rs-e"></div>
+        <div class="actions"><button class="btn primary" type="submit">ادامه</button><button class="btn" type="button" data-close>انصراف</button></div></form>`);
+      m.querySelector("#rf").addEventListener("submit", (e) => {
+        e.preventDefault(); const x = m.querySelector("#rs-x").value.trim();
+        if (x.length < 10) { m.querySelector("#rs-e").textContent = "دلیل را کامل بنویسید؛ دست‌کم 10 نویسه."; return; }
+        step3(`${m.querySelector("#rs-t").value}: ${x}`);
+      });
+    };
+    if (!fields.length) return step2({});
+    const m = modal(`<h3>${esc(title)}</h3>${sub ? `<p class="sub">${esc(sub)}</p>` : ""}<form id="ff">${fields.map((f) => field(f, values[f.k])).join("")}
+      <div class="err" id="ff-e"></div><div class="actions"><button class="btn primary" type="submit">ادامه</button><button class="btn" type="button" data-close>انصراف</button></div></form>`);
+    m.querySelector("#ff").addEventListener("submit", (e) => {
+      e.preventDefault(); const data = {};
+      for (const f of fields) data[f.k] = m.querySelector(`#fx-${f.k}`).value.trim();
+      const miss = fields.find((f) => f.req && !data[f.k]); if (miss) { m.querySelector("#ff-e").textContent = `«${miss.label || FL[miss.k]}» را وارد کنید.`; return; }
+      step2(data);
+    });
+  }
+  // Applies changed fields to a record, one MODIFY entry each with old and new value.
+  async function apply(it, data, why) {
+    for (const [k, v] of Object.entries(data)) {
+      if (String(it[k] ?? "") === String(v)) continue;
+      await log({ user: me().id, action: "MODIFY", rec: it.id, field: k, old: it[k], new: v, reason: why }); it[k] = v;
+    }
+  }
+  async function setStatus(it, to, extra = {}) {
+    const old = it.status; it.status = to;
+    await log({ user: me().id, action: extra.meaning ? "SIGN" : "STATUS", rec: it.id, field: "status", old, new: to, ...extra });
+  }
+
+  // ---------- actions per record ----------
+  const role = () => me() && me().role;
+  const isO = () => role() === "QA Officer", isM = () => role() === "QA Manager", isT = () => role() === "Responsible Pharmacist";
+  function actionsFor(it) {
+    const A = []; const add = (label, cls, fn, disabled = "") => A.push({ label, cls, fn, disabled });
+    if (it.kind === "doc") {
+      if (isO() && it.status === "Draft") {
+        add("ویرایش", "", () => flow({ title: `ویرایش ${it.id}`, fields: [{ k: "title", req: 1 }, { k: "summary", type: "textarea", req: 1 }, { k: "file", ltr: 1 }], values: it, reason: true, run: (d, w) => apply(it, d, w).then(() => toast("تغییر ثبت شد.")) }));
+        add("ارسال برای بازبینی", "primary", () => flow({ title: `ارسال ${it.id}`, run: () => setStatus(it, "In Review").then(() => toast("برای بازبینی ارسال شد.")) }));
+      }
+      if (isM() && it.status === "In Review") {
+        add("بازبینی و امضا", "navy", () => flow({ title: `بازبینی ${it.id}`, sign: "Reviewed: محتوای سند بازبینی شد", run: (d, w, s) => setStatus(it, "Reviewed", { meaning: s }) }));
+        add("رد", "danger", () => flow({ title: `رد ${it.id}`, reason: true, run: (d, w) => { const o = it.status; it.status = "Draft"; return log({ user: me().id, action: "REJECT", rec: it.id, field: "status", old: o, new: "Draft", reason: w }); } }));
+      }
+      if (isT() && it.status === "Reviewed") {
+        add("تأیید نهایی و امضا", "navy", () => flow({ title: `تأیید ${it.id}`, sub: "پس از تأیید، سند در تاریخ اجرا لازم‌الاجرا و نسخه قبلی منسوخ می‌شود.", fields: [{ k: "effective", type: "date", value: today(), req: 1, ltr: 1 }], sign: "Approved: سند برای اجرا تأیید شد", run: async (d, w, s) => {
+          it.effective = d.effective; it.reviewDue = addDays(d.effective, 730);
+          await setStatus(it, "Effective", { meaning: s });
+          for (const p of S.items.filter((x) => x.kind === "doc" && x.code === it.code && x.status === "Effective" && x.id !== it.id)) await setStatus(p, "Superseded");
+          toast(`${it.id} لازم‌الاجرا شد.`);
+        } }));
+      }
+      if (isO() && it.status === "Effective" && !S.items.some((x) => x.kind === "doc" && x.code === it.code && ["Draft", "In Review", "Reviewed"].includes(x.status))) {
+        add("بازنگری (نسخه جدید)", "", () => flow({ title: `بازنگری ${it.code}`, fields: [{ k: "summary", type: "textarea", req: 1, label: "شرح تغییرات نسخه جدید" }], run: async (d) => {
+          const v = `${Math.floor(Number(it.version)) + 1}.0`; const id = `${it.code} v${v}`;
+          S.items.push({ ...it, id, version: v, status: "Draft", effective: "", reviewDue: "", summary: d.summary, file: `${it.code}_v${v}_draft.docx` });
+          await log({ user: me().id, action: "CREATE", rec: id, new: "Draft", reason: d.summary }); toast(`${id} ایجاد شد.`);
+        } }));
+      }
+    }
+    if (it.kind === "dev") {
+      if (isM() && it.status === "Open") {
+        add("طبقه‌بندی و ارزیابی ریسک", "primary", () => flow({ title: `طبقه‌بندی ${it.id}`, sub: "RPN = شدت × احتمال وقوع × قابلیت کشف (هر کدام از 1 تا 5)", fields: [{ k: "cls", type: "select", options: ["Minor", "Major", "Critical"] }, { k: "sev", type: "select", options: [1, 2, 3, 4, 5] }, { k: "occ", type: "select", options: [1, 2, 3, 4, 5] }, { k: "det", type: "select", options: [1, 2, 3, 4, 5] }], values: it, run: async (d) => {
+          d.rpn = String(Number(d.sev) * Number(d.occ) * Number(d.det)); await apply(it, d, "طبقه‌بندی و ارزیابی ریسک"); await setStatus(it, "Investigation"); toast(`RPN = ${d.rpn}`);
+        } }));
+      }
+      if (isO() && it.status === "Investigation") {
+        add("ثبت علت ریشه‌ای", "", () => flow({ title: `بررسی ${it.id}`, fields: [{ k: "method", type: "select", options: ["5 Whys", "Ishikawa", "Fault tree"] }, { k: "root", type: "textarea", req: 1 }], values: it, reason: !!it.root, run: (d, w) => apply(it, d, w || "ثبت نتیجه بررسی").then(() => toast("ثبت شد.")) }));
+        add("ایجاد CAPA", "primary", () => flow({ title: `CAPA برای ${it.id}`, fields: [{ k: "action", type: "textarea", req: 1 }, { k: "owner", type: "select", options: ["qa.officer", "qa.manager"] }, { k: "due", type: "date", value: addDays(today(), 30), req: 1, ltr: 1 }], run: async (d) => {
+          const n = S.items.filter((x) => x.kind === "capa").length + 7; const id = `CAPA-1405-${String(n + 1).padStart(3, "0")}`;
+          S.items.push({ id, kind: "capa", parent: it.id, ...d, evidence: "", status: "Open" }); await log({ user: me().id, action: "CREATE", rec: id, new: "Open", reason: `مرتبط با ${it.id}` }); toast(`${id} ایجاد شد.`);
+        } }));
+      }
+      if (isM() && it.status === "Investigation") {
+        const capas = S.items.filter((x) => x.kind === "capa" && x.parent === it.id);
+        const ready = it.root && capas.length && capas.every((c) => c.status === "Closed");
+        add("بستن و امضا", "navy", () => flow({ title: `بستن ${it.id}`, sign: "Closed: بررسی و اقدامات اصلاحی کامل است", run: (d, w, s) => setStatus(it, "Closed", { meaning: s }).then(() => toast(`${it.id} بسته شد.`)) }),
+          ready ? "" : "بستن انحراف پس از ثبت علت ریشه‌ای و بسته شدن همه CAPAهای مرتبط ممکن است.");
+      }
+    }
+    if (it.kind === "capa") {
+      if ((isO() || isM()) && it.status === "Open" && me().id === it.owner) add("ثبت اجرا", "primary", () => flow({ title: `اجرای ${it.id}`, fields: [{ k: "evidence", type: "textarea", req: 1 }], run: async (d) => { await apply(it, d, "ثبت شواهد اجرا"); await setStatus(it, "Implemented"); toast("اجرا ثبت شد."); } }));
+      if (isM() && it.status === "Open") add("تغییر مهلت", "", () => flow({ title: `تغییر مهلت ${it.id}`, fields: [{ k: "due", type: "date", req: 1, ltr: 1 }], values: it, reason: true, run: (d, w) => apply(it, d, w).then(() => toast("مهلت تغییر کرد.")) }));
+      if (isM() && it.status === "Implemented") add("تأیید اثربخشی و امضا", "navy", () => flow({ title: `اثربخشی ${it.id}`, sign: "Effectiveness verified: اثربخشی اقدام تأیید شد", run: (d, w, s) => setStatus(it, "Closed", { meaning: s }).then(() => toast(`${it.id} بسته شد.`)) }));
+    }
+    if (it.kind === "cc") {
+      if (isM() && it.status === "Requested") {
+        add("ارزیابی اثر", "primary", () => flow({ title: `ارزیابی ${it.id}`, fields: [{ k: "reg", type: "select", options: ["بله", "خیر"] }, { k: "val", type: "select", options: ["بله", "خیر"] }, { k: "stab", type: "select", options: ["بله", "خیر"] }, { k: "docs", req: 1 }, { k: "risk", type: "select", options: ["کم", "متوسط", "زیاد"] }], values: it, run: async (d) => { await apply(it, d, "ارزیابی اثر تغییر"); await setStatus(it, "Assessed"); toast("ارزیابی ثبت شد."); } }));
+      }
+      if (isM() && it.status === "Assessed") {
+        add("تأیید QA و امضا", "navy", () => flow({ title: `تأیید ${it.id}`, sign: "Approved (QA): تغییر از نظر کیفیت تأیید شد", run: (d, w, s) => setStatus(it, "QA Approved", { meaning: s }) }));
+        add("رد", "danger", () => flow({ title: `رد ${it.id}`, reason: true, run: (d, w) => { const o = it.status; it.status = "Rejected"; return log({ user: me().id, action: "REJECT", rec: it.id, field: "status", old: o, new: "Rejected", reason: w }); } }));
+      }
+      if (isT() && it.status === "QA Approved") add("تأیید مسئول فنی و امضا", "navy", () => flow({ title: `تأیید ${it.id}`, sign: "Approved (مسئول فنی): اجرای تغییر مجاز است", run: (d, w, s) => setStatus(it, "Approved", { meaning: s }) }));
+      if (isO() && it.status === "Approved") add("ثبت اجرا", "primary", () => flow({ title: `اجرای ${it.id}`, fields: [{ k: "notes", type: "textarea", req: 1 }], run: async (d) => { await apply(it, d, "ثبت اجرای تغییر"); await setStatus(it, "Implemented"); } }));
+      if (isM() && it.status === "Implemented") add("بستن و امضا", "navy", () => flow({ title: `بستن ${it.id}`, sign: "Closed: اجرای تغییر و اقدامات مرتبط تأیید شد", run: (d, w, s) => setStatus(it, "Closed", { meaning: s }) }));
+    }
+    return A;
+  }
+
+  // ---------- views ----------
+  const chip = (s) => { const [l, c] = ST[s] || [s, "c-grey"]; return `<span class="chip ${c}">${esc(l)}</span>`; };
+  const overdue = (c) => c.kind === "capa" && c.status === "Open" && c.due && daysTo(c.due) < 0;
+  const reviewSoon = (d) => d.kind === "doc" && d.status === "Effective" && d.reviewDue && daysTo(d.reviewDue) <= 60;
+  function detail(id) {
+    const it = get(id); if (!it) return;
+    const keys = { doc: ["code", "title", "version", "dept", "summary", "file", "effective", "reviewDue"], dev: ["title", "product", "batch", "site", "found", "desc", "cls", "sev", "occ", "det", "rpn", "method", "root"], capa: ["parent", "action", "owner", "due", "evidence"], cc: ["title", "type", "why", "desc", "reg", "val", "stab", "docs", "risk", "notes"] }[it.kind];
+    const fmt = (k, v) => (["effective", "reviewDue", "found", "due"].includes(k) ? day(v) : k === "owner" ? (user(v) || {}).name || v : ["code", "file", "batch", "parent"].includes(k) ? ltr(v) : esc(v));
+    const kv = keys.filter((k) => it[k] !== "" && it[k] != null).map((k) => `<dt>${esc(FL[k] || (k === "code" ? "کد سند" : k === "parent" ? "انحراف مرتبط" : k))}</dt><dd>${fmt(k, it[k])}</dd>`).join("");
+    const kids = S.items.filter((x) => x.parent === it.id);
+    const hist = S.audit.filter((a) => a.rec === it.id).slice().reverse().map((a) => `<tr><td class="nowrap mono">${esc(when(a.ts))}</td><td>${esc((user(a.user) || {}).name)}</td><td><span class="chip ${ACT[a.action][1]}">${esc(ACT[a.action][0])}</span></td><td>${a.old || a.new ? `${a.old ? `<span class="old">${esc(a.old)}</span> ← ` : ""}<span class="new">${esc(a.new)}</span>` : ""}</td><td>${esc(a.reason || a.meaning)}</td></tr>`).join("");
+    const acts = me() ? actionsFor(it) : [];
+    const m = modal(`<div class="row"><div><h3>${ltr(it.id)}</h3><p class="sub">${esc(TYPE[it.kind])} · ${chip(it.status)}</p></div><button class="btn" data-close>بستن</button></div>
+      <dl class="kv">${kv}</dl>
+      ${kids.length ? `<div class="section-t">CAPAهای مرتبط</div><div class="actions">${kids.map((k) => `<button class="btn" data-open="${esc(k.id)}">${ltr(k.id)} · ${esc((ST[k.status] || [k.status])[0])}</button>`).join("")}</div>` : ""}
+      ${it.parent ? `<div class="actions" style="margin-top:6px"><button class="btn" data-open="${esc(it.parent)}">مشاهده ${ltr(it.parent)}</button></div>` : ""}
+      <div class="section-t">عملیات</div>
+      ${!me() ? `<p class="lead">برای انجام عملیات، از نوار بالا وارد شوید.</p>` : acts.length ? `<div class="actions">${acts.map((a, i) => `<button class="btn ${a.cls}" data-act="${i}" ${a.disabled ? "disabled" : ""} title="${esc(a.disabled)}">${esc(a.label)}</button>`).join("")}</div>${acts.filter((a) => a.disabled).map((a) => `<p class="lead">${esc(a.disabled)}</p>`).join("")}` : `<p class="lead">در وضعیت فعلی، نقش ${esc(me().fa)} عملیاتی روی این رکورد ندارد.</p>`}
+      <div class="section-t">تاریخچه (Audit trail این رکورد)</div>
+      <div class="tablebox"><table><thead><tr><th>زمان</th><th>کاربر</th><th>عمل</th><th>قبلی ← جدید</th><th>دلیل / معنای امضا</th></tr></thead><tbody>${hist || `<tr><td colspan="5">سابقه‌ای نیست.</td></tr>`}</tbody></table></div>`);
+    m.querySelectorAll("[data-act]").forEach((b) => (b.onclick = () => acts[Number(b.dataset.act)].fn()));
+    m.querySelectorAll("[data-open]").forEach((b) => (b.onclick = () => detail(b.dataset.open)));
+  }
+  function table(kind) {
+    const list = S.items.filter((x) => x.kind === kind);
+    const H = { doc: ["کد و نسخه", "عنوان", "وضعیت", "تاریخ اجرا", "موعد بازنگری"], dev: ["شماره", "عنوان", "محصول و بچ", "طبقه‌بندی", "وضعیت"], capa: ["شماره", "اقدام", "انحراف", "مسئول", "مهلت", "وضعیت"], cc: ["شماره", "عنوان", "نوع", "ریسک", "وضعیت"] }[kind];
+    const rows = list.map((it) => {
+      const c = {
+        doc: () => [ltr(it.id), esc(it.title), chip(it.status), day(it.effective), `${day(it.reviewDue)}${reviewSoon(it) ? `<span class="flag ${daysTo(it.reviewDue) < 0 ? "" : "warn"}">${daysTo(it.reviewDue) < 0 ? "موعد بازنگری گذشته" : `${daysTo(it.reviewDue)} روز تا بازنگری`}</span>` : ""}`],
+        dev: () => [ltr(it.id), esc(it.title), `${esc(it.product)}<div class="hash">${esc(it.batch)}</div>`, it.cls ? `${esc(it.cls)}<div class="hash">RPN ${esc(it.rpn)}</div>` : "—", chip(it.status)],
+        capa: () => [ltr(it.id), esc(it.action), ltr(it.parent), esc((user(it.owner) || {}).name), `${day(it.due)}${overdue(it) ? `<span class="flag">${-daysTo(it.due)} روز تأخیر</span>` : ""}`, chip(it.status)],
+        cc: () => [ltr(it.id), esc(it.title), esc(it.type), esc(it.risk), chip(it.status)],
+      }[kind]();
+      return `<tr class="click" tabindex="0" data-id="${esc(it.id)}">${c.map((x, i) => `<td class="${i === 0 ? "nowrap" : ""}">${x}</td>`).join("")}</tr>`;
+    }).join("");
+    return `<div class="tablebox"><table><thead><tr>${H.map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+  const NEW = {
+    doc: () => flow({ title: "سند جدید", fields: [{ k: "code", label: "کد سند", req: 1, ltr: 1, value: "SOP-QA-0" }, { k: "title", req: 1 }, { k: "dept", type: "select", options: ["QA", "تولید", "انبار", "مهندسی", "رگولاتوری"] }, { k: "summary", type: "textarea", req: 1, value: "صدور اولیه" }], run: async (d) => {
+      const id = `${d.code} v1.0`; if (get(id)) return toast("این کد سند وجود دارد.");
+      S.items.push({ id, kind: "doc", ...d, version: "1.0", status: "Draft", effective: "", reviewDue: "", file: `${d.code}_v1.0_draft.docx` }); await log({ user: me().id, action: "CREATE", rec: id, new: "Draft" }); toast(`${id} ایجاد شد.`);
+    } }),
+    dev: () => flow({ title: "گزارش انحراف", fields: [{ k: "title", req: 1 }, { k: "product", req: 1 }, { k: "batch", req: 1, ltr: 1 }, { k: "site", type: "select", options: ["تولیدکننده قراردادی الف", "تولیدکننده قراردادی ب", "انبار شرکت"] }, { k: "found", type: "date", value: today(), ltr: 1 }, { k: "desc", type: "textarea", req: 1 }], run: async (d) => {
+      const n = S.items.filter((x) => x.kind === "dev").length; const id = `DEV-1405-${String(14 + n).padStart(3, "0")}`;
+      S.items.push({ id, kind: "dev", ...d, cls: "", sev: "", occ: "", det: "", rpn: "", root: "", method: "", status: "Open" }); await log({ user: me().id, action: "CREATE", rec: id, new: "Open" }); toast(`${id} ثبت شد.`);
+    } }),
+    cc: () => flow({ title: "درخواست تغییر", fields: [{ k: "title", req: 1 }, { k: "type", type: "select", options: ["فرمولاسیون", "فرایند", "تأمین‌کننده", "بسته‌بندی", "مستندات", "محل تولید"] }, { k: "why", req: 1 }, { k: "desc", type: "textarea", req: 1 }], run: async (d) => {
+      const n = S.items.filter((x) => x.kind === "cc").length; const id = `CC-1405-${String(5 + n).padStart(3, "0")}`;
+      S.items.push({ id, kind: "cc", ...d, reg: "", val: "", stab: "", docs: "", risk: "", notes: "", status: "Requested" }); await log({ user: me().id, action: "CREATE", rec: id, new: "Requested" }); toast(`${id} ثبت شد.`);
+    } }),
+  };
+  function moduleView(kind, title, lead) {
+    const canNew = isO() && NEW[kind];
+    return `<section class="panel"><div class="row"><div><h2>${title}</h2><p class="lead">${lead}</p></div>${canNew ? `<button class="btn primary" id="new">+ ثبت جدید</button>` : ""}</div>${table(kind)}</section>`;
+  }
+  function dashView() {
+    const devs = S.items.filter((x) => x.kind === "dev" && x.status !== "Closed");
+    const od = S.items.filter(overdue); const rv = S.items.filter(reviewSoon);
+    const ccs = S.items.filter((x) => x.kind === "cc" && !["Closed", "Rejected"].includes(x.status));
+    const pend = S.items.filter((x) => x.kind === "doc" && ["In Review", "Reviewed"].includes(x.status));
+    const line = (it, note) => `<tr class="click" tabindex="0" data-id="${esc(it.id)}"><td class="nowrap">${ltr(it.id)}</td><td>${esc(it.title || it.action)}</td><td>${note}</td></tr>`;
+    const att = [...od.map((c) => line(c, `<span class="flag">${-daysTo(c.due)} روز تأخیر</span>`)), ...rv.map((d) => line(d, `<span class="flag warn">${daysTo(d.reviewDue)} روز تا بازنگری</span>`)), ...pend.map((d) => line(d, chip(d.status))), ...S.items.filter((x) => x.kind === "dev" && x.status === "Open").map((d) => line(d, "منتظر طبقه‌بندی"))].join("");
+    return `<div class="kpis">
+      <div class="kpi ${devs.length ? "warn" : ""}"><p>انحراف‌های باز</p><b>${devs.length}</b></div>
+      <div class="kpi ${od.length ? "bad" : ""}"><p>CAPAهای دارای تأخیر</p><b>${od.length}</b></div>
+      <div class="kpi ${rv.length ? "warn" : ""}"><p>اسناد نزدیک به موعد بازنگری (60 روز)</p><b>${rv.length}</b></div>
+      <div class="kpi"><p>تغییرات در جریان</p><b>${ccs.length}</b></div></div>
+      <section class="panel"><h2>نیازمند اقدام</h2><p class="lead">برای مشاهده جزئیات و عملیات، روی هر ردیف بزنید.</p>
+      <div class="tablebox"><table><thead><tr><th>شماره</th><th>عنوان</th><th>وضعیت</th></tr></thead><tbody>${att || `<tr><td colspan="3">موردی نیست.</td></tr>`}</tbody></table></div></section>
+      ${!me() ? `<section class="panel"><h2>راهنمای نسخه نمایشی</h2><div class="guide">
+        <div><b>1. ورود</b>از نوار بالا با یکی از کاربران وارد شوید. هر ورود و ورود ناموفق ثبت می‌شود.</div>
+        <div><b>2. چرخه سند</b>«نگار رضایی» سند SOP-QA-020 را ارسال کند، «حسین نوری» بازبینی و «مینا صادقی» تأیید نهایی را امضا کند.</div>
+        <div><b>3. انحراف و CAPA</b>«حسین نوری» انحراف DEV-1405-016 را طبقه‌بندی کند؛ RPN خودکار محاسبه می‌شود.</div>
+        <div><b>4. یکپارچگی</b>در تب «یکپارچگی»، دست‌کاری مستقیم پایگاه داده را شبیه‌سازی کنید و ببینید سیستم آن را کشف می‌کند.</div></div></section>` : ""}`;
+  }
+  const filtered = () => { const f = S.filters; return S.audit.filter((a) => (!f.rec || a.rec === f.rec) && (!f.user || a.user === f.user) && (!f.action || a.action === f.action)); };
+  function auditView() {
+    const f = S.filters; const broken = S.verify && !S.verify.ok ? S.verify.at : null;
+    const opt = (v, l, c) => `<option value="${esc(v)}" ${c === v ? "selected" : ""}>${esc(l)}</option>`;
+    const rows = filtered().slice().reverse().map((a) => `<tr class="${broken === a.seq ? "broken" : ""}"><td class="mono">${a.seq}</td><td class="nowrap mono">${esc(when(a.ts))}</td>
+      <td>${esc((user(a.user) || {}).name || a.user)}<div class="hash">${esc(a.user)} · ${esc(a.role)}</div></td><td><span class="chip ${ACT[a.action][1]}">${esc(ACT[a.action][0])}</span></td>
+      <td class="nowrap">${ltr(a.rec)}</td><td>${esc(FL[a.field] || a.field)}</td><td>${a.old || a.new ? `${a.old ? `<span class="old">${esc(a.old)}</span> ← ` : ""}<span class="new">${esc(a.new)}</span>` : ""}</td>
+      <td style="min-width:200px">${esc(a.reason || a.meaning)}</td><td class="hash" title="${esc(a.hash)}">${esc(a.hash.slice(0, 10))}…</td></tr>`).join("");
+    return `<section class="panel"><div class="row"><div><h2>Audit trail</h2><p class="lead">فقط افزودنی: هیچ کاربری، حتی مدیر سیستم، نمی‌تواند رکوردی را ویرایش یا حذف کند. زمان‌ها به وقت تهران و تاریخ شمسی است.</p></div>
+      <div class="actions"><button class="btn" id="csv">کپی CSV</button>${Object.values(f).some(Boolean) ? `<button class="btn" id="clear">حذف فیلترها</button>` : ""}</div></div>
+      <div class="filters"><label class="f" for="f-rec">رکورد<select id="f-rec">${opt("", "همه")}${S.items.map((x) => opt(x.id, x.id, f.rec)).join("")}</select></label>
+      <label class="f" for="f-user">کاربر<select id="f-user">${opt("", "همه")}${USERS.map((u) => opt(u.id, u.name, f.user)).join("")}</select></label>
+      <label class="f" for="f-action">نوع عمل<select id="f-action">${opt("", "همه")}${Object.entries(ACT).map(([k, [l]]) => opt(k, l, f.action)).join("")}</select></label></div>
+      <div class="tablebox"><table><thead><tr><th>#</th><th>زمان</th><th>کاربر</th><th>عمل</th><th>رکورد</th><th>فیلد</th><th>قبلی ← جدید</th><th>دلیل / معنای امضا</th><th>Hash</th></tr></thead>
+      <tbody>${rows || `<tr><td colspan="9">رکوردی با این فیلترها نیست.</td></tr>`}</tbody></table></div></section>`;
+  }
+  function integrityView() {
+    const v = S.verify;
+    return `<div class="grid2">
+      <section class="panel"><h2>بررسی یکپارچگی زنجیره Hash</h2><p class="lead">هر رکورد Audit trail شامل Hash نوع SHA-256 خودش و رکورد قبلی است. تغییر یا حذف مستقیم هر رکورد در پایگاه داده، زنجیره را می‌شکند.</p>
+        <div class="actions" style="margin-top:10px"><button class="btn primary" id="verify">بررسی زنجیره</button></div>
+        ${v ? (v.ok ? `<div class="verdict good">زنجیره سالم است: ${v.n} رکورد بررسی شد.<p>هیچ رکوردی پس از ثبت تغییر نکرده یا حذف نشده است.</p></div>` : `<div class="verdict bad">دست‌کاری کشف شد در رکورد شماره ${v.at}.<p>${esc(v.why)} این رکورد در تب Audit trail با رنگ قرمز مشخص شده است.</p></div>`) : ""}</section>
+      <section class="panel"><h2>شبیه‌سازی دست‌کاری</h2><p class="lead">فرض کنید کسی با دسترسی مستقیم به پایگاه داده، طبقه‌بندی انحراف <bdi dir="ltr">DEV-1405-014</bdi> را در سابقه از Major به Minor تغییر دهد تا اهمیت آن پنهان شود.</p>
+        <div class="actions" style="margin-top:10px"><button class="btn danger" id="tamper" ${S.tampered ? "disabled" : ""}>دست‌کاری مستقیم پایگاه داده</button><button class="btn" id="restore" ${S.tampered ? "" : "disabled"}>بازگرداندن مقدار اصلی</button></div></section>
+      <section class="panel"><h2>کنترل‌های غیرقابل‌دور زدن</h2><p class="lead">این تلاش‌ها رد می‌شوند و خودشان در Audit trail ثبت می‌شوند.</p>
+        <div class="actions" style="margin-top:10px"><button class="btn danger" id="try-del">حذف یک رکورد Audit trail</button><button class="btn danger" id="try-off">غیرفعال کردن Audit trail</button></div>
+        ${me() ? "" : `<p class="lead">برای آزمودن، ابتدا وارد شوید؛ مثلاً با «مدیر سیستم».</p>`}</section>
+      <section class="panel"><h2>مبنای رگولاتوری</h2><ul class="reg">
+        <li><b>FDA 21 CFR Part 11:</b> بند 11.10(e) Audit trail امن و خودکار؛ بندهای 11.50 و 11.200 امضای الکترونیک با معنای امضا و دو جزء شناسایی.</li>
+        <li><b>EU GMP Annex 11:</b> بند 9 ثبت تغییرات همراه با دلیل و بازبینی Audit trail؛ بند 14 امضای الکترونیک.</li>
+        <li><b>EU GMP فصل 1، 4 و 7:</b> سیستم کیفیت، مستندات و فعالیت‌های برون‌سپاری‌شده (تولید قراردادی).</li>
+        <li><b>ICH Q9 و Q10:</b> مدیریت ریسک کیفیت و سیستم کیفیت دارویی.</li></ul>
+        <div class="actions" style="margin-top:10px"><button class="btn" id="reset">بازنشانی نسخه نمایشی</button></div></section></div>`;
+  }
+
+  function renderWho() {
+    const u = me();
+    $("#who").innerHTML = u ? `<span class="pill">${esc(u.name)} · ${esc(u.fa)}</span><button class="btn" id="logout">خروج</button>`
+      : `<label class="sr" for="lg-u">کاربر</label><select id="lg-u">${USERS.map((x) => `<option value="${x.id}">${esc(x.name)} (${esc(x.fa)})</option>`).join("")}</select>
+         <label class="sr" for="lg-p">رمز عبور</label><input id="lg-p" type="password" placeholder="رمز عبور" autocomplete="off"><button class="btn primary" id="login">ورود</button>`;
+    if (u) $("#logout").onclick = async () => { await log({ user: u.id, action: "LOGOUT" }); S.session = null; save(); render(); };
+    else {
+      const go = async () => { const id = $("#lg-u").value;
+        if ($("#lg-p").value !== PASSWORD) { await log({ user: id, action: "LOGIN_FAILED" }); toast("رمز نادرست است. تلاش ناموفق در Audit trail ثبت شد."); render(); return; }
+        S.session = id; await log({ user: id, action: "LOGIN" }); save(); render(); };
+      $("#login").onclick = go; $("#lg-p").onkeydown = (e) => { if (e.key === "Enter") go(); };
+    }
+  }
+  function render() {
+    renderWho();
+    const n = (k) => S.items.filter((x) => x.kind === k).length;
+    const tabs = [["dash", "داشبورد", null], ["doc", "مستندات", n("doc")], ["dev", "انحراف", n("dev")], ["capa", "CAPA", n("capa")], ["cc", "کنترل تغییرات", n("cc")], ["audit", "Audit trail", S.audit.length], ["integrity", "یکپارچگی", null]];
+    $("#tabs").innerHTML = tabs.map(([k, l, c]) => `<button role="tab" aria-selected="${S.tab === k}" data-tab="${k}">${esc(l)}${c !== null ? `<span class="count">${c}</span>` : ""}</button>`).join("");
+    $("#tabs").querySelectorAll("button").forEach((b) => (b.onclick = () => { S.tab = b.dataset.tab; render(); }));
+    const V = { dash: dashView, doc: () => moduleView("doc", "مدیریت مستندات و SOP", "چرخه: پیش‌نویس، بازبینی و امضای مدیر QA، تأیید نهایی و امضای مسئول فنی، لازم‌الاجرا. با تأیید نسخه جدید، نسخه قبلی خودکار منسوخ می‌شود."),
+      dev: () => moduleView("dev", "مدیریت انحراف", "ثبت توسط QA، طبقه‌بندی و ارزیابی ریسک (RPN) توسط مدیر QA، بررسی علت ریشه‌ای، CAPA، بستن با امضای الکترونیک."),
+      capa: () => moduleView("capa", "اقدامات اصلاحی و پیشگیرانه (CAPA)", "هر CAPA مسئول و مهلت دارد. تأخیرها در داشبورد نمایش داده می‌شود و بستن آن به تأیید اثربخشی نیاز دارد."),
+      cc: () => moduleView("cc", "کنترل تغییرات", "درخواست، ارزیابی اثر (رگولاتوری، Validation، پایداری)، تأیید QA و مسئول فنی با امضای الکترونیک، اجرا و بستن."),
+      audit: auditView, integrity: integrityView };
+    const main = $("#main"); main.innerHTML = V[S.tab]();
+    main.querySelectorAll("tr.click").forEach((r) => { r.onclick = () => detail(r.dataset.id); r.onkeydown = (e) => { if (e.key === "Enter") detail(r.dataset.id); }; });
+    const on = (s, fn) => { const el = $(s); if (el) el.onclick = fn; };
+    on("#new", () => NEW[S.tab]());
+    ["rec", "user", "action"].forEach((k) => { const el = $(`#f-${k}`); if (el) el.onchange = () => { S.filters[k] = el.value; render(); }; });
+    on("#clear", () => { S.filters = {}; render(); });
+    on("#csv", async () => {
+      const q = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+      const csv = ["seq,timestamp,user,role,action,record,field,old,new,reason_or_meaning,hash", ...filtered().map((a) => [a.seq, a.ts, a.user, a.role, a.action, a.rec, a.field, a.old, a.new, a.reason || a.meaning, a.hash].map(q).join(","))].join("\n");
+      try { await navigator.clipboard.writeText(csv); toast(`${filtered().length} رکورد به‌صورت CSV کپی شد.`); }
+      catch (e) { modal(`<h3>CSV</h3><textarea style="min-height:220px" dir="ltr" readonly>${esc(csv)}</textarea><div class="actions" style="margin-top:10px"><button class="btn" data-close>بستن</button></div>`); }
+    });
+    on("#verify", async () => { S.verify = await verifyChain(); render(); });
+    on("#tamper", () => {
+      const e = S.audit.find((a) => a.rec === "DEV-1405-014" && a.field === "cls"); if (!e) return toast("رکورد نمونه پیدا نشد؛ نسخه نمایشی را بازنشانی کنید.");
+      S.tampered = { seq: e.seq, v: e.new }; e.new = "Minor"; S.verify = null; save(); toast(`رکورد شماره ${e.seq} بدون عبور از برنامه تغییر کرد. حالا «بررسی زنجیره» را بزنید.`); render();
+    });
+    on("#restore", () => { const e = S.audit.find((a) => a.seq === S.tampered.seq); if (e) e.new = S.tampered.v; S.tampered = null; S.verify = null; save(); toast("مقدار اصلی برگردانده شد."); render(); });
+    const blocked = async (what) => { const u = me(); if (!u) return toast("ابتدا وارد شوید.");
+      await log({ user: u.id, action: "BLOCKED", field: "audit trail", reason: what });
+      modal(`<h3>این عمل مجاز نیست</h3><p class="sub">${esc(what)}</p><p>Audit trail برای هیچ نقشی، حتی مدیر سیستم، قابل حذف، ویرایش یا غیرفعال‌سازی نیست. این تلاش با نام ${esc(u.name)} در Audit trail ثبت شد.</p><div class="actions"><button class="btn" data-close>بستن</button></div>`); render(); };
+    on("#try-del", () => blocked("تلاش برای حذف یک رکورد Audit trail؛ سیستم اجازه نداد"));
+    on("#try-off", () => blocked("تلاش برای غیرفعال کردن Audit trail؛ سیستم اجازه نداد"));
+    on("#reset", async () => { try { localStorage.removeItem(KEY); } catch (e) {} await seed(); toast("نسخه نمایشی به حالت اول برگشت."); render(); });
+  }
+  (async () => { if (!load()) await seed(); render(); })();
+})();
+</script>
+</body>
+</html>
