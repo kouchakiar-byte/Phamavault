@@ -117,6 +117,27 @@ async function Visits({ locale }: { locale: Locale }) {
         ))}
       </div>
 
+      <Panel title={t.ips} locale={locale}>
+        <dl className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+          {(
+            [
+              [t.periods.today, s.ips.today],
+              [t.periods.week, s.ips.week],
+              [t.periods.month, s.ips.month],
+              [t.ipsAll, s.ips.all],
+            ] as const
+          ).map(([label, value]) => (
+            <div key={label.en}>
+              <dt className="text-sm text-muted">{label[locale]}</dt>
+              <dd className="mt-1 text-2xl font-bold text-vault-900">{n(value)}</dd>
+            </div>
+          ))}
+        </dl>
+        <p className="mt-3 text-xs leading-relaxed text-muted">
+          {s.ips.since ? t.ipsNote[locale].replace("{d}", dayLabel(s.ips.since, locale, true)) : t.ipsEmpty[locale]}
+        </p>
+      </Panel>
+
       {!month?.views ? (
         <p className="rounded-card bg-vault-50 px-5 py-4 text-sm text-ink">
           {t.empty[locale]}
