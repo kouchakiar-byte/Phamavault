@@ -16,7 +16,7 @@ export const siteConfig = {
     /** Mobile. */
     phone: "0938 941 1123" as string | null,
     landline: "021 8605 3484" as string | null,
-    hours: bi("Saturday to Wednesday, 9:00–17:00", "شنبه تا چهارشنبه، ساعت 9 تا 17"),
+    hours: bi("Saturday to Wednesday, 8:00–17:00", "شنبه تا چهارشنبه، ساعت 8 تا 17"),
   },
   /** e-Namad trust seal: the id and code from the e-Namad panel; null hides the badge. */
   enamad: { id: "8206119", code: "cRoMXWmJrmcqg8byEKpKdBNXXvYg9sQ5" } as { id: string; code: string } | null,
