@@ -129,7 +129,7 @@ async function CopyAccess() {
   await cookies(); // request-time check
   const user = await getUser().catch(() => null);
   const allowed = user ? (await sectionsFor(user.mobile).catch(() => new Set<string>())).has("references") : false;
-  return allowed ? <CopyUnlock targetId="gc-sheet" /> : null;
+  return allowed && user ? <CopyUnlock targetId="gc-sheet" mark={Number(user.id)} /> : null;
 }
 
 const lockProps = (locale: Locale) => {

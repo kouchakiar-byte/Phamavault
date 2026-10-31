@@ -237,7 +237,7 @@ async function CopyAccess() {
     const sections = await sectionsFor(user.mobile).catch(() => new Set<string>());
     allowed = sections.has("qa") || sections.has("qc");
   }
-  return allowed ? <CopyUnlock targetId="sop-doc" /> : null;
+  return allowed && user ? <CopyUnlock targetId="sop-doc" mark={Number(user.id)} /> : null;
 }
 
 export default async function SopPage({ params }: PageProps<"/[lang]/qa/[code]">) {

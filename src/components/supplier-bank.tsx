@@ -1,38 +1,28 @@
 "use client";
 
-import { useMemo, useState, type ReactNode } from "react";
-import { Search, X } from "lucide-react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import Link from "next/link";
+import { Lock, Search, X } from "lucide-react";
 import { pages } from "@/content/pages";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
-import {
-  norm,
-  prepare,
-  search,
-  type Filters,
-  type MatchKind,
-  type Product,
-  type SortKey,
-  type Supplier,
-  type SupplierRecord,
-} from "@/lib/supplier-search";
+import { href } from "@/lib/paths";
+import type { SupplierPage, SupplierView } from "@/lib/supplier-api";
+import { norm, type Filters, type SortKey } from "@/lib/supplier-search";
 import { BiTitle } from "./ui";
 
 const t = pages.suppliers;
 
-/** Category names as the search reads them, so «بسته بندی» or «رفرنس استاندارد» finds the whole category. */
-const categoryLabels = Object.fromEntries(
-  Object.entries(t.categories).map(([key, label]) => [key, [norm(label.fa), norm(label.en)]]),
-);
-
-/** What the bank searches; passed from the server so it only reaches subscribers. */
+/** The bank is searched on the server (/api/suppliers) a page at a time; the whole list never reaches the browser. */
 export type SupplierData = {
-  companies: SupplierRecord[];
-  synonyms: string[][];
-  provinceOrder: string[];
+  /** The first page for the default filters, rendered on the server so the page has content before any search. */
+  first: SupplierPage;
   /** The last daily update, already written out on the server ("27 Mehr 1405, 18:00"). */
   updated?: string | null;
 };
+
+const queryString = (f: Filters, page: number) =>
+  new URLSearchParams({ q: f.query, type: f.type, cat: f.cat, sort: f.sort, ...(f.telOnly ? { tel: "1" } : {}), page: String(page) }).toString();
 
 const fill = (template: string, vars: Record<string, string | number>) =>
   template.replace(/\{(\w+)\}/g, (_, k: string) => String(vars[k] ?? ""));
@@ -63,21 +53,38 @@ export function filtersFromParams(params: URLSearchParams): Partial<Filters> {
 export function SupplierBank({ locale, data, initial }: { locale: Locale; data: SupplierData; initial?: Partial<Filters> }) {
   const [filters, setFilters] = useState<Filters>({ ...defaults, ...initial });
   const set = (patch: Partial<Filters>) => setFilters((f) => ({ ...f, ...patch }));
+  const [page, setPage] = useState<SupplierPage>(data.first);
+  const [rows, setRows] = useState<SupplierView[]>(data.first.results);
+  const [state, setState] = useState<"idle" | "loading" | "rate" | "error">("idle");
+  const latest = useRef(0);
 
-  const { suppliers, synonyms, totalProducts } = useMemo(() => {
-    const prepared = prepare(data.companies);
-    return {
-      suppliers: prepared,
-      synonyms: data.synonyms.map((g) => g.map(norm)),
-      totalProducts: prepared.reduce((n, s) => n + s.products.length, 0),
-    };
-  }, [data]);
-  const results = useMemo(
-    () => search(suppliers, filters, synonyms, data.provinceOrder, categoryLabels),
-    [suppliers, synonyms, data.provinceOrder, filters],
-  );
+  async function load(f: Filters, n: number, append: boolean) {
+    const id = ++latest.current;
+    setState("loading");
+    try {
+      const res = await fetch(`/api/suppliers?${queryString(f, n)}`, { cache: "no-store" });
+      if (id !== latest.current) return;
+      if (res.status === 429) return setState("rate");
+      if (!res.ok) return setState("error");
+      const next = (await res.json()) as SupplierPage;
+      if (id !== latest.current) return;
+      setPage(next);
+      setRows((r) => (append ? [...r, ...next.results] : next.results));
+      setState("idle");
+    } catch {
+      if (id === latest.current) setState("error");
+    }
+  }
+
+  // A new search after a short pause in typing. The server-rendered first page is fetched once more
+  // on arrival, since it was rendered without contact details and the reader may be signed in.
+  useEffect(() => {
+    const timer = setTimeout(() => load(filters, 1, false), 250);
+    return () => clearTimeout(timer);
+  }, [filters]);
+
   const q = norm(filters.query);
-  const withTel = results.filter((r) => r.s.tel.length).length;
+  const loginHref = `${href(locale, "account/login")}?next=${encodeURIComponent(href(locale, "suppliers"))}`;
 
   return (
     <div className="flex flex-col gap-5">
@@ -172,19 +179,43 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
 
       <p className="text-sm text-muted tabular-nums" aria-live="polite">
         {q
-          ? fillQuery(t.countQuery[locale], filters.query, { n: results.length, t: withTel })
-          : fill(t.countAll[locale], { n: results.length, p: totalProducts })}
+          ? fillQuery(t.countQuery[locale], filters.query, { n: page.total, t: page.withTel })
+          : fill(t.countAll[locale], { n: page.total, p: page.totalProducts })}
+        {state === "loading" && <span className="ms-2">{t.loading[locale]}</span>}
       </p>
 
-      {results.length === 0 ? (
+      {state === "rate" && <p className="rounded-card bg-capsule-50 px-4 py-3 text-sm text-capsule-700">{t.tooMany[locale]}</p>}
+      {state === "error" && <p className="rounded-card bg-red-50 px-4 py-3 text-sm text-red-700">{t.loadError[locale]}</p>}
+
+      {!page.contacts && (
+        <p className="flex flex-wrap items-center gap-2 rounded-card border border-molecule-400/50 bg-molecule-50 px-4 py-3 text-sm text-vault-900">
+          <Lock className="size-4 shrink-0 text-molecule-700" aria-hidden="true" />
+          {t.contactsLocked[locale]}
+          <Link href={loginHref} className="font-semibold text-molecule-700 hover:underline">
+            {t.signIn[locale]}
+          </Link>
+        </p>
+      )}
+
+      {page.total === 0 ? (
         <p className="rounded-card border border-dashed border-line bg-white p-6 text-muted">
           {fillQuery(t.empty[locale], filters.query)}
         </p>
       ) : (
         <div className="flex flex-col gap-3">
-          {results.map(({ s, hits, match }) => (
-            <SupplierCard key={s.n} s={s} hits={hits} match={match} locale={locale} query={q ? filters.query : ""} />
+          {rows.map((s) => (
+            <SupplierCard key={s.n} s={s} locale={locale} query={q ? filters.query : ""} contacts={page.contacts} loginHref={loginHref} />
           ))}
+          {page.page < page.pages && (
+            <button
+              type="button"
+              disabled={state === "loading"}
+              onClick={() => load(filters, page.page + 1, true)}
+              className="mx-auto rounded-full border border-line bg-white px-6 py-2.5 text-sm font-semibold text-vault-900 hover:border-molecule-500 disabled:opacity-50"
+            >
+              {fill(t.showMore[locale], { n: page.total - rows.length })}
+            </button>
+          )}
         </div>
       )}
 
@@ -217,7 +248,7 @@ function Pill({ tone, children }: { tone: "maker" | "trader" | "warn" | "cat"; c
   return <span className={`whitespace-nowrap rounded-md px-2 text-xs font-medium leading-6 ${tones[tone]}`}>{children}</span>;
 }
 
-function ProductChip({ p, hit = false }: { p: Product; hit?: boolean }) {
+function ProductChip({ p, hit = false }: { p: { fa: string; en: string }; hit?: boolean }) {
   return (
     <span
       className={`inline-flex flex-wrap items-baseline gap-x-1.5 rounded-md border px-2 text-[0.82rem] leading-6 ${
@@ -263,24 +294,32 @@ function PhoneLine({ tel, locale }: { tel: string; locale: Locale }) {
 
 function SupplierCard({
   s,
-  hits,
-  match,
   locale,
   query,
+  contacts,
+  loginHref,
 }: {
-  s: Supplier;
-  hits: Product[];
-  match?: MatchKind;
+  s: SupplierView;
   locale: Locale;
   query: string;
+  contacts: boolean;
+  loginHref: string;
 }) {
-  const others = s.products.filter((p) => !hits.includes(p));
-  const shown = hits.length ? hits : others.slice(0, 8);
-  const more = hits.length ? others : others.slice(8);
+  const match = s.match;
+  const hitList = s.products.filter((p) => p.hit);
+  const others = s.products.filter((p) => !p.hit);
+  const shown = hitList.length ? hitList : others.slice(0, 8);
+  const more = hitList.length ? others : others.slice(8);
   const web = safeUrl(s.web);
   const src = safeUrl(s.src);
   const dt = "whitespace-nowrap text-muted";
   const dd = "m-0 min-w-0 [overflow-wrap:anywhere]";
+  const locked = (
+    <Link href={loginHref} className="inline-flex items-center gap-1 text-sm text-molecule-700 hover:underline">
+      <Lock className="size-3.5" aria-hidden="true" />
+      {t.signInToSee[locale]}
+    </Link>
+  );
 
   return (
     <article className="flex flex-col gap-3 rounded-card border border-line bg-white p-5">
@@ -296,7 +335,7 @@ function SupplierCard({
         {s.partial ? (
           <Pill tone="warn">{t.needsCompleting[locale]}</Pill>
         ) : (
-          !s.tel.length && <Pill tone="warn">{t.noPhone[locale]}</Pill>
+          !s.telCount && <Pill tone="warn">{t.noPhone[locale]}</Pill>
         )}
         {s.c.map((c) => (
           <Pill key={c} tone="cat">
@@ -313,7 +352,9 @@ function SupplierCard({
       <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 text-[0.92rem]">
         <dt className={dt}>{t.phone[locale]}</dt>
         <dd className={dd}>
-          {s.tel.length ? (
+          {!contacts && s.telCount ? (
+            locked
+          ) : s.tel.length ? (
             s.tel.map((tel) => <PhoneLine key={tel} tel={tel} locale={locale} />)
           ) : (
             <span className="text-sm text-warn">{t.notRecorded[locale]}</span>
@@ -336,13 +377,17 @@ function SupplierCard({
           {s.city}
           {s.prov !== "نامشخص" && !s.city.includes(s.prov) && ` — ${t.province[locale]} ${s.prov}`}
         </dd>
-        {s.mail && (
+        {s.hasMail && (
           <>
             <dt className={dt}>{t.email[locale]}</dt>
             <dd className={dd}>
-              <bdi className="font-mono text-sm select-all" dir="ltr">
-                {s.mail}
-              </bdi>
+              {s.mail ? (
+                <bdi className="font-mono text-sm select-all" dir="ltr">
+                  {s.mail}
+                </bdi>
+              ) : (
+                locked
+              )}
             </dd>
           </>
         )}
@@ -364,14 +409,14 @@ function SupplierCard({
       {shown.length > 0 && (
         <div className="flex flex-wrap gap-1.5">
           {shown.map((p, i) => (
-            <ProductChip key={i} p={p} hit={hits.includes(p)} />
+            <ProductChip key={i} p={p} hit={p.hit} />
           ))}
         </div>
       )}
       {more.length > 0 && (
         <details>
           <summary className="w-fit cursor-pointer text-sm text-molecule-700">
-            {(hits.length ? t.otherProducts : t.moreProducts)[locale]} ({more.length})
+            {(hitList.length ? t.otherProducts : t.moreProducts)[locale]} ({more.length})
           </summary>
           <div className="mt-2 flex flex-wrap gap-1.5">
             {more.map((p, i) => (

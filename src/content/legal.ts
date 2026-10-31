@@ -160,6 +160,14 @@ export const terms: LegalPage = {
           "Copying, republishing, selling or automatically extracting the databases, or sharing an account, is not permitted and ends the subscription without refund.",
           "کپی، بازنشر، فروش یا استخراج خودکار پایگاه‌های داده و نیز اشتراک‌گذاری حساب کاربری مجاز نیست و موجب قطع اشتراک بدون بازگشت وجه می‌شود.",
         ),
+        bi(
+          "All content, databases, calculators, formulation tools and the design of the site belong to PharmaVault. Robots, scrapers and other automated tools may not collect or copy them, and copying, republishing or building a similar service from them is pursued under copyright and computer-crime law.",
+          "تمامی محتوا، پایگاه‌های داده، ماشین‌حساب‌ها، ابزارهای فرمولاسیون و طراحی سایت متعلق به PharmaVault است. جمع‌آوری یا کپی آن‌ها با ربات، نرم‌افزارهای استخراج داده (Scraper) و هر ابزار خودکار دیگری مجاز نیست، و کپی، بازنشر یا ساخت سرویس مشابه از آن‌ها، طبق قوانین حمایت از حقوق مؤلفان و جرائم رایانه‌ای پیگیری می‌شود.",
+        ),
+        bi(
+          "To protect the content, text copied by subscribers carries an invisible identifier of their account, and requests are limited per user and per address.",
+          "برای حفاظت از محتوا، متنی که مشترکان کپی می‌کنند یک شناسه نامرئی از حساب کاربری آن‌ها دارد و تعداد درخواست‌ها برای هر کاربر و هر نشانی محدود است.",
+        ),
       ],
     },
     {

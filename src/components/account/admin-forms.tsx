@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
-import { grant, resetPassword, type AdminState } from "@/app/[lang]/admin/actions";
+import { grant, resetPassword, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
 import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
@@ -84,6 +84,31 @@ export function ResetPasswordForm({ locale }: { locale: Locale }) {
         </button>
         <Result state={state} locale={locale} />
       </div>
+    </form>
+  );
+}
+
+export function TraceForm({ locale }: { locale: Locale }) {
+  const [state, action, pending] = useActionState(traceCopy, {});
+  const tr = t.trace;
+  return (
+    <form action={action} className="space-y-3">
+      <label className={label} htmlFor="tr-text">
+        {tr.label[locale]}
+      </label>
+      <textarea id="tr-text" name="text" required rows={5} className="field-input" />
+      <button type="submit" disabled={pending} className="rounded-full bg-vault-900 px-5 py-2 text-sm font-semibold text-white disabled:opacity-50">
+        {tr.button[locale]}
+      </button>
+      {state.user && (
+        <p className="text-sm text-vault-900">
+          {tr.found[locale]}: <b>{state.user.name}</b> ·{" "}
+          <span className="font-mono" dir="ltr">
+            {state.user.mobile}
+          </span>
+        </p>
+      )}
+      {state.none && <p className="text-sm text-muted">{tr.none[locale]}</p>}
     </form>
   );
 }

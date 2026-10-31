@@ -3,6 +3,7 @@ import excipients from "@/data/excipients.json";
 import sops from "@/data/sops.json";
 import { LOCALE_COOKIE, defaultLocale, hasLocale, type Locale } from "@/i18n/config";
 import { excipientSlug } from "@/lib/excipient-slug";
+import { allow, clientIp } from "@/lib/rate-limit";
 
 function preferredLocale(request: NextRequest): Locale {
   const cookie = request.cookies.get(LOCALE_COOKIE)?.value;
@@ -42,8 +43,27 @@ function redirect(request: NextRequest, path: string) {
   return NextResponse.redirect(url, 308);
 }
 
+/** Search engines that should crawl freely (user agents can be faked, so this only skips the page limit). */
+const CRAWLERS = /googlebot|bingbot|yandex(bot)?|duckduckbot|applebot|enamad/i;
+
+/**
+ * Full-page loads per address: generous for a person, too few for a script copying the site page by
+ * page. In-app navigations (RSC requests and prefetches) are not counted.
+ */
+function overLimit(request: NextRequest): boolean {
+  if (request.headers.has("rsc") || request.headers.has("next-router-prefetch")) return false;
+  if (CRAWLERS.test(request.headers.get("user-agent") ?? "")) return false;
+  return !allow(`page:${clientIp(request.headers)}`, 240, 5 * 60_000);
+}
+
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  if (overLimit(request)) {
+    return new NextResponse("تعداد درخواست‌ها از این نشانی بیش از حد مجاز است. لطفاً چند دقیقه دیگر دوباره تلاش کنید.\nToo many requests. Please try again in a few minutes.", {
+      status: 429,
+      headers: { "Content-Type": "text/plain; charset=utf-8", "Retry-After": "300" },
+    });
+  }
   const [, lang, section, slug, ...rest] = pathname.split("/");
 
   if (!hasLocale(lang)) {

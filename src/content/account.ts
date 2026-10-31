@@ -218,6 +218,17 @@ export const account = {
       revenue: bi("Revenue, last 30 days (Toman)", "درآمد 30 روز اخیر (تومان)"),
       pending: bi("Invoices awaiting payment", "پیش‌فاکتورهای در انتظار پرداخت"),
     },
+    trace: {
+      title: bi("Trace copied text", "ردیابی متن کپی‌شده"),
+      lead: bi(
+        "Text a subscriber copies from an SOP or a general chapter carries an invisible code for their account. Paste text found elsewhere to see which account copied it.",
+        "متنی که مشترکان از SOPها یا General Chapterها کپی می‌کنند، یک کد نامرئی از حساب کاربری آن‌ها دارد. متنی را که جای دیگری پیدا کرده‌اید اینجا قرار دهید تا حساب کپی‌کننده مشخص شود.",
+      ),
+      label: bi("Copied text", "متن کپی‌شده"),
+      button: bi("Find the account", "شناسایی حساب"),
+      found: bi("Copied from the account of", "کپی‌شده از حساب"),
+      none: bi("No account code was found in this text.", "کد حساب کاربری در این متن پیدا نشد."),
+    },
     usersList: {
       title: bi("Users", "کاربران"),
       none: bi("No users yet.", "هنوز کاربری ثبت‌نام نکرده است."),

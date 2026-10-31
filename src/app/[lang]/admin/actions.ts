@@ -7,6 +7,7 @@ import { db } from "@/lib/db";
 import { setStatus } from "@/lib/orders";
 import { normalizePurchase } from "@/lib/pricing";
 import { setRequestHandled } from "@/lib/service-requests";
+import { decodeMark } from "@/lib/watermark";
 import { activateOrder, extendSubscription, grantManually, setRevoked, setSeats } from "@/lib/subscriptions";
 
 export type AdminState = { error?: keyof typeof account.errors; ok?: boolean };
@@ -105,4 +106,15 @@ export async function resetPassword(_: AdminState, form: FormData): Promise<Admi
   ]);
   await pool.query("delete from sessions where user_id = $1", [userId]);
   return { ok: true };
+}
+
+export type TraceState = { user?: { id: string; name: string; mobile: string }; none?: boolean };
+
+/** Finds the account whose invisible code is in a piece of copied text (see lib/watermark). */
+export async function traceCopy(_: TraceState, form: FormData): Promise<TraceState> {
+  await requireAdmin();
+  const userId = decodeMark(String(form.get("text") ?? ""));
+  if (userId === null) return { none: true };
+  const { rows } = await (await db()).query<{ id: string; name: string; mobile: string }>("select id, name, mobile from users where id = $1", [userId]);
+  return rows[0] ? { user: rows[0] } : { none: true };
 }
