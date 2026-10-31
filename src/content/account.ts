@@ -272,6 +272,13 @@ export const account = {
         "Counted on the site's own server: no outside service, no cookie, no IP kept. A visitor counts once a day; robots and the site's admins are not counted.",
         "روی سرور خود سایت شمرده می‌شود: بدون سرویس بیرونی، بدون کوکی و بدون ذخیره IP. هر بازدیدکننده روزی یک بار شمرده می‌شود؛ ربات‌ها و مدیران سایت شمرده نمی‌شوند.",
       ),
+      ips: bi("Distinct IPs", "IPهای مختلف"),
+      ipsAll: bi("All time", "از ابتدای شمارش"),
+      ipsNote: bi(
+        "Each IP is stored only as a one-way code, never as the address itself. Counting started on {d}; earlier visits have no IP code.",
+        "هر IP فقط به‌صورت کد یک‌طرفه (Hash) ذخیره می‌شود، نه خود نشانی. شمارش از {d} شروع شده و بازدیدهای پیش از آن کد IP ندارند.",
+      ),
+      ipsEmpty: bi("Counting distinct IPs starts once this update is live.", "شمارش IPهای مختلف از زمان انتشار این به‌روزرسانی شروع می‌شود."),
       periods: { today: bi("Today", "امروز"), week: bi("Last 7 days", "7 روز اخیر"), month: bi("Last 30 days", "30 روز اخیر") },
       visitors: bi("visitors", "بازدیدکننده"),
       views: bi("page views", "بازدید صفحه"),

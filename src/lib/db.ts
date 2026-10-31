@@ -110,6 +110,8 @@ create table if not exists page_views (
   device text not null
 );
 create index if not exists page_views_at_idx on page_views(at);
+-- A stable one-way hash of the visitor's IP, to count distinct IPs over any period (no IP kept).
+alter table page_views add column if not exists ip text;
 create table if not exists supplier_links (
   url text primary key,
   fails int not null default 0,

@@ -5,7 +5,8 @@ import { tehranNow } from "./scheduler";
 /**
  * Site visits, counted on the site's own database: no outside service, no
  * cookie, no IP kept. A visitor is a one-way hash of the day, IP and browser,
- * so the same person counts once a day and cannot be followed from day to day.
+ * so the same person counts once a day. Distinct IPs are counted from a second,
+ * day-independent one-way hash of the IP alone.
  */
 
 const BOT = /bot|crawl|spider|slurp|headless|lighthouse|preview|facebookexternalhit|whatsapp|telegram|curl|wget|python|axios|node-fetch|go-http|java\//i;
@@ -37,11 +38,13 @@ export async function recordView(v: View): Promise<void> {
   if (!path) return;
   const salt = process.env.ANALYTICS_SALT || process.env.DATABASE_URL || "";
   const visitor = createHash("sha256").update(`${tehranNow().day}|${v.ip}|${v.userAgent}|${salt}`).digest("hex").slice(0, 20);
-  await (await db()).query("insert into page_views (path, visitor, ref, device) values ($1, $2, $3, $4)", [
+  const ip = v.ip ? createHash("sha256").update(`ip|${v.ip}|${salt}`).digest("hex").slice(0, 20) : null;
+  await (await db()).query("insert into page_views (path, visitor, ref, device, ip) values ($1, $2, $3, $4, $5)", [
     path,
     visitor,
     v.ref,
     device(v.userAgent),
+    ip,
   ]);
 }
 
@@ -51,6 +54,8 @@ export type VisitStats = {
   pages: { path: string; views: number; visitors: number }[];
   refs: { host: string; visitors: number }[];
   devices: { device: string; visitors: number }[];
+  /** Distinct IPs; counted only for views recorded since IPs began to be hashed (`since`). */
+  ips: { today: number; week: number; month: number; all: number; since: string | null };
 };
 
 const TZ = "Asia/Tehran";
@@ -59,7 +64,7 @@ const TZ = "Asia/Tehran";
 export async function visitStats(): Promise<VisitStats> {
   const pool = await db();
   const since = (days: number) => `(date_trunc('day', now() at time zone '${TZ}') - interval '${days} days') at time zone '${TZ}'`;
-  const [totals, days, pages, refs, devices] = await Promise.all([
+  const [totals, days, pages, refs, devices, ips] = await Promise.all([
     pool.query<{ label: string; visitors: string; views: string }>(
       ["today", "week", "month"]
         .map(
@@ -83,6 +88,14 @@ export async function visitStats(): Promise<VisitStats> {
     pool.query<{ device: string; visitors: string }>(
       `select device, count(distinct visitor) as visitors from page_views where at >= ${since(29)} group by device order by 2 desc`,
     ),
+    pool.query<{ today: string; week: string; month: string; all: string; since: string | null }>(
+      `select count(distinct ip) filter (where at >= ${since(0)}) as today,
+              count(distinct ip) filter (where at >= ${since(6)}) as week,
+              count(distinct ip) filter (where at >= ${since(29)}) as month,
+              count(distinct ip) as all,
+              to_char(min(at) at time zone '${TZ}', 'YYYY-MM-DD') as since
+       from page_views where ip is not null`,
+    ),
   ]);
   const n = (x: string) => Number(x) || 0;
   // Every one of the 30 days, zero where nobody came.
@@ -101,6 +114,7 @@ export async function visitStats(): Promise<VisitStats> {
     pages: pages.rows.map((r) => ({ path: r.path, views: n(r.views), visitors: n(r.visitors) })),
     refs: refs.rows.map((r) => ({ host: r.host, visitors: n(r.visitors) })),
     devices: devices.rows.map((r) => ({ device: r.device, visitors: n(r.visitors) })),
+    ips: { today: n(ips.rows[0].today), week: n(ips.rows[0].week), month: n(ips.rows[0].month), all: n(ips.rows[0].all), since: ips.rows[0].since },
   };
 }
 
