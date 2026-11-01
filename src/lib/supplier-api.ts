@@ -1,5 +1,6 @@
 import { pages } from "@/content/pages";
 import { getCatalog, type Catalog } from "./catalog";
+import { publicNote } from "./supplier-note";
 import { norm, prepare, search, type Filters, type MatchKind, type SortKey, type Supplier } from "./supplier-search";
 
 /** Results per request: the bank is read a page at a time, never shipped whole to the browser. */
@@ -18,8 +19,6 @@ export type SupplierView = {
   partial?: number;
   web?: string;
   webDown?: boolean;
-  src: string;
-  via?: number;
   /** How many phone numbers are on record, also when they are hidden. */
   telCount: number;
   tel: string[];
@@ -84,12 +83,10 @@ export async function querySuppliers(filters: Filters, page: number, contacts: b
     prov: s.prov,
     city: s.city,
     site: s.site,
-    note: s.note,
+    note: publicNote(s.note),
     partial: s.partial,
     web: s.web,
     webDown: s.webDown,
-    src: s.src,
-    via: s.via,
     telCount: s.tel.length,
     tel: contacts ? s.tel : [],
     mail: contacts ? s.mail : undefined,
