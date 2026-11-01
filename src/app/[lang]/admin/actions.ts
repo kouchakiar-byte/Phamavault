@@ -7,6 +7,8 @@ import { db } from "@/lib/db";
 import { setStatus } from "@/lib/orders";
 import { normalizePurchase } from "@/lib/pricing";
 import { setRequestHandled } from "@/lib/service-requests";
+import { mailConfigured, sendMail } from "@/lib/mail";
+import { logMail } from "@/lib/mail-log";
 import { decodeMark } from "@/lib/watermark";
 import { activateOrder, extendSubscription, grantManually, setRevoked, setSeats } from "@/lib/subscriptions";
 
@@ -172,4 +174,33 @@ export async function addUser(_: AdminState, form: FormData): Promise<AdminState
   if (!rows[0]) return { error: "taken" };
   refresh();
   return { ok: true };
+}
+
+export type MailTestState = { ok?: boolean; error?: string };
+
+/** Sends a test email and shows the SMTP server's answer, so a wrong setting is visible right away. */
+export async function testMail(_: MailTestState, form: FormData): Promise<MailTestState> {
+  await requireAdmin();
+  const to = text(form, "to").toLowerCase();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(to)) return { error: "email" };
+  if (!mailConfigured()) {
+    await logMail({ kind: "test", recipient: to, ok: false, detail: "smtpOff" });
+    return { error: "smtpOff" };
+  }
+  try {
+    await sendMail({
+      to,
+      subject: "PharmaVault — test email / ایمیل آزمایشی",
+      text: "This is a test email from the PharmaVault admin panel.\nاین یک ایمیل آزمایشی از پنل مدیریت PharmaVault است.",
+      html: '<div style="font-family:Tahoma,Arial,sans-serif;font-size:14px;line-height:2"><p>This is a test email from the PharmaVault admin panel.</p><p dir="rtl">این یک ایمیل آزمایشی از پنل مدیریت PharmaVault است.</p></div>',
+    });
+    await logMail({ kind: "test", recipient: to, ok: true, detail: "sent" });
+    refresh();
+    return { ok: true };
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : String(error);
+    await logMail({ kind: "test", recipient: to, ok: false, detail });
+    refresh();
+    return { error: detail };
+  }
 }

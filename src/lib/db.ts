@@ -37,6 +37,17 @@ create table if not exists password_resets (
   used boolean not null default false,
   created_at timestamptz not null default now()
 );
+-- What happened to each password-recovery request and test email, so the admin can see why a mail did not arrive.
+create table if not exists mail_log (
+  id bigserial primary key,
+  kind text not null,
+  recipient text,
+  user_id bigint references users(id) on delete set null,
+  ok boolean not null,
+  detail text,
+  created_at timestamptz not null default now()
+);
+create index if not exists mail_log_created_idx on mail_log(created_at desc);
 create table if not exists subscriptions (
   id bigserial primary key,
   owner_id bigint not null references users(id),

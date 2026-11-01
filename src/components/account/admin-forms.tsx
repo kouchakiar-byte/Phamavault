@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
-import { addUser, deleteUser, grant, resetPassword, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
+import { addUser, deleteUser, grant, resetPassword, testMail, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
 import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
@@ -66,8 +66,16 @@ export function GrantForm({ locale }: { locale: Locale }) {
   );
 }
 
+/** 12 characters without look-alikes (0/O, 1/l/I), easy to read out over the phone. */
+function randomPassword(): string {
+  const chars = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  const bytes = crypto.getRandomValues(new Uint32Array(12));
+  return Array.from(bytes, (b) => chars[b % chars.length]).join("");
+}
+
 export function ResetPasswordForm({ locale }: { locale: Locale }) {
   const [state, action, pending] = useActionState(resetPassword, {});
+  const [password, setPassword] = useState("");
   return (
     <form action={action} className="grid gap-4 sm:grid-cols-3">
       <div>
@@ -76,7 +84,12 @@ export function ResetPasswordForm({ locale }: { locale: Locale }) {
       </div>
       <div>
         <label className={label} htmlFor="r-password">{t.newPassword[locale]}</label>
-        <input id="r-password" name="password" dir="ltr" required minLength={8} className="field-input mt-1" autoComplete="off" />
+        <div className="mt-1 flex gap-2">
+          <input id="r-password" name="password" dir="ltr" required minLength={8} className="field-input font-mono" autoComplete="off" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <button type="button" onClick={() => setPassword(randomPassword())} className="shrink-0 rounded-full border border-line px-3 text-xs font-semibold text-vault-900 hover:bg-vault-50">
+            {t.generate[locale]}
+          </button>
+        </div>
       </div>
       <div className="flex items-end gap-3">
         <button type="submit" disabled={pending} className="rounded-full bg-vault-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-vault-800 disabled:opacity-60">
@@ -175,6 +188,34 @@ export function DeleteUserButton({ id, locale }: { id: string; locale: Locale })
       <button type="button" onClick={() => setConfirm(false)} className="rounded-md px-2 py-1 text-xs text-muted">
         {t.usersList.cancel[locale]}
       </button>
+    </form>
+  );
+}
+
+export function MailTestForm({ locale, defaultTo }: { locale: Locale; defaultTo: string }) {
+  const [state, action, pending] = useActionState(testMail, {});
+  const m = t.mailLog;
+  const details = m.details as Record<string, (typeof m.details)["sent"]>;
+  const error = state.error
+    ? state.error === "email"
+      ? account.errors.email[locale]
+      : details[state.error]?.[locale] ?? state.error
+    : null;
+  return (
+    <form action={action} className="flex flex-wrap items-end gap-3">
+      <div className="min-w-64 flex-1">
+        <label className={label} htmlFor="mt-to">{m.to[locale]}</label>
+        <input id="mt-to" name="to" type="email" dir="ltr" required defaultValue={defaultTo} className="field-input mt-1" />
+      </div>
+      <button type="submit" disabled={pending} className="rounded-full bg-vault-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-vault-800 disabled:opacity-60">
+        {m.send[locale]}
+      </button>
+      {state.ok && <p className="w-full text-sm text-molecule-700">{m.sentOk[locale]}</p>}
+      {error && (
+        <p className="w-full text-sm text-red-700">
+          {m.failed[locale]}: <span dir="ltr" className="font-mono text-xs">{error}</span>
+        </p>
+      )}
     </form>
   );
 }

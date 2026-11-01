@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense, type ReactNode } from "react";
 import { notFound, redirect } from "next/navigation";
 import { connection } from "next/server";
-import { AddUserForm, DeleteUserButton, GrantForm, ResetPasswordForm, TraceForm } from "@/components/account/admin-forms";
+import { AddUserForm, DeleteUserButton, GrantForm, MailTestForm, ResetPasswordForm, TraceForm } from "@/components/account/admin-forms";
 import { Loading, accountMetadata } from "@/components/account/shell";
 import { BiTitle, Container } from "@/components/ui";
 import { account } from "@/content/account";
@@ -17,6 +17,7 @@ import { recentOrders, recentUsers, stats } from "@/lib/orders";
 import { href } from "@/lib/paths";
 import { paywallEnabled, recentSubscriptions, subscriptionStatus } from "@/lib/subscriptions";
 import { mailConfigured } from "@/lib/mail";
+import { recentMailLog } from "@/lib/mail-log";
 import { onlinePaymentEnabled } from "@/lib/zarinpal";
 import { recentServiceRequests } from "@/lib/service-requests";
 import { bi } from "@/i18n/bi";
@@ -54,7 +55,7 @@ async function Admin({ locale }: { locale: Locale }) {
   if (!user) redirect(`${href(locale, "account/login")}?next=${encodeURIComponent(href(locale, "admin"))}`);
   if (!user.isAdmin) notFound();
 
-  const [numbers, orders, subscriptions, requests, users] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers()]);
+  const [numbers, orders, subscriptions, requests, users, mailLog] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog()]);
   const u = t.usersList;
   const gateway = onlinePaymentEnabled()
     ? `${t.on[locale]}${process.env.ZARINPAL_SANDBOX === "1" ? ` (${t.sandbox[locale]})` : ""}`
@@ -363,6 +364,45 @@ async function Admin({ locale }: { locale: Locale }) {
       <Panel title={t.grant} locale={locale}>
         <p className="-mt-2 mb-5 text-sm text-muted">{t.grantHint[locale]}</p>
         <GrantForm locale={locale} />
+      </Panel>
+
+      <Panel title={t.mailLog.title} locale={locale}>
+        <p className="-mt-2 mb-5 text-sm text-muted">{t.mailLog.lead[locale]}</p>
+        <MailTestForm locale={locale} defaultTo={users.find((x) => x.mobile === user.mobile)?.email ?? ""} />
+        {mailLog.length === 0 ? (
+          <p className="mt-5 text-sm text-muted">{t.mailLog.empty[locale]}</p>
+        ) : (
+          <div className="mt-5 max-h-[24rem] overflow-auto">
+            <table className="db">
+              <thead>
+                <tr>
+                  <th>{t.mailLog.when[locale]}</th>
+                  <th>{t.mailLog.kind[locale]}</th>
+                  <th>{t.mailLog.recipient[locale]}</th>
+                  <th>{t.mailLog.result[locale]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {mailLog.map((m) => {
+                  const known = t.mailLog.details[m.detail as keyof typeof t.mailLog.details];
+                  return (
+                    <tr key={m.id}>
+                      <td className="whitespace-nowrap">{formatDate(m.createdAt, locale)} <span dir="ltr">{m.createdAt.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "Asia/Tehran" })}</span></td>
+                      <td className="whitespace-nowrap">{t.mailLog.kinds[m.kind as keyof typeof t.mailLog.kinds]?.[locale] ?? m.kind}</td>
+                      <td>
+                        {m.name && <span className="block">{m.name}</span>}
+                        <span dir="ltr" className="font-mono text-xs">{m.recipient ?? "—"}</span>
+                      </td>
+                      <td className={m.ok ? "text-molecule-700" : "text-red-700"}>
+                        {known ? known[locale] : <span dir="ltr" className="font-mono text-xs">{m.detail}</span>}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
       </Panel>
 
       <Panel title={t.reset} locale={locale}>
