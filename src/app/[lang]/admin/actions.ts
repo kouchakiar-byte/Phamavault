@@ -4,7 +4,9 @@ import { refresh } from "next/cache";
 import { account } from "@/content/account";
 import { getUser, hashPassword, normalizeMobile } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { setStatus } from "@/lib/orders";
+import { orderWithBuyer, setStatus } from "@/lib/orders";
+import { siteOrigin } from "@/lib/site-origin";
+import { invoiceNumber } from "@/lib/invoice";
 import { normalizePurchase } from "@/lib/pricing";
 import { setRequestHandled } from "@/lib/service-requests";
 import { mailConfigured, sendMail } from "@/lib/mail";
@@ -201,6 +203,44 @@ export async function testMail(_: MailTestState, form: FormData): Promise<MailTe
     const detail = error instanceof Error ? error.message : String(error);
     await logMail({ kind: "test", recipient: to, ok: false, detail });
     refresh();
+    return { error: detail };
+  }
+}
+
+export type InvoiceMailState = { ok?: string; error?: string };
+
+const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+
+/** Emails the buyer a link to the order's pro-forma invoice (they open it signed in). */
+export async function sendInvoice(_: InvoiceMailState, form: FormData): Promise<InvoiceMailState> {
+  await requireAdmin();
+  const order = await orderWithBuyer(text(form, "id"));
+  if (!order) return { error: "notFound" };
+  const { buyer } = order;
+  if (!buyer.email) return { error: "noEmail" };
+  if (!mailConfigured()) {
+    await logMail({ kind: "invoice", recipient: buyer.email, userId: buyer.userId, ok: false, detail: "smtpOff" });
+    return { error: "smtpOff" };
+  }
+  const m = account.invoice.mail;
+  const number = invoiceNumber(order);
+  const link = `${await siteOrigin()}/fa/account/invoice?id=${order.id}`;
+  try {
+    await sendMail({
+      to: buyer.email,
+      subject: m.subject.fa.replace("{n}", number),
+      text: `${m.hello.fa.replace("{name}", buyer.name)}\n\n${m.body.fa}\n${link}\n\n${m.signIn.fa}\n\nPharmaVault — https://pharmavault.ir`,
+      html: `<div dir="rtl" style="font-family:Tahoma,Arial,sans-serif;font-size:14px;line-height:2;color:#12233b">
+<p>${escapeHtml(m.hello.fa.replace("{name}", buyer.name))}</p><p>${m.body.fa} <b>${escapeHtml(number)}</b></p>
+<p><a href="${link}" style="display:inline-block;background:#0b1f3a;color:#fff;text-decoration:none;padding:10px 24px;border-radius:999px;font-weight:bold">${m.button.fa}</a></p>
+<p style="color:#5b6b80;font-size:12px">${m.signIn.fa}</p><p style="color:#5b6b80;font-size:12px">PharmaVault · <span dir="ltr">https://pharmavault.ir</span></p></div>`,
+    });
+    await logMail({ kind: "invoice", recipient: buyer.email, userId: buyer.userId, ok: true, detail: "sent" });
+    refresh();
+    return { ok: buyer.email };
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : String(error);
+    await logMail({ kind: "invoice", recipient: buyer.email, userId: buyer.userId, ok: false, detail });
     return { error: detail };
   }
 }

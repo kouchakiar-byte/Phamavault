@@ -4,7 +4,7 @@ import { db } from "@/lib/db";
  * Outcome of a password-recovery request or a test email. "detail" is a short code
  * (sent, noAccount, noEmail, smtpOff, limited) or the SMTP error text; it never holds a password.
  */
-export async function logMail(entry: { kind: "reset" | "test"; recipient: string | null; userId?: string | null; ok: boolean; detail: string }) {
+export async function logMail(entry: { kind: "reset" | "test" | "invoice"; recipient: string | null; userId?: string | null; ok: boolean; detail: string }) {
   try {
     const pool = await db();
     await pool.query("insert into mail_log (kind, recipient, user_id, ok, detail) values ($1, $2, $3, $4, $5)", [

@@ -9,6 +9,7 @@ import { checkLogin, createPasswordReset, endSession, getUser, hashPassword, nor
 import { databaseConfigured, db } from "@/lib/db";
 import { mailConfigured, sendMail } from "@/lib/mail";
 import { logMail } from "@/lib/mail-log";
+import { siteOrigin } from "@/lib/site-origin";
 import { allow } from "@/lib/rate-limit";
 import { createOrder, setAuthority, setStatus } from "@/lib/orders";
 import { href } from "@/lib/paths";
@@ -145,13 +146,6 @@ export async function logout(form: FormData): Promise<void> {
   redirect(href(localeOf(form)));
 }
 
-/** Address the gateway sends the buyer back to. SITE_URL wins over the request's own host. */
-async function siteOrigin(): Promise<string> {
-  if (process.env.SITE_URL) return process.env.SITE_URL.replace(/\/$/, "");
-  const h = await headers();
-  const host = h.get("x-forwarded-host") ?? h.get("host");
-  return `${h.get("x-forwarded-proto") ?? "https"}://${host}`;
-}
 
 export async function buy(_: FormState, form: FormData): Promise<FormState> {
   const locale = localeOf(form);
