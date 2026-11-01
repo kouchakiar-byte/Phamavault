@@ -311,7 +311,6 @@ function SupplierCard({
   const shown = hitList.length ? hitList : others.slice(0, 8);
   const more = hitList.length ? others : others.slice(8);
   const web = safeUrl(s.web);
-  const src = safeUrl(s.src);
   const dt = "whitespace-nowrap text-muted";
   const dd = "m-0 min-w-0 [overflow-wrap:anywhere]";
   const locked = (
@@ -435,15 +434,6 @@ function SupplierCard({
         >
           {fillQuery(t.searchSite[locale], query)}
         </a>
-      )}
-      {src && (
-        <p className="text-xs text-muted">
-          {t.source[locale]}
-          {s.via ? t.viaSearch[locale] : ""}:{" "}
-          <a href={src} target="_blank" rel="noopener noreferrer" dir="ltr" className="text-molecule-700 hover:underline">
-            {host(src)}
-          </a>
-        </p>
       )}
     </article>
   );
