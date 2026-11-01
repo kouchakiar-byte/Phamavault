@@ -37,6 +37,15 @@ export const copy = {
     ),
   },
   platform: bi("Pharmaceutical Knowledge Hub", "مرکز دانش دارویی"),
+  copyGuard: {
+    title: bi("Copying is for subscribers", "کپی ویژه مشترکان است"),
+    text: bi(
+      "Please place a subscription order on the “Order a subscription” page; copying opens as soon as your subscription is active.",
+      "لطفاً ثبت سفارش اشتراک را از طریق صفحه «ثبت سفارش اشتراک» انجام دهید تا اشتراک شما فعال شود.",
+    ),
+    buy: bi("Order a subscription", "ثبت سفارش اشتراک"),
+    close: bi("Close", "بستن"),
+  },
   slogan: bi("The Pharmaceutical Information Vault", "گنجینه اطلاعات داروسازی"),
   rights: bi(
     "All rights reserved. The content, databases and design of this site belong to the PharmaVault platform. Copying or republishing any of it without crediting PharmaVault (pharmavault.ir) as the source is prohibited and will be pursued under the law.",

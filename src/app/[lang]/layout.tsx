@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Suspense } from "react";
+import { CopyAllowance } from "@/components/copy-allowance";
+import { CopyGuard } from "@/components/copy-guard";
 import { InstallApp } from "@/components/install-app";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -8,6 +11,7 @@ import { copy, siteConfig } from "@/content/site";
 import { localeDirection, locales } from "@/i18n/config";
 import { languageAlternates } from "@/lib/metadata";
 import { getLocale } from "@/i18n/locale";
+import { href } from "@/lib/paths";
 import "../globals.css";
 
 // Fonts are bundled with the site (src/app/fonts, all SIL OFL) rather than fetched
@@ -122,6 +126,18 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
         <SiteFooter />
         <InstallApp locale={locale} />
         <VisitBeacon />
+        <CopyGuard
+          buyHref={href(locale, "account/buy")}
+          labels={{
+            title: copy.copyGuard.title[locale],
+            text: copy.copyGuard.text[locale],
+            buy: copy.copyGuard.buy[locale],
+            close: copy.copyGuard.close[locale],
+          }}
+        />
+        <Suspense fallback={null}>
+          <CopyAllowance />
+        </Suspense>
       </body>
     </html>
   );
