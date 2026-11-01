@@ -2,10 +2,12 @@ import Link from "next/link";
 import { Suspense, type ReactNode } from "react";
 import { notFound, redirect } from "next/navigation";
 import { connection } from "next/server";
-import { AddUserForm, DeleteUserButton, GrantForm, MailTestForm, ResetPasswordForm, TraceForm } from "@/components/account/admin-forms";
+import { AddUserForm, DeleteUserButton, GrantForm, MailTestForm, ResetPasswordForm, SendInvoiceButton, TraceForm } from "@/components/account/admin-forms";
+import { invoiceNumber } from "@/lib/invoice";
 import { Loading, accountMetadata } from "@/components/account/shell";
 import { BiTitle, Container } from "@/components/ui";
 import { account } from "@/content/account";
+import { copy } from "@/content/site";
 import type { Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
@@ -23,7 +25,8 @@ import { recentServiceRequests } from "@/lib/service-requests";
 import { bi } from "@/i18n/bi";
 import { cancelOrder, changeSeats, extend, markOrderPaid, setBlocked, toggleRequestHandled, toggleRevoked } from "./actions";
 
-const { admin: t, dashboard: d } = account;
+const { admin: t, dashboard: d, invoice: inv } = account;
+const copyToman = copy.plans.currency;
 
 const requestLabels = {
   title: bi("Service requests (CTD compilation)", "درخواست‌های خدمات (تدوین CTD)"),
@@ -220,6 +223,65 @@ async function Admin({ locale }: { locale: Locale }) {
       </Panel>
 
       <Panel title={t.orders} locale={locale}>
+        {orders.some((o) => o.status === "pending" && o.method === "invoice") && (
+          <div className="mb-6 space-y-3">
+            <h3 className="font-bold text-vault-900">{inv.pendingTitle[locale]}</h3>
+            <p className="text-sm text-muted">{inv.pendingLead[locale]}</p>
+            {orders
+              .filter((o) => o.status === "pending" && o.method === "invoice")
+              .map((o) => (
+                <div key={o.id} className="rounded-lg border border-capsule-500/40 bg-capsule-400/10 p-4 text-sm">
+                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                    <p className="font-bold text-vault-900">
+                      {inv.title[locale]} {invoiceNumber(o)}
+                    </p>
+                    <p className="text-xs text-muted">{formatDate(o.createdAt, locale)}</p>
+                  </div>
+                  <p className="mt-1">
+                    {o.org ? `${o.org} · ` : ""}
+                    {o.name} ·{" "}
+                    <a href={`tel:${o.mobile}`} dir="ltr" className="font-mono text-molecule-700">
+                      {o.mobile}
+                    </a>
+                    {o.email && (
+                      <>
+                        {" "}·{" "}
+                        <span dir="ltr" className="font-mono text-xs">
+                          {o.email}
+                        </span>
+                      </>
+                    )}
+                  </p>
+                  <p className="text-muted">
+                    {planName(o.plan, locale)} ·{" "}
+                    {o.plan === "team" ? d.users[locale].replace("{n}", formatNumber(o.seats, locale)) : sectionsLabel(o.sections, locale)} ·{" "}
+                    {periodLabel(o.months, locale)} · <b className="text-vault-900">{formatNumber(o.amount, locale)}</b> {copyToman[locale]}
+                  </p>
+                  <div className="mt-3 flex flex-wrap items-start gap-2">
+                    <Link
+                      href={`${href(locale, "account/invoice")}?id=${o.id}`}
+                      className={`${smallButton} bg-vault-900 text-white hover:bg-vault-800`}
+                    >
+                      {inv.open[locale]} / {inv.print[locale]}
+                    </Link>
+                    <SendInvoiceButton locale={locale} id={o.id} disabled={!o.email} />
+                    <form action={markOrderPaid}>
+                      <input type="hidden" name="id" value={o.id} />
+                      <button type="submit" className={`${smallButton} bg-molecule-600 text-white hover:bg-molecule-700`}>
+                        {t.markPaid[locale]}
+                      </button>
+                    </form>
+                    <form action={cancelOrder}>
+                      <input type="hidden" name="id" value={o.id} />
+                      <button type="submit" className={`${smallButton} text-red-700 hover:bg-red-50`}>
+                        {t.cancel[locale]}
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              ))}
+          </div>
+        )}
         <div className="overflow-x-auto">
           <table className="db">
             <thead>
@@ -260,6 +322,11 @@ async function Admin({ locale }: { locale: Locale }) {
                   </td>
                   <td className="num">{o.refId ?? "—"}</td>
                   <td>
+                    {o.method === "invoice" && (
+                      <Link href={`${href(locale, "account/invoice")}?id=${o.id}`} className="mb-1.5 block text-xs font-semibold text-molecule-700 hover:underline">
+                        {inv.open[locale]}
+                      </Link>
+                    )}
                     {o.status === "pending" && (
                       <div className="flex flex-col gap-1.5">
                         <form action={markOrderPaid}>

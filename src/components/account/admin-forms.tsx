@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
-import { addUser, deleteUser, grant, resetPassword, testMail, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
+import { addUser, deleteUser, grant, resetPassword, sendInvoice, testMail, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
 import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
@@ -216,6 +216,27 @@ export function MailTestForm({ locale, defaultTo }: { locale: Locale; defaultTo:
           {m.failed[locale]}: <span dir="ltr" className="font-mono text-xs">{error}</span>
         </p>
       )}
+    </form>
+  );
+}
+
+export function SendInvoiceButton({ locale, id, disabled }: { locale: Locale; id: string; disabled?: boolean }) {
+  const [state, action, pending] = useActionState(sendInvoice, {});
+  const inv = account.invoice;
+  const details = t.mailLog.details as Record<string, (typeof t.mailLog.details)["sent"]>;
+  const error = state.error ? (state.error === "noEmail" ? inv.noEmail[locale] : details[state.error]?.[locale] ?? state.error) : null;
+  return (
+    <form action={action} className="space-y-1">
+      <input type="hidden" name="id" value={id} />
+      <button
+        type="submit"
+        disabled={pending || disabled}
+        className="rounded-md border border-line px-2.5 py-1 text-xs font-semibold text-vault-900 hover:bg-vault-50 disabled:opacity-50"
+      >
+        {inv.send[locale]}
+      </button>
+      {state.ok && <p className="text-xs text-molecule-700">{inv.sent[locale].replace("{email}", state.ok)}</p>}
+      {error && <p className="text-xs text-red-700">{error}</p>}
     </form>
   );
 }

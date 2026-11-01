@@ -81,14 +81,28 @@ export async function ordersFor(userId: string): Promise<Order[]> {
   return rows.map(toOrder);
 }
 
+export type Buyer = { userId: string; mobile: string; name: string; email: string | null; kind: string; org: string | null };
+type BuyerRow = { user_id: string; mobile: string; name: string; email: string | null; kind: string; org: string | null };
+const toBuyer = (r: BuyerRow): Buyer => ({ userId: r.user_id, mobile: r.mobile, name: r.name, email: r.email, kind: r.kind, org: r.org });
+
 /** Latest orders with the buyer, for the admin page. */
-export async function recentOrders(limit = 100): Promise<(Order & { mobile: string; name: string })[]> {
-  const { rows } = await (await db()).query<Row & { mobile: string; name: string }>(
-    `select o.*, u.mobile, u.name from orders o join users u on u.id = o.user_id
+export async function recentOrders(limit = 100): Promise<(Order & Buyer)[]> {
+  const { rows } = await (await db()).query<Row & BuyerRow>(
+    `select o.*, u.mobile, u.name, u.email, u.kind, u.org from orders o join users u on u.id = o.user_id
      order by o.created_at desc limit $1`,
     [limit],
   );
-  return rows.map((r) => ({ ...toOrder(r), mobile: r.mobile, name: r.name }));
+  return rows.map((r) => ({ ...toOrder(r), ...toBuyer(r) }));
+}
+
+/** One order with its buyer, for the pro-forma invoice. */
+export async function orderWithBuyer(orderId: string): Promise<(Order & { buyer: Buyer }) | null> {
+  if (!/^\d+$/.test(orderId)) return null;
+  const { rows } = await (await db()).query<Row & BuyerRow>(
+    `select o.*, u.mobile, u.name, u.email, u.kind, u.org from orders o join users u on u.id = o.user_id where o.id = $1`,
+    [orderId],
+  );
+  return rows[0] ? { ...toOrder(rows[0]), buyer: toBuyer(rows[0]) } : null;
 }
 
 export async function stats(): Promise<{ users: number; active: number; revenue30: number; pending: number }> {

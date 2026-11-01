@@ -136,7 +136,14 @@ function Orders({ orders, locale }: { orders: Order[]; locale: Locale }) {
               <td>{planName(o.plan, locale)}</td>
               <td>{periodLabel(o.months, locale)}</td>
               <td className="num">{formatNumber(o.amount, locale)}</td>
-              <td>{t.orderStatus[o.status][locale]}</td>
+              <td>
+                {t.orderStatus[o.status][locale]}
+                {o.method === "invoice" && (
+                  <Link href={`${href(locale, "account/invoice")}?id=${o.id}`} className="block text-xs font-semibold text-molecule-700 hover:underline">
+                    {account.invoice.open[locale]}
+                  </Link>
+                )}
+              </td>
               <td className="num">{o.refId ?? "—"}</td>
             </tr>
           ))}
