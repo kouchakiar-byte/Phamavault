@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
-import { grant, resetPassword, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
+import { addUser, deleteUser, grant, resetPassword, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
 import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
@@ -109,6 +109,72 @@ export function TraceForm({ locale }: { locale: Locale }) {
         </p>
       )}
       {state.none && <p className="text-sm text-muted">{tr.none[locale]}</p>}
+    </form>
+  );
+}
+
+export function AddUserForm({ locale }: { locale: Locale }) {
+  const [state, action, pending] = useActionState(addUser, {});
+  const [kind, setKind] = useState<"individual" | "company" | "pharmacy">("individual");
+  return (
+    <form action={action} className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div>
+        <label className={label} htmlFor="a-kind">{auth.kind[locale]}</label>
+        <select id="a-kind" name="kind" value={kind} onChange={(e) => setKind(e.target.value as typeof kind)} className="field-input mt-1">
+          {(["individual", "company", "pharmacy"] as const).map((k) => (
+            <option key={k} value={k}>{auth.kinds[k][locale]}</option>
+          ))}
+        </select>
+      </div>
+      <div>
+        <label className={label} htmlFor="a-name">{auth.name[locale]}</label>
+        <input id="a-name" name="name" required maxLength={120} className="field-input mt-1" />
+      </div>
+      <div>
+        <label className={label} htmlFor="a-org">{auth.org[kind][locale]}</label>
+        <input id="a-org" name="org" required={kind !== "individual"} maxLength={160} className="field-input mt-1" />
+      </div>
+      <div>
+        <label className={label} htmlFor="a-mobile">{auth.mobile[locale]}</label>
+        <input id="a-mobile" name="mobile" dir="ltr" required className="field-input mt-1" placeholder="09xxxxxxxxx" />
+      </div>
+      <div>
+        <label className={label} htmlFor="a-email">{auth.email[locale]}</label>
+        <input id="a-email" name="email" type="email" dir="ltr" maxLength={160} className="field-input mt-1" />
+      </div>
+      <div>
+        <label className={label} htmlFor="a-password">{auth.password[locale]}</label>
+        <input id="a-password" name="password" dir="ltr" required minLength={8} className="field-input mt-1" autoComplete="off" />
+      </div>
+      <div className="flex items-end gap-3 sm:col-span-2 lg:col-span-3">
+        <button type="submit" disabled={pending} className="rounded-full bg-vault-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-vault-800 disabled:opacity-60">
+          {t.usersList.add[locale]}
+        </button>
+        <Result state={state} locale={locale} />
+      </div>
+    </form>
+  );
+}
+
+export function DeleteUserButton({ id, locale }: { id: string; locale: Locale }) {
+  const [state, action, pending] = useActionState(deleteUser, {});
+  const [confirm, setConfirm] = useState(false);
+  if (state.error) return <p className="max-w-48 text-xs text-red-700">{account.errors[state.error][locale]}</p>;
+  if (!confirm)
+    return (
+      <button type="button" onClick={() => setConfirm(true)} className="rounded-md px-2.5 py-1 text-xs font-semibold text-red-700 hover:bg-red-50">
+        {t.usersList.remove[locale]}
+      </button>
+    );
+  return (
+    <form action={action} className="flex items-center gap-1">
+      <input type="hidden" name="id" value={id} />
+      <button type="submit" disabled={pending} className="rounded-md bg-red-700 px-2.5 py-1 text-xs font-semibold text-white">
+        {t.usersList.confirmRemove[locale]}
+      </button>
+      <button type="button" onClick={() => setConfirm(false)} className="rounded-md px-2 py-1 text-xs text-muted">
+        {t.usersList.cancel[locale]}
+      </button>
     </form>
   );
 }

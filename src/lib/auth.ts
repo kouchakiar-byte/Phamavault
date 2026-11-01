@@ -93,20 +93,20 @@ export const getUser = cache(async (): Promise<User | null> => {
   if (!token || !databaseConfigured()) return null;
   const { rows } = await (await db()).query<{ id: string; mobile: string; name: string }>(
     `select u.id, u.mobile, u.name from sessions s join users u on u.id = s.user_id
-     where s.token_hash = $1 and s.expires_at > now()`,
+     where s.token_hash = $1 and s.expires_at > now() and not u.blocked`,
     [sha256(token)],
   );
   const row = rows[0];
   return row ? { ...row, isAdmin: isAdminMobile(row.mobile) } : null;
 });
 
-export type LoginResult = "ok" | "invalid" | "locked";
+export type LoginResult = "ok" | "invalid" | "locked" | "blocked";
 
 /** Checks the password, locking the account for a while after repeated failures. */
 export async function checkLogin(mobile: string, password: string): Promise<{ result: LoginResult; userId?: string }> {
   const pool = await db();
-  const { rows } = await pool.query<{ id: string; password_hash: string; locked: boolean }>(
-    "select id, password_hash, coalesce(locked_until > now(), false) as locked from users where mobile = $1",
+  const { rows } = await pool.query<{ id: string; password_hash: string; locked: boolean; blocked: boolean }>(
+    "select id, password_hash, coalesce(locked_until > now(), false) as locked, blocked from users where mobile = $1",
     [mobile],
   );
   const user = rows[0];
@@ -115,6 +115,7 @@ export async function checkLogin(mobile: string, password: string): Promise<{ re
     await hashPassword(password);
     return { result: "invalid" };
   }
+  if (user.blocked) return { result: "blocked" };
   if (user.locked) return { result: "locked" };
   if (!(await verifyPassword(password, user.password_hash))) {
     await pool.query(
@@ -127,4 +128,40 @@ export async function checkLogin(mobile: string, password: string): Promise<{ re
   }
   await pool.query("update users set failed_logins = 0, locked_until = null where id = $1", [user.id]);
   return { result: "ok", userId: user.id };
+}
+
+const RESET_MINUTES = 60;
+
+/** A one-time password-reset link token for the user, valid for an hour; only its hash is stored. */
+export async function createPasswordReset(userId: string): Promise<string> {
+  const token = randomBytes(32).toString("base64url");
+  const pool = await db();
+  await pool.query("delete from password_resets where user_id = $1 or expires_at < now()", [userId]);
+  await pool.query("insert into password_resets (token_hash, user_id, expires_at) values ($1, $2, now() + make_interval(mins => $3))", [
+    sha256(token),
+    userId,
+    RESET_MINUTES,
+  ]);
+  return token;
+}
+
+/** Whether a reset link is still usable. */
+export async function resetTokenValid(token: string): Promise<boolean> {
+  if (!token || !databaseConfigured()) return false;
+  const { rows } = await (await db()).query("select 1 from password_resets where token_hash = $1 and not used and expires_at > now()", [sha256(token)]);
+  return rows.length > 0;
+}
+
+/** Sets a new password from a reset link: the link is used up, the lock cleared and every session ended. Returns the user id. */
+export async function applyPasswordReset(token: string, password: string): Promise<string | null> {
+  const pool = await db();
+  const { rows } = await pool.query<{ user_id: string }>(
+    "update password_resets set used = true where token_hash = $1 and not used and expires_at > now() returning user_id",
+    [sha256(token)],
+  );
+  const userId = rows[0]?.user_id;
+  if (!userId) return null;
+  await pool.query("update users set password_hash = $2, failed_logins = 0, locked_until = null where id = $1 and not blocked", [userId, await hashPassword(password)]);
+  await pool.query("delete from sessions where user_id = $1", [userId]);
+  return userId;
 }

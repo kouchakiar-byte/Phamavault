@@ -24,6 +24,19 @@ create table if not exists sessions (
   expires_at timestamptz not null
 );
 create index if not exists sessions_user_idx on sessions(user_id);
+-- Sign-up details: email (for password recovery), account kind and the company or pharmacy name.
+alter table users add column if not exists email text;
+alter table users add column if not exists kind text not null default 'individual';
+alter table users add column if not exists org text;
+-- An admin can block an account: it can no longer sign in and its sessions end.
+alter table users add column if not exists blocked boolean not null default false;
+create table if not exists password_resets (
+  token_hash text primary key,
+  user_id bigint not null references users(id) on delete cascade,
+  expires_at timestamptz not null,
+  used boolean not null default false,
+  created_at timestamptz not null default now()
+);
 create table if not exists subscriptions (
   id bigserial primary key,
   owner_id bigint not null references users(id),

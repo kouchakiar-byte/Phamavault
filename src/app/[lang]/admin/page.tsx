@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense, type ReactNode } from "react";
 import { notFound, redirect } from "next/navigation";
 import { connection } from "next/server";
-import { GrantForm, ResetPasswordForm, TraceForm } from "@/components/account/admin-forms";
+import { AddUserForm, DeleteUserButton, GrantForm, ResetPasswordForm, TraceForm } from "@/components/account/admin-forms";
 import { Loading, accountMetadata } from "@/components/account/shell";
 import { BiTitle, Container } from "@/components/ui";
 import { account } from "@/content/account";
@@ -16,10 +16,11 @@ import { planName, periodLabel, sectionsLabel } from "@/lib/labels";
 import { recentOrders, recentUsers, stats } from "@/lib/orders";
 import { href } from "@/lib/paths";
 import { paywallEnabled, recentSubscriptions, subscriptionStatus } from "@/lib/subscriptions";
+import { mailConfigured } from "@/lib/mail";
 import { onlinePaymentEnabled } from "@/lib/zarinpal";
 import { recentServiceRequests } from "@/lib/service-requests";
 import { bi } from "@/i18n/bi";
-import { cancelOrder, changeSeats, extend, markOrderPaid, toggleRequestHandled, toggleRevoked } from "./actions";
+import { cancelOrder, changeSeats, extend, markOrderPaid, setBlocked, toggleRequestHandled, toggleRevoked } from "./actions";
 
 const { admin: t, dashboard: d } = account;
 
@@ -71,7 +72,7 @@ async function Admin({ locale }: { locale: Locale }) {
         </Link>
         <p className="text-sm text-muted">
           {t.paywall[locale]}: <b className="text-vault-900">{paywallEnabled() ? t.on[locale] : t.off[locale]}</b> · {t.gateway[locale]}:{" "}
-          <b className="text-vault-900">{gateway}</b>
+          <b className="text-vault-900">{gateway}</b> · {t.mail[locale]}: <b className="text-vault-900">{mailConfigured() ? t.on[locale] : t.off[locale]}</b>
         </p>
       </div>
 
@@ -101,24 +102,48 @@ async function Admin({ locale }: { locale: Locale }) {
                 <tr>
                   <th>{u.name[locale]}</th>
                   <th>{u.mobile[locale]}</th>
+                  <th>{u.email[locale]}</th>
                   <th>{u.joined[locale]}</th>
                   <th>{u.lastSeen[locale]}</th>
                   <th>{u.subscription[locale]}</th>
+                  <th>{u.status[locale]}</th>
                 </tr>
               </thead>
               <tbody>
                 {users.map((x) => (
-                  <tr key={x.id}>
-                    <td>{x.name}</td>
+                  <tr key={x.id} className={x.blocked ? "bg-red-50/60" : undefined}>
+                    <td>
+                      {x.name}
+                      <span className="block text-xs text-muted">
+                        {account.auth.kinds[x.kind as keyof typeof account.auth.kinds]?.[locale] ?? x.kind}
+                        {x.org ? ` · ${x.org}` : ""}
+                      </span>
+                    </td>
                     <td>
                       <a href={`tel:${x.mobile}`} className="font-mono text-molecule-700 hover:underline" dir="ltr">
                         {x.mobile}
                       </a>
                     </td>
+                    <td className="font-mono text-xs" dir="ltr">{x.email ?? "—"}</td>
                     <td className="whitespace-nowrap">{formatDate(x.createdAt, locale)}</td>
                     <td className="whitespace-nowrap">{x.lastSeen ? formatDate(x.lastSeen, locale) : "—"}</td>
                     <td className={x.activeSubscriptions ? "font-semibold text-molecule-700" : "text-muted"}>
                       {x.activeSubscriptions ? u.active[locale] : u.none2[locale]}
+                    </td>
+                    <td>
+                      {x.mobile !== user.mobile && (
+                      <div className="flex flex-wrap items-center gap-1">
+                        {x.blocked && <span className="text-xs font-semibold text-red-700">{u.blocked[locale]}</span>}
+                        <form action={setBlocked}>
+                          <input type="hidden" name="id" value={x.id} />
+                          <input type="hidden" name="blocked" value={x.blocked ? "0" : "1"} />
+                          <button type="submit" className={`${smallButton} border border-line hover:border-molecule-500`}>
+                            {x.blocked ? u.unblock[locale] : u.block[locale]}
+                          </button>
+                        </form>
+                        <DeleteUserButton id={x.id} locale={locale} />
+                      </div>
+                      )}
                     </td>
                   </tr>
                 ))}
@@ -126,6 +151,13 @@ async function Admin({ locale }: { locale: Locale }) {
             </table>
           </div>
         )}
+      </Panel>
+
+      <p className="-mt-4 text-xs text-muted">{u.blockNote[locale]}</p>
+
+      <Panel title={u.addTitle} locale={locale}>
+        <p className="mb-4 text-sm text-muted">{u.addLead[locale]}</p>
+        <AddUserForm locale={locale} />
       </Panel>
 
       <Panel title={t.trace.title} locale={locale}>
