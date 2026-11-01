@@ -5,8 +5,10 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { account } from "@/content/account";
 import { hasLocale, type Locale } from "@/i18n/config";
-import { checkLogin, endSession, getUser, hashPassword, normalizeMobile, startSession } from "@/lib/auth";
+import { checkLogin, createPasswordReset, endSession, getUser, hashPassword, normalizeMobile, startSession, applyPasswordReset } from "@/lib/auth";
 import { databaseConfigured, db } from "@/lib/db";
+import { mailConfigured, sendMail } from "@/lib/mail";
+import { allow } from "@/lib/rate-limit";
 import { createOrder, setAuthority, setStatus } from "@/lib/orders";
 import { href } from "@/lib/paths";
 import { normalizePurchase, totalPrice } from "@/lib/pricing";
@@ -26,24 +28,95 @@ function nextPath(locale: Locale, value: string): string {
   return value.startsWith(`/${locale}/`) && !value.startsWith("//") && !value.includes("\\") ? value : href(locale, "account");
 }
 
+const ACCOUNT_KINDS = ["individual", "company", "pharmacy"] as const;
+type AccountKind = (typeof ACCOUNT_KINDS)[number];
+
+/** A plausible email address, lower-cased, or null. */
+const email = (value: string) => {
+  const v = value.trim().toLowerCase().slice(0, 160);
+  return /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/.test(v) ? v : null;
+};
+
 export async function register(_: FormState, form: FormData): Promise<FormState> {
   const locale = localeOf(form);
   if (!databaseConfigured()) return { error: "unavailable" };
   const name = text(form, "name").slice(0, 120);
   const mobile = normalizeMobile(text(form, "mobile"));
+  const mail = email(text(form, "email"));
+  const kindValue = text(form, "kind");
+  const kind: AccountKind = (ACCOUNT_KINDS as readonly string[]).includes(kindValue) ? (kindValue as AccountKind) : "individual";
+  // The company or pharmacy name is required for those accounts; optional for individuals.
+  const org = text(form, "org").slice(0, 160) || null;
   const password = String(form.get("password") ?? "");
   if (!name) return { error: "name" };
   if (!mobile) return { error: "mobile" };
+  if (!mail) return { error: "email" };
+  if (kind !== "individual" && !org) return { error: kind === "company" ? "company" : "pharmacy" };
   if (password.length < 8) return { error: "password" };
   if (password !== String(form.get("passwordRepeat") ?? "")) return { error: "mismatch" };
 
   const { rows } = await (await db()).query<{ id: string }>(
-    "insert into users (mobile, name, password_hash) values ($1, $2, $3) on conflict (mobile) do nothing returning id",
-    [mobile, name, await hashPassword(password)],
+    `insert into users (mobile, name, password_hash, email, kind, org) values ($1, $2, $3, $4, $5, $6)
+     on conflict (mobile) do nothing returning id`,
+    [mobile, name, await hashPassword(password), mail, kind, org],
   );
   if (!rows[0]) return { error: "taken" };
   await startSession(rows[0].id);
   redirect(nextPath(locale, text(form, "next")));
+}
+
+/**
+ * Emails a one-hour reset link to the address on the account found by mobile number or email.
+ * The answer is the same whether or not an account exists, so the form cannot be used to test numbers.
+ */
+export async function forgotPassword(_: FormState, form: FormData): Promise<FormState> {
+  const locale = localeOf(form);
+  if (!databaseConfigured()) return { error: "unavailable" };
+  const h = await headers();
+  const ip = h.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+  if (!allow(`forgot:${ip}`, 5, 15 * 60_000)) return { error: "tooMany" };
+  const value = text(form, "identifier");
+  const mobile = normalizeMobile(value);
+  const mail = email(value);
+  if (!mobile && !mail) return { error: "identifier" };
+  const { rows } = await (await db()).query<{ id: string; name: string; email: string | null }>(
+    "select id, name, email from users where not blocked and (mobile = $1 or lower(email) = $2) limit 1",
+    [mobile, mail],
+  );
+  const user = rows[0];
+  if (user?.email && allow(`forgot:u:${user.id}`, 3, 60 * 60_000)) {
+    if (!mailConfigured()) console.error("password reset requested but SMTP is not configured");
+    else {
+      const token = await createPasswordReset(user.id);
+      const link = `${await siteOrigin()}${href(locale, "account/reset")}?token=${token}`;
+      const m = account.reset.mail;
+      await sendMail({
+        to: user.email,
+        subject: m.subject[locale],
+        text: `${m.hello[locale].replace("{name}", user.name)}\n\n${m.body[locale]}\n${link}\n\n${m.ignore[locale]}\n\nPharmaVault — https://pharmavault.ir`,
+        html: `<div dir="${locale === "fa" ? "rtl" : "ltr"}" style="font-family:Tahoma,Arial,sans-serif;font-size:14px;line-height:2;color:#12233b">
+<p>${m.hello[locale].replace("{name}", escapeHtml(user.name))}</p><p>${m.body[locale]}</p>
+<p><a href="${link}" style="display:inline-block;background:#0b1f3a;color:#fff;text-decoration:none;padding:10px 24px;border-radius:999px;font-weight:bold">${m.button[locale]}</a></p>
+<p style="color:#5b6b80;font-size:12px">${m.ignore[locale]}</p><p style="color:#5b6b80;font-size:12px">PharmaVault · <span dir="ltr">https://pharmavault.ir</span></p></div>`,
+      }).catch((error) => console.error("password reset email failed", error));
+    }
+  }
+  return { ok: true };
+}
+
+const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
+
+/** Sets the new password from a reset link, then signs the user in. */
+export async function setNewPassword(_: FormState, form: FormData): Promise<FormState> {
+  const locale = localeOf(form);
+  if (!databaseConfigured()) return { error: "unavailable" };
+  const password = String(form.get("password") ?? "");
+  if (password.length < 8) return { error: "password" };
+  if (password !== String(form.get("passwordRepeat") ?? "")) return { error: "mismatch" };
+  const userId = await applyPasswordReset(text(form, "token"), password);
+  if (!userId) return { error: "resetExpired" };
+  await startSession(userId);
+  redirect(href(locale, "account"));
 }
 
 export async function login(_: FormState, form: FormData): Promise<FormState> {
@@ -52,6 +125,7 @@ export async function login(_: FormState, form: FormData): Promise<FormState> {
   const mobile = normalizeMobile(text(form, "mobile"));
   if (!mobile) return { error: "mobile" };
   const { result, userId } = await checkLogin(mobile, String(form.get("password") ?? ""));
+  if (result === "blocked") return { error: "blocked" };
   if (result === "locked") return { error: "locked" };
   if (result !== "ok" || !userId) return { error: "login" };
   await startSession(userId);

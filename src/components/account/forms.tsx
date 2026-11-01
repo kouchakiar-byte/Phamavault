@@ -2,7 +2,7 @@
 
 import { startTransition, useActionState, useState, type ReactNode } from "react";
 import { Check } from "lucide-react";
-import { addTeamMember, buy, login, register, type FormState } from "@/app/[lang]/account/actions";
+import { addTeamMember, buy, forgotPassword, login, register, setNewPassword, type FormState } from "@/app/[lang]/account/actions";
 import { account } from "@/content/account";
 import { sections } from "@/content/sections";
 import { copy } from "@/content/site";
@@ -76,13 +76,30 @@ export function LoginForm({ locale }: { locale: Locale }) {
   );
 }
 
+type Kind = "individual" | "company" | "pharmacy";
+
 export function RegisterForm({ locale }: { locale: Locale }) {
   const [state, action, pending] = useActionState(register, {});
+  const [kind, setKind] = useState<Kind>("individual");
   return (
     <form action={withNext(action)} className="space-y-5">
       <input type="hidden" name="lang" value={locale} />
+      <fieldset>
+        <legend className="block text-sm font-medium text-vault-900">{auth.kind[locale]}</legend>
+        <div className="mt-1.5 grid grid-cols-3 gap-2">
+          {(["individual", "company", "pharmacy"] as const).map((k) => (
+            <label key={k} className={`${pill(kind === k)} px-2 text-center`}>
+              <input type="radio" name="kind" value={k} checked={kind === k} onChange={() => setKind(k)} className="sr-only" />
+              {auth.kinds[k][locale]}
+            </label>
+          ))}
+        </div>
+      </fieldset>
       <Field label={auth.name[locale]} name="name" autoComplete="name" required maxLength={120} />
+      {/* Company and pharmacy accounts need the organisation's name; for individuals it is optional. */}
+      <Field key={kind} label={auth.org[kind][locale]} name="org" autoComplete="organization" required={kind !== "individual"} maxLength={160} />
       <Field label={auth.mobile[locale]} hint={auth.mobileHint[locale]} name="mobile" inputMode="tel" autoComplete="tel" dir="ltr" required />
+      <Field label={auth.email[locale]} hint={auth.emailHint[locale]} name="email" type="email" autoComplete="email" dir="ltr" required maxLength={160} />
       <Field
         label={auth.password[locale]}
         hint={auth.passwordHint[locale]}
@@ -96,6 +113,41 @@ export function RegisterForm({ locale }: { locale: Locale }) {
       <Field label={auth.passwordRepeat[locale]} name="passwordRepeat" type="password" autoComplete="new-password" dir="ltr" required />
       <Message state={state} locale={locale} />
       <Submit pending={pending}>{auth.register[locale]}</Submit>
+    </form>
+  );
+}
+
+export function ForgotForm({ locale }: { locale: Locale }) {
+  const [state, action, pending] = useActionState(forgotPassword, {});
+  return (
+    <form action={action} className="space-y-5">
+      <input type="hidden" name="lang" value={locale} />
+      <Field label={account.reset.identifier[locale]} name="identifier" autoComplete="username" dir="ltr" required maxLength={160} />
+      <Message state={state} locale={locale} ok={account.reset.sent[locale]} />
+      {!state.ok && <Submit pending={pending}>{account.reset.send[locale]}</Submit>}
+    </form>
+  );
+}
+
+export function NewPasswordForm({ locale, token }: { locale: Locale; token: string }) {
+  const [state, action, pending] = useActionState(setNewPassword, {});
+  return (
+    <form action={action} className="space-y-5">
+      <input type="hidden" name="lang" value={locale} />
+      <input type="hidden" name="token" value={token} />
+      <Field
+        label={auth.password[locale]}
+        hint={auth.passwordHint[locale]}
+        name="password"
+        type="password"
+        autoComplete="new-password"
+        minLength={8}
+        dir="ltr"
+        required
+      />
+      <Field label={auth.passwordRepeat[locale]} name="passwordRepeat" type="password" autoComplete="new-password" dir="ltr" required />
+      <Message state={state} locale={locale} />
+      <Submit pending={pending}>{account.reset.save[locale]}</Submit>
     </form>
   );
 }

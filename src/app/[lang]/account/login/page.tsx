@@ -20,7 +20,12 @@ async function Login({ locale, searchParams }: { locale: Locale; searchParams: P
   return (
     <>
       <LoginForm locale={locale} />
-      <p className="mt-6 text-center text-sm text-muted">
+      <p className="mt-4 text-center text-sm">
+        <Link href={href(locale, "account/forgot")} className="font-semibold text-molecule-700 hover:text-molecule-600">
+          {auth.forgot[locale]}
+        </Link>
+      </p>
+      <p className="mt-4 text-center text-sm text-muted">
         {auth.noAccount[locale]}{" "}
         <Link href={register} className="font-semibold text-molecule-700 hover:text-molecule-600">
           {auth.register[locale]}
@@ -38,7 +43,7 @@ export default async function LoginPage({ searchParams }: PageProps<"/[lang]/acc
         <Login locale={locale} searchParams={searchParams} />
       </Suspense>
       <p className="mt-6 border-t border-line pt-5 text-xs leading-relaxed text-muted">
-        {auth.oneDevice[locale]} {auth.forgot[locale]}
+        {auth.oneDevice[locale]}
       </p>
     </AccountShell>
   );
