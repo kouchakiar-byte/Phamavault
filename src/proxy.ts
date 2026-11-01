@@ -3,6 +3,7 @@ import excipients from "@/data/excipients.json";
 import sops from "@/data/sops.json";
 import { LOCALE_COOKIE, defaultLocale, hasLocale, type Locale } from "@/i18n/config";
 import { excipientSlug } from "@/lib/excipient-slug";
+import { isAiBot } from "@/lib/ai-bots";
 import { allow, clientIp } from "@/lib/rate-limit";
 
 function preferredLocale(request: NextRequest): Locale {
@@ -58,6 +59,13 @@ function overLimit(request: NextRequest): boolean {
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  // AI training crawlers are refused outright; robots.txt (not matched here) still tells them so politely.
+  if (isAiBot(request.headers.get("user-agent") ?? "")) {
+    return new NextResponse("Automated collection of this site for AI training is not permitted.", {
+      status: 403,
+      headers: { "Content-Type": "text/plain; charset=utf-8", "X-Robots-Tag": "noai, noimageai" },
+    });
+  }
   if (overLimit(request)) {
     return new NextResponse("تعداد درخواست‌ها از این نشانی بیش از حد مجاز است. لطفاً چند دقیقه دیگر دوباره تلاش کنید.\nToo many requests. Please try again in a few minutes.", {
       status: 429,
