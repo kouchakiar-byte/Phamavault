@@ -8,6 +8,7 @@ import { hasLocale, type Locale } from "@/i18n/config";
 import { checkLogin, createPasswordReset, endSession, getUser, hashPassword, normalizeMobile, startSession, applyPasswordReset } from "@/lib/auth";
 import { databaseConfigured, db } from "@/lib/db";
 import { mailConfigured, sendMail } from "@/lib/mail";
+import { logMail } from "@/lib/mail-log";
 import { allow } from "@/lib/rate-limit";
 import { createOrder, setAuthority, setStatus } from "@/lib/orders";
 import { href } from "@/lib/paths";
@@ -84,12 +85,15 @@ export async function forgotPassword(_: FormState, form: FormData): Promise<Form
     [mobile, mail],
   );
   const user = rows[0];
-  if (user?.email && allow(`forgot:u:${user.id}`, 3, 60 * 60_000)) {
-    if (!mailConfigured()) console.error("password reset requested but SMTP is not configured");
-    else {
-      const token = await createPasswordReset(user.id);
-      const link = `${await siteOrigin()}${href(locale, "account/reset")}?token=${token}`;
-      const m = account.reset.mail;
+  if (!user) await logMail({ kind: "reset", recipient: value, ok: false, detail: "noAccount" });
+  else if (!user.email) await logMail({ kind: "reset", recipient: value, userId: user.id, ok: false, detail: "noEmail" });
+  else if (!allow(`forgot:u:${user.id}`, 3, 60 * 60_000)) await logMail({ kind: "reset", recipient: user.email, userId: user.id, ok: false, detail: "limited" });
+  else if (!mailConfigured()) await logMail({ kind: "reset", recipient: user.email, userId: user.id, ok: false, detail: "smtpOff" });
+  else {
+    const token = await createPasswordReset(user.id);
+    const link = `${await siteOrigin()}${href(locale, "account/reset")}?token=${token}`;
+    const m = account.reset.mail;
+    try {
       await sendMail({
         to: user.email,
         subject: m.subject[locale],
@@ -98,7 +102,11 @@ export async function forgotPassword(_: FormState, form: FormData): Promise<Form
 <p>${m.hello[locale].replace("{name}", escapeHtml(user.name))}</p><p>${m.body[locale]}</p>
 <p><a href="${link}" style="display:inline-block;background:#0b1f3a;color:#fff;text-decoration:none;padding:10px 24px;border-radius:999px;font-weight:bold">${m.button[locale]}</a></p>
 <p style="color:#5b6b80;font-size:12px">${m.ignore[locale]}</p><p style="color:#5b6b80;font-size:12px">PharmaVault · <span dir="ltr">https://pharmavault.ir</span></p></div>`,
-      }).catch((error) => console.error("password reset email failed", error));
+      });
+      await logMail({ kind: "reset", recipient: user.email, userId: user.id, ok: true, detail: "sent" });
+    } catch (error) {
+      console.error("password reset email failed", error);
+      await logMail({ kind: "reset", recipient: user.email, userId: user.id, ok: false, detail: error instanceof Error ? error.message : String(error) });
     }
   }
   return { ok: true };
