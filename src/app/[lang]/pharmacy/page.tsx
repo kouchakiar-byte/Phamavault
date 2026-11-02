@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeftRight, BookOpen, ExternalLink, FlaskConical, Pill } from "lucide-react";
+import { ArrowLeftRight, Baby, BookOpen, ExternalLink, FileText, FlaskConical, Leaf, Pill } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { BudCalculator } from "@/components/pharmacy/bud-calculator";
 import { CompoundingBasics, CompoundingTables } from "@/components/pharmacy/compounding-guide";
@@ -8,6 +8,7 @@ import { IranDrugSearch } from "@/components/pharmacy/iran-drug-search";
 import { OrangeBookSearch } from "@/components/pharmacy/orange-book-search";
 import { Container } from "@/components/ui";
 import { compounding, compoundingGuide, interactionsCopy, iranDrugs, orangeBook, pharmacyPage, type Ref } from "@/content/pharmacy";
+import { leafletsCopy, pedDoseCopy, supplementsCopy, toolsCopy } from "@/content/pharmacy-tools";
 import type { Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
@@ -69,6 +70,11 @@ function LinkCards({ links, locale }: { links: { label: string; url: string; not
 }
 
 const q = pharmacyPage.quick;
+const counterTools = [
+  { copy: leafletsCopy, path: "pharmacy/leaflets", icon: FileText },
+  { copy: pedDoseCopy, path: "pharmacy/pediatric-dose", icon: Baby },
+  { copy: supplementsCopy, path: "pharmacy/supplements", icon: Leaf },
+];
 const tools = [
   { section: interactionsCopy, icon: ArrowLeftRight },
   { section: iranDrugs, icon: Pill },
@@ -103,6 +109,22 @@ function QuickAccess({ locale }: { locale: Locale }) {
               </span>
               <span className="text-sm leading-snug">{section.title[locale]}</span>
             </a>
+          </li>
+        ))}
+      </ul>
+      <h3 className="mt-5 text-sm font-bold text-vault-900">{toolsCopy.title[locale]}</h3>
+      <ul className="mt-3 grid gap-3 sm:grid-cols-3">
+        {counterTools.map(({ copy: c, path, icon: Icon }) => (
+          <li key={path}>
+            <Link
+              href={href(locale, path)}
+              className="flex h-full items-center gap-3 rounded-2xl border border-molecule-500/30 bg-molecule-50/60 px-4 py-3 font-bold text-vault-900 transition hover:border-molecule-500"
+            >
+              <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-molecule-600 text-white">
+                <Icon className="size-4" aria-hidden="true" />
+              </span>
+              <span className="text-sm leading-snug">{c.title[locale]}</span>
+            </Link>
           </li>
         ))}
       </ul>
