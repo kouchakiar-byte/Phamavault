@@ -5,6 +5,10 @@ import dissolutionPage1 from "@/assets/handbooks/dissolution-page-1.webp";
 import dissolutionPage2 from "@/assets/handbooks/dissolution-page-2.webp";
 import dissolutionPage3 from "@/assets/handbooks/dissolution-page-3.webp";
 import hplcCover from "@/assets/handbooks/hplc-cover.webp";
+import validationCover from "@/assets/handbooks/validation-cover.webp";
+import validationPage1 from "@/assets/handbooks/validation-page-1.webp";
+import validationPage2 from "@/assets/handbooks/validation-page-2.webp";
+import validationPage3 from "@/assets/handbooks/validation-page-3.webp";
 import hplcPage1 from "@/assets/handbooks/hplc-page-1.webp";
 import hplcPage2 from "@/assets/handbooks/hplc-page-2.webp";
 import hplcPage3 from "@/assets/handbooks/hplc-page-3.webp";
@@ -31,6 +35,40 @@ export type FreeHandbook = {
 
 /** Weekly handbooks, newest first. Only the newest is free; earlier issues are for subscribers. */
 export const freeHandbooks: FreeHandbook[] = [
+  {
+    slug: "validation",
+    issue: 3,
+    published: "2026-11-02",
+    title: bi("Validation of analytical procedures — an applied handbook", "راهنمای کاربردی صحه‌گذاری روش‌های آنالیز (Validation)"),
+    subtitle: bi(
+      "From ICH Q2(R2) and Q14 to verification and method transfer: specificity and forced degradation, range and response, accuracy and precision, DL and QL, robustness and system suitability, case studies and worked calculations.",
+      "از ICH Q2(R2) و Q14 تا Verification و انتقال روش: Specificity و Forced degradation، Range و Response، Accuracy و Precision، DL و QL، Robustness و System suitability، مطالعات موردی و مسائل محاسباتی حل‌شده.",
+    ),
+    pdf: "pharmavault-validation-handbook.pdf",
+    sizeMb: 1.7,
+    pages: 44,
+    cover: validationCover,
+    coverAlt: bi("Cover of the PharmaVault method validation handbook", "جلد هندبوک صحه‌گذاری روش‌های آنالیز فارماوالت"),
+    samples: [validationPage1, validationPage2, validationPage3],
+    stats: [
+      { value: 44, label: bi("pages", "صفحه") },
+      { value: 9, label: bi("chapters", "فصل") },
+      { value: 23, label: bi("tables", "جدول") },
+      { value: 10, label: bi("case studies", "مطالعه موردی") },
+    ],
+    chapters: [
+      bi("Regulatory framework and procedure lifecycle: ICH Q2(R2), Q14, USP <1225>, <1226>, <1224>, <1220>", "چارچوب مقررات و چرخه عمر روش: ICH Q2(R2)، Q14 و USP <1225>، <1226>، <1224> و <1220>"),
+      bi("Planning, protocol and documentation", "برنامه‌ریزی، پروتکل و مستندسازی"),
+      bi("Specificity and forced degradation", "Specificity و Forced degradation"),
+      bi("Range and response (linearity)", "Range و Response (Linearity)"),
+      bi("Accuracy and precision", "Accuracy و Precision"),
+      bi("DL, QL, robustness and system suitability", "DL، QL، Robustness و System suitability"),
+      bi("Procedure types, verification, transfer and revalidation", "ملاحظات هر نوع روش، Verification، انتقال روش و Revalidation"),
+      bi("10 case studies", "10 مطالعه موردی"),
+      bi("Worked calculations", "مسائل محاسباتی حل‌شده"),
+      bi("Appendices: checklist, quick criteria, 25 questions, glossary, references", "پیوست‌ها: چک‌لیست، جدول سریع معیارها، 25 پرسش، واژه‌نامه و رفرنس‌ها"),
+    ],
+  },
   {
     slug: "dissolution",
     issue: 2,
