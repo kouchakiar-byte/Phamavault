@@ -1,4 +1,5 @@
 import { chapter, h2, h3, p, ul, box, table, fig, eq, svg, T, C } from "../lib.mjs";
+import { recoveryPlot, ipDesign } from "../figs.mjs";
 
 /** Four targets: accuracy versus precision. */
 const targets = () => {
@@ -45,6 +46,7 @@ ${table(
   ],
   { cap: "<b>جدول 5-1.</b> معیارهای متداول Accuracy؛ معیار نهایی در پروتکل و بر اساس هدف روش تعیین می‌شود." },
 )}
+${fig(recoveryPlot(), "5-2", "میانگین Recovery هر سطح با فاصله اطمینان 95 درصد در برابر محدوده پذیرش 98.0 تا 102.0 درصد؛ داده‌های مسئله 1 فصل 9.")}
 ${h2("Precision")}
 ${table(
   ["سطح", "شرایط", "طراحی رایج"],
@@ -58,6 +60,7 @@ ${table(
 ${p(
   "Repeatability فقط پراکندگی درون یک Run را می‌سنجد و همیشه خوش‌بینانه است. Intermediate precision پراکندگی واقعی در استفاده روزمره را نشان می‌دهد و همان چیزی است که در طول عمر روش با آن روبه‌رو می‌شویم. طراحی آن باید منابع واقعی تغییر در آزمایشگاه را پوشش دهد: اگر آزمایشگاه دو دستگاه HPLC از دو سازنده دارد، Intermediate precision بدون دستگاه دوم ناقص است.",
 )}
+${fig(ipDesign(), "5-3", "یک طراحی ماتریسی برای Intermediate precision: با چهار Run، اثر روز، تحلیل‌گر، دستگاه و بچ ستون هم‌زمان پوشش داده می‌شود و اجزای واریانس با ANOVA برآورد می‌شوند.")}
 ${eq("RSD (%) = 100 × s / <span style='text-decoration:overline'>x</span> ;  s = √[Σ(xᵢ − <span style='text-decoration:overline'>x</span>)² / (n − 1)]", "انحراف معیار نسبی")}
 ${table(
   ["نوع روش", "Repeatability (رایج)", "Intermediate precision (رایج)"],

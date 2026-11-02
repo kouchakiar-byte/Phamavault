@@ -37,6 +37,15 @@ create table if not exists password_resets (
   used boolean not null default false,
   created_at timestamptz not null default now()
 );
+-- Handbook PDF downloads: one row per download (repeats from the same address within 10 minutes are not counted).
+create table if not exists handbook_downloads (
+  id bigserial primary key,
+  slug text not null,
+  ip_hash text not null,
+  user_id bigint references users(id) on delete set null,
+  created_at timestamptz not null default now()
+);
+create index if not exists handbook_downloads_slug_idx on handbook_downloads(slug, created_at desc);
 -- What happened to each password-recovery request and test email, so the admin can see why a mail did not arrive.
 create table if not exists mail_log (
   id bigserial primary key,

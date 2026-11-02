@@ -395,6 +395,21 @@ export const account = {
     ),
     newPassword: bi("New password", "رمز عبور جدید"),
     generate: bi("Random password", "ساخت رمز تصادفی"),
+    downloads: {
+      title: bi("Handbook downloads", "دانلود هندبوک‌ها"),
+      lead: bi(
+        "Counted from today on. A repeat download from the same address within 10 minutes counts once; “distinct addresses” is the number of different internet addresses.",
+        "شمارش از امروز آغاز شده است. دانلود تکراری از یک نشانی در فاصله 10 دقیقه یک بار شمرده می‌شود؛ «نشانی‌های متمایز» تعداد نشانی‌های اینترنتی (IP) مختلف است.",
+      ),
+      issue: bi("Issue", "شماره"),
+      handbook: bi("Handbook", "هندبوک"),
+      total: bi("Downloads", "کل دانلود"),
+      unique: bi("Distinct addresses", "نشانی‌های متمایز"),
+      week: bi("Last 7 days", "7 روز اخیر"),
+      today: bi("Today", "امروز"),
+      last: bi("Last download", "آخرین دانلود"),
+      free: bi("free this week", "رایگان این هفته"),
+    },
     mailLog: {
       title: bi("Email and password recovery", "ایمیل و بازیابی رمز عبور"),
       lead: bi(

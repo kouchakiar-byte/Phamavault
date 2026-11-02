@@ -1,4 +1,5 @@
 import { chapter, h2, h3, p, ul, box, table, fig, svg, T, axes, trace, path, C } from "../lib.mjs";
+import { stressBars } from "../figs.mjs";
 
 /** Overlay: placebo, unstressed sample and acid-stressed sample. */
 const overlay = () => {
@@ -59,6 +60,7 @@ ${box(
   p("Stress testing ماده مؤثره به شناسایی محصولات تخریب محتمل، مسیرهای تخریب و پایداری ذاتی مولکول کمک می‌کند و برای اثبات Stability-indicating بودن روش‌ها به کار می‌رود. اثر دما، رطوبت، اکسیداسیون، نور و هیدرولیز در گستره وسیعی از pH بررسی می‌شود. Q1B حداقل مواجهه نوری را برای آزمون تأییدی تعیین می‌کند."),
   "ICH Q1A(R2) Stability Testing of New Drug Substances and Products; ICH Q1B Photostability Testing",
 )}
+${fig(stressBars(), "3-2", "درصد تخریب در شرایط مختلف تنش در مقایسه با محدوده هدف 5 تا 20 درصد. تنش بازی اولیه بیش از حد بود و با شرایط ملایم‌تر تکرار شد؛ حرارت و رطوبت تخریب ناچیز دادند که خود نشانه پایداری ذاتی در این شرایط است (داده نمایشی).")}
 ${h3("Mass balance")}
 ${p(
   "Mass balance مقایسه مجموع Assay و ناخالصی‌ها در نمونه تحت تنش با مقدار اولیه است. Mass balance نزدیک 100 درصد (در عمل، اغلب 95 تا 105 درصد یا گستره‌ای که از پیش توجیه شده) نشان می‌دهد محصولات تخریب عمده دیده و اندازه‌گیری شده‌اند. Mass balance پایین ممکن است به معنای محصول تخریب بدون جذب UV، محصول فرار، ترکیب باقی‌مانده روی ستون یا تفاوت RRF ناخالصی‌ها باشد.",
