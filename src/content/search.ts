@@ -51,7 +51,7 @@ export const searchCopy = {
   sourcesTitle: bi("Search authoritative sources", "جستجو در منابع معتبر"),
   sourcesLead: bi(
     "The same query in the official databases of regulators, pharmacopoeias and the scientific literature; each link opens the source's own search in a new tab.",
-    "همین عبارت در پایگاه‌های رسمی نهادهای رگولاتوری، فارماکوپه‌ها و مقالات علمی؛ هر لینک جستجوی خود همان منبع را در زبانه جدید باز می‌کند.",
+    "همین عبارت در پایگاه‌های رسمی نهادهای رگولاتوری، فارماکوپه‌ها و مقالات علمی؛ هر لینک، جستجو را در سایت همان منبع و در صفحه‌ای جدید باز می‌کند.",
   ),
   suppliersMatch: bi("{n} products match", "{n} قلم منطبق"),
   orangeBookProducts: bi("{n} products in the Orange Book", "{n} فرآورده در Orange Book"),
