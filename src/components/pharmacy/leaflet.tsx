@@ -2,14 +2,16 @@
 
 import { useEffect, useState } from "react";
 import { leafletsCopy as t, type Leaflet } from "@/content/pharmacy-tools";
+import type { Ref } from "@/content/pharmacy";
 import type { Locale } from "@/i18n/config";
 
 const KEY = "pv-pharmacy-print";
 
-/** One leaflet with the pharmacy's name and phone; printing shows the leaflet alone. */
-export function LeafletView({ leaflet: l, locale }: { leaflet: Leaflet; locale: Locale }) {
+/** All leaflets: the pharmacy's name and phone once, a picker, and the chosen leaflet; printing shows that leaflet alone. */
+export function LeafletBoard({ leaflets, locale, refsLabel }: { leaflets: Leaflet[]; locale: Locale; refsLabel: string }) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [current, setCurrent] = useState(leaflets[0].key);
   useEffect(() => {
     try {
       const saved = JSON.parse(localStorage.getItem(KEY) ?? "{}");
@@ -17,7 +19,10 @@ export function LeafletView({ leaflet: l, locale }: { leaflet: Leaflet; locale: 
       if (saved.name) setName(saved.name);
       if (saved.phone) setPhone(saved.phone);
     } catch {}
-  }, []);
+    const hash = window.location.hash.slice(1);
+    if (leaflets.some((l) => l.key === hash)) setCurrent(hash);
+  }, [leaflets]);
+  const l = leaflets.find((x) => x.key === current) ?? leaflets[0];
   const save = (next: { name: string; phone: string }) => {
     try {
       localStorage.setItem(KEY, JSON.stringify(next));
@@ -65,11 +70,29 @@ export function LeafletView({ leaflet: l, locale }: { leaflet: Leaflet; locale: 
         <p className="text-xs text-muted sm:col-span-3">{t.pharmacyHint[locale]}</p>
       </div>
 
+      <nav aria-label={t.list[locale]} className="no-print flex flex-wrap gap-2">
+        {leaflets.map((x) => (
+          <button
+            key={x.key}
+            type="button"
+            onClick={() => {
+              setCurrent(x.key);
+              history.replaceState(null, "", `#${x.key}`);
+            }}
+            aria-pressed={x.key === l.key}
+            className={`rounded-full border px-3.5 py-1.5 text-sm transition ${x.key === l.key ? "border-vault-900 bg-vault-900 text-white" : "border-line bg-white text-vault-900 hover:border-molecule-500"}`}
+          >
+            {x.title[locale]}
+          </button>
+        ))}
+      </nav>
+
       <article id="leaflet" className="rounded-card border border-line bg-white p-6 leading-8 text-ink sm:p-8">
         <header className="flex flex-wrap items-start justify-between gap-3 border-b-2 border-molecule-600 pb-3">
           <h2 className="text-xl font-bold text-vault-900">{l.title[locale]}</h2>
           {name && <p className="text-sm font-bold text-molecule-700">{name}</p>}
         </header>
+        <p className="mt-3 rounded-lg border border-capsule-500/40 bg-capsule-400/10 px-3 py-1.5 text-sm font-semibold text-vault-900">{t.notice[locale]}</p>
         <p className="mt-4">{l.intro[locale]}</p>
         {l.before && (
           <div className="mt-4 rounded-lg bg-capsule-400/10 px-4 py-2">
@@ -105,6 +128,26 @@ export function LeafletView({ leaflet: l, locale }: { leaflet: Leaflet; locale: 
           <p className="text-xs text-muted">{t.notice[locale]}</p>
         </footer>
       </article>
+      <RefLinks refs={l.refs} label={refsLabel} />
     </div>
+  );
+}
+
+function RefLinks({ refs, label }: { refs: Ref[]; label: string }) {
+  return (
+    <p className="no-print flex flex-wrap items-center gap-x-2 gap-y-1.5 text-xs text-muted">
+      <span className="font-bold text-vault-900">{label}:</span>
+      {refs.map((r) =>
+        r.url ? (
+          <a key={r.label} href={r.url} target="_blank" rel="noopener noreferrer" dir="ltr" className="rounded-lg border border-line bg-white px-2 py-0.5 text-molecule-700 hover:underline">
+            {r.label} ↗
+          </a>
+        ) : (
+          <bdi key={r.label} dir="ltr" className="rounded-lg border border-line bg-white px-2 py-0.5">
+            {r.label}
+          </bdi>
+        ),
+      )}
+    </p>
   );
 }
