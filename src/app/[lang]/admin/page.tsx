@@ -20,6 +20,8 @@ import { href } from "@/lib/paths";
 import { paywallEnabled, recentSubscriptions, subscriptionStatus } from "@/lib/subscriptions";
 import { mailConfigured } from "@/lib/mail";
 import { recentMailLog } from "@/lib/mail-log";
+import { downloadStats } from "@/lib/handbook-downloads";
+import { freeHandbooks } from "@/content/free-handbooks";
 import { onlinePaymentEnabled } from "@/lib/zarinpal";
 import { recentServiceRequests } from "@/lib/service-requests";
 import { bi } from "@/i18n/bi";
@@ -58,7 +60,7 @@ async function Admin({ locale }: { locale: Locale }) {
   if (!user) redirect(`${href(locale, "account/login")}?next=${encodeURIComponent(href(locale, "admin"))}`);
   if (!user.isAdmin) notFound();
 
-  const [numbers, orders, subscriptions, requests, users, mailLog] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog()]);
+  const [numbers, orders, subscriptions, requests, users, mailLog, downloads] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats()]);
   const u = t.usersList;
   const gateway = onlinePaymentEnabled()
     ? `${t.on[locale]}${process.env.ZARINPAL_SANDBOX === "1" ? ` (${t.sandbox[locale]})` : ""}`
@@ -95,6 +97,44 @@ async function Admin({ locale }: { locale: Locale }) {
           </div>
         ))}
       </div>
+
+      <Panel title={t.downloads.title} locale={locale}>
+        <p className="-mt-2 mb-4 text-sm text-muted">{t.downloads.lead[locale]}</p>
+        <div className="overflow-x-auto">
+          <table className="db">
+            <thead>
+              <tr>
+                <th>{t.downloads.issue[locale]}</th>
+                <th>{t.downloads.handbook[locale]}</th>
+                <th>{t.downloads.total[locale]}</th>
+                <th>{t.downloads.unique[locale]}</th>
+                <th>{t.downloads.week[locale]}</th>
+                <th>{t.downloads.today[locale]}</th>
+                <th>{t.downloads.last[locale]}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {freeHandbooks.map((h, i) => {
+                const d = downloads.get(h.slug);
+                return (
+                  <tr key={h.slug}>
+                    <td className="num">
+                      {h.issue}
+                      {i === 0 && <span className="ms-2 rounded-full bg-capsule-400/20 px-2 text-xs text-capsule-700">{t.downloads.free[locale]}</span>}
+                    </td>
+                    <td>{h.title[locale]}</td>
+                    <td className="num font-bold text-vault-900">{formatNumber(d?.total ?? 0, locale)}</td>
+                    <td className="num">{formatNumber(d?.unique ?? 0, locale)}</td>
+                    <td className="num">{formatNumber(d?.week ?? 0, locale)}</td>
+                    <td className="num">{formatNumber(d?.today ?? 0, locale)}</td>
+                    <td className="whitespace-nowrap">{d?.last ? formatDate(d.last, locale) : "—"}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </Panel>
 
       <Panel title={u.title} locale={locale}>
         {users.length === 0 ? (
