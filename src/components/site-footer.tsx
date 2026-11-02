@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { freeHandbookCopy } from "@/content/free-handbooks";
+import { questionsCopy } from "@/content/questions";
+import { coaCopy } from "@/content/coa-review";
 import { copy, siteConfig } from "@/content/site";
 import { sectionGroups, sections } from "@/content/sections";
 import { getLocale } from "@/i18n/locale";
@@ -60,6 +62,16 @@ export async function SiteFooter() {
                   <li>
                     <Link href={href(locale, "free-handbooks")} className="font-semibold text-capsule-400 hover:text-capsule-100">
                       {freeHandbookCopy.pageTitle[locale]}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={href(locale, "questions")} className="hover:text-molecule-400">
+                      {questionsCopy.title[locale]}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={href(locale, "coa-review")} className="hover:text-molecule-400">
+                      {coaCopy.title[locale]}
                     </Link>
                   </li>
                   <li>
