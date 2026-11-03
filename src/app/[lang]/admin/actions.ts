@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { account } from "@/content/account";
 import { getUser, hashPassword, normalizeMobile } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { orderWithBuyer, setStatus } from "@/lib/orders";
+import { deleteOrder, orderWithBuyer, setStatus } from "@/lib/orders";
 import { siteOrigin } from "@/lib/site-origin";
 import { invoiceNumber } from "@/lib/invoice";
 import { normalizePurchase } from "@/lib/pricing";
@@ -50,6 +50,14 @@ export async function cancelOrder(form: FormData): Promise<void> {
   const orderId = id(form);
   if (orderId) await setStatus(orderId, "cancelled");
   refresh();
+}
+
+export async function removeOrder(_: AdminState, form: FormData): Promise<AdminState> {
+  await requireAdmin();
+  const orderId = id(form);
+  if (orderId) await deleteOrder(orderId, text(form, "revoke") === "1");
+  refresh();
+  return { ok: true };
 }
 
 export async function extend(form: FormData): Promise<void> {
