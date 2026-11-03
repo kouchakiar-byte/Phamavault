@@ -270,8 +270,18 @@ export const pages = {
     ],
     backToList: bi("SOP library", "کتابخانه دستورالعمل‌ها"),
     inPersian: bi("The full text of this SOP is written in Persian.", "متن کامل این دستورالعمل به فارسی است."),
-    copy: bi("Copy text", "کپی متن"),
+    copy: bi("Copy SOP", "کپی SOP"),
     copied: bi("Copied", "کپی شد"),
+    quota: {
+      qa: bi("QA SOPs copied this month: {used} of {limit}", "SOPهای QA کپی‌شده در این ماه: {used} از {limit}"),
+      qc: bi("QC SOPs copied this month: {used} of {limit}", "SOPهای QC کپی‌شده در این ماه: {used} از {limit}"),
+      again: bi("Copying an SOP you already copied this month uses nothing.", "کپی دوباره SOPای که این ماه کپی کرده‌اید از سهمیه کم نمی‌کند."),
+      full: bi(
+        "This month's {limit} SOP copies are used. You get {limit} new copies on the 1st of next month.",
+        "سقف {limit} کپی SOP این ماه پر شده است. از روز اول ماه بعد دوباره {limit} کپی خواهید داشت.",
+      ),
+      failed: bi("The copy could not be made. Please try again.", "کپی انجام نشد. لطفاً دوباره تلاش کنید."),
+    },
     copyLock: {
       title: bi("Copying is for subscribers", "کپی متن ویژه مشترکان است"),
       text: bi(

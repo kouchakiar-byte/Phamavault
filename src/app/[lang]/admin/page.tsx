@@ -24,6 +24,7 @@ import { downloadStats } from "@/lib/handbook-downloads";
 import { freeHandbooks } from "@/content/free-handbooks";
 import { onlinePaymentEnabled } from "@/lib/zarinpal";
 import { recentTestPayments } from "@/lib/test-payments";
+import { FREE_DAYS, SOP_COPIES, meteringThisMonth } from "@/lib/metering";
 import { recentServiceRequests } from "@/lib/service-requests";
 import { bi } from "@/i18n/bi";
 import { cancelOrder, changeSeats, extend, markOrderPaid, setBlocked, toggleRequestHandled, toggleRevoked } from "./actions";
@@ -61,7 +62,8 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
   if (!user) redirect(`${href(locale, "account/login")}?next=${encodeURIComponent(href(locale, "admin"))}`);
   if (!user.isAdmin) notFound();
 
-  const [numbers, orders, subscriptions, requests, users, mailLog, downloads, testPayments, query] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats(), recentTestPayments(), searchParams]);
+  const [numbers, orders, subscriptions, requests, users, mailLog, downloads, testPayments, query, meter] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats(), recentTestPayments(), searchParams, meteringThisMonth()]);
+  const mt = t.metering;
   const tp = t.testPayment;
   const u = t.usersList;
   const gateway = onlinePaymentEnabled()
@@ -136,6 +138,41 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
             </tbody>
           </table>
         </div>
+      </Panel>
+
+      <Panel title={mt.title} locale={locale}>
+        <p className="-mt-2 mb-4 text-sm leading-7 text-muted">{mt.lead[locale]}</p>
+        {meter.length === 0 ? (
+          <p className="text-sm text-muted">{mt.empty[locale]}</p>
+        ) : (
+          <div className="max-h-[24rem] overflow-auto">
+            <table className="db">
+              <thead>
+                <tr>
+                  <th>{mt.user[locale]}</th>
+                  <th>{mt.days[locale]}</th>
+                  <th>{mt.qa[locale]}</th>
+                  <th>{mt.qc[locale]}</th>
+                  <th>{mt.ips[locale]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {meter.map((m) => (
+                  <tr key={m.userId}>
+                    <td>
+                      <span className="block">{m.name}</span>
+                      <span dir="ltr" className="font-mono text-xs text-muted">{m.mobile}</span>
+                    </td>
+                    <td className="num">{formatNumber(m.trialDays, locale)} / {formatNumber(FREE_DAYS, locale)}</td>
+                    <td className="num">{formatNumber(m.qa, locale)} / {formatNumber(SOP_COPIES, locale)}</td>
+                    <td className="num">{formatNumber(m.qc, locale)} / {formatNumber(SOP_COPIES, locale)}</td>
+                    <td className={`num ${m.ips > 1 ? "font-semibold text-capsule-700" : ""}`}>{formatNumber(m.ips, locale)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </Panel>
 
       <Panel title={u.title} locale={locale}>

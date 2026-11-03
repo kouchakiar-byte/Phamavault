@@ -133,6 +133,8 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
             text: copy.copyGuard.text[locale],
             buy: copy.copyGuard.buy[locale],
             close: copy.copyGuard.close[locale],
+            subTitle: copy.copyGuard.subTitle[locale],
+            subText: copy.copyGuard.subText[locale],
           }}
         />
         <Suspense fallback={null}>

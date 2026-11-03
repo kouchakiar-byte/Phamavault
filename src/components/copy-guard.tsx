@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Lock, X } from "lucide-react";
 
-/** Set once the request-time check (CopyAllowance) finds a subscriber or an admin. */
+/** Set by the request-time check (CopyAllowance): admins copy; subscribers see their own notice. */
 let allowed = false;
+let subscriber = false;
 const ALLOW_EVENT = "pv-copy-allowed";
 
 export function AllowCopy() {
@@ -16,7 +17,14 @@ export function AllowCopy() {
   return null;
 }
 
-type Labels = { title: string; text: string; buy: string; close: string };
+export function SubscriberCopy() {
+  useEffect(() => {
+    subscriber = true;
+  }, []);
+  return null;
+}
+
+type Labels = { title: string; text: string; buy: string; close: string; subTitle: string; subText: string };
 
 /** Places where copying is always fine: form fields and the reader's own account pages. */
 function exempt(target: EventTarget | null): boolean {
@@ -26,19 +34,19 @@ function exempt(target: EventTarget | null): boolean {
 }
 
 /**
- * Site-wide: readers without a subscription cannot copy, cut or open the context menu on the
- * content; they are told how to subscribe instead. Subscribers and admins copy freely (SOPs and
- * general chapters still add the reader's invisible code, see sop-copy-lock).
+ * Site-wide: nobody but an admin can copy, cut or open the context menu on the content.
+ * Readers without a subscription are told how to subscribe; subscribers are told that SOPs
+ * are copied with their own button, within the monthly allowance (see sop-copy-lock).
  */
 export function CopyGuard({ labels, buyHref }: { labels: Labels; buyHref: string }) {
-  const [notice, setNotice] = useState(false);
+  const [notice, setNotice] = useState<false | "buy" | "subscriber">(false);
   useEffect(() => {
     const block = (e: Event) => {
       // Already handled by a document's own lock (it shows its own notice).
       if (allowed || e.defaultPrevented || exempt(e.target)) return;
       e.preventDefault();
       if (e instanceof ClipboardEvent) e.clipboardData?.setData("text/plain", "");
-      setNotice(true);
+      setNotice(subscriber ? "subscriber" : "buy");
     };
     const drag = (e: DragEvent) => {
       if (allowed || exempt(e.target)) return;
@@ -67,16 +75,18 @@ export function CopyGuard({ labels, buyHref }: { labels: Labels; buyHref: string
       </button>
       <p id="copy-guard-title" className="flex items-center gap-2 font-bold text-vault-900">
         <Lock className="size-4 text-capsule-600" aria-hidden="true" />
-        {labels.title}
+        {notice === "subscriber" ? labels.subTitle : labels.title}
       </p>
-      <p className="mt-2 text-sm leading-7 text-ink">{labels.text}</p>
-      <Link
-        href={buyHref}
-        onClick={() => setNotice(false)}
-        className="mt-4 inline-flex rounded-full bg-molecule-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-molecule-700"
-      >
-        {labels.buy}
-      </Link>
+      <p className="mt-2 text-sm leading-7 text-ink">{notice === "subscriber" ? labels.subText : labels.text}</p>
+      {notice === "buy" && (
+        <Link
+          href={buyHref}
+          onClick={() => setNotice(false)}
+          className="mt-4 inline-flex rounded-full bg-molecule-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-molecule-700"
+        >
+          {labels.buy}
+        </Link>
+      )}
     </div>
   );
 }
