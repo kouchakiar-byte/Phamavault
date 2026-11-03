@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense, type ReactNode } from "react";
 import { notFound, redirect } from "next/navigation";
 import { connection } from "next/server";
-import { AddUserForm, DeleteUserButton, GrantForm, MailTestForm, ResetPasswordForm, SendInvoiceButton, TestPaymentForm, TraceForm } from "@/components/account/admin-forms";
+import { AddUserForm, DeleteOrderButton, DeleteUserButton, GrantForm, MailTestForm, ResetPasswordForm, SendInvoiceButton, TestPaymentForm, TraceForm } from "@/components/account/admin-forms";
 import { invoiceNumber } from "@/lib/invoice";
 import { Loading, accountMetadata } from "@/components/account/shell";
 import { BiTitle, Container } from "@/components/ui";
@@ -422,6 +422,9 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
                         </form>
                       </div>
                     )}
+                    <div className="mt-1.5">
+                      <DeleteOrderButton id={o.id} locale={locale} hasSubscription={Boolean(o.subscriptionId)} />
+                    </div>
                   </td>
                 </tr>
               ))}

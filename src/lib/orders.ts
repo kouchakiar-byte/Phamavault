@@ -17,6 +17,7 @@ export type Order = {
   createdAt: Date;
   paidAt: Date | null;
   renews: string | null;
+  subscriptionId: string | null;
 };
 
 type Row = {
@@ -32,6 +33,7 @@ type Row = {
   created_at: Date;
   paid_at: Date | null;
   renews: string | null;
+  subscription_id: string | null;
 };
 
 const toOrder = (r: Row): Order => ({
@@ -47,6 +49,7 @@ const toOrder = (r: Row): Order => ({
   createdAt: r.created_at,
   paidAt: r.paid_at,
   renews: r.renews,
+  subscriptionId: r.subscription_id,
 });
 
 export async function createOrder(input: {
@@ -163,4 +166,15 @@ export async function recentUsers(limit = 200): Promise<UserRow[]> {
     lastSeen: r.last_seen,
     activeSubscriptions: r.active,
   }));
+}
+
+/**
+ * Removes an order for good (test or mistaken orders). With `revoke`, the subscription the
+ * order created is revoked too; otherwise it keeps running and is managed on its own.
+ */
+export async function deleteOrder(orderId: string, revoke: boolean): Promise<void> {
+  const pool = await db();
+  const { rows } = await pool.query<{ subscription_id: string | null }>("delete from orders where id = $1 returning subscription_id", [orderId]);
+  const subscription = rows[0]?.subscription_id;
+  if (revoke && subscription) await pool.query("update subscriptions set revoked = true where id = $1", [subscription]);
 }

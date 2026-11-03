@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
-import { addUser, deleteUser, grant, resetPassword, sendInvoice, startTestPayment, testMail, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
+import { addUser, deleteUser, grant, removeOrder, resetPassword, sendInvoice, startTestPayment, testMail, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
 import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
@@ -255,6 +255,37 @@ export function TestPaymentForm({ locale }: { locale: Locale }) {
           {tp.failed[locale]}: <span dir="ltr" className="font-mono text-xs">{error}</span>
         </p>
       )}
+    </form>
+  );
+}
+
+/** Deletes an order after a confirmation; a paid order's subscription can be revoked at the same time. */
+export function DeleteOrderButton({ id, locale, hasSubscription }: { id: string; locale: Locale; hasSubscription: boolean }) {
+  const [, action, pending] = useActionState(removeOrder, {});
+  const [confirm, setConfirm] = useState(false);
+  const c = t.deleteOrder;
+  if (!confirm)
+    return (
+      <button type="button" onClick={() => setConfirm(true)} className="rounded-md px-2.5 py-1 text-xs font-semibold text-red-700 hover:bg-red-50">
+        {c.button[locale]}
+      </button>
+    );
+  return (
+    <form action={action} className="flex max-w-56 flex-col gap-1.5 rounded-lg border border-red-200 bg-red-50/60 p-2">
+      <input type="hidden" name="id" value={id} />
+      <p className="text-xs font-semibold text-red-800">{c.confirm[locale]}</p>
+      <p className="text-xs text-muted">{c.note[locale]}</p>
+      <button type="submit" name="revoke" value="0" disabled={pending} className="rounded-md bg-red-700 px-2.5 py-1 text-xs font-semibold text-white disabled:opacity-60">
+        {c.only[locale]}
+      </button>
+      {hasSubscription && (
+        <button type="submit" name="revoke" value="1" disabled={pending} className="rounded-md border border-red-700 px-2.5 py-1 text-xs font-semibold text-red-700 disabled:opacity-60">
+          {c.revoke[locale]}
+        </button>
+      )}
+      <button type="button" onClick={() => setConfirm(false)} className="rounded-md px-2 py-1 text-xs text-muted">
+        {c.keep[locale]}
+      </button>
     </form>
   );
 }
