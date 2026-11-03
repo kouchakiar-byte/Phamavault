@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
-import { addUser, deleteUser, grant, resetPassword, sendInvoice, testMail, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
+import { addUser, deleteUser, grant, resetPassword, sendInvoice, startTestPayment, testMail, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
 import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
@@ -237,6 +237,24 @@ export function SendInvoiceButton({ locale, id, disabled }: { locale: Locale; id
       </button>
       {state.ok && <p className="text-xs text-molecule-700">{inv.sent[locale].replace("{email}", state.ok)}</p>}
       {error && <p className="text-xs text-red-700">{error}</p>}
+    </form>
+  );
+}
+
+export function TestPaymentForm({ locale }: { locale: Locale }) {
+  const [state, action, pending] = useActionState(startTestPayment, {});
+  const tp = t.testPayment;
+  const error = state.error ? (state.error === "gatewayOff" ? tp.gatewayOff[locale] : state.error) : null;
+  return (
+    <form action={action} className="space-y-2">
+      <button type="submit" disabled={pending} className="rounded-full bg-molecule-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-molecule-700 disabled:opacity-60">
+        {tp.start[locale]}
+      </button>
+      {error && (
+        <p className="text-sm text-red-700">
+          {tp.failed[locale]}: <span dir="ltr" className="font-mono text-xs">{error}</span>
+        </p>
+      )}
     </form>
   );
 }

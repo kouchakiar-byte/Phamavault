@@ -1,6 +1,7 @@
 "use server";
 
 import { refresh } from "next/cache";
+import { redirect } from "next/navigation";
 import { account } from "@/content/account";
 import { getUser, hashPassword, normalizeMobile } from "@/lib/auth";
 import { db } from "@/lib/db";
@@ -12,6 +13,8 @@ import { setRequestHandled } from "@/lib/service-requests";
 import { mailConfigured, sendMail } from "@/lib/mail";
 import { logMail } from "@/lib/mail-log";
 import { decodeMark } from "@/lib/watermark";
+import { TEST_PAYMENT_TOMAN, createTestPayment, finishTestPayment, setTestAuthority } from "@/lib/test-payments";
+import { onlinePaymentEnabled, requestPayment } from "@/lib/zarinpal";
 import { activateOrder, extendSubscription, grantManually, setRevoked, setSeats } from "@/lib/subscriptions";
 
 export type AdminState = { error?: keyof typeof account.errors; ok?: boolean };
@@ -243,4 +246,35 @@ export async function sendInvoice(_: InvoiceMailState, form: FormData): Promise<
     await logMail({ kind: "invoice", recipient: buyer.email, userId: buyer.userId, ok: false, detail });
     return { error: detail };
   }
+}
+
+export type TestPaymentState = { error?: string };
+
+/**
+ * Starts a small real payment through the live gateway, so the admin can check
+ * request, return and verify end to end. It creates no order and grants nothing.
+ */
+export async function startTestPayment(): Promise<TestPaymentState> {
+  const user = await getUser();
+  if (!user?.isAdmin) throw new Error("Forbidden");
+  if (!onlinePaymentEnabled()) return { error: "gatewayOff" };
+  const id = await createTestPayment(user.id, TEST_PAYMENT_TOMAN);
+  let payUrl: string;
+  try {
+    const payment = await requestPayment({
+      amount: TEST_PAYMENT_TOMAN,
+      description: `PharmaVault gateway test #${id}`,
+      callbackUrl: `${await siteOrigin()}/api/pay/test-callback`,
+      mobile: user.mobile,
+      orderId: `test-${id}`,
+    });
+    await setTestAuthority(id, payment.authority);
+    payUrl = payment.payUrl;
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : String(error);
+    await finishTestPayment(id, { ok: false, detail });
+    refresh();
+    return { error: detail };
+  }
+  redirect(payUrl);
 }

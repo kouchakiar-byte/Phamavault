@@ -410,6 +410,31 @@ export const account = {
       last: bi("Last download", "آخرین دانلود"),
       free: bi("free this week", "رایگان این هفته"),
     },
+    testPayment: {
+      title: bi("Gateway test payment", "پرداخت آزمایشی درگاه"),
+      lead: bi(
+        "A real 50,000 Toman payment through the live Zarinpal gateway. It checks the whole path (opening the gateway, returning to the site and verifying the payment) and creates no order or subscription; the money goes to the site's own account, less the gateway fee.",
+        "یک پرداخت واقعی 50,000 تومانی از درگاه زرین‌پال. این پرداخت کل مسیر را بررسی می‌کند (باز شدن درگاه، بازگشت به سایت و تأیید پرداخت) و هیچ سفارش یا اشتراکی ایجاد نمی‌کند. مبلغ پس از کسر کارمزد درگاه به حساب خود سایت واریز می‌شود.",
+      ),
+      start: bi("Pay 50,000 Toman (test)", "پرداخت آزمایشی 50,000 تومان"),
+      gatewayOff: bi("Online payment is off: ZARINPAL_MERCHANT_ID is not set.", "پرداخت آنلاین خاموش است: ZARINPAL_MERCHANT_ID تنظیم نشده است."),
+      failed: bi("The gateway did not open", "درگاه باز نشد"),
+      paidNote: bi("Test payment verified. The gateway works end to end.", "پرداخت آزمایشی تأیید شد. درگاه به‌طور کامل کار می‌کند."),
+      failedNote: bi("The test payment was not completed. The reason is in the table.", "پرداخت آزمایشی کامل نشد. علت آن در جدول آمده است."),
+      empty: bi("No test payment yet.", "هنوز پرداخت آزمایشی انجام نشده است."),
+      when: bi("Time", "زمان"),
+      amount: bi("Amount (Toman)", "مبلغ (تومان)"),
+      result: bi("Result", "نتیجه"),
+      ref: bi("Reference / card", "شماره پیگیری / کارت"),
+      status: {
+        pending: bi("Not returned from the gateway", "از درگاه برنگشته است"),
+        paid: bi("Paid and verified", "پرداخت و تأیید شد"),
+        failed: bi("Failed", "ناموفق"),
+      },
+      details: {
+        cancelled: bi("Cancelled on the gateway page", "در صفحه درگاه لغو شد"),
+      },
+    },
     mailLog: {
       title: bi("Email and password recovery", "ایمیل و بازیابی رمز عبور"),
       lead: bi(
