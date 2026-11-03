@@ -96,6 +96,19 @@ create table if not exists orders (
   paid_at timestamptz
 );
 create index if not exists orders_user_idx on orders(user_id);
+-- Admin-only gateway tests: a small real payment that checks request, return and verify, and grants nothing.
+create table if not exists test_payments (
+  id bigserial primary key,
+  user_id bigint references users(id) on delete set null,
+  amount bigint not null,
+  status text not null default 'pending',
+  authority text unique,
+  ref_id text,
+  card_pan text,
+  detail text,
+  created_at timestamptz not null default now(),
+  finished_at timestamptz
+);
 create table if not exists catalog_entries (
   kind text not null,
   key text not null,

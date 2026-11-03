@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense, type ReactNode } from "react";
 import { notFound, redirect } from "next/navigation";
 import { connection } from "next/server";
-import { AddUserForm, DeleteUserButton, GrantForm, MailTestForm, ResetPasswordForm, SendInvoiceButton, TraceForm } from "@/components/account/admin-forms";
+import { AddUserForm, DeleteUserButton, GrantForm, MailTestForm, ResetPasswordForm, SendInvoiceButton, TestPaymentForm, TraceForm } from "@/components/account/admin-forms";
 import { invoiceNumber } from "@/lib/invoice";
 import { Loading, accountMetadata } from "@/components/account/shell";
 import { BiTitle, Container } from "@/components/ui";
@@ -23,6 +23,7 @@ import { recentMailLog } from "@/lib/mail-log";
 import { downloadStats } from "@/lib/handbook-downloads";
 import { freeHandbooks } from "@/content/free-handbooks";
 import { onlinePaymentEnabled } from "@/lib/zarinpal";
+import { recentTestPayments } from "@/lib/test-payments";
 import { recentServiceRequests } from "@/lib/service-requests";
 import { bi } from "@/i18n/bi";
 import { cancelOrder, changeSeats, extend, markOrderPaid, setBlocked, toggleRequestHandled, toggleRevoked } from "./actions";
@@ -53,14 +54,15 @@ function Panel({ title, locale, children }: { title: Bi; locale: Locale; childre
 
 const smallButton = "rounded-md px-2.5 py-1 text-xs font-semibold";
 
-async function Admin({ locale }: { locale: Locale }) {
+async function Admin({ locale, searchParams }: { locale: Locale; searchParams: Promise<{ test?: string }> }) {
   await connection(); // settings and data are read per request, never at build time
   if (!databaseConfigured()) return <p className="rounded-card bg-red-50 px-5 py-4 text-red-700">{t.noDatabase[locale]}</p>;
   const user = await getUser();
   if (!user) redirect(`${href(locale, "account/login")}?next=${encodeURIComponent(href(locale, "admin"))}`);
   if (!user.isAdmin) notFound();
 
-  const [numbers, orders, subscriptions, requests, users, mailLog, downloads] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats()]);
+  const [numbers, orders, subscriptions, requests, users, mailLog, downloads, testPayments, query] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats(), recentTestPayments(), searchParams]);
+  const tp = t.testPayment;
   const u = t.usersList;
   const gateway = onlinePaymentEnabled()
     ? `${t.on[locale]}${process.env.ZARINPAL_SANDBOX === "1" ? ` (${t.sandbox[locale]})` : ""}`
@@ -473,6 +475,58 @@ async function Admin({ locale }: { locale: Locale }) {
         <GrantForm locale={locale} />
       </Panel>
 
+      <section id="test-payment" className="scroll-mt-24">
+        <Panel title={tp.title} locale={locale}>
+          <p className="-mt-2 mb-5 text-sm leading-7 text-muted">{tp.lead[locale]}</p>
+          {query.test === "paid" && <p className="mb-4 rounded-xl bg-molecule-50 px-4 py-3 text-sm font-semibold text-molecule-700">{tp.paidNote[locale]}</p>}
+          {query.test === "failed" && <p className="mb-4 rounded-xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">{tp.failedNote[locale]}</p>}
+          <TestPaymentForm locale={locale} />
+          {testPayments.length === 0 ? (
+            <p className="mt-5 text-sm text-muted">{tp.empty[locale]}</p>
+          ) : (
+            <div className="mt-5 overflow-x-auto">
+              <table className="db">
+                <thead>
+                  <tr>
+                    <th>{tp.when[locale]}</th>
+                    <th>{tp.amount[locale]}</th>
+                    <th>{tp.result[locale]}</th>
+                    <th>{tp.ref[locale]}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {testPayments.map((p) => (
+                    <tr key={p.id}>
+                      <td className="whitespace-nowrap">
+                        {formatDate(p.createdAt, locale)}{" "}
+                        <span dir="ltr">{p.createdAt.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "Asia/Tehran" })}</span>
+                      </td>
+                      <td className="num">{formatNumber(p.amount, locale)}</td>
+                      <td className={`min-w-40 ${p.status === "paid" ? "font-semibold text-molecule-700" : p.status === "failed" ? "text-red-700" : "text-muted"}`}>
+                        {tp.status[p.status][locale]}
+                        {p.detail && (
+                          p.detail in tp.details ? (
+                            <span className="block text-xs">{tp.details[p.detail as keyof typeof tp.details][locale]}</span>
+                          ) : (
+                            <span dir="ltr" className="block max-w-56 break-all font-mono text-xs">
+                              {p.detail}
+                            </span>
+                          )
+                        )}
+                      </td>
+                      <td dir="ltr" className="font-mono text-xs">
+                        {p.refId ?? "—"}
+                        {p.cardPan && <span className="block">{p.cardPan}</span>}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </Panel>
+      </section>
+
       <Panel title={t.mailLog.title} locale={locale}>
         <p className="-mt-2 mb-5 text-sm text-muted">{t.mailLog.lead[locale]}</p>
         <MailTestForm locale={locale} defaultTo={users.find((x) => x.mobile === user.mobile)?.email ?? ""} />
@@ -520,13 +574,13 @@ async function Admin({ locale }: { locale: Locale }) {
   );
 }
 
-export default async function AdminPage() {
+export default async function AdminPage({ searchParams }: { searchParams: Promise<{ test?: string }> }) {
   const locale = await getLocale();
   return (
     <div className="bg-paper py-12">
       <Container>
         <Suspense fallback={<Loading label="…" />}>
-          <Admin locale={locale} />
+          <Admin locale={locale} searchParams={searchParams} />
         </Suspense>
       </Container>
     </div>
