@@ -306,6 +306,23 @@ export const account = {
     buyAll: bi("All 10 sections — {price} Toman / month", "هر 10 بخش — {price} تومان در ماه"),
     plans: bi("Compare plans", "مقایسه طرح‌ها"),
     loading: bi("Checking access…", "در حال بررسی دسترسی…"),
+    signupTitle: bi("Sign up free to read this section", "برای مطالعه این بخش، رایگان ثبت‌نام کنید"),
+    signupText: bi(
+      "With a free account you can read every section, “{section}” included, on 2 days each month. After that, reading is with a subscription.",
+      "با ثبت‌نام رایگان، هر ماه 2 روز به همه بخش‌ها، از جمله «{section}»، دسترسی دارید. پس از آن، استفاده از سایت با اشتراک است.",
+    ),
+    signup: bi("Sign up free", "ثبت‌نام رایگان"),
+    signInPlain: bi("Sign in", "ورود"),
+    trialOverTitle: bi("Your 2 free days this month are used", "2 روز رایگان این ماه شما استفاده شده است"),
+    trialOverText: bi(
+      "Each account has 2 free days in every month. You get 2 new days on the 1st of next month; to read “{section}” now, subscribe.",
+      "هر حساب در هر ماه 2 روز استفاده رایگان دارد. از روز اول ماه بعد دوباره 2 روز رایگان خواهید داشت؛ برای استفاده از «{section}» در این ماه، اشتراک تهیه کنید.",
+    ),
+    trialBanner: bi(
+      "Free day {n} of 2 this month. Copying and earlier handbooks are for subscribers.",
+      "روز رایگان {n} از 2 در این ماه. کپی محتوا و دانلود هندبوک‌های گذشته فقط برای مشترکین است.",
+    ),
+    trialBuy: bi("Subscribe", "خرید اشتراک"),
   },
   admin: {
     title: bi("Admin panel", "پنل مدیریت"),
@@ -409,6 +426,19 @@ export const account = {
       today: bi("Today", "امروز"),
       last: bi("Last download", "آخرین دانلود"),
       free: bi("free this week", "رایگان این هفته"),
+    },
+    metering: {
+      title: bi("Free days and SOP copies this month", "روزهای رایگان و کپی SOP در این ماه"),
+      lead: bi(
+        "Each signed-in reader without a subscription has 2 free days a month; each subscriber copies 10 QA and 10 QC SOPs a month. Several networks behind one account can mean a shared account.",
+        "هر کاربر بدون اشتراک در هر ماه 2 روز رایگان دارد و هر مشترک در هر ماه 10 SOP از QA و 10 SOP از QC کپی می‌کند. تعداد زیاد شبکه‌ها برای یک حساب می‌تواند نشانه استفاده مشترک از حساب باشد.",
+      ),
+      empty: bi("Nothing yet this month.", "در این ماه هنوز موردی ثبت نشده است."),
+      user: bi("User", "کاربر"),
+      days: bi("Free days", "روز رایگان"),
+      qa: bi("QA SOPs", "SOP QA"),
+      qc: bi("QC SOPs", "SOP QC"),
+      ips: bi("Networks", "شبکه‌ها"),
     },
     testPayment: {
       title: bi("Gateway test payment", "پرداخت آزمایشی درگاه"),

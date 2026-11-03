@@ -1,22 +1,19 @@
-import { Suspense, type ReactNode } from "react";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { cookies } from "next/headers";
 import { ExternalLink } from "lucide-react";
 import { SheetHeader, SheetPage } from "@/components/excipient-sheet";
-import { CopyUnlock, SopCopyLock } from "@/components/sop-copy-lock";
+import { SopCopyLock } from "@/components/sop-copy-lock";
 import { BackLink, Container } from "@/components/ui";
 import { generalChaptersPage as page } from "@/content/general-chapters";
 import { copy, siteConfig } from "@/content/site";
 import { generalChapters, generalChapterSheets, type GeneralChapter, type SheetBlock } from "@/data";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
-import { getUser } from "@/lib/auth";
 import { chapterSlug } from "@/lib/chapter-slug";
 import { pageMetadata } from "@/lib/metadata";
 import { href } from "@/lib/paths";
-import { sectionsFor } from "@/lib/subscriptions";
 
 const t = page.sheet;
 const key = (c: GeneralChapter) => `${c.ph} ${c.code}`;
@@ -124,13 +121,6 @@ function sections(blocks: SheetBlock[]) {
   return out;
 }
 
-/** Copying the sheet text is for subscribers to the References section. */
-async function CopyAccess() {
-  await cookies(); // request-time check
-  const user = await getUser().catch(() => null);
-  const allowed = user ? (await sectionsFor(user.mobile).catch(() => new Set<string>())).has("references") : false;
-  return allowed && user ? <CopyUnlock targetId="gc-sheet" mark={Number(user.id)} /> : null;
-}
 
 const lockProps = (locale: Locale) => {
   const l = t.copyLock;
@@ -283,13 +273,10 @@ export default async function GeneralChapterSheet({ params }: PageProps<"/[lang]
       />
       <BackLink href={href(locale, "references/general-chapters")}>{t.back[locale]}</BackLink>
       <div className="mt-5">
-        {/* The sheet is rendered once, locked; for subscribers CopyAccess streams in and unlocks it. */}
-        <SopCopyLock locked {...lockProps(locale)}>
+        {/* Page text is for reading only, subscribers included. */}
+        <SopCopyLock {...lockProps(locale)} button={false}>
           {body()}
         </SopCopyLock>
-        <Suspense fallback={null}>
-          <CopyAccess />
-        </Suspense>
       </div>
     </Container>
   );

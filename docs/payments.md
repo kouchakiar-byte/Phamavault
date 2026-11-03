@@ -25,8 +25,20 @@ section paywall fit together, and which settings switch each part on.
    date. Buying the same individual sections again also extends.
 6. **Team users**: the team owner adds the mobiles of their colleagues (up to
    the number of seats); each signs up with that mobile and gets full access.
-7. **Paywall**: with `PAYWALL=on`, the 9 sections (and SOP pages) show a
-   subscribe card to anyone without access. Admins see everything.
+7. **Paywall**: with `PAYWALL=on`, the sections (and SOP pages) are for
+   subscribers who have them. Admins see everything.
+   - **Free days** (`src/lib/metering.ts`): a signed-in reader without the
+     section reads every section on 2 Tehran days per Jalali month (a day counts
+     once, whatever is read that day). Visitors who are not signed in are asked
+     to sign up first. Rows: `trial_days`.
+   - **Search engines**: Googlebot and Bingbot, verified by reverse and forward
+     DNS (`src/lib/search-bots.ts`), read the sections; the sections carry
+     `isAccessibleForFree: false` markup on `.pv-paywalled`.
+   - **Copying**: page text cannot be copied by anyone but an admin. Subscribers
+     to QA or QC copy SOPs with the "Copy SOP" button: 10 QA and 10 QC SOPs per
+     Jalali month (QC = `qc` and `mic` SOPs), checked on the server
+     (`copySop`, rows `sop_copies`); copying the same SOP again in the month is free.
+   - The admin page lists this month's free days and SOP copies per user.
 
 ## Settings (Liara → app → Settings → Environment variables)
 

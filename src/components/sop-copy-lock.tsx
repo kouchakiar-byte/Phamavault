@@ -1,65 +1,73 @@
 "use client";
 
-import { createContext, useEffect, useRef, useState, useSyncExternalStore, type ClipboardEvent as ReactClipboardEvent, type ReactNode } from "react";
+import { createContext, useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import Link from "next/link";
-import { Lock, X } from "lucide-react";
+import { Check, Copy, Lock, X } from "lucide-react";
+import { copySop } from "@/app/[lang]/qa/actions";
 import { watermark } from "@/lib/watermark";
-import { CopyButton } from "./copy-button";
 
 type Labels = { copy: string; copied: string; title: string; text: string; buy: string; plans: string; close: string };
+type QuotaLabels = { count: string; again: string; full: string; failed: string };
 
-/** Documents the signed-in reader may copy, by target id, with the reader's account id for the watermark. Filled by <CopyUnlock>, which streams in after the page. */
-const unlocked = new Map<string, number>();
+/** What a subscriber may copy: the reader's account id for the watermark and this month's SOP allowance. */
+type Unlock = { mark: number; code: string; used: number; limit: number };
+
+/** Documents the signed-in reader may copy, by target id. Filled by <CopyUnlock>, which streams in after the page. */
+const unlocked = new Map<string, Unlock>();
 const UNLOCK_EVENT = "pv-copy-unlock";
 const subscribe = (cb: () => void) => {
   window.addEventListener(UNLOCK_EVENT, cb);
   return () => window.removeEventListener(UNLOCK_EVENT, cb);
 };
 
-/** True inside an unlocked document, so nested sheets (SheetPage) can allow copying too. */
+/** Page text is never copyable (sheets nested in a document read this; it stays false). */
 export const CopyableContext = createContext(false);
 
 /**
- * Rendered (inside Suspense) only for readers who may copy. The document itself is rendered
- * once, locked, in the static page; this unlocks it, so the text is not sent twice.
+ * Rendered (inside Suspense) only for subscribers who may copy SOPs. The document itself is
+ * rendered once, locked, in the static page; this enables its copy button.
  */
-export function CopyUnlock({ targetId, mark }: { targetId: string; mark: number }) {
+export function CopyUnlock({ targetId, ...unlock }: { targetId: string } & Unlock) {
+  const { mark, code, used, limit } = unlock;
   useEffect(() => {
-    unlocked.set(targetId, mark);
+    unlocked.set(targetId, { mark, code, used, limit });
     window.dispatchEvent(new Event(UNLOCK_EVENT));
-  }, [targetId, mark]);
+  }, [targetId, mark, code, used, limit]);
   return null;
 }
 
+const fill = (text: string, used: number, limit: number) => text.replace("{used}", String(used)).replaceAll("{limit}", String(limit));
+
 /**
- * Wraps an SOP document. For readers without a subscription, selecting and
- * copying the text is blocked and the copy button explains how to get access.
+ * Wraps an SOP document (or, with `button={false}`, any other sheet). The text cannot be
+ * selected or copied by hand; subscribers copy an SOP whole with its button, which takes one
+ * copy from the month's allowance on the server first and adds the reader's invisible code.
  */
 export function SopCopyLock({
-  locked: lockedByDefault,
   targetId,
   buyHref,
   plansHref,
   labels,
+  quota,
+  button = true,
   children,
 }: {
-  locked: boolean;
+  locked?: boolean;
   targetId: string;
   buyHref: string;
   plansHref: string;
   labels: Labels;
+  quota?: QuotaLabels;
+  button?: boolean;
   children: ReactNode;
 }) {
   const [notice, setNotice] = useState(false);
   const box = useRef<HTMLDivElement>(null);
-  const opened = useSyncExternalStore(subscribe, () => unlocked.has(targetId), () => false);
-  const locked = lockedByDefault && !opened;
-  const mark = opened ? unlocked.get(targetId) : undefined;
+  const opened = useSyncExternalStore(subscribe, () => unlocked.get(targetId), () => undefined);
 
-  // Page-wide guard: a selection that reaches into the SOP (Ctrl+A, long-press on a phone,
+  // Page-wide guard: a selection that reaches into the document (Ctrl+A, long-press on a phone,
   // keyboard shortcuts) is cleared and the copy is cancelled.
   useEffect(() => {
-    if (!locked) return;
     const inside = () => {
       const sel = window.getSelection();
       const el = box.current;
@@ -72,7 +80,7 @@ export function SopCopyLock({
       e.preventDefault();
       e.clipboardData?.setData("text/plain", "");
       window.getSelection()?.removeAllRanges();
-      setNotice(true);
+      if (button) setNotice(true);
     };
     const onSelect = () => {
       if (inside()) window.getSelection()?.removeAllRanges();
@@ -90,38 +98,31 @@ export function SopCopyLock({
       document.removeEventListener("selectionchange", onSelect);
       document.removeEventListener("selectstart", onStart, true);
     };
-  }, [locked]);
+  }, [button]);
 
   const block = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    setNotice(true);
+    if (button) setNotice(true);
   };
-  // One wrapper in both states, so unlocking does not remount the document.
-  const guard = locked
-    ? { className: "select-none", style: { WebkitUserSelect: "none", WebkitTouchCallout: "none" } as const, onCopy: block, onCut: block, onContextMenu: block, onDragStart: block }
-    : mark !== undefined
-      ? {
-          // A subscriber's copy carries their account code invisibly (see lib/watermark).
-          onCopy: (e: ReactClipboardEvent<HTMLDivElement>) => {
-            const text = window.getSelection()?.toString() ?? "";
-            if (!text) return;
-            e.preventDefault();
-            e.clipboardData.setData("text/plain", watermark(text, mark));
-          },
-        }
-      : {};
   const doc = (
-    <div ref={box} {...guard}>
-      <CopyableContext.Provider value={!locked}>{children}</CopyableContext.Provider>
+    <div
+      ref={box}
+      className="select-none"
+      style={{ WebkitUserSelect: "none", WebkitTouchCallout: "none" }}
+      onCopy={block}
+      onCut={block}
+      onContextMenu={block}
+      onDragStart={block}
+    >
+      <CopyableContext.Provider value={false}>{children}</CopyableContext.Provider>
     </div>
   );
-  if (!locked) {
+  if (!button) return doc;
+  if (opened && quota) {
     return (
       <>
         {doc}
-        <div className="mt-6">
-          <CopyButton targetId={targetId} label={labels.copy} doneLabel={labels.copied} mark={mark} />
-        </div>
+        <QuotaCopyButton targetId={targetId} unlock={opened} labels={labels} quota={quota} />
       </>
     );
   }
@@ -170,5 +171,61 @@ export function SopCopyLock({
         )}
       </div>
     </>
+  );
+}
+
+function QuotaCopyButton({ targetId, unlock, labels, quota }: { targetId: string; unlock: Unlock; labels: Labels; quota: QuotaLabels }) {
+  const [used, setUsed] = useState(unlock.used);
+  const [state, setState] = useState<"idle" | "busy" | "done" | "full" | "failed">("idle");
+
+  async function run() {
+    const el = document.getElementById(targetId);
+    if (!el || state === "busy") return;
+    setState("busy");
+    const text = el.innerText.trim();
+    // The allowance is checked on the server before the text reaches the clipboard. The
+    // clipboard write starts inside the click (Safari needs that) and waits for the answer.
+    let answer: Awaited<ReturnType<typeof copySop>> | null = null;
+    const blob = copySop(unlock.code).then((r) => {
+      answer = r;
+      if (r.limit) setUsed(r.used);
+      if (!r.ok) {
+        // Shown at once: some browsers never settle a clipboard write whose data was refused.
+        setState(r.error ? "failed" : "full");
+        throw new Error("quota");
+      }
+      return new Blob([watermark(text, unlock.mark)], { type: "text/plain" });
+    });
+    try {
+      if (typeof ClipboardItem !== "undefined" && navigator.clipboard?.write) {
+        await navigator.clipboard.write([new ClipboardItem({ "text/plain": blob })]);
+      } else {
+        await navigator.clipboard.writeText(await (await blob).text());
+      }
+      setState("done");
+    } catch {
+      await blob.catch(() => null);
+      const r = answer as Awaited<ReturnType<typeof copySop>> | null;
+      if (!r || r.ok) setState("failed");
+    }
+  }
+
+  return (
+    <div className="mt-6 space-y-2">
+      <button
+        type="button"
+        onClick={run}
+        disabled={state === "busy"}
+        className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-5 py-2.5 text-sm font-semibold text-vault-900 transition hover:border-molecule-500 hover:text-molecule-700 disabled:opacity-60"
+      >
+        {state === "done" ? <Check className="size-4" aria-hidden="true" /> : <Copy className="size-4" aria-hidden="true" />}
+        {state === "done" ? labels.copied : labels.copy}
+      </button>
+      <p className="text-xs text-muted">
+        {fill(quota.count, used, unlock.limit)} · {quota.again}
+      </p>
+      {state === "full" && <p className="text-sm font-semibold text-red-700">{fill(quota.full, used, unlock.limit)}</p>}
+      {state === "failed" && <p className="text-sm text-red-700">{quota.failed}</p>}
+    </div>
   );
 }

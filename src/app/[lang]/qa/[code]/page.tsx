@@ -6,6 +6,7 @@ import { CopyUnlock, SopCopyLock } from "@/components/sop-copy-lock";
 import type { Locale } from "@/i18n/config";
 import { getUser } from "@/lib/auth";
 import { sectionsFor } from "@/lib/subscriptions";
+import { SOP_COPIES, sopBucket, sopCopiesUsed } from "@/lib/metering";
 import { PageHeader } from "@/components/page-header";
 import { Container } from "@/components/ui";
 import { pages } from "@/content/pages";
@@ -226,18 +227,17 @@ const lockProps = (locale: Locale) => ({
 });
 
 /**
- * Copying the SOP text is for subscribers to the QA or QC section; everyone else, admins
- * included, can read only (an admin who needs to copy can grant themselves a subscription).
+ * Copying an SOP is for subscribers to the QA or QC section, within the month's allowance;
+ * everyone else, admins included, can read only.
  */
-async function CopyAccess() {
+async function CopyAccess({ code, dep }: { code: string; dep: string }) {
   await cookies(); // request-time check
   const user = await getUser().catch(() => null);
-  let allowed = false;
-  if (user) {
-    const sections = await sectionsFor(user.mobile).catch(() => new Set<string>());
-    allowed = sections.has("qa") || sections.has("qc");
-  }
-  return allowed && user ? <CopyUnlock targetId="sop-doc" mark={Number(user.id)} /> : null;
+  if (!user) return null;
+  const sections = await sectionsFor(user.mobile).catch(() => new Set<string>());
+  if (!sections.has("qa") && !sections.has("qc")) return null;
+  const used = await sopCopiesUsed(user.id, sopBucket(dep)).catch(() => 0);
+  return <CopyUnlock targetId="sop-doc" mark={Number(user.id)} code={code} used={used} limit={SOP_COPIES} />;
 }
 
 export default async function SopPage({ params }: PageProps<"/[lang]/qa/[code]">) {
@@ -304,12 +304,20 @@ export default async function SopPage({ params }: PageProps<"/[lang]/qa/[code]">
       <Container className="py-12">
         {locale === "en" && <p className="text-sm text-muted">{page.inPersian.en}</p>}
 
-        {/* The SOP is rendered once, locked; for subscribers CopyAccess streams in and unlocks it. */}
-        <SopCopyLock locked {...lockProps(locale)}>
+        {/* The SOP is rendered once, locked; for subscribers CopyAccess streams in and enables its copy button. */}
+        <SopCopyLock
+          {...lockProps(locale)}
+          quota={{
+            count: page.quota[sopBucket(sop.dep)][locale],
+            again: page.quota.again[locale],
+            full: page.quota.full[locale],
+            failed: page.quota.failed[locale],
+          }}
+        >
           {doc}
         </SopCopyLock>
         <Suspense fallback={null}>
-          <CopyAccess />
+          <CopyAccess code={sop.code} dep={sop.dep} />
         </Suspense>
 
       </Container>

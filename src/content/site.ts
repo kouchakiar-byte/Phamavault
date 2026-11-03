@@ -45,6 +45,11 @@ export const copy = {
     ),
     buy: bi("Order a subscription", "ثبت سفارش اشتراک"),
     close: bi("Close", "بستن"),
+    subTitle: bi("Page text cannot be copied", "متن صفحه‌ها قابل کپی نیست"),
+    subText: bi(
+      "The site's content is for reading only. SOPs can be copied with the “Copy SOP” button on each SOP: 10 QA SOPs and 10 QC SOPs a month.",
+      "محتوای سایت فقط برای مطالعه است. SOPها را می‌توانید با دکمه «کپی SOP» در صفحه هر SOP کپی کنید: در هر ماه 10 SOP از QA و 10 SOP از QC.",
+    ),
   },
   slogan: bi("The Pharmaceutical Information Vault", "گنجینه اطلاعات داروسازی"),
   rights: bi(

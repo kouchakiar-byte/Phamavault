@@ -96,6 +96,25 @@ create table if not exists orders (
   paid_at timestamptz
 );
 create index if not exists orders_user_idx on orders(user_id);
+-- Free reading days of signed-in readers without the section: 2 Tehran days per Jalali month.
+create table if not exists trial_days (
+  user_id bigint not null references users(id) on delete cascade,
+  day text not null,
+  month text not null,
+  ip_hash text,
+  created_at timestamptz not null default now(),
+  primary key (user_id, day)
+);
+create index if not exists trial_days_month_idx on trial_days(month, user_id);
+-- SOPs a subscriber copied: 10 per Jalali month in each bucket (qa, qc); copying the same SOP again in the month is free.
+create table if not exists sop_copies (
+  user_id bigint not null references users(id) on delete cascade,
+  month text not null,
+  bucket text not null,
+  code text not null,
+  created_at timestamptz not null default now(),
+  primary key (user_id, month, code)
+);
 -- Admin-only gateway tests: a small real payment that checks request, return and verify, and grants nothing.
 create table if not exists test_payments (
   id bigserial primary key,
