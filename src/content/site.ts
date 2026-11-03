@@ -69,7 +69,7 @@ export const copy = {
   hero: {
     stats: {
       suppliers: bi("suppliers & makers", "تأمین‌کننده و تولیدکننده"),
-      products: bi("products in the supplier bank", "محصول در بانک تأمین"),
+      products: bi("raw-material listings in the supplier bank", "قلم ماده اولیه در بانک تأمین"),
       materials: bi("raw materials with specs", "ماده اولیه با مشخصات"),
       sections: bi("specialised sections", "بخش تخصصی"),
     },
