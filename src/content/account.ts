@@ -5,6 +5,7 @@ export const account = {
   nav: {
     account: bi("My account", "حساب کاربری"),
     signIn: bi("Sign in", "ورود"),
+    join: bi("Sign in / Sign up", "ورود / ثبت‌نام"),
   },
   auth: {
     loginTitle: bi("Sign in", "ورود به حساب"),

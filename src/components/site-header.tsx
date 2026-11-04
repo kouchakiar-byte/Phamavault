@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { ChevronDown, Download, Sparkles, UserRound } from "lucide-react";
-import { account } from "@/content/account";
+import { ChevronDown, Download, Sparkles } from "lucide-react";
 import { freeHandbookCopy, freeHandbooks } from "@/content/free-handbooks";
 import { copy } from "@/content/site";
 import { getSection, sectionGroups, sections, supplierBankShort } from "@/content/sections";
 import { referenceLabels } from "@/content/references";
 import { getLocale } from "@/i18n/locale";
 import { href } from "@/lib/paths";
+import { AccountLink } from "./account-link";
 import { LanguageSwitcher } from "./language-switcher";
 import { HoverMenu } from "./hover-menu";
 import { Logo } from "./logo";
@@ -34,10 +34,13 @@ export async function SiteHeader() {
           </Link>
           <Link
             href={href(locale)}
-            className="whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-vault-800 transition hover:text-molecule-700"
+            className="hidden whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-vault-800 transition hover:text-molecule-700 min-[460px]:block"
           >
             {nav.home[locale]}
           </Link>
+          <div className="lg:hidden">
+            <AccountLink locale={locale} variant="header" />
+          </div>
         </div>
 
         <nav aria-label={nav.menu[locale]} className="hidden items-center gap-1 lg:flex">
@@ -117,14 +120,9 @@ export async function SiteHeader() {
           <div className="hidden sm:block">
             <LanguageSwitcher current={locale} label={nav.language[locale]} />
           </div>
-          <Link
-            href={href(locale, "account")}
-            aria-label={account.nav.account[locale]}
-            className="hidden items-center gap-2 whitespace-nowrap rounded-full bg-vault-900 px-3 py-2.5 text-sm font-semibold text-white transition hover:bg-vault-800 lg:inline-flex min-[1340px]:px-5"
-          >
-            <UserRound className="size-4" aria-hidden="true" />
-            <span className="hidden min-[1340px]:inline">{account.nav.account[locale]}</span>
-          </Link>
+          <div className="hidden lg:block">
+            <AccountLink locale={locale} variant="header" />
+          </div>
           <MobileNav
             menuLabel={nav.menu[locale]}
             closeLabel={nav.close[locale]}
@@ -133,8 +131,9 @@ export async function SiteHeader() {
               ...sections.map((s) => ({ href: href(locale, s.href), label: s.title[locale] })),
               { href: href(locale, "free-handbooks"), label: freeHandbookCopy.pageTitle[locale] },
               { href: href(locale, "#plans"), label: nav.plans[locale] },
-              { href: href(locale, "account"), label: account.nav.account[locale] },
             ]}
+            cta={<AccountLink locale={locale} variant="menu" />}
+            ctaAfter={1 + sections.length}
             footer={<LanguageSwitcher current={locale} label={nav.language[locale]} />}
           />
         </div>

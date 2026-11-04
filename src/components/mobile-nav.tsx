@@ -11,9 +11,12 @@ type Props = {
   menuLabel: string;
   closeLabel: string;
   footer?: ReactNode;
+  /** A prominent link (sign in / sign up) placed after the first `ctaAfter` items. */
+  cta?: ReactNode;
+  ctaAfter?: number;
 };
 
-export function MobileNav({ items, menuLabel, closeLabel, footer }: Props) {
+export function MobileNav({ items, menuLabel, closeLabel, footer, cta, ctaAfter = items.length }: Props) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -35,8 +38,13 @@ export function MobileNav({ items, menuLabel, closeLabel, footer }: Props) {
           className="absolute inset-x-0 top-full border-b border-line bg-white shadow-lg"
         >
           <ul className="mx-auto max-w-7xl px-4 py-3">
-            {items.map((item) => (
+            {items.map((item, i) => (
               <li key={item.href}>
+                {cta && i === ctaAfter && (
+                  <div className="my-3 px-3" onClick={() => setOpen(false)}>
+                    {cta}
+                  </div>
+                )}
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
