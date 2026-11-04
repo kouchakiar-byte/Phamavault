@@ -9123,6 +9123,81 @@
    ],
    "via": 1,
    "partial": 1
+  },
+  {
+   "n": "آر.ان.آر لب",
+   "e": "RNR Lab",
+   "t": "t",
+   "c": [
+    "lab",
+    "std",
+    "pkg"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-68352000"
+   ],
+   "mail": "info@rnrlab.com",
+   "web": "https://www.rnrlab.com/",
+   "src": "https://www.rnrlab.com/",
+   "note": "واردات و عامل فروش مواد شیمیایی و ملزومات آزمایشگاهی؛ برندها: Merck (مواد شیمیایی و محیط‌های کشت میکروبی)، Sigma-Aldrich، PanReac AppliChem، Sartorius (فیلترهای ممبران)، Gibco، BD، BASF، Simax و Glassco (شیشه‌آلات)؛ لوگوی neoFroxx و First Rubber هم روی بروشور شرکت آمده است؛ اطلاعات از بروشور شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)",
+   "p": [
+    "مواد شیمیایی آزمایشگاهی Merck|Merck laboratory chemicals|Merck",
+    "محیط کشت میکروبی Merck|Merck microbiological culture media|Merck",
+    "مواد شیمیایی Sigma-Aldrich|Sigma-Aldrich chemicals|Sigma-Aldrich",
+    "مواد شیمیایی PanReac AppliChem|PanReac AppliChem chemicals|PanReac AppliChem",
+    "فیلتر ممبران Sartorius|Sartorius membrane filters|Sartorius",
+    "محصولات Gibco|Gibco products|Gibco",
+    "محصولات BD|BD products|BD",
+    "محصولات BASF|BASF products|BASF",
+    "ویال شیشه‌ای دارویی|Pharmaceutical glass vials",
+    "شیشه‌آلات آزمایشگاهی Simax و Glassco|Simax and Glassco laboratory glassware|Simax",
+    "مواد شیمیایی تخصصی و کیت‌های تخصصی|Specialty chemicals and kits",
+    "شیشه‌آلات و ملزومات آزمایشگاهی اروپایی|European laboratory glassware and supplies"
+   ]
+  },
+  {
+   "n": "پرتو زیست",
+   "e": "Parto Zist",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-42108",
+    "0933-624-4646"
+   ],
+   "web": "https://www.partoz.com/",
+   "src": "https://www.partoz.com/",
+   "note": "تجهیزات آنالیتیکال و اندازه‌گیری (Analytical & Measuring Instruments)؛ شماره 0933-624-4646 واتس‌اپ شرکت است؛ اطلاعات از تابلوی شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)؛ برندهای نمایندگی هنوز از سایت یا کاتالوگ خود شرکت تأیید نشده است",
+   "p": [
+    "تجهیزات آنالیتیکال آزمایشگاهی|Analytical instruments",
+    "تجهیزات اندازه‌گیری آزمایشگاهی|Measuring instruments"
+   ],
+   "partial": 1
+  },
+  {
+   "n": "عرش آریا",
+   "e": "Arsh Aria Co.",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "web": "https://sa-aria.com/",
+   "src": "https://sa-aria.com/",
+   "note": "تجهیزات اندازه‌گیری آزمایشگاهی (Engineering Solution)؛ اطلاعات از بروشور شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)؛ نام فارسی و برندهای نمایندگی هنوز از سایت خود شرکت تأیید نشده است",
+   "p": [
+    "تیتراتور Karl Fischer|Karl Fischer titrator",
+    "کدورت‌سنج (Turbidity meter)|Turbidity meter",
+    "فتومتر (Photometer)|Photometer"
+   ],
+   "partial": 1
   }
  ],
  "provinceOrder": [

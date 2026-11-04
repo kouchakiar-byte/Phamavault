@@ -58,6 +58,7 @@ export const pages = {
       bio: bi("Biologics", "فرآورده‌های بیولوژیک"),
       std: bi("Reference standards and reagents", "رفرنس استانداردها و ریجنت‌ها"),
       pkg: bi("Pharmaceutical packaging", "بسته‌بندی دارویی"),
+      lab: bi("Laboratory instruments, chemicals and supplies", "تجهیزات، مواد شیمیایی و ملزومات آزمایشگاهی"),
     } as Record<string, ReturnType<typeof bi>>,
     sort: bi("Sort", "مرتب‌سازی"),
     sorts: {
