@@ -15,17 +15,26 @@ const cleanPhone = (value: string) =>
     .replace(/[٠-٩]/g, (d) => String("٠١٢٣٤٥٦٧٨٩".indexOf(d)))
     .replace(/[^\d+]/g, "");
 
-export async function requestCtd(_: ServiceRequestState, form: FormData): Promise<ServiceRequestState> {
+export async function requestCtd(state: ServiceRequestState, form: FormData): Promise<ServiceRequestState> {
+  return saveRequest("ctd", form);
+}
+
+/** A price enquiry from the supplier bank: what is needed, how much, and who to call back. */
+export async function requestQuote(state: ServiceRequestState, form: FormData): Promise<ServiceRequestState> {
+  return saveRequest("quote", form);
+}
+
+async function saveRequest(kind: "ctd" | "quote", form: FormData): Promise<ServiceRequestState> {
   // A hidden field people never see; bots that fill every input are dropped quietly.
   if (field(form, "website", 200)) return { ok: true };
   const name = field(form, "name", 120);
   const phone = cleanPhone(field(form, "phone", 40));
-  if (!name || !phone) return { error: "missing" };
+  if (!name || !phone || (kind === "quote" && !field(form, "product", 300))) return { error: "missing" };
   if (phone.replace(/\D/g, "").length < 8) return { error: "phone" };
   if (!databaseConfigured()) return { error: "unavailable" };
   try {
     await saveServiceRequest({
-      kind: "ctd",
+      kind,
       name,
       phone,
       company: optional(field(form, "company", 160)),

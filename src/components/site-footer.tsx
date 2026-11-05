@@ -9,6 +9,7 @@ import { href } from "@/lib/paths";
 import { contactLabels, legalNav } from "@/content/legal";
 import { BrandName } from "./brand";
 import { EnamadSeal } from "./enamad-seal";
+import { labBrandsCopy } from "@/content/lab-brands";
 import { Logo } from "./logo";
 import { Container } from "./ui";
 
@@ -23,7 +24,7 @@ export async function SiteFooter() {
           <p className="mt-5 max-w-sm text-sm leading-relaxed">{copy.footer.about[locale]}</p>
           <a
             href={`mailto:${siteConfig.email}`}
-            className="mt-5 inline-block text-sm font-medium text-molecule-400 hover:text-molecule-100"
+            className="mt-4 inline-block py-1 text-sm font-medium text-molecule-400 hover:text-molecule-100"
             dir="ltr"
           >
             {siteConfig.email}
@@ -36,7 +37,7 @@ export async function SiteFooter() {
                 .map((n, i) => (
                   <span key={n}>
                     {i > 0 && <span className="text-vault-100/40"> – </span>}
-                    <a href={`tel:${n.replace(/\D/g, "")}`} dir="ltr" className="font-medium text-white hover:text-molecule-400">
+                    <a href={`tel:${n.replace(/\D/g, "")}`} dir="ltr" className="inline-block py-1 font-medium text-white hover:text-molecule-400">
                       {n}
                     </a>
                   </span>
@@ -47,35 +48,42 @@ export async function SiteFooter() {
         {sectionGroups.map((g) => (
           <div key={g.key}>
             <h2 className="text-sm font-bold text-white">{g.title[locale]}</h2>
-            <ul className="mt-4 space-y-2.5 text-sm">
+            <ul className="mt-3 space-y-1 text-sm">
               {sections
                 .filter((s) => s.group === g.key)
                 .map((s) => (
                   <li key={s.slug}>
-                    <Link href={href(locale, s.href)} className="hover:text-molecule-400">
+                    <Link href={href(locale, s.href)} className="inline-block py-1 hover:text-molecule-400">
                       {s.title[locale]}
                     </Link>
                   </li>
                 ))}
+              {g.key === "databases" && (
+                <li>
+                  <Link href={href(locale, "lab-brands")} className="inline-block py-1 hover:text-molecule-400">
+                    {labBrandsCopy.footer[locale]}
+                  </Link>
+                </li>
+              )}
               {g.key === "knowledge" && (
                 <>
                   <li>
-                    <Link href={href(locale, "free-handbooks")} className="font-semibold text-capsule-400 hover:text-capsule-100">
+                    <Link href={href(locale, "free-handbooks")} className="inline-block py-1 font-semibold text-capsule-400 hover:text-capsule-100">
                       {freeHandbookCopy.pageTitle[locale]}
                     </Link>
                   </li>
                   <li>
-                    <Link href={href(locale, "questions")} className="hover:text-molecule-400">
+                    <Link href={href(locale, "questions")} className="inline-block py-1 hover:text-molecule-400">
                       {questionsCopy.title[locale]}
                     </Link>
                   </li>
                   <li>
-                    <Link href={href(locale, "coa-review")} className="hover:text-molecule-400">
+                    <Link href={href(locale, "coa-review")} className="inline-block py-1 hover:text-molecule-400">
                       {coaCopy.title[locale]}
                     </Link>
                   </li>
                   <li>
-                    <Link href={href(locale, "#plans")} className="hover:text-molecule-400">
+                    <Link href={href(locale, "#plans")} className="inline-block py-1 hover:text-molecule-400">
                       {copy.footer.plans[locale]}
                     </Link>
                   </li>
@@ -90,7 +98,7 @@ export async function SiteFooter() {
           <div className="space-y-3">
             <nav aria-label={legalNav.terms[locale]} className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
               {(["about", "contact", "references", "terms", "privacy"] as const).map((key) => (
-                <Link key={key} href={href(locale, key)} className="hover:text-molecule-400">
+                <Link key={key} href={href(locale, key)} className="inline-block py-1 hover:text-molecule-400">
                   {legalNav[key][locale]}
                 </Link>
               ))}

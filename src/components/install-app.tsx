@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useSyncExternalStore } from "react";
+import { usePathname } from "next/navigation";
 import { Download, Share, X } from "lucide-react";
 import { installCopy as t } from "@/content/install";
 import type { Locale } from "@/i18n/config";
@@ -11,6 +12,21 @@ type InstallEvent = Event & { prompt: () => Promise<void>; userChoice: Promise<{
 
 const DISMISS_KEY = "pv-install-dismissed";
 const DISMISS_DAYS = 30;
+/** The offer waits until the visitor has opened a few pages, so it never covers the first screen. */
+const VIEWS_KEY = "pv-page-views";
+const VIEWS_BEFORE_OFFER = 3;
+const VIEWS_EVENT = "pv-page-view";
+const subscribeViews = (cb: () => void) => {
+  window.addEventListener(VIEWS_EVENT, cb);
+  return () => window.removeEventListener(VIEWS_EVENT, cb);
+};
+function pageViews(): number {
+  try {
+    return Number(localStorage.getItem(VIEWS_KEY) || 0);
+  } catch {
+    return 0;
+  }
+}
 const noSubscribe = () => () => {};
 
 const standalone = () =>
@@ -29,12 +45,15 @@ function dismissedRecently(): boolean {
 /**
  * A small corner pill that offers to install the site as an app: Chrome and
  * Edge use their own install dialog; iPhone and iPad (no install event) get the
- * Share → Add to Home Screen steps. Hidden once installed or dismissed.
+ * Share → Add to Home Screen steps. Shown from the third page a visitor opens
+ * (never on the first screen), and hidden once installed or dismissed.
  */
 export function InstallApp({ locale }: { locale: Locale }) {
   const [event, setEvent] = useState<InstallEvent | null>(null);
   const [closed, setClosed] = useState(false);
   const [showSteps, setShowSteps] = useState(false);
+  const pathname = usePathname();
+  const engaged = useSyncExternalStore(subscribeViews, () => pageViews() >= VIEWS_BEFORE_OFFER, () => false);
   // Read on the client only; the server and the first render see "hidden".
   const hidden = useSyncExternalStore(noSubscribe, () => standalone() || dismissedRecently(), () => true);
   const ios = useSyncExternalStore(noSubscribe, () => /iphone|ipad|ipod/i.test(navigator.userAgent), () => false);
@@ -53,7 +72,15 @@ export function InstallApp({ locale }: { locale: Locale }) {
     };
   }, []);
 
-  if (hidden || closed || (!event && !ios)) return null;
+  // Count the pages this visitor has opened (in-app navigations included).
+  useEffect(() => {
+    try {
+      localStorage.setItem(VIEWS_KEY, String(pageViews() + 1));
+      window.dispatchEvent(new Event(VIEWS_EVENT));
+    } catch {}
+  }, [pathname]);
+
+  if (hidden || closed || !engaged || (!event && !ios)) return null;
 
   const dismiss = () => {
     try {

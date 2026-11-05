@@ -146,7 +146,8 @@ export default async function HomePage() {
   const locale = await getLocale();
   const counts: Counts = {
     suppliers: suppliers.companies.length,
-    supplierMaterials: suppliers.companies.reduce((n, c) => n + c.p.length, 0),
+    // Raw-material listings only: companies that sell nothing but lab equipment are not counted here.
+    supplierMaterials: suppliers.companies.filter((c) => c.c.some((k) => k !== "lab")).reduce((n, c) => n + c.p.length, 0),
     materials: rawMaterials.items.length,
   };
   const { hero, departments, sectionsIntro, ctdService, databases, toolsShowcase, howItWorks, plans, faq, contact } = copy;
@@ -340,8 +341,8 @@ export default async function HomePage() {
                     <h3 className="font-bold text-vault-900">{d.title[locale]}</h3>
                   </div>
                   <ul className="mt-5 space-y-3">
-                    {d.points.map((pt) => (
-                      <li key={pt.en} className="flex gap-2.5 text-sm leading-relaxed text-muted">
+                    {d.points.map((pt, i) => (
+                      <li key={pt.en} className={`${i > 2 ? "hidden sm:flex" : "flex"} gap-2.5 text-sm leading-relaxed text-muted`}>
                         <Check className="mt-0.5 size-4 shrink-0 text-molecule-600" aria-hidden="true" />
                         {pt[locale]}
                       </li>
@@ -358,34 +359,34 @@ export default async function HomePage() {
       <section id="sections" className="scroll-mt-20 py-20 lg:py-28">
         <Container>
           <SectionHead eyebrow={sectionsIntro.eyebrow[locale]} title={sectionsIntro.title} locale={locale} lead={sectionsIntro.lead[locale]} />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 lg:grid-cols-3">
             {platformSections.map(({ slug, href: path, plate, icon: Icon, title, description }) => {
               const highlight = sectionHighlight(slug, num, counts);
               return (
                 <article
                   key={slug}
-                  className="group relative flex flex-col rounded-card border border-vault-100 bg-vault-50 p-7 shadow-sm shadow-vault-900/5 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-capsule-50 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-capsule-100 hover:shadow-xl hover:shadow-capsule-500/25 focus-within:scale-[0.97] focus-within:border-capsule-400 motion-reduce:transform-none"
+                  className="group relative flex flex-col rounded-card border border-vault-100 bg-vault-50 p-4 shadow-sm sm:p-7 shadow-vault-900/5 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-capsule-50 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-capsule-100 hover:shadow-xl hover:shadow-capsule-500/25 focus-within:scale-[0.97] focus-within:border-capsule-400 motion-reduce:transform-none"
                 >
                   <div className="flex items-start justify-between">
-                    <span className="flex size-12 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition duration-300 group-hover:bg-gradient-to-br group-hover:bg-capsule-400 group-hover:from-capsule-400 group-hover:to-capsule-600 group-hover:text-vault-950">
+                    <span className="flex size-10 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition sm:size-12 duration-300 group-hover:bg-gradient-to-br group-hover:bg-capsule-400 group-hover:from-capsule-400 group-hover:to-capsule-600 group-hover:text-vault-950">
                       <Icon className="size-6" aria-hidden="true" />
                     </span>
-                    <span className="rounded border border-line bg-white/60 px-2 py-0.5 font-mono text-xs tracking-widest text-muted transition group-hover:border-capsule-400 group-hover:text-capsule-700" dir="ltr">
+                    <span className="hidden rounded border border-line bg-white/60 px-2 py-0.5 font-mono text-xs tracking-widest text-muted transition group-hover:border-capsule-400 group-hover:text-capsule-700 sm:inline" dir="ltr">
                       {plate}
                     </span>
                   </div>
-                  <h3 className="mt-6 text-lg font-bold text-vault-900">
+                  <h3 className="mt-4 text-sm font-bold leading-snug text-vault-900 sm:mt-6 sm:text-lg">
                     <Link href={href(locale, path)} className="after:absolute after:inset-0">
                       <BiTitle text={title} locale={locale} stacked secondaryClassName="mt-0.5 text-[0.72em] font-medium" />
                     </Link>
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">{description[locale]}</p>
+                  <p className="mt-3 hidden text-sm leading-relaxed text-muted sm:block">{description[locale]}</p>
                   {highlight && (
-                    <p className="mt-4 self-start rounded-md bg-molecule-50 px-2.5 py-1 text-xs font-bold text-molecule-700 transition group-hover:bg-white/70 group-hover:text-capsule-700">
+                    <p className="mt-3 self-start rounded-md bg-molecule-50 px-2.5 py-1 text-xs font-bold text-molecule-700 transition group-hover:bg-white/70 group-hover:text-capsule-700">
                       {highlight[locale]}
                     </p>
                   )}
-                  <span className="mt-auto pt-6 text-sm font-bold text-molecule-700 transition group-hover:text-capsule-700">{sectionsIntro.open[locale]}</span>
+                  <span className="mt-auto hidden pt-6 text-sm font-bold text-molecule-700 transition group-hover:text-capsule-700 sm:block">{sectionsIntro.open[locale]}</span>
                 </article>
               );
             })}
@@ -602,8 +603,12 @@ export default async function HomePage() {
           </div>
 
           {/* Comparison table */}
-          <BiTitle as="h3" text={plans.compareTitle} locale={locale} className="mt-20 text-2xl font-bold text-vault-900" />
-          <div className="mt-6 overflow-x-auto rounded-card border border-line">
+          <details className="group/cmp mt-16 lg:mt-20">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-card border border-line bg-paper px-5 py-4 transition hover:border-molecule-400 [&::-webkit-details-marker]:hidden">
+              <BiTitle as="h3" text={plans.compareTitle} locale={locale} className="text-lg font-bold text-vault-900 sm:text-2xl" />
+              <ChevronDown className="size-5 shrink-0 text-molecule-600 transition group-open/cmp:rotate-180" aria-hidden="true" />
+            </summary>
+          <div className="mt-4 overflow-x-auto rounded-card border border-line">
             <table className="db" style={{ minWidth: 0 }}>
               <thead>
                 <tr>
@@ -635,6 +640,7 @@ export default async function HomePage() {
               </tbody>
             </table>
           </div>
+          </details>
 
           <h3 className="mt-14 text-sm font-bold text-muted">{plans.ordersTitle[locale]}</h3>
           <div className="mt-4 grid gap-px overflow-hidden rounded-card border border-line bg-line md:grid-cols-3">

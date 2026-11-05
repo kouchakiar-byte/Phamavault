@@ -15,12 +15,12 @@ export const pages = {
   },
   suppliers: {
     title: bi(
-      "Suppliers & manufacturers of pharmaceutical, supplement and cosmetic raw materials",
-      "بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی (Suppliers)",
+      "Suppliers & manufacturers of pharmaceutical, supplement and cosmetic raw materials and laboratory equipment",
+      "بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل، آرایشی‌بهداشتی و تجهیزات آزمایشگاهی (Suppliers)",
     ),
     lead: bi(
-      "Domestic manufacturers and importers in Iran of pharmaceutical raw materials (APIs and excipients), vitamins and mineral salts, supplement ingredients and amino acids, cosmetic raw materials, pharmaceutical packaging, and laboratory reference standards and reagents. Search by Persian or English name, salt form or synonym.",
-      "تولیدکنندگان داخلی و واردکنندگان مواد اولیه دارویی (مواد مؤثره و مواد جانبی)، ویتامین‌ها و مینرال‌ها، مواد اولیه مکمل و آمینواسیدها، مواد اولیه آرایشی‌بهداشتی، بسته‌بندی دارویی، و رفرنس استانداردها و ریجنت‌های آزمایشگاهی در ایران. با نام فارسی یا انگلیسی، فرم نمکی یا مترادف جستجو کنید.",
+      "Domestic manufacturers and importers in Iran of pharmaceutical raw materials (APIs and excipients), vitamins and mineral salts, supplement ingredients and amino acids, cosmetic raw materials, pharmaceutical packaging, laboratory reference standards and reagents, and laboratory instruments and supplies with their brand agencies. Search by Persian or English name, salt form, synonym, brand or instrument.",
+      "تولیدکنندگان داخلی و واردکنندگان مواد اولیه دارویی (مواد مؤثره و مواد جانبی)، ویتامین‌ها و مینرال‌ها، مواد اولیه مکمل و آمینواسیدها، مواد اولیه آرایشی‌بهداشتی، بسته‌بندی دارویی، رفرنس استانداردها و ریجنت‌ها، و تجهیزات و ملزومات آزمایشگاهی همراه با نمایندگی برندها در ایران. با نام فارسی یا انگلیسی، فرم نمکی، مترادف، برند یا نام دستگاه جستجو کنید.",
     ),
     placeholder: bi(
       "e.g. Vitamin B1, thiamine hydrochloride, Zinc sulfate, polysorbate 80",

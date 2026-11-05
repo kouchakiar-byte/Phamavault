@@ -225,8 +225,8 @@ export const copy = {
     eyebrow: bi("Inside the vault", "بخش‌های پلتفرم"),
     title: bi("Twelve specialised sections, one integrated platform", "دوازده بخش تخصصی در یک پلتفرم یکپارچه"),
     lead: bi(
-      "The sections are designed to work together: from an excipient you move to its suppliers, to the calculation that uses it and to the regulatory requirement that governs it.",
-      "بخش‌ها برای کار در کنار هم طراحی شده‌اند: از یک ماده جانبی به تأمین‌کنندگان آن، به محاسبه‌ای که در آن به کار می‌رود و به الزام رگولاتوری حاکم بر آن می‌رسید.",
+      "The sections are designed to work together: from an excipient you move to its suppliers, to the calculation that uses it and to the regulatory requirement that governs it. Every plan opens 10 of them; the pharmacy section comes with the pharmacy plan, and CTD compilation is a separate service.",
+      "بخش‌ها برای کار در کنار هم طراحی شده‌اند: از یک ماده جانبی به تأمین‌کنندگان آن، به محاسبه‌ای که در آن به کار می‌رود و به الزام رگولاتوری حاکم بر آن می‌رسید. هر طرح اشتراک 10 بخش را باز می‌کند؛ بخش داروخانه با اشتراک داروخانه باز می‌شود و تدوین CTD خدمتی جداگانه است.",
     ),
     open: bi("Open section", "ورود به بخش"),
   },
@@ -234,8 +234,8 @@ export const copy = {
   supplierSpotlight: {
     badge: bi("Featured", "ویژه"),
     lead: bi(
-      "Find who manufactures or imports a raw material in Iran — APIs, excipients, vitamins, mineral salts, supplement and cosmetic ingredients — with phone, email, website and the source of every record.",
-      "پیدا کنید چه شرکتی یک ماده اولیه را در ایران تولید یا وارد می‌کند — مواد مؤثره، مواد جانبی، ویتامین‌ها، مینرال‌ها و مواد اولیه مکمل و آرایشی‌بهداشتی — همراه با تلفن، ایمیل، وب‌سایت و منبع هر رکورد.",
+      "Find who manufactures or imports a raw material or a laboratory instrument in Iran — APIs, excipients, vitamins, mineral salts, supplement and cosmetic ingredients, lab equipment and their brand agencies — with phone, email and website.",
+      "پیدا کنید چه شرکتی یک ماده اولیه یا دستگاه آزمایشگاهی را در ایران تولید یا وارد می‌کند؛ مواد مؤثره، مواد جانبی، ویتامین‌ها، مینرال‌ها، مواد اولیه مکمل و آرایشی‌بهداشتی، و تجهیزات آزمایشگاهی همراه با نمایندگی برندها، با تلفن، ایمیل و وب‌سایت.",
     ),
     search: bi("Search", "جستجو"),
     stats: {
