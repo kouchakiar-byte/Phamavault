@@ -69,7 +69,7 @@ export const pages = {
       name: bi("Company name", "نام شرکت"),
     },
     telOnly: bi("Only with a phone number", "فقط دارای تلفن"),
-    countAll: bi("{n} companies in the directory — {p} materials listed", "{n} شرکت در پایگاه داده — {p} قلم ماده ثبت‌شده"),
+    countAll: bi("{n} companies in the directory — {p} materials, standards and lab items listed", "{n} شرکت در پایگاه داده — {p} قلم ماده اولیه، استاندارد و تجهیزات ثبت‌شده"),
     countQuery: bi("{n} companies for “{q}” — {t} with a phone number", "{n} شرکت برای «{q}» — {t} مورد با تلفن"),
     empty: bi(
       "No supplier is recorded for “{q}”. Try the English name or another salt form of the material, or remove the filters.",

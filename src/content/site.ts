@@ -74,7 +74,7 @@ export const copy = {
   hero: {
     stats: {
       suppliers: bi("suppliers & makers", "تأمین‌کننده و تولیدکننده"),
-      products: bi("raw-material listings in the supplier bank", "قلم ماده اولیه در بانک تأمین"),
+      products: bi("raw materials, reference standards and lab equipment in the supplier bank", "قلم ماده اولیه، رفرنس استاندارد و تجهیزات آزمایشگاهی در بانک تأمین"),
       materials: bi("raw materials with specs", "ماده اولیه با مشخصات"),
       sections: bi("specialised sections", "بخش تخصصی"),
     },
@@ -240,7 +240,7 @@ export const copy = {
     search: bi("Search", "جستجو"),
     stats: {
       companies: bi("companies", "شرکت"),
-      materials: bi("material entries", "قلم ماده"),
+      materials: bi("materials and lab items", "قلم ماده و تجهیزات"),
       manufacturers: bi("domestic manufacturers", "تولیدکننده داخلی"),
       importers: bi("importers and traders", "واردکننده و بازرگانی"),
     },
@@ -257,7 +257,7 @@ export const copy = {
     ),
     units: {
       excipients: bi("excipients", "ماده جانبی"),
-      suppliers: bi("suppliers · {p} materials", "تأمین‌کننده · {p} قلم ماده"),
+      suppliers: bi("suppliers · {p} materials", "تأمین‌کننده · {p} قلم ماده و تجهیزات"),
       materials: bi("APIs, vitamins and mineral salts", "ماده مؤثره، ویتامین و مینرال"),
       qa: bi("standard operating procedures", "دستورالعمل استاندارد"),
     },
