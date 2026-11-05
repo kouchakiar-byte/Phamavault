@@ -767,7 +767,9 @@
    "e": "Dr. Mojallali Chemical Complex",
    "t": "m",
    "c": [
-    "exc"
+    "exc",
+    "std",
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -776,7 +778,7 @@
     "021-88177765",
     "021-88177768"
    ],
-   "mail": "hr@drm-chem.com",
+   "mail": "sales.department@drm-chem.com",
    "src": "https://cppsynd.com/",
    "p": [
     "دی پتاسیم هیدروژن فسفات|Dipotassium hydrogen phosphate",
@@ -798,7 +800,11 @@
     "اسید سیتریک|Citric acid",
     "سدیم لوریل سولفات|Sodium dodecyl sulfate",
     "سدیم استات|Sodium acetate"
-   ]
+   ],
+   "web": "https://www.drm-chem.com/",
+   "addr": "تهران، خیابان سهروردی شمالی، بالاتر از خیابان بهشتی، کوچه افشارجوان، پلاک 7",
+   "note": "تولیدکننده مواد شیمیایی آزمایشگاهی و دارویی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "hi": 1
   },
   {
    "n": "فرهیختگان زرنام",
@@ -4754,12 +4760,15 @@
     "cos",
     "sup",
     "min",
-    "api"
+    "api",
+    "lab",
+    "std"
    ],
-   "prov": "نامشخص",
-   "city": "—",
+   "prov": "تهران",
+   "city": "تهران",
    "tel": [
-    "021-62894000"
+    "021-62894000",
+    "021-91070871"
    ],
    "web": "https://tamadkala.com/",
    "src": "https://tamadkala.com/",
@@ -4778,10 +4787,16 @@
     "پپسین|Pepsin",
     "پتاسیم دی‌هیدروژن فسفات|Potassium dihydrogen phosphate, Monopotassium phosphate",
     "سدیم دی‌هیدروژن فسفات|Sodium dihydrogen phosphate",
-    "روغن آووکادو|Avocado oil"
+    "روغن آووکادو|Avocado oil",
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals",
+    "ملزومات آزمایشگاهی|Laboratory supplies",
+    "خدمات تخصصی آنالیز|Analytical testing services"
    ],
-   "note": "از طریق بازارگاه شیمی‌بازار عرضه می‌کند.",
-   "via": 1
+   "note": "توسعه مهندسی الماس واره دانش؛ تأمین مواد شیمیایی و ملزومات آزمایشگاهی و صنعتی؛ ارائه خدمات تخصصی آنالیز؛ از طریق بازارگاه شیمی‌بازار هم عرضه می‌کند؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "via": 1,
+   "mail": "info@tamadco.com",
+   "addr": "تهران، بزرگراه جناح، بلوار شهید گلاب، خیابان حسینی، کوچه رئیسی، پلاک 7، طبقه همکف",
+   "hi": 1
   },
   {
    "n": "بازرگانی آسمان تجارت",
@@ -6959,11 +6974,13 @@
    "c": [
     "exc",
     "api",
-    "std"
+    "std",
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
    "tel": [
+    "021-88727820",
     "021-88356315"
    ],
    "web": "https://nsscompany.com/",
@@ -6973,7 +6990,10 @@
     "استانداردهای مرجع دارویی|Pharmacopoeial reference standards",
     "مواد اولیه دارویی|Pharmaceutical raw materials"
    ],
-   "note": "واردکننده مستقیم اکسیپیان، استاندارد مرجع، مواد شیمیایی و بیولوژیک آزمایشگاهی؛ نماینده چند برند خارجی (از جمله OFICHEM و Gemini)."
+   "note": "واردکننده مستقیم مواد اولیه دارویی، استانداردهای دارویی و صنایع، مواد شیمیایی، اقلام و تجهیزات آزمایشگاهی؛ نماینده چند برند خارجی (از جمله OFICHEM و Gemini)؛ فکس: 021-88555421؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "mail": "info@nsscompany.com",
+   "addr": "تهران، یوسف‌آباد، خیابان سید جمال‌الدین اسدآبادی، بین خیابان 14 و 12، پلاک 122، طبقه چهارم",
+   "hi": 1
   },
   {
    "n": "بازرگانی اکسیر هیراد",
@@ -8436,7 +8456,8 @@
    "e": "Modern Shimi Gostar Mana — manashimi.com",
    "t": "t",
    "c": [
-    "std"
+    "std",
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -8446,7 +8467,7 @@
    ],
    "mail": "info@manashimi.com",
    "web": "https://manashimi.com/",
-   "note": "مواد شیمیایی آزمایشگاهی، معرف‌ها، حلال‌های تخصصی، مواد HPLC، فیلتر و ممبران و استانداردهای مرجع؛ برندهای اعلام‌شده: Merck، Sigma-Aldrich، TCI، Thermo Fisher، TRC، Santa Cruz، Supelco، USP، EP و BP. استعلام با نام، کد کالا یا شماره CAS.",
+   "note": "مواد شیمیایی آزمایشگاهی، معرف‌ها، حلال‌های تخصصی، مواد HPLC، فیلتر و ممبران و استانداردهای مرجع؛ برندهای اعلام‌شده: Merck، Sigma-Aldrich، TCI، Thermo Fisher، TRC، Santa Cruz، Supelco، USP، EP و BP. استعلام با نام، کد کالا یا شماره CAS. واردکننده انواع تجهیزات آزمایشگاهی؛ ایمیل دیگر: modernshimi8@gmail.com؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
    "src": "https://manashimi.com/",
    "p": [
     "رفرنس استاندارد USP|USP reference standards",
@@ -8458,8 +8479,11 @@
     "مواد شیمیایی آزمایشگاهی Sigma-Aldrich|Sigma-Aldrich laboratory chemicals",
     "معرف‌های شیمیایی|Chemical reagents",
     "حلال‌های HPLC و آزمایشگاهی|HPLC and laboratory solvents",
-    "فیلتر و ممبران آزمایشگاهی|Laboratory filters and membranes"
-   ]
+    "فیلتر و ممبران آزمایشگاهی|Laboratory filters and membranes",
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "addr": "تهران، انقلاب، خیابان شهید وحید نظری، کوچه شهید غلامرضا قدیری، پلاک 20، طبقه همکف",
+   "hi": 1
   },
   {
    "n": "یاس ژن کوثر",
@@ -8531,13 +8555,16 @@
    "e": "Nirvana Exir Gostar Pars — nirvanashimi.com",
    "t": "t",
    "c": [
-    "std"
+    "std",
+    "lab"
    ],
-   "prov": "نامشخص",
-   "city": "—",
-   "tel": [],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66567040"
+   ],
    "web": "https://nirvanashimi.com/",
-   "note": "رفرنس استاندارد USP، EP و BP، مواد مرک-میلی‌پور و سیگما-آلدریچ و محیط کشت. سایت شرکت از سرور ما باز نشد؛ تلفن و نشانی را از سایت شرکت بگیرید.",
+   "note": "مواد شیمیایی آزمایشگاهی؛ رفرنس استاندارد USP، EP و BP، مواد مرک-میلی‌پور و سیگما-آلدریچ و محیط کشت؛ ایمیل در فهرست نمایشگاه بدون نقطه پیش از com چاپ شده و اصلاح شد؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
    "src": "https://nirvanashimi.com/product-category/standard-refrence/",
    "p": [
     "رفرنس استاندارد USP|USP reference standards",
@@ -8547,7 +8574,10 @@
     "مواد شیمیایی آزمایشگاهی Sigma-Aldrich|Sigma-Aldrich laboratory chemicals",
     "محیط کشت میکروبی|Microbiological culture media"
    ],
-   "via": 1
+   "via": 1,
+   "mail": "negp.co@gmail.com",
+   "addr": "تهران، میدان توحید، ابتدای خیابان ستارخان، جنب بانک شهر، بن‌بست عظیمی، پلاک 4، طبقه 4، واحد 3",
+   "hi": 1
   },
   {
    "n": "الوان ثابت",
@@ -9125,13 +9155,14 @@
    "partial": 1
   },
   {
-   "n": "آر.ان.آر لب",
-   "e": "RNR Lab",
+   "n": "ره‌آوران نیکو روش (RNR Lab)",
+   "e": "Rahavaran Nikoo Ravesh (RNR Lab)",
    "t": "t",
    "c": [
     "lab",
     "std",
-    "pkg"
+    "pkg",
+    "api"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -9141,7 +9172,7 @@
    "mail": "info@rnrlab.com",
    "web": "https://www.rnrlab.com/",
    "src": "https://www.rnrlab.com/",
-   "note": "واردات و عامل فروش مواد شیمیایی و ملزومات آزمایشگاهی؛ برندها: Merck (مواد شیمیایی و محیط‌های کشت میکروبی)، Sigma-Aldrich، PanReac AppliChem، Sartorius (فیلترهای ممبران)، Gibco، BD، BASF، Simax و Glassco (شیشه‌آلات)؛ لوگوی neoFroxx و First Rubber هم روی بروشور شرکت آمده است؛ اطلاعات از بروشور شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)",
+   "note": "واردکننده و تأمین‌کننده مواد اولیه دارویی و شیمیایی و ملزومات آزمایشگاه‌های تحقیقاتی و کنترل کیفی؛ برندها: Merck (مواد شیمیایی و محیط‌های کشت میکروبی)، Sigma-Aldrich، PanReac AppliChem، Sartorius (فیلترهای ممبران)، Gibco، BD، BASF، Simax و Glassco (شیشه‌آلات)؛ لوگوی neoFroxx و First Rubber هم روی بروشور شرکت آمده است؛ ایمیل دیگر: rahavaran.hm@gmail.com؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
    "p": [
     "مواد شیمیایی آزمایشگاهی Merck|Merck laboratory chemicals|Merck",
     "محیط کشت میکروبی Merck|Merck microbiological culture media|Merck",
@@ -9155,11 +9186,13 @@
     "شیشه‌آلات آزمایشگاهی Simax و Glassco|Simax and Glassco laboratory glassware|Simax",
     "مواد شیمیایی تخصصی و کیت‌های تخصصی|Specialty chemicals and kits",
     "شیشه‌آلات و ملزومات آزمایشگاهی اروپایی|European laboratory glassware and supplies"
-   ]
+   ],
+   "addr": "تهران، خیابان ولیعصر، نرسیده به تقاطع جمهوری، کوچه لقمان‌الدوله ادهم، پلاک 2، واحد 5",
+   "hi": 1
   },
   {
-   "n": "پرتو زیست",
-   "e": "Parto Zist",
+   "n": "پرتو زیست بهبود",
+   "e": "Parto Zist Behbood",
    "t": "t",
    "c": [
     "lab"
@@ -9172,32 +9205,38 @@
    ],
    "web": "https://www.partoz.com/",
    "src": "https://www.partoz.com/",
-   "note": "تجهیزات آنالیتیکال و اندازه‌گیری (Analytical & Measuring Instruments)؛ شماره 0933-624-4646 واتس‌اپ شرکت است؛ اطلاعات از تابلوی شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)؛ برندهای نمایندگی هنوز از سایت یا کاتالوگ خود شرکت تأیید نشده است",
+   "note": "واردات تجهیزات آزمایشگاهی، تحقیقاتی و کنترل کیفی؛ فکس: 021-88104117؛ واتس‌اپ: 0933-624-4646؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
    "p": [
-    "تجهیزات آنالیتیکال آزمایشگاهی|Analytical instruments",
-    "تجهیزات اندازه‌گیری آزمایشگاهی|Measuring instruments"
+    "تجهیزات آزمایشگاهی و تحقیقاتی|Laboratory and research instruments",
+    "تجهیزات کنترل کیفی|Quality-control instruments"
    ],
-   "partial": 1
+   "mail": "azimi@partoz.com",
+   "addr": "تهران، سعادت‌آباد، بلوار دریا، خیابان گلها، خیابان توحید دوم، پلاک 99",
+   "hi": 1
   },
   {
-   "n": "عرش آریا",
-   "e": "Arsh Aria Co.",
+   "n": "ستاره عرش آریا",
+   "e": "Setareh Arsh Aria",
    "t": "t",
    "c": [
     "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
-   "tel": [],
+   "tel": [
+    "021-22799056"
+   ],
    "web": "https://sa-aria.com/",
    "src": "https://sa-aria.com/",
-   "note": "تجهیزات اندازه‌گیری آزمایشگاهی (Engineering Solution)؛ اطلاعات از بروشور شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)؛ نام فارسی و برندهای نمایندگی هنوز از سایت خود شرکت تأیید نشده است",
+   "note": "مشاوره مهندسی و تأمین‌کننده تجهیزات آزمایشگاهی و کنترل کیفیت؛ فکس: 021-22799073؛ دستگاه‌های بروشور: Karl Fischer، کدورت‌سنج و فتومتر؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
    "p": [
     "تیتراتور Karl Fischer|Karl Fischer titrator",
     "کدورت‌سنج (Turbidity meter)|Turbidity meter",
     "فتومتر (Photometer)|Photometer"
    ],
-   "partial": 1
+   "mail": "leila.safari355@gmail.com",
+   "addr": "تهران، خیابان شهید کلاهدوز (دولت)، پلاک 253، واحد 26",
+   "hi": 1
   },
   {
    "n": "لبینت",
@@ -9229,14 +9268,19 @@
    ],
    "prov": "تهران",
    "city": "تهران",
-   "tel": [],
-   "src": "https://drive.google.com/file/d/1tEP1eCkVt0ScJ1pW4Nyu22gMVTVFPBve/view",
-   "note": "تأمین تجهیزات آزمایشگاهی؛ پیوند سایت به کاتالوگ شرکت در Google Drive می‌رود؛ اطلاعات از تابلوی شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)؛ برندها و دستگاه‌ها هنوز از سایت یا کاتالوگ خود شرکت تأیید نشده است",
-   "p": [
-    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   "tel": [
+    "021-66462525"
    ],
-   "partial": 1,
-   "web": "https://drive.google.com/file/d/1tEP1eCkVt0ScJ1pW4Nyu22gMVTVFPBve/view"
+   "src": "https://drive.google.com/file/d/1tEP1eCkVt0ScJ1pW4Nyu22gMVTVFPBve/view",
+   "note": "واردات، صادرات، خرید، فروش و خدمات پس از فروش تجهیزات آزمایشگاهی؛ پیوند سایت به کاتالوگ شرکت در Google Drive می‌رود؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment",
+    "خدمات پس از فروش تجهیزات آزمایشگاهی|Laboratory equipment after-sales service"
+   ],
+   "web": "https://drive.google.com/file/d/1tEP1eCkVt0ScJ1pW4Nyu22gMVTVFPBve/view",
+   "mail": "sales4@3a-co.net",
+   "addr": "تهران، ولیعصر، تقاطع طالقانی، ساختمان اطمینان، پلاک 480، طبقه هفتم، واحد 38 و 35",
+   "hi": 1
   },
   {
    "n": "نور صنعت تجهیز فردوس (NST Lab)",
@@ -9245,12 +9289,14 @@
    "c": [
     "lab"
    ],
-   "prov": "تهران",
-   "city": "تهران و کرج",
-   "tel": [],
-   "web": "https://B2n.ir/ud5746",
-   "src": "https://B2n.ir/ud5746",
-   "note": "تولیدکننده تجهیزات آزمایشگاهی با برند NST Lab (فردوس تجهیز)؛ پیوند سایت به کاتالوگ محصولات شرکت می‌رود؛ اطلاعات از تابلوی شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405) و معرفی خود شرکت",
+   "prov": "البرز",
+   "city": "کرج",
+   "tel": [
+    "026-22020131"
+   ],
+   "web": "https://www.noorsanattajhiz.com/",
+   "src": "https://www.noorsanattajhiz.com/",
+   "note": "طراحی و تولید تجهیزات آزمایشگاهی با برند NST Lab (فردوس تجهیز)؛ کاتالوگ محصولات: https://B2n.ir/ud5746؛ ایمیل در فهرست نمایشگاه با «.om» چاپ شده و به «.com» اصلاح شد؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
    "p": [
     "هود آزمایشگاهی|Laboratory fume hood",
     "یخچال و فریزر آزمایشگاهی|Laboratory refrigerator and freezer",
@@ -9260,10 +9306,12 @@
     "ژرمیناتور|Germinator",
     "شیکر آزمایشگاهی|Laboratory shaker"
    ],
-   "partial": 1
+   "mail": "noorsanattajhiz@gmail.com",
+   "addr": "کرج، شهرک صنعتی سیمین‌دشت، خیابان ششم شرقی، پلاک 108",
+   "hi": 1
   },
   {
-   "n": "بلور آزما",
+   "n": "بلور آزما سنجش نور",
    "e": "Bloor Azma",
    "t": "m",
    "c": [
@@ -9280,10 +9328,13 @@
    "web": "https://bloorazma.com/",
    "src": "https://bloorazma.com/",
    "addr": "دفتر مرکزی: تهران، خیابان آزادی، خیابان حبیب‌زادگان، کوچه لورنس، پلاک 4، واحد 2",
-   "site": "کیلومتر 17 آزادراه تهران-کرج، شهرک علم و فناوری پژوهش، خیابان دانش، سالن تولید شرکت بلور آزما",
-   "note": "ایمیل فروش: sales@bloorazma.com؛ اطلاعات از بروشور شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)؛ محصولات هنوز از سایت یا کاتالوگ خود شرکت تأیید نشده است",
-   "p": [],
-   "partial": 1
+   "site": "کیلومتر 17 آزادراه تهران-کرج، شهرک علم و فناوری پژوهش، بلوار پژوهش، خیابان دانش، پژوهشگاه شیمی و مهندسی شیمی ایران، ساختمان اداری، طبقه 2",
+   "note": "تولید دستگاه‌های اسپکتروفتومتر و ریجنت‌های مصرفی؛ ایمیل فروش: sales@bloorazma.com؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "اسپکتروفتومتر|Spectrophotometer",
+    "ریجنت‌های مصرفی|Consumable reagents"
+   ],
+   "hi": 1
   },
   {
    "n": "منشور طب کوروش",
@@ -9294,11 +9345,13 @@
    ],
    "prov": "تهران",
    "city": "تهران",
-   "tel": [],
+   "tel": [
+    "0912-239-6679"
+   ],
    "mail": "info@mtk.co.ir",
    "web": "https://manshourtebkourosh.com/",
    "src": "https://manshourtebkourosh.com/",
-   "note": "تأمین تجهیزات آزمایشگاهی و خدمات فنی؛ کاتالوگ PDF در سایت شرکت؛ اینستاگرام: mtk.co.ir؛ اطلاعات از تابلوی شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)؛ برندها هنوز از سایت یا کاتالوگ خود شرکت تأیید نشده است",
+   "note": "کالیبراسیون و فروش دستگاه‌های کروماتوگرافی؛ تأمین تجهیزات آزمایشگاهی و خدمات فنی؛ کاتالوگ PDF در سایت شرکت؛ اینستاگرام: mtk.co.ir؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
    "p": [
     "تأمین و فروش تجهیزات آزمایشگاهی|Laboratory equipment supply",
     "خدمات فنی و تعمیرات تخصصی تجهیزات آزمایشگاهی|Laboratory equipment service and repair",
@@ -9306,11 +9359,12 @@
     "تعمیر و نگهداری دستگاه‌های کروماتوگرافی|Chromatography instrument maintenance",
     "کالیبراسیون تجهیزات آزمایشگاهی|Laboratory equipment calibration"
    ],
-   "partial": 1
+   "addr": "تهران، خیابان پیروزی، بعد از خیابان باقری (پرواز)، کوچه کریمی سرشت، پلاک 1، طبقه 3، واحد 19",
+   "hi": 1
   },
   {
    "n": "طوطیا شیمی تجارت ماهان",
-   "e": "Tootia Shimi Tejarat Mahan",
+   "e": "Totiya Chem (Tootia Shimi Tejarat Mahan)",
    "t": "t",
    "c": [
     "lab",
@@ -9318,15 +9372,19 @@
    ],
    "prov": "تهران",
    "city": "تهران",
-   "tel": [],
+   "tel": [
+    "021-55435546"
+   ],
    "web": "https://azmiran.com/catalogs/2867_1792531795.pdf",
    "src": "https://azmiran.com/catalogs/2867_1792531795.pdf",
-   "note": "برندهای AzChem و Azglass؛ پیوند سایت به کاتالوگ AzChem می‌رود؛ اطلاعات از تابلوی شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)؛ محصولات هنوز از سایت یا کاتالوگ خود شرکت تأیید نشده است",
+   "note": "فروش مواد شیمیایی و تجهیزات آزمایشگاهی؛ برندهای AzChem و Azglass؛ پیوند سایت به کاتالوگ AzChem می‌رود؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
    "p": [
     "محصولات AzChem|AzChem products|AzChem",
     "محصولات Azglass|Azglass products|Azglass"
    ],
-   "partial": 1
+   "mail": "elheebrahimi1443@gmail.com",
+   "addr": "تهران، نواب جنوب به شمال، جنب پل کمیل، ساختمان پزشکی افرا، طبقه 2، واحد 218",
+   "hi": 1
   },
   {
    "n": "کایرال کمکس",
@@ -9343,6 +9401,1763 @@
    "note": "«کیفیت برتر، تضمین نتایج دقیق‌تر»؛ اطلاعات از تابلوی شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)؛ نام فارسی و محصولات هنوز از سایت یا کاتالوگ خود شرکت تأیید نشده است",
    "p": [],
    "partial": 1
+  },
+  {
+   "n": "ابتکار تجهیز آزما",
+   "e": "Ebtekar Tajhiz Azma (ETA)",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "فارس",
+   "city": "جهرم",
+   "tel": [
+    "021-91307542"
+   ],
+   "mail": "info@eta-lab.com",
+   "web": "https://eta-lab.com/",
+   "addr": "استان فارس، شهرستان جهرم، شهرک فاطمیه، خیابان مدرس، مرکز علم و فناوری رشد",
+   "src": "https://eta-lab.com/",
+   "note": "ساخت، فروش، واردات و صادرات دستگاه‌های الکتروشیمی، حسگرهای پزشکی، مواد شیمیایی و الکترودهای الکتروشیمی؛ فکس: 071-54339300؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "دستگاه‌های الکتروشیمی|Electrochemical instruments",
+    "الکترودهای الکتروشیمی|Electrochemical electrodes",
+    "حسگرهای پزشکی|Medical sensors"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "اوژن آفرین پارسی",
+   "e": "Ozhan Afarin Parsi",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22913935"
+   ],
+   "web": "https://ozhan-ap.com/",
+   "addr": "تهران، خیابان شریعتی، بالاتر از میرداماد، خیابان مینا، پلاک 6، واحد 5",
+   "src": "https://ozhan-ap.com/",
+   "note": "تجهیزات آزمایشگاهی؛ فکس: 021-22924064؛ ایمیل در فهرست نمایشگاه ناقص چاپ شده است (sales.111@ozhan…)؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "ایمن درمان آرشیا جم",
+   "e": "Imen Darman Arshia Jam",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88315517"
+   ],
+   "mail": "hk@imendarman.com",
+   "web": "https://imendarman.com/",
+   "addr": "تهران، خیابان سنایی، میدان سنایی، پلاک 31",
+   "src": "https://imendarman.com/",
+   "note": "واردات تجهیزات آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "واردات تجهیزات آزمایشگاهی|Laboratory equipment import"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "آپادانا صنعت ریتون",
+   "e": "Apadana Sanat Rhyton",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88925263"
+   ],
+   "mail": "eng.sharifi@apadanasanat.com",
+   "web": "https://apadanasanat.com/",
+   "addr": "تهران، خیابان نجات‌اللهی، نرسیده به پل کریمخان، خیابان جعفرشهری، پلاک 36، طبقه 3، واحد 2",
+   "src": "https://apadanasanat.com/",
+   "note": "واردات مواد شیمیایی و تجهیزات آزمایشگاهی، سکوبندی‌های آزمایشگاهی؛ نمایندگی رسمی و انحصاری کمپانی‌های VELP، MACHEREY-NAGEL، KARTELL و BURKLE؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی VELP|VELP laboratory equipment|VELP",
+    "محصولات MACHEREY-NAGEL (کروماتوگرافی و آنالیز)|MACHEREY-NAGEL products|MACHEREY-NAGEL",
+    "ظروف پلاستیکی آزمایشگاهی KARTELL|KARTELL labware|KARTELL",
+    "ابزار نمونه‌برداری BURKLE|BURKLE sampling equipment|BURKLE",
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals",
+    "سکوبندی آزمایشگاهی|Laboratory furniture and benches"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "آرمان شیمی پارس",
+   "e": "Arman Chimi Pars",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88342349"
+   ],
+   "mail": "info@armanchimipars.com",
+   "web": "https://armanchimipars.com/",
+   "addr": "تهران، خیابان کریمخان زند، پلاک 158، طبقه اول، واحد 1",
+   "src": "https://armanchimipars.com/",
+   "note": "تهیه و توزیع تجهیزات آزمایشگاهی و مواد شیمیایی صنعتی و آزمایشگاهی از سال 1383؛ نماینده انحصاری KAVALIER و TECHNOSKLO (جمهوری چک) و NEOFROXX (آلمان) در ایران؛ فکس: 021-88344683؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "شیشه‌آلات آزمایشگاهی KAVALIER|KAVALIER laboratory glassware|KAVALIER",
+    "شیشه‌آلات آزمایشگاهی TECHNOSKLO|TECHNOSKLO laboratory glassware|TECHNOSKLO",
+    "مواد شیمیایی NEOFROXX|NEOFROXX chemicals|NEOFROXX",
+    "مواد شیمیایی صنعتی و آزمایشگاهی|Industrial and laboratory chemicals"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "آریا الکترون اپتیک",
+   "e": "Arya Electron Optic",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88051248"
+   ],
+   "web": "https://aryaeo.com/",
+   "addr": "تهران، میدان ونک، خیابان ملاصدرا، خیابان شیراز شمالی، خیابان دانشور شرقی، پلاک 13، طبقه چهارم، واحد 7 و 8",
+   "src": "https://aryaeo.com/",
+   "note": "بازرگانی تجهیزات پیشرفته آزمایشگاهی مواد، از جمله میکروسکوپ‌های الکترونی، دستگاه‌های پراش اشعه ایکس (XRD) و فلورسانس اشعه ایکس (XRF)؛ خدمات آزمایشگاهی میکروسکوپ الکترونی FESEM و XRD؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "میکروسکوپ الکترونی (SEM و FESEM)|Electron microscopes (SEM, FESEM)",
+    "پراش اشعه ایکس (XRD)|X-ray diffractometer (XRD)",
+    "فلورسانس اشعه ایکس (XRF)|X-ray fluorescence (XRF)",
+    "خدمات آزمایشگاهی FESEM و XRD|FESEM and XRD testing services"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "آریا آفرین آزما",
+   "e": "Arya Afarin Azma",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-86121616"
+   ],
+   "mail": "md@aaa-co.net",
+   "web": "https://aaa-co.net/",
+   "addr": "تهران، بزرگراه رسالت غرب به شرق، خیابان برازنده، پلاک 62، واحد 4",
+   "src": "https://aaa-co.net/",
+   "note": "نماینده رسمی کمپانی Buchi سوئیس (تجهیزات آزمایشگاهی)؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی Buchi|Buchi laboratory equipment|Buchi",
+    "روتاری اواپراتور Buchi|Buchi rotary evaporator|Buchi"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "آریافن ورزان",
+   "e": "Aria Fan Varzan (AFV)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22899763"
+   ],
+   "mail": "info@ariafan.com",
+   "web": "https://ariafan.com/",
+   "addr": "تهران، خیابان شریعتی، خیابان اتوبانک، پلاک 30",
+   "src": "https://ariafan.com/",
+   "note": "بایوتکنولوژی، نانومترولوژی و پلاسما تکنولوژی؛ فکس: 021-28111156؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات بایوتکنولوژی|Biotechnology equipment",
+    "تجهیزات نانومترولوژی|Nanometrology instruments",
+    "تجهیزات پلاسما تکنولوژی|Plasma technology equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "آریان آترین سلامت",
+   "e": "Aryan Atrin Salamat",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88227856"
+   ],
+   "mail": "m.salehida@yahoo.com",
+   "web": "https://atrinsalamat.ir/",
+   "addr": "تهران، تقاطع ولیعصر و طالقانی، مجتمع نور تهران، طبقه 6 اداری، واحد 1802",
+   "src": "https://atrinsalamat.ir/",
+   "note": "تجهیزات آزمایشگاهی؛ فکس: 021-88227859؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "آرین بریس",
+   "e": "Aryan Beris",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-58679400"
+   ],
+   "mail": "info@aryanberis.com",
+   "web": "https://aryanberis.com/",
+   "addr": "تهران، خیابان شهید مطهری، خیابان مفتح، کوچه بخشی موقر، پلاک 41",
+   "src": "https://aryanberis.com/",
+   "note": "تأمین تجهیزات آزمایشگاهی، تحقیقاتی و صنعتی؛ ارائه‌دهنده راه‌حل در طیف‌سنجی؛ خدمات طراحی، تهیه، راه‌اندازی و بهره‌برداری آزمایشگاه؛ فکس: 021-88848523؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات طیف‌سنجی (Spectroscopy)|Spectroscopy instruments",
+    "طراحی و راه‌اندازی آزمایشگاه|Laboratory design and setup"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "آسا ماندگار اندیشه دانا (آماد)",
+   "e": "Asa Mandegar Andishe Dana (AMAD)",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88528263"
+   ],
+   "mail": "info@amadco.co",
+   "web": "https://amadco.co/",
+   "addr": "تهران، خیابان سهروردی شمالی، خیابان خرمشهر، خیابان مرغاب، پلاک 3، طبقه 2",
+   "src": "https://amadco.co/",
+   "note": "تأمین تجهیزات، مواد استاندارد و کالیبراسیون و مواد مصرفی تجهیزات آزمایشگاهی آنالیز روغن، سوخت و گریس؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آنالیز روغن، سوخت و گریس|Oil, fuel and grease testing equipment",
+    "مواد استاندارد و کالیبراسیون|Reference and calibration standards"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "آماتیس آرا شیمی",
+   "e": "Amatis Ara Shimi (ARA CHEM)",
+   "t": "m",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "البرز",
+   "city": "کرج",
+   "tel": [
+    "021-44862816"
+   ],
+   "mail": "info@arachem.ir",
+   "web": "https://arachem.ir/",
+   "addr": "کیلومتر 17 اتوبان تهران-کرج، شهرک علم و فناوری پژوهش، بلوار پژوهش، خیابان دانش، پژوهشگاه شیمی و مهندسی شیمی ایران، ساختمان مرکز رشد",
+   "src": "https://arachem.ir/",
+   "note": "تولید تجهیزات آزمایشگاهی شامل انواع شوف‌بالن، همزن مکانیکی، راکتور، ستاپ‌های عصاره‌گیری و اسانس‌گیری و معرف‌های شیمیایی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "شوف‌بالن (Heating mantle)|Heating mantle",
+    "همزن مکانیکی|Overhead stirrer",
+    "راکتور آزمایشگاهی|Laboratory reactor",
+    "ستاپ عصاره‌گیری و اسانس‌گیری|Extraction and essential-oil setups",
+    "معرف‌های شیمیایی|Chemical reagents"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "آویدان بینش گستر",
+   "e": "Avidan Binesh Gostar",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "0921-676-2649"
+   ],
+   "mail": "info@avidanbinesh.ir",
+   "web": "https://avidanbinesh.ir/",
+   "addr": "تهران، خیابان کارگر شمالی، بالاتر از جلال آل احمد، مرکز رشد فرآورده‌های دارویی دانشگاه تهران",
+   "src": "https://avidanbinesh.ir/",
+   "note": "احراز کیفیت (Qualification) سیستم‌ها و تجهیزات دارویی؛ آموزش دوره‌های تخصصی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "احراز کیفیت (Qualification) تجهیزات دارویی|Pharmaceutical equipment qualification",
+    "احراز کیفیت سیستم‌های دارویی|Pharmaceutical system qualification",
+    "دوره‌های آموزشی تخصصی|Specialist training courses"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "بازرگانی بین‌المللی فرادید آداک",
+   "e": "Faradeed Adak International Trading (ADAK Group)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22149972"
+   ],
+   "mail": "sales@faradeed.net",
+   "web": "https://adakholding.ir/",
+   "addr": "تهران، سعادت‌آباد، خیابان سرو غربی، پلاک 80، طبقه سوم، واحد 12",
+   "src": "https://adakholding.ir/",
+   "note": "واردات، توزیع و خدمات پس از فروش دستگاه‌های آزمایشگاهی، پزشکی، تحقیقاتی و آموزشی؛ نمایندگی رسمی و انحصار فروش و خدمات پس از فروش Memmert، Hettich، Optika، Capp، Snijders Lab و IKA؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "آون و انکوباتور Memmert|Memmert ovens and incubators|Memmert",
+    "سانتریفیوژ Hettich|Hettich centrifuges|Hettich",
+    "میکروسکوپ Optika|Optika microscopes|Optika",
+    "سمپلر و پیپت Capp|Capp pipettes|Capp",
+    "تجهیزات Snijders Lab|Snijders Lab equipment|Snijders Lab",
+    "همزن و تجهیزات آزمایشگاهی IKA|IKA stirrers and laboratory equipment|IKA"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "بردر تجهیز صنعت و آزمایشگاه",
+   "e": "Border Tajhiz Sanat va Azmayeshgah",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "0912-833-1409"
+   ],
+   "mail": "t.sina77@gmail.com",
+   "web": "https://border.ir/",
+   "addr": "تهران، پاسداران، میدان هروی، خیابان استاد حسن بنا، ساختمان مینورام، پلاک 966، طبقه 4، واحد 14",
+   "src": "https://border.ir/",
+   "note": "نمایندگی انحصاری برند Rayleigh (اسپکتروفتومتر، جذب اتمی، ICP، HPLC و GC)؛ نمایندگی انحصاری برند SGE استرالیا (ملحقات GC و HPLC)؛ واردات تمامی محصولات Agilent، Shimadzu و PerkinElmer؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "اسپکتروفتومتر Rayleigh|Rayleigh spectrophotometer|Rayleigh",
+    "جذب اتمی Rayleigh (AAS)|Rayleigh atomic absorption spectrometer|Rayleigh",
+    "ICP و HPLC و GC برند Rayleigh|Rayleigh ICP, HPLC and GC|Rayleigh",
+    "ملحقات GC و HPLC برند SGE|SGE GC and HPLC accessories|SGE",
+    "محصولات Agilent|Agilent products|Agilent",
+    "محصولات Shimadzu|Shimadzu products|Shimadzu",
+    "محصولات PerkinElmer|PerkinElmer products|PerkinElmer"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "بهینه تجهیز اوستا (بتالب)",
+   "e": "Behine Tajhiz Avesta (Beta Lab)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-91690691"
+   ],
+   "mail": "betalabservice@gmail.com",
+   "addr": "تهران، فلکه دوم صادقیه، خیابان سازمان آب، پلاک 8، واحد 4",
+   "src": "https://www.cliexpo.ir/",
+   "note": "فروش دستگاه‌های آنالیزی در برندهای Waters، Agilent، HP، Varian، PerkinElmer، Shimadzu و Thermo و قطعات مرتبط؛ نصب، راه‌اندازی و سرویس این دستگاه‌ها؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "دستگاه‌ها و قطعات Waters|Waters instruments and parts|Waters",
+    "دستگاه‌ها و قطعات Agilent|Agilent instruments and parts|Agilent",
+    "دستگاه‌ها و قطعات Shimadzu|Shimadzu instruments and parts|Shimadzu",
+    "دستگاه‌ها و قطعات PerkinElmer|PerkinElmer instruments and parts|PerkinElmer",
+    "دستگاه‌ها و قطعات Thermo|Thermo instruments and parts|Thermo",
+    "دستگاه‌ها و قطعات Varian و HP|Varian and HP instruments and parts",
+    "نصب، راه‌اندازی و سرویس دستگاه‌های آنالیزی|Analytical instrument installation and service"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "بهینه کالا گستر",
+   "e": "Behine Kala Gostar (BKG)",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88310269"
+   ],
+   "mail": "fath@bkgco.com",
+   "web": "https://bkgco.com/",
+   "addr": "تهران، خیابان سمیه، بن‌بست خوانساری، پلاک 6، واحد 8",
+   "src": "https://bkgco.com/",
+   "note": "واردات، تأمین و ارائه تجهیزات آنالیز و آزمایشگاهی؛ تأمین عمده و خرد انواع مواد اولیه صنایع دارویی، غذایی، آزمایشگاهی، آرایشی و بهداشتی و صنعتی؛ فکس: 021-88327989؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آنالیز و آزمایشگاهی|Analytical and laboratory equipment",
+    "مواد اولیه صنایع دارویی، غذایی و آرایشی|Raw materials for pharmaceutical, food and cosmetic industries"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "پاسارگاد آرمان آزما",
+   "e": "Pasargad Arman Azma (PAA)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88740108"
+   ],
+   "mail": "payam@paagroup.net",
+   "web": "https://paagroup.net/",
+   "addr": "تهران، بزرگراه رسالت غرب به شرق، خیابان برازنده، پلاک 62، واحد 4",
+   "src": "https://paagroup.net/",
+   "note": "تأمین، تجهیز و خدمات پس از فروش دستگاه‌های آزمایشگاهی صنعتی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "دستگاه‌های آزمایشگاهی صنعتی|Industrial laboratory instruments",
+    "خدمات پس از فروش دستگاه‌های آزمایشگاهی|Laboratory instrument after-sales service"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "پایدار اهورا کیمیا",
+   "e": "Paydar Ahura Kimia",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "0912-202-3692"
+   ],
+   "mail": "alikeshmiri60@gmail.com",
+   "web": "https://ahurakimia.ir/",
+   "addr": "تهران، خیابان قزوین، خیابان سبحانی، خیابان اصغر بهفر، پلاک 10",
+   "src": "https://ahurakimia.ir/",
+   "note": "تولید دستگاه‌های آزمایشگاهی: خالص‌ساز گاز استیلن، دستگاه آب فوق خالص‌ساز، چیلر، هیدروژن ژنراتور، خالص‌ساز گاز آرگون، واحد مراقبت هوا، لامپ‌های هالوکاتد دستگاه جذب اتمی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "خالص‌ساز گاز استیلن|Acetylene gas purifier",
+    "دستگاه آب فوق خالص (Ultrapure water)|Ultrapure water system",
+    "چیلر آزمایشگاهی|Laboratory chiller",
+    "هیدروژن ژنراتور|Hydrogen generator",
+    "خالص‌ساز گاز آرگون|Argon gas purifier",
+    "لامپ هالوکاتد جذب اتمی (HCL)|Hollow cathode lamps for AAS"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "پاینده گستر شیمی",
+   "e": "Payande Gostar Shimi (PGS)",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66906612"
+   ],
+   "mail": "payandegostarshimi@gmail.com",
+   "addr": "تهران، جمالزاده شمالی، خیابان دکتر محمد قریب، پلاک 26، طبقه 4، واحد 34",
+   "src": "https://www.cliexpo.ir/",
+   "note": "تأمین‌کننده مواد شیمیایی و آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "پترو کیمیاگر بدیع",
+   "e": "Petro Kimiyagar Badi",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88680843"
+   ],
+   "mail": "m.vaez@ymail.com",
+   "addr": "تهران، سعادت‌آباد، خیابان علامه طباطبایی جنوبی، خیابان حق‌طلب شرقی، پلاک 46",
+   "src": "https://www.cliexpo.ir/",
+   "note": "تجهیزات آزمایشگاهی، آنالایزرهای آنلاین، رامان و اسپکتروسکوپی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "آنالایزر آنلاین|Online analyzers",
+    "اسپکتروسکوپی رامان (Raman)|Raman spectroscopy",
+    "تجهیزات اسپکتروسکوپی|Spectroscopy instruments"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "پرتو تجهیز پاسارگاد",
+   "e": "Parto Tajhiz Pasargad (PTP)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88848127"
+   ],
+   "mail": "mohsen.iranneja21@icloud.com",
+   "web": "https://ptplab.ir/",
+   "addr": "تهران، میدان هفت تیر، خیابان مفتح جنوبی، خیابان سمیه، پلاک 112، واحد 11",
+   "src": "https://ptplab.ir/",
+   "note": "تجهیزات آزمایشگاهی؛ فکس: 021-86072905؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "پردیس پژوهش آزما",
+   "e": "Pardis Pazhoohesh Azma (Pardis Azma)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44384067"
+   ],
+   "mail": "info@pardisazma.com",
+   "web": "https://pardisazma.com/",
+   "addr": "تهران، بلوار مرزداران، خیابان ناهید، خیابان طالقانی، پلاک 12، طبقه 2، واحد 9",
+   "src": "https://pardisazma.com/",
+   "note": "خدمات و فروش تجهیزات آزمایشگاهی به داروسازی‌ها، پتروشیمی‌ها، آزمایشگاه‌های شیمی و فیزیک، آب و فاضلاب، صنایع غذایی، دانشگاه‌ها و صنایع دارای آزمایشگاه؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی صنایع دارویی|Laboratory equipment for pharmaceutical industry",
+    "خدمات تجهیزات آزمایشگاهی|Laboratory equipment service"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "پردیس رادان",
+   "e": "Pardis Radan",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22913779"
+   ],
+   "mail": "info@pardisradan.com",
+   "web": "https://pardisradan.com/",
+   "addr": "تهران، خیابان شریعتی، میدان کتابی، خیابان ساسانی‌پور، کوی دریا، پلاک 8",
+   "src": "https://pardisradan.com/",
+   "note": "واردات تجهیزات آزمایشگاهی صنایع نفت، گاز و پتروشیمی، آب و محیط زیست؛ فکس: 021-22913800؛ ایمیل دیگر: info@pardisradan.ir؛ سایت دیگر: pardisradan.ir؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی نفت، گاز و پتروشیمی|Oil, gas and petrochemical laboratory equipment",
+    "تجهیزات آزمایشگاهی آب و محیط زیست|Water and environmental laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "پژوهشی کیمیا شنگرف پارس",
+   "e": "Kimia Shangarf Pars Research (KSP)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88044200"
+   ],
+   "mail": "info@ksp-rc.com",
+   "web": "https://ksp-rc.com/",
+   "addr": "تهران، خیابان ملاصدرا، خیابان شیخ بهایی شمالی، برج صبا (پلاک 81)، واحد 52",
+   "src": "https://ksp-rc.com/",
+   "note": "آزمایشگاه اندازه‌گیری آلاینده‌های مواد غذایی: باقیمانده سموم و آفت‌کش‌های نباتی، آنالیز فلزات سنگین در محصولات غذایی و آرایشی‌بهداشتی، تعیین ترکیبات و تشخیص تقلبات؛ فکس: 021-88069856؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "آزمون باقیمانده سموم و آفت‌کش‌ها|Pesticide residue testing",
+    "آنالیز فلزات سنگین (Heavy metals)|Heavy-metal analysis",
+    "آزمون محصولات آرایشی‌بهداشتی|Cosmetic product testing"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "پیشرو فناوری آیما",
+   "e": "Pishro Fanavari Ayma",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88072485"
+   ],
+   "mail": "info@aymamed.ir",
+   "addr": "تهران، شهرک غرب، بلوار دادمان، کوچه گلستان، کوچه گلبرگ یکم شرقی، پلاک 4، طبقه دوم",
+   "src": "https://www.cliexpo.ir/",
+   "note": "طراحی و تولید تجهیزات پیشرفته آزمایشگاهی (درمان ناباروری) و تأمین تجهیزات آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی درمان ناباروری (IVF)|IVF laboratory equipment",
+    "تأمین تجهیزات آزمایشگاهی|Laboratory equipment supply"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "تجزیه آزمون پارس شیمی",
+   "e": "Tajzie Azmoon Pars Shimi",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "البرز",
+   "city": "کرج",
+   "tel": [
+    "0912-917-6477"
+   ],
+   "mail": "rnhamid2@gmail.com",
+   "addr": "استان البرز، شهرستان کرج، بخش مرکزی، شهر کرج، کوچه ارکیده 6، کوچه صدرا، پلاک 6، ساختمان یاس، واحد 5",
+   "src": "https://www.cliexpo.ir/",
+   "note": "تهیه و تأمین مواد شیمیایی و تجهیزات آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals",
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "تجهیز آزمای شریف",
+   "e": "Tajhiz Azmay Sharif (TA Sharif)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44081437"
+   ],
+   "mail": "tasharif@yahoo.com",
+   "addr": "تهران، خیابان آیت‌الله اشرفی اصفهانی، نرسیده به مرزداران، برج نگین رضا، طبقه 19 جنوبی، واحد 1907",
+   "src": "https://www.cliexpo.ir/",
+   "note": "واردات دستگاه‌های آزمایشگاهی؛ فکس: 021-44030082؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "واردات دستگاه‌های آزمایشگاهی|Laboratory instrument import"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "تجهیزات آزمایشگاهی تبریز",
+   "e": "Tabriz Laboratory Equipment (TATCOLAB)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "آذربایجان شرقی",
+   "city": "تبریز",
+   "tel": [
+    "041-33375557"
+   ],
+   "mail": "tatcolabeq@gmail.com",
+   "web": "https://tatcolab.ir/",
+   "addr": "تبریز، خیابان پاستور جدید، مابین سیزده آبان و شهید جدیری، تجهیزات آزمایشگاهی تبریز",
+   "src": "https://tatcolab.ir/",
+   "note": "تأمین، تجهیز، فروش و مشاوره تجهیزات آزمایشگاهی؛ تولید کیت‌های آزمایشگاه آب و پساب؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment",
+    "کیت‌های آزمایشگاه آب و پساب|Water and wastewater test kits"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "تجهیزات آزمایشگاهی فردوس رای",
+   "e": "Ferdows Rayco",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88010739"
+   ],
+   "mail": "ferdowsray@ferdowsray.com",
+   "web": "https://ferdowsray.ir/",
+   "addr": "تهران، خیابان نلسون ماندلا، بالاتر از جهان کودک، خیابان پدیدار، نبش دیدار شمالی، پلاک 46، واحد 1",
+   "src": "https://ferdowsray.ir/",
+   "note": "تجهیزات آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "تولیدی صنعت دمیرچی ایرانیان",
+   "e": "Damirchi Industrial",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-83872"
+   ],
+   "mail": "info@damirchi.com",
+   "web": "https://damirchi.com/",
+   "addr": "تهران، شهرک صنعتی شمس‌آباد، بلوار بهارستان، نبش بلوار آزادی",
+   "src": "https://damirchi.com/",
+   "note": "شرکت دانش‌بنیان با نیم‌قرن تجربه در طراحی و ساخت ماشین‌آلات صنعتی؛ راهکارهای جامع برای صنایع غذایی، دارویی و شیمیایی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "ماشین‌آلات صنعتی صنایع دارویی|Industrial machinery for pharmaceutical industry",
+    "ماشین‌آلات صنایع غذایی و شیمیایی|Food and chemical processing machinery"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "راد شیمی تجهیز",
+   "e": "Rad Shimi Tajhiz",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88986014"
+   ],
+   "mail": "info@radshimi.com",
+   "addr": "تهران، خیابان فاطمی، خیابان دائمی، پلاک 43، طبقه دوم شمالی",
+   "src": "https://www.cliexpo.ir/",
+   "note": "واردات تجهیزات آزمایشگاهی و مواد شیمیایی؛ فکس: 021-88986016؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment",
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "راهیان نلم آزما (RNA Genetic)",
+   "e": "RNA Genetic",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88409500"
+   ],
+   "mail": "sales@rnagenetic.com",
+   "web": "https://rnagenetic.com/",
+   "addr": "تهران، خیابان شریعتی، مابین ملک و پلیس، نبش کوچه کشواد، پلاک 569، واحد 2",
+   "src": "https://rnagenetic.com/",
+   "note": "نمایندگی رسمی کمپانی DLAB؛ تجهیزات آزمایشگاهی، سلولی مولکولی و ژنتیکی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی DLAB|DLAB laboratory equipment|DLAB",
+    "تجهیزات سلولی مولکولی و ژنتیک|Cell, molecular biology and genetics equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "رهاورد فناوری سرمد",
+   "e": "Rahavard Fanavari Sarmad",
+   "t": "m",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-41406288"
+   ],
+   "mail": "sales@sarmadtech.ir",
+   "web": "https://sarmadtech.ir/",
+   "addr": "تهران، خیابان ولیعصر، نبش خیابان ناصری، برج کیان، پلاک 2551، طبقه 15، واحد 35",
+   "src": "https://sarmadtech.ir/",
+   "note": "خالص‌سازی مواد شیمیایی؛ فکس: 021-86088255؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "خالص‌سازی مواد شیمیایی (High purity)|Chemical purification"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "روبینا طب آزما",
+   "e": "Robina Teb Azma",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66580840"
+   ],
+   "mail": "info@robinateb.ir",
+   "addr": "تهران، میدان انقلاب، ابتدای کارگر جنوبی، کوچه مهدیزاده، پلاک 27، واحد 5",
+   "src": "https://www.cliexpo.ir/",
+   "note": "واردات محیط کشت، مواد شیمیایی و مصرفی آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "محیط کشت میکروبی|Microbiological culture media",
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals",
+    "مواد مصرفی آزمایشگاهی|Laboratory consumables"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "ساتراپ تجارت ماهور",
+   "e": "Satrap Tejarat Mahoor (S.T.M)",
+   "t": "t",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "0921-286-7780"
+   ],
+   "mail": "mahsagarm312000@gmail.com",
+   "addr": "تهران، اتوبان رسالت، چهارراه سرسبز، پلاک 640، طبقه سوم، واحد 5",
+   "src": "https://www.cliexpo.ir/",
+   "note": "واردات مواد اولیه دارو و مواد شیمیایی؛ فکس: 021-77975477؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "واردات مواد اولیه دارویی|Pharmaceutical raw material import",
+    "مواد شیمیایی|Chemicals"
+   ]
+  },
+  {
+   "n": "سگال تجهیز آسیا",
+   "e": "Segal Tajhiz Asia",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-28423987"
+   ],
+   "mail": "info@segaltajhiz.com",
+   "web": "https://segaltajhiz.com/",
+   "addr": "تهران، بزرگراه شیخ فضل‌الله نوری، بزرگراه همت شرق، برج میلاد، سازه اصلی، طبقه 4، واحد 89",
+   "src": "https://segaltajhiz.com/",
+   "note": "فروش و خدمات پس از فروش تجهیزات آزمایشگاهی و ابزار دقیق؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment",
+    "ابزار دقیق|Precision instruments"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "سلول گستر کاراژن (Genex)",
+   "e": "Cell Gostar Karazhen (Genex)",
+   "t": "m",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88304288"
+   ],
+   "mail": "sales@genexlabco.ir",
+   "web": "https://genexlabco.ir/",
+   "addr": "تهران، خیابان طالقانی، نرسیده به مفتح، پلاک 210، طبقه همکف",
+   "src": "https://genexlabco.ir/",
+   "note": "تولید، واردات و تأمین مواد، کیت‌ها و ملزومات تخصصی آزمایشگاهی در حوزه‌های ژنتیک مولکولی، کشت سلول و بیوتکنولوژی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "کیت‌های ژنتیک مولکولی|Molecular genetics kits",
+    "مواد و ملزومات کشت سلول|Cell culture reagents and supplies",
+    "مواد بیوتکنولوژی|Biotechnology reagents"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "سنجش و آنالیز نوین ابتکار",
+   "e": "Novin Ebtekar Measurement and Analysis",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88680843",
+    "021-88680844"
+   ],
+   "mail": "info@novinebtekar.com",
+   "web": "https://novinebtekar.com/",
+   "addr": "تهران، سعادت‌آباد، خیابان علامه طباطبایی جنوبی، خیابان حق‌طلب شرقی، پلاک 46",
+   "src": "https://novinebtekar.com/",
+   "note": "تأمین و پشتیبانی فنی تجهیزات آزمایشگاهی و دستگاه‌های آنالیز شامل سیستم‌های تیتراسیون، کروماتوگرافی یونی و تجهیزات الکتروشیمیایی، با کاربرد در تحقیق و توسعه، آنالیز صنعتی و کنترل کیفیت؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "سیستم‌های تیتراسیون (Titrator)|Titration systems",
+    "کروماتوگرافی یونی (IC)|Ion chromatography",
+    "تجهیزات الکتروشیمیایی|Electrochemical instruments"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "سیناتک",
+   "e": "Sinatech",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88846580"
+   ],
+   "mail": "info@sinatech.ir",
+   "web": "https://sinatech.ir/",
+   "addr": "تهران، میدان هفت تیر، خیابان قائم‌مقام فراهانی، شماره 59، واحد 2",
+   "src": "https://sinatech.ir/",
+   "note": "تأمین‌کننده تجهیزات آزمایشگاهی؛ فکس: 021-88306962؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "شیمی صنعت واهب",
+   "e": "Shimi Sanat Vaheb (VAHEB)",
+   "t": "m",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-77658097"
+   ],
+   "mail": "mahsa.asadi8954@gmail.com",
+   "addr": "تهران، خیابان شریعتی، سه‌راه طالقانی، ابتدای خواجه نصیر، پلاک 235، طبقه 5، واحد 14",
+   "src": "https://www.cliexpo.ir/",
+   "note": "تولید انواع کیت‌های شناسایی یون‌های آب، تیترازول‌ها و محلول‌های جنرال آزمایشگاهی (بافرها، محلول‌های نرمالیته اسید و باز)، کاغذهای pH؛ تأمین‌کننده انواع مواد و تجهیزات آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "کیت شناسایی یون‌های آب|Water ion test kits",
+    "تیترازول (Titrisol / volumetric concentrate)|Volumetric concentrates (titrisol)",
+    "محلول بافر|Buffer solutions",
+    "محلول نرمال اسید و باز|Normal acid and base solutions",
+    "کاغذ pH|pH paper"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "صنایع شیمیایی پیمان پژوه سینا",
+   "e": "Peyman Pazhooh Sina Chemical Industries",
+   "t": "m",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-28426594"
+   ],
+   "mail": "info@engshahrabi.com",
+   "web": "https://engshahrabi.com/",
+   "addr": "تهران، خیابان پیروزی، خیابان دهم فروردین، ایستگاه شیوا، کوچه شهید محمدرضا فراهانی، پلاک 6، طبقه 1",
+   "src": "https://engshahrabi.com/",
+   "note": "تولید و خالص‌سازی مواد شیمیایی آزمایشگاهی در گریدهای خالص و فوق خالص شامل اسیدها، محلول‌های استاندارد، بافرها، تیترانت‌ها، جامدات و حلال‌های آلی؛ تحقیق و سنتز مواد شیمیایی و دارویی پیشرفته؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "اسیدهای آزمایشگاهی خالص و فوق خالص|Laboratory-grade and high-purity acids",
+    "محلول‌های استاندارد|Standard solutions",
+    "بافر|Buffers",
+    "تیترانت (Titrant)|Titrants",
+    "حلال‌های آلی آزمایشگاهی|Laboratory organic solvents",
+    "سنتز سفارشی مواد شیمیایی و دارویی|Custom chemical and pharmaceutical synthesis"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "طاها کیمیا تجهیز",
+   "e": "Taha Kimia Tajhiz",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66431041"
+   ],
+   "mail": "sales@tahakimia.ir",
+   "web": "https://tahakimia.ir/",
+   "addr": "تهران، خیابان جمهوری، خیابان جمالزاده، نبش بن‌بست بهزادی، پلاک 35، واحد 1",
+   "src": "https://tahakimia.ir/",
+   "note": "تأمین تجهیزات و دستگاه‌های آزمایشگاهی و مواد شیمیایی در حوزه نفت، گاز و پتروشیمی؛ فکس: 021-66430339؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی نفت، گاز و پتروشیمی|Oil, gas and petrochemical laboratory instruments",
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "فرابین آتیه نامی",
+   "e": "Farabin Atieh Nami",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-86044180"
+   ],
+   "mail": "info@farabinan.com",
+   "web": "https://farabinan.com/",
+   "addr": "تهران، خیابان سهروردی شمالی، خیابان هویزه شرقی، پلاک 18، واحد 17",
+   "src": "https://farabinan.com/",
+   "note": "تولیدکننده و تأمین‌کننده تجهیزات آزمایشگاهی صنعتی برای پالایشگاه و پتروشیمی؛ فکس: 021-88172733؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی پالایشگاه و پتروشیمی|Refinery and petrochemical laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "فرآزما تجارت بین‌الملل",
+   "e": "Farazma International Trading",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-92009100"
+   ],
+   "mail": "info@farazmaco.com",
+   "web": "https://farazmaco.com/",
+   "addr": "تهران، ستارخان، خیابان کوثر اول، پلاک 99",
+   "src": "https://farazmaco.com/",
+   "note": "واردکننده و تأمین‌کننده ملزومات آزمایشگاهی و پزشکی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "ملزومات آزمایشگاهی|Laboratory supplies",
+    "ملزومات پزشکی|Medical supplies"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "فرتاش داد",
+   "e": "Fartashdad",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66429955"
+   ],
+   "mail": "sales@fartashdad.com",
+   "web": "https://fartashdad.com/",
+   "addr": "تهران، خیابان آزادی، بعد از چهارراه اسکندری، جنب بانک ملی، کوچه مرمر، پلاک 10",
+   "src": "https://fartashdad.com/",
+   "note": "بازرگانی، تولیدی، تحقیقاتی و کالیبراسیون؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment",
+    "کالیبراسیون تجهیزات آزمایشگاهی|Laboratory equipment calibration"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "فرژن پویش البرز (FGP group)",
+   "e": "Fargene Pouyesh Alborz (FGP group)",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88833621"
+   ],
+   "mail": "marketing@fargene.com",
+   "web": "https://fargene.com/",
+   "addr": "تهران، خیابان مطهری، خیابان سلیمان خاطر، پلاک 51، واحد 4",
+   "src": "https://fargene.com/",
+   "note": "شرکت دانش‌بنیان؛ تجهیزات آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "فرنام تشخیص",
+   "e": "Farnam Tashkhis (Test Azma)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-91009052"
+   ],
+   "mail": "info@testazma.com",
+   "web": "https://testazma.com/",
+   "addr": "تهران، خیابان آزادی، نرسیده به خوش جنوبی، پلاک 250، واحد 17",
+   "src": "https://testazma.com/",
+   "note": "واردکننده تجهیزات و ملزومات آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment",
+    "ملزومات آزمایشگاهی|Laboratory supplies"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "فن آزما گستر (FG)",
+   "e": "Fan Azma Gostar (FG)",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-62999032"
+   ],
+   "mail": "m.saba@fginst.com",
+   "web": "https://fgiran.com/",
+   "addr": "تهران، میدان جمهوری، بزرگراه نواب، جنب مترو نواب، برج سهیل، طبقه 8، واحد 801",
+   "src": "https://fgiran.com/",
+   "note": "تولید تجهیزات آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تولید تجهیزات آزمایشگاهی|Laboratory equipment manufacturing"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "کاریز آب",
+   "e": "Karizab",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88413214"
+   ],
+   "mail": "info@karizab.com",
+   "web": "https://karizab.com/",
+   "addr": "تهران، خیابان شریعتی، خیابان معلم، شماره 57",
+   "src": "https://karizab.com/",
+   "note": "تولید انواع تجهیزات تصفیه آب و فاضلاب، مواد شیمیایی ضدرسوب و خوردگی و انواع کیت‌های سنجش؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "کیت‌های سنجش آب|Water test kits",
+    "تجهیزات تصفیه آب و فاضلاب|Water and wastewater treatment equipment",
+    "مواد ضدرسوب و ضدخوردگی|Anti-scale and anti-corrosion chemicals"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "کالا پژوهان الماس",
+   "e": "Kala Pajoohan Almas",
+   "t": "t",
+   "c": [
+    "cos"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-77635491"
+   ],
+   "mail": "hadi.almasy@gmail.com",
+   "addr": "تهران، سهروردی جنوبی، خیابان ملک، پلاک 30، طبقه 3، واحد 8",
+   "src": "https://www.cliexpo.ir/",
+   "note": "تأمین‌کننده مواد اولیه شیمیایی و بهداشتی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "مواد اولیه شیمیایی و بهداشتی|Chemical and personal-care raw materials"
+   ]
+  },
+  {
+   "n": "کالیبراسیون پیشگامان راد کیمیا (PERAK)",
+   "e": "Pishgaman Rad Kimia Calibration (PERAK)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "0912-548-1526"
+   ],
+   "mail": "monfared31@gmail.com",
+   "web": "https://perakco.co/",
+   "addr": "تهران، تهرانسر، بلوار اصلی، نبش خیابان هفتم، پلاک 234، طبقه 2، واحد 5",
+   "src": "https://perakco.co/",
+   "note": "کالیبراسیون؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "کالیبراسیون تجهیزات آزمایشگاهی|Laboratory equipment calibration"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "کیان کاوش تجهیز",
+   "e": "Kian Kavosh Tajhiz",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-26650298"
+   ],
+   "mail": "office@kiankavosh.ir",
+   "web": "https://kiankavosh.ir/",
+   "addr": "تهران، چهارراه پاسداران، خیابان دولت، پلاک 180، طبقه دوم، واحد 4",
+   "src": "https://kiankavosh.ir/",
+   "note": "واردات، توزیع، نصب و راه‌اندازی دستگاه‌های کروماتوگرافی GC و HPLC؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "دستگاه HPLC|HPLC systems",
+    "دستگاه کروماتوگرافی گازی (GC)|Gas chromatographs (GC)",
+    "نصب و راه‌اندازی کروماتوگرافی|Chromatography installation"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "کیمیا تجهیز فرتاک (KTF)",
+   "e": "Kimia Tajhiz Fartak (KTF)",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44824267"
+   ],
+   "mail": "kimiatajhiz.fartak@gmail.com",
+   "addr": "تهران، اتوبان اشرفی اصفهانی، اشرفی شمال به جنوب، لاین کندرو اشرفی، نبش کوچه بلبازاده، پلاک 298، طبقه 4",
+   "src": "https://www.cliexpo.ir/",
+   "note": "تأمین‌کننده مواد شیمیایی، تجهیزات و دستگاه‌های آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals",
+    "دستگاه‌های آزمایشگاهی|Laboratory instruments"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "کیمیا صنعت جهان فناور",
+   "e": "Kimia Sanat Jahan Fanavar (Kimiaco)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22901482",
+    "021-22901484"
+   ],
+   "mail": "info@kimiaco.net",
+   "web": "https://kimiaco.net/",
+   "addr": "تهران، خیابان شریعتی، ابتدای خیابان ظفر، ساختمان آفتاب، پلاک 9، طبقه 4، واحد 20",
+   "src": "https://kimiaco.net/",
+   "note": "سیستم‌های کروماتوگرافی و اسپکتروسکوپی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "سیستم‌های کروماتوگرافی|Chromatography systems",
+    "سیستم‌های اسپکتروسکوپی|Spectroscopy systems"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "کیهان تجهیزات دانش",
+   "e": "Keyhan Tajhizat Danesh",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44901647"
+   ],
+   "mail": "kmkhosravi@gmail.com",
+   "addr": "تهران، کیلومتر 13 جاده لشکری، خیابان امید، نبش دوم شرقی",
+   "src": "https://www.cliexpo.ir/",
+   "note": "طراحی و ساخت پایلوت و راکتورهای شیشه‌ای و فلزی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "راکتور شیشه‌ای آزمایشگاهی و پایلوت|Glass laboratory and pilot reactors",
+    "راکتور فلزی پایلوت|Metal pilot reactors"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "گروه رایمند (رایمند تجهیز)",
+   "e": "Raymand Group (Raymand Tajhiz)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66567255"
+   ],
+   "mail": "zahrakamali6531@gmail.com",
+   "addr": "تهران، شهرآرا، کوچه پیک، خیابان سپهری، پلاک 46، طبقه 3، واحد 9",
+   "src": "https://www.cliexpo.ir/",
+   "note": "واردات و فروش تجهیزات آزمایشگاهی، ارائه خدمات آزمایشگاهی و انجام انواع تست‌های آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment",
+    "خدمات و آزمون‌های آزمایشگاهی|Laboratory testing services"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "گروه صنایع پتروشیمی بنیان",
+   "e": "Bonyan Petrochemical Industries Group (Bonyan Source)",
+   "t": "m",
+   "c": [
+    "exc"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-77722110",
+    "021-66384850",
+    "0912-375-9203"
+   ],
+   "web": "https://bonyansource.com/",
+   "addr": "تهران، جنب خروجی مترو نواب، برج گردون شمالی، طبقه پنجم، واحد 501",
+   "src": "https://bonyansource.com/",
+   "note": "مرجع تخصصی تولید، تأمین و فروش حلال‌های شیمیایی؛ ایمیل در فهرست نمایشگاه ناخوانا است (sarafrazmanesh@gmail.com)؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "حلال‌های شیمیایی|Chemical solvents"
+   ]
+  },
+  {
+   "n": "لاله تجهیز آزما",
+   "e": "Laleh Tajhiz Azma (LTA)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88322163"
+   ],
+   "mail": "info@lta-co.com",
+   "addr": "تهران، میدان هفت تیر، خیابان مفتح جنوبی، خیابان سمیه، پلاک 110، طبقه 5، واحد 19",
+   "src": "https://www.cliexpo.ir/",
+   "note": "واردات تجهیزات آزمایشگاهی، تحقیقاتی و کنترل کیفی؛ فکس: 021-88322156؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی و تحقیقاتی|Laboratory and research instruments",
+    "تجهیزات کنترل کیفی|Quality-control instruments"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "مایان گستر شیمی دی (MGSD)",
+   "e": "Mayan Gostar Shimi Dey (MGSD)",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "9000-7071"
+   ],
+   "mail": "info@mayanshimi.com",
+   "web": "https://mayanshimi.com/",
+   "addr": "تهران، خیابان فخر رازی (روبروی سازمان غذا و دارو)، پلاک 37، طبقه 4، واحد 10",
+   "src": "https://mayanshimi.com/",
+   "note": "تأمین و فروش مواد شیمیایی و تجهیزات آزمایشگاهی؛ نام خیابان در فهرست نمایشگاه ناخوانا است؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals",
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "مبنا کیمیا ویژن",
+   "e": "Mabna Kimia Vision",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-41406472"
+   ],
+   "mail": "sales@kimiavision.ir",
+   "web": "https://kimiavision.ir/",
+   "addr": "تهران، خیابان ولیعصر، نبش خیابان ناصری، برج کیان، طبقه پانزدهم، واحد 44",
+   "src": "https://kimiavision.ir/",
+   "note": "ارائه‌دهنده آنالایزرهای شیمیایی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "آنالایزرهای شیمیایی|Chemical analyzers"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "مجموعه راهکارهای علمی و صنعتی (SISCO)",
+   "e": "SISCO (Scientific and Industrial Solutions Co.)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-52508"
+   ],
+   "mail": "info@sisco.ir",
+   "web": "https://sisco.com/",
+   "addr": "تهران، خیابان کارگر شمالی، خیابان فکوری، پلاک 159",
+   "src": "https://sisco.com/",
+   "note": "خرید و فروش، تهیه، توزیع و پخش انواع سیستم‌ها و دستگاه‌های آزمایشگاهی و کنترل کیفی و تحقیقاتی؛ فکس: 021-88006381؛ شماره تلفن در فهرست نمایشگاه کوتاه چاپ شده است؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "سیستم‌ها و دستگاه‌های آزمایشگاهی|Laboratory systems and instruments",
+    "دستگاه‌های کنترل کیفی|Quality-control instruments"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "مکث بین‌الملل (Max Group International)",
+   "e": "Max Group International",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-45238"
+   ],
+   "mail": "sales7@maxgroupint.com",
+   "web": "https://maxgroupint.ir/",
+   "addr": "تهران، خیابان دکتر فاطمی، خیابان باباطاهر، پلاک 4",
+   "src": "https://maxgroupint.ir/",
+   "note": "تجهیزات آزمایشگاهی؛ فکس: 021-88971517؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "مهام آزما فارمد بین‌الملل",
+   "e": "Maham Azma Farmed International",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88509384"
+   ],
+   "mail": "info@mahazma.com",
+   "web": "https://mahazma.com/",
+   "addr": "تهران، سهروردی شمالی، خیابان خرمشهر، پلاک 29، طبقه 7، واحد 22",
+   "src": "https://mahazma.com/",
+   "note": "فروش و پشتیبانی تجهیزات آزمایشگاهی و مواد شیمیایی آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment",
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "مهام طیف تجهیز",
+   "e": "Maham Teyf Tajhiz",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66048249"
+   ],
+   "mail": "info@mahamtajhiz.com",
+   "addr": "تهران، جمالزاده شمالی، بعد از باقرخان، نبش کوچه نادری، پلاک 345، واحد 403",
+   "src": "https://www.cliexpo.ir/",
+   "note": "تجهیزات پیشرفته آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات پیشرفته آزمایشگاهی|Advanced laboratory instruments"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "مهندسی اراک شیمی",
+   "e": "Arak Shimi Engineering",
+   "t": "m",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "مرکزی",
+   "city": "اراک",
+   "tel": [
+    "086-34131885"
+   ],
+   "mail": "miladeshgholahi@gmail.com",
+   "web": "https://arakshimi.com/",
+   "addr": "استان مرکزی، اراک، شهرک صنعتی حاجی‌آباد، خیابان صنعت، فرعی زنبق",
+   "src": "https://arakshimi.com/",
+   "note": "تولیدکننده انواع محلول‌های استاندارد آزمایشگاهی، تیترازول‌ها و کیت‌های آنالیز آب و فاضلاب؛ تولیدکننده کاغذهای pH آزمایشگاهی؛ ایمیل در فهرست نمایشگاه با «.con» چاپ شده و به «.com» اصلاح شد؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "محلول‌های استاندارد آزمایشگاهی|Laboratory standard solutions",
+    "تیترازول (Volumetric concentrate)|Volumetric concentrates (titrisol)",
+    "کیت آنالیز آب و فاضلاب|Water and wastewater test kits",
+    "کاغذ pH|pH paper"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "مهندسی پترونیک صنعت",
+   "e": "Petronic Sanat Engineering",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88681088"
+   ],
+   "mail": "info@petronic.ir",
+   "web": "https://petronic.ir/",
+   "addr": "تهران، سعادت‌آباد، خیابان 37، پلاک 36، ساختمان سینا، واحد 4",
+   "src": "https://petronic.ir/",
+   "note": "میزبندی و سکوبندی آزمایشگاهی و انواع هودهای شیمیایی آزمایشگاهی؛ فکس: 021-88681308؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "میز و سکوبندی آزمایشگاهی|Laboratory benches and furniture",
+    "هود شیمیایی آزمایشگاهی (Fume hood)|Laboratory chemical fume hoods"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "مهندسی پیشرو چیره صنعت",
+   "e": "Pishro Chireh Sanat Engineering",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88506204"
+   ],
+   "mail": "info@fmchireh.com",
+   "web": "https://fmchireh.com/",
+   "addr": "تهران، خیابان مطهری، خیابان میرعماد، کوچه جنتی، پلاک 18، طبقه 3",
+   "src": "https://fmchireh.com/",
+   "note": "پیمانکار آزمایشگاه‌های صنعتی و تأمین‌کننده تجهیزات آزمایشگاهی؛ فکس: 021-88505293؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "پیمانکاری و تجهیز آزمایشگاه صنعتی|Industrial laboratory contracting and fit-out",
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "نانو پرتو مایا",
+   "e": "Nano Parto Maya",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-86011636"
+   ],
+   "mail": "management@npmaya.com",
+   "web": "https://npmaya.com/",
+   "addr": "تهران، مطهری، نرسیده به شریعتی، کوچه پروشات، ساختمان پروشات، پلاک 2، طبقه همکف، واحد 4؛ کد پستی 1567717715",
+   "src": "https://npmaya.com/",
+   "note": "واردکننده تجهیزات آزمایشگاهی و آنالیز دستگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment",
+    "دستگاه‌های آنالیز دستگاهی|Instrumental analysis systems"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "نواندیشان صنعت و تجارت سمن (STS)",
+   "e": "Noandishan Sanat va Tejarat Saman (STS)",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88715908",
+    "021-88715910"
+   ],
+   "mail": "info@nsts.ir",
+   "web": "https://nsts.ir/",
+   "addr": "تهران، ابتدای خیابان مطهری، جنب هتل بزرگ تهران، کوچه منصور، پلاک 53",
+   "src": "https://nsts.ir/",
+   "note": "طراحی و ساخت تجهیزات آزمایشگاهی، اتوماسیون صنعتی؛ فکس: 021-88726478؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "طراحی و ساخت تجهیزات آزمایشگاهی|Laboratory equipment design and manufacturing",
+    "اتوماسیون صنعتی|Industrial automation"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "نیک آزما فرایند نوین کاسپین",
+   "e": "Nik Azma Farayand Novin Caspian",
+   "t": "t",
+   "c": [
+    "lab",
+    "std"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-66973598"
+   ],
+   "mail": "nikazmafarayandnovin51@gmail.com",
+   "addr": "تهران، خیابان فلسطین، ساختمان پزشکان، پلاک 157، طبقه همکف، واحد 1",
+   "src": "https://www.cliexpo.ir/",
+   "note": "واردات و تأمین انواع مواد شیمیایی و محیط کشت؛ تأمین تجهیزات و ملزومات آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "مواد شیمیایی آزمایشگاهی|Laboratory chemicals",
+    "محیط کشت میکروبی|Microbiological culture media",
+    "تجهیزات و ملزومات آزمایشگاهی|Laboratory equipment and supplies"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "نیک توران",
+   "e": "Nik Turan",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88335255"
+   ],
+   "mail": "mehdiin96@gmail.com",
+   "web": "https://nikturan.com/",
+   "addr": "تهران، امیرآباد شمالی، خیابان زنجانی، خیابان هشتم، خیابان پرنده، کوچه دهم، پلاک 8، واحد 3",
+   "src": "https://nikturan.com/",
+   "note": "تجهیزات آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "وارش شیمی بهار",
+   "e": "Varesh Chimie Bahar",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-42283"
+   ],
+   "mail": "info@vareshchimie.ir",
+   "web": "https://vareshchimie.com/",
+   "addr": "تهران، خیابان شهید بهشتی، خیابان کاووسی‌فر، کوچه حدادیان، پلاک 12، ساختمان وارش",
+   "src": "https://vareshchimie.com/",
+   "note": "فروش و خدمات پس از فروش تجهیزات آزمایشگاهی و ابزار دقیق کمپانی Anton Paar اتریش؛ نماینده رسمی Anton Paar اتریش در ایران؛ فکس: 021-88537706؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی Anton Paar|Anton Paar laboratory instruments|Anton Paar",
+    "دانسیته‌متر Anton Paar|Anton Paar density meters|Anton Paar",
+    "ویسکومتر و رئومتر Anton Paar|Anton Paar viscometers and rheometers|Anton Paar",
+    "رفرکتومتر و پلاریمتر Anton Paar|Anton Paar refractometers and polarimeters|Anton Paar",
+    "خدمات پس از فروش Anton Paar|Anton Paar after-sales service|Anton Paar"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "ویتا طب کوشا",
+   "e": "Vita Teb Kousha (Vitateb)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-75311"
+   ],
+   "mail": "info@vitateb.co",
+   "web": "https://vitateb.co/",
+   "addr": "تهران، میرداماد، خیابان شمس تبریزی شمالی، کوچه نیک‌رای، پلاک 3، واحد 13",
+   "src": "https://vitateb.co/",
+   "note": "فروش تجهیزات آزمایشگاهی؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "hi": 1
+  },
+  {
+   "n": "یونی لب",
+   "e": "Unilab Pyrex",
+   "t": "m",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "شهرک صنعتی صفادشت",
+   "tel": [
+    "021-65439419"
+   ],
+   "mail": "ali.s.8686@gmail.com",
+   "web": "https://unilabpyrex.com/",
+   "addr": "تهران، جاده ملارد، شهرک صنعتی صفادشت، خیابان چهارم غربی، خیابان تیر، پلاک 3/206",
+   "src": "https://unilabpyrex.com/",
+   "note": "تولیدکننده لوازم آزمایشگاهی؛ فکس: 021-65439431؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "p": [
+    "شیشه‌آلات و لوازم آزمایشگاهی|Laboratory glassware and supplies"
+   ],
+   "hi": 1
   }
  ],
  "provinceOrder": [
