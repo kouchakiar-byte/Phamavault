@@ -9167,12 +9167,14 @@
    "prov": "تهران",
    "city": "تهران",
    "tel": [
-    "021-68352000"
+    "021-68352000",
+    "021-66950475",
+    "021-66950476"
    ],
    "mail": "info@rnrlab.com",
    "web": "https://www.rnrlab.com/",
    "src": "https://www.rnrlab.com/",
-   "note": "واردکننده و تأمین‌کننده مواد اولیه دارویی و شیمیایی و ملزومات آزمایشگاه‌های تحقیقاتی و کنترل کیفی؛ برندها: Merck (مواد شیمیایی و محیط‌های کشت میکروبی)، Sigma-Aldrich، PanReac AppliChem، Sartorius (فیلترهای ممبران)، Gibco، BD، BASF، Simax و Glassco (شیشه‌آلات)؛ لوگوی neoFroxx و First Rubber هم روی بروشور شرکت آمده است؛ ایمیل دیگر: rahavaran.hm@gmail.com؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "note": "واردکننده و تأمین‌کننده مواد اولیه دارویی و شیمیایی و ملزومات آزمایشگاه‌های تحقیقاتی و کنترل کیفی؛ برندها: Merck (مواد شیمیایی و محیط‌های کشت میکروبی)، Sigma-Aldrich، PanReac AppliChem، Sartorius (فیلترهای ممبران)، Gibco، BD، BASF، Simax و Glassco (شیشه‌آلات)؛ لوگوی neoFroxx و First Rubber هم روی بروشور شرکت آمده است؛ ایمیل دیگر: rahavaran.hm@gmail.com؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)؛ فعالیت از سال 1384 با تمرکز بر تأمین مواد اولیه صنایع دارویی؛ برندها: Merck، Sigma-Aldrich، Gibco، USP، BP، Sartorius، BD BBL، Testo، Agilent و VHG؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
     "مواد شیمیایی آزمایشگاهی Merck|Merck laboratory chemicals|Merck",
     "محیط کشت میکروبی Merck|Merck microbiological culture media|Merck",
@@ -9185,7 +9187,12 @@
     "ویال شیشه‌ای دارویی|Pharmaceutical glass vials",
     "شیشه‌آلات آزمایشگاهی Simax و Glassco|Simax and Glassco laboratory glassware|Simax",
     "مواد شیمیایی تخصصی و کیت‌های تخصصی|Specialty chemicals and kits",
-    "شیشه‌آلات و ملزومات آزمایشگاهی اروپایی|European laboratory glassware and supplies"
+    "شیشه‌آلات و ملزومات آزمایشگاهی اروپایی|European laboratory glassware and supplies",
+    "رفرنس استاندارد USP و BP|USP and BP reference standards|USP",
+    "محیط کشت BD BBL|BD BBL culture media|BD",
+    "تجهیزات Testo|Testo instruments|Testo",
+    "محصولات Agilent|Agilent products|Agilent",
+    "استانداردهای VHG|VHG standards|VHG"
    ],
    "addr": "تهران، خیابان ولیعصر، نرسیده به تقاطع جمهوری، کوچه لقمان‌الدوله ادهم، پلاک 2، واحد 5",
    "hi": 1
@@ -9486,14 +9493,22 @@
    "web": "https://apadanasanat.com/",
    "addr": "تهران، خیابان نجات‌اللهی، نرسیده به پل کریمخان، خیابان جعفرشهری، پلاک 36، طبقه 3، واحد 2",
    "src": "https://apadanasanat.com/",
-   "note": "واردات مواد شیمیایی و تجهیزات آزمایشگاهی، سکوبندی‌های آزمایشگاهی؛ نمایندگی رسمی و انحصاری کمپانی‌های VELP، MACHEREY-NAGEL، KARTELL و BURKLE؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "note": "واردات مواد شیمیایی و تجهیزات آزمایشگاهی، سکوبندی‌های آزمایشگاهی؛ نمایندگی رسمی و انحصاری کمپانی‌های VELP، MACHEREY-NAGEL، KARTELL و BURKLE؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)؛ محصولات سایت: فیلترهای آزمایشگاهی (سرسرنگی، کارتوش، ممبران، کاغذ صافی)، کاغذ pH، کیت تست مواد، pH متر، کنداکتومتر، اکسیژن‌متر، BOD متر، فتومتر، کدورت‌سنج، اسپکتروفتومتر، هموژنایزر، ملزومات پلاستیکی و شیشه‌آلات، محلول‌های بافر و کالیبراسیون؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
     "تجهیزات آزمایشگاهی VELP|VELP laboratory equipment|VELP",
     "محصولات MACHEREY-NAGEL (کروماتوگرافی و آنالیز)|MACHEREY-NAGEL products|MACHEREY-NAGEL",
     "ظروف پلاستیکی آزمایشگاهی KARTELL|KARTELL labware|KARTELL",
     "ابزار نمونه‌برداری BURKLE|BURKLE sampling equipment|BURKLE",
     "مواد شیمیایی آزمایشگاهی|Laboratory chemicals",
-    "سکوبندی آزمایشگاهی|Laboratory furniture and benches"
+    "سکوبندی آزمایشگاهی|Laboratory furniture and benches",
+    "فیلتر سرسرنگی (Syringe filter)|Syringe filters",
+    "فیلتر ممبران و کاغذ صافی|Membrane filters and filter paper",
+    "کاغذ pH (PEHANON)|pH paper (PEHANON)",
+    "pH متر و کنداکتومتر|pH and conductivity meters",
+    "BOD متر و اکسیژن‌متر|BOD and dissolved-oxygen meters",
+    "کدورت‌سنج و فتومتر|Turbidity meters and photometers",
+    "اسپکتروفتومتر|Spectrophotometer",
+    "محلول بافر و کالیبراسیون pH|pH buffer and calibration solutions"
    ],
    "hi": 1
   },
@@ -9642,7 +9657,7 @@
   {
    "n": "آسا ماندگار اندیشه دانا (آماد)",
    "e": "Asa Mandegar Andishe Dana (AMAD)",
-   "t": "t",
+   "t": "m",
    "c": [
     "lab",
     "std"
@@ -9656,10 +9671,14 @@
    "web": "https://amadco.co/",
    "addr": "تهران، خیابان سهروردی شمالی، خیابان خرمشهر، خیابان مرغاب، پلاک 3، طبقه 2",
    "src": "https://amadco.co/",
-   "note": "تأمین تجهیزات، مواد استاندارد و کالیبراسیون و مواد مصرفی تجهیزات آزمایشگاهی آنالیز روغن، سوخت و گریس؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "note": "تأمین تجهیزات، مواد استاندارد و کالیبراسیون و مواد مصرفی تجهیزات آزمایشگاهی آنالیز روغن، سوخت و گریس؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)؛ 30 سال سابقه در پایش وضعیت ماشین‌آلات از طریق آنالیز روانکار؛ ساخت دستگاه‌های آنالیز روغن، گریس، سوخت و ضدیخ؛ تجهیز و راه‌اندازی آزمایشگاه آنالیز روغن؛ کاتالوگ: https://www.amadco.co/documents/amad-catalogue.pdf؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
     "تجهیزات آنالیز روغن، سوخت و گریس|Oil, fuel and grease testing equipment",
-    "مواد استاندارد و کالیبراسیون|Reference and calibration standards"
+    "مواد استاندارد و کالیبراسیون|Reference and calibration standards",
+    "دستگاه‌های آنالیز روغن و گریس|Oil and grease testing instruments",
+    "دستگاه‌های آنالیز سوخت و ضدیخ|Fuel and antifreeze testing instruments",
+    "تجهیزات پرتابل و برخط آنالیز روغن (OCM)|Portable and online oil condition monitoring",
+    "تجهیز و راه‌اندازی آزمایشگاه آنالیز روغن|Oil-analysis laboratory setup"
    ],
    "hi": 1
   },
@@ -9730,14 +9749,21 @@
    "web": "https://adakholding.ir/",
    "addr": "تهران، سعادت‌آباد، خیابان سرو غربی، پلاک 80، طبقه سوم، واحد 12",
    "src": "https://adakholding.ir/",
-   "note": "واردات، توزیع و خدمات پس از فروش دستگاه‌های آزمایشگاهی، پزشکی، تحقیقاتی و آموزشی؛ نمایندگی رسمی و انحصار فروش و خدمات پس از فروش Memmert، Hettich، Optika، Capp، Snijders Lab و IKA؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "note": "واردات، توزیع و خدمات پس از فروش دستگاه‌های آزمایشگاهی، پزشکی، تحقیقاتی و آموزشی؛ نمایندگی رسمی و انحصار فروش و خدمات پس از فروش Memmert، Hettich، Optika، Capp، Snijders Lab و IKA؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)؛ برندها: Memmert، Hettich، SNOL، OPTIKA، CAPP-AHN، Snijders Labs، Mikromeister و IKA؛ محصولات شامل اتاقک تست پایداری دما و رطوبت (Stability chamber)، انکوباتور CO2 و یخچال‌دار، آون خلأ، فریزر 86- درجه، سانتریفیوژ و میکروسکوپ؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
     "آون و انکوباتور Memmert|Memmert ovens and incubators|Memmert",
     "سانتریفیوژ Hettich|Hettich centrifuges|Hettich",
     "میکروسکوپ Optika|Optika microscopes|Optika",
     "سمپلر و پیپت Capp|Capp pipettes|Capp",
     "تجهیزات Snijders Lab|Snijders Lab equipment|Snijders Lab",
-    "همزن و تجهیزات آزمایشگاهی IKA|IKA stirrers and laboratory equipment|IKA"
+    "همزن و تجهیزات آزمایشگاهی IKA|IKA stirrers and laboratory equipment|IKA",
+    "اتاقک تست پایداری دما و رطوبت (Stability chamber) Memmert|Memmert stability / climate test chamber|Memmert",
+    "آون خلأ Memmert|Memmert vacuum oven|Memmert",
+    "انکوباتور CO2 و یخچال‌دار Memmert|Memmert CO2 and cooled incubators|Memmert",
+    "حمام آب Memmert|Memmert water bath|Memmert",
+    "فریزر 86- درجه Snijders Labs|Snijders Labs -86 °C freezer|Snijders Lab",
+    "کوره آزمایشگاهی SNOL|SNOL laboratory furnace|SNOL",
+    "میکروسکوپ Mikromeister|Mikromeister microscope|Mikromeister"
    ],
    "hi": 1
   },
@@ -9807,14 +9833,21 @@
    "prov": "تهران",
    "city": "تهران",
    "tel": [
-    "021-88310269"
+    "021-88310269",
+    "021-88812406"
    ],
-   "mail": "fath@bkgco.com",
+   "mail": "info@bkgco.com",
    "web": "https://bkgco.com/",
    "addr": "تهران، خیابان سمیه، بن‌بست خوانساری، پلاک 6، واحد 8",
    "src": "https://bkgco.com/",
-   "note": "واردات، تأمین و ارائه تجهیزات آنالیز و آزمایشگاهی؛ تأمین عمده و خرد انواع مواد اولیه صنایع دارویی، غذایی، آزمایشگاهی، آرایشی و بهداشتی و صنعتی؛ فکس: 021-88327989؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "note": "واردات، تأمین و ارائه تجهیزات آنالیز و آزمایشگاهی؛ تأمین عمده و خرد انواع مواد اولیه صنایع دارویی، غذایی، آزمایشگاهی، آرایشی و بهداشتی و صنعتی؛ فکس: 021-88327989؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)؛ نمایندگی Hiden Isochema (IGA)؛ محصولات MicrotracBEL (BELSORP، BELCAT، BELPYCNO)؛ زمینه‌ها: اندازه‌گیری مساحت سطح و توزیع حفرات (BET)، دانسیته، جذب شیمیایی و فیزیکی، میکروسکوپ الکترونی SEM، XRF، کشش سطحی و زاویه تماس؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
+    "آنالایزر مساحت سطح و تخلخل BELSORP (BET)|BELSORP surface area and porosity analyzer (BET)|MicrotracBEL",
+    "پیکنومتر گازی BELPYCNO (دانسیته)|BELPYCNO gas pycnometer|MicrotracBEL",
+    "جذب شیمیایی BELCAT|BELCAT chemisorption analyzer|MicrotracBEL",
+    "آنالایزر وزن‌سنجی جذب گاز IGA|Hiden Isochema IGA gravimetric sorption analyzer|Hiden Isochema",
+    "میکروسکوپ الکترونی (SEM)|Scanning electron microscope (SEM)",
+    "کشش سطحی و زاویه تماس|Surface tension and contact angle",
     "تجهیزات آنالیز و آزمایشگاهی|Analytical and laboratory equipment",
     "مواد اولیه صنایع دارویی، غذایی و آرایشی|Raw materials for pharmaceutical, food and cosmetic industries"
    ],
@@ -9976,8 +10009,14 @@
    "web": "https://pardisradan.com/",
    "addr": "تهران، خیابان شریعتی، میدان کتابی، خیابان ساسانی‌پور، کوی دریا، پلاک 8",
    "src": "https://pardisradan.com/",
-   "note": "واردات تجهیزات آزمایشگاهی صنایع نفت، گاز و پتروشیمی، آب و محیط زیست؛ فکس: 021-22913800؛ ایمیل دیگر: info@pardisradan.ir؛ سایت دیگر: pardisradan.ir؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "note": "واردات تجهیزات آزمایشگاهی صنایع نفت، گاز و پتروشیمی، آب و محیط زیست؛ فکس: 021-22913800؛ ایمیل دیگر: info@pardisradan.ir؛ سایت دیگر: pardisradan.ir؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)؛ برندها: Palintest، Eutech، VELP، LAR، Walter Herzog، Scavini، Tamson، PCS، Antek، Alcor، ISL، ROFA، Ludwig Schneider، OCS، RayRan، Nippon Denshoku، Negribossi، PerkinElmer، Agilent، CI Analytics و Cirrus؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
+    "فتومتر و کیت‌های تست آب Palintest|Palintest photometers and water test kits|Palintest",
+    "pH متر، هدایت‌سنج و اکسیژن‌متر Eutech|Eutech pH, conductivity and DO meters|Eutech",
+    "BOD متر و ترموراکتور COD برند VELP|VELP BOD and COD thermoreactor|VELP",
+    "آنالایزر آنلاین COD، BOD و TOC برند LAR|LAR online COD, BOD and TOC analyzers|LAR",
+    "تجهیزات آنالیز فرآورده‌های نفتی (Walter Herzog، Tamson، Antek)|Petroleum product testing (Walter Herzog, Tamson, Antek)",
+    "تجهیزات آنالیز پلیمر (RayRan، Nippon Denshoku)|Polymer testing (RayRan, Nippon Denshoku)",
     "تجهیزات آزمایشگاهی نفت، گاز و پتروشیمی|Oil, gas and petrochemical laboratory equipment",
     "تجهیزات آزمایشگاهی آب و محیط زیست|Water and environmental laboratory equipment"
    ],
@@ -10075,10 +10114,11 @@
   },
   {
    "n": "تجهیزات آزمایشگاهی تبریز",
-   "e": "Tabriz Laboratory Equipment (TATCOLAB)",
+   "e": "Tabriz Laboratory Equipment (TATCO)",
    "t": "t",
    "c": [
-    "lab"
+    "lab",
+    "std"
    ],
    "prov": "آذربایجان شرقی",
    "city": "تبریز",
@@ -10089,10 +10129,15 @@
    "web": "https://tatcolab.ir/",
    "addr": "تبریز، خیابان پاستور جدید، مابین سیزده آبان و شهید جدیری، تجهیزات آزمایشگاهی تبریز",
    "src": "https://tatcolab.ir/",
-   "note": "تأمین، تجهیز، فروش و مشاوره تجهیزات آزمایشگاهی؛ تولید کیت‌های آزمایشگاه آب و پساب؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "note": "تأمین، تجهیز، فروش و مشاوره تجهیزات آزمایشگاهی؛ تولید کیت‌های آزمایشگاه آب و پساب؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)؛ بیش از 30 سال سابقه؛ همکار برند arco هند (شیشه‌آلات و ابزار آزمایشگاهی)؛ محصولات: استاندارد و بافر، بگ میکسر، سانتریفیوژ، شیشه‌آلات، کیت و معرف، مواد شیمیایی؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
     "تجهیزات آزمایشگاهی|Laboratory equipment",
-    "کیت‌های آزمایشگاه آب و پساب|Water and wastewater test kits"
+    "کیت‌های آزمایشگاه آب و پساب|Water and wastewater test kits",
+    "شیشه‌آلات آزمایشگاهی arco|arco laboratory glassware|arco",
+    "استاندارد و بافر|Standards and buffers",
+    "بگ میکسر (Stomacher)|Bag mixer",
+    "سانتریفیوژ|Centrifuge",
+    "کیت و معرف|Kits and reagents"
    ],
    "hi": 1
   },
@@ -10579,7 +10624,7 @@
    "web": "https://karizab.com/",
    "addr": "تهران، خیابان شریعتی، خیابان معلم، شماره 57",
    "src": "https://karizab.com/",
-   "note": "تولید انواع تجهیزات تصفیه آب و فاضلاب، مواد شیمیایی ضدرسوب و خوردگی و انواع کیت‌های سنجش؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "note": "تولید انواع تجهیزات تصفیه آب و فاضلاب، مواد شیمیایی ضدرسوب و خوردگی و انواع کیت‌های سنجش؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)؛ خدمات آزمایشگاهی آب و فاضلاب؛ تولید و واردات مواد شیمیایی تصفیه آب؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
     "کیت‌های سنجش آب|Water test kits",
     "تجهیزات تصفیه آب و فاضلاب|Water and wastewater treatment equipment",
@@ -10634,7 +10679,8 @@
    "e": "Kian Kavosh Tajhiz",
    "t": "t",
    "c": [
-    "lab"
+    "lab",
+    "std"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10645,11 +10691,14 @@
    "web": "https://kiankavosh.ir/",
    "addr": "تهران، چهارراه پاسداران، خیابان دولت، پلاک 180، طبقه دوم، واحد 4",
    "src": "https://kiankavosh.ir/",
-   "note": "واردات، توزیع، نصب و راه‌اندازی دستگاه‌های کروماتوگرافی GC و HPLC؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "note": "واردات، توزیع، نصب و راه‌اندازی دستگاه‌های کروماتوگرافی GC و HPLC؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)؛ تأمین قطعات یدکی و اقلام مصرفی دستگاه‌های آنالیز، تعمیر و سرویس دوره‌ای؛ فروش استانداردها و حلال‌های کروماتوگرافی GC و HPLC؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
     "دستگاه HPLC|HPLC systems",
     "دستگاه کروماتوگرافی گازی (GC)|Gas chromatographs (GC)",
-    "نصب و راه‌اندازی کروماتوگرافی|Chromatography installation"
+    "نصب و راه‌اندازی کروماتوگرافی|Chromatography installation",
+    "قطعات یدکی و مصرفی HPLC و GC|HPLC and GC spare parts and consumables",
+    "استاندارد و حلال کروماتوگرافی|Chromatography standards and solvents",
+    "تعمیر و سرویس دستگاه‌های آنالیز|Analytical instrument repair and service"
    ],
    "hi": 1
   },
@@ -10835,8 +10884,8 @@
    "hi": 1
   },
   {
-   "n": "مجموعه راهکارهای علمی و صنعتی (SISCO)",
-   "e": "SISCO (Scientific and Industrial Solutions Co.)",
+   "n": "راهکارهای علمی و صنعتی ساتر (سیسکو)",
+   "e": "Sater Scientific and Industrial Solutions (SISCO)",
    "t": "t",
    "c": [
     "lab"
@@ -10844,16 +10893,26 @@
    "prov": "تهران",
    "city": "تهران",
    "tel": [
-    "021-52508"
+    "021-54508"
    ],
    "mail": "info@sisco.ir",
-   "web": "https://sisco.com/",
+   "web": "https://sisco.ir/",
    "addr": "تهران، خیابان کارگر شمالی، خیابان فکوری، پلاک 159",
-   "src": "https://sisco.com/",
-   "note": "خرید و فروش، تهیه، توزیع و پخش انواع سیستم‌ها و دستگاه‌های آزمایشگاهی و کنترل کیفی و تحقیقاتی؛ فکس: 021-88006381؛ شماره تلفن در فهرست نمایشگاه کوتاه چاپ شده است؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "src": "https://sisco.ir/",
+   "note": "خرید و فروش، تهیه، توزیع و پخش سیستم‌ها و دستگاه‌های آزمایشگاهی، کنترل کیفی و تحقیقاتی؛ تأسیس 1395 با نمایندگی انحصاری و رسمی برندهایی از جمله Binder، Julabo، Gerhardt، Gerber، Kruss، Perten، Biochrom، Labthink، Hermle، Hirayama، Hansatech، Hygiena، Eijkelkamp، Bioreba و MicroDigital؛ صنایع: دارویی، غذایی، بهداشتی، میکروبیولوژی، IVF، کشاورزی، بسته‌بندی، پلیمر و نفت؛ فکس: 021-88006381؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
-    "سیستم‌ها و دستگاه‌های آزمایشگاهی|Laboratory systems and instruments",
-    "دستگاه‌های کنترل کیفی|Quality-control instruments"
+    "انکوباتور و آون Binder|Binder incubators and ovens|Binder",
+    "سیرکولاتور و حمام Julabo|Julabo circulators and baths|Julabo",
+    "دستگاه کجلدال و استخراج Gerhardt|Gerhardt Kjeldahl and extraction systems|Gerhardt",
+    "تجهیزات Gerber|Gerber instruments|Gerber",
+    "رفرکتومتر و پلاریمتر Kruss|Kruss refractometers and polarimeters|Kruss",
+    "تجهیزات Perten|Perten instruments|Perten",
+    "اسپکتروفتومتر Biochrom|Biochrom spectrophotometers|Biochrom",
+    "تجهیزات تست بسته‌بندی Labthink|Labthink packaging testers|Labthink",
+    "سانتریفیوژ Hermle|Hermle centrifuges|Hermle",
+    "اتوکلاو Hirayama|Hirayama autoclaves|Hirayama",
+    "لومینومتر ATP برند Hygiena|Hygiena ATP luminometers|Hygiena",
+    "تجهیزات آزمایشگاهی داروسازی|Pharmaceutical laboratory equipment"
    ],
    "hi": 1
   },
@@ -10935,13 +10994,15 @@
    "prov": "مرکزی",
    "city": "اراک",
    "tel": [
-    "086-34131885"
+    "086-34131885",
+    "021-86196184",
+    "0912-891-0619"
    ],
    "mail": "miladeshgholahi@gmail.com",
    "web": "https://arakshimi.com/",
    "addr": "استان مرکزی، اراک، شهرک صنعتی حاجی‌آباد، خیابان صنعت، فرعی زنبق",
    "src": "https://arakshimi.com/",
-   "note": "تولیدکننده انواع محلول‌های استاندارد آزمایشگاهی، تیترازول‌ها و کیت‌های آنالیز آب و فاضلاب؛ تولیدکننده کاغذهای pH آزمایشگاهی؛ ایمیل در فهرست نمایشگاه با «.con» چاپ شده و به «.com» اصلاح شد؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "note": "تولیدکننده انواع محلول‌های استاندارد آزمایشگاهی، تیترازول‌ها و کیت‌های آنالیز آب و فاضلاب؛ تولیدکننده کاغذهای pH آزمایشگاهی؛ ایمیل در فهرست نمایشگاه با «.con» چاپ شده و به «.com» اصلاح شد؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)؛ دفتر فروش: تهران، خیابان شریعتی، روبروی خیابان پلیس، ساختمان دیپلمات؛ اولین تولیدکننده کیت‌های آنالیز عناصر آب در ایران؛ محصولات صنعتی: آنتی‌اسکالانت، رسوب‌زدا و چربی‌بر؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
     "محلول‌های استاندارد آزمایشگاهی|Laboratory standard solutions",
     "تیترازول (Volumetric concentrate)|Volumetric concentrates (titrisol)",
@@ -10983,14 +11044,22 @@
    "prov": "تهران",
    "city": "تهران",
    "tel": [
-    "021-88506204"
+    "021-88506204",
+    "021-66862819"
    ],
    "mail": "info@fmchireh.com",
    "web": "https://fmchireh.com/",
    "addr": "تهران، خیابان مطهری، خیابان میرعماد، کوچه جنتی، پلاک 18، طبقه 3",
    "src": "https://fmchireh.com/",
-   "note": "پیمانکار آزمایشگاه‌های صنعتی و تأمین‌کننده تجهیزات آزمایشگاهی؛ فکس: 021-88505293؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)",
+   "note": "پیمانکار آزمایشگاه‌های صنعتی و تأمین‌کننده تجهیزات آزمایشگاهی؛ فکس: 021-88505293؛ اطلاعات از فهرست غرفه‌داران نهمین نمایشگاه CLI Expo (آبان 1405)؛ نماینده رسمی فروش و تعمیرات OrigaLys (فرانسه)؛ محصولات GBC (استرالیا): جذب اتمی SavantAA و XplorAA، ICP-OES Integra و Quantima، ICP-MS OptiMass، XRD Emma، UV-Vis Cintra و GC Nebula؛ تولید دستگاه‌های Gluwash، Glutex، شیکر الک و نقطه شبنم؛ مشاوره، طراحی و احداث آزمایشگاه؛ اطلاعات تکمیلی از سایت شرکت (آبان 1405)",
    "p": [
+    "پتانسیواستات و گالوانواستات OrigaLys|OrigaLys potentiostats / galvanostats|OrigaLys",
+    "جذب اتمی GBC (AAS)|GBC atomic absorption spectrometers|GBC",
+    "ICP-OES و ICP-MS برند GBC|GBC ICP-OES and ICP-MS|GBC",
+    "اسپکتروفتومتر UV-Vis GBC Cintra|GBC Cintra UV-Vis spectrophotometers|GBC",
+    "XRD برند GBC|GBC XRD|GBC",
+    "کروماتوگرافی گازی GBC|GBC gas chromatograph|GBC",
+    "شیکر الک|Sieve shaker",
     "پیمانکاری و تجهیز آزمایشگاه صنعتی|Industrial laboratory contracting and fit-out",
     "تجهیزات آزمایشگاهی|Laboratory equipment"
    ],
