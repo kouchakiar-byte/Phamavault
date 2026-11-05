@@ -10,6 +10,8 @@ import { href } from "@/lib/paths";
 import type { SupplierPage, SupplierView } from "@/lib/supplier-api";
 import { norm, type Filters, type SortKey } from "@/lib/supplier-search";
 import { BiTitle } from "./ui";
+import { QuoteRequest } from "./quote-request";
+import { quoteCopy } from "@/content/lab-brands";
 
 const t = pages.suppliers;
 
@@ -198,9 +200,12 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
       )}
 
       {page.total === 0 ? (
-        <p className="rounded-card border border-dashed border-line bg-white p-6 text-muted">
-          {fillQuery(t.empty[locale], filters.query)}
-        </p>
+        <div className="space-y-4 rounded-card border border-dashed border-line bg-white p-6">
+          <p className="text-muted">{fillQuery(t.empty[locale], filters.query)}</p>
+          {/* Nothing found: offer to find it for them */}
+          <p className="font-semibold text-vault-900">{quoteCopy.lead[locale]}</p>
+          <QuoteRequest key={filters.query} locale={locale} defaultItem={filters.query} />
+        </div>
       ) : (
         <div className="flex flex-col gap-3">
           {rows.map((s) => (

@@ -24,12 +24,12 @@ export const sections = [
     icon: Factory,
     group: "databases",
     title: bi(
-      "Suppliers & Manufacturers of Pharmaceutical, Supplement and Cosmetic Raw Materials",
-      "بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل و آرایشی‌بهداشتی",
+      "Suppliers & Manufacturers of Pharmaceutical, Supplement and Cosmetic Raw Materials and Laboratory Equipment",
+      "بانک تأمین‌کنندگان و تولیدکنندگان مواد اولیه دارویی، مکمل، آرایشی‌بهداشتی و تجهیزات آزمایشگاهی",
     ),
     description: bi(
-      "Iranian manufacturers and importers of APIs, excipients, vitamins, mineral salts, supplement and cosmetic raw materials, with contact details, searchable by material.",
-      "تولیدکنندگان و واردکنندگان ایرانی مواد مؤثره، مواد جانبی، ویتامین‌ها، مینرال‌ها و مواد اولیه مکمل و آرایشی‌بهداشتی، همراه با اطلاعات تماس و قابل جستجو بر اساس ماده.",
+      "Iranian manufacturers and importers of APIs, excipients, vitamins, mineral salts, supplement and cosmetic raw materials, laboratory instruments and chemicals, with contact details and brand agencies, searchable by material, brand or instrument.",
+      "تولیدکنندگان و واردکنندگان ایرانی مواد مؤثره، مواد جانبی، ویتامین‌ها، مینرال‌ها، مواد اولیه مکمل و آرایشی‌بهداشتی، و تجهیزات و مواد آزمایشگاهی، همراه با اطلاعات تماس و نمایندگی برندها؛ قابل جستجو بر اساس ماده، برند یا دستگاه.",
     ),
   },
   {

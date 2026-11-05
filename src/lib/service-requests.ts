@@ -1,7 +1,8 @@
 import { db } from "./db";
 
 /** Requests for services ordered outside a subscription, sent from forms on the site. */
-export type ServiceKind = "ctd";
+/** ctd: a CTD compilation order; quote: a price enquiry for a raw material or lab item from the supplier bank. */
+export type ServiceKind = "ctd" | "quote";
 
 export type ServiceRequest = {
   id: string;

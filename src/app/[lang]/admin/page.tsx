@@ -33,7 +33,8 @@ const { admin: t, dashboard: d, invoice: inv } = account;
 const copyToman = copy.plans.currency;
 
 const requestLabels = {
-  title: bi("Service requests (CTD compilation)", "درخواست‌های خدمات (تدوین CTD)"),
+  title: bi("Service requests (CTD compilation, price quotes)", "درخواست‌های خدمات (تدوین CTD و استعلام قیمت)"),
+  kinds: { ctd: bi("CTD", "تدوین CTD"), quote: bi("Price quote", "استعلام قیمت") },
   none: bi("No requests yet.", "هنوز درخواستی ثبت نشده است."),
   who: bi("Requester", "درخواست‌کننده"),
   product: bi("Product", "فرآورده"),
@@ -268,7 +269,7 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
                   <tr key={r.id} className={r.handled ? "opacity-60" : undefined}>
                     <td className="whitespace-nowrap">
                       {formatDate(r.createdAt, locale)}
-                      <span className="block text-xs font-semibold text-capsule-600">{r.kind.toUpperCase()}</span>
+                      <span className="block text-xs font-semibold text-capsule-600">{requestLabels.kinds[r.kind]?.[locale] ?? r.kind}</span>
                     </td>
                     <td>
                       {r.name}

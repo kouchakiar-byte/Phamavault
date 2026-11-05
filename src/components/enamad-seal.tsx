@@ -8,7 +8,7 @@ const t = copy.enamad;
  * The e-Namad seal exactly as the e-Namad panel issues it: the image (referrer
  * policy and `code` attribute) inside a link to the domain's e-Namad profile,
  * which e-Namad requires. `compact` is a smaller copy of the
- * footer card for the top of the home page; otherwise it sits in a card that names what it
+ * footer card for the top of the home page (on phones a slim strip: seal and title only); otherwise it sits in a card that names what it
  * certifies (`dark` on the footer, `light` on white pages).
  */
 export function EnamadSeal({ locale, tone = "light", compact = false, className = "" }: { locale: Locale; tone?: "light" | "dark"; compact?: boolean; className?: string }) {
@@ -32,14 +32,14 @@ export function EnamadSeal({ locale, tone = "light", compact = false, className 
   if (compact) {
     // The footer card on the dark hero, smaller: seal, tick and title, then the description
     return (
-      <div className={`flex max-w-md items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-2 pe-4 ${className}`}>
-        <span className="shrink-0 rounded-lg bg-white p-1 ring-1 ring-black/5">{image(56)}</span>
+      <div className={`flex max-w-md items-center gap-2.5 rounded-xl border border-white/10 bg-white/5 p-1.5 pe-3 sm:gap-3 sm:rounded-2xl sm:p-2 sm:pe-4 ${className}`}>
+        <span className="w-10 shrink-0 rounded-md bg-white p-0.5 ring-1 ring-black/5 sm:w-auto sm:rounded-lg sm:p-1 [&_img]:w-full">{image(56)}</span>
         <div className="min-w-0">
           <p className="flex items-center gap-1 text-xs font-bold text-white">
             <ShieldCheck className="size-3.5 shrink-0 text-molecule-400" aria-hidden="true" />
             {t.title[locale]}
           </p>
-          <p className="mt-0.5 text-[0.7rem] leading-relaxed text-vault-100/80">{t.text[locale]}</p>
+          <p className="mt-0.5 hidden text-[0.7rem] leading-relaxed text-vault-100/80 sm:block">{t.text[locale]}</p>
         </div>
       </div>
     );
