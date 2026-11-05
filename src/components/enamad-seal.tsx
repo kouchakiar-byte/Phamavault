@@ -8,7 +8,7 @@ const t = copy.enamad;
  * The e-Namad seal exactly as the e-Namad panel issues it: the image (referrer
  * policy and `code` attribute) inside a link to the domain's e-Namad profile,
  * which e-Namad requires. `compact` is a smaller copy of the
- * footer card for the top of the home page (on phones a slim strip: seal and title only); otherwise it sits in a card that names what it
+ * footer card for the top of the home page (slimmer on phones); otherwise it sits in a card that names what it
  * certifies (`dark` on the footer, `light` on white pages).
  */
 export function EnamadSeal({ locale, tone = "light", compact = false, className = "" }: { locale: Locale; tone?: "light" | "dark"; compact?: boolean; className?: string }) {
@@ -39,7 +39,7 @@ export function EnamadSeal({ locale, tone = "light", compact = false, className 
             <ShieldCheck className="size-3.5 shrink-0 text-molecule-400" aria-hidden="true" />
             {t.title[locale]}
           </p>
-          <p className="mt-0.5 hidden text-[0.7rem] leading-relaxed text-vault-100/80 sm:block">{t.text[locale]}</p>
+          <p className="mt-0.5 text-[0.7rem] leading-relaxed text-vault-100/80">{t.text[locale]}</p>
         </div>
       </div>
     );

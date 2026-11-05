@@ -78,7 +78,7 @@ function sectionHighlight(slug: string, n: (x: number) => string, c: Counts): Bi
     case "suppliers":
       return bi(
         `${n(c.suppliers)} companies · ${n(c.supplierMaterials)} materials`,
-        `${n(c.suppliers)} شرکت · ${n(c.supplierMaterials)} قلم ماده`,
+        `${n(c.suppliers)} شرکت · ${n(c.supplierMaterials)} قلم ماده و تجهیزات`,
       );
     case "handbooks":
       return bi(`${n(handbooks.length)} titles · ${n(chapters)} chapters`, `${n(handbooks.length)} عنوان · ${n(chapters)} فصل`);
@@ -146,8 +146,8 @@ export default async function HomePage() {
   const locale = await getLocale();
   const counts: Counts = {
     suppliers: suppliers.companies.length,
-    // Raw-material listings only: companies that sell nothing but lab equipment are not counted here.
-    supplierMaterials: suppliers.companies.filter((c) => c.c.some((k) => k !== "lab")).reduce((n, c) => n + c.p.length, 0),
+    // Every listing in the bank: raw materials, reference standards and laboratory equipment.
+    supplierMaterials: suppliers.companies.reduce((n, c) => n + c.p.length, 0),
     materials: rawMaterials.items.length,
   };
   const { hero, departments, sectionsIntro, ctdService, databases, toolsShowcase, howItWorks, plans, faq, contact } = copy;
