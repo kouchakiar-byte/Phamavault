@@ -9198,6 +9198,45 @@
     "فتومتر (Photometer)|Photometer"
    ],
    "partial": 1
+  },
+  {
+   "n": "لبینت",
+   "e": "Labinet",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-44214961"
+   ],
+   "web": "https://labinet.ir/",
+   "src": "https://labinet.ir/",
+   "note": "شبکه فروش تجهیزات آزمایشگاهی و صنعتی (Laboratory & Industrial Sales Network)؛ اینستاگرام: labinet.ir؛ اطلاعات از کارت شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)؛ برندها و دستگاه‌ها هنوز از سایت یا کاتالوگ خود شرکت تأیید نشده است",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment",
+    "تجهیزات صنعتی|Industrial equipment"
+   ],
+   "partial": 1
+  },
+  {
+   "n": "آرمان آفرین آزما",
+   "e": "Arman Afarin Azma",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [],
+   "src": "https://drive.google.com/file/d/1tEP1eCkVt0ScJ1pW4Nyu22gMVTVFPBve/view",
+   "note": "تأمین تجهیزات آزمایشگاهی؛ پیوند سایت به کاتالوگ شرکت در Google Drive می‌رود؛ اطلاعات از تابلوی شرکت در نمایشگاه تجهیزات و مواد آزمایشگاهی (آبان 1405)؛ برندها و دستگاه‌ها هنوز از سایت یا کاتالوگ خود شرکت تأیید نشده است",
+   "p": [
+    "تجهیزات آزمایشگاهی|Laboratory equipment"
+   ],
+   "partial": 1,
+   "web": "https://drive.google.com/file/d/1tEP1eCkVt0ScJ1pW4Nyu22gMVTVFPBve/view"
   }
  ],
  "provinceOrder": [
