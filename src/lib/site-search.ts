@@ -9,6 +9,7 @@ import type { Locale } from "@/i18n/config";
 import { getUser } from "./auth";
 import { getCatalog } from "./catalog";
 import { handbookAnchor } from "./handbook-anchor";
+import { trialOpenToday } from "./metering";
 import { excipientSlug } from "./excipient-slug";
 import { searchOrangeBook } from "./orange-book";
 import { href } from "./paths";
@@ -535,5 +536,7 @@ export async function lockedSections(): Promise<(section: PaidSection | null) =>
   const user = await getUser().catch(() => null);
   if (user?.isAdmin) return () => false;
   const open = user ? await sectionsFor(user.mobile).catch(() => new Set<PaidSection>()) : new Set<PaidSection>();
+  // A reader on one of this month's free days uses every section, as the section pages do.
+  if (user && open.size === 0 && (await trialOpenToday(user.id).catch(() => false))) return () => false;
   return (section) => section !== null && !open.has(section);
 }

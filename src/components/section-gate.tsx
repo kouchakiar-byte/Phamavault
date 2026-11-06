@@ -86,7 +86,8 @@ function TrialBanner({ locale, day }: { locale: Locale; day: number }) {
 
 function Paywall({ section, locale, state }: { section: PaidSection; locale: Locale; state: "signup" | "trialOver" }) {
   const signedIn = state !== "signup";
-  const title = getSection(section).title[locale];
+  const { title: sectionTitle, description } = getSection(section);
+  const title = sectionTitle[locale];
   const buy = href(locale, "account/buy");
   const here = href(locale, getSection(section).href);
   return (
@@ -97,6 +98,7 @@ function Paywall({ section, locale, state }: { section: PaidSection; locale: Loc
         </span>
         <h1 className="mt-6 text-2xl font-bold text-vault-900 sm:text-3xl">{(signedIn ? t.trialOverTitle : t.signupTitle)[locale]}</h1>
         <p className="mt-2 text-lg font-semibold text-molecule-700">{title}</p>
+        <p className="mx-auto mt-3 max-w-xl rounded-xl bg-molecule-50/60 px-4 py-3 text-sm leading-relaxed text-ink">{description[locale]}</p>
         <p className="mt-4 leading-relaxed text-muted">{(signedIn ? t.trialOverText : t.signupText)[locale].replace("{section}", title)}</p>
         {section === "pharmacy" && <p className="mt-2 text-sm text-muted">{t.textPharmacy[locale]}</p>}
         <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:justify-center">
