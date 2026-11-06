@@ -162,6 +162,13 @@ body {
   background: var(--color-vault-50);
   color: var(--color-muted);
 }
+/* Worked-example mode: locked inputs stay readable. */
+fieldset:disabled .field-input {
+  opacity: 1;
+  cursor: not-allowed;
+  background: var(--color-vault-50);
+  color: var(--color-ink);
+}
 .field-input:focus {
   outline: none;
   border-color: var(--color-molecule-500);

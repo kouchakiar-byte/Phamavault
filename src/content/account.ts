@@ -324,6 +324,13 @@ export const account = {
       "روز رایگان {n} از 2 در این ماه. کپی محتوا و دانلود هندبوک‌های گذشته فقط برای مشترکین است.",
     ),
     trialBuy: bi("Subscribe", "خرید اشتراک"),
+    exampleBadge: bi("Worked example", "مثال حل‌شده"),
+    exampleTitle: bi("Every calculator, with a worked example", "همه ماشین‌حساب‌ها، با یک مثال حل‌شده"),
+    exampleText: bi(
+      "Each of the {n} calculators opens on a worked example: the inputs are sample values and every result comes from the calculator's own formula. Entering your own data is for subscribers.",
+      "هر یک از {n} ماشین‌حساب با یک مثال حل‌شده باز می‌شود؛ ورودی‌ها عددهای نمونه‌اند و هر نتیجه با فرمول همان ماشین‌حساب به دست آمده است. وارد کردن داده‌های خودتان ویژه مشترکین است.",
+    ),
+    exampleSignup: bi("Sign up free: 2 days a month to use every calculator", "ثبت‌نام رایگان؛ هر ماه 2 روز استفاده از همه ماشین‌حساب‌ها"),
   },
   admin: {
     title: bi("Admin panel", "پنل مدیریت"),
@@ -489,7 +496,7 @@ export const account = {
       kind: bi("Type", "نوع"),
       recipient: bi("Entered / sent to", "واردشده / گیرنده"),
       result: bi("Result", "نتیجه"),
-      kinds: { reset: bi("Password recovery", "بازیابی رمز"), test: bi("Test", "آزمایشی"), invoice: bi("Pro-forma", "پیش‌فاکتور") },
+      kinds: { reset: bi("Password recovery", "بازیابی رمز"), test: bi("Test", "آزمایشی"), invoice: bi("Pro-forma", "پیش‌فاکتور"), alert: bi("Supplier alert", "اعلان تأمین‌کننده") },
       details: {
         sent: bi("Email sent", "ایمیل ارسال شد"),
         noAccount: bi("No account with this mobile number or email", "حسابی با این موبایل یا ایمیل وجود ندارد"),

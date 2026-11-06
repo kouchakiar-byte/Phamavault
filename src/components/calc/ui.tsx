@@ -3,14 +3,18 @@
 import type { ReactNode } from "react";
 import { bi, type Bi } from "@/i18n/bi";
 import type { Locale } from "@/i18n/config";
+import { account } from "@/content/account";
+import { isolateText } from "@/lib/bidi";
 import { copy } from "@/content/site";
 import { refUrl, refsForTitle } from "@/content/calculations";
 import { BiTitle } from "../ui";
 
 /* Shared building blocks for every calculator panel. */
 
+const { exampleBadge } = account.gate;
+
 export type Values = Record<string, string>;
-export type Ctx = { locale: Locale; v: Values; set: (key: string, value: string) => void };
+export type Ctx = { locale: Locale; v: Values; set: (key: string, value: string) => void; /** Worked example only: inputs are locked. */ demo?: boolean };
 
 export const num = (s: string | undefined) => parseFloat(s ?? "");
 
@@ -114,7 +118,12 @@ export function Panel({ ctx, title, form, results, message, note, children }: {
 }) {
   return (
     <div className="flex flex-col gap-5 rounded-card border border-line bg-white p-6">
-      <BiTitle as="h2" text={title} locale={ctx.locale} className="text-xl font-bold text-vault-900" />
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <BiTitle as="h2" text={title} locale={ctx.locale} className="text-xl font-bold text-vault-900" />
+        {ctx.demo && (
+          <span className="rounded-full border border-capsule-400/60 bg-capsule-50 px-3 py-1 text-xs font-semibold text-capsule-700">{exampleBadge[ctx.locale]}</span>
+        )}
+      </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div className="flex flex-col gap-3">{form}</div>
         <div className="flex h-fit flex-col gap-3 rounded-xl bg-vault-50 p-5">
@@ -123,9 +132,13 @@ export function Panel({ ctx, title, form, results, message, note, children }: {
             .map((r) => (
               <div key={r.label.en} className="flex flex-wrap items-baseline justify-between gap-3 border-b border-line pb-2.5 text-sm text-muted">
                 <span>{r.label[ctx.locale]}</span>
-                <b className="font-mono text-[1.05rem] font-bold text-vault-900 tabular-nums" dir="ltr">
-                  {r.value}
-                </b>
+                {/[؀-ۿ]/.test(r.value) ? (
+                  <b className="text-[1.05rem] font-bold text-vault-900">{isolateText(r.value)}</b>
+                ) : (
+                  <b className="font-mono text-[1.05rem] font-bold text-vault-900 tabular-nums" dir="ltr">
+                    {r.value}
+                  </b>
+                )}
               </div>
             ))}
           <p className="min-h-5 text-sm text-warn" aria-live="polite">

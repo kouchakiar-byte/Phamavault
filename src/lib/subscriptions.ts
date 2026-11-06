@@ -1,6 +1,7 @@
 import type { PoolClient } from "pg";
 import { db, transaction } from "./db";
 import { isPaidSection, type PaidSection, type PlanId } from "./pricing";
+import { rewardReferral } from "./referrals";
 
 /** The paywall is off until PAYWALL=on, so the site stays open while payments are being set up. */
 export const paywallEnabled = (): boolean => process.env.PAYWALL === "on";
@@ -160,10 +161,12 @@ export async function activateOrder(
   orderId: string,
   payment: { refId?: string | null; cardPan?: string | null; note?: string | null } = {},
 ): Promise<OrderRow | null> {
-  return transaction(async (client) => {
+  let fresh = false;
+  const result = await transaction(async (client) => {
     const { rows } = await client.query<OrderRow>("select * from orders where id = $1 for update", [orderId]);
     const order = rows[0];
     if (!order || order.status === "paid") return order ?? null;
+    fresh = true;
     const subscriptionId = await grant(client, {
       ownerId: order.user_id,
       plan: order.plan,
@@ -180,6 +183,9 @@ export async function activateOrder(
     );
     return { ...order, status: "paid" };
   });
+  // A first paid order of an invited reader earns their referrer a reward; never blocks the payment.
+  if (fresh) await rewardReferral(orderId).catch((error) => console.error("referral reward failed", error));
+  return result;
 }
 
 export async function findOrderByAuthority(authority: string): Promise<OrderRow | null> {

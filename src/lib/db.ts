@@ -30,6 +30,8 @@ alter table users add column if not exists kind text not null default 'individua
 alter table users add column if not exists org text;
 -- An admin can block an account: it can no longer sign in and its sessions end.
 alter table users add column if not exists blocked boolean not null default false;
+alter table users add column if not exists ref_code text unique;
+alter table users add column if not exists referred_by bigint references users(id) on delete set null;
 create table if not exists password_resets (
   token_hash text primary key,
   user_id bigint not null references users(id) on delete cascade,
@@ -196,6 +198,33 @@ create table if not exists service_requests (
   created_at timestamptz not null default now()
 );
 create index if not exists service_requests_created_idx on service_requests(created_at);
+create table if not exists supplier_alerts (
+  id bigserial primary key,
+  user_id bigint not null references users(id) on delete cascade,
+  query text not null,
+  query_key text not null,
+  email text,
+  locale text not null default 'fa',
+  created_at timestamptz not null default now(),
+  found_at timestamptz,
+  found int not null default 0,
+  mailed_at timestamptz,
+  unique (user_id, query_key)
+);
+create index if not exists supplier_alerts_open_idx on supplier_alerts(found_at) where found_at is null;
+-- Referral rewards: 7 days for the referrer when someone they invited makes a first paid order; 3 a Jalali month.
+create table if not exists referral_rewards (
+  id bigserial primary key,
+  referrer_id bigint not null references users(id) on delete cascade,
+  referee_id bigint not null unique references users(id) on delete cascade,
+  order_id bigint references orders(id) on delete set null,
+  subscription_id bigint references subscriptions(id) on delete set null,
+  month text not null,
+  days int not null,
+  status text not null,
+  created_at timestamptz not null default now()
+);
+create index if not exists referral_rewards_referrer_idx on referral_rewards(referrer_id, month);
 `;
 
 const g = globalThis as unknown as { pvPool?: Pool; pvSchema?: Promise<unknown> };

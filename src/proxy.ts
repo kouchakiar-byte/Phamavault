@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { REF_CODE, REF_COOKIE } from "@/lib/ref-cookie";
 import excipients from "@/data/excipients.json";
 import sops from "@/data/sops.json";
 import { LOCALE_COOKIE, defaultLocale, hasLocale, type Locale } from "@/i18n/config";
@@ -57,7 +58,7 @@ function overLimit(request: NextRequest): boolean {
   return !allow(`page:${clientIp(request.headers)}`, 240, 5 * 60_000);
 }
 
-export function proxy(request: NextRequest) {
+function route(request: NextRequest): NextResponse | undefined {
   const { pathname } = request.nextUrl;
   // AI training crawlers are refused outright; robots.txt (not matched here) still tells them so politely.
   if (isAiBot(request.headers.get("user-agent") ?? "")) {
@@ -101,6 +102,16 @@ export function proxy(request: NextRequest) {
     }
     if (key !== slug) return redirect(request, `/${lang}/${section}/${key}`);
   }
+}
+
+/** Referral links (?ref=code): the first code a visitor arrives with is kept for 30 days, until sign-up. */
+export function proxy(request: NextRequest) {
+  const response = route(request);
+  const ref = request.nextUrl.searchParams.get("ref")?.toLowerCase();
+  if (!ref || !REF_CODE.test(ref) || request.cookies.has(REF_COOKIE) || (response && response.status >= 400)) return response;
+  const out = response ?? NextResponse.next();
+  out.cookies.set(REF_COOKIE, ref, { maxAge: 30 * 86_400, httpOnly: true, sameSite: "lax", secure: process.env.NODE_ENV === "production", path: "/" });
+  return out;
 }
 
 export const config = {

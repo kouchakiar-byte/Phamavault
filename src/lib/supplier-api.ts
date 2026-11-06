@@ -105,3 +105,11 @@ export async function querySuppliers(filters: Filters, page: number, contacts: b
     contacts,
   };
 }
+
+/** Suppliers that list the queried material itself (by name or product), not those found only by category or loose words. */
+export async function strongMatchCount(query: string): Promise<number> {
+  const catalog = await getCatalog();
+  const { suppliers, synonyms } = prepare_(catalog);
+  const rows = search(suppliers, { query, type: "all", cat: "all", sort: "rel", telOnly: false }, synonyms, catalog.provinceOrder, categoryLabels);
+  return rows.filter((r) => r.match === "name" || r.match === "product").length;
+}
