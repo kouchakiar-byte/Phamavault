@@ -316,8 +316,8 @@ export const account = {
     signInPlain: bi("Sign in", "ورود"),
     trialOverTitle: bi("Your 2 free days this month are used", "2 روز رایگان این ماه شما استفاده شده است"),
     trialOverText: bi(
-      "Each account has 2 free days in every month. You get 2 new days on the 1st of next month; to read “{section}” now, subscribe.",
-      "هر حساب در هر ماه 2 روز استفاده رایگان دارد. از روز اول ماه بعد دوباره 2 روز رایگان خواهید داشت؛ برای استفاده از «{section}» در این ماه، اشتراک تهیه کنید.",
+      "Your 2 free days for this month are used. To use “{section}”, subscribe.",
+      "2 روز استفاده رایگان شما در این ماه تمام شده است. برای استفاده از «{section}»، اشتراک تهیه کنید.",
     ),
     trialBanner: bi(
       "Free day {n} of 2 this month. Copying and earlier handbooks are for subscribers.",
