@@ -1,7 +1,7 @@
 import { pages } from "@/content/pages";
 import { getCatalog, type Catalog } from "./catalog";
 import { publicNote } from "./supplier-note";
-import { norm, prepare, search, type Filters, type MatchKind, type SortKey, type Supplier } from "./supplier-search";
+import { legacyCategory, norm, prepare, search, type Filters, type MatchKind, type SortKey, type Supplier } from "./supplier-search";
 
 /** Results per request: the bank is read a page at a time, never shipped whole to the browser. */
 export const SUPPLIER_PAGE = 20;
@@ -58,7 +58,7 @@ function prepare_(catalog: Catalog) {
 /** Filters from a query string (?q=&type=&cat=&sort=&tel=1), with anything unknown set back to its default. */
 export function filtersFrom(params: URLSearchParams): Filters {
   const type = params.get("type");
-  const cat = params.get("cat") ?? "all";
+  const cat = legacyCategory(params.get("cat") ?? "all");
   const sort = params.get("sort") as SortKey;
   return {
     query: (params.get("q") ?? "").slice(0, 100),

@@ -32,6 +32,9 @@ export type Product = { fa: string; en: string; tag: string; key: string };
 export type Tier = "A" | "B" | "C" | "D";
 export type Supplier = SupplierRecord & { products: Product[]; nameKey: string; tier: Tier };
 export type SortKey = "cred" | "rel" | "site" | "type" | "name";
+/** Categories folded into others; old links (?cat=std) still land on the merged one. */
+export const legacyCategory = (cat: string): string => (cat === "std" ? "lab" : cat);
+
 export type Filters = { query: string; type: "all" | "m" | "t"; cat: string; sort: SortKey; telOnly: boolean };
 /** Why a company is in the results, strongest first. */
 export type MatchKind = "name" | "product" | "category" | "general";
