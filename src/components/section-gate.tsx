@@ -1,4 +1,5 @@
 import { Suspense, type ReactNode } from "react";
+import Image, { type StaticImageData } from "next/image";
 import { cookies, headers } from "next/headers";
 import { connection } from "next/server";
 import { CalendarClock, Lock, UserPlus } from "lucide-react";
@@ -15,8 +16,35 @@ import { FREE_DAYS, claimTrialDay } from "@/lib/metering";
 import { isVerifiedSearchBot } from "@/lib/search-bots";
 import { paywallEnabled, sectionsFor } from "@/lib/subscriptions";
 import { ButtonLink, Container } from "./ui";
+import suppliersPreview from "@/assets/previews/suppliers.webp";
+import handbooksPreview from "@/assets/previews/handbooks.webp";
+import excipientsPreview from "@/assets/previews/excipients.webp";
+import materialsPreview from "@/assets/previews/materials.webp";
+import toolsPreview from "@/assets/previews/tools.webp";
+import formulationPreview from "@/assets/previews/formulation.webp";
+import regulatoryPreview from "@/assets/previews/regulatory.webp";
+import qcPreview from "@/assets/previews/qc.webp";
+import qaPreview from "@/assets/previews/qa.webp";
+import referencesPreview from "@/assets/previews/references.webp";
+import pharmacyPreview from "@/assets/previews/pharmacy.webp";
+
 
 const { gate: t } = account;
+
+/** A blurred, static picture of each section's page: readers see what is inside, but nothing in it can be read or copied. */
+const previews: Record<PaidSection, StaticImageData> = {
+  suppliers: suppliersPreview,
+  handbooks: handbooksPreview,
+  excipients: excipientsPreview,
+  materials: materialsPreview,
+  tools: toolsPreview,
+  formulation: formulationPreview,
+  regulatory: regulatoryPreview,
+  qc: qcPreview,
+  qa: qaPreview,
+  references: referencesPreview,
+  pharmacy: pharmacyPreview,
+};
 const p = copy.plans.pricing;
 
 /**
@@ -92,43 +120,49 @@ function Paywall({ section, locale, state }: { section: PaidSection; locale: Loc
   const here = href(locale, getSection(section).href);
   return (
     <Container className="py-16 sm:py-24">
-      <div className="mx-auto max-w-2xl rounded-card border border-line bg-white p-8 text-center shadow-sm sm:p-12">
-        <span className="mx-auto flex size-14 items-center justify-center rounded-2xl bg-molecule-50 text-molecule-600">
-          {signedIn ? <Lock className="size-7" aria-hidden="true" /> : <UserPlus className="size-7" aria-hidden="true" />}
-        </span>
-        <h1 className="mt-6 text-2xl font-bold text-vault-900 sm:text-3xl">{(signedIn ? t.trialOverTitle : t.signupTitle)[locale]}</h1>
-        <p className="mt-2 text-lg font-semibold text-molecule-700">{title}</p>
-        <p className="mx-auto mt-3 max-w-xl rounded-xl bg-molecule-50/60 px-4 py-3 text-sm leading-relaxed text-ink">{description[locale]}</p>
-        <p className="mt-4 leading-relaxed text-muted">{(signedIn ? t.trialOverText : t.signupText)[locale].replace("{section}", title)}</p>
-        {section === "pharmacy" && <p className="mt-2 text-sm text-muted">{t.textPharmacy[locale]}</p>}
-        <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:justify-center">
-          {!signedIn ? (
-            <>
-              <ButtonLink href={`${href(locale, "account/register")}?next=${encodeURIComponent(here)}`}>{t.signup[locale]}</ButtonLink>
-              <ButtonLink href={`${href(locale, "account/login")}?next=${encodeURIComponent(here)}`} variant="ghost" arrow={false}>
-                {t.signInPlain[locale]}
-              </ButtonLink>
-            </>
-          ) : section === "pharmacy" ? (
-            <ButtonLink href={`${buy}?plan=pharmacy`}>{t.buyPharmacy[locale].replace("{price}", formatNumber(p.pharmacy, locale))}</ButtonLink>
-          ) : (
-            <>
-              <ButtonLink href={buy}>{t.buyAll[locale].replace("{price}", formatNumber(p.full, locale))}</ButtonLink>
-              <ButtonLink href={`${buy}?plan=team`} variant="ghost" arrow={false}>
-                {copy.plans.items[1].name[locale]}
-              </ButtonLink>
-            </>
-          )}
+      <div className="mx-auto max-w-2xl overflow-hidden rounded-card border border-line bg-white text-center shadow-sm">
+        <div className="relative aspect-[16/9] overflow-hidden border-b border-line bg-paper" aria-hidden="true">
+          <Image src={previews[section]} alt="" fill sizes="(min-width: 672px) 672px, 100vw" placeholder="blur" className="scale-110 object-cover object-top" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white" />
+          <span className="absolute inset-x-0 bottom-5 mx-auto flex size-16 items-center justify-center rounded-2xl border border-molecule-400/40 bg-white/90 text-molecule-600 shadow-lg backdrop-blur">
+            {signedIn ? <Lock className="size-8" /> : <UserPlus className="size-8" />}
+          </span>
         </div>
-        <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-          {!signedIn && (
-            <a href={buy} className="font-semibold text-molecule-700 hover:underline">
-              {t.buyAll[locale].replace("{price}", formatNumber(p.full, locale))}
+        <div className="p-8 pt-6 sm:p-12 sm:pt-8">
+          <h1 className="text-2xl font-bold text-vault-900 sm:text-3xl">{(signedIn ? t.trialOverTitle : t.signupTitle)[locale]}</h1>
+          <p className="mt-2 text-lg font-semibold text-molecule-700">{title}</p>
+          <p className="mx-auto mt-3 max-w-xl rounded-xl bg-molecule-50/60 px-4 py-3 text-sm leading-relaxed text-ink">{description[locale]}</p>
+          <p className="mt-4 leading-relaxed text-muted">{(signedIn ? t.trialOverText : t.signupText)[locale].replace("{section}", title)}</p>
+          {section === "pharmacy" && <p className="mt-2 text-sm text-muted">{t.textPharmacy[locale]}</p>}
+          <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:justify-center">
+            {!signedIn ? (
+              <>
+                <ButtonLink href={`${href(locale, "account/register")}?next=${encodeURIComponent(here)}`}>{t.signup[locale]}</ButtonLink>
+                <ButtonLink href={`${href(locale, "account/login")}?next=${encodeURIComponent(here)}`} variant="ghost" arrow={false}>
+                  {t.signInPlain[locale]}
+                </ButtonLink>
+              </>
+            ) : section === "pharmacy" ? (
+              <ButtonLink href={`${buy}?plan=pharmacy`}>{t.buyPharmacy[locale].replace("{price}", formatNumber(p.pharmacy, locale))}</ButtonLink>
+            ) : (
+              <>
+                <ButtonLink href={buy}>{t.buyAll[locale].replace("{price}", formatNumber(p.full, locale))}</ButtonLink>
+                <ButtonLink href={`${buy}?plan=team`} variant="ghost" arrow={false}>
+                  {copy.plans.items[1].name[locale]}
+                </ButtonLink>
+              </>
+            )}
+          </div>
+          <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+            {!signedIn && (
+              <a href={buy} className="font-semibold text-molecule-700 hover:underline">
+                {t.buyAll[locale].replace("{price}", formatNumber(p.full, locale))}
+              </a>
+            )}
+            <a href={href(locale, "#plans")} className="text-muted hover:text-molecule-700">
+              {t.plans[locale]}
             </a>
-          )}
-          <a href={href(locale, "#plans")} className="text-muted hover:text-molecule-700">
-            {t.plans[locale]}
-          </a>
+          </div>
         </div>
       </div>
     </Container>

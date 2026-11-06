@@ -24,6 +24,7 @@ import { goldWord, VaultWord, withBrand } from "@/components/brand";
 import { LogoMark } from "@/components/logo";
 import { PriceEstimator } from "@/components/price-estimator";
 import { SupplierSpotlight } from "@/components/supplier-spotlight";
+import { WeeklyCase } from "@/components/weekly-case";
 import { BiTitle, ButtonLink, Container, MoleculePattern, SectionHead } from "@/components/ui";
 import { calculation, calculations, featuredCalculations } from "@/content/calculations";
 import { referenceSections } from "@/content/references";
@@ -319,6 +320,13 @@ export default async function HomePage() {
       <section id="free-handbook" className="scroll-mt-20 bg-white pt-16 lg:pt-20">
         <Container>
           <FreeHandbookFeature handbook={freeHandbooks[0]} locale={locale} />
+        </Container>
+      </section>
+
+      {/* Case of the week */}
+      <section id="case" className="scroll-mt-20 bg-white pt-12 lg:pt-16">
+        <Container>
+          <WeeklyCase locale={locale} />
         </Container>
       </section>
 
