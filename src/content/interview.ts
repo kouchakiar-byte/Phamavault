@@ -22,6 +22,11 @@ export const interviewCopy = {
   areas: { qc: bi("Quality control (QC)", "کنترل کیفیت (QC)"), qa: bi("Quality assurance (QA)", "تضمین کیفیت (QA)") } satisfies Record<InterviewArea, Bi>,
   levels: { basic: bi("Basic", "پایه"), mid: bi("Intermediate", "متوسط"), advanced: bi("Advanced", "پیشرفته") } satisfies Record<InterviewLevel, Bi>,
   free: bi("Free", "رایگان"),
+  /** The header link and the menu banner. */
+  navShort: bi("Interview questions", "سؤال‌های مصاحبه"),
+  navTiny: bi("Interviews", "مصاحبه"),
+  navBanner: bi("60 interview questions for QC and QA posts, with model answers", "60 سؤال مصاحبه استخدامی QC و QA با پاسخ نمونه"),
+  navBadge: bi("6 free", "6 سؤال رایگان"),
   answer: bi("Model answer", "پاسخ نمونه"),
   refs: bi("Based on", "مرجع"),
   lockedTitle: bi("The other 54 answers are for subscribers", "54 پاسخ دیگر ویژه مشترکین است"),

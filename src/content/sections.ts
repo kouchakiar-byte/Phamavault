@@ -180,6 +180,8 @@ export const sections = [
 
 /** Short name of the supplier bank for menus and buttons. */
 export const supplierBankShort = bi("Supplier & Manufacturer Bank", "بانک تأمین‌کنندگان و تولیدکنندگان");
+/** Narrow headers. */
+export const supplierBankTiny = bi("Supplier bank", "بانک تأمین‌کنندگان");
 
 export type SectionSlug = (typeof sections)[number]["slug"];
 
