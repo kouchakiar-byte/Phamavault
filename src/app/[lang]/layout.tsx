@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Suspense } from "react";
 import { CopyAllowance } from "@/components/copy-allowance";
 import { CopyGuard } from "@/components/copy-guard";
+import { GuestBar } from "@/components/guest-bar";
 import { InstallApp } from "@/components/install-app";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -125,6 +126,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
         </main>
         <SiteFooter />
         <InstallApp locale={locale} />
+        <GuestBar locale={locale} />
         <VisitBeacon />
         <CopyGuard
           buyHref={href(locale, "account/buy")}

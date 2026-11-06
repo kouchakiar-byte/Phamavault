@@ -79,6 +79,7 @@ export const copy = {
       sections: bi("specialised sections", "بخش تخصصی"),
     },
     popular: bi("Popular searches:", "جستجوهای پرتکرار:"),
+    trustLine: bi("{s} companies · {p} listed items · updated every day", "{s} شرکت · {p} قلم ثبت‌شده · به‌روزرسانی روزانه"),
     popularQueries: ["لاکتوز", "منیزیم استئارات", "آویسل", "متفورمین", "ویتامین C", "کولین کلراید"],
     headline: bi(
       "Integrated knowledge, sharper decisions, smarter drug development",
@@ -128,6 +129,17 @@ export const copy = {
     ),
   },
 
+  /** Phones only: a bar for readers who are not signed in. */
+  guestBar: {
+    text: bi("Free account: every section, 2 days a month", "ثبت‌نام رایگان؛ هر ماه 2 روز دسترسی به همه بخش‌ها"),
+    cta: bi("Sign up", "ثبت‌نام"),
+    close: bi("Close", "بستن"),
+  },
+  /** The bodies the content rests on, named in text only (no logos). */
+  sourcesStrip: {
+    label: bi("Built on", "بر پایه"),
+    names: ["USP–NF", "Ph. Eur.", "BP", "ICH", "FDA", "EMA", "WHO"],
+  },
   departments: {
     eyebrow: bi("Who it is for", "برای چه کسانی"),
     title: bi("Designed for the pharmaceutical industry, pharmacies and students", "طراحی‌شده برای صنعت دارو، داروخانه‌ها و دانشجویان"),

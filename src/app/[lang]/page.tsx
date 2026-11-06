@@ -32,10 +32,8 @@ import { searchCopy } from "@/content/search";
 import { sections } from "@/content/sections";
 import { DnaHelix } from "@/components/dna-helix";
 import { HeroStats } from "@/components/hero-stats";
-import { LabCollage } from "@/components/lab-collage";
 import ctdPhoto from "@/assets/photos/ctd-dossier.webp";
 import flaskPhoto from "@/assets/photos/flask.webp";
-import pillsPhoto from "@/assets/photos/pills-scattered.webp";
 
 // The platform's sections, CTD compilation included; enterprise solutions are a plan, not a section.
 const platformSections = sections.filter((s) => s.slug !== "enterprise");
@@ -51,15 +49,6 @@ import { listPrice, monthlyPrice, type PlanId } from "@/lib/pricing";
 
 /** Counts shown on the prerendered home page, from the base data. */
 type Counts = { suppliers: number; supplierMaterials: number; materials: number };
-
-/** Live counts from the reference data — never hand-typed numbers. */
-const databaseStats = (c: Counts) =>
-  [
-    { slug: "excipients", count: excipients.items.length, unit: copy.databases.units.excipients },
-    { slug: "suppliers", count: c.suppliers, unit: copy.databases.units.suppliers },
-    { slug: "materials", count: c.materials, unit: copy.databases.units.materials },
-    { slug: "qa", count: sops.items.length, unit: copy.databases.units.qa },
-  ] as const;
 
 const departmentIcons: Record<string, LucideIcon> = {
   rnd: FlaskConical,
@@ -151,7 +140,7 @@ export default async function HomePage() {
     supplierMaterials: suppliers.companies.reduce((n, c) => n + c.p.length, 0),
     materials: rawMaterials.items.length,
   };
-  const { hero, departments, sectionsIntro, ctdService, databases, toolsShowcase, howItWorks, plans, faq, contact } = copy;
+  const { hero, departments, sectionsIntro, ctdService, toolsShowcase, howItWorks, plans, faq, contact } = copy;
   const num = (n: number) => n.toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
   const enterprise = plans.items.find((p) => p.id === "enterprise")!;
   const { pricing } = plans;
@@ -172,7 +161,7 @@ export default async function HomePage() {
       <section className="relative isolate overflow-hidden bg-vault-900 text-white">
         <MoleculePattern className="text-white/[0.05]" />
         <div className="absolute -top-40 end-[-10%] -z-10 size-[36rem] rounded-full bg-molecule-500/20 blur-3xl" />
-        {/* Phone: brand and search, then the sections panel, then the counts. Desktop: the panel beside both, which sit centred against its height. */}
+        {/* Phone: brand, search and counts (the sections follow below the hero). Desktop: the sections panel beside them, which sit centred against its height. */}
         <Container className="grid grid-cols-1 items-start gap-10 pb-16 pt-8 sm:pt-10 lg:grid-cols-[1.15fr_1fr] lg:grid-rows-[1fr_auto_auto_1fr] lg:gap-x-14 lg:gap-y-0 lg:pb-20 lg:pt-12">
           <div className="fade-in lg:col-start-1 lg:row-start-2">
             {/* e-Namad requires its seal at the top of the home page */}
@@ -204,23 +193,39 @@ export default async function HomePage() {
               </span>
             </h1>
             {/* A DNA strand under the name, over the hero's benzene-ring pattern */}
-            <DnaHelix orientation="horizontal" rungs={26} className="mt-5 h-12 w-full max-w-lg sm:h-14" />
-            <p className="mt-5 max-w-2xl text-xl font-bold leading-relaxed text-white sm:text-2xl">{hero.headline[locale]}</p>
+            <DnaHelix orientation="horizontal" rungs={26} className="mt-5 hidden h-14 w-full max-w-lg sm:block" />
+            <p className="mt-5 max-w-2xl text-2xl font-bold leading-relaxed text-white sm:text-3xl">{hero.headline[locale]}</p>
             <p className="mt-3 max-w-xl text-base font-medium leading-relaxed text-molecule-400">{hero.audience[locale]}</p>
-            {/* The site-wide search: a plain GET form to /search */}
-            <form action={href(locale, "search")} role="search" className="mt-8 flex max-w-2xl gap-2 rounded-full border border-white/15 bg-white/[0.06] p-1.5 backdrop-blur transition focus-within:border-molecule-400">
-              <Search className="ms-3 size-5 shrink-0 self-center text-molecule-400" aria-hidden="true" />
+            {/* The site-wide search, first and large: a plain GET form to /search */}
+            <form action={href(locale, "search")} role="search" className="mt-7 flex max-w-2xl gap-2 rounded-2xl border border-white/20 bg-white p-2 shadow-2xl shadow-black/30 transition focus-within:ring-4 focus-within:ring-molecule-400/40">
+              <Search className="ms-2 size-6 shrink-0 self-center text-molecule-600" aria-hidden="true" />
               <input
                 type="search"
                 name="q"
                 placeholder={searchCopy.placeholder[locale]}
                 aria-label={searchCopy.label[locale]}
-                className="min-w-0 flex-1 bg-transparent px-1 text-base text-white outline-none placeholder:text-vault-100/50 pv-bare-input"
+                className="min-w-0 flex-1 bg-transparent px-1 py-2 text-base text-vault-900 outline-none placeholder:text-muted/70 pv-bare-input sm:text-lg"
               />
-              <button type="submit" className="rounded-full bg-molecule-500 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-molecule-600">
+              <button type="submit" className="rounded-xl bg-molecule-500 px-5 py-3 text-sm font-bold text-white transition hover:bg-molecule-600 sm:px-7 sm:text-base">
                 {searchCopy.button[locale]}
               </button>
             </form>
+            <div className="mt-4 flex max-w-2xl flex-wrap items-center gap-2 text-sm">
+              <span className="text-vault-100/60">{hero.popular[locale]}</span>
+              {hero.popularQueries.map((q) => (
+                <Link
+                  key={q}
+                  href={`${href(locale, "search")}?q=${encodeURIComponent(q)}`}
+                  className="rounded-full border border-white/15 bg-white/[0.04] px-3 py-1 text-vault-100/90 transition hover:border-capsule-400 hover:bg-capsule-400 hover:text-vault-950"
+                >
+                  {q}
+                </Link>
+              ))}
+            </div>
+            <p className="mt-4 flex items-center gap-2 text-sm font-semibold text-capsule-400">
+              <ShieldCheck className="size-4 shrink-0" aria-hidden="true" />
+              {hero.trustLine[locale].replace("{s}", num(counts.suppliers)).replace("{p}", num(counts.supplierMaterials))}
+            </p>
             <div className="mt-6 flex flex-wrap gap-4">
               <ButtonLink href={href(locale, "suppliers")}>{hero.supplierSearch[locale]}</ButtonLink>
               <ButtonLink href={href(locale, "#plans")} variant="outline-light">
@@ -230,7 +235,7 @@ export default async function HomePage() {
           </div>
 
           {/* The "vault" panel: every section one click away */}
-          <div className="fade-in [animation-delay:.1s] lg:col-start-2 lg:row-span-4 lg:row-start-1">
+          <div className="fade-in hidden [animation-delay:.1s] lg:col-start-2 lg:row-span-4 lg:row-start-1 lg:block">
             <p className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/5 whitespace-nowrap px-4 py-1.5 text-xs font-bold tracking-wide text-molecule-400 sm:text-sm">
               {copy.platform[locale]}
               <span className="text-molecule-400/60" aria-hidden="true">·</span>
@@ -266,7 +271,7 @@ export default async function HomePage() {
             </div>
           </div>
           <div className="fade-in lg:col-start-1 lg:row-start-3">
-            {/* The vault at a glance: live counts, then a few one-click searches */}
+            {/* The vault at a glance: live counts */}
             <HeroStats
               locale={locale}
               stats={[
@@ -276,22 +281,10 @@ export default async function HomePage() {
                 { value: platformSections.length, label: hero.stats.sections },
               ]}
             />
-            <div className="mt-5 flex max-w-2xl flex-wrap items-center gap-2 text-sm">
-              <span className="text-vault-100/60">{hero.popular[locale]}</span>
-              {hero.popularQueries.map((q) => (
-                <Link
-                  key={q}
-                  href={`${href(locale, "search")}?q=${encodeURIComponent(q)}`}
-                  className="rounded-full border border-white/15 px-3 py-1 text-vault-100/90 transition hover:border-capsule-400 hover:bg-capsule-400 hover:text-vault-950"
-                >
-                  {q}
-                </Link>
-              ))}
-            </div>
           </div>
         </Container>
 
-        <div className="border-t border-white/10 bg-vault-950/40">
+        <div className="hidden border-t border-white/10 bg-vault-950/40 sm:block">
           <Container className="grid gap-6 py-8 sm:grid-cols-3">
             {hero.pillars.map((p) => (
               <div key={p.title.en} className="border-s-2 border-molecule-500 ps-4">
@@ -303,16 +296,67 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Statement */}
-      <section className="overflow-hidden border-b border-line bg-paper py-14 lg:py-16">
-        <Container className="grid items-center gap-10 lg:grid-cols-[1.1fr_1fr]">
-          <div className="text-center lg:text-start">
-            <LogoMark className="mx-auto size-11 lg:mx-0" />
-            <p className="mt-6 text-2xl font-bold leading-snug text-vault-900 sm:text-3xl">{copy.statement.title[locale]}</p>
-            <p className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-muted sm:text-xl lg:mx-0">{copy.statement.text[locale]}</p>
-            <div className="mx-auto mt-8 h-1 w-16 rounded-full bg-capsule-500 lg:mx-0" aria-hidden="true" />
+      {/* Sources the content rests on, as plain names (no logos) */}
+      <div className="border-b border-line bg-vault-950 text-white">
+        <Container className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 py-4 text-sm">
+          <span className="font-semibold text-vault-100/70">{copy.sourcesStrip.label[locale]}</span>
+          {copy.sourcesStrip.names.map((n) => (
+            <span key={n} className="font-bold tracking-wide text-white/90" dir="ltr" style={{ fontFamily: "var(--font-plex-sans)" }}>
+              {n}
+            </span>
+          ))}
+        </Container>
+      </div>
+
+      {/* Sections */}
+      <section id="sections" className="scroll-mt-20 bg-paper py-14 lg:py-24">
+        <Container>
+          <SectionHead eyebrow={sectionsIntro.eyebrow[locale]} title={sectionsIntro.title} locale={locale} lead={sectionsIntro.lead[locale]} />
+          {/* Who it is for, as one row instead of a grid of its own */}
+          <ul className="mt-6 flex flex-wrap items-center gap-2" aria-label={departments.eyebrow[locale]}>
+            <li className="text-sm font-semibold text-muted">{departments.eyebrow[locale]}:</li>
+            {departments.items.map((d) => {
+              const Icon = departmentIcons[d.key];
+              return (
+                <li key={d.key} className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-3 py-1.5 text-sm font-semibold text-vault-900">
+                  <Icon className="size-4 text-molecule-600" aria-hidden="true" />
+                  {d.title[locale]}
+                </li>
+              );
+            })}
+          </ul>
+          <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 lg:grid-cols-3">
+            {platformSections.map(({ slug, href: path, plate, icon: Icon, title, description }) => {
+              const highlight = sectionHighlight(slug, num, counts);
+              return (
+                <article
+                  key={slug}
+                  className="group relative flex flex-col rounded-card border border-vault-100 bg-vault-50 p-4 shadow-sm sm:p-7 shadow-vault-900/5 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-capsule-50 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-capsule-100 hover:shadow-xl hover:shadow-capsule-500/25 focus-within:scale-[0.97] focus-within:border-capsule-400 motion-reduce:transform-none"
+                >
+                  <div className="flex items-start justify-between">
+                    <span className="flex size-10 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition sm:size-12 duration-300 group-hover:bg-gradient-to-br group-hover:bg-capsule-400 group-hover:from-capsule-400 group-hover:to-capsule-600 group-hover:text-vault-950">
+                      <Icon className="size-6" aria-hidden="true" />
+                    </span>
+                    <span className="hidden rounded border border-line bg-white/60 px-2 py-0.5 font-mono text-xs tracking-widest text-muted transition group-hover:border-capsule-400 group-hover:text-capsule-700 sm:inline" dir="ltr">
+                      {plate}
+                    </span>
+                  </div>
+                  <h3 className="mt-4 text-sm font-bold leading-snug text-vault-900 sm:mt-6 sm:text-lg">
+                    <Link href={href(locale, path)} className="after:absolute after:inset-0">
+                      <BiTitle text={title} locale={locale} stacked secondaryClassName="mt-0.5 hidden text-[0.72em] font-medium sm:block" />
+                    </Link>
+                  </h3>
+                  <p className="mt-3 hidden text-sm leading-relaxed text-muted line-clamp-2 lg:block">{description[locale]}</p>
+                  {highlight && (
+                    <p className="mt-3 self-start rounded-md bg-molecule-50 px-2.5 py-1 text-xs font-bold text-molecule-700 transition group-hover:bg-white/70 group-hover:text-capsule-700">
+                      {highlight[locale]}
+                    </p>
+                  )}
+                  <span className="mt-auto hidden pt-6 text-sm font-bold text-molecule-700 transition group-hover:text-capsule-700 sm:block">{sectionsIntro.open[locale]}</span>
+                </article>
+              );
+            })}
           </div>
-          <LabCollage alt={copy.statement.photoAlt[locale]} />
         </Container>
       </section>
 
@@ -333,219 +377,21 @@ export default async function HomePage() {
       {/* Featured: the supplier bank */}
       <SupplierSpotlight locale={locale} />
 
-      {/* By department */}
-      <section className="border-y border-line bg-paper py-20 lg:py-24">
-        <Container>
-          <SectionHead eyebrow={departments.eyebrow[locale]} title={departments.title} locale={locale} lead={departments.lead[locale]} wide />
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-            {departments.items.map((d) => {
-              const Icon = departmentIcons[d.key];
-              return (
-                <article key={d.key} className="rounded-card border border-line bg-white p-6">
-                  <div className="flex items-center gap-3">
-                    <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-molecule-50 text-molecule-600">
-                      <Icon className="size-5" aria-hidden="true" />
-                    </span>
-                    <h3 className="font-bold text-vault-900">{d.title[locale]}</h3>
-                  </div>
-                  <ul className="mt-5 space-y-3">
-                    {d.points.map((pt, i) => (
-                      <li key={pt.en} className={`${i > 2 ? "hidden sm:flex" : "flex"} gap-2.5 text-sm leading-relaxed text-muted`}>
-                        <Check className="mt-0.5 size-4 shrink-0 text-molecule-600" aria-hidden="true" />
-                        {pt[locale]}
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-              );
-            })}
-          </div>
-        </Container>
-      </section>
-
-      {/* Sections */}
-      <section id="sections" className="scroll-mt-20 py-20 lg:py-28">
-        <Container>
-          <SectionHead eyebrow={sectionsIntro.eyebrow[locale]} title={sectionsIntro.title} locale={locale} lead={sectionsIntro.lead[locale]} />
-          <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 lg:grid-cols-3">
-            {platformSections.map(({ slug, href: path, plate, icon: Icon, title, description }) => {
-              const highlight = sectionHighlight(slug, num, counts);
-              return (
-                <article
-                  key={slug}
-                  className="group relative flex flex-col rounded-card border border-vault-100 bg-vault-50 p-4 shadow-sm sm:p-7 shadow-vault-900/5 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-capsule-50 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-capsule-100 hover:shadow-xl hover:shadow-capsule-500/25 focus-within:scale-[0.97] focus-within:border-capsule-400 motion-reduce:transform-none"
-                >
-                  <div className="flex items-start justify-between">
-                    <span className="flex size-10 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition sm:size-12 duration-300 group-hover:bg-gradient-to-br group-hover:bg-capsule-400 group-hover:from-capsule-400 group-hover:to-capsule-600 group-hover:text-vault-950">
-                      <Icon className="size-6" aria-hidden="true" />
-                    </span>
-                    <span className="hidden rounded border border-line bg-white/60 px-2 py-0.5 font-mono text-xs tracking-widest text-muted transition group-hover:border-capsule-400 group-hover:text-capsule-700 sm:inline" dir="ltr">
-                      {plate}
-                    </span>
-                  </div>
-                  <h3 className="mt-4 text-sm font-bold leading-snug text-vault-900 sm:mt-6 sm:text-lg">
-                    <Link href={href(locale, path)} className="after:absolute after:inset-0">
-                      <BiTitle text={title} locale={locale} stacked secondaryClassName="mt-0.5 text-[0.72em] font-medium" />
-                    </Link>
-                  </h3>
-                  <p className="mt-3 hidden text-sm leading-relaxed text-muted sm:block">{description[locale]}</p>
-                  {highlight && (
-                    <p className="mt-3 self-start rounded-md bg-molecule-50 px-2.5 py-1 text-xs font-bold text-molecule-700 transition group-hover:bg-white/70 group-hover:text-capsule-700">
-                      {highlight[locale]}
-                    </p>
-                  )}
-                  <span className="mt-auto hidden pt-6 text-sm font-bold text-molecule-700 transition group-hover:text-capsule-700 sm:block">{sectionsIntro.open[locale]}</span>
-                </article>
-              );
-            })}
-          </div>
-        </Container>
-      </section>
-
-      {/* CTD compilation service */}
-      <section id="ctd" className="scroll-mt-20 pb-20 lg:pb-28">
-        <Container>
-          <div className="relative isolate grid gap-10 overflow-hidden rounded-3xl bg-vault-900 px-6 py-12 text-white shadow-2xl shadow-vault-900/20 sm:px-12 lg:grid-cols-[1.4fr_1fr] lg:items-center lg:py-16">
-            {/* A dossier being reviewed: behind the whole card on phones, the end half on desktop, fading into the navy */}
-            <div className="absolute inset-0 -z-20 lg:start-auto lg:w-[48%]" aria-hidden="true">
-              <Image src={ctdPhoto} alt="" fill sizes="(min-width: 1024px) 600px, 100vw" placeholder="blur" className="object-cover object-[45%_55%]" />
-              <div className="absolute inset-0 bg-vault-900/80 lg:bg-transparent lg:bg-gradient-to-r lg:from-vault-900 lg:via-vault-900/45 lg:to-vault-900/5 lg:rtl:bg-gradient-to-l" />
-            </div>
-            <MoleculePattern className="-z-10 text-white/[0.05]" />
-            <div className="absolute -top-32 end-[-6rem] -z-10 size-[26rem] rounded-full bg-capsule-500/15 blur-3xl" />
-            <div>
-              <p className="text-sm font-semibold text-capsule-400">{ctdService.eyebrow[locale]}</p>
-              <BiTitle
-                as="h2"
-                text={ctdService.title}
-                locale={locale}
-                className="mt-3 text-3xl font-bold sm:text-4xl"
-                primaryClassName="pv-gold-text font-extrabold leading-snug drop-shadow-[0_2px_10px_rgba(220,189,109,0.35)]"
-                secondaryClassName="text-vault-100"
-              />
-              <p className="mt-4 max-w-2xl text-lg leading-relaxed text-vault-100/85">{ctdService.lead[locale]}</p>
-              <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
-                {ctdService.points.map((pt) => (
-                  <li key={pt.en} className="flex gap-2.5 text-sm leading-relaxed text-vault-100/90">
-                    <Check className="mt-0.5 size-4 shrink-0 text-capsule-400" aria-hidden="true" />
-                    {pt[locale]}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-8">
-                <CtdRequest locale={locale} />
-              </div>
-            </div>
-            <div className="mx-auto flex size-48 flex-col items-center justify-center rounded-full border-4 border-capsule-400/80 bg-vault-950/55 text-center shadow-2xl shadow-black/40 ring-8 ring-white/10 backdrop-blur-md sm:size-56">
-              <span className="pv-gold-text text-7xl font-bold leading-none sm:text-8xl">{num(5)}</span>
-              <span className="mt-2 text-base font-semibold text-capsule-400">{ctdService.days[locale]}</span>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Databases */}
-      <section className="border-y border-line bg-white py-20 lg:py-28">
-        <Container>
-          <SectionHead eyebrow={databases.eyebrow[locale]} title={databases.title} locale={locale} lead={databases.lead[locale]} />
-          <div className="relative mt-10 h-44 overflow-hidden rounded-3xl sm:h-60">
-            <Image src={pillsPhoto} alt="" fill sizes="(min-width: 1280px) 1200px, 100vw" placeholder="blur" className="object-cover object-[50%_60%]" />
-            <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-transparent" aria-hidden="true" />
-          </div>
-          <div className="relative -mt-14 grid gap-6 px-3 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
-            {databaseStats(counts).map(({ slug, count, unit }) => {
-              const section = sections.find((s) => s.slug === slug)!;
-              return (
-                <Link
-                  key={slug}
-                  href={href(locale, section.href)}
-                  className="group flex flex-col rounded-card border border-line bg-paper p-6 transition hover:-translate-y-0.5 hover:border-molecule-400 hover:bg-white hover:shadow-lg hover:shadow-vault-900/5"
-                >
-                  <section.icon className="size-6 text-molecule-500" aria-hidden="true" />
-                  <p className="mt-5 font-mono text-4xl font-medium tracking-tight text-vault-900">{num(count)}</p>
-                  <p className="mt-1 text-sm text-muted">{unit[locale].replace("{p}", num(counts.supplierMaterials))}</p>
-                  <p className="mt-auto pt-5 text-sm font-bold text-vault-900 group-hover:text-molecule-700">
-                    {section.title[locale]}
-                  </p>
-                </Link>
-              );
-            })}
-          </div>
-        </Container>
-      </section>
-
-      {/* Calculations */}
-      <section className="relative isolate overflow-hidden border-y border-line bg-gradient-to-br from-molecule-50 via-white to-vault-50 py-20 lg:py-28">
-        <MoleculePattern className="-z-20 text-vault-900/[0.04]" />
-        {/* The flask photo on the end side, fading softly into the light background */}
-        <div
-          className="absolute inset-y-0 end-0 -z-10 hidden w-[52%] [mask-image:linear-gradient(to_left,#000_55%,transparent)] md:block rtl:[mask-image:linear-gradient(to_right,#000_55%,transparent)]"
-          aria-hidden="true"
-        >
-          <Image src={flaskPhoto} alt="" fill sizes="52vw" placeholder="blur" className="object-cover object-[30%_50%]" />
-        </div>
-        <Container>
-          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <div className="max-w-3xl">
-              <p className="text-sm font-bold tracking-wide text-molecule-700">{toolsShowcase.eyebrow[locale]}</p>
-              <BiTitle
-                as="h2"
-                text={bi(
-                  toolsShowcase.title.en.replace("{n}", String(calculations.length)),
-                  toolsShowcase.title.fa.replace("{n}", calculations.length.toLocaleString("fa-IR-u-nu-latn")),
-                )}
-                locale={locale}
-                className="mt-3 text-3xl font-bold tracking-tight text-vault-900 sm:text-4xl"
-                secondaryClassName="text-muted"
-              />
-              <p className="mt-4 text-lg leading-relaxed text-ink/80">{toolsShowcase.lead[locale]}</p>
-            </div>
-            <ButtonLink href={href(locale, "tools")}>
-              {toolsShowcase.open[locale]}
-            </ButtonLink>
-          </div>
-          <div className="relative mt-8 h-52 overflow-hidden rounded-card md:hidden" aria-hidden="true">
-            <Image src={flaskPhoto} alt="" fill sizes="100vw" placeholder="blur" className="object-cover object-[50%_45%]" />
-          </div>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-4">
-            {featuredCalculations.map(calculation).map((c) => (
-              <div
-                key={c.key}
-                className="rounded-card border border-white/80 bg-white/80 p-6 shadow-lg shadow-vault-900/5 ring-1 ring-vault-900/5 backdrop-blur-md transition hover:-translate-y-0.5 hover:border-molecule-400 hover:shadow-molecule-500/10"
-              >
-                <h3 className="font-bold text-vault-900">{c.title[locale]}</h3>
-                <p className="mt-3 font-mono text-xs leading-relaxed text-molecule-700" dir="ltr" style={{ textAlign: "start" }}>
-                  {c.equation}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* How to get access */}
-      <section className="py-20 lg:py-24">
-        <Container>
-          <SectionHead eyebrow={howItWorks.eyebrow[locale]} title={howItWorks.title} locale={locale} />
-          <ol className="mt-12 grid gap-6 md:grid-cols-3">
-            {howItWorks.steps.map((step, i) => (
-              <li key={step.title.en} className="relative rounded-card border border-line bg-white p-7">
-                <span className="flex size-10 items-center justify-center rounded-full bg-vault-900 font-mono text-sm font-semibold text-molecule-400">
-                  {num(i + 1)}
-                </span>
-                <h3 className="mt-5 text-lg font-bold text-vault-900">{step.title[locale]}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{step.text[locale]}</p>
-              </li>
-            ))}
-          </ol>
-        </Container>
-      </section>
-
       {/* Plans */}
       <section id="plans" className="scroll-mt-20 border-t border-line bg-white py-20 lg:py-28">
         <Container>
           <SectionHead eyebrow={plans.eyebrow[locale]} title={plans.title} locale={locale} lead={plans.lead[locale]} />
-          <div className="mx-auto mt-14 grid max-w-6xl items-stretch gap-6 lg:grid-cols-3">
+          {/* How to get access, in three short steps */}
+          <ol className="mt-8 grid gap-3 sm:grid-cols-3" aria-label={howItWorks.title[locale]}>
+            {howItWorks.steps.map((step, i) => (
+              <li key={step.title.en} className="flex items-center gap-3 rounded-2xl border border-line bg-paper px-4 py-3">
+                <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-vault-900 font-mono text-sm font-semibold text-molecule-400">{num(i + 1)}</span>
+                <span className="text-sm font-bold text-vault-900">{step.title[locale]}</span>
+              </li>
+            ))}
+          </ol>
+          {/* Phones: the plans side by side, swiped one at a time; desktop: three columns */}
+          <div className="-mx-4 mt-10 flex snap-x snap-mandatory items-stretch gap-4 overflow-x-auto px-4 pb-4 pt-4 lg:mx-auto lg:grid lg:max-w-6xl lg:grid-cols-3 lg:gap-6 lg:overflow-visible lg:px-0 lg:pb-0">
             {plans.items.map((plan) => {
               const featured = plan.style === "primary";
               const badge = "badge" in plan ? plan.badge : undefined;
@@ -556,7 +402,7 @@ export default async function HomePage() {
                 <div
                   key={plan.id}
                   id={plan.id}
-                  className={`relative flex scroll-mt-24 flex-col gap-5 rounded-card border p-7 ${
+                  className={`relative flex w-[85%] shrink-0 snap-center scroll-mt-24 flex-col gap-5 rounded-card border p-7 sm:w-[60%] lg:w-auto ${
                     featured ? "border-molecule-500 bg-white shadow-xl shadow-molecule-700/10 ring-2 ring-molecule-500" : "border-line bg-paper"
                   }`}
                 >
@@ -586,8 +432,8 @@ export default async function HomePage() {
                     <p className="mt-3 text-sm font-medium text-molecule-700">{priceText(plan.extra[locale])}</p>
                   </div>
                   <ul className="flex flex-1 flex-col gap-2.5">
-                    {plan.features.map((f) => (
-                      <li key={f.en} className="flex gap-2.5 text-sm text-muted">
+                    {plan.features.map((f, i) => (
+                      <li key={f.en} className={`${i > 3 ? "hidden sm:flex" : "flex"} gap-2.5 text-sm text-muted`}>
                         <Check className="mt-0.5 size-4 shrink-0 text-molecule-600" aria-hidden="true" />
                         {f[locale]}
                       </li>
@@ -604,7 +450,10 @@ export default async function HomePage() {
             })}
           </div>
 
-          <PriceEstimator locale={locale} />
+          {/* The estimator is a desktop tool; phones go straight to the order page */}
+          <div className="hidden sm:block">
+            <PriceEstimator locale={locale} />
+          </div>
 
           <div className="mt-10 flex justify-center">
             <EnamadSeal locale={locale} className="w-full max-w-md" />
@@ -656,6 +505,95 @@ export default async function HomePage() {
               <div key={o.title.en} className="bg-white p-6">
                 <BiTitle as="h4" text={o.title} locale={locale} className="font-bold text-vault-900" />
                 <p className="mt-2 text-sm leading-relaxed text-muted">{o.text[locale]}</p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+
+      {/* CTD compilation service */}
+      <section id="ctd" className="scroll-mt-20 pb-20 lg:pb-28">
+        <Container>
+          <div className="relative isolate grid gap-10 overflow-hidden rounded-3xl bg-vault-900 px-6 py-12 text-white shadow-2xl shadow-vault-900/20 sm:px-12 lg:grid-cols-[1.4fr_1fr] lg:items-center lg:py-16">
+            {/* A dossier being reviewed: behind the whole card on phones, the end half on desktop, fading into the navy */}
+            <div className="absolute inset-0 -z-20 lg:start-auto lg:w-[48%]" aria-hidden="true">
+              <Image src={ctdPhoto} alt="" fill sizes="(min-width: 1024px) 600px, 100vw" placeholder="blur" className="object-cover object-[45%_55%]" />
+              <div className="absolute inset-0 bg-vault-900/80 lg:bg-transparent lg:bg-gradient-to-r lg:from-vault-900 lg:via-vault-900/45 lg:to-vault-900/5 lg:rtl:bg-gradient-to-l" />
+            </div>
+            <MoleculePattern className="-z-10 text-white/[0.05]" />
+            <div className="absolute -top-32 end-[-6rem] -z-10 size-[26rem] rounded-full bg-capsule-500/15 blur-3xl" />
+            <div>
+              <p className="text-sm font-semibold text-capsule-400">{ctdService.eyebrow[locale]}</p>
+              <BiTitle
+                as="h2"
+                text={ctdService.title}
+                locale={locale}
+                className="mt-3 text-3xl font-bold sm:text-4xl"
+                primaryClassName="pv-gold-text font-extrabold leading-snug drop-shadow-[0_2px_10px_rgba(220,189,109,0.35)]"
+                secondaryClassName="text-vault-100"
+              />
+              <p className="mt-4 max-w-2xl text-lg leading-relaxed text-vault-100/85">{ctdService.lead[locale]}</p>
+              <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
+                {ctdService.points.map((pt) => (
+                  <li key={pt.en} className="flex gap-2.5 text-sm leading-relaxed text-vault-100/90">
+                    <Check className="mt-0.5 size-4 shrink-0 text-capsule-400" aria-hidden="true" />
+                    {pt[locale]}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8">
+                <CtdRequest locale={locale} />
+              </div>
+            </div>
+            <div className="mx-auto flex size-48 flex-col items-center justify-center rounded-full border-4 border-capsule-400/80 bg-vault-950/55 text-center shadow-2xl shadow-black/40 ring-8 ring-white/10 backdrop-blur-md sm:size-56">
+              <span className="pv-gold-text text-7xl font-bold leading-none sm:text-8xl">{num(5)}</span>
+              <span className="mt-2 text-base font-semibold text-capsule-400">{ctdService.days[locale]}</span>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Calculations */}
+      <section className="relative isolate overflow-hidden border-y border-line bg-gradient-to-br from-molecule-50 via-white to-vault-50 py-20 lg:py-28">
+        <MoleculePattern className="-z-20 text-vault-900/[0.04]" />
+        {/* The flask photo on the end side, fading softly into the light background */}
+        <div
+          className="absolute inset-y-0 end-0 -z-10 hidden w-[52%] [mask-image:linear-gradient(to_left,#000_55%,transparent)] md:block rtl:[mask-image:linear-gradient(to_right,#000_55%,transparent)]"
+          aria-hidden="true"
+        >
+          <Image src={flaskPhoto} alt="" fill sizes="52vw" placeholder="blur" className="object-cover object-[30%_50%]" />
+        </div>
+        <Container>
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm font-bold tracking-wide text-molecule-700">{toolsShowcase.eyebrow[locale]}</p>
+              <BiTitle
+                as="h2"
+                text={bi(
+                  toolsShowcase.title.en.replace("{n}", String(calculations.length)),
+                  toolsShowcase.title.fa.replace("{n}", calculations.length.toLocaleString("fa-IR-u-nu-latn")),
+                )}
+                locale={locale}
+                className="mt-3 text-3xl font-bold tracking-tight text-vault-900 sm:text-4xl"
+                secondaryClassName="text-muted"
+              />
+              <p className="mt-4 text-lg leading-relaxed text-ink/80">{toolsShowcase.lead[locale]}</p>
+            </div>
+            <ButtonLink href={href(locale, "tools")}>
+              {toolsShowcase.open[locale]}
+            </ButtonLink>
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-4">
+            {featuredCalculations.map(calculation).map((c, i) => (
+              <div
+                key={c.key}
+                className={`${i > 3 ? "hidden sm:block" : ""} rounded-card border border-white/80 bg-white/80 p-6 shadow-lg shadow-vault-900/5 ring-1 ring-vault-900/5 backdrop-blur-md transition hover:-translate-y-0.5 hover:border-molecule-400 hover:shadow-molecule-500/10`}
+              >
+                <h3 className="font-bold text-vault-900">{c.title[locale]}</h3>
+                <p className="mt-3 font-mono text-xs leading-relaxed text-molecule-700" dir="ltr" style={{ textAlign: "start" }}>
+                  {c.equation}
+                </p>
               </div>
             ))}
           </div>

@@ -84,9 +84,9 @@ export function SectionHead({ eyebrow, title, locale, lead, as = "h2", action, w
           as={as}
           text={title}
           locale={locale}
-          className={`mt-3 font-bold tracking-tight text-vault-900 ${as === "h1" ? "text-3xl sm:text-5xl" : "text-3xl sm:text-4xl"}`}
+          className={`mt-3 font-bold leading-tight tracking-tight text-vault-900 ${as === "h1" ? "text-3xl sm:text-5xl" : "text-[1.75rem] sm:text-[2.6rem]"}`}
         />
-        {lead && <p className="mt-4 text-lg leading-relaxed text-muted">{lead}</p>}
+        {lead && <p className="mt-4 line-clamp-4 text-base leading-relaxed text-muted sm:line-clamp-none sm:text-lg">{lead}</p>}
       </div>
       {action}
     </div>

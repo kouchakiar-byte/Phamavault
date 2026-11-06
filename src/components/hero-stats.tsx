@@ -10,7 +10,7 @@ type Stat = { value: number; label: Bi };
 const DURATION = 1400;
 const ease = (t: number) => 1 - Math.pow(1 - t, 3);
 
-/** A number that counts up from zero when it first comes into view, and again on hover. */
+/** A number that shows its real value at once and counts up from zero when it first comes into view, and again on hover. */
 function CountUp({ value, locale }: { value: number; locale: Locale }) {
   const ref = useRef<HTMLSpanElement>(null);
   const format = (n: number) => Math.round(n).toLocaleString(locale === "fa" ? "fa-IR-u-nu-latn" : "en-US");
@@ -24,6 +24,8 @@ function CountUp({ value, locale }: { value: number; locale: Locale }) {
     const run = () => {
       if (running) return;
       running = true;
+      // The real number stays on screen until the card is seen; only then does it count up.
+      el.textContent = format(0);
       const start = performance.now();
       const tick = (now: number) => {
         const t = Math.min(1, (now - start) / DURATION);
@@ -33,7 +35,6 @@ function CountUp({ value, locale }: { value: number; locale: Locale }) {
       };
       frame = requestAnimationFrame(tick);
     };
-    el.textContent = format(0);
     const seen = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
