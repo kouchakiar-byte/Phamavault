@@ -312,15 +312,16 @@ export default async function HomePage() {
       <section id="sections" className="scroll-mt-20 bg-paper py-14 lg:py-24">
         <Container>
           <SectionHead eyebrow={sectionsIntro.eyebrow[locale]} title={sectionsIntro.title} locale={locale} lead={sectionsIntro.lead[locale]} />
-          {/* Who it is for: an even grid, 2 columns on phones and 4 from sm (short names until lg) */}
+          {/* Who it is for: an even grid, 2 columns on phones and 4 from sm (abbreviations only until lg) */}
           <p className="mt-6 text-sm font-semibold text-muted">{departments.eyebrow[locale]}:</p>
           <ul className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4" aria-label={departments.eyebrow[locale]}>
             {departments.items.map((d) => {
               const Icon = departmentIcons[d.key];
               const full = d.title[locale];
-              const short = full.replace(/\s*\([^)]*\)\s*$/, "");
+              // Phones keep abbreviations in brackets (QC, QA, R&D, RA) and drop longer English names.
+              const short = full.replace(/\s*\(([^)]*)\)\s*$/, (m, inner: string) => (/^[A-Z&]{2,4}$/.test(inner) ? m : ""));
               return (
-                <li key={d.key} className="flex min-w-0 items-center justify-center gap-1.5 rounded-full border border-line bg-white px-3 py-2 text-sm font-semibold text-vault-900">
+                <li key={d.key} className="flex min-w-0 items-center justify-center gap-1 rounded-full border border-line bg-white px-2 py-2 text-[0.82rem] font-semibold text-vault-900 sm:gap-1.5 sm:px-3 sm:text-sm">
                   <Icon className="size-4 shrink-0 text-molecule-600" aria-hidden="true" />
                   <span className="truncate lg:hidden">{short}</span>
                   <span className="hidden truncate lg:inline">{full}</span>
@@ -458,9 +459,6 @@ export default async function HomePage() {
             <PriceEstimator locale={locale} />
           </div>
 
-          <div className="mt-10 flex justify-center">
-            <EnamadSeal locale={locale} className="w-full max-w-md" />
-          </div>
 
           {/* Comparison table */}
           <details className="group/cmp mt-16 lg:mt-20">
