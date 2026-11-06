@@ -99,10 +99,10 @@ export const interviewQuestions: InterviewQuestion[] = [
   qc(
     "range",
     "mid",
-    bi("What range do you validate for an assay, content uniformity and dissolution?", "برای Assay، یکنواختی محتوا و انحلال چه Rangeی صحه‌گذاری می‌شود؟"),
+    bi("What range do you validate for an assay, content uniformity and dissolution?", "برای Assay، Content uniformity و Dissolution چه رنجی صحه‌گذاری می‌شود؟"),
     bi(
       "For an assay of the drug product, typically 80 to 120% of the test concentration; for content uniformity, 70 to 130%; for dissolution, ±20% over the specified range, for example from 20% below the lowest to 20% above the highest specification point. The range must show acceptable linearity, accuracy and precision.",
-      "برای Assay فرآورده، معمولاً 80 تا 120% غلظت آزمون؛ برای یکنواختی محتوا، 70 تا 130%؛ و برای انحلال، 20%± روی محدوده Specification، مثلاً از 20% کمتر از پایین‌ترین تا 20% بیشتر از بالاترین حد. در کل Range باید Linearity، Accuracy و Precision قابل‌قبول نشان داده شود.",
+      "برای Assay فرآورده، معمولاً 80 تا 120% غلظت آزمون؛ برای Content uniformity، 70 تا 130%؛ و برای Dissolution، ±20% روی محدوده Specification، مثلاً از 20% کمتر از پایین‌ترین تا 20% بیشتر از بالاترین حد. در کل رنج باید Linearity، Accuracy و Precision قابل‌قبول نشان داده شود.",
     ),
     "ICH Q2(R1/R2)",
   ),
