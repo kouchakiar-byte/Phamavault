@@ -47,6 +47,15 @@ export async function claimTrialDay(userId: string, ip: string | null): Promise<
   });
 }
 
+/** True when today is already one of this month's free days; never takes a new day. */
+export async function trialOpenToday(userId: string): Promise<boolean> {
+  const { rows } = await (await db()).query(
+    "select 1 from trial_days where user_id = $1 and month = $2 and day = $3 limit 1",
+    [userId, jalaliMonth(), tehranNow().day],
+  );
+  return rows.length > 0;
+}
+
 export type CopyResult = { ok: boolean; used: number; limit: number };
 
 export async function sopCopiesUsed(userId: string, bucket: SopBucket): Promise<number> {
