@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { ChevronDown, Download, Sparkles } from "lucide-react";
+import { BriefcaseBusiness, ChevronDown, Download, Sparkles } from "lucide-react";
 import { freeHandbookCopy, freeHandbooks } from "@/content/free-handbooks";
+import { interviewCopy } from "@/content/interview";
 import { copy } from "@/content/site";
-import { getSection, sectionGroups, sections, supplierBankShort } from "@/content/sections";
+import { getSection, sectionGroups, sections, supplierBankShort, supplierBankTiny } from "@/content/sections";
 import { referenceLabels } from "@/content/references";
 import { getLocale } from "@/i18n/locale";
 import { href } from "@/lib/paths";
@@ -34,7 +35,7 @@ export async function SiteHeader() {
           </Link>
           <Link
             href={href(locale)}
-            className="hidden whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-vault-800 transition hover:text-molecule-700 min-[460px]:block"
+            className="hidden whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-vault-800 transition hover:text-molecule-700 min-[460px]:block lg:hidden 2xl:block"
           >
             {nav.home[locale]}
           </Link>
@@ -49,7 +50,17 @@ export async function SiteHeader() {
             className="me-1 inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-molecule-50 px-3.5 py-2 text-sm font-semibold text-molecule-700 ring-1 ring-molecule-400/40 transition hover:bg-molecule-100"
           >
             <SupplierIcon className="size-4" aria-hidden="true" />
-            {supplierBankShort[locale]}
+            <span className="xl:hidden">{supplierBankTiny[locale]}</span>
+            <span className="hidden xl:inline">{supplierBankShort[locale]}</span>
+          </Link>
+          {/* Interview questions: a pill of its own so job seekers find it */}
+          <Link
+            href={href(locale, "interview")}
+            className="me-1 inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-capsule-50 px-3 py-2 text-sm font-semibold text-capsule-700 ring-1 ring-capsule-400/50 transition hover:bg-capsule-100"
+          >
+            <BriefcaseBusiness className="size-4" aria-hidden="true" />
+            <span className="2xl:hidden">{interviewCopy.navTiny[locale]}</span>
+            <span className="hidden 2xl:inline">{interviewCopy.navShort[locale]}</span>
           </Link>
           <HoverMenu className="group">
             <Link
@@ -101,6 +112,17 @@ export async function SiteHeader() {
                     {freeHandbookCopy.free[locale]}
                   </span>
                 </Link>
+                <Link
+                  data-menu-item
+                  href={href(locale, "interview")}
+                  className="mt-2 flex items-center justify-between gap-4 rounded-xl border border-capsule-400/50 bg-capsule-50 px-4 py-3 text-vault-900 transition hover:bg-capsule-100"
+                >
+                  <span className="flex items-center gap-2.5 text-sm font-bold">
+                    <BriefcaseBusiness className="size-4 text-capsule-700" aria-hidden="true" />
+                    {interviewCopy.navBanner[locale]}
+                  </span>
+                  <span className="rounded-full bg-capsule-400 px-3 py-1 text-xs font-extrabold text-vault-900">{interviewCopy.navBadge[locale]}</span>
+                </Link>
               </div>
             </div>
           </HoverMenu>
@@ -128,12 +150,13 @@ export async function SiteHeader() {
             closeLabel={nav.close[locale]}
             items={[
               { href: href(locale), label: nav.home[locale] },
+              { href: href(locale, "interview"), label: interviewCopy.title[locale], accent: true },
               ...sections.map((s) => ({ href: href(locale, s.href), label: s.title[locale] })),
               { href: href(locale, "free-handbooks"), label: freeHandbookCopy.pageTitle[locale] },
               { href: href(locale, "#plans"), label: nav.plans[locale] },
             ]}
             cta={<AccountLink locale={locale} variant="menu" />}
-            ctaAfter={1 + sections.length}
+            ctaAfter={2 + sections.length}
             footer={<LanguageSwitcher current={locale} label={nav.language[locale]} />}
           />
         </div>

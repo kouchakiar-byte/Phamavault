@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import { useState, type ReactNode } from "react";
 import { Menu, X } from "lucide-react";
 
-type Item = { href: string; label: string };
+/** `accent`: shown as a gold pill so it stands out in the list. */
+type Item = { href: string; label: string; accent?: boolean };
 type Props = {
   items: Item[];
   menuLabel: string;
@@ -49,7 +50,11 @@ export function MobileNav({ items, menuLabel, closeLabel, footer, cta, ctaAfter 
                   href={item.href}
                   onClick={() => setOpen(false)}
                   aria-current={pathname === item.href ? "page" : undefined}
-                  className="block rounded-lg px-3 py-2.5 font-medium text-vault-900 hover:bg-vault-50 aria-[current=page]:text-molecule-700"
+                  className={
+                    item.accent
+                      ? "my-1 block rounded-xl border border-capsule-400/60 bg-capsule-50 px-3 py-2.5 font-bold text-capsule-700 hover:bg-capsule-100"
+                      : "block rounded-lg px-3 py-2.5 font-medium text-vault-900 hover:bg-vault-50 aria-[current=page]:text-molecule-700"
+                  }
                 >
                   {item.label}
                 </Link>
