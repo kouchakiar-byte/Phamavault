@@ -763,13 +763,14 @@ const defaults: Values = {
   ...gmpDefaults,
 };
 
-export function Calculators({ locale }: { locale: Locale }) {
+/** With `demo`, every calculator shows its worked example and nothing can be changed. */
+export function Calculators({ locale, demo = false }: { locale: Locale; demo?: boolean }) {
   // ?calc= (from the site search) opens that calculator.
   const urlCalc = useUrlParam("calc");
   const [picked, setActive] = useState<string | null>(null);
   const active = picked ?? (calculations.some((c) => c.key === urlCalc) ? urlCalc : "pot");
   const [values, setValues] = useState(defaults);
-  const ctx: Ctx = { locale, v: values, set: (k, val) => setValues((prev) => ({ ...prev, [k]: val })) };
+  const ctx: Ctx = { locale, v: values, demo, set: demo ? () => {} : (k, val) => setValues((prev) => ({ ...prev, [k]: val })) };
 
   return (
     <div className="grid grid-cols-[minmax(0,1fr)] items-start gap-6 lg:grid-cols-[260px_minmax(0,1fr)]">
@@ -818,7 +819,7 @@ export function Calculators({ locale }: { locale: Locale }) {
         ))}
       </div>
 
-      <div className="min-w-0">
+      <fieldset disabled={demo} className="m-0 min-w-0 border-0 p-0">
         {calculations.map(({ key }) => {
           const Calc = components[key];
           return (
@@ -828,7 +829,7 @@ export function Calculators({ locale }: { locale: Locale }) {
             </div>
           );
         })}
-      </div>
+      </fieldset>
     </div>
   );
 }

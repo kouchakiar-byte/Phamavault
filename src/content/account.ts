@@ -324,6 +324,13 @@ export const account = {
       "روز رایگان {n} از 2 در این ماه. کپی محتوا و دانلود هندبوک‌های گذشته فقط برای مشترکین است.",
     ),
     trialBuy: bi("Subscribe", "خرید اشتراک"),
+    exampleBadge: bi("Worked example", "مثال حل‌شده"),
+    exampleTitle: bi("Every calculator, with a worked example", "همه ماشین‌حساب‌ها، با یک مثال حل‌شده"),
+    exampleText: bi(
+      "Each of the {n} calculators opens on a worked example: the inputs are sample values and every result comes from the calculator's own formula. Entering your own data is for subscribers.",
+      "هر یک از {n} ماشین‌حساب با یک مثال حل‌شده باز می‌شود؛ ورودی‌ها عددهای نمونه‌اند و هر نتیجه با فرمول همان ماشین‌حساب به دست آمده است. وارد کردن داده‌های خودتان ویژه مشترکین است.",
+    ),
+    exampleSignup: bi("Sign up free: 2 days a month to use every calculator", "ثبت‌نام رایگان؛ هر ماه 2 روز استفاده از همه ماشین‌حساب‌ها"),
   },
   admin: {
     title: bi("Admin panel", "پنل مدیریت"),

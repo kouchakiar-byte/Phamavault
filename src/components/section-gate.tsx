@@ -79,24 +79,42 @@ const open = (children: ReactNode, banner?: ReactNode) => (
   </>
 );
 
-async function Gate({ section, children }: { section: PaidSection; children: ReactNode }) {
+export type SectionAccess =
+  | { kind: "free" } // PAYWALL is off
+  | { kind: "open" }
+  | { kind: "trial"; day: number }
+  | { kind: "signup" }
+  | { kind: "trialOver" };
+
+/**
+ * Who may use a section on this request: subscribers to it, admins and verified search
+ * engines; a signed-in reader on one of this month's free days (taking a day if one is left).
+ */
+export async function sectionAccess(section: PaidSection): Promise<SectionAccess> {
   await cookies(); // request-time check, never prerendered
-  if (!paywallEnabled()) return children;
+  if (!paywallEnabled()) return { kind: "free" };
   await connection(); // the free-day count and the crawler check read the clock
   const h = await headers();
   const ip = h.get("x-forwarded-for")?.split(",")[0]?.trim() || h.get("x-real-ip") || null;
   const user = await getUser().catch(() => null);
-  if (user?.isAdmin) return open(children);
-  if (user && (await sectionsFor(user.mobile).catch(() => new Set<string>())).has(section)) return open(children);
-  if (!user && (await isVerifiedSearchBot(h.get("user-agent"), ip))) return open(children);
-  const locale = await getLocale();
-  if (!user) return <Paywall section={section} locale={locale} state="signup" />;
+  if (user?.isAdmin) return { kind: "open" };
+  if (user && (await sectionsFor(user.mobile).catch(() => new Set<string>())).has(section)) return { kind: "open" };
+  if (!user && (await isVerifiedSearchBot(h.get("user-agent"), ip))) return { kind: "open" };
+  if (!user) return { kind: "signup" };
   const trial = await claimTrialDay(user.id, ip).catch(() => ({ ok: false, used: FREE_DAYS, today: false }));
-  if (trial.ok) return open(children, <TrialBanner locale={locale} day={trial.used} />);
-  return <Paywall section={section} locale={locale} state="trialOver" />;
+  return trial.ok ? { kind: "trial", day: trial.used } : { kind: "trialOver" };
 }
 
-function TrialBanner({ locale, day }: { locale: Locale; day: number }) {
+async function Gate({ section, children }: { section: PaidSection; children: ReactNode }) {
+  const access = await sectionAccess(section);
+  if (access.kind === "free") return children;
+  if (access.kind === "open") return open(children);
+  const locale = await getLocale();
+  if (access.kind === "trial") return open(children, <TrialBanner locale={locale} day={access.day} />);
+  return <Paywall section={section} locale={locale} state={access.kind} />;
+}
+
+export function TrialBanner({ locale, day }: { locale: Locale; day: number }) {
   return (
     <div className="border-b border-capsule-400/40 bg-capsule-400/10">
       <Container className="flex flex-wrap items-center justify-between gap-2 py-2.5 text-sm">
