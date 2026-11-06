@@ -2,7 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { getUser } from "./auth";
-import { databaseConfigured } from "./db";
+import { databaseConfigured, db } from "./db";
 import { href } from "./paths";
 import { addAlert, removeAlert } from "./supplier-alerts";
 
@@ -19,7 +19,9 @@ export async function requestSupplierAlert(state: AlertState, form: FormData): P
   const user = await getUser().catch(() => null);
   if (!user) return { error: "signin" };
   try {
-    const r = await addAlert(user.id, query, email || null, locale);
+    // No address given: the account's own email, when it has one.
+    const own = email ? null : (await (await db()).query<{ email: string | null }>("select email from users where id = $1", [user.id])).rows[0]?.email;
+    const r = await addAlert(user.id, query, email || own || null, locale);
     return r === "full" ? { error: "full" } : { ok: true };
   } catch {
     return { error: "unavailable" };

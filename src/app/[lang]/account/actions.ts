@@ -1,7 +1,7 @@
 "use server";
 
 import { refresh } from "next/cache";
-import { headers } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { account } from "@/content/account";
 import { hasLocale, type Locale } from "@/i18n/config";
@@ -13,6 +13,8 @@ import { siteOrigin } from "@/lib/site-origin";
 import { allow } from "@/lib/rate-limit";
 import { createOrder, setAuthority, setStatus } from "@/lib/orders";
 import { href } from "@/lib/paths";
+import { REF_COOKIE } from "@/lib/ref-cookie";
+import { referrerByCode } from "@/lib/referrals";
 import { normalizePurchase, totalPrice } from "@/lib/pricing";
 import { addMember, getSubscription, removeMember } from "@/lib/subscriptions";
 import { onlinePaymentEnabled, requestPayment } from "@/lib/zarinpal";
@@ -57,12 +59,16 @@ export async function register(_: FormState, form: FormData): Promise<FormState>
   if (password.length < 8) return { error: "password" };
   if (password !== String(form.get("passwordRepeat") ?? "")) return { error: "mismatch" };
 
+  // Arrived through a colleague's referral link: remember who invited this account.
+  const jar = await cookies();
+  const referredBy = await referrerByCode(jar.get(REF_COOKIE)?.value).catch(() => null);
   const { rows } = await (await db()).query<{ id: string }>(
-    `insert into users (mobile, name, password_hash, email, kind, org) values ($1, $2, $3, $4, $5, $6)
+    `insert into users (mobile, name, password_hash, email, kind, org, referred_by) values ($1, $2, $3, $4, $5, $6, $7)
      on conflict (mobile) do nothing returning id`,
-    [mobile, name, await hashPassword(password), mail, kind, org],
+    [mobile, name, await hashPassword(password), mail, kind, org, referredBy],
   );
   if (!rows[0]) return { error: "taken" };
+  if (referredBy) jar.delete(REF_COOKIE);
   await startSession(rows[0].id);
   redirect(nextPath(locale, text(form, "next")));
 }

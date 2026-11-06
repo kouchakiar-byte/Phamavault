@@ -27,6 +27,8 @@ import { recentTestPayments } from "@/lib/test-payments";
 import { FREE_DAYS, SOP_COPIES, meteringThisMonth } from "@/lib/metering";
 import { recentServiceRequests } from "@/lib/service-requests";
 import { alertDemand } from "@/lib/supplier-alerts";
+import { recentRewards } from "@/lib/referrals";
+import { referralCopy } from "@/content/referrals";
 import { alertCopy } from "@/content/supplier-alerts";
 import { bi } from "@/i18n/bi";
 import { cancelOrder, changeSeats, extend, markOrderPaid, setBlocked, toggleRequestHandled, toggleRevoked } from "./actions";
@@ -65,7 +67,7 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
   if (!user) redirect(`${href(locale, "account/login")}?next=${encodeURIComponent(href(locale, "admin"))}`);
   if (!user.isAdmin) notFound();
 
-  const [numbers, orders, subscriptions, requests, users, mailLog, downloads, testPayments, query, meter, demand] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats(), recentTestPayments(), searchParams, meteringThisMonth(), alertDemand().catch(() => [])]);
+  const [numbers, orders, subscriptions, requests, users, mailLog, downloads, testPayments, query, meter, demand, rewards] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats(), recentTestPayments(), searchParams, meteringThisMonth(), alertDemand().catch(() => []), recentRewards().catch(() => [])]);
   const mt = t.metering;
   const tp = t.testPayment;
   const u = t.usersList;
@@ -249,6 +251,43 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
       <Panel title={t.trace.title} locale={locale}>
         <p className="mb-3 text-sm text-muted">{t.trace.lead[locale]}</p>
         <TraceForm locale={locale} />
+      </Panel>
+
+      <Panel title={referralCopy.adminTitle} locale={locale}>
+        {rewards.length === 0 ? (
+          <p className="text-sm text-muted">{referralCopy.adminEmpty[locale]}</p>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="db">
+              <thead>
+                <tr>
+                  <th>{d.orderCols.date[locale]}</th>
+                  <th>{referralCopy.adminReferrer[locale]}</th>
+                  <th>{referralCopy.adminReferee[locale]}</th>
+                  <th>{referralCopy.adminDays[locale]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rewards.map((r) => (
+                  <tr key={r.id}>
+                    <td className="whitespace-nowrap">{formatDate(r.createdAt, locale)}</td>
+                    <td>
+                      {r.referrer}
+                      <span className="block font-mono text-xs text-muted" dir="ltr">
+                        {r.referrerMobile}
+                      </span>
+                    </td>
+                    <td>{r.referee}</td>
+                    <td>
+                      <span className="font-mono">{r.days}</span>
+                      <span className={`block text-xs ${r.status === "granted" ? "text-molecule-700" : "text-capsule-700"}`}>{referralCopy.statuses[r.status]?.[locale] ?? r.status}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </Panel>
 
       <Panel title={alertCopy.adminTitle} locale={locale}>
