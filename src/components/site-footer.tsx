@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { freeHandbookCopy } from "@/content/free-handbooks";
+import { interviewCopy } from "@/content/interview";
 import { questionsCopy } from "@/content/questions";
 import { coaCopy } from "@/content/coa-review";
 import { copy, siteConfig } from "@/content/site";
@@ -75,6 +76,11 @@ export async function SiteFooter() {
                   <li>
                     <Link href={href(locale, "questions")} className="inline-block py-1 hover:text-molecule-400">
                       {questionsCopy.title[locale]}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={href(locale, "interview")} className="inline-block py-1 hover:text-molecule-400">
+                      {interviewCopy.title[locale]}
                     </Link>
                   </li>
                   <li>
