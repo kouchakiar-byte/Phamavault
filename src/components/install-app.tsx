@@ -99,7 +99,7 @@ export function InstallApp({ locale }: { locale: Locale }) {
 
   const [before, after] = t.ios[locale].split("{icon}");
   return (
-    <div className="pv-step-in fixed inset-x-3 bottom-3 z-40 sm:inset-x-auto sm:start-5 sm:bottom-5 sm:w-[22rem]" role="region" aria-label={t.title[locale]}>
+    <div data-pv-install className="pv-step-in fixed inset-x-3 bottom-3 z-40 sm:inset-x-auto sm:start-5 sm:bottom-5 sm:w-[22rem]" role="region" aria-label={t.title[locale]}>
       <div className="rounded-2xl border border-white/10 bg-vault-900 p-3.5 text-white shadow-2xl shadow-vault-950/40">
         <div className="flex items-center gap-3">
           <LogoMark className="size-11 shrink-0" />

@@ -60,7 +60,7 @@ async function Card({ locale }: { locale: Locale }) {
               </p>
               <ol className="mt-3 space-y-3 text-sm leading-relaxed">
                 {items.map((item, n) => (
-                  <li key={n} className="flex gap-3">
+                  <li key={n} className={`${n > 1 ? "hidden sm:flex" : "flex"} gap-3`}>
                     <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-molecule-50 font-mono text-[11px] font-bold text-molecule-700">{n + 1}</span>
                     <span>{say(item[locale])}</span>
                   </li>
