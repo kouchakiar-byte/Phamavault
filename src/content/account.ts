@@ -496,7 +496,7 @@ export const account = {
       kind: bi("Type", "نوع"),
       recipient: bi("Entered / sent to", "واردشده / گیرنده"),
       result: bi("Result", "نتیجه"),
-      kinds: { reset: bi("Password recovery", "بازیابی رمز"), test: bi("Test", "آزمایشی"), invoice: bi("Pro-forma", "پیش‌فاکتور") },
+      kinds: { reset: bi("Password recovery", "بازیابی رمز"), test: bi("Test", "آزمایشی"), invoice: bi("Pro-forma", "پیش‌فاکتور"), alert: bi("Supplier alert", "اعلان تأمین‌کننده") },
       details: {
         sent: bi("Email sent", "ایمیل ارسال شد"),
         noAccount: bi("No account with this mobile number or email", "حسابی با این موبایل یا ایمیل وجود ندارد"),

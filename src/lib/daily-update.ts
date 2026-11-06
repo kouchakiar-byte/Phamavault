@@ -3,6 +3,7 @@ import { databaseConfigured, db, transaction } from "./db";
 import { invalidateCatalog, loadCatalog, type CatalogKind } from "./catalog";
 import { refreshIranDrugs } from "./iran-drugs";
 import { tehranNow } from "./scheduler";
+import { checkSupplierAlerts } from "./supplier-alerts";
 
 /** Adds an edit to the queue the next daily update publishes. `data: null` hides the record. */
 export async function queueChange(kind: CatalogKind, key: string, data: unknown | null, userId: string): Promise<void> {
@@ -125,5 +126,7 @@ export async function runDailyUpdate({ force = false } = {}): Promise<RunSummary
   // Renew the most asked Iranian-medicine searches in the background (paced, a few minutes).
   void refreshIranDrugs().catch((error) => console.error("iran drugs refresh failed", error));
   void pruneViews().catch((error) => console.error("page view pruning failed", error));
+  // Tell readers waiting on a material that a supplier for it is now in the bank.
+  void checkSupplierAlerts().catch((error) => console.error("supplier alerts failed", error));
   return { day, finishedAt: rows[0]?.finished_at ?? null, published, checked: new Set(urls).size, unreachable };
 }

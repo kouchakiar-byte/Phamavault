@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { redirect } from "next/navigation";
+import { Bell, BellRing } from "lucide-react";
 import { AddMemberForm } from "@/components/account/forms";
 import { Loading, accountMetadata } from "@/components/account/shell";
 import { BiTitle, ButtonLink, Container } from "@/components/ui";
 import { account } from "@/content/account";
+import { alertCopy } from "@/content/supplier-alerts";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
 import { getUser, type User } from "@/lib/auth";
@@ -14,6 +16,8 @@ import { ordersFor, type Order } from "@/lib/orders";
 import { planName, periodLabel, sectionsLabel } from "@/lib/labels";
 import { href } from "@/lib/paths";
 import { subscriptionStatus, subscriptionsFor, type Subscription } from "@/lib/subscriptions";
+import { deleteSupplierAlert } from "@/lib/supplier-alert-actions";
+import { alertsFor, type SupplierAlert } from "@/lib/supplier-alerts";
 import { logout, removeTeamMember } from "./actions";
 
 const { dashboard: t } = account;
@@ -153,12 +157,53 @@ function Orders({ orders, locale }: { orders: Order[]; locale: Locale }) {
   );
 }
 
+function Alerts({ alerts, locale }: { alerts: SupplierAlert[]; locale: Locale }) {
+  return (
+    <section>
+      <BiTitle as="h2" text={alertCopy.section} locale={locale} className="mb-4 text-xl font-bold text-vault-900" />
+      <ul className="divide-y divide-line overflow-hidden rounded-card border border-line bg-white">
+        {alerts.map((a) => (
+          <li key={a.id} className="flex flex-wrap items-center justify-between gap-3 px-5 py-4">
+            <div className="flex items-center gap-3">
+              {a.foundAt ? (
+                <BellRing className="size-5 shrink-0 text-molecule-600" aria-hidden="true" />
+              ) : (
+                <Bell className="size-5 shrink-0 text-muted" aria-hidden="true" />
+              )}
+              <div>
+                <p className="font-semibold text-vault-900">«{a.query}»</p>
+                <p className={`text-sm ${a.foundAt ? "font-semibold text-molecule-700" : "text-muted"}`}>
+                  {a.foundAt ? alertCopy.found[locale].replace("{n}", String(a.found)) : alertCopy.waiting[locale]}
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              {a.foundAt && (
+                <Link href={`${href(locale, "suppliers")}?q=${encodeURIComponent(a.query)}`} className="rounded-full bg-molecule-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-molecule-500">
+                  {alertCopy.view[locale]}
+                </Link>
+              )}
+              <form action={deleteSupplierAlert}>
+                <input type="hidden" name="id" value={a.id} />
+                <input type="hidden" name="lang" value={locale} />
+                <button type="submit" className="rounded-full border border-line px-4 py-1.5 text-sm text-muted hover:border-red-400 hover:text-red-700">
+                  {alertCopy.remove[locale]}
+                </button>
+              </form>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 async function Dashboard({ locale, searchParams }: { locale: Locale; searchParams: Search }) {
   const search = await searchParams;
   if (!databaseConfigured()) return <p className="rounded-card bg-red-50 px-5 py-4 text-red-700">{account.errors.unavailable[locale]}</p>;
   const user = await getUser();
   if (!user) redirect(`${href(locale, "account/login")}?next=${encodeURIComponent(href(locale, "account"))}`);
-  const [subscriptions, orders] = await Promise.all([subscriptionsFor(user.id, user.mobile), ordersFor(user.id)]);
+  const [subscriptions, orders, alerts] = await Promise.all([subscriptionsFor(user.id, user.mobile), ordersFor(user.id), alertsFor(user.id).catch(() => [])]);
 
   return (
     <div className="space-y-10">
@@ -210,6 +255,8 @@ async function Dashboard({ locale, searchParams }: { locale: Locale; searchParam
           </div>
         )}
       </section>
+
+      {alerts.length > 0 && <Alerts alerts={alerts} locale={locale} />}
 
       {orders.length > 0 && (
         <section>

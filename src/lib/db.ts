@@ -196,6 +196,20 @@ create table if not exists service_requests (
   created_at timestamptz not null default now()
 );
 create index if not exists service_requests_created_idx on service_requests(created_at);
+create table if not exists supplier_alerts (
+  id bigserial primary key,
+  user_id bigint not null references users(id) on delete cascade,
+  query text not null,
+  query_key text not null,
+  email text,
+  locale text not null default 'fa',
+  created_at timestamptz not null default now(),
+  found_at timestamptz,
+  found int not null default 0,
+  mailed_at timestamptz,
+  unique (user_id, query_key)
+);
+create index if not exists supplier_alerts_open_idx on supplier_alerts(found_at) where found_at is null;
 `;
 
 const g = globalThis as unknown as { pvPool?: Pool; pvSchema?: Promise<unknown> };
