@@ -312,15 +312,18 @@ export default async function HomePage() {
       <section id="sections" className="scroll-mt-20 bg-paper py-14 lg:py-24">
         <Container>
           <SectionHead eyebrow={sectionsIntro.eyebrow[locale]} title={sectionsIntro.title} locale={locale} lead={sectionsIntro.lead[locale]} />
-          {/* Who it is for, as one row instead of a grid of its own */}
-          <ul className="mt-6 flex flex-wrap items-center gap-2" aria-label={departments.eyebrow[locale]}>
-            <li className="text-sm font-semibold text-muted">{departments.eyebrow[locale]}:</li>
+          {/* Who it is for: an even grid, 2 columns on phones and 4 from sm (short names until lg) */}
+          <p className="mt-6 text-sm font-semibold text-muted">{departments.eyebrow[locale]}:</p>
+          <ul className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4" aria-label={departments.eyebrow[locale]}>
             {departments.items.map((d) => {
               const Icon = departmentIcons[d.key];
+              const full = d.title[locale];
+              const short = full.replace(/\s*\([^)]*\)\s*$/, "");
               return (
-                <li key={d.key} className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-3 py-1.5 text-sm font-semibold text-vault-900">
-                  <Icon className="size-4 text-molecule-600" aria-hidden="true" />
-                  {d.title[locale]}
+                <li key={d.key} className="flex min-w-0 items-center justify-center gap-1.5 rounded-full border border-line bg-white px-3 py-2 text-sm font-semibold text-vault-900">
+                  <Icon className="size-4 shrink-0 text-molecule-600" aria-hidden="true" />
+                  <span className="truncate lg:hidden">{short}</span>
+                  <span className="hidden truncate lg:inline">{full}</span>
                 </li>
               );
             })}
