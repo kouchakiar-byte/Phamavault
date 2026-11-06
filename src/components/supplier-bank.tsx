@@ -8,7 +8,7 @@ import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
 import { href } from "@/lib/paths";
 import type { SupplierPage, SupplierView } from "@/lib/supplier-api";
-import { norm, type Filters, type SortKey } from "@/lib/supplier-search";
+import { legacyCategory, norm, type Filters, type SortKey } from "@/lib/supplier-search";
 import { BiTitle } from "./ui";
 import { QuoteRequest } from "./quote-request";
 import { quoteCopy } from "@/content/lab-brands";
@@ -43,7 +43,7 @@ const defaults: Filters = { query: "", type: "all", cat: "all", sort: "cred", te
 
 /** Reads `?q=`, `?cat=` and `?type=` so the home-page search lands on results. */
 export function filtersFromParams(params: URLSearchParams): Partial<Filters> {
-  const cat = params.get("cat") ?? "";
+  const cat = legacyCategory(params.get("cat") ?? "");
   const type = params.get("type") ?? "";
   return {
     query: params.get("q") ?? "",

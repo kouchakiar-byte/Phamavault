@@ -768,7 +768,6 @@
    "t": "m",
    "c": [
     "exc",
-    "std",
     "lab"
    ],
    "prov": "تهران",
@@ -1272,7 +1271,7 @@
    "e": "Fanavaran Darouei Hakim",
    "t": "m",
    "c": [
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -3987,7 +3986,7 @@
     "cos",
     "sup",
     "api",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -4389,7 +4388,7 @@
     "exc",
     "sup",
     "cos",
-    "std"
+    "lab"
    ],
    "prov": "نامشخص",
    "city": "—",
@@ -4761,8 +4760,7 @@
     "sup",
     "min",
     "api",
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -5023,7 +5021,7 @@
     "exc",
     "api",
     "cos",
-    "std"
+    "lab"
    ],
    "prov": "نامشخص",
    "city": "—",
@@ -6974,7 +6972,6 @@
    "c": [
     "exc",
     "api",
-    "std",
     "lab"
    ],
    "prov": "تهران",
@@ -7214,7 +7211,7 @@
    "t": "m",
    "c": [
     "exc",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -8368,7 +8365,7 @@
    "e": "Darico Shimi Darou — daricodarou.com",
    "t": "t",
    "c": [
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -8396,7 +8393,7 @@
    "e": "Imen Gostar Shimi — imengostarshimi.com",
    "t": "t",
    "c": [
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -8427,7 +8424,7 @@
    "e": "Argon Exir Tehran — argonexir.com",
    "t": "t",
    "c": [
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -8456,7 +8453,6 @@
    "e": "Modern Shimi Gostar Mana — manashimi.com",
    "t": "t",
    "c": [
-    "std",
     "lab"
    ],
    "prov": "تهران",
@@ -8490,7 +8486,7 @@
    "e": "Yas Gene Kowsar — yasgene.com",
    "t": "t",
    "c": [
-    "std"
+    "lab"
    ],
    "prov": "اصفهان",
    "city": "اصفهان",
@@ -8515,7 +8511,7 @@
    "e": "Rabin Azma Parsian — rabinazma.com",
    "t": "t",
    "c": [
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -8537,7 +8533,7 @@
    "e": "Arian Pajooh — arianpajooh.com",
    "t": "t",
    "c": [
-    "std"
+    "lab"
    ],
    "prov": "نامشخص",
    "city": "—",
@@ -8555,7 +8551,6 @@
    "e": "Nirvana Exir Gostar Pars — nirvanashimi.com",
    "t": "t",
    "c": [
-    "std",
     "lab"
    ],
    "prov": "تهران",
@@ -8682,7 +8677,7 @@
    "e": "Shimi Darman Andisheh",
    "t": "m",
    "c": [
-    "std"
+    "lab"
    ],
    "prov": "نامشخص",
    "city": "—",
@@ -8992,7 +8987,7 @@
    "e": "Hamrahan Safineh Danesh — hsdlifescience.com",
    "t": "t",
    "c": [
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -9160,7 +9155,6 @@
    "t": "t",
    "c": [
     "lab",
-    "std",
     "pkg",
     "api"
    ],
@@ -9374,8 +9368,7 @@
    "e": "Totiya Chem (Tootia Shimi Tejarat Mahan)",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -9481,8 +9474,7 @@
    "e": "Apadana Sanat Rhyton",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -9517,8 +9509,7 @@
    "e": "Arman Chimi Pars",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -9659,8 +9650,7 @@
    "e": "Asa Mandegar Andishe Dana (AMAD)",
    "t": "m",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -9687,8 +9677,7 @@
    "e": "Amatis Ara Shimi (ARA CHEM)",
    "t": "m",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "البرز",
    "city": "کرج",
@@ -9827,8 +9816,7 @@
    "e": "Behine Kala Gostar (BKG)",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -9908,8 +9896,7 @@
    "e": "Payande Gostar Shimi (PGS)",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10073,8 +10060,7 @@
    "e": "Tajzie Azmoon Pars Shimi",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "البرز",
    "city": "کرج",
@@ -10117,8 +10103,7 @@
    "e": "Tabriz Laboratory Equipment (TATCO)",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "آذربایجان شرقی",
    "city": "تبریز",
@@ -10191,8 +10176,7 @@
    "e": "Rad Shimi Tajhiz",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10237,8 +10221,7 @@
    "e": "Rahavard Fanavari Sarmad",
    "t": "m",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10260,8 +10243,7 @@
    "e": "Robina Teb Azma",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10328,8 +10310,7 @@
    "e": "Cell Gostar Karazhen (Genex)",
    "t": "m",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10400,8 +10381,7 @@
    "e": "Shimi Sanat Vaheb (VAHEB)",
    "t": "m",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10426,8 +10406,7 @@
    "e": "Peyman Pazhooh Sina Chemical Industries",
    "t": "m",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10454,8 +10433,7 @@
    "e": "Taha Kimia Tajhiz",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10679,8 +10657,7 @@
    "e": "Kian Kavosh Tajhiz",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10707,8 +10684,7 @@
    "e": "Kimia Tajhiz Fartak (KTF)",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10842,8 +10818,7 @@
    "e": "Mayan Gostar Shimi Dey (MGSD)",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10943,8 +10918,7 @@
    "e": "Maham Azma Farmed International",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
@@ -10988,8 +10962,7 @@
    "e": "Arak Shimi Engineering",
    "t": "m",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "مرکزی",
    "city": "اراک",
@@ -11117,8 +11090,7 @@
    "e": "Nik Azma Farayand Novin Caspian",
    "t": "t",
    "c": [
-    "lab",
-    "std"
+    "lab"
    ],
    "prov": "تهران",
    "city": "تهران",
