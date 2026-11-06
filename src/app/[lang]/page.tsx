@@ -161,7 +161,7 @@ export default async function HomePage() {
       <section className="relative isolate overflow-hidden bg-vault-900 text-white">
         <MoleculePattern className="text-white/[0.05]" />
         <div className="absolute -top-40 end-[-10%] -z-10 size-[36rem] rounded-full bg-molecule-500/20 blur-3xl" />
-        {/* Phone: brand, search and counts (the sections follow below the hero). Desktop: the sections panel beside them, which sit centred against its height. */}
+        {/* Phone: brand and search, then the sections panel, then the counts. Desktop: the panel beside both, which sit centred against its height. */}
         <Container className="grid grid-cols-1 items-start gap-10 pb-16 pt-8 sm:pt-10 lg:grid-cols-[1.15fr_1fr] lg:grid-rows-[1fr_auto_auto_1fr] lg:gap-x-14 lg:gap-y-0 lg:pb-20 lg:pt-12">
           <div className="fade-in lg:col-start-1 lg:row-start-2">
             {/* e-Namad requires its seal at the top of the home page */}
@@ -235,7 +235,7 @@ export default async function HomePage() {
           </div>
 
           {/* The "vault" panel: every section one click away */}
-          <div className="fade-in hidden [animation-delay:.1s] lg:col-start-2 lg:row-span-4 lg:row-start-1 lg:block">
+          <div className="fade-in [animation-delay:.1s] lg:col-start-2 lg:row-span-4 lg:row-start-1">
             <p className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/5 whitespace-nowrap px-4 py-1.5 text-xs font-bold tracking-wide text-molecule-400 sm:text-sm">
               {copy.platform[locale]}
               <span className="text-molecule-400/60" aria-hidden="true">·</span>
