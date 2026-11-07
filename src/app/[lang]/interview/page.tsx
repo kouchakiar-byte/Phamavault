@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { Lock, MessageCircleQuestion } from "lucide-react";
+import interviewPhoto from "@/assets/photos/sections/interview.webp";
 import { SimpleHeader } from "@/components/simple-header";
 import { TrialBanner, sectionAccess } from "@/components/section-gate";
 import { ButtonLink, Container } from "@/components/ui";
@@ -36,7 +37,7 @@ export default async function InterviewPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqSchema(locale) }} />
-      <SimpleHeader locale={locale} title={t.title} lead={lead} back={{ href: href(locale), label: copy.nav.home }} />
+      <SimpleHeader locale={locale} title={t.title} lead={lead} back={{ href: href(locale), label: copy.nav.home }} photo={interviewPhoto} />
       <Suspense fallback={<div className="min-h-[60vh]" aria-busy="true" />}>
         <Questions locale={locale} />
       </Suspense>

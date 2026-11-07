@@ -145,6 +145,34 @@ export const referenceSections: RefSection[] = [
     links: [{ label: "PMDA – Japanese Pharmacopoeia", url: "https://www.pmda.go.jp/english/rs-sb-std/standards-development/jp/0013.html", note: bi("JP drafts and English texts", "پیش‌نویس‌ها و متن انگلیسی") }],
   },
   {
+    key: "chp",
+    title: bi("Pharmacopoeia of the People's Republic of China", "فارماکوپه چین"),
+    abbr: "ChP",
+    chip: "ChP 2025",
+    editions: [
+      {
+        label: referenceLabels.inForce,
+        value: bi(
+          "ChP 2025 Edition — issued 20 March 2025 (NMPA and National Health Commission, Announcement No. 29 of 2025), in force since 1 October 2025",
+          `ویرایش ${ltr("2025")} ${ltr("(ChP 2025)")} — ابلاغ‌شده در 30 اسفند 1403 (اطلاعیه شماره 29 سال 2025 سازمان ملی فرآورده‌های پزشکی چین و کمیسیون ملی سلامت)، لازم‌الاجرا از 9 مهر 1404`,
+        ),
+      },
+      { label: referenceLabels.next, value: bi("A new edition about every five years; the next is expected around 2030", "ویرایش جدید تقریباً هر پنج سال؛ ویرایش بعدی حدود 2030 انتظار می‌رود") },
+    ],
+    text: bi(
+      "Compiled by the Chinese Pharmacopoeia Commission and issued by the NMPA. It is published in four volumes: traditional Chinese medicines, chemical drugs, biological products, and general chapters with pharmaceutical excipients. From the date in force, registration dossiers for China must meet this edition.",
+      "توسط کمیسیون فارماکوپه چین تدوین و از سوی NMPA ابلاغ می‌شود. در چهار جلد منتشر می‌شود: داروهای سنتی چینی، داروهای شیمیایی، فرآورده‌های بیولوژیک، و فصل‌های عمومی همراه با مواد جانبی دارویی. از تاریخ اجرا، پرونده‌های ثبت دارو در چین باید با این ویرایش منطبق باشند.",
+    ),
+    links: [
+      {
+        label: "NMPA – ChP 2025 announcement",
+        url: "https://english.nmpa.gov.cn/2025-06/11/c_1102158.htm",
+        note: bi("Official announcement (English)", "اطلاعیه رسمی (انگلیسی)"),
+      },
+      { label: "Chinese Pharmacopoeia Commission", url: "https://www.chp.org.cn/", note: bi("Official site (Chinese)", "سایت رسمی (چینی)") },
+    ],
+  },
+  {
     key: "fda",
     title: bi("US Food and Drug Administration", "سازمان غذا و داروی آمریکا"),
     abbr: "FDA",
