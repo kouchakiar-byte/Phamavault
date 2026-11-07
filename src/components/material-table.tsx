@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useGuestGate, useSettled } from "@/lib/use-guest-use";
+import { GuestLimit } from "./guest-limit";
 import type { rawMaterials as RawMaterialData } from "@/data";
 import { copy } from "@/content/site";
 import { pages } from "@/content/pages";
@@ -58,6 +60,12 @@ export function MaterialTable({ locale, data }: Props) {
   const t = pages.materials;
   const c = copy.common;
 
+  // Guests: each settled search is one free use of the section; filtering by group or BCS is not.
+  const settled = useSettled(normalize(query));
+  const searchKey = settled.length >= 2 ? `search:${settled}` : null;
+  const gate = useGuestGate("materials", searchKey);
+  const searching = normalize(query).length >= 2;
+  const waiting = searching && (settled !== normalize(query) || gate === "pending");
   const rows = useMemo(() => {
     const q = normalize(query);
     return data.items.filter(
@@ -101,7 +109,11 @@ export function MaterialTable({ locale, data }: Props) {
           </select>
         </Field>
       </FilterBar>
-      <Count shown={rows.length} total={data.items.length} of={c.of[locale]} unit={c.records[locale]} />
+      {searching && gate === "blocked" && !waiting ? (
+        <GuestLimit locale={locale} />
+      ) : (
+      <>
+      <Count shown={waiting ? 0 : rows.length} total={data.items.length} of={c.of[locale]} unit={c.records[locale]} />
       <TableWrap>
         <table className="db">
           <thead>
@@ -115,12 +127,12 @@ export function MaterialTable({ locale, data }: Props) {
             </tr>
           </thead>
           <tbody>
-            {rows.length === 0 && (
+            {!waiting && rows.length === 0 && (
               <tr>
                 <td colSpan={6}>{c.noMatch[locale]}</td>
               </tr>
             )}
-            {rows.slice(0, limit).map((r) => (
+            {(waiting ? [] : rows.slice(0, limit)).map((r) => (
               <tr key={r.cas}>
                 <td>
                   <span className="font-medium text-vault-900" dir="ltr">
@@ -160,6 +172,8 @@ export function MaterialTable({ locale, data }: Props) {
         <button type="button" className="mx-auto mt-4 flex rounded-lg border border-line px-5 py-2 text-sm font-medium text-vault-900 hover:border-molecule-500" onClick={() => setLimit((n) => n + PAGE)}>
           {t.showMore[locale].replace("{n}", formatNumber(Math.min(PAGE, rows.length - limit), locale))}
         </button>
+      )}
+      </>
       )}
     </>
   );

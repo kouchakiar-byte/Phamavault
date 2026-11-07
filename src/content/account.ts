@@ -324,6 +324,17 @@ export const account = {
       "روز رایگان {n} از 2 در این ماه. کپی محتوا و دانلود هندبوک‌های گذشته فقط برای مشترکین است.",
     ),
     trialBuy: bi("Subscribe", "خرید اشتراک"),
+    guestBanner: bi(
+      "Without an account: {n} of {total} free uses of this section left this month. Sign up free for 2 full days a month.",
+      "بدون ثبت‌نام: {n} از {total} استفاده رایگان این بخش در این ماه باقی مانده است. با ثبت‌نام رایگان، هر ماه 2 روز دسترسی کامل دارید.",
+    ),
+    guestLimitText: bi("Sign up free for 2 full days of every section each month.", "با ثبت‌نام رایگان، هر ماه 2 روز کامل از همه بخش‌ها استفاده کنید."),
+    guestUnlock: bi("Use this calculator with my own numbers ({n} of {total} free uses left)", "استفاده از این ماشین‌حساب با عددهای خودم ({n} از {total} استفاده رایگان باقی‌مانده)"),
+    guestUsedTitle: bi("Your {total} free uses of this section are used", "{total} استفاده رایگان این بخش تمام شده است"),
+    guestUsedText: bi(
+      "Without an account, each section opens {total} times a month. Sign up free to use “{section}” and every other section on 2 full days each month.",
+      "بدون ثبت‌نام، هر بخش در هر ماه {total} بار باز می‌شود. با ثبت‌نام رایگان، هر ماه 2 روز کامل از «{section}» و همه بخش‌های دیگر استفاده کنید.",
+    ),
     exampleBadge: bi("Worked example", "مثال حل‌شده"),
     exampleTitle: bi("Every calculator, with a worked example", "همه ماشین‌حساب‌ها، با یک مثال حل‌شده"),
     exampleText: bi(

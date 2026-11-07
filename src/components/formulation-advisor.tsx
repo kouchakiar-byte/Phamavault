@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
+import { GuestLimit } from "./guest-limit";
 import {
   AlertTriangle,
   Atom,
@@ -151,6 +152,7 @@ export function FormulationAdvisor({ locale, incompatibilities, apis }: Props) {
   const [components, setComponents] = useState<Component[]>([]);
   const [ob, setOb] = useState<ObResult | null>(null);
   const [obBusy, setObBusy] = useState(false);
+  const [obGuest, setObGuest] = useState(false);
   const [tab, setTab] = useState<Tab>("formula");
   const [copied, setCopied] = useState(false);
 
@@ -205,8 +207,9 @@ export function FormulationAdvisor({ locale, incompatibilities, apis }: Props) {
     if (q.length < 3) return;
     setObBusy(true);
     try {
-      const res = await fetch(`/api/orange-book?q=${encodeURIComponent(q)}&discn=1&all=1`);
-      setOb((await res.json()) as ObResult);
+      const res = await fetch(`/api/orange-book?q=${encodeURIComponent(q)}&discn=1&all=1&s=formulation`);
+      setObGuest(res.status === 403);
+      setOb(res.status === 403 ? null : ((await res.json()) as ObResult));
     } catch {
       setOb({ updated: null, iranUpdated: null, groups: [], total: 0 });
     } finally {
@@ -370,6 +373,7 @@ export function FormulationAdvisor({ locale, incompatibilities, apis }: Props) {
               <input id="fa-bw" type="number" min="0" step="any" className="field-input" value={brandWeight} onChange={(e) => setBrandWeight(e.target.value)} />
             </Field>
             <p className="text-sm text-muted">{t.brandWeightHint[locale]}</p>
+            {obGuest && <GuestLimit locale={locale} />}
             {brands && (
               <div className="rounded-xl border border-line bg-vault-50 p-4 text-sm">
                 {brands.ingredient ? (

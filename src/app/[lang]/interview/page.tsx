@@ -45,7 +45,8 @@ export default async function InterviewPage() {
 }
 
 async function Questions({ locale }: { locale: Locale }) {
-  const access = await sectionAccess("qc");
+  // One page holds every answer, so guests do not spend section uses here: they see the free questions.
+  const access = await sectionAccess("qc", { meter: false });
   const open = access.kind === "free" || access.kind === "open" || access.kind === "trial";
   const say = (s: string) => (locale === "fa" ? isolateText(s) : s);
   return (

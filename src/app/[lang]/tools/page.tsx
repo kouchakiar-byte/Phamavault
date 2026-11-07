@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { Calculator } from "lucide-react";
 import { Calculators } from "@/components/calculators";
 import { PageHeader } from "@/components/page-header";
-import { TrialBanner, sectionAccess } from "@/components/section-gate";
+import { GuestBanner, TrialBanner, sectionAccess } from "@/components/section-gate";
 import { ButtonLink, Container } from "@/components/ui";
 import { account } from "@/content/account";
 import { calculations } from "@/content/calculations";
@@ -37,14 +37,17 @@ export default async function ToolsPage() {
 }
 
 async function Tools({ locale }: { locale: Locale }) {
-  const access = await sectionAccess("tools");
-  const demo = access.kind === "signup" || access.kind === "trialOver";
+  const access = await sectionAccess("tools", { meter: false });
+  // Guests see the worked examples and may unlock a few calculators of their own choice.
+  const demo = access.kind === "signup" || access.kind === "trialOver" || access.kind === "guest";
+  const guestLeft = access.kind === "guest" ? access.left : 0;
   return (
     <>
       {access.kind === "trial" && <TrialBanner locale={locale} day={access.day} />}
+      {access.kind === "guest" && <GuestBanner locale={locale} left={guestLeft} />}
       <Container className="py-12">
         {demo && <ExampleNotice locale={locale} signedIn={access.kind === "trialOver"} />}
-        <Calculators locale={locale} demo={demo} />
+        <Calculators locale={locale} demo={demo} guestLeft={guestLeft} />
       </Container>
     </>
   );
