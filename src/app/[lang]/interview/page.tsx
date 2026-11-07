@@ -4,7 +4,7 @@ import { SimpleHeader } from "@/components/simple-header";
 import { TrialBanner, sectionAccess } from "@/components/section-gate";
 import { ButtonLink, Container } from "@/components/ui";
 import { account } from "@/content/account";
-import { interviewCopy as t, interviewQuestions, isFreeQuestion, type InterviewArea, type InterviewQuestion } from "@/content/interview";
+import { interviewCopy as t, interviewQuestions, isFreeQuestion, withCounts, type InterviewArea, type InterviewQuestion } from "@/content/interview";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
@@ -12,9 +12,11 @@ import { isolateText } from "@/lib/bidi";
 import { pageMetadata } from "@/lib/metadata";
 import { href } from "@/lib/paths";
 
-export const generateMetadata = () => pageMetadata(t.title, t.lead, "interview");
+const lead = { en: withCounts(t.lead.en), fa: withCounts(t.lead.fa) };
 
-const areas: InterviewArea[] = ["qc", "qa"];
+export const generateMetadata = () => pageMetadata(t.title, lead, "interview");
+
+const areas: InterviewArea[] = ["qc", "qa", "rnd", "ra", "prod", "gen"];
 const levelTone = { basic: "bg-molecule-50 text-molecule-700", mid: "bg-capsule-50 text-capsule-700", advanced: "bg-vault-100 text-vault-800" };
 
 /** The six free answers as FAQ markup; the others are not on the page for readers without access. */
@@ -34,7 +36,7 @@ export default async function InterviewPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: faqSchema(locale) }} />
-      <SimpleHeader locale={locale} title={t.title} lead={t.lead} back={{ href: href(locale), label: copy.nav.home }} />
+      <SimpleHeader locale={locale} title={t.title} lead={lead} back={{ href: href(locale), label: copy.nav.home }} />
       <Suspense fallback={<div className="min-h-[60vh]" aria-busy="true" />}>
         <Questions locale={locale} />
       </Suspense>
@@ -55,10 +57,10 @@ async function Questions({ locale }: { locale: Locale }) {
           {t.tip[locale]}
         </p>
         {!open && <LockedNotice locale={locale} signedIn={access.kind === "trialOver"} />}
-        <nav className="mb-8 flex flex-wrap gap-2" aria-label={t.title[locale]}>
+        <nav className="mb-8 grid grid-cols-2 gap-2 sm:grid-cols-3" aria-label={t.title[locale]}>
           {areas.map((area) => (
-            <a key={area} href={`#${area}`} className="rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-vault-900 hover:border-molecule-500">
-              {t.areas[area][locale]} · {interviewQuestions.filter((q) => q.area === area).length}
+            <a key={area} href={`#${area}`} className="flex items-center justify-center rounded-full border border-line bg-white px-2 py-2 text-center text-[0.8rem] font-semibold leading-snug text-vault-900 hover:border-molecule-500 sm:px-4 sm:text-sm">
+              {(t.areasShort[area] ?? t.areas[area])[locale]} · {interviewQuestions.filter((q) => q.area === area).length}
             </a>
           ))}
         </nav>
@@ -94,8 +96,20 @@ function Item({ q, n, locale, show, say }: { q: InterviewQuestion; n: number; lo
           <h3 className="mt-2 text-lg font-bold leading-snug text-vault-900">{say(q.q[locale])}</h3>
           {show ? (
             <>
-              <p className="mt-3 text-xs font-bold text-molecule-700">{t.answer[locale]}</p>
+              {q.aim && (
+                <>
+                  <p className="mt-3 text-xs font-bold text-capsule-700">{t.aim[locale]}</p>
+                  <p className="mt-1 leading-8 text-ink">{say(q.aim[locale])}</p>
+                </>
+              )}
+              <p className="mt-3 text-xs font-bold text-molecule-700">{(q.aim ? t.sample : t.answer)[locale]}</p>
               <p className="mt-1 leading-8 text-ink">{say(q.a[locale])}</p>
+              {q.avoid && (
+                <p className="mt-3 rounded-xl bg-red-50 px-4 py-3 text-sm leading-7 text-red-900">
+                  <span className="font-bold">{t.avoid[locale]}: </span>
+                  {say(q.avoid[locale])}
+                </p>
+              )}
               {q.refs && (
                 <p className="mt-3 text-xs text-muted">
                   {t.refs[locale]}: <bdi dir="ltr">{q.refs}</bdi>
@@ -127,7 +141,7 @@ function LockedNotice({ locale, signedIn }: { locale: Locale; signedIn: boolean 
   return (
     <div className="mb-8 flex flex-col gap-4 rounded-card border border-capsule-400/50 bg-gradient-to-br from-capsule-50 via-white to-molecule-50 p-6 sm:flex-row sm:items-center sm:justify-between">
       <div>
-        <p className="text-lg font-bold text-vault-900">{t.lockedTitle[locale]}</p>
+        <p className="text-lg font-bold text-vault-900">{withCounts(t.lockedTitle[locale], interviewQuestions.filter((q) => !isFreeQuestion(q)).length)}</p>
         <p className="mt-1 max-w-2xl text-sm leading-relaxed text-muted">{t.lockedText[locale]}</p>
       </div>
       {signedIn ? (
