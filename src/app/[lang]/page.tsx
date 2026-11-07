@@ -32,6 +32,7 @@ import { searchCopy } from "@/content/search";
 import { sections } from "@/content/sections";
 import { DnaHelix } from "@/components/dna-helix";
 import { HeroStats } from "@/components/hero-stats";
+import { LabCollage } from "@/components/lab-collage";
 import ctdPhoto from "@/assets/photos/ctd-dossier.webp";
 import flaskPhoto from "@/assets/photos/flask.webp";
 
@@ -311,10 +312,13 @@ export default async function HomePage() {
       {/* Sections */}
       <section id="sections" className="scroll-mt-20 bg-paper py-14 lg:py-24">
         <Container>
+          {/* Intro and who it is for, beside the researchers collage with floating capsules and tablets */}
+          <div className="grid items-center gap-8 lg:grid-cols-[1.35fr_1fr] lg:gap-14">
+            <div>
           <SectionHead eyebrow={sectionsIntro.eyebrow[locale]} title={sectionsIntro.title} locale={locale} lead={sectionsIntro.lead[locale]} />
-          {/* Who it is for: an even grid, 2 columns on phones and 4 from sm (abbreviations only until lg) */}
+          {/* Who it is for: an even grid, 2 columns on phones, 4 from sm and 2 beside the collage on desktop (abbreviations only until lg) */}
           <p className="mt-6 text-sm font-semibold text-muted">{departments.eyebrow[locale]}:</p>
-          <ul className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4" aria-label={departments.eyebrow[locale]}>
+          <ul className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-2" aria-label={departments.eyebrow[locale]}>
             {departments.items.map((d) => {
               const Icon = departmentIcons[d.key];
               const full = d.title[locale];
@@ -329,6 +333,11 @@ export default async function HomePage() {
               );
             })}
           </ul>
+            </div>
+            <div className="mx-auto w-full max-w-[17rem] sm:max-w-xs lg:max-w-sm">
+              <LabCollage alt={copy.statement.photoAlt[locale]} />
+            </div>
+          </div>
           <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 lg:grid-cols-3">
             {platformSections.map(({ slug, href: path, plate, icon: Icon, title, description }) => {
               const highlight = sectionHighlight(slug, num, counts);
