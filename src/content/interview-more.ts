@@ -590,8 +590,8 @@ export const moreInterviewQuestions: InterviewQuestion[] = [
     bi("Tell us about yourself.", "خودتان را معرفی کنید."),
     bi("A short, relevant picture of you: background, experience and why you fit this post, not your life story.", "تصویری کوتاه و مرتبط از شما: تحصیلات، تجربه و اینکه چرا برای این شغل مناسب هستید؛ نه شرح کامل زندگی."),
     bi(
-      "“I studied pharmacy and have three years in QC, mostly HPLC and dissolution. In my last job I set up our method transfer files. I am looking for a post where I can grow in method validation, which is why this position interests me.”",
-      "«داروسازی خوانده‌ام و سه سال در QC کار کرده‌ام، بیشتر با HPLC و انحلال. در شغل قبلی پرونده‌های انتقال روش را راه‌اندازی کردم. دنبال جایگاهی هستم که در صحه‌گذاری روش رشد کنم و به همین دلیل این موقعیت برایم جذاب است.»",
+      "“I hold a Pharm.D. and have three years of experience in quality control, mainly HPLC analysis and dissolution testing. In my previous role I was responsible for drafting and executing method transfer protocols, and I set that process up from the start. I now want to build deeper expertise in method validation, which is why this position fits my career path.”",
+      "«دانش‌آموخته دکتری عمومی داروسازی هستم و سه سال سابقه کار در واحد کنترل کیفیت (QC) دارم؛ عمده تجربه من در آنالیز با HPLC و آزمون Dissolution بوده است. در سازمان قبلی، مسئولیت تدوین و اجرای پروتکل‌های Method transfer با من بود و این فرایند را از ابتدا راه‌اندازی کردم. اکنون به دنبال فرصتی هستم که تخصصم را در حوزه Method validation عمیق‌تر کنم و به همین دلیل، این موقعیت را با مسیر حرفه‌ای خود هم‌راستا می‌دانم.»",
     ),
     bi("Reciting your CV line by line, personal details that do not matter for the job, or talking for more than about two minutes.", "خواندن خط‌به‌خط رزومه، جزئیات شخصی بی‌ربط به شغل، یا صحبت طولانی‌تر از حدود دو دقیقه."),
   ),
