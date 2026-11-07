@@ -381,6 +381,94 @@ export default async function HomePage() {
       {/* Featured: the supplier bank */}
       <SupplierSpotlight locale={locale} />
 
+      {/* CTD compilation service */}
+      <section id="ctd" className="scroll-mt-20 pb-20 lg:pb-28">
+        <Container>
+          <div className="relative isolate grid gap-10 overflow-hidden rounded-3xl bg-vault-900 px-6 py-12 text-white shadow-2xl shadow-vault-900/20 sm:px-12 lg:grid-cols-[1.4fr_1fr] lg:items-center lg:py-16">
+            {/* A dossier being reviewed: behind the whole card on phones, the end half on desktop, fading into the navy */}
+            <div className="absolute inset-0 -z-20 lg:start-auto lg:w-[48%]" aria-hidden="true">
+              <Image src={ctdPhoto} alt="" fill sizes="(min-width: 1024px) 600px, 100vw" placeholder="blur" className="object-cover object-[45%_55%]" />
+              <div className="absolute inset-0 bg-vault-900/80 lg:bg-transparent lg:bg-gradient-to-r lg:from-vault-900 lg:via-vault-900/45 lg:to-vault-900/5 lg:rtl:bg-gradient-to-l" />
+            </div>
+            <MoleculePattern className="-z-10 text-white/[0.05]" />
+            <div className="absolute -top-32 end-[-6rem] -z-10 size-[26rem] rounded-full bg-capsule-500/15 blur-3xl" />
+            <div>
+              <p className="text-sm font-semibold text-capsule-400">{ctdService.eyebrow[locale]}</p>
+              <BiTitle
+                as="h2"
+                text={ctdService.title}
+                locale={locale}
+                className="mt-3 text-3xl font-bold sm:text-4xl"
+                primaryClassName="pv-gold-text font-extrabold leading-snug drop-shadow-[0_2px_10px_rgba(220,189,109,0.35)]"
+                secondaryClassName="text-vault-100"
+              />
+              <p className="mt-4 max-w-2xl text-lg leading-relaxed text-vault-100/85">{ctdService.lead[locale]}</p>
+              <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
+                {ctdService.points.map((pt) => (
+                  <li key={pt.en} className="flex gap-2.5 text-sm leading-relaxed text-vault-100/90">
+                    <Check className="mt-0.5 size-4 shrink-0 text-capsule-400" aria-hidden="true" />
+                    {pt[locale]}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8">
+                <CtdRequest locale={locale} />
+              </div>
+            </div>
+            <div className="mx-auto flex size-48 flex-col items-center justify-center rounded-full border-4 border-capsule-400/80 bg-vault-950/55 text-center shadow-2xl shadow-black/40 ring-8 ring-white/10 backdrop-blur-md sm:size-56">
+              <span className="pv-gold-text text-7xl font-bold leading-none sm:text-8xl">{num(5)}</span>
+              <span className="mt-2 text-base font-semibold text-capsule-400">{ctdService.days[locale]}</span>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Calculations */}
+      <section className="relative isolate overflow-hidden border-y border-line bg-gradient-to-br from-molecule-50 via-white to-vault-50 py-20 lg:py-28">
+        <MoleculePattern className="-z-20 text-vault-900/[0.04]" />
+        {/* The flask photo on the end side, fading softly into the light background */}
+        <div
+          className="absolute inset-y-0 end-0 -z-10 hidden w-[52%] [mask-image:linear-gradient(to_left,#000_55%,transparent)] md:block rtl:[mask-image:linear-gradient(to_right,#000_55%,transparent)]"
+          aria-hidden="true"
+        >
+          <Image src={flaskPhoto} alt="" fill sizes="52vw" placeholder="blur" className="object-cover object-[30%_50%]" />
+        </div>
+        <Container>
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm font-bold tracking-wide text-molecule-700">{toolsShowcase.eyebrow[locale]}</p>
+              <BiTitle
+                as="h2"
+                text={bi(
+                  toolsShowcase.title.en.replace("{n}", String(calculations.length)),
+                  toolsShowcase.title.fa.replace("{n}", calculations.length.toLocaleString("fa-IR-u-nu-latn")),
+                )}
+                locale={locale}
+                className="mt-3 text-3xl font-bold tracking-tight text-vault-900 sm:text-4xl"
+                secondaryClassName="text-muted"
+              />
+              <p className="mt-4 text-lg leading-relaxed text-ink/80">{toolsShowcase.lead[locale]}</p>
+            </div>
+            <ButtonLink href={href(locale, "tools")}>
+              {toolsShowcase.open[locale]}
+            </ButtonLink>
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-4">
+            {featuredCalculations.map(calculation).map((c, i) => (
+              <div
+                key={c.key}
+                className={`${i > 3 ? "hidden sm:block" : ""} rounded-card border border-white/80 bg-white/80 p-6 shadow-lg shadow-vault-900/5 ring-1 ring-vault-900/5 backdrop-blur-md transition hover:-translate-y-0.5 hover:border-molecule-400 hover:shadow-molecule-500/10`}
+              >
+                <h3 className="font-bold text-vault-900">{c.title[locale]}</h3>
+                <p className="mt-3 font-mono text-xs leading-relaxed text-molecule-700" dir="ltr" style={{ textAlign: "start" }}>
+                  {c.equation}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
       {/* Plans */}
       <section id="plans" className="scroll-mt-20 border-t border-line bg-white py-20 lg:py-28">
         <Container>
@@ -512,94 +600,6 @@ export default async function HomePage() {
         </Container>
       </section>
 
-
-      {/* CTD compilation service */}
-      <section id="ctd" className="scroll-mt-20 pb-20 lg:pb-28">
-        <Container>
-          <div className="relative isolate grid gap-10 overflow-hidden rounded-3xl bg-vault-900 px-6 py-12 text-white shadow-2xl shadow-vault-900/20 sm:px-12 lg:grid-cols-[1.4fr_1fr] lg:items-center lg:py-16">
-            {/* A dossier being reviewed: behind the whole card on phones, the end half on desktop, fading into the navy */}
-            <div className="absolute inset-0 -z-20 lg:start-auto lg:w-[48%]" aria-hidden="true">
-              <Image src={ctdPhoto} alt="" fill sizes="(min-width: 1024px) 600px, 100vw" placeholder="blur" className="object-cover object-[45%_55%]" />
-              <div className="absolute inset-0 bg-vault-900/80 lg:bg-transparent lg:bg-gradient-to-r lg:from-vault-900 lg:via-vault-900/45 lg:to-vault-900/5 lg:rtl:bg-gradient-to-l" />
-            </div>
-            <MoleculePattern className="-z-10 text-white/[0.05]" />
-            <div className="absolute -top-32 end-[-6rem] -z-10 size-[26rem] rounded-full bg-capsule-500/15 blur-3xl" />
-            <div>
-              <p className="text-sm font-semibold text-capsule-400">{ctdService.eyebrow[locale]}</p>
-              <BiTitle
-                as="h2"
-                text={ctdService.title}
-                locale={locale}
-                className="mt-3 text-3xl font-bold sm:text-4xl"
-                primaryClassName="pv-gold-text font-extrabold leading-snug drop-shadow-[0_2px_10px_rgba(220,189,109,0.35)]"
-                secondaryClassName="text-vault-100"
-              />
-              <p className="mt-4 max-w-2xl text-lg leading-relaxed text-vault-100/85">{ctdService.lead[locale]}</p>
-              <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
-                {ctdService.points.map((pt) => (
-                  <li key={pt.en} className="flex gap-2.5 text-sm leading-relaxed text-vault-100/90">
-                    <Check className="mt-0.5 size-4 shrink-0 text-capsule-400" aria-hidden="true" />
-                    {pt[locale]}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-8">
-                <CtdRequest locale={locale} />
-              </div>
-            </div>
-            <div className="mx-auto flex size-48 flex-col items-center justify-center rounded-full border-4 border-capsule-400/80 bg-vault-950/55 text-center shadow-2xl shadow-black/40 ring-8 ring-white/10 backdrop-blur-md sm:size-56">
-              <span className="pv-gold-text text-7xl font-bold leading-none sm:text-8xl">{num(5)}</span>
-              <span className="mt-2 text-base font-semibold text-capsule-400">{ctdService.days[locale]}</span>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Calculations */}
-      <section className="relative isolate overflow-hidden border-y border-line bg-gradient-to-br from-molecule-50 via-white to-vault-50 py-20 lg:py-28">
-        <MoleculePattern className="-z-20 text-vault-900/[0.04]" />
-        {/* The flask photo on the end side, fading softly into the light background */}
-        <div
-          className="absolute inset-y-0 end-0 -z-10 hidden w-[52%] [mask-image:linear-gradient(to_left,#000_55%,transparent)] md:block rtl:[mask-image:linear-gradient(to_right,#000_55%,transparent)]"
-          aria-hidden="true"
-        >
-          <Image src={flaskPhoto} alt="" fill sizes="52vw" placeholder="blur" className="object-cover object-[30%_50%]" />
-        </div>
-        <Container>
-          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <div className="max-w-3xl">
-              <p className="text-sm font-bold tracking-wide text-molecule-700">{toolsShowcase.eyebrow[locale]}</p>
-              <BiTitle
-                as="h2"
-                text={bi(
-                  toolsShowcase.title.en.replace("{n}", String(calculations.length)),
-                  toolsShowcase.title.fa.replace("{n}", calculations.length.toLocaleString("fa-IR-u-nu-latn")),
-                )}
-                locale={locale}
-                className="mt-3 text-3xl font-bold tracking-tight text-vault-900 sm:text-4xl"
-                secondaryClassName="text-muted"
-              />
-              <p className="mt-4 text-lg leading-relaxed text-ink/80">{toolsShowcase.lead[locale]}</p>
-            </div>
-            <ButtonLink href={href(locale, "tools")}>
-              {toolsShowcase.open[locale]}
-            </ButtonLink>
-          </div>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-4">
-            {featuredCalculations.map(calculation).map((c, i) => (
-              <div
-                key={c.key}
-                className={`${i > 3 ? "hidden sm:block" : ""} rounded-card border border-white/80 bg-white/80 p-6 shadow-lg shadow-vault-900/5 ring-1 ring-vault-900/5 backdrop-blur-md transition hover:-translate-y-0.5 hover:border-molecule-400 hover:shadow-molecule-500/10`}
-              >
-                <h3 className="font-bold text-vault-900">{c.title[locale]}</h3>
-                <p className="mt-3 font-mono text-xs leading-relaxed text-molecule-700" dir="ltr" style={{ textAlign: "start" }}>
-                  {c.equation}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
 
       {/* FAQ */}
       <section className="border-t border-line bg-paper pb-4 pt-20 lg:pt-24">
