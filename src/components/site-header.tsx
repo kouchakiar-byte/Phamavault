@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BriefcaseBusiness, ChevronDown, Download, Sparkles } from "lucide-react";
 import { freeHandbookCopy, freeHandbooks } from "@/content/free-handbooks";
-import { interviewCopy } from "@/content/interview";
+import { interviewCopy, withCounts } from "@/content/interview";
 import { copy } from "@/content/site";
 import { getSection, sectionGroups, sections, supplierBankShort, supplierBankTiny } from "@/content/sections";
 import { referenceLabels } from "@/content/references";
@@ -119,9 +119,9 @@ export async function SiteHeader() {
                 >
                   <span className="flex items-center gap-2.5 text-sm font-bold">
                     <BriefcaseBusiness className="size-4 text-capsule-700" aria-hidden="true" />
-                    {interviewCopy.navBanner[locale]}
+                    {withCounts(interviewCopy.navBanner[locale])}
                   </span>
-                  <span className="rounded-full bg-capsule-400 px-3 py-1 text-xs font-extrabold text-vault-900">{interviewCopy.navBadge[locale]}</span>
+                  <span className="rounded-full bg-capsule-400 px-3 py-1 text-xs font-extrabold text-vault-900">{withCounts(interviewCopy.navBadge[locale])}</span>
                 </Link>
               </div>
             </div>

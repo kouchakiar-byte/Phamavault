@@ -1,35 +1,60 @@
 import { bi, type Bi } from "@/i18n/bi";
+import { moreInterviewQuestions } from "./interview-more";
 
 /*
- * Job-interview questions for QC and QA posts in the pharmaceutical industry, with model
- * answers. PharmaVault's own wording; each answer names the guideline it rests on.
+ * Job-interview questions for the pharmaceutical industry (QC, QA, R&D, regulatory affairs,
+ * production) and general interview questions, with model answers. PharmaVault's own wording;
+ * each technical answer names the guideline it rests on.
  * The first FREE_PER_AREA questions of each area are open to everyone.
  */
 
-export type InterviewArea = "qc" | "qa";
+export type InterviewArea = "qc" | "qa" | "rnd" | "ra" | "prod" | "gen";
 export type InterviewLevel = "basic" | "mid" | "advanced";
 
-export type InterviewQuestion = { id: string; area: InterviewArea; level: InterviewLevel; q: Bi; a: Bi; refs?: string };
+export type InterviewQuestion = {
+  id: string;
+  area: InterviewArea;
+  level: InterviewLevel;
+  q: Bi;
+  /** Model answer; for general questions, a short generic sample answer. */
+  a: Bi;
+  refs?: string;
+  /** General questions: what the interviewer is looking for, and what to avoid. */
+  aim?: Bi;
+  avoid?: Bi;
+};
 
 export const FREE_PER_AREA = 3;
 
 export const interviewCopy = {
-  title: bi("QC and QA interview questions", "سؤال‌های مصاحبه استخدامی QC و QA"),
+  title: bi("Pharmaceutical job interview questions", "سؤال‌های مصاحبه استخدامی صنعت داروسازی"),
   lead: bi(
-    "60 questions that come up in interviews for quality control and quality assurance posts, with model answers and the guideline behind each. 6 are open to everyone.",
-    "60 سؤال پرتکرار مصاحبه‌های استخدامی واحدهای کنترل کیفیت و تضمین کیفیت، با پاسخ نمونه و رهنمودی که هر پاسخ بر آن استوار است. 6 سؤال برای همه باز است.",
+    "{n} questions that come up in interviews for QC, QA, R&D, regulatory and production posts, plus general interview questions, with model answers and the guideline behind each technical answer. {f} are open to everyone.",
+    "{n} سؤال پرتکرار مصاحبه‌های استخدامی واحدهای QC، QA، تحقیق و توسعه، رگولاتوری و تولید، به‌علاوه سؤال‌های عمومی مصاحبه؛ با پاسخ نمونه و رهنمودی که هر پاسخ تخصصی بر آن استوار است. {f} سؤال برای همه باز است.",
   ),
-  areas: { qc: bi("Quality control (QC)", "کنترل کیفیت (QC)"), qa: bi("Quality assurance (QA)", "تضمین کیفیت (QA)") } satisfies Record<InterviewArea, Bi>,
+  areas: {
+    qc: bi("Quality control (QC)", "کنترل کیفیت (QC)"),
+    qa: bi("Quality assurance (QA)", "تضمین کیفیت (QA)"),
+    rnd: bi("Research & development (R&D)", "تحقیق و توسعه (R&D)"),
+    ra: bi("Regulatory affairs (RA)", "امور رگولاتوری (RA)"),
+    prod: bi("Production (operators)", "تولید (سطح اپراتور)"),
+    gen: bi("General interview questions", "سؤال‌های عمومی مصاحبه"),
+  } satisfies Record<InterviewArea, Bi>,
+  /** Shorter names for the jump links at the top of the page. */
+  areasShort: { prod: bi("Production", "تولید (اپراتور)"), gen: bi("General", "سؤال‌های عمومی") } as Partial<Record<InterviewArea, Bi>>,
   levels: { basic: bi("Basic", "پایه"), mid: bi("Intermediate", "متوسط"), advanced: bi("Advanced", "پیشرفته") } satisfies Record<InterviewLevel, Bi>,
   free: bi("Free", "رایگان"),
   /** The header link and the menu banner. */
   navShort: bi("Interview questions", "سؤال‌های مصاحبه"),
   navTiny: bi("Interviews", "مصاحبه"),
-  navBanner: bi("60 interview questions for QC and QA posts, with model answers", "60 سؤال مصاحبه استخدامی QC و QA با پاسخ نمونه"),
-  navBadge: bi("6 free", "6 سؤال رایگان"),
+  navBanner: bi("{n} job interview questions: QC, QA, R&D, RA, production and general", "{n} سؤال مصاحبه استخدامی: QC، QA، R&D، RA، تولید و عمومی"),
+  navBadge: bi("{f} free", "{f} سؤال رایگان"),
   answer: bi("Model answer", "پاسخ نمونه"),
+  aim: bi("What the interviewer is looking for", "مصاحبه‌کننده دنبال چیست"),
+  sample: bi("Sample answer (make it your own)", "نمونه پاسخ (با تجربه خودتان جایگزین کنید)"),
+  avoid: bi("Avoid", "پرهیز کنید"),
   refs: bi("Based on", "مرجع"),
-  lockedTitle: bi("The other 54 answers are for subscribers", "54 پاسخ دیگر ویژه مشترکین است"),
+  lockedTitle: bi("The other {n} answers are for subscribers", "{n} پاسخ دیگر ویژه مشترکین است"),
   lockedText: bi(
     "Every question is listed; the model answers open with a subscription, or on your 2 free days each month after signing up.",
     "همه سؤال‌ها فهرست شده‌اند؛ پاسخ‌های نمونه با اشتراک، یا پس از ثبت‌نام در 2 روز رایگان هر ماه، باز می‌شوند.",
@@ -650,6 +675,14 @@ export const interviewQuestions: InterviewQuestion[] = [
   ),
 ];
 
+interviewQuestions.push(...moreInterviewQuestions);
+
 /** Free questions: the first FREE_PER_AREA of each area. */
 export const isFreeQuestion = (q: InterviewQuestion): boolean =>
   interviewQuestions.filter((x) => x.area === q.area).indexOf(q) < FREE_PER_AREA;
+
+export const freeQuestionCount = (): number => interviewQuestions.filter(isFreeQuestion).length;
+
+/** Fills {n} (all questions) and {f} (free ones) in the counts shown in the menu and the page. */
+export const withCounts = (text: string, n = interviewQuestions.length): string =>
+  text.replace("{n}", String(n)).replace("{f}", String(freeQuestionCount()));
