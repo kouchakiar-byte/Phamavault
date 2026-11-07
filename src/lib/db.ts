@@ -212,6 +212,19 @@ create table if not exists supplier_alerts (
   unique (user_id, query_key)
 );
 create index if not exists supplier_alerts_open_idx on supplier_alerts(found_at) where found_at is null;
+-- Guests (not signed in): a few free uses per section and Jalali month, by hashed IP and browser id.
+create table if not exists guest_uses (
+  id bigserial primary key,
+  ip_hash text not null,
+  gid text,
+  month text not null,
+  section text not null,
+  item text not null,
+  created_at timestamptz not null default now(),
+  unique (ip_hash, month, section, item)
+);
+create index if not exists guest_uses_month_idx on guest_uses(month, section);
+create index if not exists guest_uses_gid_idx on guest_uses(gid, month) where gid is not null;
 -- Referral rewards: 7 days for the referrer when someone they invited makes a first paid order; 3 a Jalali month.
 create table if not exists referral_rewards (
   id bigserial primary key,

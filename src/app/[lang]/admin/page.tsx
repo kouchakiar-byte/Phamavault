@@ -28,6 +28,9 @@ import { FREE_DAYS, SOP_COPIES, meteringThisMonth } from "@/lib/metering";
 import { recentServiceRequests } from "@/lib/service-requests";
 import { alertDemand } from "@/lib/supplier-alerts";
 import { recentRewards } from "@/lib/referrals";
+import { guestStatsThisMonth } from "@/lib/guest-meter";
+import { isPaidSection } from "@/lib/pricing";
+import { getSection } from "@/content/sections";
 import { referralCopy } from "@/content/referrals";
 import { alertCopy } from "@/content/supplier-alerts";
 import { bi } from "@/i18n/bi";
@@ -35,6 +38,15 @@ import { cancelOrder, changeSeats, extend, markOrderPaid, setBlocked, toggleRequ
 
 const { admin: t, dashboard: d, invoice: inv } = account;
 const copyToman = copy.plans.currency;
+
+const guestCopy = {
+  title: bi("Guests this month (free uses without an account)", "مهمان‌های این ماه (استفاده رایگان بدون ثبت‌نام)"),
+  empty: bi("No guest uses this month yet.", "هنوز در این ماه استفاده مهمانی ثبت نشده است."),
+  section: bi("Section", "بخش"),
+  visitors: bi("Visitors (IP)", "بازدیدکننده (IP)"),
+  uses: bi("Uses", "تعداد استفاده"),
+  exhausted: bi("Used all 3", "هر 3 بار را استفاده کرده"),
+};
 
 const requestLabels = {
   title: bi("Service requests (CTD compilation, price quotes)", "درخواست‌های خدمات (تدوین CTD و استعلام قیمت)"),
@@ -67,7 +79,7 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
   if (!user) redirect(`${href(locale, "account/login")}?next=${encodeURIComponent(href(locale, "admin"))}`);
   if (!user.isAdmin) notFound();
 
-  const [numbers, orders, subscriptions, requests, users, mailLog, downloads, testPayments, query, meter, demand, rewards] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats(), recentTestPayments(), searchParams, meteringThisMonth(), alertDemand().catch(() => []), recentRewards().catch(() => [])]);
+  const [numbers, orders, subscriptions, requests, users, mailLog, downloads, testPayments, query, meter, demand, rewards, guests] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats(), recentTestPayments(), searchParams, meteringThisMonth(), alertDemand().catch(() => []), recentRewards().catch(() => []), guestStatsThisMonth().catch(() => [])]);
   const mt = t.metering;
   const tp = t.testPayment;
   const u = t.usersList;
@@ -251,6 +263,35 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
       <Panel title={t.trace.title} locale={locale}>
         <p className="mb-3 text-sm text-muted">{t.trace.lead[locale]}</p>
         <TraceForm locale={locale} />
+      </Panel>
+
+      <Panel title={guestCopy.title} locale={locale}>
+        {guests.length === 0 ? (
+          <p className="text-sm text-muted">{guestCopy.empty[locale]}</p>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="db">
+              <thead>
+                <tr>
+                  <th>{guestCopy.section[locale]}</th>
+                  <th>{guestCopy.visitors[locale]}</th>
+                  <th>{guestCopy.uses[locale]}</th>
+                  <th>{guestCopy.exhausted[locale]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {guests.map((g) => (
+                  <tr key={g.section}>
+                    <td className="font-semibold">{isPaidSection(g.section) ? getSection(g.section).title[locale] : g.section}</td>
+                    <td className="font-mono">{g.visitors}</td>
+                    <td className="font-mono">{g.uses}</td>
+                    <td className="font-mono">{g.exhausted}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </Panel>
 
       <Panel title={referralCopy.adminTitle} locale={locale}>

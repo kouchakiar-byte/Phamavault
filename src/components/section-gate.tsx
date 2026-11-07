@@ -2,7 +2,7 @@ import { Suspense, type ReactNode } from "react";
 import Image, { type StaticImageData } from "next/image";
 import { cookies, headers } from "next/headers";
 import { connection } from "next/server";
-import { CalendarClock, Lock, UserPlus } from "lucide-react";
+import { CalendarClock, Gauge, Lock, UserPlus } from "lucide-react";
 import { account } from "@/content/account";
 import { getSection } from "@/content/sections";
 import { copy } from "@/content/site";
@@ -13,6 +13,9 @@ import { formatNumber } from "@/lib/format";
 import { href } from "@/lib/paths";
 import type { PaidSection } from "@/lib/pricing";
 import { FREE_DAYS, claimTrialDay } from "@/lib/metering";
+import { guestId } from "@/lib/guest-access";
+import { PATH_HEADER } from "@/lib/guest-cookie";
+import { FREE_LANDING, FREE_PAGES, GUEST_USES, claimGuestUse, guestUsed } from "@/lib/guest-meter";
 import { isVerifiedSearchBot } from "@/lib/search-bots";
 import { paywallEnabled, sectionsFor } from "@/lib/subscriptions";
 import { ButtonLink, Container } from "./ui";
@@ -83,14 +86,15 @@ export type SectionAccess =
   | { kind: "free" } // PAYWALL is off
   | { kind: "open" }
   | { kind: "trial"; day: number }
-  | { kind: "signup" }
+  | { kind: "guest"; left: number } // not signed in, within this month's free uses
+  | { kind: "signup"; guestUsed?: boolean }
   | { kind: "trialOver" };
 
 /**
  * Who may use a section on this request: subscribers to it, admins and verified search
  * engines; a signed-in reader on one of this month's free days (taking a day if one is left).
  */
-export async function sectionAccess(section: PaidSection): Promise<SectionAccess> {
+export async function sectionAccess(section: PaidSection, { meter = true }: { meter?: boolean } = {}): Promise<SectionAccess> {
   await cookies(); // request-time check, never prerendered
   if (!paywallEnabled()) return { kind: "free" };
   await connection(); // the free-day count and the crawler check read the clock
@@ -100,9 +104,27 @@ export async function sectionAccess(section: PaidSection): Promise<SectionAccess
   if (user?.isAdmin) return { kind: "open" };
   if (user && (await sectionsFor(user.mobile).catch(() => new Set<string>())).has(section)) return { kind: "open" };
   if (!user && (await isVerifiedSearchBot(h.get("user-agent"), ip))) return { kind: "open" };
-  if (!user) return { kind: "signup" };
+  if (!user) return guestAccess(section, h, meter);
   const trial = await claimTrialDay(user.id, ip).catch(() => ({ ok: false, used: FREE_DAYS, today: false }));
   return trial.ok ? { kind: "trial", day: trial.used } : { kind: "trialOver" };
+}
+
+/**
+ * A guest has GUEST_USES uses of each section a month (by hashed IP and browser id). A list
+ * or tool landing page is free to view; any other page of the section is one use, the same
+ * page again is free. Prefetches never take a use.
+ */
+async function guestAccess(section: PaidSection, h: Headers, meter: boolean): Promise<SectionAccess> {
+  const parts = (h.get(PATH_HEADER) ?? "").split("/").filter(Boolean).slice(1); // without the locale
+  const who = await guestId();
+  const landing = (parts.length === 1 && parts[0] === section && FREE_LANDING.has(section)) || FREE_PAGES.has(parts.join("/"));
+  if (!meter || landing || h.has("next-router-prefetch") || h.get("purpose") === "prefetch") {
+    const used = await guestUsed(section, who).catch(() => GUEST_USES);
+    if (landing || !meter) return { kind: "guest", left: Math.max(0, GUEST_USES - used) };
+    return { kind: "signup" };
+  }
+  const r = await claimGuestUse(section, parts.join("/") || section, who).catch(() => ({ ok: false, used: GUEST_USES, left: 0 }));
+  return r.ok ? { kind: "guest", left: r.left } : { kind: "signup", guestUsed: true };
 }
 
 async function Gate({ section, children }: { section: PaidSection; children: ReactNode }) {
@@ -111,7 +133,8 @@ async function Gate({ section, children }: { section: PaidSection; children: Rea
   if (access.kind === "open") return open(children);
   const locale = await getLocale();
   if (access.kind === "trial") return open(children, <TrialBanner locale={locale} day={access.day} />);
-  return <Paywall section={section} locale={locale} state={access.kind} />;
+  if (access.kind === "guest") return open(children, <GuestBanner locale={locale} left={access.left} />);
+  return <Paywall section={section} locale={locale} state={access.kind === "signup" && access.guestUsed ? "guestUsed" : access.kind} />;
 }
 
 export function TrialBanner({ locale, day }: { locale: Locale; day: number }) {
@@ -130,8 +153,25 @@ export function TrialBanner({ locale, day }: { locale: Locale; day: number }) {
   );
 }
 
-function Paywall({ section, locale, state }: { section: PaidSection; locale: Locale; state: "signup" | "trialOver" }) {
-  const signedIn = state !== "signup";
+/** Guests: how many free uses of this section are left this month, and the way to more. */
+export function GuestBanner({ locale, left }: { locale: Locale; left: number }) {
+  return (
+    <div className="border-b border-molecule-400/40 bg-molecule-50">
+      <Container className="flex flex-wrap items-center justify-between gap-2 py-2.5 text-sm">
+        <p className="flex items-center gap-2 text-ink">
+          <Gauge className="size-4 shrink-0 text-molecule-700" aria-hidden="true" />
+          {t.guestBanner[locale].replace("{n}", String(left)).replace("{total}", String(GUEST_USES))}
+        </p>
+        <a href={href(locale, "account/register")} className="font-semibold text-molecule-700 hover:underline">
+          {t.signup[locale]}
+        </a>
+      </Container>
+    </div>
+  );
+}
+
+function Paywall({ section, locale, state }: { section: PaidSection; locale: Locale; state: "signup" | "guestUsed" | "trialOver" }) {
+  const signedIn = state === "trialOver";
   const { title: sectionTitle, description } = getSection(section);
   const title = sectionTitle[locale];
   const buy = href(locale, "account/buy");
@@ -147,10 +187,10 @@ function Paywall({ section, locale, state }: { section: PaidSection; locale: Loc
           </span>
         </div>
         <div className="p-8 pt-6 sm:p-12 sm:pt-8">
-          <h1 className="text-2xl font-bold text-vault-900 sm:text-3xl">{(signedIn ? t.trialOverTitle : t.signupTitle)[locale]}</h1>
+          <h1 className="text-2xl font-bold text-vault-900 sm:text-3xl">{(signedIn ? t.trialOverTitle : state === "guestUsed" ? t.guestUsedTitle : t.signupTitle)[locale].replace("{total}", String(GUEST_USES))}</h1>
           <p className="mt-2 text-lg font-semibold text-molecule-700">{title}</p>
           <p className="mx-auto mt-3 max-w-xl rounded-xl bg-molecule-50/60 px-4 py-3 text-sm leading-relaxed text-ink">{description[locale]}</p>
-          <p className="mt-4 leading-relaxed text-muted">{(signedIn ? t.trialOverText : t.signupText)[locale].replace("{section}", title)}</p>
+          <p className="mt-4 leading-relaxed text-muted">{(signedIn ? t.trialOverText : state === "guestUsed" ? t.guestUsedText : t.signupText)[locale].replace("{section}", title).replace("{total}", String(GUEST_USES))}</p>
           {section === "pharmacy" && <p className="mt-2 text-sm text-muted">{t.textPharmacy[locale]}</p>}
           <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:justify-center">
             {!signedIn ? (

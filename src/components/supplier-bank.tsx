@@ -12,6 +12,7 @@ import { legacyCategory, norm, type Filters, type SortKey } from "@/lib/supplier
 import { BiTitle } from "./ui";
 import { QuoteRequest } from "./quote-request";
 import { SupplierAlert } from "./supplier-alert";
+import { GuestLimit } from "./guest-limit";
 import { quoteCopy } from "@/content/lab-brands";
 
 const t = pages.suppliers;
@@ -58,7 +59,7 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
   const set = (patch: Partial<Filters>) => setFilters((f) => ({ ...f, ...patch }));
   const [page, setPage] = useState<SupplierPage>(data.first);
   const [rows, setRows] = useState<SupplierView[]>(data.first.results);
-  const [state, setState] = useState<"idle" | "loading" | "rate" | "error">("idle");
+  const [state, setState] = useState<"idle" | "loading" | "rate" | "error" | "guest">("idle");
   const latest = useRef(0);
 
   async function load(f: Filters, n: number, append: boolean) {
@@ -68,6 +69,7 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
       const res = await fetch(`/api/suppliers?${queryString(f, n)}`, { cache: "no-store" });
       if (id !== latest.current) return;
       if (res.status === 429) return setState("rate");
+      if (res.status === 403) return setState("guest");
       if (!res.ok) return setState("error");
       const next = (await res.json()) as SupplierPage;
       if (id !== latest.current) return;
@@ -82,7 +84,8 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
   // A new search after a short pause in typing. The server-rendered first page is fetched once more
   // on arrival, since it was rendered without contact details and the reader may be signed in.
   useEffect(() => {
-    const timer = setTimeout(() => load(filters, 1, false), 250);
+    // a little longer than a keystroke gap, so a guest's search counts once
+    const timer = setTimeout(() => load(filters, 1, false), 800);
     return () => clearTimeout(timer);
   }, [filters]);
 
@@ -188,6 +191,7 @@ export function SupplierBank({ locale, data, initial }: { locale: Locale; data: 
       </p>
 
       {state === "rate" && <p className="rounded-card bg-capsule-50 px-4 py-3 text-sm text-capsule-700">{t.tooMany[locale]}</p>}
+      {state === "guest" && <GuestLimit locale={locale} />}
       {state === "error" && <p className="rounded-card bg-red-50 px-4 py-3 text-sm text-red-700">{t.loadError[locale]}</p>}
 
       {!page.contacts && (

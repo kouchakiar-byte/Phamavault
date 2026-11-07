@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useGuestGate, useSettled } from "@/lib/use-guest-use";
+import { GuestLimit } from "./guest-limit";
 import Link from "next/link";
 import { AlertTriangle, Check, FlaskConical, Search, X } from "lucide-react";
 import { apiCatalogue, apiGroups, compat as t, excipientCatalogue, rules, type ApiGroup } from "@/content/compatibility";
@@ -59,6 +61,12 @@ export function CompatibilityChecker({ locale, apis }: { locale: Locale; apis: s
 
   const visibleExcipients = excipientCatalogue.filter((e) => !filter.trim() || e.name.toLowerCase().includes(filter.trim().toLowerCase()));
   const ready = groups.size > 0 && chosen.size > 0;
+  // Guests: each settled combination of API groups and excipients is one free use of the formulation section.
+  const combo = ready ? `compat:${[...groups].sort().join("+")}|${[...chosen].sort().join("+")}` : null;
+  const settledCombo = useSettled(combo, 700);
+  const gate = useGuestGate("formulation", settledCombo);
+  const waiting = ready && (settledCombo !== combo || gate === "pending");
+  const blocked = ready && !waiting && gate === "blocked";
 
   return (
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)]">
@@ -158,16 +166,17 @@ export function CompatibilityChecker({ locale, apis }: { locale: Locale; apis: s
         <h2 className="flex items-center gap-2 text-lg font-bold text-vault-900">
           <FlaskConical className="size-5 text-molecule-600" aria-hidden="true" />
           {tx(t.results)}
-          {ready && <span className="rounded-full bg-vault-900 px-2.5 py-0.5 text-xs font-bold text-capsule-400">{hits.length}</span>}
+          {ready && !waiting && !blocked && <span className="rounded-full bg-vault-900 px-2.5 py-0.5 text-xs font-bold text-capsule-400">{hits.length}</span>}
         </h2>
         {!ready && <p className="rounded-card border border-dashed border-line bg-white p-5 text-sm text-muted">{tx(t.empty)}</p>}
-        {ready && hits.length === 0 && (
+        {blocked && <GuestLimit locale={locale} />}
+        {ready && !waiting && !blocked && hits.length === 0 && (
           <p className="flex gap-2 rounded-card border border-molecule-400/50 bg-molecule-50 p-5 text-sm leading-relaxed text-molecule-700">
             <Check className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
             {tx(t.none)}
           </p>
         )}
-        {hits.map(({ rule, groups: g, excipients }) => (
+        {(waiting || blocked ? [] : hits).map(({ rule, groups: g, excipients }) => (
           <article key={rule.id} className="rounded-card border border-line bg-white p-5">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <h3 className="flex items-center gap-2 font-bold text-vault-900">

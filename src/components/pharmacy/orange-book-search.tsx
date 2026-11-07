@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { GuestLimit } from "@/components/guest-limit";
 import { orangeBook as t } from "@/content/pharmacy";
 import type { Locale } from "@/i18n/config";
 import type { ObResult } from "@/lib/orange-book";
@@ -19,6 +20,7 @@ export function OrangeBookSearch({ locale, iran = true }: { locale: Locale; iran
   const [discn, setDiscn] = useState(false);
   const [result, setResult] = useState<ObResult | null>(null);
   const [loading, setLoading] = useState(false);
+  const [guestLimit, setGuestLimit] = useState(false);
   const q = query.trim();
 
   useEffect(() => {
@@ -27,11 +29,15 @@ export function OrangeBookSearch({ locale, iran = true }: { locale: Locale; iran
     const timer = setTimeout(() => {
       setLoading(true);
       fetch(`/api/orange-book?q=${encodeURIComponent(q)}${discn ? "&discn=1" : ""}`, { signal: ctrl.signal })
-        .then((r) => r.json() as Promise<ObResult>)
-        .then(setResult)
+        .then((r) => {
+          // A guest whose free uses of the section are used up.
+          setGuestLimit(r.status === 403);
+          return r.status === 403 ? null : (r.json() as Promise<ObResult>);
+        })
+        .then((r) => setResult(r))
         .catch(() => {})
         .finally(() => setLoading(false));
-    }, 300);
+    }, 900);
     return () => {
       clearTimeout(timer);
       ctrl.abort();
@@ -60,6 +66,7 @@ export function OrangeBookSearch({ locale, iran = true }: { locale: Locale; iran
         </label>
       </div>
 
+      {guestLimit && q.length >= 3 && <GuestLimit locale={locale} />}
       <p className="min-h-5 text-sm text-muted" aria-live="polite">
         {q.length < 3
           ? t.minChars[locale]

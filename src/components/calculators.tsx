@@ -17,6 +17,9 @@ import { Cfu, Eli, F0, Gel, Lal, Sal, microDefaults } from "./calc/micro";
 import { Bsa, Crcl, Hed, Inf, Pk, clinicalDefaults } from "./calc/clinical";
 import { Ach, Cpk, Lodq, Samp, Yld, gmpDefaults } from "./calc/gmp";
 import { useUrlParam } from "@/lib/use-url-param";
+import { useGuestUse } from "@/lib/use-guest-use";
+import { account } from "@/content/account";
+import { GuestLimit } from "./guest-limit";
 
 
 /*
@@ -764,13 +767,32 @@ const defaults: Values = {
 };
 
 /** With `demo`, every calculator shows its worked example and nothing can be changed. */
-export function Calculators({ locale, demo = false }: { locale: Locale; demo?: boolean }) {
+export function Calculators({ locale, demo = false, guestLeft = 0 }: { locale: Locale; demo?: boolean; guestLeft?: number }) {
   // ?calc= (from the site search) opens that calculator.
   const urlCalc = useUrlParam("calc");
   const [picked, setActive] = useState<string | null>(null);
   const active = picked ?? (calculations.some((c) => c.key === urlCalc) ? urlCalc : "pot");
   const [values, setValues] = useState(defaults);
-  const ctx: Ctx = { locale, v: values, demo, set: demo ? () => {} : (k, val) => setValues((prev) => ({ ...prev, [k]: val })) };
+  // Guests may unlock a few calculators (one free use each) out of the worked-example mode.
+  const [unlocked, setUnlocked] = useState<Set<string>>(() => new Set());
+  const [left, setLeft] = useState(guestLeft);
+  const [limitHit, setLimitHit] = useState(false);
+  const claim = useGuestUse("tools");
+  const unlock = async (key: string) => {
+    const r = await claim(`calc:${key}`);
+    if (r.ok) {
+      setUnlocked((prev) => new Set(prev).add(key));
+      if (typeof r.left === "number") setLeft(r.left);
+    } else {
+      setLeft(0);
+      setLimitHit(true);
+    }
+  };
+  const update = (k: string, val: string) => setValues((prev) => ({ ...prev, [k]: val }));
+  const ctxFor = (key: string): Ctx => {
+    const locked = demo && !unlocked.has(key);
+    return { locale, v: values, demo: locked, set: locked ? () => {} : update };
+  };
 
   return (
     <div className="grid grid-cols-[minmax(0,1fr)] items-start gap-6 lg:grid-cols-[260px_minmax(0,1fr)]">
@@ -819,17 +841,31 @@ export function Calculators({ locale, demo = false }: { locale: Locale; demo?: b
         ))}
       </div>
 
-      <fieldset disabled={demo} className="m-0 min-w-0 border-0 p-0">
+      <div className="min-w-0">
         {calculations.map(({ key }) => {
           const Calc = components[key];
+          const locked = demo && !unlocked.has(key);
           return (
             // Panels stay mounted so each keeps its inputs when switching calculations.
             <div key={key} role="tabpanel" id={`panel-${key}`} aria-labelledby={`tab-${key}`} hidden={active !== key}>
-              <Calc ctx={ctx} />
+              {locked && guestLeft > 0 && (left > 0 ? (
+                <button
+                  type="button"
+                  onClick={() => unlock(key)}
+                  className="mb-4 w-full rounded-card border border-molecule-400/60 bg-molecule-50 px-4 py-3 text-sm font-bold text-molecule-700 transition hover:bg-molecule-100"
+                >
+                  {account.gate.guestUnlock[locale].replace("{n}", String(left)).replace("{total}", "3")}
+                </button>
+              ) : (
+                limitHit && <div className="mb-4"><GuestLimit locale={locale} /></div>
+              ))}
+              <fieldset disabled={locked} className="m-0 min-w-0 border-0 p-0">
+                <Calc ctx={ctxFor(key)} />
+              </fieldset>
             </div>
           );
         })}
-      </fieldset>
+      </div>
     </div>
   );
 }

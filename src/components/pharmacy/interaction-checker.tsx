@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
+import { useGuestGate } from "@/lib/use-guest-use";
+import { GuestLimit } from "@/components/guest-limit";
 import { useRouter } from "next/navigation";
 import { AlertTriangle, ArrowLeftRight, BookOpen, CheckCircle2, ClipboardCheck, ExternalLink, FlaskConical, Search, ShieldAlert, X } from "lucide-react";
 import { classNames, drugs, rules, type ClassId, type Drug, type Ref, type Severity } from "@/data/interactions";
@@ -313,6 +315,8 @@ export function InteractionChecker({ locale }: { locale: Locale }) {
   };
 
   const result = useMemo(() => checkAll(checked), [checked]);
+  // Guests: each new set of drugs is one free use of the pharmacy section.
+  const gate = useGuestGate("pharmacy", checked.length >= 2 ? `interactions:${checked.map((x) => x.id).sort().join(",")}` : null);
   const top = worst(result.pairs);
   const count = result.pairs.reduce((n, p) => n + p.rules.length, 0);
 
@@ -332,7 +336,9 @@ export function InteractionChecker({ locale }: { locale: Locale }) {
 
       {tried && checked.length < 2 && <p className="rounded-xl bg-paper px-4 py-3 text-sm text-muted">{t.needTwo[locale]}</p>}
 
-      {checked.length >= 2 && (
+      {checked.length >= 2 && gate === "blocked" && <GuestLimit locale={locale} />}
+
+      {checked.length >= 2 && gate === "open" && (
         <section aria-live="polite" className="space-y-6">
           {/* Summary */}
           <div className="relative overflow-hidden rounded-3xl bg-vault-900 p-6 text-white sm:p-8">

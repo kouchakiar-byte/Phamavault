@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { GuestLimit } from "@/components/guest-limit";
 import { Search } from "lucide-react";
 import { iranDrugs as t } from "@/content/pharmacy";
 import type { Locale } from "@/i18n/config";
@@ -29,7 +30,7 @@ function Title({ title }: { title: string }) {
 export function IranDrugSearch({ locale }: { locale: Locale }) {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<IranDrugResult | null>(null);
-  const [state, setState] = useState<"idle" | "loading" | "locked">("idle");
+  const [state, setState] = useState<"idle" | "loading" | "locked" | "guest">("idle");
   const [picked, setPicked] = useState<string | null>(null);
   const q = query.trim();
 
@@ -55,7 +56,10 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
     setState("loading");
     try {
       const res = await fetch(`/api/iran-drugs?q=${encodeURIComponent(q)}`);
-      if (res.status === 403) return setState("locked");
+      if (res.status === 403) {
+        const body = (await res.json().catch(() => ({}))) as { error?: string };
+        return setState(body.error === "guest" ? "guest" : "locked");
+      }
       setResult((await res.json()) as IranDrugResult);
       setPicked(null);
     } catch {
@@ -95,6 +99,7 @@ export function IranDrugSearch({ locale }: { locale: Locale }) {
       <div aria-live="polite" className="space-y-5">
         {state === "loading" && <p className="text-sm text-muted">{t.loading[locale]}</p>}
         {state === "locked" && <p className="rounded-xl bg-capsule-400/10 px-4 py-3 text-sm text-vault-900">{t.locked[locale]}</p>}
+        {state === "guest" && <GuestLimit locale={locale} />}
         {state === "idle" && message && <p className="rounded-xl bg-vault-50 px-4 py-3 text-sm text-ink">{message}</p>}
 
         {state === "idle" && options.length > 1 && (

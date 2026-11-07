@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { REF_CODE, REF_COOKIE } from "@/lib/ref-cookie";
+import { GUEST_COOKIE, GUEST_ID, PATH_HEADER } from "@/lib/guest-cookie";
 import excipients from "@/data/excipients.json";
 import sops from "@/data/sops.json";
 import { LOCALE_COOKIE, defaultLocale, hasLocale, type Locale } from "@/i18n/config";
@@ -106,12 +107,26 @@ function route(request: NextRequest): NextResponse | undefined {
 
 /** Referral links (?ref=code): the first code a visitor arrives with is kept for 30 days, until sign-up. */
 export function proxy(request: NextRequest) {
-  const response = route(request);
+  let response = route(request);
+  if (response && response.status >= 400) return response;
+  const secure = process.env.NODE_ENV === "production";
+  // Pages that pass straight through carry their path to the section gate, which counts a
+  // guest's free uses by page; a guest browser also gets a random id kept beside its IP.
+  let gid = request.cookies.get(GUEST_COOKIE)?.value;
+  const newGid = !gid || !GUEST_ID.test(gid) ? crypto.randomUUID().replace(/-/g, "") : null;
+  if (newGid) gid = newGid;
+  if (!response) {
+    const headers = new Headers(request.headers);
+    headers.set(PATH_HEADER, request.nextUrl.pathname);
+    if (newGid) headers.set("cookie", `${request.headers.get("cookie") ?? ""}; ${GUEST_COOKIE}=${newGid}`.replace(/^; /, ""));
+    response = NextResponse.next({ request: { headers } });
+  }
+  if (newGid) response.cookies.set(GUEST_COOKIE, newGid, { maxAge: 400 * 86_400, httpOnly: true, sameSite: "lax", secure, path: "/" });
   const ref = request.nextUrl.searchParams.get("ref")?.toLowerCase();
-  if (!ref || !REF_CODE.test(ref) || request.cookies.has(REF_COOKIE) || (response && response.status >= 400)) return response;
-  const out = response ?? NextResponse.next();
-  out.cookies.set(REF_COOKIE, ref, { maxAge: 30 * 86_400, httpOnly: true, sameSite: "lax", secure: process.env.NODE_ENV === "production", path: "/" });
-  return out;
+  if (ref && REF_CODE.test(ref) && !request.cookies.has(REF_COOKIE)) {
+    response.cookies.set(REF_COOKIE, ref, { maxAge: 30 * 86_400, httpOnly: true, sameSite: "lax", secure, path: "/" });
+  }
+  return response;
 }
 
 export const config = {

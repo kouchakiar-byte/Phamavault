@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useGuestGate, useSettled } from "@/lib/use-guest-use";
+import { GuestLimit } from "@/components/guest-limit";
 import { supplementRules, supplementsCopy as t } from "@/content/pharmacy-tools";
 import type { Locale } from "@/i18n/config";
 
@@ -15,6 +17,11 @@ const norm = (s: string) => s.toLowerCase().replace(/ي/g, "ی").replace(/ك/g, 
 export function SupplementInteractions({ locale }: { locale: Locale }) {
   const [q, setQ] = useState("");
   const query = norm(q);
+  // Guests: each settled search is one free use of the pharmacy section.
+  const settled = useSettled(query);
+  const gate = useGuestGate("pharmacy", settled.length >= 2 ? `supplements:${settled}` : null);
+  const waiting = query.length >= 2 && (settled !== query || gate === "pending");
+  const blocked = query.length >= 2 && !waiting && gate === "blocked";
   const rows = supplementRules.filter(
     (r) => !query || [r.supplement.fa, r.supplement.en, r.drugs.fa, r.drugs.en].some((s) => norm(s).includes(query)),
   );
@@ -24,9 +31,10 @@ export function SupplementInteractions({ locale }: { locale: Locale }) {
         {t.search[locale]}
         <input className="field-input mt-1" value={q} onChange={(e) => setQ(e.target.value)} placeholder={t.placeholder[locale]} />
       </label>
-      {rows.length === 0 && <p className="text-muted">{t.none[locale]}</p>}
+      {blocked && <GuestLimit locale={locale} />}
+      {!blocked && !waiting && rows.length === 0 && <p className="text-muted">{t.none[locale]}</p>}
       <div className="grid gap-3 lg:grid-cols-2">
-        {rows.map((r) => (
+        {(blocked || waiting ? [] : rows).map((r) => (
           <article key={r.id} className="rounded-card border border-line bg-white p-4 text-sm leading-7">
             <div className="flex items-start justify-between gap-3">
               <h3 className="font-bold text-vault-900">{r.supplement[locale]}</h3>
