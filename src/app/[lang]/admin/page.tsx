@@ -29,6 +29,7 @@ import { recentServiceRequests } from "@/lib/service-requests";
 import { alertDemand } from "@/lib/supplier-alerts";
 import { recentRewards } from "@/lib/referrals";
 import { guestStatsThisMonth } from "@/lib/guest-meter";
+import { iranDrugStats } from "@/lib/iran-drugs";
 import { isPaidSection } from "@/lib/pricing";
 import { getSection } from "@/content/sections";
 import { referralCopy } from "@/content/referrals";
@@ -46,6 +47,20 @@ const guestCopy = {
   visitors: bi("Visitors (IP)", "بازدیدکننده (IP)"),
   uses: bi("Uses", "تعداد استفاده"),
   exhausted: bi("Used all 3", "هر 3 بار را استفاده کرده"),
+};
+
+const iranCopy = {
+  title: bi("Iranian medicines: the site's own stored copy", "داروهای ایران: نسخه ذخیره‌شده خود سایت"),
+  lead: bi(
+    "Answers when the Iran FDA register is not reachable. It grows with every search, and each night with up to 40 generic names the site knows.",
+    "وقتی سامانه سازمان غذا و دارو در دسترس نیست، از این نسخه جواب داده می‌شود. با هر جست‌وجو و هر شب با حداکثر 40 نام ژنریک که سایت می‌شناسد بزرگ‌تر می‌شود.",
+  ),
+  products: bi("Products stored", "فرآورده ذخیره‌شده"),
+  generics: bi("Generics", "ژنریک"),
+  added: bi("Added in the last 7 days", "اضافه‌شده در 7 روز گذشته"),
+  searches: bi("Readers' searches stored", "جست‌وجوی ذخیره‌شده کاربران"),
+  seeded: bi("Nightly generic names asked", "نام ژنریک پرسیده‌شده در برنامه شبانه"),
+  newest: bi("Last renewed", "آخرین به‌روزرسانی"),
 };
 
 const requestLabels = {
@@ -79,7 +94,7 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
   if (!user) redirect(`${href(locale, "account/login")}?next=${encodeURIComponent(href(locale, "admin"))}`);
   if (!user.isAdmin) notFound();
 
-  const [numbers, orders, subscriptions, requests, users, mailLog, downloads, testPayments, query, meter, demand, rewards, guests] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats(), recentTestPayments(), searchParams, meteringThisMonth(), alertDemand().catch(() => []), recentRewards().catch(() => []), guestStatsThisMonth().catch(() => [])]);
+  const [numbers, orders, subscriptions, requests, users, mailLog, downloads, testPayments, query, meter, demand, rewards, guests, iranStore] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats(), recentTestPayments(), searchParams, meteringThisMonth(), alertDemand().catch(() => []), recentRewards().catch(() => []), guestStatsThisMonth().catch(() => []), iranDrugStats().catch(() => null)]);
   const mt = t.metering;
   const tp = t.testPayment;
   const u = t.usersList;
@@ -293,6 +308,29 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
           </div>
         )}
       </Panel>
+
+      {iranStore && (
+        <Panel title={iranCopy.title} locale={locale}>
+          <p className="mb-4 text-sm text-muted">{iranCopy.lead[locale]}</p>
+          <dl className="grid grid-cols-2 gap-4 text-sm sm:grid-cols-3">
+            {(
+              [
+                [iranCopy.products, formatNumber(iranStore.products, locale)],
+                [iranCopy.generics, formatNumber(iranStore.generics, locale)],
+                [iranCopy.added, formatNumber(iranStore.addedWeek, locale)],
+                [iranCopy.searches, formatNumber(iranStore.searches, locale)],
+                [iranCopy.seeded, `${formatNumber(iranStore.seeded, locale)} / ${formatNumber(iranStore.seedTotal, locale)}`],
+                [iranCopy.newest, iranStore.newest ? formatDate(iranStore.newest, locale) : "—"],
+              ] as const
+            ).map(([label, value]) => (
+              <div key={label.en} className="rounded-xl border border-line bg-paper p-3">
+                <dt className="text-xs text-muted">{label[locale]}</dt>
+                <dd className="mt-1 font-mono text-lg font-bold text-vault-900" dir="ltr">{value}</dd>
+              </div>
+            ))}
+          </dl>
+        </Panel>
+      )}
 
       <Panel title={referralCopy.adminTitle} locale={locale}>
         {rewards.length === 0 ? (

@@ -168,6 +168,12 @@ create table if not exists iran_drug_products (
   data jsonb not null,
   seen_at timestamptz not null default now()
 );
+alter table iran_drug_products add column if not exists first_seen timestamptz not null default now();
+create table if not exists iran_drug_seeded (
+  term text primary key,
+  found int not null default 0,
+  at timestamptz not null default now()
+);
 create table if not exists page_views (
   id bigserial primary key,
   at timestamptz not null default now(),
