@@ -7,6 +7,8 @@ import { LOCALE_COOKIE, defaultLocale, hasLocale, type Locale } from "@/i18n/con
 import { excipientSlug } from "@/lib/excipient-slug";
 import { isAiBot } from "@/lib/ai-bots";
 import { allow, clientIp } from "@/lib/rate-limit";
+import { isBlockedDevice } from "@/lib/blocked-devices";
+import { siteConfig } from "@/content/site";
 
 function preferredLocale(request: NextRequest): Locale {
   const cookie = request.cookies.get(LOCALE_COOKIE)?.value;
@@ -105,8 +107,28 @@ function route(request: NextRequest): NextResponse | undefined {
   }
 }
 
+/** What a browser of a blocked account gets instead of any page or API answer. */
+function blockedResponse(api: boolean): NextResponse {
+  if (api) return NextResponse.json({ error: "blocked" }, { status: 403, headers: { "Cache-Control": "no-store" } });
+  const html = `<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>PharmaVault</title></head>
+<body style="margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0b1f3a;color:#fff;font-family:Tahoma,sans-serif;text-align:center;padding:24px">
+<div><p style="font-size:20px;font-weight:bold;margin:0 0 12px">دسترسی این مرورگر به فارماوالت مسدود شده است.</p>
+<p style="margin:0 0 8px;opacity:.8">برای پیگیری با پشتیبانی تماس بگیرید: <bdi dir="ltr">${siteConfig.email}</bdi></p>
+<p dir="ltr" style="margin:24px 0 0;opacity:.6;font-size:14px">Access to PharmaVault from this browser has been blocked.</p></div></body></html>`;
+  return new NextResponse(html, { status: 403, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store", "X-Robots-Tag": "noindex" } });
+}
+
+/** API routes that stay open to every browser: scheduled jobs and the payment gateway's return. */
+const OPEN_API = /^\/api\/(cron|pay)(\/|$)/;
+
 /** Referral links (?ref=code): the first code a visitor arrives with is kept for 30 days, until sign-up. */
-export function proxy(request: NextRequest) {
+export async function proxy(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+  // Browsers of blocked accounts see nothing of the site, signed in or not, however they arrive.
+  if (!OPEN_API.test(pathname) && (await isBlockedDevice(request.cookies.get(GUEST_COOKIE)?.value))) {
+    return blockedResponse(pathname.startsWith("/api/"));
+  }
+  if (pathname.startsWith("/api/")) return NextResponse.next();
   let response = route(request);
   if (response && response.status >= 400) return response;
   const secure = process.env.NODE_ENV === "production";
@@ -131,5 +153,5 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   // Skip Next internals, metadata routes and any file with an extension.
-  matcher: ["/((?!_next|api|sitemap.xml|robots.txt|.*\\..*).*)"],
+  matcher: ["/((?!_next|api|sitemap.xml|robots.txt|.*\\..*).*)", "/api/:path*"],
 };

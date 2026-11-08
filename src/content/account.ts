@@ -394,8 +394,8 @@ export const account = {
         "حساب کاربری را بدون ثبت‌نام می‌سازد. شماره موبایل و رمز عبور را به شخص بدهید؛ اگر ایمیل وارد شود، خودش می‌تواند با «رمز عبور را فراموش کرده‌اید؟» رمز را تغییر دهد.",
       ),
       blockNote: bi(
-        "A blocked account cannot sign in and is signed out at once. Accounts with subscriptions or orders cannot be deleted; block them instead.",
-        "حساب مسدود نمی‌تواند وارد شود و بلافاصله از سایت خارج می‌شود. حساب‌هایی که اشتراک یا سفارش دارند حذف نمی‌شوند؛ آن‌ها را مسدود کنید.",
+        "A blocked account cannot sign in, and every browser it is signed in on, or tries to sign in from, can no longer open any page of the site (not even as a guest). Unblocking lifts both. Accounts with subscriptions or orders cannot be deleted; block them instead.",
+        "حساب مسدود نمی‌تواند وارد شود و هر مرورگری که با آن وارد شده یا تلاش به ورود کرده، دیگر هیچ صفحه‌ای از سایت را باز نمی‌کند (حتی به‌عنوان مهمان). رفع مسدودی هر دو را برمی‌دارد. حساب‌هایی که اشتراک یا سفارش دارند حذف نمی‌شوند؛ آن‌ها را مسدود کنید.",
       ),
     },
     orders: bi("Orders", "سفارش‌ها"),

@@ -24,6 +24,13 @@ create table if not exists sessions (
   expires_at timestamptz not null
 );
 create index if not exists sessions_user_idx on sessions(user_id);
+-- The browser (pv_gid cookie) of each session, so blocking an account can lock its browsers out.
+alter table sessions add column if not exists gid text;
+create table if not exists blocked_devices (
+  gid text primary key,
+  user_id bigint references users(id) on delete cascade,
+  created_at timestamptz not null default now()
+);
 -- Sign-up details: email (for password recovery), account kind and the company or pharmacy name.
 alter table users add column if not exists email text;
 alter table users add column if not exists kind text not null default 'individual';
