@@ -5,11 +5,16 @@
  * day, and caps how often it asks, so the public register is never loaded.
  * Every product the register returns is also kept in the database, so when the
  * register does not answer, any name found in that stored copy — the exact
- * search, a brand, a company or part of a title — is shown, with its date.
+ * search, a brand, a company or part of a title, written in English or
+ * Persian, under its US or international name, or with a small typo — is
+ * shown, with its date. Each night, besides renewing the most asked searches,
+ * the site asks for a few generic names it knows and has not stored yet, so
+ * the stored copy grows steadily without ever copying the register in bulk.
  * Server only.
  */
 
 import { databaseConfigured, db } from "./db";
+import { nearWords, seedTerms, spellings } from "./drug-names";
 import { ircGet } from "./irc-http";
 
 export const IRC_ORIGIN = "https://irc.fda.gov.ir";
@@ -75,18 +80,54 @@ async function storedResult(key: string): Promise<IranDrugResult | null> {
   }
 }
 
-/** Stored products whose titles, brands, companies or codes contain every word of the search. */
+/** Stored products whose search text contains, for every group, at least one of its spellings. */
+async function matchStored(groups: string[][]): Promise<{ data: IranDrug; seen_at: Date }[]> {
+  const params: string[] = [];
+  const where = groups
+    .map((alts) => `(${alts.map((a) => `strpos(search, $${params.push(a)}) > 0`).join(" or ")})`)
+    .join(" and ");
+  const { rows } = await (await db()).query<{ data: IranDrug; seen_at: Date }>(
+    `select data, seen_at from iran_drug_products where ${where} order by seen_at desc limit 500`,
+    params,
+  );
+  return rows;
+}
+
+/** Every word in the stored copy, renewed every 6 hours: what a mistyped search word is checked against. */
+let vocabulary: { at: number; words: Promise<string[]> } | undefined;
+const storedWords = () => {
+  if (!vocabulary || Date.now() - vocabulary.at > 6 * 3600_000) {
+    vocabulary = {
+      at: Date.now(),
+      words: db()
+        .then((pool) =>
+          pool.query<{ w: string }>(
+            String.raw`select distinct w from iran_drug_products, regexp_split_to_table(search, '[\s|()/,+\-]+') w where length(w) >= 3`,
+          ),
+        )
+        .then((r) => r.rows.map((row) => row.w))
+        .catch(() => []),
+    };
+  }
+  return vocabulary.words;
+};
+
+/**
+ * Stored products that match every word of the search, in any of its known
+ * spellings (English or Persian name, US or international name); failing that,
+ * with each word also matched to stored words one typo away.
+ */
 async function storedProducts(base: IranDrugResult): Promise<IranDrugResult | null> {
   if (!databaseConfigured()) return null;
   const terms = fold(base.term).split(" ").filter((w) => w.length >= 2).slice(0, 5);
   if (!terms.length) return null;
   try {
-    const { rows } = await (await db()).query<{ data: IranDrug; seen_at: Date }>(
-      `select data, seen_at from iran_drug_products
-       where ${terms.map((_, i) => `strpos(search, $${i + 1}) > 0`).join(" and ")}
-       order by seen_at desc limit 500`,
-      terms,
-    );
+    let rows = await matchStored(terms.map(spellings));
+    if (!rows.length) {
+      const words = await storedWords();
+      const groups = terms.map((w) => [...new Set([...spellings(w), ...spellings(w).flatMap((s) => nearWords(s, words))])]);
+      if (groups.some((g, i) => g.length > spellings(terms[i]).length)) rows = await matchStored(groups);
+    }
     if (!rows.length) return null;
     const generics = groupByGeneric(rows.map((r) => r.data));
     const newest = rows.reduce((t, r) => Math.max(t, new Date(r.seen_at).getTime()), 0);
@@ -96,14 +137,15 @@ async function storedProducts(base: IranDrugResult): Promise<IranDrugResult | nu
   }
 }
 
-async function storeResult(key: string, result: IranDrugResult): Promise<void> {
+/** Stores an answer; `asked` is 0 for the nightly generic names, so they do not count as readers' searches. */
+async function storeResult(key: string, result: IranDrugResult, asked = 1): Promise<void> {
   if (!databaseConfigured()) return;
   const pool = await db();
   await pool
     .query(
-      `insert into iran_drug_cache (term, result, fetched_at, asked) values ($1, $2, now(), 1)
-       on conflict (term) do update set result = excluded.result, fetched_at = now(), asked = iran_drug_cache.asked + 1`,
-      [key, JSON.stringify(result)],
+      `insert into iran_drug_cache (term, result, fetched_at, asked) values ($1, $2, now(), $3)
+       on conflict (term) do update set result = excluded.result, fetched_at = now(), asked = iran_drug_cache.asked + $3`,
+      [key, JSON.stringify(result), asked],
     )
     .catch((error) => console.error("iran drug cache write failed", error));
   await storeProducts(result);
@@ -333,13 +375,13 @@ export async function fetchIrcPage(term: string, page = 1): Promise<string> {
   return res.body;
 }
 
-export async function searchIranDrugs(raw: string): Promise<IranDrugResult> {
+export async function searchIranDrugs(raw: string, { count = true }: { count?: boolean } = {}): Promise<IranDrugResult> {
   const term = raw.trim().replace(/\s+/g, " ").slice(0, 60);
   const key = term.toLowerCase();
   const base = { term, generics: [], total: 0, fetchedAt: new Date().toISOString(), source: ircSearchUrl(term) };
   if (term.length < 3) return { ...base, status: "empty" };
 
-  asked.set(key, (asked.get(key) ?? 0) + 1);
+  if (count) asked.set(key, (asked.get(key) ?? 0) + 1);
   const hit = cache.get(key);
   // Answers are renewed daily at 18:00 Tehran time, together with the rest of the catalog.
   if (hit && hit.at >= lastDailyUpdate()) return hit.result;
@@ -372,23 +414,45 @@ export async function searchIranDrugs(raw: string): Promise<IranDrugResult> {
   if (result.status !== "unreadable") {
     if (cache.size > 1000) cache.delete(cache.keys().next().value!);
     cache.set(key, { at: Date.now(), result });
-    if (result.status === "ok") await storeResult(key, result);
+    if (result.status === "ok") await storeResult(key, result, count ? 1 : 0);
   } else {
     return fallback(key, hit?.result, result);
   }
   return result;
 }
 
+/** How many nightly generic names are left: [asked so far, all the site knows]. */
+async function seedProgress(): Promise<[number, number]> {
+  const all = seedTerms();
+  if (!databaseConfigured()) return [0, all.length];
+  const { rows } = await (await db()).query<{ n: number }>("select count(*)::int as n from iran_drug_seeded where term = any($1)", [all]);
+  return [rows[0]?.n ?? 0, all.length];
+}
+
+/** Generic names the site knows that were never asked for, in order, up to `limit`. */
+async function unseeded(limit: number): Promise<string[]> {
+  const all = seedTerms();
+  const { rows } = await (await db()).query<{ term: string }>(
+    `select t as term from unnest($1::text[]) with ordinality u(t, i)
+     where not exists (select 1 from iran_drug_seeded s where s.term = u.t)
+       and not exists (select 1 from iran_drug_cache c where c.term = u.t)
+     order by i limit $2`,
+    [all, limit],
+  );
+  return rows.map((r) => r.term);
+}
+
 /**
  * The daily 18:00 refresh: renews the answers of the most asked terms (up to
- * 60) and with them the stored products, one request every 4 seconds so the
- * register is never loaded.
+ * 60) and with them the stored products, then asks for up to 40 generic names
+ * the site knows and has not stored yet. One request every 4 seconds, so the
+ * register is never loaded; it stops as soon as the register stops answering.
  */
-export async function refreshIranDrugs(limit = 60): Promise<number> {
+export async function refreshIranDrugs(limit = 60, seeds = 40): Promise<number> {
   const terms = [...asked.entries()].sort((a, b) => b[1] - a[1]).slice(0, limit).map(([t]) => t);
   if (terms.length < limit && databaseConfigured()) {
     const { rows } = await (await db())
-      .query<{ term: string }>("select term from iran_drug_cache order by asked desc limit $1", [limit])
+      .query<{ term: string }>("select term from iran_drug_cache where asked > 0 order by asked desc limit $1", [limit])
       .catch(() => ({ rows: [] as { term: string }[] }));
     for (const r of rows) if (terms.length < limit && !terms.includes(r.term)) terms.push(r.term);
   }
@@ -397,10 +461,51 @@ export async function refreshIranDrugs(limit = 60): Promise<number> {
     const hit = cache.get(term);
     if (hit && hit.at >= lastDailyUpdate()) continue;
     await new Promise((r) => setTimeout(r, 4_000));
-    const result = await searchIranDrugs(term);
+    const result = await searchIranDrugs(term, { count: false });
     // The register stopped answering: the stored copy stays as it is until the next day.
-    if (result.stored || result.status === "unavailable") break;
+    if (result.stored || result.status === "unavailable") return renewed;
     if (result.status === "ok" || result.status === "empty") renewed++;
   }
+  if (!databaseConfigured() || seeds <= 0) return renewed;
+  for (const term of await unseeded(seeds).catch(() => [])) {
+    await new Promise((r) => setTimeout(r, 4_000));
+    const result = await searchIranDrugs(term, { count: false });
+    if (result.stored || result.status === "unavailable") break;
+    if (result.status === "unreadable") continue;
+    await (await db())
+      .query("insert into iran_drug_seeded (term, found) values ($1, $2) on conflict (term) do update set found = excluded.found, at = now()", [term, result.total])
+      .catch((error) => console.error("iran drug seed write failed", error));
+    renewed++;
+  }
   return renewed;
+}
+
+export type IranDrugStats = {
+  products: number;
+  generics: number;
+  searches: number;
+  /** Products first stored in the last 7 days. */
+  addedWeek: number;
+  newest: Date | null;
+  seeded: number;
+  seedTotal: number;
+};
+
+/** Size of the stored copy, for the admin page. */
+export async function iranDrugStats(): Promise<IranDrugStats | null> {
+  if (!databaseConfigured()) return null;
+  const pool = await db();
+  const [{ rows }, cacheRows, [seeded, seedTotal]] = await Promise.all([
+    pool.query<{ products: number; generics: number; added: number; newest: Date | null }>(
+      `select count(*)::int as products,
+              count(distinct nullif(data->>'genericCode', ''))::int as generics,
+              count(*) filter (where first_seen > now() - interval '7 days')::int as added,
+              max(seen_at) as newest
+       from iran_drug_products`,
+    ),
+    pool.query<{ n: number }>("select count(*)::int as n from iran_drug_cache where asked > 0"),
+    seedProgress(),
+  ]);
+  const r = rows[0];
+  return { products: r.products, generics: r.generics, searches: cacheRows.rows[0].n, addedWeek: r.added, newest: r.newest, seeded, seedTotal };
 }

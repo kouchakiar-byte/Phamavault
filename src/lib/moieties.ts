@@ -5,7 +5,7 @@
  */
 
 /** US (USAN) names that Iran lists under the international (INN) name. */
-const INN: Record<string, string> = {
+export const INN: Record<string, string> = {
   GLYBURIDE: "GLIBENCLAMIDE",
   ACETAMINOPHEN: "PARACETAMOL",
   ALBUTEROL: "SALBUTAMOL",
