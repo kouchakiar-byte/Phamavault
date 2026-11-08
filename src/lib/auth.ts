@@ -3,6 +3,8 @@ import { promisify } from "node:util";
 import { cache } from "react";
 import { cookies, headers } from "next/headers";
 import { databaseConfigured, db } from "./db";
+import { markBlockedDevice } from "./blocked-devices";
+import { GUEST_COOKIE } from "./guest-cookie";
 
 const scryptAsync = promisify(scrypt) as (password: string, salt: Buffer, keylen: number) => Promise<Buffer>;
 
@@ -62,12 +64,13 @@ async function clientInfo() {
 export async function startSession(userId: string): Promise<void> {
   const token = randomBytes(32).toString("base64url");
   const { ip, userAgent, secure } = await clientInfo();
+  const gid = (await cookies()).get(GUEST_COOKIE)?.value ?? null;
   const pool = await db();
   await pool.query("delete from sessions where user_id = $1", [userId]);
   await pool.query(
-    `insert into sessions (token_hash, user_id, ip, user_agent, expires_at)
-     values ($1, $2, $3, $4, now() + make_interval(days => $5))`,
-    [sha256(token), userId, ip, userAgent, SESSION_DAYS],
+    `insert into sessions (token_hash, user_id, ip, user_agent, expires_at, gid)
+     values ($1, $2, $3, $4, now() + make_interval(days => $5), $6)`,
+    [sha256(token), userId, ip, userAgent, SESSION_DAYS, gid],
   );
   (await cookies()).set(SESSION_COOKIE, token, {
     httpOnly: true,
@@ -91,13 +94,19 @@ export async function endSession(): Promise<void> {
 export const getUser = cache(async (): Promise<User | null> => {
   const token = (await cookies()).get(SESSION_COOKIE)?.value;
   if (!token || !databaseConfigured()) return null;
-  const { rows } = await (await db()).query<{ id: string; mobile: string; name: string }>(
-    `select u.id, u.mobile, u.name from sessions s join users u on u.id = s.user_id
-     where s.token_hash = $1 and s.expires_at > now() and not u.blocked`,
+  const { rows } = await (await db()).query<{ id: string; mobile: string; name: string; blocked: boolean }>(
+    `select u.id, u.mobile, u.name, u.blocked from sessions s join users u on u.id = s.user_id
+     where s.token_hash = $1 and s.expires_at > now()`,
     [sha256(token)],
   );
   const row = rows[0];
-  return row ? { ...row, isAdmin: isAdminMobile(row.mobile) } : null;
+  if (!row) return null;
+  if (row.blocked) {
+    // A blocked account still holding a session: lock this browser out of the whole site.
+    await markBlockedDevice((await cookies()).get(GUEST_COOKIE)?.value, row.id);
+    return null;
+  }
+  return { id: row.id, mobile: row.mobile, name: row.name, isAdmin: isAdminMobile(row.mobile) };
 });
 
 export type LoginResult = "ok" | "invalid" | "locked" | "blocked";
@@ -115,7 +124,10 @@ export async function checkLogin(mobile: string, password: string): Promise<{ re
     await hashPassword(password);
     return { result: "invalid" };
   }
-  if (user.blocked) return { result: "blocked" };
+  if (user.blocked) {
+    await markBlockedDevice((await cookies()).get(GUEST_COOKIE)?.value, user.id);
+    return { result: "blocked" };
+  }
   if (user.locked) return { result: "locked" };
   if (!(await verifyPassword(password, user.password_hash))) {
     await pool.query(

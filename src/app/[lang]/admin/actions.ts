@@ -143,7 +143,18 @@ export async function setBlocked(form: FormData): Promise<void> {
   const pool = await db();
   const admins = (process.env.ADMIN_MOBILES ?? "").split(/[,\s]+/).map(normalizeMobile).filter(Boolean);
   await pool.query("update users set blocked = $2 where id = $1 and not (mobile = any($3::text[]))", [userId, blocked, admins]);
-  if (blocked) await pool.query("delete from sessions where user_id = $1", [userId]);
+  if (blocked) {
+    // Lock out the browsers the account is signed in on. Its sessions are kept but no longer sign
+    // anyone in (see getUser); a browser that still presents one is locked out on its next visit.
+    await pool.query(
+      `insert into blocked_devices (gid, user_id)
+       select gid, user_id from sessions where user_id = $1 and gid is not null
+       on conflict (gid) do nothing`,
+      [userId],
+    );
+  } else {
+    await pool.query("delete from blocked_devices where user_id = $1", [userId]);
+  }
   refresh();
 }
 
