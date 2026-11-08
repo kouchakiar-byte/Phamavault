@@ -7135,7 +7135,6 @@
    "src": "https://cppsynd.com/",
    "p": [
     "هوبر دارو گستر|Hoober Darou Gostar",
-    "مهرسام دارو|Mehrsam Darou",
     "شیمی دارویی شاری|Shari",
     "باران|Baran"
    ]
@@ -8624,11 +8623,11 @@
    "c": [
     "exc"
    ],
-   "prov": "نامشخص",
-   "city": "—",
+   "prov": "خراسان رضوی",
+   "city": "جوین (ایستگاه نقاب)",
    "tel": [],
    "partial": 1,
-   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
+   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536 واحد اسید سیتریک شرکت کشت و صنعت جوین با ظرفیت سالانه 20,000 تن، در ایستگاه نقاب (خراسان رضوی) طبق پروفایل EMIS.",
    "src": "https://cppsynd.com/محصولات/",
    "p": [
     "اسید سیتریک|Citric acid"
@@ -8656,42 +8655,6 @@
     "ریلوزول|Riluzole",
     "سوفوسبوویر|Sofosbuvir",
     "وونوپرازان فومارات|Vonoprazan fumarate"
-   ]
-  },
-  {
-   "n": "شتاب دهنده ماد",
-   "e": "Shetab Dahandeh Mad",
-   "t": "m",
-   "c": [
-    "api"
-   ],
-   "prov": "نامشخص",
-   "city": "—",
-   "tel": [],
-   "partial": 1,
-   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
-   "src": "https://cppsynd.com/محصولات/",
-   "p": [
-    "دورزولامید|Dorzolamide",
-    "سولیفناسین سوکسینات|Solifenacin succinate"
-   ]
-  },
-  {
-   "n": "شیمی درمان اندیشه",
-   "e": "Shimi Darman Andisheh",
-   "t": "m",
-   "c": [
-    "lab"
-   ],
-   "prov": "نامشخص",
-   "city": "—",
-   "tel": [],
-   "partial": 1,
-   "note": "عضو سندیکای تولیدکنندگان مواد موثره دارویی؛ اطلاعات تماس در فهرست سندیکا (مهر 1405) ثبت نشده است. تلفن سندیکا: 021-65012536",
-   "src": "https://cppsynd.com/محصولات/",
-   "p": [
-    "رفرنس استاندارد های دارویی|",
-    "ورکینگ استاندارد های دارویی|"
    ]
   },
   {
@@ -9037,50 +9000,6 @@
    "via": 1
   },
   {
-   "n": "بهرام (Baharam)",
-   "e": "Baharam",
-   "t": "t",
-   "c": [
-    "exc"
-   ],
-   "prov": "تهران",
-   "city": "تهران",
-   "tel": [],
-   "addr": "تهران، بلوار میرداماد",
-   "src": "https://pharmaoffer.com/api-excipient-supplier/company/baharam",
-   "note": "شناسایی‌شده در جستجوی وب (آبان 1405)؛ فهرست Pharmaoffer؛ تلفن و نام فارسی دقیق در منبع نبود.",
-   "p": [
-    "کتیرا|Tragacanth"
-   ],
-   "via": 1,
-   "partial": 1
-  },
-  {
-   "n": "شرکت Takdasht",
-   "e": "Takdasht Co.",
-   "t": "t",
-   "c": [
-    "exc",
-    "api",
-    "vit",
-    "sup"
-   ],
-   "prov": "تهران",
-   "city": "تهران",
-   "tel": [],
-   "src": "https://www.pharmacompass.com/contact-details-takdasht-co",
-   "note": "شناسایی‌شده در جستجوی وب (آبان 1405)؛ بازرگانی مواد اولیه دارویی، آرایشی و غذایی از 1996 طبق PharmaCompass؛ تلفن، نشانی و سایت رسمی در منبع نبود.",
-   "p": [
-    "مواد جانبی دارویی|Pharmaceutical excipients",
-    "مواد مؤثره دارویی|Active pharmaceutical ingredients|API",
-    "ویتامین‌ها|Vitamins",
-    "آمینواسیدها|Amino acids",
-    "عصاره و اسانس گیاهی|Herbal extracts and essential oils"
-   ],
-   "via": 1,
-   "partial": 1
-  },
-  {
    "n": "بازرگانی صباحی (Sabahi Enterprises)",
    "e": "Sabahi Enterprises Co.",
    "t": "t",
@@ -9104,35 +9023,6 @@
    ],
    "addr": "تهران، خیابان خرمشهر، شماره 142، ساختمان صباحی",
    "mail": "info@sabahi.com"
-  },
-  {
-   "n": "دانش کیمیا فارمد (DAKPHA)",
-   "e": "Danesh Kimia Pharmed",
-   "t": "m",
-   "c": [
-    "api"
-   ],
-   "prov": "تهران",
-   "city": "تهران",
-   "tel": [
-    "021-22072571"
-   ],
-   "src": "https://www.pharmacompass.com/pharma-services/api-manufacturing-services/danesh-kimia-pharmed",
-   "note": "تولیدکننده API، Intermediate و فرآورده نهایی از 2011 طبق پروفایل شرکت در PharmaCompass؛ تلفن و نشانی از همان پروفایل (منبع دیگری شماره متفاوتی ذکر کرده است؛ پیش از تماس تأیید شود). دامنه dakpha.com در آبان 1405 به سایت این شرکت تعلق نداشت.",
-   "p": [
-    "آپیکسابان|Apixaban",
-    "ایماتینیب مزیلات|Imatinib mesylate",
-    "سونیتینیب|Sunitinib",
-    "امپاگلیفلوزین|Empagliflozin",
-    "داپاگلیفلوزین|Dapagliflozin",
-    "ارلوتینیب|Erlotinib",
-    "کدئین فسفات|Codeine phosphate",
-    "بوپرنورفین هیدروکلراید|Buprenorphine hydrochloride",
-    "اکسی‌کدون هیدروکلراید|Oxycodone hydrochloride"
-   ],
-   "via": 1,
-   "partial": 1,
-   "addr": "تهران، بزرگراه یادگار امام، بلوار ایثارگران، کوچه البرز یکم، پلاک 4"
   },
   {
    "n": "ره‌آوران نیکو روش (RNR Lab)",
