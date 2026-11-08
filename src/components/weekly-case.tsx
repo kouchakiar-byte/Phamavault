@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import Link from "next/link";
 import { connection } from "next/server";
-import { ArrowLeft, ArrowRight, CircleAlert, ListChecks, Search } from "lucide-react";
+import { ArrowLeft, ArrowRight, CircleAlert, Cog, ListChecks, Search, ShieldCheck } from "lucide-react";
 import { weeklyCaseCopy as t, weeklyCaseIndex, weeklyCases } from "@/content/weekly-cases";
 import type { Locale } from "@/i18n/config";
 import { isolateText } from "@/lib/bidi";
@@ -10,7 +10,7 @@ import { href } from "@/lib/paths";
 /** The home page's case of the week; which case shows depends on today's date, so it is read per request. */
 export function WeeklyCase({ locale }: { locale: Locale }) {
   return (
-    <Suspense fallback={<div className="min-h-[28rem] rounded-card border border-line bg-paper" aria-busy="true" />}>
+    <Suspense fallback={<div className="min-h-[40rem] rounded-card border border-line bg-paper" aria-busy="true" />}>
       <Card locale={locale} />
     </Suspense>
   );
@@ -42,6 +42,13 @@ async function Card({ locale }: { locale: Locale }) {
             </p>
             <p className="mt-2 leading-relaxed text-white/90">{say(c.symptom[locale])}</p>
           </div>
+          <div className="mt-4 rounded-2xl border border-molecule-400/20 bg-molecule-500/10 p-4">
+            <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-molecule-400">
+              <Cog className="size-4" aria-hidden="true" />
+              {t.mechanism[locale]}
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-white/85">{say(c.mechanism[locale])}</p>
+          </div>
           <p className="mt-5 text-xs text-white/50">
             {t.refs[locale]}: <bdi dir="ltr" className="font-mono">{c.refs}</bdi>
           </p>
@@ -51,16 +58,17 @@ async function Card({ locale }: { locale: Locale }) {
             [
               [t.causes, c.causes, Search],
               [t.checks, c.checks, ListChecks],
+              [t.actions, c.actions, ShieldCheck],
             ] as const
-          ).map(([label, items, Icon]) => (
-            <div key={label.en} className="rounded-2xl bg-white p-5 text-ink">
+          ).map(([label, items, Icon], k) => (
+            <div key={label.en} className={`rounded-2xl bg-white p-5 text-ink${k === 2 ? " sm:col-span-2" : ""}`}>
               <p className="flex items-center gap-2 text-sm font-bold text-vault-900">
                 <Icon className="size-4 text-molecule-600" aria-hidden="true" />
                 {label[locale]}
               </p>
-              <ol className="mt-3 space-y-3 text-sm leading-relaxed">
+              <ol className="mt-3 space-y-2.5 text-sm leading-relaxed sm:space-y-3">
                 {items.map((item, n) => (
-                  <li key={n} className={`${n > 1 ? "hidden sm:flex" : "flex"} gap-3`}>
+                  <li key={n} className="flex gap-3">
                     <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-molecule-50 font-mono text-[11px] font-bold text-molecule-700">{n + 1}</span>
                     <span>{say(item[locale])}</span>
                   </li>
