@@ -2402,17 +2402,21 @@
    "prov": "آذربایجان شرقی",
    "city": "تبریز",
    "tel": [
-    "041-36300592",
-    "021-88540626"
+    "041-36300586 تا 90 (کارخانه)",
+    "021-88540626 تا 33 (دفتر مرکزی)"
    ],
-   "note": "فهرست محصول در منبع نیامده است؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
-   "src": "https://cppsynd.com/",
+   "note": "تولیدکننده API آنتی‌بیوتیک‌های بتالاکتام (پنی‌سیلین‌ها و سفالوسپورین‌های خوراکی و تزریقی) در پنج واحد مستقل؛ از Iranian Pharmaceutical Companies Directory 2024 (سندیکای صنایع دارویی ایران؛ اطلاعات را خود شرکت‌ها ثبت کرده‌اند). محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
+   "src": "https://ticaret.gov.tr/data/620ccbd713b87642c457ec20/Iranain%20Pharmaceutical2024%20%20ompanies%20DIrectory_240308_082255.pdf",
    "p": [
+    "آنتی‌بیوتیک‌های بتالاکتام خوراکی و تزریقی (پنی‌سیلین‌ها و سفالوسپورین‌ها)|Oral and injectable beta-lactam antibiotics (penicillins and cephalosporins)|API",
     "آموکسی سیلین|Amoxicillin",
     "پودر پتاسیم کلاونات|Potassium Clavulanate Powder",
     "پودر سفالکسین|Cephalexin powder",
     "پودر سفکسیم|Cefixime powder"
-   ]
+   ],
+   "web": "https://www.daanapharma.com",
+   "mail": "Office@daanapharma.com",
+   "addr": "کارخانه: کیلومتر 15 جاده تهران–تبریز، تبریز؛ دفتر مرکزی: تهران، خیابان قائم‌مقام، کوچه ششم، پلاک 3"
   },
   {
    "n": "اکتوورکو",
@@ -9111,17 +9115,19 @@
    ],
    "prov": "تهران",
    "city": "تهران",
-   "tel": [],
+   "tel": [
+    "021-88740680 تا 9"
+   ],
    "web": "https://sabahi.com",
-   "src": "https://www.pharmacompass.com/api-manufacturers/sabahi-enterprises-co",
-   "note": "شناسایی‌شده در جستجوی وب (آبان 1405)؛ نماینده انحصاری تأمین‌کنندگان بین‌المللی از 1980، تأمین مواد اولیه، بسته‌بندی و ماشین‌آلات برای صنعت دارو طبق PharmaCompass؛ دامنه sabahi.com طبق village.ai؛ تلفن و نشانی در منبع نبود.",
+   "src": "https://sabahi.com/contact/",
+   "note": "نماینده انحصاری تأمین‌کنندگان خارجی از 1980؛ در صنعت دارو، تأمین مواد اولیه، اقلام بسته‌بندی و ماشین‌آلات. اطلاعات تماس از سایت رسمی شرکت (آبان 1405).",
    "p": [
     "مواد اولیه دارویی|Pharmaceutical raw materials",
     "مواد جانبی دارویی|Pharmaceutical excipients",
     "مواد بسته‌بندی دارویی|Pharmaceutical packaging materials"
    ],
-   "via": 1,
-   "partial": 1
+   "addr": "تهران، خیابان خرمشهر، شماره 142، ساختمان صباحی",
+   "mail": "info@sabahi.com"
   },
   {
    "n": "دانش کیمیا فارمد (DAKPHA)",
@@ -9130,11 +9136,13 @@
    "c": [
     "api"
    ],
-   "prov": "نامشخص",
-   "city": "نامشخص",
-   "tel": [],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22072571"
+   ],
    "src": "https://www.pharmacompass.com/pharma-services/api-manufacturing-services/danesh-kimia-pharmed",
-   "note": "شناسایی‌شده در جستجوی وب (آبان 1405)؛ تولیدکننده API، Intermediate و فرآورده نهایی از 2011 طبق پروفایل شرکت؛ فهرست محصولات از PharmaCompass (وضعیت GMP در منبع تأیید نشده)؛ تلفن، نشانی و سایت در منبع نبود.",
+   "note": "تولیدکننده API، Intermediate و فرآورده نهایی از 2011 طبق پروفایل شرکت در PharmaCompass؛ تلفن و نشانی از همان پروفایل (منبع دیگری شماره متفاوتی ذکر کرده است؛ پیش از تماس تأیید شود). دامنه dakpha.com در آبان 1405 به سایت این شرکت تعلق نداشت.",
    "p": [
     "آپیکسابان|Apixaban",
     "ایماتینیب مزیلات|Imatinib mesylate",
@@ -9147,7 +9155,8 @@
     "اکسی‌کدون هیدروکلراید|Oxycodone hydrochloride"
    ],
    "via": 1,
-   "partial": 1
+   "partial": 1,
+   "addr": "تهران، بزرگراه یادگار امام، بلوار ایثارگران، کوچه البرز یکم، پلاک 4"
   },
   {
    "n": "ره‌آوران نیکو روش (RNR Lab)",
@@ -11199,6 +11208,84 @@
     "شیشه‌آلات و لوازم آزمایشگاهی|Laboratory glassware and supplies"
    ],
    "hi": 1
+  },
+  {
+   "n": "پویش دارو",
+   "e": "Pooyesh Darou Biopharmaceutical",
+   "t": "m",
+   "c": [
+    "bio"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88987248"
+   ],
+   "addr": "دفتر مرکزی: تهران، خیابان فاطمی، خیابان پنجم، پلاک 13؛ کارخانه: پارک فناوری پردیس، کیلومتر 20 جاده دماوند، نوآوری 18",
+   "mail": "Info@pooyeshdarou.com",
+   "web": "https://www.pooyeshdarou.com",
+   "src": "https://ticaret.gov.tr/data/620ccbd713b87642c457ec20/Iranain%20Pharmaceutical2024%20%20ompanies%20DIrectory_240308_082255.pdf",
+   "note": "تأسیس 1376 با همکاری ICGEB و دانشکده داروسازی دانشگاه علوم پزشکی تهران؛ خط تولید API پروتئین نوترکیب از کشت باکتریایی (E. coli) و سلول پستانداران (CHO)، و خطوط پرکردن آمپول، ویال، کارتریج و سرنگ آماده. از Iranian Pharmaceutical Companies Directory 2024 (سندیکای صنایع دارویی ایران؛ اطلاعات را خود شرکت‌ها ثبت کرده‌اند).",
+   "p": [
+    "فیلگراستیم|Filgrastim",
+    "پگ فیلگراستیم|Pegfilgrastim",
+    "اریتروپویتین آلفا|Epoetin alfa",
+    "اینترفرون آلفا 2b|Interferon alfa-2b",
+    "پگ اینترفرون آلفا 2a|Peginterferon alfa-2a",
+    "انوکساپارین سدیم|Enoxaparin sodium",
+    "انسولین گلارژین|Insulin glargine",
+    "انسولین آسپارت|Insulin aspart",
+    "سوماتروپین|Somatropin",
+    "گنادوتروپین جفتی انسانی|Human chorionic gonadotropin",
+    "گنادوتروپین یائسگی انسانی|Human menopausal gonadotropin",
+    "اوروفولیتروپین|Urofollitropin",
+    "ستروروليکس|Cetrorelix",
+    "اگزناتاید|Exenatide",
+    "لیراگلوتاید|Liraglutide"
+   ]
+  },
+  {
+   "n": "نوآوری زیستی گویا (اینوکلون)",
+   "e": "Gooya Innovative Biotech (INOCLON)",
+   "t": "m",
+   "c": [
+    "lab",
+    "bio"
+   ],
+   "prov": "البرز",
+   "city": "شهرک صنعتی بهارستان",
+   "tel": [
+    "026-34762100"
+   ],
+   "addr": "البرز، شهرک صنعتی بهارستان، خیابان گلستان نهم، پلاک 241؛ دفتر: تهران، بلوار ابوذر، ساختمان جام، پلاک 1",
+   "mail": "info@inoclon.com",
+   "web": "https://www.inoclon.com",
+   "src": "https://ticaret.gov.tr/data/620ccbd713b87642c457ec20/Iranain%20Pharmaceutical2024%20%20ompanies%20DIrectory_240308_082255.pdf",
+   "note": "دانش‌بنیان، فعال از 1386 با برند INOCLON؛ خط تولید آسپتیک محیط کشت سلولی، دارای ISO 9001 و ISO 13485. تلفن در منبع به شکل قدیمی 0261-4762100 آمده است. از Iranian Pharmaceutical Companies Directory 2024 (سندیکای صنایع دارویی ایران؛ اطلاعات را خود شرکت‌ها ثبت کرده‌اند).",
+   "p": [
+    "محیط کشت سلولی|Cell culture media"
+   ]
+  },
+  {
+   "n": "وانا دارو گستر",
+   "e": "Vana Darou Gostar",
+   "t": "t",
+   "c": [
+    "api"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-41165000"
+   ],
+   "addr": "تهران، خیابان شهید بهشتی، خیابان قنبرزاده، خیابان هویزه غربی، پلاک 178، طبقه چهارم",
+   "mail": "info@vdgco.ir",
+   "web": "https://www.vanadarou.com",
+   "src": "https://ticaret.gov.tr/data/620ccbd713b87642c457ec20/Iranain%20Pharmaceutical2024%20%20ompanies%20DIrectory_240308_082255.pdf",
+   "note": "عضو هلدینگ تهران شیمی؛ واردات API از Hetero Labs و MSN Laboratories طبق معرفی خود شرکت. از Iranian Pharmaceutical Companies Directory 2024 (سندیکای صنایع دارویی ایران؛ اطلاعات را خود شرکت‌ها ثبت کرده‌اند).",
+   "p": [
+    "مواد مؤثره دارویی (واردات)|Active pharmaceutical ingredients (import)|API"
+   ]
   }
  ],
  "provinceOrder": [

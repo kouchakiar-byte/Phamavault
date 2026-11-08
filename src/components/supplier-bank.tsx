@@ -290,7 +290,7 @@ function PhoneLine({ tel, locale }: { tel: string; locale: Locale }) {
       <button
         type="button"
         onClick={() =>
-          navigator.clipboard?.writeText(tel.replace(/[^\d]/g, "")).then(() => {
+          navigator.clipboard?.writeText(number.replace(/[^\d]/g, "")).then(() => {
             setCopied(true);
             setTimeout(() => setCopied(false), 1400);
           })
