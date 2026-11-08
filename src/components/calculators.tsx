@@ -328,7 +328,7 @@ function Sup({ ctx }: { ctx: Ctx }) {
           <NumberInput ctx={ctx} id="s-dose" label={bi("Drug per suppository (mg)", "دارو در هر شیاف (میلی‌گرم)")} />
           <NumberInput ctx={ctx} id="s-dv" label={bi("Displacement value", "ضریب جابه‌جایی")} />
           <NumberInput ctx={ctx} id="s-n" label={bi("Number of suppositories", "تعداد شیاف")} />
-          <NumberInput ctx={ctx} id="s-ov" label={bi("Overage (%)", "Overage (%)")} />
+          <NumberInput ctx={ctx} id="s-ov" label={bi("Extra units for losses in the mould (%)", "اضافه برای اتلاف در قالب‌گیری (%)")} />
         </>
       }
       results={[
@@ -419,13 +419,13 @@ function Vit({ ctx }: { ctx: Ctx }) {
   let iuOut = DASH, mcg = DASH, mgOut = DASH, rae = DASH, factor = DASH, msg = "";
   if (!(a >= 0)) msg = bad(ctx);
   else {
-    const mg = unit === "IU" ? a / k : unit === "mcg" ? a / 1000 : unit === "mg" ? a : a * 1000;
+    const mg = unit === "IU" ? a / k : unit === "µg" ? a / 1000 : unit === "mg" ? a : a * 1000;
     const iu = mg * k;
     iuOut = `${sig(iu)} IU`;
-    mcg = `${sig(mg * 1000)} mcg`;
+    mcg = `${sig(mg * 1000)} µg`;
     mgOut = `${sig(mg)} mg`;
-    rae = `${sig(iu * 0.3)} mcg RAE`;
-    factor = k >= 100 ? `1 IU = ${sig(1000 / k)} mcg` : `1 mg = ${sig(k)} IU`;
+    rae = `${sig(iu * 0.3)} µg RAE`;
+    factor = k >= 100 ? `1 IU = ${sig(1000 / k)} µg` : `1 mg = ${sig(k)} IU`;
   }
   return (
     <Panel
@@ -453,7 +453,7 @@ function Vit({ ctx }: { ctx: Ctx }) {
             </select>
           </div>
           <NumberInput ctx={ctx} id="v-amt" label={bi("Amount", "مقدار")} />
-          <Select ctx={ctx} id="v-unit" label={bi("Unit of the amount", "واحد مقدار")} options={["IU", "mcg", "mg", "g"]} />
+          <Select ctx={ctx} id="v-unit" label={bi("Unit of the amount", "واحد مقدار")} options={["IU", "µg", "mg", "g"]} />
         </>
       }
       results={[
@@ -465,8 +465,8 @@ function Vit({ ctx }: { ctx: Ctx }) {
       ]}
       message={msg}
       note={bi(
-        "The IU factor depends on the chemical form, so pick the form named on the raw material certificate of analysis. For vitamin A, 1 IU equals 0.3 mcg RAE.",
-        "ضریب IU به فرم شیمیایی بستگی دارد؛ فرمی را انتخاب کنید که در برگه آنالیز ماده اولیه آمده است. برای ویتامین A، هر IU برابر 0.3 میکروگرم RAE است.",
+        "The IU factor depends on the chemical form, so pick the form named on the raw material certificate of analysis. For vitamin A, 1 IU equals 0.3 µg RAE.",
+        "ضریب IU به فرم شیمیایی بستگی دارد؛ فرمی را انتخاب کنید که در برگه آنالیز ماده اولیه آمده است. برای ویتامین A، هر IU برابر ⁦0.3 µg RAE⁩ است.",
       )}
     />
   );
@@ -526,12 +526,12 @@ function Asy({ ctx }: { ctx: Ctx }) {
         { label: bi("Total correction factor F", "فاکتور اصلاح کل F"), value: ok ? fixed(f, 4) : DASH },
         { label: bi("Quantity to weigh per unit", "مقدار توزین در هر واحد"), value: ok ? `${fixed(lc * f, 3)} mg` : DASH },
         { label: bi("Quantity per batch", "مقدار در هر بچ"), value: ok ? `${fixed((lc * f * units) / 1e6, 4)} kg` : DASH },
-        { label: bi("Reduce the diluent per unit by", "کاهش پرکننده در هر واحد"), value: ok ? `${fixed(lc * f - lc, 3)} mg` : DASH },
+        { label: bi("Reduce the diluent per unit by (vs. the salt at 100%)", "کاهش پرکننده در هر واحد (نسبت به مقدار نمک با خلوص 100%)"), value: ok ? `${fixed(lc * f - lc * fSalt, 3)} mg` : DASH },
       ]}
       message={ok ? "" : bad(ctx)}
       note={bi(
-        "Quantity = label claim × (MW salt ÷ MW base) × (100 ÷ assay) × [100 ÷ (100 − LOD)]. Use the water/LOD factor only when the certificate reports the assay on the dried or anhydrous basis; when the assay is “as is” the factor is 1. Take assay and LOD (or KF water) from the certificate of analysis of the lot in use, and lower the q.s. diluent by the excess so the unit weight stays constant. Example: amlodipine 10 mg as besilate (567.05 / 408.88), assay 99.5% dried basis, LOD 0.5% → F = 1.4008, 14.008 mg per tablet.",
-        "مقدار توزین ⁦= LC × (MW salt ÷ MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]⁩. ضریب رطوبت فقط وقتی به کار می‌رود که Assay در برگه آنالیز بر پایه ماده خشک یا بدون آب گزارش شده باشد؛ اگر Assay بر پایه as is گزارش شده باشد، این ضریب 1 است. Assay و LOD (یا آب کارل فیشر) را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه اضافه وزن کم کنید تا وزن واحد ثابت بماند. مثال: آملودیپین 10 میلی‌گرم به صورت بزیلات ⁦(567.05 / 408.88)⁩، Assay 99.5% بر پایه خشک، LOD 0.5% ← ⁦F = 1.4008⁩ و 14.008 میلی‌گرم در هر قرص.",
+        "Quantity = label claim × (MW salt ÷ MW base) × (100 ÷ assay) × [100 ÷ (100 − LOD)]. Use the water/LOD factor only when the certificate reports the assay on the dried or anhydrous basis; when the assay is “as is” the factor is 1. Take assay and LOD (or KF water) from the certificate of analysis of the lot in use, and lower the q.s. diluent by the excess over the salt quantity at 100% so the unit weight stays constant. Example: amlodipine 10 mg as besilate (567.05 / 408.88), assay 99.5% dried basis, LOD 0.5% → F = 1.4008, 14.008 mg per tablet.",
+        "مقدار توزین ⁦= LC × (MW salt ÷ MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]⁩. ضریب رطوبت فقط وقتی به کار می‌رود که Assay در برگه آنالیز بر پایه ماده خشک یا بدون آب گزارش شده باشد؛ اگر Assay بر پایه as is گزارش شده باشد، این ضریب 1 است. Assay و LOD (یا آب کارل فیشر) را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه اضافه وزن نسبت به مقدار نمک با خلوص 100% کم کنید تا وزن واحد ثابت بماند. مثال: آملودیپین 10 میلی‌گرم به صورت بزیلات ⁦(567.05 / 408.88)⁩، Assay 99.5% بر پایه خشک، LOD 0.5% ← ⁦F = 1.4008⁩ و 14.008 میلی‌گرم در هر قرص.",
       )}
     />
   );
@@ -595,7 +595,7 @@ function Pot({ ctx }: { ctx: Ctx }) {
         { label: bi("As-is potency", "پوتنسی بر پایه as is"), value: asIs },
         { label: bi("Quantity to dispense per unit", "مقدار توزین در هر واحد"), value: perUnit },
         { label: bi("Quantity per batch", "مقدار در هر بچ"), value: batch },
-        { label: bi("Reduce the diluent per unit by", "کاهش پرکننده در هر واحد"), value: comp, hidden: mode === "iumg" },
+        { label: bi("Reduce the diluent per unit by (vs. the claimed form at 100%)", "کاهش پرکننده در هر واحد (نسبت به فرم ادعای برچسب با خلوص 100%)"), value: comp, hidden: mode === "iumg" },
       ]}
       message={msg}
       note={bi(
@@ -637,7 +637,7 @@ function Batch({ ctx }: { ctx: Ctx }) {
       form={
         <>
           <NumberInput ctx={ctx} id="x-units" label={bi("Batch size (units)", "اندازه بچ (تعداد واحد)")} />
-          <NumberInput ctx={ctx} id="x-ov" label={bi("Overage (%)", "Overage (%)")} />
+          <NumberInput ctx={ctx} id="x-ov" label={bi("Manufacturing excess for process losses (%)", "اضافه ساخت برای جبران اتلاف فرایند (%)")} />
         </>
       }
       results={[
@@ -645,7 +645,7 @@ function Batch({ ctx }: { ctx: Ctx }) {
         { label: bi("Batch weight", "وزن بچ"), value: ok ? `${fixed((sum * scale) / 1e6, 3)} kg` : DASH },
       ]}
       message={ok ? "" : bad(ctx)}
-      note={bi("The formula below is an example. Replace the rows with your own.", "این فرمول صرفاً نمونه است. ردیف‌ها را با فرمول خود جایگزین کنید.")}
+      note={bi("The formula below is an example; replace the rows with your own. The manufacturing excess scales every ingredient to cover process losses; an API overage belongs in the API row (mg per unit).", "این فرمول صرفاً نمونه است؛ ردیف‌ها را با فرمول خود جایگزین کنید. اضافه ساخت همه اجزا را برای جبران اتلاف فرایند افزایش می‌دهد؛ Overage ماده مؤثره را در ردیف خود آن (mg در هر واحد) وارد کنید.")}
     >
       <div className="overflow-x-auto rounded-xl border border-line">
         <table className="db min-w-[520px]">
@@ -713,7 +713,7 @@ function Batch({ ctx }: { ctx: Ctx }) {
 
 // ---------- bench ----------
 
-const components: Record<CalculationKey, (props: { ctx: Ctx }) => React.JSX.Element> = {
+export const calcComponents: Record<CalculationKey, (props: { ctx: Ctx }) => React.JSX.Element> = {
   pot: Pot, asy: Asy, bat: Batch, hlb: Hlb, flow: Flow, caps: Caps, tab: Tab, coat: Coat, sup: Sup,
   iso: Iso, fpd: Fpd, osm: Osm, buf: Buf, bcap: BufCap, dil: Dil, conc: Conc, meq: Meq, vit: Vit, kin: Kin,
   hplc: Hplc, imp: Imp, uv: Uv, tit: Tit, kf: Kf, sst: Sst, lin: Lin, diss: Diss, f2: F2, udu: Udu,
@@ -724,7 +724,7 @@ const components: Record<CalculationKey, (props: { ctx: Ctx }) => React.JSX.Elem
   yld: Yld, samp: Samp, lodq: Lodq, cpk: Cpk, ach: Ach,
 };
 
-const defaults: Values = {
+export const calcDefaults: Values = {
   "h-pair": "0", "h-lo": "4.3", "h-hi": "15.0", "h-req": "10.5", "h-mass": "5",
   "i-c": "1", "i-e": "0.23", "i-v": "30", "i-agent": "0", "i-ea": "1",
   "d-hi": "70", "d-lo": "0", "d-t": "10", "d-q": "500",
@@ -756,7 +756,7 @@ const defaults: Values = {
   "ss-areas": "1502310 1498760 1505120 1499870 1501450 1503020",
   "ln-x": "50 75 100 125 150", "ln-y": "250300 378100 501200 629900 752400",
   "ds-lc": "500", "ds-v": "900", "ds-s": "10", "ds-rep": "yes", "ds-t": "10 15 20 30 45", "ds-c": "0.2510 0.3920 0.4810 0.5320 0.5480",
-  "f2-r": "35 58 79 90 96", "f2-t": "32 55 77 89 95",
+  "f2-r": "35 58 79 90", "f2-t": "32 55 77 89",
   "ud-x": "99.2 101.5 98.7 100.3 97.9 102.1 99.8 100.6 98.4 101.0",
   ...manufacturingDefaults,
   ...stabilityDefaults,
@@ -772,7 +772,7 @@ export function Calculators({ locale, demo = false, guestLeft = 0 }: { locale: L
   const urlCalc = useUrlParam("calc");
   const [picked, setActive] = useState<string | null>(null);
   const active = picked ?? (calculations.some((c) => c.key === urlCalc) ? urlCalc : "pot");
-  const [values, setValues] = useState(defaults);
+  const [values, setValues] = useState(calcDefaults);
   // Guests may unlock a few calculators (one free use each) out of the worked-example mode.
   const [unlocked, setUnlocked] = useState<Set<string>>(() => new Set());
   const [left, setLeft] = useState(guestLeft);
@@ -843,7 +843,7 @@ export function Calculators({ locale, demo = false, guestLeft = 0 }: { locale: L
 
       <div className="min-w-0">
         {calculations.map(({ key }) => {
-          const Calc = components[key];
+          const Calc = calcComponents[key];
           const locked = demo && !unlocked.has(key);
           return (
             // Panels stay mounted so each keeps its inputs when switching calculations.

@@ -122,7 +122,7 @@ export function Osm({ ctx }: { ctx: Ctx }) {
 // ---------- Concentration units ----------
 
 const concUnits = [
-  { value: "pct", label: bi("% w/v (g/100 mL)", "% w/v (گرم در 100 میلی‌لیتر)") },
+  { value: "pct", label: bi("% w/v (g/100 mL)", "\u2066% w/v\u2069 (گرم در 100 میلی‌لیتر)") },
   { value: "mgml", label: bi("mg/mL", "mg/mL") },
   { value: "ugml", label: bi("µg/mL", "µg/mL") },
   { value: "ppm", label: bi("ppm (mg/L)", "ppm (mg/L)") },
@@ -158,7 +158,7 @@ export function Conc({ ctx }: { ctx: Ctx }) {
         </>
       }
       results={[
-        { label: bi("% w/v", "% w/v"), value: show((m) => `${sig(m / 10)} %`) },
+        { label: bi("% w/v", ltr("% w/v")), value: show((m) => `${sig(m / 10)}%`) },
         { label: bi("mg/mL", "mg/mL"), value: show((m) => sig(m)) },
         { label: bi("µg/mL = ppm (w/v)", "µg/mL = ppm (w/v)"), value: show((m) => sig(m * 1000)) },
         { label: bi("mmol/L", "mmol/L"), value: mw > 0 ? show((m) => sig((m / mw) * 1000)) : DASH },
@@ -185,7 +185,7 @@ export function Kin({ ctx }: { ctx: Ctx }) {
   const first = v["kn-ord"] !== "0";
   const k1 = num(v["kn-k"]), t1 = num(v["kn-t1"]), ea = num(v["kn-ea"]), t2 = num(v["kn-t2"]), c0 = num(v["kn-c0"]), lim = num(v["kn-lim"]);
   let k2s = DASH, life1 = DASH, life2 = DASH, half = DASH, msg = "";
-  if (!(k1 > 0) || !(ea > 0) || !Number.isFinite(t1) || !Number.isFinite(t2) || !(c0 > lim) || !(lim > 0)) msg = bad(ctx);
+  if (!(k1 > 0) || !(ea > 0) || !(t1 > -273.15) || !(t2 > -273.15) || !(c0 > lim) || !(lim > 0)) msg = bad(ctx);
   else {
     const T1 = t1 + 273.15, T2 = t2 + 273.15;
     const k2 = k1 * Math.exp(((ea * 1000) / 8.314) * (1 / T1 - 1 / T2));
@@ -208,7 +208,7 @@ export function Kin({ ctx }: { ctx: Ctx }) {
           <NumberInput ctx={ctx} id="kn-ea" label={bi("Activation energy Ea (kJ/mol)", "انرژی فعال‌سازی Ea (کیلوژول بر مول)")} />
           <NumberInput ctx={ctx} id="kn-t2" label={bi("T₂, storage temperature (°C)", "T₂، دمای نگهداری (درجه سانتی‌گراد)")} />
           <NumberInput ctx={ctx} id="kn-c0" label={bi("Initial content (% of label)", "مقدار اولیه (% ادعای برچسب)")} />
-          <NumberInput ctx={ctx} id="kn-lim" label={bi("Lower specification limit (% of label)", "حد پایین مشخصات (% ادعای برچسب)")} />
+          <NumberInput ctx={ctx} id="kn-lim" label={bi("Lower specification limit (% of label)", "حد پایین Specification (% ادعای برچسب)")} />
         </>
       }
       results={[
@@ -220,7 +220,7 @@ export function Kin({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "First order: t = ln(C₀/C) ÷ k, so t90 = 0.105 ÷ k and t½ = 0.693 ÷ k; zero order: t = (C₀ − C) ÷ k. Arrhenius: k₂ = k₁·exp[(Ea/R)(1/T₁ − 1/T₂)], R = 8.314 J/(mol·K); Ea of most drug degradations lies between about 50 and 100 kJ/mol. This is an estimate: shelf life is assigned from real-time data per ICH Q1A(R2) and Q1E.",
-        `مرتبه اول: ${ltr("t = ln(C₀/C) ÷ k")}، بنابراین ${ltr("t90 = 0.105 ÷ k")} و ${ltr("t½ = 0.693 ÷ k")}؛ مرتبه صفر: ${ltr("t = (C₀ − C) ÷ k")}. معادله آرنیوس: ${ltr("k₂ = k₁·exp[(Ea/R)(1/T₁ − 1/T₂)]")} با ${ltr("R = 8.314 J/(mol·K)")}؛ انرژی فعال‌سازی بیشتر واکنش‌های تخریب دارو حدود 50 تا 100 کیلوژول بر مول است. این عدد تخمینی است و عمر قفسه‌ای بر پایه داده‌های زمان واقعی طبق ICH Q1A(R2) و Q1E تعیین می‌شود.`,
+        `مرتبه اول: ${ltr("t = ln(C₀/C) ÷ k")}، بنابراین ${ltr("t90 = 0.105 ÷ k")} و ${ltr("t½ = 0.693 ÷ k")}؛ مرتبه صفر: ${ltr("t = (C₀ − C) ÷ k")}. معادله آرنیوس: ${ltr("k₂ = k₁·exp[(Ea/R)(1/T₁ − 1/T₂)]")} با ${ltr("R = 8.314 J/(mol·K)")}؛ انرژی فعال‌سازی بیشتر واکنش‌های تخریب دارو حدود 50 تا 100 کیلوژول بر مول است. این عدد تخمینی است و عمر قفسه‌ای بر پایه داده‌های زمان واقعی طبق ${ltr("ICH Q1A(R2)")} و ${ltr("Q1E")} تعیین می‌شود.`,
       )}
     />
   );

@@ -189,9 +189,9 @@ export function Maco({ ctx }: { ctx: Ctx }) {
           <NumberInput ctx={ctx} id="ma-mbs" label={bi("Product B: minimum batch size (kg)", "محصول B: کوچک‌ترین اندازه بچ (کیلوگرم)")} />
           <NumberInput ctx={ctx} id="ma-mdd" label={bi("Product B: maximum daily dose (mg of product)", "محصول B: حداکثر دوز روزانه (میلی‌گرم فرآورده)")} />
           <NumberInput ctx={ctx} id="ma-area" label={bi("Shared product-contact surface area (cm²)", "سطح مشترک در تماس با محصول (سانتی‌متر مربع)")} />
-          <NumberInput ctx={ctx} id="ma-swab" label={bi("Swabbed area (cm²)", "سطح سواب‌شده (سانتی‌متر مربع)")} />
-          <NumberInput ctx={ctx} id="ma-vext" label={bi("Swab extraction volume (mL)", "حجم استخراج سواب (میلی‌لیتر)")} />
-          <NumberInput ctx={ctx} id="ma-rec" label={bi("Swab recovery (%)", "بازیافت سواب (%)")} />
+          <NumberInput ctx={ctx} id="ma-swab" label={bi("Swabbed area (cm²)", "سطح نمونه‌برداری‌شده با Swab (cm²)")} />
+          <NumberInput ctx={ctx} id="ma-vext" label={bi("Swab extraction volume (mL)", "حجم استخراج Swab (mL)")} />
+          <NumberInput ctx={ctx} id="ma-rec" label={bi("Swab recovery (%)", "Recovery نمونه‌برداری Swab (%)")} />
           <NumberInput ctx={ctx} id="ma-rinse" label={bi("Final rinse volume (L)", "حجم شست‌وشوی نهایی (لیتر)")} />
         </>
       }
@@ -200,15 +200,15 @@ export function Maco({ ctx }: { ctx: Ctx }) {
         { label: bi("MACO, 1/SF of the therapeutic dose", "MACO بر پایه کسری از دوز درمانی"), value: mg(dose) },
         { label: bi("MACO, 10 ppm in product B", "MACO بر پایه 10 ppm در محصول B"), value: mg(ppm) },
         { label: bi("MACO used (lowest)", "MACO مبنا (کمترین)"), value: Number.isFinite(maco) ? `${sig(maco)} mg  ·  ${which}` : DASH },
-        { label: bi("Limit per swab", "حد هر سواب"), value: okS ? `${sig(perSwab)} µg` : DASH },
-        { label: bi("Limit in the swab solution", "حد در محلول سواب"), value: okS && vext > 0 ? `${sig(perSwab / vext)} µg/mL` : DASH },
-        { label: bi("Same, corrected for recovery", "همان، اصلاح‌شده برای بازیافت"), value: okS && vext > 0 && rec > 0 && rec <= 100 ? `${sig(((perSwab / vext) * rec) / 100)} µg/mL` : DASH },
+        { label: bi("Limit per swab", "حد هر Swab"), value: okS ? `${sig(perSwab)} µg` : DASH },
+        { label: bi("Limit in the swab solution", "حد در محلول استخراج Swab"), value: okS && vext > 0 ? `${sig(perSwab / vext)} µg/mL` : DASH },
+        { label: bi("Same, corrected for recovery", "همان حد، اصلاح‌شده برای Recovery"), value: okS && vext > 0 && rec > 0 && rec <= 100 ? `${sig(((perSwab / vext) * rec) / 100)} µg/mL` : DASH },
         { label: bi("Limit in the final rinse", "حد در آب شست‌وشوی نهایی"), value: Number.isFinite(maco) && rinse > 0 ? `${sig((maco * 1000) / (rinse * 1000))} µg/mL` : DASH },
       ]}
       message={okB ? "" : bad(ctx)}
       note={bi(
         "Maximum allowable carryover of product A into the next product B. Health-based (EMA guideline on HBEL, 2014; PIC/S): MACO = PDE × MBS ÷ MDD. Traditional criteria, still used as additional checks: 1/1000 of the smallest therapeutic dose (MACO = STD × MBS ÷ (SF × MDD)) and 10 ppm of A in B. The lowest value governs. Swab limit = MACO × swabbed area ÷ shared area; the measured swab result is compared with the limit multiplied by the recovery. Rinse limit assumes the residue is evenly distributed in the final rinse.",
-        `حداکثر انتقال مجاز محصول A به محصول بعدی B. بر پایه سلامت (راهنمای HBEL آژانس دارویی اروپا، 2014؛ PIC/S): ${ltr("MACO = PDE × MBS ÷ MDD")}. معیارهای سنتی که هنوز به‌عنوان کنترل تکمیلی به کار می‌روند: یک‌هزارم کمترین دوز درمانی ${ltr("(MACO = STD × MBS ÷ (SF × MDD))")} و 10 ppm از A در B. کمترین مقدار ملاک است. حد سواب ${ltr("= MACO × swab area ÷ shared area")}؛ نتیجه اندازه‌گیری‌شده سواب با حد ضرب‌شده در بازیافت مقایسه می‌شود. حد Rinse با فرض توزیع یکنواخت باقیمانده در آب شست‌وشوی نهایی محاسبه می‌شود.`,
+        `حداکثر انتقال مجاز محصول A به محصول بعدی B. بر پایه سلامت (راهنمای HBEL آژانس دارویی اروپا، 2014؛ PIC/S): ${ltr("MACO = PDE × MBS ÷ MDD")}. معیارهای سنتی که هنوز به‌عنوان کنترل تکمیلی به کار می‌روند: یک‌هزارم کمترین دوز درمانی ${ltr("(MACO = STD × MBS ÷ (SF × MDD))")} و 10 ppm از A در B. کمترین مقدار ملاک است. حد Swab ${ltr("= MACO × swab area ÷ shared area")}؛ نتیجه اندازه‌گیری‌شده Swab با حد ضرب‌شده در Recovery مقایسه می‌شود. حد Rinse با فرض توزیع یکنواخت باقیمانده در آب شست‌وشوی نهایی محاسبه می‌شود.`,
       )}
     />
   );

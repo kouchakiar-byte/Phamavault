@@ -3,7 +3,7 @@
 import { bi } from "@/i18n/bi";
 import { calculation } from "@/content/calculations";
 import { fixed, sig } from "../calc-format";
-import { Choice, DASH, ListInput, NumberInput, Panel, bad, listNote, mean, num, parseList, sd, type Ctx, type Values } from "./ui";
+import { Choice, DASH, ListInput, NumberInput, Panel, bad, listNote, ltr, mean, num, parseList, sd, type Ctx, type Values } from "./ui";
 
 /* GMP and process calculators: capability, sampling, detection limits, yield and cleanroom air. */
 
@@ -70,8 +70,8 @@ export function Cpk({ ctx }: { ctx: Ctx }) {
       form={
         <>
           <ListInput ctx={ctx} id="ck-x" rows={4} label={bi("Results (e.g. assay % of batches)", "نتایج (مثلاً Assay بچ‌ها به درصد)")} />
-          <NumberInput ctx={ctx} id="ck-lsl" label={bi("Lower specification limit (LSL; blank if none)", "حد پایین مشخصات (LSL؛ در صورت نبود، خالی بگذارید)")} />
-          <NumberInput ctx={ctx} id="ck-usl" label={bi("Upper specification limit (USL; blank if none)", "حد بالای مشخصات (USL؛ در صورت نبود، خالی بگذارید)")} />
+          <NumberInput ctx={ctx} id="ck-lsl" label={bi("Lower specification limit (LSL; blank if none)", "حد پایین Specification (LSL؛ در صورت نبود، خالی بگذارید)")} />
+          <NumberInput ctx={ctx} id="ck-usl" label={bi("Upper specification limit (USL; blank if none)", "حد بالای Specification (USL؛ در صورت نبود، خالی بگذارید)")} />
         </>
       }
       results={[
@@ -81,13 +81,13 @@ export function Cpk({ ctx }: { ctx: Ctx }) {
         { label: bi("Cpu (upper)", "Cpu (سمت بالا)"), value: cpu },
         { label: bi("Cpl (lower)", "Cpl (سمت پایین)"), value: cpl },
         { label: bi("Cpk", "Cpk"), value: cpk },
-        { label: bi("Expected out of specification", "پیش‌بینی خارج از مشخصات"), value: ppm },
+        { label: bi("Expected out of specification", "پیش‌بینی خارج از Specification (OOS)"), value: ppm },
         { label: bi("Conclusion", "نتیجه"), value: verdict },
       ]}
       message={msg}
       note={bi(
         "Cp = (USL − LSL) ÷ 6s; Cpu = (USL − x̄) ÷ 3s; Cpl = (x̄ − LSL) ÷ 3s; Cpk = min(Cpu, Cpl). The overall sample SD is used, so strictly this is Ppk (process performance); it equals Cpk only for a stable process. Expected out-of-specification assumes a normal distribution. Common targets: Cpk ≥ 1.33 for continued process verification (CPV) and APQR trending. " + listNote.en,
-        "Cp = (USL − LSL) ÷ 6s؛ Cpu = (USL − x̄) ÷ 3s؛ Cpl = (x̄ − LSL) ÷ 3s؛ Cpk = کمینه Cpu و Cpl. انحراف معیار کل نمونه به کار رفته است، بنابراین شاخص به‌دست‌آمده به‌طور دقیق Ppk (عملکرد فرایند) است و فقط برای فرایند پایدار با Cpk برابر است. پیش‌بینی خارج از مشخصات بر پایه توزیع نرمال است. هدف متداول در پایش مستمر فرایند (CPV) و بازنگری سالانه (APQR): Cpk ≥ 1.33. " + listNote.fa,
+        `${ltr("Cp = (USL − LSL) ÷ 6s")}؛ ${ltr("Cpu = (USL − x̄) ÷ 3s")}؛ ${ltr("Cpl = (x̄ − LSL) ÷ 3s")}؛ Cpk کمینه Cpu و Cpl است. انحراف معیار کل نمونه به کار رفته است، بنابراین شاخص به‌دست‌آمده به‌طور دقیق Ppk (عملکرد فرایند) است و فقط برای فرایند پایدار با Cpk برابر است. پیش‌بینی خارج از Specification بر پایه توزیع نرمال است. هدف متداول در پایش مستمر فرایند (CPV) و بازنگری سالانه (APQR): ${ltr("Cpk ≥ 1.33")}. ${listNote.fa}`,
       )}
     />
   );
@@ -114,7 +114,7 @@ export function Samp({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "Values are rounded up to the next whole container. n plan: for uniform material from a recognised, qualified supplier — samples from n containers are tested for identity. p plan: when the material is uniform and the aim is full testing — the containers are pooled into p composite samples. r plan: for non-uniform material or material from an unqualified source (e.g. crude herbal drugs) — samples from r containers are tested separately. Under EU GMP Annex 8, identity is normally tested on a sample from every container of a starting material; sampling only some containers needs a validated procedure.",
-        "اعداد به عدد صحیح بالاتر گرد شده‌اند. طرح n: برای ماده یکنواخت از تأمین‌کننده شناخته‌شده و تأییدشده؛ نمونه n ظرف برای شناسایی آزمون می‌شود. طرح p: برای ماده یکنواخت وقتی آزمون کامل لازم است؛ ظروف در p نمونه مرکب ترکیب می‌شوند. طرح r: برای ماده غیریکنواخت یا از منبع تأییدنشده (مثلاً داروهای گیاهی خام)؛ نمونه r ظرف جداگانه آزمون می‌شود. طبق ضمیمه 8 GMP اروپا، شناسایی معمولاً روی نمونه همه ظروف ماده اولیه انجام می‌شود و نمونه‌برداری از بخشی از ظروف به روش اعتبارسنجی‌شده نیاز دارد.",
+        "اعداد به عدد صحیح بالاتر گرد شده‌اند. طرح n: برای ماده یکنواخت از تأمین‌کننده شناخته‌شده و تأییدشده؛ نمونه n ظرف برای شناسایی آزمون می‌شود. طرح p: برای ماده یکنواخت وقتی آزمون کامل لازم است؛ ظروف در p نمونه مرکب ترکیب می‌شوند. طرح r: برای ماده غیریکنواخت یا از منبع تأییدنشده (مثلاً داروهای گیاهی خام)؛ نمونه r ظرف جداگانه آزمون می‌شود. طبق ضمیمه 8 GMP اروپا، شناسایی معمولاً روی نمونه همه ظروف ماده اولیه انجام می‌شود و نمونه‌برداری از بخشی از ظروف به روش صحه‌گذاری‌شده نیاز دارد.",
       )}
     />
   );
@@ -183,7 +183,7 @@ export function Lodq({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "ICH Q2(R2): detection and quantitation limits from the standard deviation of the response and the slope. Results are in the unit of the concentrations. Confirm the calculated LOQ experimentally by analysing samples at that level for precision and accuracy (or a signal-to-noise of about 10:1). " + listNote.en,
-        "طبق ICH Q2(R2): حد تشخیص و حد اندازه‌گیری از انحراف معیار پاسخ و شیب منحنی. نتایج با واحد غلظت‌ها است. LOQ محاسبه‌شده را با آنالیز نمونه در همان سطح از نظر دقت و صحت (یا نسبت سیگنال به نویز حدود 10 به 1) تأیید تجربی کنید. " + listNote.fa,
+        `طبق ${ltr("ICH Q2(R2)")}: حد تشخیص (LOD) و حد اندازه‌گیری (LOQ) از انحراف معیار پاسخ و شیب منحنی به دست می‌آیند. نتایج با واحد غلظت‌ها است. LOQ محاسبه‌شده را با آنالیز نمونه در همان سطح از نظر Precision و Accuracy (یا نسبت سیگنال به نویز حدود 10 به 1) تأیید تجربی کنید. ${listNote.fa}`,
       )}
     />
   );
@@ -274,7 +274,7 @@ export function Ach({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "ACH = supply air (m³/h) ÷ room volume (m³); 1 CFM = 1.699 m³/h. The recovery time assumes perfect mixing: t = 60·ln(100) ÷ ACH. EU GMP Annex 1 sets particle limits and a guidance clean-up time of 15–20 minutes, not a fixed ACH; air change rates are design values to be confirmed by the ISO 14644-3 recovery test.",
-        "ACH = دبی هوای ورودی (m³/h) ÷ حجم اتاق (m³)؛ هر CFM برابر 1.699 m³/h. زمان بازیابی با فرض اختلاط کامل: t = 60·ln(100) ÷ ACH. ضمیمه 1 GMP اروپا حدود ذرات و زمان راهنمای پاک‌سازی 15 تا 20 دقیقه را تعیین می‌کند نه عدد ثابت ACH؛ نرخ تعویض هوا مقدار طراحی است و باید با آزمون بازیابی ISO 14644-3 تأیید شود.",
+        `ACH برابر دبی هوای ورودی ${ltr("(m³/h)")} تقسیم بر حجم اتاق ${ltr("(m³)")} است؛ هر ${ltr("1 CFM = 1.699 m³/h")}. زمان بازیابی با فرض اختلاط کامل: ${ltr("t = 60·ln(100) ÷ ACH")}. ${ltr("EU GMP Annex 1")} حدود ذرات و زمان راهنمای پاک‌سازی (Clean-up) 15 تا 20 دقیقه را تعیین می‌کند، نه عدد ثابت ACH؛ نرخ تعویض هوا مقدار طراحی است و باید با آزمون بازیابی ${ltr("ISO 14644-3")} تأیید شود.`,
       )}
     />
   );

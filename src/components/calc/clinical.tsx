@@ -132,7 +132,7 @@ export function Crcl({ ctx }: { ctx: Ctx }) {
         { label: bi("CrCl, Cockcroft–Gault", "کلیرانس کراتینین، کاکرافت–گالت"), value: Number.isFinite(cg) ? `${fixed(cg, 0)} mL/min` : DASH },
         { label: bi("eGFR, CKD-EPI 2021", "eGFR، CKD-EPI 2021"), value: Number.isFinite(egfr) ? `${fixed(egfr, 0)} mL/min/1.73 m²  ·  ${gStage(egfr)}` : DASH },
       ]}
-      message={ok ? "" : bad(ctx)}
+      message={ok && (basis === "actual" || h > 0) ? "" : bad(ctx)}
       note={bi(
         "Cockcroft–Gault (1976): CrCl (mL/min) = (140 − age) × weight ÷ (72 × SCr mg/dL), × 0.85 for women; most drug labels base renal dose adjustment on it. CKD-EPI 2021 (race-free): eGFR = 142 × min(SCr/κ, 1)^α × max(SCr/κ, 1)^−1.200 × 0.9938^age × 1.012 (women), κ = 0.7/0.9 and α = −0.241/−0.302 for women/men. KDIGO stages: G1 ≥ 90, G2 60–89, G3a 45–59, G3b 30–44, G4 15–29, G5 < 15. 1 mg/dL creatinine = 88.4 µmol/L." +
           disclaimer.en,
@@ -162,7 +162,8 @@ export function Inf({ ctx }: { ctx: Ctx }) {
   const perHour = mode === "mcgkgmin" ? (rate * w * 60) / 1000 : rate; // mg/h or units/h
   const mlh = ok ? perHour / conc : NaN;
   const hours = ok ? vol / mlh : NaN;
-  const hm = Number.isFinite(hours) ? `${Math.floor(hours)} h ${String(Math.round((hours % 1) * 60)).padStart(2, "0")} min` : DASH;
+  const minutes = Math.round(hours * 60);
+  const hm = Number.isFinite(hours) ? `${Math.floor(minutes / 60)} h ${String(minutes % 60).padStart(2, "0")} min` : DASH;
   const u = units ? "units" : "mg";
   return (
     <Panel

@@ -45,7 +45,7 @@ export function Hplc({ ctx }: { ctx: Ctx }) {
         { label: bi("Standard concentration", "غلظت استاندارد"), value: cs },
         { label: bi("Sample concentration found", "غلظت یافت‌شده نمونه"), value: cu },
         { label: bi("Content per unit", "مقدار در هر واحد"), value: perUnit },
-        { label: bi("Assay (% of label claim)", "تعیین مقدار (% ادعای برچسب)"), value: pct },
+        { label: bi("Assay (% of label claim)", "Assay (% ادعای برچسب)"), value: pct },
       ]}
       message={msg}
       note={bi(
@@ -79,7 +79,7 @@ export function Imp({ ctx }: { ctx: Ctx }) {
           <NumberInput ctx={ctx} id="im-cs" label={bi("Diluted standard concentration (mg/mL)", "غلظت استاندارد رقیق‌شده (mg/mL)")} />
           <NumberInput ctx={ctx} id="im-cu" label={bi("Sample concentration (mg/mL)", "غلظت نمونه (mg/mL)")} />
           <NumberInput ctx={ctx} id="im-rrf" label={bi("Relative response factor (RRF)", "ضریب پاسخ نسبی (RRF)")} />
-          <NumberInput ctx={ctx} id="im-lim" label={bi("Specification limit (%)", "حد مشخصات (%)")} />
+          <NumberInput ctx={ctx} id="im-lim" label={bi("Specification limit (%)", "حد Specification (%)")} />
         </>
       }
       results={[
@@ -155,10 +155,13 @@ export function Tit({ ctx }: { ctx: Ctx }) {
   if (!(w > 0) || !(vs >= 0) || !(vb >= 0) || !(m > 0) || !(mn > 0) || !(e > 0) || !(lod >= 0 && lod < 100)) msg = bad(ctx);
   else {
     const vn = back ? vb - vs : vs - vb;
-    const x = ((vn * (m / mn) * e) / w) * 100;
-    net = `${fixed(vn, 2)} mL`;
-    asIs = `${fixed(x, 2)}%`;
-    if (lod > 0) dried = `${fixed(x / (1 - lod / 100), 2)}%`;
+    if (!(vn > 0)) msg = bad(ctx);
+    else {
+      const x = ((vn * (m / mn) * e) / w) * 100;
+      net = `${fixed(vn, 2)} mL`;
+      asIs = `${fixed(x, 2)}%`;
+      if (lod > 0) dried = `${fixed(x / (1 - lod / 100), 2)}%`;
+    }
   }
   return (
     <Panel
@@ -178,8 +181,8 @@ export function Tit({ ctx }: { ctx: Ctx }) {
       }
       results={[
         { label: bi("Net titrant volume", "حجم خالص تیترانت"), value: net },
-        { label: bi("Assay, as is", "تعیین مقدار، as is"), value: asIs },
-        { label: bi("Assay, dried basis", "تعیین مقدار، بر پایه خشک"), value: dried, hidden: !(lod > 0) },
+        { label: bi("Assay, as is", "Assay، as is"), value: asIs },
+        { label: bi("Assay, dried basis", "Assay، بر پایه خشک"), value: dried, hidden: !(lod > 0) },
       ]}
       message={msg}
       note={bi(
@@ -250,11 +253,11 @@ export function Sst({ ctx }: { ctx: Ctx }) {
         </>
       }
       results={[
-        { label: bi("Plate count N (peak 2)", "تعداد بشقابک N (پیک 2)"), value: okPeaks ? fixed(5.54 * (t2 / w2) ** 2, 0) : DASH },
-        { label: bi("Resolution Rs", "تفکیک Rs"), value: okPeaks ? fixed((1.18 * (t2 - t1)) / (w1 + w2), 2) : DASH },
-        { label: bi("Tailing (symmetry) factor T", "فاکتور دنباله‌دهی T"), value: w05 > 0 && f > 0 ? fixed(w05 / (2 * f), 2) : DASH },
+        { label: bi("Plate count N (peak 2)", "Plate count N (پیک 2)"), value: okPeaks ? fixed(5.54 * (t2 / w2) ** 2, 0) : DASH },
+        { label: bi("Resolution Rs", "Resolution (Rs)"), value: okPeaks ? fixed((1.18 * (t2 - t1)) / (w1 + w2), 2) : DASH },
+        { label: bi("Tailing (symmetry) factor T", "Tailing factor (T)"), value: w05 > 0 && f > 0 ? fixed(w05 / (2 * f), 2) : DASH },
         { label: bi("Mean area", "میانگین سطح"), value: okAreas ? fixed(mean(areas), 0) : DASH },
-        { label: bi("%RSD of areas", "%RSD سطح‌ها"), value: okAreas ? `${fixed((sd(areas) / mean(areas)) * 100, 2)}%  (n = ${areas.length})` : DASH },
+        { label: bi("%RSD of areas", `${ltr("%RSD")} سطح پیک‌ها`), value: okAreas ? `${fixed((sd(areas) / mean(areas)) * 100, 2)}%  (n = ${areas.length})` : DASH },
       ]}
       message={okPeaks || okAreas ? "" : bad(ctx)}
       note={bi(
@@ -315,7 +318,7 @@ export function Lin({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "Least-squares line y = S·x + a. ICH Q2(R2): LOD = 3.3σ ÷ S and LOQ = 10σ ÷ S, here with σ the residual standard deviation of the regression; confirm LOD and LOQ experimentally. " + listNote.en,
-        `خط حداقل مربعات ${ltr("y = S·x + a")}. طبق ICH Q2(R2): ${ltr("LOD = 3.3σ ÷ S")} و ${ltr("LOQ = 10σ ÷ S")} که σ در اینجا انحراف معیار باقیمانده رگرسیون است؛ LOD و LOQ را به‌صورت تجربی هم تأیید کنید. ${listNote.fa}`,
+        `خط حداقل مربعات ${ltr("y = S·x + a")}. طبق ${ltr("ICH Q2(R2)")}: ${ltr("LOD = 3.3σ ÷ S")} و ${ltr("LOQ = 10σ ÷ S")} که σ در اینجا انحراف معیار باقیمانده رگرسیون است؛ LOD و LOQ را به‌صورت تجربی هم تأیید کنید. ${listNote.fa}`,
       )}
     />
   );
@@ -324,7 +327,7 @@ export function Lin({ ctx }: { ctx: Ctx }) {
 // ---------- Dissolution % released ----------
 
 const replaceModes = [
-  { value: "yes", label: bi("Withdrawn volume replaced with fresh medium", "حجم برداشته‌شده با محیط تازه جایگزین می‌شود") },
+  { value: "yes", label: bi("Withdrawn volume replaced with fresh medium", "حجم برداشته‌شده با Medium تازه جایگزین می‌شود") },
   { value: "no", label: bi("Withdrawn volume not replaced", "حجم برداشته‌شده جایگزین نمی‌شود") },
 ];
 
@@ -347,9 +350,9 @@ export function Diss({ ctx }: { ctx: Ctx }) {
       form={
         <>
           <NumberInput ctx={ctx} id="ds-lc" label={bi("Label claim (mg per unit)", "ادعای برچسب (میلی‌گرم در هر واحد)")} />
-          <NumberInput ctx={ctx} id="ds-v" label={bi("Medium volume (mL)", "حجم محیط انحلال (میلی‌لیتر)")} />
+          <NumberInput ctx={ctx} id="ds-v" label={bi("Medium volume (mL)", "حجم Medium (mL)")} />
           <NumberInput ctx={ctx} id="ds-s" label={bi("Sample volume withdrawn each time (mL)", "حجم نمونه برداشته‌شده در هر بار (میلی‌لیتر)")} />
-          <Choice ctx={ctx} id="ds-rep" label={bi("Medium replacement", "جایگزینی محیط")} options={replaceModes} />
+          <Choice ctx={ctx} id="ds-rep" label={bi("Medium replacement", "جایگزینی Medium")} options={replaceModes} />
           <ListInput ctx={ctx} id="ds-t" label={bi("Time points (min)", "زمان‌های نمونه‌برداری (دقیقه)")} />
           <ListInput ctx={ctx} id="ds-c" label={bi("Concentration at each time point (mg/mL)", "غلظت در هر زمان (mg/mL)")} />
         </>
@@ -361,7 +364,7 @@ export function Diss({ ctx }: { ctx: Ctx }) {
       message={ok ? "" : bad(ctx)}
       note={bi(
         "Amount at point n = Cₙ × medium volume + v × Σ C of earlier points; without replacement the medium volume falls by v at each sampling. " + listNote.en,
-        `مقدار در زمان n برابر ${ltr("Cₙ × V + v × Σ C(i<n)")} است؛ اگر محیط جایگزین نشود، حجم محیط در هر نمونه‌برداری به اندازه v کم می‌شود. ${listNote.fa}`,
+        `مقدار در زمان n برابر ${ltr("Cₙ × V + v × Σ C(i<n)")} است؛ اگر Medium جایگزین نشود، حجم Medium در هر نمونه‌برداری به اندازه v کم می‌شود. ${listNote.fa}`,
       )}
     >
       {ok && (
@@ -396,8 +399,13 @@ export function F2({ ctx }: { ctx: Ctx }) {
   const { v, locale } = ctx;
   const r = parseList(v["f2-r"]), t = parseList(v["f2-t"]);
   const ok = valid(r) && valid(t) && r.length === t.length && r.length >= 3;
-  let f2 = DASH, f1 = DASH, verdict = DASH;
+  let f2 = DASH, f1 = DASH, verdict = DASH, warn = "";
   if (ok) {
+    if (r.filter((x) => x > 85).length > 1 || t.filter((x) => x > 85).length > 1)
+      warn = bi(
+        "More than one mean value above 85% dissolved for a product: f2 is not valid here. Use the points up to and including the first one above 85%.",
+        "برای یک فرآورده بیش از یک میانگین بالای 85% انحلال وجود دارد و f2 در این حالت معتبر نیست. فقط نقاط تا اولین نقطه بالای 85% (همراه با خود آن) را وارد کنید.",
+      )[locale];
     const n = r.length;
     const sum2 = r.reduce((a, x, i) => a + (x - t[i]) ** 2, 0);
     const val = 50 * Math.log10(100 / Math.sqrt(1 + sum2 / n));
@@ -421,7 +429,7 @@ export function F2({ ctx }: { ctx: Ctx }) {
         { label: bi("Difference factor f1", "فاکتور تفاوت f1"), value: f1 },
         { label: bi("Conclusion", "نتیجه"), value: verdict },
       ]}
-      message={ok ? "" : bi("Enter at least three paired time points.", "دست‌کم سه زمان جفت‌شده وارد کنید.")[locale]}
+      message={ok ? warn : bi("Enter at least three paired time points.", "دست‌کم سه زمان جفت‌شده وارد کنید.")[locale]}
       note={bi(
         "f2 of 50–100 means similar profiles (f1 0–15). Conditions: at least 12 units per product, identical time points, no more than one point above 85% dissolved for either product, and a coefficient of variation of no more than 20% at early points and 10% at later points. If both products release ≥ 85% within 15 minutes, the profiles are similar without f2. " +
           listNote.en,
