@@ -103,8 +103,8 @@ export const calculations = [
   {
     key: "maco",
     group: "formulation",
-    label: bi("Cleaning validation (MACO)", "اعتبارسنجی تمیزکاری (MACO)"),
-    title: bi("Cleaning validation: maximum allowable carryover and swab/rinse limits", "اعتبارسنجی تمیزکاری: حداکثر انتقال مجاز (MACO) و حدود نمونه‌برداری Swab و Rinse"),
+    label: bi("Cleaning validation (MACO)", "صحه‌گذاری نظافت (MACO)"),
+    title: bi("Cleaning validation: maximum allowable carryover and swab/rinse limits", "صحه‌گذاری نظافت (Cleaning validation): حداکثر انتقال مجاز (MACO) و حدود نمونه‌برداری Swab و Rinse"),
     equation: "MACO = PDE × MBS / MDD ;  swab limit = MACO × A_swab / A_shared",
   },
   {
@@ -208,8 +208,8 @@ export const calculations = [
   {
     key: "hplc",
     group: "analysis",
-    label: bi("Assay (HPLC, external standard)", "تعیین مقدار (HPLC، استاندارد خارجی)"),
-    title: bi("Assay by external standard (HPLC or UV)", "تعیین مقدار با استاندارد خارجی (HPLC یا UV)"),
+    label: bi("Assay (HPLC, external standard)", "Assay (HPLC، استاندارد خارجی)"),
+    title: bi("Assay by external standard (HPLC or UV)", "Assay با استاندارد خارجی (HPLC یا UV)"),
     equation: "%LC = (A_u/A_s)·C_s·V_u·(W̄/W_u)/LC × 100",
   },
   {
@@ -222,15 +222,15 @@ export const calculations = [
   {
     key: "uv",
     group: "analysis",
-    label: bi("UV assay (A 1%, 1 cm)", "تعیین مقدار UV \u2066(A 1%, 1 cm)\u2069"),
-    title: bi("UV–visible assay by specific absorbance (Beer–Lambert law)", "تعیین مقدار UV–Visible با جذب ویژه (قانون بیر–لامبرت)"),
+    label: bi("UV assay (A 1%, 1 cm)", "Assay به روش UV \u2066(A 1%, 1 cm)\u2069"),
+    title: bi("UV–visible assay by specific absorbance (Beer–Lambert law)", "Assay به روش UV–Visible با جذب ویژه (قانون بیر–لامبرت)"),
     equation: "c (g/100 mL) = A / (A¹%₁cm × b)",
   },
   {
     key: "tit",
     group: "analysis",
-    label: bi("Titrimetric assay", "تعیین مقدار تیتریمتری"),
-    title: bi("Titrimetric assay (direct or back titration)", "تعیین مقدار به روش تیتراسیون (مستقیم یا برگشتی)"),
+    label: bi("Titrimetric assay", "Assay تیتریمتری"),
+    title: bi("Titrimetric assay (direct or back titration)", "Assay به روش تیتراسیون (مستقیم یا برگشتی)"),
     equation: "% = (V − V_b)·(M/M_nom)·E / W × 100",
   },
   {
@@ -243,8 +243,8 @@ export const calculations = [
   {
     key: "sst",
     group: "analysis",
-    label: bi("System suitability (USP <621>)", "انطباق سیستم \u2066(USP <621>)\u2069"),
-    title: bi("Chromatographic system suitability: plates, resolution, tailing and %RSD", "انطباق سیستم کروماتوگرافی: تعداد بشقابک، تفکیک، دنباله‌دهی و %RSD"),
+    label: bi("System suitability (USP <621>)", "System suitability \u2066(USP <621>)\u2069"),
+    title: bi("Chromatographic system suitability: plates, resolution, tailing and %RSD", "System suitability کروماتوگرافی: Plate count، Resolution، Tailing factor و \u2066%RSD\u2069"),
     equation: "N = 5.54·(t_R/W_h)² ;  R_s = 1.18·Δt_R/(W_h1 + W_h2) ;  T = W_0.05/2f",
   },
   {
@@ -300,7 +300,7 @@ export const calculations = [
     key: "cpk",
     group: "analysis",
     label: bi("Process capability (Cp, Cpk)", "توانایی فرایند (Cp و Cpk)"),
-    title: bi("Process capability: Cp, Cpk and expected out-of-specification rate", "توانایی فرایند: Cp، Cpk و درصد پیش‌بینی خارج از مشخصات"),
+    title: bi("Process capability: Cp, Cpk and expected out-of-specification rate", "توانایی فرایند: Cp، Cpk و درصد پیش‌بینی خارج از Specification"),
     equation: "Cp = (USL − LSL) ÷ 6s ;  Cpk = min(USL − x̄, x̄ − LSL) ÷ 3s",
   },
   {

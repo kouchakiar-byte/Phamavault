@@ -22,6 +22,7 @@ const flowClasses: Bi[] = [
 /** Upper bounds of each USP <1174> class. */
 const carrBounds = [10, 15, 20, 25, 31, 37];
 const reposeBounds = [30, 35, 40, 45, 55, 65];
+const hausnerBounds = [1.11, 1.18, 1.25, 1.34, 1.45, 1.59];
 const classOf = (x: number, bounds: number[]) => {
   const i = bounds.findIndex((b) => x <= b);
   return flowClasses[i === -1 ? bounds.length : i];
@@ -37,7 +38,7 @@ export function Flow({ ctx }: { ctx: Ctx }) {
     bulk = `${fixed(m / v0, 3)} g/mL`;
     tapped = `${fixed(m / vf, 3)} g/mL`;
     ci = `${fixed(c, 1)}%  ·  ${classOf(c, carrBounds)[locale]}`;
-    hr = fixed(v0 / vf, 2);
+    hr = `${fixed(v0 / vf, 2)}  ·  ${classOf(Number((v0 / vf).toFixed(2)), hausnerBounds)[locale]}`;
   }
   if (h > 0 && r > 0) {
     const deg = (Math.atan(h / r) * 180) / Math.PI;
