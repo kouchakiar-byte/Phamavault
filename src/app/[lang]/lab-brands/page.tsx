@@ -1,5 +1,4 @@
 import { LabBrandList } from "@/components/lab-brand-list";
-import { QuoteRequest } from "@/components/quote-request";
 import { SimpleHeader } from "@/components/simple-header";
 import { Container } from "@/components/ui";
 import { labBrands, labBrandsCopy as t, labSupplierCount } from "@/content/lab-brands";
@@ -34,11 +33,6 @@ export default async function LabBrandsPage() {
           labels={{ filter: t.filter[locale], companies: t.companies[locale], open: t.open[locale], empty: t.empty[locale] }}
         />
         <p className="rounded-xl border border-capsule-400/40 bg-capsule-400/10 px-4 py-3 text-sm leading-relaxed text-ink">{t.note[locale]}</p>
-        <section className="rounded-card border border-line bg-paper p-6 sm:p-8">
-          <h2 className="text-xl font-bold text-vault-900">{t.askTitle[locale]}</h2>
-          <p className="mt-2 mb-5 text-muted">{t.askText[locale]}</p>
-          <QuoteRequest locale={locale} />
-        </section>
       </Container>
     </>
   );
