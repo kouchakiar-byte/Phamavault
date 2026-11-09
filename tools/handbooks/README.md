@@ -7,6 +7,7 @@ node tools/handbooks/hplc/build.mjs            # full handbook → tools/handboo
 node tools/handbooks/hplc/build.mjs --preview  # cover + first chapters only
 node tools/handbooks/dissolution/build.mjs     # issue 2 → tools/handbooks/dissolution/out/PharmaVault-Dissolution-Handbook.pdf
 node tools/handbooks/validation/build.mjs      # issue 3 → tools/handbooks/validation/out/PharmaVault-Validation-Handbook.pdf
+node tools/handbooks/oos/build.mjs             # issue 4 → tools/handbooks/oos/out/PharmaVault-OOS-Handbook.pdf
 ```
 
 Needs Playwright with Chromium (`/opt/node-tools/node_modules/playwright`, `/opt/pw-browsers/chromium`),
