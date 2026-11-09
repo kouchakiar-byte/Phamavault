@@ -12,6 +12,10 @@ import validationPage3 from "@/assets/handbooks/validation-page-3.webp";
 import hplcPage1 from "@/assets/handbooks/hplc-page-1.webp";
 import hplcPage2 from "@/assets/handbooks/hplc-page-2.webp";
 import hplcPage3 from "@/assets/handbooks/hplc-page-3.webp";
+import oosCover from "@/assets/handbooks/oos-cover.webp";
+import oosPage1 from "@/assets/handbooks/oos-page-1.webp";
+import oosPage2 from "@/assets/handbooks/oos-page-2.webp";
+import oosPage3 from "@/assets/handbooks/oos-page-3.webp";
 
 export type FreeHandbook = {
   slug: string;
@@ -35,6 +39,40 @@ export type FreeHandbook = {
 
 /** Weekly handbooks, newest first. Only the newest is free; earlier issues are for subscribers. */
 export const freeHandbooks: FreeHandbook[] = [
+  {
+    slug: "oos",
+    issue: 4,
+    published: "2026-11-09",
+    title: bi("OOS and OOT investigations — an applied handbook", "راهنمای کاربردی بررسی نتایج OOS و OOT"),
+    subtitle: bi(
+      "From the laboratory Phase I to the full-scale Phase II, batch disposition and CAPA: the FDA OOS guidance (Rev. 1, 2022) and EU GMP, hypothesis testing, retest, resample and averaging, OOT in stability and process data, case studies, forms and worked examples.",
+      "از فاز I آزمایشگاهی تا فاز II، تصمیم درباره بچ و CAPA: راهنمای OOS سازمان FDA (ویرایش 1، 2022) و EU GMP، فرضیه‌آزمایی، Retest، Resample و Averaging، OOT در داده‌های پایداری و فرایند، مطالعات موردی، فرم‌ها و مثال‌های حل‌شده.",
+    ),
+    pdf: "pharmavault-oos-handbook.pdf",
+    sizeMb: 1.1,
+    pages: 42,
+    cover: oosCover,
+    coverAlt: bi("Cover of the PharmaVault OOS and OOT investigations handbook", "جلد هندبوک بررسی نتایج OOS و OOT فارماوالت"),
+    samples: [oosPage1, oosPage2, oosPage3],
+    stats: [
+      { value: 42, label: bi("pages", "صفحه") },
+      { value: 9, label: bi("chapters", "فصل") },
+      { value: 10, label: bi("case studies", "مطالعه موردی") },
+      { value: 3, label: bi("worked examples", "مثال حل‌شده") },
+    ],
+    chapters: [
+      bi("Definitions: OOS, OOT and atypical results", "مفاهیم و تعاریف: OOS، OOT و نتیجه غیرعادی"),
+      bi("Regulatory framework: Barr 1993, FDA guidance, 21 CFR 211, EU GMP and MHRA", "چارچوب مقررات: پرونده Barr، راهنمای FDA، 21 CFR 211، EU GMP و MHRA"),
+      bi("Phase Ia: the laboratory investigation and checklist", "فاز Ia: بررسی آزمایشگاهی و چک‌لیست"),
+      bi("Phase Ib: hypothesis testing", "فاز Ib: فرضیه‌آزمایی"),
+      bi("Phase II: the full-scale investigation and root cause", "فاز II: بررسی کامل و علت‌یابی"),
+      bi("Retest, resample, averaging and outliers", "Retest، Resample، Averaging و Outlier"),
+      bi("OOT results in stability and process data", "نتایج OOT در پایداری و فرایند"),
+      bi("Batch disposition, CAPA, reporting and inspection findings", "تصمیم درباره بچ، CAPA، گزارش‌دهی و یافته‌های بازرسی"),
+      bi("10 case studies", "10 مطالعه موردی"),
+      bi("Appendices: Phase I form, Phase II report template, worked examples, glossary, references", "پیوست‌ها: فرم فاز I، الگوی گزارش فاز II، مثال‌های حل‌شده، واژه‌نامه و منابع"),
+    ],
+  },
   {
     slug: "validation",
     issue: 3,
