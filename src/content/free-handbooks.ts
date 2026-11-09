@@ -49,6 +49,7 @@ export const freeHandbooks: FreeHandbook[] = [
       "از فاز I آزمایشگاهی تا فاز II، تصمیم درباره بچ و CAPA: راهنمای OOS سازمان FDA (ویرایش 1، 2022) و EU GMP، فرضیه‌آزمایی، Retest، Resample و Averaging، OOT در داده‌های پایداری و فرایند، مطالعات موردی، فرم‌ها و مثال‌های حل‌شده.",
     ),
     pdf: "pharmavault-oos-handbook.pdf",
+    edition: 2,
     sizeMb: 1.1,
     pages: 42,
     cover: oosCover,
