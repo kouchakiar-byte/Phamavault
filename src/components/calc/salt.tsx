@@ -96,7 +96,12 @@ const bases = [
 
 const pubchem = (cid: number) => `https://pubchem.ncbi.nlm.nih.gov/compound/${cid}`;
 
-export function Salt({ ctx }: { ctx: Ctx }) {
+/**
+ * `preselect`: an Orange Book name to open with (from a link on the API database), and
+ * `water`: the water of crystallisation of the form that database lists;
+ * `tableOpen`: show the whole table unfolded (the stand-alone page).
+ */
+export function Salt({ ctx, preselect = "", water = "", tableOpen = false }: { ctx: Ctx; preselect?: string; water?: string; tableOpen?: boolean }) {
   const { v, set, locale } = ctx;
   const rows = useSalts();
   const custom = v["sl-id"] === "custom";
@@ -126,6 +131,18 @@ export function Salt({ ctx }: { ctx: Ctx }) {
     set("sl-hw", String(rows?.find((r) => r.en === key)?.w ?? 0));
     setQuery("");
   };
+  const pickFromTable = (key: string) => {
+    pick(key);
+    document.getElementById("sl-q")?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+
+  // Open on the salt named in the link, once the table has loaded.
+  useEffect(() => {
+    const hit = preselect ? rows?.find((r) => r.en === preselect) : undefined;
+    if (!hit) return;
+    set("sl-id", hit.en);
+    set("sl-hw", water !== "" && Number(water) >= 0 ? water : String(hit.w));
+  }, [rows, preselect, water, set]);
 
   const unit = "mg";
   return (
@@ -266,7 +283,7 @@ export function Salt({ ctx }: { ctx: Ctx }) {
           </a>
         </p>
       )}
-      <SaltTable rows={rows} locale={locale} onPick={pick} />
+      <SaltTable rows={rows} locale={locale} onPick={pickFromTable} open={tableOpen} />
     </Panel>
   );
 }
@@ -299,7 +316,7 @@ function TextInput({ ctx, id, label, placeholder }: { ctx: Ctx; id: string; labe
 const PAGE = 40;
 
 /** The whole table, searchable, for browsing and checking. */
-function SaltTable({ rows, locale, onPick }: { rows: SaltRow[] | null; locale: Locale; onPick: (key: string) => void }) {
+function SaltTable({ rows, locale, onPick, open }: { rows: SaltRow[] | null; locale: Locale; onPick: (key: string) => void; open: boolean }) {
   const [filter, setFilter] = useState("");
   const [shown, setShown] = useState(PAGE);
   const list = useMemo(() => {
@@ -309,7 +326,7 @@ function SaltTable({ rows, locale, onPick }: { rows: SaltRow[] | null; locale: L
   }, [rows, filter]);
   if (!rows) return null;
   return (
-    <details className="rounded-xl border border-line">
+    <details className="rounded-xl border border-line" open={open}>
       <summary className="cursor-pointer px-4 py-3 text-sm font-bold text-vault-900">
         {bi(`All ${rows.length} salts in the table`, `جدول کامل ${rows.length} نمک`)[locale]}
       </summary>

@@ -1,6 +1,7 @@
 import { calculations } from "@/content/calculations";
 import { referenceSections } from "@/content/references";
 import { searchCopy } from "@/content/search";
+import { saltForms } from "@/content/salt-forms";
 import { sections } from "@/content/sections";
 import { excipients, formulation, handbooks, regulatory, sops, type RawMaterial } from "@/data";
 import { monographs } from "@/data/monographs";
@@ -125,6 +126,7 @@ const calculatorAliases: Record<string, string> = {
   hlb: "امولسی‌فایر امولسیفایر",
   caps: "سایز کپسول",
   maco: "سواب آبکشی",
+  salt: "ملح بیس ضریب نمک salt factor base equivalent",
 };
 
 /** `aliases` (synonyms, trade names) count as titles when matching but are not shown. */
@@ -211,6 +213,17 @@ function buildStatic(): Entry[] {
       }),
     );
   }
+
+  out.push(
+    entry({
+      group: "materials",
+      section: "materials",
+      title: saltForms.title,
+      sub: saltForms.lead,
+      path: "materials/salt-forms",
+      extra: keys("ملح بیس ضریب نمک فرم نمکی هیدرات salt factor base equivalent hydrate stoichiometry", saltForms.lead.en, saltForms.lead.fa),
+    }),
+  );
 
   for (const g of regulatory.ich) {
     out.push(
