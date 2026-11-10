@@ -12,6 +12,9 @@ import { formatNumber } from "@/lib/format";
 import { useUrlParam } from "@/lib/use-url-param";
 import { Count, Field, FilterBar, TableWrap } from "./filters";
 import { Chip } from "./ui";
+import type { SaltLink } from "@/lib/salt-match";
+import { saltForms } from "@/content/salt-forms";
+import { href } from "@/lib/paths";
 
 /** C16H25N3O8S or C10H13NO4·1.5H2O: atom counts as subscripts, hydrate coefficients inline. */
 function Formula({ value }: { value: string }) {
@@ -37,7 +40,7 @@ function Synonyms({ value, locale }: { value: string; locale: Locale }) {
   );
 }
 
-type Props = { locale: Locale; data: typeof RawMaterialData };
+type Props = { locale: Locale; data: typeof RawMaterialData; /** Raw materials found in the salt table. */ salts?: Record<string, SaltLink> };
 
 /** One colour per BCS class; the class number is always written, so colour is never the only cue. */
 const bcsTone: Record<string, string> = {
@@ -50,7 +53,7 @@ const bcsTone: Record<string, string> = {
 /** Rows rendered at a time; the rest follow with "show more". */
 const PAGE = 50;
 
-export function MaterialTable({ locale, data }: Props) {
+export function MaterialTable({ locale, data, salts = {} }: Props) {
   const urlQuery = useUrlParam("q");
   const [typed, setQuery] = useState<string | null>(null);
   const query = typed ?? urlQuery;
@@ -139,6 +142,7 @@ export function MaterialTable({ locale, data }: Props) {
                     {r.name}
                   </span>
                   <Synonyms value={r.synonyms} locale={locale} />
+                  {salts[r.name] && <SaltBadge link={salts[r.name]} locale={locale} />}
                 </td>
                 <td className="num">{r.cas}</td>
                 <td>
@@ -176,5 +180,18 @@ export function MaterialTable({ locale, data }: Props) {
       </>
       )}
     </>
+  );
+}
+
+/** Salt factor of the listed form, linking to the converter opened on it. */
+function SaltBadge({ link, locale }: { link: SaltLink; locale: Locale }) {
+  const url = `${href(locale, "materials/salt-forms")}?salt=${encodeURIComponent(link.en)}&w=${link.w}`;
+  return (
+    <a
+      href={url}
+      className="mt-1 inline-flex items-center gap-1 rounded-full border border-molecule-400/60 bg-molecule-50 px-2 py-0.5 text-xs font-semibold text-molecule-700 hover:border-molecule-500"
+    >
+      {saltForms.factor[locale]} <bdi dir="ltr" className="font-mono">{link.sf.toFixed(4)}</bdi>
+    </a>
   );
 }

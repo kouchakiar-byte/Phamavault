@@ -16,8 +16,8 @@ export const calculations = [
   {
     key: "pot",
     group: "formulation",
-    label: bi("Potency calculation", "محاسبه پوتنسی (Potency)"),
-    title: bi("Potency calculation: API quantity from assay, water, residual solvents and salt factor", "محاسبه پوتنسی: مقدار ماده مؤثره بر اساس Assay، رطوبت، حلال باقیمانده و ضریب نمک"),
+    label: bi("Potency calculation", "محاسبه Potency"),
+    title: bi("Potency calculation: API quantity from assay, water, residual solvents and salt factor", "محاسبه Potency: مقدار ماده مؤثره بر اساس Assay، رطوبت، حلال باقیمانده و ضریب نمک"),
     equation: "m = LC × SF × 100 / [Assay × (100 − W − RS) / 100]",
   },
   {

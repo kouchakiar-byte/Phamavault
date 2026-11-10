@@ -315,7 +315,7 @@ leaflets.push(
     stepsTitle: bi("Where and how", "کجا و چگونه"),
     steps: [
       bi("Keep medicines in a cool, dry place away from sunlight; the bathroom and the area near the stove are not suitable.", "دارو را در جای خنک و خشک و دور از نور خورشید نگهداری کنید؛ حمام و کنار اجاق گاز مناسب نیستند."),
-      bi("Keep each medicine in its original pack with its leaflet.", "هر دارو را در بسته‌بندی اصلی و همراه بروشور خودش نگه دارید."),
+      bi("Keep each medicine in its original pack with its leaflet.", "هر دارو را در بسته‌بندی اصلی و همراه بروشور آن نگه دارید."),
       bi("Keep medicines out of the reach and sight of children, ideally locked away.", "دارو را دور از دسترس و دید کودکان، و ترجیحاً در کمد قفل‌دار، نگهداری کنید."),
       bi("Medicines labelled for the fridge: 2–8 °C, not in the freezer.", `داروهای یخچالی را در دمای ${ltr("2–8 °C")} نگهداری کنید، نه در فریزر.`),
       bi("Do not leave medicines in a car.", "دارو را در خودرو رها نکنید."),

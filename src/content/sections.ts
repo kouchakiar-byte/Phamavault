@@ -50,7 +50,7 @@ export const sections = [
     plate: "EX",
     icon: Layers,
     group: "databases",
-    title: bi("Pharmaceutical Excipients Database", "پایگاه داده مواد جانبی دارویی (اکسیپیان‌ها)"),
+    title: bi("Pharmaceutical Excipients Database", "پایگاه داده مواد جانبی دارویی (Excipients)"),
     description: bi(
       "Functional category, typical concentration range, dosage-form applicability and CAS number for each excipient.",
       "طبقه‌بندی عملکردی، محدوده غلظت متداول، کاربرد در اشکال دارویی و شماره CAS هر ماده جانبی.",
@@ -77,7 +77,7 @@ export const sections = [
     title: bi("Pharmaceutical Calculations", "محاسبات داروسازی"),
     description: bi(
       "Formulation, physical pharmacy and analytical calculations: potency, HLB, powder flow, capsule fill, coating, isotonicity, osmolarity, buffers, stability kinetics, HPLC and UV assay, system suitability, linearity, dissolution and f2, content uniformity, Karl Fischer and titration.",
-      "محاسبات فرمولاسیون، فیزیکال فارماسی و آنالیز: پوتنسی، HLB، جریان‌پذیری پودر، پرکردن کپسول، روکش‌دهی، ایزوتونیسیته، اسمولاریته، بافر، سینتیک پایداری، تعیین مقدار HPLC و UV، انطباق سیستم، خطی بودن، انحلال و f2، یکنواختی محتوا، کارل فیشر و تیتراسیون.",
+      "محاسبات فرمولاسیون، فیزیکال فارماسی و آنالیز: Potency، HLB، جریان‌پذیری پودر، پرکردن کپسول، روکش‌دهی، ایزوتونیسیته، اسمولاریته، بافر، سینتیک پایداری، تعیین مقدار HPLC و UV، System suitability، خطی بودن، انحلال و f2، یکنواختی محتوا، کارل فیشر و تیتراسیون.",
     ),
   },
   {

@@ -486,8 +486,8 @@ const saltForms: Preset[] = [
 
 const potencyModes = [
   { value: "pct", label: bi("Assay in % (chemical APIs)", "Assay به درصد (مواد مؤثره شیمیایی)") },
-  { value: "ugmg", label: bi("Potency in µg of active per mg (antibiotics)", "پوتنسی به میکروگرم ماده فعال در هر میلی‌گرم (آنتی‌بیوتیک‌ها)") },
-  { value: "iumg", label: bi("Potency in IU per mg (biologics, some antibiotics)", "پوتنسی به واحد بین‌المللی در هر میلی‌گرم (بیولوژیک‌ها و برخی آنتی‌بیوتیک‌ها)") },
+  { value: "ugmg", label: bi("Potency in µg of active per mg (antibiotics)", "Potency به میکروگرم ماده فعال در هر میلی‌گرم (آنتی‌بیوتیک‌ها)") },
+  { value: "iumg", label: bi("Potency in IU per mg (biologics, some antibiotics)", "Potency به واحد بین‌المللی در هر میلی‌گرم (بیولوژیک‌ها و برخی آنتی‌بیوتیک‌ها)") },
 ];
 
 const potencyBases = [
@@ -571,9 +571,9 @@ function Pot({ ctx }: { ctx: Ctx }) {
       title={calculation("pot").title}
       form={
         <>
-          <Choice ctx={ctx} id="p-mode" label={bi("How potency is reported", "نحوه گزارش پوتنسی")} options={potencyModes} />
+          <Choice ctx={ctx} id="p-mode" label={bi("How potency is reported", "نحوه گزارش Potency")} options={potencyModes} />
           <NumberInput ctx={ctx} id="p-lc" label={lcLabel} />
-          <NumberInput ctx={ctx} id="p-pot" label={bi(`Assay / potency on the CoA (${unit})`, `Assay یا پوتنسی در برگه آنالیز (${unit})`)} />
+          <NumberInput ctx={ctx} id="p-pot" label={bi(`Assay / potency on the CoA (${unit})`, `Assay یا Potency در برگه آنالیز (${unit})`)} />
           <Choice ctx={ctx} id="p-basis" label={bi("Basis of the assay", "مبنای گزارش Assay")} options={potencyBases} />
           {dried && (
             <>
@@ -593,7 +593,7 @@ function Pot({ ctx }: { ctx: Ctx }) {
       }
       results={[
         { label: bi("Salt factor (SF)", "ضریب نمک (SF)"), value: sf, hidden: mode !== "pct" },
-        { label: bi("As-is potency", "پوتنسی بر پایه as is"), value: asIs },
+        { label: bi("As-is potency", "Potency بر پایه as is"), value: asIs },
         { label: bi("Quantity to dispense per unit", "مقدار توزین در هر واحد"), value: perUnit },
         { label: bi("Quantity per batch", "مقدار در هر بچ"), value: batch },
         { label: bi("Reduce the diluent per unit by (vs. the claimed form at 100%)", "کاهش پرکننده در هر واحد (نسبت به فرم ادعای برچسب با خلوص 100%)"), value: comp, hidden: mode === "iumg" },
@@ -601,7 +601,7 @@ function Pot({ ctx }: { ctx: Ctx }) {
       message={msg}
       note={bi(
         "% assay: m = LC × SF × 100 ÷ P; µg/mg: m = LC × 1000 ÷ P; IU/mg: m = LC ÷ P, where P is the as-is potency. On a dried, anhydrous or solvent-free basis, P = assay × (100 − W − RS) ÷ 100, with W the water content or LOD and RS the residual solvents (%); leave RS at 0 when LOD is used, since LOD already includes volatile solvents. Take assay and water from the certificate of analysis of the lot in use, and lower the q.s. diluent by the compensation amount so the unit weight stays constant. Example: amoxicillin trihydrate is specified as 900–1050 µg of amoxicillin per mg on the anhydrous basis.",
-        "Assay درصدی: \u2066m = LC × SF × 100 ÷ P\u2069؛ میکروگرم بر میلی‌گرم: \u2066m = LC × 1000 ÷ P\u2069؛ واحد بر میلی‌گرم: \u2066m = LC ÷ P\u2069؛ که P پوتنسی نمونه بر پایه as is است. اگر Assay بر پایه ماده خشک، بدون آب یا بدون حلال گزارش شده باشد: \u2066P = Assay × (100 − W − RS) ÷ 100\u2069 که W درصد آب یا LOD و RS درصد حلال باقیمانده است؛ اگر از LOD استفاده می‌کنید RS را صفر بگذارید، چون LOD حلال‌های فرار را هم در بر دارد. Assay و رطوبت را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه جبران کاهش دهید تا وزن واحد ثابت بماند. مثال: آموکسی‌سیلین تری‌هیدرات با پوتنسی 900 تا 1050 میکروگرم آموکسی‌سیلین در هر میلی‌گرم بر پایه بدون آب مشخص می‌شود.",
+        "Assay درصدی: \u2066m = LC × SF × 100 ÷ P\u2069؛ میکروگرم بر میلی‌گرم: \u2066m = LC × 1000 ÷ P\u2069؛ واحد بر میلی‌گرم: \u2066m = LC ÷ P\u2069؛ که P مقدار Potency نمونه بر پایه as is است. اگر Assay بر پایه ماده خشک، بدون آب یا بدون حلال گزارش شده باشد: \u2066P = Assay × (100 − W − RS) ÷ 100\u2069 که W درصد آب یا LOD و RS درصد حلال باقیمانده است؛ اگر از LOD استفاده می‌کنید RS را صفر بگذارید، چون LOD حلال‌های فرار را هم در بر دارد. Assay و رطوبت را از برگه آنالیز همان سری ماده استخراج کنید و مقدار پرکننده q.s. را به اندازه جبران کاهش دهید تا وزن واحد ثابت بماند. مثال: آموکسی‌سیلین تری‌هیدرات با Potency 900 تا 1050 میکروگرم آموکسی‌سیلین در هر میلی‌گرم بر پایه بدون آب مشخص می‌شود.",
       )}
     />
   );

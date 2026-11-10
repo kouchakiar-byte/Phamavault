@@ -304,7 +304,7 @@ export const compounding = {
   calcs: [
     { key: "dil", label: bi("Dilution and alligation", "رقیق‌سازی و آلیگیشن") },
     { key: "conc", label: bi("Concentration units", "تبدیل واحد غلظت") },
-    { key: "pot", label: bi("Potency and salt factor", "پوتنسی و ضریب نمک") },
+    { key: "pot", label: bi("Potency and salt factor", "Potency و ضریب نمک") },
     { key: "bsa", label: bi("BSA and body weight", "سطح بدن و وزن بدن") },
   ],
   refs: [

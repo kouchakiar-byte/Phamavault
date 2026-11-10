@@ -158,7 +158,7 @@ export const qaMore = {
   pqr: [
     bi("Starting and packaging materials, especially new sources and the traceability of the active substance supply chain.", "مواد اولیه و بسته‌بندی، به‌ویژه منابع جدید و ردیابی زنجیره تأمین ماده مؤثره."),
     bi("Critical in-process controls and finished product results.", "نتایج کنترل‌های بحرانی حین فرایند و محصول نهایی."),
-    bi("Batches that failed specification and their investigations.", "بچ‌های خارج از مشخصات و بررسی‌های آن‌ها."),
+    bi("Batches that failed specification and their investigations.", "بچ‌های خارج از Specification و بررسی‌های آن‌ها."),
     bi("Significant deviations, their investigations and the effectiveness of the CAPA taken.", "انحرافات مهم، بررسی آن‌ها و اثربخشی CAPAهای انجام‌شده."),
     bi("Changes to processes or analytical methods.", "تغییرات فرایند یا روش‌های آنالیز."),
     bi("Variations to the marketing authorisation submitted, granted or refused.", "Variationهای پروانه محصول که ارسال، تأیید یا رد شده‌اند."),
