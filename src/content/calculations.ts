@@ -33,7 +33,7 @@ export const calculations = [
   {
     key: "salt",
     group: "formulation",
-    label: bi("Salt ↔ base converter", "تبدیل نمک به Base"),
+    label: bi("Salt ↔ base converter", "تبدیل نمک به Base و برعکس"),
     title: bi("Salt ↔ base conversion: salt to weigh for a dose of the active moiety, and back", "تبدیل نمک به Base: مقدار نمک برای دوز معین از Base و برعکس"),
     equation: "m_salt = m_base × MW salt ÷ (n × MW base) × (100 ÷ Assay) × [100 ÷ (100 − LOD)]",
   },
