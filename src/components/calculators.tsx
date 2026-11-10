@@ -16,6 +16,7 @@ import { Nitro, Q3c, Q3d, Rot, Std, qualityDefaults } from "./calc/quality";
 import { Cfu, Eli, F0, Gel, Lal, Sal, microDefaults } from "./calc/micro";
 import { Bsa, Crcl, Hed, Inf, Pk, clinicalDefaults } from "./calc/clinical";
 import { Ach, Cpk, Lodq, Samp, Yld, gmpDefaults } from "./calc/gmp";
+import { Salt, saltDefaults } from "./calc/salt";
 import { useUrlParam } from "@/lib/use-url-param";
 import { useGuestUse } from "@/lib/use-guest-use";
 import { account } from "@/content/account";
@@ -714,7 +715,7 @@ function Batch({ ctx }: { ctx: Ctx }) {
 // ---------- bench ----------
 
 export const calcComponents: Record<CalculationKey, (props: { ctx: Ctx }) => React.JSX.Element> = {
-  pot: Pot, asy: Asy, bat: Batch, hlb: Hlb, flow: Flow, caps: Caps, tab: Tab, coat: Coat, sup: Sup,
+  pot: Pot, asy: Asy, salt: Salt, bat: Batch, hlb: Hlb, flow: Flow, caps: Caps, tab: Tab, coat: Coat, sup: Sup,
   iso: Iso, fpd: Fpd, osm: Osm, buf: Buf, bcap: BufCap, dil: Dil, conc: Conc, meq: Meq, vit: Vit, kin: Kin,
   hplc: Hplc, imp: Imp, uv: Uv, tit: Tit, kf: Kf, sst: Sst, lin: Lin, diss: Diss, f2: F2, udu: Udu,
   wv: Wv, fri: Fri, moist: Moist, maco: Maco, mkt: Mkt, q1e: Q1e,
@@ -764,6 +765,7 @@ export const calcDefaults: Values = {
   ...microDefaults,
   ...clinicalDefaults,
   ...gmpDefaults,
+  ...saltDefaults,
 };
 
 /** With `demo`, every calculator shows its worked example and nothing can be changed. */
