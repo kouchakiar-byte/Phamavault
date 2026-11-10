@@ -345,7 +345,7 @@ export const moreInterviewQuestions: InterviewQuestion[] = [
     bi("What are established conditions in ICH Q12?", "Established conditions در ICH Q12 چیست؟"),
     bi(
       "The elements of the registered information that are considered necessary to assure quality, so that changing them needs a regulatory submission. Defining them clearly, together with a post-approval change management protocol, lets the company manage other changes within its own quality system.",
-      "عناصری از اطلاعات ثبت‌شده که برای تضمین کیفیت لازم شمرده می‌شوند، به‌طوری که تغییر آن‌ها به ارسال به مرجع نیاز دارد. تعریف روشن آن‌ها، همراه با Post-approval change management protocol، به شرکت اجازه می‌دهد سایر تغییرات را در سیستم کیفیت خودش مدیریت کند.",
+      "عناصری از اطلاعات ثبت‌شده که برای تضمین کیفیت لازم شمرده می‌شوند، به‌طوری که تغییر آن‌ها به ارسال به مرجع نیاز دارد. تعریف روشن آن‌ها، همراه با Post-approval change management protocol، به شرکت اجازه می‌دهد سایر تغییرات را در سیستم کیفیت خود مدیریت کند.",
     ),
     "ICH Q12",
   ),
@@ -621,7 +621,7 @@ export const moreInterviewQuestions: InterviewQuestion[] = [
     bi("Whether you leave for a positive reason and will speak about this company the same way one day.", "اینکه به دلیلی مثبت جدا می‌شوید و روزی درباره همین شرکت هم با همین احترام صحبت خواهید کرد."),
     bi(
       "“I learned a lot there, but the role had no room left to grow into validation work. This post offers that, and it is the direction I want to go.”",
-      "«آنجا خیلی چیزها یاد گرفتم، ولی در آن نقش دیگر فرصتی برای رشد به سمت صحه‌گذاری نبود. این موقعیت چنین فرصتی دارد و همان مسیری است که می‌خواهم.»",
+      "«در آن شرکت تجربه‌های ارزشمندی به دست آوردم، اما آن نقش دیگر فرصتی برای رشد در حوزه صحه‌گذاری نداشت. این موقعیت چنین فرصتی دارد و همان مسیری است که می‌خواهم.»",
     ),
     bi("Criticising your former manager or colleagues, complaining, or making salary the only reason.", "انتقاد از مدیر یا همکاران قبلی، گلایه کردن، یا اینکه حقوق را تنها دلیل بگویید."),
   ),
@@ -681,7 +681,7 @@ export const moreInterviewQuestions: InterviewQuestion[] = [
     bi("Self-awareness and what you are doing to improve.", "خودشناسی و کاری که برای بهتر شدن انجام می‌دهید."),
     bi(
       "“I used to find it hard to say no and took on too much. Now I list my tasks with their deadlines and agree priorities with my supervisor when new work comes in.”",
-      "«قبلاً نه گفتن برایم سخت بود و کار زیادی قبول می‌کردم. حالا کارهایم را با موعدشان فهرست می‌کنم و وقتی کار جدیدی می‌رسد، اولویت‌ها را با سرپرست هماهنگ می‌کنم.»",
+      "«پیش‌تر برایم دشوار بود درخواستی را رد کنم و مسئولیت‌های بیش از حد می‌پذیرفتم. اکنون کارهایم را با موعدشان فهرست می‌کنم و هنگام دریافت کار جدید، اولویت‌ها را با سرپرست هماهنگ می‌کنم.»",
     ),
     bi("“I am a perfectionist” as a disguised strength, or a weakness central to the job, such as being careless with records.", "پاسخ «من کمال‌گرا هستم» که نقطه قوت پنهان است، یا ضعفی که در قلب همین شغل است؛ مثل بی‌دقتی در ثبت سوابق."),
   ),

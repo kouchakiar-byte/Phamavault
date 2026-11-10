@@ -37,7 +37,7 @@
      },
      {
       "en": "Low-dose APIs: use geometric dilution or a pre-blend/sieved premix; match API and excipient particle size to reduce segregation. Blend uniformity is commonly sampled with a thief at 1–3 × the unit-dose weight from stratified locations; a widely used historical criterion is RSD ≤ 5 % with individual results within ±10 % of the mean, and the final product must meet content uniformity per USP <905>.",
-      "fa": "داروهای کم‌دوز: از رقیق‌سازی هندسی (⁦geometric dilution⁩) یا پیش‌مخلوط الک‌شده استفاده کنید و اندازهٔ ذرهٔ API و اکسیپیان را نزدیک به هم انتخاب کنید تا جداشدن کم شود. نمونه‌برداری یکنواختی مخلوط معمولاً با نمونه‌بردار thief و به اندازهٔ ⁦1–3 ×⁩ وزن یک دوز از نقاط لایه‌بندی‌شده انجام می‌شود؛ معیار رایج سنتی ⁦RSD ≤ 5 %⁩ با نتایج فردی در محدودهٔ ⁦±10 %⁩ میانگین است و محصول نهایی باید یکنواختی محتوا طبق ⁦USP <905>⁩ را برآورده کند."
+      "fa": "داروهای کم‌دوز: از رقیق‌سازی هندسی (⁦geometric dilution⁩) یا پیش‌مخلوط الک‌شده استفاده کنید و اندازهٔ ذرهٔ API و Excipient را نزدیک به هم انتخاب کنید تا جداشدن کم شود. نمونه‌برداری یکنواختی مخلوط معمولاً با نمونه‌بردار thief و به اندازهٔ ⁦1–3 ×⁩ وزن یک دوز از نقاط لایه‌بندی‌شده انجام می‌شود؛ معیار رایج سنتی ⁦RSD ≤ 5 %⁩ با نتایج فردی در محدودهٔ ⁦±10 %⁩ میانگین است و محصول نهایی باید یکنواختی محتوا طبق ⁦USP <905>⁩ را برآورده کند."
      },
      {
       "en": "Segregation troubleshooting: content drift during a compression run (start vs end of hopper) → reduce particle-size disparity or granulate, use mass-flow hopper geometry, minimise free-fall height and hopper refills from large drops, and keep the hopper level constant. NIR-based PAT can define the blending endpoint rather than a fixed time.",
@@ -58,7 +58,7 @@
     },
     "summary": {
      "en": "Granulation enlarges and densifies particles to improve flow and compressibility, lock the API into granules so it cannot segregate, and reduce dust. In wet granulation the liquid passes through pendular, funicular and capillary saturation states; on drying, dissolved binder forms solid bridges, which makes the route robust for high-dose, poorly compressible APIs but exposes them to water and heat. Dry granulation (roller compaction or slugging) densifies by pressure alone and suits moisture- or heat-sensitive APIs, but the first compaction consumes part of the material's bonding capacity (loss of re-compactibility, 'work hardening'). Direct compression is the simplest and cheapest route but depends entirely on excipients with good flow and compactibility and on well-controlled API particle properties.",
-     "fa": "گرانوله‌سازی ذرات را بزرگ‌تر و متراکم‌تر می‌کند تا جریان و تراکم‌پذیری بهتر شود، API درون گرانول تثبیت شود و جدا نشود و گرد و غبار کاهش یابد. در گرانوله‌سازی مرطوب، مایع حالت‌های اشباع pendular، funicular و capillary را طی می‌کند و هنگام خشک‌شدن، چسبانندهٔ حل‌شده پل‌های جامد می‌سازد؛ این روش برای APIهای پردوز با تراکم‌پذیری ضعیف قابل‌اطمینان است اما دارو را در معرض آب و حرارت قرار می‌دهد. گرانوله‌سازی خشک (⁦roller compaction⁩ یا slugging) فقط با فشار متراکم می‌کند و برای APIهای حساس به رطوبت یا حرارت مناسب است، اما فشردگی اول بخشی از ظرفیت پیوندپذیری ماده را مصرف می‌کند (کاهش تراکم‌پذیری مجدد یا ⁦work hardening⁩). پرس مستقیم ساده‌ترین و ارزان‌ترین روش است اما کاملاً به اکسیپیان‌هایی با جریان و تراکم‌پذیری خوب و به کنترل دقیق ویژگی‌های ذره‌ای API وابسته است."
+     "fa": "گرانوله‌سازی ذرات را بزرگ‌تر و متراکم‌تر می‌کند تا جریان و تراکم‌پذیری بهتر شود، API درون گرانول تثبیت شود و جدا نشود و گرد و غبار کاهش یابد. در گرانوله‌سازی مرطوب، مایع حالت‌های اشباع pendular، funicular و capillary را طی می‌کند و هنگام خشک‌شدن، چسبانندهٔ حل‌شده پل‌های جامد می‌سازد؛ این روش برای APIهای پردوز با تراکم‌پذیری ضعیف قابل‌اطمینان است اما دارو را در معرض آب و حرارت قرار می‌دهد. گرانوله‌سازی خشک (⁦roller compaction⁩ یا slugging) فقط با فشار متراکم می‌کند و برای APIهای حساس به رطوبت یا حرارت مناسب است، اما فشردگی اول بخشی از ظرفیت پیوندپذیری ماده را مصرف می‌کند (کاهش تراکم‌پذیری مجدد یا ⁦work hardening⁩). پرس مستقیم ساده‌ترین و ارزان‌ترین روش است اما کاملاً به Excipientهایی با جریان و تراکم‌پذیری خوب و به کنترل دقیق ویژگی‌های ذره‌ای API وابسته است."
     },
     "points": [
      {
@@ -79,7 +79,7 @@
      },
      {
       "en": "Direct-compression excipients: MCC (e.g. 102 grades for flow), spray-dried lactose, anhydrous dibasic calcium phosphate and co-processed fillers; combine plastic (MCC) and brittle (lactose, DCP) materials to balance strength and lubricant sensitivity. DC is most reliable at low-to-moderate drug loading or when the API itself flows and compacts well.",
-      "fa": "اکسیپیان‌های پرس مستقیم: MCC (مثلاً گریدهای ⁦102⁩ برای جریان بهتر)، لاکتوز اسپری‌درای، دی‌کلسیم فسفات بی‌آب و پرکننده‌های ⁦co-processed⁩؛ ترکیب مواد پلاستیک (MCC) و شکننده (لاکتوز، DCP) تعادل بین استحکام و حساسیت به روان‌کننده را برقرار می‌کند. پرس مستقیم در بارگذاری کم تا متوسط دارو یا زمانی که خود API جریان و تراکم‌پذیری خوبی دارد مطمئن‌ترین است."
+      "fa": "Excipientهای پرس مستقیم: MCC (مثلاً گریدهای ⁦102⁩ برای جریان بهتر)، لاکتوز اسپری‌درای، دی‌کلسیم فسفات بی‌آب و پرکننده‌های ⁦co-processed⁩؛ ترکیب مواد پلاستیک (MCC) و شکننده (لاکتوز، DCP) تعادل بین استحکام و حساسیت به روان‌کننده را برقرار می‌کند. پرس مستقیم در بارگذاری کم تا متوسط دارو یا زمانی که خود API جریان و تراکم‌پذیری خوبی دارد مطمئن‌ترین است."
      },
      {
       "en": "Milling and granule size: excess fines worsen flow and favour capping; oversized granules cause weight variation and segregation. Control screen size and mill speed, and specify a particle size distribution (sieve analysis or laser diffraction) for the granule.",
@@ -184,7 +184,7 @@
     },
     "summary": {
      "en": "Hard capsules (gelatin or HPMC) are filled mainly by dosator or dosing-disc (tamping) machines, both of which form a lightly compacted plug; fill-weight accuracy therefore depends on bulk density, flow, compressibility and lubricity of the powder. Gelatin shells contain about 13–16 % water, which acts as a plasticiser: they become brittle when dried out at low humidity and soft or sticky at high humidity, whereas HPMC shells contain less water (about 4–6 %) and are preferred for hygroscopic or moisture-sensitive fills. Gelatin can cross-link on exposure to aldehydes (e.g. from excipient impurities) or heat and humidity, forming a pellicle that slows dissolution; USP <711> therefore permits enzymes (pepsin or pancreatin) in the dissolution medium for gelatin capsules.",
-     "fa": "کپسول‌های سخت (ژلاتینی یا HPMC) عمدتاً با دستگاه‌های دوزاتوری یا دیسک دوزینگ (tamping) پر می‌شوند که هر دو یک plug کمی فشرده می‌سازند؛ بنابراین دقت وزن پرشدن به دانسیتهٔ توده، جریان، تراکم‌پذیری و روان‌بودن پودر وابسته است. پوستهٔ ژلاتینی حدود ⁦13–16 %⁩ آب دارد که نقش نرم‌کننده را ایفا می‌کند: در رطوبت پایین خشک و شکننده و در رطوبت بالا نرم و چسبنده می‌شود، در حالی که پوستهٔ HPMC آب کمتری (حدود ⁦4–6 %⁩) دارد و برای محتوای جاذب‌الرطوبه یا حساس به رطوبت ترجیح داده می‌شود. ژلاتین در مواجهه با آلدهیدها (مثلاً از ناخالصی‌های اکسیپیان) یا حرارت و رطوبت دچار اتصال عرضی (⁦cross-linking⁩) می‌شود و لایه‌ای (pellicle) تشکیل می‌دهد که انحلال را کند می‌کند؛ به همین دلیل ⁦USP <711>⁩ افزودن آنزیم (پپسین یا پانکراتین) به محیط انحلال کپسول‌های ژلاتینی را مجاز می‌داند."
+     "fa": "کپسول‌های سخت (ژلاتینی یا HPMC) عمدتاً با دستگاه‌های دوزاتوری یا دیسک دوزینگ (tamping) پر می‌شوند که هر دو یک plug کمی فشرده می‌سازند؛ بنابراین دقت وزن پرشدن به دانسیتهٔ توده، جریان، تراکم‌پذیری و روان‌بودن پودر وابسته است. پوستهٔ ژلاتینی حدود ⁦13–16 %⁩ آب دارد که نقش نرم‌کننده را ایفا می‌کند: در رطوبت پایین خشک و شکننده و در رطوبت بالا نرم و چسبنده می‌شود، در حالی که پوستهٔ HPMC آب کمتری (حدود ⁦4–6 %⁩) دارد و برای محتوای جاذب‌الرطوبه یا حساس به رطوبت ترجیح داده می‌شود. ژلاتین در مواجهه با آلدهیدها (مثلاً از ناخالصی‌های Excipient) یا حرارت و رطوبت دچار اتصال عرضی (⁦cross-linking⁩) می‌شود و لایه‌ای (pellicle) تشکیل می‌دهد که انحلال را کند می‌کند؛ به همین دلیل ⁦USP <711>⁩ افزودن آنزیم (پپسین یا پانکراتین) به محیط انحلال کپسول‌های ژلاتینی را مجاز می‌داند."
     },
     "points": [
      {
@@ -209,7 +209,7 @@
      },
      {
       "en": "Dissolution slowdown on stability in gelatin capsules → suspect cross-linking; screen excipients for aldehydes/peroxides, protect from heat and humidity, apply the enzyme-containing two-tier test of USP <711>, or switch to HPMC shells. Note that some HPMC shells (gelled with gellan or carrageenan) can open more slowly in certain acidic or cation-containing media.",
-      "fa": "کندشدن انحلال کپسول‌های ژلاتینی در مطالعات پایداری ← به ⁦cross-linking⁩ مشکوک شوید؛ اکسیپیان‌ها را از نظر آلدهید/پراکسید غربال کنید، از حرارت و رطوبت محافظت کنید، از آزمون دومرحله‌ای حاوی آنزیم ⁦USP <711>⁩ استفاده کنید یا به پوستهٔ HPMC تغییر دهید. توجه کنید برخی پوسته‌های HPMC (ژل‌شده با gellan یا carrageenan) ممکن است در برخی محیط‌های اسیدی یا حاوی کاتیون دیرتر گسیخته شوند."
+      "fa": "کندشدن انحلال کپسول‌های ژلاتینی در مطالعات پایداری ← به ⁦cross-linking⁩ مشکوک شوید؛ Excipientها را از نظر آلدهید/پراکسید غربال کنید، از حرارت و رطوبت محافظت کنید، از آزمون دومرحله‌ای حاوی آنزیم ⁦USP <711>⁩ استفاده کنید یا به پوستهٔ HPMC تغییر دهید. توجه کنید برخی پوسته‌های HPMC (ژل‌شده با gellan یا carrageenan) ممکن است در برخی محیط‌های اسیدی یا حاوی کاتیون دیرتر گسیخته شوند."
      }
     ],
     "refs": [
@@ -468,7 +468,7 @@
      },
      {
       "en": "Syrup NF is self-preserving; diluted or reduced-sugar syrups need a preservative. Sugar-free vehicles use sorbitol solution 70%, glycerol or maltitol with intense sweeteners; polyols carry labelling thresholds in the EMA excipients guidance (hereditary fructose intolerance, laxative effect).",
-      "fa": "⁦Syrup NF⁩ خودنگهدار است، اما شربت‌های رقیق‌شده یا کم‌قند به نگهدارنده نیاز دارند. در حامل‌های بدون قند از محلول سوربیتول ⁦70%⁩، گلیسرول یا مالتیتول همراه با شیرین‌کننده‌های قوی استفاده می‌شود؛ پلی‌ال‌ها در راهنمای اکسیپیان‌های EMA آستانه‌های برچسب‌گذاری دارند (عدم تحمل ارثی فروکتوز، اثر ملین)."
+      "fa": "⁦Syrup NF⁩ خودنگهدار است، اما شربت‌های رقیق‌شده یا کم‌قند به نگهدارنده نیاز دارند. در حامل‌های بدون قند از محلول سوربیتول ⁦70%⁩، گلیسرول یا مالتیتول همراه با شیرین‌کننده‌های قوی استفاده می‌شود؛ پلی‌ال‌ها در راهنمای Excipientهای EMA آستانه‌های برچسب‌گذاری دارند (عدم تحمل ارثی فروکتوز، اثر ملین)."
      },
      {
       "en": "Control oxidation by nitrogen sparging and nitrogen headspace, chelation of trace metals with disodium edetate (≈ 0.005–0.1% w/v) and an antioxidant matched to pH (sodium metabisulfite in acidic media, ascorbic acid); check for sulfite–drug adducts.",
@@ -552,7 +552,7 @@
     "points": [
      {
       "en": "Common oral cosolvents are ethanol, propylene glycol, glycerol and PEG 400; ethanol and propylene glycol have age-dependent thresholds in the EMA excipients labelling guidance, and US OTC oral products are limited to 10%, 5% and 0.5% alcohol for patients over 12, 6–12 and under 6 years (21 CFR 328).",
-      "fa": "کوسالونت‌های رایج خوراکی اتانول، پروپیلن گلیکول، گلیسرول و ⁦PEG 400⁩ هستند؛ اتانول و پروپیلن گلیکول در راهنمای برچسب‌گذاری اکسیپیان‌های EMA آستانه‌های وابسته به سن دارند و در آمریکا فرآورده‌های خوراکی OTC به حداکثر ⁦10%⁩، ⁦5%⁩ و ⁦0.5%⁩ الکل به ترتیب برای بیماران بالای ⁦12⁩ سال، ⁦6–12⁩ سال و زیر ⁦6⁩ سال محدود شده‌اند (⁦21 CFR 328⁩)."
+      "fa": "کوسالونت‌های رایج خوراکی اتانول، پروپیلن گلیکول، گلیسرول و ⁦PEG 400⁩ هستند؛ اتانول و پروپیلن گلیکول در راهنمای برچسب‌گذاری Excipientهای EMA آستانه‌های وابسته به سن دارند و در آمریکا فرآورده‌های خوراکی OTC به حداکثر ⁦10%⁩، ⁦5%⁩ و ⁦0.5%⁩ الکل به ترتیب برای بیماران بالای ⁦12⁩ سال، ⁦6–12⁩ سال و زیر ⁦6⁩ سال محدود شده‌اند (⁦21 CFR 328⁩)."
      },
      {
       "en": "Test every lot of glycerol, propylene glycol and sorbitol solution for diethylene glycol and ethylene glycol (USP monograph limit NMT 0.10% each); DEG contamination of oral liquids has repeatedly caused mass poisonings.",
@@ -663,11 +663,11 @@
      },
      {
       "en": "Natural-origin excipients (xanthan and other gums, starches, sucrose, flavours) can carry high bioburden—set incoming microbial limits; validate bulk hold times, and dissolve parabens in hot water before cooling and adding heat-sensitive components.",
-      "fa": "اکسیپیان‌های با منشأ طبیعی (زانتان و سایر صمغ‌ها، نشاسته‌ها، ساکارز، طعم‌دهنده‌ها) ممکن است بار میکروبی بالایی داشته باشند — برای مواد ورودی حدود میکروبی تعیین کنید؛ زمان نگهداری بالک را اعتبارسنجی کنید و پارابن‌ها را پیش از سردکردن و افزودن اجزای حساس به حرارت در آب داغ حل کنید."
+      "fa": "Excipientهای با منشأ طبیعی (زانتان و سایر صمغ‌ها، نشاسته‌ها، ساکارز، طعم‌دهنده‌ها) ممکن است بار میکروبی بالایی داشته باشند — برای مواد ورودی حدود میکروبی تعیین کنید؛ زمان نگهداری بالک را اعتبارسنجی کنید و پارابن‌ها را پیش از سردکردن و افزودن اجزای حساس به حرارت در آب داغ حل کنید."
      },
      {
       "en": "Troubleshooting: falling preservative assay → sorption into LDPE or rubber, hydrolysis or pH drift; borderline efficacy-test results → increase the pH margin, use a synergistic combination or reduce binding excipients.",
-      "fa": "عیب‌یابی: کاهش مقدار نگهدارنده ← جذب در LDPE یا لاستیک، هیدرولیز یا جابه‌جایی pH؛ نتایج مرزی آزمون کارایی نگهدارنده ← حاشیه pH را افزایش دهید، از ترکیب هم‌افزای نگهدارنده‌ها استفاده کنید یا اکسیپیان‌های اتصال‌دهنده را کاهش دهید."
+      "fa": "عیب‌یابی: کاهش مقدار نگهدارنده ← جذب در LDPE یا لاستیک، هیدرولیز یا جابه‌جایی pH؛ نتایج مرزی آزمون کارایی نگهدارنده ← حاشیه pH را افزایش دهید، از ترکیب هم‌افزای نگهدارنده‌ها استفاده کنید یا Excipientهای اتصال‌دهنده را کاهش دهید."
      }
     ],
     "refs": [
@@ -843,7 +843,7 @@
      },
      {
       "en": "Excipient roles: crystalline bulking agents (mannitol, glycine) give cake structure and allow warmer drying but must crystallise fully (annealing), since mannitol hemihydrate can release water on storage; amorphous lyoprotectants (sucrose, trehalose) stabilise proteins by water replacement and vitrification; polysorbate protects against denaturation at the ice interface.",
-      "fa": "نقش اکسیپیان‌ها: عوامل حجم‌دهنده بلوری (مانیتول، گلیسین) ساختار کیک را فراهم می‌کنند و خشک‌کردن در دمای بالاتر را ممکن می‌سازند اما باید کاملاً متبلور شوند (annealing)، زیرا همی‌هیدرات مانیتول ممکن است در طول نگهداری آب آزاد کند؛ محافظ‌های آمورف (ساکارز، ترهالوز) پروتئین‌ها را با جایگزینی آب و شیشه‌ای‌شدن پایدار می‌کنند؛ پلی‌سوربات از دناتوره‌شدن در سطح تماس یخ محافظت می‌کند."
+      "fa": "نقش Excipientها: عوامل حجم‌دهنده بلوری (مانیتول، گلیسین) ساختار کیک را فراهم می‌کنند و خشک‌کردن در دمای بالاتر را ممکن می‌سازند اما باید کاملاً متبلور شوند (annealing)، زیرا همی‌هیدرات مانیتول ممکن است در طول نگهداری آب آزاد کند؛ محافظ‌های آمورف (ساکارز، ترهالوز) پروتئین‌ها را با جایگزینی آب و شیشه‌ای‌شدن پایدار می‌کنند؛ پلی‌سوربات از دناتوره‌شدن در سطح تماس یخ محافظت می‌کند."
      },
      {
       "en": "Freezing: ice nucleation is random and sets ice crystal size and Rp; controlled nucleation (ice fog, depressurisation) and annealing above Tg′ give larger ice crystals, faster primary drying and better vial-to-vial uniformity.",
@@ -1209,7 +1209,7 @@
      },
      {
       "en": "Troubleshooting: vitamin C or A out of specification at accelerated but not long-term conditions → moisture/oxygen-driven → check packaging and blend moisture before raising the overage; B12 loss in a multivitamin with ascorbic acid → use coated B12 or a separate layer; browning of tablets → Maillard reaction or ascorbate oxidation → remove reducing sugars and control moisture.",
-      "fa": "عیب‌یابی: خارج از مشخصات بودن ویتامین C یا A در شرایط تسریع‌شده ولی نه در بلندمدت ← ناشی از رطوبت/اکسیژن ← پیش از افزایش overage، بسته‌بندی و رطوبت مخلوط را بررسی کنید؛ کاهش B12 در مولتی‌ویتامین حاوی آسکوربیک اسید ← از B12 پوشش‌دار یا لایه جداگانه استفاده کنید؛ قهوه‌ای شدن قرص ← واکنش Maillard یا اکسیداسیون آسکوربات ← قندهای احیاکننده را حذف و رطوبت را کنترل کنید."
+      "fa": "عیب‌یابی: خارج از Specification بودن ویتامین C یا A در شرایط تسریع‌شده ولی نه در بلندمدت ← ناشی از رطوبت/اکسیژن ← پیش از افزایش overage، بسته‌بندی و رطوبت مخلوط را بررسی کنید؛ کاهش B12 در مولتی‌ویتامین حاوی آسکوربیک اسید ← از B12 پوشش‌دار یا لایه جداگانه استفاده کنید؛ قهوه‌ای شدن قرص ← واکنش Maillard یا اکسیداسیون آسکوربات ← قندهای احیاکننده را حذف و رطوبت را کنترل کنید."
      }
     ],
     "refs": [
@@ -1525,7 +1525,7 @@
     },
     "summary": {
      "en": "ICH Q14 (adopted in 2023 together with Q2(R2)) starts analytical procedure development from an analytical target profile (ATP) stating what must be measured, over what range and with what accuracy and precision; the enhanced approach adds risk assessment, multivariate robustness studies and, where useful, a method operable design region (MODR). ICH Q2(R2) then sets the validation characteristics according to the procedure's purpose: specificity/selectivity, working range (with response/linearity), accuracy, precision (repeatability and intermediate precision), and detection/quantitation limits for impurity tests. Validation demonstrates fitness over the reportable range, and system suitability tests protect the method at every run.",
-     "fa": "⁦ICH Q14⁩ (که در سال 2023 همراه با ⁦Q2(R2)⁩ تصویب شد) توسعه روش آنالیز را با پروفایل هدف آنالیتیکی (ATP) آغاز می‌کند که مشخص می‌کند چه چیزی، در چه محدوده‌ای و با چه صحت و دقتی باید اندازه‌گیری شود؛ رویکرد پیشرفته (enhanced) ارزیابی ریسک، مطالعات چندمتغیره استحکام و در صورت نیاز ناحیه طراحی عملیاتی روش (MODR) را اضافه می‌کند. سپس ⁦ICH Q2(R2)⁩ ویژگی‌های اعتبارسنجی را متناسب با هدف روش تعیین می‌کند: اختصاصیت/گزینش‌پذیری، محدوده کاری (همراه با پاسخ/خطی‌بودن)، صحت، دقت (تکرارپذیری و دقت میانی) و حد تشخیص/حد تعیین مقدار برای آزمون‌های ناخالصی. اعتبارسنجی مناسب بودن روش را در محدوده گزارش‌پذیر نشان می‌دهد و آزمون‌های تناسب سیستم (⁦system suitability⁩) در هر بار اجرا از روش محافظت می‌کنند."
+     "fa": "⁦ICH Q14⁩ (که در سال 2023 همراه با ⁦Q2(R2)⁩ تصویب شد) توسعه روش آنالیز را با پروفایل هدف آنالیتیکی (ATP) آغاز می‌کند که مشخص می‌کند چه چیزی، در چه محدوده‌ای و با چه صحت و دقتی باید اندازه‌گیری شود؛ رویکرد پیشرفته (enhanced) ارزیابی ریسک، مطالعات چندمتغیره استحکام و در صورت نیاز ناحیه طراحی عملیاتی روش (MODR) را اضافه می‌کند. سپس ⁦ICH Q2(R2)⁩ ویژگی‌های اعتبارسنجی را متناسب با هدف روش تعیین می‌کند: اختصاصیت/گزینش‌پذیری، محدوده کاری (همراه با پاسخ/خطی‌بودن)، صحت، دقت (تکرارپذیری و دقت میانی) و حد تشخیص/حد تعیین مقدار برای آزمون‌های ناخالصی. اعتبارسنجی مناسب بودن روش را در محدوده گزارش‌پذیر نشان می‌دهد و آزمون‌های System suitability (⁦system suitability⁩) در هر بار اجرا از روش محافظت می‌کنند."
     },
     "points": [
      {
@@ -1546,11 +1546,11 @@
      },
      {
       "en": "Robustness, studied during development under ICH Q14: deliberate variation of mobile-phase pH, organic proportion, column temperature, flow rate and column lot; the results define system suitability criteria and should be consistent with the harmonised allowable adjustments of USP <621>/Ph. Eur. 2.2.46.",
-      "fa": "استحکام (robustness) که طبق ⁦ICH Q14⁩ در مرحله توسعه بررسی می‌شود: تغییر عمدی pH فاز متحرک، نسبت حلال آلی، دمای ستون، سرعت جریان و لات ستون؛ نتایج، معیارهای تناسب سیستم را تعیین می‌کنند و باید با تنظیمات مجاز هماهنگ‌شده ⁦USP <621>/Ph. Eur. 2.2.46⁩ سازگار باشند."
+      "fa": "استحکام (robustness) که طبق ⁦ICH Q14⁩ در مرحله توسعه بررسی می‌شود: تغییر عمدی pH فاز متحرک، نسبت حلال آلی، دمای ستون، سرعت جریان و لات ستون؛ نتایج، معیارهای System suitability را تعیین می‌کنند و باید با تنظیمات مجاز هماهنگ‌شده ⁦USP <621>/Ph. Eur. 2.2.46⁩ سازگار باشند."
      },
      {
       "en": "System suitability (USP <621>): repeatability of replicate standard injections, resolution of the critical pair (commonly ≥ 1.5, often set at ≥ 2.0), symmetry/tailing factor (harmonised default 0.8–1.8), plate count, and signal-to-noise at the LOQ level for impurity methods.",
-      "fa": "تناسب سیستم ⁦(USP <621>)⁩: تکرارپذیری تزریق‌های مکرر استاندارد، رزولوشن جفت بحرانی (معمولاً ⁦≥ 1.5⁩ و اغلب ⁦≥ 2.0⁩)، فاکتور تقارن/tailing (پیش‌فرض هماهنگ‌شده ⁦0.8–1.8⁩)، تعداد بشقابک تئوری و نسبت سیگنال به نویز در سطح LOQ برای روش‌های ناخالصی."
+      "fa": "System suitability ⁦(USP <621>)⁩: تکرارپذیری تزریق‌های مکرر استاندارد، Resolution جفت بحرانی (معمولاً ⁦≥ 1.5⁩ و اغلب ⁦≥ 2.0⁩)، فاکتور تقارن/tailing (پیش‌فرض هماهنگ‌شده ⁦0.8–1.8⁩)، تعداد بشقابک تئوری و نسبت سیگنال به نویز در سطح LOQ برای روش‌های ناخالصی."
      },
      {
       "en": "Pitfalls: compendial methods used without verification (USP <1226> requires verification under actual conditions of use), solution stability and filter compatibility not demonstrated, and validating a method that is still being changed → freeze the procedure before validation and manage later changes through ICH Q14/Q12 lifecycle change control.",

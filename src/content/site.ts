@@ -280,7 +280,7 @@ export const copy = {
     title: bi("{n} calculators for formulation calculations, physical pharmacy and analysis", "{n} ماشین‌حساب برای محاسبات فرمولاسیون، فیزیکال فارماسی و آنالیز"),
     lead: bi(
       "From potency, powder flow and capsule fill to buffer capacity, stability kinetics, HPLC assay, system suitability, dissolution f2 and content uniformity. Each calculator states its governing equation and its pharmacopoeial or ICH reference.",
-      "از پوتنسی، جریان‌پذیری پودر و پرکردن کپسول تا ظرفیت بافری، سینتیک پایداری، تعیین مقدار HPLC، انطباق سیستم، فاکتور f2 انحلال و یکنواختی محتوا. هر ماشین‌حساب معادله مبنا و مرجع فارماکوپه‌ای یا ICH خود را نشان می‌دهد.",
+      "از Potency، جریان‌پذیری پودر و پرکردن کپسول تا ظرفیت بافری، سینتیک پایداری، تعیین مقدار HPLC، System suitability، فاکتور f2 انحلال و یکنواختی محتوا. هر ماشین‌حساب معادله مبنا و مرجع فارماکوپه‌ای یا ICH خود را نشان می‌دهد.",
     ),
     open: bi("Open calculations", "ورود به محاسبات"),
   },

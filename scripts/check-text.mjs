@@ -35,8 +35,14 @@ const rules = [
     skip: ALLOWED,
   },
   {
+    name: "English technical term written in Persian letters or translated",
+    re: new RegExp(`(?<!${P})(پوتنسی|اکسیپیان\S*|مدیوم|رزولوشن|سینکر|انطباق سیستم|تناسب سیستم|مناسب بودن سیستم)(?!${P})`, "g"),
+    fix: "Potency, Excipient, Medium, Resolution, Sinker, System suitability",
+    skip: ALLOWED,
+  },
+  {
     name: "colloquial word",
-    re: new RegExp(`(?<!${P})(یه|میشه|می‌شه|نمیشه|اینجوری|اونجوری|اونجا|اینا|اونا|چجوری|دیگه|براش|بهش|ازش|میخوای|می‌خوای)(?!${P})`, "g"),
+    re: new RegExp(`(?<!${P})(یه|میشه|می‌شه|نمیشه|اینجوری|اونجوری|اونجا|اینا|اونا|چجوری|دیگه|براش|بهش|ازش|میخوای|می‌خوای|خیلی|واقعاً|حالا|کنار گذاشت)(?!${P})`, "g"),
     fix: "formal written Persian",
   },
   { name: "unit spelled ml", re: /\b\d+(?:[.,]\d+)?\s?ml\b/g, fix: "mL" },

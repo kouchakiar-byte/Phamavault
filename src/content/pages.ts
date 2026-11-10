@@ -52,7 +52,7 @@ export const pages = {
       api: bi("Active pharmaceutical ingredients (API)", "مواد مؤثره دارویی (API)"),
       vit: bi("Vitamins", "ویتامین‌ها"),
       min: bi("Minerals and mineral salts", "مینرال‌ها"),
-      exc: bi("Excipients and pharmaceutical solvents", "مواد جانبی (اکسیپیان) و حلال‌های دارویی"),
+      exc: bi("Excipients and pharmaceutical solvents", "مواد جانبی (Excipients) و حلال‌های دارویی"),
       cos: bi("Cosmetic and personal-care raw materials", "مواد اولیه آرایشی‌بهداشتی"),
       sup: bi("Amino acids, plant extracts and other supplement ingredients", "آمینواسیدها، عصاره‌های گیاهی و سایر مواد مکمل"),
       bio: bi("Biologics", "فرآورده‌های بیولوژیک"),

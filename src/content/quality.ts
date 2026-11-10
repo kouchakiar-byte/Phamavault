@@ -29,7 +29,7 @@ export const qaKnowledge = {
       title: bi("Corrective and preventive action (CAPA)", "اقدام اصلاحی و پیشگیرانه (CAPA)"),
       text: bi(
         "Root cause investigation of deviations, complaints, OOS results and audit findings, with a check of effectiveness.",
-        "بررسی علت ریشه‌ای انحرافات، شکایات، نتایج خارج از مشخصات و یافته‌های ممیزی، همراه با بررسی اثربخشی اقدام.",
+        "بررسی علت ریشه‌ای انحرافات، شکایات، نتایج خارج از Specification و یافته‌های ممیزی، همراه با بررسی اثربخشی اقدام.",
       ),
       enabler: false,
     },
@@ -309,13 +309,13 @@ export const qc = {
     "استحکام روش (Robustness) در مرحله توسعه ارزیابی می‌شود. برای آزمون کمّی ناخالصی ممکن است حد تشخیص هم لازم باشد.",
   ),
 
-  oosTitle: bi("Investigating out-of-specification (OOS) results", "بررسی نتایج خارج از مشخصات (OOS)"),
+  oosTitle: bi("Investigating out-of-specification (OOS) results", "بررسی نتایج خارج از Specification (OOS)"),
   oos: [
     {
       title: bi("Phase I — laboratory investigation", "مرحله اول — بررسی آزمایشگاهی"),
       text: bi(
         "Analyst and supervisor check calculations, instrument and system suitability, standards, reagents and sample preparation, keeping the original solutions. A result is invalidated only for a documented, assignable laboratory error.",
-        "آنالیست و سرپرست، محاسبات، دستگاه و انطباق سیستم، استانداردها، معرف‌ها و آماده‌سازی نمونه را بررسی می‌کنند و محلول‌های اولیه نگه داشته می‌شود. نتیجه فقط در صورت خطای آزمایشگاهی مشخص و مستند باطل می‌شود.",
+        "آنالیست و سرپرست، محاسبات، دستگاه و System suitability، استانداردها، معرف‌ها و آماده‌سازی نمونه را بررسی می‌کنند و محلول‌های اولیه نگه داشته می‌شود. نتیجه فقط در صورت خطای آزمایشگاهی مشخص و مستند باطل می‌شود.",
       ),
     },
     {
@@ -409,7 +409,7 @@ export const qc = {
   ),
 
   // ---------- System suitability ----------
-  sstTitle: bi("Chromatographic system suitability (USP <621> · Ph. Eur. 2.2.46)", `انطباق سیستم کروماتوگرافی ${ltr("(USP <621> · Ph. Eur. 2.2.46)")}`),
+  sstTitle: bi("Chromatographic system suitability (USP <621> · Ph. Eur. 2.2.46)", `System suitability کروماتوگرافی ${ltr("(USP <621> · Ph. Eur. 2.2.46)")}`),
   sstCols: { parameter: bi("Parameter", "پارامتر"), what: bi("What it shows", "آنچه نشان می‌دهد"), typical: bi("Typical requirement", "الزام متداول") },
   sst: [
     { parameter: bi("Repeatability (replicate injections)", "تکرارپذیری (تزریق‌های تکراری)"), what: bi("Precision of the system", "دقت سیستم"), typical: bi("RSD as the monograph states; for assays commonly ≤ 2.0% for 5 injections", "RSD طبق مونوگراف؛ برای تعیین مقدار معمولاً ≤ 2.0% برای 5 تزریق") },
@@ -420,7 +420,7 @@ export const qc = {
   ],
   sstNote: bi(
     "System suitability is an integral part of the method: if it fails, no sample result from that run may be reported.",
-    "انطباق سیستم بخش جدایی‌ناپذیر روش است: اگر برقرار نباشد، هیچ نتیجه نمونه‌ای از آن اجرای آنالیز (Run) قابل گزارش نیست.",
+    "System suitability بخش جدایی‌ناپذیر روش است: اگر برقرار نباشد، هیچ نتیجه نمونه‌ای از آن اجرای آنالیز (Run) قابل گزارش نیست.",
   ),
 
   // ---------- Dissolution ----------
@@ -428,7 +428,7 @@ export const qc = {
   dissoCols: { app: bi("Apparatus", "دستگاه"), use: bi("Typical use", "کاربرد متداول"), speed: bi("Usual speed", "سرعت متداول") },
   disso: [
     { app: bi("1 — Basket", "1 — Basket"), use: bi("Capsules, floating and multiparticulate forms", "کپسول، فرآورده‌های شناور و چندذره‌ای"), speed: "50–100 rpm" },
-    { app: bi("2 — Paddle", "2 — Paddle"), use: bi("Tablets (most common); sinkers for capsules", "قرص (رایج‌ترین)؛ با سینکر برای کپسول"), speed: "50–75 rpm" },
+    { app: bi("2 — Paddle", "2 — Paddle"), use: bi("Tablets (most common); sinkers for capsules", "قرص (رایج‌ترین)؛ با Sinker برای کپسول"), speed: "50–75 rpm" },
     { app: bi("3 — Reciprocating cylinder", "3 — سیلندر رفت‌وبرگشتی (Reciprocating cylinder)"), use: bi("Extended release, pH-change profiles", "رهش طولانی و پروفایل با تغییر pH"), speed: "5–30 dips/min" },
     { app: bi("4 — Flow-through cell", "4 — سلول جریانی (Flow-through cell)"), use: bi("Poorly soluble drugs, implants, microspheres", "داروهای کم‌محلول، ایمپلنت و میکروسفر"), speed: "4–16 mL/min" },
   ],
