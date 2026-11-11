@@ -44,3 +44,4 @@ tools/salt-forms/cache/
 tools/salt-forms/salts.json
 tools/salt-forms/rejects.json
 tools/salt-forms/candidates.json
+__pycache__/
