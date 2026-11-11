@@ -3,6 +3,7 @@ import { freeHandbookCopy } from "@/content/free-handbooks";
 import { interviewCopy } from "@/content/interview";
 import { questionsCopy } from "@/content/questions";
 import { coaCopy } from "@/content/coa-review";
+import { coaBuilderCopy } from "@/content/coa-builder";
 import { copy, siteConfig } from "@/content/site";
 import { sectionGroups, sections } from "@/content/sections";
 import { getLocale } from "@/i18n/locale";
@@ -86,6 +87,11 @@ export async function SiteFooter() {
                   <li>
                     <Link href={href(locale, "coa-review")} className="inline-block py-1 hover:text-molecule-400">
                       {coaCopy.title[locale]}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={href(locale, "coa-builder")} className="inline-block py-1 hover:text-molecule-400">
+                      {coaBuilderCopy.title[locale]}
                     </Link>
                   </li>
                   <li>
