@@ -1,11 +1,13 @@
 import { Suspense } from "react";
-import { Calculator } from "lucide-react";
+import Link from "next/link";
+import { ArrowLeft, ArrowRight, Calculator, FilePlus2 } from "lucide-react";
 import { Calculators } from "@/components/calculators";
 import { PageHeader } from "@/components/page-header";
 import { GuestBanner, TrialBanner, sectionAccess } from "@/components/section-gate";
 import { ButtonLink, Container } from "@/components/ui";
 import { account } from "@/content/account";
 import { calculations } from "@/content/calculations";
+import { coaBuilderCopy } from "@/content/coa-builder";
 import { pages } from "@/content/pages";
 import { copy } from "@/content/site";
 import { bi } from "@/i18n/bi";
@@ -21,6 +23,32 @@ const lead = bi(
   page.lead.fa.replace("{n}", calculations.length.toLocaleString("fa-IR-u-nu-latn")),
 );
 const { gate: t } = account;
+const coaShort = bi(
+  "Lay out the Certificate of Analysis of a USP or BP raw material, record the results and download it as Word.",
+  "برگه آنالیز ماده اولیه USP یا BP را طراحی کنید، نتایج را ثبت کنید و آن را به صورت Word دریافت کنید.",
+);
+
+function CoaBuilderCard({ locale }: { locale: Locale }) {
+  return (
+    <Link
+      href={href(locale, "coa-builder")}
+      className="group mb-8 flex items-center gap-5 rounded-card border border-molecule-400/60 bg-gradient-to-l from-molecule-50 to-white p-5 transition hover:border-molecule-500 hover:shadow-md sm:p-6"
+    >
+      <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-vault-900 text-capsule-400">
+        <FilePlus2 className="size-6" aria-hidden="true" />
+      </span>
+      <span className="min-w-0 flex-1">
+        <span className="block text-lg font-bold text-vault-900">{coaBuilderCopy.title[locale]}</span>
+        <span className="mt-1 block text-sm leading-relaxed text-muted">{coaShort[locale]}</span>
+      </span>
+      {locale === "fa" ? (
+        <ArrowLeft className="size-5 shrink-0 text-molecule-600 transition group-hover:-translate-x-1" aria-hidden="true" />
+      ) : (
+        <ArrowRight className="size-5 shrink-0 text-molecule-600 transition group-hover:translate-x-1" aria-hidden="true" />
+      )}
+    </Link>
+  );
+}
 
 export const generateMetadata = () => pageMetadata(page.title, lead, "tools");
 
@@ -46,6 +74,7 @@ async function Tools({ locale }: { locale: Locale }) {
       {access.kind === "trial" && <TrialBanner locale={locale} day={access.day} />}
       {access.kind === "guest" && <GuestBanner locale={locale} left={guestLeft} />}
       <Container className="py-12">
+        <CoaBuilderCard locale={locale} />
         {demo && <ExampleNotice locale={locale} signedIn={access.kind === "trialOver"} />}
         <Calculators locale={locale} demo={demo} guestLeft={guestLeft} />
       </Container>
