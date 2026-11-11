@@ -11209,6 +11209,81 @@
    "p": [
     "مواد مؤثره دارویی (واردات)|Active pharmaceutical ingredients (import)|API"
    ]
+  },
+  {
+   "n": "توفیق آزماگ ایلیا (توفیکو)",
+   "e": "Tofigh Azmag Ilia (TOFICO)",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88981429",
+    "021-88981430",
+    "021-88981431",
+    "026-34000170"
+   ],
+   "mail": "sales@tofico.ir",
+   "web": "https://tofico.ir/",
+   "addr": "تهران، خیابان فاطمی، روبه‌روی وزارت کشور، خیابان میرزایی بی‌غش (4)، پلاک 21، واحد 3",
+   "src": "https://tofico.ir/preparative-hplc/",
+   "note": "مشاوره، فروش و نصب دستگاه‌های HPLC (تحلیلی و Preparative)، FPLC، GC، GC-MS و FTIR؛ دفتر دوم در کرج؛ اطلاعات از سایت شرکت (آبان 1405)",
+   "p": [
+    "دستگاه HPLC (تحلیلی و Preparative)|HPLC systems (analytical and preparative)",
+    "دستگاه FPLC|FPLC systems",
+    "دستگاه کروماتوگرافی گازی (GC و GC-MS)|Gas chromatographs (GC, GC-MS)",
+    "دستگاه FTIR|FTIR spectrometers",
+    "سکوبندی آزمایشگاه|Laboratory benches"
+   ]
+  },
+  {
+   "n": "ری نور آزما",
+   "e": "Raynoor Azma",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-88501052",
+    "021-88501053"
+   ],
+   "mail": "raynoorazma@gmail.com",
+   "web": "https://www.raynoor.com/",
+   "addr": "تهران، پل سیدخندان، ابتدای سهروردی شمالی، کوچه مهاجر، پلاک 4، واحد 6",
+   "src": "https://www.raynoor.com/",
+   "note": "واردات، فروش و خدمات تجهیزات آنالیز دستگاهی و آزمایشگاهی؛ محصولات Shimadzu در سایت معرفی شده است؛ اطلاعات از سایت شرکت (آبان 1405)",
+   "p": [
+    "دستگاه HPLC و LC-MS|HPLC and LC-MS systems",
+    "دستگاه GC و GC-MS|GC and GC-MS systems",
+    "اسپکتروفتومتر UV-Visible و FTIR|UV-Visible and FTIR spectrophotometers",
+    "جذب اتمی و ICP|Atomic absorption and ICP",
+    "دستگاه‌های Shimadzu|Shimadzu instruments|Shimadzu",
+    "ستون کروماتوگرافی|Chromatography columns",
+    "ترازو، سانتریفیوژ و آون آزمایشگاهی|Laboratory balances, centrifuges and ovens"
+   ]
+  },
+  {
+   "n": "آروین تجارت پژوه آزما",
+   "e": "Arvin Tejarat Pajouh Azma",
+   "t": "t",
+   "c": [
+    "lab"
+   ],
+   "prov": "تهران",
+   "city": "تهران",
+   "tel": [
+    "021-22622574"
+   ],
+   "addr": "تهران، خیابان شریعتی، خیابان ملک، کوچه جلالی، پلاک 10، واحد 1",
+   "src": "https://www.welch-us.com/pages/distributors",
+   "note": "توزیع‌کننده انحصاری ستون‌های HPLC برند Welch در ایران، طبق فهرست توزیع‌کنندگان سایت Welch (آبان 1405)",
+   "p": [
+    "ستون HPLC برند Welch|Welch HPLC columns|Welch"
+   ]
   }
  ],
  "provinceOrder": [
@@ -12130,6 +12205,19 @@
    "محیط کشت",
    "culture media",
    "culture medium"
+  ],
+  [
+   "hplc",
+   "اچ پی ال سی",
+   "کروماتوگرافی مایع",
+   "liquid chromatography"
+  ],
+  [
+   "gc",
+   "جی سی",
+   "کروماتوگرافی گازی",
+   "gas chromatography",
+   "gas chromatograph"
   ]
  ]
 }

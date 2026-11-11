@@ -101,12 +101,40 @@ export function has(hay: string, needle: string): boolean {
   return false;
 }
 
-const STOP_WORDS = ["ویتامین", "vitamin", "ماده", "اولیه", "b", "ب"];
+const STOP_WORDS = ["ویتامین", "vitamin", "ماده", "اولیه", "b", "ب", "های"];
 /** Stop words that still mean something when the query is nothing else («ویتامین» alone). */
 const ALONE_WORDS = new Set(["ویتامین", "vitamin"]);
 
+/*
+ * Words that say "an instrument" rather than which one: «دستگاه HPLC» is a
+ * search for HPLC, whether a company lists "HPLC systems", "Rayleigh HPLC" or
+ * "HPLC spare parts". Left out of the match, but they mark the query as an
+ * instrument search so that HPLC-grade solvents are not shown as instruments.
+ */
+const INSTRUMENT_WORDS = new Set([
+  "دستگاه", "سیستم", "تجهیزات", "instrument", "instruments", "system", "systems",
+  "equipment", "device", "devices", "machine", "analyzer", "analyser",
+]);
+/** Product lines that are chemicals, not instruments, even when they name the technique (Acetonitrile HPLC grade). */
+const CHEMICAL_LINE = /حلال|solvent|گرید|grade|استونیتریل|acetonitrile|متانول|methanol|هگزان|hexane|ایزوپروپانول|isopropanol|سیلیکاژل|silica/;
+
+/*
+ * Makers of the instrument: a company that imports Agilent or Waters is a
+ * source for an HPLC even when its list says only "Agilent products". One
+ * way only: searching "Agilent" does not list every HPLC seller.
+ */
+const INSTRUMENT_MAKERS: Record<string, string[]> = {
+  hplc: ["uhplc", "uplc", "agilent", "waters", "shimadzu", "knauer", "dionex", "thermo fisher", "thermo scientific"],
+  gc: ["agilent", "shimadzu", "thermo fisher", "thermo scientific", "perkinelmer"],
+};
+
+export const isInstrumentQuery = (q: string) => q.split(" ").some((w) => INSTRUMENT_WORDS.has(w));
+
 /** Each query word (or a synonym phrase inside the query) becomes a set of alternatives; all sets must match. */
 export function terms(q: string, synonyms: string[][]): string[][] {
+  const instrument = q.split(" ").filter((w) => w && !INSTRUMENT_WORDS.has(w));
+  // «دستگاه» alone is still a search; with a technique beside it, the technique decides.
+  if (instrument.length && instrument.length < q.split(" ").length) q = instrument.join(" ");
   let rest = ` ${q} `;
   const sets: string[][] = [];
   synonyms.forEach((g) => {
@@ -123,6 +151,11 @@ export function terms(q: string, synonyms: string[][]): string[][] {
     .forEach((w) => {
       if (w.length > 1 || /\d/.test(w)) sets.push([w]);
     });
+  // An instrument technique also finds the companies that import its makers.
+  sets.forEach((set, i) => {
+    const key = Object.keys(INSTRUMENT_MAKERS).find((k) => set.includes(k));
+    if (key) sets[i] = [...set, ...INSTRUMENT_MAKERS[key]];
+  });
   if (!sets.length) {
     const alone = q.split(" ").filter((w) => ALONE_WORDS.has(w));
     if (alone.length) sets.push(["ویتامین", "vitamin"]);
@@ -203,6 +236,7 @@ export function search(
 ): Result[] {
   const q = norm(f.query);
   const sets = q ? terms(q, synonyms) : [];
+  const instrumentQuery = isInstrumentQuery(q);
   const vitaminQuery = /ویتامین|vitamin/.test(q) || sets.some((g) => g.some((x) => /ویتامین|vitamin/.test(x)));
   const cats = q ? categoryMatch(q, categoryLabels) : [];
 
@@ -219,7 +253,9 @@ export function search(
 
   const rows = suppliers
     .map((s) => {
-      const hits = sets.length ? s.products.filter((p) => matchProduct(p.key, sets)) : [];
+      const hits = sets.length
+        ? s.products.filter((p) => matchProduct(p.key, sets) && !(instrumentQuery && CHEMICAL_LINE.test(p.key)))
+        : [];
       return { s, hits, match: kindOf(s, hits) };
     })
     .filter(
