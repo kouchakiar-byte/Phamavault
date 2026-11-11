@@ -26,49 +26,50 @@ export const materialTypes: { value: CoaMaterialType; label: Bi }[] = [
   { value: "excipient", label: bi("Excipient", "ماده جانبی (Excipient)") },
 ];
 
-/** A test of the catalogue: its name in each language and its method chapter in each pharmacopoeia. */
+/** A test of the catalogue: its English name (CoAs are issued in English) and its method chapter in each pharmacopoeia. */
 export type CoaTest = {
   id: string;
-  name: Bi;
+  /** Name as USP–NF words it. */
+  name: string;
+  /** Name as Ph. Eur. and BP word it, when different. */
+  nameEur?: string;
   /** USP–NF general chapter, e.g. "<921>". */
   usp?: string;
   /** Ph. Eur. general chapter, e.g. "2.5.12". */
   eur?: string;
-  /** Name used by Ph. Eur./BP when it differs (Sulfated ash for Residue on ignition). */
-  nameEur?: Bi;
 };
 
 export const coaTests: Record<string, CoaTest> = {
-  desc: { id: "desc", name: bi("Description (appearance)", "ظاهر (Description)"), nameEur: bi("Characters (appearance)", "Characters (ظاهر)") },
-  sol: { id: "sol", name: bi("Solubility", "حلالیت (Solubility)"), nameEur: bi("Characters (solubility)", "Characters (حلالیت)") },
-  idIr: { id: "idIr", name: bi("Identification: IR absorption", "شناسایی (Identification): IR"), usp: "<197>", eur: "2.2.24" },
-  idHplc: { id: "idHplc", name: bi("Identification: HPLC retention time", "شناسایی (Identification): زمان بازداری HPLC"), usp: "<621>", eur: "2.2.29" },
-  idIon: { id: "idIon", name: bi("Identification: counter-ion / ions", "شناسایی (Identification): Counter-ion یا یون‌ها"), usp: "<191>", eur: "2.3.1" },
-  clarity: { id: "clarity", name: bi("Appearance of solution: clarity", "ظاهر محلول: Clarity"), usp: "<641>", eur: "2.2.1" },
-  colour: { id: "colour", name: bi("Appearance of solution: colour", "ظاهر محلول: Colour"), usp: "<631>", eur: "2.2.2" },
-  ph: { id: "ph", name: bi("pH", "pH"), usp: "<791>", eur: "2.2.3" },
-  rot: { id: "rot", name: bi("Specific optical rotation", "چرخش نوری ویژه (Specific optical rotation)"), usp: "<781>", eur: "2.2.7" },
-  mp: { id: "mp", name: bi("Melting range", "دمای ذوب (Melting range)"), usp: "<741>", eur: "2.2.14" },
-  water: { id: "water", name: bi("Water (Karl Fischer)", "آب (Karl Fischer)"), usp: "<921>", eur: "2.5.12" },
-  lod: { id: "lod", name: bi("Loss on drying", "LOD (افت وزن در خشک کردن)"), usp: "<731>", eur: "2.2.32" },
-  roi: { id: "roi", name: bi("Residue on ignition", "Residue on ignition"), usp: "<281>", eur: "2.4.14", nameEur: bi("Sulfated ash", "Sulfated ash") },
-  chl: { id: "chl", name: bi("Chloride", "Chloride"), usp: "<221>", eur: "2.4.4" },
-  sulf: { id: "sulf", name: bi("Sulfate", "Sulfate"), usp: "<221>", eur: "2.4.13" },
-  ei: { id: "ei", name: bi("Elemental impurities", "ناخالصی‌های عنصری (Elemental impurities)"), usp: "<232>, <233>", eur: "5.20, 2.4.20" },
-  rsUnsp: { id: "rsUnsp", name: bi("Related substances: any unspecified impurity", "Related substances: هر ناخالصی نامشخص"), usp: "<621>", eur: "2.2.29" },
-  rsSpec: { id: "rsSpec", name: bi("Related substances: specified impurities", "Related substances: ناخالصی‌های مشخص‌شده"), usp: "<621>", eur: "2.2.29" },
-  rsTotal: { id: "rsTotal", name: bi("Related substances: total impurities", "Related substances: مجموع ناخالصی‌ها"), usp: "<621>", eur: "2.2.29" },
-  rsolv: { id: "rsolv", name: bi("Residual solvents", "حلال باقیمانده (Residual solvents)"), usp: "<467>", eur: "2.4.24, 5.4" },
-  assay: { id: "assay", name: bi("Assay (on the dried or anhydrous basis, as the monograph states)", "Assay (بر پایه ماده خشک یا بدون آب، طبق مونوگراف)"), usp: "<621> / <541>", eur: "2.2.29 / 2.2.20" },
-  potency: { id: "potency", name: bi("Potency (microbiological assay)", "Potency (روش میکروبی)"), usp: "<81>", eur: "2.7.2" },
-  tamc: { id: "tamc", name: bi("Microbial: TAMC", "میکروبی: TAMC"), usp: "<61>, <1111>", eur: "2.6.12, 5.1.4" },
-  tymc: { id: "tymc", name: bi("Microbial: TYMC", "میکروبی: TYMC"), usp: "<61>, <1111>", eur: "2.6.12, 5.1.4" },
-  bet: { id: "bet", name: bi("Bacterial endotoxins", "Bacterial endotoxins"), usp: "<85>", eur: "2.6.14" },
-  sterility: { id: "sterility", name: bi("Sterility", "Sterility"), usp: "<71>", eur: "2.6.1" },
-  psd: { id: "psd", name: bi("Particle size distribution", "توزیع اندازه ذرات (Particle size)"), usp: "<429> / <786>", eur: "2.9.31 / 2.9.38" },
-  density: { id: "density", name: bi("Bulk and tapped density", "دانسیته Bulk و Tapped"), usp: "<616>", eur: "2.9.34" },
-  visc: { id: "visc", name: bi("Viscosity", "ویسکوزیته (Viscosity)"), usp: "<911> / <912>", eur: "2.2.9 / 2.2.10" },
-  xrpd: { id: "xrpd", name: bi("Polymorphic form (XRPD)", "فرم پلی‌مورفی (XRPD)"), usp: "<941>", eur: "2.9.33" },
+  desc: { id: "desc", name: "Description", nameEur: "Appearance" },
+  sol: { id: "sol", name: "Solubility" },
+  idIr: { id: "idIr", name: "Identification (IR)", usp: "<197>", eur: "2.2.24" },
+  idHplc: { id: "idHplc", name: "Identification (HPLC retention time)", usp: "<621>", eur: "2.2.29" },
+  idIon: { id: "idIon", name: "Identification (Counter-ion)", usp: "<191>", eur: "2.3.1" },
+  clarity: { id: "clarity", name: "Completeness of solution", nameEur: "Appearance of solution (Clarity)", usp: "<641>", eur: "2.2.1" },
+  colour: { id: "colour", name: "Color of solution", nameEur: "Appearance of solution (Colour)", usp: "<631>", eur: "2.2.2" },
+  ph: { id: "ph", name: "pH", usp: "<791>", eur: "2.2.3" },
+  rot: { id: "rot", name: "Specific rotation", nameEur: "Specific optical rotation", usp: "<781>", eur: "2.2.7" },
+  mp: { id: "mp", name: "Melting range", nameEur: "Melting point", usp: "<741>", eur: "2.2.14" },
+  water: { id: "water", name: "Water (Karl Fischer)", nameEur: "Water", usp: "<921>", eur: "2.5.12" },
+  lod: { id: "lod", name: "Loss on drying", usp: "<731>", eur: "2.2.32" },
+  roi: { id: "roi", name: "Residue on ignition", nameEur: "Sulfated ash", usp: "<281>", eur: "2.4.14" },
+  chl: { id: "chl", name: "Chloride", nameEur: "Chlorides", usp: "<221>", eur: "2.4.4" },
+  sulf: { id: "sulf", name: "Sulfate", nameEur: "Sulfates", usp: "<221>", eur: "2.4.13" },
+  ei: { id: "ei", name: "Elemental impurities", usp: "<232>, <233>", eur: "5.20, 2.4.20" },
+  rsUnsp: { id: "rsUnsp", name: "Organic impurities: Any individual unspecified impurity", nameEur: "Related substances: Unspecified impurities (each)", usp: "<621>", eur: "2.2.29" },
+  rsSpec: { id: "rsSpec", name: "Organic impurities: Specified impurities", nameEur: "Related substances: Specified impurities", usp: "<621>", eur: "2.2.29" },
+  rsTotal: { id: "rsTotal", name: "Organic impurities: Total impurities", nameEur: "Related substances: Total", usp: "<621>", eur: "2.2.29" },
+  rsolv: { id: "rsolv", name: "Residual solvents", usp: "<467>", eur: "2.4.24, 5.4" },
+  assay: { id: "assay", name: "Assay", usp: "<621> / <541>", eur: "2.2.29 / 2.2.20" },
+  potency: { id: "potency", name: "Potency (Microbial assay)", usp: "<81>", eur: "2.7.2" },
+  tamc: { id: "tamc", name: "Microbial limits: TAMC", usp: "<61>, <1111>", eur: "2.6.12, 5.1.4" },
+  tymc: { id: "tymc", name: "Microbial limits: TYMC", usp: "<61>, <1111>", eur: "2.6.12, 5.1.4" },
+  bet: { id: "bet", name: "Bacterial endotoxins", usp: "<85>", eur: "2.6.14" },
+  sterility: { id: "sterility", name: "Sterility", usp: "<71>", eur: "2.6.1" },
+  psd: { id: "psd", name: "Particle size distribution", usp: "<429> / <786>", eur: "2.9.31 / 2.9.38" },
+  density: { id: "density", name: "Bulk and tapped density", usp: "<616>", eur: "2.9.34" },
+  visc: { id: "visc", name: "Viscosity", usp: "<911> / <912>", eur: "2.2.9 / 2.2.10" },
+  xrpd: { id: "xrpd", name: "Polymorphic form (XRPD)", usp: "<941>", eur: "2.9.33" },
 };
 
 /** The tests a CoA of each kind of material usually carries, in order; options add the rest. */
@@ -116,6 +117,22 @@ export const coaBuilderCopy = {
   step1: bi("Material and pharmacopoeia", "ماده و فارماکوپه"),
   material: bi("Material (search the API and excipient databases)", "ماده (جست‌وجو در پایگاه داده مواد مؤثره و Excipientها)"),
   docMaterial: bi("Material", "ماده"),
+  grade: bi("Grade (e.g. USP 2025)", "Grade (مثلاً USP 2025)"),
+  packaging: bi("Packaging", "بسته‌بندی"),
+  importTitle: bi("Import from monograph", "Import from monograph (ورود از مونوگراف)"),
+  importLead: bi(
+    "Paste the monograph text from your own USP–NF, Ph. Eur. or BP subscription. The tool picks out each test, its method chapter and its acceptance criterion and builds the table. Nothing is sent or stored; check every row against the monograph before use.",
+    "متن مونوگراف را از اشتراک USP–NF، Ph. Eur. یا BP خودتان اینجا کپی کنید. ابزار هر آزمون، فصل روش و حد پذیرش آن را تشخیص می‌دهد و جدول را می‌سازد. متن به جایی ارسال یا ذخیره نمی‌شود؛ پیش از استفاده هر ردیف را با مونوگراف تطبیق دهید.",
+  ),
+  importPlaceholder: bi("Paste the full monograph here…", "متن کامل مونوگراف را اینجا قرار دهید…"),
+  importRead: bi("Read monograph", "خواندن مونوگراف"),
+  importFound: bi("{n} tests found ({style} layout). Review them, then use them.", "{n} آزمون پیدا شد (قالب {style}). آن‌ها را بررسی و سپس استفاده کنید."),
+  importNone: bi("No tests recognised. Check that the whole monograph was pasted.", "آزمونی تشخیص داده نشد. مطمئن شوید متن کامل مونوگراف کپی شده است."),
+  importReplace: bi("Replace the table", "جایگزینی جدول"),
+  importAppend: bi("Add to the table", "افزودن به جدول"),
+  libExport: bi("Export library (file)", "خروجی کتابخانه (فایل)"),
+  libImport: bi("Import library file", "ورود فایل کتابخانه"),
+  libImported: bi("{n} specifications imported.", "{n} Specification وارد شد."),
   materialHint: bi("Not listed? Type its name and fill the details yourself.", "در فهرست نیست؟ نام را بنویسید و مشخصات را خودتان وارد کنید."),
   pharmacopoeia: bi("Pharmacopoeia", "فارماکوپه"),
   type: bi("Kind of material", "نوع ماده"),

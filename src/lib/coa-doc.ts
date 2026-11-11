@@ -1,6 +1,4 @@
-import { coaBuilderCopy as t, coaTests, optionTests, pharmacopoeias, profiles, publicSpecs, type CoaMaterialType, type CoaTest, type Pharmacopoeia } from "@/content/coa-builder";
-import type { Locale } from "@/i18n/config";
-import { isolateLatin, isolateText } from "./bidi";
+import { coaTests, optionTests, pharmacopoeias, profiles, publicSpecs, type CoaMaterialType, type CoaTest, type Pharmacopoeia } from "@/content/coa-builder";
 import type { DocBlock, DocModel } from "./docx";
 import { q3cOption1Ppm, q3cSolvents, q3dClass, q3dElements, q3dOption1 } from "./ich-limits";
 
@@ -10,7 +8,7 @@ export type CoaRow = { key: string; name: string; method: string; spec: string; 
 export type Route = "oral" | "par" | "inh";
 export type CoaOptions = { salt: boolean; hydrate: boolean; chiral: boolean; sterile: boolean; micro: boolean; potency: boolean };
 export type CoaDetails = {
-  company: string; reportNo: string; batch: string; manufacturer: string; supplier: string; quantity: string;
+  company: string; reportNo: string; batch: string; grade: string; packaging: string; manufacturer: string; supplier: string; quantity: string;
   mfgDate: string; retestDate: string; analysisDate: string; storage: string; cas: string; formula: string; mw: string;
 };
 export type Sign = { name: string; date: string };
@@ -29,7 +27,7 @@ export type CoaState = {
 };
 
 export const emptyDetails: CoaDetails = {
-  company: "", reportNo: "", batch: "", manufacturer: "", supplier: "", quantity: "", mfgDate: "", retestDate: "", analysisDate: "", storage: "", cas: "", formula: "", mw: "",
+  company: "", reportNo: "", batch: "", grade: "", packaging: "", manufacturer: "", supplier: "", quantity: "", mfgDate: "", retestDate: "", analysisDate: "", storage: "", cas: "", formula: "", mw: "",
 };
 
 export const methodLabel = (test: CoaTest, ph: Pharmacopoeia): string => {
@@ -38,7 +36,8 @@ export const methodLabel = (test: CoaTest, ph: Pharmacopoeia): string => {
   return ph === "bp" ? `BP (${eur})` : eur;
 };
 
-const testName = (test: CoaTest, ph: Pharmacopoeia, locale: Locale) => ((ph !== "usp" && test.nameEur) || test.name)[locale];
+/** CoA items are always in English, worded as the chosen pharmacopoeia words them. */
+const testName = (test: CoaTest, ph: Pharmacopoeia) => (ph !== "usp" && test.nameEur) || test.name;
 
 /** Class 1 and 2A elements at ICH Q3D Option 1 for the route. */
 export function elementalSpec(route: Route): string {
@@ -56,7 +55,7 @@ export function solventSpec(name: string): string {
 }
 
 /** The rows for the material and options, keeping what the user already typed in rows that stay. */
-export function buildRows(s: Omit<CoaState, "rows" | "details" | "remarks" | "signs">, previous: CoaRow[], locale: Locale): CoaRow[] {
+export function buildRows(s: Omit<CoaState, "rows" | "details" | "remarks" | "signs">, previous: CoaRow[]): CoaRow[] {
   const ids = [...profiles[s.type]];
   const add = (id: string, after?: string) => {
     if (ids.includes(id)) return;
@@ -86,7 +85,7 @@ export function buildRows(s: Omit<CoaState, "rows" | "details" | "remarks" | "si
     if (!test) continue;
     if (id === "rsolv" && !s.solvents.length) {
       const p = prev.get(id);
-      rows.push({ key: id, name: testName(test, s.ph, locale), method: methodLabel(test, s.ph), spec: p?.spec ?? "", result: p?.result ?? "", conf: p?.conf ?? "auto" });
+      rows.push({ key: id, name: testName(test, s.ph), method: methodLabel(test, s.ph), spec: p?.spec ?? "", result: p?.result ?? "", conf: p?.conf ?? "auto" });
       continue;
     }
     if (id === "rsolv") {
@@ -96,7 +95,7 @@ export function buildRows(s: Omit<CoaState, "rows" | "details" | "remarks" | "si
         const label = q3cSolvents.find((x) => x[0] === sol);
         rows.push({
           key,
-          name: `${testName(test, s.ph, locale)}: ${label ? (locale === "fa" ? label[1] : label[0]) : sol}`,
+          name: `${testName(test, s.ph)}: ${label ? label[0] : sol}`,
           method: methodLabel(test, s.ph),
           spec: p?.spec ?? solventSpec(sol),
           result: p?.result ?? "",
@@ -110,7 +109,7 @@ export function buildRows(s: Omit<CoaState, "rows" | "details" | "remarks" | "si
     const pub = id === "ei" ? elementalSpec(s.route) : (publicSpecs as Record<string, { spec?: string }>)[id]?.spec ?? "";
     rows.push({
       key: id,
-      name: testName(test, s.ph, locale),
+      name: testName(test, s.ph),
       method: methodLabel(test, s.ph),
       spec: p?.spec ?? pub,
       result: p?.result ?? "",
@@ -144,14 +143,26 @@ export function parseSpec(spec: string): { min?: number; max?: number } | null {
   if (!n.length) return null;
   if (/^(≤|<=|<|NMT|not more than|max)/i.test(s) || /^حداکثر/.test(s)) return { max: n[0] };
   if (/^(≥|>=|>|NLT|not less than|min)/i.test(s) || /^حداقل/.test(s)) return { min: n[0] };
-  if (n.length >= 2 && /\d\s*(?:[–—-]|to|and|تا)\s*\d/i.test(s)) return { min: Math.min(n[0], n[1]), max: Math.max(n[0], n[1]) };
+  // "98.0%–102.0%", "4.5 to 6.0", "-10° to -13°", "between 5.0 and 7.0".
+  if (n.length >= 2 && /\d[^\d\s]{0,3}\s*(?:[–—-]|to|and|تا)\s*[+–-]?\s*\d/i.test(s)) return { min: Math.min(n[0], n[1]), max: Math.max(n[0], n[1]) };
   return null;
 }
 
 /** The conformity of a row: set by hand, or worked out from a numeric result and specification. */
+const PASS = /^\s*(conforms?|complies|meets the requirements?|passes|positive|sterile|clear|منطبق)\b/i;
+const FAIL = /^\s*(does not (conform|comply)|fails?|not complies|نامنطبق)\b/i;
+
 export function conformity(row: CoaRow): "ok" | "fail" | null {
   if (row.conf !== "auto") return row.conf;
+  // Descriptive tests (identification, appearance, sterility): a stated verdict, or the result worded as the specification.
+  if (row.result.trim() && !/\d/.test(row.spec)) {
+    if (FAIL.test(row.result)) return "fail";
+    if (PASS.test(row.result) || row.result.trim().toLowerCase() === row.spec.trim().toLowerCase()) return "ok";
+    return null;
+  }
   const lim = parseSpec(row.spec);
+  // Several limits in one specification (elemental impurities): the analyst states the verdict.
+  if (!lim) return FAIL.test(row.result) ? "fail" : PASS.test(row.result) ? "ok" : null;
   const r = toNum(row.result);
   if (!lim || r.length !== 1 || /[<>≤≥]/.test(row.result)) {
     // "< 0.05%" or "Not detected" against a maximum complies.
@@ -168,79 +179,86 @@ export function conformity(row: CoaRow): "ok" | "fail" | null {
 }
 
 const phLabel = (ph: Pharmacopoeia) => pharmacopoeias.find((p) => p.value === ph)?.label.en ?? ph;
+const phName: Record<Pharmacopoeia, string> = { usp: "USP–NF", eur: "Ph. Eur.", bp: "BP" };
 
-export function conclusion(state: CoaState, locale: Locale): string {
-  const ph = phLabel(state.ph);
+/** The statement under the results, in English as the certificate is. */
+export function conclusion(state: CoaState): string {
+  const ph = phName[state.ph];
   const fails = state.rows.filter((r) => conformity(r) === "fail").map((r) => r.name);
   const open = state.rows.filter((r) => !r.result.trim()).map((r) => r.name);
-  if (fails.length) return t.conclusionFail[locale].replace("{ph}", ph).replace("{tests}", fails.join(locale === "fa" ? "، " : ", "));
-  if (open.length) return t.conclusionOpen[locale].replace("{tests}", open.join(locale === "fa" ? "، " : ", "));
-  return t.conclusionOk[locale].replace("{ph}", ph);
+  if (fails.length) return `The batch DOES NOT COMPLY with the specification (current ${ph} monograph): ${fails.join("; ")}.`;
+  if (open.length) return `Results pending for: ${open.join("; ")}.`;
+  return `The batch COMPLIES with the specification of the current ${ph} monograph.`;
 }
 
-/** The certificate as a document, shared by the preview, the print view and the Word file. */
-export function coaDocument(state: CoaState, locale: Locale): DocModel {
-  const rtl = locale === "fa";
-  const tx = (s: string) => (rtl ? isolateText(s) : isolateLatin(s));
-  const L = (b: { en: string; fa: string }) => tx(b[locale]);
+/** The certificate as a document (English, left to right), shared by the preview, the print view and the Word file. */
+export function coaDocument(state: CoaState): DocModel {
   const d = state.details;
   const blocks: DocBlock[] = [];
   const info: [string, string][] = [
-    [L(t.docMaterial), tx(state.material)],
-    [L(t.pharmacopoeia), tx(phLabel(state.ph))],
-    [L(t.cas), tx(d.cas)], [L(t.formula), tx(d.formula)], [L(t.mw), tx(d.mw)],
-    [L(t.batch), tx(d.batch)], [L(t.quantity), tx(d.quantity)],
-    [L(t.manufacturer), tx(d.manufacturer)], [L(t.supplier), tx(d.supplier)],
-    [L(t.mfgDate), tx(d.mfgDate)], [L(t.retestDate), tx(d.retestDate)],
-    [L(t.analysisDate), tx(d.analysisDate)], [L(t.storage), tx(d.storage)],
+    ["Product name", state.material],
+    ["Grade", d.grade || phLabel(state.ph)],
+    ["Batch / Lot No.", d.batch],
+    ["CAS No.", d.cas],
+    ["Molecular formula", d.formula],
+    ["Molecular weight", d.mw],
+    ["Quantity", d.quantity],
+    ["Packaging", d.packaging],
+    ["Manufacturer", d.manufacturer],
+    ["Supplier", d.supplier],
+    ["Mfg. date", d.mfgDate],
+    ["Retest / Expiry date", d.retestDate],
+    ["Date of analysis", d.analysisDate],
+    ["Storage", d.storage],
   ];
   const filled = info.filter(([, v]) => v.trim());
-  const half = Math.ceil(filled.length / 2);
   const pairs: string[][] = [];
-  for (let i = 0; i < half; i++) pairs.push([filled[i][0], filled[i][1], filled[i + half]?.[0] ?? "", filled[i + half]?.[1] ?? ""]);
-  blocks.push({ kind: "table", rows: pairs, widths: [1.1, 1.6, 1.1, 1.6], labelColumn: true });
+  for (let i = 0; i < filled.length; i += 2) pairs.push([filled[i][0], filled[i][1], filled[i + 1]?.[0] ?? "", filled[i + 1]?.[1] ?? ""]);
+  blocks.push({ kind: "heading", text: "Product information" });
+  blocks.push({ kind: "table", rows: pairs, widths: [1.15, 1.85, 1.15, 1.85], labelColumn: true, labelColumns: [2] });
 
-  blocks.push({ kind: "heading", text: L(t.step3) });
-  const confText = (r: CoaRow) => {
+  blocks.push({ kind: "heading", text: `Analytical results — specification: current ${phName[state.ph]} monograph` });
+  const status = (r: CoaRow) => {
     const c = conformity(r);
-    return c === "ok" ? L(t.complies) : c === "fail" ? L(t.notComplies) : "";
+    return c === "ok" ? "Complies" : c === "fail" ? "Does not comply" : "";
   };
   blocks.push({
     kind: "table",
-    columns: [L(t.colNo), L(t.colTest), L(t.colMethod), L(t.colSpec), L(t.colResult), L(t.colConf)],
-    rows: state.rows.map((r, i) => [String(i + 1), tx(r.name), tx(r.method), tx(r.spec), tx(r.result), confText(r)]),
-    widths: [0.65, 2.5, 1.45, 2, 1.35, 1.05],
+    columns: ["No.", "Test", "Method", "Specification", "Result", "Status"],
+    rows: state.rows.map((r, i) => [String(i + 1), r.name, r.method, r.spec, r.result, status(r)]),
+    widths: [0.45, 2.3, 1.35, 2.1, 1.45, 1.05],
   });
   const sources = [...new Set(state.rows.map((r) => r.source).filter(Boolean))] as string[];
   if (sources.length) {
-    const lines = sources.map((k) => (publicSpecs as Record<string, { source: { en: string; fa: string } }>)[k]?.source).filter(Boolean);
-    blocks.push({ kind: "para", label: L(t.sourceTitle), text: lines.map((b) => `• ${L(b)}`).join("\n") });
+    const lines = sources.map((k) => (publicSpecs as Record<string, { source: { en: string } }>)[k]?.source.en).filter(Boolean);
+    blocks.push({ kind: "para", label: "Limits from guidelines", text: lines.map((b) => `• ${b}`).join("\n") });
   }
-  blocks.push({ kind: "heading", text: L(t.step4) });
-  blocks.push({ kind: "para", text: tx(conclusion(state, locale)), boxed: true });
-  if (state.remarks.trim()) blocks.push({ kind: "para", label: L(t.remarks), text: tx(state.remarks) });
+  blocks.push({ kind: "heading", text: "Conclusion" });
+  blocks.push({ kind: "para", text: conclusion(state), boxed: true });
+  if (state.remarks.trim()) blocks.push({ kind: "para", label: "Remarks", text: state.remarks });
   const s = state.signs;
+  blocks.push({ kind: "heading", text: "Approval" });
   blocks.push({
     kind: "table",
-    columns: ["", L(t.name), L(t.signature), L(t.date)],
+    columns: ["", "Name", "Signature", "Date"],
     rows: [
-      [L(t.analysedBy), tx(s.analysed.name), "", tx(s.analysed.date)],
-      [L(t.checkedBy), tx(s.checked.name), "", tx(s.checked.date)],
-      [L(t.approvedBy), tx(s.approved.name), "", tx(s.approved.date)],
+      ["Analysed by (QC)", s.analysed.name, "", s.analysed.date],
+      ["Checked by (QC)", s.checked.name, "", s.checked.date],
+      ["Approved by (QA)", s.approved.name, "", s.approved.date],
     ],
-    widths: [1.3, 2, 1.6, 1.2],
+    widths: [1.4, 2, 1.6, 1.2],
     labelColumn: true,
     tall: true,
   });
   return {
-    rtl,
+    rtl: false,
     header: {
-      company: tx(d.company),
-      title: L(t.docTitle),
+      company: d.company,
+      title: "CERTIFICATE OF ANALYSIS",
       meta: [
-        [L(t.reportNo), tx(d.reportNo)],
-        [L(t.batch), tx(d.batch)],
-        [L(t.analysisDate), tx(d.analysisDate)],
+        ["Certificate No.", d.reportNo],
+        ["Batch No.", d.batch],
+        ["Issue date", d.analysisDate],
       ],
     },
     blocks,

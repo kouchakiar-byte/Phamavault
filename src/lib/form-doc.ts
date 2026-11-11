@@ -100,7 +100,7 @@ export function documentHtml(doc: DocModel, logoUrl?: string): string {
       const sum = widths.reduce((a, c) => a + c, 0) || 1;
       const cols = widths.length ? `<colgroup>${widths.map((w) => `<col style="width:${((w / sum) * 100).toFixed(1)}%">`).join("")}</colgroup>` : "";
       const head = b.columns ? `<thead><tr>${b.columns.map((c) => `<th>${br(c)}</th>`).join("")}</tr></thead>` : "";
-      const rows = b.rows.map((r) => `<tr${b.tall ? ' class="tall"' : ""}>${r.map((c, i) => (b.labelColumn && i === 0 ? `<th>${br(c)}</th>` : `<td dir="auto">${br(c)}</td>`)).join("")}</tr>`).join("");
+      const rows = b.rows.map((r) => `<tr${b.tall ? ' class="tall"' : ""}>${r.map((c, i) => ((b.labelColumn && i === 0) || b.labelColumns?.includes(i) ? `<th>${br(c)}</th>` : `<td dir="auto">${br(c)}</td>`)).join("")}</tr>`).join("");
       return `<table>${cols}${head}<tbody>${rows}</tbody></table>`;
     })
     .join("");

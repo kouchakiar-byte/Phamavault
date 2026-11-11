@@ -7,7 +7,7 @@
 export type DocBlock =
   | { kind: "heading"; text: string }
   | { kind: "para"; label?: string; text: string; boxed?: boolean }
-  | { kind: "table"; columns?: string[]; rows: string[][]; widths?: number[]; labelColumn?: boolean; tall?: boolean };
+  | { kind: "table"; columns?: string[]; rows: string[][]; widths?: number[]; labelColumn?: boolean; /** Further label columns (e.g. 2 in a two-pair table). */ labelColumns?: number[]; tall?: boolean };
 
 export type DocModel = {
   rtl: boolean;
@@ -188,8 +188,8 @@ function documentXml(doc: DocModel): string {
           rows,
           widths,
           rtl,
-          (r, c) => (header(r) || (b.labelColumn && c === 0) ? "EEF3F8" : undefined),
-          (r, c) => header(r) || Boolean(b.labelColumn && c === 0),
+          (r, c) => (header(r) || (b.labelColumn && c === 0) || b.labelColumns?.includes(c) ? "EEF3F8" : undefined),
+          (r, c) => header(r) || Boolean(b.labelColumn && c === 0) || Boolean(b.labelColumns?.includes(c)),
           b.tall ? 560 : 0,
         ),
       );
