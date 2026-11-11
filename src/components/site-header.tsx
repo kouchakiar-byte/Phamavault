@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { BriefcaseBusiness, ChevronDown, Download, Sparkles } from "lucide-react";
+import { BriefcaseBusiness, ChevronDown, Download, FilePlus2, Sparkles } from "lucide-react";
+import { coaBuilderCopy } from "@/content/coa-builder";
 import { freeHandbookCopy, freeHandbooks } from "@/content/free-handbooks";
 import { interviewCopy, withCounts } from "@/content/interview";
 import { copy } from "@/content/site";
@@ -92,6 +93,14 @@ export async function SiteHeader() {
                               </Link>
                             </li>
                           ))}
+                        {g.key === "tools" && (
+                          <li>
+                            <Link data-menu-item href={href(locale, "coa-builder")} className="flex gap-2.5 rounded-lg p-2.5 hover:bg-vault-50">
+                              <FilePlus2 className="mt-0.5 size-[1.1rem] shrink-0 text-molecule-500" aria-hidden="true" />
+                              <span className="text-sm font-bold leading-snug text-vault-900">{coaBuilderCopy.title[locale]}</span>
+                            </Link>
+                          </li>
+                        )}
                       </ul>
                     </div>
                   ))}
@@ -152,11 +161,12 @@ export async function SiteHeader() {
               { href: href(locale), label: nav.home[locale] },
               { href: href(locale, "interview"), label: interviewCopy.title[locale], accent: true },
               ...sections.map((s) => ({ href: href(locale, s.href), label: s.title[locale] })),
+              { href: href(locale, "coa-builder"), label: coaBuilderCopy.title[locale] },
               { href: href(locale, "free-handbooks"), label: freeHandbookCopy.pageTitle[locale] },
               { href: href(locale, "#plans"), label: nav.plans[locale] },
             ]}
             cta={<AccountLink locale={locale} variant="menu" />}
-            ctaAfter={2 + sections.length}
+            ctaAfter={3 + sections.length}
             footer={<LanguageSwitcher current={locale} label={nav.language[locale]} />}
           />
         </div>

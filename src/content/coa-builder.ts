@@ -108,7 +108,7 @@ export const publicSpecs = {
 };
 
 export const coaBuilderCopy = {
-  title: bi("CoA builder", "طراح برگه آنالیز (CoA)"),
+  title: bi("CoA Builder", "CoA Builder"),
   lead: bi(
     "Build the Certificate of Analysis of a pharmacopoeial raw material: choose the material and the pharmacopoeia, and the tool lays out the tests with the general chapter of each method. Enter the monograph acceptance criteria once, keep them in your specification library, record the results, and print or download the certificate as Word.",
     "برگه آنالیز (CoA) ماده اولیه فارماکوپه‌ای را طراحی کنید: ماده و فارماکوپه را انتخاب کنید تا ابزار آزمون‌ها را همراه با فصل عمومی روش هر کدام بچیند. حدود پذیرش مونوگراف را یک بار وارد و در کتابخانه Specification خود ذخیره کنید، نتایج را ثبت کنید و برگه را چاپ یا به صورت Word دریافت کنید.",
