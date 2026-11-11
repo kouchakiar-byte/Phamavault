@@ -173,7 +173,7 @@ export const copy = {
         key: "qa",
         title: bi("Quality Assurance (QA)", "تضمین کیفیت (QA)"),
         points: [
-          bi("157 full-text SOPs: change control, deviation, CAPA and quality risk management", "157 دستورالعمل با متن کامل: کنترل تغییرات، مدیریت انحراف، CAPA و مدیریت ریسک کیفیت"),
+          bi("165 full-text SOPs: change control, deviation, CAPA and quality risk management", "165 دستورالعمل با متن کامل: کنترل تغییرات، مدیریت انحراف، CAPA و مدیریت ریسک کیفیت"),
           bi("GMP form generator: deviation, change control, CAPA, OOS and line clearance, exported to Word or PDF with your logo", "فرم‌ساز GMP: انحراف، کنترل تغییر، CAPA، OOS و Line clearance با خروجی Word یا PDF و لوگوی شرکت"),
           bi("Process and cleaning validation (HBEL), PQR, supplier qualification and inspection readiness", "Process validation و Cleaning validation بر پایه HBEL، PQR، ارزیابی تأمین‌کنندگان و آمادگی بازرسی"),
           bi("Nitrosamine, elemental impurity (ICH Q3D) and PDE-based cross-contamination risk assessments", "ارزیابی ریسک نیتروزآمین، ناخالصی‌های عنصری (ICH Q3D) و آلودگی متقاطع بر پایه PDE"),
