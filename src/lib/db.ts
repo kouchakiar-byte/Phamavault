@@ -225,6 +225,16 @@ create table if not exists supplier_alerts (
   unique (user_id, query_key)
 );
 create index if not exists supplier_alerts_open_idx on supplier_alerts(found_at) where found_at is null;
+-- CoA builder: each user's saved specifications (tests and acceptance criteria per material).
+create table if not exists coa_specs (
+  id bigserial primary key,
+  user_id bigint not null references users(id) on delete cascade,
+  name text not null,
+  material text not null,
+  data jsonb not null,
+  updated_at timestamptz not null default now(),
+  unique (user_id, name)
+);
 -- Guests (not signed in): a few free uses per section and Jalali month, by hashed IP and browser id.
 create table if not exists guest_uses (
   id bigserial primary key,

@@ -557,7 +557,8 @@
     "کلسیم کربنات|Calcium carbonate (Trading)",
     "سدیم لوریل اتر سولفات 70%|SLES 70% (Trading)",
     "کوکامیدوپروپیل بتائین|Cocamidopropyl betaine (Trading)",
-    "کوکامید دی‌اتانول‌آمین|Cocamide DEA (Trading)"
+    "کوکامید دی‌اتانول‌آمین|Cocamide DEA (Trading)",
+    "تیامین (ویتامین B1)|Thiamine (Vitamin B1)|API"
    ],
    "mail": "info@kimyagaran.com",
    "note": "فهرست محصول از کاتالوگ رسمی شرکت (آبان 1405)؛ اقلام Trading محصول بازرگانی شرکت هستند، نه تولید آن"
@@ -5284,20 +5285,39 @@
    "e": "Shimigaran — shimigaran.com",
    "t": "t",
    "c": [
-    "vit"
+    "vit",
+    "exc"
    ],
    "prov": "نامشخص",
    "city": "—",
    "tel": [
-    "021-88676812"
+    "021-88505024"
    ],
    "web": "https://shimigaran.com/",
    "src": "https://shimigaran.com/",
    "p": [
     "پیریدوکسین هیدروکلراید (ویتامین B6)|Pyridoxine hydrochloride",
-    "ویتامین D3 (کوله‌کلسیفرول)|Vitamin D3, Cholecalciferol"
+    "ویتامین D3 (کوله‌کلسیفرول)|Vitamin D3, Cholecalciferol",
+    "اسید آسکوربیک (ویتامین C)|Ascorbic acid (Vitamin C)",
+    "پانتوتنیک اسید (ویتامین B5)|Pantothenic acid (Vitamin B5)",
+    "توکوفرول (ویتامین E)|Tocopherol (Vitamin E)",
+    "ویتامین A (رتینول)|Vitamin A (Retinol)",
+    "ریبوفلاوین 5-فسفات سدیم (ویتامین B2)|Riboflavin 5'-phosphate sodium (Vitamin B2)",
+    "فولیک اسید (ویتامین B9)|Folic acid (Vitamin B9)",
+    "کوبالامین (ویتامین B12)|Cobalamin (Vitamin B12)",
+    "تیامین (ویتامین B1)|Thiamine (Vitamin B1)",
+    "نیاسین‌آمید (ویتامین B3)|Niacinamide (Vitamin B3)",
+    "آسپارتام|Aspartame",
+    "آسه‌سولفام پتاسیم|Acesulfame potassium",
+    "آلژینات سدیم|Sodium alginate",
+    "TBHQ|tert-Butylhydroquinone (TBHQ)",
+    "رنگ تارترازین|Tartrazine",
+    "رنگ لیک کینولین یلو|Quinoline yellow lake",
+    "رنگ ایندیگوتین|Indigotine",
+    "PEG-20 استئارات|PEG-20 stearate"
    ],
-   "via": 1
+   "via": 1,
+   "note": "تأمین مواد اولیه صنایع غذایی و دارویی (ویتامین‌ها، شیرین‌کننده‌ها، رنگ‌ها، صمغ‌ها و آنزیم‌ها). نشانی: تهران، خیابان میرعماد. گرید محصولات در سایت ذکر نشده است؛ پیش از مصرف دارویی گرید و CoA را استعلام کنید. فهرست محصول و تلفن از سایت رسمی شرکت (آبان 1405)."
   },
   {
    "n": "پارس بالک",
@@ -5326,20 +5346,33 @@
    "t": "t",
    "c": [
     "min",
-    "exc"
+    "exc",
+    "vit"
    ],
    "prov": "نامشخص",
    "city": "—",
    "tel": [
-    "021-66381426"
+    "021-82802261"
    ],
    "web": "https://shimitop.com/",
    "src": "https://shimitop.com/",
    "p": [
     "فروس سولفات (سولفات آهن)|Ferrous sulfate",
-    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC"
+    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC",
+    "اسید سیتریک|Citric acid",
+    "دکستروز (گلوکز)|Dextrose (Glucose)",
+    "اسید لاکتیک|Lactic acid",
+    "سدیم بنزوات|Sodium benzoate",
+    "سیترات سدیم|Sodium citrate",
+    "سوربیتول|Sorbitol",
+    "گوار گام|Guar gum",
+    "نیاسین‌آمید (ویتامین B3)|Niacinamide (Vitamin B3)",
+    "توکوفریل استات (ویتامین E)|Tocopheryl acetate (Vitamin E)",
+    "ویتامین D3 پودری|Vitamin D3 powder",
+    "اسید آسکوربیک خوراکی (ویتامین C)|Ascorbic acid, food grade (Vitamin C)"
    ],
-   "via": 1
+   "via": 1,
+   "note": "فروش مواد اولیه شیمیایی صنایع غذایی، شوینده و صنعتی. نشانی: تهران، خیابان آزادی، تقاطع دکتر قریب، مرکز نوآوری قریب. گرید محصولات در سایت گرید غذایی یا صنعتی است؛ پیش از مصرف دارویی گرید و CoA را استعلام کنید. فهرست محصول و تلفن از سایت رسمی شرکت (آبان 1405)."
   },
   {
    "n": "شیمی دام و صنعت ایرانیان (شیدامکو)",
@@ -6331,7 +6364,10 @@
     "عصاره جامد شیرین‌بیان|Solid licorice extract",
     "عصاره پودری شیرین‌بیان|Licorice powder extract",
     "پودر ریشه شیرین‌بیان|Licorice root powder",
-    "گرانول شیرین‌بیان|Licorice granules"
+    "گرانول شیرین‌بیان|Licorice granules",
+    "ریشه شیرین‌بیان|Licorice root",
+    "ناگت شیرین‌بیان|Licorice nugget",
+    "تفاله شیرین‌بیان|Licorice pulp"
    ]
   },
   {
@@ -6546,22 +6582,24 @@
    "t": "t",
    "c": [
     "vit",
-    "api"
+    "api",
+    "exc"
    ],
    "prov": "تهران",
    "city": "تهران",
    "tel": [
-    "021-66469801"
+    "021-53848"
    ],
    "addr": "خیابان بزرگمهر، پلاک 100 (از دایرکتوری کامپس؛ پیش از مراجعه تلفنی تأیید شود)",
    "top": 1,
    "gv": 1,
-   "note": "واردکننده قدیمی دارو و مواد اولیه؛ به معرفی کاربر برای ویتامین‌ها افزوده شد. فهرست دقیق مواد اولیه و تلفن از منابع در دسترس به دست نیامد.",
-   "src": "https://www.darooyab.ir/ImporterCompanies/166",
+   "note": "واردکننده قدیمی دارو و مواد اولیه دارویی و غذایی؛ تأمین‌کننده اصلی DSM Nutritional Products. تأمین‌کنندگان API اعلام‌شده در سایت شرکت از جمله Evonik، IPCA، Glenmark، Huahai، Zhejiang Jiuzhou، Lotte Fine Chemical، Farmhispania، Kirsch Pharma، Dr. Paul Lohmann و Centaur. نشانی: تهران، خیابان بزرگمهر، پلاک 100. اطلاعات از سایت رسمی شرکت (آبان 1405).",
+   "src": "https://akbarieh.ir/pharmaceutical-api/",
    "p": [
-    "ویتامین‌ها (انواع؛ فهرست دقیق تأیید نشده)|Vitamins",
     "مواد اولیه غذایی|Food ingredients",
-    "مواد اولیه دارویی|Pharmaceutical raw materials"
+    "مواد اولیه دارویی|Pharmaceutical raw materials",
+    "EUDRAGIT (Evonik)|EUDRAGIT polymers (Evonik)",
+    "ویتامین‌ها و مواد شیمیایی ظریف (DSM)|Vitamins and fine chemicals (DSM)"
    ],
    "web": "https://akbarieh.ir/"
   },
@@ -6876,9 +6914,10 @@
    "src": "https://2023.iphexpo.com/exhibitors/avan-chemi",
    "p": [
     "مواد مؤثره دارویی عمومی|Active pharmaceutical ingredients (general)|API",
-    "مواد مؤثره پرخطر (HPAPI)|High-potency APIs (HPAPI)|API"
+    "مواد مؤثره پرخطر (HPAPI)|High-potency APIs (HPAPI)|API",
+    "تلمیسارتان|Telmisartan|API"
    ],
-   "note": "تولیدکننده API با کارخانه cGMP، چهار خط تولید (دو خط عمومی و دو خط HPAPI) و 19 ایزولاتور. نشانی دفتر: خیابان گاندی جنوبی، کوچه 23، پلاک 1. فهرست کامل محصولات را از طریق سایت شرکت استعلام کنید."
+   "note": "تولیدکننده API با کارخانه cGMP، چهار خط تولید (دو خط عمومی و دو خط HPAPI) و 19 ایزولاتور. نشانی دفتر: خیابان گاندی جنوبی، کوچه 23، پلاک 1. طبق سایت شرکت، تلمیسارتان برای نخستین بار در ایران توسط این شرکت تولید شده است؛ فهرست کامل محصولات را از شرکت استعلام کنید."
   },
   {
    "n": "توفیق دارو",
@@ -7076,11 +7115,14 @@
    "c": [
     "exc",
     "api",
-    "sup"
+    "sup",
+    "vit"
    ],
    "prov": "تهران",
    "city": "تهران (خیابان ابوریحان)",
-   "tel": [],
+   "tel": [
+    "021-26400608"
+   ],
    "web": "https://vierapharmed.com/",
    "src": "https://vierapharmed.com/",
    "p": [
@@ -7090,9 +7132,24 @@
     "زغال فعال|Activated charcoal",
     "بیوتین|Biotin",
     "کوآنزیم Q10|Coenzyme Q10",
-    "دکسپانتنول|Dexpanthenol"
+    "دکسپانتنول|Dexpanthenol",
+    "پودر لاکتوز (مش 200 و مش 80)|Lactose (Mesh 200 and Mesh 80)",
+    "منیزیم استئارات|Magnesium stearate",
+    "مانیتول|Mannitol",
+    "سوربیتول|Sorbitol",
+    "سیلیکون دی‌اکسید|Silicon dioxide (SiO2)",
+    "زانتان گام|Xanthan gum",
+    "HPMC (هیدروکسی پروپیل متیل سلولز)|Hypromellose, HPMC",
+    "روغن MCT|MCT oil (Medium-chain triglycerides)",
+    "اینولین|Inulin",
+    "ال-آرژنین|L-Arginine",
+    "ال-کارنیتین|L-Carnitine",
+    "ال-سیستئین|L-Cysteine",
+    "تیامین مونونیترات (ویتامین B1)|Thiamine mononitrate (Vitamin B1)",
+    "ویتامین D3 پودری 100,000 IU|Vitamin D3 powder 100,000 IU",
+    "ویتامین E (مایع و پودر)|Vitamin E (liquid and powder)"
    ],
-   "note": "تأمین مواد مؤثره و مواد جانبی (Excipients) برای تولیدکنندگان دارو (از 2017). شماره تلفن در منبع درج نشده است؛ برای تماس به بخش «تماس با ما» وب‌سایت شرکت مراجعه کنید."
+   "note": "تأمین مواد مؤثره و مواد جانبی (Excipients) برای تولیدکنندگان دارو (از 2017). نشانی: تهران، خیابان انقلاب، خیابان ابوریحان. فهرست محصول و تلفن از سایت رسمی شرکت (آبان 1405)."
   },
   {
    "n": "زیست تشخیص کوشا (زیستاکو)",
@@ -7689,7 +7746,7 @@
    ],
    "mail": "info@paranddarou.com",
    "web": "https://paranddarou.com/",
-   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405).",
+   "note": "عضو سندیکا؛ محصولات تکمیلی از فهرست کلی محصولات سندیکا (مهر 1405). دامنه وب‌سایت شرکت (paranddarou.com) در آبان 1405 برای فروش عرضه شده است؛ برای تماس از اطلاعات سندیکا استفاده کنید.",
    "src": "https://cppsynd.com/پرند-دارو/",
    "p": [
     "کدئین فسفات|Codeine Phosphate",

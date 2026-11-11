@@ -2,6 +2,7 @@ import { calculations } from "@/content/calculations";
 import { referenceSections } from "@/content/references";
 import { searchCopy } from "@/content/search";
 import { saltForms } from "@/content/salt-forms";
+import { coaBuilderCopy } from "@/content/coa-builder";
 import { sections } from "@/content/sections";
 import { excipients, formulation, handbooks, regulatory, sops, type RawMaterial } from "@/data";
 import { monographs } from "@/data/monographs";
@@ -214,6 +215,16 @@ function buildStatic(): Entry[] {
     );
   }
 
+  out.push(
+    entry({
+      group: "sections",
+      section: "qc",
+      title: coaBuilderCopy.title,
+      sub: coaBuilderCopy.lead,
+      path: "coa-builder",
+      extra: keys("برگه آنالیز گواهی آنالیز CoA COA certificate of analysis specification اسپک مشخصات طراحی برگه آنالیز", coaBuilderCopy.lead.en, coaBuilderCopy.lead.fa),
+    }),
+  );
   out.push(
     entry({
       group: "materials",
