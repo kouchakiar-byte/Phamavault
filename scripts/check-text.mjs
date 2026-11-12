@@ -13,7 +13,8 @@ const walk = (dir) =>
     return statSync(path).isDirectory() ? walk(path) : [path];
   });
 
-const QUOTED = /(suppliers|excipient-sheets|orange-book|iran-products|raw-materials)\.json$/;
+// Data quoted word for word from its source (supplier lists, PubChem, FDA, HSDB solubility statements).
+const QUOTED = /(suppliers|excipient-sheets|orange-book|iran-products|raw-materials|solubility)\.json$/;
 // Glossaries and search aliases may name the Persian equivalent on purpose.
 const ALLOWED = /tools\/handbooks\/[^/]+\/ch\/app[A-Z]\.mjs$|src\/lib\/site-search\.ts$/;
 

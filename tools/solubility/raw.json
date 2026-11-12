@@ -1,0 +1,7709 @@
+[
+ {
+  "name": "Acemetacin",
+  "cid": 1981,
+  "s": []
+ },
+ {
+  "name": "Acetylsalicylic acid",
+  "cid": 2244,
+  "s": [
+   [
+    "1 g sol in: 300 mL water at 25 °C, 100 mL water at 37 °C, 5 mL alcohol, 17 mL chloroform, 10-15 mL ether; less sol in anhydrous ether",
+    "HSDB"
+   ],
+   [
+    "In water, 4,600 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 15 °C: 0.25 (poor)",
+    "ICSC"
+   ],
+   [
+    "(77 °F): 0.3%",
+    "NIOSH"
+   ]
+  ]
+ },
+ {
+  "name": "Allopurinol",
+  "cid": 135401907,
+  "s": [
+   [
+    "Solubility in mg/mL at 25 °C: water 0.48; n-octanol < 0.01; chloroform 0.60; ethanol 0.30; dimethyl sulfoxide 4.6.",
+    "HSDB"
+   ],
+   [
+    "In water, 569 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Benzydamine hydrochloride",
+  "cid": 65464,
+  "s": []
+ },
+ {
+  "name": "Buprenorphine hydrochloride",
+  "cid": 3033050,
+  "s": []
+ },
+ {
+  "name": "Capsaicin",
+  "cid": 1548943,
+  "s": [
+   [
+    "Practically insoluble in cold water",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in alcohol, ether, benzene. Slightly soluble in carbon disulfide",
+    "HSDB"
+   ],
+   [
+    "Soluble in petroleum ether. Slightly soluble in concentrated hydrochloric acid",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Celecoxib",
+  "cid": 2662,
+  "s": []
+ },
+ {
+  "name": "Codeine phosphate hemihydrate",
+  "cid": 6321303,
+  "s": []
+ },
+ {
+  "name": "Colchicine",
+  "cid": 6167,
+  "s": [
+   [
+    "1 g dissolves in 22 mL water, 220 mL ether, 100 mL benzene; freely sol in alcohol or chloroform; practically insoluble in petroleum ether",
+    "HSDB"
+   ],
+   [
+    "SOL IN METHANOL; SLIGHTLY SOL IN CARBON TETRACHLORIDE",
+    "HSDB"
+   ],
+   [
+    "At 25 °C, 4.5 g/100 g water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Dexibuprofen",
+  "cid": 39912,
+  "s": []
+ },
+ {
+  "name": "Diclofenac sodium",
+  "cid": 5018304,
+  "s": []
+ },
+ {
+  "name": "Diflunisal",
+  "cid": 3059,
+  "s": []
+ },
+ {
+  "name": "Ergotamine tartrate",
+  "cid": 9787,
+  "s": []
+ },
+ {
+  "name": "Etoricoxib",
+  "cid": 123619,
+  "s": []
+ },
+ {
+  "name": "Febuxostat",
+  "cid": 134018,
+  "s": []
+ },
+ {
+  "name": "Fentanyl citrate",
+  "cid": 13810,
+  "s": []
+ },
+ {
+  "name": "Flunarizine dihydrochloride",
+  "cid": 5282407,
+  "s": []
+ },
+ {
+  "name": "Flurbiprofen",
+  "cid": 3394,
+  "s": []
+ },
+ {
+  "name": "Hydromorphone hydrochloride",
+  "cid": 5462347,
+  "s": []
+ },
+ {
+  "name": "Ibuprofen",
+  "cid": 3672,
+  "s": [
+   [
+    "Readily sol in most org solvents",
+    "HSDB"
+   ],
+   [
+    "VERY SOLUBLE IN ALCOHOL",
+    "HSDB"
+   ],
+   [
+    "In water, 21 mg/l @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Indometacin",
+  "cid": 3715,
+  "s": [
+   [
+    "In water, 0.937 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Soluble in ethanol, ether, acetone, castor oil; practically insoluble in water",
+    "HSDB"
+   ],
+   [
+    "1 g in about 30 mL chloroform",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ketoprofen",
+  "cid": 3825,
+  "s": []
+ },
+ {
+  "name": "Ketorolac trometamol",
+  "cid": 84003,
+  "s": []
+ },
+ {
+  "name": "Mefenamic acid",
+  "cid": 4044,
+  "s": [
+   [
+    "WHITE POWDER; SOLUBILITY IN WATER: GREATER THAN 5 G/100 ML /SODIUM SALT/",
+    "HSDB"
+   ],
+   [
+    "IN WATER @ PH 7.1: 0.0041 G/100 ML @ 25 °C, 0.008 G/100 ML @ 37 °C; SOL IN SOLN OF ALKALI HYDROXIDES; SPARINGLY SOL IN ETHER, CHLOROFORM; SLIGHTLY SOL IN ETHANOL",
+    "HSDB"
+   ],
+   [
+    "1 G SOL IN 26 ML DIMETHYLFORMAMIDE & 220 ML ALCOHOL",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Meloxicam",
+  "cid": 54677470,
+  "s": [
+   [
+    "Very slightly soluble in methanol. Practically insoluble in water, with higher solubility observed in strong acids and bases.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Metamizole sodium",
+  "cid": 23674183,
+  "s": []
+ },
+ {
+  "name": "Methadone hydrochloride",
+  "cid": 14184,
+  "s": []
+ },
+ {
+  "name": "Methocarbamol",
+  "cid": 4107,
+  "s": [
+   [
+    "Sol in alcohol, propylene glycol",
+    "HSDB"
+   ],
+   [
+    "In water, 7.20X10+3 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Methyl salicylate",
+  "cid": 4133,
+  "s": [
+   [
+    "SOL IN CHLOROFORM, ETHER; MISCIBLE WITH ALC, GLACIAL ACETIC ACID",
+    "HSDB"
+   ],
+   [
+    "SOL IN DIETHYL ETHER",
+    "HSDB"
+   ],
+   [
+    "SOLUBLE IN MOST COMMON ORGANIC SOLVENTS",
+    "HSDB"
+   ],
+   [
+    "Sol in water: 0.74%w @ 30 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/l at 30 °C: 0.74 (very slightly soluble)",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Morphine sulfate",
+  "cid": 6321225,
+  "s": []
+ },
+ {
+  "name": "Nabumetone",
+  "cid": 4409,
+  "s": []
+ },
+ {
+  "name": "Naloxone hydrochloride",
+  "cid": 5464092,
+  "s": []
+ },
+ {
+  "name": "Naltrexone hydrochloride",
+  "cid": 5485201,
+  "s": []
+ },
+ {
+  "name": "Naproxen",
+  "cid": 156391,
+  "s": [
+   [
+    "Slightly soluble in ether; soluble in methanol, chloroform",
+    "HSDB"
+   ],
+   [
+    "Soluble in 25 parts ethanol (96%), 20 parts methanol, 15 parts chloroform, 40 parts ether. Practically insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in water and freely soluble in alcohol.",
+    "HSDB"
+   ],
+   [
+    "In water, 15.9 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Naproxen sodium",
+  "cid": 23681059,
+  "s": []
+ },
+ {
+  "name": "Nefopam hydrochloride",
+  "cid": 155290,
+  "s": []
+ },
+ {
+  "name": "Oxycodone hydrochloride",
+  "cid": 5462350,
+  "s": []
+ },
+ {
+  "name": "Paracetamol",
+  "cid": 1983,
+  "s": [
+   [
+    "In water, 14,000 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Very slightly soluble in cold water, soluble in boiling water",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in alcohol; soluble in methanol, ethanol, dimethylformamide, ethylene dichloride, acetone, ethyl acetate; slightly soluble in ether; practically insoluble in petroleum ether, pentane, benzene",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 20 °C: 1.4 (moderate)",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Pentazocine",
+  "cid": 441278,
+  "s": [
+   [
+    "White to pale cream colored, odorless crystalline powder; there are two forms melting at about 218 deg & 254 °C, respectively; Sol 1 part in 30 parts of water, 1 part in 16 parts alcohol, 1 part in 4 parts chloroform; very slightly sol in acetone; practically insol in ether; 1% soln in water has a pH of 4 to 6 /Pentazocine hydrochloride/",
+    "HSDB"
+   ],
+   [
+    "1 G IN GREATER THAN 1000 ML WATER, 11 ML ALCOHOL, 2 ML CHLOROFORM, 42 ML ETHER",
+    "HSDB"
+   ],
+   [
+    "SOL IN ACETONE; SPARINGLY SOL IN ETHYL ACETATE",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Pethidine hydrochloride",
+  "cid": 5750,
+  "s": []
+ },
+ {
+  "name": "Phenazopyridine hydrochloride",
+  "cid": 8691,
+  "s": []
+ },
+ {
+  "name": "Piroxicam",
+  "cid": 54676228,
+  "s": []
+ },
+ {
+  "name": "Probenecid",
+  "cid": 4911,
+  "s": [
+   [
+    "FREELY SOL IN WATER /SODIUM SALT/",
+    "HSDB"
+   ],
+   [
+    "SOL IN DIL ALKALI, ALCOHOL, CHLOROFORM & ACETONE; PRACTICALLY INSOL IN WATER & DIL ACIDS",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Propyphenazone",
+  "cid": 3778,
+  "s": []
+ },
+ {
+  "name": "Rizatriptan benzoate",
+  "cid": 77997,
+  "s": []
+ },
+ {
+  "name": "Sufentanil citrate",
+  "cid": 65494,
+  "s": []
+ },
+ {
+  "name": "Sulfinpyrazone",
+  "cid": 5342,
+  "s": [
+   [
+    "SOL IN ETHYL ACETATE, CHLOROFORM",
+    "HSDB"
+   ],
+   [
+    "SLIGHTLY SOL IN WATER, ALC, ETHER, MINERAL OILS",
+    "HSDB"
+   ],
+   [
+    "SLIGHTLY SOL IN FATS",
+    "HSDB"
+   ],
+   [
+    "1 G SOL IN 10 ML ACETONE & 10 ML 0.5 N NAOH",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for SULFINPYRAZONE (6 total), please visit the HSDB record page.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Sulindac",
+  "cid": 1548887,
+  "s": []
+ },
+ {
+  "name": "Sumatriptan succinate",
+  "cid": 59772,
+  "s": []
+ },
+ {
+  "name": "Tapentadol hydrochloride",
+  "cid": 9838021,
+  "s": []
+ },
+ {
+  "name": "Tenoxicam",
+  "cid": 54677971,
+  "s": []
+ },
+ {
+  "name": "Tiaprofenic acid",
+  "cid": 5468,
+  "s": []
+ },
+ {
+  "name": "Tramadol hydrochloride",
+  "cid": 63013,
+  "s": []
+ },
+ {
+  "name": "Amikacin sulfate",
+  "cid": 38351,
+  "s": []
+ },
+ {
+  "name": "Aminosalicylic acid",
+  "cid": 4649,
+  "s": [
+   [
+    "1 G SOL IN ABOUT 7 ML WATER; SLIGHTLY SOL IN ALC /CALCIUM SALT/",
+    "HSDB"
+   ],
+   [
+    "PH OF 1% SOLN: ABOUT 7; FREELY SOL IN WATER /POTASSIUM SALT/",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for P-AMINOSALICYLIC ACID (7 total), please visit the HSDB record page.",
+    "HSDB"
+   ],
+   [
+    "SOL IN DILUTE NITRIC ACID & DILUTE SODIUM HYDROXIDE",
+    "HSDB"
+   ],
+   [
+    "Virtually insoluble in benzene, choroform, or carbon tetrachloride",
+    "HSDB"
+   ],
+   [
+    "1 G SOL IN ABOUT 500 ML WATER, IN 21 ML ALC; SLIGHTLY SOL IN ETHER; PRACTICALLY INSOL IN BENZENE",
+    "HSDB"
+   ],
+   [
+    "In water= 1.69X10+3 mg/l at 23 °C",
+    "HSDB"
+   ],
+   [
+    "Soluble in acetone",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Amoxicillin trihydrate",
+  "cid": 62883,
+  "s": []
+ },
+ {
+  "name": "Ampicillin sodium",
+  "cid": 23663979,
+  "s": []
+ },
+ {
+  "name": "Ampicillin trihydrate",
+  "cid": 23565,
+  "s": []
+ },
+ {
+  "name": "Azithromycin dihydrate",
+  "cid": 3033819,
+  "s": []
+ },
+ {
+  "name": "Aztreonam",
+  "cid": 5742832,
+  "s": []
+ },
+ {
+  "name": "Bedaquiline fumarate",
+  "cid": 24812732,
+  "s": []
+ },
+ {
+  "name": "Benzathine benzylpenicillin tetrahydrate",
+  "cid": 656811,
+  "s": []
+ },
+ {
+  "name": "Benzylpenicillin sodium",
+  "cid": 23668834,
+  "s": []
+ },
+ {
+  "name": "Cefaclor monohydrate",
+  "cid": 51038,
+  "s": []
+ },
+ {
+  "name": "Cefadroxil monohydrate",
+  "cid": 47964,
+  "s": []
+ },
+ {
+  "name": "Cefalexin monohydrate",
+  "cid": 62921,
+  "s": []
+ },
+ {
+  "name": "Cefazolin sodium",
+  "cid": 23675322,
+  "s": []
+ },
+ {
+  "name": "Cefdinir",
+  "cid": 6915944,
+  "s": []
+ },
+ {
+  "name": "Cefepime dihydrochloride monohydrate",
+  "cid": 9571075,
+  "s": []
+ },
+ {
+  "name": "Cefixime trihydrate",
+  "cid": 44467542,
+  "s": []
+ },
+ {
+  "name": "Cefoperazone sodium",
+  "cid": 23663974,
+  "s": []
+ },
+ {
+  "name": "Cefotaxime sodium",
+  "cid": 10695961,
+  "s": []
+ },
+ {
+  "name": "Cefoxitin sodium",
+  "cid": 23667300,
+  "s": []
+ },
+ {
+  "name": "Cefradine",
+  "cid": 38103,
+  "s": [
+   [
+    "SPARINGLY SOL IN WATER; VERY SLIGHTLY SOL ALC; PRACTICALLY INSOL IN CHLOROFORM & ETHER",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ceftazidime pentahydrate",
+  "cid": 6536864,
+  "s": []
+ },
+ {
+  "name": "Ceftizoxime sodium",
+  "cid": 23663938,
+  "s": []
+ },
+ {
+  "name": "Ceftriaxone sodium",
+  "cid": 11953897,
+  "s": []
+ },
+ {
+  "name": "Cefuroxime axetil",
+  "cid": 6321416,
+  "s": [
+   [
+    "Insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in acetone; sparingly soluble in chloroform, ethyl acetate, methanol; slightly soluble in dehydrated alcohol. Insoluble in ether, water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Cefuroxime sodium",
+  "cid": 23670318,
+  "s": []
+ },
+ {
+  "name": "Chloramphenicol",
+  "cid": 5959,
+  "s": [
+   [
+    "In water, 2.5 mg/mL at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in propylene glycol: 150.8 mg/mol. Very sol in methanol, ethanol, butanol, ethyl acetate, acetone. Fairly soluble in ether. Insoluble in benzene, petroleum ether, vegetable oils. Solubility in 50% acetamide solution about 5%.",
+    "HSDB"
+   ],
+   [
+    "Very soluble in acetone, chloroform, ethanol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Chloramphenicol sodium succinate",
+  "cid": 656833,
+  "s": []
+ },
+ {
+  "name": "Cilastatin sodium",
+  "cid": 23663403,
+  "s": []
+ },
+ {
+  "name": "Ciprofloxacin hydrochloride",
+  "cid": 62998,
+  "s": []
+ },
+ {
+  "name": "Clarithromycin",
+  "cid": 84029,
+  "s": []
+ },
+ {
+  "name": "Clindamycin hydrochloride",
+  "cid": 16051951,
+  "s": []
+ },
+ {
+  "name": "Clindamycin phosphate",
+  "cid": 443385,
+  "s": []
+ },
+ {
+  "name": "Clofazimine",
+  "cid": 2794,
+  "s": []
+ },
+ {
+  "name": "Cloxacillin sodium",
+  "cid": 23675743,
+  "s": []
+ },
+ {
+  "name": "Colistimethate sodium",
+  "cid": 44585614,
+  "s": []
+ },
+ {
+  "name": "Cycloserine",
+  "cid": 6234,
+  "s": [
+   [
+    "SOL IN WATER; SLIGHTLY SOL IN METHANOL, PROPYLENE GLYCOL",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Dalbavancin",
+  "cid": 16134627,
+  "s": []
+ },
+ {
+  "name": "Dapsone",
+  "cid": 2955,
+  "s": [
+   [
+    "In water, 380 mg/L at 37 °C",
+    "HSDB"
+   ],
+   [
+    "Soluble in alcohol, methanol, acetone, dilute hydrochloric acid. Practically insoluble in water.",
+    "HSDB"
+   ],
+   [
+    "Insoluble in fixed and vegetable oils.",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in deuterated dimethyl sulfoxide.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Delamanid",
+  "cid": 6480466,
+  "s": []
+ },
+ {
+  "name": "Dicloxacillin sodium",
+  "cid": 23675786,
+  "s": []
+ },
+ {
+  "name": "Doxycycline hyclate",
+  "cid": 54686183,
+  "s": []
+ },
+ {
+  "name": "Ertapenem sodium",
+  "cid": 23674512,
+  "s": []
+ },
+ {
+  "name": "Erythromycin",
+  "cid": 12560,
+  "s": [
+   [
+    "WHITE OR SLIGHTLY YELLOW CRYSTALS OR POWDER, PRACTICALLY ODORLESS. SOLN IS ALKALINE TO LITMUS. SOL IN METHANOL, CHLOROFORM. /Erythromycin stearate/",
+    "HSDB"
+   ],
+   [
+    "WHITE OR SLIGHTLY YELLOW, CRYSTALLINE POWDER. ODORLESS OR PRACTICALLY SO. PRACTICALLY TASTELESS. PKA 7. FREELY SOL IN ACETONE & CHLOROFORM; SOL IN 95% ETHANOL & BENZENE; SPARINGLY SOL IN ETHER; VERY SLIGHTLY SOL IN WATER. /Erythromycin ethyl succinate/",
+    "HSDB"
+   ],
+   [
+    "FREELY SOLUBLE IN ALC, SOL IN POLYETHYLENE GLYCOL /Erythromycin ethyl succinate",
+    "HSDB"
+   ],
+   [
+    "Very soluble in acetone, ethyl ether, ethanol, chloroform",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in alcohols, acetone, chloroform, acetonitrile, ethyl acetate; moderately soluble in ether, ethylene dichloride, amyl acetate",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: approx 2 mg/ML",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Erythromycin ethylsuccinate",
+  "cid": 443953,
+  "s": [
+   [
+    "FREELY SOL IN ACETONE & CHLOROFORM; SOL IN 95% ETHANOL & BENZENE; SPARINGLY SOL IN ETHER; VERY SLIGHTLY SOL IN WATER",
+    "HSDB"
+   ],
+   [
+    "FREELY SOLUBLE IN ALC, SOL IN POLYETHYLENE GLYCOL",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ethambutol dihydrochloride",
+  "cid": 14051,
+  "s": []
+ },
+ {
+  "name": "Ethionamide",
+  "cid": 2761171,
+  "s": [
+   [
+    "Very sparingly soluble in ether. Sparingly soluble in methanol, ethanol, propylene glycol. Soluble in hot acetone, dichloroethane. Freely soluble in pyridine.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Flucloxacillin sodium",
+  "cid": 23706211,
+  "s": []
+ },
+ {
+  "name": "Fosfomycin trometamol",
+  "cid": 10199068,
+  "s": []
+ },
+ {
+  "name": "Furazolidone",
+  "cid": 5323714,
+  "s": [
+   [
+    "Solubility in water (pH 6): approx 40 mg/l @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Fusidic acid",
+  "cid": 3000226,
+  "s": []
+ },
+ {
+  "name": "Imipenem",
+  "cid": 5282372,
+  "s": []
+ },
+ {
+  "name": "Isoniazid",
+  "cid": 3767,
+  "s": [
+   [
+    "Solubility in alcohol at 25 °C: about 2, in boiling alcohol: about 10%; in chloroform: about 0.1%. Practically insoluble in ether, benzene.",
+    "HSDB"
+   ],
+   [
+    "Sol in methyl ethyl ketone, acetone",
+    "HSDB"
+   ],
+   [
+    "In water, 1.4X10+5 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 20 °C: 12.5",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Levofloxacin hemihydrate",
+  "cid": 3033924,
+  "s": []
+ },
+ {
+  "name": "Lincomycin hydrochloride",
+  "cid": 71476,
+  "s": []
+ },
+ {
+  "name": "Linezolid",
+  "cid": 441401,
+  "s": []
+ },
+ {
+  "name": "Meropenem trihydrate",
+  "cid": 441129,
+  "s": []
+ },
+ {
+  "name": "Metronidazole",
+  "cid": 4173,
+  "s": [
+   [
+    "g/100 ml at 20 °C: 1.0 in water, 0.5 in ethanol, less than 0.05 in ether, chloroform; sol in dilute acids; sparingly sol in dimethylformamide",
+    "HSDB"
+   ],
+   [
+    "In water, 11,000 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Minocycline hydrochloride",
+  "cid": 54685925,
+  "s": []
+ },
+ {
+  "name": "Moxifloxacin hydrochloride",
+  "cid": 101526,
+  "s": []
+ },
+ {
+  "name": "Mupirocin",
+  "cid": 446596,
+  "s": []
+ },
+ {
+  "name": "Nalidixic acid",
+  "cid": 4421,
+  "s": [
+   [
+    "Soly at 23 °C (mg/ml): chloroform 35; toluene 1.6; methanol 1.3; ethanol 0.6; water 0.1; ether 0.1.",
+    "HSDB"
+   ],
+   [
+    "PRACTICALLY INSOL IN WATER; SOL IN SOLN OF CARBONATES",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Nitrofurantoin",
+  "cid": 6604200,
+  "s": [
+   [
+    "Soly (mg/100 ml): water (pH 7) 19.0; 95% ethanol 51.0; acetone 510; DMF 8000; peanut oil 2.1; glycerol 60; polyethylene glycol 1500.",
+    "HSDB"
+   ],
+   [
+    "Very slightly soluble in alcohol and practically insoluble in ether and water.",
+    "HSDB"
+   ],
+   [
+    "In water, 79 mg/l at 24 °C.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Nitrofurazone",
+  "cid": 5447130,
+  "s": [
+   [
+    "1 G IN 4200 ML WATER, 590 ML ALC, 350 ML PROPYLENE GLYCOL; SOL IN POLYETHYLENE GLYCOL MIXT UP TO ABOUT 1%; PRACTICALLY INSOL IN CHLOROFORM & ETHER",
+    "HSDB"
+   ],
+   [
+    "SOL IN ALKALINE SOLN",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Norfloxacin",
+  "cid": 4539,
+  "s": [
+   [
+    "In water, 0.28 mg/mL at 25 °C. Solubility in water is pH dependent, increasing sharply at pH<5 or pH >10",
+    "HSDB"
+   ],
+   [
+    "Solubility at 25 °C (mg/mL): methanol 0.98; ethanol 1.9; acetone 5.1; chloroform 5.5; diethyl ether 0.01; benzene 0.15; ethyl acetate 0.94; octyl alcohol 5.1; glacial acetic acid 340",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ofloxacin",
+  "cid": 4583,
+  "s": [
+   [
+    "Soluble in aqueous solutions with pH between 2 and 5. Sparingly to slightly soluble in aqueous solutions with pH 7 (solubility falls to 4 mg/mL) and freely soluble in aqueous solutions with pH above 9.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Phenoxymethylpenicillin potassium",
+  "cid": 23676814,
+  "s": [
+   [
+    "Very sol in water; 1 g in about 150 ml alcohol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Piperacillin sodium",
+  "cid": 23666879,
+  "s": []
+ },
+ {
+  "name": "Potassium clavulanate",
+  "cid": 23665591,
+  "s": []
+ },
+ {
+  "name": "Procaine benzylpenicillin",
+  "cid": 22502,
+  "s": []
+ },
+ {
+  "name": "Pyrazinamide",
+  "cid": 1046,
+  "s": [
+   [
+    "Solubility (mg/ml, 25 °C): methanol 13.8; absolute ethanol 5.7; isopropanol 3.8; ether 1.0; isooctane 0.01; chloroform 7.4",
+    "HSDB"
+   ],
+   [
+    "In water, 15 mg/ml @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Rifabutin",
+  "cid": 135415564,
+  "s": []
+ },
+ {
+  "name": "Rifampicin",
+  "cid": 135398735,
+  "s": [
+   [
+    "Freely sol in methyl chloride, dimethyl sulfoxide; sol in tetrahydrofuran; slightly sol in water (pH less than 6), acetone, carbon tetrachloride",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in chloroform, soluble in ethyl acetate and in methanol.",
+    "HSDB"
+   ],
+   [
+    "In water, 1,400 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Rifapentine",
+  "cid": 135403821,
+  "s": []
+ },
+ {
+  "name": "Rifaximin",
+  "cid": 6436173,
+  "s": []
+ },
+ {
+  "name": "Silver sulfadiazine",
+  "cid": 441244,
+  "s": []
+ },
+ {
+  "name": "Sodium fusidate",
+  "cid": 23672955,
+  "s": []
+ },
+ {
+  "name": "Streptomycin sulfate",
+  "cid": 19648,
+  "s": []
+ },
+ {
+  "name": "Sulbactam sodium",
+  "cid": 23663973,
+  "s": []
+ },
+ {
+  "name": "Sulfacetamide sodium",
+  "cid": 6419954,
+  "s": []
+ },
+ {
+  "name": "Sulfadiazine",
+  "cid": 5215,
+  "s": []
+ },
+ {
+  "name": "Sulfamethoxazole",
+  "cid": 5329,
+  "s": [
+   [
+    "PRACTICALLY INSOL IN WATER, ETHER & CHLOROFORM; 1 G IN 50 ML ALCOHOL & ABOUT 4 ML ACETONE; DISSOLVES IN HCL HYDROGEN CHLORIDE OR SODIUM HYDROXIDE SOLN THROUGH SALT FORMATION",
+    "HSDB"
+   ],
+   [
+    "Insoluble in ethyl ether",
+    "HSDB"
+   ],
+   [
+    "In water, 610 mg/L at 37 °C",
+    "HSDB"
+   ],
+   [
+    "The solubility interactions of trimethoprim and sulfamethoxazole in binary solvents were studied using hexane (n-hexane)-ethyl acetate, ethyl acetate-methyl alcohol (methanol), and methyl alcohol-water as the solve mixtures. When solubilities were obtained for individual components, trimethoprim exhibited solvation in ethyl acetate-methyl alcohol mixtures, while sulfamethoxazole showed weaker solute-solvent interactions in the solvent series. At its peak, the solubility of sulfamethoxazole was about 8 times higher than that of trimethoprim when the drugs were combined. Sulfamethoxazole lowered trimethoprim solubility by 13-74%. Similarly, trimethoprim suppressed sulfamethoxazole solubility by 10-94%. In water, although mutual solubility was reduced, the solubility ratio of trimethoprim to sulfamethoxazole was 1:4 on the mol fraction scale.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Tazobactam sodium",
+  "cid": 23663400,
+  "s": []
+ },
+ {
+  "name": "Tedizolid phosphate",
+  "cid": 11476460,
+  "s": []
+ },
+ {
+  "name": "Tetracycline hydrochloride",
+  "cid": 54704426,
+  "s": []
+ },
+ {
+  "name": "Tigecycline",
+  "cid": 54686904,
+  "s": []
+ },
+ {
+  "name": "Tinidazole",
+  "cid": 5479,
+  "s": []
+ },
+ {
+  "name": "Tobramycin",
+  "cid": 36294,
+  "s": [
+   [
+    "Freely soluble in water (1 in 1.5 parts)",
+    "HSDB"
+   ],
+   [
+    "Very slightly soluble in ethanol (1 in 2000 parts). Practically insoluble in chloroform, ether",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Trimethoprim",
+  "cid": 5578,
+  "s": [
+   [
+    "... Very slightly soluble in water and slightly soluble in alcohol.",
+    "HSDB"
+   ],
+   [
+    "Soluble in N,N-dimethylacetamide (DMAC) at 13.86; benzyl alcohol at 7.29; propylene glycol at 2.57; chloroform at 1.82; methanol at 1.21; ether at 0.003; benzene at 0.002 g/100 ml at 25 °C.",
+    "HSDB"
+   ],
+   [
+    "In water, 400 mg/l @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Vancomycin hydrochloride",
+  "cid": 6420023,
+  "s": []
+ },
+ {
+  "name": "Abacavir sulfate",
+  "cid": 441384,
+  "s": [
+   [
+    "In water, 77,000 mg/l @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Aciclovir",
+  "cid": 135398513,
+  "s": [
+   [
+    "White crystalline powder. Maximum solubility in water (25 °C): >100 mg/mL /Acyclovir sodium salt/",
+    "HSDB"
+   ],
+   [
+    "In water, 1,620 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Soluble in diluted hydrochloric acid; slightly soluble in water; insoluble in alcohol",
+    "HSDB"
+   ],
+   [
+    "0.2 mg/mL in alcohol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Adefovir dipivoxil",
+  "cid": 60871,
+  "s": []
+ },
+ {
+  "name": "Amantadine hydrochloride",
+  "cid": 64150,
+  "s": []
+ },
+ {
+  "name": "Atazanavir sulfate",
+  "cid": 158550,
+  "s": []
+ },
+ {
+  "name": "Baloxavir marboxil",
+  "cid": 124081896,
+  "s": []
+ },
+ {
+  "name": "Daclatasvir dihydrochloride",
+  "cid": 25154713,
+  "s": []
+ },
+ {
+  "name": "Darunavir ethanolate",
+  "cid": 23725083,
+  "s": []
+ },
+ {
+  "name": "Dolutegravir sodium",
+  "cid": 46216142,
+  "s": []
+ },
+ {
+  "name": "Efavirenz",
+  "cid": 64139,
+  "s": [
+   [
+    "Practically insoluble in water (less than 10 mg/L)",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Emtricitabine",
+  "cid": 60877,
+  "s": [
+   [
+    "About 1.12X10+6 mg/L in water at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Entecavir monohydrate",
+  "cid": 135526609,
+  "s": []
+ },
+ {
+  "name": "Etravirine",
+  "cid": 193962,
+  "s": []
+ },
+ {
+  "name": "Famciclovir",
+  "cid": 3324,
+  "s": [
+   [
+    "Solubility in water (25 °C): > 25% w/v initially; rapidly precipitates as sparingly soluble monohydrate (2-3% w/v)",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in acetone, methanol; sparingly soluble in ethanol, isopropanol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Favipiravir",
+  "cid": 492405,
+  "s": []
+ },
+ {
+  "name": "Ganciclovir",
+  "cid": 135398740,
+  "s": [
+   [
+    "Ganciclovir sodium sterile powder occurs as a white to off-white, crystalline, lyophilized powder. Ganciclovir sodium has a solubility of 3 mg/mL in water at 25 °C and neutral pH. Both ganciclovir base and ganciclovir sodium are freely soluble in water at high pH (around 11). At more neutral pH, solubility is reduced, and crystallization may occur in concentrated solutions of the drug (exceeding 10 mg/ml). Ganciclovir sodium contains approximately 4 mEq of sodium per gram of ganciclovir. Following reconstitution with sterile water for injection, ganciclovir sodium solutions containing 50 mg of ganciclovir per mL have a pH of approximately 11 and are colorless. Following further dilution in 0.9% sodium chloride injection or 5% dextrose injection, solutions containing approximately 2.5 mg of ganciclovir per mL have a pH of approximately 10 and an osmolality of 310 mOsm/kg. /Ganciclovir sodium/",
+    "HSDB"
+   ],
+   [
+    "In water (25 °C): 4.3 mg/mL at pH 7",
+    "HSDB"
+   ],
+   [
+    "Aqueous solubility of the drug is relatively constant over a pH range of 3.5-8.5 but increases substantially in strongly acidic or basic solutions.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Lamivudine",
+  "cid": 60825,
+  "s": [
+   [
+    "In water, 70,000 mg/L @ 20 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ledipasvir",
+  "cid": 67505836,
+  "s": []
+ },
+ {
+  "name": "Lopinavir",
+  "cid": 92727,
+  "s": [
+   [
+    "Practically insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in methanol and ethanol; soluble in isopropanol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Molnupiravir",
+  "cid": 145996610,
+  "s": []
+ },
+ {
+  "name": "Nevirapine",
+  "cid": 4463,
+  "s": [
+   [
+    "In water, 100 mg/l @ neutral pH",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Nirmatrelvir",
+  "cid": 155903259,
+  "s": []
+ },
+ {
+  "name": "Oseltamivir phosphate",
+  "cid": 78000,
+  "s": []
+ },
+ {
+  "name": "Raltegravir potassium",
+  "cid": 23668479,
+  "s": []
+ },
+ {
+  "name": "Remdesivir",
+  "cid": 121304016,
+  "s": []
+ },
+ {
+  "name": "Ribavirin",
+  "cid": 37542,
+  "s": [
+   [
+    "Water-soluble",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in alcohol.",
+    "HSDB"
+   ],
+   [
+    "In water, 142 mg/mL at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Rilpivirine hydrochloride",
+  "cid": 11711114,
+  "s": []
+ },
+ {
+  "name": "Ritonavir",
+  "cid": 392622,
+  "s": [
+   [
+    "Freely soluble in methanol and ethanol; soluble in isopropanol.",
+    "HSDB"
+   ],
+   [
+    "In water, 1.1X10-4 mg/L @ 25 °C /Estimated/",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Sofosbuvir",
+  "cid": 45375808,
+  "s": [
+   [
+    "Slightly soluble in water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Tenofovir disoproxil fumarate",
+  "cid": 6398764,
+  "s": [
+   [
+    "In water, 13.4 mg/mL at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Trifluridine",
+  "cid": 6256,
+  "s": []
+ },
+ {
+  "name": "Valaciclovir hydrochloride",
+  "cid": 135398741,
+  "s": []
+ },
+ {
+  "name": "Valganciclovir hydrochloride",
+  "cid": 135413534,
+  "s": []
+ },
+ {
+  "name": "Velpatasvir",
+  "cid": 67683363,
+  "s": []
+ },
+ {
+  "name": "Zidovudine",
+  "cid": 35370,
+  "s": [
+   [
+    "71 mg/ml in alc @ 25 °C",
+    "HSDB"
+   ],
+   [
+    "In water, 20,000 mg/l @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Albendazole",
+  "cid": 2082,
+  "s": []
+ },
+ {
+  "name": "Amodiaquine hydrochloride",
+  "cid": 64646,
+  "s": []
+ },
+ {
+  "name": "Amphotericin B",
+  "cid": 5280965,
+  "s": [
+   [
+    "In N,N-dimethylformamide 2-4 mg/ml, in N,N-dimethylformamide + hydrochloric acid 60-80 mg/ml, in dimethyl sulfoxide 30-40 mg/ml",
+    "HSDB"
+   ],
+   [
+    "INSOL IN ANHYDROUS ALC, ETHER, BENZENE & TOLUENE; SLIGHTLY SOL IN METHANOL",
+    "HSDB"
+   ],
+   [
+    "Insol in water at pH 6-7; solubility in water at pH 2 or pH 11 about 0.1 mg/ml; water sol increased by sodium desoxycholate",
+    "HSDB"
+   ],
+   [
+    "In water, 750 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Artemether",
+  "cid": 68911,
+  "s": []
+ },
+ {
+  "name": "Artesunate",
+  "cid": 6917864,
+  "s": []
+ },
+ {
+  "name": "Atovaquone",
+  "cid": 74989,
+  "s": []
+ },
+ {
+  "name": "Benznidazole",
+  "cid": 31593,
+  "s": []
+ },
+ {
+  "name": "Benzyl benzoate",
+  "cid": 2345,
+  "s": [
+   [
+    "Insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Insoluble in glycerol; miscible with alcohol, chloroform, ether, oils",
+    "HSDB"
+   ],
+   [
+    "Soluble in ethanol, ethyl ether, acetone, benzene, methanol, chloroform",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: none",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Bifonazole",
+  "cid": 2378,
+  "s": []
+ },
+ {
+  "name": "Caspofungin acetate",
+  "cid": 6850808,
+  "s": []
+ },
+ {
+  "name": "Chloroquine phosphate",
+  "cid": 83818,
+  "s": []
+ },
+ {
+  "name": "Ciclopirox olamine",
+  "cid": 38911,
+  "s": []
+ },
+ {
+  "name": "Clotrimazole",
+  "cid": 2812,
+  "s": [
+   [
+    "SOL IN ACETONE, CHLOROFORM, ETHYL ACETATE; SLIGHTLY SOL IN WATER, BENZENE, TOLUENE",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in alcohol; soluble in polyethylene glycol 400",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in ether",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Crotamiton",
+  "cid": 2883,
+  "s": []
+ },
+ {
+  "name": "Diethylcarbamazine citrate",
+  "cid": 15432,
+  "s": [
+   [
+    "> 75% in water @ 20 °C",
+    "HSDB"
+   ],
+   [
+    "Freely sol in hot alcohol",
+    "HSDB"
+   ],
+   [
+    "Sparingly sol in cold alcohol",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in acetone, benzene, chloroform and ether",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Diloxanide furoate",
+  "cid": 19529,
+  "s": []
+ },
+ {
+  "name": "Econazole nitrate",
+  "cid": 68589,
+  "s": []
+ },
+ {
+  "name": "Fluconazole",
+  "cid": 3365,
+  "s": [
+   [
+    "Poorly soluble in water but can be dissolved in organic solvents such as chloroform, propylene glycol, and polyethoxylated castor oil (preparation for IV use but dangerous for dogs)",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in water and saline",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Flucytosine",
+  "cid": 3366,
+  "s": [
+   [
+    "In water, 1.5 g/100 mL at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in alcohol; practically insoluble in chloroform, ether",
+    "HSDB"
+   ],
+   [
+    "1 g in about 12 mL 0.1 N HCL",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Griseofulvin",
+  "cid": 441140,
+  "s": [
+   [
+    "SOL IN N,N-DIMETHYLFORMAMIDE @ 25 °C: 12-14 G/100 ML; SLIGHTLY SOL IN ETHANOL, CHLOROFORM, METHANOL, ACETIC ACID, ACETONE, BENZENE, & ETHYL ACETATE; PRACTICALLY INSOL IN WATER & PETROLEUM ETHER",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Hydroxychloroquine sulfate",
+  "cid": 12947,
+  "s": []
+ },
+ {
+  "name": "Isavuconazonium sulfate",
+  "cid": 72196309,
+  "s": []
+ },
+ {
+  "name": "Itraconazole",
+  "cid": 55283,
+  "s": [
+   [
+    "Practically insoluble in water and dilute acidic solutions",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ivermectin",
+  "cid": null,
+  "s": []
+ },
+ {
+  "name": "Ketoconazole",
+  "cid": 47576,
+  "s": [
+   [
+    "Solubility in water: none",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Levamisole hydrochloride",
+  "cid": 27944,
+  "s": []
+ },
+ {
+  "name": "Lumefantrine",
+  "cid": 6437380,
+  "s": []
+ },
+ {
+  "name": "Mebendazole",
+  "cid": 4030,
+  "s": [
+   [
+    "Soluble in formic acid. Practically insoluble in ethanol, ether, chloroform",
+    "HSDB"
+   ],
+   [
+    "In water, 7.13X10+1 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Mefloquine hydrochloride",
+  "cid": 65329,
+  "s": []
+ },
+ {
+  "name": "Micafungin sodium",
+  "cid": 23666118,
+  "s": []
+ },
+ {
+  "name": "Miconazole nitrate",
+  "cid": 68553,
+  "s": []
+ },
+ {
+  "name": "Miltefosine",
+  "cid": 3599,
+  "s": []
+ },
+ {
+  "name": "Natamycin",
+  "cid": 5284447,
+  "s": []
+ },
+ {
+  "name": "Niclosamide",
+  "cid": 4477,
+  "s": [
+   [
+    "SPARINGLY SOL IN CHLOROFORM, ETHER, ETHANOL",
+    "HSDB"
+   ],
+   [
+    "SOL IN ACETONE",
+    "HSDB"
+   ],
+   [
+    "Sol at 20 °C in 150 parts of alcohol",
+    "HSDB"
+   ],
+   [
+    "In water = 5-8 mg/L at 20 °C",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for NICLOSAMIDE (8 total), please visit the HSDB record page.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Nitazoxanide",
+  "cid": 41684,
+  "s": []
+ },
+ {
+  "name": "Nystatin",
+  "cid": 6433272,
+  "s": [
+   [
+    "MW: 926.12 /Form not specified/",
+    "HSDB"
+   ],
+   [
+    "Mg/ml at about 28 °C: methanol 11.2, ethanol 1.2, chloroform 0.48, carbon tetrachloride 1.23, benzene 0.28, toluene 0.285, acetone 0.390, ethyl acetate 0.75, ethylene glycol 8.75",
+    "HSDB"
+   ],
+   [
+    "Insol in ether",
+    "HSDB"
+   ],
+   [
+    "In water, 3.60X10+2 mg/L at 24 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Pentamidine diisetionate",
+  "cid": 8813,
+  "s": []
+ },
+ {
+  "name": "Permethrin",
+  "cid": 40326,
+  "s": [
+   [
+    "In water, 0.0111 mg/L at 20 °C, pH 7.0-9.3 (OECD Method 105)",
+    "HSDB"
+   ],
+   [
+    "In water, 6.00X10-3 mg/L (pH 7, 20 °C); cis-isomers 0.20 mg/L (25 °C); trans-isomers 0.13 mg/L (25 °C)",
+    "HSDB"
+   ],
+   [
+    "In xylene and hexane >1000, methanol 258 (all in g/kg at 25 °C)",
+    "HSDB"
+   ],
+   [
+    "Soluble in most organic solvents except ethylene glycol. Soluble in acetone, ethanol, ether, and xylene",
+    "HSDB"
+   ],
+   [
+    "In water, 6.00X10-3 mg/ml @ 20 °C.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: none",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Posaconazole",
+  "cid": 468595,
+  "s": []
+ },
+ {
+  "name": "Praziquantel",
+  "cid": 4891,
+  "s": []
+ },
+ {
+  "name": "Primaquine diphosphate",
+  "cid": 6135,
+  "s": []
+ },
+ {
+  "name": "Proguanil hydrochloride",
+  "cid": 9570076,
+  "s": []
+ },
+ {
+  "name": "Pyrantel embonate",
+  "cid": 5281033,
+  "s": []
+ },
+ {
+  "name": "Pyrimethamine",
+  "cid": 4993,
+  "s": [
+   [
+    "In water, 10 mg/L (temperature not specified)",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in water; slightly soluble in ethanol (about 9 g/L), in dilute HCl (about 5 g/L); soluble in boiling ethanol (about 25 g/L); Very sparingly soluble in propylene glycol and dimethylacetamide at 70 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Quinine sulfate",
+  "cid": 16211610,
+  "s": []
+ },
+ {
+  "name": "Secnidazole",
+  "cid": 71815,
+  "s": []
+ },
+ {
+  "name": "Terbinafine hydrochloride",
+  "cid": 5282481,
+  "s": []
+ },
+ {
+  "name": "Tolnaftate",
+  "cid": 5510,
+  "s": []
+ },
+ {
+  "name": "Triclabendazole",
+  "cid": 50248,
+  "s": []
+ },
+ {
+  "name": "Voriconazole",
+  "cid": 71616,
+  "s": []
+ },
+ {
+  "name": "Adenosine",
+  "cid": 60961,
+  "s": [
+   [
+    "Water solubility increases by warming and lowering the pH",
+    "HSDB"
+   ],
+   [
+    "Insoluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "In water, 5.1 g/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ambrisentan",
+  "cid": 6918493,
+  "s": []
+ },
+ {
+  "name": "Amiloride hydrochloride dihydrate",
+  "cid": 68540,
+  "s": []
+ },
+ {
+  "name": "Amiodarone hydrochloride",
+  "cid": 441325,
+  "s": [
+   [
+    "Soluble @ 25 °C (g/100 ml): chloroform 44.51; methylene chloride 19.20; methanol 9.98; ethanol 1.28; benzene 0.65; tetrahydrofuran 0.60; acetonitrile 0.32; 1-octanol 0.30; ether 0.17; 1-propanol 0.13; hexane 0.03; petroleum ether 0.001; sparingly soluble in iso- propanol; slightly soluble in acetone, dioxane, and carbon tetrachloride",
+    "HSDB"
+   ],
+   [
+    "In water, 700 mg/l @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Amlodipine besilate",
+  "cid": 60496,
+  "s": []
+ },
+ {
+  "name": "Apixaban",
+  "cid": 10182969,
+  "s": [
+   [
+    "Aqueous solubility across the physiological pH range is approximately 0.04 mg/L",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Atenolol",
+  "cid": 2249,
+  "s": [
+   [
+    "Freely soluble in methanol; soluble in acetic acid, DMSO; sparingly soluble in 96% ethanol; slightly soluble in isopropanol; very slightly soluble in acetone, dioxane; practically insoluble in acetonitrile, ethyl acetate; chloroform",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in 1 N HCl (300 mg/ml @ 25 °C); less soluble in chloroform (3 mg/ml @ 25 °C)",
+    "HSDB"
+   ],
+   [
+    "In water, 1.33X10+4 mg/l @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Atorvastatin calcium trihydrate",
+  "cid": 656846,
+  "s": []
+ },
+ {
+  "name": "Bisoprolol fumarate",
+  "cid": 5281064,
+  "s": []
+ },
+ {
+  "name": "Bosentan",
+  "cid": 104865,
+  "s": []
+ },
+ {
+  "name": "Bumetanide",
+  "cid": 2471,
+  "s": []
+ },
+ {
+  "name": "Calcium dobesilate",
+  "cid": 29963,
+  "s": []
+ },
+ {
+  "name": "Candesartan cilexetil",
+  "cid": 2540,
+  "s": []
+ },
+ {
+  "name": "Captopril",
+  "cid": 44093,
+  "s": [
+   [
+    "Freely soluble in water (approximately 160 mg/mL)",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in alcohol, chloroform, methylene chloride; sparingly soluble in ethyl acetate",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Carvedilol",
+  "cid": 2585,
+  "s": [
+   [
+    "Freely soluble in dimethylsulfoxide; soluble in methylene chloride, methanol; sparingly soluble in ethanol, isopropanol; slightly soluble in ethyl ether",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in simulated gastric and intestinal fluid at pH 1.1 and 7.5, respectively",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Chlortalidone",
+  "cid": 2732,
+  "s": [
+   [
+    "12 mg/100 ml in water @ 20 °C, 27 mg/100 ml @ 37 °C; 577 mg/100 ml in 0.1 N sodium carbonate; more sol in aq soln of sodium hydroxide; sol in warm ethanol; slightly sol in ether.",
+    "HSDB"
+   ],
+   [
+    "Chlorthalidone is practically insoluble in water, in ether and in chloroform; soluble in methanol; slightly soluble in alcohol.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Cilostazol",
+  "cid": 2754,
+  "s": [
+   [
+    "Practically insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in acetic acid, chloroform, n-methyl-2-pyrrolidone, DMSO; slightly soluble in methanol, ethanol. Practically insoluble in ether. 0.1NHCl, 0.1N NaOH",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Clonidine hydrochloride",
+  "cid": 20179,
+  "s": []
+ },
+ {
+  "name": "Clopidogrel hydrogen sulfate",
+  "cid": 115366,
+  "s": []
+ },
+ {
+  "name": "Dabigatran etexilate mesilate",
+  "cid": 135566083,
+  "s": []
+ },
+ {
+  "name": "Digoxin",
+  "cid": 2724385,
+  "s": [
+   [
+    "Cardiac glycosides have a characteristic ring structure known as an aglycone (orgenin) coupled with one or more types of sugars. The aglycone portion of the glycoside consists of a steroid nucleus (cyclopentanoperhydrophenanthrene nucleus) and an alpha,beta-unsaturated 5- or 6-membered lactone ring at the C17 position of the steroid nucleus. A beta-oriented hydroxyl substitution is usually present at the C3 and C14 positions. Increasing the number of hydroxyl groups on the aglycone increases polarity and decreases lipid solubility; additional sugars may also increase polarity. The sugar portion of the glycoside is attached to the steroid nucleus, usually through a hydroxyl group at the C3 position. The sugar moiety affects in part the activity of the cardiac glycosides by influencing solubility, absorption, distribution, and toxicity. In general, the cardiac glycosides are sparingly soluble to insoluble in water and freely soluble to slightly soluble in alcohol or diluted alcohol. /Cardiac glycosides/",
+    "HSDB"
+   ],
+   [
+    "In water, 64.8 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Very soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in pyridine; soluble in mixture of chloroform and alcohol. More soluble in hot 80% alcohol than gitoxin. Slightly soluble in dilute alcohol, chloroform. Practically insoluble in ether, acetone, ethyl acetate, chloroform",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for Digoxin (6 total), please visit the HSDB record page.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Diltiazem hydrochloride",
+  "cid": 62920,
+  "s": []
+ },
+ {
+  "name": "Dipyridamole",
+  "cid": 3108,
+  "s": []
+ },
+ {
+  "name": "Dobutamine hydrochloride",
+  "cid": 65324,
+  "s": []
+ },
+ {
+  "name": "Dopamine hydrochloride",
+  "cid": 65340,
+  "s": []
+ },
+ {
+  "name": "Doxazosin mesilate",
+  "cid": 62978,
+  "s": [
+   [
+    "... Freely soluble in dimethylsulfoxide, soluble in dimethylformamide, slightly soluble in methanol, ethanol, and water (0.8 percent at 25 °C), and very slighlty soluble in acetone and methylene chloride.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Edoxaban tosylate",
+  "cid": 44610678,
+  "s": []
+ },
+ {
+  "name": "Enalapril maleate",
+  "cid": 5388961,
+  "s": []
+ },
+ {
+  "name": "Eplerenone",
+  "cid": 443872,
+  "s": [
+   [
+    "Very slightly soluble in water, with its solubility essentially pH dependent",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Esmolol hydrochloride",
+  "cid": 104769,
+  "s": []
+ },
+ {
+  "name": "Ezetimibe",
+  "cid": 150311,
+  "s": []
+ },
+ {
+  "name": "Felodipine",
+  "cid": 3333,
+  "s": []
+ },
+ {
+  "name": "Fenofibrate",
+  "cid": 3339,
+  "s": [
+   [
+    "Practically insoluble in water; slightly soluble in methanol, ethanol; soluble in acetone, ether, benzene, chloroform",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Fosinopril sodium",
+  "cid": 23681451,
+  "s": []
+ },
+ {
+  "name": "Furosemide",
+  "cid": 3440,
+  "s": [
+   [
+    "The sodium salt can be recrystallized from water; the solubility of the salt in water at room temperature is 6%. /Furosemide sodium salt/",
+    "HSDB"
+   ],
+   [
+    "In water, 73.1 mg/L at 30 °C",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in water",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in chloroform, ether. Soluble in acetone, methanol, DMF, aqueous solutions above pH 8.0. Less soluble in ethanol.",
+    "HSDB"
+   ],
+   [
+    "Soluble in methanol, acetone, dilute NaOH",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in alkali hydroxide",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Gemfibrozil",
+  "cid": 3463,
+  "s": []
+ },
+ {
+  "name": "Glyceryl trinitrate",
+  "cid": 4510,
+  "s": [
+   [
+    "Sparingly sol in petroleum ether, liq petrolatum, glycerol.",
+    "HSDB"
+   ],
+   [
+    "One gram dissolves in 4 grams ethanol, 18 g methanol, 120 g carbon disulfide.",
+    "HSDB"
+   ],
+   [
+    "Miscible with glacial acetic acid, nitrobenzene, pyridine, ethylene bromide, dichloroethylene, ethyl acetate.",
+    "HSDB"
+   ],
+   [
+    "1 g in 800 ml water.",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for NITROGLYCERIN (6 total), please visit the HSDB record page.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: poor",
+    "ICSC"
+   ],
+   [
+    "0.1%",
+    "NIOSH"
+   ]
+  ]
+ },
+ {
+  "name": "Hydralazine hydrochloride",
+  "cid": 9351,
+  "s": [
+   [
+    "Very slightly soluble in ether and alcohol",
+    "HSDB"
+   ],
+   [
+    "In 95% ethanol, 0.2 g/100 ml",
+    "HSDB"
+   ],
+   [
+    "In water, 44.2 g/l @ 25 °C; 30.1 g/l @ 15 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Hydrochlorothiazide",
+  "cid": 3639,
+  "s": [
+   [
+    "In water, 722 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Soluble in ethanol at approximately 750 g/L; soluble in acetone, dilute ammonia; freely soluble in sodium hydroxide solution, n-butylamine, dimethylformamide; sparingly soluble in alcohol; insoluble in ether, chloroform, dilute mineral acids",
+    "HSDB"
+   ],
+   [
+    "Soluble in sodium hydroxide solution",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in sodium hydroxide solution, in n-butylamine and in dimethylformamide; sparingly soluble in methanol; insoluble in dilute mineral acids",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Indapamide",
+  "cid": 3702,
+  "s": []
+ },
+ {
+  "name": "Irbesartan",
+  "cid": 3749,
+  "s": [
+   [
+    "Practically insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in alcohol, methylene chloride",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Isosorbide dinitrate",
+  "cid": 6883,
+  "s": [
+   [
+    "Freely sol in acetone, alcohol ether",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in chloroform.",
+    "HSDB"
+   ],
+   [
+    "In water, 550 mg/l @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Isosorbide mononitrate",
+  "cid": 27661,
+  "s": []
+ },
+ {
+  "name": "Isoxsuprine hydrochloride",
+  "cid": 11368,
+  "s": [
+   [
+    "Soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "Soluble in water at 25 °C, about 2% w/v",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ivabradine hydrochloride",
+  "cid": 3045381,
+  "s": []
+ },
+ {
+  "name": "Labetalol hydrochloride",
+  "cid": 71412,
+  "s": []
+ },
+ {
+  "name": "Lisinopril dihydrate",
+  "cid": 5362118,
+  "s": []
+ },
+ {
+  "name": "Losartan potassium",
+  "cid": 11751549,
+  "s": []
+ },
+ {
+  "name": "Lovastatin",
+  "cid": 53232,
+  "s": [
+   [
+    "In water, 0.4X10-3 mg/mL at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Solubility at 25 °C (mg/mL): acetone 47, acetonitrile 28, n-butanol 7, iso-butanol 14, chloroform 350, N,N-dimethylformamide 90, ethanol 16, methanol 28, n-octanol 2, n-propanol 11, iso-propanol 20",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in hexane",
+    "HSDB"
+   ],
+   [
+    "Very soluble in chloroform; soluble in dimethyl formamide; slightly soluble in acetone, ethanol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Methyldopa",
+  "cid": 18530292,
+  "s": []
+ },
+ {
+  "name": "Metoprolol succinate",
+  "cid": 62937,
+  "s": []
+ },
+ {
+  "name": "Metoprolol tartrate",
+  "cid": 441308,
+  "s": []
+ },
+ {
+  "name": "Mexiletine hydrochloride",
+  "cid": 21467,
+  "s": []
+ },
+ {
+  "name": "Midodrine hydrochloride",
+  "cid": 18340,
+  "s": []
+ },
+ {
+  "name": "Milrinone",
+  "cid": 4197,
+  "s": []
+ },
+ {
+  "name": "Minoxidil",
+  "cid": 4201,
+  "s": []
+ },
+ {
+  "name": "Nebivolol hydrochloride",
+  "cid": 11626384,
+  "s": []
+ },
+ {
+  "name": "Nicardipine hydrochloride",
+  "cid": 41114,
+  "s": []
+ },
+ {
+  "name": "Nifedipine",
+  "cid": 4485,
+  "s": [
+   [
+    "Solubility at 20 °C (g/L): acetone 250, methylene chloride 160, chloroform 140, ethyl acetate 50, methanol 26, ethanol 17",
+    "HSDB"
+   ],
+   [
+    "In water, 1.7X10-5 mol/L = 5.9 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Nimodipine",
+  "cid": 4497,
+  "s": []
+ },
+ {
+  "name": "Olmesartan medoxomil",
+  "cid": 130881,
+  "s": []
+ },
+ {
+  "name": "Pentoxifylline",
+  "cid": 4740,
+  "s": []
+ },
+ {
+  "name": "Perindopril erbumine",
+  "cid": 441313,
+  "s": []
+ },
+ {
+  "name": "Prasugrel hydrochloride",
+  "cid": 10158453,
+  "s": []
+ },
+ {
+  "name": "Pravastatin sodium",
+  "cid": 16759173,
+  "s": []
+ },
+ {
+  "name": "Prazosin hydrochloride",
+  "cid": 68546,
+  "s": [
+   [
+    "Soluble at ambient temperatures (mg/ml): acetone, 0.0072; methanol, 6.4; ethanol, 0.84; dimethylformamide, 1.3; dimethylacetamide, 1.2; chloroform, 0.041",
+    "HSDB"
+   ],
+   [
+    "In water, 1.4 mg/ml @ pH approx 3.5",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Procainamide hydrochloride",
+  "cid": 66068,
+  "s": []
+ },
+ {
+  "name": "Propafenone hydrochloride",
+  "cid": 36708,
+  "s": []
+ },
+ {
+  "name": "Propranolol hydrochloride",
+  "cid": 62882,
+  "s": [
+   [
+    "Practically insoluble in ether, benzene, ethyl acetate",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ramipril",
+  "cid": 5362129,
+  "s": [
+   [
+    "Sparingly soluble in water",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in methanol",
+    "HSDB"
+   ],
+   [
+    "Soluble in polar substances and buffered aqueous solutions",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ranolazine",
+  "cid": 56959,
+  "s": [
+   [
+    "Soluble in dichloromethane, methanol; sparingly soluble in tetrahydrofuran, ethanol, acetonitrile, acetone; slightly soluble in ethyl acetate, isopropanol, toluene, ethyl ether; very slightly soluble in water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Rivaroxaban",
+  "cid": 9875401,
+  "s": [
+   [
+    "Slightly soluble in organic solvents (e.g. acetone, polyethylene glycol 400) and is pratically insoluble in water and aqueous media",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Rosuvastatin calcium",
+  "cid": 5282455,
+  "s": []
+ },
+ {
+  "name": "Sacubitril valsartan sodium hemipentahydrate",
+  "cid": null,
+  "s": []
+ },
+ {
+  "name": "Sildenafil citrate",
+  "cid": 135413523,
+  "s": []
+ },
+ {
+  "name": "Silodosin",
+  "cid": 5312125,
+  "s": []
+ },
+ {
+  "name": "Simvastatin",
+  "cid": 54454,
+  "s": [
+   [
+    "In water, 3.0X10-2 mg/L, temp not specified",
+    "HSDB"
+   ],
+   [
+    "Solubility (mg/mL): chloroform 610; DMSO 540; methanol 200; ethanol 160; n-hexane 0.15; 0.1 M HCl 0.06; polyethylene glycol-400 70; propylene glycol 30; 0.1 M NaOH 70",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Sodium nitroprusside",
+  "cid": 11953895,
+  "s": []
+ },
+ {
+  "name": "Sotalol hydrochloride",
+  "cid": 66245,
+  "s": []
+ },
+ {
+  "name": "Spironolactone",
+  "cid": 5833,
+  "s": [
+   [
+    "Soluble in most organic solvents",
+    "HSDB"
+   ],
+   [
+    "Soluble in ethyl acetate and ethanol; slightly soluble in methanol",
+    "HSDB"
+   ],
+   [
+    "In water, 22 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Telmisartan",
+  "cid": 65999,
+  "s": [
+   [
+    "Practically insoluble in water and in the pH range of 3 to 9",
+    "HSDB"
+   ],
+   [
+    "Sparingly soluble in strong acid (except insoluble in hydrochloric acid) and soluble in strong base.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Terazosin hydrochloride dihydrate",
+  "cid": 63016,
+  "s": []
+ },
+ {
+  "name": "Ticagrelor",
+  "cid": 9871419,
+  "s": [
+   [
+    "Solubility in water: approximately 10 ug/mL",
+    "HSDB"
+   ],
+   [
+    "Soluble in ethyl acetate",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Torasemide",
+  "cid": 41781,
+  "s": []
+ },
+ {
+  "name": "Tranexamic acid",
+  "cid": 5526,
+  "s": []
+ },
+ {
+  "name": "Triamterene",
+  "cid": 5546,
+  "s": [
+   [
+    "Slightly soluble in water (1 in 1000)",
+    "HSDB"
+   ],
+   [
+    "In water, less than 0.1% at 50 °C",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in ethanol (1 in 3000), chloroform (1 in 4000)",
+    "HSDB"
+   ],
+   [
+    "Soluble in formic acid; sparingly soluble in methoxyethanol; very slightly soluble in acetic acid, dilute mineral acids",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for Triamterene (7 total), please visit the HSDB record page.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Trimetazidine dihydrochloride",
+  "cid": 83201,
+  "s": []
+ },
+ {
+  "name": "Valsartan",
+  "cid": 60846,
+  "s": [
+   [
+    "Soluble in ethanol and methanol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Verapamil hydrochloride",
+  "cid": 62969,
+  "s": []
+ },
+ {
+  "name": "Warfarin sodium",
+  "cid": 16204922,
+  "s": []
+ },
+ {
+  "name": "Acarbose",
+  "cid": 9811704,
+  "s": []
+ },
+ {
+  "name": "Alendronate sodium trihydrate",
+  "cid": 23681107,
+  "s": []
+ },
+ {
+  "name": "Alfacalcidol",
+  "cid": 5282181,
+  "s": []
+ },
+ {
+  "name": "Alogliptin benzoate",
+  "cid": 16088021,
+  "s": []
+ },
+ {
+  "name": "Calcitonin (salmon)",
+  "cid": 16220016,
+  "s": []
+ },
+ {
+  "name": "Calcitriol",
+  "cid": 5280453,
+  "s": [
+   [
+    "Slightly sol in methanol, ethanol, ethyl acetate, THF.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Canagliflozin",
+  "cid": 24812758,
+  "s": [
+   [
+    "Practically insoluble in aqueous media from pH 1.1 to pH 12.9 /Canagliflozin hemihydrate/",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Chlorpropamide",
+  "cid": 2727,
+  "s": [
+   [
+    "2.2 mg/ml in water @ pH 6; practically insol in water @ pH 7.3; sol in alcohol; moderately sol in chloroform; sparingly sol in ether, benzene",
+    "HSDB"
+   ],
+   [
+    "In water, 258 mg/l @ 37 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Cinacalcet hydrochloride",
+  "cid": 156418,
+  "s": []
+ },
+ {
+  "name": "Dapagliflozin propanediol monohydrate",
+  "cid": 24906252,
+  "s": []
+ },
+ {
+  "name": "Empagliflozin",
+  "cid": 11949646,
+  "s": []
+ },
+ {
+  "name": "Etidronate disodium",
+  "cid": 23894,
+  "s": []
+ },
+ {
+  "name": "Glibenclamide",
+  "cid": 3488,
+  "s": []
+ },
+ {
+  "name": "Gliclazide",
+  "cid": 3475,
+  "s": []
+ },
+ {
+  "name": "Glimepiride",
+  "cid": 3476,
+  "s": []
+ },
+ {
+  "name": "Glipizide",
+  "cid": 3478,
+  "s": []
+ },
+ {
+  "name": "Ibandronate sodium monohydrate",
+  "cid": 23663991,
+  "s": []
+ },
+ {
+  "name": "Linagliptin",
+  "cid": 10096344,
+  "s": [
+   [
+    "Soluble in methanol; sparingly soluble in ethanol; very slightly soluble in isopropanol, alcohol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Liraglutide",
+  "cid": 16134956,
+  "s": []
+ },
+ {
+  "name": "Metformin hydrochloride",
+  "cid": 14219,
+  "s": []
+ },
+ {
+  "name": "Nateglinide",
+  "cid": 5311309,
+  "s": []
+ },
+ {
+  "name": "Orlistat",
+  "cid": 3034010,
+  "s": [
+   [
+    "Practically insoluble in water, freely soluble in chloroform, and very soluble in methanol and ethanol.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Pamidronate disodium pentahydrate",
+  "cid": 60342,
+  "s": []
+ },
+ {
+  "name": "Paricalcitol",
+  "cid": 5281104,
+  "s": []
+ },
+ {
+  "name": "Pioglitazone hydrochloride",
+  "cid": 60560,
+  "s": []
+ },
+ {
+  "name": "Raloxifene hydrochloride",
+  "cid": 54900,
+  "s": []
+ },
+ {
+  "name": "Repaglinide",
+  "cid": 65981,
+  "s": []
+ },
+ {
+  "name": "Risedronate sodium hemipentahydrate",
+  "cid": 11954322,
+  "s": []
+ },
+ {
+  "name": "Saxagliptin hydrochloride",
+  "cid": 49800073,
+  "s": []
+ },
+ {
+  "name": "Semaglutide",
+  "cid": 56843331,
+  "s": []
+ },
+ {
+  "name": "Sitagliptin phosphate monohydrate",
+  "cid": 11591741,
+  "s": []
+ },
+ {
+  "name": "Teriparatide",
+  "cid": 16133850,
+  "s": []
+ },
+ {
+  "name": "Thioctic acid",
+  "cid": 864,
+  "s": [
+   [
+    "Yellow powder; solubility in ethanol: 50 mg/mL /Synthetic, oxidized form/",
+    "HSDB"
+   ],
+   [
+    "Soluble in methanol, ethanol, diethyl ether and chloroform",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Vildagliptin",
+  "cid": 6918537,
+  "s": []
+ },
+ {
+  "name": "Zoledronic acid monohydrate",
+  "cid": 121586,
+  "s": []
+ },
+ {
+  "name": "Agomelatine",
+  "cid": 82148,
+  "s": []
+ },
+ {
+  "name": "Alprazolam",
+  "cid": 2118,
+  "s": [
+   [
+    "Insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in chloroform, soluble in alcohol; sparingly soluble in acetone; solubility soluble in ethyl acetate",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Amitriptyline hydrochloride",
+  "cid": 11065,
+  "s": []
+ },
+ {
+  "name": "Aripiprazole",
+  "cid": 60795,
+  "s": []
+ },
+ {
+  "name": "Atomoxetine hydrochloride",
+  "cid": 54840,
+  "s": []
+ },
+ {
+  "name": "Benserazide hydrochloride",
+  "cid": 26964,
+  "s": []
+ },
+ {
+  "name": "Betahistine dihydrochloride",
+  "cid": 2366,
+  "s": []
+ },
+ {
+  "name": "Biperiden hydrochloride",
+  "cid": 92151,
+  "s": []
+ },
+ {
+  "name": "Brivaracetam",
+  "cid": 9837243,
+  "s": []
+ },
+ {
+  "name": "Bromazepam",
+  "cid": 2441,
+  "s": []
+ },
+ {
+  "name": "Bupropion hydrochloride",
+  "cid": 62884,
+  "s": []
+ },
+ {
+  "name": "Buspirone hydrochloride",
+  "cid": 36431,
+  "s": []
+ },
+ {
+  "name": "Carbamazepine",
+  "cid": 2554,
+  "s": [
+   [
+    "Sol in alcohol, acetone, propylene glycol; practically insol in water",
+    "HSDB"
+   ],
+   [
+    "Soluble in chloroform, dimethylformamide, ethylene glycol monomethyl ether, or methanol; only slightly soluble in ethanol or glacial acetic acid",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Carbidopa",
+  "cid": 38101,
+  "s": []
+ },
+ {
+  "name": "Chloral hydrate",
+  "cid": 2707,
+  "s": [
+   [
+    "Freely soluble in acetone, methyl ethyl ketone. Moderately or sparingly soluble in turpentine, petroleum ether, carbon tetrachloride, benzene, toluene.",
+    "HSDB"
+   ],
+   [
+    "Very soluble in benzene, ethyl ether, and ethanol.",
+    "HSDB"
+   ],
+   [
+    "In water, 7.93X10+5 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: very good",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Chlordiazepoxide",
+  "cid": 2712,
+  "s": []
+ },
+ {
+  "name": "Chlorpromazine hydrochloride",
+  "cid": 6240,
+  "s": []
+ },
+ {
+  "name": "Cinnarizine",
+  "cid": 1547484,
+  "s": []
+ },
+ {
+  "name": "Citalopram hydrobromide",
+  "cid": 77995,
+  "s": []
+ },
+ {
+  "name": "Clobazam",
+  "cid": 2789,
+  "s": [
+   [
+    "Slightly soluble in water",
+    "HSDB"
+   ],
+   [
+    "Sparingly soluble in ethanol; freely soluble in methylene chloride",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Clomipramine hydrochloride",
+  "cid": 68539,
+  "s": []
+ },
+ {
+  "name": "Clonazepam",
+  "cid": 2802,
+  "s": [
+   [
+    "In water, <100 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Insoluble in benzene; slightly soluble in acetone, methanol, chloroform",
+    "HSDB"
+   ],
+   [
+    "Solubility in mg/mL at 25 °C: acetone 31; chloroform 15; methanol 8.6; ether 0.7; benzene 0.5",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Clozapine",
+  "cid": 135398737,
+  "s": [
+   [
+    "Solubility wt/wt at 25 °C: water <0.01",
+    "HSDB"
+   ],
+   [
+    "Solubility wt/wt at 25 °C: Acetone >5; acetonitrile 1.9; chloroform >20; ethhyl acetate >5; absolute ethanol 4.0",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Desipramine hydrochloride",
+  "cid": 65327,
+  "s": []
+ },
+ {
+  "name": "Desvenlafaxine succinate",
+  "cid": 6918664,
+  "s": []
+ },
+ {
+  "name": "Dexmedetomidine hydrochloride",
+  "cid": 6918081,
+  "s": []
+ },
+ {
+  "name": "Diazepam",
+  "cid": 3016,
+  "s": [
+   [
+    "1 g/2 mL chloroform; 1 g/39 mL ether",
+    "HSDB"
+   ],
+   [
+    "Sparingly soluble in propylene glycol; approx 62.5 mg/mL alcohol at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Soluble in DMF benzene, acetone",
+    "HSDB"
+   ],
+   [
+    "One gram of diazepam dissolves in about 350 mL of water, in approximately 15 mL of 95% ethanol, or in approximately 2 mL of chloroform.",
+    "HSDB"
+   ],
+   [
+    "In water, 66 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Dimethyl fumarate",
+  "cid": 637568,
+  "s": [
+   [
+    "Soluble in acetone, chloroform",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/l: 1.6 (poor)",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Dipotassium clorazepate",
+  "cid": 167305,
+  "s": []
+ },
+ {
+  "name": "Donepezil hydrochloride",
+  "cid": 5741,
+  "s": []
+ },
+ {
+  "name": "Doxepin hydrochloride",
+  "cid": 6419921,
+  "s": []
+ },
+ {
+  "name": "Duloxetine hydrochloride",
+  "cid": 60834,
+  "s": []
+ },
+ {
+  "name": "Entacapone",
+  "cid": 5281081,
+  "s": []
+ },
+ {
+  "name": "Escitalopram oxalate",
+  "cid": 146571,
+  "s": []
+ },
+ {
+  "name": "Eslicarbazepine acetate",
+  "cid": 179344,
+  "s": []
+ },
+ {
+  "name": "Ethosuximide",
+  "cid": 3291,
+  "s": [
+   [
+    "Freely soluble in water",
+    "HSDB"
+   ],
+   [
+    "VERY SLIGHTLY SOL IN SOLVENT HEXANE",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Fingolimod hydrochloride",
+  "cid": 107969,
+  "s": []
+ },
+ {
+  "name": "Fluoxetine hydrochloride",
+  "cid": 62857,
+  "s": [
+   [
+    "Sol (mg/mL): methanol, ethanol >100; acetone, acetonitrile, chloroform 33-100; dichloromethane 5-10; ethyl acetate 2-2.5; toluene, cyclohexane, hexane 0.5-0.67",
+    "HSDB"
+   ],
+   [
+    "Maximum sol in water: 14 mg/mL",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Flupentixol dihydrochloride",
+  "cid": 5282483,
+  "s": []
+ },
+ {
+  "name": "Fluphenazine decanoate",
+  "cid": 3388,
+  "s": []
+ },
+ {
+  "name": "Fluphenazine dihydrochloride",
+  "cid": 67356,
+  "s": []
+ },
+ {
+  "name": "Fluvoxamine maleate",
+  "cid": 9560989,
+  "s": []
+ },
+ {
+  "name": "Gabapentin",
+  "cid": 3446,
+  "s": [
+   [
+    "In water, 4.49X10+3 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in water",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in alkaline and acidic solutions",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Galantamine hydrobromide",
+  "cid": 121587,
+  "s": []
+ },
+ {
+  "name": "Haloperidol",
+  "cid": 3559,
+  "s": [
+   [
+    "Crystals; mp 226-227.5 °C; sol in water at 300X10+1 mg/L /Hydrochloride/",
+    "HSDB"
+   ],
+   [
+    "In water, 1.4X10+1 mg/L @ 25 °C",
+    "HSDB"
+   ],
+   [
+    "16.7 mg/ml in alcohol at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Freely sol in chloroform, methanol, acetone, benzene, dil acids",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Haloperidol decanoate",
+  "cid": 52919,
+  "s": []
+ },
+ {
+  "name": "Imipramine hydrochloride",
+  "cid": 8228,
+  "s": []
+ },
+ {
+  "name": "Lacosamide",
+  "cid": 219078,
+  "s": []
+ },
+ {
+  "name": "Lamotrigine",
+  "cid": 3878,
+  "s": [
+   [
+    "In water, 170 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in 0.1M hydrochloric acid: 4.1 mg/mL at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Levetiracetam",
+  "cid": 5284583,
+  "s": [
+   [
+    "Very soluble in water (104.0 g/100 mL). It is freely soluble in chloroform (65.3 g/100 mL) and in methanol (53.6 g/mL), soluble in ethanol (16.5 g/mL), sparingly soluble in acetonitrile (5.7 g/100 mL) and practically insoluble in n-hexane. (Solubility limits are expressed as g/100 mL solvent)",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Levodopa",
+  "cid": 6047,
+  "s": [
+   [
+    "Readily sol in dil hydrochloric and formic acids; practically insol in ethanol, benzene, chloroform, ethyl acetate",
+    "HSDB"
+   ],
+   [
+    "In water, 5,000 mg/l @ 20 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Lithium carbonate",
+  "cid": 11125,
+  "s": [
+   [
+    "Solubility in water (wt%): 1.52 at 0 °C; 1.31 at 20 °C; 1.16 at 40 °C; 1.00 at 60 °C; 0.84 at 80 °C; 0.71 at 100 °C",
+    "HSDB"
+   ],
+   [
+    "Insoluble in alcohol; soluble in dilute acid",
+    "HSDB"
+   ],
+   [
+    "Insoluble in acetone, ammonia",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml: 1.3 (poor)",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Lorazepam",
+  "cid": 3958,
+  "s": []
+ },
+ {
+  "name": "Lurasidone hydrochloride",
+  "cid": 11237860,
+  "s": []
+ },
+ {
+  "name": "Maprotiline hydrochloride",
+  "cid": 71478,
+  "s": []
+ },
+ {
+  "name": "Melatonin",
+  "cid": 896,
+  "s": [
+   [
+    "In water, 2 g/L at 20 °C; 5 g/L at 50 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Memantine hydrochloride",
+  "cid": 181458,
+  "s": []
+ },
+ {
+  "name": "Methylphenidate hydrochloride",
+  "cid": 9280,
+  "s": []
+ },
+ {
+  "name": "Midazolam",
+  "cid": 4192,
+  "s": []
+ },
+ {
+  "name": "Mirtazapine",
+  "cid": 4205,
+  "s": []
+ },
+ {
+  "name": "Moclobemide",
+  "cid": 4235,
+  "s": []
+ },
+ {
+  "name": "Modafinil",
+  "cid": 4236,
+  "s": [
+   [
+    "Practically insoluble in water and cyclohexane. Sparingly to slightly soluble in methanol and acetone.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Nitrazepam",
+  "cid": 4506,
+  "s": []
+ },
+ {
+  "name": "Nortriptyline hydrochloride",
+  "cid": 441358,
+  "s": []
+ },
+ {
+  "name": "Olanzapine",
+  "cid": 135398745,
+  "s": [
+   [
+    "Practically insoluble in water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Oxazepam",
+  "cid": 4616,
+  "s": [
+   [
+    "Soluble in alcohol, chloroform, dioxane",
+    "HSDB"
+   ],
+   [
+    "1 G SOL IN MORE THAN 10,000 ML WATER, 220 ML ALCOHOL, 270 ML CHLOROFORM, 2200 ML ETHER",
+    "HSDB"
+   ],
+   [
+    "In water, 0.02 g/L at 22 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Oxcarbazepine",
+  "cid": 34312,
+  "s": [
+   [
+    "Slightly soluble in chloroform, dichloromethane, acetone, and methanol and practically insoluble in ethanol, ether, and water.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Paliperidone",
+  "cid": 115237,
+  "s": [
+   [
+    "Slightly soluble in dimethylformide; sparingly soluble in 0.1 N HCl, methylene chloride; practically insoluble in water, hexane, 0.1 N NaOH",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Paroxetine hydrochloride hemihydrate",
+  "cid": 5282487,
+  "s": []
+ },
+ {
+  "name": "Perampanel",
+  "cid": 9924495,
+  "s": []
+ },
+ {
+  "name": "Perphenazine",
+  "cid": 4748,
+  "s": [
+   [
+    "Solubility (mg/mL): ethanol 153; acetone 82; practically insoluble in sesame oil",
+    "HSDB"
+   ],
+   [
+    "In water, 2.83X10-2 g/L (28.3 mg/L) at 24 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Phenobarbital",
+  "cid": 4763,
+  "s": [
+   [
+    "1 g soluble in: about 1 L water ; 8 mL alcohol; 40 mL chloroform; 12 mL ether; about 700 mL benzene. Solluble in alkali hydroxides and carbonates.",
+    "HSDB"
+   ],
+   [
+    "LOW LIPID SOLUBILITY",
+    "HSDB"
+   ],
+   [
+    "Insoluble in benzene; soluble in ethanol, ethyl ether; slightly soluble in dimehtyl sulfoxide",
+    "HSDB"
+   ],
+   [
+    "Soluble in alcohol, ether, chloroform, alkali hydroxides, alkali carbonate solutions",
+    "HSDB"
+   ],
+   [
+    "In water, 1.11X10+3 mg/L at 25 °C.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Phenobarbital sodium",
+  "cid": 23674889,
+  "s": []
+ },
+ {
+  "name": "Phenytoin",
+  "cid": 1775,
+  "s": [
+   [
+    "One gram dissolves in about 60 ml alcohol, about 30 ml acetone. Soluble in alkali hydroxides.",
+    "HSDB"
+   ],
+   [
+    "Soluble in acetic acid; slightly soluble in ethyl ether, benzene, chloroform",
+    "HSDB"
+   ],
+   [
+    "In water, 32 mg/L at 22 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Phenytoin sodium",
+  "cid": 657302,
+  "s": []
+ },
+ {
+  "name": "Pimozide",
+  "cid": 16362,
+  "s": []
+ },
+ {
+  "name": "Piracetam",
+  "cid": 4843,
+  "s": []
+ },
+ {
+  "name": "Pramipexole dihydrochloride monohydrate",
+  "cid": 166589,
+  "s": []
+ },
+ {
+  "name": "Pregabalin",
+  "cid": 5486971,
+  "s": [
+   [
+    "Freely soluble in water and both basic and acidic solutions",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Primidone",
+  "cid": 4909,
+  "s": [
+   [
+    "In water, 480 mg/L at 30 °C",
+    "HSDB"
+   ],
+   [
+    "Very slightly soluble in water",
+    "HSDB"
+   ],
+   [
+    "Very slightly soluble in most organic solvents",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Pyridostigmine bromide",
+  "cid": 7550,
+  "s": [
+   [
+    "FREELY SOL IN WATER, ALCOHOL, PRACTICALLY INSOL IN ETHER, ACETONE, BENZENE",
+    "HSDB"
+   ],
+   [
+    "FREELY SOL IN CHLOROFORM, SLIGHTLY SOL IN SOLVENT HEXANE",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Quetiapine fumarate",
+  "cid": 5281025,
+  "s": []
+ },
+ {
+  "name": "Rasagiline mesilate",
+  "cid": 3052775,
+  "s": []
+ },
+ {
+  "name": "Riluzole",
+  "cid": 5070,
+  "s": []
+ },
+ {
+  "name": "Risperidone",
+  "cid": 5073,
+  "s": [
+   [
+    "Soluble in methylene chloride; sparingly soluble in alcohol; practically insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in water, freely soluble in methylene chloride and soluble in methanol and 0.1N hydrochloric acid",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Rivastigmine hydrogen tartrate",
+  "cid": 6918078,
+  "s": []
+ },
+ {
+  "name": "Ropinirole hydrochloride",
+  "cid": 68727,
+  "s": []
+ },
+ {
+  "name": "Safinamide mesylate",
+  "cid": 3038502,
+  "s": []
+ },
+ {
+  "name": "Selegiline hydrochloride",
+  "cid": 26758,
+  "s": []
+ },
+ {
+  "name": "Sertraline hydrochloride",
+  "cid": 63009,
+  "s": []
+ },
+ {
+  "name": "Sodium valproate",
+  "cid": 16760703,
+  "s": []
+ },
+ {
+  "name": "Sulpiride",
+  "cid": 5355,
+  "s": []
+ },
+ {
+  "name": "Teriflunomide",
+  "cid": 54684141,
+  "s": []
+ },
+ {
+  "name": "Thioridazine hydrochloride",
+  "cid": 66062,
+  "s": []
+ },
+ {
+  "name": "Topiramate",
+  "cid": 5284627,
+  "s": [
+   [
+    "Soluble in most alkaline solutions containing sodium hydroxide or sodium phosphate and having a pH of 9 to 10. It is freely soluble in acetone, chloroform, dimethylsulfoxide, and ethanol.",
+    "HSDB"
+   ],
+   [
+    "In water, 9,800 mg/L, temp not specified",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Trazodone hydrochloride",
+  "cid": 62935,
+  "s": []
+ },
+ {
+  "name": "Trifluoperazine hydrochloride",
+  "cid": 66064,
+  "s": []
+ },
+ {
+  "name": "Trihexyphenidyl hydrochloride",
+  "cid": 66007,
+  "s": []
+ },
+ {
+  "name": "Trimipramine maleate",
+  "cid": 5282318,
+  "s": []
+ },
+ {
+  "name": "Valproic acid",
+  "cid": 3121,
+  "s": [
+   [
+    "In water, 2.0X10+3 mg/L at 20 °C",
+    "HSDB"
+   ],
+   [
+    "Very soluble in organic solvents",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in 1N sodium hydroxide, methanol, alcohol, acetone, chloroform, benzene, ether, n-heptane; slightly soluble in 0.1 N hydrochloric acid",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Varenicline tartrate",
+  "cid": 6918678,
+  "s": []
+ },
+ {
+  "name": "Venlafaxine hydrochloride",
+  "cid": 62923,
+  "s": []
+ },
+ {
+  "name": "Vortioxetine hydrobromide",
+  "cid": 56843850,
+  "s": []
+ },
+ {
+  "name": "Ziprasidone hydrochloride",
+  "cid": 219099,
+  "s": []
+ },
+ {
+  "name": "Zolpidem tartrate",
+  "cid": 441338,
+  "s": [
+   [
+    "Mol wt: 764.86. Solubility in water: 23 mg/mL @ 20 °C /L-(+)-Hemitartrate/",
+    "HSDB"
+   ],
+   [
+    "Solubility in water (20 °C): 23 mg/ml",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Zonisamide",
+  "cid": 5734,
+  "s": [
+   [
+    "Sparingly sol in chloroform, n-hexane. Sol in methanol, ethanol, ethyl acetate, and acetic acid.",
+    "HSDB"
+   ],
+   [
+    "In water, 0.80 mg/L, temp not specified",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Aprepitant",
+  "cid": 135413536,
+  "s": []
+ },
+ {
+  "name": "Bisacodyl",
+  "cid": 2391,
+  "s": [
+   [
+    "Practically insoluble in water and alkaline solvents. Soluble in acids, alcohol, acetone, propylene glycol and other organic solvents.",
+    "HSDB"
+   ],
+   [
+    "1 G SOL IN 210 ML ALCOHOL, 2.5 ML CHLOROFORM, 275 ML ETHER",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Cimetidine",
+  "cid": 2756,
+  "s": [
+   [
+    "IN WATER AT 37 °C: 1.14%; SOLUBILITY INCR BY DIL HYDROCHLORIC ACID",
+    "HSDB"
+   ],
+   [
+    "Soluble in alcohol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Clidinium bromide",
+  "cid": 19004,
+  "s": []
+ },
+ {
+  "name": "Dicycloverine hydrochloride",
+  "cid": 441344,
+  "s": []
+ },
+ {
+  "name": "Dimenhydrinate",
+  "cid": 10660,
+  "s": [
+   [
+    "FREELY SOL IN ALCOHOL, CHLOROFORM; SOL IN BENZENE; SOL IN WATER: ABOUT 3 MG/ML; ALMOST INSOL IN ETHER",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Diphenoxylate hydrochloride",
+  "cid": 6432394,
+  "s": []
+ },
+ {
+  "name": "Docusate sodium",
+  "cid": 23673837,
+  "s": [
+   [
+    "SOL IN WATER (G/L): 15 (25 °C), 23 (40 °C), 30 (50 °C), 55 (70 °C); SOL IN CARBON TETRACHLORIDE, PETROLEUM ETHER, NAPHTHA, XYLENE, DIBUTYL PHTHALATE, LIQUID PETROLATUM, ACETONE, ALCOHOL, VEGETABLE OILS; VERY SOL IN WATER-MISCIBLE ORGANIC SOLVENTS",
+    "HSDB"
+   ],
+   [
+    "FREELY SOL IN GLYCERIN",
+    "HSDB"
+   ],
+   [
+    "Water Solubility = 71000 mg/L @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Domperidone",
+  "cid": 3151,
+  "s": []
+ },
+ {
+  "name": "Drotaverine hydrochloride",
+  "cid": 6437861,
+  "s": []
+ },
+ {
+  "name": "Esomeprazole magnesium trihydrate",
+  "cid": 21121303,
+  "s": []
+ },
+ {
+  "name": "Esomeprazole sodium",
+  "cid": 23674541,
+  "s": []
+ },
+ {
+  "name": "Famotidine",
+  "cid": 5702160,
+  "s": [
+   [
+    "Solubility at 20 °C (% w/v): 80 in DMF; 50 in acetic acid; 0.3 in methanol; 0.1 in water; <0.01 in ethanol, ethyl acetate, chloroform",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in glacial acetic acid, slightly soluble in methanol, very slightly soluble in water, and practically insoluble in ethanol.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Granisetron hydrochloride",
+  "cid": 65264,
+  "s": []
+ },
+ {
+  "name": "Hyoscine butylbromide",
+  "cid": 6852391,
+  "s": []
+ },
+ {
+  "name": "Itopride hydrochloride",
+  "cid": 129791,
+  "s": []
+ },
+ {
+  "name": "Lactulose",
+  "cid": 11333,
+  "s": []
+ },
+ {
+  "name": "Lansoprazole",
+  "cid": 3883,
+  "s": [
+   [
+    "Freely soluble in dimethylformamide; soluble in ethyl acetate, dichloromethane and acetonitrile; very slightly soluble in ether, and practically insoluble in hexane and water.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Loperamide hydrochloride",
+  "cid": 71420,
+  "s": []
+ },
+ {
+  "name": "Mebeverine hydrochloride",
+  "cid": 17683,
+  "s": []
+ },
+ {
+  "name": "Mesalazine",
+  "cid": 4075,
+  "s": [
+   [
+    "Slightly soluble in water, alcohol; more soluble in hot water; soluble in hydrochloric acid",
+    "HSDB"
+   ],
+   [
+    "Insoluble in ethanol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Metoclopramide hydrochloride monohydrate",
+  "cid": 441347,
+  "s": []
+ },
+ {
+  "name": "Mirabegron",
+  "cid": 9865528,
+  "s": []
+ },
+ {
+  "name": "Misoprostol",
+  "cid": 5282381,
+  "s": [
+   [
+    "Water-soluble",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Omeprazole",
+  "cid": 4594,
+  "s": [
+   [
+    "Freely soluble in ethanol and methanol, and slightly soluble in acetone and isopropanol and very slightly soluble in water.",
+    "HSDB"
+   ],
+   [
+    "In water, 82.3 mg/L at 25 °C /Estimated/",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ondansetron hydrochloride dihydrate",
+  "cid": 59774,
+  "s": []
+ },
+ {
+  "name": "Palonosetron hydrochloride",
+  "cid": 6918303,
+  "s": []
+ },
+ {
+  "name": "Pantoprazole sodium sesquihydrate",
+  "cid": 67047490,
+  "s": []
+ },
+ {
+  "name": "Papaverine hydrochloride",
+  "cid": 6084,
+  "s": []
+ },
+ {
+  "name": "Prochlorperazine maleate",
+  "cid": 5281032,
+  "s": []
+ },
+ {
+  "name": "Rabeprazole sodium",
+  "cid": 14720269,
+  "s": []
+ },
+ {
+  "name": "Racecadotril",
+  "cid": 107751,
+  "s": []
+ },
+ {
+  "name": "Ranitidine hydrochloride",
+  "cid": 3033332,
+  "s": []
+ },
+ {
+  "name": "Sodium picosulfate",
+  "cid": 68654,
+  "s": []
+ },
+ {
+  "name": "Sulfasalazine",
+  "cid": 5339,
+  "s": []
+ },
+ {
+  "name": "Trimebutine maleate",
+  "cid": 5388977,
+  "s": []
+ },
+ {
+  "name": "Tripotassium dicitratobismuthate",
+  "cid": 10101269,
+  "s": []
+ },
+ {
+  "name": "Ursodeoxycholic acid",
+  "cid": 31401,
+  "s": []
+ },
+ {
+  "name": "Acetylcysteine",
+  "cid": 12035,
+  "s": [
+   [
+    "1 G IN 5 ML WATER, 4 ML ALC; PRACTICALLY INSOL IN CHLOROFORM & ETHER",
+    "HSDB"
+   ],
+   [
+    "Soluble in water, alcohol, hot isopropyl alcohol, methyl acetate, and ethyl acetate",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ambroxol hydrochloride",
+  "cid": 108013,
+  "s": []
+ },
+ {
+  "name": "Aminophylline",
+  "cid": 9433,
+  "s": [
+   [
+    "Insoluble in alcohol, ether",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Azelastine hydrochloride",
+  "cid": 54360,
+  "s": []
+ },
+ {
+  "name": "Bilastine",
+  "cid": 185460,
+  "s": []
+ },
+ {
+  "name": "Bromhexine hydrochloride",
+  "cid": 5702220,
+  "s": []
+ },
+ {
+  "name": "Carbocisteine",
+  "cid": 193653,
+  "s": []
+ },
+ {
+  "name": "Cetirizine dihydrochloride",
+  "cid": 55182,
+  "s": []
+ },
+ {
+  "name": "Chlorphenamine maleate",
+  "cid": 5281068,
+  "s": []
+ },
+ {
+  "name": "Clemastine fumarate",
+  "cid": 5281069,
+  "s": [
+   [
+    "Very slightly soluble in water and sparingly soluble in alcohol.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Cyproheptadine hydrochloride",
+  "cid": 11954233,
+  "s": []
+ },
+ {
+  "name": "Desloratadine",
+  "cid": 124087,
+  "s": []
+ },
+ {
+  "name": "Dexchlorpheniramine maleate",
+  "cid": 5281070,
+  "s": []
+ },
+ {
+  "name": "Dextromethorphan hydrobromide",
+  "cid": 5462351,
+  "s": []
+ },
+ {
+  "name": "Diphenhydramine hydrochloride",
+  "cid": 8980,
+  "s": []
+ },
+ {
+  "name": "Doxylamine succinate",
+  "cid": 11224,
+  "s": []
+ },
+ {
+  "name": "Ebastine",
+  "cid": 3191,
+  "s": []
+ },
+ {
+  "name": "Ephedrine hydrochloride",
+  "cid": 65326,
+  "s": []
+ },
+ {
+  "name": "Fenoterol hydrobromide",
+  "cid": 5702161,
+  "s": []
+ },
+ {
+  "name": "Fexofenadine hydrochloride",
+  "cid": 63002,
+  "s": []
+ },
+ {
+  "name": "Formoterol fumarate dihydrate",
+  "cid": 9919001,
+  "s": []
+ },
+ {
+  "name": "Guaifenesin",
+  "cid": 3516,
+  "s": [
+   [
+    "Freely sol in ethanol; sol in chloroform, glycerol, propylene glycol, n,n-dimethylformamide; moderately sol in benzene; practically insol in petroleum ether",
+    "HSDB"
+   ],
+   [
+    "In water, 5.00X10+4 mg/L at 25 °C ... much more in hot water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Hydroxyzine hydrochloride",
+  "cid": 91513,
+  "s": []
+ },
+ {
+  "name": "Ipratropium bromide",
+  "cid": 16738693,
+  "s": []
+ },
+ {
+  "name": "Ketotifen hydrogen fumarate",
+  "cid": 5282408,
+  "s": []
+ },
+ {
+  "name": "Levocetirizine dihydrochloride",
+  "cid": 9955977,
+  "s": []
+ },
+ {
+  "name": "Loratadine",
+  "cid": 3957,
+  "s": []
+ },
+ {
+  "name": "Montelukast sodium",
+  "cid": 23663996,
+  "s": []
+ },
+ {
+  "name": "Naphazoline hydrochloride",
+  "cid": 11079,
+  "s": [
+   [
+    "Soluble in ethanol; slightly soluble in chlorform; insoluble in benzene and ether",
+    "HSDB"
+   ],
+   [
+    "In water, 4.0X10+5 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Noscapine",
+  "cid": 275196,
+  "s": [
+   [
+    "PKA 6.24; FREELY SOL IN ETHANOL; INSOL IN DIETHYL ETHER /HYDROCHLORIDE/",
+    "HSDB"
+   ],
+   [
+    "FINE, WHITE, OR PRACTICALLY WHITE, CRYSTALLINE POWDER; ODORLESS OR HAS SLIGHT ODOR OF ETHANOL; FREELY SOL IN CHLOROFORM & METHANOL; SOL IN ALCOHOL; SPARINGLY SOL IN ACETONE; PRACTICALLY INSOL IN ETHER; SOLN IN WATER IS DEXTROROTATORY; PH OF SOLN (1 IN 20) BETWEEN 2.5 & 3.5 /HYDROCHLORIDE/",
+    "HSDB"
+   ],
+   [
+    "HEMIHYDRATE TO TETRAHYDRATE, CRYSTALS; VERY SOL IN WATER /HYDROCHLORIDE/",
+    "HSDB"
+   ],
+   [
+    "CRYSTALS; FREELY SOL IN WATER; SOL IN METHANOL, ETHANOL; SLIGHTLY SOL IN ETHYL ACETATE; PRACTICALLY INSOL IN ETHER /CAMPHORSULFONATE/",
+    "HSDB"
+   ],
+   [
+    "PRACTICALLY INSOL IN VEGETABLE OILS; SLIGHTLY SOL IN NH4OH, HOT SOLN OF KOH & NAOH",
+    "HSDB"
+   ],
+   [
+    "SLIGHTLY SOL IN ALCOHOL & ETHER",
+    "HSDB"
+   ],
+   [
+    "INSOL IN WATER; SOL IN BENZENE & ACETONE",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Olopatadine hydrochloride",
+  "cid": 5282402,
+  "s": []
+ },
+ {
+  "name": "Oxymetazoline hydrochloride",
+  "cid": 66259,
+  "s": []
+ },
+ {
+  "name": "Pheniramine maleate",
+  "cid": 5282139,
+  "s": []
+ },
+ {
+  "name": "Phenylephrine hydrochloride",
+  "cid": 5284443,
+  "s": []
+ },
+ {
+  "name": "Promethazine hydrochloride",
+  "cid": 6014,
+  "s": []
+ },
+ {
+  "name": "Pseudoephedrine hydrochloride",
+  "cid": 9581,
+  "s": []
+ },
+ {
+  "name": "Roflumilast",
+  "cid": 449193,
+  "s": []
+ },
+ {
+  "name": "Salbutamol sulfate",
+  "cid": 9884233,
+  "s": []
+ },
+ {
+  "name": "Salmeterol xinafoate",
+  "cid": 56801,
+  "s": []
+ },
+ {
+  "name": "Sodium cromoglicate",
+  "cid": 27503,
+  "s": []
+ },
+ {
+  "name": "Terbutaline sulfate",
+  "cid": 441334,
+  "s": []
+ },
+ {
+  "name": "Theophylline",
+  "cid": 2153,
+  "s": [
+   [
+    "In water, 7,360 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in water",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in ethanol, ether, chloroform",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in alcohol; more soluble in hot water; soluble in alkaline solutions",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: moderate",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Tiotropium bromide monohydrate",
+  "cid": 11431811,
+  "s": []
+ },
+ {
+  "name": "Xylometazoline hydrochloride",
+  "cid": 5282386,
+  "s": []
+ },
+ {
+  "name": "Beclometasone dipropionate",
+  "cid": 21700,
+  "s": []
+ },
+ {
+  "name": "Betamethasone acetate",
+  "cid": 443967,
+  "s": []
+ },
+ {
+  "name": "Betamethasone dipropionate",
+  "cid": 21800,
+  "s": []
+ },
+ {
+  "name": "Betamethasone sodium phosphate",
+  "cid": 65478,
+  "s": []
+ },
+ {
+  "name": "Betamethasone valerate",
+  "cid": 16533,
+  "s": []
+ },
+ {
+  "name": "Bromocriptine mesilate",
+  "cid": 31100,
+  "s": []
+ },
+ {
+  "name": "Budesonide",
+  "cid": 5281004,
+  "s": [
+   [
+    "Practically insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in chloroform; sparingly soluble in ethanol, alcohol; practically insoluble in heptane",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Cabergoline",
+  "cid": 54746,
+  "s": []
+ },
+ {
+  "name": "Carbimazole",
+  "cid": 31072,
+  "s": []
+ },
+ {
+  "name": "Clobetasol propionate",
+  "cid": 32798,
+  "s": []
+ },
+ {
+  "name": "Clomifene citrate",
+  "cid": 60974,
+  "s": []
+ },
+ {
+  "name": "Cyproterone acetate",
+  "cid": 9880,
+  "s": [
+   [
+    "Very soluble in dichloromethane and acetone; soluble in methanol; sparingly soluble in ethanol.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Danazol",
+  "cid": 28417,
+  "s": []
+ },
+ {
+  "name": "Deflazacort",
+  "cid": 189821,
+  "s": []
+ },
+ {
+  "name": "Desmopressin acetate",
+  "cid": 64758,
+  "s": []
+ },
+ {
+  "name": "Desogestrel",
+  "cid": 40973,
+  "s": [
+   [
+    "Slightly soluble in ethanol and ethyl acetate; sparingly soluble in n-hexane.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Dexamethasone",
+  "cid": 5743,
+  "s": [
+   [
+    "Crystals; sol in water; max absorption (ethanol): 238-239 nm (e= 14,000); specific optical rotation: +57 deg/D (water); mp 233-235 °C; specific optical rotation: +74 +- 4 deg at 25 °C/D (water- and alc-free basis, 10 mg/mL) /21-phosphate disodium salt of dexamethasone/",
+    "HSDB"
+   ],
+   [
+    "ODORLESS OR HAS SLIGHT ODOR OF ALCOHOL; WHITE, OR SLIGHTLY YELLOW, CRYSTALLINE POWDER; 1 G DISSOLVES IN ABOUT 2 ML OF WATER; INSOL IN DIOXANE; SLIGHTLY SOL IN ALC; INSOL IN ETHER & CHLOROFORM; VERY HYGROSCOPIC /DEXAMETHASONE SODIUM PHOSPHATE/",
+    "HSDB"
+   ],
+   [
+    "Solubility in water (25 °C): 10 mg/100 mL; sol in acetone, ethanol, chloroform",
+    "HSDB"
+   ],
+   [
+    "In water, 89.0 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Dexamethasone sodium phosphate",
+  "cid": 16961,
+  "s": []
+ },
+ {
+  "name": "Dienogest",
+  "cid": 68861,
+  "s": []
+ },
+ {
+  "name": "Drospirenone",
+  "cid": 68873,
+  "s": []
+ },
+ {
+  "name": "Dydrogesterone",
+  "cid": 9051,
+  "s": [
+   [
+    "Soluble in acetone, chloroform (1 in 2), ethanol (1 in 40) and diethyl ether (1 in 200); slightly soluble in fixed oils; sparingly soluble in methanol.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Estradiol",
+  "cid": 5757,
+  "s": [
+   [
+    "Very soluble in acetone, ethanol, dioxane",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in alcohol; soluble in acetone, dioxane, other organic solvents; solutions of fixed alkali hydroxides; sparingly soluble in vegetable oils.",
+    "HSDB"
+   ],
+   [
+    "In water, 3.90 mg/L at 27 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Estradiol valerate",
+  "cid": 13791,
+  "s": []
+ },
+ {
+  "name": "Ethinylestradiol",
+  "cid": 5991,
+  "s": [
+   [
+    "Solubility: 1 part in 6 of ethanol, 1 in 4 of ether, 1 in 5 of acetone, 1 in 4 of dioxane, and 1 in 20 of chloroform. Soluble in vegetable oils, and in solutions of fixed alkali hydroxides.",
+    "HSDB"
+   ],
+   [
+    "Soluble in solutions of sodium hydroxide or potassium hydroxide",
+    "HSDB"
+   ],
+   [
+    "In double-distilled water, 4.83 mg/L",
+    "HSDB"
+   ],
+   [
+    "In water, 11.3 mg/L at 27 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Etonogestrel",
+  "cid": 6917715,
+  "s": []
+ },
+ {
+  "name": "Fludrocortisone acetate",
+  "cid": 225609,
+  "s": []
+ },
+ {
+  "name": "Fluocinolone acetonide",
+  "cid": 6215,
+  "s": [
+   [
+    "SOL IN ALC, ACETONE, & METHANOL; INSOL IN WATER; SLIGHTLY SOL IN CHLOROFORM",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Fluorometholone",
+  "cid": 9878,
+  "s": []
+ },
+ {
+  "name": "Fluticasone propionate",
+  "cid": 444036,
+  "s": []
+ },
+ {
+  "name": "Hydrocortisone",
+  "cid": 5754,
+  "s": [
+   [
+    "Amorphous, hygroscopic, white powder. Mp 169.0-171.2 °C. Solubility in water: approx 500 mg/mL. Similarly soluble in methanol, ethanol,; sparingly soluble in chloroform. /21-Sodium succinate/",
+    "HSDB"
+   ],
+   [
+    "Solubilities in various solvents [Table#4538]",
+    "HSDB"
+   ],
+   [
+    "Soluble in concentrated sulfuric acid with intense green flourescence",
+    "HSDB"
+   ],
+   [
+    "Soluble in dioxane",
+    "HSDB"
+   ],
+   [
+    "In water, 320 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Hydrocortisone acetate",
+  "cid": 5744,
+  "s": []
+ },
+ {
+  "name": "Hydroxyprogesterone caproate",
+  "cid": 169870,
+  "s": []
+ },
+ {
+  "name": "Levonorgestrel",
+  "cid": 13109,
+  "s": [
+   [
+    "In water, 1.73 mg/L, temp not stated.",
+    "HSDB"
+   ],
+   [
+    "Soluble in ethanol (1 in 120), chloroform (1 in 15), diethyl ether (1 in 400) and dioxane.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Levothyroxine sodium",
+  "cid": 23666112,
+  "s": []
+ },
+ {
+  "name": "Liothyronine sodium",
+  "cid": 23666110,
+  "s": []
+ },
+ {
+  "name": "Lynestrenol",
+  "cid": 5857,
+  "s": []
+ },
+ {
+  "name": "Medroxyprogesterone acetate",
+  "cid": 6279,
+  "s": []
+ },
+ {
+  "name": "Methylprednisolone",
+  "cid": 6741,
+  "s": [
+   [
+    "MW 416.51, crystals, MP 205-208 °C, specific optical rotation: 101 deg at 20 °C (dioxane), uv max (95% ethanol): 243 nm (alpha m 14825), Sol in dioxane; sparingly sol in acetone, alcohol, chloroform, methanol; slightly sol in ether. Practically insol in water. /21-acetate/",
+    "HSDB"
+   ],
+   [
+    "SOL IN WATER /METHYLPREDNISOLONE 21-SUCCINATE SODIUM SALT/",
+    "HSDB"
+   ],
+   [
+    "Sparingly sol in alc, dioxane, methanol; slightly sol in acetone, chloroform; very slightly sol in ether.",
+    "HSDB"
+   ],
+   [
+    "In water, 1.20X10+2 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Methylprednisolone acetate",
+  "cid": 5877,
+  "s": []
+ },
+ {
+  "name": "Methylprednisolone sodium succinate",
+  "cid": 23680530,
+  "s": []
+ },
+ {
+  "name": "Mifepristone",
+  "cid": 55245,
+  "s": [
+   [
+    "Very soluble in methanol, chloroform, and acetone and poorly soluble in water, hexane, and isopropyl ether.",
+    "HSDB"
+   ],
+   [
+    "In water, 5.0X10-2 mg/L at 25 °C /Estimated/",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Mometasone furoate",
+  "cid": 441336,
+  "s": []
+ },
+ {
+  "name": "Nandrolone decanoate",
+  "cid": 9677,
+  "s": []
+ },
+ {
+  "name": "Norethisterone",
+  "cid": 6230,
+  "s": [
+   [
+    "PRACTICALLY INSOL IN WATER; SOL IN CHLOROFORM, ETHER, DIOXANE; SOL @ 25 °C: 1 IN 12.5 PARTS 95% ETHANOL, 1 IN 4 PARTS ACETONE /ACETATE/",
+    "HSDB"
+   ],
+   [
+    "Solubility in double-distilled water, 0.98 mg/L /Norethindrone acetate/",
+    "HSDB"
+   ],
+   [
+    "SLIGHTLY SOL IN VEGETABLE OIL; SOL @ 25 °C: 1 IN 150 PARTS 95% ETHANOL, 1 IN 5 PARTS PYRIDINE, 1 IN 80 PARTS ACETONE, 1 IN 30 PARTS CHLOROFORM",
+    "HSDB"
+   ],
+   [
+    "Sparingly soluble in alcohol; soluble in chloroform and dioxane; slightly soluble in ether.",
+    "HSDB"
+   ],
+   [
+    "In double-distilled water, 1.44 mg/L",
+    "HSDB"
+   ],
+   [
+    "In water, 7.04 mg/L water at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Oxandrolone",
+  "cid": 5878,
+  "s": [
+   [
+    "PRACTICALLY INSOL IN WATER; SPARINGLY SOL IN ALC, ACETONE; FREELY SOL IN CHLOROFORM",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Prednisolone",
+  "cid": 5755,
+  "s": [
+   [
+    "SPECIFIC OPTICAL ROTATION: +102.5 DEG @ 25 °C/D; PH OF 1% SOLN 7.5 TO 8.5; SOL IN WATER, METHANOL, ETHANOL. /PHOSPHATE SODIUM/",
+    "HSDB"
+   ],
+   [
+    "1 g dissolves in about 30 mL of alc, in about 180 mL of chloroform, in about 50 mL of acetone; sol in methanol, dioxane.",
+    "HSDB"
+   ],
+   [
+    "In water, 2.23X10+2 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Prednisolone acetate",
+  "cid": 5834,
+  "s": []
+ },
+ {
+  "name": "Prednisolone sodium phosphate",
+  "cid": 441409,
+  "s": []
+ },
+ {
+  "name": "Prednisone",
+  "cid": 5865,
+  "s": [
+   [
+    "Very slightly soluble in water; 1 g soluble in 150 mL alcohol, in 200 mL chloroform; slightly soluble in methanol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Progesterone",
+  "cid": 5994,
+  "s": [
+   [
+    "Sol in alcohol, acetone, dioxane /beta-Progesterone/",
+    "HSDB"
+   ],
+   [
+    "Soluble in alcohol, acetone, dioxane, concentrated sulfuric acid; sparingly soluble in vegetable oils",
+    "HSDB"
+   ],
+   [
+    "In double-distilled water, 9.12 mg/L",
+    "HSDB"
+   ],
+   [
+    "In water, 8.81 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Propylthiouracil",
+  "cid": 657298,
+  "s": [
+   [
+    "1 part dissolves in about 900 parts water at 20 °C, in 100 parts boiling water, in 60 parts ethyl alc, in 60 parts acetone; practically insol in ether, chloroform, benzene; freely sol in aq soln of ammonia and alkali hydroxides",
+    "HSDB"
+   ],
+   [
+    "In water, 1204 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Testosterone enantate",
+  "cid": 9416,
+  "s": []
+ },
+ {
+  "name": "Testosterone undecanoate",
+  "cid": 65157,
+  "s": []
+ },
+ {
+  "name": "Thiamazole",
+  "cid": 1349907,
+  "s": [
+   [
+    "Soluble in alcohol, chloroform. Sparingly soluble in ether, petroleum ether.",
+    "HSDB"
+   ],
+   [
+    "1 G SOL IN ABOUT 125 ML ETHER, ABOUT 4.5 ML CHLOROFORM, ABOUT 5 ML WATER, 5 ML ALCOHOL",
+    "HSDB"
+   ],
+   [
+    "SOL IN PYRIDINE",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in benzene.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Tibolone",
+  "cid": 444008,
+  "s": []
+ },
+ {
+  "name": "Triamcinolone acetonide",
+  "cid": 6436,
+  "s": []
+ },
+ {
+  "name": "Abiraterone acetate",
+  "cid": 9821849,
+  "s": []
+ },
+ {
+  "name": "Anastrozole",
+  "cid": 2187,
+  "s": [
+   [
+    "Freely soluble in methanol, acetone, ethanol, tetrahydrofuran; very soluble in acetonitrile.",
+    "HSDB"
+   ],
+   [
+    "In water, 0.5 mg/mL at 25 °C; solubility is dependent of pH in the physiological range.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Apremilast",
+  "cid": 11561674,
+  "s": []
+ },
+ {
+  "name": "Arsenic trioxide",
+  "cid": 14888,
+  "s": [
+   [
+    "SOL IN DIL HYDROCHLORIC ACID, IN ALKALI HYDROXIDE; SOL IN CARBONATE SOLN; PRACTICALLY INSOL IN ALC; PRACTICALLY INSOL IN CHLOROFORM, ETHER.",
+    "HSDB"
+   ],
+   [
+    "Soluble in glycerol",
+    "HSDB"
+   ],
+   [
+    "In water, 1.7X10+4 mg/l @ 16 °C.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 20 °C: 1.2-3.7",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Azacitidine",
+  "cid": 9444,
+  "s": []
+ },
+ {
+  "name": "Azathioprine",
+  "cid": 2265,
+  "s": [
+   [
+    "Very slightly soluble in ethanol and chloroform; sparingly soluble in dilute mineral acids; soluble in dilute alkali solutions",
+    "HSDB"
+   ],
+   [
+    "Insoluble in water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Baricitinib",
+  "cid": 44205240,
+  "s": []
+ },
+ {
+  "name": "Bendamustine hydrochloride",
+  "cid": 77082,
+  "s": []
+ },
+ {
+  "name": "Bicalutamide",
+  "cid": 2375,
+  "s": [
+   [
+    "Slightly soluble in chloroform and absolute ethanol; sparingly soluble in methanol; soluble in acetone and tetrahydrofuan",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in water at 37 °C (5 mg/1000 mL)",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Bortezomib",
+  "cid": 387447,
+  "s": [
+   [
+    "In water, 3.3 to 3.8 mg/mL in a pH range of 2 to 6.5 (as the monomeric boronic acid)",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Busulfan",
+  "cid": 2478,
+  "s": [
+   [
+    "Solubility in acetone at 25 °C: 2.4 g/100mL; in alcohol: 0.1g/100 mL. Practically insoluble in water but will dissolve slowly as hydrolysis takes place.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Calcium folinate",
+  "cid": 135430945,
+  "s": []
+ },
+ {
+  "name": "Capecitabine",
+  "cid": 60953,
+  "s": [
+   [
+    "In water, 26 mg/mL at 20 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Carboplatin",
+  "cid": 426756,
+  "s": []
+ },
+ {
+  "name": "Carmustine",
+  "cid": 2578,
+  "s": [
+   [
+    "Very soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "Soluble in 50% ethanol up to 150 mg/mL",
+    "HSDB"
+   ],
+   [
+    "Highly soluble in alcohol and poorly soluble in water. It is also highly soluble in lipids",
+    "HSDB"
+   ],
+   [
+    "In water, 4.0X10+3 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Chlorambucil",
+  "cid": 2708,
+  "s": [
+   [
+    "Insoluble in water ... The sodium salt is soluble in water.",
+    "HSDB"
+   ],
+   [
+    "The free acid is soluble at 20 °C in 1.5 parts ethanol, 2 parts acetone, 2.5 parts chloroform and 2 parts ethyl acetate; soluble in benzene and ether. Readily soluble in acid or alkali.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ciclosporin",
+  "cid": 5284373,
+  "s": [
+   [
+    "Slightly soluble in water and saturated hydrocarbons; very soluble in methanol, acetone, and diethyl ether",
+    "HSDB"
+   ],
+   [
+    "Sol in chloroform",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Cisplatin",
+  "cid": 5460033,
+  "s": []
+ },
+ {
+  "name": "Cyclophosphamide monohydrate",
+  "cid": 22420,
+  "s": []
+ },
+ {
+  "name": "Cytarabine",
+  "cid": 6253,
+  "s": [
+   [
+    "1 G IN ABOUT 5 ML WATER & 500 ML ALC; 1 G IN ABOUT 1000 ML CHLOROFORM & 300 ML METHANOL",
+    "HSDB"
+   ],
+   [
+    "Soluble in water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Dacarbazine",
+  "cid": 135398738,
+  "s": [
+   [
+    "Water: (1 mg/ml at room temp)",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Dasatinib monohydrate",
+  "cid": 11540687,
+  "s": []
+ },
+ {
+  "name": "Daunorubicin hydrochloride",
+  "cid": 62770,
+  "s": []
+ },
+ {
+  "name": "Decitabine",
+  "cid": 451668,
+  "s": []
+ },
+ {
+  "name": "Docetaxel",
+  "cid": 148124,
+  "s": []
+ },
+ {
+  "name": "Doxorubicin hydrochloride",
+  "cid": 443939,
+  "s": []
+ },
+ {
+  "name": "Enzalutamide",
+  "cid": 15951529,
+  "s": []
+ },
+ {
+  "name": "Epirubicin hydrochloride",
+  "cid": 65348,
+  "s": []
+ },
+ {
+  "name": "Erlotinib hydrochloride",
+  "cid": 176871,
+  "s": []
+ },
+ {
+  "name": "Etoposide",
+  "cid": 36462,
+  "s": [
+   [
+    "Very soluble in methanol, chloroform; slightly soluble in ethanol, sparingly soluble in water.",
+    "HSDB"
+   ],
+   [
+    "Sol in alc: approx 0.76 mg/ml",
+    "HSDB"
+   ],
+   [
+    "Water solubility: approx 0.08 mg/mL",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Everolimus",
+  "cid": 6442177,
+  "s": []
+ },
+ {
+  "name": "Exemestane",
+  "cid": 60198,
+  "s": [
+   [
+    "Freely soluble in N,N-dimethylformamide; soluble in methanol; practically insoluble in water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Fludarabine phosphate",
+  "cid": 30751,
+  "s": []
+ },
+ {
+  "name": "Fluorouracil",
+  "cid": 3385,
+  "s": [
+   [
+    "1 G IN 80 ML WATER, 170 ML ALCOHOL & 55 ML METHANOL; PRACTICALLY INSOL IN CHLOROFORM, ETHER & BENZENE; SOLUBILITY IN AQ SOLN INCR WITH INCR PH OF SOLN",
+    "HSDB"
+   ],
+   [
+    "Soluble in methanol-water mixtures",
+    "HSDB"
+   ],
+   [
+    "Sparingly soluble in water and slightly soluble in alcohol. 1 g is soluble in 100 ml of propylene glycol.",
+    "HSDB"
+   ],
+   [
+    "In water, 1.11X10+4 mg/L at 22 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Flutamide",
+  "cid": 3397,
+  "s": []
+ },
+ {
+  "name": "Gefitinib",
+  "cid": 123631,
+  "s": []
+ },
+ {
+  "name": "Gemcitabine hydrochloride",
+  "cid": 60749,
+  "s": []
+ },
+ {
+  "name": "Hydroxycarbamide",
+  "cid": 3657,
+  "s": [
+   [
+    "Freely soluble in water /1.0X10+6 mg/L at 25 °C/",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in hot alcohol",
+    "HSDB"
+   ],
+   [
+    "Very soluble in water... insoluble in ethanol and benzene",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ibrutinib",
+  "cid": 24821094,
+  "s": [
+   [
+    "Practically insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in dimethyl sulfoxide; soluble in methanol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Idarubicin hydrochloride",
+  "cid": 636362,
+  "s": []
+ },
+ {
+  "name": "Ifosfamide",
+  "cid": 3690,
+  "s": [
+   [
+    "Soluble in water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Imatinib mesilate",
+  "cid": 123596,
+  "s": [
+   [
+    "Soluble in aqueous buffers =<pH 5.5, but very slightly soluble in neutral to alkaline aqueous buffers; freely soluble to very soluble in dimethyl sulfoxide, methanol, and ethanol; insoluble in n-octanol, acetone, and acetonitrile.",
+    "HSDB"
+   ],
+   [
+    "In water, >100 g/l @ pH 4.2; 49 mg/l @ pH 7.4",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Irinotecan hydrochloride trihydrate",
+  "cid": 60837,
+  "s": []
+ },
+ {
+  "name": "Lenalidomide",
+  "cid": 216326,
+  "s": [
+   [
+    "Soluble in organic solvent/water mixtures and buffered aqueous solutions. ... more soluble in organic solvents and low pH solutions. Solubility was ... lower in less acidic buffers, ranging from 0.4 to 0.5 mg/mL",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Letrozole",
+  "cid": 3902,
+  "s": [
+   [
+    "Freely soluble in dichloromethane; slightly soluble in ethanol; practically insoluble in water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Lomustine",
+  "cid": 3950,
+  "s": [
+   [
+    "Soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in chloroform; soluble in acetone.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, 0.1N NaOH, 0.1N HCl, or 10% ethanol: <0.05 mg/mL; in absolute ethanol: 70 mg/mL",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Megestrol acetate",
+  "cid": 11683,
+  "s": []
+ },
+ {
+  "name": "Melphalan",
+  "cid": 460612,
+  "s": [
+   [
+    "Practically insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Soluble in propylene glycol and dilute mineral acids; slightly soluble in ethanol, methanol. Practically insolluble in chloroform, ether",
+    "HSDB"
+   ],
+   [
+    "Soluble in 2% carboxymethylcellulose and in dilute mineral acid and alkali solution; insoluble in chloroform, ether",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Mercaptopurine monohydrate",
+  "cid": 2724350,
+  "s": []
+ },
+ {
+  "name": "Methotrexate",
+  "cid": 126941,
+  "s": [
+   [
+    "Insoluble in water , alcohol, chloroform, ether; slightly soluble in dilute hydrochloric acid; soluble in dil solns of alkali hydroxides and carbonates.",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in water and in alcohol.",
+    "HSDB"
+   ],
+   [
+    "In water, 2.6X10+3 mg/L at 25 °C /Estimated/",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Mitomycin",
+  "cid": 5746,
+  "s": [
+   [
+    "SOL IN WATER, METHANOL, BUTYL ACETATE, ACETONE, AND CYCLOHEXANONE; SLIGHTLY SOL IN BENZENE, ETHER, AND CARBON TETRACHLORIDE; PRACTICALLY INSOL IN PETROLEUM ETHER.",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in organic solvents",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Mitoxantrone hydrochloride",
+  "cid": 51082,
+  "s": [
+   [
+    "Sparingly soluble in water; slightly sol in methanol; practically insoluble in acetonitrile chloroform; acetone",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Mycophenolate mofetil",
+  "cid": 5281078,
+  "s": [
+   [
+    "Freely soluble in acetone, soluble in methanol, and sparingly soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "In water, 43 mg/L at pH 7.4, temp not specified",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Mycophenolate sodium",
+  "cid": 23665584,
+  "s": []
+ },
+ {
+  "name": "Nilotinib hydrochloride monohydrate",
+  "cid": 16757572,
+  "s": []
+ },
+ {
+  "name": "Osimertinib mesilate",
+  "cid": 78357807,
+  "s": []
+ },
+ {
+  "name": "Oxaliplatin",
+  "cid": 9887054,
+  "s": []
+ },
+ {
+  "name": "Paclitaxel",
+  "cid": 36314,
+  "s": [
+   [
+    "Insoluble in water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Pazopanib hydrochloride",
+  "cid": 11525740,
+  "s": []
+ },
+ {
+  "name": "Pemetrexed disodium",
+  "cid": 135413520,
+  "s": []
+ },
+ {
+  "name": "Pomalidomide",
+  "cid": 134780,
+  "s": [
+   [
+    "Limited to low solubility into organic solvents ... low solubility in all pH solutions (about 0.01 mg/mL)",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Procarbazine hydrochloride",
+  "cid": 9703,
+  "s": []
+ },
+ {
+  "name": "Ruxolitinib phosphate",
+  "cid": 25127112,
+  "s": []
+ },
+ {
+  "name": "Sirolimus",
+  "cid": 5284616,
+  "s": [
+   [
+    "Sol in ether, chloroform, acetone, methanol, and DMF; very sparingly sol in hexane and petr ether.",
+    "HSDB"
+   ],
+   [
+    "In water = 9.9X10-5 mg/L at 25 °C /Estimated/",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Sorafenib tosilate",
+  "cid": 406563,
+  "s": []
+ },
+ {
+  "name": "Sunitinib malate",
+  "cid": 6456015,
+  "s": []
+ },
+ {
+  "name": "Tacrolimus monohydrate",
+  "cid": 5282315,
+  "s": []
+ },
+ {
+  "name": "Tamoxifen citrate",
+  "cid": 2733525,
+  "s": []
+ },
+ {
+  "name": "Temozolomide",
+  "cid": 5394,
+  "s": []
+ },
+ {
+  "name": "Thalidomide",
+  "cid": 5426,
+  "s": [
+   [
+    "In water, approximately 2X10-4 mol/L; 45-60 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Sparingly soluble in methanol, ethanol, acetone, ethyl acetate, butyl acetate, glacial acetic acid. Very soluble in DMF. Practically insoluble in ether, chloroform, benzene.",
+    "HSDB"
+   ],
+   [
+    "Very soluble in dioxane, pyridine",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Thiotepa",
+  "cid": 5453,
+  "s": [
+   [
+    "In water, 19 g/100 mL at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in alcohol, ether, chloroform; soluble in benzene",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Tioguanine",
+  "cid": 2723601,
+  "s": [
+   [
+    "INSOL IN WATER, ALCOHOL, CHLOROFORM; FREELY SOL IN DIL SOLUTIONS OF ALKALI HYDROXIDES",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Tofacitinib citrate",
+  "cid": 10174505,
+  "s": []
+ },
+ {
+  "name": "Topotecan hydrochloride",
+  "cid": 60699,
+  "s": []
+ },
+ {
+  "name": "Vinblastine sulfate",
+  "cid": 5388983,
+  "s": []
+ },
+ {
+  "name": "Vincristine sulfate",
+  "cid": 249332,
+  "s": []
+ },
+ {
+  "name": "Vinorelbine tartrate",
+  "cid": 25136944,
+  "s": []
+ },
+ {
+  "name": "Acetazolamide",
+  "cid": 1986,
+  "s": [
+   [
+    "SPARINGLY SOL IN COLD WATER",
+    "HSDB"
+   ],
+   [
+    "SLIGHTLY SOL IN ALCOHOL",
+    "HSDB"
+   ],
+   [
+    "INSOL IN CHLOROFORM, DIETHYL ETHER, CARBON TETRACHLORIDE; SLIGHTLY SOL IN ACETONE",
+    "HSDB"
+   ],
+   [
+    "Readily soluble in 1 N sodium carbonate solution.",
+    "HSDB"
+   ],
+   [
+    "In water= 980 mg/l at 30 °C.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Adapalene",
+  "cid": 60164,
+  "s": []
+ },
+ {
+  "name": "Articaine hydrochloride",
+  "cid": 32169,
+  "s": []
+ },
+ {
+  "name": "Atracurium besilate",
+  "cid": 47320,
+  "s": []
+ },
+ {
+  "name": "Atropine sulfate",
+  "cid": 60196398,
+  "s": []
+ },
+ {
+  "name": "Azelaic acid",
+  "cid": 2266,
+  "s": [
+   [
+    "Slightly soluble in ethy ether, benzene, DMSO; soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "Soluble in hot water, alcohol and organic solvents",
+    "HSDB"
+   ],
+   [
+    "One liter of water dissolves 1.0 g at 1.0 °C; 2.4 g at 20 °C; 8.2 g at 50 °C; 22 g at 50 °C ... 1000 g ether dissolves 18.8 g at 11 °C and 26.8 g at 15 °C",
+    "HSDB"
+   ],
+   [
+    "In water, 2.40X10+3 mg/L at 20 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Baclofen",
+  "cid": 2284,
+  "s": []
+ },
+ {
+  "name": "Benzocaine",
+  "cid": 2337,
+  "s": [
+   [
+    "One gram dissolves in about 5 ml alcohol, 2 ml chloroform, in about 4 ml ether, and in 30 to 50 ml of expressed almond oil or olive oil. Also sol in dil acids.",
+    "HSDB"
+   ],
+   [
+    "Soluble in acid",
+    "HSDB"
+   ],
+   [
+    "In water, 1,310 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Benzoyl peroxide, hydrous",
+  "cid": 7187,
+  "s": [
+   [
+    "In water, 9.10 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Sparingly soluble in water",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in water",
+    "HSDB"
+   ],
+   [
+    "Sparingly soluble in alcohol; soluble in benzene, chloroform, ether; 1 g dissolves in 40 mL carbon disulfide, in about 50 mL olive oil",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for Dibenzoyl peroxide (6 total), please visit the HSDB record page.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: poor",
+    "ICSC"
+   ],
+   [
+    "<1%",
+    "NIOSH"
+   ]
+  ]
+ },
+ {
+  "name": "Brimonidine tartrate",
+  "cid": 54405,
+  "s": []
+ },
+ {
+  "name": "Bupivacaine hydrochloride",
+  "cid": 64737,
+  "s": []
+ },
+ {
+  "name": "Cetylpyridinium chloride",
+  "cid": 22324,
+  "s": []
+ },
+ {
+  "name": "Chlorhexidine digluconate solution",
+  "cid": 9552081,
+  "s": []
+ },
+ {
+  "name": "Chloroxylenol",
+  "cid": 2723,
+  "s": [
+   [
+    "At 15 °C in petroleum ether, benzene, acetone, toluene, chloroform, isopropanol solubility of 0.5, 6.0, 58.0, 7.0, 6.2, 38.0 g/100mL, respectively. At 25 °C in isopropanol, 1 M NaOH and glycerine solubility of 50.0, 8.8 and 1.5, respectively.",
+    "HSDB"
+   ],
+   [
+    "Soluble in ethanol, ether. Slightly soluble in benzene and pet ether.",
+    "HSDB"
+   ],
+   [
+    "Soluble 1 part of 95% alcohol, ether, benzene, terpenes fixed oils, solutions of alkali and hydroxides",
+    "HSDB"
+   ],
+   [
+    "In water, 2.5X10+2 mg/L at 20 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Chlorzoxazone",
+  "cid": 2733,
+  "s": []
+ },
+ {
+  "name": "Cyclobenzaprine hydrochloride",
+  "cid": 22576,
+  "s": []
+ },
+ {
+  "name": "Cyclopentolate hydrochloride",
+  "cid": 22162,
+  "s": []
+ },
+ {
+  "name": "Dantrolene sodium",
+  "cid": 6604100,
+  "s": []
+ },
+ {
+  "name": "Deferasirox",
+  "cid": 214348,
+  "s": [
+   [
+    "In water, 0.4 mg/mL at 25 °C (pH 7.40)",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Deferiprone",
+  "cid": 2972,
+  "s": [
+   [
+    "Solubility at 37 °C: water approx 20 mg/mL (pH 7.4)",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Deferoxamine mesilate",
+  "cid": 62881,
+  "s": []
+ },
+ {
+  "name": "Desflurane",
+  "cid": 42113,
+  "s": [
+   [
+    "Solubility in water: poor",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Dimercaprol",
+  "cid": 3080,
+  "s": [
+   [
+    "Soluble in ether, ethanol; slightly soluble in chloroform",
+    "HSDB"
+   ],
+   [
+    "Soluble in vegetable oils",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: 8.7 g/100 mL",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Dithranol",
+  "cid": 2202,
+  "s": []
+ },
+ {
+  "name": "Dorzolamide hydrochloride",
+  "cid": 6918132,
+  "s": []
+ },
+ {
+  "name": "Dutasteride",
+  "cid": 6918296,
+  "s": []
+ },
+ {
+  "name": "Finasteride",
+  "cid": 57363,
+  "s": [
+   [
+    "Freely sol in chloroform, DMSO, ethanol, methanol, n-propanol; sparingly sol in propylene glycol, polyethylene glycol 400; very slightly sol in 0.1N hydrogen chloride, 0.1N sodium hydroxide, water.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Flavoxate hydrochloride",
+  "cid": 441345,
+  "s": []
+ },
+ {
+  "name": "Flumazenil",
+  "cid": 3373,
+  "s": []
+ },
+ {
+  "name": "Hexetidine",
+  "cid": 3607,
+  "s": [
+   [
+    "Soluble in petroleum ether, methanol, benzene, acetone, ethanol, n-hexane, chloroform",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Hydroquinone",
+  "cid": 785,
+  "s": [
+   [
+    "In water, 72,000 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "In water, 6.72 g/L at 20 °C. Also water solubility = 3.85 g/L at 0 °C; 5.12 g/L at 10 °C; 5.40 g/L at 15 °C; 8.76 g/L at 30 °C; 11.5 g/L at 40 °C; 25/9 g/L at 60 °C; 46.8 g/L at 80 °C; 66.4 g/L at 100 °C",
+    "HSDB"
+   ],
+   [
+    "7% soluble in water at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Grams of hydroquinone per 100 g solvent (30 °C); ethanol 46.4; acetone 28.4; water 8.3; benzene 0.06; tetrachloromethane 0.01",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for HYDROQUINONE (6 total), please visit the HSDB record page.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 15 °C: 5.9",
+    "ICSC"
+   ],
+   [
+    "7%",
+    "NIOSH"
+   ]
+  ]
+ },
+ {
+  "name": "Isoflurane",
+  "cid": 3763,
+  "s": [
+   [
+    "In water, 4.47X10+3 mg/L at 37 °C",
+    "HSDB"
+   ],
+   [
+    "Easily miscible with organic liquids including fats and oils",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: poor",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Isotretinoin",
+  "cid": 5282379,
+  "s": [
+   [
+    "Insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Sparingly soluble in alcohol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ketamine hydrochloride",
+  "cid": 15851,
+  "s": []
+ },
+ {
+  "name": "Latanoprost",
+  "cid": 5311221,
+  "s": []
+ },
+ {
+  "name": "Lidocaine",
+  "cid": 3676,
+  "s": [
+   [
+    "VERY SOL IN ALC; SOL IN CHLOROFORM; INSOL IN ETHER; WHITE CRYSTALLINE POWDER /LIDOCAINE HYDROCHLORIDE/",
+    "HSDB"
+   ],
+   [
+    "In water, 410 mg/L at 30 °C",
+    "HSDB"
+   ],
+   [
+    "Very soluble in alcohol, chloroform; freely soluble in ether, benzene. Dissolves in oils",
+    "HSDB"
+   ],
+   [
+    "Soluble in alcohol, ether, or chloroform",
+    "HSDB"
+   ],
+   [
+    "Very soluble in benzene, ethyl ether, ethanol, and chloroform",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Lidocaine hydrochloride monohydrate",
+  "cid": 16219577,
+  "s": []
+ },
+ {
+  "name": "Mepivacaine hydrochloride",
+  "cid": 66070,
+  "s": []
+ },
+ {
+  "name": "Methoxsalen",
+  "cid": 4114,
+  "s": [
+   [
+    "In water, 47.6 mg/L at 30 °C",
+    "HSDB"
+   ],
+   [
+    "In water, 23 ug/mL",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in cold water; sparingly soluble in boiling water",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in chloroform; sparingly soluble in liquid petrolatum, ether; soluble in boiling alcohol, acetone, acetic acid, vegetable fixed oils, propylene glycol, benzene",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in alcohol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Neostigmine metilsulfate",
+  "cid": 5824,
+  "s": []
+ },
+ {
+  "name": "Oxybutynin hydrochloride",
+  "cid": 91505,
+  "s": []
+ },
+ {
+  "name": "Penicillamine",
+  "cid": 5852,
+  "s": [
+   [
+    "CRYSTALS; DECOMP 177.5 °C; SPECIFIC OPTICAL ROTATION: -63 DEG @ 25 °C/D (1N SODIUM HYDROXIDE); HYGROSCOPIC; FREELY SOL IN WATER, SOL IN ETHANOL. /D-PENICILLAMINE HYDROCHLORIDE/",
+    "HSDB"
+   ],
+   [
+    "FREELY SOL IN WATER; SLIGHTLY SOL IN ALC; INSOL IN ETHER, CHLOROFORM.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Pilocarpine hydrochloride",
+  "cid": 5909,
+  "s": []
+ },
+ {
+  "name": "Pralidoxime chloride",
+  "cid": 135445761,
+  "s": []
+ },
+ {
+  "name": "Prilocaine hydrochloride",
+  "cid": 92163,
+  "s": []
+ },
+ {
+  "name": "Procaine hydrochloride",
+  "cid": 5795,
+  "s": []
+ },
+ {
+  "name": "Propofol",
+  "cid": 4943,
+  "s": [
+   [
+    "Insoluble in water. Soluble in alcohol and toluene.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Rocuronium bromide",
+  "cid": 441351,
+  "s": []
+ },
+ {
+  "name": "Salicylic acid",
+  "cid": 338,
+  "s": [
+   [
+    "Solubility (weight percent): carbon tetrachloride 0.262 (25 °C); benzene 0.775 (25 °C); propanol 27.36 (21 °C); absolute ethanol 34.87 (21 °C); acetone 396 (23 °C)",
+    "HSDB"
+   ],
+   [
+    "Soluble in oil of turpentine, alcohol, ether",
+    "HSDB"
+   ],
+   [
+    "SLIGHTLY SOL IN TOLUENE",
+    "HSDB"
+   ],
+   [
+    "In water, 2,240 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 20 °C: 0.2 (slightly soluble)",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Sevoflurane",
+  "cid": 5206,
+  "s": []
+ },
+ {
+  "name": "Solifenacin succinate",
+  "cid": 216457,
+  "s": []
+ },
+ {
+  "name": "Sugammadex sodium",
+  "cid": 6918584,
+  "s": []
+ },
+ {
+  "name": "Suxamethonium chloride",
+  "cid": 22475,
+  "s": []
+ },
+ {
+  "name": "Tadalafil",
+  "cid": 110635,
+  "s": [
+   [
+    "In water, 220 mg/L at 25 °C /Estimated/",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Tamsulosin hydrochloride",
+  "cid": 5362376,
+  "s": []
+ },
+ {
+  "name": "Tetracaine hydrochloride",
+  "cid": 8695,
+  "s": []
+ },
+ {
+  "name": "Thiocolchicoside",
+  "cid": 9915886,
+  "s": []
+ },
+ {
+  "name": "Timolol maleate",
+  "cid": 5281056,
+  "s": []
+ },
+ {
+  "name": "Tizanidine hydrochloride",
+  "cid": 114869,
+  "s": []
+ },
+ {
+  "name": "Tolterodine tartrate",
+  "cid": 443878,
+  "s": []
+ },
+ {
+  "name": "Tretinoin",
+  "cid": 444795,
+  "s": [
+   [
+    "Practically insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Soluble in DMSO; slightly soluble in polyethylene glycol 400, octanol, ethanol; practically insoluble in mineral oil, glycerin",
+    "HSDB"
+   ],
+   [
+    "... Soluble in ether; slightly soluble in ... chloroform.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Triclosan",
+  "cid": 5564,
+  "s": [
+   [
+    "In water, 10 mg/L at 20 °C",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in water",
+    "HSDB"
+   ],
+   [
+    "Readily soluble in alkaline solutions and many organic solvents; soluble in methanol, alcohol, acetone",
+    "HSDB"
+   ],
+   [
+    "Readily soluble in organic solvents",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Tropicamide",
+  "cid": 5593,
+  "s": []
+ },
+ {
+  "name": "Trospium chloride",
+  "cid": 5284631,
+  "s": []
+ },
+ {
+  "name": "Urea",
+  "cid": 1176,
+  "s": [
+   [
+    "10 ml 95% alc, 6 ml methanol, 1 ml boiling 95% alc, 20 ml abs alc, 2 ml glycerol; almost insol in chloroform, ether; sol in concn HCl",
+    "HSDB"
+   ],
+   [
+    "INSOL IN BENZENE; SOL IN ACETIC ACID",
+    "HSDB"
+   ],
+   [
+    "Sol in pyrimidine",
+    "HSDB"
+   ],
+   [
+    "In water, 5.45X10+5 mg/l @ 25 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: miscible",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Vecuronium bromide",
+  "cid": 39764,
+  "s": []
+ },
+ {
+  "name": "all-rac-alpha-Tocopherol",
+  "cid": 2116,
+  "s": [
+   [
+    "Practically insoluble in water; freely soluble in oils, fats, acetone, alcohol, chloroform, ether, other fat solvents",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ascorbic acid (C)",
+  "cid": 54670067,
+  "s": [
+   [
+    "Insoluble in ether, chloroform, benzene, petroleum ether, oils, fats, fat solvents",
+    "HSDB"
+   ],
+   [
+    "1 g dissolves in about 3 ml of water.",
+    "HSDB"
+   ],
+   [
+    "The solubility in g/mL is 0.33 in water, 0.033 in 95 wt% ethanol, 0.02 in absolute ethanol, 0.01 in glycerol USP, 0.05 in propylene glycol.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: 80% at 100 °C, 40% at 45 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 20 °C: 33 (freely soluble)",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Ascorbyl palmitate",
+  "cid": 54680660,
+  "s": [
+   [
+    "Soluble in alcohol, animal oil, and vegetable oil; slightly soluble in water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Benfotiamine",
+  "cid": 3032771,
+  "s": []
+ },
+ {
+  "name": "Betacarotene",
+  "cid": 5280489,
+  "s": [
+   [
+    "Sol in benzene, chloroform, carbon disulfide; moderately sol in ether, petroleum ether, oils; 100 ml hexane dissolve 109 mg at 0 °C; very sparingly sol in methanol and ethanol; practically insol in water, acids, alkalies",
+    "HSDB"
+   ],
+   [
+    "SOL IN FAT SOLVENTS",
+    "HSDB"
+   ],
+   [
+    "Soluble in acetone",
+    "HSDB"
+   ],
+   [
+    "Soluble in vegetable oils",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for BETA-CAROTENE (7 total), please visit the HSDB record page.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Biotin",
+  "cid": 171548,
+  "s": [
+   [
+    "SOL IN ACETONE; DISSOLVES ABOUT 1 PART/100 IN METHANOL; SOL IN METHYL ETHYL KETONE, BENZENE, CYCLOHEXENE; INSOL IN SATURATED & PARAFFIN HYDROCARBONS /METHYL ESTER/",
+    "HSDB"
+   ],
+   [
+    "HIGHLY SOL IN WATER /SODIUM SALT/",
+    "HSDB"
+   ],
+   [
+    "Insol in naphtha",
+    "HSDB"
+   ],
+   [
+    "Slightly sol in chloroform and ether",
+    "HSDB"
+   ],
+   [
+    "Biotin is slightly soluble in water and alcohol (its salts are quite soluble).",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Calcium pantothenate (B5)",
+  "cid": 443753,
+  "s": []
+ },
+ {
+  "name": "Cholecalciferol (D3)",
+  "cid": 5280795,
+  "s": [
+   [
+    "Sol in the usual org solvents; slightly sol in vegetable oils",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Choline bitartrate",
+  "cid": 6900,
+  "s": [
+   [
+    "Freely sol in water; slightly sol in alcohol; insol in ether, chloroform and benzene",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Cyanocobalamin (B12)",
+  "cid": 165339223,
+  "s": []
+ },
+ {
+  "name": "Dexpanthenol",
+  "cid": 131204,
+  "s": [
+   [
+    "Freely soluble in methanol, water, alcohol; slightly soluble in ether",
+    "HSDB"
+   ],
+   [
+    "Very soluble in ethanol, methanol; slightly soluble in ethyl ether",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in glycerin",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "dl-α-Tocopheryl acetate (E)",
+  "cid": 2117,
+  "s": []
+ },
+ {
+  "name": "Ergocalciferol",
+  "cid": 5280793,
+  "s": [
+   [
+    "Soluble in alcohol, chloroform, ether, and fatty oils.",
+    "HSDB"
+   ],
+   [
+    "SOL IN FATTY ACIDS",
+    "HSDB"
+   ],
+   [
+    "Solubility in acetone 69.5, benzene 10, hexane 1 (all in g/L, room temperature)",
+    "HSDB"
+   ],
+   [
+    "In water, 50 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Folic acid",
+  "cid": 135398658,
+  "s": [
+   [
+    "Slightly sol in methanol, less in ethanol and butanol; insol in acetone, chloroform, ether, benzene; relatively sol in acetic acid, phenol, pyridine, and in soln of alkali hydroxides and carbonates. Soluble in hot dil HCl and H2SO4.",
+    "HSDB"
+   ],
+   [
+    "In water, 1.6 mg/L at 25 °C; soluble up to about 1% in boiling water",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Inositol",
+  "cid": 892,
+  "s": []
+ },
+ {
+  "name": "Mecobalamin",
+  "cid": 10898559,
+  "s": []
+ },
+ {
+  "name": "Menadione sodium bisulfite",
+  "cid": 23665888,
+  "s": []
+ },
+ {
+  "name": "Menaquinone-7",
+  "cid": 5287554,
+  "s": []
+ },
+ {
+  "name": "Menatetrenone",
+  "cid": 5282367,
+  "s": []
+ },
+ {
+  "name": "Nicotinamide (B3)",
+  "cid": 936,
+  "s": [
+   [
+    "In water, 5X10+5 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Very soluble in water; 1 g is soluble in 1 mL water",
+    "HSDB"
+   ],
+   [
+    "1 g dissolves in about 1 mL water, in 10 mL glycerol, in about 1.5 mL alcohol",
+    "HSDB"
+   ],
+   [
+    "Soluble in butanol, chloroform",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for Nicotinamide (6 total), please visit the HSDB record page.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 20 °C: 100 (very good)",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Nicotinic acid",
+  "cid": 938,
+  "s": [
+   [
+    "In water, 1.8X10+4 mg/L at 20 °C",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in water",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in ethanol, ethyl ether",
+    "HSDB"
+   ],
+   [
+    "Soluble in alcohol, insoluble in most lipid solvents",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 20 °C: 1.8 (moderate)",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Panthenol",
+  "cid": 4678,
+  "s": []
+ },
+ {
+  "name": "Phytomenadione",
+  "cid": 5284607,
+  "s": [
+   [
+    "Colorless oil; UV max (95% alcohol): 259, 305 nm (log Em 3.79, 3.31); insol in water /2,3-Epoxide/",
+    "HSDB"
+   ],
+   [
+    "Insoluble in water; sparingly soluble in methanol; sol in ethanol; sol in acetone, benzene, petroleum ether, hexane, and dioxane; sol in chloroform, and other fat solvents; sol in vegetable oils",
+    "HSDB"
+   ],
+   [
+    "SOL IN FATS",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Pyridoxal phosphate",
+  "cid": 1051,
+  "s": []
+ },
+ {
+  "name": "Pyridoxine hydrochloride (B6)",
+  "cid": 6019,
+  "s": [
+   [
+    "1 g dissolves in about 4.5 ml water, 90 ml alcohol; sol in propylene glycol; sparingly sol in acetone; insol in ether, chloroform",
+    "HSDB"
+   ],
+   [
+    "Soluble in alc, acetone; slightly soluble in other organic solvents.",
+    "HSDB"
+   ],
+   [
+    "In water, 2.2X10+5 mg/l, temp not specified.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Retinyl acetate",
+  "cid": 638034,
+  "s": []
+ },
+ {
+  "name": "Retinyl palmitate (A)",
+  "cid": 5280531,
+  "s": []
+ },
+ {
+  "name": "Riboflavin (B2)",
+  "cid": 493570,
+  "s": [
+   [
+    "Soluble in sodium chloride solutions; 0.0045 g/100 mL of absolute ethanol at 27.5 °C; slightly sol in cyclohexanol, amyl acetate and benzyl alcohol, phenol; insoluble in ether, chloroform, acetone, benzene; very soluble in dilute alkalies (with decomposition)",
+    "HSDB"
+   ],
+   [
+    "SOLUBILITY IN WATER AT 25 °C: 10-13 MG/100 ML",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in alcohols; insoluble in lipid solvents",
+    "HSDB"
+   ],
+   [
+    "Insoluble in ethyl ether, acetone, chloroform; slightly soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "In water, of 0.1 g/L at 20 °C; 0.071 g/L and 0.085 g/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 25 °C: 0.01",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "RRR-alpha-Tocopherol",
+  "cid": 14985,
+  "s": []
+ },
+ {
+  "name": "RRR-alpha-Tocopheryl acetate",
+  "cid": 86472,
+  "s": []
+ },
+ {
+  "name": "RRR-alpha-Tocopheryl hydrogen succinate",
+  "cid": 20353,
+  "s": []
+ },
+ {
+  "name": "Sodium ascorbate",
+  "cid": 23667548,
+  "s": [
+   [
+    "Solubility in water: 62 g/100 mL at 25 °C; 78 g/100 mL at 75 °C",
+    "HSDB"
+   ],
+   [
+    "Very slightly soluble in alcohol; insoluble in chloroform, ether",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Thiamine hydrochloride (B1)",
+  "cid": 6202,
+  "s": []
+ },
+ {
+  "name": "Thiamine nitrate",
+  "cid": 10762,
+  "s": []
+ },
+ {
+  "name": "Aluminium hydroxide",
+  "cid": 10176082,
+  "s": [
+   [
+    "Insoluble in water; soluble in alkaline solutions, acid solutions",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in water, but soluble in alkaline aqueous solutions or in HCl, H2SO4 and other strong acids in the presence of some water.",
+    "HSDB"
+   ],
+   [
+    "Readily soluble in both acids and strong bases",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: none",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Calcium acetate",
+  "cid": 6116,
+  "s": [
+   [
+    "37.4 G IN 100 CC OF WATER @ 0 °C; 29.7 G IN 100 CC OF WATER @ 100 °C; SLIGHTLY SOL IN ALCOHOL",
+    "HSDB"
+   ],
+   [
+    "Practically insol in acetone and benzene",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: very good",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Calcium carbonate",
+  "cid": 10112,
+  "s": [
+   [
+    "Solubility Product constant: 3.36X10-9 at 25 °C",
+    "HSDB"
+   ],
+   [
+    "ALKALI HYDROXIDE REDUCES ITS SOLUBILITY",
+    "HSDB"
+   ],
+   [
+    "INSOL IN ALCOHOL",
+    "HSDB"
+   ],
+   [
+    "SOLUBILITY IN H2O INCR BY AMMONIUM SALT & BY CO2",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in water; soluble in dilute acids",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for CALCIUM CARBONATE (6 total), please visit the HSDB record page.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, mg/l at 25 °C: 14 (very poor)",
+    "ICSC"
+   ],
+   [
+    "0.001%",
+    "NIOSH"
+   ]
+  ]
+ },
+ {
+  "name": "Calcium chloride dihydrate",
+  "cid": 6093260,
+  "s": []
+ },
+ {
+  "name": "Calcium citrate tetrahydrate",
+  "cid": 5282392,
+  "s": []
+ },
+ {
+  "name": "Calcium gluconate, anhydrous",
+  "cid": 9290,
+  "s": [
+   [
+    "Slowly soluble in 5 parts boiling water; insoluble in alc or other organic solvents. Slowly soluble in 30 parts cold, about 5 parts boiling water",
+    "HSDB"
+   ],
+   [
+    "Insoluble in acetic acid",
+    "HSDB"
+   ],
+   [
+    "Sol in water 3.3 g/100 cc at 15 °C",
+    "HSDB"
+   ],
+   [
+    "In water, 3.33X10+4 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 25 °C: 3.5 (moderate)",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Calcium hydrogen phosphate dihydrate",
+  "cid": 104805,
+  "s": []
+ },
+ {
+  "name": "Calcium lactate pentahydrate",
+  "cid": 165341,
+  "s": []
+ },
+ {
+  "name": "Chromic chloride hexahydrate",
+  "cid": 104957,
+  "s": [
+   [
+    "Solubility in water, g/100ml at 20 °C: 59",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Chromium picolinate",
+  "cid": 151932,
+  "s": []
+ },
+ {
+  "name": "Copper gluconate",
+  "cid": 10692,
+  "s": [
+   [
+    "Light blue to bluish-green, odorless crystals and crystalline powder. Astringent taste. 30 g soluble in 100 ml water at 25 °C; slightly sol in alcohol; practically insol in most org solvents. /Hydrate/",
+    "HSDB"
+   ],
+   [
+    "Sol in water; insol in acetone, alcohol, ether",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Copper sulfate pentahydrate",
+  "cid": 24463,
+  "s": [
+   [
+    "31.6 g/100 cc water @ 0 °C, 203.3 g/100 cc @ 100 °C",
+    "HSDB"
+   ],
+   [
+    "1 g in about 500 ml alcohol",
+    "HSDB"
+   ],
+   [
+    "In water: 148 g/kg @ 0 °C; 230.5 gkg @ 25 °C; 335 g/kg @ 50 °C; 736 g/kg @ 100 °C",
+    "HSDB"
+   ],
+   [
+    "Practically insol in most organic solvents.",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for COPPER(II) SULFATE, PENTAHYDRATE (8 total), please visit the HSDB record page.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/l at 20 °C: 317 (freely soluble)",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Disodium phosphate dodecahydrate",
+  "cid": 61456,
+  "s": []
+ },
+ {
+  "name": "Ferric pyrophosphate",
+  "cid": 24877,
+  "s": []
+ },
+ {
+  "name": "Ferrous bisglycinate",
+  "cid": 9837124,
+  "s": []
+ },
+ {
+  "name": "Ferrous fumarate",
+  "cid": 6433164,
+  "s": []
+ },
+ {
+  "name": "Ferrous gluconate dihydrate",
+  "cid": 443752,
+  "s": []
+ },
+ {
+  "name": "Ferrous sulfate heptahydrate",
+  "cid": 62662,
+  "s": []
+ },
+ {
+  "name": "Magnesium aspartate",
+  "cid": 57488534,
+  "s": []
+ },
+ {
+  "name": "Magnesium carbonate",
+  "cid": 11029,
+  "s": [
+   [
+    "White, friable masses or bulky, white powder; at about 700 °C is converted to MgO; sol in about 3,300 parts CO2-free water; more sol in water containing CO2; sol in dilute acids with effervescence; insol in alcohol /Magnesium carbonate hydroxide/",
+    "HSDB"
+   ],
+   [
+    "0.0106 G/100 CC COLD WATER",
+    "HSDB"
+   ],
+   [
+    "SOL IN ACID, AQ CARBON DIOXIDE; INSOL IN ACETONE, AMMONIA",
+    "HSDB"
+   ],
+   [
+    "Insoluble in alcohol; soluble in acids",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 20 °C: 0.01 (very poor)",
+    "ICSC"
+   ],
+   [
+    "0.01%",
+    "NIOSH"
+   ]
+  ]
+ },
+ {
+  "name": "Magnesium citrate",
+  "cid": 6099959,
+  "s": []
+ },
+ {
+  "name": "Magnesium hydroxide",
+  "cid": 73981,
+  "s": [
+   [
+    "White, friable masses or bulky, white powder; at about 700 °C is converted to MgO; sol in about 3,300 parts CO2-free water; more sol in water containing CO2; sol in dilute acids with effervescence; insol in alcohol /Magnesium carbonate hydroxide/",
+    "HSDB"
+   ],
+   [
+    "Soluble in dilute acids",
+    "HSDB"
+   ],
+   [
+    "0.0009 G SOL IN 100 CC WATER @ 18 °C; 0.004 G SOL IN 100 CC WATER @ 100 °C; SOL IN AMMONIUM SALTS",
+    "HSDB"
+   ],
+   [
+    "Almost insoluble in alcohol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Magnesium lactate",
+  "cid": 6536825,
+  "s": []
+ },
+ {
+  "name": "Magnesium oxide",
+  "cid": 14792,
+  "s": [
+   [
+    "Soluble in acids and ammonium salt solutions",
+    "HSDB"
+   ],
+   [
+    "Insoluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "In water, 86 mg/L at 30 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: poor",
+    "ICSC"
+   ],
+   [
+    "(86 °F): 0.009%",
+    "NIOSH"
+   ]
+  ]
+ },
+ {
+  "name": "Magnesium sulfate heptahydrate",
+  "cid": 24843,
+  "s": []
+ },
+ {
+  "name": "Manganese gluconate",
+  "cid": 22988,
+  "s": [
+   [
+    "Light pinkish powder or coarse pink granules; sol in water; insol in alcohol and benzene /Dihydrate/",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Potassium chloride",
+  "cid": 4873,
+  "s": [
+   [
+    "In water, 35.5 g/100 g water at 25 °C",
+    "HSDB"
+   ],
+   [
+    "1 g dissolves in 2.8 mL water, 1.8 mL boiling water ... /addtion of/ hydrochloric acid, or sodium chloride, or magnesium chloride, diminishes its solubility in water",
+    "HSDB"
+   ],
+   [
+    "Insoluble in ether, acetone",
+    "HSDB"
+   ],
+   [
+    "1 g dissolves in 14 mL glycerol, about 250 mL alcohol. Insoluble in ether, acetone.",
+    "HSDB"
+   ],
+   [
+    "For more Solubility (Complete) data for POTASSIUM CHLORIDE (6 total), please visit the HSDB record page.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water at 20 °C: good",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Potassium citrate monohydrate",
+  "cid": 2735208,
+  "s": []
+ },
+ {
+  "name": "Potassium dihydrogen phosphate",
+  "cid": 516951,
+  "s": [
+   [
+    "Solubility: 18 g/100g water /Monopotassium phosphate anhydrous/",
+    "HSDB"
+   ],
+   [
+    "Soluble in about 4.5 parts water; insoluble in alcohol",
+    "HSDB"
+   ],
+   [
+    "Solubility: 25 g/100 cc water at 25 °C. Slightly soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml: 22",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Potassium hydrogen carbonate",
+  "cid": 516893,
+  "s": []
+ },
+ {
+  "name": "Potassium iodide",
+  "cid": 4875,
+  "s": [
+   [
+    "Slightly soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "148 g/100 g water at 25 °C",
+    "HSDB"
+   ],
+   [
+    "127.5 g sol in 100 cc water at 0 °C; 1.88 g sol in 100 cc alcohol at 25 °C; 1.31 g sol in 100 cc acetone at 25 °C; sol in ether, ammonia",
+    "HSDB"
+   ],
+   [
+    "1 gram dissolves in 0.7 mL water, 0.5 mL boiling water; 51 mL absolute ethanol; 22 mL alcohol; 8 mL methanol; 75 mL acetone; 2 mL glycerol; about 2.5 mL glycol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Selenomethionine",
+  "cid": 105024,
+  "s": []
+ },
+ {
+  "name": "Sodium chloride",
+  "cid": 5234,
+  "s": [
+   [
+    "36.0 g/100 g of water at 25 °C",
+    "HSDB"
+   ],
+   [
+    "One gram dissolves in 2.8 mL water /3.57X10+5 mg/L/ at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "0.065 g/100 g ethanol at 25 °C, 7.15 g/100 g ethylene glycol at 25 °C, 5.21 g/100 g formic acid at 25 °C, 10 g/100 g glycerol at 25 °C, 2.15 g /100 g liquid ammonia at -40 °C, 1.40 g/100g methanol at 25 °C, 1.86 g/100 g monoethanolamine at 25 °C /Table/",
+    "HSDB"
+   ],
+   [
+    "One gram dissolves in ... 2.6 mL boiling water, in 10 mL glycerol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Sodium citrate dihydrate",
+  "cid": 71474,
+  "s": [
+   [
+    "Solubility in water, g/100ml: 77",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Sodium fluoride",
+  "cid": 5235,
+  "s": [
+   [
+    "Insoluble in alcohol",
+    "HSDB"
+   ],
+   [
+    "Solubility in water 4.0 g/100 ml water at 15 °C. Solubility in water 4.3 g/100 ml water at 25 °C. Solubility in water 5.0 g/100 ml water at 100 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 20 °C: 4.0",
+    "ICSC"
+   ],
+   [
+    "4%",
+    "NIOSH"
+   ]
+  ]
+ },
+ {
+  "name": "Sodium hydrogen carbonate",
+  "cid": 516892,
+  "s": [
+   [
+    "In water, 10.3 g/100 g water at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Soluble in 10 parts water at 25 °C; 12 parts water at about 18 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water = 6.4, 7.6, 8.7, 10.0, 11.3, 12.7, 14.2, 16.5, and 19.1 g/100g solution at 0, 10, 20, 30, 40, 50, 60, 80, and 100 °C, respectively; Solubility in water = 6.9, 8.2, 9.6, 11.1, 12.7, 14.5, 16.5, 19.7, and 23.6 g/100g H2O at 0, 10, 20, 30, 40, 50, 60, 80, and 100 °C, respectively. Solubility is lower in the presence of sodium carbonate",
+    "HSDB"
+   ],
+   [
+    "Insoluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 20 °C: 9.3",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Sodium molybdate dihydrate",
+  "cid": 16211258,
+  "s": []
+ },
+ {
+  "name": "Sodium selenite",
+  "cid": 24934,
+  "s": [
+   [
+    "Insoluble in alcohol",
+    "HSDB"
+   ],
+   [
+    "89.8 g/100 g water",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 20 °C: 85",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Tricalcium phosphate",
+  "cid": 24456,
+  "s": [
+   [
+    "Practically insol in alcohol and acetic acid; sol in dilute hydrochloric acid, nitric acid",
+    "HSDB"
+   ],
+   [
+    "Solubility in cold water: 2 mg/100 cc",
+    "HSDB"
+   ],
+   [
+    "2.5 mg/100 g water at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Zinc acetate dihydrate",
+  "cid": 24212194,
+  "s": []
+ },
+ {
+  "name": "Zinc chloride",
+  "cid": 5727,
+  "s": [
+   [
+    "432 g/100 g water at 25 °C; 614 g/100 g water at 100 °C",
+    "HSDB"
+   ],
+   [
+    "1 gram dissolves in 0.25 mL 2% hydrochloric acid, 1.3 mL alcohol, 2 mL glycerol; freely soluble in acetone",
+    "HSDB"
+   ],
+   [
+    "100 g/100 cc alcohol at 12.5 °C",
+    "HSDB"
+   ],
+   [
+    "434.599 lb/100 lb water at 70 °F",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml at 25 °C: 432 (very good)",
+    "ICSC"
+   ],
+   [
+    "(70 °F): 435%",
+    "NIOSH"
+   ]
+  ]
+ },
+ {
+  "name": "Zinc citrate",
+  "cid": 11023,
+  "s": []
+ },
+ {
+  "name": "Zinc gluconate",
+  "cid": 443445,
+  "s": []
+ },
+ {
+  "name": "Zinc oxide",
+  "cid": 3007857,
+  "s": [
+   [
+    "Insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Slowly decomposed by water",
+    "HSDB"
+   ],
+   [
+    "Soluble in dilute acid",
+    "HSDB"
+   ],
+   [
+    "Soluble in acids and alkalies; insoluble in alcohol",
+    "HSDB"
+   ],
+   [
+    "0.00042 g/100 cu cm water at 18 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: none",
+    "ICSC"
+   ],
+   [
+    "(64 °F): 0.0004%",
+    "NIOSH"
+   ]
+  ]
+ },
+ {
+  "name": "Zinc picolinate",
+  "cid": 9904746,
+  "s": []
+ },
+ {
+  "name": "Zinc sulfate monohydrate",
+  "cid": 62639,
+  "s": []
+ },
+ {
+  "name": "Acetyl-L-carnitine hydrochloride",
+  "cid": 2733928,
+  "s": []
+ },
+ {
+  "name": "Alanine",
+  "cid": 5950,
+  "s": [
+   [
+    "Solubility in cold 80% ethanol = 0.2%",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in ethanol, pyridine; insoluble in ether, acetone",
+    "HSDB"
+   ],
+   [
+    "In water, 1.64X10+5 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Arginine",
+  "cid": 6322,
+  "s": [
+   [
+    "Insoluble in ethyl ether; slightly soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "In water, 1.82X10+5 mg/l @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Astaxanthin",
+  "cid": 5281224,
+  "s": []
+ },
+ {
+  "name": "Beta-alanine",
+  "cid": 239,
+  "s": []
+ },
+ {
+  "name": "Betaine",
+  "cid": 247,
+  "s": [
+   [
+    "Solubility (g/100 g solvent): methanol, 55; ethanol, 8.7. Sparingly soluble in ether.",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in chloroform",
+    "HSDB"
+   ],
+   [
+    "In water, 6.11X10+5 mg/L at 19 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Caffeine",
+  "cid": 2519,
+  "s": [
+   [
+    "Solubility in water is increased by alkali benzoates, cinnamates, citrates or salicylates",
+    "HSDB"
+   ],
+   [
+    "In water, 2.16X10+4 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "1 gm dissolves in 46 mL water, 5.5 mL water at 80 °C, 1.5 mL boiling water, 66 mL alcohol, 22 mL alcohol at 60 °C, 50 mL acetone, 5.5 mL chloroform, 530 mL ether, 100 mL benzene, 22 mL boiling benzene.",
+    "HSDB"
+   ],
+   [
+    "Soluble in pyridine",
+    "HSDB"
+   ],
+   [
+    "Freely soluble in pyrrole; slightly soluble in petroleum ether; freely soluble in tetrahydrofuran containing about 4% water",
+    "HSDB"
+   ],
+   [
+    "Solubility in water, g/100ml: 2.17",
+    "ICSC"
+   ]
+  ]
+ },
+ {
+  "name": "Carnosine",
+  "cid": 439224,
+  "s": []
+ },
+ {
+  "name": "Citrulline",
+  "cid": 9750,
+  "s": []
+ },
+ {
+  "name": "Creatine monohydrate",
+  "cid": 80116,
+  "s": []
+ },
+ {
+  "name": "Curcumin",
+  "cid": 969516,
+  "s": [
+   [
+    "DARK RED; INSOL IN OIL DILL, VEGETABLE OIL; SOL IN OIL CLOVE; PARTLY SOL IN PROPYLENE GLYCOL, OIL CASSIA /TURMERIC/",
+    "HSDB"
+   ],
+   [
+    "Insoluble in water",
+    "HSDB"
+   ],
+   [
+    "Insoluble in ether; soluble in alcohol, glacial acetic acid",
+    "HSDB"
+   ],
+   [
+    "Very soluble in ethanol, acetic acid",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Cysteine hydrochloride monohydrate",
+  "cid": 23462,
+  "s": []
+ },
+ {
+  "name": "Glucosamine hydrochloride",
+  "cid": 91431,
+  "s": []
+ },
+ {
+  "name": "Glutamine",
+  "cid": 5961,
+  "s": [
+   [
+    "In water, 41,300 mg/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "One gram dissolves in 20.8 mL water at 30 °C, in 38.5 mL at 18 °C, in 56.7 mL at 0 °C",
+    "HSDB"
+   ],
+   [
+    "Practically insoluble in methanol (3.5 mg/100 mL at 25 °C), ethanol (0.46 mg/100 mL at 23 °C), ether, benzene, acetone, ethyl acetate, chloroform",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Glutathione",
+  "cid": 124886,
+  "s": []
+ },
+ {
+  "name": "Glycine",
+  "cid": 750,
+  "s": [
+   [
+    "Insoluble in ethanol, ethyl ether, slightly soluble in acetone; very soluble in water",
+    "HSDB"
+   ],
+   [
+    "Solubility in 100 ml water @ 25 °C: 25.0 g; @ 50 °C: 39.1 g; @ 75 °C: 54.4 g; @ 100 °C: 67.2 g",
+    "HSDB"
+   ],
+   [
+    "100 g of abs alc dissolve about 0.06 g. Sol in 164 parts pyridine. Almost insol in ether.",
+    "HSDB"
+   ],
+   [
+    "water solubility = 2.49X10+5 mg/l @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Hesperidin",
+  "cid": 10621,
+  "s": []
+ },
+ {
+  "name": "Histidine",
+  "cid": 6274,
+  "s": [
+   [
+    "Fairly sol in water; insol in alcohol and ether; decomp 251-252 °C; specific optical rotation (c= 2 in 3 moles of HCl): +8.0 deg at 26 °C/D /Monohydrochloride/",
+    "HSDB"
+   ],
+   [
+    "SOL IN WATER; DECOMP AT 245 °C (ALSO REPORTED AS 196 °C); SPECIFIC OPTICAL ROTATION (C= 2) +47.6 DEG AT 20 °C/D /L-HISTIDINE DIHYDROCHLORIDE/",
+    "HSDB"
+   ],
+   [
+    "Insol in common neutral solvents except water",
+    "HSDB"
+   ],
+   [
+    "Insoluble in ethyl ether, acetone; slightly soluble in ethanol",
+    "HSDB"
+   ],
+   [
+    "In water, 4.56X10+4 mg/l @ 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Isoleucine",
+  "cid": 6306,
+  "s": [
+   [
+    "Glistening rhombic or monoclinic plates from dilute alcohol. Decomposes at 292 °C. pK1 = 2.32; pK2 = 9.76. Solubility in water (g/L): 18.3 at 0 °C; 22.3 at 25 °C; 30.3 at 50 °C; 46.1 at 75 °C; 78.0 at 100 °C /Isoleucine, DL-form/",
+    "HSDB"
+   ],
+   [
+    "Sparingly soluble in hot alcohol (0.13% wt/wt at 80 °C), hot acetic acid. Insoluble in ether.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water (g/L): 37.9 at 0 °C; 41.2 at 25 °C; 48.2 at 50 °C; 60.8 at 75 °C; 82.6 at 100 °C",
+    "HSDB"
+   ],
+   [
+    "In water, 3.44X10+4 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Leucine",
+  "cid": 6106,
+  "s": [
+   [
+    "Leaflets from water. Sweet taste. Decomposes at 232 °C (also reported as 290 °C). Sublimes. pK1 = 2.36; pK2 = 9.60. Solubility in water (g/L): 7.97 (0 °C); 9.91 (25 °C); 14.06 (50 °C); 22.76 (75 °C); 42.06 (100 °C); in 90% alcohol: 1.3. Insoluble in ether. /Leucine DL-form/",
+    "HSDB"
+   ],
+   [
+    "Solubility in 99% alcohol: 0.72; in acetic acid: 10.9. Insoluble in ether.",
+    "HSDB"
+   ],
+   [
+    "Solubility in water (g/L): 22.7 (0 °C); 24.26 (25 °C); 28.87 (50 °C); 38.23 (75 °C); 56.38 (100 °C)",
+    "HSDB"
+   ],
+   [
+    "In water, 2.15X10+4 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Levocarnitine",
+  "cid": 10917,
+  "s": [
+   [
+    "Readily soluble in water and hot alcohol. Practically insoluble in acetone, ether and benzene",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Lutein",
+  "cid": 5281243,
+  "s": []
+ },
+ {
+  "name": "Lycopene",
+  "cid": 446925,
+  "s": []
+ },
+ {
+  "name": "Lysine hydrochloride",
+  "cid": 69568,
+  "s": []
+ },
+ {
+  "name": "Methionine",
+  "cid": 6137,
+  "s": [
+   [
+    "Soluble in water but the crystals are somewhat water-repellant at first",
+    "HSDB"
+   ],
+   [
+    "Soluble in warm dilute alcohol; insoluble in absolute alcohol, ether, petroleum ether, benzene, acetone",
+    "HSDB"
+   ],
+   [
+    "Slightly soluble in acetic acid",
+    "HSDB"
+   ],
+   [
+    "In water, 56.6 g/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Oxitriptan",
+  "cid": 439280,
+  "s": []
+ },
+ {
+  "name": "Phenylalanine",
+  "cid": 6140,
+  "s": [
+   [
+    "Monoclinic leaflets or prisms from water or alchol, sweetish taste. Decomposes at 271-273 °C. Sublimes in vacuo. pK1 = 2.58; pK2 = 9.24. Solubility in water (g/L): 9.97 at 0 °C; 14.11 at 25 °C; 21.87 at 50 °C; 37.08 at 75 °C; 68.9 at 100 °C /Phenylalanine DL-form/",
+    "HSDB"
+   ],
+   [
+    "Insoluble in ethanol, ethyl ether, benzene, acid",
+    "HSDB"
+   ],
+   [
+    "Very slightly sol in methanol, ethanol",
+    "HSDB"
+   ],
+   [
+    "Solubility in water (g/L): 19.8 at 0 °C; ... 44.3 at 50 °C; 66.2 at 75 °C; 99.0 at 100 °C",
+    "HSDB"
+   ],
+   [
+    "In water, 2.64X10+4 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Proline",
+  "cid": 145742,
+  "s": [
+   [
+    "Solubility in 100 mL of water: 127 g at 0 °C; 162 g at 25 °C; 206.7 g at 50 °C; 239 g at 65 °C",
+    "HSDB"
+   ],
+   [
+    "Solubility in alcohol: 1.55% at 35 °C; insoluble in ether, butanol, isopropanol",
+    "HSDB"
+   ],
+   [
+    "Very soluble in water, alcohol; insoluble in ether",
+    "HSDB"
+   ],
+   [
+    "Very soluble in water; slightly soluble in ethanol, acetone, benzene; insoluble in ether, propanol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Quercetin dihydrate",
+  "cid": 5284452,
+  "s": []
+ },
+ {
+  "name": "Resveratrol",
+  "cid": 445154,
+  "s": [
+   [
+    "In water, 3 mg/100 mL",
+    "HSDB"
+   ],
+   [
+    "Soluble in organic solvents such as ethanol, DMSO and dimethyl formamide at approximately 65 mg/mL; solubility in PBS (phosphate buffered saline) at pH 7.2 is approximately 100 ug/mL",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Taurine",
+  "cid": 1123,
+  "s": [
+   [
+    "In water, 94.9 g/L at 25 °C",
+    "HSDB"
+   ],
+   [
+    "Soluble in 15.5 parts of water at 12 °C; 100 parts of 95% alcohol dissolves 0.004 parts at 17 °C; insoluble in absolute alcohol",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Threonine",
+  "cid": 6288,
+  "s": [
+   [
+    "Insoluble in ethanol, ethyl ether, chloroform",
+    "HSDB"
+   ],
+   [
+    "Insoluble in common neutral solvents",
+    "HSDB"
+   ],
+   [
+    "In water, 9.70X10+4 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Tryptophan",
+  "cid": 6305,
+  "s": [
+   [
+    "Slightly soluble in acetic acid, ethanol; insoluble in ethyl ether",
+    "HSDB"
+   ],
+   [
+    "Solubility in water: 0.23 g/L at 0 °C, 11.4 g/L at 25 °C, 17.1 g/L at 50 °C, 27.95 g/L at 75 °C, 49.9 g/L at 100 °C",
+    "HSDB"
+   ],
+   [
+    "Soluble 1 in 100 of water; very slightly soluble in alcohol; practically insoluble chloroform and ether; soluble in hot alcohol and solutions of dilute acids and alkali hydroxides.",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Tyrosine",
+  "cid": 6057,
+  "s": [
+   [
+    "SOLUBILITY IN WATER 0.453 G/L @ 25 °C; INSOL IN ABSOLUTE ALCOHOL, ETHER, ACETONE; SOL IN ALKALINE SOLN",
+    "HSDB"
+   ],
+   [
+    "SLIGHTLY SOL IN ACETIC ACID",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Ubidecarenone",
+  "cid": 5281915,
+  "s": []
+ },
+ {
+  "name": "Valine",
+  "cid": 6287,
+  "s": [
+   [
+    "Insoluble in common neutral solvents.",
+    "HSDB"
+   ],
+   [
+    "Very slightly soluble in alcohol; insoluble in ether",
+    "HSDB"
+   ],
+   [
+    "Solubility in water at 0 °C: 83.4 g/L; at 25 °C: 88.5 g/L; at 50 °C: 96.2 g/L; at 65 °C: 102.4 g/L",
+    "HSDB"
+   ],
+   [
+    "In water, 5.85X10+4 mg/L at 25 °C",
+    "HSDB"
+   ]
+  ]
+ },
+ {
+  "name": "Zeaxanthin",
+  "cid": 5280899,
+  "s": []
+ }
+]

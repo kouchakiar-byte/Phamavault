@@ -2,6 +2,7 @@ import { calculations } from "@/content/calculations";
 import { referenceSections } from "@/content/references";
 import { searchCopy } from "@/content/search";
 import { saltForms } from "@/content/salt-forms";
+import { solubilityCopy } from "@/content/solubility";
 import { coaBuilderCopy } from "@/content/coa-builder";
 import { sections } from "@/content/sections";
 import { excipients, formulation, handbooks, regulatory, sops, type RawMaterial } from "@/data";
@@ -233,6 +234,16 @@ function buildStatic(): Entry[] {
       sub: saltForms.lead,
       path: "materials/salt-forms",
       extra: keys("ملح بیس ضریب نمک فرم نمکی هیدرات salt factor base equivalent hydrate stoichiometry", saltForms.lead.en, saltForms.lead.fa),
+    }),
+  );
+  out.push(
+    entry({
+      group: "materials",
+      section: "materials",
+      title: solubilityCopy.title,
+      sub: solubilityCopy.lead,
+      path: "materials/solubility",
+      extra: keys("حلالیت انحلال پذیری محلول نامحلول solubility soluble insoluble freely sparingly slightly mg/mL", solubilityCopy.lead.en, solubilityCopy.lead.fa),
     }),
   );
 
