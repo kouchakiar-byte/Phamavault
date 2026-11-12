@@ -115,8 +115,8 @@ const INSTRUMENT_WORDS = new Set([
   "دستگاه", "سیستم", "تجهیزات", "instrument", "instruments", "system", "systems",
   "equipment", "device", "devices", "machine", "analyzer", "analyser",
 ]);
-/** Product lines that are chemicals, not instruments, even when they name the technique (Acetonitrile HPLC grade). */
-const CHEMICAL_LINE = /حلال|solvent|گرید|grade|استونیتریل|acetonitrile|متانول|methanol|هگزان|hexane|ایزوپروپانول|isopropanol|سیلیکاژل|silica/;
+/** Product lines that are chemicals, not instruments, even when they name the technique (Acetonitrile HPLC grade, Karl Fischer reagent). */
+const CHEMICAL_LINE = /حلال|solvent|گرید|grade|استونیتریل|acetonitrile|متانول|methanol|هگزان|hexane|ایزوپروپانول|isopropanol|سیلیکاژل|silica|معرف|reagent|محلول|solution|استاندارد|standard/;
 
 /*
  * Makers of the instrument: a company that imports Agilent or Waters is a

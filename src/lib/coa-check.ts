@@ -176,8 +176,19 @@ function findRef(row: CheckRow, kind: string, refs: RefRow[], used: Set<RefRow>)
 
 type Lim = { min?: number; max?: number; unit: string };
 
+/** A decimal comma ("99,5 %") as a point; thousands ("1,000") stay. */
+const decimal = (s: string) => s.replace(/(\d),(\d{1,2})(?!\d)/g, "$1.$2");
+
+/** "0.5% max" / "0.5 % maximum" → "NMT 0.5%", and "min" likewise. */
+const prefixBound = (s: string) =>
+  decimal(s.trim())
+    .replace(/^(.+?)\s*\(?\b(max\.?|maximum)\)?$/i, "NMT $1")
+    .replace(/^(.+?)\s*\(?\b(min\.?|minimum)\)?$/i, "NLT $1")
+    .replace(/^max(imum)?\.?\s*/i, "NMT ")
+    .replace(/^min(imum)?\.?\s*/i, "NLT ");
+
 function limits(spec: string): Lim | null {
-  const p = parseSpec(spec.replace(/\bmax(imum)?\b/i, "NMT").replace(/\bmin(imum)?\b/i, "NLT"));
+  const p = parseSpec(prefixBound(spec));
   if (!p) return null;
   const unit = /ppm/i.test(spec) ? "ppm" : /%/.test(spec) ? "%" : /cfu/i.test(spec) ? "cfu" : /eu\b/i.test(spec) ? "eu" : /°|deg/i.test(spec) ? "deg" : "";
   return { ...p, unit };
@@ -224,12 +235,13 @@ export function compareSpec(coa: string, ref: string): "same" | "stricter" | "lo
   return "same";
 }
 
-const verdict = (spec: string, result: string) => (spec && result ? conformity({ key: "", name: "", method: "", spec, result, conf: "auto" }) : null);
+const verdict = (spec: string, result: string) =>
+  spec && result ? conformity({ key: "", name: "", method: "", spec: prefixBound(spec), result: decimal(result), conf: "auto" }) : null;
 
 /** A result exactly on a numeric limit. */
 function atLimit(spec: string, result: string): boolean {
   const l = limits(spec);
-  const r = toNum(result);
+  const r = toNum(decimal(result));
   if (!l || r.length !== 1 || /[<>≤≥]/.test(result)) return false;
   return (l.max !== undefined && close(r[0], l.max)) || (l.min !== undefined && close(r[0], l.min));
 }

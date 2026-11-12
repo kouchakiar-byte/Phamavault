@@ -251,7 +251,8 @@ function Pill({ tone, children }: { tone: "maker" | "trader" | "warn" | "cat"; c
     warn: "bg-orange-50 text-warn",
     cat: "bg-molecule-50 text-molecule-700",
   };
-  return <span className={`whitespace-nowrap rounded-md px-2 text-xs font-medium leading-6 ${tones[tone]}`}>{children}</span>;
+  // Category labels can be long ("Laboratory instruments, reference standards …"): they wrap on a phone.
+  return <span className={`${tone === "cat" ? "inline-block max-w-full" : "whitespace-nowrap"} rounded-md px-2 text-xs font-medium leading-6 ${tones[tone]}`}>{children}</span>;
 }
 
 function ProductChip({ p, hit = false }: { p: { fa: string; en: string }; hit?: boolean }) {

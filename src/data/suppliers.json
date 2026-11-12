@@ -2242,7 +2242,7 @@
     "نوسکاپین بیس (برای صادرات)|NOSCAPINE BASE (FOR EXPORT)",
     "پاپاورین هیدروکلراید (گرید تزریقی)|PAPAVERINE HYDROCHLORIDE (INJECTABLE GRADE)",
     "هیوسین بوتیل بروماید|HYOSCINE BUTYLE BROMIDE",
-    "ليناگليپتين|LINAGLIPTIN",
+    "لیناگلیپتین|LINAGLIPTIN",
     "بیزوپرولول فومارات|BISOPROLOL FUMARATE",
     "امپاگلیفلوزین|Empagliflozin",
     "اندانسترون|Ondansetron",
@@ -3217,11 +3217,11 @@
     "اسانس توت‌فرنگی|",
     "اسانس موز|",
     "اسانس نارگیل|",
-    "سديم اسکوربات|",
+    "سدیم اسکوربات|",
     "کوکو گلیسیرید|",
-    "زينک پی سی ای|",
-    "سديم پی سی ای|PCA Sodium",
-    "پودر اکتوپيروکس|"
+    "زینک پی سی ای|",
+    "سدیم پی سی ای|PCA Sodium",
+    "پودر اکتوپیروکس|"
    ],
    "addr": "سمنان، مجتمع پزشکان بوعلی",
    "mail": "avatshimipezhvak@gmail.com",
@@ -3546,7 +3546,7 @@
     "روغن کالاندولا|",
     "اتیل پارابن|",
     "روغن هسته انار|",
-    "ويتامين b2 | ریبوفلاوین|",
+    "ویتامین b2 | ریبوفلاوین|",
     "روغن فندق|",
     "روغن ماکادمیا|",
     "تیلوز | هیدروکسی اتیل سلولز|HEC",
@@ -3809,7 +3809,7 @@
     "سدیم استئارویل لاکتیلات|SSL",
     "روغن جانشین کره کاکائو|CBS",
     "پروتئین شیر هیدرولیز شده|",
-    "کلسیم استئارويل لاکتیلات|CSL",
+    "کلسیم استئارویل لاکتیلات|CSL",
     "پلی گلیسرول پلی رسینولئات|PGPR",
     "سوربیتان تری استئارات (STS) | اسپن 65|",
     "سوربات سدیم|",
@@ -7883,12 +7883,12 @@
    "note": "عضو سندیکا.",
    "src": "https://cppsynd.com/جام-دارو/",
    "p": [
-    "تيوب آلومينيوم|Aluminium Collapsible Tube",
-    "تيوب لمينيت|Laminate Tube (ABL)",
-    "اپليكاتور كرم و قرص واژينال|Vaginal Applicator (Cream & Tablet)",
-    "قاشق دارويي|Pharmaceutical Spoon",
-    "ليبل پشت چسبدار|Adhesive Label",
-    "پولك آلومينيومي|Aluminium Slug"
+    "تیوب آلومینیوم|Aluminium Collapsible Tube",
+    "تیوب لمینیت|Laminate Tube (ABL)",
+    "اپلیکاتور کرم و قرص واژینال|Vaginal Applicator (Cream & Tablet)",
+    "قاشق دارویی|Pharmaceutical Spoon",
+    "لیبل پشت چسبدار|Adhesive Label",
+    "پولک آلومینیومی|Aluminium Slug"
    ]
   },
   {
@@ -11162,7 +11162,7 @@
     "گنادوتروپین جفتی انسانی|Human chorionic gonadotropin",
     "گنادوتروپین یائسگی انسانی|Human menopausal gonadotropin",
     "اوروفولیتروپین|Urofollitropin",
-    "ستروروليکس|Cetrorelix",
+    "ستروریلیکس|Cetrorelix",
     "اگزناتاید|Exenatide",
     "لیراگلوتاید|Liraglutide"
    ]
@@ -12218,6 +12218,17 @@
    "کروماتوگرافی گازی",
    "gas chromatography",
    "gas chromatograph"
+  ],
+  [
+   "dissolution",
+   "دیسولوشن",
+   "انحلال سنج",
+   "dissolution tester"
+  ],
+  [
+   "karl fischer",
+   "کارل فیشر",
+   "kf"
   ]
  ]
 }
