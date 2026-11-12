@@ -373,3 +373,11 @@ fieldset:disabled .field-input {
     animation: none;
   }
 }
+
+/* Narrow phones have no room for both: the R&D bell takes the place of the header's account
+   button (the account link stays at the top of the menu). */
+@media (max-width: 459px) {
+  header:has([data-rnd-bell]) .account-link-narrow {
+    display: none;
+  }
+}
