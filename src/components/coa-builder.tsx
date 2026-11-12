@@ -2,8 +2,9 @@
 
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
-import { BookmarkPlus, ClipboardPaste, Download, FileDown, FileUp, FolderOpen, ImagePlus, Lock, Plus, Printer, RotateCcw, Trash2, X } from "lucide-react";
+import { BookmarkPlus, ClipboardPaste, Download, FileDown, FilePlus2, FileSearch, FileUp, FolderOpen, ImagePlus, Lock, Plus, Printer, RotateCcw, Trash2, X } from "lucide-react";
 import { coaBuilderCopy as t, coaTests, materialTypes, optionTests, pharmacopoeias, publicSpecs, type CoaMaterialType, type Pharmacopoeia } from "@/content/coa-builder";
+import { coaCheckCopy } from "@/content/coa-check";
 import type { Locale } from "@/i18n/config";
 import { isolateText } from "@/lib/bidi";
 import { buildRows, coaDocument, conclusion, conformity, emptyDetails, type CoaOptions, type CoaRow, type CoaState, type Route } from "@/lib/coa-doc";
@@ -13,6 +14,7 @@ import { buildDocx } from "@/lib/docx";
 import { documentHtml } from "@/lib/form-doc";
 import { q3cSolvents } from "@/lib/ich-limits";
 import { importMonograph, type ImportedRow } from "@/lib/monograph-import";
+import { CoaCheck } from "./coa-check";
 
 /** A material of the site's databases: name, CAS, formula, MW and its group (excipients are "exc"). */
 export type CoaMaterial = { n: string; c?: string; f?: string; w?: string; g: string };
@@ -53,7 +55,40 @@ const noSubscribe = () => () => {};
 export function CoaBuilder(props: { locale: Locale; materials: CoaMaterial[]; allowed: boolean; signedIn: boolean; buyHref: string }) {
   // Drafts live in this browser's storage, so the builder renders in the browser only.
   const mounted = useSyncExternalStore(noSubscribe, () => true, () => false);
-  return mounted ? <Builder {...props} /> : <div className="min-h-[60vh]" aria-busy="true" />;
+  return mounted ? <Tabs {...props} /> : <div className="min-h-[60vh]" aria-busy="true" />;
+}
+
+/** "Build a certificate" and "Check a supplier's certificate"; ?mode=check opens the second. */
+function Tabs(props: { locale: Locale; materials: CoaMaterial[]; allowed: boolean; signedIn: boolean; buyHref: string }) {
+  const [mode, setMode] = useState<"build" | "check">(() => (new URLSearchParams(window.location.search).get("mode") === "check" ? "check" : "build"));
+  const choose = (m: "build" | "check") => {
+    setMode(m);
+    const url = new URL(window.location.href);
+    if (m === "check") url.searchParams.set("mode", "check");
+    else url.searchParams.delete("mode");
+    window.history.replaceState(null, "", url);
+  };
+  const tab = (m: "build" | "check", label: { en: string; fa: string }, icon: React.ReactNode) => (
+    <button
+      type="button"
+      role="tab"
+      aria-selected={mode === m}
+      onClick={() => choose(m)}
+      className={`inline-flex flex-1 items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm font-bold transition sm:flex-none ${mode === m ? "bg-vault-900 text-capsule-400" : "text-vault-900 hover:bg-vault-50"}`}
+    >
+      {icon}
+      {label[props.locale]}
+    </button>
+  );
+  return (
+    <div className="space-y-6">
+      <div role="tablist" className="flex gap-1 rounded-full border border-line bg-white p-1">
+        {tab("build", coaCheckCopy.tabBuild, <FilePlus2 className="size-4" aria-hidden="true" />)}
+        {tab("check", coaCheckCopy.tabCheck, <FileSearch className="size-4" aria-hidden="true" />)}
+      </div>
+      {mode === "build" ? <Builder {...props} /> : <CoaCheck locale={props.locale} allowed={props.allowed} signedIn={props.signedIn} buyHref={props.buyHref} />}
+    </div>
+  );
 }
 
 function Section({ n, title, children, tone = "plain" }: { n?: number; title: string; children: React.ReactNode; tone?: "plain" | "accent" }) {

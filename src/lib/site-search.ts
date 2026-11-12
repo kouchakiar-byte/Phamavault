@@ -223,7 +223,7 @@ function buildStatic(): Entry[] {
       title: coaBuilderCopy.title,
       sub: coaBuilderCopy.lead,
       path: "coa-builder",
-      extra: keys("برگه آنالیز گواهی آنالیز CoA COA certificate of analysis specification اسپک مشخصات طراحی برگه آنالیز", coaBuilderCopy.lead.en, coaBuilderCopy.lead.fa),
+      extra: keys("برگه آنالیز گواهی آنالیز CoA COA certificate of analysis specification اسپک مشخصات طراحی برگه آنالیز بررسی برگه آنالیز تأمین‌کننده مقایسه با فارماکوپه supplier CoA check review compare", coaBuilderCopy.lead.en, coaBuilderCopy.lead.fa),
     }),
   );
   out.push(
