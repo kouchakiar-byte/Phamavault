@@ -143,13 +143,13 @@ export function parseSpec(spec: string): { min?: number; max?: number } | null {
   if (!n.length) return null;
   if (/^(≤|<=|<|NMT|not more than|max)/i.test(s) || /^حداکثر/.test(s)) return { max: n[0] };
   if (/^(≥|>=|>|NLT|not less than|min)/i.test(s) || /^حداقل/.test(s)) return { min: n[0] };
-  // "98.0%–102.0%", "4.5 to 6.0", "-10° to -13°", "between 5.0 and 7.0".
-  if (n.length >= 2 && /\d[^\d\s]{0,3}\s*(?:[–—-]|to|and|تا)\s*[+–-]?\s*\d/i.test(s)) return { min: Math.min(n[0], n[1]), max: Math.max(n[0], n[1]) };
+  // "98.0%–102.0%", "98.0 % - 102.0 %", "4.5 to 6.0", "-10° to -13°", "between 5.0 and 7.0".
+  if (n.length >= 2 && /\d\s?[^\d\s]{0,3}\s*(?:[–—-]|to|and|تا)\s*[+–-]?\s*\d/i.test(s)) return { min: Math.min(n[0], n[1]), max: Math.max(n[0], n[1]) };
   return null;
 }
 
 /** The conformity of a row: set by hand, or worked out from a numeric result and specification. */
-const PASS = /^\s*(conforms?|complies|meets the requirements?|passes|positive|sterile|clear|منطبق)\b/i;
+const PASS = /^\s*(conforms?|complies|meets the requirements?|passes|positive|sterile|clear|absent|not detected|منطبق)\b/i;
 const FAIL = /^\s*(does not (conform|comply)|fails?|not complies|نامنطبق)\b/i;
 
 export function conformity(row: CoaRow): "ok" | "fail" | null {
@@ -157,6 +157,8 @@ export function conformity(row: CoaRow): "ok" | "fail" | null {
   // Descriptive tests (identification, appearance, sterility): a stated verdict, or the result worded as the specification.
   if (row.result.trim() && !/\d/.test(row.spec)) {
     if (FAIL.test(row.result)) return "fail";
+    // Specified micro-organisms: "Absent" is required, so "Present" / "Detected" fails (but "present" passes an identification).
+    if (/\b(absent|not detected)\b/i.test(row.spec) && /^\s*(present|detected)\b/i.test(row.result)) return "fail";
     if (PASS.test(row.result) || row.result.trim().toLowerCase() === row.spec.trim().toLowerCase()) return "ok";
     return null;
   }

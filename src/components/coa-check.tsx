@@ -323,19 +323,20 @@ function reportDocument(report: CheckReport, m: { locale: Locale; material: stri
   blocks.push({
     kind: "table",
     columns: ["#", L(t.colTest), L(t.colSpec), L(t.colResult), L(t.reference), L(t.findings)],
+    // test names, limits and results are English: isolated, so a right-to-left table keeps their order
     rows: report.rows.map((r, i) => [
       String(i + 1),
-      r.row.name,
-      r.row.spec,
-      r.row.result,
-      r.ref?.spec ?? L(t.none),
+      iso(r.row.name),
+      iso(r.row.spec),
+      iso(r.row.result),
+      r.ref ? iso(r.ref.spec) : L(t.none),
       r.findings.map((f) => `${mark[f.level]} ${iso(L(f.text))}`).join("\n") || mark[worst(r)],
     ]),
-    widths: [0.35, 1.6, 1.3, 1.1, 1.2, 3.2],
+    widths: [0.45, 1.6, 1.3, 1.1, 1.2, 3.1],
   });
   if (report.missing.length) {
     blocks.push({ kind: "heading", text: L(t.missingTitle) });
-    blocks.push({ kind: "para", text: report.missing.map((r) => `• ${r.name}: ${r.spec}`).join("\n") });
+    blocks.push({ kind: "para", text: report.missing.map((r) => `• ${iso(`${r.name}: ${r.spec}`)}`).join("\n") });
     blocks.push({ kind: "para", text: iso(L(t.missingNote)) });
   }
   blocks.push({ kind: "heading", text: L(t.docTitle) });

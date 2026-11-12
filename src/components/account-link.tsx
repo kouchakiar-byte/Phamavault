@@ -23,10 +23,18 @@ function View({ locale, variant, signedIn }: { locale: Locale; variant: Variant;
     <Link href={href(locale, signedIn ? "account" : "account/login")} className={styles[variant]}>
       <Icon className="size-4 shrink-0" aria-hidden="true" />
       {variant === "header" ? (
-        <>
-          <span className="min-[380px]:hidden">{short}</span>
-          <span className="hidden min-[380px]:inline">{label}</span>
-        </>
+        // The English "Sign in / Sign up" is wider than the Persian label: it needs a wider screen before it fits beside the menu.
+        locale === "en" ? (
+          <>
+            <span className="min-[440px]:hidden">{short}</span>
+            <span className="hidden min-[440px]:inline">{label}</span>
+          </>
+        ) : (
+          <>
+            <span className="min-[380px]:hidden">{short}</span>
+            <span className="hidden min-[380px]:inline">{label}</span>
+          </>
+        )
       ) : (
         label
       )}
