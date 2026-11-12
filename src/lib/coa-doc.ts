@@ -125,7 +125,7 @@ export function buildRows(s: Omit<CoaState, "rows" | "details" | "remarks" | "si
 const SUP: Record<string, string> = { "⁰": "0", "¹": "1", "²": "2", "³": "3", "⁴": "4", "⁵": "5", "⁶": "6", "⁷": "7", "⁸": "8", "⁹": "9" };
 
 /** The numbers in a text, reading Persian digits, thousands separators and powers of ten ("10³", "10^3"). */
-const toNum = (s: string) => {
+export const toNum = (s: string) => {
   const latin = s
     .replace(/[۰-۹]/g, (d) => String(d.charCodeAt(0) - 0x06f0))
     .replace(/٫/g, ".")
