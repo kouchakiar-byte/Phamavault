@@ -226,6 +226,47 @@ create table if not exists supplier_alerts (
 );
 create index if not exists supplier_alerts_open_idx on supplier_alerts(found_at) where found_at is null;
 -- CoA builder: each user's saved specifications (tests and acceptance criteria per material).
+create table if not exists rnd_projects (
+  id text primary key,
+  data jsonb not null,
+  version int not null default 1,
+  created_by bigint references users(id) on delete set null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  deleted_at timestamptz
+);
+create table if not exists rnd_members (
+  id bigserial primary key,
+  user_id bigint not null unique references users(id) on delete cascade,
+  unit text not null,
+  role text not null default 'member',
+  title text not null default '',
+  added_by bigint references users(id) on delete set null,
+  created_at timestamptz not null default now(),
+  revoked_at timestamptz
+);
+create table if not exists rnd_invites (
+  id bigserial primary key,
+  token_hash text not null unique,
+  unit text not null,
+  role text not null default 'member',
+  label text not null default '',
+  created_by bigint references users(id) on delete set null,
+  created_at timestamptz not null default now(),
+  expires_at timestamptz not null,
+  used_by bigint references users(id) on delete set null,
+  used_at timestamptz,
+  revoked_at timestamptz
+);
+create table if not exists rnd_audit (
+  id bigserial primary key,
+  project_id text not null,
+  user_id bigint references users(id) on delete set null,
+  unit text not null default '',
+  action text not null,
+  at timestamptz not null default now()
+);
+create index if not exists rnd_audit_project on rnd_audit (project_id, at desc);
 create table if not exists coa_specs (
   id bigserial primary key,
   user_id bigint not null references users(id) on delete cascade,

@@ -9,6 +9,7 @@ import { referenceLabels } from "@/content/references";
 import { getLocale } from "@/i18n/locale";
 import { href } from "@/lib/paths";
 import { AccountLink } from "./account-link";
+import { RndBell } from "./rnd/bell";
 import { LanguageSwitcher } from "./language-switcher";
 import { HoverMenu } from "./hover-menu";
 import { Logo } from "./logo";
@@ -40,7 +41,7 @@ export async function SiteHeader() {
           >
             {nav.home[locale]}
           </Link>
-          <div className="lg:hidden">
+          <div className="account-link-narrow lg:hidden">
             <AccountLink locale={locale} variant="header" />
           </div>
         </div>
@@ -147,6 +148,7 @@ export async function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
+          <RndBell locale={locale} />
           <SiteSearch locale={locale} />
           <div className="hidden sm:block">
             <LanguageSwitcher current={locale} label={nav.language[locale]} />
