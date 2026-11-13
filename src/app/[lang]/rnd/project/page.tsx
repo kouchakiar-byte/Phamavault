@@ -20,7 +20,8 @@ async function Project({ locale, searchParams }: { locale: Locale; searchParams:
   if (!p) notFound();
   return (
     <RndFrame locale={locale} access={access} alerts={urgent} active="project">
-      <ProjectView key={p.id} initial={filterProject(p, access)} viewer={{ role: access.role, unit: access.unit, name: access.user.name }} homeHref={rndHref(locale)} />
+      <ProjectView key={p.id} initial={filterProject(p, access)} viewer={{ role: access.role, unit: access.unit, name: access.user.name }} homeHref={rndHref(locale)}
+        reportHref={access.role === "member" ? undefined : `${rndHref(locale, "report")}?id=${p.id}`} />
     </RndFrame>
   );
 }

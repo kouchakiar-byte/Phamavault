@@ -8,7 +8,7 @@ import { NewProject } from "@/components/rnd/new-project";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
 import { requireAccess } from "@/lib/rnd/guard";
-import { HEALTH, P_STATUS, P_TYPE, PRIO, UNITS, alertsOf, curStage, daysTo, health, isOpen, progress, riskScore, spent, sv, type Health, type Project } from "@/lib/rnd/model";
+import { HEALTH, P_STATUS, P_TYPE, PRIO, T, UNITS, alertsOf, curStage, daysTo, health, isOpen, progress, riskScore, spent, sv, type Health, type Project } from "@/lib/rnd/model";
 import { filterProject, loadProjects, type Access } from "@/lib/rnd/server";
 
 // A neutral title: the tab and the 404 shown to anyone without access do not say what is here.
@@ -68,7 +68,7 @@ function Owner({ locale, ps, access }: { locale: Locale; ps: Project[]; access: 
               <li key={i}>
                 <Link href={go(a.project)} className={`flex gap-3 rounded-md border px-3 py-2 text-sm hover:border-molecule-500 ${a.d < 0 ? "border-red-200 bg-red-50" : a.d <= 3 ? "border-amber-200 bg-amber-50" : "border-line"}`}>
                   <span className={`w-20 shrink-0 text-xs font-bold ${a.d < 0 ? "text-red-700" : a.d <= 3 ? "text-amber-700" : "text-muted"}`}>{when(a.d)}<span className="block font-normal">{fmt(a.due)}</span></span>
-                  <span className="min-w-0"><b>{a.projectName}</b> <span className={`${pill} bg-vault-50 text-vault-800`}>{UNITS[a.unit]}</span><span className="block text-xs text-muted">{a.text}</span></span>
+                  <span className="min-w-0"><b>{T(a.projectName)}</b> <span className={`${pill} bg-vault-50 text-vault-800`}>{UNITS[a.unit]}</span><span className="block text-xs text-muted">{a.text}</span></span>
                 </Link>
               </li>
             ))}
@@ -96,7 +96,7 @@ function Owner({ locale, ps, access }: { locale: Locale; ps: Project[]; access: 
           <h2 className="mb-3 text-base font-bold text-vault-900">پروژه‌ها به تفکیک مسئول</h2>
           <div className="flex flex-col gap-2 text-xs">
             {Object.entries(leads).sort((a, b) => b[1] - a[1]).map(([k, v]) => (
-              <div key={k} className="grid grid-cols-[minmax(0,8rem)_1fr_1.5rem] items-center gap-2"><span className="truncate">{k}</span><Bar value={(100 * v) / lmx} tone={C.gold} /><span className="font-mono">{v}</span></div>
+              <div key={k} className="grid grid-cols-[minmax(0,8rem)_1fr_1.5rem] items-center gap-2"><span className="truncate">{T(k)}</span><Bar value={(100 * v) / lmx} tone={C.gold} /><span className="font-mono">{v}</span></div>
             ))}
             {!open.length && <p className="text-muted">—</p>}
           </div>
@@ -120,10 +120,10 @@ function Owner({ locale, ps, access }: { locale: Locale; ps: Project[]; access: 
                 return (
                   <tr key={p.id} className={`border-b border-line hover:bg-molecule-50/40 ${isOpen(p) ? "" : "opacity-60"}`}>
                     <td className="px-2 py-2"><span className={`${pill} ${HEALTH[h].tone}`}><i className="size-2 rounded-full" style={{ background: HEALTH[h].color }} />{HEALTH[h].label}</span></td>
-                    <td className="px-2 py-2"><Link href={go(p.id)} className="font-bold text-vault-900 hover:text-molecule-700">{p.name}</Link><div className="text-xs text-muted">{P_TYPE[p.type]}{p.form ? ` · ${p.form}` : ""}{p.lead ? ` · ${p.lead}` : ""}{isOpen(p) ? "" : ` · ${P_STATUS[p.status]}`}</div></td>
+                    <td className="px-2 py-2"><Link href={go(p.id)} className="font-bold text-vault-900 hover:text-molecule-700">{T(p.name)}</Link><div className="text-xs text-muted">{P_TYPE[p.type]}{p.form ? ` · ${p.form}` : ""}{p.lead ? ` · ${p.lead}` : ""}{isOpen(p) ? "" : ` · ${P_STATUS[p.status]}`}</div></td>
                     <td className="px-2 py-2 font-mono text-xs" dir="ltr">{p.code || "—"}</td>
                     <td className="px-2 py-2"><span className={`${pill} ${p.priority === "high" ? "bg-red-50 text-red-700" : p.priority === "low" ? "bg-vault-50 text-muted" : "bg-amber-50 text-amber-700"}`}>{PRIO[p.priority]}</span></td>
-                    <td className="px-2 py-2 text-xs">{nx ? `${ci + 1}. ${nx.title}` : "همه مراحل"}</td>
+                    <td className="px-2 py-2 text-xs">{nx ? `${ci + 1}. ${T(nx.title)}` : "همه مراحل"}</td>
                     <td className="w-28 px-2 py-2"><Bar value={progress(p)} tone={h === "late" ? C.bad : h === "risk" ? C.warn : undefined} /><span className="font-mono text-xs">{progress(p)}%</span></td>
                     <td className={`px-2 py-2 font-mono text-xs font-bold ${v < -15 ? "text-red-700" : v < -5 ? "text-amber-700" : "text-emerald-700"}`} dir="ltr" style={{ textAlign: "right" }}>{v > 0 ? "+" : ""}{v}%</td>
                     <td className="px-2 py-2 text-xs">{nx ? <>{fmt(nx.due)}{daysTo(nx.due) < 0 && <span className={`${pill} mr-1 bg-red-50 text-red-700`}>{-daysTo(nx.due)} روز</span>}</> : "—"}</td>
@@ -157,11 +157,11 @@ function Member({ locale, ps, access }: { locale: Locale; ps: Project[]; access:
         {rows.map(({ p, total, done, over, next }) => (
           <Link key={p.id} href={go(p.id)} className={`${card} flex flex-col gap-3 transition hover:border-molecule-500`}>
             <div className="flex items-start justify-between gap-2">
-              <div><div className="font-bold text-vault-900">{p.name}</div><div className="text-xs text-muted">{p.code && <span dir="ltr">{p.code} · </span>}مسئول: {p.lead || "—"} · هدف: {fmt(p.target)}</div></div>
+              <div><div className="font-bold text-vault-900">{T(p.name)}</div><div className="text-xs text-muted">{p.code && <span dir="ltr">{p.code} · </span>}مسئول: {p.lead || "—"} · هدف: {fmt(p.target)}</div></div>
               <span className={`${pill} ${p.priority === "high" ? "bg-red-50 text-red-700" : "bg-vault-50 text-muted"}`}>{PRIO[p.priority]}</span>
             </div>
             <div><div className="mb-1 flex justify-between text-xs text-muted"><span>وظایف واحد شما</span><span className="font-mono">{done} / {total}</span></div><Bar value={total ? (100 * done) / total : 0} tone={over ? C.bad : undefined} /></div>
-            <div className="text-xs">{over ? <span className="font-bold text-red-700">{over} کار عقب‌افتاده</span> : next ? <span className="text-muted">کار بعدی: {next.it.t} — {fmt(next.due)} ({when(daysTo(next.due))})</span> : <span className="text-emerald-700">کار بازی نمانده است.</span>}</div>
+            <div className="text-xs">{over ? <span className="font-bold text-red-700">{over} کار عقب‌افتاده</span> : next ? <span className="text-muted">کار بعدی: {T(next.it.t)} — {fmt(next.due)} ({when(daysTo(next.due))})</span> : <span className="text-emerald-700">کار بازی نمانده است.</span>}</div>
           </Link>
         ))}
       </div>
