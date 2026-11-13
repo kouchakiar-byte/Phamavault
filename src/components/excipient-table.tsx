@@ -18,14 +18,44 @@ import { Chip } from "./ui";
 type Props = { locale: Locale; data: typeof ExcipientData };
 type Item = (typeof ExcipientData)["items"][number];
 
-/** Where to read the full monograph and check the data, for one excipient. */
+/** A CAS Registry Number (the check digit is not verified here). */
+const isCas = (cas: string) => /^\d{2,7}-\d{2}-\d$/.test(cas);
+
+/**
+ * The page of the FDA Inactive Ingredient Database that lists names starting with this letter, opened
+ * at the material itself: the text fragment (#:~:text=) makes the browser scroll to the first row with
+ * the name and highlight it. The second fragment, the first word alone, catches names the FDA writes
+ * differently ("ACETIC ACID" for "Acetic acid, glacial"); a browser without text fragments still
+ * opens the right letter.
+ */
+export function iidUrl(name: string): string {
+  const first = name.trim().charAt(0).toUpperCase();
+  const letter = /[A-Z]/.test(first) ? first : "0-9";
+  const fragment = (t: string) => encodeURIComponent(t).replace(/-/g, "%2D");
+  const word = name.trim().split(/[\s,(]+/)[0];
+  const texts = [name.trim(), ...(word && word.length >= 4 && word.toLowerCase() !== name.trim().toLowerCase() ? [word] : [])];
+  return `https://www.accessdata.fda.gov/scripts/cder/iig/index.cfm?event=browseByLetter.page&Letter=${letter}#:~:${texts.map((t) => `text=${fragment(t)}`).join("&")}`;
+}
+
+/** Where to read the full monograph and check the data, for one excipient: each link opens on this material. */
 function sources(r: Item) {
   const t = pages.excipients.detail;
   return [
     {
       label: "Pharmaceutical Excipients (MedicinesComplete)",
-      url: "https://www.medicinescomplete.com/",
+      // The online Handbook's own search, limited to the Pharmaceutical Excipients publication.
+      url: `https://www.medicinescomplete.com/#/search/excipients/${encodeURIComponent(r.name)}`,
       note: t.monograph,
+    },
+    {
+      label: "PubChem",
+      url: `https://pubchem.ncbi.nlm.nih.gov/#query=${encodeURIComponent(isCas(r.cas) ? r.cas : r.name)}`,
+      note: t.pubchem,
+    },
+    {
+      label: "FDA Inactive Ingredient Database",
+      url: iidUrl(r.name),
+      note: t.iid,
     },
     {
       label: "Handbook of Pharmaceutical Excipients, 9th ed. (2020)",
@@ -36,16 +66,6 @@ function sources(r: Item) {
       label: "WorldCat · ISBN 978-0-85711-375-7",
       url: "https://search.worldcat.org/search?q=bn%3A9780857113757",
       note: t.library,
-    },
-    {
-      label: "PubChem",
-      url: `https://pubchem.ncbi.nlm.nih.gov/#query=${encodeURIComponent(/^\d{2,7}-\d{2}-\d$/.test(r.cas) ? r.cas : r.name)}`,
-      note: t.pubchem,
-    },
-    {
-      label: "FDA Inactive Ingredient Database",
-      url: "https://www.accessdata.fda.gov/scripts/cder/iig/",
-      note: t.iid,
     },
   ];
 }
@@ -210,7 +230,7 @@ export function ExcipientTable({ locale, data }: Props) {
         unit={c.records[locale]}
       />
       <TableWrap>
-        <table className="db">
+        <table className="db db-tight">
           <thead>
             <tr>
               <th>{c.name[locale]}</th>
@@ -218,14 +238,13 @@ export function ExcipientTable({ locale, data }: Props) {
               <th>{t.fn[locale]}</th>
               <th>{t.useLevel[locale]}</th>
               <th>{t.form[locale]}</th>
-              <th>{excipientSheet.column[locale]}</th>
-              <th>{t.detail.read[locale]}</th>
+              <th>{excipientSheet.actions[locale]}</th>
             </tr>
           </thead>
           <tbody>
             {rows.length === 0 && (
               <tr>
-                <td colSpan={7}>{c.noMatch[locale]}</td>
+                <td colSpan={6}>{c.noMatch[locale]}</td>
               </tr>
             )}
             {rows.map((r) => {
@@ -234,7 +253,7 @@ export function ExcipientTable({ locale, data }: Props) {
               return (
                 <Fragment key={id}>
                   <tr>
-                    <td>
+                    <td className="max-w-[13rem]">
                       <button
                         type="button"
                         onClick={() => setOpen(isOpen ? null : id)}
@@ -252,44 +271,46 @@ export function ExcipientTable({ locale, data }: Props) {
                       </small>
                     </td>
                     <td className="num text-[0.8rem]">{blank(r.cas)}</td>
-                    <td>
+                    {/* Long category names wrap inside their chip rather than widening the whole table. */}
+                    <td className="min-w-[10rem] max-w-[13rem] [&>span]:whitespace-normal">
                       {r.functions.map((k) => (
                         <Chip key={k}>{data.functions[k]?.[locale] ?? k}</Chip>
                       ))}
                     </td>
-                    <td className="text-center text-xs leading-relaxed text-ink" dir="ltr" style={{ minWidth: "9rem" }}>
+                    <td className="text-center text-xs leading-relaxed text-ink" dir="ltr" style={{ minWidth: "7.5rem" }}>
                       {blank(r.useLevel)}
                     </td>
-                    <td>
+                    <td className="max-w-[12rem] [&>span]:whitespace-normal">
                       {r.forms.map((k) => (
                         <Chip key={k}>{data.forms[k]?.[locale] ?? k}</Chip>
                       ))}
                     </td>
                     <td>
+                      {/* Both actions in one column, one above the other, so the table fits the page. */}
+                      <div className="flex flex-col items-stretch gap-1.5">
                       <Link
                         href={href(locale, `excipients/${excipientSlug(r.name)}`)}
-                        className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-vault-900 px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-vault-800"
+                        className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-vault-900 px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-vault-800"
                       >
                         <FileText className="size-3.5 text-capsule-400" aria-hidden="true" />
                         {excipientSheet.cell[locale]}
                       </Link>
-                    </td>
-                    <td>
                       <button
                         type="button"
                         onClick={() => setSrcOpen(srcOpen === id ? null : id)}
                         aria-expanded={srcOpen === id}
-                        className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-molecule-500/60 bg-molecule-50 px-3 py-1.5 text-xs font-semibold text-molecule-700 transition hover:bg-molecule-100"
+                        className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full border border-molecule-500/60 bg-molecule-50 px-3 py-1.5 text-xs font-semibold text-molecule-700 transition hover:bg-molecule-100"
                       >
                         <ExternalLink className="size-3.5" aria-hidden="true" />
                         {excipientSheet.sourcesCell[locale]}
                         <ChevronDown className={`size-3.5 transition ${srcOpen === id ? "rotate-180" : ""}`} aria-hidden="true" />
                       </button>
+                      </div>
                     </td>
                   </tr>
                   {srcOpen === id && !isOpen && (
                     <tr>
-                      <td colSpan={7} className="bg-vault-50 p-4">
+                      <td colSpan={6} className="bg-vault-50 p-4">
                         <p className="text-sm font-bold text-vault-900">
                           <bdi>{r.name}</bdi> — {t.detail.read[locale]}
                         </p>
@@ -299,7 +320,7 @@ export function ExcipientTable({ locale, data }: Props) {
                   )}
                   {isOpen && (
                     <tr>
-                      <td colSpan={7} className="bg-vault-50">
+                      <td colSpan={6} className="bg-vault-50">
                         <Detail r={r} data={data} locale={locale} />
                       </td>
                     </tr>
