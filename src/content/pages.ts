@@ -144,16 +144,16 @@ export const pages = {
       synonyms: bi("Synonyms", "مترادف‌ها"),
       read: bi("Full monograph and data", "مونوگراف کامل و داده‌ها"),
       monograph: bi(
-        "The current, online edition of the Handbook of Pharmaceutical Excipients — search “{name}” (subscription)",
-        "نسخه آنلاین و جاری Handbook of Pharmaceutical Excipients — «\u2066{name}\u2069» را جستجو کنید (با اشتراک)",
+        "The current, online edition of the Handbook of Pharmaceutical Excipients — opens its search for “{name}” (subscription)",
+        "نسخه آنلاین و جاری Handbook of Pharmaceutical Excipients — جست‌وجوی «\u2066{name}\u2069» را باز می‌کند (با اشتراک)",
       ),
       print: bi(
-        "Latest printed edition (Pharmaceutical Press, 2020; hardback and eBook) — look up “{name}” in the monograph index",
-        "آخرین ویرایش چاپی (Pharmaceutical Press، 2020؛ نسخه چاپی و الکترونیک) — «\u2066{name}\u2069» را در فهرست مونوگراف‌ها مشاهده کنید",
+        "The printed book (Pharmaceutical Press, 2020; hardback and eBook): the publisher's page, not an entry — look up “{name}” in its monograph index",
+        "کتاب چاپی (Pharmaceutical Press، 2020؛ نسخه چاپی و الکترونیک): صفحه ناشر است، نه مونوگراف ماده — «\u2066{name}\u2069» را در فهرست مونوگراف‌های کتاب ببینید",
       ),
-      library: bi("Find a library near you that holds the printed 9th edition (free)", "کتابخانه‌هایی که نسخه چاپی ویرایش نهم را دارند (رایگان)"),
-      pubchem: bi("Structure, identifiers, properties and safety (free)", "ساختار، شناسه‌ها، ویژگی‌ها و ایمنی (رایگان)"),
-      iid: bi("Maximum amounts in FDA-approved products, by route and dosage form — search “{name}” (free)", "حداکثر مقدار در فرآورده‌های تأییدشده FDA بر اساس راه مصرف و شکل دارویی — «\u2066{name}\u2069» را جستجو کنید (رایگان)"),
+      library: bi("Find a library near you that holds the printed 9th edition: a list of libraries, not an entry (free)", "کتابخانه‌هایی که نسخه چاپی ویرایش نهم را دارند: فهرست کتابخانه‌هاست، نه مونوگراف ماده (رایگان)"),
+      pubchem: bi("Opens the record of “{name}”: structure, identifiers, properties and safety (free)", "رکورد «\u2066{name}\u2069» را باز می‌کند: ساختار، شناسه‌ها، ویژگی‌ها و ایمنی (رایگان)"),
+      iid: bi("Maximum amounts in FDA-approved products, by route and dosage form — opens at the rows of “{name}”, highlighted (free)", "حداکثر مقدار در فرآورده‌های تأییدشده FDA بر اساس راه مصرف و شکل دارویی — مستقیم روی ردیف‌های «\u2066{name}\u2069» باز و پررنگ می‌شود (رایگان)"),
     },
     clickHint: bi("Click an excipient's name for its details, its PharmaVault data sheet and the full monograph.", "روی نام هر ماده جانبی بزنید تا جزئیات، برگه اطلاعات PharmaVault و لینک مونوگراف کامل آن باز شود."),
     note: bi(
