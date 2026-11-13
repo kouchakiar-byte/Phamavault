@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { rndApply, rndAudit, rndDelete, rndGet, type AuditRow } from "@/lib/rnd/actions";
 import {
-  EV_KIND, GATE, HEALTH, LISTS, P_STATUS, P_TYPE, PRIO, STABILITY_UNIT, STAB_TPL, UNITS, MEMBER_UNITS,
+  EV_KIND, GATE, HEALTH, LISTS, P_STATUS, P_TYPE, PRIO, STABILITY_UNIT, STAB_TPL, T, UNITS, MEMBER_UNITS,
   addMonths, nowMs, alertsOf, curStage, daysTo, health, ms, plannedAt, progress, riskScore, spent, stagePct, stageStart, sv, today,
   type Item, type ListKey, type Project, type Role, type Row, type Stage, type Study, type Unit,
 } from "@/lib/rnd/model";
@@ -93,7 +93,7 @@ function csv(p: Project, key: ListKey) {
 
 type Tab = "overview" | "stages" | ListKey | "stability" | "budget" | "log";
 
-export function ProjectView({ initial, viewer, homeHref }: { initial: Project; viewer: Viewer; homeHref: string }) {
+export function ProjectView({ initial, viewer, homeHref, reportHref }: { initial: Project; viewer: Viewer; homeHref: string; reportHref?: string }) {
   const [p, setP] = useState(initial);
   const [tab, setTab] = useState<Tab>("overview");
   const [busy, setBusy] = useState(false);
@@ -153,7 +153,10 @@ export function ProjectView({ initial, viewer, homeHref }: { initial: Project; v
   return (
     <div ref={root} className="flex flex-col gap-4">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <a href={homeHref} className={btn}>→ همه پروژه‌ها</a>
+        <span className="flex flex-wrap gap-2">
+          <a href={homeHref} className={btn}>→ همه پروژه‌ها</a>
+          {reportHref && <a href={reportHref} className={btn}>گزارش وضعیت (چاپ یا PDF)</a>}
+        </span>
         <span className="text-xs text-muted" aria-live="polite">{busy ? "در حال ذخیره…" : err ? "" : saved ? "ذخیره شد" : ""}</span>
       </div>
       {err && <p role="alert" className="rounded-card bg-red-50 px-4 py-3 text-sm text-red-700">{err}</p>}
@@ -161,12 +164,12 @@ export function ProjectView({ initial, viewer, homeHref }: { initial: Project; v
       <section className={`${panel} flex flex-wrap items-center justify-between gap-4`}>
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
-            <h1 className="text-xl font-extrabold text-vault-900 sm:text-2xl">{p.name}</h1>
+            <h1 className="text-xl font-extrabold text-vault-900 sm:text-2xl">{T(p.name)}</h1>
             <span className={`${pill} ${HEALTH[h].tone}`}><i className="size-2 rounded-full" style={{ background: HEALTH[h].color }} />{HEALTH[h].label}</span>
             {member && viewer.unit && <span className={`${pill} bg-molecule-50 text-molecule-700`}>نمای واحد {UNITS[viewer.unit]}</span>}
           </div>
           <p className="mt-1 text-sm text-muted">
-            {p.code && <span className="font-mono" dir="ltr">{p.code}</span>}{p.code && " · "}{P_TYPE[p.type]} · اولویت {PRIO[p.priority]} · مسئول: {p.lead || "—"} · {fmt(p.start)} تا {fmt(p.target)}
+            {p.code && <span className="font-mono" dir="ltr">{p.code}</span>}{p.code && " · "}{P_TYPE[p.type]} · اولویت {PRIO[p.priority]} · مسئول: {p.lead ? T(p.lead) : "—"} · {fmt(p.start)} تا {fmt(p.target)}
           </p>
           <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
             {member ? (
@@ -233,8 +236,8 @@ function TaskLine({ it, s, ctx, compact }: { it: Item; s: Stage; ctx: Ctx; compa
       <input type="checkbox" className="mt-1 size-4 shrink-0 accent-molecule-600" checked={it.done} disabled={!ctx.mine(it.unit)} aria-label="انجام شد"
         onChange={(e) => ctx.send([{ op: "item", stage: s.key, item: it.id, done: e.target.checked }])} />
       <span className="min-w-0 flex-1 text-sm">
-        <span className={it.done ? "text-muted line-through" : ""}>{it.t}</span>
-        <span className="block text-xs text-muted">{compact ? `${s.title} · ` : ""}{UNITS[it.unit]}{it.owner ? ` · ${it.owner}` : ""}</span>
+        <span className={it.done ? "text-muted line-through" : ""}>{T(it.t)}</span>
+        <span className="block text-xs text-muted">{compact ? `${T(s.title)} · ` : ""}{UNITS[it.unit]}{it.owner ? ` · ${T(it.owner)}` : ""}</span>
       </span>
       <span className={`shrink-0 text-xs ${over ? "font-bold text-red-700" : "text-muted"}`}>{it.done ? fmt(it.doneAt) : over ? when(d) : fmt(due)}</span>
     </li>
@@ -247,7 +250,7 @@ function Overview({ p, viewer, mine, send, setTab, homeHref }: Ctx & { setTab: (
   const tasks = p.stages.flatMap((s) => s.items.filter((i) => !i.done).map((it) => ({ it, s, due: it.due || s.due })));
   const over = tasks.filter((t) => daysTo(t.due) < 0).sort((a, b) => ms(a.due) - ms(b.due));
   const next = tasks.filter((t) => !(daysTo(t.due) < 0)).sort((a, b) => ms(a.due) - ms(b.due)).slice(0, 8);
-  const others = alertsOf(p, member && viewer.unit ? [viewer.unit] : null, 45).filter((a) => !tasks.some((t) => a.text.startsWith(t.it.t)));
+  const others = alertsOf(p, member && viewer.unit ? [viewer.unit] : null, 45).filter((a) => a.kind !== "task");
   const ci = curStage(p);
   const meta = (k: string, label: string, ltr = false, type = "text") => (
     <label className="block text-xs text-muted">{label}
@@ -262,7 +265,7 @@ function Overview({ p, viewer, mine, send, setTab, homeHref }: Ctx & { setTab: (
             <div className="flex flex-col gap-2">
               {p.stages.filter((s) => s.items.length).map((s) => (
                 <div key={s.key} className="grid grid-cols-[minmax(0,1fr)_40%_3rem] items-center gap-2 text-sm">
-                  <span className="truncate">{s.title}</span><Bar value={stagePct(s)} tone={stagePct(s) >= 100 ? C.ok : undefined} /><span className="font-mono text-xs">{Math.round(stagePct(s))}%</span>
+                  <span className="truncate">{T(s.title)}</span><Bar value={stagePct(s)} tone={stagePct(s) >= 100 ? C.ok : undefined} /><span className="font-mono text-xs">{Math.round(stagePct(s))}%</span>
                 </div>
               ))}
               {!p.stages.some((s) => s.items.length) && <p className="text-sm text-muted">در این پروژه هنوز وظیفه‌ای به واحد شما داده نشده است.</p>}
@@ -294,7 +297,7 @@ function Overview({ p, viewer, mine, send, setTab, homeHref }: Ctx & { setTab: (
               <button key={s.key} type="button" onClick={() => setTab("stages")}
                 className={`flex flex-col gap-1 rounded-lg border p-2 text-right text-xs transition hover:border-molecule-500 ${i === ci ? "border-molecule-500 bg-molecule-50" : late ? "border-red-300" : "border-line"}`}>
                 <span className="flex justify-between text-muted"><span>مرحله {i + 1}</span><span className="font-mono">{s.items.length ? `${sp}%` : "—"}</span></span>
-                <span className="line-clamp-2 min-h-8 font-semibold text-vault-900">{s.title}</span>
+                <span className="line-clamp-2 min-h-8 font-semibold text-vault-900">{T(s.title)}</span>
                 <Bar value={sp} tone={sp >= 100 ? C.ok : late ? C.bad : undefined} />
                 {g !== "pending" && <span className={`font-bold ${g === "go" ? "text-emerald-700" : g === "nogo" ? "text-red-700" : "text-amber-700"}`}>Gate: {g === "go" ? "Go" : g === "nogo" ? "No-go" : "Hold"}</span>}
               </button>
@@ -348,7 +351,7 @@ function Comments({ it, s, ctx }: { it: Item; s: Stage; ctx: Ctx }) {
   return (
     <div className="mt-2 rounded-md bg-paper p-2">
       {(it.comments ?? []).map((c, i) => (
-        <p key={i} className="mb-1.5 text-xs"><b>{c.name}</b> <span className="text-muted">({c.unit} · {fmt(new Date(c.at).toISOString().slice(0, 10))})</span>: {c.text}</p>
+        <p key={i} className="mb-1.5 text-xs"><b>{T(c.name)}</b> <span className="text-muted">({c.unit} · {fmt(new Date(c.at).toISOString().slice(0, 10))})</span>: {T(c.text)}</p>
       ))}
       {!(it.comments ?? []).length && <p className="mb-1.5 text-xs text-muted">یادداشتی ثبت نشده است.</p>}
       {can && (
@@ -379,7 +382,7 @@ function Stages({ p, viewer, mine, send }: Ctx) {
             <summary className="flex cursor-pointer list-none items-center gap-3 p-4">
               <span className={`grid size-8 shrink-0 place-items-center rounded-full font-mono text-sm font-bold ${sp >= 100 ? "bg-emerald-50 text-emerald-700" : "bg-vault-50 text-vault-900"}`}>{sp >= 100 ? "✓" : i + 1}</span>
               <span className="min-w-0 flex-1">
-                <span className="block font-bold text-vault-900">{s.title}</span>
+                <span className="block font-bold text-vault-900">{T(s.title)}</span>
                 <span className="text-xs text-muted">{s.items.filter((x) => x.done).length} از {s.items.length} کار · {fmt(stageStart(p, i))} تا {fmt(s.due)}{!member && <> · وزن <span className="font-mono">{s.w}</span></>}</span>
                 {late && <span className={`${pill} mr-2 bg-red-50 text-red-700`}>{-d} روز تأخیر</span>}
                 {g.decision !== "pending" && <span className={`${pill} mr-2 ${g.decision === "go" ? "bg-emerald-50 text-emerald-700" : g.decision === "nogo" ? "bg-red-50 text-red-700" : "bg-amber-50 text-amber-700"}`}>Gate: {GATE[g.decision].split(" — ")[0]}</span>}
@@ -395,7 +398,7 @@ function Stages({ p, viewer, mine, send }: Ctx) {
                       <div className="flex flex-wrap items-center gap-2">
                         <input type="checkbox" className="size-4 accent-molecule-600" checked={it.done} disabled={!can} aria-label="انجام شد" onChange={(e) => send([{ op: "item", stage: s.key, item: it.id, done: e.target.checked }])} />
                         <span className={`min-w-40 flex-1 text-sm ${it.done ? "text-muted line-through" : "text-ink"}`}>
-                          {owner ? <Cell value={it.t} label="شرح کار" onSave={(v) => send([{ op: "item", stage: s.key, item: it.id, t: v }])} className="border-transparent hover:border-line" /> : it.t}
+                          {owner ? <Cell value={it.t} label="شرح کار" onSave={(v) => send([{ op: "item", stage: s.key, item: it.id, t: v }])} className="border-transparent hover:border-line" /> : T(it.t)}
                           {it.doneAt && <span className="block text-xs text-muted">انجام: {fmt(it.doneAt)}</span>}
                         </span>
                         {owner ? (
@@ -406,7 +409,7 @@ function Stages({ p, viewer, mine, send }: Ctx) {
                           </>
                         ) : (
                           <span className="flex flex-wrap items-center gap-2 text-xs text-muted">
-                            {!member && <UnitTag u={it.unit} />}{it.owner && <span>{it.owner}</span>}
+                            {!member && <UnitTag u={it.unit} />}{it.owner && <span>{T(it.owner)}</span>}
                             <span className={od ? "font-bold text-red-700" : ""}>موعد: {fmt(due)}{od ? ` (${when(daysTo(due))})` : ""}</span>
                           </span>
                         )}
@@ -636,8 +639,8 @@ function Log({ p, viewer, send }: { p: Project; viewer: Viewer; send: (ops: Op[]
         <ul className="flex flex-col gap-2">
           {p.events.map((e) => (
             <li key={e.id} className={`border-r-4 pr-3 ${kindTone[e.kind] ?? "border-line"}`}>
-              <div className="text-xs text-muted">{fmt(e.date)} · {EV_KIND[e.kind]}{viewer.role !== "member" ? ` · ${UNITS[e.unit]}` : ""}{e.by ? ` · ${e.by}` : ""}</div>
-              <div className="text-sm">{e.text}</div>
+              <div className="text-xs text-muted">{fmt(e.date)} · {EV_KIND[e.kind]}{viewer.role !== "member" ? ` · ${UNITS[e.unit]}` : ""}{e.by ? ` · ${T(e.by)}` : ""}</div>
+              <div className="text-sm">{T(e.text)}</div>
             </li>
           ))}
           {!p.events.length && <li className="text-sm text-muted">رویدادی ثبت نشده است.</li>}

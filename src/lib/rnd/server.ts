@@ -69,6 +69,29 @@ export const alertsFor = cache(async (a: Access, days = 30): Promise<Alert[]> =>
   return all.sort((x, y) => x.d - y.d);
 });
 
+/** What each person with access did in the last `days` days, from the audit trail: for the manager's weekly summary. */
+export type Activity = { name: string; unit: string; role: string; actions: number; last: string | null };
+export async function activitySince(days: number): Promise<Activity[]> {
+  const pool = await db();
+  const members = await pool.query<{ name: string; mobile: string; unit: string; role: string; actions: number; last: Date | null }>(
+    `select u.name, u.mobile, m.unit, m.role, count(a.id)::int as actions, max(a.at) as last
+       from rnd_members m join users u on u.id = m.user_id
+       left join rnd_audit a on a.user_id = m.user_id and a.at > now() - make_interval(days => $1)
+      where m.revoked_at is null
+      group by u.name, u.mobile, m.unit, m.role`,
+    [days],
+  );
+  const owners = await pool.query<{ name: string; mobile: string; actions: number; last: Date | null }>(
+    `select u.name, u.mobile, count(a.id)::int as actions, max(a.at) as last
+       from rnd_audit a join users u on u.id = a.user_id
+      where a.unit = 'owner' and a.at > now() - make_interval(days => $1)
+      group by u.name, u.mobile`,
+    [days],
+  );
+  const row = (r: { name: string; mobile: string; actions: number; last: Date | null }, unit: string, role: string): Activity => ({ name: r.name || r.mobile, unit, role, actions: r.actions, last: r.last ? r.last.toISOString() : null });
+  return [...owners.rows.map((r) => row(r, "pm", "owner")), ...members.rows.map((r) => row(r, r.unit, r.role))].sort((a, b) => b.actions - a.actions || a.name.localeCompare(b.name, "fa"));
+}
+
 // ---------- invitations ----------
 export const newToken = () => randomBytes(24).toString("base64url");
 

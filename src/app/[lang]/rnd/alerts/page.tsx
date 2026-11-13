@@ -6,7 +6,7 @@ import { RndFrame, rndHref, rndTitle } from "@/components/rnd/frame";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
 import { requireAccess } from "@/lib/rnd/guard";
-import { UNITS, type Alert } from "@/lib/rnd/model";
+import { T, UNITS, type Alert } from "@/lib/rnd/model";
 import { alertsFor } from "@/lib/rnd/server";
 
 // A neutral title: the tab and the 404 shown to anyone without access do not say what is here.
@@ -24,7 +24,7 @@ function Group({ title, tone, items, locale, showUnit }: { title: string; tone: 
           <li key={i}>
             <Link href={`${rndHref(locale, "project")}?id=${a.project}`} className={`flex gap-3 rounded-md border px-3 py-2 text-sm hover:border-molecule-500 ${a.d < 0 ? "border-red-200 bg-red-50" : a.d <= 3 ? "border-amber-200 bg-amber-50" : "border-line"}`}>
               <span className={`w-24 shrink-0 text-xs font-bold ${a.d < 0 ? "text-red-700" : a.d <= 3 ? "text-amber-700" : "text-muted"}`}>{when(a.d)}<span className="block font-normal">{fmt(a.due)}</span></span>
-              <span className="min-w-0"><b>{a.projectName}</b>{showUnit && <span className="mr-2 rounded-full bg-vault-50 px-2 py-0.5 text-xs text-vault-800">{UNITS[a.unit]}</span>}<span className="block text-xs text-muted">{a.text}</span></span>
+              <span className="min-w-0"><b>{T(a.projectName)}</b>{showUnit && <span className="mr-2 rounded-full bg-vault-50 px-2 py-0.5 text-xs text-vault-800">{UNITS[a.unit]}</span>}<span className="block text-xs text-muted">{a.text}</span></span>
             </Link>
           </li>
         ))}

@@ -4,7 +4,7 @@
  * Persian reading order: earlier dates on the right.
  */
 import {
-  DAY, nowMs, HEALTH, STAGES, actualAt, addMonths, curStage, daysTo, health, ms, plannedAt, progress, stagePct, stageStart,
+  DAY, nowMs, HEALTH, STAGES, T as tx, actualAt, addMonths, curStage, daysTo, health, ms, plannedAt, progress, stagePct, stageStart,
   type Project, type Row, type Study,
 } from "@/lib/rnd/model";
 
@@ -26,7 +26,7 @@ const trunc = (s: string, n: number) => (s.length > n ? s.slice(0, n - 1) + "…
 
 export function Legend({ items }: { items: [string | null, string][] }) {
   return (
-    <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted">
+    <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted">
       {items.map(([c, l]) => (
         <span key={l} className="inline-flex items-center gap-1.5">
           {c && <i className="inline-block size-2.5 rounded-sm" style={{ background: c }} />}
@@ -63,10 +63,10 @@ export function Bar({ value, plan, tone }: { value: number; plan?: number; tone?
   );
 }
 
-export function SCurve({ p }: { p: Project }) {
+export function SCurve({ p, height = 250 }: { p: Project; height?: number }) {
   if (!p.start || !p.target) return <p className="text-sm text-muted">تاریخ اعلام و تاریخ هدف را وارد کنید.</p>;
   const t0 = ms(p.start), t1 = Math.max(ms(p.target), ...p.stages.map((s) => ms(s.due)).filter(isFinite)), now = nowMs();
-  const Wd = 700, Hd = 250, L = 38, R = 12, T = 18, B = 28, pw = Wd - L - R, ph = Hd - T - B;
+  const Wd = 700, Hd = height, L = 38, R = 12, T = 18, B = 28, pw = Wd - L - R, ph = Hd - T - B;
   const X = (t: number) => Wd - R - ((t - t0) / (t1 - t0)) * pw, Y = (v: number) => T + ph - (v / 100) * ph;
   const N = 72, tEnd = Math.min(now, t1);
   let plan = "", act = "";
@@ -120,7 +120,7 @@ export function PortfolioBars({ ps, href }: { ps: Project[]; href: (id: string) 
           <a key={r.p.id} href={href(r.p.id)} className="grid grid-cols-[minmax(0,10rem)_1fr_5rem] items-center gap-3 hover:opacity-80">
             <span className="flex min-w-0 items-center gap-1.5">
               <i className="size-2 shrink-0 rounded-full" style={{ background: HEALTH[r.h].color }} />
-              <span className="truncate text-sm font-semibold">{r.p.name}</span>
+              <span className="truncate text-sm font-semibold">{tx(r.p.name)}</span>
             </span>
             <Bar value={r.a} plan={r.pl} tone={r.h === "late" ? C.bad : r.h === "risk" ? C.warn : r.a >= 100 ? C.ok : C.accent} />
             <span className="text-left font-mono text-xs" dir="ltr">{r.a}% / {r.pl}%</span>
@@ -173,7 +173,7 @@ export function Gantt({ ps, href }: { ps: Project[]; href: (id: string) => strin
                 })}
                 <path d={`M${xt},${y - 3} l5,10.5 l-5,10.5 l-5,-10.5Z`} fill={C.ink} />
                 <circle cx={Wd - 8} cy={y + 7.5} r="4.5" fill={HEALTH[health(p)].color} />
-                <text x={Wd - 18} y={y + 12} textAnchor="start" direction="rtl" fontSize="12" fontWeight="600" fill={C.ink}>{trunc(p.name, 24)}</text>
+                <text x={Wd - 18} y={y + 12} textAnchor="start" direction="rtl" fontSize="12" fontWeight="600" fill={C.ink}>{tx(trunc(p.name, 24))}</text>
               </a>
             );
           })}
@@ -195,7 +195,7 @@ export function StageBars({ open }: { open: Project[] }) {
       {STAGES.map((s, i) => (
         <div key={s.key} className="grid grid-cols-[1.25rem_minmax(0,1.3fr)_1fr_1.5rem] items-center gap-2">
           <span className="font-mono text-muted">{i + 1}</span>
-          <span className="truncate">{s.title}</span>
+          <span className="truncate">{tx(s.title)}</span>
           <Bar value={(100 * c[i]) / mx} />
           <span className="font-mono font-semibold">{c[i]}</span>
         </div>

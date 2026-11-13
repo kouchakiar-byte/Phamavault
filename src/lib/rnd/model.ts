@@ -5,6 +5,8 @@
  * the server (filtering, alerts) and the browser (charts).
  */
 
+import { isolateText } from "@/lib/bidi";
+
 export type Unit = "pm" | "form" | "anal" | "qa" | "purch" | "reg" | "prod";
 export type Role = "owner" | "manager" | "member";
 
@@ -19,6 +21,8 @@ export const UNITS: Record<Unit, string> = {
 };
 export const MEMBER_UNITS = (Object.keys(UNITS) as Unit[]).filter((u) => u !== "pm");
 export const isUnit = (u: unknown): u is Unit => typeof u === "string" && u in UNITS;
+/** Text typed by people, safe to show inside a Persian sentence: its English words and numbers keep their order. */
+export const T = (v: unknown) => isolateText(String(v ?? ""));
 
 export type Comment = { by: string; name: string; unit: string; at: number; text: string };
 export type Item = { id: string; t: string; done: boolean; doneAt?: string; owner?: string; due?: string; unit: Unit; comments?: Comment[] };
@@ -195,19 +199,23 @@ export const riskScore = (r: Row) => (+(r.sev as string) || 0) * (+(r.prob as st
 export const spent = (p: Project) => p.costs.reduce((a, c) => a + (+(c.amount as number) || 0), 0);
 
 // ---------- deadlines and alerts ----------
-export type Alert = { project: string; projectName: string; unit: Unit; due: string; d: number; level: "bad" | "warn" | "info"; text: string };
+export type Alert = { project: string; projectName: string; unit: Unit; due: string; d: number; level: "bad" | "warn" | "info"; kind: "task" | "pull" | "purchase" | "method"; text: string };
 const level = (d: number): Alert["level"] => (d < 0 ? "bad" : d <= 3 ? "warn" : "info");
 
-/** Everything with a date that is overdue or due within `days`, for the units given (all when null). */
+/**
+ * Everything with a date that is overdue or due within `days`, for the units given (all when null).
+ * Names typed by people often mix Persian with English and numbers ("500 mg"): each is isolated so it
+ * keeps its order inside the Persian sentence.
+ */
 export function alertsOf(p: Project, units: Unit[] | null, days = 30): Alert[] {
   if (!isOpen(p)) return [];
   const ok = (u: Unit) => !units || units.includes(u);
   const out: Alert[] = [];
-  const add = (unit: Unit, due: string, text: string) => { const d = daysTo(due); if (d <= days) out.push({ project: p.id, projectName: p.name, unit, due, d, level: level(d), text }); };
-  for (const s of p.stages) for (const it of s.items) if (!it.done && ok(it.unit)) { const due = it.due || s.due; if (due) add(it.unit, due, `${it.t} (${s.title})`); }
-  if (ok(STABILITY_UNIT)) for (const st of p.stability) if (st.start) for (const m of st.months) if (!st.done.includes(m)) add(STABILITY_UNIT, addMonths(st.start, m), `نمونه‌برداری پایداری ${m}M — ${st.cond}`);
-  for (const r of p.purchases) if (ok(r.unit) && isDate(r.eta) && !["received", "qc", "rejected"].includes(String(r.status))) add(r.unit, r.eta, `تحویل ${r.item || "ماده"}${r.supplier ? ` از ${r.supplier}` : ""}`);
-  for (const m of p.methods) if (ok(m.unit) && isDate(m.due) && !["done", "tr"].includes(String(m.status))) add(m.unit, m.due, `روش آنالیز «${m.name || "—"}»`);
+  const add = (kind: Alert["kind"], unit: Unit, due: string, text: string) => { const d = daysTo(due); if (d <= days) out.push({ project: p.id, projectName: p.name, unit, due, d, level: level(d), kind, text }); };
+  for (const s of p.stages) for (const it of s.items) if (!it.done && ok(it.unit)) { const due = it.due || s.due; if (due) add("task", it.unit, due, `${T(it.t)} (${T(s.title)})`); }
+  if (ok(STABILITY_UNIT)) for (const st of p.stability) if (st.start) for (const m of st.months) if (!st.done.includes(m)) add("pull", STABILITY_UNIT, addMonths(st.start, m), `نمونه‌برداری پایداری ⁦${m}M⁩ — ⁦${st.cond}⁩`);
+  for (const r of p.purchases) if (ok(r.unit) && isDate(r.eta) && !["received", "qc", "rejected"].includes(String(r.status))) add("purchase", r.unit, r.eta, `تحویل ${r.item ? T(r.item) : "ماده"}${r.supplier ? ` از ${T(r.supplier)}` : ""}`);
+  for (const m of p.methods) if (ok(m.unit) && isDate(m.due) && !["done", "tr"].includes(String(m.status))) add("method", m.unit, m.due, `روش آنالیز «${m.name ? T(m.name) : "—"}»`);
   return out.sort((a, b) => a.d - b.d);
 }
 
