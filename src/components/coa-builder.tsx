@@ -434,7 +434,7 @@ function Builder({ locale, materials, allowed, signedIn, buyHref }: { locale: Lo
       {/* Import from monograph */}
       <Section title={L(t.importTitle)} tone="accent">
         <p className="text-sm leading-relaxed text-muted">{isolateText(L(t.importLead))}</p>
-        <textarea dir="ltr" rows={5} value={paste} placeholder={L(t.importPlaceholder)} onChange={(e) => setPaste(e.target.value)} className={`${inputClass} mt-3 font-mono text-xs`} />
+        <textarea dir="ltr" rows={5} value={paste} placeholder={L(t.importPlaceholder)} aria-label={L(t.importPlaceholder)} onChange={(e) => setPaste(e.target.value)} className={`${inputClass} mt-3 font-mono text-xs`} />
         <div className="mt-2 flex flex-wrap items-center gap-2">
           <button
             type="button"
@@ -554,8 +554,8 @@ function Builder({ locale, materials, allowed, signedIn, buyHref }: { locale: Lo
             {(["analysed", "checked", "approved"] as const).map((k) => (
               <div key={k} className="space-y-2">
                 <span className="block text-xs font-semibold text-vault-900">{k === "analysed" ? "Analysed by (QC)" : k === "checked" ? "Checked by (QC)" : "Approved by (QA)"}</span>
-                <input placeholder="Name" value={state.signs[k].name} onChange={(e) => setState((s) => ({ ...s, signs: { ...s.signs, [k]: { ...s.signs[k], name: e.target.value } } }))} className={inputClass} />
-                <input placeholder="Date" value={state.signs[k].date} onChange={(e) => setState((s) => ({ ...s, signs: { ...s.signs, [k]: { ...s.signs[k], date: e.target.value } } }))} className={inputClass} />
+                <input placeholder="Name" aria-label={`${k}: Name`} value={state.signs[k].name} onChange={(e) => setState((s) => ({ ...s, signs: { ...s.signs, [k]: { ...s.signs[k], name: e.target.value } } }))} className={inputClass} />
+                <input placeholder="Date" aria-label={`${k}: Date`} value={state.signs[k].date} onChange={(e) => setState((s) => ({ ...s, signs: { ...s.signs, [k]: { ...s.signs[k], date: e.target.value } } }))} className={inputClass} />
               </div>
             ))}
           </div>

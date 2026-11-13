@@ -9,6 +9,7 @@ import {
 } from "@/lib/rnd/model";
 import type { Op } from "@/lib/rnd/server";
 import { saveBlob } from "@/lib/doc-export";
+import { fromJalali, maskJalali, toJalali } from "@/lib/rnd/jalali";
 import { Bar, C, Donut, RiskHeat, SCurve, Trend, fmt } from "./charts";
 
 export type Viewer = { role: Role; unit: Unit | null; name: string };
@@ -20,15 +21,38 @@ const panel = "min-w-0 rounded-card border border-line bg-white p-4 sm:p-5";
 const when = (d: number) => (d === 0 ? "امروز" : d < 0 ? `${-d} روز گذشته` : `${d} روز دیگر`);
 const tone = (d: number) => (d < 0 ? "border-red-300 bg-red-50" : d <= 3 ? "border-amber-300 bg-amber-50" : "border-line bg-white");
 
+/**
+ * A date, read and typed in the Solar Hijri calendar (1405/08/29) and stored as a Gregorian ISO date.
+ * It saves when the field is left; a value that is not a real date is marked and not saved.
+ */
+function DateCell({ value, onSave, disabled, label, className = "" }: { value: unknown; onSave: (v: string) => void; disabled?: boolean; label: string; className?: string }) {
+  const iso = value ? String(value) : "", shown = toJalali(iso);
+  const [bad, setBad] = useState(false);
+  return (
+    <input key={shown} className={`${inp} font-mono ${bad ? "!border-red-400 !text-red-700" : ""} ${className}`} dir="ltr" inputMode="numeric" defaultValue={shown} disabled={disabled}
+      placeholder="تاریخ شمسی" aria-label={`${label} (تاریخ شمسی)`} aria-invalid={bad} title={bad ? "تاریخ معتبر نیست. نمونه: 1405/08/29" : "تاریخ شمسی: سال/ماه/روز"}
+      onChange={(e) => { e.target.value = maskJalali(e.target.value); if (bad) setBad(false); }}
+      onBlur={(e) => {
+        const t = e.target.value.trim();
+        if (t === shown) return;
+        if (!t) return onSave("");
+        const g = fromJalali(t);
+        if (!g) return setBad(true);
+        if (g === iso) e.target.value = shown; else onSave(g);
+      }}
+      onKeyDown={(e) => e.key === "Enter" && (e.target as HTMLInputElement).blur()} />
+  );
+}
+
 /** A text field that saves when it loses focus (or on Enter), and only when its value changed. */
 function Cell({ value, onSave, type = "text", ltr, disabled, label, placeholder, className = "" }: { value: unknown; onSave: (v: string) => void; type?: string; ltr?: boolean; disabled?: boolean; label: string; placeholder?: string; className?: string }) {
+  if (type === "date") return <DateCell value={value} onSave={onSave} disabled={disabled} label={label} className={className} />;
   const v = value == null ? "" : String(value);
   return (
     <input key={v} className={`${inp} ${className}`} type={type} dir={ltr || type === "number" ? "ltr" : undefined} defaultValue={v} disabled={disabled} aria-label={label} placeholder={placeholder}
       step={type === "number" ? "any" : undefined}
       onBlur={(e) => e.target.value !== v && onSave(e.target.value)}
-      onChange={(e) => type === "date" && e.target.value !== v && onSave(e.target.value)}
-      onKeyDown={(e) => e.key === "Enter" && type !== "date" && (e.target as HTMLInputElement).blur()} />
+      onKeyDown={(e) => e.key === "Enter" && (e.target as HTMLInputElement).blur()} />
   );
 }
 function Select({ value, options, onSave, disabled, label, className = "" }: { value: unknown; options: Record<string, string>; onSave: (v: string) => void; disabled?: boolean; label: string; className?: string }) {
@@ -287,7 +311,7 @@ function Overview({ p, viewer, mine, send, setTab, homeHref }: Ctx & { setTab: (
           {meta("lead", "مسئول پروژه")}
           {!member && meta("requester", "درخواست‌دهنده")}{meta("market", "بازار هدف")}{meta("rld", "محصول مرجع (RLD)")}
           {!member && meta("team", "اعضای تیم")}
-          {meta("start", `اعلام به R&D (${fmt(p.start)})`, false, "date")}{meta("target", `تاریخ هدف (${fmt(p.target)})`, false, "date")}
+          {meta("start", "تاریخ اعلام به R&D", false, "date")}{meta("target", "تاریخ هدف", false, "date")}
         </div>
         {!member && (
           <label className="mt-3 block text-xs text-muted">شرح و یادداشت پروژه
@@ -594,14 +618,15 @@ function Budget({ p, owner, send }: { p: Project; owner: boolean; send: (ops: Op
 }
 
 function Log({ p, viewer, send }: { p: Project; viewer: Viewer; send: (ops: Op[]) => Promise<void> }) {
-  const [kind, setKind] = useState("note"), [text, setText] = useState(""), [date, setDate] = useState(today());
+  const [kind, setKind] = useState("note"), [text, setText] = useState(""), [date, setDate] = useState(() => toJalali(today()));
+  const when = fromJalali(date);
   const [audit, setAudit] = useState<AuditRow[] | null>(null);
   const kindTone: Record<string, string> = { decision: "border-molecule-500", issue: "border-red-400", note: "border-capsule-400", auto: "border-line" };
   return (
     <div className="grid gap-4 lg:grid-cols-[1.4fr_1fr]">
       <Panel title="تاریخچه رویدادها" aside="تغییرات مهم خودکار ثبت می‌شود">
-        <form className="mb-4 flex flex-wrap gap-2" onSubmit={(e) => { e.preventDefault(); if (text.trim()) { send([{ op: "event", kind, text, date }]); setText(""); } }}>
-          <input className={`${inp} !w-40`} type="date" value={date} onChange={(e) => setDate(e.target.value)} aria-label="تاریخ" />
+        <form className="mb-4 flex flex-wrap gap-2" onSubmit={(e) => { e.preventDefault(); if (text.trim() && when) { send([{ op: "event", kind, text, date: when }]); setText(""); } }}>
+          <input className={`${inp} !w-32 font-mono ${when ? "" : "!border-red-400"}`} dir="ltr" inputMode="numeric" value={date} onChange={(e) => setDate(maskJalali(e.target.value))} aria-label="تاریخ (شمسی)" aria-invalid={!when} placeholder="1405/01/31" />
           <select className={`${inp} !w-28`} value={kind} onChange={(e) => setKind(e.target.value)} aria-label="نوع رویداد">
             <option value="note">{EV_KIND.note}</option><option value="decision">{EV_KIND.decision}</option><option value="issue">{EV_KIND.issue}</option>
           </select>

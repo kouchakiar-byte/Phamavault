@@ -374,10 +374,19 @@ fieldset:disabled .field-input {
   }
 }
 
-/* Narrow phones have no room for both: the R&D bell takes the place of the header's account
-   button (the account link stays at the top of the menu). */
-@media (max-width: 459px) {
+/* People with access to the R&D workspace get a bell in the header. To make room for it the
+   "home" text link goes, below the desktop menu the account button goes (it stays at the top of the
+   menu), and beside the desktop menu the account button keeps only its icon until the screen is wide. */
+header:has([data-rnd-bell]) .header-home {
+  display: none;
+}
+@media (max-width: 1023px) {
   header:has([data-rnd-bell]) .account-link-narrow {
+    display: none;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1535px) {
+  header:has([data-rnd-bell]) .account-label {
     display: none;
   }
 }

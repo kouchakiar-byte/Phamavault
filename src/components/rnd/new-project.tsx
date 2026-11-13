@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { rndCreate, rndImport } from "@/lib/rnd/actions";
+import { fromJalali, maskJalali, toJalali } from "@/lib/rnd/jalali";
 import { P_TYPE, PRIO, addMonths, today } from "@/lib/rnd/model";
 
 const inp = "w-full rounded-md border border-line bg-white px-2 py-1.5 text-sm focus:border-molecule-500 focus:outline-none";
@@ -18,8 +19,10 @@ export function NewProject({ projectHref }: { projectHref: string }) {
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const f = Object.fromEntries(new FormData(e.currentTarget)) as Record<string, string>;
+    const start = fromJalali(f.start), target = fromJalali(f.target);
+    if (!start || !target) return setErr("تاریخ‌ها را به شمسی و به شکل 1405/08/29 وارد کنید.");
     setBusy(true); setErr("");
-    const r = await rndCreate({ name: f.name, code: f.code, form: f.form, type: f.type, lead: f.lead, requester: f.requester, priority: f.priority, start: f.start, target: f.target, budget: +f.budget || 0 }).catch(() => null);
+    const r = await rndCreate({ name: f.name, code: f.code, form: f.form, type: f.type, lead: f.lead, requester: f.requester, priority: f.priority, start, target, budget: +f.budget || 0 }).catch(() => null);
     setBusy(false);
     if (r?.ok) go(r.id); else setErr(r?.error === "invalid" ? "نام محصول و تاریخ‌ها را بررسی کنید؛ تاریخ هدف باید بعد از تاریخ اعلام باشد." : "پروژه ثبت نشد. دوباره امتحان کنید.");
   }
@@ -52,8 +55,8 @@ export function NewProject({ projectHref }: { projectHref: string }) {
               {field("requester", "درخواست‌دهنده", { maxLength: 80, placeholder: "بازاریابی، مدیریت، …" })}
               <label className="block text-xs text-muted">اولویت<select name="priority" defaultValue="medium" className={`${inp} mt-1`}>{Object.entries(PRIO).map(([k, l]) => <option key={k} value={k}>{l}</option>)}</select></label>
               {field("budget", "بودجه مصوب (میلیون تومان)", { type: "number", min: 0, dir: "ltr" })}
-              {field("start", "تاریخ اعلام به R&D *", { type: "date", required: true, defaultValue: today() })}
-              {field("target", "تاریخ هدف *", { type: "date", required: true, defaultValue: addMonths(today(), 18) })}
+              {field("start", "تاریخ اعلام به R&D (شمسی) *", { required: true, dir: "ltr", inputMode: "numeric", placeholder: "1405/01/31", onChange: (e) => { e.target.value = maskJalali(e.target.value); }, defaultValue: toJalali(today()) })}
+              {field("target", "تاریخ هدف (شمسی) *", { required: true, dir: "ltr", inputMode: "numeric", placeholder: "1405/01/31", onChange: (e) => { e.target.value = maskJalali(e.target.value); }, defaultValue: toJalali(addMonths(today(), 18)) })}
             </div>
             {err && <p className="mt-3 text-sm text-red-700">{err}</p>}
             <div className="mt-5 flex gap-2">

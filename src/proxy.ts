@@ -57,6 +57,10 @@ const CRAWLERS = /googlebot|bingbot|yandex(bot)?|duckduckbot|applebot|enamad/i;
  */
 function overLimit(request: NextRequest): boolean {
   if (request.headers.has("rsc") || request.headers.has("next-router-prefetch")) return false;
+  // A server action (saving a form, each edit in the R&D workspace) is a call from a page that is already
+  // open, not a page load. It has its own, larger budget, so a team working behind one office address
+  // does not use up the page budget and lock itself out.
+  if (request.headers.has("next-action")) return !allow(`action:${clientIp(request.headers)}`, 1500, 5 * 60_000);
   if (CRAWLERS.test(request.headers.get("user-agent") ?? "")) return false;
   return !allow(`page:${clientIp(request.headers)}`, 240, 5 * 60_000);
 }

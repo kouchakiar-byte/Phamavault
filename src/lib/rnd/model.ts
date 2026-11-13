@@ -143,7 +143,8 @@ export const today = () => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Te
 export const ms = (iso?: string) => (iso ? new Date(iso + "T00:00:00").getTime() : NaN);
 export const addMonths = (iso: string, m: number) => { const d = new Date(iso + "T00:00:00"); d.setMonth(d.getMonth() + m); return toISO(d); };
 export const daysTo = (iso?: string) => (iso ? Math.round((ms(iso) - ms(today())) / DAY) : NaN);
-export const isDate = (v: unknown): v is string => typeof v === "string" && /^\d{4}-\d{2}-\d{2}$/.test(v) && !isNaN(ms(v));
+/** A real calendar date in a sensible range (a half-typed year such as 0002 is not one). */
+export const isDate = (v: unknown): v is string => typeof v === "string" && /^(19|20|21)\d{2}-\d{2}-\d{2}$/.test(v) && !isNaN(ms(v));
 
 // ---------- schedule arithmetic ----------
 export const stagePct = (s: Stage) => (s.items.length ? (100 * s.items.filter((i) => i.done).length) / s.items.length : 0);
