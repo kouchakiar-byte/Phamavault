@@ -20,19 +20,24 @@ function View({ locale, variant, signedIn }: { locale: Locale; variant: Variant;
   const label = signedIn ? account.nav.account[locale] : account.nav.join[locale];
   const short = signedIn ? account.nav.account[locale] : account.nav.signIn[locale];
   return (
-    <Link href={href(locale, signedIn ? "account" : "account/login")} className={styles[variant]}>
+    <Link href={href(locale, signedIn ? "account" : "account/login")} className={styles[variant]} aria-label={label}>
       <Icon className="size-4 shrink-0" aria-hidden="true" />
       {variant === "header" ? (
-        // The English "Sign in / Sign up" is wider than the Persian label: it needs a wider screen before it fits beside the menu.
-        locale === "en" ? (
+        // The English "Sign in / Sign up" is wide: beside the full desktop menu it only fits on very wide screens,
+        // and on a phone it needs more room than the Persian label. "account-label" lets the header drop the text
+        // for people who also have the R&D bell there.
+        signedIn ? (
+          // "My account" does not fit beside the logo, search and menu on a 360–390 px phone: the icon alone there.
+          <span className="account-label max-[399px]:hidden">{label}</span>
+        ) : locale === "en" ? (
           <>
-            <span className="min-[440px]:hidden">{short}</span>
-            <span className="hidden min-[440px]:inline">{label}</span>
+            <span className="account-label min-[440px]:hidden lg:inline min-[1700px]:hidden">{short}</span>
+            <span className="account-label hidden min-[440px]:inline lg:hidden min-[1700px]:inline">{label}</span>
           </>
         ) : (
           <>
-            <span className="min-[380px]:hidden">{short}</span>
-            <span className="hidden min-[380px]:inline">{label}</span>
+            <span className="account-label min-[380px]:hidden">{short}</span>
+            <span className="account-label hidden min-[380px]:inline">{label}</span>
           </>
         )
       ) : (

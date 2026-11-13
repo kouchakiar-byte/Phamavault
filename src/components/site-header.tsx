@@ -37,11 +37,11 @@ export async function SiteHeader() {
           </Link>
           <Link
             href={href(locale)}
-            className="hidden whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-vault-800 transition hover:text-molecule-700 min-[460px]:block lg:hidden 2xl:block"
+            className="header-home hidden whitespace-nowrap rounded-lg px-2 py-2 text-sm font-medium text-vault-800 transition hover:text-molecule-700 min-[500px]:block lg:hidden 2xl:block"
           >
             {nav.home[locale]}
           </Link>
-          <div className="account-link-narrow lg:hidden">
+          <div className="account-link-narrow max-[349px]:hidden lg:hidden">
             <AccountLink locale={locale} variant="header" />
           </div>
         </div>
