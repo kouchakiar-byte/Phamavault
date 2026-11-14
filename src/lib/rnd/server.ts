@@ -1,9 +1,10 @@
 import { createHash, randomBytes } from "node:crypto";
+import { baseline, schedule } from "./schedule";
 import { cache } from "react";
 import { getUser, type User } from "@/lib/auth";
 import { databaseConfigured, db } from "@/lib/db";
 import {
-  LISTS, LIST_KEYS, STABILITY_UNIT, UNITS, alertsOf, progress, isDate, isUnit, normalize, uid, today,
+  DAY, LISTS, LIST_KEYS, STABILITY_UNIT, UNITS, alertsOf, ms, progress, isDate, isUnit, normalize, uid, today,
   type Alert, type Item, type ListKey, type Project, type Role, type Row, type Study, type Unit,
 } from "./model";
 
@@ -92,14 +93,25 @@ export async function activitySince(days: number): Promise<Activity[]> {
   return [...owners.rows.map((r) => row(r, "pm", "owner")), ...members.rows.map((r) => row(r, r.unit, r.role))].sort((a, b) => b.actions - a.actions || a.name.localeCompare(b.name, "fa"));
 }
 
+/** People with access, for choosing who does an activity: active members and the managers. */
+export async function rndPeople(): Promise<{ id: string; name: string; unit: string }[]> {
+  const { rows } = await (await db()).query<{ id: string; name: string; mobile: string; unit: string; role: string }>(
+    "select u.id, u.name, u.mobile, m.unit, m.role from rnd_members m join users u on u.id = m.user_id where m.revoked_at is null order by m.unit, u.name",
+  );
+  return rows.map((r) => ({ id: String(r.id), name: r.name || r.mobile, unit: r.role === "manager" ? "manager" : r.unit }));
+}
+
 // ---------- invitations ----------
 export const newToken = () => randomBytes(24).toString("base64url");
 
 // ---------- operations ----------
 /** One change a reader asks for. Every op is checked against the reader's role and unit before it touches the record. */
 export type Op =
-  | { op: "item"; stage: string; item: string; done?: boolean; t?: string; owner?: string; due?: string; unit?: string }
-  | { op: "addItem"; stage: string; t: string; unit: string; due?: string; owner?: string }
+  | { op: "item"; stage: string; item: string; done?: boolean; t?: string; owner?: string; due?: string; unit?: string;
+      start?: string; dur?: number; deps?: string[]; pin?: boolean; pct?: number; aStart?: string; assignee?: string; pri?: string; out?: string; doc?: string; note?: string }
+  | { op: "addItem"; stage: string; t: string; unit: string; due?: string; owner?: string; dur?: number; deps?: string[] }
+  | { op: "reschedule"; mode: "plan" | "actual" }
+  | { op: "baseline" }
   | { op: "delItem"; stage: string; item: string }
   | { op: "comment"; stage: string; item: string; text: string }
   | { op: "stage"; stage: string; due?: string; w?: number; title?: string; decision?: string; by?: string; date?: string; note?: string }
@@ -110,6 +122,21 @@ export type Op =
   | { op: "pull"; id: string; month: number; done?: boolean; result?: Record<string, string> }
   | { op: "event"; kind: string; text: string; date?: string }
   | { op: "meta"; data: Record<string, unknown> };
+
+/** Whether the activity dependencies loop back on themselves (A needs B, B needs A). */
+function hasCycle(p: Project): boolean {
+  const deps = new Map(p.stages.flatMap((s) => s.items.map((i) => [i.code ?? i.id, i.deps ?? []] as const)));
+  const state = new Map<string, 1 | 2>();
+  const visit = (c: string): boolean => {
+    if (state.get(c) === 2) return false;
+    if (state.get(c) === 1) return true;
+    state.set(c, 1);
+    for (const d of deps.get(c) ?? []) if (deps.has(d) && visit(d)) return true;
+    state.set(c, 2);
+    return false;
+  };
+  return [...deps.keys()].some(visit);
+}
 
 export class Denied extends Error {}
 const deny = (why = "denied"): never => { throw new Denied(why); };
@@ -154,19 +181,54 @@ export function applyOps(p: Project, ops: Op[], a: Access): string[] {
       case "item": {
         const { s, it } = findItem(p, o.stage, o.item);
         if (!mine(it.unit)) deny();
-        if (o.done !== undefined && o.done !== it.done) {
-          it.done = Boolean(o.done);
-          if (it.done) it.doneAt = today(); else delete it.doneAt;
-          log.push(`${it.done ? "تکمیل" : "بازگشایی"} وظیفه «${it.t}»`);
-          if (it.done && s.items.every((x) => x.done)) auto(`مرحله «${s.title}» تکمیل شد.`);
+        // What the person doing the work reports: done, progress, when it really started, its document and a note.
+        const before = it.done;
+        if (o.pct !== undefined) {
+          const v = Math.max(0, Math.min(100, Math.round(+o.pct || 0)));
+          it.pct = v;
+          if (v === 100 && !it.done) { it.done = true; it.doneAt = today(); }
+          if (v < 100 && it.done) { it.done = false; delete it.doneAt; }
+          if (v > 0 && !it.aStart) it.aStart = today();
         }
-        if (o.t !== undefined || o.owner !== undefined || o.due !== undefined || o.unit !== undefined) {
+        if (o.done !== undefined && Boolean(o.done) !== it.done) {
+          it.done = Boolean(o.done);
+          if (it.done) { it.doneAt = today(); it.pct = 100; it.aStart ??= today(); } else { delete it.doneAt; if (it.pct === 100) it.pct = 90; }
+        }
+        if (before !== it.done) {
+          log.push(`${it.done ? "تکمیل" : "بازگشایی"} فعالیت ${it.code ?? ""} «${it.t}»`);
+          if (it.done && s.items.every((x) => x.done)) auto(`فاز «${s.title}» تکمیل شد.`);
+        } else if (o.pct !== undefined) log.push(`پیشرفت ${it.pct}% برای فعالیت ${it.code ?? ""} «${it.t}»`);
+        if (o.aStart !== undefined) { it.aStart = dateOr(o.aStart); log.push(`شروع واقعی فعالیت ${it.code ?? ""}`); }
+        if (o.doc !== undefined) { it.doc = str(o.doc, 300) || undefined; log.push(`سند فعالیت ${it.code ?? ""}`); }
+        if (o.note !== undefined) { it.note = str(o.note, 600) || undefined; log.push(`توضیح فعالیت ${it.code ?? ""}`); }
+        // What only the project manager decides: the activity itself, who does it and its place in the plan.
+        const plan = o.start !== undefined || o.dur !== undefined || o.deps !== undefined || o.due !== undefined || o.pin !== undefined;
+        if (o.t !== undefined || o.owner !== undefined || o.unit !== undefined || o.assignee !== undefined || o.pri !== undefined || o.out !== undefined || plan) {
           if (!owner) deny();
           if (o.t !== undefined) it.t = str(o.t, 200) || it.t;
-          if (o.owner !== undefined) it.owner = str(o.owner, 80);
-          if (o.due !== undefined) it.due = dateOr(o.due);
+          if (o.owner !== undefined) it.owner = str(o.owner, 80) || undefined;
+          if (o.assignee !== undefined) it.assignee = /^\d{1,18}$/.test(String(o.assignee)) ? String(o.assignee) : undefined;
           if (o.unit !== undefined) it.unit = isUnit(o.unit) ? o.unit : deny("unit");
-          log.push(`ویرایش وظیفه «${it.t}»`);
+          if (o.pri !== undefined) it.pri = o.pri === "high" || o.pri === "low" || o.pri === "medium" ? o.pri : undefined;
+          if (o.out !== undefined) it.out = str(o.out, 160) || undefined;
+          if (o.dur !== undefined) it.dur = Math.max(1, Math.min(1000, Math.round(+o.dur || 1)));
+          if (o.start !== undefined) { const d = dateOr(o.start); it.start = d; it.pin = Boolean(d); }
+          if (o.pin !== undefined) it.pin = Boolean(o.pin) && isDate(it.start);
+          if (o.due !== undefined) {
+            const d = dateOr(o.due) ?? deny("date");
+            if (isDate(it.start) && d < it.start) deny("date");
+            it.dur = isDate(it.start) ? Math.round((ms(d) - ms(it.start)) / DAY) + 1 : it.dur;
+            it.due = d;
+          }
+          if (o.deps !== undefined) {
+            const codes = new Set(p.stages.flatMap((x) => x.items.map((y) => y.code)));
+            const deps = [...new Set((Array.isArray(o.deps) ? o.deps : []).map((c) => str(c, 12)).filter(Boolean))];
+            if (deps.some((c) => c === it.code || !codes.has(c))) deny("deps");
+            it.deps = deps;
+            if (hasCycle(p)) deny("cycle");
+          }
+          if (plan) schedule(p);
+          log.push(`ویرایش فعالیت ${it.code ?? ""} «${it.t}»`);
         }
         break;
       }
@@ -174,8 +236,28 @@ export function applyOps(p: Project, ops: Op[], a: Access): string[] {
         if (!owner) deny();
         const s = p.stages.find((x) => x.key === o.stage) ?? deny("stage");
         const t = str(o.t, 200) || deny("text");
-        s.items.push({ id: uid("i"), t, done: false, unit: isUnit(o.unit) ? o.unit : deny("unit"), due: dateOr(o.due), owner: str(o.owner, 80) || undefined });
-        log.push(`افزودن وظیفه «${t}» به «${s.title}»`);
+        const si = p.stages.indexOf(s) + (p.stages[0]?.key === "p0" ? 0 : 1);
+        const used = new Set(p.stages.flatMap((x) => x.items.map((y) => y.code)));
+        let n = s.items.length + 1;
+        while (used.has(`${si}.${n}`)) n++;
+        const last = s.items[s.items.length - 1]?.code;
+        s.items.push({ id: uid("i"), code: `${si}.${n}`, t, done: false, pct: 0, unit: isUnit(o.unit) ? o.unit : deny("unit"), dur: Math.max(1, Math.round(+(o.dur ?? 5) || 5)), deps: o.deps ?? (last ? [last] : []), owner: str(o.owner, 80) || undefined });
+        schedule(p);
+        log.push(`افزودن فعالیت «${t}» به «${s.title}»`);
+        break;
+      }
+      case "reschedule": {
+        if (!owner) deny();
+        const end = schedule(p, o.mode === "actual" ? "actual" : "plan");
+        log.push(o.mode === "actual" ? "بازچینی برنامه بر اساس وضعیت واقعی" : "بازچینی برنامه");
+        auto(`برنامه ${o.mode === "actual" ? "بر اساس وضعیت واقعی " : ""}بازچینی شد؛ پایان برنامه‌ریزی‌شده: ${end}.`);
+        break;
+      }
+      case "baseline": {
+        if (!owner) deny();
+        baseline(p);
+        log.push("تثبیت برنامه پایه (Baseline)");
+        auto("برنامه فعلی به‌عنوان برنامه پایه (Baseline) تثبیت شد.");
         break;
       }
       case "delItem": {
