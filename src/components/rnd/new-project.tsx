@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { rndCreate, rndImport } from "@/lib/rnd/actions";
+import { rndCreate, rndImport, rndSample } from "@/lib/rnd/actions";
 import { fromJalali, maskJalali, toJalali } from "@/lib/rnd/jalali";
 import { P_TYPE, PRIO, addMonths, today } from "@/lib/rnd/model";
 
@@ -38,6 +38,10 @@ export function NewProject({ projectHref }: { projectHref: string }) {
   );
   return (
     <div className="flex flex-wrap items-center gap-2">
+      <button type="button" disabled={busy} className={btn} title="یک پروژه کامل با داده فرضی برای معرفی سامانه می‌سازد"
+        onClick={async () => { setBusy(true); setErr(""); const r = await rndSample().catch(() => null); setBusy(false); if (r?.ok) go(r.id); else setErr("پروژه نمونه ساخته نشد. دوباره امتحان کنید."); }}>
+        + پروژه نمونه (متفورمین)
+      </button>
       <label className={`${btn} cursor-pointer`}>ورود از فایل JSON<input type="file" accept="application/json,.json" className="sr-only" onChange={(e) => importFile(e.target.files?.[0])} /></label>
       <button type="button" className="rounded-full bg-molecule-600 px-4 py-2 text-sm font-semibold text-white hover:bg-molecule-700" onClick={() => setOpen(true)}>+ پروژه جدید</button>
       {err && !open && <span className="text-xs text-red-700">{err}</span>}
