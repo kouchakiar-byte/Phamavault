@@ -50,10 +50,11 @@ export function Cell({ value, onSave, type = "text", ltr, disabled, label, place
       onKeyDown={(e) => e.key === "Enter" && (e.target as HTMLInputElement).blur()} />
   );
 }
-export function Select({ value, options, onSave, disabled, label, className = "" }: { value: unknown; options: Record<string, string>; onSave: (v: string) => void; disabled?: boolean; label: string; className?: string }) {
+/** A choice that saves on change. Options as a list keep their order (an object puts number-like keys first). */
+export function Select({ value, options, onSave, disabled, label, className = "" }: { value: unknown; options: Record<string, string> | [string, string][]; onSave: (v: string) => void; disabled?: boolean; label: string; className?: string }) {
   return (
     <select className={`${inp} ${className}`} value={String(value ?? "")} disabled={disabled} aria-label={label} onChange={(e) => onSave(e.target.value)}>
-      {Object.entries(options).map(([k, l]) => <option key={k} value={k}>{l}</option>)}
+      {(Array.isArray(options) ? options : Object.entries(options)).map(([k, l]) => <option key={k} value={k}>{l}</option>)}
     </select>
   );
 }

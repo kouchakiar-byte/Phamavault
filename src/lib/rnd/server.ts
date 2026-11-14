@@ -1,5 +1,6 @@
 import { createHash, randomBytes } from "node:crypto";
-import { baseline, schedule } from "./schedule";
+import { toJalali } from "./jalali";
+import { activityStatus, baseline, schedule, waitingOn, type ActivityStatus } from "./schedule";
 import { cache } from "react";
 import { getUser, type User } from "@/lib/auth";
 import { databaseConfigured, db } from "@/lib/db";
@@ -39,10 +40,12 @@ export function filterProject(p: Project, a: Access): Project {
   if (a.role !== "member" || !a.unit) return p;
   const u = a.unit;
   const keep = (r: { unit: Unit }) => r.unit === u;
+  // A member also sees an activity of another unit that the project manager gave to them by name.
+  const keepItem = (i: Item) => i.unit === u || i.assignee === a.user.id;
   const out: Project = {
     ...p,
     budget: undefined, notes: undefined, requester: undefined, team: undefined,
-    stages: p.stages.map((s) => ({ ...s, gate: { decision: s.gate.decision }, items: s.items.filter(keep) })),
+    stages: p.stages.map((s) => ({ ...s, gate: { decision: s.gate.decision }, items: s.items.filter(keepItem) })),
     stability: u === STABILITY_UNIT ? p.stability : [],
     events: p.events.filter(keep),
     partial: true,
@@ -66,7 +69,8 @@ export async function loadProject(id: string): Promise<Project | null> {
 
 /** Alerts for this reader across every open project, worst first. */
 export const alertsFor = cache(async (a: Access, days = 30): Promise<Alert[]> => {
-  const all = (await loadProjects()).flatMap((p) => alertsOf(p, unitsOf(a), days));
+  // The reader's own copy of each project already holds only their work (their unit and anything given to them).
+  const all = (await loadProjects()).flatMap((p) => alertsOf(filterProject(p, a), null, days));
   return all.sort((x, y) => x.d - y.d);
 });
 
@@ -100,6 +104,46 @@ export async function rndPeople(): Promise<{ id: string; name: string; unit: str
   );
   return rows.map((r) => ({ id: String(r.id), name: r.name || r.mobile, unit: r.role === "manager" ? "manager" : r.unit }));
 }
+
+/** One of the reader's activities, with where it lives so it can be updated from the "my work" page. */
+export type MyTask = {
+  project: string; projectName: string; projectCode: string; stage: string; stageTitle: string;
+  item: Item; status: ActivityStatus; mine: "assigned" | "unit"; waiting: string[];
+};
+/**
+ * The reader's work across open projects: everything given to them by name, and for a unit member the
+ * activities of their unit that nobody has been named for yet.
+ */
+export async function myWork(a: Access): Promise<MyTask[]> {
+  const out: MyTask[] = [];
+  for (const raw of await loadProjects()) {
+    if (raw.status !== "active" && raw.status !== "hold") continue;
+    const p = filterProject(raw, a);
+    for (const s of p.stages) for (const it of s.items) {
+      const assigned = it.assignee === a.user.id, unit = a.role === "member" && it.unit === a.unit && !it.assignee;
+      if (!assigned && !unit) continue;
+      out.push({
+        project: p.id, projectName: p.name, projectCode: p.code ?? "", stage: s.key, stageTitle: s.title, item: it,
+        status: activityStatus(raw, it), mine: assigned ? "assigned" : "unit", waiting: waitingOn(raw, it).map((w) => w.code ?? ""),
+      });
+    }
+  }
+  const rank: Record<ActivityStatus, number> = { late: 0, active: 1, ready: 2, waiting: 3, upcoming: 4, done: 5 };
+  return out.sort((x, y) => rank[x.status] - rank[y.status] || String(x.item.due ?? "9").localeCompare(String(y.item.due ?? "9")));
+}
+
+export type RndNotice = { id: string; project: string; item: string; text: string; at: string; read: boolean };
+export async function noticesFor(a: Access, limit = 40): Promise<RndNotice[]> {
+  const { rows } = await (await db()).query<{ id: string; project_id: string; item_id: string; text: string; at: Date; read_at: Date | null }>(
+    "select id, project_id, item_id, text, at, read_at from rnd_notices where user_id = $1 order by at desc limit $2",
+    [a.user.id, limit],
+  );
+  return rows.map((r) => ({ id: String(r.id), project: r.project_id, item: r.item_id, text: r.text, at: r.at.toISOString(), read: Boolean(r.read_at) }));
+}
+export const unreadNotices = cache(async (a: Access): Promise<number> => {
+  const { rows } = await (await db()).query<{ n: string }>("select count(*) as n from rnd_notices where user_id = $1 and read_at is null", [a.user.id]);
+  return Number(rows[0]?.n ?? 0);
+});
 
 // ---------- invitations ----------
 export const newToken = () => randomBytes(24).toString("base64url");
@@ -168,9 +212,15 @@ function cleanRow(list: ListKey, data: Record<string, unknown>): Record<string, 
  * Applies the ops to the full stored project and returns a short description of each change for the
  * audit trail. Members may only work on their own unit's tasks and rows; only the owner shapes the plan.
  */
-export function applyOps(p: Project, ops: Op[], a: Access): string[] {
+/** Someone to tell about a change: who, about which activity, and what. */
+export type Notice = { userId: string; item: string; text: string };
+
+export function applyOps(p: Project, ops: Op[], a: Access, notices: Notice[] = []): string[] {
   const owner = a.role === "owner";
   const mine = (u: Unit) => owner || (a.role === "member" && a.unit === u);
+  /** The person an activity was given to may report on it, whatever their unit or role. */
+  const mineItem = (it: Item) => mine(it.unit) || it.assignee === a.user.id;
+  const tell = (userId: string | undefined, it: Item, text: string) => { if (userId && userId !== a.user.id) notices.push({ userId, item: it.id, text }); };
   const who = a.user.name || a.user.mobile;
   const logUnit: Unit = a.unit ?? "pm";
   const log: string[] = [];
@@ -180,7 +230,8 @@ export function applyOps(p: Project, ops: Op[], a: Access): string[] {
     switch (o.op) {
       case "item": {
         const { s, it } = findItem(p, o.stage, o.item);
-        if (!mine(it.unit)) deny();
+        if (!mineItem(it)) deny();
+        const assigneeBefore = it.assignee, dueBefore = it.due;
         // What the person doing the work reports: done, progress, when it really started, its document and a note.
         const before = it.done;
         if (o.pct !== undefined) {
@@ -229,6 +280,8 @@ export function applyOps(p: Project, ops: Op[], a: Access): string[] {
           }
           if (plan) schedule(p);
           log.push(`ویرایش فعالیت ${it.code ?? ""} «${it.t}»`);
+          if (it.assignee && it.assignee !== assigneeBefore) tell(it.assignee, it, `فعالیت ${it.code ?? ""} «${it.t}» در پروژه «${p.name}» به شما واگذار شد؛ موعد: ${toJalali(it.due) || "—"}.`);
+          else if (it.assignee && it.due !== dueBefore) tell(it.assignee, it, `موعد فعالیت ${it.code ?? ""} «${it.t}» در پروژه «${p.name}» به ${toJalali(it.due) || "—"} تغییر کرد.`);
         }
         break;
       }
@@ -250,7 +303,7 @@ export function applyOps(p: Project, ops: Op[], a: Access): string[] {
         if (!owner) deny();
         const end = schedule(p, o.mode === "actual" ? "actual" : "plan");
         log.push(o.mode === "actual" ? "بازچینی برنامه بر اساس وضعیت واقعی" : "بازچینی برنامه");
-        auto(`برنامه ${o.mode === "actual" ? "بر اساس وضعیت واقعی " : ""}بازچینی شد؛ پایان برنامه‌ریزی‌شده: ${end}.`);
+        auto(`برنامه ${o.mode === "actual" ? "بر اساس وضعیت واقعی " : ""}بازچینی شد؛ پایان برنامه‌ریزی‌شده: ${toJalali(end)}.`);
         break;
       }
       case "baseline": {
@@ -269,8 +322,9 @@ export function applyOps(p: Project, ops: Op[], a: Access): string[] {
       }
       case "comment": {
         const { it } = findItem(p, o.stage, o.item);
-        if (a.role === "member" && it.unit !== a.unit) deny();
+        if (a.role === "member" && it.unit !== a.unit && it.assignee !== a.user.id) deny();
         const text = str(o.text, 1000) || deny("text");
+        tell(it.assignee, it, `${who} روی فعالیت ${it.code ?? ""} «${it.t}» یادداشت گذاشت: ${text.slice(0, 120)}`);
         (it.comments ??= []).push({ by: a.user.id, name: who, unit: a.unit ? UNITS[a.unit] : a.role === "owner" ? "مدیر پروژه" : "مدیر", at: Date.now(), text });
         log.push(`یادداشت روی وظیفه «${it.t}»`);
         break;

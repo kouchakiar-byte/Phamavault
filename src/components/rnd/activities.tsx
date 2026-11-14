@@ -221,7 +221,7 @@ function ActivityEditor({ ctx, s, it, info, people }: { ctx: Ctx; s: Stage; it: 
           <label className={`${label} sm:col-span-2`}>عنوان فعالیت<Cell className="mt-1" value={it.t} label="عنوان فعالیت" disabled={!owner} onSave={(v) => set({ t: v })} /></label>
           <label className={label}>واحد مسئول<Select className="mt-1" value={it.unit} options={unitOpts} label="واحد مسئول" disabled={!owner} onSave={(v) => set({ unit: v })} /></label>
           <label className={label}>مسئول انجام (عضو تیم)
-            <Select className="mt-1" value={it.assignee ?? ""} options={{ "": "— انتخاب نشده —", ...Object.fromEntries(people.map((x) => [x.id, `${x.name} · ${UNITS[x.unit as Unit] ?? "مدیر"}`])) }} label="مسئول انجام" disabled={!owner}
+            <Select className="mt-1" value={it.assignee ?? ""} options={[["", "— انتخاب نشده —"], ...people.map((x): [string, string] => [x.id, `${x.name} · ${x.unit === "owner" ? "مدیر پروژه" : UNITS[x.unit as Unit] ?? "مدیر"}`])]} label="مسئول انجام" disabled={!owner}
               onSave={(v) => set({ assignee: v, owner: people.find((x) => x.id === v)?.name ?? "" })} />
           </label>
           {owner && !people.length && <p className="text-[11px] text-muted sm:col-span-2">برای انتخاب مسئول، اول اعضای تیم را از «تیم و دسترسی‌ها» اضافه کنید. تا آن موقع نام را در «نام مسئول» بنویسید.</p>}

@@ -5,7 +5,7 @@ import { databaseConfigured, db, transaction } from "@/lib/db";
 import { MEMBER_UNITS, STAGES, isDate, isUnit, newProject, normalize, uid, type Project } from "./model";
 import { buildGlass, type GlassData } from "./glass";
 import { sampleProject } from "./sample";
-import { Denied, applyOps, filterProject, getAccess, loadProject, newToken, sha256, type Op } from "./server";
+import { Denied, applyOps, type Notice, filterProject, getAccess, loadProject, newToken, sha256, type Op } from "./server";
 
 type Fail = { ok: false; error: "signin" | "denied" | "invalid" | "unavailable" | "notfound" | "nouser" | "cycle" | "deps" };
 export type ProjectResult = { ok: true; project: Project } | Fail;
@@ -22,17 +22,20 @@ export async function rndApply(id: string, ops: Op[]): Promise<ProjectResult> {
   const a = await getAccess();
   if (!a) return { ok: false, error: "signin" };
   if (!Array.isArray(ops) || !ops.length || ops.length > 50) return { ok: false, error: "invalid" };
-  if (a.role === "manager" && ops.some((o) => o.op !== "comment" && o.op !== "event")) return { ok: false, error: "denied" };
+  // A manager only reads, comments and logs, and reports on activities given to them by name (checked per activity).
+  if (a.role === "manager" && ops.some((o) => o.op !== "comment" && o.op !== "event" && o.op !== "item")) return { ok: false, error: "denied" };
   try {
     const project = await transaction(async (c) => {
       const { rows } = await c.query<{ data: Record<string, unknown> }>("select data from rnd_projects where id = $1 and deleted_at is null for update", [id]);
       if (!rows[0]) return null;
       const p = normalize(rows[0].data, id);
-      const log = applyOps(p, ops, a);
+      const notices: Notice[] = [];
+      const log = applyOps(p, ops, a, notices);
       const json = JSON.stringify(p);
       if (json.length > MAX_BYTES) throw new Denied("size");
       await c.query("update rnd_projects set data = $2::jsonb, version = version + 1, updated_at = now() where id = $1", [id, json]);
       for (const action of log) await c.query("insert into rnd_audit (project_id, user_id, unit, action) values ($1, $2, $3, $4)", [id, a.user.id, a.unit ?? a.role, action]);
+      for (const n of notices) await c.query("insert into rnd_notices (user_id, project_id, item_id, text) values ($1, $2, $3, $4)", [n.userId, id, n.item, n.text]);
       return p;
     });
     if (!project) return { ok: false, error: "notfound" };
@@ -282,6 +285,19 @@ export async function rndSample(): Promise<{ ok: true; id: string } | Fail> {
     await (await db()).query("insert into rnd_projects (id, data, created_by) values ($1, $2::jsonb, $3)", [p.id, JSON.stringify(p), a.user.id]);
     await (await db()).query("insert into rnd_audit (project_id, user_id, unit, action) values ($1, $2, 'owner', $3)", [p.id, a.user.id, "ساخت پروژه نمونه"]);
     return { ok: true, id: p.id };
+  } catch {
+    return { ok: false, error: "unavailable" };
+  }
+}
+
+/** Marks the reader's notifications as read: the ones given, or all of them. */
+export async function rndReadNotices(ids?: string[]): Promise<{ ok: true } | Fail> {
+  const a = await getAccess().catch(() => null);
+  if (!a) return { ok: false, error: "signin" };
+  try {
+    if (ids?.length) await (await db()).query("update rnd_notices set read_at = now() where user_id = $1 and id = any($2::bigint[]) and read_at is null", [a.user.id, ids.filter((x) => /^\d+$/.test(x))]);
+    else await (await db()).query("update rnd_notices set read_at = now() where user_id = $1 and read_at is null", [a.user.id]);
+    return { ok: true };
   } catch {
     return { ok: false, error: "unavailable" };
   }
