@@ -4,6 +4,7 @@ import { getUser, normalizeMobile } from "@/lib/auth";
 import { databaseConfigured, db, transaction } from "@/lib/db";
 import { MEMBER_UNITS, STAGES, isDate, isUnit, newProject, normalize, uid, type Project } from "./model";
 import { buildGlass, type GlassData } from "./glass";
+import { sampleProject } from "./sample";
 import { Denied, applyOps, filterProject, getAccess, loadProject, newToken, sha256, type Op } from "./server";
 
 type Fail = { ok: false; error: "signin" | "denied" | "invalid" | "unavailable" | "notfound" | "nouser" };
@@ -267,6 +268,20 @@ export async function rndGlass(): Promise<{ ok: true; data: GlassData } | Fail> 
   if (!a) return { ok: false, error: "signin" };
   try {
     return { ok: true, data: await buildGlass(a) };
+  } catch {
+    return { ok: false, error: "unavailable" };
+  }
+}
+
+/** Adds the worked example (metformin 500 mg) as a new project, for showing the workspace to others. */
+export async function rndSample(): Promise<{ ok: true; id: string } | Fail> {
+  const a = await owner();
+  if (!a) return { ok: false, error: "denied" };
+  try {
+    const p = sampleProject();
+    await (await db()).query("insert into rnd_projects (id, data, created_by) values ($1, $2::jsonb, $3)", [p.id, JSON.stringify(p), a.user.id]);
+    await (await db()).query("insert into rnd_audit (project_id, user_id, unit, action) values ($1, $2, 'owner', $3)", [p.id, a.user.id, "ساخت پروژه نمونه"]);
+    return { ok: true, id: p.id };
   } catch {
     return { ok: false, error: "unavailable" };
   }
