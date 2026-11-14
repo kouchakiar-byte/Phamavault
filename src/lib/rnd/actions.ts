@@ -7,7 +7,7 @@ import { buildGlass, type GlassData } from "./glass";
 import { sampleProject } from "./sample";
 import { Denied, applyOps, filterProject, getAccess, loadProject, newToken, sha256, type Op } from "./server";
 
-type Fail = { ok: false; error: "signin" | "denied" | "invalid" | "unavailable" | "notfound" | "nouser" };
+type Fail = { ok: false; error: "signin" | "denied" | "invalid" | "unavailable" | "notfound" | "nouser" | "cycle" | "deps" };
 export type ProjectResult = { ok: true; project: Project } | Fail;
 const MAX_BYTES = 900_000;
 
@@ -38,7 +38,7 @@ export async function rndApply(id: string, ops: Op[]): Promise<ProjectResult> {
     if (!project) return { ok: false, error: "notfound" };
     return { ok: true, project: filterProject(project, a) };
   } catch (e) {
-    return { ok: false, error: e instanceof Denied ? (e.message === "denied" ? "denied" : "invalid") : "unavailable" };
+    return { ok: false, error: e instanceof Denied ? (e.message === "denied" || e.message === "cycle" || e.message === "deps" ? e.message : "invalid") : "unavailable" };
   }
 }
 

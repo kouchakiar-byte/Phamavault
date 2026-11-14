@@ -3,77 +3,18 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { rndApply, rndAudit, rndDelete, rndGet, type AuditRow } from "@/lib/rnd/actions";
 import {
-  EV_KIND, GATE, HEALTH, LISTS, P_STATUS, P_TYPE, PRIO, STABILITY_UNIT, STAB_TPL, T, UNITS, MEMBER_UNITS,
-  addMonths, nowMs, alertsOf, curStage, daysTo, health, ms, plannedAt, progress, riskScore, spent, stagePct, stageStart, sv, today,
-  type Item, type ListKey, type Project, type Role, type Row, type Stage, type Study, type Unit,
+  EV_KIND, HEALTH, LISTS, P_STATUS, P_TYPE, PRIO, STABILITY_UNIT, STAB_TPL, T, UNITS, MEMBER_UNITS,
+  addMonths, nowMs, alertsOf, curStage, daysTo, health, ms, plannedAt, progress, riskScore, spent, stagePct, sv, today,
+  type Item, type ListKey, type Project, type Row, type Stage, type Study, type Unit,
 } from "@/lib/rnd/model";
 import type { Op } from "@/lib/rnd/server";
 import { saveBlob } from "@/lib/doc-export";
 import { fromJalali, maskJalali, toJalali } from "@/lib/rnd/jalali";
+import { Activities, type Person } from "./activities";
 import { Bar, C, Donut, RiskHeat, SCurve, Trend, fmt } from "./charts";
+import { Cell, Panel, Select, btn, inp, panel, pill, tone, when, type Ctx, type Viewer } from "./fields";
+export type { Viewer } from "./fields";
 
-export type Viewer = { role: Role; unit: Unit | null; name: string };
-
-const pill = "inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-semibold";
-const btn = "inline-flex items-center gap-1 rounded-full border border-line bg-white px-3 py-1.5 text-xs font-semibold text-vault-900 transition hover:border-molecule-500 disabled:opacity-50";
-const inp = "w-full rounded-md border border-line bg-white px-2 py-1 text-sm focus:border-molecule-500 focus:outline-none disabled:bg-vault-50 disabled:text-muted";
-const panel = "min-w-0 rounded-card border border-line bg-white p-4 sm:p-5";
-const when = (d: number) => (d === 0 ? "امروز" : d < 0 ? `${-d} روز گذشته` : `${d} روز دیگر`);
-const tone = (d: number) => (d < 0 ? "border-red-300 bg-red-50" : d <= 3 ? "border-amber-300 bg-amber-50" : "border-line bg-white");
-
-/**
- * A date, read and typed in the Solar Hijri calendar (1405/08/29) and stored as a Gregorian ISO date.
- * It saves when the field is left; a value that is not a real date is marked and not saved.
- */
-function DateCell({ value, onSave, disabled, label, className = "" }: { value: unknown; onSave: (v: string) => void; disabled?: boolean; label: string; className?: string }) {
-  const iso = value ? String(value) : "", shown = toJalali(iso);
-  const [bad, setBad] = useState(false);
-  return (
-    <input key={shown} className={`${inp} font-mono ${bad ? "!border-red-400 !text-red-700" : ""} ${className}`} dir="ltr" inputMode="numeric" defaultValue={shown} disabled={disabled}
-      placeholder="تاریخ شمسی" aria-label={`${label} (تاریخ شمسی)`} aria-invalid={bad} title={bad ? "تاریخ معتبر نیست. نمونه: 1405/08/29" : "تاریخ شمسی: سال/ماه/روز"}
-      onChange={(e) => { e.target.value = maskJalali(e.target.value); if (bad) setBad(false); }}
-      onBlur={(e) => {
-        const t = e.target.value.trim();
-        if (t === shown) return;
-        if (!t) return onSave("");
-        const g = fromJalali(t);
-        if (!g) return setBad(true);
-        if (g === iso) e.target.value = shown; else onSave(g);
-      }}
-      onKeyDown={(e) => e.key === "Enter" && (e.target as HTMLInputElement).blur()} />
-  );
-}
-
-/** A text field that saves when it loses focus (or on Enter), and only when its value changed. */
-function Cell({ value, onSave, type = "text", ltr, disabled, label, placeholder, className = "" }: { value: unknown; onSave: (v: string) => void; type?: string; ltr?: boolean; disabled?: boolean; label: string; placeholder?: string; className?: string }) {
-  if (type === "date") return <DateCell value={value} onSave={onSave} disabled={disabled} label={label} className={className} />;
-  const v = value == null ? "" : String(value);
-  return (
-    <input key={v} className={`${inp} ${className}`} type={type} dir={ltr || type === "number" ? "ltr" : undefined} defaultValue={v} disabled={disabled} aria-label={label} placeholder={placeholder}
-      step={type === "number" ? "any" : undefined}
-      onBlur={(e) => e.target.value !== v && onSave(e.target.value)}
-      onKeyDown={(e) => e.key === "Enter" && (e.target as HTMLInputElement).blur()} />
-  );
-}
-function Select({ value, options, onSave, disabled, label, className = "" }: { value: unknown; options: Record<string, string>; onSave: (v: string) => void; disabled?: boolean; label: string; className?: string }) {
-  return (
-    <select className={`${inp} ${className}`} value={String(value ?? "")} disabled={disabled} aria-label={label} onChange={(e) => onSave(e.target.value)}>
-      {Object.entries(options).map(([k, l]) => <option key={k} value={k}>{l}</option>)}
-    </select>
-  );
-}
-function Panel({ title, aside, children, className = "" }: { title: string; aside?: ReactNode; children: ReactNode; className?: string }) {
-  return (
-    <section className={`${panel} ${className}`}>
-      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-        <h2 className="text-base font-bold text-vault-900">{title}</h2>
-        {aside && <div className="text-xs text-muted">{aside}</div>}
-      </div>
-      {children}
-    </section>
-  );
-}
-const UnitTag = ({ u }: { u: Unit }) => <span className={`${pill} bg-vault-50 text-vault-800`}>{UNITS[u]}</span>;
 function Kpi({ label, value, tone: t = "" }: { label: string; value: ReactNode; tone?: "" | "ok" | "warn" | "bad" }) {
   const c = t === "bad" ? "text-red-700" : t === "warn" ? "text-amber-700" : t === "ok" ? "text-emerald-700" : "text-vault-900";
   return (
@@ -93,7 +34,7 @@ function csv(p: Project, key: ListKey) {
 
 type Tab = "overview" | "stages" | ListKey | "stability" | "budget" | "log";
 
-export function ProjectView({ initial, viewer, homeHref, reportHref }: { initial: Project; viewer: Viewer; homeHref: string; reportHref?: string }) {
+export function ProjectView({ initial, viewer, homeHref, reportHref, people = [] }: { initial: Project; viewer: Viewer; homeHref: string; reportHref?: string; people?: Person[] }) {
   const [p, setP] = useState(initial);
   const [tab, setTab] = useState<Tab>("overview");
   const [busy, setBusy] = useState(false);
@@ -108,7 +49,7 @@ export function ProjectView({ initial, viewer, homeHref, reportHref }: { initial
     const r = await rndApply(p.id, ops).catch(() => ({ ok: false as const, error: "unavailable" as const }));
     setBusy(false);
     if (r.ok) { setP(r.project); setSaved(Date.now()); }
-    else setErr(r.error === "denied" ? "این تغییر در محدوده دسترسی شما نیست." : r.error === "signin" ? "نشست شما پایان یافته یا دسترسی شما لغو شده است. صفحه را دوباره باز کنید." : r.error === "invalid" ? "مقدار واردشده معتبر نیست." : "ذخیره انجام نشد. اتصال را بررسی و دوباره امتحان کنید.");
+    else setErr(r.error === "denied" ? "این تغییر در محدوده دسترسی شما نیست." : r.error === "signin" ? "نشست شما پایان یافته یا دسترسی شما لغو شده است. صفحه را دوباره باز کنید." : r.error === "cycle" ? "این پیش‌نیاز حلقه ایجاد می‌کند (دو فعالیت منتظر یکدیگر می‌شوند)؛ ذخیره نشد." : r.error === "deps" ? "کد پیش‌نیاز در این پروژه وجود ندارد یا خود همین فعالیت است؛ ذخیره نشد." : r.error === "invalid" ? "مقدار واردشده معتبر نیست." : "ذخیره انجام نشد. اتصال را بررسی و دوباره امتحان کنید.");
   }, [p.id]);
 
   // Others save too: refresh every minute while the page is visible and nobody is typing.
@@ -131,7 +72,7 @@ export function ProjectView({ initial, viewer, homeHref, reportHref }: { initial
   const tabs: [Tab, string, number][] = (
     [
       ["overview", "نمای کلی", 0],
-      ["stages", member ? "وظایف من" : "مراحل و Gate", myItems.filter((x) => !x.done).length],
+      ["stages", member ? "فعالیت‌های من" : "برنامه و فعالیت‌ها", myItems.filter((x) => !x.done).length],
       ["trials", "فرمولاسیون", p.trials.length],
       ["methods", "آنالیز", p.methods.length],
       ["stability", "پایداری", p.stability.length],
@@ -205,7 +146,7 @@ export function ProjectView({ initial, viewer, homeHref, reportHref }: { initial
       </nav>
 
       {tab === "overview" && <Overview p={p} viewer={viewer} mine={mine} send={send} setTab={setTab} homeHref={homeHref} />}
-      {tab === "stages" && <Stages p={p} viewer={viewer} mine={mine} send={send} />}
+      {tab === "stages" && <Activities ctx={{ p, viewer, mine, send }} people={people} />}
       {tab === "risks" && (
         <div className="grid gap-4 lg:grid-cols-2">
           <Panel title="ماتریس ریسک (5×5)" aside="امتیاز = شدت × احتمال"><RiskHeat risks={p.risks} /></Panel>
@@ -227,7 +168,6 @@ export function ProjectView({ initial, viewer, homeHref, reportHref }: { initial
   );
 }
 
-type Ctx = { p: Project; viewer: Viewer; mine: (u: Unit) => boolean; send: (ops: Op[]) => Promise<void> };
 
 function TaskLine({ it, s, ctx, compact }: { it: Item; s: Stage; ctx: Ctx; compact?: boolean }) {
   const due = it.due || s.due, d = daysTo(due), over = !it.done && d < 0;
@@ -341,117 +281,6 @@ function ProjectAdmin({ p, homeHref }: { p: Project; homeHref: string }) {
       ) : (
         <button type="button" className={`${btn} text-red-700`} onClick={() => setConfirm(true)}>حذف پروژه</button>
       )}
-    </div>
-  );
-}
-
-function Comments({ it, s, ctx }: { it: Item; s: Stage; ctx: Ctx }) {
-  const [text, setText] = useState("");
-  const can = ctx.viewer.role !== "member" || ctx.viewer.unit === it.unit;
-  return (
-    <div className="mt-2 rounded-md bg-paper p-2">
-      {(it.comments ?? []).map((c, i) => (
-        <p key={i} className="mb-1.5 text-xs"><b>{T(c.name)}</b> <span className="text-muted">({c.unit} · {fmt(new Date(c.at).toISOString().slice(0, 10))})</span>: {T(c.text)}</p>
-      ))}
-      {!(it.comments ?? []).length && <p className="mb-1.5 text-xs text-muted">یادداشتی ثبت نشده است.</p>}
-      {can && (
-        <form className="flex gap-2" onSubmit={(e) => { e.preventDefault(); if (text.trim()) { ctx.send([{ op: "comment", stage: s.key, item: it.id, text }]); setText(""); } }}>
-          <input className={inp} value={text} onChange={(e) => setText(e.target.value)} placeholder="یادداشت، نتیجه یا مشکل این کار…" aria-label="یادداشت" />
-          <button className={btn} type="submit">ثبت</button>
-        </form>
-      )}
-    </div>
-  );
-}
-
-function Stages({ p, viewer, mine, send }: Ctx) {
-  const ctx = { p, viewer, mine, send };
-  const owner = viewer.role === "owner", member = viewer.role === "member";
-  const ci = curStage(p);
-  const [open, setOpen] = useState<string | null>(null);
-  const [add, setAdd] = useState<Record<string, { t: string; unit: Unit }>>({});
-  const unitOpts = Object.fromEntries((Object.keys(UNITS) as Unit[]).map((u) => [u, UNITS[u]]));
-  return (
-    <div className="flex flex-col gap-3">
-      {member && <p className="text-sm text-muted">وظایف واحد شما در هر مرحله. برای ثبت انجام کار، خانه کنار آن را بزنید؛ برای نوشتن نتیجه یا مشکل، «یادداشت» را باز کنید.</p>}
-      {p.stages.map((s, i) => {
-        if (member && !s.items.length) return null;
-        const sp = Math.round(stagePct(s)), d = daysTo(s.due), late = s.due && sp < 100 && d < 0, g = s.gate;
-        return (
-          <details key={s.key} open={i === ci || (member && s.items.some((x) => !x.done))} className={`group ${panel} !p-0`}>
-            <summary className="flex cursor-pointer list-none items-center gap-3 p-4">
-              <span className={`grid size-8 shrink-0 place-items-center rounded-full font-mono text-sm font-bold ${sp >= 100 ? "bg-emerald-50 text-emerald-700" : "bg-vault-50 text-vault-900"}`}>{sp >= 100 ? "✓" : i + 1}</span>
-              <span className="min-w-0 flex-1">
-                <span className="block font-bold text-vault-900">{T(s.title)}</span>
-                <span className="text-xs text-muted">{s.items.filter((x) => x.done).length} از {s.items.length} کار · {fmt(stageStart(p, i))} تا {fmt(s.due)}{!member && <> · وزن <span className="font-mono">{s.w}</span></>}</span>
-                {late && <span className={`${pill} mr-2 bg-red-50 text-red-700`}>{-d} روز تأخیر</span>}
-                {g.decision !== "pending" && <span className={`${pill} mr-2 ${g.decision === "go" ? "bg-emerald-50 text-emerald-700" : g.decision === "nogo" ? "bg-red-50 text-red-700" : "bg-amber-50 text-amber-700"}`}>Gate: {GATE[g.decision].split(" — ")[0]}</span>}
-              </span>
-              <span className="font-mono font-bold">{sp}%</span>
-            </summary>
-            <div className="border-t border-line p-4">
-              <ul className="flex flex-col gap-2">
-                {s.items.map((it) => {
-                  const due = it.due || s.due, od = !it.done && daysTo(due) < 0, can = mine(it.unit);
-                  return (
-                    <li key={it.id} className={`rounded-lg border p-2 ${od ? "border-red-200 bg-red-50/50" : "border-line"}`}>
-                      <div className="flex flex-wrap items-center gap-2">
-                        <input type="checkbox" className="size-4 accent-molecule-600" checked={it.done} disabled={!can} aria-label="انجام شد" onChange={(e) => send([{ op: "item", stage: s.key, item: it.id, done: e.target.checked }])} />
-                        <span className={`min-w-40 flex-1 text-sm ${it.done ? "text-muted line-through" : "text-ink"}`}>
-                          {owner ? <Cell value={it.t} label="شرح کار" onSave={(v) => send([{ op: "item", stage: s.key, item: it.id, t: v }])} className="border-transparent hover:border-line" /> : T(it.t)}
-                          {it.doneAt && <span className="block text-xs text-muted">انجام: {fmt(it.doneAt)}</span>}
-                        </span>
-                        {owner ? (
-                          <>
-                            <Select className="!w-36" value={it.unit} options={unitOpts} label="واحد مسئول" onSave={(v) => send([{ op: "item", stage: s.key, item: it.id, unit: v }])} />
-                            <Cell className="!w-32" value={it.owner} label="مسئول کار" placeholder="مسئول" onSave={(v) => send([{ op: "item", stage: s.key, item: it.id, owner: v }])} />
-                            <Cell className="!w-36" type="date" value={it.due} label="موعد کار" onSave={(v) => send([{ op: "item", stage: s.key, item: it.id, due: v }])} />
-                          </>
-                        ) : (
-                          <span className="flex flex-wrap items-center gap-2 text-xs text-muted">
-                            {!member && <UnitTag u={it.unit} />}{it.owner && <span>{T(it.owner)}</span>}
-                            <span className={od ? "font-bold text-red-700" : ""}>موعد: {fmt(due)}{od ? ` (${when(daysTo(due))})` : ""}</span>
-                          </span>
-                        )}
-                        <button type="button" className={btn} onClick={() => setOpen(open === it.id ? null : it.id)} aria-expanded={open === it.id}>یادداشت{it.comments?.length ? ` (${it.comments.length})` : ""}</button>
-                        {owner && <button type="button" className="px-1 text-lg leading-none text-muted hover:text-red-700" aria-label="حذف کار" onClick={() => confirm(`کار «${it.t}» حذف شود؟`) && send([{ op: "delItem", stage: s.key, item: it.id }])}>×</button>}
-                      </div>
-                      {open === it.id && <Comments it={it} s={s} ctx={ctx} />}
-                    </li>
-                  );
-                })}
-                {!s.items.length && <li className="text-sm text-muted">کاری تعریف نشده است.</li>}
-              </ul>
-              {owner && (
-                <>
-                  <form className="mt-3 flex flex-wrap gap-2" onSubmit={(e) => { e.preventDefault(); const a = add[s.key]; if (a?.t.trim()) { send([{ op: "addItem", stage: s.key, t: a.t, unit: a.unit }]); setAdd({ ...add, [s.key]: { t: "", unit: a.unit } }); } }}>
-                    <input className={`${inp} min-w-48 flex-1`} placeholder="افزودن کار به این مرحله…" aria-label="کار جدید" value={add[s.key]?.t ?? ""} onChange={(e) => setAdd({ ...add, [s.key]: { t: e.target.value, unit: add[s.key]?.unit ?? "form" } })} />
-                    <select className={`${inp} !w-40`} aria-label="واحد مسئول" value={add[s.key]?.unit ?? "form"} onChange={(e) => setAdd({ ...add, [s.key]: { t: add[s.key]?.t ?? "", unit: e.target.value as Unit } })}>
-                      {(Object.keys(UNITS) as Unit[]).map((u) => <option key={u} value={u}>{UNITS[u]}</option>)}
-                    </select>
-                    <button className={btn} type="submit">افزودن</button>
-                  </form>
-                  <div className="mt-3 flex flex-wrap items-end gap-3">
-                    <label className="text-xs text-muted">موعد مرحله<Cell className="mt-1 !w-40" type="date" value={s.due} label="موعد مرحله" onSave={(v) => send([{ op: "stage", stage: s.key, due: v }])} /></label>
-                    <label className="text-xs text-muted">وزن (حجم کار)<Cell className="mt-1 !w-24" type="number" value={s.w} label="وزن" onSave={(v) => send([{ op: "stage", stage: s.key, w: +v }])} /></label>
-                  </div>
-                </>
-              )}
-              {!member && (
-                <div className="mt-4 rounded-lg border border-dashed border-line bg-paper p-3">
-                  <div className="mb-2 text-sm font-bold text-vault-900">Gate پایان مرحله <span className="text-xs font-normal text-muted">تصمیم برای ورود به مرحله بعد</span></div>
-                  <div className="grid gap-2 sm:grid-cols-[10rem_10rem_10rem_1fr]">
-                    <Select value={g.decision} options={GATE} label="تصمیم" disabled={!owner} onSave={(v) => send([{ op: "stage", stage: s.key, decision: v, by: g.by, date: g.date || today(), note: g.note }])} />
-                    <Cell value={g.by} label="تصمیم‌گیرنده" placeholder="تصمیم‌گیرنده" disabled={!owner} onSave={(v) => send([{ op: "stage", stage: s.key, decision: g.decision, by: v, date: g.date, note: g.note }])} />
-                    <Cell type="date" value={g.date} label="تاریخ تصمیم" disabled={!owner} onSave={(v) => send([{ op: "stage", stage: s.key, decision: g.decision, by: g.by, date: v, note: g.note }])} />
-                    <Cell value={g.note} label="شرح تصمیم" placeholder="شرح تصمیم و شرایط" disabled={!owner} onSave={(v) => send([{ op: "stage", stage: s.key, decision: g.decision, by: g.by, date: g.date, note: v }])} />
-                  </div>
-                </div>
-              )}
-            </div>
-          </details>
-        );
-      })}
     </div>
   );
 }

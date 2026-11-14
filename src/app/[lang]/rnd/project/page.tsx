@@ -6,7 +6,7 @@ import { ProjectView } from "@/components/rnd/project-view";
 import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
 import { requireAccess } from "@/lib/rnd/guard";
-import { filterProject, loadProject } from "@/lib/rnd/server";
+import { filterProject, loadProject, rndPeople } from "@/lib/rnd/server";
 
 // A neutral title: the tab and the 404 shown to anyone without access do not say what is here.
 export const generateMetadata = () => accountMetadata(rndTitle);
@@ -21,6 +21,7 @@ async function Project({ locale, searchParams }: { locale: Locale; searchParams:
   return (
     <RndFrame locale={locale} access={access} alerts={urgent} active="project">
       <ProjectView key={p.id} initial={filterProject(p, access)} viewer={{ role: access.role, unit: access.unit, name: access.user.name }} homeHref={rndHref(locale)}
+        people={access.role === "owner" ? await rndPeople() : []}
         reportHref={access.role === "member" ? undefined : `${rndHref(locale, "report")}?id=${p.id}`} />
     </RndFrame>
   );

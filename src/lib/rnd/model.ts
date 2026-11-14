@@ -6,6 +6,8 @@
  */
 
 import { isolateText } from "@/lib/bidi";
+import { baseline, schedule } from "./schedule";
+import { TEMPLATE } from "./template";
 
 export type Unit = "pm" | "form" | "anal" | "qa" | "purch" | "reg" | "prod";
 export type Role = "owner" | "manager" | "member";
@@ -25,7 +27,17 @@ export const isUnit = (u: unknown): u is Unit => typeof u === "string" && u in U
 export const T = (v: unknown) => isolateText(String(v ?? ""));
 
 export type Comment = { by: string; name: string; unit: string; at: number; text: string };
-export type Item = { id: string; t: string; done: boolean; doneAt?: string; owner?: string; due?: string; unit: Unit; comments?: Comment[] };
+export type Priority = "high" | "medium" | "low";
+/**
+ * One activity of the plan. `start`/`due` are its planned dates (inclusive), worked out from `dur` and the
+ * activities in `deps` unless `pin` fixes the start by hand. `aStart`/`doneAt` are what really happened.
+ * `base` is the planned end when the plan was last fixed as the baseline, to measure slippage against.
+ */
+export type Item = {
+  id: string; t: string; done: boolean; doneAt?: string; owner?: string; due?: string; unit: Unit; comments?: Comment[];
+  code?: string; start?: string; dur?: number; deps?: string[]; pin?: boolean; pct?: number; aStart?: string; base?: string;
+  assignee?: string; pri?: Priority; out?: string; doc?: string; note?: string; gate?: boolean;
+};
 export type Gate = { decision: "pending" | "go" | "hold" | "nogo"; by?: string; date?: string; note?: string };
 export type Stage = { key: string; title: string; w: number; due: string; gate: Gate; items: Item[] };
 export type Row = { id: string; unit: Unit; [k: string]: unknown };
@@ -151,25 +163,45 @@ export const daysTo = (iso?: string) => (iso ? Math.round((ms(iso) - ms(today())
 export const isDate = (v: unknown): v is string => typeof v === "string" && /^(19|20|21)\d{2}-\d{2}-\d{2}$/.test(v) && !isNaN(ms(v));
 
 // ---------- schedule arithmetic ----------
-export const stagePct = (s: Stage) => (s.items.length ? (100 * s.items.filter((i) => i.done).length) / s.items.length : 0);
+/** An activity's progress, 0–100: done counts as 100 whatever was typed. */
+export const itemPct = (i: Item) => (i.done ? 100 : Math.max(0, Math.min(100, Math.round(+(i.pct ?? 0) || 0))));
+export const stagePct = (s: Stage) => (s.items.length ? s.items.reduce((a, i) => a + itemPct(i), 0) / s.items.length : 0);
 const weight = (p: Project) => p.stages.reduce((a, s) => a + (+s.w || 0), 0) || 1;
 export const progress = (p: Project) => Math.round(p.stages.reduce((a, s) => a + (+s.w || 0) * stagePct(s), 0) / weight(p));
 export const curStage = (p: Project) => p.stages.findIndex((s) => stagePct(s) < 100);
-export const stageStart = (p: Project, i: number) => (i === 0 ? p.start : p.stages[i - 1].due || p.start);
+/** A phase starts with its earliest activity; a phase from before activities had dates starts when the one before it ends. */
+export function stageStart(p: Project, i: number): string {
+  const starts = p.stages[i].items.map((it) => it.start).filter(isDate).sort();
+  if (starts.length) return starts[0];
+  return i === 0 ? p.start : p.stages[i - 1].due || p.start;
+}
+/** How far the plan says the project should be at time t: each activity advances evenly from its start to its end. */
 export function plannedAt(p: Project, t: number) {
   let acc = 0;
   p.stages.forEach((s, i) => {
+    const w = +s.w || 0;
+    const dated = s.items.filter((it) => isDate(it.start) && isDate(it.due));
+    if (dated.length && dated.length === s.items.length) {
+      const f = dated.reduce((a, it) => {
+        const a0 = ms(it.start), b0 = ms(it.due) + DAY;
+        return a + (t >= b0 ? 1 : t <= a0 ? 0 : (t - a0) / (b0 - a0));
+      }, 0) / dated.length;
+      acc += w * f;
+      return;
+    }
     const a = ms(stageStart(p, i)), b = ms(s.due);
     const f = !isFinite(a) || !isFinite(b) ? 0 : b <= a ? (t >= b ? 1 : 0) : Math.min(1, Math.max(0, (t - a) / (b - a)));
-    acc += (+s.w || 0) * f;
+    acc += w * f;
   });
   return (100 * acc) / weight(p);
 }
+/** How far the project really was at time t: finished activities from their finish date, and today's partial progress. */
 export function actualAt(p: Project, t: number) {
+  const now = Date.now();
   let acc = 0;
   for (const s of p.stages) {
     if (!s.items.length) continue;
-    const k = s.items.filter((i) => i.done && (i.doneAt ? ms(i.doneAt) : ms(p.start)) <= t).length;
+    const k = s.items.reduce((a, i) => a + (i.done ? ((i.doneAt ? ms(i.doneAt) : ms(p.start)) <= t ? 100 : 0) : t >= now - DAY ? itemPct(i) : 0), 0) / 100;
     acc += ((+s.w || 0) * k) / s.items.length;
   }
   return (100 * acc) / weight(p);
@@ -221,27 +253,46 @@ export function alertsOf(p: Project, units: Unit[] | null, days = 30): Alert[] {
 
 // ---------- a new project ----------
 export const uid = (prefix: string) => prefix + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+/**
+ * A new project from the standard plan: every activity of the template with its unit, duration and
+ * dependencies, scheduled from the start date. The plan is then fixed as the baseline.
+ */
 export function newProject(f: { name: string; code: string; form: string; type: string; lead: string; requester: string; priority: string; start: string; target: string; budget: number }): Project {
-  const span = Math.max(1, (ms(f.target) - ms(f.start)) / DAY), total = STAGES.reduce((a, s) => a + s.w, 0);
-  let acc = 0;
-  const stages: Stage[] = STAGES.map((s) => {
-    acc += s.w;
-    return { key: s.key, title: s.title, w: s.w, due: toISO(new Date(ms(f.start) + ((span * acc) / total) * DAY)), gate: { decision: "pending" }, items: s.items.map(([t, unit]) => ({ id: uid("i"), t, done: false, unit })) };
-  });
-  return {
+  const stages: Stage[] = TEMPLATE.map((ph) => ({
+    key: ph.key, title: ph.title, w: ph.w, due: f.target, gate: { decision: "pending" },
+    items: ph.items.map((a) => ({ id: uid("i"), code: a.code, t: a.t, done: false, unit: a.unit, dur: a.d, deps: a.deps ?? [], pct: 0, ...(a.out ? { out: a.out } : {}), ...(a.gate ? { gate: true } : {}) })),
+  }));
+  const p: Project = {
     id: uid("p"), name: f.name, code: f.code, form: f.form, type: P_TYPE[f.type] ? f.type : "generic", lead: f.lead, requester: f.requester,
     priority: (PRIO[f.priority] ? f.priority : "medium") as Project["priority"], start: f.start, target: f.target, status: "active", budget: f.budget || 0, unit: "میلیون تومان",
     stages, trials: [], methods: [], purchases: [], batches: [], risks: [], docs: [], costs: [], stability: [],
     events: [{ id: uid("e"), date: f.start, kind: "auto", text: "پروژه به واحد تحقیق و توسعه اعلام و ثبت شد.", at: Date.now(), unit: "pm" }],
     createdAt: Date.now(), updatedAt: Date.now(),
   };
+  schedule(p);
+  baseline(p);
+  return p;
 }
 
 /** Fills fields an older or hand-made record may lack. */
 export function normalize(raw: Record<string, unknown>, id: string): Project {
   const p = { ...raw, id } as Project;
-  p.stages = (p.stages || []).map((s) => ({ ...s, w: +s.w || STAGES.find((x) => x.key === s.key)?.w || 8, gate: s.gate || { decision: "pending" }, items: (s.items || []).map((i) => ({ ...i, unit: isUnit(i.unit) ? i.unit : "pm" })) }));
+  p.stages = (p.stages || []).map((s) => ({ ...s, w: +s.w || STAGES.find((x) => x.key === s.key)?.w || 8, gate: s.gate || { decision: "pending" }, items: (s.items || []).map((i, j) => ({ ...i, unit: isUnit(i.unit) ? i.unit : "pm", code: i.code || `${p.stages.indexOf(s) + 1}.${j + 1}`, deps: Array.isArray(i.deps) ? i.deps : [], pct: i.done ? 100 : Math.max(0, Math.min(100, +(i.pct ?? 0) || 0)) })) }));
   for (const k of LIST_KEYS) p[k] = (Array.isArray(p[k]) ? p[k] : []).map((r) => ({ ...r, unit: isUnit(r.unit) ? r.unit : LISTS[k].unit }));
+  // Projects from before activities had their own dates: each activity takes its phase's dates and is
+  // pinned there, so re-planning never moves work that was planned by phase.
+  p.stages.forEach((s, i) => {
+    const from = i === 0 ? p.start : p.stages[i - 1].due || p.start;
+    for (const it of s.items) {
+      if (isDate(it.start)) continue;
+      const due = isDate(it.due) ? it.due : s.due;
+      if (!isDate(from) || !isDate(due)) continue;
+      it.start = due < from ? due : from;
+      it.due = due;
+      it.dur = Math.max(1, Math.round((ms(due) - ms(it.start)) / DAY) + 1);
+      it.pin = true;
+    }
+  });
   p.stability = (Array.isArray(p.stability) ? p.stability : []).map((s) => ({ ...s, results: s.results || {}, done: s.done || [], months: s.months || [], specMin: s.specMin ?? 95, specMax: s.specMax ?? 105 }));
   p.events = (Array.isArray(p.events) ? p.events : []).map((e) => ({ ...e, unit: isUnit(e.unit) ? e.unit : "pm" }));
   p.priority = PRIO[p.priority] ? p.priority : "medium";
