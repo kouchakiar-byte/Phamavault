@@ -3,6 +3,7 @@
 import { getUser, normalizeMobile } from "@/lib/auth";
 import { databaseConfigured, db, transaction } from "@/lib/db";
 import { MEMBER_UNITS, STAGES, isDate, isUnit, newProject, normalize, uid, type Project } from "./model";
+import { buildGlass, type GlassData } from "./glass";
 import { Denied, applyOps, filterProject, getAccess, loadProject, newToken, sha256, type Op } from "./server";
 
 type Fail = { ok: false; error: "signin" | "denied" | "invalid" | "unavailable" | "notfound" | "nouser" };
@@ -255,6 +256,17 @@ export async function rndAcceptInvite(token: string): Promise<{ ok: true } | Fai
       return true;
     });
     return done ? { ok: true } : { ok: false, error: "notfound" };
+  } catch {
+    return { ok: false, error: "unavailable" };
+  }
+}
+
+/** Fresh numbers for the glass dashboard, filtered for the reader like every other view. */
+export async function rndGlass(): Promise<{ ok: true; data: GlassData } | Fail> {
+  const a = await getAccess().catch(() => null);
+  if (!a) return { ok: false, error: "signin" };
+  try {
+    return { ok: true, data: await buildGlass(a) };
   } catch {
     return { ok: false, error: "unavailable" };
   }
