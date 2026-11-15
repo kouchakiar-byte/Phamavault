@@ -13,7 +13,7 @@ import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
 import { getUser } from "@/lib/auth";
 import { databaseConfigured } from "@/lib/db";
-import { formatDate, formatNumber } from "@/lib/format";
+import { daysUntil, formatDate, formatNumber } from "@/lib/format";
 import { planName, periodLabel, sectionsLabel } from "@/lib/labels";
 import { recentOrders, recentUsers, stats } from "@/lib/orders";
 import { href } from "@/lib/paths";
@@ -35,7 +35,11 @@ import { getSection } from "@/content/sections";
 import { referralCopy } from "@/content/referrals";
 import { alertCopy } from "@/content/supplier-alerts";
 import { bi } from "@/i18n/bi";
-import { cancelOrder, changeSeats, extend, markOrderPaid, setBlocked, toggleRequestHandled, toggleRevoked } from "./actions";
+import { cancelOrder, changeSeats, extend, markOrderPaid, setBlocked, setEnd, toggleRequestHandled, toggleRevoked } from "./actions";
+import { toJalali } from "@/lib/rnd/jalali";
+
+/** The last day a subscription is valid, Tehran time, as a Solar Hijri date. */
+const lastDay = (ends: Date) => toJalali(new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Tehran" }).format(new Date(ends.getTime() - 1)));
 
 const { admin: t, dashboard: d, invoice: inv } = account;
 const copyToman = copy.plans.currency;
@@ -584,6 +588,7 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
       </Panel>
 
       <Panel title={t.subscriptions} locale={locale}>
+        <p className="-mt-2 mb-4 text-sm text-muted">{t.endHint[locale]}</p>
         <div className="overflow-x-auto">
           <table className="db">
             <thead>
@@ -616,6 +621,8 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
                     <td className="whitespace-nowrap">
                       {formatDate(s.endsAt, locale)}
                       <span className="block text-xs text-muted">{d.status[state][locale]}</span>
+                      <span className="block text-xs text-muted">{t.started[locale]}: {formatDate(s.startsAt, locale)}</span>
+                      {state === "active" && <span className="block text-xs font-semibold text-molecule-700">{t.left[locale].replace("{n}", formatNumber(daysUntil(s.endsAt), locale))}</span>}
                     </td>
                     <td>
                       <span className="num">
@@ -632,12 +639,22 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
                       )}
                     </td>
                     <td>
-                      <form action={extend} className="flex gap-1">
+                      <form action={extend} className="flex flex-wrap items-center gap-1">
                         <input type="hidden" name="id" value={s.id} />
-                        <input name="days" type="number" defaultValue={30} dir="ltr" aria-label={t.days[locale]} className="field-input !w-20 !py-1 text-xs" />
-                        <button type="submit" className={`${smallButton} border border-line hover:border-molecule-500`}>
-                          + {t.days[locale]}
+                        <input name="days" type="number" min={1} defaultValue={30} dir="ltr" aria-label={t.days[locale]} className="field-input !w-16 !py-1 text-xs" />
+                        <span className="text-xs text-muted">{t.days[locale]}</span>
+                        <button type="submit" name="dir" value="add" className={`${smallButton} border border-line text-molecule-700 hover:border-molecule-500`}>
+                          + {t.addDays[locale]}
                         </button>
+                        <button type="submit" name="dir" value="sub" className={`${smallButton} border border-line text-red-700 hover:border-red-400`}>
+                          − {t.subDays[locale]}
+                        </button>
+                      </form>
+                      <form action={setEnd} className="mt-1.5 flex items-center gap-1">
+                        <input type="hidden" name="id" value={s.id} />
+                        <span className="text-xs text-muted">{t.endOn[locale]}</span>
+                        <input name="end" required inputMode="numeric" dir="ltr" defaultValue={lastDay(s.endsAt)} aria-label={t.endOn[locale]} placeholder="1405/09/30" className="field-input !w-28 !py-1 font-mono text-xs" />
+                        <button type="submit" className={`${smallButton} border border-line hover:border-molecule-500`}>{t.setEnd[locale]}</button>
                       </form>
                     </td>
                     <td>
