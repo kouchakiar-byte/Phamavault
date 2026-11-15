@@ -267,6 +267,11 @@ create table if not exists rnd_audit (
   at timestamptz not null default now()
 );
 create index if not exists rnd_audit_project on rnd_audit (project_id, at desc);
+create table if not exists rnd_notices (
+  id bigserial primary key, user_id bigint not null references users(id) on delete cascade,
+  project_id text not null, item_id text not null default '', text text not null,
+  at timestamptz not null default now(), read_at timestamptz);
+create index if not exists rnd_notices_user on rnd_notices (user_id, read_at, at desc);
 create table if not exists coa_specs (
   id bigserial primary key,
   user_id bigint not null references users(id) on delete cascade,

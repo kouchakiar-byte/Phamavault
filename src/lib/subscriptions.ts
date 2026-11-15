@@ -231,8 +231,17 @@ export async function grantManually(input: NewSubscription & { amount: number; n
 }
 
 /** Admin: change the end date by a number of days (negative shortens it). */
+/** Adds days to a subscription, or takes them away (negative): it never ends before it starts. */
 export async function extendSubscription(id: string, days: number): Promise<void> {
-  await (await db()).query("update subscriptions set ends_at = ends_at + make_interval(days => $2) where id = $1", [id, days]);
+  await (await db()).query("update subscriptions set ends_at = greatest(starts_at, ends_at + make_interval(days => $2)) where id = $1", [id, days]);
+}
+
+/** Sets the last day of a subscription (a calendar date): it ends at the close of that day, Tehran time. */
+export async function setSubscriptionEnd(id: string, lastDay: string): Promise<void> {
+  await (await db()).query(
+    "update subscriptions set ends_at = greatest(starts_at, (($2::date + 1)::timestamp at time zone 'Asia/Tehran')) where id = $1",
+    [id, lastDay],
+  );
 }
 
 export async function setRevoked(id: string, revoked: boolean): Promise<void> {

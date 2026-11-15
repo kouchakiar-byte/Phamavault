@@ -1,11 +1,11 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { Bell, CalendarCheck, FolderKanban, Sparkles, Users } from "lucide-react";
+import { Bell, CalendarCheck, FolderKanban, ListTodo, Sparkles, Users } from "lucide-react";
 import { Container } from "@/components/ui";
 import type { Locale } from "@/i18n/config";
 import { href } from "@/lib/paths";
 import { UNITS } from "@/lib/rnd/model";
-import type { Access } from "@/lib/rnd/server";
+import { unreadNotices, type Access } from "@/lib/rnd/server";
 
 import { bi } from "@/i18n/bi";
 
@@ -13,7 +13,8 @@ export const rndTitle = bi("Workspace", "فضای کاری");
 export const rndHref = (locale: Locale, path = "") => href(locale, `rnd${path ? `/${path}` : ""}`);
 
 /** The private workspace's frame: always Persian and right to left, with its own navigation. */
-export function RndFrame({ locale, access, alerts, active, children }: { locale: Locale; access: Access; alerts: number; active: "home" | "alerts" | "team" | "project" | "weekly" | "glass"; children: ReactNode }) {
+export async function RndFrame({ locale, access, alerts, active, children }: { locale: Locale; access: Access; alerts: number; active: "home" | "alerts" | "team" | "project" | "weekly" | "glass" | "tasks"; children: ReactNode }) {
+  const unread = await unreadNotices(access).catch(() => 0);
   const link = (key: typeof active, path: string, label: string, icon: ReactNode, badge?: number) => (
     <Link href={rndHref(locale, path)} aria-current={active === key ? "page" : undefined}
       className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-semibold transition ${active === key ? "bg-vault-900 text-white" : "text-vault-900 hover:bg-vault-50"}`}>
@@ -34,6 +35,7 @@ export function RndFrame({ locale, access, alerts, active, children }: { locale:
           <nav className="flex flex-wrap gap-1">
             {link("home", "", "پروژه‌ها", <FolderKanban className="size-4" aria-hidden="true" />)}
             {link("glass", "glass", "داشبورد شیشه‌ای", <Sparkles className="size-4" aria-hidden="true" />)}
+            {link("tasks", "tasks", "کارهای من", <ListTodo className="size-4" aria-hidden="true" />, unread)}
             {link("alerts", "alerts", "هشدارهای من", <Bell className="size-4" aria-hidden="true" />, alerts)}
             {access.role !== "member" && link("weekly", "weekly", "خلاصه هفتگی", <CalendarCheck className="size-4" aria-hidden="true" />)}
             {access.role === "owner" && link("team", "team", "تیم و دسترسی‌ها", <Users className="size-4" aria-hidden="true" />)}

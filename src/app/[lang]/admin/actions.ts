@@ -13,9 +13,10 @@ import { setRequestHandled } from "@/lib/service-requests";
 import { mailConfigured, sendMail } from "@/lib/mail";
 import { logMail } from "@/lib/mail-log";
 import { decodeMark } from "@/lib/watermark";
+import { fromJalali } from "@/lib/rnd/jalali";
 import { TEST_PAYMENT_TOMAN, createTestPayment, finishTestPayment, setTestAuthority } from "@/lib/test-payments";
 import { onlinePaymentEnabled, requestPayment } from "@/lib/zarinpal";
-import { activateOrder, extendSubscription, grantManually, setRevoked, setSeats } from "@/lib/subscriptions";
+import { activateOrder, extendSubscription, setSubscriptionEnd, grantManually, setRevoked, setSeats } from "@/lib/subscriptions";
 
 export type AdminState = { error?: keyof typeof account.errors; ok?: boolean };
 
@@ -60,13 +61,24 @@ export async function removeOrder(_: AdminState, form: FormData): Promise<AdminS
   return { ok: true };
 }
 
+/** Adds or takes away days ("dir" = "sub" reduces), from the subscriptions table. */
 export async function extend(form: FormData): Promise<void> {
   await requireAdmin();
   const subscriptionId = id(form);
-  const days = Math.trunc(Number(form.get("days")));
-  if (subscriptionId && Number.isFinite(days) && days !== 0 && Math.abs(days) <= 3660) {
-    await extendSubscription(subscriptionId, days);
+  const days = Math.abs(Math.trunc(Number(form.get("days"))));
+  const sign = text(form, "dir") === "sub" ? -1 : 1;
+  if (subscriptionId && Number.isFinite(days) && days > 0 && days <= 3660) {
+    await extendSubscription(subscriptionId, sign * days);
   }
+  refresh();
+}
+
+/** Sets the exact last day of a subscription, typed as a Solar Hijri (or Gregorian) date. */
+export async function setEnd(form: FormData): Promise<void> {
+  await requireAdmin();
+  const subscriptionId = id(form);
+  const day = fromJalali(text(form, "end"));
+  if (subscriptionId && day) await setSubscriptionEnd(subscriptionId, day);
   refresh();
 }
 

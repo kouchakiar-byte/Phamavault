@@ -99,3 +99,14 @@ export function waitingOn(p: Project, it: Item): Item[] {
   const all = p.stages.flatMap((s) => s.items);
   return it.deps.map((c) => all.find((x) => x.code === c)).filter((x): x is Item => Boolean(x && !x.done));
 }
+
+/** Where an activity stands, from its dates, its progress and its predecessors. */
+export type ActivityStatus = "done" | "late" | "active" | "waiting" | "ready" | "upcoming";
+export function activityStatus(p: Project, it: Item): ActivityStatus {
+  if (it.done) return "done";
+  const now = day(today());
+  if (isDate(it.due) && day(it.due) < now) return "late";
+  if ((+(it.pct ?? 0) || 0) > 0 || it.aStart) return "active";
+  if (isDate(it.start) && day(it.start) <= now) return waitingOn(p, it).length ? "waiting" : "ready";
+  return "upcoming";
+}
