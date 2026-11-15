@@ -211,6 +211,35 @@ export async function addMember(subscriptionId: string, ownerId: string, mobile:
   });
 }
 
+/** Admin: puts a registered user in a team subscription, if a seat is free. */
+export async function addMemberAsAdmin(subscriptionId: string, mobile: string): Promise<"ok" | "full" | "denied" | "exists"> {
+  return transaction(async (client) => {
+    const { rows } = await client.query<{ seats: number; used: number; here: boolean }>(
+      `select s.seats, (select count(*)::int from subscription_members m where m.subscription_id = s.id) as used,
+              exists (select 1 from subscription_members m where m.subscription_id = s.id and m.mobile = $2) as here
+       from subscriptions s where s.id = $1 and s.plan = 'team' for update`,
+      [subscriptionId, mobile],
+    );
+    if (!rows[0]) return "denied";
+    if (rows[0].here) return "exists";
+    if (rows[0].used >= rows[0].seats) return "full";
+    await client.query("insert into subscription_members (subscription_id, mobile) values ($1, $2)", [subscriptionId, mobile]);
+    return "ok";
+  });
+}
+
+/** Admin: takes a user out of a team subscription (the owner keeps their seat only while listed). */
+export async function removeMemberAsAdmin(subscriptionId: string, mobile: string): Promise<void> {
+  await (await db()).query("delete from subscription_members where subscription_id = $1 and mobile = $2", [subscriptionId, mobile]);
+}
+
+/** Names of the accounts behind a list of mobiles (members are stored by mobile). */
+export async function namesForMobiles(mobiles: string[]): Promise<Map<string, string>> {
+  if (!mobiles.length) return new Map();
+  const { rows } = await (await db()).query<{ mobile: string; name: string }>("select mobile, name from users where mobile = any($1::text[])", [mobiles]);
+  return new Map(rows.map((r) => [r.mobile, r.name]));
+}
+
 export async function removeMember(subscriptionId: string, ownerId: string, mobile: string): Promise<void> {
   await (await db()).query(
     `delete from subscription_members m using subscriptions s

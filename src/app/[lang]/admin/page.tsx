@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense, type ReactNode } from "react";
 import { notFound, redirect } from "next/navigation";
 import { connection } from "next/server";
-import { AddUserForm, DeleteOrderButton, DeleteUserButton, GrantForm, MailTestForm, ResetPasswordForm, SendInvoiceButton, TestPaymentForm, TraceForm } from "@/components/account/admin-forms";
+import { AddUserForm, DeleteOrderButton, DeleteUserButton, GrantForm, SubscriptionMemberForm, MailTestForm, ResetPasswordForm, SendInvoiceButton, TestPaymentForm, TraceForm } from "@/components/account/admin-forms";
 import { invoiceNumber } from "@/lib/invoice";
 import { Loading, accountMetadata } from "@/components/account/shell";
 import { BiTitle, Container } from "@/components/ui";
@@ -17,7 +17,7 @@ import { daysUntil, formatDate, formatNumber } from "@/lib/format";
 import { planName, periodLabel, sectionsLabel } from "@/lib/labels";
 import { recentOrders, recentUsers, stats } from "@/lib/orders";
 import { href } from "@/lib/paths";
-import { paywallEnabled, recentSubscriptions, subscriptionStatus } from "@/lib/subscriptions";
+import { namesForMobiles, paywallEnabled, recentSubscriptions, subscriptionStatus } from "@/lib/subscriptions";
 import { mailConfigured } from "@/lib/mail";
 import { recentMailLog } from "@/lib/mail-log";
 import { downloadStats } from "@/lib/handbook-downloads";
@@ -35,7 +35,7 @@ import { getSection } from "@/content/sections";
 import { referralCopy } from "@/content/referrals";
 import { alertCopy } from "@/content/supplier-alerts";
 import { bi } from "@/i18n/bi";
-import { cancelOrder, changeSeats, extend, markOrderPaid, setBlocked, setEnd, toggleRequestHandled, toggleRevoked } from "./actions";
+import { cancelOrder, changeSeats, extend, markOrderPaid, removeSubscriptionMember, setBlocked, setEnd, toggleRequestHandled, toggleRevoked } from "./actions";
 import { toJalali } from "@/lib/rnd/jalali";
 
 /** The last day a subscription is valid, Tehran time, as a Solar Hijri date. */
@@ -99,6 +99,7 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
   if (!user.isAdmin) notFound();
 
   const [numbers, orders, subscriptions, requests, users, mailLog, downloads, testPayments, query, meter, demand, rewards, guests, iranStore] = await Promise.all([stats(), recentOrders(), recentSubscriptions(), recentServiceRequests(), recentUsers(), recentMailLog(), downloadStats(), recentTestPayments(), searchParams, meteringThisMonth(), alertDemand().catch(() => []), recentRewards().catch(() => []), guestStatsThisMonth().catch(() => []), iranDrugStats().catch(() => null)]);
+  const names = await namesForMobiles([...new Set(subscriptions.flatMap((s) => s.members))]).catch(() => new Map<string, string>());
   const mt = t.metering;
   const tp = t.testPayment;
   const u = t.usersList;
@@ -628,6 +629,23 @@ async function Admin({ locale, searchParams }: { locale: Locale; searchParams: P
                       <span className="num">
                         {formatNumber(s.members.length, locale)} / {formatNumber(s.seats, locale)}
                       </span>
+                      {s.plan === "team" && (
+                        <ul className="mt-1.5 flex flex-col gap-1">
+                          {s.members.map((m) => (
+                            <li key={m} className="flex items-center gap-1.5 text-xs">
+                              <span className="font-mono" dir="ltr">{m}</span>
+                              <span className={names.has(m) ? "text-ink" : "text-amber-700"}>{names.get(m) ?? t.notSignedUp[locale]}</span>
+                              {m === s.ownerMobile && <span className="rounded-full bg-capsule-50 px-1.5 text-[10px] font-bold text-capsule-700">{t.ownerTag[locale]}</span>}
+                              <form action={removeSubscriptionMember}>
+                                <input type="hidden" name="id" value={s.id} />
+                                <input type="hidden" name="mobile" value={m} />
+                                <button type="submit" className="text-[11px] text-red-700 hover:underline">{t.removeFromTeam[locale]}</button>
+                              </form>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      {s.plan === "team" && s.members.length < s.seats && <SubscriptionMemberForm locale={locale} subscription={s.id} />}
                       {s.plan === "team" && (
                         <form action={changeSeats} className="mt-1.5 flex gap-1">
                           <input type="hidden" name="id" value={s.id} />

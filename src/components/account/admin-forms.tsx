@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
-import { addUser, deleteUser, grant, removeOrder, resetPassword, sendInvoice, startTestPayment, testMail, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
+import { addSubscriptionMember, addUser, deleteUser, grant, removeOrder, resetPassword, sendInvoice, startTestPayment, testMail, traceCopy, type AdminState } from "@/app/[lang]/admin/actions";
 import { account } from "@/content/account";
 import { copy } from "@/content/site";
 import type { Locale } from "@/i18n/config";
@@ -286,6 +286,23 @@ export function DeleteOrderButton({ id, locale, hasSubscription }: { id: string;
       <button type="button" onClick={() => setConfirm(false)} className="rounded-md px-2 py-1 text-xs text-muted">
         {c.keep[locale]}
       </button>
+    </form>
+  );
+}
+
+/** Adds a registered user to a company's team subscription, from the subscriptions table. */
+export function SubscriptionMemberForm({ locale, subscription }: { locale: Locale; subscription: string }) {
+  const [state, action, pending] = useActionState(addSubscriptionMember, {});
+  return (
+    <form action={action} className="mt-1.5">
+      <input type="hidden" name="id" value={subscription} />
+      <div className="flex gap-1">
+        <input name="mobile" required inputMode="tel" dir="ltr" placeholder="09xxxxxxxxx" aria-label={auth.mobile[locale]} className="field-input !w-32 !py-1 font-mono text-xs" />
+        <button type="submit" disabled={pending} className="rounded-full border border-line px-2.5 py-1 text-xs font-semibold text-molecule-700 hover:border-molecule-500 disabled:opacity-50">
+          + {t.addToTeam[locale]}
+        </button>
+      </div>
+      {state.error && <p className="mt-1 max-w-56 text-xs text-red-700">{account.errors[state.error][locale]}</p>}
     </form>
   );
 }
