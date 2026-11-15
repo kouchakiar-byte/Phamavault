@@ -16,7 +16,7 @@ import { decodeMark } from "@/lib/watermark";
 import { fromJalali } from "@/lib/rnd/jalali";
 import { TEST_PAYMENT_TOMAN, createTestPayment, finishTestPayment, setTestAuthority } from "@/lib/test-payments";
 import { onlinePaymentEnabled, requestPayment } from "@/lib/zarinpal";
-import { activateOrder, extendSubscription, setSubscriptionEnd, grantManually, setRevoked, setSeats } from "@/lib/subscriptions";
+import { activateOrder, addMemberAsAdmin, extendSubscription, removeMemberAsAdmin, setSubscriptionEnd, grantManually, setRevoked, setSeats } from "@/lib/subscriptions";
 
 export type AdminState = { error?: keyof typeof account.errors; ok?: boolean };
 
@@ -79,6 +79,29 @@ export async function setEnd(form: FormData): Promise<void> {
   const subscriptionId = id(form);
   const day = fromJalali(text(form, "end"));
   if (subscriptionId && day) await setSubscriptionEnd(subscriptionId, day);
+  refresh();
+}
+
+/** Admin: adds a registered user to a company's team subscription, within its seats. */
+export async function addSubscriptionMember(_: AdminState, form: FormData): Promise<AdminState> {
+  await requireAdmin();
+  const subscriptionId = id(form);
+  const mobile = normalizeMobile(text(form, "mobile"));
+  if (!subscriptionId || !mobile) return { error: "mobile" };
+  if (!(await userIdByMobile(mobile))) return { error: "userNotFound" };
+  const result = await addMemberAsAdmin(subscriptionId, mobile);
+  if (result === "full") return { error: "full" };
+  if (result === "exists") return { error: "memberExists" };
+  if (result === "denied") return { error: "purchase" };
+  refresh();
+  return { ok: true };
+}
+
+export async function removeSubscriptionMember(form: FormData): Promise<void> {
+  await requireAdmin();
+  const subscriptionId = id(form);
+  const mobile = normalizeMobile(text(form, "mobile"));
+  if (subscriptionId && mobile) await removeMemberAsAdmin(subscriptionId, mobile);
   refresh();
 }
 
