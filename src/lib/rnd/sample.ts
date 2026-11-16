@@ -3,7 +3,7 @@
  * about six months into a 22-month plan, in formulation optimisation. Every value is illustrative and the project says so in
  * its name and notes; suppliers and people are placeholders, not real companies or staff.
  */
-import { DAY, ms, newProject, toISO, today, uid, type Project, type Row, type Unit } from "./model";
+import { DAY, GATE_CHECKS, ms, newProject, toISO, today, uid, type Project, type Row, type Unit } from "./model";
 
 export function sampleProject(): Project {
   // The plan is made from today, then moved back in time so that today falls in formulation
@@ -49,6 +49,21 @@ export function sampleProject(): Project {
   }
   for (const s of p.stages) if (s.items.every((it) => it.done)) s.gate = { decision: "go", by: "کمیته R&D", date: s.items.find((i) => i.gate)?.doneAt ?? s.due, note: "" };
   if (p.stages[2].gate.decision === "go") p.stages[2].gate.note = "مواد اولیه تأیید QC شدند؛ ورود به فرمولاسیون.";
+  // The two gates already passed carry their review, as a project manager would have filled them in.
+  const reviewed: Record<string, { summary: string; cond: string; actions: [string, string][] }> = {
+    p0: { summary: "Brief محصول و برآورد اولیه بودجه ارائه شد. بازار متفورمین 500 mg روکش‌دار رقابتی است و مزیت پروژه، تأمین API از دو منبع است.", cond: "Go؛ برآورد تفصیلی بودجه در Gate 1 ارائه شود.", actions: [["تهیه برآورد تفصیلی هزینه و منابع", "مدیر پروژه"]] },
+    p1: { summary: "QTPP و CQAها مرور شد. Patent مانعی ندارد. امکان‌سنجی فنی خط گرانول‌سازی تأیید شد.", cond: "Go؛ ارزیابی دومین تأمین‌کننده API پیش از خرید Scale-up کامل شود.", actions: [["ارزیابی صلاحیت تأمین‌کننده دوم API", "تضمین کیفیت"], ["به‌روزرسانی Risk register پس از انتخاب API", "مدیر پروژه"]] },
+  };
+  for (const s of p.stages) {
+    const r = reviewed[s.key];
+    if (!r || s.gate.decision !== "go") continue;
+    const at = s.gate.date;
+    Object.assign(s.gate, {
+      checks: (GATE_CHECKS[s.key] ?? []).map(([k, t]) => ({ k, t, v: "yes" as const })),
+      meet: at, attendees: "مدیر پروژه، فرمولاسیون، آنالیز و QC، تضمین کیفیت، ثبت و رگولاتوری", summary: r.summary, cond: r.cond,
+      actions: r.actions.map(([t, who]) => ({ id: uid("a"), t, who, done: true })),
+    });
+  }
   const find = (code: string) => p.stages.flatMap((x) => x.items).find((x) => x.code === code)!;
   Object.assign(find("4.7"), { pri: "high", note: "منتظر نتایج تکراری Dissolution در pH 6.8" });
   find("4.3").comments = [

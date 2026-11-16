@@ -11,6 +11,7 @@ import type { Op } from "@/lib/rnd/server";
 import { saveBlob } from "@/lib/doc-export";
 import { fromJalali, maskJalali, toJalali } from "@/lib/rnd/jalali";
 import { Activities, type Person } from "./activities";
+import { RaciMatrix } from "./raci";
 import { Bar, C, Donut, RiskHeat, SCurve, Trend, fmt } from "./charts";
 import { Cell, Panel, Select, btn, inp, panel, pill, tone, when, type Ctx, type Viewer } from "./fields";
 export type { Viewer } from "./fields";
@@ -32,7 +33,7 @@ function csv(p: Project, key: ListKey) {
   saveBlob(new Blob(["﻿" + [head, ...rows].join("\r\n")], { type: "text/csv;charset=utf-8" }), `${p.code || "project"}-${key}.csv`);
 }
 
-type Tab = "overview" | "stages" | ListKey | "stability" | "budget" | "log";
+type Tab = "overview" | "stages" | "raci" | ListKey | "stability" | "budget" | "log";
 
 export function ProjectView({ initial, viewer, homeHref, reportHref, people = [] }: { initial: Project; viewer: Viewer; homeHref: string; reportHref?: string; people?: Person[] }) {
   const [p, setP] = useState(initial);
@@ -64,6 +65,7 @@ export function ProjectView({ initial, viewer, homeHref, reportHref, people = []
     return () => clearInterval(t);
   }, [p.id]);
 
+  const gateHref = reportHref ? (stage: string) => `${reportHref.replace("/report?", "/gate?")}&s=${encodeURIComponent(stage)}` : undefined;
   const h = health(p), pc = progress(p), plv = Math.round(plannedAt(p, nowMs())), v = sv(p);
   const myItems = useMemo(() => p.stages.flatMap((s) => s.items.map((it) => ({ ...it, s }))).filter((x) => !member || x.unit === viewer.unit), [p, member, viewer.unit]);
   const myDone = myItems.filter((x) => x.done).length;
@@ -73,6 +75,7 @@ export function ProjectView({ initial, viewer, homeHref, reportHref, people = []
     [
       ["overview", "نمای کلی", 0],
       ["stages", member ? "فعالیت‌های من" : "برنامه و فعالیت‌ها", myItems.filter((x) => !x.done).length],
+      ["raci", "RACI", 0],
       ["trials", "فرمولاسیون", p.trials.length],
       ["methods", "آنالیز", p.methods.length],
       ["stability", "پایداری", p.stability.length],
@@ -146,7 +149,8 @@ export function ProjectView({ initial, viewer, homeHref, reportHref, people = []
       </nav>
 
       {tab === "overview" && <Overview p={p} viewer={viewer} mine={mine} send={send} setTab={setTab} homeHref={homeHref} />}
-      {tab === "stages" && <Activities ctx={{ p, viewer, mine, send }} people={people} />}
+      {tab === "stages" && <Activities ctx={{ p, viewer, mine, send, gateHref }} people={people} />}
+      {tab === "raci" && <RaciMatrix ctx={{ p, viewer, mine, send }} />}
       {tab === "risks" && (
         <div className="grid gap-4 lg:grid-cols-2">
           <Panel title="ماتریس ریسک (5×5)" aside="امتیاز = شدت × احتمال"><RiskHeat risks={p.risks} /></Panel>

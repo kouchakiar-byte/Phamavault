@@ -71,7 +71,7 @@ export function Panel({ title, aside, children, className = "" }: { title: strin
 }
 export const UnitTag = ({ u }: { u: Unit }) => <span className={`${pill} bg-vault-50 text-vault-800`}>{UNITS[u]}</span>;
 
-export type Ctx = { p: Project; viewer: Viewer; mine: (u: Unit) => boolean; send: (ops: Op[]) => Promise<void> };
+export type Ctx = { p: Project; viewer: Viewer; mine: (u: Unit) => boolean; send: (ops: Op[]) => Promise<void>; gateHref?: (stage: string) => string };
 
 export function Comments({ it, s, ctx }: { it: Item; s: Stage; ctx: Ctx }) {
   const [text, setText] = useState("");
