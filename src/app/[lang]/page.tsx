@@ -23,7 +23,6 @@ import {
 import { goldWord, VaultWord, withBrand } from "@/components/brand";
 import { LogoMark } from "@/components/logo";
 import { PriceEstimator } from "@/components/price-estimator";
-import { SupplierSpotlight } from "@/components/supplier-spotlight";
 import { WeeklyCase } from "@/components/weekly-case";
 import { BiTitle, ButtonLink, Container, MoleculePattern, SectionHead } from "@/components/ui";
 import { calculation, calculations, featuredCalculations } from "@/content/calculations";
@@ -35,6 +34,7 @@ import { HeroStats } from "@/components/hero-stats";
 import { LabCollage } from "@/components/lab-collage";
 import ctdPhoto from "@/assets/photos/ctd-dossier.webp";
 import flaskPhoto from "@/assets/photos/flask.webp";
+import pillsYellow from "@/assets/photos/pills-yellow.webp";
 
 // The platform's sections, CTD compilation included; enterprise solutions are a plan, not a section.
 const platformSections = sections.filter((s) => s.slug !== "enterprise");
@@ -310,7 +310,7 @@ export default async function HomePage() {
       </div>
 
       {/* Sections */}
-      <section id="sections" className="scroll-mt-20 bg-paper py-14 lg:py-24">
+      <section id="intro" className="scroll-mt-20 bg-paper py-14 lg:py-24">
         <Container>
           {/* Intro and who it is for, beside the researchers collage with floating capsules and tablets */}
           <div className="grid items-center gap-8 lg:grid-cols-[1.35fr_1fr] lg:gap-14">
@@ -338,38 +338,6 @@ export default async function HomePage() {
               <LabCollage alt={copy.statement.photoAlt[locale]} />
             </div>
           </div>
-          <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 lg:grid-cols-3">
-            {platformSections.map(({ slug, href: path, plate, icon: Icon, title, description }) => {
-              const highlight = sectionHighlight(slug, num, counts);
-              return (
-                <article
-                  key={slug}
-                  className="group relative flex flex-col rounded-card border border-vault-100 bg-vault-50 p-4 shadow-sm sm:p-7 shadow-vault-900/5 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-capsule-50 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-capsule-100 hover:shadow-xl hover:shadow-capsule-500/25 focus-within:scale-[0.97] focus-within:border-capsule-400 motion-reduce:transform-none"
-                >
-                  <div className="flex items-start justify-between">
-                    <span className="flex size-10 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition sm:size-12 duration-300 group-hover:bg-gradient-to-br group-hover:bg-capsule-400 group-hover:from-capsule-400 group-hover:to-capsule-600 group-hover:text-vault-950">
-                      <Icon className="size-6" aria-hidden="true" />
-                    </span>
-                    <span className="hidden rounded border border-line bg-white/60 px-2 py-0.5 font-mono text-xs tracking-widest text-muted transition group-hover:border-capsule-400 group-hover:text-capsule-700 sm:inline" dir="ltr">
-                      {plate}
-                    </span>
-                  </div>
-                  <h3 className="mt-4 text-sm font-bold leading-snug text-vault-900 sm:mt-6 sm:text-lg">
-                    <Link href={href(locale, path)} className="after:absolute after:inset-0">
-                      <BiTitle text={title} locale={locale} stacked secondaryClassName="mt-0.5 hidden text-[0.72em] font-medium sm:block" />
-                    </Link>
-                  </h3>
-                  <p className="mt-3 hidden text-sm leading-relaxed text-muted line-clamp-2 lg:block">{description[locale]}</p>
-                  {highlight && (
-                    <p className="mt-3 self-start rounded-md bg-molecule-50 px-2.5 py-1 text-xs font-bold text-molecule-700 transition group-hover:bg-white/70 group-hover:text-capsule-700">
-                      {highlight[locale]}
-                    </p>
-                  )}
-                  <span className="mt-auto hidden pt-6 text-sm font-bold text-molecule-700 transition group-hover:text-capsule-700 sm:block">{sectionsIntro.open[locale]}</span>
-                </article>
-              );
-            })}
-          </div>
         </Container>
       </section>
 
@@ -380,6 +348,50 @@ export default async function HomePage() {
         </Container>
       </section>
 
+      {/* The sections, under a strip of the pills photo */}
+      <section id="sections" className="scroll-mt-20 bg-white py-16 lg:py-20">
+        <Container>
+          <div className="overflow-hidden rounded-3xl border border-vault-100 bg-gradient-to-b from-white to-paper shadow-xl shadow-vault-900/5">
+            <div className="relative h-28 sm:h-40">
+              <Image src={pillsYellow} alt="" fill sizes="(min-width: 1280px) 1200px, 100vw" placeholder="blur" className="object-cover object-[50%_40%]" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white" aria-hidden="true" />
+            </div>
+            <div className="relative grid grid-cols-2 gap-3 px-4 pb-4 sm:gap-6 sm:px-8 sm:pb-8 lg:grid-cols-3">
+              {platformSections.map(({ slug, href: path, plate, icon: Icon, title, description }) => {
+                const highlight = sectionHighlight(slug, num, counts);
+                return (
+                  <article
+                    key={slug}
+                    className="group relative flex flex-col rounded-card border border-vault-100 bg-vault-50 p-4 shadow-sm sm:p-7 shadow-vault-900/5 transition duration-300 ease-out hover:scale-[0.97] hover:border-capsule-400 hover:bg-capsule-50 hover:bg-gradient-to-br hover:from-capsule-50 hover:to-capsule-100 hover:shadow-xl hover:shadow-capsule-500/25 focus-within:scale-[0.97] focus-within:border-capsule-400 motion-reduce:transform-none"
+                  >
+                    <div className="flex items-start justify-between">
+                      <span className="flex size-10 items-center justify-center rounded-xl bg-vault-900 text-molecule-400 transition sm:size-12 duration-300 group-hover:bg-gradient-to-br group-hover:bg-capsule-400 group-hover:from-capsule-400 group-hover:to-capsule-600 group-hover:text-vault-950">
+                        <Icon className="size-6" aria-hidden="true" />
+                      </span>
+                      <span className="hidden rounded border border-line bg-white/60 px-2 py-0.5 font-mono text-xs tracking-widest text-muted transition group-hover:border-capsule-400 group-hover:text-capsule-700 sm:inline" dir="ltr">
+                        {plate}
+                      </span>
+                    </div>
+                    <h3 className="mt-4 text-sm font-bold leading-snug text-vault-900 sm:mt-6 sm:text-lg">
+                      <Link href={href(locale, path)} className="after:absolute after:inset-0">
+                        <BiTitle text={title} locale={locale} stacked secondaryClassName="mt-0.5 hidden text-[0.72em] font-medium sm:block" />
+                      </Link>
+                    </h3>
+                    <p className="mt-3 hidden text-sm leading-relaxed text-muted line-clamp-2 lg:block">{description[locale]}</p>
+                    {highlight && (
+                      <p className="mt-3 self-start rounded-md bg-molecule-50 px-2.5 py-1 text-xs font-bold text-molecule-700 transition group-hover:bg-white/70 group-hover:text-capsule-700">
+                        {highlight[locale]}
+                      </p>
+                    )}
+                    <span className="mt-auto hidden pt-6 text-sm font-bold text-molecule-700 transition group-hover:text-capsule-700 sm:block">{sectionsIntro.open[locale]}</span>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* Case of the week */}
       <section id="case" className="scroll-mt-20 bg-white pt-12 lg:pt-16">
         <Container>
@@ -387,11 +399,8 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      {/* Featured: the supplier bank */}
-      <SupplierSpotlight locale={locale} />
-
       {/* CTD compilation service */}
-      <section id="ctd" className="scroll-mt-20 pb-20 lg:pb-28">
+      <section id="ctd" className="scroll-mt-20 pb-20 pt-12 lg:pb-28 lg:pt-16">
         <Container>
           <div className="relative isolate grid gap-10 overflow-hidden rounded-3xl bg-vault-900 px-6 py-12 text-white shadow-2xl shadow-vault-900/20 sm:px-12 lg:grid-cols-[1.4fr_1fr] lg:items-center lg:py-16">
             {/* A dossier being reviewed: behind the whole card on phones, the end half on desktop, fading into the navy */}
