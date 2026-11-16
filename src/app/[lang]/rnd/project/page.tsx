@@ -14,13 +14,14 @@ export const generateMetadata = () => accountMetadata(rndTitle);
 type Search = Promise<Record<string, string | string[] | undefined>>;
 
 async function Project({ locale, searchParams }: { locale: Locale; searchParams: Search }) {
-  const id = String((await searchParams).id ?? "");
+  const q = await searchParams;
+  const id = String(q.id ?? ""), tab = typeof q.tab === "string" ? q.tab : undefined;
   const { access, urgent } = await requireAccess(locale, `${rndHref(locale, "project")}?id=${encodeURIComponent(id)}`);
   const p = await loadProject(id);
   if (!p) notFound();
   return (
     <RndFrame locale={locale} access={access} alerts={urgent} active="project">
-      <ProjectView key={p.id} initial={filterProject(p, access)} viewer={{ role: access.role, unit: access.unit, name: access.user.name }} homeHref={rndHref(locale)}
+      <ProjectView key={p.id} tab={tab} initial={filterProject(p, access)} viewer={{ role: access.role, unit: access.unit, name: access.user.name }} homeHref={rndHref(locale)}
         people={access.role === "owner" ? [{ id: access.user.id, name: `${access.user.name || access.user.mobile} (خودم)`, unit: "owner" }, ...(await rndPeople())] : []}
         reportHref={access.role === "member" ? undefined : `${rndHref(locale, "report")}?id=${p.id}`} />
     </RndFrame>

@@ -9,7 +9,8 @@ import type { Locale } from "@/i18n/config";
 import { getLocale } from "@/i18n/locale";
 import { requireAccess } from "@/lib/rnd/guard";
 import { HEALTH, P_STATUS, P_TYPE, PRIO, T, UNITS, alertsOf, curStage, daysTo, health, isOpen, progress, riskScore, spent, sv, type Health, type Project } from "@/lib/rnd/model";
-import { filterProject, loadProjects, type Access } from "@/lib/rnd/server";
+import { filterProject, loadProjects, rndPeople, type Access } from "@/lib/rnd/server";
+import { StartGuide } from "@/components/rnd/start-guide";
 
 // A neutral title: the tab and the 404 shown to anyone without access do not say what is here.
 export const generateMetadata = () => accountMetadata(rndTitle);
@@ -30,7 +31,7 @@ function Kpi({ label, value, sub, tone = "" }: { label: string; value: string | 
   );
 }
 
-function Owner({ locale, ps, access }: { locale: Locale; ps: Project[]; access: Access }) {
+function Owner({ locale, ps, access, people }: { locale: Locale; ps: Project[]; access: Access; people: number }) {
   const open = ps.filter(isOpen), active = ps.filter((p) => p.status === "active");
   const hc: Record<Health, number> = { ok: 0, risk: 0, late: 0, hold: 0, done: 0, cancelled: 0 };
   for (const p of open) hc[health(p)]++;
@@ -48,6 +49,7 @@ function Owner({ locale, ps, access }: { locale: Locale; ps: Project[]; access: 
   const list = [...ps].sort((a, b) => Number(!isOpen(a)) - Number(!isOpen(b)) || order[a.priority] - order[b.priority] || sv(a) - sv(b));
   return (
     <div className="flex flex-col gap-4">
+      {access.role === "owner" && <StartGuide ps={ps} people={people} href={(path) => rndHref(locale, path)} />}
       <section className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
         <Kpi label="پروژه‌های در جریان" value={open.length} sub={`${hc.hold} متوقف · ${ps.length} کل`} />
         <Kpi label="میانگین پیشرفت" value={`${avg}%`} sub={<>انحراف از برنامه: <bdi dir="ltr">{`${avgSv > 0 ? "+" : ""}${avgSv}%`}</bdi></>} />
@@ -102,7 +104,7 @@ function Owner({ locale, ps, access }: { locale: Locale; ps: Project[]; access: 
           </div>
         </div>
       </section>
-      <section className={card}>
+      <section id="projects" className={`${card} scroll-mt-20`}>
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-base font-bold text-vault-900">فهرست پروژه‌ها</h2>
           <div className="flex flex-wrap items-center gap-2">
@@ -179,7 +181,7 @@ async function Workspace({ locale }: { locale: Locale }) {
   const ps = (await loadProjects()).map((p) => filterProject(p, access));
   return (
     <RndFrame locale={locale} access={access} alerts={urgent} active="home">
-      {access.role === "member" ? <Member locale={locale} ps={ps} access={access} /> : <Owner locale={locale} ps={ps} access={access} />}
+      {access.role === "member" ? <Member locale={locale} ps={ps} access={access} /> : <Owner locale={locale} ps={ps} access={access} people={access.role === "owner" ? (await rndPeople().catch(() => [])).length : 0} />}
     </RndFrame>
   );
 }
