@@ -12,6 +12,10 @@ import validationPage3 from "@/assets/handbooks/validation-page-3.webp";
 import hplcPage1 from "@/assets/handbooks/hplc-page-1.webp";
 import hplcPage2 from "@/assets/handbooks/hplc-page-2.webp";
 import hplcPage3 from "@/assets/handbooks/hplc-page-3.webp";
+import gcCover from "@/assets/handbooks/gc-cover.webp";
+import gcPage1 from "@/assets/handbooks/gc-page-1.webp";
+import gcPage2 from "@/assets/handbooks/gc-page-2.webp";
+import gcPage3 from "@/assets/handbooks/gc-page-3.webp";
 import oosCover from "@/assets/handbooks/oos-cover.webp";
 import oosPage1 from "@/assets/handbooks/oos-page-1.webp";
 import oosPage2 from "@/assets/handbooks/oos-page-2.webp";
@@ -39,6 +43,41 @@ export type FreeHandbook = {
 
 /** Weekly handbooks, newest first. Only the newest is free; earlier issues are for subscribers. */
 export const freeHandbooks: FreeHandbook[] = [
+  {
+    slug: "gc",
+    issue: 5,
+    published: "2026-11-16",
+    title: bi("Gas chromatography and headspace — an applied handbook", "راهنمای کاربردی کروماتوگرافی گازی (GC) و Headspace"),
+    subtitle: bi(
+      "From principles, inlets, columns and detectors to static headspace, residual solvents under ICH Q3C(R9) and USP <467>, system suitability and allowable adjustments under the harmonized USP <621>, DEG/EG, nitrosamines, validation, troubleshooting, case studies and worked calculations.",
+      "از اصول، Inlet، ستون و دتکتور تا Static headspace، Residual solvents طبق ICH Q3C(R9) و USP <467>، System suitability و تنظیمات مجاز طبق USP <621> هماهنگ‌شده، DEG/EG، Nitrosamineها، صحه‌گذاری، عیب‌یابی، مطالعات موردی و مسائل محاسباتی حل‌شده.",
+    ),
+    pdf: "pharmavault-gc-handbook.pdf",
+    sizeMb: 1.9,
+    pages: 63,
+    cover: gcCover,
+    coverAlt: bi("Cover of the PharmaVault gas chromatography and headspace handbook", "جلد هندبوک کروماتوگرافی گازی و Headspace فارماوالت"),
+    samples: [gcPage1, gcPage2, gcPage3],
+    stats: [
+      { value: 63, label: bi("pages", "صفحه") },
+      { value: 12, label: bi("chapters", "فصل") },
+      { value: 8, label: bi("case studies", "مطالعه موردی") },
+      { value: 12, label: bi("worked calculations", "مسئله حل‌شده") },
+    ],
+    chapters: [
+      bi("Principles: retention, efficiency, resolution and van Deemter", "اصول: نگهداری، بازده، Resolution و van Deemter"),
+      bi("The instrument: carrier gas, split/splitless inlet, liner and oven", "دستگاه: گاز حامل، Inlet از نوع Split/splitless، Liner و آون"),
+      bi("Columns, stationary phases, USP G codes and phase ratio", "ستون‌ها، فازهای ساکن، کدهای G در USP و نسبت فاز"),
+      bi("Detectors: FID, TCD, ECD, NPD, FPD and GC-MS", "دتکتورها: FID، TCD، ECD، NPD، FPD و GC-MS"),
+      bi("Static headspace: partition coefficient, phase ratio and matrix effects", "Static headspace: ضریب توزیع، نسبت فاز و اثر ماتریکس"),
+      bi("System suitability, RSDmax and allowable adjustments (USP <621>)", "System suitability، RSDmax و تنظیمات مجاز (USP <621>)"),
+      bi("Residual solvents: ICH Q3C(R9) and USP <467> procedures A, B and C", "Residual solvents: ICH Q3C(R9) و روش‌های A، B و C در USP <467>"),
+      bi("DEG/EG, fatty acids, ethylene oxide, nitrosamines and ICH M7", "DEG/EG، اسیدهای چرب، Ethylene oxide، Nitrosamineها و ICH M7"),
+      bi("Validation, qualification and data integrity", "صحه‌گذاری، Qualification و یکپارچگی داده"),
+      bi("Systematic troubleshooting and 8 case studies", "عیب‌یابی سیستماتیک و 8 مطالعه موردی"),
+      bi("12 worked calculations, quick troubleshooting table, Q&A, glossary and references", "12 مسئله حل‌شده، جدول عیب‌یابی سریع، پرسش و پاسخ، واژه‌نامه و منابع"),
+    ],
+  },
   {
     slug: "oos",
     issue: 4,

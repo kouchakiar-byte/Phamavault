@@ -5,6 +5,7 @@ import { freeHandbookCopy as t, freeHandbooks, handbookUrl, issueWeek, type Free
 import type { Locale } from "@/i18n/config";
 import { href } from "@/lib/paths";
 import { HandbookArchive, type ArchiveItem, type ArchiveLabels } from "./handbook-archive";
+import { isolateLatin } from "@/lib/bidi";
 import { BiTitle, MoleculePattern } from "./ui";
 
 const fmt = (s: string, values: Record<string, string | number>) => s.replace(/\{(\w+)\}/g, (_, k) => String(values[k]));
@@ -24,7 +25,7 @@ export function handbookArchive(locale: Locale) {
       slug: h.slug,
       label: issueLabel(h, locale),
       title: h.title[locale],
-      subtitle: h.subtitle[locale],
+      subtitle: isolateLatin(h.subtitle[locale]),
       size: fmt(t.size[locale], { s: num(h.sizeMb), p: num(h.pages) }),
       url: handbookUrl(h),
       cover: h.cover,
@@ -88,7 +89,7 @@ export function FreeHandbookFeature({ handbook, locale, details = true }: { hand
           primaryClassName="pv-gold-text font-extrabold leading-snug drop-shadow-[0_2px_10px_rgba(220,189,109,0.35)]"
           secondaryClassName="text-vault-100"
         />
-        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-vault-100/85">{handbook.subtitle[locale]}</p>
+        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-vault-100/85">{isolateLatin(handbook.subtitle[locale])}</p>
 
         <dl className="mt-7 grid max-w-xl grid-cols-2 gap-3 sm:grid-cols-4">
           {handbook.stats.map((s) => (
