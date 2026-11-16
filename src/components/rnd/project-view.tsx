@@ -100,6 +100,7 @@ export function ProjectView({ initial, viewer, homeHref, reportHref, people = []
         <span className="flex flex-wrap gap-2">
           <a href={homeHref} className={btn}>→ همه پروژه‌ها</a>
           {reportHref && <a href={reportHref} className={btn}>گزارش وضعیت (چاپ یا PDF)</a>}
+          <a href={`/api/rnd/export?id=${encodeURIComponent(p.id)}`} className={btn} download>خروجی Excel{member ? " (کار واحد شما)" : ""}</a>
         </span>
         <span className="text-xs text-muted" aria-live="polite">{busy ? "در حال ذخیره…" : err ? "" : saved ? "ذخیره شد" : ""}</span>
       </div>

@@ -105,7 +105,10 @@ function Owner({ locale, ps, access }: { locale: Locale; ps: Project[]; access: 
       <section className={card}>
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-base font-bold text-vault-900">فهرست پروژه‌ها</h2>
-          {access.role === "owner" && <NewProject projectHref={rndHref(locale, "project")} />}
+          <div className="flex flex-wrap items-center gap-2">
+            {ps.length > 0 && <a href="/api/rnd/export?all=1" download className="inline-flex items-center gap-1 rounded-full border border-line bg-white px-3 py-1.5 text-xs font-semibold text-vault-900 transition hover:border-molecule-500">خروجی Excel همه پروژه‌ها</a>}
+            {access.role === "owner" && <NewProject projectHref={rndHref(locale, "project")} />}
+          </div>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[860px] border-collapse text-sm">
