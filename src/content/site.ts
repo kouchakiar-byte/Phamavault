@@ -243,23 +243,6 @@ export const copy = {
     open: bi("Open section", "ورود به بخش"),
   },
 
-  supplierSpotlight: {
-    badge: bi("Featured", "ویژه"),
-    lead: bi(
-      "Find who manufactures or imports a raw material or a laboratory instrument in Iran — APIs, excipients, vitamins, mineral salts, supplement and cosmetic ingredients, lab equipment and their brand agencies — with phone, email and website.",
-      "پیدا کنید چه شرکتی یک ماده اولیه یا دستگاه آزمایشگاهی را در ایران تولید یا وارد می‌کند؛ مواد مؤثره، مواد جانبی، ویتامین‌ها، مینرال‌ها، مواد اولیه مکمل و آرایشی‌بهداشتی، و تجهیزات آزمایشگاهی همراه با نمایندگی برندها، با تلفن، ایمیل و وب‌سایت.",
-    ),
-    search: bi("Search", "جستجو"),
-    stats: {
-      companies: bi("companies", "شرکت"),
-      materials: bi("materials and lab items", "قلم ماده و تجهیزات"),
-      manufacturers: bi("domestic manufacturers", "تولیدکننده داخلی"),
-      importers: bi("importers and traders", "واردکننده و بازرگانی"),
-    },
-    byCategory: bi("Browse by category", "مرور بر اساس دسته"),
-    open: bi("Open the full bank", "ورود به بانک کامل"),
-  },
-
   databases: {
     eyebrow: bi("Databases", "پایگاه‌های داده"),
     title: bi("Curated reference data", "داده‌های مرجع گزینش‌شده"),
