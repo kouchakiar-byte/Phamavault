@@ -348,6 +348,13 @@ export default async function HomePage() {
         </Container>
       </section>
 
+      {/* Case of the week */}
+      <section id="case" className="scroll-mt-20 bg-white pt-12 lg:pt-16">
+        <Container>
+          <WeeklyCase locale={locale} />
+        </Container>
+      </section>
+
       {/* The sections, under a strip of the pills photo */}
       <section id="sections" className="scroll-mt-20 bg-white py-16 lg:py-20">
         <Container>
@@ -392,15 +399,8 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      {/* Case of the week */}
-      <section id="case" className="scroll-mt-20 bg-white pt-12 lg:pt-16">
-        <Container>
-          <WeeklyCase locale={locale} />
-        </Container>
-      </section>
-
       {/* CTD compilation service */}
-      <section id="ctd" className="scroll-mt-20 pb-20 pt-12 lg:pb-28 lg:pt-16">
+      <section id="ctd" className="scroll-mt-20 pb-20 lg:pb-28">
         <Container>
           <div className="relative isolate grid gap-10 overflow-hidden rounded-3xl bg-vault-900 px-6 py-12 text-white shadow-2xl shadow-vault-900/20 sm:px-12 lg:grid-cols-[1.4fr_1fr] lg:items-center lg:py-16">
             {/* A dossier being reviewed: behind the whole card on phones, the end half on desktop, fading into the navy */}
