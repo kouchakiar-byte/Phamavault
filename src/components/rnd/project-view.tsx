@@ -35,9 +35,9 @@ function csv(p: Project, key: ListKey) {
 
 type Tab = "overview" | "stages" | "raci" | ListKey | "stability" | "budget" | "log";
 
-export function ProjectView({ initial, viewer, homeHref, reportHref, people = [] }: { initial: Project; viewer: Viewer; homeHref: string; reportHref?: string; people?: Person[] }) {
+export function ProjectView({ initial, viewer, homeHref, reportHref, people = [], tab: startTab }: { initial: Project; viewer: Viewer; homeHref: string; reportHref?: string; people?: Person[]; tab?: string }) {
   const [p, setP] = useState(initial);
-  const [tab, setTab] = useState<Tab>("overview");
+  const [tab, setTab] = useState<Tab>(() => (startTab && (["stages", "raci", "stability", "budget", "log", ...Object.keys(LISTS)] as string[]).includes(startTab) ? (startTab as Tab) : "overview"));
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
   const [saved, setSaved] = useState<number | null>(null);
