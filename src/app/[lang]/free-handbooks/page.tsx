@@ -6,6 +6,7 @@ import { BackLink, BiTitle, Container, MoleculePattern } from "@/components/ui";
 import { freeHandbookCopy as t, freeHandbooks } from "@/content/free-handbooks";
 import { copy } from "@/content/site";
 import { getLocale } from "@/i18n/locale";
+import { isolateLatin } from "@/lib/bidi";
 import { pageMetadata } from "@/lib/metadata";
 import { href } from "@/lib/paths";
 
@@ -58,7 +59,7 @@ export default async function FreeHandbooksPage() {
                   <span className="flex size-8 shrink-0 items-center justify-center rounded-xl bg-vault-900 text-sm font-extrabold text-capsule-400">
                     {num(i + 1)}
                   </span>
-                  <span className="text-sm font-bold leading-relaxed text-vault-900">{c[locale]}</span>
+                  <span className="text-sm font-bold leading-relaxed text-vault-900">{isolateLatin(c[locale])}</span>
                 </li>
               ))}
             </ol>
