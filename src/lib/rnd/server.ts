@@ -5,8 +5,8 @@ import { cache } from "react";
 import { getUser, type User } from "@/lib/auth";
 import { databaseConfigured, db } from "@/lib/db";
 import {
-  DAY, LISTS, LIST_KEYS, STABILITY_UNIT, UNITS, alertsOf, ms, progress, isDate, isUnit, normalize, uid, today,
-  type Alert, type Item, type ListKey, type Project, type Role, type Row, type Study, type Unit,
+  DAY, GATE_CHECKS, GATE_CHECKS_ANY, LISTS, LIST_KEYS, STABILITY_UNIT, UNITS, alertsOf, ms, progress, isDate, isUnit, normalize, gateChecks, uid, today,
+  type Alert, type CheckV, type Raci, type Item, type ListKey, type Project, type Role, type Row, type Study, type Unit,
 } from "./model";
 
 /** Who is looking: the site owner (an admin) sees and edits everything; a manager sees everything; a member sees one unit. */
@@ -159,6 +159,9 @@ export type Op =
   | { op: "delItem"; stage: string; item: string }
   | { op: "comment"; stage: string; item: string; text: string }
   | { op: "stage"; stage: string; due?: string; w?: number; title?: string; decision?: string; by?: string; date?: string; note?: string }
+  | { op: "gate"; stage: string; checks?: { k: string; v?: string; note?: string }[]; addCheck?: string; delCheck?: string;
+      meet?: string; attendees?: string; summary?: string; cond?: string; actions?: { id?: string; t?: string; who?: string; due?: string; done?: boolean }[] }
+  | { op: "raci"; stage: string; unit: string; v: string }
   | { op: "row"; list: string; id?: string; data: Record<string, unknown> }
   | { op: "delRow"; list: string; id: string }
   | { op: "study"; id?: string; data: Record<string, unknown> }
@@ -338,10 +341,48 @@ export function applyOps(p: Project, ops: Op[], a: Access, notices: Notice[] = [
         if (o.decision !== undefined) {
           const d = ["pending", "go", "hold", "nogo"].includes(o.decision) ? (o.decision as Project["stages"][number]["gate"]["decision"]) : deny("gate");
           const changed = d !== s.gate.decision;
-          s.gate = { decision: d, by: str(o.by, 80), date: dateOr(o.date), note: str(o.note, 600) };
+          s.gate = { ...s.gate, decision: d, by: str(o.by, 80), date: dateOr(o.date), note: str(o.note, 600) };
           if (changed && d !== "pending") p.events.unshift({ id: uid("e"), date: s.gate.date || today(), kind: "decision", text: `تصمیم Gate «${s.title}»: ${d === "go" ? "Go" : d === "hold" ? "Hold" : "No-go"}${s.gate.note ? ` — ${s.gate.note}` : ""}`, at: Date.now(), unit: "pm", by: who });
         }
         log.push(`ویرایش مرحله «${s.title}»`);
+        break;
+      }
+      case "gate": {
+        if (!owner) deny();
+        const s = p.stages.find((x) => x.key === o.stage) ?? deny("stage");
+        const g = s.gate;
+        let checks = gateChecks(s);
+        for (const c of o.checks ?? []) {
+          const at = checks.find((x) => x.k === c.k) ?? deny("check");
+          if (c.v !== undefined) at.v = (["", "yes", "no", "na"].includes(String(c.v)) ? c.v : deny("check")) as CheckV;
+          if (c.note !== undefined) at.note = str(c.note, 300) || undefined;
+        }
+        if (o.addCheck !== undefined) checks.push({ k: uid("c"), t: str(o.addCheck, 200) || deny("check"), v: "" });
+        if (o.delCheck !== undefined) {
+          // Only questions added to this gate can go; the template's stay so every gate answers them.
+          if ((GATE_CHECKS[s.key] ?? GATE_CHECKS_ANY).some(([k]) => k === o.delCheck)) deny("check");
+          checks = checks.filter((c) => c.k !== o.delCheck);
+        }
+        if (checks.length > 40) deny("check");
+        g.checks = checks;
+        if (o.meet !== undefined) g.meet = dateOr(o.meet);
+        if (o.attendees !== undefined) g.attendees = str(o.attendees, 400);
+        if (o.summary !== undefined) g.summary = str(o.summary, 2000);
+        if (o.cond !== undefined) g.cond = str(o.cond, 800);
+        if (o.actions !== undefined) {
+          if (!Array.isArray(o.actions) || o.actions.length > 30) deny("actions");
+          g.actions = o.actions.map((x) => ({ id: str(x.id, 40) || uid("a"), t: str(x.t, 300), who: str(x.who, 80), due: dateOr(x.due), done: Boolean(x.done) })).filter((x) => x.t);
+        }
+        log.push(`صورت‌جلسه Gate «${s.title}»`);
+        break;
+      }
+      case "raci": {
+        if (!owner) deny();
+        const s = p.stages.find((x) => x.key === o.stage) ?? deny("stage");
+        const u = isUnit(o.unit) ? o.unit : deny("unit");
+        const v = ["", "R", "A", "AR", "C", "I"].includes(o.v) ? (o.v as Raci | "") : deny("raci");
+        ((p.raci ??= {})[s.key] ??= {})[u] = v;
+        log.push(`RACI «${s.title}»: ${UNITS[u]} ← ${v || "—"}`);
         break;
       }
       case "row": {

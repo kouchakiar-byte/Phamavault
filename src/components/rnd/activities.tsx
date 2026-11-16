@@ -3,10 +3,11 @@
 import { Fragment, useMemo, useState } from "react";
 import { AlertTriangle, CalendarClock, ChevronDown, Flame, GanttChartSquare, Link2, ListChecks, Lock, RotateCcw, Search, Target } from "lucide-react";
 import { toJalali } from "@/lib/rnd/jalali";
-import { GATE, PRIO, T, UNITS, daysTo, isDate, itemPct, ms, stagePct, today, type Item, type Stage, type Unit } from "@/lib/rnd/model";
+import { GATE, PRIO, isGateStage, T, UNITS, daysTo, isDate, itemPct, ms, stagePct, today, type Item, type Stage, type Unit } from "@/lib/rnd/model";
 import { cpm, waitingOn, type CpmInfo } from "@/lib/rnd/schedule";
 import { Bar, C } from "./charts";
 import { Cell, Comments, Select, btn, inp, panel, pill, type Ctx } from "./fields";
+import { GateReview } from "./gate-review";
 
 export type Person = { id: string; name: string; unit: string };
 
@@ -154,7 +155,7 @@ export function Activities({ ctx, people }: { ctx: Ctx; people: Person[] }) {
                     ))}
                   </ul>
                   {owner && !filtered && <AddActivity ctx={ctx} s={s} />}
-                  {!member && !filtered && <GatePanel ctx={ctx} s={s} />}
+                  {!member && !filtered && (isGateStage(s) ? <GateReview ctx={ctx} s={s} /> : <GatePanel ctx={ctx} s={s} />)}
                 </div>
               )}
             </section>

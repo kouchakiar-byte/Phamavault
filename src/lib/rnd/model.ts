@@ -38,7 +38,18 @@ export type Item = {
   code?: string; start?: string; dur?: number; deps?: string[]; pin?: boolean; pct?: number; aStart?: string; base?: string;
   assignee?: string; pri?: Priority; out?: string; doc?: string; note?: string; gate?: boolean;
 };
-export type Gate = { decision: "pending" | "go" | "hold" | "nogo"; by?: string; date?: string; note?: string };
+export type CheckV = "" | "yes" | "no" | "na";
+export type GateCheck = { k: string; t: string; v: CheckV; note?: string };
+export type GateAction = { id: string; t: string; who?: string; due?: string; done?: boolean };
+/**
+ * The decision at the end of a phase. A formal gate (a phase holding a gate activity) also keeps its
+ * review: the checklist, the meeting (date, attendees, discussion, conditions) and the actions agreed.
+ */
+export type Gate = {
+  decision: "pending" | "go" | "hold" | "nogo"; by?: string; date?: string; note?: string;
+  checks?: GateCheck[]; meet?: string; attendees?: string; summary?: string; cond?: string; actions?: GateAction[];
+};
+export type Raci = "R" | "A" | "AR" | "C" | "I";
 export type Stage = { key: string; title: string; w: number; due: string; gate: Gate; items: Item[] };
 export type Row = { id: string; unit: Unit; [k: string]: unknown };
 export type Study = { id: string; cond: string; months: number[]; start: string; done: number[]; results: Record<string, Record<string, string>>; specMin: number; specMax: number; batches?: string };
@@ -73,6 +84,8 @@ export type Project = {
   costs: Row[];
   stability: Study[];
   events: Event[];
+  /** Who is Responsible, Accountable, Consulted and Informed in each phase, by phase key; empty cells use RACI_DEFAULT. */
+  raci?: Record<string, Partial<Record<Unit, Raci | "">>>;
   createdAt: number;
   updatedAt: number;
   /** Members see a filtered copy: these say what was left out. */
@@ -86,6 +99,8 @@ export const P_STATUS = O("active:در جریان|hold:متوقف|done:تکمی�
 export const P_TYPE = O("generic:ژنریک|new:فرمولاسیون جدید|ext:توسعه خط تولید|transfer:انتقال تکنولوژی|reform:اصلاح فرمول");
 export const PRIO = O("high:بالا|medium:متوسط|low:پایین");
 export const GATE = O("pending:در انتظار|go:Go — ادامه|hold:Hold — توقف موقت|nogo:No-go — خاتمه");
+export const CHECK_V: [CheckV, string][] = [["", "—"], ["yes", "بله"], ["no", "خیر"], ["na", "نامرتبط"]];
+export const RACI_L: Record<Raci, string> = { R: "مسئول اجرا", A: "پاسخگو (تأییدکننده)", AR: "پاسخگو و مسئول اجرا", C: "مشاور", I: "مطلع" };
 export const EV_KIND = O("note:یادداشت|decision:تصمیم|issue:مشکل|auto:سیستم");
 
 type T = [string, Unit];
@@ -148,6 +163,107 @@ export const LISTS: Record<ListKey, { title: string; add: string; unit: Unit; ow
 export const LIST_KEYS = Object.keys(LISTS) as ListKey[];
 /** Units whose rows of a register a member works on (the stability programme belongs to the laboratory). */
 export const STABILITY_UNIT: Unit = "anal";
+
+// ---------- gate reviews ----------
+/**
+ * The questions each formal gate answers before the committee decides, written for a generic oral solid
+ * project (stage-gate practice; ICH Q8(R2), Q9(R1), Q10). Phases without their own list use GATE_CHECKS_ANY.
+ */
+export const GATE_CHECKS: Record<string, [string, string][]> = {
+  p0: [
+    ["brief", "Product brief تأیید شده است: شکل دارویی، قدرت، بسته‌بندی و بازار هدف"],
+    ["market", "بررسی بازار، رقبا و فرآورده‌های مشابه ثبت‌شده انجام شده است"],
+    ["team", "مدیر پروژه و تیم چندواحدی تعیین و به واحدها ابلاغ شده‌اند"],
+    ["plan", "برنامه زمانی اولیه و بودجه برآورد شده است"],
+    ["risk", "فرضیات، محدودیت‌ها و ریسک‌های اولیه ثبت شده‌اند"],
+  ],
+  p1: [
+    ["rld", "خلاصه محصول مرجع (RLD) کامل است: ترکیب، Excipientها، بسته‌بندی و Shelf life"],
+    ["patent", "Patent و انحصار داده مانعی برای ثبت یا عرضه در تاریخ هدف ندارد"],
+    ["reg", "مسیر ثبت و الزامات سازمان غذا و دارو مشخص است"],
+    ["qtpp", "QTPP و CQAهای اولیه تعریف شده‌اند (ICH Q8)"],
+    ["risk", "ارزیابی ریسک اولیه انجام شده و ریسک‌های بالا برنامه کاهش دارند (ICH Q9)"],
+    ["tech", "امکان‌سنجی فنی (تجهیزات، فرایند و ظرفیت) تأیید شده است"],
+    ["budget", "بودجه و برنامه تفصیلی پروژه قابل تصویب است"],
+  ],
+  p4: [
+    ["formula", "فرمول نهایی بر اساس QTPP انتخاب و Formula card صادر شده است"],
+    ["diss", "Dissolution profile با محصول مرجع قابل مقایسه است (f2 در صورت کاربرد)"],
+    ["compat", "سازگاری API و Excipientها و پایداری اولیه فرمول پذیرفتنی است"],
+    ["methods", "روش‌های آنالیز برای پشتیبانی Scale-up آماده است"],
+    ["supply", "API و Excipientها برای Scale-up و بچ‌های پایداری تأمین شده‌اند"],
+    ["risk", "ریسک‌های فرمولاسیون و فرایند بازبینی و به‌روز شده‌اند"],
+  ],
+  p9: [
+    ["be", "نتیجه BE یا Biowaiver پذیرفتنی است"],
+    ["dossier", "پرونده CTD کامل، بازبینی QA شده و ارسال شده است"],
+    ["licence", "پروانه ساخت صادر شده یا زمان صدور آن مشخص است"],
+    ["stab", "داده‌های پایداری از Shelf life پیشنهادی پشتیبانی می‌کند"],
+    ["spec", "Specification و روش‌های آزمون نهایی تأیید شده‌اند"],
+    ["tt", "برنامه انتقال تکنولوژی و Process validation آماده است"],
+    ["risk", "بودجه و ریسک‌های باقی‌مانده بازبینی شده‌اند"],
+  ],
+};
+export const GATE_CHECKS_ANY: [string, string][] = [
+  ["acts", "فعالیت‌های این فاز انجام شده یا وضعیت باقی‌مانده‌ها روشن است"],
+  ["outs", "خروجی‌ها و اسناد فاز تأیید شده‌اند"],
+  ["risk", "ریسک‌های باز بازبینی شده‌اند"],
+  ["next", "منابع و مواد فاز بعد آماده است"],
+];
+/** A phase whose plan holds a gate activity has a formal gate review. */
+export const isGateStage = (s: Stage) => s.items.some((i) => i.gate);
+/** The checklist of a phase: its template's questions, with the answers already given kept by key. */
+export function gateChecks(s: Stage): GateCheck[] {
+  const saved = new Map((s.gate.checks ?? []).map((c) => [c.k, c]));
+  const tpl = (GATE_CHECKS[s.key] ?? GATE_CHECKS_ANY).map(([k, t]) => ({ k, t, v: (saved.get(k)?.v ?? "") as CheckV, ...(saved.get(k)?.note ? { note: saved.get(k)!.note } : {}) }));
+  // Questions the project manager added to this gate keep their place after the template's.
+  return [...tpl, ...(s.gate.checks ?? []).filter((c) => !tpl.some((x) => x.k === c.k))];
+}
+/** What the plan says about a phase when its gate meets: work done, deliverables, risks, lateness. */
+export function gateFacts(p: Project, s: Stage) {
+  const work = s.items.filter((i) => !i.gate);
+  return {
+    done: work.filter((i) => i.done).length,
+    total: work.length,
+    outs: work.filter((i) => i.out && !i.done).map((i) => ({ code: i.code, out: i.out! })),
+    late: work.filter((i) => !i.done && daysTo(i.due) < 0).length,
+    highRisks: p.risks.filter((r) => r.status !== "closed" && riskScore(r) >= 15).length,
+  };
+}
+
+// ---------- RACI ----------
+const RU: Unit[] = ["pm", "form", "anal", "qa", "purch", "reg", "prod"];
+const r = (s: string) => Object.fromEntries(s.split(" ").map((x, i) => [RU[i], x === "-" ? "" : x])) as Partial<Record<Unit, Raci | "">>;
+/**
+ * The usual split of work by phase, in the order: project manager, formulation, analysis/QC, QA, purchasing,
+ * regulatory, production. Each phase has one Accountable unit (A or AR). A starting point to adjust per project.
+ */
+export const RACI_DEFAULT: Record<string, Partial<Record<Unit, Raci | "">>> = {
+  p0: r("AR C I C I C I"),
+  p1: r("A R C R I R C"),
+  p2: r("A C R R R I I"),
+  p3: r("I AR C I I I I"),
+  p4: r("A R R C I C C"),
+  p5: r("I C AR C I C I"),
+  p6: r("I AR C C R C C"),
+  p7: r("A R R C C I R"),
+  p8: r("I C AR C I C I"),
+  p9: r("C R C R I AR I"),
+  p10: r("C R R A C I R"),
+  p11: r("AR I I R I I R"),
+};
+export const RACI_UNITS = RU;
+/** A phase's RACI row: what the project set, else the default. */
+export const raciRow = (p: Project, key: string) => ({ ...(RACI_DEFAULT[key] ?? {}), ...(p.raci?.[key] ?? {}) });
+/** A row needs exactly one Accountable and someone doing the work. */
+export function raciIssue(row: Partial<Record<Unit, Raci | "">>): string | null {
+  const v = Object.values(row);
+  const a = v.filter((x) => x === "A" || x === "AR").length;
+  if (a === 0) return "بدون پاسخگو (A)";
+  if (a > 1) return "بیش از یک پاسخگو (A)";
+  if (!v.some((x) => x === "R" || x === "AR")) return "بدون مسئول اجرا (R)";
+  return null;
+}
 
 // ---------- dates ----------
 export const DAY = 86400000;
